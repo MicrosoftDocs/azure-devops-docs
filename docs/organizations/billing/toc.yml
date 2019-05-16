@@ -16,6 +16,8 @@
     href: try-additional-features-vs.md
   - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
+  - name: Buy Basic + Test Plans
+    href: buy-basic-plus-test-plans.md
 - name: How-to guides
   items:
   - name: Add user to make purchases
@@ -26,8 +28,6 @@
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQ
     href: billing-faq.md
-  - name: Buy Azure DevOps Server CALs or Test  
-    href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Buy Azure DevOps"

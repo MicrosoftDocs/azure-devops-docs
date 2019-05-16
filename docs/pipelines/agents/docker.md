@@ -96,6 +96,11 @@ Next, we'll create the Dockerfile.
     CMD ["./start.sh"]
     ```
 
+> [!NOTE]
+> Tasks may depend on executables that your container is expected to provide.
+> For instance, you must add the `zip` and `unzip` packages
+> to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
+
 5. Save the following content to `C:\dockeragent\start.sh`:
 
     ```shell
@@ -267,6 +272,11 @@ Next, we'll create the Dockerfile.
 
     CMD ["./start.sh"]
     ```
+
+> [!NOTE]
+> Tasks may depend on executables that your container is expected to provide.
+> For instance, you must add the `zip` and `unzip` packages
+> to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
 5. Save the following content to `~/dockeragent/start.sh`:
 

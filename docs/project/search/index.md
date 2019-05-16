@@ -21,10 +21,11 @@ using just a web browser.
 
 ## 5-Minute Quickstarts
 
-| | | |
-| --- | --- | --- |
-| ![icon](_img/_shared/codesearch-icon.png)<br />[Search code](code-search.md) | ![icon](_img/_shared/wisearch-icon.png)<br />[Search work items](work-item-search.md) |![icon](_img/_shared/wisearch-icon.png)<br />[Search wiki](../wiki/search-wiki.md) |
-| | | |
+| | | 
+| --- | --- |
+| <br />[Search code](code-search.md) | <br />[Search work items](work-item-search.md) 
+| <br />[Search packages](advanced-package-syntax.md) |<br />[Search wiki](../wiki/search-wiki.md) 
+| | | 
 
 ## Videos
 
@@ -35,12 +36,13 @@ using just a web browser.
 * [Use Code Search](advanced-code-search-syntax.md)
 * [Use Work Item Search](advanced-work-item-search-syntax.md)
 * [Use Wiki Search](../wiki/search-wiki.md)
+* [Use Package Search](advanced-package-syntax.md)
 * [Administer Search](administration.md)
 
 ## Resources
 
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 * [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
-* [Code Search blog posts](https://social.msdn.microsoft.com/Search/?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
+* [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
-* [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
+* [Work Item Search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
