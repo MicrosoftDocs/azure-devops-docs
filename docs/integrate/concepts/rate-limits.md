@@ -72,7 +72,7 @@ We take a similar approach to rate limiting in Azure Pipelines. Since pipelines 
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
-To avoid disruption of existing applications, the following commands are temporarily whitelisted:
+To avoid disruption of existing applications, the following commands are temporarily added to an allow list:
 
 - ```GetWorkItem```
 - ```PageWorkitemsById```
