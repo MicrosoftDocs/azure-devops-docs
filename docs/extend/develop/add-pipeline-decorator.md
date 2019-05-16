@@ -44,6 +44,13 @@ In this file, add contribution for our new pipeline decorator.
                 "template": "my-decorator.yml"
             }
         }
+    ],
+    "files": [
+        {
+            "path": "my-decorator.yml",
+            "addressable": true,
+            "contentType": "text/plain"
+        }
     ]
 }
 ```
@@ -70,9 +77,10 @@ We'll start with a very simple example and work up to the full task.
 #### my-decorator.yml (initial version)
 ------
 ```yaml
-steps:
-- script: dir
+- task: CmdLine@2
   displayName: 'Run my script (injected from decorator)'
+  inputs:
+    script: dir
 ```
 
 ## Installating the decorator
