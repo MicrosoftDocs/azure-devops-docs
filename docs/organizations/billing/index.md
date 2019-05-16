@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -48,6 +48,7 @@ You can also make some purchases for Azure DevOps Server on your monthly Azure b
 * [Pay for users](buy-basic-access-add-users.md)
 * [Buy Azure Pipelines](buy-more-build-vs.md)
 * [Start free trials for paid features and extensions](try-additional-features-vs.md)
+* [Buy Basic + Test Plans access](buy-basic-plus-test-plans.md)
 
 ## Step-by-step tutorials
 

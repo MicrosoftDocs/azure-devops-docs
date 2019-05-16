@@ -66,7 +66,7 @@
     href: troubleshoot-connection.md
   - name: "TF31002: Unable to connect"
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Troubleshoot network connections and whitelist addresses
+  - name: Troubleshoot network connections and lists of allowed addresses
     href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get support or provide feedback
     href: provide-feedback.md

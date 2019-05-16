@@ -10,19 +10,19 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/08/2019
+ms.date: 05/15/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Start free trials for paid features and extensions
+# Start free trials for paid features and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to start a free trial for your organization, as well as how to keep using your extension after the trial ends.
+In this article, learn how to start a free trial for your organization, as well as how to keep using your extension after the trial ends.
 
 There are two paid features in Azure DevOps that are offered by Microsoft that you can use free for a 30-day trial:
 
-- [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers).
+- [Test Plans](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) (which is included on an ongoing basis for Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers).
 
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
@@ -33,8 +33,6 @@ This same process applies to paid extensions that are offered by other publisher
 - [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
 - [Enhanced Export PRO](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-PRO-EnhancedExport)
 - [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
-
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
@@ -79,10 +77,6 @@ If you lose access because the trial expired before you could purchase, buy and 
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
 
-## Clean up resources
-
-To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md), you must have access to the Azure subscription that was used to buy it.
-
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -90,5 +84,6 @@ To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md),
 
 ## Related articles
 
+- [Cancel a paid extension](../../marketplace/uninstall-disable-extensions.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
