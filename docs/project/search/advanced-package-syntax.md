@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: sumallel
-author: sumallel
+author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 04/18/2019
 ---
