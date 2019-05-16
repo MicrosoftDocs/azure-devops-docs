@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot network connections and whitelist addresses
-description: Troubleshoot network connections and whitelist addresses in tightened down networks for Visual Studio
+title: Troubleshoot network connections and lists of allowed addresses
+description: Troubleshoot network connections and lists of allowed addresses in tightened down networks for Visual Studio
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 7c8ff784-ffc2-4378-bc29-a7e5632ab776
@@ -12,7 +12,7 @@ ms.date: 02/15/2019
 monikerRange: 'azure-devops'
 ---
 
-# Troubleshoot network connections and whitelist addresses
+# Troubleshoot network connections and lists of allowed addresses
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 

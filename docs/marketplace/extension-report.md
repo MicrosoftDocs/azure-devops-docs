@@ -70,7 +70,7 @@ For paid extension, you can use the **Contact** action to reach out to your user
 Marketplace will broker the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who have opt-ed in for communication will be sent the email. 
 Last contacted date for an organization is as also updated after sending a communication. 
 
-**Important** Please follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users will be *blacklisted* and won't be able to use the **Contact** feature for any of his/her extensions. 
+**Important** Please follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users will be *added to a deny list* and won't be able to use the **Contact** feature for any of his/her extensions. 
 
 **Transactional Communication**: Transactional emails convey critical information necessary for the continued use of the extension or service. Examples include critical security notices, transaction confirmations, product recall notices, specific feedback request and service discontinuation notices.
 **Promotional Emails**: Promotional emails are used to market your extension, product, service, website, or event. Examples include invitations to events or web casts, information about new marketing or partner programs and offers to prospect to obtain value-added content. Almost all newsletters fall into the promotional bucket as they generally contain at least some promotional content.
