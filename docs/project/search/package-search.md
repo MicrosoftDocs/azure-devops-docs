@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.topic: quickstart
 ms.manager: jillfra
 ms.author: sumallel
-author: sumallel
+author: KathrynEE
 ms.date: 4/26/2018
 ---
 
