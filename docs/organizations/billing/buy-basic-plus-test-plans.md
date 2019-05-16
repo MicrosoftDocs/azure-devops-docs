@@ -47,11 +47,6 @@ Ensure the following is true:
 
    ![Select Confirm purchase to add more Basic users](_img/buy-more-basic-access/select-confirm-purchase.png)
 
-6. In **Organization settings**, select **Users**.
-
-The number of users to whom you can assign Basic + Test Plans or Test Manager appears on the right side of your screen.
-
-[NEED SCREENSHOT]
 
 <a name="transitioning-test-manager-to-basic-plus-test-plans"></a>
 
