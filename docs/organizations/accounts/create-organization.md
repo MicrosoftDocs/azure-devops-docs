@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/16/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -72,9 +72,6 @@ For more information about how to create a project collection, see [create a pro
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Manage users and access](add-organization-users.md)
-> or
 > [!div class="nextstepaction"]
 > [Create project](../projects/create-project.md)
 
