@@ -38,7 +38,7 @@ Replace *xxxxxxxxxx* with the your PAT.
 
 Now run any command without having to sign in explicitly. Each command will try to use the PAT in the environment variable for authentication.
 
-- Fetch PAT from a file and pass it to the `login` command.
+## Fetch PAT from a file 
 
 ```bash
 cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
