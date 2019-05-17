@@ -10,16 +10,15 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/15/2019
 monikerRange: 'azure-devops'
 ---
-
 
 # Sign up, sign in to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to sign up for free and sign in to Azure DevOps with either a Microsoft or GitHub account. Azure DevOps is a cloud-hosted service. You'll also create an organization and learn how to invite your teammates.
+In this article, learn how to sign up for Azure DevOps for free, sign in with a Microsoft or GitHub account, create an organization, create a project, and invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
@@ -30,6 +29,10 @@ In this quickstart, you learn how to sign up for free and sign in to Azure DevOp
 <a name="GitHubAccount"></a>
 
 [!INCLUDE [sign-in-github-account](../_shared/sign-in-github-account.md)]
+
+<a name="CreateProject"></a>
+
+[!INCLUDE [create-project](../_shared/create-project.md)]
 
 <a id="invite-others" />
 
@@ -43,3 +46,9 @@ For more information about managing users and organization access, see [Add orga
 > [Add code to your Git repository](code-with-git.md)
 >
 > [Plan and track work](plan-track-work.md)
+
+## Related articles
+
+- [Plan your Azure DevOps organizational structure](plan-your-azure-devops-org-structure.md)
+- [About projects and scaling your organization](../organizations/projects/about-projects.md)
+- [Create a project](../organizations/projects/create-project.md)

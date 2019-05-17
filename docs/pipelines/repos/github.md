@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.custom: seodec18
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -304,6 +304,8 @@ You can have a pipeline triggered when the following events occur in GitHub:
 
 ### CI triggers
 
+Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
+
 # [YAML](#tab/yaml)
 
 YAML builds are configured by default with a CI trigger on all branches.
@@ -320,6 +322,8 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`). See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
@@ -353,6 +357,9 @@ trigger:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
+
+>[!IMPORTANT]
+>When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 #### Tags
 
@@ -457,11 +464,11 @@ For example, you want your build to be triggered by changes in master and most, 
 
 # [YAML](#tab/yaml)
 
-PR triggers enable you to start a pipeline when a PR is created or updated.
+Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request.
 
 > [!NOTE]
-> New pipelines automatically override YAML PR triggers with a setting in the UI.
-> To opt into YAML-based control, you must disable this setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
+> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
@@ -476,10 +483,19 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
 
-You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
-You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+```yaml
+pr:
+  branches:
+    include:
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
+```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`). See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
