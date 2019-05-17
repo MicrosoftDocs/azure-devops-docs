@@ -1,9 +1,10 @@
 - name: Azure DevOps Developer Resources Documentation
   href: index.md
-- name: Azure DevOps CLI
+- name: Azure DevOps CLI Get Started
+  href: ../cli/toc.yml
+- name: Azure DevOps CLI Reference
   href: /cli/azure/ext/azure-devops
-- name: REST APIs
-  href: /rest/api/azure/devops/toc.json
+- name: Azure DevOps REST APIs
+  href: /rest/api/azure/devops/
 - name: Azure DevOps Demo Generator
   href: ../demo-gen/toc.yml 
-
