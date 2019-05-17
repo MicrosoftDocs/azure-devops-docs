@@ -4,12 +4,11 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 04/17/2019
+ms.date: 05/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -70,6 +69,17 @@ trigger:
     - releases/old*
 ```
 
+In addition to specifying branch names in the `branches` lists, you can also configure triggers based on tags by using the following format:
+
+```yaml
+trigger:
+  branches:
+    include:
+      refs/tags/{tagname}
+    exclude:
+      refs/tags/{othertagname}
+```
+
 If you don't specify any triggers, the default is as if you wrote:
 
 ```yaml
@@ -79,7 +89,8 @@ trigger:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
-When you specify a trigger, this default no longer applies.
+>[!IMPORTANT]
+>When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 ::: moniker-end
 
@@ -276,7 +287,17 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
+
+```yaml
+pr:
+  branches:
+    include:
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
+```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
