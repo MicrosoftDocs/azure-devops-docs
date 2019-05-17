@@ -597,10 +597,8 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 ### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
 
-When you have configured a [CI trigger](#ci-triggers) or a [PR trigger](#pr-triggers), the YAML file that is in the branch being pushed is used.
-
-* For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
-* For PR triggers, the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
+* For [CI triggers](#ci-triggers), the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
+* For [PR triggers](#pr-triggers), the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
 
 ::: moniker-end
 
