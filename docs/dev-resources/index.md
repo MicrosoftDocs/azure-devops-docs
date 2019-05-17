@@ -33,7 +33,10 @@ Use command line tools, REST APIS, client SDKs and more to interface with Azure 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Command Line Interface</h3>
+                        <h3><a href="../cli/index.md">Command Line Interface</a></h3>
+                        <p>
+                            <a href="../cli/get-started.md">Get Started with Azure DevOps CLI</a>
+                        </p>
                         <p>
                             <a href="/cli/azure/ext/azure-devops/index">Azure DevOps commands</a>
                         </p>

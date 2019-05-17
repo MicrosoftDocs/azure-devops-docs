@@ -6,8 +6,10 @@
   items:
   - name: Set up billing
     href: set-up-billing-for-your-organization-vs.md
-  - name: Pay for users
+  - name: Buy Basic for users
     href: buy-basic-access-add-users.md
+  - name: Buy Basic + Test Plans for users
+    href: buy-basic-plus-test-plans.md
   - name: Buy CI/CD
     href: buy-more-build-vs.md
   - name: Buy Azure Artifacts
@@ -16,8 +18,6 @@
     href: try-additional-features-vs.md
   - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
-  - name: Buy Basic + Test Plans
-    href: buy-basic-plus-test-plans.md
 - name: How-to guides
   items:
   - name: Add user to make purchases

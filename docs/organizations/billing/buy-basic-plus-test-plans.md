@@ -10,15 +10,16 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/16/2019
+ms.date: 05/17/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Buy Basic + Test Plans access
+# Buy Basic + Test Plans access for users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).  
+In this article, learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).
+  
 [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/) and [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/) subscribers have Basic + Test Plans included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time. 
 
 ## Prerequisites
@@ -51,7 +52,7 @@ Ensure the following is true:
 <a name="transitioning-test-manager-to-basic-plus-test-plans"></a>
 
 > [!NOTE]
-> We're moving from assignment or the Test Manager extension to assignment of the Basic + Test Plans access level, so you may have one or the other to assign, but the amount you can assign is the same for either. [Learn more](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
+> We're moving from assignment of the Test Manager extension to assignment of the Basic + Test Plans access level, so you may have one or the other to assign, but the amount you can assign is the same for either. [Learn more](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
 ## Decrease amount of paid users
 
