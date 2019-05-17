@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="= azure-devops"
 
-In this quickstart, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+In this article, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
 
 ::: moniker-end
 
@@ -60,21 +60,11 @@ For more information about how to create a project collection, see [create a pro
 
 [!INCLUDE [create-organization](../../_shared/create-organization.md)]
 
-3. Select **Organization settings** and **Overview**. Confirm or change your organization settings.
-
-   ![Select Organization settings and Overview to review](_img/_shared/organization-settings-select-overview.png)
-
-   ![Confirm organization settings, Azure AD-backed](_img/_shared/organization-settings-azure-ad-backed.png)
-
-   If you're using an **Azure AD account**, confirm the directory that you're connected to. If you belong to multiple directories, ensure that you want to connect this directory to your organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
 
 ::: moniker-end
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Manage users and access](add-organization-users.md)
-> or
 > [!div class="nextstepaction"]
 > [Create project](../projects/create-project.md)
 
@@ -83,6 +73,3 @@ For more information about how to create a project collection, see [create a pro
 * [Create your backlog](../../boards/backlogs/create-your-backlog.md)
 * [Manage your process](../../organizations/settings/work/manage-process.md)
 * [Customize your process](../../organizations/settings/work/customize-process.md)
-* Add code to Git or Team Foundation Version Control:
-  * Git: Use [Eclipse](../../java/download-eclipse-plug-in.md), [Xcode](../../repos/git/share-your-code-in-git-xcode.md), [Android Studio](/../../java/download-android-studio-plug-in), [IntelliJ](/../../java/download-intellij-plug-in), [Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
-  * Team Foundation Version Control: Use [Eclipse](/../../java/download-eclipse-plug-in), [Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), [Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol).
