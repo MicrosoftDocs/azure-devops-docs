@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/16/2019
+ms.date: 05/17/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -996,6 +996,9 @@ trigger:
 
 ::: moniker-end
 
+>[!IMPORTANT]
+>When you specify a `trigger`, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
 # [Example](#tab/example)
 
 List syntax:
@@ -1078,6 +1081,9 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 # [Example](#tab/example)
 
