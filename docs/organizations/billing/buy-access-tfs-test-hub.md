@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2019
+ms.date: 05/17/2019
 monikerRange: '>= tfs-2015 <= azure-devops-2019'
 ---
 # Buy access to Azure DevOps Server or Azure Test Plans
@@ -59,16 +59,16 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 ::: moniker range="<= azure-devops-2019"
 
-5. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Basic + Test Plans access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
+4. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Basic + Test Plans access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-5. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Basic + Test Plans access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
+4. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
 
     > [!NOTE]
-    > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. Make sure these users get Advanced access in Azure DevOps Server.
+    > Azure DevOps Server doesn't detect what happens in Azure DevOps Services. 
     >
     > If you stop paying for these users, your administrator should remove those users from Azure DevOps Server.
 
