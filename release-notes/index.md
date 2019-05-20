@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 04/30/2019
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -111,7 +111,17 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="6">[30 April 2019](2019/sprint-151-update.md)</td>
+            <td rowspan="6">[13 May 2019](2019/build-may.md)</td>
+            <td>Signing into Azure DevOps using your GitHub credentials</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>Kubernetes integration for Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Pay-per-GB</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>General availability of Python and Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>A simpler way to buy Azure DevOps</td><td>Administration</td><td>N/A</td></tr>
+        <tr>  
+        <tr>
+            <td rowspan="7">[30 April 2019](2019/sprint-151-update.md)</td>
             <td>Add Azure Boards from the GitHub Marketplace</td><td>Boards</td><td>N/A</td>
         </tr>
         <tr><td>Accept and execute on issues in GitHub while planning in Azure Boards</td><td>Boards</td><td>Future</td></tr>
@@ -119,6 +129,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Repository creation extension point</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Improved encoding support</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Azure Pipelines app for Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Updates to pipeline creation experience</td><td>Pipelines</td><td>Future</td></tr>
         <tr>        
         <tr>
             <td rowspan="26">[8 April 2019](2019/sprint-150-update.md)</td>

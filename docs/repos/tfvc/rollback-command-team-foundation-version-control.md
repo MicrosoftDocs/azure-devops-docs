@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Rollback Command (Team Foundation Version Control)
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use this command to roll back the effects of one or more changesets to one or more version-controlled items. This command does not remove the changesets from an item's version history. Instead, this command creates in your workspace a set of pending changes that negate the effects of the changesets that you specify.
 

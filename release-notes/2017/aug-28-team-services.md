@@ -214,7 +214,7 @@ Read more about the goals and usage on the [vsts-tasks repo page](https://github
 >
 > This capability is enabled through the **New Release Definition Editor** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
-Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/azure/devops/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
+Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the new release definition editor for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
 
 ### Enhancements in new Release Definition editor
 

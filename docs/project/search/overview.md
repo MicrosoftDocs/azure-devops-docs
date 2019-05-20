@@ -1,5 +1,5 @@
 ---
-title: Search across all your code, wiki, and work items
+title: Search across all your code, wiki, packages and work items
 description: Quickly Search with Azure DevOps and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Search across all your code, wiki and work items
+# Search across all your code, wiki, packages and work items
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
@@ -42,11 +42,13 @@ The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.
 You can narrow down your results and focus in on what you need by using filters.
 
-![Code Search](_img/_shared/codesearch-icon.png) &nbsp; **[Code Search](code-search.md)**
+- **[Code Search](code-search.md)**
 
-![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](work-item-search.md)**
+- **[Work Item Search](work-item-search.md)**
 
-![Wiki Search](_img/_shared/wisearch-icon.png) &nbsp; **[Wiki Search](../wiki/search-wiki.md)**
+- **[Wiki Search](../wiki/search-wiki.md)**
+
+- **[Package Search](package-search.md)**
 
 See also:
 

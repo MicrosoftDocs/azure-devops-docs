@@ -1191,6 +1191,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/organizations/billing/xamarin-univ.md",
+      "redirect_url": "https://university.xamarin.com/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/setup-admin/account-preferences.md",
       "redirect_url": "/azure/devops/organizations/settings/set-your-preferences",
       "redirect_document_id": false
@@ -6207,7 +6212,12 @@
     },
     {
       "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/change-number-paid-extension-users",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/change-number-paid-extension-users.md",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
@@ -8587,7 +8597,12 @@
     },
     {
       "source_path": "docs/billing/csp/set-up-csp-customer.md",
-      "redirect_url": "/azure/devops/organizations/billing/csp/set-up-csp-customer",
+      "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/csp/set-up-csp-customer.md",
+      "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
       "redirect_document_id": true
     },
     {

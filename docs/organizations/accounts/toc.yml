@@ -13,11 +13,9 @@
 - name: Concepts
   items:
   - name: Plan your org structure
-    href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Project member resources
     href: resources-granted-to-project-members.md
-  - name: Glossary
-    href: ../../organizations/security/security-glossary.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage your organization

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 05/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -114,26 +114,31 @@ To modify the security for a connection:
 
 After the new service connection is created:
 
-* If you are using it in the UI, select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
+# [YAML](#tab/yaml)
+
+Copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
+
+  ![If you are using it in YAML](_img/yaml-connection-setting.png)
+# [Classic](#tab/classic)
+
+Select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
 
   ![If you are using it in the UI](_img/ui-connection-setting.png)
 
-* If you are using it in YAML, copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
+---
 
-  ![If you are using it in YAML](_img/yaml-connection-setting.png)
+Next you must authorize the service connection.
+To do this, or if you encounter a resource authorization error in your build,
+use one of the following techniques:
 
-  Next you must authorize the service connection.
-  To do this, or if you encounter a resource authorization error in your build,
-  use one of the following techniques:
+- If you want to authorize any pipeline to use the service connection,
+  go to Azure Pipelines, open the Settings page, select Service connections,
+  and enable the setting **Allow all pipelines to use this connection** option for the connection.
 
-  - If you want to authorize any pipeline to use the service connection,
-    go to Azure Pipelines, open the Settings page, select Service connections,
-    and enable the setting **Allow all pipelines to use this connection** option for the connection.
-
-  - If you want to authorize a service connection for a specific pipeline, open the pipeline
-    by selecting **Edit** and queue a build manually. You will see a resource authorization error
-    and a "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
-    authorized user of the service connection.
+- If you want to authorize a service connection for a specific pipeline, open the pipeline
+  by selecting **Edit** and queue a build manually. You will see a resource authorization error
+  and a "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
+  authorized user of the service connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 

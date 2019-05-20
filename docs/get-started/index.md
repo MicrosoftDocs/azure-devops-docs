@@ -34,7 +34,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Start using Azure DevOps</h3>
+                        <h3><a href="/azure/devops/user-guide/index">Start using Azure DevOps</a></h3>
                         <p>
                             <a href="/azure/devops/user-guide/what-is-azure-devops">What is Azure DevOps?</a>
                         </p>
@@ -68,7 +68,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Navigation</h3>
+                        <h3><a href="/azure/devops/project/navigation/index">Navigation</a></h3>
                         <p>
                             <a href="/azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Web portal navigation</a>
                         </p>
@@ -99,7 +99,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Search</h3>
+                        <h3><a href="/azure/devops/project/search/index">Search</a></h3>
                         <p>
                             <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki and work items</a>
                         </p>
@@ -127,7 +127,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Migrate & Import</h3>
+                        <h3><a href="/azure/devops/migrate/index">Migrate & Import</a></h3>
                         <p>
                             <a href="/azure/devops/migrate/migration-overview">Migrate data from TFS to Azure DevOps Services</a>
                         </p>

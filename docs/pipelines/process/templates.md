@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 03/22/2019
+ms.date: 05/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -213,6 +213,10 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
+For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
+For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
+The project must be in the same organization; cross-organization references are not supported.
+
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
 Only the template files are used.
@@ -261,6 +265,13 @@ steps:
     solution: my.sln
 ```
 
+### Context
+
+Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
+Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus many of the [predefined variables](../build/variables.md).
+Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
+Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
+
 ### Required parameters
 
 You can add a validation step at the beginning of your template to check for the parameters you require.
@@ -302,16 +313,16 @@ steps:
 
 ```
 
-## Template expression functions
+### Template expression functions
 
 You can use [general functions](expressions.md#functions) in your templates. You can also use a few template expression functions.
 
-### format
+#### format
 * Simple string token replacement
 * Min parameters: 2. Max parameters: N
 * Example: `${{ format('{0} Build', parameters.os) }}` &rarr; `'Windows Build'`
 
-### coalesce
+#### coalesce
 * Evaluates to the first non-empty, non-null string argument
 * Min parameters: 2. Max parameters: N
 * Example:
@@ -325,7 +336,7 @@ steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
 ```
 
-## Insertion
+### Insertion
 
 You can use template expressions to alter the structure of a YAML pipeline.
 For instance, to insert into a sequence:
@@ -392,7 +403,7 @@ jobs:
       TEST_SUITE: L0,L1
 ```
 
-## Conditional insertion
+### Conditional insertion
 
 If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
 
@@ -452,7 +463,7 @@ steps:
     debug: true
 ```
 
-## Iterative insertion
+### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
@@ -527,6 +538,6 @@ jobs:
       - script: echo This job depends on both Job A and on SomeSpecialTool.
 ```
 
-## Escaping
+### Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 05/09/2019
 ---
 
 ::: moniker range="azure-devops" 
@@ -415,7 +415,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
-<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Change the number of paid users](../billing/buy-basic-access-add-users.md) </li>
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
@@ -521,7 +521,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
-<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Change the number of paid users](../billing/buy-basic-access-add-users.md) </li>
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
@@ -595,7 +595,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
-<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Change the number of paid users](../billing/buy-basic-access-add-users.md) </li>
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
