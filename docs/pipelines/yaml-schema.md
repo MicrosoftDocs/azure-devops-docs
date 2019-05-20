@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/17/2019
+ms.date: 05/20/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -895,7 +895,7 @@ resources:
 
 ### Repository resource
 
-If your pipeline has [templates](#job-templates) in another repository, you must
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
 let the system know about that repository. The `repository` resource lets you
 specify an external repository.
 
