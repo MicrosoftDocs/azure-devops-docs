@@ -11,8 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-monikerRange: '>= azure-devops-2019'
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 ---
 
 
@@ -66,7 +65,7 @@ Integration steps include:
 
 ### Videos
 
-> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Using-Azure-Boards-with-GitHub/player]
+> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
 
 ### Additional resources
 

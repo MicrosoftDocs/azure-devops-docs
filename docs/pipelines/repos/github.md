@@ -137,13 +137,16 @@ There are 3 authentication types for granting Azure Pipelines access to your Git
 
 | Authentication type            | Builds run using              | Works with [GitHub Checks](https://developer.github.com/v3/checks/) |
 |--------------------------------|-------------------------------|-----|
-| 1. GitHub App                  | The Azure Pipelines identity  | Yes |
-| 2. OAuth                       | Your personal GitHub identity | No  |
-| 3. Personal access token (PAT) | Your personal GitHub identity | No  |
+| 1. [GitHub App](#github-app-authentication) | The Azure Pipelines identity  | Yes |
+| 2. [OAuth](#oauth-authentication)           | Your personal GitHub identity | No  |
+| 3. [Personal access token (PAT)](#personal-access-token-pat-authentication) | Your personal GitHub identity | No  |
 
 ### GitHub app authentication
 
-The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
+>[!NOTE]
+>The Azure Pipelines GitHub App is the **recommended** authentication type for continuous integration pipelines. For release pipelines that are triggered by changes to a GitHub repository, use [OAuth](#oauth-authentication) or [personal access token](#personal-access-token-pat-authentication) authentication.
+
+By installing the GitHub App in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
 
 #### Install the GitHub App
 
