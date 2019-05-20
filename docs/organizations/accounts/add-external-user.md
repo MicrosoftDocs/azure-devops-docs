@@ -10,9 +10,10 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 05/17/2019
 monikerRange: 'azure-devops'
 ---
+
 # Add external users to your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
@@ -27,8 +28,6 @@ Learn how to invite external users to your organization, if you access Azure Dev
    >![External guest access](_img/add-external-user/guest-access.png)
 
 * You must be a member of the Project Collection Administrators group for the organization that you want to invite external users to.
-
-* The organization to which you want to invite external users must allow for external invitations. Go to the **Organization Settings** page to confirm.
 
 * The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure Active Directory guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
