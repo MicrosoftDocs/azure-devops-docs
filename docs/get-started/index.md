@@ -101,7 +101,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                     <div class="cardText">
                         <h3><a href="/azure/devops/project/search/index">Search</a></h3>
                         <p>
-                            <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki and work items</a>
+                            <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki, package and work items</a>
                         </p>
                         <p>
                             <a href="/azure/devops/project/search/code-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Code search</a>
