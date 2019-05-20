@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2019
+ms.date: 05/20/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -21,16 +21,6 @@ monikerRange: '>= tfs-2013'
 ::: moniker range="= azure-devops"
 
 In this article, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-## Create a project collection
-
-A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to them. 
-
-For more information about how to create a project collection, see [create a project collection](https://docs.microsoft.com/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
 
 ::: moniker-end
 
@@ -56,10 +46,23 @@ For more information about how to create a project collection, see [create a pro
       - To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
       - All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
+::: moniker-end
+
 <a name="SignIn"></a>
+
+::: moniker range="= azure-devops"
 
 [!INCLUDE [create-organization](../../_shared/create-organization.md)]
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+## Create a project collection
+
+A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to them. 
+
+For more information about how to create a project collection, see [create a project collection](https://docs.microsoft.com/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
 
 ::: moniker-end
 
