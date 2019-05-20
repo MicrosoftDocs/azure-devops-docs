@@ -112,6 +112,9 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         <p>
                             <a href="/azure/devops/project/wiki/search-wiki?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Wiki search</a>
                         </p>
+                        <p>
+                            <a href="/azure/devops/project/search/package-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Package search</a>
+                        </p>
                     </div>
                 </div>
             </div>

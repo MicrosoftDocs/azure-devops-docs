@@ -6,7 +6,8 @@ The Azure DevOps extension for Azure CLI allows you to experience Azure DevOps f
 
 ## How-to Guides
 - [Log in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md)
-- [Working with Azure DevOps CLI output](/cli/azure/format-output-azure-cli)
+- [Output formats](/cli/azure/format-output-azure-cli)
+- [Query](/cli/azure/query-azure-cli)
 - [Auto detect configuration and git aliases](auto-detect-and-git-aliases.md)
 - [Configure policies](policy-configuration-file.md)
 - [Azure DevOps CLI in a release pipeline](azure-devops-cli-in-release-pipeline.md)
