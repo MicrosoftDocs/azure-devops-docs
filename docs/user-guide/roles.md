@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -34,7 +34,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 
 - To get started with using Git, see one of these resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
-	- [Share your code in Git by using Eclipses](../repos/git/share-your-code-in-git-eclipse.md)
+	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
 	- [Share your code in Git by using IntelliJ](/../java/download-intellij-plug-in.md)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
@@ -72,9 +72,9 @@ To get started, see the overviews in [Azure Pipelines](../pipelines/overview.md)
 
 ### Stakeholders
 
-With stakeholder access, anyone in your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
+With Stakeholder access, anyone in your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a stakeholder](../organizations/security/get-started-stakeholder.md).
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md).
 
 <a id="admin-roles">  </a>
 

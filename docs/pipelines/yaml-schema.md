@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -364,6 +364,11 @@ is the copy's name and will be appended to the name of the job. For each
 `string2`, a variable called `string2` with the value `string3` will be available 
 to the job.
 
+> [!NOTE]
+> Matrix configuration names must contain only basic Latin alphabet letters (A-Z, a-z), numbers, and underscores (`_`).
+> They must start with a letter.
+> Also, they must be 100 characters or less.
+
 # [Example](#tab/example)
 
 ```yaml
@@ -555,6 +560,9 @@ variables:
 ---
 
 ## Template references
+
+> [!NOTE]
+> Be sure to see the full [template expression syntax](process/templates.md#template-expressions) (all forms of `${{ }}`).
 
 ::: moniker range="> azure-devops-2019"
 
@@ -934,7 +942,7 @@ for authorization.
 
 A trigger specifies what branches will cause a continuous integration build to
 run. If left unspecified, pushes to every branch will trigger a build.
-Learn more about [triggers](build/triggers.md?tabs=yaml#continuous-integration-ci)
+Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
 and how to specify them.
 
 # [Schema](#tab/schema)
@@ -988,6 +996,9 @@ trigger:
 
 ::: moniker-end
 
+>[!IMPORTANT]
+>When you specify a `trigger`, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
 # [Example](#tab/example)
 
 List syntax:
@@ -1025,7 +1036,7 @@ trigger:
 
 A pull request trigger specifies what branches will cause a pull request build to
 run. If left unspecified, pull requests to every branch will trigger a build.
-Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pull-request-validation)
+Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pr-triggers)
 and how to specify them.
 
 ::: moniker range="azure-devops"
@@ -1070,6 +1081,9 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 # [Example](#tab/example)
 

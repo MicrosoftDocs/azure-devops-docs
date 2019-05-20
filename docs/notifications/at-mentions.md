@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/26/2019
+ms.date: 05/15/2019
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -39,7 +39,7 @@ To filter the list, enter the user name or alias until you've found a match.
 
 ![Web portal, Pull Request, Type a user name or email alias to locate a match](_img/at-mention-pr-type-name.png)  
 
-::: moniker range=">= tfs-2018"
+::: moniker range="azure-devops"
 You can also use group mentions. Enter the name of a team or a security group, choose the search icon, and then select from the options listed.
 ::: moniker-end
 

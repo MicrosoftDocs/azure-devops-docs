@@ -16,14 +16,11 @@ Give a team member access to your organization by adding their email address to 
 
    ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 
-4. Complete the form with the following information:
+4. Enter the following information:
 
    - **Users:** Enter the email address or ID of the user. You can add several email addresses by separating them with a semicolon (;).   
    - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
    - **Add to project:** Put your cursor in the project box, and then select a project from the resulting list.  
-   - **DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
-
-	> [!NOTE]  
-	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) or (GitHub accounts)[../user-guide/sign-up-invite-teammates.md], unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account.  
+   - **DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).   
 
 5. When you're done, select **Add** to complete your invitation.

@@ -8,7 +8,7 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -16,12 +16,14 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2GB of storage. In the case that your organization needs more storage, you will need to set up billing. This article will guide you through that process.
+This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2GB of storage. In the case that your organization needs more storage, you need to set up billing.
 
 ## Prerequisites
 
-- [Billing must be set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
-- User must have [project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+Ensure that the following is true:
+
+- [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 
 ## Billing and free monthly usage
 
@@ -35,7 +37,7 @@ See and manage what your overall storage use is for Azure Artifacts.
  
 2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**. 
  
-   ![Open Organization settings](../_img/open-admin-settings-vert.png) 
+   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png) 
  
 3. Select **Billing**. 
  
@@ -59,7 +61,7 @@ Each organization gets Azure Artifacts for free, up until they hit 2GB of storag
  
    ![Select Billing from Organization settings](../organizations/billing/_img/_shared/select-billing-organization-settings.png)
  
-4. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You will only be charged for the storage you use, up to the limit. 
+4. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You are only charged for the storage you use, up to the limit. 
 
    ![Increase artifacts beyond the free tier with the dropdown menu](_shared/_img/increase-artifacts-beyond-free-tier.png)
 
@@ -68,12 +70,17 @@ Each organization gets Azure Artifacts for free, up until they hit 2GB of storag
 
 ## FAQs
 
-### Q: How long does it take for deleted artifacts to affect the amount of used storage?
+### Q: Which artifacts count towards my storage total?
 
-A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts, and then reduce the level once the storage metrics are updated.
+A: Currently, the following get counted towards your storage total:
+* All npm, NuGet, Python, Maven, and universal packages (including those stored from upstream sources)
+* All symbols
 
-Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
-For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
+Pipeline Artifacts, Build Artifacts, and Pipeline Caching are included in Azure Pipelines and do not count towards your storage total in Azure Artifacts as of today. 
+
+### Q: Why do I see 0GB of storage, even though I am storing artifacts?
+
+A: Currently, the billing page only shows integers of storage (0GB, 1GB, 2GB, etc.). It is likely that even though you have artifacts stored, you haven't gotten to 1GB yet, which is our lowest granularity right now.
 
 ### Q: How can I control how long artifacts are stored?
 
@@ -81,14 +88,16 @@ A: Azure Artifacts retention is controlled by feed retention policy settings. Sy
 
 For more information on how to set the feed retention policy, see how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
 
+### Q: How long does it take for deleted artifacts to affect the amount of used storage?
+
+A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts, and then reduce the level once the storage metrics are updated.
+
+Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
+For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
+
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, they’ll be charged under the new storage model.
+A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
 
-### Q: Which artifacts count towards my storage total
 
-A: Currently, the following get counted towards your storage total:
-* All npm, NuGet, Python, Maven, and universal packages (including those stored from upstream sources)
-* All symbols
 
-Pipeline Artifacts, Build Artifacts, and Pipeline Caching are included in Azure Pipelines and do not count towards your storage total in Azure Artifacts as of today. 

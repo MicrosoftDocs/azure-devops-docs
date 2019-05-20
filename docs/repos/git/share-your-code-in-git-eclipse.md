@@ -7,15 +7,15 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: quickstart
-ms.date: 11/01/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Share your code in Git using Eclipse
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 
 Share your Eclipse project with your team in an Azure DevOps Services/TFS Git repo.
 
@@ -29,6 +29,9 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 ## Use Team Explorer Everywhere
 
 [Team Explorer Everywhere](https://github.com/Microsoft/team-explorer-everywhere) is an open-source Eclipse plug-in to connect Eclipse to Azure DevOps Services or Team Foundation Server. If you're working with Azure DevOps Services/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
+
+> [!NOTE]
+> The Team Explorer Everywhere plug-in works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 0. [Install the Team Explorer Everywhere plug-in](/azure/devops/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse).
 

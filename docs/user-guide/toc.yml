@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: What is Azure DevOps?
-    href: what-is-azure-devops.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Overview of services
     href: services.md
   - name: Azure DevOps Services vs. Azure DevOps Server
@@ -13,39 +13,39 @@
   - name: Code with Git
     href: code-with-git.md
   - name: Set up continuous integration and delivery
-    href: ../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../pipelines/get-started-designer.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: "Plan and track work"
-    href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: "Add and run manual tests"
     href: add-run-manual-tests.md
   - name: View permissions
-    href: ../organizations/security/view-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: ../organizations/security/view-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Quickstarts for admins
   items:
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
   - name: Create an organization or project collection
-    href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../organizations/accounts/create-organization.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Manage your project
     href: project-admin-tutorial.md
   - name: Add users to a project or team 
-    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
+    href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Manage teams and configure team tools
-    href: ../organizations/settings/manage-teams.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../organizations/settings/manage-teams.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Tutorials for users
   items:
   - name: Set favorites
-    href: ../project/navigation/set-favorites.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Follow work and pull requests
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get started as a Stakeholder
-    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Tutorials for admins
   items:
   - name: Change individual permissions 
-    href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../organizations/security/change-individual-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Grant or restrict permissions to select tasks
-    href: ../organizations/security/restrict-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../organizations/security/restrict-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Concepts
   items:
   - name: Plan your org structure
@@ -59,15 +59,15 @@
 - name: How-to guides
   items:
   - name: Sign in to the web or a client
-    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
     href: troubleshoot-connection.md
   - name: "TF31002: Unable to connect"
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Troubleshoot network connections and whitelist addresses
-    href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Troubleshoot network connections and lists of allowed addresses
+    href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get support or provide feedback
     href: provide-feedback.md
 

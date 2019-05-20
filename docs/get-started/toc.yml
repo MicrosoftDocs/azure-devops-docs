@@ -11,9 +11,9 @@
 - name: Reference
   items:
   - name: "Permissions and access (Security)"
-    href: ../organizations/security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: About access levels
-    href: ../organizations/security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+    href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Navigate in Team Explorer
     href: ../user-guide/work-team-explorer.md  
   - name: FAQs
@@ -27,7 +27,7 @@
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
-    href: ../organizations/accounts/set-up-vs.md
+    href: ../organizations/accounts/set-up-vs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Visual Studio Code 
     href: https://code.visualstudio.com/docs
   - name: Visual Studio for Mac
@@ -39,13 +39,13 @@
 - name: Azure DevOps Services status & security
   items: 
   - name: Service status  
-    href: ../user-guide/service-status-info.md
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Azure DevOps data protection
-    href: ../organizations/security/data-protection.md
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Azure DevOps data location
-    href: ../organizations/security/data-location.md
+    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Azure DevOps credential storage
-    href: ../organizations/security/credential-storage.md
+    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Journey articles
   items:
     - name: Agile

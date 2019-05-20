@@ -32,7 +32,7 @@ Improve your overall code quality by using manual and exploratory testing servic
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Exploratory & Manual Testing</h3>
+                        <h3><a href="/azure/devops/test/index">Exploratory & Manual Testing</a></h3>
                         <p>
                             <a href="/azure/devops/test/overview">Testing scenarios and capabilities</a>
                         </p>
@@ -119,10 +119,7 @@ Improve your overall code quality by using manual and exploratory testing servic
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Unit &amp; Functional Testing (Visual Studio)</h3>
-                        <p>
-                            <a href="/visualstudio/test/unit-test-your-code">Unit test your code</a>
-                        </p>
+                        <h3><a href="/visualstudio/test/unit-test-your-code">Unit &amp; Functional Testing (Visual Studio)</a></h3>
                         <p>
                             <a href="/visualstudio/test/create-a-unit-test-project">Create a unit test project</a>
                         </p>
@@ -131,6 +128,12 @@ Improve your overall code quality by using manual and exploratory testing servic
                         </p>
                         <p>
                             <a href="/visualstudio/test/live-unit-testing-start">Get started with Live Unit Testing</a>
+                        </p>
+                        <p>
+                            <a href="/visualstudio/test/intellitest-manual/getting-started">Get started with Microsoft IntelliTest</a>
+                        </p>
+                        <p>
+                            <a href="/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested">Use code coverage to determine how much code is being tested</a>
                         </p>
                     </div>
                 </div>

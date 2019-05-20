@@ -1188,7 +1188,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](../pipelines/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](../pipelines/process/stages.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
@@ -1342,7 +1342,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Multiple team dashboards</b></p>
-<p>Each team can create several [team dashboards](../report/dashboards/dashboards.md) to help keep both the team and stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
+<p>Each team can create several [team dashboards](../report/dashboards/dashboards.md) to help keep both the team and Stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
 ![Add a dashboard control](_img/features/alm-feature-add-a-dashboard.png)  
  <br/>
 
@@ -1377,7 +1377,7 @@ pipelines\tasks\build\_img
 <br/>
 
 
-<p><b>Share dashboards with stakeholders</b></p>
+<p><b>Share dashboards with Stakeholders</b></p>
 <p>Grant non-licensed users access as Stakeholders ([Azure DevOps Services](../organizations/accounts/add-organization-users.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
@@ -2217,7 +2217,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Charts</b></p>
-<p>[Turn your queries into a status or trend chart](../report/dashboards/charts.md) and share them with your team, organization, and stakeholders.</p>
+<p>[Turn your queries into a status or trend chart](../report/dashboards/charts.md) and share them with your team, organization, and Stakeholders.</p>
 ![Create status and trend charts from flat list queries](_img/features/alm-feature-test-chart.png)  
 <br/>
 
@@ -2347,7 +2347,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Stakeholder access</b></p>
-<p>[Grant stakeholders, non-licensed users, limited access](../organizations/security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
+<p>[Grant Stakeholders, non-licensed users, limited access](../organizations/security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to [create shared queries and query folders](../boards/queries/set-query-permissions.md).</p>
@@ -2659,7 +2659,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Add users to the team admin role to enable them to [Manage teams and configure team tools](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
-<p><b>Support stakeholders</b></p>
+<p><b>Support Stakeholders</b></p>
 <p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  </p>
 </td>
 <td width="33%">

@@ -51,7 +51,7 @@ You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 The Visual Studio Test task (version 2) is designed to work seamlessly with parallel job settings.
 When a pipeline job that contains the Visual Studio Test task (referred to as the "VSTest task" for simplicity)
-is configured run on multiple agents in parallel, it automatically detects that multiple agents are involved
+is configured to run on multiple agents in parallel, it automatically detects that multiple agents are involved
 and creates test slices that can be run in parallel across these agents.
 
 The task can be configured to create test slices to suit different requirements such as

@@ -32,7 +32,7 @@ Collaborate on code development using free Git public and private repositories, 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Start using Azure Repos</h3>
+                        <h3><a href="/azure/devops/repos/get-started/index">Start using Azure Repos</a></h3>
                         <p>
                             <a href="/azure/devops/repos/get-started/what-is-repos">What is Azure Repos?</a>
                         </p>
@@ -57,7 +57,7 @@ Collaborate on code development using free Git public and private repositories, 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Git Repositories</h3>
+                        <h3><a href="/azure/devops/repos/git/index">Git Repositories</a></h3>
                         <p>
                             <a href="/azure/devops/repos/git/overview">Git and Azure Repos</a>
                         </p>
@@ -85,7 +85,7 @@ Collaborate on code development using free Git public and private repositories, 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Team Foundation version control (TFVC)</h3>
+                        <h3><a href="/azure/devops/repos/tfvc/index">Team Foundation version control (TFVC)</a></h3>
                         <p>
                             <a href="/azure/devops/repos/tfvc/overview">Use TFVC</a>
                         </p>

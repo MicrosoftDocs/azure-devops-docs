@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/17/2019
+ms.date: 05/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,20 +18,16 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you'll learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
+In this article, learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
 
-[Pay for additional users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
-
-For a list of included features, see the [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
-
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
+Visual Studio subscribers get Basic access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
 ## Prerequisites
 
-Ensure the following is true for the user who's making a change:
+Ensure the following is true:
 
-* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
-
+* [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
+* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 
 <a name="buy-access-vs-marketplace"></a>
 
@@ -78,7 +74,7 @@ The number of users to whom you can assign Basic appears on the right side of yo
 As your team contracts, you can decrease the number of paid users in your organization.
 
 > [!NOTE]
-> To reduce or cancel users who have paid Basic access for the next month, you must make your changes before the last day of the month.
+> To reduce or cancel users who have paid Basic access for the next month, make your changes before the last day of the month.
 > Your charges won't change until the next month because paid users are monthly purchases.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).

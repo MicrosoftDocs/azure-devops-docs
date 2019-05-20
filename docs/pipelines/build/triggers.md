@@ -4,12 +4,11 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 04/17/2019
+ms.date: 05/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +23,9 @@ monikerRange: '>= tfs-2015'
 On the Triggers tab, you specify the events that trigger the build. You can use the same build pipeline for both CI and scheduled builds.
 
 <a name="ci"></a>
-## Continuous integration (CI)
+## CI triggers
+
+Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
 
 # [YAML](#tab/yaml)
 
@@ -52,8 +53,8 @@ trigger:
 - releases/*
 ```
 
-You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
-You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
@@ -88,7 +89,8 @@ trigger:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
-When you specify a trigger, this default no longer applies.
+>[!IMPORTANT]
+>When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 ::: moniker-end
 
@@ -245,17 +247,12 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 ---
 
-## Pull request validation
+## PR triggers
+
+Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches,
+or when changes are pushed to such a pull request.
 
 # [YAML](#tab/yaml)
-
-::: moniker range=">= azure-devops-2019"
-
-> [!NOTE]
-> New pipelines automatically override YAML PR triggers with a setting in the UI.
-> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -265,6 +262,10 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> New pipelines automatically override YAML PR triggers with a setting in the UI.
+> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
 
 > [!IMPORTANT]
 > YAML PR triggers are only supported in GitHub. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
@@ -286,10 +287,20 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
 
-You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
-You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+```yaml
+pr:
+  branches:
+    include:
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
+```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
@@ -319,6 +330,8 @@ pr:
     exclude:
     - docs/README.md
 ```
+
+Path filters for PR triggers are not yet supported for Bitbucket Cloud repos.
 
 ::: moniker-end
 
@@ -390,7 +403,7 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 
 ::: moniker-end
 
-## Scheduled
+## Scheduled triggers
 
 # [YAML](#tab/yaml)
 
@@ -531,6 +544,32 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 ::: moniker-end
 
+## Wildcards
+
+When specifying a branch or tag, you may use an exact name or a wildcard.
+Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
+For branches and tags, a wildcard may appear anywhere in the pattern.
+
+For paths, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
+You may not include `*` in the middle of a path filter, and you may not use `?`.
+
+```yaml
+trigger:
+  branches:
+    include:
+    - master
+    - releases/*
+    - feature/*
+    exclude:
+    - releases/old*
+    - feature/*-working
+  paths:
+    include:
+    - '*' # same as '/' for the repository root
+    exclude:
+    - 'docs/*' # same as 'docs/'
+```
+
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -558,7 +597,7 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 ### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
 
-When you have configured a [CI trigger](#continuous-integration-ci) or a [PR trigger](#pull-request-validation), the YAML file that is in the branch being pushed is used.
+When you have configured a [CI trigger](#ci-triggers) or a [PR trigger](#pr-triggers), the YAML file that is in the branch being pushed is used.
 
 * For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
 * For PR triggers, the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.

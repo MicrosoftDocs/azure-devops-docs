@@ -8,7 +8,7 @@ ms.custom: java
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.date: 01/22/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,6 +27,9 @@ In this scenario, you will open the running MyShuttle application and discover a
 ## Prerequisites
 
 This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private Azure DevOps Services agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
+
+> [!NOTE]
+> The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 ## Install the Exploratory Testing Extension for Chrome
 

@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Sign up for Azure DevOps with a personal Microsoft account
 
-1. Select the sign-up link for [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137).
+1. Select the sign-up link for [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
 
@@ -12,7 +12,7 @@ ms.topic: include
 
 3. Enter your password and select **Sign in**.
 
-   If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
+   If you don't have a Microsoft account, you can [create a Microsoft account](https://support.microsoft.com/en-us/help/4026324/microsoft-account-how-to-create) at this time.
 
    ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
 
@@ -20,22 +20,13 @@ ms.topic: include
 
    ![Choose Continue to sign up for Azure DevOps](../_shared/_img/sign-up-azure-devops.png)
 
-5. Enter a name for your organization. The name can't contain spaces or special characters
- (such as / \ [ ] : | < > + = ; ? or &#42;), can't end in a period or comma, must be fewer than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Select **Continue**.
+An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
-   ![Almost done](../_shared/_img/almost-done.png)
+You can rename and delete your organization, or change the organization location. To learn more, see [Manage organizations](../organizations/accounts/organization-management.md).
 
-   You see the following dialog box as your organization is created.
+For more information about renaming or changing the location of your organization, see the following articles:
 
-   ![Taking you to your new  organization](/azure/devops/_shared/_img/taking-you-to-your-new-azure-devops-org.png)
+- [Rename an organization](../organizations/accounts/rename-organization.md)
+- [Change the location of your organization](../organizations/accounts/change-organization-location.md)
 
-	Congratulations, you're now an organization owner!
-
-	To sign in to your organization at any time, go to `https://dev.azure.com/{yourorganization}`.
-
-For more information about organizations and projects, see the following articles:
-
-- [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
-- [About projects and scaling your organization](/azure/devops//organizations/about-projects)
-- [Create a project](/azure/devops/organizations/projects/create-project)
-
+If you signed in with an existing Microsoft account, your next step is to [Create a project](../user-guide/sign-up-invite-teammates.md#CreateProject). If you signed in with a newly created Microsoft account, then your project is automatically created and named after your account name. To learn more about managing projects, see [Manage projects](../organizations/projects/about-projects.md).
