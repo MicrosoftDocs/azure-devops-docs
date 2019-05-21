@@ -33,8 +33,7 @@ Password: `your PAT here`
 
 or
 
-`git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
-`
+`git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName`
 
 To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
 

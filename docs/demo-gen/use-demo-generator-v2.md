@@ -64,14 +64,15 @@ Tasks with versions 'ARM Outputs:4.*' are not valid for deploy job 'Agent job' i
 
 **Workaround:** You can try waiting for a few minutes and confirm whether the extension is available to use, and then run the generator again. 
 
-------------------
+---
+
 ### **Issue:** Error while creating query: TF401256: You do not have Write permissions for query Shared Queries:
 
 **Cause:** In Azure DevOps, users have different access levels - Basic, Stakeholder and Visual Studio Subscriber. Access levels determine what features are available to user. In order to provion projects using the demo generator, you need at least a **Basic** access level. This error indicates the user has a *stakeholder* license which does not grant permissions to writing shared queries
 
 **Fix:** You should change the access level, from basic to stakeholder. Please refer to this article on docs:  [Add users to your organization or project](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/add-organization-users?view=azure-devops) for more information on how to add users to your organization, and specify the level of features they can use
 
--------------
+---
 
 ### **Issue:** TF50309: The following account does not have sufficient permissions to complete the operation: 
 The following permissions are needed to perform this operation: Create new projects

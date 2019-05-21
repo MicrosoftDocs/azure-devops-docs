@@ -63,7 +63,7 @@ For example:
   the search string `xml parser`.
 * `xml OR parser` finds packages that contain either of the words **xml** or **parser**.
 * `xml NOT parser` finds packages that contain the word **xml** but not the word **parser**.
-* `(xml NOT parser) OR `lib` finds packages that contain the word **xml**
+* `(xml NOT parser) OR lib` finds packages that contain the word **xml**
   but not the word **parser** or packages that contain the word **lib**.
 
 ## Broaden your search by using  wildcards
