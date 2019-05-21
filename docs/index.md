@@ -535,7 +535,7 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/dev-resources/index">Developer Resources</a></h3>
                         <p>
-                            <a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">Command Line Interface</a>
+                            <a href="/azure/devops/cli/index">Command Line Interface</a>
                         </p>
                         <p>
                             <a href="/rest/api/vsts/">REST APIs</a>
