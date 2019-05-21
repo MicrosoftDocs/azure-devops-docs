@@ -18,7 +18,7 @@ When you run a pipeline, a lot of things happen under the covers.
 While you often won't need to know about them, once in a while it's useful to have the big picture.
 At a high level, Azure Pipelines will:
 - [Process the pipeline](#process-the-pipeline)
-- [Request one more more agents to run jobs](#request-an-agent)
+- [Request one or more agents to run jobs](#request-an-agent)
 - Hand off jobs to agents and collect the results
 
 On the agent side, for each job, an agent will:
