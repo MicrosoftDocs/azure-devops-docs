@@ -284,7 +284,7 @@ featureFlags:
 														<p><a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
 														<p><a href="/azure/devops/repos/git/command-prompt">Git commands</a></p>
 														<p><a href="/azure/devops/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></p>
-														<p><a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">CLI</a></p>
+														<p><a href="/azure/devops/cli">CLI</a></p>
 														<p><a href="/azure/devops/demo-gen">Azure DevOps demo generator</a></p>
                                                     </div>
                                                 </div>
