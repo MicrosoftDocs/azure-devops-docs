@@ -27,3 +27,15 @@ For more details about the command see the documentation [here](https://docs.mic
 Managing build tags when you are creating builds from the command line is now easier. With the `az pipelines build tag` commands, you can now kick off a build and tag the build at the same time. The Azure Pipeline build tag command allows you to add, delete or list build tags. 
 
 For more details on the commands and its syntax, see the documentation [here](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/build/tag?view=azure-cli-latest).
+
+### Share test run results via URL 
+
+You can configure automated tests to run as part of a build or release. The published test results can be viewed in the **Tests** tab in build or release summary. With this update, we added a **Copy results URL** feature so you can share a single test run results with others in your team. 
+
+The sharing levels include:
+   * Run level
+   * Result level
+   * Individual tab selected within test run 
+   * Sharing is also compatible with any extension tabs configured
+
+When you share the URL, viewers will see the test run results in the full screen view.
