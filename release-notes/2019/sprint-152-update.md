@@ -28,10 +28,6 @@ Azure Repos:
 
 [!INCLUDE [sprint-152-update-links](_shared/repos/sprint-152-update-links.md)]
 
-Azure Test Plans:
-
-[!INCLUDE [sprint-152-update-links](_shared/testplans/sprint-152-update-links.md)]
-
 Azure Artifacts:
 
 [!INCLUDE [sprint-152-update-links](_shared/artifacts/sprint-152-update-links.md)]
@@ -51,10 +47,6 @@ Wiki:
 ## Azure Repos
 
 [!INCLUDE [sprint-152-update](_shared/repos/sprint-152-update.md)]
-
-## Azure Test Plans
-
-[!INCLUDE [sprint-152-update](_shared/testplans/sprint-152-update.md)]
 
 ## Azure Artifacts
 

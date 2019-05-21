@@ -155,9 +155,6 @@
 ### [April 30](2019/repos/sprint-151-update.md)
 ### [April 8](2019/repos/sprint-150-update.md)
 ### [February 4](2019/repos/sprint-147-update.md)
-# Azure Test Plans
-## 2019
-### [May 20](2019/testplans/sprint-152-update.md)
 # Azure Pipelines
 ## 2019
 ### [May 20](2019/pipelines/sprint-152-update.md)
