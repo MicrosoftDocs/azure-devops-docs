@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "**/_shared/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
