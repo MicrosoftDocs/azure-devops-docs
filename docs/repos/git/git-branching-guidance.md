@@ -83,7 +83,7 @@ Distribute reviewer responsibilities to share ideas across your team and spread 
 
 Some suggestions for successful pull requests:    
    
-- Two reviewers is an optimal number [based on research](https://www.microsoft.com/research/publication/convergent-software-peer-review-practices/). 
+- Two reviewers is an optimal number [based on research](https://www.microsoft.com/en-us/research/publication/convergent-software-peer-review-practices/). 
 - If your team already has a code review process, bring pull requests into what you're already doing.
 - Take care assigning the same reviewer(s) to a large number of pull requests. Pull requests work better when reviewer responsibilities are shared across the team.
 - Provide enough detail in the description to quickly bring reviewers up to speed with your changes.   
