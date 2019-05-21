@@ -5,7 +5,8 @@ description: Define the initial set of shared queries and query folder structure
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 04/11/2019
@@ -24,7 +25,7 @@ Work item queries specify criteria for generating a list of work items, such as 
 ::: moniker range="azure-devops-2019"
 
 > [!IMPORTANT]  
-> The default process templates define a few queries that appear under My Queries on the Queries page. They no no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
+> The default process templates define a few queries that appear under My Queries on the Queries page. They no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
 
 ::: moniker-end
 
