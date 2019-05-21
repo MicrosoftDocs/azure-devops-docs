@@ -115,19 +115,19 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Manage extensions from the command line</td><td>General</td><td>N/A</td>
          </tr>
         <tr><td>Invoke REST APIs from the command line</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Manage users from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Create and manage pipelines from a command line</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Manage build tags from the command line</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Share test run results via URL</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Filter by target branch in pull requests (PR)</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Allow extensions to add syntax highlighting and autocomplete</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Manage git references from the command line</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Share test run results via URL</td><td>Test Plans</td><td>Future</td></tr>
         <tr><td>Update repository name and default branch from the command line</td><td>Repos</td><td>N/A</td></tr>
         <tr><td>Manage artifacts in a pipeline run from the command line</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>New modern user experience</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Support for HTML tags</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Improved table creation and editing</td><td>Wiki</td><td>Future</td></tr>
-        <tr><td>Manage users from the command line</td><td>Administration</td><td>N/A</td></tr>
         <tr>
         <tr>
             <td rowspan="6">[13 May 2019](2019/build-may.md)</td>

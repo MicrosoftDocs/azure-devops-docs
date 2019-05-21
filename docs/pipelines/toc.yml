@@ -646,4 +646,4 @@
   - name: REST API reference
     href: /rest/api/vsts/
   - name: Azure DevOps CLI
-    href: /cli/azure/ext/azure-devops/pipelines
+    href: /azure/devops/cli
