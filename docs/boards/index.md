@@ -38,7 +38,7 @@ Plan, track, and discuss work across your teams.
                     <div class="cardText">
                         <h3>Start using Azure Boards</h3>
                         <p>
-                            <a href="/azure/devops/boards/get-started/what-is-azure-boards">What is Azure Boards?</a>
+                            <a href="/azure/devops/boards/get-started/what-is-azure-boards-basic-process">What is Azure Boards?</a>
                         </p>
                         <p>
                             <a href="/azure/devops/boards/get-started/sign-up-invite-teammates">Sign up and invite some teammates</a>
