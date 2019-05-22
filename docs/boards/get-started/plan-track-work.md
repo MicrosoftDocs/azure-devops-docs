@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/14/2019
+ms.date: 05/21/2019
 ---
 
 
@@ -20,25 +20,15 @@ ms.date: 02/14/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-This article walks you through creating user stories and tasks using a Kanban board for the Agile process. 
+This article walks you through creating user stories and tasks using a Kanban board for the Agile process. The Agile process provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks to a user story.  
 
-
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](track-issues-tasks.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)
-> - [**Agile process**](plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
-
-
-Your first project uses the default Agile process which provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks to a user story.  
+> [!NOTE]  
+> If your project uses the Basic process, see [Track issues, tasks, and features ](track-issues-tasks.md).  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
 > |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) 
-
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
