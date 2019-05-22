@@ -1,10 +1,8 @@
 - name: Azure Boards Documentation
   expanded: false
   href: index.md
-- name: Get started (Basic)
+- name: Get started
   href: get-started/toc.yml
-- name: Get started (Agile)
-  href: get-started-agile/toc.yml 
 - name: Azure Boards & GitHub
   href: github/toc.yml 
 - name: Work Items

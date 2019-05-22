@@ -22,22 +22,15 @@ ms.date: 01/11/2019
 
 Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located outside the United States. In the end, you'll have a project the uses the [Agile process for work tracking](what-is-azure-boards.md).
 
-
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](sign-up-invite-teammates.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
-> - [**Agile process**](sign-up-invite-teammates-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
- 
-
+You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 
 <a name="MicrosoftAccount"></a>
 
 [!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
 
-[!INCLUDE [welcome-page](../../_shared/welcome-project-page.md)]
+[!INCLUDE [sign-up-msft-account](../../_shared/sign-in-github-account.md)]
+
+[!INCLUDE [create-project](../../_shared/create-project.md)]
 
 <a id="invite-others" />
 [!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]

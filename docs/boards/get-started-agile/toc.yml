@@ -1,12 +1,12 @@
 - name: Start using Azure Boards (Agile process)
-  href: ../get-started/index-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json
+  href: ../get-started/index-agile.md
 - name: "What is Azure Boards?"
-  href: ../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  href: ../get-started/what-is-azure-boards.md
 - name: Sign up and invite some teammates 
-  href: ../get-started/sign-up-invite-teammates.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  href: ../get-started/sign-up-invite-teammates-agile.md
 - name: Plan and track work
-  href: ../get-started/plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  href: ../get-started/plan-track-work.md 
 - name: Customize your boards
-  href: ../get-started/customize-boards-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  href: ../get-started/customize-boards-agile.md
 
 
