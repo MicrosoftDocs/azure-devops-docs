@@ -18,7 +18,12 @@ ms.date: 04/04/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-With Azure Boards, you can quickly and easily start tracking tasks, features, and bugs associated with your project. You do so by adding one of three work item types&mdash;epics, issues, and tasks&mdash;that the Basic process provides. As works progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**.
+With Azure Boards, you can quickly and easily start tracking tasks, features, and bugs associated with your project. You do so by adding one of three work item types&mdash;epics, issues, and tasks&mdash;that the Basic process provides. 
+
+> [!NOTE]  
+> If your project uses the Agile, Scrum, or CMMI process, see [What is Azure Boards?](what-is-azure-boards.md).  
+
+As works progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Workflow |
@@ -28,14 +33,6 @@ With Azure Boards, you can quickly and easily start tracking tasks, features, an
 When you add an issue, task, or epic, you create a work item. Each work item represents an object stored in the work item data store. Each work item is assigned an identifier. The IDs are unique within your projects.
 
 Add epics to track significant features or requirements. Use issues to track user stories, bugs, or other smaller items of work. And, use tasks to track even smaller amounts of work for which you want to track time either in hours or days.
-
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](what-is-azure-boards-basic-process.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
-> - [**Agile process**](what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json)  
 
 
 

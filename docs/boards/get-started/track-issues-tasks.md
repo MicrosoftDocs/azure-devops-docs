@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/11/2019
+ms.date: 05/21/2019
 ---
 
 
@@ -20,23 +20,15 @@ ms.date: 01/11/2019
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
 
-This article walks you through creating issues and tasks using a Kanban board for the Basic process. 
+This article walks you through creating issues and tasks using a Kanban board for the Basic process. Your first project uses the Basic process which provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
 
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](track-issues-tasks.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)
-> - [**Agile process**](plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
-
-Your first project uses the Basic process which provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue.  
+> [!NOTE]  
+> If your project uses the Agile process, see [Track user stories, tasks, and features ](plan-track-work.md).  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
 > |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) 
-
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -55,6 +47,7 @@ Here we show how to add issues and child tasks from the web portal and add detai
 For details, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
 
 -->
+
 ## Open the Issues board 
 
 The Issues Kanban board is the best tool for quickly adding issues and child tasks. To open, choose **Boards>Boards**.  
@@ -70,22 +63,22 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 
 ## Add issues  
 
-0. From the Issues board, choose **New item** and start adding those issues you want to track. 
+1. From the Issues board, choose **New item** and start adding those issues you want to track. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add new item](_img/track-issues/issues-board-new-item.png) 
 
-0. Enter return and the system assigns a work item ID to the issue. 
+2. Enter return and the system assigns a work item ID to the issue. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Added item](_img/track-issues/issues-board-added-item.png) 
 
-0. To track the work you want to manage, add as many issues that you need.  
+3. To track the work you want to manage, add as many issues that you need.  
 
 
 ## Add details to an issue 
 
-0.	Choose the issue title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../_img/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
+1.	Choose the issue title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../_img/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
 	For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
@@ -95,7 +88,7 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 	> [!NOTE]  
 	> You can only assign work to a user who has been added to the project. 
 
-0.	Choose **Save & Close** when done. 
+2.	Choose **Save & Close** when done. 
 
 ### Field descriptions
 <table valign="top" width="100%">
