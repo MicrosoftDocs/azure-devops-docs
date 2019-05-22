@@ -12,11 +12,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/11/2019
+ms.date: 05/21/2019
 ---
 
 
-# Key concepts and terms used for Azure Boards
+# Key concepts and terms used for Azure Boards (Agile process)
 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -27,13 +27,9 @@ Here are definitions of key concepts and artifacts used in Azure Boards. For mor
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](key-concepts.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)
-> - [**Agile process**](key-concepts-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
+
+> [!NOTE]  
+> If your project uses the Basic process, see [Key concepts and terms used for Azure Boards (Basic process)](key-concepts.md).  
 
 ## Agile methods
 The goal of Agile engineering best processes is to rapidly deliver high-quality software. Agile uses a business approach that aligns development with customer needs and company goals. Frequent inspection and adaptation are necessary. Teamwork, self-organization, and accountability are critical to project success.  
