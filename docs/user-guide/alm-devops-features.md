@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 04/05/2019
+ms.date: 05/22/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -52,7 +52,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [Eclipse (Team Explorer Everywhere)](/../java/download-eclipse-plug-in)       
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)      
 - [Android Studio](/../java/download-android-studio-plug-in)     
-- [IntelliJ](/../java/download-intellij-plug-in)   
+- [IntelliJ](https://plugins.jetbrains.com/plugin/7981-azure-devops)   
 - [Visual Studio Code](/../java/vscode-extension)   
  
 To learn how to connect, see [Connect to a project](../organizations/projects/connect-to-projects.md).  
