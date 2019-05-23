@@ -2,7 +2,7 @@
 title: Organize your product backlog into a hierarchy of items 
 titleSuffix: Azure Boards  
 description:  Map or parent backlog items to features, and features to epics in Azure Boards or TFS
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  

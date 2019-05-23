@@ -2,9 +2,10 @@
 ms.topic: include
 ---
 
-<a id="definitions-in-common"></a>
 
 ## Definitions for common WIT fields  
+
+<a id="definitions-in-common"></a>
 
 The following fields and tabs appear in most work items. Each tab is used to track specific information, such as ![History tab icon](/azure/devops/boards/backlogs/_img/icon-history-tab-wi.png) history, ![Links tab icon](/azure/devops/boards/backlogs/_img/icon-links-tab-wi.png) links, or ![Attachment tab icon](/azure/devops/boards/backlogs/_img/icon-attachments-tab-wi.png) attachments. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
 

@@ -2,10 +2,10 @@
 ms.topic: include
 ---
 
-
+## Update the XML definition for a WIT 
 
 <a id="update-xml-wit"></a>
-## Update the XML definition for a WIT 
+
 If you are new to WIT customization, note the following: 
  
 - To customize any aspect of a WIT requires updating the XML definition for the WIT. The WIT XML definition is described in [All WITD XML elements reference](/azure/devops/reference/xml/all-witd-xml-elements-reference)   

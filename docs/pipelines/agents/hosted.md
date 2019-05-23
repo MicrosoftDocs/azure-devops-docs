@@ -99,7 +99,7 @@ Microsoft-hosted agents:
 
 Microsoft-hosted agents do not offer:
 
-* The ability to log on.
+* The ability to sign in.
 * The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
 * The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
@@ -122,7 +122,15 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/confirmation.aspx?id=41653) for all regions in that geography.
 
 >[!NOTE]
->If your organization is in the Brazil South region, your hosted agents may occasionally be located in the United States geography due to capacity issues, and you must also include the IP ranges for regions in the United States geography for your hosted agents.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be be included for regions in the capacity fallback geography.
+>
+>If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
+>
+>If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+
+### Can I use service tags instead?
+
+Currently, Service Tags is not something you can use for your hosted agents. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -172,7 +180,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
-  Note that this command does not works in case of Xamarin app. To manually select a Xcode version for building Xamarin apps, see instructions above.
+  Note that this command does not work for Xamarin apps. To manually select a Xcode version for building Xamarin apps, see instructions above.
 
 #### Mono
 
