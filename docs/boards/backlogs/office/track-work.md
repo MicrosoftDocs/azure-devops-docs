@@ -37,13 +37,13 @@ To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-item
   
 To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
 
-![Exporting Work Items to Project](_img/officeprojseq_1.png "OfficeProjSeq_1")  
-  
+![Exporting Work Items to Project](_img/officeprojseq_1.png "OfficeProjSeq_1")
 
 
  When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
 
 ## Work offline and reconnect to Azure Boards and TFS
+
 One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Boards and TFS and later reconnect to synchronize the document with the work item database.  
   
 > [!NOTE]
@@ -75,7 +75,8 @@ To disconnect a an Excel or Project document file from the network:
     >  You can't create most types of links between work items when the work item document is disconnected from the system. The exceptions are parent-child links in an Excel tree list, and both parent-child and predecessor-successor links in a Project plan.  
   
 <a name="ReconnectingToTFS"></a> 
-###  Reconnect a file to Azure Boards and TFS 
+
+###  Reconnect a file to Azure Boards
   
 To reconnect an Excel or Project document file:  
   
@@ -173,7 +174,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
     -   If you are using Project, on the **Team** menu, choose **Refresh**.
 
 4.  Resolve any data validation errors or conflicts that occur.
-5.  
+
 ## Related articles
 
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
@@ -186,8 +187,10 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
-<a name="CT_ResolvingPublishErrors"></a> 
+<a name="CT_ResolvingPublishErrors"></a>
+ 
 ## Resolve publishing errors  
+
 To resolve publishing errors that arise when working in Excel or Project, see the following topics:   
   
 - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 

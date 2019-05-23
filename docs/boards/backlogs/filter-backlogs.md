@@ -2,7 +2,7 @@
 title: Filter backlogs and queries based on keywords, tags, or other fields  
 titleSuffix: Azure Boards
 description: Filter a backlog or query based on keywords, tags, or other fields   
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -15,12 +15,16 @@ ms.date: 02/14/2019
 ---
 
 ::: moniker range=">= tfs-2018"
+
 # Filter backlogs or queries based on keywords, tags, or other fields  
+
 ::: moniker-end 
 
 
 ::: moniker range="<= tfs-2017"
+
 # Filter backlogs or queries based on keywords 
+
 ::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
@@ -51,6 +55,7 @@ To clear and dismiss filtering, choose the ![ ](../../_img/icons/close-filter.pn
 
 
 ::: moniker range="tfs-2018"
+
 ## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
@@ -67,6 +72,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 ::: moniker range="<= tfs-2017"
 
 ## Filter based on keywords 
+
 You can use keywords to filter your backlogs or queries. The filter function lists those work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
 Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
@@ -75,14 +81,13 @@ Here, we filter the backlog to only show items that include 'Web' in any one of 
 
 The filtered set is always a flat list, even if you've selected to show parents.  
 
-
 ## Filter based on tags
+
 If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
 To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../queries/add-tags-to-work-items.md#filter).
  
 ::: moniker-end
-
 
 ## Characters ignored by keyword filter criteria
 
@@ -95,6 +100,7 @@ The filter criteria ignores the following characters when the field value starts
 ::: moniker-end
 
 ## Related articles  
+
 - [Tags](../queries/add-tags-to-work-items.md) 
 - [Set column options](set-column-options.md)  
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)

@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 ## Open the Work Items page
+
 You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
