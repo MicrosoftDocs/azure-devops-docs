@@ -8,7 +8,7 @@ ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.manager: jillfra
 ms.author: alewis
 author: juliobbv
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -101,7 +101,7 @@ Next, we'll create the Dockerfile.
 > For instance, you must add the `zip` and `unzip` packages
 > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
-5. Save the following content to `C:\dockeragent\start.sh`:
+5. Save the following content to `C:\dockeragent\start.sh`, making sure it uses Unix-style (LF) line endings:
 
     ```shell
     #!/bin/bash
@@ -278,7 +278,7 @@ Next, we'll create the Dockerfile.
 > For instance, you must add the `zip` and `unzip` packages
 > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
-5. Save the following content to `~/dockeragent/start.sh`:
+5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
     ```shell
     #!/bin/bash

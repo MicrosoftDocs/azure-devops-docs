@@ -34,7 +34,9 @@ In this article you'll learn:
   
 
 ## Prerequisites 
+
 ::: moniker range=">= tfs-2017" 
+
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
@@ -42,14 +44,17 @@ In this article you'll learn:
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
+
 - Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
 - Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+
 ::: moniker-end  
 
 To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
 <a id="add-work-items"> </a>  
+
 ## Add work items
 
 1.  If you don't have Microsoft Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
@@ -156,9 +161,10 @@ You can use the Select User feature to find user accounts and assign values to p
 	![Assigned to field, Drop-down menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
 
 > [!TIP]  
->Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
+> Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
 
 <a id="tree-list"></a>
+
 ## Add linked backlog items and tasks 
 
 You can bulk add a nested list of work items, such as a work break down structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
@@ -262,7 +268,7 @@ First, publish whatever changes you have made. Then, on the **Team** ribbon, cho
 Remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;and, then **Refresh** your worksheet.
 
 > [!TIP]  
->Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
+> Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
  
 
 ### Convert from an input list to a query
@@ -275,6 +281,7 @@ If you're working with a non-query input list, you can add work items by choosin
 
 
 ## Bulk edit test cases
+
 You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
 
 ## Related articles
@@ -297,6 +304,7 @@ To resolve publishing errors, see one of these topics:
 - [Invalid links](resolve-excel-invalid-links-tree-list.md)  
 
 ### Delete work items
+
 You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 
 ### Direct link query converts to flat list

@@ -43,8 +43,10 @@ To delete test artifacts, the following restrictions and operations apply:
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
 
 ::: moniker range="tfs-2017" 
+
 > [!NOTE]   
 > The permanently delete feature of test artifacts is available for TFS 2017.1 and later versions. 
+
 ::: moniker-end
 
 <a id="test-experience"></a>
