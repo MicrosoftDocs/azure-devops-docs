@@ -214,6 +214,15 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </tr>
 
 <tr>
+<td>Build.Repository.ID</td>
+<td>The unique identifier of the [repository](../repository.md).
+<br/><br/>
+This won't change, even if the name of the repository does.
+<br/><br/>
+This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+</tr>
+
+<tr>
 <td>Build.Repository.Name</td>
 <td>The name of the [repository](../repository.md).
 <br/><br/>

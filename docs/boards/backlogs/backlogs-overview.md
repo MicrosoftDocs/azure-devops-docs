@@ -2,7 +2,7 @@
 title: How are Backlogs used to support portfolios, priority, and multi-team ownership 
 titleSuffix: Azure Boards 
 description: Plan, track, and organize user stories, features, and bugs using backlogs and multiple teams 
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
@@ -46,13 +46,16 @@ Backlogs present work items as lists. A product backlog represents your project 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 !["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
-::: moniker-end
 
+![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+
+::: moniker-end
 
 
 ## Backlog configuration 
@@ -98,6 +101,7 @@ The preferred method for bulk edit is to use multi-select to move items to the t
 ::: moniker range=">= tfs-2018" 
 
 Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
+
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2017" 
@@ -168,6 +172,7 @@ Backlog displays with work item icons is supported for TFS 2017.2 and later vers
 Items that are owned by other teams appear with hollow-filled bars.  
 
 ![Team backlog is filtered based on area path ownership](_img/ALM_OB_CustServTeamBacklog.png)  
+
 ::: moniker-end   
 
 
@@ -181,6 +186,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics.png)   
+
 ::: moniker-end 
 
 

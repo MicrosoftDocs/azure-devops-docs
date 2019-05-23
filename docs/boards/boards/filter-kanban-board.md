@@ -33,20 +33,30 @@ To filter the Kanban board, first customize the board settings so that the cards
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).
 
 ::: moniker range=">= tfs-2018"
+
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
+
 ::: moniker-end
+
 ::: moniker range=">= tfs-2015 <= tfs-2017"
+
 ![Kanban board, customize card fields](_img/filter-kb-card-field-settings.png)
+
 ::: moniker-end
 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter.
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
+
 ::: moniker range=">= tfs-2017"
+
 ![Kanban board, Filter using keyword search](../boards/_img/filter/filter-options-web.png)
+
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
 ![Kanban board, Filter using keyword search](../boards/_img/filter-kb-filter-text-web.png)
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -56,20 +66,26 @@ For example, here we filter the backlog to only show items that include 'Web' in
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
 
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards.
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 The filter criteria ignores the following characters when the field value starts with the characters:<br/>
 ```{ ( [ ! @ # $ % ^ & * ~ ` ' "```
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
+
 ## Filter using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
@@ -89,6 +105,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 For example, here we filter for all items assigned to Jamal and Raisa.
 
 ![Kanban board, Filter on assignment field](../boards/_img/filter-kb-filters-chosen.png)
+
 Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
 
 Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
@@ -97,6 +114,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 ::: moniker range=">= tfs-2017"
 <a id="parent-filter"></a>
+
 ## Filter by specifying parent work items
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
