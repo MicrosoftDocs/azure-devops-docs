@@ -2,7 +2,7 @@
 title: Create a Git branch or initiate Git commits or pull requests from a user story, issue, or bug
 titleSuffix: Azure Boards 
 description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
@@ -45,6 +45,7 @@ The Development section records all Git development processes that support compl
 <img src="_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
 
 ::: moniker range="tfs-2017"
+
 > [!NOTE]   
 > The Development section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
@@ -122,6 +123,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 
 <a id="add-branch-multi-wi">  </a>
+
 ## Create a branch for several work items  
 
 You can also add a new branch from the work item listed on the backlog or Kanban board without having to open the work item. Using [multi-select](bulk-modify-work-items.md), you can select several work items and create a new branch where they're all linked to the branch. 
@@ -136,6 +138,7 @@ And, we specify the name of the branch.
 
 
 <a id="link-objects">  </a>
+
 ## Link to existing development and build objects
 
 All items listed under the Development section also appear under the ![Links tab icon](_img/icon-links-tab-wi.png) Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](_img/icon-history-tab-wi.png) History tab. 
@@ -150,6 +153,7 @@ To link a work item to an existing object, click the ![Add link](../_img/icons/a
 
 
 ### Remove a link 
+
 If you want to remove a link, you can do so from the Development section by highlighting it first and then click the ![delete icon](../_img/icons/delete_icon.png) delete icon.  
 
 ![Development section, delete a link](_img/add-work-item-remove-dev-link.png)  
@@ -161,6 +165,7 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 Learn more about tracking work with work items and developing with Git from these resources: 
 
 ::: moniker range="azure-devops"
+
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
@@ -170,10 +175,12 @@ Learn more about tracking work with work items and developing with Git from thes
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
+
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md)  
 - [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
+
 ::: moniker-end
 
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
@@ -189,6 +196,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 
 
 ### Link types showing in the Development section
+
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
 - Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   

@@ -5,8 +5,6 @@ ms.topic: include
 You can [view and run queries](/azure/devops/boards/queries/view-run-query) from the web portal or from the Team Explorer plug-in to Visual Studio. You can modify a query using the [query editor to apply different filter criteria](/azure/devops/boards/queries/using-queries). Also, you can [add queries to team dashboards](/azure/devops/report/dashboards/dashboards).  
 
 
-
-
 ### Quick tips on shared queries
 
 If you are new to Azure Boards, work tracking, and shared queries, review these tips to learn how you can manage work more effectively:

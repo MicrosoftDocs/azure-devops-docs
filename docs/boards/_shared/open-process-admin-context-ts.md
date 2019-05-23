@@ -10,7 +10,7 @@ ms.topic: include
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Organization Settings](/azure/devops/_shared/_img/settings/open-organization-settings.png)
 
-0. Choose **Process**. 
+1. Choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Account Settings, Process page](/azure/devops/organizations/settings/work/_img/process/open-process-page.png) 

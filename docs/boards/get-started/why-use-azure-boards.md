@@ -2,7 +2,7 @@
 title: 11 reasons to start using Azure Boards
 titleSuffix: Azure Boards & TFS 
 description: Understand why to use Azure Boards to track your issues, user stories, bugs, tasks, and other work  
-ms.custom: "boards-get-started, seodec18"   
+ms.custom: "boards-get-started, seodec18"
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
