@@ -2,7 +2,7 @@
 title: Move, change, delete, or restore user stories, bugs, tasks, and other work items 
 titleSuffix: Azure Boards
 description: How to remove, delete, change type, or move work items to another project in Azure Boards or TFS 
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  

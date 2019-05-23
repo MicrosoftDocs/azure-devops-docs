@@ -9,7 +9,7 @@ ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 1/8/2019
+ms.date: 5/23/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -38,6 +38,6 @@ If you use YAML pipelines, then the pipeline must directly be authorized to use 
 
 1. When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
 
-    In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+    In this case, on the Summary page, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
 
     ![Resource authorization](_img/resource-auth.png)

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 05/21/2019
 ---
 
 
@@ -27,13 +27,6 @@ You can review the extension by going to the [Azure DevOps Marketplace, Analytic
 > [!NOTE]   
 > The Analytics Marketplace extension is **not supported** for TFS 2018 or earlier versions.
 
-<!---
-- Install from the web portal 
-- Download and then upload to your server, choose this option when you're disconnected from the Azure DevOps Server
-
--->
-
-
 ## Prerequisites 
 
 - You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
@@ -45,7 +38,7 @@ You can review the extension by going to the [Azure DevOps Marketplace, Analytic
 
 <a name="connected-tfs"></a>
 
-## Install the Analytics extension from the Marketplace  
+## Install the Analytics extension  
 
 The Analytics extension is shipped within the on-premises installer. Installing the extension simply enables the functionality. There isn't any need to download extension files manually to install. Also, the on-premises Analytics extension updates with standard updates made to Azure DevOps Server.  
 
@@ -113,6 +106,31 @@ If you choose to disable the Analytics extension, it will stop any jobs from run
 
 0. Choose **Disable** or **Uninstall** as required.
 
+## Restore the Analytics extension if removed from the deployment
+
+If you remove the Analytics extension from your deployment, you can install the extension from the online marketplace to restore it. If you are unable to use the online marketplace due to your server setup&mdash;for example, your firewall blocks some outgoing connections&mdash;you can restore it to the local marketplace using the following steps.
+
+1. Open **Collection settings** following the instructions provided in the section [Install the Analytics extension](#connected-tfs). 
+
+	Choose **Extensions**, and then **Browse local extensions**.
+
+2. Scroll to the bottom of the page, and choose **Manage Extensions**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Manage extensions](_img/install-analytics/manage-extensions.png)   
+
+3. Choose **Upload extension** and then choose **click to upload**. Browse to the folder containing the Microsoft.TeamFoundation.Extension.Analytics.vsix file.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Upload extension](_img/install-analytics/upload-extension.png)   
+
+	The .vsix file can be found in your application-tier folder installation in the following path.
+
+	`C:\Program Files\Azure DevOps Server 2019\Tools\Deploy\TfsServicingFiles\Extensions\Microsoft.TeamFoundation.Extension.Analytics.vsix`
+
+	Uploading the extension restores it to the local marketplace. From there, you can install it to a collection.
+
+
 ## Known issue
 
 If you use a public URL to install the extension, for example `https://OnPrem.MyCompany.com`, you may encounter a callback error, such as a TLS/SSL error. 
@@ -130,20 +148,4 @@ To resolve this issue, you can install the extension from a machine that hosts t
 - [Extension FAQs](../../marketplace/tfs-extension-faqs.md) 
 - [Developing extensions](http://aka.ms/vsoextensions) 
 - [Publishing extensions](http://aka.ms/vsmarketplace-publish)
-
-<!---
-
-	If the Analytics card doesn't appear, then you can search for it.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Search for Analytics](_img/install-analytics/azure-devops-marketplace-search-analytics.png)  
-
-	Or, copy the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) link into your web browser. 
-
-
-4. Verify the selected collection and then choose <strong>Install</strong>.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose Get it free](_img/install-analytics/install-on-collection.png)   
-
--->
+ 
