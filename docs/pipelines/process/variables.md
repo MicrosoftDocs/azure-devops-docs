@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/29/2019
+ms.date: 05/23/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -480,6 +480,22 @@ If the variable `a` is an output variable from a previous job, then you can use 
     matrix:
       x:
         some_variable: $[ dependencies.A.outputs['a_step.a'] ]    # This works
+```
+
+### Recursive expansion
+
+On the agent, variables referenced using `$( )` syntax will be recursively expanded.
+However, for service-side operations such as setting display names, variables are not expanded recursively.
+For example:
+
+```yaml
+variables:
+  myInner: someValue
+  myOuter: $(myInner)
+
+steps:
+- script: echo $(myOuter)  # prints "someValue"
+  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
 ```
 
 ::: moniker-end
