@@ -115,7 +115,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
 
 > ![Query Results Icon](_img/query_selector_icon.png)
-
+> 
 > ![Query Selector Pane](_img/query_selector_pane.png)
 
 
@@ -178,7 +178,7 @@ In wiki pages, you can also create rich content using HTML tags.
 ```
 
 </br>
-**Result:**
+<strong>Result:</strong>
 </br>
 <video src="_img/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
 </video>

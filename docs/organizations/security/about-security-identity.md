@@ -134,14 +134,14 @@ Azure DevOps is pre-configured with default security groups. Default permissions
 <td>
 <p>User or group has permissions to perform a task:</p>
 <ul>
-<li>**Allow**</li>
-<li>**Inherited allow**</li>
+<li><strong>Allow</strong></li>
+<li><strong>Inherited allow</strong></li>
 </ul>
-<p>User or group doesn't have permission to perform a task:</p>
+<p>User or group doesn&#39;t have permission to perform a task:</p>
 <ul>
-<li>**Deny**</li>
-<li>**Inherited deny**</li>
-<li>**Not set** </li>
+<li><strong>Deny</strong></li>
+<li><strong>Inherited deny</strong></li>
+<li><strong>Not set</strong> </li>
 </ul>
 </td>
 </tr>

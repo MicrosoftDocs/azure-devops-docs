@@ -34,11 +34,11 @@ ms.date: 01/12/2017
   
  To perform the procedures in this topic, the following permissions must be assigned:  
   
--   To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
+- To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
   
--   To update work items in Team Foundation and submit them to Project Server, Team Foundation users must be members of the **Contributors** group for the project. Those users must also be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project. They must also be added to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.  
+- To update work items in Team Foundation and submit them to Project Server, Team Foundation users must be members of the **Contributors** group for the project. Those users must also be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project. They must also be added to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.  
   
- For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="Workflow"></a> Process overview  
  As the following illustration shows, the project manager initiates the process by planning the requirements and tasks in Project Professional. The synchronization engine creates corresponding work items in Team Foundation for each submitted task. The team lead reviews the plan together with the development team and updates work estimates. Each team member can update their work effort as they complete tasks.  
@@ -69,13 +69,13 @@ ms.date: 01/12/2017
 ##  <a name="pm_tasks"></a> Project manager tasks  
  As a project manager, you can define, schedule, and monitor progress on your project by engaging in the following activities:  
   
--   [Define requirements and tasks, and set a baseline](#DefineRequirementsTasks)  
+- [Define requirements and tasks, and set a baseline](#DefineRequirementsTasks)  
   
--   [Approve or reject status updates](#ApproveStatus)  
+- [Approve or reject status updates](#ApproveStatus)  
   
--   [Review detail updates and progress](#ReviewProgress)  
+- [Review detail updates and progress](#ReviewProgress)  
   
- You can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
+  You can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
   
 ###  <a name="DefineRequirementsTasks"></a> Define requirements and tasks, and set a baseline  
  When you define your project plan, you will want to define parent requirements and child tasks. As the following illustration shows, two requirements are defined, and each has several tasks. For each requirement and task, you must assign one value for **Resource Names**, set **Work Item Type**  to **Requirement** or to **Task**, and set **Publish to Team Project** to **Yes**.  
@@ -125,14 +125,14 @@ ms.date: 01/12/2017
 ##  <a name="DevTeamTasks"></a> Development team tasks  
  You can use the task board page in the TFS web portal or the Work Breakdown shared query to review and update work that is assigned to your team. Because the project manager owns the project plan and schedule, you and your team are required to perform the following tasks:  
   
--   [Review work breakdown](#ReviewWorkBreakdown)  
--   [Add and estimate additional tasks](#AddWork)   
--   [Update remaining and completed work](#UpdateWork)   
--   [Address rejected updates](#AddressUpdates)  
+- [Review work breakdown](#ReviewWorkBreakdown)  
+- [Add and estimate additional tasks](#AddWork)   
+- [Update remaining and completed work](#UpdateWork)   
+- [Address rejected updates](#AddressUpdates)  
   
- If you open a work item in Team Explorer, the **History** field shows when the synchronization engine created the work item, as the following illustration shows.  
+  If you open a work item in Team Explorer, the **History** field shows when the synchronization engine created the work item, as the following illustration shows.  
   
- ![History and Project Server synch message](_img/tfs-ps_pp_history.png "TFS-PS_PP_History")  
+  ![History and Project Server synch message](_img/tfs-ps_pp_history.png "TFS-PS_PP_History")  
   
 ###  <a name="ReviewWorkBreakdown"></a> Review the work breakdown  
  In the web portal or Team Explorer, you can open the Work Breakdown query, and review the work items that have been added to your project from Project Server. This query lists all requirements that are not closed and their child requirements or tasks. As the following illustration shows, tasks are listed under their requirements, and the parent-child hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")). That is, you cannot modify how tasks are grouped under requirements. Only the project manager from the project plan can modify the task hierarchy.  

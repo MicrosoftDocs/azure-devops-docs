@@ -7,7 +7,7 @@ ms.topic: include
 We've added an extension point to allow you to add new items to the repository picker. This extension point will let you add custom actions (redirects, popups, etc) to the repository picker menu, enabling flows like alternate repository creation scenarios.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/151_06.png "Repository creation extension")
+> ![Badge](../../_img/151_06.png "Repository creation extension")
 
 ### Improved encoding support
 
@@ -16,4 +16,4 @@ Previously, editing and saving files on the web would only save as UTF-8 encodin
 The following screenshot shows and example of the dialog that you will see when you introduce encoding changes by a web push.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/151_07.png "")
+> ![Badge](../../_img/151_07.png "")

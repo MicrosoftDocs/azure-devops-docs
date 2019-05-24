@@ -66,7 +66,7 @@ See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/ma
 * [clearError()](#method_clearError)
 
 <a name="method_hasActiveWorkItem"></a>
-###hasActiveWorkItem()
+### hasActiveWorkItem()
 
 Returns true if active work item is available.
 
@@ -80,7 +80,7 @@ Returns true if active work item is available.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;boolean&gt;. A promise that returns a boolean value indicates whether the active work item is available.
 
 <a name="method_getId"></a>
-###getId()
+### getId()
 
 Gets the id of active work item.
 
@@ -94,7 +94,7 @@ Gets the id of active work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;number&gt;. A promise that returns the active work item id.
 
 <a name="method_getRevision"></a>
-###getRevision()
+### getRevision()
 
 Gets the active work item's latest revision.
 
@@ -108,7 +108,7 @@ Gets the active work item's latest revision.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;number&gt;. A promise that returns the active work item's latest revision id.
 
 <a name="method_getFields"></a>
-###getFields()
+### getFields()
 
 Gets the active work item fields.
 
@@ -122,7 +122,7 @@ Gets the active work item fields.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItemField](../Contracts/WorkItemField.md)[]&gt;. A promise that returns an array of work item field.
 
 <a name="method_getFieldValue"></a>
-###getFieldValue()
+### getFieldValue()
 
 Gets field value of active work item.
 
@@ -141,7 +141,7 @@ Gets field value of active work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;Object&gt;. A promise that returns the value of the work item field.
 
 <a name="method_getFieldValues"></a>
-###getFieldValues()
+### getFieldValues()
 
 Gets field values of active work item.
 
@@ -160,7 +160,7 @@ Gets field values of active work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;IDictionaryStringTo&lt;Object&gt;&gt;. A promise that returns a dictionary of work item field values (refName to values pairs).
 
 <a name="method_setFieldValue"></a>
-###setFieldValue()
+### setFieldValue()
 
 Sets field value of active work item.
 
@@ -179,7 +179,7 @@ Sets field value of active work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;boolean&gt;. A promise that returns a boolean value indicates whether the function completed successfully.
 
 <a name="method_setFieldValues"></a>
-###setFieldValues()
+### setFieldValues()
 
 Sets field values of the work item.
 
@@ -197,7 +197,7 @@ Sets field values of the work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;IDictionaryStringTo&lt;boolean&gt;&gt;. A promise that returns a dictionary of field value update results (refName to results pairs).
 
 <a name="method_getAllowedFieldValues"></a>
-###getAllowedFieldValues()
+### getAllowedFieldValues()
 
 Gets the allowed values for the field on active work item.
 
@@ -215,7 +215,7 @@ Gets the allowed values for the field on active work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;Object[]&gt;. A promise that returns an array of allowed values.
 
 <a name="method_isDirty"></a>
-###isDirty()
+### isDirty()
 
 Returns true if active work item is dirty.
 
@@ -229,7 +229,7 @@ Returns true if active work item is dirty.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;boolean&gt;. A promise that returns a boolean value indicates whether the active work item is dirty.
 
 <a name="method_isNew"></a>
-###isNew()
+### isNew()
 
 Returns true if active work item is new.
 
@@ -243,7 +243,7 @@ Returns true if active work item is new.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;boolean&gt;. A promise that returns a boolean value indicates whether the active work item is new.
 
 <a name="method_isValid"></a>
-###isValid()
+### isValid()
 
 Returns true if active work item fields are all valid.
 
@@ -257,7 +257,7 @@ Returns true if active work item fields are all valid.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;boolean&gt;. A promise that returns a boolean value indicates whether all field values are valid.
 
 <a name="method_getInvalidFields"></a>
-###getInvalidFields()
+### getInvalidFields()
 
 Gets invalid fields who are in an invalid state according to the work item rules. These fields need to be changed before the work item can be saved.
 
@@ -271,7 +271,7 @@ Gets invalid fields who are in an invalid state according to the work item rules
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItemField](../Contracts/WorkItemField.md)[]&gt;. A promise that returns an array of invalid work item fields.
 
 <a name="method_addWorkItemRelations"></a>
-###addWorkItemRelations()
+### addWorkItemRelations()
 
 Adds links of another work items or artifacts (e.g. commits, hyperlinks) to the work item.
 Attachment is currently not supported by this function. Please see [Work Item Tracking REST APIs](../RestClient/WorkItemTrackingHttpClient2_2.md) for alternatives of updating work item attachments.
@@ -290,7 +290,7 @@ Attachment is currently not supported by this function. Please see [Work Item Tr
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;. An empty promise.
 
 <a name="method_removeWorkItemRelations"></a>
-###removeWorkItemRelations()
+### removeWorkItemRelations()
 
 Removes links to another work items or artifacts (e.g. commits, hyperlinks) from the work item.
 Attachment is currently not supported by this function. Please see [Work Item Tracking REST APIs](../RestClient/WorkItemTrackingHttpClient2_2.md) for alternatives of updating work item attachments.
@@ -309,7 +309,7 @@ Attachment is currently not supported by this function. Please see [Work Item Tr
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;. An empty promise.
 
 <a name="method_getWorkItemRelations"></a>
-###getWorkItemRelations()
+### getWorkItemRelations()
 
 Returns an array of the work item's links to another work items or artifacts (e.g. commits, hyperlinks).
 Attachment is currently not supported by this function. Please see [Work Item Tracking REST APIs](../RestClient/WorkItemTrackingHttpClient2_2.md) for alternatives of updating work item attachments.
@@ -324,7 +324,7 @@ Attachment is currently not supported by this function. Please see [Work Item Tr
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItemRelation](../Contracts/WorkItemRelation.md)[]&gt;. A promise that returns an array of work item relations of active work item.
 
 <a name="method_getWorkItemResourceUrl"></a>
-###getWorkItemResourceUrl()
+### getWorkItemResourceUrl()
 
 Returns the REST url of the specified work item resource.
 
@@ -342,7 +342,7 @@ Returns the REST url of the specified work item resource.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;. A promise that returns the REST url of the specified work item resource.
 
 <a name="method_getWorkItemRelationTypes"></a>
-###getWorkItemRelationTypes()
+### getWorkItemRelationTypes()
 
 Returns an array of work item relation types.
 
@@ -356,7 +356,7 @@ Returns an array of work item relation types.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItemRelationType](../Contracts/WorkItemRelationType.md)[]&gt;. A promise that returns an array of work item relation types.
 
 <a name="method_save"></a>
-###save()
+### save()
 
 Saves the work item.
 
@@ -370,7 +370,7 @@ Saves the work item.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;. A promise that is resolved after the work item save succeeds, and rejected if the work item save fails or if the work item form has errors.
 
 <a name="method_refresh"></a>
-###refresh()
+### refresh()
 
 Refresh the workitem. Will prompt user for confirmation if the work item is dirty.
 
@@ -384,7 +384,7 @@ Refresh the workitem. Will prompt user for confirmation if the work item is dirt
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;.
 
 <a name="method_reset"></a>
-###reset()
+### reset()
 
 Reset the work item. Revert all work item changes if the user confirms.
 
@@ -398,7 +398,7 @@ Reset the work item. Revert all work item changes if the user confirms.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;.
 
 <a name="method_setError"></a>
-###setError()
+### setError()
 
 Sets a specified error on the work item form and marks the work item as invalid.
 
@@ -412,7 +412,7 @@ Sets a specified error on the work item form and marks the work item as invalid.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;.
 
 <a name="method_clearError"></a>
-###clearError()
+### clearError()
 
 Clears the error set by setError method and marks the work item as valid if there are no other errors on the form.
 

@@ -17,22 +17,22 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Test Team Productivity report to help track the overall activity of the team and individual team members in testing the product and finding and reporting bugs. The Test Team Productivity report provides four reports that show test and bug activity:  
   
--   **Test Activity**: Helps the team monitor the volume of tests it has run over the past four weeks.  
+- **Test Activity**: Helps the team monitor the volume of tests it has run over the past four weeks.  
   
--   **Test Activity Per User**: Helps the team track the volume of tests that individual team members have run over the past eight weeks. The team can use this to help load balance the test activity across team members.  
+- **Test Activity Per User**: Helps the team track the volume of tests that individual team members have run over the past eight weeks. The team can use this to help load balance the test activity across team members.  
   
--   **Bugs Created By User**: Helps the team track how many bugs each team member creates.  
+- **Bugs Created By User**: Helps the team track how many bugs each team member creates.  
   
--   **Bug Effectiveness**: Supports the team in determining how effective it is in defining bugs that are useful and that help build a quality product.  
+- **Bug Effectiveness**: Supports the team in determining how effective it is in defining bugs that are useful and that help build a quality product.  
   
-    > [!NOTE]
-    >  You can view the Test Team Productivity report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
+  > [!NOTE]
+  >  You can view the Test Team Productivity report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
   
- **Required permissions**  
+  **Required permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
+  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
- To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
+  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Reports  
  The test activity reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
@@ -74,22 +74,22 @@ Teams who are responsible for testing software can use the Test Team Productivit
 ##  <a name="RequiredActivities"></a> Required Activities for Tracking Test and Bug Activity  
  For the test activity reports to be useful and accurate, the team must perform the following activities:  
   
--   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
+- [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
   
--   [Run tests](../../test/run-manual-tests.md).  
+- [Run tests](../../test/run-manual-tests.md).  
   
--   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
   
-    > [!NOTE]
-    >  The project administrator for each team project [defines area and iteration paths](../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.  
+  > [!NOTE]
+  >  The project administrator for each team project [defines area and iteration paths](../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.  
   
- For the bug activity reports to be useful and accurate, the team must perform the following activities:  
+  For the bug activity reports to be useful and accurate, the team must perform the following activities:  
   
--   Create a bug for each code defect that was found by testing.  
+- Create a bug for each code defect that was found by testing.  
   
--   Update the **State** of each bug as the team fixes, verifies, closes, or reactivates it and accurately set the **Reason** field every time that the bug changes state.  
+- Update the **State** of each bug as the team fixes, verifies, closes, or reactivates it and accurately set the **Reason** field every time that the bug changes state.  
   
--   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each bug.  
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each bug.  
   
 ##  <a name="Updating"></a> Updating and customizing the reports  
  You can update the Test Team Productivity report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  

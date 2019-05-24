@@ -38,7 +38,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 <tbody valign="top" align="center">
 
 <tr>
-<td align="left">**Dashboards**</td>
+<td align="left"><strong>Dashboards</strong></td>
 <td>Read access<sup>1</sup></td>
 <td>Partial access</td>
 <td>Full access</td>
@@ -48,7 +48,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 </tr>
 
 <tr>
-<td align="left">**Wiki**</td>
+<td align="left"><strong>Wiki</strong></td>
 <td>Read access</td>
 <td>Full access</td>
 <td>Full access</td>
@@ -58,7 +58,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 </tr>
 
 <tr>
-<td align="left">**Boards (Work)**</td>
+<td align="left"><strong>Boards (Work)</strong></td>
 <td>Read access</td>
 <td>Partial access<sup>3</sup></td>
 <td>Full access</td>
@@ -67,7 +67,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 <td>Read-Write-Administer</td>
 </tr>
 <tr>
-<td align="left">**Repos (Code)**</td>
+<td align="left"><strong>Repos (Code)</strong></td>
 <td>Read access</td>
 <td>Full access<sup>2</sup></td>
 <td>Full access</td>
@@ -78,7 +78,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 
 
 <tr>
-<td align="left">**Pipelines (Build and Release)**</td>
+<td align="left"><strong>Pipelines (Build and Release)</strong></td>
 <td>Read access</td>
 <td>Full access</td>
 <td>Full access</td>
@@ -88,7 +88,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 </tr>
 
 <tr>
-<td align="left">**Test Plans**</td>
+<td align="left"><strong>Test Plans</strong></td>
 <td>No access</td>
 <td>No access</td>
 <td>Partial access<sup>4</sup></td>
@@ -100,7 +100,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 
 
 <tr>
-<td align="left">**Notifications**</td>
+<td align="left"><strong>Notifications</strong></td>
 <td>No access</td>
 <td>Full access</td>
 <td>Full access</td>
@@ -111,7 +111,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 
 
 <tr>
-<td align="left">**Semantic search**</td>
+<td align="left"><strong>Semantic search</strong></td>
 <td>Full access</td>
 <td>Full access</td>
 <td>Full access</td>
@@ -121,7 +121,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 </tr>
 
 <tr>
-<td align="left">**Settings**</td>
+<td align="left"><strong>Settings</strong></td>
 <td>No access</td>
 <td>Full access</td>
 <td>Full access</td>

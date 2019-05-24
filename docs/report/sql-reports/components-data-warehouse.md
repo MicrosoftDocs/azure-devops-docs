@@ -29,16 +29,16 @@ For additional information on the databases and connectivity, see [SQL Server da
 
 Each tool or plug-in in Team Foundation uses a relational database in SQL Server to store the data used by the tool in its day-to-day operations. This relational database is often referred to as the operational store. The operational stores for Team Foundation include:  
 
--   Common structure databases (Tfs_Configuration)  
--   Team project collection databases (Tfs_Collection)  
+- Common structure databases (Tfs_Configuration)  
+- Team project collection databases (Tfs_Collection)  
   
- You might also have operational stores created for third-party tools.  
+  You might also have operational stores created for third-party tools.  
   
- Like most operational stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.  
+  Like most operational stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.  
   
 <a name="warehouse"></a> 
 
-##Warehouse adapters  
+## Warehouse adapters  
  Because each tool or plug-in has its own schema requirements and data is stored in the operational store to optimize transactional processing, the purpose of the warehouse adapter is to put the operational data into a form usable by the data warehouse. The warehouse adapter is a managed assembly that extracts the data from the operational store, transforms the data to a standardized format compatible with the warehouse, and writes the transformed data into the warehouse relational database. There is a separate adapter for each operational data store.  
   
  The warehouse adapter copies and transforms those data fields specified in either the basic warehouse configuration or in the process template used at the time a new team project is created. If you subsequently change the process template to add or delete which data fields are written to the data warehouse, these changes are detected the next time the adapter is run. The adapter runs periodically with a frequency set by the RunIntervalSeconds property. The default setting for the refresh frequency is two hours (7,200 seconds), so give careful consideration to the appropriate refresh frequency for your installation. For more information about changing the refresh frequency, see [Change the Refresh Frequency](../admin/change-a-process-control-setting.md).  
@@ -47,7 +47,7 @@ Each tool or plug-in in Team Foundation uses a relational database in SQL Server
   
 <a name="relational_db"></a> 
 
-##The relational database or data warehouse  
+## The relational database or data warehouse  
  Each tool describes its contribution to the data warehouse in an XML schema. The schema specifies the fields that are written to the relational database as dimensions, measures, and details. The schema is also mapped directly into the cube.  
   
  The data in the warehouse are stored in a set of tables organized in a star schema. The central table of the star schema is called the fact table, and the related tables represent dimensions. Dimensions provide the means for disaggregating reports into smaller parts. A row in a fact table usually contains either the value of a measure or a foreign key reference to a dimension table. The row represents the current state of every item covered by the fact table. For example, the Work Item fact table has one row for every work item stored in Work Item operational store.  

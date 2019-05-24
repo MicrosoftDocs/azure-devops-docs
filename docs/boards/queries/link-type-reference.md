@@ -32,7 +32,7 @@ You can link work items to other work items or artifacts using the following lin
 - [**Remote work link types**](#remote-work-link-types): connects work items that are defined in different organizations
 - [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
 
-   
+
 A specific field maintains a count of links for the first four link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, <em>External Link Count</em>, and <em>Remote Link Count</em>.  
 
 ::: moniker-end 
@@ -96,9 +96,8 @@ The following table describes the work item link types you can specify to scope 
 <th width="63%">Usage</th>
 </tr>
 <tr>
-<td>**Affects-Affected by**<br/>(CMMI only)<br/>  
-![Affects link type image](_img/link-work-items-support-traceability/affects-cmmi.png) 
-![Affected by link type image](_img/link-work-items-support-traceability/affected-by-cmmi.png) 
+<td><strong>Affects-Affected by</strong><br/>(CMMI only)<br/><br/><img src="_img/link-work-items-support-traceability/affects-cmmi.png" alt="Affects link type image"/> 
+<img src="_img/link-work-items-support-traceability/affected-by-cmmi.png" alt="Affected by link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.Common.Affects-Forward<br/>
 Microsoft.VSTS.Common.Affects-Reverse</p>
@@ -116,26 +115,26 @@ Restrictions and recommendations:
 </tr>
 
 <tr>
-<td>**Child-Parent**<br/>
-![Child link type image](_img/link-work-items-support-traceability/child-tree-forward.png)<br/>
-![Parent link type image](_img/link-work-items-support-traceability/parent-tree-reverse.png) 
+<td><strong>Child-Parent</strong><br/>
+<img src="_img/link-work-items-support-traceability/child-tree-forward.png" alt="Child link type image"/><br/>
+<img src="_img/link-work-items-support-traceability/parent-tree-reverse.png" alt="Parent link type image"/> 
 </td>
 <td><p>System.LinkTypes.Hierarchy-Forward<br/>
 System.LinkTypes.Hierarchy-Reverse</p>
 <p>Topology type: Tree<br/>
 Link category: System-defined</p></td>
 <td>
-Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../sprints/assign-work-sprint.md) or [task board](../sprints/task-board.md).
+Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the <a href="../backlogs/organize-backlog.md" data-raw-source="[mapping function](../backlogs/organize-backlog.md)">mapping function</a> or among backlog items and tasks using the <a href="../sprints/assign-work-sprint.md" data-raw-source="[sprint backlog](../sprints/assign-work-sprint.md)">sprint backlog</a> or <a href="../sprints/task-board.md" data-raw-source="[task board](../sprints/task-board.md)">task board</a>.
 <p>Typical uses include:</p> 
 <ul>
-<li><p>Create a work breakdown structure (WBS). See [Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md).</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see [Organize your backlog](../backlogs/organize-backlog.md).</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
+<li><p>Create a work breakdown structure (WBS). See <a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md)">Schedule tasks and assign resources using Microsoft Project</a>.</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see <a href="../backlogs/organize-backlog.md" data-raw-source="[Organize your backlog](../backlogs/organize-backlog.md)">Organize your backlog</a>.</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
 
 
 <tr>
-<td>**Duplicate-Duplicate of** <sup>1</sup><br/> 
-![Duplicate link type image](_img/link-work-items-support-traceability/duplicate-tree-forward.png) 
-![Duplicate of link type image](_img/link-work-items-support-traceability/duplicate-of-tree-reverse.png) 
+<td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
+<img src="_img/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
+<img src="_img/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of link type image"/> 
 </td>
 <td><p>System.LinkTypes.Duplicate-Forward<br/>
 System.LinkTypes.Duplicate-Reverse</p>
@@ -149,22 +148,22 @@ Link category: System-defined</p>
 </tr>
 
 <tr>
-<td>**Referenced By-References**<br/>
-![Tested by link type image](_img/link-work-items-support-traceability/tested-by-dependency-forward.png) 
-![Tests link type image](_img/link-work-items-support-traceability/tests-dependency-reverse.png) 
+<td><strong>Referenced By-References</strong><br/>
+<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.TestCase.<br/>SharedParameterReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn't add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). </p>
+<p>Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[repeat a test with different data](../../test/repeat-test-with-different-data.md)">repeat a test with different data</a>. In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[Repeat a test with different data](../../test/repeat-test-with-different-data.md)">Repeat a test with different data</a>. </p>
 </td>
 </tr>
 
 </tr>
 <tr>
-<td>**Related**<br/>
-![Related link type image](_img/link-work-items-support-traceability/related-network.png) 
+<td><strong>Related</strong><br/>
+<img src="_img/link-work-items-support-traceability/related-network.png" alt="Related link type image"/> 
 </td>
 <td><p>System.LinkTypes.Related</p>
 <p>Topology type: Network<br/>
@@ -175,9 +174,9 @@ Link category: System-defined</p></td>
 </tr>
 
 <tr>
-<td>**Successor-Predecessor**<br/>
-![Duplicate link type image](_img/link-work-items-support-traceability/successor-dependency-forward.png) 
-![Duplicate of link type image](_img/link-work-items-support-traceability/predecessor-dependency-reverse.png) 
+<td><strong>Successor-Predecessor</strong><br/>
+<img src="_img/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
+<img src="_img/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Duplicate of link type image"/> 
 </td>
 <td><p>System.LinkTypes.Dependency</p>
 <p>Topology type: Dependency<br/>
@@ -190,29 +189,29 @@ You can create predecessor-successor links between work items that are defined i
 </tr>
 
 <tr>
-<td>**Tested by-Tests**<br/> 
-![Tested by link type image](_img/link-work-items-support-traceability/tested-by-dependency-forward.png) 
-![Tests link type image](_img/link-work-items-support-traceability/tests-dependency-reverse.png) 
+<td><strong>Tested by-Tests</strong><br/> 
+<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.Common.TestedBy-Forward<br/>
 Microsoft.VSTS.Common.TestedBy-Reverse</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises TFS, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)</p>
+<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises TFS, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a></p>
 </td>
 </tr>
 
 <tr>
-<td>**Test Case-Shared Steps**<br/>
-![Tested by link type image](_img/link-work-items-support-traceability/tested-by-dependency-forward.png) 
-![Tests link type image](_img/link-work-items-support-traceability/tests-dependency-reverse.png) 
+<td><strong>Test Case-Shared Steps</strong><br/>
+<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.TestCase.<br/>SharedStepReferencedBy</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases with shared steps. You [share steps between test cases](../../test/mtm/share-steps-between-test-cases.md) to avoid having to create multiple entries of the same sequence of steps.To learn more, see [Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md).</p>
+<p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps.To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
 </td>
 </tr>
 
@@ -246,7 +245,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 <td>Hyperlink</td>
 <td>Work item tracking</td>
 <td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list). </td>
+<td>Used to link a work item to a URL. Note that <strong>Workitem Hyperlink</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>. </td>
 </tr>
 
 
@@ -346,41 +345,41 @@ The following table describes the external link types you can choose when adding
 <td>Result attachment   </td>
 <td>Test Management</td>
 <td>TcmResultAttachment</td>
-<td>Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager. </td>
+<td>Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. </td>
 </tr>
 
 <tr>
 <td>Source Code File</td>
 <td>VersionControl </td>
 <td>LatestItemVersion</td>
-<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
+<td>Used to link a work item to a file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
 </tr>
 
 <tr>
 <td>Storyboard</td>
 <td>Requirements</td>
 <td>Storyboard</td>
-<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
+<td>Used to link a work item to a file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
 </tr>
 
 <tr>
 <td>Tag</td>
 <td>Git</td>
 <td>Tag</td>
-<td>Used to link a work item to a tag that's been defined for a git commit or git repository. See [Work from the Git command prompt](../../repos/git/command-prompt.md) for more information. </td>
+<td>Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See <a href="../../repos/git/command-prompt.md" data-raw-source="[Work from the Git command prompt](../../repos/git/command-prompt.md)">Work from the Git command prompt</a> for more information. </td>
 </tr>
 <tr>
 <td>Test Result </td>
 <td>Test Management</td>
 <td>TcmResult</td>
-<td>Used to link a work item to a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager.    </td>
+<td>Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.    </td>
 </tr>
 
 <tr>
 <td>Versioned item</td>
 <td>VersionControl </td>
 <td>LatestItemVersion</td>
-<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).   </td>
+<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that <strong>Source Code File</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>.   </td>
 </tr>
 
 <tr>
@@ -516,10 +515,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 <th width="63%">Usage</th>
 </tr>
 <tr>
-<td>**Consumes From-Produced For**<br/>(Dependency topology)<br/>  
-![Consumes From topology image](_img/link-work-items-support-traceability/affected-by-cmmi.png)
-![Produced For topology image](_img/link-work-items-support-traceability/affects-cmmi.png)  
-</td>
+<td><strong>Consumes From-Produced For</strong><br/>(Dependency topology)<br/><br/><img src="_img/link-work-items-support-traceability/affected-by-cmmi.png" alt="Consumes From topology image"/>
+<img src="_img/link-work-items-support-traceability/affects-cmmi.png" alt="Produced For topology image"/><br/></td>
 <td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
 Microsoft.VSTS.Common.ConsumesFrom.Reverse</p>
 <p>Topology type: Dependency<br/>
@@ -531,16 +528,15 @@ Link category: System-defined</p>
 </tr>
 
 <tr>
-<td>**Remote Related**<br/>
-![Remote Related topology image](_img/link-work-items-support-traceability/related-network.png) 
+<td><strong>Remote Related</strong><br/>
+<img src="_img/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
 </td>
 <td><p>System.LinkTypes.RemoteRelated</p>
 <p>Topology type: Network<br/>
 Link category: System-defined</p>
 </td>
 
-<td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.   
-</td>
+<td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.<br/></td>
 </tr>
 
 

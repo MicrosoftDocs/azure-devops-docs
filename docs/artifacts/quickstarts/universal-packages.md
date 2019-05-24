@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: midenn
-author: mitchdenny
+ms.author: phwilson
+author: chasewilson
 ms.date: 09/25/2018
 monikerRange: 'azure-devops'
 ---

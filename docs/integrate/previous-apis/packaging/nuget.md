@@ -146,7 +146,7 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 
 **Response**
 
-#####Status code: 200
+##### Status code: 200
 *Response is binary*
 
 ## Release Package

@@ -107,7 +107,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 
 <a id="which_fields_are_non_reportable"></a>
-###Q: Which fields can't I use to generate a report?
+### Q: Which fields can't I use to generate a report?
  
    **A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report. 
 
@@ -115,15 +115,15 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
    * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
 
-###Q: Can I create reports if I'm working in Azure DevOps?
+### Q: Can I create reports if I'm working in Azure DevOps?
  
    **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json). 
 
-###Q: How do I refresh the report to show the most recent data?
+### Q: How do I refresh the report to show the most recent data?
 
    **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](http://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
 
-###Q: Can I upload these reports to a project portal?
+### Q: Can I upload these reports to a project portal?
 
    **A:** Yes. See [Manage documents and document libraries](../sharepoint-dashboards/manage-documents-and-document-libraries.md).
 

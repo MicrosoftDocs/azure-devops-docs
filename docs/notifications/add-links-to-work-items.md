@@ -39,8 +39,7 @@ When you are leaving a code comment in a pull request, you can enter **#** to tr
 
 You can narrow the list of suggested work items by entering keywords that match the work item type, ID, or title, or you can enter the exact work item ID.
 
-<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" />   
-To further filter the list, continue to enter keywords until you've found a match. You can enter up to five keywords.
+<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
 
 
 ## Link to work items in pull requests, comments, and commits

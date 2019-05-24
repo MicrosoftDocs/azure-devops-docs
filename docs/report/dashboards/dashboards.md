@@ -85,7 +85,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 	 
-0. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+1. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](_img/dashboards/favorite-dashboard.png)  

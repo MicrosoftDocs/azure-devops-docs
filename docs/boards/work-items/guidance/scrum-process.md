@@ -61,8 +61,8 @@ Or, use the shared queries that the Scrum process provides.
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this article.   
 
-> [!TIP]    
-> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../queries/query-by-date-or-current-iteration.md).
+> [!TIP]
+> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the <strong>@CurrentIteration</strong> macro](../../queries/query-by-date-or-current-iteration.md).
 
 ::: moniker-end
 

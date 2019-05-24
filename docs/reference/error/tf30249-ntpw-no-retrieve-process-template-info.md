@@ -18,11 +18,11 @@ This error occurs when the New Team Project Wizard cannot download the process t
   
  There are two likely causes for this error:  
   
--   The network is not available.  
+- The network is not available.  
   
--   Your user account does not have sufficient permissions to access and download the process template files.  
+- Your user account does not have sufficient permissions to access and download the process template files.  
   
- The following procedures will help you correct the problem.  
+  The following procedures will help you correct the problem.  
   
 ### To correct this error  
   

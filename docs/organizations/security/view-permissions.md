@@ -36,26 +36,26 @@ Permissions are set at the collection, project, and object level as described in
 
 1. Choose **Project Settings** and then **Security**.
 
-	*To see the full image, click to expand*.
+    *To see the full image, click to expand*.
 
-	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
+    [![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
 
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Find a user or group name](_img/view-permissions/search-user-name-vert-nav.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Find a user or group name](_img/view-permissions/search-user-name-vert-nav.png)  
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
 
-	> [!div class="mx-imgBorder"]
-	> ![Project Administrators Group, Members tab](_img/view-permissions/project-level-user-permissions-vsts.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Project Administrators Group, Members tab](_img/view-permissions/project-level-user-permissions-vsts.png)  
 
 4. Choose **Member of** to see which security groups the user belongs to.  
 
-	Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
+    Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Security tab, User name, Members tab](_img/view-permissions/project-level-member-of-permissions-vsts.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Security tab, User name, Members tab](_img/view-permissions/project-level-member-of-permissions-vsts.png)  
 
 ::: moniker-end
 
@@ -63,27 +63,27 @@ Permissions are set at the collection, project, and object level as described in
 
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
+    > [!div class="mx-imgBorder"]
+    > ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
 
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
-	![Find a user account name](_img/view-permissions/search-user-name.png)
+    ![Find a user account name](_img/view-permissions/search-user-name.png)
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
 
-	> [!div class="mx-imgBorder"]
-	> ![Project level permissions for a user, TFS](_img/view-permissions/project-level-user-permissions-tfs.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Project level permissions for a user, TFS](_img/view-permissions/project-level-user-permissions-tfs.png)  
 
-	For a description of each permission, see [Permissions and groups reference](permissions.md#project-level). 
+    For a description of each permission, see [Permissions and groups reference](permissions.md#project-level). 
 
 4. Choose **Member of** to see which security groups the user belongs to.  
 
-	Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
+    Here we see that *Jamal Hartnett* belongs to several teams and the Project Collection Administrators group. 
 
-	![Web portal, Security tab, User name, Members of](_img/view-permissions/view-permissions-member-of.png)    
+    ![Web portal, Security tab, User name, Members of](_img/view-permissions/view-permissions-member-of.png)    
 
-	For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
+    For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
 
 ::: moniker-end
 
@@ -98,15 +98,15 @@ Open admin settings for the organization or a project collection.
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
 
-0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 ::: moniker-end    
 
@@ -114,14 +114,14 @@ Open admin settings for the organization or a project collection.
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
 
-0.	Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
+1. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 
-	![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
+   ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
 
-0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 ::: moniker-end
 
@@ -140,11 +140,11 @@ From the web portal, open the Security dialog for the object whose permissions y
 <th width="65%">Task</th>
 </tr>
 <tr>
-<td>Wiki & Dashboard permissions</td>
+<td>Wiki &amp; Dashboard permissions</td>
 <td>
 <ul>
-<li>[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)</li>
-<li>[Dashboards](../../report/dashboards/dashboard-permissions.md)</li>
+<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)">README &amp; Wiki</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Dashboards](../../report/dashboards/dashboard-permissions.md)">Dashboards</a></li>
 
 </ul>
 </td>
@@ -153,12 +153,12 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>DevOps (code, build, test, release) permissions </td>
 <td>
 <ul>
-<li>[Git branch](../../repos/git/branch-permissions.md)</li>
-<li>[Git repository](set-git-tfvc-repository-permissions.md)</li>
-<li>[TFVC](set-git-tfvc-repository-permissions.md)</li>
-<li>[Builds](../../pipelines/policies/set-permissions.md)</li>
-<li>[Release pipeline security](../../pipelines/policies/set-permissions.md)</li>
-<li>[Approvals and approvers](../../pipelines/release/approvals/index.md)</li> 
+<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
+<li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
 </ul>
 </td>
 </tr>
@@ -166,10 +166,9 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>Work tracking permissions</td>
 <td>
 <ul>
-<li>[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)</li>
-<li>[Work item query and folder](../../boards/queries/set-query-permissions.md)</li>
-<li>[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)</li>  
-</ul>
+<li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a></li>
+<li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder](../../boards/queries/set-query-permissions.md)">Work item query and folder</a></li>
+<li><a href="set-permissions-access-work-tracking.md#plan-permissions" data-raw-source="[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)">Plan permissions</a></li><br/></ul>
 </td>
 </tr>
 </tbody>

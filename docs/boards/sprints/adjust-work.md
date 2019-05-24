@@ -46,7 +46,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
@@ -71,7 +71,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)

@@ -39,18 +39,18 @@ If any of these changes are made, then you must replace the URL in the Page View
 Follow these steps to replace the URL:
 
 1. Edit the Page Viewer web part
-1. Paste the following into the URL field
-```
-http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2fDashboards%2fREPORTNAME&rc%3aToolbar=false
-```
+2. Paste the following into the URL field
+   ```
+   http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2fDashboards%2fREPORTNAME&rc%3aToolbar=false
+   ```
 3. Replace **REPORTSERVER** with the name of your TFS SSRS server
-1. Replace **COLLECTIONNAME** with the name of the TFS Collection. Typically, this is "DefaultCollection"
-1. Replace **PROJECTNAME** with the name of your team project
-1. Replace **REPORTNAME** with the name of your report.
+4. Replace **COLLECTIONNAME** with the name of the TFS Collection. Typically, this is "DefaultCollection"
+5. Replace **PROJECTNAME** with the name of your team project
+6. Replace **REPORTNAME** with the name of your report.
 
     **NOTE**: You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
 
-1. Save your changes to the PageViewer web part.
+7. Save your changes to the PageViewer web part.
 
 ## Related articles
 * [SSRS Report URL Access Parameter Reference](/sql/reporting-services/url-access-parameter-reference)

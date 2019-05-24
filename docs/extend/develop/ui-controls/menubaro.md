@@ -30,10 +30,10 @@ This sample shows the basic usage of the toolbar. Notice how `text` is added to 
 <div class="tab-content">
   <div id="typescript_basic_menubar" class="tab-pane fade in active">
 <pre><code class="lang-typescript">
-import Controls = require("VSS/Controls");
-import Menus = require("VSS/Controls/Menus");
+import Controls = require(&quot;VSS/Controls&quot;);
+import Menus = require(&quot;VSS/Controls/Menus&quot;);
   
-var container = $(".sample-container");
+var container = $(&quot;.sample-container&quot;);
 
 var menuItems: Menus.IMenuItemSpec[] = [
   { id: "file", text: "File", icon: "icon-pause", childItems: [
@@ -67,8 +67,8 @@ var menubar = Controls.create<Menus.MenuBar, any>(Menus.MenuBar, container, menu
   </div>
   <div id="javascript_basic_menubar" class="tab-pane fade">
 <pre><code class="lang-javascript">
-VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
-  var container = $("#sample-container");
+VSS.require([&quot;VSS/Controls&quot;, &quot;VSS/Controls/Menus&quot;], function(Controls, Menus) {
+  var container = $(&quot;#sample-container&quot;);
 
 
   var menuItems = [
@@ -123,8 +123,8 @@ This sample uses `executeAction` delegate to react menubar commands.
 <div class="tab-content">
   <div id="typescript_action_menubar" class="tab-pane fade in active">
 <pre><code class="lang-typescript">
-import Controls = require("VSS/Controls");
-import Menus = require("VSS/Controls/Menus");
+import Controls = require(&quot;VSS/Controls&quot;);
+import Menus = require(&quot;VSS/Controls/Menus&quot;);
 
 var container = $(".sample-container");
 
@@ -162,8 +162,8 @@ Controls.create<Menus.MenuBar, any>(Menus.MenuBar, container, menubarOptions);
   </div>
   <div id="javascript_action_menubar" class="tab-pane fade">
 <pre><code class="lang-javascript">
-VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
-  var container = $("#sample-container");
+VSS.require([&quot;VSS/Controls&quot;, &quot;VSS/Controls/Menus&quot;], function(Controls, Menus) {
+  var container = $(&quot;#sample-container&quot;);
 
 
   var menuItems = [
@@ -223,8 +223,8 @@ This sample shows how the menu items can be enabled/disabled.
 <div class="tab-content">
   <div id="typescript_toggle_menubar" class="tab-pane fade in active">
 <pre><code class="lang-typescript">
-import Controls = require("VSS/Controls");
-import Menus = require("VSS/Controls/Menus");
+import Controls = require(&quot;VSS/Controls&quot;);
+import Menus = require(&quot;VSS/Controls/Menus&quot;);
 
 var container = $(".sample-container");
 
@@ -248,8 +248,8 @@ $("#btnToggle").click(function (e) {
   </div>
   <div id="javascript_toggle_menubar" class="tab-pane fade">
 <pre><code class="lang-javascript">
-VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
-  var container = $("#sample-container");
+VSS.require([&quot;VSS/Controls&quot;, &quot;VSS/Controls/Menus&quot;], function(Controls, Menus) {
+  var container = $(&quot;#sample-container&quot;);
 
 
   var menuItems = [
@@ -301,8 +301,8 @@ This sample shows how the menu items can be made visible/hidden.
 <div class="tab-content">
   <div id="typescript_hide_menubar" class="tab-pane fade in active">
 <pre><code class="lang-typescript">
-import Controls = require("VSS/Controls");
-import Menus = require("VSS/Controls/Menus");
+import Controls = require(&quot;VSS/Controls&quot;);
+import Menus = require(&quot;VSS/Controls/Menus&quot;);
 
 var container = $(".sample-container");
 
@@ -326,8 +326,8 @@ $("#btnToggle").click(function (e) {
   </div>
   <div id="javascript_hide_menubar" class="tab-pane fade">
 <pre><code class="lang-javascript">
-VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
-  var container = $("#sample-container");
+VSS.require([&quot;VSS/Controls&quot;, &quot;VSS/Controls/Menus&quot;], function(Controls, Menus) {
+  var container = $(&quot;#sample-container&quot;);
 
 
  var menuItems = [

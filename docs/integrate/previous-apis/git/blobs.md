@@ -72,14 +72,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 ```
 
 
-###In a stream
+### In a stream
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/blobs/f5dd7df5872eae8c39c9491f67d856dafd609683?api-version=1.0&$format=octetstream
 ```
 
-####Sample response
+#### Sample response
 ```html
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -107,7 +107,7 @@ GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/repos/git/reposito
     </div>
 </div>
 ```
-#####Status code: 200
+##### Status code: 200
 
 
 ### In a downloadable .zip file

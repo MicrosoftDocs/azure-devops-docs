@@ -211,7 +211,7 @@ When you want to review the schedule of stories or features your teams plan to d
 </tr>
 
 <tr>
-<td>[**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) </td>
+<td><a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md)"><strong>Excel</strong></a> </td>
 <td> 
 <ul>
 <li>Adding or updating many work items and their fields</li>
@@ -221,7 +221,7 @@ When you want to review the schedule of stories or features your teams plan to d
 </tr>
 
 <tr>
-<td>[**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md) </td>
+<td><a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md)"><strong>Project</strong></a> </td>
 <td>
 <ul> 
 <li>Importing a project plan to a project</li>
@@ -232,12 +232,12 @@ When you want to review the schedule of stories or features your teams plan to d
 </tr>
 
 <tr>
-<td>[**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)   </td>
+<td><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)"><strong>Storyboarding with PowerPoint</strong></a>   </td>
 <td> 
 <ul>
 <li>Storyboarding features and user interface changes </li>
-<li>[Linking your storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item)</li>
-<li>[Adding and sharing storyboard shapes](../backlogs/office/add-share-storyboard-shapes.md)</li>
+<li><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item" data-raw-source="[Linking your storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item)">Linking your storyboard to a work item</a></li>
+<li><a href="../backlogs/office/add-share-storyboard-shapes.md" data-raw-source="[Adding and sharing storyboard shapes](../backlogs/office/add-share-storyboard-shapes.md)">Adding and sharing storyboard shapes</a></li>
 </ul>
 </td>
 </tr>
@@ -256,48 +256,48 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <th width="70%">Best tool for:</th>
 </tr>
 <tr>
-<td>[Test Plans](../../test/create-a-test-plan.md) </td>
+<td><a href="../../test/create-a-test-plan.md" data-raw-source="[Test Plans](../../test/create-a-test-plan.md)">Test Plans</a> </td>
 <td> 
 <ul>
-<li>[Test Plans and Test Suites](../../test/create-a-test-plan.md)</li>
-<li>[Test Cases](../../test/create-test-cases.md)</li>
-<li>[Test Cases, grid view](../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time)</li>
-<li>[Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)</li>
-<li>[Delete test artifacts](../backlogs/delete-test-artifacts.md)</li>
+<li><a href="../../test/create-a-test-plan.md" data-raw-source="[Test Plans and Test Suites](../../test/create-a-test-plan.md)">Test Plans and Test Suites</a></li>
+<li><a href="../../test/create-test-cases.md" data-raw-source="[Test Cases](../../test/create-test-cases.md)">Test Cases</a></li>
+<li><a href="../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time" data-raw-source="[Test Cases, grid view](../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time)">Test Cases, grid view</a></li>
+<li><a href="../../test/repeat-test-with-different-data.md" data-raw-source="[Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)">Shared Steps, Shared Parameters</a></li>
+<li><a href="../backlogs/delete-test-artifacts.md" data-raw-source="[Delete test artifacts](../backlogs/delete-test-artifacts.md)">Delete test artifacts</a></li>
 </ul>
-<p>**Additional supported tasks**:</p>
+<p><strong>Additional supported tasks</strong>:</p>
 <ul>
-<li>[Track test status](../../test/track-test-status.md)</li>
-<li>[Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)</li>
-<li>[Export test plans and test suites](../../test/reference-qa.md#testcases)</li>
-<li>[Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)</li>
+<li><a href="../../test/track-test-status.md" data-raw-source="[Track test status](../../test/track-test-status.md)">Track test status</a></li>
+<li><a href="/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub" data-raw-source="[Order manual tests within suites](/azure/devops/release-notes/2016/jun-01-team-services#ordering-of-tests-in-test-hub)">Order manual tests within suites</a></li>
+<li><a href="../../test/reference-qa.md#testcases" data-raw-source="[Export test plans and test suites](../../test/reference-qa.md#testcases)">Export test plans and test suites</a></li>
+<li><a href="../../test/user-acceptance-testing.md#assign-and-invite-testers" data-raw-source="[Assign testers to test cases](../../test/user-acceptance-testing.md#assign-and-invite-testers)">Assign testers to test cases</a></li>
 </ul>
 </td>
 </tr>
 
 <tr>
-<td>[Test Runner](../../test/run-manual-tests.md)</td>
+<td><a href="../../test/run-manual-tests.md" data-raw-source="[Test Runner](../../test/run-manual-tests.md)">Test Runner</a></td>
 <td> 
 <ul>
-<li>[Running tests, adding bugs](../../test/run-manual-tests.md) </li>
+<li><a href="../../test/run-manual-tests.md" data-raw-source="[Running tests, adding bugs](../../test/run-manual-tests.md)">Running tests, adding bugs</a> </li>
 </ul>
 </td>
 </tr>
 
 <tr>
-<td>[Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) </td>
+<td><a href="../../test/connected-mode-exploratory-testing.md" data-raw-source="[Test &amp; Feedback extension](../../test/connected-mode-exploratory-testing.md)">Test &amp; Feedback extension</a> </td>
 <td> 
 <ul>
-<li>[Exploratory testing, capture feedback in connected mode](../../test/connected-mode-exploratory-testing.md)</li>
-<li>[Adding bugs, tasks, and test cases linked to a work item](../../test/explore-workitems-exploratory-testing.md)</li>
-<li>[Requesting feedback](../../test/request-stakeholder-feedback.md)</li>
-<li>[Providing feedback](../../test/provide-stakeholder-feedback.md)</li>
+<li><a href="../../test/connected-mode-exploratory-testing.md" data-raw-source="[Exploratory testing, capture feedback in connected mode](../../test/connected-mode-exploratory-testing.md)">Exploratory testing, capture feedback in connected mode</a></li>
+<li><a href="../../test/explore-workitems-exploratory-testing.md" data-raw-source="[Adding bugs, tasks, and test cases linked to a work item](../../test/explore-workitems-exploratory-testing.md)">Adding bugs, tasks, and test cases linked to a work item</a></li>
+<li><a href="../../test/request-stakeholder-feedback.md" data-raw-source="[Requesting feedback](../../test/request-stakeholder-feedback.md)">Requesting feedback</a></li>
+<li><a href="../../test/provide-stakeholder-feedback.md" data-raw-source="[Providing feedback](../../test/provide-stakeholder-feedback.md)">Providing feedback</a></li>
 </ul>
-<p>**Additional supported tasks**: </p>
+<p><strong>Additional supported tasks</strong>: </p>
 <ul>
-<li>[Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)</li>
-<li>[Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)</li>
-<li>[Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)</li>
+<li><a href="../../test/add-to-bugs-exploratory-testing.md" data-raw-source="[Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)">Updating existing bugs</a></li>
+<li><a href="../../test/standalone-mode-exploratory-testing.md" data-raw-source="[Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)">Capture feedback in standalone mode</a></li>
+<li><a href="../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app" data-raw-source="[Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)">Capture screen recordings of your app during testing</a></li>
 </ul>
 </td>
 </tr>
@@ -321,7 +321,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </tr>
 
 <tr>
-<td>[Adhoc search](../queries/search-box-queries.md) </td>
+<td><a href="../queries/search-box-queries.md" data-raw-source="[Adhoc search](../queries/search-box-queries.md)">Adhoc search</a> </td>
 <td> 
 <ul>
 <li>Find a specific work item using its ID or a keyword</li>
@@ -335,7 +335,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </tr>
 
 <tr>
-<td>[Work item templates](../backlogs/work-item-template.md) </td>
+<td><a href="../backlogs/work-item-template.md" data-raw-source="[Work item templates](../backlogs/work-item-template.md)">Work item templates</a> </td>
 <td> 
 <ul>
 <li>Capture templates</li>
@@ -346,29 +346,29 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </td>
 </tr>
 <tr>
-<td>**Request and capture feedback**</td>
+<td><strong>Request and capture feedback</strong></td>
 <td> 
 <ul>
-<li>[Request feedback](../../project/feedback/get-feedback.md)</li>
-<li>[Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)</li>
+<li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback](../../project/feedback/get-feedback.md)">Request feedback</a></li>
+<li><a href="../../project/feedback/give-feedback.md" data-raw-source="[Give feedback using Microsoft Feedback Client](../../project/feedback/give-feedback.md)">Give feedback using Microsoft Feedback Client</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>**Notifications**</td>
+<td><strong>Notifications</strong></td>
 <td> 
 <ul>
-<li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
-<li>[Manage team and project notifications](../../notifications/howto-manage-team-notifications.md)</li>
-<li>[Manage organization notifications](../../notifications/howto-manage-organization-notifications.md)</li>
+<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Manage team and project notifications](../../notifications/howto-manage-team-notifications.md)">Manage team and project notifications</a></li>
+<li><a href="../../notifications/howto-manage-organization-notifications.md" data-raw-source="[Manage organization notifications](../../notifications/howto-manage-organization-notifications.md)">Manage organization notifications</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>**Favorites**</td>
+<td><strong>Favorites</strong></td>
 <td> 
 <ul>
-<li>[Set personal and team favorites](../../project/navigation/set-favorites.md)  </li>
+<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Set personal and team favorites](../../project/navigation/set-favorites.md)">Set personal and team favorites</a>  </li>
 </ul>
 </td>
 </tr>

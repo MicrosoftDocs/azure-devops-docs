@@ -25,7 +25,7 @@ Wikis and repository README files are great ways to share information with your 
 ::: moniker-end
 
 <br/>
-> [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]
+&gt; [!VIDEO <a href="https://www.youtube.com/embed/BdtlTJM6LpM?start=0" data-raw-source="https://www.youtube.com/embed/BdtlTJM6LpM?start=0">https://www.youtube.com/embed/BdtlTJM6LpM?start=0</a>]
 
 ## 5-minute quickstarts  
 

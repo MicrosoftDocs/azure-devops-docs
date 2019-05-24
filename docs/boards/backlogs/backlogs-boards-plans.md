@@ -75,12 +75,12 @@ You access your backlogs and boards from a web portal. When you work from the St
 	> [!TIP]    
 	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -230,24 +230,24 @@ The following table indicates those elements or tasks associated with each type 
 
 <tr>
 <td>Customize: Columns</td>
-<td>Yes, see [Column options](set-column-options.md)</td>
-<td>Yes, see [Column options](set-column-options.md)</td>
-<td>Yes, see [Add columns](../boards/add-columns.md)</td>
-<td>Yes, see [Column options](set-column-options.md)</td>
-<td>Yes, see [Customize workflow](../../organizations/settings/work/customize-process-workflow.md)</td>
+<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
+<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
+<td>Yes, see <a href="../boards/add-columns.md" data-raw-source="[Add columns](../boards/add-columns.md)">Add columns</a></td>
+<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
+<td>Yes, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize workflow](../../organizations/settings/work/customize-process-workflow.md)">Customize workflow</a></td>
 </tr>
 
 <tr>
 <td>Customize: Add more backlog or board views </td>
-<td>Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)</td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
 <td>Yes, when you add another team (see note 4)</td>
-<td>Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)</td>
-<td>Yes, see [Schedule sprints](../sprints/define-sprints.md)</td>
-<td>Yes, see [Schedule sprints](../sprints/define-sprints.md)</td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 </tr>
 
 <tr>
-<td>[Customize: cards](../../boards/boards/customize-cards.md)</td>
+<td><a href="../../boards/boards/customize-cards.md" data-raw-source="[Customize: cards](../../boards/boards/customize-cards.md)">Customize: cards</a></td>
 <td>n/a</td>
 <td>n/a</td>
 <td>Yes</td>
@@ -258,11 +258,11 @@ The following table indicates those elements or tasks associated with each type 
 
 <tr>
 <td>Charts </td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
-<td>[Cumulative flow](../../report/dashboards/cumulative-flow.md)<br/>[Velocity](../../report/dashboards/velocity-chart-data-store.md)</td>
-<td>[Sprint burndown](../sprints/sprint-burndown.md) </td>
-<td>[Sprint burndown](../sprints/sprint-burndown.md) </td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
+<td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
+<td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
 </tr>
 
 <tr>

@@ -126,23 +126,23 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Open IntelliJ if it is not already open. Open the MyShuttle2 project.
 
-1. Click VCS->Git->Show History to show the Version Control panel. In the panel, click Work Items. You should see the Bug.
+2. Click VCS->Git->Show History to show the Version Control panel. In the panel, click Work Items. You should see the Bug.
 
     ![Create a branch from the Work Item](../_img/e2eintellij/create-branch.png)
 
     > **Note**: If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
 
-1. In the dialog, change the branch name to "totalsBug" and click Create.
+3. In the dialog, change the branch name to "totalsBug" and click Create.
 
     ![New branch](../_img/e2eintellij/create-new-branch.png)
 
-1. The branch is created both locally and in the remote (on Azure DevOps Services). The Azure DevOps Services extension informs you that the new branch has been created and that it has been associated with the Bug.
+4. The branch is created both locally and in the remote (on Azure DevOps Services). The Azure DevOps Services extension informs you that the new branch has been created and that it has been associated with the Bug.
 
     ![Notifications when creating a branch](../_img/e2eintellij/branch-notifications.png)
 
-1. In the project view, browse to src/main/java/com.microsoft.example/servlet and open the LoginServlet class.
+5. In the project view, browse to src/main/java/com.microsoft.example/servlet and open the LoginServlet class.
 
-1. Around line 35, you will see what is causing the bug: the `totalDriverFee` is being calculated but the `driverFeeTotal` session attribute is being set to `totalFareForDriver` (this looks like a classic copy/paste error).
+6. Around line 35, you will see what is causing the bug: the `totalDriverFee` is being calculated but the `driverFeeTotal` session attribute is being set to `totalFareForDriver` (this looks like a classic copy/paste error).
 
     Change this line of code:
     ```java
@@ -153,60 +153,60 @@ In this task you will create a branch of the code to fix the Bug. You will then 
         session.setAttribute("driverFeeTotal", totalDriverFee);
     ```
 
-1. Commit your changes by selecting VCS->Git->Commit File. Enter "Fixing totals bug" as the Commit message.
+7. Commit your changes by selecting VCS->Git->Commit File. Enter "Fixing totals bug" as the Commit message.
 
-1. On the upper right of the Commit message box there is an Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
+8. On the upper right of the Commit message box there is an Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
 
     > **Note**: In this case we don't need to associate the checkin with the Bug since the branch is already associated with the Bug.
 
     ![Associate a work item with a commit](../_img/e2eintellij/associate-commit.png)
 
-1. Hover the mouse over the Commit button and select "Commit and Push" to push the changes to Azure DevOps Services. In the Push commits dialog click the Push button.
+9. Hover the mouse over the Commit button and select "Commit and Push" to push the changes to Azure DevOps Services. In the Push commits dialog click the Push button.
 
     ![Commit and Push](../_img/e2eintellij/commit-and-push.png)
 
-1. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. In the Code History panel click the Pull Request tab. Click the green + button to add a new Pull Request. Accept the defaults and click Create Pull Request.
+10. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. In the Code History panel click the Pull Request tab. Click the green + button to add a new Pull Request. Accept the defaults and click Create Pull Request.
 
-    ![Create Pull Request](../_img/e2eintellij/create-pull-request.png)
+     ![Create Pull Request](../_img/e2eintellij/create-pull-request.png)
 
-1. Once the PR has been created, right-click it in the PR list and click Open in Browser. You should see that the build is running (this is the build mandated by the Branch Policy you set up earlier).
+11. Once the PR has been created, right-click it in the PR list and click Open in Browser. You should see that the build is running (this is the build mandated by the Branch Policy you set up earlier).
 
-    ![Build is running to validate the PR](../_img/e2eintellij/pr-overview.png)
+     ![Build is running to validate the PR](../_img/e2eintellij/pr-overview.png)
 
     > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
-
+    > 
     > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 
-1. Click on the Files tab to open the file compare. Note the changes.
+12. Click on the Files tab to open the file compare. Note the changes.
 
-    ![PR File Compare](../_img/e2eintellij/PR-file-compare.png)
+     ![PR File Compare](../_img/e2eintellij/PR-file-compare.png)
 
-    > **Note**: You can comment on code or files in the PR and have conversations with the team throughout the review process.
+     > **Note**: You can comment on code or files in the PR and have conversations with the team throughout the review process.
 
-1. Click Approve to approve the PR.
+13. Click Approve to approve the PR.
 
-1. Now that the policies have been fulfilled, you can complete the PR which will merge the changes into master (the target branch). Click Complete to do the merge.
+14. Now that the policies have been fulfilled, you can complete the PR which will merge the changes into master (the target branch). Click Complete to do the merge.
 
-1. In the dialog, accept the defaults and click Complete merge.
+15. In the dialog, accept the defaults and click Complete merge.
 
-    ![Complete the merge](../_img/e2eintellij/complete-merge.png)
+     ![Complete the merge](../_img/e2eintellij/complete-merge.png)
 
-1. The PR completion triggers a new build off the master branch, which in turn will trigger a release. _It also transitions the Bug work item to Resolved_.
+16. The PR completion triggers a new build off the master branch, which in turn will trigger a release. _It also transitions the Bug work item to Resolved_.
 
-1. Click on Builds to watch your build. When the build completes, you will see the unit test and code coverage results as well as SonarQube analysis and quality gates (if you have configured SonarQube integration).
+17. Click on Builds to watch your build. When the build completes, you will see the unit test and code coverage results as well as SonarQube analysis and quality gates (if you have configured SonarQube integration).
 
-1. Click on Releases and open the latest release which should have triggered off the PR merge build completion event.
+18. Click on Releases and open the latest release which should have triggered off the PR merge build completion event.
 
-1. On the Release Summary page, you will see the linked Bug work item.
+19. On the Release Summary page, you will see the linked Bug work item.
 
-    ![Linked work item in Release](../_img/e2eintellij/linked-bug-release.png)
+     ![Linked work item in Release](../_img/e2eintellij/linked-bug-release.png)
 
-1. Click on commits to see the incoming commits for this release. There is the commit to fix the bug as well as the commit to merge into master.
+20. Click on commits to see the incoming commits for this release. There is the commit to fix the bug as well as the commit to merge into master.
 
-    ![Linked commits](../_img/e2eintellij/linked-commits.png)
+     ![Linked commits](../_img/e2eintellij/linked-commits.png)
 
-1. Click on the Tests tab to see the test results. The UI tests should be passing.
+21. Click on the Tests tab to see the test results. The UI tests should be passing.
 
-1. Open the MyShuttle2 app by navigating to `http://localhost:8081/myshuttledev`. Log in again and verify that the totals column is correct and the Bug has been fixed.
+22. Open the MyShuttle2 app by navigating to `http://localhost:8081/myshuttledev`. Log in again and verify that the totals column is correct and the Bug has been fixed.
 
-    ![The bug has been fixed](../_img/e2eintellij/bug-fixed.png)
+     ![The bug has been fixed](../_img/e2eintellij/bug-fixed.png)

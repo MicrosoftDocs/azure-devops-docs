@@ -27,7 +27,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 ```
 
 <br>
-**Step 3:**  This creates a file in the directory that you specified. Inside this file, navigate to the section called "WebLayout". Inside the Weblayout Section a comment blob will be present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions will be listed with their ids and inputs (if it's a Control contribution). In the example below, the comment shows that the "color-control-dev" extension has been installed on the collection which has one control contribution that takes 2 inputs -
+<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the Weblayout Section a comment blob will be present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions will be listed with their ids and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
 
 ```xml
         <!--**********************************Work Item Extensions***************************
@@ -52,7 +52,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 ```
 
 <br>
-**Step 4:**  Find your extension ID in the "Work Item Extensions" section: 
+<strong>Step 4:</strong>  Find your extension ID in the &quot;Work Item Extensions&quot; section: 
 
 ```xml
         <!--**********************************Work Item Extensions*************************** 
@@ -64,7 +64,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 ```
 
 <br>
-**Step 5:**  Add an extension tag below the "Work Item Extensions" section as shown below to make your extension available to the work item form. To place a contribution inside the form, its extension must be specified in the Extensions section.
+<strong>Step 5:</strong>  Add an extension tag below the &quot;Work Item Extensions&quot; section as shown below to make your extension available to the work item form. To place a contribution inside the form, its extension must be specified in the Extensions section.
 
 ```xml
         <!--**********************************Work Item Extensions***************************
@@ -80,7 +80,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
  ```
 
 <br>
-**Step 6:**  Specifying the extensions in the xml automatically places both the **page** and **group** contributions defined in the extensions inside the form. You can move the contributions following the examples below: 
+<strong>Step 6:</strong>  Specifying the extensions in the xml automatically places both the <strong>page</strong> and <strong>group</strong> contributions defined in the extensions inside the form. You can move the contributions following the examples below: 
 
 #### Add page contribution
 ```xml
@@ -127,7 +127,5 @@ Note that if a control contribution has any required input defined, users must g
 
 
 <br>
-**Step 7:**  Finally, import this *.xml* file, using witadmin.
-```
-    witadmin importwitd /collection:CollectionURL /p:Project /f:FileName
-``` 
+<strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using witadmin.
+<code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code> 

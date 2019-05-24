@@ -81,11 +81,11 @@ Fields are defined for all projects and processes in the organization. That mean
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td>![Inherited icon](_img/process/inherited-icon.png) Inherited fields</td>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
 <td>
 <ul>
-<li>[Change the field label](customize-process-field.md#rename-field)</li>
-<li>[Show/Hide field on form](customize-process-field.md#show-hide-field)</li>
+<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
+<li><a href="customize-process-field.md#show-hide-field" data-raw-source="[Show/Hide field on form](customize-process-field.md#show-hide-field)">Show/Hide field on form</a></li>
 </ul>
 </td>
 </tr>
@@ -93,18 +93,18 @@ Fields are defined for all projects and processes in the organization. That mean
 <td>Custom fields</td>
 <td>
 <ul>
-<li>[Add a custom field](customize-process-field.md#add-field)</li>
-<li>[Add picklist (drop-down menu)](customize-process-field.md#pick-list)</li>
-<li>[Add person-name/Identity](customize-process-field.md#identity)</li>
-<li>[Add a rich-text (HTML) field](customize-process-field.md#html) </li>
-<li>[Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)</li>
-<li>[Add a custom control](custom-controls-process.md) </li>
-<li>[Add custom rules to a field](custom-rules.md)</li>
-<li>[Change the field label](customize-process-field.md#rename-field)</li>
-<li>[Set Required/Default options](customize-process-field.md#options)</li>
-<li>[Move the field within the layout](customize-process-form.md#move-field)</li>
-<li>[Remove field from form](customize-process-field.md#remove-field)</li>
-<li>[Delete field](customize-process-field.md#delete-field)</li> 
+<li><a href="customize-process-field.md#add-field" data-raw-source="[Add a custom field](customize-process-field.md#add-field)">Add a custom field</a></li>
+<li><a href="customize-process-field.md#pick-list" data-raw-source="[Add picklist (drop-down menu)](customize-process-field.md#pick-list)">Add picklist (drop-down menu)</a></li>
+<li><a href="customize-process-field.md#identity" data-raw-source="[Add person-name/Identity](customize-process-field.md#identity)">Add person-name/Identity</a></li>
+<li><a href="customize-process-field.md#html" data-raw-source="[Add a rich-text (HTML) field](customize-process-field.md#html)">Add a rich-text (HTML) field</a> </li>
+<li><a href="customize-process-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)">Add a checkbox (Boolean) field</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add a custom control](custom-controls-process.md)">Add a custom control</a> </li>
+<li><a href="custom-rules.md" data-raw-source="[Add custom rules to a field](custom-rules.md)">Add custom rules to a field</a></li>
+<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
+<li><a href="customize-process-field.md#options" data-raw-source="[Set Required/Default options](customize-process-field.md#options)">Set Required/Default options</a></li>
+<li><a href="customize-process-form.md#move-field" data-raw-source="[Move the field within the layout](customize-process-form.md#move-field)">Move the field within the layout</a></li>
+<li><a href="customize-process-field.md#remove-field" data-raw-source="[Remove field from form](customize-process-field.md#remove-field)">Remove field from form</a></li>
+<li><a href="customize-process-field.md#delete-field" data-raw-source="[Delete field](customize-process-field.md#delete-field)">Delete field</a></li> 
 </ul>
 </td>
 </tr>
@@ -118,15 +118,14 @@ When adding custom fields, note the following limits:
 In addition, you can [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.    
 
 ### What you can't customize 
-- You can't change the field name or data type once you've defined it  
+- You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
-	- Change the picklist of an inherited field, such as the Activity or Discipline field  
-	- Change the picklist order, picklists display in alphabetic order
+    - Change the picklist of an inherited field, such as the Activity or Discipline field  
+    - Change the picklist order, picklists display in alphabetic order
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
-
 
 ### Configurable picklists 
 
@@ -138,9 +137,10 @@ Picklists associated with person-name fields, such as Assigned To and Changed By
 
 
 <a id="rename-field">  </a>
-### Can a field be renamed or its field type changed?   
-Renaming a field or changing the field type aren't supported actions.  
 
+### Can a field be renamed or its field type changed?   
+
+Renaming a field or changing the field type aren't supported actions.  
 However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
@@ -149,6 +149,7 @@ However, you can change the label that appears for a field on the work item form
 
 
 <a id="system-rules">  </a>
+
 ## Custom rules and system rules
 
 Each WIT&mdash;bug, task, user story, etc.&mdash;has several system rules already defined. Some are simple, like making the Title field required or setting a default for the Value Area field. In addition, a number of system rules define actions to take when a workflow state changes. 
@@ -156,7 +157,7 @@ Each WIT&mdash;bug, task, user story, etc.&mdash;has several system rules alread
 For example, several rules exist to copy the current user identity under the following conditions: 
 - When a work item is modified, copy the user identity to the Changed By field
 - When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
- 
+
 > [!IMPORTANT]  
 > Predefined system rules take precedent over any custom rule that you define which would overwrite it.  
 
@@ -186,15 +187,15 @@ Here are your customization options for inherited and custom WITs.
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td>![Inherited icon](_img/process/inherited-icon.png) Inherited WITs </td>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited WITs </td>
 <td>
 <ul>
-<li>[Add custom rules to a WIT](custom-rules.md)</li>
-<li>[Add/remove custom fields](customize-process-field.md)</li>
-<li>[Add/remove custom groups](customize-process-form.md#groups)</li>
-<li>[Add/remove custom pages](customize-process-form.md#pages)</li>
-<li>[Add/remove a custom control](custom-controls-process.md)</li>
-<li>[Enable/disable](customize-process-wit.md#enable-disable)</li> 
+<li><a href="custom-rules.md" data-raw-source="[Add custom rules to a WIT](custom-rules.md)">Add custom rules to a WIT</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/remove custom fields](customize-process-field.md)">Add/remove custom fields</a></li>
+<li><a href="customize-process-form.md#groups" data-raw-source="[Add/remove custom groups](customize-process-form.md#groups)">Add/remove custom groups</a></li>
+<li><a href="customize-process-form.md#pages" data-raw-source="[Add/remove custom pages](customize-process-form.md#pages)">Add/remove custom pages</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add/remove a custom control](custom-controls-process.md)">Add/remove a custom control</a></li>
+<li><a href="customize-process-wit.md#enable-disable" data-raw-source="[Enable/disable](customize-process-wit.md#enable-disable)">Enable/disable</a></li> 
 </ul>
 </td>
 </tr>
@@ -202,32 +203,29 @@ Here are your customization options for inherited and custom WITs.
 <td>Custom WITs </td>
 <td>
 <ul>
-<li>[Add custom WIT](customize-process-wit.md#add-wit)</li>
-<li>[Change color or description](customize-process-wit.md#overview)</li>
-<li>[Add/remove custom fields](customize-process-field.md)</li>
-<li>[Add/remove custom groups](customize-process-form.md#groups)</li>
-<li>[Add/remove custom pages](customize-process-form.md#pages)</li>
-<li>[Add/remove a custom control](custom-controls-process.md)</li> 
-<li>[Add custom rules to a wit](custom-rules.md)</li>
-<li>[Add, edit, or remove a workflow state](customize-process-workflow.md#states)</li>
-<li>[Enable/disable](customize-process-wit.md#enable-disable)</li>
-<li>[Delete](customize-process-wit.md#destroy)</li> 
+<li><a href="customize-process-wit.md#add-wit" data-raw-source="[Add custom WIT](customize-process-wit.md#add-wit)">Add custom WIT</a></li>
+<li><a href="customize-process-wit.md#overview" data-raw-source="[Change color or description](customize-process-wit.md#overview)">Change color or description</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/remove custom fields](customize-process-field.md)">Add/remove custom fields</a></li>
+<li><a href="customize-process-form.md#groups" data-raw-source="[Add/remove custom groups](customize-process-form.md#groups)">Add/remove custom groups</a></li>
+<li><a href="customize-process-form.md#pages" data-raw-source="[Add/remove custom pages](customize-process-form.md#pages)">Add/remove custom pages</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add/remove a custom control](custom-controls-process.md)">Add/remove a custom control</a></li> 
+<li><a href="custom-rules.md" data-raw-source="[Add custom rules to a wit](custom-rules.md)">Add custom rules to a wit</a></li>
+<li><a href="customize-process-workflow.md#states" data-raw-source="[Add, edit, or remove a workflow state](customize-process-workflow.md#states)">Add, edit, or remove a workflow state</a></li>
+<li><a href="customize-process-wit.md#enable-disable" data-raw-source="[Enable/disable](customize-process-wit.md#enable-disable)">Enable/disable</a></li>
+<li><a href="customize-process-wit.md#destroy" data-raw-source="[Delete](customize-process-wit.md#destroy)">Delete</a></li> 
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-**What you can't customize**  
-- You can't add or remove an inherited WIT to or from a backlog  
-- You can't change the position of an inherited field within the form layout (however, you can hide the field in one area of the form and add it elsewhere in the form) 
-- You can't remove the inherited portfolio level from the product (but you can rename them)
-- You can't change the name of a custom WIT. 
+<strong>What you can&#39;t customize</strong><br/>- You can&#39;t add or remove an inherited WIT to or from a backlog<br/>- You can&#39;t change the position of an inherited field within the form layout (however, you can hide the field in one area of the form and add it elsewhere in the form) 
+- You can&#39;t remove the inherited portfolio level from the product (but you can rename them)
+- You can&#39;t change the name of a custom WIT. 
 
 
 ### Work item form customizations 
 
 You can make the following customizations to a WIT form. 
-
 
 <table width="80%">
 <tbody valign="top">
@@ -236,12 +234,12 @@ You can make the following customizations to a WIT form.
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td>![Inherited icon](_img/process/inherited-icon.png) Inherited groups  </td>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited groups  </td>
 <td>
 <ul>
-<li>[Relabel](customize-process-form.md#groups)</li>
-<li>[Add/remove custom fields](customize-process-field.md)</li>
-<li>[Show/hide fields](customize-process-field.md#remove-field)</li>
+<li><a href="customize-process-form.md#groups" data-raw-source="[Relabel](customize-process-form.md#groups)">Relabel</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/remove custom fields](customize-process-field.md)">Add/remove custom fields</a></li>
+<li><a href="customize-process-field.md#remove-field" data-raw-source="[Show/hide fields](customize-process-field.md#remove-field)">Show/hide fields</a></li>
 </ul>
 </td>
 </tr>
@@ -249,19 +247,19 @@ You can make the following customizations to a WIT form.
 <td>Custom groups </td>
 <td>
 <ul>
-<li>[Add, modify, re-sequence, delete](customize-process-form.md#groups)</li>
-<li>[Add/remove custom fields](customize-process-field.md)</li>
-<li>[Add/Hide a group extension](custom-controls-process.md)</li>
+<li><a href="customize-process-form.md#groups" data-raw-source="[Add, modify, re-sequence, delete](customize-process-form.md#groups)">Add, modify, re-sequence, delete</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/remove custom fields](customize-process-field.md)">Add/remove custom fields</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add/Hide a group extension](custom-controls-process.md)">Add/Hide a group extension</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>![Inherited icon](_img/process/inherited-icon.png) Inherited pages  </td>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited pages  </td>
 <td>
 <ul>
-<li>[Relabel](customize-process-form.md#pages)</li>
-<li>[Add/remove custom fields](customize-process-field.md)</li>
-<li>[Add/remove a custom group](customize-process-form.md#groups) </li>
+<li><a href="customize-process-form.md#pages" data-raw-source="[Relabel](customize-process-form.md#pages)">Relabel</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/remove custom fields](customize-process-field.md)">Add/remove custom fields</a></li>
+<li><a href="customize-process-form.md#groups" data-raw-source="[Add/remove a custom group](customize-process-form.md#groups)">Add/remove a custom group</a> </li>
 </ul>
 </td>
 </tr>
@@ -269,9 +267,9 @@ You can make the following customizations to a WIT form.
 <td>Custom pages </td>
 <td>
 <ul>
-<li>[Add, modify, re-sequence, delete](customize-process-form.md#pages)</li>
-<li>[Add/delete custom fields](customize-process-field.md)</li>
-<li>[Add/hide a page extension](custom-controls-process.md)</li> 
+<li><a href="customize-process-form.md#pages" data-raw-source="[Add, modify, re-sequence, delete](customize-process-form.md#pages)">Add, modify, re-sequence, delete</a></li>
+<li><a href="customize-process-field.md" data-raw-source="[Add/delete custom fields](customize-process-field.md)">Add/delete custom fields</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add/hide a page extension](custom-controls-process.md)">Add/hide a page extension</a></li> 
 </ul>
 </td>
 </tr>
@@ -310,11 +308,11 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td>![Inherited icon](_img/process/inherited-icon.png) Inherited states   </td>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited states   </td>
 <td>
 <ul>
-<li>[View workflow states](customize-process-workflow.md#hide-state)</li>
-<li>[Hide a state](customize-process-workflow.md#hide-state)</li>
+<li><a href="customize-process-workflow.md#hide-state" data-raw-source="[View workflow states](customize-process-workflow.md#hide-state)">View workflow states</a></li>
+<li><a href="customize-process-workflow.md#hide-state" data-raw-source="[Hide a state](customize-process-workflow.md#hide-state)">Hide a state</a></li>
 </ul>
 </td>
 </tr>
@@ -322,10 +320,9 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 <td>Custom states  </td>
 <td>
 <ul>
-<li>[Add a state](customize-process-workflow.md#add-states)</li>
-<li>[Edit a state (change color or category)](customize-process-workflow.md#edit-state)</li>
-<li>[Remove a state](customize-process-workflow.md#remove-state)</li>  
-</ul>
+<li><a href="customize-process-workflow.md#add-states" data-raw-source="[Add a state](customize-process-workflow.md#add-states)">Add a state</a></li>
+<li><a href="customize-process-workflow.md#edit-state" data-raw-source="[Edit a state (change color or category)](customize-process-workflow.md#edit-state)">Edit a state (change color or category)</a></li>
+<li><a href="customize-process-workflow.md#remove-state" data-raw-source="[Remove a state](customize-process-workflow.md#remove-state)">Remove a state</a></li><br/></ul>
 </td>
 </tr>
 </tbody>
@@ -341,6 +338,7 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 - You can't change the name of a custom state 
 - You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop down list of a work item form)  
 - You can't specify a Reason for a state, instead, default reasons are defined such as *Moved to state Triaged*, *Moved out of state Triaged* 
+- You can't change the location of the State and Reason fields on the form
 - You can't restrict transitions, all transitions are defined from any state to another state.  
 
 
@@ -359,10 +357,10 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 <td>Standard backlogs  </td>
 <td>
 <ul>
-<li>[Add a custom WIT](customize-process-backlogs-boards.md)</li>
-<li>[Change the default WIT](customize-process-backlogs-boards.md)</li>
-<li>[Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)</li>
-<li>[Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) </li>
+<li><a href="customize-process-backlogs-boards.md" data-raw-source="[Add a custom WIT](customize-process-backlogs-boards.md)">Add a custom WIT</a></li>
+<li><a href="customize-process-backlogs-boards.md" data-raw-source="[Change the default WIT](customize-process-backlogs-boards.md)">Change the default WIT</a></li>
+<li><a href="customize-process-backlogs-boards.md#edit-product-backlog" data-raw-source="[Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)">Rename the requirement backlog</a></li>
+<li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Rename a portfolio backlog</a> </li>
 </ul>
 </td>
 </tr>
@@ -370,9 +368,9 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 <td>Custom portfolio backlogs </td>
 <td>
 <ul>
-<li>[Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)</li>
-<li>[Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)</li>
-<li>[Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) </li>
+<li><a href="customize-process-backlogs-boards.md#portfolio-backlogs" data-raw-source="[Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)">Add a portfolio backlog which displays custom WITs</a></li>
+<li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Edit or rename a portfolio backlog</a></li>
+<li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Delete the top-level custom portfolio backlog</a> </li>
 </ul>
 </td>
 </tr>

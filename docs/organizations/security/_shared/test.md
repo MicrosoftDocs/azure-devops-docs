@@ -11,33 +11,33 @@
 
 
 <tr>
-<td align="left">Provide feedback using the Test & Feedback extension
+<td align="left">Provide feedback using the Test &amp; Feedback extension
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Exploratory testing, view test runs 
 </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Manage test plans and test suites 
 <p>Manage test configurations and test environments </p>
 <p>Exploratory testing, create and delete test runs </p>
-<p>Request feedback using the Test & Feedback extension</p>
+<p>Request feedback using the Test &amp; Feedback extension</p>
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -45,8 +45,8 @@
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>

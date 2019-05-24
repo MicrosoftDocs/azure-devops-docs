@@ -26,49 +26,49 @@ The following example shows the overall structure of the **WORKFLOW** element. Y
 For each transition, you specify a set of reasons for changing the state of the work item, including a default reason. You can assign values for each state, transition, or reason, and you can place conditions on the values of one or more fields by using the **FIELD** (Workflow) element. In addition, you can trigger an action to occur during a transition by specifying the **ACTION** element.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<WORKFLOW>  
-<STATES>  
-  <STATE value="Active">  
-    <FIELDS> . . . </FIELDS>  
-  </STATE>  
-  <STATE value="Resolved">  
-    <FIELDS> . . . </FIELDS>  
-  </STATE>  
-  <STATE value="Closed" />  
-</STATES>  
-<TRANSITIONS>  
-  <TRANSITION from="" to="Active">  
-    <REASONS>  
-      <DEFAULTREASON value="New" />  
-    </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-  </TRANSITION>  
-  <TRANSITION from="Active" to="Resolved">  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-    <ACTIONS > . . . </ACTIONS >  
-</TRANSITION>  
-<TRANSITION from="Resolved" to="Closed">  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-    <ACTIONS > . . . </ACTIONS >  
-</TRANSITION>  
-<TRANSITION from="Resolved" to="Active">  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-</TRANSITION>  
-<TRANSITION from="Active" to="Closed ">  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-</TRANSITION>  
-<TRANSITION from="Closed" to="Active">  
-    <REASONS> . . . </REASONS>  
-    <FIELDS> . . . </FIELDS>  
-</TRANSITION>  
-</TRANSITIONS>  
-</WORKFLOW>  
-```  
+> ```XML 
+> <WORKFLOW>  
+> <STATES>  
+>   <STATE value="Active">  
+>     <FIELDS> . . . </FIELDS>  
+>   </STATE>  
+>   <STATE value="Resolved">  
+>     <FIELDS> . . . </FIELDS>  
+>   </STATE>  
+>   <STATE value="Closed" />  
+> </STATES>  
+> <TRANSITIONS>  
+>   <TRANSITION from="" to="Active">  
+>     <REASONS>  
+>       <DEFAULTREASON value="New" />  
+>     </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+>   </TRANSITION>  
+>   <TRANSITION from="Active" to="Resolved">  
+>     <REASONS> . . . </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+>     <ACTIONS > . . . </ACTIONS >  
+> </TRANSITION>  
+> <TRANSITION from="Resolved" to="Closed">  
+>     <REASONS> . . . </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+>     <ACTIONS > . . . </ACTIONS >  
+> </TRANSITION>  
+> <TRANSITION from="Resolved" to="Active">  
+>     <REASONS> . . . </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+> </TRANSITION>  
+> <TRANSITION from="Active" to="Closed ">  
+>     <REASONS> . . . </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+> </TRANSITION>  
+> <TRANSITION from="Closed" to="Active">  
+>     <REASONS> . . . </REASONS>  
+>     <FIELDS> . . . </FIELDS>  
+> </TRANSITION>  
+> </TRANSITIONS>  
+> </WORKFLOW>  
+> ```  
   
 ##  <a name="WORKFLOW"></a> Syntax structure  
  By using the elements that the following table describes, you can specify to which states a team member can set a work item of a particular type. In the `WORKFLOW` section of the definition, you define states first, and then you define transitions. For more information, see [Change the workflow](change-workflow-wit.md).  
@@ -80,7 +80,7 @@ For each transition, you specify a set of reasons for changing the state of the 
 <pre>
 &lt;ACTION value="NameOfAction" /&gt;
 </pre>
-<p>For more information, see [Automate field assignments based on State, Transition, or Reason](automate-field-assignments-state-transition-reason.md) </p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>ACTIONS</strong></p></td><td data-th="Description and syntax"><p>Defines a collection of <strong>ACTION</strong> elements.</p>
+<p>For more information, see <a href="automate-field-assignments-state-transition-reason.md" data-raw-source="[Automate field assignments based on State, Transition, or Reason](automate-field-assignments-state-transition-reason.md)">Automate field assignments based on State, Transition, or Reason</a> </p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>ACTIONS</strong></p></td><td data-th="Description and syntax"><p>Defines a collection of <strong>ACTION</strong> elements.</p>
 <pre>
 &lt;ACTIONS&gt;
    &lt;ACTION&gt;. . . &lt;/ACTION&gt;
@@ -115,7 +115,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    &lt;WHENNOTCHANGED&gt; . . . &lt;/WHENNOTCHANGED&gt;
 &lt;FIELD&gt;
 </pre>
-<p>For more information, see [FIELD (Workflow) element reference](all-workflow-xml-elements-reference.md).</p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>FIELDS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>FIELD</strong> elements.</p>
+<p>For more information, see <a href="all-workflow-xml-elements-reference.md" data-raw-source="[FIELD (Workflow) element reference](all-workflow-xml-elements-reference.md)">FIELD (Workflow) element reference</a>.</p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>FIELDS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>FIELD</strong> elements.</p>
 <pre>
 &lt;FIELDS&gt;
    &lt;FIELD . . . &lt;/FIELD&gt;
@@ -160,7 +160,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
 &lt;/TRANSITION&gt;
 </pre>
-<p>For more information, see [TRANSITION element](transition-xml-element.md).</p></td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITIONS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>TRANSITION</strong> elements.</p>
+<p>For more information, see <a href="transition-xml-element.md" data-raw-source="[TRANSITION element](transition-xml-element.md)">TRANSITION element</a>.</p></td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITIONS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>TRANSITION</strong> elements.</p>
 <pre>
 &lt;TRANSITIONS&gt;
     &lt;TRANSITION&gt;. . . &lt;/TRANSITION&gt;

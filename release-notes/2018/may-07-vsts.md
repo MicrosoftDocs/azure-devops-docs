@@ -66,26 +66,26 @@ Find work items that have an empty rich text field, such as Description, using t
 Ruby versions 2.3.7, 2.4.4, and 2.5.1 have been added to hosted agents. Set the version of Ruby used by your pipeline by adding the **Use Ruby Version** task to your build steps. The version of Ruby that you specify will be installed from the agent’s tool cache and optionally added to your build’s PATH environment variable. You can even set a range for the version number, such as `>= 2.4`.
 
 > [!div class="mx-imgBorder"]
-![Use Ruby task](_img/134_01.png)
+> ![Use Ruby task](_img/134_01.png)
 
 ### Build, test, and publish Python apps based on a variety of Python versions
 
 Python versions 2.7.14, 3.3.7, 3.4.8, 3.5.5, 3.6.4, and 3.7.0-b2 are now available on hosted agents. Set the version of Python used by your pipeline by adding the **Use Python Version** task to your build steps. The version of Python that you specify will be installed from the agent’s tool cache and optionally added to your build’s PATH environment variable. You can even set a range for the version number, such as `>= 3.3`.
 
 > [!div class="mx-imgBorder"]
-![Use Python task](_img/134_02.png)
+> ![Use Python task](_img/134_02.png)
 
 For the common scenario of testing a Python package on multiple versions of Python, choose the **Python Package** template when creating your build pipeline. It will give you an initial set of steps for running tests on a matrix of Python versions and optionally publishing your package.
 
 > [!div class="mx-imgBorder"]
-![Python Package task](_img/134_03.png)
+> ![Python Package task](_img/134_03.png)
 
 ### Build Java apps on hosted agents with Java 10
 
 The hosted agent machines running Linux, macOS, and Windows now have Java 10 pre-installed. The Ant, Gradle, and Maven build tasks simplify selection of Java 10 and its architecture for your build.
 
 > [!div class="mx-imgBorder"]
-![Set Java version](_img/134_04.png)
+> ![Set Java version](_img/134_04.png)
 
 ### Leverage improved Xcode build and test output from xcpretty
 
@@ -98,7 +98,7 @@ The hosted agent machines running Linux, macOS, and Windows now have Java 10 pre
 Release gates, which enable data-driven approval of deployments, now becomes generally available! Using release gates, you can specify application health criteria that must be met before a release is promoted to the next environment. All the specified gates are periodically evaluated prior to or after any deployment, until they are all successful. Four types of gates are available out of the box and you can add more gates from the [Marketplace](https://marketplace.visualstudio.com/search?term=tag%3AReleaseGates&target=VSTS&category=All%20categories&sortBy=Relevance). You will be able to audit that all the necessary criteria for a deployment were met. See the [documentation for release gates](/azure/devops/pipelines/release/approvals/gates) for more information.
 
 > [!div class="mx-imgBorder"]
-![Release gates panel](_img/134_09.png)
+> ![Release gates panel](_img/134_09.png)
 
 ### Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects
 
@@ -107,21 +107,21 @@ Release gates, which enable data-driven approval of deployments, now becomes gen
 You can also target [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) for new .NET Core apps in DevOps Projects. This gives you yet another option to get started on a new project that includes a full DevOps pipeline, whether you want to retain the control of a VM, keep the simplicity of a web app, or optimize for high scale. See the tutorial documentation for [AKS](/azure/devops-project/azure-devops-project-aks) and [Service Fabric](/azure/devops-project/azure-devops-project-service-fabric) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Select an Azure Service to deploy the application](_img/134_11.png)
+> ![Select an Azure Service to deploy the application](_img/134_11.png)
 
 ### Deploy to Azure SQL Database using Azure DevOps Projects
 
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database/), a fully managed relational cloud database, can now be targeted in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/), when starting a new .NET app and selecting ASP.NET as runtime. You can add the SQL Database to your .NET app by simply selecting **Add a database**. The DevOps Project will create a sample two-tier, connected application, including a continuous delivery pipeline for both the tiers. See the [tutorial](/azure/devops-project/azure-devops-project-sql-database) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Add a database](_img/134_10.png)
+> ![Add a database](_img/134_10.png)
 
 ### Release hybrid applications to Azure Stack
 
 Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=azure-devops#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Connect to Azure](_img/134_08.png)
+> ![Connect to Azure](_img/134_08.png)
 
 ### Control Helm version used in Release
 
@@ -153,7 +153,7 @@ A few of the interactions on the feed settings page have been improved. Now, cha
 Introducing the new hub for **Test Plans**! Not only can you add, edit, and delete plans from this page but also find and favorite plans across your team and the project. We pioneered this type of experience in **Dashboards**, **Queries**, and **Plans**. This is another step to bring this consistency across the product.
 
 > [!div class="mx-imgBorder"]
-![Test Plans landing page](_img/134_07.png)
+> ![Test Plans landing page](_img/134_07.png)
 
 ## Wiki
 
@@ -167,12 +167,12 @@ Broken page links are one of the leading causes of poor page quality in any docu
 When you rename or move a page, you’ll be prompted to check for affected absolute or relative links.
 
 > [!div class="mx-imgBorder"]
-![Move page dialog](_img/134_05.png)
+> ![Move page dialog](_img/134_05.png)
 
 You’ll then be shown a list of the **Page links** and **Work items** affected before you take action.
 
 > [!div class="mx-imgBorder"]
-![Move page links](_img/134_06.png)
+> ![Move page links](_img/134_06.png)
 
 ## VSTS Demo Generator
 
@@ -193,7 +193,7 @@ Check out the [documentation](/azure/devops/demo-gen) for step-by-step instructi
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

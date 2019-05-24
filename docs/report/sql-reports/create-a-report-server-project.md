@@ -80,15 +80,15 @@ You can track your team's progress by using SQL Server Report Designer to create
   
 ### To set the project's properties so that you can deploy reports  
   
-1.  On the **Project** menu, choose **Properties**.  
+1. On the **Project** menu, choose **Properties**.  
   
-2.  For the value of the **OverwriteDataSources** property, choose **False**.  
+2. For the value of the **OverwriteDataSources** property, choose **False**.  
   
-    > [!NOTE]
-    >  If you set this option, you can publish your reports without overwriting the data sources on the server with those that you defined in this project.  
+   > [!NOTE]
+   >  If you set this option, you can publish your reports without overwriting the data sources on the server with those that you defined in this project.  
   
-3.  For the value of the **TargetDataSourceFolder** property, type `/`.  
+3. For the value of the **TargetDataSourceFolder** property, type `/`.  
   
-4.  For the value of the **TargetReportFolder** property, type the path of the folder where you will deploy the reports from this project. If you will deploy the reports to a specific team project, use the name of the team project.  
+4. For the value of the **TargetReportFolder** property, type the path of the folder where you will deploy the reports from this project. If you will deploy the reports to a specific team project, use the name of the team project.  
   
-5.  For the value of the **TargetServerURL** property, type the URL of the Reporting Services server. For example, you can type **http://***ReportingServicesServerName***/reportserver**.
+5. For the value of the **TargetServerURL** property, type the URL of the Reporting Services server. For example, you can type **http://**<em>ReportingServicesServerName</em>**/reportserver**.
