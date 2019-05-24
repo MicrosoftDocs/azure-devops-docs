@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/23/2019
+ms.date: 05/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -330,6 +330,19 @@ This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 [!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+
+### Using variables as task inputs
+
+In order to use a variable as a task input, the variable must be an output variable and you must give the producing task a reference name.
+You can set a task's reference name on the **Output Variables** section of the task editor.
+For instance, a script task whose output variable reference name is `producer` could have the following contents:
+
+```cmd
+mkdir myDir
+echo ##vso[task.setvariable variable=newworkdir;isOutput=true]$(System.DefaultWorkingDirectory)\myDir
+```
+
+The output variable `newworkdir` can be referenced in the input of a downstream task as `$(producer.newworkdir)`.
 
 ### Set a multi-job output variable
 
