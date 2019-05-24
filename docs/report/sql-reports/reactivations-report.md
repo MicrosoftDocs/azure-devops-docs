@@ -38,11 +38,11 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
  You can filter the Reactivations report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the bugs and stories that are counted in the report by specifying iteration and area paths, work item types, and previous state of the work items.  
+- Filter the bugs and stories that are counted in the report by specifying iteration and area paths, work item types, and previous state of the work items.  
   
- For more information, see [Filtering the Report](#Changing) later in this article.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Tracking User Stories and Bugs  
  For the Reactivations report to be useful and accurate, the team must perform the following activities:  
@@ -95,13 +95,13 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 ##  <a name="Changing"></a> Filtering the Report  
  You can filter the Reactivations report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the bugs or stories that the report represents by specifying iteration and area paths, work item types, and the previous states for the work items.  
+- Filter the bugs or stories that the report represents by specifying iteration and area paths, work item types, and the previous states for the work items.  
   
- The following illustration shows the available filters:  
+  The following illustration shows the available filters:  
   
- ![Filters for Reactivations Report](_img/procguide_bugsreactivationsfilters.png "ProcGuide_BugsReactivationsFilters")  
+  ![Filters for Reactivations Report](_img/procguide_bugsreactivationsfilters.png "ProcGuide_BugsReactivationsFilters")  
   
 #### To filter the work items that appear in the report  
   

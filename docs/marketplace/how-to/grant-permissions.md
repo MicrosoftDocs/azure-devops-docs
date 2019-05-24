@@ -42,30 +42,30 @@ Add users or update permission settings:
 
 To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
-0.	At the server level, create a group, for example, "TFS Extension Publishers":
+0. At the server level, create a group, for example, "TFS Extension Publishers":
 
-    ```
-    tfssecurity /gcg "TFS Extension Publishers" "publishers who can manage extensions for the server" /server:ServerURL
-    ```
+   ```
+   tfssecurity /gcg "TFS Extension Publishers" "publishers who can manage extensions for the server" /server:ServerURL
+   ```
 
-0. 	Grant access to the "TFS Extension Publishers" group to manage extensions:
+1. Grant access to the "TFS Extension Publishers" group to manage extensions:
 
-    ```
-    tfssecurity /a+ Publisher "//" CreatePublisher n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    tfssecurity /a+ Publisher "//" PublishExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    tfssecurity /a+ Publisher "//" UpdateExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    tfssecurity /a+ Publisher "//" DeleteExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    ```
+   ```
+   tfssecurity /a+ Publisher "//" CreatePublisher n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   tfssecurity /a+ Publisher "//" PublishExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   tfssecurity /a+ Publisher "//" UpdateExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   tfssecurity /a+ Publisher "//" DeleteExtension n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   ```
 
-    For Team Foundation Server "15" RC2 or earlier, use this syntax:
+   For Team Foundation Server "15" RC2 or earlier, use this syntax:
 
-    ```
-    tfssecurity /a+ Publisher "//" Create n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    tfssecurity /a+ Publisher "//" Publish n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    tfssecurity /a+ Publisher "//" Write n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
-    ```
+   ```
+   tfssecurity /a+ Publisher "//" Create n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   tfssecurity /a+ Publisher "//" Publish n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   tfssecurity /a+ Publisher "//" Write n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
+   ```
 
-0. Add existing users and groups to the "TFS Extension Publishers" group.
+2. Add existing users and groups to the "TFS Extension Publishers" group.
 
     ```
     tfssecurity /g+ "[TEAM FOUNDATION]\TFS Extension Publishers" n:User /server:ServerURL

@@ -27,7 +27,7 @@ In this exercise, you are going to clone a GitHub repo into Azure DevOps, if you
 This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
 > **Note**: It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
-
+> 
 > **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
 
 ## Configure Package Management
@@ -103,50 +103,50 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
     ![Navigate to MyShuttleCalc repo](../_img/mavenpmjenkins/navigate-to-repo.png)
 
-1. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH url into the clipboard.
+2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH url into the clipboard.
 
     ![Copy the SSH url](../_img/mavenpmjenkins/ssh-url.png)
 
-1. Go back to Jenkins in your browser.
+3. Go back to Jenkins in your browser.
 
-1. In the list of items in the left navigation pane in Jenkins, click "New Item".
+4. In the list of items in the left navigation pane in Jenkins, click "New Item".
 
-1. Enter `MyShuttleCalc` for the item name and click on "Maven Project". Click OK.
+5. Enter `MyShuttleCalc` for the item name and click on "Maven Project". Click OK.
 
-1. In the Source Code Management section, select Git. Paste in the SSH url to the MyShuttleCalc repo.
+6. In the Source Code Management section, select Git. Paste in the SSH url to the MyShuttleCalc repo.
 
-1. Click the "Add" button in the Credentials section and select "Jenkins".
+7. Click the "Add" button in the Credentials section and select "Jenkins".
 
-1. In the dialog, change the "Kind" to "SSH Username with private key".
+8. In the dialog, change the "Kind" to "SSH Username with private key".
 
-1. Select the "Enter directly" option under "Private Key".
+9. Select the "Enter directly" option under "Private Key".
 
-1. Open a terminal and cat the `~/.ssh/id_rsa` file (or open it in any editor) and paste the contents into the Key textbox. Enter a passphrase (if you used one - otherwise leave it empty). Enter `vmadmin` as the ID. Click Add.
+10. Open a terminal and cat the `~/.ssh/id_rsa` file (or open it in any editor) and paste the contents into the Key textbox. Enter a passphrase (if you used one - otherwise leave it empty). Enter `vmadmin` as the ID. Click Add.
 
-    ![Enter the SSH key info](../_img/mavenpmjenkins/ssh-key.png)
+     ![Enter the SSH key info](../_img/mavenpmjenkins/ssh-key.png)
 
-1. Your Source Code Management should now look like this:
+11. Your Source Code Management should now look like this:
 
-    ![Source Code Management](../_img/mavenpmjenkins/sc-management.png)
+     ![Source Code Management](../_img/mavenpmjenkins/sc-management.png)
 
-1. In the Build section, ensure that "Root POM" is `pom.xml`. Set the "Goals and options" to `deploy -Dbuildversion=1.0.${BUILD_NUMBER}`. Click the Advanced button to expand the advanced settings. Change the "Settings file" to "Settings file in filesystem" and set the "File path" to `maven/settings.xml`. These settings instruct Maven to build, test and package the code and then publish the package to the repository defined in the settings.xml file, which you previously modified to include the authentication token.
+12. In the Build section, ensure that "Root POM" is `pom.xml`. Set the "Goals and options" to `deploy -Dbuildversion=1.0.${BUILD_NUMBER}`. Click the Advanced button to expand the advanced settings. Change the "Settings file" to "Settings file in filesystem" and set the "File path" to `maven/settings.xml`. These settings instruct Maven to build, test and package the code and then publish the package to the repository defined in the settings.xml file, which you previously modified to include the authentication token.
 
-    ![Build settings](../_img/mavenpmjenkins/build-settings.png)
+     ![Build settings](../_img/mavenpmjenkins/build-settings.png)
 
-1. Scroll down to Post-build Actions. Click "Add post-build action" and select "Record JaCoCo coverage report". You can leave all the settings as defaulted. This publishes the JaCoCo results for this job.
+13. Scroll down to Post-build Actions. Click "Add post-build action" and select "Record JaCoCo coverage report". You can leave all the settings as defaulted. This publishes the JaCoCo results for this job.
 
-    ![JaCoCo post-build action](../_img/mavenpmjenkins/jacoco-post-build.png)
+     ![JaCoCo post-build action](../_img/mavenpmjenkins/jacoco-post-build.png)
 
-1. Add a new post-build action - this time select "Archive the artifacts". Set "Files to archive" to `**/MyShuttleCalc*.jar`. This saves the MyShuttleCalc jar file as an artifact from this job.
+14. Add a new post-build action - this time select "Archive the artifacts". Set "Files to archive" to `**/MyShuttleCalc*.jar`. This saves the MyShuttleCalc jar file as an artifact from this job.
 
-1. Add a new post-build action - this time select "Collect results for TFS/Azure DevOps". This step allows Jenkins to collect test results and coverage results so that they are available to Azure DevOps. Click the Add button twice to add 2 collectors:
+15. Add a new post-build action - this time select "Collect results for TFS/Azure DevOps". This step allows Jenkins to collect test results and coverage results so that they are available to Azure DevOps. Click the Add button twice to add 2 collectors:
 
     - **Type**: JUnit, **Files to include**: `**/TEST-*.xml`
     - **Type**: JaCoCo, **Files to include**: `**/jacoco/**`
 
-    ![Azure DevOps Results action](../_img/mavenpmjenkins/vsts-post-build.png)
+      ![Azure DevOps Results action](../_img/mavenpmjenkins/vsts-post-build.png)
 
-1. Click the Save button.
+16. Click the Save button.
 
 ## Schedule a Build
 

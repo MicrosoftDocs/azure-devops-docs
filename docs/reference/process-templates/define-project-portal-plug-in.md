@@ -85,18 +85,18 @@ For an example of a task that specifies a simple project portal, see the WssTask
 The following example shows how to reference the English version of the Agile process template, which supports dashboards.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<tasks>  
-  <task id="SharePointPortal" name="Create Sharepoint Portal" plugin="Microsoft.ProjectCreationWizard.Portal" completionMessage="Project portal site created.">  
-    <dependencies />  
-    <taskXml>  
-        <Portal>  
-           <site template="Team Foundation Server Project Portal" language="1033" />    
-       . . .   
-        </Portal>  
-```  
-  
-> [!NOTE]   
+> ```XML
+> <tasks>  
+>   <task id="SharePointPortal" name="Create Sharepoint Portal" plugin="Microsoft.ProjectCreationWizard.Portal" completionMessage="Project portal site created.">  
+>     <dependencies />  
+>     <taskXml>  
+>         <Portal>  
+>            <site template="Team Foundation Server Project Portal" language="1033" />    
+>        . . .   
+>         </Portal>  
+> ```  
+> 
+> [!NOTE]
 >  All other tasks defined within the portal plug-in depend on the site creation task because the project portal must be created before you can create additional document libraries or copy files.  
   
 ### Process template performance  
@@ -115,13 +115,13 @@ The following example shows how to reference the English version of the Agile pr
  After the project portal is created, you can specify that additional document libraries be created. Use the **documentLibrary** element to specify a document library.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<documentLibraries>  
-   <documentLibrary name="" description="" isProcessGuidance="true | false" />  
-</documentLibraries>    
-```  
-  
-> [!NOTE]  
+> ```XML
+> <documentLibraries>  
+>    <documentLibrary name="" description="" isProcessGuidance="true | false" />  
+> </documentLibraries>    
+> ```  
+> 
+> [!NOTE]
 >  Versioning for a document library cannot be enabled or disabled in the process template. You can enable or disable versioning via the Windows SharePoint Services site template, or after project creation.  
   
  The following table describes the attributes for the documentLibrary element.  
@@ -135,13 +135,13 @@ The following example shows how to reference the English version of the Agile pr
  The following example shows how to create a document library named Development that the development team can use to store documents.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<documentLibraries>  
-. . .  
-   <documentLibrary name="Process Guidance" description="How to make best use of the Team Foundation Server tools and process" isProcessGuidance="true" />  
-. . .  
-</documentLibraries>  
-```  
+> ```XML 
+> <documentLibraries>  
+> . . .  
+>    <documentLibrary name="Process Guidance" description="How to make best use of the Team Foundation Server tools and process" isProcessGuidance="true" />  
+> . . .  
+> </documentLibraries>  
+> ```  
   
 <a name="Folders"></a> 
 ##  Create the folder structure of a document library  
@@ -150,11 +150,11 @@ The following example shows how to reference the English version of the Agile pr
  Use the **folder** element to create a new folder.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<folders>  
-   <folder documentLibrary="" name=""/>  
-</folders>  
-```  
+> ```XML 
+> <folders>  
+>    <folder documentLibrary="" name=""/>  
+> </folders>  
+> ```  
   
  The following table describes the attributes for the folder element.  
   
@@ -166,23 +166,23 @@ The following example shows how to reference the English version of the Agile pr
  The following example shows how to create a folder named Trip Reports in the Development document library where developers can store trip reports from conferences or customer visits.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<folders>  
-   <folder documentLibrary="Development"  
-           name="Trip Reports"/>  
-</folders>  
-```  
+> ```XML 
+> <folders>  
+>    <folder documentLibrary="Development"  
+>            name="Trip Reports"/>  
+> </folders>  
+> ```  
   
 <a name="Files"></a> 
 ##  Specify files to upload to document libraries  
  You must also copy files into document libraries and folders. The source files are located under the Windows SharePoint Services folder. You must specify a target on the project portal.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<files>  
-   <file source="" documentLibrary="" target="" queryId="" />   
-</files>  
-```  
+> ```XML
+> <files>  
+>    <file source="" documentLibrary="" target="" queryId="" />   
+> </files>  
+> ```  
   
  The following table describes the attributes for the file element.  
   
@@ -196,15 +196,15 @@ The following example shows how to reference the English version of the Agile pr
  The following example shows how to copy a template file named Project Checklist into the Project Management folder. This example also specifies that when the file is first open, it should be populated with the results of the Project Checklist work item query.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<files>  
-   <file source="Windows SharePoint Services\Templates\Project Checklist.xls"   
-      documentLibrary="Project Management"   
-      target="Project Checklist.xls"   
-      queryId="Project Checklist" />  
-</files>  
-```  
-  
+> ```XML 
+> <files>  
+>    <file source="Windows SharePoint Services\Templates\Project Checklist.xls"   
+>       documentLibrary="Project Management"   
+>       target="Project Checklist.xls"   
+>       queryId="Project Checklist" />  
+> </files>  
+> ```  
+> 
 > [!NOTE]
 >  You could include folders and files as part of the site template, and you would not have to list them in the XML.  If you specify .exe files and the SharePoint site does not support .exe files, you will not be able to create a project successfully by using the process template.  
   
@@ -216,27 +216,27 @@ Process guidance is content that documents the processes to be followed by team 
 To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<!-- Process Guidance -->  
-          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.html" />  
-          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\AboutWorkItems.htm" documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\AboutWorkItems.htm" documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm" documentLibrary="Process Guidance" target="Supporting Files/Bug.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm" documentLibrary="Process Guidance" target="Supporting Files/Bug.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Issue.htm" documentLibrary="Process Guidance" target="Supporting Files/Issue.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Issue.htm" documentLibrary="Process Guidance" target="Supporting Files/Issue.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm" documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm" documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm" documentLibrary="Process Guidance" target="Supporting Files/Task.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm" documentLibrary="Process Guidance" target="Supporting Files/Task.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm" documentLibrary="Process Guidance" target="Supporting Files/Test Case.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm" documentLibrary="Process Guidance" target="Supporting Files/Test Case.aspx" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\UserStory.htm" documentLibrary="Process Guidance" target="Supporting Files/User Story.htm" />  
-          <file source="Windows SharePoint Services\Process Guidance\Supporting Files\UserStory.htm" documentLibrary="Process Guidance" target="Supporting Files/User Story.aspx" />  
-```  
+> ```XML 
+> <!-- Process Guidance -->  
+>           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.html" />  
+>           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\AboutWorkItems.htm" documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\AboutWorkItems.htm" documentLibrary="Process Guidance" target="Supporting Files/AboutWorkItems.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm" documentLibrary="Process Guidance" target="Supporting Files/Bug.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Bug.htm" documentLibrary="Process Guidance" target="Supporting Files/Bug.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Issue.htm" documentLibrary="Process Guidance" target="Supporting Files/Issue.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Issue.htm" documentLibrary="Process Guidance" target="Supporting Files/Issue.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="Supporting Files/ProcessGuidance.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm" documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\SharedSteps.htm" documentLibrary="Process Guidance" target="Supporting Files/Shared Steps.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm" documentLibrary="Process Guidance" target="Supporting Files/Task.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\Task.htm" documentLibrary="Process Guidance" target="Supporting Files/Task.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm" documentLibrary="Process Guidance" target="Supporting Files/Test Case.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\TestCase.htm" documentLibrary="Process Guidance" target="Supporting Files/Test Case.aspx" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\UserStory.htm" documentLibrary="Process Guidance" target="Supporting Files/User Story.htm" />  
+>           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\UserStory.htm" documentLibrary="Process Guidance" target="Supporting Files/User Story.aspx" />  
+> ```  
   
 You can customize these files to point to other resources for process guidance. You can also add files to support access to other process guidance that you have created for your team. For more information, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
   
@@ -249,50 +249,50 @@ You use the **activateFeatures** element to cause the creation of the dashboards
 **To activate dashboard features that are designed for use with the process template for Scrum**:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Portal>  
-    . . .   
-<activateFeatures>  
-         <!-- TfsDashboardScrumWss -->  
-          <feature featureId="71EC0D67-21AB-4560-A825-9D976DA09D04" />  
-          <!-- TfsDashboardAgileQuickLaunch -->  
-          <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
-        </activateFeatures>  
-    . . .   
-</Portal>  
-```  
+> ```XML
+> <Portal>  
+>     . . .   
+> <activateFeatures>  
+>          <!-- TfsDashboardScrumWss -->  
+>           <feature featureId="71EC0D67-21AB-4560-A825-9D976DA09D04" />  
+>           <!-- TfsDashboardAgileQuickLaunch -->  
+>           <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
+>         </activateFeatures>  
+>     . . .   
+> </Portal>  
+> ```  
   
 **To activate dashboard features that are designed for use with the process template for Agile**:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<Portal>  
-. . .   
-    <activateFeatures>  
-      <!-- TfsDashboardAgileMoss -->  
-      <feature featureId="0D953EE4-B77D-485b-A43C-F5FBB9367207" />  
-      <!-- TfsDashboardAgileQuickLaunch -->  
-      <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
-    </activateFeatures>  
-. . .   
-</Portal>  
-```  
+> ```XML  
+> <Portal>  
+> . . .   
+>     <activateFeatures>  
+>       <!-- TfsDashboardAgileMoss -->  
+>       <feature featureId="0D953EE4-B77D-485b-A43C-F5FBB9367207" />  
+>       <!-- TfsDashboardAgileQuickLaunch -->  
+>       <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
+>     </activateFeatures>  
+> . . .   
+> </Portal>  
+> ```  
   
 **To activate dashboard features that are designed for use with the process template for CMMI**:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Portal>  
-    . . .   
-<activateFeatures>  
-          <!-- TfsDashboardCmmiMoss -->  
-          <feature featureId="3D0BA288-BF8E-47F0-9680-7556EDEF6318" />  
-          <!-- TfsDashboardCmmiProcessDocLibraries -->  
-          <feature featureId="8610B95B-063F-4FB5-837C-BCF2FE9423C6" />  
-        </activateFeatures>  
-    . . .   
-</Portal>  
-```  
+> ```XML
+> <Portal>  
+>     . . .   
+> <activateFeatures>  
+>           <!-- TfsDashboardCmmiMoss -->  
+>           <feature featureId="3D0BA288-BF8E-47F0-9680-7556EDEF6318" />  
+>           <!-- TfsDashboardCmmiProcessDocLibraries -->  
+>           <feature featureId="8610B95B-063F-4FB5-837C-BCF2FE9423C6" />  
+>         </activateFeatures>  
+>     . . .   
+> </Portal>  
+> ```  
   
 ## Related articles  
 - [Customize a process](customize-process.md)   

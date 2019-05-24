@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 <!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
 
-#Rate limits  
+# Rate limits  
 
 **Azure DevOps Services**
 
@@ -30,10 +30,10 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
-##Current rate limits
+## Current rate limits
 Azure DevOps Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
-###Global consumption limit
+### Global consumption limit
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
 
 - One of their shared resources is at risk of being overwhelmed, and 
@@ -86,7 +86,7 @@ To avoid hitting these limits, we recommend:
 As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.  
 --> 
 
-##User experience
+## User experience
 
 When an individual user's requests are delayed by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.  
 

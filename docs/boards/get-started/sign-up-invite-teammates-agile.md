@@ -33,7 +33,7 @@ You can sign up for free with either a Microsoft or GitHub account. If you don't
 [!INCLUDE [create-project](../../_shared/create-project.md)]
 
 <a id="invite-others" />
-[!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]
+<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]: Couldn&#39;t find file ../../_shared/invite-teammates.md. -->[!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]<!--END ERROR INCLUDE -->
 
 For more information on managing users and organization access, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 

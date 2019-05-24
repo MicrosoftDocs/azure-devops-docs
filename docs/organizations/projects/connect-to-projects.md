@@ -39,26 +39,26 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 
 ## Connect from the web portal
 
-1.  If you're not a member of a security group, ask your project administrator to add you.  
+1. If you're not a member of a security group, ask your project administrator to add you.  
 
-2.  Open a browser window and enter a URL that uses the following form:  
+2. Open a browser window and enter a URL that uses the following form:  
 
-	::: moniker range="azure-devops"
-	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
-	::: moniker-end
+   ::: moniker range="azure-devops"
+   <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
+   ::: moniker-end
 
-	::: moniker range=">= tfs-2013 <= azure-devops-2019" 
-	<pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
+   ::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+   <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
-    For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
 
-    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
-	::: moniker-end
+   The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
+   ::: moniker-end
 
-3.  When you access the server for the first time, a Windows Identity dialog box appears. Fill in your credentials and choose the **OK** button.
+3. When you access the server for the first time, a Windows Identity dialog box appears. Fill in your credentials and choose the **OK** button.
 
-    > [!TIP]
-    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
+   > [!TIP]
+   > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
 
 4. Choose your project, team, or page of interest.
 

@@ -55,11 +55,11 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ::: moniker range="azure-devops-2019"
 
--  You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
@@ -78,7 +78,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/edit-default-view-last-30-days.png)  
 
-0. Choose the **Verification** tab and then the **Verify view** button. 
+1. Choose the **Verification** tab and then the **Verify view** button. 
 
  	> [!div class="mx-imgBorder"]  
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/verify-view.png)  
@@ -88,7 +88,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
  	> [!div class="mx-imgBorder"]  
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/verified-view.png)  
 
-0. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
+2. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
 	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
@@ -98,16 +98,16 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Open Power BI Desktop.  
  
-0. Choose **Get Data**, **Online Services**, **Azure DevOps Server (Beta)**, and then choose **Connect**. 
+1. Choose **Get Data**, **Online Services**, **Azure DevOps Server (Beta)**, and then choose **Connect**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Connect to data](_img/data-connector/get-data-azure-devops-server.png)  
 
-0. Enter your collection URL and Team project for the data you want to report on.  
+2. Enter your collection URL and Team project for the data you want to report on.  
 
 	![Organization and project name](_img/onprem-cardentials.png) 
 
-0. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. All views listed, except those appended with "Today", will provide historical trend data. 
+3. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. All views listed, except those appended with "Today", will provide historical trend data. 
 
 	Here we choose **Stories - Last 30 days**. This view filters for product backlog items.
 
@@ -126,16 +126,16 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Open Power BI Desktop.  
  
-0. Choose **Get Data**, **Online Services**, **Azure DevOps (Beta)**, and then choose **Connect**. 
+1. Choose **Get Data**, **Online Services**, **Azure DevOps (Beta)**, and then choose **Connect**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Connect to data](_img/data-connector/get-data-azure-devops.png)   
 
-0. Enter your organization name and project name for the data you want to report on.  
+2. Enter your organization name and project name for the data you want to report on.  
 
 	![Organization and project name](_img/create-report/specify-account.png) 
 
-0. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. All views listed, except those appended with "Today", will provide historical trend data. 
+3. Expand the **Shared Views** folder, choose an Analytics view, and then choose **Load**. All views listed, except those appended with "Today", will provide historical trend data. 
 
 	Here we choose **Stories - Last 30 days**. This view filters for product backlog items.
 
@@ -162,7 +162,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 	> 
 	> ![Adjust chart size](_img/active-bugs-report/adjust-view-size.png)  
 	
-0. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
    > [!div class="mx-imgBorder"]
    > ![Select Date, and change date hierarchy to date](_img/create-report/select-date.png)
@@ -191,7 +191,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
-0. Select the card visual, add the **Work Item Id** field, and then drag the **State** and **Work Item Type** fields under Page level filters. Filter the State to show Active, and filter the Work Item Type for Bugs. 
+1. Select the card visual, add the **Work Item Id** field, and then drag the **State** and **Work Item Type** fields under Page level filters. Filter the State to show Active, and filter the Work Item Type for Bugs. 
 
 	The card now shows the number of active stories times the number of days each one was defined during the past 60 days. For this example, that number is 894. 
     
@@ -199,7 +199,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > ![create a distinct count card](_img/create-report/card-active-bugs.png)
     
 
-0. To get the latest active stories count, you filter the card to count only the latest revision of the filtered set of work items. Add **Is Current** as a filter and select `True` to filter only the data for the latest day. **Is Current** is a field added to the view automatically marking the rows that contain the latest revision of the work items. 
+2. To get the latest active stories count, you filter the card to count only the latest revision of the filtered set of work items. Add **Is Current** as a filter and select `True` to filter only the data for the latest day. **Is Current** is a field added to the view automatically marking the rows that contain the latest revision of the work items. 
 
 	Applying this filter brings the Active stories count to 39. 
 

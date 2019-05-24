@@ -131,7 +131,6 @@ You will also need to add a new section in your extension manifest to override p
         { "id": "my-hub", "behavior": " AlwaysInclude" }
       ]
     }
-
 ```
 
 If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 
@@ -459,7 +458,7 @@ Resolves to the following installation targets:
 ## Demands
 
 Demands let you specify capabilities and other features required by your extension. These demands can then be used to limit where your extension can be published or installed.
-   
+
 In the future, demands will be used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This will help customers understand whether your extension will work with their version of Team Foundation Server (for example).
 
 Demands are specified in the extension manifest. For example:
@@ -497,17 +496,17 @@ The `files` section is where you reference any files you wish to include in your
 
 ```json
 {
-	"files": [
-		{
-			"path": "hello-world.html", "addressable": true
-		},
-		{
-			"path": "scripts", "addressable": true
-		},
-		{
-			"path": "images/logo.png", "addressable": true, "packagePath": "/"
-		}
-	]
+    "files": [
+        {
+            "path": "hello-world.html", "addressable": true
+        },
+        {
+            "path": "scripts", "addressable": true
+        },
+        {
+            "path": "images/logo.png", "addressable": true, "packagePath": "/"
+        }
+    ]
 }
 ```
 

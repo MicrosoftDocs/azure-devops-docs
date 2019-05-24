@@ -53,10 +53,10 @@ To provide guidance, enter HTML syntax into a rich-text field's value.
 For example, here we add the following syntax into the <strong>Repos Steps</strong> field
 
 > [!div class="tabbedCodeSnippets"]
-```HTML
-<p><b>Steps to reproduce:</b><br>1.&nbsp; <br><br><b>Expected Behavior:</b><br>1. <br><br><b>Affected Branch:</b> <br> <b>Affected Build:</b><br></p>
-```
-
+> ```HTML
+> <p><b>Steps to reproduce:</b><br>1.&nbsp; <br><br><b>Expected Behavior:</b><br>1. <br><br><b>Affected Branch:</b> <br> <b>Affected Build:</b><br></p>
+> ```
+> 
 > [!div class="mx-imgBorder"]  
 > ![Capture template dialog](_img/template/repo-steps.png) 
 

@@ -85,7 +85,7 @@ Consider managing your bug bar and technical debt as part of your team's overall
 
 
 
-##Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)  
+## Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)  
 *by Gregg Boer, Principal Program Manager, Visual Studio Cloud Services at Microsoft*  
 ### Every Sprint, Address any Known Bug Debt 
 Every sprint, the team looks at any bugs remaining in the bug backlog and allocates capacity to get that known set of bugs down to zero, or near-zero. Whether this is one day, one week or the entire sprint, they fix the bugs first. Bugs found later, within the sprint, are not considered part of that initial commitment. Unless they're very high priority, they're put on the bug backlog for the next sprint.

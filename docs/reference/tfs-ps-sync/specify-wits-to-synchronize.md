@@ -58,26 +58,26 @@ ms.date: 01/12/2017
   
 #### To map types of work items for a project  
   
--   At the command prompt, type the following command, and then choose the **Enter** key.  
+- At the command prompt, type the following command, and then choose the **Enter** key.  
   
-    ```  
-    TfsAdmin ProjectServer /MapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
-    ```  
+  ```  
+  TfsAdmin ProjectServer /MapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
+  ```  
   
-     Replace *tpcUrl* with the URL of the project collection and *TeamProjectName* with the name of the project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
+   Replace *tpcUrl* with the URL of the project collection and *TeamProjectName* with the name of the project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
   
-     You can specify the optional `/skipUIChanges` flag to indicate that no modifications should be made to the **Project Server** tab for the work item forms of the types that you specify.  
+   You can specify the optional `/skipUIChanges` flag to indicate that no modifications should be made to the **Project Server** tab for the work item forms of the types that you specify.  
   
-    > [!IMPORTANT]
-    >  You should include the `/skipUIChanges` flag only if a message indicates an error occurred when the system tried to add a **Project Server** tab. If this message appears, you will need to add the **Project Server** tab to the work item type definition manually. For more information, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
+  > [!IMPORTANT]
+  >  You should include the `/skipUIChanges` flag only if a message indicates an error occurred when the system tried to add a **Project Server** tab. If this message appears, you will need to add the **Project Server** tab to the work item type definition manually. For more information, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-     The following messages appear:  
+   The following messages appear:  
   
-     **Configuring synchronization for the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
+   **Configuring synchronization for the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
   
-     **You have successfully configured the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
+   **You have successfully configured the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
   
- If you have added a type and did not specify the `/skipUIChanges` flag, you can verify that the type has been modified by refreshing the project in Team Explorer and then opening a work item of the type that you added. The **Project Server** tab should appear in the work item form.  
+  If you have added a type and did not specify the `/skipUIChanges` flag, you can verify that the type has been modified by refreshing the project in Team Explorer and then opening a work item of the type that you added. The **Project Server** tab should appear in the work item form.  
   
 ##  <a name="UnmapTypes"></a> Remove a work item type from participating in data synchronization  
  Before you can remove a type of work item from participating in data synchronization, you should remove the links that bind the work items of that type to tasks that are defined in an enterprise project plan. As an alternative, you can use the `/force` flag to force the removal of these links and then remove the type.  

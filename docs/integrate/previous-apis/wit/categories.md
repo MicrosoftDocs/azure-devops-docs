@@ -25,15 +25,14 @@ For example, work item types in the "requirements" category show up in your back
 
 ## Get a list of work item type categories
 <a name="getalistofworkitemtypecategories" />
-```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypeCategories?api-version={version}
-```
+<code>no-highlight
+GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypeCategories?api-version={version}</code>
 
-| Property  	| Type 		| Description 
+| Property      | Type      | Description 
 |:--------------|:----------|:-----------------
 | URL
 | instance      | string    | TFS server name ({server:port}).
-| project 		| string 	| Name or ID of a project that contains the categories
+| project       | string    | Name or ID of a project that contains the categories
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -303,11 +302,11 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypeCategories/{name}?api-version={version}
 ```
 
-| Property  | Type 		| Description |
+| Property  | Type      | Description |
 |:--------------|:----------|:-----------------
 | instance  | string    | TFS server name ({server:port}).
-| project 	| string 	| Name or ID of a project that contains the categories
-| name 		| string 	| Name of the category
+| project   | string    | Name or ID of a project that contains the categories
+| name      | string    | Name of the category
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

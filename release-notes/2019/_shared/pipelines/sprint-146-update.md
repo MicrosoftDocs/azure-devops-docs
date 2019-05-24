@@ -7,12 +7,12 @@ ms.topic: include
 Previously, you could use the [visual designer](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-designer?view=azure-devops&tabs=new-nav) to create pipelines for GitHub Enterprise repositories. Now, you can also use the **New build pipeline** wizard to create your pipelines.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_08.png)
+> ![Badge](../../_img/146_08.png)
 
 The wizard analyzes your GitHub Enterprise repository to suggest a YAML template which matches your project language. You can then edit and save the YAML as a direct commit to your default branch or as a pull request.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_10.png)
+> ![Badge](../../_img/146_10.png)
 
 For more details, see the documentation on creating your first pipeline [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-yaml?view=azure-devops).
 
@@ -30,7 +30,7 @@ If you wish to manually choose a connection other than the one that is automatic
 Previously, a single build status was posted to GitHub Checks for your pipeline even if it included jobs for multiple platforms (e.g., Linux, macOS, and Windows). Now, status is posted to GitHub Checks for each job in the pipeline. Additionally, you can re-run the entire build or only individual failed jobs from GitHub Checks. To use this functionality, your pipeline must be configured to use the [Azure Pipelines GitHub App](https://github.com/apps/azure-pipelines). For additional details, see [Integrate using the GitHub App](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops#integrate-using-the-github-app). To set up a pipeline with jobs for multiple platforms, see [Create a multi-platform pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-multiplatform?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_09.png)
+> ![Badge](../../_img/146_09.png)
 
 ### Default authorization for YAML resources in GitHub
 
@@ -39,7 +39,7 @@ If you manage your source code in GitHub and use YAML to define your pipeline, y
 To avoid the resource authorization build failure, we changed the default behavior of all new service connections, agent pools, and variable groups to be authorized for use in all pipelines. If you want tighter controls on your resources, you can disable the default authorization model (see figure below). When you do so, someone with permissions to use the resource must save the pipeline in the web editor after a resource reference is added to the YAML file.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_21.png)
+> ![Badge](../../_img/146_21.png)
 
 ### Service containers for YAML pipelines
 
@@ -61,35 +61,35 @@ We also support a new utility task for file transformation and variable substitu
 The Azure SQL task has been enhanced to support connecting to a database using Azure AD (Integrated & Password) and a connection string in addition to the existing support for SQL server authentication.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_16.png)
+> ![Badge](../../_img/146_16.png)
 
 ### Grafana annotations service hook
 
 We now support a new service hook that lets you add Grafana annotations for **Deployment Completed** events to a Grafana dashboard. This allows you to correlate deployments with the changes in application or infrastructure metrics that are being visualized in a Grafana dashboard.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_12.png)
+> ![Badge](../../_img/146_12.png)
 
 ### Query Azure Monitor alerts tasks
 
 The previous version of the **Query Azure Monitors task** supported querying alerts only on the classic monitoring experience. With this new version of the task, you can query alerts on the unified monitoring experience recently introduced by Azure Monitor.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_13.png)
+> ![Badge](../../_img/146_13.png)
 
 ### Inline input of spec file in Deploy to Kubernetes task
 
 Previously, the Kubernetes deployment task required you to provide a file path for the configuration. Now you can add the configuration inline as well.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_14.png)
+> ![Badge](../../_img/146_14.png)
 
 ### Docker CLI Installer task
 
 This task allows installation of any version of Docker CLI on the agents as specified by the user.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_15.png)
+> ![Badge](../../_img/146_15.png)
 
 ### Java long-term support (LTS) on Microsoft hosted agents
 
@@ -140,7 +140,7 @@ Below is an example of the YAML that you can use to archive build outputs in a t
 We have now added an option in the task to fail the build if there are any failed tests.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_11.png)
+> ![Badge](../../_img/146_11.png)
 
 ### Updates to the Azure Portal for creating an Azure DevOps project
 
@@ -151,25 +151,25 @@ The Azure Portal now includes additional functionality to support more framework
 Azure IoT is a fully managed service that delivers cloud intelligence locally on cross-platform IoT devices. Now, you can create an Azure DevOps project from the Azure Portal and use the **Simple IoT** as the application framework.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_19.png)
+> ![Badge](../../_img/146_19.png)
 
 **Service**
 
 Previously, the Create Azure DevOps Project workflow in the Azure Portal only supported **Create New** as an option for Kubernetes Service. A new option has been added to allow you to choose an existing cluster as the deployment target for the pipeline setup.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_18.png)
+> ![Badge](../../_img/146_18.png)
 
 ### Use the Azure Portal to setup and deploy to a CosmosDB database
 
 Currently, you can use the Azure DevOps Project workflow in the Azure Portal to setup build and release pipelines for a Git repository. Now, you can deploy to Azure Web App for Containers (Linux) or Azure Kubernetes Service with a CosmosDB provisioned as a database backing the apps on these targets. This is currently available for all Node.js templates and we expect to add support for other templates in the future.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_22.png)
+> ![Badge](../../_img/146_22.png)
 
 ### Setup builds and release pipelines for Functions in Azure Portal
 
 You can now use the Azure DevOps Project workflow in the Azure Portal to setup build and release pipelines for Git repository that deploy Azure Functions 2.0 (Windows). This is functionality is available for Node.js and .NET Core.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/146_23.png)
+> ![Badge](../../_img/146_23.png)

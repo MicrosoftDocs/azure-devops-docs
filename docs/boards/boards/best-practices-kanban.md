@@ -32,13 +32,13 @@ Over time, Kanban can provide your team insight as to how well their current pro
 
 <a id="practices" />
 
-##WIP limits, challenges, and solutions
+## WIP limits, challenges, and solutions
 
 Teams occasionally exceed WIP limits by 1 or 2 items. However, if your team frequently exceeds the limits, and exceeds them by 3 or more items, they should review processes or adjust the limits.
 
 After a team has worked with WIP limits for several weeks, discuss the challenges team members have, solutions they'd like to try, and adjust the limits as needed. The following list, although not exhaustive, indicates some of the common challenges encountered and proven solutions used by teams who've implemented Kanban successfully. 
 
-###Challenges
+### Challenges
 * **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel, others don't see that the rule applies to them, or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement. 
 
 * **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs&mdash; can negatively impact the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
@@ -47,7 +47,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 * **Culture change.** Adopting WIP limits introduces changes to the system, culture, and team. 
 
-###Solutions
+### Solutions
 * **Build a culture of team productivity.** Address the natural tension that exists between individual productivity versus team productivity. Identify ways in which team members can enhance the overall productivity of the team and workflow process. 
 
 * **Size work to minimize variability.** Before work starts on any item, the team should discuss the overall size of work required and determine if it can be broken down into smaller tasks. 

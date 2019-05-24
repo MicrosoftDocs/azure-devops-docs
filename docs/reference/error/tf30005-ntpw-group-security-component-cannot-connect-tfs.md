@@ -18,13 +18,13 @@ ms.date: 02/22/2017
 
 This error occurs when the New Team Project Wizard is unable to connect to the application-tier server {*name*} while creating a project. An active connection cannot be made due to one of the following conditions:  
   
--   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
+- A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
--   The server {name} that hosts SharePoint Products is offline.  
+- The server {name} that hosts SharePoint Products is offline.  
   
--   A critical file from the server {name} is missing.  
+- A critical file from the server {name} is missing.  
   
- Because the connection to Team Foundation Server failed, the wizard could not create security groups and assign permissions on the server.  
+  Because the connection to Team Foundation Server failed, the wizard could not create security groups and assign permissions on the server.  
   
 ### To correct this error  
   

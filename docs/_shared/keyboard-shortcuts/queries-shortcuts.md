@@ -16,9 +16,9 @@ You can use the following keyboard shortcuts when [working with queries](/azure/
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Queries keyboard shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/queries-new-shortcut.png)</td>
+<td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/queries-new-shortcut.png" alt="Queries keyboard shortcuts"/></td>
 <td>
-**Queries**<br/><br/>
+<strong>Queries</strong><br/><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c q**&nbsp;&nbsp;&nbsp;&nbsp;Add new query<br/>
 <br/>

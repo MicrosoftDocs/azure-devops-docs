@@ -62,178 +62,178 @@ Values in parenthesis indicate the following:
 <tr>
 <td width="33%"><h3>A</h3>
 <ul>
-<li>[Acceptance Criteria](../../queries/titles-ids-descriptions.md) (Scrum)</li>
-<li>[Accepted By](guidance-code-review-feedback-field-reference.md) </li>
-<li>[Accepted Date](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Activated By](../../queries/query-by-workflow-changes.md)</li>
-<li>[Activated Date](../../queries/query-by-workflow-changes.md)</li>
-<li>[Activity](../../queries/query-numeric.md)</li>
-<li>[Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Application Launch Instructions](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Application Start Information](guidance-code-review-feedback-field-reference.md) </li>
-<li>[Application Type](guidance-code-review-feedback-field-reference.md) </li>
-<li>[Area ID](../../queries/query-by-area-iteration-path.md) (System)</li>
-<li>[Area Path](../../queries/query-by-area-iteration-path.md) (System)</li>
-<li>[Assigned To](../../queries/query-by-workflow-changes.md)</li>
-<li>[Associated Context](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Associated Context Code](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Associated Context Owner](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Associated Context Type](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Attached File Count](../../queries/linking-attachments.md)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> (Scrum)</li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Accepted By](guidance-code-review-feedback-field-reference.md)">Accepted By</a> </li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Accepted Date](guidance-code-review-feedback-field-reference.md)">Accepted Date</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Activated By](../../queries/query-by-workflow-changes.md)">Activated By</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Activated Date](../../queries/query-by-workflow-changes.md)">Activated Date</a></li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a></li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Actual Attendee 1-8</a> (CMMI)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Analysis</a> (CMMI)</li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Application Launch Instructions](guidance-code-review-feedback-field-reference.md)">Application Launch Instructions</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Application Start Information](guidance-code-review-feedback-field-reference.md)">Application Start Information</a> </li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Application Type](guidance-code-review-feedback-field-reference.md)">Application Type</a> </li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Area ID](../../queries/query-by-area-iteration-path.md)">Area ID</a> (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Area Path](../../queries/query-by-area-iteration-path.md)">Area Path</a> (System)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Assigned To](../../queries/query-by-workflow-changes.md)">Assigned To</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Associated Context](guidance-code-review-feedback-field-reference.md)">Associated Context</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Associated Context Code](guidance-code-review-feedback-field-reference.md)">Associated Context Code</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Associated Context Owner](guidance-code-review-feedback-field-reference.md)">Associated Context Owner</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Associated Context Type](guidance-code-review-feedback-field-reference.md)">Associated Context Type</a></li>
+<li><a href="../../queries/linking-attachments.md" data-raw-source="[Attached File Count](../../queries/linking-attachments.md)">Attached File Count</a></li>
 <li>Authorized As (Not used)</li>
-<li>[Automated Test Id](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Automated Test Name](../../queries/build-test-integration.md) (TCM) </li>
-<li>[Automated Test Storage](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Automated Test Type](../../queries/build-test-integration.md) (TCM) </li>
-<li>[AutomatedTestId](../../queries/build-test-integration.md) (TCM) </li>
-<li>[AutomatedTestName](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Automation Status](../../queries/build-test-integration.md) (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Automated Test Id](../../queries/build-test-integration.md)">Automated Test Id</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Automated Test Name](../../queries/build-test-integration.md)">Automated Test Name</a> (TCM) </li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Automated Test Storage](../../queries/build-test-integration.md)">Automated Test Storage</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Automated Test Type](../../queries/build-test-integration.md)">Automated Test Type</a> (TCM) </li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[AutomatedTestId](../../queries/build-test-integration.md)">AutomatedTestId</a> (TCM) </li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[AutomatedTestName](../../queries/build-test-integration.md)">AutomatedTestName</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Automation Status](../../queries/build-test-integration.md)">Automation Status</a> (TCM)</li>
 </ul>
 <h3>B</h3>
-<ul><li>[Backlog Priority](../../queries/planning-ranking-priorities.md) (Scrum)</li>
-<li>[Blocked](../../queries/planning-ranking-priorities.md)</li>
-<li>[Board Column](../../queries/query-by-workflow-changes.md)</li>
-<li>[Board Column Done](../../queries/query-by-workflow-changes.md)</li>
-<li>[Board Lane](../../queries/query-by-workflow-changes.md)</li>
-<li>[Business Value](../../queries/query-numeric.md)</li>
+<ul><li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Backlog Priority](../../queries/planning-ranking-priorities.md)">Backlog Priority</a> (Scrum)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Blocked](../../queries/planning-ranking-priorities.md)">Blocked</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Column](../../queries/query-by-workflow-changes.md)">Board Column</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Column Done](../../queries/query-by-workflow-changes.md)">Board Column Done</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Lane](../../queries/query-by-workflow-changes.md)">Board Lane</a></li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Business Value](../../queries/query-numeric.md)">Business Value</a></li>
 </ul>
 <h3>C</h3>
-<ul><li>[Called By](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Called Date](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Changed By](../../queries/history-and-auditing.md) (System)</li>
-<li>[Changed Date](../../queries/history-and-auditing.md) (System)</li>
-<li>[Closed By](../../queries/query-by-workflow-changes.md) (System)</li>
-<li>[Closed Date](../../queries/query-by-workflow-changes.md) (System)</li>
-<li>[Closed Status](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Closed Status Code](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Closing Comment](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Comment Count](../../queries/linking-attachments.md)</li>
-<li>[Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Committed](../../queries/planning-ranking-priorities.md) (CMMI)</li>
-<li>[Completed Work](../../queries/query-numeric.md)</li>
-<li>[Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Corrective Action Actual Resolution](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Corrective Action Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Created By](../../queries/query-by-workflow-changes.md) (System)</li>
-<li>[Created Date](../../queries/query-by-workflow-changes.md) (System)</li>
+<ul><li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Called By](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Called By</a> (CMMI)</li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Called Date](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Called Date</a> (CMMI)</li>
+<li><a href="../../queries/history-and-auditing.md" data-raw-source="[Changed By](../../queries/history-and-auditing.md)">Changed By</a> (System)</li>
+<li><a href="../../queries/history-and-auditing.md" data-raw-source="[Changed Date](../../queries/history-and-auditing.md)">Changed Date</a> (System)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Closed By](../../queries/query-by-workflow-changes.md)">Closed By</a> (System)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Closed Date](../../queries/query-by-workflow-changes.md)">Closed Date</a> (System)</li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closed Status](guidance-code-review-feedback-field-reference.md)">Closed Status</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closed Status Code](guidance-code-review-feedback-field-reference.md)">Closed Status Code</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closing Comment](guidance-code-review-feedback-field-reference.md)">Closing Comment</a></li>
+<li><a href="../../queries/linking-attachments.md" data-raw-source="[Comment Count](../../queries/linking-attachments.md)">Comment Count</a></li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Comments</a> (CMMI)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Committed](../../queries/planning-ranking-priorities.md)">Committed</a> (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a></li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Contingency Plan</a> (CMMI)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Corrective Action Actual Resolution](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Corrective Action Actual Resolution</a> (CMMI)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Corrective Action Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Corrective Action Plan</a> (CMMI)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Created By](../../queries/query-by-workflow-changes.md)">Created By</a> (System)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Created Date](../../queries/query-by-workflow-changes.md)">Created Date</a> (System)</li>
 </ul>
 </td>
 <td width="33%">
 <h3>D-E-F</h3>
 <ul>
-<li>[Discipline](../../queries/query-numeric.md) (CMMI)</li>
-<li>[Description](../../queries/titles-ids-descriptions.md) (System)</li>
-<li>[Due Date](../../queries/query-by-date-or-current-iteration.md)</li>
-<li>[Effort](../../queries/query-numeric.md) </li>
-<li>[Escalate](../../queries/planning-ranking-priorities.md) (CMMI)</li>
-<li>[External Link Count](../../queries/linking-attachments.md#external-link-count) </li>
-<li>[Finish Date](../../queries/query-by-date-or-current-iteration.md)</li>
-<li>[Found In Build](../../queries/build-test-integration.md)  (TCM)</li>
-<li>[Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Discipline](../../queries/query-numeric.md)">Discipline</a> (CMMI)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a> (System)</li>
+<li><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Due Date](../../queries/query-by-date-or-current-iteration.md)">Due Date</a></li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Effort](../../queries/query-numeric.md)">Effort</a> </li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Escalate](../../queries/planning-ranking-priorities.md)">Escalate</a> (CMMI)</li>
+<li><a href="../../queries/linking-attachments.md#external-link-count" data-raw-source="[External Link Count](../../queries/linking-attachments.md#external-link-count)">External Link Count</a> </li>
+<li><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Finish Date](../../queries/query-by-date-or-current-iteration.md)">Finish Date</a></li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Found In Build](../../queries/build-test-integration.md)">Found In Build</a>  (TCM)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Found In Environment</a> (CMMI)</li>
 </ul>
 <h3>H</h3>
 <ul>
-<li>[History](../../queries/history-and-auditing.md) (System)</li>
-<li>[How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)</li>
+<li><a href="../../queries/history-and-auditing.md" data-raw-source="[History](../../queries/history-and-auditing.md)">History</a> (System)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">How Found</a> (CMMI)</li>
+<li><a href="../../queries/linking-attachments.md#hyper-link-count" data-raw-source="[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)">Hyperlink Count</a></li>
 </ul>
 <h3>I</h3>
 <ul>
-<li>[ID](../../queries/titles-ids-descriptions.md) (System)</li>
-<li>[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
-<li>[Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Integrated in Build](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Issue](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Iteration Id](../../queries/query-by-area-iteration-path.md)  (System)</li>
-<li>[Iteration Path](../../queries/query-by-area-iteration-path.md) (System)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[ID](../../queries/titles-ids-descriptions.md)">ID</a> (System)</li>
+<li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md)">Impact Assessment</a> (CMMI)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on Architecture</a> (CMMI)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on Development</a> (CMMI)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on Technical Publications</a> (CMMI)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on Test</a> (CMMI)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on User Experience</a> (CMMI)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Issue](../../queries/build-test-integration.md)">Issue</a> (TCM)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration Id</a>  (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Path](../../queries/query-by-area-iteration-path.md)">Iteration Path</a> (System)</li>
 </ul>
 <h3>J-L-M-N</h3>
 <ul>
-<li>[Justification](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-<li>[Link Comment](../../queries/linking-attachments.md) (System)</li>
-<li>[Link Description](../../queries/linking-attachments.md) (System)</li>
-<li>[Local Data Source](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Meeting Type](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Minutes](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI) </li>
-<li>[Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) </li>
-<li>[Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Node Name](../../queries/query-by-area-iteration-path.md) (System)</li>
+<li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Justification](cmmi/guidance-change-request-field-reference-cmmi.md)">Justification</a> (CMMI)</li>
+<li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Comment](../../queries/linking-attachments.md)">Link Comment</a> (System)</li>
+<li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Description](../../queries/linking-attachments.md)">Link Description</a> (System)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Local Data Source](../../queries/build-test-integration.md)">Local Data Source</a> (TCM)</li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Meeting Type](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Meeting Type</a> (CMMI)</li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Minutes](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Minutes</a> (CMMI) </li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Mitigation Plan</a> (CMMI) </li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Mitigation Triggers</a> (CMMI)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Node Name](../../queries/query-by-area-iteration-path.md)">Node Name</a> (System)</li>
 </ul>
 <h3>O-P-Q</h3>
 <ul>
-<li>[Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Original Estimate](../../queries/query-numeric.md)</li>
-<li>[Parameters](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Priority](../../queries/planning-ranking-priorities.md) </li>
-<li>[Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) </li>
-<li>[Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Query Text](../../queries/build-test-integration.md) (TCM)</li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Optional Attendee 1-8</a> (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a></li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Parameters](../../queries/build-test-integration.md)">Parameters</a> (TCM)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> </li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Probability</a> (CMMI)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Proposed Fix</a> (CMMI) </li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Purpose</a> (CMMI)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Query Text](../../queries/build-test-integration.md)">Query Text</a> (TCM)</li>
 </ul>
 </td>
 <td width="33%"><h3>R</h3>
 <ul>
-<li>[Rating](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Reason](../../queries/query-by-workflow-changes.md) (System)</li>
-<li>[Related Link Count](../../queries/linking-attachments.md) (System)</li>
-<li>[Remaining Work](../../queries/query-numeric.md) </li>
-<li>[Remote Link Count](../../queries/linking-attachments.md#remote-link-count) (System)</li>
-<li>[Repro Steps](../../queries/titles-ids-descriptions.md)</li>
-<li>[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
-<li>[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
-<li>[Requires Review](../../queries/query-numeric.md) (CMMI)</li>
-<li>[Requires Test](../../queries/query-numeric.md) (CMMI)</li>
-<li>[Resolution]](../../queries/titles-ids-descriptions.md) (Scrum)</li>
-<li>[Resolved By](../../queries/query-by-workflow-changes.md)</li>
-<li>[Resolved Date](../../queries/query-by-workflow-changes.md)</li>
-<li>[Resolved Reason](../../queries/query-by-workflow-changes.md)</li>
-<li>[Reviewed By](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Reviewed Date](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Rev](../../queries/history-and-auditing.md) (System)</li>
-<li>[Risk](../../queries/planning-ranking-priorities.md) (Agile)</li>
-<li>[Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Rating](guidance-code-review-feedback-field-reference.md)">Rating</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Reason](../../queries/query-by-workflow-changes.md)">Reason</a> (System)</li>
+<li><a href="../../queries/linking-attachments.md" data-raw-source="[Related Link Count](../../queries/linking-attachments.md)">Related Link Count</a> (System)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </li>
+<li><a href="../../queries/linking-attachments.md#remote-link-count" data-raw-source="[Remote Link Count](../../queries/linking-attachments.md#remote-link-count)">Remote Link Count</a> (System)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Repro Steps](../../queries/titles-ids-descriptions.md)">Repro Steps</a></li>
+<li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Required Attendee 1-8</a> (CMMI)</li>
+<li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Review](../../queries/query-numeric.md)">Requires Review</a> (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Test](../../queries/query-numeric.md)">Requires Test</a> (CMMI)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution]](../../queries/titles-ids-descriptions.md)">Resolution]</a> (Scrum)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved By](../../queries/query-by-workflow-changes.md)">Resolved By</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Date](../../queries/query-by-workflow-changes.md)">Resolved Date</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Reason](../../queries/query-by-workflow-changes.md)">Resolved Reason</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Reviewed By](guidance-code-review-feedback-field-reference.md)">Reviewed By</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Reviewed Date](guidance-code-review-feedback-field-reference.md)">Reviewed Date</a></li>
+<li><a href="../../queries/history-and-auditing.md" data-raw-source="[Rev](../../queries/history-and-auditing.md)">Rev</a> (System)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Risk](../../queries/planning-ranking-priorities.md)">Risk</a> (Agile)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Root Cause</a> (CMMI)</li>
 </ul>
 <h3>S</h3>
 <ul>
-<li>[Severity](../../queries/planning-ranking-priorities.md)</li>
-<li>[Size](../../queries/query-numeric.md) (CMMI)</li>
-<li>[Stack Rank](../../queries/planning-ranking-priorities.md)</li>
-<li>[Start Date](../../queries/query-by-date-or-current-iteration.md)</li>
-<li>[State](../../queries/query-by-workflow-changes.md) (System)</li>
-<li>[State Change Date](../../queries/query-by-workflow-changes.md)</li>
-<li>[State Code](guidance-code-review-feedback-field-reference.md)</li>
-<li>[Steps](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Steps to Reproduce](../../queries/titles-ids-descriptions.md) (TCM)</li>
-<li>[Story Points](../../queries/query-numeric.md) (Agile)</li>
-<li>[Subject Matter Expert](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
-<li>[Symptom](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[System Info](../../queries/titles-ids-descriptions.md) (TCM) </li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Severity](../../queries/planning-ranking-priorities.md)">Severity</a></li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> (CMMI)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Stack Rank](../../queries/planning-ranking-priorities.md)">Stack Rank</a></li>
+<li><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date](../../queries/query-by-date-or-current-iteration.md)">Start Date</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[State](../../queries/query-by-workflow-changes.md)">State</a> (System)</li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[State Change Date](../../queries/query-by-workflow-changes.md)">State Change Date</a></li>
+<li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[State Code](guidance-code-review-feedback-field-reference.md)">State Code</a></li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Steps](../../queries/build-test-integration.md)">Steps</a> (TCM)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Steps to Reproduce](../../queries/titles-ids-descriptions.md)">Steps to Reproduce</a> (TCM)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Story Points](../../queries/query-numeric.md)">Story Points</a> (Agile)</li>
+<li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Subject Matter Expert](cmmi/guidance-requirements-field-reference-cmmi.md)">Subject Matter Expert</a> (CMMI)</li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Symptom](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Symptom</a> (CMMI)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[System Info](../../queries/titles-ids-descriptions.md)">System Info</a> (TCM) </li>
 </ul>
 <h3>T</h3>
 <ul>
-<li>[Tags](../../queries/add-tags-to-work-items.md)</li>
-<li>[Target Date](../../queries/query-by-date-or-current-iteration.md)</li>
-<li>[Target Resolve Date](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Task Type](../../queries/query-numeric.md) (CMMI)</li>
-<li>[Team Project](../../queries/titles-ids-descriptions.md) (System) </li>
-<li>[Test Suite Audit](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Test Suite Type](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Test Suite Type ID](../../queries/build-test-integration.md) (TCM)</li>
-<li>[Time Criticality](../../queries/planning-ranking-priorities.md)</li>
-<li>[Title](../../queries/titles-ids-descriptions.md) (System)</li>
-<li>[Triage](../../queries/planning-ranking-priorities.md) (CMMI)</li>
+<li><a href="../../queries/add-tags-to-work-items.md" data-raw-source="[Tags](../../queries/add-tags-to-work-items.md)">Tags</a></li>
+<li><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Target Date](../../queries/query-by-date-or-current-iteration.md)">Target Date</a></li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Target Resolve Date](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Target Resolve Date</a> (CMMI)</li>
+<li><a href="../../queries/query-numeric.md" data-raw-source="[Task Type](../../queries/query-numeric.md)">Task Type</a> (CMMI)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Team Project](../../queries/titles-ids-descriptions.md)">Team Project</a> (System) </li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Test Suite Audit](../../queries/build-test-integration.md)">Test Suite Audit</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Test Suite Type](../../queries/build-test-integration.md)">Test Suite Type</a> (TCM)</li>
+<li><a href="../../queries/build-test-integration.md" data-raw-source="[Test Suite Type ID](../../queries/build-test-integration.md)">Test Suite Type ID</a> (TCM)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../../queries/planning-ranking-priorities.md)">Time Criticality</a></li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Title](../../queries/titles-ids-descriptions.md)">Title</a> (System)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Triage](../../queries/planning-ranking-priorities.md)">Triage</a> (CMMI)</li>
 </ul>
 <h3>U-V-W</h3>
 <ul>
-<li>[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
-<li>[Value Area](../../queries/planning-ranking-priorities.md)</li>
-<li>[Watermark](../../queries/history-and-auditing.md) (System)</li>
-<li>[Work Item Type](../../queries/titles-ids-descriptions.md) (System) </li> 
+<li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md)">User Acceptance Test</a> (CMMI)</li>
+<li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../../queries/planning-ranking-priorities.md)">Value Area</a></li>
+<li><a href="../../queries/history-and-auditing.md" data-raw-source="[Watermark](../../queries/history-and-auditing.md)">Watermark</a> (System)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Work Item Type](../../queries/titles-ids-descriptions.md)">Work Item Type</a> (System) </li> 
 
 </ul>
 </td>

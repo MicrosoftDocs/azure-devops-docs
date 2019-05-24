@@ -18,11 +18,11 @@ ms.date: 01/20/2017
 
 This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a project](../../organizations/projects/create-project.md). Two conditions can cause this error:  
   
--   The name of the plug-in is missing or misspelled in the XML process template file.  
+- The name of the plug-in is missing or misspelled in the XML process template file.  
   
--   The plug-in is not installed on the local computer.  
+- The plug-in is not installed on the local computer.  
   
- The following procedures will help you correct the error.  
+  The following procedures will help you correct the error.  
   
 ### To correct this error if it is caused by an incorrect reference in the process template file  
   

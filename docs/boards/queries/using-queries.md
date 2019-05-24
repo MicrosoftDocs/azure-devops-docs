@@ -49,48 +49,48 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker range=">= azure-devops-2019"  
 
-0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+0. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
-	> [!div class="mx-imgBorder"]  
-	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
 
-	> [!TIP]  
-	> If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
-0.	Edit the query to find closed bugs and then run the query. 
-	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
 
-	> [!div class="mx-imgBorder"]
-	> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
+   > [!div class="mx-imgBorder"]
+   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 
-0.	Save the query to your **My Queries** folder.  
+2. Save the query to your **My Queries** folder.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 
-	To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 
-0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+0. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
-	![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
+   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
 
-	> [!TIP]  
-	> If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
-0.	Edit the query to find closed bugs and then run the query. 
-	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
 	
-	![Web portal, Queries page, Editor view of a Flat List Query](_img/query-active-bugs-editor-vso.png)  
+   ![Web portal, Queries page, Editor view of a Flat List Query](_img/query-active-bugs-editor-vso.png)  
 
-0.	Save the query to your **My Queries** folder.  
+2. Save the query to your **My Queries** folder.  
 	
-	![Save Query As](_img/6.png)  
+   ![Save Query As](_img/6.png)  
 
-	To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
 
 ::: moniker-end  
 
@@ -122,7 +122,7 @@ You create a query by defining one or more clauses. Each clause defines a filter
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](_img/using-queries/define-clause.png)  
 
-For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the **@Me** macro which represents your user identity.
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
 
 ### Sample query clause 
 
@@ -335,13 +335,13 @@ The *Team Project* field becomes available only after you check  **Query across 
 
 ::: moniker range="tfs-2013"   
 
-To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
+To find all features created in all projects within the last 30 days, remove the <strong>Team Project=@Project</strong> clause from the query.  
 
 <img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
 
-Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
+Use <strong>Team Project=@Project</strong> to scope the query to find only those work items defined for the current project. 
 
 ::: moniker-end  
 

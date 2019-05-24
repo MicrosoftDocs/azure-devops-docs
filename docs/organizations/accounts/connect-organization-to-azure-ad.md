@@ -47,25 +47,25 @@ Note that a user who isn't in your Azure AD is a "historic" user and can't sign 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
   
-  ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
   
-  ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+   ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 
 4. Compare your Azure DevOps email list with your Azure Active Directory email list.
 
    * If any users exist on the **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
 
-    ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
+     ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
 
-    These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
+     These guests can be external to your organization (<em>User@othercompany.com</em>) or existing MSA users (<em>user@outlook.com</em> or <em>user@gmail.com</em>).
 
    * If you don't have permissions to invite users, in **User Settings**, select **Yes**.
 
-    ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
+     ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
 
-    If you have recently modified settings or assigned the *guest inviter* role to a user, it might take 15-60 minutes for the changes to take effect.
+     If you have recently modified settings or assigned the *guest inviter* role to a user, it might take 15-60 minutes for the changes to take effect.
 
    * If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
 

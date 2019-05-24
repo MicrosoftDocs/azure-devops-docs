@@ -36,7 +36,7 @@ Updating your code to use REST is vital to ensure your tools will work as we rel
 
 Any references to the latest versions of WIT Client OM will result in an obsolete warning. This includes the dlls that come with Visual Studio 2019 and Azure DevOps 2019. Here is an example warning you may receive...
 
-**CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at https://aka.ms/witclientom'**
+**CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at <https://aka.ms/witclientom>'**
 
 ![warning message in Visual Studio](_img/wit-client-om-deprecation-vs.png)
 

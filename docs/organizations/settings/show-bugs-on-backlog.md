@@ -20,8 +20,8 @@ As your team identifies code defects or bugs, they can add them to the backlog a
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-You can define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
+> [!NOTE]
+> You can define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
 
 ::: moniker-end
 
@@ -64,21 +64,21 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+0. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
 
-0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+2. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
 
-0. When done with your changes, choose **Save**.  
+3. When done with your changes, choose **Save**.  
 
-0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+4. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
 ::: moniker-end
 
@@ -88,15 +88,15 @@ Requires TFS 2013.4 or later version.
 
 0. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
 
-0. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
+1. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 
 	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
-0. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
+2. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
 
-0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
 ::: moniker-end
 

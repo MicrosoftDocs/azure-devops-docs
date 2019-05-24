@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 9
+# Team Foundation Service updates - Jan 9
 
-##Account rename
+## Account rename
 
 One of the most requested features to date has been the ability to rename your account. We are happy to report that starting today, you can rename your account directly through the admin UI. We don’t often release new features outside our normal 3 week cadence, but this feature has been in such high demand that we decided to get it out the door the moment it was ready.
 

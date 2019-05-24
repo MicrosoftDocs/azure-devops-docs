@@ -23,13 +23,13 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). 
 
   
-##Required permissions 
+## Required permissions 
   
--   To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  
+- To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  
   
--   To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
+- To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
   
- For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+  For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!NOTE]  
 >  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
@@ -41,13 +41,13 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 ###  <a name="process_template"></a> Resolve errors by modifying a process template  
  You modify a process template by performing these steps:  
   
-1.  Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
+1. Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-2.  Modify a definition file for a work item type (WIT), categories, or process configuration. See [Customize your work tracking experience](../customize-work.md).  
+2. Modify a definition file for a work item type (WIT), categories, or process configuration. See [Customize your work tracking experience](../customize-work.md).  
   
-3.  Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
+3. Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
- See also [Update a customized process template to access new features](../update-customized-process-template.md).  
+   See also [Update a customized process template to access new features](../update-customized-process-template.md).  
   
 ###  <a name="team_project"></a> Resolve errors by modifying your project or project collection  
  To resolve an error or warning, you may choose to modify the project or project collection using the **witadmin** command. See [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
@@ -106,54 +106,54 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-0.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+0. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
-    ```  
-    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
+   ```  
+   witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
   
-    Where:  
-          CollectionURL specifies the URL of the project collection  
-          ProjectName specifies the name of your project defined within the collection  
-          TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
+   Where:  
+         CollectionURL specifies the URL of the project collection  
+         ProjectName specifies the name of your project defined within the collection  
+         TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
   
-    Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
-    For example: http://srvalm:8080/tfs/DefaultCollection.  
+   Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
+   For example: http://srvalm:8080/tfs/DefaultCollection.  
   
-    ```  
+   ```  
   
-0.  Open the file using a text editor, such as Notepad.  
+1. Open the file using a text editor, such as Notepad.  
   
-0.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
+2. Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
   
-	> [!div class="tabbedCodeSnippets"]
-	```XML  
-    <TabGroup>  
-    <Tab Label="Storyboards">   
-          <Control Name="StoryboardsControl" Type="LinksControl">   
-          <LinksControlOptions>   
-             <WorkItemLinkFilters FilterType="excludeAll" />   
-             <ExternalLinkFilters FilterType="include">   
-                   <Filter LinkType="Storyboard" />   
-             </ExternalLinkFilters>   
-             <LinkColumns>   
-                   <LinkColumn RefName="System.Title" />   
-                   <LinkColumn LinkAttribute="System.Links.Comment" />   
-             </LinkColumns>   
-          </LinksControlOptions>   
-          </Control>   
-    </Tab>   
-    </TabGroup>  
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML  
+   > <TabGroup>  
+   > <Tab Label="Storyboards">   
+   >       <Control Name="StoryboardsControl" Type="LinksControl">   
+   >       <LinksControlOptions>   
+   >          <WorkItemLinkFilters FilterType="excludeAll" />   
+   >          <ExternalLinkFilters FilterType="include">   
+   >                <Filter LinkType="Storyboard" />   
+   >          </ExternalLinkFilters>   
+   >          <LinkColumns>   
+   >                <LinkColumn RefName="System.Title" />   
+   >                <LinkColumn LinkAttribute="System.Links.Comment" />   
+   >          </LinkColumns>   
+   >       </LinksControlOptions>   
+   >       </Control>   
+   > </Tab>   
+   > </TabGroup>  
+   > ```  
   
-0.  Save and close the file.  
+3. Save and close the file.  
   
-0.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
+4. Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
   
-    ```  
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
-    ```  
+   ```  
+   witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
+   ```  
   
-0.  Verify that the tab shows up in the backlog item.  
+5. Verify that the tab shows up in the backlog item.  
   
 ## Related articles
 

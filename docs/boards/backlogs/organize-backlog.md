@@ -81,12 +81,12 @@ From your web browser, open your product backlog.
 	> [!TIP]    
 	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -132,7 +132,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical view](_img/organize-backlog/hierarchical-view-agile.png)
 
-0. Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy.  
+1. Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Hierarchical view, expand and collapse icons](_img/organize-backlog/expand-collapse-agile.png)  
@@ -168,12 +168,12 @@ If you've already created your backlog, and now you want to organize it, you can
 
 	The Mapping pane displays immediately. 
 
-0.  Find Unparented backlog items which will appear at the end of the parented set of backlog items. Parents must be turned on in view options. 
+1. Find Unparented backlog items which will appear at the end of the parented set of backlog items. Parents must be turned on in view options. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Map unparented items to a feature](_img/organize-backlog/map-unparented-items-agile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Map unparented items to a feature](_img/organize-backlog/map-unparented-items-agile.png)
 
-0. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane will automatically display. 
+2. To map features to epics, select the **Features** backlog from the backlog selector. The Epics Mapping pane will automatically display. 
 
 
 ::: moniker-end

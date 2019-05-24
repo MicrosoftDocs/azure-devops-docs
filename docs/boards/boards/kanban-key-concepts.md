@@ -146,8 +146,7 @@ A WIP limit is a constraint that a team applies to one or more workflow stages t
 <a id="wip" />
 
 ## Work in Process (WIP)
-
-Work that has been started but isn't done or completed.  
+Work that has been started but isn&#39;t done or completed.  
 
 <a id="workflow-states" />
 
@@ -177,8 +176,7 @@ You can customize your workflow states, adding states, renaming states, and chan
 <a id="state-category" />
 
 ## Workflow state categories 
-
-State categories determine how the Kanban board treat each workflow state. The state categories used by the backlogs are *Proposed*, *In Progress*, *Resolved*, and *Completed*. Learn more: [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
+State categories determine how the Kanban board treat each workflow state. The state categories used by the backlogs are <em>Proposed</em>, <em>In Progress</em>, <em>Resolved</em>, and <em>Completed</em>. Learn more: <a href="../work-items/workflow-and-state-categories.md" data-raw-source="[Workflow states and state categories](../work-items/workflow-and-state-categories.md)">Workflow states and state categories</a>. 
 
 ## Related articles 
 

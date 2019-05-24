@@ -52,7 +52,7 @@ To better understand how these attributes are used to populate a field's drop-do
 <td> 
 <p>A project group that contains the names of three business analyst team members.</p>
 
-<p>**Note:** Use the literal prefix [Project] instead of using the actual name of the project.</p>
+<p><strong>Note:</strong> Use the literal prefix [Project] instead of using the actual name of the project.</p>
 </td>
 </tr>
 <tr>
@@ -103,7 +103,7 @@ To better understand how these attributes are used to populate a field's drop-do
 </tbody>
 </table>
 
-##Example: Expand lists and exclude groups
+## Example: Expand lists and exclude groups
 
 In this example, the field contains a string value, a group, and a global list. At the time it is run, the list is expanded and groups are excluded.
 
@@ -182,7 +182,7 @@ In this example, the field contains a string value, two groups, and a global lis
 
 
 
-##Example: Do not expand lists or groups, and do not filter
+## Example: Do not expand lists or groups, and do not filter
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.
 

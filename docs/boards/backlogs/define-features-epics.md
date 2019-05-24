@@ -25,9 +25,9 @@ Or, you've got an existing backlog and now need to organize it.
 
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
 Use your backlogs to plan your project and to:  
-*	Manage a portfolio of features that are supported by different development and management teams  
-*	Group items into a release train  
-*	Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
+*   Manage a portfolio of features that are supported by different development and management teams  
+*   Group items into a release train  
+*   Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
 Use this article to learn how to: 
 >[!div class="checklist"]      
@@ -64,9 +64,9 @@ A feature typically represents a shippable component of software. An epic repres
 
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
-To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don't see all three backlog levels&mdash;
+To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don&#39;t see all three backlog levels&mdash;
 Epics, Features, and Backlog items&mdash;
-you can [enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
+you can <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md)">enable them for your team</a>. 
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
@@ -74,22 +74,22 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+    ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-0. Choose the portfolio backlog that you want, **Features** or **Epics**. 
+1. Choose the portfolio backlog that you want, **Features** or **Epics**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/features-epics/choose-features-epics-agile.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/features-epics/choose-features-epics-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
@@ -97,17 +97,17 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
 
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+    To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
-0.	Choose **Epics** to see a list of all epics defined in your team's active area paths.  
+1. Choose **Epics** to see a list of all epics defined in your team's active area paths.  
 
-	![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
+   ![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
 
 ::: moniker-end
 
@@ -125,17 +125,17 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 0. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
 
-0. Repeat this step to capture all your ideas as work items.  
+1. Repeat this step to capture all your ideas as work items.  
 
-	Here, we've added six features.  
+    Here, we've added six features.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Add a feature](_img/features-epics/features-backlog-agile.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Add a feature](_img/features-epics/features-backlog-agile.png) 
 
-	You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
+    You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
 
 ::: moniker-end
 
@@ -144,14 +144,14 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Add a feature](_img/features-epics/add-feature-standard.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Add a feature](_img/features-epics/add-feature-standard.png) 
 
-0. 	Repeat this step until you've captured all your main ideas. 
+1. Repeat this step until you've captured all your main ideas. 
 
-	Here, we've added six features.  
+   Here, we've added six features.  
 
-	![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
+   ![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
 
 ::: moniker-end
 
@@ -163,7 +163,7 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 
 > [!div class="mx-imgBorder"]  
 > ![Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
- 
+
 <table>
 <tbody valign="top">
 <tr>
@@ -172,10 +172,9 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </tr>
 <tr>
 <td>
-[Value Area](../queries/planning-ranking-priorities.md)
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../queries/planning-ranking-priorities.md)">Value Area</a>
 </td>
-<td>The area of customer value addressed by the epic, feature, or backlog item. Values include:  
-<ul>
+<td>The area of customer value addressed by the epic, feature, or backlog item. Values include:<br/><ul>
 <li><b>Architectural</b> &mdash;technical services to implement business features that deliver solution </li> 
 <li><b>Business</b> (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
 </ul>
@@ -183,12 +182,12 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </tr>
 <tr>
 <td>
-[Effort](../queries/query-numeric.md)<br/>
-[Story Points](../queries/query-numeric.md)<br/>
-[Size](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md" data-raw-source="[Effort](../queries/query-numeric.md)">Effort</a><br/>
+<a href="../queries/query-numeric.md" data-raw-source="[Story Points](../queries/query-numeric.md)">Story Points</a><br/>
+<a href="../queries/query-numeric.md" data-raw-source="[Size](../queries/query-numeric.md)">Size</a>
 </td>
 <td>
-Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are [story points, time, or other relative unit](create-your-backlog.md#estimates). 
+Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are <a href="create-your-backlog.md#estimates" data-raw-source="[story points, time, or other relative unit](create-your-backlog.md#estimates)">story points, time, or other relative unit</a>. 
 </td>
 </tr>
 
@@ -205,15 +204,15 @@ Specify a priority that captures the relative value of an Epic, Feature, or back
 
 <tr>
 <td>
-[Time Criticality](../queries/planning-ranking-priorities.md)
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../queries/planning-ranking-priorities.md)">Time Criticality</a>
 </td>
 <td>
 A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
 </td>
 </tr>
 <tr>
-	<td><p>[Target Date](../queries/query-by-date-or-current-iteration.md)</p></td>
-	<td><p>Specify the date by which the feature should be implemented.</p></td></tr>
+    <td><p><a href="../queries/query-by-date-or-current-iteration.md" data-raw-source="[Target Date](../queries/query-by-date-or-current-iteration.md)">Target Date</a></p></td>
+    <td><p>Specify the date by which the feature should be implemented.</p></td></tr>
 
 </tbody>
 </table>

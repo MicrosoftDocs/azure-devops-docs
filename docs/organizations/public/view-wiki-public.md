@@ -35,7 +35,7 @@ The filter feature allows you to quickly find a wiki page as the number of pages
 To find a page, enter a title or keyword into the **Filter pages** box.
 
 > [!div class="mx-imgBorder"]
-![Filter Wiki pages](_img/filter-wiki-box.png)
+> ![Filter Wiki pages](_img/filter-wiki-box.png)
 
 ## Related articles
 

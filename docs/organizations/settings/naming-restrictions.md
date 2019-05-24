@@ -108,7 +108,7 @@ User accounts that you add must conform to the following restrictions.
 <td>
 <ul>
 <li>
-<p>Must not include the following printable characters: "/ \ [ ] : | &lt; &gt; + = ; ? *</p>
+<p>Must not include the following printable characters: &quot;/ \ [ ] : | &lt; &gt; + = ; ? *</p>
 </li>
 <li>
 <p>Must not include nonprintable characters in the ASCII value range of 1-31</p>
@@ -192,7 +192,7 @@ Special character restrictions
 <td>
 <ul>
 <li>
-Must not include the following printable characters: "/ \ [ ] : | &lt; &gt; + = ; ? *
+Must not include the following printable characters: &quot;/ \ [ ] : | &lt; &gt; + = ; ? *
 </li>
 <li>
 Must not include nonprintable characters in the ASCII value range of 1-31
@@ -258,7 +258,7 @@ If your deployment includes SharePoint Products or SQL Server Reporting Services
 <ul>
 <li>
 Must not contain any Unicode control characters or surrogate characters.</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]</li>
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</li>
 <li>Must not contain an ellipsis (&hellip;) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -272,7 +272,7 @@ Reserved names
 <td>
 <ul>
 <li>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, Web, or WEB <br/>
-Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -320,7 +320,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -338,7 +338,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -499,7 +499,7 @@ Special characters
 Must not contain any Unicode control characters or surrogate characters
 </li>
 <li>
-Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>
 Must not contain an ellipsis (&hellip;) or a double period (..)
@@ -521,7 +521,7 @@ Reserved names
 <ul>
 <li>
 Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX <br/>
-Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -564,7 +564,7 @@ Default maximum size: 4,096 kilobytes
 </li>
 <li>
 <p>Absolute maximum size: 2 gigabytes</p>
-<p>[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md).</p></li>
+<p><a href="../../reference/xml/change-maximum-attachment-size-work-items.md" data-raw-source="[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md)">Change the maximum attachment size for work items</a>.</p></li>
 </ul>
 </td>
 </tr>
@@ -606,10 +606,10 @@ The names you assign to child nodes to these fields must conform to the followin
 <p>Must not contain Unicode control characters</p>
 </li>
 <li>
-<p>Must not contain any one of the following characters: &#92; &#47; $ ? &#42; : " &amp; &gt; &lt; &#35; % | +  </p>
+<p>Must not contain any one of the following characters: &#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +  </p>
 </li>
 <li>
-Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -626,7 +626,7 @@ Must not contain characters prohibited by the local file system. For more inform
 <li>
 <p>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX</p>
 
-<p>Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).</p>
+<p>Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.</p>
 </li>
 </ul>
 </td>
@@ -764,7 +764,7 @@ Must not be identical to any other field reference name within the project colle
 </li>
 <li>
 Must not be identical to any other field reference name after those names are processed by the computer to replace all periods (.) with underscores (&#95;)<br/>
-For example, the field reference names ```My._Field``` and ```My_.Field``` would both be processed by the computer to be the same name: ```My__Field```
+For example, the field reference names <code>My.<em>Field</code> and <code>My</em>.Field</code> would both be processed by the computer to be the same name: <code>My__Field</code>
 </li>
 </ul>
 </td>
@@ -818,12 +818,12 @@ Microsoft.VSTS.TCM.AutomationStatus<br/>
 Microsoft.VSTS.TCM.TestSuiteType</p>
 </td>
 <td>
-<p>The fictitious company *Fabrikam Fiber* might define the following custom work item fields:</p>
+<p>The fictitious company <em>Fabrikam Fiber</em> might define the following custom work item fields:</p>
 <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;FabrikamFiber.Common.Severity<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.Common.Phase<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.RiskManagement.RiskType<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.RiskManagement.Resolution</p>
-<p>The fictitious software company *Contoso Corporation* might define the following work item fields:</p>
+<p>The fictitious software company <em>Contoso Corporation</em> might define the following work item fields:</p>
 <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;Contoso.Common.BusinessPriority<br/>
 &nbsp;&nbsp;&nbsp;Contoso.Bug.FoundInPhase<br/>
 &nbsp;&nbsp;&nbsp;Contoso.Bug.FixInPhase</p>
@@ -924,7 +924,7 @@ Global lists must conform to the following restrictions.
 <td>Number of items</td>
 <td>
 <ul>
-<li>Can't be empty. The global list must contain at least one ```LISTITEM``` element.</li>
+<li>Can&#39;t be empty. The global list must contain at least one <code>LISTITEM</code> element.</li>
 </ul>
 </td>
 </tr>
@@ -971,7 +971,7 @@ Tag names must conform to the following restrictions.
 <td>Special characters</p></td>
 <td>
 <ul>
-<li>Must not contain separator characters: `,` or `;`</li>
+<li>Must not contain separator characters: <code>,</code> or <code>;</code></li>
 <li>Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters  </li>
 </ul>
 </td>
@@ -1008,14 +1008,14 @@ Must contain sufficient space for the build (insufficient space leads to failed 
 <td>
 <p>Build directory</p>
 </td>
-<td>Must be a local path (for example, *C:\BuildDirectory*).
+<td>Must be a local path (for example, <em>C:\BuildDirectory</em>).
 </td>
 </tr>
 <tr>
 <td>
 Drop location directory</td>
 <td>
-Must be a UNC path (for example, ```\\server\share```).
+Must be a UNC path (for example, <code>\\server\share</code>).
 </td>
 </tr>
 <tr>
@@ -1025,7 +1025,7 @@ Must be a UNC path (for example, ```\\server\share```).
 <td>Each generated build is put in a new directory in the drop folder.
 <ul>
 <li>
-The Team Foundation Server Service account (for example, *Domain*&#92;TFSSERVICE) must have Full Control permission access to the UNC drop location.
+The Team Foundation Server Service account (for example, <em>Domain</em>&#92;TFSSERVICE) must have Full Control permission access to the UNC drop location.
 </li>
 <li>The UNC drop location must be a shared folder.
 </li>
@@ -1053,7 +1053,7 @@ If you change the TFS Service account after the initial installation, you must m
 <p>Firewall issues</p>
 </td>
 <td>
-If the build computer is firewall enabled, make sure that the program **tfsbuildservice** is in the exceptions list.
+If the build computer is firewall enabled, make sure that the program <strong>tfsbuildservice</strong> is in the exceptions list.
 </td>
 </tr>
 </table>
@@ -1222,7 +1222,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -1253,7 +1253,7 @@ Files and folders you add to Team Foundation version control must conform to the
 </td>
 <td>
 <ul>
-<li>Names must not contain the following printable characters: &#92; &#47; : &#42; ? " &lt; &gt; | ; </li>
+<li>Names must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; </li>
 <li>
 Folders must not reside outside the mapped directory for the active workspace
 </li>
@@ -1269,7 +1269,7 @@ File names
 <li>
 Must not begin with a $
 </li>
-<li>Must not contain the following printable characters: &#92; &#47; : &#42; ? " &lt; &gt; | ; </li>
+<li>Must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; </li>
 </ul>
 </td>
 </tr>
@@ -1306,7 +1306,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
 <p>Cannot end with a space ( ) or period (.)</p>
 </li>
 <li>
-<p>Must not contain the following printable characters: &#92; &#47; "  : &lt; &gt;  | &#42; ? @ ; </p>
+<p>Must not contain the following printable characters: &#92; &#47; &quot;  : &lt; &gt;  | &#42; ? @ ; </p>
 </li>
 </ul>
 </td>
@@ -1344,7 +1344,7 @@ Shelveset names must conform to the following restrictions.
 <ul>
 <li>
 
-<p>Must not contain the following printable characters: &#92; &#47;  "  : &lt; &gt;  | &#42; ? ; </p>
+<p>Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ; </p>
 </li>
 </ul>
 </td>
@@ -1383,7 +1383,7 @@ Workspace names must conform to the following restrictions.
 <li>
 <p>Cannot end with a space ( )</p>
 </li>
-<li><p>Must not contain the following printable characters: &#92; &#47;  "  : &lt; &gt;  | &#42; ? ; </p>
+<li><p>Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ; </p>
 </li>
 </ul>
 </td>

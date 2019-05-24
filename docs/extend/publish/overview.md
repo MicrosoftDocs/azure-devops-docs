@@ -68,10 +68,10 @@ To share an extension so it can be installed:
 1. Click on the ellipses of an extension item to bring up the menu
 2. Click the **Share** button
 
-  ![Share Extensions](../_img/share-extension.png)
+   ![Share Extensions](../_img/share-extension.png)
 
 3. Specify the name of the organization to make this extension visible to
-  - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
+   - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 
 
@@ -82,11 +82,11 @@ To install an extension that has been shared:
 
 1. From your organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 
-  ![Manage Extensions](_img/manage-extensions.png)
+   ![Manage Extensions](_img/manage-extensions.png)
 
 2. Find the extension under the **Shared with this organization** category:
 
-  ![Shared with me](_img/extensions-tab-shared.png)
+   ![Shared with me](_img/extensions-tab-shared.png)
 
 3. Click the card to open the item in the Marketplace
 4. From the item's details page, click the **Install** button
@@ -115,7 +115,7 @@ To offer your extension again in the Marketplace, choose **Publish** on the menu
 
 You can also choose to remove your extension completely from the Marketplace if your extension has zero (0) installs. To do this, choose **Remove** on the menu. This action cannot be undone. 
 
-###Unpublish/Remove requirements
+### Unpublish/Remove requirements
 Certain criteria must be met for an extension to be unpublished or removed:
 
 | Action    | Requirements                                                  |

@@ -25,14 +25,14 @@ You use the **Tab** element to cluster a group of fields or to support one or mo
 ## Syntax  
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Tab Label="LabelText" Padding="(left, top, right, bottom)" Margin="(left, top, right, bottom)">
-   <Group> . . . </Group>
-   <Control> . . . </Control>
-   <TabGroup> . . . </TabGroup>
-   <Splitter> . . . </Splitter>
-</Tab>  
-```  
+> ```XML
+> <Tab Label="LabelText" Padding="(left, top, right, bottom)" Margin="(left, top, right, bottom)">
+>    <Group> . . . </Group>
+>    <Control> . . . </Control>
+>    <TabGroup> . . . </TabGroup>
+>    <Splitter> . . . </Splitter>
+> </Tab>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -66,32 +66,32 @@ You use the **Tab** element to cluster a group of fields or to support one or mo
 ## Example  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FORM>  
-   <Layout>  
-        . . .   
-      <TabGroup>  
-         <Tab Label="Planning">  
-            <Group Label="Status" Padding="(0,0,0,3)">  
-               <Column PercentWidth="100">  
-                  <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
-                  <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
-                    . . .  
-               </Column>  
-            </Group>  
-         </Tab>  
-         <Tab Label="Description">  
-            <Group>  
-               <Column PercentWidth="100">  
-                  <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />  
-               </Column >  
-            </Group>  
-         </Tab>  
- . . .                
-      </TabGroup>  
-   </Layout>  
-</FORM>  
-```  
+> ```XML
+> <FORM>  
+>    <Layout>  
+>         . . .   
+>       <TabGroup>  
+>          <Tab Label="Planning">  
+>             <Group Label="Status" Padding="(0,0,0,3)">  
+>                <Column PercentWidth="100">  
+>                   <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
+>                   <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
+>                     . . .  
+>                </Column>  
+>             </Group>  
+>          </Tab>  
+>          <Tab Label="Description">  
+>             <Group>  
+>                <Column PercentWidth="100">  
+>                   <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />  
+>                </Column >  
+>             </Group>  
+>          </Tab>  
+>  . . .                
+>       </TabGroup>  
+>    </Layout>  
+> </FORM>  
+> ```  
   
   
 ## Related articles

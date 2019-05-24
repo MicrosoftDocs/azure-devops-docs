@@ -31,11 +31,11 @@ ms.date: 01/12/2017
   
  To perform the procedures in this topic, the following permissions must be assigned:  
   
--   To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
+- To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
   
--   To update work items in Team Foundation and submit them to Project Server, users must be members of the **Contributors** group for the project. Also, users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project.  
+- To update work items in Team Foundation and submit them to Project Server, users must be members of the **Contributors** group for the project. Also, users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project.  
   
- For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="Overview"></a> Process Overview of Top-Down Planning by Using Project Server  
  As the following illustration shows, 10 main steps occur in the synchronization of requirements between the project plan and the project.  
@@ -65,15 +65,15 @@ ms.date: 01/12/2017
 ##  <a name="PMTasks"></a> Project Manager Tasks and Best Practices  
  Best or required practices are provided for the following tasks that the project manager performs:  
   
--   [Define Requirements](#definerequirements)  
+- [Define Requirements](#definerequirements)  
   
--   [Approve Status Updates](#ApproveUpdates)  
+- [Approve Status Updates](#ApproveUpdates)  
   
--   [Review the Schedule, and Set a Baseline](#ReviewSchedule)  
+- [Review the Schedule, and Set a Baseline](#ReviewSchedule)  
   
--   [Preview Updates and Impacts on Critical Path](#determineimpacts)  
+- [Preview Updates and Impacts on Critical Path](#determineimpacts)  
   
- In addition to these activities, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
+  In addition to these activities, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
   
 ###  <a name="definerequirements"></a> Define Requirements  
  When you define requirements, you should assign them to the development team lead. As the following illustration shows, you must also set the **Publish to Team Project** field to **Yes**, and the **Work Item Type** field to **Requirement**. If only one type of work item is mapped for the project, it is set automatically.  

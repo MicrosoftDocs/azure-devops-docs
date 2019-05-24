@@ -63,11 +63,11 @@ Integration steps include:
 ::: moniker-end
 
 
-### Videos
+## Videos
 
 > [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
 
-### Additional resources
+## Additional resources
 
 - [Web portal navigation](../../project/navigation/index.md)  
 - [Link work items](../backlogs/add-link.md)

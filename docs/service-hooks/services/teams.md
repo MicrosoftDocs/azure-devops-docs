@@ -119,12 +119,12 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
 
    <img alt="Add a new tab to Teams channel" src="./_img/teams/Teams Kanban board 3.png" style="width:80%;" />
 
-1. Once you have authenticated and selected your organization, you will be displayed a screen to select a Kanban board or Dashboard.
- <br/>
- <img alt="Teams tab configuration" src="./_img/teams/Teams Kanban board 4.png" style="width:80%;" />
+2. Once you have authenticated and selected your organization, you will be displayed a screen to select a Kanban board or Dashboard.
+   <br/>
+   <img alt="Teams tab configuration" src="./_img/teams/Teams Kanban board 4.png" style="width:80%;" />
 
- <br>
- <img alt="Select Kanban board or Dashboard tab configuration" src="./_img/teams/Teams Kanban board 6.png" style="width:80%;" />
+   <br>
+   <img alt="Select Kanban board or Dashboard tab configuration" src="./_img/teams/Teams Kanban board 6.png" style="width:80%;" />
 
 ## Q & A
 

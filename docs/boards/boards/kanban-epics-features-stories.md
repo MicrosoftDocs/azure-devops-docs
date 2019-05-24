@@ -64,7 +64,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> [!TIP]    
 	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
-0. Select **Features** or **Epics** from the backlog selector menu . 
+1. Select **Features** or **Epics** from the backlog selector menu . 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose portfolio backlog level, Features or Epics](_img/features-epics/select-portfolio-level.png) 

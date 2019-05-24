@@ -80,26 +80,26 @@ A:	You must be a member of your project collection.
 Follow these steps to check your identity that you use 
 to sign in to the Visual Studio Marketplace. 
 
-0.	On your TFS web portal home page (```https://{server}:8080/tfs/```), 
-go to the top right corner of the page, and click your user name to view your profile. 
-0.	On the left side of your profile, make sure that your email address and directory are correct.
-0.	Close all browser windows.
-0.	Open a private or incognito browsing session.
-0.	Sign in to your TFS home page (```https://{server}:8080/tfs/```) 
-with the identity that's a user in the project collection 
-where you want to install the extension.
+0. On your TFS web portal home page (```https://{server}:8080/tfs/```), 
+   go to the top right corner of the page, and click your user name to view your profile. 
+1. On the left side of your profile, make sure that your email address and directory are correct.
+2. Close all browser windows.
+3. Open a private or incognito browsing session.
+4. Sign in to your TFS home page (```https://{server}:8080/tfs/```) 
+   with the identity that's a user in the project collection 
+   where you want to install the extension.
 
-	> If you're asked to choose "work or school organization" or 
-	> "personal account", this means you used an email address 
-	> that's the same for a Microsoft account and a "work or school account" 
-	> that's managed by your organization in Azure Active Directory. 
-	> Although these identities have the same email address, 
-	> they're still separate identities with different profiles, 
-	> security settings, and permissions.
-	> 
-	> Choose the identity that's the user in your project collection. 
+   > If you're asked to choose "work or school organization" or 
+   > "personal account", this means you used an email address 
+   > that's the same for a Microsoft account and a "work or school account" 
+   > that's managed by your organization in Azure Active Directory. 
+   > Although these identities have the same email address, 
+   > they're still separate identities with different profiles, 
+   > security settings, and permissions.
+   > 
+   > Choose the identity that's the user in your project collection. 
 
-0.	From your project collection, go to the Visual Studio Marketplace.
+5. From your project collection, go to the Visual Studio Marketplace.
 
 <a name="no-download"></a>
 

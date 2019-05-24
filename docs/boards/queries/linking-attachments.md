@@ -79,7 +79,7 @@ Query clauses that specify an integer field can use the operators listed below.
   </td>
   <td>
     <p>
-      ```Attached File Count >= 1```
+      <code>Attached File Count &gt;= 1</code>
     </p>
   </td>
 </tr>
@@ -89,7 +89,7 @@ Query clauses that specify an integer field can use the operators listed below.
   </td>
   <td>
     <p>
-      ```Hyperlink Count >= 2```
+      <code>Hyperlink Count &gt;= 2</code>
     </p>
   </td>
 </tr>
@@ -99,7 +99,7 @@ Query clauses that specify an integer field can use the operators listed below.
   </td>
   <td>
     <p>
-      ```External Link Count >=1```
+      <code>External Link Count &gt;=1</code>
     </p>
   </td>
 </tr>
@@ -109,13 +109,13 @@ Query clauses that specify an integer field can use the operators listed below.
   </td>
   <td>
     <p>
-      &#160;&#160;&#160;```Related Link Count >=3```
+      &#160;&#160;&#160;<code>Related Link Count &gt;=3</code>
     </p>
     <p>
-      ```And```
+      <code>And</code>
     </p>
     <p>
-      &#160;&#160;&#160;```Related Link Count <=7```
+      &#160;&#160;&#160;<code>Related Link Count &lt;=7</code>
     </p>
   </td>
 </tr>
@@ -147,19 +147,15 @@ From there, you can add additional query clauses or change the Filter options fo
 <th width="50%">Include these query clauses</th>
 </tr>
 <tr>
-<td>View only child items of work item 645  
-</td>
+<td>View only child items of work item 645<br/></td>
 <td>Add to Filters for top level work items: 
-```ID  =  645```  
-</td>
+<code>ID  =  645</code><br/></td>
 </tr>
 <tr>
-<td>Tasks or bugs  
-</td>
+<td>Tasks or bugs<br/></td>
 <td>
 Add to Filters for linked work items: 
-```Work Item Type  In  Task,Bug```  
-</td>
+<code>Work Item Type  In  Task,Bug</code><br/></td>
 </tr>
 <tr>
 <td>
@@ -167,19 +163,14 @@ Items assigned to my team (Web)
 </td>
 <td>
 Add to both top and bottom filters: 
-```Assigned to  In Group  [Fabrikam Fiber]\Web```  
-</td>
+<code>Assigned to  In Group  [Fabrikam Fiber]\Web</code><br/></td>
 </tr>
 
 <tr>
 <td>
-Parent items of tasks assigned to me:  
-</td>
+Parent items of tasks assigned to me:<br/></td>
 <td>
-Change Filter options to **Match linked work items first**  
-Add to Filters for linked work items:  
-```Assigned To  =  @Me```  
-</td>
+Change Filter options to <strong>Match linked work items first</strong><br/>Add to Filters for linked work items:<br/><code>Assigned To  =  <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code><br/></td>
 </tr>
 
 </tbody>
@@ -194,15 +185,15 @@ The following example shows a dependent linked query that returns items with dep
 
 **Why this works:**
 
--   Removing the **Team Project = @Project** clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+- Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
 
--   Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
+- Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
 
--   Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
+- Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
 
--   Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
+- Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
 
--   Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
+- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
 
 The following image shows the query results that are returned.
 
@@ -226,15 +217,14 @@ The following table describes fields associated with links and attachments. Most
 <p>Reference Name=System.AttachedFileCount, Data type=Integer</p>
 
 <blockquote>
-For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
-</blockquote> 
+For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.<br/></blockquote> 
 </td>
 <td><p>All</p></td>
 </tr>
 
 <tr>
 <td><p>Comment Count</p></td>
-<td><p>Available for TFS 2017 with the new work item form which supports the Discussion section and later versions. The number of comments added to the **Discussion** section of the work item.</p>
+<td><p>Available for TFS 2017 with the new work item form which supports the Discussion section and later versions. The number of comments added to the <strong>Discussion</strong> section of the work item.</p>
 <p>Reference Name=System.CommentCount, Data type=Integer</p>
 
 </td>
@@ -269,7 +259,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="related-link-count"/>
 <p>Related Link Count</p></td>
-<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)</p>
+<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  <a href="link-type-reference.md#work-link-types" data-raw-source="[Link type reference](link-type-reference.md#work-link-types)">Link type reference</a></p>
 <p>Reference Name=System.RelatedLinkCount, Data type=Integer</p>
 </td>
 <td>All</td>
@@ -277,7 +267,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="remote-link-count"/>
 <p>Remote Link Count</p></td>
-<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md#remote-link).</p>
+<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md#remote-link" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md#remote-link)">Add link to work items, Link to a remote work item</a>.</p>
 <p>Reference Name=System.RemoteLinkCount, Data type=Integer</p></td>
 <td><p>All</p></td>
 </tr>
@@ -295,7 +285,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
- 
+
 ::: moniker range=">= tfs-2015 <= azure-devops-2019" 
 ### Visualize related work and other objects 
 

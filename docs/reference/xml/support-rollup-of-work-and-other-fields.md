@@ -122,28 +122,28 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
 Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
   
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md).
->  
-::: moniker-end 
+> 
+> ::: moniker-end 
 
 <a name="requirements"></a>   
 ##  Rollup requirements  
  To support rollup, structure your work items according to the following recommendations:  
   
--   Use parent-child links to link work items that contain values that you want to rollup.  
+- Use parent-child links to link work items that contain values that you want to rollup.  
   
--   Add required fields to the WITs that will capture the rollup values. Default fields used to schedule work are only present on the task work item. These fields are:  
-    -   Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI) 
-    -   Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)   
-    -   Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
+- Add required fields to the WITs that will capture the rollup values. Default fields used to schedule work are only present on the task work item. These fields are:  
+  - Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI) 
+  - Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)   
+  - Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
   
-     If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+    If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
-     To learn more about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
+    To learn more about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
   
--   Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.    
--   Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the `Control` field `Readonly` attribute.  
+- Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.    
+- Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the `Control` field `Readonly` attribute.  
   
 ## Q & A  
   

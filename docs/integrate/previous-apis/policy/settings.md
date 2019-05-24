@@ -294,7 +294,7 @@ Requires that the merged result of a pull request builds successfully using a sp
 
 ### Example
 This example adds a build policy that:
- 
+
  * Protects branches beginning with `features/` in all repositories
  * Automatically queues a build using a specified definition once the merged code is available
  * Rejects the pull request if the build has not completed successfully
@@ -558,13 +558,12 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/confi
 ## Git ref scope
 <a name="gitrefscope" />
 Describes that a policy should apply to specified Git refs according to a pattern
-```json
+<code>json
 {
-    "repositoryId": {guid-or-null},
-    "refName": {string},
-    "matchKind": "prefix|exact"
-}
-```
+    &quot;repositoryId&quot;: {guid-or-null},
+    &quot;refName&quot;: {string},
+    &quot;matchKind&quot;: &quot;prefix|exact&quot;
+}</code>
 
 | Parameter     | Type                   | Notes
 |:--------------|:-----------------------|:----------------------------------------------------------------------------------------------------------------------------------

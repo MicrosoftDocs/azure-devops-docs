@@ -77,8 +77,8 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
 1. As a project collection administrator or organization owner, sign in to either of the following:
 
- * [Visual Studio Marketplace > Pipelines > Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
- * [Visual Studio Marketplace > Pipelines > Self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+   * [Visual Studio Marketplace > Pipelines > Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+   * [Visual Studio Marketplace > Pipelines > Self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
 2. Select **Get**. (The following images represent Microsoft-hosted CI/CD, rather than Self-hosted, although the process is the same.)
 
@@ -91,10 +91,10 @@ To make subsequent edits to paid quantities in your organization, you need only 
 4. Confirm the Azure subscription that you'll use for billing. Then select **Continue**.
 
     If you have multiple Azure subscriptions,
-  select the Azure subscription that you want to use.
-  If you don't have an Azure subscription,
-  create a new subscription now to use for billing.
-  [Azure DevOps billing FAQ](billing-faq.md)
+   select the Azure subscription that you want to use.
+   If you don't have an Azure subscription,
+   create a new subscription now to use for billing.
+   [Azure DevOps billing FAQ](billing-faq.md)
 
     For more information, see the Azure DevOps [billing FAQ](billing-faq.md).
 
@@ -114,11 +114,11 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
      ![Go to the organization toolbar > Manage Pipelines](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
-  To return to **Pipelines** in
-  your organization at any time,
-  go to your organization toolbar, and
-  then go to **Pipelines**
-  (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
+   To return to **Pipelines** in
+   your organization at any time,
+   go to your organization toolbar, and
+   then go to **Pipelines**
+   (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
 ## XAML build
 

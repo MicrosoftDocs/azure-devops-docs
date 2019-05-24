@@ -37,7 +37,7 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 <li>(Optional) Delete TFS database catalog mappings.</li> 
 </ol>
 
-###Required permissions
+### Required permissions
 
 To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
 
@@ -118,7 +118,7 @@ Example steps:
 	       <DEFAULTWORKITEMTYPE name="Task" />  
 	       <WORKITEMTYPE name="User Story" />   
 	</CATEGORY>
-	```
+    ```
 3. Import the updated categories.xml file. 
 
 	```witadmin importcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
@@ -141,7 +141,7 @@ Example steps:
 	<?xml version="1.0" encoding="utf-8"?>
 	<GLOBALWORKFLOW>
 	</GLOBALWORKFLOW>
-	```
+    ```
 
 3. Import the updated XML file. 
 
@@ -223,17 +223,17 @@ From Project Server, remove all fields that end in `(TFS)`.
 - From Project Server 2010, go to: **PWA Home Page>Server Settings>Enterprise Custom Fields and Lookup Tables**
 - From Project Server 2013, go to: PWA home page, click the 'gear' button and then choose **PWA Settings>Enterprise Custom Fields and Lookup Tables**
  
-<ol><li>Remove all TFS fields, those ending in `(TFS)`, for example: 
+<ol><li>Remove all TFS fields, those ending in <code>(TFS)</code>, for example: 
 <ul><li>Active Assignment (TFS)</li>
 <li>IsTaskTypeInitialized (TFS)</li>
 <li>Submitted Revision (TFS)</li>
 <li>Work Item Id (TFS)</li>
 <li>Work Item Type (TFS)</li>
 </ul>
-<p>For example, delete the `IsTaskTypeInitialized (TFS)` field:</p> 
-![Enterprise custom fields](_img/ps-tfs-integ-enterprise-custom-fields.png)
+<p>For example, delete the <code>IsTaskTypeInitialized (TFS)</code> field:</p> 
+<img src="_img/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
 </li>
-<li>Also, delete all lookup tables that start with `Microsoft.VSTS`, for example: 
+<li>Also, delete all lookup tables that start with <code>Microsoft.VSTS</code>, for example: 
 <ul><li>Microsoft.VSTS.ProjSrv.SubmittedRevLT.DoNotDelete</li>
 <li>Microsoft.VSTS.ProjSrv.SyncToTFSLT.DoNotDelete</li>
 <li>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</li>
@@ -241,8 +241,8 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Microsoft.VSTS.ProjSrv.WITypeLT.DoNotDelete </li>
 <li>Microsoft.VSTS.ProjSrv.WorkItemIdLT.DoNotDelete</li>
 </ul>
-<p>For example, here we delete the `Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete` field:</p>
-![Enterprise custom fields](_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png)
+<p>For example, here we delete the <code>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</code> field:</p>
+<img src="_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
 </li>
 </ol>
 

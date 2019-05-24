@@ -35,14 +35,13 @@ For additional clients that you can use, see [Best tools for adding, updating, a
 You can start adding work items once you connect to a project. 
 
 
-# [Browser](#tab/browser) 
-
+#### [Browser](#tab/browser/)
 ::: moniker range=">= azure-devops-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
-![Work, add artifact](../../project/navigation/_img/add-artifact/add-work-item-query-vert.png)
+> ![Work, add artifact](../../project/navigation/_img/add-artifact/add-work-item-query-vert.png)
 
 ::: moniker-end
 
@@ -51,23 +50,23 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-	<img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
+    <img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
-	> [!NOTE]  
-	>Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
-	or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
-	>
-	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
-	
-	Choose the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+    > [!NOTE]  
+    >Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+    or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+    >
+    > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+
+    Choose the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	![Agile process, User story work item form](_img/add-new-work-item-vsts-user-story.png)  
+    ![Agile process, User story work item form](_img/add-new-work-item-vsts-user-story.png)  
 
-	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
+    You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+    Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
 ::: moniker-end
 
@@ -77,40 +76,38 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 2. From a team home page, you can choose the type of work item you want to create.  
 
-	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
+    ![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
+    Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
-	![Product backlog item work item form](_img/add-work/work-items-pbi-form-caption.png)  
+    ![Product backlog item work item form](_img/add-work/work-items-pbi-form-caption.png)  
 
-	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
+    You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
 ::: moniker-end
 
 
-# [Visual Studio 2019](#tab/visual-studio)
-
+#### [Visual Studio 2019](#tab/visual-studio/)
 0. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio, Team Explorer, Choose Work Items](../work-items/_img/view-add/open-work-items-vs-te-complete.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/_img/view-add/open-work-items-vs-te-complete.png) 
 
-	If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
+    If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Connect to a Project dialog, connect to a Project and Git repository](../work-items/_img/view-add/connect-to-a-project-and-github.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Connect to a Project dialog, connect to a Project and Git repository](../work-items/_img/view-add/connect-to-a-project-and-github.png)
 
-0. Choose **New Work Item** and select the work item type you want. 
+1. Choose **New Work Item** and select the work item type you want. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Work Items, Add User Story](../work-items/_img/view-add/add-user-story-vs-te.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Work Items, Add User Story](../work-items/_img/view-add/add-user-story-vs-te.png)
 
-	If you work within Visual Studio 2017 or later version, a browser window will open with the work item form to fill out. If you work within Visual Studio 2015 or earlier version, a work item form opens within Visual Studio. 
+    If you work within Visual Studio 2017 or later version, a browser window will open with the work item form to fill out. If you work within Visual Studio 2015 or earlier version, a work item form opens within Visual Studio. 
 
----
-
+* * *
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 ![Agile process, User story work item form](_img/add-new-work-item-vsts-user-story.png)  
@@ -139,7 +136,7 @@ Note that the location of the State field may differ depending on the work item 
 
 ::: moniker range=">= azure-devops-2019"
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).  
-     
+
 ::: moniker-end
 
 ::: moniker range="= tfs-2018"
@@ -155,26 +152,26 @@ The following image shows the work flow states for a user story. If you want to 
 <td>
 <p><b>Typical workflow progression:</b></p>
 <ul>
-<li>The product owner creates a user story in the **New** state with the default reason, **New user story** </li>
-<li>The team updates the status to **Active** when they decide to complete the work during the sprint</li>
-<li>A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass.</li>
-<li>A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.</li>
+<li>The product owner creates a user story in the <strong>New</strong> state with the default reason, <strong>New user story</strong> </li>
+<li>The team updates the status to <strong>Active</strong> when they decide to complete the work during the sprint</li>
+<li>A user story is moved to <strong>Resolved</strong> when the team has completed all its associated tasks and unit tests for the story pass.</li>
+<li>A user story is moved to the <strong>Closed</strong> state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.</li>
 
 
 </ul>
 <p><b>Atypical transitions:</b></p>
 <ul>
-<li>Change the State from **Active** to **New**.</li>
-<li>Change the State from **Resolved** to **Active**.</li>
-<li>Change the State from **Resolved** to **New**.</li>
-<li>Change the State from **Closed** to **Active**.</li>
-<li>Change the State from **New** to **Removed**.</li>
-<li>Change the State from **Removed** to **New**.</li>
+<li>Change the State from <strong>Active</strong> to <strong>New</strong>.</li>
+<li>Change the State from <strong>Resolved</strong> to <strong>Active</strong>.</li>
+<li>Change the State from <strong>Resolved</strong> to <strong>New</strong>.</li>
+<li>Change the State from <strong>Closed</strong> to <strong>Active</strong>.</li>
+<li>Change the State from <strong>New</strong> to <strong>Removed</strong>.</li>
+<li>Change the State from <strong>Removed</strong> to <strong>New</strong>.</li>
 </ul>
 </td>
 <td>
-![User story workflow, Agile process](../work-items/guidance/_img/alm_pt_agile_wf_userstory.png)
- 
+<img src="../work-items/guidance/_img/alm_pt_agile_wf_userstory.png" alt="User story workflow, Agile process"/>
+
 </td>
 </tr>
 </tbody>
@@ -209,7 +206,7 @@ You'll only receive notifications when other members of your team modifies the w
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
 To stop following changes, choose the ![ ](../_img/icons/following-icon.png) following icon.
- 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"

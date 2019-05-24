@@ -118,43 +118,41 @@ You set project-level information permissions from **Project Settings**>**Securi
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">[View project-level information](set-project-collection-level-permissions.md) 
+<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../../organizations/settings/set-area-paths.md) 
+<td align="left">Area node: <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Edit work items under the node](../../organizations/settings/set-area-paths.md)">Edit work items under the node</a> 
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)  
-</td>
+<td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left">[Edit project-level information](set-project-collection-level-permissions.md)     
-</td>
+<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[Edit project-level information](set-project-collection-level-permissions.md)">Edit project-level information</a><br/></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -190,53 +188,53 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](../../organizations/settings/add-team-administrator.md) </p>
+<td align="left"><a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[Add a team administrator](../../organizations/settings/add-team-administrator.md)">Add a team administrator</a> </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
 <td align="left">
-[Add team members](../../organizations/settings/add-teams.md) </p>
+<a href="../../organizations/settings/add-teams.md" data-raw-source="[Add team members](../../organizations/settings/add-teams.md)">Add team members</a> </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
-<td align="left">[View shared work item queries](../../boards/queries/using-queries.md)</p>
+<td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">
-[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+<a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)">Manage shared query and query folder permissions</a><br/>(Contribute, Delete, Manage Permissions)
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">
-[Add and edit dashboards](../../report/dashboards.md) 
+<a href="../../report/dashboards.md" data-raw-source="[Add and edit dashboards](../../report/dashboards.md)">Add and edit dashboards</a> 
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -267,7 +265,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 - [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)  
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
 - [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).  
- 
+
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
 ![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  

@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Stakeholder licensing – Aug 27
+# Stakeholder licensing – Aug 27
 
-##A license for Stakeholders
+## A license for Stakeholders
 
 We’re delivering on the new "stakeholder license" that [I promised](http://blogs.msdn.com/b/bharry/archive/2014/07/09/upcoming-vs-online-licensing-changes.aspx) a few weeks ago. With this license, being activated today, any number of users in an account can be assigned a stakeholder license at no charge.
 
