@@ -118,7 +118,7 @@ When adding custom fields, note the following limits:
 In addition, you can [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.    
 
 ### What you can't customize 
-- You can't change the field name or data type once you've defined it  
+- You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
@@ -126,7 +126,6 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
-
 
 ### Configurable picklists 
 
@@ -138,9 +137,10 @@ Picklists associated with person-name fields, such as Assigned To and Changed By
 
 
 <a id="rename-field">  </a>
-### Can a field be renamed or its field type changed?   
-Renaming a field or changing the field type aren't supported actions.  
 
+### Can a field be renamed or its field type changed?   
+
+Renaming a field or changing the field type aren't supported actions.  
 However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
@@ -149,6 +149,7 @@ However, you can change the label that appears for a field on the work item form
 
 
 <a id="system-rules">  </a>
+
 ## Custom rules and system rules
 
 Each WIT&mdash;bug, task, user story, etc.&mdash;has several system rules already defined. Some are simple, like making the Title field required or setting a default for the Value Area field. In addition, a number of system rules define actions to take when a workflow state changes. 
@@ -225,7 +226,6 @@ Here are your customization options for inherited and custom WITs.
 ### Work item form customizations 
 
 You can make the following customizations to a WIT form. 
-
 
 <table width="80%">
 <tbody valign="top">
@@ -338,6 +338,7 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 - You can't change the name of a custom state 
 - You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop down list of a work item form)  
 - You can't specify a Reason for a state, instead, default reasons are defined such as *Moved to state Triaged*, *Moved out of state Triaged* 
+- You can't change the location of the State and Reason fields on the form
 - You can't restrict transitions, all transitions are defined from any state to another state.  
 
 
