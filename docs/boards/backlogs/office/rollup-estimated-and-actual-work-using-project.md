@@ -28,13 +28,13 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
 ## Add fields to work item types  
  The following default fields used to schedule work are only present on the task work item.  
   
--   Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)  
+- Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)  
   
--   Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)  
+- Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)  
   
--   Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
+- Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
   
- If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+  If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
 1.  Add required fields to the WITs that will capture the rollup values.  
   

@@ -71,7 +71,7 @@ Read about the new features below and head over to Azure DevOps to try them for 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

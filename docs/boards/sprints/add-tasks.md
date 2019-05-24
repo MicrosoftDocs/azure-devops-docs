@@ -50,7 +50,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
@@ -75,7 +75,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
@@ -147,17 +147,22 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who'
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Add task](_img/add-tasks/add-task-form.png)
-::: moniker-end	
+::: moniker-end 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 <a id="task-form-team-services" /> 
 <!--- Task form, new form -->
 ![New task form](_img/sp-scrum-task-form.png)  
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 <a id="task-form-tfs-2015-13" /> 
+
 <!--- Task form, old form -->
 
 !["Web portal, Task form, old form](_img/IC797606.png)  	
+
 ::: moniker-end
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
@@ -175,25 +180,26 @@ During the sprint, team members update remaining work to continually reflect the
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p>[Original Estimate](../queries/query-numeric.md)</p></td>
-	<td><p>The amount of estimated work required to complete a task. Typically, this field doesn't change after it is assigned.</p>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Original Estimate](../queries/query-numeric.md)">Original Estimate</a></p></td>
+    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
 <tr>
-	<td width="18%"><p>[Remaining Work](../queries/query-numeric.md)</p></td>
-	<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](set-capacity.md) and the [sprint burndown chart](sprint-burndown.md)You can specify work in any unit of measurement your team chooses.</p></td></tr>
+    <td width="18%"><p><a href="../queries/query-numeric.md" data-raw-source="[Remaining Work](../queries/query-numeric.md)">Remaining Work</a></p></td>
+    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="set-capacity.md" data-raw-source="[capacity charts](set-capacity.md)">capacity charts</a> and the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a>You can specify work in any unit of measurement your team chooses.</p></td></tr>
 <tr>
-	<td><p>[Completed Work](../queries/query-numeric.md) </p></td>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Completed Work](../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>
 <tr>
-	<td><p>[Activity](../queries/query-numeric.md) </p></td>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a> </p></td>
 	<td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
 </tbody>
 </table>  
 
 
 <a id="unparented-tasks">  </a>
+
 ## Unparented tasks
 
 Tasks without links to parent backlog items or user stories appear at the top of the taskboard. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
@@ -204,7 +210,6 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
@@ -213,6 +218,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md) 
 

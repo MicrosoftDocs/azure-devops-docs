@@ -38,12 +38,12 @@ You can perform the following tasks with the Hosted XML process model.
 <td>Fields  </td>
 <td>
 <ul>
-<li>[Add or modify a field](../../../reference/add-modify-field.md)</li>
-<li>[Add a checkbox (Boolean) field](../../../reference/add-modify-field.md#boolean-field)</li>
-<li>[Add rules to a field](../../../reference/add-modify-field.md#add-rules)</li>
-<li>[Change a field label](../../../reference/add-modify-field.md#change-label)</li>
-<li>[Add a custom control field](../../../reference/add-modify-field.md#custom-control)</li>
-<li>[Remove a field](../../../reference/add-modify-field.md#change-label) </li>
+<li><a href="../../../reference/add-modify-field.md" data-raw-source="[Add or modify a field](../../../reference/add-modify-field.md)">Add or modify a field</a></li>
+<li><a href="../../../reference/add-modify-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](../../../reference/add-modify-field.md#boolean-field)">Add a checkbox (Boolean) field</a></li>
+<li><a href="../../../reference/add-modify-field.md#add-rules" data-raw-source="[Add rules to a field](../../../reference/add-modify-field.md#add-rules)">Add rules to a field</a></li>
+<li><a href="../../../reference/add-modify-field.md#change-label" data-raw-source="[Change a field label](../../../reference/add-modify-field.md#change-label)">Change a field label</a></li>
+<li><a href="../../../reference/add-modify-field.md#custom-control" data-raw-source="[Add a custom control field](../../../reference/add-modify-field.md#custom-control)">Add a custom control field</a></li>
+<li><a href="../../../reference/add-modify-field.md#change-label" data-raw-source="[Remove a field](../../../reference/add-modify-field.md#change-label)">Remove a field</a> </li>
 </ul>
 </td>
 </tr>
@@ -51,13 +51,13 @@ You can perform the following tasks with the Hosted XML process model.
 <td>Pick lists  </td>
 <td>
 <ul>
-<li>[Area paths](../set-area-paths.md)</li><li>[Iteration paths](../set-iteration-paths-sprints.md)</li>
-<li>[State or Reason fields](../../../reference/xml/change-workflow-wit.md)</li>
-<li>[Person-name field (add users)](../../security/add-users-team-project.md)</li>
-<li>[Add a custom pick list](../../../reference/add-modify-field.md#picklist)</li>
-<li>[Predefined field](../../../reference/add-modify-field.md#picklist)</li>
-<li>[Resolution State or Failure Type](../../../reference/customize-work.md#test-experience)</li>
-<li>[Define global lists](../../../reference/xml/define-global-lists.md) </li>
+<li><a href="../set-area-paths.md" data-raw-source="[Area paths](../set-area-paths.md)">Area paths</a></li><li><a href="../set-iteration-paths-sprints.md" data-raw-source="[Iteration paths](../set-iteration-paths-sprints.md)">Iteration paths</a></li>
+<li><a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[State or Reason fields](../../../reference/xml/change-workflow-wit.md)">State or Reason fields</a></li>
+<li><a href="../../security/add-users-team-project.md" data-raw-source="[Person-name field (add users)](../../security/add-users-team-project.md)">Person-name field (add users)</a></li>
+<li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Add a custom pick list](../../../reference/add-modify-field.md#picklist)">Add a custom pick list</a></li>
+<li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Predefined field](../../../reference/add-modify-field.md#picklist)">Predefined field</a></li>
+<li><a href="../../../reference/customize-work.md#test-experience" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md#test-experience)">Resolution State or Failure Type</a></li>
+<li><a href="../../../reference/xml/define-global-lists.md" data-raw-source="[Define global lists](../../../reference/xml/define-global-lists.md)">Define global lists</a> </li>
 </ul>
 </td>
 </tr>
@@ -65,12 +65,12 @@ You can perform the following tasks with the Hosted XML process model.
 <td>Work item types</td>
 <td>
 <ul>
-<li>[Add or modify a work item type](../../../reference/add-modify-wit.md)</li>
-<li>[Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)</li>
-<li>[Customize the form](../../../reference/xml/change-work-item-form-layout.md)</li>
-<li>[Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)</li>
-<li>[Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)</li>
-<li>[Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)</li>
+<li><a href="../../../reference/add-modify-wit.md" data-raw-source="[Add or modify a work item type](../../../reference/add-modify-wit.md)">Add or modify a work item type</a></li>
+<li><a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow (States, Reasons, Transitions)](../../../reference/xml/change-workflow-wit.md)">Change the workflow (States, Reasons, Transitions)</a></li>
+<li><a href="../../../reference/xml/change-work-item-form-layout.md" data-raw-source="[Customize the form](../../../reference/xml/change-work-item-form-layout.md)">Customize the form</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#wit-colors" data-raw-source="[Specify the WIT color](../../../reference/xml/process-configuration-xml-element.md#wit-colors)">Specify the WIT color</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md" data-raw-source="[Specify the WIT icon](../../../reference/xml/process-configuration-xml-element.md)">Specify the WIT icon</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#state-colors" data-raw-source="[Specify the workflow state color](../../../reference/xml/process-configuration-xml-element.md#state-colors)">Specify the workflow state color</a></li>
 </ul>
 </td>
 </tr>
@@ -78,16 +78,16 @@ You can perform the following tasks with the Hosted XML process model.
 <td>Backlogs and process configuration  </td>
 <td>
 <ul>
-<li>[Add WITs to backlogs or boards](../../../reference/add-wits-to-backlogs-and-boards.md)</li>
-<li>[Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)</li>
-<li>[Configure the quick add panel](../../../reference/xml/process-configuration-xml-element.md#add)</li>
-<li>[Configure the default backlog columns](../../../reference/xml/process-configuration-xml-element.md#columns)</li>
-<li>[Set maximum number of task board items](../../../reference/xml/process-configuration-xml-element.md#number_items)</li>
-<li>[Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days) </li>
-<li>[Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)</li>
-<li>[Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)</li>
-<li>[Process configuration](../../../reference/xml/process-configuration-xml-element.md)</li>
-<li>[Categories](../../../reference/xml/categories-xml-element-reference.md)</li>
+<li><a href="../../../reference/add-wits-to-backlogs-and-boards.md" data-raw-source="[Add WITs to backlogs or boards](../../../reference/add-wits-to-backlogs-and-boards.md)">Add WITs to backlogs or boards</a></li>
+<li><a href="../../../reference/add-portfolio-backlogs.md" data-raw-source="[Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)">Add portfolio backlogs</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#add" data-raw-source="[Configure the quick add panel](../../../reference/xml/process-configuration-xml-element.md#add)">Configure the quick add panel</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#columns" data-raw-source="[Configure the default backlog columns](../../../reference/xml/process-configuration-xml-element.md#columns)">Configure the default backlog columns</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#number_items" data-raw-source="[Set maximum number of task board items](../../../reference/xml/process-configuration-xml-element.md#number_items)">Set maximum number of task board items</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#weekend_days" data-raw-source="[Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days)">Set default weekend days (Scrum)</a> </li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default bug management behavior</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default hidden backlogs</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md" data-raw-source="[Process configuration](../../../reference/xml/process-configuration-xml-element.md)">Process configuration</a></li>
+<li><a href="../../../reference/xml/categories-xml-element-reference.md" data-raw-source="[Categories](../../../reference/xml/categories-xml-element-reference.md)">Categories</a></li>
 </ul>
 </td>
 </tr>
@@ -95,9 +95,9 @@ You can perform the following tasks with the Hosted XML process model.
 <td>Process template </td>
 <td>
 <ul>
-<li>[Import a process template](import-process/import-process.md#import-from-TFS)</li>
-<li>[Export a process template](import-process/import-process.md#export-process)</li>
-<li>[Customize a process template](import-process/customize-process.md)</li>
+<li><a href="import-process/import-process.md#import-from-TFS" data-raw-source="[Import a process template](import-process/import-process.md#import-from-TFS)">Import a process template</a></li>
+<li><a href="import-process/import-process.md#export-process" data-raw-source="[Export a process template](import-process/import-process.md#export-process)">Export a process template</a></li>
+<li><a href="import-process/customize-process.md" data-raw-source="[Customize a process template](import-process/customize-process.md)">Customize a process template</a></li>
 </ul>
 </td>
 </tr>

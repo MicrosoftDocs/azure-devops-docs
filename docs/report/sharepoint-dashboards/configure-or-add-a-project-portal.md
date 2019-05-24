@@ -79,62 +79,62 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
 
-1.  [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).  
+1. [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).  
   
-2.  Verify that you have the following tools, configurations, and permissions.  
+2. Verify that you have the following tools, configurations, and permissions.  
   
-    1.  If you haven't installed TFS power tools, install them now to your Visual Studio client:
-    - **TFS 2015:** [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) 
-    - **TFS 2013:** [Microsoft Visual Studio Team Foundation Server 2013 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2013Power)   
+   1. If you haven't installed TFS power tools, install them now to your Visual Studio client:
+   2. **TFS 2015:** [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) 
+   3. **TFS 2013:** [Microsoft Visual Studio Team Foundation Server 2013 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2013Power)   
   
-    2.  If you haven't installed a version of Visual Studio, [install one of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
+   4. If you haven't installed a version of Visual Studio, [install one of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
-    3.  If you aren't an administrator for the team project, [get added now](../../organizations/security/set-project-collection-level-permissions.md).  
+   5. If you aren't an administrator for the team project, [get added now](../../organizations/security/set-project-collection-level-permissions.md).  
   
-    4.  If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../organizations/security/set-sharepoint-permissions.md).  
+   6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../organizations/security/set-sharepoint-permissions.md).  
   
-3.  Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
+3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
-    ```  
-    cd %programfiles%\TFS 2013 Power Tools  
-    ```  
+   ```  
+   cd %programfiles%\TFS 2013 Power Tools  
+   ```  
   
-     On a 64-bit edition of Windows, replace `%programfiles%` with %`programfiles(x86)%`.  
+    On a 64-bit edition of Windows, replace `%programfiles%` with %`programfiles(x86)%`.  
   
-4.  Add the portal. The process template you specify must be compatible with the template used to create the team project. And, it must have been uploaded to the team project collection that hosts your team project.  
+4. Add the portal. The process template you specify must be compatible with the template used to create the team project. And, it must have been uploaded to the team project collection that hosts your team project.  
   
-    ```  
-    tfpt addprojectportal /collection:"http://MyServer:8080/tfs/DefaultCollection" /teamproject:MyProject /processtemplate:"TemplateName"   
-    ```  
+   ```  
+   tfpt addprojectportal /collection:"http://MyServer:8080/tfs/DefaultCollection" /teamproject:MyProject /processtemplate:"TemplateName"   
+   ```  
   
-     These are the names of the process templates available with TFS 2013:  
+    These are the names of the process templates available with TFS 2013:  
   
-    -   Microsoft Visual Studio Scrum 2013    
-    -   MSF for Agile Software Development 2013   
-    -   MSF for CMMI Process Improvement 2013  
+   -   Microsoft Visual Studio Scrum 2013    
+   -   MSF for Agile Software Development 2013   
+   -   MSF for CMMI Process Improvement 2013  
   
-5.  Open Portal Settings and verify that the SharePoint site is configured as expected.  
+5. Open Portal Settings and verify that the SharePoint site is configured as expected.  
   
-6.  From the Home page, open the Documents page.  
+6. From the Home page, open the Documents page.  
   
-    <table>
-	<tbody valign="top">
-	<tr>
-	<td>**Git**</td>
-	<td>**TFVC**</td>
-	</tr>
-	<tr>
-	<td>![Team Explorer Home page with Git as source control](_img/alm_te_githome.png "ALM_TE_GitHome")</td>
-	<td>![Team Explorer Home page w&#47; TFVC as source control](_img/tracking_teamproject.png "Tracking_TeamProject")</td>
-	</tr>
-	</tbody>
-	</table>  
+   <table>
+   <tbody valign="top">
+   <tr>
+   <td><strong>Git</strong></td>
+   <td><strong>TFVC</strong></td>
+   </tr>
+   <tr>
+   <td><img src="_img/alm_te_githome.png" alt="Team Explorer Home page with Git as source control" title="ALM_TE_GitHome"/></td>
+   <td><img src="_img/tracking_teamproject.png" alt="Team Explorer Home page w&#47; TFVC as source control" title="Tracking_TeamProject"/></td>
+   </tr>
+   </tbody>
+   </table>  
   
-7.  Open the project portal.  
+7. Open the project portal.  
   
-     ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
+    ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8.  From your project portal, [add team member accounts to the Contributors group](/azure/devops/organizations/security/set-sharepoint-permissions) for the SharePoint site.  
+8. From your project portal, [add team member accounts to the Contributors group](/azure/devops/organizations/security/set-sharepoint-permissions) for the SharePoint site.  
   
 ## Related notes 
 

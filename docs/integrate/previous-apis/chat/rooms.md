@@ -153,18 +153,15 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/12797?api-version=1.0
 
 ## Create a room
 <a name="createaroom" />
-```no-highlight
-POST https://{instance}/DefaultCollection/_apis/chat/rooms?api-version={version}
-```
-```http
-Content-Type: application/json
-```
-```json
+<code>no-highlight
+POST https://{instance}/DefaultCollection/_apis/chat/rooms?api-version={version}</code>
+<code>http
+Content-Type: application/json</code>
+<code>json
 {
   name: {name},
   description: {description}
-}
-```
+}</code>
 
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
@@ -282,7 +279,7 @@ DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}?api-versio
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
- 
+
 #### Sample request
 
 ```

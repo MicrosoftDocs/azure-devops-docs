@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Visual Studio Online updates - Nov 13
+# Visual Studio Online updates - Nov 13
 
-##Announcing Visual Studio Online
+## Announcing Visual Studio Online
 
 Today we take a very significant step in the evolution of our developer services. There are many pieces to it so bear with me while I get to them all. And please read all the way to the end for some exciting announcements.
 
@@ -26,7 +26,7 @@ With our new name comes a new portal. This is now a combined portal, including t
 
 ![Your profile page](_img/11_13_03.png)
 
-##Visual Studio Online is Open for Business
+## Visual Studio Online is Open for Business
 
 Even bigger news is that we have now enabled paid usage of the service. Officially the service is in what we call “Commercial Preview” as we work through any issues that we may have with the billing system before announcing “General Availability” sometime in 2014. You can sign up for or transition your existing account to a paid account starting today.
 
@@ -54,15 +54,15 @@ Use the new Users hub in VS Online to assign licenses to users.
 
 ![Assign your licenses from Visual Studio Online](_img/11_13_06.png)
 
-##Getting Support is Easy
+## Getting Support is Easy
 
 Among the features of the new site you will find a new [support page](https://visualstudio.microsoft.com/support/support-overview-vs) that provides you with a full set of options for getting support – including a list of commonly asked questions, links to forums, contact info for customer support and more. We want to make it as easy as we can for you to get any help that you need.
 
-##Announcing Visual Studio Online “Monaco”
+## Announcing Visual Studio Online “Monaco”
 
 With Visual Studio Online we want to offer a broad range of tools and services that support the different kinds of development you do. In support of that vision, today we are announcing the preview of “Monaco”, a new development service specifically designed for building and maintaining Windows Azure Websites. With Monaco, we want to provide developers with a lightweight, friction free companion to the Visual Studio desktop IDE that is accessible from any device on any platform. Monaco is a rich, browser based, code focused development environment optimized for the Windows Azure platform, making it easy to start building and maintaining applications for the cloud.
 
-###Getting Started
+### Getting Started
 
 To get started with Monaco you must first enable editing for your website. This is done on a per website basis, on the CONFIGURE tab in the Windows Azure Portal for your site, in the “general” section.
 
@@ -74,7 +74,7 @@ Once you enable editing, a link to “Edit in Visual Studio Online” will appea
 
 You’ll be prompted for your deployment credentials. These are also available in the quick glance section of the portal. Once you are authenticated, you will be directed to the Monaco environment where you can start editing your site.
 
-###The Monaco Environment
+### The Monaco Environment
 
 Changes are automatically saved and are live. Monaco has great support for HTML5 and JavaScript applications (including TypeScript and Node) as well as PHP applications. You can edit VB and C# ASP.NET Web Applications in Monaco. You can use MSBuild from the Console to compile the project.
 
@@ -82,31 +82,31 @@ Changes are automatically saved and are live. Monaco has great support for HTML5
 
 This is just a brief overview of Monaco in order to get you up and running. For more information, check out the new video series for Monaco on Channel 9.
 
-##Announcing Application Insights Limited Preview
+## Announcing Application Insights Limited Preview
 
 Today we began a preview of Application Insights, a brand new service available through Visual Studio Online. Application Insights collects, processes and presents a wide variety of telemetry including performance, usage, availability, exception, crash, environment, log and developer-supplied data from all components of a modern application – including clients (devices and browser), servers, databases and services.
 
 With this “360 degree view” of your application, Application Insights can quickly detect availability and performance problems, alert you, pinpoint their root cause and connect you to rich diagnostic experiences in Visual Studio for diagnosis and repair. It also supports continuous, data-driven improvement of an application. For example it highlights which features are most and least used, where users get “stuck” in an application, where and why exceptions are occurring, which client platforms are being used with which OS versions, and where performance optimizations will make the biggest impact on compute costs.
 
-###Custom dashboards
+### Custom dashboards
 
 In addition to “out of the box” pre-configured insights and reports, you can create custom dashboards showing the metrics you care most about.
 
 ![Customize your dashboards](_img/11_13_10.png)
 
-###Integration with Visual Studio
+### Integration with Visual Studio
 
 One of the cooler things about Application Insights is its integration with Visual Studio. When your availability tests fail, or exceptions occur, Application Insights can bring you right to the offending line of code in the version of the source that is actually in production.
 
 ![Find a line of code that's causing an issue](_img/11_13_11.png)
 
-###Where should I focus my attention next sprint?
+### Where should I focus my attention next sprint?
 
 Without Application Insights, “what’s next” decisions are often guesswork. But with Application Insights, you’ll understand what users are doing, where they are succeeding, and which platforms matter most. If you want to instrument your application, you can capture any sort of custom insight. With this insight, your continuous improvement efforts can be more focused and impactful.
 
 ![See which browsers your customers use](_img/11_13_12.png)
 
-###Next Steps
+### Next Steps
 
 If you are already Visual Studio Online user and want to participate in the limited preview, request an invitation code via the new Application Insights tile on your Visual Studio Online home page. If you aren’t yet a Visual Studio Online user, you can quickly sign up [here](http://go.microsoft.com/fwlink/?LinkId=307137).
 

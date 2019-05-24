@@ -60,15 +60,15 @@ You can use the Failure Analysis report to help monitor how many regressions the
 ##  <a name="Interpreting"></a> Interpreting the report  
  You should expect the Failure Analysis report to vary depending on where you are in your product development cycle. Early iterations should show little, if any, regression activity. Later in the development cycle, you should expect some regressions. Specifically, you should review the report to find answers to the following questions:  
   
--   How many tests overall are regressing?  
+- How many tests overall are regressing?  
   
--   Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?  
+- Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?  
   
--   Is the team addressing issues as they are identified? Are the known issues being addressed in a timely manner?  
+- Is the team addressing issues as they are identified? Are the known issues being addressed in a timely manner?  
   
- A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might need to investigate further. Spikes may indicate problems in either the test activity or the quality of code that the team is checking in.  
+  A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might need to investigate further. Spikes may indicate problems in either the test activity or the quality of code that the team is checking in.  
   
- Also, you might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.  
+  Also, you might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.  
   
 ##  <a name="Updating"></a> Updating and customizing the report  
  You can update the Failure Analysis report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, the following table describes.  

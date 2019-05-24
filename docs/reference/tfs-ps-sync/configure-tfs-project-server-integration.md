@@ -160,25 +160,25 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 #### To associate an enterprise project plan with a project  
   
-1.  At a command prompt, enter the following command, and then choose the ENTER key:  
+1. At a command prompt, enter the following command, and then choose the ENTER key:  
   
-    ```  
-    TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamproject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /projectFieldForWorkItemType:ProjectFieldName  
-    ```  
+   ```  
+   TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamproject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /projectFieldForWorkItemType:ProjectFieldName  
+   ```  
   
-     Replace *tpcUrl* with the URL of the project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task* or *"User Story,Task*. Do not include a space after the comma.  
+    Replace *tpcUrl* with the URL of the project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task* or *"User Story,Task*. Do not include a space after the comma.  
   
-     Specify **/nofixedWork** if you want to prohibit fixed task type assignments. You can also specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item.  
+    Specify **/nofixedWork** if you want to prohibit fixed task type assignments. You can also specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item.  
   
-     Wait until the following messages appear:  
+    Wait until the following messages appear:  
   
-     **Mapping enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
+    **Mapping enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
   
-     **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
+    **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
   
-2.  Repeat step 1 for each enterprise project that you want to associate with a project.  
+2. Repeat step 1 for each enterprise project that you want to associate with a project.  
   
- If you mapped your project plan while it was open, you should close and re-open it for the changes to register. When you open the plan, you should verify whether the **Publish to Team Project** and **Work Item Type** (Text30) columns appear. The presence of these fields indicates that the project plan has been mapped to a project.  
+   If you mapped your project plan while it was open, you should close and re-open it for the changes to register. When you open the plan, you should verify whether the **Publish to Team Project** and **Work Item Type** (Text30) columns appear. The presence of these fields indicates that the project plan has been mapped to a project.  
   
 > [!NOTE]
 >  After you map your enterprise project plan with a project, you can change the types of work items that are mapped. For more information, see [Specify work item types](specify-wits-to-synchronize.md).  

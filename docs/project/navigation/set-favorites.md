@@ -96,7 +96,7 @@ Access views that you have favorited by choosing the ![ ](../../_img/icons/inbox
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
 
-0. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
+1. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, Favorites page](_img/favorites/project-page-favorites-horz.png)   

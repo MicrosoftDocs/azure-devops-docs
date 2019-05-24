@@ -112,32 +112,32 @@ You can use the Progress dashboard to track team progress toward completing an i
 ###  <a name="Progress"></a> Monitor progress  
  To monitor team progress, you can review the **Task Burndown (hours)**, **Task Progress (count)**, and **User Story Progress (count)** or **Requirement Progress (count)** reports for the following types of indicators:  
   
--   **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  
+- **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  
   
-     One or more issues might be blocking progress or the team might not be resolving and closing work items that it has completed, fixed, and verified.  
+   One or more issues might be blocking progress or the team might not be resolving and closing work items that it has completed, fixed, and verified.  
   
--   **Has the number of active Tasks or active or resolved user stories stopped increasing?**  
+- **Has the number of active Tasks or active or resolved user stories stopped increasing?**  
   
-     This situation warrants additional investigation. When the team appears to make no progress over several days in either the **Task Progress (count)** or **User Story Progress (count)** reports, the team might be blocked or the team might not be resolving and closing work items that it has completed, fixed, and verified. You should investigate the cause because it could hinder the team's ability to meet the iteration plan and project schedule.  
+   This situation warrants additional investigation. When the team appears to make no progress over several days in either the **Task Progress (count)** or **User Story Progress (count)** reports, the team might be blocked or the team might not be resolving and closing work items that it has completed, fixed, and verified. You should investigate the cause because it could hinder the team's ability to meet the iteration plan and project schedule.  
   
--   **Is the team adding or expanding the scope of work during the iteration?**  
+- **Is the team adding or expanding the scope of work during the iteration?**  
   
-     Significant increases over time to the amount of Remaining Work or to the number of active tasks or user stories may indicate poor estimations or scope creep. That is, either the team did not accurately estimate the work at the start of the iteration or the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. You should investigate the root causes. For example, you might want to determine how granular the tasks are.  
+   Significant increases over time to the amount of Remaining Work or to the number of active tasks or user stories may indicate poor estimations or scope creep. That is, either the team did not accurately estimate the work at the start of the iteration or the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. You should investigate the root causes. For example, you might want to determine how granular the tasks are.  
   
--   **Do changes in the reports match your expectations?**  
+- **Do changes in the reports match your expectations?**  
   
-     Dashboard reports reflect work that the team is tracking. You should expect the reports to change according to the decisions and changes that the team makes about the work. If the team reallocates work to another iteration or decides to add work for an iteration, reports on the Progress dashboard should reflect those decisions.  
+   Dashboard reports reflect work that the team is tracking. You should expect the reports to change according to the decisions and changes that the team makes about the work. If the team reallocates work to another iteration or decides to add work for an iteration, reports on the Progress dashboard should reflect those decisions.  
   
- If the slope of the **Remaining Work** is progressing near or under the **Ideal Trend** line, the team is executing well against the iteration plan. However, if the **Remaining Work** slope is higher than the **Ideal Trend** line, the team will probably not complete all planned tasks before the end of the iteration.  
+  If the slope of the **Remaining Work** is progressing near or under the **Ideal Trend** line, the team is executing well against the iteration plan. However, if the **Remaining Work** slope is higher than the **Ideal Trend** line, the team will probably not complete all planned tasks before the end of the iteration.  
   
 ###  <a name="Issues"></a> Monitor issues  
  Because issues can block or impede team progress, you should track them as the team identifies them, and you should monitor how quickly the team addresses them. You can use the **7-Day Issue Trend Rate** and the Open Issues report to review any issues that have an impact on the team. Specifically, you can find answers to the following questions:  
   
--   How often is the team identifying issues?  
+- How often is the team identifying issues?  
   
--   Is the team resolving issues as quickly as it is identifying them?  
+- Is the team resolving issues as quickly as it is identifying them?  
   
- If the team identifies more issues than it can address, the Issue Trends report will show that the team is closing issues at a lower rate. The team might need to reexamine priorities to determine whether the issues are actually problems that it should address or if it can ignore them.  
+  If the team identifies more issues than it can address, the Issue Trends report will show that the team is closing issues at a lower rate. The team might need to reexamine priorities to determine whether the issues are actually problems that it should address or if it can ignore them.  
   
 ## Related notes
 

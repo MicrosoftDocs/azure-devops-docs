@@ -153,32 +153,32 @@ You can add and invite others to work on your project by adding their email addr
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert-2.png)
 
-0. Select **Users** > **Add new users**.
+1. Select **Users** > **Add new users**.
 
    ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 
-0. Complete the form by entering or selecting the following information:
+2. Complete the form by entering or selecting the following information:
 	<ul>
-	<li>**Users:** Enter the email addresses (Microsoft account) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
-	<li>**Access level:** Assign one of the following access levels: 
+    <li><strong>Users:</strong> Enter the email addresses (Microsoft account) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
+    <li><strong>Access level:</strong> Assign one of the following access levels: 
 		<ul>
-		<li>**Basic**: Assign to users who must have access to all Azure Boards features. You can grant up to five users **Basic** access for free. </li>
-		<li>**Stakeholder**: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users **Stakeholder** access for free.</li>
+        <li><strong>Basic</strong>: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free. </li>
+        <li><strong>Stakeholder</strong>: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users <strong>Stakeholder</strong> access for free.</li>
 		</ul>
 	</li>
-	<li>**Add to project:** Select the project you named in the preceding procedure.</li>
-	<li>**Azure DevOps Groups:** Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):
+    <li><strong>Add to project:</strong> Select the project you named in the preceding procedure.</li>
+    <li><strong>Azure DevOps Groups:</strong> Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):
 	<ul>
-		<li>**Project Readers**: Assign to users who only require read-only access. </li>
-		<li>**Project Contributors**: Assign to users who will contribute fully to the project. </li>
-		<li>**Project Administrators**: Assign to users who will configure project resources.</li>
+        <li><strong>Project Readers</strong>: Assign to users who only require read-only access. </li>
+        <li><strong>Project Contributors</strong>: Assign to users who will contribute fully to the project. </li>
+        <li><strong>Project Administrators</strong>: Assign to users who will configure project resources.</li>
 		</ul></li>
 	</ul>
 
 	> [!NOTE]  
 	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account.  
 
-5. When you're done, select **Add** to complete your invitation.
+3. When you're done, select **Add** to complete your invitation.
 
 For more information, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 

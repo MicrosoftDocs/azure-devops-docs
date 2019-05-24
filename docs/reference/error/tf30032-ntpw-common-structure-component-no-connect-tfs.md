@@ -18,11 +18,11 @@ ms.date: 01/20/2017
 
 This error occurs when the New Team Project Wizard is unable to connect to the application-tier {*name*} when creating a project. An active connection cannot be made because of one of the following conditions:  
   
--   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
+- A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
--   A critical file from the server {name} is missing.  
+- A critical file from the server {name} is missing.  
   
- Because the connection to Team Foundation Server failed, the wizard could not create the project data objects on the application-tier server.  
+  Because the connection to Team Foundation Server failed, the wizard could not create the project data objects on the application-tier server.  
   
 ### To correct this error  
   

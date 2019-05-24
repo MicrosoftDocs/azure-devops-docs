@@ -30,56 +30,56 @@ The following widgets are organized under the service they support. Widgets that
 <tbody valign="top">
 <tr>
 <td width="44%"> 
-**Boards**
+<strong>Boards</strong>
 <ul>
-<li>[Assigned to me](#assigned-to-me-widget)</li>
-<li>[Burndown chart](#burndown-analytics-widget) (Analytics)</li>
-<li>[Burnup chart](#burnup-analytics-widget) (Analytics) </li>
-<li>[Chart for work items](#chart-wit-widget)</li>
-<li>[Cumulative flow diagram](#cfd-widget) (Analytics) </li>
-<li>[Cycle time](#cycle-time-widget) (Analytics)</li>
-<li>[Lead time](#lead-time-widget) (Analytics) </li>
-<li>[New Work item](#new-work-item-widget)</li>
-<li>[Query results](#query-results-widget)</li>
-<li>[Query tile](#query-tile-widget)</li>
-<li>[Sprint burndown](#sprint-burndown-widget) </li>
-<li>[Sprint capacity](#sprint-capacity-widget)</li>
-<li>[Sprint overview](#sprint-overview-widget) </li>
-<li>[Velocity](#velocity-widget) (Analytics) </li>
-<li>[Work links](#work-links-widget)</li>
+<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
+<li><a href="#burndown-analytics-widget" data-raw-source="[Burndown chart](#burndown-analytics-widget)">Burndown chart</a> (Analytics)</li>
+<li><a href="#burnup-analytics-widget" data-raw-source="[Burnup chart](#burnup-analytics-widget)">Burnup chart</a> (Analytics) </li>
+<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
+<li><a href="#cfd-widget" data-raw-source="[Cumulative flow diagram](#cfd-widget)">Cumulative flow diagram</a> (Analytics) </li>
+<li><a href="#cycle-time-widget" data-raw-source="[Cycle time](#cycle-time-widget)">Cycle time</a> (Analytics)</li>
+<li><a href="#lead-time-widget" data-raw-source="[Lead time](#lead-time-widget)">Lead time</a> (Analytics) </li>
+<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a></li>
+<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
+<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
+<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
+<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a></li>
+<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a> </li>
+<li><a href="#velocity-widget" data-raw-source="[Velocity](#velocity-widget)">Velocity</a> (Analytics) </li>
+<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
 
 </td>
 <td width="28%">
-**Repos**
+<strong>Repos</strong>
 <ul>
-<li>[Code tile](#code-tile-widget)</li>
-<li>[Pull request](#pull-request-widget) </li>
+<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
+<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
 </ul>
 <br/>
-**Pipelines**
+<strong>Pipelines</strong>
 <ul>
-<li>[Chart for build history](#build-history-widget)</li>
-<li>[Deployment status](#deployment-status-widget)</li>
-<li>[Release pipeline overview](#release-definition-widget)</li>
-<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
-<li>[Requirements quality](#requirements-quality-widget)</li>
+<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
+<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
+<li><a href="#release-definition-widget" data-raw-source="[Release pipeline overview](#release-definition-widget)">Release pipeline overview</a></li>
+<li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a> (Analytics)</li>
+<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <br/>
-**Test Plans**
-<li>[Chart for test plans](#chart-test-plan-widget)</li>
+<strong>Test Plans</strong>
+<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
 
 </ul>
 </td>
 <td width="28%">
-**Other**
+<strong>Other</strong>
 <ul>
-<li>[Embedded web page](#embedded-webpage-widget)</li>
-<li>[Markdown](#markdown-widget)</li>
-<li>[Other links](#other-links-widget) </li>
-<li>[Team members](#team-members-widget) </li>
-<li>[Visual Studio Shortcuts](#visual-studio-widget)</li>
-<li>[Welcome](#how-to-widget)</li>
+<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
+<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
+<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
+<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
+<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
+<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
 </ul>
 </td>
 </tr>
@@ -98,52 +98,52 @@ The following widgets are organized under the service they support. Widgets that
 <tbody valign="top">
 <tr>
 <td width="33%"> 
-**Boards**
+<strong>Boards</strong>
 <ul>
-<li>[Assigned to me](#assigned-to-me-widget)</li>
-<li>[Chart for work items](#chart-wit-widget)</li>
-<li>[Cumulative flow diagram](#cfd-widget)</li>
-<li>[New Work item](#new-work-item-widget) </li>
-<li>[Query results](#query-results-widget)</li>
-<li>[Query tile](#query-tile-widget)</li>
-<li>[Sprint burndown](#sprint-burndown-widget) </li>
-<li>[Sprint capacity](#sprint-capacity-widget) </li>
-<li>[Sprint overview](#sprint-overview-widget)</li>
-<li>[Work links](#work-links-widget)</li>
+<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
+<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
+<li><a href="#cfd-widget" data-raw-source="[Cumulative flow diagram](#cfd-widget)">Cumulative flow diagram</a></li>
+<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
+<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
+<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
+<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
+<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
+<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
+<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
 
 </td>
 <td width="33%">
-**Repos**
+<strong>Repos</strong>
 <ul>
-<li>[Code tile](#code-tile-widget)</li>
+<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
 </ul>
 <br/>
-**Pipelines**
+<strong>Pipelines</strong>
 <ul>
-<li>[Pull request](#pull-request-widget) </li>
-<li>[Chart for build history](#build-history-widget)</li>
-<li>[Deployment status](#deployment-status-widget)</li>
-<li>[Release pipeline overview](#release-definition-widget)</li>
-<li>[Requirements quality](#requirements-quality-widget)</li>
+<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
+<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
+<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
+<li><a href="#release-definition-widget" data-raw-source="[Release pipeline overview](#release-definition-widget)">Release pipeline overview</a></li>
+<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <br/>
-**Test Plans**
-<li>[Chart for test plans](#chart-test-plan-widget)</li>
-<li>[Test results trend](#test-results-widget)</li>
-<li>[Test results trend (Advanced)](#test-trend-results-advanced)</li>
+<strong>Test Plans</strong>
+<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
+<li><a href="#test-results-widget" data-raw-source="[Test results trend](#test-results-widget)">Test results trend</a></li>
+<li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a></li>
 </ul>
 </td>
 <td width="34%">
-**Other**
+<strong>Other</strong>
 <ul>
-<li>[Embedded web page](#embedded-webpage-widget)</li>
-<li>[Markdown](#markdown-widget)</li>
-<li>[Other links](#other-links-widget) </li>
-<li>[Team members](#team-members-widget) </li>
-<li>[Team room](#team-room-widget)</li>
-<li>[Visual Studio Shortcuts](#visual-studio-widget)</li>
-<li>[Welcome](#how-to-widget)</li>
+<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
+<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
+<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
+<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
+<li><a href="#team-room-widget" data-raw-source="[Team room](#team-room-widget)">Team room</a></li>
+<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
+<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
 </ul>
 </td>
 </tr>
@@ -160,50 +160,50 @@ The following widgets are organized under the service they support. Widgets that
 <tbody valign="top">
 <tr>
 <td width="33%"> 
-**Work**
+<strong>Work</strong>
 <ul>
-<li>[Assigned to me](#assigned-to-me-widget) </li>
-<li>[Chart for work items](#chart-wit-widget)</li>
-<li>[New Work item](#new-work-item-widget) </li>
-<li>[Query results](#query-results-widget)</li>
-<li>[Query tile](#query-tile-widget)</li>
-<li>[Sprint burndown](#sprint-burndown-widget) </li>
-<li>[Sprint capacity](#sprint-capacity-widget) </li>
-<li>[Sprint overview](#sprint-overview-widget)</li>
-<li>[Work links](#work-links-widget)</li>
+<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a> </li>
+<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
+<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
+<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
+<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
+<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
+<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
+<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
+<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
 
 </td>
 <td width="33%">
-**Code**
+<strong>Code</strong>
 <ul>
-<li>[Code tile](#code-tile-widget)</li>
+<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
 </ul>
 <br/>
-**Build & Release**
+<strong>Build &amp; Release</strong>
 <ul>
-<li>[Pull request](#pull-request-widget) </li>
-<li>[Chart for build history](#build-history-widget)</li>
-<li>[Deployment status](#deployment-status-widget)</li>
-<li>[Requirements quality](#requirements-quality-widget)</li>
+<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
+<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
+<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
+<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <br/>
-**Test**
+<strong>Test</strong>
 <ul>
-<li>[Chart for test plans](#chart-test-plan-widget)</li>
-<li>[Test results trend](#test-results-widget)</li>
+<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
+<li><a href="#test-results-widget" data-raw-source="[Test results trend](#test-results-widget)">Test results trend</a></li>
 </ul>
 </td>
 <td width="34%">
-**Other**
+<strong>Other</strong>
 <ul>
-<li>[Embedded web page](#embedded-webpage-widget)</li>
-<li>[Markdown](#markdown-widget)</li>
-<li>[Other links](#other-links-widget) </li>
-<li>[Team members](#team-members-widget)</li>
-<li>[Team room](#team-room-widget)</li>
-<li>[Visual Studio Shortcuts](#visual-studio-widget)</li>
-<li>[Welcome](#how-to-widget)</li>
+<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
+<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
+<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
+<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a></li>
+<li><a href="#team-room-widget" data-raw-source="[Team room](#team-room-widget)">Team room</a></li>
+<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
+<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
 </ul>
 </td>
 </tr>
@@ -219,42 +219,42 @@ The following widgets are organized under the service they support. Widgets that
 <tbody valign="top">
 <tr>
 <td width="33%"> 
-**Work**
+<strong>Work</strong>
 <ul>
-<li>[Assigned to me](#assigned-to-me-widget)</li>
-<li>[Chart for work items](#chart-wit-widget)</li>
-<li>[New Work item](#new-work-item-widget) </li>
-<li>[Query results](#query-results-widget)</li>
-<li>[Query tile](#query-tile-widget)</li>
-<li>[Sprint burndown](#sprint-burndown-widget) </li>
-<li>[Sprint capacity](#sprint-capacity-widget) </li>
-<li>[Sprint overview](#sprint-overview-widget) </li>
-<li>[Work links](#work-links-widget)</li>
+<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
+<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
+<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
+<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
+<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
+<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
+<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
+<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a> </li>
+<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
 </td>
 <td width="33%">
-**Code**
+<strong>Code</strong>
 <ul>
-<li>[Code tile](#code-tile-widget)</li>
+<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
 </ul>
 <br/>
-**Build**
+<strong>Build</strong>
 <ul>
-<li>[Pull request](#pull-request-widget) </li>
-<li>[Chart for build history](#build-history-widget)</li>
+<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
+<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
 </ul>
 <br/>
 </td>
 <td width="34%">
-**Other**
+<strong>Other</strong>
 <ul>
-<li>[Embedded web page](#embedded-webpage-widget)</li>
-<li>[Markdown](#markdown-widget)</li>
-<li>[Other links](#other-links-widget)</li>
-<li>[Team members](#team-members-widget) </li>
-<li>[Team room](#team-room-widget) </li>
-<li>[Visual Studio Shortcuts](#visual-studio-widget)</li>
-<li>[Welcome](#how-to-widget)</li>
+<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
+<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
+<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a></li>
+<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
+<li><a href="#team-room-widget" data-raw-source="[Team room](#team-room-widget)">Team room</a> </li>
+<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
+<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
 </ul>
 </td>
 </tr>
@@ -279,7 +279,7 @@ The following widgets are organized under the service they support. Widgets that
 
 ::: moniker range=">= tfs-2017"
 <a id="assigned-to-me-widget"></a>
-###Assigned to me  
+### Assigned to me  
  
 ![Assigned to me widget](_img/widget-assigned-to-me.png)  
 
@@ -289,7 +289,7 @@ Displays the list of work items currently assigned to the currently logged in us
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-###Burndown chart 
+### Burndown chart 
 <a id="burndown-analytics-widget"></a>  
 	
 ![Burndown chart widget](_img/widget-burndown-chart.png)  
@@ -298,7 +298,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 
 ----
 
-###Burnup chart  
+### Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
 
 ![Burnup chart widget](_img/widget-burnup-chart.png)    
@@ -308,7 +308,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 ----
 ::: moniker-end
 
-###Chart for work items  
+### Chart for work items  
 <a id="chart-wit-widget"></a> 
 	
 ![Chart work item query widget](_img/widget-chart-work-query.png)  
@@ -327,7 +327,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 ::: moniker range=">= azure-devops-2019"
 <a id="cfd-widget"></a> 
 
-###Cumulative flow diagram   
+### Cumulative flow diagram   
 
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
@@ -340,7 +340,7 @@ Hover over each color within the chart to see the count of items for a particula
 ----
 
 <a id="cycle-time-widget"></a> 
-###Cycle time  
+### Cycle time  
 
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
@@ -351,7 +351,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="lead-time-widget"></a> 
-###Lead time  
+### Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
@@ -367,7 +367,7 @@ To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead
 
 
 <a id="new-work-item-widget"></a>
-###New Work item
+### New Work item
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
@@ -383,7 +383,7 @@ Requires TFS 2015.1 or later version.
 ----
 
 <a id="other-links-widget"></a> 
-###Other links 
+### Other links 
 
 ![Other links widget](_img/widget-other-links.png)  
 
@@ -407,7 +407,7 @@ The following links are displayed when the corresponding resource is configured 
 
 
 <a id="query-results-widget"></a> 
-###Query results 
+### Query results 
 	
 ![Query results widget](_img/widget-query-results.png)
 
@@ -419,7 +419,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 
 <a id="query-tile-widget"></a> 
-###Query tile 
+### Query tile 
 
 ![Query tile widget](_img/widget-query-tile.png)
 
@@ -433,7 +433,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
-###Sprint burndown 
+### Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
@@ -446,7 +446,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 
 <a id="sprint-capacity-widget"></a> 
 
-###Sprint capacity 
+### Sprint capacity 
 
 ![Sprint capacity widget](_img/widget-sprint-capacity.png)
 
@@ -457,7 +457,7 @@ To plan and monitor their sprint resources, team set capacity and update Remaini
 
 
 <a id="sprint-overview-widget"></a> 
-###Sprint overview 
+### Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
@@ -489,7 +489,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 ::: moniker-end
 
 <a id="work-links-widget"></a> 
-###Work links 
+### Work links 
 
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
@@ -512,7 +512,7 @@ Provides quick access to open the following Agile tools and team resources:
 ::: moniker-end
 
 <a id="code-tile-widget"></a> 
-###Code tile	
+### Code tile    
 
 ![Code tile widget](_img/widget-code-tile.png)
 
@@ -525,7 +525,7 @@ Requires TFS 2015.1 or later version.
 ----
 
 <a id="pull-request-widget"></a> 
-###Pull request 
+### Pull request 
 
 ![Pull request widget](_img/widget-catalog-pull-request.png)
 
@@ -553,7 +553,7 @@ Requires TFS 2015.2 or later version.
 
 
 <a id="build-history-widget"></a> 
-###Chart for build history  
+### Chart for build history  
 
 ![Build history widget](_img/widget-build-history-chart.png)   
 
@@ -627,7 +627,7 @@ Configurable widget that you can use to track quality continuously from a build 
 ::: moniker range=">= tfs-2017"
 
 <a id="chart-test-plan-widget"></a> 
-###Chart for test plans  
+### Chart for test plans  
 	
 ![Chart work item query widget](_img/widget-chart-test-plans.png)  
 

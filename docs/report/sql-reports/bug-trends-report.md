@@ -40,22 +40,22 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.  
+- Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.  
   
- For more information, see [Filtering the Report](#Changing) later in this article.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Tracking Bugs  
  For the Bug Trends report to be useful and accurate, the team must perform the following activities:  
   
--   Define bugs, and specify their **Iteration** and **Area** paths.  
+- Define bugs, and specify their **Iteration** and **Area** paths.  
   
--   Update the **State** of each bug as it is fixed, verified, and then closed.  
+- Update the **State** of each bug as it is fixed, verified, and then closed.  
   
--   Specify the **Priority** and **Severity** of each bug during triage.  
+- Specify the **Priority** and **Severity** of each bug during triage.  
   
- You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
+  You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
@@ -96,13 +96,13 @@ You can use the Bug Trends report to help track the rate at which your team is d
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Bug Trends report or change its display in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the bugs that are counted in the report by specifying iteration and area paths, state, priority, or severity.  
+- Filter the bugs that are counted in the report by specifying iteration and area paths, state, priority, or severity.  
   
- The following illustration shows the available filters.  
+  The following illustration shows the available filters.  
   
- ![Filters for Bug Trends report](_img/procguid_bugtrendsfilters.png "ProcGuid_BugTrendsFilters")  
+  ![Filters for Bug Trends report](_img/procguid_bugtrendsfilters.png "ProcGuid_BugTrendsFilters")  
   
 #### To filter the bugs that are counted in the report  
   

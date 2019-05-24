@@ -13,17 +13,15 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Test shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-shortcuts.png)</td>
+<td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/test-shortcuts.png" alt="Test shortcuts"/></td>
 <td>
-**Test**<br/><br/>
-&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;Open test plans<br/>
-&nbsp;&nbsp;**m**&nbsp;&nbsp;&nbsp;Open shared parameters<br/> 
-&nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;&nbsp;Open runs<br/>     
-&nbsp;&nbsp;**h**&nbsp;&nbsp;Open machines<br/>
+<strong>Test</strong><br/><br/>
+&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open test plans<br/>
+&nbsp;&nbsp;<strong>m</strong>&nbsp;&nbsp;&nbsp;Open shared parameters<br/> 
+&nbsp;&nbsp;<strong>r</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open runs<br/><br/>&nbsp;&nbsp;<strong>h</strong>&nbsp;&nbsp;Open machines<br/>
 <!---&nbsp;&nbsp;**l**&nbsp;&nbsp;&nbsp;&nbsp;Open load test    --> 
 </td>
-<tr>    
-<td>![Test Plan shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-plan-shortcuts.png)</td>
+<tr><br/><td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/test-plan-shortcuts.png" alt="Test Plan shortcuts"/></td>
 <td>
 
 **Test plan**<br/><br/>
@@ -43,24 +41,22 @@ You can use the following keyboard shortcuts when working in **Test Plans** or *
 <br/>
 </td> 
 </tr>
-<tr>   
-<td>![Test parameter shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-parameters-shortcuts.png)</td>
+<tr><br/><td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/test-parameters-shortcuts.png" alt="Test parameter shortcuts"/></td>
 <td>
-**Parameters**<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;View parameter set grid<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;Open properties<br/>
+<strong>Parameters</strong><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong>&nbsp;&nbsp;&nbsp;&nbsp;View parameter set grid<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open properties<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;**c,s**&nbsp;&nbsp;&nbsp;&nbsp;Add parameter set<br/>
-&nbsp;&nbsp;&nbsp;**c,t**&nbsp;&nbsp;&nbsp;&nbsp;Add test case<br/>
-&nbsp;&nbsp;&nbsp;**v,t**&nbsp;&nbsp;&nbsp;&nbsp;Toggle test cases pane<br/>
+&nbsp;&nbsp;&nbsp;<strong>c,s</strong>&nbsp;&nbsp;&nbsp;&nbsp;Add parameter set<br/>
+&nbsp;&nbsp;&nbsp;<strong>c,t</strong>&nbsp;&nbsp;&nbsp;&nbsp;Add test case<br/>
+&nbsp;&nbsp;&nbsp;<strong>v,t</strong>&nbsp;&nbsp;&nbsp;&nbsp;Toggle test cases pane<br/>
 </td> 
 </tr> 
-<tr>    
-<td>![Test run shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/test-run-shortcuts.png)</td>
+<tr><br/><td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/test-run-shortcuts.png" alt="Test run shortcuts"/></td>
 <td>
-**Test runs**<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;Test runs<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;Filter<br/>
+<strong>Test runs</strong><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong>&nbsp;&nbsp;&nbsp;&nbsp;Test runs<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2</strong>&nbsp;&nbsp;&nbsp;&nbsp;Filter<br/>
 </td>
 </tr>
 </tbody>

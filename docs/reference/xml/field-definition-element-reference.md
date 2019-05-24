@@ -22,37 +22,37 @@ You use the **FIELD** (Definition) element to define a work item field and speci
   
 ## Syntax  
   
-> [!NOTE]    
+> [!NOTE]
 > The Boolean data type is supported for Azure DevOps Services and for on-premises TFS 2017.2 and later versions. 
-
+> 
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" 
-type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
-syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum" 
-reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
-   <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-   <ALLOWEXISTINGVALUE />  
-   <CANNOTLOSEVALUE />  
-   <COPY />  
-   <DEFAULT />  
-   <EMPTY />  
-   <FROZEN />  
-   <HELPTEXT> . . . </HELPTEXT>  
-   <MATCH />  
-   <NOTSAMEAS />  
-   <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-   <READONLY />  
-   <REQUIRED />  
-   <SERVERDEFAULT />  
-   <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-   <VALIDUSER />  
-   <WHEN> . . . </WHEN>  
-   <WHENNOT> . . . </WHENNOT>  
-   <WHENCHANGED> . . . </WHENCHANGED>  
-   <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-</FIELD>  
-```  
+> ```XML  
+> <FIELD name="fieldDisplayName" refname="fieldReferenceName" 
+> type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
+> syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum" 
+> reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
+>    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+>    <ALLOWEXISTINGVALUE />  
+>    <CANNOTLOSEVALUE />  
+>    <COPY />  
+>    <DEFAULT />  
+>    <EMPTY />  
+>    <FROZEN />  
+>    <HELPTEXT> . . . </HELPTEXT>  
+>    <MATCH />  
+>    <NOTSAMEAS />  
+>    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+>    <READONLY />  
+>    <REQUIRED />  
+>    <SERVERDEFAULT />  
+>    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+>    <VALIDUSER />  
+>    <WHEN> . . . </WHEN>  
+>    <WHENNOT> . . . </WHENNOT>  
+>    <WHENCHANGED> . . . </WHENCHANGED>  
+>    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+> </FIELD>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  

@@ -44,7 +44,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 Note: you will see the term `extension` used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
 <div class="alert alert-info">
-    Need help getting your integration on the Marketplace? [Contact us](http://go.microsoft.com/fwlink/?LinkId=615292). And, yes, this e-mail address is monitored by real people. 
+    Need help getting your integration on the Marketplace? <a href="http://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](http://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
 </div>
 
 ### Create a publisher
@@ -68,7 +68,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 
 1. Fill your `vss-integration.json` file with the following JSON:
 
-  [!code-javascript[JSON](../_data/integration.json)]
+   [!code-javascript[JSON](../_data/integration.json)]
 
 2. Update the JSON using the following reference:
 
@@ -88,7 +88,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 ![card](../develop/_img/extension-details-page.png)
 
 <div class="alert alert-danger">
-  Make sure the "public" attribute is set to "false" (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 
+  Make sure the &quot;public&quot; attribute is set to &quot;false&quot; (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 
 </div>
 
 <a name="package"></a>
@@ -124,7 +124,7 @@ To share an integration so it can be installed:
 1. Click an integration from the list of displayed items 
 2. Click the **Share** button
 3. Specify the name of the organization to make this integration visible to.
-  - For example, to make an integration visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
+   - For example, to make an integration visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 #### Update an item
 

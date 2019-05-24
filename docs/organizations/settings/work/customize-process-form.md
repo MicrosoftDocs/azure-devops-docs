@@ -112,14 +112,14 @@ Add a custom page when you have several custom fields that you want to group wit
 	> [!div class="mx-imgBorder"]  
 	> ![Process, Work Item Types, Bug: Layout, New page option](_img/process/cpform-add-page.png)   
 
-0. Label the page.
+1. Label the page.
 
 	<img src="_img/process/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" style="border: 2px solid #C3C3C3;" />
 
 	<a id="edit-page"></a>
-0. Edit the page to add [fields](customize-process-field.md) or [groups](#groups).  
+2. Edit the page to add [fields](customize-process-field.md) or [groups](#groups).  
 
-0. When you've finished adding groups and fields to the page, verify your layout is as expected. Refresh your browser and open a work item of the type you just customized. 
+3. When you've finished adding groups and fields to the page, verify your layout is as expected. Refresh your browser and open a work item of the type you just customized. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug work item form, Custom page](_img/process/cpform-custom-page-in-form.png) 

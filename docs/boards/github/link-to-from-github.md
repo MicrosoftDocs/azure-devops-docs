@@ -89,7 +89,7 @@ Examples:
 	> [!div class="mx-imgBorder"]  
 	> ![Links tab, Add link to issue](_img/link/add-link-from-links-tab.png) 
 
-0. From the Add link dialog, select one of the <strong>GitHub</strong> link types, enter the URL to the commit, pull request, or issue and then choose <strong>OK</strong>.  
+1. From the Add link dialog, select one of the <strong>GitHub</strong> link types, enter the URL to the commit, pull request, or issue and then choose <strong>OK</strong>.  
 
 	Here, we add a link to a GitHub pull request. 
 
@@ -114,7 +114,7 @@ Examples:
 	> [!div class="mx-imgBorder"]  
 	> ![Add link](_img/link/add-link-development.png) 
 
-0. From the Add link dialog, select the **GitHub Commit** or **GitHub Pull Request** link type, enter the URL to the commit or pull request, and then choose **OK**.  
+1. From the Add link dialog, select the **GitHub Commit** or **GitHub Pull Request** link type, enter the URL to the commit or pull request, and then choose **OK**.  
 
 	Here, we add a link to a GitHub pull request. 
 

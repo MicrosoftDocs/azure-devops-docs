@@ -246,7 +246,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 - [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 - [Applying filters to historical data](../powerbi/analytics-historical-filtering.md)
 
-####Industry resources 
+#### Industry resources 
 * [Managing Myopia with Release Burndowns](https://www.scrumalliance.org/community/articles/2010/may/managing-myopia-with-release-burndowns)
 
 

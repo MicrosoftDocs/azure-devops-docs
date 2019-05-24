@@ -25,7 +25,7 @@ the Analytics Service via Excel.
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 1. To get started, Open Excel 2016 (this will work with earlier versions of Excel. You will need to have installed
-the Power Query add-in which you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
+   the Power Query add-in which you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
 
 2. Create a blank workbook
 
@@ -37,9 +37,9 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 4. Enter the URL in the format below and choose **OK**:  
 	::: moniker range="azure-devops"
 
-	```
+    ```
 	https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/
-	```  
+    ```  
 
 	If the *OrganizationName* is **fabrikam** and the *version* is **v1.0**, then the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
@@ -54,9 +54,9 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 
 	::: moniker range="azure-devops-2019"
 
-	```
+    ```
 	https://{ServerName}:{Port}/tfs/{CollectionName}/_odata/{version}/
-	```  
+    ```  
 
 	If the *CollectionName* is **fabrikam** and the *version* is **v1.0**, then the URL is 
 	`https://{ServerName}:{Port}/tfs/fabrikam/_odata/{v1.0}/`.

@@ -568,9 +568,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/1?
 
 ## Get test run statistics
 <a name="gettestrunstatistic" />
-```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/statistics?api-version={version}
-```
+<code>no-highlight
+GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/statistics?api-version={version}</code>
 
 | Parameter         | Type   | Notes
 |:------------------|:-------|:------------------------
@@ -665,10 +664,10 @@ Content-Type: application/json
   },
   "iteration": { string } ,
   "build": {
-	"id": { int }
+    "id": { int }
   },
   "state": {
-	enum { NotStarted, InProgress, Waiting }
+    enum { NotStarted, InProgress, Waiting }
   },
   "dueDate": { DateTime },
   "pointIds": [
@@ -706,7 +705,7 @@ Content-Type: application/json
 | Query
 | api-version                         | string   |                                    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name                                | string   |		                              | Name of the test run.
+| name                                | string   |                                    | Name of the test run.
 | plan.id                             | int      |                                    | ID of the test plan to contain the run.
 | iteration                           | string   | Root iteration of the project | The iteration in which to create the run.
 | build.id                            | int      |                                    | ID the build to use.
@@ -1066,10 +1065,10 @@ Content-Type: application/json
   "name": { string },  
   "iteration": { string } ,
   "build": {
-	"id": { int }
+    "id": { int }
   },
   "state": {
-	enum { NotStarted, InProgress, Completed, Aborted, Waiting }
+    enum { NotStarted, InProgress, Completed, Aborted, Waiting }
   },
   "dueDate": { DateTime },
   "controller": { string},

@@ -114,8 +114,8 @@ A: This might happen for these reasons:
 
   To buy non-Microsoft extensions from the Visual Studio Marketplace, your Azure Enterprise Agreement administrator must enable Azure Marketplace purchases. Go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) >Manage > Enrollment, and enable Azure Marketplace.
 
-  >[!NOTE]
-  If you get this message: "The ordering organization is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
+  > [!NOTE]
+  > If you get this message: "The ordering organization is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
 
 * Credit card problems
   Purchases from non-Microsoft publishers are charged immediately, not at the end of your billing cycle, like Microsoft resources. This means that if your credit card is declined for any reason, your purchase won't be completed. If this happens, try your purchase again, or contact your credit card customer service.

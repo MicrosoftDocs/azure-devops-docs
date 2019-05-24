@@ -33,10 +33,10 @@ You can get a list of users and groups that have access to your TFS instance by 
 ## Prerequisites
 ::: moniker range="azure-devops" 
 * You must be the organization owner or a member of the Project collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
-::: moniker-end    
-::: moniker range="<= azure-devops-2019" 
+  ::: moniker-end    
+  ::: moniker range="<= azure-devops-2019" 
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
-::: moniker-end 
+  ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -60,14 +60,14 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. Choose **Access levels**, and then **Export audit log**. 
+1. Choose **Access levels**, and then **Export audit log**. 
 
 	<img src="_img/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]   
 	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear. 
 
-0. The user log file is saved as a .csv file to your Download folder.  
+2. The user log file is saved as a .csv file to your Download folder.  
 	To determine the access level assigned to each user or group, open the file in Excel.
 
 ::: moniker-end
@@ -81,14 +81,14 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 	![TFS 2015, Web portal, open the Server settings admin context](_img/ALM_CAL_OpenAdminPage.png)
 
-0. Choose **Access levels**, and then **Export audit log**. 
+1. Choose **Access levels**, and then **Export audit log**. 
 
 	![Control panel, admin context, Export audit log](_img/export-users-audit/tfs-2013-export.png) 
 
 	> [!NOTE]   
 	> If you're not a member of the Team Foundation Server Administrators group, the **Access levels** page won't appear. 
 
-0. The user log file is saved as a .csv file to your Download folder.  
+2. The user log file is saved as a .csv file to your Download folder.  
 	To determine the access level assigned to each user or group, open the file in Excel.
 
 ::: moniker-end

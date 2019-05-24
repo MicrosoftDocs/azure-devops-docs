@@ -23,8 +23,8 @@ Use this guide to sign up and start using Azure Boards. Start with [Sign up and 
 
 Then, read [Track issues and tasks](track-issues-tasks.md) to start adding and tracking issues on the Kanban board. To add columns, swimlanes, or fields to your board, see [Customize your boards](customize-boards.md). 
 
-> [!NOTE]  
-This quickstart guide illustrates how to sign up, create a project based on the Basic process, and start tracking issues and tasks. If you want more information on working with other processes which offer other work item types, such as user stories and bugs, then see [Choose a process](../work-items/guidance/choose-process.md). You can [create additional projects](../../organizations/projects/create-project.md) using different processes.  
+> [!NOTE]
+> This quickstart guide illustrates how to sign up, create a project based on the Basic process, and start tracking issues and tasks. If you want more information on working with other processes which offer other work item types, such as user stories and bugs, then see [Choose a process](../work-items/guidance/choose-process.md). You can [create additional projects](../../organizations/projects/create-project.md) using different processes.  
 
 
 If you use GitHub and want to track your issues in Azure Boards, see [GitHub & Azure Boards](../github/index.md).

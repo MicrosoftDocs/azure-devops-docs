@@ -9,7 +9,7 @@ We're excited to announce the new Azure Pipelines app for Microsoft Teams. You c
 To get started, install the Azure Pipelines app from the Microsoft Teams app store and see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/151_09.png "Azure Pipelines app for Microsoft Teams")
+> ![Badge](../../_img/151_09.png "Azure Pipelines app for Microsoft Teams")
 
 ### Updates to pipeline creation experience
 
@@ -18,4 +18,4 @@ Previously, we had two entry points when you created a build pipeline. One for c
 With this update we removed the preview features toggle so you will have a single entry point that covers both YAML and classic builds. The new experience supports all the repo types that were supported in the classic experience. However, if a repo type supports both YAML and classic builds (e.g., GitHub or Azure Repos), the preference is given to YAML builds. You can always override and choose the classic editor to create a pipeline without YAML.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/151_10.png "New pipeline - where is your code?")
+> ![Badge](../../_img/151_10.png "New pipeline - where is your code?")

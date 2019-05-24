@@ -82,7 +82,8 @@ On **November 19, 2018**, the latest version of Team Foundation Server (the on-p
 
 Many of the featured services in VSTS are now offered as standalone ones in both Azure DevOps Services and Azure DevOps Server RC 1:
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"]  
+> 
 > | VSTS feature name    | Azure DevOps service name | Description |
 > |----------------------|----------------------|-------------|
 > | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
@@ -102,7 +103,7 @@ You can acquire each service separately or all together as Azure DevOps Services
 ## Choose your content version
 
 We support a platform/version selector Toggle the Content version selector dropdown, located above the TOC, to  access the content that is specific to your version. The TOC and content page will refresh to show only that content specific to the selected version. 
- 
+
 ![Documentation version selector](../_shared/_img/version-selector.png)
 
 
@@ -123,7 +124,7 @@ We support a platform/version selector Toggle the Content version selector dropd
 ### Can I still use visualstudio.com to access Azure DevOps Services?
 
 Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. (Specifically, it's `https://dev.azure.com/{your organization}/{your project}`.) If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
- 
+
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 [DevOps overview for Azure DevOps Services and TFS](index.md)

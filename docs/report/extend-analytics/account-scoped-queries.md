@@ -140,7 +140,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0
 When using an organization-scoped query with an ```$expand``` option you must provide an additional filter.
 
 For example, the following organization-scoped query, which uses an ```$expand``` to retrieve the children of all work items&hellip;
-	
+
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
@@ -148,7 +148,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 ```
 
 &hellip;requires an additional filter to verify the children are limited to the specified project:
-	
+
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
@@ -165,7 +165,6 @@ The following query, which uses an ```$expand``` option to retrieve the parent o
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=Project/ProjectName eq 'ProjectA'
   &$expand=Parent
-
 ```
 
 requires an additional filter to verify the parent is limited to the specified project:
@@ -202,7 +201,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 ```
 
 and will fail if you don't have access to all projects.
-	
+
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
 ```OData
@@ -212,7 +211,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 ```
 
 Using `$level` is only supported if you have access to all projects in the collection or when using a project-scoped query:
-	
+
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')

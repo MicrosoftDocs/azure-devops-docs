@@ -29,37 +29,37 @@ You grant or restrict access to various work tracking features by granting users
 <th width="65%">Functional areas set</th>
 </tr>
 <tr>
-<td>**Team administrator role** </td>
+<td><strong>Team administrator role</strong> </td>
 <td>
 <ul>
-<li>[Manage teams and configure team tools](../settings/manage-teams.md)</li>
-<li>[Define and edit team dashboards](../../report/dashboards/dashboards.md)</li>
-<li>[Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)</li>
-<li>[Add team administrators](../settings/add-team-administrator.md)</li>
+<li><a href="../settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../settings/manage-teams.md)">Manage teams and configure team tools</a></li>
+<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Define and edit team dashboards](../../report/dashboards/dashboards.md)">Define and edit team dashboards</a></li>
+<li><a href="../../boards/backlogs/work-item-template.md" data-raw-source="[Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md)">Add and manage team-level work item templates</a></li>
+<li><a href="../settings/add-team-administrator.md" data-raw-source="[Add team administrators](../settings/add-team-administrator.md)">Add team administrators</a></li>
 </ul>
-To add a user to the team administrator role, see [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
+To add a user to the team administrator role, see <a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[Add a team administrator](../../organizations/settings/add-team-administrator.md)">Add a team administrator</a>. 
 </td>
 </tr>
 <tr>
-<td>**Object-level permissions** </td>
+<td><strong>Object-level permissions</strong> </td>
 <td>
 <ul>
-<li>[Modify work items under an area path](#set-permissions-area-path)</li>
-<li>[Create and edit nodes under an area path or iteration path](#set-permissions-area-path)</li>
-<li>[Define and edit queries or query folders](#work-item-queries)</li>
-<li>[Define and edit Delivery Plans](#plan-permissions)</li>
+<li><a href="#set-permissions-area-path" data-raw-source="[Modify work items under an area path](#set-permissions-area-path)">Modify work items under an area path</a></li>
+<li><a href="#set-permissions-area-path" data-raw-source="[Create and edit nodes under an area path or iteration path](#set-permissions-area-path)">Create and edit nodes under an area path or iteration path</a></li>
+<li><a href="#work-item-queries" data-raw-source="[Define and edit queries or query folders](#work-item-queries)">Define and edit queries or query folders</a></li>
+<li><a href="#plan-permissions" data-raw-source="[Define and edit Delivery Plans](#plan-permissions)">Define and edit Delivery Plans</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>**Project-level permissions** </td>
+<td><strong>Project-level permissions</strong> </td>
 <td>
 <ul>
-<li>[Create work item tags](../../boards/queries/add-tags-to-work-items.md)</li>
-<li>[Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)</li>
-<li>[Move work items out of a project](#move-delete-permissions)</li>
-<li>[Permanently delete work items](#move-delete-permissions)</li>
-<li>[Delete test artifacts](#delete-test-permissions)</li>
+<li><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Create work item tags](../../boards/queries/add-tags-to-work-items.md)">Create work item tags</a></li>
+<li><a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)">Delete and restore work items</a></li>
+<li><a href="#move-delete-permissions" data-raw-source="[Move work items out of a project](#move-delete-permissions)">Move work items out of a project</a></li>
+<li><a href="#move-delete-permissions" data-raw-source="[Permanently delete work items](#move-delete-permissions)">Permanently delete work items</a></li>
+<li><a href="#delete-test-permissions" data-raw-source="[Delete test artifacts](#delete-test-permissions)">Delete test artifacts</a></li>
 <li>Edit shared work item queries</li>
 <li>Add teams and team administrators</li>
 <li>Create and manage area and iteration paths</li>
@@ -69,14 +69,13 @@ To add a user to the team administrator role, see [Add a team administrator](../
 </td>
 </tr>
 <tr>
-<td>**Project collection-level permissions** </td>
+<td><strong>Project collection-level permissions</strong> </td>
 <td>
 <ul>
 <li>Create, delete, or edit a process (Inheritance process model)</li> 
 <li>Delete field from account (Inheritance process model)</li>
 <li>Manage process permissions (Inheritance process model)</li> 
-<li>Edit collection level permissions</li>  
-</ul>
+<li>Edit collection level permissions</li><br/></ul>
 Project collection-level permissions include all permissions you can set at the project-level.
 </td>
 </tr>
@@ -137,20 +136,20 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Work>Project Configuration](../settings/_img/areas/open-project-work-areas-settings-vert.png)   
+    > [!div class="mx-imgBorder"]  
+    > ![Project Settings>Work>Project Configuration](../settings/_img/areas/open-project-work-areas-settings-vert.png)   
 
 0. Choose the ... context menu for the node you want to manage and select **Security**.  
-	
-	![Open the security dialog](_img/set-permissions-area-node-open.png)
+
+    ![Open the security dialog](_img/set-permissions-area-node-open.png)
 
 0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
-	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
+    For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
-	![Permissions for an area node](_img/set-permissions-area-node-dialog.png)  
-	
-	You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
+    ![Permissions for an area node](_img/set-permissions-area-node-dialog.png)  
+
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
 ::: moniker-end
 
@@ -158,19 +157,19 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Open Admin context, project level](../settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Web portal, Open Admin context, project level](../settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
-	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
+    If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
 0. Choose the ... context menu for the node you want to manage and select **Security**.  
-	
-	![Open the security dialog](_img/set-permissions-area-node-open.png)
+
+    ![Open the security dialog](_img/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -178,19 +177,19 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
-	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
+    ![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
-0. Choose the context menu for the node you want to manage.  
-	
-	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
+1. Choose the context menu for the node you want to manage.  
 
-0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
+    ![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
-	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
+2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
-	![Permissions for an area node](_img/set-permissions-area-node-dialog.png)  
-	
-	You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
+    For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
+
+    ![Permissions for an area node](_img/set-permissions-area-node-dialog.png)  
+
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
 ::: moniker-end
 
@@ -223,7 +222,7 @@ Delivery Plans are an object within a project. You manage plan permissions for e
 > ![Permissions dialog for a delivery plan](../../boards/plans/_img/permissions/permissions-plans-dialog.png)
 
 To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md). To learn more about Delivery Plans, see [Review team plans](../../boards/plans/review-team-plans.md).
- 
+
 ::: moniker-end
 
 
@@ -249,7 +248,7 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="manage-test-artifacts"></a>
 
 ## Manage test artifacts
-  
+
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
 [Open the **Security** page for area paths](#set-permissions-area-path) and choose the user or group you want to grant permissions. 
@@ -275,15 +274,15 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 1. Open the &hellip; context menu for the inherited process and choose **Security**.  To open this page, see [Customize a project using an inherited process](../settings/work/customize-process.md).   
 
-	![Process, Open security dialog](_img/process/mprocess-open-security-dialog-inherited.png)  
+    ![Process, Open security dialog](_img/process/mprocess-open-security-dialog-inherited.png)  
 
 2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then choose **Save changes**. 
 
-	Here we add Christie Church and allow her to edit the process.  
- 
-	![Permissions for a process dialogue](_img/process/mprocess-security-dialog-inherited.png)    
+    Here we add Christie Church and allow her to edit the process.  
 
-> [!NOTE]  	  
+    ![Permissions for a process dialogue](_img/process/mprocess-security-dialog-inherited.png)    
+
+> [!NOTE]     
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
@@ -306,6 +305,6 @@ see [Modify or add a custom work item type (WIT)](../../reference/add-modify-wit
 
 ## Related articles 
 
-*	[Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
-*	[Permissions and access for work tracking](permissions-access-work-tracking.md) 
-*	[Permissions and groups reference](permissions.md) 
+*   [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
+*   [Permissions and access for work tracking](permissions-access-work-tracking.md) 
+*   [Permissions and groups reference](permissions.md) 

@@ -45,11 +45,11 @@ You can use the Issue Trends report to track the rate at which the team is findi
 ##  <a name="Interpreting"></a> Interpreting the Report  
  You can review the Issue Trends report to determine whether the team is addressing the Issues that it is identifying. Specifically, you can find answers to the following questions:  
   
--   How often is the team identifying Issues?  
+- How often is the team identifying Issues?  
   
--   Is the team resolving Issues as quickly as they are identifying them?  
+- Is the team resolving Issues as quickly as they are identifying them?  
   
- If the team identifies more Issues than it can address, the Issue Trends report will show that the team is closing Issues more slowly. The team might need to reexamine priorities to determine whether the Issues are actually problems that it should address or if the team can ignore them.  
+  If the team identifies more Issues than it can address, the Issue Trends report will show that the team is closing Issues more slowly. The team might need to reexamine priorities to determine whether the Issues are actually problems that it should address or if the team can ignore them.  
   
 ##  <a name="Updating"></a> Customizing the Report  
  You can update the Issue Trends report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  

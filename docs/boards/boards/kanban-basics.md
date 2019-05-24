@@ -58,11 +58,11 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 <tbody>
 <tr valign="top">
 <td>
-![User story workflow states](_img/ALM_KB_Workflow.png)
+<img src="_img/ALM_KB_Workflow.png" alt="User story workflow states"/>
 
 </td>
 <td>
-![Default kanban board, Agile template](_img/ALM_KB_Empty.png)
+<img src="_img/ALM_KB_Empty.png" alt="Default kanban board, Agile template"/>
 
 </td>
 </tr>
@@ -95,7 +95,7 @@ When they do exceed the limit, the column count displays red. Teams can use this
 ## 3. Track work in progress
 
 <meta name="description" content="Kanban tools track progress" />
-Once you've configured your Kanban board to match how your team works, you're ready to use it.
+Once you&#39;ve configured your Kanban board to match how your team works, you&#39;re ready to use it.
 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by moving it to a downstream stage.
 

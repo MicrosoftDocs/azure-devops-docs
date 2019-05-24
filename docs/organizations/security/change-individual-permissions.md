@@ -50,14 +50,14 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project Settings** > **Security**.
 
-	*To see the full image, click to expand*.
+    *To see the full image, click to expand*.
 
-	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
+    [![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
 2. Choose **Create group** to open the dialog for adding a group.
 
-	> [!div class="mx-imgBorder"]
-	> ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
+    > [!div class="mx-imgBorder"]
+    > ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
 
 3. Enter a name for the group, and optionally a description.
 
@@ -73,13 +73,13 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
+    > [!div class="mx-imgBorder"]
+    > ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
 
 2. Choose **Create group** to open the dialog for adding a group.
 
-	> [!div class="mx-imgBorder"]
-	> ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
+    > [!div class="mx-imgBorder"]
+    > ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
 
 3. Enter a name for the group, and optionally a description.
 
@@ -97,8 +97,8 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. To set permissions for the custom group you  created, choose the group name and then set one or more permissions.
 
-	> [!div class="mx-imgBorder"]
-	> ![Set permissions for a project-level custom security group](_img/change-individual-permissions/team-admin-group-set-permissions.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Set permissions for a project-level custom security group](_img/change-individual-permissions/team-admin-group-set-permissions.png)  
 
     For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
@@ -112,8 +112,8 @@ You add members to a custom security group in the same way you add users to a bu
 
 0. Choose the security group, choose **Members**, and then choose **Add**.
 
-	> [!div class="mx-imgBorder"]
-	> ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
 
 1. Enter the user identity into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
@@ -126,8 +126,8 @@ You add members to a custom security group in the same way you add users to a bu
 
 1. From the project-level **Security** page, enter the user identity in the **Filter users and groups** box. Then, select the account whose permissions you want to change.
 
-	> [!div class="mx-imgBorder"]
-	> ![Filter and select a user account](_img/change-individual-permissions/filter-user-account.png)  
+    > [!div class="mx-imgBorder"]
+    > ![Filter and select a user account](_img/change-individual-permissions/filter-user-account.png)  
 
 2. Change the permission, setting a permission as **Allow** or **Deny**.
 
@@ -155,11 +155,11 @@ From the web portal, open the Security dialog for the object whose permissions y
 <th width="65%">Task</th>
 </tr>
 <tr>
-<td>Wiki & Dashboard permissions</td>
+<td>Wiki &amp; Dashboard permissions</td>
 <td>
 <ul>
-<li>[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)</li>
-<li>[Dashboards](../../report/dashboards/dashboard-permissions.md)</li>
+<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)">README &amp; Wiki</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Dashboards](../../report/dashboards/dashboard-permissions.md)">Dashboards</a></li>
 </ul>
 </td>
 </tr>
@@ -167,12 +167,12 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>DevOps (code, build, test, release) permissions </td>
 <td>
 <ul>
-<li>[Git branch](../../repos/git/branch-permissions.md)</li>
-<li>[Git repository](set-git-tfvc-repository-permissions.md)</li>
-<li>[TFVC](set-git-tfvc-repository-permissions.md)</li>
-<li>[Builds](../../pipelines/policies/set-permissions.md)</li>
-<li>[Release pipeline security](../../pipelines/policies/set-permissions.md)</li>
-<li>[Approvals and approvers](../../pipelines/release/approvals/index.md)</li> 
+<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
+<li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
 </ul>
 </td>
 </tr>
@@ -180,10 +180,9 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>Work tracking permissions</td>
 <td>
 <ul>
-<li>[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)</li>
-<li>[Work item query and folder](../../boards/queries/set-query-permissions.md)</li>
-<li>[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)</li>  
-</ul>
+<li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a></li>
+<li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder](../../boards/queries/set-query-permissions.md)">Work item query and folder</a></li>
+<li><a href="set-permissions-access-work-tracking.md#plan-permissions" data-raw-source="[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)">Plan permissions</a></li><br/></ul>
 </td>
 </tr>
 </tbody>
@@ -191,7 +190,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 1. From the Security dialog, choose **Add**. 
 
-	<img src="_img/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
+    <img src="_img/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
 
 2. Enter the user ID, choose search, and then make your selection in the left pane.
 

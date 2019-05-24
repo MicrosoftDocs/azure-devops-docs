@@ -19,36 +19,38 @@
         }
     ]
     ```
-| Property | Description |
-| --- | --- |
-| text | Text that will appear on the menu item. |
-| title | Tooltip text that will appear on the menu item. |
-| icon | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri. |
-| groupId | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../../test/discover-menu-group-ids.md) |
-| uri | URI to a page that registers the menu action handler (see below). |
-| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution id. |
 
-1. Add an HTML page called ```action.html``` to your web app to handle your action.
+   |      Property      |                                                                      Description                                                                       |
+   |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |        text        |                                                        Text that will appear on the menu item.                                                         |
+   |       title        |                                                    Tooltip text that will appear on the menu item.                                                     |
+   |        icon        |                              URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.                               |
+   |      groupId       | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../../test/discover-menu-group-ids.md) |
+   |        uri         |                                           URI to a page that registers the menu action handler (see below).                                            |
+   | registeredObjectId |                                (Optional) Name of the registered menu action handler. Defaults to the contribution id.                                 |
 
-	```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Action Sample</title>
-	</head>
-	<body>
-		<div>
-			The end user doesn't see the content on this page.
-			It is only in the background to handle the contributed menu item being clicked.
-		</div>
-	</body>
-	</html>
-	```
 
-1. Register a handler object to handle your action. For now, just raise an alert.
+2. Add an HTML page called ```action.html``` to your web app to handle your action.
 
-	```html
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Action Sample</title>
+    </head>
+    <body>
+        <div>
+            The end user doesn't see the content on this page.
+            It is only in the background to handle the contributed menu item being clicked.
+        </div>
+    </body>
+    </html>
+    ```
+
+3. Register a handler object to handle your action. For now, just raise an alert.
+
+    ```html
     <script src="sdk/scripts/VSS.SDK.js"></script>
     <script>
          VSS.init();
@@ -69,9 +71,9 @@
         // Associate the menuContributionHandler object with the "myAction" menu contribution from the manifest.
         VSS.register("myAction", menuContributionHandler);
     </script>
-	```
+    ```
 
-1. Install your extension and try it out.
-The action has been added to the context menu for queries and folders in the queries hub (work hub group).
+4. Install your extension and try it out.
+   The action has been added to the context menu for queries and folders in the queries hub (work hub group).
 
-	![action in the context menu of a query](./_img/create-action/action.png)
+    ![action in the context menu of a query](./_img/create-action/action.png)

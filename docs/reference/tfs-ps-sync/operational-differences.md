@@ -24,15 +24,15 @@ ms.date: 01/12/2017
 ## Benefits of integrating TFS with Project Server  
  Integration between TFS and Project Server can become a considerable advantage for organizations that want to bridge the collaboration gap between their project management offices and their software development teams. By integrating the two server products, teams can work together more effectively in the following ways:  
   
--   Acquire up-to-date insight into portfolio execution, alignment with strategic objectives, and resource usage of software development projects by leveraging the quantitative data in different systems.  
+- Acquire up-to-date insight into portfolio execution, alignment with strategic objectives, and resource usage of software development projects by leveraging the quantitative data in different systems.  
   
--   Automate the sharing of project information across teams, and improve coordination between teams that use disparate methodologies, such as waterfall and agile, through common data and agreed-upon metrics.  
+- Automate the sharing of project information across teams, and improve coordination between teams that use disparate methodologies, such as waterfall and agile, through common data and agreed-upon metrics.  
   
--   Enable development and project-management teams to collaborate and communicate project timelines and progress by using familiar tools such as Visual Studio, Microsoft Project, and SharePoint Products.  
+- Enable development and project-management teams to collaborate and communicate project timelines and progress by using familiar tools such as Visual Studio, Microsoft Project, and SharePoint Products.  
   
- If Project Server is not deployed, you can use the Team Foundation plug-in to Microsoft Project to manage projects based on work items in Team Foundation. When you install Visual Studio or Team Explorer, the Team Foundation plug-in to Microsoft Project is installed. By using the plug-in, you can add and change TFS work item data. You can [plan projects, schedule tasks, assign resources, and track changes](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md). Different users can update work items from different project plans.  
+  If Project Server is not deployed, you can use the Team Foundation plug-in to Microsoft Project to manage projects based on work items in Team Foundation. When you install Visual Studio or Team Explorer, the Team Foundation plug-in to Microsoft Project is installed. By using the plug-in, you can add and change TFS work item data. You can [plan projects, schedule tasks, assign resources, and track changes](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md). Different users can update work items from different project plans.  
   
- The following table compares the main tasks that you can perform by using the Team Foundation plug-in to Microsoft Project with those that require integration of the two server products. You can use the plug-in with all editions of Project 2007, Project 2010, and Project 2013. To integrate TFS and Project Server, you must install Project Professional 2007, Project Professional 2010, or Project Professional 2013.  
+  The following table compares the main tasks that you can perform by using the Team Foundation plug-in to Microsoft Project with those that require integration of the two server products. You can use the plug-in with all editions of Project 2007, Project 2010, and Project 2013. To integrate TFS and Project Server, you must install Project Professional 2007, Project Professional 2010, or Project Professional 2013.  
   
 |Feature|Team Foundation plug-in to Microsoft Project|TFS and Project Server Integration|  
 |-------------|--------------------------------------|----------------------------------------|  

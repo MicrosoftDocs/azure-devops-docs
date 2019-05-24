@@ -10,11 +10,11 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Aug 27
+# Team Foundation Service updates - Aug 27
 
 Last sprint was mostly focused on new project management features – kanban and some task board improvements. This sprint, we’ve turned our attention to more code centric improvements.
 
-##A new source viewer and diff experience
+## A new source viewer and diff experience
 
 Probably the most exciting improvement this sprint is a new source viewer and diff experience. Until this sprint, we had a very simple source code browsing experience. You can see an example here…
 
@@ -32,11 +32,11 @@ The new source viewer has also been used to replace our previous “diff” expe
 
 ![diff viewer](_img/8_27_04.png)
 
-##Updates to the hosted build image
+## Updates to the hosted build image
 
 We updated the build VM image on our hosted build service, adding some new components that people have been asking for… We’ve added SharePoint 2010 to the hosted build image so that you can now do hosted builds of your SharePoint components. There are a number of other things that we are working on (WiX, Phone Tools, etc) that we weren’t quite able to get in for this update but will as soon as we can.
 
-##Basic auth support
+## Basic auth support
 
 A couple of weeks ago we [announced](http://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
 

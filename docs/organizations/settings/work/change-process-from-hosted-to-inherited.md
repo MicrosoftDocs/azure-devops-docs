@@ -38,19 +38,19 @@ After you've verified your customizations, you can now apply the inherited proce
 	> [!div class="mx-imgBorder"]  
 	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)
 
-0. Open the &hellip; context menu for the project and choose the **Change process**&hellip; option. 
+1. Open the &hellip; context menu for the project and choose the **Change process**&hellip; option. 
 
 	Here we open the menu for the Fabrikam Test project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Fabrikam Test project context menu, Choose Change process](_img/migration/change-project-process-to-inherited.png)
 	
-0. Choose the inherited process that you created. The system lists only those processes that are valid for the selected project.	
+2. Choose the inherited process that you created. The system lists only those processes that are valid for the selected project.    
   
 	> [!div class="mx-imgBorder"]  
 	> ![Change process to an inherited process dialog](_img/migration/change-process-dialog.png) 
 
-0. Choose **Ok**. 
+3. Choose **Ok**. 
 
 
 ## Related articles
