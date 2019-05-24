@@ -35,15 +35,15 @@ You can query for links between bugs, tasks, and other types of work items by us
   
  You can use the following sample query to find the following types of information:  
   
--   total number of hours for completed work  
+- total number of hours for completed work  
   
--   original estimated work  
+- original estimated work  
   
--   remaining work  
+- remaining work  
   
--   total story points for each user story in a team project under a specified area path  
+- total story points for each user story in a team project under a specified area path  
   
- For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=178080).  
+  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=178080).  
   
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  

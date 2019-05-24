@@ -1469,7 +1469,7 @@ Extends: [ExecutionInput](#ExecutionInput)
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }
+The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
 
 
 | Field        | Type      | Notes

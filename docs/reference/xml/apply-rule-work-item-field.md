@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 ---
 
 # Add a rule to a work item type  
- 
+
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
@@ -39,6 +39,7 @@ For information on modifying fields or adding field rules to a WIT definition fi
 [!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
 
 <a id="help-text" /> 
+
 ## Help text
 
 You can customize the help text or tooltip text that appears when a user points to a field that appears on a work item form. You can customize and localize the Help text for the same field that appears in different WITs and different projects. Help text is restricted to 255 Unicode characters.
@@ -46,11 +47,11 @@ You can customize the help text or tooltip text that appears when a user points 
 The following example shows the assignment of Help text to a custom Business Justification field:
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
-   <HELPTEXT>Only required when you set the Urgency field to Need Immediately. </HELPTEXT>
-</FIELD>
-```
+> ```XML
+> <FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
+>    <HELPTEXT>Only required when you set the Urgency field to Need Immediately. </HELPTEXT>
+> </FIELD>
+> ```
 
 To provide users guidance that exceeds the 255 characters limit, see [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md).
 
@@ -58,6 +59,7 @@ To provide users guidance that exceeds the 255 characters limit, see [Provide he
 >The presence of `HELPTEXT` adds to the size of your data store and can impact scalability. If you support several hundreds of projects within a single TFS collection or instance, be conservative in your use of `HELPTEXT` rules.
 
 <a id="pick-list" /> 
+
 ## Pick list rules
 
 Pick list rules define the values that a user can or can't choose for a String field. Values defined in a pick list appear on a work item form and the query editor. You can combine lists, and expand or contract lists. 
@@ -85,7 +87,7 @@ Pick list rules define the values that a user can or can't choose for a String f
 </tr>
 <tr>
 <td><p><strong>PROHIBITEDVALUES</strong></p></td>
-<td><p>Prevents specified values from being assigned. The work item can't be saved if the field contains a prohibited value.</p>
+<td><p>Prevents specified values from being assigned. The work item can&#39;t be saved if the field contains a prohibited value.</p>
 <p></p></td>
 </tr>
 <tr>
@@ -99,11 +101,13 @@ For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
 
 
 <a id="value-rules" /> 
+
 ## Assign value rules
 
 Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
 <a id="clear" /> 
+
 ### Clear, set defaults, copy, or match a pattern
 
 These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern.
@@ -126,12 +130,12 @@ These rules support setting defaults, copying values from one field to another, 
 </tr>
 <tr>
 <td><p><strong>EMPTY</strong></p></td>
-<td><p>Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use <strong>EMPTY</strong> with <strong>READONLY</strong>.</p>
-<p><strong>EMPTY</strong> is primarily used [during state transition](transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.</p></td>
+<td><p>Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn&#39;t use <strong>EMPTY</strong> with <strong>READONLY</strong>.</p>
+<p><strong>EMPTY</strong> is primarily used <a href="transition-xml-element.md" data-raw-source="[during state transition](transition-xml-element.md)">during state transition</a> to clear fields that apply to the state to which the item is transitioning.</p></td>
 </tr>
 <tr>
 <td><p><strong>MATCH</strong></p></td>
-<td><p>Forces entries made to a String field to conform to a [specified pattern of characters or numbers](apply-pattern-matching-to-string-field.md).</p></td>
+<td><p>Forces entries made to a String field to conform to a <a href="apply-pattern-matching-to-string-field.md" data-raw-source="[specified pattern of characters or numbers](apply-pattern-matching-to-string-field.md)">specified pattern of characters or numbers</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>SERVERDEFAULT</strong></p></td>
@@ -148,6 +152,7 @@ For the syntax structure and examples, see [Define a default value or copy a val
 
 
 <a id="require" /> 
+
 ### Require, read-only, and restrict values  
 
 These rules specify restrictions on specifying or changing the value of a field.
@@ -176,7 +181,7 @@ These rules specify restrictions on specifying or changing the value of a field.
 <td><p><strong>READONLY</strong></p></td>
 <td><p>Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.</p>
 <p>Do not use <strong>READONLY</strong> with the <strong>EMPTY</strong> element because <strong>EMPTY</strong> also makes a field read-only. If you combine these elements, results will be inconsistent.</p>
-<p>In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.</p></td>
+<p>In addition, you can make a field appear as read-only from the work item form using the <code>Control</code> element <code>ReadOnly</code> attribute. The field can be written to by other clients, but not through the work item form.</p></td>
 </tr>
 <tr>
 <td><p><strong>REQUIRED</strong></p></td>
@@ -207,14 +212,15 @@ You can use the **VALIDUSER** rule only when you refer to person-name fields. Th
 -   Changed By (System.ChangedBy)  
 -   Closed By (System.ClosedBy)  
 -   Created By (System.CreatedBy)  
- 
+
 In addition to the system fields, you can create a custom string field and use it as a person-named field. Also, you can synchronize custom person-named fields with Active Directory (specify syncnamechanges="true").
 
 Work item fields do not distinguish between user identities in different domains. Therefore, "Fabrikam\\ctsoapo" and "Contoso\\ctsoapo" are treated as the same user when they are entered into a field that uses the **VALIDUSER** rule.
 
 -->
 
-<a id="conditional-rules" /> 
+<a id="conditional-rules" />
+ 
 ## Conditional rules
 
 Conditional rules let you specify when a set of rules will be applied to a parent field. You can set conditions based on whether another field is assigned (or not assigned) a specified value or when another field changes (or doesn't change). You can include pick list and assign value rules within a conditional rule element.
@@ -233,15 +239,15 @@ Conditional rules let you specify when a set of rules will be applied to a paren
 </tr>
 <tr>
 <td><p><strong>WHENNOT</strong></p></td>
-<td><p>Specifies the rules to apply to the parent field when another field isn't assigned a specified value.</p></td>
+<td><p>Specifies the rules to apply to the parent field when another field isn&#39;t assigned a specified value.</p></td>
 </tr>
 <tr>
 <td><p><strong>WHENCHANGED</strong></p></td>
-<td><p>Specifies the rules to apply to the parent field when a specified field's value changes.</p></td>
+<td><p>Specifies the rules to apply to the parent field when a specified field&#39;s value changes.</p></td>
 </tr>
 <tr>
 <td><p><strong>WHENNOTCHANGED</strong></p></td>
-<td><p>Specifies the rules to apply to the parent field when a specified field's value doesn't change.</p></td>
+<td><p>Specifies the rules to apply to the parent field when a specified field&#39;s value doesn&#39;t change.</p></td>
 </tr>
 </tbody>
 </table>
@@ -249,8 +255,10 @@ Conditional rules let you specify when a set of rules will be applied to a paren
 You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
 
 <a id="apply-ignore" /> 
-## Apply or ignore rules based on user or group  
-You can make a pick list or assign value rule to apply or not apply to a group of users by using the **for** or **not** attributes. Scope the rule to a group. To have the rule scoped to multiple groups, you must create a parent TFS group that includes the set of groups that you want to use.  
+
+## Apply or ignore rules based on user or group
+
+You can make a pick list or assign value rule to apply or not apply to a group of users by using the <strong>for</strong> or <strong>not</strong> attributes. Scope the rule to a group. To have the rule scoped to multiple groups, you must create a parent Azure DevOps group that includes the set of groups that you want to use.  
 
 -   **Make a field required only for a specified group:**
 
@@ -289,13 +297,13 @@ Person-name fields can accept values that reference both users and groups. Field
 
     The [Project] token is used to specify a group that is defined for a project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group. 
 
-	> [!NOTE]    
-	>[Project] is used as is. You don't replace it with the name of your project.
-        
-	Some examples:
+    > [!NOTE]    
+    >[Project] is used as is. You don't replace it with the name of your project.
+
+    Some examples:
 
     -   Team: `[Project]\Fabrikam Team`
-      
+
         When you create a team, a TFS group is created that contains the members assigned to the team.
 
     -   Project group: `[Project]\Contributors`
@@ -337,7 +345,7 @@ To learn more about built-in groups, see [Permissions and groups](../../organiza
 
 
 <a name="system"></a>
-##System field rules
+## System field rules
 
 System fields have System.*Name* reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:
 
@@ -349,7 +357,7 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 
 ## Related articles
-  
+
 - [Add or modify a field](../add-modify-field.md)   
 - [All WITD XML elements reference](all-witd-xml-elements-reference.md)
 
@@ -360,18 +368,18 @@ System fields have System.*Name* reference names, for example System.Title and S
 To avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
-      <HELPTEXT>The user who is working on this work item</HELPTEXT>
-      <ALLOWEXISTINGVALUE />
-      <VALIDUSER />
-      <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
-      <LISTITEM value="Active" />
-      <LISTITEM value="[project]\Contributors" />
-      </ALLOWEDVALUES>
-      <DEFAULT from="field" field="System.CreatedBy" />
-</FIELD>
-```
+> ```XML
+> <FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
+>       <HELPTEXT>The user who is working on this work item</HELPTEXT>
+>       <ALLOWEXISTINGVALUE />
+>       <VALIDUSER />
+>       <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+>       <LISTITEM value="Active" />
+>       <LISTITEM value="[project]\Contributors" />
+>       </ALLOWEDVALUES>
+>       <DEFAULT from="field" field="System.CreatedBy" />
+> </FIELD>
+> ```
 
 ### Apply rules to State and Reason fields
 
@@ -413,15 +421,15 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 The following example restricts modification of the customer severity field when the work item is in the Active state.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<STATE name="Active">
-      <FIELDS>
-      <FIELD refname="MyCorp.Severity" >
-         <READONLY />
-      </FIELD>
-      </FIELDS>
-</STATE>
-```
+> ```XML
+> <STATE name="Active">
+>       <FIELDS>
+>       <FIELD refname="MyCorp.Severity" >
+>          <READONLY />
+>       </FIELD>
+>       </FIELDS>
+> </STATE>
+> ```
 
 
 ### Order in which rules are evaluated 
@@ -469,13 +477,13 @@ The system sets a new value for a field every time a user enters a keystroke wit
 In the following XML example, SubStatus will be emptied as you type "Approved Again" into the Status field because the **WHEN** rule occurs as soon as the user types the letter "e" in Approved, even if the intended final value is not "Approve". For this reason, think carefully when you are using conditional rules.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD refname="MyCorp.SubStatus" />
-   <WHEN field="MyCorp.Status" value="Approve" >
-      <EMPTY />
-   </WHEN>
-</FIELD>
-```
+> ```XML
+> <FIELD refname="MyCorp.SubStatus" />
+>    <WHEN field="MyCorp.Status" value="Approve" >
+>       <EMPTY />
+>    </WHEN>
+> </FIELD>
+> ```
 
 <!--- 
 #### Q: When would I define field rules using global workflow?

@@ -70,13 +70,13 @@ featureFlags:
                     <div class="cardText">
                         <h3>GitHub integration</h3>
                         <p>
-                            <a href="/azure/devops/boards/github/index">GitHub & Azure Boards</a>
+                            <a href="/azure/devops/boards/github/index">GitHub &amp; Azure Boards</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/get-started-yaml">GitHub & Azure Pipelines</a>
+                            <a href="/azure/devops/pipelines/get-started-yaml">GitHub &amp; Azure Pipelines</a>
                         </p>
                         <p>
-                            <a href="/azure/devops-project/azure-devops-project-github">GitHub & Azure DevOps Projects</a>
+                            <a href="/azure/devops-project/azure-devops-project-github">GitHub &amp; Azure DevOps Projects</a>
                         </p>
                     </div>
                 </div>
@@ -233,11 +233,9 @@ featureFlags:
                             <a href="/azure/devops/pipelines/languages/java">Java</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
-                        </p>
+                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a><br/>                        </p>
                         <p>
-                            <a href="/azure/devops/pipelines/index">...plus more</a>   
-                        </p>
+                            <a href="/azure/devops/pipelines/index">...plus more</a><br/>                        </p>
                     </div>
                 </div>
             </div>
@@ -261,7 +259,7 @@ featureFlags:
                             <a href="/azure/devops/test/index">Manual testing</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/index">Exploratory testing & stakeholder feedback</a>
+                            <a href="/azure/devops/project/feedback/index">Exploratory testing &amp; stakeholder feedback</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
@@ -337,7 +335,7 @@ featureFlags:
                             <a href="/azure/devops/server/admin/admin-quick-ref">Manage</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/migrate/index">Migrate & Import</a>
+                            <a href="/azure/devops/migrate/index">Migrate &amp; Import</a>
                         </p>
                     </div>
                 </div>
@@ -354,7 +352,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What's new</h3>
+                        <h3>What&#39;s new</h3>
                         <p>
                             <a href="/azure/devops/release-notes/index">Azure DevOps Services</a>
                         </p>
@@ -384,7 +382,7 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/report/index">Reporting</a></h3>
                         <p>
-                            <a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, & Widgets</a>
+                            <a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, &amp; Widgets</a>
                         </p>
                         <p>
                             <a href="/azure/devops/report/powerbi/index">Power BI integration</a>
@@ -440,7 +438,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/organizations/index">Manage & Configure Resources</a></h3>
+                        <h3><a href="/azure/devops/organizations/index">Manage &amp; Configure Resources</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/scale/index">Teams</a>
                         </p>
@@ -505,7 +503,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/marketplace-extensibility/index">Marketplace & Extensibility</a></h3>
+                        <h3><a href="/azure/devops/marketplace-extensibility/index">Marketplace &amp; Extensibility</a></h3>
                         <p>
                             <a href="/azure/devops/marketplace">Discover extensions</a>
                         </p>

@@ -45,11 +45,11 @@ When you customize your project to support team fields, the Team field tab appea
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-0.  Export the global list for the project collection.
+0. Export the global list for the project collection.
 
-        witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+       witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
-    Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
+   Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
 
 ```XML
@@ -65,11 +65,11 @@ When you customize your project to support team fields, the Team field tab appea
 </gl:GLOBALLISTS>
 ```
 
-0.  Import the global list definition.
+0. Import the global list definition.
 
-        witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+       witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
-    Note that global lists are defined for all projects within a project collection.
+   Note that global lists are defined for all projects within a project collection.
 
 
 
@@ -101,7 +101,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
               </FIELD>
         . . . 
         </FIELDS>
-		```
+        ```
 
     > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
@@ -122,7 +122,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
           </Group>
         . . . 
         </FORM>
-		```
+        ```
 
     Optionally, move the Area Path field to appear before or after the Iteration Path.
 
@@ -158,9 +158,9 @@ Add a custom team field to all work item types (WITs) that are included in the F
   . . .
 ```
 
-4.  Import the definition file.
+4. Import the definition file.
 
-        witadmin importprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
+       witadmin importprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
 
 <a id="config-teamfield">  </a>  
 ### 4. Configure the Team field for each team
@@ -221,14 +221,14 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 **A:** Before you can [configure features for an upgraded project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 
-1.  Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
+1. Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
 
-2.  [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
+2. [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
-  > [!IMPORTANT]  
-  >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+   > [!IMPORTANT]  
+   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
-3.  Modify the ProcessTemplate file, and update the process template name and version number. For example:
+3. Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -239,13 +239,13 @@ For backlog items you create from a team's backlog page, TFS assigns the default
     <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
 ```
 
-4.  As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
+4. As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
 
-5.  As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
+5. As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
 
-6.  [Upload the process template](../boards/work-items/guidance/manage-process-templates.md) that you just modified.
+6. [Upload the process template](../boards/work-items/guidance/manage-process-templates.md) that you just modified.
 
-7.  [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
+7. [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 
 
 

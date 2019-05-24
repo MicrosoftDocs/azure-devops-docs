@@ -68,11 +68,11 @@ As changes occur to work items, code reviews, source control files, and builds, 
 <a id="team-alerts"></a>
 
 ## Set alerts for your team
-1.	If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts. 
+1. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts. 
 
-2.	Open team alerts from Manage TFS Alerts.
+2. Open team alerts from Manage TFS Alerts.
 
-	![Open team alerts](_img/team/ALM_AN_ManageTeamAlerts.png)
+   ![Open team alerts](_img/team/ALM_AN_ManageTeamAlerts.png)
 
 3. Expand the team and open Select New Alert Template. 
 
@@ -86,23 +86,23 @@ As changes occur to work items, code reviews, source control files, and builds, 
 	
 	![Subscriber set to team context](_img/team/ALM_AN_TeamSelector.png)
 
-	> [!TIP]    
-	> For the team context, the alert query interprets the **@Me**  variable as anyone who is a member of the team.
+   > [!TIP]
+   > For the team context, the alert query interprets the <strong>@Me</strong>  variable as anyone who is a member of the team.
 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 
-##Administer alerts for a project
+## Administer alerts for a project
 To administer alerts for a project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 
-###View alerts set for a project 
+### View alerts set for a project 
 
 * From the web admin page for a project, open the Alerts tab and expand All alerts. 
 
 	![Expand All Alerts](_img/administer/ALM_AN_Administer.png)
 
-###Find alerts set for a team member or team
+### Find alerts set for a team member or team
 
 * Choose the name of the team member from the drop down list, or type the name in the search box. 
 
@@ -110,7 +110,7 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 	![Alerts listed for selected team member](_img/administer/ALM_AN_Result.png)
 
-###Create, edit, or delete an alert
+### Create, edit, or delete an alert
 1. To create an alert for a team member, first find the alerts defined for that subscriber as described in the previous step. Then, create an alert in the same way that a team member creates alerts. 
 
 	![Create an alert for a team member](_img/administer/ALM_AN_AlertsForMember.png)

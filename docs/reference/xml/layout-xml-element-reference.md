@@ -32,15 +32,15 @@ The **Layout** element is a required child element of the **FORM** element. For 
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"   
-Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">  
-       <Group> . . . </Group>  
-       <Control> . . . </Control>  
-       <TabGroup> . . . </TabGroup>  
-       <Splitter> . . . </Splitter>  
-</Layout >  
-```  
+> ```XML 
+> <Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"   
+> Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">  
+>        <Group> . . . </Group>  
+>        <Control> . . . </Control>  
+>        <TabGroup> . . . </TabGroup>  
+>        <Splitter> . . . </Splitter>  
+> </Layout >  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -79,37 +79,37 @@ Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="dist
 ## Example  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FORM>  
-   <Layout>  
-      <Group>  
-          <Column PercentWidth="36">  
-            <Group>  
-            <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
-            <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />  
-            </Group>  
-          </Column>  
-          <Column PercentWidth="33">  
-            <Group>  
-            <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />  
-            <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />  
-            </Group>  
-          </Column>  
-          <Column PercentWidth="31">  
-            <Group>  
-            <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />  
-            <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
-            <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
-            </Group>  
-          </Column>  
-      </Group>  
-. . .  
-   </Layout>  
-</FORM>  
-```  
+> ```XML
+> <FORM>  
+>    <Layout>  
+>       <Group>  
+>           <Column PercentWidth="36">  
+>             <Group>  
+>             <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
+>             <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />  
+>             <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />  
+>             <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />  
+>             </Group>  
+>           </Column>  
+>           <Column PercentWidth="33">  
+>             <Group>  
+>             <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />  
+>             <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />  
+>             <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />  
+>             </Group>  
+>           </Column>  
+>           <Column PercentWidth="31">  
+>             <Group>  
+>             <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />  
+>             <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
+>             <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
+>             </Group>  
+>           </Column>  
+>       </Group>  
+> . . .  
+>    </Layout>  
+> </FORM>  
+> ```  
   
   
 ## Related articles

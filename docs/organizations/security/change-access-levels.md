@@ -85,17 +85,17 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
+1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
 
 	<img src="_img/access-levels-2017-stakeholder-access.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
 
-1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
+2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
-0. Choose **Save changes**.
+3. Choose **Save changes**.
 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)
 
-0. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
+1. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 

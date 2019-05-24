@@ -7,7 +7,7 @@ ms.topic: include
 Now you can use your GitHub credentials to sign in to Azure DevOps. You will see the option to sign in with your GitHub account on all Microsoft log in pages. To use your GitHub credentials, click on **Sign in with GitHub**.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/151_11.png "Azure DevOps sign in page")
+> ![Badge](../../_img/151_11.png "Azure DevOps sign in page")
 
 After signing into GitHub and authorizing the Microsoft application, you will get a new Microsoft account that is linked to your GitHub identity. During this process, you also have the opportunity to link it to an existing Microsoft account if you like.
 

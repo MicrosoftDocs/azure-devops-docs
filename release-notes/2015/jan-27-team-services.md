@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#VS Online Basic license expanded – Jan 27
+# VS Online Basic license expanded – Jan 27
 
-##Basic license expanded
+## Basic license expanded
 
 First and foremost, I’m excited to announce that this week we are rolling out upgrades across Visual Studio Online to make the following features available to ***all users*** with a “Basic” license:
 
@@ -25,7 +25,7 @@ This change means all teams of five or fewer members have access to these featur
 
 Now that the big news is out of the bag, let’s jump into a few improvements to the service…
 
-##Taskboard improvements
+## Taskboard improvements
 
 We made three changes to the Taskboard this sprint that I want to highlight. First, you can now reorder Tasks directly on the Taskboard. Just grab a tile and move it around to change its order. The picture below demonstrates, as you can see that I’m dragging Task 1 from the first position to the last position.
 
@@ -35,7 +35,7 @@ Second, notice that the parent user story now looks more like a card, matching i
 
 ![Unparented tasks](_img/1_27_02.png)
 
-##Editing tiles on the Kanban board
+## Editing tiles on the Kanban board
 
 We also turned on the ability to edit the assigned user and effort values for cards on your Kanban boards. This is the first in a series of changes coming that accrue toward a complete add, edit, and reorder experience directly from the board. Last week I outlined the [list of improvements](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/21/agile-project-management-futures.aspx) like this that are on their way in upcoming sprints.
 

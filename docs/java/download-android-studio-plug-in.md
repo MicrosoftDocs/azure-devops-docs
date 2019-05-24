@@ -30,17 +30,17 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `Android Studio` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
-1. Click the `Install plugin` button and restart Android Studio. 
+2. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
+3. Click the `Install plugin` button and restart Android Studio. 
 
- You can also download the plugin to disk from the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
+   You can also download the plugin to disk from the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
 
-1. In Android Studio, open plugin settings:
+4. In Android Studio, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `Android Studio` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
-1. Click the `Install plugin` button and restart Android Studio. 
+5. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
+6. Click the `Install plugin` button and restart Android Studio. 
 
 ## Next Steps
 

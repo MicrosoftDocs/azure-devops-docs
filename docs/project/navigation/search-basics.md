@@ -98,7 +98,7 @@ To learn more, see [Search code](../search/code-search.md).
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box](_img/search/work-item-search-vert.png)    
 
-0. Search results are displayed in a snippet view where the matches found are shown in bold.
+1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/_img/work-item-search-get-started/results-matching.png)
 
@@ -106,7 +106,7 @@ To learn more, see [Search code](../search/code-search.md).
    Work item search matches derived forms of your search terms; for example, a search for
    "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-0. Select a snippet of a work item to display it in the right window. 
+2. Select a snippet of a work item to display it in the right window. 
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the

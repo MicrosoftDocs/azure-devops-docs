@@ -26,7 +26,7 @@ You can add Markdown syntax to a GitHub repo README.md file to display the statu
 ## Prerequisites 
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * You must be added to the team administrator role for the team's settings you want to modify, or be a member of the <strong>Project Administrators</strong> security group. To get added, see [Add a team administrator](/azure/devops/organizations/security/add-team-administrator) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 * You must be granted <strong>Stakeholder</strong> access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  

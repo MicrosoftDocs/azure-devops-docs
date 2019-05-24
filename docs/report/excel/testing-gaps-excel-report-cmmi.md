@@ -17,17 +17,17 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Testing Gaps report to help determine where there are deficiencies in the test plans, test configurations, and test coverage. The Testing Gaps report provides the following five reports based on test results and builds that have been defined and run for a team project.  
   
--   **Requirement Status**: Helps the team identify gaps in test coverage for each requirement. This report requires that team members link test cases to requirements.  
+- **Requirement Status**: Helps the team identify gaps in test coverage for each requirement. This report requires that team members link test cases to requirements.  
   
--   **Requirement Status by Config**: Helps the team identify gaps in test coverage for each test configuration for each requirement. This report requires that team members link test cases to requirements.  
+- **Requirement Status by Config**: Helps the team identify gaps in test coverage for each test configuration for each requirement. This report requires that team members link test cases to requirements.  
   
--   **Test Status by Area**: Helps the team identify gaps in test coverage of product areas. This report requires that team members assign test cases to product areas.  
+- **Test Status by Area**: Helps the team identify gaps in test coverage of product areas. This report requires that team members assign test cases to product areas.  
   
--   **Tests Not Executed**: Helps the team identify test cases that have never been run for each test configuration.  
+- **Tests Not Executed**: Helps the team identify test cases that have never been run for each test configuration.  
   
--   **Code Coverage**: Helps the team determine which builds and build assemblies have low or high code coverage.  
+- **Code Coverage**: Helps the team determine which builds and build assemblies have low or high code coverage.  
   
- The first four reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Organizing Test Cases Using Test Suites](../../test/create-test-cases.md).  
+  The first four reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Organizing Test Cases Using Test Suites](../../test/create-test-cases.md).  
   
 > [!NOTE]
 >  You can access the Testing Gaps report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is provisioned to use SharePoint Products. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  

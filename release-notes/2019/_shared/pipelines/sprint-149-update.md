@@ -35,14 +35,14 @@ Duffle is a command line tool that allows you to install and manage Cloud Native
 In this update, we added a new task for build and release pipelines that allows you to install a specific version of Duffle binary.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/149_02.png)
+> ![Badge](../../_img/149_02.png)
 
 ### Approve Azure Pipelines deployments from Slack
 
 Until now, Slack users have had limited capabilities to manage release deployments from within a channel. The Azure Pipelines app for Slack lets you approve or reject a release deployment from the channel. This will make the approval process easier since you are not forced to navigate to the Azure Pipelines portal. In addition, you can approve deployments on the go by using the Slack mobile app.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/149_03.png)
+> ![Badge](../../_img/149_03.png)
 
 For more detailed on Azure Pipelines and Slack see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/integrations/slack?view=azure-devops).
 
@@ -51,20 +51,20 @@ For more detailed on Azure Pipelines and Slack see the documentation [here](http
 Until now, source providers like GitHub, Azure Repos, and Bitbucket Cloud were split between the classic pipeline editor and the new pipeline wizard. With this update we added all of them to the new pipeline wizard for a single starting point. You can still click the link at the bottom of the page to create a pipeline without YAML in the classic editor.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/149_06.png)
+> ![Badge](../../_img/149_06.png)
 
 ### GitHub comments trigger optimizations
 
 We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#trigger-builds-using-github-pull-request-comments). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/149_07.png)
+> ![Badge](../../_img/149_07.png)
 
 ### Publish CTest and PHPUnit test results
 
 With this update, we’ve added support to publish test results from a [CTest]( https://cmake.org/cmake/help/latest/manual/ctest.1.html) run in pipelines. To publish CTest results, select the CTest option in the **Test result format** input of the publish test results tab.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/149_11.png)
+> ![Badge](../../_img/149_11.png)
 
 In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).

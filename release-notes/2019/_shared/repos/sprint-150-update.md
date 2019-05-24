@@ -9,13 +9,13 @@ You now have more options when merging the changes from a pull request to the ta
 You will now see these new options available in the **Complete Pull Request** dialog:
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_01.png "New merge types for completing pull requests")
+> ![Badge](../../_img/150_01.png "New merge types for completing pull requests")
 
 The updated policy administration page allows administrators to control which merge strategies are allowed on a branch or folder of branches.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_02.png "Limit merge types")
-
+> ![Badge](../../_img/150_02.png "Limit merge types")
+> 
 > [!NOTE]
 > Existing policies are still enforced. For example, if your branch currently has a “squash merge only” policy in place, you will have to edit that policy in order to use the new merge strategies.
 

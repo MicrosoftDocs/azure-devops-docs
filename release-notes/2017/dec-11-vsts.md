@@ -33,14 +33,14 @@ Other key feature highlights include:
 Now you can view the build and release status of merge commits in the **Pushes** page. By clicking the status next to the push, you’ll find the specific build or release that the push is included in so that you can verify success or investigate failure.
 
 > [!div class="mx-imgBorder"]
-![Pushes ci-cd status](_img/127_05.png)
+> ![Pushes ci-cd status](_img/127_05.png)
 
 ### Blame now has history
 
 The **Blame** view is great for identifying the last person to change a line of code. However, sometimes you need to know who made the *previous* change to a line of code. The newest improvement in blame can help - **View blame prior to this commit**. As the name suggests, this feature allows you to jump back in time to the version of the file prior to the version which changed a particular line, and view the blame info for that version. You can continue to drill back in time looking at each version of the file that changed the selected line of code.
 
 > [!div class="mx-imgBorder"]
-![Blame history](_img/127_13.png)
+> ![Blame history](_img/127_13.png)
 
 ### SSH URLs are changing
 
@@ -103,14 +103,14 @@ Now you can set a trigger on a **Package Management** artifact in a Release defi
 There are now several default version options when linking version control artifacts to a release definition. You can configure a specific commit/changeset or simply configure the latest version to be picked from the default branch. Normally you configure it to pick up the latest version, but this is especially useful in some environments where a golden artifact version needs to be specified for all future continuous deployments.
 
 > [!div class="mx-imgBorder"]
-![Default artifact versions](_img/127_11.png)
+> ![Default artifact versions](_img/127_11.png)
 
 ### Release triggers branch enhancements
 
 You can now configure a release trigger filter based on the default branch specified in the build definition. This is particularly helpful if your default build branch changes every sprint and the release trigger filters needs to be updated across all the release definitions. Now you just need to change the default branch in build definition and all the release definitions automatically use this branch. For example, if your team is creating release branches for each sprint release payload, you update it in the build definition to point to a new sprint release branch and release will pick this up automatically.
 
 > [!div class="mx-imgBorder"]
-![Release triggers](_img/127_12.png)
+> ![Release triggers](_img/127_12.png)
 
 ## Test
 
@@ -119,12 +119,12 @@ You can now configure a release trigger filter based on the default branch speci
 Over time test assets accrue and, for large applications, can easily grow to 10’s of thousands of tests. For these large applications with lots of tests, it can be hard to manage all of the test results - identifying test failures, associated root cause or ownership of issues. To improve this, we have added 2 new filters to the test results view - Container (DLLs) and Owner (Container Owner), under **Tests** tab in **Build and Release**. This makes it easy to filter the test results to the portion that is relevant to you.
 
 > [!div class="mx-imgBorder"]
-![Test result filters](_img/127_06.png)
+> ![Test result filters](_img/127_06.png)
 
 Additionally, the existing Outcome filter will now provide the ability to filter for multiple outcomes. As a user when I want to see the outcome of my tests for a change I just committed, I can filter on the Container (DLL name) or Owner (DLL owner) or both to get to the results relevant to me. We also plan to add a filter based on Test Name.
 
 > [!div class="mx-imgBorder"]
-![Test result status filter](_img/127_07.png)
+> ![Test result status filter](_img/127_07.png)
 
 ### Identify flaky tests
 
@@ -133,12 +133,12 @@ Sometimes tests are flaky - they fail on one run and pass on another without any
 The **Visual Studio Test** task can be configured to control the maximum number of attempts to re-run failed tests and a threshold percentage for failures (e.g. only re-run tests if less than 20% of all tests failed) to avoid re-running tests in event of wide spread failures.
 
 > [!div class="mx-imgBorder"]
-![Re-run failed test section](_img/127_08.png)
+> ![Re-run failed test section](_img/127_08.png)
 
 In the **Tests** tab under **Build and Release**, you can filter the test results with Outcome as “Passed on rerun” to identify the tests that had an unreliable behavior during the run. This will currently show the last attempt for each test that passed on re-run. The Summary view is also modified to show “Passed on rerun (n/m)” under Total tests, where n is the count of tests passed on re-run and m is total passed tests. A hierarchical view of all attempts is coming in next few sprints.
 
 > [!div class="mx-imgBorder"]
-![Re-run failed test results](_img/127_09.png)
+> ![Re-run failed test results](_img/127_09.png)
 
 ### Pass parameters to your test run using .testsettings file
 
@@ -182,25 +182,25 @@ Note that tests that use TestCase as a data source cannot be used with the **Run
 We have enabled tabs on extension description pages in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to make it easier to find the information you want. Now, getting to Pricing, Q&A, or Rating & Review information is easier. Even when you scroll down the page, the tabs and single call to action are always within view.
 
 > [!div class="mx-imgBorder"]
-![Marketplace tabs](_img/127_04.png)
+> ![Marketplace tabs](_img/127_04.png)
 
 We have also revamped how you acquire (or purchase) VSTS extensions and Visual Studio Subscriptions from the Marketplace.
 
 * The install/purchase wizard now better adjusts the actions available to you as you progress - login, select a VSTS account, etc. We believe this will make acquiring extensions easier and more intuitive.
 
 > [!div class="mx-imgBorder"]
-![Already installed](_img/127_02.png)
+> ![Already installed](_img/127_02.png)
 
 * All relevant information required to change paid quantity and its billing implication is presented within the flow to make an informed purchase.
 
 > [!div class="mx-imgBorder"]
-![User summary](_img/127_03.png)
+> ![User summary](_img/127_03.png)
 
 * A progress bar displays acquisition progress and allows navigation across steps.
 * We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator.
 
 > [!div class="mx-imgBorder"]
-![Request](_img/127_10.png)
+> ![Request](_img/127_10.png)
 
 * An Account Administrator can now change the Azure subscription associated with a VSTS account when they do not have required permissions on the existing associated Azure subscription.
 
@@ -211,7 +211,7 @@ The publisher management portal is being refreshed on the Marketplace, making it
 As a first step in improving the publisher onboarding experience, publishers can now choose which directory/tenant the publisher is created in.
 
 > [!div class="mx-imgBorder"]
-![Publisher Portal](_img/127_publisher.png)
+> ![Publisher Portal](_img/127_publisher.png)
 
 ### Virus scan of all public extensions on Marketplace
 
@@ -235,7 +235,7 @@ Purchasing from Visual Studio Marketplace via the Cloud Solution Provider (CSP) 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-![Feedback menu](_img/125_00.png)
+> ![Feedback menu](_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

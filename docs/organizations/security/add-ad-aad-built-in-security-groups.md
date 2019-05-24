@@ -76,16 +76,16 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
 
-0. Open **Security** and under the **Groups** section, choose one of the following:
+2. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.
     - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
     - For users who need to administrate the project, choose **Project Administrators**. 
 
-0. Next, choose the **Members** tab.
+3. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
@@ -94,9 +94,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions.
 
-1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+4. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-2. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your choice.
+5. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 

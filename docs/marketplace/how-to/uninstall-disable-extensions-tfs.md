@@ -27,19 +27,19 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) 
 can uninstall or disable extensions. 
 
-0.	From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension
+0. From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension
 
-0.	Manage your extensions
+1. Manage your extensions
 
-	**TFS 2015 Update 3**
+   **TFS 2015 Update 3**
 
-	<img alt="Manage extensions" src="../_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="../_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 	
-	**TFS 2017**
+   **TFS 2017**
 
-	<img alt="Manage extensions" src="../_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="../_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
 
-0. On the extensions tab, select the extension, then uninstall or disable it
+2. On the extensions tab, select the extension, then uninstall or disable it
 
 	<img alt="Uninstall or disable an extension" src="../_shared/_img/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 

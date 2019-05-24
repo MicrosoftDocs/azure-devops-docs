@@ -67,17 +67,17 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, vsts](_img/projects-page/account-home-projects.png)
 
-0. As you hover over a project or team, you can choose one of the links to go to **Home** or **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, or **Wiki** pages. Choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon to mark the project as a favorite. 
+1. As you hover over a project or team, you can choose one of the links to go to **Home** or **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, or **Wiki** pages. Choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon to mark the project as a favorite. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, hover over a project](_img/projects-page/account-home-projects-hover-links.png) 
 
-0. You can filter the project and team list using the *Filter projects and teams* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
+2. You can filter the project and team list using the *Filter projects and teams* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](_img/projects-page/account-home-search-projects-fabrikam.png) 
 
-0. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](_img/projects-page/account-home-projects-new-project.png) 
@@ -94,7 +94,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](../../organizations/public/_img/browse-code/open-code-vert-brn.png) 
 
-0. Select the repository of interest from the repository selector.  
+1. Select the repository of interest from the repository selector.  
 	> [!div class="mx-imgBorder"]
 	> ![Select repository](../../organizations/public/_img/browse-code/select-repository-vert.png) 
 
@@ -108,11 +108,11 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Code, previous nav](../../organizations/public/_img/browse-code/select-code-hub.png)  
 
-0. Select the repository from the selector.  
+1. Select the repository from the selector.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select repository](../../organizations/public/_img/browse-code/select-repository.png)
-::: moniker-end  
+   ::: moniker-end  
 
 
 <a id="switch-to-a-different-team">  </a>

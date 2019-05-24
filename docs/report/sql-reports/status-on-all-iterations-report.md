@@ -36,13 +36,13 @@ After work has progressed on several iterations, also known as sprints, you can 
   
  For each iteration that is defined for the product areas that you specify, this report displays the following information:  
   
--   **Stories Closed**: The number of user stories that have been closed. These values are derived from the current values specified for the iteration and the state of each user story.  
+- **Stories Closed**: The number of user stories that have been closed. These values are derived from the current values specified for the iteration and the state of each user story.  
   
--   **Progress (Hours)**: A two-bar numeric and visual representation that represents the values for **Original Estimate** (grey), **Completed** (green) and **Remaining** (light blue) based on the rollup of hours that are defined for all tasks. These values are derived from the current values that are specified for the iteration and the hours for each task.  
+- **Progress (Hours)**: A two-bar numeric and visual representation that represents the values for **Original Estimate** (grey), **Completed** (green) and **Remaining** (light blue) based on the rollup of hours that are defined for all tasks. These values are derived from the current values that are specified for the iteration and the hours for each task.  
   
--   **Bugs**: A numeric value and visual representation for all bugs, grouped by their current states of **Active** (blue), **Resolved** (gold) and **Closed** (green). These values are derived from the current values that are specified for the iteration and the state of each bug.  
+- **Bugs**: A numeric value and visual representation for all bugs, grouped by their current states of **Active** (blue), **Resolved** (gold) and **Closed** (green). These values are derived from the current values that are specified for the iteration and the state of each bug.  
   
- In addition, you can choose an iteration to access the Burndown and Burn Rate report for that iteration. For more information, see [Burndown and Burn Rate](burndown-and-burn-rate-report.md).  
+  In addition, you can choose an iteration to access the Burndown and Burn Rate report for that iteration. For more information, see [Burndown and Burn Rate](burndown-and-burn-rate-report.md).  
   
 ### Required activities for tracking work items  
  For the Status on All Iterations report to be useful and accurate, the team must perform the following activities for tracking work items:  
@@ -81,22 +81,22 @@ After work has progressed on several iterations, also known as sprints, you can 
 ### Unhealthy version of report  
  An unhealthy Status on All Iterations report might show one or more of the following indicators:  
   
--   **No stories were closed in one or more iterations**.  
+- **No stories were closed in one or more iterations**.  
   
-     You might want to review the story size and determine whether the team can define smaller stories.  
+   You might want to review the story size and determine whether the team can define smaller stories.  
   
--   **The number of estimated and completed hours vary widely within or across iterations**.  
+- **The number of estimated and completed hours vary widely within or across iterations**.  
   
-     You might want to review how well you are sizing your stories and how well the team is estimating work. When the estimated and completed hours match closely within an iteration, it indicates that the team is well positioned to progress at a known rate.  
+   You might want to review how well you are sizing your stories and how well the team is estimating work. When the estimated and completed hours match closely within an iteration, it indicates that the team is well positioned to progress at a known rate.  
   
--   **Inconsistent progress made across past iterations**.  
+- **Inconsistent progress made across past iterations**.  
   
-     You might want to determine whether any blocking issues have not been identified or tracked.  
+   You might want to determine whether any blocking issues have not been identified or tracked.  
   
--   **Number of bugs being found is not increasing with each successive iteration**.  
+- **Number of bugs being found is not increasing with each successive iteration**.  
   
- ![Unhealthy version of Status on All Iterations](_img/procguid_unhealthy.png "ProcGuid_Unhealthy")  
-Unhealthy Version of a Status on All Iterations Report  
+  ![Unhealthy version of Status on All Iterations](_img/procguid_unhealthy.png "ProcGuid_Unhealthy")  
+  Unhealthy Version of a Status on All Iterations Report  
   
 ##  <a name="Changing"></a> Filter the report  
  You can filter the Status on All Iterations report to show progress only for product areas that you specify.  

@@ -21,14 +21,14 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<CATEGORIES>  
-      <CATEGORY name="category display name" refname="category reference name">  
-      <DEFAULTWORKITEMTYPE name="work item type reference name" />  
-      <WORKITEMTYPE name="work item type reference name" />  
-      </CATEGORY>  
-</CATEGORIES>  
-```  
+> ```XML
+> <CATEGORIES>  
+>       <CATEGORY name="category display name" refname="category reference name">  
+>       <DEFAULTWORKITEMTYPE name="work item type reference name" />  
+>       <WORKITEMTYPE name="work item type reference name" />  
+>       </CATEGORY>  
+> </CATEGORIES>  
+> ```  
   
 ## Attributes and elements  
   
@@ -52,13 +52,13 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
  Each category has a friendly name and a reference name that must be unique within the project. Each category friendly name must meet the following requirements:  
   
--   Names can have up to 254 Unicode characters.    
--   Names must not be empty.    
--   Names cannot have leading or trailing white spaces.    
--   Names cannot contain backslash (\\) characters.   
--   Names cannot contain two consecutive white spaces.  
+- Names can have up to 254 Unicode characters.    
+- Names must not be empty.    
+- Names cannot have leading or trailing white spaces.    
+- Names cannot contain backslash (\\) characters.   
+- Names cannot contain two consecutive white spaces.  
   
- Category friendly names are not localized and cannot be made into a token, whereas the names for work item types are localized and can be made into a token.  
+  Category friendly names are not localized and cannot be made into a token, whereas the names for work item types are localized and can be made into a token.  
   
 ## Agile tools, category requirements, and restrictions  
  When assigning WITs to categories, consider the following operational notes:  
@@ -74,65 +74,65 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
  The following example lists the default categories XML file for the Scrum process template.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<?xml version="1.0" encoding="utf-8"?>  
-<cat:CATEGORIES xmlns:cat="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/categories">  
-  <!-- Usage: for resilience in Test system. Even if WITs have different name, they can be referred to by the category -->  
-  <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-    <DEFAULTWORKITEMTYPE name="Bug" />  
-  </CATEGORY>  
-  <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">  
-    <DEFAULTWORKITEMTYPE name="Epic" />  
-  </CATEGORY>  
-  <CATEGORY name="Feature Category" refname="Microsoft.FeatureCategory">  
-    <DEFAULTWORKITEMTYPE name="Feature" />  
-  </CATEGORY>  
-  <CATEGORY name="Requirement Category" refname="Microsoft.RequirementCategory">  
-    <DEFAULTWORKITEMTYPE name="Product Backlog Item" />  
-    <WORKITEMTYPE name="Bug" />  
-  </CATEGORY>  
-  <CATEGORY name="Test Case Category" refname="Microsoft.TestCaseCategory">  
-    <DEFAULTWORKITEMTYPE name="Test Case" />  
-  </CATEGORY>  
-  <CATEGORY name="Shared Step Category" refname="Microsoft.SharedStepCategory">  
-    <DEFAULTWORKITEMTYPE name="Shared Steps" />  
-  </CATEGORY>  
-   <CATEGORY name="Shared Parameter Category" refname="Microsoft.SharedParameterCategory">  
-    <DEFAULTWORKITEMTYPE name="Shared Parameter" />  
-  </CATEGORY>  
-  <CATEGORY name="Code Review Request Category" refname="Microsoft.CodeReviewRequestCategory">  
-    <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-  </CATEGORY>  
-  <CATEGORY name="Code Review Response Category" refname="Microsoft.CodeReviewResponseCategory">  
-    <DEFAULTWORKITEMTYPE name="Code Review Response" />  
-  </CATEGORY>  
-  <CATEGORY name="Feedback Request Category" refname="Microsoft.FeedbackRequestCategory">  
-    <DEFAULTWORKITEMTYPE name="Feedback Request" />  
-  </CATEGORY>  
-  <CATEGORY name="Feedback Response Category" refname="Microsoft.FeedbackResponseCategory">  
-    <DEFAULTWORKITEMTYPE name="Feedback Response" />  
-  </CATEGORY>  
-  <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
-    <DEFAULTWORKITEMTYPE name="Test Plan" />  
-  </CATEGORY>  
-  <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
-    <DEFAULTWORKITEMTYPE name="Test Suite" />  
-  </CATEGORY>  
-  <CATEGORY name="Task Category" refname="Microsoft.TaskCategory">  
-    <DEFAULTWORKITEMTYPE name="Task" />  
-  </CATEGORY>  
-  <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-    <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-    <WORKITEMTYPE name="Code Review Response" />  
-    <WORKITEMTYPE name="Feedback Request" />  
-    <WORKITEMTYPE name="Feedback Response" />  
-    <WORKITEMTYPE name="Shared Steps" />  
-    <WORKITEMTYPE name="Shared Parameter" />  
-    <WORKITEMTYPE name="Test Plan" />  
-    <WORKITEMTYPE name="Test Suite" />  
-  </CATEGORY>  
-</cat:CATEGORIES>  
-```  
+> ```XML
+> <?xml version="1.0" encoding="utf-8"?>  
+> <cat:CATEGORIES xmlns:cat="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/categories">  
+>   <!-- Usage: for resilience in Test system. Even if WITs have different name, they can be referred to by the category -->  
+>   <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
+>     <DEFAULTWORKITEMTYPE name="Bug" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">  
+>     <DEFAULTWORKITEMTYPE name="Epic" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Feature Category" refname="Microsoft.FeatureCategory">  
+>     <DEFAULTWORKITEMTYPE name="Feature" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Requirement Category" refname="Microsoft.RequirementCategory">  
+>     <DEFAULTWORKITEMTYPE name="Product Backlog Item" />  
+>     <WORKITEMTYPE name="Bug" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Test Case Category" refname="Microsoft.TestCaseCategory">  
+>     <DEFAULTWORKITEMTYPE name="Test Case" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Shared Step Category" refname="Microsoft.SharedStepCategory">  
+>     <DEFAULTWORKITEMTYPE name="Shared Steps" />  
+>   </CATEGORY>  
+>    <CATEGORY name="Shared Parameter Category" refname="Microsoft.SharedParameterCategory">  
+>     <DEFAULTWORKITEMTYPE name="Shared Parameter" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Code Review Request Category" refname="Microsoft.CodeReviewRequestCategory">  
+>     <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Code Review Response Category" refname="Microsoft.CodeReviewResponseCategory">  
+>     <DEFAULTWORKITEMTYPE name="Code Review Response" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Feedback Request Category" refname="Microsoft.FeedbackRequestCategory">  
+>     <DEFAULTWORKITEMTYPE name="Feedback Request" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Feedback Response Category" refname="Microsoft.FeedbackResponseCategory">  
+>     <DEFAULTWORKITEMTYPE name="Feedback Response" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
+>     <DEFAULTWORKITEMTYPE name="Test Plan" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
+>     <DEFAULTWORKITEMTYPE name="Test Suite" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Task Category" refname="Microsoft.TaskCategory">  
+>     <DEFAULTWORKITEMTYPE name="Task" />  
+>   </CATEGORY>  
+>   <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
+>     <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+>     <WORKITEMTYPE name="Code Review Response" />  
+>     <WORKITEMTYPE name="Feedback Request" />  
+>     <WORKITEMTYPE name="Feedback Response" />  
+>     <WORKITEMTYPE name="Shared Steps" />  
+>     <WORKITEMTYPE name="Shared Parameter" />  
+>     <WORKITEMTYPE name="Test Plan" />  
+>     <WORKITEMTYPE name="Test Suite" />  
+>   </CATEGORY>  
+> </cat:CATEGORIES>  
+> ```  
   
 ## Related articles 
 - [Customize your work tracking experience](../customize-work.md)

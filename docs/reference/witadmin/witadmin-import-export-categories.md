@@ -83,46 +83,46 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
 
 You add a category to the Hidden Types categories to remove support for users to create work item types in that category.  
   
-1.  Export the definition file for categories for your project.  
+1. Export the definition file for categories for your project.  
   
-    ```  
-    witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
-    ```  
+   ```  
+   witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
+   ```  
   
-2.  Open the Categories file in your preferred text editor, and locate the `CATEGORY` element for the `"Hidden Types Category"`.  
+2. Open the Categories file in your preferred text editor, and locate the `CATEGORY` element for the `"Hidden Types Category"`.  
   
-    > [!div class="tabbedCodeSnippets"]
-	```XML  
-    <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-       <WORKITEMTYPE name="Code Review Response" />  
-       <WORKITEMTYPE name="Feedback Request" />  
-       <WORKITEMTYPE name="Feedback Response" />  
-       <WORKITEMTYPE name="Shared Steps" />  
-    </CATEGORY>  
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML  
+   > <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
+   >    <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+   >    <WORKITEMTYPE name="Code Review Response" />  
+   >    <WORKITEMTYPE name="Feedback Request" />  
+   >    <WORKITEMTYPE name="Feedback Response" />  
+   >    <WORKITEMTYPE name="Shared Steps" />  
+   > </CATEGORY>  
+   > ```  
   
-3.  Add a `WORKITEMTYPE` element that specifies the friendly name of the work item type that you want to add.  
+3. Add a `WORKITEMTYPE` element that specifies the friendly name of the work item type that you want to add.  
   
-     For example, the following syntax adds the custom work item type of "Integration Build" to the Hidden Types Category.  
+    For example, the following syntax adds the custom work item type of "Integration Build" to the Hidden Types Category.  
  
-    > [!div class="tabbedCodeSnippets"]
-	```XML
-    <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-       <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-       <WORKITEMTYPE name="Code Review Response" />  
-       <WORKITEMTYPE name="Feedback Request" />  
-       <WORKITEMTYPE name="Feedback Response" />  
-       <WORKITEMTYPE name="Shared Steps" />  
-       <WORKITEMTYPE name="Integration Build" />  
-    </CATEGORY>  
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML
+   > <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
+   >    <DEFAULTWORKITEMTYPE name="Code Review Request" />  
+   >    <WORKITEMTYPE name="Code Review Response" />  
+   >    <WORKITEMTYPE name="Feedback Request" />  
+   >    <WORKITEMTYPE name="Feedback Response" />  
+   >    <WORKITEMTYPE name="Shared Steps" />  
+   >    <WORKITEMTYPE name="Integration Build" />  
+   > </CATEGORY>  
+   > ```  
   
-4.  Import the definition file for categories to your project.  
+4. Import the definition file for categories to your project.  
   
-    ```  
-    witadmin importcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
-    ```  
+   ```  
+   witadmin importcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
+   ```  
   
 ## Related articles
 - [ProcessConfiguration XML elements](../xml/process-configuration-xml-element.md)  

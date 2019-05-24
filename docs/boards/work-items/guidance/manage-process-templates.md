@@ -34,74 +34,74 @@ You can upload, download, and delete process templates for a project collection.
 
 ## To manage a process template 
 
-1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
+1. Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
 
-	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2015-with-update-3-free).  
+   You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
-	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
+   If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
 
-2.	From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
+2. From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
 
-	![Open Process Template Manager](_img/open-process-template-manager.png)
+   ![Open Process Template Manager](_img/open-process-template-manager.png)
 
-	You'll see a list of each process template that has been uploaded to the project collection. 
+   You'll see a list of each process template that has been uploaded to the project collection. 
 
-	![Select process template to work with](_img/process-template-manager.png)
+   ![Select process template to work with](_img/process-template-manager.png)
 	
-	> [!TIP]   
-	> For a comparison of the default process templates&mdash;Agile, CMMI, and Scrum&mdash;see [Choose a process](choose-process.md).  
+   > [!TIP]   
+   > For a comparison of the default process templates&mdash;Agile, CMMI, and Scrum&mdash;see [Choose a process](choose-process.md).  
 
-	The <b>Upload</b>, <b>Download</b>, <b>Make Default</b>, and <b>Delete</b> buttons are disabled when you don't have the necessary permissions to manage process templates. 
+   The <b>Upload</b>, <b>Download</b>, <b>Make Default</b>, and <b>Delete</b> buttons are disabled when you don't have the necessary permissions to manage process templates. 
  
-3.	Select the process template that you want to work with and then choose from the following actions.  
+3. Select the process template that you want to work with and then choose from the following actions.  
 
-	<table>
-	<tbody valign="top">
-	<tr>
-	<td width="15%">
-	**Upload**
-	</td>
-	<td>To upload a process template.<br/>
-	<p>In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).</p>
-	</td>
-	</tr>
+   <table>
+   <tbody valign="top">
+   <tr>
+   <td width="15%">
+   <strong>Upload</strong>
+   </td>
+   <td>To upload a process template.<br/>
+   <p>In the <strong>Upload Process Template</strong> dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also <a href="#restrictions" data-raw-source="[Process template restrictions and validation checks](#restrictions)">Process template restrictions and validation checks</a>.</p>
+   </td>
+   </tr>
 	
-	<tr>
-	<td>
-	**Download**
-	</td>
-	<td>To download the process template to a local computer.<br/>
-	<p>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.</p>
-	<p>If you're downloading a process template to use to [configure new features](../../../reference/configure-features-after-upgrade.md), [manually add new features](../../../reference/add-features-manually.md) or [update a custom process template to enable new features](../../../reference/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). </p>
-	<p>You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation).</p>
-	</td>
-	</tr>
+   <tr>
+   <td>
+   <strong>Download</strong>
+   </td>
+   <td>To download the process template to a local computer.<br/>
+   <p>In the <strong>Download Process Template</strong> dialog box, select a folder where the process template will be downloaded.</p>
+   <p>If you&#39;re downloading a process template to use to <a href="../../../reference/configure-features-after-upgrade.md" data-raw-source="[configure new features](../../../reference/configure-features-after-upgrade.md)">configure new features</a>, <a href="../../../reference/add-features-manually.md" data-raw-source="[manually add new features](../../../reference/add-features-manually.md)">manually add new features</a> or <a href="../../../reference/update-customized-process-template.md" data-raw-source="[update a custom process template to enable new features](../../../reference/update-customized-process-template.md)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
+   <p>You can determine which process template to select based on the <a href="#wit_correlation" data-raw-source="[work item types defined for your existing project](#wit_correlation)">work item types defined for your existing project</a>.</p>
+   </td>
+   </tr>
 	
-	<tr>
-	<td>
-	**Make Default**
-	</td>
-	<td>
-	To cause the selected process template to appear as the default selection in the **New Team Project Wizard**.
-	</td>
-	</tr>
+   <tr>
+   <td>
+   <strong>Make Default</strong>
+   </td>
+   <td>
+   To cause the selected process template to appear as the default selection in the <strong>New Team Project Wizard</strong>.
+   </td>
+   </tr>
 	
-	<tr>
-	<td>
-	**Delete**
-	</td>
-	<td>
-	To permanently remove the selected process template from the collection.
-	</td>
-	</tr>
+   <tr>
+   <td>
+   <strong>Delete</strong>
+   </td>
+   <td>
+   To permanently remove the selected process template from the collection.
+   </td>
+   </tr>
 	
-	</tbody>
-	</table>
+   </tbody>
+   </table>
 
 
 <a id="wit_correlation"> </a>
 
-##Process template correlation with an existing project
+## Process template correlation with an existing project
 <p>To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.</p>
 
 <table>
@@ -113,13 +113,13 @@ You can upload, download, and delete process templates for a project collection.
 </tr>
 <tr>
 <td>
-![Scrum work item types](_img/ALM_MPT_WIT_Scrum.png) 
+<img src="_img/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
 </td>
 <td>
-![Agile work item types](_img/ALM_MPT_WIT_Agile.png) 
+<img src="_img/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
 </td>
 <td>
-![CMMI work item types](_img/ALM_MPT_WIT_CMMI.png) 
+<img src="_img/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
 </td>
 </tr>
 </tbody>
@@ -127,7 +127,7 @@ You can upload, download, and delete process templates for a project collection.
 
 <a id="restrictions"> </a>
 
-##Process template restrictions and validation checks 
+## Process template restrictions and validation checks 
 Uploading a process template requires that it pass the following validation checks:  
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
