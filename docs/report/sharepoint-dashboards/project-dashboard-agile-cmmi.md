@@ -127,19 +127,19 @@ You can use the Project dashboard to track team progress toward completing an it
 ###  <a name="Progress"></a> Monitor progress  
  To monitor team progress, you can review the **Task Burndown (hours)** report for the following types of indicators:  
   
--   **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  
+- **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  
   
-     One or more issues might be blocking progress or the team might not be resolving and closing work items that it has completed, fixed, and verified.  
+   One or more issues might be blocking progress or the team might not be resolving and closing work items that it has completed, fixed, and verified.  
   
--   **Is the team adding or expanding the scope of work during the iteration?**  
+- **Is the team adding or expanding the scope of work during the iteration?**  
   
-     Significant increases over time to the amount of Remaining Work may indicate poor estimations or scope creep. That is, either the team did not accurately estimate the work at the start of the iteration or the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. You should investigate the root causes. For example, you might want to determine how granular the Tasks are.  
+   Significant increases over time to the amount of Remaining Work may indicate poor estimations or scope creep. That is, either the team did not accurately estimate the work at the start of the iteration or the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. You should investigate the root causes. For example, you might want to determine how granular the Tasks are.  
   
--   **Do changes in the reports match your expectations?**  
+- **Do changes in the reports match your expectations?**  
   
-     Dashboard reports reflect work that the team is tracking. You should expect the reports to change according to the decisions and changes that the team makes about the work. If the team reallocates work to another iteration or decides to add work for an iteration, those one or more reports on the Project dashboard should reflect those decisions.  
+   Dashboard reports reflect work that the team is tracking. You should expect the reports to change according to the decisions and changes that the team makes about the work. If the team reallocates work to another iteration or decides to add work for an iteration, those one or more reports on the Project dashboard should reflect those decisions.  
   
- If the slope of the **Remaining Work** is progressing near or under the **Ideal Trend** line, the team is executing well against the iteration plan. However, if the **Remaining Work** slope is higher than the **Ideal Trend** line, the team will probably not complete all planned tasks before the end of the iteration.  
+  If the slope of the **Remaining Work** is progressing near or under the **Ideal Trend** line, the team is executing well against the iteration plan. However, if the **Remaining Work** slope is higher than the **Ideal Trend** line, the team will probably not complete all planned tasks before the end of the iteration.  
   
 ## Related notes 
  [Project portal dashboards](project-portal-dashboards.md)

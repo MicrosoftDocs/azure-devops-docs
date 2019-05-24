@@ -58,11 +58,11 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
-0. Choose the **Security** page, **Project Administrators** group, and the **Members** tab.  
+2. Choose the **Security** page, **Project Administrators** group, and the **Members** tab.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Security tab, Project Administrators Group, Members tab](_img/view-permissions-project-level-membership.png) 
@@ -84,7 +84,7 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
@@ -98,9 +98,9 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
 
-0.	Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
+1. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 
-	![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
+   ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
 
 ::: moniker-end
 
@@ -116,12 +116,12 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0.	Choose **Overview** to find the current owner.
+1. Choose **Overview** to find the current owner.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
-	To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
+   To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
 
 ::: moniker-end
 

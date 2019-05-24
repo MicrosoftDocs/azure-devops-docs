@@ -63,7 +63,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
+1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
@@ -86,7 +86,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).
 
-0. Choose the sprint you want to plan, and then choose **Board**.
+1. Choose the sprint you want to plan, and then choose **Board**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open taskboard for a sprint](_img/taskboard/open-taskboard-standard.png)
@@ -149,10 +149,10 @@ With this view, you can quickly see which items are nearing completion and which
 	> [!div class="mx-imgBorder"]
 	> ![Set view options](_img/taskboard/group-items-all-agile.png)
 
-0.	You can **Collapse All** or **Expand All** rows, and selectively expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
+1. You can **Collapse All** or **Expand All** rows, and selectively expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
-	> [!div class="mx-imgBorder"]
-	> ![taskboard, collapsed, show items](_img/taskboard/group-items-all-taskboard-agile.png)
+   > [!div class="mx-imgBorder"]
+   > ![taskboard, collapsed, show items](_img/taskboard/group-items-all-taskboard-agile.png)
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 	> [!div class="mx-imgBorder"]
 	> ![Group by people](_img/taskboard/group-by-people-agile.png)
 
-0. To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
+1. To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another sprint](_img/taskboard/filter-by-a-team-member.png)
@@ -262,7 +262,7 @@ You can [drag-and-drop work items onto a sprint from any backlog or board](assig
 You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop). Requires TFS 2015.1 or later version.
 ::: moniker-end
 
-##Try this next
+## Try this next
 
 Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks.
 
@@ -316,7 +316,7 @@ Requires TFS 2015.1 or later version.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
    <img src="_img/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
-::: moniker-end
+  ::: moniker-end
 
 ::: moniker range="tfs-2013"
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint.

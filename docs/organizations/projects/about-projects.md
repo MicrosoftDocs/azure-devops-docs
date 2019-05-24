@@ -27,15 +27,12 @@ When you create your project, a team of the same name is automatically created. 
 <tr>
 <td width="40%">
 
-**Single project and team defined within an organization or collection**  
-![Single collection-project-team conceptual image](_img/about-projects/project-concept.png)  
-</td>
+<strong>Single project and team defined within an organization or collection</strong><br/><img src="_img/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
 
 <td width="60%">
 
-**Multiple projects and teams defined within organization or collection**
-![Scaled collection-project-team conceptual image](_img/about-projects/multiple-projects-concept.png)  
-
+<strong>Multiple projects and teams defined within organization or collection</strong>
+<img src="_img/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
 </td>
 </tr>
 </tbody>
@@ -85,8 +82,8 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](_img/about-projects/projects-hub-vert.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects](_img/about-projects/projects-hub-vert.png)  
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -96,13 +93,13 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
 
@@ -110,8 +107,8 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the name of the server.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
 

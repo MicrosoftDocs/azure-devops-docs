@@ -85,7 +85,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
+1. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Sprints>Sprint selector](_img/overview/select-a-sprint-new-nav.png)

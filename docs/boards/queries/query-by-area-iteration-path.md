@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -39,19 +40,20 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |Macro   | Use when you want to...|
-> |-------------|--------------|
-> | **@CurrentIteration**    | Specify the current iteration associated with the selected team context.  |
-> | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp;| Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
-> | **@TeamAreas**   | Filter items based on area path(s) assigned to a specific team.  |
-
-> [!NOTE]   
-> The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
+> 
+> |                     Macro                     |                                          Use when you want to...                                           |
+> |-----------------------------------------------|------------------------------------------------------------------------------------------------------------|
+> |      <strong>@CurrentIteration</strong>       |                  Specify the current iteration associated with the selected team context.                  |
+> | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp; | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
+> |          <strong>@TeamAreas</strong>          |                      Filter items based on area path(s) assigned to a specific team.                       |
+> 
+> [!NOTE]
+> The <strong>@CurrentIteration</strong> macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and <strong>@TeamAreas</strong> macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
 
 ## Area path queries 
 
 You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
- 
+
 > [!div class="mx-imgBorder"]
 > ![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
 
@@ -81,7 +83,7 @@ Here's another example which uses the **Node Name** and the **In** operator.
 <a id="team-area-path" /> 
 ## Team area path queries  
 
-Use the **@TeamAreas** macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
+Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
 
 > [!div class="mx-imgBorder"]
 > ![Query on area paths assigned to a team](_img/query-area-iteration/teamareas-macro-example.png)
@@ -99,7 +101,7 @@ Use the **@TeamAreas** macro to quickly find items assigned to the area paths as
 > |**Iteration Path**|Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy.|System.IterationPath |
 
 For each field, data path=```TreePath```, reportable type=```Dimension```, index attribute=```True```. 
- 
+
 If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
 
 You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
@@ -132,5 +134,4 @@ For the On-premises XML process model, you can apply rules to fields. However, f
 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
- 
- 
+

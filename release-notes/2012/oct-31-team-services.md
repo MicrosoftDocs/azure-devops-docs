@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 31
+# Team Foundation Service updates - Oct 31
 
-##Team Foundation Service is Released!
+## Team Foundation Service is Released!
 
 One year ago, at the first BUILD conference, we unveiled the limited preview of Team Foundation Service. At Tech Ed, in June, we removed the “invitation code” mechanism and opened it up for anyone to try in a public preview. Now, a year after its introduction, we’re announcing that the service is out of Preview and is now available for full production use.
 

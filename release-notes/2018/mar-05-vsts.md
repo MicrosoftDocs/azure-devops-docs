@@ -51,12 +51,12 @@ The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on 
 - **Recently created** - all work items recently created in the project
 
 > [!div class="mx-imgBorder"]
-![Work Items pivots](_img/131_01.png)
+> ![Work Items pivots](_img/131_01.png)
 
 Any project pivot can now be sorted based on a variety of options, including title, area path, or created date. You can also choose to see these work items in ascending or descending order.
 
 > [!div class="mx-imgBorder"]
-![Work Items sorting options](_img/131_02.png)
+> ![Work Items sorting options](_img/131_02.png)
 
 ### Query work across the iteration schedule with +/- @CurrentIteration
 
@@ -67,7 +67,7 @@ The @CurrentIteration macro that helps your team track work based on your iterat
 If you have been using the @CurrentIteration macro in queries in the past you may have noticed that results may vary if the Team context changes across Teams with different iteration schedules. Now, when you create or modify a query with the @CurrentIteration macro, you will be required to also select the Team with the iteration schedule that is relevant to the query. With the Team parameter, you can use the @CurrentIteration macro in the same query but across teams. One example may be a query for work items in two different team projects using different iteration names and even schedules. This means no more having to update queries as sprints change! See the [@CurrentIteration post](https://blogs.msdn.microsoft.com/devops/2018/03/01/currentiteration-team-parameter-offset) on the Microsoft DevOps Blog for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/4675453-allow-multiple-current-iterations-for-multiple-i).
 
 > [!div class="mx-imgBorder"]
-![Team parameter](_img/131_13.png)
+> ![Team parameter](_img/131_13.png)
 
 ## Build and Release
 
@@ -76,59 +76,59 @@ If you have been using the @CurrentIteration macro in queries in the past you ma
 The Azure DevOps Project enables you to setup a fully configured CI/CD pipeline in just a few steps. While we started with Azure Web Apps, now you can deploy to an Azure virtual machine running Windows if you prefer. When getting started with an ASP.NET or ASP.NET Core application simply select the **Virtual machine** option.
 
 > [!div class="mx-imgBorder"]
-![DevOps Project VM option](_img/131_09.png)
+> ![DevOps Project VM option](_img/131_09.png)
 
 ### Improve release times by partially downloading artifacts
 
 Previously, as part of a deployment phase, you could choose to either download all the artifacts or skip them all. Now you can choose the artifacts that need to be downloaded. This can save time by ensuring the agent only has to download what it needs. See the [release artifacts](/azure/devops/pipelines/release/artifacts#download) documentation for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/13396200-only-download-artifacts-required-for-task-executio).
 
 > [!div class="mx-imgBorder"]
-![Partially download artifacts](_img/131_07.png)
+> ![Partially download artifacts](_img/131_07.png)
 
 ### Improve code quality with the latest extensions from SonarSource
 
 SonarSource recently released an updated [SonarQube extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube) and a new [SonarCloud extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud), which enable static code analysis for numerous languages. The VSTS Gradle and Maven tasks take advantage of these extensions for Java builds in particular. Just enable **Run SonarQube or SonarCloud Analysis** on version 2.* of the Gradle or Maven task, then add the **Prepare** and **Publish** SonarQube/SonarCloud tasks as shown below. See the [Analyzing with SonarQube](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Tasks for Gradle and Maven](_img/131_03.png)
+> ![Tasks for Gradle and Maven](_img/131_03.png)
 
 ### Trace GitHub sources to builds using build tags
 
 Builds from GitHub or GitHub Enterprise already link to the relevant commit. It’s equally important to be able to trace a commit to the builds that built it. That’s now possible by enabling source tagging in VSTS. While choosing your GitHub repository in a build definition, select the types of builds you want to tag, along with the tag format.
 
 > [!div class="mx-imgBorder"]
-![Tag sources options](_img/131_04.png)
+> ![Tag sources options](_img/131_04.png)
 
 Then watch build tags appear on your GitHub or GitHub Enterprise repository.
 
 > [!div class="mx-imgBorder"]
-![Tagged sources examples in GitHub](_img/131_05.png)
+> ![Tagged sources examples in GitHub](_img/131_05.png)
 
 ### Isolate Azure Resource Manager service endpoints to Resource Groups
 
 By default, the Azure Resource Manager service endpoints that are automatically configured in VSTS get **Contributor** role on the subscription. Now you have the option to create an endpoint and restrict the scope to a specific resource group within the subscription, which provides some isolation to ensure the endpoint only interacts with what it should. Select **Advanced options** when prompted to **Authorize** the Azure subscription.
 
 > [!div class="mx-imgBorder"]
-![Azure subscription Authorize advanced options](_img/131_10.png)
+> ![Azure subscription Authorize advanced options](_img/131_10.png)
 
 ### Manage entity-specific security
 
 Previously in role based security, when the security access roles were set, they were set for a user or group at hub level for Deployment groups, Variable groups, Agent queues, and Service endpoints. Now you can turn on and off inheritance for a particular entity so you can configure security just the way you want to.
 
 > [!div class="mx-imgBorder"]
-![Security dialog](_img/131_11.png)
+> ![Security dialog](_img/131_11.png)
 
 ### Share deployment status using a badge
 
 As in **Build**, now you can configure badges in **Release** that show the status of the last completed deployment to an environment. These badges are publicly accessible through a URL, which can be embedded in any repository to give more transparency to your consumers and contributors.
 
 > [!div class="mx-imgBorder"]
-![Badge options](_img/131_06.png)
+> ![Badge options](_img/131_06.png)
 
 Once enabled by an authorized member of the project, anyone with the access to badge URL can see the status of deployment to selected environments.
 
 > [!div class="mx-imgBorder"]
-![Badge on readme](_img/131_12.png)
+> ![Badge on readme](_img/131_12.png)
 
 ### Deploy selectively based on the artifact triggering a release
 
@@ -143,7 +143,7 @@ In the past, if a Visual Studio subscription is assigned to an Azure Active Dire
 This feature has been expanded to allow AAD-based Visual Studio subscribers to be able to add another AAD email account in the **My Visual Studio** portal. This will allow you to be able to use a different AAD email in VSTS than what the subscription is assigned to.
 
 > [!div class="mx-imgBorder"]
-![Add alternate account to subscriptions](_img/131_08.png)
+> ![Add alternate account to subscriptions](_img/131_08.png)
 
 Steps to add the alternate account to your subscription can be found in the [My Visual Studio FAQ](https://go.microsoft.com/fwlink/?linkid=869137). See the [VS Subscriptions and linking your VSTS account to AzureAD post](https://blogs.msdn.microsoft.com/devops/2018/01/29/vs-subscriptions-and-linking-your-vsts-account-to-azuread/) on the Microsoft DevOps Blog for more information.
 
@@ -158,7 +158,7 @@ Steps to add the alternate account to your subscription can be found in the [My 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

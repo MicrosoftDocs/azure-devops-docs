@@ -58,141 +58,138 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 ## Add tasks and publish work items
 
-# [Office Project 365](#tab/office-365)
+#### [Office Project 365](#tab/office-365/)
+0. If you don't have Office Project 2010 or a more recent version, [install it](https://products.office.com/project). 
 
-0.  If you don't have Office Project 2010 or a more recent version, [install it](https://products.office.com/project). 
+1. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 
-0.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
+   > [!NOTE]    
+   > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-	> [!NOTE]    
-	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+2. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-0.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+   > [!TIP]  
+   > If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
-	> [!TIP]  
-	> If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
+   > [!div class="mx-imgBorder"]  
+   > ![Connect to a project from Project](_img/project/team-ribbon-project-2018.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Connect to a project from Project](_img/project/team-ribbon-project-2018.png)
+   Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
 
-    Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
+   > [!TIP]  
+   > If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md).
 
-	> [!TIP]  
-	> If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md).
+3. Connect to Azure Boards or TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
 
-4.  Connect to Azure Boards or TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
+   > [!div class="mx-imgBorder"]  
+   > ![Connect to Team Foundation Server dialog](_img/project/connect-to-tfs-dialog.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Connect to Team Foundation Server dialog](_img/project/connect-to-tfs-dialog.png)
+   If it's your first time connecting from Project, you might have to add the URL of Azure Boards or the name of your TFS instance to the list of recognized servers.
 
-    If it's your first time connecting from Project, you might have to add the URL of Azure Boards or the name of your TFS instance to the list of recognized servers.
+   **Azure Boards**  
 
-	**Azure Boards**  
+   (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+   ![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
 
-	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
+   **TFS**  
 
-	**TFS**  
+   (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+   ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
 
-    ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
+   Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
-	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
+   Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several work tracking fields.
 
-    Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several work tracking fields.
+   > [!div class="mx-imgBorder"]  
+   > ![Project plan bound to a project](_img/project/team-ribbon-connected-project-2018.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project plan bound to a project](_img/project/team-ribbon-connected-project-2018.png)
+4. Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.com/article/hide-or-unhide-a-column-in-a-project-view-29b1449f-32fe-4ae0-9041-cb59e09d28cf).
 
-5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.com/article/hide-or-unhide-a-column-in-a-project-view-29b1449f-32fe-4ae0-9041-cb59e09d28cf).
+   > [!TIP]  
+   > Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
 
-	> [!TIP]  
-	> Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
+   > [!div class="mx-imgBorder"]  
+   > ![Enter task data](_img/project/publish-work-items.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Enter task data](_img/project/publish-work-items.png)
+   Notice how IDs are now assigned to your work items.
 
-    Notice how IDs are now assigned to your work items.
+   > [!div class="mx-imgBorder"]  
+   > ![Published tasks become work items](_img/project/published-work-items.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Published tasks become work items](_img/project/published-work-items.png)
+   Optionally, you can use ![ ](_img/project/get-work-items-task.png) **Get work items** icon, select a work item query, and add work items to your project plan.
 
-    Optionally, you can use ![ ](_img/project/get-work-items-task.png) **Get work items** icon, select a work item query, and add work items to your project plan.
+5. Assign resources to tasks, and then choose **Publish** to publish your assignments. Or, leave that field blank for the development team to assign. 
 
-6.  Assign resources to tasks, and then choose **Publish** to publish your assignments. Or, leave that field blank for the development team to assign. 
+   > [!div class="mx-imgBorder"]  
+   > ![Assign resources in project](_img/project/assign-resource-names.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Assign resources in project](_img/project/assign-resource-names.png)
+   > [!TIP]  
+   > Although Project supports allocation of more than one resource to a task, Azure Boards work tracking does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a project member as a resource to those tasks that you will publish.
+   >  
+   >Specify resources by their display names from Azure Active Directory (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
 
-	> [!TIP]  
-	> Although Project supports allocation of more than one resource to a task, Azure Boards work tracking does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a project member as a resource to those tasks that you will publish.
-    >  
-    >Specify resources by their display names from Azure Active Directory (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
-
-7.  Save your project plan to retain scheduling and other data that Azure Boards doesn't store.
+6. Save your project plan to retain scheduling and other data that Azure Boards doesn't store.
 
 
-# [Office Project 2007](#tab/office-2007)
+#### [Office Project 2007](#tab/office-2007/)
+0. If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). 
 
-0.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). 
+1. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
+   > [!NOTE]    
+   >The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-	> [!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+2. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+   > [!TIP]  
+   >If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
-	> [!TIP]  
-	>If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
+   ![Connect to a TFS project from Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
 
-    ![Connect to a TFS project from Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
+   Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
 
-    Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
+   > [!TIP]  
+   > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
-	> [!TIP]  
-	> If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+3. Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
 
-4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
+   ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 
-    ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
+   If it's your first time connecting to TFS from Project, you might have to add the name of your TFS to the list of recognized servers.
 
-    If it's your first time connecting to TFS from Project, you might have to add the name of your TFS to the list of recognized servers.
+   ![ALM\_EXL\_AddServer](_img/create-your-backlog-tasks-using-project/IC658167.png)
 
-    ![ALM\_EXL\_AddServer](_img/create-your-backlog-tasks-using-project/IC658167.png)
+   Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several TFS fields.
 
-    Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several TFS fields.
+   ![Project plan bound to a project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
 
-    ![Project plan bound to a project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
+4. Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.microsoft.com/client/HP010351693?lcid=1033&query=&NS=WINPROJ&Version=14&ShowNav=false&syslcid=1033&uilcid=1033&app=&msg=&origin=&ocmsassetID=HP010351693).
 
-5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.microsoft.com/client/HP010351693?lcid=1033&query=&NS=WINPROJ&Version=14&ShowNav=false&syslcid=1033&uilcid=1033&app=&msg=&origin=&ocmsassetID=HP010351693).
+   > [!TIP]  
+   > Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it in TFS. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
 
-	> [!TIP]  
-	> Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it in TFS. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
+   ![Enter task data](_img/create-your-backlog-tasks-using-project/IC658911.png)
 
-    ![Enter task data](_img/create-your-backlog-tasks-using-project/IC658911.png)
+   Notice how IDs are now assigned to your work items.
 
-    Notice how IDs are now assigned to your work items.
+   ![Published tasks become work items](_img/create-your-backlog-tasks-using-project/IC658912.png)
 
-    ![Published tasks become work items](_img/create-your-backlog-tasks-using-project/IC658912.png)
+   Optionally, you can use ![Get work items icon](_img/create-your-backlog-tasks-using-project/IC657981.png), select a work item query, and add work items from TFS to your project plan.
 
-    Optionally, you can use ![Get work items icon](_img/create-your-backlog-tasks-using-project/IC657981.png), select a work item query, and add work items from TFS to your project plan.
+5. Assign resources to tasks. Or, leave that field blank for the development team to assign.
 
-6.  Assign resources to tasks. Or, leave that field blank for the development team to assign.
+   ![Assign resources in project defined in TFS and AD](_img/create-your-backlog-tasks-using-project/IC658313.png)
 
-    ![Assign resources in project defined in TFS and AD](_img/create-your-backlog-tasks-using-project/IC658313.png)
+   > [!TIP]  
+   > Although Project supports allocation of more than one resource to a task, TFS does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a TFS team member as a resource to those tasks that you will publish.
+   >  
+   >Specify resources by their display names from Active Directory Domain Services (AD DS). If you assign a resource by its alias or other name, you risk incurring validation errors.
 
-	> [!TIP]  
-	> Although Project supports allocation of more than one resource to a task, TFS does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a TFS team member as a resource to those tasks that you will publish.
-    >  
-    >Specify resources by their display names from Active Directory Domain Services (AD DS). If you assign a resource by its alias or other name, you risk incurring validation errors.
+6. Save your project plan to retain scheduling and other data that TFS doesn't store.
 
-7.  Save your project plan to retain scheduling and other data that TFS doesn't store.
-
----
-
+* * *
 ## Indent tasks to create parent-child links
 
 When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [taskboard](../../sprints/task-board.md) when they are assigned to the taskboard sprint.
@@ -249,7 +246,7 @@ To enter data into other work tracking fields, switch to the Team Foundation Tas
 This view displays all the work tracking fields that have been mapped to Project.
 
 ![Team Foundation Task Sheet view](_img/project/tf-task-sheet.png)  
-  
+
 Optionally, you can add a mapped work tracking field as a column to the Team Foundation Gantt view. To see which work tracking fields are mapped, open **Column Mappings**.
 
 ![View of work tracking fields mapped to project fields](_img/project/view-column-mappings.png)  
@@ -261,7 +258,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 This view displays all the work tracking fields that have been mapped to Project.
 
 ![Team Foundation Task Sheet view](_img/create-your-backlog-tasks-using-project/IC697756.png)  
-  
+
 Optionally, you can add a mapped work tracking field as a column to the Team Foundation Gantt view. To see which work tracking fields are mapped, open **Column Mappings**.
 
 ![View of work tracking fields mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
@@ -280,18 +277,18 @@ You can manage your project plan using Project and all the features that Project
 - When defining areas and iterations, keep in mind that Project and Excel restrict the length of the area and iteration path field to 256 characters.  
 - In Project 2010 and later versions, when you choose the ![ ](_img/create-your-backlog-tasks-using-project/IC413649.png) **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.  
 
-	Start and finish dates for autoscheduled tasks (![ ](_img/create-your-backlog-tasks-using-project/IC413651.png) **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
+    Start and finish dates for autoscheduled tasks (![ ](_img/create-your-backlog-tasks-using-project/IC413651.png) **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
 - Use Project to manage and update changes to these fields:
-	- Finish Date
-	- Start Date
-	- Calculated fields for completed and remaining work
+  - Finish Date
+  - Start Date
+  - Calculated fields for completed and remaining work
 
-	Although work tracking data store can store estimated, completed, and remaining work, and start and finish dates, Azure DevOps Services and TFS do not recalculate the fields when updates to these fields are made.  
+    Although work tracking data store can store estimated, completed, and remaining work, and start and finish dates, Azure DevOps Services and TFS do not recalculate the fields when updates to these fields are made.  
 
-	When you publish to Azure DevOps Services and TFS, start and finish times are read-only by default. Project does not download start and finish times when you refresh the plan.   
+    When you publish to Azure DevOps Services and TFS, start and finish times are read-only by default. Project does not download start and finish times when you refresh the plan.   
 - If you see that hours are counted twice in reports that contain task hours, [correct the problem](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).  
 
-	Project assigns parent tasks the rollup of hours that are assigned to all its child tasks. Rollup hours are not published to the work tracking data store to prevent hours within reports from being counted twice. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the hours that are assigned to summary tasks.</p></li>
+    Project assigns parent tasks the rollup of hours that are assigned to all its child tasks. Rollup hours are not published to the work tracking data store to prevent hours within reports from being counted twice. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the hours that are assigned to summary tasks.</p></li>
 
 
 <a id="differences" />

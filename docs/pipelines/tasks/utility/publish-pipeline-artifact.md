@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: midenn
-author: mitchdenny
+ms.author: wismyth
+author: willsmythe
 ms.date: 12/07/2018
 ---
 

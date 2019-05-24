@@ -18,19 +18,19 @@
 
 </td>
 <td>Read only</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left">Check in, revise, undo, or unlock other users' changes
+<td align="left">Check in, revise, undo, or unlock other users&#39; changes
 </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -39,7 +39,7 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 

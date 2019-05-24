@@ -42,8 +42,7 @@ Use command line tools, REST APIS, client SDKs and more to interface with Azure 
                         </p>
                         <p>
                             <a href="../cli/policy-configuration-file.md">Configure policies</a>
-                        </p>                       
-                    </div>
+                        </p><br/>                    </div>
                 </div>
             </div>
         </div>

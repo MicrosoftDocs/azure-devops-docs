@@ -30,7 +30,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
   
 0. Open **Project Settings>Security**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
   
-0. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
+1. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
 
 	For example, here we set the permissions for Chuck Reinhart, denying him permission to delete or modify shared Analytics views, but allowing him to access the Analytics service data. 
 

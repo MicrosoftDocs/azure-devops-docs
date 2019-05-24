@@ -65,31 +65,31 @@ The following message reported by the Configure Features wizard indicates that t
 
 You can resolve this error by (1) adding the following syntax to the ```FIELDS``` section of the User Story or Requirement definition:  
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String">
-   <REQUIRED />
-   <ALLOWEDVALUES>
-     <LISTITEM value="Architectural" />
-     <LISTITEM value="Business" />
-   </ALLOWEDVALUES>
-   <DEFAULT from="value" value="Business" />
-   <HELPTEXT>Business = delivers value to a user or another system; Architectural = work to support other stories or components</HELPTEXT>
-</FIELD>
-```
+> ```XML
+> <FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String">
+>    <REQUIRED />
+>    <ALLOWEDVALUES>
+>      <LISTITEM value="Architectural" />
+>      <LISTITEM value="Business" />
+>    </ALLOWEDVALUES>
+>    <DEFAULT from="value" value="Business" />
+>    <HELPTEXT>Business = delivers value to a user or another system; Architectural = work to support other stories or components</HELPTEXT>
+> </FIELD>
+> ```
 
 and the following syntax to the ```FORM``` section:
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />
-```
+> ```XML
+> <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />
+> ```
 
 Or (2) removing the following entry from the ProcessConfiguration ```RequirementBacklog``` section: 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Column refname="Microsoft.VSTS.Common.ValueArea" width="100" />
-```
+> ```XML
+> <Column refname="Microsoft.VSTS.Common.ValueArea" width="100" />
+> ```
 
 See [Add features using a manual update process](add-features-manually.md) for more information about updating these files manually. 
 

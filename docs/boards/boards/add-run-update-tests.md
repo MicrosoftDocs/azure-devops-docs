@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 02/14/2019
 ---
 
-#Add, run, and update inline tests
+# Add, run, and update inline tests
 
 [!INCLUDE [temp](../../_shared/dev15-and-ts-version-header.md)]  
 
@@ -61,12 +61,12 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+1. To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
-0. Your Kanban board displays. 
+2. Your Kanban board displays. 
 
 	![Kanban board, Agile template](_img/kanban-basics-intro.png)  
 
@@ -114,7 +114,7 @@ You can update the status of the test from the ![Actions icon](../_img/icons/act
 
 <img src="_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /> 
  
-Updating the status of tests enable you to [track test results](../../test/track-test-status.md).  
+Updating the status of tests enable you to <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.  
 
 [Why doesn't the Kanban board show the status for test suites and plans already created in **Test**?](#test-status-kanban)
 

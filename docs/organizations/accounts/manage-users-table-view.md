@@ -62,15 +62,15 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-    * **Add to projects**
-    * **Remove from projects**
-    * **Assign extensions**
-    * **Revoke extensions** (if there are extensions)
-    * **Change access levels**
-    * **Remove direct assignments**
-    * **Remove from organization** (deletes user)
+   * **Add to projects**
+   * **Remove from projects**
+   * **Assign extensions**
+   * **Revoke extensions** (if there are extensions)
+   * **Change access levels**
+   * **Remove direct assignments**
+   * **Remove from organization** (deletes user)
 
-    ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
+     ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
 

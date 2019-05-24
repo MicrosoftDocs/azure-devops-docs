@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Sprint planning improvements and SonarQube analysis build tasks – Aug 26
+# Sprint planning improvements and SonarQube analysis build tasks – Aug 26
 
 **Renaming columns in place
 
@@ -18,19 +18,19 @@ You can now rename columns on your Kanban board in place, without having to jump
 
 ![Renaming in place](_img/8_26_01.png)
 
-##Choosing users for capacity planning
+## Choosing users for capacity planning
 
 This sprint we tweaked the capacity planning experience to give you complete control over who participates. You now have two new buttons on the toolbar that allow you to add any member to your sprint plan (including those outside your team), as well as adding any missing team members. As you can see in the screenshot below, I’m searching for Noah and adding him directly into my plan for Sprint 87.
 
 ![Adding a team member directly to a sprint plan](_img/8_26_02.png)
 
-##Burndown with available capacity
+## Burndown with available capacity
 
 The burndown chart now has a line showing available capacity during a sprint, in addition to the existing ideal trend line. This view provides you and your team with a better idea of whether you're on track to finish all your work during the sprint. This line is built on the capacity data described above, including individual and team days off. We’ve marked [this suggestion](http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4381480-burndown-chart-should-use-the-capacity-of-the-team) on UserVoice as completed.
 
 ![Burndown chart showing available capacity](_img/8_26_03.png)
 
-##SonarQube analysis build tasks
+## SonarQube analysis build tasks
 
 Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
 

@@ -100,11 +100,11 @@ If you choose to disable the Analytics extension, it will stop any jobs from run
 
    ![Manage extensions](_img/install-analytics/install-devops-extension-13.png)
 
-0. In the **Manage** tab, open the shortcut menu for the extension.
+1. In the **Manage** tab, open the shortcut menu for the extension.
 
    ![Disable or uninstall an extension](_img/install-analytics/install-devops-extension-12.png)
 
-0. Choose **Disable** or **Uninstall** as required.
+2. Choose **Disable** or **Uninstall** as required.
 
 ## Restore the Analytics extension if removed from the deployment
 

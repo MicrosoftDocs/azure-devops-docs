@@ -148,7 +148,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>IsCloneable </td>
 	<td>boolean</td>
-	<td>Indicates whether the value defined for the field is copied when a user chooses to copy a work item. For example, the work item Title, Tags, and Description are copied, but the ID and History fields aren't copied. </td>
+    <td>Indicates whether the value defined for the field is copied when a user chooses to copy a work item. For example, the work item Title, Tags, and Description are copied, but the ID and History fields aren&#39;t copied. </td>
 	<td>No</td>
 </tr>
 <tr>
@@ -214,7 +214,7 @@ The following table describes each attribute.
 	<td>isPicklistSuggested<sup>2</sup></td>
 	<td> </td>
 	<td> </td>
-	<td>Indicates whether the field allows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.</td>
+    <td>Indicates whether the field allows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for <strong>Allow users to set their own values</strong> is checked.</td>
 	<td>Yes</td>
 </tr>
 <tr>
@@ -229,7 +229,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>IsReportable <sup>3</sup></td>
 	<td>boolean</td>
-	<td>Indicates if the reportable attribute is defined or set to anything other than **None**. </td>
+    <td>Indicates if the reportable attribute is defined or set to anything other than <strong>None</strong>. </td>
 	<td>Yes</td>
 </tr>
 
@@ -237,7 +237,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>IsUsedInGlobalWorkflow</td>
 	<td>boolean</td>
-	<td>Indicates if the field is defined within a [global workflow](../../reference/xml/global-workflow-xml-element-reference.md). </td>
+    <td>Indicates if the field is defined within a <a href="../../reference/xml/global-workflow-xml-element-reference.md" data-raw-source="[global workflow](../../reference/xml/global-workflow-xml-element-reference.md)">global workflow</a>. </td>
 	<td>No</td>
 </tr>
 <!---
@@ -260,7 +260,7 @@ The following table describes each attribute.
 	<td>name</td>
 	<td>Name</td>
 	<td>string</td>
-	<td>Friendly name assigned to the field. The friendly name can't be changed for Azure DevOps Services, but can be changed for on-premises using the **witadmin changefield** command. </td>
+    <td>Friendly name assigned to the field. The friendly name can&#39;t be changed for Azure DevOps Services, but can be changed for on-premises using the <strong>witadmin changefield</strong> command. </td>
 	<td>On-prem only</td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ The following table describes each attribute.
 	<td>Gets the collection of prohibited values for a field that specifies such values. You can only define prohibited values for on-premises deployments.</td>
 	<td>On-prem only</td>
 </tr>
-<!--- 
+&lt;!--- 
 <tr>
 	<td> </td>
 	<td>PsFieldType</td>
@@ -324,7 +324,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>ReportingAttributes<sup>3</sup></td>
 	<td> </td>
-	<td>Specifies **Detail**, **Dimension**, or **Measure**, depending on whether and how you want the field to be included in reports. Data from fields that have a value other than **None** for this attribute are exported to the data warehouse and can be included in reports.</td>
+    <td>Specifies <strong>Detail</strong>, <strong>Dimension</strong>, or <strong>Measure</strong>, depending on whether and how you want the field to be included in reports. Data from fields that have a value other than <strong>None</strong> for this attribute are exported to the data warehouse and can be included in reports.</td>
 	<td>On-prem only</td>
 </tr>
 
@@ -333,7 +333,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>ReportingName<sup>3</sup></td>
 	<td>string</td>
-	<td>Specifies the label for a field when data appears in reports. If you do not specify a value, the field's friendly name is used.</td>
+    <td>Specifies the label for a field when data appears in reports. If you do not specify a value, the field&#39;s friendly name is used.</td>
 	<td>On-prem only</td>
 </tr>
 
@@ -347,8 +347,8 @@ The following table describes each attribute.
 <tr>
 	<td>supportedOperations</td>
 	<td> </td>
-	<td>*set*</td>
-	<td>The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see [Query quick reference, Operators and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros).</td>
+    <td><em>set</em></td>
+    <td>The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see <a href="../queries/query-index-quick-ref.md#fields-operators-macros" data-raw-source="[Query quick reference, Operators and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros)">Query quick reference, Operators and macros supported for each data type</a>.</td>
 	<td>No</td>
 </tr>
 
@@ -356,7 +356,7 @@ The following table describes each attribute.
 	<td> </td>
 	<td>SupportsTextQuery</td>
 	<td>boolean</td>
-	<td>Indicates whether the field supports text queries such as **Contains Words**, **Does Not Contains Words**. </td>
+    <td>Indicates whether the field supports text queries such as <strong>Contains Words</strong>, <strong>Does Not Contains Words</strong>. </td>
 	<td>No</td>
 </tr>
 
@@ -374,14 +374,14 @@ The following table describes each attribute.
 	<td>type</td>
 	<td>FieldType</td>
 	<td>string</td>
-	<td>Specifies the data type of the field, such as Boolean, DateTime, Integer, String, and so on. For a complete list and descriptions, see [Query fields, operators, and macros](../queries/query-operators-variables.md)</td>
+    <td>Specifies the data type of the field, such as Boolean, DateTime, Integer, String, and so on. For a complete list and descriptions, see <a href="../queries/query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](../queries/query-operators-variables.md)">Query fields, operators, and macros</a></td>
 	<td>No</td>
 </tr>
 <tr>
 	<td>usage</td>
 	<td>Usage</td>
 	<td>string</td>
-	<td>Specifies whether the field is intended for use with work items (WorkItem) or work item link (WorkItemLink) objects. The usage for most fields is WorkItem. For a complete list of usage values, see [Get Fields, FieldUsage](/rest/api/azure/devops/wit/fields/get#fieldusage)</td>
+    <td>Specifies whether the field is intended for use with work items (WorkItem) or work item link (WorkItemLink) objects. The usage for most fields is WorkItem. For a complete list of usage values, see <a href="/rest/api/azure/devops/wit/fields/get#fieldusage" data-raw-source="[Get Fields, FieldUsage](/rest/api/azure/devops/wit/fields/get#fieldusage)">Get Fields, FieldUsage</a></td>
 	<td>No</td>
 </tr>
 
@@ -397,7 +397,8 @@ The following table describes each attribute.
 
 
 <a id="reportable-attributes" />
-::: moniker range="< azure-devops"  
+  
+::: moniker range="< azure-devops" 
 
 ## Reportable attributes
 
@@ -409,6 +410,7 @@ For a list of fields that have reportable attributes defined by default, see [Re
 
 
 <a id="index-fields" />
+
 ## Indexed fields
 
 You can enable or disable indexing for a work item field by using the **witadmin indexfield** command. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. 
@@ -428,9 +430,9 @@ If you add a custom field that you use in many of your work item queries, you ma
 You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get). Enter your organization name for *OrganizationName*.
 
 > [!div class="tabbedCodeSnippets"]
-```REST
-https://dev.azure.com/OrganizationName/_apis/wit/fields/FieldReferenceName
-```
+> ```REST
+> https://dev.azure.com/OrganizationName/_apis/wit/fields/FieldReferenceName
+> ```
 
 For example, here we list the attributes for the Iteration Path, specifying the reference name, `System.IterationPath`, for the fabrikam organization. 
 
@@ -441,57 +443,57 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 **Returned data:**
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-"name": "Iteration Path",
-"referenceName": "System.IterationPath",
-"description": "The iteration within which this bug will be fixed",
-"type": "treePath",
-"usage": "workItem",
-"readOnly": false,
-"canSortBy": true,
-"isQueryable": true,
-"supportedOperations": [
-{
-"referenceName": "SupportedOperations.Under",
-"name": "Under"
-},
-{
-"referenceName": "SupportedOperations.NotUnder",
-"name": "Not Under"
-},
-{
-"referenceName": "SupportedOperations.Equals",
-"name": "="
-},
-{
-"referenceName": "SupportedOperations.NotEquals",
-"name": "<>"
-},
-{
-"referenceName": "SupportedOperations.In",
-"name": "In"
-},
-{
-"name": "Not In"
-}
-],
-"isIdentity": false,
-"isPicklist": false,
-"isPicklistSuggested": false,
-"url": "https://dev.azure.com/mseng/_apis/wit/fields/System.IterationPath"
-}
-```
-::: moniker-end
+> ```JSON
+> {
+> "name": "Iteration Path",
+> "referenceName": "System.IterationPath",
+> "description": "The iteration within which this bug will be fixed",
+> "type": "treePath",
+> "usage": "workItem",
+> "readOnly": false,
+> "canSortBy": true,
+> "isQueryable": true,
+> "supportedOperations": [
+> {
+> "referenceName": "SupportedOperations.Under",
+> "name": "Under"
+> },
+> {
+> "referenceName": "SupportedOperations.NotUnder",
+> "name": "Not Under"
+> },
+> {
+> "referenceName": "SupportedOperations.Equals",
+> "name": "="
+> },
+> {
+> "referenceName": "SupportedOperations.NotEquals",
+> "name": "<>"
+> },
+> {
+> "referenceName": "SupportedOperations.In",
+> "name": "In"
+> },
+> {
+> "name": "Not In"
+> }
+> ],
+> "isIdentity": false,
+> "isPicklist": false,
+> "isPicklistSuggested": false,
+> "url": "https://dev.azure.com/mseng/_apis/wit/fields/System.IterationPath"
+> }
+> ```
+> ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
 You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1)
 
 > [!div class="tabbedCodeSnippets"]
-```REST
-https://{ServerName:Port}/tfs/{Collection}/_apis/wit/fields/FieldReferenceName?api-version={version}
-```
+> ```REST
+> https://{ServerName:Port}/tfs/{Collection}/_apis/wit/fields/FieldReferenceName?api-version={version}
+> ```
 
 For example, here we list the attributes for the Iteration Path, specifying the reference name, `System.IterationPath`, for the fabrikam server. 
 
@@ -502,47 +504,47 @@ https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPat
 **Returned data:**
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-"name": "Iteration Path",
-"referenceName": "System.IterationPath",
-"description": "The iteration within which this bug will be fixed",
-"type": "treePath",
-"usage": "workItem",
-"readOnly": false,
-"canSortBy": true,
-"isQueryable": true,
-"supportedOperations": [
-{
-"referenceName": "SupportedOperations.Under",
-"name": "Under"
-},
-{
-"referenceName": "SupportedOperations.NotUnder",
-"name": "Not Under"
-},
-{
-"referenceName": "SupportedOperations.Equals",
-"name": "="
-},
-{
-"referenceName": "SupportedOperations.NotEquals",
-"name": "<>"
-},
-{
-"referenceName": "SupportedOperations.In",
-"name": "In"
-},
-{
-"name": "Not In"
-}
-],
-"isIdentity": false,
-"isPicklist": false,
-"isPicklistSuggested": false,
-"url": "https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=4.1"
-}
-```
+> ```JSON
+> {
+> "name": "Iteration Path",
+> "referenceName": "System.IterationPath",
+> "description": "The iteration within which this bug will be fixed",
+> "type": "treePath",
+> "usage": "workItem",
+> "readOnly": false,
+> "canSortBy": true,
+> "isQueryable": true,
+> "supportedOperations": [
+> {
+> "referenceName": "SupportedOperations.Under",
+> "name": "Under"
+> },
+> {
+> "referenceName": "SupportedOperations.NotUnder",
+> "name": "Not Under"
+> },
+> {
+> "referenceName": "SupportedOperations.Equals",
+> "name": "="
+> },
+> {
+> "referenceName": "SupportedOperations.NotEquals",
+> "name": "<>"
+> },
+> {
+> "referenceName": "SupportedOperations.In",
+> "name": "In"
+> },
+> {
+> "name": "Not In"
+> }
+> ],
+> "isIdentity": false,
+> "isPicklist": false,
+> "isPicklistSuggested": false,
+> "url": "https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=4.1"
+> }
+> ```
 
 ::: moniker-end
 
@@ -554,21 +556,21 @@ You can list select field attributes&mdash;such as the data type, reportable att
 For example, you can enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.  
   
 > [!div class="tabbedCodeSnippets"]
-```CMD
-witadmin listfields /collection:http://fabrikam:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
-```  
+> ```CMD
+> witadmin listfields /collection:http://fabrikam:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
+> ```  
 
 Field and attribute information appears for the named field, as shown in this example.  
 
 > [!div class="tabbedCodeSnippets"]
-```CMD
-Field: Microsoft.VSTS.Common.Issue  
-Name: Issue  
-Type: String  
-Reportable As: dimension  
-Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
-Indexed: False  
-```  
+> ```CMD
+> Field: Microsoft.VSTS.Common.Issue  
+> Name: Issue  
+> Type: String  
+> Reportable As: dimension  
+> Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
+> Indexed: False  
+> ```  
 
 The **Use** parameter indicates the name of each project and the work item type where the field is used. 
 

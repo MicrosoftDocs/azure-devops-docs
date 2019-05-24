@@ -43,11 +43,11 @@ You can define additional link types by adding them to the link types that are d
 You can define valid link types for use in your process based on the structure that the link type definition schema provides. A link type is defined by the following XML syntax in the link types XML file.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<LinkTypes>  
-      <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
-</LinkTypes>  
-```  
+> ```XML 
+> <LinkTypes>  
+>       <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
+> </LinkTypes>  
+> ```  
 
 The descriptions in the following table apply to the previous syntax:
 
@@ -86,27 +86,27 @@ The topology types described in the following table determine the restrictions p
 
 </tr>
 <tr>
-<td><p>**Dependency**: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.</p><p>**Example usage**: Use a dependency link to record the features that must be completed to deliver a user requirement. You can't create a dependent link between two work items that are linked to the same work items via dependent links. </p></td>
-<td>![Dependency topology](_img/IC268537.png) </td>
+<td><p><strong>Dependency</strong>: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.</p><p><strong>Example usage</strong>: Use a dependency link to record the features that must be completed to deliver a user requirement. You can&#39;t create a dependent link between two work items that are linked to the same work items via dependent links. </p></td>
+<td><img src="_img/IC268537.png" alt="Dependency topology"/> </td>
 </tr>
 
 
 <tr>
-<td><p>**Directed Network**: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.</p>
-<p>**Example usage**: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  </p></td>
-<td>![Directed network topology](_img/IC268536.png)</td>
+<td><p><strong>Directed Network</strong>: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.</p>
+<p><strong>Example usage</strong>: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  </p></td>
+<td><img src="_img/IC268536.png" alt="Directed network topology"/></td>
 </tr>
 
 <tr>
-<td><p>**Network**: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.</p>
-<p>**Example usage**: Use a network link, such as Related, to record a relationship between two features that might share dependencies.</p></td>
-<td>![Network topology](_img/IC268535.png)</td>
+<td><p><strong>Network</strong>: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.</p>
+<p><strong>Example usage</strong>: Use a network link, such as Related, to record a relationship between two features that might share dependencies.</p></td>
+<td><img src="_img/IC268535.png" alt="Network topology"/></td>
 </tr>
 
 <tr>
-<td><p>**Tree**: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the **Tree of Work Items** query. With Parent/Child links, you can't assign two parents to a child.</p>
-<p>**Example usage**: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, [map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md). </p></td>
-<td>![Tree topology](_img/IC268538.png)</td>
+<td><p><strong>Tree</strong>: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the <strong>Tree of Work Items</strong> query. With Parent/Child links, you can&#39;t assign two parents to a child.</p>
+<p><strong>Example usage</strong>: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, <a href="../../boards/backlogs/organize-backlog.md" data-raw-source="[map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md)">map backlog items to features, and features to epics</a>. </p></td>
+<td><img src="_img/IC268538.png" alt="Tree topology"/></td>
 </tr>
 
 </tbody>
@@ -124,12 +124,12 @@ To create a custom link type, define the link type XML definition file according
 For example, the following syntax defines the Microsoft.VSTS.Common.TestedBy link type provided via the TestedBy.xml file:
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<LinkTypes>
-   <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />
-</LinkTypes>
-```
+> ```XML
+> <?xml version="1.0" encoding="utf-8"?>
+> <LinkTypes>
+>    <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />
+> </LinkTypes>
+> ```
 
 When you create or update a project, the link type definitions defined for the reference process are imported into the project collection.
 

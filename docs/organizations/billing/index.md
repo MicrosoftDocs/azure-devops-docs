@@ -90,6 +90,6 @@ You can also make some purchases for Azure DevOps Server on your monthly Azure b
 
 - [Get Started using Azure DevOps](../../get-started/index.md)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
-* [Azure DevOps Server Administration](/azure/devops/server/server/index)
-* [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+- [Azure DevOps Server Administration](/azure/devops/server/server/index)
+- [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 

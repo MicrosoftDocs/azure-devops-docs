@@ -61,17 +61,17 @@ ms.date: 01/12/2017
   
  As indicated in the following scenarios below, the fields are updated based on who is making the updates and whether the updates are accepted into the project plan.  
   
--   When a team member updates hours and the project manager approves the submissions and publishes the plan, both reference and mirror fields will match with the next synchronization of Team Foundation Server.  
+- When a team member updates hours and the project manager approves the submissions and publishes the plan, both reference and mirror fields will match with the next synchronization of Team Foundation Server.  
   
--   When a team member updates hours and the project manager rejects the submissions, the updates are not accepted into the project plan. The values for the reference field and mirror field will differ.  
+- When a team member updates hours and the project manager rejects the submissions, the updates are not accepted into the project plan. The values for the reference field and mirror field will differ.  
   
--   When a project manager changes the hours in the project plan, only the mirror field is updated with the next synchronization of Team Foundation Server.  
+- When a project manager changes the hours in the project plan, only the mirror field is updated with the next synchronization of Team Foundation Server.  
   
- When task hours vary between the two server products, the team lead and project manager are expected to reconcile the differences. In this manner, each person can update their work independently while staying aware of changes that the other made. For information about how to find fields whose values do not match their mirror fields, see [Find Work Items Where the Work in Team Foundation Differs from that in Project Server](monitor-submissions-resolve-rejections.md#FindDiffWorkWIs).  
+  When task hours vary between the two server products, the team lead and project manager are expected to reconcile the differences. In this manner, each person can update their work independently while staying aware of changes that the other made. For information about how to find fields whose values do not match their mirror fields, see [Find Work Items Where the Work in Team Foundation Differs from that in Project Server](monitor-submissions-resolve-rejections.md#FindDiffWorkWIs).  
   
- Whenever a project manager sets a baseline, the value of the **Original Estimate** field in Team Foundation is set or updated, as the following illustration shows. By default, this field is mapped to the `OnConflict="PSWin"` attribute.  
+  Whenever a project manager sets a baseline, the value of the **Original Estimate** field in Team Foundation is set or updated, as the following illustration shows. By default, this field is mapped to the `OnConflict="PSWin"` attribute.  
   
- ![Work estimates](_img/tfs-ps_te_detailedplan_originalestimate.png "TFS-PS_TE_DetailedPlan_OriginalEstimate")  
+  ![Work estimates](_img/tfs-ps_te_detailedplan_originalestimate.png "TFS-PS_TE_DetailedPlan_OriginalEstimate")  
   
 > [!NOTE]
 >  Because the Visual Studio Scrum process template does not use the Completed Work and Original Estimate fields, you must add these fields to the types of work items that you want to participate in data synchronization. Also, you must modify the task type definition to remove the `<EMPTY />` workflow statements.  For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).  

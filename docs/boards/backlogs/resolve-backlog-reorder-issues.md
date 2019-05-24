@@ -34,7 +34,8 @@ To fix this, take the following actions:
 	> ![Create query of backlog](_img/resolve/choose-create-query.png)   
 	::: moniker-end
 	::: moniker range="<= tfs-2018"
-	![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
+	>  ![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
+
 	::: moniker-end
 
 2. Open the query (choose the link that appears). 

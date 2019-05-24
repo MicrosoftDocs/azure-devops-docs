@@ -111,17 +111,17 @@ You use different WITs to plan and track different types of work. The main reaso
 
 0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
+1. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 
-1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
+2. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
 	Click **Create** to save. 
 
-0. You can now add fields to the WIT, or customize it in the following ways:  
+3. You can now add fields to the WIT, or customize it in the following ways:  
 	- [Modify the workflow](#workflow)  
 	- [Add or remove a custom control](#custom-control)  
 	- [Add an extension](#extension) 
@@ -139,7 +139,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 	> [!div class="mx-imgBorder"]  
 	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
 
-0. You can modify the workflow in the following ways:   
+1. You can modify the workflow in the following ways:   
 	- [Hide a workflow state](customize-process-workflow.md#hide-state) 
 	- [Add a state](customize-process-workflow.md#add-states)  
 	- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)  
@@ -171,16 +171,16 @@ An extension is an installable unit that contributes new capabilities to your pr
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
 
-0. Select the extension you want to add. Here we choose the Work item checklist.
+1. Select the extension you want to add. Here we choose the Work item checklist.
 
-0. Select the organization you want to add it to and choose **Install**.  
+2. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
 
 	Extensions are available to add to all projects and processes. 
 
-0. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
+3. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Group extension on Bug work item form](_img/process/cpfield-add-checklist-extension.png) 
@@ -197,7 +197,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
 
-0. You can modify the backlog and board configuration in the following ways:  	
+1. You can modify the backlog and board configuration in the following ways:    
 	- [Add a custom WIT to a backlog or board](customize-process-backlogs-boards.md)  
 	- [Change the default WIT](customize-process-backlogs-boards.md)  
 	- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)  
@@ -222,17 +222,17 @@ We recommend that you create a test project and apply your customized inherited 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
 
-0. The Create new project page opens. Fill out the form. 
+1. The Create new project page opens. Fill out the form. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](_img/process/create-test-project.png) 
 
-0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select a WIT you customized. Here we choose **Bug**. 
+2. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select a WIT you customized. Here we choose **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+3. Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
 ### Create a test organization and import/export your process

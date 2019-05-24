@@ -36,8 +36,7 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
-# [Web portal](#tab/browser)
-
+#### [Web portal](#tab/browser/)
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -50,8 +49,7 @@ You can start viewing and adding work items once you connect to a project.
 ::: moniker-end
 
 
-# [Visual Studio 2019](#tab/visual-studio)
-
+#### [Visual Studio 2019](#tab/visual-studio/)
 Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -64,8 +62,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 > ![Connect to a Project dialog, connect to a Project and Git repository](_img/view-add/connect-to-a-project-and-github.png)
 
 
----
-
+* * *
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
@@ -76,23 +73,22 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
-# [Web portal](#tab/browser)
-
+#### [Web portal](#tab/browser/)
 <table>
 <tbody valign="top">
 <tr>
 <td>
-![Boards>Work Items view](_img/view-add/view-menu.png)
+<img src="_img/view-add/view-menu.png" alt="Boards&gt;Work Items view"/>
 </td>
 <td>
 <ul>
-<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you're [following](follow-work-items.md). </li>
-<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-<li>**My activity**: lists work items that you've recently viewed or updated.</li>
-<li>**Recently updated**: lists work items recently updated in the project. </li>
-<li>**Recently completed**: lists work items completed or closed in the project.</li>
-<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
+<li><strong>Assigned to me</strong>: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
+<li><strong>Following</strong>: lists work items that you&#39;re <a href="follow-work-items.md" data-raw-source="[following](follow-work-items.md)">following</a>. </li>
+<li><strong>Mentioned</strong>: lists work items in which you&#39;ve been mentioned in the last 30 days. </li>
+<li><strong>My activity</strong>: lists work items that you&#39;ve recently viewed or updated.</li>
+<li><strong>Recently updated</strong>: lists work items recently updated in the project. </li>
+<li><strong>Recently completed</strong>: lists work items completed or closed in the project.</li>
+<li><strong>Recently created</strong>: lists work items created within the last 30 days in the project.</li>
 </ul>
 </td>
 </tr>
@@ -100,20 +96,19 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 </table>
 
 
-# [Visual Studio 2019](#tab/visual-studio)
-
+#### [Visual Studio 2019](#tab/visual-studio/)
 <table>
 <tbody valign="top">
 <tr>
 <td>
-![Boards>Work Items](_img/view-add/pivot-menu-vs-te.png)
+<img src="_img/view-add/pivot-menu-vs-te.png" alt="Boards&gt;Work Items"/>
 </td>
 <td>
 <ul>
-<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you're [following](follow-work-items.md). </li>
-<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-<li>**My activity**: lists work items that you've recently viewed or updated.</li>
+<li><strong>Assigned to me</strong>: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
+<li><strong>Following</strong>: lists work items that you&#39;re <a href="follow-work-items.md" data-raw-source="[following](follow-work-items.md)">following</a>. </li>
+<li><strong>Mentioned</strong>: lists work items in which you&#39;ve been mentioned in the last 30 days. </li>
+<li><strong>My activity</strong>: lists work items that you&#39;ve recently viewed or updated.</li>
 </ul>
 </td>
 </tr>
@@ -126,24 +121,22 @@ To view a work item, double-click the title or open the context menu for the wor
 <tbody valign="top">
 <tr>
 <td>
-![Work item context menu](_img/view-add/work-item-menu-options-vs.png)
+<img src="_img/view-add/work-item-menu-options-vs.png" alt="Work item context menu"/>
 </td>
 <td>
 Additional menu options support the following tasks: 
 <ul>
-<li>**Assign to me**: Changes the Assigned to field to your user name. </li>
-<li>**New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive GIt development](../backlogs/connect-work-items-to-git-dev-ops.md). </li>
-<li>**Complete work item**: Updates the State field to Completed, Done, or Closed. </li>
-<li>**Relate to changes**: Links the work item to the current commit of recent changes.</li>
+<li><strong>Assign to me</strong>: Changes the Assigned to field to your user name. </li>
+<li><strong>New Branch...</strong>: Opens a dialog to create a new branch automatically linked to the work item. For details, see <a href="../backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Drive GIt development](../backlogs/connect-work-items-to-git-dev-ops.md)">Drive GIt development</a>. </li>
+<li><strong>Complete work item</strong>: Updates the State field to Completed, Done, or Closed. </li>
+<li><strong>Relate to changes</strong>: Links the work item to the current commit of recent changes.</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
----
-
-
+* * *
 ## Add a work item
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
@@ -175,25 +168,22 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
- 
+
 <a id="filter" />
 ## Filter to create personal views
 
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 
-# [Web portal](#tab/browser)
-
+#### [Web portal](#tab/browser/)
 > [!div class="mx-imgBorder"]
-![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
+> ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
-# [Visual Studio 2019](#tab/visual-studio)
-
+#### [Visual Studio 2019](#tab/visual-studio/)
 > [!div class="mx-imgBorder"]
-![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
+> ![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
 
----
-
+* * *
 <a id="sort" />
 ## Add columns and sort by a column 
 
@@ -207,7 +197,7 @@ From the web portal, you can sort your view by one of the column fields that you
 To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![ ](../_img/icons/actions-icon.png) actions icon), and then select an option from the menu. 
 
 > [!div class="mx-imgBorder"]
-![Boards>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
+> ![Boards>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
 
 
 ## Open a view as a query  

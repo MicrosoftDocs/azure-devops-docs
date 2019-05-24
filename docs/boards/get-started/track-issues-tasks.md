@@ -98,32 +98,32 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 <th width="80%">Definition</th>
 </tr>
 <tr>
-	<td width="18%"><p>[Title](/azure/devops/boards/queries/titles-ids-descriptions) </p></td>
+    <td width="18%"><p><a href="/azure/devops/boards/queries/titles-ids-descriptions" data-raw-source="[Title](/azure/devops/boards/queries/titles-ids-descriptions)">Title</a> </p></td>
 	<td><p>Enter a description of 255 characters or less. You can always modify the title later.</p></td></tr>
 <tr>
-	<td><p>[Assigned To](/azure/devops/boards/queries/query-by-workflow-changes)</p></td>
+    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[Assigned To](/azure/devops/boards/queries/query-by-workflow-changes)">Assigned To</a></p></td>
 	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
 <tr>
-	<td><p>[State](/azure/devops/boards/queries/query-by-workflow-changes)</p></td>
+    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[State](/azure/devops/boards/queries/query-by-workflow-changes)">State</a></p></td>
 	<td><p>When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.</p></td></tr>
 <tr>
-	<td><p>[Reason](/azure/devops/boards/queries/query-by-workflow-changes)</p></td>
+    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[Reason](/azure/devops/boards/queries/query-by-workflow-changes)">Reason</a></p></td>
 	<td><p>Use the default first. Update it when you change state as need. Each State is associated with a default reason.</p></td></tr>
 <tr>
-	<td>[Area](/azure/devops/organizations/settings/set-area-paths)</td>
-	<td>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md).</td>
+    <td><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Area](/azure/devops/organizations/settings/set-area-paths)">Area</a></td>
+    <td>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)">Define area paths and assign to a team</a>.</td>
 </tr>
 <tr>
-	<td>[Iteration](/azure/devops/organizations/settings/set-area-paths)</td>
-	<td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).</td>
+    <td><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Iteration](/azure/devops/organizations/settings/set-area-paths)">Iteration</a></td>
+    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
 </tr>
 <tr>
-<td>[Description](../queries/titles-ids-descriptions.md)</td> 
-<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
+<td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
+<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don&#39;t describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
 </tr>
 
 <tr>
-	<td><p>[Priority](../queries/planning-ranking-priorities.md)</p></td>
+    <td><p><a href="../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../queries/planning-ranking-priorities.md)">Priority</a></p></td>
 	<td><p>A subjective rating of the issue or task it relates to the business. You can specify the following values:</p>
 <p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p>
 <p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p>
@@ -132,12 +132,12 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 </td>
 </tr>
 <tr>
-<td>[Effort](../queries/query-numeric.md)<br/>
+<td><a href="../queries/query-numeric.md" data-raw-source="[Effort](../queries/query-numeric.md)">Effort</a><br/>
 <td>
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete an issue. 
 <p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for **Effort** are used to calculate [velocity](../../report/dashboards/velocity-chart-data-store.md) and [forecast sprints](../sprints/forecast.md).</p>
+<p>The estimates you set for <strong>Effort</strong> are used to calculate <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity](../../report/dashboards/velocity-chart-data-store.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
 </td> 
 </tr>
 </tbody>
@@ -168,12 +168,12 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task](_img/track-issues/enter-first-task.png) 
 
-0. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added](_img/track-issues/add-several-tasks.png)  
 
-0. You can mark a task as done, expand or collapse the task checklist, or reorder and reparent tasks. 
+2. You can mark a task as done, expand or collapse the task checklist, or reorder and reparent tasks. 
 
 	> [!div class="mx-tdCol2BreakAll"]  
 	> |Mark a task as done |Reorder and reparent tasks | Expand or collapse the checklist| 
@@ -216,7 +216,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	</tbody>
 	</table>
 	
-0. Choose **Save & Close** when done. 
+1. Choose **Save & Close** when done. 
 
 
 <a id="discussion">  </a>
@@ -228,7 +228,7 @@ Use the **Discussion** section within a form to add and review comments about th
 > [!div class="mx-imgBorder"]  
 > ![Discussion section within a work item form](../backlogs/_img/discussion-section.png)   
 
-Use the **@mention** control to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference another issue, task, or work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Use the <strong>@mention</strong> control to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference another issue, task, or work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 

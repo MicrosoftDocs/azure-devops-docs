@@ -32,17 +32,17 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *instance*: The Azure DevOps Services organization or TFS server you're sending the request to. They are structured as follows,
-        * Azure DevOps Services: `dev.azure.com/{organization}`
-        * TFS: `server:port` (the default port is 8080)
-    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Azure DevOps Services.
-    * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
-    * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
-        * `api-version=1.0`
-        * `api-version=1.2-preview`
-        * `api-version=2.0-preview.1`
+   * *instance*: The Azure DevOps Services organization or TFS server you're sending the request to. They are structured as follows,
+       * Azure DevOps Services: `dev.azure.com/{organization}`
+       * TFS: `server:port` (the default port is 8080)
+   * *collection*: The value for collection should be `DefaultCollection` for both TFS and Azure DevOps Services.
+   * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
+   * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
+     * `api-version=1.0`
+     * `api-version=1.2-preview`
+     * `api-version=2.0-preview.1`
 
-        *area* and *team-project* are optional, depending on the API request. 
+       *area* and *team-project* are optional, depending on the API request. 
     
 2. HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.

@@ -18,17 +18,17 @@ ms.date: 01/20/2017
 
 The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the project. This error can occur due to one of the following conditions:  
   
--   Process templates are not available on the server that hosts SharePoint Products.  
+- Process templates are not available on the server that hosts SharePoint Products.  
   
--   The server {name} that hosts SharePoint Products is offline.  
+- The server {name} that hosts SharePoint Products is offline.  
   
--   The local computer does not have sufficient space in the temporary storage on the hard disk to store the entire process template file. A process template file can be up to 100 megabytes, which may be more space than is available on the local hard disk.  
+- The local computer does not have sufficient space in the temporary storage on the hard disk to store the entire process template file. A process template file can be up to 100 megabytes, which may be more space than is available on the local hard disk.  
   
--   Your user account does not have sufficient permission to write data to the temporary storage directory on the local computer.  
+- Your user account does not have sufficient permission to write data to the temporary storage directory on the local computer.  
   
--   The hard disk on the local computer is not available.  
+- The hard disk on the local computer is not available.  
   
- Because the connection to Team Foundation Server failed, the wizard could not download the process template.  
+  Because the connection to Team Foundation Server failed, the wizard could not download the process template.  
   
 ### To correct this error  
   

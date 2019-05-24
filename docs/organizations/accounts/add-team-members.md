@@ -55,7 +55,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
 
- Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
+   Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
 
 Which email addresses can I add?
 
@@ -75,7 +75,7 @@ Which email addresses can I add?
 
   * **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
-   [Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
+    [Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
 ## Next steps
 

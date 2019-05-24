@@ -35,14 +35,14 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-0.	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+1. ![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+   To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)  
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
@@ -65,7 +65,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
@@ -84,20 +84,20 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. To email your sprint plan, create and save the query for the sprint backlog. 
+1. To email your sprint plan, create and save the query for the sprint backlog. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose create query from sprint backlog](_img/share-plan/create-query-agile.png) 
 
-0.  Then, open the query and choose the email icon. 
+2. Then, open the query and choose the email icon. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Email created query from sprint backlog](_img/share-plan/email-query-agile.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Email created query from sprint backlog](_img/share-plan/email-query-agile.png) 
 
-0.  In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
+3. In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
 
-	> [!IMPORTANT]     
-	> You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+   > [!IMPORTANT]     
+   > You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
 ::: moniker-end
 
@@ -106,18 +106,18 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 0. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
-0. To email the sprint plan, create and save the query for the sprint backlog. 
+1. To email the sprint plan, create and save the query for the sprint backlog. 
 
 	![Share plan](_img/share-plan/create-query-standard.png)
 
-0.	Then, open the query and choose the email icon. 
+2. Then, open the query and choose the email icon. 
 
-	![Email query](_img/IC795975.png) 
+   ![Email query](_img/IC795975.png) 
 
-0.	In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
+3. In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
 
-	> [!IMPORTANT]     
-	> You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+   > [!IMPORTANT]     
+   > You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
 
 ::: moniker-end

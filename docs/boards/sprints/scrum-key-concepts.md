@@ -60,7 +60,7 @@ Daily Scrum meetings help teams stay focused on what they need to do to maximize
 <a id="forecast" />
 ## Forecast
 The forecast tool helps team plan their sprints by showing them the backlog items that can be completed in future sprints based on work item estimates and a set velocity. 
-As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: [Forecast your product backlog](forecast.md).
+As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: <a href="forecast.md" data-raw-source="[Forecast your product backlog](forecast.md)">Forecast your product backlog</a>.
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
@@ -114,7 +114,7 @@ A type of work item used to track estimated and remaining work. In Scrum a task 
 
 <a id="taskboard" />
 ## Taskboard 
-A taskboard provides an interactive progress board for work required to complete a team's sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother [sprint burndown chart](#sbc).  Learn more: [Taskboard](task-board.md).
+A taskboard provides an interactive progress board for work required to complete a team&#39;s sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother <a href="#sbc" data-raw-source="[sprint burndown chart](#sbc)">sprint burndown chart</a>.  Learn more: <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a>.
 
 ![taskboard](_img/ALM_DS_Task_board_S.png)
 

@@ -56,7 +56,7 @@ Add epics to track significant business initiatives. Add features to track speci
 
 ## Collaborate
 
-- Collaborate with others through the **Discussion** section of the work item form. Use **@mention**s and **#ID** controls to quickly include others in the conversation or link to other work items. To learn more, see [Discussion section](plan-track-work.md#discussion).  
+- Collaborate with others through the **Discussion** section of the work item form. Use <strong>@mention</strong>s and **#ID** controls to quickly include others in the conversation or link to other work items. To learn more, see [Discussion section](plan-track-work.md#discussion).  
 - Create dashboards that track status and trends of work being accomplished. To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md).  
 - Set notifications to get alerted when an issue is created or changed. To learn more, see [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).  
 - Choose to follow specific issues to get alerted when they're updated. To learn more, see [Follow a work item](../work-items/follow-work-items.md).  

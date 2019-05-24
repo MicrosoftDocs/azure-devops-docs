@@ -92,24 +92,24 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. You can only forecast a product backlog. You can't forecast a portfolio backlog such as Features or Epics.    
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. You can only forecast a product backlog. You can't forecast a portfolio backlog such as Features or Epics.    
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+3. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-3. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
+4. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Set Forecast velocity](_img/forecast/set-forecast-velocity.png)
@@ -140,13 +140,13 @@ To forecast your product backlog, perform the following actions.
 	> [!NOTE]
 	> If you work with several teams, and each team wants to work with their own backlog, velocity chart, and forecast tool, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those set for the team. 
 
-0. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
-0. Set **Forecast** to **On** and enter your team's predicted velocity. If the Forecasting bar doesn't appear, set **Parents** to **Hide**. 
+2. Set **Forecast** to **On** and enter your team's predicted velocity. If the Forecasting bar doesn't appear, set **Parents** to **Hide**. 
 
 	![Web portal, Boards>Backlog, Forecast On](_img/forecast-tool-settings.png)
 
-0. Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
+3. Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
 
 	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.  
 

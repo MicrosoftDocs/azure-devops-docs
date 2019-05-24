@@ -67,7 +67,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
-2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy Basic + Test Plans access] (buy-basic-plus-test-plans.md).
+2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy Basic + Test Plans access](buy-basic-plus-test-plans.md).
 
     Test Plans installs automatically in Azure DevOps Server.
 

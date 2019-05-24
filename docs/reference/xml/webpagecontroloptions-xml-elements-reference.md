@@ -24,16 +24,16 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-      <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
-      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
-      </Link>  
-      <Content>  
-      <![CDATA[Contents of HTML]]>  
-      </Content>  
-</WebpageControlOptions>  
-```  
+> ```XML
+> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
+>       <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
+>       <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
+>       </Link>  
+>       <Content>  
+>       <![CDATA[Contents of HTML]]>  
+>       </Content>  
+> </WebpageControlOptions>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -76,14 +76,14 @@ The `WebpageControlOptions` element is only recognized by clients that are runni
 The following example shows how to load a work item form with HTML defined in a CDATA tag.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Control Type="WebpageControl">
-   <WebpageControlOptions>
-      <Content>
-         <![CDATA[Click here for detailed <b><a href="http://www.microsoft.com">Process Guidance</a></b>]]>
-      </Content>
-   </WebpageControlOptions>
-```
+> ```XML
+> <Control Type="WebpageControl">
+>    <WebpageControlOptions>
+>       <Content>
+>          <![CDATA[Click here for detailed <b><a href="http://www.microsoft.com">Process Guidance</a></b>]]>
+>       </Content>
+>    </WebpageControlOptions>
+> ```
   
 ## Related articles
 -  [Specify work item form controls](specify-work-item-form-controls.md)   

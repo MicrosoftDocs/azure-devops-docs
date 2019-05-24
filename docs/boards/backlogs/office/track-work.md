@@ -159,19 +159,19 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 ### Reconnect the document to the project
 
-1.  Make sure your computer is online.  
+1. Make sure your computer is online.  
 
-2.  If you changed the document while you were offline, follow one of these steps:
+2. If you changed the document while you were offline, follow one of these steps:
 
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
+   -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
 
-    -   If you are using Project, on the **Team** menu, choose **Publish Changes**.
+   -   If you are using Project, on the **Team** menu, choose **Publish Changes**.
 
-3.  If you did not change the document while you were offline, follow one of these steps:
+3. If you did not change the document while you were offline, follow one of these steps:
 
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+   -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
 
-    -   If you are using Project, on the **Team** menu, choose **Refresh**.
+   -   If you are using Project, on the **Team** menu, choose **Refresh**.
 
 4.  Resolve any data validation errors or conflicts that occur.
 

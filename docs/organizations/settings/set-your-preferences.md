@@ -42,10 +42,10 @@ From your profile page, you can change your picture or other account preferences
 <td>Security</td>
 <td>
 <ul>
-<li>[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)</li>
-<li>[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)</li>
-<li>[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)</li>
-<li>[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)</li> 
+<li><a href="../../accounts/use-personal-access-tokens-to-authenticate.md" data-raw-source="[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)">Personal access tokens</a></li>
+<li><a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)">Alternate authentication credentials</a></li>
+<li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)">OAuth authorizations</a></li>
+<li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)">SSH public keys</a></li> 
 </ul>
 </td>
 </tr>
@@ -53,9 +53,9 @@ From your profile page, you can change your picture or other account preferences
 <td>Other</td>
 <td>
 <ul>
-<li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
-<li>[Usage](../../integrate/concepts/rate-limits.md)</li>
-<li>[Enable preview features](../../project/navigation/preview-features.md)</li> 
+<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="../../integrate/concepts/rate-limits.md" data-raw-source="[Usage](../../integrate/concepts/rate-limits.md)">Usage</a></li>
+<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li> 
 </ul>
 </td>
 </tr>

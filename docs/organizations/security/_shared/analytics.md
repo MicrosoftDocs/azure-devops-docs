@@ -11,16 +11,16 @@
 <tr>
 <td align="left">View Analytics 
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">View a shared Analytics view</td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -28,7 +28,7 @@
 </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 

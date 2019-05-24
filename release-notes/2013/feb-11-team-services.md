@@ -10,17 +10,17 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Feb 11
+# Team Foundation Service updates - Feb 11
 
 We have a fair number of updates this sprint.
 
-##Continuous Integration for Git based Team Projects
+## Continuous Integration for Git based Team Projects
 
 Recently we announced the ability to use Git as your source control system with TFS. Not all automated build features are supported yet for Team Projects using Git. Today we are taking a big step in filling that gap by enabling the Continuous Integration (CI) trigger for Git based builds. Now you can build your project every time someone commits to Git.
 
 Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
-##Test Case Management Improvements
+## Test Case Management Improvements
 
 Last sprint we launched a web based test case management experience. Today we have several improvements to add to it.
 
@@ -52,11 +52,11 @@ When you are ready to start testing again, you can resume the test at the same p
 
 ![Resume tests](_img/2_11_05.png)
 
-##Work Item Tagging Improvements
+## Work Item Tagging Improvements
 
 If you’ve been using the new tagging feature, you may be wondering how to delete a tag that is no longer used on any work item. Now you don’t have to. Any tag that is no longer referenced by any work item will be automatically removed from the system by a background job. This cleanup job runs daily and cleans up tags that have not been used for 3 days.
 
-##Version Control Improvements
+## Version Control Improvements
 
 You can now download the contents of your VC repo as a zip file. Just right click in the code browser and choose **Download as Zip**. If you only want to download a part of your tree, just right click on the folder you want to download.
 
@@ -64,7 +64,7 @@ You can now download the contents of your VC repo as a zip file. Just right clic
 
 Last sprint we added the ability in the web UI to track renames in the commit and file history for Git projects. This week we’ve expanded this support to TFVC based Team Projects. Now your web history will follow rename, branch & merge operations.
 
-##Query Using OData
+## Query Using OData
 
 Also of note, during this sprint [Brian Keller announced](http://blogs.msdn.com/b/briankel/archive/2013/01/24/bringing-odata-to-team-foundation-service.aspx) the launch of the [Team Foundation Service OData API (Beta)](https://tfsodata.visualstudio.com/). You can use this api to query over the data in TFS service account using the OData protocol. There is even a Windows 8 sample application (with source) that you can use to try it out.
 

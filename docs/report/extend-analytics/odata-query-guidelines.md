@@ -26,12 +26,12 @@ Guidelines are organized as simple recommendations prefixed with the terms **DO*
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
+> 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
-```
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+> ```
+> [!INCLUDE [temp](../_shared/api-versioning.md)]
 
 
 
@@ -42,29 +42,29 @@ https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version
 Each query you execute gets checked against a set of predefined rules. Violations are returned back in the OData response following `@vsts.warnings`. Review these warnings as they provide current and context-sensitive information on how to improve your query. 
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-  "@odata.context": "https://{OrganizationName}.tfsallin.net/_odata/v1.0/$metadata#WorkItems",
-  "@vsts.warnings": [
-    "The specified query does not include a $select or $apply clause which is recommended for all queries."
-  ],
-  ...
-}
-```
+> ```JSON
+> {
+>   "@odata.context": "https://{OrganizationName}.tfsallin.net/_odata/v1.0/$metadata#WorkItems",
+>   "@vsts.warnings": [
+>     "The specified query does not include a $select or $apply clause which is recommended for all queries."
+>   ],
+>   ...
+> }
+> ```
 
 ### ✔️ DO review OData error messages 
 
 Queries that violate an OData error rule will result in a failed response with a 400 (Bad Request) status code. Associate messages don appear within the `@vsts.warnings` property, but instead are explained generate an error message in the `message` property in the JSON response. 
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-  "error": {
-  "code": "0",
-  "message": "The query specified in the URI is not valid. The Snapshot tables in Analytics are intended to be used only in an aggregation."
-  }
-}
-```
+> ```JSON
+> {
+>   "error": {
+>   "code": "0",
+>   "message": "The query specified in the URI is not valid. The Snapshot tables in Analytics are intended to be used only in an aggregation."
+>   }
+> }
+> ```
 
 <a id="restrictions" />
 
@@ -122,11 +122,11 @@ To workaround this problem, you can either explicitly add a project filter, or u
 For example, the following query fetches work items that belong to projects named `{projectSK1}` and `{projectSK2}`.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectSK eq {projectSK1} or ProjectSK eq {projectSK2}
-  &$select=WorkItemId, Title
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=ProjectSK eq {projectSK1} or ProjectSK eq {projectSK2}
+>   &$select=WorkItemId, Title
+> ```
 
 <a id="restrict-project-filter"> </a>
 
@@ -137,32 +137,32 @@ When you expand navigation properties, there is a chance that you'll end up refe
 You can do this in the regular `$filter` clause for simple navigation properties. For example, the query below explicitly asks for `WorkItemLinks` where both the link and its target exist in the same project.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
-  $filter=ProjectSK eq {projectSK} and TargetWorkItem/ProjectSK eq {projectSK}
-  &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
-  &$expand=TargetWorkItem($select=WorkItemId, Title)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
+>   $filter=ProjectSK eq {projectSK} and TargetWorkItem/ProjectSK eq {projectSK}
+>   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
+>   &$expand=TargetWorkItem($select=WorkItemId, Title)
+> ```
 
 Alternatively, you can move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the following query gets all the links from a given project and conditionally expands the target only if it exists in the same project. Although valid, this approach might cause confusion as it may be difficult to determine whether a property is not expanded because it is `null` or because it was filtered out. Use this solution only if you really need this particular behavior.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
-  $filter=ProjectSK eq {projectSK}
-  &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
-  &$expand=TargetWorkItem($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLinks?
+>   $filter=ProjectSK eq {projectSK}
+>   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
+>   &$expand=TargetWorkItem($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
+> ```
 
 You'll find that the `$filter` expand option is very useful when you use the expand collection property such as `Children` in `WorkItems` entity set. For example, the following query returns all work items from a given project together with all their children which belong in the same project. 
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectSK eq {projectSK}
-  &$select=WorkItemId, Title
-  &$expand=Children($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=ProjectSK eq {projectSK}
+>   &$select=WorkItemId, Title
+>   &$expand=Children($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
+> ```
 
 You'll need to specify the filter if you expand one of the following properties:
 * `WorkItems` entity set: `Parent`, `Children`
@@ -177,20 +177,20 @@ If you're interested in data from a single project, we recommend you use the pro
 With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause disappear, but also there's no need for the filter on the main entity set.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemLinks?
-  &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
-  &$expand=TargetWorkItem($select=WorkItemId, Title)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemLinks?
+>   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
+>   &$expand=TargetWorkItem($select=WorkItemId, Title)
+> ```
 
 The query for work item children is also much shorter and simpler.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
-  &$select=WorkItemId, Title
-  &$expand=Children($select=WorkItemId, Title)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?
+>   &$select=WorkItemId, Title
+>   &$expand=Children($select=WorkItemId, Title)
+> ```
 
 You can apply this solution only when your focus is data from a single project. For cross-project reporting, you have to use filtering strategies described in the previous sections.
 
@@ -224,12 +224,12 @@ Snapshot entity sets with the `Snapshot` suffix are special because they are mod
 For example, the query below gets the number of work items as by date to observe how it grew in January 2017.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
-  $apply=
-    filter(DateSK ge 20170101 and DateSK le 20170131)/
-    groupby((DateSK), aggregate($count as Count))
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
+>   $apply=
+>     filter(DateSK ge 20170101 and DateSK le 20170131)/
+>     groupby((DateSK), aggregate($count as Count))
+> ```
 
 To learn more about aggregations, see [Aggregate data](aggregated-data-analytics.md).
 
@@ -260,24 +260,24 @@ If you want to fetch data for a single entity, you should use the same approach 
 For example, the following query gets a single work item by its identifier.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=WorkItemId eq {id}
-  &$select=WorkItemId, Title
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=WorkItemId eq {id}
+>   &$select=WorkItemId, Title
+> ```
 
 If you're not sure which properties you should include in such a filter, you can look it up in the metadata. See [Explore the Analytics OData metadata](analytics-metadata.md). Properties are in the `Key` element of the `EntityType`. For example `WorkItemId` and `Revision` are key columns for the `WorkItemRevision` entity.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<EntityType Name="WorkItemRevision">
-  <Key>
-    <PropertyRef Name="WorkItemId"/>
-    <PropertyRef Name="Revision"/>
-  </Key>
-  [...]
-</EntityType>
-```
+> ```XML
+> <EntityType Name="WorkItemRevision">
+>   <Key>
+>     <PropertyRef Name="WorkItemId"/>
+>     <PropertyRef Name="Revision"/>
+>   </Key>
+>   [...]
+> </EntityType>
+> ```
 
 <a id="restrict-blocked-revisions"> </a>
 
@@ -298,20 +298,20 @@ Use `WorkItemRevisions` each time you want to fetch the full history for a work 
 For example, the following query returns all the revisions of a work item with the `{id}` identifier.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
-  $filter=WorkItemId eq {id}
-  &$select=WorkItemId, Title
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
+>   $filter=WorkItemId eq {id}
+>   &$select=WorkItemId, Title
+> ```
 
 If you care about the full history for all the work items that match certain criteria, express it using a filter on the `WorkItem` navigation property. For example, the following query gets all the revisions of all the currently active work items.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
-  $filter=WorkItem/State eq 'Active'
-  &$select=WorkItemId, Title
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemRevisions?
+>   $filter=WorkItem/State eq 'Active'
+>   &$select=WorkItemId, Title
+> ```
 
 
 <a name="odata_query_distinct_columns_in_last_groupby"></a>
@@ -383,11 +383,11 @@ When your query contains a lot of entity keys in the query (e.g. `WorkItemId eq 
 Another scenario that tends to generate long queries occurs when you include a lot of individual dates (e.g. `DateSK eq {dateSK 1} or DateSK eq {dateSK 2} or ...`). Look for  another pattern that you can use to create a more abstract filter. For example, the following query returns all work items that were created on Monday. 
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedOn/DayOfWeek eq 2
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedOn/DayOfWeek eq 2
+>   &$select=WorkItemId, Title, State
+> ```
 
 
 <a id="restrict-time-zone"> </a>
@@ -401,11 +401,11 @@ The time zone (`Edm.DateTimeOffset`) exposes all date and time information with 
 To solve this problem, add the time zone information. For example, assuming that the organization is configured to display data in "*(UTC-08:00) Pacific Time (US & Canada)*" time zone, the following query gets all the work items created since the beginning of 2017.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
+>   &$select=WorkItemId, Title, State
+> ```
 
 The same solution works for time zones with positive offsets, however, the plus character (`+`) has a special meaning in the URI and you must handle it accordingly. If you specify `2017-01-01T00:00:00+08:00` (with a `+` character) as your starting point you'll get the following error.
 
@@ -414,20 +414,20 @@ The same solution works for time zones with positive offsets, however, the plus 
 To solve it, replace the `+` character with its encoded version, `%2B`. For example, assuming that the organization is configured to display data in "*(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi*" time zone, the following query returns all the work items created since the beginning of 2017.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
+>   &$select=WorkItemId, Title, State
+> ```
 
 An alternative approach is to use date surrogate key properties as they do not keep the time zone information. For example, the following query returns all the work items created since the beginning of 2017 regardless of the organization's settings.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedDateSK ge 20170101
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedDateSK ge 20170101
+>   &$select=WorkItemId, Title, State
+> ```
 
 <a id="performance-guidance" />
 
@@ -497,11 +497,11 @@ Specify the columns you care about in the `$select` clause. Analytics Service is
 For example, the following query specifies the columns for work items.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $select=WorkItemId, Title, State
-```
-
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $select=WorkItemId, Title, State
+> ```
+> 
 > [!NOTE]
 > Azure DevOps supports process customization. Some administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
 
@@ -514,11 +514,11 @@ Similarly to the `$select` clause guidelines, specify the properties in the `$se
 For example, the query below specifies the columns for both the work item and its parent.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $select=WorkItemId, Title, State
-  &$expand=Parent($select=WorkItemId, Title, State)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $select=WorkItemId, Title, State
+>   &$expand=Parent($select=WorkItemId, Title, State)
+> ```
 
 <a id="perf-define-filter"> </a>
 
@@ -533,17 +533,17 @@ In the Analytics Service, the revised date is represented by `RevisedDate` (`Edm
 For example, the following query returns the number of work items for each day since the beginning of 2017. Notice that apart from the obvious filter on `DateSK` column there is a second filter on `RevisedDateSK`. Although it may seem redundant, it helps the query engine to filter out revisions that aren't in scope and significantly improves query performance.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
-  $apply=
-    filter(DateSK gt 20170101)/
-    filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/
-    groupby(
-      (DateValue), 
-      aggregate($count as Count)
-    )
-```
-
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
+>   $apply=
+>     filter(DateSK gt 20170101)/
+>     filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/
+>     groupby(
+>       (DateValue), 
+>       aggregate($count as Count)
+>     )
+> ```
+> 
 > [!NOTE]
 > We came up with this recommendation when we were working on Burndown widgets. Initially we defined filters only for `DateSK` but we couldn't get this query to scale well for organizations with large datasets. During query profiling, we noticed that `DateSK` doesn't filter revisions well. Only after we added a filter on `RevisedDateSK` were we able to get great performance at scale.<br/>
 > ~ *Product Team*
@@ -557,43 +557,43 @@ By default, all the snapshot tables are modeled as *daily snapshot fact* tables.
 You can achieve this with additional filter expressions to remove days which don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<EnumType Name="Period" IsFlags="true">
-  <Member Name="None" Value="0"/>
-  <Member Name="Day" Value="1"/>
-  <Member Name="WeekEndingOnSunday" Value="2"/>
-  <Member Name="WeekEndingOnMonday" Value="4"/>
-  <Member Name="WeekEndingOnTuesday" Value="8"/>
-  <Member Name="WeekEndingOnWednesday" Value="16"/>
-  <Member Name="WeekEndingOnThursday" Value="32"/>
-  <Member Name="WeekEndingOnFriday" Value="64"/>
-  <Member Name="WeekEndingOnSaturday" Value="128"/>
-  <Member Name="Month" Value="256"/>
-  <Member Name="Quarter" Value="512"/>
-  <Member Name="Year" Value="1024"/>
-  <Member Name="All" Value="2047"/>
-</EnumType>
-```
+> ```XML
+> <EnumType Name="Period" IsFlags="true">
+>   <Member Name="None" Value="0"/>
+>   <Member Name="Day" Value="1"/>
+>   <Member Name="WeekEndingOnSunday" Value="2"/>
+>   <Member Name="WeekEndingOnMonday" Value="4"/>
+>   <Member Name="WeekEndingOnTuesday" Value="8"/>
+>   <Member Name="WeekEndingOnWednesday" Value="16"/>
+>   <Member Name="WeekEndingOnThursday" Value="32"/>
+>   <Member Name="WeekEndingOnFriday" Value="64"/>
+>   <Member Name="WeekEndingOnSaturday" Value="128"/>
+>   <Member Name="Month" Value="256"/>
+>   <Member Name="Quarter" Value="512"/>
+>   <Member Name="Year" Value="1024"/>
+>   <Member Name="All" Value="2047"/>
+> </EnumType>
+> ```
 
 Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as and enum with flags, use the OData [`has`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month'
-```
+> ```OData
+> IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month'
+> ```
 
 For example, the following query returns a count of work items that were defined  on the last day of each month.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
-  $apply=
-    filter(IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month')/
-    groupby(
-      (DateValue), 
-      aggregate($count as Count)
-    )
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnapshot?
+>   $apply=
+>     filter(IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month')/
+>     groupby(
+>       (DateValue), 
+>       aggregate($count as Count)
+>     )
+> ```
 
 
 <a name="question-18172"></a>
@@ -606,29 +606,29 @@ You can use the  `TagNames` property with the `contains` function to determine i
 For example, the following query gets all the work items which were tagged with a `{tag}`.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Tags/any(t:t/TagName eq '{tag}')
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=Tags/any(t:t/TagName eq '{tag}')
+>   &$select=WorkItemId, Title, State
+> ```
 
 This approach also works great when you need to filter on multiple tags. For example, the following query returns all work items that were tagged with `{tag1}` **or** `{tag2}`
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
+>   &$select=WorkItemId, Title, State
+> ```
 
 You can also combine these filters with an "and" operator. For example, the following query gets all the work items which were tagged with both `{tag1}` **and** `{tag2}`
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
-  &$select=WorkItemId, Title, State
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
+>   &$select=WorkItemId, Title, State
+> ```
 
 <a id="perf-tagnames"> </a>
 
@@ -639,12 +639,12 @@ Navigation property `Tags`, described in the previous section, is great for filt
 For example, the following query gets all the work items which were tagged with a `{tag}`. It returns the work item ID, title, state and a text representation of combined tags.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Tags/any(t:t/TagName eq '{tag}')
-  &$select=WorkItemId, Title, State, TagNames
-```
-
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=Tags/any(t:t/TagName eq '{tag}')
+>   &$select=WorkItemId, Title, State, TagNames
+> ```
+> 
 > [!IMPORTANT]
 > Property `TagNames` has a length limit of 1024 characters. It contains a set of tags that fit within that limit. If a work item has many tags or the tags are very long, then `TagNames` will not contain the full set and `Tag` navigation property should be used instead.
 
@@ -658,11 +658,11 @@ If you've worked with other systems, you might expect you need to use `tolower` 
 For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=Tags/any(t:t/TagName eq 'quality')
-  &$select=WorkItemId, Title, State, TagNames
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=Tags/any(t:t/TagName eq 'quality')
+>   &$select=WorkItemId, Title, State, TagNames
+> ```
 
 <a id="perf-unbounded"> </a>
 
@@ -679,15 +679,15 @@ If you ask for a set that is too large to be sent in a single response, the Anal
 The link to the next page is included in the `@odata.nextLink` property.
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(*)",
-  "value": [
-    ...
-  ],
-  "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?$skiptoken=12345"}
-```
-
+> ```JSON
+> {
+>   "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(*)",
+>   "value": [
+>     ...
+>   ],
+>   "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?$skiptoken=12345"}
+> ```
+> 
 > [!NOTE]
 > Most existing OData clients can handle server-driven paging automatically. For example this strategy is already used by the following tools: Power BI, SQL Server Integration Services and Azure Data Factory.
 
@@ -727,10 +727,10 @@ There are many ways you can define a date filter. You can filter on the date pro
 For example, the following query gets all the work items created since the beginning of 2017.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedDateSK ge 20170101
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedDateSK ge 20170101
+> ```
 
 <a id="perf-filter-surrogate"> </a>
 
@@ -743,10 +743,10 @@ If you're building a widget, we recommend you use the latter option. When the ke
 For example, the following query filters `WorkItems` using `ProjectSK` property rather than `Project/ProjectName` navigation property.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=ProjectSK eq {projectSK}
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=ProjectSK eq {projectSK}
+> ```
 
 <a id="perf-avoid-parent-child"> </a>
 <a name="odata_query_parent_child_relations"></a>
@@ -802,10 +802,10 @@ Some entities expose `Count` property. They make some reporting scenarios easier
 For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $apply=aggregate($count as Count)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $apply=aggregate($count as Count)
+> ```
 
 <a id="style-avoid-count"> </a>
 
@@ -816,10 +816,10 @@ Although OData standard allows you to use `$count` virtual property for entity s
 For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $apply=aggregate($count as Count)
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $apply=aggregate($count as Count)
+> ```
 
 <a id="style-aliases"> </a>
 
@@ -830,12 +830,12 @@ Parameter aliases provide an elegant solution to extract volatile parts such as 
 For example, the following query uses `@createdDateSK` parameter to separate the value from the filter expression.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=CreatedDateSK ge @createdDateSK
-  &$select=WorkItemId, Title, State
-  &@createdDateSK=20170101
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=CreatedDateSK ge @createdDateSK
+>   &$select=WorkItemId, Title, State
+>   &@createdDateSK=20170101
+> ```
 
 <a id="style-avoid-mix"> </a>
 
@@ -848,16 +848,16 @@ Despite the expectation one might have, OData clearly defines an order of the ev
 For example, the following query first filters work items by `StoryPoint gt 5`, aggregates result by are path and finally filters the result by `StoryPoints gt 2`. With this evaluation order, the query will always return an empty set.
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
-  $filter=StoryPoints gt 2
-  $apply=
-    filter(StoryPoints gt 5)/
-    groupby(
-      (Area/AreaPath),
-      aggregate(StoryPoints with sum as StoryPoints)
-    )
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
+>   $filter=StoryPoints gt 2
+>   $apply=
+>     filter(StoryPoints gt 5)/
+>     groupby(
+>       (Area/AreaPath),
+>       aggregate(StoryPoints with sum as StoryPoints)
+>     )
+> ```
 
 <a id="style-match-order"> </a>
 
@@ -883,34 +883,34 @@ When you're unsure about which OData capabilities the Analytics Service supports
 For example, the list of supported filter functions is available in `Org.OData.Capabilities.V1.FilterFunctions` annotation on the entity container.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Annotation Term="Org.OData.Capabilities.V1.FilterFunctions">
-  <Collection>
-  <String>contains</String>
-  <String>endswith</String>
-  [...]
-  </Collection>
-</Annotation>
-```
+> ```XML
+> <Annotation Term="Org.OData.Capabilities.V1.FilterFunctions">
+>   <Collection>
+>   <String>contains</String>
+>   <String>endswith</String>
+>   [...]
+>   </Collection>
+> </Annotation>
+> ```
 
 Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, which explains which navigation properties you can't use in the `$expand` clause. For example, the following annotation explains that `Revisions` in the `WorkItems` entity set can't be expanded.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<EntitySet Name="WorkItems" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
-  [...]
-  <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
-    <Record>
-      <PropertyValue Property="Expandable" Bool="true"/>
-      <PropertyValue Property="NonExpandableProperties">
-        <Collection>
-          <NavigationPropertyPath>Revisions</NavigationPropertyPath>
-        </Collection>
-      </PropertyValue>
-    </Record>
-  </Annotation>
-</EntitySet>
-```
+> ```XML
+> <EntitySet Name="WorkItems" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.WorkItem">
+>   [...]
+>   <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
+>     <Record>
+>       <PropertyValue Property="Expandable" Bool="true"/>
+>       <PropertyValue Property="NonExpandableProperties">
+>         <Collection>
+>           <NavigationPropertyPath>Revisions</NavigationPropertyPath>
+>         </Collection>
+>       </PropertyValue>
+>     </Record>
+>   </Annotation>
+> </EntitySet>
+> ```
 
 
 

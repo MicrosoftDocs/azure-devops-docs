@@ -58,6 +58,7 @@ Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggreg
 ``` 
 
 The following transformations are supported:
+
 | Transformation | Notes |
 | ------------------ | ----------- |
 | ```aggregate```  | Allows aggregation using one of following methods   ```$count```, ```average```, ```max```,  ```min```, ```sum```  |
@@ -124,7 +125,7 @@ However, you can't enter the following:
 - ```topcount```  
 - ```topsum```  
 - ```toppercent```  
- 
+
 
 ## Related articles  
 

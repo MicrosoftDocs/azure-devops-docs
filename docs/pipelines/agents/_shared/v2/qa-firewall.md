@@ -26,4 +26,4 @@ https://login.microsoftonline.com
 https://management.core.windows.net
 ```
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` is open and the `13.107.6.183` and `13.107.9.183` IP addresses are allowed.
+To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` is open and the `13.107.6.0/24` and `13.107.9.0/24` IP address ranges are allowed.

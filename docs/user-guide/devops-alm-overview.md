@@ -59,7 +59,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 [![Android Studio](_img/overview/code-git-android-studio-1.png)](/../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/../java/download-intellij-plug-in.md)  
 
 <br/>
-[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)  
+<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="_img/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="_img/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="_img/overview/code-git-xcode.png" alt="Xcode"/></a>  
 
 ### TFVC
 

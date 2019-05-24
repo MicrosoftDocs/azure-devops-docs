@@ -51,9 +51,9 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 ## Open Settings for the board 
 
-0.  [Open your Kanban board](track-issues-tasks.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
+0. [Open your Kanban board](track-issues-tasks.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](_img/customize-boards/open-settings.png)  
@@ -63,24 +63,24 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Fields dialog](_img/customize-boards/settings-fields-dialog.png) 
 	
-0. Choose one of the following tabs based on what you want to customize:  
+2. Choose one of the following tabs based on what you want to customize:  
 
 	**Common customizations:**  
 	<ul>
-	<li>**Fields**: Set what fields appear on cards.</li>
-	<li>**Columns**: Add, rename, and configure columns for the board.</li>
-	<li>**Swimlanes**: Add swimlanes to a board to easily track high priority levels, distinguish different service classes, or track blocked items.</li>
-	<li>**Backlogs**: Enable or disable issues or epics from being tracked on backlogs and boards.</li>
+    <li><strong>Fields</strong>: Set what fields appear on cards.</li>
+    <li><strong>Columns</strong>: Add, rename, and configure columns for the board.</li>
+    <li><strong>Swimlanes</strong>: Add swimlanes to a board to easily track high priority levels, distinguish different service classes, or track blocked items.</li>
+    <li><strong>Backlogs</strong>: Enable or disable issues or epics from being tracked on backlogs and boards.</li>
 	</ul>
-	**Less common customizations:**  
+    <strong>Less common customizations:</strong>  
 	<ul>
-	<li>**Styles**: Specify the card color to display based on field criteria you specify.</li>
-	<li>**Tag colors**: Specify the tag color to display based on tag criteria you specify.</li>
-	<li>**Annotations**: Enable or disable task or test annotations.</li>
-	<li>**Tests**: Configure how you want tests to appear and behave on the cards.</li>
-	<li>**Card reordering**: Choose to enable/disable changing of the backlog priority when dragging and dropping cards on the board.</li>
-	<li>**Cumulative flow**: Set how you want the cumulative flow diagram to display.</li>
-	<li>**Working days**: Set the active weekdays to use when tracking capacity and burndown.</li>
+    <li><strong>Styles</strong>: Specify the card color to display based on field criteria you specify.</li>
+    <li><strong>Tag colors</strong>: Specify the tag color to display based on tag criteria you specify.</li>
+    <li><strong>Annotations</strong>: Enable or disable task or test annotations.</li>
+    <li><strong>Tests</strong>: Configure how you want tests to appear and behave on the cards.</li>
+    <li><strong>Card reordering</strong>: Choose to enable/disable changing of the backlog priority when dragging and dropping cards on the board.</li>
+    <li><strong>Cumulative flow</strong>: Set how you want the cumulative flow diagram to display.</li>
+    <li><strong>Working days</strong>: Set the active weekdays to use when tracking capacity and burndown.</li>
 	</ul>
 
 ## Customize fields
@@ -89,18 +89,18 @@ To quickly assign fields from the card without having to open the work item, add
 
 0. To configure the fields displayed on cards, choose the **Fields** tab. 
 
-0. Check or uncheck those fields you want to display or not display on the board.
+1. Check or uncheck those fields you want to display or not display on the board.
 
-0. To add a field, choose ![plus icon](../../_img/icons/green_plus_icon.png) **Field** to add a field. 
+2. To add a field, choose ![plus icon](../../_img/icons/green_plus_icon.png) **Field** to add a field. 
 
 	For example, here we uncheck **Show ID** and add the **Priority** field. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings, Fields dialog, Add Priority field](_img/customize-boards/settings-fields-change-priority.png) 
 	
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
-0. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
+4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
 
 ## Customize columns
@@ -112,7 +112,7 @@ To quickly assign fields from the card without having to open the work item, add
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Columns dialog, Add Research column](_img/customize-boards/settings-columns-add-research-column.png) 
 
-0. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
+1. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
 
 ## Customize swimlanes 
 
@@ -123,7 +123,7 @@ To quickly assign fields from the card without having to open the work item, add
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Swimlanes dialog, Add Expedite swimlane](_img/customize-boards/settings-swimlanes-dialog-expedite.png) 
 
-0. Choose **Save and close** when done. To learn more about working with swimlanes , see [Expedite work with swimlanes](../boards/expedite-work.md). 
+1. Choose **Save and close** when done. To learn more about working with swimlanes , see [Expedite work with swimlanes](../boards/expedite-work.md). 
 
 ## Add or remove backlog levels
 
@@ -134,7 +134,7 @@ If you decide you don't want to use Epics to track work, you can turn it off and
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/settings-backlogs-dialog.png) 
 
-0. Choose **Save and close** when done. 
+1. Choose **Save and close** when done. 
 
 	> [!NOTE]   
 	> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-wit.md#enable-disable)

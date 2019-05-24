@@ -232,7 +232,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC?inc
 
 ## Create a project
 <a name="createateamproject" />
-Create a project in a VSTS organization. Use the [GetOperation](#GetOperation) to periodically check for create project status.
+Create a project in a VSTS organization. Use the <a href="#GetOperation" data-raw-source="[GetOperation](#GetOperation)">GetOperation</a> to periodically check for create project status.
 
 ```no-highlight
 POST https://{instance}/defaultcollection/_apis/projects?api-version={version}
@@ -300,8 +300,8 @@ Content-Type: application/json
 
 ```
 {
-	"name": {string},
-	"description": {string}   
+    "name": {string},
+    "description": {string}   
 }
 ```
 
@@ -339,7 +339,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-91
   "url": "https://mytfsserver/DefaultCollection/_apis/operations/b5f386e9-c67d-4caf-8e78-4e58230c7e90"
 }
 ```
-   
+
 
 #### Sample code
 
@@ -368,7 +368,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-91
   "url": "https://mytfsserver/DefaultCollection/_apis/operations/b5f386e9-c67d-4caf-8e78-4e58230c7e90"
 }
 ```
-    
+
 
 #### Sample code
 
@@ -467,6 +467,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 
 
 #### Request parameters
+
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
 | <code>projectId</code> | URL | GUID | Required. The project ID.
@@ -583,6 +584,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 
 
 #### Request parameters
+
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
 | <code>projectId</code> | URL | GUID | Required. The project ID.

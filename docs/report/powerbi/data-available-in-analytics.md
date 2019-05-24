@@ -38,31 +38,31 @@ Currently, you can access the following data from the Analytics Service. This in
 </tr>
 <tbody valign="top">
 <tr>
-<td>[Boards](https://azure.microsoft.com/services/devops/boards/)</td>
-<td>[Widgets](../dashboards/analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](overview.md)</td>
+<td><a href="https://azure.microsoft.com/services/devops/boards/" data-raw-source="[Boards](https://azure.microsoft.com/services/devops/boards/)">Boards</a></td>
+<td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a>, <a href="overview.md" data-raw-source="[Power BI](overview.md)">Power BI</a></td>
 <td>Same as Azure DevOps</td>
 <td>Rollup - Q2, CY 2019</td>
 </tr>
 <tr>
-<td>[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)</td>
-<td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)</td>
+<td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Pipelines</a></td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</a></td>
 <td>Same as Azure DevOps</td>
 <td>Build/Release - CY 2019</td>
 </tr>
 <tr>
-<td>[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)</td>
+<td><a href="https://azure.microsoft.com/services/devops/test-plans/" data-raw-source="[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)">Test Plans</a></td>
 <td>None</td>
 <td>None</td>
 <td>Q2, CY 2019</td>
 </tr>
 <tr>
-<td>[Repos](https://azure.microsoft.com/services/devops/repos/)</td>
+<td><a href="https://azure.microsoft.com/services/devops/repos/" data-raw-source="[Repos](https://azure.microsoft.com/services/devops/repos/)">Repos</a></td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>
 </tr>
 <tr>
-<td>[Artifacts](https://azure.microsoft.com/services/devops/artifacts/)</td>
+<td><a href="https://azure.microsoft.com/services/devops/artifacts/" data-raw-source="[Artifacts](https://azure.microsoft.com/services/devops/artifacts/)">Artifacts</a></td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>

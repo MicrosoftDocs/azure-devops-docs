@@ -17,19 +17,19 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Test Team Progress report to help monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing. The Test Team Progress report provides the following six reports based on data that was collected for test cases that were defined for the team project and test results:  
   
--   **Test Plan Progress**: Helps the team determine how much testing the team has completed and whether it is likely to finish test activities on time.  
+- **Test Plan Progress**: Helps the team determine how much testing the team has completed and whether it is likely to finish test activities on time.  
   
--   **Test Case Authoring Status**: Helps the team track the status of completing the definition of test cases so that they can be run.  
+- **Test Case Authoring Status**: Helps the team track the status of completing the definition of test cases so that they can be run.  
   
--   **Test Status by Suite**: Helps the team determine how much testing the team has completed within each test suite.  
+- **Test Status by Suite**: Helps the team determine how much testing the team has completed within each test suite.  
   
--   **Test Status by Area**: Helps the team determine how much testing the team has completed within each product area.  
+- **Test Status by Area**: Helps the team determine how much testing the team has completed within each product area.  
   
--   **Failure Analysis**: Helps the team monitor how many regressions they are finding.  
+- **Failure Analysis**: Helps the team monitor how many regressions they are finding.  
   
--   **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.  
+- **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.  
   
- This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.md).  
+  This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.md).  
   
 > [!NOTE]
 >  You can access the Test Team Progress report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
@@ -91,23 +91,23 @@ Teams who are responsible for testing software can use the Test Team Progress re
   
  The system examines each test configuration for which the test case was executed and tries to identify the predecessor result for the same configuration for the test case. The failure type that is assigned to the test case/configuration is determined based on the following criteria:  
   
--   **Regression**: When the immediate predecessor result had an outcome of **Passed**.  
+- **Regression**: When the immediate predecessor result had an outcome of **Passed**.  
   
--   **None**: When the immediate predecessor result had an outcome that was not **Passed** or **Failed**.  
+- **None**: When the immediate predecessor result had an outcome that was not **Passed** or **Failed**.  
   
--   **New Issue**: When no immediate predecessor result can be found.  
+- **New Issue**: When no immediate predecessor result can be found.  
   
--   **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.  
+- **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.  
   
- The team can review the report to find answers to the following questions:  
+  The team can review the report to find answers to the following questions:  
   
--   How many tests overall are regressing?  
+- How many tests overall are regressing?  
   
--   Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?  
+- Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?  
   
--   Is the team addressing issues as they are identified? Are the known issues addressed in a timely manner?  
+- Is the team addressing issues as they are identified? Are the known issues addressed in a timely manner?  
   
- A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might want to investigate this issue more. Spikes may indicate problems in either the test activity or the quality of code that the team checks in. Also, the team might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.  
+  A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might want to investigate this issue more. Spikes may indicate problems in either the test activity or the quality of code that the team checks in. Also, the team might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.  
   
 ### Report filters and fields  
  The following table describes the report filters and fields that are used in the PivotTables that generate the Test Plan Progress, Test Status by Suite or Area, and the Failure Analysis reports.  
@@ -119,20 +119,20 @@ Teams who are responsible for testing software can use the Test Team Progress re
 ##  <a name="RequiredActivities"></a> Required activities for monitoring test team progress  
  For the Test Team Progress reports to be useful and accurate, the team must perform the following activities:  
   
--   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
+- [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
   
--   [Run tests](../../test/run-manual-tests.md).  
+- [Run tests](../../test/run-manual-tests.md).  
   
--   For manual tests, mark the results of each validation step in the test case as passed or failed.  
+- For manual tests, mark the results of each validation step in the test case as passed or failed.  
   
-    > [!IMPORTANT]
-    >  Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.  
+  > [!IMPORTANT]
+  >  Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.  
   
-     For automated tests, each test case is automatically marked as passed or failed.  
+   For automated tests, each test case is automatically marked as passed or failed.  
   
--   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
   
- For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:  
+  For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:  
   
 |Worksheet report|Required activities|  
 |----------------------|-------------------------|  

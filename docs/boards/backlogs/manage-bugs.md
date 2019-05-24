@@ -69,7 +69,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
-# [New web form](#tab/new-web-form)
+#### [New web form](#tab/new-web-form/)
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
@@ -84,8 +84,7 @@ The new web form is only available from TFS 2017 and later versions.
 ::: moniker-end  
 
 
-# [Old web form](#tab/old-web-form)  
-
+#### [Old web form](#tab/old-web-form/)
 ::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
@@ -96,8 +95,7 @@ To learn more about working in the old web form, see [Add work items to plan and
 ::: moniker-end  
 
 
----
-
+* * *
 ## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
@@ -114,7 +112,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 </tr>
 <tr>
 <td>
-[Steps to Reproduce](../queries/titles-ids-descriptions.md) (friendly name=Repro Steps)
+<a href="../queries/titles-ids-descriptions.md" data-raw-source="[Steps to Reproduce](../queries/titles-ids-descriptions.md)">Steps to Reproduce</a> (friendly name=Repro Steps)
 </td>
 <td>
 <p>Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. </p>
@@ -123,7 +121,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 </tr>
 <tr>
 <td>
-<p>[System Info](../queries/titles-ids-descriptions.md)</p>
+<p><a href="../queries/titles-ids-descriptions.md" data-raw-source="[System Info](../queries/titles-ids-descriptions.md)">System Info</a></p>
 </td>
 <td>
 <p>Information about the software and system configuration that is relevant to the test.</p>
@@ -131,37 +129,37 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 </tr>
 
 <tr>
-	<td><p>[Acceptance Criteria](../queries/titles-ids-descriptions.md)  </p></td>
-	<td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
+    <td><p><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a>  </p></td>
+    <td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>[Found In Build](../queries/build-test-integration.md)</p>
-<p>[Integrated in Build](../queries/build-test-integration.md)</p>
+<p><a href="../queries/build-test-integration.md" data-raw-source="[Found In Build](../queries/build-test-integration.md)">Found In Build</a></p>
+<p><a href="../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../queries/build-test-integration.md)">Integrated in Build</a></p>
 </td>
 <td>
-<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).</p>
-<p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>For on-premises TFS, to access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../queries/build-test-integration.md).</p>
-<p>For information about how to define build names, see [build number format options](../../pipelines/build/options.md). </p>
+<p>When Test Manager creates bugs, it automatically populates <strong>System Info</strong> and <strong>Found in Build</strong> with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see <a href="../../test/test-different-configurations.md" data-raw-source="[Test different configurations](../../test/test-different-configurations.md)">Test different configurations</a>.</p>
+<p>When you resolve the bug, use <strong>Integrated in Build</strong> to indicate the name of the build that incorporates the code that fixes the bug. </p>
+<p>For on-premises TFS, to access a drop-down menu of all builds that have been run, you can update the <code>FIELD</code> definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see <a href="../queries/build-test-integration.md" data-raw-source="[Query based on build and test integration fields](../queries/build-test-integration.md)">Query based on build and test integration fields</a>.</p>
+<p>For information about how to define build names, see <a href="../../pipelines/build/options.md" data-raw-source="[build number format options](../../pipelines/build/options.md)">build number format options</a>. </p>
 </td>
 </tr>
 <tr>
 <td>
-[Priority](../queries/planning-ranking-priorities.md) <sup>1</sup>
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../queries/planning-ranking-priorities.md)">Priority</a> <sup>1</sup>
 </td>
 <td>
 <p>A subjective rating of the bug as it relates to the business or customer requirements. Priority indicates the order in which code defects should be fixed. You can specify the following values:</p>
 <ul>
   <li>
-      **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.
+      <strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.
   </li>
   <li>
-      **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.
+      <strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.
   </li>
   <li>
-      **3**: Resolution of the work item is optional based on resources, time, and risk.
+      <strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.
   </li>
 </ul>
 </td>
@@ -169,31 +167,30 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 
 <tr>
 <td>
-[Severity](../queries/planning-ranking-priorities.md) <sup>1</sup>
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Severity](../queries/planning-ranking-priorities.md)">Severity</a> <sup>1</sup>
 </td>
 <td>
 A subjective rating of the impact of a bug on the project or software system. For example: If clicking a remote link (a rare event) causes an application or web page to crash (a severe customer experience), you might specify Severity = 2 - High and Priority = 3.  Allowed values and suggested guidelines are:
 <ul>
   <li>
-      **1 - Critical**: Must fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. And, there are no acceptable alternative methods to achieve required results.
+      <strong>1 - Critical</strong>: Must fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. And, there are no acceptable alternative methods to achieve required results.
   </li>
   <li>
-      **2 - High**: Consider fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. However, an acceptable alternative method exists to achieve required results.
+      <strong>2 - High</strong>: Consider fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. However, an acceptable alternative method exists to achieve required results.
   </li>
   <li>
-      **3 - Medium**: (Default) A defect that causes the system to produce incorrect, incomplete or inconsistent results.
+      <strong>3 - Medium</strong>: (Default) A defect that causes the system to produce incorrect, incomplete or inconsistent results.
   </li>
   <li>
-      **4 - Low**: A minor or cosmetic defect that has acceptable workarounds to achieve required results. 
+      <strong>4 - Low</strong>: A minor or cosmetic defect that has acceptable workarounds to achieve required results. 
   </li>
 </ul>
 </td>
 </tr>
 
 </tbody>
-</table>  
- 
-<sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
+</table><br/>
+<sup>1</sup> To change the menu selection or picklist, see <a href="../../reference/customize-work.md" data-raw-source="[Customize the work tracking experience](../../reference/customize-work.md)">Customize the work tracking experience</a>. The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
@@ -210,7 +207,7 @@ You can create bugs during test sessions using one of the following tools:
 
 <a id="triage"> </a>
 ## Triage bugs  
- 
+
 Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
 
 The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
@@ -237,7 +234,7 @@ Once bugs have been triaged, it's time to assign them to a sprint to get fixed. 
 When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../sprints/assign-work-sprint.md) during your sprint planning sessions. 
 
 When bugs are treated as tasks, they're often automatically linked to a PBI or user story. So, assigning their parent PBI or user story to a sprint will [assign the linked bugs to the same sprint as the parent PBI or user story](../sprints/task-board.md) during your sprint planning sessions. 
- 
+
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
 
@@ -262,11 +259,11 @@ For Scrum bugs, you simply change the State from Committed (similar to Active) t
 To verify a fix, a developer or tester should attempt to reproduce the bug and look for additional unexpected behavior. If necessary, they should reactivate the bug.
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
- 
+
 ::: moniker range=">= tfs-2017"  
 
 <a id="verify-bug">  </a>
-###Verify a bug, re-run tests defined for web apps 
+### Verify a bug, re-run tests defined for web apps 
 ::: moniker-end  
 ::: moniker range=">= tfs-2018"  
 Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
@@ -276,7 +273,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 ::: moniker range=">= tfs-2017"  
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
- 
+
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
 
@@ -330,7 +327,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Zendesk](../../service-hooks/services/zendesk.md)  
 - [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
-  
+
 
 ::: moniker range=">= azure-devops-2019"
 

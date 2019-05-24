@@ -25,18 +25,18 @@ The API version follows the _odata element in the request path and is formatted 
 ::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-``` 
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> ``` 
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-```
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> ```
 
 ::: moniker-end
 
@@ -92,29 +92,29 @@ The data model exposed by the Analytics Service defines the contract between the
 Consider a scenario where a new UserType property is added to the User entity.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<EntityType Name="User">
-    <Key>
-        <PropertyRef Name="UserSK"/>
-    </Key>
-    <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
-    <Property Name="UserId" Type="Edm.Guid" Nullable="false">
-        <Annotation Term="Display.DisplayName" String="User Id"/>
-    </Property>
-    <Property Name="UserName" Type="Edm.String">
-        <Annotation Term="Display.DisplayName" String="User Name"/>
-    </Property>
-    <Property Name="UserEmail" Type="Edm.String">
-        <Annotation Term="Display.DisplayName" String="User Email"/>
-    </Property>
-    <!-- New User Type property -->
-    <Property Name="UserType" Type="Edm.Int32">
-        <Annotation Term="Display.DisplayName" String="User Type"/>
-    </Property>
-    <!-- New User Type property -->
-</EntityType>
-```
-This change is additive and could be made available in the current **v1.0** version.
+> ```XML
+> <EntityType Name="User">
+>     <Key>
+>         <PropertyRef Name="UserSK"/>
+>     </Key>
+>     <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
+>     <Property Name="UserId" Type="Edm.Guid" Nullable="false">
+>         <Annotation Term="Display.DisplayName" String="User Id"/>
+>     </Property>
+>     <Property Name="UserName" Type="Edm.String">
+>         <Annotation Term="Display.DisplayName" String="User Name"/>
+>     </Property>
+>     <Property Name="UserEmail" Type="Edm.String">
+>         <Annotation Term="Display.DisplayName" String="User Email"/>
+>     </Property>
+>     <!-- New User Type property -->
+>     <Property Name="UserType" Type="Edm.Int32">
+>         <Annotation Term="Display.DisplayName" String="User Type"/>
+>     </Property>
+>     <!-- New User Type property -->
+> </EntityType>
+> ```
+> This change is additive and could be made available in the current **v1.0** version.
 
 ### Example of breaking changes
 
@@ -122,24 +122,24 @@ Now consider a scenario where we revert to the original structure of the User en
 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<EntityType Name="User">
-    <Key>
-        <PropertyRef Name="UserSK"/>
-    </Key>
-    <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
-    <Property Name="UserId" Type="Edm.Guid" Nullable="false">
-        <Annotation Term="Display.DisplayName" String="User Id"/>
-    </Property>
-    <Property Name="UserName" Type="Edm.String">
-        <Annotation Term="Display.DisplayName" String="User Name"/>
-    </Property>
-    <Property Name="UserEmail" Type="Edm.String">
-        <Annotation Term="Display.DisplayName" String="User Email"/>
-    </Property>
-    <!-- User Type property has been removed -->
-</EntityType>
-```
+> ```XML
+> <EntityType Name="User">
+>     <Key>
+>         <PropertyRef Name="UserSK"/>
+>     </Key>
+>     <Property Name="UserSK" Type="Edm.Guid" Nullable="false"/>
+>     <Property Name="UserId" Type="Edm.Guid" Nullable="false">
+>         <Annotation Term="Display.DisplayName" String="User Id"/>
+>     </Property>
+>     <Property Name="UserName" Type="Edm.String">
+>         <Annotation Term="Display.DisplayName" String="User Name"/>
+>     </Property>
+>     <Property Name="UserEmail" Type="Edm.String">
+>         <Annotation Term="Display.DisplayName" String="User Email"/>
+>     </Property>
+>     <!-- User Type property has been removed -->
+> </EntityType>
+> ```
 
 Since removal of the `UserType` field is a breaking change, the field won't be removed until version <strong>v2.0</strong> of the API. <strong>v1.0</strong> of the data model continues to include the `UserType` field.
 
