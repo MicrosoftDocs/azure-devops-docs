@@ -22,20 +22,20 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build pipelines for a team project.  
   
--   **Build Verification Testing**: Helps the team monitor the quality of builds by showing test results for all automated tests that are marked as Build Verification Test (BVT) that are run during the build process.  
+- **Build Verification Testing**: Helps the team monitor the quality of builds by showing test results for all automated tests that are marked as Build Verification Test (BVT) that are run during the build process.  
   
--   **Test Activity Per Build**: Helps the team monitor the quality of builds by showing test results for all tests that have been run against the build for all or selected test plans.  
+- **Test Activity Per Build**: Helps the team monitor the quality of builds by showing test results for all tests that have been run against the build for all or selected test plans.  
   
-    > [!NOTE]
-    >  You can view the Build Quality report if you open Team Explorer, open the team project, open the **Excel Reports** folder, and open the **Test Team Management** folder. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
+  > [!NOTE]
+  >  You can view the Build Quality report if you open Team Explorer, open the team project, open the **Excel Reports** folder, and open the **Test Team Management** folder. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
   
- These reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
+  These reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
   
- **Required permissions**  
+  **Required permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
+  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
- To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
+  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the reports  
  The Build Quality reports illustrate the cumulative count of test results for all build pipelines for a team project. Both reports are based on PivotTable reports that access data that is stored in the data warehouse. The count that is shown in each report is a count of the most recent version of each test result in a particular build.  

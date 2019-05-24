@@ -54,11 +54,11 @@ You can use the Bug Reactivations report to determine how effectively the team i
   
  You can review the report to answer these questions:  
   
--   How many Bugs have been reactivated in the past four weeks?  
+- How many Bugs have been reactivated in the past four weeks?  
   
--   Is the team resolving and closing reactivated Bugs quickly enough?  
+- Is the team resolving and closing reactivated Bugs quickly enough?  
   
- For information about healthy and unhealthy versions of the report, see [Reactivations](../sql-reports/reactivations-report.md).  
+  For information about healthy and unhealthy versions of the report, see [Reactivations](../sql-reports/reactivations-report.md).  
   
 ##  <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Bug Reactivations report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  

@@ -31,29 +31,29 @@ You can customize the root file for a process template to add or remove plug-in 
  The following example shows the structure of the root **ProcessTemplate** element. For a more extensive example, see [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<?xml version="1.0" encoding="utf-8"?>  
-<ProcessTemplate>  
-      <metadata> . . . </metadata>  
-      <groups> . . .</groups>  
-</ProcessTemplate>  
-```  
+> ```XML  
+> <?xml version="1.0" encoding="utf-8"?>  
+> <ProcessTemplate>  
+>       <metadata> . . . </metadata>  
+>       <groups> . . .</groups>  
+> </ProcessTemplate>  
+> ```  
   
 ##  <a name="metadata"></a> Metadata element reference  
  The following syntax shows the structure of the **metadata** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<metadata>  
-    <name>ProcessTemplateName</name>  
-    <description>ProcessTemplateDescription </description>  
-    <version type="ID" major="Number1" minor="Number2" />  
-    <plugins>  
-      <plugin name="Microsoft.ProjectCreationWizard.pluginID" wizardPage="true | false" />  
-. . .  
-    </plugins>  
-</metadata>  
-```  
+> ```XML
+> <metadata>  
+>     <name>ProcessTemplateName</name>  
+>     <description>ProcessTemplateDescription </description>  
+>     <version type="ID" major="Number1" minor="Number2" />  
+>     <plugins>  
+>       <plugin name="Microsoft.ProjectCreationWizard.pluginID" wizardPage="true | false" />  
+> . . .  
+>     </plugins>  
+> </metadata>  
+> ```  
   
 |Element|Description and syntax|  
 |-------------|------------|
@@ -68,18 +68,18 @@ You can customize the root file for a process template to add or remove plug-in 
  The following syntax shows the structure of the **groups** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<groups>  
-      <group id="groupId" description="GroupDescription" completionMessage="SuccessMessage">  
-      <dependencies>   
-         <dependency groupId="dependentGroupId" />  
-. . .  
-      </dependencies>  
-      <taskList filename="RelativePathAndFileName" />  
-      </group>  
-. . .  
-</groups>  
-```  
+> ```XML
+> <groups>  
+>       <group id="groupId" description="GroupDescription" completionMessage="SuccessMessage">  
+>       <dependencies>   
+>          <dependency groupId="dependentGroupId" />  
+> . . .  
+>       </dependencies>  
+>       <taskList filename="RelativePathAndFileName" />  
+>       </group>  
+> . . .  
+> </groups>  
+> ```  
   
 |Element|Description and syntax|  
 |-------------|------------|  

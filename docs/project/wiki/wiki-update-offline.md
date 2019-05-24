@@ -105,13 +105,13 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
 	For example:  
 
-	```
+    ```
 	Welcome
 	Roadmap  
 	How-to-contribute  
 	Home  
 	Reference  
-	```
+    ```
 
 ### Add subpages
 
@@ -126,12 +126,12 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 	 
 	For example, the file has the following subpages:
 
-	```
+    ```
 	Request-extensions  
 	Licensing  
 	Smoke-test  
 	Coding-guidelines  
-	```
+    ```
 
 ### Push your changes
 

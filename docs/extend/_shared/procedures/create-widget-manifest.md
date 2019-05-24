@@ -1,14 +1,14 @@
 > To take advantage of any new features that will be added to the widget sdk after TFS 2015 Update 3,
-please make sure to include the `ms.vss-dashboards-web.widget-sdk-version-2` demand in your manifest.
-```json
-	{
-		...
-		"demands": [
-			"contribution/ms.vss-dashboards-web.widget-sdk-version-2"
-		],
-		...
-	}
-```
+> please make sure to include the `ms.vss-dashboards-web.widget-sdk-version-2` demand in your manifest.
+> ```json
+>     {
+>         ...
+>         "demands": [
+>             "contribution/ms.vss-dashboards-web.widget-sdk-version-2"
+>         ],
+>         ...
+>     }
+> ```
 
 The [extension manifest](../../develop/manifest.md) is a JSON file that defines basic information about the extension and the contributions in it.  
 First let's add some information about our extension. 

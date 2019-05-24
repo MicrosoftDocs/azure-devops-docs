@@ -33,7 +33,7 @@ You can control which services are available through the web portal by turning a
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
-::: moniker-end
+  ::: moniker-end
 
 ## Change the visibility for a service  
 

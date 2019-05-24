@@ -44,22 +44,22 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
-0. To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+1. To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-0. Choose **Set sprint dates**.  
+2. Choose **Set sprint dates**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Sprints>set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
 
-2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+3. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 
 
-3. Choose **Save and close**. You'll see the date listed. 
+4. Choose **Save and close**. You'll see the date listed. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
@@ -81,21 +81,21 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).  
 
-0. Choose the sprint listed under **Current** and then choose **Set dates**.  
+2. Choose the sprint listed under **Current** and then choose **Set dates**.  
 
 	<img src="_img/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]
 	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 
 
-2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+3. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 

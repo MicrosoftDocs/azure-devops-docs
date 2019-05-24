@@ -115,13 +115,13 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> ![Published wiki from existing repo Markdown files](_img/wiki/published-wiki.png)
  
 	The wiki Table of Contents (TOC) contains the following:
-	- Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
-	- A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
+   - Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
+   - A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
 
-	And here is an image of the contents of the azure-docs-sdk-node repository.
+     And here is an image of the contents of the azure-docs-sdk-node repository.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
+     > [!div class="mx-imgBorder"]  
+     > ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 

@@ -32,22 +32,22 @@ You can determine the current settings and change a setting by using the Warehou
 
   * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
-##Access the Warehouse Control Web Service
+## Access the Warehouse Control Web Service
 1. Log on to the application-tier server.
 
 2. Open a web browser, type the following string in the Address bar, and then press ENTER:
-	```
+    ```
 	http://localhost:8080/** VirtualDirectory **/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**  
-	```
+    ```
 
 	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**.
 
 	The **WarehouseControlWebService** page opens.
 
-##Change a process control setting
+## Change a process control setting
 You can change the refresh frequency of the data warehouse or other process control setting. All settings are listed under [Process control settings](#process_control_settings). 
 
-###To change the refresh frequency of the data warehouse
+### To change the refresh frequency of the data warehouse
 
 1. From the **WarehouseControlWebService** page, click **ChangeSetting**. 
 
@@ -57,7 +57,7 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 	A confirmation Web page appears and indicates that the **RunIntervalSeconds** setting has been changed.  
 
-###To change the refresh frequency of the cube
+### To change the refresh frequency of the cube
 
 1. From the **WarehouseControlWebService** page, click **ChangeSetting**.   
 
@@ -70,20 +70,20 @@ You can change the refresh frequency of the data warehouse or other process cont
 	> [!IMPORTANT]  
 	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.  
  
-  A confirmation Web page appears and indicates that the **IncrementalProcessIntervalSeconds** setting has been changed.
+   A confirmation Web page appears and indicates that the **IncrementalProcessIntervalSeconds** setting has been changed.
 
-###To change another process control setting 
+### To change another process control setting 
 
 1. From the **WarehouseControlWebService** page, click **ChangeSetting**. 
 
 2. On the **ChangeSetting** page, type an entry for the **settingID** and **newValue**, and then click **Invoke**. 
 
-  For a description of each setting and the default values and measures that are assigned to each setting, see the table under [Process control settings](#process_control_settings). 
+   For a description of each setting and the default values and measures that are assigned to each setting, see the table under [Process control settings](#process_control_settings). 
 
-  A browser window will open. The service indicates that the setting has been changed to the new value. 
+   A browser window will open. The service indicates that the setting has been changed to the new value. 
 
 <a id="process_control_settings"/>
-##Process control settings
+## Process control settings
 
 All reportable data from all team projects that are defined in all team project collections for an on-premises TFS deployment is written to a single relational database (Tfs\_Warehouse). Data from that warehouse is then processed and written to the SQL Server Analysis Services cube (Tfs\_Analysis). 
 
@@ -149,7 +149,7 @@ The following table describes each process control setting and provides the Sett
 </tr>
 </table>
 
-##Related content
+## Related content
 
 - [Manage reports data warehouse cube](manage-reports-data-warehouse-cube.md) 
 - [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md) 

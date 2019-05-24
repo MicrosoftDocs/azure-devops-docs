@@ -115,11 +115,11 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 ## Remove a custom state 
 0. Open the &hellip; context menu for the state you want to remove, and choose <strong>Remove</strong>. You can only remove a custom state.     
 
-0. From the Remove State dialog, click <strong>Remove</strong>.   
+1. From the Remove State dialog, click <strong>Remove</strong>.   
 
 	<img src="_img/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
-1.  If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
+2. If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
  
 
 ## Related articles   

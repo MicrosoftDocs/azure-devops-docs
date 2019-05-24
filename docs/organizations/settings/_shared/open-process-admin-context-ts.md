@@ -15,7 +15,7 @@ You create, manage, and make customizations to processes from **Organization set
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Then, choose **Process**. 
+1. Then, choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/_img/process/open-process-page-s150.png) 
@@ -36,7 +36,7 @@ You create, manage, and make customizations to processes from **Admin settings>P
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-2019.png)  
 
-0. Then, choose **Process**. 
+1. Then, choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/_img/process/open-process-page-2019.png) 

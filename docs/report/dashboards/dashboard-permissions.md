@@ -62,7 +62,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions.png)
 
-0. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
+1. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)
 
-0. Change **Allow** or **Deny** to grant or restrict a permission. 
+1. Change **Allow** or **Deny** to grant or restrict a permission. 
  
 	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
 
@@ -85,7 +85,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!NOTE]   
 	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time.  
 
-0. Choose **Save changes** and then **Close**. 
+2. Choose **Save changes** and then **Close**. 
 
 ::: moniker-end
 

@@ -31,26 +31,26 @@ Query clauses that specify a text or rich-text field can use the operators and m
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p> <strong>Rich-text (HTML)</strong> </p></td>
-	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+    <td><p> <strong>Rich-text (HTML)</strong> </p></td>
+    <td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
 </tr>
 <tr>
-	<td><strong>Multi-line text strings (PlainText)</strong> </td>
-	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+    <td><strong>Multi-line text strings (PlainText)</strong> </td>
+    <td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
 </tr>
 <tr>
-	<td><strong>Single text (String)</strong> </td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-	<p>**Macros**: **[Any]**, valid with the **Work Item Type** field<br/>
-	**@Project**<sup>2</sup>, valid with the **Team Project** field </p>
-	</td>
+    <td><strong>Single text (String)</strong> </td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+    <p><strong>Macros</strong>: <strong>[Any]</strong>, valid with the <strong>Work Item Type</strong> field<br/>
+    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>2</sup>, valid with the <strong>Team Project</strong> field </p>
+    </td>
 </tr>
 </tbody>
 </table>
 
-####Notes:
+#### Notes:
 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 <a id="keyword"/>
@@ -122,11 +122,10 @@ The following table describes common fields used to filter queries. The **ID** f
   <th width="22%">Work item type</th>
 </tr>
 <tr>
-	<td><p>Acceptance Criteria  <sup>1</sup></p></td>
-	<td><p>A description of the criteria to be met before the bug or product backlog item can be closed.</p><p>Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers' expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p> 
-<p>Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML</p>  </td>  
-	<td><p>Bug, Epic, Feature, Product backlog item (Scrum)</p></td>
- 
+    <td><p>Acceptance Criteria  <sup>1</sup></p></td>
+    <td><p>A description of the criteria to be met before the bug or product backlog item can be closed.</p><p>Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p> 
+<p>Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML</p>  </td><br/>    <td><p>Bug, Epic, Feature, Product backlog item (Scrum)</p></td>
+
 </tr>
 <tr>
   <td>
@@ -134,7 +133,7 @@ Description <sup>1, 2</sup>
   </td>
   <td>
     <p>Use this field to provide indepth information about a work item.</p>
-	<p>Reference name=System.Description, Data type=HTML</p>
+    <p>Reference name=System.Description, Data type=HTML</p>
   </td>
 <td>All</td>
 </tr>
@@ -143,8 +142,7 @@ Description <sup>1, 2</sup>
 ID
 </td>
 <td>
-The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
-	<p>Reference name=System.Id, Data type=Integer</p>
+The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.<br/>    <p>Reference name=System.Id, Data type=Integer</p>
 </td>
 <td>All</td>
 </tr>
@@ -156,17 +154,16 @@ Repro Steps (or Steps to reproduce) <sup>1</sup>
   <td>
     <p>The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
 </p> 
-	<p>Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML</p>
+    <p>Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML</p>
   </td>
 <td>Bug</td>
 </tr>
 
 
 <tr>
-	<td><p>Resolution</p></td>
-	<td><p>Describes how an impediment was resolved.</p>
-<p>Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML</p>  </td>  
-	<td><p>Impediment (Scrum)</p></td>
+    <td><p>Resolution</p></td>
+    <td><p>Describes how an impediment was resolved.</p>
+<p>Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML</p>  </td><br/>    <td><p>Impediment (Scrum)</p></td>
 
 </tr>
 
@@ -177,10 +174,9 @@ System Info<sup>1</sup>
   <td>
     <p>Information about the software and system configuration that is relevant to the bug, code review, or feedback. </p>
 
-	<p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
+    <p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
   </td>
-  <td>Bug, Code Review Request, Feedback Request  
-  </td>
+  <td>Bug, Code Review Request, Feedback Request<br/>  </td>
 </tr>
 
 <tr>
@@ -189,9 +185,9 @@ Team Project
 </td>
 <td>
 <p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
-<blockquote>**Note:**&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). </blockquote>
- 
-	<p>Reference name=System.TeamProject, Data type=String</p>
+<blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](using-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
+
+    <p>Reference name=System.TeamProject, Data type=String</p>
 </td>
 <td>All</td>
 </tr>
@@ -202,7 +198,7 @@ Title
   </td>
   <td>
     <p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
-	<p>Reference name=System.Title, Data type=String</p>
+    <p>Reference name=System.Title, Data type=String</p>
   </td>
 <td>All</td>
 </tr>
@@ -212,9 +208,8 @@ Title
 Work Item Type
   </td>
   <td>
-    <p>The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). </p>
-<p>To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.   
-	<p>Reference name=System.WorkItemType, Data type=String</p>
+    <p>The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see <a href="../work-items/guidance/choose-process.md" data-raw-source="[Choose process](../work-items/guidance/choose-process.md)">Choose process</a>. To learn how to add a custom work item type, see <a href="../../reference/add-modify-wit.md" data-raw-source="[Add or modify a work item type](../../reference/add-modify-wit.md)">Add or modify a work item type</a>. </p>
+<p>To filter work items based on their <a href="#category" data-raw-source="[category assignment](#category)">category assignment</a>, you can use the <strong>In Group</strong> and <strong>Not In Group</strong> operators and select a category from the drop-down list.<br/>    <p>Reference name=System.WorkItemType, Data type=String</p>
   </td>
 <td>All</td>
 </tr>
@@ -222,10 +217,10 @@ Work Item Type
 </table>
 
 
-####Notes:   
+#### Notes:   
 
 0. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
-0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
+1. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles
 - [Query editor](using-queries.md)   
@@ -235,6 +230,6 @@ Work Item Type
 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
- 
- 
- 
+
+
+

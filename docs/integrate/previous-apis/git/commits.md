@@ -1967,6 +1967,7 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
 ```
+
 | Parameter   | Type    | Default | Notes
 |:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
@@ -2214,19 +2215,20 @@ POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories
 }
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
-| URL
-| instance      | string                                     | TFS server name ({server:port}).
-| project       | string                                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                     | ID of the [repository](./repositories.md).
-| Query
-| api-version   | string                                     | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| Body
-| state         | enum { Pending, Succeeded, Failed, Error } | The state of the commit.
-| description   | string                                     | Description of the status. Example: "The build is successful".
-| targetUrl     | string                                     | Url of the target.
-| context.name  | string                                     | Name of the status. Example: Build123.
-| context.genre | string                                     | Type of the status. Example: continuous-integration.
+
+| Parameter     | Type                                       | Notes                                                                                           |
+|:--------------|:-------------------------------------------|:------------------------------------------------------------------------------------------------|
+| URL           |                                            |                                                                                                 |
+| instance      | string                                     | TFS server name ({server:port}).                                                                |
+| project       | string                                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.* |
+| Query         |                                            |                                                                                                 |
+| api-version   | string                                     | [Version](../../concepts/rest-api-versioning.md) of the API to use.                             |
+| Body          |                                            |                                                                                                 |
+| state         | enum { Pending, Succeeded, Failed, Error } | The state of the commit.                                                                        |
+| description   | string                                     | Description of the status. Example: "The build is successful".                                  |
+| targetUrl     | string                                     | Url of the target.                                                                              |
+| context.name  | string                                     | Name of the status. Example: Build123.                                                          |
+| context.genre | string                                     | Type of the status. Example: continuous-integration.                                            |
 
 #### Sample request
 
@@ -2274,13 +2276,14 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 
-| Parameter     | Type                                   | Notes
-|:--------------|:---------------------------------------|:----------------------------------------------------------------------------------------------------------------------------
-| URL
-| instance      | string                                 | TFS server name ({server:port}).
-| project       | string                                 | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                 | ID of the [repository](./repositories.md).
-| Query
-| api-version   | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+
+| Parameter   | Type   | Notes                                                                                           |
+|:------------|:-------|:------------------------------------------------------------------------------------------------|
+| URL         |        |                                                                                                 |
+| instance    | string | TFS server name ({server:port}).                                                                |
+| project     | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.* |
+| Query       |        |                                                                                                 |
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.                             |
 
 #### Sample request
 

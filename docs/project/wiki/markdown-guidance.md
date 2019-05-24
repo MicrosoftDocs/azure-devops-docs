@@ -100,6 +100,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
 ::: moniker range=">= tfs-2018"
+
 In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
 
 In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
@@ -107,11 +108,15 @@ In a Markdown file or widget, enter two spaces before the line break to begin a 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 In pull request comments, select Enter to insert a line break, and begin text on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+
 ::: moniker-end
 
 **Example - pull request comment:**
@@ -193,16 +198,21 @@ Combine these elements to apply emphasis to text.
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
+
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text.
+> 
 ::: moniker-end
 
 **Example:**
@@ -391,7 +401,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Supported links for Welcome pages:**
 
 <ul>
-<li>Relative path: ```[text to display](./target.md)```  </li>
+<li>Relative path: ```[text to display](/target.md)```  </li>
 <li>Absolute path in Git: ```[text to display](/folder/target.md)``` </li>
 <li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
 <li>URL: ```[text to display](http://address.com)```  </li>
@@ -512,6 +522,7 @@ The path to the image file can be a relative path or the absolute path in Git or
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 ## Checklist or task list
 
 Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
@@ -557,11 +568,13 @@ After you've added a task list, you can check the boxes to mark items as complet
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
+
 In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
@@ -641,16 +654,22 @@ To escape emojis, enclose them using the \` character.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
+
 In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper right of the comment box or the format pane in wiki page.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the paper-clip icon in the upper right of the comment box.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 > [!NOTE]  
 > Attachments in pull requests is available with TFS 2017.1 and later versions.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -704,8 +723,10 @@ To include mathematical notation, surround the mathematical notation with a `$` 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
 > This feature is supported within Wiki pages and pull requests for TFS 2018.2 or later versions.
+
 ::: moniker-end
 
 ::: moniker range=">=tfs-2018"

@@ -41,8 +41,8 @@ You can delete a project from Azure DevOps. Deleting a project helps simplify th
 
 2. Enter the name of the project, and then select **Delete**.
 
-   >[!div class="mx-imgBorder"]
-   ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
 
 ::: moniker-end
 
@@ -52,10 +52,10 @@ You can delete a project from Azure DevOps. Deleting a project helps simplify th
 
    If you don't see the ![](../../_img/icons/context-menu.png) context icon menu, you don't have the permissions to delete the project. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 
-0. You must enter the name of the project in order to initiate the delete operation.
+1. You must enter the name of the project in order to initiate the delete operation.
 
-   >[!div class="mx-imgBorder"]
-   ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
 
 Your project is deleted and can be restored up to 28 days afterward.
 

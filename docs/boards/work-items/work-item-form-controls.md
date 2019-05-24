@@ -46,7 +46,7 @@ As the following image shows, each work item form comes with a number of control
 
 ::: moniker-end
 
- 
+
 <a id="wi-controls"></a>  
 
 ### Form controls
@@ -101,8 +101,7 @@ While the workflow states differ for different work item types, they usually fol
 </ul>
 </td>
 <td>
-![Product backlog item workflow, Scrum process](./guidance/_img/ALM_PT_Agile_WF_UserStory.png)    
-</td>
+<img src="./guidance/_img/ALM_PT_Agile_WF_UserStory.png" alt="Product backlog item workflow, Scrum process"/><br/></td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +167,7 @@ In addition, the Links control tab provides access to all links made to the work
 ## Copy the URL
 
 From the web portal, simply copy the URL from the web browser address or hover over the title and then click the ![  ](../../_img/icons/copy-clone-icon.png) copy icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
-  
+
 ![Copy hyperlink for a work item from web portal](../backlogs/_img/add-work-item-copy-URL.png) 
 
 
@@ -183,7 +182,7 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 
 ![Work item form, Start storyboarding menu option](../backlogs/_img/add-work-item-start-storyboarding.png)
 
- 
+
 
 ## Related articles
 

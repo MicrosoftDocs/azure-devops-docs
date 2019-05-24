@@ -711,7 +711,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classi
 
 * [C# (DeleteArea method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/ClassificationNodesSample.cs#L339)
 
-###Delete an iteration node
+### Delete an iteration node
 
 #### Sample request
 

@@ -55,191 +55,191 @@ The following table indicates those features available for each supported access
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>[Administer organization](../settings/about-settings.md)</strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all [backlog](../../boards/backlogs/backlogs-overview.md) and [sprint planning](../../boards/sprints/scrum-overview.md) tools</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes [access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)</td>
+<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio [backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md)</td>
+<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md). Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-quickstart.md)">Kanban boards</a>. Stakeholders can&#39;t add work items, can&#39;t drag-and-drop work items to update status, and can&#39;t update fields displayed on cards. 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio [backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, and can't assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes [tracking test status](../../test/track-test-status.md) and [testing different configurations](../../test/test-different-configurations.md) </td>
+<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Artifacts](../../artifacts/overview.md)</strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management), up to 2GB free</td>
+<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management), up to 2GB free</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining [release pipelines](../../pipelines/release/index.md) and [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md); when the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all <strong>Azure Pipelines</strong> features. 
-</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining <a href="../../pipelines/release/index.md" data-raw-source="[release pipelines](../../pipelines/release/index.md)">release pipelines</a> and <a href="../../pipelines/release/define-multistage-release-process.md" data-raw-source="[multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md)">multi-stage continuous deployment (CD) pipelines</a>, and <a href="../../pipelines/release/deploy-using-approvals.md" data-raw-source="[using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md)">using approvals and gates to control deployments</a>; when the <a href="provide-stakeholder-pipeline-access.md" data-raw-source="[**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md)"><strong>Free access to Pipelines Preview</strong> feature is enabled</a>, Stakeholders gain access to all <strong>Azure Pipelines</strong> features. 
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </td>
+<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
+</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
-
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking [query charts](../../report/dashboards/charts.md)</td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
+
 <tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts. Stakeholders can't view query charts from the Queries page, however can view them when added to a dashboard.</td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using [Git repositories](../../repos/git/overview.md)or using [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)</td>
+<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts. Stakeholders can&#39;t view query charts from the Queries page, however can view them when added to a dashboard.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Delivery Plans](../../boards/plans/review-team-plans.md)</strong><br/>Includes full access to add and view Delivery plans.</td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Request and Manage Feedback](../../project/feedback/get-feedback.md)</strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td align="left"><strong><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery Plans](../../boards/plans/review-team-plans.md)">Delivery Plans</a></strong><br/>Includes full access to add and view Delivery plans.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), [Manage personal notifications](../../notifications/manage-personal-notifications.md). Stakeholders can't view markdown README files defined for repositories and can only
+<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[View dashboards](../../report/dashboards.md)">View dashboards</a>, <a href="../../project/wiki/filter-print-wiki.md" data-raw-source="[View wikis](../../project/wiki/filter-print-wiki.md)">View wikis</a>, <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/manage-personal-notifications.md)">Manage personal notifications</a>. Stakeholders can&#39;t view markdown README files defined for repositories and can only
 read wiki pages. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes [running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests), [reviewing](../../pipelines/test/review-continuous-test-results-after-build.md) and [analyzing](../../pipelines/test/test-analytics.md) test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View My Work Items</strong><br/> Access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](../../project/feedback/give-feedback.md). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries). 
+<td align="left"><strong>View My Work Items</strong><br/> Access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries). 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes [viewing releases](../../pipelines/release/approvals/index.md) and [approving releases](../../pipelines/release/approvals/index.md); when the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all <strong>Azure Pipelines</strong> features.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a>; when the <a href="provide-stakeholder-pipeline-access.md" data-raw-source="[**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md)"><strong>Free access to Pipelines Preview</strong> feature is enabled</a>, Stakeholders gain access to all <strong>Azure Pipelines</strong> features.</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes [adding test plans and test suites](../../test/create-a-test-plan.md), [creating manual test cases](../../test/create-test-cases.md), and [deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md) </td>
+<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running [manual](../../test/run-manual-tests.md) and [automated tests](../../test/run-automated-tests-from-test-hub.md)
+<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <!---
 <tr>
@@ -277,192 +277,192 @@ The following table indicates those features available for each supported access
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>[Administer organization](../settings/about-settings.md)</strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all [backlog](../../boards/backlogs/backlogs-overview.md) and [sprint planning](../../boards/sprints/scrum-overview.md) tools</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes [access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)</td>
+<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio [backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md)</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md). Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
+<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-quickstart.md)">Kanban boards</a>. Stakeholders can&#39;t add work items, can&#39;t drag-and-drop work items to update status, and can&#39;t update fields displayed on cards. 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio [backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, and can't assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes [tracking test status](../../test/track-test-status.md) and [testing different configurations](../../test/test-different-configurations.md) </td>
+<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Artifacts](../../artifacts/overview.md)</strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
+<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining [release pipelines](../../pipelines/release/index.md) and [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md) 
-</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining <a href="../../pipelines/release/index.md" data-raw-source="[release pipelines](../../pipelines/release/index.md)">release pipelines</a> and <a href="../../pipelines/release/define-multistage-release-process.md" data-raw-source="[multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md)">multi-stage continuous deployment (CD) pipelines</a>, and <a href="../../pipelines/release/deploy-using-approvals.md" data-raw-source="[using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md)">using approvals and gates to control deployments</a> 
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to[manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </td>
+<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
+</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
-
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking [query charts](../../report/dashboards/charts.md)</td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to<a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
+
 <tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can't view query charts from the Queries page, however can view them when added to a dashboard.</td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using [Git repositories](../../repos/git/overview.md) or using [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)</td>
+<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can&#39;t view query charts from the Queries page, however can view them when added to a dashboard.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Delivery Plans](../../boards/plans/review-team-plans.md)</strong><br/>Includes full access to add and view Delivery plans.</td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a> or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Request and Manage Feedback](../../project/feedback/get-feedback.md)</strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td align="left"><strong><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery Plans](../../boards/plans/review-team-plans.md)">Delivery Plans</a></strong><br/>Includes full access to add and view Delivery plans.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), [Manage personal notifications](../../notifications/manage-personal-notifications.md); Stakeholders can't view markdown README files defined for repositories and can only
+<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[View dashboards](../../report/dashboards.md)">View dashboards</a>, <a href="../../project/wiki/filter-print-wiki.md" data-raw-source="[View wikis](../../project/wiki/filter-print-wiki.md)">View wikis</a>, <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/manage-personal-notifications.md)">Manage personal notifications</a>; Stakeholders can&#39;t view markdown README files defined for repositories and can only
 read wiki pages. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes [running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests), [reviewing](../../pipelines/test/review-continuous-test-results-after-build.md) and [analyzing](../../pipelines/test/test-analytics.md) test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](../../project/feedback/give-feedback.md). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries). 
+<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries). 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes [viewing releases](../../pipelines/release/approvals/index.md) and [approving releases](../../pipelines/release/approvals/index.md)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes [adding test plans and test suites](../../test/create-a-test-plan.md), [creating manual test cases](../../test/create-test-cases.md), and [deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md) </td>
+<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running [manual](../../test/run-manual-tests.md) and [automated tests](../../test/run-automated-tests-from-test-hub.md)
+<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -470,7 +470,7 @@ read wiki pages. </td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -512,169 +512,169 @@ The following table indicates those features available for each supported access
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>[Administer organization](../settings/about-settings.md)</strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all [backlog](../../boards/backlogs/backlogs-overview.md) and [sprint planning](../../boards/sprints/scrum-overview.md) tools</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes [access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)</td>
+<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio [backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md)</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md). Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
+<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-quickstart.md)">Kanban boards</a>. Stakeholders can&#39;t add work items, can&#39;t drag-and-drop work items to update status, and can&#39;t update fields displayed on cards. 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio [backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, and can't assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes [tracking test status](../../test/track-test-status.md) and [testing different configurations](../../test/test-different-configurations.md) </td>
+<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left"><strong>[Artifacts](../../artifacts/overview.md)</strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
+<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining [release pipelines](../../pipelines/release/index.md) and [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md) 
-</td>
-<td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining <a href="../../pipelines/release/index.md" data-raw-source="[release pipelines](../../pipelines/release/index.md)">release pipelines</a> and <a href="../../pipelines/release/define-multistage-release-process.md" data-raw-source="[multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md)">multi-stage continuous deployment (CD) pipelines</a>, and <a href="../../pipelines/release/deploy-using-approvals.md" data-raw-source="[using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md)">using approvals and gates to control deployments</a> 
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to[manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </td>
+<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
+</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
-
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking [query charts](../../report/dashboards/charts.md)</td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to<a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
+
 <tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can't view query charts from the Queries page, however can view them when added to a dashboard.</td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using [Git repositories](../../repos/git/overview.md)or using [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)</td>
+<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can&#39;t view query charts from the Queries page, however can view them when added to a dashboard.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Delivery Plans](../../boards/plans/review-team-plans.md)</strong><br/>Includes full access to add and view Delivery plans.</td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Request and Manage Feedback](../../project/feedback/get-feedback.md)</strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td align="left"><strong><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery Plans](../../boards/plans/review-team-plans.md)">Delivery Plans</a></strong><br/>Includes full access to add and view Delivery plans.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes [working across projects](../../project/navigation/work-across-projects.md), [View dashboards](../../report/dashboards.md), [View wikis](../../project/wiki/filter-print-wiki.md), [Manage personal notifications](../../notifications/manage-personal-notifications.md). Stakeholders can't view markdown README files defined for repositories and can only.
+<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[View dashboards](../../report/dashboards.md)">View dashboards</a>, <a href="../../project/wiki/filter-print-wiki.md" data-raw-source="[View wikis](../../project/wiki/filter-print-wiki.md)">View wikis</a>, <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/manage-personal-notifications.md)">Manage personal notifications</a>. Stakeholders can&#39;t view markdown README files defined for repositories and can only.
 read wiki pages. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
+<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](../../project/feedback/give-feedback.md). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries).
+<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes [viewing releases](../../pipelines/release/approvals/index.md) and [approving releases](../../pipelines/release/approvals/index.md)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes [adding test plans and test suites](../../test/create-a-test-plan.md), [creating manual test cases](../../test/create-test-cases.md), and [deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md) </td>
+<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running [manual](../../test/run-manual-tests.md) and [automated tests](../../test/run-automated-tests-from-test-hub.md)
+<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
 </table>
@@ -697,109 +697,109 @@ The following table indicates those features available for each supported access
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>[Administer organization](../settings/about-settings.md)</strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all [backlog](../../boards/backlogs/backlogs-overview.md) and [sprint planning](../../boards/sprints/scrum-overview.md) features.</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> features.</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes [access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)</td>
+<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md). Stakeholders can't add work items and can't drag-and-drop work items to update status. 
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-quickstart.md)">Kanban boards</a>. Stakeholders can&#39;t add work items and can&#39;t drag-and-drop work items to update status. 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes full access to portfolio [backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md)</td>
+<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes full access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a></td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on [backlogs](../../boards/backlogs/backlogs-overview.md) and [sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md). Stakeholders can't assign items to an iteration, use the mapping pane, or forecasting.
+<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
 </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking [query charts](../../report/dashboards/charts.md)</td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using [Git repositories](../../repos/git/overview.md)or using [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)</td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Request and Manage Feedback](../../project/feedback/get-feedback.md)</strong><br/>Includes full access to request and manage feedback on working software. </td>
+<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes [working across projects](../../project/navigation/work-across-projects.md), [viewing dashboards](../../report/dashboards.md), and [managing personal notifications](../../notifications/manage-personal-notifications.md); Stakeholders have no access to repositories. </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[viewing dashboards](../../report/dashboards.md)">viewing dashboards</a>, and <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[managing personal notifications](../../notifications/manage-personal-notifications.md)">managing personal notifications</a>; Stakeholders have no access to repositories. </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</strong></td>
+<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to [add and modify work items](../../boards/work-items/about-work-items.md), [follow work items](../../boards/work-items/follow-work-items.md), [view and create queries](../../boards/queries/view-run-query.md), and [submit, view, and change feedback responses](../../project/feedback/give-feedback.md). Stakeholders can only assign existing tags to work items (can't add new tags) and can only save queries under My Queries (can't save under Shared Queries).
+<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left"><strong>Web-based Test Management</strong><br/>Includes adding and executing [test plans and test suites](../../test/create-a-test-plan.md) and [manual test cases](../../test/create-test-cases.md), and deleting [test artifacts](../../boards/backlogs/delete-test-artifacts.md) </td>
+<td align="left"><strong>Web-based Test Management</strong><br/>Includes adding and executing <a href="../../test/create-a-test-plan.md" data-raw-source="[test plans and test suites](../../test/create-a-test-plan.md)">test plans and test suites</a> and <a href="../../test/create-test-cases.md" data-raw-source="[manual test cases](../../test/create-test-cases.md)">manual test cases</a>, and deleting <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[test artifacts](../../boards/backlogs/delete-test-artifacts.md)">test artifacts</a> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>

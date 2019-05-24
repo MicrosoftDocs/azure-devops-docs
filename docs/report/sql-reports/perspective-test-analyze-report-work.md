@@ -118,15 +118,15 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
 
 You can use **Date Filters** and **Numeric Filters** to filter a report based on one or more values in this set. These filters appear under the measure group that is labeled **Values**. You can use the selections within each group to filter the set of work items. You should not add them to the PivotTable report directly. Instead, you filter the rows or columns within the PivotTable report by performing the following steps:  
   
-1.  Choose the filter icon for either **Row Labels** or **Column Labels** within the PivotTable report, point to **Value Filters**, and then specify the criteria that you want (for example, **Greater Than**).  
+1. Choose the filter icon for either **Row Labels** or **Column Labels** within the PivotTable report, point to **Value Filters**, and then specify the criteria that you want (for example, **Greater Than**).  
   
-2.  In the first field, choose the date or numeric filter that you want (for example, **Created Date**).  
+2. In the first field, choose the date or numeric filter that you want (for example, **Created Date**).  
   
-3.  In the third field, type the value that meets your filter criteria, and then choose **OK**.  
+3. In the third field, type the value that meets your filter criteria, and then choose **OK**.  
   
-     For example, to display all work items that were created after June 1, 2010, type **6/1/2010**.  
+    For example, to display all work items that were created after June 1, 2010, type **6/1/2010**.  
   
- The following table describes the date filters that you can use to refine the set of work items that a report returns. You can even combine filters.  
+   The following table describes the date filters that you can use to refine the set of work items that a report returns. You can even combine filters.  
   
 
 |**Field name**|**Description**|
@@ -165,20 +165,20 @@ You can use **Date Filters** and **Numeric Filters** to filter a report based on
   
  Attributes appear under display folders in the Test Case and Work Item dimensions. Dimension attributes are organized into folders that are based on the reporting reference name that is assigned in the definition of each type of work item. The following types of mapping occur:  
   
--   Intrinsic fields, which have the "System" prefix, appear directly under the Test Case or Work Item dimension.  
+- Intrinsic fields, which have the "System" prefix, appear directly under the Test Case or Work Item dimension.  
   
--   Other fields appear under folders whose names correspond to the prefixes in the reference names of the fields. For example, fields that have the "Microsoft.VSTS.Common" prefix appear under the folder that is labeled "Microsoft.VSTS.Common."  
+- Other fields appear under folders whose names correspond to the prefixes in the reference names of the fields. For example, fields that have the "Microsoft.VSTS.Common" prefix appear under the folder that is labeled "Microsoft.VSTS.Common."  
   
- For example, work item fields appear under the Work Item dimension, as the following illustration shows. The Linked Work Item and Test Case dimensions have similar structures.  
+  For example, work item fields appear under the Work Item dimension, as the following illustration shows. The Linked Work Item and Test Case dimensions have similar structures.  
   
 <table>
 <tbody>
 <tr valign="top">
 <td>
-For information about each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). Only fields that have `reportable="Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
+For information about each field, see <a href="../../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. Only fields that have <code>reportable=&quot;Dimension&quot;</code> appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify <code>Dimension</code> as the reportable attribute. For more information about how to use the <code>reportable</code> attribute, which is optional, and its values, see <a href="../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md" data-raw-source="[Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)">Add or modify work item fields to support reporting</a>.<br /><br /> For information about how to work with date hierarchies, see <a href="shared-dimensions-in-the-analysis-services-cube.md" data-raw-source="[Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md)">Shared dimensions</a>.
 </td>
 <td>
-![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders") 
+<img src="_img/rpt_workitem_folders.png" alt="Folder structure in OLAP data cube" title="RPT_WorkItem_Folders"/> 
 </td>
 </tr>
 </tbody>

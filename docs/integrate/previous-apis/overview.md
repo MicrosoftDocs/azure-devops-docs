@@ -29,14 +29,14 @@ This article walks you through:
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{server:port}/tfs[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *collection*: The name of the collection, like `DefaultCollection`.
-    * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
-    * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
-        * `api-version=1.0`
-        * `api-version=1.2-preview`
-        * `api-version=2.0-preview.1`
+   * *collection*: The name of the collection, like `DefaultCollection`.
+   * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
+   * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
+       * `api-version=1.0`
+       * `api-version=1.2-preview`
+       * `api-version=2.0-preview.1`
 
-    > Note: *area* and *team-project* are optional, depending on the API request. Check out the [TFS to REST API version mapping matrix](#api-and-tfs-version-mapping) below to find which REST API versions apply to your version of TFS.
+     > Note: *area* and *team-project* are optional, depending on the API request. Check out the [TFS to REST API version mapping matrix](#api-and-tfs-version-mapping) below to find which REST API versions apply to your version of TFS.
 
 2. HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
@@ -158,7 +158,7 @@ If you didn't find what you were looking for in the table above, or if you're ju
 </thead>
 <tbody>
 <tr>
-<td>[Build (1.0)](./xamlbuild/overview.md)</td>
+<td><a href="./xamlbuild/overview.md" data-raw-source="[Build (1.0)](./xamlbuild/overview.md)">Build (1.0)</a></td>
 <td>In Team Services and TFS, a build request uses a build definition to add a new build to a build queue, and completed builds are assigned a build
 quality. With the Build (1.0) API, you can access each of these components. --NOTE:-- Build (2.0) is the updated and preferred API for these capabilities.</td>
 <td>
@@ -168,9 +168,9 @@ quality. With the Build (1.0) API, you can access each of these components. --NO
 </td>
 </tr>
 <tr>
-<td>[Build (2.0)](./build/overview.md) </td>
+<td><a href="./build/overview.md" data-raw-source="[Build (2.0)](./build/overview.md)">Build (2.0)</a> </td>
 <td>The Build (2.0) APIs provide numerous ways to utilize builds from Team Services or TFS in your extensions. 
-Whether you're kicking a build off, retrieving a build, or just adding a tag, you'll find what you need here.</td>
+Whether you&#39;re kicking a build off, retrieving a build, or just adding a tag, you&#39;ll find what you need here.</td>
 <td>
 <ul><li>Start a build</li>
 <li>Get a build</li>
@@ -178,7 +178,7 @@ Whether you're kicking a build off, retrieving a build, or just adding a tag, yo
 </td>
 </tr>
 <tr>
-<td>[Code policy](./policy/overview.md)</td>
+<td><a href="./policy/overview.md" data-raw-source="[Code policy](./policy/overview.md)">Code policy</a></td>
 <td>Team Services and TFS offer code policy functionality to automatically ensure steps are being taken before pull requests are completed. This API gives
 you access to define policies for your projects.</td>
 <td>
@@ -186,7 +186,7 @@ you access to define policies for your projects.</td>
 </td>
 </tr>
 <tr>
-<td>[Dashboards and widgets](./dashboard/overview.md)</td>
+<td><a href="./dashboard/overview.md" data-raw-source="[Dashboards and widgets](./dashboard/overview.md)">Dashboards and widgets</a></td>
 <td>You can utilize the Dashboards and Widgets API to add a widget or access a widget on a dashboard. This is helpful if your extension or integration could benefit
 from having a physical representation.</td>
 <td>
@@ -195,7 +195,7 @@ from having a physical representation.</td>
 </td>
 </tr>
 <tr>
-<td>[Git](./git/overview.md)</td>
+<td><a href="./git/overview.md" data-raw-source="[Git](./git/overview.md)">Git</a></td>
 <td>With the Git API, you have access to commits, pull requests, repositories, etc.</td>
 <td>
 <ul><li>Get, add, or delete team repositories</li>
@@ -204,26 +204,26 @@ from having a physical representation.</td>
 </td>
 </tr>
 <tr>
-<td>[Packaging](./packaging/overview.md)</td>
-<td>*Packages* are bundles of DLLs, resources, and other software components combined with metadata. Common package formats include: NuGet, npm, and Maven.
-*Feeds* contain packages and enforce *permissions* about who can access the packages. This API gives you access to feeds, packages, and permissions.</td>
+<td><a href="./packaging/overview.md" data-raw-source="[Packaging](./packaging/overview.md)">Packaging</a></td>
+<td><em>Packages</em> are bundles of DLLs, resources, and other software components combined with metadata. Common package formats include: NuGet, npm, and Maven.
+<em>Feeds</em> contain packages and enforce <em>permissions</em> about who can access the packages. This API gives you access to feeds, packages, and permissions.</td>
 <td>
 <ul><li>Get a list of feeds</li>
 <li>Create a feed</li></ul>
 </td>
 </tr>
 <tr>
-<td>[Projects and teams](./tfs/overview.md)</td>
+<td><a href="./tfs/overview.md" data-raw-source="[Projects and teams](./tfs/overview.md)">Projects and teams</a></td>
 <td>Team Services accounts host projects, and each project has one or more teams that contribute to it. Get access to both with the Projects and Teams API.</td>
 <td>
 <ul><li>Get a list of projects</li>
-<li>Get a project's source control provider</li>
+<li>Get a project&#39;s source control provider</li>
 <li>Get the teams in a project</li>
 <li>Create a project</li></ul>
 </td>
 </tr>
 <tr>
-<td>[Queues](./queues/overview.md)</td>
+<td><a href="./queues/overview.md" data-raw-source="[Queues](./queues/overview.md)">Queues</a></td>
 <td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses. 
 Queues are scoped to your project collection, so you can share them across Azure Pipelines definitions in multiple projects.</td>
 <td>
@@ -232,7 +232,7 @@ Queues are scoped to your project collection, so you can share them across Azure
 </td>
 </tr>
 <tr>
-<td>[Release (preview)](./rm/overview.md)</td>
+<td><a href="./rm/overview.md" data-raw-source="[Release (preview)](./rm/overview.md)">Release (preview)</a></td>
 <td>Releases reference release definitions to deploy an application compromising of one or more artifacts. Access releases, release definitions, and approvals with 
 the Release API.</td>
 <td>
@@ -242,7 +242,7 @@ the Release API.</td>
 </td>
 </tr>
 <tr>
-<td>[Security](./security/overview.md)</td>
+<td><a href="./security/overview.md" data-raw-source="[Security](./security/overview.md)">Security</a></td>
 <td>Use the Security API to set, revoke and evaluate permissions. </td>
 <td>
 <ul><li>Get a list of security namespaces</li>
@@ -252,7 +252,7 @@ the Release API.</td>
 </td>
 </tr>
 <tr>
-<td>[Service endpoints](./endpoints/overview.md)</td>
+<td><a href="./endpoints/overview.md" data-raw-source="[Service endpoints](./endpoints/overview.md)">Service endpoints</a></td>
 <td>Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
 With the service endpoints API, you can access these endpoints along with their permissions.</td>
 <td>
@@ -262,7 +262,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Service hooks](./hooks/overview.md)</td>
+<td><a href="./hooks/overview.md" data-raw-source="[Service hooks](./hooks/overview.md)">Service hooks</a></td>
 <td>Utilize service hooks to create subscriptions to events, and take actions based on those events.</td>
 <td>
 <ul><li>Set up a subscription</li>
@@ -270,7 +270,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Team rooms](./chat/overview.md)</td>
+<td><a href="./chat/overview.md" data-raw-source="[Team rooms](./chat/overview.md)">Team rooms</a></td>
 <td>This API gives you access to team rooms. Team rooms are effectively chat rooms where users can post messages to one another.</td>
 <td>
 <ul><li>Get a list of team rooms</li>
@@ -280,7 +280,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Test management](./test/overview.md)</td>
+<td><a href="./test/overview.md" data-raw-source="[Test management](./test/overview.md)">Test management</a></td>
 <td>Get access to your test cases, test suites, and test plans. Also get results from a test run.</td>
 <td>
 <ul><li>Create a test plan</li>
@@ -289,7 +289,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Version control](./tfvc/overview.md)</td>
+<td><a href="./tfvc/overview.md" data-raw-source="[Version control](./tfvc/overview.md)">Version control</a></td>
 <td>This API is straight-forward and gives you access to the items and types related to version control within Team Services and TFS.</td>
 <td>
 <ul><li>Get recent changes</li>
@@ -298,7 +298,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Work (Agile)](./work/overview.md)</td>
+<td><a href="./work/overview.md" data-raw-source="[Work (Agile)](./work/overview.md)">Work (Agile)</a></td>
 <td>Use the Work API to access all sort of different fields and items related to agile development.</td>
 <td>
 <ul><li>Add a column to a board</li>
@@ -307,12 +307,12 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td>[Work item tracking](./wit/overview.md)</td>
+<td><a href="./wit/overview.md" data-raw-source="[Work item tracking](./wit/overview.md)">Work item tracking</a></td>
 <td>Work item tracking and management is a large part of a successful DevOps platform. with the Work Item Tracking (WIT) API, you have full access to the work 
 items that your team uses every day.</td>
 <td>
 <ul><li>Get work items using a query</li>
-<li>Update work items' fields</li>
+<li>Update work items&#39; fields</li>
 <li>Link two work items</li>
 <li>Attach a file to a work item</li></ul>
 </td>

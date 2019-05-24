@@ -84,9 +84,9 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 
-0. Next, choose the **Period**, and then choose the metrics that you want to track. Optionally, apply filters for **Branch**, **Test file**, **Owner**, and **Test run**.   
+1. Next, choose the **Period**, and then choose the metrics that you want to track. Optionally, apply filters for **Branch**, **Test file**, **Owner**, and **Test run**.   
 
-4. Choose **Save** when done. 
+2. Choose **Save** when done. 
 
 	The following image shows a chart with pass rate and test results for last 7 days. 
    

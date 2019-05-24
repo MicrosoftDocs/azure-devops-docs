@@ -63,13 +63,13 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
  You can review the Code Coverage report to answer these questions:  
   
--   How much of the code is the team testing?  
+- How much of the code is the team testing?  
   
--   Does the team have sufficient code coverage?  
+- Does the team have sufficient code coverage?  
   
--   Is code coverage increasing or decreasing over time?  
+- Is code coverage increasing or decreasing over time?  
   
- For more information about how code coverage impacts quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md) and [Build Quality Indicators](../sql-reports/build-quality-indicators-report.md).  
+  For more information about how code coverage impacts quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md) and [Build Quality Indicators](../sql-reports/build-quality-indicators-report.md).  
   
 ##  <a name="Updating"></a> Customizing the Report  
  You can customize the Code Coverage report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can modify the report to support other views, as the following table describes.  

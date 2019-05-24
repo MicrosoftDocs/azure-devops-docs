@@ -64,14 +64,14 @@ To start your search, choose **Repos>Files** or other page under **Repos**, ente
 
 2. Use the tabs in the results page to view the **History** of the file or to **Compare** versions of the file. Choose **Blame** to view the last commit, person, and date to modify the file.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Use tabs to view history and compare files](_img/search/code-search-contents-history-views.png)
-
+   > [!div class="mx-imgBorder"]  
+   > ![Use tabs to view history and compare files](_img/search/code-search-contents-history-views.png)
+   > 
    > Open the search results in a new browser tab from either search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab.
+   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   > ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   > to the new browser tab.
 
 3. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 

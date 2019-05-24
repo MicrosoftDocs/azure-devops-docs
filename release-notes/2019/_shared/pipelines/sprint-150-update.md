@@ -65,14 +65,14 @@ steps:
 We added a new task that allows you to install a specific version of the Kubectl binary on the agents. The **latest** and **semver** version strings such as 'v1.14.0' are accepted as valid values for the Kubectl Version Spec input.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_15.png "kubectl tool installer")
+> ![Badge](../../_img/150_15.png "kubectl tool installer")
 
 ### Azure container registry in Docker registry service connection
 
 Now you can create a Docker registry service connection from your project's settings page. To create the connection, choose an Azure container registry in one of the subscriptions associated with your Azure Active Directory (AAD) identity. All tasks requiring service connections to container registries such as **Docker@2** and **KubernetesManifest@0** will support a single way of specifying a connection.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_13.png "Add a Docker service connection")
+> ![Badge](../../_img/150_13.png "Add a Docker service connection")
 
 ### cgroup support on hosted Ubuntu pool
 
@@ -87,21 +87,21 @@ If you're using infrastructure such as Azure Container Instances to run elastic 
 We've added support for VS2019 to the Visual Studio Test task in pipelines. To run tests using the test platform for VS2019, select the **Latest** or **Visual Studio 2019** options from the Test platform version dropdown.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_05.png "Support for Visual Studio 2019 (VS2019) in Visual Studio Test task")
+> ![Badge](../../_img/150_05.png "Support for Visual Studio 2019 (VS2019) in Visual Studio Test task")
 
 ### Agent pool user interface update
 
 The agent pools management page in project settings has been updated with a new user interface. Now you can easily see all the jobs that are running in a pool. In addition you can learn why a job is not running.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_06.png "Agent pool user experience (UX) update")
+> ![Badge](../../_img/150_06.png "Agent pool user experience (UX) update")
 
 ### Task assistant for editing YAML files
 
 We continue to receive a lot of feedback asking to make it easier to edit YAML files for pipelines. In the previous updates, we added intellisense support. Now we are adding a task assistant to the YAML editor. With this, you will have the same familiar experience for adding a new task to a YAML file as in the classic editor. This new assistant supports most of the common task input types such as pick lists and service connections. To use the new task assistant, select **Edit** on a YAML-based pipeline, and then select the **Task assistant**.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_34.gif "Task assistant for editing YAML files")
+> ![Badge](../../_img/150_34.gif "Task assistant for editing YAML files")
 
 ### Hosted pipelines image updates
 
@@ -137,7 +137,7 @@ Last December, we released the ServiceNow Change Management integration with rel
 With this update, we enhanced the integration to support all types of changes (normal, standard and emergency). In addition, you can now specify the gate used to create a new change request using an existing template, as per the ITSM process followed in your organization. Finally, you can also gate releases based on existing change requests. This enables you to adopt CD, without needing to change the process recommended by your IT teams.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_11.png "ServiceNow change management")
+> ![Badge](../../_img/150_11.png "ServiceNow change management")
 
 ### Support for Azure PowerShell Az module
 
@@ -159,7 +159,7 @@ We needed to provide security for protected resources (e.g., service connections
 With this update, we are making it easier for you to fix a resource authorization problem even if you have not marked a resource as such. In the new experience, when a build fails because of a resource authorization error, you will see an option to explicitly authorize the use of those resources in the pipeline, and then proceed. Team members with permissions to authorize resources will be able to complete this action right from a failed build.
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_24.png "Pipeline summary with authorization error")
+> ![Badge](../../_img/150_24.png "Pipeline summary with authorization error")
 
 ### Simplified retention policies for build pipelines
 
@@ -178,4 +178,4 @@ Previously, when you ran tests in pipeline and published code coverage results t
 With this update we have addressed these limitations for Cobertura coverage reports. When publishing code coverage reports, you no longer need to specify HTML files. Reports are automatically generated and are rendered with appropriate styling in the code coverage tab. This capability uses the open source tool [ReportGenerator](https://github.com/danielpalme/ReportGenerator).
 
 > [!div class="mx-imgBorder"]
-![Badge](../../_img/150_33.png "Code coverage")
+> ![Badge](../../_img/150_33.png "Code coverage")

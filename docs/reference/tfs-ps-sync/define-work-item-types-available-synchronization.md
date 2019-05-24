@@ -20,15 +20,15 @@ ms.date: 01/12/2017
   
  You can manage the types of work items that participate in synchronization by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
   
--   **/MapWorkItemTypes**: Defines the types of work items that can participate in synchronization for a project. Although you can map several types, only those work items that are submitted for publishing are synchronized.  
+- **/MapWorkItemTypes**: Defines the types of work items that can participate in synchronization for a project. Although you can map several types, only those work items that are submitted for publishing are synchronized.  
   
--   **/GetMappedWorkItemTypes**: Returns the list of work item types that are configured to participate in synchronization for a project.  
+- **/GetMappedWorkItemTypes**: Returns the list of work item types that are configured to participate in synchronization for a project.  
   
--   **/UnmapWorkItemTypes**: Removes work item types from participating in synchronization for a project.  
+- **/UnmapWorkItemTypes**: Removes work item types from participating in synchronization for a project.  
   
- For an overview of how to integrate the two server products, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md). For an overview of how to associate an enterprise project with a project, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
+  For an overview of how to integrate the two server products, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md). For an overview of how to associate an enterprise project with a project, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
   
- To use the **TfsAdmin ProjectServer** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+  To use the **TfsAdmin ProjectServer** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
 ```  
 cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
@@ -81,17 +81,17 @@ You have successfully configured the following work item types for project ProjA
   
  In addition to configuring the types of work items that can participate in synchronization, the **/MapWorkItemTypes** command performs the following operations:  
   
--   Adds the types of work items that you specify to the set of types that participate in data synchronization. That is, the command does not unmap any existing mapped types.  
+- Adds the types of work items that you specify to the set of types that participate in data synchronization. That is, the command does not unmap any existing mapped types.  
   
--   Adds the **Project Server** tab to the forms for the types of work items that you specify.  
+- Adds the **Project Server** tab to the forms for the types of work items that you specify.  
   
-     If a **Project Server** tab is already defined for a type of work item that you specify, that type is ignored, and no changes are made to the forms for work items of that type.  
+   If a **Project Server** tab is already defined for a type of work item that you specify, that type is ignored, and no changes are made to the forms for work items of that type.  
   
- If you try to map work item types for a project that is not associated with an enterprise project plan, an error appears. You can map work item types only for projects that are configured to participate in synchronization. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
+  If you try to map work item types for a project that is not associated with an enterprise project plan, an error appears. You can map work item types only for projects that are configured to participate in synchronization. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
   
- If you remove the mapping for a work item type, the **Project Server** tab is removed from the form for that type for the project that you unmapped.  
+  If you remove the mapping for a work item type, the **Project Server** tab is removed from the form for that type for the project that you unmapped.  
   
- Before you unmap a work item type for a project, you should delete the tasks from the enterprise project plan to remove all associations between them and work items in Team Foundation. After you delete the tasks from the enterprise project plan, you must publish it and wait for synchronization to complete. As an alternative, you can specify the `/force` flag to remove all links that bind work items to tasks for the project. Only those work items that are of the types that you specify are removed from participating in synchronization.  
+  Before you unmap a work item type for a project, you should delete the tasks from the enterprise project plan to remove all associations between them and work items in Team Foundation. After you delete the tasks from the enterprise project plan, you must publish it and wait for synchronization to complete. As an alternative, you can specify the `/force` flag to remove all links that bind work items to tasks for the project. Only those work items that are of the types that you specify are removed from participating in synchronization.  
   
 > [!TIP]
 >  If you delete the tasks, you may want to first copy them to another plan to maintain a record of them.  

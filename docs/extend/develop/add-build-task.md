@@ -40,9 +40,9 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 ```
 |--- README.md    
 |--- images                        
-	|--- extension-icon.png  
+    |--- extension-icon.png  
 |--- buildAndReleaseTask            // where your task scripts will be placed
-|--- vss-extension.json				// extension's manifest
+|--- vss-extension.json             // extension's manifest
 ```
 
 ### Developing in Unix versus Windows
@@ -396,6 +396,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 [create your publisher](#createpublisher) for instructions on how to do so.  
 
 ### Contributions
+
 | Property     | Description            |
 |--------------|------------------------|
 | `id`          | Identifier of the contribution. Must be unique within the extension. Does not need to match the name of the build or release task, but typically the build or release task name is included in the ID of the contribution. | 
@@ -404,6 +405,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 | `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task pipeline. |
 
 ### Files
+
 | Property     | Description            |
 |--------------|------------------------|
 | `path`          | Path of the file or folder relative to the `home` directory | 
@@ -439,9 +441,9 @@ If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
- * Specify an identifier for your publisher, for example: `mycompany-myteam`
-    * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
- * Specify a display name for your publisher, for example: `My Team`
+   * Specify an identifier for your publisher, for example: `mycompany-myteam`
+     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
+   * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and click **Create**
 
 Now your publisher is defined. In a future release, you'll be able to grant permissions to view and manage your publisher's extensions.

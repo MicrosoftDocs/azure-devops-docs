@@ -45,7 +45,7 @@ Ensure the following is true:
 4. Enter the number of **paid users**, and then choose **Save**. You also see the number of free users that are included, which is separate.
 
    > [!div class="mx-imgBorder"]
-![Increase the number of Basic users](_img/buy-more-basic-access/increase-number-basic-users.png)
+   > ![Increase the number of Basic users](_img/buy-more-basic-access/increase-number-basic-users.png)
 
 5. Select **Confirm purchase**.
 
@@ -64,8 +64,8 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ::: moniker range="<= tfs-2018"
 
-   > [!div class="mx-imgBorder"]
-![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
+> [!div class="mx-imgBorder"]
+> ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
 ::: moniker-end
 

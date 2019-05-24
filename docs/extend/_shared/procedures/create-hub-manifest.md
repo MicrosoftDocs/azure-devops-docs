@@ -25,7 +25,7 @@
 			"vso.work"
 		]
     }
-	```
+    ```
 
 	For each contribution in your extension, the manifest defines
 	
@@ -59,6 +59,6 @@
 			}
 		]
     }
-	```
+    ```
 
 	Set `addressable` to `true` unless you include other files that don't need to be URL-addressable.

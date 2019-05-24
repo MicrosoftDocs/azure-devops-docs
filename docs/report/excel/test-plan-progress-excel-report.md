@@ -59,21 +59,21 @@ You can use the Test Plan Progress report to monitor test activities and report 
 ##  <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Test Plan Progress report to vary depending on where you are in your product development cycle. Early iterations should show a gradual increase in the number of test cases that pass. The team can review the report to find answers to the following questions:  
   
--   How many tests are passing?  
+- How many tests are passing?  
   
--   How many tests are failing?  
+- How many tests are failing?  
   
--   How many tests are blocked?  
+- How many tests are blocked?  
   
--   How many tests have never run?  
+- How many tests have never run?  
   
--   What percentage of tests are passing across all test plans?  
+- What percentage of tests are passing across all test plans?  
   
--   How much testing has the team completed?  
+- How much testing has the team completed?  
   
--   Is the team likely to finish the testing on time?  
+- Is the team likely to finish the testing on time?  
   
- An ideal trend would show a steady increase in the number of **Passed** tests and a steady decrease in the number of **Failed**, **Never Run**, or **Blocked** tests. For information about healthy and unhealthy versions of the report, see [Test Plan Progress](../sql-reports/test-plan-progress-report.md).  
+  An ideal trend would show a steady increase in the number of **Passed** tests and a steady decrease in the number of **Failed**, **Never Run**, or **Blocked** tests. For information about healthy and unhealthy versions of the report, see [Test Plan Progress](../sql-reports/test-plan-progress-report.md).  
   
 ##  <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Test Plan Progress report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can customize this report to support other views, as the following table describes.  

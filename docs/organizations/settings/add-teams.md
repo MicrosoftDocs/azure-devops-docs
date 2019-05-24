@@ -57,12 +57,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](_img/add-team/open-project-settings-teams-new-nav.png) 
 
-0. Choose **New team**. Give the team a name, and optionally a description. 
+2. Choose **New team**. Give the team a name, and optionally a description. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Create a sub-team with its own area path](_img/add-team/create-new-team-new-nav.png)
 
-0. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
+3. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, choose Iterations and areas link](_img/add-team/team-profile-choose-iterations-and-areas.png)
@@ -71,12 +71,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
 
 	From the team profile, you can perform these additional tasks:  
-	- [Add team administrators](add-team-administrator.md)  
-	- [Add team members](#add-team-members)  
-	- [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)  
+   - [Add team administrators](add-team-administrator.md)  
+   - [Add team members](#add-team-members)  
+   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)  
 
-	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+     To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
 
@@ -89,11 +89,11 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
-0. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. Or, leave it unchecked and assign the default area path for the team after it is created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
+1. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. Or, leave it unchecked and assign the default area path for the team after it is created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
 
 	![Create a sub-team with its own area path](_img/add-team/create-team-dialog.png)
 
-0. Select the team to configure it. 
+2. Select the team to configure it. 
 
 	![Web portal, project admin context, Overview page, Select a team to configure it](_img/add-team/select-team.png)
 
@@ -101,7 +101,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Team profile, choose Iterations and areas link](_img/add-team/team-profile-tfs.png)  
 
-0. To select the set of sprints and area paths the team plans to use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
+3. To select the set of sprints and area paths the team plans to use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
 
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
@@ -159,28 +159,29 @@ For details, see [Add users to a project or specific team](../security/add-users
 ## Move work items under teams 
 Now that your two feature teams are configured, you need to move existing work items from their current assignments to the team's default area path. This way, the work items show up on each team's backlog. 
 
-1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
+1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
-	::: moniker range=">= azure-devops-2019"  
-	> [!div class="mx-imgBorder"]  
-	>![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-	![Web portal, Queries page, Bulk modify select work items](_img/add-team/scale-agile-bulk-modify-area-path-co.png)
-	::: moniker-end  
-2.	After you bulk modify, do a bulk save.  
+   ::: moniker range=">= azure-devops-2019"  
+   > [!div class="mx-imgBorder"]  
+   > ![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   > ![Web portal, Queries page, Bulk modify select work items](_img/add-team/scale-agile-bulk-modify-area-path-co.png)
+   ::: moniker-end  
+2. After you bulk modify, do a bulk save.  
 
-	::: moniker range=">= azure-devops-2019"    
-	> [!div class="mx-imgBorder"]  
-	>![Bulk save edited work items](_img/add-team/query-bulk-save.png)
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-	![Web portal, Queries page, Bulk save selected work items](_img/add-team/scale-agile-bulk-save-area-path-co.png)  
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"    
+   > [!div class="mx-imgBorder"]  
+   > ![Bulk save edited work items](_img/add-team/query-bulk-save.png)
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![Web portal, Queries page, Bulk save selected work items](_img/add-team/scale-agile-bulk-save-area-path-co.png)  
+   ::: moniker-end  
 
 <a id="include-area-paths"> </a>  
 
 ## Configure the default project team 
+
 One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
 
 ::: moniker range=">= azure-devops-2019"
@@ -188,10 +189,10 @@ One last step in moving from one team to two teams requires configuring the defa
 	> [!div class="mx-imgBorder"]  
 	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
 
-0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
+1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Product backlog, default project team](_img/add-team/product-backlog-default-team.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Product backlog, default project team](_img/add-team/product-backlog-default-team.png)
 
 ::: moniker-end
 
@@ -202,10 +203,10 @@ One last step in moving from one team to two teams requires configuring the defa
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/exclude-areas-default-team-horz.png)  
 
-0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
+1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
 
 ::: moniker-end
 
@@ -214,9 +215,9 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/multiple-teams-exclude-sub-area-paths.png)  
 
-0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
+1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
-	![Web portal, Backlog view of default team](_img/add-team/multiple-teams-product-backlog-default-team.png)  
+   ![Web portal, Backlog view of default team](_img/add-team/multiple-teams-product-backlog-default-team.png)  
 
 ::: moniker-end
 
@@ -231,7 +232,7 @@ One last step in moving from one team to two teams requires configuring the defa
 	> [!IMPORTANT]   
 	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
 
-2. To complete the delete operation, you must type the name of the WIT as shown. 
+1. To complete the delete operation, you must type the name of the WIT as shown. 
 
 	![Delete team confirmation dialog](_img/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 

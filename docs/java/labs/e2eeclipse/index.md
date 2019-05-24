@@ -193,7 +193,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
     ![Build is running to validate the PR](../_img/e2eeclipse/pr-overview.png)
 
     > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
-
+    > 
     > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 
 14. Click on the Files tab to open the file compare. Note the changes.

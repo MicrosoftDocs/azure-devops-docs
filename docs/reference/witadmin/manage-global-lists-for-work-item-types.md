@@ -23,12 +23,12 @@ Global lists are pick lists that you can include in one or more fields and types
 >**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
--   **destroygloballist**:  Destroys a global list.    
--   **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
--   **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
--   **listgloballist**:  Displays the name of each global list defined on the server.  
+- **destroygloballist**:  Destroys a global list.    
+- **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
+- **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
+- **listgloballist**:  Displays the name of each global list defined on the server.  
   
- See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+  See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
 

@@ -52,8 +52,8 @@ The creator of a view and all members of the Project Administrators and Project 
 
 	Refresh your Power BI report to access the changes you made to the view.
 
- > [!TIP]
- > If you remove fields from a view that are in use in the report, you'll need to update any Power BI report that references the view. 
+   > [!TIP]
+   > If you remove fields from a view that are in use in the report, you'll need to update any Power BI report that references the view. 
 
 <a id="share-view" />
 ## Share a view 
@@ -66,9 +66,9 @@ To share a private view, simply edit the view and change the sharing option to *
 
 > [!IMPORTANT]
 > If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
-
-    > [!div class="mx-imgBorder"]
-    > ![General tab](_img/editable-views/general.png)
+> 
+> [!div class="mx-imgBorder"]
+> ![General tab](_img/editable-views/general.png)
 
 ## Favorite a view
 
@@ -79,7 +79,7 @@ To favorite a view, hover over the view and choose the ![star icon](../../_img/i
 > ![Favorite a view](_img/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]: Couldn&#39;t find file _shared/manage-shared-view-permissions.md. -->[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]<!--END ERROR INCLUDE -->
 
 ## Delete a view
 

@@ -95,11 +95,12 @@ You define both areas and iterations from the **Work** pages of the project admi
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. From the web portal, open **Project settings**. 
 
-0. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
+1. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
@@ -109,13 +110,14 @@ You define both areas and iterations from the **Work** pages of the project admi
 	> [!div class="mx-imgBorder"]
 	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
-0. Choose **Work**.   
+2. Choose **Work**.   
 
 ::: moniker-end 
 
 
 <a id="admin-intro-tfs-2015" />
-::: moniker range="<= tfs-2015"  
+
+::: moniker range="<= tfs-2015" 
 
 From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
@@ -234,26 +236,26 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker range=">= azure-devops-2019"  
 
-0.	Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
+0. Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
 
-	Here, we navigate to the Fabrikam Fiber Team.  
+   Here, we navigate to the Fabrikam Fiber Team.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Project settings>Work>Team Configuration>Iterations page](_img/team-defaults/open-team-settings-iterations-vert.png)  
+   > [!div class="mx-imgBorder"]
+   > ![Project settings>Work>Team Configuration>Iterations page](_img/team-defaults/open-team-settings-iterations-vert.png)  
 
-0. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
+1. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
 	![Work, Iterations page for team, set team backlog iteration for backlogs and boards](_img/team-defaults/stdefaults-team-backlog-iteration.png)
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-0. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
+2. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
 	For example, you might want all new work items to be added to a future iteration path which you use to triage and assign to specific sprints at periodic intervals.  
 
 	![Work, Iterations page for team, set team default for new work items](_img/team-defaults/stdefaults-team-default-iteration-vert.png)
 
-0. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
+3. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, select sprints](_img/team-defaults/select-iterations.png)
@@ -265,7 +267,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
 
-3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
+4. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
 ::: moniker-end
 
@@ -285,7 +287,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
+3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
 	For example, you might want all new work items to be added to a future iteration path which you use to triage and assign to specific sprints at periodic intervals.  
 
@@ -301,7 +303,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	If you don't see the sprints you need, or the dates aren't set, then [return to the project admin context and define them there](set-iteration-paths-sprints.md#define-sprints-team-services).  
 
-3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
+5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
 ::: moniker-end
 
@@ -343,6 +345,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 ::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
+
 ## Rename, move, or delete an iteration 
 
 When you rename an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths. 
@@ -367,6 +370,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 ## Archive iteration paths 
 
 After a while, you may want to archive iteration paths that were used for sprints that are a year or more out of date. You can do that by moving the iteration path under a node that you label "Archive". All work items are updated with the moved iteration path. Also, teams can de-select those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 

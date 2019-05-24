@@ -38,9 +38,7 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 
 
 </td>
-<td width="65%">**Continuous flow CFD**  
-![CFD metrics](_img/cfd-metrics.png)  
-</td>
+<td width="65%"><strong>Continuous flow CFD</strong><br/><img src="_img/cfd-metrics.png" alt="CFD metrics"/><br/></td>
 </tr>
 
 <tr>
@@ -50,10 +48,8 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 <p>The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right. </p>
 
 </td>
-<td>**Fixed period CFD for a completed sprint**  
-
-![CFD metrics](_img/cfd-scope-change.png)  
-
+<td><strong>Fixed period CFD for a completed sprint</strong><br/>
+<img src="_img/cfd-scope-change.png" alt="CFD metrics"/><br/>
 </td>
 
 </tr>
@@ -81,10 +77,8 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 
 <tr>
 <td>Lead Time  <sup>1</sup></td>
-<td>*For a continuous flow process:* measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
-<br/>
-*For a sprint or fixed period process:* measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).  
-</td>
+<td><em>For a continuous flow process:</em> measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).<br/><br/>
+<em>For a sprint or fixed period process:</em> measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).<br/></td>
 </tr>
 
 <tr>
@@ -131,25 +125,21 @@ Two problems show up visually as flat lines and as bulges.
 <tr>
 <td width="235">
 
-<p>Flat lines appear when the team doesn't update their work with a regular cadence. The [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another. </p>
-<p>Flat lines can also appear when the work across one or more processes takes longer than planned for. For this to occur, flat lines must appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. </p>
+<p>Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The <a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a> provides the quickest way to transition work from one column to another. </p>
+<p>Flat lines can also appear when the work across one or more processes takes longer than planned for. For this to occur, flat lines must appear across many parts of the system because if only one part of the system or two parts of a system have problems then you&#39;ll see a bulge. </p>
 </td>
-<td width="35%">**Flat lines**  
-![CFD metrics](_img/cfd-flatline.png)  
-</td>
+<td width="35%"><strong>Flat lines</strong><br/><img src="_img/cfd-flatline.png" alt="CFD metrics"/><br/></td>
 </tr>
 
 <tr>
 <td>
-<p>Bulges occur when work builds up in one part of the system and it isn't moving through a process. </p>
+<p>Bulges occur when work builds up in one part of the system and it isn&#39;t moving through a process. </p>
 <p>An example of this may be that testing is taking a long period of time but development is taking a short period of time therefore work is accumulating in the development state (bulges indicate that a succeeding step is having a problem, not necessarily the step in which the bulge is occurring).  </p>
 
 
 </td>
-<td width="65%">**Bulges**  
-
-![CFD metrics](_img/cfd-bulge.png)  
-
+<td width="65%"><strong>Bulges</strong><br/>
+<img src="_img/cfd-bulge.png" alt="CFD metrics"/><br/>
 </td>
 
 </tr>
