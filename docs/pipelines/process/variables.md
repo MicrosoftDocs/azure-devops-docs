@@ -29,6 +29,10 @@ As a pipeline author or end user, you cannot change the value of such variables.
 
 In this topic, we discuss user-defined variables. Names of these variables consist of letters, numbers, `.`, and `_` characters.
 
+A few variable prefixes are reserved by the system and should not be used.
+These are: `endpoint`, `input`, `secret`, and `securefile`.
+Any variable which begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
+
 ## Set variables in pipeline
 
 # [YAML](#tab/yaml)
