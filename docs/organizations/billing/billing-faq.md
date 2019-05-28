@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -29,6 +29,8 @@ You need to set up billing when you need more than the *free tier* of resources 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
 You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
