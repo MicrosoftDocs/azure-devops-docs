@@ -331,8 +331,6 @@ pr:
     - docs/README.md
 ```
 
-Path filters for PR triggers are not yet supported for Bitbucket Cloud repos.
-
 ::: moniker-end
 
 ::: moniker range="azure-devops"
