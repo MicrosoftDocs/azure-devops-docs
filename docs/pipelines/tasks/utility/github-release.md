@@ -60,7 +60,7 @@ The following YAML creates a GitHub release every time the task runs. The build 
 - task: GithubRelease@0 
   displayName: 'Create GitHub Release'      
   inputs:
-    githubConnection: zenithworks
+    gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven
     tagSource: manual
     tag: $(Build.BuildNumber)      
@@ -75,7 +75,7 @@ You can also control the creation of the release based on repository tags. The f
 - task: GithubRelease@0 
   displayName: 'Create GitHub Release'      
   inputs:
-    githubConnection: zenithworks
+    gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven           
     assets: $(Build.ArtifactStagingDirectory)/*.exe
 ```
@@ -87,7 +87,7 @@ You may also want to use the task in conjunction with task conditions to get eve
   displayName: 'Create GitHub Release'   
   condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/release-v')   
   inputs:
-    githubConnection: zenithworks
+    gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven           
     assets: $(Build.ArtifactStagingDirectory)/*.exe
 ```
@@ -100,7 +100,7 @@ The following YAML updates the status of a GitHub release from 'draft' to 'publi
 - task: GithubRelease@0
   displayName: 'Edit GitHub Release'
   inputs:
-    githubConnection: zenithworks
+    gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven
     action: edit
     tag: $(myDraftReleaseVersion)
@@ -115,7 +115,7 @@ The following YAML deletes a GitHub release. The release to be deleted is determ
 - task: GithubRelease@0
   displayName: 'Delete GitHub Release'
   inputs:
-    githubConnection: zenithworks
+    gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven
     action: delete
     tag: $(myDraftReleaseVersion)
