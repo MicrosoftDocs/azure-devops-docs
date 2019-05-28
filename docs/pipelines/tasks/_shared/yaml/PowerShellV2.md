@@ -3,13 +3,13 @@
 # Run a PowerShell script on Windows, macOS, or Linux.
 - task: PowerShell@2
   inputs:
-    #targetType: 'filePath' # Optional. Options: filePath, inline
-    #filePath: # Required when targetType == FilePath
-    #arguments: # Optional
-    #script: '# Write your powershell commands here.' # Required when targetType == Inline
-    #errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
-    #failOnStderr: false # Optional
-    #ignoreLASTEXITCODE: false # Optional
-    #pwsh: false # Optional
-    #workingDirectory: # Optional
+    #targetType: # 'filePath' or 'inline'; defaults to filePath
+    #filePath: # required when targetType == FilePath
+    #arguments: # optional arguments passed to PowerShell
+    #script: # required when targetType == Inline; actual contents of the script
+    #errorActionPreference: # options: stop, continue, silentlyContinue; defaults to 'stop'
+    #failOnStderr: # optional, defaults to false
+    #ignoreLASTEXITCODE: # optional, defaults to false
+    #pwsh: # optional, always use PowerShell Core (even on Windows); defaults to false
+    #workingDirectory: # optional, initial working directory
 ```
