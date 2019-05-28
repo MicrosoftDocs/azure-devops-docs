@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/03/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -54,19 +54,20 @@ Also, machine-level caches and configuration persist from run to run, which can 
 
 :::moniker-end
 
-You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Linux Docker container. See the following topics for additional information on installing a self-hosted agent:
-
 ::: moniker range=">= tfs-2017"
 
+You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Docker container. See the following topics for additional information on installing a self-hosted agent:
+
 * [macOS agent](v2-osx.md)
-* [Red Hat agent](v2-linux.md)
-* [Ubuntu 14.04 agent](v2-linux.md)
-* [Ubuntu 16.04 agent](v2-linux.md)
-* [Windows agent v2](v2-windows.md)
+* [Linux agent](v2-linux.md) (x64, ARM, RHEL6)
+* [Windows agent](v2-windows.md) (x64, x86)
+* [Docker agent](docker.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
+You can install the agent on Linux, macOS, or Windows machines. See the following topics for additional information on installing a self-hosted agent:
 
 * [macOS agent](v2-osx.md)
 * [Red Hat agent](v2-linux.md)
