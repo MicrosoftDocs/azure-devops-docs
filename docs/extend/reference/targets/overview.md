@@ -27,7 +27,7 @@ The [Contributions Guide extension](https://marketplace.visualstudio.com/items/m
 <a name="hubs"></a>
 ## Hubs and hub groups
 
-Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions will contribute to the project level.
+Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Repos hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions will contribute to the project level.
 
 Extensions can contribute both hubs and hub groups. A common extensibility scenario is to contribute a hub to an existing hub group. For example:
 
@@ -40,10 +40,10 @@ Here are the most common, Microsoft-provided hub groups that hubs can be contrib
 
 Name                | ID                                         | Level                           | Preview
 --------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
-Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
-Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
-Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
+Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
+Boards                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
+Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
+Test Plans               | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
 Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
 Account settings  | `ms.vss-web.collection-admin-hub-group`    | Account (or collection)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
 
