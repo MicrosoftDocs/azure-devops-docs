@@ -67,7 +67,7 @@ The CmdLine task also has a shortcut syntax in YAML:
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
 </tr>
 <tr>
-<td>Env[ironment variables]</td>
+<td>Environment variables</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 ```yaml
 - script: echo %MYSECRET%
