@@ -86,7 +86,9 @@ Next, we'll create the Dockerfile.
             git \
             iputils-ping \
             libcurl3 \
-            libicu55
+            libicu55 \
+            libunwind8 \
+            netcat
 
     WORKDIR /azp
 
@@ -263,7 +265,9 @@ Next, we'll create the Dockerfile.
             git \
             iputils-ping \
             libcurl3 \
-            libicu55
+            libicu55 \
+            libunwind8 \
+            netcat
 
     WORKDIR /azp
 
