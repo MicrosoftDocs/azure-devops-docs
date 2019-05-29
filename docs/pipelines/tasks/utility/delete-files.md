@@ -56,11 +56,14 @@ None
 <li>```**\temp\**``` deletes all files in any sub-folder named temp.</li>
 <li>```**\temp*``` deletes any file or folder with a name that begins with temp.</li>
 <li>```**\temp*\**``` deletes files in any sub-folder that begins with the name temp.</li>
+<li>```!(*.vsix)``` deletes all  in the root folder that do not have a `.vsix` extension.</li>
 </ul>
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+https://github.com/microsoft/azure-pipelines-tasks/issues/4936#issuecomment-497026569
 
 ## Open source
 
@@ -77,6 +80,8 @@ A: See:
 * https://github.com/isaacs/minimatch 
 
 * https://realguess.net/tags/minimatch/
+
+* http://man7.org/linux/man-pages/man3/fnmatch.3.html
 
 <!-- [!INCLUDE [temp](../_shared/build-step-common-qa.md)] -->
 
