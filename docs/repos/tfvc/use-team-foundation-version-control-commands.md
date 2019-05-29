@@ -367,7 +367,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see [DateTime](https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1).</p></td>
+<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime">DateTime</a> and <a href="https://msdn.microsoft.com/library/az4se3k1">Standard Date and Time Format Strings</a>.</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>
