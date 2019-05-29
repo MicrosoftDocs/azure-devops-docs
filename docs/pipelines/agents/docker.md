@@ -195,7 +195,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    exec ./externals/node10/bin/node ./bin/AgentService.js interactive
+    exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
 6. Run the following command within that directory:
@@ -372,7 +372,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    exec ./externals/node10/bin/node ./bin/AgentService.js interactive
+    exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
 6. Run the following command within that directory:
