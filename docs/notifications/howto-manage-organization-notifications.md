@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 05/30/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -20,7 +20,10 @@ monikerRange: '>= tfs-2017'
 > [!NOTE] 
 > This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
-Learn about managing notifications for your organization.
+In this article, learn about managing notifications for your organization. 
+
+> [!TIP]
+> We don't support organization-wide notifications.
 
 ## Organization level notifications page
 
@@ -59,6 +62,6 @@ The `Statistics` section shows the most active notification subscriptions and th
 
 ## Organization notifications page: Settings
 
-The `Settings` section allows organization level notification settings to be managed by any member of the **project collection administrators** group. The _Default delivery option_ setting is inherited by all teams and groups, and therefore is not explicitly set at the team or group level.
+The `Settings` section allows organization level notification settings to be managed by any member of the **project collection administrators** group. All teams and groups inherit the _Default delivery option_ setting, which is why it isn't explicitly set at the team or group level.
 
 ![Organization level notifications page: Settings](_img/view-organization-notification-settings.png)
