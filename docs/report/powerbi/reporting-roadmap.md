@@ -33,7 +33,7 @@ The Analytics Service in available for all organizations using Azure DevOps Serv
 
 ::: moniker range="azure-devops-2019"
 
-The Analytics Service in in Public Preview for Azure DevOps Server 2019. You gain access to it by [installing the Analytics Marketplace extension](../dashboards/analytics-extension.md). Installing it provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
+The Analytics Service is in Public Preview for Azure DevOps Server 2019. You gain access to it by [installing the Analytics Marketplace extension](../dashboards/analytics-extension.md). Installing it provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
 
 The Analytics Service will become generally available in the next major release of Azure DevOps Server. While in Public Preview, the Analytics extension is free.
 

@@ -138,7 +138,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2-onprem.png)
 
-2. Enter the URL for your server and collection, the same same project for which you defined the Active Bugs view. 
+2. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
 
 	![Azure DevOps Server dialog, Collection and project name](_img/create-report/specify-collection-project.png)  
 ::: moniker-end
