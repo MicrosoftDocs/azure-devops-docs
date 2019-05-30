@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -21,6 +21,8 @@ monikerRange: '>= tfs-2013'
 In this article, learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
 
 Visual Studio subscribers get Basic access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 

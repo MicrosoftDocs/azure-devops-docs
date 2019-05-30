@@ -14,7 +14,7 @@ ms.date: 04/18/2019
 
 # How To: Use Package Search
 
-[!INCLUDE version-header]
+[!INCLUDE [version-header](../../_shared/version-vsts-only.md)]
 
 Package Search is available as a built-in extension in Azure DevOps. 
 Users can use Package Search by default when Artifacts service is installed and enabled in Azure DevOps Services.
@@ -63,7 +63,7 @@ For example:
   the search string `xml parser`.
 * `xml OR parser` finds packages that contain either of the words **xml** or **parser**.
 * `xml NOT parser` finds packages that contain the word **xml** but not the word **parser**.
-* `(xml NOT parser) OR `lib` finds packages that contain the word **xml**
+* `(xml NOT parser)` OR `lib` finds packages that contain the word **xml**
   but not the word **parser** or packages that contain the word **lib**.
 
 ## Broaden your search by using  wildcards

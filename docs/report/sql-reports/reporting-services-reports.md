@@ -1,7 +1,7 @@
 ---
 title: Reporting Services Reports
-titleSuffix: TFS
-description: Overview of the reports provided through SQL Server Reports for  Team Foundation Server
+titleSuffix: Azure DevOps
+description: Overview of the reports provided through SQL Server Reports
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: overview
@@ -9,25 +9,22 @@ ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 05/21/2019
 ---
 
-# Reporting Services Reports
+# Reporting Services reports
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 You can analyze the progress and quality of your project by using the reports in SQL Server Reporting Services. These reports aggregate metrics from work items, version control, test results, and builds. These reports answer questions about the actual state of your project.  
   
  Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
   
- **Requirements**  
+ ## Prerequisites
   
--   Your TFS on-premises deployment must be provisioned with SQL Server Reporting Services. These reports are not available if your Team Explorer home page does not contain a link to **Reports**.  
-  
-     Also, your team project must be provisioned with reports.  
-  
-     If you need to provision your deployment with Reporting Services or add reports to an existing team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
-  
--   To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
+- Your Azure DevOps on-premises deployment must be provisioned with SQL Server Reporting Services. These reports are not available if your Team Explorer home page does not contain a link to **Reports**.  
+- Your team project must be provisioned with reports.  
+- To provision your deployment with Reporting Services or add reports to an existing team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
+- To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
   
 
 ## Monitor code quality
@@ -56,7 +53,7 @@ Build reports track the quality of software under development. By defining tests
 </table>
 
 
-**Sample build success over time report**  
+### Sample build success over time report
 
 ![Sample build summary report](../admin/_img/IC665009.png)  
 
@@ -84,7 +81,7 @@ Project management reports provide insight into how much work the team is tackli
             The only report that references <b>Original Estimate</b> is <a href="status-on-all-iterations-report.md" data-raw-source="[Status on All Iterations](status-on-all-iterations-report.md)">Status on All Iterations</a>.
         </li>
         <li>Create test cases and bugs, link them to their parent backlog item, and update their <b>State</b>.</li>
-        <li>(Optional) Assign work items to areas to filter reports.</li>
+        <li>(Optional) Assign work items to areas for filtering in reports.</li>
     </ol>
 </td>
     <td width="40%">
@@ -113,7 +110,7 @@ Project management reports provide insight into how much work the team is tackli
 ![Sample stories overview report](../admin/_img/IC665011.png)  
 
 
-## Monitor test plans and bug tracking
+##Monitor test plans and bug tracking
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
 <table width="100%">
@@ -145,7 +142,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 
   
 ##  <a name="Accessing"></a> Open a report  
- You can open a report from Team Explorer, your team project portal, or any team home page in the web access portal.  
+ You can open a report from Team Explorer, your team project portal, or any team home page in the web portal.  
   
  Open the report site from the **Reports** page in Team Explorer.  
   
@@ -208,12 +205,12 @@ Test planning reports support monitoring the test progress and coverage of backl
 ### Q:  Are these reports the same as the charts that appear in the web portal?  
  **A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support additional filters.  
   
-### Q: Do you want to create additional product areas or release milestones?  
+### Q: How do I create additional product areas or release milestones?  
  **A:** See [Create areas or iterations](../../organizations/settings/set-area-paths.md).  
   
-### Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?  
+### Q: How do I bulk edit work items to assign them to an area, iteration, team member, or priority?  
  **A:**  See [Bulk modify work items](../../boards/backlogs/bulk-modify-work-items.md).  
   
-### Q: Do you want to add a field to track additional data?  
-**A:**  See [Add or modify a work item field to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).   
+### Q: How do I add a field to track additional data?  
+ **A:**  See [Add or modify a work item field to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).   
 

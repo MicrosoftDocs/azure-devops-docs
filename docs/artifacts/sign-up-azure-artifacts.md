@@ -95,9 +95,10 @@ A: Deletion of artifacts doesn't register immediately. It can take up to 24 hour
 Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
 For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
 
+### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
+
+A: If you remove your Azure Subscription from your Azure DevOps organization, you will only have access to the free tier of storage (< 2GB). If you have above 2GB of storage used, you will be able to read packages but will no longer be able to push until you either get your usage below 2GB, or reconnect an Azure Subscription to your organization and increase your storage tier appropriately.
+
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
 A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
-
-
-
