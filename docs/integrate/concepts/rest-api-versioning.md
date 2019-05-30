@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
-ms.date: 08/04/2016
+ms.date: 05/30/2019
 ---
 
 # REST API Versioning
@@ -40,12 +40,13 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 ### Supported versions
 
-| Product                     | 1.0    | 2.0    | 3.0    | 4.0    |
-|:----------------------------|:------:|:------:|:------:|:------:|
-| Azure DevOps Services | X      | X      | X      | X      |
-| Team Foundation Server 2018 | X      | X      | X      | X      |
-| Team Foundation Server 2017 | X      | X      | X      | -      |
-| Team Foundation Server 2015 | X      | X      | -      | -      |
+| Product                     | 1.0    | 2.0    | 3.0    | 4.0    | 5.0   |
+|:----------------------------|:------:|:------:|:------:|:------:|:------:|
+| Azure DevOps Services | X      | X      | X      | X      |   X   |
+| Azure DevOps Server 2019| X        |  X   |   X   |   X   |      X   |
+| Team Foundation Server 2018 | X      | X      | X      | X      | - |
+| Team Foundation Server 2017 | X      | X      | X      | -      | - |
+| Team Foundation Server 2015 | X      | X      | -      | -      | - |
 
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
