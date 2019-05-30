@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 In this article, learn about managing notifications for your organization. 
 
 > [!TIP]
-> We don't support organization-wide notifications.
+> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. 
 
 ## Organization level notifications page
 
