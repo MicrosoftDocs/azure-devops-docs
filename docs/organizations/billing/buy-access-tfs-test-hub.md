@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/17/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2015 <= azure-devops-2019'
 ---
 # Buy access to Azure DevOps Server or Azure Test Plans
@@ -23,7 +23,7 @@ Paid users are entitled access to Basic features in your company's Azure DevOps 
 
 You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in Azure DevOps Server.
 
-To learn more about the requirements to access Azure DevOps Server or Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+To learn more about the requirements to access Azure DevOps Server or Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing). To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Buy monthly access to Azure DevOps Server for your users
 
