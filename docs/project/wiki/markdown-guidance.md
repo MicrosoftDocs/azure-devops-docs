@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 05/10/2019
+ms.date: 05/30/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -204,7 +204,7 @@ Combine these elements to apply emphasis to text.
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
-> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
 > 
 ::: moniker-end
 
