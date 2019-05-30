@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 05/14/2019
 monikerRange: 'azure-devops'
 ---
 # Access with Azure Active Directory groups
@@ -30,7 +30,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 * You must be a project administrator, project collection administrator, or organization owner. You must also have at least Basic access, not Stakeholder.
-* To create and manage Azure AD groups, you must have Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
+* To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes might take up to 24 hours to be visible in Azure DevOps.
 
 ## Add an Azure AD group to an Azure DevOps group

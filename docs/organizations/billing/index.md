@@ -33,7 +33,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ## Billing for Azure DevOps Server  
 
-You can also make some purchases for Azure DevOps Server on your monthly Azure bill.  
+Make some purchases for Azure DevOps Server on your monthly Azure bill.  
 
 * [Azure DevOps Server pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 * [How to buy CALs or access to the Test Services page](buy-access-tfs-test-hub.md)
@@ -50,28 +50,25 @@ You can also make some purchases for Azure DevOps Server on your monthly Azure b
 * [Start free trials for paid features and extensions](try-additional-features-vs.md)
 * [Buy Basic + Test Plans access](buy-basic-plus-test-plans.md)
 
-## Step-by-step tutorials
-
-* [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
-
 ## How-to guides
 
-#### Billing management
+### Billing management
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
 * [Change the number of paid users on your organization](buy-basic-access-add-users.md)
 * [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
 * [Billing FAQ](billing-faq.md)
+* [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
-#### Marketplace extension management
+### Marketplace extension management
 
 * [Change the number of paid users for an extension](buy-basic-access-add-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 
-#### Guidance for Cloud Solution Providers
+### Guidance for Cloud Solution Providers
 
 * [Buy Azure DevOps](csp/buy-csp-azure-devops.md)
 * [Buy and manage Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-csp)
