@@ -472,6 +472,36 @@ For tests in your pipeline that require a browser to run (such as the **ng test*
 
 1. Change the `singleRun` entry in your *karma.conf.js* project file from a value of `false` to `true`. This helps make sure that the Karma process stops after it runs.
 
+### React and Vue
+
+All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file should contain the standard Node.js script:
+
+::: moniker range="azure-devops"
+
+```yaml
+- script: |
+    npm install
+    npm run build
+ displayName: 'npm install and build'
+```
+
+::: moniker-end
+
+The built files are kept in a new folder, `/dist` (for Vue) or `/build` (for React), so add the following task to your *azure-pipelines.yml* file to ready that folder for publication, edited to suit the structure of your build:
+
+::: moniker range="azure-devops"
+
+```yaml
+- task: PublishBuildArtifacts@1
+  inputs:
+    artifactName: dist
+    pathtoPublish: 'dist'
+```
+
+::: moniker-end
+
+Note, you will need to point the Release task to this `/dist` or `/build` folder. Set your built files to be deployed using the `Deploy Azure App Service` task, and edit the Tasks area of this service to set the Package or folder to be deployed to be the file path to your build folder in the Tasks area.
+
 ### Webpack
 
 You can use a webpack configuration file to specify a compiler (such as Babel or TypeScript) to transpile JSX or TypeScript to plain JavaScript, and to bundle your app.
@@ -499,16 +529,6 @@ Add the following tasks to your pipeline:
   * **Script:** `npx webpack --config webpack.config.js`
 
 ::: moniker-end
-
-
-### React
-
-All the dependencies for your React app are captured in your *package.json* file. The steps outlined in the earlier example section should work for building and testing a React app.
-
-### Vue
-
-All the dependencies for your Vue app are captured in your *package.json* file. The steps outlined in the earlier example section should work for building and testing a Vue app.
-
 
 ## Build task runners
 
