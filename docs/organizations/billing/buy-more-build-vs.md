@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/09/2019
+ms.date: 05/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -26,6 +26,8 @@ We offer a *free tier* for each. The *free tier* includes:
 [!INCLUDE [free-tier](../../_shared/free-tier.md)]
 
 If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Microsoft-hosted CI/CD
 
