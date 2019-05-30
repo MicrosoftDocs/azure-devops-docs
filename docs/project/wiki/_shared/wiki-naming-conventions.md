@@ -28,6 +28,7 @@ You can specify page titles which contain one or more of these special character
 > |        ?        |      %3F       |
 > |        \|       |      %7C       |
 > |        -        |      %2D       |
+> |         "       |      %22       |
 
 ::: moniker-end
 
