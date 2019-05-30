@@ -126,7 +126,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
 
-1. Create a release pipeline with an stage named **Release**.
+1. Create a release pipeline with a stage named **Release**.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
