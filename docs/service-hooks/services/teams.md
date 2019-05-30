@@ -1,22 +1,22 @@
 ---
+title: Create a service hook for Azure DevOps Services and TFS with Microsoft Teams
+titleSuffix: Azure DevOps Services, TFS 2017
+description: Use Microsoft Teams with your Azure DevOps organization
 ms.author: elbatk
 author: elbatk
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Microsoft Teams
-description: Use Microsoft Teams with your Azure DevOps Services organization
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 05/14/2019
 ---
-
 
 # Create a service hook for Azure DevOps Services and Team Foundation Server (TFS) with Microsoft Teams
 
 <b>Azure DevOps Services | TFS 2017.2</b> 
 
 >[!NOTE]  
->This topic applies to Azure DevOps Services and to TFS 2017.2 and later versions.  
+>This article applies to Azure DevOps Services and to TFS 2017.2 and later versions.  
  
 See activity about your Azure DevOps Services or Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 
@@ -130,16 +130,16 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
 create two additional subscriptions.
 
-#### Q: I don't see my organization when trying to connect Microsoft Teams 
+### Q: I don't see my organization when trying to connect Microsoft Teams 
 
-A: Only organizations in the same organization (Azure Active Directory tenant) as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
+A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
 
-To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams (see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-to-directory)).
+To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams (see [Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-disconnect-or-change-azure-ad).
 
 <!-- ENDSECTION -->
