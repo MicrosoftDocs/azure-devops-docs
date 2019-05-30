@@ -253,7 +253,7 @@ Misc content
 
 ## Set a home page
 
-By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever you select **Wiki** within the web portal or choose the ![home link](./_img/wiki/home-link.png) home icon.
+By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever you select **Wiki** within the web portal or choose the home icon.
 
 You can change the home page by setting the page sequence within the root **.order** file.
 
