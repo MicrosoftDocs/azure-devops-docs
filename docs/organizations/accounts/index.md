@@ -33,7 +33,6 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Step-by-step tutorials
 
-* [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
 * [Change individual permissions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Grant or restrict permissions](../security/restrict-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
@@ -68,8 +67,11 @@ Sign up for an organization, add users, and manage permissions and access.
     * Access with Azure AD
         * [Add Azure AD group to Azure DevOps group](manage-azure-active-directory-groups.md)
         * [Add Azure DevOps users to Azure AD](add-users-to-azure-ad.md)
-        * [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
         * [Delete Azure DevOps users connected to Azure AD](delete-users-from-services-azure-ad.md)
+        * [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
+        * [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
+        * [Change your Azure AD tenant connection](change-azure-ad-connection.md)
+        
 * Manage extensions
     * [Install extensions](../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Assign paid extensions access](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
