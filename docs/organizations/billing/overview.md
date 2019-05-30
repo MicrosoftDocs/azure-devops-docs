@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 05/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -38,6 +38,8 @@ The *free tier* includes:
 > You can enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 

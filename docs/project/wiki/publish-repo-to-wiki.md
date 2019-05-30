@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/25/2019  
+ms.date: 05/29/2019  
 ---
 
 # Publish a Git repository to a wiki
@@ -253,24 +253,28 @@ Misc content
 
 ## Set a home page
 
-By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever someone selects **Wiki** within the web portal or chooses the ![home link](./_img/wiki/home-link.png) home icon.
+By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever you select **Wiki** within the web portal or choose the home icon.
 
 You can change the home page by setting the page sequence within the root **.order** file.
 
-For example:  
+For example, enter the page name into the first line:  
 
 ```
-New Home Page
-README
+New home page name here
 page-2
 page-3
 Page-4
+README
 Misc content
 ```
 
 ## Promote folder to page
 
 For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
+
+Displayed in the following example, Test has both a folder and an md file, which creates a hierarchy inside of the Wiki tree.
+
+![Promote a folder to a page](_img/promote-folder.png)
 
 ## Next steps
 
