@@ -34,7 +34,7 @@ We show you how to do the following in this article:
 While you author pages using [Markdown format](../../reference/markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki home page](_img/wiki/wiki-edit-2.png)
+> ![Wiki home page](_img/wiki/wiki-edit.png)
 
 As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
@@ -97,11 +97,7 @@ For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wik
 
 ## Make a page the wiki home page
 
-By default, the first page you add when you create a wiki is set as the wiki home page. You can change this if another page becomes more relevant. The home page opens whenever someone selects **Wiki** within the web portal or the ![home link](./_img/wiki/home-link.png) home icon.
-
-To reset the home page, open the context menu of the page and select **Set as wiki homepage**.
-
-<img src="_img/wiki/make-home-page.png" alt="Make a page the home page" style="border: 1px solid #C3C3C3;" />
+By default, the first page you add when you create a wiki is set as the wiki home page. You can change this if another page becomes more relevant. You have to just drag and drop the page to the top of the tree.
 
 ## Next steps
 
