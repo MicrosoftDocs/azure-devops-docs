@@ -111,7 +111,7 @@ same as the one used in .gitignore.
 Set up a global .gitignore for use across all repos on your system using the command line `git config` tool:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git config core.excludesfile <font color="#b5bd68">C:\Users\frank\.gitignore_global</font>
+&gt; git config core.excludesfile <font color="#b5bd68">C:\Users\frank&#92;.gitignore_global</font>
 </pre>
 
 This is particularly useful for ignoring entire file types you don't want to ever commit, such as compiled binaries.
@@ -142,12 +142,12 @@ remove the information about the file from Git's index:
 
 0. Add the file in your .gitignore. 
 
-0. Run the following:
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git rm --cached <font color="#b5bd68">&lt;file&gt;</font>
-</pre>
+1. Run the following:
+   <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+   &gt; git rm --cached <font color="#b5bd68">&lt;file&gt;</font>
+   </pre>
 
-0. Commit the removal of the file and the updated .gitignore to your repo. 
+2. Commit the removal of the file and the updated .gitignore to your repo. 
 
 ## Next steps
 

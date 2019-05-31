@@ -30,15 +30,15 @@ To use the **changeset** command you must have the **Read** permission set to **
 
 ## Parameters
 
-| **Argument** | **Description** |
-|---|---|
-| *comment* | Provides a comment about the check-in. |
-| *@commentfile* | Specifies a path of a file on disk that contains the comment used for the check-in. |
-| *NoteFieldName=NoteFieldValue* | Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions. |
-| *@notefile* | Provides the path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot; with one per line. |
-| *TeamProjectCollectionUrl* | The URL of the project collection that contains a changeset about which you want to display information or whose attributes you want to modify (for example, http://myserver:8080/tfs/DefaultCollection). |
-| *username* | Provides a value to the **/user** option. You can specify this argument as either *Domain*\*UserName* or *UserName*. |
-| *changesetnumber* | Identifies the changeset to be reviewed or modified. Cannot be used with **/latest**. |
+|          **Argument**          |                                                                                               **Description**                                                                                               |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           *comment*            |                                                                                   Provides a comment about the check-in.                                                                                    |
+|     <em>@commentfile</em>      |                                                             Specifies a path of a file on disk that contains the comment used for the check-in.                                                             |
+| *NoteFieldName=NoteFieldValue* |                                        Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions.                                        |
+|       <em>@notefile</em>       |                             Provides the path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot; with one per line.                              |
+|   *TeamProjectCollectionUrl*   | The URL of the project collection that contains a changeset about which you want to display information or whose attributes you want to modify (for example, <http://myserver:8080/tfs/DefaultCollection>). |
+|           *username*           |                                            Provides a value to the **/user** option. You can specify this argument as either *Domain*\*UserName\* or *UserName*.                                            |
+|       *changesetnumber*        |                                                            Identifies the changeset to be reviewed or modified. Cannot be used with **/latest**.                                                            |
 
 | **Option** | **Description** |
 |---|---|

@@ -14,9 +14,9 @@ A: You'll find it in the Code page in your project.
 
 2. Open the Code page from your you project's home page.   
 
- ![Project home page, code explorer](_img/code-explorer.png)   
+   ![Project home page, code explorer](_img/code-explorer.png)   
 
 3. Select the repository and click on the **clone** action to get the URL.   
 
- ![Project home page, code explorer, clone selected to show the URL](_img/clone-url.png)
+   ![Project home page, code explorer, clone selected to show the URL](_img/clone-url.png)
 

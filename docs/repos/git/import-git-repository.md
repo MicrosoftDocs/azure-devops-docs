@@ -54,17 +54,17 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 1. Select **Repos**, **Files**.
 
-  ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](_img/repos-navigation/repos-files.png)
 
-0. From the repo drop-down, select **Import repository**.
+2. From the repo drop-down, select **Import repository**.
 
-  ![Manage repositories](_img/repo-mgmt/import-repository.png)
+   ![Manage repositories](_img/repo-mgmt/import-repository.png)
 
-0. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-  If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
 
-  ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -105,21 +105,21 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd old-contoso-repo.git
     ```
 
-0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+1. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
-0. Run the following command to copy the source repo to the target repo.
+2. Run the following command to copy the source repo to the target repo.
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
-0. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
+3. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 
     ```
     git lfs fetch origin --all
     git lfs push --all https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ```
-0. Delete the temporary folder by running the following commands.
+4. Delete the temporary folder by running the following commands.
 
     ```
     cd ..
