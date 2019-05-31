@@ -38,23 +38,23 @@ In this tutorial you learn how to:
 To create a pull request in Azure Repos:
 
 0. [Push](pushing.md) your local branch.
-0. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
+1. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
 
-  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
 
-  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push-files-tab.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push-files-tab.png)
  
-  You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
+   You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
 
-  ![Pull Requests](_img/pull-requests/pull-requests.png)
+   ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-  From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
+   From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
 
-  ![Pull Requests](_img/pull-requests/new-pull-request.png)
+   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
+2. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 
-  ![Adding detail to a pull request](_img/pull-request-detail.png)
+   ![Adding detail to a pull request](_img/pull-request-detail.png)
 
 ### Who reviews the pull request?
 

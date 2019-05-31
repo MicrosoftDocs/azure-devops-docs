@@ -36,13 +36,13 @@ Displays information about pending changes to files and folders in one or more w
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/collection</strong>: <em>TeamProjectCollectionUrl</em></p></td>
-	<td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: http://myserver:8080/tfs/DefaultCollection. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
+    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>
 <tr>
 	<td><p><strong>/format</strong></p></td>
-	<td><p>Specifies how much detail to display about each pending change:</p><ul><li><p><strong>Brief</strong> (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (<strong></strong>*) symbol), local path, and user (if using the <strong>/collection</strong> and <strong>/workspace</strong> options). Some of the data might be truncated.</p></li><li><p><strong>Detailed</strong>: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.</p></li></ul></td></tr>
+    <td><p>Specifies how much detail to display about each pending change:</p><ul><li><p><strong>Brief</strong> (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (<strong></strong><em>) symbol), local path, and user (if using the <strong>/collection</strong> and <strong>/workspace</strong> options). Some of the data might be truncated.</p></li><li><p><strong>Detailed</strong>: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.</p></li></ul></td></tr>
 <tr>
 	<td><p><em>itemspec</em></p></td>
 	<td><p>Specifies the items for which you want pending change data. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>. You can specify more than one <em>itemspec</em> argument.</p></td></tr>
@@ -57,7 +57,7 @@ Displays information about pending changes to files and folders in one or more w
 	<td><p>Specifies the shelveset that contains the changes you want to list.</p><p>This option cannot be combined with the <strong>/workspace</strong> option.</p></td></tr>
 <tr>
 	<td><p><strong>/user</strong></p></td>
-	<td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong>*) symbol includes data about changes from all users. The default is the current user.</p><table><thead>
+    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>

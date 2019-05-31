@@ -324,16 +324,16 @@ He verifies that the tests still pass:
 
 ![Unit Test Explorer with two passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
->**Tip:**  
->Every change you make while you are developing the code should be either a refactoring or an extension:  
-><ul><li>Refactoring means that you do not change the tests because you are not adding new functionality.</li>  
-><li>Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.</li></ul>
->
->If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.  
->
->Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.  
->
->Run the tests after every change.
+> **Tip:**  
+> Every change you make while you are developing the code should be either a refactoring or an extension:  
+> <ul><li>Refactoring means that you do not change the tests because you are not adding new functionality.</li>  
+> <li>Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.</li></ul>
+> 
+> If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.  
+> 
+> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.  
+> 
+> Run the tests after every change.
 
 ### ... and repeat
   

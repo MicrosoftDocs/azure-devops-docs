@@ -8,11 +8,13 @@ ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 04/17/2019
+ms.date: 05/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Pipeline runs
+
+![Pipeline overview](_img/run-overview.svg)
 
 When you run a pipeline, a lot of things happen under the covers.
 While you often won't need to know about them, once in a while it's useful to have the big picture.
@@ -34,10 +36,11 @@ Let's break down each action one by one.
 
 ## Process the pipeline
 
+![Expand YAML templates](_img/run-expansion.svg)
+
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
-2. Next, evaluate dependencies at the stage level to pick the first stage(s) to run.
-<!-- TODO: link to new content on stages once that's available. -->
+2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#multi-configuration) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
@@ -69,6 +72,8 @@ Conceptually, the Microsoft-hosted pool is one giant, global pool of machines.
 (In reality, it's a number of different physical pools split by geography and operating system type.)
 Based on the `vmImage` (in YAML) or pool name (in the classic editor) requested, an agent is selected.
 
+![Pool selection](_img/run-select-pool.svg)
+
 All agents in the Microsoft pool are fresh, new virtual machines which haven't run any pipelines before.
 When the job completes, the agent VM will be discarded.
 
@@ -99,6 +104,8 @@ Then it begins [running steps](#run-each-step).
 Steps are run sequentially, one after another.
 Before a step can start, all the previous steps must be finished (or skipped).
 
+![Run each task](_img/run-tasks.svg)
+
 Steps are implemented by [tasks](tasks.md).
 Tasks themselves are implemented as Node.js or PowerShell scripts.
 The task system routes inputs and outputs to the backing scripts.
@@ -127,6 +134,8 @@ Each step can report warnings, errors, and failures.
 Errors and warnings are reported to the pipeline summary page, marking the task as "succeeded with issues".
 Failures are also reported to the summary page, but they mark the task as "failed".
 A step is a failure if it either explicitly reports failure (using a `##vso` command) or ends the script with a non-zero exit code.
+
+![Logs and results flow from agent to service](_img/run-logging.svg)
 
 As steps run, the agent is constantly sending output lines to the service.
 That's why you can see a live feed of the console.

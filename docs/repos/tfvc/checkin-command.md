@@ -43,7 +43,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 <tr>
 <td><p><strong>/author</strong>:<i>author name</i></p></td>
 <td><p>Identifies the author of the pending changes so that one user can check in changes on behalf of another user.</p>
-<p>Requires the <strong>CheckinOther </strong>permission. See [Permissions and groups reference](../../organizations/security/permissions.md)</p></td>
+<p>Requires the <strong>CheckinOther </strong>permission. See <a href="../../organizations/security/permissions.md" data-raw-source="[Permissions and groups reference](../../organizations/security/permissions.md)">Permissions and groups reference</a></p></td>
 </tr>
 <tr>
 <td><p><strong>/bypass</strong></p></td>
@@ -51,7 +51,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 </tr>
 <tr>
 <td><p><strong>/collection</strong>:<i>TeamProjectCollectionUrl</i></p></td>
-<td><p>If you use the <strong>shelveset</strong> option, the <strong>/collection</strong> option specifies the URL of the project collection that contains the shelveset. For example: http://myserver:8080/tfs/DefaultCollection.</p>
+<td><p>If you use the <strong>shelveset</strong> option, the <strong>/collection</strong> option specifies the URL of the project collection that contains the shelveset. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p>
 <p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 <td><p>Associates a comment with the changeset using one of the following arguments:</p>
 <ul>
 <li><p><i>Comment</i>: A user-provided comment about the check-in.</p></li>
-<li><p><i>@comment file</i>: The path to a file on disk that contains the comment for the check-in.</p></li>
+<li><p><i><xref href="comment" data-throw-if-not-resolved="False" data-raw-source="@comment"></xref> file</i>: The path to a file on disk that contains the comment for the check-in.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
-<td><p>Specifies the scope of the items to check in from the user's workspace. You can specify more than one <em>Itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
+<td><p>Specifies the scope of the items to check in from the user&#39;s workspace. You can specify more than one <em>Itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/login</strong>:<i>username</i>,[<i>password</i>]</p></td>

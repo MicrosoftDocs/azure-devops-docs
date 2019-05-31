@@ -37,7 +37,7 @@ With a *provisioned wiki*, you add and edit pages directly within the **Wiki**. 
 
 With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**.
 
-The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the* publish as code wiki* pages.
+The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |    Provisioned wiki    | Publish code as wiki |
