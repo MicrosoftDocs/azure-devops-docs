@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
+ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,6 +25,7 @@ quality of your product.
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="installext"></a>
+
 ## Install the extension
 
 1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
@@ -78,7 +79,7 @@ update it automatically.
    **[Connected mode](connected-mode-exploratory-testing.md)**  
    Available to all users of Azure DevOps and TFS 2015 or later:
 
-   - Users with **Basic** access: Full capture and create capabilities
+   - Users with **Basic** access or higher: Full capture and create capabilities
      to submit bugs, tasks, and test cases. Includes collaboration
      capabilities such as end-to-end traceability, rich insights
      across completed exploratory sessions, simplified tracking

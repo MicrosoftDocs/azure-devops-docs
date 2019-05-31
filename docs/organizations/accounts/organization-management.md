@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 05/29/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -65,14 +65,6 @@ To share work with others,
 That way, you control each user's access.
 Or [add users to your project](add-team-members.md),
 and let Azure DevOps assign the next available access to them.
-
-## Try extensions for free
-
-Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/).
-For example, organization owners can
-try the Test Manager extension for Azure Test Plans free for 90 days.
-During the trial, all users with Basic access can
-[try Test Manager for free](../billing/try-additional-features-vs.md).
 
 ## Set up billing
 

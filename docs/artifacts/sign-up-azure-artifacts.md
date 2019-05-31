@@ -41,9 +41,9 @@ See and manage what your overall storage use is for Azure Artifacts.
  
 3. Select **Billing**. 
  
-  ![Select Billing from Organization settings](../organizations/billing/_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing from Organization settings](../organizations/billing/_img/_shared/select-billing-organization-settings.png)
  
-4.  Find Artifacts and review your current usage.
+4. Find Artifacts and review your current usage.
 
    ![View storage for Azure Artifacts](_shared/_img/azure-artifacts-view-storage-used.png)
 

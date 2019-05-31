@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -221,7 +221,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
-- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Microsoft Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).

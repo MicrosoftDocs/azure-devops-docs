@@ -35,7 +35,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Artifacts & Package Management</h3>
+                        <h3>Azure Artifacts &amp; Package Management</h3>
                         <p>
                             <a href="/azure/devops/artifacts/overview">What is Azure Artifacts?</a>
                         </p>
@@ -102,7 +102,7 @@ featureFlags:
                             <a href="/azure/devops/pipelines/artifacts/npm">Publish npm packages</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/artifacts/npm/npmrc">Set up your client's npmrc</a>
+                            <a href="/azure/devops/artifacts/npm/npmrc">Set up your client&#39;s npmrc</a>
                         </p>
                         <p>
                             <a href="/azure/devops/artifacts/npm/upstream-sources">Use packages from npmjs.com</a>
