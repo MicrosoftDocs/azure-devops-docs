@@ -57,7 +57,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic+Test Plans** access level or equivalent.  
+* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.  
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic+Test Plans** access level or equivalent.   
+* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.   
 
 ::: moniker-end 
 

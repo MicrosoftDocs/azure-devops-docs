@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 05/31/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -93,11 +93,11 @@ The only exclusion is for extensions offered by partners in the Visual Studio Ma
 
 ## How charges are processed
 
-### Q: How are user charges (Azure DevOps User/Basic, Test Manager, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+### Q: How are user charges (Azure DevOps User/Basic, Basic + Test Plans, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
-A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
+A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Basic + Test Plans users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
 
-When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Test Manager user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
+When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Basic + Test Plans user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
 
 ### Q: How do reductions or cancellations work?
 
@@ -186,11 +186,11 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 
 ## Buy Azure DevOps now
 
-* [Azure DevOps Users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-* [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
-* [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
-* [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-* [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+* [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
+* [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
+* [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
+* [Azure Test Plans](buy-basic-plus-test-plans.md) (formerly Test Manager)
+* [Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
 
 ## Related articles
 

@@ -96,6 +96,7 @@ Individual contributors can set their user preferences, enable features that are
 
 
 <a id="team" />
+
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
