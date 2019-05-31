@@ -1492,3 +1492,7 @@ Syntax highlighting is available for the pipeline schema via a VS Code
 extension. You can [download VS Code](https://code.visualstudio.com),
 [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and
 [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
+<!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
+     look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
+     in the first few screenfuls. -->
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
