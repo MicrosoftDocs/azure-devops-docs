@@ -6,10 +6,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.reviewer: dastahel
-ms.custom: seodec18
+ms.author: dastahel
+author: davidstaheli
 ms.date: 02/14/2019
 monikerRange: '>= tfs-2017'
 ---

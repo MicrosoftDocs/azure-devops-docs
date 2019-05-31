@@ -86,8 +86,8 @@ Azure Pipelines runs the following steps as part of every deployment:
 
 ::: moniker range="< azure-devops-2019"
 
-Release pipelines and build pipelines have separate designer interfaces
-(separate UIs). The main differences in the pipelines are the support in release
+Release pipelines and build pipelines have separate UIs.
+The main differences in the pipelines are the support in release
 pipelines for different types of triggers, and the support for approvals and gates.
 
 ::: moniker-end

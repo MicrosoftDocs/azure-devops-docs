@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -237,7 +237,7 @@ stages:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and [variables](#variables).
+Learn more about [stages](process/stages.md), [conditions](process/conditions.md?tabs=yaml), and [variables](#variables).
 <!-- TODO: link to info about stage dependencies -->
 ::: moniker-end
 
