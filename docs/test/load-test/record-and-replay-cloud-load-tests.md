@@ -132,12 +132,12 @@ web portal using an HTTP Archive (**.har**) file.
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
    ![Selecting a HTTP archive test](_img/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
 
-1. In the **Import HTTP Archive file** dialog, select the **.har**
+3. In the **Import HTTP Archive file** dialog, select the **.har**
    file that you recorded in the earlier steps and choose **OK**.
 
    ![Selecting the HTTP archive file](_img/record-and-replay-cloud-load-tests/06-select-har-file.png)
@@ -163,21 +163,21 @@ web portal using an HTTP Archive (**.har**) file.
    identified and extracted from a request and correlated
    in any subsequent requests that use them.
 
-1. Open the **Settings** page to view and change any 
+4. Open the **Settings** page to view and change any 
    load test settings.
 
    ![Editing the test settings](_img/record-and-replay-cloud-load-tests/07c-har-import.png)
 
-1. Enter a name for your load test, then choose **Save**.
+5. Enter a name for your load test, then choose **Save**.
 
    ![Saving the test settings](_img/record-and-replay-cloud-load-tests/07f-har-save-test.png)
 
-1. Choose the **Run test** link to execute your load test.
+6. Choose the **Run test** link to execute your load test.
    A progress bar shows the current status of the test run. 
 
    ![Running the test](_img/record-and-replay-cloud-load-tests/07d-har-import.png)
 
-1. As the load test runs, you see a rich set of metrics
+7. As the load test runs, you see a rich set of metrics
    that indicate how your app is performing under load.
    When the test is complete, you can explore the results.
 
