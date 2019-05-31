@@ -501,7 +501,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 # [YAML](#tab/yaml)
 
 Build completion triggers are not yet supported in YAML syntax.
-After you create your YAML build pipeline, you can use the designer to specify a build completion trigger.
+After you create your YAML build pipeline, you can use the classic editor to specify a build completion trigger.
 
 # [Classic](#tab/classic)
 

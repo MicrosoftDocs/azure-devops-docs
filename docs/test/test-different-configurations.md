@@ -60,23 +60,23 @@ multiple variable values to create a configuration.
 
    ![Adding a new configuration variable](_img/testing-configurations/testing-configurations-01.png)
  
-1. Type a name for the variable, such as **Browser**, and type a value.
+2. Type a name for the variable, such as **Browser**, and type a value.
    Add as many values as you wish to the configuration variable, and then save it.
  
    ![Setting the values for a new configuration variable](_img/testing-configurations/testing-configurations-01b.png)
 
-1. Repeat the steps to create any other configuration variables
+3. Repeat the steps to create any other configuration variables
    you need. For example, create a configuration variable named **Operating system**
    with the names of each operating system on which you want to test.
 
    ![Setting the values for an Operating Systems configuration variable](_img/testing-configurations/testing-configurations-01c.png)
 
-1. Choose the ![new](_img/plus-and-arrow-icon.png) icon and select 
+4. Choose the ![new](_img/plus-and-arrow-icon.png) icon and select 
    **New test configuration**. 
 
    ![Adding a new test configuration](_img/testing-configurations/testing-configurations-01a.png)
 
-1. Type a name for the test configuration and add the configuration 
+5. Type a name for the test configuration and add the configuration 
    variables you created. Choose a value for each variable for this configuration.  
 
    ![Adding variables to the new test configuration](_img/testing-configurations/testing-configurations-02.png)
@@ -84,7 +84,7 @@ multiple variable values to create a configuration.
    Ensure **Assign to new test plans** is checked to make this the default 
    configuration for all the new test plans you create.
  
-1. Save your new test configuration. 
+6. Save your new test configuration. 
 
 <a name="assign-configs"></a>
 ## Assign configurations to test plans and suites

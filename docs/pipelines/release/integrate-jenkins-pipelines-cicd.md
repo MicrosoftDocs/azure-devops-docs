@@ -127,7 +127,7 @@ YAML builds aren't yet available on TFS.
 
 1. Save the pipeline.
 
-For an example of using the designer, see [Deploy an Azure Web App](../targets/webapp.md?tabs=designer).
+For an example of using the classic editor, see [Deploy an Azure Web App](../targets/webapp.md?tabs=classic).
 
 ---
 

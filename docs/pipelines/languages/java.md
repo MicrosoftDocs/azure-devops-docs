@@ -9,8 +9,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 5/6/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,11 +25,11 @@ monikerRange: '>= tfs-2017'
 
 This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
 
-## Get started
-
-Follow these instructions to set up a pipeline for a sample .NET Core app.
+## Create your first pipeline
 
 ::: moniker range="azure-devops"
+
+> Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
 1. The code in the following repository is a simple Java app. To get started, fork this repo to your GitHub account.
 
