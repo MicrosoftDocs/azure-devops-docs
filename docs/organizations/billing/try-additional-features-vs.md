@@ -2,7 +2,7 @@
 title: Start free trials for paid features and extensions
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers
+description: Get free trials for Azure Test Plans (formerly Microsoft Test Manager), Azure Artifacts, and for Azure DevOps extensions offered by other publishers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410

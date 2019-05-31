@@ -312,7 +312,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for Azure DevOps. 
+**A:** Yes, if you have Azure Test Plans for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.

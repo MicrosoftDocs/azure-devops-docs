@@ -7,7 +7,7 @@ ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 04/04/2018
+ms.date: 05/29/2019
 monikerRange: '>= tfs-2017'
 ms.topic: conceptual
 ---
@@ -74,7 +74,7 @@ and want to reinstall the extension.
 *	You just need the extension for 
 [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions) 
 who have access for that extension included with their subscriptions. 
-These subscribers get specific extensions, like Test Manager, 
+These subscribers get specific extensions  
 included with their subscriptions as benefits. They can use 
 these extensions after they're installed without paid access 
 and assignment. You only have to buy and assign extensions 
@@ -89,8 +89,7 @@ A:	This might happen for several reasons.
 [project collection administrator or organization owner permissions](#find-owner).
 
 *	Your users don't have the correct access levels. 
-Most extensions require that users have Basic access, not Stakeholder.
-For example, the Test Manager extension for Azure Test Plans requires at least Basic access.
+Most extensions require that users have Basic access, not Stakeholder, or Basic + Test Plans.
 
 *	You assigned all the paid extensions that you bought.
 

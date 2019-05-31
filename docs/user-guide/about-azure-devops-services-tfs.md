@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 04/22/2019 
+ms.date: 06/02/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
@@ -141,7 +141,7 @@ In both Azure DevOps Services and Azure DevOps Server, you manage access to feat
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
 
-To give Basic access to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
+To give Basic access or higher to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to give access to groups of users, access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.

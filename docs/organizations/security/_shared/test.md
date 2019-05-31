@@ -41,7 +41,7 @@
 </tr>
 
 <tr>
-<td align="left">Test Manager (purchased separately)
+<td align="left">Azure Test Plans (formerly Microsoft Test Manager, purchased separately)
 </td>
 <td>  </td>
 <td>  </td>
