@@ -26,7 +26,7 @@ NuGet 3 and later supports the Credential Provider, which automatically acquires
 
 1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
 
-1. Select **Connect to feed**:
+2. Select **Connect to feed**:
 
    ::: moniker range=">= azure-devops-2019"
     
@@ -42,7 +42,7 @@ NuGet 3 and later supports the Credential Provider, which automatically acquires
 
    ::: moniker-end
 
-1. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
+3. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -67,7 +67,7 @@ To use a 2.x client, first get the v3 feed URL:
 
 1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
 
-1. Select **Connect to feed**:
+2. Select **Connect to feed**:
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -83,7 +83,7 @@ To use a 2.x client, first get the v3 feed URL:
 
    ::: moniker-end
    
-1. Copy the NuGet package source URL:
+3. Copy the NuGet package source URL:
 
    ::: moniker range=">= azure-devops-2019"
 

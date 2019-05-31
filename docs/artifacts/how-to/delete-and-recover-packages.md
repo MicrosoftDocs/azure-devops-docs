@@ -22,8 +22,7 @@ Azure Artifacts keeps all of your artifacts safe for as long as you need them, w
 
 ## Delete packages from Azure Artifacts feeds
 
-# [Maven](#tab/maven)
-
+#### [Maven](#tab/maven/)
 You must be an **owner** to delete an artifact.
 
 Choose the artifact from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
@@ -32,8 +31,7 @@ Choose the artifact from the **Packages** page in the **Build and Release** page
 
 Deleting packages respects [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-# [npm](#tab/npm)
-
+#### [npm](#tab/npm/)
 There are two options available to remove a version of an npm package from a feed.
 
 1. **Deprecate:** deprecating a version of a package adds a deprecation message that most npm clients, and Azure DevOps Services, will show whenever the package is viewed or installed. 
@@ -81,8 +79,7 @@ At this time, it's not possible to use `npm unpublish <package>` to unpublish al
 
 See the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) CLI docs for more info.
 
-# [NuGet](#tab/nuget)
-
+#### [NuGet](#tab/nuget/)
 There are two options available to remove a version of a NuGet package from a feed.
 
 1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
@@ -150,24 +147,21 @@ nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 
 Currently, NuGet.exe can only **unlist** packages; Azure DevOps Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
 
-# [Python](#tab/python)
-
+#### [Python](#tab/python/)
 You must be an **owner** to delete a Python package.
 
 Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
 
 ![Unlist or delete Universal package](../_img/delete/delete-python-package.png)
 
-# [Universal](#tab/universal)
-
+#### [Universal](#tab/universal/)
 You must be an **owner** to delete a Universal Package.
 
 Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
 
 ![Unlist or delete Universal package](../_img/delete/delete-universal-package.png)
 
----
-
+* * *
 ## Automatically delete old package versions with retention policies
 
 Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space.
@@ -222,8 +216,8 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 
 2. Select "Recycle Bin".
 
- > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
- 
+   > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
+
 3. Click on a package to get more details such as *Version*, *Deleted date/time*, and *Scheduled permanent deletion*.
 
 4. Select a version to *Restore to feed*.
