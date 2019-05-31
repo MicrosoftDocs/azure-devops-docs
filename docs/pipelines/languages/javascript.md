@@ -30,7 +30,13 @@ This guidance explains how to automatically build and test JavaScript and Node.j
 
 ::: moniker-end
 
-## Get started
+## Create your first pipeline
+
+::: moniker range="azure-devops"
+
+> Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
+
+::: moniker-end
 
 Follow these instructions to set up a pipeline for a sample Node app.
 

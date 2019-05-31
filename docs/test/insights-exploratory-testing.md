@@ -32,7 +32,7 @@ at team or individual level, and for a specific period.
 
      ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
-1. Explore the **Recent exploratory sessions** page. It contains three main sections:
+2. Explore the **Recent exploratory sessions** page. It contains three main sections:
 
    **Summary view** - shows a graphical breakdown of the work items explored, work items 
    created, session owners, and the total time for these sessions.

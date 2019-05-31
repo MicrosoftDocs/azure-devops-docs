@@ -53,12 +53,12 @@ We recommend this simple approach if:
 
 1. After the new service connection is created:
 
-   * If you're using the designer, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+   * If you're using the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you're using YAML, copy the connection name into your code as the `azureSubscription` value.
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource.
 
-   * If you're using the designer, select data you need. For example, the App service name.
+   * If you're using the classic editor, select data you need. For example, the App service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).

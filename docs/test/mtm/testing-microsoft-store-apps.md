@@ -48,17 +48,17 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
    [Create some test cases](plan-manual-tests-with-microsoft-test-manager.md) if you haven't already done so.  
   
-1. On the **Run Tests** page, choose the **Modify** link next to **Perform tests using:** to specify the remote Windows device.  
+2. On the **Run Tests** page, choose the **Modify** link next to **Perform tests using:** to specify the remote Windows device.  
   
    ![Select where to run your manual test](_img/testing-windows-store-apps/mtr_win8_whererun.png)  
   
-1. Choose the **Remote device** option and enter the name of the device that you want to test.  
+3. Choose the **Remote device** option and enter the name of the device that you want to test.  
   
    ![Select where to run test](_img/testing-windows-store-apps/mtr_win8_whererun2.png)  
   
-   By default, port 6905 is used by Microsoft Test Manager to communicate with remote devices. If you want to use a different port, enter the remote device as *deviceName***:***port*. For example, `mySlateDevice1:8001`.  You must also change the port on the remote device by opening the service configuration file mttaservice.exe.config in the Visual Studio installation folder.  
+   By default, port 6905 is used by Microsoft Test Manager to communicate with remote devices. If you want to use a different port, enter the remote device as <em>deviceName</em>**:**<em>port</em>. For example, `mySlateDevice1:8001`.  You must also change the port on the remote device by opening the service configuration file mttaservice.exe.config in the Visual Studio installation folder.  
   
-1. Choose the **Test** link to verify that Microsoft Test Manager can communicate with the remote device.  
+4. Choose the **Test** link to verify that Microsoft Test Manager can communicate with the remote device.  
   
 ### Install your Microsoft Store app  
   

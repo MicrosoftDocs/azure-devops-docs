@@ -68,10 +68,10 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 
 1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 
-1. If you don't know the identifier of the work item for the test case,
+2. If you don't know the identifier of the work item for the test case,
    locate the test case in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
-1. When you know the identifier of the work item for the test case:
+3. When you know the identifier of the work item for the test case:
 
    **If you are using Visual Studio 2017 or later**, follow these steps to associate your tests.
 

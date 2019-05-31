@@ -107,7 +107,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 1. Navigate to **Pipelines | Builds**. From the **New** drop-down menu, select **New build pipeline** to create a new one.
 
-1. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the visual designer**.
+1. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
 
 1. The first thing you’ll need to do is to configure the source repository. This build will use the **master** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
 
