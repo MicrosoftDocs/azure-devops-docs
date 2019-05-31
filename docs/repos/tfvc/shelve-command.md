@@ -33,15 +33,15 @@ If you want to use the **shelve** command to delete a shelveset, you must be a s
 
 ## Parameters
 
-| **Argument** | **Description** |
-|---|---|
-| *commentfile* | Specifies a file system path of a file from which comments for the shelveset should be read. |
-| *comment* | Specifies the comment for the shelveset. |
-| *itemspec* | Identifies the files or folders to shelve. By default, all pending changes in the current workspace are shelved if this parameter is not specified. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](https://msdn.microsoft.com/library/4y2ash30). |
-| *shelvesetname* | Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname *and *owner *but only if **/replace** is also specified.<br /><br />You must provide a value for this parameter. |
-| *owner* | Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified. |
-| *username* | Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*. |
-| *TeamProjectCollectionUrl* | The URL of the project collection that contains the files or folders that you want to shelve (for example, http://myserver:8080/tfs/DefaultCollection/). |
+|        **Argument**        |                                                                                                                                                             **Description**                                                                                                                                                             |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       *commentfile*        |                                                                                                                      Specifies a file system path of a file from which comments for the shelveset should be read.                                                                                                                       |
+|         *comment*          |                                                                                                                                                Specifies the comment for the shelveset.                                                                                                                                                 |
+|         *itemspec*         | Identifies the files or folders to shelve. By default, all pending changes in the current workspace are shelved if this parameter is not specified. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](https://msdn.microsoft.com/library/4y2ash30). |
+|      *shelvesetname*       |                               Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname \*and \*owner \*but only if \*\*/replace*\* is also specified.<br /><br />You must provide a value for this parameter.                                |
+|          *owner*           |                                                                                  Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified.                                                                                   |
+|         *username*         |                                                                                                        Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                        |
+| *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, <http://myserver:8080/tfs/DefaultCollection/>).                                                                                        |
 
 | **Option** | **Description** |
 |---|---|

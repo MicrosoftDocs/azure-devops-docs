@@ -6,13 +6,13 @@ ms.topic: include
 
 0. Before you start, if you haven't already:
 
- * [Sign up and create your project](../../../organizations/accounts/create-organization.md).
- * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
+   * [Sign up and create your project](../../../organizations/accounts/create-organization.md).
+   * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
-0. Go to your project's page 
-(```http://dev.azure.com/{yourorganization}/{yourteamproject}```)
-and then open Visual Studio to connect to your project.
+1. Go to your project's page 
+   (```http://dev.azure.com/{yourorganization}/{yourteamproject}```)
+   and then open Visual Studio to connect to your project.
 
 	![On your project overview page, click Open in Visual Studio](../../../_shared/_img/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Azure DevOps Services from Visual Studio. 
+2. Sign in to Azure DevOps Services from Visual Studio. 
