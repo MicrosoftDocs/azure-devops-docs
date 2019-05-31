@@ -7,9 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: shasb
 ms.author: shasb
-author: shashankbarsin
-ms.date: 04/17/2019
-monikerRange: 'azure-devops'
+ms.date: 02/12/2019
+monikerRange: '>= tfs-2018'
 ---
 
 # Docker task

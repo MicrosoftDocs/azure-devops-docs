@@ -215,6 +215,6 @@ jobs:
 
 # [Classic](#tab/classic)
 
-Container jobs are not yet supported in the designer.
+Container jobs are not yet supported in the classic editor.
 
 ---
