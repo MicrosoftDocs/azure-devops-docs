@@ -157,7 +157,11 @@ The syntax for a deployment job is:
         - script: echo Hi!
 ```
 
-Although you can add steps for deployment steps in a regular job, we recommend that you instead use a deployment job since there are several benefits in doing so. For example, you can track the history of deployments to a specific environment when you use deployment jobs. To learn more, see [Deployment jobs](deployment-jobs.md).
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+Although you can add steps for deployment tasks in a `job`, we recommend that you instead use a [deployment job](deployment-jobs.md). A deployment job has a few benefits. For example, you can deploy to an environment, which includes benefits such as being able to see the history of what you've deployed.
 
 ::: moniker-end
 

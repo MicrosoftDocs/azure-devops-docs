@@ -8,7 +8,6 @@ ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.custom: seodec18
 ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---

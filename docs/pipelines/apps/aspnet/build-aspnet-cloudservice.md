@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 01/02/2017
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2015'
 ---
 
 # Build your Azure Cloud Service
