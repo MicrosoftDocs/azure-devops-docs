@@ -167,7 +167,7 @@ Parameters:
   
 - `/overridefield:"field name"="new value"`: Change the value of a field in each cloned work item. You can use multiple occurrences of this parameter to change as many fields as you want.  
   
- Examples:  
+  Examples:  
   
 ```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
