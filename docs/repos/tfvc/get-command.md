@@ -38,7 +38,7 @@ Gets (downloads) either the latest version or a specified version of one or more
 <tbody>
 <tr>
 <td><p><strong>/all</strong></p></td>
-<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it's unlikely you will have to use this option.</p>
+<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it&#39;s unlikely you will have to use this option.</p>
 <p>You can use this option to restore an item that you have accidentally deleted from a server workspace.</p>
 <p>Your Team Foundation Server maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you are getting, then it does not retrieve the item. This option gets the items regardless of the data contained in this internal record.</p></td>
 </tr>
@@ -78,11 +78,11 @@ Gets (downloads) either the latest version or a specified version of one or more
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="http://go.microsoft.com/fwlink/?LinkId=253390">phkelley's blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="http://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>
-<td><p>Specifies the maximum version, or the minimum and the maximum versions, to display in the history data. The default is `/version:T` (the latest version).</p>
+<td><p>Specifies the maximum version, or the minimum and the maximum versions, to display in the history data. The default is <code>/version:T</code> (the latest version).</p>
 <p>For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
 </tr>
 </tbody>

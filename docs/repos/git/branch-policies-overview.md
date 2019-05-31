@@ -36,8 +36,8 @@ Developers pushing changes directly to the protected branches will have their pu
 Keep your branch strategy simple by building your strategy from these three concepts:
 
 0. Use feature branches for all new features and bug fixes.
-0. Merge feature branches into the master branch using pull requests. 
-0. Keep a high quality, up-to-date master branch.  
+1. Merge feature branches into the master branch using pull requests. 
+2. Keep a high quality, up-to-date master branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 

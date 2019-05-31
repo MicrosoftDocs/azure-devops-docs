@@ -268,12 +268,12 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
 ## Work from the command prompt
 
--    [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)  Apply or remove a label.
+- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)  Apply or remove a label.
 
-    >**Tip:**  
-    >When you use this command to apply a label, you can specify a scope other than the project.
+  >**Tip:**  
+  >When you use this command to apply a label, you can specify a scope other than the project.
 
--    [Labels Command](labels-command.md)  List labels.
+- [Labels Command](labels-command.md)  List labels.
 
 ## See Also
 

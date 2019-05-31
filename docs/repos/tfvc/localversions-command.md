@@ -61,7 +61,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains one or more items for which you want to display the version (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains one or more items for which you want to display the version (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 </tbody>
 </table>
