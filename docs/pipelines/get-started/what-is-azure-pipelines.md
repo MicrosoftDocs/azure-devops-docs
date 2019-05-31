@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: jillfra
 ms.manager: elbatk
-ms.date: 07/06/2018
+ms.date: 05/31/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,7 +27,7 @@ You can use many languages with Azure Pipelines, such as Python, Java, PHP, Ruby
 
 ### Version control systems
 
-Before you use continuous integration and continuous delivery practices for your applications, you must have your source code in a version control system. Azure Pipelines integrates with GitHub, GitHub Enterprise, Azure Repos, Bitbucket Cloud, and Subversion.
+Before you use continuous integration and continuous delivery practices for your applications, you must have your source code in a version control system. Azure Pipelines integrates with GitHub, GitHub Enterprise, Azure Repos Git & TFVC, Bitbucket Cloud, and Subversion.
 
 ### Application types
 
