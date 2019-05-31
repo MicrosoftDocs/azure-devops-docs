@@ -33,12 +33,12 @@ You can run a load test on your web app or site directly using Azure DevOps.
 
 1. Sign into Azure DevOps.
 
-1. Go to [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
+2. Go to [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
    from the **+ New** menu.
 
    ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
 
-1. Type a name for the load test, then enter the URL you want to test
+3. Type a name for the load test, then enter the URL you want to test
    in the center column and in the details pane on the right. For a simple
    load test, leave the **HTTP method** set to **GET**.
 
@@ -50,19 +50,19 @@ You can run a load test on your web app or site directly using Azure DevOps.
    accesses each of these URLs multiple times using the parameters you 
    specify, and records the results.
 
-1. Open the **Settings** page. Here you can change the parameters of
+4. Open the **Settings** page. Here you can change the parameters of
    the test such as the duration, load pattern, number of users, and
    more. To run the test near to your users, select a **Load location**.
    Then choose **Save**. 
 
    ![Specify settings, then save the test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-settings-tab.png)
  
-1. When you have set up all the URLs and parameters for your test, start it by
+5. When you have set up all the URLs and parameters for your test, start it by
    choosing **Run test**.
 
    ![Start the test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-start-test.png)
 
-1. As the test runs, you see live information about the progress
+6. As the test runs, you see live information about the progress
    of the test. You can stop the test by using the **Abort** link on the
    toolbar.
 

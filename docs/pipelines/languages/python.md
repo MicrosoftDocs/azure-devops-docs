@@ -5,10 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.manager: alewis
+ms.manager: jillfra
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.custom: seodec18
 ms.date: 04/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -17,7 +16,10 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts. For a detailed walkthrough for web apps, see [Quickstart - Build and deploy Python web apps](python-webapp.md)
+This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts.
+
+>![Tip]
+> Are you new to pipelines or looking for an end-to-end walkthrough? If so, see [Deploy a Python web app using CI/CD to Azure App Service on Linux](python-webapp.md).
 
 ## Build environment
 

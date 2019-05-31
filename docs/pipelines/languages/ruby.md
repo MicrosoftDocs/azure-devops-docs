@@ -5,8 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
-ms.manager: alewis
+ms.manager: jillfra
 ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 08/31/2018

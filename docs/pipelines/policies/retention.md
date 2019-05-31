@@ -2,13 +2,12 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
-ms.custom: seodec18
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---

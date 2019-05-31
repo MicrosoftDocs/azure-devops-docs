@@ -7,9 +7,9 @@ description: Learn about building your code or deploying your software using age
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 05/28/2019
+ms.author: sdanie
+author: steved0x
+ms.date: 5/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
