@@ -1495,4 +1495,4 @@ extension. You can [download VS Code](https://code.visualstudio.com),
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
      in the first few screenfuls. -->
-The extension includes a [JSON schema for azure pipeline definitions](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation. 
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
