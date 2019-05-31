@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
+ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -122,7 +122,7 @@ parameter combinations. To speed things up, create an action
 recording when you run the test with the first set of parameter 
 values, and then play it back for the other sets.
 
-1. Use Microsoft Test Manager to [run the test](run-manual-tests.md).
+1. Use Azure Test Plans to [run the test](run-manual-tests.md).
 
 1. Select **Create action recording** before you choose **Start**.
 

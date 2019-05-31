@@ -22,6 +22,7 @@ For more information about manual testing, see [Planned manual testing](overview
 and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
 <a name="testplans"></a>
+
 ## What are test plans, test suites, and test cases?
 
 [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of 
@@ -72,6 +73,7 @@ where changes to these new test cases do not affect those referenced in test pla
 See [Default manual testing permissions and access](manual-test-permissions.md).
 
 <a name="testplan"></a>
+
 ## Create a test plan
 
 1. If you want to use Azure DevOps, and haven't done so already, 

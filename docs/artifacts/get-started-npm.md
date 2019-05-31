@@ -126,7 +126,7 @@ We recommend that you use two .npmrc files:
 
      ::: moniker-end
 
-  1. Copy the "registry" text:
+  2. Copy the "registry" text:
 
      ::: moniker range=">= azure-devops-2019"
 
@@ -141,7 +141,7 @@ We recommend that you use two .npmrc files:
 
      ::: moniker-end
 
-  1. From your **Packages** page, select **Connect to feed**.
+  3. From your **Packages** page, select **Connect to feed**.
 
      ![Connect to feed button on the upper right of the page](_shared/_img/connect-to-feed.png)
 
@@ -196,11 +196,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
+2. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
 
-1. Select **Empty job** at the top of the form.
+3. Select **Empty job** at the top of the form.
 
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
+4. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -215,11 +215,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Select **Package** or search for **npm** on the search bar, select **npm**, and select **Add**:
+5. Select **Package** or search for **npm** on the search bar, select **npm**, and select **Add**:
 
    ![Package tab](_shared/_img/build-definition/build-definition-npm-task.png)
 
-1. Select the **npm install** task under **Agent job 1**:
+6. Select the **npm install** task under **Agent job 1**:
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -234,11 +234,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Browse to and select your folder under **Working folder with package.json**:
+7. Browse to and select your folder under **Working folder with package.json**:
 
    ![Working folder](_shared/_img/build-definition/build-definition-working-folder.png)
 
-1. Expand **Custom registries and authentication**. Here you have a few options: 
+8. Expand **Custom registries and authentication**. Here you have a few options: 
 
    * **Registries in my .npmrc**
 
@@ -272,11 +272,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
+2. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
 
-1. Select **Empty process** at the top of the form.
+3. Select **Empty process** at the top of the form.
 
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
+4. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -291,11 +291,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Select **Package** or search for **npm** in the search bar, select **npm Authenticate**, and select **Add**:
+5. Select **Package** or search for **npm** in the search bar, select **npm Authenticate**, and select **Add**:
 
    ![Package tab](_shared/_img/build-definition/build-definition-npm-auth-task.png)
 
-1. Select the **npm Authenticate** task under **Agent job 1**:
+6. Select the **npm Authenticate** task under **Agent job 1**:
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -310,13 +310,13 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Browse to and select your file under **.npmrc file to authenticate**:
+7. Browse to and select your file under **.npmrc file to authenticate**:
 
    ![Selecting the .npmrc file](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
    > You can choose credentials to authenticate to outside your current organization or collection by setting up [service connections](../pipelines/library/service-endpoints.md#sep-npm).
 
-1. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
+8. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
 
 ## Use packages from npmjs.com
 

@@ -11,7 +11,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/15/2019
+ms.date: 06/02/2019
 ---
 
 # Change access levels
@@ -33,7 +33,7 @@ For a simplified overview of the permissions that are assigned to the most commo
 > [!NOTE]  
 > Even if you set a user or group's access level, you must [add them to a project](add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal.
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features - Basic + Test Plans, Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
 
 <a id="manage-access" >  </a>
 
@@ -49,7 +49,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ::: moniker range="<= azure-devops-2019"
 
-## Open Access levels
+## Open access levels
 
 You manage access levels for the collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, add them specifically to a non-default access level.
 ::: moniker-end
