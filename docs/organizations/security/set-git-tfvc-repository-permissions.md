@@ -34,9 +34,7 @@ To contribute to the source code, you must be granted **Basic** access level or 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
-To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access  have no access to source code. To learn more, see [About access levels](access-levels.md).
-
+To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
 
 For a description of each security group and permission level, see [Permissions and group reference](permissions.md).  

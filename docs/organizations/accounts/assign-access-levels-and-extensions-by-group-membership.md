@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 06/02/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions to users
@@ -57,7 +57,7 @@ A notification is displayed that shows the status and outcome of the rule. If th
 
 As users sign in to your organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps notifies all **Project Collection Administrators** via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following steps:
 
-1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or basic access levels.
+1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or access levels.
 2. To see how many of each resource are missing, choose **Fix assignment errors**.
 3. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
 

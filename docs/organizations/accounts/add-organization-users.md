@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/28/2019
+ms.date: 05/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,8 @@ The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. Additional features, such as [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), can be assigned to users by access level, Basic + Test Plans.
+
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
