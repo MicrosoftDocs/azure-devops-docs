@@ -145,6 +145,26 @@ az artifacts universal download --organization https://fabrikam.visualstudio.com
 
 ---
 
+### Filtered Universal Package downloads
+
+For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files. The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+
+The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
+
+# [New URLs](#tab/azuredevops)
+
+```azurecli
+az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+```
+
+#  [Legacy URLs](#tab/vsts)
+
+```azurecli
+az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+```
+
+---
+
 ## Next steps
 
 In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in a build, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md).
