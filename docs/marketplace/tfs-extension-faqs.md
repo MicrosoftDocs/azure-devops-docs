@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: b30a4604-d34d-43d4-9de9-02f1fea108ea
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 03/24/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 05/29/2019
 monikerRange: '>= tfs-2013 < azure-devops'
 ---
 
@@ -56,8 +56,7 @@ A: You can just choose **Install** when:
 *	You want to install a free or preview extension. 
 *	You paid for access, uninstalled the extension, and want to reinstall the extension. 
 *	You just need the extension for [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions) 
-who have access for that extension included with their subscriptions. These subscribers get specific extensions, like Test Manager, 
-included with their subscriptions as benefits. They can use these extensions after they're installed without paid access and assignment. You only have to buy and assign extensions for users who need access.
+who have access for that extension included with their subscriptions. These subscribers get specific extensions included with their subscriptions as benefits. They can use these extensions after they're installed without paid access and assignment. You only have to buy and assign extensions for users who need access.
 
 <a name="no-install"></a>
 
@@ -80,12 +79,12 @@ A:	You must be a member of your project collection.
 Follow these steps to check your identity that you use 
 to sign in to the Visual Studio Marketplace. 
 
-0. On your TFS web portal home page (```https://{server}:8080/tfs/```), 
+1. On your TFS web portal home page (```https://{server}:8080/tfs/```), 
    go to the top right corner of the page, and click your user name to view your profile. 
-1. On the left side of your profile, make sure that your email address and directory are correct.
-2. Close all browser windows.
-3. Open a private or incognito browsing session.
-4. Sign in to your TFS home page (```https://{server}:8080/tfs/```) 
+2. On the left side of your profile, make sure that your email address and directory are correct.
+3. Close all browser windows.
+4. Open a private or incognito browsing session.
+5. Sign in to your TFS home page (```https://{server}:8080/tfs/```) 
    with the identity that's a user in the project collection 
    where you want to install the extension.
 
@@ -99,7 +98,7 @@ to sign in to the Visual Studio Marketplace.
    > 
    > Choose the identity that's the user in your project collection. 
 
-5. From your project collection, go to the Visual Studio Marketplace.
+6. From your project collection, go to the Visual Studio Marketplace.
 
 <a name="no-download"></a>
 

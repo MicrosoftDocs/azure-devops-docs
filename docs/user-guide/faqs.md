@@ -106,7 +106,7 @@ Yes. You can connect to a project from one of the following clients:
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  (requires Team Foundation add-in)  
 - [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)  
-- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx)  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
 

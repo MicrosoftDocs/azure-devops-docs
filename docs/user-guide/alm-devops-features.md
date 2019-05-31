@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 04/05/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -1222,12 +1222,13 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Test Manager and exploratory testing](../test/index.md)">Test Manager and exploratory testing</a>.</p>
-<img src="_img/features/features-exploratory-testing.png" alt="Exploratory testing"/><br/><br/>
-<p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Explore user stories without test cases or test steps using [Azure Test Plans and exploratory testing](../test/index.md).</p>
+![Exploratory testing](_img/features/features-exploratory-testing.png)  
+<br/>
+<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
