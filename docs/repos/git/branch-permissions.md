@@ -26,17 +26,17 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-  If you're not using the new navigation preview, select **Code**, **Branches**.
+   If you're not using the new navigation preview, select **Code**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav.png)
 
-1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-  ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](_img/branches/branches-page.png)
 
-0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
+3. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
    ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
 

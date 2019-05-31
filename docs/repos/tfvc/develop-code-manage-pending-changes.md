@@ -135,14 +135,14 @@ You can discard one, a few, or all of the pending changes in your workspace.
 
 ## Use the command prompt
 
--    [Status command](status-command.md) : Display pending changes in the command prompt.  
--    [Checkin command](checkin-command.md) : View pending changes in the **Check In** dialog box.  
--    [Undo command](undo-command.md) : Undo pending changes.
+- [Status command](status-command.md) : Display pending changes in the command prompt.  
+- [Checkin command](checkin-command.md) : View pending changes in the **Check In** dialog box.  
+- [Undo command](undo-command.md) : Undo pending changes.
 
-    >**Tip:**  
-    >You can use this command to undo another user's check-out if you have sufficient permissions.
+  >**Tip:**  
+  >You can use this command to undo another user's check-out if you have sufficient permissions.
 
--    [Difference Command](difference-command.md) : See what you have changed in a file.
+- [Difference Command](difference-command.md) : See what you have changed in a file.
 
 ## Next steps
 

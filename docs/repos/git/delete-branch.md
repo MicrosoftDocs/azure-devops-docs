@@ -23,8 +23,8 @@ monikerRange: '>= tfs-2017'
 
 0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 
-0. Locate your branch on the branches page. If you don't see it, select **All** to view all branches and filter the branches using the **Search all branches** box in the upper right.
+1. Locate your branch on the branches page. If you don't see it, select **All** to view all branches and filter the branches using the **Search all branches** box in the upper right.
 
-0. Select the trashcan icon next to the branch you want to delete. 
+2. Select the trashcan icon next to the branch you want to delete. 
 
     ![Delete your branch in the Azure DevOps Services/TFS web portal](_img/branches/delete_branch.png)

@@ -115,9 +115,8 @@ git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
->
-> Read more about **.gitignore**: [Ignore file changes with Git]
-(/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+> 
+> Read more about **.gitignore**: [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 

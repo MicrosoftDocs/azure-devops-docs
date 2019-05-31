@@ -57,51 +57,44 @@ A common mistake is to make some changes and `commit` them, realize you are on a
 Your most recent changes will no longer be on the filesystem since each branch has its own version of code. 
 Git will bring the state of the files back to the last commit on the branch you swapped into, not the previous branch where you made your changes. 
 You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch or [merge](pulling.md#update-branches-with-merge) the changes into the correct branch.
- 
+
 ## Create a branch
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 & 2017
 
 0. Open up Team Explorer and go to the **Branches** view.
-0. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
-0. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
+1. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
+2. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
 
     ![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 Use the `branch` command to create the branch and `checkout` to swap to that branch.
- 
+
 ```
 git branch feature1
 git checkout feature1
 ```
 
----
-
-
-
+* * *
 ## Delete a branch
 
 > [!NOTE] 
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 & 2017
 
 0. Open up Team Explorer and go to the **Branches** view.
-0. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
-0. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
+1. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
+2. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
 
     ![Deleting a branch in Visual Studio](_img/vsbranchdelete.gif)
 
 You can delete a remote branch using the same method - locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click and select **Delete**.
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 Delete a local branch using `git branch -d` while checked out to a different branch.
 
 ```
@@ -114,12 +107,7 @@ Deleting a remote branch requires use of the `git push` command using the `--del
 git push origin --delete
 ```
 
----
-
-
-
-
-
+* * *
 ## Use branches to manage development
 
 Git keeps track of which branch you are working on and makes sure that when you `checkout` a branch your files match the most recent commit on the branch. 
