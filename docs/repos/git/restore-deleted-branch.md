@@ -24,17 +24,17 @@ If you need to restore a Git branch in your own repo from Visual Studio or the c
 
 0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 
-0. Search for the exact branch name using the **Search all branches** box in the upper right.
+1. Search for the exact branch name using the **Search all branches** box in the upper right.
 
-0. Click the link to **Search for exact match in deleted branches**.
-If there is a deleted branch that matches your search, you will be able to see which commit it pointed to when it was deleted,
-who deleted it, and when it was deleted.
+2. Click the link to **Search for exact match in deleted branches**.
+   If there is a deleted branch that matches your search, you will be able to see which commit it pointed to when it was deleted,
+   who deleted it, and when it was deleted.
 
     ![Search for exact match in deleted branches in the Azure DevOps Services/TFS web portal](_img/branches/search_deleted_branches.png)
 
-0. To restore the branch, select the **...** icon next to the branch name and then select **Restore branch** from the menu.
-The branch will be recreated at the last commit to which it pointed.
-Note that branch policies and permissions will **not** be restored.
+3. To restore the branch, select the **...** icon next to the branch name and then select **Restore branch** from the menu.
+   The branch will be recreated at the last commit to which it pointed.
+   Note that branch policies and permissions will **not** be restored.
 
     ![Restore your deleted branch in the Azure DevOps Services/TFS web portal](_img/branches/restore_deleted_branch.png)
 

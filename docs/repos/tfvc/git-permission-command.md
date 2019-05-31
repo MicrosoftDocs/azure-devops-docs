@@ -42,18 +42,18 @@ tf git permission [/allow:(* |perm1[,perm2,...]]
 
 ## Parameters
 
-| Parameter                            | Description |
-|--------------------------------------|-------------|
-| **/allow:***(\* \|perm1[,perm2,...])*  | The permissions to allow. |
-| **/deny:***(\* \|perm1[,perm2,...])* | The permissions to deny. |
-| **/remove:***(\* \|perm1[,perm2,...])* | The permissions to remove (sometimes referred to as not set). You can use all three of **/allow**, **/deny**, and **/remove** in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings).|
-| **/user:***username1[,username2,...]* | The user or users for which to allow, deny, or remove. You must specify at least one user or group. |
-| **/group:***groupname1[,groupname2,...]* | The groups or groups for which to allow, deny, or remove. You must specify at least one user or group. Groups and individuals can be used together. |
-| **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the project collection that contains the permissions to view or modify. For example: http://myserver:8080/tfs/DefaultCollection or https://fabrikam-fiber.visualstudio.com. This parameter is required. |
-| **/teamproject:***TeamProjectIdentifier*   | Specifies the name of the project that contains the permissions to view or modify. |
-| **/repository:***RepositoryIdentifier*     | Specifies the name of the repo that contains the permissions to view or modify. |
-| **/branch:***BranchName* | Specifies the name of the branch that contains the permissions to view or modify. If you specify **/branch**, you must also specify **/repository**.|
-| **/login:***username,[password]*           | Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). |
+|                     Parameter                     |                                                                                                                                                          Description                                                                                                                                                           |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       **/allow:***(\* \|perm1[,perm2,...])*       |                                                                                                                                                   The permissions to allow.                                                                                                                                                    |
+|       **/deny:***(\* \|perm1[,perm2,...])*        |                                                                                                                                                    The permissions to deny.                                                                                                                                                    |
+|      **/remove:***(\* \|perm1[,perm2,...])*       | The permissions to remove (sometimes referred to as not set). You can use all three of **/allow**, **/deny**, and **/remove** in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings). |
+|   **/user:**<em>username1[,username2,...]</em>    |                                                                                                              The user or users for which to allow, deny, or remove. You must specify at least one user or group.                                                                                                               |
+|  **/group:**<em>groupname1[,groupname2,...]</em>  |                                                                                      The groups or groups for which to allow, deny, or remove. You must specify at least one user or group. Groups and individuals can be used together.                                                                                       |
+| **/collection:**<em>TeamProjectCollectionUrl</em> |                                                 Specifies the URL of the project collection that contains the permissions to view or modify. For example: <http://myserver:8080/tfs/DefaultCollection> or https://fabrikam-fiber.visualstudio.com. This parameter is required.                                                 |
+|  **/teamproject:**<em>TeamProjectIdentifier</em>  |                                                                                                                       Specifies the name of the project that contains the permissions to view or modify.                                                                                                                       |
+|   **/repository:**<em>RepositoryIdentifier</em>   |                                                                                                                        Specifies the name of the repo that contains the permissions to view or modify.                                                                                                                         |
+|          **/branch:**<em>BranchName</em>          |                                                                                      Specifies the name of the branch that contains the permissions to view or modify. If you specify **/branch**, you must also specify **/repository**.                                                                                      |
+|      **/login:**<em>username,[password]</em>      |                                                                                      Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).                                                                                       |
 
 See [Git repository permission namespaces and actions](/azure/devops/server/command-line/tfssecurity-cmd#git-repository) for a list of the permissions that can be administered by the `tf git permission` command.
 
@@ -102,9 +102,9 @@ The following examples show how to create a branch policy that enforces the foll
 
 In this example we'll use the following collection, project, and repository:
 
-* **/collection:***https://fabrikam-fiber.visualstudio.com* 
-* **/teamproject:***FabrikamProject*
-* **/repository:***FabrikamRepo* 
+* **/collection:***<https://fabrikam-fiber.visualstudio.com>* 
+* **/teamproject:**<em>FabrikamProject</em>
+* **/repository:**<em>FabrikamRepo</em> 
 
 First, block the Create Branch permission at the repository root for the project's contributors.
 

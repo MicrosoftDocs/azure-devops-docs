@@ -40,7 +40,7 @@ Displays the revision history of one or more files or folders. The data is displ
 <tbody>
 <tr>
 <td><p><strong>/collection</strong>: <i>TeamProjectCollectionUrl</i></p></td>
-<td><p>Specifies the URL of the project collection that contains the items. For example: http://myserver:8080/tfs/DefaultCollection.</p>
+<td><p>Specifies the URL of the project collection that contains the items. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p>
 <p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
 </tr>
 <tr>
@@ -103,7 +103,7 @@ Displays the revision history of one or more files or folders. The data is displ
 <li><p>The maximum version</p></li>
 <li><p>The minimum and the maximum versions using the range <strong>~</strong> syntax.</p></li>
 </ul>
-<p>The default is `/version:W` (the version in the workspace).</p>
+<p>The default is <code>/version:W</code> (the version in the workspace).</p>
 <p>For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p>
 <p>You cannot combine this option with the <strong>/slotmode</strong> option.</p></td>
 </tr>

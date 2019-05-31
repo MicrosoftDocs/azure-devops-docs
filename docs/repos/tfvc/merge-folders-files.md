@@ -80,23 +80,23 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 ### Drag and Drop a Changeset into the Tracking Changeset Window
 
-1.  In **Source Control Explorer**, select either a branch, a folder, or a file which is contained within a branch.
+1. In **Source Control Explorer**, select either a branch, a folder, or a file which is contained within a branch.
 
-2.  Right-click the selected item and click **View History**.
+2. Right-click the selected item and click **View History**.
 
-3.  In the **History **window, right-click the changeset that you want to view and select **Track Changeset**.
+3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
 
-    The **Select Branches** dialog box appears.
+   The **Select Branches** dialog box appears.
 
-4.  (Optional) In the **Target branches** list, check the branches that you want to view and uncheck the branches that you want to hide.
+4. (Optional) In the **Target branches** list, check the branches that you want to view and uncheck the branches that you want to hide.
 
-5.  Click **Visualize**.
+5. Click **Visualize**.
 
-    The **Tracking Changeset** window appears.
+   The **Tracking Changeset** window appears.
 
-6.  Drag the branch which contains the changeset to the target branch.
+6. Drag the branch which contains the changeset to the target branch.
 
-    The **Source Control Merge Wizard** appears. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
+   The **Source Control Merge Wizard** appears. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
 
 ### Example: Where is that New Method?
 

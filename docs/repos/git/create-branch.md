@@ -30,17 +30,17 @@ monikerRange: '>= tfs-2013'
 
 1. View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
-  ![View your branches](_img/repos-navigation/repos-branches.png)
+   ![View your branches](_img/repos-navigation/repos-branches.png)
 
-1. Select the **New branch** button in the upper right corner of the page.
+2. Select the **New branch** button in the upper right corner of the page.
 
-  ![Create branch button](_img/branches/create-branch.png)
+   ![Create branch button](_img/branches/create-branch.png)
 
-1. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
+3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
     ![Create a branch with the new branch dialog](_img/branches/newbranch_dialog.png)
 
-1. Select **Create branch**.
+4. Select **Create branch**.
 
 ::: moniker-end
 
@@ -48,17 +48,17 @@ monikerRange: '>= tfs-2013'
 
 1. View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
-  ![Branches page](_img/branches/branches_nav.png)
+   ![Branches page](_img/branches/branches_nav.png)
 
-1. Select the **New branch** button in the upper right corner of the page.
+2. Select the **New branch** button in the upper right corner of the page.
 
-  ![Create branch button](_img/branches/create-branch.png)
+   ![Create branch button](_img/branches/create-branch.png)
 
-1. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
+3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
     ![Create a branch with the new branch dialog](_img/branches/newbranch_dialog.png)
 
-1. Select **Create branch**.
+4. Select **Create branch**.
 
 ::: moniker-end
 

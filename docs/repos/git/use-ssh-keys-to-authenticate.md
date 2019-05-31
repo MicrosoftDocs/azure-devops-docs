@@ -97,23 +97,23 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 Associate the public key generated in the previous step with your user ID.
 
-0.  Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
-user interface. Select **Security** in the menu that appears.
+0. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
+   user interface. Select **Security** in the menu that appears.
 
-    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
+   ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
-0. Select **SSH Public Keys** , then select **Add**.
+1. Select **SSH Public Keys** , then select **Add**.
 
     ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. 
+2. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. 
 
-  >[!IMPORTANT]
-  >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
+   >[!IMPORTANT]
+   >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
     ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
 
-0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
+3. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
 <a name="copy-url"></a>
 
@@ -128,7 +128,7 @@ user interface. Select **Security** in the menu that appears.
 
    [!INCLUDE [project-urls](../../_shared/project-urls.md)]
  
-0. Run `git clone` from the command prompt. 
+1. Run `git clone` from the command prompt. 
 
    ```
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
@@ -241,7 +241,7 @@ Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to conne
 To use keys created with `ssh-keygen` in a different place than the default, you do two things:
 
 0. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
-0. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
+1. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
 
 ```
 ssh-add /home/jamal/.ssh/id_jamal.rsa

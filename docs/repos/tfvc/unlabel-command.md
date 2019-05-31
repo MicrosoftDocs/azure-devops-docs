@@ -38,7 +38,7 @@ To use the **unlabel** command, you must either own the label, or have the **Adm
 <tbody>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 <tr>
 <td><p><i>labelname</i></p></td>
@@ -53,14 +53,14 @@ To use the **unlabel** command, you must either own the label, or have the **Adm
 <strong>Note</strong>
 </div>
 <div class="mtps-row">
-You can specify more than one *itemspec* argument.
+You can specify more than one <em>itemspec</em> argument.
 </div>
 </div>
 </div></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 </tbody>
 </table>
