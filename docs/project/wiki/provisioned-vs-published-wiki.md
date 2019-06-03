@@ -29,7 +29,7 @@ In Azure DevOps, you have the following options for maintaining wiki content.
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
 > [!NOTE]  
-> The publish code as wiki feature is currently available on Azure DevOps. For 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
+> The publish code as wiki feature is currently available on Azure DevOps Server 2018 and later versions. For older versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
 
 ## Wiki page menu options
 
@@ -44,7 +44,7 @@ The unavailable menu options for the wiki pages are shown in the following illus
 > |------|---------|
 > | ![Provisioned wiki page menu options](_img/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](_img/wiki/diff-menu-options.png) |
 
-For example, the **Edit** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
+For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
 
 ## Supported features and operational differences
 
