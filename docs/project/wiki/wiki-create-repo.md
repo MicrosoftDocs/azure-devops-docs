@@ -36,7 +36,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 In this article, we show you how to:  
 
 > [!div class="checklist"]
-> * Open **Wiki**
+> * Open Wiki
 > * Provision a Git repo for your wiki
 
 <a id="prereq">  </a>
@@ -63,7 +63,7 @@ In this article, we show you how to:
 
 ## Provision a wiki Git repository
 
-Provision a new Git repository that stores all your wiki pages and related artifacts. From the Wiki landing page, select **Create Wiki**. (Even if you use TFVC for source control, you can create a wiki with a Git repository.)
+Provision a new Git repository that stores all your wiki pages and related artifacts. From the Wiki landing page, select **Create Project Wiki**. (Even if you use TFVC for source control, you can create a wiki with a Git repository.)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -75,8 +75,6 @@ Provision a new Git repository that stores all your wiki pages and related artif
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, Git repo for your wiki](_img/wiki/wiki-create.png)
 ::: moniker-end
-
----
 
 If you don't have access to create a Wiki Git repository, the following message appears.
 
@@ -108,14 +106,14 @@ The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories 
 However, you can navigate to it from the following URL:
 
 ::: moniker range=">= azure-devops-2019"
-`https://<AccountName>.visualstudio.com/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
+`https://dev.azure.com/<AccountName>/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 `https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
-Choose **More**, and then **Clone Wiki** to access the Wiki URL.
+Choose **Clone Wiki** from the ellipsis near the wiki picker to access the Wiki URL.
 
 <img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
