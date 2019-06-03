@@ -12,6 +12,7 @@ The Azure DevOps extension for Azure CLI allows you to experience Azure DevOps f
 - [Configure policies](policy-configuration-file.md)
 - [Azure DevOps CLI in a release pipeline](azure-devops-cli-in-release-pipeline.md)
 - [Azure DevOps CLI in Azure Pipelines YAML](azure-devops-cli-in-yaml.md)
+- [Manage security permissions](permissions.md)
 
 # Reference
 - [Command Reference](/cli/azure/ext/azure-devops?view=azure-cli-latest)

@@ -67,6 +67,6 @@ To configure costs for Azure DevOps, see the [pricing calculator](https://azure.
 - [Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 - [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
 - [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
-- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Microsoft Test Manager)
+- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Test Manager)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 - Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
