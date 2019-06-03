@@ -81,7 +81,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> [!NOTE]
 	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md), and then return and refresh this page.
 
-	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code as wiki** menu option.
+	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code wiki** menu option.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish code as wiki menu option](_img/wiki/publish-code-menu-option.png)
