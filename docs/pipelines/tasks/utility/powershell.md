@@ -107,61 +107,20 @@ On the Build tab of a build pipeline, add this task:
 
 ### Write a warning
 
-![icon](_img/powershell.png) Set warning message
-
-* Arguments
-
- ```
-"You've been warned by"
-```
-
-* Script
-
- ```ps
-Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
-```
-
-![icon](_img/powershell.png) Write warning using task.LogIssue
-
-* Script
+Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
  ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.LogIssue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
-```
-
-![icon](_img/powershell.png) Write warning using PowerShell command
-
-* Script
-
- ```ps
-# Writes a warning to log preceded by "WARNING: "
-Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")"
+Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
 
 ### Write an error
 
-![icon](_img/powershell.png) Set error message
-
-* Arguments
-
- ```
-"something went wrong."
-```
-
-* Script
+Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
  ```ps
-Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
-```
-
-![icon](_img/powershell.png) Write error using task.LogIssue
-
-* Script
-
- ```ps
-# Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
+# Writes a warning to build summary and to log in red text
+Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
@@ -170,20 +129,6 @@ Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pi
  ```ps
 exit 1
 ``` 
-
-![icon](_img/powershell.png) Write error using PowerShell command
-
-* Script
-
- ```ps
-# Writes an error to the build summary and the log with details about the error
-Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorMessage)"
-```
-
-> [!TIP]
-> 
-> If you don't want this error to fail the build, then clear the **Advanced: Fail on Standard Error** check box.
-
 
 ### ApplyVersionToAssemblies.ps1
 

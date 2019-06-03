@@ -24,7 +24,7 @@ When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your te
 We show you how to do the following in this article:  
 
 > [!div class="checklist"]
-> * Open **Wiki**
+> * Open Wiki
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -66,6 +66,8 @@ Specify a unique title of 235 characters or less. Page titles are case-sensitive
 
 <img src="_img/wiki/add-new-page.png" alt="Create wiki and first page" style="border: 1px solid #C3C3C3;" />
 
+You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+
 <a id="page-title-names"></a>
 
 ### Wiki page title naming restrictions
@@ -74,9 +76,13 @@ Specify a unique title of 235 characters or less. Page titles are case-sensitive
 
 ## Edit and delete wiki pages
 
-To edit an existing Wiki page, open the page and select **Edit page**, or open the context menu and select **Edit**.
+To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
 
-To delete a page, open the context menu from the tree view of pages and select **Delete**.  Confirm the delete in the dialog box that opens.
+To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
+
+> [!NOTE]  
+> Deleting a page deletes the page along with all the metadata and all its sub pages (if any) in the hierarchy.
+
 
 ## Reorder a wiki page
 
