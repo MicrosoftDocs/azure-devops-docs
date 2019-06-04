@@ -13,7 +13,6 @@ ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Import a Git repo
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
@@ -62,7 +61,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
    ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
 
@@ -76,7 +75,7 @@ From the repo drop-down, select **Import repository**.
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
 
