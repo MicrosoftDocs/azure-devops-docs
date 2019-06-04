@@ -132,17 +132,22 @@
     },
     {
       "source_path": "docs/artifacts/maven/delete-artifact.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/npm/deprecate-unpublish.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/nuget/unlist-delete.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/concepts/deleted-packages.md",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -282,7 +287,7 @@
     },
     {
       "source_path": "docs/package/maven/delete-artifact.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -302,7 +307,7 @@
     },
     {
       "source_path": "docs/package/npm/deprecate-unpublish.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -362,7 +367,7 @@
     },
     {
       "source_path": "docs/package/nuget/unlist-delete.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -902,7 +907,7 @@
     },
     {
       "source_path": "docs/package/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -2202,7 +2207,7 @@
     },
     {
       "source_path": "docs/package/get-started/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
