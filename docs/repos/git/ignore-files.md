@@ -23,7 +23,7 @@ of files that you create but are not part of your codebase. Customize which file
 In this tutorial you learn how to:
 
 > [!div class="checklist"]
-> * Use gitignore to prevent tracking or files
+> * Use gitignore to prevent tracking of files
 > * Ignore files only on your system
 > * Ignore files across all repos on your system
 > * Ignore changes to committed files
