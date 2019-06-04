@@ -9,9 +9,9 @@
 - name: REST API Reference
   items:
   - name: Git
-    href: /rest/api/vsts/git/
+    href: /rest/api/vsts/git/?view=azure-devops-rest-5.0
   - name: TFVC
-    href: /rest/api/vsts/tfvc/
+    href: /rest/api/vsts/tfvc/?view=azure-devops-rest-5.0
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE

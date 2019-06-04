@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 05/13/2019
+ms.date: 06/04/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -158,6 +158,11 @@ steps:
     runExtendedTests: 'true'
 ```
 
+> [!Note]
+> Scalar parameters are always treated as strings.
+> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
+> Non-empty strings are cast to `true` in a Boolean context.
+> That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
 ## Using other repositories
 
