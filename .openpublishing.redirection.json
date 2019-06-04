@@ -11372,7 +11372,7 @@
     },
     {
       "source_path": "docs/organizations/accounts/change-application-policies-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-application-policies",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
