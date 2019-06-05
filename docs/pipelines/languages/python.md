@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts.
 
->![Tip]
+>[!Tip]
 > Are you new to pipelines or looking for an end-to-end walkthrough? If so, see [Deploy a Python web app using CI/CD to Azure App Service on Linux](python-webapp.md).
 
 ## Build environment
