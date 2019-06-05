@@ -1184,7 +1184,7 @@ Content-Type: application/json-patch+json
 | value             | string or int, depending on the field | New value to set.
 | Body - relation
 | op                | enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
-| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For a specific relation, use "relations/Id".<br/>For all relations, use "/relations/-".
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For replacing, removing, or testing a specific relation, use "/relations/Id". Id is the 0 based 'index' of relation in the list of relations currently on this work item. <br/>For adding relations, use "/relations/-".
 | value.rel         | string                                | Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
 | value.url         | string                                | URL of the item you are relating to the current work item.
 | value.attributes  | array of name/value pairs             | Additional attributes of the relationship (e.g. comment, isLocked, etc.)
