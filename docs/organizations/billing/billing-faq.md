@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/31/2019
+ms.date: 06/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -70,6 +70,12 @@ A: No, but this feature is in our backlog to add in the future.
 ### Q: How are paid extensions changing in the Azure DevOps Marketplace in July 2019?
 
 A: Microsoft is ending support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly. We're working closely with publishers to help existing customers transition to the new model and will communicate to specific customers as publishers are ready.
+
+<a name="package-management"></a>
+
+### Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
+
+A: As of June 1st, 2019, on-premises Azure Artifacts (ie. Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to assign users the Package Management extension license to use the feature.
 
 ## Enterprise Agreement customers
 
