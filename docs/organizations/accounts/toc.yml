@@ -1,4 +1,4 @@
-- name: Manage Organizations
+- name: Manage organizations
   href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: About managing organizations
   href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
@@ -53,7 +53,7 @@
       - name: Change Azure AD connection
         href: change-azure-ad-connection.md
       - name: Disconnect from Azure AD
-        href: disconnect-organization-from-aad.md
+        href: disconnect-organization-from-azure-ad.md
       - name: Manage groups
         href: manage-azure-active-directory-groups-vsts.md
       - name: Add users to Azure AD
