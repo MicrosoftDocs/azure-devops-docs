@@ -1,11 +1,11 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
+- name: Azure DevOps manage & configure resources documentation
   expanded: false
   href: index.md
 - name: About settings
   href: settings/about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: User Preferences
+- name: User preferences
   items:
   - name: Set user preferences
     href: settings/set-your-preferences.md
@@ -35,11 +35,11 @@
   href: accounts/toc.yml
 - name: Billing
   href: billing/toc.yml
-- name: Security & Identity
+- name: Security & identity
   href: security/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
-- name: Additional Settings
+- name: Additional settings
   href: settings/toc.yml
 - name: Reference
   items:
@@ -47,7 +47,7 @@
     href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API Reference
   items:
-  - name: Area and Iteration Paths
+  - name: Area and iteration paths
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Authentication guidance
     href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -69,7 +69,7 @@
     href: /rest/api/azure/devops/notification
 - name: Resources
   items:
-  - name: Marketplace & Extensibility  
+  - name: Marketplace & extensibility  
     href: /azure/devops/marketplace-extensibility/index
   - name: Git
     href: /azure/devops/repos/git/index
@@ -77,9 +77,9 @@
     href: /azure/devops/boards/work-items/index
   - name: Public projects
     href: /azure/devops/organizations/public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-  - name: Process Customization
+  - name: Process customization
     href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Service Hooks
+  - name: Service hooks
     href: /azure/devops/service-hooks/index
-  - name: Web Portal Navigation
+  - name: Web portal navigation
     href: /azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
