@@ -53,8 +53,8 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 1. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
 
    ```ini
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:always-auth=true
+   //<yourorganization>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY
+   //<yourorganization>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
+   //<yourorganization>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
+   //<yourorganization>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:always-auth=true
    ```
