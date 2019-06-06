@@ -1,4 +1,4 @@
-- name: Manage Projects
+- name: Manage projects
   href: index.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: About projects
   href: about-projects.md

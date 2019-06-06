@@ -60,13 +60,35 @@ the channel will start receiving *Release deployment started*, *Release deployme
 
 To manage the subscriptions for a channel, use the following command:
 
-`/azpipelines subscribe`
+`/azpipelines subscriptions`
 
 This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
 
 ![Subscriptions list image](../_img/integrations-slack/subscriptions-list.png)
 
+## Using filters effectively to customize subscriptions
+
+When a user subscribes to any pipeline, a few subscriptions are created by default without any filters being applied. Often, users have the need to customize these subscriptions. 
+For example, users may want to hear only about failed builds or get notified only when deployments are pushed to production. The Azure Pipelines app supports filters to customize what you see in your channel.
+
+1. Run the `/azpipelines subscriptions` command
+2. In the list of subscriptions, if there is a subscription that is unwanted or must be modified (Example: creating noise in the channel), select the **Remove** button 
+3. Select the **Add subscription** button
+4. Select the required pipeline and the desired event
+5. Select the appropriate filters to customize your subscription
+
+### Example: Get notifications only for failed builds
+
+> [!div class="mx-imgBorder"]
+![Build Filters](../_img/integrations-slack/build-filters.png)
+
+### Example: Get notifications only if the deployments are pushed to production environment
+
+> [!div class="mx-imgBorder"]
+![Release Filters](../_img/integrations-slack/release-filters.png)
+
 ## Approve release deployments from your channel
+
 You can approve release deployments from within Slack without navigating to the Azure Pipelines portal. Subscribe to the *Release deployment approval pending* notification in Slack (which happens by default upon subscribing to any release pipeline).
 
 ![Ready for approval](../_img/integrations-slack/approve.png)
@@ -83,12 +105,12 @@ Here are all the commands supported by the Azure Pipelines app:
 
 | Slash command        | Functionality  |
 | -------------------- |----------------|
-| /azpipelines subscribe [pipeline url]      | Subscribe to notifications for a pipeline you want to monitor | 
-| /azpipelines subscribe      | Manage/add subscriptions for a channel      | 
-| /azpipelines feedback | Report problems or suggest features for the app      |
+| /azpipelines subscribe [pipeline url]      | Subscribe to a pipeline to receive notifications | 
+| /azpipelines subscriptions      | Add or Remove subscriptions for this channel      | 
+| /azpipelines feedback | Report a problem or suggest a feature      |
 | /azpipelines help     | Get help on the slash commands |
-| /azpipelines signin  | Connect your Azure Pipelines account to the app |
-| /azpipelines signout  | Disconnect your Azure Pipelines account from the app |
+| /azpipelines signin  | Sign in to your Azure Pipelines account |
+| /azpipelines signout  | Sign out from your Azure Pipelines account |
 
 ### Notifications in Private channels
 
@@ -98,4 +120,5 @@ Post that, you can set up and manage your notifications the same way as you woul
 >[!NOTE]
 > * The user has to be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside direct messages
-> * Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported.
+> * Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported
+> * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
