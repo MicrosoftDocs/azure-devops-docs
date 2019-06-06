@@ -104,7 +104,7 @@
       href: connect/work-web-portal.md
     - name: Work from your account hub
       href: connect/account-home-pages.md
-  - name: Manage users & access�(Azure DevOps)
+  - name: Manage users & access(Azure DevOps)
     items:
     - name: Add and manage users
       href: /team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services

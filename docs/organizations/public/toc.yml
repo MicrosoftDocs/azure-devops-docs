@@ -1,4 +1,4 @@
-- name: Public Projects
+- name: Public projects
   href: index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: What is a public project? 
   href: about-public-projects.md
