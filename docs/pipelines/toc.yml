@@ -291,6 +291,10 @@
       href: release/env-templates.md
     - name: Releases
       href: release/releases.md
+  - name: Reports
+    items:
+    - name: Analyze Pipeline results
+      href: reports/pipelinereport.md
   - name: Repositories
     items:
     - name: Repositories
