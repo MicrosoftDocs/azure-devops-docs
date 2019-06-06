@@ -561,19 +561,19 @@ featureFlags:
                     <div class="cardText">
                         <h3>Related resources</h3>
                         <p>
-                            <a href="/azure/devops/learn/">Azure DevOps Index Documentation</a>
+                            <a href="/azure/devops/">Azure DevOps Index Documentation</a>
                         </p>
                         <p>
                             <a href="/azure/devops/learn/">DevOps Resource Center</a>
                         </p>
                         <p>
-                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
+                            <a href="/azure/devops-project/">Azure DevOps Projects</a>
                         </p>
                         <p>
                             <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
                         </p>
                         <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
+                            <a href="https://marketplace.visualstudio.com/azuredevops">Azure DevOps Marketplace</a>
                         </p>
                         <p>
                             <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
