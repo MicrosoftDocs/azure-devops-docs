@@ -74,7 +74,30 @@ This command lists all of the current subscriptions for the channel and allows y
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](../_img/integrations-teams/subscriptions-list-teams.png)
 
+
+## Using filters effectively to customize subscriptions
+
+When a user subscribes to any pipeline, a few subscriptions are created by default without any filters being applied. Often, users have the need to customize these subscriptions. 
+For example, users may want to get notified only when builds fail or when deployments are pushed to a production environment. The Azure Pipelines app supports filters to customize what you see in your channel.
+
+1. Run the `@Azure Pipelines subscriptions` command
+2. Select **View all subscriptions**. In the list of subscriptions, if there is a subscription that is unwanted or should be modified (Example: creating noise in the channel), select **Remove**
+3. Scroll down and select the **Add subscription** button
+4. Select the required pipeline and the event
+5. Select the appropriate filters and save 
+
+### Example: Get notifications only for failed builds
+
+> [!div class="mx-imgBorder"]
+![Build Filters](../_img/integrations-teams/teams-build-filters.png)
+
+### Example: Get notifications only if the deployments are pushed to prod environment
+
+> [!div class="mx-imgBorder"]
+![Release Filters](../_img/integrations-teams/teams-release-filters.png)
+
 ## Approve release deployments from your channel
+
 You can approve release deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notification (which 
 happens by default when subscribing to any release pipeline).
 
@@ -107,3 +130,5 @@ Here are all the commands supported by the Azure Pipelines app:
 > * The user must be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside chat/direct messages
 > * Deployment approvals which have applied the **Revalidate identity of approver before completing the approval** policy are not supported
+> * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
+

@@ -1,4 +1,4 @@
-- name: Discover & Manage Extensions
+- name: Discover & manage extensions
   href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Discover Marketplace extensions 
   href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
@@ -16,7 +16,7 @@
     href: get-tfs-extensions.md
   - name: Trusting offerings in Marketplace
     href: trust.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Manage extension permissions (Security)
     href: how-to/grant-permissions.md

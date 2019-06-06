@@ -162,7 +162,7 @@ as part of the configuration:
 #### Java installation notes
 
 If the Search configuration wizard does not detect a working installation of a 
-Java Runtime Environment (JRE), it provides an option to download and install the latest version. 
+Java Runtime Environment (JRE), it provides an option to download and install the latest supported version. 
 Internet connectivity is required to download this.
 If the target server does not have Internet connectivity, you must download 
 and install a JRE manually before attempting to install Search.
