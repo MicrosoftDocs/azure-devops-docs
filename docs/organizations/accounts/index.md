@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Manage Organizations  
+# Manage organizations  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
