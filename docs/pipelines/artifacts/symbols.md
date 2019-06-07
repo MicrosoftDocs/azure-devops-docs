@@ -26,8 +26,17 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 ## Publish symbols
 To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
+::: moniker range=">= tfs-2018"
 
 * For **Version**, select **2.\***.
+
+::: moniker-end
+::: moniker range="<= tfs-2017"
+
+* For **Version**, select **1.\***.
+
+::: moniker-end
+
 * For **Symbol Server Type**, select **Symbol Server in this organization/collection (requires Azure Artifacts)**.
 * Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
 * Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).

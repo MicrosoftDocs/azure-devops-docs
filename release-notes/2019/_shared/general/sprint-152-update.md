@@ -6,7 +6,7 @@ ms.topic: include
 
 You can now manage extensions from the command line using the `az devops extension` commands. By using the commands, you can create scripts that can be run for all your organizations to ensure the required extensions are available.
 
-For more details on the commands and its syntax, see the documentation [here](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/build/tag?view=azure-cli-latest).
+For more details on the commands and its syntax, see the documentation [here](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/extension?view=azure-cli-latest).
 
 ### Invoke REST APIs from the command line
 

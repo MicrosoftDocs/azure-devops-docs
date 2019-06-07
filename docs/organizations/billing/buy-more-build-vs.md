@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 06/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -149,7 +149,7 @@ When your team's needs for build or release capacity change, you can change the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Start free trials](try-additional-features-vs.md)
+> [Try Azure Test Plans for free](try-additional-features-vs.md)
 
 ## Related articles
 

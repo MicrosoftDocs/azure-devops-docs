@@ -76,7 +76,7 @@ Tasks with versions 'ARM Outputs:4.*' are not valid for deploy job 'Agent job' i
 ### **Issue:** TF50309: The following account does not have sufficient permissions to complete the operation: 
 The following permissions are needed to perform this operation: Create new projects
 
-**Cause:** You do not have permissions to create new projects in the Azure DevOps organization you have selected. You will need to be a part of of the Project Administrators group or have explicit permissions to create new projects
+**Cause:** You do not have permissions to create new projects in the Azure DevOps organization you have selected. You will need to be a part of the Project Administrators group or have explicit permissions to create new projects
 
 **Fix:**  Please make sure you have the required permissions or try selecting a different Azure DevOps org where you project creation permission.
 
