@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/22/2019
+ms.date: 06/06/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -27,7 +27,7 @@ Sign up for an organization, add users, and manage permissions and access.
 ## 5-minute quickstarts
 
 * [Create your organization or project collection](create-organization.md)
-* [Try extensions for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Try Azure Test Plans for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add a team admin](../settings/add-team-administrator.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
