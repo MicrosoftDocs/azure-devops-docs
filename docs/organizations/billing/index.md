@@ -47,7 +47,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Pay for users](buy-basic-access-add-users.md)
 * [Buy Azure Pipelines](buy-more-build-vs.md)
-* [Start free trials for paid features and extensions](try-additional-features-vs.md)
+* [Try Azure Test Plans for free](try-additional-features-vs.md)
 * [Buy Basic + Test Plans access](buy-basic-plus-test-plans.md)
 
 ## How-to guides
