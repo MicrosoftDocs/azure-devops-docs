@@ -38,7 +38,7 @@ To allow your users to debug your application, you need to [publish your symbol 
 Once you've published your symbol files, users can use them in the debugging process in [Visual Studio](../symbols/debug-with-symbols-visual-studio.md) or [WinDbg](../symbols/debug-with-symbols-windbg.md). The debugger will find the appropriate symbols using a unique ID that identifies the symbols associated with the binary.
 
 ## Using symbols with NuGet packages
-If you publish your application's executables via NuGet packages, there are two ways to share symbols with your users. NuGet can make *symbols packages*, which are denoted by a `.symbols.nupkg` extension, but these packages are only needed if you're publishing symbols to [SymbolSource.org](http://www.symbolsource.org/) or another external symbol host.
+If you publish your application's executables via NuGet packages, there are two ways to share symbols with your users. NuGet can make *symbols packages*, which are denoted by a `.snupkg` extension, but these packages are only needed if you're publishing symbols to [SymbolSource.org](http://www.symbolsource.org/) or another external symbol host.
 
 ### Sharing private symbols with Symbol Server
 If you're publishing packages to Azure Artifacts, there's no need to use NuGet symbols packages. Instead, configure the [Index Sources and Publish Symbols](../../pipelines/tasks/build/index-sources-publish-symbols.md) task in Team Build [using the walkthrough](../../pipelines/artifacts/symbols.md).
