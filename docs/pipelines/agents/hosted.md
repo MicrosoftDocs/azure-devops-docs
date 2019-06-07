@@ -122,7 +122,7 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/confirmation.aspx?id=41653) for all regions in that geography.
 
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be be included for regions in the capacity fallback geography.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >
