@@ -269,6 +269,8 @@
     href: licensing/concurrent-jobs.md
   - name: Permissions
     href: policies/permissions.md
+  - name: Pipeline reports
+    href: reports/pipelinereport.md
   - name: Pipelines (licensing)
     href: licensing/concurrent-pipelines-tfs.md
   - name: Release pipelines (classic)
