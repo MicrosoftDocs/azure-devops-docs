@@ -207,7 +207,7 @@ Specify a priority that captures the relative value of an Epic, Feature, or back
 <a href="../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../queries/planning-ranking-priorities.md)">Time Criticality</a>
 </td>
 <td>
-A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
+A subjective unit of measure that captures how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
 </td>
 </tr>
 <tr>
