@@ -70,7 +70,15 @@ Once you've defined the inherited process, you can perform these actions:
 <a id="migrate"></a>
 ## Change the process used by a project    
 
-You can change the process a project uses from a system process or inherited process to an inherited process. You can only change projects to use another process that inherits from the same system process. That is, you can change an Agile-based project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based project to an Agile-derived inherited process.  
+You can change the process a project uses from a system process or inherited process to another inherited process. There are two mechanisms to change a projects process. The first is to switch to a process where the project is derived from the same system process. Meaning, you can move a project between processes that use the same base process like Agile or Scrum.
+
+The second method is to migrate your project between two completely different process types. For example, moving from Agile to Scrum, or Basic to Agile.
+
+For the second method, we have provided detailed steps for three common scenerios of changing the process used by a project.
+
+- [Scrum to Agile](./change-process-scrum-to-agile.md)
+- [Agile to Scrum](./change-process-agile-to-scrum.md)
+- [Basic to Agile](./change-process-basic-to-agile.md)
 
 > [!NOTE]    
 > You can change the process of a project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process. 
