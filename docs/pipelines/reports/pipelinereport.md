@@ -10,16 +10,30 @@ ms.manager: jillfra
 ms.author: admahesh
 author: additi
 ms.date: 06/06/2019
-monikerRange: 'azure-devops'
+monikerRange: '>=azure-devops-2019'
 ---
 
 # Pipeline reports
 
-[!INCLUDE [version-header-ap](../_shared/version-team-services.md)]
+[!INCLUDE [version-header-ap](../_shared/version-server-2019-rtm.md)]
 
-Teams track their pipeline health and efficiency to ensure continuous delivery to their customer. You can gain visibility into your team's pipeline using Pipeline analytics. The source of information for pipeline analytics is the set of runs for your pipeline. These analytics are accrued over a period of time, and form the basis of the rich insights that are provided. The reports show you metrics, trends, and can help you identify insights to improve the efficiency of your pipeline.  
+Teams track their pipeline health and efficiency to ensure continuous delivery to their customer. You can gain visibility into your team's pipeline using Pipeline analytics. The source of information for pipeline analytics is the set of runs for your pipeline. These analytics are accrued over a period of time, and form the basis of the rich insights that are provided. Pipelines reports show you metrics, trends, and can help you identify insights to improve the efficiency of your pipeline.  
+
+::: moniker range="azure-devops-2019"
+
+## Prerequisites
+
+Ensure that you have installed the [the Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
+
+## View pipeline reports
+
+A summary of the pass rate for the last 14 days can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report. 
+
+::: moniker-end
 
 <a name="viewinbuild"></a>
+
+::: moniker range="azure-devops"
 
 ## View pipeline reports
 
@@ -27,6 +41,17 @@ A summary of the pass rate and duration for the last 14 days can be viewed in th
 
 > [!div class="mx-imgBorder"]
 > ![View pipeline reports](_img/pipelines-reports/analyticstab.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]
+> ![View pipeline reports](_img/pipelines-reports/analyticstab-server-2019.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Pipeline failures report 
 
@@ -65,13 +90,15 @@ The **Pipeline duration** report shows how long your pipeline typically takes to
 > [!div class="mx-imgBorder"]
 > ![View Duration Trend](_img/pipelines-reports/duration-trend.png)
 
+::: moniker-end
+
 ## Test failures report
 
-The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. For more information on this report, see [Test failures](../test/test-analytics.md#test-failures) 
+The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. For more information on this report, see [Test failures](../test/test-analytics.md#test-failures).
 
-##  Filters
+## Filters
 
-The Pipelines reports can be further filtered by date range or branch. 
+Pipelines reports can be further filtered by date range or branch. 
 
 - **Date range**: The default view shows data from the last 14 days. The filter helps change this range.
   
