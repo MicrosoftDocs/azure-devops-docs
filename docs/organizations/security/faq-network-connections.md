@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/15/2019
+ms.date: 06/05/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -45,7 +45,23 @@ To fix this issue, update the security appliances in order to support TLS 1.2 fo
 * `https://gallerycdn.vsassets.io` -- hosts Azure DevOps extensions
 * `https://static2.sharepointonline.com` -- hosts some resources that we use in "office fabric" UI kit (fonts, etc).
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` is open and the `13.107.6.183` and `13.107.9.183` IP addresses are allowed.
+## IP range restrictions
+
+To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your whitelisted IPs to include the following IP addresses, based on your IP version. If you're currently whitelisting the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
+
+**IPv4 ranges**
+
+* `13.107.6.0/24`
+* `13.107.9.0/24`
+* `13.107.42.0/24`
+* `13.107.43.0/24`
+
+**IPv6 ranges**
+
+* `2620:1ec:4::/48`
+* `2620:1ec:a92::/48`
+* `2620:1ec:21::/48`
+* `2620:1ec:22::/48`
 
 ## NuGet connections
 
