@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 05/10/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -28,9 +28,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="41"><strong>2019 Q2</strong></td>
+            <td rowspan="40"><strong>2019 Q2</strong></td>
             <td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502555" data-raw-source="[Instant search for work items](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502555)">Instant search for work items</a></td><td>Boards</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189" data-raw-source="[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189)">Improve built-in charts: Sprint Burndown, CFD, and Velocity</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1515751" data-raw-source="[Azure Boards app for Slack](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1515751)">Azure Boards app for Slack</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184" data-raw-source="[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184)">Display Rollup on Azure Boards – Backlogs</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136" data-raw-source="[VFS for Git - Public Preview of macOS support](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136)">VFS for Git - Public Preview of macOS support</a></td><td>Repos</td><td>N/A</td></tr>
@@ -72,8 +71,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221163" data-raw-source="[Top Publisher program](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221163)">Top Publisher program</a></td><td>Marketplace</td><td>N/A</td></tr>
         </tr>
         <tr>
-            <td rowspan="10"><strong>2019 Q3</strong></td>
+            <td rowspan="11"><strong>2019 Q3</strong></td>
             <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1513503" data-raw-source="[Deployments API and enriched deployments integration with Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1513503)">Deployments API and enriched deployments integration with Azure Pipelines</a></td><td>Boards</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189" data-raw-source="[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189)">Improve built-in charts: Sprint Burndown, CFD, and Velocity</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437729" data-raw-source="[More options on pull request creation](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437729)">More options on pull request creation</a></td><td>Repos</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437711" data-raw-source="[GitHub Enterprise Server support for YAML-based pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437711)">GitHub Enterprise Server support for YAML-based pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1443531" data-raw-source="[Bitbucket Cloud support for YAML-based pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1443531)">Bitbucket Cloud support for YAML-based pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
@@ -110,6 +110,25 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="15"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
+            <td>Changes to Azure DevOps IP address ranges</td><td>General</td><td>N/A</td>
+         </tr>
+        <tr><td>Auditing public preview</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Manage security groups and permissions from the command line</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Quickly view linked GitHub activity from the Kanban board</td><td>Boards</td><td>2019.1</td></tr>
+        <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Preview text files on work item</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>See all teams in boards, backlogs, and sprints pickers</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use cron syntax to specify schedules in a YAML file</td><td>Pipelines</td><td>2019.1</td></tr>
+        <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Go get command support in Azure Repos</td><td>Repos</td><td>2019.1</td></tr>
+        <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Support for queries with tree of work items</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Top publisher certification program</td><td>Marketplace</td><td>N/A</td></tr>
+        <tr>
         <tr>
             <td rowspan="15"><a href="2019/sprint-152-update.md" data-raw-source="[20 May 2019](2019/sprint-152-update.md)">20 May 2019</a></td>
             <td>Manage extensions from the command line</td><td>General</td><td>N/A</td>
