@@ -5,7 +5,7 @@
   items:
   - name: About dashboards and reports
     href: overview.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
+    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in, pipelines
   - name: Quick reference
     href: quick-ref.md
   - name: Widget catalog

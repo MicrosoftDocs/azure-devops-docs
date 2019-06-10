@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/05/2019
+ms.date: 06/06/2019
 ---
 
 # About dashboards, charts, reports, and widgets   
@@ -212,19 +212,43 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 |![Capacity bars](../../boards/sprints/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../../boards/sprints/_img/ALM_DS_SprntBD_Chrt_S.png)  |
 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## In-context charts and reports: Pipeline Failures and Test Failures
 
-Two in-context reports provided are the Pipeline Failures and Test Failures reports. These reports derive from the Analytics Service. Open a build or release summary to view the top failing tests report. This report provides a granular view of the top failing tests in the pipeline, along with the failure details. For details, see [Analyze test results](../../pipelines/test/test-analytics.md).
+Several in-context reports are provided for Azure Pipelines. These reports derive from the Analytics Service. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. The summarized cards are present for all reports. You can click on the cards for a detailed report.
 
-![Test analytics detail view](../../pipelines/test/_img/test-analytics/test-failures.png)
+> [!div class="mx-imgBorder"]
+> ![Analytics Tab](../../pipelines/reports/_img/pipelines-reports/analyticstab.png)
 
-Summary charts are also provided for builds that indicate code coverage and test failures or success. 
+### Pipeline failures report
+
+The **Pipeline failures** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view additional details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
+
+> [!div class="mx-imgBorder"]
+> ![Pipeline failures report](../../pipelines/reports/_img/pipelines-reports/pipelinefailurereport.png)
+
+Learn more about the [Pipeline failures report](../../pipelines/reports/pipelinereport.md#pipeline-failures-report).
+
+### Test failures report
+
+The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. Summary charts are also provided for builds that indicate code coverage and test failures or success. 
+
+> [!div class="mx-imgBorder"]
+> ![Test analytics detail view](../../pipelines/test/_img/test-analytics/test-failures.png)
+
+Learn more about the [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
+
+### Pipeline duration report
+
+The **Pipeline duration** report provides the duration trend of a pipeline. It also highlights the average run time of the total successful runs over a period of time (7/14/30 days) and provides insights on the tasks which have impacted the duration of the pipeline. 
+
+> [!div class="mx-imgBorder"]
+> ![Pipeline duration report](../../pipelines/reports/_img/pipelines-reports/pipelinedurationreport.png)
+
+Learn more about the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report).
 
 ::: moniker-end
-
-
 
 ::: moniker range=">= tfs-2015"
 
