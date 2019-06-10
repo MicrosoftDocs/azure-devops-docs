@@ -221,6 +221,21 @@ Several in-context reports are provided for Azure Pipelines. These reports deriv
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/_img/pipelines-reports/analyticstab.png)
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+## In-context charts and reports: Pipeline Test Failures
+
+Azure Pipelines provides an in-context Test failures report, derived from the Analytics Service. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report.
+
+> [!div class="mx-imgBorder"]
+> ![Analytics Tab](../../pipelines/reports/_img/pipelines-reports/analyticstab-server-2019.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 ### Pipeline failures report
 
 The **Pipeline failures** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view additional details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
@@ -230,6 +245,8 @@ The **Pipeline failures** report provides a trend of pipeline failure and task f
 
 Learn more about the [Pipeline failures report](../../pipelines/reports/pipelinereport.md#pipeline-failures-report).
 
+::: moniker-end
+
 ### Test failures report
 
 The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. Summary charts are also provided for builds that indicate code coverage and test failures or success. 
@@ -238,6 +255,8 @@ The **Test failures** report provides a granular view of the top failing tests i
 > ![Test analytics detail view](../../pipelines/test/_img/test-analytics/test-failures.png)
 
 Learn more about the [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
+
+::: moniker range="azure-devops"
 
 ### Pipeline duration report
 
