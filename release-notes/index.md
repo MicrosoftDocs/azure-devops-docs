@@ -119,7 +119,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Quickly view linked GitHub activity from the Kanban board</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Preview text files on work item</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>See all teams in boards, backlogs, and sprints pickers</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>See all teams in Boards, Backlogs, and Sprints pickers</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Use cron syntax to specify schedules in a YAML file</td><td>Pipelines</td><td>2019.1</td></tr>
