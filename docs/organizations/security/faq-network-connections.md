@@ -47,7 +47,7 @@ To fix this issue, update the security appliances in order to support TLS 1.2 fo
 
 ## IP range restrictions
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your whitelisted IPs to include the following IP addresses, based on your IP version. If you're currently whitelisting the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
+To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your allow-listed IPs to include the following IP addresses, based on your IP version. If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 
 **IPv4 ranges**
 
