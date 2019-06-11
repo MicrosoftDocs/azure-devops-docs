@@ -51,7 +51,7 @@ The following schematic shows the relationship between release pipelines, releas
 
 ![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
 
-Releases (and, in some cases, [draft releases](index.md#draftrelease)) can be created from a release pipeline in several ways:
+Releases can be created from a release pipeline in several ways:
 
 * By a [continuous deployment trigger](triggers.md)
   that creates a release when a new version of the source build artifacts is available.
