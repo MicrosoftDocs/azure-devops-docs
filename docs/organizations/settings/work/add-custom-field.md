@@ -80,7 +80,7 @@ You always add a field to an existing work item type.
 1.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
 
 	> [!TIP]    
-	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. You can't add a field to the gray area within the form. 
+	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields.  You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 <a id="verify">  </a>
 
