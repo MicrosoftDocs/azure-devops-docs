@@ -55,7 +55,7 @@ Your project determines the objects available to track work and the configuratio
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
+>- **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
 >- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments       
  
