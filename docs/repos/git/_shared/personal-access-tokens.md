@@ -11,22 +11,22 @@ ms.topic: include
 
    **Azure DevOps Services**
 
-   <img alt="Go to organization home, open your profile, go to Security" src="/azure/devops/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Go to organization home, open your profile, go to Security" src="_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
    **TFS 2017**
 
-   <img alt="TFS home page, open your profile, go to Security" src="/azure/devops/git/_shared/_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
+   <img alt="TFS home page, open your profile, go to Security" src="_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
 
 3. Create a personal access token.
 
-   <img alt="Add a personal access token" src="/azure/devops/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a personal access token" src="./_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 4. Name your token. Select a lifespan for your token.
 
    If you're using Azure DevOps Services, and you have more than one organization,
    you can also select the organization where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="/azure/devops/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    that this token will authorize for *your specific tasks*.
@@ -38,7 +38,7 @@ ms.topic: include
 
 6. When you're done, make sure to *copy the token*. You'll use this token as your password.
 
-   <img alt="Use a token as the password for your Git tools or apps" src="/azure/devops/git/_shared/_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Use a token as the password for your Git tools or apps" src="_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
    > [!NOTE]
    > Remember that this token is your identity and acts as you when it's used. Keep your tokens secret and treat them like your password.
@@ -58,12 +58,12 @@ When you don't need your token anymore, just revoke it to remove access.
 
 	**Azure DevOps Services**
 
-	<img alt="Go to the organization home page, open your profile, go to Security" src="/azure/devops/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to the organization home page, open your profile, go to Security" src="_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
  
    **TFS 2017**
 
-	<img alt="Go to the TFS home page, open your profile, go to Security" src="/azure/devops/git/_shared/_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to the TFS home page, open your profile, go to Security" src="_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
 
 2. Revoke access.
 
-   <img alt="Revoke a token or all tokens" src="/azure/devops/git/_shared/_img/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Revoke a token or all tokens" src="_img/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />
