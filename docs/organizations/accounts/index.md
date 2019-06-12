@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -78,8 +78,7 @@ Sign up for an organization, add users, and manage permissions and access.
     * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage group-based licensing
-    * [Assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
-    * [Migrate to group-based resource management](migrate-to-group-based-resource-management.md)
+    * [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
     * [Remove direct assignments](remove-direct-assignments.md)
 
 ## Reference
