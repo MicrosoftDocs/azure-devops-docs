@@ -1,5 +1,5 @@
 ---
-title: Assign access levels, extensions to users by group membership
+title: Add group rule to assign access levels, extensions
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign group-based licensing for users in Azure Active Directory and Azure DevOps groups by adding a group rule.
@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/02/2019
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
-# Add a group rule to assign access levels and extensions to users
+# Add a group rule to assign access levels and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can assign an access level or extensions to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
 ## Prerequisites
 
-To manage licenses and group rules, you must be a project collection administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
+To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
 To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
 
-## Assign required licenses
+## Add group rule
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -37,7 +37,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
    ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-new.png)
 
-4. Select **Users** > **Group rules** . This view shows you all of your created group rules.
+4. Select **Users** > **Group rules**. This view shows you all of your created group rules.
 
    ![View group rules](_img/assign-access-levels/see-group-rules.png)
 
@@ -60,6 +60,31 @@ As users sign in to your organization, they're assigned access levels and extens
 1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or access levels.
 2. To see how many of each resource are missing, choose **Fix assignment errors**.
 3. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
+
+## Manage group members
+
+1. Highlight a group rule and from the command bar, select **Manage members**.
+
+   ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
+
+   > [!NOTE]
+   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
+
+2. Add members and select **Add**.
+
+   ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
+
+When the same access level or extension is assigned to the user both directly and through a group, the user consumes only one access level or extension. No additional licenses are required to perform the migration.
+
+## Verify group rule
+
+- Verify that the resources are applied to each group. On the **Group rules** tab, highlight a group and select **Summary**.
+
+- Verify individual user resources. On the **Users** page, highlight a user and select **Summary**.
+
+- Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
+
+Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization.
 
 ## Related articles
 
