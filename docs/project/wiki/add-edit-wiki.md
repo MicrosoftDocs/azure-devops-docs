@@ -38,7 +38,8 @@ While you author pages using [Markdown format](../../reference/markdown-guidance
 
 As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
-<img src="_img/wiki/wiki-save-with-message.png" alt="Save page with a custom message" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Save page with a custom message](_img/wiki/wiki-save-with-message.png)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -64,7 +65,8 @@ To add another page, choose **New page**. Or, to add a subpage, open the context
 
 Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming).
 
-<img src="_img/wiki/add-new-page.png" alt="Create wiki and first page" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Create wiki and first page](_img/wiki/add-new-page.png)
 
 You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
@@ -97,7 +99,8 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
 
-<img src="_img/wiki/wiki-move-page.png" alt="Move page in the hierarchy" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Move wiki page in the hierarchy](_img/wiki/wiki-move-page.png)
 
 For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
