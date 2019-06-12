@@ -55,7 +55,7 @@ Fields listed correspond to all those defined for the organization. For descript
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
 > [!NOTE] 
-> You can only add fields within a page on a form. You can't add a field to the gray area within the form. 
+> You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 
 1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
@@ -107,9 +107,10 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
+
 ### Add a picklist  
 
-1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. Add the items in the order you want them to appear in the list.
+1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. 
 
 	<img src="_img/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
 
@@ -122,7 +123,7 @@ You can add fields and specify the group and page where they should appear. Also
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong>  tab). 
  
 <!---
-2. To reorder the list, simply drag the item to where you want it in the list. 
+2. To reorder the list, simply drag the item to where you want it in the list. Add the items in the order you want them to appear in the list.
 
 	![Add a custom picklist](_img/process/customize-field-reorder-list.png)
 -->

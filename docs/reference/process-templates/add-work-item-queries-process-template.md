@@ -24,7 +24,7 @@ Work item queries specify criteria for generating a list of work items, such as 
 ::: moniker range="azure-devops-2019"
 
 > [!IMPORTANT]  
-> The default process templates define a few queries that appear under My Queries on the Queries page. They no no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
+> The default process templates define a few queries that appear under My Queries on the Queries page. They no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
 
 ::: moniker-end
 
