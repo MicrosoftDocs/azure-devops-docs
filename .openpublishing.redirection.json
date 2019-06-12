@@ -8422,7 +8422,7 @@
     },
     {
       "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
-      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -11412,7 +11412,12 @@
     },
     {
       "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management-in-vsts.md",
-      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management.md",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
       "redirect_document_id": false
     },
     {

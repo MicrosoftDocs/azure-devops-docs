@@ -26,7 +26,9 @@ You consume and publish packages through a particular feed.
    - Choose the upstream sources for your feed.
    - When you're done, select **Create**.
 
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+   > [!NOTE]   
+   > There are some considerations to keep in mind when working with upstream sources. Be sure to read [Upstream sources](../concepts/upstream-sources.md) Concepts for more information.
 
    > [!div class="mx-imgBorder"] 
    >![New feed dialog box](_img/new-feed-dialog-azure-devops-newnav.png)
@@ -51,7 +53,9 @@ You consume and publish packages through a particular feed.
    - Choose the upstream sources for your feed.
    - When you're done, select **Create**.
 
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+   > [!NOTE]   
+   > There are some considerations to keep in mind when working with upstream sources. Be sure to read [Upstream sources](../concepts/upstream-sources.md) Concepts for more information.
 
    ![New feed dialog box](_img/new-feed-dialog.png)
 

@@ -45,7 +45,7 @@
   items:
   - name: Features index
     href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: REST API Reference
+- name: REST API reference
   items:
   - name: Area and iteration paths
     href: /rest/api/vsts/wit/classification%20nodes
