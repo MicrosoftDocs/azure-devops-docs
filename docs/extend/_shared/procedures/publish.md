@@ -2,7 +2,7 @@ Once your extension has been packaged, you can upload it to the Marketplace unde
 
 To upload an extension to the Marketplace:
 
-1. Navigate to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher?managePageRedirect=true)
+1. Navigate to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/)
 2. Find the <b>Upload new extension</b> button, navigate to your packaged .vsix file, and select <i>upload</i>.
 3. After a quick validation, your extension will appear in the extensions list: 
     ![first](../../publish/_img/manage-first.png)
