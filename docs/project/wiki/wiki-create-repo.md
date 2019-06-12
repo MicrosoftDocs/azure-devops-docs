@@ -76,7 +76,7 @@ Provision a new Git repository that stores all your wiki pages and related artif
 > ![Create wiki, Git repo for your wiki](_img/wiki/wiki-create.png)
 ::: moniker-end
 
-If you don't have access to create a Wiki Git repository, the following message appears.
+If you don't have access to create a Wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 
 > [!div class="mx-imgBorder"]  
 > ![Insufficient permissions to create a Wiki repository](_img/wiki/wiki-security-no-contributor.png)
