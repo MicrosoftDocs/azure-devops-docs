@@ -140,8 +140,5 @@ The new repository should be created in a project you don't mind making public.
 ## Related articles
 
 - [Make a project public](make-project-public.md) 
-
-<!---
-[!INCLUDE [warning](_shared/warning-cross-link.md)]
-
--->
+- [Managing Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
+ 

@@ -66,7 +66,6 @@ Share information, create public projects, and collaborate with team members and
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Public Projects</h3>
                         <h3><a href="/azure/devops/organizations/public/index">Public Projects</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
