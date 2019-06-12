@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 05/09/2019
+ms.date: 06/05/2019
 ---
 
 ::: moniker range="azure-devops" 
@@ -97,7 +97,7 @@ Individual contributors can set their user preferences, enable features that are
 
 <a id="team" />
 
-## Team administrator role and managing teams
+## Team Administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
 
@@ -151,7 +151,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 
 <a id="project" />
 
-## Project administrator role and managing projects
+## Project Administrator role and managing projects
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
@@ -300,12 +300,14 @@ From the administrative **Project settings** pages, you can configure settings a
 </table>
 
 <a id="admin" />
-## Project collection administrator role and managing collections of projects 
+
+## Project Collection Administrator (PCA) role and managing collections of projects 
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
 
-::: moniker range=">= azure-devops-2019"   
+::: moniker range=">= azure-devops-2019"
+  
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
@@ -314,7 +316,8 @@ From the administrative **Organization settings** pages, you can configure setti
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= tfs-2018"
+
 **Project collection-level settings**  
 From the administrative pages for a collection, you can configure the settings shown in the following image. 
 
@@ -322,10 +325,12 @@ From the administrative pages for a collection, you can configure the settings s
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+
 ::: moniker-end
 
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
+
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>
@@ -452,6 +457,7 @@ For an overview of managing your organization, see [About organization managemen
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/config-tfs-resources).
 
 
@@ -534,6 +540,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
+
 For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/config-tfs-resources).
 
 
@@ -612,7 +619,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 <a id="admin" />
 
-## Server administrator role 
+## Server Administrator role 
 
 Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
 

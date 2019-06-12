@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
-ms.date: 06/30/2017
+ms.date: 06/12/2019
 ---
 
 # Choosing the right authentication mechanism
@@ -29,7 +29,7 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 | [Azure DevOps Services Extension](../../../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
-> The Azure DevOps API doesn't support non-interactive service access.
+> The Azure DevOps API doesn't support non-interactive service access via service principals.
 
 To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
 
