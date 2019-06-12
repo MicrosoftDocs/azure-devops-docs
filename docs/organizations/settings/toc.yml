@@ -24,6 +24,10 @@
   items:
   - name: Set test retention policies
     href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+- name: Audit
+  items:
+  - name: Azure DevOps auditing
+    href: azure-devops-auditing.md
 
 
 
