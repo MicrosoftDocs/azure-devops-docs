@@ -1,10 +1,7 @@
 - name: Sprints (Scrum) 
   href: index.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-- name: Overview
-
-  items:
-  - name: About sprints and Scrum
-    href: scrum-overview.md
+- name: About sprints and Scrum
+  href: scrum-overview.md
 - name: Quickstarts
   items:
   - name: Schedule sprints

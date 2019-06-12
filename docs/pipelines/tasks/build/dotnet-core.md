@@ -127,7 +127,7 @@ None
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Command</td><td>(Required) The dotnet command to run. Select 'Custom' to add arguments or use a command not listed here.</td></tr>
 <tr><td>Target feed location</td><td>(Required) Use 'internal' for this organization/collection. Use 'external' for an external NuGet server (including other accounts/collections).</td></tr>
-<tr><td>Path to NuGet package(s) to publish</td><td>(Required) The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with '-:'. Example: `**\*.nupkg;-:**\*.Tests.nupkg`</td></tr>
+<tr><td>Path to NuGet package(s) to publish</td><td>(Required) The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\*.nupkg;!**\*.Tests.nupkg`</td></tr>
 <tr><td>Target feed</td><td>(Required) Select a feed hosted in this organization. You must have Package Management installed and licensed to select a feed here.</td></tr>
 <tr><td>NuGet server</td><td>(Required) The NuGet service connection that contains the external NuGet server’s credentials.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

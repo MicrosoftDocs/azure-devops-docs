@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 06/11/2019
 ---
 
 # Define features and epics  
@@ -60,10 +60,10 @@ A feature typically represents a shippable component of software. An epic repres
 - Support integration with external services 
 - Support mobile apps
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
-
 <a id="view-portfolio-backlog" />
+
 ## View a backlog or portfolio backlog 
+
 To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don&#39;t see all three backlog levels&mdash;
 Epics, Features, and Backlog items&mdash;
 you can <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md)">enable them for your team</a>. 
@@ -118,17 +118,19 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 <a name="add-features-epics"></a>
 <a name="add-features"></a>
+
 ## Add features and epics 
+
 Just as you can [add items to your product backlog](create-your-backlog.md), you can add items to your features and epics backlogs. 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
+1. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
 
-1. Repeat this step to capture all your ideas as work items.  
+2. Repeat this step to capture all your ideas as work items.  
 
     Here, we've added six features.  
 
@@ -142,12 +144,12 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
+1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a feature](_img/features-epics/add-feature-standard.png) 
 
-1. Repeat this step until you've captured all your main ideas. 
+2. Repeat this step until you've captured all your main ideas. 
 
    Here, we've added six features.  
 
@@ -219,6 +221,7 @@ A subjective unit of measure that captures how the business value decreases over
 
 
 ## Add child items
+
 With your features defined, you're able to add child items to them. From any backlog, you can add child items. 
 You can add features to epics, and backlog items to features. 
 

@@ -1,12 +1,9 @@
 - name: Work items
   href: index.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-- name: Overview
-
-  items:
-  - name: About work items
-    href: about-work-items.md
-  - name: Quick reference
-    href: quick-ref.md
+- name: About work items
+  href: about-work-items.md
+- name: Quick reference
+  href: quick-ref.md
 - name: Quickstarts
   items:
   - name: "View & add work items"
