@@ -110,7 +110,8 @@ In addition to these team configurations, you can [customize a project](#customi
 ## Update work item status
 
 ::: moniker range=">= tfs-2015"
-Once you&#39;ve configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see <a href="../work-items/workflow-and-state-categories.md" data-raw-source="[Workflow states and state categories](../work-items/workflow-and-state-categories.md)">Workflow states and state categories</a>. 
+
+Once you&#39;ve configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
 
@@ -121,16 +122,10 @@ Once you've configured your Kanban board, you can add work items directly to the
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
 ## Display of leaf node work items  
-
-When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board. 
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
 
-To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
-::: moniker-end
 
 <a id="limits-multi-team" />
 

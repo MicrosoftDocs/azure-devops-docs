@@ -26,7 +26,7 @@ You can access the Analytics service data through the Power BI Desktop OData fee
    ::: moniker-end  
 1. Make sure you have configured the [permissions required to access the Analytics service](analytics-security.md).  
 
-2. Open Power BI Desktop. If you need to install it, [do that now](https://powerbi.microsoft.com/desktop).  
+2. Open Power BI Desktop. If you need to install it, [do that now](/power-bi/desktop-what-is-desktop).  
 
 3. Choose **Get Data** from either the welcome page or the Home ribbon.  
 
