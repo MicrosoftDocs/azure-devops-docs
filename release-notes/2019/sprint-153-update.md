@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 description: In the **Sprint 153 Update** of Azure DevOps, we are improving the Azure Boards integration with GitHub. 
 ---
 
