@@ -177,7 +177,7 @@ From a web browser, open the web portal administrative context for your team.
 ::: moniker range=">= azure-devops-2019"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-0. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile. 
 
@@ -225,7 +225,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker range=">= tfs-2017"  
 
-0. Open **Areas** for the team context.  
+1. Open **Areas** for the team context.  
 
    Here, we show the Areas for the Web team.  
 
@@ -249,7 +249,7 @@ The default area path determines the default area path assigned to work items th
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2015"  
-0. Open the Areas admin page for the team context.  
+1. Open the Areas admin page for the team context.  
 
     Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
 

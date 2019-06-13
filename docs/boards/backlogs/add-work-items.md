@@ -90,7 +90,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
-0. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
+1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Visual Studio, Team Explorer, Choose Work Items](../work-items/_img/view-add/open-work-items-vs-te-complete.png) 

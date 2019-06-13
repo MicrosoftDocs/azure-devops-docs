@@ -70,7 +70,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
@@ -101,7 +101,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
@@ -146,7 +146,7 @@ Once you've identified one or two, add them to your Kanban board.
 9. To reorder your swimlanes, simply grab the lane and move it up or down.   
 	<img src="_img/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
 
-10. If you need to delete a lane, first move all items out of the lane. Then, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Delete**.      
+1. If you need to delete a lane, first move all items out of the lane. Then, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Delete**.      
 
     ![Kanban board settings, Delete a swimlane](_img/ALM_EW_DeleteLane.png)
 

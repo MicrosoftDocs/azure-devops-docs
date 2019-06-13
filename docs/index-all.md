@@ -55,11 +55,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Plan and track work</h3>
-                                                        <p><a href="/azure/devops/boards/work-items/index">Work Items</a></p>
+                                                        <p><a href="/azure/devops/boards/work-items/quick-ref">Work Items</a></p>
                                                         <p><a href="/azure/devops/boards/boards/index">Boards (Kanban)</a></p>
                                                         <p><a href="/azure/devops/boards/backlogs/index">Backlogs</a></p>
                                                         <p><a href="/azure/devops/boards/sprints/index">Sprints (Scrum)</a></p>
-                                                        <p><a href="/azure/devops/boards/queries/index">Queries</a></p>
+                                                        <p><a href="/azure/devops/boards/queries/query-index-quick-ref">Queries</a></p>
                                                         <p><a href="/azure/devops/organizations/settings/work/inheritance-process-model">Process customization</a></p>
                                                         <p><a href="/azure/devops/boards/plans/index">Plans (Agile at scale)</a></p>
                                                         <p><a href="/azure/devops/project/feedback/index">Request Feedback</a></p>
@@ -108,7 +108,7 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Reporting</h3>
-                                                        <p><a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, &amp; Widgets</a></p>
+                                                        <p><a href="/azure/devops/report/dashboards/quick-ref">Dashboards, Charts, Reports, &amp; Widgets</a></p>
                                                         <p><a href="/azure/devops/report/powerbi/index">Power BI Integration</a></p>
                                                         <p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
                                                         <p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports (Legacy)</a></p>
@@ -177,7 +177,7 @@ featureFlags:
                                                         <p><a href="/azure/devops/organizations/accounts/index">Manage organizations</a></p>
                                                         <p><a href="/azure/devops/billing/index">Billing</a></p>
                                                         <p><a href="/azure/devops/notifications/index">Manage notifications</a></p>
-                                                        <p><a href="/tfs/index">Team Foundation Server</a></p>
+                                                        <p><a href="/azure/devops/server/admin/admin-quick-ref">Azure DevOps Server</a></p>
                                                         <p><a href="/azure/devops/migrate">Migration &amp; Import</a></p>
                                                     </div>
                                                 </div>

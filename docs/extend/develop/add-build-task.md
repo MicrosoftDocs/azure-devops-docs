@@ -24,6 +24,7 @@ To learn more about the new cross-platform build/release system, see [Team Found
 > **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
+
 In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
 
 - An **organization** in Azure DevOps Services, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
@@ -45,7 +46,7 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 |--- vss-extension.json             // extension's manifest
 ```
 
-### Developing in Unix versus Windows
+### Develop in Unix versus Windows
 
 This walkthrough was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
 

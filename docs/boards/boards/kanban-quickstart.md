@@ -52,7 +52,7 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 ## Add work items 
 
-0. To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
+1. To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -72,7 +72,7 @@ See the following topics to make the indicated customizations:
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
 
-0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
+1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
 1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
 

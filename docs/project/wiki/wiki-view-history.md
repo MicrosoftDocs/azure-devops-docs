@@ -131,7 +131,7 @@ Return to the wiki, refresh the browser, and you should see the reverted content
 
 To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the master branch for the wiki, and then create a pull request to the master branch.
 
-0. Create a local branch of the master wiki branch.
+1. Create a local branch of the master wiki branch.
 1. View the commit history and locate the commit that contains the changes you want to undo.
 2. Use the revert command to revert the desired commit.
 3. When a conflict arises, use the conflict resolution tools to resolve the issues.

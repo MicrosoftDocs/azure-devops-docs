@@ -52,7 +52,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 ## Open Settings for the board 
 
-0. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
+1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
 1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
@@ -88,7 +88,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 To quickly assign fields from the card without having to open the work item, add them to display on the card. 
 
-0. To configure the fields displayed on cards, choose the **Fields** tab. 
+1. To configure the fields displayed on cards, choose the **Fields** tab. 
 
 1. Check or uncheck those fields you want to display or not display on the board.
 
@@ -106,7 +106,7 @@ To quickly assign fields from the card without having to open the work item, add
 
 ## Customize columns
 
-0. To add a column or change column settings, choose **Columns** tab.
+1. To add a column or change column settings, choose **Columns** tab.
 
 	Here we choose ![plus icon](../../_img/icons/green_plus_icon.png) **Column**, and then specify the name as **Research**.  
 
@@ -117,7 +117,7 @@ To quickly assign fields from the card without having to open the work item, add
 
 ## Customize swimlanes 
 
-0. To add a swimlane, choose **Swimlanes** tab and choose ![plus icon](../../_img/icons/green_plus_icon.png) **Swimlane**, and then specify the name.  
+1. To add a swimlane, choose **Swimlanes** tab and choose ![plus icon](../../_img/icons/green_plus_icon.png) **Swimlane**, and then specify the name.  
 
 	Here we label the swimlane **Expedite**. 
 
@@ -130,7 +130,7 @@ To quickly assign fields from the card without having to open the work item, add
 
 If you decide you want to use Epics to track work, you can turn it on and it will show up as a board or backlog. By default, it isn't enabled for new projects.  
 
-0. Choose the **Backlogs** tab and uncheck the work item type you no longer want to track on backlogs and boards.
+1. Choose the **Backlogs** tab and uncheck the work item type you no longer want to track on backlogs and boards.
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Backlogs dialog, Turn Epics on ](_img/customize-boards/settings-backlogs-agile-dialog.png) 

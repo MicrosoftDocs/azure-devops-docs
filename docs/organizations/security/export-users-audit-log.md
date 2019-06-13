@@ -45,7 +45,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Choose **Users**, and then **Export users**. 
+1. Choose **Users**, and then **Export users**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Export users](_img/export-users-audit/export-new-nav.png)
@@ -56,7 +56,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-0. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Server settings**. 
+1. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Server settings**. 
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
@@ -77,7 +77,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-0. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon. The URL is similar to `http://myserver:8080/tfs`.
+1. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon. The URL is similar to `http://myserver:8080/tfs`.
 
 	![TFS 2015, Web portal, open the Server settings admin context](_img/ALM_CAL_OpenAdminPage.png)
 

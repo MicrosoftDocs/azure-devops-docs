@@ -106,7 +106,7 @@ To delete a view, click the ![ ](../_img/icons/actions-icon.png) actions icon an
 
 For a quick start, you can copy any view including [default Analytics Views](./analytics-default-views.md) and edit it.
 
-0. To copy a view click the ![ ](../_img/icons/actions-icon.png) actions icon to open the copy panel.
+1. To copy a view click the ![ ](../_img/icons/actions-icon.png) actions icon to open the copy panel.
 
 1. Provide the copy name description.
 1. Decide who can use this view. Set the radio to "Shared" if  you want to make this available to others. Learn more about [sharing Analytics Views](analytics-views-manage.md#share-views)and sharing option. All other definition is copied from the original view.

@@ -64,7 +64,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 > [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
+1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
    [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
 1. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  

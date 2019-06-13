@@ -27,7 +27,7 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) 
 can uninstall or disable extensions. 
 
-0. From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension
+1. From your TFS home page (```https://{server}:8080/tfs/```), go to the project collection where you want to uninstall or disable the extension
 
 1. Manage your extensions
 

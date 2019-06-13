@@ -68,7 +68,7 @@ Before you get started using Power BI to work with the Analytics service, make s
 
 ::: moniker range="azure-devops"
 
-0. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).  
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).  
 1. Configure the [permissions required to access the Analytics service](analytics-security.md).  
 2. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).  
 3. If you are not familiar with the Analytics service, read "[What is the Analytics service](what-is-analytics.md)" before continuing.
@@ -78,7 +78,7 @@ Before you get started using Power BI to work with the Analytics service, make s
 ::: moniker range="azure-devops-2019"
 
 
-0. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).  
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).  
 1. Install the [Analytics extension](../dashboards/analytics-extension.md).  
 2. Configure the [permissions required to access the Analytics service](analytics-security.md).  
 3. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).  

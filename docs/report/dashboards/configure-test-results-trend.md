@@ -75,7 +75,7 @@ In order to configure the Test Results Trend widget, you must have the following
 
 You can configure your Test Results Trend (Advanced) widget to show results for either build or release pipelines. 
 
-0. From your team's dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
+1. From your team's dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
 	
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    

@@ -44,6 +44,7 @@ With semantic search, you search against a more fully indexed set of fields. Wit
 ::: moniker-end     
 
 <a name="start-search"></a>
+
 ## Initiate a semantic search for work items
 
 With semantic search you can search: 
@@ -55,7 +56,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
     > [!div class="mx-imgBorder"]
     > ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
@@ -245,6 +246,7 @@ Use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries
 
 
 <a id="keywords" /> 
+
 ## Find items based on keywords or phrases
 
 Keywords or phrases that you type into the search box return a list of work items that contain those keywords or phrases in the **Description**, **Repro Steps**, or **Title** fields. You must enclose each phrase in quotation marks.
@@ -365,9 +367,9 @@ The following examples show how to use operators when you create a search string
 - [Work item field index](../work-items/guidance/work-item-field.md)     - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+## Q & A
 
-### Does the search box support less than/greater than operators?
+### Q: Does the search box support less than/greater than operators?
 
-No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
+**A:** No. The search box doesn't recognize comparison operators such as greater than (>) or less than (<). It translates queries with these operators into a search phrase.
 

@@ -60,15 +60,15 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 	![Team settings dialog, Backlogs tab](_img/select-nav-backlog-levels-config-ts.png)  
 
-0. When done with your changes, choose **Save**.  
+1. When done with your changes, choose **Save**.  
 
-0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
+1. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-0. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
@@ -88,7 +88,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 Requires TFS 2015.1 or later version. 
 
-0. From your web portal, choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
+1. From your web portal, choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
 
 	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)  
 

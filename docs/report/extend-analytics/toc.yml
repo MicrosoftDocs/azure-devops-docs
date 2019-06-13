@@ -1,11 +1,11 @@
 - name: Extend Analytics with OData (Preview)
-  href: index.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Quick reference
-  href: quick-ref.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: quick-ref.md
 - name: Query work item data 
-  href: wit-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: wit-analytics.md
 - name: "Project & organization-scoped queries" 
-  href: account-scoped-queries.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: account-scoped-queries.md
 - name: Tutorials
   items:
   - name: Query aggregate data
@@ -40,4 +40,7 @@
     href: odata-supported-features.md 
   - name: API versioning
     href: odata-api-version.md 
+  - name: OData batch support
+    href: odata-batch.md 
+
 

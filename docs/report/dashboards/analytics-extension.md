@@ -96,7 +96,7 @@ When you navigate to the Marketplace from your on-premises server, an error does
 
 If you choose to disable the Analytics extension, it will stop any jobs from running. Data from the Analytics service will be out of sync and associated features won't be available. However, no data is deleted.  Uninstalling the Analytics extension deletes the data from the Analytics database tables. Upon re-install of the extension, the data is re-populated from scratch.
 
-0. Open the extensions menu and choose **Manage Extensions**.
+1. Open the extensions menu and choose **Manage Extensions**.
 
    ![Manage extensions](_img/install-analytics/install-devops-extension-13.png)
 

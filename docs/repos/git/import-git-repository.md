@@ -134,7 +134,7 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 Although most of the time the import is successful, the following conditions can cause problems.
 
 * [What if my Source repository is behind two-factor authentication?](#what-if-my-source-repository-is-behind-two-factor-authentication)
-* [What if my source repository does not support multi_ack?](#what-if-my-source-repository-does-not-support-multiack)
+* [What if my source repository does not support multi_ack?](#multiack)
 * [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
 * [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
 * [Can I import from TFVC?](#can-i-import-from-tfvc)
@@ -144,6 +144,8 @@ Although most of the time the import is successful, the following conditions can
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
 Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+
+<a id="multiack" />
 
 ### What if my source repository does not support multi_ack?
 
@@ -156,6 +158,7 @@ This failure can happen when creating import request or while import is in progr
 ::: moniker range=">= tfs-2013"
 
 ### Can I import from previous versions of Team Foundation Server?
+
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
 
@@ -164,6 +167,7 @@ This happens because of a contract mismatch between the latest Azure DevOps Serv
 ::: moniker range=">= tfs-2017"
 
 ### Can I use MSA based credentials?
+
 Unfortunately, MSA (Microsoft Account, formerly Live ID) based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.
 One way to check if the username / password you are using are basic auth or not is to try using Git to clone your repository using the below format
 
@@ -198,6 +202,6 @@ To move over the LFS files (you will need both Git.exe and LFS client in the sam
 > [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
-> [Learn more about using Git in the Git tutorial](gitworkflow.md)
+> [Learn more about Git in the Git tutorial](gitworkflow.md)
 
 
