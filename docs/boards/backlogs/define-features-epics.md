@@ -72,7 +72,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
     ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -95,7 +95,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 ::: moniker range="<= tfs-2018"
 
-0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
+1. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
     > [!div class="mx-imgBorder"]
     > ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 

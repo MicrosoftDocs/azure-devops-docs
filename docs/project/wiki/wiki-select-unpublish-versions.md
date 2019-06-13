@@ -32,17 +32,17 @@ If your published wiki corresponds to a product version, you can publish new bra
 	> [!div class="mx-imgBorder"]  
 	> ![Create a new branch](_img/wiki/publish-wiki-create-branch-vert.png)
 
-0. To publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the branch picker, and then choose **Publish new branch**.
+1. To publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the branch picker, and then choose **Publish new branch**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish new version menu option](_img/wiki/publish-new-version-option.png)
 
-0. Complete the form, choosing the branch that you previously created.  
+1. Complete the form, choosing the branch that you previously created.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish new version dialog box](_img/wiki/publish-new-version.png)
 
-0. Select **Update**.
+1. Select **Update**.
 
 ::: moniker-end
 

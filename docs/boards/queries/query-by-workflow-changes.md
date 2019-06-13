@@ -39,6 +39,7 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 
 ## Supported operators and macros 
+
 Query clauses that specify an Identity or workflow-associated field can use the operators and macros listed in the following table. To learn what the field data type is, see the [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
 
 <table valign="top">
@@ -77,6 +78,7 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 Use the **In** and **Not In** operators when you want to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group, team security group, or other security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
 <a id="me"/>
+
 ## Identity based queries  
 
 You can use the search box or query editor to quickly find work items based on an assignment made to an **Identity** field. Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further which can help with performance. 
@@ -232,6 +234,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </table>
 
 <a id="workflow-change-who"/> 
+
 ## Workflow changes and Identity based queries
 
 You can quickly find items that you changed, resolved or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
@@ -268,7 +271,9 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 <a id="kanban_query_fields">  </a>
 ::: moniker range=">= tfs-2015"
+
 ## Kanban board change queries 
+
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 ::: moniker-end
 
@@ -298,11 +303,9 @@ For example, you can list items based on the team area path, and if they are in 
     <p>User Stories in the Code/Doing column</p>
 </td>
   <td>
-
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type = User Story</code></p>
-<p style="margin-bottom:0px"><code>And _ Board Column _ = _ Code</code></p>
-<p style="margin-bottom:0px"><code>And _ Board Column Done _ = _ False</code></p>
+<code>Work Item Type = User Story</code>
+<code>And _ Board Column _ = _ Code</code>
+<code>And _ Board Column Done _ = _ False</code>
 
   </td>
 </tr>
@@ -339,6 +342,7 @@ Items in any swimlane that contains &quot;Test&quot;
 ::: moniker range=">= tfs-2015"
 
 ## Workflow and Kanban board fields
+
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another, or you move an item in the [Kanban board](../boards/kanban-basics.md) to a different column or swimlane. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).

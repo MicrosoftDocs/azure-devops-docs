@@ -1,5 +1,6 @@
 ---
-title: Authenticating with personal access tokens | Azure DevOps Services REST APIs
+title: Authenticate with personal access tokens 
+titleSuffix: Azure DevOps
 description: Use personal access tokens to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 255E1E2B-9CB2-4FC3-8495-12DB4149A449
 ms.prod: devops
@@ -9,12 +10,14 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
-ms.date: 11/09/2018
+ms.date: 06/12/2019
 ---
 
-# Authenticating with personal access tokens
+# Authenticate with personal access tokens
 
-If you are working on a larger application or project we recommend you check out our [authentication guidance](authentication-guidance.md) page to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Please be aware that unless your users are using a credential manager (hyper link to below), they will have to enter their credentials each time.
+[!INCLUDE [temp](../../../_shared/version-ts-tfs-2015-2016.md)]
+
+If you are working on a larger application or project we recommend you review our [authentication guidance](authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Be aware that unless your users are using a credential manager (hyper link to below), they will have to enter their credentials each time.
 
 These APIs support [OAuth](oauth.md) for authorization and you should plan to use that. With Oauth your users 
 don't have to provide their Azure DevOps Services credentials to use when the APIs are called.
@@ -76,9 +79,9 @@ When your code is working, it&#39;s a good time to switch from basic auth to <a 
 Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
 
 
-## Q&A
+## Q & A
 
-#### Q: Can I use basic auth with all of the Azure DevOps Services REST APIs?
+### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops) only support [OAuth](oauth.md).
+**A:** No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops) only support [OAuth](oauth.md).
 

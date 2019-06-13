@@ -45,7 +45,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
+1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Sprints, for a team](_img/capacity/open-capacity-agile.png)
@@ -68,7 +68,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -96,7 +96,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= azure-devops-2019"
 
-0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select <strong>Add all team members</strong>. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select <strong>Add all team members</strong>. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
@@ -130,7 +130,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members-standard.png)  

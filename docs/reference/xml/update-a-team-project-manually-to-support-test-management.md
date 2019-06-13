@@ -41,13 +41,13 @@ The following steps provide support for the test experience available with TFS 2
   
 1. **Import the test plan and test suite WIT definitions**.  
   
-   0. If you don't have administrative permissions, [get them](../../organizations/security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
+   1. If you don't have administrative permissions, [get them](../../organizations/security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
   
    1. [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
    [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-   0. Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
+   1. Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
   
       ```  
       witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestPlan.xml"  

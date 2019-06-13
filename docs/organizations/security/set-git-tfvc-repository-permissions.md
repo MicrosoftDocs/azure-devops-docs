@@ -88,7 +88,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range="<= tfs-2018"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
@@ -118,7 +118,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
+1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Contributors** group, and then (5) the permission for **Manage branch**.
 
@@ -133,7 +133,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range="<= tfs-2018"
 
-0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
+1. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 

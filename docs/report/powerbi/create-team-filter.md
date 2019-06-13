@@ -79,7 +79,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
 9. From the **Home** tab, choose **New Source** to add another blank query and rename it to *AreaToTeam*.
 
-10. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
+11. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
 
     ```Query
     let

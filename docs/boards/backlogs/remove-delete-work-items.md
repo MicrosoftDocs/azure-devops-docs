@@ -36,7 +36,7 @@ You can remove work items added to your backlog or taskboard that aren't relevan
 
 > [!TIP]
 > You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
-> ::: moniker-end
+::: moniker-end
 
 In this article you'll learn:  
 
@@ -288,7 +288,7 @@ Changing the work item type refreshes the work item form with the fields defined
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
-0. Open a work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option. 
+1. Open a work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the ![ ](../_img/icons/change-type-icon.png) **Change type...** option. 
 
 	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
 
@@ -365,13 +365,14 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker-end
 
 <a id="delete"> </a> 
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Delete work items  
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
-0. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
+1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
 	To delete a single work item, open the work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
 
@@ -480,13 +481,9 @@ You restore deleted work items from the web portal Recycle bin.
 ::: moniker range="tfs-2015"  
 
 > [!NOTE]  
-> The <strong>Delete</strong> and <strong>Recycle bin</strong> features require TFS 2015.2 or later version.  
+> The <strong>Delete</strong> and <strong>Recycle bin</strong> features require TFS 2015.2 or later version. 
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015"
-
-0. Choose <strong>Work>Backlogs</strong> or <strong>Work>Queries</strong> and then choose the <strong>Recycle bin</strong>.  
+1. Choose <strong>Work>Backlogs</strong> or <strong>Work>Queries</strong> and then choose the <strong>Recycle bin</strong>.  
  
 	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
 
@@ -529,7 +526,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
-0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 
@@ -548,7 +545,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
-0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 
@@ -568,7 +565,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 ::: moniker range="tfs-2015"  
 
-0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
 
@@ -592,7 +589,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 ::: moniker range="tfs-2013"  
 
-0. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
 
@@ -614,6 +611,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ## Related articles   
 
 ::: moniker range=">= tfs-2018"  
+
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)

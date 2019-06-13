@@ -76,7 +76,7 @@ You must be a member of the Contributors group of your team project to migrate w
 
 9. Remove all files from "LocationA" (if any) apart from the git related files such as .gitignore etc.
 
-10. Copy all files from "LocationC" and paste them into "LocationA".
+11. Copy all files from "LocationC" and paste them into "LocationA".
 
 11. Run **git add .** to stage all the newly added files in  "LocationA" for the commit.
   

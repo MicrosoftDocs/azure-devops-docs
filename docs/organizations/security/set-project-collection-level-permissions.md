@@ -80,12 +80,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-0. Choose **Project Administrators** group, **Members**, and then **Add**.  
+1. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-0. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+1. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -93,12 +93,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
@@ -125,7 +125,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ## Change the permission level for a project-level group 
 
-0. From the **Security** page, choose the group whose permissions you want to change. 
+1. From the **Security** page, choose the group whose permissions you want to change. 
 
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
@@ -147,7 +147,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert-2.png)  
@@ -179,7 +179,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="<= tfs-2018"
 
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
+1. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  

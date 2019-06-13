@@ -49,7 +49,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker range=">= azure-devops-2019"  
 
-0. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
    > [!div class="mx-imgBorder"]  
    > ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
@@ -74,7 +74,7 @@ The following example shows how to find all closed bugs by modifying the
 
 ::: moniker range="<= tfs-2018"  
 
-0. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
    ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
 
@@ -255,7 +255,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"	 
+::: moniker range="<= tfs-2015"  
 
 ![Tree Query, editor](_img/15.png)  
 

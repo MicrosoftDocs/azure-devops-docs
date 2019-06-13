@@ -24,6 +24,7 @@ Here you'll find detailed descriptions of each field data type, query operators,
 For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md).
 
 <a id="field-values" /> 
+
 ## Query field data types and values
 
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
@@ -43,7 +44,6 @@ The value you specify for a field must conform to the data type for that field. 
     <td><p><strong>Boolean</strong><sup>1</sup> </p></td>
     <td><p>Specifies a field that takes on a True/False value. </p>
 </td></tr>
-
 <tr>
     <td><p><strong>DateTime</strong> or<br/><strong>Date/Time</strong></p></td>
     <td><p>A date field in which you can specify a variable, such as <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> or <strong><xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See <a href="../../organizations/settings/set-your-preferences.md" data-raw-source="[Set personal preferences](../../organizations/settings/set-your-preferences.md)">Set personal preferences</a> for details.) For query examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or@CurrentIteration](query-by-date-or-current-iteration.md)">Query by date or@CurrentIteration</a>. </p> <p>For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see <a href="wiql-syntax.md" data-raw-source="[Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)">Syntax for the Work Item Query Language (WIQL)</a>. </td></tr>
@@ -100,6 +100,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 
 <a id="operators" /> 
+
 ## Query operators
 
 You can use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md).
@@ -232,6 +233,7 @@ You can use query operators in the following table to specify how each value in 
 
 <a id="variables" /> 
 <a id="macros" /> 
+
 ## Query macros or variables
 
 You can use the macros described in the following table to filter your queries based on specific fields. 
@@ -351,6 +353,7 @@ You can use the macros described in the following table to filter your queries b
 
 
 <a id="full-text" /> 
+
 ## Full-text and partial word searches
 
 Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.

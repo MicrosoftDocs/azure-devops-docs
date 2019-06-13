@@ -123,18 +123,18 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
-0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+1. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
-0. Choose the product or portfolio backlog from the board-selection menu. 
+1. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-0. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+1. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)

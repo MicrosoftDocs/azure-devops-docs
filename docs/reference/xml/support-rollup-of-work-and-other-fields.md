@@ -125,7 +125,7 @@ Like Project, Project Server natively supports rollup of summary tasks. If you h
 > [!IMPORTANT]
 > TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md).
 > 
-> ::: moniker-end 
+::: moniker-end 
 
 <a name="requirements"></a>   
 ##  Rollup requirements  

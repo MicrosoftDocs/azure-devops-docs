@@ -73,7 +73,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-0. From the **Analytics view>All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+1. From the **Analytics view>All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/edit-default-view-last-30-days.png)  
@@ -96,7 +96,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Connect to an Analytics view on Azure DevOps Server 
 
-0. Open Power BI Desktop.  
+1. Open Power BI Desktop.  
  
 1. Choose **Get Data**, **Online Services**, **Azure DevOps Server (Beta)**, and then choose **Connect**. 
 
@@ -124,7 +124,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Connect to an Analytics view 
 
-0. Open Power BI Desktop.  
+1. Open Power BI Desktop.  
  
 1. Choose **Get Data**, **Online Services**, **Azure DevOps (Beta)**, and then choose **Connect**. 
 
@@ -150,7 +150,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Create a daily trend report 
 
-0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
+1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
 
     > [!div class="mx-imgBorder"]  
     > ![Select work item field](_img/create-report/select-line-chart-work-id.png)  
@@ -189,7 +189,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Create a card to show the latest active stories count
 
-0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
 1. Select the card visual, add the **Work Item Id** field, and then drag the **State** and **Work Item Type** fields under Page level filters. Filter the State to show Active, and filter the Work Item Type for Bugs. 
 

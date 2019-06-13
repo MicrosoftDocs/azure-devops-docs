@@ -120,11 +120,14 @@ The new web form provides a number of experiences not provided with the old web 
 
 
 <a id="portal-clients"></a>  
+
 ## Track work in the web portal 
+
 You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md). 
 
 
 ## Web portal and clients that support tracking work items  
+
 You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
 
 ### Web portal 
@@ -136,6 +139,7 @@ Use the web portal to accomplish the following tasks.
 
 <a id="assign" />
 <a id="assign-work-items"></a>
+
 ## Assign work items to a project member
 
 You can only assign a work item to one person at a time. The **Assigned To** field is a person-name field designed to hold an user identity recognizable by the system. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few. 
@@ -180,6 +184,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
 <a id="assign-to-sprint"></a>
+
 ## Assign work items to a sprint 
 
 To schedule work items to be worked on during a specific time period, you assign the **Iteration Path**. First, you define the Iteration Paths for use in the project, and then each team selects the Iteration Paths that they'll use. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md). 
@@ -217,6 +222,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 
 
 <a id="customize" />
+
 ## Customize a WIT 
 
 ::: moniker range="azure-devops"

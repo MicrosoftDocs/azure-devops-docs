@@ -23,7 +23,7 @@ The <strong>@mention</strong> control allows you to quickly pull someone into a 
 ::: moniker range="tfs-2015"
 > [!NOTE]
 > The <strong>@mention</strong> control is available from TFS 2015 Update 2 and later versions.
-> ::: moniker-end
+::: moniker-end
 
 <a id="mention-person-id">  </a>
 

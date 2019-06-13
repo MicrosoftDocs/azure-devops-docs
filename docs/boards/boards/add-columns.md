@@ -104,7 +104,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
@@ -144,7 +144,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"  
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
@@ -182,7 +182,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
@@ -214,7 +214,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 ::: moniker range="tfs-2015"  
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
 1. the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open the common configuration settings dialog for the Kanban board. 
 
@@ -264,7 +264,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 9. To change the column order, use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons. 
 
-10. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
+1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
 
 11. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
@@ -274,7 +274,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 ::: moniker range="tfs-2013"  
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
 1. Choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open Customize Columns.  
 

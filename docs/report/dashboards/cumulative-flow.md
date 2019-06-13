@@ -84,7 +84,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 ## Configure the CFD widget    
 
-0. For a continuous flow diagram, select Rolling period and specify the number of days you want to view on the chart.  
+1. For a continuous flow diagram, select Rolling period and specify the number of days you want to view on the chart.  
 
 	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process.  
 

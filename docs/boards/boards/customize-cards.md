@@ -127,7 +127,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
@@ -154,7 +154,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
@@ -182,7 +182,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker range="tfs-2015"  
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
@@ -221,7 +221,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog. 
 
@@ -248,7 +248,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
 
@@ -273,7 +273,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker range="tfs-2015" 
 
-0. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
 1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
 
@@ -380,7 +380,7 @@ Prior to setting tag colors, first [add tags to backlog items](../../boards/quer
 Requires TFS 2015.1 or later version.  
 ::: moniker-end   
 
-0. Open the Settings dialog for the Kanban board you want to customize. 
+1. Open the Settings dialog for the Kanban board you want to customize. 
 
 1. Choose **Tag colors** and then choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
 

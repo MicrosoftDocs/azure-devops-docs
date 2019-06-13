@@ -27,18 +27,20 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 In this article you'll learn:  
 
 ::: moniker range=">= tfs-2015"
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
 > * Add or remove tags from several work items  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
+
 ::: moniker-end
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
@@ -259,11 +261,17 @@ All of the following actions can be performed by team members that belong to the
 To start a bulk edit, begin by multi-selecting the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../queries/using-queries.md). 
 
 ::: moniker range=">= tfs-2015"
+
 Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results. 
+
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
-(Requires TFS 2015.1 or later versions)  
+
+Requires TFS 2015.1 or later versions.
+
 ::: moniker-end
+
 You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position), assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
@@ -300,6 +308,7 @@ The menu options available to you change depending on the platform you work from
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
+
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
@@ -333,7 +342,9 @@ Here, we use the context menu to move several non-sequential items to the curren
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
+
 ![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](_img/backlog-multi-select-non-sequential-items.png)  
+
 ::: moniker-end
 
 > [!TIP]  
@@ -342,7 +353,9 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 <a id="move-iteration"> </a> 
 <a id="assign-to"> </a>  
+
 ## Reassign work items 
+
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ::: moniker range=">= tfs-2017"
@@ -360,6 +373,7 @@ With work items selected, open the context menu for any selected item, and reass
 To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
+
 ## Edit one or more fields  
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
@@ -368,8 +382,8 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-> [!div class="mx-imgBorder"]  
-> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
@@ -391,6 +405,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 <!---#### TFS 2015, TFS 2013-->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
@@ -404,11 +419,14 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 <a id="tags"></a>
+
 ## Bulk modify tags 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
@@ -421,14 +439,16 @@ Here we choose to add the *Service* tag to the selected work items.
 > [!div class="mx-imgBorder"]
 > ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
 > 
-> ::: moniker-end
+::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 Here we choose to add the *Beta* tag to the selected work items. 
 
 ![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
 
-Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+ 
 ::: moniker-end 
 
 ## Related articles
@@ -443,6 +463,7 @@ For large scale, organizational moves, use the REST API calls for [Work item bat
 At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ### Add multiple values to a field  
+
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
 
 

@@ -31,7 +31,7 @@ Before you clone a Hosted XML process, we recommend that you review [Supported o
 ## Sequence of steps
 
 The general sequence of steps to support clone are:  
-0. Open **Settings>Process** 
+1. Open **Settings>Process** 
 1. Choose the Hosted XML process you want to clone and select **Clone process to inheritance** from its context menu
 2. Verify the customizations that are present in the inherited process created as part of the clone
 3. Manually reapply customizations that were ignored during clone
@@ -42,7 +42,7 @@ The general sequence of steps to support clone are:
 
 ## Clone a Hosted XML process to an Inheritance process 
 
-0. Open the &hellip; context menu for the Hosted XML process and choose the **Clone process to inherited** option. 
+1. Open the &hellip; context menu for the Hosted XML process and choose the **Clone process to inherited** option. 
 
 	Here we open the menu for the Design Agile Process. 
 
@@ -73,7 +73,7 @@ The general sequence of steps to support clone are:
 
 We recommend that you create a test project based on the inherited process created in the previous step to verify the customizations preserved and any additional changes you make to it. 
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/migration/create-team-project-inherited-process.png)  
