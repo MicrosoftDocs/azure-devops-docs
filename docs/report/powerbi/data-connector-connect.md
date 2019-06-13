@@ -26,10 +26,10 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range="azure-devops"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop). 
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 4. [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/). 
+4. Review the [knowledge base of Power BI articles](/power-bi). 
 5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end
@@ -37,9 +37,9 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range="azure-devops-2019"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop). 
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/). 
+4. Review the [knowledge base of Power BI articles](/power-bi). 
 5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end

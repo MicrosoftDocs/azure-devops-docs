@@ -43,7 +43,7 @@ In order to create a Power BI report that references an Analytics view, you must
 * If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 * Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics service](/azure/devops/report/powerbi/analytics-security).
-* Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+* Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 * Have tracked bugs for some period of time on which to generate a trend report. 
 
 [!INCLUDE [temp](../_shared/analytics-open.md)] 

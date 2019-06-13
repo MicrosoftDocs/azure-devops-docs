@@ -224,7 +224,7 @@ To ungroup a clause, choose the ![ ](../_img/icons/ungroup-clause.png) ungroup c
 
 ## Use a tree query to view hierarchies  
 
-Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.  
+Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) nodes to focus on different parts of the tree.  
 
 ::: moniker range=">= azure-devops-2019"  
 
