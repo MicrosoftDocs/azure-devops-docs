@@ -172,7 +172,7 @@ For more information about applying field rules and restrictions, see [Apply a r
 ## To add a custom field
 To add a custom field, edit the WIT definition to add a **FIELD** element within the **FIELDS** section and a **Control** element within the **FORM** section. 
 
-0. Export the WIT definition file [based on the process model you use](customize-work.md).   
+1. Export the WIT definition file [based on the process model you use](customize-work.md).   
 
 1. Locate the section of the XML file that begins with ```FIELDS```.
 
@@ -232,7 +232,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 ## To change the field label on a work item form
 To modify the field label, change the value assigned to the ```Control``` element ```Label``` attribute. To remove a field from the work item form, delete the ```Control``` element associated with the field. 
 
-0. Export the WIT definition file according to your process model.
+1. Export the WIT definition file according to your process model.
 
 1. In the `FORM` and `Layout` sections, find the definition of the field you want to modify. This example modifies the label for the **Title** field:
 

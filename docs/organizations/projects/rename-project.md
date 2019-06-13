@@ -34,7 +34,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/choose-rename-menu-option.png)
 
-0. Edit the name. 
+1. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/rename-project-dialog.png)
@@ -45,7 +45,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker range="tfs-2015"
 
-0. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
+1. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
 
 	![Enter a new project name](_img/rename-project/collection-rename.png)
 

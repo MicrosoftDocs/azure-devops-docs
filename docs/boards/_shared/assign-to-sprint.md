@@ -9,7 +9,7 @@ ms.topic: include
 ::: moniker range=">= azure-devops-2019"
 From any product, sprint, or portfolio backlog, you can drag a multi-selected list of work items and drop it onto a sprint in the **Planning** pane to change it's iteration path. (Not supported for users with **Stakeholder** access.)
 
-0. To open the **Planning** pane, choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options icon and select **Planning**. You can choose to set **In Progress items** to On or Off. 
+1. To open the **Planning** pane, choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options icon and select **Planning**. You can choose to set **In Progress items** to On or Off. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Planning](/azure/devops/boards/sprints/_img/define-sprints/view-options-planning-menu.png)

@@ -69,7 +69,7 @@ From your web browser, open your product backlog.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -122,7 +122,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To view Parents or a tree hierarchy, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
+1. To view Parents or a tree hierarchy, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
@@ -161,7 +161,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)

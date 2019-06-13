@@ -63,7 +63,7 @@ To open the Features board from the User Stories board, choose **Features** from
 
 ## Add user stories  
 
-0. From the User Stories board, choose **New item** and start adding those stories you want to track. 
+1. From the User Stories board, choose **New item** and start adding those stories you want to track. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add new item](_img/plan-track-work/new-user-story-kanban-board.png) 
@@ -78,7 +78,7 @@ To open the Features board from the User Stories board, choose **Features** from
 
 ## Add details to a user story
 
-0. Choose the user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../_img/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
+1. Choose the user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../_img/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
    For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
@@ -181,7 +181,7 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 
 Task checklists provide a quick and easy way to track elements of work which are important to support completing a user story. In addition, you can assign individual tasks to different team members. 
 
-0. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](_img/plan-track-work/add-child-task.png) 
@@ -206,7 +206,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 
 ## Add details to a task
 
-0. If you have details you want to add about a task, choose the title, to open it. Change one or more field values, add a description, or make a note in the **Discussion** section.
+1. If you have details you want to add about a task, choose the title, to open it. Change one or more field values, add a description, or make a note in the **Discussion** section.
 
 	Here we assign the task to Christie Church.   
 

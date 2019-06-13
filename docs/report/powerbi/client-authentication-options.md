@@ -75,7 +75,7 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 ## Create a Personal Access Token  
 
-0. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
+1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
 
 	![User Profile, My Security menu option](../../_shared/_img/open-security.png)  
 

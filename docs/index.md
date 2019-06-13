@@ -275,7 +275,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -313,7 +312,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -367,9 +365,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -401,8 +396,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -452,7 +445,7 @@ featureFlags:
                             <a href="/azure/devops/organizations/billing/index">Billing</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/security/index">Security</a>
+                            <a href="/azure/devops/organizations/security/index">Security & Permissions</a>
                         </p>
                         <p>
                             <a href="/azure/devops/notifications/index">Notifications</a>
@@ -614,8 +607,6 @@ featureFlags:
             </div>
         </div>
     </li> 
-
-
 </ul>
     </div>
 </div>

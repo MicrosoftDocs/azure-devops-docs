@@ -48,7 +48,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 From your web browser, open your product backlog.  
 
 ::: moniker range=">= azure-devops-2019"
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Boards, Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 

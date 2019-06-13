@@ -56,12 +56,12 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-0. Under **Groups**, choose one of the following options:
+1. Under **Groups**, choose one of the following options:
    * To add users who require read-only access to the project, choose **Readers**.
    * To add users who contribute fully to this project or who have been granted Stakeholder access, choose **Contributors**.
    * For users who need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
-0. Next, choose the **Members** tab.
+1. Next, choose the **Members** tab.
 
    Here we choose the **Contributors** group.
 
@@ -94,7 +94,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
@@ -149,7 +149,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-0. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
@@ -189,7 +189,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker range="<= tfs-2018"
 
-0. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
+1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
 	![Project Settings, Overview page, Choose team](_img/add-users/overview-page-select-team.png) 
 

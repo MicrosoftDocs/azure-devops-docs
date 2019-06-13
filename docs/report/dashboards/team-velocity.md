@@ -44,12 +44,12 @@ There are two velocity charts, the one you access by adding the Velocity widget 
 ## Add the widget to your dashboard   
 
 ::: moniker range="azure-devops"
-0. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-0. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.  
+1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.  
 1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
@@ -60,7 +60,7 @@ There are two velocity charts, the one you access by adding the Velocity widget 
 
 You configure your velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team which rolls up from several teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-0. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
+1. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
 	
 	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 

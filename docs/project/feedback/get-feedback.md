@@ -25,7 +25,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 > [!NOTE]
 > You can also [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
 > 
-> ::: moniker-end
+::: moniker-end
 
 ## Prerequisites
 
@@ -93,7 +93,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 ::: moniker range="azure-devops"  
 
-0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
 
@@ -117,7 +117,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019" 
-0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
 

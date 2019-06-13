@@ -56,7 +56,7 @@ To learn more about extensions, see [Install free extensions](../../../marketpla
 
 You can [browse the Marketplace](https://marketplace.visualstudio.com/search?term=control%20group%20tab%20page&target=vsts&category=Plan%20and%20track&hosting=cloud&sortBy=Relevance) to determine what extension(s) you want to add.
 
-0. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
+1. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
@@ -80,7 +80,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 <a id="add-field-control"></a>
 ## Add a field-level contribution or custom control 
 
-0. Install the [custom control](#add-extension) as discussed in the previous section.  
+1. Install the [custom control](#add-extension) as discussed in the previous section.  
   
 1. Open **Settings>Work>Process** from a work item form. For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
 

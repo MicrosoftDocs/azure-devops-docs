@@ -69,7 +69,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 ::: moniker range=">= azure-devops-2019"
-0. (1) Check that you have selected the right project, then (2) choose **Boards** > **Work Items**. 
+1. (1) Check that you have selected the right project, then (2) choose **Boards** > **Work Items**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Boards>Work Items](../../boards/work-items/_img/view-add/open-work-items-agile.png)
@@ -113,7 +113,7 @@ You can start viewing and adding work items once you connect to a project.
 
 ::: moniker range="tfs-2017 || tfs-2018"
 
-0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
+1. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
 
 	![Work, Add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
 
@@ -129,7 +129,7 @@ You can start viewing and adding work items once you connect to a project.
 
 ::: moniker range="<= tfs-2015"
 
-0. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
+1. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
 
 	![Azure DevOps Server 2015, Azure DevOps Server 2013-Queries page, Add a work item](_img/stakholder-add-work-item-tfs-queries-page.png)  
 
@@ -160,7 +160,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you selected the right project, (2) choose **Boards** >  **Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you selected the right project, (2) choose **Boards** >  **Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Boards>Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -195,7 +195,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -214,7 +214,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 ::: moniker-end
 ::: moniker range="<= tfs-2015"
 
-0. From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
+1. From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
 	![Boards>backlogs, TFS 2015, 2013 web portal](../../boards/backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
@@ -246,7 +246,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Open your Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
@@ -268,7 +268,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
 	![Open Portfolio Kanban board, Features](../../boards/boards/_img/quickstart/open-kanban-board.png)
 
@@ -289,7 +289,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range="<= tfs-2015"
 
-0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
 	![Open Portfolio Kanban board, Features](../../boards/boards/_img/quickstart/open-kanban-board.png)
 
@@ -314,7 +314,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Boards>Work Items**, and then select **Assigned to me**. 
+1. Choose **Boards>Work Items**, and then select **Assigned to me**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
@@ -326,7 +326,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range="<= tfs-2018"
 
-0. Open **Work>Queries** and select **Assigned to me** to see the list of work items assigned to you.  
+1. Open **Work>Queries** and select **Assigned to me** to see the list of work items assigned to you.  
 
 	![Queries page, items assigned to you](_img/work-as-a-stakeholder-query.png)  
 

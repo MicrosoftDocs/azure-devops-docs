@@ -53,7 +53,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
 
-0. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
+1. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
 
    ```  
    witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"  
@@ -249,7 +249,7 @@ After you have completed the upgrade tasks that are described earlier in this to
 
 ##  Additional information about changes made when upgrading TFS  
 
- When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2010. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
+ When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2011. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
 
 -   [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)  
 -   [Update a customized process template to access new features](../update-customized-process-template.md)    

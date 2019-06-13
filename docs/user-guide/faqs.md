@@ -110,9 +110,9 @@ Yes. You can connect to a project from one of the following clients:
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
 
-::: end-moniker
+::: moniker-end
 
-::: moniker range="= tfs-2017"
+::: moniker range="tfs-2017"
 
 >[!NOTE]  
 >Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details.  

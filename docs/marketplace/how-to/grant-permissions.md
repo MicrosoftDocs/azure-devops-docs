@@ -42,7 +42,7 @@ Add users or update permission settings:
 
 To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
-0. At the server level, create a group, for example, "TFS Extension Publishers":
+1. At the server level, create a group, for example, "TFS Extension Publishers":
 
    ```
    tfssecurity /gcg "TFS Extension Publishers" "publishers who can manage extensions for the server" /server:ServerURL

@@ -43,7 +43,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 9. Choose **Schedule Refresh**.  
 
-10. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
+11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
       <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 

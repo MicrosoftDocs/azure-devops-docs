@@ -238,7 +238,7 @@ If you add the field back to the form, then the history for it is restored.To de
 
 	<img src="_img/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 1px solid #C3C3C3;" />   
 
-0. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
+1. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
 
 <a id="revert">  </a>
