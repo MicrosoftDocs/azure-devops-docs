@@ -64,7 +64,7 @@ Use the Feature work item type when you want to group user stories (Agile), issu
 
 <a id="nested" > </a>
 
-<a id="leaf-nodes" > </a>  
+
 <a id="bugs-as-tasks" > </a>
 ## Track bugs as requirements or tasks  
 
@@ -80,25 +80,21 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 > [!div class="mx-imgBorder"]  
 > ![Link bugs like tasks](_img/resolve/bugs-as-tasks.png)  
 
-
-::: moniker range="<= tfs-2018"
-
+<a id="leaf-nodes" > </a>  
 ## How backlogs and boards display hierarchical (nested) items
 
-Note that in TFS 2018 and earlier versions, the Kanban board, sprint backlog, and taskboard only show the last node in a same-category hierarchy, called the leaf node. 
-
-::: moniker-end
+For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]   
-For TFS 2018.2 and later versions, Kanban boards and taskboards display all work items of nested same-category work items.  
+For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-### Product backlog and Kanban board
+### Product backlog and Kanban boards
 
 For example, if you link items within a same-category hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and taskboard.
 
@@ -112,27 +108,27 @@ As shown in the following images, the third user story, *Interim save on long fo
 
 ![Kanban board, leaf node bug appears](_img/resolve/bugs-appear-on-board.png)  
 
+::: moniker-end
+
 <a id="bugs-as-tasks" > </a>
 
-### Sprint backlog and taskboard
+### Sprint backlogs and taskboards
 
 When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and taskboard.  
 However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and taskboard, but not the bug. 
 
-**Hierarchy of items assigned to the sprint backlog**  
+**Hierarchy of items assigned to a sprint backlog**  
 
 ![Sprint backlog query shows linked bug and task ](_img/resolve/sprint-backlog-hierarchy.png)   
 
-**Only leaf nodes appear on the sprint backlog**  
+**Only leaf nodes appear on sprint backlogs**  
 
 ![Sprint backlog, leaf node task ](_img/resolve/sprint-backlog-leaf-only.png)  
 
-**Only leaf nodes appear on the taskboard**   
+**Only leaf nodes appear on taskboards**   
 ![Sprint board, leaf node task appears](_img/resolve/bugs-appear-on-taskboard.png)  
-
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 
 
-::: moniker-end
 
 ## Related articles
 
