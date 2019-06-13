@@ -158,7 +158,7 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 
 Task checklists provide a quick and easy way to track elements of work which are important to support completing an issue. 
 
-0. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](_img/track-issues/add-tasks.png) 
@@ -182,7 +182,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 
 ## Add details to a task
 
-0. If you have details you want to add about a task, choose the title, to open it. Change one or more field values, add a description, or make a note in the **Discussion** section.
+1. If you have details you want to add about a task, choose the title, to open it. Change one or more field values, add a description, or make a note in the **Discussion** section.
 
 	Here we assign the task to Jamal.   
 

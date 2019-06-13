@@ -107,7 +107,7 @@ Removing an inherited field from a form simply hides the field from displaying o
 ## Add a custom page  
 Add a custom page when you have several custom fields that you want to group within that page. You can add and reorder custom pages. 
 
-0. From the Layout page of the WIT you've selected, click **New page**.    
+1. From the Layout page of the WIT you've selected, click **New page**.    
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, Work Item Types, Bug: Layout, New page option](_img/process/cpform-add-page.png)   

@@ -36,7 +36,7 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 ## Install and configure SharePoint  
 
-0. Install all Windows updates before installing SharePoint.
+1. Install all Windows updates before installing SharePoint.
 
 1. **For SharePoint 2013**, install or verify your SharePoint environment. See [Manually Install SharePoint products](/azure/devops/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).     
 	- Run the SharePoint preparation tool
@@ -45,9 +45,9 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 	- Configure Excel Services (SharePoint Server & SharePoint Server Enterprise Edition)
 	- Configure Secure Store Service (SharePoint Server & SharePoint Server Enterprise Edition).
 
-2. **For SharePoint 2010**, see [Install and Configure SharePoint Integration on a Stand-alone Server](https://technet.microsoft.com/library/bb677368(v=sql.105).aspx).  
+1. **For SharePoint 2010**, see [Install and Configure SharePoint Integration on a Stand-alone Server](https://technet.microsoft.com/library/bb677368(v=sql.105).aspx).  
 
-3. **For integration with an existing SharePoint server**, verify that your SharePoint Products installation meets the following guidelines. For details, see [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint).  
+1. **For integration with an existing SharePoint server**, verify that your SharePoint Products installation meets the following guidelines. For details, see [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint).  
    - The administration site and default website are running, and other computers on the network can access them
    - SharePoint uses NTLM, the recommended authentication (Basic authentication is not supported by Team Foundation Server extensions for SharePoint Products)
    - If you are using a supported Enterprise edition of SharePoint Server, you must configure settings for dashboard compatibility.

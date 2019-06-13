@@ -484,7 +484,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 > "url": "https://dev.azure.com/mseng/_apis/wit/fields/System.IterationPath"
 > }
 > ```
-> ::: moniker-end
+::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
@@ -549,6 +549,7 @@ https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPat
 ::: moniker-end
 
 ::: moniker range="< azure-devops"  
+
 ### List attributes using witadmin command line tool
 
 You can list select field attributes&mdash;such as the data type, reportable attributes, and indexing&mdash;using the [**witadmin listfields** command](../../reference/witadmin/manage-work-item-fields.md). 
@@ -578,6 +579,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 
 
 <a id="wi-explorer">  </a>
+
 ## Work Item Field Explorer 
 
 You can look up the assignments of field attributes using the Work Item Field Explorer tool.  
@@ -585,12 +587,16 @@ You can look up the assignments of field attributes using the Work Item Field Ex
 ![Work item field explorer](_img/fields/work-item-field-explorer.png)
 
 ::: moniker range=">= tfs-2017" 
+
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio). [Install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../reference/process/new-work-item-experience.md). 
+
 ::: moniker-end
 
 
 ::: moniker range="<= tfs-2015"
+
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio) by installing the [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
@@ -602,12 +608,15 @@ You can change how work tracking fields map to fields in Project, and you can ch
 ::: moniker-end  
 
 ## Add and modify fields   
+
 ::: moniker range="azure-devops"  
 
 To add fields to a process, you add them to one or more work item types. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 

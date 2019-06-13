@@ -66,7 +66,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-0. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+1. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 

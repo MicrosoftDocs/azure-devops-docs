@@ -472,7 +472,7 @@ Use the **witadmin** commands to import and export definition files. For details
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-0. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
+1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
    ```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 

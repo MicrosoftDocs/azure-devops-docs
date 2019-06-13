@@ -38,7 +38,7 @@ From your web browser, open your product backlog.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
+1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
     ![Open Boards > Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -104,6 +104,7 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 ::: moniker-end
 
 <a id="convert-ideas" />
+
 ## Convert ideas into backlog items or stories
 
 Your backlog shows work that you plan to do or have started to work on. As soon as the state of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
@@ -115,7 +116,7 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Before you add work items, select the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
+1. Before you add work items, select the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](_img/create-backlog/view-options-parents-off.png) 

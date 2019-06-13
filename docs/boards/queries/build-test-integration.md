@@ -28,6 +28,7 @@ Work item fields that support build and test integration support the following a
 
 
 ## Supported operators and macros 
+
 Most build and test integration fields have a data type of String, PlainText, or HTML. Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
 
 <table valign="top">
@@ -62,6 +63,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 
 ## Useful filters 
+
 <table width="100%">
 <tbody valign="top">
 <tr>
@@ -74,31 +76,28 @@ Most build and test integration fields have a data type of String, PlainText, or
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Case</code><br/><code>And Automation Status <em> = </em> Automated</code><br/></td>
 </tr>
-
 <tr>
 <td>Query-based test suites
 </td>
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Suite</code><br/><code>And Test Suite Type <em> = </em> Query Based</code><br/></td>
 </tr>
-
-
 <tr>
 <td>Requirement-based test suites
 </td>
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Suite</code><br/><code>And Test Suite Type <em> = </em> Requirement Based</code><br/></td>
 </tr>
-
 </tbody>
 </table>  
 
 <a id="linked-bugs" />
+
 ## List bugs and the test cases that test them
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" style="border: 2px solid #C3C3C3;" />
+<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
@@ -108,7 +107,6 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 To customize a field or picklist, see [Add or modify a field to support queries, reports, and workflow](../../reference/add-modify-field.md).
-
 
 <table width="100%">
 <thead>
@@ -131,7 +129,6 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 <p>Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String</p>
 </td>
 <td>Test Case</td>
-
 </tr>
 <tr>
 <td><p>Found In<sup> 2</sup></p></td>
@@ -141,7 +138,6 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 <strong>Note:</strong> You can also use the <strong>Found in build</strong> link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).<br/></blockquote>
 </td>
 <td>Bug</td>
-
 </tr>
 <tr>
 <td><p>Integration Build<sup> 2</sup></p></td>
@@ -152,7 +148,6 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 </td>
 <td>All</td>
 </tr>
-
 <tr>
 <td><p>Issue</p></td>
 <td><p>Indicates that the Shared Steps is associated with an expected result. Allowed values are <strong>Yes</strong> and <strong>No</strong>. </p>
@@ -178,7 +173,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 <td>Bug, Feedback Response</td>
 </tr>
 <tr>
-  <td>
+<td>
 Repro Steps (or Steps to reproduce) 
   </td>
   <td>
@@ -188,7 +183,6 @@ Repro Steps (or Steps to reproduce)
   </td>
 <td>Bug</td>
 </tr>
-
 <tr>
 <td><p>Test Suite Type<sup> 1,4</sup></p></td>
 <td><p>The test suite category. Allowed values are:</p>
@@ -198,9 +192,8 @@ Repro Steps (or Steps to reproduce)
 <li><p><strong>Requirement Based</strong>: Use to group together test cases with any characteristics or test suites.</p></li>
 </ul>
 <p>For more information, see <a href="../../test/create-a-test-plan.md" data-raw-source="[Create a test plan](../../test/create-a-test-plan.md)">Create a test plan</a>.</p> 
-
-    <p>Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String</p>
-  </td>
+<p>Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String</p>
+</td>
 <td><p>Test Suite</p></td>
 </tr>
 </tbody>

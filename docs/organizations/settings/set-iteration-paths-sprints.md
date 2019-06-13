@@ -81,7 +81,7 @@ From the web portal, open **Project Settings**.
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
-0. Choose (1) **Project Settings**, expand **Boards** if needed, and choose (2) **Project configuration** and then (3) **Iterations**.   
+1. Choose (1) **Project Settings**, expand **Boards** if needed, and choose (2) **Project configuration** and then (3) **Iterations**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-vert.png)   
@@ -98,7 +98,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. From the web portal, open **Project settings**. 
+1. From the web portal, open **Project settings**. 
 
 1. From the web portal for the project context, choose the ![ ](../../_img/icons/gear-icon.png) gear icon..  
 
@@ -149,7 +149,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Iterations page, scheduled set of sprints](_img/iterations/schedule-sprints-calendar.png) 	
 
-0. When you're finished, you'll have a set of sprints scheduled - like this: 
+1. When you're finished, you'll have a set of sprints scheduled - like this: 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Iterations page, scheduled set of sprints](_img/areas/modify-areas-its-iterations-scheduled-ts.png)
@@ -203,12 +203,12 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 	> [!div class="mx-imgBorder"]  
 	> ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)  
 
-0. Choose **Iterations and areas**. 
+1. Choose **Iterations and areas**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Profile, choose Iterations and area](_img/team-defaults/team-profile-choose-iterations-areas.png)   
 
-0. If you need to switch the team context, use the team selector within the breadcrumbs.
+1. If you need to switch the team context, use the team selector within the breadcrumbs.
    
 	> [!div class="mx-imgBorder"]  
 	> ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
@@ -236,7 +236,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker range=">= azure-devops-2019"  
 
-0. Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
+1. Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
 
    Here, we navigate to the Fabrikam Fiber Team.  
 
@@ -355,14 +355,14 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path.png)  
 
-0. In the dialog that opens, enter the new name. 
+1. In the dialog that opens, enter the new name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path-dialog.png)
 
-0. To move the node within the hierarchy, change the Location field. 
+1. To move the node within the hierarchy, change the Location field. 
 
-0. To delete a node, choose the **Delete** option from the actions menu. 
+1. To delete a node, choose the **Delete** option from the actions menu. 
 
 	> [!NOTE]   
 	> When you delete an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 

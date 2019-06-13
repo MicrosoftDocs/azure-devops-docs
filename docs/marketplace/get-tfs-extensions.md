@@ -73,7 +73,7 @@ for future Visual Studio Marketplace purchases.
 
 ::: moniker range="<= tfs-2018"
 
-0. From your TFS home page (```https://{server}:8080/tfs/```), 
+1. From your TFS home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
 
 1. From your project collection, 
@@ -145,7 +145,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Download from Visual Studio Marketplace
 
-0. Sign in to [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/azuredevops).
+1. Sign in to [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/azuredevops).
 
 1. Find the extension that you want to install.
 
@@ -163,7 +163,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Upload to Team Foundation Server
 
-0. Go to your TFS home page (```https://{server}:8080/tfs/```). 
+1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
 
 1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
@@ -177,7 +177,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Upload to Team Foundation Server
 
-0. Go to your TFS home page (```https://{server}:8080/tfs/```). 
+1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
 
 1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
@@ -189,7 +189,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Upload to Team Foundation Server
 
-0. Go to your TFS home page (```https://{server}:8080/tfs/```). 
+1. Go to your TFS home page (```https://{server}:8080/tfs/```). 
 
 1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
@@ -205,7 +205,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Install in your project collection
 
-0. Select and install the extension that you just uploaded. 
+1. Select and install the extension that you just uploaded. 
 
 	<img alt="Select extension, then click Install" src="./_img/get-tfs-extensions/standalone/install-extension.png" style="border: 1px solid #CCCCCC" />
 
@@ -228,7 +228,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatibility issues.
 
 In this case, you can manage extensions in disconnected TFS by following the steps below:
-0. Hover over the shopping bag icon and select **Manage extensions**
+1. Hover over the shopping bag icon and select **Manage extensions**
 
 	![Manage extensions](./_img/get-tfs-extensions/standalone/manage-extensions.png)
 
@@ -252,7 +252,7 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 ## Install Azure DevOps Server extensions from Marketplace
 
-0. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
+1. Open your Azure DevOps Server home page (`https://{server}:DefaultCollection`).
 
 1. Open the extensions menu and choose **Browse Marketplace**.
 
@@ -291,7 +291,7 @@ Users can install these extensions without requiring an external connection to M
 > Extensions that have previously been installed from Marketplace appear in the 
 > local gallery automatically so that they can easily be installed into other project collections. 
 
-0. Open the extensions menu and choose **Manage Extensions**.
+1. Open the extensions menu and choose **Manage Extensions**.
 
    ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
 
@@ -317,7 +317,7 @@ Use the **Extensions** page to manage installed extensions.
 
 ### Disable or uninstall an extension
 
-0. Open the extensions menu and choose **Manage Extensions**.
+1. Open the extensions menu and choose **Manage Extensions**.
 
    ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
 
@@ -331,7 +331,7 @@ Use the **Extensions** page to manage installed extensions.
 
 ### Review and install requested extensions
 
-0. Open the extensions menu and choose **Manage Extensions**.
+1. Open the extensions menu and choose **Manage Extensions**.
 
    ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
 

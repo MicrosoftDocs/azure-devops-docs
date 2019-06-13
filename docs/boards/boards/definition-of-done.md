@@ -40,7 +40,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open your Kanban board](kanban-quickstart.md). 
+1. [Open your Kanban board](kanban-quickstart.md). 
 
    If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -59,7 +59,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 

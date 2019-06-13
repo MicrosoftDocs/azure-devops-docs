@@ -41,11 +41,11 @@ When you customize your project to support team fields, the Team field tab appea
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-0. If you aren't a member of the **Project Administrators** group, [get those permissions](../organizations/security/set-project-collection-level-permissions.md).
+1. If you aren't a member of the **Project Administrators** group, [get those permissions](../organizations/security/set-project-collection-level-permissions.md).
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-0. Export the global list for the project collection.
+1. Export the global list for the project collection.
 
        witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
@@ -65,7 +65,7 @@ When you customize your project to support team fields, the Team field tab appea
 </gl:GLOBALLISTS>
 ```
 
-0. Import the global list definition.
+1. Import the global list definition.
 
        witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 

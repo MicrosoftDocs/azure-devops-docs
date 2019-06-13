@@ -298,7 +298,7 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]  
 
-0. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
+1. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 
    ```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 

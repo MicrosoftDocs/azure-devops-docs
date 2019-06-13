@@ -79,7 +79,7 @@ Examples:
 
 ## Add link from a work item to a GitHub commit, pull request, or issue
 
-0. To link to a commit or pull request, open the work item and choose <strong>Add Link</strong> under the Development section. 
+1. To link to a commit or pull request, open the work item and choose <strong>Add Link</strong> under the Development section. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Development section, Add link](_img/link/add-link-development-github.png) 
@@ -109,7 +109,7 @@ Examples:
 
 ## Add link from work items to GitHub commits and pull requests
 
-0. Open the work item and choose **Add Link** under the Development section. 
+1. Open the work item and choose **Add Link** under the Development section. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add link](_img/link/add-link-development.png) 

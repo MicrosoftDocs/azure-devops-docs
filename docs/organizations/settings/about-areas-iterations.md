@@ -77,7 +77,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 Use the following guidance to configure Iteration Paths (aka sprints) for your project and teams:  
 
-0. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
+1. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
 2. Determine if you want a flat structure or hierarchy of sprints and releases.
 3. Open **Project settings>Project configuration** and define the Iteration Paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 

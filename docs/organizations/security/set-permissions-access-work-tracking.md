@@ -139,11 +139,11 @@ You define both areas and iterations for a project from the **Project Settings>W
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../settings/_img/areas/open-project-work-areas-settings-vert.png)   
 
-0. Choose the ... context menu for the node you want to manage and select **Security**.  
+1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
     ![Open the security dialog](_img/set-permissions-area-node-open.png)
 
-0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
+1. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
     For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
@@ -167,7 +167,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 2. Choose **Work** and then **Areas**.  
 
-0. Choose the ... context menu for the node you want to manage and select **Security**.  
+1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
     ![Open the security dialog](_img/set-permissions-area-node-open.png)
 
@@ -175,7 +175,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
     ![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 

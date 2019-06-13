@@ -220,7 +220,9 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 </tbody>
 </table>
 
-<a name="LISTElements"></a><br/>## GLOBALLIST and LISTITEM child elements  
+<a name="LISTElements"></a>
+
+## GLOBALLIST and LISTITEM child elements  
 
  You specify the **GLOBALLIST** and **LISTITEM** elements as child elements of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can use these elements to enumerate a list of values that appears. Users select values from a pick list or a drop-down menu. For more information, see [GLOBALLIST XML element reference](define-global-lists.md).   
 

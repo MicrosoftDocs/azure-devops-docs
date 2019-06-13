@@ -1,4 +1,4 @@
-0. Create a json file (`vss-extension.json`, for example) in the home directory of your web app to describe your extension.
+1. Create a json file (`vss-extension.json`, for example) in the home directory of your web app to describe your extension.
 
     ```json
     {
