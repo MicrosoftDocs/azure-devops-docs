@@ -276,7 +276,7 @@ From this view, you can easily see which individuals are at or near capacity. Te
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
-> Also, don't divide tasks into subtasks as the [taskboard will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+> Also, don't divide tasks into sub-tasks as [taskboards only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md). If you do divide a task into sub-tasks, specify Remaining Work only for the sub-tasks, as the system rolls up summary values to the parent task. 
 
 ::: moniker-end
 

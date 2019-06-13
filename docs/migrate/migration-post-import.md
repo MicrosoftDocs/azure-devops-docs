@@ -55,5 +55,16 @@ If you used Release Management in Azure DevOps Server then your release pipeline
 ## Azure Artifacts
 If you used Azure Artifacts in your collection, then you will need to install the Azure Artifacts [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) in your organization post import to view your Azure Artifacts data. 
 
+## Azure Boards
+If you have an existing GitHub Enterprise Server connection associated with your Azure DevOps Server, it will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
+
+To resolve the problem, consider the following:
+
+- **Remove and re-create the connection**:
+  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md?view=azure-devops#connect-azure-devops-services-to-github-enterprise-server) documentation.
+
+- **Fix the webhook url**:
+  Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
+
 ## Notifying the Team
 After getting your builds running and license subscription configured, it's recommended that the organization be opened up to all users for validation. This is when individual users can ensure that all of the content is in place, they have the right access level, and that they can pull code. Be sure to point users to our [documentation](../organizations/accounts/set-up-vs.md) on connecting to Azure DevOps Services from all of our supported IDEs and Team Explorer.  Users of TFVC with local workspaces will need to remap their workspaces against the new organization and Git users will have to reconfigure their remotes to be able to pull code. If anything is reported as missing from the migrated organization, please reach out to [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). For other functional issues, please reach out to [customer support](https://visualstudio.microsoft.com/support/).  
