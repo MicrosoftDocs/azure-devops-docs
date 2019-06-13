@@ -50,7 +50,7 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 * [Create a repo from a new solution](#from-a-new-solution)
 * [Create a repo from an existing solution](#from-an-existing-solution)
 * [Create a repo in an empty folder](#in-an-empty-folder)
-* [Connect a local repo to a remote](#connect-a-local-repo-to-a-remote)
+* [Connect a local repo to a remote](#remotes)
 
 ### From a new solution
 

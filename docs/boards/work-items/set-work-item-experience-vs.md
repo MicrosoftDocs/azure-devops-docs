@@ -51,11 +51,11 @@ Each view supports the following tasks:
 
 ## Change your Work Items view
 
-0. From Visual Studio 2019 choose **Tools>Options**.
+1. From Visual Studio 2019 choose **Tools>Options**.
 
 1. In the Options dialog, enter **work items** in the search box.  
 
-2. Choose your **Landing page** option from the menu. 
+1. Choose your **Landing page** option from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Tools>Options>Work Items](_img/set-vs-experience/option-vs-options-work-items.png)

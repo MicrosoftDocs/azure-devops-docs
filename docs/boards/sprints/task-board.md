@@ -53,7 +53,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](_img/taskboard/open-taskboard-agile.png)
@@ -74,7 +74,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range="<= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png)
@@ -144,7 +144,7 @@ With this view, you can quickly see which items are nearing completion and which
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
+1. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
 	> ![Set view options](_img/taskboard/group-items-all-agile.png)
@@ -197,7 +197,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **People**.
+1. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **People**.
 
 	Only those team members with tasks assigned to them are listed. All their tasks are shown as cards under their column state.
 

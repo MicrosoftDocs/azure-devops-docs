@@ -61,7 +61,7 @@ The following illustration shows this structure for the project that is named De
 
 To view post-upgrade reports
  
-0. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
 
 	`http://ReportServerName/TFSReports/ProjectCollectionName/ProjectName/`
 
@@ -71,13 +71,13 @@ To view post-upgrade reports
 
 1. Click the folder that contains the report that you want to view.
 
-2. Click the report that you want to view.
+1. Click the report that you want to view.
 
 ## View pre-upgrade reports
 
 To view pre-upgrade reports
 
-0. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
 	`http://ReportServerName/Reports/ProjectName/`
 

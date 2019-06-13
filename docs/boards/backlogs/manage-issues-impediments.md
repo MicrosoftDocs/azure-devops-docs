@@ -30,7 +30,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 
 In this article you'll learn: 
 
->[!div class="checklist"]      
+> [!div class="checklist"]      
 > * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
@@ -56,6 +56,8 @@ You define tasks when you want to create a [checklist of tasks](../boards/add-ta
 
 If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 
+::: moniker-end
+
 ## Add an issue or impediment 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -68,7 +70,6 @@ Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) p
 Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end   
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 

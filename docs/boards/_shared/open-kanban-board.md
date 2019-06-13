@@ -14,7 +14,7 @@ Your Kanban board is one of two types of boards available to you. The other is t
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
+1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
 	![Open your Kanban board](/azure/devops/boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
@@ -38,7 +38,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
+1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
 
@@ -59,7 +59,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 ::: moniker range="<= tfs-2015"
 
-0. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
+1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/_img/quickstart/open-kanban-board.png)
 

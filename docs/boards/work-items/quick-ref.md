@@ -40,7 +40,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../sprints/add-tasks.md" data-raw-source="[Add tasks](../sprints/add-tasks.md)">Add tasks</a></li>
 <li><a href="../backlogs/add-work-items.md#capture-comments-in-the-discussion-section" data-raw-source="[Add to discussion](../backlogs/add-work-items.md#capture-comments-in-the-discussion-section)">Add to discussion</a></li>
 <li><a href="../backlogs/work-item-template.md" data-raw-source="[Apply a template to a work item](../backlogs/work-item-template.md)">Apply a template to a work item</a></li>
-<li><a href="about-work-items.md#assign-work-items-to-a-project-member" data-raw-source="[Assign work to a team member](about-work-items.md#assign-work-items-to-a-project-member)">Assign work to a team member</a></li>
+<li><a href="about-work-items.md#assign-work-items" data-raw-source="[Assign work to a team member](about-work-items.md#assign-work-items)">Assign work to a team member</a></li>
 <li><a href="../queries/share-plans.md#attach-files" data-raw-source="[Attach files](../queries/share-plans.md#attach-files)">Attach files</a></li>
 <br/>
 <li><a href="../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags" data-raw-source="[Bulk add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)">Bulk add or remove tags</a></li>
@@ -55,7 +55,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../backlogs/copy-list.md" data-raw-source="[Copy list of work items](../backlogs/copy-list.md)">Copy list of work items</a></li>
 <li><a href="../backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Create a branch ](../backlogs/connect-work-items-to-git-dev-ops.md)">Create a branch </a></li>
 <li><a href="../../report/dashboards/charts.md" data-raw-source="[Create a work tracking chart](../../report/dashboards/charts.md)">Create a work tracking chart</a></li>
-<li><a href="about-work-items.md#customize-a-wit" data-raw-source="[Customize work items](about-work-items.md#customize-a-wit)">Customize work items</a></li>
+<li><a href="about-work-items.md#customize" data-raw-source="[Customize work items](about-work-items.md#customize)">Customize work items</a></li>
 </ul>
 </td>
 <td width="33%">
@@ -287,7 +287,7 @@ Use this index to quickly access information on adding and updating work items&m
 <br/>
 <li><a href="guidance/work-item-field.md" data-raw-source="[Work item fields](guidance/work-item-field.md)">Work item fields</a></li>
 <li><a href="about-work-items.md#work-item-form" data-raw-source="[Work item form](about-work-items.md#work-item-form)">Work item form</a></li>
-<li><a href="about-work-items.md#use-work-item-templates-to-quickly-fill-in-forms" data-raw-source="[Work item templates](about-work-items.md#use-work-item-templates-to-quickly-fill-in-forms)">Work item templates</a></li>
+<li><a href="about-work-items.md#templates" data-raw-source="[Work item templates](about-work-items.md#templates)">Work item templates</a></li>
 <li><a href="about-work-items.md#work-item-types-wits" data-raw-source="[Work item types](about-work-items.md#work-item-types-wits)">Work item types</a></li>
 <li><a href="workflow-and-state-categories.md" data-raw-source="[Workflow ](workflow-and-state-categories.md)">Workflow </a></li>
 </ul>

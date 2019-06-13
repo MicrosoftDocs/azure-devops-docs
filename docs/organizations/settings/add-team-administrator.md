@@ -52,12 +52,12 @@ From the web portal, open the admin page for the team.
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](_img/add-team/open-project-settings-teams-new-nav.png) 
 
-0. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
+1. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, Add a team admin](_img/add-team-admin/team-profile-choose-add-admin.png)  
 
-0. Enter the identities you want to add to the team administrator role.     
+1. Enter the identities you want to add to the team administrator role.     
 	    
 	> [!div class="mx-imgBorder"]
 	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
@@ -67,7 +67,7 @@ From the web portal, open the admin page for the team.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
+1. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Team Settings](_img/add-team-admin/open-team-settings-horz.png)
@@ -87,7 +87,7 @@ From the web portal, open the admin page for the team.
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
+1. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, TFS, Open Admin context, project level](../../_shared/_img/settings/open-admin-page-tfs2015.png)

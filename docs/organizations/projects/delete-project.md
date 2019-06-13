@@ -48,7 +48,7 @@ You can delete a project from Azure DevOps. Deleting a project helps simplify th
 
 ::: moniker range="tfs-2015"
 
-0. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to delete and choose **Delete**.
+1. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to delete and choose **Delete**.
 
    If you don't see the ![](../../_img/icons/context-menu.png) context icon menu, you don't have the permissions to delete the project. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 

@@ -36,17 +36,17 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
 
-0. Hover over the dots and you can open the service of interest for that project. 
+1. Hover over the dots and you can open the service of interest for that project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](_img/projects-page/projects-page-vert.png)
 
-0. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
+1. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](_img/projects-page/filter-projects-vert.png) 
 
-0. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](../../organizations/projects/_img/create-project/projects-hub-vert-create-project.png) 
@@ -57,7 +57,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
 
-0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
+1. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](../../_shared/_img/settings/open-project-hub-horz.png)
@@ -89,7 +89,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Repos>Files**.
+1. Choose **Repos>Files**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](../../organizations/public/_img/browse-code/open-code-vert-brn.png) 
@@ -103,7 +103,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. Choose **Code**.  
+1. Choose **Code**.  
  
 	> [!div class="mx-imgBorder"]  
 	> ![Open Code, previous nav](../../organizations/public/_img/browse-code/select-code-hub.png)  

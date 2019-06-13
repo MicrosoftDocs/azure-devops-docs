@@ -59,11 +59,11 @@ To enable users to contribute to your project, you must add them as a member.
 
  Are admins able to add new users from this page, or only users who have been previously added to the organization?  
 
-0. Add members from your project page.   
+1. Add members from your project page.   
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/create-public-project/add-members.png)
 
-0. Fill out the form. 
+1. Fill out the form. 
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/create-public-project/add-member-form.png)
 -->

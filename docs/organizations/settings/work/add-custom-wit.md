@@ -43,7 +43,7 @@ To learn more about what you can customize, see [About process customization and
 <a id="add-wit">  </a>
 ## Add a work item type
 
-0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
+1. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
@@ -92,7 +92,7 @@ To learn more about what you can customize, see [About process customization and
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 

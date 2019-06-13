@@ -365,4 +365,4 @@ By integrating your on-premises TFS with a SonarQube server, you can get the fol
 - Code coverage data from tests  
 - Metrics for .NET and JavaScript  
 
-See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/devops/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.
+See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](https://devblogs.microsoft.com/devops/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build/) for details.

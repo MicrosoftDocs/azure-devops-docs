@@ -73,7 +73,7 @@ You add fields to a selected work item type.
 
 	If you can't fill out the New work item rule dialog, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-0. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
+1. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
 
 	> [!TIP]  
 	>Specify a name that builds off the field(s) you're acting on, or the conditions you're setting.  
@@ -85,7 +85,7 @@ You add fields to a selected work item type.
 	> [!NOTE]    
 	>The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT. 
 
-0. Once you've added a custom rule, open a work item and verify that the rule works as you intended. 
+1. Once you've added a custom rule, open a work item and verify that the rule works as you intended. 
 
 <a id="delete-disable">  </a>
 ## Delete or disable a rule     

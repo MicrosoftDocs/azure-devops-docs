@@ -51,20 +51,20 @@ In the **Working with bugs** dialog, you can select from the following three opt
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+1. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
 
-0. When done with your changes, choose **Save**.  
+1. When done with your changes, choose **Save**.  
 
-0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
+1. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
@@ -86,7 +86,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 Requires TFS 2013.4 or later version. 
 
-0. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
+1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
 
 1. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 

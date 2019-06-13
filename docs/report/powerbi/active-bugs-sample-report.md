@@ -57,7 +57,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ### 1. Name your view and set to Private  
 
-0. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
+1. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
 
    > [!div class="mx-imgBorder"]
    > ![General](_img/active-bugs-report/active-bugs-general.png)
@@ -152,7 +152,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a daily bug trend report 
 
-0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
+1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
 
     > [!div class="mx-imgBorder"]
     > ![Select work item field](_img/create-report/select-line-chart-work-id.png)
@@ -183,7 +183,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Filter your trend by Priority
 
-0. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
+1. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
 
     > [!div class="mx-imgBorder"]
     > ![Group by priority](_img/active-bugs-report/filter-priority-legend.png)
@@ -199,7 +199,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a card for latest bug count
 
-0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
 1. Select the card visual, add the **Work Item Id** field, add the **Work Item Type** field, and click the context menu icon next to the field and change it from **Count** to **Count (Distinct)**.
 
@@ -220,7 +220,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Save your report, optionally share with others 
 
-0. Choose **File > Save As** to save your report to your local workspace. 
+1. Choose **File > Save As** to save your report to your local workspace. 
 
 1. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
