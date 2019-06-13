@@ -434,6 +434,19 @@ The following features are available when using TeamCity sources:
 
 ----
 
+<a name="GitHub Release"></a>
+
+<h3 id="githubrelease">GitHub Release</h3>
+
+You can consume GitHub releases as artifacts in your release deployments.
+
+To consume GitHub Release as artifact in your release, start by creating a service connection with credentials to connect to your
+GitHub repository (see [service connections](../library/service-endpoints.md) for details).You can then link a GitHub Release as artifact source to your release pipeline. 
+
+By default, GitHub releases are automatically downloaded to the agent. You can configure [download](../process/phases.md#artifact-download) in each job of the release. 
+
+----
+
 <a name="Custom artifacts"></a>
 
 ### Custom artifacts
