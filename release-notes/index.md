@@ -111,7 +111,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="15"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
+            <td rowspan="16"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
             <td>Changes to Azure DevOps IP address ranges</td><td>General</td><td>N/A</td>
          </tr>
         <tr><td>Auditing public preview</td><td>General</td><td>N/A</td></tr>
@@ -126,6 +126,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Go get command support in Azure Repos</td><td>Repos</td><td>2019.1</td></tr>
         <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Package Search</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Support for queries with tree of work items</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Top publisher certification program</td><td>Marketplace</td><td>N/A</td></tr>
         <tr>
