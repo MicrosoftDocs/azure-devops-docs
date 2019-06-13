@@ -224,11 +224,11 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 
 ## Display of leaf node work items  
 
-When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or taskboard. 
+For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
 
-To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
+To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
 
 ## Permissions and access

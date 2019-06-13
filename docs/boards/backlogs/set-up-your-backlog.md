@@ -260,7 +260,7 @@ The following settings can impact on the type and number of work items that will
 	> [!div class="mx-imgBorder"]  
 	> ![Backlogs, View Options, Hide In Progress](_img/setup-backlog/show-more-items.png)  
 
-- If you have nested work items that belong to the same category, only leaf nodes will appear on the Kanban board. For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. To learn more see [Backlogs, portfolios, and Agile project management, Display of leaf node work items](backlogs-overview.md#leaf-node).
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
 - If you have turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 
