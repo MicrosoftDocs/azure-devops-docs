@@ -61,14 +61,14 @@ You can specify to filter for work items assigned to several area paths by using
 
 ## Node Name and keyword based queries  
 
-Using the **Node Name** field, you can filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the leaf node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
+Use the **Node Name** field to filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
 
 The following query yields the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
 
-In this example, the filter will return any work items assigned to an area path whose leaf node contains the word "Azure".
+In this example, the filter will return any work items assigned to an area path whose last node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
 > ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
@@ -116,7 +116,7 @@ The following fields do not appear on work item forms but are tracked for each w
 > |---|---|---|---|
 > |Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
 > |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
-> |Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
+> |Node Name|The name of the last node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
