@@ -24,6 +24,7 @@ The most common numeric fields track effort for items in the Requirements catego
 
 
 ## Supported operators and macros 
+
 Query clauses that specify a numeric field can use the operators listed below.
 - = , <> , > , < , >= , <=  
 - =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field] 
@@ -40,6 +41,7 @@ Query clauses that specify a numeric field can use the operators listed below.
 For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
 
 ### Useful filters 
+
 <table width="100%">
 <tbody valign="top">
 <tr>
@@ -72,8 +74,6 @@ Items in the Requirements category
 <td>
 <code>Work Item Type <em> In Group </em> Microsoft.RequirementCategory</code><br/></td>
 </tr>
-
-
 <tr>
 <td>
 Unestimated user stories 
@@ -81,12 +81,12 @@ Unestimated user stories
 <td>
 <code>Story Points <em> &lt;&gt; </em> (leave Value field blank)</code><br/></td>
 </tr>
-
 </tbody>
 </table>  
 
 
 <a id="counts"/>
+
 ## Work item count queries and charts
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
@@ -123,6 +123,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 
 
 <a id="effort"/>
+
 ## Effort or story point queries and charts  
 
 You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
@@ -170,6 +171,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 
 
 <a id="work"/>
+
 ## Remaining and completed work queries and charts  
 
 Based on the process your project references, you can assign the following fields to tasks or bugs. 
@@ -294,12 +296,10 @@ The following table describes the activity-based and numeric fields that you can
 <tr>
     <td><p>Requires Review</p></td>
     <td><p>Indicates the task requires review. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-
 <p>Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
-
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
@@ -339,7 +339,7 @@ The main tools you use to plan and track work are described here:
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
-- [taskboard](../sprints/task-board.md)
+- [Taskboard](../sprints/task-board.md)
 - [Kanban board](../boards/kanban-basics.md)
 
 For more information on using work items and queries, see: 
@@ -352,6 +352,7 @@ For more information on using work items and queries, see:
 <a id="show-bugs"/>
 
 <a id="rollup"/>
+
 ### Rollup numeric values across work item types  
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
@@ -360,6 +361,7 @@ Rollup provides summed values of select fields for all child work items of a par
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 
 <a id="category"/>
+
 ### What items appear in the Requirement or Task categories? 
 
 The default assignments of work item types to each category are listed below for each process.  

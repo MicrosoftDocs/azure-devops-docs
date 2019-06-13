@@ -25,13 +25,13 @@ Access levels grant or restrict access to select web portal features. This is in
 
 When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups&#151;**Readers**, **Contributors**, and **Project Administrators**&#151;as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"  
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). Make sure to set each user's access level based on what you've purchased for that user. 
-::: moniker-end
+::: moniker-end  
 
 ## Supported access levels
 
@@ -777,7 +777,7 @@ To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdBreakAll"]  
 > | Service, application, or setting | Private project | Public project|
 > |------------|-----------------|---------------|
 > |<strong>Dashboards</strong> | Partial access | Full access | 
@@ -875,7 +875,8 @@ With VS Enterprise access, users have access to any fee-based, Marketplace exten
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range="tfs-2017"  
+
 For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension for Azure Test Plans.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension for Azure Test Plans](../../marketplace/how-to/assign-paid-extension-access.md).
 
 ::: moniker-end

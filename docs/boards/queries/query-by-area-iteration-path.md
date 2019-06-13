@@ -24,6 +24,7 @@ The Area Path and Iteration Path are two fields that appear on the work tracking
 To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Supported operators and macros 
+
 When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
 
 > [!div class="mx-tdCol2BreakAll"]  
@@ -81,6 +82,7 @@ Here's another example which uses the **Node Name** and the **In** operator.
 
 ::: moniker range=">= azure-devops-2019"
 <a id="team-area-path" /> 
+
 ## Team area path queries  
 
 Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
@@ -91,6 +93,7 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 ::: moniker-end
 
 <a name="field-reference"></a>
+
 ## Classification field reference 
 
 
@@ -119,6 +122,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 
 ## Related articles 
+
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
@@ -126,6 +130,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 ::: moniker range="<= azure-devops-2019"
 <a name="field-rules"></a>
+
 ### Supported field rules  
 
 For the On-premises XML process model, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 

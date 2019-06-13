@@ -40,7 +40,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
+1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
@@ -109,7 +109,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 This example shows how to add the Velocity widget available from the Analytics service to a dashboard. 
 
-0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)

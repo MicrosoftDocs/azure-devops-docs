@@ -106,7 +106,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-0. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+1. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
    ```  
    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  

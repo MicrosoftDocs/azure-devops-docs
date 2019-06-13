@@ -111,7 +111,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 
 ## Add a GitHub connection using OAuth 
 
-0. Sign into Azure Boards. 
+1. Sign into Azure Boards. 
 
 1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub Account</strong>.   
 
@@ -162,7 +162,7 @@ We recommend that you use OAuth to connect to your GitHub repository. However, i
 > [!TIP]  
 > When creating your GitHub PAT, make sure that you include these scopes: `repo, read:user, user:email, admin:repo_hook`. 
 
-0. To choose a PAT when connecting a GitHub repository, choose ![plus icon ](../../_img/icons/blue-add.png) <strong>New Connection</strong> and then choose the <strong>Click here</strong> link. 
+1. To choose a PAT when connecting a GitHub repository, choose ![plus icon ](../../_img/icons/blue-add.png) <strong>New Connection</strong> and then choose the <strong>Click here</strong> link. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ad GitHub repository, choose personal access token](_img/github/add-github-connection-dialog-choose-pat.png)   
@@ -192,7 +192,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ###  Register Azure DevOps Services   
 
-0. Sign into the web portal for your GitHub Enterprise server.  
+1. Sign into the web portal for your GitHub Enterprise server.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Sign into GitHub Enterprise server](_img/github-ent/sign-in-to-ghe.png)  
@@ -231,7 +231,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ###  Register Azure DevOps Server 
 
-0. Sign into the web portal for your GitHub Enterprise server.  
+1. Sign into the web portal for your GitHub Enterprise server.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Sign into GitHub Enterprise server](_img/github-ent/sign-in-to-ghe.png)  
@@ -300,7 +300,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ### Register your OAuth configuration in Azure DevOps Server
 
-0. Sign into the web portal for your Azure DevOps Server. 
+1. Sign into the web portal for your Azure DevOps Server. 
 
 1. Add the GitHub Enterprise Oauth configuration to your Azure DevOps Server collection. 
 
@@ -330,7 +330,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 > If you encounter this error, check that your server is accessible. For more information, see [Azure DNS FAQ](/azure/dns/dns-faq). 
 
 
-0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 
 1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Click here</strong> to connect to your GitHub Enterprise organization.   
 
@@ -387,7 +387,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ## Connect Azure DevOps Server to GitHub Enterprise Server
 
-0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 
 1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub Enterprise account</strong>.   
 
@@ -434,7 +434,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ## Add or remove repositories, or remove a connection 
 
-0. To add or remove repositories, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
+1. To add or remove repositories, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](_img/github/repo-actions-menu.png)  

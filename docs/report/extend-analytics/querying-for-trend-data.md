@@ -41,7 +41,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> ::: moniker-end
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/api-versioning.md)]
 

@@ -102,7 +102,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 ::: moniker range=">= azure-devops-2019"  
 
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
@@ -123,7 +123,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 

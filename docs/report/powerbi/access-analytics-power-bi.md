@@ -22,7 +22,7 @@ You can access the Analytics service data through the Power BI Desktop OData fee
 ## Access the Analytics service OData feed
 
 ::: moniker range="azure-devops-2019"
-0. Make sure you have installed the [Analytics extension](../dashboards/analytics-extension.md).  
+1. Make sure you have installed the [Analytics extension](../dashboards/analytics-extension.md).  
    ::: moniker-end  
 1. Make sure you have configured the [permissions required to access the Analytics service](analytics-security.md).  
 

@@ -54,7 +54,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From the web portal, choose **Project settings** and open **Teams**. 
+1. From the web portal, choose **Project settings** and open **Teams**. 
 
     > [!div class="mx-imgBorder"]
     > ![Open Code, new nav](../../organizations/settings/_img/add-team/open-project-settings-teams-new-nav.png) 
@@ -72,7 +72,7 @@ The first step is to add a team for each feature team and management area. You c
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
     ![Open project admin page](../../organizations/settings/_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -125,7 +125,7 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
+1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../../organizations/settings/_img/areas/open-project-work-areas-settings-vert.png)   
@@ -144,7 +144,7 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
@@ -169,7 +169,7 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range="<= tfs-2015"  
 
-0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
     ![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
@@ -190,7 +190,7 @@ By including sub-area paths for the management teams, you automatically include 
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
 
-0. From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
+1. From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
 
    Here we open the Account Management team. 
 
@@ -221,7 +221,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"   
 
-0. You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+1. You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
    > [!div class="mx-imgBorder"]  
    > ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png) 

@@ -78,7 +78,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker range=">= azure-devops-2019"
 
-0. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)

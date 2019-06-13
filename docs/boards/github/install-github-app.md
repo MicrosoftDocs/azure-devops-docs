@@ -188,7 +188,7 @@ Once you've integrated Azure Boards with GitHub using the Azure Boards app, you 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](_img/github/repo-actions-menu.png)  
 
-0. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose <strong>Remove</strong> to confirm.
+1. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose <strong>Remove</strong> to confirm.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Confirm remove GitHub connection dialog](_img/github/remove-connection-confirmation.png)  

@@ -36,7 +36,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
 	
 ::: moniker range=">= azure-devops-2019"
-0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
+1. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, choose Boards>Queries>All page](_img/view-run-queries/queries-all.png)  
@@ -122,7 +122,7 @@ For shared queries, you can also choose to perform one of these tasks:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"  
 
 Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
 
@@ -183,7 +183,7 @@ Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu an
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 	
 Choose **Copy query URL**. To email query items, see [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).
 
@@ -191,8 +191,8 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 > [!NOTE]
 > With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
-> 
-> ::: moniker-end
+
+::: moniker-end
 
 ## Try this next
 

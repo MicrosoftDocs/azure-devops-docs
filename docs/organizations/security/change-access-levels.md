@@ -63,17 +63,17 @@ You manage access levels for the collections defined on the application tier. Th
 
 	If you don't see **Access levels**, you aren't an administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
 
-0. Select the access level you want to manage.
+1. Select the access level you want to manage.
 
 	For example, here we choose **Basic**, and then **Add** to add a group to Basic access.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Basic access level, add group](_img/change-access-levels/basic-access-2019.png)
 
-0. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
+1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
-0. Choose **Save changes**. 
+1. Choose **Save changes**. 
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 From a user context, open **Server Settings** by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
 
-0. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
+1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
@@ -101,7 +101,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-0. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
+1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)
 

@@ -85,7 +85,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -185,7 +185,7 @@ Now that your two feature teams are configured, you need to move existing work i
 One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
 
 ::: moniker range=">= azure-devops-2019"
-0. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
+1. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
 	> [!div class="mx-imgBorder"]  
 	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
 
@@ -198,7 +198,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-0. Open the **Work>Areas** settings page for the default project team, and change the setting as shown.  
+1. Open the **Work>Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/exclude-areas-default-team-horz.png)  
@@ -211,7 +211,7 @@ One last step in moving from one team to two teams requires configuring the defa
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"  
-0. Open the **Areas** settings page for the default project team, and change the setting as shown.  
+1. Open the **Areas** settings page for the default project team, and change the setting as shown.  
 
 	![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/multiple-teams-exclude-sub-area-paths.png)  
 
@@ -225,7 +225,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To delete a team, open **Project Settings>Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+1. To delete a team, open **Project Settings>Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Teams>Delete team](_img/add-team/delete-team-vert.png)  
 

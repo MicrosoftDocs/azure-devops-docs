@@ -73,7 +73,9 @@ Use this index to quickly access information on query editor tasks, operators av
 </table>
 
 <a id="fields-operators-macros" />
+
 ## Operators and macros supported for each data type
+
 The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the <a href="../work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../work-items/guidance/work-item-field.md)">Work item field index</a>. Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>.
 
 <table valign="top">
@@ -159,7 +161,8 @@ The following table indicates the operators and macros available for the differe
 </table>
 
  
-#### Notes:
+#### Notes:  
+
 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
@@ -169,9 +172,7 @@ The following table indicates the operators and macros available for the differe
 7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-10. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
-
-
+11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
 
@@ -287,11 +288,13 @@ The following table lists common query fields and their data type for which samp
 </table>
  
  
-#### Notes:
+#### Notes:  
+
 1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
 
 
 ## Related articles
+
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

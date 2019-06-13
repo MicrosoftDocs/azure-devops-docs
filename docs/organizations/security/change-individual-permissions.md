@@ -110,7 +110,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 You add members to a custom security group in the same way you add users to a built-in group. 
 
-0. Choose the security group, choose **Members**, and then choose **Add**.
+1. Choose the security group, choose **Members**, and then choose **Add**.
 
     > [!div class="mx-imgBorder"]
     > ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  

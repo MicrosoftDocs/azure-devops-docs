@@ -96,7 +96,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -112,7 +112,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
