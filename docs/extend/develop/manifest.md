@@ -94,7 +94,7 @@ If you intend to sell your extension on the Marketplace in the future, you shoul
 
 #### Mark an extension as paid
 
-If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOL` tag (starts with two underscores) :
+If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOLENFORCED` tag (starts with two underscores) :
 
 ```json
 {
@@ -102,12 +102,12 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
         "Paid"        
     ],
      "tags": [        
-        "__BYOL"
+        "__BYOLENFORCED"
     ]
 }            
 ```
 
-Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -144,6 +144,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we will provide you with suitable steps.
 
 ### Example of additional properties
 
