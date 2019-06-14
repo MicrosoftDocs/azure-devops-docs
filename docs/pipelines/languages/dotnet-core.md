@@ -428,9 +428,12 @@ steps:
 # ...
 # do this near the end of your pipeline in most cases
 - task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
 ```
 
-This code takes all the files in `$(Build.ArtifactStagingDirectory)` and upload them as an artifact of your build. For this task to work, you must have already published the output of your build to this directory by using the `dotnet publish --output $(Build.ArtifactStagingDirectory)` command. To copy additional files to this directory before publishing, see [Utility: copy files](../tasks/utility/copy-files.md).
+This code takes all the files in `$(Build.ArtifactStagingDirectory)` and uploads them as an artifact of your build. For this task to work, you must have already published the output of your build to this directory by using the `dotnet publish --output $(Build.ArtifactStagingDirectory)` command. To copy additional files to this directory before publishing, see [Utility: copy files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
 
