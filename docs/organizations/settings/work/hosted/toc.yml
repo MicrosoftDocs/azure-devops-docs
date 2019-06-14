@@ -6,20 +6,18 @@
   href: ../import-process/differences.md 
 - name: How-to guides
   items:
-    - name: Hosted XML process model
-      items:
-    - name: Customize a Hosted XML process
-      href: ../import-process/customize-process.md
-    - name: Import a process
-      href: ../import-process/import-process.md
-    - name: Migrate Hosted XML to inherited
-      items:
-      - name: Supported clone operations
-        href: ../upgrade-support-hosted-to-inherited.md
-      - name: Clone a Hosted XML process to Inheritance
-        href: ../upgrade-hosted-to-inherited.md
-      - name: Change a project from Hosted XML to Inheritance
-        href: ../change-process-from-hosted-to-inherited.md
+  - name: Customize a Hosted XML process
+    href: ../import-process/customize-process.md
+  - name: Import a process
+    href: ../import-process/import-process.md
+  - name: Migrate Hosted XML to inherited
+    items:
+    - name: Supported clone operations
+      href: ../upgrade-support-hosted-to-inherited.md
+    - name: Clone a Hosted XML process to Inheritance
+      href: ../upgrade-hosted-to-inherited.md
+    - name: Change a project from Hosted XML to Inheritance
+      href: ../change-process-from-hosted-to-inherited.md
 - name: Troubleshooting
   items:
   - name: Resolve validation errors

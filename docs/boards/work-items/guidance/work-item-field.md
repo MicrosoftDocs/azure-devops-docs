@@ -234,13 +234,11 @@ Values in parenthesis indicate the following:
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../../queries/planning-ranking-priorities.md)">Value Area</a></li>
 <li><a href="../../queries/history-and-auditing.md" data-raw-source="[Watermark](../../queries/history-and-auditing.md)">Watermark</a> (System)</li>
 <li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Work Item Type](../../queries/titles-ids-descriptions.md)">Work Item Type</a> (System) </li> 
-
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-
 <hr/>
 <br/>
 

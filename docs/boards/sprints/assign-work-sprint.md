@@ -97,11 +97,9 @@ some or all of the items based on these estimates.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-
 ::: moniker-end  
 
-
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).  
 
@@ -109,16 +107,10 @@ some or all of the items based on these estimates.
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png)  
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
-   ::: moniker-end  
-   ::: moniker range=">= tfs-2013 <= tfs-2018"  
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
+
    > [!div class="mx-imgBorder"]  
    > ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png)  
-	::: moniker-end  
-	::: moniker range=">= tfs-2013 <= tfs-2015"  
-	![Choose another team from the project menu](_img/capacity/vso-team-selector.png)  
-	::: moniker-end  
-	::: moniker range=">= tfs-2013 <= tfs-2018"  
+
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
 1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 

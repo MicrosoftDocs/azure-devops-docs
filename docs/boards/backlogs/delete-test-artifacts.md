@@ -50,7 +50,9 @@ To delete test artifacts, the following restrictions and operations apply:
 ::: moniker-end
 
 <a id="test-experience"></a>
+
 ## Work item types that support the test experience  
+
 The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager. These work item types are linked together using the link types shown. 
 
   ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)

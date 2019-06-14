@@ -154,6 +154,7 @@ Repeat this step until you capture all your main ideas.
 >By default, user stories appear on Agile backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
 <a id="move-items-priority-order">  </a>
+
 ## Move items into priority order
 
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
@@ -171,7 +172,9 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 
 
 <a id="estimates">  </a>
+
 ## Add details and estimates
+
 Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, they need more details. You capture these details within the work item form.
 
 > [!TIP]  
@@ -202,28 +205,26 @@ Provide a relative estimate of the amount of work required to complete a PBI. Fo
 <p>The estimates you set for <strong>Effort</strong>, <strong>Size</strong>, or <strong>Story Points</strong> are used to calculate <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity](../../report/dashboards/velocity-chart-data-store.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
 </td> 
 </tr>
-
 <tr>
 <td><a href="../queries/query-numeric.md" data-raw-source="[Business Value](../queries/query-numeric.md)">Business Value</a></td> 
 <td>Specify a priority that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.</td> 
 </tr>
-
 <tr>
 <td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
 <td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don&#39;t describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
 </tr>
-
 <tr>
 <td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </td> 
 <td><p>Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
 <p>Before work begins on a PBI or bug, describe the <a href="best-practices-product-backlog.md#acceptance" data-raw-source="[criteria for customer acceptance](best-practices-product-backlog.md#acceptance)">criteria for customer acceptance</a> as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.</p></td> 
 </tr>
-
 </tbody>
 </table>
 
 
+
 ## Try this next
+
 Now that you have a working backlog in place, your team can begin work on the top-priority items. From here, it's time to decide how you want to work as a team. Do you want to use Scrum or Kanban? You can use these methods independently or together.
 
 > [!div class="nextstepaction"]

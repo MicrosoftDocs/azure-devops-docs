@@ -57,7 +57,6 @@ Use the following guidance and that provided for [fields used in common across w
 <tr>
     <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </p></td>
     <td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
-
 </td>
 </tr>
 <tr>
@@ -90,8 +89,6 @@ Use the following guidance and that provided for [fields used in common across w
     <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Risk](../../queries/planning-ranking-priorities.md)">Risk</a></p></td>
 	<td><p>A subjective rating of the relative uncertainty around the successful completion of a user story. Allowed values are:</p><ul><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul></td>
 </tr>
-
-
 </tbody>
 </table>
 
@@ -115,8 +112,6 @@ By updating the workflow, teams know which items are new, in progress, or comple
 > |-------------|----------|---------| 
 > |<img src="_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" /> |<img src="_img/agile-bug-workflow.png" title="Bug workflow states, Agile process" style="padding-left:20px;" alt="Bug workflow states, Agile process" /> |<img src="_img/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process " style="padding-left:20px;" alt="Task workflow states, Agile process" />| 
 
-
- 
 A typical workflow progression for a user story follows:
 
 -   The product owner creates a user story in the **New** state with the default reason, **New user story**  
@@ -132,7 +127,6 @@ Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the st
 ![Track progress on the Kanban board](../../boards/_img/ALM_CC_MoveCard.png)
 
 You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
-
 
 
 ## Map user stories to features
@@ -164,13 +158,9 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
-
 <tr>
     <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
     <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="https://msdn.microsoft.com/library/dd380678.aspx" data-raw-source="[Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx)">Burndown and Burn Rate</a>, <a href="https://msdn.microsoft.com/library/dd380673.aspx" data-raw-source="[Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx)">Remaining Work</a>, and <a href="https://msdn.microsoft.com/library/dd380706.aspx" data-raw-source="[Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
-
-
-
 <tr>
     <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>
@@ -180,7 +170,6 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 <tr>
     <td><p><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a></p></td>
 	<td><p>Product build number that incorporates the code or fixes a bug.</p></td>
-
 </tr></tbody>
 </table>  
 
@@ -236,8 +225,7 @@ You can use the Priority field to differentiate the value of various stories. Or
 
 The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
 
-
-
+::: moniker range="<= tfs-2015"
 
 ### Links control, client work item form 
 
@@ -329,5 +317,5 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </tbody>
 </table>
 
-
+::: moniker-end
 

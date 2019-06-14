@@ -35,7 +35,9 @@ Use this article to learn how to:
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
+
 ## Copy or clone a work item   
+
 Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. No  history or attachments are copied. 
 
 Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No  history or attachments are copied over from the original work item. 
@@ -55,6 +57,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 
 ::: moniker range="tfs-2017"
+
 <!---#### TFS 2017-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
 
@@ -66,6 +69,7 @@ Copy a work item when you want to create another instance of it and optionally c
    ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 <!---#### TFS 2015-->
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
@@ -86,12 +90,14 @@ Copy a work item when you want to create another instance of it and optionally c
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Change the work item type  
 
 If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end
 
 <a id="html"></a>
+
 ## Copy a list of work items  
 
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
@@ -152,6 +158,7 @@ The formatted table contains a link to each work item included in your selected 
 ## Copy the URL
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
@@ -166,11 +173,14 @@ Right click the link ID to open the browser copy link option.
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
+
+
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

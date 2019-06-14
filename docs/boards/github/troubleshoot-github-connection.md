@@ -114,6 +114,7 @@ When updated, the section should appear as shown.
 > ```
 
 <a id="ghe-dataimport" />
+
 ## Resolve broken GitHub Enterprise Server connection after data import
 
 If you have migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
@@ -121,7 +122,7 @@ If you have migrated from Azure DevOps Server to Azure DevOps Services with an e
 To resolve the problem, consider the following:
 
 - **Remove and re-create the connection**:
-  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](connect-to-github?view=azure-devops#connect-azure-devops-services-to-github-enterprise-server) documentation.
+  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](connect-to-github.md#github-ent-oauth-services) documentation.
 
 - **Fix the webhook url**:
   Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```

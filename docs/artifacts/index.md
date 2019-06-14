@@ -22,8 +22,6 @@ featureFlags:
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p>
 
 
-
-
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
@@ -160,7 +158,6 @@ featureFlags:
                         <p>
                             <a href="/azure/devops/pipelines/artifacts/pypi">Publish Python packages in Azure Pipelines</a>
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -183,7 +180,6 @@ featureFlags:
                         <p>
                             <a href="/azure/devops/pipelines/artifacts/universal-packages">Publish and download Universal Packages in Azure Pipelines</a>
                         </p>
-
                     </div>
                 </div>
             </div>
