@@ -143,6 +143,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 1. Choose **Save changes**.   
 
 <a id="collection-level" />
+
 ## Add a group and change its permissions at the organization or collection-level group 
 
 ::: moniker range=">= azure-devops-2019"
@@ -210,6 +211,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"  
+
 ## On-premises deployments
 
 For on-premises deployments, see these additional topics: 

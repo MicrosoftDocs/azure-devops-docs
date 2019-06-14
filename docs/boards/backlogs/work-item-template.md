@@ -49,11 +49,13 @@ For example usage of work item templates, see [Sample work item templates](../wo
 
 
 <a id="capture"> </a> 
+
 ## Capture a work item as a template
 
 The steps to capture a work item differ based on the platform, version, and client you use.  
 
 #### [Browser](#tab/browser/)
+
 <a id="team-services-capture" /> 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -174,6 +176,7 @@ The main method for adding a work item using a template is to open the template 
 ::: moniker range=">= azure-devops-2019"  
 
 #### [Browser](#tab/browser/)
+
 1. Open settings for a team.  
 
     Choose **Project Settings**.
@@ -190,6 +193,7 @@ The main method for adding a work item using a template is to open the template 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-copy-link" />
 
 1. You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  

@@ -97,10 +97,11 @@ You define both areas and iterations from the **Work** pages of the project admi
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
+
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
 
@@ -108,12 +109,13 @@ You define both areas and iterations from the **Work** pages of the project admi
 
     > [!div class="mx-imgBorder"]
     > ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
-    ::: moniker-end  
 
 2. Choose **Work**.  
 
 ::: moniker-end   
+
 <a id="admin-intro-tfs-2015" />
+
 ::: moniker range="<= tfs-2015"  
 
 1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**.
@@ -122,7 +124,10 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end
 
-<a id="add-areas" /><br/><a id="add-areas-team-services" /><br/><a id="tfs-15-area-paths" />
+<a id="add-areas" /><br/>
+<a id="add-areas-team-services" />
+<a id="tfs-15-area-paths" />
+
 ## Add an area path 
 
 If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
@@ -140,6 +145,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
+
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
 
@@ -168,6 +174,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 
 <a id="open-team-settings" />
+
 ## Open team settings  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
@@ -175,6 +182,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 From a web browser, open the web portal administrative context for your team.  
 
 ::: moniker range=">= azure-devops-2019"  
+
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
@@ -211,11 +219,15 @@ You open team settings from the top navigation bar. Select the team you want and
 ## Set team default area path(s)
 
 ::: moniker range=">= tfs-2017"  
+
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths.  Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
+
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2015"  
+
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
+
 ::: moniker-end  
 
 The default area path determines the default area path assigned to work items that are created from the team context.  
@@ -249,6 +261,7 @@ The default area path determines the default area path assigned to work items th
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2015"  
+
 1. Open the Areas admin page for the team context.  
 
     Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
@@ -283,7 +296,8 @@ When you rename an area or an iteration, or move the node within the tree hierar
 4. To delete a node, choose the **Delete** option from the actions menu.
 
 ::: moniker range=">= tfs-2017"
-> [!NOTE]
+
+>=tfs-2017 <= tfs-2018> [!NOTE]
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
 
 ::: moniker-end

@@ -15,6 +15,7 @@ ms.date: 2/14/2019
 ---
 
 <a id="adjust-work">  </a>
+
 # 4. Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
@@ -25,6 +26,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ![Over capacity](_img/IC795969.png)  
 
+Use this article to learn how to:
 > [!div class="checklist"]   
 > * Adjust your sprint plan if your team is over or under capacity    
 > * Load balance work across your team 

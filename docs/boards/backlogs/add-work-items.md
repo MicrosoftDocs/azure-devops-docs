@@ -15,11 +15,15 @@ ms.date: 02/14/2019
 ---
 
 ::: moniker range=">= tfs-2017"
+
 # Add, update, and follow a work item 
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
+
 # Add and update a work item
+
 ::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -31,11 +35,14 @@ For additional clients that you can use, see [Best tools for adding, updating, a
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="define-new-work">  </a>
+
 ## Add a work item 
+
 You can start adding work items once you connect to a project. 
 
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
@@ -90,6 +97,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
+
 1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
     > [!div class="mx-imgBorder"]  
@@ -122,6 +130,7 @@ Create as many work items as you need of the type you need to track the work you
 
 
 ## Update work items as work progresses
+
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
 ::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
@@ -144,7 +153,6 @@ The following image shows the work flow states for a user story. If you want to 
 
 ::: moniker-end
 
-<br/>
 
 <table>
 <tbody valign="top">
@@ -156,8 +164,6 @@ The following image shows the work flow states for a user story. If you want to 
 <li>The team updates the status to <strong>Active</strong> when they decide to complete the work during the sprint</li>
 <li>A user story is moved to <strong>Resolved</strong> when the team has completed all its associated tasks and unit tests for the story pass.</li>
 <li>A user story is moved to the <strong>Closed</strong> state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.</li>
-
-
 </ul>
 <p><b>Atypical transitions:</b></p>
 <ul>
@@ -171,7 +177,6 @@ The following image shows the work flow states for a user story. If you want to 
 </td>
 <td>
 <img src="../work-items/guidance/_img/alm_pt_agile_wf_userstory.png" alt="User story workflow, Agile process"/>
-
 </td>
 </tr>
 </tbody>
@@ -194,6 +199,7 @@ To find work items based on their history, see [History & auditing](../queries/h
 [!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
 ::: moniker range=">= tfs-2017"
+
 ## Follow a work item
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   

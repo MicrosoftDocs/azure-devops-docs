@@ -80,7 +80,6 @@ Tutorials, references, and other documentation show you how to configure and man
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -106,7 +105,6 @@ Tutorials, references, and other documentation show you how to configure and man
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -135,7 +133,6 @@ Tutorials, references, and other documentation show you how to configure and man
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">

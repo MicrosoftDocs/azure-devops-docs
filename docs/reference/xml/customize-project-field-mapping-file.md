@@ -14,7 +14,7 @@ ms.date: 05/06/2019
 
 # Customize the Microsoft Project field mapping file
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)] 
 
 You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Project, the field map determines which fields in the work item database match the fields in Project.  
 

@@ -22,6 +22,7 @@ All workflows consist of states, transitions, and reasons. Workflows are defined
 Each state belongs to a state category (previously referred to as a metastate). State categories support the Agile tool backlog and board views. 
 
 <a id="workflow-states">  </a> 
+
 ## Workflow states
 
 Workflow states define how a work item progresses upon its creation to closure. For example, the four main states defined for the User Story (Agile process) define a progression of four states, from New, Active, Resolved, to Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
@@ -37,6 +38,7 @@ The natural progressions and regressions of the user story, product backlog item
 
 
 <a id="state-categories">  </a>  
+
 ## State categories
 
 State categories, on the other hand, determine how Agile planning tools and select dashboard widgets treat each workflow state. The state categories used by the backlogs, boards and widgets are Proposed, In Progress, and Complete.
@@ -92,6 +94,7 @@ Here's how the default, inherited states map to the state categories for all thr
 
 
 <a id="add-state-vs-kanban-column" />
+
 ## When to add a State versus a Kanban column
 
 Both States and Kanban columns are used to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  

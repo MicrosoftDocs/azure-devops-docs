@@ -47,6 +47,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 
 ::: moniker range=">= azure-devops-2019" 
+
 ## Add the widget to your dashboard   
 
 ::: moniker-end
@@ -80,6 +81,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 <a id="configure-widget" /> 
 <a id="configure" /> 
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Configure the CFD widget    
