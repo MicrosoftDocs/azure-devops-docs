@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/31/2019
+ms.date: 06/14/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -944,6 +944,7 @@ A trigger specifies what branches will cause a continuous integration build to
 run. If left unspecified, pushes to every branch will trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
 and how to specify them.
+Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 # [Schema](#tab/schema)
 
