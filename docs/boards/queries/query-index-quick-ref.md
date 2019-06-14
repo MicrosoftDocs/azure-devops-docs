@@ -56,7 +56,6 @@ Use this index to quickly access information on query editor tasks, operators av
 </td>
 <td width="34%">
 <ul>
-
 <li><a href="using-queries.md#flat-list-query" data-raw-source="[Save a query](using-queries.md#flat-list-query)">Save a query</a></li>
 <li><a href="set-query-permissions.md" data-raw-source="[Set query permissions](set-query-permissions.md)">Set query permissions</a></li>
 <li><a href="using-queries.md#tree-query" data-raw-source="[Tree query](using-queries.md#tree-query)">Tree query</a></li>
@@ -68,7 +67,6 @@ Use this index to quickly access information on query editor tasks, operators av
 </ul>
 </td>
 </tr>
-
 </tbody>
 </table>
 
@@ -286,9 +284,9 @@ The following table lists common query fields and their data type for which samp
 </tr>
 </tbody>
 </table>
- 
- 
-#### Notes:  
+
+
+**Notes:**
 
 1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
 

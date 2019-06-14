@@ -196,6 +196,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 Combine these elements to apply emphasis to text.
 
 ::: moniker range=">= azure-devops-2019"
+
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
 
@@ -218,14 +219,16 @@ Combine these elements to apply emphasis to text.
 **Example:**
 
 <pre>
-Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~
+Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~  
 **_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
 </pre>
 
 <br/>
+
 **Result:**  
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>
+
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>  
 **_Bold, italicized text_**
 **~~Bold, strike-through text~~**  
 
@@ -242,11 +245,15 @@ $ sudo npm install vsoagent-installer -g
 </pre>  
 
 <br/>
+
 **Result:**
+
 ```
 $ sudo npm install vsoagent-installer -g
 ```
+
 <br/>
+
 **Example:**
 
 <pre>
@@ -254,10 +261,13 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 </pre>
 
 <br/>
+
 **Result:**
+
 To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer`.  
 
 <br/>
+
 Within a Markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
 Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
@@ -269,6 +279,7 @@ code
 </pre>
 
 <br/>
+
 **Additional examples:**
 
 <pre>
@@ -282,6 +293,7 @@ const count = records.length;
 ```
 
 <br/>
+
 <pre>
 ``` csharp
 Console.WriteLine("Hello, World!");
@@ -313,8 +325,8 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
-
-<br/>
+  
+  
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -385,6 +397,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 
 <a id="link-work-items" />
+
 ## Links
 
 In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
@@ -396,6 +409,7 @@ In Markdown files and widgets, you can set text hyperlinks for your URL using th
 ```markdown
 [Link Text](Link URL)
 ```
+
 When linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
 
 **Supported links for Welcome pages:**
@@ -422,9 +436,10 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 > [!NOTE]  
 > Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
+> For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
 
 **Example:**  
+
 <pre>
 &#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 </pre>
@@ -466,6 +481,8 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 </pre>
 
 <br/>
+
+
 **Result:**
 
 The syntax for an anchor link to a section...
@@ -508,16 +525,18 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 </pre>
 
 <br/>
+
 **Result:**
+
 ![Illustration of linked image](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
-<ul>
-<li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
-<li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
-<li>Absolute path in TFVC:<br/> ```![Image alt text]($/project/folder/_img/markdown-guidance/image.png)```  </li>
-<li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)```  </li>
-</ul>
+
+- Relative path: `![Image alt text](./image.png)`  
+- Absolute path in Git: `![Image alt text](/_img/markdown-guidance/image.png)`  
+- Absolute path in TFVC: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png)`  
+- Resize image: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+
 
 ::: moniker-end
 
@@ -552,6 +571,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 </pre>
 
 <br/>
+
 **Result:**  
  
 <img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
@@ -587,6 +607,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 :smile:
 :angry:
 </pre>
+
 <br/>
 
 **Result:**  
@@ -613,35 +634,30 @@ To escape emojis, enclose them using the \` character.
 <th width="300px">Syntax</th>
 <th width="350px">Example/notes</th>
 </tr>
-
-
 <tr>
 <td>
 <p>To insert one of the following characters, prefix with a backslash:</p>
-
-<p style="margin-bottom:2px;">```\   backslash ``` </p>
+<p style="margin-bottom:2px;"><code>\   backslash </code> </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
-<p style="margin-bottom:2px;">```_   underscore  ```</p>
-<p style="margin-bottom:2px;">```{}  curly braces  ``` </p>
-<p style="margin-bottom:2px;">```[]  square brackets ```</p>
-<p style="margin-bottom:2px;">```()  parentheses  ```</p>
-<p style="margin-bottom:2px;">```#   hash mark  ``` </p>
-<p style="margin-bottom:2px;">```+   plus sign  ```</p>
-<p style="margin-bottom:2px;">```-   minus sign (hyphen) ```</p>
-<p style="margin-bottom:2px;">```.   dot  ``` </p>
-<p style="margin-bottom:2px;">```!   exclamation mark  ```</p>
-
+<p style="margin-bottom:2px;"><code>_   underscore  </code></p>
+<p style="margin-bottom:2px;"><code>{}  curly braces  </code> </p>
+<p style="margin-bottom:2px;"><code>[]  square brackets </code></p>
+<p style="margin-bottom:2px;"><code>()  parentheses  </code></p>
+<p style="margin-bottom:2px;"><code>#   hash mark  </code> </p>
+<p style="margin-bottom:2px;"><code>+   plus sign  </code></p>
+<p style="margin-bottom:2px;"><code>-   minus sign (hyphen) </code></p>
+<p style="margin-bottom:2px;"><code>.   dot  </code> </p>
+<p style="margin-bottom:2px;"><code>!   exclamation mark  </code></p>
 </td>
 <td>Some examples on inserting special characters
-<p>Enter ```\\``` to get \\ </p>
-<p>Enter ```\_``` to get _ </p>
-<p>Enter ```\#``` to get \# </p>
-<p>Enter ```\(``` to get \( </p>
-<p>Enter ```\.``` to get \. </p>
-<p>Enter ```\!``` to get \! </p>
+<p>Enter <code>\\</code> to get \\ </p>
+<p>Enter <code>\_</code> to get _ </p>
+<p>Enter <code>\#</code> to get \# </p>
+<p>Enter <code>\(</code> to get \( </p>
+<p>Enter <code>\.</code> to get \. </p>
+<p>Enter <code>\!</code> to get \! </p>
 </td>
 </tr>
-
 </tbody>
 </table>
 

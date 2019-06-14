@@ -64,6 +64,7 @@ For information about working with pipelines, see these articles:
 <a id="create-work-item">  </a>
 
 ## View and add work items
+
 You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
@@ -79,7 +80,7 @@ You can start viewing and adding work items once you connect to a project.
 	<tbody valign="top">
 	<tr>
 	<td>
-	![Boards>Work Items ](../../boards/work-items/_img/view-add/view-menu.png)
+	<img src="../../boards/work-items/_img/view-add/view-menu.png" alt=Boards>Work Items" />
 	</td>
 	<td>
 	<ul>
@@ -154,6 +155,7 @@ Azure DevOps Services users granted Stakeholder access for a public project can 
 ::: moniker-end
 
 <a id="check-backlog">  </a> 
+
 ## Check the backlog, add work items to the backlog 
 
 Work appears in the backlog in priority order. Work item types may include bugs depending on the settings made for the team. 

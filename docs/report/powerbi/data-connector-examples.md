@@ -29,7 +29,8 @@ Prior to generating these reports, you must first [connect to the Analytics serv
 > Use the search box if you are working with tables that contain many columns.
 
 <a id="number-of-work-items" />
-## Number of Work Items
+
+## Number of work items
 
 1. Load `Work Items - Today` table with columns: `Work Item Count`.  
 
@@ -42,7 +43,8 @@ Prior to generating these reports, you must first [connect to the Analytics serv
 	![Power BI, Filter for Work Item Count, add to fields](./_img/data-connector-recipes-count-2.png)  
 
 <a id="number-of-bugs-by-area-path-and-priority" />
-## Number of Bugs by Area Path and Priority
+
+## Number of bugs by area path and priority
 
 1. Load `Work Items - Today` table with columns: `Area Path`, `Priority`, `Work Item Count`, `Work Item Type`.  
 
@@ -67,6 +69,7 @@ Prior to generating these reports, you must first [connect to the Analytics serv
 	![Power BI, Add Work Item Type to Visual Level Filters, Filter on Bug](./_img/data-connector-recipes-number-of-bugs-by-area-path-and-priority-5.png)
 
 ## Related articles 
+
 - [Power BI integration overview](overview.md) 
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md) 

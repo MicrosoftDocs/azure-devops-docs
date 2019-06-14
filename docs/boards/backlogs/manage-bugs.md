@@ -70,6 +70,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 #### [New web form](#tab/new-web-form/)
+
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
@@ -85,6 +86,7 @@ The new web form is only available from TFS 2017 and later versions.
 
 
 #### [Old web form](#tab/old-web-form/)
+
 ::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
@@ -96,6 +98,8 @@ To learn more about working in the old web form, see [Add work items to plan and
 
 
 * * *
+
+
 ## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
@@ -127,7 +131,6 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>Information about the software and system configuration that is relevant to the test.</p>
 </td>
 </tr>
-
 <tr>
     <td><p><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a>  </p></td>
     <td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
@@ -164,7 +167,6 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 </ul>
 </td>
 </tr>
-
 <tr>
 <td>
 <a href="../queries/planning-ranking-priorities.md" data-raw-source="[Severity](../queries/planning-ranking-priorities.md)">Severity</a> <sup>1</sup>
@@ -187,9 +189,11 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 </ul>
 </td>
 </tr>
-
 </tbody>
-</table><br/>
+</table>
+
+#### Notes: 
+
 <sup>1</sup> To change the menu selection or picklist, see <a href="../../reference/customize-work.md" data-raw-source="[Customize the work tracking experience](../../reference/customize-work.md)">Customize the work tracking experience</a>. The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
@@ -198,6 +202,7 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 [!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
 <a id="test-tools"> </a>
+
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
@@ -206,6 +211,7 @@ You can create bugs during test sessions using one of the following tools:
 
 
 <a id="triage"> </a>
+
 ## Triage bugs  
 
 Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
@@ -239,6 +245,7 @@ Your team should consider fixing all bugs found during a sprint when testing a f
 
 
 <a id="fix-resolve-close">  </a>
+
 ## Fix, resolve and close bugs (update status) 
 
 Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the bug work item history.
@@ -256,6 +263,7 @@ For Scrum bugs, you simply change the State from Committed (similar to Active) t
 
 
 ### Verify a fix 
+
 To verify a fix, a developer or tester should attempt to reproduce the bug and look for additional unexpected behavior. If necessary, they should reactivate the bug.
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
@@ -263,7 +271,9 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 ::: moniker range=">= tfs-2017"  
 
 <a id="verify-bug">  </a>
+
 ### Verify a bug, re-run tests defined for web apps 
+
 ::: moniker-end  
 ::: moniker range=">= tfs-2018"  
 Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
@@ -278,7 +288,9 @@ To learn more about running test from the web portal, see [Run tests for web app
 ::: moniker-end  
 
 <a id="close">  </a>
+
 ### Close a bug  
+
 You close a bug once it's verified as fixed. However, you may also close a bug for one of these reasons:
 
 - Deferred - deferring a fix until the next product release
@@ -301,6 +313,7 @@ For example, here are two examples showing active bugs by priority trend and a s
 To learn more about queries, charts, and dashboards; see [Create managed queries](../queries/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
 <a id="customize"> </a>
+
 ## Customize the bug form
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
@@ -322,7 +335,9 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
 <a id="integrate"> </a>
+
 ### Integrate & Test resources
+
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
 - [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
@@ -332,6 +347,7 @@ To track your bugs and integrate with other resources available to you, see thes
 ::: moniker range=">= azure-devops-2019"
 
 ### Use the Analytics service to create bug reports
+
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
 ::: moniker-end  

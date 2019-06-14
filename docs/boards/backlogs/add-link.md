@@ -86,7 +86,8 @@ For a list of all link types and supported link relationships, see [Linking, tra
    ::: moniker-end
 
 <a id="link-existing"> </a>  
-## Link to an existing work item    
+
+## Link to an existing work item  
 
 When you link work items, you select a link type. In general, use the following link types as indicated. To learn more about each link type, see [Link type reference](../queries/link-type-reference.md). 
 
@@ -138,6 +139,7 @@ If you are working from the Query Results page, you'll need to bulk save the wor
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 From the Add link to Multiple Items dialog, select the link type, enter a work item ID, and then click OK. 
 
 For example, here we use the Related link type to link several items to the user story with ID of *4654*. 
@@ -173,6 +175,7 @@ Here, we have selected to add a link to the selected work items.
 
 ::: moniker range="azure-devops"
 <a id="remote-link"> </a>  
+
 ## Link to a remote work item 
 
 You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Azure Active Directory to manage users. 

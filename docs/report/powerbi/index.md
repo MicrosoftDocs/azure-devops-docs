@@ -29,9 +29,7 @@ With Power BI, you can quickly generate reports for your projects in Azure DevOp
 
 High-level overview of Power BI Desktop, from getting data and building a report to uploading this report to Power BI so it can be refreshed and shared with other users. Learn how to build stunning reports using Power BI Desktop.
 
-
-> [!Video <https://channel9.msdn.com/Events/Connect/2017/T251/player>]
-
+> [!VIDEO https://channel9.msdn.com/Events/Connect/2017/T251/player]
 
 Learn how to build stunning reports using Power BI Desktop.
 

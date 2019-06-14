@@ -32,6 +32,7 @@ The areas and iterations you see depend on the process you used to create your p
 
 
 <a id="area-path-guidance" />
+
 ## End-to-end sequence to define and assign Area Paths
 
 If you are new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows: 
@@ -43,8 +44,10 @@ If you are new to managing projects and teams, the most straight forward sequenc
 6. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 ::: moniker range=">= tfs-2017"
+
 > [!NOTE] 
 > While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
+
 ::: moniker-end
 
 As needed, you can perform the following actions at any time: 
@@ -73,6 +76,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 
 <a id="area-path-guidance" />
+
 ## End-to-end sequence to define and assign Iteration Paths
 
 Use the following guidance to configure Iteration Paths (aka sprints) for your project and teams:  
@@ -116,6 +120,7 @@ Iterations do not enforce any rules. For example, you can assign a task to an it
 
 
 <a name="name-restrictions"></a>
+
 ## Naming restrictions 
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items which are separated by the backslash (&#92;) character. We recommend that you minimize the names of nodes, and make sure that you conform to the following restrictions when adding child nodes:

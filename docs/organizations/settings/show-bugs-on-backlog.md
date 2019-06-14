@@ -109,6 +109,7 @@ When you manage bugs with requirements or with tasks, they'll show up on one or 
 
 
 <a id="add-other-wits" /> 
+
 ## Add other work item types to your backlogs or boards
 
 Bugs are a common item that teams want to track, and choose how they track it. See [Manage bugs](../../boards/backlogs/manage-bugs.md) for more guidance. 
@@ -116,14 +117,19 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
 ::: moniker range=">= azure-devops-2019"  
+
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"    
+
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
+
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 ## Create, list, and manage bugs 

@@ -4,12 +4,13 @@ ms.topic: include
 
 
 <a id="run-witadmin-tool" />
+
 ## How to run the witadmin command-line tool  
 
 To run the **witadmin** command-line tool, open a Command Prompt window where Visual Studio is installed. The **witadmin** command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community or Visual Studio Team Explorer](https://visualstudio.microsoft.com/downloads/).  
 
 > [!NOTE]   
-> If you are connecting to TFS, you must use the same version of Visual Studio or Team Explorer as TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017. There is no Team Explorer 2015 version. 
+> If you are connecting to an on-premises server, you must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017. There is no Team Explorer 2015 version. 
   
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"

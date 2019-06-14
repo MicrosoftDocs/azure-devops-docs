@@ -8,7 +8,7 @@ ms.topic: include
 > [!NOTE]  
 > Power BI integration is in preview for Azure DevOps Services. 
 > 
-> If you are looking for how to use Power BI, see [Power BI documentation](/power-bi/).> 
+> If you are looking for how to use Power BI, see [Power BI documentation](/power-bi/). 
 > 
 > To access <strong>Analytics views</strong>, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
  

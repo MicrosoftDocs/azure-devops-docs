@@ -16,6 +16,7 @@ ms.date: 2/14/2019
 
 
 <a id="define-tasks">  </a>
+
 # 2. Add tasks to backlog items 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
@@ -86,6 +87,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 
 <a id="define-tasks" />
+
 ## Add tasks to backlog items
 
 If you haven't yet assigned backlog items to your sprint, [do that now](assign-work-sprint.md). Also, you'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 

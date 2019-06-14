@@ -4,7 +4,7 @@
   href: about-public-projects.md
 - name: Quickstarts
   items:
-  - name: Build OSS repositories - 
+  - name: Build OSS repositories 
     href: /azure/devops/pipelines/repos/index?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Create a public project
     href: create-public-project.md

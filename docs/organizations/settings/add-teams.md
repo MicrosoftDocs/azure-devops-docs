@@ -43,7 +43,7 @@ As your team grows, you can easily move from one team to two. In this example, w
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../projects/create-project.md).  
-- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group or those who have been [granted explicit permissions to edit project information](../security/set-project-collection-level-permissions.md) can add and delete teams.   
+- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
 
 
 ## Add two feature teams 
@@ -71,12 +71,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
 
 	From the team profile, you can perform these additional tasks:  
-   - [Add team administrators](add-team-administrator.md)  
-   - [Add team members](#add-team-members)  
+   - [Add team administrators](add-team-administrator.md)
+   - [Add team members](#add-team-members)
    - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)  
+   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
-     To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
 
@@ -138,25 +138,31 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 <a id="add-team-members"> </a>  
 
 ## Add team members
+
 If you're moving from one team to two teams, team members already have access to the project. If you're setting up a team structure for the first time, adding user accounts as team members provides them access to the project and team assets. Access to the project is required to support sharing code and planning and tracking work. 
 
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 ::: moniker range="azure-devops"  
+
 > [!NOTE]   
 > You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way you can add user identities to a team.
+
 ::: moniker-end 
 
 
 ::: moniker range="< azure-devops"  
+
 > [!NOTE]   
 > The first time you add a user account, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups).
+
 ::: moniker-end 
 
 For details, see [Add users to a project or specific team](../security/add-users-team-project.md). 
 
 
 ## Move work items under teams 
+
 Now that your two feature teams are configured, you need to move existing work items from their current assignments to the team's default area path. This way, the work items show up on each team's backlog. 
 
 1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
