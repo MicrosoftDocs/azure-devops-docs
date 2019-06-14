@@ -56,6 +56,7 @@ The creator of a view and all members of the Project Administrators and Project 
    > If you remove fields from a view that are in use in the report, you'll need to update any Power BI report that references the view. 
 
 <a id="share-view" />
+
 ## Share a view 
 
 All contributors to a project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
@@ -88,7 +89,9 @@ You can always delete a view you created. Once you delete a view, any Power BI r
 To delete a view, click the ![ ](../_img/icons/actions-icon.png) actions icon and choose ![ ](../../_img/icons/delete-icon.png) **Delete** from the menu.
 
 <a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create a Power BI report using an Analytics view](data-connector-connect.md)
 

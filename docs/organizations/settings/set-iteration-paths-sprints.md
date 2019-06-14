@@ -57,6 +57,7 @@ As needed, you can perform the following actions at any time:
 - Change the default and selected Iteration Paths assigned to a team
 
 <a id="default_path">  </a>
+
 ## Backlog iteration versus default iteration 
 
 ::: moniker range=">= tfs-2017"
@@ -133,7 +134,8 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
 
 ::: moniker range=">= tfs-2017"
-<a id="define-sprints-team-services">   </a>
+
+<a id="define-sprints-team-services" />
 
 You add and modify area paths from the **Work, Iterations** page from the project admin or settings context.   
 
@@ -403,4 +405,4 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 *	[Agile tools that rely on areas or iterations](about-teams-and-settings.md)
 *	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 *	[Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)  
-*	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
+*	[Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)

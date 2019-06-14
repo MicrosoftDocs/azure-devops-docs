@@ -26,6 +26,7 @@ ms.date: 05/29/2019
 When a product, portfolio, or sprint backlog contains same-category, nested work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
 
 <a id="nested" > </a>
+
 ## Fix nesting issue
 
 You may see an error message such as "Ordering backlog items is disabled." 
@@ -66,6 +67,7 @@ Use the Feature work item type when you want to group user stories (Agile), issu
 
 
 <a id="bugs-as-tasks" > </a>
+
 ## Track bugs as requirements or tasks  
 
 As mentioned previously, [each team can choose how they want to track bugs](../../organizations/settings/show-bugs-on-backlog.md) to behave like requirements, or tasks, or as neither. 
@@ -81,6 +83,7 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 > ![Link bugs like tasks](_img/resolve/bugs-as-tasks.png)  
 
 <a id="leaf-nodes" > </a>  
+
 ## How backlogs and boards display hierarchical (nested) items
 
 For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 

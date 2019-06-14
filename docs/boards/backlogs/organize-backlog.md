@@ -157,6 +157,7 @@ Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![coll
 <a id="mapping">  </a>
 
 ## Map items to group them under a feature or epic 
+
 If you've already created your backlog, and now you want to organize it, you can do that most easily by mapping child items to parents.   
 
 ::: moniker range=">= azure-devops-2019"
@@ -208,6 +209,7 @@ It's the same process to map features to epics. From the Features backlog, drag 
 <a id="reparent">  </a>
 
 ## Change parent (re-parent) and reorder items
+
 When you need to change the order or grouping, simply drag the item to its new location. 
 
 You can re-parent an item using the mapping pane, or simply drag it within the hierarchy to change its parent.  

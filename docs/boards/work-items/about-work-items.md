@@ -201,6 +201,7 @@ Based on how your team answers these questions, they can choose how they want to
 For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
 <a id="queries" />
+
 ## Find or list work items 
 
 You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
@@ -212,6 +213,7 @@ To learn more, see these topics:
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
+
 ## Use work item templates to quickly fill in forms
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
@@ -241,6 +243,7 @@ You can add or modify the fields contained within a WIT or add a custom WIT. To 
 
 
 <a id="permissions-access" />
+
 ## Required permissions and access
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/access-levels.md#stakeholder-access). 
@@ -258,6 +261,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 
 ## Related articles 
+
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md) 

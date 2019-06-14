@@ -93,11 +93,13 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 <a id="dashboards"></a>
+
 ## SharePoint portal dashboards
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
 To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+
 ::: moniker-end
 
 

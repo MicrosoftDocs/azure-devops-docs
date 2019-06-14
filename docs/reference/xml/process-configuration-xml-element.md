@@ -814,5 +814,3 @@ Learn more about the web work item form and how to customize it from these addit
 - [On-premises XML process model](../on-premises-xml-process-model.md)   
 
 If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).
-
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

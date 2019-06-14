@@ -130,6 +130,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 
 <a id="workflow" />
+
 ## Modify the workflow of a work item type 
 
 Workflow states allow you to track the status of a work item as it moves from new to completed. 
@@ -146,6 +147,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 	- [Remove a state](customize-process-workflow.md#remove-state)     
  
 <a id="custom-control" />
+
 ## Add a custom control    
 
 Custom controls provide additional functionality to a work item form. 
@@ -159,6 +161,7 @@ To learn more, see [Add extensions and custom controls to a work item type](cust
 
 
 <a id="extension" /> 
+
 ## Add an extension to a work item type
 
 An extension is an installable unit that contributes new capabilities to your project.
@@ -208,6 +211,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 
 <a id="verify">  </a>
+
 ## Verify the customization you made 
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
@@ -215,6 +219,7 @@ We recommend that you create a test project and apply your customized inherited 
 - [Create a test organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
+
 ### Create a test project and copy of your customized process
 
 1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
@@ -235,6 +240,7 @@ We recommend that you create a test project and apply your customized inherited 
 3. Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
+
 ### Create a test organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
@@ -249,6 +255,7 @@ You can also use the following steps to verify the customizations you've made to
 
 
 <a id="process-rest-api">  </a>
+
 ## Programmatically work with processes 
 
 You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/azure/devops/processes/processes).

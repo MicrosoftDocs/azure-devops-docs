@@ -63,7 +63,6 @@ Use the following guidance and that provided for [fields used in common across w
       <p>Provide enough detail for estimating how much work will be required to implement the requirement. Focus on who the requirement is for, what users want to accomplish, and why. Don&#39;t describe how the requirement should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</p>
       <p>In HTML fields, you can add rich text and images. </p>
       <p>
-        
       </p>
     </td>
   </tr>
@@ -74,7 +73,6 @@ Use the following guidance and that provided for [fields used in common across w
     <td>
       <p>The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.</p>
       <p>
-        
       </p>
     </td>
   </tr>
@@ -132,8 +130,6 @@ Use the following guidance and that provided for [fields used in common across w
       </ul>
     </td>
   </tr>
-
-
 <tr>
     <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value area](../../queries/planning-ranking-priorities.md)">Value area</a></p></td>
 	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
@@ -150,16 +146,12 @@ Use the following guidance and that provided for [fields used in common across w
         </li>
       </ul>
 </td></tr>
-
   <tr>
     <td>
       <p>
         <a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> </p>
     </td>
     <td>
-
- 
-
       <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity charts](../../../report/dashboards/velocity-chart-data-store.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p>
     </td>
   </tr>
@@ -169,15 +161,12 @@ Use the following guidance and that provided for [fields used in common across w
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
-
 <tr>
     <td><p><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md)">Start Date/Finish Date</a> </p></td>
     <td><p>The target dates for when the work will start or finish. These fields are filled in by <a href="../../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)">Microsoft Project</a> when you use it for scheduling.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
-
-
   <tr>
     <td>
       <p>
@@ -231,7 +220,6 @@ Use the following guidance and that provided for [fields used in common across w
       <p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
     </td>
   </tr>
-
   <tr>
     <td>
       <p>
@@ -241,7 +229,6 @@ Use the following guidance and that provided for [fields used in common across w
       <p>Product build number that incorporates the requirement, change request, or fixes a bug.</p>
     </td>
   </tr>
-
   <tr>
     <td>
       <p>
@@ -283,8 +270,6 @@ Use the following guidance and that provided for [fields used in common across w
 	<p>You specify Not Ready when the requirement is in the Active state, and you specify Ready when the requirement is in the Resolved state.</p>
     </td>
   </tr>
-
-
   <tr>
     <td>
       <p>
@@ -389,9 +374,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 <tr>
 <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
 <td>
-
 <p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the <a href="https://msdn.microsoft.com/library/ff731588.aspx" data-raw-source="[Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
-
 </td>
 </tr>
 <tr>
@@ -440,6 +423,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
 ## Customize work item types
+
 [!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 ## Related articles 
@@ -453,8 +437,7 @@ The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to 
 
 This field doesn't appear on the work item form. 
 
-
-  
+::: moniker range="<= tfs-2015"
 
 ### Links control, client work item form 
 
@@ -546,4 +529,4 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </tbody>
 </table>
 
-
+::: moniker-end

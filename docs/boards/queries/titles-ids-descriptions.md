@@ -15,6 +15,7 @@ ms.date: 02/07/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
@@ -133,7 +134,6 @@ The following table describes common fields used to filter queries. The **ID** f
     <td><p>Acceptance Criteria  <sup>1</sup></p></td>
     <td><p>A description of the criteria to be met before the bug or product backlog item can be closed.</p><p>Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p> 
 <p>Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML</p>  </td><br/>    <td><p>Bug, Epic, Feature, Product backlog item (Scrum)</p></td>
-
 </tr>
 <tr>
   <td>
@@ -169,7 +169,6 @@ Repro Steps (or Steps to reproduce) <sup>1</sup>
     <td><p>Resolution</p></td>
     <td><p>Describes how an impediment was resolved.</p>
 <p>Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML</p>  </td><br/>    <td><p>Impediment (Scrum)</p></td>
-
 </tr>
 <tr>
   <td>
@@ -182,7 +181,6 @@ System Info<sup>1</sup>
   </td>
   <td>Bug, Code Review Request, Feedback Request<br/>  </td>
 </tr>
-
 <tr>
 <td>
 Team Project
@@ -190,23 +188,20 @@ Team Project
 <td>
 <p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
 <blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](using-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
-
-    <p>Reference name=System.TeamProject, Data type=String</p>
+<p>Reference name=System.TeamProject, Data type=String</p>
 </td>
 <td>All</td>
 </tr>
-
 <tr>
   <td>
 Title
   </td>
   <td>
-    <p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
+<p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
     <p>Reference name=System.Title, Data type=String</p>
   </td>
 <td>All</td>
 </tr>
-
 <tr>
   <td>
 Work Item Type
@@ -227,6 +222,7 @@ Work Item Type
 1. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles
+
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  

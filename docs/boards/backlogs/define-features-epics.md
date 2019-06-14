@@ -192,18 +192,15 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are <a href="create-your-backlog.md#estimates" data-raw-source="[story points, time, or other relative unit](create-your-backlog.md#estimates)">story points, time, or other relative unit</a>. 
 </td>
 </tr>
-
 <tr>
 <td>
-
-[Business Value](../queries/query-numeric.md)
+[](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md">Business Value</a>
 </td>
 <td>
 Specify a priority that captures the relative value of an Epic, Feature, or backlog item compared to other items of the same type. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.
-
 </td>
 </tr>
-
 <tr>
 <td>
 <a href="../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../queries/planning-ranking-priorities.md)">Time Criticality</a>
@@ -215,7 +212,6 @@ A subjective unit of measure that captures how the business value decreases over
 <tr>
     <td><p><a href="../queries/query-by-date-or-current-iteration.md" data-raw-source="[Target Date](../queries/query-by-date-or-current-iteration.md)">Target Date</a></p></td>
     <td><p>Specify the date by which the feature should be implemented.</p></td></tr>
-
 </tbody>
 </table>
 

@@ -193,12 +193,10 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-
 </ul>
 </td>
 <td width="34%">
 <ul>
-
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
 <li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
@@ -228,7 +226,6 @@ Use this index to quickly access information on adding and updating work items&m
 </ul>
 </td>
 </tr>
-
 </tbody>
 </table>
 
@@ -236,6 +233,7 @@ Use this index to quickly access information on adding and updating work items&m
 
 
 <a id="concepts" />
+
 ## Key concepts
 
 <table valign="top">
@@ -280,7 +278,6 @@ Use this index to quickly access information on adding and updating work items&m
 </td>
 <td width="34%">
 <ul>
-
 <li><a href="../queries/add-tags-to-work-items.md" data-raw-source="[Tags](../queries/add-tags-to-work-items.md)">Tags</a></li>
 <li><a href="about-work-items.md#track" data-raw-source="[Track bugs as requirements or tasks](about-work-items.md#track)">Track bugs as requirements or tasks</a></li>
 <li><a href="set-work-item-experience-vs.md" data-raw-source="[Visual Studio work item experience](set-work-item-experience-vs.md)">Visual Studio work item experience</a></li>
@@ -293,7 +290,6 @@ Use this index to quickly access information on adding and updating work items&m
 </ul>
 </td>
 </tr>
-
 </tbody>
 </table>
 

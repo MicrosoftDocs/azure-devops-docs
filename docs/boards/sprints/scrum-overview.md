@@ -58,12 +58,16 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
 ::: moniker range=">= azure-devops-2019"
-![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+> [!div class="mx-imgBorder"]  
+> ![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-!["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+> [!div class="mx-imgBorder"]  
+> ["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"

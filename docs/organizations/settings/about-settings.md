@@ -161,7 +161,8 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
-![Project settings, new nav](_img/about/project-settings-new-nav.png) 
+> [!div class="mx-imgBorder"]  
+> ![Project settings, new nav](_img/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -175,8 +176,10 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+
 ::: moniker-end
 
 
@@ -311,7 +314,8 @@ Members of the [Project Collection Administrators group](../security/set-project
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
+> [!div class="mx-imgBorder"]  
+> ![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 

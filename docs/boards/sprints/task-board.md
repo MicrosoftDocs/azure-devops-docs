@@ -97,6 +97,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 
 ## Customize the taskboard
+
 Each team can customize their **Taskboard** in the following ways:
 - [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show additional fields.
 - [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
@@ -128,7 +129,9 @@ An administrator can customize the **Taskboard** for all teams in the following 
 ::: moniker-end
 
 <a id="review-progress">  </a>
+
 ## Review progress in daily scrum meetings
+
 During your daily Scrum, you can filter your **Taskboard** to help focus on items of interest.
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
@@ -139,7 +142,9 @@ Use the Person filter when you want to focus on work assigned to individual team
 >If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).
 
 <a id="show-item-progress">  </a>
+
 ## Show progress on items
+
 With this view, you can quickly see which items are nearing completion and which have yet to be started.
 
 ::: moniker range=">= azure-devops-2019"
@@ -169,7 +174,9 @@ You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![
 ::: moniker-end
 
 <a id="show-individual-progress">  </a>
+
 ## Show progress of individuals
+
 With this view, you can focus on the work completed and the work remaining for each individual team member. You can quickly see who may need help to complete their sprint tasks. This view shows items and tasks assigned to the selected team member.
 
 
@@ -192,7 +199,9 @@ Choose the **Group by People** option, and then select a specific team member, o
 
 
 <a id="group-by-team">  </a>
+
 ## Group by team members
+
 With this view, you can quickly see all the tasks associated with each team member. Backlog items don't appear in this view, only the tasks associated with each individual.
 
 ::: moniker range=">= azure-devops-2019"
@@ -220,11 +229,15 @@ Choose the **Group by People** option, and then select a specific team member, o
 ::: moniker-end
 
 <a id="update-tasks">  </a>
+
 ## Update tasks during the sprint cycle
+
 The **Taskboard** makes quick work of updating both task status and remaining work.
 
 <a id="update-task-status">  </a>
+
 ### Update task status
+
 Simply drag tasks to a downstream column to reflect if they are in progress or completed.
 
 ![taskboard, update task status](_img/ALM_TB_Move_To_Done.png)
@@ -232,6 +245,7 @@ Simply drag tasks to a downstream column to reflect if they are in progress or c
 When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
 
 ### Update remaining work
+
 Updating *Remaining Work*, preferably prior to the daily Scrum meeting, helps the team stay informed of the progress being made. It also ensures a smoother burndown chart.
 
 Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the remaining work for the task. *Remaining Work* should always reflect exactly how much work the team member estimates is remaining to complete the task.
@@ -248,6 +262,7 @@ Each team member can review the tasks they've worked on and estimate the work re
 <a id="close-sprint">  </a>
 
 ## Close out a sprint, update your Taskboard
+
 At the end of the sprint, you'll want to perform these final tasks:
 *	Zero out *Remaining Work* of all completed tasks  
 *	Update the status of all completed backlog items  
@@ -268,6 +283,7 @@ Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, mana
 
 
 ## Related articles
+
 As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
 *	[Scrum best practices](best-practices-scrum.md)
@@ -278,6 +294,7 @@ As you can see, the taskboard provides a lot of support for your Scrum activitie
 
 <!---
 <a id="task-board-controls">  </a>
+
 ### Taskboard controls
 
 | Control               | Function                                    |
@@ -296,7 +313,8 @@ See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md
 
 
 <a id="reduce-task-board-items">  </a>
-## Reduce the number of items on the taskboard
+
+### Reduce the number of items on the taskboard
 
 If you exceed the number of items allowed on your taskboard, you'll receive a message indicating that you need to reduce the number of items. The maximum number of items includes work item types included in the Requirement and Task categories.
 

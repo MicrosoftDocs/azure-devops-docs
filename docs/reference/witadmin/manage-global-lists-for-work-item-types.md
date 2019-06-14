@@ -28,7 +28,7 @@ You can define a global list within its own definition file, in the definition f
 - **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
 - **listgloballist**:  Displays the name of each global list defined on the server.  
   
-  See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
 
