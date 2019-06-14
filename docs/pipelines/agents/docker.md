@@ -8,7 +8,7 @@ ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.manager: jillfra
 ms.author: juliobv
 author: juliobbv
-ms.date: 05/31/2019
+ms.date: 06/14/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -377,3 +377,9 @@ You can extend the Dockerfile to include additional tools and their dependencies
 - The `start.sh` script is called by the Dockerfile
 - The `start.sh` script is the last command that the Dockerfile
 - Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
+
+## Using Docker within a Docker container
+
+In order to use Docker from within a Docker container, you need to bind-mount the Docker socket.
+This has very serious security implications - namely, code inside the container can now run as root on your Docker host.
+If you're sure you want to do this, see the [bind mount](https://docs.docker.com/storage/bind-mounts/) documentation on Docker.com.
