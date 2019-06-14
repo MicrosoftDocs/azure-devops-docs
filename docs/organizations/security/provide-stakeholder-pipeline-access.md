@@ -99,6 +99,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for build pipelines
 
 Open the Security dialog for all or a select build pipeline. 
@@ -139,6 +140,7 @@ Open the Security dialog for all or a select build pipeline.
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for release definitions
 
 You can follow the steps provided in the previous two procedures to set permissions for release definitions. 

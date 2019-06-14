@@ -31,6 +31,7 @@ Customizations you make occur at one of three levels:
 
 
 <a id="shared-resources"></a>
+
 ## Shared resources  
 
 Each project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](../organizations/settings/about-areas-iterations.md). 
@@ -68,98 +69,84 @@ The following table summarizes the differences between the three supported proce
 <th ><a href="../organizations/settings/work/hosted-xml-process-model.md" data-raw-source="[Hosted XML](../organizations/settings/work/hosted-xml-process-model.md)">Hosted XML</a></th>
 <th ><a href="on-premises-xml-process-model.md" data-raw-source="[On-premises XML](on-premises-xml-process-model.md)">On-premises XML</a></th>
 </tr>
-
 <tbody valign="top" align="center">
-
 <tr>
 <td align="left">WYSIWYG editing</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Create inherited custom processes</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td></td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Create custom process templates (see note 1)</td>
 <td> </td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Inherit changes in system processes (Agile, Scrum, CMMI)</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
-
 <tr>
 <td align="left">Updated process changes automatically apply to projects</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Basic customizations supported (fields, workflow, work item types, backlog levels)</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Advanced customizations supported (custom link types, global lists, global workflow, team fields)</td>
 <td> </td>
 <td>(see note 2)</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Use the <a href="witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md" data-raw-source="[**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)"><strong>witadmin</strong> command-line tools</a> to edit projects</td>
 <td> </td>
 <td> </td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">REST API (read)</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">REST API (write)</td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
 </tbody>
 </table>
 
 **Notes:**
+
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
 
@@ -238,6 +225,8 @@ Otherwise, to grant or restrict access to select features or functions, review o
 </tbody>
 </table>
   
+
+
 ::: moniker range=">= tfs-2013 <=azure-devops-2019"
 
 <a id="test-experience"></a>

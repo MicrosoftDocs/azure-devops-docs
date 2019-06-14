@@ -15,10 +15,10 @@ ms.date: 05/23/2017
 
 # Define global lists  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Process template customization differences](../../organizations/settings/work/import-process/differences.md).
+> This article applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Process template customization differences](../../organizations/settings/work/import-process/differences.md).
 >
 >The Inheritance process model doesn't support global lists. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 

@@ -75,4 +75,4 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	 
    > [!div class="mx-imgBorder"]  
    > ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/_img/overview/kanban-basics-intro-tfs.png)  
-   ::: moniker-end   
+::: moniker-end   

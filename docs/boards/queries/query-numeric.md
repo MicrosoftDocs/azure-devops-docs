@@ -230,14 +230,12 @@ The following table describes the activity-based and numeric fields that you can
 <p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
 </td>
     <td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
-
 </tr>
 <tr>
     <td><p>Business Value</p></td>
     <td><p>A subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number.</p><p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=Integer</p>  </td>
     <td>Epic, Feature</td>
 </tr>
-
 <tr>
     <td><p>Completed Work</p></td>
     <td><p>The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
@@ -254,7 +252,6 @@ The following table describes the activity-based and numeric fields that you can
 </td>
 <td>Task, Bug <sup>4</sup> (CMMI)</td>
 </tr>
-
 <tr>
     <td><p>Effort</p></td>
     <td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
@@ -292,7 +289,6 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug<sup>4</sup></td>
 </tr>
-
 <tr>
     <td><p>Requires Review</p></td>
     <td><p>Indicates the task requires review. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
@@ -303,13 +299,10 @@ The following table describes the activity-based and numeric fields that you can
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-
 <p>Reference name=&quot;Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
-
-
 <tr>
     <td><p>Task Type<sup>1</sup></p></td>
     <td><p>Specifies the kind of task to implement. Allowed values are:</p><ul><li><p>Corrective Action</p></li><li><p>Mitigation Action</p></li><li><p>Planned</p></li></ul>
@@ -317,22 +310,18 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug<sup>4</sup> (CMMI process)</td>
 </tr>
-
-
-
 </tbody>
 </table>
 
 **Notes:**
 
-1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).   
-2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p>
-
-3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
-
+1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
+3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
 ## Related articles 
+
 For information on adding custom fields, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 The main tools you use to plan and track work are described here: 
@@ -357,8 +346,8 @@ For more information on using work items and queries, see:
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
--[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
-- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
+- [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
+- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)  
 
 <a id="category"/>
 

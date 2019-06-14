@@ -15,15 +15,19 @@ ms.date: 02/14/2019
 ---
 
 ::: moniker range=">= tfs-2017"
+
 # Tasks supported by Backlogs, Boards, Taskboards, and Delivery plans 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each?
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
+
 # Backlogs and boards
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each? 
@@ -117,6 +121,7 @@ To manage work, you have access to three classes of backlogs&mdash;portfolio, pr
 You use work items to share information, assign work to team members, track dependencies, organize work, and more. You can apply different filters to your backlogs and boards to just show those items of interest. 
 
 ### Portfolio, product, and sprint backlogs 
+
 Portfolio backlogs typically track high-level features, scenarios, or epics. Your product backlog contains a prioritized list of user stories, deliverables, or work you plan to build or fix. Portfolio backlogs help you organize your product backlog into a hierarchy of elements. Sprint backlogs contain just those items that each team is working on during a scheduled sprint or iteration period. 
 
 For details about working in each type of backlog, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md), and [Sprint planning (sprint backlogs)](../sprints/assign-work-sprint.md). 
@@ -125,11 +130,13 @@ For details about working in each type of backlog, see [Create your backlog](cre
 > You can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
 
 ### Kanban and Taskboards
+
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
 
 For details about working in each type of board, see [Kanban basics](../boards/kanban-basics.md) and [taskboard](../sprints/task-board.md). 
 
 ### Feature support across backlogs and boards
+
 The following table indicates those elements or tasks associated with each type of backlog and board. 
 
 
@@ -189,8 +196,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Text</td>
 <td>Backlog items or people</td>
 </tr>
-
-
 <tr>
 <td>Show/hide parents</td>
 <td>Yes (except the top-level portfolio backlog)</td>
@@ -199,7 +204,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 <td>No</td>
 </tr>
-
 <tr>
 <td>Show/hide in progress items<br/>(see note 3)</td>
 <td>Yes</td>
@@ -208,7 +212,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 <td>No</td>
 </tr>
-
 <tr>
 <td>Forecast</td>
 <td>No</td>
@@ -217,8 +220,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 <td>No</td>
 </tr>
-
-
 <tr>
 <td>Customize: show bugs (see note 1)</td>
 <td>No </td>
@@ -227,7 +228,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes </td>
 <td>Yes </td>
 </tr>
-
 <tr>
 <td>Customize: Columns</td>
 <td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
@@ -236,7 +236,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
 <td>Yes, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize workflow](../../organizations/settings/work/customize-process-workflow.md)">Customize workflow</a></td>
 </tr>
-
 <tr>
 <td>Customize: Add more backlog or board views </td>
 <td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
@@ -245,7 +244,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 <td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 </tr>
-
 <tr>
 <td><a href="../../boards/boards/customize-cards.md" data-raw-source="[Customize: cards](../../boards/boards/customize-cards.md)">Customize: cards</a></td>
 <td>n/a</td>
@@ -254,8 +252,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>n/a</td>
 <td>Yes</td>
 </tr>
-
-
 <tr>
 <td>Charts </td>
 <td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
@@ -294,6 +290,7 @@ On your [backlog](create-your-backlog.md), set **In progress items** to **Show**
 
 ::: moniker range=">= tfs-2017"  
 <a id="plans">  </a>
+
 ## Delivery plans display team deliverables  
 
 With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
@@ -315,6 +312,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 
 
 <a id="task-board-items"/> 
+
 ## Taskboard items versus query list items
 
 You may notice and wonder why the items shown on the taskboard may differ from those listed in a query created from its corresponding sprint backlog. 
@@ -339,6 +337,7 @@ These reasons can cause work items that belong to the Task Category to not appea
 
 
 ## Customize backlog and board levels 
+
 ::: moniker range="azure-devops"
 
 If you need more than three backlog and board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
@@ -387,6 +386,7 @@ Additional articles of interest:
 - [Dashboards](../../report/dashboards/dashboards.md)   
 
 ::: moniker range=">= tfs-2017"  
+
 ### Additional tools from the Marketplace 
 
 You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Downloads), Azure DevOps tab.

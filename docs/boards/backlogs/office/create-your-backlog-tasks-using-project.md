@@ -41,6 +41,7 @@ Use this article to learn how to:
 
 
 ## Prerequisites 
+
 ::: moniker range=">= tfs-2017" 
 - Office Project 2010 or later version, including Office Project 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
@@ -134,14 +135,15 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 
 #### [Office Project 2007](#tab/office-2007/)
-0. If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). 
+
+1. If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). 
 
 1. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 
    > [!NOTE]    
    >The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-2. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    >If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -153,7 +155,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
    > [!TIP]  
    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
-3. Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
+1. Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
 
    ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 
@@ -165,7 +167,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
    ![Project plan bound to a project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
 
-4. Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.microsoft.com/client/HP010351693?lcid=1033&query=&NS=WINPROJ&Version=14&ShowNav=false&syslcid=1033&uilcid=1033&app=&msg=&origin=&ocmsassetID=HP010351693).
+1. Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.microsoft.com/client/HP010351693?lcid=1033&query=&NS=WINPROJ&Version=14&ShowNav=false&syslcid=1033&uilcid=1033&app=&msg=&origin=&ocmsassetID=HP010351693).
 
    > [!TIP]  
    > Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it in TFS. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
@@ -178,7 +180,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
    Optionally, you can use ![Get work items icon](_img/create-your-backlog-tasks-using-project/IC657981.png), select a work item query, and add work items from TFS to your project plan.
 
-5. Assign resources to tasks. Or, leave that field blank for the development team to assign.
+1. Assign resources to tasks. Or, leave that field blank for the development team to assign.
 
    ![Assign resources in project defined in TFS and AD](_img/create-your-backlog-tasks-using-project/IC658313.png)
 
@@ -190,11 +192,12 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 6. Save your project plan to retain scheduling and other data that TFS doesn't store.
 
 * * *
+
 ## Indent tasks to create parent-child links
 
 When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [taskboard](../../sprints/task-board.md) when they are assigned to the taskboard sprint.
 
-# [Office Project 365](#tab/office-365)
+#### [Office Project 365](#tab/office-365)
 
 > [!div class="mx-imgBorder"]  
 > ![Link tasks to create parent-child links](_img/project/indent-tasks.png)
@@ -205,7 +208,7 @@ To see the parent-child links that you just created, open **Links and Attachment
 > ![Subordinate tasks create predecessor-successor lnk](_img/project/links-and-attachments.png)
 
 
-# [Office Project 2007](#tab/office-2007)
+#### [Office Project 2007](#tab/office-2007)
 
 ![Link tasks to create parent-child links](_img/create-your-backlog-tasks-using-project/IC658913.png)
 
@@ -213,23 +216,23 @@ To see the parent-child links that you just created, open **Links and Attachment
 
 ![Subordinate tasks create predecessor-successor lnk](_img/create-your-backlog-tasks-using-project/IC658914.png)
 
----
+* * *
 
 ## Link tasks to create predecessor-successor links
 
 When you link two tasks and publish your plan, TFS creates predecessor-successor links between the two work items.
 
 
-# [Office Project 365](#tab/office-365)
+#### [Office Project 365](#tab/office-365)
 
 > [!div class="mx-imgBorder"]  
 > ![Create predecessor-successor links in Project](_img/project/predecessor-successor-links.png)
 
-# [Office Project 2007](#tab/office-2007)
+#### [Office Project 2007](#tab/office-2007)
 
 ![Create predecessor-successor links in Project](_img/create-your-backlog-tasks-using-project/IC660421.png)  
 
----
+* * *
 
 Although the work tracking system tracks predecessor-successor dependencies as work item links, it does not track dependency types, lead and lag time, or other constraints that Project does.
 
@@ -239,7 +242,7 @@ Although the work tracking system tracks predecessor-successor dependencies as w
 To enter data into other work tracking fields, switch to the Team Foundation Task Sheet.
 
 
-# [Office Project 365](#tab/office-365)
+#### [Office Project 365](#tab/office-365)
 
 ![Open Team Foundation Task View in Project](_img/project/view-tf-task-sheet.png)  
 
@@ -251,7 +254,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 ![View of work tracking fields mapped to project fields](_img/project/view-column-mappings.png)  
 
-# [Office Project 2007](#tab/office-2007)
+#### [Office Project 2007](#tab/office-2007)
 
 ![Open Team Foundation Task View in Project](_img/create-your-backlog-tasks-using-project/IC660422.png)  
 
@@ -263,7 +266,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 ![View of work tracking fields mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
----
+* * *
 
 To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
 
@@ -292,6 +295,7 @@ You can manage your project plan using Project and all the features that Project
 
 
 <a id="differences" />
+
 ## Differences working in Project versus Excel
 
 |Area|Project|Excel|
