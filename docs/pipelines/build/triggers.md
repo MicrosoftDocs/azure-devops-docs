@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 05/17/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -133,6 +133,7 @@ trigger:
 ### Paths
 
 You can specify file paths to include or exclude.
+Note that the [wildcard syntax](#wildcards) is different between branches/tags and file paths.
 
 ```yaml
 # specific path build
@@ -330,6 +331,8 @@ pr:
     exclude:
     - docs/README.md
 ```
+
+Note that the [wildcard syntax](#wildcards) is different between branches/tags and file paths.
 
 ::: moniker-end
 
