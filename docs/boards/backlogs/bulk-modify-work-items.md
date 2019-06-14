@@ -46,6 +46,7 @@ In this article you'll learn:
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Supported tasks
+
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azure-devops-2019"

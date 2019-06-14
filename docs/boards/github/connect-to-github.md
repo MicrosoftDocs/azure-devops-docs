@@ -101,7 +101,6 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </ul>
 </td>
 </tr>
-
 </tbody>
 </table>
  

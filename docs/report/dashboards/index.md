@@ -29,8 +29,10 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 ## Widgets 
 
 You add widgets to dashboards to quickly add charts and information to a dashboard. Here are the widgets that support the indicated service. 
+
 ::: moniker-end 
-<br/>
+
+
 ::: moniker range=">= azure-devops-2019"
 
 <table valign="top">

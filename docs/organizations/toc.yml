@@ -15,8 +15,6 @@
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Add an alternate account to your Visual Studio subscription
-    href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Authentication
     items:
     - name: Authenticate access with personal access tokens
@@ -69,6 +67,8 @@
     href: /rest/api/azure/devops/notification
 - name: Resources
   items:
+  - name: Add an alternate account to your Visual Studio subscription
+    href: /visualstudio/subscriptions/vs-alternate-identity
   - name: Marketplace & extensibility  
     href: /azure/devops/marketplace-extensibility/index
   - name: Git
