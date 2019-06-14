@@ -9,7 +9,7 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/14/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,6 +22,7 @@ monikerRange: '>= tfs-2015'
 A pattern is a string or list of newline-delimited strings.
 File and directory names are compared to patterns to include (or sometimes exclude) them in a task.
 You can build up complex behavior by stacking multiple patterns.
+See [fnmatch](http://man7.org/linux/man-pages/man3/fnmatch.3.html) for a full syntax guide.
 
 ### Match characters
 
