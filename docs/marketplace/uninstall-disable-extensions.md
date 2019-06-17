@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 When you don't need an extension anymore, you can uninstall or disable this extension.
 
-> **Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md)**.
+> **Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../organizations/billing/change-number-paid-extension-users.md).
 
 ## Prerequisites
 

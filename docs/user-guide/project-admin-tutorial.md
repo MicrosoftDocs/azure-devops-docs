@@ -10,11 +10,11 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/11/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Manage your project 
+# Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -190,7 +190,7 @@ To learn more, see the following articles:
   
 ## Install and manage extensions 
 
-An extension is an installable unit that adds new capabilities to your projects. You can find extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab to support the following functions:
+An extension is an installable unit that adds new capabilities to your projects. You can find extensions in Azure DevOps to support the following functions:
 
 - Planning and tracking of work items, sprints, scrums, etc.  
 - Build and release flows.

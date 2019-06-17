@@ -6221,11 +6221,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/organizations/billing/change-number-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/marketplace/billing-overview.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
       "redirect_document_id": false
@@ -8639,11 +8634,6 @@
       "source_path": "docs/billing/change-azure-subscription.md",
       "redirect_url": "/azure/devops/organizations/billing/change-azure-subscription",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/billing/change-number-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
-      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/index.md",

@@ -2,7 +2,7 @@
 title: Change the Azure subscription used for organization billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
+description: Unlink the Azure subscription that your organization uses for billing
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -64,9 +64,7 @@ To configure costs for Azure DevOps, see the [pricing calculator](https://azure.
 
 ## Related articles
 
-- [Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-- [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
-- [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
-- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Test Manager)
-- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+- [Buy Basic access for users](buy-basic-access-add-users.md)
+- [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+- [Buy CI/CD](buy-more-build-vs.md)
+- [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
