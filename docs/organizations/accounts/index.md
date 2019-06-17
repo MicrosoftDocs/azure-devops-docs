@@ -73,8 +73,7 @@ Sign up for an organization, add users, and manage permissions and access.
         * [Change your Azure AD tenant connection](change-azure-ad-connection.md)
         
 * Manage extensions
-    * [Install extensions](../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
-    * [Assign paid extensions access](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+    * [Install extensions](../../marketplace/install-extension.md)
     * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage group-based licensing
@@ -91,5 +90,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Get started using Azure DevOps](../../get-started/index.md)
+- [Marketplace & extensibility](../../marketplace-extensibility/index.md)

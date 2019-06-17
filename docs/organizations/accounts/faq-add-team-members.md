@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -26,7 +26,7 @@ A: Your organization is free for the first five users with Basic access. You can
 
 To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your organization, [add these users, and assign them Basic access](add-organization-users.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time.
 
-If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), Subscriptions tab.
+If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md).
 
 <a name="WhyCantSignIn"></a>
 

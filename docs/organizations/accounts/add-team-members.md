@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -26,7 +26,7 @@ if you have seats available.
 * [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
 if you *don't* have available seats.
 
-When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features, such as [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), can be assigned to users by access level, Basic + Test Plans.
+When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users.md). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
