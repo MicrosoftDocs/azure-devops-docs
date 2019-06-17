@@ -41,6 +41,14 @@ None
     projects: '**/*.csproj'
     #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
 ```
+To pass multiple values to `projects` field:
+```YAML
+    projects: |
+     src/proj1/proj1.csproj
+     src/proj2/proj2.csproj
+     src/other/other.sln    # Pass a solution instead of a csproj.
+```
+
 ::: moniker-end
 
 ### Arguments
