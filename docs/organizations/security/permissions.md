@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019 
+ms.date: 06/17/2019 
 ---
 
 
@@ -359,6 +359,9 @@ For each project that you create, the system creates the followings project-leve
 > For example, the contributors group for a project called "My Project" is 
 > **[My Project]/Contributors**.
 
+
+> [!NOTE]   
+> The project-level Release Administrator's group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created.  
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1892,6 +1895,9 @@ If you are working with the Release Management client and server supported for T
 ## Release (object-level) 
 
 You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
+
+> [!NOTE]   
+> The project-level Release Administrator's group is created at the same time the first release pipeline is defined. 
 
 In addition, you can assign approvers to specific steps within a release pipeline to ensure that the applications being deployed meet quality standards.
 
