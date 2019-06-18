@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -24,7 +24,7 @@ With an organization, you gain access to the platform in which you can do the fo
 * Plan and track your work as well as code defects and issues.
 * Set up continuous integration and deployment.
 * Integrate with other services by using service hooks.
-* Obtain additional features through Azure Marketplace extensions.
+* Obtain additional features and extensions.
 
 ## Create your organization
 

@@ -41,7 +41,7 @@ https://github.com/spring-petclinic/spring-framework-petclinic
 [!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
-https://github.com/azure-samples/migrate-java-ee-app-to-azure
+https://github.com/agoncal/agoncal-application-petstore-ee7
 ```
 
 # [Java SE](#tab/java-se)

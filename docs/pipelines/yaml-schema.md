@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 06/14/2019
+ms.date: 06/18/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -257,9 +257,9 @@ jobs:
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    matrix: # matrix strategy, see below
     parallel: # parallel strategy, see below
-    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
+    matrix: # matrix strategy, see below
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
   workspace:
@@ -357,6 +357,7 @@ testing against different configurations or platform versions.
 ```yaml
 strategy:
   matrix: { string1: { string2: string3 } }
+  maxParallel: number
 ```
 
 For each `string1` in the matrix, a copy of the job will be generated. `string1`
@@ -369,6 +370,15 @@ to the job.
 > They must start with a letter.
 > Also, they must be 100 characters or less.
 
+<a name="maximum-parallelism"></a>
+Optionally, `maxParallel` specifies the maximum number of simultaneous matrix legs to run at once.
+::: moniker range="> azure-devops-2019"
+If not specified or set to 0, no limit will be applied.
+::: moniker-end
+::: moniker range="azure-devops-2019"
+If not specified, no limit will be applied.
+::: moniker-end
+
 # [Example](#tab/example)
 
 ```yaml
@@ -380,11 +390,15 @@ jobs:
         PYTHON_VERSION: '3.5'
       Python36:
         PYTHON_VERSION: '3.6'
+      Python37:
+        PYTHON_VERSION: '3.7'
+    maxParallel: 2
 ```
 
-This matrix will create two jobs, "Build Python35" and "Build Python36". Within
+This matrix will create three jobs, "Build Python35", "Build Python36", and "Build Python37". Within
 each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
 will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
+Only 2 jobs will run simultaneously.
 
 ---
 
@@ -409,45 +423,6 @@ jobs:
   strategy:
     parallel: 4
 ```
-
----
-
-#### Maximum Parallelism
-
-Regardless of which strategy is chosen and how many jobs are generated, this
-value specifies the maximum number of agents which will run at a time for
-this family of jobs.
-::: moniker range="> azure-devops-2019"
-If not specified or set to 0, no limit will be applied.
-::: moniker-end
-::: moniker range="azure-devops-2019"
-If not specified, no limit will be applied.
-::: moniker-end
-
-# [Schema](#tab/schema)
-
-```yaml
-strategy:
-  maxParallel: number
-```
-
-# [Example](#tab/example)
-
-```yaml
-jobs:
-- job: BuildPython
-  strategy:
-    maxParallel: 2
-    matrix:
-      Python35:
-        PYTHON_VERSION: '3.5'
-      Python36:
-        PYTHON_VERSION: '3.6'
-      Python37:
-        PYTHON_VERSION: '3.7'
-```
-
-This example will generate 3 jobs but only run 2 at a time.
 
 ---
 
