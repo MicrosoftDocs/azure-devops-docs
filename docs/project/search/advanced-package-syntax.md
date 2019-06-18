@@ -24,13 +24,17 @@ By using Package Search you can:
 * **Search package by title and description**: You can quickly and easily find relevant packages by using 
 free text search on title and description. 
 You can also narrow your search by using Boolean operators and combine search criteria. 
-  ![](_img/_shared/pkg-srch-u2.png)
+
+> [!div class="mx-imgBorder"]  
+> [Web portal package search](_img/_shared/pkg-srch-u2.png)
 
 * **Search across all of your organization feeds**:
   Search in your and your team's feeds across the organization. Narrow your search by using feed, view 
   and package type filters. Use wildcards to widen your search and 
   Boolean operators to fine-tune it. 
-  ![](_img/_shared/pkg-srch-u1.png)
+
+> [!div class="mx-imgBorder"]  
+> [Web portal package search across organization feeds](_img/_shared/pkg-srch-u1.png)
 
 <a name="syntaxdetails"></a>
 ## Syntax for simple and compound searches

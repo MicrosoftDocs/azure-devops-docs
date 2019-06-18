@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -56,16 +56,14 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your organization](buy-basic-access-add-users.md)
 * [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
 * [Billing FAQ](billing-faq.md)
 * [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
 ### Marketplace extension management
 
-* [Change the number of paid users for an extension](buy-basic-access-add-users.md)
+* [Buy Basic access for users](buy-basic-access-add-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
-* [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 
 ### Guidance for Cloud Solution Providers

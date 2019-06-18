@@ -10,7 +10,7 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/02/2019
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -50,7 +50,7 @@ If users no longer require access to a project or your organization, you can rem
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab. Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, you must make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.

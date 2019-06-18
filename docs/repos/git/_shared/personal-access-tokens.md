@@ -28,8 +28,8 @@ ms.topic: include
 
    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="/azure/devops/repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth.md#scopes)
-   that this token will authorize for *your specific tasks*.
+5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
+   for this token to authorize for *your specific tasks*.
 
    For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services or TFS, 
    limit your token's scope to **Agent Pools (read, manage)**. 
