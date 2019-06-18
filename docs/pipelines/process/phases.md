@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: vijayma
 author: vijayma
-ms.date: 05/24/2019
+ms.date: 06/18/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -120,11 +120,12 @@ The full syntax to specify a job is:
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    matrix: # matrix strategy
     parallel: # parallel strategy
-    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
+    matrix: # matrix strategy
+    maxParallel: number # maximum number simultaneous matrix legs to run
     # note: `parallel` and `matrix` are mutually exclusive
     # you may specify one or the other; including both is an error
+    # `maxParallel` is only valid with `matrix`
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
   workspace:
@@ -722,18 +723,17 @@ The Visual Studio Test task is one such task that supports test slicing. If you 
 
 ::: moniker range=">= azure-devops-2019"
 
-The `parallel` strategy enables a job to be duplicated many times. The `maxParallel` tag restricts the amount of parallelism. 
+The `parallel` strategy enables a job to be duplicated many times.
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
 See [Parallel and multiple execution using agent jobs](#parallelexec).
 
-The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately. However, only two jobs will run at the same time.
+The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately.
 
 ```yaml
 jobs:
 - job: Test
   strategy:
     parallel: 5
-    maxParallel: 2
 ```
 
 ::: moniker-end
