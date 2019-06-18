@@ -787,6 +787,57 @@ Job variables are not yet supported in the web editor.
 
 For information about using a **condition**, see [Specify conditions](conditions.md).
 
+## Workspace
+
+::: moniker range=">= azure-devops-2019"
+
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Pipeline.Workspace` variable. Under this, various sub-directories are created:
+
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various sub-directories are created:
+
+::: moniker-end
+
+- `Build.SourcesDirectory` is where tasks download the application's source code.
+- `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they are published.
+- `Build.BinariesDirectory` is where tasks write their outputs.
+- `Build.TestResultsDirectory` is where tasks upload their test results.
+
+# [YAML](#tab/yaml)
+
+::: moniker range=">= azure-devops-2019"
+
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+
+```yaml
+- job: myJob
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+```
+
+When you specify one of the `clean` options, they are interpreted as follows:
+
+- `outputs`: Delete `Build.ArtifactStagingDirectory`, `Build.BinariesDirectory`, and `Build.TestResultsDirectory` before running a new job.
+- `resources`: Delete `Build.SourcesDirectory` before running a new job.
+- `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
+
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+YAML is not yet supported in TFS.
+::: moniker-end
+
+# [Classic](#tab/classic)
+
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
+
+- [GitHub](../repos/github.md#getting-the-source-code)
+- [Azure Repos Git](../repos/azure-repos-git.md)
+- [TFVC](../repos/tfvc.md)
+
+---
+
 <a name="artifact-download"></a>
 
 ## Artifact download
