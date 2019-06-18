@@ -23,7 +23,7 @@ When users leave the group, the licenses are freed and returned to your pool. Yo
 ## Prerequisites
 
 To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
-To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
+To assign an extension to a user (and consequently, a group) a PCA must first [install the extension](../../marketplace/install-extension.md) on the organization.
 
 ## Add group rule
 
@@ -88,5 +88,5 @@ Your group rule is in effect. We recommend that you reevaluate rules regularly o
 
 ## Related articles
 
-* [Buy and install paid extensions](../../marketplace/install-paid-extension.md)
+* [Buy and install extensions](../../marketplace/install-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

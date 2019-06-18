@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: vijayma
 author: vijayma
-ms.date: 05/24/2019
+ms.date: 06/18/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -120,11 +120,12 @@ The full syntax to specify a job is:
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    matrix: # matrix strategy
     parallel: # parallel strategy
-    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
+    matrix: # matrix strategy
+    maxParallel: number # maximum number simultaneous matrix legs to run
     # note: `parallel` and `matrix` are mutually exclusive
     # you may specify one or the other; including both is an error
+    # `maxParallel` is only valid with `matrix`
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
   workspace:
@@ -722,18 +723,17 @@ The Visual Studio Test task is one such task that supports test slicing. If you 
 
 ::: moniker range=">= azure-devops-2019"
 
-The `parallel` strategy enables a job to be duplicated many times. The `maxParallel` tag restricts the amount of parallelism. 
+The `parallel` strategy enables a job to be duplicated many times.
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
 See [Parallel and multiple execution using agent jobs](#parallelexec).
 
-The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately. However, only two jobs will run at the same time.
+The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately.
 
 ```yaml
 jobs:
 - job: Test
   strategy:
     parallel: 5
-    maxParallel: 2
 ```
 
 ::: moniker-end
@@ -786,6 +786,57 @@ Job variables are not yet supported in the web editor.
 ---
 
 For information about using a **condition**, see [Specify conditions](conditions.md).
+
+## Workspace
+
+::: moniker range=">= azure-devops-2019"
+
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Pipeline.Workspace` variable. Under this, various sub-directories are created:
+
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various sub-directories are created:
+
+::: moniker-end
+
+- `Build.SourcesDirectory` is where tasks download the application's source code.
+- `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they are published.
+- `Build.BinariesDirectory` is where tasks write their outputs.
+- `Build.TestResultsDirectory` is where tasks upload their test results.
+
+# [YAML](#tab/yaml)
+
+::: moniker range=">= azure-devops-2019"
+
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+
+```yaml
+- job: myJob
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+```
+
+When you specify one of the `clean` options, they are interpreted as follows:
+
+- `outputs`: Delete `Build.ArtifactStagingDirectory`, `Build.BinariesDirectory`, and `Build.TestResultsDirectory` before running a new job.
+- `resources`: Delete `Build.SourcesDirectory` before running a new job.
+- `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
+
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+YAML is not yet supported in TFS.
+::: moniker-end
+
+# [Classic](#tab/classic)
+
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
+
+- [GitHub](../repos/github.md#getting-the-source-code)
+- [Azure Repos Git](../repos/azure-repos-git.md)
+- [TFVC](../repos/tfvc.md)
+
+---
 
 <a name="artifact-download"></a>
 

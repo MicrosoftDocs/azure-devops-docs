@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -127,7 +127,7 @@ Responsible for configuring organization-level resources. These tasks include:
 - Add and manage projects
 - Manage collection-level permissions 
 - Customize work tracking processes  
-- Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
+- Install and manage extensions
 
 To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
 ::: moniker-end
@@ -139,7 +139,7 @@ To get started, see [Manage organizations](../organizations/accounts/organizatio
 Responsible for configuring collection-level resources. These tasks include:  
 - Add and manage projects
 - Manage collection-level permissions 
-- Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
+- Install and manage extensions
 
 To get started, see [Settings](../organizations/settings/index.md).
 

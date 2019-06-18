@@ -30,5 +30,4 @@ in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredev
   2. Check whether the extension is assigned to the user. 
      If not, assign the extension to the user.
 
-Learn more about 
-[assigning paid extensions to users](/azure/devops/marketplace/assign-paid-extensions).
+Learn more about [assigning extensions to users](/azure/devops/marketplace/assign-paid-extensions).
