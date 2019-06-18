@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 06/02/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -113,14 +113,14 @@ To learn more, see [Web portal navigation](../project/navigation/index.md).
 
 ### Browser-based extensions
 
-The following extensions are available from the Azure DevOps Marketplace and are built and maintained by the Azure DevOps Services product team:
+The following extensions are available and are built and maintained by the Azure DevOps Services product team:
 
-- [Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
-- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
+- [Buy Azure Test Plans](../organizations/billing/buy-basic-plus-test-plans.md)]: Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
+- [Sign up for Azure Artifacts](../artifacts/sign-up-azure-artifacts.md)]: Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Perform full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
-Find additional extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com).
+Find additional extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
 
 ### Application monitoring tools
 

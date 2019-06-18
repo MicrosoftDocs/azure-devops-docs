@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/05/2019  
+ms.date: 06/17/2019  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -110,9 +110,29 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-Versioning allows you to publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and the ability to unpublish content that you've previously published to a wiki, are only supported for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning, and the ability to unpublish content that you've previously published to a wiki, are supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
+
+## Delete project wiki
+
+Deleting a project wiki isn't supported with wiki APIs, but you can delete the wiki repository by completing the following steps.
+
+0. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
+
+   ![Clone the wiki repository](_img/wiki/clone-wiki.png)
+
+1. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/en-us/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+   
+   For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
+   This returns all the wikis in the project, "sampleProject." Here you can get the repository ID of the wiki that you want to delete.
+
+   ![Clone the wiki repository, copy the URL](_img/wiki/clone-repository.png)
+
+2. Use the following REST API to delete the git repository.
+	
+    For example: DELETE https://dev.azure.com/fabrikam/_apis/git/repositories/{repositoryId}?api-version=4.1
+	Use the repository ID of the project wiki found using the previous step. Ensure that the repository ID matches the project wiki that you want to remove.
 
 ## Update a wiki by working offline
 
