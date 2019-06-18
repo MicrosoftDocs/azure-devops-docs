@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
@@ -84,7 +84,7 @@ When the same access level or extension is assigned to the user both directly an
 
 - Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
 
-Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization.
+Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
 
 ## Related articles
 
