@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---

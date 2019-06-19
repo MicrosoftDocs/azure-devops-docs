@@ -115,6 +115,8 @@
     href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+  - name: Go get using Azure Repos
+    href: go-get.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Manage repos

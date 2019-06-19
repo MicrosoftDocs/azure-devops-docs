@@ -10,7 +10,6 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Update SSRS Report after SharePoint is disabled
