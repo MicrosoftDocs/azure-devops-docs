@@ -60,12 +60,12 @@ In this section, you will check that the triggers you need for continuous deploy
 1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline and, in
    the right pane, choose **Edit**.
 
-   ![Opening the release pipeline for editing](_img/define-multistage-release-process/open-for-edit.png)
+   ![Opening the release pipeline by choosing Edit from the Releases tab](_img/define-multistage-release-process/open-for-edit.png)
 
 1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel.
    Make sure this is enabled so that a new release is created after every new successful build is completed.
 
-   ![Viewing the continuous integration trigger setting](_img/define-multistage-release-process/ci-trigger.png)
+   ![Opening the continuous deployment trigger panel from the left-side Artifacts panel in the Edit view](_img/define-multistage-release-process/ci-trigger.png)
 
    For more information, see [Release triggers](triggers.md).
 
@@ -73,7 +73,7 @@ In this section, you will check that the triggers you need for continuous deploy
    Make sure that the trigger for deployment to this stage is set to **After release**.
    This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
 
-   ![Viewing the stage trigger setting](_img/define-multistage-release-process/environment-trigger.png)
+   ![Choosing the pre-deployment conditions icon for your release stage and setting the trigger to After release](_img/define-multistage-release-process/environment-trigger.png)
 
    Notice that you can also define artifact filters that determine a condition for the release to proceed,
    and set up a schedule for deployments. You can use features to, for example, specify a branch from
@@ -90,12 +90,12 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 
 1. In the **Pipeline** tab of your release pipeline, select the existing stage and rename it to **Production**.
 
-   ![Renaming the existing stage](_img/define-multistage-release-process/rename-environment-prod.png)
+   ![Choosing an existing stage from the Pipelines tab and changing the name to Production in the Stage panel](_img/define-multistage-release-process/rename-environment-prod.png)
 
 1. Open the **+ Add** drop-down list and choose **Clone stage** (the clone option is available only
    when an existing stage is selected).
 
-   ![Cloning the existing stage](_img/define-multistage-release-process/clone-environment.png)
+   ![Choosing the Add button from the Stages menu and selecting Clone stage](_img/define-multistage-release-process/clone-environment.png)
 
    Typically, you want to use the same deployment methods with a test and a production stage
    so that you can be sure the deployed apps will behave in exactly the same way. Therefore, cloning an existing
@@ -105,20 +105,20 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 1. The clone of the stage appears after the existing stage in the pipeline, and has the name **Copy of Production**.
    Select this stage and, in the **Stages** panel, change the name to **QA**.
 
-   ![Renaming the clone stage](_img/define-multistage-release-process/rename-copy-environment.png)
+   ![Choosing the cloned stage and renaming it to QA in the Stage panel](_img/define-multistage-release-process/rename-copy-environment.png)
 
 1. To reorganize the stages in the pipeline, choose the **Pre-deployment conditions** icon for the **QA** stage and
    set the trigger to **After release**. The pipeline diagram changes to show that the deployment to the two stages will
    now execute in parallel.
 
-   ![Changing the QA stage trigger](_img/define-multistage-release-process/change-trigger-qa.png)
+   ![Choosing the new QA stage and selecting After Release from the Triggers panel](_img/define-multistage-release-process/change-trigger-qa.png)
 
 1. Choose the **Pre-deployment conditions** icon for the **Production** stage and
    set the trigger to **After stage**, then select **QA** in the **Stages** drop-down list.
    The pipeline diagram changes to show that the deployment to the two stages will
    now execute in the required order.
 
-   ![Changing the Production stage trigger](_img/define-multistage-release-process/change-trigger-prod.png)
+   ![Choosing the new QA stage and selecting After Stage from the Triggers panel](_img/define-multistage-release-process/change-trigger-prod.png)
 
    Notice that you can specify deployment to start when a deployment to the previous stage is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
@@ -129,13 +129,13 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    Recall that this stage is a clone of the original **Production** stage in the release pipeline.
    Therefore, currently, it will deploy the app to the same target as the **Production** stage.
 
-   ![Open the tasks pane for the QA stage](_img/define-multistage-release-process/open-qa-tasks.png)
+   ![Opening the Tasks list from the project menu and viewing the original Production app service name](_img/define-multistage-release-process/open-qa-tasks.png)
 
 1. Depending on the tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example,
    using Azure App Services websites, we just need to select the **Deploy Azure App Service** task and select the "QA"
    website instead of the "Production" website.
 
-   ![Change the deployment target the QA stage](_img/define-multistage-release-process/change-target-environment.png)
+   ![Changing the App service name to a new QA deployment-specific name](_img/define-multistage-release-process/change-target-environment.png)
 
    If you are using a different type of task to deploy your app, the way you change the target for the deployment
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
@@ -155,13 +155,13 @@ you deploy to production. In this section, you will add an approval step to the 
 1. Back in the **Pipeline** tab of the release pipeline, choose the **Pre-deployment conditions** icon in the **Stages** section
    to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvers.
 
-   ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
+   ![Viewing the pre-deployment approvers settings from the Stages panel](_img/define-multistage-release-process/open-approvers.png)
 
 1. In the **Approvers** section, choose your user(s) from the list. You
    can type part of a name to search for matches. Also make sure you clear (untick) the checkbox 
    **User requesting a release...** so that you can approve your own releases.
 
-   ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
+   ![Adding approvers from the Pre-deployment condition panel](_img/define-multistage-release-process/select-approvers.png)
 
    You can add as many approvers as you need, both individual users and organization groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the stage item in the pipeline diagram.
@@ -169,7 +169,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
 1. Save the modified release pipeline.
 
-   ![Save the release pipeline](_img/define-multistage-release-process/save-definition.png)
+   ![Saving the release pipeline by choosing Save from the top Releases menu](_img/define-multistage-release-process/save-definition.png)
 
 <a name="create-release"></a>
 
@@ -182,33 +182,33 @@ the source code will start a new build and, from that, a new release. However, i
 
 1. Open the **Release** drop-down list and choose **Create release**.
 
-   ![Creating a new release](_img/define-multistage-release-process/create-release.png)
+   ![Choosing Release from the project menu and selecting Create release](_img/define-multistage-release-process/create-release.png)
 
 1. Enter a description for the release, check that the correct artifacts are selected, and then choose **Create**.
 
-   ![Creating the new release](_img/define-multistage-release-process/queue-release.png)
+   ![Updating the Release description in the text area for the Create new release panel](_img/define-multistage-release-process/queue-release.png)
 
 1. After a few moments, a banner appears indicating that the new release was created.
    Choose the link (the name of the release).
 
-   ![The link to the newly created release](_img/define-multistage-release-process/release-link.png)
+   ![Viewing the release creation banner and choosing the link it provides](_img/define-multistage-release-process/release-link.png)
 
 1. The release summary page opens showing details of the release. In the **Stages** section,
    you will see the deployment status for the "QA" stage change to "Succeeded" and, at that point,
    an icon appears indicating that the release is now waiting for approval.
 
-   ![Release summary showing link for approval](_img/define-multistage-release-process/approval-waiting.png)
+   ![Viewing the release summary after the QA stage is successful](_img/define-multistage-release-process/approval-waiting.png)
 
    Other views, such as the list of releases, also display an icon that indicates approval is pending.
    The icon shows a pop-up containing the stage name and more details when you point to it.
    This makes it easy for an administrator to see which releases are awaiting approval, as well as the overall progress of all releases.    
 
-   ![Release list showing link for approval](_img/define-multistage-release-process/list-approval-waiting.png)
+   ![Viewing a list of individual release statuses for your app's release pipeline](_img/define-multistage-release-process/list-approval-waiting.png)
 
 1. Choose the icon or link to open the approval dialog. Enter a brief note about the
    approval, and choose **Approve**.
 
-   ![Approving the release](_img/define-multistage-release-process/approve-dialog.png)
+   ![Opening the approval dialog and choosing the Approve button](_img/define-multistage-release-process/approve-dialog.png)
 
    Notice that you can defer a deployment to a specific day and time; for example, a time when you expect the app to be only lightly loaded.
    You can also reassign the approval to another user. Release administrators can open _any_ approval
@@ -223,7 +223,7 @@ from the release you created in the previous section.
 
 1. In the release summary, hover over a stage and choose the **Logs** link that appears.
 
-   ![Viewing the live deployment log](_img/define-multistage-release-process/open-logs-page.png)
+   ![Viewing the live deployment log by choosing the Logs button below a stage image](_img/define-multistage-release-process/open-logs-page.png)
 
    While the deployment is taking place, the logs page shows the live log from the agent.
    After the deployment is complete, links to the logs for each task step are displayed in the right pane.
@@ -232,7 +232,7 @@ from the release you created in the previous section.
    This makes it easier to trace and debug individual parts of the overall deployment. Alternatively, download
    the individual log files, or a zip of all the log files, from the icons and links in the page.
 
-   ![Viewing and downloading individual log files](_img/define-multistage-release-process/download-logs.png)
+   ![Downloading all release stage log files by choosing Download all logs from the project menu](_img/define-multistage-release-process/download-logs.png)
 
 1. If you are having problems with a deployment, you can get more information from the log files by
    [running the release in debug mode](../../pipelines/release/variables.md#debug-mode).

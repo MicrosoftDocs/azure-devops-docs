@@ -6,7 +6,7 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: ahomer
+ms.author: chcomley
 author: 
 ms.topic: quickstart
 ms.date: 02/14/2019
