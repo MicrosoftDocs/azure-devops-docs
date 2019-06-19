@@ -279,6 +279,9 @@ You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
 
 ```yaml
+# this configuration will trigger upon creation of any pull request where target branch is set to master or releases/* branches
+# the pipeline will trigger once with any commit coming into the source branch when target branch is set to be master or releases/* while pull request remains active
+
 pr:
 - master
 - releases/*
@@ -291,6 +294,9 @@ When the changes from the topic branch are merged into `master`, then the trigge
 If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
 
 ```yaml
+# this configuration will trigger upon creation of any pull request where target branch is set to any
+# the pipeline will trigger once with any commit coming into the source branch when target branch is set to any while pull request remains active
+
 pr:
   branches:
     include:
