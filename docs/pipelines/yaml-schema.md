@@ -1392,6 +1392,61 @@ steps:
 
 ---
 
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+::: moniker range="azure-devops"
+## Publish
+
+`publish` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- upload: string # path to a file or folder
+  artifact: string # artifact name
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- upload: $(Build.SourcesDirectory)/build
+  artifact: WebApp
+```
+
+---
+
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+
+## Download
+
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run to `$(Pipeline.Workspace)`. It can also be used to disable automatic downloading of artifacts in classic release and deployment jobs.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- download: [ current | none ] # disable automatic download if "none"
+  artifact: string # artifact name
+  patterns: string # patterns representing files to include
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- download: current
+  artifact: WebApp
+  patterns: '**/.js'
+```
+
+---
+
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+::: moniker-end
+
 ## Checkout
 
 `checkout` defines options for checking out source code.
