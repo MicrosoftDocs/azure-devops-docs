@@ -1404,7 +1404,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 
 ```yaml
 steps:
-- upload: string # path to a file or folder
+- publish: string # path to a file or folder
   artifact: string # artifact name
 ```
 
@@ -1412,7 +1412,7 @@ steps:
 
 ```yaml
 steps:
-- upload: $(Build.SourcesDirectory)/build
+- publish: $(Build.SourcesDirectory)/build
   artifact: WebApp
 ```
 
