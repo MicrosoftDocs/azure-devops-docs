@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 11/16/2016
 ---
 
 # Package Management GA, Release Management GA, import to Team Services, and work item search preview - Nov 16
