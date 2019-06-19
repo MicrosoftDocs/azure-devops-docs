@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
+ms.date: 08/28/2017
 ---
 
 # Customizable work item rules – VSTS Sprint 122 Update

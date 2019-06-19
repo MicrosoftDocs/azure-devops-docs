@@ -9,7 +9,6 @@ ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Update Excel Chart after SharePoint integration is disabled

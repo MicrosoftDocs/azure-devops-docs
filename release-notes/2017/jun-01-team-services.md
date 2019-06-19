@@ -6,7 +6,9 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 06/01/2017
 ---
+
 
 # New Visual Studio Enterprise pipeline benefit, mobile work item form GA, and source based release triggers – June 1
 

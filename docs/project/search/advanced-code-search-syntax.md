@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
 ms.date: 04/15/2019
 ---
