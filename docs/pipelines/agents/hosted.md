@@ -37,7 +37,7 @@ The Microsoft-hosted agent pool provides 7 virtual machine images to choose from
 | If your development team uses... | ...then choose this VM image... | ...or this pool in the classic editor |
 |----------------------------------|------------------------------|----------------------------|
 | .NET Core | ubuntu-16.04 or windows-2019 | Hosted Ubuntu 1604 or Hosted Windows 2019 with VS 2019 |
-| Visual Studio 2019 | windows-2019 | Hosted Windows 2019 with VS 2019 |
+| Visual Studio 2019 | windows-2019 | Hosted Windows 2019 with VS2019 |
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
