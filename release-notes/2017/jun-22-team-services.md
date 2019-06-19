@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
+ms.date: 06/22/2017
 ---
 
 # Git Tags web view, build definition import/export, and improved user management – June 22
