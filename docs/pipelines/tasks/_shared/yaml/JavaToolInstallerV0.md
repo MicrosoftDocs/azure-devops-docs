@@ -5,7 +5,7 @@
   inputs:
     #versionSpec: '8' 
     jdkArchitectureOption: # Options: x64, x86
-    jdkSourceOption: # Options: azureStorage, localDirectory
+    jdkSourceOption: # Options: AzureStorage, localDirectory
     #jdkFile: # Required when jdkSourceOption == LocalDirectory
     #azureResourceManagerEndpoint: # Required when jdkSourceOption == AzureStorage
     #azureStorageAccountName: # Required when jdkSourceOption == AzureStorage
