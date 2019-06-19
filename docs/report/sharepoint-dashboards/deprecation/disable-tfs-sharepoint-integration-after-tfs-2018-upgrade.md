@@ -8,7 +8,6 @@ ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Disable SharePoint integration after TFS 2018 upgrade

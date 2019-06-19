@@ -6,6 +6,8 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 02/15/2017
+---
 ---
 
 # PR usability improvements & richer GitHub build integration – Feb 15
