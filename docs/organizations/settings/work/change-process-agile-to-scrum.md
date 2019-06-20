@@ -17,6 +17,9 @@ ms.date: 06/05/2019
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
+> [!NOTE]     
+> This feature is currently in private preview. Please [email us](mailto:dahellem@microsoft.com) if you are interested in participating in the preview.
+
 > [!WARNING]     
 > If you have existing work items, this process requires manual updates to work items and board configuration. Please make sure you follow the below steps and images before attempting to change the process used by a project.
 
