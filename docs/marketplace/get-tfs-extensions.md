@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 03/15/2019
+ms.author: chcomley
+author: chcomley
+ms.date: 06/19/2019
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
@@ -47,7 +47,7 @@ you can create a new subscription when you make your first purchase.
 
 Your project collection will reuse your Azure subscription 
 for future Visual Studio Marketplace purchases. 
-[Where can I find more info about Azure billing?](faq-extensions.md#troubleshooting-purchases--billing)
+[Where can I find more info about Azure billing?](faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -76,18 +76,18 @@ for future Visual Studio Marketplace purchases.
 1. From your TFS home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
 
-1. From your project collection, 
+2. From your project collection, 
    go to the Visual Studio Marketplace.
 
    <img alt="Browse Marketplace in new navigation" src="_shared/_img/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
 
-2. Find and select the extension that you want to install.
+3. Find and select the extension that you want to install.
 
    <img alt="Select a TFS extension" src="_img/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
 
    TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
-3. Based on the extension that you select, install or buy the extension.
+4. Based on the extension that you select, install or buy the extension.
 
    *   For free or preview extensions, click **Install**.
    *   For extensions that you haven't paid for access yet, click **Buy**.
@@ -96,11 +96,11 @@ for future Visual Studio Marketplace purchases.
 
    <img alt="Install or buy the extension" src="./_img/get-tfs-extensions/connected/buy-test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 
-4. Confirm the project collection where you want to install this extension.
+5. Confirm the project collection where you want to install this extension.
 
    <img alt="Select project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
 
-5. If you chose a paid extension, 
+6. If you chose a paid extension, 
    select the [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
    that you'll use to pay for extension access.
 
@@ -110,9 +110,9 @@ for future Visual Studio Marketplace purchases.
 
    <img alt="Select number of users who need paid extension access" src="./_img/get-tfs-extensions/connected/select-extension-users.png" style="border: 1px solid #CCCCCC" />
 
-6. Finish installing your extension. 
+7. Finish installing your extension. 
 
-7. If you installed a paid extension, 
+8. If you installed a paid extension, 
    make sure to [assign the extension to users who need access](faq-extensions.md#install-request-assign-and-access-extensions). 
    Otherwise, you can go to your project collection to use your extension. 
    Also, remember tell your team about this extension, 
@@ -201,7 +201,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 	<img alt="Find and upload your downloaded extension" src="./_img/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-	[Why can't I upload extensions?](tfs-extension-faqs.md#q-why-cant-i-upload-extensions-to-tfs)
+	[[Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-tfs)]
 
 ### Install in your project collection
 

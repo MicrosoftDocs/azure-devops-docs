@@ -6,17 +6,15 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 9/27/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
-
- 
 
 # Grant permissions to manage extensions
 
-**Azure DevOps Services** | **TFS** 
+[!INCLUDE [version-vsts-tfs-2015-on](../../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 ::: moniker range="azure-devops"
 
@@ -26,7 +24,7 @@ To grant permissions to manage extensions (install, disable/enable, review and a
 
 ![Extension settings hub](../_img/manage-permissions/extensions-settings.png)
 
-Click **Security** in the upper right of the Extension Security page:
+Select **Security** in the upper right of the Extension Security page:
 
 ![Extension security button](../_img/manage-permissions/extensions-security-button.png)
 
@@ -48,7 +46,7 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
    tfssecurity /gcg "TFS Extension Publishers" "publishers who can manage extensions for the server" /server:ServerURL
    ```
 
-1. Grant access to the "TFS Extension Publishers" group to manage extensions:
+2. Grant access to the "TFS Extension Publishers" group to manage extensions:
 
    ```
    tfssecurity /a+ Publisher "//" CreatePublisher n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
@@ -65,7 +63,7 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
    tfssecurity /a+ Publisher "//" Write n:"[TEAM FOUNDATION]\TFS Extension Publishers" allow /server:ServerURL
    ```
 
-2. Add existing users and groups to the "TFS Extension Publishers" group.
+3. Add existing users and groups to the "TFS Extension Publishers" group.
 
     ```
     tfssecurity /g+ "[TEAM FOUNDATION]\TFS Extension Publishers" n:User /server:ServerURL

@@ -145,7 +145,7 @@ To resolve this issue, you can install the extension from a machine that hosts t
 - [Grant permissions to access the Analytics service](../powerbi/analytics-security.md)
 - [The Reporting Roadmap](../powerbi/reporting-roadmap.md) 
 - [Install extensions](../../marketplace/install-extension.md) 
-- [Extension FAQs](../../marketplace/tfs-extension-faqs.md) 
+- [Extension FAQs](../../marketplace/faq-extensions.md) 
 - [Developing extensions](http://aka.ms/vsoextensions) 
 - [Publishing extensions](http://aka.ms/vsmarketplace-publish)
  

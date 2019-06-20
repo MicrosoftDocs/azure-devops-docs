@@ -1,18 +1,20 @@
 ---
-title: Trust and Top Publisher | Azure DevOps Services
+title: Trust an extension or publisher in Marketplace | Azure DevOps Services
 description: Trusting an extension or publisher in Marketplace
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-monikerRange: '>= azure-devops-2019'
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= tfs-2015'
 ms.date: 05/06/2019
 ms.topic: conceptual
 ---
 
 # Trusting an extension or publisher in Marketplace 
+
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 ## Can I trust an offering in the Marketplace?
 The Marketplace provides you with the following resources to make an informed decision about the extensions/integrations you use or evaluate:

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/18/2019
+ms.date: 06/20/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
@@ -19,6 +19,9 @@ monikerRange: 'azure-devops'
 Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
+
+> [!NOTE]
+> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
 
 ## Prerequisites
 
@@ -84,7 +87,7 @@ When the same access level or extension is assigned to the user both directly an
 
 - Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
 
-Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
+Your group rule is in effect.
 
 ## Related articles
 

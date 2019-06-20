@@ -11739,6 +11739,16 @@
       "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
       "redirect_url": "/azure/devops/reference/mapping/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/tfs-extension-faq.md",
+      "redirect_url": "/azure/devops/marketplace/faq-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/marketplace-billing-qa.md",
+      "redirect_url": "/azure/devops/marketplace/faq-extensions",
+      "redirect_document_id": false
     }
   ]
 }
