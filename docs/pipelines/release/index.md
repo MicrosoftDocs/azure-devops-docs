@@ -276,8 +276,8 @@ When specifying the format mask, you can use the following pre-defined variables
 
 | Variable | Description |
 |----------|-------------|
-| **Rev:rr** | An auto-incremented number with at least the specified number of digits. |
-| **Date / Date:MMddyy** | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported. |
+| **rev:rr** | An auto-incremented number with at least the specified number of digits. |
+| **date:MMddyy** | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported. |
 | **System.TeamProject** | The name of the project to which this build belongs. |
 | **Release.ReleaseId** | The ID of the release, which is unique across all releases in the project. |
 | **Release.DefinitionName** | The name of the release pipeline to which the current release belongs. |
