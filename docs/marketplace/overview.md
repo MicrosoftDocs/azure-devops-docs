@@ -6,13 +6,15 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 05/09/2019
-monikerRange: '>= azure-devops-2019'
+monikerRange: '>= tfs-2015'
 ---
 
-#  Discover extensions in the Marketplace
+#  Marketplace extensions for Azure DevOps
+
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 In the Visual Studio Marketplace you can do the following:
 

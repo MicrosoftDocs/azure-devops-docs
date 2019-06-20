@@ -1,18 +1,21 @@
 ---
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
+titleSuffix: Visual Studio Marketplace
 description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
 ms.date: 09/10/2018
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-monikerRange: '>= tfs-2013'
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
 
 # Extension Statistics Power BI Content Pack
+
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 You can gain insight and analyze the progress of your extension by using Extension Statistics Power BI Content pack. All data elements available in the extension hub are also available in Power BI content pack.
 The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable but the data model is not.
