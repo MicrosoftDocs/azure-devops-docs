@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 06/18/2019
+ms.date: 06/19/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -913,6 +913,10 @@ for authorization.
 
 ## Triggers
 
+* [Push trigger](#push-trigger)
+* [PR trigger](#pr-trigger)
+* [Scheduled trigger](#scheduled-trigger)
+
 ### Push trigger
 
 A trigger specifies what branches will cause a continuous integration build to
@@ -1092,6 +1096,67 @@ pr:
 ```
 
 ---
+
+### Scheduled trigger
+
+::: moniker range="<= azure-devops-2019"
+
+YAML scheduled triggers are not available in this version of Azure DevOps Server or TFS. 
+You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+A scheduled trigger specifies a schedule on which branches will be built. 
+If left unspecified, no scheduled builds will occur.
+Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers)
+and how to specify them.
+
+
+
+# [Schema](#tab/schema)
+
+```yaml
+schedules:
+- cron: string # cron syntax defining a schedule
+  displayName: string # friendly name given to a specific schedule
+  branches:
+    include: [ string ] # which branches the schedule applies to
+    exclude: [ string ] # which branches to exclude from the schedule
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+```
+
+>[!IMPORTANT]
+>When you specify a scheduled trigger, only branches that are explicitly configured to be included are scheduled for a build. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, no branches will be built.
+
+# [Example](#tab/example)
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/ancient/*
+- cron: "0 12 * * 0"
+  displayName: Weekly Sunday build
+  branches:
+    include:
+    - releases/*
+  always: true
+```
+
+In this example, two schedules are defined. The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+
+The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
+
+---
+
+::: moniker-end
 
 ## Pool
 
