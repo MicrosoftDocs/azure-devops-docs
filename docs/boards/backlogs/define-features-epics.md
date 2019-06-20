@@ -76,7 +76,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
     ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -206,7 +206,7 @@ Specify a priority that captures the relative value of an Epic, Feature, or back
 <a href="../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../queries/planning-ranking-priorities.md)">Time Criticality</a>
 </td>
 <td>
-A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
+A subjective unit of measure that captures how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
 </td>
 </tr>
 <tr>
