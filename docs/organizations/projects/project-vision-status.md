@@ -291,7 +291,7 @@ You can change the repository used to support your project vision, including poi
 ## Related articles  
 
 - [Markdown guidance](../../project/wiki/markdown-guidance.md)
-- [Work across projects](../../project/navigation/_img/projects-page/view-work-across-projects.png)]
+- [Work across projects](../../project/navigation/_img/projects-page/view-work-across-projects.png)
 
 <!---
 ### Git repository
