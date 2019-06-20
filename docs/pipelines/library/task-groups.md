@@ -84,9 +84,10 @@ to change each one individually.
 3. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
 4. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
-Today, there is no provision for users to choose which of the task variables to convert into task group parameters. In case you don't intend to prameterize a task variable, there is a work around. You can provide the same variable as default value for the task group parameter.  
 
-For eg: Let's say you have a task input $(foobar) which you dont intend to paramterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures at runtime the expanded task gets the same input its intended to.
+   Today, there is no provision for users to choose which of the task variables to convert into task group parameters. In case you don't intend to prameterize a task variable, there is a work around. You can provide the same variable as default value for the task group parameter.  
+
+   For example: let's say you have a task input $(foobar) which you don't intend to parameterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures at runtime the expanded task gets the same input its intended to.
 
 5. Save your updated pipeline.
 
