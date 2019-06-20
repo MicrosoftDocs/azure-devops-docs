@@ -509,12 +509,15 @@ The following examples show you how to migrate your schedules from the classic e
 
 #### Example: Nightly build of Git repo in multiple time zones
 
-The following classic editor schedule produces these builds:
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+
+    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+
 * Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
-![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -549,12 +552,15 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 
 #### Example: Nightly build with different frequencies
 
-The following classic editor schedule produces these builds:
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria (the third branch filter in this example is redundant since `releases/lastversion` matches `releases/*` already)
-* Every Sunday at 3:00 AM UTC, build branches that meet the `releases/lastversion` branch filter criteria
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+
+* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+
+    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -571,19 +577,21 @@ schedules:
   branches:
     include:
     - /releases/lastversion
+  always: true
 ```
 
 In the first schedule, **M-F 3:00 AM (UTC) daily build**, the cron syntax is `0 3 * * Mon-Fri`.
 
-* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, We don't need to do any time zone conversions.
+* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
 * Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
 
 In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, the cron syntax is `0 3 * * Sun`.
 
-* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, We don't need to do any time zone conversions.
+* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
 * Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
+* We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
 ::: moniker-end
 
@@ -621,9 +629,25 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ### Example: Nightly build of Git repo in multiple time zones
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2019"
 
-**Azure Pipelines, TFS 2017.3 and newer versions**
+**Azure Pipelines and Azure DevOps 2019 Server**
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+
+    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+
+* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
+
+    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+**TFS 2017.3 through TFS 2018**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
@@ -639,9 +663,25 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 ### Example: Nightly build with different frequencies
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">=azure-devops-2019"
 
-**Azure Pipelines, TFS 2017.3 and newer versions**
+**Azure Pipelines and Azure DevOps 2019 Server**
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
+
+    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+
+* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+
+    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+**TFS 2017.3 through TFS 2018**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
