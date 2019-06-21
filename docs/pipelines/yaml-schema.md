@@ -1463,13 +1463,13 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 ::: moniker range="azure-devops"
 ## Publish
 
-`publish` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
+`upload` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
 
 # [Schema](#tab/schema)
 
 ```yaml
 steps:
-- publish: string # path to a file or folder
+- upload: string # path to a file or folder
   artifact: string # artifact name
 ```
 
@@ -1477,7 +1477,7 @@ steps:
 
 ```yaml
 steps:
-- publish: $(Build.SourcesDirectory)/build
+- upload: $(Build.SourcesDirectory)/build
   artifact: WebApp
 ```
 
