@@ -19,6 +19,8 @@ ms.date: 12/17/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
+In this quickstart, you learn how to open a wiki and provision a Git repo for your wiki.
+
 Every team project can have a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 
 ::: moniker range=">= azure-devops-2019"
@@ -32,12 +34,6 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a Wiki Git repo isn't created by default. Provision a Git repository to store your wiki Markdown files.
 
 ::: moniker-end
-
-In this article, we show you how to:  
-
-> [!div class="checklist"]
-> * Open Wiki
-> * Provision a Git repo for your wiki
 
 <a id="prereq">  </a>
 
@@ -85,20 +81,6 @@ Your administrator can provision the Wiki Git repository or you can request that
 
 The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your team project is 'foobar' then the Wiki repo is labeled 'foobar.wiki'.
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Add and edit wiki pages](add-edit-wiki.md)
-
-## Related articles
-
-- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
-- [Provisioned wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
-- [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
-- [Update wiki pages offline](wiki-update-offline.md)
-- [Migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-
 ### Why is the Git repository hidden?
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings>Code>repositories** or **Project Settings>Version Control** pages.  
@@ -118,3 +100,10 @@ Choose **Clone Wiki** from the ellipsis near the wiki picker to access the Wiki 
 <img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
 The URL of the wiki Git repository is exposed. Copy and paste it into your web browser to access the underlying Git repo.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Add and edit wiki pages](add-edit-wiki.md)
+
+
