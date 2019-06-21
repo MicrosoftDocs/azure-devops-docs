@@ -14,11 +14,11 @@ ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Buy Basic access for users
+# Quickstart: Buy Basic access for users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
+In this quickstart, you learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
 
 Visual Studio subscribers get Basic access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
@@ -97,9 +97,3 @@ As your team contracts, you can decrease the number of paid users in your organi
 > [!div class="nextstepaction"]
 > [Buy CI/CD](buy-more-build-vs.md#prerequisites)
 
-## Related articles
-
-* [Add backup billing managers](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

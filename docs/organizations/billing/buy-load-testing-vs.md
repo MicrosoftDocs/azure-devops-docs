@@ -14,7 +14,7 @@ ms.date: 05/28/2019
 monikerRange: 'azure-devops'
 ---
 
-# Buy cloud-based load testing for Azure DevOps
+# Quickstart: Buy cloud-based load testing for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -82,7 +82,4 @@ There's a limit on the duration for each test run. For cloud-based load testing,
 > [!div class="nextstepaction"]
 > [Load test your app](../../test/load-test/get-started-simple-cloud-load-test.md)
 
-## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
