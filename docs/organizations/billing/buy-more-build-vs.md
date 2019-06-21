@@ -14,11 +14,11 @@ ms.date: 06/07/2019
 monikerRange: 'azure-devops'
 ---
 
-# Buy CI/CD for Azure DevOps
+# Quickstart: Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this quickstart, you learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:
@@ -121,9 +121,3 @@ The hosted XAML build controller is no longer supported.
 > [!div class="nextstepaction"]
 > [Try Azure Test Plans for free](try-additional-features-vs.md)
 
-## Related articles
-
-* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
-* [Azure DevOps Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
-* [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)
-* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)

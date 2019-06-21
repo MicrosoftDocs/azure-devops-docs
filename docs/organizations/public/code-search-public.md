@@ -7,23 +7,23 @@ ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
 ms.author: chcomley
-author: 
+author: chcomley
 ms.topic: quickstart
 ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Search the code base of a public project
+# Quickstart: Search the code base of a public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-With code search, you can locate specific types of code and easily narrow or widen your search.
+In this quickstart, you learn how to search the code base of a public projects. With code search, you can locate specific types of code and easily narrow or widen your search.
 
 <a name="start-search"></a>
 
 ## Start a search
 
-To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
+To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](_img/search/code-search-vert.png)
@@ -78,6 +78,9 @@ To start your search, choose **Repos>Files** or other page under **Repos**, ente
 	> [!div class="mx-imgBorder"]  
 	> ![Open the file in Code Explorer](_img/search/code-search-open-file.png)
 
-## Related articles
+## Next steps
 
-* [Search work items](work-item-search-public.md)
+> [!div class="nextstepaction"]
+> [Search work items](work-item-search-public.md)
+
+

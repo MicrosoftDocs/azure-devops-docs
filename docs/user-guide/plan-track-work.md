@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/26/2019
 ---
 
-# Plan and track your work
+# Quickstart: Plan and track your work
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -127,9 +127,3 @@ For more information on how to use the **Work Items** page, see [View and add wo
 > [!div class="nextstepaction"]
 > [Add and run manual tests](add-run-manual-tests.md)
 
-## Related articles
-
-To quickly add backlog items, such as user stories or requirements, see the following articles:  
-- [Create your backlog](../boards/backlogs/create-your-backlog.md)
-- [Kanban quickstart](../boards/boards/kanban-quickstart.md)
-- Learn more about [planning and tracking work](../boards/work-items/index.md)
