@@ -1461,7 +1461,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 [timeouts](process/phases.md?tabs=yaml#timeouts).
 
 ::: moniker range="azure-devops"
-## Publish
+## Upload
 
 `upload` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
 
