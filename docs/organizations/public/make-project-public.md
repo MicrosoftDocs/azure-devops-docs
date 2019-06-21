@@ -14,10 +14,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Change the project visibility, public or private
+# Quickstart: Change the project visibility, public or private
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
+In this quickstart, you learn how to change the visibility of your project to and from public or private.
 You can easily switch a private project to a public project, and vice-versa.  Before you do so, review the notes provided in [Private-to-public migration checklist](migration-checklist.md).
 
 > [!TIP]  
@@ -94,8 +95,3 @@ Before you can change a private project, to a public project, you must enable an
 > [!div class="nextstepaction"]
 > [Download code](browse-code-public.md)
 
-## Related articles
-
-- [Private-to-public migration checklist](migration-checklist.md)
-- [Feature differences for non-members](feature-differences.md)
-- [Default roles and permissions](default-roles-access-public.md)
