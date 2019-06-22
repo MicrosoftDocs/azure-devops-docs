@@ -646,6 +646,6 @@
 - name: Developer Resources
   items:
   - name: REST API reference
-    href: /rest/api/vsts/
+    href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
     href: /azure/devops/cli
