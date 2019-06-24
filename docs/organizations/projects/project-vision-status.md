@@ -13,14 +13,14 @@ monikerRange: '>= tfs-2015'
 ms.date: 03/26/2019
 ---
 
-# Share your project vision, view project activity
+# Quickstart: Share your project vision, view project activity
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
-From the project summary page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
-If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -41,10 +41,10 @@ From the project home page, share your project with your team, add project membe
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
 - To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
-## Open Project summary
+## Open project summary
 
 ::: moniker range=">= azure-devops-2019"
-From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, choose **Overview > Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
 
@@ -288,10 +288,6 @@ You can change the repository used to support your project vision, including poi
 > [!div class="nextstepaction"]
 > [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
 
-## Related articles  
-
-- [Markdown guidance](../../project/wiki/markdown-guidance.md)
-- [Work across projects](../../project/navigation/_img/projects-page/view-work-across-projects.png)
 
 <!---
 ### Git repository
