@@ -15,9 +15,19 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 05/29/2019  
 ---
 
-# Publish a Git repository to a wiki
+# Quickstart: Publish a Git repository to a wiki
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+
+In this quickstart, you learn how to do the following tasks:
+
+> [!div class="checklist"]
+> * Open Wiki
+> * Publish a Git repo to a wiki
+> * Edit pages of a published wiki
+> * Add pages to a published wiki
+> * Change the page sequence of a published wiki
+> * Make a page the wiki home page
 
 Content that you already maintain in a Git repository can be published to a wiki. For example, content written to support a software development kit (SDK), product documentation, or README files can quickly be published to a wiki. Multiple wikis can be published within a single team project.
 
@@ -28,16 +38,6 @@ By publishing your Markdown files to a wiki, you gain the following benefits:
 - Publish new versions of the content
 - Manage content in the same way you manage your code base
 - Readers can search the wiki easily using the Wiki search feature
-
-Use this article to learn how to:  
-
-> [!div class="checklist"]
-> * Open Wiki
-> * Publish a Git repo to a wiki
-> * Edit pages of a published wiki
-> * Add pages to a published wiki
-> * Change the page sequence of a published wiki
-> * Make a page the wiki home page
 
 To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
@@ -267,10 +267,3 @@ Displayed in the following example, Test has both a folder and an md file, which
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
 
-## Related articles
-
-- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
-- [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-- [Update wiki pages offline](wiki-update-offline.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

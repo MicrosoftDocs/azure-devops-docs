@@ -21,7 +21,7 @@ ms.date: 12/17/2018
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-We show you how to do the following in this article:  
+In this quickstart, you learn how to do the following tasks:  
 
 > [!div class="checklist"]
 > * Open Wiki
@@ -113,9 +113,4 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 > [!div class="nextstepaction"]
 > [View wiki page history and revert](wiki-view-history.md)
 
-## Related articles
 
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-* [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md)
-* [Get started with Git](../../repos/git/gitquickstart.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

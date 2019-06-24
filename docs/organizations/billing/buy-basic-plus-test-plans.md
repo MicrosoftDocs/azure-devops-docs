@@ -14,11 +14,11 @@ ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Buy Basic + Test Plans access for users
+# Quickstart: Buy Basic + Test Plans access for users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).
+In this quickstart, you learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).
  
 [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/), [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/) and [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/) subscribers have Basic + Test Plans included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
@@ -80,9 +80,3 @@ As your team contracts, you can decrease the number of paid users in your organi
 > [!div class="nextstepaction"]
 > [Buy CI/CD](buy-more-build-vs.md#prerequisites)
 
-## Related articles
-
-* [Add backup billing managers](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
