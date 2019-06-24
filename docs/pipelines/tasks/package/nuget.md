@@ -292,8 +292,8 @@ None
 ### Publishing symbols
 When you push packages to an Azure Artifacts/Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
 
-### Publishing packages to TFS with IIS Basic authentication enabled
-This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
+### Publishing or restoring packages to TFS with IIS Basic authentication enabled
+This task is unable to publish or restore NuGet packages to or from a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
 
 ## Custom NuGet command
 
