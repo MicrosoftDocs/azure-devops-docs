@@ -193,7 +193,7 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 
 ### Track code defects
 
-You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
+You can [create bugs from the web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
