@@ -1,25 +1,27 @@
 ---
-title: Uninstall or disable extensions in Azure DevOps Services or Team Foundation Server (TFS)
-description: Uninstall or disable extensions for Azure DevOps Services or Team Foundation Server
+title: Uninstall or disable extensions in Azure DevOps or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps
+description: Uninstall or disable extensions for Azure DevOps or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+ms.author: chcomley
+author: chcomley
+ms.date: 06/19/2019
+monikerRange: '>= tfs-2015'
 ---
 
  
 # Uninstall or disable extensions
 
-**Azure DevOps Services** | **TFS** 
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 When you don't need an extension anymore, you can uninstall or disable this extension.
 
-> **Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../organizations/billing/change-number-paid-extension-users.md).
+> [!NOTE]
+> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../organizations/billing/change-number-paid-extension-users.md).
 
 ## Prerequisites
 

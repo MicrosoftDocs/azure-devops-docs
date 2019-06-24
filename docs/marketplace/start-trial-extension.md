@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 4f017896-ab5e-4448-ade0-16d4155dd56d 
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/10/2018
 monikerRange: 'azure-devops'
 ---
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Start the free trial for a paid extension in Azure DevOps 
 
-**Azure DevOps Services**
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 To add new features and capabilities to your organization in Azure DevOps, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) extensions. In this quickstart, you learn how to start a free trial for a preview extension.
 
