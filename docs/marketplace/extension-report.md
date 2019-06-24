@@ -5,9 +5,9 @@ ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-monikerRange: '>= tfs-2013'
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= tfs-2015'
 ms.date: 10/10/2017
 ms.topic: conceptual
 ---
@@ -15,6 +15,8 @@ ms.topic: conceptual
  
 
 # Extension reporting hub
+
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 Extension developers have access to statistics and feedback about how their extension is performing in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Once you've created and published your extension to the Marketplace, you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.

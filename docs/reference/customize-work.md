@@ -107,9 +107,15 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Advanced customizations supported (custom link types, global lists, global workflow, team fields)</td>
-<td> </td>
+<td align="left">Global lists</td>
+<td>Picklists</td>
 <td>(see note 2)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Advanced customizations supported (custom link types, team fields, global worflow)</td>
+<td> </td>
+<td> </td>
 <td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>

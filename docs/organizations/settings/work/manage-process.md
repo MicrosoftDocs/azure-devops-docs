@@ -44,7 +44,6 @@ In this article, learn how to perform these tasks:
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
-
 <a id="create-inherited-process"></a>
 ## Create an inherited process
 You can create an inherited process from any one of the three system processes: [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   

@@ -9,12 +9,12 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 09/26/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # Approve extension requests
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 As a project collection administrator, you receive an email when another project member requests an extension. When you approve the request, the extension is automatically installed to Azure DevOps Services or Team Foundation Server (TFS).
 

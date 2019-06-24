@@ -6,13 +6,15 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/10/2018
 monikerRange: '> tfs-2015'
 ---
 
 # Quickstart: Buy and install paid extensions
+
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 In this quickstart, you learn how to do the following:
 
