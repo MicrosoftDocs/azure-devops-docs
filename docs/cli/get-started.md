@@ -1,6 +1,6 @@
 # Get started with Azure DevOps CLI
 To start using the Azure DevOps extension for Azure CLI, execute the following steps:
-1. [Install Azure CLI](): Follow the instructions available in [Microsoft Docs]() to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use az -version to validate.
+1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use az -version to validate.
 2. Add the Azure DevOps extension:
     ```
     az extension add --name azure-devops

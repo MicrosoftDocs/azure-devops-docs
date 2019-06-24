@@ -10,11 +10,11 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/11/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Manage your project 
+# Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -43,7 +43,7 @@ The first task is to ensure that all members of your organization or group are a
 
 ::: moniker-end
 
-You can delegate the task to add users to an organization by adding a user with Stakeholder or Basic access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
+You can delegate the task to add users to an organization by adding a user with Stakeholder or higher access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
 
 ## Grant or restrict permissions
 
@@ -131,7 +131,7 @@ If you support several products or feature areas, you can assign work items by f
 You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you can establish a methodology for who manages the updates and evaluates requests.
 
 > [!NOTE]
-> By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who is able to perform these tasks, you can set permissions at the organization level to **Deny**.  
+> By default, users granted Stakeholder and higher access are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who can perform these tasks, set permissions at the organization level to **Deny**.  
 
 To learn more, see the following articles:
 
@@ -190,7 +190,7 @@ To learn more, see the following articles:
   
 ## Install and manage extensions 
 
-An extension is an installable unit that adds new capabilities to your projects. You can find extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab to support the following functions:
+An extension is an installable unit that adds new capabilities to your projects. You can find extensions in Azure DevOps to support the following functions:
 
 - Planning and tracking of work items, sprints, scrums, etc.  
 - Build and release flows.

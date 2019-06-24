@@ -127,10 +127,10 @@ The following steps will help you resolve this issue.
 The next step for calculating time-in-state requires mapping the previous interval (day, week, month) for each row of data in the dataset. This is a very simple calculation using a calculated column. Typically, you would define this column as shown. 
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX  
-Date Previous  = 
-PREVIOUSDAY ( 'View Name'[Date] )
-```
+> ```DAX  
+> Date Previous  = 
+> PREVIOUSDAY ( 'View Name'[Date] )
+> ```
 
 However, this approach has two main problems:  
 - It works only for daily periods.  
@@ -158,7 +158,8 @@ This calculated column uses three DAX functions, [`MAX`](https://msdn.microsoft.
 > From the context menu for the *Date* and *Previous Date* fields, choose **Date** (instead of **Date Hierarchy**) to see a single date for these fields.   
 
 <a id="date-diff-in-days" />
-## Add *Date Diff in Days*  
+
+## Add <em>Date Diff in Days</em>  
 
 *Date Previous* calculates the difference between the previous and current date for each row. With *Date Diff in Days*, we'll calculate a count of days between each of those periods. For most rows in a daily snapshot, the value will equal 1. However, for many work items which have gaps in the dataset, the value will be larger than 1.  
 
@@ -170,18 +171,18 @@ It is important to consider the first day of the dataset where *Date Previous* i
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-Date Diff in Days =
-IF (
-    ISBLANK ( 'View Name'[Date Previous] ),
-    1,
-    DATEDIFF (
-        'View Name'[Date Previous],
-        'View Name'[Date],
-        DAY
-    )
-)
-```
+> ```DAX 
+> Date Diff in Days =
+> IF (
+>     ISBLANK ( 'View Name'[Date Previous] ),
+>     1,
+>     DATEDIFF (
+>         'View Name'[Date Previous],
+>         'View Name'[Date],
+>         DAY
+>     )
+> )
+> ```
 
 This calculated column uses the [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax) and [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax) DAX functions described [later in this article](#dax-functions).
 
@@ -192,15 +193,15 @@ In this next step, we calculate if a given row represents the last day a specifi
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-Is Last Day in State = 
-ISBLANK (CALCULATE (
-    COUNTROWS ( 'View Name' ),
-        ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-        'View Name'[Date] > EARLIER ( 'View Name'[Date] ),
-        'View Name'[State] = EARLIER ( 'View Name'[State] )
-))
-```
+> ```DAX 
+> Is Last Day in State = 
+> ISBLANK (CALCULATE (
+>     COUNTROWS ( 'View Name' ),
+>         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>         'View Name'[Date] > EARLIER ( 'View Name'[Date] ),
+>         'View Name'[State] = EARLIER ( 'View Name'[State] )
+> ))
+> ```
 
 ## Add *State Time in Days*  
 
@@ -212,15 +213,15 @@ The time that a work item spent in a specific state can now be calculated by sum
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-State Time in Days = 
-CALCULATE (
-    SUM ( 'View Name'[Date Diff in Days] ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-    'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    'View Name'[State] = EARLIER ( 'View Name'[State] )
-) + 0
-```
+> ```DAX 
+> State Time in Days = 
+> CALCULATE (
+>     SUM ( 'View Name'[Date Diff in Days] ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>     'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+>     'View Name'[State] = EARLIER ( 'View Name'[State] )
+> ) + 0
+> ```
 
 To demonstrate the *State Time in Days* column the report below includes a chart (top) showing a single work item and the state it was in on each day. The second chart (bottom) shows the time that this work item has spent in each state over time. Notice that the state increases by one each day until it moves to the next state.
 
@@ -265,11 +266,7 @@ CALCULATE (
 ) + 0
 ```
 
-> [!NOTE]   
-> You may need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'In Progress'. 
-
-
-> [!NOTE]   
+> [!NOTE]
 > You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
 The following image shows the impact of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
@@ -294,7 +291,7 @@ CALCULATE (
 ) + 0
 ```
 
-> [!NOTE]   
+> [!NOTE]
 > You may need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'Committed' or 'Proposed'. 
 
 
@@ -339,7 +336,8 @@ And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specif
 
 <a id="state-changed" />
 <a id="state-previous" />
-## Add *State Changed* 
+
+## Add <em>State Changed</em> 
 
 Using the *State Previous* column, we can flag the rows for each work item where a state transition has occurred. The *Stage Changed* calculated column you'll add has two special considerations:
 * Blank values of *State Previous* will be set to the *Created Date* of the work item
@@ -356,7 +354,7 @@ State Changed =
 IF (
     ISBLANK ( 'View Name'[State Previous] ),
     'View Name'[Created Date].[Date] = 'View Name'[Date],
-    'View Name'[State Previous] <> 'View Name'[State]
+    'View Name'[State Previous] <'View Name'[State]
 )
 ```
 
@@ -430,7 +428,7 @@ CALCULATE (
     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
     'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
     'View Name'[State Change Count] < EARLIER('View Name'[State Change Count - Last Proposed] ),
-    'View Name'[State] <> "Proposed"
+    'View Name'[State] <"Proposed"
 ) + 0
 ```
 
@@ -453,21 +451,20 @@ IF (
         SUM ( 'View Name'[Date Diff in Days] ),
         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-        'View Name'[State Change Count] > EARLIER ( 'View Name'[State Change Count - First Completed] ),
+        'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
     ) + 0
 )
 ```
 
-
-> [!NOTE]   
+> [!NOTE]
 > You may need to revise the above definition based on the workflow states used by your project. For example, if your project uses 'Done' in place of 'Closed'. 
-
 
 
 <a id="dax-functions" />
 
 ## DAX functions
+
 Additional information is provided in this section for the DAX functions used to created the calculated columns and measure added in this article. 
 
 * [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     

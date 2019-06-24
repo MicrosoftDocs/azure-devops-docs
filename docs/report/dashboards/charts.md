@@ -72,7 +72,7 @@ By default, users with **Basic** access or higher can create charts from a flat 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-- You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
+* You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 
 ::: moniker-end
 
@@ -85,46 +85,49 @@ By default, users with **Basic** access or higher can create charts from a flat 
 
 To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
 
-
 ## Create a query-based chart  
 
-1.	From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
+1. From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
-	::: moniker range=">= azure-devops-2019"  
-	> [!div class="mx-imgBorder"]  
-	> ![Charts, New chart button](_img/charts/new-chart-new-qe.png)   
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-	<img src="_img/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   > [!div class="mx-imgBorder"]  
+   > ![Charts, New chart button](_img/charts/new-chart-new-qe.png)   
+   ::: moniker-end  
 
-2.	Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
-	::: moniker range=">= azure-devops-2019"  
-	> [!div class="mx-imgBorder"]  
-	> ![Charts, New chart button](_img/charts/config-pie-chart-priority-qe.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-	<img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
-	::: moniker-end  
-	If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregration** options depend on the fields used in the query or those selected from the **Column Options**.  
+   ::: moniker range="<= tfs-2018"  
+   <img src="_img/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
+   ::: moniker-end  
 
-	You can group by any field except date-time and free-form text fields. For example: 
-	- To group by work assignments, include the **Assigned To** in the query or column options   
-	- To group by sprints or iterations, include the **Iteration Path** in the query or column options    
-	- To group by team, include the **Area Path** or **Node Name** in the query or column options  
-	- To group by a custom field, include it in a query clause or column options.
+2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
+   ::: moniker range=">= azure-devops-2019"  
+   > [!div class="mx-imgBorder"]  
+   > ![Charts, New chart button](_img/charts/config-pie-chart-priority-qe.png)  
+   ::: moniker-end  
 
-	If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
+   ::: moniker range="<= tfs-2018"  
+   <img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
+   ::: moniker-end  
 
-3.	To sort the results, choose **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
-	::: moniker range=">= azure-devops-2019"  
-	To change a color, simply choose a color from the Series set of color pickers.   
-	> [!div class="mx-imgBorder"]  
-	> ![Charts, color series picker](_img/charts/color-series-picker.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-	To change a color, simply choose a color on the chart and pick a new color from the color picker.  
-	::: moniker-end  
+   If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregration** options depend on the fields used in the query or those selected from the **Column Options**.  
+
+   You can group by any field except date-time and free-form text fields. For example: 
+   - To group by work assignments, include the **Assigned To** in the query or column options   
+   - To group by sprints or iterations, include the **Iteration Path** in the query or column options    
+   - To group by team, include the **Area Path** or **Node Name** in the query or column options  
+   - To group by a custom field, include it in a query clause or column options.
+
+   If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
+
+3. To sort the results, choose **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
+   ::: moniker range=">= azure-devops-2019"  
+   To change a color, simply choose a color from the Series set of color pickers.   
+   > [!div class="mx-imgBorder"]  
+   > ![Charts, color series picker](_img/charts/color-series-picker.png)  
+   ::: moniker-end  
+
+   ::: moniker range="<= tfs-2018"  
+   To change a color, simply choose a color on the chart and pick a new color from the color picker.  
+   ::: moniker-end  
 
 Charts automatically update when you edit the query or refresh the query results.  
 
@@ -132,10 +135,12 @@ Charts automatically update when you edit the query or refresh the query results
 ### Stacked bar chart  
 
 A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within the hierarchy of area paths. Use this when you want to show data across teams.  
+
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Stacked bar chart n](_img/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
+
 ::: moniker range="<= tfs-2018"  
 <img src="_img/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end  
@@ -148,6 +153,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Stacked bar chart](_img/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
+
 ::: moniker range="<= tfs-2018"  
 <img src="_img/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" />
 ::: moniker-end  
@@ -157,11 +163,13 @@ Trend data is extracted from the work tracking data store. Like most data stores
 
 ### Burndown chart  
 
-Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks. 
+Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks.  
+
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Remaining work for past 4 weeks](_img/charts/config-remaining-work-trend-chart.png)   
 ::: moniker-end  
+
 ::: moniker range="<= tfs-2018"  
 <img src="_img/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
@@ -189,7 +197,7 @@ In the dialog that opens, select the team dashboard to add the chart to.
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
  
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 > [!NOTE]  
 > For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
@@ -241,6 +249,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 ::: moniker-end
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
+
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
 2. To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
@@ -323,11 +332,12 @@ The Analytics service, which is in preview, provides a number of [additional wid
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ### Query-based charts versus Excel-generated PivotCharts  
 
 Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../excel/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. 
+
 ::: moniker-end
 
 [add-a-team]: ../../organizations/settings/add-teams.md

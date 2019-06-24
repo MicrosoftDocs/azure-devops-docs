@@ -209,7 +209,7 @@ Service containers share the same container resources as container jobs. This me
 
 # [Classic](#tab/classic)
 
-Service containers are not yet supported in the designer.
+Service containers are not yet supported in classic pipelines.
 
 ---
 

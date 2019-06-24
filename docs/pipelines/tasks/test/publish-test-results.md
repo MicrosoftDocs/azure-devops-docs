@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 01/08/2019
+ms.date: 06/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -126,7 +126,12 @@ in a build or release summary, and the corresponding mapping with the attributes
 | | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value | /testsuites/testsuite/testcase/Attributes["**classname**"].Value | /test-results/test-suite.Attributes["**name**"].Value | /test-suite[@type='Assembly'].Attributes["**name**"].Value | /assemblies/assembly.Attributes["**name**"].Value | /Site/Testing/Test/**Path.InnerText** |
 | | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value | - | - | - | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value | - |
 
-Note (1): **Duration** is used only when **Date started** and **Date completed** are not available. 
+
+**Note** 
+
+(1): **Duration** is used only when **Date started** and **Date completed** are not available.
+
+(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If test test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 

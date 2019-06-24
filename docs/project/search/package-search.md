@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: sumallel
 author: KathrynEE
-ms.date: 4/26/2018
+ms.date: 6/03/2019
 ---
 
 # Search your packages
@@ -27,17 +27,21 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
 
 1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 
-   ![The Work Item Search textbox in the title bar](_img/_shared/pkgsrch-bar.png)    
+	> [!div class="mx-imgBorder"]  
+	> ![The Work Item Search textbox in the title bar](_img/_shared/pkgsrch-bar.png)    
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
 
 ## View the results
 
 1. Search results are displayed with matches to user query shown in bold.
 
-   ![Search results](_img/_shared/pkgsrch-results.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Search results](_img/_shared/pkgsrch-results.png)
 
    This is a full text search that uses simple search strings for words or phrases. 
    Note that searches are _not_ case-sensitive.
@@ -52,17 +56,20 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
    and package types. Note that Views filter would only appear if a single feed is selected from Feeds filter.
    Use the "filter" icon to show the selector lists.
 
-   ![Showing the filter lists](_img/_shared/pkgsrch-results-filtericon.png)    
+	> [!div class="mx-imgBorder"]  
+	> ![Showing the filter lists](_img/_shared/pkgsrch-results-filtericon.png)    
 
 1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
-   ![Selector drop-down lists](_img/_shared/pkgsrch-results-filters.png)    
+	> [!div class="mx-imgBorder"]  
+	> ![Selector drop-down lists](_img/_shared/pkgsrch-results-filters.png)    
 
 1. By switching pivots, quickly search [code](code-search.md) containing the same search string, or 
     search for the same string in your [wikis](../wiki/search-wiki.md)
     or search for the same string in your [work items](work-item-search.md)
 
-   ![Search for code or wiki or work items containing the same search string](_img/_shared/pkgsrch-other.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Search for code or wiki or work items containing the same search string](_img/_shared/pkgsrch-other.png)
 
 ## Next step
 

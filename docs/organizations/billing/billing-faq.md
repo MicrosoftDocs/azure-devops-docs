@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2019
+ms.date: 06/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -28,7 +28,9 @@ You need to set up billing when you need more than the *free tier* of resources 
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
-You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
+You also need to [set up billing](set-up-billing-for-your-organization-vs.md) to buy other features (for your users) that are offered by Microsoft or by other companies.
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -69,15 +71,21 @@ A: No, but this feature is in our backlog to add in the future.
 
 A: Microsoft is ending support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly. We're working closely with publishers to help existing customers transition to the new model and will communicate to specific customers as publishers are ready.
 
+<a name="package-management"></a>
+
+### Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
+
+A: As of June 1st, 2019, on-premises Azure Artifacts (ie. Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/license-azure-artifacts.md) to use the feature.
+
 ## Enterprise Agreement customers
 
 ### Q: Can I use an Enterprise Agreement to buy Azure DevOps?
 
-A: Yes, you can. You'll need to be an owner or contributor for an Azure subscription that was created for your EA. Be sure to make your purchases for Azure DevOps directly in the Visual Studio Marketplace, Azure DevOps tab. You cannot purchase services by using a purchase order.
+A: Yes, you can. You need to be an owner or contributor for an Azure subscription that was created for your EA.
 
-### Q: How can I tell whether I have the necessary privileges to buy services in the Visual Studio Marketplace through my organization's Enterprise Agreement?
+### Q: How can I tell whether I have the necessary privileges to buy services through my organization's Enterprise Agreement?
 
-A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service offered in the Visual Studio Marketplace, Azure DevOps tab. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
+A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
 
 Another approach is to try to visit the [Azure Enterprise Portal](http://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
 
@@ -87,15 +95,15 @@ If you can't access the Azure Enterprise Portal, inquire within your organizatio
 
 A: Yes, you can use these prepaid funds for all Azure DevOps services that Microsoft offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
-The only exclusion is for extensions offered by partners in the Visual Studio Marketplace. These charges appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that aren't eligible for Azure Monetary Commitment funds) trigger an overage invoice.
+The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases that aren't eligible for Azure Monetary Commitment funds) trigger an overage invoice.
 
 ## How charges are processed
 
-### Q: How are user charges (Azure DevOps User/Basic, Test Manager, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
+### Q: How are user charges (Azure DevOps User/Basic, Basic + Test Plans, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
-A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Test Manager users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
+A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Basic + Test Plans users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
 
-When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Test Manager user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
+When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Basic + Test Plans user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
 
 ### Q: How do reductions or cancellations work?
 
@@ -184,11 +192,11 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 
 ## Buy Azure DevOps now
 
-* [Azure DevOps Users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-* [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
-* [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
-* [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-* [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+* [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
+* [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
+* [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
+* [Azure Test Plans](buy-basic-plus-test-plans.md) (formerly Test Manager)
+* [Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
 
 ## Related articles
 

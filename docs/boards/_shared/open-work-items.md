@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 ## Open the Work Items page
+
 You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
@@ -22,7 +23,7 @@ You can start viewing and adding work items once you connect to a project.
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Boards>Work Items ](/azure/devops/boards/work-items/_img/view-add/work-items-hub.png)
+> ![Boards>Work Items ](/azure/devops/boards/work-items/_img/view-add/work-items-hub.png)
 
 ::: moniker-end
 

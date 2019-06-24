@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Mar 4
+# Team Foundation Service updates - Mar 4
 
 Before we get to the new capabilities in today’s update, I want to announce some planned downtime for the service.
 
@@ -20,7 +20,7 @@ As we get closer to the event, we’ll be posting updates on our [service blog](
 
 Now, let’s talk about some of the improvements in today's update…
 
-##Customizable Kanban Swim Lanes
+## Customizable Kanban Swim Lanes
 
 When we first introduced our kanban board [back in August of last year](https://visualstudio.microsoft.com/articles/news/2012/aug-13-team-services), we knew a few key features were missing from the experience; most noticeably, the ability to customize the swim lanes on the board. Today we’re happy to announce that customizable swim lanes are here!
 
@@ -38,7 +38,7 @@ When I click **OK**, my kanban board is refreshed with the new customized swim l
 
 ![Customized swim lanes](_img/3_4_03.png)
 
-##Edit Test Steps When You Run Tests
+## Edit Test Steps When You Run Tests
 
 In this sprint, you can now make changes to test steps inline when you run a test.
 
@@ -56,7 +56,7 @@ To fix this, you can now just double-click the step and correct the misspelling.
 
 In future sprints, we will enable adding and deleting existing test steps and modifying the order of steps when you run a test.
 
-##Annotate/Blame
+## Annotate/Blame
 
 In this sprint we added the annotate view on source files. We’re quite proud of this implementation so let us know what you think. This works for files in both TFVC and Git repositories. Simply browse to a file in your project and click the new annotate icon in the toolbar.
 
@@ -66,7 +66,7 @@ A margin slides out next to the file showing you who made changes to the file, w
 
 The blocks in the margin have a subtle color gradation to help you visually identify the age of the changes. The latest change is always the darkest and the oldest change is the lightest. All in all it’s a very nice, clean blame experience that we hope both users of Git and TFVC will find useful.
 
-##Scheduled Builds for Git Based Team Projects
+## Scheduled Builds for Git Based Team Projects
 
 Finally, this sprint we enabled support for scheduled builds with Git repositories. You can now build your Git repos using a build definition that is triggered on a daily schedule.
 

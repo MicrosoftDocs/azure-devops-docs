@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Aug 6
+# Team Foundation Service updates - Aug 6
 
 Welcome to our Team Foundation Service news feed. Bookmark this page because it’s going to be a great way to learn about happenings on the service. Every sprint (every 3 weeks) and sometimes more often we’ll update this page with information on the latest service updates – including important bug fixes and new features.
 

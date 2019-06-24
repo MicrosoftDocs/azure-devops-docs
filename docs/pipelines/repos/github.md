@@ -8,7 +8,6 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.custom: seodec18
 ms.date: 05/17/2019
 monikerRange: 'azure-devops'
 ---

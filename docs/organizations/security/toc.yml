@@ -1,4 +1,4 @@
-- name: "Security & Identity"
+- name: "Security & identity"
   href: index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: About security and identity  
   href: about-security-identity.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
@@ -40,7 +40,7 @@
     href: ../accounts/access-with-azure-ad.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Active Directory groups 
     href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Add users to Azure DevOps Services
     href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

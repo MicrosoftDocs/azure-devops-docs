@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/29/2019
+ms.date: 05/23/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -32,14 +32,23 @@ steps:
   condition: <expression>
 ```
 
-Another common use of expressions is in defining variables, whose value should be evaluated at run time.
+Another common use of expressions is in defining variables.
+Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
 
 ```yaml
-# Expressions are used to define variables, whose value should be evaluated at run time. 
-# Note the syntax $[] to evaluate these expressions.
+# Two examples of expressions used to define variables
+# The first one, a, is evaluated when the YAML file is parsed into a plan.
+# The second one, b, is evaluated at run time. 
+# Note the syntax ${{}} for parse time and $[] for runtime expressions.
 variables:
-  a: $[<expression>]
+  a: ${{ <expression> }}
+  b: $[ <expression> ]
 ```
+
+The difference between these syntaxes is primarily what context is available.
+In a parse time expression, you have access to `parameters` and statically-defined `variables`.
+In a runtime expression, you have access to more `variables` but no parameters.
+
 ::: moniker-end
 
 An expression can be a literal, a reference to a variable, a reference to a dependency, a function, or a valid nested combination of these.
@@ -387,7 +396,7 @@ This would return:
 [ 1, 2, 3 ]
 ```
 
-## Type Casting
+## Type casting
 
 Values in an expression may be converted from one type to another. Detailed conversion rules are listed further below.
 

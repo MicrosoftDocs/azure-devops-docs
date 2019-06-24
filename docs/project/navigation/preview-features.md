@@ -41,19 +41,19 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 	> [!div class="mx-imgBorder"]  
 	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)
 
-0. To enable or disable a feature, choose the slider. 
+1. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/preview-features-user-level-s147.png) 
 
 <!---
 
-0. To access the Preview features options, open your profile menu, and select **Preview features**. 
+1. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Preview Features](_img/manage-features/choose-preview-features-horz.png)  
 
-0. To enable or disable a feature, choose the slider. 
+1. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/preview-features-user-level-s142.png) 

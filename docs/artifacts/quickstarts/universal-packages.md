@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: midenn
-author: mitchdenny
+ms.author: phwilson
+author: chasewilson
 ms.date: 09/25/2018
 monikerRange: 'azure-devops'
 ---
@@ -141,6 +141,26 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 
 ```azurecli
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
+```
+
+---
+
+### Filtered Universal Package downloads
+
+For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files. The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+
+The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
+
+# [New URLs](#tab/azuredevops)
+
+```azurecli
+az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+```
+
+#  [Legacy URLs](#tab/vsts)
+
+```azurecli
+az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
 
 ---

@@ -9,7 +9,7 @@ ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 05/23/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -92,7 +92,7 @@ echo This is pipeline $(System.DefinitionId)
 ## Consider Bash
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
-Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash.
+Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) Bash.
 ::: moniker range="azure-devops"
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end

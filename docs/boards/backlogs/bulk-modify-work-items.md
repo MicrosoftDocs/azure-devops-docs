@@ -2,7 +2,7 @@
 title: Edit multiple user stories, bugs, issues, tasks, & other work items 
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.manager: jillfra
@@ -27,23 +27,26 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 In this article you'll learn:  
 
 ::: moniker range=">= tfs-2015"
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
 > * Add or remove tags from several work items  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
+
 ::: moniker-end
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Supported tasks
+
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azure-devops-2019"
@@ -59,8 +62,8 @@ All of the following actions can be performed by team members that belong to the
 <td>Multi-select work items  </td>
 <td>
 <ul>
-<li>[Multi-select-query results](#multi-select)</li>
-<li>[Multi-select-backlog](#multi-select)</li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-query results](#multi-select)">Multi-select-query results</a></li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-backlog](#multi-select)">Multi-select-backlog</a></li>
 </ul>
 </td>
 </tr>
@@ -68,9 +71,9 @@ All of the following actions can be performed by team members that belong to the
 <td>Link work items </td>
 <td>
 <ul>
-<li>[Link to a new item](add-link.md#link)</li>
-<li>[Link to an existing item](add-link.md#link)</li>
-<li>[New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup></li>
+<li><a href="add-link.md#link" data-raw-source="[Link to a new item](add-link.md#link)">Link to a new item</a></li>
+<li><a href="add-link.md#link" data-raw-source="[Link to an existing item](add-link.md#link)">Link to an existing item</a></li>
+<li><a href="connect-work-items-to-git-dev-ops.md" data-raw-source="[New branch](connect-work-items-to-git-dev-ops.md)">New branch</a><sup>1</sup></li>
 </ul>
 </td>
 </tr>
@@ -78,14 +81,14 @@ All of the following actions can be performed by team members that belong to the
 <td>Bulk edit/update/delete</td>
 <td>
 <ul>
-<li>[Edit field(s)](#edit)</li>
-<li>[Assign to](#assign-to)</li>
-<li>[Move to iteration](#move-iteration)</li>
-<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
-<li>[Change parent](organize-backlog.md#reparent)</li>
-<li>[Add/remove tags](#tags)</li>
-<li>[Update from template](work-item-template.md)<sup>1</sup></li>
-<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+<li><a href="#edit" data-raw-source="[Edit field(s)](#edit)">Edit field(s)</a></li>
+<li><a href="#assign-to" data-raw-source="[Assign to](#assign-to)">Assign to</a></li>
+<li><a href="#move-iteration" data-raw-source="[Move to iteration](#move-iteration)">Move to iteration</a></li>
+<li><a href="create-your-backlog.md#move-items-priority-order" data-raw-source="[Change position](create-your-backlog.md#move-items-priority-order)">Change position</a></li>
+<li><a href="organize-backlog.md#reparent" data-raw-source="[Change parent](organize-backlog.md#reparent)">Change parent</a></li>
+<li><a href="#tags" data-raw-source="[Add/remove tags](#tags)">Add/remove tags</a></li>
+<li><a href="work-item-template.md" data-raw-source="[Update from template](work-item-template.md)">Update from template</a><sup>1</sup></li>
+<li><a href="remove-delete-work-items.md#delete" data-raw-source="[Delete](remove-delete-work-items.md#delete)">Delete</a> <sup>1</sup></li>
 </ul>
 </td>
 </tr>
@@ -93,17 +96,17 @@ All of the following actions can be performed by team members that belong to the
 <td>Copy, clone, change type, move, or email work items  </td>
 <td>
 <ul>
-<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
-<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
-<li>[Email selected item(s)](../queries/share-plans.md)</li>
-<li>[Change work item type](remove-delete-work-items.md#change-type)<sup>1</sup></li>
-<li>[Move items to another project](remove-delete-work-items.md#move)<sup>1, 3</sup></li>
+<li><a href="copy-clone-work-items.md#copy-clone" data-raw-source="[Clone or copy a single item](copy-clone-work-items.md#copy-clone)">Clone or copy a single item</a> <sup>2</sup></li>
+<li><a href="copy-clone-work-items.md#html" data-raw-source="[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)">Copy as HTML/Copy to clipboard</a></li>
+<li><a href="../queries/share-plans.md" data-raw-source="[Email selected item(s)](../queries/share-plans.md)">Email selected item(s)</a></li>
+<li><a href="remove-delete-work-items.md#change-type" data-raw-source="[Change work item type](remove-delete-work-items.md#change-type)">Change work item type</a><sup>1</sup></li>
+<li><a href="remove-delete-work-items.md#move" data-raw-source="[Move items to another project](remove-delete-work-items.md#move)">Move items to another project</a><sup>1, 3</sup></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-               
+
 
 
 **Notes:**  
@@ -121,7 +124,7 @@ All of the following actions can be performed by team members that belong to the
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-   
+
 
 
 <table width="80%">
@@ -134,8 +137,8 @@ All of the following actions can be performed by team members that belong to the
 <td>Multi-select work items  </td>
 <td>
 <ul>
-<li>[Multi-select-query results](#multi-select)</li>
-<li>[Multi-select-backlog](#multi-select)</li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-query results](#multi-select)">Multi-select-query results</a></li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-backlog](#multi-select)">Multi-select-backlog</a></li>
 </ul>
 </td>
 </tr>
@@ -143,9 +146,9 @@ All of the following actions can be performed by team members that belong to the
 <td>Link work items </td>
 <td>
 <ul>
-<li>[Link to a new item](add-link.md#link)</li>
-<li>[Link to an existing item](add-link.md#link)</li>
-<li>[New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup></li>
+<li><a href="add-link.md#link" data-raw-source="[Link to a new item](add-link.md#link)">Link to a new item</a></li>
+<li><a href="add-link.md#link" data-raw-source="[Link to an existing item](add-link.md#link)">Link to an existing item</a></li>
+<li><a href="connect-work-items-to-git-dev-ops.md" data-raw-source="[New branch](connect-work-items-to-git-dev-ops.md)">New branch</a><sup>1</sup></li>
 </ul>
 </td>
 </tr>
@@ -153,14 +156,14 @@ All of the following actions can be performed by team members that belong to the
 <td>Bulk edit/update/delete</td>
 <td>
 <ul>
-<li>[Edit field(s)](#edit)</li>
-<li>[Assign to](#assign-to)</li>
-<li>[Move to iteration](#move-iteration)</li>
-<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
-<li>[Change parent](organize-backlog.md#reparent)</li>
-<li>[Add/remove tags](#tags)</li>
-<li>[Update from template](work-item-template.md)<sup>1</sup></li>
-<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+<li><a href="#edit" data-raw-source="[Edit field(s)](#edit)">Edit field(s)</a></li>
+<li><a href="#assign-to" data-raw-source="[Assign to](#assign-to)">Assign to</a></li>
+<li><a href="#move-iteration" data-raw-source="[Move to iteration](#move-iteration)">Move to iteration</a></li>
+<li><a href="create-your-backlog.md#move-items-priority-order" data-raw-source="[Change position](create-your-backlog.md#move-items-priority-order)">Change position</a></li>
+<li><a href="organize-backlog.md#reparent" data-raw-source="[Change parent](organize-backlog.md#reparent)">Change parent</a></li>
+<li><a href="#tags" data-raw-source="[Add/remove tags](#tags)">Add/remove tags</a></li>
+<li><a href="work-item-template.md" data-raw-source="[Update from template](work-item-template.md)">Update from template</a><sup>1</sup></li>
+<li><a href="remove-delete-work-items.md#delete" data-raw-source="[Delete](remove-delete-work-items.md#delete)">Delete</a> <sup>1</sup></li>
 </ul>
 </td>
 </tr>
@@ -168,9 +171,9 @@ All of the following actions can be performed by team members that belong to the
 <td>Copy, clone, or email work items  </td>
 <td>
 <ul>
-<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
-<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
-<li>[Email selected item(s)](../queries/share-plans.md)</li>
+<li><a href="copy-clone-work-items.md#copy-clone" data-raw-source="[Clone or copy a single item](copy-clone-work-items.md#copy-clone)">Clone or copy a single item</a> <sup>2</sup></li>
+<li><a href="copy-clone-work-items.md#html" data-raw-source="[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)">Copy as HTML/Copy to clipboard</a></li>
+<li><a href="../queries/share-plans.md" data-raw-source="[Email selected item(s)](../queries/share-plans.md)">Email selected item(s)</a></li>
 </ul>
 </td>
 </tr>
@@ -200,8 +203,8 @@ All of the following actions can be performed by team members that belong to the
 <td>Multi-select work items  </td>
 <td>
 <ul>
-<li>[Multi-select-query results](#multi-select)</li>
-<li>[Multi-select-backlog](#multi-select)</li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-query results](#multi-select)">Multi-select-query results</a></li>
+<li><a href="#multi-select" data-raw-source="[Multi-select-backlog](#multi-select)">Multi-select-backlog</a></li>
 </ul>
 </td>
 </tr>
@@ -209,8 +212,8 @@ All of the following actions can be performed by team members that belong to the
 <td>Link work items </td>
 <td>
 <ul>
-<li>[Link to a new item](add-link.md#link)</li>
-<li>[Link to an existing item](add-link.md#link)</li>
+<li><a href="add-link.md#link" data-raw-source="[Link to a new item](add-link.md#link)">Link to a new item</a></li>
+<li><a href="add-link.md#link" data-raw-source="[Link to an existing item](add-link.md#link)">Link to an existing item</a></li>
 </ul>
 </td>
 </tr>
@@ -218,12 +221,12 @@ All of the following actions can be performed by team members that belong to the
 <td>Bulk edit/update/delete</td>
 <td>
 <ul>
-<li>[Edit field(s)](#edit)</li>
-<li>[Assign to](#assign-to)</li>
-<li>[Move to iteration](#move-iteration)</li>
-<li>[Change position](create-your-backlog.md#move-items-priority-order)</li>
-<li>[Change parent](organize-backlog.md#reparent)</li>
-<li>[Delete](remove-delete-work-items.md#delete) <sup>1</sup></li>
+<li><a href="#edit" data-raw-source="[Edit field(s)](#edit)">Edit field(s)</a></li>
+<li><a href="#assign-to" data-raw-source="[Assign to](#assign-to)">Assign to</a></li>
+<li><a href="#move-iteration" data-raw-source="[Move to iteration](#move-iteration)">Move to iteration</a></li>
+<li><a href="create-your-backlog.md#move-items-priority-order" data-raw-source="[Change position](create-your-backlog.md#move-items-priority-order)">Change position</a></li>
+<li><a href="organize-backlog.md#reparent" data-raw-source="[Change parent](organize-backlog.md#reparent)">Change parent</a></li>
+<li><a href="remove-delete-work-items.md#delete" data-raw-source="[Delete](remove-delete-work-items.md#delete)">Delete</a> <sup>1</sup></li>
 </ul>
 </td>
 </tr>
@@ -231,15 +234,15 @@ All of the following actions can be performed by team members that belong to the
 <td>Copy, clone, or email work items  </td>
 <td>
 <ul>
-<li>[Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup></li>
-<li>[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)</li>
-<li>[Email selected item(s)](../queries/share-plans.md)</li>
+<li><a href="copy-clone-work-items.md#copy-clone" data-raw-source="[Clone or copy a single item](copy-clone-work-items.md#copy-clone)">Clone or copy a single item</a> <sup>2</sup></li>
+<li><a href="copy-clone-work-items.md#html" data-raw-source="[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)">Copy as HTML/Copy to clipboard</a></li>
+<li><a href="../queries/share-plans.md" data-raw-source="[Email selected item(s)](../queries/share-plans.md)">Email selected item(s)</a></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-      
+
 
 
 **Notes:**  
@@ -259,11 +262,17 @@ All of the following actions can be performed by team members that belong to the
 To start a bulk edit, begin by multi-selecting the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../queries/using-queries.md). 
 
 ::: moniker range=">= tfs-2015"
+
 Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results. 
+
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
-(Requires TFS 2015.1 or later versions)  
+
+Requires TFS 2015.1 or later versions.
+
 ::: moniker-end
+
 You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position), assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
@@ -275,14 +284,10 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p>**Backlog menu**</p>  
-![Backlog multi-select menu](_img/bulk-m-backlog-menu-options-ts.png)  
-</td>
+<p><strong>Backlog menu</strong></p><br/><img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu"/><br/></td>
 
 <td>
-<p>**Query results multi-select menu**</p>  
-![Query results multi-select menu](_img/bulk-m-query-results-menu-options-ts.png)  
-</td>
+<p><strong>Query results multi-select menu</strong></p><br/><img src="_img/bulk-m-query-results-menu-options-ts.png" alt="Query results multi-select menu"/><br/></td>
 </tr>
 </table>
 ::: moniker-end
@@ -293,35 +298,31 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p>**Backlog multi-select menu** </p>  
-![Product backlog multi-select menu](_img/bulk-m-backlog-r-tfs-2016-menu-options.png)  
-</td>
+<p><strong>Backlog multi-select menu</strong> </p><br/><img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Product backlog multi-select menu"/><br/></td>
 
 <td>
-<p>**Query results multi-select menu** </p>  
-![Query results multi-select menu, TFS-2017](_img/bulk-m-query-r-tfs-2016-menu-options.png) 
+<p><strong>Query results multi-select menu</strong> </p><br/><img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2017"/> 
 </td>
 </tr>
 </table>
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
+
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
 <tr valign="top">
 <td>
-<p>**Backlog multi-select menu**</p>  
-![Backlog multi-select menu, TFS 2015](_img/bulk-m-backlog-r-tfs-menu-options.png) 
+<p><strong>Backlog multi-select menu</strong></p><br/><img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015"/> 
 </td>
 
 <td>
-<p>**Query results multi-select menu**</p>  
-![Query results multi-select menu, TFS 2015](_img/bulk-m-query-r-tfs-menu-options.png)  
-</td>
+<p><strong>Query results multi-select menu</strong></p><br/><img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015"/><br/></td>
 </tr>
 </table>
- 
+
 ::: moniker-end
 
 ### To multi-select and open the context menu 
@@ -342,7 +343,9 @@ Here, we use the context menu to move several non-sequential items to the curren
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
+
 ![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](_img/backlog-multi-select-non-sequential-items.png)  
+
 ::: moniker-end
 
 > [!TIP]  
@@ -351,7 +354,9 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 <a id="move-iteration"> </a> 
 <a id="assign-to"> </a>  
+
 ## Reassign work items 
+
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ::: moniker range=">= tfs-2017"
@@ -369,6 +374,7 @@ With work items selected, open the context menu for any selected item, and reass
 To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
+
 ## Edit one or more fields  
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
@@ -377,13 +383,13 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-> [!div class="mx-imgBorder"]  
-> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
 
 ::: moniker-end
 
@@ -391,33 +397,37 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-	![TFS 2017, Query results page, bulk edit fields](_img/bulk-modify-edit-fields-ts.png)  
+    ![TFS 2017, Query results page, bulk edit fields](_img/bulk-modify-edit-fields-ts.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-	<img src="_img/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
+    <img src="_img/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 <!---#### TFS 2015, TFS 2013-->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-	<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
+    <img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
 
 2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-	![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
+    ![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 <a id="tags"></a>
+
 ## Bulk modify tags 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
@@ -433,18 +443,20 @@ Here we choose to add the *Service* tag to the selected work items.
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 Here we choose to add the *Beta* tag to the selected work items. 
 
 ![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
 
-Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+ 
 ::: moniker-end 
 
 ## Related articles
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
 
- 
+
 ### Migrate or change a large number of work items 
 
 For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.microsoft.com/docs/integrate/api/wit/batch). 
@@ -452,8 +464,8 @@ For large scale, organizational moves, use the REST API calls for [Work item bat
 At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ### Add multiple values to a field  
+
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
 
 
 
- 

@@ -123,18 +123,18 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
-0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+1. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
-0. Choose the product or portfolio backlog from the board-selection menu. 
+1. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-0. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+1. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
@@ -205,11 +205,11 @@ For details on each configuration option, see one of the following articles:
 <td>Cards  </td>
 <td>
 <ul>
-<li>[Add fields](../../boards/boards/customize-cards.md)</li>
-<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
-<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
-<li>[Enable annotations](../../boards/boards/customize-cards.md#annotations)</li>
-<li>[Configure inline tests](../../boards/boards/customize-cards.md#tests) </li>
+<li><a href="../../boards/boards/customize-cards.md" data-raw-source="[Add fields](../../boards/boards/customize-cards.md)">Add fields</a></li>
+<li><a href="../../boards/boards/customize-cards.md#style-rule" data-raw-source="[Define styles](../../boards/boards/customize-cards.md#style-rule)">Define styles</a></li>
+<li><a href="../../boards/boards/customize-cards.md#color-tags" data-raw-source="[Add tag colors](../../boards/boards/customize-cards.md#color-tags)">Add tag colors</a></li>
+<li><a href="../../boards/boards/customize-cards.md#annotations" data-raw-source="[Enable annotations](../../boards/boards/customize-cards.md#annotations)">Enable annotations</a></li>
+<li><a href="../../boards/boards/customize-cards.md#tests" data-raw-source="[Configure inline tests](../../boards/boards/customize-cards.md#tests)">Configure inline tests</a> </li>
 </ul>
 </td>
 </tr>
@@ -217,10 +217,10 @@ For details on each configuration option, see one of the following articles:
 <td>Boards </td>
 <td>
 <ul>
-<li>[Add columns](../../boards/boards/add-columns.md)</li>
-<li>[Add swimlanes](../../boards/boards/expedite-work.md)</li>
-<li>[Card reordering](../../boards/boards/reorder-cards.md) </li>
-<li>[Configure status badges](../../boards/github/configure-status-badges.md) </li>
+<li><a href="../../boards/boards/add-columns.md" data-raw-source="[Add columns](../../boards/boards/add-columns.md)">Add columns</a></li>
+<li><a href="../../boards/boards/expedite-work.md" data-raw-source="[Add swimlanes](../../boards/boards/expedite-work.md)">Add swimlanes</a></li>
+<li><a href="../../boards/boards/reorder-cards.md" data-raw-source="[Card reordering](../../boards/boards/reorder-cards.md)">Card reordering</a> </li>
+<li><a href="../../boards/github/configure-status-badges.md" data-raw-source="[Configure status badges](../../boards/github/configure-status-badges.md)">Configure status badges</a> </li>
 </ul>
 </td>
 </tr>
@@ -228,7 +228,7 @@ For details on each configuration option, see one of the following articles:
 <td>Chart</td>
 <td>
 <ul>
-<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+<li><a href="../../report/dashboards/cumulative-flow.md#configure" data-raw-source="[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)">Configure cumulative flow chart</a> </li>
 </ul>
 </td>
 </tr>
@@ -236,9 +236,9 @@ For details on each configuration option, see one of the following articles:
 <td>General  </td>
 <td>
 <ul>
-<li>[Backlogs](select-backlog-navigation-levels.md)</li>
-<li>[Working days](set-working-days.md)</li>
-<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Backlogs](select-backlog-navigation-levels.md)">Backlogs</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Working days](set-working-days.md)">Working days</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Working with bugs](show-bugs-on-backlog.md)">Working with bugs</a> </li>
 </ul>
 </td>
 </tr>
@@ -261,11 +261,11 @@ For details on each configuration option, see one of the following articles:
 <td>Cards  </td>
 <td>
 <ul>
-<li>[Add fields](../../boards/boards/customize-cards.md)</li>
-<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
-<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
-<li>[Enable annotations](../../boards/boards/customize-cards.md#annotations)</li>
-<li>[Configure inline tests](../../boards/boards/customize-cards.md#tests) </li>
+<li><a href="../../boards/boards/customize-cards.md" data-raw-source="[Add fields](../../boards/boards/customize-cards.md)">Add fields</a></li>
+<li><a href="../../boards/boards/customize-cards.md#style-rule" data-raw-source="[Define styles](../../boards/boards/customize-cards.md#style-rule)">Define styles</a></li>
+<li><a href="../../boards/boards/customize-cards.md#color-tags" data-raw-source="[Add tag colors](../../boards/boards/customize-cards.md#color-tags)">Add tag colors</a></li>
+<li><a href="../../boards/boards/customize-cards.md#annotations" data-raw-source="[Enable annotations](../../boards/boards/customize-cards.md#annotations)">Enable annotations</a></li>
+<li><a href="../../boards/boards/customize-cards.md#tests" data-raw-source="[Configure inline tests](../../boards/boards/customize-cards.md#tests)">Configure inline tests</a> </li>
 </ul>
 </td>
 </tr>
@@ -273,9 +273,9 @@ For details on each configuration option, see one of the following articles:
 <td>Boards </td>
 <td>
 <ul>
-<li>[Add columns](../../boards/boards/add-columns.md)</li>
-<li>[Add swimlanes](../../boards/boards/expedite-work.md)</li>
-<li>[Card reordering](../../boards/boards/reorder-cards.md) </li>
+<li><a href="../../boards/boards/add-columns.md" data-raw-source="[Add columns](../../boards/boards/add-columns.md)">Add columns</a></li>
+<li><a href="../../boards/boards/expedite-work.md" data-raw-source="[Add swimlanes](../../boards/boards/expedite-work.md)">Add swimlanes</a></li>
+<li><a href="../../boards/boards/reorder-cards.md" data-raw-source="[Card reordering](../../boards/boards/reorder-cards.md)">Card reordering</a> </li>
 </ul>
 </td>
 </tr>
@@ -283,7 +283,7 @@ For details on each configuration option, see one of the following articles:
 <td>Chart</td>
 <td>
 <ul>
-<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+<li><a href="../../report/dashboards/cumulative-flow.md#configure" data-raw-source="[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)">Configure cumulative flow chart</a> </li>
 </ul>
 </td>
 </tr>
@@ -291,9 +291,9 @@ For details on each configuration option, see one of the following articles:
 <td>General  </td>
 <td>
 <ul>
-<li>[Backlogs](select-backlog-navigation-levels.md)</li>
-<li>[Working days](set-working-days.md)</li>
-<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Backlogs](select-backlog-navigation-levels.md)">Backlogs</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Working days](set-working-days.md)">Working days</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Working with bugs](show-bugs-on-backlog.md)">Working with bugs</a> </li>
 </ul>
 </td>
 </tr>
@@ -317,9 +317,9 @@ For details on each configuration option, see one of the following articles:
 <td>Cards  </td>
 <td>
 <ul>
-<li>[Add fields](../../boards/boards/customize-cards.md)</li>
-<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
-<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
+<li><a href="../../boards/boards/customize-cards.md" data-raw-source="[Add fields](../../boards/boards/customize-cards.md)">Add fields</a></li>
+<li><a href="../../boards/boards/customize-cards.md#style-rule" data-raw-source="[Define styles](../../boards/boards/customize-cards.md#style-rule)">Define styles</a></li>
+<li><a href="../../boards/boards/customize-cards.md#color-tags" data-raw-source="[Add tag colors](../../boards/boards/customize-cards.md#color-tags)">Add tag colors</a></li>
 </ul>
 </td>
 </tr>
@@ -327,7 +327,7 @@ For details on each configuration option, see one of the following articles:
 <td>Boards </td>
 <td>
 <ul>
-<li>[Add columns](../../boards/boards/add-columns.md)</li>
+<li><a href="../../boards/boards/add-columns.md" data-raw-source="[Add columns](../../boards/boards/add-columns.md)">Add columns</a></li>
 </ul>
 </td>
 </tr>
@@ -335,7 +335,7 @@ For details on each configuration option, see one of the following articles:
 <td>Chart</td>
 <td>
 <ul>
-<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+<li><a href="../../report/dashboards/cumulative-flow.md#configure" data-raw-source="[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)">Configure cumulative flow chart</a> </li>
 </ul>
 </td>
 </tr>
@@ -343,9 +343,9 @@ For details on each configuration option, see one of the following articles:
 <td>General  </td>
 <td>
 <ul>
-<li>[Backlogs](select-backlog-navigation-levels.md)</li>
-<li>[Working days](set-working-days.md)</li>
-<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Backlogs](select-backlog-navigation-levels.md)">Backlogs</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Working days](set-working-days.md)">Working days</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Working with bugs](show-bugs-on-backlog.md)">Working with bugs</a> </li>
 </ul>
 </td>
 </tr>

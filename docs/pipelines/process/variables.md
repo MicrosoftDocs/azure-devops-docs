@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/29/2019
+ms.date: 05/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -28,6 +28,10 @@ As a pipeline author or end user, you cannot change the value of such variables.
 * If you use classic release pipelines, then see [release variables](../release/variables.md).
 
 In this topic, we discuss user-defined variables. Names of these variables consist of letters, numbers, `.`, and `_` characters.
+
+A few variable prefixes are reserved by the system and should not be used.
+These are: `endpoint`, `input`, `secret`, and `securefile`.
+Any variable which begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
 
 ## Set variables in pipeline
 
@@ -331,6 +335,19 @@ variable available to downstream steps within the same job.
 
 [!INCLUDE [include](_shared/set-variables-in-scripts.md)]
 
+### Using variables as task inputs
+
+In order to use a variable as a task input, the variable must be an output variable and you must give the producing task a reference name.
+You can set a task's reference name on the **Output Variables** section of the task editor.
+For instance, a script task whose output variable reference name is `producer` could have the following contents:
+
+```cmd
+mkdir myDir
+echo ##vso[task.setvariable variable=newworkdir;isOutput=true]$(System.DefaultWorkingDirectory)\myDir
+```
+
+The output variable `newworkdir` can be referenced in the input of a downstream task as `$(producer.newworkdir)`.
+
 ### Set a multi-job output variable
 
 You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
@@ -480,6 +497,22 @@ If the variable `a` is an output variable from a previous job, then you can use 
     matrix:
       x:
         some_variable: $[ dependencies.A.outputs['a_step.a'] ]    # This works
+```
+
+### Recursive expansion
+
+On the agent, variables referenced using `$( )` syntax will be recursively expanded.
+However, for service-side operations such as setting display names, variables are not expanded recursively.
+For example:
+
+```yaml
+variables:
+  myInner: someValue
+  myOuter: $(myInner)
+
+steps:
+- script: echo $(myOuter)  # prints "someValue"
+  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
 ```
 
 ::: moniker-end

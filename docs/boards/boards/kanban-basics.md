@@ -3,10 +3,9 @@ title: Understand and configure your Kanban board
 titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
 ms.custom: boards-kanban  
-ms.topic: quickstart
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
-ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
@@ -27,7 +26,7 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 
 Review this article to gain an understanding of how to configure and start working with your Kanban boards:   
 
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * View your Kanban board    
 > * Customize the columns shown on your Kanban board to support how your team works  
 > * Set WIP limits to constrain work in progress   
@@ -47,6 +46,7 @@ User stories and bugs correspond to types of work items. You use [work items](..
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 <a id="map-flow" />
+
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
 Kanban literally means signboard or billboard. As a first step, you customize your board to map to how your team works.
@@ -58,11 +58,11 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 <tbody>
 <tr valign="top">
 <td>
-![User story workflow states](_img/ALM_KB_Workflow.png)
+<img src="_img/ALM_KB_Workflow.png" alt="User story workflow states"/>
 
 </td>
 <td>
-![Default kanban board, Agile template](_img/ALM_KB_Empty.png)
+<img src="_img/ALM_KB_Empty.png" alt="Default kanban board, Agile template"/>
 
 </td>
 </tr>
@@ -78,6 +78,7 @@ For example, you can change your Kanban columns to map to the following five wor
 [Once you've identified your stages, simply add and rename columns](add-columns.md) to map to them. Keep the number of columns to a minimum while still representing the key handoffs that occur for your team.
 
 ## 2. Set WIP limits to constrain work in progress
+
 <meta name="description" content="Kanban WIP limits" />
 In this next step, your team sets WIP limits for each workflow stage. While setting WIP limits is easy, adhering to them takes a team commitment. Teams new to Kanban may find WIP limits counterintuitive and uncomfortable. However, this single practice has helped teams identify bottlenecks, improve their process, and increase the quality of software they ship.
 
@@ -90,9 +91,11 @@ When they do exceed the limit, the column count displays red. Teams can use this
 [Set WIP limits](wip-limits.md) based on team discussions and revisit as your team identifies ways to improve their processes. Use WIP limits to identify bottlenecks and eliminate waste from your work flow processes.
 
 <a id="track-work">  </a>
+
 ## 3. Track work in progress
+
 <meta name="description" content="Kanban tools track progress" />
-Once you've configured your Kanban board to match how your team works, you're ready to use it.
+Once you&#39;ve configured your Kanban board to match how your team works, you&#39;re ready to use it.
 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by moving it to a downstream stage.
 
@@ -116,6 +119,7 @@ Also, you can quickly update a field or reassign ownership directly from the boa
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 
 ## 4. Monitor metrics and fine tune
+
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
 <img src="_img/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
@@ -153,6 +157,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end

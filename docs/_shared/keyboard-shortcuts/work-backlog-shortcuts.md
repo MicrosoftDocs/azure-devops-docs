@@ -12,11 +12,11 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work Backlogs page shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
+<td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
+</td>
 <td>
 <br/>
-**Backlogs**<br/><br/>
-
+<strong>Backlogs</strong><br/><br/>
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog<br/>
@@ -39,9 +39,11 @@ You can use the following keyboard shortcuts when working from a **Work**>**Back
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Work Backlogs page shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)</td>
 <td>
-<br/>**Backlogs**<br/><br/>
+<img src="/azure/devops/_shared/_img/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
+</td>
+<td>
+<br/><strong>Backlogs</strong><br/><br/>
 
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
 <br/>

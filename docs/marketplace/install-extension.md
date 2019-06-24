@@ -6,17 +6,15 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 04/22/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
-
-
 
 # Install free extensions
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 Add new features and capabilities to your organization in Azure DevOps by installing extensions. You can install [free, preview, or paid](./faq-extensions.md#difference) In this quickstart, you learn how to install a free extension.
 

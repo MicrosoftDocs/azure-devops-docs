@@ -34,18 +34,18 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 ::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-``` 
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> ``` 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
-```
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> ```
 
 ::: moniker-end
 
@@ -55,7 +55,8 @@ The following EntitySets are supported with the indicated API versions. For the 
 
 ## Work tracking EntitySets
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"]  
+> 
 > | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
 > |-----------|-------------|------|------|--------------|
 > |Areas | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |
@@ -79,7 +80,8 @@ The following EntitySets are supported with the indicated API versions. For the 
 
 The following EntitySets are only supported with the **v3.0-preview** API version.
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"]  
+> 
 > | EntitySet | Description | v3.0-preview |
 > |-----------|-------------|------|
 > |Branches | Basic information about branches used in tests or pipelines |  ✔️ |

@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can find out more about it at https://code.visualstudio.com. The Azure DevOps extension allows you to connect to Azure DevOps Services, monitor your builds and manage your pull requests and work items for your Azure DevOps Services Git and TFVC repositories.
 
 > [!div class="mx-imgBorder"]
-![The Azure DevOps Services VS Code extension in action](_img/vscode.png)
+> ![The Azure DevOps Services VS Code extension in action](_img/vscode.png)
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Once you have installed the extension, open either the root folder or a sub-fold
 The indicator looks like this:
 
 > [!div class="mx-imgBorder"]
-![Azure DevOps Services VS Code extension login indicator](_img/team-error.png)
+> ![Azure DevOps Services VS Code extension login indicator](_img/team-error.png)
 
 
 To log in to your account, run the `team signin` command. If your repository is an Azure DevOps Services repository, you will be prompted to enter your personal access token. When you do, it will be stored securely on your computer and used to connect to Azure DevOps Services. 
@@ -63,20 +63,20 @@ Once your credentials are verified, the status bar indicators will be active and
 ## Status bar indicators
 
 > [!div class="mx-imgBorder"]
-![Team Project name status indicator](_img/project-indicator.png)
- This status bar item is populated with the name of the team project to which the Git repository belongs. Clicking on the item will open your browser to the team website.
-
+> ![Team Project name status indicator](_img/project-indicator.png)
+>  This status bar item is populated with the name of the team project to which the Git repository belongs. Clicking on the item will open your browser to the team website.
+> 
 > [!div class="mx-imgBorder"]
-![Pull request status indicator](_img/pullrequest-indicator.png)
- This status bar item is a count of active pull requests that you either requested yourself or were added to explicitly as a reviewer. Clicking the item will display that list of pull requests in the quick pick list. Choosing one will take you to that pull request in your browser. This indicator will update its status every 5 minutes.
-
+> ![Pull request status indicator](_img/pullrequest-indicator.png)
+>  This status bar item is a count of active pull requests that you either requested yourself or were added to explicitly as a reviewer. Clicking the item will display that list of pull requests in the quick pick list. Choosing one will take you to that pull request in your browser. This indicator will update its status every 5 minutes.
+> 
 > [!div class="mx-imgBorder"]
-![Build status indicator](_img/buildstatus-indicator.png)
- This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build's summary page in your browser. This indicator will update its status every 5 minutes.
-
+> ![Build status indicator](_img/buildstatus-indicator.png)
+>  This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build's summary page in your browser. This indicator will update its status every 5 minutes.
+> 
 > [!div class="mx-imgBorder"]
-![Work item count status indicator](_img/pinnedquery-indicator.png)
- This status bar item shows the number of items returned by your pinned work item query. If you have not configured a pinned query it defaults to the work items assigned to you. Clicking the item will show you the work items the query returns. This indicator will update its status every 5 minutes.
+> ![Work item count status indicator](_img/pinnedquery-indicator.png)
+>  This status bar item shows the number of items returned by your pinned work item query. If you have not configured a pinned query it defaults to the work items assigned to you. Clicking the item will show you the work items the query returns. This indicator will update its status every 5 minutes.
 
 ## Commands
 In addition to the status bar integrations, the extension also provides several commands for interacting with Azure DevOps Services and Team Foundation Server. In the Command Palette (F1), type team and choose a command.

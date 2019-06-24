@@ -269,6 +269,8 @@
     href: licensing/concurrent-jobs.md
   - name: Permissions
     href: policies/permissions.md
+  - name: Pipeline reports
+    href: reports/pipelinereport.md
   - name: Pipelines (licensing)
     href: licensing/concurrent-pipelines-tfs.md
   - name: Release pipelines (classic)
@@ -646,4 +648,4 @@
   - name: REST API reference
     href: /rest/api/vsts/
   - name: Azure DevOps CLI
-    href: /cli/azure/ext/azure-devops/pipelines
+    href: /azure/devops/cli

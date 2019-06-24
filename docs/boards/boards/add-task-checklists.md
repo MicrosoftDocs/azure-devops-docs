@@ -38,7 +38,7 @@ In this article, you'll learn:
 > * How to expand or collapse the task checklist  
 > * How to reorder and reparent tasks or reassign them to a sprint
 > * Keyboard shortcuts for working with the Kanban board 
-  
+
 <img src="_img/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
 
 
@@ -50,34 +50,33 @@ In this article, you'll learn:
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-	::: moniker range=">= tfs-2017"  
-	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end
-	::: moniker range="tfs-2015"
-	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end
+    ::: moniker range=">= tfs-2017"  
+    <img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    ::: moniker-end
+    ::: moniker range="tfs-2015"
+    <img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    ::: moniker-end
 
 2. If you have a number of tasks to add, simply keep typing your task titles and click Enter.   
 
-	<img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
+    <img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3.	If you have details you want to add about a task, open the parent work item and then choose the ![ ](../_img/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../_img/icons/icon-links-tab-wi.png) links icon/tab. 
 
-	<img src="_img/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+   <img src="_img/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 
 4. Double-click the task, or select and press the Enter key, to open it.   
 
-	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
-	Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
+    Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
 
 
 ## Mark a task as done 
 
 When you complete a task, simply click the checkbox to change its status to Done or Closed. 
 
-<img src="_img/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" />  
- 
+<img src="_img/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /><br/>
 The State of the work item is updated from To Do to Done for Scrum projects, and from Active to Closed for Agile and CMMI projects.  
 
 ## Expand or collapse the task checklist  
@@ -115,7 +114,7 @@ To configure or change the layout of the board, see one of these topics.
 
 ### Q: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
 **A:** No. Task checklists only support the task work item type. 
- 
+
 
 ## Related articles  
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 

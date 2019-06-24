@@ -28,7 +28,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 0. Rename the repo from the Version Control tab.
 
- ![Rename a repository](_img/repo-rename/AdminVC.png)
+   ![Rename a repository](_img/repo-rename/AdminVC.png)
 
 ## Update the Git remotes on your dev machines
 
@@ -47,19 +47,19 @@ Copy the repository URL to your clipboard.
 
 1. Connect to the repo.
 
- ![Connect to the repository](_img/repo-rename/RepoConnect.png)
+   ![Connect to the repository](_img/repo-rename/RepoConnect.png)
  
 2. Open the project settings.
  
- ![Project settings](_img/repo-rename/ProjectSettings.png)
+   ![Project settings](_img/repo-rename/ProjectSettings.png)
 
 3. Open the repo settings.
 
- ![Repository settings](_img/repo-rename/RepoSettings.png)
+   ![Repository settings](_img/repo-rename/RepoSettings.png)
 
 4. Edit the fetch and push remote references and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
- ![Edit remote](_img/repo-rename/EditRepoSettings.png)
+   ![Edit remote](_img/repo-rename/EditRepoSettings.png)
 
 ### Update your remote in older versions of Visual Studio from the command prompt
 
@@ -75,11 +75,11 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 1. Refresh Team Explorer.
 
- ![Refresh Team Explorer](_img/repo-rename/RefreshTeamExplorer.png)
+   ![Refresh Team Explorer](_img/repo-rename/RefreshTeamExplorer.png)
 
 2. Team Explorer now shows the updated repo name. 
 
- ![Team Explorer Updated](_img/repo-rename/Result.png)
+   ![Team Explorer Updated](_img/repo-rename/Result.png)
 
 ## Q&A
 

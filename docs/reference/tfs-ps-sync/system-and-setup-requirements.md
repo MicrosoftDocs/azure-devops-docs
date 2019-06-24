@@ -45,7 +45,7 @@ You can synchronize data between Visual Studio Team Foundation Server (TFS) and 
 
 <a id="compat" />
 ## TFS-Project Server version compatiblity
-**TFS 2017 discontinues support for Project Server**
+<strong>TFS 2017 discontinues support for Project Server</strong>
 
 > [!IMPORTANT]  
 > TFS 2017 and later versions no longer support native integration with Office Project Server. For more information, see [Synchronize TFS with Project Server, third-party support](sync-ps-tfs.md).

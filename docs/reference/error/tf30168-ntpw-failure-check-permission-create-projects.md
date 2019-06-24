@@ -18,13 +18,13 @@ ms.date: 01/20/2017
 
 This error occurs when the New Team Project Wizard starts and then checks to see whether your user account has permission set to create a project. An active connection cannot be made because of one of the following conditions:  
   
--   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
+- A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
--   A critical file from the server {name} is missing.  
+- A critical file from the server {name} is missing.  
   
--   The server that hosts Team Foundation Server is offline.  
+- The server that hosts Team Foundation Server is offline.  
   
- The following procedures will help you correct the problem.  
+  The following procedures will help you correct the problem.  
   
 ### To correct this error  
   

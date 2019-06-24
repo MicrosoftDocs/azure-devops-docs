@@ -1,4 +1,4 @@
-- name: Manage Organizations
+- name: Manage organizations
   href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: About managing organizations
   href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
@@ -6,10 +6,6 @@
   href: access-with-azure-ad.md
 - name: Create your organization or project collection
   href: create-organization.md
-- name: Tutorials
-  items:
-  - name: Connect to Azure AD
-    href: connect-organization-to-aad.md
 - name: Concepts
   items:
   - name: Plan your org structure
@@ -52,20 +48,24 @@
       href: add-external-user.md
     - name: Access with Azure AD
       items:
+      - name: Connect organization to Azure AD
+        href: connect-organization-to-azure-ad.md
+      - name: Change Azure AD connection
+        href: change-azure-ad-connection.md
+      - name: Disconnect from Azure AD
+        href: disconnect-organization-from-azure-ad.md
       - name: Manage groups
         href: manage-azure-active-directory-groups-vsts.md
       - name: Add users to Azure AD
         href: add-users-to-azure-ad.md
-      - name: Disconnect from Azure AD
-        href: disconnect-organization-from-aad.md
       - name: Delete users connected to Azure AD
-        href: delete-users-from-services-aad.md 
+        href: delete-users-from-services-aad.md
+      - name: FAQ 
+        href: faq-azure-access.md#faq-connect    
   - name: Manage group-based licensing 
     items:
     - name: Assign access levels and extensions
       href: assign-access-levels-and-extensions-by-group-membership.md
-    - name: Migrate to group-based resource management
-      href: migrate-to-group-based-resource-management-in-VSTS.md
     - name: Remove direct assignments
       href: remove-direct-assignments.md
 - name: Troubleshooting
@@ -90,6 +90,8 @@
     href: faq-set-up-vs.md
   - name: Manage group-based licensing
     href: faq-manage-group-based-licensing.md
+  - name: Access with Azure AD
+    href: faq-azure-access.md
 
 
 

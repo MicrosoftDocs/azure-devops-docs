@@ -18,13 +18,13 @@ This is a generic error message displayed when the instance of Team Foundation o
   
  The likely causes of this problem are:  
   
--   The version of Team Foundation running on the local computer does not match the version running on the Team Foundation Server server {name}.  
+- The version of Team Foundation running on the local computer does not match the version running on the Team Foundation Server server {name}.  
   
--   The server returned HTML content instead of XML content.  
+- The server returned HTML content instead of XML content.  
   
--   The required Web service on the server could not be found.  
+- The required Web service on the server could not be found.  
   
- The procedure below will help you correct the cause.  
+  The procedure below will help you correct the cause.  
   
 ### To correct this error  
   

@@ -2,7 +2,7 @@
 title: Change the Azure subscription used for organization billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Unlink the Azure subscription that your organization uses for billing via the Visual Studio Marketplace
+description: Unlink the Azure subscription that your organization uses for billing
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -11,17 +11,16 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 04/12/2019
+ms.date: 05/28/2019
 ---
 
 # Change or remove the Azure subscription that your organization uses for billing
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-You can change the Azure subscription that your organization uses for billing or remove your billing subscription at any time.  
+In this article, learn how to change the Azure subscription that your organization uses for billing or remove your billing subscription at any time.   
 
-
-
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
@@ -54,7 +53,7 @@ You can change the Azure subscription that your organization uses for billing or
 
 
 > [!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you've paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for [cloud-based load testing](../../test/load-test/overview.md). Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
+> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD you've paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for [cloud-based load testing](../../test/load-test/overview.md). Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
 
 1. Sign in to your organization, choose ![gear icon](../../_img/icons/gear-icon.png) <strong>Organization settings</strong>, choose <strong>Billing</strong>, and then choose <strong>Change billing</strong> following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
 
@@ -65,9 +64,7 @@ You can change the Azure subscription that your organization uses for billing or
 
 ## Related articles
 
-- [Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-- [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
-- [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
-- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-- Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+- [Buy Basic access for users](buy-basic-access-add-users.md)
+- [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+- [Buy CI/CD](buy-more-build-vs.md)
+- [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)

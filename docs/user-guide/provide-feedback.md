@@ -110,7 +110,8 @@ A page similar to the following example opens showing the version number.
 
 <img src="../_img/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"]  
+> 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|
 > |**Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
@@ -139,8 +140,8 @@ A page similar to the following example opens showing the version number.
 > |   | RC  | 14.0.22824.0  | 
 > |   | CTP  | 14.0.22604.0  | 
 > | **Azure DevOps Server 2013**  | Update 5  | 12.0.40629.0 | 
-> |   | Update 4  | 12.0.31101.0 | 	
-> |   | Update 4 RC  | 12.0.31010.0 | 	
+> |   | Update 4  | 12.0.31101.0 |  
+> |   | Update 4 RC  | 12.0.31010.0 |   
 > |   | Update 3  | 12.0.30723.0 | 
 > |   | Update 3 RC | 12.0.30626.0 | 
 > |   | Update 2  | 12.0.30324.0 | 

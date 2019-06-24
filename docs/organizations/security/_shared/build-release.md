@@ -18,12 +18,12 @@ ms.topic: include
 <tr>
 <td align="left">View build and release pipelines 
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -31,9 +31,9 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 
@@ -42,21 +42,21 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Approve releases
 </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -64,10 +64,10 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -77,9 +77,9 @@ ms.topic: include
 </td>
 <td>  </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 
@@ -89,8 +89,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 
@@ -99,9 +99,9 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 
@@ -112,8 +112,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 
@@ -124,8 +124,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -133,10 +133,10 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -145,20 +145,20 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -167,9 +167,9 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>

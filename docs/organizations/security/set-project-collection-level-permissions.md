@@ -55,10 +55,10 @@ For a description of each group and each permission, see [Permissions and groups
 
 ::: moniker range="azure-devops"  
 * You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md). 
-::: moniker-end  
-::: moniker range="<= azure-devops-2019"  
+  ::: moniker-end  
+  ::: moniker range="<= azure-devops-2019"  
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
-::: moniker-end  
+  ::: moniker-end  
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
 
@@ -80,12 +80,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-0. Choose **Project Administrators** group, **Members**, and then **Add**.  
+1. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-0. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+1. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -93,24 +93,24 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
-0. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
+2. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-0. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+3. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -118,14 +118,14 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+4. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 
 ::: moniker-end
 
 
 ## Change the permission level for a project-level group 
 
-0. From the **Security** page, choose the group whose permissions you want to change. 
+1. From the **Security** page, choose the group whose permissions you want to change. 
 
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
@@ -140,69 +140,70 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Administrators group. This is by design.  
 
-0. Choose **Save changes**.   
+1. Choose **Save changes**.   
 
 <a id="collection-level" />
+
 ## Add a group and change its permissions at the organization or collection-level group 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert-2.png)  
 
-0.	Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
+1. Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
 
-0. Enter a name for the group, and optionally a description. 
+2. Enter a name for the group, and optionally a description. 
  
 	For example, here we define a Work Tracking Administrators group.  
 	![Security group dialog, Add a security group at the organization or collection level](_img/project-level-permissions-add-group.png)  
 	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
-0. Choose the group name you just created and change the permission levels. 
+3. Choose the group name you just created and change the permission levels. 
 
 	Here we grant this group permissions to [manage customizations for the Inheritance process model](../settings/work/manage-process.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Custom group, permissions](_img/collection-level-permissions-work-tracking-group.png)   
 
-0. Choose **Save changes**.   
+4. Choose **Save changes**.   
 
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Collection Administrators group. This is by design. 
-::: moniker-end    
+   ::: moniker-end    
 
 
 ::: moniker range="<= tfs-2018"
 
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
+1. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
 
-0.	Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
+1. Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
 
-0. Enter a name for the group, and optionally a description. 
+2. Enter a name for the group, and optionally a description. 
  
 	For example, here we define a Work Tracking Administrators group.  
 	![Security group dialog, Add a security group at the organization or collection level](_img/project-level-permissions-add-group.png)  
 	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
-0. Choose the group name you just created and change the permission levels. 
+3. Choose the group name you just created and change the permission levels. 
 
 	Here we grant this group permissions to [manage customizations for the Inheritance process model](../settings/work/manage-process.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Custom group, permissions](_img/collection-level-permissions-work-tracking-group.png)   
 
-0. Choose **Save changes**.   
+4. Choose **Save changes**.   
 
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Collection Administrators group. This is by design.  
@@ -210,6 +211,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"  
+
 ## On-premises deployments
 
 For on-premises deployments, see these additional topics: 

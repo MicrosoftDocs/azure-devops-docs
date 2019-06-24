@@ -7,34 +7,34 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 04/24/2019
+ms.date: 06/18/2019
 monikerRange: 'azure-devops'
 ---
  
 # Azure Pipelines with Microsoft Teams
 
-If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the Azure Pipelines app built for Microsoft Teams
+If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018)
  to easily monitor the events for your pipelines. Set up and manage subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](../_img/integrations-teams/notifications-teams.png)
+> ![Notifications image](_img/integrations-teams/notifications-teams.png)
 
 ## Add Azure Pipelines app to your team
 
 Visit the App store in Microsoft Teams and search for the Azure Pipelines app. Upon installing, a welcome message from the app displays as shown in the following example. Use the `@azure pipelines` handle to start interacting with the app.
 
 > [!div class="mx-imgBorder"]
-> ![Welcome message image](../_img/integrations-teams/welcome-message-teams.png)
+> ![Welcome message image](_img/integrations-teams/welcome-message-teams.png)
 
 ## Connect the Azure Pipelines app to your pipelines
 
 Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands.
 
 > [!div class="mx-imgBorder"]
-> ![Sign in prompt image ](../_img/integrations-teams/sign-in-teams.png)
+> ![Sign in prompt image ](_img/integrations-teams/sign-in-teams.png)
 
 > [!div class="mx-imgBorder"]
-> ![Sign in prompt image2 ](../_img/integrations-teams/sign-in2-teams.png)
+> ![Sign in prompt image2 ](_img/integrations-teams/sign-in2-teams.png)
 
 
 To start monitoring a pipeline, use the following slash command inside a channel:
@@ -61,7 +61,7 @@ For Build pipelines, the channel is subscribed to the *Build completed* notifica
 completed*, and *Release deployment approval pending* notifications.
 
 > [!div class="mx-imgBorder"]
-> ![Subscriptions added image](../_img/integrations-teams/subscriptions-added-confirmation-teams.png)
+> ![Subscriptions added image](_img/integrations-teams/subscriptions-added-confirmation-teams.png)
 
 ## Add or remove subscriptions
 
@@ -72,20 +72,43 @@ To manage the subscriptions for a channel, use the following command:
 This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
 
 > [!div class="mx-imgBorder"]
-> ![Subscriptions list image](../_img/integrations-teams/subscriptions-list-teams.png)
+> ![Subscriptions list image](_img/integrations-teams/subscriptions-list-teams.png)
+
+
+## Using filters effectively to customize subscriptions
+
+When a user subscribes to any pipeline, a few subscriptions are created by default without any filters being applied. Often, users have the need to customize these subscriptions. 
+For example, users may want to get notified only when builds fail or when deployments are pushed to a production environment. The Azure Pipelines app supports filters to customize what you see in your channel.
+
+1. Run the `@Azure Pipelines subscriptions` command
+2. Select **View all subscriptions**. In the list of subscriptions, if there is a subscription that is unwanted or should be modified (Example: creating noise in the channel), select **Remove**
+3. Scroll down and select the **Add subscription** button
+4. Select the required pipeline and the event
+5. Select the appropriate filters and save 
+
+### Example: Get notifications only for failed builds
+
+> [!div class="mx-imgBorder"]
+![Build Filters](_img/integrations-teams/teams-build-filters.png)
+
+### Example: Get notifications only if the deployments are pushed to prod environment
+
+> [!div class="mx-imgBorder"]
+![Release Filters](_img/integrations-teams/teams-release-filters.png)
 
 ## Approve release deployments from your channel
+
 You can approve release deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notification (which 
 happens by default when subscribing to any release pipeline).
 
 > [!div class="mx-imgBorder"]
-> ![Ready for approval](../_img/integrations-teams/approve-teams.png)
+> ![Ready for approval](_img/integrations-teams/approve-teams.png)
 
 Whenever a deployment is pending for approval, a notification card with options to approve or reject the deployment is posted in the channel. Users can then review the details of
  the deployment in the notification and take action. In the following example, the deployment was approved and the approval status is displayed on the card.
 
 > [!div class="mx-imgBorder"]
-> ![Approved](../_img/integrations-teams/approved-teams.png)
+> ![Approved](_img/integrations-teams/approved-teams.png)
 
 The app supports all of the approval scenarios present in the Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence), and teams as approvers. You can approve deployments as an individual or on behalf of a team.
 
@@ -107,3 +130,21 @@ Here are all the commands supported by the Azure Pipelines app:
 > * The user must be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside chat/direct messages
 > * Deployment approvals which have applied the **Revalidate identity of approver before completing the approval** policy are not supported
+> * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
+
+## Troubleshooting
+
+If you are experiencing the following errors when using the
+[Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018), follow the procedures in this section. 
+
+[!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
+
+In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
+
+Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
+
+> [!div class="mx-imgBorder"]
+> ![Consent to the requested app permissions](_img/troubleshooting/consent-page-teams.png)
+
+If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsTeamsApps@microsoft.com`.
+

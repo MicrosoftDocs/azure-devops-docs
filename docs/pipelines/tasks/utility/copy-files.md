@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/07/2018
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -50,7 +50,7 @@ None
 </tr>
 <tr>
 <td>Contents</td>
-<td><p>Specify match pattern filters (one on each line) that you want to apply to the list of files to be copied. For example:
+<td><p>Specify <a href="http://man7.org/linux/man-pages/man3/fnmatch.3.html">fnmatch pattern filters</a> (one per line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
 <li>```*``` copies all files in the specified source folder.</li>

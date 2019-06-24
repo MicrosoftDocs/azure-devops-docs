@@ -5,24 +5,20 @@ ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 02/05/2019
+ms.author: chcomley
+author: chcomley
+ms.date: 05/28/2019
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Assign paid extension access to users
 
-**Azure DevOps Services** | **TFS**
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 After you install a paid extension, you must assign that extension to users who need access, so they can start using that extension's capabilities. 
-To assign extensions, you'll need Azure DevOps Services or TFS [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
-
-> [!TIP]
-> You only have to assign extensions to users who need access. If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
-> they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your organization. 
+To assign extensions, you need Azure DevOps Services or TFS [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
 ## Azure DevOps Services
 

@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Apr 25
+# Team Foundation Service updates - Apr 25
 
 You may have noticed April 15th came and went with no mention of any Team Foundation Service update. If everything had been “normal” April 15th would have been the date for our Sprint 46 deployment. Unfortunately, nothing has been normal.
 

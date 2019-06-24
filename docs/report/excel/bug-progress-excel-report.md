@@ -43,13 +43,13 @@ You can use the Bug Progress report in Office Excel to track the team's progress
   
  You can review the chart to determine the progress over time or within an iteration. Specifically, you can find answers to the following questions:  
   
--   How quickly is the team resolving and closing Bugs?  
+- How quickly is the team resolving and closing Bugs?  
   
--   Is the team fixing Bugs quickly enough to finish on time?  
+- Is the team fixing Bugs quickly enough to finish on time?  
   
--   Did the team find any Bugs in the past several weeks?  
+- Did the team find any Bugs in the past several weeks?  
   
- For information about healthy and unhealthy versions of the report, see [Bug Status](../sql-reports/bug-status-report.md).  
+  For information about healthy and unhealthy versions of the report, see [Bug Status](../sql-reports/bug-status-report.md).  
   
 ##  <a name="Updating"></a> Customizing the Report  
  You can customize the Bug Progress report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  

@@ -31,10 +31,10 @@ As the extension developer, you can make all or part of your extension available
 Use this checklist to help decide if you should make your extension available to non-member users:
 
 > [!div class="checklist"]
-* Data presented by your extension is relevant to non-member users
-* Your extension contributes capabilities at the project level
-* Your extension contributes to areas of the product that are accessible by non-member users
-* Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
+> * Data presented by your extension is relevant to non-member users
+> * Your extension contributes capabilities at the project level
+> * Your extension contributes to areas of the product that are accessible by non-member users
+> * Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
 
 ## Contribution visibility
 

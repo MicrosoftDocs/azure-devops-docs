@@ -43,10 +43,10 @@ To use the **resolve** command, you must be either the workspace owner or have t
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You can specify more than one *Itemspec* argument.
+You can specify more than one <em>Itemspec</em> argument.
 </div>
 </div>
 </div></td>
@@ -65,7 +65,7 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName</em>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -101,10 +101,10 @@ You can specify more than one *Itemspec* argument.
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You cannot specify both an **/overridetype** and a **/converttotype**.
+You cannot specify both an <strong>/overridetype</strong> and a <strong>/converttotype</strong>.
 </div>
 </div>
 </div></td>
@@ -115,10 +115,10 @@ You cannot specify both an **/overridetype** and a **/converttotype**.
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You cannot specify both an **/overridetype** and a **/converttotype**.
+You cannot specify both an <strong>/overridetype</strong> and a <strong>/converttotype</strong>.
 </div>
 </div>
 </div></td>
@@ -142,7 +142,7 @@ You cannot specify both an **/overridetype** and a **/converttotype**.
 </tbody>
 </table>
 ## Remarks
-You can use the **Resolve** command to select a resolution for pending changes that conflict with the server version.
+You can use the <strong>Resolve</strong> command to select a resolution for pending changes that conflict with the server version.
 
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 

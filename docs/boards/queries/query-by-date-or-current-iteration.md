@@ -18,7 +18,7 @@ ms.date: 04/08/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The **@Today** and **@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**. 
+The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
 
 For example, you can find work items that were modified in the last 3 days with the following query.
 
@@ -45,13 +45,13 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 <tbody valign="top">
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
-	<p><strong>Macros</strong>:  <strong>@StartOfDay</strong>, <strong>@StartOfWeek</strong>, <strong>@StartOfMonth</strong>, <strong>@StartOfYear</strong>, and <strong>@Today</strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
+    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td>= , <> , Under, Not Under
-	<p><strong>Macros</strong>: <strong>@CurrentIteration</strong><sup>1</sup> and <strong>@CurrentIteration +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+    <td>= , &lt;&gt; , Under, Not Under
+    <p><strong>Macros</strong>: <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>1</sup> and <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,13 +72,13 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 <tbody valign="top">
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
-	<p><strong>Macros</strong>:  <strong>@Today</strong>, <strong>@Today +/- n</strong> are valid with any <strong>DateTime</strong> field</p></td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
+    <p><strong>Macros</strong>:  <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref> +/- n</strong> are valid with any <strong>DateTime</strong> field</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td>= , <> , Under, Not Under
-	<p><strong>Macros</strong>: <strong>@CurrentIteration</strong><sup>1</sup> and <strong>@CurrentIteration +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+    <td>= , &lt;&gt; , Under, Not Under
+    <p><strong>Macros</strong>: <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>1</sup> and <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 </tbody>
 </table>
@@ -86,8 +86,8 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 ::: moniker-end
 
 
-####Notes:
-1. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+#### Notes:
+1. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
@@ -112,7 +112,7 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
     <p>Items created in the last 30 days</p>
   </td>
   <td>
-    ![Clause for finding items created in the last 30 days](_img/q-by-date-last-30-days.png) 
+    <img src="_img/q-by-date-last-30-days.png" alt="Clause for finding items created in the last 30 days"/> 
   </td>
 </tr>
 <tr>
@@ -120,35 +120,35 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
     <p>Items modified on a specific date</p>
   </td>
   <td>
-     ![Clause for finding items changed on a specific date](_img/q-by-specific-date.png)
+     <img src="_img/q-by-specific-date.png" alt="Clause for finding items changed on a specific date"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items resolved today</p>
   </td>
-  <td>![Clause for finding items resolved today](_img/q-by-resolved-today.png)
+  <td><img src="_img/q-by-resolved-today.png" alt="Clause for finding items resolved today"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items closed within a specified time period</p>
   </td>
-  <td>![Clause for finding items closed within a specified time period](_img/q-by-closed-time-period.png)
+  <td><img src="_img/q-by-closed-time-period.png" alt="Clause for finding items closed within a specified time period"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items whose status was updated within the last week</p>
   </td>
-  <td>![Clause for finding items whose status was updated within the last week](_img/q-by-state-changed-within-last-week.png)
+  <td><img src="_img/q-by-state-changed-within-last-week.png" alt="Clause for finding items whose status was updated within the last week"/>
   </td>
 </tr>
 <tr>
   <td>
-    <p>Items closed during the current sprint (the `@CurrentIteration` macro references the sprint defined for the current team context) </p>
+    <p>Items closed during the current sprint (the <code><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></code> macro references the sprint defined for the current team context) </p>
   </td>
-  <td>![Clause for finding items closed during the current sprint](_img/q-by-done-current-iteration.png)
+  <td><img src="_img/q-by-done-current-iteration.png" alt="Clause for finding items closed during the current sprint"/>
   </td>
 </tr>
 </tbody>
@@ -176,7 +176,7 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
     <p>Bugs closed in the last 2 weeks</p>
   </td>
   <td>
-    ![Clauses for finding bugs closed in the last two weeks](_img/example-queries/close-date-last-2-weeks.png) 
+    <img src="_img/example-queries/close-date-last-2-weeks.png" alt="Clauses for finding bugs closed in the last two weeks"/> 
   </td>
 </tr>
 <tr>
@@ -184,14 +184,14 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
     <p>Items modified in the last 10 days</p>
   </td>
   <td>
-     ![Clause for finding items changed in the last 10 days](_img/example-queries/changed-date-last-10-days.png)
+     <img src="_img/example-queries/changed-date-last-10-days.png" alt="Clause for finding items changed in the last 10 days"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Features scheduled to be completed in the next 3 months</p>
   </td>
-  <td>![Clauses for features scheduled to be completed in the next 3 months](_img/example-queries/start-month-target-date-3.png)
+  <td><img src="_img/example-queries/start-month-target-date-3.png" alt="Clauses for features scheduled to be completed in the next 3 months"/>
   </td>
 </tr>
 </tbody>
@@ -206,32 +206,32 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 ## Team's current iteration queries  
  
-If your team follows Scrum processes, you [schedule work to be completed in sprints](../sprints/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
+If your team follows Scrum processes, you [schedule work to be completed in sprints](../sprints/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the <strong>@CurrentIteration</strong> macro.  
 
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 > [!NOTE]
-> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the <strong>@CurrentIteration</strong> macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
 ::: moniker range=">= azure-devops-2019"
 
-Azure Boards adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
+Azure Boards adds a team parameter when you select the <strong>@CurrentIteration</strong> or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
 
-To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
+To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 
 > [!div class="mx-imgBorder"]
-![Choose team parameter](_img/query-date-iteration/choose-team-parameter.png)
+> ![Choose team parameter](_img/query-date-iteration/choose-team-parameter.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
+Prior to creating or updating a query to use the <strong>@CurrentIteration</strong> macro, make sure you [select your team](#team_view). The <strong>@CurrentIteration</strong> macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro](_img/query-date-iteration/at-current-no-team-specified.png)  
@@ -248,14 +248,14 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 
 > [!NOTE]
 > For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
-> criteria and date ranges encompass the current date for the **@CurrentIteration**. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
 Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
-![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
+> ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
 
 To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
@@ -348,7 +348,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md)">define iteration paths for a project and select iteration paths for a team</a>. 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>
@@ -411,7 +411,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
 	   <SERVERDEFAULT from="clock"  />  
 	</FIELD >  
-	```
+    ```
 
 2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
@@ -419,7 +419,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <a id="current_sprint_restrict"> </a> 
 
 ## Client restrictions on the use of the @CurrentIteration macros 
-You can use the **@CurrentIteration** in a query from the following clients:  
+You can use the <strong>@CurrentIteration</strong> in a query from the following clients:  
 
 - Web portal that connects to Azure Boards 
 - Web portal that connects to an on-premises TFS 2015 or later version 
@@ -429,7 +429,7 @@ You can use the **@CurrentIteration** in a query from the following clients:
 You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
+An error occurs if you open a query that contains the <strong>@CurrentIteration</strong> macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
 
 
 ## Related articles

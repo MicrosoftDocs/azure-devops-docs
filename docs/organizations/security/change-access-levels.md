@@ -11,7 +11,7 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/15/2019
+ms.date: 06/02/2019
 ---
 
 # Change access levels
@@ -33,7 +33,7 @@ For a simplified overview of the permissions that are assigned to the most commo
 > [!NOTE]  
 > Even if you set a user or group's access level, you must [add them to a project](add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal.
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features - Basic + Test Plans, Advanced and Visual Studio Enterprise subscriber access levels include all Basic features. In the images provided below, the circled features indicate the features made available from the previous access level.
 
 <a id="manage-access" >  </a>
 
@@ -49,7 +49,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ::: moniker range="<= azure-devops-2019"
 
-## Open Access levels
+## Open access levels
 
 You manage access levels for the collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, add them specifically to a non-default access level.
 ::: moniker-end
@@ -63,17 +63,17 @@ You manage access levels for the collections defined on the application tier. Th
 
 	If you don't see **Access levels**, you aren't an administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
 
-0. Select the access level you want to manage.
+1. Select the access level you want to manage.
 
 	For example, here we choose **Basic**, and then **Add** to add a group to Basic access.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Basic access level, add group](_img/change-access-levels/basic-access-2019.png)
 
-0. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
+1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
-0. Choose **Save changes**. 
+1. Choose **Save changes**. 
 
 ::: moniker-end
 
@@ -81,31 +81,31 @@ You manage access levels for the collections defined on the application tier. Th
 
 From a user context, open **Server Settings** by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
 
-0. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
+1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
+1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
 
 	<img src="_img/access-levels-2017-stakeholder-access.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
 
-1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
+2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
-0. Choose **Save changes**.
+3. Choose **Save changes**.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-0. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
+1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)
 
-0. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
+1. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 

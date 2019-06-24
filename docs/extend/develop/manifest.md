@@ -94,7 +94,7 @@ If you intend to sell your extension on the Marketplace in the future, you shoul
 
 #### Mark an extension as paid
 
-If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOL` tag (starts with two underscores) :
+If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOLENFORCED` tag (starts with two underscores) :
 
 ```json
 {
@@ -102,12 +102,12 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
         "Paid"        
     ],
      "tags": [        
-        "__BYOL"
+        "__BYOLENFORCED"
     ]
 }            
 ```
 
-Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -131,7 +131,6 @@ You will also need to add a new section in your extension manifest to override p
         { "id": "my-hub", "behavior": " AlwaysInclude" }
       ]
     }
-
 ```
 
 If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 
@@ -145,6 +144,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we will provide you with suitable steps.
 
 ### Example of additional properties
 
@@ -459,7 +459,7 @@ Resolves to the following installation targets:
 ## Demands
 
 Demands let you specify capabilities and other features required by your extension. These demands can then be used to limit where your extension can be published or installed.
-   
+
 In the future, demands will be used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This will help customers understand whether your extension will work with their version of Team Foundation Server (for example).
 
 Demands are specified in the extension manifest. For example:
@@ -497,17 +497,17 @@ The `files` section is where you reference any files you wish to include in your
 
 ```json
 {
-	"files": [
-		{
-			"path": "hello-world.html", "addressable": true
-		},
-		{
-			"path": "scripts", "addressable": true
-		},
-		{
-			"path": "images/logo.png", "addressable": true, "packagePath": "/"
-		}
-	]
+    "files": [
+        {
+            "path": "hello-world.html", "addressable": true
+        },
+        {
+            "path": "scripts", "addressable": true
+        },
+        {
+            "path": "images/logo.png", "addressable": true, "packagePath": "/"
+        }
+    ]
 }
 ```
 

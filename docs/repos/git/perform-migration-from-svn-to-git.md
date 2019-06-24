@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: jillfra
-ms.date: 04/25/2018
+ms.date: 06/04/2019
 ms.author: hkamel
 author: hkamel
 monikerRange: '>= tfs-2013'
@@ -115,9 +115,8 @@ git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
->
-> Read more about **.gitignore**: [Ignore file changes with Git]
-(/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+> 
+> Read more about **.gitignore**: [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -125,24 +124,28 @@ In this step, you will create a bare repository and make its default branch matc
 
 1. Create a bare Git repository
 
-   ```
-   git init --bare c:\new-bare.git
-   cd c:\new-bare.git
-   git symbolic-ref HEAD refs/heads/trunk
-   ```
+    ```
+    git init --bare c:\new-bare.git
+    cd c:\new-bare.git
+    git symbolic-ref HEAD refs/heads/trunk
+    ```
+
 2. Push the local Git repository to the new bare Git repository
-   ```
-   cd c:\mytempdir
-   git remote add bare c:\new-bare.git
-   git config remote.bare.push 'refs/remotes/*:refs/heads/*'
-   git push bare
-   ```
+   
+    ```
+    cd c:\mytempdir 
+    git remote add bare c:\new-bare.git 
+    git config remote.bare.push 'refs/remotes/*:refs/heads/*' 
+    git push bare 
+    ```
+
 3. Rename "trunk" branch to "master"
 Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
-   ```
-   cd c:\new-bare.git
-   git branch -m trunk master
-   ```
+   
+    ```
+    cd c:\new-bare.git
+    git branch -m trunk master
+    ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
 

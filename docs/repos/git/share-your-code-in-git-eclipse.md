@@ -35,7 +35,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 
 0. [Install the Team Explorer Everywhere plug-in](/azure/devops/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse).
 
-0. Add the Team Explorer Everywhere view in Eclipse. Go to **Window, Show View** and select **Other...** Search for **Team Explorer**, select the **Team Explorer** view, and select **OK**.   
+1. Add the Team Explorer Everywhere view in Eclipse. Go to **Window, Show View** and select **Other...** Search for **Team Explorer**, select the **Team Explorer** view, and select **OK**.   
 
    ![Add the Team Explorer view to Eclipse](_img/share-your-code-in-git-eclipse/add_team_explorer_to_eclipse.png)
 
@@ -46,14 +46,14 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
    ![Select Connect to Team Foundation Server to connect your TFS or Azure DevOps organization](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
    
 
-0. If you know your Azure DevOps Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Azure DevOps organization** to add your TFS server or account to the drop-down list. 
-If you don't know your account information for Azure DevOps Services, select **Browse Visual Studio Services** and select **Next**.
+1. If you know your Azure DevOps Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Azure DevOps organization** to add your TFS server or account to the drop-down list. 
+   If you don't know your account information for Azure DevOps Services, select **Browse Visual Studio Services** and select **Next**.
 
    ![Add Existing Project Dialog](_img/share-your-code-in-git-eclipse/tee_existing_team_project.png)
 
    Either choice will prompt for your credentials before continuing further. 
 
-0. Select the project where you will share your code from the **Project Selection** dialog and select **Finish**.
+2. Select the project where you will share your code from the **Project Selection** dialog and select **Finish**.
 
 ## Create a local Git repo for your Eclipse project
 
@@ -64,13 +64,13 @@ Before you can push your project to Azure Repos, you need to add it to a local G
 
 0. With your project open in Eclipse, right-click the project name in Project Explorer and select **Team, Share Project...** Select **Git** and select **Next**. 
 
-0. Select **Create...** from the **Configure Git Repository** window and choose a folder for your local Git repo. Select **Finish**.
+1. Select **Create...** from the **Configure Git Repository** window and choose a folder for your local Git repo. Select **Finish**.
 
     ![Create a local Git repo in Eclipse](_img/share-your-code-in-git-eclipse/eclipse_create_repo.png)
 
-0.  Right-click your project in Project Explorer and select **Team, Commit...**. Stage your changes by dragging your files to the **Staged Changes** field, enter a commit message, then select **Commit**.
+2. Right-click your project in Project Explorer and select **Team, Commit...**. Stage your changes by dragging your files to the **Staged Changes** field, enter a commit message, then select **Commit**.
 
-    ![Commit your code with Git in Eclipse](_img/share-your-code-in-git-eclipse/commit_files_in_eclipse.png)
+   ![Commit your code with Git in Eclipse](_img/share-your-code-in-git-eclipse/commit_files_in_eclipse.png)
 
 ## Push your project to your Azure DevOps Services/TFS repo
 
@@ -78,11 +78,11 @@ Before you can push your project to Azure Repos, you need to add it to a local G
 
     ![Copy the Git repo clone URL in Team Explorer Everywhere with a right-click](_img/share-your-code-in-git-eclipse/tee_copy_clone_url.png)
     
-0. In Package Explorer, right-click your project and Select **Team, Push Branch ...** . Paste the clone URL from the clipboard into the **URI** field and select **Next**. Make sure **Configure upstream for push and pull** is selected in the next window and select **Next**.
+1. In Package Explorer, right-click your project and Select **Team, Push Branch ...** . Paste the clone URL from the clipboard into the **URI** field and select **Next**. Make sure **Configure upstream for push and pull** is selected in the next window and select **Next**.
 
     ![Push your code to Azure Repos using the Clone URL from the web](_img/share-your-code-in-git-eclipse/push_commits_to_team_services.png)
     
-0. Review the changes and select **Finish** in the **Push Branch** window.
+2. Review the changes and select **Finish** in the **Push Branch** window.
 
 Your project code is now in your Git repo.
 

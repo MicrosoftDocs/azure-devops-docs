@@ -40,7 +40,7 @@ To use the [Analytics OData endpoint](/azure/devops/report/extend-analytics/inde
 The default views in the **VSTS Power BI Desktop Connector** help you get started on working with VSTS data right away. We’ve added additional views with common historical definitions to allow you to more easily perform trending and bug analysis. Refer to our guidance on [connecting to VSTS with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect) for more information.
 
 > [!div class="mx-imgBorder"]
-![New default views](_img/129_19.png)
+> ![New default views](_img/129_19.png)
 
 In the upcoming February release of [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/), we will introduce the ability to create your own views, which will make working with the specific data you need in Power BI even easier.
 
@@ -51,7 +51,7 @@ In the upcoming February release of [**Power BI Desktop**](https://powerbi.micro
 Pull request diff views are great at highlighting the changes introduced in the source branch. However, changes to the target branch may cause the diff view to look different than expected. A new command is now available to view the diff of the “preview” merge commit for the pull request - **View merge commit**. This merge commit is created to check for merge conflicts and to use with a pull request build, and it reflects what the merge commit will look like when the pull request is eventually completed. When the target branch has changes not reflected in the diff, the merge commit diff can be useful for seeing the latest changes in both the source and target branches.
 
 > [!div class="mx-imgBorder"]
-![View pull request merge commit](_img/129_17.png)
+> ![View pull request merge commit](_img/129_17.png)
 
 Another command that’s useful in conjunction with the **View merge commit** command is **Restart merge** (available on the same command menu). If the target branch has changed since the pull request was initially created, running this command will create a new preview merge commit, updating the merge commit diff view.
 
@@ -60,7 +60,7 @@ Another command that’s useful in conjunction with the **View merge commit** co
 Sometimes it’s important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it’s a hotfix for an upcoming release - so you append some extra text in the title, perhaps a “[WIP]” prefix or “DO NOT MERGE”. Labels now provide a way to tag pull requests with extra information that can be used to communicate important details and help organize pull requests.
 
 > [!div class="mx-imgBorder"]
-![PR request labels](_img/129_16.png)
+> ![PR request labels](_img/129_16.png)
 
 In a future release, we’ll make labels even more useful by making it easier to filter pull requests using labels.
 
@@ -69,14 +69,14 @@ In a future release, we’ll make labels even more useful by making it easier to
 Auto-complete is a useful feature for teams using branch policies, but when using optional policies, it can be unclear exactly what is blocking a pull request from being completed. Now, when setting auto-complete for a pull request, the exact list of policy criteria that are holding up completion are clearly listed in the callout box. As each requirement is met, items are removed from the list until there are no remaining requirements and the pull request is merged.
 
 > [!div class="mx-imgBorder"]
-![PR auto-complete lists](_img/129_15.png)
+> ![PR auto-complete lists](_img/129_15.png)
 
 ### Discuss math in pull requests
 
 Need to include an equation or mathematical expression in your pull request comments? You can now include TeX functions in your comments, using both inline and block commenting. See the list of [supported functions](https://khan.github.io/KaTeX/function-support.html) for more information.
 
 > [!div class="mx-imgBorder"]
-![PR markdown comment with math](_img/129_14.png)
+> ![PR markdown comment with math](_img/129_14.png)
 
 ### Control who can contribute to pull requests
 
@@ -95,12 +95,12 @@ Branch policies enable teams to maintain high quality branches and follow best p
 It can be common to work in the same area or iteration and repeatedly browse through the hierarchies when moving work items around. The **Area** and **Iteration** path controls now include a list of recently used values as **Suggestions**, giving you quick access to set and move on.
 
 > [!div class="mx-imgBorder"]
-![Area drop down list](_img/129_11.png)
+> ![Area drop down list](_img/129_11.png)
 
 In addition, **Iteration** dates are included to the right of the name so that you can quickly judge when a work item should be delivered.
 
 > [!div class="mx-imgBorder"]
-![Iteration drop down list](_img/129_12.png)
+> ![Iteration drop down list](_img/129_12.png)
 
 ## Build and Release
 
@@ -109,21 +109,21 @@ In addition, **Iteration** dates are included to the right of the name so that y
 GitHub pull requests from repository forks can now be automatically built by VSTS. This ensures that changes successfully build and tests pass before they are merged. By default, secrets associated with your build definition are unavailable to builds of pull requests from forks. See the [security considerations](/azure/devops/pipelines/build/ci-public) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Configuration for pull request validation of public fork PR builds](_img/129_08.png)
+> ![Configuration for pull request validation of public fork PR builds](_img/129_08.png)
 
 ### Build with continuous integration from GitHub Enterprise
 
 You now have better integration with VSTS for performing continuous integration (CI) builds if you use **GitHub Enterprise** for version control. Previously, you were limited to polling for code changes using the **External Git** connector, which may have increased the load on your servers and caused delays before builds were triggered. Now, with official **GitHub Enterprise** support in VSTS, team CI builds are immediately triggered. In addition, the connection can be configured using various authentication methods, such as LDAP or built-in accounts.
 
 > [!div class="mx-imgBorder"]
-![GitHub Enterprise build source option](_img/129_09.png)
+> ![GitHub Enterprise build source option](_img/129_09.png)
 
 ### Build with the appropriate agent by default
 
 When you use one of our templates to create a new build definition, we now select a hosted agent queue for you by default. For example, the Ant and Maven templates default to the **Hosted Linux** queue. Xcode and Xamarin.iOS templates default to **Hosted macOS Preview**. The ASP.NET Core template defaults to **Hosted VS2017**. Of course, you can still change the queue to your preference, but this default saves some time when defining a new build process and otherwise avoids having to re-set the appropriate agent queue.
 
 > [!div class="mx-imgBorder"]
-![Default hosted agent option in Build](_img/129_10.png)
+> ![Default hosted agent option in Build](_img/129_10.png)
 
 ## Test
 
@@ -132,14 +132,14 @@ When you use one of our templates to create a new build definition, we now selec
 The [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) now has support for capturing screenshots of desktop applications through the Chrome browser. With the browser extension installed, select the application you are testing, take screenshots, annotate, and create bugs or tasks.
 
 > [!div class="mx-imgBorder"]
-![Application button in Test & Feedback](_img/129_18.png)
+> ![Application button in Test & Feedback](_img/129_18.png)
 
 ### Filter large test results by Test Name
 
 Over time, test assets accrue. For large applications, they can easily grow to tens of thousands of tests. In our earlier sprint we added two new filters under **Tests** tab in **Build and Release** - **Container** (DLLs) and **Owner** (Container Owner). To enrich this experience further, we have added a new filter based on **Test Name**, which allows you to quickly search for the test you are interested in. The various filters continue to be cumulative.
 
 > [!div class="mx-imgBorder"]
-![Filter test by test name](_img/129_13.png)
+> ![Filter test by test name](_img/129_13.png)
 
 ### Run Functional Tests and Deploy Test Agent tasks are now deprecated
 
@@ -156,7 +156,7 @@ This was intended to address various pain points associated with using WinRM bas
 The unified agents approach also allows admins to manage all machines being used for CI/CD in a uniform manner.
 
 > [!div class="mx-imgBorder"]
-![Visual Studio Test task](_img/129_20.png)
+> ![Visual Studio Test task](_img/129_20.png)
 
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
@@ -184,7 +184,7 @@ After a [public preview of Wiki search in December](https://blogs.msdn.microsoft
 **Wiki** can be used for a variety of content. Sometimes it can be useful to print content from **Wiki** to read in your spare time, add comments using pen and paper, or even share an offline PDF copy with those outside of your VSTS project. Now, simply click on the context menu of a page and select **Print page**. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20051455-print-or-export-document-from-wiki-functionality).
 
 > [!div class="mx-imgBorder"]
-![Wiki menu print page option](_img/129_04.png)
+> ![Wiki menu print page option](_img/129_04.png)
 
 Currently this feature is [not supported on Firefox](http://kb.mozillazine.org/Problems_printing_web_pages).
 
@@ -195,12 +195,12 @@ You can now use shortcuts to perform common edit and view actions in **Wiki** ev
 While viewing a page, you can add, edit, or create a subpage, for example.
 
 > [!div class="mx-imgBorder"]
-![Wiki view keyboard shortcuts popup](_img/129_05.png)
+> ![Wiki view keyboard shortcuts popup](_img/129_05.png)
 
 While editing a page, you can quickly save, save and close, or just close.
 
 > [!div class="mx-imgBorder"]
-![Wiki edit keyboard shortcuts popup](_img/129_06.png)
+> ![Wiki edit keyboard shortcuts popup](_img/129_06.png)
 
 These are in addition to standard editing shortcuts such as Ctrl+B for **bold**, Ctrl+I for *italics*, Ctrl+K for `[linking](#)` etc. See the [full list of keyboard shortcuts](/azure/devops/project/navigation/keyboard-shortcuts) for more information.
 
@@ -211,7 +211,7 @@ These are in addition to standard editing shortcuts such as Ctrl+B for **bold**,
 All paid VSTS extensions and VS subscriptions in the [**Marketplace**](https://marketplace.visualstudio.com) now feature a calculator on the **Pricing** tab. You can now figure out the price corresponding to the selected quantity in your currency, without leaving the extension page.
 
 > [!div class="mx-imgBorder"]
-![Marketplace price calculator](_img/129_07.png)
+> ![Marketplace price calculator](_img/129_07.png)
 
 Note: The final pricing will be determined based on the Azure subscription used for a purchase.
 
@@ -222,7 +222,7 @@ Note: The final pricing will be determined based on the Azure subscription used 
 To avoid extra layers of groups in VSTS, you can now manage permissions directly on Azure Active Directory groups. This bring our support for Azure AD groups on par with VSTS groups.
 
 > [!div class="mx-imgBorder"]
-![Azure AD group permissions](_img/129_02.png)
+> ![Azure AD group permissions](_img/129_02.png)
 
 See the [about permissions and groups](/azure/devops/organizations/security/about-permissions) documentation for more information.
 
@@ -231,14 +231,14 @@ See the [about permissions and groups](/azure/devops/organizations/security/abou
 With the [retirement of the classic Azure portal](/information-protection/deploy-use/migrate-portal) (manage.windowsazure.com), you can now connect or disconnect your VSTS account from Azure Active Directory via the new Azure portal (portal.azure.com) using the **Connect** control on the account blade. See the [documentation for connecting to Azure AD](/azure/devops/accounts/connect-account-to-aad) for more information.
 
 > [!div class="mx-imgBorder"]
-![Connect Azure AD through Azure Portal](_img/129_03.png)
+> ![Connect Azure AD through Azure Portal](_img/129_03.png)
 
 ### Warning for accounts with a single Project Collection Administrator
 
 For Microsoft Account (MSA)-backed VSTS accounts, a warning has been added in the **Security** tab if we detect that the account has multiple users but is administered by a single Project Collection Administrator. It is recommended to have more than one administrator to avoid the account becoming locked out if the current administrator leaves the company. This message is only a recommendation and will not impact any of your existing settings.
 
 > [!div class="mx-imgBorder"]
-![Account warning for single admin](_img/129_01.png)
+> ![Account warning for single admin](_img/129_01.png)
 
 ## Next steps and Feedback
 
@@ -248,7 +248,7 @@ For Microsoft Account (MSA)-backed VSTS accounts, a warning has been added in th
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

@@ -21,10 +21,10 @@ ms.date: 12/17/2018
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-We show you how to do the following in this article:  
+In this quickstart, you learn how to do the following tasks:  
 
 > [!div class="checklist"]
-> * Open **Wiki**
+> * Open Wiki
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -34,11 +34,12 @@ We show you how to do the following in this article:
 While you author pages using [Markdown format](../../reference/markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki home page](_img/wiki/wiki-edit-2.png)
+> ![Wiki home page](_img/wiki/wiki-edit.png)
 
 As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
-<img src="_img/wiki/wiki-save-with-message.png" alt="Save page with a custom message" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Save page with a custom message](_img/wiki/wiki-save-with-message.png)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -64,7 +65,10 @@ To add another page, choose **New page**. Or, to add a subpage, open the context
 
 Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming).
 
-<img src="_img/wiki/add-new-page.png" alt="Create wiki and first page" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Create wiki and first page](_img/wiki/add-new-page.png)
+
+You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
 <a id="page-title-names"></a>
 
@@ -74,9 +78,13 @@ Specify a unique title of 235 characters or less. Page titles are case-sensitive
 
 ## Edit and delete wiki pages
 
-To edit an existing Wiki page, open the page and select **Edit page**, or open the context menu and select **Edit**.
+To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
 
-To delete a page, open the context menu from the tree view of pages and select **Delete**.  Confirm the delete in the dialog box that opens.
+To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
+
+> [!NOTE]  
+> Deleting a page deletes the page along with all the metadata and all its sub pages (if any) in the hierarchy.
+
 
 ## Reorder a wiki page
 
@@ -91,26 +99,18 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
 
-<img src="_img/wiki/wiki-move-page.png" alt="Move page in the hierarchy" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Move wiki page in the hierarchy](_img/wiki/wiki-move-page.png)
 
 For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
 ## Make a page the wiki home page
 
-By default, the first page you add when you create a wiki is set as the wiki home page. You can change this if another page becomes more relevant. The home page opens whenever someone selects **Wiki** within the web portal or the ![home link](./_img/wiki/home-link.png) home icon.
-
-To reset the home page, open the context menu of the page and select **Set as wiki homepage**.
-
-<img src="_img/wiki/make-home-page.png" alt="Make a page the home page" style="border: 1px solid #C3C3C3;" />
+By default, the first page you add when you create a wiki is set as the wiki home page. You can change this if another page becomes more relevant. You have to just drag and drop the page to the top of the tree.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [View wiki page history and revert](wiki-view-history.md)
 
-## Related articles
 
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-* [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md)
-* [Get started with Git](../../repos/git/gitquickstart.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

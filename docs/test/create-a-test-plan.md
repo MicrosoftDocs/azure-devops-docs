@@ -22,6 +22,7 @@ For more information about manual testing, see [Planned manual testing](overview
 and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
 <a name="testplans"></a>
+
 ## What are test plans, test suites, and test cases?
 
 [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of 
@@ -72,6 +73,7 @@ where changes to these new test cases do not affect those referenced in test pla
 See [Default manual testing permissions and access](manual-test-permissions.md).
 
 <a name="testplan"></a>
+
 ## Create a test plan
 
 1. If you want to use Azure DevOps, and haven't done so already, 
@@ -79,16 +81,16 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
    [create your project](../organizations/accounts/organization-management.md), 
    and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
-1. In Azure DevOps or TFS, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+2. In Azure DevOps or TFS, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
    If you already have a test plan, choose the **Test Plans** breadcrumb to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](_img/create-a-test-plan/goto-test-plans-page.png)
 
-1. In the **Test Plans** list page, choose **+ New Test Plan** to create a test plan for your current sprint.
+3. In the **Test Plans** list page, choose **+ New Test Plan** to create a test plan for your current sprint.
  
    ![Creating a new test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
-1. In the **New Test Plan** dialog, enter a name for the test plan.
+4. In the **New Test Plan** dialog, enter a name for the test plan.
    Check the area path and iteration are set as you require. Then choose **Create**.
 
    ![Adding test plan details](_img/create-a-test-plan/CreateATestPlan2.png) 

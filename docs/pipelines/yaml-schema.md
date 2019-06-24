@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/17/2019
+ms.date: 06/19/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -237,7 +237,7 @@ stages:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and [variables](#variables).
+Learn more about [stages](process/stages.md), [conditions](process/conditions.md?tabs=yaml), and [variables](#variables).
 <!-- TODO: link to info about stage dependencies -->
 ::: moniker-end
 
@@ -257,9 +257,9 @@ jobs:
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    matrix: # matrix strategy, see below
     parallel: # parallel strategy, see below
-    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
+    matrix: # matrix strategy, see below
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
   workspace:
@@ -357,6 +357,7 @@ testing against different configurations or platform versions.
 ```yaml
 strategy:
   matrix: { string1: { string2: string3 } }
+  maxParallel: number
 ```
 
 For each `string1` in the matrix, a copy of the job will be generated. `string1`
@@ -369,6 +370,15 @@ to the job.
 > They must start with a letter.
 > Also, they must be 100 characters or less.
 
+<a name="maximum-parallelism"></a>
+Optionally, `maxParallel` specifies the maximum number of simultaneous matrix legs to run at once.
+::: moniker range="> azure-devops-2019"
+If not specified or set to 0, no limit will be applied.
+::: moniker-end
+::: moniker range="azure-devops-2019"
+If not specified, no limit will be applied.
+::: moniker-end
+
 # [Example](#tab/example)
 
 ```yaml
@@ -380,11 +390,15 @@ jobs:
         PYTHON_VERSION: '3.5'
       Python36:
         PYTHON_VERSION: '3.6'
+      Python37:
+        PYTHON_VERSION: '3.7'
+    maxParallel: 2
 ```
 
-This matrix will create two jobs, "Build Python35" and "Build Python36". Within
+This matrix will create three jobs, "Build Python35", "Build Python36", and "Build Python37". Within
 each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
 will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
+Only 2 jobs will run simultaneously.
 
 ---
 
@@ -409,45 +423,6 @@ jobs:
   strategy:
     parallel: 4
 ```
-
----
-
-#### Maximum Parallelism
-
-Regardless of which strategy is chosen and how many jobs are generated, this
-value specifies the maximum number of agents which will run at a time for
-this family of jobs.
-::: moniker range="> azure-devops-2019"
-If not specified or set to 0, no limit will be applied.
-::: moniker-end
-::: moniker range="azure-devops-2019"
-If not specified, no limit will be applied.
-::: moniker-end
-
-# [Schema](#tab/schema)
-
-```yaml
-strategy:
-  maxParallel: number
-```
-
-# [Example](#tab/example)
-
-```yaml
-jobs:
-- job: BuildPython
-  strategy:
-    maxParallel: 2
-    matrix:
-      Python35:
-        PYTHON_VERSION: '3.5'
-      Python36:
-        PYTHON_VERSION: '3.6'
-      Python37:
-        PYTHON_VERSION: '3.7'
-```
-
-This example will generate 3 jobs but only run 2 at a time.
 
 ---
 
@@ -895,7 +870,7 @@ resources:
 
 ### Repository resource
 
-If your pipeline has [templates](#job-templates) in another repository, you must
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
 let the system know about that repository. The `repository` resource lets you
 specify an external repository.
 
@@ -938,12 +913,17 @@ for authorization.
 
 ## Triggers
 
+* [Push trigger](#push-trigger)
+* [PR trigger](#pr-trigger)
+* [Scheduled trigger](#scheduled-trigger)
+
 ### Push trigger
 
 A trigger specifies what branches will cause a continuous integration build to
 run. If left unspecified, pushes to every branch will trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
 and how to specify them.
+Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 # [Schema](#tab/schema)
 
@@ -1116,6 +1096,67 @@ pr:
 ```
 
 ---
+
+### Scheduled trigger
+
+::: moniker range="<= azure-devops-2019"
+
+YAML scheduled triggers are not available in this version of Azure DevOps Server or TFS. 
+You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+A scheduled trigger specifies a schedule on which branches will be built. 
+If left unspecified, no scheduled builds will occur.
+Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers)
+and how to specify them.
+
+
+
+# [Schema](#tab/schema)
+
+```yaml
+schedules:
+- cron: string # cron syntax defining a schedule
+  displayName: string # friendly name given to a specific schedule
+  branches:
+    include: [ string ] # which branches the schedule applies to
+    exclude: [ string ] # which branches to exclude from the schedule
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+```
+
+>[!IMPORTANT]
+>When you specify a scheduled trigger, only branches that are explicitly configured to be included are scheduled for a build. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, no branches will be built.
+
+# [Example](#tab/example)
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/ancient/*
+- cron: "0 12 * * 0"
+  displayName: Weekly Sunday build
+  branches:
+    include:
+    - releases/*
+  always: true
+```
+
+In this example, two schedules are defined. The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+
+The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
+
+---
+
+::: moniker-end
 
 ## Pool
 
@@ -1416,6 +1457,61 @@ steps:
 
 ---
 
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+::: moniker range="azure-devops"
+## Publish
+
+`publish` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- publish: string # path to a file or folder
+  artifact: string # artifact name
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- publish: $(Build.SourcesDirectory)/build
+  artifact: WebApp
+```
+
+---
+
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+
+## Download
+
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run to `$(Pipeline.Workspace)`. It can also be used to disable automatic downloading of artifacts in classic release and deployment jobs.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- download: [ current | none ] # disable automatic download if "none"
+  artifact: string # artifact name
+  patterns: string # patterns representing files to include
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- download: current
+  artifact: WebApp
+  patterns: '**/.js'
+```
+
+---
+
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+::: moniker-end
+
 ## Checkout
 
 `checkout` defines options for checking out source code.
@@ -1492,3 +1588,7 @@ Syntax highlighting is available for the pipeline schema via a VS Code
 extension. You can [download VS Code](https://code.visualstudio.com),
 [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and
 [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
+<!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
+     look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
+     in the first few screenfuls. -->
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.

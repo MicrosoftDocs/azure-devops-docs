@@ -127,68 +127,68 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker range=">= azure-devops-2019"
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
 
 	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Fields, User Story tab (Agile process)](_img/customize-cards/settings-fields-142.png) 
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
 
 	If you want work estimates to show, check **Show Effort**. **Show Effort** corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-0. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png) 
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
 
 	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Fields, User Story tab (Agile process)](_img/customize-cards/settings-fields-142.png) 
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
 
 	If you want work estimates to show, check **Show Effort**. **Show Effort** corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-0. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png) 
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. Your initial column settings will look something like this. 
 
 	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
 
@@ -198,15 +198,15 @@ As a first step, you'll see that you can determine which fields appear on each c
 	**TFS 2015 options:**      
 	![Kanban board, card customization dialog](_img/ALM_CC_KBCardOptions.png)  
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
 
 	If you want work estimates to show, check **Show Effort** or **Show Cost**. These options will cause the following fields to appear based on the respective process: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-0. To add a field, choose the ![ ](../../_img/icons/add-icon.png) plus icon and enter the name of a field you want to add. 
+4. To add a field, choose the ![ ](../../_img/icons/add-icon.png) plus icon and enter the name of a field you want to add. 
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
@@ -221,67 +221,67 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker range=">= azure-devops-2019"
 
-0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
-0.	Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Taskboard, open Settings dialog](_img/customize-cards/open-taskboard-settings-new-nav.png)	
+   > [!div class="mx-imgBorder"]  
+   > ![Taskboard, open Settings dialog](_img/customize-cards/open-taskboard-settings-new-nav.png)  
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. 
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings dialog, Fields, Task work item type](_img/customize-cards/settings-fields-taskboard-142.png)  
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.  
 
-0. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
  
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
-0.	Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
+1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
 
-	![taskboard, open card customization dialog](_img/task-board-customize-open-settings.png)    
+   ![taskboard, open card customization dialog](_img/task-board-customize-open-settings.png)    
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. 
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings dialog, Fields, Task work item type](_img/customize-cards/settings-fields-taskboard-142.png)  
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 
-0. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add.  
+4. To add a field, choose the ![ ](../_img/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add.  
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.  
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.  
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015" 
 
-0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
+1. [Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
-0.	Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
+1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
 
-	![taskboard, open card customization dialog](_img/task-board-customize-open-settings.png)    
+   ![taskboard, open card customization dialog](_img/task-board-customize-open-settings.png)    
 
-0. Choose **Fields** and then a work item type to see all the settings you can modify. 
+2. Choose **Fields** and then a work item type to see all the settings you can modify. 
 
-0. Place a check mark in the check box for those fields you want to have appear on the board. 
+3. Place a check mark in the check box for those fields you want to have appear on the board. 
       
 	**TFS 2015.1 options:**       
 	<img src="_img/vso-task-board-card-customize.png" alt="taskboard, card customization dialog" style="border: 1px solid #C3C3C3;" />     
@@ -290,11 +290,11 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 
-0. To add a field, choose the ![ ](../_img/icons/add_icon.png) plus icon and enter the name of a field  you want to add.  
+4. To add a field, choose the ![ ](../_img/icons/add_icon.png) plus icon and enter the name of a field  you want to add.  
 
-0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.  
+5. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.  
 
-0. When done with your changes, choose **Save**.
+6. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
@@ -307,11 +307,11 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 ::: moniker range=">= azure-devops-2019"
 
-1.	[Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
+1. [Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
 
-0. Choose **Styles** to specify a style rule. Choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -319,19 +319,19 @@ You can apply style rules to change the color of cards on Kanban boards and task
 	> ![Settings, Styles dialog](_img/customize-cards/taskboard-styles-priority.png)
 
 	Follow these rules when creating and ordering your style rules:
-	- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
-	- All clauses are considered AND clauses, grouping clauses isn't supported  
-	- Card rules apply to all work items that meet the rule criteria  
-	- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
-	- You can quickly enable and disable a style rule     
+   - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
+   - All clauses are considered AND clauses, grouping clauses isn't supported  
+   - Card rules apply to all work items that meet the rule criteria  
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
+   - You can quickly enable and disable a style rule     
 
-	Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
+     Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
-	![taskboard, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)   
+     ![taskboard, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)   
 
-0. To copy or delete a style rule, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
 
-0. When done with your changes, choose **Save**.
+5. When done with your changes, choose **Save**.
 
 ::: moniker-end  
 
@@ -341,11 +341,11 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1.	[Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
+1. [Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the **Settings** dialog. 
+2. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the **Settings** dialog. 
 
-0. Choose **Styles** to specify a style rule. Choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -353,19 +353,19 @@ Requires TFS 2015.1 or later version.
 	> ![Settings, Styles dialog](_img/customize-cards/taskboard-styles-priority.png)
 
 	Follow these rules when creating and ordering your style rules:
-	- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
-	- All clauses are considered AND clauses, grouping clauses isn't supported  
-	- Card rules apply to all work items that meet the rule criteria  
-	- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
-	- You can quickly enable and disable a style rule     
+   - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
+   - All clauses are considered AND clauses, grouping clauses isn't supported  
+   - Card rules apply to all work items that meet the rule criteria  
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
+   - You can quickly enable and disable a style rule     
 
-	Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
+     Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
-	![taskboard, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)   
+     ![taskboard, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)   
 
-0. To copy or delete a style rule, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
 
-0. When done with your changes, choose **Save**.
+5. When done with your changes, choose **Save**.
 
 ::: moniker-end
 
@@ -380,22 +380,22 @@ Prior to setting tag colors, first [add tags to backlog items](../../boards/quer
 Requires TFS 2015.1 or later version.  
 ::: moniker-end   
 
-0. Open the Settings dialog for the Kanban board you want to customize. 
+1. Open the Settings dialog for the Kanban board you want to customize. 
 
-0. Choose **Tag colors** and then choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
+1. Choose **Tag colors** and then choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
 
-	::: moniker range=">= tfs-2017"
-	> [!div class="mx-imgBorder"]  
-	> ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tag-colors.png) 
-	::: moniker-end   
-	::: moniker range="tfs-2015"  
-	![Settings, Tag colors dialog (Kanban), TFS 2015](_img/kanban-card-customize-tag-colors.png)  
-	::: moniker-end   
+   ::: moniker range=">= tfs-2017"
+   > [!div class="mx-imgBorder"]  
+   > ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tag-colors.png) 
+   ::: moniker-end   
+   ::: moniker range="tfs-2015"  
+   >  ![Settings, Tag colors dialog (Kanban), TFS 2015](_img/kanban-card-customize-tag-colors.png)  
+   ::: moniker-end   
+   
+   > [!TIP]
+   > If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 
 
-	> [!TIP]    
-	> If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 
-
-0. When done with your changes, choose **Save**.
+2. When done with your changes, choose **Save**.
 
 <a id="annotations" > </a>
 

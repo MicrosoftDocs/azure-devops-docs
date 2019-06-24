@@ -25,7 +25,7 @@ Anytime you create a project, you must choose a process or process template base
 For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!TIP]  
 > To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
@@ -41,6 +41,7 @@ The work tracking objects contained within the  default processes and process te
 <a id="template_intro"></a>
 
 ::: moniker range="azure-devops"
+
 ## Basic, Agile, Scrum, and CMMI
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
@@ -52,6 +53,7 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
+
 ## Agile, Scrum, and CMMI
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
@@ -72,61 +74,56 @@ Choose the process that provides the best fit for your team.
             <tr valign="top">
             <td>
             <p><b>Basic</b></p>
-            <p>Choose [Basic](../../get-started/track-issues-tasks.md) when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
-
+            <p>Choose <a href="../../get-started/track-issues-tasks.md" data-raw-source="[Basic](../../get-started/track-issues-tasks.md)">Basic</a> when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
              <p>Tasks support tracking Remaining Work.</p>
             </td>
         <td>
-            ![Basic work item types](../../get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png)
+            <img src="../../get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png" alt="Basic work item types"/>
         </td>
         </tr>
             <tr valign="top">
             <td>
             <p><b>Agile</b></p>
-            <p>Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
+            <p>Choose <a href="agile-process.md" data-raw-source="[Agile](agile-process.md)">Agile</a> when your team uses Agile planning methods, including Scrum,
             and tracks development and test activities separately. This process works great if you want to track user stories and
             (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.</p>
-
                 <p>You can learn more about Agile methodologies at the
                 <a href="http://www.agilealliance.org/">Agile Alliance</a>.
                 </p>
              <p>Tasks support tracking Original Estimate, Remaining Work, and Completed Work.</p>
             </td>
         <td>
-            ![Agile work item types](_img/ALM_PT_Agile_WIT_Artifacts.png)
+            <img src="_img/ALM_PT_Agile_WIT_Artifacts.png" alt="Agile work item types"/>
         </td>
         </tr>
     <tr valign="top">
         <td width="40%">
             <p><b>Scrum</b></p>
             <p>
-                Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great if you want to track product backlog items (PBIs) and
+                Choose <a href="scrum-process.md" data-raw-source="[Scrum](scrum-process.md)">Scrum</a> when your team practices Scrum. This process works great if you want to track product backlog items (PBIs) and
                 bugs on the Kanban board, or break PBIs and bugs down into tasks on the taskboard.
             </p>
-
-            <p>This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).</p>
+            <p>This process supports the Scrum methodology as defined by the <a href="https://www.scrum.org/" data-raw-source="[Scrum organization](https://www.scrum.org/)">Scrum organization</a>.</p>
             <p>Tasks support tracking remaining work only.</p>
         </td>
-
             <td width="60%">
-            ![Scrum work item types](_img/ALM_PT_Scrum_WIT_Artifacts.png)
+            <img src="_img/ALM_PT_Scrum_WIT_Artifacts.png" alt="Scrum work item types"/>
             </td>
             </tr>
-
     <tr valign="top"> 
         <td>
             <p><b>CMMI</b></p>
-            <p>Choose [CMMI](cmmi-process.md) when your team follows more formal project methods
+            <p>Choose <a href="cmmi-process.md" data-raw-source="[CMMI](cmmi-process.md)">CMMI</a> when your team follows more formal project methods
             that require a framework for process improvement and an auditable record of decisions. With this process,
             you can track requirements, change requests, risks, and reviews.
             </p>
             <p>
-            This process supports [formal change management activities](https://msdn.microsoft.com/library/ee461556.aspx).
+            This process supports <a href="https://msdn.microsoft.com/library/ee461556.aspx" data-raw-source="[formal change management activities](https://msdn.microsoft.com/library/ee461556.aspx)">formal change management activities</a>.
             Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
             </p>
             </td>
             <td>
-            ![CMMI work item types](_img/ALM_PT_CMMI_WIT_Artifacts.png)
+            <img src="_img/ALM_PT_CMMI_WIT_Artifacts.png" alt="CMMI work item types"/>
             </td>
       </tr>
 </tbody>
@@ -137,7 +134,9 @@ If you need more than two or three backlog levels, you can add more based on the
 - **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
 	
 <a id="main-distinctions"></a>
+
 ## Main distinctions among the default processes
+
 The default processes are designed to meet the needs of most teams. 
 If your team has unusual needs and connects to an on-premises server, 
 you can customize a process and then create the project. 
@@ -177,7 +176,6 @@ used by the three default processes.
     <li>Done</li>
     </ul>
     </td>
-
     <td>
     <ul>
     <li>New</li>
@@ -187,7 +185,6 @@ used by the three default processes.
     <li>Removed</li>
     </ul>
     </td>
-
    <td>
     <ul>
         <li>New</li>
@@ -196,7 +193,6 @@ used by the three default processes.
         <li>Done</li>
         <li>Removed</li>
     </ul>
-
     <td>
     <ul>
     <li>Proposed</li>
@@ -204,40 +200,34 @@ used by the three default processes.
     <li>Resolved</li>
     <li>Closed</li>
     </ul>
-
     </td>
     </tr>
     <tr>
     <td>
     Product planning (see note 1)
     </td>
-
     <td>
     <ul>
     <li>Issue</li>
     </ul>
     </td>
-
     <td>
     <ul>
     <li>User story</li>
     <li>Bug (optional)</li>
     </ul>
     </td>
-
     <td>
     <ul>
     <li>Product backlog item</li>
     <li>Bug (optional)</li>
     </ul>
     </td>
-
     <td>
     <ul>
     <li>Requirement</li>
     <li>Bug (optional)</li>
     </ul>
-
     </td>
     </tr>
     <tr>
@@ -271,7 +261,6 @@ used by the three default processes.
     <tr>
     <td>
     Task and sprint planning (3)
-
     </td>
     <td>
    <ul>
@@ -368,6 +357,7 @@ used by the three default processes.
  
 
 <a id="workflow-states"></a>
+
 ### Workflow states, transitions, and reasons
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. 
@@ -380,99 +370,80 @@ They also show some of the regressions to former states and transitions to remov
 Each image shows only the default reason associated with the transition. 
 
 <table valign="top">
+<tr >
+<th width="33%">Agile</th>
+<th width="33%">Scrum</th>
+<th width="33%">CMMI</th>
+</tr>
 <tbody>
-    <tr >
-        <td width="33%">
-            <b>Agile</b>
-        </td>
-        <td width="33%">
-           <b>Scrum</b>
-        </td>
-        <td width="33%">
-            <b>CMMI</b>
-        </td>
-    </tr>
-    <tr valign="top">
-        <td>
+<tr>
+<td>
 <h4>Epic</h4>
-            ![Epic workflow states, Agile process](_img/ALM_PT_Agile_WF_Epic.png)
-
-        </td>
-        <td>
+<img src="_img/ALM_PT_Agile_WF_Epic.png" alt="Epic workflow states, Agile process"/>
+</td>
+<td>
 <h4>Epic</h4>
-            ![Epic workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Epic.png)
-        </td>
-
-        <td>
+<img src="_img/ALM_PT_Scrum_WF_Epic.png" alt="Epic workflow states, Scrum process"/>
+</td>
+<td>
 <h4>Epic</h4>
-            ![Epic workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Epic.png)
-
-        </td>
-    </tr>
-    <tr valign="top">
-        <td>
+<img src="_img/ALM_PT_CMMI_WF_Epic.png" alt="Epic workflow states, CMMI process"/>
+</td>
+</tr>
+<tr>
+<td>
 <h4>Feature</h4>
-            ![Feature workflow states, Agile process](_img/ALM_PT_Agile_WF_Feature.png)
-
-        </td>
-        <td>
+<img src="_img/ALM_PT_Agile_WF_Feature.png" alt="Feature workflow states, Agile process"/>
+</td>
+<td>
 <h4>Feature</h4>
-            ![Feature workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Feature.png)
-        </td>
-
-        <td>
+<img src="_img/ALM_PT_Scrum_WF_Feature.png" alt="Feature workflow states, Scrum process"/>
+</td>
+<td>
 <h4>Feature</h4>
-            ![Feature workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Feature.png)
-
-        </td>
-    </tr>
-    <tr valign="top">
-        <td>
+<img src="_img/ALM_PT_CMMI_WF_Feature.png" alt="Feature workflow states, CMMI process"/>
+</td>
+</tr>
+<tr>
+<td>
 <h4>User story</h4>
-            ![User story workflow states, Agile process](_img/ALM_PT_Agile_WF_UserStory.png)
-
-        </td>
-        <td>
+<img src="_img/ALM_PT_Agile_WF_UserStory.png" alt="User story workflow states, Agile process"/>
+</td>
+<td>
 <h4>Product backlog item</h4>
-            ![Product backlog item workflow states, Scrum process](_img/ALM_PT_Scrum_WF_PBI.png)
+            <img src="_img/ALM_PT_Scrum_WF_PBI.png" alt="Product backlog item workflow states, Scrum process"/>
         </td>
-
         <td>
 <h4>Requirement</h4>
-            ![Requirement workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Requirement.png)
-
+            <img src="_img/ALM_PT_CMMI_WF_Requirement.png" alt="Requirement workflow states, CMMI process"/>
         </td>
     </tr>
     <tr valign="top">
         <td>
 <h4>Bug</h4>
-            ![Bug workflow states, Agile process](_img/ALM_PT_Agile_WF_Bug.png)
-
+            <img src="_img/ALM_PT_Agile_WF_Bug.png" alt="Bug workflow states, Agile process"/>
         </td>
         <td>
 <h4>Bug</h4>
-            ![Bug workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Bug.png)
+            <img src="_img/ALM_PT_Scrum_WF_Bug.png" alt="Bug workflow states, Scrum process"/>
         </td>
-
         <td>
 <h4>Bug</h4>
-            ![Bug workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Bug.png)
-
+            <img src="_img/ALM_PT_CMMI_WF_Bug.png" alt="Bug workflow states, CMMI process"/>
         </td>
     </tr>
     <tr valign="top">
         <td>
 <h4>Task</h4>
-            ![Task workflow states, Agile process](_img/ALM_PT_Agile_WF_Task.png)
+            <img src="_img/ALM_PT_Agile_WF_Task.png" alt="Task workflow states, Agile process"/>
         </td>
         <td>
 <h4>Task</h4>
-            ![Task workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Task.png)
+            <img src="_img/ALM_PT_Scrum_WF_Task.png" alt="Task workflow states, Scrum process"/>
         </td>
-
         <td>
 <h4>Task</h4>
-            ![Task workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Task.png)
+            <img src="_img/ALM_PT_CMMI_WF_Task.png" alt="Task workflow states, CMMI process"/>
         </td>
      </tr>
 </tbody>
@@ -485,7 +456,9 @@ You can change the workflow to support additional states, transitions, and reaso
 
 
 <a id="removed-closed-done"></a>
+
 ### Removed, Closed, and Done states  
+
 When you change the state of a work item to Removed, Closed, or Done, the system responds like this: 
 
 *   **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.   

@@ -36,75 +36,75 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
 <table class="table table-striped; centered-table">
 <thead class="thead-inverse">
     <tr>
-        <th ="col-md-8">Areas</th>
-        <th ="col-md-8">Common Tasks</th>
+        &lt;th =&quot;col-md-8&quot;&gt;Areas</th>
+        &lt;th =&quot;col-md-8&quot;&gt;Common Tasks</th>
     </tr>
 </thead>
 <tbody>
     <tr>
         <td>
-            [Git Repositories](./repositories.md)
+            <a href="./repositories.md" data-raw-source="[Git Repositories](./repositories.md)">Git Repositories</a>
         </td>
         <td>
-            <ul><li>Get a list of [repositories](./repositories.md#inateamproject) in a project.</li>
-            <li>[Add a repository](./repositories.md#createarepository) to a project.</li>
-            <li>[Delete a repository](./repositories.md#deletearepository) from a project.</li>
+            <ul><li>Get a list of <a href="./repositories.md#inateamproject" data-raw-source="[repositories](./repositories.md#inateamproject)">repositories</a> in a project.</li>
+            <li><a href="./repositories.md#createarepository" data-raw-source="[Add a repository](./repositories.md#createarepository)">Add a repository</a> to a project.</li>
+            <li><a href="./repositories.md#deletearepository" data-raw-source="[Delete a repository](./repositories.md#deletearepository)">Delete a repository</a> from a project.</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-            [Pull Requests](./pull-requests/pull-requests.md)
+            <a href="./pull-requests/pull-requests.md" data-raw-source="[Pull Requests](./pull-requests/pull-requests.md)">Pull Requests</a>
         </td>
         <td>
-            <ul><li>[Complete pull requests](./pull-requests/pull-requests.md#create-a-pull-request)</li>
-            <li>Get a [list of pull requests](./pull-requests/pull-requests.md#get-a-list-of-pull-requests-in-the-repository)</li>
-            <li>[Create a pull request](./pull-requests/pull-requests.md#create-a-pull-request)</li>
-            <li>[Update a pull request](./pull-requests/pull-requests.md#update-a-pull-request)</li>
+            <ul><li><a href="./pull-requests/pull-requests.md#create-a-pull-request" data-raw-source="[Complete pull requests](./pull-requests/pull-requests.md#create-a-pull-request)">Complete pull requests</a></li>
+            <li>Get a <a href="./pull-requests/pull-requests.md#get-a-list-of-pull-requests-in-the-repository" data-raw-source="[list of pull requests](./pull-requests/pull-requests.md#get-a-list-of-pull-requests-in-the-repository)">list of pull requests</a></li>
+            <li><a href="./pull-requests/pull-requests.md#create-a-pull-request" data-raw-source="[Create a pull request](./pull-requests/pull-requests.md#create-a-pull-request)">Create a pull request</a></li>
+            <li><a href="./pull-requests/pull-requests.md#update-a-pull-request" data-raw-source="[Update a pull request](./pull-requests/pull-requests.md#update-a-pull-request)">Update a pull request</a></li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-            [Commits](./commits.md)
+            <a href="./commits.md" data-raw-source="[Commits](./commits.md)">Commits</a>
         </td>
         <td>
-            <ul><li>Get the [top commits](./commits.md#apageatatime), or the [commits in a date range](./commits.md#inadaterange).</li>
-            <li>Get each [commit with the changes](./commits.md#withchangeditems) in that commit.</li>
-            <li>You can also get the [differences](./diffs.md) between the committed version and the previous version.</li>
+            <ul><li>Get the <a href="./commits.md#apageatatime" data-raw-source="[top commits](./commits.md#apageatatime)">top commits</a>, or the <a href="./commits.md#inadaterange" data-raw-source="[commits in a date range](./commits.md#inadaterange)">commits in a date range</a>.</li>
+            <li>Get each <a href="./commits.md#withchangeditems" data-raw-source="[commit with the changes](./commits.md#withchangeditems)">commit with the changes</a> in that commit.</li>
+            <li>You can also get the <a href="./diffs.md" data-raw-source="[differences](./diffs.md)">differences</a> between the committed version and the previous version.</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-            [Refs](./refs.md) (branches and tags)
+            <a href="./refs.md" data-raw-source="[Refs](./refs.md)">Refs</a> (branches and tags)
         </td>
         <td>
-            <ul><li>Get all [branches](./refs.md#just-branches).</li>
-            <li>[Create, update, or delete](./refs.md#modify-one-or-more-refs) a branch.</li>
+            <ul><li>Get all <a href="./refs.md#just-branches" data-raw-source="[branches](./refs.md#just-branches)">branches</a>.</li>
+            <li><a href="./refs.md#modify-one-or-more-refs" data-raw-source="[Create, update, or delete](./refs.md#modify-one-or-more-refs)">Create, update, or delete</a> a branch.</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-            [Pushes](./pushes.md)
+            <a href="./pushes.md" data-raw-source="[Pushes](./pushes.md)">Pushes</a>
         </td>
         <td>
-            <ul><li>Get a list of [pushes](./pushes.md).</li>
-            <li>Get each [push with references](./pushes.md#withreferences) to the commits.
-            <li>[Create a branch](./pushes.md#create-a-push) (Create a push/initial commit)</li>
+            <ul><li>Get a list of <a href="./pushes.md" data-raw-source="[pushes](./pushes.md)">pushes</a>.</li>
+            <li>Get each <a href="./pushes.md#withreferences" data-raw-source="[push with references](./pushes.md#withreferences)">push with references</a> to the commits.
+            <li><a href="./pushes.md#create-a-push" data-raw-source="[Create a branch](./pushes.md#create-a-push)">Create a branch</a> (Create a push/initial commit)</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td>
-            [Items (Files)](./items.md)
+            <a href="./items.md" data-raw-source="[Items (Files)](./items.md)">Items (Files)</a>
         </td>
         <td>
-            <ul><li>Download a single source file by getting the [item representing that file](./items.md#streamafile).</li>
-            <li>Download a zip file containing a folder and its contents by getting the [item for that folder](./items.md#zipafolder).</li>
-            <li>Get the metadata for the most recent version of each file or folder by getting the [items recursively](./items.md#afolderanditschildren).</li>
-            <li>Get [different versions of the items](./items.md#getaspecificversion), too.</li>
+            <ul><li>Download a single source file by getting the <a href="./items.md#streamafile" data-raw-source="[item representing that file](./items.md#streamafile)">item representing that file</a>.</li>
+            <li>Download a zip file containing a folder and its contents by getting the <a href="./items.md#zipafolder" data-raw-source="[item for that folder](./items.md#zipafolder)">item for that folder</a>.</li>
+            <li>Get the metadata for the most recent version of each file or folder by getting the <a href="./items.md#afolderanditschildren" data-raw-source="[items recursively](./items.md#afolderanditschildren)">items recursively</a>.</li>
+            <li>Get <a href="./items.md#getaspecificversion" data-raw-source="[different versions of the items](./items.md#getaspecificversion)">different versions of the items</a>, too.</li>
             </ul>
         </td>
     </tr>

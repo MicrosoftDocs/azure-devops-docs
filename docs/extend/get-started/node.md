@@ -137,20 +137,20 @@ An extension is composed of a set of files, including a required manifest file, 
     	<h1>Hello, <span id="name"></span></h1>
 	</body>
 	</html>
-	```
+    ```
 
 	This will be the content for the view (also known as a hub) contributed into the Azure DevOps Services web experience.
 
 6. At this point your extension directory should look like this:
 
-	```
+    ```
 	|-- my-hub.html
 	|-- node_modules
 		|-- @types
 		|-- vss-web-extension-sdk
 	|-- package.json
 	|-- vss-extension.json
-	```
+    ```
 
 You're now ready to package, publish, and test your extension.
 
@@ -183,7 +183,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 		"publisher": "AnnetteNielsen",
 		...
 	}
-	```		
+    ```     
 
 2. From a command prompt, run the TFX tool's packaging command from your extension directory:
    ```
@@ -273,7 +273,7 @@ In order to debug the extension using Visual Studio or Browser Developer Tools a
 	"baseUri": "https://localhost:44300",
 	...
 }
-```		
+```     
 
 This tells Azure DevOps Services to load the extension from your local web server instance (e.g. IISExpress in Visual Studio).
 After changing manifest you need to deploy and install this debugging extension only once.

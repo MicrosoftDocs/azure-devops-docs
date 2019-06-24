@@ -34,52 +34,52 @@ In this guide, you will build a Java project (create a WAR file) using Maven. We
 From within your team project, click on the **Build** menu option at the top left of the webpage. Now let's create the build pipeline we'll use to build the DeepSpace solution stored in our Subversion repository.
 
 > [!div class="mx-imgBorder"]
-![Build pipeline page screen](_img/svn-build-page.png)
+> ![Build pipeline page screen](_img/svn-build-page.png)
 
 Click the green + sign in the left build pane (appears above the build pipelines list). Once you click, the "Create New Build Pipeline" dialog will appear. In that dialog, select the "Empty" build template (at the bottom of the list) and click **OK**.
 
 > [!div class="mx-imgBorder"]
-![Build pipeline templates screen](_img/svn-build-definition-templates.png)
+> ![Build pipeline templates screen](_img/svn-build-definition-templates.png)
 
 ## Add the Maven build task
 Next, add a new build step by clicking **Add build step** under the "Pipelines" window.
 
 > [!div class="mx-imgBorder"]
-![Create a new build pipeline screen](_img/svn-create-new-definition.png)
+> ![Create a new build pipeline screen](_img/svn-create-new-definition.png)
 
 The "Add Tasks" window will appear. Within this window, select **Maven (Build with Apache Maven)**, click the **Add** button associated with Maven, and then click **Close** (as shown in the image below).
 
 > [!div class="mx-imgBorder"]
-![Select the Maven build step screen](_img/svn-maven-build-step.png)
+> ![Select the Maven build step screen](_img/svn-maven-build-step.png)
 
 ## Configure the Maven build
 Once you have created the new build pipeline with the single build step for Maven, you need to configure one of the Maven options. In the Maven POM file text box, enter `pom.xml`. This should be the only option you need to configure.
 
 > [!div class="mx-imgBorder"]
-![Configure the Maven options screen](_img/svn-maven-options.png)
+> ![Configure the Maven options screen](_img/svn-maven-options.png)
 
 ## Choose Subversion as the Repository type
 Click on the **Repository** tab and change the **Repository type** to "Subversion". Notice that the **Connection** property requires a value which is indicated by the background color of the textbox changing to yellow. This is the name of the **Connection** (or "service connection") that will be used to connect to the Subversion repository.
 
 > [!div class="mx-imgBorder"]
-![Choose a Subversion repo screen](_img/svn-repository-tab.png)
+> ![Choose a Subversion repo screen](_img/svn-repository-tab.png)
 
 To create the necessary endpoint, click the **Manage** link. This will open the services administration page for the team project.
 
 > [!div class="mx-imgBorder"]
-![Service connection administration screen](_img/svn-service-endpoints.png)
+> ![Service connection administration screen](_img/svn-service-endpoints.png)
 
 Select **+ New service connection** in the left pane and choose **Subversion** from the dropdown list. Once you click, the "Add New Subversion Repository Connection" dialog will appear.
 
 > [!div class="mx-imgBorder"]
-![Add a Subversion endpoint screen](_img/svn-new-svn-repository-connection.png)
+> ![Add a Subversion endpoint screen](_img/svn-new-svn-repository-connection.png)
 
 Enter the friendly name you wish to use for this connection. The name should be unique in the list of connect services and something easy to remember (e.g, "Subversion - DeepSpace"). Next, enter the Server URL, User name and Password used to connect to the desired Subversion repository. Click **OK**.
 
 Go ahead and close the services administration web page to get back to the build pipeline. Now that you're back on the **Repository** tab, click the **Refresh** button next to the **Manage** link. Once you do, the **Connection** property will be populated with the "Subversion - DeepSpace" value. If you have more than one value in the **Connection** drop down, ensure that you select the one pointing to the Subversion repository. When complete, your repository tab should look similar to the image below.
 
 > [!div class="mx-imgBorder"]
-![Subversion repo added successfully screen](_img/svn-repository-tab-complete.png)
+> ![Subversion repo added successfully screen](_img/svn-repository-tab-complete.png)
 
 ## Optional: Add Mappings
 If you are using your own repository (and not the DeepSpace repository), you can optionally add mappings which define the server-side folders that will be checked out on the build machine. This allows you to only bring down the necessary code to build a portion of the repository. If you do not add any mappings, the entire Subversion repository will be downloaded (and this is what we will do for the DeepSpace project).
@@ -89,7 +89,7 @@ If you do add mappings for your repository, you will need to provide the **Serve
 Next, click on the **Triggers** tab. If you selected the **Continuous integration (CI)** checkbox during the creation of the build pipeline, the Triggers tab should look like the image below. If it does not, go ahead and select the **Continuous integration (CI)** checkbox now. For the purposes of this walkthrough, set the **Polling interval (seconds)**" to 60 seconds. Also, if you'd like, check the box next to** Scheduled** and select a date+time period you'd like a build to start.
 
 > [!div class="mx-imgBorder"]
-![Add CI and build intervals screen](_img/svn-triggers-tab.png)
+> ![Add CI and build intervals screen](_img/svn-triggers-tab.png)
 
 Save the pipeline by clicking the **Save** button. Give the pipeline a name like "DeepSpace.Svn.CI".
 
@@ -97,19 +97,19 @@ Save the pipeline by clicking the **Save** button. Give the pipeline a name like
 Now that you have created a build pipeline, let's manually queue our first build of the project. Click on the **Queue build...** menu option under your "DeepSpace.Svn.CI" build pipeline. This will display a window titled "Queue Build For DeepSpace.Svn.CI" giving you an option to pick a build queue to use (for now, leave this as the default). Click **OK**. A build progress console window will appear and reflect the output of the Maven build task (you will see that the code is being pulled from the Subversion repository). The build can take a few seconds to a minute to begin and may last a few minutes. You will know the build is complete when a green bar is displayed showing "Build Succeeded" as in the image below.
 
 > [!div class="mx-imgBorder"]
-![CI build success screen](_img/svn-complete-manual-build.png)
+> ![CI build success screen](_img/svn-complete-manual-build.png)
 
 ## Commit a change to the Subversion repository
 Now that the manual build has completed, let's ensure that the polling trigger can identify our changes and build them automatically. On a development machine with the Subversion client tools, check out the DeepSpace repo (or your own) so you can make a change. If you're using the DeepSpace repository, update the "src/main/webapp/js/directivesFlyingStars.js" file by uncommenting line 44 to show the slider for the star count. If you're using your own repository, make some change in that source. Commit the change and provide a commit message. After the change has been committed, the polling trigger will detect the changes in the repository and queue a build.
 Here's what the build queued via polling will look like in the build queue: 
 
 > [!div class="mx-imgBorder"]
-![CI builds queued screen](_img/svn-queued-polled-build.png)
+> ![CI builds queued screen](_img/svn-queued-polled-build.png)
 
 The image below shows the four builds that were run during this walkthrough.
 
 > [!div class="mx-imgBorder"]
-![CI queued builds completed screen](_img/svn-completed-builds.png)
+> ![CI queued builds completed screen](_img/svn-completed-builds.png)
 
 Build 12 was the manual build we ran in the previous step. Build 13 is the initial build performed by the polling trigger (the polling trigger ran and found that it needed to queue a build). Build 15 is the build performed by the polling trigger when it detected the commit we made during this step (Source Version is 5). Finally, Build 16 was the scheduled build we set up in a previous step.
 

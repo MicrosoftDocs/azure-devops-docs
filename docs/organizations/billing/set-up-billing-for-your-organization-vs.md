@@ -10,19 +10,21 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019 
+ms.date: 06/12/2019 
 monikerRange: 'azure-devops'
 ---
 
-# Set up billing for your organization
+# Quickstart: Set up billing for your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn to set up billing for your organization in advance of making purchases, so that you'll have this in place once you're ready to buy. You can also make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to set up billing for your organization. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+In this quickstart, you learn to set up billing for your organization in advance of making purchases, so that you have this in place once you're ready to buy. You can also make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to set up billing for your organization. During that process we prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
 
 *All services are billed via Azure*, and you're not required to use any other Azure services.
 
 If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
+
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
@@ -58,8 +60,4 @@ Billing is set up.
 > [!div class="nextstepaction"]
 > [Pay for users](buy-basic-access-add-users.md)
 
-## Related articles
 
-* [Billing FAQ](../billing/billing-faq.md)
-* [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the subscription for billing](../billing/change-azure-subscription.md)

@@ -35,18 +35,18 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 You add query folders from the **Boards>Queries>All** page.
  
-0. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
+1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-0. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](_img/organize-queries/select-new-folder.png)
 
-0. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
+2. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
 	<img src="_img/organize-queries/new-folder-dialog.png" alt="Open Actions menu, choose New folder" style="border: 2px solid #C3C3C3;" />
 
-0. To move items into a folder, drag-and-drop a query onto the folder. 
+3. To move items into a folder, drag-and-drop a query onto the folder. 
 
 	Optionally, you can click the ![Actions icon](../_img/icons/actions-icon.png)  for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
@@ -59,13 +59,13 @@ You add query folders from the **Boards>Queries>All** page.
 
 You add query folders from the **Boards>Queries** page.
 
-0. To add a folder, choose the ![ ](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
+1. To add a folder, choose the ![ ](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
 	![New query folder link on queries context menu](_img/set-query-perm-new-folder.png)   
 
-0. To move items into a folder, drag-and-drop a query onto the folder. 
+1. To move items into a folder, drag-and-drop a query onto the folder. 
 
 	Optionally, you can choose the ![ ](../_img/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 

@@ -71,28 +71,26 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 
 ## Rename old branches
 
-# [Browser](#tab/browser)
-
+#### [Browser](#tab/browser/)
 0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
-0. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
-0. Choose its context menu (the `...` button) and choose **New branch**.
+1. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
+2. Choose its context menu (the `...` button) and choose **New branch**.
 
-  ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
+   ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
 
-0. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
+3. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-  ![Create new branch](_img/require-branch-folders/create-new-branch.png)
+   ![Create new branch](_img/require-branch-folders/create-new-branch.png)
 
-0. Choose the red trashcan icon next to the old branch name to delete it.
+4. Choose the red trashcan icon next to the old branch name to delete it.
 
-  ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
+   ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
 
 
 >[!NOTE] 
 >Any custom permissions or branch policies you had set up will not be migrated.
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 First, make sure you have the latest set of branches:
 
     cd {your_repo}
@@ -107,4 +105,4 @@ Then, repeat these commands for each branch you want to migrate:
 >[!NOTE]
 >Any custom permissions or branch policies you had set up will not be migrated.
 
----
+* * *

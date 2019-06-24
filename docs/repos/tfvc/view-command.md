@@ -37,7 +37,7 @@ To use the **view** command, you must have the **Read** permission set to **Allo
 <tbody>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 <tr>
 <td><p><em>shelvesetname [:owner]</em></p></td>
@@ -49,10 +49,10 @@ To use the **view** command, you must have the **Read** permission set to **Allo
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You can specify more than one *Itemspec* argument. 
+You can specify more than one <em>Itemspec</em> argument. 
 </div>
 </div>
 </div></td>
@@ -63,7 +63,7 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName</em>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td>
 </tr>
 <tr>
 <td><p><em>localfile</em></p></td>
@@ -115,7 +115,7 @@ You can specify more than one *Itemspec* argument.
 </tbody>
 </table>
 ## Remarks
-The **view** command of the **tf** command-line utility retrieves a read-only copy of a file from the Team Foundation version control server to a temporary folder on your computer and displays its contents. Unless you specify a particular version, Team Foundation retrieves the latest version of the file from the Team Foundation version control server.
+The <strong>view</strong> command of the <strong>tf</strong> command-line utility retrieves a read-only copy of a file from the Team Foundation version control server to a temporary folder on your computer and displays its contents. Unless you specify a particular version, Team Foundation retrieves the latest version of the file from the Team Foundation version control server.
 
 The **view** command does not retrieve files into your workspace or check them out. See [Get Command](get-command.md) and [Checkout and Edit Commands](checkout-or-edit-command.md) for more information about how to get the Team Foundation version control server version of and check out files.
 

@@ -81,7 +81,7 @@ The quickest means to create an App Service instance is to use the Azure command
 
 1. After the command completes, a browser should automatically open (by virtue of the `--launch-browser` argument) to the URL `<app-name>.azurewebsites.net` where you can see the running app.
 
-1. If your app requires a custom startup command, like the the python-sample-vscode-flask-tutorial app, you must set that property using the [`az webapp config set`](https://docs.microsoft.com/cli/azure/webapp/config?view=azure-cli-latest#az-webapp-config-set). For example, the python-sample-vscode-flask-tutorial app contains a file named *startup.txt* that contains its specific startup command, in which case the property is set to that filename.
+1. If your app requires a custom startup command, like the python-sample-vscode-flask-tutorial app, you must set that property using the [`az webapp config set`](https://docs.microsoft.com/cli/azure/webapp/config?view=azure-cli-latest#az-webapp-config-set). For example, the python-sample-vscode-flask-tutorial app contains a file named *startup.txt* that contains its specific startup command, in which case the property is set to that filename.
 
     1. In the first line of output from the `az webapp up` command, copy the name of the resource group it created, which is similar to "yourname_rg_Linux_centralus'.
 

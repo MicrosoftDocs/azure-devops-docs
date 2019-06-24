@@ -15,6 +15,7 @@ ms.date: 2/14/2019
 ---
 
 <a id="adjust-work">  </a>
+
 # 4. Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
@@ -25,6 +26,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ![Over capacity](_img/IC795969.png)  
 
+Use this article to learn how to:
 > [!div class="checklist"]   
 > * Adjust your sprint plan if your team is over or under capacity    
 > * Load balance work across your team 
@@ -37,7 +39,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -46,7 +48,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
@@ -59,7 +61,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -71,7 +73,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)

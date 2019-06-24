@@ -10,7 +10,7 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Project Rename – Apr 24
+# Team Project Rename – Apr 24
 
 Today we are very happy to announce that our #1 voted UserVoice story, with upwards of 6,000 votes, is ready for teams to start trying and giving feedback. Visual Studio Online customers can now rename team projects in their accounts.
 

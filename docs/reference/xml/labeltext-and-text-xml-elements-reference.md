@@ -24,16 +24,16 @@ The `LabelText` element is a child element of the `Control` element.
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<LabelText>  
-   <Text>  
-      <Link OpenInNewWindow="true | false" UrlPath="URLLinkWithParameters">  
-         <Param index="IndexValue " value="ParamValue " type ="Original | Current"/>  
-      </Link>  
-      LabelText  
-   </Text>  
-</LabelText>  
-```  
+> ```XML
+> <LabelText>  
+>    <Text>  
+>       <Link OpenInNewWindow="true | false" UrlPath="URLLinkWithParameters">  
+>          <Param index="IndexValue " value="ParamValue " type ="Original | Current"/>  
+>       </Link>  
+>       LabelText  
+>    </Text>  
+> </LabelText>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -62,48 +62,48 @@ The `LabelText` element is only recognized by clients that are running Visual St
 The following example adds the plain text "Enter details about how to reproduce the bug in the space below:" to a work item form.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<Control Type="LabelControl" Label=" Enter details about how to reproduce the bug in the space below:">  
-      <LabelText>  
-      <Text>Enter details about how to reproduce the bug in the space below:  
-      </Text>  
-      </LabelText>  
-</Control>  
-```  
+> ```XML  
+> <Control Type="LabelControl" Label=" Enter details about how to reproduce the bug in the space below:">  
+>       <LabelText>  
+>       <Text>Enter details about how to reproduce the bug in the space below:  
+>       </Text>  
+>       </LabelText>  
+> </Control>  
+> ```  
   
 ### Example: Standalone Label with Hyperlink  
 
 The following example adds a hyperlink which is labeled "How do I use this work item?" to a work item form.   
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<Control Type="LabelControl" Label="How do I use this work item?">  
-      <LabelText>  
-      <Text>  
-      <Link UrlRoot="http://www.live.com"></Link>  
-      How do I use this work item?  
-      </Text>  
-      </LabelText>  
-</Control>  
-```  
+> ```XML 
+> <Control Type="LabelControl" Label="How do I use this work item?">  
+>       <LabelText>  
+>       <Text>  
+>       <Link UrlRoot="http://www.live.com"></Link>  
+>       How do I use this work item?  
+>       </Text>  
+>       </LabelText>  
+> </Control>  
+> ```  
   
 ### Example: Hyperlink Applied to Portions of Text  
   
 The following example adds a two-part label to a work item form. The first part, "Iteration Path", is associated with a hyperlink. The second part, "(must be 3 levels deep)" appears on the work item form as plain text.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<Control Type="FieldControl" FieldName="System.IterationPath" LabelPosition="Left">  
-      <LabelText>  
-      <Text>  
-         <Link UrlRoot="@WssSiteUrl/render.aspx?wit=bug&topic=Iteration">  
-         </Link>  
-      Iteration Path  
-      </Text>  
-      <Text> (must be 3 levels deep)</Text>  
-      </LabelText>  
-</Control>  
-```  
+> ```XML 
+> <Control Type="FieldControl" FieldName="System.IterationPath" LabelPosition="Left">  
+>       <LabelText>  
+>       <Text>  
+>          <Link UrlRoot="@WssSiteUrl/render.aspx?wit=bug&topic=Iteration">  
+>          </Link>  
+>       Iteration Path  
+>       </Text>  
+>       <Text> (must be 3 levels deep)</Text>  
+>       </LabelText>  
+> </Control>  
+> ```  
 
 ## Related articles  
 - [Specify work item form controls](specify-work-item-form-controls.md)

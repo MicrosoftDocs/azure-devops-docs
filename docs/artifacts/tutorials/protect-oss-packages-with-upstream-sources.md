@@ -30,14 +30,14 @@ In this tutorial, you will:
 1. Navigate to **Azure Artifacts**:
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
    >![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
 
 ::: moniker-end
@@ -45,14 +45,14 @@ In this tutorial, you will:
 1. Select **+ New feed**:
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
    >![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![New feed button](../_shared/_img/new-feed-button.png)
 
 ::: moniker-end
@@ -60,14 +60,14 @@ In this tutorial, you will:
 1. In the dialog, provide a feed name and click _Create_. 
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
    >![New feed dialog](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![New feed dialog](../_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
@@ -102,8 +102,7 @@ The next step is to update your configuration file to point to the new Azure Art
 1. Get your feed's URL
 2. Update the configuration file with the feed URL
 
-# [npm](#tab/npm)
-
+#### [npm](#tab/npm/)
 ::: moniker range=">= azure-devops-2019"
 
 1. From your **Packages** page, click _Connect to Feed_
@@ -132,8 +131,7 @@ The next step is to update your configuration file to point to the new Azure Art
 
 After you've got the feed URL, create a new text file named `.npmrc` in the root of your project (in the same folder as your `package.json` file). Open your new `.npmrc` file and paste the text that you copied in step 2 above.
 
-# [NuGet](#tab/nuget)
-
+#### [NuGet](#tab/nuget/)
 [!INCLUDE [get a NuGet URL](../_shared/nuget/nuget-consume-endpoint.md)]
 
 Now that we have the feed URL, we can add our feed as a package source by following these steps:
@@ -166,8 +164,7 @@ Now, we recommend a few steps to ensure that we use our feed instead of the publ
    </packageSources>
    ```
 
----
-
+* * *
 ## Run an initial package restore to populate your feed
 
 Now that you have upstream packages set up, you'll need to run an initial package restore to populate your new feed with the upstream packages.

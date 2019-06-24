@@ -25,7 +25,7 @@ Our pipeline decorator will inject a custom task that does virus scanning at the
 
 This example assumes you're familiar with the [contribution models](contributions-overview.md).
 
-Start by [creating an extension](add-build-task.md#step-3-create-the-extension-manifest-file).
+Start by [creating an extension](add-build-task.md#extensionmanifest). 
 After you follow the tutorial, you'll have a `vss-extension.json` file.
 In this file, add contribution for our new pipeline decorator.
 

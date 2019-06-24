@@ -9,8 +9,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 5/6/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,54 +25,86 @@ monikerRange: '>= tfs-2017'
 
 This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
 
-## Get started
-
-Follow these instructions to set up a pipeline for a sample .NET Core app.
+## Create your first pipeline
 
 ::: moniker range="azure-devops"
 
-1. The code in the following repository is a simple Java app. To get started, fork this repo to your GitHub account.
+> Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
-    ```
-    https://github.com/MicrosoftDocs/pipelines-java
-    ```
+::: moniker-end
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+### Get the code
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+::: moniker range="azure-devops"
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+::: moniker-end
 
-1. When the list of repositories appears, select your Java sample repository.
+::: moniker range="azure-devops-2019"
 
-1. Azure Pipelines will analyze the code in your repository and recommend `Maven` template for your pipeline. Select that template.
+Import this repo into your Git repo in Azure DevOps Server 2019:
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+::: moniker-end
 
-1. A new run is started. Wait for the run to finish.
+::: moniker range="< azure-devops-2019"
 
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+Import this repo into your Git repo in TFS:
 
-> [!TIP]
-> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+::: moniker-end
+
+```
+https://github.com/MicrosoftDocs/pipelines-java
+```
+
+::: moniker range="azure-devops"
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+::: moniker-end
+
+### Create the pipeline
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Maven**.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+ > [!div class="mx-imgBorder"] 
+ > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+
+1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+ If you want to watch your pipeline in action, select the build job.
+
+ > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
+
+ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+1. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. The code in the following repository is a simple Java app. To get started, fork this repo to your GitHub account.
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **Maven**. This template automatically adds the tasks you need to build the code in the sample repository.
 
-    ```
-    https://github.com/MicrosoftDocs/pipelines-java
-    ```
+1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Maven** template. This selection automatically adds the tasks required to build the code in the sample repository.
+ You now have a working pipeline that's ready for you to customize!
 
-1. Save the pipeline and queue a build to see it in action.
+1. When you're ready to make changes to your pipeline, **Edit** it.
 
-Read through the rest of this topic to learn some of the common ways to customize your Java pipeline.
+1. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -101,6 +132,8 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java installed on the agent.
 
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ## Build your code
 
@@ -211,6 +244,8 @@ steps:
   inputs:
     scriptPath: 'build.sh'
 ```
+
+::: moniker-end
 
 <!--
 ### Specify Gradle or Maven versions

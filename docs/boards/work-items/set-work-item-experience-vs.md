@@ -32,17 +32,17 @@ Each view supports the following tasks:
 <tr>
 <td> 
 <ul>
-<li>[View and add work items](/azure/devops/boards/work-items/view-add-work-items)</li>
+<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](/azure/devops/boards/work-items/view-add-work-items)">View and add work items</a></li>
 </ul>
 </td>
 <td>
-<li>[Add work items](/azure/devops/boards/backlogs/add-work-items)</li>
-<li>[Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries)</li>
-<li>[Organize query folders and set query permissions](/azure/devops/boards/queries/set-query-permissions)</li>
-<li>[Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)</li>
-<li>[Open query in Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)</li>
-<li>[Email query results list using Outlook](/azure/devops/boards/queries/share-plans)</li>
-<li>[Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (TFS only)</li>
+<li><a href="/azure/devops/boards/backlogs/add-work-items" data-raw-source="[Add work items](/azure/devops/boards/backlogs/add-work-items)">Add work items</a></li>
+<li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries)">Use the query editor to list and manage queries</a></li>
+<li><a href="/azure/devops/boards/queries/set-query-permissions" data-raw-source="[Organize query folders and set query permissions](/azure/devops/boards/queries/set-query-permissions)">Organize query folders and set query permissions</a></li>
+<li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)">Open query in Excel</a></li>
+<li><a href="/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project" data-raw-source="[Open query in Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)">Open query in Project</a></li>
+<li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](/azure/devops/boards/queries/share-plans)">Email query results list using Outlook</a></li>
+<li><a href="/azure/devops/report/excel/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 </tr>
@@ -51,11 +51,11 @@ Each view supports the following tasks:
 
 ## Change your Work Items view
 
-0. From Visual Studio 2019 choose **Tools>Options**.
+1. From Visual Studio 2019 choose **Tools>Options**.
 
-0. In the Options dialog, enter **work items** in the search box.  
+1. In the Options dialog, enter **work items** in the search box.  
 
-0. Choose your **Landing page** option from the menu. 
+1. Choose your **Landing page** option from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Tools>Options>Work Items](_img/set-vs-experience/option-vs-options-work-items.png)

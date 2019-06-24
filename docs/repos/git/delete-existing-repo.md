@@ -37,19 +37,19 @@ Remove unused Git repos from your project when they are no longer needed.
 
 1. Select **Repos**, **Files**.
 
-  ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](_img/repos-navigation/repos-files.png)
 
-1. From the repo drop-down, select **Manage repositories**.
+2. From the repo drop-down, select **Manage repositories**.
 
-  ![Manage repositories](_img/repo-mgmt/manage-repositories.png)
+   ![Manage repositories](_img/repo-mgmt/manage-repositories.png)
 
-1. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
+3. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
 
-  ![Delete repository](_img/repo-mgmt/delete-repository.png)
+   ![Delete repository](_img/repo-mgmt/delete-repository.png)
 
-1. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
+4. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
-  ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
+   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Remove unused Git repos from your project when they are no longer needed.
 
    ![Version control settings](_img/repo-mgmt/version-control-settings.png)
 
-1. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
+2. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
 
    ![remove the Azure DevOps Services repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
 
@@ -68,8 +68,8 @@ Remove unused Git repos from your project when they are no longer needed.
    >
    >![Repositories pane](_img/repo-mgmt/expand-repositories-pane.png)
 
-1. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
+3. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
-  ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
+   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
 
 ::: moniker-end

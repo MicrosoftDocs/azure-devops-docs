@@ -25,6 +25,7 @@ For an overview of dashboard and chart features, see [Dashboards, charts, & widg
 
 
 ::: moniker range=">= tfs-2015" 
+
 ## Dashboards, charts, reports, and widgets
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [About dashboards, charts, reports, and widgets](overview.md). You set [dashboard permissions at the team level](dashboard-permissions.md) from the team dashboard page. 
@@ -41,6 +42,7 @@ Users granted Stakeholder access to private projects can't view or create query 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013" 
+
 ## Dashboards and charts
 
 You can pin charts to a team dashboard **Home** page. 
@@ -63,6 +65,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 
 ## Related articles
+
 ::: moniker range=">= azure-devops-2019" 
 
 - [Work across projects](../../project/navigation/work-across-projects.md)

@@ -11,19 +11,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/07/2018
+ms.date: 06/02/2019
 ---
 
 # Default permissions and access for Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
 The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 In general, use the following guidance when assign users to an access level and security group: 
-- Grant **Basic** access and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
+- Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
 - Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. Also, 
 - Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 - Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
@@ -37,29 +37,34 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 
 
-::: moniker range=">= tfs-2015" 
+::: moniker range=">= tfs-2015"
+
 ## Dashboards, charts, reports, and widgets
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-::: moniker-end  
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
+
 Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
-::: moniker-end    
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](_shared/report.md)]
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="tfs-2013" 
+
 ## Dashboards and charts
 
 You can pin charts to a team dashboard **Home** page. 
 
 [!INCLUDE [temp](_shared/report.md)]
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -77,15 +82,19 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 <a id="agile-tools-and-work-tracking" />
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Azure Boards
 You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
+
 ## Work tracking
 
 You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
@@ -130,6 +139,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 
 ::: moniker range=">= tfs-2017"
+
 ### Delivery plans feature access
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
@@ -152,22 +162,31 @@ In addition to the permissions set at the [project level via the built-in groups
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Azure Repos
-You can manage your source code from the web portal **Repos** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. 
+
+You can manage your source code from the web portal **Repos** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code.
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 Stakeholders for private projects have no access to **Repos**. Stakeholders for public projects have the same access to **Repos** as **Contributors**.  
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
+
 ## Code: Source control
 
 You can connect to your code from the web portal **Code** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. Stakeholders for private projects have no access to **Code**. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 ### Git
+
 You can use [Git repositories](../../repos/git/overview.md) to host and collaborate on your source code. For an overview of code features and functions.
 
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -175,10 +194,13 @@ You can use [Git repositories](../../repos/git/overview.md) to host and collabor
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-### TFVC 
+
+### TFVC
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013"
+
 [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](_shared/code-tfvc.md)]
@@ -198,42 +220,56 @@ From **Project Settings**, you can [set permissions on a repository](set-git-tfv
 ## Azure Pipelines
 
 You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
 ## Build and Release
 
 You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"  
+
 From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
-::: moniker-end    
+::: moniker-end
 
 ::: moniker range="azure-devops"
+
 > [!NOTE]   
 >  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 ::: moniker-end  
   
 ::: moniker range="azure-devops"
+
 [!INCLUDE [temp](_shared/pipelines.md)]
+
 ::: moniker-end    
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"  
+::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+
 [!INCLUDE [temp](_shared/build-release.md)]
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Test Plans
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018" 
+
 ## Test
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"
+
 You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
@@ -241,7 +277,8 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2019" 
+
 ## Azure Artifacts
 
 You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
@@ -250,6 +287,7 @@ You can manage feeds from the web portal, **Artifacts** or **Build and release >
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
+
 ## Package management
 
 You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
@@ -258,6 +296,7 @@ You can manage feeds from the web portal, **Build and release > Packages**.  Fee
 
 ::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](_shared/package-feeds.md)]
+
 ::: moniker-end
 
 

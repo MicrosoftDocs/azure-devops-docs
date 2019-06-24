@@ -1,4 +1,4 @@
-0. Create a json file (`vss-extension.json`, for example) in the home directory of your web app to describe your extension.
+1. Create a json file (`vss-extension.json`, for example) in the home directory of your web app to describe your extension.
 
     ```json
     {
@@ -16,8 +16,8 @@
     }
     ```
 
-0. Specify the path to your extension's icon in your manifest. 
-If you want to skip this step for now, that's fine. The extension will function without the icon.
+1. Specify the path to your extension's icon in your manifest. 
+   If you want to skip this step for now, that's fine. The extension will function without the icon.
 
     ```json
     {

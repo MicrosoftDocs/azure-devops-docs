@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -83,7 +83,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items:
 
-- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager is installed with Visual Studio Test Professional and Visual Studio Enterprise. 
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Plans is installed with Visual Studio Test Professional and Visual Studio Enterprise. 
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
 
@@ -113,14 +113,14 @@ To learn more, see [Web portal navigation](../project/navigation/index.md).
 
 ### Browser-based extensions
 
-The following extensions are available from the Azure DevOps Marketplace and are built and maintained by the Azure DevOps Services product team:
+The following extensions are available and are built and maintained by the Azure DevOps Services product team:
 
-- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
-- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
+- [Buy Azure Test Plans](../organizations/billing/buy-basic-plus-test-plans.md)]: Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
+- [Sign up for Azure Artifacts](../artifacts/sign-up-azure-artifacts.md)]: Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Perform full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
-Find additional extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com).
+Find additional extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
 
 ### Application monitoring tools
 

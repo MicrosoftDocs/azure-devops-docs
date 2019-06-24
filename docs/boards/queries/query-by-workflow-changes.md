@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 ---
 
 # Query by assignment or workflow changes
- 
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
@@ -39,6 +39,7 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 
 ## Supported operators and macros 
+
 Query clauses that specify an Identity or workflow-associated field can use the operators and macros listed in the following table. To learn what the field data type is, see the [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
 
 <table valign="top">
@@ -50,38 +51,39 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p><strong>Boolean <sup>1</sup></strong> </p></td>
-	<td>= , <> , =[Field] , <>[Field]</td>
+    <td><p><strong>Boolean <sup>1</sup></strong> </p></td>
+    <td>= , &lt;&gt; , =[Field] , &lt;&gt;[Field]</td>
 </tr>
 <tr>
-	<td><p><strong>DateTime</strong> </p></td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
-	<p>**Macros**: **@Today**, **@Today +/- n** valid with any **DateTime** field</p></td>
+    <td><p><strong>DateTime</strong> </p></td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
+    <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref> +/- n</strong> valid with any <strong>DateTime</strong> field</p></td>
 </tr>
 <tr>
-	<td>**Identity**</td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-	<p>**Macros**: **@me** valid for all Identity fields</p></td>
+    <td><strong>Identity</strong></td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+    <p><strong>Macros</strong>: <strong><xref href="me" data-throw-if-not-resolved="False" data-raw-source="@me"></xref></strong> valid for all Identity fields</p></td>
 </tr>
 <tr>
-	<td><strong>Single text (String)</strong> </td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-	</td>
+    <td><strong>Single text (String)</strong> </td>
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+    </td>
 </tr>
 </tbody>
 </table>
- 
-####Notes:
-1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
+
+#### Notes:
+1. The <strong>Boolean</strong> data type field is supported for TFS 2017 and later versions.  
 
 Use the **In** and **Not In** operators when you want to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group, team security group, or other security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
 <a id="me"/>
+
 ## Identity based queries  
 
 You can use the search box or query editor to quickly find work items based on an assignment made to an **Identity** field. Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further which can help with performance. 
 
-Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and **@Me** to scope to your user identity. 
+Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and <strong>@Me</strong> to scope to your user identity. 
 
 <table valign="top">
 <tbody valign="top">
@@ -99,8 +101,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Assigned To _ = _ @Me```</p>
-<p style="margin-bottom:0px">```And _ State _ = _ Active```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
+<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
 </td>
 </tr>
 <tr>
@@ -110,8 +112,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Assigned To _ Was Ever _ @Me```</p>
-<p style="margin-bottom:0px">```And _ State _ = _ Closed```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
+<p style="margin-bottom:0px"><code>And </em> State <em> = </em> Closed</code></p>
   </td>
 </tr>
 <tr>
@@ -120,19 +122,19 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type = User Story```</p>
-<p style="margin-bottom:0px">```And _ State _ = _ Active```</p>
-<p style="margin-bottom:0px">```And _ Assigned To _ In Group _ [FabrikamFiber]\Web```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type = User Story</code></p>
+<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
+<p style="margin-bottom:0px"><code>And </em> Assigned To <em> In Group </em> [FabrikamFiber]\Web</code></p>
   </td>
 </tr>
 <tr>
   <td>
-    <p>Items I've modified in the last 30 days</p>
+    <p>Items I&#39;ve modified in the last 30 days</p>
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Changed By _ = _ @Me```</p>
-<p style="margin-bottom:0px">```And _ Changed Date _ >= _   @Today-30```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Changed By <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
+<p style="margin-bottom:0px"><code>And <em> Changed Date </em> &gt;= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref></code></p>
   </td>
 </tr>
 
@@ -142,7 +144,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Assigned To _ = _  ```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> = _</code></p>
   </td>
 </tr>
 
@@ -182,8 +184,8 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ = _ User Story```</p>
-<p style="margin-bottom:0px">```And _ State _ = _ Resolved```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
+<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Resolved</code></p>
   </td>
 </tr>
 <tr>
@@ -193,18 +195,18 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ In _ User Story,Bug,Task```</p>
-<p style="margin-bottom:0px">```And _ State _ In _ New,Active```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type </em> In <em> User Story,Bug,Task</code></p>
+<p style="margin-bottom:0px"><code>And </em> State <em> In </em> New,Active</code></p>
   </td>
 </tr>
 <tr>
   <td>
-    <p>Items removed as they're duplicate  </p>
+    <p>Items removed as they&#39;re duplicate  </p>
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```State _ = _ Removed```</p>
-<p style="margin-bottom:0px">```And _ Reason _ = _ Duplicate```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State <em> = </em> Removed</code></p>
+<p style="margin-bottom:0px"><code>And <em> Reason </em> = <em> Duplicate</code></p>
   </td>
 </tr>
 
@@ -214,7 +216,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
   </td>
   <td>
     <p style="margin-bottom:0px">
-      ```Resolved Reason = Acceptance tests fail```
+      <code>Resolved Reason = Acceptance tests fail</code>
     </p>
   </td>
 </tr>
@@ -224,14 +226,15 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```State _ = _ Closed```</p>
-<p style="margin-bottom:0px">```And _ Closed Date  _ >  _ @Today-15```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State </em> = <em> Closed</code></p>
+<p style="margin-bottom:0px"><code>And </em> Closed Date  <em> &gt;  </em> <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref></code></p>
   </td>
 </tr>
 </tbody>
 </table>
 
 <a id="workflow-change-who"/> 
+
 ## Workflow changes and Identity based queries
 
 You can quickly find items that you changed, resolved or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
@@ -248,8 +251,8 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ = _ User Story```</p>
-<p style="margin-bottom:0px">```And _ Closed By _ = _ @Me```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
+<p style="margin-bottom:0px"><code>And <em> Closed By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
   </td>
 </tr>
 <tr>
@@ -258,8 +261,8 @@ You can quickly find items that you changed, resolved or closed. You can also fi
   </td>
   <td>
     <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Resolved By _ = _ @Me```</p>
-<p style="margin-bottom:0px">```And _ Resolved Date _ >= _ @Today-7```</p>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
+<p style="margin-bottom:0px"><code>And </em> Resolved Date <em> &gt;= </em> <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code></p>
   </td>
 </tr>
 </tbody>
@@ -268,7 +271,9 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 <a id="kanban_query_fields">  </a>
 ::: moniker range=">= tfs-2015"
+
 ## Kanban board change queries 
+
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 ::: moniker-end
 
@@ -298,11 +303,9 @@ For example, you can list items based on the team area path, and if they are in 
     <p>User Stories in the Code/Doing column</p>
 </td>
   <td>
-
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type = User Story```</p>
-<p style="margin-bottom:0px">```And _ Board Column _ = _ Code```</p>
-<p style="margin-bottom:0px">```And _ Board Column Done _ = _ False```</p>
+<code>Work Item Type = User Story</code>
+<code>And _ Board Column _ = _ Code</code>
+<code>And _ Board Column Done _ = _ False</code>
 
   </td>
 </tr>
@@ -311,15 +314,15 @@ For example, you can list items based on the team area path, and if they are in 
     Items in the Expedite swimlane
   </td>
   <td>
-      ```Board Lane _ = _ Expedite```
+      <code>Board Lane _ = _ Expedite</code>
   </td>
 </tr>
 <tr>
   <td>
-Items in any swimlane that contains "Test"
+Items in any swimlane that contains &quot;Test&quot;
   </td>
   <td>
-      ```Board Lane _ Contains _ Test```
+      <code>Board Lane _ Contains _ Test</code>
   </td>
 </tr>
 </tbody>
@@ -339,6 +342,7 @@ Items in any swimlane that contains "Test"
 ::: moniker range=">= tfs-2015"
 
 ## Workflow and Kanban board fields
+
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another, or you move an item in the [Kanban board](../boards/kanban-basics.md) to a different column or swimlane. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
@@ -372,7 +376,7 @@ For more information about field attributes, see [Work item fields and attribute
 
 <tr>
   <td>Assigned To<sup>1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync). 
+  <td>The name of the team member who currently owns the work item. For additional information, see <a href="#sync" data-raw-source="[Note 1 on synchronization and person-name fields](#sync)">Note 1 on synchronization and person-name fields</a>. 
 <p>Reference name=System.AssignedTo</p></td>
   <td>String (Identity)</td>
   <td>All</td>
@@ -387,7 +391,7 @@ For more information about field attributes, see [Work item fields and attribute
 <tr>
   <td>Board Column Done </td>
   <td>
-    <p>The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) has been enabled for a Kanban board column. </p>
+    <p>The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when <a href="../boards/split-columns.md" data-raw-source="[split-columns](../boards/split-columns.md)">split-columns</a> has been enabled for a Kanban board column. </p>
 <p>Reference name=System.BoardColumnDone</p></td>
   <td>Boolean</td>
   <td>Requirement Category<sup>4</sup> </td>
@@ -436,7 +440,7 @@ For more information about field attributes, see [Work item fields and attribute
 <tr>
   <td>Reason <sup>2,&nbsp;3</sup> </td>
   <td>The reason why the work item is in the current state.
-<p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```REASON``` element. To modify the defined reasons, see Change the workflow for a work item type.</p>
+<p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see Change the workflow for a work item type.</p>
 <p>Reference name=System.Reason</p></td>
   <td>String</td>
   <td>All (except Test Case and Shared Steps)</td>
@@ -471,7 +475,7 @@ For more information about field attributes, see [Work item fields and attribute
 <tr>
   <td>Reviewed By </td>
   <td>The name of the team member who responded to a code review request and is cataloged in the code review response. </p>
-	<p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
+    <p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
   </td>
   <td>String (Identity)</td>
   <td>Code Review Response
@@ -480,8 +484,7 @@ For more information about field attributes, see [Work item fields and attribute
 
 <tr>
   <td>State <sup>2, 3</sup>  </td>
-  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
-   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to Azure Boards, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). To add or modify States or the workflow for TFS, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).</p>
+  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md)">Customize the workflow for a process</a>. To add or modify States or the workflow for TFS, see <a href="../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)">Change the workflow for a work item type</a>.</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
   <td>All</td>
@@ -500,15 +503,15 @@ For more information about field attributes, see [Work item fields and attribute
 </table>
 
 #### Notes
-  
+
 <a id="sync">  </a>
 1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
-	
-	For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
+
+    For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
 2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 4. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
-	If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add and manage fields (Inheritance process model)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a work item field (On-premises XML process model)](../../reference/add-modify-field.md).
+    If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add and manage fields (Inheritance process model)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a work item field (On-premises XML process model)](../../reference/add-modify-field.md).
 
 ::: moniker-end
 
@@ -547,7 +550,7 @@ You can use the following fields to filter your queries or build reports. Some o
 
 <tr>
   <td>Assigned To <sup>1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync). 
+  <td>The name of the team member who currently owns the work item. For additional information, see <a href="#sync" data-raw-source="[Note 1 on synchronization and person-name fields](#sync)">Note 1 on synchronization and person-name fields</a>. 
 <p>Reference name=System.AssignedTo</p></td>
   <td>String (Identity)</td>
   <td>All</td>
@@ -587,7 +590,7 @@ You can use the following fields to filter your queries or build reports. Some o
 <tr>
   <td>Reason <sup>2,&nbsp;3</sup> </td>
   <td>The reason why the work item is in the current state.
-<p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```REASON``` element. To modify the defined reasons, see Change the workflow for a work item type.</p>
+<p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see Change the workflow for a work item type.</p>
 <p>Reference name=System.Reason</p></td>
   <td>String</td>
   <td>All (except Test Case and Shared Steps)</td>
@@ -618,7 +621,7 @@ You can use the following fields to filter your queries or build reports. Some o
 <tr>
   <td>Reviewed By </td>
   <td>The name of the team member who responded to a code review request and is cataloged in the code review response. </p>
-	<p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
+    <p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
   </td>
   <td>String (Identity)</td>
   <td>Code Review Response
@@ -626,8 +629,7 @@ You can use the following fields to filter your queries or build reports. Some o
 </tr>
 <tr>
   <td>State <sup>2, 3</sup>  </td>
-  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
-   <p>Values are defined within the ```WORKFLOW``` section of the WIT definition using the ```STATE``` element. To add a custom state to Azure Boards, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). To add or modify States or the workflow for an on-premises server, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).</p>
+  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md)">Customize the workflow for a process</a>. To add or modify States or the workflow for an on-premises server, see <a href="../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)">Change the workflow for a work item type</a>.</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
   <td>All</td>
@@ -644,11 +646,11 @@ You can use the following fields to filter your queries or build reports. Some o
 </table>
 
 #### Notes
-  
+
 <a id="sync">  </a>
 1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
-    
-	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).
+
+    You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).
 
 2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises server, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 
@@ -663,5 +665,4 @@ You can use the following fields to filter your queries or build reports. Some o
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
- 
- 
+

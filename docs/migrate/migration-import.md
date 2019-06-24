@@ -168,7 +168,7 @@ Azure DevOps Services is available in several Azure [regions](https://azure.micr
 |---------------------------------|--------------------------------|-----------------------------|
 |    United States                |    Central United States       |      CUS                    |
 |    Europe                       |    Western Europe              |      WEU                    |
-|.   United Kingdom.              |    United Kingdom South        |      UKS                    |
+|    United Kingdom               |    United Kingdom South        |      UKS                    |
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
@@ -353,6 +353,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    South India                  |    South India                 |
 |    Central Canada               |    Central Canada              |
 |    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
+|    UK South                     |    UK South                    |
 
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
@@ -407,8 +408,8 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 
 |    Service                                                       |    IP                                                                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181   |
-|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153         |
+|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56   |
+|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236         |
 |    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114                                                        |
 |    Azure DevOps Services - Brazil South                          |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175                                                                         |
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
@@ -422,7 +423,7 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 
 |    Service                                    |    IP                                                                        |
 |-----------------------------------------------|------------------------------------------------------------------------------|
-|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250, 13.86.39.233, 40.80.217.53  |
+|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250, 13.86.39.233, 40.80.217.53, 52.232.229.122  |
 |    Releases service - West Europe             |    13.95.223.69, 104.45.64.13                                                |
 |    Releases service - Australia East          |    13.73.204.151, 20.40.176.135                                              |
 |    Releases service - Brazil South            |    191.235.94.154, 20.40.116.69                                              |
@@ -461,7 +462,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163     |
+|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163, 20.45.3.51     |
 |    Azure Artifacts Blob - West Europe            |    23.97.221.25     |
 |    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113, 40.82.221.14   |
 |    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |

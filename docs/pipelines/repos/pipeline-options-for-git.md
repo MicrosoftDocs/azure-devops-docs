@@ -27,7 +27,7 @@ While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project
 |---------|------|------|----------|------------|--------------|------------|--------------|
 |Branch|Yes|Yes|Yes|Yes|Yes|
 |Clean|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Project; Designer only|Team project|Team project|Team project|No|
+|Tag or label sources|Project; Classic only|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|
 |Checkout files from LFS|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
