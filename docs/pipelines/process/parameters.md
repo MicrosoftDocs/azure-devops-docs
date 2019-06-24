@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 > 
 > This guidance applies to TFS version 2017.3 and newer.
 > 
-> This guidance applies only to designer pipelines. It does not apply to YAML pipelines.
+> This guidance applies only to classic editor pipelines. It does not apply to YAML pipelines.
 
 You can link all important arguments for tasks used across the build definition as process parameters, which are then shown at one place - the Pipeline view.
 This means you can quickly edit these arguments without needing to click through all the tasks.

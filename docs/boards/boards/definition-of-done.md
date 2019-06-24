@@ -29,7 +29,7 @@ When set, team members can quickly double-check the done criteria.
 > ![Definition of Done](_img/columns/move-doing-done-dod-develop.png)
 ::: moniker-end   
 ::: moniker range="tfs-2015" 
-![Definition of Done](_img/ALM_DD_IntroImage.png)
+> ![Definition of Done](_img/ALM_DD_IntroImage.png)
 ::: moniker-end   
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
@@ -40,11 +40,11 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker range=">= azure-devops-2019"
 
-0.  [Open your Kanban board](kanban-quickstart.md). 
+1. [Open your Kanban board](kanban-quickstart.md). 
 
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+   If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
@@ -54,42 +54,42 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, Configure Definition of Done](_img/columns/definition-of-done-defined.png)  
 
-0. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
-0. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
+2. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, Configure Definition of Done](_img/columns/definition-of-done-defined.png)  
 
-0. When done with your changes, choose **Save**.  
-::: moniker-end  
-::: moniker range="tfs-2015"  
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+3. When done with your changes, choose **Save**.  
+   ::: moniker-end  
+   ::: moniker range="tfs-2015"  
+4. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+5. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
     **For TFS 2015.1 and later versions**   
 
-0. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.  
+6. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.  
 
     <img src="_img/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />     
-	**For TFS 2015**  
-0. Choose **Edit Definition** within an intermediate column tab and specify  the Definition of Done for that column.  
+    <strong>For TFS 2015</strong>  
+7. Choose **Edit Definition** within an intermediate column tab and specify  the Definition of Done for that column.  
 
 	![Edit Definition](_img/ALM_DD_EditDefinition.png)    	 
 
-0. Enter text that defines your team's Definition of Done.    
+8. Enter text that defines your team's Definition of Done.    
 	![Definition Text](_img/ALM_DD_DefinitionText.png)  
 
 ::: moniker-end   

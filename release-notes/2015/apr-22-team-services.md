@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
+# Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
 
-##Synthetic data is filtered out of request metrics
+## Synthetic data is filtered out of request metrics
 
 Search robots or web tests that monitor availability generate some of the traffic received by your web app. This synthetic traffic might invalidate various metrics in Application Insights so that it does not accurately reflect the numbers of real users and the performance they experience.
 
@@ -28,7 +28,7 @@ You’ll now see these labels:
 
 ![Filtering for real traffic turned on by default in drill-in experiences](_img/4_22_02.png)
 
-##New Usage experience for ASP.NET, Java and other applications
+## New Usage experience for ASP.NET, Java and other applications
 
 The ASP.NET Overview Lens in the Applications Insights portal has a new and improved look – this helps you get a 360 view of the state of your application without scrolling.
 
@@ -46,12 +46,12 @@ The four controls under Usage analytics show counts over 24 hours, and the trend
 
 	This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 
-##Usage Reports Calculation for Daily Active Users
+## Usage Reports Calculation for Daily Active Users
 
 A new calculation for Daily Active Users (DAU) has been added to the usage reports. DAU presents the average number of the daily active users over the time period you have set. The calculation uses data from complete days only.
 
 
-##Feedback please!
+## Feedback please!
 
 That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
 

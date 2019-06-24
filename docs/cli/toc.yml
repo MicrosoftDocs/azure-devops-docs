@@ -7,9 +7,9 @@
   - name: Sign in with a Personal Access Token
     href: log-in-via-pat.md
   - name: Output formats
-    href: /cli/azure/format-output-azure-cli
+    href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
   - name: Query
-    href: /cli/azure/query-azure-cli
+    href: /cli/azure/query-azure-cli?view=azure-cli-latest
   - name: Auto detect configuration and git aliases 
     href: auto-detect-and-git-aliases.md
   - name: Configure policies
@@ -18,3 +18,10 @@
     href: azure-devops-cli-in-release-pipeline.md
   - name: Run commands in a YAML build pipeline
     href: azure-devops-cli-in-yaml.md  
+  - name: Manage security permissions
+    href: permissions.md
+    items:
+    - name: Understand security tokens
+      href: security_tokens.md
+- name: Command Reference
+  href: /cli/azure/ext/azure-devops?view=azure-cli-latest

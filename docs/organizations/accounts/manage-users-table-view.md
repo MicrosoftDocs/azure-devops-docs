@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -22,7 +22,7 @@ The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features, such as [Azure Test Plans](../billing/buy-basic-plus-test-plans.md).
 
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
@@ -62,15 +62,15 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-    * **Add to projects**
-    * **Remove from projects**
-    * **Assign extensions**
-    * **Revoke extensions** (if there are extensions)
-    * **Change access levels**
-    * **Remove direct assignments**
-    * **Remove from organization** (deletes user)
+   * **Add to projects**
+   * **Remove from projects**
+   * **Assign extensions**
+   * **Revoke extensions** (if there are extensions)
+   * **Change access levels**
+   * **Remove direct assignments**
+   * **Remove from organization** (deletes user)
 
-    ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
+     ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
 

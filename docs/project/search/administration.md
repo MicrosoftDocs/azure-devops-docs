@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -162,7 +162,7 @@ as part of the configuration:
 #### Java installation notes
 
 If the Search configuration wizard does not detect a working installation of a 
-Java Runtime Environment (JRE), it provides an option to download and install the latest version. 
+Java Runtime Environment (JRE), it provides an option to download and install the latest supported version. 
 Internet connectivity is required to download this.
 If the target server does not have Internet connectivity, you must download 
 and install a JRE manually before attempting to install Search.
@@ -576,14 +576,14 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker-end
 
-1. Remove the Search feature:
+2. Remove the Search feature:
 
    - Open the Azure DevOps Server or TFS Administration Console.
    - In the left pane, select the name of the server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select the **Search service** and choose **Remove**.<p />
   
-1. Remove the Elasticsearch service:
+3. Remove the Elasticsearch service:
 
    - Open **Command Prompt** as an administrator
    - Change directory:
@@ -595,11 +595,11 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
      * For TFS 2017, `"service.bat remove"`
      * For TFS 2018 and Azure DevOps Server, `"elasticsearch-service.bat remove"`<p />
     
-1. Remove Search data:
+4. Remove Search data:
 
    - Delete the contents of the location described by the environment variable `SEARCH_ES_INDEX_PATH`<p />
     
-1. Remove environment variables:
+5. Remove environment variables:
 
    - Delete the environment variable `"SEARCH_ES_INDEX_PATH"`
    - Delete the environment variable `"ES_HEAP_SIZE"` (this environment variable is obsolete for TFS 2018 Update 2 and later, and Azure DevOps Server).<p />
@@ -621,14 +621,14 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker-end
 
-1. Remove the Search feature:
+2. Remove the Search feature:
 
    - Open the In the Remove Feature dialog,  Administration Console.
    - In the left pane, select the name of the Azure DevOps Server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select **Search service** and choose **Remove**.<p />
 
-1. Remove the Elasticsearch service and data
+3. Remove the Elasticsearch service and data
 
    - Open **PowerShell** as an administrator
    - Go to the folder where **Configure Search.ps1** is installed along with the rest of the files required for a remote install of Search.

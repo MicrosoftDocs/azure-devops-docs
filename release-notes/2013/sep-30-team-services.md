@@ -10,11 +10,11 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Sep 30
+# Team Foundation Service updates - Sep 30
 
 We have three new improvements to existing features in this sprint.
 
-##New Language Support for Code Syntax Highlighting
+## New Language Support for Code Syntax Highlighting
 
 In our source based web views, we have rich syntax highlighting for code. Today we expanded the number of file types we support to include:
 
@@ -25,13 +25,13 @@ In our source based web views, we have rich syntax highlighting for code. Today 
 -Less
 -ini
 
-##Color Picking in Charts
+## Color Picking in Charts
 
 In the [last deployment](https://visualstudio.microsoft.com/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
 
 ![Color picker for charts](_img/9_30_01.png)
 
-##Column Options for the Test Case Grid View
+## Column Options for the Test Case Grid View
 
 Also in the [last deployment](../2013/sep-09-team-services.md), we enabled the grid view for easy authoring of test cases. In this deployment, we are enhancing the grid view to support more test case work item fields. The "Column Options" controls what fields you will see in both the list view and the grid view.
 

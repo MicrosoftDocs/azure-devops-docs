@@ -57,12 +57,12 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for members of the Project Administrators group. You can change the default permissions a project from the Project settings. 
 
-0. Choose **Project Settings** and then **Dashboards**.  
+1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions.png)
 
-0. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
+1. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
 ::: moniker-end
 
@@ -70,12 +70,12 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ## Set individual dashboard permissions for team members
 
-0. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)
 
-0. Change **Allow** or **Deny** to grant or restrict a permission. 
+1. Change **Allow** or **Deny** to grant or restrict a permission. 
  
 	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
 
@@ -85,7 +85,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!NOTE]   
 	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time.  
 
-0. Choose **Save changes** and then **Close**. 
+2. Choose **Save changes** and then **Close**. 
 
 ::: moniker-end
 

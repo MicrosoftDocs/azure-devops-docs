@@ -53,13 +53,13 @@ You can use the Test Activity report to help monitor the number of manual tests 
   
  You can review the report to answer to the following questions:  
   
--   Is the trend of manual tests that the team is running consistently increasing?  
+- Is the trend of manual tests that the team is running consistently increasing?  
   
--   Do you identify any spikes in the test activity that you cannot account for?  
+- Do you identify any spikes in the test activity that you cannot account for?  
   
- The Test Activity report indicates the results for each test case run for each test configuration and for all test plans. Spikes that might occur may be early indicators of problems in either the test activity or the quality of code that is being checked in.  
+  The Test Activity report indicates the results for each test case run for each test configuration and for all test plans. Spikes that might occur may be early indicators of problems in either the test activity or the quality of code that is being checked in.  
   
- You might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in test activity.  
+  You might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in test activity.  
   
 ##  <a name="Updating"></a> Updating and customizing the report  
  You can update the Test Activity report by opening it in Microsoft Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, as the following table describes.  

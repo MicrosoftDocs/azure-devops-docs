@@ -45,10 +45,10 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
-	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName.</em></p></td></tr>
+    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-	<td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
+    <td><p>The URL of the project collection that contains files that you want to destroy (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr></tbody>
 </table>
 
 <table><thead>

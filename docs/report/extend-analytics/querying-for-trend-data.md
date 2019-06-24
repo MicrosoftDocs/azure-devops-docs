@@ -36,11 +36,11 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-
+> 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
-```
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+> ```
 ::: moniker-end
 
 [!INCLUDE [temp](../_shared/api-versioning.md)]
@@ -133,8 +133,8 @@ This returns a result similar to the following:
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
  
- [!Note]
- If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
+> [!NOTE]  
+> If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
 
 ## Related articles
 

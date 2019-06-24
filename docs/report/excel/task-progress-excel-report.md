@@ -45,11 +45,11 @@ You can use the Task Progress report to track how much work the team has complet
   
  You can review the report to determine the progress over time or during an iteration. Specifically, you can find answers to the following questions:  
   
--   Is the team making progress toward closing Tasks?  
+- Is the team making progress toward closing Tasks?  
   
--   Is the team adding work?  
+- Is the team adding work?  
   
- For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).  
+  For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).  
   
 ##  <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Task Progress report by opening the report in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  

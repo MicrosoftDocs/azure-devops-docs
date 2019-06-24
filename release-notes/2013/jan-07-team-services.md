@@ -10,11 +10,11 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 7
+# Team Foundation Service updates - Jan 7
 
 Happy New Year! This morning we made our first set of updates to the service for the 2013 calendar year. This sprint was relatively light due to the holidays, but we do have a few incremental changes to existing functionality that I want to highlight.
 
-##Basic auth updates
+## Basic auth updates
 
 Back in [last August](https://visualstudio.microsoft.com/articles/news/2012/aug-27-team-services) we introduced support for basic authentication. Originally this was to allow the bridging of local Git repositories and TFS with Git-TF, however we’ve found people wanting to do more things using the basic authentication mechanism. Today we’re introducing a couple of updates to allow the basic auth scheme to work with more services. First we now allow you to enter a secondary user name with your alternate credentials.
 
@@ -24,7 +24,7 @@ Why another user name? Some applications get tripped up when they come across sp
 
 We did make a few changes to the way our Basic authentication mechanism behaves to make it more compatible with other services. This means that if you were previously using Basic authentication from the [Team Explorer Everywhere command line](https://www.microsoft.com/download/details.aspx?id=30661), or from [Git-TF](https://www.microsoft.com/download/details.aspx?id=30474), then you need to update to the very latest versions of those clients. We apologize for the inconvenience here. It should be the last major change at the protocol level so it shouldn’t happen again soon.
 
-##Email work items from backlogs
+## Email work items from backlogs
 
 In our [November 19th update](https://visualstudio.microsoft.com/articles/news/2012/nov-19-team-services) we announced the ability to send emails for work item queries. In this sprint we added the ability to send email directly from the backlog pages as well. You’ll now see the send email toolbar button on both the product backlog and sprint backlog pages.
 
@@ -34,7 +34,7 @@ The steps to use the feature are the same. From the toolbar, click the **email**
 
 ![Send email](_img/1_7_03.png)
 
-##Web version control
+## Web version control
 
 As we [mentioned last time](https://visualstudio.microsoft.com/articles/news/2012/dec-10-team-services), you are going to be seeing some improvements to the web based version control experiences in the next few updates. This time round we fixed a bug we introduced in the way we were displaying times in version control across time zones. We also brought back an easy way to search for changesets by id.
 
@@ -54,7 +54,7 @@ In the last update we showed off the new inline diff features. We have now added
 
 ![Diff images](_img/1_7_07.png)
 
-##Collapsible left panel
+## Collapsible left panel
 
 Finally, in our last update on [December 10th](../2012/dec-10-team-services.md) our code pages received an update to the collapsed left panel which included a vertical label on the collapsed view. In this sprint we carried that change forward to all our left panels. For example, when you collapse the left panel on the backlog page, you’ll now see the label **Backlog Explorer** on the collapsed view.
 

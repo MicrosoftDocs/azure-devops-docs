@@ -42,12 +42,12 @@ By default, the project level Readers groups have only Read permissions.
 	<tr>
 		<td id="git-administer-permission">Administer</td>
 		<td>
-			Can rename and delete the repository. If assigned to the top-level **Git repositories** entry, can add additional repositories.
+            Can rename and delete the repository. If assigned to the top-level <strong>Git repositories</strong> entry, can add additional repositories.
 			<br /><br />
 			At the branch level, users can set permissions for the branch and unlock the branch.
 			<blockquote>
 				<b>TFS 2013, TFS 2015</b>: The Administer permission set on a individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-				Administer permissions at the top-level **Git repositories** entry. 
+                Administer permissions at the top-level <strong>Git repositories</strong> entry. 
 			</blockquote>
 		</td>
 	</tr>
@@ -64,7 +64,7 @@ By default, the project level Readers groups have only Read permissions.
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
-			At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md). 
+            At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="../../repos/git/branch-policies.md" data-raw-source="[branch policies](../../repos/git/branch-policies.md)">branch policies</a>. 
 			At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>

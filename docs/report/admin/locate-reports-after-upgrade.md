@@ -61,7 +61,7 @@ The following illustration shows this structure for the project that is named De
 
 To view post-upgrade reports
  
-0. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
 
 	`http://ReportServerName/TFSReports/ProjectCollectionName/ProjectName/`
 
@@ -69,15 +69,15 @@ To view post-upgrade reports
 
 	`http://ReportServerName/TFSReports_TFSInstance/ProjectCollectionName/ProjectName/`
 
-0. Click the folder that contains the report that you want to view.
+1. Click the folder that contains the report that you want to view.
 
-0. Click the report that you want to view.
+1. Click the report that you want to view.
 
 ## View pre-upgrade reports
 
 To view pre-upgrade reports
 
-0. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
 	`http://ReportServerName/Reports/ProjectName/`
 
@@ -85,7 +85,7 @@ To view pre-upgrade reports
 
 	`http://ReportServerName/Reports_TFSInstance/ProjectName/`
 
-0. Click the report that you want to view.
+1. Click the report that you want to view.
 
 
 
@@ -131,11 +131,11 @@ To view pre-upgrade reports
   
  Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
--   Team Explorer is running on the same computer as Reporting Services.  
+- Team Explorer is running on the same computer as Reporting Services.  
   
--   You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
+- You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
   
- To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
+  To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
   
 1.  Choose the report and then press Enter.  
   

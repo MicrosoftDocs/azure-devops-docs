@@ -31,7 +31,7 @@ A note on terminology: you might also have heard feeds called package *repositor
 
 Get up and running with NuGet, npm, and Maven in Azure DevOps Services and TFS in just a few minutes with the [NuGet quickstart](get-started-nuget.md), [npm quickstart](get-started-npm.md), and [Maven quickstart](get-started-maven.md).
 
-If you haven't used packages before, see the [conceptual introduction](index.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your organization.
+If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your organization.
 
 <a name="versions-compatibility"></a>
 

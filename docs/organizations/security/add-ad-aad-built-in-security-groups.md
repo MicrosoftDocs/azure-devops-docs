@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/20/2019
+ms.date: 06/20/2019
 ---
 
 # Add AD/Azure AD users or groups to a built-in security group
@@ -34,22 +34,23 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker range="azure-devops"
 > [!IMPORTANT]  
 > If you are adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+> To manage the permissions of an Azure AD group in Azure DevOps, you must first add the Azure AD group to a built-in security group. Once you complete this task, you can then manage your Azure AD group permissions throughout Azure DevOps.
 ::: moniker-end    
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Choose **Project Settings** and then **Security**.
+1. Choose **Project Settings** and then **Security**.
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
-0. Open **Security** and under the **Groups** section, choose one of the following:
+1. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.
     - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
     - For users who need to administrate the project, choose **Project Administrators**.
 
-0. Next, choose the **Members** tab.
+1. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
@@ -58,9 +59,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-0. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
+1. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
@@ -74,29 +75,29 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker range="<= tfs-2018"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
 
-0. Open **Security** and under the **Groups** section, choose one of the following:
+1. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.
     - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
     - For users who need to administrate the project, choose **Project Administrators**. 
 
-0. Next, choose the **Members** tab.
+1. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Admin context, Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
 
-	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions.
+	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user automatically inherits Contributor permissions.
 
 1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-2. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your choice.
+1. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 

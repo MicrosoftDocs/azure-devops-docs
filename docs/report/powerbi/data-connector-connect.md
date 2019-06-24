@@ -26,10 +26,10 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range="azure-devops"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop). 
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 4. [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/). 
+4. Review the [knowledge base of Power BI articles](/power-bi). 
 5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end
@@ -37,9 +37,9 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range="azure-devops-2019"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop). 
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/). 
+4. Review the [knowledge base of Power BI articles](/power-bi). 
 5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end
@@ -68,24 +68,24 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 	![Azure DevOps dialog](_img/create-report/specify-account.png)
 
-	- For *Organization*, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
-	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
+   - For *Organization*, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
+   - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
 
-	> [!IMPORTANT]  
-	> Don't confuse the team name with the project name, a common mistake. 
-	> If the URL you use on the daily basis is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
+     > [!IMPORTANT]  
+     > Don't confuse the team name with the project name, a common mistake. 
+     > If the URL you use on the daily basis is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
 
 4. **Sign in to the service**. Upon first-time access, you're required to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you will only have to do this once.
 
 	Choose between these two authentication options: 
-	- Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
-	- Select *Personal Access Token* if you want to use a personal access token.
-	- Select *Basic* if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
+   - Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
+   - Select *Personal Access Token* if you want to use a personal access token.
+   - Select *Basic* if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Sign in dialog](_img/powerbi-signin-organizational.png)
+     > [!div class="mx-imgBorder"]  
+     > ![Sign in dialog](_img/powerbi-signin-organizational.png)
 
-	If you select *Organizational account,* enter your username and password into the standard login page.  
+     If you select *Organizational account,* enter your username and password into the standard login page.  
 
 5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
 
@@ -116,21 +116,21 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
  
 	![Get data dialog](_img/create-report/specify-collection-project.png)
 
-	- For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
-	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
+   - For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
+   - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
 
-	> [!IMPORTANT]  
-	> Don't confuse the team name with the project name, a common mistake. 
-	> If the URL you use on the daily basis is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
+     > [!IMPORTANT]  
+     > Don't confuse the team name with the project name, a common mistake. 
+     > If the URL you use on the daily basis is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
 
 4. **Sign in to the service**. Upon first-time access, you're required to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you will only have to do this once.
 
 	Choose between these two authentication options: 
-	- Select *Windows* if you want to sign in using Windows.  
-	- Select *Personal Access Token* if you want to use a personal access token.
+   - Select *Windows* if you want to sign in using Windows.  
+   - Select *Personal Access Token* if you want to use a personal access token.
 
-	> [!div class="mx-imgBorder"]
-	> ![Sign in dialog](_img/powerbi-windows-login-onprem.png) 
+     > [!div class="mx-imgBorder"]
+     > ![Sign in dialog](_img/powerbi-windows-login-onprem.png) 
 
 5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.  
 

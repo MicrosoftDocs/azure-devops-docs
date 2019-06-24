@@ -2,8 +2,10 @@
 ms.topic: include
 ---
 
-<a id="rich-text"></a>
+
 ### Rich text format  
+
+<a id="rich-text"></a>
 
 To improve the readability of your work items and convey detailed information, you can format text and insert images inline within their description and history fields, or within any field of type HTML. You can use this feature to capture information within a work item that you might previously have attached as a file.
 

@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 03/27/2019
+ms.author: jobourne
+author: joebourneMS
+ms.date: 06/14/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -92,14 +92,16 @@ Microsoft-hosted agents:
 
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage for your source and build outputs.
-* Can run jobs for up to 360 minutes (6 hours).
+* Provide a free tier:
+  * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
+  * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 * (Linux only) Run steps in a cgroup that offers 6 GB of physical memory and 13 GB of total memory
 
 Microsoft-hosted agents do not offer:
 
-* The ability to log on.
+* The ability to sign in.
 * The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
 * The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
@@ -122,7 +124,15 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/confirmation.aspx?id=41653) for all regions in that geography.
 
 >[!NOTE]
->If your organization is in the Brazil South region, your hosted agents may occasionally be located in the United States geography due to capacity issues, and you must also include the IP ranges for regions in the United States geography for your hosted agents.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
+>
+>If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
+>
+>If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+
+### Can I use service tags instead?
+
+Currently, Service Tags is not something you can use for your hosted agents. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -172,7 +182,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
-  Note that this command does not works in case of Xamarin app. To manually select a Xcode version for building Xamarin apps, see instructions above.
+  Note that this command does not work for Xamarin apps. To manually select a Xcode version for building Xamarin apps, see instructions above.
 
 #### Mono
 

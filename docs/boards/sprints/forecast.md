@@ -66,7 +66,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and taskboard only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and taskboard. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list&mdash;only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 
@@ -83,7 +83,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -92,24 +92,24 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. You can only forecast a product backlog. You can't forecast a portfolio backlog such as Features or Epics.    
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. You can only forecast a product backlog. You can't forecast a portfolio backlog such as Features or Epics.    
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+3. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](_img/forecast/turn-forecasting-on-agile.png)
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-3. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
+4. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Set Forecast velocity](_img/forecast/set-forecast-velocity.png)
@@ -125,7 +125,7 @@ To forecast your product backlog, perform the following actions.
 
 To forecast your product backlog, perform the following actions.
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -140,13 +140,13 @@ To forecast your product backlog, perform the following actions.
 	> [!NOTE]
 	> If you work with several teams, and each team wants to work with their own backlog, velocity chart, and forecast tool, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those set for the team. 
 
-0. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
-0. Set **Forecast** to **On** and enter your team's predicted velocity. If the Forecasting bar doesn't appear, set **Parents** to **Hide**. 
+2. Set **Forecast** to **On** and enter your team's predicted velocity. If the Forecasting bar doesn't appear, set **Parents** to **Hide**. 
 
 	![Web portal, Boards>Backlog, Forecast On](_img/forecast-tool-settings.png)
 
-0. Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
+3. Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
 
 	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.  
 

@@ -22,7 +22,7 @@ as a more efficient way to drive activities when events happen in your projects.
 Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** to take based on the event. 
 Subscriptions also target **consumers**, which are external services that can perform their own actions, when an event occurs. 
 
-<center>![Service Hooks Diagram](./_img/service-hooks.png)</center>
+<center><img src="./_img/service-hooks.png" alt="Service Hooks Diagram"/></center>
 
 ## Tutorial Overview - Custom Consumer Service
 
@@ -36,7 +36,7 @@ This tutorial walks through developing an extension that implements a **sample c
 
 > Note: This tutorial will refer to the home directory for your project as "home". 
 
-<center>![Sample Consumer Service](./_img/consumer-service.png)</center>
+<center><img src="./_img/consumer-service.png" alt="Sample Consumer Service"/></center>
 
 ## Create the extension
 ### Add an icon

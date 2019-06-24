@@ -147,12 +147,12 @@ As you create and run tests, you can track your status by defining [lightweight 
 > [!NOTE]  
 > You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-0. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md).  
 
-0. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
+1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
 	![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
-::: moniker-end
+   ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"

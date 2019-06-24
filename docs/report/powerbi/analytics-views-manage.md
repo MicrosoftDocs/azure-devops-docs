@@ -52,10 +52,11 @@ The creator of a view and all members of the Project Administrators and Project 
 
 	Refresh your Power BI report to access the changes you made to the view.
 
- > [!TIP]
- > If you remove fields from a view that are in use in the report, you'll need to update any Power BI report that references the view. 
+   > [!TIP]
+   > If you remove fields from a view that are in use in the report, you'll need to update any Power BI report that references the view. 
 
 <a id="share-view" />
+
 ## Share a view 
 
 All contributors to a project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
@@ -66,9 +67,9 @@ To share a private view, simply edit the view and change the sharing option to *
 
 > [!IMPORTANT]
 > If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
-
-    > [!div class="mx-imgBorder"]
-    > ![General tab](_img/editable-views/general.png)
+> 
+> [!div class="mx-imgBorder"]
+> ![General tab](_img/editable-views/general.png)
 
 ## Favorite a view
 
@@ -79,7 +80,7 @@ To favorite a view, hover over the view and choose the ![star icon](../../_img/i
 > ![Favorite a view](_img/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]: Couldn&#39;t find file _shared/manage-shared-view-permissions.md. -->[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]<!--END ERROR INCLUDE -->
 
 ## Delete a view
 
@@ -88,7 +89,9 @@ You can always delete a view you created. Once you delete a view, any Power BI r
 To delete a view, click the ![ ](../_img/icons/actions-icon.png) actions icon and choose ![ ](../../_img/icons/delete-icon.png) **Delete** from the menu.
 
 <a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create a Power BI report using an Analytics view](data-connector-connect.md)
 
@@ -106,7 +109,7 @@ To delete a view, click the ![ ](../_img/icons/actions-icon.png) actions icon an
 
 For a quick start, you can copy any view including [default Analytics Views](./analytics-default-views.md) and edit it.
 
-0. To copy a view click the ![ ](../_img/icons/actions-icon.png) actions icon to open the copy panel.
+1. To copy a view click the ![ ](../_img/icons/actions-icon.png) actions icon to open the copy panel.
 
 1. Provide the copy name description.
 1. Decide who can use this view. Set the radio to "Shared" if  you want to make this available to others. Learn more about [sharing Analytics Views](analytics-views-manage.md#share-views)and sharing option. All other definition is copied from the original view.

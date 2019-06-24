@@ -31,14 +31,14 @@ If you can't upgrade to 2.4.0, you can remove the Kerberos credential and let Gi
 
    ![Open Credential Manager](_img/manage-large-files/launch-credential-manager.png)
 
-0. Choose *Windows Credentials*.
+1. Choose *Windows Credentials*.
 
    ![Choose Windows Credentials](_img/manage-large-files/choose-windows-credentials.png)
 
-0. Find your TFS URL in the credential list.
-0. Choose *Remove*.
+2. Find your TFS URL in the credential list.
+3. Choose *Remove*.
 
    ![Choose Remove](_img/manage-large-files/choose-remove.png)
 
-0. Return to your Git client (Visual Studio or the command line) and push your changes.
-When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.
+4. Return to your Git client (Visual Studio or the command line) and push your changes.
+   When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.

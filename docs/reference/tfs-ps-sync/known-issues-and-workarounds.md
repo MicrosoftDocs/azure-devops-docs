@@ -67,15 +67,15 @@ ms.date: 01/12/2017
 ##  <a name="definingqueries"></a> Defining queries that specify null or empty field values  
  You can find undefined work item fields in Team Foundation by creating a work item query where the **Value** is left undefined. Corresponding Project Server fields that are mapped may contain a value of 0. For example, you can specifying the following clauses in a query to exclude work items that contain undefined or zero work:  
   
--   And Completed Work <> (leave Value undefined)  
+- And Completed Work <> (leave Value undefined)  
   
--   Or Project Server Completed Work <> 0  
+- Or Project Server Completed Work <> 0  
   
--   And Remaining Work \< > (leave Value undefined)  
+- And Remaining Work \< > (leave Value undefined)  
   
--   Or Project Server Remaining Work <> 0  
+- Or Project Server Remaining Work <> 0  
   
- For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
+  For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ##  <a name="changingname"></a> Changing the Name of a Mapped Enterprise Project Plan Requires You to Refresh the Mapped Team Project  
  If you save a mapped enterprise project under a different name and then publish the project to Project Server, you must refresh the mapped project. Otherwise, the new name will not appear in the **Enterprise Project** field on the **Project Server** tab. For more information, see [Refresh your Team Foundation client](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-the-web-portal).  
@@ -92,32 +92,32 @@ ms.date: 01/12/2017
 ##  <a name="accessdenied"></a> Access Denied issues occur with a network load balancing configuration  
  If you have administrative permissions on Project Server, a 401 Access denied message might appear after you configure the integration of the two server products. This message can appear when the deployment of Project Server contains the following components:  
   
--   Two or more web front ends.  
+- Two or more web front ends.  
   
--   Windows Network Load Balancing (NLB) to balance them.  
+- Windows Network Load Balancing (NLB) to balance them.  
   
--   A single static IP as the NLB front end with a name that is registered with the Domain Name Service (DNS).  
+- A single static IP as the NLB front end with a name that is registered with the Domain Name Service (DNS).  
   
- To work around this problem, you must set one of two registry keys. For more information, see the following page on the Microsoft website: [You receive error 401.1 when you browse a Web site that uses Integrated Authentication and is hosted on IIS 5.1 or a later version](http://go.microsoft.com/fwlink/?LinkId=207283).  
+  To work around this problem, you must set one of two registry keys. For more information, see the following page on the Microsoft website: [You receive error 401.1 when you browse a Web site that uses Integrated Authentication and is hosted on IIS 5.1 or a later version](http://go.microsoft.com/fwlink/?LinkId=207283).  
   
 ##  <a name="unsupportedconfig"></a> Multiple errors might occur when updating subprojects with the master project open  
  You can synchronize data between a project and an enterprise project plan that is a subproject. You cannot manage or update any data from a master project that contains mapped subprojects. You can have a master plan that includes subprojects that are mapped to Team Foundation Server, but the Team Foundation client add-in for Project Professional blocks editing of mapped subprojects from a master plan. Specifically, the add-in prevents you from modifying or deleting a task that is scheduled to synchronize with Team Foundation from the master plan  
   
  Several errors can appear if you open a subproject and its master project at the same time. For example, one or more of the following error messages may appear:  
   
--   The view Team Foundation Gantt (Project Server) does not exist in this version of Project. Please choose a different view.  
+- The view Team Foundation Gantt (Project Server) does not exist in this version of Project. Please choose a different view.  
   
--   The following field that you selected for tracking the Work Item Type is already in use by the project: pjTaskText30. If you continue, the existing data would be overwritten.  
+- The following field that you selected for tracking the Work Item Type is already in use by the project: pjTaskText30. If you continue, the existing data would be overwritten.  
   
-     Choose 'Cancel' to prevent data from being overwritten or deleted, and then copy the data in pjTaskText30 to unused fields in the project, or contact the Administrator to change the local field.  
+   Choose 'Cancel' to prevent data from being overwritten or deleted, and then copy the data in pjTaskText30 to unused fields in the project, or contact the Administrator to change the local field.  
   
-     Do you want to proceed?  
+   Do you want to proceed?  
   
--   TF82041: Team Foundation does not support editing tasks in a subproject from within the master project. Open the subproject to edit, publish, or refresh tasks.  
+- TF82041: Team Foundation does not support editing tasks in a subproject from within the master project. Open the subproject to edit, publish, or refresh tasks.  
   
--   TF80069: Team Foundation encountered an error while updating data in the application.  
+- TF80069: Team Foundation encountered an error while updating data in the application.  
   
- To resolve these errors, close the master project whenever you are modifying a mapped subproject.  
+  To resolve these errors, close the master project whenever you are modifying a mapped subproject.  
   
 ## Related articles  
  [Synchronization process overview](synchronization-process-overview.md)   

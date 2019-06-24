@@ -24,19 +24,19 @@ ms.date: 01/12/2017
 ##  <a name="Scenarios"></a> Supported and Unsupported Scenarios  
  By using resource rollup, project managers can perform the following operations:  
   
--   View resource allocation and work that development teams estimate.  
+- View resource allocation and work that development teams estimate.  
   
--   Perform resource leveling in Project, and create a schedule baseline.  
+- Perform resource leveling in Project, and create a schedule baseline.  
   
--   Determine whether a resource who is common to multiple projects in the portfolio is over-allocated.  
+- Determine whether a resource who is common to multiple projects in the portfolio is over-allocated.  
   
--   View progress as team members update work hours in Team Foundation.  
+- View progress as team members update work hours in Team Foundation.  
   
- Resource rollup does not support the following scenarios:  
+  Resource rollup does not support the following scenarios:  
   
--   Billing work based on the number of hours that a team member worked per day. Team Foundation reports the total number of hours worked per team member per task but not how many hours each team member worked per day. To provide accurate week-by-week reporting of hours worked, team members should track this by using the timesheets in Project Server.  
+- Billing work based on the number of hours that a team member worked per day. Team Foundation reports the total number of hours worked per team member per task but not how many hours each team member worked per day. To provide accurate week-by-week reporting of hours worked, team members should track this by using the timesheets in Project Server.  
   
--   Tracking work per resource based on work items that are successively assigned to multiple team members.  When team members reassign a work item with actual work, Team Foundation credits the person to whom the item is assigned currently with all work that has been completed so far. To track accurately the work that each team member performed, you must create separate tasks for each team member.  
+- Tracking work per resource based on work items that are successively assigned to multiple team members.  When team members reassign a work item with actual work, Team Foundation credits the person to whom the item is assigned currently with all work that has been completed so far. To track accurately the work that each team member performed, you must create separate tasks for each team member.  
   
 ##  <a name="ViewingAvailability"></a> Viewing Resource Availability  
  Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](http://go.microsoft.com/fwlink/?LinkId=207284).  
@@ -45,23 +45,23 @@ ms.date: 01/12/2017
   
  Before you view work estimates or resource availability, you should publish the enterprise project plan so that Project Server has the most recent updates. For resource rollup, a two-pass sequence is required to capture the allocation of work to resources in Project Server. The following sequence of actions must occur for resource rollup data to flow completely from Team Foundation to Project Server:  
   
-1.  Team members submit a parent work item with one or more child tasks to the enterprise project plan.  
+1. Team members submit a parent work item with one or more child tasks to the enterprise project plan.  
   
-2.  For the first status update, the synchronization engine submits an update to Project Server with an initial rollup that allocates all work to the primary task owner.  
+2. For the first status update, the synchronization engine submits an update to Project Server with an initial rollup that allocates all work to the primary task owner.  
   
-3.  The project manager accepts the status update.  
+3. The project manager accepts the status update.  
   
-4.  The project manager publishes the project plan.  
+4. The project manager publishes the project plan.  
   
-5.  For subsequent status updates, the synchronization engine submits updates that contain the complete rollup of work that is allocated to each valid user. Also, the engine submits updates for any changes to work, to assignment fields, or to the tree hierarchy for work items.  
+5. For subsequent status updates, the synchronization engine submits updates that contain the complete rollup of work that is allocated to each valid user. Also, the engine submits updates for any changes to work, to assignment fields, or to the tree hierarchy for work items.  
   
-6.  The project manager accepts the status update.  
+6. The project manager accepts the status update.  
   
-7.  The project manager publishes the project plan.  
+7. The project manager publishes the project plan.  
   
- Project Server can store resource rollup information from Team Foundation only for valid resources. For a resource to be valid, the user name must be added to the enterprise resource pool and the project resource pool, and the required permissions to submit status updates in Project Server must have been granted to the user.  
+   Project Server can store resource rollup information from Team Foundation only for valid resources. For a resource to be valid, the user name must be added to the enterprise resource pool and the project resource pool, and the required permissions to submit status updates in Project Server must have been granted to the user.  
   
- When a rollup task is submitted that contains a child task whose assigned user is an invalid resource, the work for the invalid resource is allocated to the primary owner or active resource for the summary task. Status errors about assignments for unmapped child work items are logged to the parent work item. To resolve these reallocations, you must find the tasks that contain a failed submit status and resolve the issue. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
+   When a rollup task is submitted that contains a child task whose assigned user is an invalid resource, the work for the invalid resource is allocated to the primary owner or active resource for the summary task. Status errors about assignments for unmapped child work items are logged to the parent work item. To resolve these reallocations, you must find the tasks that contain a failed submit status and resolve the issue. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ##  <a name="RollupCalculations"></a> Rollup Information from Team Foundation  
  Rollup is calculated for mapped work items that contain child tasks. Mapped work items have the **Submit to Project Server** field set to **Yes**. The **Remaining Work** and **Completed Work** fields of parent tasks contain the sum of the values of these work-item fields defined for their child tasks. In addition, the synchronization engine provides a rollup of all resources that are assigned to all child tasks and their related work. The engine also stores this information in the Project Server Assignment Data field.  
@@ -71,13 +71,13 @@ ms.date: 01/12/2017
   
  Rollup calculations obey the following rules:  
   
--   Apply only to non-mapped work items that are child items whose parents are mapped and set to be published to an enterprise project plan.  
+- Apply only to non-mapped work items that are child items whose parents are mapped and set to be published to an enterprise project plan.  
   
--   Ignore child items that are mapped to Project tasks to avoid double-counting of work in the enterprise project plan.  
+- Ignore child items that are mapped to Project tasks to avoid double-counting of work in the enterprise project plan.  
   
--   Support hierarchies of tasks that contain multiple levels of nesting, that is, parents that contain child items that contain child items.  
+- Support hierarchies of tasks that contain multiple levels of nesting, that is, parents that contain child items that contain child items.  
   
- As rollup data in Team Foundation changes, the synchronization engine creates status updates to reflect the changes.  
+  As rollup data in Team Foundation changes, the synchronization engine creates status updates to reflect the changes.  
   
 ### Rollup of Work Items from Team Foundation to Tasks in Project  
  The following workflow illustrates how work items in Team Foundation roll up into tasks in Project:  

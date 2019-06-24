@@ -34,6 +34,7 @@ This article provides a short dictionary of terms and available tools used in tr
 -->
 
 ## Capacity 
+
 Capacity correlates to actual task time, either hours or days, that an individual or a team has to work. Azure DevOps provides a Capacity tool for each team's sprint to set capacity. Teams typically set capacity when they plan to create tasks and estimate the time it takes to complete a task. 
 
 By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. Learn more: [Set sprint capacity](set-capacity.md). 
@@ -41,6 +42,7 @@ By setting team capacity, the team knows exactly the total number of work hours 
 ![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
 
 ## Capacity bars 
+
 With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: 
 - Tasks are assigned with non-zero remaining work  
 - Change in remaining work  
@@ -54,13 +56,16 @@ Learn more: [Adjust work to fit sprint capacity](adjust-work.md).
 
 
 ## Daily scrum meetings
+
 Daily Scrum meetings help teams stay focused on what they need to do to maximize their ability to meet their sprint commitments. The team's Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less. Learn more: [Scrum best practices, Daily scrum meeting](best-practices-scrum.md#daily-scrum-meetings).   
 
 
 <a id="forecast" />
+
 ## Forecast
+
 The forecast tool helps team plan their sprints by showing them the backlog items that can be completed in future sprints based on work item estimates and a set velocity. 
-As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: [Forecast your product backlog](forecast.md).
+As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: <a href="forecast.md" data-raw-source="[Forecast your product backlog](forecast.md)">Forecast your product backlog</a>.
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
@@ -93,6 +98,7 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 [!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
 
 <a id="sbc" />
+
 ## Sprint burndown chart
 
 The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](sprint-burndown.md). 
@@ -104,17 +110,22 @@ The sprint burndown chart reflects the progress made by a team in completing all
 Sprint goals are used to focus sprint activities. The goal summarizes what the team wants to accomplish by the end of the sprint. Learn more: [Scrum best practices, Set sprint goals](best-practices-scrum.md#set-sprint-goals).  
 
 ## Sprint planning 
+
 The Sprint planning meeting occurs at the start of a sprint and is when the product owner and team agree on a set of sprint goals and work.  Learn more: [Scrum best practices, Sprint planning meetings](best-practices-scrum.md#assign-work-sprint-meeting).  
 
 ## Sprint retrospective meetings
+
 The Sprint review or retrospective meeting occurs at the end of a sprint and is when the team demonstrates the work that they completed during the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify  changes that they want to see. Learn more: [Scrum best practices, Sprint retrospective meeting](best-practices-scrum.md#sprint-retrospective-meeting).  
 
 ## Task  
+
 A type of work item used to track estimated and remaining work. In Scrum a task is usually defined to range between four and twelve hours. Defining tasks are essential for monitoring sprint burndown, working with team capacity, and using the [Taskboard](#taskboard). Tasks are linked to their parent product backlog items or user stories. Learn more: [Add tasks to backlog items](add-tasks.md). 
 
 <a id="taskboard" />
+
 ## Taskboard 
-A taskboard provides an interactive progress board for work required to complete a team's sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother [sprint burndown chart](#sbc).  Learn more: [Taskboard](task-board.md).
+
+A taskboard provides an interactive progress board for work required to complete a team&#39;s sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother <a href="#sbc" data-raw-source="[sprint burndown chart](#sbc)">sprint burndown chart</a>.  Learn more: <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a>.
 
 ![taskboard](_img/ALM_DS_Task_board_S.png)
 
@@ -127,9 +138,11 @@ A member who has been added to a project or organization who has been added to a
 To add users to a team, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md).
 
 ## Technical debt 
+
 Technical debt includes anything the team must do to deploy production quality code and keep it running in production. Examples are bugs, performance issues, operational issues, accessibility, and others. Learn more about how to minimize technical debt: [What is Agile Development?](/learn/agile/what-is-agile-development).  
 
 ## Triage meetings 
+
 Triage meetings are used to review and prioritize the backlog and bugs assigned to a team. Additional details, such as estimates, acceptance criteria, and more may be added to the work items. Typically, a product owner runs triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them. 
 Learn more: [Triage work items](../queries/triage-work-items.md).
 

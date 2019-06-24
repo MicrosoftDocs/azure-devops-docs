@@ -10,9 +10,9 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 21
+# Team Foundation Service updates - Jan 21
 
-##Explore and Compare
+## Explore and Compare
 
 Just one small update for everyone in this sprint. In our continued effort to improve the web based version control experience we added some handy new functionality to changesets. You’ll now see a dropdown menu next to each file in a changeset. Clicking the dropdown provides a few new options including comparing to either the previous version or latest version, downloading the file, and exploring the source tree as of this version.
 

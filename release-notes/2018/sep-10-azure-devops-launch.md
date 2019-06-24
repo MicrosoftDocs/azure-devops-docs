@@ -70,7 +70,7 @@ Also, when you use the app, build results are made available in GitHub’s new [
 To get started, install the app [from the GitHub Marketplace](https://github.com/marketplace/azure-pipelines/) into your GitHub account or organization. You can also purchase additional parallel jobs with an existing GitHub payment account instead of a separate Azure account. Pricing is the same either way.
 
 > [!div class="mx-imgBorder"]
-![Azure Pipelines app in GitHub Marketplace](_img/launch_02.png)
+> ![Azure Pipelines app in GitHub Marketplace](_img/launch_02.png)
 
 ### Build open source projects with Azure Pipelines for free
 
@@ -94,7 +94,7 @@ YAML-based build pipelines are now broadly available. Automate your continuous i
 A new wizard simplifies this process of creating YAML-based build pipelines with GitHub and Azure Repos. Once you choose a repository to build, a pipeline will automatically be created if it contains a YAML file. Otherwise, Azure Pipelines will analyze your repository and recommend a YAML-based template for building your project. Just click **Save and run** to create a pull request for the suggested YAML and run the first build. Continuous integration and pull request triggers will be enabled automatically.
 
 > [!div class="mx-imgBorder"]
-![New pipeline wizard](_img/launch_01.png)
+> ![New pipeline wizard](_img/launch_01.png)
 
 ### Manage build pipelines using the new Builds page
 
@@ -104,7 +104,7 @@ A new wizard simplifies this process of creating YAML-based build pipelines with
 We are making several improvements and rolling out a new version of the **Builds** page. This new version combines the directory of all your build pipelines and the list of current builds so that you can quickly navigate across your project's builds to see their status. It also includes a preview of test analytics for the selected pipeline.
 
 > [!div class="mx-imgBorder"]
-![New Builds page](_img/launch_03.png)
+> ![New Builds page](_img/launch_03.png)
 
 ### Rebuild GitHub pull request builds
 
@@ -143,7 +143,7 @@ In this update, several build, test, and deployment tools have been added to the
 Knowing the changes that are getting deployed with a release is important to track improvements to the app. Now you can get the list of commits made in GitHub repos and the associated GitHub issues that are being deployed with a release.
 
 > [!div class="mx-imgBorder"]
-![Commits for a release](_img/launch_05.png)
+> ![Commits for a release](_img/launch_05.png)
 
 ### Manage build and deployment completion emails better using improved formatting
 
@@ -195,7 +195,7 @@ As an extension contributor you will notice that extension categories have been 
 Although we've moved to the new `dev.azure.com` domain name as the URL for new organizations, you'll be able to continue accessing your organization using the `visualstudio.com` domain, as usual. If you'd like to change your URL to be based on `dev.azure.com`, an organization administrator (Project Collection Administrator) can change this from the organization settings page. Although adopting the new domain name won't redirect every request, any request to the root URL of the organization and links from many email and web-based links will change.
 
 > [!div class="mx-imgBorder"]
-![Org URL setting](_img/launch_04.png)
+> ![Org URL setting](_img/launch_04.png)
 
 We will make the move to the new URL gradually based on customer feedback. It will start as opt-in, then later we will make it the default for organizations. We have yet to set a timeline for deliberately moving organizations away from the `visualstudio.com` domain.
 
@@ -221,7 +221,7 @@ See the [Provide Stakeholders access to edit build and release pipelines](/azure
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

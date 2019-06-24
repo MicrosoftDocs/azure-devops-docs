@@ -558,7 +558,7 @@ Encapsulates the properties of an operator constraint. An operator constraint de
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }
+The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
 
 
 | Field        | Type      | Notes

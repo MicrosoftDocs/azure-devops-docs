@@ -40,4 +40,8 @@ Most DevOps settings are made at the project-level. You configure agent and depl
 
 - [Set test retention policies](../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
+## Audit
+
+- [Access, export, and filter audit logs](azure-devops-auditing.md)
+
 

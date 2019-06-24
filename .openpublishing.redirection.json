@@ -132,17 +132,22 @@
     },
     {
       "source_path": "docs/artifacts/maven/delete-artifact.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/npm/deprecate-unpublish.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/nuget/unlist-delete.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/concepts/deleted-packages.md",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -282,7 +287,7 @@
     },
     {
       "source_path": "docs/package/maven/delete-artifact.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -302,7 +307,7 @@
     },
     {
       "source_path": "docs/package/npm/deprecate-unpublish.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -362,7 +367,7 @@
     },
     {
       "source_path": "docs/package/nuget/unlist-delete.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -902,7 +907,7 @@
     },
     {
       "source_path": "docs/package/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -1057,7 +1062,7 @@
     },
     {
       "source_path": "docs/build-release/actions/build-yaml-get-started.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-yaml",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
     },
     {
@@ -1187,7 +1192,7 @@
     },
     {
       "source_path": "docs/marketplace/xamarin-univ.md",
-      "redirect_url": "/azure/devops/organizations/billing/xamarin-univ",
+      "redirect_url": "https://university.xamarin.com/",
       "redirect_document_id": false
     },
     {
@@ -1427,7 +1432,7 @@
     },
     {
       "source_path": "docs/build-release/define/create.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-designer",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
     },
     {
@@ -1862,7 +1867,7 @@
     },
     {
       "source_path": "docs/build-release/get-started/ci-cd-part-1.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-designer",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
     },
     {
@@ -2202,7 +2207,7 @@
     },
     {
       "source_path": "docs/package/get-started/nuget/remove.md",
-      "redirect_url": "/azure/devops/artifacts/concepts/deleted-packages",
+      "redirect_url": "/azure/devops/artifacts/how-to/delete-and-recover-packages",
       "redirect_document_id": false
     },
     {
@@ -4927,7 +4932,7 @@
     },
     {
       "source_path": "docs/work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields",
+      "redirect_url": "/azure/devops/reference/mapping/index",
       "redirect_document_id": false
     },
     {
@@ -6032,7 +6037,7 @@
     },
     {
       "source_path": "docs/report/guidance/analytics-widgets-VSTS.md",
-      "redirect_url": "/azure/devops/report/analytics/analytics-widgets",
+      "redirect_url": "/azure/devops/report/dashboards/analytics-widgets",
       "redirect_document_id": false
     },
     {
@@ -6212,12 +6217,7 @@
     },
     {
       "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/organizations/billing/change-number-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
+      "redirect_url": "/azure/devops/organizations/billing/change-number-paid-extension-users?view=azure-devops#change-number-of-paid-users",
       "redirect_document_id": false
     },
     {
@@ -6272,18 +6272,18 @@
     },
     {
       "source_path": "docs/build-release/actions/build-yaml.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-yaml",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/build/yaml.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-yaml",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/ci-cd-part-1.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-designer",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/scripts/git-commands.md",
@@ -6657,12 +6657,12 @@
     },
     {
       "source_path": "docs/build-release/concepts/process/multiple-phases.md",
-      "redirect_url": "/azure/devops/pipelines/process/phases",      
+      "redirect_url": "/azure/devops/pipelines/process/phases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/process/multiple-phases.md",
-      "redirect_url": "/azure/devops/pipelines/process/phases",      
+      "redirect_url": "/azure/devops/pipelines/process/phases",
       "redirect_document_id": true
     },
     {
@@ -8417,7 +8417,7 @@
     },
     {
       "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
-      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -8636,11 +8636,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/billing/change-number-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/change-number-paid-extension-users",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/billing/index.md",
       "redirect_url": "/azure/devops/organizations/billing/index",
       "redirect_document_id": true
@@ -8652,8 +8647,8 @@
     },
     {
       "source_path": "docs/billing/reduce-cancel-paid-vsts-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/reduce-cancel-paid-users",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users#decrease-amount-of-paid-users",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/set-up-billing-for-your-organization-vs.md",
@@ -8672,8 +8667,8 @@
     },
     {
       "source_path": "docs/billing/xamarin-univ.md",
-      "redirect_url": "/azure/devops/organizations/billing/xamarin-univ",
-      "redirect_document_id": true
+      "redirect_url": "https://university.xamarin.com/",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/set-up-billing-for-your-account.md",
@@ -10092,7 +10087,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields",
+      "redirect_url": "/azure/devops/reference/mapping/index",
       "redirect_document_id": false
     },
     {
@@ -11322,7 +11317,7 @@
     },
     {
       "source_path": "docs/report/analytics/analytics-widgets-vsts.md",
-      "redirect_url": "/azure/devops/report/analytics/analytics-widgets",
+      "redirect_url": "/azure/devops/report/dashboards/analytics-widgets",
       "redirect_document_id": false
     },
     {
@@ -11372,7 +11367,7 @@
     },
     {
       "source_path": "docs/organizations/accounts/change-application-policies-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/change-application-policies",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
@@ -11407,7 +11402,12 @@
     },
     {
       "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management-in-vsts.md",
-      "redirect_url": "/azure/devops/organizations/accounts/migrate-to-group-based-resource-management",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management.md",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -11738,6 +11738,16 @@
     {
       "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
       "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/tfs-extension-faq.md",
+      "redirect_url": "/azure/devops/marketplace/faq-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/marketplace-billing-qa.md",
+      "redirect_url": "/azure/devops/marketplace/faq-extensions",
       "redirect_document_id": false
     }
   ]

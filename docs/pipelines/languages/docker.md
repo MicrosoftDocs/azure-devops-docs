@@ -6,11 +6,9 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.reviewer: vijayma
-ms.custom: seodec18
-ms.date: 03/27/2019
+ms.author: vijayma
+author: vijayma
+ms.date: 5/5/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -36,17 +34,15 @@ This guidance explains how to automatically build Docker images and push them to
 ::: moniker-end
 
 <a name="example"></a>
-## Get started
-
-Follow these instructions to set up a pipeline for a sample Docker application.
+## Create your first pipeline
 
 ::: moniker range="azure-devops"
 
+> Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
+
 ### Get the code
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker

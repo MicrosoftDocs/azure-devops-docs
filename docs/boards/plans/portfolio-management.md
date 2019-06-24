@@ -82,6 +82,7 @@ All work items under the Fabrikam/Account Management area path appear in their b
 
 
 <a id="feature-team-backlog"> </a>
+
 ## Feature team backlog ownership and view of progress 
 
 Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and taskboards. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
@@ -128,6 +129,7 @@ The Customer Profile feature team's view of the backlog only includes those work
 
  
 ## Assign work from a common backlog
+
 While the hierarchical team and backlog structure works well to support autonomous teams to take ownership of their backlog, it also supports assigning work to teams from a common backlog. During a sprint or product planning meeting, product owners and development leads can review the backlog and assign select items to various teams, by assigning them to the feature team Area Path. 
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.

@@ -38,10 +38,10 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </p>
 <p>By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. And, conveniently, you can set holidays or shared days off taken by the entire team. </p>
 <p>Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. </p>
-<p>You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.</p>
+<p>You <a href="../../organizations/settings/set-working-days.md" data-raw-source="[set recurring days off](../../organizations/settings/set-working-days.md)">set recurring days off</a>, such as weekends, through team settings.</p>
 </td>
 <td>
-![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
+<img src="_img/team-capacity-planning-tool.png" alt="Team capacity planning tool"/> 
 </td>
 </tr>
 <tr valign="top" > 
@@ -61,11 +61,11 @@ At the start of each sprint, you'll want to plan the work that your team can com
 <p>Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day till the end of the sprint.  </p>
 </li>
 </ul>
-<p>Here's how to interpret the capacity colors:</p>
-![These colors help you distinguish capacity](_img/capacity-planning-tool-color-chart.png)
+<p>Here&#39;s how to interpret the capacity colors:</p>
+<img src="_img/capacity-planning-tool-color-chart.png" alt="These colors help you distinguish capacity"/>
 </td>
 <td width="455px">
-![Capacity bars](_img/ALM_DS_CapacityBars_S.png)
+<img src="_img/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/>
 </td>
 </tr>
 </table>
@@ -80,11 +80,11 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>
 <b>Taskboard</b>
 </p>
-<p>Your [Taskboard](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
+<p>Your <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a> provides an interactive progress board for work required to complete the sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. </p>
 <p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
 </td>
 <td width="520px">
-![taskboard](_img/ALM_DS_Task_board_S.png)
+<img src="_img/ALM_DS_Task_board_S.png" alt="taskboard"/>
 </td>
 </tr>
 <tr valign="top" > 
@@ -92,11 +92,11 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>
 <b>Sprint burndown chart</b>
 </p>
-<p>You use the [sprint burndown chart](sprint-burndown.md) to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
-<p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
+<p>You use the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
+<p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
 </td>
 <td>
-![Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
+<img src="_img/ALM_DS_SprntBD_Chrt_S.png" alt="Sprint burndown chart"/>
 </td>
 </tr>
 </table>
@@ -106,32 +106,32 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 ##  Velocity and forecast 
 <p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
 <p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
-<p>After your team has worked several sprints, they can use the [velocity chart](../../report/dashboards/velocity-chart-data-store.md) and [forecast](forecast.md) tool to estimate work that can be accomplished in future sprints.  </p>
+<p>After your team has worked several sprints, they can use the <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity chart](../../report/dashboards/velocity-chart-data-store.md)">velocity chart</a> and <a href="forecast.md" data-raw-source="[forecast](forecast.md)">forecast</a> tool to estimate work that can be accomplished in future sprints.  </p>
 
 <table valign="top" > 
 <tr valign="top" > 
 <td>
 <p>
-<b>**Velocity chart**</b>
+<b><strong>Velocity chart</strong></b>
 </p>
 <p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
 <p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
 <p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
 </td>
 <td width="500px">
-![Velocity chart](_img/velocity-chart.png)
+<img src="_img/velocity-chart.png" alt="Velocity chart"/>
 </td>
 </tr>
 <tr valign="top" > 
 <td>
 <p>
-**Forecast tool**
+<strong>Forecast tool</strong>
 </p>
 <p>You can use the forecast tool to get an idea of how many and which items you can complete within a sprint. </p>
 <p>*By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. *</p>
 </td>
 <td>
-![Forecast tool](_img/forecast-tool.png)
+<img src="_img/forecast-tool.png" alt="Forecast tool"/>
 </td>
 </tr>
 </table>  

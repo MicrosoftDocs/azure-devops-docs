@@ -21,17 +21,15 @@
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
-
 <tr>
 <td align="left">Set team notifications or alerts 
 </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Set project-level notifications or alerts 
 </td>
@@ -39,64 +37,57 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">READMEs</td>
 <td>See Note 1</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">View Project Wikis</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">View Code Wikis</td>
 <td></td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provision or create a Wiki</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Publish Code as Wiki</td>
 <td> </td>
 <td> </td>
-<td>![check mark](_img/checkmark.png) </td>
+<td><img src="_img/checkmark.png" alt="check mark"/> </td>
 <td>See Note 2 </td>
 <td>See Note 2</td>
 </tr>
-
 <tr>
 <td align="left">View the project page
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Edit the project page
 </td>
@@ -104,61 +95,57 @@
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Navigate using the Project pages
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Request feedback</td>
 <td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provide feedback</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Powerful semantic code search
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
-
 <tr>
 <td align="left">Powerful semantic work tracking search
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
+
+
 #### Notes
+
 1. Can view project READMEs, but not READMEs defined for a repository.
 2. Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.
 
@@ -187,17 +174,15 @@
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
-
 <tr>
 <td align="left">Set team notifications or alerts 
 </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Set project-level notifications or alerts 
 </td>
@@ -205,66 +190,57 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">READMEs</td>
 <td>See Note 1</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">View Project Wikis</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">View Code Wikis</td>
 <td></td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provision or create a Wiki</td>
 <td> </td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Publish Code as Wiki</td>
 <td> </td>
 <td> </td>
-<td>![check mark](_img/checkmark.png) </td>
+<td><img src="_img/checkmark.png" alt="check mark"/> </td>
 <td>See Note 2 </td>
 <td>See Note 2</td>
 </tr>
-
-
-
 <tr>
 <td align="left">View the project page
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Edit the project page
 </td>
@@ -272,60 +248,56 @@
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Navigate using the Project pages
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Request feedback</td>
 <td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provide feedback</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
+<td><img src="_img/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">Powerful semantic code search
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
-
 <tr>
 <td align="left">Powerful semantic work tracking search
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
 </table>
+
+
 #### Notes
 1. Can view project READMEs, but not READMEs defined for a repository.
 2. Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.

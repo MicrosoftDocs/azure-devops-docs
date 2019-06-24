@@ -56,14 +56,14 @@ To learn more about extensions, see [Install free extensions](../../../marketpla
 
 You can [browse the Marketplace](https://marketplace.visualstudio.com/search?term=control%20group%20tab%20page&target=vsts&category=Plan%20and%20track&hosting=cloud&sortBy=Relevance) to determine what extension(s) you want to add.
 
-0. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
+1. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
 
-0. Select the extension you want to add. Here we choose the Work item checklist.
+1. Select the extension you want to add. Here we choose the Work item checklist.
 
-0. Select the organization you want to add it to and choose **Install**.  
+2. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
@@ -71,7 +71,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	> [!IMPORTANT]  
 	> Extensions you install are added to all WITs across all processes.
 
-0. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
+3. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Group extension on Bug work item form](_img/process/cpfield-add-checklist-extension.png) 
@@ -80,13 +80,13 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 <a id="add-field-control"></a>
 ## Add a field-level contribution or custom control 
 
-0. Install the [custom control](#add-extension) as discussed in the previous section.  
+1. Install the [custom control](#add-extension) as discussed in the previous section.  
   
-0. Open **Settings>Work>Process** from a work item form. For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
+1. Open **Settings>Work>Process** from a work item form. For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
 
-0. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the custom control. Alternatively, you can specify an existing field, inherited or custom. 
+2. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the custom control. Alternatively, you can specify an existing field, inherited or custom. 
 
-0. With the WIT selected, choose **Add custom control**. 
+3. With the WIT selected, choose **Add custom control**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
@@ -94,34 +94,34 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	> [!NOTE]    
 	> If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been recently installed. 
 	
-0. Choose the custom control you want from the menu of options. 
+4. Choose the custom control you want from the menu of options. 
 
 	For example, here we choose the Toggle control that you can associate with a Boolean field.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-1. Choose the **Options** tab and fill out the dialog box. The options you need to specify depend on the custom control you've selected.
+5. Choose the **Options** tab and fill out the dialog box. The options you need to specify depend on the custom control you've selected.
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
 	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
-0. (Optional) Open the **Layout** tab and specify the label for the field. 
+6. (Optional) Open the **Layout** tab and specify the label for the field. 
  
 	Fill in any additional required fields. Review the extension description for guidance. 
 
-0.	Verify the working of the custom control by opening a work item of the type you modified. You may need to refresh your browser to see your changes.  
+7. Verify the working of the custom control by opening a work item of the type you modified. You may need to refresh your browser to see your changes.  
 
-	Here, we show how the control appears by default with the checkbox and then with the toggle control.  
+   Here, we show how the control appears by default with the checkbox and then with the toggle control.  
 
-	<table>
-	<tr><th>Boolean field with checkbox</th>
-	<th>Boolean field with toggle control</th></tr> 
-	<tr><td>![Boolean field with checkbox](_img/process/boolean-checkbox.png)</td>
-	<td>![Boolean field with toggle control](_img/process/boolean-toggle.png)</td>
-	</tr> 
-	</table>
+   <table>
+   <tr><th>Boolean field with checkbox</th>
+   <th>Boolean field with toggle control</th></tr> 
+   <tr><td><img src="_img/process/boolean-checkbox.png" alt="Boolean field with checkbox"/></td>
+   <td><img src="_img/process/boolean-toggle.png" alt="Boolean field with toggle control"/></td>
+   </tr> 
+   </table>
 
 
 ## Group-level and page-level contributions

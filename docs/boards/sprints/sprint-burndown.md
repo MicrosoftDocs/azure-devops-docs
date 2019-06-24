@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 3/29/2019
@@ -15,7 +16,7 @@ ms.date: 3/29/2019
 
 
 # Monitor sprint burndown 
- 
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
@@ -50,21 +51,19 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 <tr valign="top">
 <td width="35%">
 
-<p>A healthy sprint burndown chart will look something like this. The *Ideal Trend* line connects the two points: </p>
--	**(1)** Team's total capacity at the start of the sprint     
--	**(2)** 0 Remaining Work at the end of the sprint.  
-
+<p>A healthy sprint burndown chart will look something like this. The <em>Ideal Trend</em> line connects the two points: </p>
+-   <strong>(1)</strong> Team&#39;s total capacity at the start of the sprint<br/>-   <strong>(2)</strong> 0 Remaining Work at the end of the sprint.<br/>
 <p>The slope represents the rate at which the team needs to burn down work to finish the sprint on time. </p>
 
 <p>The actual graph, the blue area, represents the total amount of planned sprint work and how it changes throughout the course of the sprint. The blue area corresponds to the sum of all Remaining Work set for all sprint tasks, and possibly bugs, that have the current sprint as their iteration path.  </p>
 </td>
 <td>
-![Healthy sprint burndown chart](_img/ALM_SB_IntroHealthyChart.png)
+<img src="_img/ALM_SB_IntroHealthyChart.png" alt="Healthy sprint burndown chart"/>
 </td>
 </tr>
 </table>
- 
- 
+
+
 
 <a id="open-chart">  </a>
 
@@ -77,19 +76,19 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+    ![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
 2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -97,24 +96,24 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+    To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
-	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
+    The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint whose burndown chart you want to view. 
+1. Choose the sprint whose burndown chart you want to view. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -152,9 +151,9 @@ In particular you can review your sprint burndown charts to show the team patter
 |![Sprint 1](_img/ALM_SB_Chart_S1_225.png) |![Sprint 2](_img/ALM_SB_Chart_S2_225.png)  |![Sprint 3](_img/ALM_SB_Chart_S3_225.png) |
 
 Teams may find it useful to review this record periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
-*	How does our projected velocity match up to our actual velocity? 
-*	How can we more accurately determine how much we will be able to accomplish in a sprint? 
-*	How can we complete work at a more regular pace throughout the sprint?
+*   How does our projected velocity match up to our actual velocity? 
+*   How can we more accurately determine how much we will be able to accomplish in a sprint? 
+*   How can we complete work at a more regular pace throughout the sprint?
 
 
 ## Required and recommended activities   
@@ -162,15 +161,15 @@ Teams may find it useful to review this record periodically during their sprint 
 In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
 
 ### Required activities: 
-*	[Schedule sprints for your team](define-sprints.md).  
-*	[Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
-*	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
+*   [Schedule sprints for your team](define-sprints.md).  
+*   [Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+*   [Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
 
 ### Recommended activities:
-*	Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
-*	Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
-*	Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
-*	At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
+*   Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
+*   Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
+*   Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
+*   At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
 
 
 <a id="empty-chart">  </a>
@@ -182,7 +181,7 @@ If your sprint burndown chart appears empty, check the following:
 
 
 <a id="past-sprints">  </a>
-##Current and past sprint burndown charts
+## Current and past sprint burndown charts
 As you complete each sprint, the system maintains a history of your activity. 
 
 ::: moniker range=">= azure-devops-2019"
@@ -206,7 +205,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
 ::: moniker-end
 
-##Try this next
+## Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
 You can use your team [velocity](../../report/dashboards/velocity-chart-data-store.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
@@ -215,13 +214,13 @@ You can use your team [velocity](../../report/dashboards/velocity-chart-data-sto
 ## Related articles
 
 You can learn more about defining, planning, and executing your sprints from these topics:  
-*	[Schedule sprints](define-sprints.md)  
-*	[Sprint planning](assign-work-sprint.md)  
-*	[taskboard](task-board.md)  
+*   [Schedule sprints](define-sprints.md)  
+*   [Sprint planning](assign-work-sprint.md)  
+*   [taskboard](task-board.md)  
 
 And, from these industry resources:  
-*	[Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
-*	[Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
+*   [Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
+*   [Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
 TBD - Other types of burndown charts, Release burndown 
@@ -234,4 +233,3 @@ For on-premises deployments, you can [specify the format that appears&mdash;**h*
 ::: moniker-end
 
 
- 

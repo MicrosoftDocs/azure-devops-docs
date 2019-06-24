@@ -162,7 +162,7 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 
 > [!div class="mx-imgBorder"]  
 > ![Build and Release, Build definition](_img/breadcrumbs/build-bc-folder.png)
->  
+> 
 ::: moniker-end
 
 

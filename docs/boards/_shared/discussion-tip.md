@@ -45,7 +45,7 @@ A full audit trail of all  edited and deleted comments is maintained in the <str
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019" 
 
-Use the [**@mention** control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Use the [<strong>@mention</strong> control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 To reference a work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 

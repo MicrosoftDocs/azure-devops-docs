@@ -55,12 +55,12 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](_img/process/process-new-portfolio-backlog.png) 
 
-0. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click Add. 
+1. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click Add. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](_img/process/process-add-portfolio-backlog-dialog.png) 
 
-0. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
+1. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
 
 	<img src="_img/process/process-add-portfolio-backlog-dialog-save.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 1px solid #C3C3C3;" /> 
 

@@ -10,11 +10,11 @@ ms.author: douge
 author: yukom
 ---
 
-#Kanban split columns, inline adding and editing – Feb 18
+# Kanban split columns, inline adding and editing – Feb 18
 
 This week’s deployment brings a brand new look to our boards and some new functionality that many of you have been waiting for. Let’s jump right in…
 
-##Adding and editing directly from the board
+## Adding and editing directly from the board
 
 First, notice that all cards have a slightly updated look—cards are now a bit wider, and have a solid white background (instead of a colored background). Why the changes? We’re laying the groundwork for more customization options on the cards, including adornments, additional fields, and tags. Those customizations options aren’t ready in this deployment, but they’re coming soon, so stay tuned.
 
@@ -26,7 +26,7 @@ The Taskboard received similar styling updates. The **New item** button adds a T
 
 ![Taskboard: Adding new item](_img/2_18_02.png)
 
-##Split columns on the Kanban board
+## Split columns on the Kanban board
 
 Next, we’ve added a new feature to our Kanban board called “Split Columns”. Kanban teams use a pull model to move work through the board. To do this effectively, each column on your board is split into two subcolumns—Doing and Done. Moving a card into the Done column provides a clear signal that work is ready to progress, and that the card can be pulled by the person/team who owns that next stage.
 
@@ -34,7 +34,7 @@ Click the Customize Columns link on the toolbar to split any of the columns on y
 
 ![Splitting columns on the Kanban board](_img/2_18_03.png)
 
-##Assign multiple people to test suites
+## Assign multiple people to test suites
 
 We enabled this sprint the ability to invite multiple sign-off owners to run the same test cases. Right-click a test suite in the Test hub and you’ll be presented with a dialog to assign individuals and email them about the work. Doing so will iterate through each test case in the test suite and create a test for each individual. In the mail sent, a link is provided that takes the user directly to the tests assigned.
 

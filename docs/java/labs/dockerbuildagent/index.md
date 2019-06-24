@@ -57,44 +57,44 @@ In this task you will start an Azure DevOps Services build agent container using
 
     ![Click on the terminal icon in the Toolbar](../_img/dockerbuildagent/click-terminal.png)
 
-1. Enter the following command:
+2. Enter the following command:
 
     ```sh
     docker run -e Azure DevOps Services_ACCOUNT=<account> -e Azure DevOps Services_TOKEN=<pat> -v /var/run/docker.sock:/var/run/docker.sock --name Azure DevOps Servicesagent -it Azure DevOps Services/agent
     ```
 
     where:
-    - _account_ is your organization name (the bit before .visualstudio.com)
-    - _pat_ is your PAT
+   - _account_ is your organization name (the bit before .visualstudio.com)
+   - _pat_ is your PAT
 
-    You should see a message indicating "Listening for Jobs":
+     You should see a message indicating "Listening for Jobs":
 
-    ![The agent container running](../_img/dockerbuildagent/agent-container-running.png)
+     ![The agent container running](../_img/dockerbuildagent/agent-container-running.png)
 
-    > [!NOTE]
-    > This starts a docker container (called Azure DevOps Servicesagent) that has an Azure DevOps Services agent running inside it. The agent is connected to your organization and has also mounted the VM Docker socket so that the container can perform Docker operations (like building containers). It is created from a Dockerfile (listed below) that installs PhantomJS for running headless Selenium tests and configures Docker certs and environment variables. You can move this terminal to the side since the container is running interactively, so the prompt you are seeing is actually inside the container. Open a new terminal by clicking on the Terminal Emulator icon in the toolbar.
+     > [!NOTE]
+     > This starts a docker container (called Azure DevOps Servicesagent) that has an Azure DevOps Services agent running inside it. The agent is connected to your organization and has also mounted the VM Docker socket so that the container can perform Docker operations (like building containers). It is created from a Dockerfile (listed below) that installs PhantomJS for running headless Selenium tests and configures Docker certs and environment variables. You can move this terminal to the side since the container is running interactively, so the prompt you are seeing is actually inside the container. Open a new terminal by clicking on the Terminal Emulator icon in the toolbar.
 
-    ```dockerfile
-    # Dockerfile for custom Azure DevOps Services agent image with phantomjs and docker config
-    FROM microsoft/vsts-agent
+     ```dockerfile
+     # Dockerfile for custom Azure DevOps Services agent image with phantomjs and docker config
+     FROM microsoft/vsts-agent
 
-    # install phantomjs
-    RUN curl -L https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM.tar.bz2 > $PHANTOM.tar.bz2 && \
-    tar xvjf $PHANTOM.tar.bz2 -C /usr/local/share && \
-    ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/local/share/phantomjs && \
-    ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/local/bin/phantomjs && \
-    ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/bin/phantomjs
-    RUN apt-get update && apt-get install libfontconfig -y
+     # install phantomjs
+     RUN curl -L https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM.tar.bz2 > $PHANTOM.tar.bz2 && \
+     tar xvjf $PHANTOM.tar.bz2 -C /usr/local/share && \
+     ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/local/share/phantomjs && \
+     ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/local/bin/phantomjs && \
+     ln -sf /usr/local/share/$PHANTOM/bin/phantomjs /usr/bin/phantomjs
+     RUN apt-get update && apt-get install libfontconfig -y
 
-    # configure docker
-    COPY .docker /root/.docker/
-    ENV DOCKER_HOST=tcp://$HOSTNAME:2376 DOCKER_TLS_VERIFY=1
-    ```
+     # configure docker
+     COPY .docker /root/.docker/
+     ENV DOCKER_HOST=tcp://$HOSTNAME:2376 DOCKER_TLS_VERIFY=1
+     ```
 
-    > [!NOTE]
-    > `$HOSTNAME` is a variable that resolves in the setup script that executed when you set up your Azure VM.
+     > [!NOTE]
+     > `$HOSTNAME` is a variable that resolves in the setup script that executed when you set up your Azure VM.
 
-2. If your container stops running for some reason, you can run the following commands to restart and attach to it:
+3. If your container stops running for some reason, you can run the following commands to restart and attach to it:
 
     ```sh
     docker start Azure DevOps Servicesagent

@@ -110,7 +110,7 @@ Call a REST API and display the results in the grid control.
     // Load Azure DevOps Services controls
 	VSS.require(["VSS/Controls", "VSS/Controls/Grids"],
 		function (Controls, Grids) {
-	```
+    ```
 
 	to this:
 
@@ -122,7 +122,7 @@ Call a REST API and display the results in the grid control.
 
         // Get a WIT client to make REST calls to Azure DevOps Services
         var witClient = VSS_Service.getCollectionClient(TFS_Wit_WebApi.WorkItemTrackingHttpClient);
-	```
+    ```
 
 1. Call the API (```getWorkItems```) using the client service (```witClient```),
 with a callback that loads the grid control with the results.
@@ -146,7 +146,7 @@ with a callback that loads the grid control with the results.
         // This data source is rendered into the Grid columns defined above
         source: dataSource
     });
-	```
+    ```
 
 	to this:
 
@@ -177,7 +177,7 @@ with a callback that loads the grid control with the results.
             source: workItems
         }); 
     });
-	```
+    ```
 
 	This code assumes you have at least four work items in your project. If you don't create them before you try the action.
 
@@ -210,7 +210,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 			vstsContext.project.name + "/_apps/hub/" +
 			VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld";
 	}
-	```
+    ```
 
 	Refresh the page and try it again. It opens the Hello hub.
 
@@ -221,7 +221,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 		vstsContext.project.name + "/_apps/hub/" +
 		VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld?queryId=" +
 		actionContext.queryId;
-	```
+    ```
 
 1. Update ```hello-world.html``` to run the query from the action context instead of getting a hardcoded set of work items.
 
@@ -274,7 +274,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
             });
         });
     });
-	```
+    ```
 
 1. Run the action again from a query (not a folder) to see the results of that query in the Hello hub.
 

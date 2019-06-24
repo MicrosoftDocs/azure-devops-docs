@@ -71,7 +71,7 @@ Even with continuous security validation running against every change to help en
 
 Minimize security vulnerabilities by taking a holistic and layered approach to security including secure infrastructure, application architecture, continuous validation, and monitoring. DevSecOps practices enable your entire team to incorporate these security capabilities throughout the entire lifecycle of your application.  Establishing continuous security validation into your CI/CD pipeline can allow your application to stay secure while you are improving the deployment frequency to meet needs of your business to stay ahead of the competition.
 
-##Reference information
+## Reference information
 
 * [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 * [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool

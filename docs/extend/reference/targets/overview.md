@@ -9,7 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: article
 monikerRange: '>= tfs-2017'
-ms.date: 05/10/2018
+ms.date: 05/22/2018
 ---
 
 # Azure DevOps Services extensibility points
@@ -176,3 +176,12 @@ Tasks are responsible for performing work in a build or release. Learn how to [c
 ## Service hooks
 
 A "consumer" is the service that events are sent to in Service Hooks. An extension can contribute consumer services that can be configured by a user (or programmatically) to send events to that service See [contribute a service hooks consumer](../../develop/add-service-hook.md).
+
+## Features
+
+**Name:** Preview feature (hosted only)
+**Target ID:** ms.vss-web.managed-features
+ 
+**Name:** Feature (on-prem only)
+**Target ID:** ms.vss-web.managed-features-onprem
+

@@ -154,7 +154,7 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     FileList = @('PSModule.psm1',
              'PSGet.Format.ps1xml',
              'PSGet.Resource.psd1')
-   ```	     
+   ```       
 
 ### Package and send the module
 
@@ -168,30 +168,30 @@ We now have the module and the module manifest. We are ready to package it and s
 
     The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
 
-    * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
-    * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
-    * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
+   * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
+   * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
+   * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
-    ```xml
-    <?xml version="1.0"?>
-    <package >
-      <metadata>
-        <id>Get-Hello</id>
-        <version>1.0.0</version>
-        <authors>frantot</authors>
-        <owners>frantot</owners>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>The module says hello to the user</description>
-        <releaseNotes>This is the newest I know of.</releaseNotes>
-        <copyright>Copyright 2019</copyright>
-        <tags>Francis Totten</tags>
-        <dependencies>
-        </dependencies>
-      </metadata>
-    </package>
-    ```
+     ```xml
+     <?xml version="1.0"?>
+     <package >
+     <metadata>
+       <id>Get-Hello</id>
+       <version>1.0.0</version>
+       <authors>frantot</authors>
+       <owners>frantot</owners>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>The module says hello to the user</description>
+       <releaseNotes>This is the newest I know of.</releaseNotes>
+       <copyright>Copyright 2019</copyright>
+       <tags>Francis Totten</tags>
+       <dependencies>
+       </dependencies>
+     </metadata>
+     </package>
+     ```
 
-3. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
+2. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
 
      Package the module with the defined parameters within the `.nuspec` file:
     ```powershell

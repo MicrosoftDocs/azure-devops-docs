@@ -19,7 +19,12 @@ ms.date: 04/04/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-With Azure Boards, you can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You do this by adding one of these work item types&mdash;user stories, bugs, features, epics, and tasks&mdash;that the Agile process provides. As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
+With Azure Boards, you can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You do this by adding one of these work item types&mdash;user stories, bugs, features, epics, and tasks&mdash;that the Agile process provides. 
+
+> [!NOTE]  
+> If your project uses the Basic process, see [What is Azure Boards and the Basic process?](what-is-azure-boards-basic-process.md).  
+
+As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Workflow |
@@ -33,13 +38,7 @@ When you add a user story, bug, task, or feature, you create a work item. Each w
 
 Add epics to track significant business initiatives. Add features to track specific applications or set of work. Define user stories to track work that you'll assign to specific team members, and bugs to track code defects. Lastly, use tasks to track even smaller amounts of work for which you want to track time either in hours or days.
 
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](what-is-azure-boards-basic-process.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
-> - [**Agile process**](what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json)  
+
 
 ## Track work, implement Kanban
 
@@ -57,7 +56,7 @@ Add epics to track significant business initiatives. Add features to track speci
 
 ## Collaborate
 
-- Collaborate with others through the **Discussion** section of the work item form. Use **@mention**s and **#ID** controls to quickly include others in the conversation or link to other work items. To learn more, see [Discussion section](plan-track-work.md#discussion).  
+- Collaborate with others through the **Discussion** section of the work item form. Use <strong>@mention</strong>s and **#ID** controls to quickly include others in the conversation or link to other work items. To learn more, see [Discussion section](plan-track-work.md#discussion).  
 - Create dashboards that track status and trends of work being accomplished. To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md).  
 - Set notifications to get alerted when an issue is created or changed. To learn more, see [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).  
 - Choose to follow specific issues to get alerted when they're updated. To learn more, see [Follow a work item](../work-items/follow-work-items.md).  

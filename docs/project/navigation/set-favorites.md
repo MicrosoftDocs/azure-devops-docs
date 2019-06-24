@@ -28,24 +28,24 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="checklist"]   
-> * Project or team
-> * Dashboard
-> * Team backlog, board, shared query, or other Azure Boards view
-> * Repository
-> * Build and release definition   
-> * Test plans  
+>[!div class="checklist"]  
+> - Project or team
+> - Dashboard
+> - Team backlog, board, shared query, or other Azure Boards view
+> - Repository
+> - Build and release definition   
+> - Test plans  
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-> [!div class="checklist"]   
-> * Project 
-> * Shared query 
-> * Repository
-> * Build and release definition   
-> * Test plans  
+>[!div class="checklist"]  
+> - Project 
+> - Shared query 
+> - Repository
+> - Build and release definition   
+> - Test plans  
 
 ::: moniker-end
 
@@ -57,17 +57,17 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic+Test Plans** access level or equivalent.  
+* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.  
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 * You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
 * You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
-* To favorite test plans, you must have **Basic+Test Plans** access level or equivalent.   
+* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.   
 
 ::: moniker-end 
 
@@ -75,6 +75,7 @@ For details about the different access levels, see [About access levels](/azure/
 
 
 <a id="view-favorites">  </a>
+
 ## View personal favorites   
 
 ::: moniker range=">= azure-devops-2019"
@@ -91,12 +92,12 @@ Access views that you have favorited by choosing the ![ ](../../_img/icons/inbox
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. Access views that you have favorited by choosing the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+1. Access views that you have favorited by choosing the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
 
-0. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
+2. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, Favorites page](_img/favorites/project-page-favorites-horz.png)   
@@ -106,19 +107,21 @@ Access views that you have favorited by choosing the ![ ](../../_img/icons/inbox
 
 ::: moniker range=">= azure-devops-2019"
 
+<a id="team-artifact" />
+
 ## Favorite a project or team  
 
 1. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-vert.png)  
-<a id="team-artifact" />
-0. To favorite a team artifact, open **Boards>Boards** or **Boards>Backlogs**. Select the team you want to favorite from the team selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
+
+2. To favorite a team artifact, open <strong>Boards>Boards</strong> or <strong>Boards>Backlogs</strong>. Select the team you want to favorite from the team selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work>Boards, set team favorite](_img/favorites/set-team-favorite-vert.png)
 
-0. To favorite other team artifacts, choose the ![ ](../../_img/icons/team.png) team icon, and then choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to one of the listed artifacts. 
+3. To favorite other team artifacts, choose the ![ ](../../_img/icons/team.png) team icon, and then choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to one of the listed artifacts. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Phone team work artifacts](_img/favorites/view-team-artifacts-vert.png) 

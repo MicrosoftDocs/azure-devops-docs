@@ -66,17 +66,17 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-0. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+1. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
-0. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
+1. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
 
 	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process.  
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-0. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 

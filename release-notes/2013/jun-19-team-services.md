@@ -10,11 +10,11 @@ ms.author: douge
 author: yukom
 ---
 
-#Team Foundation Service updates - Jun 19
+# Team Foundation Service updates - Jun 19
 
 We’ve got a few updates to share as a part of today’s deployment.
 
-##Agile Portfolio Management
+## Agile Portfolio Management
 
 1. First, we made a couple of usability updates to the Agile Portfolio Management features announced and released back on June 3rd. 
 
@@ -26,7 +26,7 @@ Each backlog in the backlog explorer is now adorned with a clickable color bar t
 
 ![Backlog decomposition](_img/6_19_02.png)
 
-##Testing Updates
+## Testing Updates
 
 You can now easily transition from the Test hub on the web directly to Microsoft Test Manager (MTM) by clicking the Open using client button/context menu. Doing so will open up MTM (assuming that it has already been installed) and connect directly to your Team Project and test plan.
 
@@ -36,13 +36,13 @@ And, you can now edit the values for parameters in test steps directly through t
 
 ![Editing parameters during test execution](_img/6_19_04.png)
 
-##Out with the Red
+## Out with the Red
 
 Since the inception of the service we’ve used the color red to denote the administrative portion of the web interface.  Well, after listening to many of you tell us that red was not the right color (typically using very colorful language), we’ve gone ahead and made a change. The administrative pages of the service now use our standard blue color.
 
 ![New blue admin color](_img/6_19_05.png)
 
-##Terms of Service
+## Terms of Service
 
 Finally, you will notice after today’s update that we’re asking each user of the service to review their profile information and accept the terms of service and privacy statement again. When doing this, please ensure that your contact e-mail is up to date so that we can keep in touch and keep you up to speed on the latest changes and announcements related to the service.
 

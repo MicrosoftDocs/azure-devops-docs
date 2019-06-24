@@ -30,15 +30,13 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
 >
 > TfsMigrator for TFS 2018 Update 3 supports TFS 2018 Update 3.1 & Update 3.2 as well. If you run into an issue running TfsMigrator and are on that version, download the latest TfsMigrator version and try again. 
->
-> Support for TFS 2018 Update 3 imports will stop on Monday, June 10th 2019. Please complete your imports from TFS 2018 Update 3 before that date. Otherwise you will have to upgrade to Azure DevOps Server 2019 to continue with your import.
 
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
 
-* TFS 2018 Update 3, Update 3.1, and Update 3.2
 * Azure DevOps Server 2019
+* Azure DevOps Server 2019.0.1
 
 > [!NOTE]
 > The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 

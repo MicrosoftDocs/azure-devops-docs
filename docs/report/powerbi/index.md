@@ -22,15 +22,14 @@ With Power BI, you can quickly generate reports for your projects in Azure DevOp
 
 
 ## 5-Minute Quickstarts
+
  - [Create a Power BI report with an Analytics view](create-quick-report.md)
  
 ## Videos
 
 High-level overview of Power BI Desktop, from getting data and building a report to uploading this report to Power BI so it can be refreshed and shared with other users. Learn how to build stunning reports using Power BI Desktop.
 
-
-[!Video https://channel9.msdn.com/Events/Connect/2017/T251/player]
-
+> [!VIDEO https://channel9.msdn.com/Events/Connect/2017/T251/player]
 
 Learn how to build stunning reports using Power BI Desktop.
 
@@ -42,6 +41,7 @@ Learn how to build stunning reports using Power BI Desktop.
 
 
 ## How-to Guides
+
 - [Connect using the Data Connector](data-connector-connect.md)
 - [Connect using OData feed](access-analytics-power-bi.md)    
 - [Connect using Azure DevOps functions (Advanced)](data-connector-functions.md)  
@@ -50,6 +50,7 @@ Learn how to build stunning reports using Power BI Desktop.
 - [Set permissions (Security)](analytics-security.md)
 
 ## Samples
+
 - [Example Power BI Reports using the Data Connector](data-connector-examples.md)  
 - [Active bugs report](active-bugs-sample-report.md)  
 - [Get a count of work items](data-connector-examples.md)  
@@ -59,16 +60,18 @@ Learn how to build stunning reports using Power BI Desktop.
 
 
 ## References
+
 - [Default Analytics views](analytics-default-views.md)
 - [Create Analytics views](analytics-views-create.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 
 
 ## Resources 
+
 - [Extend Analytics with OData](../extend-analytics/index.md)    
 - [Dashboards, Charts, Reports & Widgets](../dashboards/index.md)  
-- [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
-- [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
+- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
+- [Power BI Documentation](/power-bi)  
 
 
 

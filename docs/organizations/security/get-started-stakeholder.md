@@ -58,54 +58,55 @@ For information about working with pipelines, see these articles:
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
-2.  Enter your credentials. If you can't sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
+2. Enter your credentials. If you can't sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
 
 
 <a id="create-work-item">  </a>
 
 ## View and add work items
+
 You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
 
 ::: moniker range=">= azure-devops-2019"
-0. (1) Check that you have selected the right project, then (2) choose **Boards** > **Work Items**. 
+1. (1) Check that you have selected the right project, then (2) choose **Boards** > **Work Items**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Boards>Work Items](../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
-0. Within the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots, as described next.  
+1. Within the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots, as described next.  
 	<table>
 	<tbody valign="top">
 	<tr>
 	<td>
-	![Boards>Work Items ](../../boards/work-items/_img/view-add/view-menu.png)
+	<img src="../../boards/work-items/_img/view-add/view-menu.png" alt=Boards>Work Items" />
 	</td>
 	<td>
 	<ul>
-	<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-	<li>**Following**: lists work items that you've elected to [follow](../../boards/work-items/follow-work-items.md). </li>
-	<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-	<li>**My activity**: lists work items that you've recently viewed or updated.</li>
-	<li>**Recently updated**: lists work items recently updated in the project. </li>
-	<li>**Recently completed**: lists work items completed or closed in the project.</li>
-	<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
+    <li><strong>Assigned to me</strong>: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
+    <li><strong>Following</strong>: lists work items that you've elected to [follow](../../boards/work-items/follow-work-items.md). </li>
+    <li><strong>Mentioned</strong>: lists work items in which you've been mentioned in the last 30 days. </li>
+    <li><strong>My activity</strong>: lists work items that you've recently viewed or updated.</li>
+    <li><strong>Recently updated</strong>: lists work items recently updated in the project. </li>
+    <li><strong>Recently completed</strong>: lists work items completed or closed in the project.</li>
+    <li><strong>Recently created</strong>: lists work items created within the last 30 days in the project.</li>
 	</ul>
 	</td>
 	</tr>
 	</tbody>
 	</table>
 
-0. To add a work item, choose the work item type from the **New Work Item** drop down menu.  
+2. To add a work item, choose the work item type from the **New Work Item** drop down menu.  
 
 	For example, here we choose User Story. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Work Items, Add a work item ](../../boards/work-items/_img/view-add/work-items-hub-new.png)
 
-0.	Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
+3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
-	![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
+   ![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
 
 > [!NOTE]  
 > A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.     
@@ -113,11 +114,11 @@ You can start viewing and adding work items once you connect to a project.
 
 ::: moniker range="tfs-2017 || tfs-2018"
 
-0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
+1. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
 
 	![Work, Add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
 
-0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
+1. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
 	![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
 
@@ -125,18 +126,18 @@ You can start viewing and adding work items once you connect to a project.
 	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. 
 	
 	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).    
-::: moniker-end
+   ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-0. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
+1. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
 
 	![Azure DevOps Server 2015, Azure DevOps Server 2013-Queries page, Add a work item](_img/stakholder-add-work-item-tfs-queries-page.png)  
 
-0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
+1. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
 	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
-::: moniker-end
+   ::: moniker-end
 
 For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
@@ -154,13 +155,14 @@ Azure DevOps Services users granted Stakeholder access for a public project can 
 ::: moniker-end
 
 <a id="check-backlog">  </a> 
+
 ## Check the backlog, add work items to the backlog 
 
 Work appears in the backlog in priority order. Work item types may include bugs depending on the settings made for the team. 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you selected the right project, (2) choose **Boards** >  **Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you selected the right project, (2) choose **Boards** >  **Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Boards>Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -172,30 +174,30 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	> [!TIP]    
 	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../../boards/backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../../boards/backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-0. To view or edit a work item, select it and choose **Enter**.
+3. To view or edit a work item, select it and choose **Enter**.
 
-0. To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title, and then press the Enter key or choose **Add to top**. 
+4. To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title, and then press the Enter key or choose **Add to top**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](../../boards/backlogs/_img/create-backlog/add-new-items-agile.png) 
 
 	Repeat this step to capture all your ideas as work items.  
-::: moniker-end
+   ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -205,27 +207,27 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
-0. To view or edit a work item, select it and choose **Enter**.
+1. To view or edit a work item, select it and choose **Enter**.
 
-0. Add a work item to your backlog by entering a title and choosing **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. Repeat this step until you've captured all your main ideas. 
+2. Add a work item to your backlog by entering a title and choosing **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. Repeat this step until you've captured all your main ideas. 
 
 	![Add work items to the backlog](../../boards/backlogs/_img/create-backlog/add-new-items-standard.png) 
 
 ::: moniker-end
 ::: moniker range="<= tfs-2015"
 
-0. From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
+1. From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
 	![Boards>backlogs, TFS 2015, 2013 web portal](../../boards/backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
-0. To view or edit a work item, select it and choose **Enter**.
+1. To view or edit a work item, select it and choose **Enter**.
 
-0. To add a work item to your backlog, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. Your items are added to the bottom of the list.  
+2. To add a work item to your backlog, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. Your items are added to the bottom of the list.  
 
 	![Add work items to the backlog](../../boards/backlogs/_img/create-backlog/add-new-items-standard.png) 
 
 	Repeat this step until you've captured all your main ideas. 
-::: moniker-end
+   ::: moniker-end
 
 
 <!---
@@ -246,7 +248,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Open your Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
@@ -258,7 +260,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	> [!TIP]    
 	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
-0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
@@ -268,7 +270,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
 	![Open Portfolio Kanban board, Features](../../boards/boards/_img/quickstart/open-kanban-board.png)
 
@@ -276,12 +278,12 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 	![Open Work when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+1. To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
 	
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
 
-0. Your Kanban board displays. 
+2. Your Kanban board displays. 
 	
 	![Kanban board, Agile template](../../boards/boards/_img/kanban-basics-intro.png)   
 
@@ -289,18 +291,18 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range="<= tfs-2015"
 
-0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
 	![Open Portfolio Kanban board, Features](../../boards/boards/_img/quickstart/open-kanban-board.png)
 
 	If you don't see **Work**, your screen size may be reduced. Choose the three dots (![ ](../../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 	![Open Work when screen size is reduced](../../boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+1. To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
 
-	![Choose another team from the project menu](../../boards/sprints/_img/capacity/vso-team-selector.png)
+   ![Choose another team from the project menu](../../boards/sprints/_img/capacity/vso-team-selector.png)
 	
-0. Your Kanban board displays. 
+2. Your Kanban board displays. 
 	 
 	> [!div class="mx-imgBorder"]  
 	> ![Azure DevOps Server 2015, Kanban board, Agile template](../../boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
@@ -314,27 +316,27 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Boards>Work Items**, and then select **Assigned to me**. 
+1. Choose **Boards>Work Items**, and then select **Assigned to me**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
 
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
-0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
-::: moniker-end    
+1. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
+   ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
 
-0. Open **Work>Queries** and select **Assigned to me** to see the list of work items assigned to you.  
+1. Open **Work>Queries** and select **Assigned to me** to see the list of work items assigned to you.  
 
 	![Queries page, items assigned to you](_img/work-as-a-stakeholder-query.png)  
 
-0. Or, open any of the queries defined in the Shared Queries folder.  
+1. Or, open any of the queries defined in the Shared Queries folder.  
 
 	![Run a shared query](_img/work-as-a-stakeholder-open-shared-query.png)   
 
-0. And, you can [create new queries or edit existing queries](../../boards/queries/using-queries.md) and save them under My Queries folder.  
+2. And, you can [create new queries or edit existing queries](../../boards/queries/using-queries.md) and save them under My Queries folder.  
 
 	![Query Editor](_img/work-as-a-stakeholder-edit-query.png)  
 

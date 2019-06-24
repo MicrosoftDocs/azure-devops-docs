@@ -32,12 +32,12 @@ Having Azure DevOps Services host your extension's static content is useful when
    ```json
    {
      "files": [
-	   {
-		   "path": "scripts", "addressable": true
-	   },
-	   {
-		   "path": "images/extra/icon1.png", "addressable": true
-	   }
+       {
+           "path": "scripts", "addressable": true
+       },
+       {
+           "path": "images/extra/icon1.png", "addressable": true
+       }
      ]
    }
    ```
@@ -46,8 +46,7 @@ Having Azure DevOps Services host your extension's static content is useful when
 4. Publish (or re-publish) your extension ([steps](../publish/overview.md)) 
 
 <div class="alert alert-danger">
-	**Important:** Make sure to increment the version of your extension when you make changes to static content files included in your .vsix.  
-</div> 
+    <strong>Important:</strong> Make sure to increment the version of your extension when you make changes to static content files included in your .vsix.<br/></div> 
 
 Keep in mind:
 
@@ -66,9 +65,9 @@ In this model, static content is served from your own service and not included i
 1. Set the `baseUri` property in your extension manifest  For example, assuming a value of `https://myservice.net/extension` and this hub contribution:
 
 ```json
-	"baseUri": "https://myservice.net/extension",
-	"contributions": [
-		{
+    "baseUri": "https://myservice.net/extension",
+    "contributions": [
+        {
              "id": "Fabrikam.HelloWorld",
              "type": "ms.vss-web.hub",
              "targets": [
@@ -79,7 +78,7 @@ In this model, static content is served from your own service and not included i
                  "uri": "hello-world.html"
              }
          }
-	]
+    ]
 ```
 
 Azure DevOps Services will load the contents of this hub when it is rendered at `https://myservice.net/extension/hello-world.html`.

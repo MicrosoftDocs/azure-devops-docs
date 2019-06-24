@@ -109,7 +109,7 @@ Start using Storyboarding with PowerPoint today by downloading the free plug-in 
 ### Custom shapes 
 You can create your own shapes using [My Shapes](add-share-storyboard-shapes.md), which get saved to the following folder in a .sbsx file:
 
-<code><i>Drive</i>:\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
+<code><i>Drive</i>:\Users\\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
 
 <!---
 You can then share your custom shapes or import custom shapes developed by others in the Visual Studio community.  

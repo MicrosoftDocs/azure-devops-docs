@@ -27,14 +27,14 @@ New to Git? [Learn more](/azure/devops/learn/git/learn-git-with-team-services) a
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-![Use your favorite IDE with Azure Repos and Git](_img/overview/get-started-favorite-ide.png)
+<img src="_img/overview/get-started-favorite-ide.png" alt="Use your favorite IDE with Azure Repos and Git"/>
 </div>
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to Azure DevOps Services to access your repos and manage your work.
-Azure DevOps Services IDE integrations are available for [Visual Studio](../../organizations/accounts/set-up-vs.md), 
-[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/azure/devops/java/download-eclipse-plug-in), 
-and [IntelliJ](/azure/devops/java/download-intellij-plug-in).</p>
+Azure DevOps Services IDE integrations are available for <a href="../../organizations/accounts/set-up-vs.md" data-raw-source="[Visual Studio](../../organizations/accounts/set-up-vs.md)">Visual Studio</a>, 
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team" data-raw-source="[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)">Visual Studio Code</a>, <a href="/azure/devops/java/download-eclipse-plug-in" data-raw-source="[Eclipse](/azure/devops/java/download-eclipse-plug-in)">Eclipse</a>, 
+and <a href="/azure/devops/java/download-intellij-plug-in" data-raw-source="[IntelliJ](/azure/devops/java/download-intellij-plug-in)">IntelliJ</a>.</p>
 
 
 <p>New to Git? Learn how to share code with Git and Azure Repos with the following getting started guides:</p>
@@ -53,13 +53,13 @@ and [IntelliJ](/azure/devops/java/download-intellij-plug-in).</p>
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-<p>Get up and running with Git and Azure Repos in just a few minutes with the [Azure Repos Git quick start](gitquickstart.md).</p>
+<p>Get up and running with Git and Azure Repos in just a few minutes with the <a href="gitquickstart.md" data-raw-source="[Azure Repos Git quick start](gitquickstart.md)">Azure Repos Git quick start</a>.</p>
 
-<p>The [Azure Repos Git tutorial](gitworkflow.md) walks you through Git tasks like [creating repos](creatingrepo.md), [working in branches](branches.md), [saving your work](commits.md), and [sharing your changes](pushing.md). 
+<p>The <a href="gitworkflow.md" data-raw-source="[Azure Repos Git tutorial](gitworkflow.md)">Azure Repos Git tutorial</a> walks you through Git tasks like <a href="creatingrepo.md" data-raw-source="[creating repos](creatingrepo.md)">creating repos</a>, <a href="branches.md" data-raw-source="[working in branches](branches.md)">working in branches</a>, <a href="commits.md" data-raw-source="[saving your work](commits.md)">saving your work</a>, and <a href="pushing.md" data-raw-source="[sharing your changes](pushing.md)">sharing your changes</a>. 
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
-![Azure Repos Git tutorial workflow](_img/gitworkflow.png)
+<img src="_img/gitworkflow.png" alt="Azure Repos Git tutorial workflow"/>
 
 </div>
 </div>   
@@ -69,21 +69,20 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Connect to Azure DevOps Services from anywhere](_img/overview/IC839946.png)   
-
+<img src="_img/overview/IC839946.png" alt="Connect to Azure DevOps Services from anywhere"/><br/>
 </div>
 
 <div class="col-sm-6 col-md-6"> 
 
-<p>You can authenticate with your Azure Repos/TFS Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
+<p>You can authenticate with your Azure Repos/TFS Git repo from any platform using <a href="set-up-credential-managers.md" data-raw-source="[cross-platform credential managers](set-up-credential-managers.md)">cross-platform credential managers</a> or <a href="use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public key authentication](use-ssh-keys-to-authenticate.md)">SSH public key authentication</a>.</p>
 
 <p>If you have code ready to share in Azure Repos, our getting started guides take you through the steps to connect your development environment to a Git repo in Azure Repos and share your code with your team.</p>
 
 <ul>
-<li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>
-<li>[Get Started with Xcode](share-your-code-in-git-xcode.md)</li>
-<li>[Get Started with Eclipse](share-your-code-in-git-eclipse.md)</li>
-<li>[Get Started with IntelliJ](create-repo-intellij.md)</li>
+<li><a href="share-your-code-in-git-vs.md" data-raw-source="[Get Started with Visual Studio](share-your-code-in-git-vs.md)">Get Started with Visual Studio</a></li>
+<li><a href="share-your-code-in-git-xcode.md" data-raw-source="[Get Started with Xcode](share-your-code-in-git-xcode.md)">Get Started with Xcode</a></li>
+<li><a href="share-your-code-in-git-eclipse.md" data-raw-source="[Get Started with Eclipse](share-your-code-in-git-eclipse.md)">Get Started with Eclipse</a></li>
+<li><a href="create-repo-intellij.md" data-raw-source="[Get Started with IntelliJ](create-repo-intellij.md)">Get Started with IntelliJ</a></li>
 </ul>
 
 </div>
@@ -93,13 +92,13 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <div class="row">
 <div class="col-sm-6 col-md-6"> 
-<p>Manage your repos and customize your team's workflow. Set up permissions to control access to your code and set up branch policies and continuous integration to prevent build breaks and catch bugs sooner.</p>
+<p>Manage your repos and customize your team&#39;s workflow. Set up permissions to control access to your code and set up branch policies and continuous integration to prevent build breaks and catch bugs sooner.</p>
 
 <ul>
-<li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
-<li>Set [repo permissions](../../organizations/security/permissions.md) and [branch permissions](branch-permissions.md)</li>
-<li>[Set up branch policies](branch-policies.md) to protect key branches</li>
-<li>[Set up continuous integration](../../pipelines/build/triggers.md#ci-triggers) to catch bugs sooner.</li>
+<li><a href="create-new-repo.md" data-raw-source="[Create](create-new-repo.md)">Create</a>, <a href="delete-existing-repo.md" data-raw-source="[delete](delete-existing-repo.md)">delete</a>, and <a href="repo-rename.md" data-raw-source="[rename](repo-rename.md)">rename</a> repos.</li>
+<li>Set <a href="../../organizations/security/permissions.md" data-raw-source="[repo permissions](../../organizations/security/permissions.md)">repo permissions</a> and <a href="branch-permissions.md" data-raw-source="[branch permissions](branch-permissions.md)">branch permissions</a></li>
+<li><a href="branch-policies.md" data-raw-source="[Set up branch policies](branch-policies.md)">Set up branch policies</a> to protect key branches</li>
+<li><a href="../../pipelines/build/triggers.md#ci-triggers" data-raw-source="[Set up continuous integration](../../pipelines/build/triggers.md#ci-triggers)">Set up continuous integration</a> to catch bugs sooner.</li>
 </ul>
 
 </div>
@@ -120,7 +119,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 </div>
 <div class="col-sm-6 col-md-6"> 
 
-<p>Review code with your team and make sure that changes build and pass tests before it's merged.</p>
+<p>Review code with your team and make sure that changes build and pass tests before it&#39;s merged.</p>
 
 <ul class="panelContent cardsFTitle">
     <li>

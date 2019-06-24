@@ -72,21 +72,21 @@ You can use the Build dashboard to obtain an overview of the development activit
   
  You can use the Code Coverage and Code Churn reports to answer the questions that are listed in the following table.  
   
--   Which builds succeeded?  
+- Which builds succeeded?  
   
--   Which builds have a significant number of changes to the code?  
+- Which builds have a significant number of changes to the code?  
   
--   How often are builds succeeding?  
+- How often are builds succeeding?  
   
--   How volatile is the code base?  
+- How volatile is the code base?  
   
--   How much of the code is the team testing?  
+- How much of the code is the team testing?  
   
--   How high is the quality of the builds?  
+- How high is the quality of the builds?  
   
--   Is the quality increasing, decreasing, or staying constant?  
+- Is the quality increasing, decreasing, or staying constant?  
   
- For more information, see [Code Coverage](../excel/code-coverage-excel-report.md) and [Code Churn](../excel/code-churn-excel-report.md).  
+  For more information, see [Code Coverage](../excel/code-coverage-excel-report.md) and [Code Churn](../excel/code-churn-excel-report.md).  
   
 ## Related notes 
  [Project portal dashboards](project-portal-dashboards.md)

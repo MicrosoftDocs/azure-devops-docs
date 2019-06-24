@@ -83,8 +83,7 @@ The specific set of formatting features differs depending on the client you use.
 
 
 
-# [Browser](#tab/browser)
-
+#### [Browser](#tab/browser/)
 ::: moniker range="azure-devops"
 
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
@@ -137,8 +136,7 @@ The rich text formatting toolbar appears above each text box that can be formatt
 ::: moniker-end
 
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 <a id="team-explorer-rich-text" />
 
 From Team Explorer you can choose the font, font size, and text and background colors.
@@ -153,8 +151,7 @@ You can copy and paste HTML text or an image from another application directly i
 [!INCLUDE [temp](../../_shared/images-not-appearing-vs.md)] 
 
 
-# [Team Explorer Everywhere](#tab/tee)
-
+#### [Team Explorer Everywhere](#tab/tee/)
 From Team Explorer Everywhere you can exercise only basic format operations.
 
 ![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png) 
@@ -166,10 +163,7 @@ You can use the following shortcut keys to format your text:
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
 
----
-
-
-
+* * *
 <a id="link-items"></a>
 
 ## Link items
@@ -193,8 +187,7 @@ Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) 
 
 <a id="attach-browser" />
 
-# [Browser](#tab/browser)
-
+#### [Browser](#tab/browser/)
 ::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
@@ -248,8 +241,7 @@ Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attach
 
 <a id="attach-team-explorer" />
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
@@ -259,9 +251,7 @@ To open the menu options to download or delete several attachments, choose one o
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 
-# [Team Explorer Everywhere](#tab/tee)
-
-
+#### [Team Explorer Everywhere](#tab/tee/)
 Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.Or, drag and drop files into the attachment area.
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
@@ -270,9 +260,7 @@ To open the menu options to download or delete several attachments, choose one o
 
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
----
-
-
+* * *
 ::: moniker range="<= azure-devops-2019"
 
 ### Attachment size
@@ -295,8 +283,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 
 <a id="team-services-storyboard" />
 
-# [Browser](#tab/browser)
-
+#### [Browser](#tab/browser/)
 ::: moniker range=">= tfs-2017"
 
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
@@ -315,8 +302,7 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 
 ::: moniker-end 
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 <a id="team-explorer-storyboard" />
 
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
@@ -324,9 +310,8 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 **Storyboards tab control** 
 
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
- 
-# [Team Explorer Everywhere](#tab/tee)
- 
+
+#### [Team Explorer Everywhere](#tab/tee/)
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
 **Storyboards tab control**  
@@ -334,11 +319,10 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 
----
-
+* * *
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
- 
+
 ## Email a work item query list
 
 A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
@@ -398,4 +382,3 @@ You may find additional ways to share information and collaborate as a team by a
 
 ::: moniker-end
 
- 

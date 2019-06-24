@@ -12,11 +12,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/11/2019
+ms.date: 05/21/2019
 ---
 
 
-# Key concepts and terms used for Azure Boards
+# Key concepts and terms used for Azure Boards (Agile process)
 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
@@ -27,23 +27,22 @@ Here are definitions of key concepts and artifacts used in Azure Boards. For mor
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](key-concepts.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)
-> - [**Agile process**](key-concepts-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
+
+> [!NOTE]  
+> If your project uses the Basic process, see [Key concepts and terms used for Azure Boards (Basic process)](key-concepts.md).  
+
 
 ## Agile methods
 The goal of Agile engineering best processes is to rapidly deliver high-quality software. Agile uses a business approach that aligns development with customer needs and company goals. Frequent inspection and adaptation are necessary. Teamwork, self-organization, and accountability are critical to project success.  
 
 ## Agile tools
+
 This suite of web-based tools is used to track work and support Agile methodologies. Agile tools support Scrum and Kanban, the core Agile methods that are used by software development teams today. To learn more, see [What is Azure Boards?](what-is-azure-boards.md).
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
 ## Bug
+
 A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects.  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
@@ -53,17 +52,20 @@ A bug is a type of work item that records a potential source of dissatisfaction 
 [!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
 
 ## Field 
+
 Fields are used to track a piece of information about the work to perform. Values you assign to a field are stored in the work-tracking data store. You can use the data store to query and generate charts to view status and trends. Your project contains 100 or more data fields. To update data, you [modify the data field within a work item](plan-track-work.md). Each work item is associated with a work item type (WIT). The data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
 
 ## Inheritance process model 
+
 The Inheritance process model is used to customize work-tracking objects and Agile tools for a project through the user interface. This process model is available only for accounts hosted on the Azure DevOps Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
 
 ## Kanban board 
+
 A Kanban board is an interactive, electronic signboard that supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
 
  
@@ -96,6 +98,7 @@ A picklist specifies an enumerated set of values that appear within a drop-down 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
 ## User story
+
 A user story is a type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. A user story is defined with the Agile process. To learn more, see [Agile process work item types and workflow](../work-items/guidance/agile-process-workflow.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 

@@ -47,7 +47,7 @@ After turning on the **Free access to Pipelines for Stakeholders** preview featu
 	- All build pipelines or select build pipelines
 	- All release pipelines or select release pipelines 
 	- Task groups
-0. Add the security group to a Library security role for these artifacts: 
+1. Add the security group to a Library security role for these artifacts: 
 	- Variable groups
 	- Secure files
 	- Deployment groups 
@@ -64,29 +64,29 @@ To create a project-level security group, open the web portal and choose the pro
 
 
 
-0. Choose **Project Settings** in the sidebar.
+1. Choose **Project Settings** in the sidebar.
 
     > [!div class="mx-imgBorder"]  
 	> ![Web portal, open project admin context, vertical nav](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
-0. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
+1. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create security group](_img/stakeholder-security/create-group-option-vert.png)
 
-0. Enter a name for the group, and optionally a description.
+2. Enter a name for the group, and optionally a description.
 
     For example, here we define a *Stakeholder Access* group.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create group dialog](_img/stakeholder-security/create-group-dialog.png)   
 
-0. Choose **Create group**.
+3. Choose **Create group**.
 
 
 ## Add members to the custom security group 
 
-0. To add members to the group, choose the security group, choose **Members**, and then choose **Add**.
+1. To add members to the group, choose the security group, choose **Members**, and then choose **Add**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/stakeholder-security/choose-members-add.png) 
@@ -95,20 +95,21 @@ To create a project-level security group, open the web portal and choose the pro
 
     <img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" />
 
-0.	Choose **Save changes**.
+2. Choose **Save changes**.
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for build pipelines
 
 Open the Security dialog for all or a select build pipeline. 
 
-0. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../_img/icons/actions-icon.png)actions icon and select **Security**.
+1. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../_img/icons/actions-icon.png)actions icon and select **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build pipelines, vertical nav](_img/stakeholder-security/open-security-all-build-pipelines-new-nav.png)  
 
-0. To set the permissions for a specific build pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
+1. To set the permissions for a specific build pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the security dialog for a build pipeline](_img/stakeholder-security/open-security-build-pipeline-new-nav.png)  
@@ -116,52 +117,53 @@ Open the Security dialog for all or a select build pipeline.
 
 ## Add and set permissions for the custom security group  
 
-0. Choose **Add** to add the *Stakeholder Access* group to the Permissions dialog. 
+1. Choose **Add** to add the *Stakeholder Access* group to the Permissions dialog. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/choose-add-to-add-group.png)  
 
-0. In the dialog that opens, enter the group name of the custom security group that you previously added.
+1. In the dialog that opens, enter the group name of the custom security group that you previously added.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/add-stakeholder-access-group-to-build-permissions.png)  
 
 	 And then choose **Save changes**. 
 
-0. With the *Stakeholder Access* group selected, change the permission settings to **Deny** for those permissions you want to limit access to. 
+2. With the *Stakeholder Access* group selected, change the permission settings to **Deny** for those permissions you want to limit access to. 
 
    For example, here we change the permission for **Edit build definition** for the *Stakeholders Access* group to **Deny**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/set-build-permissions.png)  
 
-0. Save your changes and the choose **Close**. 
+3. Save your changes and the choose **Close**. 
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for release definitions
 
 You can follow the steps provided in the previous two procedures to set permissions for release definitions. 
 
 Open the Security dialog for all or a select release pipeline. 
 
-0. To set the permissions for all release pipelines, open **Build and Release>Releases**, and then choose **Security**.
+1. To set the permissions for all release pipelines, open **Build and Release>Releases**, and then choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build definitions, vertical nav](_img/stakeholder-security/open-security-release-definitions-vert.png)  
 
-0. To set the permissions for a specific release pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
+1. To set the permissions for a specific release pipeline, open the ![ ](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
 
-0. Add the custom security group, such as *Stakeholder Access*, to the permissions dialog.
+2. Add the custom security group, such as *Stakeholder Access*, to the permissions dialog.
 
-0. With the *Stakeholder Access* group selected, change the permission settings to **Deny** for those permissions you want to limit access to. 
+3. With the *Stakeholder Access* group selected, change the permission settings to **Deny** for those permissions you want to limit access to. 
 
    For example, here we change the permission for **Edit build definition** for the *Stakeholders Access* group to **Deny**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/release-definitions-permissions-dialog.png)  
 
-0. Save your changes and the choose **Cancel**. 
+4. Save your changes and the choose **Cancel**. 
 
 
 ## Limit access to Library resources 

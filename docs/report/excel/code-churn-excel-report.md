@@ -67,13 +67,13 @@ With the Code Churn report, you can analyze how source files are changing over t
   
  You can review the Code Churn report to answer these questions:  
   
--   How much of the code is the team testing?  
+- How much of the code is the team testing?  
   
--   Is the team testing enough of the code?  
+- Is the team testing enough of the code?  
   
--   Based on the code coverage and test metrics, is the team likely to meet target goals?  
+- Based on the code coverage and test metrics, is the team likely to meet target goals?  
   
- For more information about how code churn affects quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).  
+  For more information about how code churn affects quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).  
   
 ##  <a name="Updating"></a> Customizing the Report  
  You can customize the Code Churn report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can modify the report to support other views as the following table describes.  

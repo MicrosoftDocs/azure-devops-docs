@@ -158,7 +158,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 <br>
-**Important:** securely persist the *refresh_token* so your app does not need to prompt the user authorize again. *Access tokens* expire relatively quickly and should not be persisted.
+<strong>Important:</strong> securely persist the <em>refresh_token</em> so your app does not need to prompt the user authorize again. <em>Access tokens</em> expire relatively quickly and should not be persisted.
 
 ## Use the access token
 
@@ -218,7 +218,7 @@ Replace the placeholder values in the sample request body above:
 }
 ```
 <br>
-**Important**: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
+<strong>Important</strong>: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
 <a name="scopes"></a>
 
