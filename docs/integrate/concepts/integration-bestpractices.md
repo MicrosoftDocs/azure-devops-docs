@@ -12,7 +12,7 @@ ms.date: 01/25/2017
 
 <!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
 
-# Best Practices
+# Best practices
 
 **Azure DevOps Services**
 

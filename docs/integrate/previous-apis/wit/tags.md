@@ -7,8 +7,8 @@ description: Work with work item tags programmatically using the REST APIs for T
 ms.assetid: DDD158EB-BCCB-48AE-8C2F-5409D2326E48
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

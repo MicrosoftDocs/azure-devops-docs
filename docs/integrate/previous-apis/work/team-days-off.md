@@ -7,8 +7,8 @@ description: Work with team days off programmatically using the REST APIs for Te
 ms.assetid: b1bfef41-c787-40dd-be4d-6ed981e55fdd
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

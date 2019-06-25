@@ -7,8 +7,8 @@ description: Work with work item tracking programmatically using the REST APIs f
 ms.assetid: 4b6ac3ad-7de0-4137-8b80-8a4b44f4107f
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

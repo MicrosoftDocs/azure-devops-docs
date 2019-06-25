@@ -7,8 +7,8 @@ description: Work with policy types programmatically using the REST APIs for Tea
 ms.assetid: c7025882-81ca-4d4a-a879-416560546992
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

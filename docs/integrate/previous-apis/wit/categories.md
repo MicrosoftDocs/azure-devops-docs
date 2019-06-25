@@ -7,8 +7,8 @@ description: Work with categories of work item types programmatically using the 
 ms.assetid: 5DACB173-F971-4288-8EBD-29B4EF98237C
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
