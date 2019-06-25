@@ -7,8 +7,8 @@ description: Work with work item fields programmatically using the REST APIs for
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

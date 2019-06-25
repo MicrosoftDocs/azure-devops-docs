@@ -7,8 +7,8 @@ description: Work with VSTS builds programmatically using the REST APIs.
 ms.assetid: 6C2E7900-891E-4C9E-9FD1-4798E37019FB
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

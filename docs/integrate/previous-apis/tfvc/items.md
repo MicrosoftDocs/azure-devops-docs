@@ -7,8 +7,8 @@ description: Work with TFVC items programmatically using the REST APIs for Team 
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

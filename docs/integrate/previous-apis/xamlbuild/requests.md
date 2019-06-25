@@ -7,8 +7,8 @@ description: Submit and access build requests programmatically using the REST AP
 ms.assetid: 40A7EF31-7303-4A6E-ADB5-69BCF7830A2A
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

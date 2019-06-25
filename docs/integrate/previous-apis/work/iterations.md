@@ -7,8 +7,8 @@ description: Work with team iterations programmatically using the REST APIs for 
 ms.assetid: 8a5b43ab-7d3c-4342-b738-65c310a556cc
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
