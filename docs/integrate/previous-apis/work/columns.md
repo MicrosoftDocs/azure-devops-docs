@@ -7,8 +7,8 @@ description: Work with the columns on boards programmatically using the REST API
 ms.assetid: D2B3A527-C95C-4E56-ADC5-D53FEF16025D
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

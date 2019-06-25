@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/25/2016
 ---
 

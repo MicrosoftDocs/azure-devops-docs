@@ -7,8 +7,8 @@ description: Work with projects programmatically using the REST APIs for Team Fo
 ms.assetid: 537E1A1F-DAE8-4110-AF0F-63D5D52F2AB6
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/16/2016
 ---
 

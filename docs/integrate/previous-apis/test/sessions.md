@@ -7,8 +7,8 @@ description: Work with test sessions programmatically using the REST APIs for Te
 ms.assetid: 98502210-26d4-4b47-9d42-087c8e62782f
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

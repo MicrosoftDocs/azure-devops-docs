@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/23/2016
 ---
 

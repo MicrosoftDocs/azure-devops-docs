@@ -7,8 +7,8 @@ description: Work with Git branch statistics programmatically using the REST API
 ms.assetid: E735BC54-D5AE-448F-8447-14CEB3261628
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
