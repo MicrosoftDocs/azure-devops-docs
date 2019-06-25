@@ -1,4 +1,18 @@
-# Security tokens for Permissions management
+---
+title: Azure DevOps CLI Security tokens for permissions management
+titleSuffix: Azure DevOps 
+description: Use Azure DevOps CLI to manage security tokens for permissions management
+ms.topic: reference 
+ms.manager: jillfra
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: jillfra 
+ms.author: geverghe
+author: KathrynEE
+ms.date: 06/18/2019
+---
+
+# Security tokens for permissions management
 
 Tokens are arbitrary strings representing resources in Azure DevOps. Token format differs per resource type, however hierarchy and separator characters are common between all tokens.
 
