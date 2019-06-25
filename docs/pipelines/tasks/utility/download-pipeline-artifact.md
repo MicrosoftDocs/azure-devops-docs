@@ -100,4 +100,4 @@ You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/microsoft/azure-pipelines-agent). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
