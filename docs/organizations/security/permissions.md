@@ -1335,7 +1335,8 @@ In version control permissions, explicit deny takes precedence over administrato
     </tr>
     <tr>
         <td data-th="Permission" id="check-out-permission">
-            Check out
+            Check out (up through TFS 2015)<br>
+            Pend a change in a server workspace (TFS 2017 and higher)
         </td>
         <td data-th="Description">
             Can check out and make a pending change to items in a folder.
