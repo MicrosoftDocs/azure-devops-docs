@@ -7,8 +7,8 @@ description: Work with Git pushes programmatically using the REST APIs for Team 
 ms.assetid: 20422F1A-30A6-405F-AAE2-BABDA6371E40
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

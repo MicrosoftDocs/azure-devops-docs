@@ -7,8 +7,8 @@ monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 06-01-2017
 ---
 

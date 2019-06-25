@@ -7,8 +7,8 @@ description: Use OAuth 2.0 authentication to get started with the REST APIs for 
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

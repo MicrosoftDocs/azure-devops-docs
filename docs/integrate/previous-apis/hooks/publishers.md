@@ -7,8 +7,8 @@ description: Work with service hook publishers programmatically using the REST A
 ms.assetid: F61EDE31-0F8D-4C4E-AE03-B4480C51C5FD
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

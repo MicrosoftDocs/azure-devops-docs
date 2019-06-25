@@ -7,8 +7,8 @@ description: Work with Git trees programmatically using the REST APIs for Team F
 ms.assetid: 5F749008-5513-444E-8E46-AF575132796E
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

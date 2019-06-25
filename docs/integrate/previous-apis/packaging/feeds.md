@@ -3,8 +3,8 @@ title: Feeds | REST API Reference for VSTS
 description: Work with feeds programmatically using the REST APIs for VSTS .
 ms.assetid: 47944084-6828-4908-bf7f-86988390b673
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem

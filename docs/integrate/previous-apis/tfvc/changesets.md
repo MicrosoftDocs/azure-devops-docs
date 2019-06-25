@@ -7,8 +7,8 @@ description: Work with TFVC changesets programmatically using the REST APIs for 
 ms.assetid: 27A32DF1-E6D8-47E1-93FB-7FB812F2B47D
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

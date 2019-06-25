@@ -7,8 +7,8 @@ description: Work with work item queries programmatically using the REST APIs fo
 ms.assetid: F91A2D76-3586-4552-A9F4-AC9E5CBB46D4
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
