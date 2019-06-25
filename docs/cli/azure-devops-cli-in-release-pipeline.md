@@ -1,10 +1,25 @@
+---
+title: Azure DevOps CLI in a release pipeline
+titleSuffix: Azure DevOps 
+description: Use Azure DevOps CLI to create a release pipeline
+ms.topic: reference 
+ms.manager: jillfra
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: jillfra 
+ms.author: geverghe
+author: KathrynEE
+ms.date: 06/18/2019
+---
+
+
 # Azure DevOps CLI in a release pipeline
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 
 To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute the following steps:
 
-1. Create a New Release Pipeline
+1. Create a release pipeline.
 
 	> [!div class="mx-imgBorder"]  
 	> ![new release pipeline](_img/new-pipeline.png)
@@ -36,6 +51,7 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 
 For reference, here is the inline script:
 
+> [!div class="tabbedCodeSnippets"]
 ```powershell
 $extensions = az extension list -o json | ConvertFrom-Json
 
