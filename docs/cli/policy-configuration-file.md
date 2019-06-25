@@ -1,3 +1,17 @@
+---
+title: Configure branch policies for Azure DevOps CLI 
+titleSuffix: Azure DevOps 
+description: Configure branch policies using Azure DevOps CLI  
+ms.topic: reference 
+ms.manager: jillfra
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: jillfra 
+ms.author: geverghe
+author: KathrynEE
+ms.date: 06/18/2019
+---
+
 # Configure policies
 
 You can easily configure branch policies for your repository using the various policy commands. However, the policy commands accept a single scope, i.e., single combination of repository, branch and match type. If you want to apply the same policy across various scopes, you can do that using a policy configuration file.
@@ -7,6 +21,8 @@ Say you want to create a manual queue build policy across all branch folders tha
 ## Create a policy configuration file 
 
 Create a policy configuration file for build policy, including the multiple application scopes.
+
+> [!div class="tabbedCodeSnippets"]
 ```json
 {
 "isBlocking": true,

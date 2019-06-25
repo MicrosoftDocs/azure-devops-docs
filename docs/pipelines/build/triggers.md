@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 06/19/2019
+ms.date: 06/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -276,7 +276,13 @@ or when changes are pushed to such a pull request.
 ::: moniker range=">= azure-devops-2019"
 
 You can specify the target branches for your pull request builds.
-For example, to run pull request builds only for branches that target: `master` and `releases/*`:
+For example, to run pull request builds only for source branches in a PR that
+target `master` and `releases/*`, you can use the following `pr` trigger. 
+This configuration triggers a build upon creation of any pull request where the target branch 
+is set to the `master` or `releases/*` branches. 
+The pipeline also triggers once with any commit coming into the source branch when the target branch 
+is set to be `master` or `releases/*`, while the pull request is active.
+
 
 ```yaml
 pr:
@@ -288,7 +294,9 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all 
+branches, as if you wrote the following `pr` trigger. This configuration triggers a build when any 
+pull request is created, and when commits come into the source branch of any active pull request.
 
 ```yaml
 pr:
