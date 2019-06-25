@@ -7,8 +7,8 @@ description: Work with test plans programmatically using the REST APIs for Team 
 ms.assetid: B07716A0-0420-49F8-95B9-880105FADDA3
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

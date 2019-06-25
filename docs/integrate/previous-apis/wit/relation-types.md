@@ -7,8 +7,8 @@ description: Work with work item relation types programmatically using the REST 
 ms.assetid: D5EAD6ED-8972-4A9F-A5EE-369C1C77E996
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

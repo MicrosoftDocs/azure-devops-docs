@@ -7,13 +7,13 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---
 
-# Azure DevOps Services REST API Reference
+# Azure DevOps Services REST API reference
 
 Welcome to the Azure DevOps Services REST API Reference. 
 
