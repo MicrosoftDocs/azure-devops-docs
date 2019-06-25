@@ -7,8 +7,8 @@ description: Work with Process Configuration programmatically using the REST API
 ms.assetid: 086ce0df-bb60-4cd0-99de-4d54cf348985
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/17/2016
 ---
 

@@ -7,8 +7,8 @@ description: Work with test result retention settings programmatically using the
 ms.assetid: 8A82A554-48F3-4A0B-A119-8C76A7E966DD
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

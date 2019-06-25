@@ -7,8 +7,8 @@ description: Get build tags using the REST APIs for VSTS.
 ms.assetid: f5a3bb49-f843-4f51-a29a-6ca1c226fbe2
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -7,8 +7,8 @@ description: Work with team settings programmatically using the REST APIs for Te
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -14,10 +14,9 @@ A:	Yes. Buy directly from the Visual Studio Marketplace, Azure DevOps tab. You c
 
 A:	Yes. You can use these prepaid funds to pay for the following:
 
-*	[Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
-*	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops).
-*	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs).
-*   [Xamarin University](https://www.xamarin.com/university).
+*	[Azure DevOps users](../buy-basic-access-add-users.md)
+*	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops)
+*	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs)
 
 You can't use these funds to pay for Visual Studio cloud subscriptions and non-Microsoft extensions for Azure DevOps Services and Team Foundation Server.
 

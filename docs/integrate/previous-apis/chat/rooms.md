@@ -7,8 +7,8 @@ description: Work with team rooms programmatically using the REST APIs for Team 
 ms.assetid: 6E6370DD-6E61-4F56-BCAD-8A66CC45965A
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
