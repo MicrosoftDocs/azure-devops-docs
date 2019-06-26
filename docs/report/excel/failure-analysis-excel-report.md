@@ -11,7 +11,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 
-# Failure Analysis Excel Report
+# Failure Analysis Excel report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -22,13 +22,16 @@ You can use the Failure Analysis report to help monitor how many regressions the
 > [!NOTE]
 >  You can view the Failure Analysis report from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition.  
   
- **Required permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the report  
+<a name="Data"></a>
+
+## Data in the report  
+
  The Failure Analysis report provides a stacked area graph that shows the cumulative count of all failed outcome results for Test Cases for all configurations, during the most recent four weeks. Failure types include **New Issue**, **Known Issue**, or **Regression**.  
   
  ![Failure Analysis Excel Report](_img/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")  
@@ -44,7 +47,8 @@ You can use the Failure Analysis report to help monitor how many regressions the
 -   **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.  
   
 ### Required activities for monitoring regressions  
- For the Failure Analysis report to be useful and accurate, the team must perform the following activities:  
+
+For the Failure Analysis report to be useful and accurate, the team must perform the following activities:  
   
 -   Define Test Cases and Test Plans, and assign Test Cases to Test Plans.  
   
@@ -57,8 +61,11 @@ You can use the Failure Analysis report to help monitor how many regressions the
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each Test Case.  
   
-##  <a name="Interpreting"></a> Interpreting the report  
- You should expect the Failure Analysis report to vary depending on where you are in your product development cycle. Early iterations should show little, if any, regression activity. Later in the development cycle, you should expect some regressions. Specifically, you should review the report to find answers to the following questions:  
+<a name="Interpreting"></a> 
+
+## Interpret the report 
+
+You should expect the Failure Analysis report to vary depending on where you are in your product development cycle. Early iterations should show little, if any, regression activity. Later in the development cycle, you should expect some regressions. Specifically, you should review the report to find answers to the following questions:  
   
 - How many tests overall are regressing?  
   
@@ -70,8 +77,11 @@ You can use the Failure Analysis report to help monitor how many regressions the
   
   Also, you might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.  
   
-##  <a name="Updating"></a> Updating and customizing the report  
- You can update the Failure Analysis report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, the following table describes.  
+<a name="Updating"></a> 
+
+## Update and customize the report  
+
+You can update the Failure Analysis report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, the following table describes.  
   
 |View|Action|  
 |----------|------------|  
@@ -80,15 +90,8 @@ You can use the Failure Analysis report to help monitor how many regressions the
 |Failure analysis for a specific test plan or suite of test plans|Add the filter for **Test Plan** (default=All)|  
 |Failure analysis for the most recent six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
   
- For more information about how to work with and customize PivotTables and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes  
- [Excel reports](excel-reports.md)
+
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
