@@ -22,13 +22,16 @@ You can use the Requirement Test Status report to help determine gaps in test co
 > [!NOTE]
 >  You can view the Requirement Test Status report from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Dashboards (CMMI)](https://msdn.microsoft.com/c149b78b-1803-4dc0-aefe-35dbb13a5de0).  
   
- **Required permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the report  
+<a name="Data"></a>
+
+## Data in the report  
+
  The Requirement Test Status report provides a horizontal bar chart that shows the count of results for each test case and test configuration combination that the team has defined for each requirement. The chart groups the results according to their most recent test runs, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).  
   
  ![Requirement Test Status Excel report](_img/procg_reqteststatus.png "ProcG_ReqTestStatus")  
@@ -36,6 +39,7 @@ You can use the Requirement Test Status report to help determine gaps in test co
  The report is based on a PivotChart report that shows the most recent data that is stored in the data warehouse and that is captured for the results for the test cases that are linked to specific requirements.  
   
 ### Required activities for monitoring test activity  
+
  For the Requirement Test Status report to be useful and accurate, the team must perform the following activities:  
   
 -   Define test cases and requirements, and link test cases to requirements by using the **Tested By** link type.  
@@ -51,7 +55,10 @@ You can use the Requirement Test Status report to help determine gaps in test co
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each Test Case.  
   
-##  <a name="Interpreting"></a> Interpreting the report  
+<a name="Interpreting"></a> 
+
+## Interpret the report 
+ 
  You should expect the Requirement Test Status report to vary depending on where you are in your product development cycle. Early iterations will show few tests that are passing. However, you should expect most tests to pass toward the end of an iteration or product development cycle.  
   
  You can review the report to find answers to the following questions:  
@@ -72,7 +79,10 @@ You can use the Requirement Test Status report to help determine gaps in test co
   
 -   If tests are blocked or not being run, does the team understand the blocking issues, and is the team addressing them?  
   
-##  <a name="Updating"></a> Updating and customizing the report  
+<a name="Updating"></a> 
+  
+##  Update and customize the report  
+
  You can update the Requirement Test Status report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  
@@ -80,15 +90,7 @@ You can use the Requirement Test Status report to help determine gaps in test co
 |Requirement test status for an iteration|Change the filter for **Iteration** (default=All)|  
 |Requirement test status for a product area|Change the filter for **Area** (default=All)|  
   
- For more information about how to work with and customize PivotTables and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes
- [Excel reports](excel-reports.md)
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

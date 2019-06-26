@@ -92,30 +92,6 @@ trigger:
 >[!IMPORTANT]
 >When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-### Tags
-
-In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
-
-```yaml
-# specific branch build
-trigger:
-  tags:
-    include:
-    - v2.*
-    exclude:
-    - v2.0
-```
-
-If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
 ### Batching CI builds
 
 If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
@@ -149,7 +125,34 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you also need to explicitly specify branches or tags to trigger on.
+When you specify paths, you also need to explicitly specify branches to trigger on. 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Tags
+
+In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
+
+```yaml
+# specific branch build
+trigger:
+  tags:
+    include:
+    - v2.*
+    exclude:
+    - v2.0
+```
+
+If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
+
+> [!NOTE]
+> If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ### Opting out of CI builds
 
@@ -849,5 +852,6 @@ Your organization goes dormant five minutes after the last user signed out of Az
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
+
 
 <!-- ENDSECTION -->

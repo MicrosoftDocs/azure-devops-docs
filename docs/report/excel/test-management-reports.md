@@ -12,7 +12,8 @@ author: KathrynEE
 ms.date: 12/30/2016
 ---
 
-# Test Management Reports
+# Test management reports
+
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 The test team can take advantage of the Office Excel reports in the **Test Team Management** folder to monitor progress and identify the volume, status, and effectiveness of their test activities. The test management reports display team-project information that is stored in the data warehouse. The four Office Excel workbooks provide 17 reports, and each report appears in on its own worksheet.  
@@ -31,5 +32,6 @@ The test team can take advantage of the Office Excel reports in the **Test Team 
 |**Monitor the test results and regression testing for a product**. The Test Team Progress workbook provides the following four reports:<br /><br /> -   **Test Plan Progress**: Helps the team determine how much testing the team has completed and whether it is likely to finish test activities on time.<br />-   **Test Case Authoring Status**: Helps the team track the progress toward finishing the definition of tests so that they can be run.<br />-   **Test Status by Suite**: Helps the team determine how much testing the team has completed within each test suite.<br />-   **Test Status by Area**: Helps the team determine how much testing the team has completed within each product area.<br />-   **Failure Analysis**: Helps the team monitor how many regressions it is finding.<br />-   **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.|-   [Test Team Progress](test-team-progress-excel-report.md)|  
 |**Determine where the test plans, test configurations, and test coverage are deficient**. The Testing Gaps workbook provides the following five reports, which are based on test results and builds that have been defined and run for a team project.<br /><br /> -   **User Story Status** or **Requirement Status**: Helps the team identify gaps in test coverage for each user story or requirement.<br />-   **User Story Status by Config** or **Requirement Status by Config**: Helps the team identify gaps in test coverage for each test configuration for each user story or requirement.<br />-   **Test Status by Area**: Helps the team identify gaps in test coverage of product areas. This report requires that team members assign test cases to product areas.<br />-   **Tests Not Executed**: Helps the team identify test cases that have never been run for each test configuration.<br />-   **Code Coverage**: Helps the team determine which builds and build assemblies have low or high code coverage.<br /><br /> The count of test results in these reports represents a cumulative count of the most recent version of each test result in a particular build. If a test is run multiple times against a build, the count includes the most recent result for that test for that build.|-   [Testing Gaps](testing-gaps-excel-report-agile.md)<br />-   [Testing Gaps](testing-gaps-excel-report-cmmi.md)|  
   
-## Related notes
- [Excel reports](excel-reports.md)
+## Related articles
+
+- [Excel reports](excel-reports.md)
