@@ -12,7 +12,7 @@ ms.date: 12/30/2016
 ---
 
 
-# Bugs by Priority Excel Report
+# Bugs by Priority Excel report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -22,7 +22,10 @@ The Bugs by Priority report in Office Excel shows the distribution of active Bug
 > [!NOTE]
 >  You can view the Bugs by Priority report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
   
-##  <a name="Data"></a> Data in the Report  
+<a name="Data"></a> 
+
+##  Data in the report  
+
  You can use the Bugs by Priority report to understand the distribution of active Bugs by priority. As the following illustration shows, this report is based on a PivotChart report that shows the last four weeks of the data captured for Bugs. This data is stored in the data warehouse.  
   
  ![Bugs by priority chart](_img/procguid_bypriority.png "ProcGuid_ByPriority")  
@@ -33,8 +36,9 @@ The Bugs by Priority report in Office Excel shows the distribution of active Bug
   
 -   Is the team resolving priority 1 Bugs before resolving priority 2 and 3 Bugs?  
   
-### Required Activities for Tracking Bugs  
- For the Bugs by Priority report to be useful and accurate, the team must perform the following activities:  
+### Required activities for tracking bugs  
+
+For the Bugs by Priority report to be useful and accurate, the team must perform the following activities:  
   
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
   
@@ -45,7 +49,11 @@ The Bugs by Priority report in Office Excel shows the distribution of active Bug
   
 -   Update the **State** of each Bug as the team fixes, verifies, and closes it.  
   
-##  <a name="Updating"></a> Customizing the Report  
+
+<a name="Updating"></a> 
+
+## Customize the report
+  
  You can customize the Bugs by Priority report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  
@@ -56,15 +64,7 @@ The Bugs by Priority report in Office Excel shows the distribution of active Bug
 |Distribution of Bugs for the last six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
 |Distribution of resolved or closed Bugs|Change the filter for **State** to resolved or closed (default=Active)|  
   
- For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to Customize Excel Reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes  
- [Excel reports](excel-reports.md)
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
