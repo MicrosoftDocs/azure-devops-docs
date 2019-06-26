@@ -1,11 +1,9 @@
 - name: SharePoint Integration
   href: index.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
-- name: Overview
-  items:
-  - name: About SharePoint integration
-    href: about-sharepoint-integration.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
-  - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
-    href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
+- name: About SharePoint integration
+  href: about-sharepoint-integration.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+- name: Discontinue the TFS 2017 (and earlier) SharePoint integration
+  href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts
   items:
   - name: Share information using the SharePoint portal
