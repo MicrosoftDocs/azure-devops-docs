@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2018'
 In this exercise, you are going to set up package management with Maven in Azure DevOps Services. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure an Azure DevOps Services build to publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
-> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/). If you are following along with your own environment, and you don't 
+> see Artifacts, turn it on from the Project Settings > Overview menu. For more information, 
+> see [Where is Package Management](../../../artifacts/where-is-package-management.md).
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
