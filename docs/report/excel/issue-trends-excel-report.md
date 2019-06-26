@@ -11,7 +11,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
 
-# Issue Trends Excel Report
+# Issue Trends Excel report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -20,13 +20,16 @@ You can use the Issue Trends report to track the rate at which the team is findi
 > [!NOTE]
 >  You can view the Issue Trends report from the Progress dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+<a name="Data"></a>
+
+## Data in the report  
+
  The Issue Trends report calculates a rolling average of the number of Issues that the team has opened, resolved, and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated. More precisely, the report averages the number of Issues in each state for each of the seven days before the date and then the divides the result by seven.  
   
  ![7&#45;Day Issue Trend Excel Report](_img/procguid_7day.png "ProcGuid_7Day")  
@@ -42,7 +45,10 @@ You can use the Issue Trends report to track the rate at which the team is findi
   
 -   (optional) Specify the **Iteration** and **Area** paths for each Issue if you want to filter by that field.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+<a name="Interpreting"></a> 
+
+## Interpret the report 
+
  You can review the Issue Trends report to determine whether the team is addressing the Issues that it is identifying. Specifically, you can find answers to the following questions:  
   
 - How often is the team identifying Issues?  
@@ -51,8 +57,11 @@ You can use the Issue Trends report to track the rate at which the team is findi
   
   If the team identifies more Issues than it can address, the Issue Trends report will show that the team is closing Issues more slowly. The team might need to reexamine priorities to determine whether the Issues are actually problems that it should address or if the team can ignore them.  
   
-##  <a name="Updating"></a> Customizing the Report  
- You can update the Issue Trends report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
+<a name="Updating"></a> 
+  
+##  Update and customize the report  
+
+You can update the Issue Trends report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  
 |----------|------------|  
@@ -60,15 +69,8 @@ You can use the Issue Trends report to track the rate at which the team is findi
 |Issue trends for a product area|Change the filter for **Area** (default=All)|  
 |Issue trends for the last six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
   
- For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes  
- [Excel reports](excel-reports.md)
+
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

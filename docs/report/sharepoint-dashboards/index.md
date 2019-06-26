@@ -8,7 +8,8 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/05/2017
+monikerRange: '<= tfs-2017'
+ms.date: 06/25/2019
 ---
 
 # SharePoint Integration  
