@@ -55,7 +55,7 @@ To help you answer the question: *Are we on track to complete this set of work b
 
 
 ## Interpret a Burndown or Burnup widget chart
-Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown lines are not straight lines. The team never moves at exactly one fixed velocity and scope might be added on the way. For example, if your projected completion date as moved, you may want to ask
+Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown lines are not straight lines. The team never moves at exactly one fixed velocity and scope might be added on the way. For example, if your projected completion date has moved, you may want to ask
 * Are we adding too much scope?
 * Is the average burnrate changing, and if so, why?
 
