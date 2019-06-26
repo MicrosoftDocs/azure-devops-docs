@@ -52,7 +52,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## See also
 
-* [Install SSH Key task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallSSHKey)
+* [Install SSH Key task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
 
 * [SSH task](ssh.md)
 
