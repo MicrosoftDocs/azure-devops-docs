@@ -269,6 +269,8 @@ YAML is not supported in TFS.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
+* Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
+
 * On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
