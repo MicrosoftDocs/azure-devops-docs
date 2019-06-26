@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/02/2018
+ms.date: 06/25/2019
 ---
 
 # LinksControlOptions XML elements (Web form) 
