@@ -268,6 +268,8 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 > [!IMPORTANT]
 > Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across the collection.
 
+<a id="resolve-import-errors" />
+
 ## Resolve import errors
 
 Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when the data migration tool attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
