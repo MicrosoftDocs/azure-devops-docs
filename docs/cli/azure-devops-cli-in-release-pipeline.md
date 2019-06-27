@@ -51,7 +51,6 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 
 For reference, here is the inline script:
 
-> [!div class="tabbedCodeSnippets"]
 ```powershell
 $extensions = az extension list -o json | ConvertFrom-Json
 
