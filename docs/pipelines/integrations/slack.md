@@ -129,7 +129,7 @@ If you are experiencing the following errors when using the [Azure Pipelines App
 
 [!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azipelines signout` command followed by the `/azipelines signin` command. 
+In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azpipelines signout` command followed by the `/azpipelines signin` command. 
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 
