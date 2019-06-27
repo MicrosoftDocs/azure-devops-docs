@@ -39,10 +39,9 @@ You can use `az extension list` or `az extension show --name azure-devops` to co
 Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards` and `repos` groups.
 For usage and help content for any command, pass in the -h parameter, for example:
 
-> [!div class="tabbedCodeSnippets"]
 ```bash
 $ az devops -h
-
+   
 Group
     az devops : Manage Azure DevOps organization level operations.
         Related Groups
@@ -50,20 +49,20 @@ Group
         az boards: Manage Azure Boards
         az repos: Manage Azure Repos
         az artifacts: Manage Azure Artifacts.
-
+   
 Subgroups:
     admin            : Manage administration operations.
     project          : Manage team projects.
     service-endpoint : Manage service endpoints/service connections.
     team             : Manage teams.
-
+  
 Commands:
     configure        : Configure the Azure DevOps CLI or view your configuration.
     feedback         : Displays information on how to provide feedback to the Azure DevOps CLI team.
     login            : Set the credential (PAT) to use for a particular organization.
     logout           : Clear the credential for all or a particular organization.
-```
 
+```
 
 ## Open items in browser
 
@@ -71,7 +70,6 @@ You can use `--open` switch to open any artifact in Azure DevOps portal in your 
 
 For example :
 
-> [!div class="tabbedCodeSnippets"]
 ```bash
 az pipelines build show --build-id 1 --open
 ```
