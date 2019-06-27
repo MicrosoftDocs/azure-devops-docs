@@ -13,6 +13,8 @@ monikerRange: '>= tfs-2013'
 
 # Explore how to progressively expose your features in production for some or all users 
 
+[!INCLUDE [version-azure-devops](../_shared/version-vsts-tfs-all-versions.md)]
+
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
 Are you planning to continuously integrate features into your application while they're under development? You probably have a few questions, such as:
@@ -39,7 +41,6 @@ Before you flip your first feature flag in production, take the time to read:
 ## What are Feature Flags (FF)?
 
 > [!NOTE]
-> 
 > A feature flag is also known as a feature toggle, feature switch, feature flipper, or conditional feature. They were popularized by [Martin Fowler](https://martinfowler.com/bliki/FeatureToggle.html).
 
 Feature flags support a customer-first DevOps mindset, to enable (expose) and disable (hide) features in a solution, even before they are complete and ready for release.
@@ -51,7 +52,6 @@ View a feature flag as an ON | OFF switch for a specific feature. As shown, you 
 When you combine a feature flag with an experiment, led by a hypothesis, you introduce A|B testing. For example, you could run an experiment to determine if the email (A) or the print (B) feature will result in a higher user satisfaction.
 
 > [!NOTE]
-> 
 > A|B testing is also known as Split Testing. It's based on a hypothesis that's defined as:
 >
 > **For** {user} **who** {action} **the** {solution} **is a** {how} **that** {value} **unlike** {competition} **we** {do better}
@@ -74,7 +74,7 @@ They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for 
 - It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
 - It's simple and cost-effective for an open-source project
 
-## Common Scenarios
+## Common scenarios
 
 You have a [CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
 * Continuously deploy to production
@@ -83,13 +83,13 @@ You have a [CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrang
 
 You have probably guessed it - feature flags! 
 
-### Enable | disable a feature for everyone
+### Enable or disable a feature for everyone
 
 You would like to include hidden features in your release and enable them for **all** users in production. For example, you want to be able to collect verbose logging data for troubleshooting. Using a feature flag, you can enable and disable verbose logging as needed.
 
 ![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
-### Enable | disable a feature for selected users
+### Enable or disable a feature for selected users
 
 With this scenario, you can target specific users or groups of users. For example, you could enable the verbose logging feature for a specific user experiencing a problem or enable a preview feature for early adopters.
 
@@ -99,7 +99,7 @@ With this scenario, you can target specific users or groups of users. For exampl
 
 Lastly, you'd like to give the users a list of preview features and allow each user to decide which feature to enable when. This scenario is key for feature validation, A|B testing, and giving the user flexibility and choice.
 
-## Managing features with feature flags in your engineering process
+## Manage features with feature flags in your engineering process
 
 To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2018/04/03/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function/) for details.
 
@@ -140,7 +140,7 @@ Aside from the licensing and maintenance cost of a feature flag service, you're 
 
 Now that you've covered the concepts and considerations of feature flags, you should be confident to explore ways to improve your CI/CD pipelines. While feature flags come at a cost, having a game plan to manage exposed features at run-time is invaluable.
 
-## Q&A
+## Q & A
 
 ### How does the Azure DevOps team use feature flags?
 
@@ -159,6 +159,7 @@ As Buck states, “Many feature flags go away and the teams themselves take care
 No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https://aka.ms/vsar-rings-flags) for details.
 
 ## Reference information
+
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 * [DevOps @ Microsoft](https://aka.ms/devops)
 * [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
