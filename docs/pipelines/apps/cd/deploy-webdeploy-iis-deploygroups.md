@@ -50,7 +50,7 @@ The configuration varies depending on the type of app you are deploying.
 
 #### Node.js app
 
-Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+Follow the instructions in [this topic](https://github.com/Azure/iisnode) to install and configure IISnode on IIS servers.
 
 [!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
