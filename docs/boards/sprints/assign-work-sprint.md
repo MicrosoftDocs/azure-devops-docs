@@ -138,7 +138,11 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).  <!--- Check with Marina about what permissions are needed to add a sprint or select a sprint --> 
 
-1. You can drag and drop items from the **Backlog** onto a sprint. 
+1. You can drag and drop items from the **Backlog** onto a sprint.  
+
+	> [!NOTE]   
+	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
+
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 

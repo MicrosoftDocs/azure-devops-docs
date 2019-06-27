@@ -112,6 +112,7 @@ Of course, if you have several teams, more complex release and sprint cadences t
 
 
 <a id="schedule">   </a>
+
 ## Add and schedule new sprints for several teams and release cadences 
  
 > [!NOTE]    
@@ -132,6 +133,8 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-agile.png)
 
+
+
 ::: moniker-end
 
 
@@ -144,6 +147,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md) or [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
