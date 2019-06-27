@@ -283,7 +283,6 @@ steps:
   displayName: 'Install dotnetsay'
   inputs:
     command: custom
-    projects: '**/*.csproj'
     custom: tool
     arguments: 'install -g dotnetsay'
 ```
