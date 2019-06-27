@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/24/2019
+ms.date: 06/27/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -482,7 +482,7 @@ jobs:
         some_variable: $(a)    # This does not work
 ```
 
-If the variable `a` is an output variable from a previous job, then you can use that to expand the job matrix.
+If the variable `a` is an output variable from a previous job, then you can use it in a future job.
 
 ```yaml
 - job: A
@@ -493,10 +493,8 @@ If the variable `a` is an output variable from a previous job, then you can use 
 # Map the variable into job B
 - job: B
   dependsOn: A
-  strategy:
-    matrix:
-      x:
-        some_variable: $[ dependencies.A.outputs['a_step.a'] ]    # This works
+  variables:
+    some_variable: $[ dependencies.A.outputs['a_step.a'] ]
 ```
 
 ### Recursive expansion
