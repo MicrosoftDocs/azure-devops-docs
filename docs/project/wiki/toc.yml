@@ -28,6 +28,8 @@
     href: search-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md
+  - name: Create work item from wiki content
+    href: create-embed-wit-from-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
   - name: Update Wiki pages offline 

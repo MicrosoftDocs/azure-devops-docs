@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts IWidget API | Extensions for Azure DevOps 
 description: Documentation for the IWidget contract.
 ms.assetid: 2F1CB8E2-5027-4134-A96B-E60979DFD11E
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

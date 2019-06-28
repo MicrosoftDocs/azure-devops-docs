@@ -5,8 +5,8 @@ title: Azure DevOps Services Host Dialog Service Example
 description: A sample that shows how to use a host dialog service with an Azure DevOps Services extension
 ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'

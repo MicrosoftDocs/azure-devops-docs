@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/25/2016
 ---
 
