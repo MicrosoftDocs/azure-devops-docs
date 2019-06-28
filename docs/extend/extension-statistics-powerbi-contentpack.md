@@ -2,8 +2,8 @@
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
 description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 06/12/2017
 ms.prod: devops
 ms.technology: devops-ecosystem

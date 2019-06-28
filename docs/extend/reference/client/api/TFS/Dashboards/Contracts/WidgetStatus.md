@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts WidgetStatus API | Extensions for Azure De
 description: Documentation for the WidgetStatus contract.
 ms.assetid: 80994108-EAB5-414E-A986-A0EF90D9DF0D
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts IWidgetConfiguration API | Extensions for 
 description: Documentation for the IWidgetConfiguration contract.
 ms.assetid: 0BD0E5D1-27AD-45E1-AC74-A412466FAE62
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
