@@ -5,9 +5,9 @@ ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
