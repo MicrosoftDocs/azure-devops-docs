@@ -4,8 +4,8 @@ ms.technology: devops-ecosystem
 title: Extension Report | Azure DevOps Services
 description: An overview of reports available for an extension. 
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 10/10/2017
 ---

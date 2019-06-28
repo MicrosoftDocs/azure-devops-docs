@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 06/06/2019
+ms.date: 06/27/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -92,6 +92,7 @@ in the **Languages** section of these topics, which also includes examples for o
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly.  |
 | **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
 | **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
+| **Fully Qualified Name** | This is the reference of the namespace, test method, and test class used to publish the test result. The format of FQN is namespace.testclass.methodname. It is not supported in the UI but is available via API.  |
 | **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |
 | **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
@@ -374,6 +375,26 @@ The Publish Test Results task provides support for attachments up to 100MB for b
 
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
+
+## Frequently Asked Questions
+
+#### What is the maximum permittable limit of FQN?
+
+The maximum FQN limit is 512 characters.
+
+#### Does the FQN Character limit also include properties and their values in case of data driven tests?
+
+Yes, the FQN character limit includes properties and their values.
+
+#### Will the FQN be different for sub-results?
+
+Currently, sub-results from the data driven tests will not show up in the corresponding data. 
+
+Example: I have a Test case: Add product to cart
+Data 1: Product = Apparel
+Data 2: Product = Footwear
+
+All test sub-result published will only have the test case name and the data of the first row.
 
 ## Open source
 

@@ -9,7 +9,7 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
-ms.date: 12/07/2018
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -168,6 +168,16 @@ To provide an immersive troubleshooting experience, the **Details** view can be 
 able to perform the required operations in context, such as bug creation or requirement association for the selected test result.
 
 ![Full page panel view](_img/review-continuous-test-results-after-build/full-page-panel-view.png)
+
+<a name="debugginginfo"></a>
+
+### Troubleshooting data for Test failure
+
+For the test failures, the error messages and stack traces are available for troubleshooting. You can also view all attachments associated with the test failure in the *Attachments* tab. 
+
+### Test debt management
+
+You can create or add to an existing bug to manage test debt for failures or long running tests. The *Work Items* tab details all bugs and requirements associated with a Test to help you analyze the requirement impact as well know status and who is working on the bug. 
 
 <a name="historyview"></a>
 

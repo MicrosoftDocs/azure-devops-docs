@@ -1,5 +1,5 @@
 ---
-title: Analyze test results
+title: Test Analytics
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops
@@ -9,11 +9,11 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
 author: vinodjo
-ms.date: 12/07/2018
+ms.date: 06/28/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Analyze test results
+# Test Analytics
 
 [!INCLUDE [version-header-ap](../_shared/version-team-services.md)]
 

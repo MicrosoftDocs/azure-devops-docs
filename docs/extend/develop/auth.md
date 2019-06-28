@@ -7,8 +7,8 @@ ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/29/2016
 ---
 

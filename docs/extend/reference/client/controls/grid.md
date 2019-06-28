@@ -5,8 +5,8 @@ ms.assetid: d0b0cded-3e7f-4972-95bb-8b634fb13f94
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
