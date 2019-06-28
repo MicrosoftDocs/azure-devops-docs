@@ -5,8 +5,8 @@ ms.assetid: ccb6413e-ca29-4f3d-8f1d-caf896706b10
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
