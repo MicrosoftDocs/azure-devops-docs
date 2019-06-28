@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 05/15/2019
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -317,7 +317,9 @@ git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL>
 
 ## Don't sync sources (TFS 2017 and newer only)
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
+Non-deployment jobs automatically fetch sources.
+Use this option if you want to skip that behavior.
+This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 

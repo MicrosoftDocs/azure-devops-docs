@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 06/19/2019
+ms.date: 06/28/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1514,7 +1514,8 @@ Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downl
 
 ## Checkout
 
-`checkout` defines options for checking out source code.
+Non-deployment jobs automatically check out source code.
+You can configure or suppress this behavior with `checkout`.
 
 # [Schema](#tab/schema)
 

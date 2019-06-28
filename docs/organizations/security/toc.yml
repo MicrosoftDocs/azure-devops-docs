@@ -120,6 +120,8 @@
       href: data-location.md 
     - name: Credential storage
       href: credential-storage.md 
+    - name: Allow list for IP addresses and URLs
+      href: allow-list-ip-url.md
       displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: TFSSecurity command
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

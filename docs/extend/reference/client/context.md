@@ -5,8 +5,8 @@ title: Web Context | Extensions for Azure DevOps Services
 description: Context data available in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
