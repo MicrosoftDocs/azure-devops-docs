@@ -35,7 +35,7 @@ Use this task in a build or release pipeline to start, stop, restart, slot swap,
 <tr><td>Source Slot</td><td>(Required) The swap action directs destination slot's traffic to the source slot</td></tr>
 <tr><td>Swap with Production</td><td>(Optional) Select the option to swap the traffic of source slot with production. If this option is not selected, then you will have to provide source and target slot names.</td></tr>
 <tr><td>Target Slot</td><td>(Required) The swap action directs destination slot's traffic to the source slot</td></tr>
-<tr><td>Preserve Vnet</td><td>(Optional) Preserve the Virtual network settings</td></tr>
+<tr><td>Preserve Vnet</td><td>(Optional) Presverve Virtual Network in the destination slot during swap</td></tr>
 <tr><td>Slot</td><td>(Required) undefined</td></tr>
 <tr><td>Install Extensions</td><td>(Required) Site Extensions run on Microsoft Azure App Service. You can install set of tools as site extension and better manage your Azure App Service. The  App Service will be restarted to make sure latest changes take effect.</td></tr>
 <tr><td>Output variable</td><td>(Optional) Provide the variable name for the local installation path for the selected extension.<br/>This field is now deprecated and would be removed. Use LocalPathsForInstalledExtensions variable from Output Variables section in subsequent tasks.</td></tr>
