@@ -7,8 +7,8 @@ description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 
