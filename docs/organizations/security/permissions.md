@@ -401,9 +401,9 @@ You can't remove or delete the default server level groups.
 </tbody>
 </table>
 
-> The full name of each of these groups is **[Team Foundation]/{group name}**.
+> The full name of each of these groups is **[Team Foundation]\\{group name}**.
 > So the full name of the server level administrators group is
-> **[Team Foundation]/Team Foundation Administrators**.
+> **[Team Foundation]\\Team Foundation Administrators**.
 
 ::: moniker-end
 
@@ -509,9 +509,9 @@ Security Service Group
 </tbody>
 </table>
 
-> The full name of each of these groups is **[{collection name}]/{group name}**.
+> The full name of each of these groups is **[{collection name}]\\{group name}**.
 > So the full name of the administrator group for the default collection is
-> **[Default Collection]/Project Collection Administrators**.
+> **[Default Collection]\\Project Collection Administrators**.
 
 
 
@@ -531,9 +531,9 @@ Release Administrators (TFS 2017, Azure DevOps)
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{project name}]\{group name}**.
+> The full name of each of these groups is **[{project name}]\\{group name}**.
 > For example, the contributors group for a project called "My Project" is 
-> **[My Project]/Contributors**.
+> **[My Project]\\Contributors**.
 
 
 > [!NOTE]   
