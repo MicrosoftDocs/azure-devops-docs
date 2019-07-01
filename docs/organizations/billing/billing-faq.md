@@ -144,53 +144,6 @@ A: This happens if someone already [set up billing](set-up-billing-for-your-orga
 
 A: Yes, you can use the same Azure subscription for billing across multiple organizations. But you can't link a single organization to multiple Azure subscriptions.
 
-<a name="find-owner"></a>
-
-### Q: How do I find a project collection administrator?
-
-A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Select **Security** > **Project Collection Administrators** >  **Members**.
-
-   ![Security page, project collection administrators members](_img/security-members-project-collection-administrators.png)
-
-
-### Q: How do I find the organization owner?
-
-A: You can find the current owner in your organization settings.
-
-::: moniker range=">= azure-devops-2019"
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Go to your organization settings.
-
-    <img alt="Go to organization settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
-
-2. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
-
 ### Q: Can I buy Azure DevOps from my software reseller?
 
 A:  Yes you can, if your reseller participates in the Cloud Solution Provider program. Just ask them.
