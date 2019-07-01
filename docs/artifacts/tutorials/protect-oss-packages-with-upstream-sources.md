@@ -4,8 +4,8 @@ description: Use upstream sources in Azure Artifacts to keep your OSS packages s
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: amullans
 ms.date: 12/04/2018
 monikerRange: '>= tfs-2017'

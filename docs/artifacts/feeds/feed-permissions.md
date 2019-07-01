@@ -5,8 +5,8 @@ ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
