@@ -3,7 +3,7 @@ title: Azure DevOps Service Status Documentation
 description: Description of how Azure DevOps services status is monitored and available to users
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-new-user
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.manager: jillfra
 ms.date: 06/14/2019
