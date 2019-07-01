@@ -7,8 +7,8 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/04/2016
 ---
 

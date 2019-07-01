@@ -22,14 +22,6 @@ ms.date: 01/11/2019
 
 This article shows how to customize a Kanban board for the Agile process. You have one Kanban board for each active product or portfolio backlog. 
 
-> [!IMPORTANT]  
-> **Select the version that meets your location and process**:
-> We are experimenting with a new acquisition model which is 
-> currently available for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). This model supports a new Basic process.  
-> For International users and others who sign up through another method, the Agile process is used. Select your version of this article based on your location and process used.
-> - [**Basic process**](customize-boards.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)
-> - [**Agile process**](customize-boards-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json) 
-
 You can configure your Kanban board in several ways to support specific tracking needs. For example:  
 - Update fields directly from the card  
 - Highlight cards based on field assignments  
@@ -72,6 +64,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
     <li><strong>Columns</strong>: Add, rename, and configure columns for the board.</li>
     <li><strong>Swimlanes</strong>: Add swimlanes to a board to easily track high priority levels, distinguish different service classes, or track blocked items.</li>
     <li><strong>Backlogs</strong>: Enable or disable issues or epics from being tracked on backlogs and boards.</li>
+    <li><strong>Show bugs</strong>: Choose how bugs are displayed on backlogs and boards.  </li>
 	</ul>
     <strong>Less common customizations:</strong>  
 	<ul>
@@ -166,5 +159,6 @@ Here we show the customizations made in this article. The following image also s
 * [Work in Progress limits](../boards/wip-limits.md)  
 * [Split columns](../boards/split-columns.md)   
 * [Definition of Done](../boards/definition-of-done.md)  
+* [Show bugs on backlogs and boards ](../../organizations/settings/show-bugs-on-backlog.md)  
 * [Set working days](../../organizations/settings/set-working-days.md)  
 * [Cumulative flow](../../report/dashboards/cumulative-flow.md)  

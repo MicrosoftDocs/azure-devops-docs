@@ -349,7 +349,7 @@ YAML builds are not yet available on TFS.
 
 ## Attachments support
 
-The Publish Test Results task provides support for attachments up to 100MB for both test run and test results for the following formats.
+The Publish Test Results task provides support for attachments for both test run and test results for the following formats. For public projects, we support 2GB of total attachments. 
 
 ### Visual Studio Test (TRX)
 

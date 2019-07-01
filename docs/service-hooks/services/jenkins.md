@@ -7,8 +7,8 @@ description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 

@@ -4,8 +4,8 @@ description: Use packages from Maven Central in Azure DevOps Services via upstre
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/13/2017
 monikerRange: '=azure-devops'
