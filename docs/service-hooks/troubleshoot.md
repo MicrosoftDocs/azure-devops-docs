@@ -7,8 +7,8 @@ description: Troubleshoot problems with the services you have integrated with yo
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 

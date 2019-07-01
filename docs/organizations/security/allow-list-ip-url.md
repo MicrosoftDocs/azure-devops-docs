@@ -7,11 +7,11 @@ ms.technology: devops-whitepapers
 ms.author: jominana
 author: chcomley
 ms.manager: jillfra
-ms.date: 06/26/2019
+ms.date: 07/01/2019
 monikerRange: 'azure-devops'
 ---
 
-# Aadd IP addresses and URLs to allow list
+# Add IP addresses and URLs to allow list
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 

@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/1/2018
 monikerRange: '>= tfs-2017'
 ---

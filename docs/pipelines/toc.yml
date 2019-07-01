@@ -21,6 +21,9 @@
   - name: Create your first pipeline
     href: create-first-pipeline.md
     displayName: status badge, get started, first pipeline, import from github
+  - name: Create your first pipeline from CLI
+    href: create-first-pipeline-cli.md
+    displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 

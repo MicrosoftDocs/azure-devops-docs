@@ -67,6 +67,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 
 <a id="field-customizations" />
+
 ## Field customizations 
 
 Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
@@ -277,6 +278,7 @@ You can make the following customizations to a WIT form.
 </table>
 
 <a id="resizing">  </a>  
+
 ### Layout and resizing 
 
 The web form layout is organized into three columns as shown in the image below. 

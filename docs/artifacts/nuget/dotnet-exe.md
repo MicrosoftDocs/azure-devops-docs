@@ -5,8 +5,8 @@ ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 10/08/2018
 monikerRange: 'azure-devops'

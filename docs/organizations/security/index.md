@@ -66,7 +66,7 @@ For anyone to access a project, you must add them to a security group. For a qui
 - [Permissions and groups reference](permissions.md)  
 - [Azure DevOps Services data protection](data-protection.md)
 - [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
-- [Allow list Azure DevOps IP addresses and URLs](allow-list-ip-url.md)
+- [Add IP addresses and URLs to allow list](allow-list-ip-url.md)
 
 ## Resources
 
