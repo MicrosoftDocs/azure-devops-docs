@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/10/2016
 ---
 
