@@ -6,14 +6,14 @@ ms.topic: include
 
 ## Open Settings>Process
 
-You create, manage, and make customizations to processes from **Organization Settings>Process**. 
+You create, manage, and make customizations to processes from **Organization settings>Process**. 
 
-1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
-1. Then, expand **Boards** as needed and choose **Process**. 
+1. Then, Choose **Process** under **Boards**. 
    
 	> [!div class="mx-imgBorder"]  
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/_img/process/open-process-page-s150.png) 
