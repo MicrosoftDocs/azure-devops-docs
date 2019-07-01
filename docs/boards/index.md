@@ -102,6 +102,12 @@ Plan, track, and discuss work across your teams.
                         <p>
                             <a href="/azure/devops/boards/work-items/view-add-work-items">View and add work items</a>
                         </p>
+                        <p>
+                            <a href="/azure/devops/boards/backlogs/manage-bugs">Define, triage, and manage bugs</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/boards/work-items/guidance/choose-process">Choose a process</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -228,10 +234,13 @@ Plan, track, and discuss work across your teams.
                     <div class="cardText">
                         <h3>Plans and Agile at scale</h3>
                         <p>
-                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json">About teams and Agile tools</a>
+                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">About teams and Agile tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json">Manage and configure team tools</a>
+                            <a href="/azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Add teams</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Manage and configure team tools</a>
                         </p>
                         <p>
                             <a href="/azure/devops/boards/plans/portfolio-management">Portfolio management</a>

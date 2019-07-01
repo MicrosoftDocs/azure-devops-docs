@@ -7,8 +7,8 @@ description: Authorize other services to work with Azure DevOps Services
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 
