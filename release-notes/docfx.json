@@ -4,7 +4,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -35,10 +36,12 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "ms.topic": "article",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "extendBreadcrumb": true,
       "ms.technology": "devops-release-notes",
       "author": "gloridelmorales",
       "ms.author": "glmorale",
-      "ms.manager": "douge",
+      "ms.manager": "jillfra",
       "ms.prod": "devops",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:devops",
