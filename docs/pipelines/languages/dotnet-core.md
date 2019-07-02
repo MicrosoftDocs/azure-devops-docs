@@ -161,7 +161,7 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running 
 the `dotnet restore` command either through the 
-[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your pipeline.
+[.NET Core](../tasks/build/dotnet-core-cli.md) task or directly in a script in your pipeline.
 
 ::: moniker range=">= tfs-2018"
 

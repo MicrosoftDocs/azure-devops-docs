@@ -34,7 +34,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
 
 > [!NOTE]
-> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
+> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
 ::: moniker range="> tfs-2018"
 
