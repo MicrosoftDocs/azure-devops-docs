@@ -22,7 +22,7 @@ running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
 The task supports popular coverage result formats such as
 [Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
-Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md),
+Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core-cli.md),
 [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
 also provide the option to publish code coverage data to the pipeline.
 If you are using these tasks, you do not need a separate [Publish Test Results task](publish-test-results.md)
