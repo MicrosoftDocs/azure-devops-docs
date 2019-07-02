@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps 
 ms.prod: devops
-ms.technology: devops-collab
+ms.technology: devops-settings
 ms.assetid: 
 ms.manager: jillfra
 ms.author: chcomley
