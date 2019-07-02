@@ -366,8 +366,6 @@
     items:
     - name: Build tasks
       items:
-      - name: .NET Core
-        href: tasks/build/dotnet-core.md
       - name: .NET Core CLI
         href: tasks/build/dotnet-core-cli.md
       - name: Android build
