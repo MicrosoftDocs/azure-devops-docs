@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 06/28/2019
+ms.date: 07/02/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1522,7 +1522,7 @@ You can configure or suppress this behavior with `checkout`.
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
-  clean: boolean  # whether to fetch clean each time
+  clean: all | outputs | resources  # what to clean each time
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
@@ -1542,7 +1542,7 @@ steps:
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
-  clean: false
+  clean: all
   fetchDepth: 5
   lfs: true
   path: PutMyCodeHere
