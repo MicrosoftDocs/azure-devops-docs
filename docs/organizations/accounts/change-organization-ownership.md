@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 07/02/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -48,7 +48,7 @@ Make sure the new owner has completed the following tasks:
 
 3. Select **Overview**, and then **Change owner**.  
 
-   ![Select Overview, and the Change owner](_img/change-organization-ownership/select-overview-change-owner.png)
+   ![Select Overview, and then Change owner](_img/change-organization-ownership/change-organization-owner.png)
 
 4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
