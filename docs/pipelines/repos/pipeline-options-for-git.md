@@ -178,6 +178,9 @@ By default, your source code will be checked out into a directory called `s`. Fo
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
+> [!NOTE]
+> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](../yaml-schema.md#checkout) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
