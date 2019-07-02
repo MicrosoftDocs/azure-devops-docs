@@ -3,7 +3,7 @@ title: Troubleshoot connecting project
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
-ms.technology: devops-security
+ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
