@@ -25,7 +25,7 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 | ---- | -------- |
-| ![icon](build/_img/dotnet-core.png) [.NET Core](build/dotnet-core.md). build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool. | Azure Pipelines, TFS 2018 |
+| ![icon](build/_img/dotnet-core.png) [.NET Core](build/dotnet-core-cli.md). build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool. | Azure Pipelines, TFS 2018 |
 | ![icon](build/_img/dotnetcorecli.png) [.NET Core CLI](build/dotnet-core-cli.md). Build, test, package, or publish a dotnet application, or run a custom dotnet command. | Azure Pipelines, TFS 2018 |
 | ![icon](build/_img/android-build.png) Android Build - deprecated. Use [Gradle](build/gradle.md) | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/android-signing.png) [Android Signing](build/android-signing.md). Sign and align Android APK files | Azure Pipelines, TFS 2015 RTM and newer |
