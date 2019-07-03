@@ -1,22 +1,22 @@
 ---
-title: Troubleshoot getting extensions for Azure DevOps
-description: Troubleshooting getting and paying for extensions for Azure DevOps
+title: FAQs about getting extensions for Azure DevOps
+description: Frequently asked questions about getting and paying for extensions for Azure DevOps
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/19/2019
+ms.date: 07/02/2019
 monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
 
-# Troubleshoot getting extensions for Azure DevOps
+# FAQs about getting extensions for Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps, including FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
 
 ::: moniker range="azure-devops"
 
@@ -139,7 +139,7 @@ A: You can't buy third-party extensions because of one of the following reasons:
 ### Q: What's the difference between free, preview, and paid extensions? 
 
 A: Extensions that are available during preview don't incur charges, 
-aren't fully supported, and have no financially-backed service level agreements. 
+aren't fully supported, and have no financially backed service level agreements. 
 
 Paid extensions require that you buy and assign them to users 
 who need access but don't have it already, for example, 
@@ -151,7 +151,7 @@ If you have multiple subscriptions, you can select the Azure subscription that y
 
 ### Q: How do I get other help or support for Azure subscriptions and billing?
 
-A: Check these [topics about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing), 
+A: Check these [articles about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing), 
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
@@ -178,7 +178,7 @@ who have access for that extension included with their subscriptions. These subs
 
 ### Q: Why can't I install extensions for TFS?
 
-A: This might happen for one of the following reasons: 
+A: You can't install extensions for TFS for one of the following reasons: 
 
 * You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
@@ -218,7 +218,7 @@ to sign in to the Visual Studio Marketplace.
 
 <a name="no-download"></a>
 
-### Q: Why doesn't the extension I want show a download button?
+### Q: Why doesn't the extension that I want show a download button?
 
 A: Some extensions work only with Azure DevOps Services, not TFS, for one of these reasons:
 
@@ -250,7 +250,7 @@ for the Team Foundation Server where you want to upload extensions.
 
 ### Q: How do I get support for the Visual Studio Marketplace?
 
-A: Depending on the support you need, choose from the following:
+A: Depending on the support you need, choose from the following links:
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)

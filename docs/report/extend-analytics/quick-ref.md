@@ -1,7 +1,7 @@
 ---
-title: Quick reference index to tasks & concepts for using OData & the Analytics service
+title: Quick reference index to tasks & concepts for using OData & Analytics
 titleSuffix: Azure DevOps  
-description: Supported tasks and concepts to generate results using OData backed Analytics Service for Azure DevOps 
+description: Supported tasks and concepts to generate results using OData backed Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: jillfra
@@ -13,11 +13,11 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Quick reference to tasks and concepts for using OData and the Analytics service
+# Quick reference to tasks and concepts for using OData and Analytics
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Use this quick reference to access information and sample queries using OData and the Analytics service.
+Use this quick reference to access information and sample queries using OData and Analytics.
 
 ## Supported tasks 
 
@@ -85,7 +85,7 @@ Use this quick reference to access information and sample queries using OData an
 <ul>
 <li><a href="aggregated-data-analytics.md#aggregation-extension" data-raw-source="[Aggregation extensions support](aggregated-data-analytics.md#aggregation-extension)">Aggregation extensions support</a> </li>
 <li><a href="analytics-metadata.md" data-raw-source="[Analytics OData metadata](analytics-metadata.md)">Analytics OData metadata</a></li>
-<li><a href="../powerbi/what-is-analytics.md" data-raw-source="[Analytics service](../powerbi/what-is-analytics.md)">Analytics service</a></li>
+<li><a href="../powerbi/what-is-analytics.md" data-raw-source="[Analytics](../powerbi/what-is-analytics.md)">Analytics</a></li>
 <li><a href="odata-api-version.md" data-raw-source="[API versioning](odata-api-version.md)">API versioning</a></li>
 <li><a href="odata-query-guidelines.md#restrict-do-use-batch-endpoint" data-raw-source="[Batch endpoint for long queries](odata-query-guidelines.md#restrict-do-use-batch-endpoint)">Batch endpoint for long queries</a></li>
 <br/>

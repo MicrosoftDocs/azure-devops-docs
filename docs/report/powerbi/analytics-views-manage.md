@@ -18,7 +18,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps. 
+With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
 [!INCLUDE [temp](../_shared/boards-disabled.md)]
 
@@ -98,8 +98,8 @@ To delete a view, click the ![ ](../_img/icons/actions-icon.png) actions icon an
 
 ## Related articles
 - [Create an Analytics view](analytics-views-create.md) 
-- [Data available from the Analytics Service](data-available-in-analytics.md)
-- [Grant permissions to access the Analytics service](./analytics-security.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)
 
 

@@ -26,7 +26,7 @@ Teams track their velocity to help them determine how much work they can perform
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
 > [!NOTE]
-> The Velocity widget is based on the Analytics Service. The Analytics Service is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
+> The Velocity widget is based on Analytics data. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2018 and earlier versions, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
 
 Use this article to learn: 
 
@@ -44,18 +44,20 @@ There are two velocity charts, the one you access by adding the Velocity widget 
 ## Add the widget to your dashboard   
 
 ::: moniker range="azure-devops"
-1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.  
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
+
 1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
 
 <a id="configure-widget"></a>
+
 ## Configure the Velocity widget    
 
 You configure your velocity widget for a single team. If you want to view the velocity for several teams, then you must configure a portfolio management team which rolls up from several teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
