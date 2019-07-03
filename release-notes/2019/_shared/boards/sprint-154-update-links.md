@@ -7,3 +7,4 @@ ms.topic: include
 - [Work item parent column as column option](#work-item-parent-column-as-column-option)
 - [Instant search for work items](#instant-search-for-work-items)
 - [Search for a work item as you type](#search-for-a-work-item-as-you-type)
+- [Change the process used by a project](#change-the-process-used-by-a-project)
