@@ -90,6 +90,14 @@ Use this index to quickly access information on tasks for configuring or accessi
 <tbody valign="top">
 <tr>
 <td width="50%"> 
+
+<strong>Analytics</strong>
+<ul>
+<li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
+<li><a href="analytics-widgets.md">Analytics widgets</a></li>
+<li><a href="analytics-extension.md">Enable or install Analytics</a></li>
+<li><a href="../powerbi/what-is-analytics.md">What is Analytics?</a></li>
+</ul>
 <strong>Dashboards</strong>
 <ul>
 <li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
@@ -279,7 +287,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: indicates data is derived from the [Analytics service](../powerbi/what-is-analytics.md)  
+- **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
 - **Project**: indicates you can select the project and team when configuring the widget
 - **Team**: Indicates a widget that is scoped to a team  
 - **User**: Indicates you widget that is scoped to a user identity 

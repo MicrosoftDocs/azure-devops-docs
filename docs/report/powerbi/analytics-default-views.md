@@ -1,7 +1,7 @@
 ---
 title: Default Analytics views
 titleSuffix: Azure DevOps
-description: Filtered set of data based on the Analytics Service for Azure DevOps which supports creating Power BI reports  
+description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
@@ -17,7 +17,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-An Analytics view filters Azure DevOps data derived from the Analytics Service. You use views to quickly load the data of interest in Power BI to generate reports. 
+An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
 
 A default set of Analytics views are provided, as shown below. 
 
@@ -69,7 +69,7 @@ For example, the following fields are included when filtered for bugs and user s
 > [!div class="mx-imgBorder"]
 > ![Analytics views common fields](_img/editable-views/common-fields.png)
 
-Two fields that are reported on are only available from the Analytics Service data store, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
+Two fields that are reported on are only available from Analytics data, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 
 ## When a default view doesn't meet your needs 
 
@@ -81,6 +81,6 @@ In these cases, you can [create a custom Analytics view](analytics-views-create.
 
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md) 
-- [Data available from the Analytics Service](data-available-in-analytics.md)
+- [Data available from Analytics](data-available-in-analytics.md)
 - [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
-- [Grant permissions to access the Analytics service](./analytics-security.md)
+- [Grant permissions to access Analytics](./analytics-security.md)

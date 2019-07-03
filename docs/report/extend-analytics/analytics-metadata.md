@@ -1,7 +1,7 @@
 ---
-title: Explore the OData metadata for the Analytics service 
+title: Explore the OData metadata for Analytics 
 titleSuffix: Azure DevOps  
-description: Understand the entity model OData metadata defined for the Analytics service in Azure DevOps  
+description: Understand the entity model OData metadata defined for Analytics in Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
@@ -17,7 +17,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Data model for the Analytics Service](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
+Understanding the metadata associated with the entity model for Analytics is a pre-requisite for programmatically querying the [Data model for Analytics](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -247,11 +247,11 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Data model for the Analytics Service](data-model-analytics-service.md)
+> [Data model for Analytics](data-model-analytics-service.md)
 
 
 ## Related articles
 
-- [Data model for the Analytics Service](data-model-analytics-service.md)
+- [Data model for Analytics](data-model-analytics-service.md)
 - [Organization and project-scoped queries](account-scoped-queries.md).
 - [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 
