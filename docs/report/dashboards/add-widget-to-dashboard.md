@@ -29,7 +29,9 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all work tracking Analytics widgets are disabled and won't appear in the widget catalog. If Analytics is disabled or not installed, then all Analytics widgets are disabled. 
+> 
+> To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). For Analytics, see [enable or install Analytics](analytics-extension.md)]. 
 
 ::: moniker-end
 
@@ -107,7 +109,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ## Add an Analytics widget
 
-This example shows how to add the Velocity widget available from the Analytics service to a dashboard. 
+This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
 1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
@@ -291,8 +293,8 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
-- [What is the Analytics Service?](../powerbi/what-is-analytics.md)
+- [Analytics-based widgets](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

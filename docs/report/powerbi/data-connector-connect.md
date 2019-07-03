@@ -1,7 +1,7 @@
 ---
 title: Connect to Power BI Data Connector
 titleSuffix: Azure DevOps
-description: Step-by-step guidance on how to connect to Power BI Data Connector and the Analytics service to access Azure DevOps data
+description: Step-by-step guidance on how to connect to Power BI Data Connector and Analytics to access Azure DevOps data
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Connect to the Analytics service with Power BI Data Connector
+# Connect to Analytics with Power BI Data Connector
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
@@ -27,10 +27,10 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 ::: moniker range="azure-devops"
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
+3. Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 4. [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
 4. Review the [knowledge base of Power BI articles](/power-bi). 
-5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
+5. If you are not familiar with Analytics, we recommend you read "[what is Analytics](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end
 
@@ -38,9 +38,9 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 ::: moniker range="azure-devops-2019"
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-3. Make sure you have [permissions required to access the Analytics service](analytics-security.md). If you are a member of the project Contributors group, you have permission.
+3. Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 4. Review the [knowledge base of Power BI articles](/power-bi). 
-5. If you are not familiar with the Analytics service, we recommend you read "[what is the Analytics service](what-is-analytics.md)" before continuing. 
+5. If you are not familiar with Analytics, we recommend you read "[what is Analytics](what-is-analytics.md)" before continuing. 
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	Select the checkbox next to **Work Items - Today** table and choose **Load**. 
 
 	> [!NOTE]
-	> [Analytics Views](what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from the Analytics service. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](analytics-views-create.md).  
+	> [Analytics Views](what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](analytics-views-create.md).  
 
 2. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
 	the table name. Should you see any errors, refer to the [Q & A](#q-a) section.
@@ -210,7 +210,7 @@ This error typically occurs when your project has a large number of work items. 
 
 > The user was not authorized.
 
-**A:** You can encounter this error if you try to access a project to which you don't have permissions. To get access, see [Set permissions to access the Analytics service and Analytics views](analytics-security.md).
+**A:** You can encounter this error if you try to access a project to which you don't have permissions. To get access, see [Set permissions to access Analytics and Analytics views](analytics-security.md).
 
 > [!div class="mx-imgBorder"] 
 > ![The user was not authorized.](_img/AccessDeniedError.png)
@@ -222,7 +222,7 @@ This error typically occurs when your project has a large number of work items. 
 > Access to the resource is forbidden.
 
 **A:** You can encounter this error if you have access to a given project but you do not have the *View analytics* permissions. Please work with your project administrator to get these permissions.
-For more information about the security model, see [Analytics service security](analytics-security.md).
+For more information about the security model, see [Analytics security](analytics-security.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Access to the resource is forbidden.](_img/AnalyticsAccessCheckException.png)
@@ -246,9 +246,9 @@ If the URL you use on a daily basis is "`https://dev.azure.com/fabrikam-fiber-in
 
 ## Related articles
 
-- [Permissions required to access the Analytics service](analytics-security.md)
+- [Permissions required to access Analytics](analytics-security.md)
 - [Power BI integration overview](overview.md)
-- [Analytics service security](analytics-security.md)
+- [Analytics security](analytics-security.md)
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 - [Data Connector - Example reports](data-connector-examples.md)

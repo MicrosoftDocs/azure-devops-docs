@@ -14,7 +14,13 @@ A set of default Analytics views are defined for each team project. You can view
 
 ::: moniker range="azure-devops-2019"
 
-After you install the [Analytics Marketplace extension](../dashboards/analytics-extension.md), a set of default Analytics views are created for each team project. You can view, modify, and create a custom view from **Analytics**. 
+#### For Azure DevOps Server 2019.1
+
+After you [install or enable Analytics](/azure/devops/report/dashboards/analytics-extension), a set of default Analytics views are created for each project. You can view, modify, and create a custom view from **Analytics**. 
+
+#### For Azure DevOps Server 2019
+
+After you install the [Analytics Marketplace extension](/azure/devops/report/dashboards/analytics-extension), a set of default Analytics views are created for each project. You can view, modify, and create a custom view from **Analytics**. 
 
 ::: moniker-end  
 
