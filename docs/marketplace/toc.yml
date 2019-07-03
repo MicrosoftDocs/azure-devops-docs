@@ -20,17 +20,15 @@
     href: trust.md
 - name: How-to guides
   items:
-  - name: Manage extension permissions (Security)
-    href: how-to/grant-permissions.md
   - name: Approve extension requests
     href: approve-extensions.md
   - name: Uninstall or disable extensions
     href: uninstall-disable-extensions.md
   - name: Change number of paid users for extensions
     href: how-to/change-paid-extension-users.md
-- name: Troubleshooting
-  items:
-  - name: FAQs about getting extensions
+  - name: Manage extension permissions
+    href: how-to/grant-permissions.md
+  - name: FAQs about extensions
     href: faq-extensions.md
 - name: Resources
   items: 
