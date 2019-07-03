@@ -53,7 +53,7 @@ You can use Azure Pipelines to build an app written in any language. For this qu
 1. Enter your GitHub user name and password to authenticate Azure Pipelines.
    
     ```
-    Enter your GitHub username leave black for using already generated PAT): Contoso
+    Enter your GitHub username (leave blank for using already generated PAT): Contoso
     
     Enter your GitHub password:
     ``` 
