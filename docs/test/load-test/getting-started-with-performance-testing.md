@@ -21,7 +21,7 @@ monikerRange: '> tfs-2018'
 
 Check your app or web site's performance before you launch it or deploy updates to production by using load testing.
 Find problems before your customers do. Start running 
-[cloud-based load tests](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs) 
+cloud-based load tests
 in almost no time with Azure DevOps.
 
 > This example shows how to execute a cloud load test using Visual Studio. You can also
