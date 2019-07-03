@@ -27,8 +27,8 @@ The CFD widget provides more configuration options than those supported by the d
 Use this article to learn how to: 
 
 > [!div class="checklist"] 
-> * Configure the Cumulative Flow Diagram widget (Analytics service)  
-> * View and configure the built-in Cumulative flow chart (work tracking datastore) 
+> * Configure the Cumulative Flow Diagram widget (Analytics)  
+> * View and configure the built-in Cumulative flow chart (work tracking data store) 
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -66,7 +66,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.    
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.  
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
 1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](../add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  

@@ -3306,6 +3306,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/marketplace/extension-report.md",
+      "redirect_url": "/azure/devops/extend/extension-report",
+      "redirect_document_id": false 
+    },
+    {
       "source_path": "docs/integrate/extensions/publish/integration.md",
       "redirect_url": "/azure/devops/extend/publish/integration",
       "redirect_document_id": false

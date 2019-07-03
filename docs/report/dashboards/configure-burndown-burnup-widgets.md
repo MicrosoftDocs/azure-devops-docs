@@ -82,7 +82,8 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 
 [!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
 
-## Add the widget to your dashboard   
+## Add the widget to your dashboard  
+ 
 The Configuration dialog for the Burndown and Burnup widgets is the same. You configure these widgets for one or more teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).
 
 ::: moniker range="azure-devops"
@@ -91,13 +92,14 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.    
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 1. Choose the ![  ](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.  
 ::: moniker-end
 
 
 ## Choose the teams and work items to chart  
+
 1. Modify the **Title** of the widget and select your preferred **Size**. The Burndown widget can scale up to 10x10.    
 1. Select the **Teams** you want to track.   
 	Select at least one **Project** and one **Team**.   
@@ -140,6 +142,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 
 ## Choose how you want to calculate burndown or burnup 
+
 1. Select how you want to calculate burndown or burnup, by a count of work items or a sum based on a selected field.  
 	Here, we choose to base the burndown on a count of work items.   
 	![Burndown Widget - Configuration - Select burndown on count](./_img/burndown-widget/burndownup-config-select-burndown-on-count.png)  
@@ -152,6 +155,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	<!---You can select from one of several fields such as Remaining Work, Total Remaining, Average Burn Rate, and Projected Completion Date.  You may select to burndown by on a count of work items -->
 
 ## Choose the time period and plotting interval  
+
 1. Select the time period. You can select from one of the following options to define your time period:
 
    | Option | Purpose for burndown | 
@@ -232,21 +236,26 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 
 ## Configure the Burnup widget
+
 Configuring the Burnup widget is exactly like configuring the Burndown widget, except that it plots work completed, rather than work remaining.
 
 **Burnup Widget displaying a Stories Burnup**
+
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Burndown guidance](burndown-guidance.md) 
 
 ## Related articles 
+
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 - [Applying filters to historical data](../powerbi/analytics-historical-filtering.md)
 
 #### Industry resources 
+
 * [Managing Myopia with Release Burndowns](https://www.scrumalliance.org/community/articles/2010/may/managing-myopia-with-release-burndowns)
 
 

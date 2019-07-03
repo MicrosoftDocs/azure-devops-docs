@@ -1,7 +1,7 @@
 ---
 title: Query guidelines for Analytics with OData
 titleSuffix: Azure DevOps
-description: Guidance to support extension developers on how to write good OData queries that access the Analytics Service for Azure DevOps
+description: Guidance to support extension developers on how to write good OData queries that access Analytics for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
@@ -18,11 +18,11 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against the Analytics Service for Azure DevOps. Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
+Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by the Analytics Service contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
+Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by Analytics contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
@@ -107,13 +107,13 @@ Queries that violate an OData error rule will result in a failed response with a
 
 ### ✔️ DO limit the query to those project(s) to which you have access
 
-If your query targets data from a project you don't have access to, the query will return a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. To learn more, see [Permissions required to access the Analytics Service](../powerbi/analytics-security.md).
+If your query targets data from a project you don't have access to, the query will return a "Project access denied" message. To ensure that you have access, make sure your **View analytics** permission is set to Allow for all projects that you query. To learn more, see [Permissions required to access Analytics](../powerbi/analytics-security.md).
 
 Here is the message you'll see if you don't have access to a project: 
 
 ><em>The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.</em>
 
-<!---One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience will be able to execute them. 
+<!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience will be able to execute them. 
 
 If a query tries to access the data in a project for which you do not have access, you will get the following error message.-->
 
@@ -245,9 +245,9 @@ For example, if you grouped `WorkItemSnapshot` only by `AssignedTo` property and
 
 ### ❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing
 
-OData syntax provides a way to access a particular entity by including its keys directly in the URL segments as described in the specification, [OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340). Although OData allows such addressing, the Analytics Service blocks it. Inclusion within a query results in the following error.
+OData syntax provides a way to access a particular entity by including its keys directly in the URL segments as described in the specification, [OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340). Although OData allows such addressing, Analytics blocks it. Inclusion within a query results in the following error.
 
-><em>The query specified in the URI is not valid. The Analytics Service doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.</em>
+><em>The query specified in the URI is not valid. Analytics doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.</em>
 
 As the error messages hints, certain client tools can abuse direct entity addressing. Instead of loading all the data in a single request, such clients might choose to query for each entity independently. This is discouraged as it can result in a very high number of requests. Instead, we recommend you use explicit entity addressing as explained in the following section.
 
@@ -328,7 +328,7 @@ To resolve this problem, remove the distinct column from the `groupby` clause.
 
 ### ❌ [BLOCKED] DO NOT use `countdistinct` aggregation
 
-The Analytics Service doesn't support the `countdistinct` function, even though OData does. While we plan to add support in the future, it currently isn't available. A query that contains this function will return the following error message.
+Analytics doesn't support the `countdistinct` function, even though OData does. While we plan to add support in the future, it currently isn't available. A query that contains this function will return the following error message.
 
 > *Queries which apply a count distinct with an aggregation are not supported.*
 
@@ -360,7 +360,7 @@ To resolve this problem, use the OData batch endpoint as explained in the specif
 
 We restrict use of the batch endpoint from handling a batch of multiple requests. A single request can still have only one query. If you try to send a batch of several queries, the operation will fail with the following error message. The only solution is to split queries into multiple requests.
 
-> *The Analytics Service doesn't support processing of multiple operations which the current batch message contains. The Analytics Service uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
+> *Analytics doesn't support processing of multiple operations which the current batch message contains. Analytics uses OData batch in order to support POST requests, but requires you limit the operation to a single request.*
 
 <a name="odata_query_result_width_invalid"></a>
 
@@ -474,17 +474,17 @@ An alternative approach is to use date surrogate key properties as they do not k
 
 ### ✔️ DO measure the impact of implementing a performance guideline
 
-As with any performance recommendations, you shouldn't blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of the Analytics Service who had very specific requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have no effect or even a negative effect on the performance. You do need to measure the difference to notice it. Should this happen,  please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
+As with any performance recommendations, you shouldn't blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of Analytics who had very specific requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have no effect or even a negative effect on the performance. You do need to measure the difference to notice it. Should this happen,  please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
 
 There are many options to measure performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](https://docs.microsoft.com/microsoft-edge/devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](https://msdn.microsoft.com/library/windows/desktop/ff966510(v=vs.85).aspx). 
 
-Regardless of your approach, you should run both queries multiple times (e.g. 30 runs each) to have a sufficiently large sample to reason about performance characteristics. Note that the Analytics Service follows multi-tenant architecture, thus, duration of your queries might be impacted by other operations that occur at the same time. 
+Regardless of your approach, you should run both queries multiple times (e.g. 30 runs each) to have a sufficiently large sample to reason about performance characteristics. Note that Analytics follows multi-tenant architecture, thus, duration of your queries might be impacted by other operations that occur at the same time. 
 
 <a id="use-aggregation"> </a>
 
 ### ✔️ DO use aggregation extensions
 
-By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, you can ask the service to summarize data server-side and return a much smaller response than what you can fetch by applying the same function client-side. Finally, Analytics Service is optimized for this type of queries, so please make use of it. 
+By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, you can ask the service to summarize data server-side and return a much smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so please make use of it. 
 
 To learn more, see [Aggregate data](aggregated-data-analytics.md).
 
@@ -492,7 +492,7 @@ To learn more, see [Aggregate data](aggregated-data-analytics.md).
 
 ### ✔️ DO specify columns in the `$select` clause
 
-Specify the columns you care about in the `$select` clause. Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. By reducing the set of properties you reference in `$select` clause you can reduce the number of columns that have to be scanned and improve the overall performance of the query.
+Specify the columns you care about in the `$select` clause. Analytics is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. By reducing the set of properties you reference in `$select` clause you can reduce the number of columns that have to be scanned and improve the overall performance of the query.
 
 For example, the following query specifies the columns for work items.
 
@@ -526,7 +526,7 @@ For example, the query below specifies the columns for both the work item and it
 
 When you query for historical data, the chances are that you are interested in the most recent period (e.g. 30 days, 90 days). Due to how work items entities are implemented,  there is a convenient way for you to write such queries to get great performance. Each time you update a work item it creates a new revision and records this action in the `System.RevisedDate` field, which makes it perfect for history filters.
 
-In the Analytics Service, the revised date is represented by `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`) properties. For best performance, use the latter. This is the date *surrogate key* and it represents the date when a revision was created or it has `null` for active, uncompleted revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
+In Analytics, the revised date is represented by `RevisedDate` (`Edm.DateTimeOffset`) and `RevisedDateSK` (`Edm.Int32`) properties. For best performance, use the latter. This is the date *surrogate key* and it represents the date when a revision was created or it has `null` for active, uncompleted revisions. If you want all the dates since the `{startDate}` inclusive, add the following filter to your query.
 
 `RevisedDateSK eq null or RevisedDateSK gt {startDateSK}`
 
@@ -554,7 +554,7 @@ For example, the following query returns the number of work items for each day s
 
 By default, all the snapshot tables are modeled as *daily snapshot fact* tables. Consequently, if you query for a time range it will get a value for each day. Long time ranges result in a very large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots. 
 
-You can achieve this with additional filter expressions to remove days which don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
+You can achieve this with additional filter expressions to remove days which don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to Analytics with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -653,7 +653,7 @@ For example, the following query gets all the work items which were tagged with 
 
 ### ❌ DO NOT use `tolower` and `toupper` functions to perform case-insensitive comparison
 
-If you've worked with other systems, you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With the Analytics service all the string comparisons are case-insensitive by default, thus you don't need to apply any functions to explicitly handle it.
+If you've worked with other systems, you might expect you need to use `tolower` or `toupper` functions for the case-insensitive comparison. With Analytics all the string comparisons are case-insensitive by default, thus you don't need to apply any functions to explicitly handle it.
 
 For example, the following query gets all the work items tagged with "QUALITY", "quality" or any other case combination of this word.
 
@@ -674,7 +674,7 @@ OData has the capability to expand all the levels of a hierarchical structure. F
 
 ### ✔️ DO use server-driven paging
 
-If you ask for a set that is too large to be sent in a single response, the Analytics Service will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
+If you ask for a set that is too large to be sent in a single response, Analytics will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
 
 The link to the next page is included in the `@odata.nextLink` property.
 
@@ -695,7 +695,7 @@ The link to the next page is included in the `@odata.nextLink` property.
 
 ### ❌ DO NOT use `$top` and `$skip` query options to implement client-driven paging
 
-With other REST API's you might have implemented client-driven paging with `$top` and `$skip` query options. Don't use them with the Analytics Service. There are several problems with this approach and performance is one of them. Instead, adopt the server-driven paging strategy described in the previous section.
+With other REST API's you might have implemented client-driven paging with `$top` and `$skip` query options. Don't use them with Analytics. There are several problems with this approach and performance is one of them. Instead, adopt the server-driven paging strategy described in the previous section.
 
 
 <a id="perf-top"> </a>
@@ -716,7 +716,7 @@ This is probably the most intuitive guideline. Always aim to fetch only the data
 
 ### ✔️ CONSIDER limiting the number of selected properties to a minimum
 
-Some project administrators heavily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). The Analytics Service is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties that a query references, the more expensive it is to process. Always aim to limit the set of properties in your queries to what you really care about in your reporting scenario.
+Some project administrators heavily customize their processes by adding custom fields. This can lead to performance issues when fetching all the available columns on very wide entities (e.g. `WorkItems`). Analytics is built on top of a *Columnstore Index* technology which means that data is both storage and query processing is column-based. Therefore, the more properties that a query references, the more expensive it is to process. Always aim to limit the set of properties in your queries to what you really care about in your reporting scenario.
 
 <a id="perf-filter-date"> </a>
 
@@ -762,7 +762,7 @@ For example, instead of expanding `Parent`, you can fetch more work items and us
 
 ### ✔️ CONSIDER passing `VSTS.Analytics.MaxSize` preference in the header
 
-When you execute a query,  you don't know the number of records that the query will return.  You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. The Analytics Service respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
+When you execute a query,  you don't know the number of records that the query will return.  You have to either send another query with aggregations or follow all the next links and fetch the entire dataset. Analytics respects `VSTS.Analytics.MaxSize` preference, which lets you fail fast in those instances that the dataset is bigger than what your client can accept. 
 
 This option is particularly helpful in data export scenarios. To use it you have to add `Prefer` header to your HTTP request and set `VSTS.Analytics.MaxSize` to a non-negative value. The `VSTS.Analytics.MaxSize` value represents the maximum number of records you can accept. If you set it to zero, then a default value of 200K will be used.
 
@@ -878,7 +878,7 @@ Because mixing `$apply` and `filter` clauses in a single query can lead to poten
 
 ### ✔️ CONSIDER reviewing OData capabilities described in the metadata annotations
 
-When you're unsure about which OData capabilities the Analytics Service supports, you can look up annotations in the metadata. The [OASIS Open Data Protocol (OData) Technical Committee](https://www.oasis-open.org/committees/odata/) in a [TC GitHub repository](https://github.com/oasis-tcs/odata-vocabularies/blob/master/vocabularies/Org.OData.Capabilities.V1.md) maintains a list of available annotations.
+When you're unsure about which OData capabilities Analytics supports, you can look up annotations in the metadata. The [OASIS Open Data Protocol (OData) Technical Committee](https://www.oasis-open.org/committees/odata/) in a [TC GitHub repository](https://github.com/oasis-tcs/odata-vocabularies/blob/master/vocabularies/Org.OData.Capabilities.V1.md) maintains a list of available annotations.
 
 For example, the list of supported filter functions is available in `Org.OData.Capabilities.V1.FilterFunctions` annotation on the entity container.
 

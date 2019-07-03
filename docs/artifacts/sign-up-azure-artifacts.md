@@ -8,7 +8,7 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/16/2019
+ms.date: 07/02/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -17,6 +17,8 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
 This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2GB of storage. In the case that your organization needs more storage, you need to set up billing.
+
+For on-premises versions, TFS 2017 and 2018, see [License Azure Artifacts](license-azure-artifacts.md).
 
 ## Prerequisites
 
@@ -53,15 +55,9 @@ Each organization gets Azure Artifacts for free, up until they hit 2GB of storag
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
-2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**. 
+2. Repeat steps #2 and #3 from [View storage used](#view-storage-used).
  
-   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
- 
-3. Select **Billing**. 
- 
-   ![Select Billing from Organization settings](../organizations/billing/_img/_shared/select-billing-organization-settings.png)
- 
-4. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You are only charged for the storage you use, up to the limit. 
+3. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You are only charged for the storage you use, up to the limit. 
 
    ![Increase artifacts beyond the free tier with the dropdown menu](_shared/_img/increase-artifacts-beyond-free-tier.png)
 

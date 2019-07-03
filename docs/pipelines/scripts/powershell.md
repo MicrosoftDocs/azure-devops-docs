@@ -9,7 +9,7 @@ ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/28/2019
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,7 +23,30 @@ monikerRange: '>= tfs-2015'
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
-You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+::: moniker range=">= azure-devops-2019"
+
+You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
+PowerShell Core runs on any platform.
+
+1. Push your script into your repo.
+
+2. Add a `pwsh` or `powershell` step:
+
+```yaml
+# for PowerShell Core
+steps:
+- pwsh: ./my-script.ps1
+
+# for Windows PowerShell
+steps:
+- powershell: .\my-script.ps1
+```
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
 0. Push your script into your repo.
 
@@ -36,6 +59,8 @@ You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.
 0. Drag the build task where you want it to run.
 
 0. Specify the name of the script.
+
+::: moniker-end
 
 ## Example: Version your assemblies
 
