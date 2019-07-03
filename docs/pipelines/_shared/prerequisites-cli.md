@@ -9,7 +9,7 @@ ms.topic: include
   * To check the version from the command prompt:
 
   ```
-az -version
+az --version
 ```
 
 * The Azure DevOps extension.
