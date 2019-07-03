@@ -37,14 +37,28 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 
 ## Prerequisites  
 
-In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
+In order to create a Power BI report that references an Analytics view, you must meet the following criteria.  
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics service](/azure/devops/report/powerbi/analytics-security).
-* Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-* Have tracked bugs for some period of time on which to generate a trend report. 
+::: moniker range="azure-devops"
+
+- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have tracked bugs for some period of time in order to generate a trend report. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have tracked bugs for some period of time in order to generate a trend report.  
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/analytics-open.md)] 
 
@@ -57,7 +71,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ### 1. Name your view and set to Private  
 
-1. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
+0. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
 
    > [!div class="mx-imgBorder"]
    > ![General](_img/active-bugs-report/active-bugs-general.png)
@@ -118,7 +132,6 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Open Power BI desktop and load your view 
 
-
 1. Open Power BI Desktop.  
 
 ::: moniker range="azure-devops"  
@@ -138,7 +151,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2-onprem.png)
 
-2. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
+2. Enter the URL for your server and collection, the same same project for which you defined the Active Bugs view. 
 
 	![Azure DevOps Server dialog, Collection and project name](_img/create-report/specify-collection-project.png)  
 ::: moniker-end
@@ -152,7 +165,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a daily bug trend report 
 
-1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
+0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
 
     > [!div class="mx-imgBorder"]
     > ![Select work item field](_img/create-report/select-line-chart-work-id.png)
@@ -183,7 +196,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Filter your trend by Priority
 
-1. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
+0. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
 
     > [!div class="mx-imgBorder"]
     > ![Group by priority](_img/active-bugs-report/filter-priority-legend.png)
@@ -199,7 +212,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a card for latest bug count
 
-1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
 1. Select the card visual, add the **Work Item Id** field, add the **Work Item Type** field, and click the context menu icon next to the field and change it from **Count** to **Count (Distinct)**.
 
@@ -220,7 +233,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Save your report, optionally share with others 
 
-1. Choose **File > Save As** to save your report to your local workspace. 
+0. Choose **File > Save As** to save your report to your local workspace. 
 
 1. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
@@ -231,11 +244,11 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 Analytics views provide you with a great deal of power and flexibility to filter your data and generate useful reports quickly and easily using Power BI. Within a custom view, you can create datasets that span multiple teams or projects. 
 
-<a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create a custom Analytics view](analytics-views-create.md)
-
 
 
 ## Related articles 

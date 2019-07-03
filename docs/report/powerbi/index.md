@@ -1,5 +1,5 @@
 ---
-title: Create Power BI reports from Analytics service 
+title: Create Power BI reports from Analytics 
 titleSuffix: Azure DevOps
 description: Create PowerBI charts, reports, and dashboards based on the Analytics  Service for Azure DevOps 
 ms.prod: devops
@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]  
 
-With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics service. To learn more about Analytics, see [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](reporting-roadmap.md).
+With Power BI, you can quickly generate reports for your projects in Azure DevOps based on Analytics. To learn more about Analytics, see [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](reporting-roadmap.md).
 
 [!INCLUDE [temp](../_shared/powerbi-preview.md)]
 
