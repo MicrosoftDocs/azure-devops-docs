@@ -48,10 +48,16 @@ Service connections are created at project scope. A service connection created i
 
 1. Choose **+ New service connection** and select the type of service connection you need.
 
-1. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
+1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
    ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+
+   > [!NOTE]
+   > The connection dialog may appear different for the different types of service connections, 
+   > and have different parameters. See the list of parameters in 
+   > [Common service connection types](#common-service-connection-types) for each
+   > service connection type.
 
 1. Decide if you want the service connection to be accessible for any pipeline by
    setting the **Allow all pipelines to use this connection** option. This option allows pipelines

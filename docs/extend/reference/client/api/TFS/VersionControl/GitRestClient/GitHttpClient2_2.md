@@ -8,7 +8,7 @@ ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
-ms.date: 08/04/2016
+ms.date: 07/03/2019
 ---
 
 [!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
@@ -64,7 +64,7 @@ Module path: `TFS/VersionControl/GitRestClient`
 * [getPullRequestReviewers()](#method_getPullRequestReviewers)
 * [getPullRequests()](#method_getPullRequests)
 * [getPullRequestsByProject()](#method_getPullRequestsByProject)
-* [getPullRequestWorkItems()](#method_getPullRequestWorkItems)
+* [getPullRequestWorkItemRefs()](#method_getPullRequestWorkItemRefs)
 * [getPush()](#method_getPush)
 * [getPushCommits()](#method_getPushCommits)
 * [getPushes()](#method_getPushes)
@@ -738,14 +738,14 @@ Module path: `TFS/VersionControl/GitRestClient`
 
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)[]&gt;
 
-<a name="method_getPullRequestWorkItems"></a>
-<h2 class='method'>getPullRequestWorkItems()</h2>
+<a name="method_getPullRequestWorkItemRefs"></a>
+<h2 class='method'>getPullRequestWorkItemRefs()</h2>
 
- Retrieve a pull request work items
+ Retrieve a pull request work item refs
 
 ### Syntax
 <pre class='syntax'>
- IPromise&lt;Contracts.AssociatedWorkItem[]&gt; <b>getPullRequestWorkItems</b>(repositoryId, pullRequestId, project, commitsTop, commitsSkip)
+ IPromise&lt;Contracts.AssociatedWorkItem[]&gt; <b>getPullRequestWorkItemRefs</b>(repositoryId, pullRequestId, project, commitsTop, commitsSkip)
 </pre>
 
 ### Parameters

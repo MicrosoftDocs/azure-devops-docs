@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -55,6 +55,8 @@ Developers have access to many tools through these versions of Visual Studio and
 - **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on Azure DevOps.
 - **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
 - **[Visual Studio Code](../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
+
+To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
 
 **Team Explorer plug-in**
 
