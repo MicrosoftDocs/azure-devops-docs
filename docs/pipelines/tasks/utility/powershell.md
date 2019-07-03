@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 05/28/2019
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -31,7 +31,7 @@ Use this task in a build or release pipeline to run a PowerShell script.
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
 
-The Powershell task also has a shortcut syntax in YAML:
+The Powershell task also has two shortcuts in YAML:
 
 ```yaml
 - powershell:  # inline script
@@ -42,6 +42,20 @@ The Powershell task also has a shortcut syntax in YAML:
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
+
+```yaml
+- pwsh:  # inline script
+  workingDirectory:  #
+  displayName:  #
+  failOnStderr:  #
+  errorActionPreference:  #
+  ignoreLASTEXITCODE:  #
+  env:  # mapping of environment variables to add
+```
+
+Both of these resolve to the `PowerShell@2` task.
+`powershell` runs Windows PowerShell, while `pwsh` runs PowerShell Core.
+
 ::: moniker-end
 
 ## Arguments
