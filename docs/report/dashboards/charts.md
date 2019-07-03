@@ -326,9 +326,19 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range=">= azure-devops-2019"
 
-### Widgets and the Analytics Service 
+### Widgets and Analytics data
 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../dashboards/analytics-widgets.md).  
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
+ 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Analytics is in preview and provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
  
 ::: moniker-end
 

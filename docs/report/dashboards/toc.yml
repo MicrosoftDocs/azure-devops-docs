@@ -1,10 +1,10 @@
 - name: Dashboards, Charts, Reports, & Widgets
-  href: index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+  href: index.md
 - name: Overview
   items:
   - name: About dashboards and reports
-    href: overview.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in, pipelines
+    href: overview.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
   - name: Quick reference
     href: quick-ref.md
   - name: Widget catalog
@@ -31,7 +31,7 @@
     href: team-velocity.md
     displayname: planned, completed, completed late, incomplete 
   - name: Monitor sprint burndown
-    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: sprint backlog, current, past
   - name: Configure a Burndown or Burnup widget
     href: configure-burndown-burnup-widgets.md
@@ -55,7 +55,7 @@
   - name: Velocity guidance
     href: velocity-guidance.md
   - name: Visibility across teams & projects
-    href: ../../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
 - name: How-to Guides
   items:
@@ -63,26 +63,26 @@
     href: charts.md
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line 
   - name: Create test result charts
-    href: ../../test/track-test-status.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: progress, trend, pie, bar, column, stacked bar, pivot table, test case
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
-  - name: Install the Analytics extension
+  - name: Enable or install Analytics  
     href: analytics-extension.md
   - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
 - name: "Samples (REST API)"
   items:
   - name: Add a dashboard widget
-    href: ../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Add a chart widget 
-    href: ../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../extend/develop/add-chart.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Add an Analytics widget  
-    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json  
+    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Markdown guidance
-    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
 

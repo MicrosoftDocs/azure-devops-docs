@@ -31,7 +31,7 @@ These measures help teams plan, spot variations in efficiency, and identify pote
 In this article you'll learn:
 
 > [!div class="checklist"] 
-> * How to install and configure the Lead Time and Cycle Time widgets (Analytics service)  
+> * How to install and configure the Lead Time and Cycle Time widgets (Analytics)  
 > * How to interpret the scatter-plot control charts  
 > * How moving average and standard deviation are calculated in the charts
 
@@ -44,6 +44,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 
 ## Add the widget to your dashboard   
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -54,7 +55,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.    
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now. 
 2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 3. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
@@ -62,6 +63,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 
 <a id="configure-widget"></a>
+
 ## Configure the Cycle Time and Lead Time widgets    
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
@@ -101,12 +103,14 @@ The chart dots represent completed work items where their position on the horizo
 - The band around the trend line shows the standard deviation.
 
 #### Interactive elements include:  
+
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
 - Choose a dot to open the work item or query that lists the work items   
 - To filter the chart, choose a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 
+
 The daily moving average value corresponds to the average of data points that fall within the moving average window. 
 The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
 
@@ -117,7 +121,8 @@ If there are no data points that fall within the moving average window, the char
 The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
 
 
-## Related notes
+## Related articles
+
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
 - [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  

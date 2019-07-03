@@ -1,7 +1,7 @@
 ---
 title: Add a time-in-state measure to a PowerBI report 
 titleSuffix: Azure DevOps
-description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for Azure DevOps 
+description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
@@ -492,4 +492,4 @@ Additional information is provided in this section for the DAX functions used to
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-- [Data model for the Analytics service](../extend-analytics/data-model-analytics-service.md)
+- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

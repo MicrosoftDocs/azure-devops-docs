@@ -27,7 +27,7 @@ Customizable, highly-configurable dashboards provide you and your teams with the
 - <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
 - <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 - <strong>In context charts and reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. 
-- <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of the Analytics service and the returned JSON data.  
+- <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
 
 ::: moniker-end  
 
@@ -38,7 +38,7 @@ Customizable, highly-configurable dashboards provide you and your teams with the
 - <strong>In context charts and reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. 
 - <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 - <strong>Reports</strong>
-	- <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of the Analytics service and the returned JSON data.  
+	- <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
 	- <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end  
@@ -114,6 +114,7 @@ With flat-list queries, you can create various charts to monitor status, progres
 Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
 
 ## Charts: Manual testing progress, results, and trends  
+
 The steps to creating charts that track manual testing progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. 
 
 ### Sample light-weight test charts 
@@ -133,7 +134,8 @@ And, just like work item query-based charts, you can add these charts to a dashb
 You add widgets to a dashboard to display a chart, information, or set of links. Most widgets are configurable. For a description of each supported widget for your platform and version, see the [Widget catalog](widget-catalog.md). 
 
 ### Sprint chart widgets 
- ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
+
+![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
 
 ### Sample Cumulative Flow Diagram widget 
 
@@ -159,34 +161,37 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ### Analytics widgets
 
-Analytics widgets provide rich data based on the Analytics service. The Analytics Service is available to all organizations using Azure DevOps Services. 
+Analytics widgets provide rich data based on the Analytics data. Analytics is available to all organizations using Azure DevOps Services. 
 
 #### Sample Lead time widget 
 
 ![Lead time widget](_img/lead-time-control-chart.png) 
 
 To learn more, see the following articles: 
-- [What is the Analytics Service?](../powerbi/what-is-analytics.md)
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
+- [Widgets based on Analytics data](../dashboards/analytics-widgets.md)
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-### The Analytics Service and Analytics widgets
-The Analytics Service is in preview for Azure DevOps Server 2019. 
+
+### Analytics and Analytics widgets
+
+Analytics is in preview for Azure DevOps Server 2019. 
 
 #### Sample Lead time widget 
 
 ![Lead time widget](_img/lead-time-control-chart.png) 
 
 To learn more, see the following articles: 
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)  
+- [Widgets based on Analytics](../dashboards/analytics-widgets.md)  
 -  [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)  
-- [What is the Analytics Service?](../powerbi/what-is-analytics.md)  
+- [What is Analytics?](../powerbi/what-is-analytics.md)  
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2015"
+
 ### Marketplace widgets
 
 In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
@@ -205,6 +210,7 @@ There are a number of system-generated charts that you can access from the web p
 - [Sprint burndown chart](../../boards/sprints/sprint-burndown.md)  
 
 ### Sprint charts 
+
 Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../../boards/sprints/sprint-burndown.md) in terms of remaining work. 
 
 | Capacity bars | Burndown  |
@@ -214,9 +220,11 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 
 ::: moniker range="azure-devops"
 
+<a id="incontext-reports" /> ]=
+
 ## In-context charts and reports: Pipeline Failures and Test Failures
 
-Several in-context reports are provided for Azure Pipelines. These reports derive from the Analytics Service. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. The summarized cards are present for all reports. You can click on the cards for a detailed report.
+Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. The summarized cards are present for all reports. You can click on the cards for a detailed report.
 
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/_img/pipelines-reports/analyticstab.png)
@@ -227,7 +235,7 @@ Several in-context reports are provided for Azure Pipelines. These reports deriv
 
 ## In-context charts and reports: Pipeline Test Failures
 
-Azure Pipelines provides an in-context Test failures report, derived from the Analytics Service. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report.
+Azure Pipelines provides an in-context Test failures report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report.
 
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/_img/pipelines-reports/analyticstab-server-2019.png)
