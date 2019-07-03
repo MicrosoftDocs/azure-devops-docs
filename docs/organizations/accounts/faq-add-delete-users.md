@@ -11,12 +11,12 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 06/12/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ---
 
 # Troubleshoot adding and deleting organization users
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ## Permissions
 

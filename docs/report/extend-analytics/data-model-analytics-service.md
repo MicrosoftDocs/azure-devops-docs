@@ -1,7 +1,7 @@
 ---
-title: Data model for the Analytics Service
+title: Data model for Analytics
 titleSuffix: Azure DevOps 
-description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps  
+description: Describes the data entities and relationships provided by Analytics for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
@@ -14,12 +14,12 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Data model for the Analytics Service  
+# Data model for Analytics  
 
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-The Analytics service data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -113,7 +113,7 @@ To generate more complex query results, you can combine entities using relations
 
 Some navigation properties result in a single entity, while others result in a collection of entities. The following diagram shows select entities and their navigation properties. For clarity, some composite entities and relationships have been omitted.
 
-![Analytics Service Data Model](_img/datamodel.png)
+![Analytics Data Model](_img/datamodel.png)
 
 ## Relationship keys
 

@@ -10,19 +10,21 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/10/2019
-monikerRange: 'azure-devops'
+ms.date: 07/02/2019
+monikerRange: '>= tfs-2013'
 ---
 
 # Troubleshoot changing the organization owner
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a name="find-owner-pca"></a>
 
 [!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
 
 [!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+
+::: moniker range="azure-devops"
 
 <a name="NoNewOwner"></a>
 
@@ -39,7 +41,7 @@ A: This might happen for one of the following reasons:
 
 #### Q: Can I reverse an organization owner change?
 
-A: Yes, if you're a project collection administrator.
+A: Yes, if you're a Project Collection Administrator.
 
 #### Q: Can I change the organization name (URL), too?
 
@@ -85,3 +87,5 @@ Project collection administrators can manage user access and change the organiza
 <a name="get-support"></a>
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+
+::: moniker-end

@@ -1,7 +1,7 @@
 ---
 title: Connect using Power Query and Azure DevOps functions 
 titleSuffix: Azure DevOps 
-description: Describes the available functions that the Power BI Data Connector and the Analytics service support for Azure DevOps 
+description: Describes the available functions that the Power BI Data Connector and Analytics support for Azure DevOps 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: devops
 ms.technology: devops-analytics
@@ -18,23 +18,23 @@ ms.date: 2/14/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-The Data Connector for Azure DevOps includes Power Query M functions which can be used by query authors. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to the Analytics service. 
+The Data Connector for Azure DevOps includes Power Query M functions which can be used by query authors. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
 
 The following functions are provided:
 
 | Function | Description |
 |-|-|
-| VSTS.Feed | Replacement for Power Query M function [OData.feed](https://msdn.microsoft.com/query-bi/m/odata-feed). Allows users to easily execute OData queries against the Analytics service.  |
+| VSTS.Feed | Replacement for Power Query M function [OData.feed](https://msdn.microsoft.com/query-bi/m/odata-feed). Allows users to easily execute OData queries against Analytics.  |
 | VSTS.Contents | Deprecated. Instead use VSTS.AccountContents. |
-| VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/query-bi/m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for the Analytics service as a binary value.  |
+| VSTS.AccountContents | Replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/query-bi/m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value.  |
 
 
 ## VSTS.Feed
-Allows for users to easily execute OData queries against the Analytics service.
+Allows for users to easily execute OData queries against Analytics.
 
 The `VSTS.Feed` function has the same arguments, options and return value format as `OData.Feed`. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 
-If you are already using `OData.Feed` to access data from the Analytics service, you can replace it with `VSTS.Feed` to leverage Data Connector authentication.  
+If you are already using `OData.Feed` to access data from Analytics, you can replace it with `VSTS.Feed` to leverage Data Connector authentication.  
 This will also inform Power BI that these requests are referencing the same data source and you will be able to combine the data without violating the single data source constraints for refreshing datasets in the PowerBI.com.
 
 'VSTS.Feed' provides a subset of the arguments and options available through 'OData.Feed'. The specific limitations are outlined in the following table:
@@ -48,7 +48,7 @@ This will also inform Power BI that these requests are referencing the same data
     </tr>
     <tr>
         <td><code>url</code></td>
-        <td>A URL to the OData endpoint of the Analytics service.</td>
+        <td>A URL to the OData endpoint of Analytics.</td>
     </tr>
     <tr>
         <td><code>options</code></td>
@@ -176,11 +176,11 @@ VSTS.Contents is deprecated and will be removed in an upcoming release. Instead,
 
 ## VSTS.AccountContents
 
-Advanced function which returns the contents downloaded from the URL for the Analytics service as a binary value.
+Advanced function which returns the contents downloaded from the URL for Analytics as a binary value.
 
 The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
 
-If you are already using `Web.Contents` to access data from the Analytics service (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
+If you are already using `Web.Contents` to access data from Analytics (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
 This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
 
 'VSTS.AccountContents' provides a subset of the Arguments and Options available through 'OData.Contents'. The specific limitations are outlined in the table below:

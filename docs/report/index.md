@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Reporting Documentation 
 titleSuffix: Azure DevOps
-description: Add, view, manage, and monitor status and trends with dashboards, widgets, the Analytics Service and Power BI
+description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI
 ms.custom: seodec18
 layout: LandingPage
 hide_bc: true
@@ -101,7 +101,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                             <a href="/azure/devops/report/extend-analytics/account-scoped-queries">Project and organization-scoped queries</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/report/powerbi/data-available-in-analytics">Data available from the Analytics Service</a>
+                            <a href="/azure/devops/report/powerbi/data-available-in-analytics">Data available from Analytics</a>
                         </p>
                     </div>
                 </div>

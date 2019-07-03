@@ -1,7 +1,7 @@
 ---
 title: Learn about Power BI integration and supported connection methods
 titleSuffix: Azure DevOps
-description: Describes the different integration options you can use to connect to Power BI to access the Analytics service for Azure DevOps
+description: Describes the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
@@ -37,7 +37,7 @@ The easiest way to pull Azure DevOps data into Power BI is to use the [Power BI 
 ::: moniker-end
 
 ## Support data connection methods
-You can pull data from the Analytics services into Power BI in one of three ways. 
+You can pull data from Analyticss into Power BI in one of three ways. 
 
 <table width="90%">
 <tbody valign="top">
@@ -47,12 +47,12 @@ You can pull data from the Analytics services into Power BI in one of three ways
     </tr>
     <tr>
         <td><a href="data-connector-connect.md">Connect using the Azure DevOps Data Connector</href></td>
-        <td>The Azure DevOps Data connector is the recommended way to connect Power BI to the Analytics service. The connector simplifies the data model into a single table and models historical data to simplify trend reporting.
+        <td>The Azure DevOps Data connector is the recommended way to connect Power BI to Analytics. The connector simplifies the data model into a single table and models historical data to simplify trend reporting.
         The Azure DevOps Power BI Data connector works with <a href="what-are-analytics-views.md">Analytics views</href></a>. Last updated February 4th, 2018</td>
     </tr>
     <tr>
         <td><a href="access-analytics-power-bi.md">Connect using the Power BI OData connector</href></td>
-        <td>Using the Power BI OData connector is not recommended for anything other than analysis of current work items. The Analytics service data model has relationships and advanced filters which are necessary for many scenarios and are not supported using the OData connector</td>
+        <td>Using the Power BI OData connector is not recommended for anything other than analysis of current work items. Analytics data model has relationships and advanced filters which are necessary for many scenarios and are not supported using the OData connector</td>
     </tr>
     <tr>
         <td><a href="data-connector-functions.md">Connect using Azure DevOps functions</href></td>
@@ -64,14 +64,14 @@ You can pull data from the Analytics services into Power BI in one of three ways
 
 ## Prerequisites
 
-Before you get started using Power BI to work with the Analytics service, make sure you have completed the following steps:
+Before you get started using Power BI to work with Analytics, make sure you have completed the following steps:
 
 ::: moniker range="azure-devops"
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. Configure the [permissions required to access the Analytics service](analytics-security.md).  
+1. Configure the [permissions required to access Analytics](analytics-security.md).  
 1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you are not familiar with the Analytics service, read "[What is the Analytics service](what-is-analytics.md)" before continuing.
+1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
 
 ::: moniker-end
 
@@ -79,18 +79,11 @@ Before you get started using Power BI to work with the Analytics service, make s
 
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. Install the [Analytics extension](../dashboards/analytics-extension.md).  
-1. Configure the [permissions required to access the Analytics service](analytics-security.md).  
+1. [Enable or install the Analytics extension](../dashboards/analytics-extension.md).  
+1. Configure the [permissions required to access Analytics](analytics-security.md).  
 1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you are not familiar with the Analytics service, read "[What is the Analytics service](what-is-analytics.md)" before continuing.
+1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
 
 ::: moniker-end
-
-
-
-## Deprecated PowerBI.com Content Pack
-
-<!--- QUESION -Do we still need this section? --> 
-In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
 
 
