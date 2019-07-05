@@ -1,6 +1,6 @@
 ```YAML
 # Maven
-# Build with Apache Maven
+# Build, test, and deploy with Apache Maven
 - task: Maven@2
   inputs:
     #mavenPomFile: 'pom.xml' 

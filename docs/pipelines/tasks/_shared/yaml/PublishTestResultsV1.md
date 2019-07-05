@@ -1,6 +1,6 @@
 ```YAML
-# Publish Test Results
-# Publish Test Results to VSTS/TFS
+# Publish test results
+# Publish test results to Azure Pipelines
 - task: PublishTestResults@1
   inputs:
     #testRunner: 'JUnit' # Options: jUnit, nUnit, vSTest, xUnit

@@ -1,6 +1,6 @@
 ```YAML
-# SQL Server Database Deploy
-# Deploy to SQL Server Database using DACPAC or SQL scripts
+# SQL Server database deploy
+# Deploy a SQL Server database using DACPAC or SQL scripts
 - task: SqlDacpacDeploymentOnMachineGroup@0
   inputs:
     #taskType: 'dacpac' # Options: dacpac, sqlQuery, sqlInline

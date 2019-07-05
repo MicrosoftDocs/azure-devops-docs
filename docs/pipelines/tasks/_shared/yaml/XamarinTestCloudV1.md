@@ -1,6 +1,6 @@
 ```YAML
 # Xamarin Test Cloud
-# [Deprecated] Testing mobile apps with Xamarin Test Cloud using Xamarin.UITest - recommended task is now AppCenterTest
+# [Deprecated] Test mobile apps with Xamarin Test Cloud using Xamarin.UITest. Instead, use the 'App Center test' task.
 - task: XamarinTestCloud@1
   inputs:
     appFile: 

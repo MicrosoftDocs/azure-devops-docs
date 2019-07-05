@@ -1,6 +1,6 @@
 ```YAML
-# Download Build Artifacts
-# Download Build Artifacts
+# Download build artifacts
+# Download files that were saved as artifacts of a completed build
 - task: DownloadBuildArtifacts@0
   inputs:
     #buildType: 'current' # Options: current, specific
