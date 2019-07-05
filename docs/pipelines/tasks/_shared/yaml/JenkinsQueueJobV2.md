@@ -1,5 +1,5 @@
 ```YAML
-# Jenkins Queue Job
+# Jenkins queue job
 # Queue a job on a Jenkins server
 - task: JenkinsQueueJob@2
   inputs:

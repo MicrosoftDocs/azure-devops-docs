@@ -1,6 +1,6 @@
 ```YAML
-# Azure Resource Group Deployment
-# Deploy an Azure resource manager (ARM) template to a resource group. You can also start, stop, delete, deallocate all Virtual Machines (VM) in a resource group
+# Azure resource group deployment
+# Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
 - task: AzureResourceGroupDeployment@2
   inputs:
     azureSubscription: 

@@ -1,6 +1,6 @@
 ```YAML
-# App Center Test
-# Test app packages with Visual Studio App Center.
+# App Center test
+# Test app packages with Visual Studio App Center
 - task: AppCenterTest@1
   inputs:
     appFile: 

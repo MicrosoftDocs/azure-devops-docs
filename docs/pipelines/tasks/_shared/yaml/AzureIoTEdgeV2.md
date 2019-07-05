@@ -1,10 +1,10 @@
 ```YAML
 # Azure IoT Edge
-# Azure IoT Edge pipelines tasks for continuous integration(build and push docker image) and continuous deployment(create Edge deployment on Azure)
+# Build and deploy an Azure IoT Edge image
 - task: AzureIoTEdge@2
   inputs:
-    #action: 'Build module images' # Options: build Module Images, push Module Images, deploy To IoT Edge Devices
-    #deploymentFilePath: '$(System.DefaultWorkingDirectory)/**/*.json' # Required when action == Deploy To IoT Edge Devices
+    #action: 'Build module images' # Options: build Module Images, push Module Images, generate Deployment Manifest, deploy To IoT Edge Devices
+    #deploymentFilePath: '$(System.DefaultWorkingDirectory)/config/deployment.json' # Required when action == Deploy To IoT Edge Devices
     #azureSubscription: # Required when action == Deploy To IoT Edge Devices
     #iothubname: # Required when action == Deploy To IoT Edge Devices
     #deploymentid: '$(System.TeamProject)-devops-deployment' 
@@ -16,7 +16,9 @@
     #dockerRegistryConnection: # Required when containerregistrytype == Generic Container Registry
     #azureSubscriptionEndpoint: # Optional
     #azureContainerRegistry: # Required when containerregistrytype == Azure Container Registry
-    #templateFilePath: 'deployment.template.json' # Required when action == Build Module Images || Action == Push Module Images
-    #defaultPlatform: 'amd64' # Required when action == Build Module Images || Action == Push Module Images# Options: amd64, windows-Amd64, arm32v7
+    #templateFilePath: 'deployment.template.json' # Required when action == Build Module Images || Action == Push Module Images || Action == Generate Deployment Manifest
+    #defaultPlatform: 'amd64' # Required when action == Build Module Images || Action == Push Module Images || Action == Generate Deployment Manifest# Options: amd64, windows-Amd64, arm32v7
+    #fillRegistryCredential: 'true' # Required when action == Push Module Images# Options: true, false
+    #deploymentManifestOutputPath: '$(System.DefaultWorkingDirectory)/config/deployment.json' # Required when action == Generate Deployment Manifest
     #bypassModules: # Optional
 ```

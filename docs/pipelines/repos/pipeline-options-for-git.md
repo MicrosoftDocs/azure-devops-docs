@@ -235,12 +235,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.

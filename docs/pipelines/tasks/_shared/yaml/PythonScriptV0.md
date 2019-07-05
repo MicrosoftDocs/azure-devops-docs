@@ -1,6 +1,6 @@
 ```YAML
-# Python Script
-# Run a Python script.
+# Python script
+# Run a Python file or inline script
 - task: PythonScript@0
   inputs:
     #scriptSource: 'filePath' # Options: filePath, inline

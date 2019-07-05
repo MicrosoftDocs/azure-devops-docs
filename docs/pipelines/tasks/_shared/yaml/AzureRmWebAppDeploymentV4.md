@@ -1,6 +1,6 @@
 ```YAML
-# Azure App Service Deploy
-# Update Azure App Services on Windows, Web App on Linux with built-in images or Docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps on Windows or Linux with Docker Containers, Mobile Apps, API applications, Web Jobs using Web Deploy / Kudu REST APIs
+# Azure App Service deploy
+# Deploy to Azure App Service a web, mobile, or API app using Docker, Java, .NET, .NET Core, Node.js, PHP, Python, or Ruby
 - task: AzureRmWebAppDeployment@4
   inputs:
     #connectionType: 'AzureRM' # Options: azureRM, publishProfile
