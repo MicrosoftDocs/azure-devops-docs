@@ -115,7 +115,7 @@ To sign and provision a Xamarin.iOS app, set `packageApp` to `true` and specify 
       signingProvisioningProfileID: 'iOS Team Provisioning Profile: com.hashtagchris.*'
 ```
 
-See [Sign your mobile app during CI](../apps/mobile/app-signing.md) for more information about signing and provisioning your app.
+See [Sign your app during CI](../apps/mobile/app-signing.md) for more information about signing and provisioning your app.
 
 ### Set the Xamarin SDK version on macOS
 

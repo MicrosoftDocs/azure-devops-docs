@@ -114,6 +114,25 @@ If your project uses CocoaPods, you can run CocoaPods commands in your pipeline 
   displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
 ```
 
+### Carthage
+
+If your project uses Carthage with a private Carthage repository,
+you can set up authentication by setting an environment variable named
+`GITHUB_ACCESS_TOKEN` with a value of a token that has access to the repository.
+Carthage will automatically detect and use this environment variable.
+
+Do not add the secret token directly to your pipeline YAML.
+Instead, create a new pipeline variable with its lock enabled on the Variables pane to encrypt this value.
+See [secret variables](../process/variables.md#secret-variables).
+
+Here is an example that uses a secret variable named `myGitHubAccessToken` for the value of the `GITHUB_ACCESS_TOKEN` environment variable.
+
+```yaml
+- script: carthage update --platform iOS
+  env:
+    GITHUB_ACCESS_TOKEN: $(myGitHubAccessToken)
+```
+
 ### Testing on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
@@ -152,6 +171,11 @@ using a [service connection](..//library/service-endpoints.md) that you configur
 
 Add the [App Store Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store#user-content-app-store-release)
 task to automate the release of updates to existing iOS TestFlight beta apps or production apps in the App Store.
+
+See [limitations](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
+of using this task with Apple two-factor authentication,
+since Apple authentication is region specific and
+fastlane session tokens expire quickly and must be recreated and reconfigured.
 
 ```yaml
 - task: AppStoreRelease@1

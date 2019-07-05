@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
-ms.date: 12/07/2018
+ms.date: 07/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,7 +29,7 @@ None
 
 ::: moniker range="azure-devops"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
+[!INCLUDE [temp](../_shared/yaml/FtpUploadV2.md)]
 ::: moniker-end
 
 ## Arguments
