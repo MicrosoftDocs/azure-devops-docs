@@ -1,12 +1,12 @@
 ```YAML
-# App Center Distribute
-# Distribute app builds to testers and users via App Center
+# App Center distribute
+# Distribute app builds to testers and users via Visual Studio App Center
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 
     appSlug: 
     appFile: 
-    #symbolsOption: 'Apple' # Optional. Options: apple
+    #symbolsOption: 'Apple' # Optional. Options: apple, android
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
     #symbolsDsymFiles: # Optional
