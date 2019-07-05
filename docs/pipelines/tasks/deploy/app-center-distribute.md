@@ -51,6 +51,56 @@ Use this task in a build or release pipeline to distribute app builds to testers
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+## Example
+
+This example pipeline builds an Android app, runs tests, and publishes the app using App Center Distribute.
+
+```yaml
+# Android
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+
+pool:
+  vmImage: 'macOS-latest'
+steps:
+
+  - script: sudo npm install -g appcenter-cli
+  - script: appcenter login --token {YOUR_TOKEN}
+
+  - task: Gradle@2
+    inputs:
+      workingDirectory: ''
+      gradleWrapperFile: 'gradlew'
+      gradleOptions: '-Xmx3072m'
+      publishJUnitResults: false
+      testResultsFiles: '**/TEST-*.xml'
+      tasks: build
+
+  - task: CopyFiles@2
+    inputs:
+      contents: '**/*.apk'
+      targetFolder: '$(build.artifactStagingDirectory)'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(build.artifactStagingDirectory)'
+      artifactName: 'outputs'
+      artifactType: 'container'
+
+  - script: appcenter test run espresso --app "{APP_CENTER_SLUG}" --devices "{DEVICE}" --app-path {APP_FILE} --test-series "master" --locale "en_US" --build-dir {PAT_ESPRESSO} --debug
+
+  - task: AppCenterDistribute@3
+    inputs:
+      serverEndpoint: 'AppCenter'
+      appSlug: '{APP_CENTER_SLUG}'
+      appFile: '{APP_FILE}' # Relative path from the repo root to the APK or IPA file you want to publish
+      symbolsOption: 'Android'
+      releaseNotesOption: 'input'
+      releaseNotesInput: 'Release notes for this version.'
+      destinationType: 'groups'
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
