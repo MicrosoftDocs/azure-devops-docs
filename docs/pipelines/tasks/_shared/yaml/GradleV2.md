@@ -6,7 +6,7 @@
     #gradleWrapperFile: 'gradlew' 
     #workingDirectory: # Optional
     #options: # Optional
-    #tasks: 'build' 
+    #tasks: 'build' # A list of tasks separated by spaces, such as 'build test'
     #publishJUnitResults: true 
     #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
