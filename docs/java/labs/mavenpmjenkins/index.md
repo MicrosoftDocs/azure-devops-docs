@@ -103,9 +103,9 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
     ![Navigate to MyShuttleCalc repo](../_img/mavenpmjenkins/navigate-to-repo.png)
 
-2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH url into the clipboard.
+2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH URL into the clipboard. **Do not include the `git@` portion of the URL.**
 
-    ![Copy the SSH url](../_img/mavenpmjenkins/ssh-url.png)
+    ![Copy the SSH URL](../_img/mavenpmjenkins/ssh-URL.png)
 
 3. Go back to Jenkins in your browser.
 
@@ -113,7 +113,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 5. Enter `MyShuttleCalc` for the item name and click on "Maven Project". Click OK.
 
-6. In the Source Code Management section, select Git. Paste in the SSH url to the MyShuttleCalc repo.
+6. In the Source Code Management section, select Git. If you do not see an option for Git, you may be using an old version of Jenkins. Paste the SSH URL into the MyShuttleCalc repo.
 
 7. Click the "Add" button in the Credentials section and select "Jenkins".
 
@@ -193,7 +193,7 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     | Name | Value | Notes |
     | --------------- | ---------------------------- | ----------------------------------------------------------- |
     | Connection Name | `Azure VM Jenkins` | The name of this connection |
-    | Server URL | `http://10.0.0.4:8080`  | The internal IP address of the Azure VM on port 8080 (the Jenkins port)
+    | Server URL | `http://MyJenkinsServer:8080`  | The public URL of the Azure VM on port 8080 (the Jenkins port)
     | Username | The username you created in Jenkins | |
     | Password | The password you created in Jenkins | |
 
