@@ -1,6 +1,6 @@
 ```YAML
-# Install Apple Certificate
-# Install an Apple certificate required to build on a macOS agent
+# Install Apple certificate
+# Install an Apple certificate required to build on a macOS agent machine
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 

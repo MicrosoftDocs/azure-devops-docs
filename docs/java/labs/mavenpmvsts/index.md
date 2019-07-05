@@ -52,8 +52,6 @@ In this task you will create credentials for the Maven feed. You will then creat
 
 1. In the left menu, click on Maven.
 
-> **Note**: At the time of writing, Maven package feeds are a preview feature. You will need to enable the Maven package feed feature in order to connect to Package Management to/from Maven.
-
 1. Click "Generate Maven Credentials"
 
     ![Generate Maven Credentials](../_img/mavenpmvsts/maven-generate-creds.png)
