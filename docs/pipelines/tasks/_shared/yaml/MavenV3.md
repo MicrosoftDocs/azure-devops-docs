@@ -9,7 +9,7 @@
     #publishJUnitResults: true 
     #testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
-    #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
+    #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
     #codeCoverageClassFilter: # Optional
     #codeCoverageClassFilesDirectories: # Optional
     #codeCoverageSourceDirectories: # Optional

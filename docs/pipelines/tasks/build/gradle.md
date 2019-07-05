@@ -45,7 +45,7 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 </tr>
 <tr>
 <td>Tasks</td>
-<td><p>The task(s) for Gradle to execute. A list of tasks can be taken from `gradlew tasks` issued from a command prompt. </p>
+<td><p>The task(s) for Gradle to execute. A list of task names should be separated by spaces and can be taken from `gradlew tasks` issued from a command prompt. </p>
 <p>See [Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html).</p></td>
 </tr>
 <tr>
