@@ -782,7 +782,7 @@ You manage collection-level permissions through the [web portal admin context](.
             <li><a href="../settings/work/customize-process.md" data-raw-source="[Customize a project](../settings/work/customize-process.md)">Customize a project</a></li>
             <li><a href="../settings/work/manage-process.md" data-raw-source="[Add and manage processes](../settings/work/manage-process.md)">Add and manage processes</a></li>
             </ul>
-            <p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default. &gt;/p&gt;
+            <p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default.</p>
         </td>
     </tr>
     <tr>
