@@ -1,6 +1,6 @@
 ```YAML
-# Java Tool Installer
-# Acquires a specific version of Java from a user supplied Azure blob or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
+# Java tool installer
+# Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME
 - task: JavaToolInstaller@0
   inputs:
     #versionSpec: '8' 

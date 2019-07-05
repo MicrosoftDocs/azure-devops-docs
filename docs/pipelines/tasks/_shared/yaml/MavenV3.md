@@ -1,6 +1,6 @@
 ```YAML
 # Maven
-# Build with Apache Maven
+# Build, test, and deploy with Apache Maven
 - task: Maven@3
   inputs:
     #mavenPomFile: 'pom.xml' 
@@ -23,6 +23,7 @@
     #mavenSetM2Home: false # Required when mavenVersionOption == Path
     #mavenOptions: '-Xmx1024m' # Optional
     #mavenAuthenticateFeed: false 
+    #effectivePomSkip: false 
     #sonarQubeRunAnalysis: false 
     #sqMavenPluginVersionChoice: 'latest' # Required when sonarQubeRunAnalysis == True# Options: latest, pom
     #checkStyleRunAnalysis: false # Optional
