@@ -132,7 +132,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 (1): **Duration** is used only when **Date started** and **Date completed** are not available.
 
-(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If test test is data driven and has parameters, the character limit will include the parameters.
+(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 
