@@ -91,7 +91,7 @@ In order to use property dereference syntax, the property name must:
 Depending on the execution context, different variables are available.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
-- If you create release pipelines using classic editor, then [release variables](../release/variables.md) variables are available.
+- If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
 ## Functions
 
