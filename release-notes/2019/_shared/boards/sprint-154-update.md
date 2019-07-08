@@ -49,3 +49,11 @@ Your tools should change as your team does, you can now switch your projects fro
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/154_28.png "Change the process used by a project")
+
+### Hide custom fields from layout
+
+You can now hide custom fields from the form layout when customizing your process. The field will still be available from queries and REST APIs. This comes in handy for tracking extra fields when you are integrating with other systems.
+
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/154_29.png "Hide a custom field from a work item layout")
+
