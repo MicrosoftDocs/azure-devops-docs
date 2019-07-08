@@ -293,7 +293,7 @@
 - name: Azure Boards
   items:
     - name: July 1 
-      href: 2019/boards/sprint-153-update.md
+      href: 2019/boards/sprint-154-update.md
     - name: June 10  
       href: 2019/boards/sprint-153-update.md
     - name: April 30  
@@ -396,7 +396,7 @@
       href: 2019/reporting/sprint-147-update.md
 - name: Wiki
   items:
-    - name: June 1
+    - name: July 1
       href: 2019/wiki/sprint-154-update.md
     - name: June 10  
       href: 2019/wiki/sprint-153-update.md
