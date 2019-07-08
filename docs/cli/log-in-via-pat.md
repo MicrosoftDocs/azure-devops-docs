@@ -32,14 +32,15 @@ In the above experience, you need to manually enter the token when prompted. How
 
 There are cases where persisting a personal access token on the machine where the Azure CLI is running is not technically possible or is not secure. In these cases you can get a token from an environment variable.
 
-To use a personal access token, set the `AZURE_DEVOPS_EXT_PAT` environment variable:
+To use a personal access token, set the `AZURE_DEVOPS_EXT_PAT` environment variable at the process level:
 
 
 #### [Windows](#tab/windows)
 
 
 ```powershell
-set AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx
+# set environment variable for current process
+$env:AZURE_DEVOPS_EXT_PAT = 'xxxxxxxxxx'
 ```
 
 ##### [macOS and Linux](#tab/unix)
