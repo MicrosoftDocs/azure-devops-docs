@@ -9,7 +9,7 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/29/2019
+ms.date: 07/08/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -106,6 +106,10 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### How big can a run number be?
+
+Runs may be up to 255 characters.
 
 ### In what time zone are the build number time values expressed?
 
