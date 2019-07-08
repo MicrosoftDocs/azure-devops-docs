@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 04/05/2019
+ms.date: 07/08/2019
 ---
 
 # Configure a Burndown or Burnup widget 
@@ -41,6 +41,7 @@ A burndown chart is a useful tool to track completion of a predefined scope of w
 
  
 ## Burndown and burnup metrics 
+
 Burndown and burnup charts provide an easy way to monitor progress across teams and sprints by showing work remaining over time. Work remaining is the vertical axis and time is the horizontal axis. You can define remaining work to be calculated as a sum of a particular field, such as Story Points, or count of a particular work item type. 
 In addition, each chart calculates and displays the average burndown or burnup rate and added scope over the course of the project. The Burndown chart calculates a projected completion date for when the work is expected to be done based on historical burndown and scope increase. Using burndown, teams can stay on top of their progress and see the immediate impact of their work on their delivery date. 
 
