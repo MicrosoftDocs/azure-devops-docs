@@ -1,10 +1,10 @@
 ```YAML
-# Azure Cloud Service Deployment
+# Azure Cloud Service deployment
 # Deploy an Azure Cloud Service
 - task: AzureCloudPowerShellDeployment@1
   inputs:
     azureClassicSubscription: 
-    storageAccount: 
+    #storageAccount: # Required when enableAdvancedStorageOptions == False
     serviceName: 
     serviceLocation: 
     csPkg: 
@@ -20,4 +20,7 @@
     #newServiceCustomCertificates: # Optional
     #newServiceAdditionalArguments: # Optional
     #newServiceAffinityGroup: # Optional
+    #enableAdvancedStorageOptions: false 
+    #aRMConnectedServiceName: # Required when enableAdvancedStorageOptions == True
+    #aRMStorageAccount: # Required when enableAdvancedStorageOptions == True
 ```

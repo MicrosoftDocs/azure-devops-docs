@@ -6,13 +6,13 @@
     #gradleWrapperFile: 'gradlew' 
     #workingDirectory: # Optional
     #options: # Optional
-    #tasks: 'build' 
+    #tasks: 'build' # A list of tasks separated by spaces, such as 'build test'
     #publishJUnitResults: true 
     #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
     #codeCoverageClassFilesDirectories: 'build/classes/main/' # Required when codeCoverageToolOption == False
-    #codeCoverageClassFilter: # Optional
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageFailIfEmpty: false # Optional
     #javaHomeOption: 'JDKVersion' # Options: jDKVersion, path
     #jdkVersionOption: 'default' # Optional. Options: default, 1.11, 1.10, 1.9, 1.8, 1.7, 1.6
