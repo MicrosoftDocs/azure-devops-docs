@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 07/01/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -120,7 +120,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="27"><a href="2019/sprint-154-update.md" data-raw-source="[1 July 2019](2019/sprint-154-update.md)">1 July 2019</a></td>
+            <td rowspan="28"><a href="2019/sprint-154-update.md" data-raw-source="[1 July 2019](2019/sprint-154-update.md)">1 July 2019</a></td>
             <td>Azure DevOps CLI general availability</td><td>General</td><td>N/A</td>
          </tr>
         <tr><td>Work item live reload</td><td>General</td><td>Future</td></tr>
@@ -129,6 +129,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Instant search for work items</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Search for a work item as you type</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Change the process used by a project</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Hide custom fields from layout</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Azure Pipelines app for Jira</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Improvements to the Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Add a GitHub release as an artifact source</td><td>Pipelines</td><td>Future</td></tr>

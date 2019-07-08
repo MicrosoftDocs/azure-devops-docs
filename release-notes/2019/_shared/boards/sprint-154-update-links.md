@@ -8,3 +8,4 @@ ms.topic: include
 - [Instant search for work items](#instant-search-for-work-items)
 - [Search for a work item as you type](#search-for-a-work-item-as-you-type)
 - [Change the process used by a project](#change-the-process-used-by-a-project)
+- [Hide custom fields from layout](#hide-custom-fields-from-layout)
