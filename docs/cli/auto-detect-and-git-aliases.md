@@ -24,7 +24,7 @@ You can also configure the Azure DevOps Extension to add git aliases for common 
 
 
 ```bash
-az devops configure --use-git-alias true
+az devops configure --use-git-aliases true
 ```
 
 This will alias all `az repos` commands to `git repo` and all `az repos pr` commands to `git pr`.

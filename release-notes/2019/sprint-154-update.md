@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 07/01/2019
+ms.date: 07/08/2019
 description: In the **Sprint 154 Update** of Azure DevOps, we are releasing the Azure Pipelines for Jira app to the Atlassian marketplace. 
 ---
 

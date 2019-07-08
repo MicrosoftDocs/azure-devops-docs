@@ -17,6 +17,32 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
+- name: Excel, Project, PowerPoint integration
+  items:
+  - name: Work in Excel or Project
+    href: backlogs/office/track-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Bulk add or modify (Excel)
+    href: backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: "Create backlog items & tasks (Project)"
+    href: backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Schedule projects using Project
+    href: backlogs/office/schedule-projects-using-microsoft-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Storyboard your ideas
+    href: backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Add and share storyboard shapes
+    href: backlogs/office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Troubleshooting
+    items:
+    - name: Office integration issues
+      href: backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: "Rollup estimated & actual work using Project"
+      href: backlogs/office/rollup-estimated-and-actual-work-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve Excel data conflicts
+      href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve Excel data validation errors
+      href: backlogs/office/resolve-excel-data-validation-errors.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve invalid links in an Excel tree list
+      href: backlogs/office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Best tool for the job
   href: work-items/best-tool-add-update-link-work-items.md
 - name: REST API Reference
