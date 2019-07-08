@@ -9,14 +9,14 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
-ms.date: 06/18/2019
+ms.date: 07/08/2019
 ---
 
 # Get started with Azure DevOps CLI
 
 To start using the Azure DevOps extension for Azure CLI, execute the following steps:
 
-1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use az -version to validate.
+1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use `az --version` to validate.
 
 2. Add the Azure DevOps extension:
 
@@ -52,16 +52,22 @@ Group
    
 Subgroups:
     admin            : Manage administration operations.
+    extension        : Manage extensions.
     project          : Manage team projects.
+    security         : Manage security related operations.
     service-endpoint : Manage service endpoints/service connections.
     team             : Manage teams.
-  
+    user             : Manage users.
+    wiki             : Manage wikis.
+
 Commands:
     configure        : Configure the Azure DevOps CLI or view your configuration.
     feedback         : Displays information on how to provide feedback to the Azure DevOps CLI team.
+    invoke           : This command will invoke request for any DevOps area and resource. Please use
+                       only json output as the response of this command is not fixed. Helpful docs -
+                       https://docs.microsoft.com/en-us/rest/api/azure/devops/.
     login            : Set the credential (PAT) to use for a particular organization.
     logout           : Clear the credential for all or a particular organization.
-
 ```
 
 ## Open items in browser
@@ -71,7 +77,7 @@ You can use `--open` switch to open any artifact in Azure DevOps portal in your 
 For example :
 
 ```bash
-az pipelines build show --build-id 1 --open
+az pipelines build show --id 1 --open
 ```
 
-This will show the details of build with id 1 on the command-line and also open it in the default browser.
+This will show the details of build with `id 1` on the command-line and also open it in the default browser.
