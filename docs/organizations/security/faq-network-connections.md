@@ -44,7 +44,7 @@ To fix this issue, update the security appliances in order to support TLS 1.2 fo
 * `https://cdn.vsassets.io` -- hosts our CDN content
 * `https://gallerycdn.vsassets.io` -- hosts Azure DevOps extensions
 * `https://static2.sharepointonline.com` -- hosts some resources that we use in "office fabric" UI kit (fonts, etc)
-* `vstsmrblob.vsassets.io` -- hosts our TCM log data
+* `https://vstsmrblob.vsassets.io` -- hosts our TCM log data
 
 ## IP range restrictions
 
