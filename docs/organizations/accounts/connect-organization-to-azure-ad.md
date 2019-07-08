@@ -41,6 +41,9 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
         ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 
     4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who is in the Azure DevOps organization and NOT in the Azure AD. For any user that you don't create an Azure AD email address, be prepared to invite these users as guests to the Azure AD in future steps.
+	
+> [!NOTE]
+> Ensure you're using Azure AD Public. Support for Azure AD Government is currently limited.
 
 ## Connect your organization to Azure AD
 
