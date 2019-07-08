@@ -73,7 +73,6 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 ![Work item link types, conceptual image](_img/link-type-reference/linkscontrol-work-item-link-types.png)
 
-
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"  
@@ -113,7 +112,6 @@ Restrictions and recommendations:
 <li><p>Only use Affects-Affected by links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li>
 </ul> </td>
 </tr>
-
 <tr>
 <td><strong>Child-Parent</strong><br/>
 <img src="_img/link-work-items-support-traceability/child-tree-forward.png" alt="Child link type image"/><br/>
@@ -129,8 +127,6 @@ Use this directional link to create one-to-many relationships between a single p
 <ul>
 <li><p>Create a work breakdown structure (WBS). See <a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md)">Schedule tasks and assign resources using Microsoft Project</a>.</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see <a href="../backlogs/organize-backlog.md" data-raw-source="[Organize your backlog](../backlogs/organize-backlog.md)">Organize your backlog</a>.</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
-
-
 <tr>
 <td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
 <img src="_img/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
@@ -146,7 +142,6 @@ Link category: System-defined</p>
 <p>Restrictions and recommendations:</p>
 <ul><li><p>A work item can have only one Duplicate. </p></li><li><p>Only use Duplicate/Duplicate Of links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
-
 <tr>
 <td><strong>Referenced By-References</strong><br/>
 <img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
@@ -159,7 +154,6 @@ Link category: Process-defined</p></td>
 <p>Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[repeat a test with different data](../../test/repeat-test-with-different-data.md)">repeat a test with different data</a>. In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[Repeat a test with different data](../../test/repeat-test-with-different-data.md)">Repeat a test with different data</a>. </p>
 </td>
 </tr>
-
 </tr>
 <tr>
 <td><strong>Related</strong><br/>
@@ -169,10 +163,8 @@ Link category: Process-defined</p></td>
 <p>Topology type: Network<br/>
 Link category: System-defined</p></td>
 <td>Use this non-directional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
-
 <ul><li><p>Relate work items that are at the same level, such as two user stories that define features that overlap one another.</p></li><li><p>Link work items that are defined in different projects and managed by different teams.</p></li><li><p>Find and view work items and their related work items in a two-tiered view.</p></li><li><p>Create simple relationships with few restrictions.</p></li></ul></td>
 </tr>
-
 <tr>
 <td><strong>Successor-Predecessor</strong><br/>
 <img src="_img/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
@@ -187,7 +179,6 @@ Link category: System-defined</p>
 <ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same project.<br />
 You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.</p></li></ul> </td>
 </tr>
-
 <tr>
 <td><strong>Tested by-Tests</strong><br/> 
 <img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
@@ -201,7 +192,6 @@ Link category: Process-defined</p></td>
 <p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises TFS, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a></p>
 </td>
 </tr>
-
 <tr>
 <td><strong>Test Case-Shared Steps</strong><br/>
 <img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
@@ -214,7 +204,6 @@ Link category: Process-defined</p></td>
 <p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps.To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
 </td>
 </tr>
-
 </tbody>
 </table>
 
@@ -222,15 +211,14 @@ Link category: Process-defined</p></td>
 1. Available from TFS 2017 and later versions. 
 
 
-
 <a id="hyperlink">  </a>
+
 ## Hyperlink type
 
 There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Count*](linking-attachments.md#hyper-link-count)&mdash; added to a work item. A hyperlink can link a work item to any URL. 
 
 > [!div class="mx-imgBorder"]  
 > ![Hyperlink, conceptual image](_img/link-type-reference/hyperlink.png) 
-
 
 <table width="100%"> 
 <tbody valign="top">
@@ -240,15 +228,12 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 <th width="12%">Artifact type</th>
 <th width="60%">Usage</th>
 </tr>
-
 <tr>
 <td>Hyperlink</td>
 <td>Work item tracking</td>
 <td>Hyperlink</td>
 <td>Used to link a work item to a URL. Note that <strong>Workitem Hyperlink</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>. </td>
 </tr>
-
-
 </tbody>
 </table>
 
@@ -256,6 +241,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 
 
 <a id="external-link-types">  </a>
+
 ## External link types
 
 External link types are system-defined link types. They support linking work items to other objects as shown in the following image. A work item's [*External Link Count*](linking-attachments.md#external-link-count) corresponds to the sum of all links defined with a external link type. 
@@ -275,7 +261,6 @@ The following table describes the external link types you can choose when adding
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 ::: moniker-end   
 
-
 <table width="100%"> 
 <tbody valign="top">
 <tr>
@@ -284,84 +269,79 @@ The following table describes the external link types you can choose when adding
 <th width="12%">Artifact type</th>
 <th width="60%">Usage</th>
 </tr>
-
 <tr>
 <td>Branch</td>
 <td>Git</td>
 <td>Branch</td>
 <td>Used to link a work item to a branch.</td>
 </tr>
-
 <tr>
-<td>Build</td>
+<td>Pipelines/Build</td>
 <td>Build</td>
 <td>Build</td>
 <td>Used to link a work item to a build.</td>
 </tr>
-
 <tr>
 <td>Changeset (or Fixed in Changeset)</td>
 <td>VersionControl</td>
 <td>Changeset</td>
 <td>Used to link a work item to a changeset. </td>
 </tr>
-
 <tr>
 <td>Commit (or Fixed in Commit)</td>
 <td>Git</td>
 <td>Commit</td>
 <td>Used to link a work item to a commit.</td>
 </tr>
-
 <tr>
 <td>Found in build</td>
-<td>Build</td>
+<td>Pipelines/Build</td>
 <td>Build</td>
 <td>Used to link a work item to a build.</td>
 </tr>
-
 <tr>
 <td>Integrated in build</td>
 <td>Build</td>
-<td>Build</td>
+<td>Build pipeline</td>
 <td>Used to link a work item to a build.</td>
 </tr>
-
 <tr>
-<td>Pull Request</td>
-<td>Git</td>
-<td>PullRequestId</td>
-<td>Used to link a work item to a pull request. </td>
+<td>Integrated in release environment</td>
+<td>Release</td>
+<td>Release pipeline</td>
+<td>Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition. To learn how to set this option, see <a href="../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status">Release pipelines, How do I integrate and report release status?</a>. 
+</td>
 </tr>
-
 <tr>
 <td>Model Link</td>
 <td>ArchitectureTools</td>
 <td>ModelLink</td>
 <td>(Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. </td>
 </tr>
-
+<tr>
+<td>Pull Request</td>
+<td>Git</td>
+<td>PullRequestId</td>
+<td>Used to link a work item to a pull request. </td>
+</tr>
 <tr>
 <td>Result attachment   </td>
 <td>Test Management</td>
 <td>TcmResultAttachment</td>
 <td>Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. </td>
 </tr>
-
 <tr>
 <td>Source Code File</td>
 <td>VersionControl </td>
 <td>LatestItemVersion</td>
-<td>Used to link a work item to a file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
+<td>Used to link a work item to a file under Team Foundation version control (TFVC).   </td>
 </tr>
-
 <tr>
 <td>Storyboard</td>
 <td>Requirements</td>
 <td>Storyboard</td>
-<td>Used to link a work item to a file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
+<td>Used to link a work item to a PowerPoint file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
 </tr>
-
 <tr>
 <td>Tag</td>
 <td>Git</td>
@@ -374,21 +354,18 @@ The following table describes the external link types you can choose when adding
 <td>TcmResult</td>
 <td>Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.    </td>
 </tr>
-
 <tr>
 <td>Versioned item</td>
 <td>VersionControl </td>
 <td>LatestItemVersion</td>
 <td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that <strong>Source Code File</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>.   </td>
 </tr>
-
 <tr>
 <td>Wiki</td>
 <td>Wiki</td>
 <td>Wiki</td>
 <td>Used to link a work item to a wiki page. Supported for TFS 2018.2 and later versions.</td>
 </tr>
-
 </tbody>
 </table>
 
@@ -450,19 +427,16 @@ The following table describes the GitHub link types you can choose when adding a
 <td>GitHub repository commit </td>
 <td>Used to link a work item to a GitHub commit.</td>
 </tr>
-
 <tr>
 <td>GitHub Issue</td>
 <td>GitHub repository issue</td>
 <td>Used to link a work item to a GitHub issue. </td>
 </tr>
-
 <tr>
 <td>GitHub Pull Request</td>
 <td>GitHub repository pull request</td>
 <td>Used to link a work item to a GitHub pull request. </td>
 </tr>
-
 </tbody>
 </table>
 
@@ -483,23 +457,21 @@ The following table describes the GitHub link types you can choose when adding a
 <td>GitHub repository commit </td>
 <td>Used to link a work item to a GitHub commit.</td>
 </tr>
-
 <tr>
 <td>GitHub Pull Request</td>
 <td>GitHub repository pull request</td>
 <td>Used to link a work item to a GitHub pull request. </td>
 </tr>
-
 </tbody>
 </table>
 
 ::: moniker-end
 
 
-
 ::: moniker range="azure-devops"   
 
 <a id= "remote-work-link-types" />
+
 ## Remote work link types
 
 Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.  
@@ -508,7 +480,6 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 <table width="100%"> 
 <tbody valign="top">
-
 <tr>
 <th width="20%">Name</th>
 <th width="17%">Reference name</th>
@@ -526,7 +497,6 @@ Link category: System-defined</p>
 <p>Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.</p>
  </td>
 </tr>
-
 <tr>
 <td><strong>Remote Related</strong><br/>
 <img src="_img/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
@@ -535,11 +505,8 @@ Link category: System-defined</p>
 <p>Topology type: Network<br/>
 Link category: System-defined</p>
 </td>
-
 <td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.<br/></td>
 </tr>
-
-
 </tbody>
 </table>
 
@@ -547,6 +514,7 @@ Link category: System-defined</p>
 ::: moniker-end  
 
 ::: moniker range="<= azure-devops-2019" 
+
 ## Custom link types
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  
