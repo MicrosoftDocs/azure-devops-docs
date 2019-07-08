@@ -18,14 +18,14 @@ monikerRange: 'azure-devops'
 
 This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts.
 
->![Tip]
+> [!Tip]
 > Are you new to pipelines or looking for an end-to-end walkthrough? If so, see [Deploy a Python web app using CI/CD to Azure App Service on Linux](python-webapp.md).
 
 ## Build environment
 
 You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To select a specific version of Python installed on Microsoft-hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your job.
 
 ### Use a specific Python version
 
@@ -40,12 +40,11 @@ steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.6'
-    architecture: 'x64'
 ```
 
 ### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, perhaps to test a package against those versions, define a *job* with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **maxParallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
+To run a pipeline with multiple Python versions, perhaps to test a package against those versions, define a *job* with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version.
 
 ```yaml
 # https://aka.ms/yaml
@@ -61,13 +60,11 @@ jobs:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-    maxParallel: 3
 
   steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
-      architecture: 'x64'
 
   # Add additional tasks to run using each Python version in the matrix above
 ```
@@ -128,7 +125,6 @@ See [Run pipelines with Anaconda environments](./anaconda.md).
 Add the following YAML to install or upgrade `flake8` and use it to run lint tests.
 
 ```yaml
-
 - script: |
     python -m pip install flake8
     flake8 .
