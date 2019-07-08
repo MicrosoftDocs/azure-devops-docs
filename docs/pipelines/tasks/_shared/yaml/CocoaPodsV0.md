@@ -1,6 +1,6 @@
 ```YAML
 # CocoaPods
-# CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. This task runs 'pod install'.
+# Install CocoaPods dependencies for Swift and Objective-C Cocoa projects
 - task: CocoaPods@0
   inputs:
     #workingDirectory: # Optional

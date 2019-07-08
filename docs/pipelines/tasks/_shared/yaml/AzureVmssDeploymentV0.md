@@ -1,6 +1,6 @@
 ```YAML
-# Azure VM scale set Deployment
-# Deploy Virtual Machine scale set image
+# Azure VM scale set deployment
+# Deploy a virtual machine scale set image
 - task: AzureVmssDeployment@0
   inputs:
     azureSubscription: 

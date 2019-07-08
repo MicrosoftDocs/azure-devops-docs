@@ -1,6 +1,6 @@
 ```YAML
-# [Deprecated] SQL Server Database Deploy
-# Deploy SQL Server Database using DACPAC
+# [Deprecated] SQL Server database deploy
+# Deploy a SQL Server database using DACPAC
 - task: SqlServerDacpacDeployment@1
   inputs:
     environmentName: 
