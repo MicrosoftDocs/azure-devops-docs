@@ -18,14 +18,14 @@ ms.date: 01/28/2019
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-You can restore a deleted project up to 28 days after it was deleted.
+You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 
 ## Prerequisites
 
-To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check you permissions, see [View permissions](../security/view-permissions.md).
+To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
 > [!NOTE]
-> A recently deleted project is only viewable when there is a project that has been deleted from an organization and it is within the last 28 days.
+> A recently deleted project is only viewable when there is a project that has been deleted from an organization within the last 28 days.
 
 ## Restore project
 
