@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/17/2019
+ms.date: 06/28/2019
 ---
 
 
@@ -43,7 +43,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 ::: moniker range="azure-devops"
 
-To connect Azure Boards to GitHub.com, [install and configure the Azure Boards app from GitHub](install-github-app.md). Or, alternatively [connect and configure from Azure Boards](connect-to-github.md). The first method is the recommended method as it provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. 
+To connect Azure Boards to GitHub.com, [connect and configure from Azure Boards](connect-to-github.md). Or, alternatively, [install and configure the Azure Boards app from GitHub](install-github-app.md). Both methods have been streamlined and support authenticating and operating via the app rather than an individual. 
 
 To connect Azure Boards to a GitHub Enterprise Server, see  [connect from Azure Boards](connect-to-github.md). 
 
