@@ -48,10 +48,7 @@ For definitions of each repository permission, see [Git repository permissions](
 
 ## Don't have access to create a page?
 
-If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki. Even if you don't have access to a wiki page, you can see the security and identify an administrative member who can provision access to the wiki.
-
-> [!div class="mx-imgBorder"]  
-> ![View wiki security if you don't have access to Wiki](_img/wiki/wiki-no-permission-message.png)  
+If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki.
 
 ## Stakeholder wiki access
 
