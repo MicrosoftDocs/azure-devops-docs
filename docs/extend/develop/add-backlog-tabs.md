@@ -88,7 +88,7 @@ It includes the [scopes](./manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 ### Files
-Include all of the files your extension will access. <br>
+Include all of the files your extension accesses. <br>
 For your files, set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 	
 ## Example registeredObjectId
