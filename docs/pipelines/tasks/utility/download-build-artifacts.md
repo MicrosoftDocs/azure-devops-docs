@@ -46,7 +46,9 @@ Use this task in a build or release pipeline to download build artifacts.
 <tr><td>Matching pattern</td><td>(Optional) Specify files to be downloaded as multi line minimatch pattern. [More Information](https://aka.ms/minimatchexamples) <p>The default pattern (\*\*) will download all files across all artifacts in the build if the "Specific files" option is selected. To download all files within an artifact drop use `drop/**`.</p></td></tr>
 <tr><td>Destination directory</td><td>(Required) Path on the agent machine where the artifacts will be downloaded</td></tr>
 <tr><td>Parallelization limit</td><td>(Optional) Number of files to download simultaneously</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

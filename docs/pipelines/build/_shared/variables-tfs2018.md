@@ -84,7 +84,9 @@ For example: `c:\agent\_work`.
 <td>Build.ArtifactStagingDirectory</td>
 <td>The local path on the agent where any artifacts are copied to before being pushed to their destination.
 <br/><br/>
+
 [!INCLUDE [include](../_shared/variables-build-artifacts-directory.md)]
+
 </td>
 </tr>
 
@@ -98,8 +100,10 @@ For example: `c:\agent\_work`.
 <td>The name of the completed build. You can specify the build number format that generates this value in the [pipeline options](../options.md).
 <br/><br/>
 A typical use of this variable is to make it part of the label format, which you specify on the [repository tab](../repository.md).
-<br/><br/>       
+<br/><br/>
+
 [!INCLUDE [include](../_shared/variables-invalid-label-characters.md)]
+
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as a version control tag.
 </td>
@@ -175,7 +179,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>Build.Repository.LocalPath</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 <p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
@@ -269,7 +275,9 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <tr>
 <td>Build.SourcesDirectory</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 <p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
 </tr>
@@ -296,7 +304,9 @@ Note: This variable is available in TFS 2015.4.
 <tr>
 <td>Build.StagingDirectory</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-artifacts-directory.md)]
+
 </td>
 </tr>
 
@@ -346,7 +356,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>System.DefaultWorkingDirectory</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 </td>
 </tr>
 

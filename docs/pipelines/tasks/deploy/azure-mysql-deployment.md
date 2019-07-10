@@ -40,7 +40,9 @@ Use this task in a build or release pipeline to run your scripts and make change
 <tr><td>Start IP Address</td><td>(Required) The starting IP Address of the automation agent machine pool like 196.21.30.50 .</td></tr>
 <tr><td>End IP Address</td><td>(Required) The ending IP Address of the automation agent machine pool like 196.21.30.65 .</td></tr>
 <tr><td>Delete Rule After Task Ends</td><td>(Optional) If selected, the added exception for IP addresses of the automation agent will be removed for corresponding Azure Database for MySQL.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

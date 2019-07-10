@@ -33,7 +33,9 @@ Security and compliance assessment with Azure policies on resources that belong 
 <tr><td>Azure subscription</td><td>(Required) Select the Azure Resource Manager subscription to enforce the policies.</td></tr>
 <tr><td>Resource group</td><td>(Required) Provide name of a resource group.</td></tr>
 <tr><td>Resource name</td><td>(Optional) Select name of Azure resources for which you want to check the policy compliance.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Q&A

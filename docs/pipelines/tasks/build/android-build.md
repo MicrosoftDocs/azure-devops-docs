@@ -134,7 +134,9 @@ Check if you want to start the emulator with no GUI (headless mode).
 Check if you want the AVD to be deleted upon completion.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Related tasks

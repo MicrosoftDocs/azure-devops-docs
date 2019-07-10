@@ -56,7 +56,9 @@ The Bash task also has a shortcut syntax in YAML:
 </code></pre>
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source
