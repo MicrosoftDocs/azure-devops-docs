@@ -24,7 +24,7 @@ You have the option of hosting static content for your extension (like HTML, CSS
 
 In this model, static content is packaged with your extension's .vsix file and is served from a public endpoint at `https://publisher.gallery.vsassets.io`. 
 
-Having Azure DevOps Services host your extension's static content is useful when you are simply enhancing or decorating data from Azure DevOps Services. It does not require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
+Having Azure DevOps Services host your extension's static content is useful when you are simply enhancing or decorating data from Azure DevOps Services. It doesn't require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
 
 ### Steps
 
@@ -52,8 +52,7 @@ Keep in mind:
 
 * The value specified by the `path` attribute can be a folder or individual file. If a folder, the entire folder (and any sub-folders) are included.
 * The `addressable` attribute is important and is what tells Visual Studio Online to make the file(s) URL addressable.
-* All `addressable` asset requests are case sensitive. If the request for an asset has a different case than the actual uploaded asset, it will 
-result in a HTTP 404 (Not found) error.
+* All `addressable` asset requests are case sensitive. If the request for an asset has a different case than the actual uploaded asset, it results in a HTTP 404 (Not found) error.
 * Not specifying a baseUri (or setting an empty value) tells Visual Studio Online at runtime to calculate the base URI as if your static content is hosted by Azure DevOps Services.
 
 ## Host on your own service (or a third-party service)
@@ -81,6 +80,6 @@ In this model, static content is served from your own service and not included i
     ]
 ```
 
-Azure DevOps Services will load the contents of this hub when it is rendered at `https://myservice.net/extension/hello-world.html`.
+Azure DevOps Services loads the contents of this hub when it's rendered at `https://myservice.net/extension/hello-world.html`.
 
 

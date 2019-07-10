@@ -565,7 +565,7 @@ Module path: `TFS/WorkItemTracking/RestClient`
 * `project`: string. Optional. Project ID or project name
 * `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item links of all work item types.
 * `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of links.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for link changes. Only link changes that occurred after that date/time will be returned. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+* `startDateTime`: Date. Optional. Date/time to use as a starting point for link changes. Only link changes that occurred after that date/time are returned. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
 
 ### Returns
 
@@ -864,7 +864,7 @@ Module path: `TFS/WorkItemTracking/RestClient`
 * `fields`: string[]. Optional. A list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
 * `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item revisions of all work item types.
 * `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
 * `includeIdentityRef`: boolean. Optional. Return an identity reference instead of a string value for identity fields.
 * `includeDeleted`: boolean. Optional. Specify if the deleted item should be returned.
 
@@ -887,7 +887,7 @@ Module path: `TFS/WorkItemTracking/RestClient`
 * `filter`: [Contracts.ReportingWorkItemRevisionsFilter](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsFilter.md). An object that contains request settings: field filter, type filter, identity format
 * `project`: string. Optional. Project ID or project name
 * `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
 
 ### Returns
 

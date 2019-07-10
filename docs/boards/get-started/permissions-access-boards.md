@@ -423,31 +423,75 @@ You set project-level information permissions from **Project Settings**>**Securi
 <tr>
 <td align="left">[View project-level information](../../organizations/security/set-project-collection-level-permissions.md) 
 </td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 
 <tr>
 <td align="left">Area node: [Edit work items under the node](../../organizations/settings/set-area-paths.md) 
 </td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 <tr>
 <td align="left">[Area nodes and iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)  
 </td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 
@@ -458,7 +502,11 @@ You set project-level information permissions from **Project Settings**>**Securi
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 
@@ -500,8 +548,16 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 <tr>
 
@@ -510,8 +566,16 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 <tr>
 
@@ -522,8 +586,16 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
-<td>![checkmark](../../_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](../../_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 </tbody>

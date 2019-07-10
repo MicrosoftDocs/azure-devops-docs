@@ -159,8 +159,7 @@ In addition, the Links control tab provides access to all links made to the work
 
 <a id="discussion">  </a>
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
-
+[!INCLUDE [temp](../_shared/discussion-tip.md)]
 
 <a id="copy-url">  </a>
 

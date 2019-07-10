@@ -20,7 +20,7 @@ Module path: `TFS/Dashboards/WidgetContracts`
 ### Members
 
 * `load`: Function. This is the method that is called by the widget framework to load the widget. Parameter for this method is of type [WidgetSettings](./WidgetSettings.md). 
-This will have the current saved settings of the widget and should be used by the load method to load the widget.
+This has the current saved settings of the widget and should be used by the load method to load the widget.
 It should return an object of type [WidgetStatus](./WidgetStatus.md) wrapped in a Promise. Widgets can use the [WidgetStatusHelper](./WidgetStatusHelper.md) to return either Success or Failure.
 
 * `reload`: Function. This is the method that is called by the widget framework every time the configuration is changed or saved. Parameter for this method is of type [WidgetSettings](./WidgetSettings.md). 

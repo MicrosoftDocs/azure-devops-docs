@@ -82,4 +82,4 @@ When using the ```Controls.create(...)``` method of Splitter creation the toggle
 	</div>
 ```
 
-By including this HTML structure in your code, you will have a Splitter control with an integrated toggle button and when collapsed a label on the collapsed pane.
+By including this HTML structure in your code, you have a Splitter control with an integrated toggle button and when collapsed a label on the collapsed pane.
