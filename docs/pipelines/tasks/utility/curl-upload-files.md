@@ -81,7 +81,9 @@ Arguments to pass to cURL.
 <p>Select if you want to add **--stderr -** as an argument to cURL. Otherwise, if you clear this check box, cURL will write its progress bar to stderr, which is interpreted by the build pipeline as error output, which could cause the build to fail.</p>
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

@@ -49,7 +49,9 @@ For details about using this task, see the App Center documentation topic [Deplo
 <tr><td>Destination IDs</td><td>(Optional) IDs of the distribution groups to release to. Leave it empty to use the default group and use commas or semicolons to separate multiple IDs.</td></tr>
 <tr><td>Destination ID</td><td>(Required) ID of the distribution store to deploy to.</td></tr>
 <tr><td>Do not notify testers. Release will still be available to install.</td><td>(Optional) Testers will not receive an email for new releases.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

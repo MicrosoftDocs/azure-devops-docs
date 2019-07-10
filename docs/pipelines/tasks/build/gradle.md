@@ -111,7 +111,9 @@ The build summary reports the number of issues found by Checkstyle. Detailed iss
 If the Checkstyle analysis is customized, the task only attempts to find the reports and produce a summary.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

@@ -59,7 +59,9 @@ To  view the template parameters in a grid, click on **...** next to Override te
 <tr><td>Copy Azure VM tags to agents</td><td>(Optional) Choose if the tags configured on the Azure VM need to be copied to the corresponding Deployment Group agent. <br><br>By default all Azure tags will be copied following the format “Key: Value”. Example: An Azure Tag "Role : Web" would be copied  as-is to the Agent machine. <br><br>For more information on how tag Azure resources refer to [link](/azure/azure-resource-manager/resource-group-using-tags?)</td></tr>
 <tr><td>VM details for WinRM</td><td>(Optional) Provide a name for the variable for the resource group. The variable can be used as $(variableName) to refer to the resource group in subsequent tasks like in the PowerShell on Target Machines task for deploying applications. <br>Valid only when the selected action is Create, Update or Select, and required when an existing resource group is selected.</td></tr>
 <tr><td>Deployment outputs</td><td>(Optional) Provide a name for the variable for the output variable which will contain the outputs section of the current deployment object in string format. You can use the “ConvertFrom-Json” PowerShell cmdlet to parse the JSON object and access the individual output values.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

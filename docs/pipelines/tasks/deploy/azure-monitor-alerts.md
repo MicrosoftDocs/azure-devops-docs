@@ -40,7 +40,9 @@ If your subscription is not listed or if you want to use an existing Service Pri
 To add or modify alerts, click on […] button.</td></tr>
 <tr><td>Subscription owners, contributors and readers</td><td>(Optional) Send email notification to everyone who has access to this resource group.</td></tr>
 <tr><td>Additional administrator emails</td><td>(Optional) Add additional email addresses separated by semicolons(;) if you want to send email notification to additional people (whether or not you checked the "subscription owners..." box).</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

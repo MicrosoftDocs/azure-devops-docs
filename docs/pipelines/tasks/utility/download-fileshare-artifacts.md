@@ -31,7 +31,9 @@ Use this task in a build or release pipeline to download fileshare artifacts.
 <tr><td>Matching pattern</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](https://aka.ms/minimatchexamples).<p>The default pattern (`\*\*`) will download all files within the artifact.</p></td></tr>
 <tr><td>Download path</td><td>(Required) Path on the agent machine where the artifacts will be downloaded.</td></tr>
 <tr><td>Parallelization limit</td><td>(Optional) Number of files to download simultaneously.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

@@ -76,7 +76,9 @@ The CmdLine task also has a shortcut syntax in YAML:
 ```
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example
@@ -104,7 +106,11 @@ On the Build tab of a build pipeline, add these tasks:
 
 <table>
    <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**
+      <td>
+
+![](_img/command-line.png)
+
+<br/>**Utility: Command Line**
       </td>
 <td>
 <p>Get the date.</p>
@@ -116,7 +122,11 @@ On the Build tab of a build pipeline, add these tasks:
 </tr>
    
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
+      <td>
+
+![](_img/command-line.png)
+
+<br/>**Utility: Command Line**</td>
       
 <td>
 <p>Display the operating system version.</p>
@@ -128,7 +138,11 @@ On the Build tab of a build pipeline, add these tasks:
 
    
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
+      <td>
+
+![](_img/command-line.png)
+
+<br/>**Utility: Command Line**</td>
       
 <td>
 <p>Display the environment variables.</p>
@@ -140,7 +154,11 @@ On the Build tab of a build pipeline, add these tasks:
 
    
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
+      <td>
+
+![](_img/command-line.png)
+
+<br/>**Utility: Command Line**</td>
       
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
