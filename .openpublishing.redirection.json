@@ -6787,13 +6787,13 @@
     },
     {
       "source_path": "docs/build-release/tasks/build/dotnet-core.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/DotNetCoreCLIV2.2.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/Go.0.md",
@@ -11754,6 +11754,11 @@
       "source_path": "docs/marketplace/marketplace-billing-qa.md",
       "redirect_url": "/azure/devops/marketplace/faq-extensions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/tasks/build/dotnet-core.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
+      "redirect_document_id": true
     }
   ]
 }
