@@ -48,10 +48,10 @@ Below is the code snippet that adds your action to the contributions section of 
 ### Properties
 | Property           | Description                                                                                                                         
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
-| text               | Text that will appear on the menu item.                                                                         |                  
-| title              | Tooltip text that will appear on the menu item.                                                                 |                   
-| icon               | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.                     |                   
-| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
+| text               | Text that appears on the menu item.                                                                         |                  
+| title              | Tooltip text that appears on the menu item.                                                                 |                   
+| icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                     |                   
+| groupId            | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
@@ -59,7 +59,7 @@ Learn about all of the places where you can add actions in the [contributions re
 
 ## Your HTML page
 
-Your menu action will be represented by a JavaScript script embedded in an HTML file. Save the following contents in a file and location that matches the reference to it 
+Your menu action is represented by a JavaScript script embedded in an HTML file. Save the following contents in a file and location that matches the reference to it 
 in your extension's manifest file.
 
 ```html

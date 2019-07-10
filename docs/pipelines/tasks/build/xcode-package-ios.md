@@ -85,7 +85,9 @@ The default value is `$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/
 Make sure to specify the variable values on the [variables tab](../../build/variables.md).
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

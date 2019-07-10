@@ -41,7 +41,9 @@ Use this task in a build or release pipeline to start, stop, restart, slot swap,
 <tr><td>Output variable</td><td>(Optional) Provide the variable name for the local installation path for the selected extension.<br/>This field is now deprecated and would be removed. Use LocalPathsForInstalledExtensions variable from Output Variables section in subsequent tasks.</td></tr>
 <tr><td>Resource Group name for Application Insights</td><td>(Required) Enter or Select resource group where your application insights resource is available</td></tr>
 <tr><td>Application Insights resource name</td><td>(Required) Select Application Insights resource where continuous monitoring data will be recorded. <br/>If your application insights resource is not listed here and you want to create a new resource, click on [+New] button. Once the resource is created on Azure Portal, come back here and click on refresh button.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

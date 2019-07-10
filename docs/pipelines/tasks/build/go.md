@@ -31,7 +31,9 @@ Use this task in a build or release pipeline to get, build, or test a go applica
 <tr><td>Custom command</td><td>(Required) Custom Go command for execution. For example: to execute go version, enter version.</td></tr>
 <tr><td>Arguments</td><td>(Optional) Arguments to the selected command. For example, build time arguments for go build command.</td></tr>
 <tr><td>Working Directory</td><td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

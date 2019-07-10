@@ -123,13 +123,13 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 ```
 
 >[!NOTE]
->The **publisher** here will need to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
+>The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
 
 
 ### Icons
 The **icons** stanza specifies the path to your extension's icon in your manifest. 
 
-> **You will need to add a square image titled `logo.png` as shown in the extension manifest.**
+> **You need to add a square image titled `logo.png` as shown in the extension manifest.**
 
 ### Contributions
 The **contributions** stanza adds your contribution - the Hello hub - to your extension manifest.

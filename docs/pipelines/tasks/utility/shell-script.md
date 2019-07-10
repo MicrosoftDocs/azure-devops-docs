@@ -76,7 +76,9 @@ Working directory in which you want to run the script.  If you leave it empty it
 Select if you want this task to fail if any errors are written to the StandardError stream.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example
@@ -102,7 +104,11 @@ On the [Build tab](../../index.md) of a build pipeline, add this task:
 
 <table>
 <tr>
-<td>![](_img/shell-script.png)<br/>**Utility: Shell Script**</td>
+<td>
+
+![](_img/shell-script.png)
+
+<br/>**Utility: Shell Script**</td>
 <td>
 <p>Run test.bat.</p>
 <ul>

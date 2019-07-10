@@ -30,5 +30,5 @@ AMD javascript module loader configuration
 
 * `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}. 
 
-* `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader will wait for scripts to load.
+* `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader waits for scripts to load.
 

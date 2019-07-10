@@ -12,22 +12,22 @@ author: chcomley
 ms.date: 08/29/2016
 ---
 
-# Package and Publish an integration to the Marketplace
+# Package and publish an integration to the Marketplace
 
 Do you have a tool, service, or product that integrates with Azure DevOps Services or Team Foundation Server?
 If so, help users find it by publishing it on the Visual Studio Marketplace.
-The Visual Studio Marketplace is a one-stop-shop for individuals and teams to find tools that extend and enhance the experience. 
+The Marketplace is a one-stop-shop for individuals and teams to find tools that extend and enhance the experience. 
 
-[Browse the marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
+[Browse the Marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
 
 > [!NOTE]
 > If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](overview.md).
 
-## Publishing Requirements
+## Publishing requirements
 
 [!INCLUDE [](_shared/before-publishing.md)]
 
-## What you will need
+## What you need
 
 1. 128x128 pixel logo (PNG or JPEG format) representing your integration, yourself, or your company/organization
 2. Minimum of 1 screen shot showing your integration
@@ -41,7 +41,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 
 [Jenkins for Azure DevOps Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
-Note: you will see the term `extension` used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
+Note: The term, `extension`, is used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
 <div class="alert alert-info">
     Need help getting your integration on the Marketplace? <a href="http://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](http://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
@@ -110,7 +110,7 @@ tfx extension create --manifest-globs vss-extension.json
 
 > [!NOTE]
 > An extension/integration's version must be incremented on every update. <br>
-> If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
+> If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and saves the new version to your manifest.
 
 ### Publish your integration to the Marketplace
 
@@ -121,8 +121,8 @@ Before an integration can be installed into an organization in Azure DevOps Serv
 
 To share an integration so it can be installed:
 
-1. Click an integration from the list of displayed items 
-2. Click the **Share** button
+1. Select an integration from the list of displayed items 
+2. Select the **Share** button
 3. Specify the name of the organization to make this integration visible to.
    - For example, to make an integration visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 

@@ -107,6 +107,7 @@ None
 </tr>
 
 [!INCLUDE [control-options-arguments](../_shared/control-options-arguments.md)]
+
 </table>
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)

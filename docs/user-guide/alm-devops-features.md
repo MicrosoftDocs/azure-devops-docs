@@ -562,6 +562,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Manage a <a href="../boards/plans/portfolio-management.md" data-raw-source="[portfolio of backlogs](../boards/plans/portfolio-management.md)">portfolio of backlogs</a> and gain insight into each team&#39;s progress as well as the progress of all programs.</p>
 
 ![Portfolio management](_img/features/alm-feature-portfolio-management.png)
+
 <br/>
 
 
@@ -1223,7 +1224,9 @@ pipelines\tasks\build\_img
 
 <p><b>Exploratory testing</b></p>
 <p>Explore user stories without test cases or test steps using [Azure Test Plans and exploratory testing](../test/index.md).</p>
-![Exploratory testing](_img/features/features-exploratory-testing.png)  
+
+![Exploratory testing](_img/features/features-exploratory-testing.png)
+
 <br/>
 <p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
@@ -1906,7 +1909,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Comprehensive dashboard </b></p>
 <p>Manage all your apps, users, and devices from a single dashboard. Monitor crashes and feedback as well. As an admin, you&#39;ll have full control over which user can see and install which app. </p>
 
-![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)  
+![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)
+
 <br/>
 
 

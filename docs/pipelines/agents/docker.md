@@ -8,7 +8,7 @@ ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.manager: jillfra
 ms.author: juliobv
 author: juliobbv
-ms.date: 06/14/2019
+ms.date: 07/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -222,7 +222,9 @@ Next, we'll create the Dockerfile.
             git \
             iputils-ping \
             libcurl3 \
-            libicu55
+            libicu55 \
+            libunwind8 \
+            netcat
 
     WORKDIR /azp
 
@@ -331,7 +333,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    exec ./externals/node10/bin/node ./bin/AgentService.js interactive
+    exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
 6. Run the following command within that directory:

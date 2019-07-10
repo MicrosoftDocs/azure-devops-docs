@@ -92,7 +92,9 @@ Both of these resolve to the `PowerShell@2` task.
 
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Examples

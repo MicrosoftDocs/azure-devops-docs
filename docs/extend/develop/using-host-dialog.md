@@ -37,7 +37,7 @@ To start, declare a contribution of type `ms.vss-web.control` in your extension 
     }
 ```
 
-The `uri` property references a page that will be rendered within the content area of the dialog:
+The `uri` property references a page that is rendered within the content area of the dialog:
 
 ```html
 <!DOCTYPE html>

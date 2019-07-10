@@ -18,7 +18,7 @@ Module path: `TFS/TestManagement/Contracts`
 ### Values
 
 * `Unspecified` Only used during an update to preserve the existing value.
-* `None` Test has not been completed, or the test type does not report pass/failure.
+* `None` Test has not been completed, or the test type doesn't report pass/failure.
 * `Passed` Test was executed w/o any issues.
 * `Failed` Test was executed, but there were issues. Issues may involve exceptions or failed assertions.
 * `Inconclusive` Test has completed, but we can&#x27;t say if it passed or failed. May be used for aborted tests...

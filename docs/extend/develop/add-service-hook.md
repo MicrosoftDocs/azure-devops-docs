@@ -34,7 +34,7 @@ This tutorial walks through developing an extension that implements a **sample c
 -   Supported actions to take when events occur
     - Perform action
 
-> Note: This tutorial will refer to the home directory for your project as "home". 
+> Note: This tutorial refers to the home directory for your project as "home". 
 
 <center><img src="./_img/consumer-service.png" alt="Sample Consumer Service"/></center>
 
@@ -42,8 +42,8 @@ This tutorial walks through developing an extension that implements a **sample c
 ### Add an icon
 
 Add a square image in the ```images``` folder that identifies your extension.
-It will displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
-but below is a sample image you can use along with how it will look with the extension.
+It'a displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
+but below is a sample image you can use along with how it looks with the extension.
 
 >NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
@@ -135,7 +135,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
     ]
 }
 ```
-> Note: You will need to update the `publisher` property.
+> Note: You must update the `publisher` property.
 
 The `icons` stanza specifies the path to your extension's icon in your manifest.
 
