@@ -15,7 +15,7 @@ ms.topic: include
 <td>Agent.BuildDirectory</td>
 <td>
 <p>The local path on the agent where all folders for a given build pipeline are created.</p>
-<p>For example: <code>c:\agent\_work\1</code></p>
+<p>For example: `c:\agent\_work\1`</p>
 </td>
 </tr>
 
