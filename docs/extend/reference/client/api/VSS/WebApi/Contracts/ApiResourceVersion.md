@@ -23,5 +23,5 @@ Module path: `VSS/WebApi/Contracts`
 
 * `isPreview`: boolean. Is the public API version in preview
 
-* `resourceVersion`: number. Internal resource version. This is defined per-resource and is used to support build-to-build compatibility of API changes within a given (in-preview) public api version. For example, within the TFS 1.0 API release cycle, while it is still in preview, a resource&#x27;s data structure may be changed. This resource can be versioned such that older clients will still work (requests will be sent to the older version) and new/upgraded clients will talk to the new version of the resource.
+* `resourceVersion`: number. Internal resource version. This is defined per-resource and is used to support build-to-build compatibility of API changes within a given (in-preview) public api version. For example, within the TFS 1.0 API release cycle, while it is still in preview, a resource&#x27;s data structure may be changed. This resource can be versioned such that older clients still work (requests are sent to the older version) and new or upgraded clients talk to the new version of the resource.
 

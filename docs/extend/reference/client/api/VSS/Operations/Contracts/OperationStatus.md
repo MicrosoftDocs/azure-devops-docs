@@ -17,7 +17,7 @@ Module path: `VSS/Operations/Contracts`
 
 ### Values
 
-* `NotSet` The operation object does not have the status set.
+* `NotSet` The operation object doesn't have the status set.
 
 * `Queued` The operation has been queued.
 

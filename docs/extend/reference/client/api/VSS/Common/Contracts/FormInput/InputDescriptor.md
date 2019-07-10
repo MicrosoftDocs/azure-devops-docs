@@ -23,7 +23,7 @@ Module path: `VSS/Common/Contracts/FormInput`
 
 * `description`: string. Description of what this input is used for
 
-* `groupName`: string. The group localized name to which this input belongs and can be shown as a header for the container that will include all the inputs in the group.
+* `groupName`: string. The group localized name to which this input belongs and can be shown as a header for the container that  includes all the inputs in the group.
 
 * `hasDynamicValueInformation`: boolean. If true, the value information for this input is dynamic and should be fetched when the value of dependency inputs change.
 

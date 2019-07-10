@@ -37,7 +37,7 @@ Here is an example of a contribution type declaration in an extension manifest:
         {
             "id": "hub",
             "name": "Web Access Hub",
-            "description": "A hub that will appear in the hubs menu at the top of web pages.",
+            "description": "A hub that appears in the hubs menu at the top of web pages.",
             "properties": {
                 "name": {
                     "description": "The text to display for the hub",

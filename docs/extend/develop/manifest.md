@@ -66,7 +66,7 @@ Or simply:
 }            
 ```
 
-See [Package/Publish/Install](../publish/overview.md) for additional details.
+For more information, see [Package/Publish/Install](../publish/overview.md).
 
 #### Mark an extension to be in preview
 
@@ -81,7 +81,7 @@ If your extension is ready for users on the Marketplace to try, but you are stil
 ```
 #### Mark an extension as paid preview
 
-If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free cannot be marked paid later.
+If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free can't be marked paid later.
 
 ```json
 {
@@ -107,7 +107,7 @@ If you want to sell your extension on the Marketplace, you can mark it with the 
 }            
 ```
 
-Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension provides the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
 
 ```json
 {
@@ -122,7 +122,7 @@ Both the `Paid` flag and `__BYOLENFORCED` tag need to be present to mark an exte
 }          
 ```
 
-You will also need to add a new section in your extension manifest to override paid licensing. In the future, we will remove the paid licensing check and this override will no longer be required, but for now you will need it to ensure your extension is displayed as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+You also need to add a new section in your extension manifest to override paid licensing. In the future, we'll remove the paid licensing check and this override is no longer required, but for now you need it to ensure your extension is displayed as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
 ```json
 "licensing": {
 
@@ -144,7 +144,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
-> If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we will provide you with suitable steps.
+> If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
 
 ### Example of additional properties
 
@@ -169,7 +169,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
 
 **Default experience** (No changes to manifest are required)
-- For extension with GitHub repository, Marketplace will redirect users in the Q&A section to the associated GitHub issues. 
+- For extension with GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues. 
 - For extension without GitHub repository, Marketplace Q&A is enabled. 
 
 For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
@@ -225,7 +225,7 @@ Properties for the CustomerQnASupport section:
 
 ## Scopes
 
-Your extension can specify one or more scopes. Scopes control what resources can be accessed by your extension and what operations your extension is allowed to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension (see [Auth and security](auth.md) for more information).
+Your extension can specify one or more scopes. Scopes control what resources can be accessed by your extension and what operations your extension is allowed to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension. For more information, see [Auth and security](auth.md).
 
 If no scopes are specified, extensions are only provided access to user profile and extension data.
 
@@ -235,7 +235,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Changing a published extension's scopes
 
-The scopes of an extension can be changed after publishing. Customers that previously installed your extension (and authorized the previous set of scopes) will remain on the previous version of the extension and will need to authorize the new scopes before being upgraded to the newest version.
+The scopes of an extension can be changed after publishing. Customers that previously installed your extension (and authorized the previous set of scopes) remain on the previous version of the extension and need to authorize the new scopes before being upgraded to the newest version.
 
 The **Action Required** section of the Extension settings hub shows a user which, if any, installed extensions require authorization:
 
@@ -262,6 +262,8 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
+
+For more information, see [Azure DevOps Services extensibility points](../reference/targets/overview.md).
 
 ### Examples
 
@@ -529,9 +531,10 @@ Each contribution entry has the following properties:
 * **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
 * **properties** - (Optional) An object that includes properties for the contribution as defined in the contribution type.
 
-See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
+For more information, see the [contribution model overview](contributions-overview.md).
 
 <a name="contributionTypes"></a>
+
 ### Contribution types
 
 Each contribution entry has the following properties:
@@ -547,9 +550,10 @@ Property descriptions have the following properties:
 * **required** - (Optional) A boolean value which if true indicates that the property is required for all contributions of this type.
 * **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
 
-See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
+For more information, see the [contribution model overview](contributions-overview.md).
 
 <a name="contributionIds"></a>
+
 ### Referencing contributions and types
 
 Contributions and contribution types are referenced by their identifiers. Contributions reference types through the `type` property, and reference other
@@ -564,10 +568,11 @@ type within that same extension. In this case, the publisher and extension ident
 by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned above as a shortcut for "ms.vss-web.hub".
 
 <a name="contributionTargets"></a>
+
 ### Targeting contributions
 
 Some contributions act as containers that can be targeted by other contributions. A Hub Group and a Menu are examples of this. Hub contributions
-can target Hub Groups. When a page is rendered, the web UI will show all Hub contributions that target the selected hub group. Hub groups themselves target a hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
+can target Hub Groups. When a page is rendered, the web UI shows all Hub contributions that target the selected hub group. Hub groups themselves target a hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
 
 Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these

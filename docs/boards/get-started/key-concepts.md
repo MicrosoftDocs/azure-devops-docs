@@ -33,9 +33,9 @@ The goal of Agile engineering best processes is to rapidly deliver high-quality 
 
 This suite of web-based tools is used to track work and support Agile methodologies. Agile tools support Scrum and Kanban, the core Agile methods that are used by software development teams today. To learn more, see [What is Azure Boards?](what-is-azure-boards.md).
 
---> 
+-->
 
-[!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
+[!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)]
 
 <!---
 

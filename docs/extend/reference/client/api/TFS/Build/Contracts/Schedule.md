@@ -22,7 +22,7 @@ Module path: `TFS/Build/Contracts`
 
 * `daysToBuild`: [ScheduleDays](./ScheduleDays.md). Days for a build (flags enum for days of the week)
 
-* `scheduleJobId`: string. The Job ID of the Scheduled job that will queue the scheduled build. Since a single trigger can have multiple schedules and we want a single job to process a single schedule (since each schedule has a list of branches to build), the schedule itself needs to define the Job Id. This value will be filled in when a definition is added or updated.  The UI does not provide it or use it.
+* `scheduleJobId`: string. The Job ID of the Scheduled job that queues the scheduled build. Since a single trigger can have multiple schedules and we want a single job to process a single schedule (since each schedule has a list of branches to build), the schedule itself needs to define the Job Id. This value is filled in when a definition is added or updated.  The UI doesn't provide it or use it.
 
 * `startHours`: number. Local timezone hour to start
 
