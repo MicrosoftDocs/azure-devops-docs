@@ -97,7 +97,9 @@ Example: To create an application Site/Application enter /Application. The paren
 <tr><td>Password</td><td>(Optional) Provide the password for custom account. <br/>The best practice is to create a variable in the Build or Release pipeline, and mark it as 'Secret' to secure it, and then use it here, like '$(userCredentials)'. <br> Note: Special characters in password are interpreted as per <a href="https://go.microsoft.com/fwlink/?linkid=843470">command-line arguments</a></td></tr>
 <tr><td>Application pool name</td><td>(Required) Provide the name of the IIS application pool.</td></tr>
 <tr><td>Additional appcmd.exe commands</td><td>(Optional) Enter additional AppCmd.exe commands. For more than one command use a line separator, like <br/> list apppools <br/> list sites<br/> recycle apppool /apppool.name:ExampleAppPoolName</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

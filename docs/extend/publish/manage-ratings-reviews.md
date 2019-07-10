@@ -15,11 +15,11 @@ ms.date: 10/24/2017
 # Respond to Marketplace extension reviews
 
 As a publisher, you can respond to reviews that customers leave for your extensions in the Visual Studio Marketplace. If you have owner, creator, or 
-contributor permissions as the publisher, you can find and click **Reply** next to a review.
+contributor permissions as the publisher, you can find and select **Reply** next to a review.
 
-<img alt="To respond to a review, click Reply" src="../../marketplace/_img/rating-and-review/review-reply1.png" align="middle"/><br>
+<img alt="To respond to a review,selectReply" src="../../marketplace/_img/rating-and-review/review-reply1.png" align="middle"/><br>
 
-Your response will show up under the review. 
+Your response shows up under the review. 
 
 <img alt="Reply details" src="../../marketplace/_img/rating-and-review/review-reply2.png" align="middle"/><br>
 
@@ -43,4 +43,4 @@ resolve the problem, please update your reply with the resolution. You can edit 
 
 ## Publisher request to void a review
 
-As a publisher, you can appeal to void a review if the issue reported is due to the Marketplace or the underlying platform. If the issue is valid, Marketplace admins will void the rating. You can **Appeal** from ratings and review section on your extension hub page.  
+As a publisher, you can appeal to void a review if the issue reported is due to the Marketplace or the underlying platform. If the issue is valid, Marketplace admins void the rating. You can **Appeal** from ratings and review section on your extension hub page.  

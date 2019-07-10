@@ -224,7 +224,11 @@ read wiki pages. </td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 -->
 

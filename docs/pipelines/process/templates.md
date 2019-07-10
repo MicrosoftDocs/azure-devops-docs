@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 06/04/2019
+ms.date: 07/09/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -163,6 +163,29 @@ steps:
 > For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
+
+Parameters are not limited to scalar strings.
+As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
+Likewise, sequences can be passed where sequences are expected.
+For example:
+
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: process.yml
+  parameters:
+    pool:   # this parameter is called `pool`
+      vmImage: ubuntu-latest  # and it's a mapping rather than a string
+
+
+# process.yml
+parameters:
+  pool: {}
+
+jobs:
+- job: build
+  pool: ${{ parameters.pool }}
+```
 
 ## Using other repositories
 

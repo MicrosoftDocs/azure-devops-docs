@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
 
-The work item form service allows you to interact with the currently active work item form. You can use the service to get or update the work item data that is currently displayed in the work item form UI from your extension. Service functions Will throw an error when there is no open work item.
+The work item form service allows you to interact with the currently active work item form. You can use the service to get or update the work item data that is currently displayed in the work item form UI from your extension. Service functions throw an error when there is no open work item.
 
 See [Work Item Tracking REST APIs](../RestClient/WorkItemTrackingHttpClient2_2.md), if you want to interact with work items that are not in view.
 
@@ -372,7 +372,7 @@ Saves the work item.
 <a name="method_refresh"></a>
 ### refresh()
 
-Refresh the workitem. Will prompt user for confirmation if the work item is dirty.
+Refresh the workitem. Prompts user for confirmation if the work item is dirty.
 
 #### Syntax
 <pre class='syntax'>

@@ -32,7 +32,9 @@ Use this task in a build or release pipeline to decrypt files using OpenSSL.
 <tr><td>Passphrase</td><td>(Required) Passphrase to use for decryption. **Use a Variable to encrypt the passphrase.**</td></tr>
 <tr><td>Decrypted file path</td><td>(Optional) Optional filename for decrypted file. Defaults to the Encrypted File with a ".out" extension</td></tr>
 <tr><td>Working directory</td><td>(Optional) Working directory for decryption. Defaults to the root of the repository.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

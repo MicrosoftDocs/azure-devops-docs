@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2013'
 **Azure Pipelines | TFS 2018 | TFS 2017 | XAML builds**
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013.
@@ -63,7 +65,8 @@ Here are the steps to migrate from XAML builds to newer builds:
 If you're building a standard .NET app, you're probably using one of the out-of-the-box build templates such as TfvcTemplate.12.xaml or GitTemplate.12.xaml. In this case, it will probably just take you a few clicks to create build pipelines in the new build system.
 
 <ol>
-    [!INCLUDE [include](../_shared/begin-create-build-definition.md)]
+
+[!INCLUDE [include](../_shared/begin-create-build-definition.md)]
 
 <li>Select a template to add commonly used tasks to your build pipeline.</li>
 

@@ -37,7 +37,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
         navigationService.onHashChanged(function (hash) {
-        	// Adding #something to the end of browser url will execute this handler with the hash value "something"
+        	// Adding #something to the end of browser url executes this handler with the hash value "something"
             console.log("Hash changed to : " + hash);                        
         });
     });

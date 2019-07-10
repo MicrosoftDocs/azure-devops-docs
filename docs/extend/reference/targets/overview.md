@@ -27,7 +27,7 @@ The [Contributions Guide extension](https://marketplace.visualstudio.com/items/m
 <a name="hubs"></a>
 ## Hubs and hub groups
 
-Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions will contribute to the project level.
+Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions contribute to the project level.
 
 Extensions can contribute both hubs and hub groups. A common extensibility scenario is to contribute a hub to an existing hub group. For example:
 

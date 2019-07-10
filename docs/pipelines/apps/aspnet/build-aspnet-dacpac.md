@@ -35,9 +35,10 @@ For the instructions in this topic, you need a SQL server database project in Vi
 ### Create the build pipeline
 
 <ol>
-    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
-    <li>Select the **.NET Desktop** template.</li>
+[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+
+<li>Select the **.NET Desktop** template.</li>
 
     <li>As the repository source, select the project, repository, and branch.</li>
 </ol>

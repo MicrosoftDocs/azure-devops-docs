@@ -64,7 +64,9 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../bu
 <td>Fail on standard error</td>
 <td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example
@@ -88,7 +90,11 @@ On the Build tab of a build pipeline, add this task:
 
 <table>
    <tr>
-      <td>![](_img/batch-script.png)<br/>**Utility: Batch Script**</td>
+      <td>
+
+![](_img/batch-script.png)
+
+<br/>**Utility: Batch Script**</td>
       
 <td>
 <p>Run test.bat.</p>

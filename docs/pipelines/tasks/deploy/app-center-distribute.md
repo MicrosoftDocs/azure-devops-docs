@@ -18,6 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
+For details about using this task, see the App Center documentation topic [Deploy Azure DevOps Builds with App Center](https://docs.microsoft.com/en-us/appcenter/distribution/vsts-deploy).
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -31,24 +32,26 @@ Use this task in a build or release pipeline to distribute app builds to testers
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>App Center service connection</td><td>(Required) Select the service connection for App Center. To create one, click the Manage link and create a new service connection.</td></tr>
+<tr><td>App Center service connection</td><td>(Required) Select the service connection for App Center. Create a new App Center service connection in Azure DevOps project settings.</td></tr>
 <tr><td>App slug</td><td>(Required) The app slug is in the format of **{username}/{app_identifier}**.  To locate **{username}** and **{app_identifier}** for an app, click on its name from https://appcenter.ms/apps, and the resulting URL is in the format of [https://appcenter.ms/users/<b>{username}</b>/apps/<b>{app_identifier}</b>](https://appcenter.ms/users/{username}/apps/{app_identifier}). If you are using orgs, the app slug is of the format **{orgname}/{app_identifier}**.</td></tr>
 <tr><td>Binary file path</td><td>(Required) Relative path from the repo root to the APK or IPA file you want to publish</td></tr>
-<tr><td>Symbols type</td><td>(Optional)</td></tr>
+<tr><td>Symbols type</td><td>(Optional) Include symbol files to receive symbolicated stack traces in App Center Diagnostics. Options: `Android`, `Apple`.</td></tr>
 <tr><td>Symbols path</td><td>(Optional) Relative path from the repo root to the symbols folder.</td></tr>
 <tr><td>Symbols path (*.pdb)</td><td>(Optional) Relative path from the repo root to PDB symbols files. Path may contain wildcards.</td></tr>
 <tr><td>dSYM path</td><td>(Optional) Relative path from the repo root to dSYM folder. Path may contain wildcards.</td></tr>
 <tr><td>Mapping file</td><td>(Optional) Relative path from the repo root to Android's mapping.txt file.</td></tr>
 <tr><td>Include all items in parent folder</td><td>(Optional) Upload the selected symbols file or folder and all other items inside the same parent folder. This is required for React Native apps.</td></tr>
-<tr><td>Create release notes</td><td>(Required)</td></tr>
+<tr><td>Create release notes</td><td>(Required) Release notes will be attached to the release and shown to testers on the installation page. Options: `input`, `file`.</td></tr>
 <tr><td>Release notes</td><td>(Required) Release notes for this version.</td></tr>
 <tr><td>Release notes file</td><td>(Required) Select a UTF-8 encoded text file which contains the Release Notes for this version.</td></tr>
-<tr><td>Require users to update to this release</td><td>(Optional)</td></tr>
-<tr><td>Release destination</td><td>(Required)</td></tr>
+<tr><td>Require users to update to this release</td><td>(Optional) App Center Distribute SDK required to mandate update. Testers will automatically be prompted to update.</td></tr>
+<tr><td>Release destination</td><td>(Required) Each release will be distributed to either groups or a store. Options: `groups`, `store`.</td></tr>
 <tr><td>Destination IDs</td><td>(Optional) IDs of the distribution groups to release to. Leave it empty to use the default group and use commas or semicolons to separate multiple IDs.</td></tr>
 <tr><td>Destination ID</td><td>(Required) ID of the distribution store to deploy to.</td></tr>
-<tr><td>Do not notify testers. Release will still be available to install.</td><td>(Optional)</td></tr>
+<tr><td>Do not notify testers. Release will still be available to install.</td><td>(Optional) Testers will not receive an email for new releases.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example
@@ -88,8 +91,10 @@ steps:
       artifactName: 'outputs'
       artifactType: 'container'
 
+  # Run tests using the App Center CLI
   - script: appcenter test run espresso --app "{APP_CENTER_SLUG}" --devices "{DEVICE}" --app-path {APP_FILE} --test-series "master" --locale "en_US" --build-dir {PAT_ESPRESSO} --debug
 
+  # Distribute the app
   - task: AppCenterDistribute@3
     inputs:
       serverEndpoint: 'AppCenter'
@@ -97,7 +102,7 @@ steps:
       appFile: '{APP_FILE}' # Relative path from the repo root to the APK or IPA file you want to publish
       symbolsOption: 'Android'
       releaseNotesOption: 'input'
-      releaseNotesInput: 'Release notes for this version.'
+      releaseNotesInput: 'Here are the release notes for this version.'
       destinationType: 'groups'
 ```
 

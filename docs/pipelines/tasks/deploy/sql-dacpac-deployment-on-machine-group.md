@@ -44,7 +44,9 @@ Use this task in a build or release pipeline to deploy to SQL Server Database us
 <tr><td>Publish Profile</td><td>(Optional) Publish profile provide fine-grained control over SQL Server database deployments. Specify the path to the Publish profile XML file on the target machine or on a UNC share that is accessible by the machine administrator's credentials.</td></tr>
 <tr><td>Additional Arguments</td><td>(Optional) Additional SqlPackage.exe arguments that will be applied when deploying the SQL Server database like, /p:IgnoreAnsiNulls=True /p:IgnoreComments=True. These arguments will override the settings in the Publish profile XML file (if provided).</td></tr>
 <tr><td>Additional Arguments</td><td>(Optional) Additional Invoke-Sqlcmd arguments that will be applied when deploying the SQL Server database.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

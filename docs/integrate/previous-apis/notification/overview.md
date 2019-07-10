@@ -19,7 +19,9 @@ ms.date: 03/13/2017
 
 <!-- title end -->
 <!-- version begin -->
+
 [!INCLUDE [API_version](../_data/version3-2-preview.md)]
+
 <!-- version end -->
 
 Notifications help teams stay informed about activity in their Team Services projects. With notifications, users and teams are notified when changes occur to work items, code reviews, pull requests, source control files, and builds. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. The primary delivery channel for notifications today is email. [Learn more](https://aka.ms/vstsmanagenotifications) about notifications.

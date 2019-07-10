@@ -43,7 +43,9 @@ Use this task in a build or release pipeline to build a machine image using Pack
 <tr><td>Additional Builder parameters</td><td>(Optional) In auto generated Packer template mode the task creates a Packer template with an Azure builder. This builder is used to generate a machine image. You can add keys to the Azure builder to customize the generated Packer template. For example setting ssh_tty=true in case you are using a CentOS base image and you need to have a tty to run sudo.<br/>To view/edit the additional parameters in a grid, click on “…” next to text box.</td></tr>
 <tr><td>Skip temporary file cleanup during deprovision</td><td>(Optional) During deprovisioning of VM, skip clean-up of temporary files uploaded to VM. Refer [here](https://www.packer.io/docs/builders/azure.html#skip_clean)</td></tr>
 <tr><td>Image URL</td><td>(Optional) Provide a name for the output variable which will store generated machine image url.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source
