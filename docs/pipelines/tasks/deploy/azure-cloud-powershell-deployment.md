@@ -43,7 +43,9 @@ Use this task in a build or release pipeline to deploy an Azure Cloud Service.
 <tr><td>Custom certificates to import</td><td>(Optional) Provide custom certificates in CertificatePfxBase64:CertificatePassword format. It’s recommended to save <certificate_password> as a secret variable. <br/><br/>For example,<br/> Certificate1: &lt;Certificate1_password&gt;<br/>Certificate2: &lt;Certificate2_password&gt;</td></tr>
 <tr><td>Additional arguments</td><td>(Optional) Pass in additional arguments while creating a brand new service. These will be passed on to `New-AzureService` cmdlet. Eg: `-Label 'MyTestService'`</td></tr>
 <tr><td>Affinity group</td><td>(Optional) While creating new service, this affinity group will be considered instead of using service location.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

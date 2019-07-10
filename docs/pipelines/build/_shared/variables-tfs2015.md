@@ -176,7 +176,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>Build.Repository.LocalPath</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 <p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
@@ -265,7 +267,9 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <tr>
 <td>Build.SourcesDirectory</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 <p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
 </tr>
@@ -367,7 +371,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>System.DefaultWorkingDirectory</td>
 <td>
+
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+
 </td>
 </tr>
 

@@ -17,6 +17,6 @@ Module path: `TFS/Build/Contracts`
 
 ### Values
 
-* `Unavailable` Indicates that the build controller cannot be contacted.
+* `Unavailable` Indicates that the build controller can't be contacted.
 * `Available` Indicates that the build controller is currently available.
 * `Offline` Indicates that the build controller has taken itself offline.

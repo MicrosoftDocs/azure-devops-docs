@@ -31,7 +31,9 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>SSH Public Key</td><td>(Required) The contents of the public SSH key.</td></tr>
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
 <tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to `Secure Files` to install on the agent.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example setup using GitHub

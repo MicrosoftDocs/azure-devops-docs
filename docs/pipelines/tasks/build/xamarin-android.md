@@ -96,7 +96,9 @@ Pick the JDK to be used during the build by selecting a JDK version that will be
 Select x86 or x64.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

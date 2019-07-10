@@ -40,14 +40,14 @@ and an action on the queries context menu to launch your hub.
 ## Create a hub
 
 Use a hub to surface your web app in an iframe in Azure DevOps Services.
-The one we're creating here will show up in the project's **Work** hub group.
+The one we're creating here show ups in the project's **Work** hub group.
 
 ![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
 
-Start by creating the web app with the page that will be your hub.
+Start by creating the web app with the page that is your hub.
 
 [!INCLUDE [Webapp](../_shared/procedures/create-hub-app-asp4.md)]
 
@@ -280,7 +280,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 
 	![Query results in the hello hub](../_shared/procedures/_img/create-action/my-work-items.png)
 
-	Now when you use your action, the results of the selected query will be displayed in your hub.
+	Now when you use your action, the results of the selected query is displayed in your hub.
 
 <a id="deploy"></a>
 ## Deploy your extension to Microsoft Azure

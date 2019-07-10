@@ -47,7 +47,9 @@ Use this task in a build or release pipeline to download artifacts produced by a
 <tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager storage accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
 <tr><td>Container Name</td><td>(Required) Name of the container in the storage account to which artifacts are uploaded.</td></tr>
 <tr><td>Common Virtual Path</td><td>(Optional) Path to the artifacts inside the Azure storage container.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

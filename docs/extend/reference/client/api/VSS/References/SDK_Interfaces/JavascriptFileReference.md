@@ -22,7 +22,7 @@ Reference to a javascript file to include on a page
 
 ### Members
 
-* `fallbackCondition`: string. Condition to check in the case that Url lives on a CDN. The fallback script will be included if this check fails.
+* `fallbackCondition`: string. Condition to check in the case that Url lives on a CDN. The fallback script is included if this check fails.
 
 * `fallbackUrl`: string. Fallback url to use in case Url lives on a CDN
 

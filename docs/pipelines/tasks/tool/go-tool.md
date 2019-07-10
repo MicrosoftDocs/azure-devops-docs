@@ -31,7 +31,9 @@ tools cache and add it to the PATH. Use the task to change the version of Go Lan
 <tr><td>Version</td><td>(Required) Go tool version to download and install. Example: 1.9.3</td></tr>
 <tr><td>GOPATH</td><td>(Optional) Value for the GOPATH environment variable.</td></tr>
 <tr><td>GOBIN</td><td>(Optional) Value for the GOBIN environment variable.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

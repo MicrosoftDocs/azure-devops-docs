@@ -42,7 +42,9 @@ Xamarin.iOS
 <tr><td>Build tool path</td><td>(Optional) Optionally supply the full path to MSBuild (the Visual Studio for Mac build tool). When empty, the default MSBuild path is used.</td></tr>
 <tr><td>Signing identity</td><td>(Optional) Optionally override the signing identity that will be used to sign the build. If nothing is entered, the setting in the project will be used.</td></tr>
 <tr><td>Provisioning profile UUID</td><td>(Optional) Optional UUID of an installed provisioning profile to be used for this build.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

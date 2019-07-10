@@ -28,7 +28,7 @@ Class which manages showing dialogs in the parent frame
 <a id="opendialog"></a>
 ### openDialog()
 
-Open a modal dialog in the host frame which will get its content from a contributed control.
+Open a modal dialog in the host frame which gets its content from a contributed control.
 
 #### Syntax
 <pre class='syntax'>
@@ -40,16 +40,17 @@ Open a modal dialog in the host frame which will get its content from a contribu
 * `contributionId`: string. The ID of the control contribution to host in the dialog
 * `dialogOptions`: [IHostDialogOptions](../../../../VSS/References/VSS_SDK_Interfaces/IHostDialogOptions.md). options.title - title of dialog
 * `contributionConfig`: Object. Optional. Initial configuration to pass to the contribution control.
-* `postContent`: Object. Optional. Optional data to post to the contribution endpoint. If not specified, a GET request will be performed.
+* `postContent`: Object. Optional. Optional data to post to the contribution endpoint. If not specified, a GET request is performed.
 
 #### Returns
 
 * [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[IExternalDialog](../../../../VSS/References/VSS_SDK_Interfaces/IExternalDialog.md)&gt;
 
 <a id="openmessagedialog"></a>
+
 ### openMessageDialog()
 
-Open a modal dialog in the host frame which will display the supplied message.
+Open a modal dialog in the host frame, which displays the supplied message.
 
 #### Syntax
 <pre class='syntax'>

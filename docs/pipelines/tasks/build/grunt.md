@@ -61,7 +61,9 @@ The build agent must have the following capability:
 <td>Working directory</td>
 <td>Current working directory when the script is run.  If you leave it blank, the working directory is the folder where the script is located.</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

@@ -64,7 +64,9 @@ gulp
 <td>gulp.js location</td>
 <td>gulp.js to run.  The default value is `node_modules/gulp/bin/gulp.js`</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example
@@ -75,7 +77,11 @@ On the [Build](../../index.md) tab:
 
 <table>
 <tr>
-<td>![Package: npm](../package/_img/npm.png)<br/>[Package: npm](../package/npm.md)</td>
+<td>
+
+![Package: npm](../package/_img/npm.png)
+
+<br/>[Package: npm](../package/npm.md)</td>
 <td>
 <p>Install npm.</p>
 <ul>
@@ -84,7 +90,11 @@ On the [Build](../../index.md) tab:
 </td>
 </tr>
 <tr>
-<td>![Build: gulp](_img/gulp.png)<br/>[Build: gulp](gulp.md)</td>
+<td>
+
+![Build: gulp](_img/gulp.png)
+
+<br/>[Build: gulp](gulp.md)</td>
 <td>
 <p>Run your script.</p>
 <ul>

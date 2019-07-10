@@ -39,6 +39,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 ## Create the pipeline
 
 <ol>
+
 [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
 
 <li>Click Empty to start with an empty pipeline.</li>
@@ -107,7 +108,6 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](_shared/java-web-app-sample-qa.md)]
-
 
 <a name="azure_site_ftp"></a>
 ### I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure Web App?

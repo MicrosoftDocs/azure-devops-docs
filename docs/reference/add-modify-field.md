@@ -329,7 +329,7 @@ Other related topics or resources:
   
 To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
-<a id="field-reference"></a>  
+<a id="field-reference"></a>
 
 [!INCLUDE [temp](../_shared/field-reference.md)]
 
