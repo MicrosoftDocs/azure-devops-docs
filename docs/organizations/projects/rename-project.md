@@ -29,7 +29,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open the project that you want to delete.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open the project that you want to rename.
 
 2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
 

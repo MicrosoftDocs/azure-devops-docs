@@ -30,7 +30,9 @@ Use this task in a build or release pipeline to run scripts with Knife commands 
 <tr><td>Chef Subscription</td><td>(Required) Chef subscription to configure before running knife commands</td></tr>
 <tr><td>Script Path</td><td>(Required) Path of the script. Should be fully qualified path or relative to the default working directory.</td></tr>
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to Script.  Can be either ordinal or named parameters.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

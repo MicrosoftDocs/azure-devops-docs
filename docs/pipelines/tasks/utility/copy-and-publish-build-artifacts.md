@@ -80,7 +80,9 @@ None
 <p>Choose **server** to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).</p>
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Q & A

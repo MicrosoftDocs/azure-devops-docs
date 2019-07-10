@@ -60,7 +60,9 @@ The build agent must have the following capability:
 <tr><td>Run Checkstyle</td><td>(Optional) Run the Checkstyle tool with the default Sun checks. Results are uploaded as build artifacts.</td></tr>
 <tr><td>Run PMD</td><td>(Optional) Use the PMD static analysis tool to look for bugs in the code. Results are uploaded as build artifacts.</td></tr>
 <tr><td>Run FindBugs</td><td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

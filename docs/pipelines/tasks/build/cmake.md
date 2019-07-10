@@ -53,7 +53,9 @@ cmake
 Arguments that you want to pass to CMake.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

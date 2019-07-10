@@ -76,7 +76,7 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item                                        |                   
+| title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
 | registeredObjectId | Id of the object registered for the panel                                             |    

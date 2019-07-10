@@ -16,7 +16,7 @@ ms.date: 10/10/2017
 
 # Add extensions in work item form via work item type definition xml
 
-A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walkthrough, you will add the page, group and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we will add the control to the Agile "User Story" work item type.
+A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walk through, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we add the control to the Agile "User Story" work item type.
 
 **Step 1:**  Install work item form extensions in TFS.
 
@@ -27,7 +27,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 ```
 
 <br>
-<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the Weblayout Section a comment blob will be present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions will be listed with their ids and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
+<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the Weblayout Section a comment blob is present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions are listed with their ids and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
 
 ```xml
         <!--**********************************Work Item Extensions***************************
@@ -102,7 +102,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 > Note that a page contribution and a group contribution can not take any other layout elements inside them. 
 
 #### Add control contribution
-Unlike **page** and **group** contributions, specifying the extensions in the xml does not automatically place **control** contributions. 
+Unlike **page** and **group** contributions, specifying the extensions in the xml doesn't automatically place **control** contributions. 
 To add these contributions in the form, you have to add them with a contribution tag inside the form. The example below adds the "ControlContribution" to the "Planning" group.
 
 Note that if a control contribution has any required input defined, users must give a value for that input. For any non-required input, users can opt to either set or not set a value to the input. In the example below, the values of "FieldName" and "Colors" inputs are set:

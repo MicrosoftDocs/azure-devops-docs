@@ -48,7 +48,9 @@ Use this task in a build or release pipeline to deploy to Azure SQL DB using a D
 <tr><td>Start IP Address</td><td>(Required) The starting IP Address of the automation agent machine pool like 196.21.30.50.</td></tr>
 <tr><td>End IP Address</td><td>(Required) The ending IP Address of the automation agent machine pool like 196.21.30.65.</td></tr>
 <tr><td>Delete Rule After Task Ends</td><td>(Optional) If selected, then after the task ends, the IP Addresses specified here are deleted from the 'Allowed IP Addresses' list of the Azure SQL Server's Firewall.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

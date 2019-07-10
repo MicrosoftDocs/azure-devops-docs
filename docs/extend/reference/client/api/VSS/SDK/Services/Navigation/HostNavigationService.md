@@ -199,7 +199,7 @@ Update the host document&#x27;s title (appears as the browser tab title).
 <a  name="method_openNewWindow"></a>
 ### openNewWindow()
   
-opens a new browser window. The target will always be _blank.
+opens a new browser window. The target is always _blank.
   
 #### Syntax
 <pre  class='syntax'>

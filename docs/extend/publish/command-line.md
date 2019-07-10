@@ -21,7 +21,7 @@ See the overview of [publish, install, and share](./overview.md) for additional 
 ## Before you begin
 
 Before you begin, you need to get the TFX CLI from Node Package Manager and generate a personal access token. 
-Also, if you have not done so, you will need to set up a Publisher in the Gallery.
+Also, if you have not done so, you need to set up a Publisher in the Gallery.
 
 ### Acquire the TFS Cross Platform Command Line Interface
 
@@ -52,7 +52,7 @@ Failed Request: Internal Server Error(500) - Version number must increase each t
 ```
 
 You can add the `--rev-version` command line option to automatically increment the *patch* version of your extension. 
-Note that this will also save the new version to your manifest.
+Note that this also saves the new version to your manifest.
 
 
 #### Example

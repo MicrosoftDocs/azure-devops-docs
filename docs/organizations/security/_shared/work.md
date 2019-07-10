@@ -15,11 +15,31 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 
@@ -177,11 +197,31 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 

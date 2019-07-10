@@ -158,7 +158,7 @@ Returns a promise for creating a document in the provided collection
 ### setDocument()
 
 Returns a promise for setting a document in the provided collection
-Creates the document if it does not exist, otherwise updates the existing document with the ID provided
+Creates the document if it doesn't exist, otherwise updates the existing document with the ID provided
 
 #### Syntax
 <pre class='syntax'>
@@ -246,7 +246,7 @@ Returns a promise for querying a set of collections
 
 #### Parameters
 
-* `collections`: ExtensionManagement_Contracts.ExtensionDataCollection[]. The list of collections to query. Each collection will contain its collectionName, scopeType, and scopeValue
+* `collections`: ExtensionManagement_Contracts.ExtensionDataCollection[]. The list of collections to query. Each collection contains its collectionName, scopeType, and scopeValue
 
 #### Returns
 

@@ -27,5 +27,5 @@ Interface for options that can be supplied with document actions
 * `scopeValue`: string. Optional. The value of the scope where the document is stored. Can be Current or Me.
 
 * `defaultValue`: any. Optional. The default value to return when using getValue(). If the document has no value,
-this value will be used instead.
+this value is used instead.
 
