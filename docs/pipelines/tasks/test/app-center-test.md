@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 07/10/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,7 +17,8 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to test app packages with Visual Studio App Center.
+This task lets you run test suites against an application binary (`.apk` or `.ipa` file) using App Center Test.
+For details about using this task, see the App Center documentation topic [Using Azure DevOps for UI Testing](https://docs.microsoft.com/en-us/appcenter/test-cloud/vsts-plugin).
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -31,45 +32,64 @@ Use this task in a build or release pipeline to test app packages with Visual St
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Binary application file path</td><td>(Required) Relative path from the repo root to the APK or IPA file you want to test.</td></tr>
+<tr><td>Binary application file path</td><td>(Required) Relative path from the repo root to the APK or IPA file that you want to test.</td></tr>
 <tr><td>Artifacts directory</td><td>(Required) Where to place the artifacts produced by the prepare step and used by the run step. This directory will be created if it does not exist.</td></tr>
-<tr><td>Prepare tests</td><td>(Optional) undefined</td></tr>
-<tr><td>Test framework</td><td>(Required) undefined</td></tr>
-<tr><td>Build directory</td><td>(Required) Path to directory with Appium tests.</td></tr>
-<tr><td>Build directory</td><td>(Optional) Path to Espresso output directory.</td></tr>
-<tr><td>Test APK path</td><td>(Optional) Path to APK file with Espresso tests. If not set, build-dir is used to discover it. Wildcard is allowed.</td></tr>
-<tr><td>Project directory</td><td>(Required) Path to Calabash workspace directory.</td></tr>
-<tr><td>Cucumber config file</td><td>(Optional) Path to Cucumber configuration file, usually cucumber.yml.</td></tr>
-<tr><td>Profile to run</td><td>(Optional) Profile to run.  This value must exists in the Cucumber configuration file.</td></tr>
-<tr><td>Skip Configuration Check</td><td>(Optional) Force running without Cucumber profile.</td></tr>
-<tr><td>Build directory</td><td>(Required) Path to directory with built test assemblies.</td></tr>
-<tr><td>Store file</td><td>(Optional) undefined</td></tr>
-<tr><td>Store password</td><td>(Optional) undefined</td></tr>
-<tr><td>Key alias</td><td>(Optional) undefined</td></tr>
-<tr><td>Key password</td><td>(Optional) undefined</td></tr>
-<tr><td>Test tools directory</td><td>(Optional) Path to directory with Xamarin UI test tools that contains test-cloud.exe.</td></tr>
-<tr><td>Signing information</td><td>(Optional) Use Signing Information for signing the test server.</td></tr>
-<tr><td>Build directory</td><td>(Optional) Path to the build output directory (usually $(ProjectDir)/Build/Products/Debug-iphoneos).</td></tr>
-<tr><td>Test IPA path</td><td>(Optional) Path to the *.ipa file with the XCUITest tests.</td></tr>
-<tr><td>Additional options</td><td>(Optional) Additional arguments passed to the App Center test prepare step.</td></tr>
-<tr><td>Run tests</td><td>(Optional) undefined</td></tr>
-<tr><td>Authentication method</td><td>(Required) Use App Center service connection or enter credentials to connect to Visual Studio App Center.</td></tr>
-<tr><td>App Center connection</td><td>(Required) Select the service connection for your Visual Studio App Center connection. To create one, click the Manage link and create a new service connection.</td></tr>
-<tr><td>App Center username</td><td>(Required) Visit https://appcenter.ms/settings/profile to get your username.</td></tr>
-<tr><td>App Center password</td><td>(Required) Visit https://appcenter.ms/settings/profile to set your password. It can accept variable defined in Build/Release pipelines as '$(passwordVariable)'. You may mark variable type as 'secret' to secure it.</td></tr>
-<tr><td>App slug</td><td>(Required) The app slug is in the format of {username}/{app_identifier}.  To locate {username} and {app_identifier} for an app, click on its name from https://appcenter.ms/apps, and the resulting url is in the format of https://appcenter.ms/users/{username}/apps/{app_identifier}.</td></tr>
+<tr><td>Prepare tests</td><td>(Optional) Specify whether to prepare tests. The default is `true`.</td></tr>
+<tr><td>Test framework</td><td>(Required) Options: `appium`, `calabash`, `espresso`, `uitest` (Xamarin UI Test), `xcuitest`</td></tr>
+<tr><td>Build directory (Appium)</td><td>(Required) Path to directory with Appium tests.</td></tr>
+<tr><td>Project directory (Calabash)</td><td>(Required) Path to Calabash workspace directory.</td></tr>
+<tr><td>Cucumber config file (Calabash)</td><td>(Optional) Path to Cucumber configuration file, usually cucumber.yml.</td></tr>
+<tr><td>Profile to run (Calabash)</td><td>(Optional) Profile to run.  This value must exists in the Cucumber configuration file.</td></tr>
+<tr><td>Skip Configuration Check (Calabash)</td><td>(Optional) Force running without Cucumber profile.</td></tr>
+<tr><td>Signing information (Calabash)</td><td>(Optional) Use Signing Information for signing the test server.</td></tr>
+<tr><td>Build directory (Espresso)</td><td>(Optional) Path to Espresso output directory.</td></tr>
+<tr><td>Test APK path (Espresso)</td><td>(Optional) Path to APK file with Espresso tests. If not set, build-dir is used to discover it. Wildcard is allowed.</td></tr>
+<tr><td>Store file (Xamarin UI Test)</td><td>(Optional) Path to the store file used to sign the app.</td></tr>
+<tr><td>Store password (Xamarin UI Test)</td><td>(Optional) Password of the store file used to sign the app. Use a new variable with its lock enabled on the Variables tab to encrypt this value.</td></tr>
+<tr><td>Key alias (Xamarin UI Test)</td><td>(Optional) Enter the alias that identifies the public/private key pair used in the store file..</td></tr>
+<tr><td>Key password (Xamarin UI Test)</td><td>(Optional) Enter the key password for the alias and store file. Use a new variable with its lock enabled on the Variables tab to encrypt this value.</td></tr>
+<tr><td>Test tools directory (Xamarin UI Test)</td><td>(Optional) Path to directory with Xamarin UI test tools that contains test-cloud.exe.</td></tr>
+<tr><td>Signing information (Xamarin UI Test)</td><td>(Optional) Use Signing Information for signing the test server.</td></tr>
+<tr><td>Build directory (Xamarin UI Test)</td><td>(Optional) Path to the build output directory (usually $(ProjectDir)/Build/Products/Debug-iphoneos).</td></tr>
+<tr><td>Build directory (XCUITest)</td><td>(Required) Path to directory with built test assemblies.</td></tr>
+<tr><td>Test IPA path (XCUITest)</td><td>(Optional) Path to the *.ipa file with the XCUITest tests.</td></tr>
+<tr><td>Additional options (for preparing tests)</td><td>(Optional) Additional arguments passed to the App Center test prepare step.</td></tr>
+<tr><td>Run tests</td><td>(Optional) Specify whether to run the tests. The default is `true`.</td></tr>
+<tr><td>Authentication method</td><td>(Required) Use App Center service connection or enter credentials to connect to App Center.</td></tr>
+<tr><td>App Center service connection</td><td>(Required) Select the service connection for App Center. Create a new App Center service connection in Azure DevOps project settings.</td></tr>
+<tr><td>App Center username (when not using a service connection)</td><td>(Required) Visit https://appcenter.ms/settings/profile to get your username.</td></tr>
+<tr><td>App Center password  (when not using a service connection)</td><td>(Required) Visit https://appcenter.ms/settings/profile to set your password. It can accept a variable defined in build or release pipelines as '$(passwordVariable)'. You may mark variable type as 'secret' to secure it.</td></tr>
+<tr><td>App slug</td><td>(Required) The app slug is in the format of {username}/{app_identifier}.  To locate {username} and {app_identifier} for an app, click on its name from https://appcenter.ms/apps, and the resulting URL is in the format of https://appcenter.ms/users/{username}/apps/{app_identifier}.</td></tr>
 <tr><td>Devices</td><td>(Required) String to identify what devices this test will run against.  Copy and paste this string when you define a new test run from App Center Test beacon.</td></tr>
-<tr><td>Test series</td><td>(Optional) The series name for organizing test runs (e.g. master, production, beta).</td></tr>
+<tr><td>Test series</td><td>(Optional) The series name for organizing test runs (e.g. `master`, `production`, `beta`).</td></tr>
 <tr><td>dSYM directory</td><td>(Optional) Path to iOS symbol files.</td></tr>
-<tr><td>System language</td><td>(Required) If your language isn't displayed, select 'Other' and enter its locale below, such as en_US.</td></tr>
-<tr><td>Other locale</td><td>(Optional) Enter any two-letter ISO-639 language code along with any two-letter ISO 3166 country code in the format [language]_[country], such as en_US.</td></tr>
+<tr><td>System language</td><td>(Required) Options: `da_DK`, `de_DE`, `en_GB`, `en_US`, `es_ES`, `es_MX`, `fr_FR`, `ja_JP`, `nl_NL`, `ru_RU`, `user`. If your language isn't an option, use `user`/`Other` and enter its locale below, such as `en_US`.</td></tr>
+<tr><td>Other locale</td><td>(Optional) Enter any two-letter ISO-639 language code along with any two-letter ISO 3166 country code in the format [language]_[country], such as `en_US`.</td></tr>
 <tr><td>Additional options for login</td><td>(Optional) Additional arguments passed to the App Center login step.</td></tr>
 <tr><td>Additional options for run</td><td>(Optional) Additional arguments passed to the App Center test run.</td></tr>
-<tr><td>Do not wait for test result</td><td>(Optional) Execute command asynchronously, exit when tests are uploaded, without waiting for test results.</td></tr>
+<tr><td>Do not wait for test result</td><td>(Optional) Specify whether to execute tests asynchronously, exiting just after tests are uploaded, without waiting for test results. The default is `false`.</td></tr>
 <tr><td>App Center CLI location</td><td>(Optional) Path to the App Center CLI on the build or release agent.</td></tr>
-<tr><td>Enable debug output</td><td>(Optional) Add --debug to the App Center CLI.</td></tr>
+<tr><td>Enable debug output</td><td>(Optional) Add `--debug` to the App Center CLI for verbose output.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Example
+
+This example runs Espresso tests on an Android app using the App Center Test task.
+
+```yaml
+steps:
+- task: AppCenterTest@1
+  displayName: 'Espresso Test - Synchronous'
+  inputs:
+    appFile: 'Espresso/espresso-app.apk'
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
+    frameworkOption: espresso
+    espressoBuildDirectory: Espresso
+    serverEndpoint: 'myAppCenterServiceConnection'
+    appSlug: 'xplatbg1/EspressoTests'
+    devices: a84c93af
+```
 
 ## Open source
 
