@@ -18,7 +18,7 @@ Module path: `VSS/WebApi/Contracts`
 
 ### Members
 
-* `eventType`: string. This is the ID of the type. Constants that will be used by subscribers to identify/filter events being published on a topic.
+* `eventType`: string. This is the ID of the type. Constants that are used by subscribers to identify and filter events being published on a topic.
 
 * `publisher`: [Publisher](../../../VSS/WebApi/Contracts/Publisher.md). This is the service that published this event.
 

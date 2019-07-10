@@ -45,13 +45,13 @@ $orgUrl = $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
 Write-Host $orgUrl
 ```
 
-If this task is executed on an organization where the primary URL is the new URL form, the output will be `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form will output `https://{organization}.visualstudio.com`.
+If this task is executed on an organization where the primary URL is the new URL form, the output is `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form outputs `https://{organization}.visualstudio.com`.
 
 It is therefore important that Azure Pipeline tasks and services that receive events from service hooks handle both URL forms.
 
 ## URLs returned in REST APIs
 
-Regardless of an organization's primary URL, URLs returned in the response to a REST API call use the same base URL as the requesting URL. This ensures clients calling a REST API using a legacy URL will continue to get back URLs in the same (legacy) form. For example, when the Projects REST API is called using a legacy URL, URLs in the response use the legacy form:
+Regardless of an organization's primary URL, URLs returned in the response to a REST API call use the same base URL as the requesting URL. This ensures clients calling a REST API using a legacy URL continues to get back URLs in the same (legacy) form. For example, when the Projects REST API is called using a legacy URL, URLs in the response use the legacy form:
 
 ### Request
 
@@ -77,13 +77,13 @@ To ensure your extension, tool, or integration is resilient to changing organiza
 
 1. Assume the form of the organization URL can change over time
 2. Avoid parsing a URL in order to construct another URL
-3. Don't assume a particular REST API will always reside on the same domain
-3. Avoid storing URLs in your service
-4. When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries when interacting with Azure DevOps
+3. Don't assume a particular REST API always resides on the same domain
+4. Avoid storing URLs in your service
+5. When possible, use Microsoft-provided [.NET](../../integrate/concepts/dotnet-client-libraries.md), TypeScript (web), [Node.js](https://github.com/Microsoft/vsts-node-api), and [Python](https://github.com/Microsoft/vsts-python-api) client libraries when interacting with Azure DevOps
 
 ## How to get an organization's URL
 
-With just the organization's name or ID, you can get its base URL using the global Resource Areas REST API (`https://dev.azure.com/_apis/resourceAreas`). This API does not require authentication and provides information about the location (URL) of the organization as well as the base URL for REST APIs, which can live on different domains.
+With just the organization's name or ID, you can get its base URL using the global Resource Areas REST API (`https://dev.azure.com/_apis/resourceAreas`). This API doesn't require authentication and provides information about the location (URL) of the organization as well as the base URL for REST APIs, which can live on different domains.
 
 A resource area is a group of related REST API resources and endpoints. Each resource area has a well-known identifier (see the table below). Each resource area has an organization-specific base URL that can be used to form URLs for APIs in that resource area. For example, the base URL for "build" REST APIs for the Fabrikam might be `https://dev.azure.com/Fabrikam`, whereas the base URL for "release management" REST APIs might be `https://vsrm.dev.azure.com/Fabrikam`.
 
