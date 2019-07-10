@@ -196,17 +196,45 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View/open work items</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 <tr>
 <td align="left">Add work items, add tags to work items<br/><em>(Stakeholders can assign existing tags to work items, but can't add new tags)</em></td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 <tr>
@@ -268,17 +296,45 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View/open work items</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 <tr>
 <td align="left">Add work items, add tags to work items<br/><em>(Stakeholders can assign existing tags to work items, but can't add new tags)</em></td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 <tr>
@@ -293,7 +349,11 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>
+
+![checkmark](/azure/devops/_img/icons/checkmark.png)
+
+</td>
 </tr>
 
 <tr>

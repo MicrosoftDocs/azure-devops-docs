@@ -89,7 +89,7 @@ app from the information collected during your exploratory testing sessions.
      form for that individual item. For example, if you have pivoted
      the list based on explored work items, expand a work 
      item and select a child bug, task, or test case to see
-     the work item form for just that item.<p /> 
+     the work item form for just that item.<p />
 
    ![Get deep insights from Details view](_img/insights-exploratory-testing/insights-exploratory-testing-07.png)
 

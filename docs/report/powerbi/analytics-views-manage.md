@@ -80,7 +80,11 @@ To favorite a view, hover over the view and choose the ![star icon](../../_img/i
 > ![Favorite a view](_img/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]: Couldn&#39;t find file _shared/manage-shared-view-permissions.md. -->[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]<!--END ERROR INCLUDE -->
+<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]: Couldn&#39;t find file _shared/manage-shared-view-permissions.md. -->
+
+[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+
+<!--END ERROR INCLUDE -->
 
 ## Delete a view
 
