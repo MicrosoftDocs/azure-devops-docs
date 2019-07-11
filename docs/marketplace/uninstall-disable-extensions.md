@@ -1,7 +1,7 @@
 ---
-title: Uninstall disable extensions in Azure DevOps or Team Foundation Server (TFS)
+title: Uninstall disable extensions in Azure DevOps
 titleSuffix: Azure DevOps
-description: Uninstall or disable extensions for Azure DevOps or remove extensions in Team Foundation Server
+description: Uninstall, disable, or remove extensions for Azure DevOps
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
