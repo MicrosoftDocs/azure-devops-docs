@@ -1,6 +1,6 @@
 ---
-title: Grant permissions for managing extensions - Azure DevOps & TFS
-description: Grant users or groups permission to manage extensions for Azure DevOps and Team Foundation Server
+title: Manage extension permissions - Azure DevOps
+description: Grant users or groups permission for managing extensions for Azure DevOps
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,17 +8,17 @@ ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2019
+ms.date: 07/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Grant permissions to manage extensions
+# Manage extension permissions
 
 [!INCLUDE [version-vsts-tfs-2015-on](../../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 ::: moniker range="azure-devops"
 
-In this article, learn how to grant permissions for managing extensions, like install, disable, enable, review, and approve an extension.
+In this article, learn how to grant permissions to users or groups for managing extensions. Extension management tasks include installing, disabling, enabling, reviewing, and approving extensions.
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
     tfssecurity /g+ "[TEAM FOUNDATION]\TFS Extension Publishers" n:User /server:ServerURL
     ```
 
-You can add users later to "TFS Extension Publishers". This is a server-level permission, 
-so updating and deleting an extension will affect all the project collections that use the extension.
+You can add users later to "TFS Extension Publishers". This permission is a server-level permission, 
+so updating and deleting an extension affects all the project collections that use the extension.
 
 ::: moniker-end
