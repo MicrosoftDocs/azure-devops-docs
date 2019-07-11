@@ -110,7 +110,9 @@ The build agent must have the following capability:
 <td>JDK Architecture</td>
 <td>Optionally supply the architecture (x86, x64) of the JDK.</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

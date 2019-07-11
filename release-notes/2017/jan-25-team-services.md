@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 01/23/2017
 ---
 
 # Delivery Plans and mobile work item form – Jan 25

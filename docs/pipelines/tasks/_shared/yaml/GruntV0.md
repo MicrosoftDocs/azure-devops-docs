@@ -1,6 +1,6 @@
 ```YAML
 # Grunt
-# The JavaScript Task Runner
+# Run the Grunt JavaScript task runner
 - task: Grunt@0
   inputs:
     #gruntFile: 'gruntfile.js' 

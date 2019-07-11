@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 05/15/2019
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -178,6 +178,9 @@ By default, your source code will be checked out into a directory called `s`. Fo
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
+> [!NOTE]
+> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](../yaml-schema.md#checkout) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -232,12 +235,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -317,7 +320,9 @@ git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL>
 
 ## Don't sync sources (TFS 2017 and newer only)
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
+Non-deployment jobs automatically fetch sources.
+Use this option if you want to skip that behavior.
+This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 

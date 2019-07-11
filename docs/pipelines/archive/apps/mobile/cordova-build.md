@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 22fc4e22-ef0a-4c55-8cce-20ad2fa14342
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: dastahel
+author: davidstaheli
 ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -65,7 +65,11 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
 
   <table>
    <tr>
-      <td>![Build: Cordova Build](https://github.com/Microsoft/vso-cordova-tasks/blob/master/Tasks/CordovaBuild/icon.png?raw=true)<br />**Build: Cordova Build**</td>
+      <td>
+
+![Build: Cordova Build](https://github.com/Microsoft/vso-cordova-tasks/blob/master/Tasks/CordovaBuild/icon.png?raw=true)
+
+<br />**Build: Cordova Build**</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -78,7 +82,11 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
       </td>
    </tr>
    <tr>
-    <td>![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
+    <td>
+
+![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/copy-and-publish-build-artifacts.png)
+
+<br />**Utility: Copy and Publish Build Artifacts**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -146,7 +154,11 @@ To add TypeScript compilation into your build pipeline using gulp, follow these 
 
 <table>
    <tr>
-      <td>![Package: npm](../../../tasks/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
+      <td>
+
+![Package: npm](../../../tasks/package/_img/npm.png)
+
+<br />**Package: npm** (or the older npm install)</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -158,7 +170,11 @@ To add TypeScript compilation into your build pipeline using gulp, follow these 
       </td>
    </tr>
    <tr>
-    <td>![Build: gulp](../../../tasks/build/_img/gulp.png)<br />**Build: gulp**</td>
+    <td>
+
+![Build: gulp](../../../tasks/build/_img/gulp.png)
+
+<br />**Build: gulp**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -178,13 +194,21 @@ Next, we will configure the pipeline to publish your test results to Azure Pipel
 
 <table>
    <tr>
-    <td>![Build: gulp](../../../tasks/build/_img/gulp.png)<br />**Build: gulp**</td>
+    <td>
+
+![Build: gulp](../../../tasks/build/_img/gulp.png)
+
+<br />**Build: gulp**</td>
 	  <td>
       <p>Update the **gulp Task(s)** option in the gulp task above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>
    </tr>
    <tr>
-      <td>![Test: Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishTestResults/icon.png?raw=true)<br />**Test: Publish Test Results**</td>
+      <td>
+
+![Test: Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishTestResults/icon.png?raw=true)
+
+<br />**Test: Publish Test Results**</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>

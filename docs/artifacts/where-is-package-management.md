@@ -4,8 +4,8 @@ description: Discover Azure Artifacts - the new home of Package Management in Az
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---

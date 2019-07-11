@@ -5,12 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.author: mlearned
 ms.topic: conceptual
-ms.author: mlearned
-author: mlearned
 ms.manager: jillfra
+ms.author: sdanie
+author: steved0x
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
-ms.custom: "mvc, seodec18"
 monikerRange: '>=tfs-2017'
 ---
 
@@ -66,7 +65,12 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 2. Locate the build pipeline that services your master branch. Select **Edit**.
 3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
 4. Select the **+ Add** icon under **Branch filters**.
-5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. Note that the filtered list of branches may not populate as you type `*`. You can still press **Enter** and save the branch filter.
+5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. 
+ 
+  > [!NOTE] 
+  > Note that the filtered list of branches may not populate as you type `*`. 
+  > You can still press **Enter** and save the branch filter.
+
 6. Select the **Save & queue** menu and then Select **Save**.
 
 ---

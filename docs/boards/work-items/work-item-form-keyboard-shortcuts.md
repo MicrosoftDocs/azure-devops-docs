@@ -29,6 +29,7 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Boards>Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]

@@ -14,14 +14,14 @@ monikerRange: 'azure-devops'
 ms.date: 06/12/2019
 ---
 
-# Access, export, and filter audit logs
+# Quickstart: Access, export, and filter audit logs
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, code download, accessing the auditing feature, and much more. 
+In this quickstart, you learn how to access, export, and filter audit logs. Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
 
 When an audit-able event occurs, a log entry is recorded as an audit event. Events contain information such as IP, user who caused the event, what happened, and other useful pieces of data that help you answer the who, what, when, and where. 
 
@@ -118,6 +118,7 @@ When you're filtering through audit events, it’s best to leverage the “area�
 |Notification    |Create, remove, and modify a subscription         |
 |Pipelines  | Create, delete, and modify build definition        |
 |Extensions | Install, delete, or update an extension        |
+|Git        | Branch policies, repository create, repository delete, repository rename |
 
 ### Filtering tips
 
@@ -135,4 +136,6 @@ The following limitations exist for what can be audited.
 
 * Azure Active Directory (Azure AD) group membership changes – In the future, auditing will include changes to Azure DevOps groups, such as adding or removing a group or user. However, if you manage membership via Azure AD groups, additions and removals of users from those Azure AD groups are not audited by Azure DevOps. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
 * Signing in – Sign-in events to Azure DevOps aren't tracked. View the Azure AD audit logs to review sign-in events to your Azure AD. 
+
+
 

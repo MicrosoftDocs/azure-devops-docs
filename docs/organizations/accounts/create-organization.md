@@ -14,13 +14,13 @@ ms.date: 05/20/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Create an organization or project collection
+# Quickstart: Create an organization or project collection
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="= azure-devops"
 
-In this article, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+In this quickstart, you learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
 
 ::: moniker-end
 
@@ -69,10 +69,5 @@ For more information about how to create a project collection, see [create a pro
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create project](../projects/create-project.md)
+> [Create a project](../projects/create-project.md)
 
-## Related articles
-
-* [Create your backlog](../../boards/backlogs/create-your-backlog.md)
-* [Manage your process](../../organizations/settings/work/manage-process.md)
-* [Customize your process](../../organizations/settings/work/customize-process.md)

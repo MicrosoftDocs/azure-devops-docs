@@ -1,5 +1,5 @@
 - name: Azure DevOps CLI
-  href: index.md?toc=/azure/devops/cli/toc.json&bc=/azure/devops/cli/breadcrumb/toc.json 
+  href: index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
 - name: Get started
   href: get-started.md 
 - name: How-to Guides
@@ -20,8 +20,13 @@
     href: azure-devops-cli-in-yaml.md  
   - name: Manage security permissions
     href: permissions.md
-    items:
-    - name: Understand security tokens
-      href: security_tokens.md
-- name: Command Reference
-  href: /cli/azure/ext/azure-devops?view=azure-cli-latest
+- name: Troubleshooting
+  items:
+  - name: Troubleshooting common errors
+    href: troubleshooting.md
+- name: Reference
+  items:
+  - name: Command reference
+    href: /cli/azure/ext/azure-devops?view=azure-cli-latest
+  - name: Security tokens
+    href: security_tokens.md

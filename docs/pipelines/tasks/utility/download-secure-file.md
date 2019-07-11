@@ -17,17 +17,13 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download a secure file to a temporary location on the build or release agent.
+Use this task in a pipeline to download a [secure file](../../library/secure-files.md) to the agent machine.
 
-Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
+Once downloaded, use the `name` value that is set on the task (or "Reference name" in the classic editor) to reference the path to the secure file on the agent machine. For example, if the task is given the name `mySecureFile`, its path can be referenced in the pipeline as `$(mySecureFile.secureFilePath)`. See a full example [below](#example).
 
-Once downloaded, the secure file is located in the `$(Agent.TempDirectory)` directory of the Azure Pipelines Agent.
+When the pipeline job completes, no matter whether it succeeds, fails, or is canceled, the secure file is deleted from its download location.
 
-The full path of the downloaded file is stored to the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable.
-
-If you use multiple versions of the Download Secure File task in your pipeline, they can be referenced with the `$env:DOWNLOADSECUREFILE1_SECUREFILEPATH`, `$env:DOWNLOADSECUREFILE2_SECUREFILEPATH`, `...` environment variables, where the number in the environment variable corresponds with the task version.
-
-Note that if you use two Download Secure File tasks in the same pipeline with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
+It is unnecessary to use this task with the [Install Apple Certificate](install-apple-certificate.md) or [Install Apple Provisioning Profile](install-apple-provisioning-profile.md) tasks because they automatically download, install, and delete (at the end of the pipeline job) the secure file.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -38,4 +34,22 @@ Note that if you use two Download Secure File tasks in the same pipeline with th
 
 | Argument | Description |
 | -------- | ----------- |
-| Secure File | Select the secure file to download to a temporary location on the agent machine. The file will be deleted after the build or release. |
+| Secure File | The file name or unique identifier (GUID) of the secure file to download to the agent machine. The file will be deleted when the pipeline job completes. |
+
+## Example
+
+This example downloads a secure certificate file and installs it to a trusted  certificate authority (CA) directory on Linux:
+
+```yaml
+- task: DownloadSecureFile@1
+  name: caCertificate
+  displayName: 'Download CA certificate'
+  inputs:
+    secureFile: 'myCACertificate.pem'
+
+- script: |
+    echo Installing $(caCertificate.secureFilePath) to the trusted CA directory...
+    sudo chown root:root $(caCertificate.secureFilePath)
+    sudo chmod a+r $(caCertificate.secureFilePath)
+    sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
+```

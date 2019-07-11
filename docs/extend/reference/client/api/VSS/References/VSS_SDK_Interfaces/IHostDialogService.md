@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -22,7 +22,7 @@ Service which manages showing dialogs in the parent frame
 
 ### Members
 
-* `openDialog`: (contributionId: string, dialogOptions: [IHostDialogOptions](./IHostDialogOptions.md), contributionConfig: Object, postContent: Object): IPromise&lt;[IExternalDialog](./IExternalDialog.md)&gt;. Open a modal dialog in the host frame which will get its content from a contributed control.
+* `openDialog`: (contributionId: string, dialogOptions: [IHostDialogOptions](./IHostDialogOptions.md), contributionConfig: Object, postContent: Object): IPromise&lt;[IExternalDialog](./IExternalDialog.md)&gt;. Open a modal dialog in the host frame, which gets its content from a contributed control.
 
-* `openMessageDialog`: (message: string, options: [IOpenMessageDialogOptions](./IOpenMessageDialogOptions.md)): IPromise&lt;[IMessageDialogResult](./IMessageDialogResult.md)&gt;. Open a modal dialog in the host frame which will display the supplied message.
+* `openMessageDialog`: (message: string, options: [IOpenMessageDialogOptions](./IOpenMessageDialogOptions.md)): IPromise&lt;[IMessageDialogResult](./IMessageDialogResult.md)&gt;. Open a modal dialog in the host frame, which displays the supplied message.
 

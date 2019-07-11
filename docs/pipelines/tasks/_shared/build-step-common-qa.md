@@ -14,4 +14,6 @@ The control options arguments described above can also be useful when you're try
 
 #### Q: How do variables work? What variables are available for me to use in the arguments? 
 
-A: ```$(Build.SourcesDirectory)``` and ```$(Agent.BuildDirectory)``` are just a few of the variables you can use. See [Variables](../../build/variables.md).
+A: ```$(Build.SourcesDirectory)``` and ```$(Agent.BuildDirectory)``` are just a few of the variables you can use.
+Variables are available in [expressions](../../process/expressions.md) as well as scripts; see [variables](../../process/variables.md) to learn more about how to use them.
+There are some predefined [build](../../build/variables.md) and [release](../../release/variables.md) variables you can also rely on.

@@ -36,7 +36,9 @@ None
 <tr><td>Working directory</td><td>(Optional) Specify the working directory in which to execute this task. If left empty, the repository directory will be used.</td></tr>
 <tr><td>Force repo update</td><td>(Required) Selecting this option will force running 'pod repo update' before install.</td></tr>
 <tr><td>Project directory</td><td>(Optional) Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

@@ -147,7 +147,9 @@ None
             you are publishing your symbols. For example, if you specify ```Symbols_$(BuildConfiguration)```, then the name
             of the link to your published release symbols would be *Symbols_release*</td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 

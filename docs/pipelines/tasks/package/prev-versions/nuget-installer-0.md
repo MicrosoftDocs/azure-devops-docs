@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/10/2016
 ---
 
@@ -78,7 +78,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 
 <table>
 <tr>
-<td>![Package: NuGet Installer](../_img/nuget-installer.png)<br/>**Package: NuGet Installer**</td>
+<td>
+
+![Package: NuGet Installer](../_img/nuget-installer.png)
+
+<br/>**Package: NuGet Installer**</td>
 <td>
 <p>Install your NuGet package dependencies.</p>
 <ul>
@@ -88,7 +92,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 </td>
 </tr>
 <tr>
-<td>![Build: Visual Studio Build](../../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>
+
+![Build: Visual Studio Build](../../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>

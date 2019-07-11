@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 05/30/2019
+ms.date: 06/20/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -521,7 +521,9 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
+
 ![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
+
 </pre>
 
 <br/>
@@ -636,26 +638,29 @@ To escape emojis, enclose them using the \` character.
 </tr>
 <tr>
 <td>
-<p>To insert one of the following characters, prefix with a backslash:</p>
-<p style="margin-bottom:2px;"><code>\   backslash </code> </p>
-<p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
-<p style="margin-bottom:2px;"><code>_   underscore  </code></p>
-<p style="margin-bottom:2px;"><code>{}  curly braces  </code> </p>
-<p style="margin-bottom:2px;"><code>[]  square brackets </code></p>
-<p style="margin-bottom:2px;"><code>()  parentheses  </code></p>
-<p style="margin-bottom:2px;"><code>#   hash mark  </code> </p>
-<p style="margin-bottom:2px;"><code>+   plus sign  </code></p>
-<p style="margin-bottom:2px;"><code>-   minus sign (hyphen) </code></p>
-<p style="margin-bottom:2px;"><code>.   dot  </code> </p>
-<p style="margin-bottom:2px;"><code>!   exclamation mark  </code></p>
+<p>To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).</p>
+<p style="margin-bottom:2px;"><code>&#92;</code>, backslash </p>
+<p style="margin-bottom:2px;"><code>&#96;</code>, backtick</p>
+<p style="margin-bottom:2px;"><code>&#95;</code>, underscore</p>
+<p style="margin-bottom:2px;"><code>{}</code>, curly braces </p>
+<p style="margin-bottom:2px;"><code>[]</code>, square brackets</p>
+<p style="margin-bottom:2px;"><code>()</code>, parentheses</p>
+<p style="margin-bottom:2px;"><code>#</code>, hash mark </p>
+<p style="margin-bottom:2px;"><code>+</code>, plus sign</p>
+<p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
+<p style="margin-bottom:2px;"><code>.</code>, period </p>
+<p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
 </td>
-<td>Some examples on inserting special characters
-<p>Enter <code>\\</code> to get \\ </p>
-<p>Enter <code>\_</code> to get _ </p>
-<p>Enter <code>\#</code> to get \# </p>
-<p>Enter <code>\(</code> to get \( </p>
-<p>Enter <code>\.</code> to get \. </p>
-<p>Enter <code>\!</code> to get \! </p>
+<td>
+<p>Some examples on inserting special characters:</p>
+
+<p>Enter <code>&#92;&#92;</code> to get \ </p>
+<p>Enter <code>&#92;&#95;</code> to get &#95; </p>
+<p>Enter <code>&#92;# </code> to get # </p>
+<p>Enter <code>&#92;(</code> to get ( </p> 
+<p>Enter <code>&#92;.</code> to get . </p>
+<p>Enter <code>&#92;!</code> to get ! </p>
+
 </td>
 </tr>
 </tbody>

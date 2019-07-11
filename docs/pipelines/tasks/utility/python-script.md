@@ -31,11 +31,18 @@ Use this task in a build or release pipeline to run a Python script.
 <tr><td>Script Path</td><td>(Required when targetType == filePath) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).</td></tr>
 <tr><td>Script</td><td>(Required when targetType == inline) The Python script to run</td></tr>
 <tr><td>Arguments</td><td>(Optional) Arguments passed to the script execution, available through `sys.argv`.</td></tr>
-<tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task will use the interpreter in PATH.</td></tr>
+<tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task assumes a Python interpreter is available on the PATH and simply attempts to run the `python` command.</td></tr>
 <tr><td>Working directory</td><td>(Optional) undefined</td></tr>
 <tr><td>Fail on standard error</td><td>(Optional) If this is true, this task will fail if any text are written to the stderr stream.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
+
+## Remarks
+
+By default, this task will invoke `python` from the system path.
+Run [Use Python Version](../tool/use-python-version.md) to put the version you want in the system path.
 
 ## Open source
 

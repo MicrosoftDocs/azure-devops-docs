@@ -120,5 +120,5 @@ Then, in a pipeline in the organization, the author can request that the decorat
 variables:
   skipInjecting: true
 steps:
-- script: echo This will be the only step. No decorator will be added.
+- script: echo This is the only step. No decorator is added.
 ```

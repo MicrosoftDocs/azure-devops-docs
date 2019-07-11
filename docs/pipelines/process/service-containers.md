@@ -8,6 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: dakale
+author: dakale
 ms.date: 01/14/2019
 monikerRange: 'azure-devops'
 ---

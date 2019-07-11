@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 05/29/2019
+ms.date: 06/21/2019
 ---
 
 
@@ -18,18 +18,31 @@ ms.date: 05/29/2019
 
 <a id="display-hierarchy">  </a>
 
-
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-When a product, portfolio, or sprint backlog contains same-category, nested work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
+When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
 
 <a id="nested" > </a>
 
-## Fix nesting issue
+## Fix same-category nesting issue
 
-You may see an error message such as "Ordering backlog items is disabled." 
+Same-category links are parent-child links among work items of the same type, such as bug-bug, or between work items that appear on the same backlog level. The category a work item belongs to is determined by your process backlog levels and your team's bug behavior. To understand more about same-category hierarchy, please see the next section [Recommended configuration](#recommended).
+
+You may see an error message similar to "You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category". 
+
+To fix this, take the following action: 
+
+1. Open the work item listed in the error message.
+
+2. Look for a parent or child link of the same-category. This is a link of the same type, or another type that appear on the same backlog level. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
+
+3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
+
+## Fix same-category nesting issue without work items ids
+
+You may see an error message such as "You cannot reorder work items and some work items may not be shown." 
 
 To fix this, take the following actions: 
 
@@ -46,14 +59,15 @@ To fix this, take the following actions:
 	> [!div class="mx-imgBorder"]  
 	> ![Nested user story and bug](_img/resolve/nested-user-story-bug.png)  
 	
-3.	Remove all parent-child links that exist among nested items of the same work item type or same category
+3.	Remove all parent-child links that exist among nested items of the same work item type or same category, or change the link to 'Related'
 
 4.	Refresh your Backlog.
 
 The issue should now be resolved.
 
+<a id="recommended"> </a>
 
-## Maintain a flat list
+## Recommended configuration
 
 While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don't recommend that you create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The reason is that the Backlog, Board, and Sprints experiences don't support reordering for same-category hierarchy. Since ordering is executed by hierarchy level, same-category hierarchy introduces confusion by ordering a work item that doesn't belong on that level. 
 
@@ -86,7 +100,7 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 
 ## How backlogs and boards display hierarchical (nested) items
 
-For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
 

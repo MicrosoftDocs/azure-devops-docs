@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/1/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -126,7 +126,7 @@ If you must push a package-version that already exists on one of your upstream s
 
 ### Metadata cached from upstream sources
 
-When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. This means that you may not be able to install a package that was published to the upstream source within the last 24 hours.
+When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This depends on job timing and package data propagation.
 
 <a name="offline-upstreams"></a>
 

@@ -1,6 +1,6 @@
 ```YAML
-# Visual Studio Test Platform Installer
-# Acquires the test platform from nuget.org or the tools cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
+# Visual Studio test platform installer
+# Acquire the test platform from nuget.org or the tool cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
 - task: VisualStudioTestPlatformInstaller@1
   inputs:
     #packageFeedSelector: 'nugetOrg' # Options: nugetOrg, customFeed, netShare

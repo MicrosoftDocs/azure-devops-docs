@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 07/05/2017
 monikerRange: '>= tfs-2018'
 ---
@@ -34,7 +34,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
 
 > [!NOTE]
-> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
+> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
 ::: moniker range="> tfs-2018"
 
@@ -114,7 +114,9 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ### Examples
@@ -135,7 +137,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 
 <table>
     <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             Install your NuGet package dependencies.
             <ul>
@@ -146,7 +152,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
         <td>
             Build your solution.
             <ul>
@@ -234,7 +244,9 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Push NuGet packages
@@ -286,14 +298,16 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ### Publishing symbols
 When you push packages to an Azure Artifacts/Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
 
-### Publishing packages to TFS with IIS Basic authentication enabled
-This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
+### Publishing or restoring packages to TFS with IIS Basic authentication enabled
+This task is unable to publish or restore NuGet packages to or from a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
 
 ## Custom NuGet command
 
@@ -375,7 +389,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 <table>
     <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             Install your NuGet package dependencies.
             <ul>
@@ -386,7 +404,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
         <td>
             <p>Build your solution.</p>
             <ul>
@@ -397,7 +419,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Package your projects.</p>
             <ul>
@@ -410,7 +436,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Publish your packages.</p>
             <ul>
@@ -430,7 +460,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 <table>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Publish your packages to NuGet.org.</p>
             <ul>

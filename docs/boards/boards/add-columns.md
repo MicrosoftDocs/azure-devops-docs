@@ -144,6 +144,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"  
+
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -182,6 +183,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
+
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -304,6 +306,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
+
 ## Update Kanban column-to-State mappings
  
 Another "under the hood" item that impacts Kanban column-to-State mappings is categories. The Kanban board and other Agile tools uses categories to group WITs that they want to treat the same. 

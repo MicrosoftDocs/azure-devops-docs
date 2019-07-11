@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this topic, find answers to frequently asked questions about billing for your organization.
+In this article, you can find answers to frequently asked questions about billing for your organization.
 
 Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [billing overview](overview.md).
 
@@ -58,6 +58,12 @@ to pay for Azure DevOps. Before you make purchases by using this type of Azure s
 > Otherwise, all resources billed to this subscription are suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+
+<a name="monthly-vs-daily-billing"></a>
+
+### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
+
+A: With **monthly billing**, purchases are a monthly commitment. With any updates, we charge you for the remainder of the current month. After that, you're charged on the 1st of each month. With **daily billing**, purchases are billed daily on a pro-rated basis. Changes to purchased quantities are reflected in usage billed to your Azure subscription by the following day.
 
 ### Q: Am I required to buy other Azure services?
 
@@ -132,59 +138,11 @@ A: Starting September 28th, 2018 you can no longer create Team Projects or view 
 
 ### Q: Why is my organization already linked to an Azure subscription?
 
-A: This happens if someone already set up billing for your organization via the
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges can't be split across multiple Azure subscriptions.
+A: This happens if someone already [set up billing](set-up-billing-for-your-organization-vs.md) for your organization. Each organization can use only one Azure subscription for billing. Charges can't be split across multiple Azure subscriptions.
 
 ### Q: Can I use the same Azure subscription for billing across multiple organizations?
 
 A: Yes, you can use the same Azure subscription for billing across multiple organizations. But you can't link a single organization to multiple Azure subscriptions.
-
-<a name="find-owner"></a>
-
-### Q: How do I find a project collection administrator?
-
-A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Select **Security** > **Project Collection Administrators** >  **Members**.
-
-   ![Security page, project collection administrators members](_img/security-members-project-collection-administrators.png)
-
-
-### Q: How do I find the organization owner?
-
-A: You can find the current owner in your organization settings.
-
-::: moniker range=">= azure-devops-2019"
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Go to your organization settings.
-
-    <img alt="Go to organization settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
-
-2. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
 
 ### Q: Can I buy Azure DevOps from my software reseller?
 

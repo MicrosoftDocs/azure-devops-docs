@@ -15,11 +15,27 @@
 <tr>
 <td align="left">Set personal notifications or alerts 
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
 </tr>
 <tr>
 <td align="left">Set team notifications or alerts 
@@ -168,11 +184,27 @@
 <tr>
 <td align="left">Set personal notifications or alerts 
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
+<td>
+
+![checkmark](_img/checkmark.png)
+
+</td>
 </tr>
 <tr>
 <td align="left">Set team notifications or alerts 

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
-ms.date: 12/07/2018
+ms.date: 07/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,7 +29,7 @@ None
 
 ::: moniker range="azure-devops"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
+[!INCLUDE [temp](../_shared/yaml/FtpUploadV2.md)]
 ::: moniker-end
 
 ## Arguments
@@ -71,7 +71,9 @@ None
 <td>Trust server certificate</td>
 <td>Selecting this option results in the FTP server's SSL certificate being trusted with ftps://, even if it is self-signed or cannot be validated by a Certificate Authority (CA).</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

@@ -7,8 +7,8 @@ description: Work with project collections programmatically using the REST APIs 
 ms.assetid: 8172F58D-5131-4571-91D0-C1E11B05C4FE
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

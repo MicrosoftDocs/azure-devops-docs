@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 10/31/2018
 monikerRange: '=azure-devops'
 ---

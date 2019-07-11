@@ -1,7 +1,7 @@
 ---
 title: Extend Analytics with OData
 titleSuffix: Azure DevOps  
-description: Using OData backed Analytics Service for Azure DevOps 
+description: Using OData backed Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: jillfra
@@ -17,7 +17,7 @@ ms.date: 11/1/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
+Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
 ## 5-Minute Quickstarts
 
@@ -38,7 +38,7 @@ Using OData, you can directly query the Analytics Service for Azure DevOps from 
 
 
 ## Concepts
-- [Data available in the Analytics Service](../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Data available in Analytics](../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 - [Performance and latency](../powerbi/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 

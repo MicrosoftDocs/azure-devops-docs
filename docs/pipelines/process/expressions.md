@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/23/2019
+ms.date: 07/09/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -57,6 +57,15 @@ An expression can be a literal, a reference to a variable, a reference to a depe
 
 As part of an expression, you can use boolean, null, number, string, or version literals.
 
+```yaml
+# Examples
+variables:
+  someBoolean: ${{ true }} # case insensitive, so True or TRUE also works
+  someNumber: ${{ -1.2 }}
+  someString: ${{ 'a b c' }}
+  someVersion: ${{ 1.2.3 }}
+```
+
 ### Boolean
 `True` and `False` are boolean literal expressions.
 
@@ -91,7 +100,7 @@ In order to use property dereference syntax, the property name must:
 Depending on the execution context, different variables are available.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
-- If you create release pipelines using classic editor, then [release variables](../release/variables.md) variables are available.
+- If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
 ## Functions
 
@@ -102,12 +111,14 @@ The following built-in functions can be used in expressions.
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `False`
+* Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
 ::: moniker range=">= azure-devops-2019"
 
 ### coalesce
 * Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
 * Min parameters: 2. Max parameters: N
+* Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
 ::: moniker-end
 
@@ -116,6 +127,7 @@ The following built-in functions can be used in expressions.
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `contains('ABCDE', 'BCD')` (returns True)
 
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
@@ -123,6 +135,11 @@ The following built-in functions can be used in expressions.
 * If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
+
+> [!NOTE]
+> There is no literal syntax in a YAML pipeline for specifying an array.
+> This function is of limited use in general pipelines.
+> It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -178,12 +195,14 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `endsWith('ABCDE', 'DE')` (returns True)
 
 ### eq
 * Evaluates `True` if parameters are equal
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Returns `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `eq(variables.letters, 'ABC')`
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -200,12 +219,14 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `ge(5, 5)` (returns True)
 
 ### gt
 * Evaluates `True` if left parameter is greater than the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `gt(5, 2)` (returns True)
 
 ### in
 * Evaluates `True` if left parameter is equal to any right parameter
@@ -213,6 +234,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
+* Example: `in('B', 'A', 'B', 'C')` (returns True)
 
 ::: moniker range="> azure-devops-2019"
 
@@ -229,23 +251,27 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `le(2, 2)` (returns True)
 
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `lt(2, 5)` (returns True)
 
 ### ne
 * Evaluates `True` if parameters are not equal
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Returns `True` if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `ne(1, 2)` (returns True)
 
 ### not
 * Evaluates `True` if parameter is `False`
 * Min parameters: 1. Max parameters: 1
 * Converts value to Boolean for evaluation
+* Example: `not(eq(1, 2))` (returns True)
 
 ### notIn
 * Evaluates `True` if left parameter is not equal to any right parameter
@@ -253,23 +279,27 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
+* Example: `notIn('D', 'A', 'B', 'C')` (returns True)
 
 ### or
 * Evaluates `True` if any parameter is `true`
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `True`
+* Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
 ### startsWith
 * Evaluates `true` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `startsWith('ABCDE', 'AB')` (returns True)
 
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
+* Example: `xor(True, False)` (returns True)
 
 
 <h2 id="job-status-functions">Job status check functions</h2>

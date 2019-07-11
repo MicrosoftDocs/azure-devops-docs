@@ -42,7 +42,6 @@ AndroidSDK, MSBuild, Xamarin.Android
 <td>
 <p>If you want to build a single Xamarin.Android project, click the <strong>...</strong> button and select the project.</p>
 <p>If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**/*.Android.csproj``` searches for all Android.csproj files in all subdirectories in your repo.</p>
-<p>Note: The projects must have a PackageForAndroid target.</p>
 </td>
 </tr>
 <tr>
@@ -97,7 +96,9 @@ Pick the JDK to be used during the build by selecting a JDK version that will be
 Select x86 or x64.
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

@@ -7,8 +7,8 @@ description: Work with Git programmatically using the REST APIs for Team Foundat
 ms.assetid: 47DDF67E-C4BE-4D96-BA20-360A652F3280
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 11/03/2016
 ---
 

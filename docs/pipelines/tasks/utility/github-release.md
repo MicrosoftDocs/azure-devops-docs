@@ -47,7 +47,9 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 <tr><td>Draft release</td><td>(Optional) Indicate whether the release should be saved as a draft (unpublished). If `false`, the release will be published.</td></tr>
 <tr><td>Pre-release</td><td>(Optional) Indicate whether the release should be marked as a pre-release.</td></tr>
 <tr><td>Add changelog</td><td>(Optional) If set to `true`, a list of changes (commits and issues) between this and the last published release will be generated and appended to release notes.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Examples

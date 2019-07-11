@@ -7,8 +7,8 @@ description: Work with work item areas and iterations programmatically using the
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
