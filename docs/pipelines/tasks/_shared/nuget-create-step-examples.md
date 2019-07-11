@@ -58,7 +58,11 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>
@@ -70,7 +74,11 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Packager](../package/_img/nuget-packager.png)<br/>**Package: NuGet Packager**</td>
+<td>
+
+![Package: NuGet Packager](../package/_img/nuget-packager.png)
+
+<br/>**Package: NuGet Packager**</td>
 <td>
 <p>Package your projects.</p>
 <ul>
@@ -81,7 +89,11 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
+<td>
+
+![Package: NuGet Publisher](../package/_img/nuget-publisher.png)
+
+<br/>**Package: NuGet Publisher**</td>
 <td>
 <p>Publish your packages to Azure Artifacts.</p>
 <ul>
@@ -108,7 +120,11 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>
@@ -120,7 +136,11 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Packager](../package/_img/nuget-packager.png)<br/>**Package: NuGet Packager**</td>
+<td>
+
+![Package: NuGet Packager](../package/_img/nuget-packager.png)
+
+<br/>**Package: NuGet Packager**</td>
 <td>
 <p>Package your projects.</p>
 <ul>
@@ -131,7 +151,11 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
+<td>
+
+![Package: NuGet Publisher](../package/_img/nuget-publisher.png)
+
+<br/>**Package: NuGet Publisher**</td>
 <td>
 <p>Publish your packages to NuGet.org.</p>
 <ul>

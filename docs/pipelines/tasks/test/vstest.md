@@ -85,7 +85,9 @@ The vstest demand can be satisfied in two ways:
 <tr><td><b>rerunFailedThreshold</b><br>% failure</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures and if `rerunType` is `basedOnTestFailurePercentage`.</td></tr>
 <tr><td><b>rerunFailedTestCasesMaxLimit</b><br># of failed tests</td><td>(Optional) Use this option to avoid rerunning tests when number of failed test cases crosses specified limit. This is applicable if any environment issues leads to massive failures and if `rerunType` is `rerunFailedTestCasesMaxLimit`.</td></tr>
 <tr><td><b>rerunMaxAttempts</b><br>Maximum # of attempts</td><td>(Optional) Specify the maximum # of times a failed test should be retried. If a test passes before the maximum # of attempts is reached, it will not be rerun further.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

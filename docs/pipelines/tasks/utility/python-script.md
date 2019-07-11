@@ -34,7 +34,9 @@ Use this task in a build or release pipeline to run a Python script.
 <tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task assumes a Python interpreter is available on the PATH and simply attempts to run the `python` command.</td></tr>
 <tr><td>Working directory</td><td>(Optional) undefined</td></tr>
 <tr><td>Fail on standard error</td><td>(Optional) If this is true, this task will fail if any text are written to the stderr stream.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Remarks

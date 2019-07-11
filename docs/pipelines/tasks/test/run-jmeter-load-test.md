@@ -41,7 +41,9 @@ The agent must have the following capability:
 <tr><td>Agent Count</td><td>(Required) Number of test agents (dual-core) used in the run.</td></tr>
 <tr><td>Run Duration (sec)</td><td>(Required) Load test run duration in seconds.</td></tr>
 <tr><td>Run load test using</td><td>(Optional) undefined</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

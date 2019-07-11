@@ -224,6 +224,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to A
 </tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

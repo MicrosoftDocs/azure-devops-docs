@@ -75,7 +75,9 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

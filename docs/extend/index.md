@@ -12,15 +12,14 @@ author: chcomley
 ms.date: 08/23/2016
 ---
 
-# Develop Extensions
+# Develop extensions
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Azure DevOps Services. They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
 
 <a name ="customApps"/>
 
-## 5-minute Quickstarts 
+## 5-minute quickstarts 
 
-Check out the quick starts to get you started:
 * [Write your first extension](get-started/node.md)
 
 ## Videos
@@ -36,7 +35,7 @@ Develop Azure DevOps Services extension with continuous delivery pipeline:
 ## Samples
 * [Sample extensions](develop/samples-overview.md)
 
-## How-to Guides
+## How-to guides
 * Develop
     * [Add a build task](develop/add-build-task.md)
     * [Extend the work item form for work item tracking](develop/add-workitem-extension.md)

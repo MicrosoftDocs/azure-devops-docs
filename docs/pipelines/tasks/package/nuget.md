@@ -114,7 +114,9 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ### Examples
@@ -135,7 +137,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 
 <table>
     <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             Install your NuGet package dependencies.
             <ul>
@@ -146,7 +152,11 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
         <td>
             Build your solution.
             <ul>
@@ -234,7 +244,9 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Push NuGet packages
@@ -286,7 +298,9 @@ None
             Specifies the amount of detail displayed in the output.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ### Publishing symbols
@@ -375,7 +389,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 <table>
     <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             Install your NuGet package dependencies.
             <ul>
@@ -386,7 +404,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>
+
+![Build: Visual Studio Build](../build/_img/visual-studio-build.png)
+
+<br/>**Build: Visual Studio Build**</td>
         <td>
             <p>Build your solution.</p>
             <ul>
@@ -397,7 +419,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Package your projects.</p>
             <ul>
@@ -410,7 +436,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Publish your packages.</p>
             <ul>
@@ -430,7 +460,11 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 <table>
     <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
+        <td>
+
+![Package: NuGet](../package/_img/nuget.png)
+
+<br/>**Package: NuGet**</td>
         <td>
             <p>Publish your packages to NuGet.org.</p>
             <ul>

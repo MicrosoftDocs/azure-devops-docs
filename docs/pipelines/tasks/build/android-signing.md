@@ -109,7 +109,9 @@ Enter the key password for the alias and Android Keystore file.
 <p>(Optional) The location of the zipalign executable used during signing. Defaults to the zipalign found in the Android SDK version folder that your application builds with.</p>
 </td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Related tasks

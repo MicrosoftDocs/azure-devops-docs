@@ -70,7 +70,9 @@ For details about using this task, see the App Center documentation topic [Using
 <tr><td>Do not wait for test result</td><td>(Optional) Specify whether to execute tests asynchronously, exiting just after tests are uploaded, without waiting for test results. The default is `false`.</td></tr>
 <tr><td>App Center CLI location</td><td>(Optional) Path to the App Center CLI on the build or release agent.</td></tr>
 <tr><td>Enable debug output</td><td>(Optional) Add `--debug` to the App Center CLI for verbose output.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

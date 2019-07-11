@@ -79,7 +79,9 @@ Use this task in a build or release pipeline to install and publish npm packages
             Enables verbose logging.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Publish npm packages
@@ -130,7 +132,9 @@ Use this task in a build or release pipeline to install and publish npm packages
             Enables verbose logging.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Custom npm command
@@ -188,7 +192,9 @@ Use this task in a build or release pipeline to install and publish npm packages
             </ul>
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Examples
