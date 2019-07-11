@@ -36,7 +36,9 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 <tr><td>Release</td><td>(Required) This options shows up if 'Specific Version' or 'Specific Tag' is selected as Default Release version type. Based on the version type selected, Release name or the Tag needs to be provided.</td></tr>
 <tr><td>Item pattern</td><td>(Required) Minimatch pattern to filter files to be downloaded from the available release assets. To download all files within release use **.</td></tr>
 <tr><td>Destination directory</td><td>(Required) Path on the agent machine where the release assets will be downloaded.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

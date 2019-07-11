@@ -37,7 +37,9 @@ Use this task in a build or release pipeline to deploy a virtual machine scale s
 <tr><td>Arguments</td><td>(Optional) The custom script will be invoked with arguments passed. Build/Release variables can be used which makes it easy to use secrets.</td></tr>
 <tr><td>Azure storage account where custom scripts will be uploaded</td><td>(Optional) The Custom Script Extension downloads and executes scripts provided by you on each virtual machines in the VM scale set. These scripts will be stored in the storage account specified here. Specify a pre-existing ARM storage account.</td></tr>
 <tr><td>Skip Archiving custom scripts</td><td>(Optional) By default, this task creates a compressed archive of directory containing custom scripts. This improves performance and reliability while uploading to azure storage. If not selected, archiving will not be done and all files will be individually uploaded.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

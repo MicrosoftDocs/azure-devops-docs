@@ -35,7 +35,9 @@ Requires the Package Management extension.
 <tr><td>Package</td><td>(Required) Select the package to download, only NuGet packages are supported currently</td></tr>
 <tr><td>Version</td><td>(Required) Version of the package</td></tr>
 <tr><td>Destination directory</td><td>(Required) Path on the agent machine where the package will be downloaded</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

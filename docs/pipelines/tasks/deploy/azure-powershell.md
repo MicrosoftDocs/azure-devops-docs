@@ -41,7 +41,9 @@ To pick the latest version available on the agent, select "Latest installed vers
 
 For self-hosted agents you can specify preferred version of Azure PowerShell using "Specify version"</td></tr>
 <tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. The Hosted VS2017 pool currently supports versions: 2.1.0, 3.8.0, 4.2.1, 5.1.1</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Open source

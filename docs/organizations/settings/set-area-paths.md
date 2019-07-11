@@ -59,8 +59,10 @@ If you're new to managing projects and teams, the most straight forward sequence
 6. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 ::: moniker range=">= tfs-2017"
+
 > [!NOTE]
-> While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
+> While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).
+
 ::: moniker-end
 
 As needed, you can do the following actions at any time:
@@ -73,6 +75,7 @@ As needed, you can do the following actions at any time:
 - Change the Area Path assignments made to a team
 
 <a id="open-project-settings" />
+
 <a id="open-admin-context" /><br/><a id="admin-intro-team-services" />
 
 ## Open Project Settings
@@ -297,7 +300,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 ::: moniker range=">= tfs-2017"
 
->=tfs-2017 <= tfs-2018> [!NOTE]
+> [!NOTE]
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
 
 ::: moniker-end

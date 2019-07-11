@@ -30,9 +30,8 @@ The content pack contains a complete analytic data model (tables, relationships 
 
    ![Power BI get data](_img/power-bi-get-data.png)
 
-
 ~~~
-If you don't have a Power BI account you can create one by entering your email address and choose **Use it free**.
+If you don't have a Power BI account you can create one by entering your email address and choose **Start free**, and then **Download free**.
 ~~~
 
 4. Select **Get** under **Services** on the Get Data page.
@@ -44,11 +43,11 @@ If you don't have a Power BI account you can create one by entering your email a
     ![connector](_img/search.png)
     ![connector](_img/content-pack-details.png)
 
-6. Enter your desired Marketplace publisher ID that you want data for and select **Next**.
+6. Enter your desired Marketplace publisher ID that you want data for, and then select **Next**.
 
     ![Enter the publisher id used in Marketplace](_img/addpublisherid.png)  
 
-    **Important**: Ensure you are logged in power BI using the same credentials you use on the Marketplace and you have access to the Publisher Id. 
+    **Important**: Ensure you are logged in power BI using the same credentials you use on the Marketplace and you have access to the Publisher ID. 
 
 7. Specify the authentication method. Only oAuth2 is supported. Choose **Sign In** to continue.
 
@@ -62,13 +61,13 @@ If you don't have a Power BI account you can create one by entering your email a
 
 8. Successful authorization displays the following authorization dialog, which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select **Accept**.
 
-    ![VS Azure DevOps Services Authorization page](_img/Screen6.png)  
+    ![Azure DevOpsAuthorization page](_img/Screen6.png)  
 
-9. Once Power BI is authorized, data will begin to load and you are presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded.
+9. Once Power BI is authorized, data begins to load and you're presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded.
 
 ## Available data and reports
 
-After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/azure/devops/extend/extension-report).
+Once you're connected, you see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/azure/devops/extend/extension-report).
 
 The power BI content pack provides data for all extensions and you can use the filters to view data for an extension or use the extension report to compare data between extensions.
 
