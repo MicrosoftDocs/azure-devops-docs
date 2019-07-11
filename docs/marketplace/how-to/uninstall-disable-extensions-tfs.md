@@ -1,13 +1,13 @@
 ---
 title: Uninstall or disable extensions in Visual Studio Team Foundation Server (TFS)
-description: Uninstall or disable extensions for Team Foundation Server
+description: Uninstall or disable extensions for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: ef7ce82f-ca09-4804-8698-2820ddaec1b8
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
@@ -16,14 +16,14 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 [!INCLUDE [version-tfs-2018-earlier](../../_shared/version-tfs-2018-earlier.md)]
 
-When you don't need an extension anymore, you can uninstall or disable it.
+When you no longer need an extension, you can uninstall or disable it. This article shows you how.
 
 > [!NOTE]
 > Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](./change-paid-extension-users.md). 
 
-## Who can uninstall or disable extensions?
+## Prerequisites
 
-[Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) 
+[Project Collection Administrators](../../organizations/security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) 
 can uninstall or disable extensions. 
 
@@ -44,3 +44,4 @@ can uninstall or disable extensions.
 	<img alt="Uninstall or disable an extension" src="../_shared/_img/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 
    [[Need help?](../faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
+
