@@ -13,7 +13,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Clone, fetch, contribute to pull requests, and explore the contents of a repository
+<td align="left">Clone, fetch, and explore the contents of a repository; also, can create, comment on, vote, and contribute to pull requests
 </td>
 <td><img src="_img/checkmark.png" alt="checkmark"/></td>
 <td><img src="_img/checkmark.png" alt="checkmark"/></td>
