@@ -2,7 +2,7 @@
 title: Add a user who can set up billing for Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Add a user who can set up billing for Azure DevOps.
+description: Add a user who can set up and manage billing for Azure DevOps.
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 ms.prod: devops
@@ -21,7 +21,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 In this article, learn how to let a user [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. Go to the **Subscriptions** tab and
-add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that your organization uses for Azure DevOps billing.
+add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**Service admin**](/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**Co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that your organization uses for Azure DevOps billing.
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 
@@ -29,7 +29,7 @@ add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contr
 
    ![Choose the subscription to modify for backup billing manager](_img/add-backup-billing-manager/choose-subscription-to-modify.png)
 
-3. Choose **Access control (IAM)**.
+3. Select **Access control (IAM)**.
 
    ![Choose access control, and then add](_img/add-backup-billing-manager/choose-access-control.png)
 
@@ -37,7 +37,7 @@ add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contr
 
    ![Add role assignment Azure portal](_img/add-backup-billing-manager/add-role-assignment.png)
 
-5. In the drop-down menus, select the *role* to add members to and select an *assignment* type.
+5. In the drop-down menu, select the *role* to add members to and select an *assignment* type.
 
    ![Choose a role and assignment type](_img/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
