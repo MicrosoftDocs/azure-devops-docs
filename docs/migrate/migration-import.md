@@ -483,7 +483,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
 |    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
  
-** Analytics IPs (Azure DevOps Server 2019 or later only)**
+**Analytics IPs (Azure DevOps Server 2019 or later only)**
 
 You only need to add an exception for the analytics IPs in your target import region if you included preview features with your import. 
 
