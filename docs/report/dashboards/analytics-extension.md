@@ -181,7 +181,7 @@ If you choose to disable the Analytics extension, it will stop any jobs from run
 
 If you remove the Analytics extension from your deployment, you can install the extension from the online marketplace to restore it. If you are unable to use the online marketplace due to your server setup&mdash;for example, your firewall blocks some outgoing connections&mdash;you can restore it to the local marketplace using the following steps.
 
-1. Open **Collection settings** following the instructions provided in the section [Install the Analytics extension](#install-analytics). 
+1. Open **Collection settings** following the instructions provided in the section [Install the Analytics extension](#install-the-analytics-extension). 
 
 	Choose **Extensions**, and then **Browse local extensions**.
 
