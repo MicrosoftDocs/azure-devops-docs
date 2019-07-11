@@ -6221,11 +6221,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-      "redirect_url": "/azure/devops/organizations/billing/change-number-paid-extension-users?view=azure-devops#change-number-of-paid-users",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/marketplace/billing-overview.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
       "redirect_document_id": false
@@ -11753,6 +11748,11 @@
     {
       "source_path": "docs/marketplace/marketplace-billing-qa.md",
       "redirect_url": "/azure/devops/marketplace/faq-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
+      "redirect_url": "/azure/devops/marketplace/assign-paid-extensions",
       "redirect_document_id": false
     },
     {
