@@ -11759,6 +11759,11 @@
       "source_path": "docs/pipelines/tasks/build/dotnet-core.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/index-tp.md",
+      "redirect_url": "/azure/devops/test-plans/index",
+      "redirect_document_id": true
     }
   ]
 }

@@ -23,7 +23,7 @@ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD
 
 ### Languages
 
-You can use many languages with Azure Pipelines, such as Python, Java, PHP, Ruby, C#, and Go.
+You can use many languages with Azure Pipelines, such as Python, Java, JavaScript, PHP, Ruby, C#, C++, and Go.
 
 ### Version control systems
 
@@ -31,7 +31,7 @@ Before you use continuous integration and continuous delivery practices for your
 
 ### Application types
 
-You can use Azure Pipelines with most application types, such as Java, JavaScript, Python, .NET, PHP, Go, Xcode, and C++.
+You can use Azure Pipelines with most application types, such as Java, JavaScript, Node.js, Python, .NET, C++, Go, PHP, and XCode.
 
 ### Deployment targets
 
