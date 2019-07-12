@@ -2637,7 +2637,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](/../../release-notes.md)
+- [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 
 <br/>
