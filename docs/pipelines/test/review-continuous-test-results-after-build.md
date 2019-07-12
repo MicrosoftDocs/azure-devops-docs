@@ -161,6 +161,10 @@ you can organize the **Results** view exactly as you require.
 
 <a name="fullpageview"></a>
 
+### Test debt management with bugs
+
+To manage your test debt for failing or long running tests you can create a bug or add data to exisiting bug and all view all associated work items in the work item tab. 
+
 ### Immersive troubleshooting experience
 
 Error messages and stack traces are lengthy in nature and need enough real estate to view the details during troubleshooting.
