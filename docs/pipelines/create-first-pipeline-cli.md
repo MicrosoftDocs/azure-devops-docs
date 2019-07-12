@@ -18,7 +18,6 @@ monikerRange: 'azure-devops'
 This is a step-by-step guide to using Azure Pipelines from the Azure CLI (command-line interface) to build a GitHub repository.
 You can use Azure Pipelines to build an app written in any language. For this quickstart, you'll use Java.
 
-
 ## Prerequisites
 
 [!INCLUDE [include](_shared/prerequisites.md)]
@@ -49,11 +48,11 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     az pipelines create --name "First-Java.CI"
     ```
     The repository and branch details are picked up from the git configuration available in the cloned directory.   
-    
+
 1. Enter your GitHub user name and password to authenticate Azure Pipelines.
    
     ```
-    Enter your GitHub username leave black for using already generated PAT): Contoso
+    Enter your GitHub username (Leave blank for using already generated PAT): Contoso
     
     Enter your GitHub password:
     ``` 
