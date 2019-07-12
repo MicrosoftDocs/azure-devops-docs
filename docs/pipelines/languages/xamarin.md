@@ -103,7 +103,7 @@ steps:
 
 ### Sign and provision a Xamarin.iOS app - The PackageApp option
 
-To generate a signed and provisioned a Xamarin.iOS app .ipa package, set `packageApp` to `true` and make sure prior to this task you installed the right Apple Provisioning Profile and Apple Certificates that match your App Bundle ID into the agent running the job.
+To generate a signed and provisioned Xamarin.iOS app .ipa package, set `packageApp` to `true` and make sure prior to this task you installed the right Apple Provisioning Profile and Apple Certificates that match your App Bundle ID into the agent running the job.
 
 To fulfill these mandatory requisites use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-apple-provisioning-profile?view=azure-devops) and [installing Apple Certificates](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-apple-certificate?view=azure-devops).
 
@@ -115,7 +115,7 @@ To fulfill these mandatory requisites use the Microsoft Provided tasks for [inst
       packageApp: true
 ```
 > [!TIP]
-> The Xamarin.iOS build task will <u>only</u> generate an .ipa package if the agent running the job has the [appropriate provisioning profile and Apple certificate installed](https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/mobile/app-signing?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app). If you enable the packageApp option and the agent does not have the appropriate apple provisioning profile and apple certificate the build may report succeeded but there will be no .ipa generated.
+> The Xamarin.iOS build task will <u>only</u> generate an .ipa package if the agent running the job has the [appropriate provisioning profile and Apple certificate installed](https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/mobile/app-signing?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app). If you enable the packageApp option and the agent does not have the appropriate apple provisioning profile(.mobileprovision) and apple certificate(.p12) the build may report succeeded but there will be no .ipa generated.
 
 For Microsoft Hosted agents the .ipa package is by default located under path:  
 `{iOS.csproj root}/bin/{Configuration}/{iPhone/iPhoneSimulator}/`
