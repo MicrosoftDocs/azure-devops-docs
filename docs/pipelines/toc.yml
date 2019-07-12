@@ -232,7 +232,7 @@
     items:
     - name: Overview
       href: artifacts/artifacts-overview.md
-    - name: Pipeline artifacts (Preview)
+    - name: Pipeline artifacts (preview)
       href: artifacts/pipeline-artifacts.md
     - name: Build artifacts
       href: artifacts/build-artifacts.md
@@ -248,6 +248,8 @@
       href: artifacts/symbols.md
     - name: Universal 
       href: artifacts/universal-packages.md
+  - name: Caching (preview)
+    href: caching/index.md
   - name: Conditions
     href: process/conditions.md
   - name: Demands
