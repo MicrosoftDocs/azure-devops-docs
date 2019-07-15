@@ -180,7 +180,7 @@ To share variables across multiple pipelines in your project, you should set the
 
 <h2 id="set-in-script">Set variables in scripts</h2>
 
-A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. To set a variable from a script, you use a command syntax and print to stdout. 
+A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. To set a variable from a script, you use a command syntax and print to stdout.
 
 # [YAML](#tab/yaml)
 
@@ -367,7 +367,7 @@ You can set a variable using an expression. We already encountered one case of t
   dependsOn: A
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ] # remember to use single quotes
-``` 
+```
 
 You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
@@ -378,7 +378,7 @@ jobs:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
     - bash: echo $(a)
-``` 
+```
 
 For more information about counters and other expressions, see [expressions](expressions.md).
 
@@ -467,7 +467,7 @@ jobs:
     - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
-There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps. 
+There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.
 
 Since variables are expanded at the beginning of a job, you cannot use them in a strategy. In the following example, you cannot use the variable `a` to expand the job matrix since the variable is only available at the beginning of each expanded job.
 
@@ -530,13 +530,17 @@ Variables are expanded once when the run is started, and again, at the beginning
 
 - You set a variable called `a` to 10 in a pipeline.
 - In one of the steps (a bash script step), you run the following script:
-  ```bash
-  echo $(a)            # This will be 10
-  echo '##vso[task.setvariable variable=a]20'
-  echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
-  ```
+
+   ```bash
+   echo $(a)            # This will be 10
+   echo '##vso[task.setvariable variable=a]20'
+   echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
+   ```
+
 - In the next step (another bash script step), you run the following script:
-  ```bash
-  - bash: echo $(a)    # This will be 20, since the variables are expanded just before the step
-  ```
+
+   ```bash
+   echo $(a)            # This will be 20, since the variables are expanded just before the step
+   ```
+
 ---

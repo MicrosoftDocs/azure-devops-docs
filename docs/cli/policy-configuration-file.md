@@ -9,10 +9,13 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Configure policies
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 You can easily configure branch policies for your repository using the various policy commands. However, the policy commands accept a single scope, i.e., single combination of repository, branch and match type. If you want to apply the same policy across various scopes, you can do that using a policy configuration file.
 
