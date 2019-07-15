@@ -9,10 +9,13 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 

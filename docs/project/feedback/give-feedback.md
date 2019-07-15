@@ -87,7 +87,7 @@ On the **Provide** page, one or more items appear for you to provide feedback. F
 
 You can change settings defined for the audio device and annotation tool at any time. For more information, see Change the audio device or annotation tool.  
 
-1. **To start recording:** Choose one of the icons:**  Screen & Voice<strong>, **Screen only</strong>, or  **Voice only**.   
+1. **To start recording:** Choose one of the icons:**  Screen & Voice<strong>, **Screen only**, or  **Voice only</strong>.   
 
 	> [!IMPORTANT]   
 	> **Security Note:** Unless you stop recording, all steps that you take and remarks that you make while recording screen and voice will be recorded. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. 

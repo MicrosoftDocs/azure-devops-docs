@@ -56,7 +56,7 @@ The code editor in the web portal has been updated to support syntax highlightin
 
 And our last bit of news is that [CodeLens](https://msdn.microsoft.com/library/dn269218.aspx) is now in Public Preview for Visual Studio Online accounts in the West Europe region. You will need Visual Studio Ultimate 2013 Update 4 or Visual Studio 2015 Preview or later and your code should be checked into Team Foundation Version Control in Visual Studio Online.
 
-That’s it for Sprint 79. If you have questions about what we’ve shipped today, please reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). And don’t forget to share what you’d like to see us prioritize on [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso). See you again in three weeks.
+That’s it for Sprint 79. If you have questions about what we’ve shipped today, please reach out on [Twitter](https://twitter.com/AzureDevOps). And don’t forget to share what you’d like to see us prioritize on [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso). See you again in three weeks.
 
 Thanks,
 

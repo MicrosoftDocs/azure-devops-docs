@@ -20,7 +20,9 @@ monikerRange: 'azure-devops'
 Use this task in a build or release pipeline to run a Bash script on macOS, Linux, or Windows. 
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/BashV3.md)]
 
 The Bash task also has a shortcut syntax in YAML:
@@ -41,14 +43,14 @@ The Bash task also has a shortcut syntax in YAML:
 <tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory). Required if Type is <code>filePath</code>.</td></tr>
 <tr><td>Arguments</td><td>Arguments passed to the Bash script.</td></tr>
 <tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code></td></tr>
-<tr><td>Working Directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td></tr>
+<tr><td>Working Directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</td></tr>
 <tr>
 <td>Fail on standard error</td>
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
 </tr>
 <tr>
 <td>Environment variables</td>
-<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 <pre><code class="lang-yaml">
 - script: echo $MYSECRET
   env:
@@ -57,7 +59,10 @@ The Bash task also has a shortcut syntax in YAML:
 </td>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 

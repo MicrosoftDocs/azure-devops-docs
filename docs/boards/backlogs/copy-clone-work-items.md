@@ -158,7 +158,6 @@ The formatted table contains a link to each work item included in your selected 
 ## Copy the URL
 
 #### [Browser](#tab/browser/)
-
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
@@ -173,14 +172,11 @@ Right click the link ID to open the browser copy link option.
 
 
 #### [Visual Studio](#tab/visual-studio/)
-
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
-
-
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

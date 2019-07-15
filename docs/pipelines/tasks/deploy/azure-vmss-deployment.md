@@ -20,8 +20,11 @@ monikerRange: 'azure-devops'
 Use this task in a build or release pipeline to deploy a virtual machine scale set image.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureVmssDeploymentV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -38,7 +41,10 @@ Use this task in a build or release pipeline to deploy a virtual machine scale s
 <tr><td>Azure storage account where custom scripts will be uploaded</td><td>(Optional) The Custom Script Extension downloads and executes scripts provided by you on each virtual machines in the VM scale set. These scripts will be stored in the storage account specified here. Specify a pre-existing ARM storage account.</td></tr>
 <tr><td>Skip Archiving custom scripts</td><td>(Optional) By default, this task creates a compressed archive of directory containing custom scripts. This improves performance and reliability while uploading to azure storage. If not selected, archiving will not be done and all files will be individually uploaded.</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 

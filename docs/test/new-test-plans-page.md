@@ -11,7 +11,7 @@ author: harishkragarwal
 ms.date: 07/01/2019
 monikerRange: '>= azure-devops'
 ---
-#New Test Plans page
+# New Test Plans page
 
 [!INCLUDE [version-header-devops-services](_shared/version-header-devops-services.md)]
 
@@ -21,7 +21,7 @@ A new Test Plans Page (Test Plans*) for your planned testing needs is available 
 
 The existing Test Plans page will continue to be available until we bring in most or all of the capabilities from the existing page to the new page. The new page has additional fresh capabilities to offer too. So far, we have made good strides in offering most of the test execution capabilities. More of test planning and authoring capabilities will be added every 3 weeks. See list on what's coming [next](#journey). We request you to try out the new page and [share your feedback](#feedback).
 
-##How do I enable the new page?
+## How do I enable the new page?
 
 1. Sign-in into your Azure DevOps Services organization
 2. Click on your Avatar on the top right and navigate to "Preview Features"
@@ -32,7 +32,7 @@ The existing Test Plans page will continue to be available until we bring in mos
 
 > Any action performed in either page will reflect on the other too since their backend store is the same.
 
-##Help me understand the new page
+## Help me understand the new page
 
 The new Test Plans page has 5 sections:
 1. **Test Plan segment**: Use this to locate, favourite, edit, copy or clone a test plan.
@@ -48,7 +48,7 @@ The new Test Plans page has 5 sections:
 Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. **What is a test point?** Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester. Example: if you have a test case as "Test login functionality" and you add 2 configurations to it as Edge and Chrome then its results in 2 test points. Now these test points can be executed. On execution, test results are generated. Through the test results view (coming soon) you would be able to see all executions of a test point. The latest execution for the test point is what you see in the execute tab. <br>
 Hence, test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service being developed.
 
-##New capabilities
+## New capabilities
 
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new period. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
@@ -57,7 +57,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 <a name="journey"></a>
 
-##Journey
+## Journey
 
 **With the New Test Plans page, you can perform the following tasks:**
 
@@ -107,5 +107,5 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 <a name="feedback"></a> 
 
-##Provide feedback
+## Provide feedback
 Reach us at newtestplanpage@microsoft.com to share your thoughts on the new page. In the process, share screenshots as appropriate.

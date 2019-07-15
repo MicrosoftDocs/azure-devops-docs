@@ -52,8 +52,11 @@ None
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureCLIV1.md)]
+
 ::: moniker-end
 
 ## Arguments

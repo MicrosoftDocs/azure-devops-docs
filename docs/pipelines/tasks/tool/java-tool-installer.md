@@ -26,8 +26,11 @@ Use this task to change the version of Java used in Java tasks.
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
+
 ::: moniker-end
 
 ## Arguments

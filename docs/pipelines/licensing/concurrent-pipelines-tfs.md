@@ -78,13 +78,13 @@ Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enter
 
 0. Browse to **Server settings**, **Access levels**.
 
- ![control-panel-server-vs-enterprise-access-levels](_img/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
+   ![control-panel-server-vs-enterprise-access-levels](_img/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
- URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
+   URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
-0. On the left side of the page, click **VS Enterprise**.
+1. On the left side of the page, click **VS Enterprise**.
 
-0. Add your users who have Visual Studio Enterprise subscriptions.
+2. Add your users who have Visual Studio Enterprise subscriptions.
 
 After you've added these users, additional licenses will appear on the resource limits page described below.
 
@@ -96,11 +96,11 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 0. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
- ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
+   ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
- URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
+   URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
-0. View or edit the number of purchased parallel jobs.
+1. View or edit the number of purchased parallel jobs.
 
 ## Q&A
 

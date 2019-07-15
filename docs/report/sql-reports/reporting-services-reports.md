@@ -110,7 +110,7 @@ Project management reports provide insight into how much work the team is tackli
 ![Sample stories overview report](../admin/_img/IC665011.png)  
 
 
-##Monitor test plans and bug tracking
+## Monitor test plans and bug tracking
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
 <table width="100%">

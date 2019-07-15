@@ -22,7 +22,9 @@ Use this task in a release pipeline to observe the configured Azure monitor rule
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -30,8 +32,11 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 None
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV1.md)]
+
 ::: moniker-end
 
 ## Arguments

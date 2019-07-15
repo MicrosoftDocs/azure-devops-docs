@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2017'
 Use this task in a build or release pipeline to invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,8 +30,11 @@ Use this task in a build or release pipeline to invoke a HTTP triggered function
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -66,7 +71,6 @@ To signal completion, the Azure function should POST completion data to the foll
 
 **Request Body**
 { "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
-
 ```
 See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
 In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 

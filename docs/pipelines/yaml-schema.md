@@ -110,8 +110,7 @@ Note: Azure Pipelines doesn't support all features of YAML, such as anchors, com
 
 ## Pipeline
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
 ::: moniker range="> azure-devops-2019"
 ```yaml
 name: string  # build numbering format
@@ -159,8 +158,7 @@ steps: [ script | bash | pwsh | powershell | checkout | task | templateReference
 ```
 ::: moniker-end
 
-# [Example](#tab/example)
-
+#### [Example](#tab/example/)
 ```yaml
 name: $(Date:yyyyMMdd)$(Rev:.r)
 variables:
@@ -171,8 +169,7 @@ jobs:
   - script: echo First step!
 ```
 
----
-
+* * *
 Learn more about [multi-job pipelines](process/phases.md?tabs=yaml),
 using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#triggers), [variables](process/variables.md?tabs=yaml), and
@@ -352,8 +349,7 @@ jobs:
 Matrixing generates copies of a job with different inputs. This is useful for
 testing against different configurations or platform versions.
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
 ```yaml
 strategy:
   matrix: { string1: { string2: string3 } }
@@ -379,8 +375,7 @@ If not specified or set to 0, no limit will be applied.
 If not specified, no limit will be applied.
 ::: moniker-end
 
-# [Example](#tab/example)
-
+#### [Example](#tab/example/)
 ```yaml
 jobs:
 - job: Build
@@ -400,8 +395,7 @@ each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
 will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
 Only 2 jobs will run simultaneously.
 
----
-
+* * *
 #### Parallel
 
 This specifies how many duplicates of the job should run. This is useful for
@@ -462,8 +456,7 @@ and [step templates](#step-templates) for more details about each.
 Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
 Variables may be specified at the pipeline, stage, or job level.
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
 For a simple set of hardcoded variables:
 
 ```yaml
@@ -483,8 +476,7 @@ variables:
 
 Variables may also be included from [templates](#variable-templates).
 
-# [Example](#tab/example)
-
+#### [Example](#tab/example/)
 ::: moniker range="> azure-devops-2019"
 
 ```yaml
@@ -496,7 +488,7 @@ stages:
 - stage: Build
   variables:    # stage-level
     STAGE_VAR: 'that happened'
-  
+
   jobs:
   - job: FirstJob
     variables:  # job-level
@@ -532,8 +524,7 @@ variables:
 - group: my-variable-group-2  # another variable group
 ```
 
----
-
+* * *
 ## Template references
 
 > [!NOTE]
@@ -925,8 +916,7 @@ Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
 and how to specify them.
 Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
 There are three distinct options for `trigger`: a list of branches to include, a way to disable CI triggering, and the full syntax for ultimate control.
 
 List syntax:
@@ -979,8 +969,7 @@ trigger:
 >[!IMPORTANT]
 >When you specify a `trigger`, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
-# [Example](#tab/example)
-
+#### [Example](#tab/example/)
 List syntax:
 
 ```yaml
@@ -1010,8 +999,7 @@ trigger:
     - README.md
 ```
 
----
-
+* * *
 ### PR trigger
 
 A pull request trigger specifies what branches will cause a pull request build to

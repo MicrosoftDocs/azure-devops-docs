@@ -216,7 +216,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	</tbody>
 	</table>
 	
-1. Choose **Save & Close** when done. 
+2. Choose **Save & Close** when done. 
 
 
 <a id="discussion">  </a>
