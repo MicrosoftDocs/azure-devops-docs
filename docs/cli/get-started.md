@@ -9,10 +9,17 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 07/08/2019
 ---
 
 # Get started with Azure DevOps CLI
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+
+> [!NOTE]  
+> The Azure DevOps Command Line Interface (CLI) is only available for Azure DevOps Services at this time. 
+
 
 To start using the Azure DevOps extension for Azure CLI, execute the following steps:
 
@@ -24,7 +31,7 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 	az extension add --name azure-devops
 	```
 
-You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
+	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
 
 3. Sign in: Run `az login` to sign in.
 

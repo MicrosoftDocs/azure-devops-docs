@@ -9,10 +9,13 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Auto detect configuration and git aliases
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 The Azure DevOps Extension has been optimized for Azure Repos to work well with git workflows.
 
