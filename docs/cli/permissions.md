@@ -9,10 +9,13 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Manage security permissions  
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 Security permissions for a User or Security group can be managed by running following group of commands:
 
