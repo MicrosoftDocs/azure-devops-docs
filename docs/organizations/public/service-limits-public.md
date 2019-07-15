@@ -66,4 +66,4 @@ Wikis defined for a project are limited to 1 GB per git repository.
 ## Next steps 
 
 > [!div class="nextstepaction"]
-- [Review work tracking object limits](../settings/work/object-limits.md)
+> - [Review work tracking object limits](../settings/work/object-limits.md)

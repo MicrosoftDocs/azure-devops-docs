@@ -6388,7 +6388,7 @@
     {
       "source_path": "docs/build-release/archive/preview/new-release-summary.md",
       "redirect_url": "/azure/devops/pipelines",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/index.md",
@@ -6708,7 +6708,7 @@
     {
       "source_path": "docs/build-release/packages/npm.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/nuget-pack-publish.md",
@@ -7068,12 +7068,12 @@
     {
       "source_path": "docs/build-release/tasks/test/run-functional-tests.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/RunDistributedTests.1.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/RunJMeterLoadTest.1.md",
@@ -7323,7 +7323,7 @@
     {
       "source_path": "docs/build-release/test/continuous-test-java.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/continuous-test-selenium.md",
@@ -7333,7 +7333,7 @@
     {
       "source_path": "docs/build-release/test/example-continuous-testing.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/getting-started-with-continuous-testing.md",
@@ -7343,12 +7343,12 @@
     {
       "source_path": "docs/build-release/test/index.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/overview.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/reference-qa.md",
@@ -7373,37 +7373,37 @@
     {
       "source_path": "docs/build-release/test/run-tests-in-parallel.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/set-up-continuous-test-environments-builds.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/set-up-continuous-testing-builds.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/test/set-up-continuous-testing-builds.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/test-build.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/test-impact-analysis.md",
       "redirect_url": "/azure/devops/pipelines/test/test-impact-analysis",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/test-with-unified-agent-and-phases.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/virtual-networks/create-virtual-network.md",
@@ -7413,7 +7413,7 @@
     {
       "source_path": "docs/build-release/actions/virtual-networks/manage-vms-using-scvmm.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/ci-build-git.md",
@@ -7638,7 +7638,7 @@
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md",
@@ -7673,7 +7673,7 @@
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-container-kubernetes.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/cd/azure/deploy-container-kubernetes.md",
@@ -7693,12 +7693,12 @@
     {
       "source_path": "docs/build-release/apps/cd/scvmm/configure-scvmm.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/manage-vms-using-scvmm.md",
       "redirect_url": "/azure/devops/pipelines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-cloudservice-cloudservice.md",
@@ -7748,7 +7748,7 @@
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-webapps.md",
       "redirect_url": "/azure/devops/pipelines",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/aspnet-core-to-azure-webapp.md",

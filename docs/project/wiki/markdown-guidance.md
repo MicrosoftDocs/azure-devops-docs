@@ -204,16 +204,16 @@ Combine these elements to apply emphasis to text.
 
 ::: moniker range="tfs-2018"
 
-> [!NOTE]  
+> [!NOTE]
 > There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
-> 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-> [!NOTE]  
+> [!NOTE]
 > There is no Markdown syntax that supports underlining text.
-> 
+
 ::: moniker-end
 
 **Example:**
@@ -325,8 +325,8 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
-  
-  
+
+
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -358,11 +358,11 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Example:**
 
-<pre>
+```
 - Item 1
 - Item 2
 - Item 3
-</pre>
+```
 
 **Result:**
 
@@ -373,7 +373,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 ### Nested lists
 
 **Example:**  
-<pre>
+```
 1. First item.
    - Item 1
    - Item 2
@@ -382,18 +382,18 @@ Ordered lists start with a number followed by a period for each list item. Unord
    - Nested item 1
    - Nested item 2
    - Nested item 3 
-</pre>
+```
 
 **Result:**  
 
 1. First item.
-	- Item 1
-	- Item 2
-	- Item 3
+    - Item 1
+    - Item 2
+    - Item 3
 2. Second item.
-	- Nested item 1
-	- Nested item 2
-	- Nested item 3
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 <a id="link-work-items" />
@@ -414,23 +414,21 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Supported links for Welcome pages:**
 
-<ul>
-<li>Relative path: ```[text to display](/target.md)```  </li>
-<li>Absolute path in Git: ```[text to display](/folder/target.md)``` </li>
-<li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
-<li>URL: ```[text to display](http://address.com)```  </li>
-</ul>
+- Relative path: `[text to display](/target.md)` 
+- Absolute path in Git: `[text to display](/folder/target.md)`
+- Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Markdown widget:**
 
 <ul>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 **Supported links for Wiki:**  
 <ul>
-<li>Absolute path of Wiki pages: ```[text to display](/parent-page/child-page)``` </li>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>Absolute path of Wiki pages: <code>[text to display](/parent-page/child-page)</code> </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 > [!NOTE]  
@@ -440,9 +438,9 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Example:**  
 
-<pre>
+```
 &#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
-</pre>
+```
 
 **Result:**
 
@@ -476,9 +474,9 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 **Example:**
 
-<pre>
+```
 ###Link to a heading in the page
-</pre>
+```
 
 <br/>
 
@@ -575,7 +573,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 <br/>
 
 **Result:**  
- 
+
 <img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]
@@ -765,7 +763,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
 
 ### Example: Algebraic notation
 
@@ -777,12 +775,11 @@ And, the area of a triangle is:
 $$
 A_{triangle}=\frac{1}{2}({b}\cdot{h})
 $$
-
 ```
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+> ![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
 
 ### Example: Sums and Integrals
 
@@ -799,7 +796,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 
@@ -811,4 +808,4 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-  
+

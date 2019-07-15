@@ -27,8 +27,7 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 
 Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 YAML builds are configured by default with a CI trigger on all branches.
@@ -198,8 +197,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select this trigger if you want the build to run whenever someone checks in code.
 
 ### Batch changes
@@ -216,11 +214,11 @@ If your repository is Git then you can specify the branches where you want to tr
 
 If your Git repo is in Azure Repos or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
- > **Tips:**
- * If you don't set path filters, then the root folder of the repo is implicitly included by default.
- * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
- * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
- * The order of path filters doesn't matter.
+> **Tips:**
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
 
 #### Example
 
@@ -244,21 +242,19 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ### TFVC Include
 
-Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](repository.md).
+Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](../repos/index.md).
 
 ### CI trigger for a remote Git repo or Subversion
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
----
-
+* * *
 ## PR triggers
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches,
 or when changes are pushed to such a pull request.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
@@ -383,8 +379,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 ### GitHub, GitHub Enterprise Server, Subversion, and Bitbucket Cloud
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
@@ -406,8 +401,7 @@ If your Git repo is hosted in Azure Repos, there won't be a **Pull request valid
 
 Pull request triggers are not available for Other/external Git repos.
 
----
-
+* * *
 ::: moniker range="azure-devops"
 
 ### Trigger builds using GitHub pull request comments
@@ -418,8 +412,7 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 
 ## Scheduled triggers
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="> azure-devops-2019"
 
 Scheduled triggers cause a build to run on a schedule defined using [cron syntax](#supported-cron-syntax).
@@ -620,8 +613,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 ::: moniker range="> azure-devops-2019"
 
 > [!IMPORTANT]
@@ -707,13 +699,12 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
----
-
+* * *
 <h2 id="gated">TFVC gated check-in</h2>
 
 If your code is in a [Team Foundation version control (TFVC)](../../repos/tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
-By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](repository.md).
+By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](../repos/index.md).
 
 Otherwise, you can clear this check box and specify the paths in the trigger.
 
@@ -737,7 +728,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### A few other things to know
 
-* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](repository.md).
+* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](../repos/index.md).
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 

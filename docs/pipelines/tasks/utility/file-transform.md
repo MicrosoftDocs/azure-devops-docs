@@ -94,7 +94,7 @@ None
 </thead>
 <tr>
 <td>Package or folder<br />folderPath</td>
-<td>File path to the package or a folder. Variables ( Build  | Release ), wildcards are supported. For example, `$(System.DefaultWorkingDirectory)/**/*.zip`. 
+<td>File path to the package or a folder. Variables ( Build  | Release ), wildcards are supported. For example, <code>$(System.DefaultWorkingDirectory)/<em>*/</em>.zip</code>. 
 For zipped folders, the contents are extracted to the TEMP location, transformations executed, and the results zipped in original artifact location.
 </td>
 </tr>
@@ -107,14 +107,14 @@ XML transformations are supported only for the Windows platform.
 <tr>
 <td>Transformation rules<br />xmlTransformationRules</td>
 <td>Provide a newline-separated list of transformation file rules using the syntax<br /> 
-`-transform <path to="" the transform file> -xml <path to the source configuration file> -result <path to the result file>`<br />
+<code>-transform &lt;path to=&quot;&quot; the transform file&gt; -xml &lt;path to the source configuration file&gt; -result &lt;path to the result file&gt;</code><br />
 The result file path is optional and, if not specified, the source configuration file will be replaced with the transformed result file.
 </td>
 </tr>
 <tr>
 <td>File format<br />fileType</td>
 <td>Specify the file format on which substitution is to be performed. Variable substitution runs after any configuration transforms.
-For XML, Variables defined in the build or release pipelines will be matched against the token ('key' or 'name') entries in the appSettings, applicationSettings, and connectionStrings sections of any config file and parameters.xml file. 
+For XML, Variables defined in the build or release pipelines will be matched against the token (&#39;key&#39; or &#39;name&#39;) entries in the appSettings, applicationSettings, and connectionStrings sections of any config file and parameters.xml file. 
 </td>
 </tr>
 <tr>

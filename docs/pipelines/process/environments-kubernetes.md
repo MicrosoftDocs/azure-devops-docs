@@ -49,21 +49,21 @@ While the Azure Provider option creates a new ServiceAccount, the generic provid
 3. Input cluster name and namespace values.
 4. For fetching Server URL, execute the following command on your shell - 
 
-  ```
-  kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}
-  ```
+   ```
+   kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}
+   ```
 5. For fetching Secret object required to connect and authenticate with the cluster, the following sequence of commands need to be run -
 
-  ```
-  kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}
-  ```   
+   ```
+   kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}
+   ```   
 
-  The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
+   The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
 
-  ```
-  kubectl get secret <service-account-secret-name> -n <namespace> -o json
-  ```
+   ```
+   kubectl get secret <service-account-secret-name> -n <namespace> -o json
+   ```
 
-  Copy and paste the Secret object fetched in JSON form into the Secret text-field.
+   Copy and paste the Secret object fetched in JSON form into the Secret text-field.
 
 6. Click on **Validate and create** to create the Kubernetes resource.

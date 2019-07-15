@@ -55,30 +55,30 @@ In the XML file, you specify one or more tasks and their dependencies. For an ex
  The following syntax shows the structure of the Reporting plug-in. For a description of each element, see [ReportingServices child elements](#child_elements) later in this topic.  
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<?xml version="1.0" encoding="utf-8"? 
-<tasks 
-  <task id="Site" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project Reporting site created." 
-    <dependencies / 
-    <taskXml 
-      <ReportingServices 
-        <site</site 
-      </ReportingServices 
-    </taskXml 
-  </task 
-  <task id="Populate Reports" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project reports uploaded." 
-    <dependencies 
-      <dependency taskId="Site" / 
-    </dependencies 
-    <taskXml 
-      <ReportingServices 
-        <folders. . . </folders 
-        <reports. . . </reports 
-      </ReportingServices 
-    </taskXml 
-  </task 
-</tasks 
-```  
+> ```XML
+> <?xml version="1.0" encoding="utf-8"? 
+> <tasks 
+>   <task id="Site" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project Reporting site created." 
+>     <dependencies / 
+>     <taskXml 
+>       <ReportingServices 
+>         <site</site 
+>       </ReportingServices 
+>     </taskXml 
+>   </task 
+>   <task id="Populate Reports" plugin="Microsoft.ProjectCreationWizard.Reporting" completionMessage="Project reports uploaded." 
+>     <dependencies 
+>       <dependency taskId="Site" / 
+>     </dependencies 
+>     <taskXml 
+>       <ReportingServices 
+>         <folders. . . </folders 
+>         <reports. . . </reports 
+>       </ReportingServices 
+>     </taskXml 
+>   </task 
+> </tasks 
+> ```  
 
 <a name="site"></a> 
 
@@ -104,20 +104,20 @@ You use the **folder** element to create folders on the reporting site. Use the 
 The following example creates four top-level folders and two sub-folders on the reporting site. The top-level folders are labeled Bugs, Builds, Project Management, and Tests. The two sub-folders are located under Project Management and are labeled Visual Studio and Visual Studio ALM.  
 
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<taskXml 
-      <ReportingServices 
-      <folders 
-         <folder path="Bugs" / 
-          <folder path="Builds" / 
-          <folder path="Project Management" / 
-          <folder path="Project Management/Visual Studio" / 
-          <folder path="Project Management/Visual Studio ALM" / 
-          <folder path="Tests" / 
-      </folders 
-      </ReportingServices 
-</taskXml 
-```  
+> ```XML 
+> <taskXml 
+>       <ReportingServices 
+>       <folders 
+>          <folder path="Bugs" / 
+>           <folder path="Builds" / 
+>           <folder path="Project Management" / 
+>           <folder path="Project Management/Visual Studio" / 
+>           <folder path="Project Management/Visual Studio ALM" / 
+>           <folder path="Tests" / 
+>       </folders 
+>       </ReportingServices 
+> </taskXml 
+> ```  
 
 <a name="reports"></a> 
 
@@ -129,27 +129,27 @@ The following example specifies that the Remaining Work.rdl file will be uploade
 
 > [!NOTE]
 >  The names of the reporting services data sources are `Tfs2010ReportsDS` and `Tfs2010OlapReportsDS`. Even though you might have installed or upgraded to a later version of TFS, these names, which were assigned to the data sources for a TFS 2010 installation, continue to be used.  
-
-
+> 
+> 
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<taskXml 
-      <ReportingServices 
-     <reports 
-       <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30" 
-       <parameters 
-          <parameter name="ExplicitProject" value="" / 
-       </parameters 
-       <datasources 
-          <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" / 
-          <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" / 
-       </datasources 
-       </report 
- . . .   
-     </reports 
-      </ReportingServices 
-</taskXml 
-```  
+> ```XML 
+> <taskXml 
+>       <ReportingServices 
+>      <reports 
+>        <report name="Remaining Work" filename="Reports\Remaining Work.rdl" folder="Project Management" cacheExpiration="30" 
+>        <parameters 
+>           <parameter name="ExplicitProject" value="" / 
+>        </parameters 
+>        <datasources 
+>           <reference name="/Tfs2010OlapReportDS" dsname="TfsOlapReportDS" / 
+>           <reference name="/Tfs2010ReportDS" dsname="TfsReportDS" / 
+>        </datasources 
+>        </report 
+>  . . .   
+>      </reports 
+>       </ReportingServices 
+> </taskXml 
+> ```  
 
 <a name="child_elements"></a> 
 
@@ -159,25 +159,25 @@ The following syntax shows the structure of the **ReportingServices** element an
 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<ReportingServices 
-      <folders 
-      <folder / 
- . . .   
-      </folders 
-      <reports 
-      <report 
-         <parameters 
-               <parameter / 
-         </parameters 
-         <datasources 
-               <reference / 
-         </datasources 
-      </report 
- . . .   
-      </reports 
-</ReportingServices  
-```  
+> ```XML
+> <ReportingServices 
+>       <folders 
+>       <folder / 
+>  . . .   
+>       </folders 
+>       <reports 
+>       <report 
+>          <parameters 
+>                <parameter / 
+>          </parameters 
+>          <datasources 
+>                <reference / 
+>          </datasources 
+>       </report 
+>  . . .   
+>       </reports 
+> </ReportingServices  
+> ```  
 
 The following table describes the elements that you use to specify a report to upload to a project and that can be accessed through SQL Server Reporting Services.
 

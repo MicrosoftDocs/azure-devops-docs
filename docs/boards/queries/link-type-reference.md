@@ -309,7 +309,7 @@ The following table describes the external link types you can choose when adding
 <td>Integrated in release environment</td>
 <td>Release</td>
 <td>Release pipeline</td>
-<td>Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition. To learn how to set this option, see <a href="../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status">Release pipelines, How do I integrate and report release status?</a>. 
+<td>Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see <a href="../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status">Release pipelines, How do I integrate and report release status?</a>. 
 </td>
 </tr>
 <tr>

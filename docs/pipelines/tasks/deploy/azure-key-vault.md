@@ -63,8 +63,11 @@ When you want to access secrets:
   - Choose **OK** to save the changes.<p />
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
+
 ::: moniker-end
 
 ## Arguments

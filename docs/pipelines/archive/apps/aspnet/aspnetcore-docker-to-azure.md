@@ -63,21 +63,21 @@ monikerRange: '>= tfs-2015'
 
 1. In Visual Studio, [connect first to a project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
  
-1. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a project first and using the command in Team Explorer, the new project is automatically added to source control in the project.)
+2. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a project first and using the command in Team Explorer, the new project is automatically added to source control in the project.)
  
-1. In the **New Project** dialog box, search on "ASP.NET Core".
+3. In the **New Project** dialog box, search on "ASP.NET Core".
  
-1. Select **ASP.NET Core Web Application (.NET Core)**from the list and click **OK**.
+4. Select <strong>ASP.NET Core Web Application (.NET Core)</strong>from the list and click **OK**.
  
-1. Select **Web Application** from the template list.
+5. Select **Web Application** from the template list.
  
-1. Check that **Authentication** is set to **No Authentication**. If not, click **Change Authentication** to set it.
+6. Check that **Authentication** is set to **No Authentication**. If not, click **Change Authentication** to set it.
  
-1. Set **Enable Docker Support**
+7. Set **Enable Docker Support**
  
-1. Click the **Docker for Windows** link to install Docker.
+8. Click the **Docker for Windows** link to install Docker.
 
-1. Click **OK** to complete creating the project.
+9. Click **OK** to complete creating the project.
 
 <h3 id="create_acs">How do I create an Azure Container Service?</h3>
 

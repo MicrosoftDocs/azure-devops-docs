@@ -33,8 +33,11 @@ This task will fail if no Python versions are found in Agent.ToolsDirectory. Ava
 > x86 and x64 versions of Python are available on Microsoft-hosted Windows agents, but not on Linux or macOS agents.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]
+
 ::: moniker-end
 
 ## Arguments

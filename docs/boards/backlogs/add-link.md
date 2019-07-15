@@ -139,7 +139,6 @@ If you are working from the Query Results page, you'll need to bulk save the wor
 
 
 #### [Visual Studio](#tab/visual-studio/)
-
 From the Add link to Multiple Items dialog, select the link type, enter a work item ID, and then click OK. 
 
 For example, here we use the Related link type to link several items to the user story with ID of *4654*. 
@@ -151,7 +150,6 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 You'll need to bulk save the work items you've modified. 
 
 * * *
-
 ## Link to a new work item   
 
 Here, we have selected to add a link to the selected work items.  
@@ -164,12 +162,12 @@ Here, we have selected to add a link to the selected work items.
     <img src="_img/bulk-modify-link-new-ts.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" />
     ::: moniker-end
 
-1. A work item of the type selected opens. Enter additional information and save the work item.
+2. A work item of the type selected opens. Enter additional information and save the work item.
     ::: moniker range=">= tfs-2017"
     > [!div class="mx-imgBorder"]  
     > ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
     ::: moniker-end
-1. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
+3. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
 
 

@@ -1,5 +1,5 @@
 - name: Sprints (Scrum) 
-  href: index.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About sprints and Scrum
   href: scrum-overview.md
 - name: Quickstarts
@@ -7,7 +7,7 @@
   - name: Schedule sprints
     href: define-sprints.md 
   - name: Define iteration paths or sprints
-    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json    
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json    
 - name: Tutorials 
   items:
   - name: 1. Assign backlog items to a sprint

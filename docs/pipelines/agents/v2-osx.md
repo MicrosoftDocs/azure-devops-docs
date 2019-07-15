@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
@@ -50,20 +52,28 @@ After you get a feel for how agents work, or if you want to automate setting up 
 ### Azure Pipelines and TFS 2017 and newer
 
 <ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
+<li>Log on to the machine using the account for which you&#39;ve prepared permissions as explained above.</li>
+<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the <strong>Agent pools</strong> tab:
+
+<ul>
+<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
+<li>Azure DevOps Server 2019: <code>https:&#x2F;&#x2F;dev.azure.com/{your_collection}/_settings/agentpools</code></li>
+<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
+<li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
+<li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
+<li>That didn&#39;t work: <a href="/azure/devops/server/admin/websitesettings" data-raw-source="[Get the correct URL](/azure/devops/server/admin/websitesettings)">Get the correct URL</a></li>
+</ul>
 </li>
 
-<li>Click **Download agent**.</li>
+<li>Click <strong>Download agent</strong>.</li>
 
-<li>On the **Get agent** dialog box, click **macOS**.</li>
+<li>On the <strong>Get agent</strong> dialog box, click <strong>macOS</strong>.</li>
 
-<li>Click the **Download** button.
+<li>Click the <strong>Download</strong> button.
 
 <li>Follow the instructions on the page.</li>
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
+<li>Unpack the agent into the directory of your choice. <code>cd</code> to that directory and run <code>./config.sh</code>. Make sure that the path to the directory contains no spaces because tools and scripts don&#39;t always properly escape spaces.</li>
 </ol>
 
 ::: moniker-end
@@ -74,12 +84,12 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
-0. Follow the instructions on that page to download the agent.
+1. Follow the instructions on that page to download the agent.
 
-0. Configure the agent.
- ```
-./config.sh
- ```
+2. Configure the agent.
+   ```
+   ./config.sh
+   ```
 
 ::: moniker-end
 
@@ -115,10 +125,10 @@ To run the agent interactively:
 
 0. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
 
-0. Run the agent.
- ```bash
-./run.sh
- ```
+1. Run the agent.
+   ```bash
+   ./run.sh
+   ```
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
@@ -247,19 +257,19 @@ When you configure the service, it takes a snapshot of some useful environment v
 
 > [!div class="vscom-steps-container" ]
 > 0. &nbsp;
->  ```bash
-> ./env.sh 
->  ```
->
-> 0. &nbsp;
-> ```bash
-> ./svc.sh stop
->  ```
->
-> 0. &nbsp;
->  ```bash
-> ./svc.sh start
->  ```
+>    ```bash
+>    ./env.sh 
+>    ```
+> 
+> 1. &nbsp;
+>    ```bash
+>    ./svc.sh stop
+>    ```
+> 
+> 2. &nbsp;
+>    ```bash
+>    ./svc.sh start
+>    ```
 
 The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
 
@@ -269,12 +279,11 @@ You can also run your own instructions and commands to run when the service star
 
 0. Edit `runsvc.sh`.
 
-0. Replace the following line with your instructions:
+1. Replace the following line with your instructions:
 
 ```bash
 
 # insert anything to setup env when running as a service
-
 ```
 
 <h3 id="service-files">Service Files</h3>
@@ -326,7 +335,9 @@ You can use the template described above as to facilitate generating other kinds
 [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -338,15 +349,21 @@ You can use the template described above as to facilitate generating other kinds
 [Run the agent behind a web proxy](proxy.md)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [include](../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

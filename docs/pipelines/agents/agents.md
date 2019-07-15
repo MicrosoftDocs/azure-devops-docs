@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 To build your code or deploy your software using Azure Pipelines you need at least one agent. As you add more code and people, you'll eventually need more.

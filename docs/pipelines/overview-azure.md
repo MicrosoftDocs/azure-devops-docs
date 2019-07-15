@@ -16,7 +16,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+
+
 ::: moniker-end
 
 Azure Pipelines is Microsoft's DevOps solution for Azure. The Build and Release services provide streamlined experiences to deploy your apps to one of Azure's many services. These services provide a continuous delivery solution if your code is managed in GitHub, Azure Repos Git or Team Foundation Version Control, or in one of the other Git servers.

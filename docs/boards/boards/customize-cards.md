@@ -382,12 +382,13 @@ Requires TFS 2015.1 or later version.
 
 1. Open the Settings dialog for the Kanban board you want to customize. 
 
-1. Choose **Tag colors** and then choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
+2. Choose **Tag colors** and then choose the ![ ](../../_img/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
 
    ::: moniker range=">= tfs-2017"
    > [!div class="mx-imgBorder"]  
    > ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tag-colors.png) 
    ::: moniker-end   
+
    ::: moniker range="tfs-2015"  
    >  ![Settings, Tag colors dialog (Kanban), TFS 2015](_img/kanban-card-customize-tag-colors.png)  
    ::: moniker-end   
@@ -395,7 +396,7 @@ Requires TFS 2015.1 or later version.
    > [!TIP]
    > If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 
 
-2. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
 
 <a id="annotations" > </a>
 

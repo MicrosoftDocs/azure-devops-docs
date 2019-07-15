@@ -24,7 +24,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 > [!NOTE]
 > You can also [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
-> 
+
 ::: moniker-end
 
 ## Prerequisites
@@ -78,6 +78,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2015"  
+
 ## Add the Other links widget to your dashboard
 
 Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
@@ -117,6 +118,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+
 1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
@@ -176,7 +178,8 @@ To request feedback, you fill out a form that generates an email request to your
 ::: moniker-end 
 
 
-## Provide Feedback
+## Provide feedback
+
 Reviewers launch your application and provide feedback through the free Microsoft Feedback Client.
 
 1. Reviewers who don't have a version of Visual Studio installed can download the feedback client directly from the feedback request they receive.
@@ -209,6 +212,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	![Submit page on Feedback Client](_img/ALM_GF_ModifyFeedback.png)  
 
 ## Review feedback
+
 1. Open the Feedback query. 
 
 	![Feedback link on Queries page in the web portal](_img/ALM_GF_FeedbackQuery.png)  

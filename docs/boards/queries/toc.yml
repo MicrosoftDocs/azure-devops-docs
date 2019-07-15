@@ -1,9 +1,9 @@
 - name: Queries
-  href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About managed queries
   href: example-queries.md
 - name: Ad hoc vs managed queries
-  href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Query quick reference
   href: query-index-quick-ref.md
 - name: Quickstarts
