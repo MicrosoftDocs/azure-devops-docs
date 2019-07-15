@@ -25,8 +25,11 @@ Use this task in a build or release pipeline to run gulp tasks using the Node.js
 gulp
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GulpV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -40,7 +43,7 @@ gulp
 </thead>
 <tr>
 <td>gulp file path</td>
-<td>Relative path from the repo root to the gulp script that you want to run. The default value is ```gulpfile.js```
+<td>Relative path from the repo root to the gulp script that you want to run. The default value is <code>gulpfile.js</code>
 </td>
 </tr>
 <tr>
@@ -53,7 +56,7 @@ gulp
 <tr>
 <td>Arguments</td>
 <td><p>Additional arguments passed to gulp.</p>
-<p>Tip: ```--gulpfile``` is not needed. This argument is handled by the gulp file path argument shown above.</p>
+<p>Tip: <code>--gulpfile</code> is not needed. This argument is handled by the gulp file path argument shown above.</p>
 </td>
 </tr>
 <tr>
@@ -62,7 +65,7 @@ gulp
 </tr>
 <tr>
 <td>gulp.js location</td>
-<td>gulp.js to run.  The default value is `node_modules/gulp/bin/gulp.js`</td>
+<td>gulp.js to run.  The default value is <code>node_modules/gulp/bin/gulp.js</code></td>
 </tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
@@ -85,7 +88,7 @@ On the [Build](../../index.md) tab:
 <td>
 <p>Install npm.</p>
 <ul>
-<li>Command: `install`</li>
+<li>Command: <code>install</code></li>
 </ul>
 </td>
 </tr>
@@ -98,8 +101,8 @@ On the [Build](../../index.md) tab:
 <td>
 <p>Run your script.</p>
 <ul>
-<li>gulp file path: `gulpfile.js`</li>
-<li>Advanced, gulp.js location: `node_modules/gulp/bin/gulp.js`</li>
+<li>gulp file path: <code>gulpfile.js</code></li>
+<li>Advanced, gulp.js location: <code>node_modules/gulp/bin/gulp.js</code></li>
 </ul>
 </td>
 </tr>
@@ -120,7 +123,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

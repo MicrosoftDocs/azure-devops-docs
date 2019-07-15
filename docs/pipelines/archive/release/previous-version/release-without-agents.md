@@ -361,7 +361,7 @@ You also need a build definition that builds your app.
 
 **A**: Yes. `Set-DscLocalConfigurationManager` is not supported.
 
-###Q: What other differences are there between using a vNext release template and the deployment agent-based release template?
+### Q: What other differences are there between using a vNext release template and the deployment agent-based release template?
 
 **A**: Apart from not needing deployment agents, these are the other differences:
 

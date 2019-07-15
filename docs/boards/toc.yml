@@ -92,11 +92,11 @@
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Work as a Stakeholder
-    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Process Customization 
     href: ../reference/index.md
   - name: Client support for work tracking
-    href: ../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 

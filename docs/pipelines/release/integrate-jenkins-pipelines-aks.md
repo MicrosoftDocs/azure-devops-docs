@@ -72,14 +72,14 @@ GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutor
 
 1. In Azure Repos, on the **Code** page for your Azure Repos project, select the option to **Import repository**.
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
-  ```
-  https://github.com/spring-guides/gs-spring-boot-docker
-  ```
+2. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
+   ```
+   https://github.com/spring-guides/gs-spring-boot-docker
+   ```
 
-1. Click **Import** to copy the sample code into your Git repo.
+3. Click **Import** to copy the sample code into your Git repo.
 
-1. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
+4. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
 
 ## Configure the sample app to build and push a Docker image to your ACR
 
@@ -176,8 +176,8 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 You must configure credentials for connecting to Azure Pipelines.  When using credentials to connect to Azure Pipelines, it is a best practice to use a **personal access token (PAT)**.  You also need to create a Jenkins credential to use in your Jenkins build jobs.
 
-  > [!NOTE]
-  Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
+> [!NOTE]
+>   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
  
 1.  Create a PAT in your Azure Pipelines account. Jenkins requires this information to access your Azure DevOps organization.  Ensure you **store** the token information for upcoming steps in this section.
   Read [How do I create a personal access token for Azure Pipelines and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.

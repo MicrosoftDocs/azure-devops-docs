@@ -951,8 +951,8 @@ To support configuration, the widget contribution needs to be changed as well. T
 <`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration` 
 
 <div class="alert alert-warning">
-    <b>Warning</b>: If the contribution entry for your configurable widget doesn't target the 
-    configuration using the right publisher and extension name as described above, the configure button doesn't show up for the widget. 
+    <b>Warning</b>: If the contribution entry for your configurable widget doesn&#39;t target the 
+    configuration using the right publisher and extension name as described above, the configure button doesn&#39;t show up for the widget. 
 </div> 
 
 At the end of this part, the manifest file should contains three widgets and one configuration. You can get the complete manifest from the sample [here](https://github.com/Microsoft/vso-extension-samples/blob/master/widgets/vss-extension.json).

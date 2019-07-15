@@ -54,39 +54,39 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. Create a new build pipeline.
 
- # [Azure Repos or TFS repo](#tab/vsts)
+   # [Azure Repos or TFS repo](#tab/vsts)
 
- Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+   Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
- # [GitHub repo](#tab/github)
+   # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+   Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
- ---
+   ---
 
-1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
+2. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent pool**:
+3. For the **Agent pool**:
 
- * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
+   * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
 
- * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
+   * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
 
-1. Click **Get sources** and then:
+4. Click **Get sources** and then:
 
- # [Azure Repos or TFS repo](#tab/vsts)
+   # [Azure Repos or TFS repo](#tab/vsts)
 
- Observe that the new build pipeline is automatically linked to your repository.
+   Observe that the new build pipeline is automatically linked to your repository.
 
- # [GitHub repo](#tab/github)
+   # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo.
+   Select your version control repository. You'll need to authorize access to your repo.
 
-1. Click the **+** icon on **Job 1** of the build and then:
+5. Click the **+** icon on **Job 1** of the build and then:
 
 ::: moniker range=">= tfs-2018"
 

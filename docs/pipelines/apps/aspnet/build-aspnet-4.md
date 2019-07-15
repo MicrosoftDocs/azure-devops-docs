@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
@@ -82,14 +84,14 @@ It is often required to build your app in multiple configurations. The following
 
 1. Click the **Variables** tab and modify these variables:
 
- * `BuildConfiguration` = `debug, release`
+   * `BuildConfiguration` = `debug, release`
 
- * `BuildPlatform` = `x86, x64`
+   * `BuildPlatform` = `x86, x64`
 
-1. Select **Tasks** and click on the **agent job** to change the options for the job:
+2. Select **Tasks** and click on the **agent job** to change the options for the job:
 
- * Select **Multi-configuration**.
+   * Select **Multi-configuration**.
 
- * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
+   * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
-1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.

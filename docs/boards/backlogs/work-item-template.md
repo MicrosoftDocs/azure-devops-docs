@@ -55,7 +55,6 @@ For example usage of work item templates, see [Sample work item templates](../wo
 The steps to capture a work item differ based on the platform, version, and client you use.  
 
 #### [Browser](#tab/browser/)
-
 <a id="team-services-capture" /> 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -139,7 +138,6 @@ If you connect to an on-premises TFS and primarily create work items working in 
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
-
 <a id="team-explorer-capture" />
 
 If you primarily work in Visual Studio or Team Explorer, and want to create work items from templates that you can access from the Work Items page, you can create work item template files (extension .wt).
@@ -162,7 +160,6 @@ You create these files using Work Item Templates, a power tool for Visual Studio
 4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
 
 * * *
-
 <a id="add-wi"> </a>
 
 ## Add a work item using a template  
@@ -283,8 +280,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 <a id="team-services-apply" />
 
-#### [Browser](#tab/browser)
-
+#### [Browser](#tab/browser/)
 ::: moniker range=">= azure-devops-2019"  
 
 ### Apply a template within a work item form 
@@ -310,10 +306,12 @@ You can apply a template to a single work item or perform a bulk update of sever
 1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
 
-    <img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
+~~~
+<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
 
-    > [!TIP]  
-    > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
+> [!TIP]  
+> Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
+~~~
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
@@ -328,8 +326,8 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 2. Choose the template to apply. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
 
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
@@ -343,7 +341,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 2. Choose the template to apply. 
 
-	![Bulk update several work items](_img/wi-templates-bulk-update-list-vsts.png)
+    ![Bulk update several work items](_img/wi-templates-bulk-update-list-vsts.png)
 
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
@@ -356,8 +354,7 @@ The feature to apply a template to existing work items from the web browser isn'
 ::: moniker-end 
 
 
-#### [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 <a id="team-explorer-apply" />
 
 ### Apply a template to one or more work items  
@@ -379,14 +376,12 @@ The feature to apply a template to existing work items from the web browser isn'
 
     <img src="_img/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
 
-* * * 
-
+* * *
 <a id="manage"> </a> 
 
 ## Manage work item templates
 
 #### [Browser](#tab/browser/)
-
 ::: moniker range=">= azure-devops-2019"
 
 You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
@@ -481,7 +476,6 @@ Managing work item templates from the web portal is only supported from TFS 2017
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
-
 <a id="team-explorer-manage" />
 
 If Visual Studio with power tools installed, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template.   
@@ -519,7 +513,6 @@ To make frequently-used templates more accessible, you can set a default templat
 To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
 * * *
-
 ::: moniker range=">= tfs-2017"
 
 ## Add or remove tags from templates 
@@ -549,6 +542,7 @@ You can specify a work item template that specifies several field values using t
 > [FieldReferenceName 3]={FieldValue 3}&
 > . . .
 > ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"

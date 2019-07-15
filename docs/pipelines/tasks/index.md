@@ -111,17 +111,17 @@ monikerRange: '>= tfs-2015'
 
 ## Package
 
-| Task | Versions |
-| ---- | -------- |
-| ![icon](package/_img/cocoapods.png) [CocoaPods](package/cocoapods.md). CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](package/_img/conda.png) [Conda Environment](package/conda-environment.md). Create and activate a Conda environment | Azure Pipelines |
-| ![icon](package/_img/npm.png) [npm](package/npm.md). Install npm packages | Azure Pipelines, TFS 2015 RTM and newer |
+|                                                                                                                    Task                                                                                                                     |                Versions                 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+|                                    ![icon](package/_img/cocoapods.png) [CocoaPods](package/cocoapods.md). CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install                                    | Azure Pipelines, TFS 2015 RTM and newer |
+|                                                         ![icon](package/_img/conda.png) [Conda Environment](package/conda-environment.md). Create and activate a Conda environment                                                          |             Azure Pipelines             |
+|                                                                                  ![icon](package/_img/npm.png) [npm](package/npm.md). Install npm packages                                                                                  | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](package/_img/npmauthenticate.png) [npm Authenticate](package/npm-authenticate.md). Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](package/_img/nuget-installer.png) [NuGet Installer](package/nuget.md). Installs and updates missing NuGet packages | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget.md). Creates nupkg outputs from csproj or nuspec files | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](package/_img/nuget-publisher.png) [NuGet Publisher](package/nuget.md). Uploads nupkg files to a nuget server | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](package/_img/pypi-publisher.png) [PyPI Publisher](package/pypi-publisher.md). Publish a Python package to PyPI | Azure Pipelines |
-| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore - deprecated. See [Updating component references to NuGet](/xamarin/cross-platform/troubleshooting/component-nuget) | Azure Pipelines, TFS 2015 RTM and newer | Azure Pipelines, TFS 2017 and newer |
+|                                                         ![icon](package/_img/nuget-installer.png) [NuGet Installer](package/nuget.md). Installs and updates missing NuGet packages                                                          | Azure Pipelines, TFS 2015 RTM and newer |
+|                                                       ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget.md). Creates nupkg outputs from csproj or nuspec files                                                        |  Azure Pipelines, TFS 2015.3 and newer  |
+|                                                            ![icon](package/_img/nuget-publisher.png) [NuGet Publisher](package/nuget.md). Uploads nupkg files to a nuget server                                                             |  Azure Pipelines, TFS 2015.3 and newer  |
+|                                                           ![icon](package/_img/pypi-publisher.png) [PyPI Publisher](package/pypi-publisher.md). Publish a Python package to PyPI                                                            |             Azure Pipelines             |
+|                      ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore - deprecated. See [Updating component references to NuGet](/xamarin/cross-platform/troubleshooting/component-nuget)                      | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Deploy
 

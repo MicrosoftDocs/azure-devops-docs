@@ -46,7 +46,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](_img/customize-boards/open-settings-agile.png)  
@@ -56,7 +56,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Fields dialog](_img/customize-boards/settings-fields-agile-dialog.png) 
 	
-2. Choose one of the following tabs based on what you want to customize:  
+3. Choose one of the following tabs based on what you want to customize:  
 
 	**Common customizations:**  
 	<ul>

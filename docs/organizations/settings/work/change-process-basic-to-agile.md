@@ -21,11 +21,10 @@ ms.date: 06/28/2019
 
 You can change a project based on the Basic process to use the Agile process. Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Process | Work item types | Workflow |
-> |------|---------|---------|
-> |**Basic** | ![Basic work item types](../../../boards/get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/_img/track-issues/basic-process-workflow.png)|
-> |**Agile** | ![Agile work item types](_img/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/_img/about-boards/agile-process-workflow.png)|
+|  Process | Work item types | Workflow |
+|------|---------|---------|
+|**Basic** | ![Basic work item types](../../../boards/get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png)|![basic workflow](../../../boards/get-started/_img/track-issues/basic-process-workflow.png)|
+|**Agile** | ![Agile work item types](_img/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/_img/about-boards/agile-process-workflow.png)|
 
 For an overview of all processes, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
 

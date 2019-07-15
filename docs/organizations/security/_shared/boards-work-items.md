@@ -35,7 +35,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Move work item to another project</td>
 <td> </td>
@@ -43,7 +42,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Email work items</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -72,7 +70,6 @@ ms.topic: include
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
@@ -81,7 +78,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/project/feedback/get-feedback)">Request feedback</a> 
 </td>
@@ -90,7 +86,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 
@@ -129,7 +124,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Email work items</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -158,7 +152,6 @@ ms.topic: include
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
@@ -167,7 +160,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/project/feedback/get-feedback)">Request feedback</a> 
 </td>
@@ -176,12 +168,10 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 
 ::: moniker-end    
-
 
 
 ::: moniker range="tfs-2015"
@@ -196,47 +186,18 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View/open work items</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Add work items, add tags to work items<br/><em>(Stakeholders can assign existing tags to work items, but can't add new tags)</em></td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Email work items</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -258,7 +219,6 @@ ms.topic: include
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
@@ -267,7 +227,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
 </td>
@@ -276,12 +235,10 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 
 ::: moniker-end    
-
 
 
 ::: moniker range="tfs-2013"
@@ -296,47 +253,18 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View/open work items</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Add work items, add tags to work items<br/><em>(Stakeholders can assign existing tags to work items, but can't add new tags)</em></td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Email work items</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -344,18 +272,12 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <td align="left">Permanently delete work items</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
@@ -364,7 +286,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
 </td>
@@ -373,7 +294,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 

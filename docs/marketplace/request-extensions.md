@@ -30,7 +30,7 @@ If you don't have permissions to install extensions, you can request extensions 
 
 3. Select **Extensions**, and then **Browse marketplace**.
 
-  ![Select Extensions and Browse marketplace](_img/select-extensions-browse-marketplace.png)  
+   ![Select Extensions and Browse marketplace](_img/select-extensions-browse-marketplace.png)  
 
 4. Select an extension to install.
 5. If you don't have permission to install the extension, you can request it now.
@@ -39,7 +39,7 @@ Review your requests after the Marketplace sends the request to your Project Col
 
 Your requests appear on the **Extensions** page, **Requested** tab.
 
-![Requested extensions](_img/requested-extensions.png)](_shared/_img/requested-extensions.png)
+![Requested extensions](_shared/_img/requested-extensions.png)
 
 Your Project Collection Administrator can review your request after they get it.
 

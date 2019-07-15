@@ -26,10 +26,10 @@ Use this task in a build or release pipeline to build an Android app using Gradl
 
 The build agent must have the following capabilities:
 
- * Android SDK (with the version number you will build against)
- * Android Support Repository (if referenced by Gradle file)
+* Android SDK (with the version number you will build against)
+* Android Support Repository (if referenced by Gradle file)
 
- ## Arguments
+  ## Arguments
 
 <table>
 <thead>
@@ -41,8 +41,8 @@ The build agent must have the following capabilities:
 <tr>
 <td>Location of Gradle Wrapper</td>
 <td>
-<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
-<p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p>
+<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the <code>gradlew.bat</code> wrapper. Agents on Linux or macOS can use the <code>gradlew</code> shell script.</p>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" data-raw-source="[The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)">The Gradle Wrapper</a>.</p>
 </td>
 </tr>
 <tr>
@@ -52,8 +52,8 @@ The build agent must have the following capabilities:
 <tr>
 <td>Gradle Arguments</td>
 <td>
-<p>Provide any options to pass to the Gradle command line.     The default value is ```build```</p>
-<p>See [Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html).</p>
+<p>Provide any options to pass to the Gradle command line.     The default value is <code>build</code></p>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_command_line.html" data-raw-source="[Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html)">Gradle command line</a>.</p>
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The build agent must have the following capabilities:
 </td>
 <td>
 Name of the AVD to be started or created.
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD.
+<blockquote><strong>Note: </strong> You must deploy your own <a href="../../agents/agents.md" data-raw-source="[agent](../../agents/agents.md)">agent</a> to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD.
 </blockquote>
 </td>
 </tr>
@@ -75,17 +75,17 @@ Name of the AVD to be started or created.
 </tr>
 <tr>
 <td>AVD Target SDK</td>
-<td>Android SDK version the AVD should target.  The default value is ```android-19```</td>
+<td>Android SDK version the AVD should target.  The default value is <code>android-19</code></td>
 </tr>
 <tr>
 <td>AVD Device</td>
-<td>(Optional) Device pipeline to use.  Can be a device index or id.  The default value is ```Nexus 5```</td>
+<td>(Optional) Device pipeline to use.  Can be a device index or id.  The default value is <code>Nexus 5</code></td>
 </tr>
 <tr>
 <td>AVD ABI</td>
 <td>
-<p>The Application Binary Interface to use for the AVD.  The default value is ```default/armeabi-v7a```</p>
-<p>See [ABI Management](http://developer.android.com/ndk/guides/abis.html).</p>
+<p>The Application Binary Interface to use for the AVD.  The default value is <code>default/armeabi-v7a</code></p>
+<p>See <a href="http://developer.android.com/ndk/guides/abis.html" data-raw-source="[ABI Management](http://developer.android.com/ndk/guides/abis.html)">ABI Management</a>.</p>
 </td>
 </tr>
 <tr>
@@ -95,8 +95,8 @@ Name of the AVD to be started or created.
 <tr>
 <td>Create AVD Optional Arguments</td>
 <td>
-<p>Provide any options to pass to the ```android create avd``` command.</p>
-<p>See [Android Command Line](http://developer.android.com/tools/help/android.html).</p>
+<p>Provide any options to pass to the <code>android create avd</code> command.</p>
+<p>See <a href="http://developer.android.com/tools/help/android.html" data-raw-source="[Android Command Line](http://developer.android.com/tools/help/android.html)">Android Command Line</a>.</p>
 </td>
 </tr>
 <tr>
@@ -106,14 +106,14 @@ Name of the AVD to be started or created.
 <td>Start and Stop Android Emulator</td>
 <td>
 <p>Check if you want the emulator to be started and stopped when Android Build task finishes.</p>
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator.
+<blockquote><strong>Note: </strong> You must deploy your own <a href="../../agents/agents.md" data-raw-source="[agent](../../agents/agents.md)">agent</a> to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator.
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>Timeout in Seconds</td>
 <td>
-How long should the build wait for the emulator to start.  The default value is ```300``` seconds.
+How long should the build wait for the emulator to start.  The default value is <code>300</code> seconds.
 </td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ Check if you want to start the emulator with no GUI (headless mode).
 <tr>
 <td>Emulator Optional Arguments</td>
 <td>
-(Optional) Provide any options to pass to the ```emulator``` command.  The default value is ```-no-snapshot-load -no-snapshot-save```
+(Optional) Provide any options to pass to the <code>emulator</code> command.  The default value is <code>-no-snapshot-load -no-snapshot-save</code>
 </td>
 </tr>
 <tr>
@@ -135,7 +135,10 @@ Check if you want the AVD to be deleted upon completion.
 </td>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 

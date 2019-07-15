@@ -91,7 +91,7 @@ If your build does not already [sign and zipalign](https://developer.android.com
 add the [Android Signing](../tasks/build/android-signing.md) task to the YAML.
 An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM consumed by the app.
 
-<blockquote><strong>Important: </strong>We recommend storing each of the following passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
+<blockquote><strong>Important: </strong>We recommend storing each of the following passwords in a <a href="../process/variables.md#secret-variables" data-raw-source="[secret variable](../process/variables.md#secret-variables)">secret variable</a>.</blockquote>
 
 ::: moniker range="> tfs-2018"
 
