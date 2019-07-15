@@ -19,7 +19,7 @@ To learn more about the Azure Pipelines integration with Jira software cloud, se
 ### Improvements to the Azure Pipelines app for Slack
 
 In February, we released the Azure Pipelines app for Slack to help you monitor your pipelines. With this update, we enhanced the app.
-Will use **@mention** in the Slack channel when there is a notification for a failed build that you triggered. In addition, it will notify you when you are an approver on a release deployment approval pending notification.
+Will use <strong>@mention</strong> in the Slack channel when there is a notification for a failed build that you triggered. In addition, it will notify you when you are an approver on a release deployment approval pending notification.
 
 In addition, you can now paste a link to a build or release in the Azure Pipelines app and get a rich preview of the pipeline. This adds context to the link and makes it easier to navigate to Azure DevOps.
 
@@ -83,7 +83,7 @@ Integration of Azure Pipelines with Optimizely experimentation platform empowers
 
 The Optimizely extension for Azure DevOps adds experimentation and feature flag rollout steps to the build and release pipelines, so you can continuously iterate, roll features out, and roll them back using Azure Pipelines.
 
-Learn more about the Azure DevOps Optimizely extension [here] (https://marketplace.visualstudio.com/items?itemName=ms-devlabs.AzureDevOpsOptimizely).
+Learn more about the Azure DevOps Optimizely extension [here](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.AzureDevOpsOptimizely).
 
 > [!div class="mx-imgBorder"]
 > ![Optimizely](../../_img/154_11.png "Experiment or roll features out")

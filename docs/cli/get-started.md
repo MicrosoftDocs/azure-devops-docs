@@ -27,9 +27,9 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 
 2. Add the Azure DevOps extension:
 
-	```
+    ```
 	az extension add --name azure-devops
-	```
+    ```
 
 	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
 
@@ -37,9 +37,9 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 
 4. Configure defaults: Although you can provide the organization and project for each command, we recommend you set these as defaults in configuration for seamless commanding.
 
-	```
+    ```
 	az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
-	```
+    ```
 
 ## Command usage
 

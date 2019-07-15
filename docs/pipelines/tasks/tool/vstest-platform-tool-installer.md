@@ -27,8 +27,11 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 [none]
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.md)]
+
 ::: moniker-end
 
 ## Arguments

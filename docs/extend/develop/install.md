@@ -16,4 +16,4 @@ ms.date: 08/04/2016
 
 [!INCLUDE [Install](../_shared/procedures/install.md)]
 
-[!INCLUDE [ExtensionsTab](../_shared/extensions-tab.md)]
+

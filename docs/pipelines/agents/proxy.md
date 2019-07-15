@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration.

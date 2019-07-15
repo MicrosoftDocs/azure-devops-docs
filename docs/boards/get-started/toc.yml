@@ -1,5 +1,5 @@
 - name: Start using Azure Boards (Basic process) 
-  href: index.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: "What is Azure Boards?"
   href: what-is-azure-boards-basic-process.md
 - name: Sign up and invite some teammates 
@@ -13,7 +13,7 @@
 - name: Reference
   items:
   - name: Basic fields reference
-    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Key concepts
     href: key-concepts.md 
   - name: Default permissions & access (Security)

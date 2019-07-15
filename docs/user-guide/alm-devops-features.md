@@ -1223,15 +1223,15 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Azure Test Plans and exploratory testing](../test/index.md).</p>
+<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.md)">Azure Test Plans and exploratory testing</a>.</p>
 
 ![Exploratory testing](_img/features/features-exploratory-testing.png)
 
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Azure Test Plans, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 

@@ -17,14 +17,14 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 <td>
 <br/>
 <strong>Backlogs</strong><br/><br/>
-**Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
+<strong>Ctrl+Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog<br/>
-&nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration<br/>
-&nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration<br/>
+&nbsp;&nbsp;&nbsp;<strong>m,b</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog<br/>
+&nbsp;&nbsp;&nbsp;<strong>m,i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration<br/>
+&nbsp;&nbsp;&nbsp;<strong>m,n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ins**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child<br/>
-**Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ins</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child<br/>
+<strong>Ctrl+Shift+f</strong>&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>  
 </td>
 </tr>
 </tbody>

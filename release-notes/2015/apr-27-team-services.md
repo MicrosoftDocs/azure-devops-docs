@@ -51,7 +51,7 @@ And finally, we’ve added a new capability that enables you to restore a delete
 1. Go to your profile page by selecting your identity on the top right corner.
 2. Click **Restore** on the deleted account.
 
-	That’s it for this sprint. We’ll be back in three weeks with more goodness. If you have questions, feel free to reach out on [Twitter](https://twitter.com/VisualStudio) ([@aaronbjork](https://twitter.com/aaronbjork)). And if you’ve got ideas on what you’d like to see prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to either add an idea or add your support to an existing one.
+	That’s it for this sprint. We’ll be back in three weeks with more goodness. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to either add an idea or add your support to an existing one.
 
 Thanks,
 

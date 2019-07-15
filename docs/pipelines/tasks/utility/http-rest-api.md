@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2018'
 Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -34,8 +36,11 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 This task can be used in only an [agentless job](../../process/phases.md#server-jobs).
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
+
 ::: moniker-end
 
 ## Arguments

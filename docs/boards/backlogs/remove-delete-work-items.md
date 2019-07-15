@@ -268,7 +268,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
 * To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the <strong>Project Administrators **group or have the **Delete work items in this project</strong> permission set to **Allow**. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+* To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 

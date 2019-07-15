@@ -105,8 +105,7 @@ In the **Universal Packages** task that you configured previously, choose the ap
 
 You can also download a Universal Package from your pipeline.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 To download a Universal Package from a feed in your organization, use the following snippet: 
 
 ```yaml
@@ -119,6 +118,7 @@ steps:
     vstsFeedPackage: 'fabrikam-package'
     vstsPackageVersion: 1.0.0
 ```
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
@@ -142,6 +142,7 @@ steps:
     versionDownloadExternal: 1.0.0
 ```
 
+
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | feedsToUse                     | Value should be `external` when you're downloading from an external source.|
@@ -151,8 +152,7 @@ steps:
 | versionDownloadExternal        | Version of the package to be downloaded.        |
 | [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
 
 - **Command:** Download
@@ -165,8 +165,7 @@ To download a Universal Package, add the **Universal Package** task and configur
 
 ![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
 
----
-
+* * *
 ## Q&A
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?

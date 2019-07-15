@@ -57,15 +57,15 @@ The Burndown report shows a stacked area chart of the **Completed Work** and **R
 
  You can review the Burndown report to determine the progress that the team made during an iteration. For example, you can find answers to the following questions:  
   
--   How fast is the team completing remaining work?  
+- How fast is the team completing remaining work?  
   
--   Is the team adding work during the iteration? Is the team allowing scope creep?  
+- Is the team adding work during the iteration? Is the team allowing scope creep?  
   
--   How much work can the team complete in the available time?  
+- How much work can the team complete in the available time?  
   
--   When can the team finish the work?  
+- When can the team finish the work?  
   
--   When can the team finish the current iteration?  
+- When can the team finish the current iteration?  
   
   <a name="Updating"></a> 
 

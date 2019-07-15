@@ -1,5 +1,5 @@
 - name: Plans (Agile at scale)
-  href: index.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   items:
 - name: Tutorials
 

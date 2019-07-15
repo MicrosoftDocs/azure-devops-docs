@@ -18,8 +18,10 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
+
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+
 ::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
@@ -49,7 +51,9 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Test Impact Analysis supported scenarios

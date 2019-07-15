@@ -25,8 +25,11 @@ A range of standard archive formats is supported, including .zip, .jar, .war, .e
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -41,21 +44,21 @@ None
 <tr>
 <td>Archive file patterns</td>
 <td>
-<p>The archives you want to extract. The default file path is relative from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
+<p>The archives you want to extract. The default file path is relative from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
 <p>Specify match pattern filters (one on each line) that you want to apply to identify the list of archives to extract. For example:
 </p>
 <ul>
-<li>``` test.zip``` extracts the test.zip file to the root folder.</li>
-<li>```test\*.zip``` extracts all .zip files in the test folder.</li>
-<li>```**\*.tar``` extracts all .tar files in the root folder and sub-folders.</li>
-<li>```**\bin\*.7z``` extracts all ''.7z'' files in any sub-folder named bin.</li>
+<li><code>test.zip</code> extracts the test.zip file to the root folder.</li>
+<li><code>test*.zip</code> extracts all .zip files in the test folder.</li>
+<li><code><strong>*.tar</code> extracts all .tar files in the root folder and sub-folders.</li>
+<li><code></strong>\bin*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
 </ul>
-<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
+<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as <code><strong>\bin\</strong></code> instead of <code>**\bin</code>.</p>
 </td>
 </tr>
 <tr>
 <td>Destination folder</td>
-<td>Folder where the archives will be extracted.  The default file path is relative to the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</td>
+<td>Folder where the archives will be extracted.  The default file path is relative to the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</td>
 </tr>
 <tr>
 <td>Clean destination folder before extracting</td>
@@ -64,7 +67,10 @@ None
 <tr>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -83,7 +89,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

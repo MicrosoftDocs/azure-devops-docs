@@ -67,19 +67,19 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
    [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-1. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
     `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-2. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+3. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
 
-3. Import the WIT definition file.  
+4. Import the WIT definition file.  
 
    `witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
-4. Open the web portal or refresh the page to view the changes.  
+5. Open the web portal or refresh the page to view the changes.  
 
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 

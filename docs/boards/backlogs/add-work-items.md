@@ -42,7 +42,6 @@ You can start adding work items once you connect to a project.
 
 
 #### [Browser](#tab/browser/)
-
 ::: moniker range=">= azure-devops-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
@@ -97,7 +96,6 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
-
 1. Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
     > [!div class="mx-imgBorder"]  

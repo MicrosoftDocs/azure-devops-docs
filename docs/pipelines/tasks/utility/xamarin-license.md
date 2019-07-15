@@ -30,6 +30,7 @@ None
 
 ## Arguments
 
+
 | Argument | Description |
 | -------- | ----------- |
 | Action | Select:<br /><br />**Activate** for the first instance of this build task, which should come before any instances of the Xamarin.Android or Xamarin.iOS tasks.<br /><br />**Deactivate** for the second instance of this build task, which should come after all instances of the Xamarin.Android and Xamarin.iOS tasks. You should also select **Always run** under **Control options** for the last instance of the Xamarin license task. |
@@ -53,7 +54,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -61,7 +61,7 @@ The number of tools and services that integrate with Visual Studio Online contin
 
 If you have a tool or service that integrates with Visual Studio Online, we want to know about it! Send an e-mail to [vsointegration@microsoft.com](mailto:vsointegration@microsoft.com).
 
-There you have it. If you have questions, feel free to reach out on Twitter. ([@aaronbjork](https://twitter.com/aaronbjork) is always listening). Ideas? Head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+There you have it. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Enjoy!
 

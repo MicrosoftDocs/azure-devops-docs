@@ -80,12 +80,12 @@ For example, users may want to hear only about failed builds or get notified onl
 ### Example: Get notifications only for failed builds
 
 > [!div class="mx-imgBorder"]
-![Build Filters](_img/integrations-slack/build-filters.png)
+> ![Build Filters](_img/integrations-slack/build-filters.png)
 
 ### Example: Get notifications only if the deployments are pushed to production environment
 
 > [!div class="mx-imgBorder"]
-![Release Filters](_img/integrations-slack/release-filters.png)
+> ![Release Filters](_img/integrations-slack/release-filters.png)
 
 ## Approve release deployments from your channel
 

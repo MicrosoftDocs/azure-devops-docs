@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This task publishes test results to Azure Pipelines or TFS when tests are executed
@@ -156,7 +158,7 @@ The final image will be published to Docker or Azure Container Registry
 #### Get the code
 
 1. Import into Azure DevOps or fork into GitHub the following repository.
-   This sample code includes a `Dockerfile` file at the root of the repository along with `.vsts-ci.docker.yml` file.
+   This sample code includes a `Dockerfile` file at the root of the repository along with `.vsts-ci.docker.yml` file.
 
    ```URL
    https://github.com/MicrosoftDocs/pipelines-dotnet-core
@@ -198,12 +200,11 @@ The final image will be published to Docker or Azure Container Registry
 
 #### Define the build pipeline
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-1. If you have a Docker Hub account, and want to push the image to your Docker registry,
-   replace the contents of the `.vsts-ci.docker.yml` file with the following:
+1. If you have a Docker Hub account, and want to push the image to your Docker registry,
+   replace the contents of the `.vsts-ci.docker.yml` file with the following:
 
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
@@ -233,7 +234,7 @@ The final image will be published to Docker or Azure Container Registry
        pswd: $(dockerPassword)
    ```
 
-   Alternatively, if you configure an Azure Container Registry and want to push the image to that registry,
+   Alternatively, if you configure an Azure Container Registry and want to push the image to that registry,
    replace the contents of the `.vsts-ci.yml` file with the following:
 
    ```YAML
@@ -286,17 +287,16 @@ The final image will be published to Docker or Azure Container Registry
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 1. Create a new build pipeline using the **Empty job**.
 
-1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
+1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-   * **Agent queue**: `Hosted Ubuntu 1604`
+   * **Agent queue**: `Hosted Ubuntu 1604`
 
-1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
+1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
-   * **Type**: Inline
+   * **Type**: Inline
    * **Script**: To build, test and copy artifacts to host, use the following script:
 
      ```Bash
@@ -343,8 +343,7 @@ YAML builds are not yet available on TFS.
 
 1. Save the pipeline and queue a build. Watch it create and push a Docker image to your registry and the test results to Azure DevOps.
 
----
-
+* * *
 <a name="attachments"></a>
 
 ## Attachments support

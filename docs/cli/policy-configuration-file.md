@@ -26,37 +26,37 @@ Say you want to create a manual queue build policy across all branch folders tha
 Create a policy configuration file for build policy, including the multiple application scopes.
 
 > [!div class="tabbedCodeSnippets"]
-```json
-{
-"isBlocking": true,
-"isDeleted": false,
-"isEnabled": true,
-"revision": 1,
-"settings": {
-  "buildDefinitionId": 22,
-  "displayName": "Manual Queue Policy",
-  "manualQueueOnly": true,
-  "queueOnSourceUpdateOnly": false,
-  "scope": [
-  {
-    "matchKind": "Prefix",
-    "refName": "refs/heads/release",
-    "repositoryId": "e646f204-53c9-4153-9ab9-fd41a11e3564"
-  },
-  {
-    "matchKind": "Exact",
-    "refName": "refs/heads/master",
-    "repositoryId": "e646f204-53c9-4153-9ab9-fd41a11e1234"
-  }
-  ],
-  "validDuration": 0
-},
-"type": {
-  "displayName": "Build",
-  "id": "0609b952-1397-4640-95ec-e00a01b2f659"
-}
-}
-```
+> ```json
+> {
+> "isBlocking": true,
+> "isDeleted": false,
+> "isEnabled": true,
+> "revision": 1,
+> "settings": {
+>   "buildDefinitionId": 22,
+>   "displayName": "Manual Queue Policy",
+>   "manualQueueOnly": true,
+>   "queueOnSourceUpdateOnly": false,
+>   "scope": [
+>   {
+>     "matchKind": "Prefix",
+>     "refName": "refs/heads/release",
+>     "repositoryId": "e646f204-53c9-4153-9ab9-fd41a11e3564"
+>   },
+>   {
+>     "matchKind": "Exact",
+>     "refName": "refs/heads/master",
+>     "repositoryId": "e646f204-53c9-4153-9ab9-fd41a11e1234"
+>   }
+>   ],
+>   "validDuration": 0
+> },
+> "type": {
+>   "displayName": "Build",
+>   "id": "0609b952-1397-4640-95ec-e00a01b2f659"
+> }
+> }
+> ```
 
 To learn more about the structure for various policy types, refer to [Policy create](/rest/api/azure/devops/policy/configurations/create#examples).
 
