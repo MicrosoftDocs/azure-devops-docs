@@ -36,11 +36,13 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-> 
+
+
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
+
 ::: moniker-end
 
 [!INCLUDE [temp](../_shared/api-versioning.md)]
@@ -57,37 +59,37 @@ With this in mind, the query to create a bug trend report looks like the followi
 
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
-  $apply=
-    filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
-    groupby((DateValue,State), aggregate($count as Count))
-  &$orderby=DateValue
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
+>   $apply=
+>     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
+>     groupby((DateValue,State), aggregate($count as Count))
+>   &$orderby=DateValue
+> ```
 
 This returns a result similar to the following:
 
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
-  "value": [
-    {
-      "@odata.id": null,
-      "State": "Active",
-      "DateValue": "2016-03-01T00:00:00-08:00",
-      "Count": 2666
-    },
-    {
-      "@odata.id": null,
-      "State": "Closed",
-      "DateValue": "2016-03-01T00:00:00-08:00",
-      "Count": 51408
-    }
-  ]
-}
-```
+> ```JSON
+> {
+>   "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
+>   "value": [
+>     {
+>       "@odata.id": null,
+>       "State": "Active",
+>       "DateValue": "2016-03-01T00:00:00-08:00",
+>       "Count": 2666
+>     },
+>     {
+>       "@odata.id": null,
+>       "State": "Closed",
+>       "DateValue": "2016-03-01T00:00:00-08:00",
+>       "Count": 51408
+>     }
+>   ]
+> }
+> ```
 
 This query will produce at most ```31 * (number of bug states)```. The default bug has three states 
 (Active, Resolved and Closed) which means at most this query will return 93 rows no matter 
@@ -98,38 +100,38 @@ Let's look at a variation on this example. You want to see the bug trend for an 
 To construct that query, do the following:  
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
-  $apply=
-    filter(WorkItemType eq 'Bug')/
-    filter(Iteration/IterationName eq 'Sprint 99')/
-    filter(DateValue ge Iteration/StartDate and (Iteration/EndDate eq null or DateValue le Iteration/EndDate))/
-    groupby((DateValue, State), aggregate($count as Count))
-  &$orderby=DateValue
-```
+> ```OData
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
+>   $apply=
+>     filter(WorkItemType eq 'Bug')/
+>     filter(Iteration/IterationName eq 'Sprint 99')/
+>     filter(DateValue ge Iteration/StartDate and (Iteration/EndDate eq null or DateValue le Iteration/EndDate))/
+>     groupby((DateValue, State), aggregate($count as Count))
+>   &$orderby=DateValue
+> ```
 
 This returns a result similar to the following:
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
-  "value": [
-    {
-      "@odata.id": null,
-      "State": "Active",
-      "DateValue": "2016-04-04T00:00:00-07:00",
-      "Count": 320
-    },
-    {
-      "@odata.id": null,
-      "State": "Closed",
-      "DateValue": "2016-04-04T00:00:00-07:00",
-      "Count": 38
-    }
-  ]
-}
-```
+> ```JSON
+> {
+>   "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
+>   "value": [
+>     {
+>       "@odata.id": null,
+>       "State": "Active",
+>       "DateValue": "2016-04-04T00:00:00-07:00",
+>       "Count": 320
+>     },
+>     {
+>       "@odata.id": null,
+>       "State": "Closed",
+>       "DateValue": "2016-04-04T00:00:00-07:00",
+>       "Count": 38
+>     }
+>   ]
+> }
+> ```
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
  

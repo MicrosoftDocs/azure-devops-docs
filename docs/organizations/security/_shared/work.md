@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 ::: moniker range="azure-devops"
+
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -15,34 +16,12 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
-
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -51,7 +30,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Change work item type. </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -60,7 +38,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Move or delete work items.<sup>1</sup> </td>
 <td> </td>
@@ -69,7 +46,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
@@ -79,7 +55,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
@@ -89,7 +64,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provide feedback.
 </td>
@@ -99,7 +73,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Request feedback.
 </td>
@@ -109,7 +82,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).<sup>2</sup>
 </td>
@@ -119,7 +91,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Configure Agile tools, set team defaults.<sup>2</sup> 
 </td>
@@ -129,7 +100,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Create new work item tags.<sup>3</sup></td>
 <td>Can assign existing tags</td>
@@ -137,10 +107,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
-
 </tr>
-
-
 <tr>
 <td align="left">View, add, and configure delivery plans.<sup>4</sup></td>
 <td> </td>
@@ -148,9 +115,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
-
 </tr>
-
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
@@ -160,7 +125,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
@@ -197,34 +161,12 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
-
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -233,7 +175,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Change work item type.<sup>1</sup></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -242,7 +183,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Move or delete work items.<sup>1</sup> </td>
 <td> </td>
@@ -251,7 +191,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
@@ -261,7 +200,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
@@ -271,7 +209,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provide feedback.
 </td>
@@ -281,7 +218,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Request feedback.
 </td>
@@ -291,7 +227,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management). 
 </td>
@@ -301,7 +236,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Configure Agile tools, set team defaults.</td>
 <td> </td>
@@ -310,7 +244,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Create new work item tags. </td>
 <td>Can assign existing tags</td>
@@ -318,10 +251,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
-
 </tr>
-
-
 <tr>
 <td align="left">View, add, and configure delivery plans.</td>
 <td> </td>
@@ -329,9 +259,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
-
 </tr>
-
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
@@ -341,7 +269,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
@@ -351,7 +278,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 
@@ -382,8 +308,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
-
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -392,7 +316,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Change work item type. </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -401,7 +324,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Move or delete work items. </td>
 <td> </td>
@@ -410,7 +332,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
@@ -420,7 +341,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
@@ -430,7 +350,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Provide feedback.
 </td>
@@ -440,7 +359,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Request feedback.
 </td>
@@ -450,7 +368,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).
 </td>
@@ -460,7 +377,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Configure Agile tools, set team defaults. 
 </td>
@@ -470,7 +386,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Create new work item tags.</td>
 <td>Can assign existing tags</td>
@@ -479,7 +394,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 </tr>
-
 <tr>
 <td align="left">View, add, and configure delivery plans.</td>
 <td> </td>
@@ -487,9 +401,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="check mark"/></td>
-
 </tr>
-
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
@@ -499,7 +411,6 @@ ms.topic: include
 <td>  </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
@@ -509,7 +420,6 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>
 

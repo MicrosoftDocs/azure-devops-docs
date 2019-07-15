@@ -20,12 +20,17 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to change the stage.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/BatchScriptV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -41,7 +46,7 @@ Use this task in a build or release pipeline to run a Windows .bat or .cmd scrip
 <td>Path</td>
 <td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
 <p>
-In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../build/variables.md).</p>
+In Team Foundation Build, this directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</p>
 </td>
 </tr>
 <tr>
@@ -65,7 +70,10 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../bu
 <td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -95,11 +103,11 @@ On the Build tab of a build pipeline, add this task:
 ![](_img/batch-script.png)
 
 <br/>**Utility: Batch Script**</td>
-      
+
 <td>
 <p>Run test.bat.</p>
 <ul>
-<li>Path: ```test.bat```</li>
+<li>Path: <code>test.bat</code></li>
 </ul>
       </td>
 </tr>
@@ -124,7 +132,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

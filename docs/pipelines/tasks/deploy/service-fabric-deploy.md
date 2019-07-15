@@ -22,7 +22,9 @@ This task deploys an Azure Service Fabric application to a cluster
 according to the settings defined in the publish profile.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Prerequisites
@@ -33,8 +35,11 @@ deploy to a Service Fabric cluster.
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricDeployV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -58,7 +63,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

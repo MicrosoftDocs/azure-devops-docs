@@ -194,7 +194,7 @@ Provide a relative estimate of the amount of work required to complete a Feature
 </tr>
 <tr>
 <td>
-[](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md" data-raw-source="[](../queries/query-numeric.md)"></a>
 <a href="../queries/query-numeric.md">Business Value</a>
 </td>
 <td>

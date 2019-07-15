@@ -77,7 +77,7 @@ The extension manifest tells Azure DevOps Services about your extension.
 
 [!INCLUDE [Install](../_shared/procedures/install.md)]
 
-[!INCLUDE [ExtensionsTab](../_shared/extensions-tab.md)]
+
 
 ### Try out your extension
 

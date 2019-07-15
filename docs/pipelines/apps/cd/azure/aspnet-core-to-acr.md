@@ -58,19 +58,19 @@ Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creatio
 ##  Configure and execute Continuous Delivery (CD) for your app    
 Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD tooling quickly creates various services in Azure and Azure Pipelines.  This automation allows you to enable CI/CD to Azure for your apps by creating full build and release pipelines in Azure Pipelines.
 
-1.  In Visual Studio, **right Select** your solution and Select **Configure Continuous Delivery**.
+1. In Visual Studio, **right Select** your solution and Select **Configure Continuous Delivery**.
 
-    ![Configure CD from Visual Studio](_img/aspnet-core-to-acr/vsconfigurecd.png)
-2.  Choose App Service (Linux) as your **Host Type**.
-3.  Choose the **Container Registry** you created earlier.
-4.  Accept the default App Service name or Select **edit** to choose a new name.
-5.  Select **ok**, and monitor the output window for results.  
-6.  **Azure resources** including the App Service will be created.  **Azure Pipelines resources** such as a build pipeline, and a release pipeline will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
+   ![Configure CD from Visual Studio](_img/aspnet-core-to-acr/vsconfigurecd.png)
+2. Choose App Service (Linux) as your **Host Type**.
+3. Choose the **Container Registry** you created earlier.
+4. Accept the default App Service name or Select **edit** to choose a new name.
+5. Select **ok**, and monitor the output window for results.  
+6. **Azure resources** including the App Service will be created.  **Azure Pipelines resources** such as a build pipeline, and a release pipeline will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
-    ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
-7.  A **build** and **release** will then execute.  **Navigate** to the organization and monitor the builds and releases until they complete.  This may take several minutes.
-8.  When the deployment finishes, verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
-9.  Make changes to the web app code and push them to Azure Pipelines.  A new build and release will execute and deploy the changes.
+   ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
+7. A **build** and **release** will then execute.  **Navigate** to the organization and monitor the builds and releases until they complete.  This may take several minutes.
+8. When the deployment finishes, verify that your changes are live in your web browser: **http://**<em>your-app-name</em>**.azurewebsites.net**.
+9. Make changes to the web app code and push them to Azure Pipelines.  A new build and release will execute and deploy the changes.
 
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD pipeline that automatically deploys your latest work to your Azure App Service.
 

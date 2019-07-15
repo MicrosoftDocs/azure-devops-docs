@@ -7,5 +7,5 @@
     topicHref: /azure/devops/boards/index
     items:
     - name: Work items
-      tocHref: /azure/devops/boards/work-items/
+      tocHref: /azure/devops/boards/
       topicHref: /azure/devops/boards/work-items/index

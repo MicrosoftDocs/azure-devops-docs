@@ -40,6 +40,7 @@ Get started with Azure DevOps Services and Java using your IDE and your tools.
 > [!VIDEO https://www.youtube.com/embed/z_7jSdGyZko]
 > 
 > 
+> 
 > - Java DevOps with Azure DevOps Services
 
 <br/>
@@ -47,11 +48,13 @@ Get started with Azure DevOps Services and Java using your IDE and your tools.
 > [!VIDEO https://www.youtube.com/embed/wSdgmQL-Zbg]
 > 
 > 
+> 
 > - Azure DevOps Services plugin for Android Studio and IntelliJ IDEA
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/uCRSV62hGV8]
+> 
 > 
 > 
 > - Deploy a Java application to Cloud Foundry

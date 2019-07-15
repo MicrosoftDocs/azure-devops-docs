@@ -17,7 +17,7 @@ In the **Sprint 131 Update** of Visual Studio Team Services (VSTS), there are a 
 
 Other highlights include:
 
-- [Query work across the iteration schedule with +/- @CurrentIteration](#query-work-across-the-iteration-schedule-with---currentiteration)
+- [Query work across the iteration schedule with +/- @CurrentIteration](#query-work)
 - [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
 
 ## What’s new in VSTS
@@ -57,6 +57,9 @@ Any project pivot can now be sorted based on a variety of options, including tit
 
 > [!div class="mx-imgBorder"]
 > ![Work Items sorting options](_img/131_02.png)
+
+
+<a id="query-work" />
 
 ### Query work across the iteration schedule with +/- @CurrentIteration
 

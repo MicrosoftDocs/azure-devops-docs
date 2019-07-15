@@ -49,25 +49,23 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 You can use 1 of the following approach to create a new pipeline.
 
 #### [YAML](#tab/yaml/)
-
 [!INCLUDE [include](../languages/_shared/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
 1. Replace `myresourcegroup` with the name of the Azure resource group that contains your Azure Machine Learning service workspace.
 
-1. Replace `myworkspace` with the name of your Azure Machine Learning service workspace.
+2. Replace `myworkspace` with the name of your Azure Machine Learning service workspace.
 
-1. When you're ready, select **Save and run**.
+3. When you're ready, select **Save and run**.
 
-1. You're prompted to commit your changes to the _azure-pipelines.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
+4. You're prompted to commit your changes to the _azure-pipelines.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
 
- If you want to watch your pipeline in action, select the build job.
+   If you want to watch your pipeline in action, select the build job.
 
 You now have a YAML pipeline in your repository that's ready to train your model!
 
 #### [Classic](#tab/classic/)
-
 To create a pipeline in the classic editor, use our template so that you automatically get all the tasks and variables you need.
 
 1. Go to **Pipelines**, and then select **New Pipeline**.
@@ -100,8 +98,7 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 You now have a pipeline that's ready to train your model!
 
----
-
+* * *
 ## Azure Machine Learning service automation
 
 There are two primary ways to use automation with the Azure Machine Learning service:

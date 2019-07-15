@@ -132,7 +132,7 @@ The final thing I want to point out is that you might be noticing some subtle ch
 
 ![Restyled, cleaner dialog box](_img/5_06_13.png)
 
-There’s a lot here, so I hope you made it to the end. As always, free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+There’s a lot here, so I hope you made it to the end. As always, free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

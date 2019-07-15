@@ -22,7 +22,9 @@ monikerRange: '>= tfs-2018'
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
@@ -70,7 +72,7 @@ None
     <tr>
         <td>Path to solution, packages.config, or project.json</td>
         <td>
-            Copy the **Solution** argument in your [Visual Studio Build step](../../tasks/build/visual-studio-build.md) and paste it
+            Copy the <strong>Solution</strong> argument in your <a href="../../tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio Build step](../../tasks/build/visual-studio-build.md)">Visual Studio Build step</a> and paste it
             here, or create a link using the Link button in the information panel.
         </td>
     </tr>
@@ -80,16 +82,16 @@ None
     <tr>
         <td>Feeds to use</td>
         <td>
-            **Feed(s) I select here:**
+            <strong>Feed(s) I select here:</strong>
             <ul>
                 <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
             </ul>
-            **Feeds in my NuGet.config:**
+            <strong>Feeds in my NuGet.config:</strong>
             <ul>
-                <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
-                    file you've checked into source control.</li>
-                <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
-                <li>Azure Artifacts users: see the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
+                <li>Select this option to use feeds specified in a <a href="http://docs.nuget.org/Consume/NuGet-Config-File" data-raw-source="[NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)">NuGet.config</a>
+                    file you&#39;ve checked into source control.</li>
+                <li>Credentials for feeds outside this organization/collection can be used to inject credentials you&#39;ve provided as a <a href="../../library/service-endpoints.md#sep-nuget" data-raw-source="[NuGet service connection](../../library/service-endpoints.md#sep-nuget)">NuGet service connection</a> into your NuGet.config as the build runs.</li>
+                <li>Azure Artifacts users: see the <a href="../../packages/nuget-restore.md" data-raw-source="[walkthrough](../../packages/nuget-restore.md)">walkthrough</a> for help using packages from feeds in multiple Azure DevOps organizations.</li>
             </ul>
         </td>
     </tr>
@@ -115,7 +117,10 @@ None
         </td>
     </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -184,37 +189,37 @@ None
     <tr>
         <td>Path to csproj or nuspec file(s) to pack</td>
         <td>
-            Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In this case:
+            Specify .csproj files (for example, <code><strong>*.csproj</code>) for simple projects. In this case:
             <ul>
                 <li>The packager compiles the .csproj files for packaging.</li>
                 <li>You must specify <strong>Configuration to Package</strong> (see below).</li>
                 <li>You do not have to check in a .nuspec file. If you do check one in, the packager honors
-                    its settings and replaces tokens such as *$id$* and *$description$*.</li>
+                    its settings and replaces tokens such as <em>$id$</em> and <em>$description$</em>.</li>
             </ul>
-            Specify .nuspec files (for example, ```**\*.nuspec```) for more complex projects, such as multi-platform scenarios in which you need to compile and package in separate steps. In this case:
+            Specify .nuspec files (for example, <code></strong>*.nuspec</code>) for more complex projects, such as multi-platform scenarios in which you need to compile and package in separate steps. In this case:
             <ul>
                 <li>The packager does not compile the .csproj files for packaging.</li>
                 <li>Each project is packaged only if it has a .nuspec file checked in.</li>
                 <li>The packager does not replace tokens in the .nuspec file (except the <code>&lt;version/&gt;</code> element,
-                    see [versioning schemes](#versioning-schemes) for version options). You must supply values for elements
+                    see <a href="#versioning-schemes" data-raw-source="[versioning schemes](#versioning-schemes)">versioning schemes</a> for version options). You must supply values for elements
                     such as <code>&lt;id/&gt;</code> and <code>&lt;description/&gt;</code>. The most common way to do this
                     is to hardcode the values in the .nuspec file.
                 </li>
             </ul>
-           To package a single file, click the <strong>...</strong> button and select the file. To package multiple files, use [file matching patterns](../file-matching-patterns.md). Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.
+           To package a single file, click the <strong>...</strong> button and select the file. To package multiple files, use <a href="../file-matching-patterns.md" data-raw-source="[file matching patterns](../file-matching-patterns.md)">file matching patterns</a>. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains <code>-:</code>, use <code>!</code> instead.
         </td>
     </tr>
     <tr>
         <td>Configuration to package</td>
         <td>
             If you are packaging a .csproj file, you must specify a configuration that you are building and that you want to package.
-            For example: ```Release``` or ```$(BuildConfiguration)```
+            For example: <code>Release</code> or <code>$(BuildConfiguration)</code>
         </td>
     </tr>
     <tr>
         <td>Package folder</td>
         <td>
-            (Optional) Specify the folder where you want to put the packages. You can use a [variable](../../build/variables.md) such as ```$(Build.ArtifactStagingDirectory)``` If you leave it empty, the package will be created in the root of your source tree.
+            (Optional) Specify the folder where you want to put the packages. You can use a <a href="../../build/variables.md" data-raw-source="[variable](../../build/variables.md)">variable</a> such as <code>$(Build.ArtifactStagingDirectory)</code> If you leave it empty, the package will be created in the root of your source tree.
         </td>
     </tr>
     <tr>
@@ -223,7 +228,7 @@ None
     <tr>
         <td>Automatic package versioning</td>
         <td>
-            [This blog post](https://blogs.msdn.microsoft.com/devops/2016/05/03/versioning-nuget-packages-cd-1/) provides an overview of the automatic package versioning available here.
+            <a href="https://blogs.msdn.microsoft.com/devops/2016/05/03/versioning-nuget-packages-cd-1/" data-raw-source="[This blog post](https://blogs.msdn.microsoft.com/devops/2016/05/03/versioning-nuget-packages-cd-1/)">This blog post</a> provides an overview of the automatic package versioning available here.
         </td>
     </tr>
     <tr>
@@ -232,10 +237,9 @@ None
     <tr>
         <td>Additional build properties</td>
         <td>
-            Semicolon delimited list of properties used to build the package. For example, you could replace ```
-            <description>$description$</description>``` in the .nuspec file this way: ```Description="This is a
-            great package"``` Using this argument is equivalent to supplying properties from [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack)
-            with the ```-Properties``` option.
+            Semicolon delimited list of properties used to build the package. For example, you could replace <code>&lt;description&gt;$description$&lt;/description&gt;</code> in the .nuspec file this way: <code>Description=&quot;This is a
+            great package&quot;</code> Using this argument is equivalent to supplying properties from <a href="https://docs.nuget.org/consume/command-line-reference#pack" data-raw-source="[nuget pack](https://docs.nuget.org/consume/command-line-reference#pack)">nuget pack</a>
+            with the <code>-Properties</code> option.
         </td>
     </tr>
     <tr>
@@ -245,7 +249,10 @@ None
         </td>
     </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -269,10 +276,10 @@ None
         <td>
             Specify the packages you want to publish.
             <ul>
-                <li>Default value: ```$(Build.ArtifactStagingDirectory)/*.nupkg```</li>
+                <li>Default value: <code>$(Build.ArtifactStagingDirectory)/*.nupkg</code></li>
                 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
-                <li>Use [file matching patterns](../file-matching-patterns.md) to publish multiple packages. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.</li>
-                <li>Use [variables](../../build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
+                <li>Use <a href="../file-matching-patterns.md" data-raw-source="[file matching patterns](../file-matching-patterns.md)">file matching patterns</a> to publish multiple packages. Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains <code>-:</code>, use <code>!</code> instead.</li>
+                <li>Use <a href="../../build/variables.md" data-raw-source="[variables](../../build/variables.md)">variables</a> to specify directories. For example, if you specified <code>$(Build.ArtifactStagingDirectory)&lt;/code&gt; as the <strong>package folder</strong> in the pack step above, you could specify <code>$(Build.ArtifactStagingDirectory)***.nupkg</code> here.</li>
             </ul>
         </td>
     </tr>
@@ -280,11 +287,11 @@ None
         <td>Target feed location</td>
         <td>
             <ul>
-                <li>**This organization/collection** publishes to an Azure Artifacts/Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
-                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
+                <li><strong>This organization/collection</strong> publishes to an Azure Artifacts/Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
+                    <ul><li>&quot;Allow duplicates to be skipped&quot; allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or an Azure Artifacts/Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+                <li><strong>External NuGet server (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.nuget.org/" data-raw-source="[NuGet](https://www.nuget.org/)">NuGet</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](http://www.myget.org/)">MyGet</a>, or an Azure Artifacts/Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a <a href="../../library/service-endpoints.md#sep-nuget" data-raw-source="[NuGet service connection](../../library/service-endpoints.md#sep-nuget)">NuGet service connection</a>.
                 </li>
             </ul>
         </td>
@@ -299,7 +306,10 @@ None
         </td>
     </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -312,8 +322,11 @@ This task is unable to publish or restore NuGet packages to or from a TFS Packag
 ## Custom NuGet command
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NuGetV0.md)]
+
 ::: moniker-end
 
 ### Arguments
@@ -365,12 +378,14 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 
 #### [Variables](../../build/variables.md) tab
+
 | Name | Value | 
 |---|---|
 |```$(BuildConfiguration)``` | ```release```|
 |```$(BuildPlatform)``` | ```any cpu```|
 
 #### [Options](../../build/options.md)
+
 | Setting | Value | 
 |---|---|
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
@@ -483,6 +498,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 ## Task versions
 
 ### Task: NuGet (formerly NuGet Restore at 1.\*, NuGet Installer at 0.\*)
+
 | Task version                                | Azure Pipelines                     | TFS                                           |
 |---------------------------------------------|--------------------------|-----------------------------------------------|
 | 2.*                                         | Available                | Appeared in 2018                              |
@@ -490,16 +506,19 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | [0.*](./prev-versions/nuget-installer-0.md) | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
 
 ### Task: NuGet Packager
+
 | Task version | Azure Pipelines                         | TFS                                           |
 |--------------|------------------------------|-----------------------------------------------|
 | [0.*](./prev-versions/nuget-packager-0.md)  | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Publisher
+
 | Task version | Azure Pipelines                         | TFS                                           |
 |--------------|------------------------------|-----------------------------------------------|
 | [0.*](./prev-versions/nuget-publisher-0.md) | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Command
+
 | Task version | Azure Pipelines                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
@@ -519,7 +538,9 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

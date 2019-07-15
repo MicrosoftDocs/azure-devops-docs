@@ -24,8 +24,11 @@ Requires the Package Management extension.
 > This task currently only supports downloading NuGet packages.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/DownloadPackageV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -36,7 +39,10 @@ Requires the Package Management extension.
 <tr><td>Version</td><td>(Required) Version of the package</td></tr>
 <tr><td>Destination directory</td><td>(Required) Path on the agent machine where the package will be downloaded</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 

@@ -9,12 +9,19 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Azure DevOps CLI
 
-The Azure DevOps extension for Azure CLI allows you to experience Azure DevOps from the command line, bringing the capability to manage Azure DevOps right to your fingertips! This allows you to work in a streamlined task/command oriented manner without having to worry about the GUI flows, providing you a faster and flexible interaction canvas.
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+
+The Azure DevOps extension for Azure Command Line Interface (CLI) allows you to experience Azure DevOps Services from the command line, bringing the capability to manage Azure DevOps right to your fingertips! This allows you to work in a streamlined task/command oriented manner without having to worry about the GUI flows, providing you a faster and flexible interaction canvas.
+
+
+> [!NOTE]  
+> The Azure DevOps Command Line Interface (CLI) is only available for Azure DevOps Services at this time. 
 
 ## 5-minute Quickstarts
 

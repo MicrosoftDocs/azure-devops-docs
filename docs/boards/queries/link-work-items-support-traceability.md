@@ -80,7 +80,6 @@ You can create links between work items by using one of the links control tabs w
 
 
 #### [New web form](#tab/new-web-form/)
-
 ::: moniker range=">= tfs-2017"
 <a id="team-services-link" /> 
 
@@ -112,7 +111,6 @@ The new web form is only available from TFS 2017 and later versions.
 ::: moniker-end
 
 #### [Old web form](#tab/old-web-form/)
-
 ::: moniker range=">= tfs-2018"
 The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
@@ -129,7 +127,6 @@ Open a work item and click one of the Links tab. From the links control tab you 
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
-
 <a id="team-explorer-link" />
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
@@ -138,7 +135,6 @@ Open a work item and click the Links tab. From the links control tab you can lin
 ![Work item form link toolbar controls](_img/IC673344.png)  
 
 #### [Team Explorer Everywhere](#tab/tee/)
-
 Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
 ![Link control options (Team Explorer, Eclipse)](_img/IC775501.png)  
@@ -150,8 +146,6 @@ From the Query Results view, you can link a work item to a new or existing work 
 ![Link to an existing work item](_img/IC588289.png)
 
 * * *
-
-
 ## Parent-child work item links
 
 These features let you quickly link or change links that use the parent-child link type:
