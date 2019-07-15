@@ -57,7 +57,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 ## Open source
 
-This task is open source on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction). Feedback and contributions are welcome.
+This task is open source on [GitHub](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunctionV1). Feedback and contributions are welcome.
 
 
 ## Q&A
