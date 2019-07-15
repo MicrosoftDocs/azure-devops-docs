@@ -348,7 +348,7 @@ Upload user interested file as additional log information to the current timelin
 ##vso[task.uploadfile]c:\additionalfile.log
 ```
 
-### PrependPath: Upload a file that can be downloaded with task logs
+### PrependPath: Prepend a path to the  PATH environment variable
 
 `##vso[task.prependpath]local file path`
 
