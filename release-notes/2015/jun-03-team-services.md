@@ -44,7 +44,7 @@ We’ve also released a new hub dedicated to browsing and analyzing test runs ac
 
 And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [/azure/devops/integrate/](/azure/devops/integrate/).
 
-If you have any questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see us do next, head over to UserVoice to add your idea or vote for an existing one.
+If you have any questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to UserVoice to add your idea or vote for an existing one.
 
 Thanks,
 

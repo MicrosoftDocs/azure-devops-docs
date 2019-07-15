@@ -34,16 +34,17 @@ Ensure the following IP addresses are allowed, so your organization works with a
 
 For domain-based firewalls, ensure the following domains are allowed:
 
-|Domains |
-|---------|
-|- dev.azure.com/* 
-- *.dev.azure.com   |
+
+|      Domains       |
+|--------------------|
+| - dev.azure.com/\* |
+| - \*.dev.azure.com |
 
 ## Incoming IP addresses
 
 Azure DevOps' incoming traffic hits the service through IP addresses and domains used by Microsoft Azure datacenters or third party providers.
-1.	To get the list of Azure IP ranges and Service Tags for Public Cloud, see [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519). This link provides the IP address ranges for global Azure as a whole, each Azure region within Public Cloud, and ranges for several Azure Services (Service Tags) such as Storage, SQL, and Azure Traffic Manager in Public Cloud.
-2.	Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
+1.  To get the list of Azure IP ranges and Service Tags for Public Cloud, see [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519). This link provides the IP address ranges for global Azure as a whole, each Azure region within Public Cloud, and ranges for several Azure Services (Service Tags) such as Storage, SQL, and Azure Traffic Manager in Public Cloud.
+2.  Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
 
 - *vsassets.io 
 - *.vsassetscdn.azure.cn 
@@ -62,7 +63,7 @@ If your organization uses ExpressRoute, ensure the following addresses are allow
 |13.107.6.176/32   | 2620:1ec:a92::176/128   |     
 |13.107.6.183/32   |  2620:1ec:a92::183/128  |
 |13.107.9.175/32   | 2620:1ec:4::175/128      |
-|13.107.9.176/32   | 2620:1ec:4::176/128   	 |
+|13.107.9.176/32   | 2620:1ec:4::176/128     |
 |13.107.9.183/32   | 2620:1ec:4::183/128     |
 |13.107.42.18/32   | 2620:1ec:21::18/128      |
 |13.107.42.19/32   | 2620:1ec:21::19/128      |

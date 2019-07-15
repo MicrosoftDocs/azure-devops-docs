@@ -30,8 +30,11 @@ None
 This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
+
 ::: moniker-end
 
 ## Arguments

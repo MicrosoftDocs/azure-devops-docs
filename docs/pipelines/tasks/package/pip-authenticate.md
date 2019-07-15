@@ -22,11 +22,15 @@ Provides authentication for the `pip` client that can be used to install Python 
 > The Python Pip Authenticate task in Azure Pipelines is currently in public preview.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PipAuthenticateV0.md)]
+
 ::: moniker-end
 
 ## Arguments
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |

@@ -16,7 +16,9 @@ monikerRange: '>= tfs-2015'
 # Build options
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Create a work item on failure

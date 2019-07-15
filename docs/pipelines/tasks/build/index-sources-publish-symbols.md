@@ -38,8 +38,11 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -60,7 +63,7 @@ None
     <tr>
         <td>Search pattern</td>
         <td>
-            <p>[File matching pattern(s)](../file-matching-patterns.md) (rooted at the path supplied in the previous input) used to discover `pdbs` that contain symbols.</p>
+            <p><a href="../file-matching-patterns.md" data-raw-source="[File matching pattern(s)](../file-matching-patterns.md)">File matching pattern(s)</a> (rooted at the path supplied in the previous input) used to discover <code>pdbs</code> that contain symbols.</p>
         </td>
     </tr>
     <tr>
@@ -78,11 +81,11 @@ None
     <tr>
         <td>Symbol server type</td>
         <td>
-            **Package Management in Azure Artifacts:**
+            <strong>Package Management in Azure Artifacts:</strong>
             <ul>
-                <li>Select this option to use the symbol server built into the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed).</li>
+                <li>Select this option to use the symbol server built into the <a href="https://marketplace.visualstudio.com/items?itemName=ms.feed" data-raw-source="[Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed)">Package Management extension</a>.</li>
             </ul>
-            **File share:**
+            <strong>File share:</strong>
             <ul>
                 <li>Select this option to use the file share supplied in the next input.</li>
             </ul>
@@ -95,17 +98,17 @@ None
             </p>
             <p>To prepare your SymStore symbol store:</p>
             <ol>
-                <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \\fabrikam-share\symbols.</li>
-                <li>Grant full control permission to the [build agent service account](../../agents/agents.md#account).</li>
+                <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \fabrikam-share\symbols.</li>
+                <li>Grant full control permission to the <a href="../../agents/agents.md#account" data-raw-source="[build agent service account](../../agents/agents.md#account)">build agent service account</a>.</li>
             </ol>
-            <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See [Publish Build Artifacts](../utility/publish-build-artifacts.md)).
+            <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See <a href="../utility/publish-build-artifacts.md" data-raw-source="[Publish Build Artifacts](../utility/publish-build-artifacts.md)">Publish Build Artifacts</a>).
             </p>
         </td>
     </tr>
         <tr>
         <td>Compress symbols</td>
         <td>
-            <p>Only available when **File share** is selected as the **Symbol server type**. Compresses your `pdbs` to save space. 
+            <p>Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. 
         </td>
     </tr>
     <tr>
@@ -121,8 +124,8 @@ None
         <td>Warn if not indexed</td>
         <td>
             <p>Enable this option if you want the build summary to show a warning when sources are not indexed for a PDB file.
-                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn't build.</p>
-            <p>Even if you don't select this option, the messages are written in log.
+                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn&#39;t build.</p>
+            <p>Even if you don&#39;t select this option, the messages are written in log.
             </p>
         </td>
     </tr>
@@ -134,18 +137,18 @@ None
     <tr>
         <td>Product</td>
         <td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank,
-            [$(Build.DefinitionName)](../../build/variables.md) is passed.</td>
+            <a href="../../build/variables.md" data-raw-source="[$(Build.DefinitionName)](../../build/variables.md)">$(Build.DefinitionName)</a> is passed.</td>
     </tr>
     <tr>
         <td>Version</td>
         <td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe. If blank,
-            [$(Build.BuildNumber)](../../build/variables.md) is passed.</td>
+            <a href="../../build/variables.md" data-raw-source="[$(Build.BuildNumber)](../../build/variables.md)">$(Build.BuildNumber)</a> is passed.</td>
     </tr>
     <tr>
         <td>Artifact name</td>
         <td>Specify the pattern used for the name of the link from the artifact tab in the build summary to the file share where
-            you are publishing your symbols. For example, if you specify ```Symbols_$(BuildConfiguration)```, then the name
-            of the link to your published release symbols would be *Symbols_release*</td>
+            you are publishing your symbols. For example, if you specify <code>Symbols_$(BuildConfiguration)</code>, then the name
+            of the link to your published release symbols would be <em>Symbols_release</em></td>
     </tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

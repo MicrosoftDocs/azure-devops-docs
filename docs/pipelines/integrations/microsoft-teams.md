@@ -89,12 +89,12 @@ For example, users may want to get notified only when builds fail or when deploy
 ### Example: Get notifications only for failed builds
 
 > [!div class="mx-imgBorder"]
-![Build Filters](_img/integrations-teams/teams-build-filters.png)
+> ![Build Filters](_img/integrations-teams/teams-build-filters.png)
 
 ### Example: Get notifications only if the deployments are pushed to prod environment
 
 > [!div class="mx-imgBorder"]
-![Release Filters](_img/integrations-teams/teams-release-filters.png)
+> ![Release Filters](_img/integrations-teams/teams-release-filters.png)
 
 ## Approve release deployments from your channel
 

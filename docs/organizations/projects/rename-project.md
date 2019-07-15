@@ -33,13 +33,15 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
 
-  ![Enter a new name, and then select Save to rename your project](_img/rename-project/rename-project-azure-devops.png)
+   ![Enter a new name, and then select Save to rename your project](_img/rename-project/rename-project-azure-devops.png)
 
 3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select **Save**.
 
    ![Enter new project name, check the box, and then save](_img/rename-project/rename-project-confirm.png)
 
-Your project is renamed.
+	Your project is renamed.
+
+::: moniker-end  
 
 ::: moniker range=">= tfs-2017"
 
@@ -211,6 +213,7 @@ The reporting and SharePoint server administrator can manually run these jobs to
   Use of <em>@project</em> also continues to work after a project rename and also don't need to be updated.
 
 - Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
+
   1. Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
      so that Excel reports contain the correct data.
      If the new project name is not synced to the warehouse,

@@ -20,8 +20,11 @@ monikerRange: 'azure-devops'
 Use this task in a pipeline to install an SSH key prior to a build or release step.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallSSHKeyV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -30,7 +33,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>Known Hosts Entry</td><td>(Required) The entry for this SSH key for the known_hosts file.</td></tr>
 <tr><td>SSH Public Key</td><td>(Required) The contents of the public SSH key.</td></tr>
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
-<tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to `Secure Files` to install on the agent.</td></tr>
+<tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 

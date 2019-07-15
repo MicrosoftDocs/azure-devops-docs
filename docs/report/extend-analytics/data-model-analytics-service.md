@@ -55,8 +55,6 @@ The following EntitySets are supported with the indicated API versions. For the 
 
 ## Work tracking EntitySets
 
->  [!div class="mx-tdCol2BreakAll"]  
-> 
 > | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
 > |-----------|-------------|------|------|--------------|
 > |Areas | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |

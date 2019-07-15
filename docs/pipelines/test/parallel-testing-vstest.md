@@ -18,8 +18,10 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="< tfs-2018"
+
 > [!NOTE]
 > For TFS, this topic applies to only TFS 2017 Update 1 and later.
+
 ::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
@@ -149,7 +151,7 @@ to validate the app functionality.
 
    ![DeployApp1Agent](_img/parallel-testing-vstest/deploy-app-1-agent.png)
 
-1. **Run tests in parallel using multiple agents**:
+2. **Run tests in parallel using multiple agents**:
 
    * Add an **agent job**
 
@@ -171,7 +173,7 @@ to validate the app functionality.
      > For example, web app binaries are not required to run Selenium tests and downloading these can be
      > skipped if the app and test artifacts are published separately by your build pipeline.
 
-   *  Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the

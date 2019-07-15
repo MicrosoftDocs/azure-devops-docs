@@ -102,7 +102,7 @@ To view your current CI/CD capacity details and consumption, complete the follow
   
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
- go to your organization toolbar, and then go to **Parallel jobs** under **Pipelines**.
+   go to your organization toolbar, and then go to **Parallel jobs** under **Pipelines**.
 
    ![Pipelines, Parallel jobs](_img/_shared/pipelines-parallel-jobs.png)
 
