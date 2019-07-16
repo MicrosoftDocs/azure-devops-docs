@@ -129,7 +129,7 @@ To learn more about each page, see the following articles.
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|
