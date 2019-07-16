@@ -256,16 +256,16 @@ In the examples above *State Time in Days* for a given work item is only counted
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Time in Days - In Progress = 
-CALCULATE (
-    SUM ( 'View Name'[Date Diff in Days] ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-   'View Name'[Date] <= EARLIER('View Name'[Date]),
-   'View Name'[State] = "In Progress"
-) + 0
-```
-
+> ```DAX
+> State Time in Days - In Progress = 
+> CALCULATE (
+>     SUM ( 'View Name'[Date Diff in Days] ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>    'View Name'[Date] <= EARLIER('View Name'[Date]),
+>    'View Name'[State] = "In Progress"
+> ) + 0
+> ```
+> 
 > [!NOTE]
 > You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
@@ -281,16 +281,16 @@ Analyzing performance across multiple states is also possible using the "Continu
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Time in Days - Working States = 
-CALCULATE (
-    SUM ( 'View Name'[Date Diff in Days] ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-   'View Name'[Date] <= EARLIER('View Name'[Date]),
-   'View Name'[State] IN { "Committed", "In Progress" }
-) + 0
-```
-
+> ```DAX
+> State Time in Days - Working States = 
+> CALCULATE (
+>     SUM ( 'View Name'[Date Diff in Days] ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>    'View Name'[Date] <= EARLIER('View Name'[Date]),
+>    'View Name'[State] IN { "Committed", "In Progress" }
+> ) + 0
+> ```
+> 
 > [!NOTE]
 > You may need to revise the definition based on the workflow states used by your project. For example, if your project uses 'Active' in place of 'Committed' or 'Proposed'. 
 
@@ -317,14 +317,14 @@ The *Date Previous* calculated column can also be used to lookup past values suc
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-State Previous =
-LOOKUPVALUE (
-    'View Name'[State],
-    'View Name'[Work Item Id], 'View Name'[Work Item Id],
-    'View Name'[Date], 'View Name'[Date Previous]
-)
-```
+> ```DAX 
+> State Previous =
+> LOOKUPVALUE (
+>     'View Name'[State],
+>     'View Name'[Work Item Id], 'View Name'[Work Item Id],
+>     'View Name'[Date], 'View Name'[Date Previous]
+> )
+> ```
 
 This calculated column uses the [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax), described [later in this article](#dax-functions).
  
@@ -349,14 +349,14 @@ Using the *State Previous* column, we can flag the rows for each work item where
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-State Changed =
-IF (
-    ISBLANK ( 'View Name'[State Previous] ),
-    'View Name'[Created Date].[Date] = 'View Name'[Date],
-    'View Name'[State Previous] <'View Name'[State]
-)
-```
+> ```DAX 
+> State Changed =
+> IF (
+>     ISBLANK ( 'View Name'[State Previous] ),
+>     'View Name'[Created Date].[Date] = 'View Name'[Date],
+>     'View Name'[State Previous] <'View Name'[State]
+> )
+> ```
 
 <a id="state-flow" />
 
@@ -370,10 +370,10 @@ With *State Previous* and *State Changed* calculated columns, you can create a c
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX 
-State Flow = 
-IF([State Changed], [State Previous], [State]) & " ž¡ " & [State]
-```
+> ```DAX 
+> State Flow = 
+> IF([State Changed], [State Previous], [State]) & " ž¡ " & [State]
+> ```
 
 ## Add *State Change Count* 
 
@@ -385,15 +385,15 @@ As we move into the more complicated measures, we need to have a representation 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark. 
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Change Count = 
-CALCULATE (
-    COUNTROWS ( 'View Name' ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-    'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    'View Name'[State Changed]
-) + 0
-```
+> ```DAX
+> State Change Count = 
+> CALCULATE (
+>     COUNTROWS ( 'View Name' ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>     'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+>     'View Name'[State Changed]
+> ) + 0
+> ```
 
 ## Add *State Change Count - Last Proposed* and *State Restart Time in Days* 
 
@@ -406,31 +406,31 @@ Calculating restarts, *State Restart Time in Days*, is a fairly complex calculat
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Change Count - Last Proposed = 
-CALCULATE (
-    MAX ( 'View Name'[State Change Count] ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-    'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    'View Name'[State] = "Proposed"
-)
-```
+> ```DAX
+> State Change Count - Last Proposed = 
+> CALCULATE (
+>     MAX ( 'View Name'[State Change Count] ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>     'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+>     'View Name'[State] = "Proposed"
+> )
+> ```
 
 Then, look further back to the past and see if there were some active states before this proposed state. Lastly, sum up all the days when work item was in active state before the last proposed. 
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Restart Time in Days = 
-CALCULATE (
-    SUM ( 'View Name'[Date Diff in Days] ),
-    ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-    'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-    'View Name'[State Change Count] < EARLIER('View Name'[State Change Count - Last Proposed] ),
-    'View Name'[State] <"Proposed"
-) + 0
-```
+> ```DAX
+> State Restart Time in Days = 
+> CALCULATE (
+>     SUM ( 'View Name'[Date Diff in Days] ),
+>     ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>     'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+>     'View Name'[State Change Count] < EARLIER('View Name'[State Change Count - Last Proposed] ),
+>     'View Name'[State] <"Proposed"
+> ) + 0
+> ```
 
 Since the *State Restart Time in Days* is updated for each row of data, you can either create a trend to evaluate rework across specific sprints or examine rework for individual work items by using 'Is Current'.
 
@@ -442,21 +442,21 @@ Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks f
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
-```DAX
-State Rework Time in Days = 
-IF (
-    ISBLANK ( 'View Name'[State Change Count - First Completed] ),
-    0,
-    CALCULATE (
-        SUM ( 'View Name'[Date Diff in Days] ),
-        ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
-        'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
-        'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
-        'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
-    ) + 0
-)
-```
-
+> ```DAX
+> State Rework Time in Days = 
+> IF (
+>     ISBLANK ( 'View Name'[State Change Count - First Completed] ),
+>     0,
+>     CALCULATE (
+>         SUM ( 'View Name'[Date Diff in Days] ),
+>         ALLEXCEPT ( 'View Name', 'View Name'[Work Item Id] ),
+>         'View Name'[Date] <= EARLIER ( 'View Name'[Date] ),
+>         'View Name'[State Change Count] EARLIER ( 'View Name'[State Change Count - First Completed] ),
+>         'View Name'[State] IN {"Completed", "Closed", "Cut" } = FALSE()
+>     ) + 0
+> )
+> ```
+> 
 > [!NOTE]
 > You may need to revise the above definition based on the workflow states used by your project. For example, if your project uses 'Done' in place of 'Closed'. 
 

@@ -128,7 +128,7 @@ To learn how to add users to a group or set a specific permission that you can m
 </tbody>
 </table>
 
-  
+
 
 
 ::: moniker-end
@@ -144,13 +144,13 @@ To learn how to add users to a group or set a specific permission that you can m
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
-<li><a href="set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
+<li>&lt;a href=&quot;set-project-collection-level-permissions.md&gt;Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md>Make a user a team admin</a></li>
+<li>&lt;a href=&quot;../settings/add-team-administrator.md&gt;Make a user a team admin</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
+<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README &amp; Wiki</a></li>
 </ul>
 </td>
 <td width="33%">
@@ -589,8 +589,7 @@ For each project that you create, the system creates the followings project-leve
         <td>Release Administrators</td>
         <td>Has permissions to manage all release operations.
             <blockquote>
-                This group is defined after the first release pipeline is created. Valid for TFS-2017 and later versions.  
-            </blockquote></td>
+                This group is defined after the first release pipeline is created. Valid for TFS-2017 and later versions.<br/>            </blockquote></td>
         <td>Assign to users who define and manage release pipelines.</td>
     </tr>
     <tr>
@@ -862,7 +861,6 @@ You manage collection-level permissions through the [web portal admin context](.
                     Edit collection-level information includes the ability to perform these tasks
                     for all projects defined in a collection:
                 </p>
-
                 <ul>
                     <li>Add and administer teams and all team-related features</li>
                     <li>Create and modify areas and iterations</li>
@@ -874,7 +872,6 @@ You manage collection-level permissions through the [web portal admin context](.
                     <li>Create and modify global lists</li>
                     <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
-
                 <p>
                     When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
                     users can add or remove collection-level groups and implicitly
@@ -1337,20 +1334,6 @@ By default, the project level Readers groups have only Read permissions.
         <th width="30%">Permission</th>
         <th width="70%">Description</th>
     </tr>
-<!--- REMOVED 
-    <tr>
-        <td id="git-administer-permission">Administer</td>
-        <td>
-            Can rename and delete the repository. If assigned to the top-level **Git repositories** entry, can add additional repositories.
-            <br /><br />
-            At the branch level, users can set permissions for the branch and unlock the branch.
-            <blockquote>
-                <b>TFS 2013, TFS 2015</b>: The Administer permission set on a individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-                Administer permissions at the top-level **Git repositories** entry. 
-            </blockquote>
-        </td>
-    </tr>
--->
     <tr>
         <td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
         <td>
@@ -1372,12 +1355,10 @@ By default, the project level Readers groups have only Read permissions.
         <p>At the branch level, can push their changes to the branch and lock the branch. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. </p>
         </td>
     </tr>
-
     <tr>
         <td id="git-contribute-to-pull-requests-permission">Contribute to pull requests</td>
         <td>Can create, comment on, and vote on pull requests.</td>
     </tr>
-
     <tr>
         <td id="git-create-branch-permission">Create branch</td>
         <td>
@@ -1460,7 +1441,7 @@ By default, the project level Readers groups have only Read permissions.
 </table>
 
 
->[!NOTE]  
+> [!NOTE]  
 > Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.
 
 To manage Git repo and branch permissions, see [Set branch permissions](../../repos/git/branch-permissions.md).
@@ -1772,6 +1753,8 @@ Members of the Project Administrators group are automatically granted permission
 
 
 <a name="iteration-path-permissions"></a>
+
+
 ## Iteration Path (object-level) 
 
 Iteration path permissions grant or restrict access to create and manage iteration paths.
@@ -1901,11 +1884,14 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 > [!NOTE]  
 > For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 <table valign="top" width="100%">
 <tbody valign="top">
     <tr>
@@ -1939,6 +1925,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 
 ## Process (object-level)   
+
 You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage processes. Valid users are granted View (read-only) permissions. 
 
 
@@ -2088,8 +2075,7 @@ In addition, you can assign approvers to specific steps within a release pipelin
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or environment level.
 
->  [!div class="mx-tdCol2BreakAll"] 
-> 
+
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
 > | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release pipeline, Environment |
@@ -2131,6 +2117,8 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 | **Delete task group** | Can delete a task group. | 
 | **Edit task group** | Can create, modify, or delete a task group. | 
 
+
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 <a id="lab">  </a>
@@ -2169,7 +2157,6 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <td>Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the <strong>Delete Lab Location</strong> permission for that location.
         </td>
     </tr>
-
     <tr>
         <td>Edit Environment and Virtual Machines</td>
         <td>Can edit environments and templates. The permission is checked for the object that is being edited.
@@ -2185,33 +2172,28 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <td>Can import a virtual machine from a VMM library share.This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
         </td>
     </tr>
-
     <tr>
         <td>Manage Child Permissions</td>
         <td>
             Can change the permissions of all the child Lab Management objects. For example, if a user has <strong>Manage Child Permission</strong> for a project host group, the user can change permissions for all the environments under that project host group. 
         </td>
     </tr>
-
     <tr>
         <td>Manage Lab Locations</td>
         <td>
              Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the <strong>Manage Lab Location</strong> permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create project level locations (project host group and project library share).
         </td>
     </tr>
-
     <tr>
         <td>Manage Permissions</td>
         <td>Can modify the permissions for a Lab Management object. This permission is checked for the object whose permissions are being modified.
         </td>
     </tr>
-
     <tr>
         <td>Manage Snapshots</td>
         <td>Can perform all snapshot management tasks for an environment, which include taking a snapshot, reverting to a snapshot, renaming a snapshot, deleting a snapshot, and reading a snapshot.
         </td>
     </tr>
-
     <tr>
         <td>Pause Environment</td>
         <td>Can pause an environment.</td>
@@ -2231,8 +2213,6 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <td>Can create environments for a project host group. Users who have this permission for a project library share can store environments and templates.
         </td>
     </tr>
-
-
 </tbody>
 </table>
 
@@ -2263,7 +2243,6 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
 |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
 |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
-
 
 
 ## Related articles

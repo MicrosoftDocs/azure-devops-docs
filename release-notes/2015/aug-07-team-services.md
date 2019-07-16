@@ -36,7 +36,7 @@ We’ve added two small, but powerful ways to add visual cues to your board. You
 
 For .NET developers building Windows apps and services that integrate with Visual Studio Online, NuGet packages containing libraries for integrating with work item tracking, version control, build, and other services are now available. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service. To learn more, see the [overview of the client library packages](http://go.microsoft.com/fwlink/?LinkId=613084).
 
-If you have questions, feel free to reach out on Twitter. ([@aaronbjork](https://twitter.com/aaronbjork) is always listening). Ideas? Head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Enjoy!
 

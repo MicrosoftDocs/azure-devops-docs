@@ -24,15 +24,15 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 0. [Download our Node.js Hello World sample app](http://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip).
 
-0. Do you have your own code?
+1. Do you have your own code?
 
- * No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
+   * No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
- * Yes:
+   * Yes:
 
-    0. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
+     0. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
 
-    0. Upload your code to Azure Repos or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
+     1. Upload your code to Azure Repos or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
 
 [What code is in the sample app?](#code)
 
@@ -40,7 +40,26 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 <ol>
 
-[!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-open-team-project">
+<img src="~/pipelines/_shared/_img/browse-to-team-project.png" alt="Browse to project">
+
+<p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
+<ul>
+<li>On-premises TFS: <code>http://{your_server}:8080/tfs/DefaultCollection/{your_project}</code> </li>
+<li>Azure Pipelines: <code>https://dev.azure.com/{your_organization}/{your_project}</code></li>
+</ul>
+<p><a href="/azure/devops/server/admin/websitesettings" data-raw-source="[The TFS URL doesn&#39;t work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)">The TFS URL doesn&#39;t work for me. How can I get the correct URL?</a></p>
+</div>
+</li>
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-create">
+<img src="~/pipelines/_shared/_img/create-new-build-definition.png" alt="Build tab">
+<p>
+</div>
+</li>
 
 <li>Click Empty to start with an empty pipeline.</li>
 </ol>
@@ -54,13 +73,13 @@ On the **Tasks** or **Build** tab, add these tasks.
 
       <td>
 
-![Package: npm install](../../../tasks/package/_img/npm.png)
+<img src="../../../tasks/package/_img/npm.png" alt="Package: npm install"/>
 
-<br/>**Package: npm install**</td>
+<br/><strong>Package: npm install</strong></td>
       <td>
 <p>Install your npm package dependencies.</p>
 <ul>
- <li> Command: ```install```</li>
+ <li> Command: <code>install</code></li>
 </ul>
       </td>
 </tr>
@@ -68,20 +87,20 @@ On the **Tasks** or **Build** tab, add these tasks.
         <tr>
             <td>
 
-![Build: gulp](../../../tasks/build/_img/gulp.png)
+<img src="../../../tasks/build/_img/gulp.png" alt="Build: gulp"/>
 
-<br/>**Build: gulp**</td>
+<br/><strong>Build: gulp</strong></td>
             <td>
 <p>Pack your files into a .zip file.</p>
 <ul>
-<li><p>gulp File Path: ```gulpfile.js```</p>
+<li><p>gulp File Path: <code>gulpfile.js</code></p>
 </li>
 <li>
-<p>Advanced, Arguments: ```--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)```
+<p>Advanced, Arguments: <code>--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)</code>
 </p>
 </li>
 </ul>
-<p>Make sure you've got a copy of **gulpfile.js** from our [sample app](#code) in the root folder of your app.</p>
+<p>Make sure you&#39;ve got a copy of <strong>gulpfile.js</strong> from our <a href="#code" data-raw-source="[sample app](#code)">sample app</a> in the root folder of your app.</p>
 
 </td>
         </tr>
@@ -89,13 +108,13 @@ On the **Tasks** or **Build** tab, add these tasks.
 <tr>
             <td>
 
-![Package: npm test](../../../tasks/package/_img/npm.png)
+<img src="../../../tasks/package/_img/npm.png" alt="Package: npm test"/>
 
-<br/>**Package: npm test**</td>
+<br/><strong>Package: npm test</strong></td>
             <td>
 <p>(Optional) Test your application.</p>
 <ul>
- <li> Command: ```test```</li>
+ <li> Command: <code>test</code></li>
  <li> Set the working folder to the folder where your application code is committed in the repository.</li>
 </ul>
 </td>
@@ -103,16 +122,16 @@ On the **Tasks** or **Build** tab, add these tasks.
 <tr>
             <td>
 
-![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png)
+<img src="../../../tasks/build/_img/publish-build-artifacts.png" alt="Build: Publish Build Artifacts"/>
 
-<br/>**Build: Publish Build Artifacts**</td>
+<br/><strong>Build: Publish Build Artifacts</strong></td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .zip file as we do in the example below.</p>
 <ul>
- <li> Copy Root: ```$(Build.ArtifactStagingDirectory)```</li>
- <li> Contents: ```$(Build.BuildId).zip```</li>
- <li> Artifact name: ```drop```</li>
- <li> Artifact Type: ```Server```</li>
+ <li> Copy Root: <code>$(Build.ArtifactStagingDirectory)</code></li>
+ <li> Contents: <code>$(Build.BuildId).zip</code></li>
+ <li> Artifact name: <code>drop</code></li>
+ <li> Artifact Type: <code>Server</code></li>
 </ul>
 </td>
         </tr></table>

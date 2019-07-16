@@ -153,11 +153,11 @@ You can add and invite others to work on your project by adding their email addr
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert-2.png)
 
-1. Select **Users** > **Add new users**.
+2. Select **Users** > **Add new users**.
 
    ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 
-2. Complete the form by entering or selecting the following information:
+3. Complete the form by entering or selecting the following information:
 	<ul>
     <li><strong>Users:</strong> Enter the email addresses (Microsoft account) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
     <li><strong>Access level:</strong> Assign one of the following access levels: 
@@ -178,7 +178,7 @@ You can add and invite others to work on your project by adding their email addr
 	> [!NOTE]  
 	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account.  
 
-3. When you're done, select **Add** to complete your invitation.
+4. When you're done, select **Add** to complete your invitation.
 
 For more information, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 

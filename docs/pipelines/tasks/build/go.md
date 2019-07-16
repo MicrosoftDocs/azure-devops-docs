@@ -20,14 +20,17 @@ monikerRange: 'azure-devops'
 Use this task in a build or release pipeline to get, build, or test a go application, or run a custom go command.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GoV0.md)]
+
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Command</td><td>(Required) Select a Go command to run. Select 'Custom' to use a command not listed here.</td></tr>
+<tr><td>Command</td><td>(Required) Select a Go command to run. Select &#39;Custom&#39; to use a command not listed here.</td></tr>
 <tr><td>Custom command</td><td>(Required) Custom Go command for execution. For example: to execute go version, enter version.</td></tr>
 <tr><td>Arguments</td><td>(Optional) Arguments to the selected command. For example, build time arguments for go build command.</td></tr>
 <tr><td>Working Directory</td><td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>

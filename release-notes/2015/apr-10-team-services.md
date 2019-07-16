@@ -45,7 +45,7 @@ This sprint we also made a change to the code history hub by introducing a new v
 
 Finally, we enabled last week [support for up to 100 cores](http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
 
-If you have questions, feel free to reach out on [Twitter](https://twitter.com/VisualStudio) ([@aaronbjork](https://twitter.com/aaronbjork)). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
+If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
 
 Thanks,
 

@@ -107,8 +107,7 @@ You can have a pipelines triggered when the following events occur in your repo:
 
 Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
 YAML builds are configured by default with a CI trigger on all branches.
@@ -263,8 +262,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select this trigger if you want the build to run whenever someone checks in code.
 
 ### Batch changes
@@ -279,11 +277,11 @@ If your repository is Git then you can specify the branches where you want to tr
 
 You can also specify path filters to reduce the set of files that you want to trigger a build.
 
- > **Tips:**
- * If you don't set path filters, then the root folder of the repo is implicitly included by default.
- * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
- * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
- * The order of path filters doesn't matter.
+> **Tips:**
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
 
 #### Example
 
@@ -305,8 +303,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ::: moniker-end
 
----
-
+* * *
 ### Pull request validation
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
@@ -405,15 +402,15 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same project as the Azure Repos Git repo specified above.
+  - Contained in the same project as the Azure Repos Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example
-   - This one would be checked out: 
+  - Added by using a URL relative to the main repository. For example
+    - This one would be checked out: 
      `git submodule add ../../../FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber` 
 
       In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject)
 
-   - This one would not be checked out:
+    - This one would not be checked out:
      `git submodule add https://fabrikam-fiber@dev.azure.com/fabrikam-fiber/FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber`
 
 
@@ -553,8 +550,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 You can configure the `clean` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -594,17 +590,16 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
  ![GitHub options](_img/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -612,8 +607,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
----
-
+* * *
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.

@@ -168,20 +168,30 @@ Now that your two feature teams are configured, you need to move existing work i
 1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
    ::: moniker range=">= azure-devops-2019"  
+
    > [!div class="mx-imgBorder"]  
    > ![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
+
    ::: moniker-end  
+
    ::: moniker range="<= tfs-2018"  
-   > ![Web portal, Queries page, Bulk modify select work items](_img/add-team/scale-agile-bulk-modify-area-path-co.png)
+
+   ![Web portal, Queries page, Bulk modify select work items](_img/add-team/scale-agile-bulk-modify-area-path-co.png)
+
    ::: moniker-end  
+
 2. After you bulk modify, do a bulk save.  
 
    ::: moniker range=">= azure-devops-2019"    
    > [!div class="mx-imgBorder"]  
    > ![Bulk save edited work items](_img/add-team/query-bulk-save.png)
+
    ::: moniker-end  
+
    ::: moniker range="<= tfs-2018"  
+
    ![Web portal, Queries page, Bulk save selected work items](_img/add-team/scale-agile-bulk-save-area-path-co.png)  
+
    ::: moniker-end  
 
 <a id="include-area-paths"> </a>  
@@ -204,6 +214,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 1. Open the **Work>Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
@@ -217,6 +228,7 @@ One last step in moving from one team to two teams requires configuring the defa
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"  
+
 1. Open the **Areas** settings page for the default project team, and change the setting as shown.  
 
 	![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/multiple-teams-exclude-sub-area-paths.png)  
@@ -273,7 +285,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
 
-::: moniker range="tfs-2018 || azure-devops-2019" 
+::: moniker range=">= tfs-2018 <= azure-devops-2019" 
 
 If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
 

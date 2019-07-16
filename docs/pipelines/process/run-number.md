@@ -21,8 +21,7 @@ monikerRange: '>= tfs-2015'
 
 You can customize how your pipeline runs are numbered.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 In YAML, this property is called `name`.
@@ -42,12 +41,10 @@ steps:
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
----
-
+* * *
 ### Example
 
 At the time a run is started:

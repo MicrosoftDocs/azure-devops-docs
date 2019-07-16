@@ -24,8 +24,11 @@ Use this task in a build or release pipeline to delete files or folders from the
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -40,8 +43,8 @@ None
 <tr>
 <td>Source Folder</td>
 <td>
-<p>Folder that contains the files you want to delete. If you leave it empty, the deletions are done from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
-<p>If your build produces artifacts outside of the sources directory, specify ```$(Agent.BuildDirectory)``` to delete files from the build agent working directory.</p>
+<p>Folder that contains the files you want to delete. If you leave it empty, the deletions are done from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
+<p>If your build produces artifacts outside of the sources directory, specify <code>$(Agent.BuildDirectory)</code> to delete files from the build agent working directory.</p>
 </td>
 </tr>
 <tr>
@@ -50,17 +53,20 @@ None
 <p>Specify minimatch pattern filters (one on each line) that you want to apply to the list of files to be deleted. For example:
 </p>
 <ul>
-<li>```**``` deletes all files and folders in the root folder.</li>
-<li>```temp``` deletes the temp folder in the root folder.</li>
-<li>```temp*``` deletes any file or folder in the root folder with a name that begins with temp.</li>
-<li>```**\temp\**``` deletes all files in any sub-folder named temp.</li>
-<li>```**\temp*``` deletes any file or folder with a name that begins with temp.</li>
-<li>```**\temp*\**``` deletes files in any sub-folder that begins with the name temp.</li>
+<li><code><strong></code> deletes all files and folders in the root folder.</li>
+<li><code>temp</code> deletes the temp folder in the root folder.</li>
+<li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with temp.</li>
+<li><code></strong>\temp*<em></code> deletes all files in any sub-folder named temp.</li>
+<li><code></em><em>\temp</em></code> deletes any file or folder with a name that begins with temp.</li>
+<li><code><strong>\temp*\</strong></code> deletes files in any sub-folder that begins with the name temp.</li>
 </ul>
 </td>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -87,7 +93,9 @@ A: See:
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 

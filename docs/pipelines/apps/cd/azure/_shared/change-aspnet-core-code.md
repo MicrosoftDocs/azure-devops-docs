@@ -8,25 +8,25 @@ Now that you have a completely automated CI/CD pipeline, any changes that you ma
 
 1. Both Azure Repos and GitHub feature a full code editor within the web browser. Using the browser, navigate to **Views/Homes/Index.cshtml** file in your repository.
 
- # [Azure Repos or TFS repo](#tab/vsts)
+   # [Azure Repos or TFS repo](#tab/vsts)
 
- In the Azure Repos **Code** hub, edit the **Views/Home/Index.cshtml** file.
+   In the Azure Repos **Code** hub, edit the **Views/Home/Index.cshtml** file.
 
- ![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
+   ![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
 
- # [GitHub repo](#tab/github)
+   # [GitHub repo](#tab/github)
 
- Open your GitHub repository in the browser and edit **Views/Home/Index.cshtml** file.
+   Open your GitHub repository in the browser and edit **Views/Home/Index.cshtml** file.
 
- ---
+   ---
 
-1. Make a simple change above the slide carousel `div` tag:
+2. Make a simple change above the slide carousel `div` tag:
 
- ```html
-<h1>Demo of CI/CD!!</h1>
-```
+   ```html
+   <h1>Demo of CI/CD!!</h1>
+   ```
 
-1. **Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment.
+3. **Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment.
 
 <!--
  ![change code in asp.net core view](_img/aspnet-core-code-change.png)

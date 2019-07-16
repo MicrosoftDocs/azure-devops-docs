@@ -26,9 +26,11 @@ Use this task in a build pipeline to publish pipeline artifacts to Azure Pipelin
 None
 
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishPipelineArtifactV0.md)]
 
 ## Arguments
+
 
 | Argument | Description |
 | -------- | ----------- |

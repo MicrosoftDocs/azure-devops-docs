@@ -47,7 +47,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>containerRegistry</code><br/>Container registry</td>
-    <td>(Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg)</td>
+    <td>(Optional) Name of the <a href="../../library/service-endpoints.md#sep-docreg" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md#sep-docreg)">Docker registry service connection</a></td>
   </tr>
   <tr>
     <td><code>repository</code><br/>Repository</td>

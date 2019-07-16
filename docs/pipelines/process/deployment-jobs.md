@@ -29,7 +29,7 @@ The advantages of using deployment jobs include:
 * You can deploy to an environment, which includes benefits such as being able to see the history of what you've deployed. It's especially helpful to be able to trace deployments in those scenarios where multiple pipelines, stages and jobs are deploying to the same resource (deployment target).
 
 * You can control how your deployment steps run. 
- > At the moment we offer only the `runOnce` strategy, which runs the deployment steps exactly once. The `rolling` strategy is on our roadmap to enable you to iteratively expand deployment steps.
+  > At the moment we offer only the `runOnce` strategy, which runs the deployment steps exactly once. The `rolling` strategy is on our roadmap to enable you to iteratively expand deployment steps.
 
 ## Examples
 
@@ -69,8 +69,8 @@ jobs:
 In the above example, with each run of this job, deployment history is recorded against the staging environment.
 
 > [!NOTE]
-      > - Currently only Kubernetes resources are supported within an environment, with support for VMs and other resources on the roadmap.
-      > - It is also possible to create an environment with empty resources and use that as an abstract shell to record deployment history as shown in the example above.
+> - Currently only Kubernetes resources are supported within an environment, with support for VMs and other resources on the roadmap.
+> - It is also possible to create an environment with empty resources and use that as an abstract shell to record deployment history as shown in the example above.
 
 The following example snippet demonstrates how a pipeline can refer an environment and a resource within the same to be used as the target of a deployment job - 
 

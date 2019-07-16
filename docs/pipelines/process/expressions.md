@@ -307,7 +307,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 You can use the following status check functions as expressions in conditions, but not in variable definitions.
 
 <h3 id="always">always</h3>
-* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
 * Evaluates to `True` if the pipeline was canceled.
@@ -315,22 +315,22 @@ You can use the following status check functions as expressions in conditions, b
 ### failed
 * For a step, equivalent to `eq(variables['Agent.JobStatus'], 'Failed')`.
 * For a job:
- * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
- * With job names as arguments, evaluates to `True` only if any of those jobs failed.
+  * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
+  * With job names as arguments, evaluates to `True` only if any of those jobs failed.
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
- * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
- * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
 ### succeededOrFailed
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
 * For a job:
- * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
- * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
+  * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
+  * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
 
- > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+  > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
 ## Dependencies
 

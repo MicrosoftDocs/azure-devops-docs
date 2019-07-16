@@ -70,7 +70,6 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 #### [New web form](#tab/new-web-form/)
-
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
@@ -86,7 +85,6 @@ The new web form is only available from TFS 2017 and later versions.
 
 
 #### [Old web form](#tab/old-web-form/)
-
 ::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
@@ -98,8 +96,6 @@ To learn more about working in the old web form, see [Add work items to plan and
 
 
 * * *
-
-
 ## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
