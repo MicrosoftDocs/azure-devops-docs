@@ -38,7 +38,7 @@ The rich text editor tool bar displays below the text entry area when you click 
 
 You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=![ ](/azure/devops/_img/icons/mac-command-symbol.png))
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > | Windows OS shortcuts | Mac OS shortcuts |  
 > |------------------|---------------------|  

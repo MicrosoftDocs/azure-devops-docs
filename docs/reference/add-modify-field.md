@@ -288,7 +288,7 @@ You use **witadmin changefield** to change the attributes of an existing field. 
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > | Attribute | Description |
 > |---|---|
