@@ -173,6 +173,8 @@
       href: test/parallel-testing-any-test-runner.md
     - name: Parallel test with VSTest
       href: test/parallel-testing-vstest.md
+    - name: Flaky test management
+      href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
   - name: Package
