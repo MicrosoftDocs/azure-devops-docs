@@ -27,8 +27,11 @@ specified in the manifest files, in an Azure Service Fabric app package.
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -46,7 +49,7 @@ None
 <td>
 <p>The location of the Service Fabric application package to be deployed to the cluster.</p>
 <ul>
-<li>Example: `$(system.defaultworkingdirectory)/**/drop/applicationpackage`</li>
+<li>Example: <code>$(system.defaultworkingdirectory)/**/drop/applicationpackage</code></li>
 <li>Can include wildcards and variables.</li>
 </ul>
 </td>
@@ -55,10 +58,10 @@ None
 <tr>
 <td>Version Value</td>
 <td>
-<p>The value appended to the versions in the manifest files. Default is `.$(Build.BuildNumber)`.</p>
-<p>**Tip:** You can modify the [build number format](https://go.microsoft.com/fwlink/?LinkId=761520) directly or use a [logging command](https://go.microsoft.com/fwlink/?LinkId=821347) to dynamically set a variable in any format. For example, you can use `$(VersionSuffix)` defined in a PowerShell task:</p>
-<p>`$versionSuffix = ".$([DateTimeOffset]::UtcNow.ToString('yyyyMMdd.HHmmss'))"`</p>
-<p>`Write-Host "##vso[task.setvariable variable=VersionSuffix;]$versionSuffix"`</p>
+<p>The value appended to the versions in the manifest files. Default is <code>.$(Build.BuildNumber)</code>.</p>
+<p><strong>Tip:</strong> You can modify the <a href="https://go.microsoft.com/fwlink/?LinkId=761520" data-raw-source="[build number format](https://go.microsoft.com/fwlink/?LinkId=761520)">build number format</a> directly or use a <a href="https://go.microsoft.com/fwlink/?LinkId=821347" data-raw-source="[logging command](https://go.microsoft.com/fwlink/?LinkId=821347)">logging command</a> to dynamically set a variable in any format. For example, you can use <code>$(VersionSuffix)</code> defined in a PowerShell task:</p>
+<p><code>$versionSuffix = &quot;.$([DateTimeOffset]::UtcNow.ToString(&#39;yyyyMMdd.HHmmss&#39;))&quot;</code></p>
+<p><code>Write-Host &quot;##vso[task.setvariable variable=VersionSuffix;]$versionSuffix&quot;</code></p>
 </ul>
 </td>
 </tr>
@@ -74,7 +77,7 @@ None
 <td>Update only if changed</td>
 <td>
 <p>Select this check box if you want to append the new version suffix to only the packages that have changed from a previous build. If no changes are found, the version suffix from the previous build will be appended.</p>
-<p>**Note:** By default, the compiler will create different outputs even if you made no changes. Use the [deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668) to ensure builds with the same inputs produce the same outputs.</p>
+<p><strong>Note:</strong> By default, the compiler will create different outputs even if you made no changes. Use the <a href="https://go.microsoft.com/fwlink/?LinkId=808668" data-raw-source="[deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668)">deterministic compiler flag</a> to ensure builds with the same inputs produce the same outputs.</p>
 </td>
 </tr>
 
@@ -106,7 +109,10 @@ None
 </td>
 </tr>
 
-[!INCLUDE [control-options-arguments](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
@@ -122,7 +128,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

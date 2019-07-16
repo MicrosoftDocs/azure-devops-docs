@@ -30,17 +30,36 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
-0. Edit or [create a Java web app](https://azure.microsoft.com/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
+1. Edit or [create a Java web app](https://azure.microsoft.com/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
 
-0. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
+2. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 
- ![Create FTP deployment credentials](_shared/_img/deployment-credentials.png)
+   ![Create FTP deployment credentials](_shared/_img/deployment-credentials.png)
 
 ## Create the pipeline
 
 <ol>
 
-[!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-open-team-project">
+<img src="~/pipelines/_shared/_img/browse-to-team-project.png" alt="Browse to project">
+
+<p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
+<ul>
+<li>On-premises TFS: <code>http://{your_server}:8080/tfs/DefaultCollection/{your_project}</code> </li>
+<li>Azure Pipelines: <code>https://dev.azure.com/{your_organization}/{your_project}</code></li>
+</ul>
+<p><a href="/azure/devops/server/admin/websitesettings" data-raw-source="[The TFS URL doesn&#39;t work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)">The TFS URL doesn&#39;t work for me. How can I get the correct URL?</a></p>
+</div>
+</li>
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-create">
+<img src="~/pipelines/_shared/_img/create-new-build-definition.png" alt="Build tab">
+<p>
+</div>
+</li>
 
 <li>Click Empty to start with an empty pipeline.</li>
 </ol>
@@ -63,37 +82,37 @@ On the Build tab, add these tasks:
 <table>
    <tr>
 
-      <td>![Build: Maven](../../../tasks/build/_img/maven.png) **Build: Maven**</td>
+      <td><img src="../../../tasks/build/_img/maven.png" alt="Build: Maven"/> <strong>Build: Maven</strong></td>
       <td>
 <p>Build the app.</p>
 <ul>
-          <li>Maven POM file: Browse and select your pom.xml file. For example, ```helloworld/pom.xml```.</li>
+          <li>Maven POM file: Browse and select your pom.xml file. For example, <code>helloworld/pom.xml</code>.</li>
 </ul>
       </td>
 </tr>
 
         <tr>
-            <td>![Utility: cURL Upload Files](../../../tasks/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
+            <td><img src="../../../tasks/utility/_img/curl-upload-files.png" alt="Utility: cURL Upload Files"/> <strong>Utility: cURL Upload Files</strong></td>
             <td>
 <p>Copy the .war file to Azure.</p>
 <ul>
-<li> Files: ```helloworld/target/hello.war```</li>
- <li> Username: ```$(azure.ftp.userName)```</li>
- <li> Password: ```$(azure.ftp.password)```</li>
- <li> URL: Take this value from your Azure Web App essentials page on the [Azure portal](https://portal.azure.com/). For example, ```ftp://waws-prod-sn1-011.ftp.azurewebsites.windows.net```</li>
- <li> Optional Arguments: ```-Q "+CWD site/wwwroot/webapps"```</li>
+<li> Files: <code>helloworld/target/hello.war</code></li>
+ <li> Username: <code>$(azure.ftp.userName)</code></li>
+ <li> Password: <code>$(azure.ftp.password)</code></li>
+ <li> URL: Take this value from your Azure Web App essentials page on the <a href="https://portal.azure.com/" data-raw-source="[Azure portal](https://portal.azure.com/)">Azure portal</a>. For example, <code>ftp://waws-prod-sn1-011.ftp.azurewebsites.windows.net</code></li>
+ <li> Optional Arguments: <code>-Q &quot;+CWD site/wwwroot/webapps&quot;</code></li>
 </ul>
 </td>
         </tr>
         <tr>
-            <td>![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/publish-build-artifacts.png) **Build: Publish Build Artifacts**</td>
+            <td><img src="../../../tasks/utility/_img/publish-build-artifacts.png" alt="Utility: Copy and Publish Build Artifacts"/> <strong>Build: Publish Build Artifacts</strong></td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .war file as we do in the example below.</p>
 <ul>
- <li> Copy Root: ```helloworld/target```</li>
- <li> Contents: ```hello.war```</li>
- <li> Artifact name: ```drop```</li>
- <li> Artifact Type: ```Server```</li>
+ <li> Copy Root: <code>helloworld/target</code></li>
+ <li> Contents: <code>hello.war</code></li>
+ <li> Artifact name: <code>drop</code></li>
+ <li> Artifact Type: <code>Server</code></li>
 </ul>
 </td>
         </tr>
@@ -116,9 +135,9 @@ A: Yes.
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
-0. Open your web app and download the publish profile.
+1. Open your web app and download the publish profile.
 
-0. Open your .PublishSettings file and copy some of the data from the ```publishMethod="FTP"``` section into your build variables.
+2. Open your .PublishSettings file and copy some of the data from the ```publishMethod="FTP"``` section into your build variables.
 
 | Name | Value from .PublishSettings file attribute| Notes |
 |---|---|---|

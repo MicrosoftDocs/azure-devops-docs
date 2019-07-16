@@ -9,24 +9,24 @@ ms.topic: include
   * To check the version from the command prompt:
 
   ```
-az --version
-```
+  az --version
+  ```
 
 * The Azure DevOps extension.
 
   * To install from the command prompt:
 
   ```
-az extension add --name azure-devops
-```
+  az extension add --name azure-devops
+  ```
   * To confirm installation from the command prompt:
 
   ```
-az extension show --name azure-devops
-```
+  az extension show --name azure-devops
+  ```
 
 * Make sure your Azure DevOps defaults include the organization and project from the command prompt:
  
   ```
-az devops configure --defaults organization=https://dev.azure.com/your-organization project=your-project
-```
+  az devops configure --defaults organization=https://dev.azure.com/your-organization project=your-project
+  ```

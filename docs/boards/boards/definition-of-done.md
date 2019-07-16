@@ -25,11 +25,16 @@ Also, you'll have implemented one of the core Kanban tenets: **make processes an
 When set, team members can quickly double-check the done criteria.
 
 ::: moniker range=">= tfs-2017" 
+
 > [!div class="mx-imgBorder"]
 > ![Definition of Done](_img/columns/move-doing-done-dod-develop.png)
+
 ::: moniker-end   
+
 ::: moniker range="tfs-2015" 
+
 > ![Definition of Done](_img/ALM_DD_IntroImage.png)
+
 ::: moniker-end   
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
@@ -59,43 +64,45 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
+
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+2. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
-2. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
+3. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, Configure Definition of Done](_img/columns/definition-of-done-defined.png)  
 
-3. When done with your changes, choose **Save**.  
+4. When done with your changes, choose **Save**.  
    ::: moniker-end  
-   ::: moniker range="tfs-2015"  
-4. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-5. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+::: moniker range="tfs-2015"  
+
+5. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+6. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
     **For TFS 2015.1 and later versions**   
 
-6. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.  
+7. Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.  
 
     <img src="_img/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />     
     <strong>For TFS 2015</strong>  
-7. Choose **Edit Definition** within an intermediate column tab and specify  the Definition of Done for that column.  
+8. Choose **Edit Definition** within an intermediate column tab and specify  the Definition of Done for that column.  
 
 	![Edit Definition](_img/ALM_DD_EditDefinition.png)    	 
 
-8. Enter text that defines your team's Definition of Done.    
+9. Enter text that defines your team's Definition of Done.    
 	![Definition Text](_img/ALM_DD_DefinitionText.png)  
 
 ::: moniker-end   
 
 Team members can quickly check that they have met the criteria by choosing the Information tooltip ![](_img/ALM_DD_InfoIcon.png) info icon.  
-
 
 
 ## Related articles

@@ -279,6 +279,7 @@ The menu options available to you change depending on the platform you work from
 <br/>
 
 ::: moniker range=">= tfs-2018"
+
 <!---#### Azure Boards and TFS 2018-->
 
 <table valign="top">
@@ -293,13 +294,13 @@ The menu options available to you change depending on the platform you work from
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 <!---#### TFS 2017-->
 
 <table valign="top">
 <tr valign="top">
 <td>
 <p><strong>Backlog multi-select menu</strong> </p><br/><img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Product backlog multi-select menu"/><br/></td>
-
 <td>
 <p><strong>Query results multi-select menu</strong> </p><br/><img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2017"/> 
 </td>
@@ -317,7 +318,6 @@ The menu options available to you change depending on the platform you work from
 <td>
 <p><strong>Backlog multi-select menu</strong></p><br/><img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015"/> 
 </td>
-
 <td>
 <p><strong>Query results multi-select menu</strong></p><br/><img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015"/><br/></td>
 </tr>
@@ -334,12 +334,16 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
 ::: moniker range=">= azure-devops-2019"  
+
 > [!div class="mx-imgBorder"]  
 > ![Product backlog, Open context menu, Move several backlog items to a different iteration](_img/bulk-modify/move-iteration.png)
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
+
 ![Backlog page, multi-select items, Open context menu, Move to iteration](_img/bulk-modify-multi-select-ts.png)
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
@@ -425,8 +429,10 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+
 <a id="tags"></a>
+
+::: moniker range=">= tfs-2015"
 
 ## Bulk modify tags 
 
@@ -439,7 +445,7 @@ Here we choose to add the *Service* tag to the selected work items.
 
 > [!div class="mx-imgBorder"]
 > ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
-> 
+
 ::: moniker-end
 
 ::: moniker range="tfs-2015"

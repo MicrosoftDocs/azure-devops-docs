@@ -28,12 +28,12 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 ::: moniker range=">= tfs-2018"
 
-* For **Version**, select **2.\***.
+* For **Version**, select **2.\\***.
 
 ::: moniker-end
 ::: moniker range="<= tfs-2017"
 
-* For **Version**, select **1.\***.
+* For **Version**, select **1.\\***.
 
 ::: moniker-end
 
@@ -51,12 +51,12 @@ You can also publish symbols to a file share by using the [Index Sources and Pub
 
 Add the task to your build pipeline and configure it as follows:
 
-* For **Version**, select **2.\***. 
+* For **Version**, select **2.\\***. 
 * For **Symbol Server Type**, select **File share**.
     * When you select **File share** as **Symbol Server Type**, you get the **Compress Symbols** option. This option compresses your symbols to save space. 
 * Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
 * Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
-For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
+  For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
 
 ## Portable PDBs
 
@@ -81,7 +81,7 @@ The mapping information injected into the .pdb files contains variables that can
 
 * A location (SRCSRVTRG) where the debugger can find the retrieved source file.
 
- The mapping information might look something like the following:
+  The mapping information might look something like the following:
 
 ```
 SRCSRV: variables ------------------------------------------

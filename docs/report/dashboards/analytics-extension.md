@@ -45,7 +45,7 @@ If you have upgraded to Azure DevOps Server 2019.1, you can enable Analytics for
 	> [!div class="mx-imgBorder"]  
 	> ![Open Collection>Admin settings>Analytics](_img/enable-analytics/open-collection-admin-extensions.png) 
 
-2. Choose <strong>Enable Analytics</strong>.  
+2. Choose **Enable Analytics**.  
 	<!--- Update image --> 
 	> [!div class="mx-imgBorder"]  
 	> ![Enable Analytics](_img/enable-analytics/enable-analytics.png) 
@@ -117,8 +117,8 @@ To learn more about the data tables, see [Analytics data model](../extend-analyt
 - You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections). 
 - To install an extension, you must be a member of the [Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) group with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
 - To upload an extension, you must be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator-tfs#server) group with [**Edit instance-level information** permissions](../../organizations/security/permissions.md#server). 
-    - 
-<a name="install-analytics"></a>
+  - 
+    <a name="install-analytics"></a>
 
 ## Install the Analytics extension  
 

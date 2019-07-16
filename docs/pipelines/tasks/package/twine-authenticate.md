@@ -23,11 +23,15 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/TwineAuthenticateV0.md)]
+
 ::: moniker-end
 
 ## Arguments
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |

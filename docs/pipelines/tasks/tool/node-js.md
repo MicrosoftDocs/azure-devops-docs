@@ -26,8 +26,11 @@ Use this task in a build or release pipeline to find, download, and cache a spec
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.md)]
+
 ::: moniker-end
 
 ## Arguments

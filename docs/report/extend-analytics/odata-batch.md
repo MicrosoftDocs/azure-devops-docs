@@ -28,11 +28,11 @@ The $batch endpoint is located at:
 ::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
- https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
-``` 
-
-
+> ```OData
+>  https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+> ``` 
+> 
+> 
 > [!NOTE]
 > The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
 
@@ -41,10 +41,10 @@ The $batch endpoint is located at:
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
-```OData
-https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
-```
-
+> ```OData
+> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+> ```
+> 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
 > The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.

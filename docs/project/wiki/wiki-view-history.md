@@ -32,27 +32,36 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
 	::: moniker range=">= azure-devops-2019"
+
    > [!div class="mx-imgBorder"]  
    > ![Page for a provisioned wiki page](_img/wiki/revision-history-vsts.png)
+
    ::: moniker-end
+
    ::: moniker range="tfs-2018"
-   <img src="_img/wiki/revision-history.png" alt="Open revision history" style="border: 1px solid #C3C3C3;" />
+
+   ![Open revision history](_img/wiki/revision-history.png) 
+
    ::: moniker-end
 
 3. Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
 
-   <img src="_img/wiki/wiki-revision-details-2.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
+   ![Wiki revision details for a page](_img/wiki/wiki-revision-details-2.png)  
+
    ::: moniker range=">= azure-devops-2019"
 
    For a *publish as code wiki* page, you see similar information, but the **Revert** button isn't active.
 
    > [!div class="mx-imgBorder"]  
    > ![Revision page for a publish as code wiki page](_img/wiki/view-history-publish-as-code.png)
+
    ::: moniker-end
 
 4. [Use the breadcrumbs](../navigation/use-breadcrumbs-selectors.md) to return to the page or revisions of the page.
 
 ::: moniker range=">= tfs-2018"
+
+
 <a id="revert-provision"></a>
 
 ## Revert a commit to a *provisioned wiki* page
@@ -62,18 +71,21 @@ Select the **Revert** button on the revision details page to revert a change on 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]
 > The **Revert** option is available with TFS 2018.2 and later versions.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
-<img src="_img/wiki/wiki-revert.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
+![Wiki revision details for a page](_img/wiki/wiki-revert.png) 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 <a id="revert-publish"></a>
+
+::: moniker range=">= azure-devops-2019"
 
 ## Revert a commit to a *publish as code wiki* page
 

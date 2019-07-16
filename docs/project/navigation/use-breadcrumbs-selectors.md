@@ -15,11 +15,15 @@ ms.date: 02/08/2019
 
 
 ::: moniker range=">= azure-devops-2019"
+
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 # Use breadcrumbs and selectors to navigate and open artifacts 
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
@@ -146,6 +150,7 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 ::: moniker-end
 
 ### Example: Pipeline folders and breadcrumbs
+
 Breadcrumb-and-selector navigation elements are used within most services that support defining and organizing artifacts within folders. This includes **Pipelines** or **Build and Release** applications pages. 
 
 ::: moniker range=">= azure-devops-2019"
@@ -155,14 +160,13 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Choose the **Deployment** breadcrumb link to return to the *Deployment* folder. 
 
 > [!div class="mx-imgBorder"]  
 > ![Build and Release, Build definition](_img/breadcrumbs/build-bc-folder.png)
-> 
+
 ::: moniker-end
 
 
@@ -195,6 +199,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Team profiles
 
 - Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 

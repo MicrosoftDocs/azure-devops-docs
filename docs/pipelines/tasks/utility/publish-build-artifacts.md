@@ -27,11 +27,15 @@ Use this task in a build pipeline to publish build artifacts to Azure Pipelines,
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishBuildArtifactsV1.md)]
+
 ::: moniker-end
 
 ## Arguments
+
 
 | Argument | Description |
 | -------- | ----------- |

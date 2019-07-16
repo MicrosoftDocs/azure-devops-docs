@@ -51,7 +51,7 @@ configuration variables for this tool are:
 | -S | ServerName | Yes | The server name of the SQL database. |
 | -i | ScriptName | Yes | The name of the script to be executed. |
 | -b | N/A | No | This parameter is a switch. If present, it means that if an error occurs, the batch will be aborted. |
- 
+
 <a name="rs_da"></a>
 ## Reporting Services Deployment Agent
 
@@ -192,49 +192,55 @@ of the type of actions to perform.
 
 **For application pool actions:** 
 
-| **Parameter** | **Variable** | **Mandatory** | **Description** |
-|---------------|--------------|---------------|-----------------|
-| -Action |  | Yes | Indicate the action to be performed: CreateApplicationPool, ConfigureApplicationPool, DropApplicationPool, StartApplicationPool, StopApplicationPool, or RecycleApplicationPool. |
-| -ap |  | Yes | Application Pool name. |
-| -apAllow32Bit |  | No | Flag that indicates if the application pool must allow 32 bit applications. This parameter is allowed only for IIS 7.0, 7.5, 8.0, and 8.5. The allowed values are 1 or True (32 bit applications are allowed), 0 or False (32 bit applications are not allowed). |
-| -apIdentUserDomain |  | No | Domain of the user to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. If not defined and the "IdentityUserName" is defined, the user will be considered as a local user (.\localuser). |
-| -apIdentUserName |  | No | User name to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. If not defined, "IdentityUserDomain" and "IdentityUserPassword" will be ignored and the default value of IIS will be used (ApplicationPoolIdentity). |
-| -apIdentUserPassword |  | No | The password of the user to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. |
-| -apNetVers |  | No | The .NET Framework version to use for the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are v1.0, v1.1, v2.0, v4.0 |
-| -apPipelineMode |  | No | The managed pipeline mode to use in the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are Classic or Integrated. |
-| -apProcessIdleTimeout |  | No | The number of minutes a process can be idle in the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. |
-| -apRecycleKbMemory |  | No | The maximum number of KB of memory that be used before the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. |
-| -apRecycleMinutes |  | No | A fixed number of minutes after which the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. |
-| -apRecycleSpecificTime |  | No | A fixed time at which the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The required format is HH:MM (for example, 23:58 or 01:23). |
-| -apStartMode |  | No | The start mode to be used for the application pool. This parameter is allowed only for IIS 8.0 and 8.5. The allowed values are OnDemand or AlwaysRunning. |
-| -AutoStart |  | No | Flag that indicates if the application pool must be started automatically. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are 1 or True: The application pool will be started automatically when Windows starts, and 0 or False: The application pool will not be started automatically when Windows starts. |
-<p />
-**For Web Site actions:**
 
-| **Parameter** | **Variable** | **Mandatory** | **Description** |
-|---------------|--------------|---------------|-----------------|
-| -Action |  | Yes | Indicate the action to be performed: CreateWebSite, ConfigureWebSite, DropWebSite, StartWebSite, StopWebSite, or RestartWebSite. |
-| -sn |  | Yes | Web site name. |
-| -port |  | No\* | The port number of the website. Mandatory for create action and optional in configure. |
-| -pd |  | No\* | The full path routing to the location where the application was published. Mandatory for create action and optional in configure. **Note**: Ensure that there is no trailing slash in the path. |
-| -ap |  | No | Name of the application pool. If not defined when creating an application pool, the default application pool will be used. Optional in Create and Configure actions. |
-| -EnablePreload |  | No | Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be preloaded. Optional in Create and Configure actions. Allowed values are 1 or True: Preload enabled and 0 or false: Preload disabled. |
-| -AutoStart |  | No | Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be automatically started. Optional in Create and Configure actions. Allowed values are 1 or True: start automatically and 0 or False: do not start automatically. |
-| -log |  | No | A log file with this given name will be generated in the physical directory. |
-<p />
-**For Web Application actions:** 
+|     **Parameter**      | **Variable** | **Mandatory** |                                                                                                                                                                **Description**                                                                                                                                                                 |
+|------------------------|--------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        -Action         |              |      Yes      |                                                                                Indicate the action to be performed: CreateApplicationPool, ConfigureApplicationPool, DropApplicationPool, StartApplicationPool, StopApplicationPool, or RecycleApplicationPool.                                                                                |
+|          -ap           |              |      Yes      |                                                                                                                                                             Application Pool name.                                                                                                                                                             |
+|     -apAllow32Bit      |              |      No       |                                        Flag that indicates if the application pool must allow 32 bit applications. This parameter is allowed only for IIS 7.0, 7.5, 8.0, and 8.5. The allowed values are 1 or True (32 bit applications are allowed), 0 or False (32 bit applications are not allowed).                                        |
+|   -apIdentUserDomain   |              |      No       |                                               Domain of the user to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. If not defined and the "IdentityUserName" is defined, the user will be considered as a local user (.\localuser).                                                |
+|    -apIdentUserName    |              |      No       |                                  User name to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. If not defined, "IdentityUserDomain" and "IdentityUserPassword" will be ignored and the default value of IIS will be used (ApplicationPoolIdentity).                                  |
+|  -apIdentUserPassword  |              |      No       |                                                                                                     The password of the user to use as the identity of the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5.                                                                                                     |
+|       -apNetVers       |              |      No       |                                                                                    The .NET Framework version to use for the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are v1.0, v1.1, v2.0, v4.0                                                                                     |
+|    -apPipelineMode     |              |      No       |                                                                                     The managed pipeline mode to use in the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are Classic or Integrated.                                                                                      |
+| -apProcessIdleTimeout  |              |      No       |                                                                                                       The number of minutes a process can be idle in the application pool. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5.                                                                                                       |
+|   -apRecycleKbMemory   |              |      No       |                                                                                             The maximum number of KB of memory that be used before the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5.                                                                                             |
+|   -apRecycleMinutes    |              |      No       |                                                                                                     A fixed number of minutes after which the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5.                                                                                                      |
+| -apRecycleSpecificTime |              |      No       |                                                                               A fixed time at which the application pool is recycled. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The required format is HH:MM (for example, 23:58 or 01:23).                                                                                |
+|      -apStartMode      |              |      No       |                                                                                           The start mode to be used for the application pool. This parameter is allowed only for IIS 8.0 and 8.5. The allowed values are OnDemand or AlwaysRunning.                                                                                            |
+|       -AutoStart       |              |      No       | Flag that indicates if the application pool must be started automatically. This parameter is allowed only for IIS 7.0, 7.5, 8.0 and 8.5. The allowed values are 1 or True: The application pool will be started automatically when Windows starts, and 0 or False: The application pool will not be started automatically when Windows starts. |
 
-| **Parameter** | **Variable** | **Mandatory** | **Description** |
-|---------------|--------------|---------------|-----------------|
-| -Action |  | Yes | Indicate the action to be performed: CreateWebApplication, ConfigureWebApplication, or DropWebApplication. |
-| -ws |  | Yes | Name of the application to create. |
-| -pd |  | No\* | The full path routing to the location where the application was published. Mandatory for create action and optional in configure. |
-| -sn |  | No | Website name. If not specified, the system will use Default web site when creating a new application. Optional in Create and Configure actions. |
-| -ap |  | No | Name of the application pool. If not defined when creating an application pool, the default application pool will be used. Optional in Create and Configure actions. |
-| -EnablePreload |  | No | Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be preloaded. Optional in Create and Configure actions. Allowed values are: 1 or True: preload enabled and 0 or False: preload disabled. |
-| -log |  | No | A log file with this name will be generated in the physical directory. |
 <p />
-**For virtual directory actions:**
+<strong>For Web Site actions:</strong>
+
+
+| **Parameter**  | **Variable** | **Mandatory** |                                                                                                                 **Description**                                                                                                                  |
+|----------------|--------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    -Action     |              |      Yes      |                                                         Indicate the action to be performed: CreateWebSite, ConfigureWebSite, DropWebSite, StartWebSite, StopWebSite, or RestartWebSite.                                                         |
+|      -sn       |              |      Yes      |                                                                                                                  Web site name.                                                                                                                  |
+|     -port      |              |     No\*      |                                                                              The port number of the website. Mandatory for create action and optional in configure.                                                                              |
+|      -pd       |              |     No\*      |                         The full path routing to the location where the application was published. Mandatory for create action and optional in configure. **Note**: Ensure that there is no trailing slash in the path.                          |
+|      -ap       |              |      No       |                                       Name of the application pool. If not defined when creating an application pool, the default application pool will be used. Optional in Create and Configure actions.                                       |
+| -EnablePreload |              |      No       |              Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be preloaded. Optional in Create and Configure actions. Allowed values are 1 or True: Preload enabled and 0 or false: Preload disabled.              |
+|   -AutoStart   |              |      No       | Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be automatically started. Optional in Create and Configure actions. Allowed values are 1 or True: start automatically and 0 or False: do not start automatically. |
+|      -log      |              |      No       |                                                                                   A log file with this given name will be generated in the physical directory.                                                                                   |
+
+<p />
+<strong>For Web Application actions:</strong> 
+
+
+| **Parameter**  | **Variable** | **Mandatory** |                                                                                                     **Description**                                                                                                     |
+|----------------|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    -Action     |              |      Yes      |                                                       Indicate the action to be performed: CreateWebApplication, ConfigureWebApplication, or DropWebApplication.                                                        |
+|      -ws       |              |      Yes      |                                                                                           Name of the application to create.                                                                                            |
+|      -pd       |              |     No\*      |                                            The full path routing to the location where the application was published. Mandatory for create action and optional in configure.                                            |
+|      -sn       |              |      No       |                                     Website name. If not specified, the system will use Default web site when creating a new application. Optional in Create and Configure actions.                                     |
+|      -ap       |              |      No       |                          Name of the application pool. If not defined when creating an application pool, the default application pool will be used. Optional in Create and Configure actions.                           |
+| -EnablePreload |              |      No       | Allowed on IIS 7.0, 7.5, 8.0 and 8.5. Flag that indicates if the web site must be preloaded. Optional in Create and Configure actions. Allowed values are: 1 or True: preload enabled and 0 or False: preload disabled. |
+|      -log      |              |      No       |                                                                         A log file with this name will be generated in the physical directory.                                                                          |
+
+<p />
+<strong>For virtual directory actions:</strong>
 
 | **Parameter** | **Variable** | **Mandatory** | **Description** |
 |---------------|--------------|---------------|-----------------|
@@ -278,23 +284,25 @@ This tool creates and launches automated tests run on Microsoft Test
 Manager. It is based on a custom release management PowerShell script. The 
 configuration variables of this tool are:
 
-| **Parameter** | **Variable** | **Mandatory** | **Description** |
-|---------------|--------------|---------------|-----------------|
-| -command | N/A | Yes | Fixed value ./TcmExec.ps1. |
-| -Title | TestRunTitle | Yes | The name that will be used when creating the test run. |
-| -PlanId | PlanId | Yes | The identifier of the Test Plan under which the tests must run (Unique ID as defined in Test Manager). |
-| -SuiteId | SuiteId | Yes | The identifier of the Suite that you want to run (Unique ID as defined in Test Manager). |
-| -ConfigId | ConfigId | Yes | The identifier of the Test Configuration under which the tests must run (Unique ID as defined in Test Manager). |
-| -Collection | TFSCollection | Yes | The Team Foundation Server Collection URL for which the automated tests will execute. |
-| -TeamProject | TeamProject | Yes | The name of the project in which the automated tests were configured. |
-| -TestEnvironment | TestEnvironment | Yes | The Test Environment in which the Tests are to be executed (the test environment is associated to a corresponding test controller). |
-| -BuildDirectory | BuildDirectory | No\* | The location of the automated tests. In Microsoft Test Manager 2010, this parameter is required. In Microsoft Test Manager 2012 and 2013 this parameter is still supported, but you should preferably use BuildDefinition and BuildNumber parameters. |
-| -BuildDefinition |  | No\* | Allows the user to specify the build definition in which the automated tests are included. This parameter can only be used with Microsoft Test Manager 2012. If defined, the BuildNumber parameter must also be specified. If not specified, the field "build" visible in the details of a test run will not be affected by the test run. |
-| -BuildNumber |  | No\* | Allows the user to specify the build number whose drop location will contain the automated tests. This parameter can only be used under Microsoft Test Manager 2012. If defined, the BuildDefinition parameter must also be specified. If not specified, the field "build" visible in the details of a test run, will not be affected by the test run. |
-| -SettingsName |  | No | Allows the user to specify the settings to use for the test run. If not specified, the default test settings will be used. |
-| -TestRunWaitDelay |  | No | Allows the user to specify the delay, in seconds, between each call to the test controller. This is required to allow the test run to complete before processing the test results. If not specified, it will default to 10 seconds. |
-| -InconclusiveFailsTests | N/A | No | When this flag is set, the existence of inconclusive tests will fail the deployment. By default, an inconclusive test will not fail the deployment. |
-| -RemoveIncludeParameter | N/A | No | When this flag is set, the /include parameter will not be appended to the test creation command. This means that any tests that have a status different than Active will not be included in the test run. |
+
+|      **Parameter**      |  **Variable**   | **Mandatory** |                                                                                                                                                                    **Description**                                                                                                                                                                     |
+|-------------------------|-----------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        -command         |       N/A       |      Yes      |                                                                                                                                                               Fixed value ./TcmExec.ps1.                                                                                                                                                               |
+|         -Title          |  TestRunTitle   |      Yes      |                                                                                                                                                 The name that will be used when creating the test run.                                                                                                                                                 |
+|         -PlanId         |     PlanId      |      Yes      |                                                                                                                         The identifier of the Test Plan under which the tests must run (Unique ID as defined in Test Manager).                                                                                                                         |
+|        -SuiteId         |     SuiteId     |      Yes      |                                                                                                                                The identifier of the Suite that you want to run (Unique ID as defined in Test Manager).                                                                                                                                |
+|        -ConfigId        |    ConfigId     |      Yes      |                                                                                                                    The identifier of the Test Configuration under which the tests must run (Unique ID as defined in Test Manager).                                                                                                                     |
+|       -Collection       |  TFSCollection  |      Yes      |                                                                                                                                 The Team Foundation Server Collection URL for which the automated tests will execute.                                                                                                                                  |
+|      -TeamProject       |   TeamProject   |      Yes      |                                                                                                                                         The name of the project in which the automated tests were configured.                                                                                                                                          |
+|    -TestEnvironment     | TestEnvironment |      Yes      |                                                                                                          The Test Environment in which the Tests are to be executed (the test environment is associated to a corresponding test controller).                                                                                                           |
+|     -BuildDirectory     | BuildDirectory  |     No\*      |                                                 The location of the automated tests. In Microsoft Test Manager 2010, this parameter is required. In Microsoft Test Manager 2012 and 2013 this parameter is still supported, but you should preferably use BuildDefinition and BuildNumber parameters.                                                  |
+|    -BuildDefinition     |                 |     No\*      |       Allows the user to specify the build definition in which the automated tests are included. This parameter can only be used with Microsoft Test Manager 2012. If defined, the BuildNumber parameter must also be specified. If not specified, the field "build" visible in the details of a test run will not be affected by the test run.        |
+|      -BuildNumber       |                 |     No\*      | Allows the user to specify the build number whose drop location will contain the automated tests. This parameter can only be used under Microsoft Test Manager 2012. If defined, the BuildDefinition parameter must also be specified. If not specified, the field "build" visible in the details of a test run, will not be affected by the test run. |
+|      -SettingsName      |                 |      No       |                                                                                                               Allows the user to specify the settings to use for the test run. If not specified, the default test settings will be used.                                                                                                               |
+|    -TestRunWaitDelay    |                 |      No       |                                                          Allows the user to specify the delay, in seconds, between each call to the test controller. This is required to allow the test run to complete before processing the test results. If not specified, it will default to 10 seconds.                                                           |
+| -InconclusiveFailsTests |       N/A       |      No       |                                                                                                  When this flag is set, the existence of inconclusive tests will fail the deployment. By default, an inconclusive test will not fail the deployment.                                                                                                   |
+| -RemoveIncludeParameter |       N/A       |      No       |                                                                       When this flag is set, the /include parameter will not be appended to the test creation command. This means that any tests that have a status different than Active will not be included in the test run.                                                                        |
+
 <p />
 If the automated tests are included in the same build pipeline as the 
 application being deployed, it is possible to use metadata as the variable 
@@ -351,7 +359,7 @@ tool are:
 * [Release with deployment agents](../release-with-agents.md)
 * [Trigger a release from a build](../trigger-a-release.md)
 * [Deploy continuously to Azure](../deploy-continuously-to-azure.md)
- 
+
 [!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
- 
+
 [!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]

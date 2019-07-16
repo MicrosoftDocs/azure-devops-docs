@@ -53,11 +53,11 @@ In the options tab of the pipeline, add the demand to your pipeline.
 Register each agent that has the capability.
 
 0. Go to the Agent pools tab at the root of the control panel:
-[!INCLUDE [agent-pools-tab](../agents/_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](../agents/_shared/agent-pools-tab.md)]
 
-0. Click the agent, and then click **Capabilities**
+1. Click the agent, and then click **Capabilities**
 
-0. Add something like the following entry:
+2. Add something like the following entry:
 
 | First box | Second box |
 |---|---|

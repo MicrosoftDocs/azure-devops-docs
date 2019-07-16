@@ -26,8 +26,11 @@ When the pipeline job completes, no matter whether it succeeds, fails, or is can
 It is unnecessary to use this task with the [Install Apple Certificate](install-apple-certificate.md) or [Install Apple Provisioning Profile](install-apple-provisioning-profile.md) tasks because they automatically download, install, and delete (at the end of the pipeline job) the secure file.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.md)]
+
 ::: moniker-end
 
 ## Arguments

@@ -21,11 +21,10 @@ ms.date: 06/28/2019
 
 You can change a project based on the Scrum process to use the Agile process. Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Process | Work item types | Workflow |
-> |------|---------|---------|
-> |**Scrum** | ![Scrum work item types](_img/scrum-to-agile/scrum-process-plan-wits.png)|![Scrum workflow](../../..//boards/work-items/guidance/_img/alm_pt_scrum_wf_pbi.png)|
-> |**Agile** | ![Agile work item types](_img/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/_img/about-boards/agile-process-workflow.png)|
+| Process | Work item types | Workflow |
+|------|---------|---------|
+|**Scrum** | ![Scrum work item types](_img/scrum-to-agile/scrum-process-plan-wits.png)|![Scrum workflow](../../..//boards/work-items/guidance/_img/alm_pt_scrum_wf_pbi.png)|
+|**Agile** | ![Agile work item types](_img/scrum-to-agile/agile-process-plan-wits.png)|![Agile workflow](../../../boards/get-started/_img/about-boards/agile-process-workflow.png)|
 
 For an overview of all processes and workflows for all work item types, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
 
@@ -156,45 +155,45 @@ Your next step is to bulk update work items. The recommended sequence is:
 - Perform a bulk update to change the work item type of Product Backlog Item work items to User Story.
 - Perform a bulk update on all States to change from Scrum states&mdash;Approved, Committed, and Done&mdash;to Agile process states&mdash;Active, Resolved, and Closed.
 
-1.  [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items, Impediments, Features, Tasks, and Epics. You will need to change the work item type of the first two work item types, and the State and Reason fields for all items.
+1. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items, Impediments, Features, Tasks, and Epics. You will need to change the work item type of the first two work item types, and the State and Reason fields for all items.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Query all items](_img/scrum-to-agile/query-all-items-scrum-to-agile.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Query all items](_img/scrum-to-agile/query-all-items-scrum-to-agile.png)
 
-1.  Choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
+2. Choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Column options dialog, sort tab](_img/change-process/query-column-sort.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Column options dialog, sort tab](_img/change-process/query-column-sort.png)
 
-1.  Choose **Results** to just show the list of work items.
+3. Choose **Results** to just show the list of work items.
 
-1.  Highlight all User Stories, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon, select **Change type**, and change the type to Product Backlog Item.
+4. Highlight all User Stories, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon, select **Change type**, and change the type to Product Backlog Item.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Change type dialog](_img/scrum-to-agile/change-type-user-story.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Change type dialog](_img/scrum-to-agile/change-type-user-story.png)
 
-    For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
+   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
 
-    It's possible that you will receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
+   It's possible that you will receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Error state of changed work item type](_img/scrum-to-agile/mismatch-items.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Error state of changed work item type](_img/scrum-to-agile/mismatch-items.png)
 
-1.  Highlight all work items of the same State, such as Resolved, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
+5. Highlight all work items of the same State, such as Resolved, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
 
-    > [!div class="mx-imgBorder"]  
-    > ![Edit work item dialog](_img/scrum-to-agile/edit-work-items-state-reason.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Edit work item dialog](_img/scrum-to-agile/edit-work-items-state-reason.png)
 
-    This should result in an updated list without errors.
+   This should result in an updated list without errors.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Error state of changed work item type](_img/scrum-to-agile/mismatch-items-fixed.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Error state of changed work item type](_img/scrum-to-agile/mismatch-items-fixed.png)
 
-1.  To save your changes, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and select **Save items**.
+6. To save your changes, choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and select **Save items**.
 
-1.  Repeat the above steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
+7. Repeat the above steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
 
-1.      When done, make sure you choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and select **Save items**.
+8. When done, make sure you choose the ![ ](../../../_img/icons/actions-icon.png) actions icon and select **Save items**.
 
 > [!TIP]  
 > If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, you can do that using Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).

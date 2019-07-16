@@ -24,7 +24,9 @@ source folder to target folder on the remote machine. Supported protocols for fi
 In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Prerequisites
@@ -33,8 +35,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -75,7 +80,9 @@ This task is intended for target machines running Linux.
 - For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

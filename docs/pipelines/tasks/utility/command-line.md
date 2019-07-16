@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,7 +30,9 @@ Use this task in a build or release pipeline to run a program from the command p
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
 
 The CmdLine task also has a shortcut syntax in YAML:
@@ -60,7 +64,7 @@ The CmdLine task also has a shortcut syntax in YAML:
 </tr>
 <tr>
 <td>Working directory</td>
-<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
+<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</td>
 </tr>
 <tr>
 <td>Fail on standard error</td>
@@ -68,23 +72,24 @@ The CmdLine task also has a shortcut syntax in YAML:
 </tr>
 <tr>
 <td>Environment variables</td>
-<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-```yaml
+<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+<code>yaml
 - script: echo %MYSECRET%
   env:
-    MySecret: $(Foo)
-```
+    MySecret: $(Foo)</code>
 </td>
 </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
 
 </table>
 
 ## Example
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 - script: date /t
@@ -100,80 +105,78 @@ steps:
     aVarFromYaml: someValue
 ```
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 On the Build tab of a build pipeline, add these tasks:
 
 <table>
    <tr>
       <td>
 
-![](_img/command-line.png)
+<img src="_img/command-line.png" alt=""/>
 
-<br/>**Utility: Command Line**
+<br/><strong>Utility: Command Line</strong>
       </td>
 <td>
 <p>Get the date.</p>
 <ul>
-<li>Tool: ```date```</li>
- <li>Arguments: ```/t```</li>
+<li>Tool: <code>date</code></li>
+ <li>Arguments: <code>/t</code></li>
 </ul>
       </td>
 </tr>
-   
+
         <tr>
       <td>
 
-![](_img/command-line.png)
+<img src="_img/command-line.png" alt=""/>
 
-<br/>**Utility: Command Line**</td>
-      
+<br/><strong>Utility: Command Line</strong></td>
+
 <td>
 <p>Display the operating system version.</p>
 <ul>
-<li>Tool: ```ver```</li>
+<li>Tool: <code>ver</code></li>
  </ul>
 </td>
         </tr>
 
-   
+
         <tr>
       <td>
 
-![](_img/command-line.png)
+<img src="_img/command-line.png" alt=""/>
 
-<br/>**Utility: Command Line**</td>
-      
+<br/><strong>Utility: Command Line</strong></td>
+
 <td>
 <p>Display the environment variables.</p>
 <ul>
-<li>Tool: ```set```</li>
+<li>Tool: <code>set</code></li>
 </ul>
 </td>
         </tr>
 
-   
+
         <tr>
       <td>
 
-![](_img/command-line.png)
+<img src="_img/command-line.png" alt=""/>
 
-<br/>**Utility: Command Line**</td>
-      
+<br/><strong>Utility: Command Line</strong></td>
+
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
-<li>Tool: ```dir```</li>
- <li>Arguments: ```/s```</li>
-<li>Advanced, Working folder: ```$(Agent.BuildDirectory)```</li>
+<li>Tool: <code>dir</code></li>
+ <li>Arguments: <code>/s</code></li>
+<li>Advanced, Working folder: <code>$(Agent.BuildDirectory)</code></li>
 </ul>
 </td>
         </tr>
 
 </table>
 
----
-
+* * *
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -189,7 +192,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->
