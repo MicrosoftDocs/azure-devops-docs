@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/07/2018
+ms.date: 07/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -53,7 +53,7 @@ None
 <p>Specify minimatch pattern filters (one on each line) that you want to apply to the list of files to be deleted. For example:
 </p>
 <ul>
-<li><code><strong></code> deletes all files and folders in the root folder.</li>
+<li><code><strong>\*</strong></code> deletes all files and folders in the root folder.</li>
 <li><code>temp</code> deletes the temp folder in the root folder.</li>
 <li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with temp.</li>
 <li><code></strong>\temp*<em></code> deletes all files in any sub-folder named temp.</li>
