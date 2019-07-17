@@ -38,6 +38,9 @@ Here's a very simple abstract example of a deployment job:
 ```YAML
 jobs:
 - deployment: string
+  dependsOn: string | [ string ]
+  condition: string
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool:
     name: string
     demands: string | [ string ]
