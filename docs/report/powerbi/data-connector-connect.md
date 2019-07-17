@@ -187,7 +187,8 @@ The following text is the real error message returned from the connector.
 
 In the example below the most important part of the error message is:
 
-> Query result exceeds maximum size. Please reduce the number of records by applying additional filters. 
+> Query result exceeds maximum size. Please reduce the number of records by applying additional filters.  
+> 
 > ![QueryExceedsPreferredMaxSizeException](./_img/QueryExceedsPreferredMaxSizeException.png)
 
 <a id="QueryExceedsPreferredMaxSizeException">  </a>
