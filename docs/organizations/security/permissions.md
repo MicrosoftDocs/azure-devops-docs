@@ -129,15 +129,10 @@ To learn how to add users to a group or set a specific permission that you can m
 </table>
 
 
-
-
 ::: moniker-end
 
 
-
 ::: moniker range="tfs-2018"
-
-
 
 <table valign="top">
 <tbody valign="top">
@@ -190,9 +185,6 @@ To learn how to add users to a group or set a specific permission that you can m
 
 
 ::: moniker range="<= tfs-2017"
-
-
-
 
 
 <table valign="top">
@@ -1146,28 +1138,6 @@ To set or override the permissions for a specific build definition, choose **Sec
 
 The following permissions are defined in Build. All of these can be set at both the levels.
 
-<!---
-Commenting this section out as it duplicates that defined in the following table.
-| Permission | Description |
-|------------|-------------|
-| **Administer build permissions** | Can change any of the other permissions listed here. |
-| **Queue builds** | Can queue new builds. |
-| **Delete build definition** | Can delete build definition(s). |
-| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](../../pipelines/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
-| **Destroy builds** | Can delete builds from the **Deleted** tab. |
-| **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
-| **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This does not apply to PR builds. |
-| **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
-| **Stop builds** | Can stop builds queued by other team members or by the system.  |
-| **View build definition** | Can view build definition(s). |
-| **View builds** | Can view builds belonging to build definition(s). |
-| **Update build information** | It is recommended to leave this alone. It's intended to enable service accounts, not team members. |
-| **Manage build qualities** | _Only applies to XAML builds_ |
-| **Manage build queue** | _Only applies to XAML builds_ |
-
--->
-
 <table valign="top" width="100%">
 <tbody valign="top">
     <tr>
@@ -1280,6 +1250,8 @@ Commenting this section out as it duplicates that defined in the following table
 <a id="git-repository">  </a>
 <a id="git-repository-permissions-object-level">  </a>
 <a id="nbspnbspnbspgit-repository-object-level">  </a>
+
+
 ## Git repository (object-level)
 
 <!---
@@ -1337,15 +1309,15 @@ By default, the project level Readers groups have only Read permissions.
     <tr>
         <td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
         <td>
-        Can opt-in to override branch policies by checking <strong>Override branch policies and enable merge</strong> when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
+        Can opt-in to override branch policies by checking <strong>Override branch policies and enable merge</strong> when completing a PR.
+        <blockquote>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </blockquote>
         </td>
     </tr>
     <tr>
         <td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
         <td>
-        Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
+        Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
+        <blockquote>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019.</blockquote> 
         </td>
     </tr>
     <tr>
@@ -1400,7 +1372,7 @@ By default, the project level Readers groups have only Read permissions.
           <li>Push directly to branches that have branch policies set</li>
         </ul>
         <br>
-        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); <strong>Bypass policies when completing pull requests</strong> and <strong>Bypass policies when pushing</strong>.)</b>
+        <blockquote>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions: <strong>Bypass policies when completing pull requests</strong> and <strong>Bypass policies when pushing</strong>.</blockquote>
         </td>
     </tr>
     <tr>
@@ -2075,21 +2047,123 @@ In addition, you can assign approvers to specific steps within a release pipelin
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or environment level.
 
-
-> | Permission | Description | Scopes |
-> |------------|-------------|--------|
-> | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release pipeline, Environment |
-> | **Create releases** | Can create new releases. | Project, Release pipeline |
-> | **Delete release pipeline** | Can delete release pipeline(s). | Project, Release pipeline |
-> | **Delete release environment** | Can delete environment(s) in release pipeline(s). | Project, Release pipeline, Environment |
-> | **Delete releases** | Can delete releases for a pipeline. | Project, Release pipeline |
-> | **Edit release pipeline** | Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs **Edit release environment** permission. | Project, Release pipeline |
-> | **Edit release environment** | Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Environment |
-> | **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Environment |
-> | **Manage release approvers** | Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release pipeline, Environment |
-> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release pipeline |
-> | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
-> | **View releases** | Can view releases belonging to release pipeline(s). | Project, Release pipeline |
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="40%">Description</th>
+        <th width="30%">Scopes</th>
+    </tr>
+    <tr>
+        <td id="admin-release-permission">Administer release permissions</td>
+        <td>
+            Can change any of the other permissions listed here.
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="create-releases-permission">Create releases</td>
+        <td>
+            Can create new releases.
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-release-pipeline-permission">Delete release pipeline</td>
+        <td>
+           Can delete release pipeline(s).
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-release-environment-permission">Delete release environment</td>
+        <td>
+            Can delete environment(s) in release pipeline(s).
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-releases-permission">Delete releases</td>
+        <td>
+           Can delete releases for a pipeline.  
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-release-permission">Edit release pipeline</td>
+        <td>
+           Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-release-environment-permission">Edit release environment</td>
+        <td>
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+        </td>
+        <td>
+            Project, Release pipeline, Environment  
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-deployments-permission">Manage deployments</td>
+        <td>
+          Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the <strong>Deploy</strong> action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release.  
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-release-environment-permission">Manage release approvers</td>
+        <td>
+           Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance.  
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-releases-permission">Manage releases</td>
+        <td>
+           Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="view-release-environment-permission">View release pipeline</td>
+        <td>
+           Can view release pipeline(s). 
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+    <tr>
+        <td id="view-releases-permission">View releases</td>
+        <td>
+           Can view releases belonging to release pipeline(s).  
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+</tbody>
+</table>
 
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
@@ -2111,11 +2185,12 @@ level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
-| Permission | Description | 
-|------------|-------------| 
-| **Administer task group permissions** | Can add and remove users or groups to task group security. |
-| **Delete task group** | Can delete a task group. | 
-| **Edit task group** | Can create, modify, or delete a task group. | 
+> [!div class="tdCol2BreakAll"]  
+> | Permission | Description | 
+> |------------|-------------| 
+> | **Administer task group permissions** | Can add and remove users or groups to task group security. |
+> | **Delete task group** | Can delete a task group. | 
+> | **Edit task group** | Can create, modify, or delete a task group. | 
 
 
 
@@ -2139,19 +2214,16 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <th width="30%">Permission</th>
         <th width="70%">Description</th>
     </tr>
-
     <tr>
         <td>Delete Environment and Virtual Machines</td>
         <td>Can delete environments and templates. The permission is checked for the object that is being deleted.
         </td>
     </tr>
-
     <tr>
         <td>Delete Environment and Virtual Machines</td>
         <td>Can delete environments and templates. The permission is checked for the object that is being deleted.
         </td>
     </tr>
-
     <tr>
         <td>Delete Lab Locations</td>
         <td>Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the <strong>Delete Lab Location</strong> permission for that location.
@@ -2236,20 +2308,20 @@ There are no UI permissions associated with [managing email notifications or ale
 
 You can manage alert permissions using [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd).
 
-
-|TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
-|---|---|---|:---:|
-|CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
-|GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
-|GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
-|UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
+> [!div class="mx-tdBreakAll"]  
+> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
+> |---|---|---|:---:|
+> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
+> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
+> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
+> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
 
 
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Add users to a project](../accounts/add-team-members.md) (Azure DevOps)   
-- [Add users to a project](../../organizations/security/add-users-team-project.md) (TFS)   
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
+- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
