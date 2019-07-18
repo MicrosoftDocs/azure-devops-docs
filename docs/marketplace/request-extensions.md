@@ -1,6 +1,6 @@
 ---
-title: Request extensions for Azure DevOps
-description: Request extensions for a project or project collection in Azure DevOps
+title: Request and approve extensions for Azure DevOps
+description: Request extensions and approve extension requests for a project or project collection in Azure DevOps
 ms.topic: quickstart
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,15 +8,22 @@ ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2019
+ms.date: 07/18/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Quickstart: Request extensions
+# Quickstart: Request and approve extensions
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-If you don't have permissions to install extensions, you can request extensions instead. In this quickstart, learn how to request extensions, so you can add further capabilities to Azure DevOps.
+If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. In this article, learn how to do the following tasks:
+  - [Request an extension](#request-an-extension)
+  - [Approve extension requests](#approve-extension-requests)
+
+## Prerequisites
+
+- To request extensions, you must be a contributor for your organization
+- To approve extensions, you must be a member of the Project Collection Administrators group or have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection) set to *Allow*
 
 ## Request an extension
 
@@ -86,10 +93,60 @@ Your Project Collection or Project Administrator can review your request after t
 
 ::: moniker-end
 
+To approve extensions, you must have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection).
+
+## Approve extension requests
+
+::: moniker range=">= azure-devops-2019"
+
+1. Go to your Azure DevOps or TFS home page, then go to your project:
+
+   * Azure DevOps:```https://dev.azure.com/{organization}/{project}```
+   * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+
+2. Select the shopping bag icon and **Manage extensions**.
+
+   ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
+
+3. Review and approve your requested extensions.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
+
+   After you approve extension requests, the extensions are automatically installed.
+
+4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+1. Go to your Azure DevOps or TFS home page, then go to your project:
+
+   * Azure DevOps: ```https://dev.azure.com/{organization}/{project}```
+   * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+
+2. Select the shopping bag icon and **Manage extensions**.
+
+   ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
+
+3. Review and approve your requested extensions.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
+
+   After you approve extension requests, the extensions are automatically installed.
+
+4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
+
+::: moniker-end
+
+Tell your team about installed extensions, so they can start using their capabilities.
+
 ## Next steps
 
-> [!div class="nextstepaction"]
-  > [Start a trial extension](start-trial-extension.md)
+  > [!div class="nextstepaction"]
+  > [Assign extension](install-extension.md#assign-paid-extensions-to-users)
 
 ## Related articles
 

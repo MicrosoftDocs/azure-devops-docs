@@ -4,10 +4,18 @@
   href: ../marketplace/toc.yml
 - name: Develop extensions
   href: ../extend/toc.yml 
-- name: Integrate Applications
+- name: Integrate applications
   href: ../integrate/toc.yml 
 - name: Service Hooks
   href: ../service-hooks/toc.yml
+- name: Additional integrations
+  items:
+  - name: Azure Boards with Slack
+    href: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Azure Pipelines with Slack
+    href: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Azure Pipelines with Microsoft Teams
+    href: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: REST API and Client Reference
   items:
   - name: REST APIs
@@ -24,7 +32,7 @@
     href: https://code.visualstudio.com/docs/editor/extension-gallery
 - name: Resources
   items:
-  - name: How to buy TFS CALs
+  - name: How to buy Azure DevOps CALs
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Billing 
     href: /azure/devops/organizations/billing/index
