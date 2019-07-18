@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/14/2019
+ms.date: 07/17/2019
 ---
 
 
@@ -64,7 +64,7 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 
 	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
-Your next step is to start using your Kanban board to [track issues and tasks](track-issues-tasks.md), or [invite other users](#invite-others) to collaborate with your project. 
+Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 ## Sign up with a personal Microsoft account
 
@@ -140,7 +140,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board](_img/track-issues/issues-board-new-item.png)
 
-	You're now set to start [tracking issues, tasks, and features](track-issues-tasks.md), or [invite other users](#invite-others) to collaborate with your project. 
+	You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 
 <a id="invite-others" />
@@ -202,7 +202,7 @@ You can rename your project or change it's visibility. To learn more about manag
 ## Try this next  
  
 > [!div class="nextstepaction"]
-> [Track issues and tasks](track-issues-tasks.md)
+> [Track issues and tasks](plan-track-work.md)
 
 
 ## Related articles  
@@ -213,20 +213,3 @@ You can rename your project or change it's visibility. To learn more about manag
 - [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
 
 
-
-
-<!--- REMOVED CONTENT
-
-Enter a name for your organization. The name can't contain spaces or special characters
- (such as / \ [ ] : | < > + = ; ? or &#42;), can't end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Select **Continue**.
-
-
-   ![Almost done](/azure/devops/_shared/_img/almost-done.png)
-
-   You see the following dialog box as your organization is created.
-
-   ![Taking you to your new organization](/azure/devops/_shared/_img/taking-you-to-your-new-azure-devops-org.png)
-
-	Congratulations, you're now an organization owner!
-
---> 

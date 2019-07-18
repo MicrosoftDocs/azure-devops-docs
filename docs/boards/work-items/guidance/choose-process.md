@@ -74,7 +74,7 @@ Choose the process that provides the best fit for your team.
             <tr valign="top">
             <td>
             <p><b>Basic</b></p>
-            <p>Choose <a href="../../get-started/track-issues-tasks.md" data-raw-source="[Basic](../../get-started/track-issues-tasks.md)">Basic</a> when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
+            <p>Choose <a href="../../get-started/plan-track-work.md" data-raw-source="[Basic](../../get-started/plan-track-work.md)">Basic</a> when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
              <p>Tasks support tracking Remaining Work.</p>
             </td>
         <td>

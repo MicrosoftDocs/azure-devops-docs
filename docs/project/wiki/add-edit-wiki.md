@@ -80,6 +80,14 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 
 To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
 
+For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**
+
+> [!div class="mx-imgBorder"]  
+> ![Create wiki and first page](_img/wiki/edit-in-repos.png)
+
+> [!NOTE]  
+> If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and contine editing.
+
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
 
 > [!NOTE]  

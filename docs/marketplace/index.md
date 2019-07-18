@@ -32,12 +32,9 @@ In this set of documentation, we focus on how to install and remove extensions. 
 
 ## 5-minute quickstarts
 
-* [Request extensions](request-extensions.md)
 * [Install extensions](install-extension.md)
+* [Request extensions](request-extensions.md)
 * [Get extensions for TFS](get-tfs-extensions.md)
-* [Start free trial for paid extension](start-trial-extension.md)
-* [Buy and install paid extensions](install-paid-extension.md)
-* [Assign paid extensions to users](assign-paid-extensions.md)
 
 ## How-to guides
 
