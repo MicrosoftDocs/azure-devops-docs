@@ -33,13 +33,12 @@ In this set of documentation, we focus on how to install and remove extensions. 
 ## 5-minute quickstarts
 
 * [Install extensions](install-extension.md)
-* [Request extensions](request-extensions.md)
+* [Request extensions and approve extension requests](request-extensions.md)
 * [Get extensions for TFS](get-tfs-extensions.md)
 
 ## How-to guides
 
 * [Manage extension permissions](how-to/grant-permissions.md)
-* [Approve extension requests](approve-extensions.md)
 * [Uninstall or disable extensions](uninstall-disable-extensions.md)
 * [Extension FAQs](faq-extensions.md)
  
