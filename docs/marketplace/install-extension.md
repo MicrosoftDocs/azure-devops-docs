@@ -19,8 +19,9 @@ monikerRange: '>= tfs-2015'
 Add new features and capabilities to your organization by installing extensions.
 
 In this quickstart, learn how to do the following tasks:
-- [Install extensions](#install-extension)
-- [Assign paid extensions to users](#assign-paid-extensions-to-users)
+
+  - [Install extensions](#install-extension)
+  - [Assign paid extensions to users](#assign-paid-extensions-to-users)
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
@@ -43,17 +44,17 @@ To learn about building your own Azure DevOps extensions, see [developing](https
     ![Get extension](_img/get-vsts-extensions/get-extension.png)
 
 5.  For a paid extension, do the following tasks:
-   a. Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) to use to pay for the extension access.
+    1.  Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) to use to pay for the extension access.
 	
-   ![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-subscription.png)
+    ![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-subscription.png)
 
-   b. Select the number of users who need access.
+    2. Select the number of users who need access.
 
-   ![Select number of users who need extension access](_img/get-vsts-extensions/select-paid-users.png)
+    ![Select number of users who need extension access](_img/get-vsts-extensions/select-paid-users.png)
 
 6.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
-   ![Select organization for this extension](_img/get-vsts-extensions/select-install-extension.png)
+    ![Select organization for this extension](_img/get-vsts-extensions/select-install-extension.png)
 
    * [Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
 
@@ -78,21 +79,21 @@ To assign extensions, you need [Project Collection Administrator or organization
 
 3. Select **Users**.
 
-   ![Users page](../_shared/_img/settings/open-organization-settings-users-vert.png)
+    ![Users page](../_shared/_img/settings/open-organization-settings-users-vert.png)
    
 4. Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
 
-   ![Check that users have required access to extension assignment](_img/user-access-level.png)
+    ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
    To find the access that your extension requires, see the extension's description in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 
 5.	To assign the extension, highlight the user, choose **Manage projects**, and then select the **Extensions tab**.
 
-   ![Select Manage projects to manage extensions](_shared/_img/select-manage-projects-to-manage-extensions.png)
+    ![Select Manage projects to manage extensions](_shared/_img/select-manage-projects-to-manage-extensions.png)
 
 6. Assign the extension and **Save changes**.
 
-   ![Assign extension](_img/assign-extension.png)
+    ![Assign extension](_img/assign-extension.png)
 
    Assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
 
@@ -128,4 +129,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 ::: moniker-end
 
+## Next steps
 
+  > [!div class="nextstepaction"]
+  > [Manage extension permission](how-to/grant-permissions.md)
