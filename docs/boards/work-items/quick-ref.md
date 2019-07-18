@@ -246,7 +246,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../../organizations/settings/about-areas-iterations.md" data-raw-source="[Area Paths](../../organizations/settings/about-areas-iterations.md)">Area Paths</a></li>
 <li><a href="workflow-and-state-categories.md#auto-complete-work-items-with-pr" data-raw-source="[Auto-complete work items](workflow-and-state-categories.md#auto-complete-work-items-with-pr)">Auto-complete work items</a></li>
 <li><a href="about-work-items.md#assign" data-raw-source="[Assigned to](about-work-items.md#assign)">Assigned to</a></li>
-<li><a href="../get-started/track-issues-tasks.md" data-raw-source="[Basic process](../get-started/track-issues-tasks.md)">Basic process</a></li>
+<li><a href="../get-started/plan-track-work.md" data-raw-source="[Basic process](../get-started/plan-track-work.md)">Basic process</a></li>
 <br/>
 <li><a href="../../report/dashboards/widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget)">Chart for work items widget</a></li>
 <li><a href="../../user-guide/tools.md" data-raw-source="[Client tools](../../user-guide/tools.md)">Client tools</a></li>

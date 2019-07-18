@@ -44,7 +44,7 @@ Plan, track, and discuss work across your teams.
                             <a href="/azure/devops/boards/get-started/sign-up-invite-teammates">Sign up and invite some teammates</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/boards/get-started/track-issues-tasks">Track issues and tasks</a>
+                            <a href="/azure/devops/boards/get-started/plan-track-work">Track issues and tasks</a>
                         </p>
                         <p>
                             <a href="/azure/devops/boards/get-started/manage-boards">Manage your Azure Boards project</a>
