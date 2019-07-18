@@ -18,6 +18,6 @@
     #isMandatory: false # Optional
     #destinationType: 'groups' # Options: groups, store
     #distributionGroupId: # Optional
-    #destinationStoreId: # Required when destinationType == Store
+    #destinationStoreId: # Required when destinationType == store
     #isSilent: # Optional
 ```
