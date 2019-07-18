@@ -1,4 +1,5 @@
 ---
+title: Create and embed a work item from wiki
 titleSuffix: Azure DevOps  
 description: Learn how to create and embed work items with selected text in wiki content in Azure DevOps.  
 ms.prod: devops

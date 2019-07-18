@@ -6,16 +6,10 @@
   href: trust.md
 - name: Quickstarts
   items:
+  - name: Install extensions
+    href: install-extension.md
   - name: Request extensions
     href: request-extensions.md
-  - name: Install free extensions
-    href: install-extension.md
-  - name: Preview paid extensions
-    href: start-trial-extension.md
-  - name: Install paid extensions
-    href: install-paid-extension.md
-  - name: Assign paid extensions
-    href: assign-paid-extensions.md
   - name: Install extensions on-premises
     href: get-tfs-extensions.md
 - name: How-to guides

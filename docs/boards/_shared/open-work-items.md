@@ -29,7 +29,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 
 > [!NOTE]    
-> Depending on the process chosen when the project was created&mdash;[Basic](/azure/devops/boards/get-started/track-issues-tasks), [Agile](/azure/devops/boards/work-items/guidance/agile-process-workflow), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process-workflow), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called issues (Basic), user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+> Depending on the process chosen when the project was created&mdash;[Basic](/azure/devops/boards/get-started/plan-track-work), [Agile](/azure/devops/boards/work-items/guidance/agile-process-workflow), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process-workflow), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process-workflow)&mdash;the types of work items you can create will differ. For example, backlog items may be called issues (Basic), user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all four processes, see [Choose a process](/azure/devops/boards/work-items/guidance/choose-process). 
 

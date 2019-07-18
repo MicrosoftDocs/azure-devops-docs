@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 07/10/2019
+ms.date: 07/16/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -241,7 +241,7 @@ Learn more about [stages](process/stages.md), [conditions](process/conditions.md
 ## Job
 
 A [job](process/phases.md?tabs=yaml) is a collection of [steps](#steps) to be run by an
-[agent](agents/agents.md) or, in some cases, on the server. Jobs can be
+[agent](agents/agents.md) or on the [server](#server). Jobs can be
 run [conditionally](process/phases.md?tabs=yaml#conditions), and they
 may [depend on earlier jobs](process/phases.md?tabs=yaml#dependencies).
 
@@ -937,7 +937,7 @@ Full syntax:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true, start a new build for every push if false
+  batch: boolean # batch changes if true (the default); start a new build for every push if false
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -955,7 +955,7 @@ trigger:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true, start a new build for every push if false
+  batch: boolean # batch changes if true (the default); start a new build for every push if false
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1219,6 +1219,8 @@ pool:
 ## Server
 
 `server` specifies a [server job](process/phases.md#server-jobs).
+Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
+or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
 
 # [Schema](#tab/schema)
 
