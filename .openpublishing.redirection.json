@@ -972,7 +972,7 @@
     },
     {
       "source_path": "docs/marketplace/how-to/assign-paid-extension-access.md",
-      "redirect_url": "/azure/devops/marketplace/assign-paid-extensions",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
       "redirect_document_id": false
     },
     {
@@ -11447,18 +11447,18 @@
     },
     {
       "source_path": "docs/marketplace/start-trial-vsts-extension.md",
-      "redirect_url": "/azure/devops/marketplace/start-trial-extension",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/install-vsts-extension.md",
       "redirect_url": "/azure/devops/marketplace/install-extension",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/install-paid-vsts-extension.md",
-      "redirect_url": "/azure/devops/marketplace/install-paid-extension",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/licensing/concurrent-jobs-vsts.md",
@@ -11751,11 +11751,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-      "redirect_url": "/azure/devops/marketplace/assign-paid-extensions",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/pipelines/tasks/build/dotnet-core.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
       "redirect_document_id": true
@@ -11764,6 +11759,46 @@
       "source_path": "docs/test/index-tp.md",
       "redirect_url": "/azure/devops/test-plans/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/assign-paid-extensions.md",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/start-trial-extension.md",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/key-concepts-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/sign-up-invite-teammates-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/sign-up-invite-teammates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/track-issues-tasks.md",
+      "redirect_url": "/azure/devops/boards/get-started/plan-track-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/what-is-azure-boards-basic-process.md",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/customize-boards-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/customize-boards",
+      "redirect_document_id": false
     }
   ]
 }

@@ -59,7 +59,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
     <img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
     > [!NOTE]  
-    >Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+    >Depending on the process chosen when the project was created&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
     or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
     >
     > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
