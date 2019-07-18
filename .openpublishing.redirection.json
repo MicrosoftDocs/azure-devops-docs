@@ -11457,7 +11457,7 @@
     },
     {
       "source_path": "docs/marketplace/install-paid-vsts-extension.md",
-      "redirect_url": "/azure/devops/marketplace/install-paid-extension",
+      "redirect_url": "/azure/devops/marketplace/install-extension",
       "redirect_document_id": false
     },
     {
@@ -11773,6 +11773,31 @@
     {
       "source_path": "docs/marketplace/start-trial-extension.md",
       "redirect_url": "/azure/devops/marketplace/install-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/key-concepts-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/sign-up-invite-teammates-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/sign-up-invite-teammates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/track-issues-tasks.md",
+      "redirect_url": "/azure/devops/boards/get-started/plan-track-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/what-is-azure-boards-basic-process.md",
+      "redirect_url": "/azure/devops/boards/get-started/what-is-azure-boards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/customize-boards-agile.md",
+      "redirect_url": "/azure/devops/boards/get-started/customize-boards",
       "redirect_document_id": false
     }
   ]
