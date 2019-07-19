@@ -47,13 +47,15 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
 
 ## Publish your packages
 
-Now that you have a public feed, it's time to populate it with packages! You can skip the "Create a feed" step in the following guides.
+Now that you have a public feed, it's time to populate it with packages! 
 
-> **Note:** Public feeds cannot store Universal Packages.
+> **Note:** During the public preview, public feeds cannot store Universal Packages.
+
+If you're publishing using NuGet or Dotnet _and_ you're using a credential provider to authenticate, public feeds require you to use the new credential provider instead of the older `CredentialProvider.VSS.exe`. You can learn more about the new credential provider, including install and setup instructions in the [artifacts-credprovider GitHub repo](https://github.com/Microsoft/artifacts-credprovider).
 
 ### From the command line
 
-The following articles are quick guides that show you how to set up authentication and publish packages to your public feed from the command line.
+The following articles are quick guides that show you how to set up authentication and publish packages to your public feed from the command line. You can skip the "Create a feed" step in the following guides.
 
 * [Quickstart - Push and consume NuGet packages](../get-started-nuget.md)
 * [Quickstart - Push and consume npm packages](../get-started-npm.md)
