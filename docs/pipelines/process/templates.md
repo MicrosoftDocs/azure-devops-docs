@@ -9,8 +9,8 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 07/09/2019
-monikerRange: 'azure-devops'
+ms.date: 07/19/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Job and step templates
