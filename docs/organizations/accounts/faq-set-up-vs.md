@@ -24,7 +24,7 @@ monikerRange: 'azure-devops'
 
 #### Q: Why sign in?
 
-A:	Your Visual Studio settings, 
+A: Your Visual Studio settings, 
 like automatic brace completion, 
 are saved with your profile. 
 These settings roam with your [personal Microsoft account](https://www.microsoft.com/account), 
@@ -48,7 +48,7 @@ Learn more about
 
 #### Q: Why can't I sign in?
 
-A:	To create a profile and save your settings, 
+A: To create a profile and save your settings, 
 you'll need to sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
 or a [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/) 
 that's managed by Azure Active Directory.
@@ -59,17 +59,17 @@ that's managed by Azure Active Directory.
 
 #### Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
 
-A:	Yes, you can run all these versions on the same computer.
+A: Yes, you can run all these versions on the same computer.
 
-#### Q:	My subscription expired. What do I do?
+#### Q: My subscription expired. What do I do?
 
-A:	Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
+A: Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
 If you're having subscription problems, 
 try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs).
 
-#### Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
+#### Q: I'm having problems installing or signing in to Visual Studio. How do I get help? 
 
-A:	Learn more about:
+A: Learn more about:
 
 *	[Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
 *	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
@@ -83,7 +83,7 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 #### Q: How can I create an organization later?
 
-A:	Learn how to [sign up for Azure DevOps](create-organization.md).
+A: Learn how to [sign up for Azure DevOps](create-organization.md).
 
 <a name="browser-problems"></a>
 
@@ -97,7 +97,7 @@ A:	Learn how to [sign up for Azure DevOps](create-organization.md).
 
 #### Q: Can I change my organization location?
 
-A:	Yes. For a better experience, 
+A: Yes. For a better experience, 
 you can change your organization's location during sign-up
 so that your organization is closest to most users.
 

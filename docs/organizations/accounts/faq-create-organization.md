@@ -38,11 +38,11 @@ A: Azure DevOps is free for these users to join:
 
 #### Q:  Which Visual Studio subscriptions can I use with Azure DevOps?
 
-A:	[Find Visual Studio subscriptions that include Azure DevOps](faq-add-delete-users.md#EligibleMSDNSubscriptions).
+A: [Find Visual Studio subscriptions that include Azure DevOps](faq-add-delete-users.md#EligibleMSDNSubscriptions).
 
-#### Q:	Why am I asked to provide profile details?
+#### Q: Why am I asked to provide profile details?
 
-A:	If you're a new user, you can change your profile details. You need to do this only once.
+A: If you're a new user, you can change your profile details. You need to do this only once.
 
 1.	Confirm your profile details.
 
@@ -56,13 +56,13 @@ A:	If you're a new user, you can change your profile details. You need to do thi
 
 [!INCLUDE [organization-location-process-template](../../_shared/qa-organization-location-process-template.md)]
 
-#### Q:	Why are some features not available in my organization?
+#### Q: Why are some features not available in my organization?
 
 A: Some features require you to install an extension, which might be available for free or paid.
 
 For example, web-based test case management requires [Azure Test Plans](../billing/buy-basic-plus-test-plans.md). You can try the Basic + Test Plans trial if you haven't started it already. Otherwise, you can [pay for user access](../billing/buy-basic-plus-test-plans.md).
 
-#### Q:	How many organizations can I create?
+#### Q: How many organizations can I create?
 
 A: You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control.
 
@@ -70,7 +70,7 @@ There's no limit to the number of organizations that you can join.
 
 <a name="create-another-organization"></a>
 
-#### Q:	How do I create another organization?
+#### Q: How do I create another organization?
 
 A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
@@ -92,7 +92,7 @@ A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 <a name="SignInOrganizationDifferences"></a>
 
-#### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
+#### Q: What's the difference between using a Microsoft account and a work account or school account to sign up?
 
 A: Your choice of account type affects how you control access and authenticate users for your organization.
 
@@ -112,7 +112,7 @@ To [add users to the directory](/azure/active-directory/active-directory-create-
 
 <a name="ChangeDirectory"></a>
 
-#### Q:	Can I change the directory after signup?
+#### Q: Can I change the directory after signup?
 
 A: Yes, see [Disconnect your organization from Azure Active Directory](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
