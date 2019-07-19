@@ -77,3 +77,11 @@ To use packages from a feed in Azure Pipelines, the appropriate build identity m
 ## Sharing packages with everyone in your organization
 
 If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+
+::: moniker range="azure-devops"
+
+## Sharing packages publicly with anonymous users
+
+You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly)
+
+::: moniker-end
