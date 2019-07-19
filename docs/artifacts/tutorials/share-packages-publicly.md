@@ -1,6 +1,6 @@
 ---
 title: Share Packages Publicly
-description: Use Azure Artifacts to share NuGet, npm, Maven, Python, or Universal packages with anonymous users with public feeds
+description: Use Azure Artifacts to share NuGet, npm, Maven, or Python packages with anonymous users in with public feeds
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
