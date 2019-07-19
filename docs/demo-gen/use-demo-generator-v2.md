@@ -54,6 +54,7 @@ ms.date: 05/09/2018
 > [!NOTE]
 > You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
 
+Next: [Learn how you can build your own template](build-your-own-template.md)
 
 ## Common Issues and workarounds:
 
