@@ -32,7 +32,7 @@ During the public preview of public feeds, to create a project-scoped feed, you 
 
 Public feeds (preview) can be used to share your packages publicly, with anyone on the Internet; these users don't have to be a member of your organization or enterprise, or even have an Azure DevOps account at all. 
 
-Public feeds are **project-scoped feeds** that live inside a public project. The feed will follow the visiblity of the project it lives in— if the project is private, the feed will be private; if the project is public, the feed will be public.
+Public feeds are **project-scoped feeds** that live inside a public project. The feed will follow the visibility of the project it lives in— if the project is private, the feed will be private; if the project is public, the feed will be public.
 
 There some important things to note regarding public feeds:
 * Public feeds can only be created inside of public projects
