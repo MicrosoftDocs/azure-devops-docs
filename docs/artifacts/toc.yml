@@ -30,6 +30,8 @@
   items:
   - name: Create a private PowerShell repository
     href: tutorials/private-powershell-library.md
+  - name: Share packages publicly (preview)
+    href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
   - name: Communicate quality with release views
@@ -58,6 +60,8 @@
     href: concepts/views.md
   - name: Upstream sources
     href: concepts/upstream-sources.md
+  - name: Feeds
+    href: concepts/feeds.md
   - name: Complete graphs
     href: concepts/package-graph.md
   - name: Symbols
