@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 05/15/2019
+ms.date: 07/18/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -49,10 +49,26 @@ The Bash task also has a shortcut syntax in YAML:
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
 </tr>
 <tr>
+<td>Don't load the profile/initialization files</td>
+<td>If this is <code>true</code>, the task will skip loading the system-wide startup file <code>/etc/profile</code> and any user-level profile initialization files.</td>
+</tr>
+<tr>
+<td>Don't read the <code>~/.bashrc</code> file</td>
+<td>If this is <code>true</code>, the task will not process <code>.bashrc</code> from the user's home directory.</td>
+</tr>
+<tr>
 <td>Environment variables</td>
 <td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 <pre><code class="lang-yaml">
 - script: echo $MYSECRET
+  env:
+    MySecret: $(Foo)
+
+\# equivalent using task syntax - note that this is NOT a task input
+- task: Bash@3
+  inputs:
+    type: inline
+    script: echo $MYSECRET
   env:
     MySecret: $(Foo)
 </code></pre>
