@@ -613,7 +613,8 @@ A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/artic
 
 The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
 
->**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
+> [!NOTE]  
+> Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
 
 After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
