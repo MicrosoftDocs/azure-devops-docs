@@ -28,6 +28,8 @@
       href: change-organization-location.md
     - name: Add privacy policy URL
       href: add-privacy-policy-url.md
+    - name: Change time zone
+      href: change-time-zone.md
   - name: Manage access
     items:
     - name: Add users to your organization
