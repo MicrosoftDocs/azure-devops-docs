@@ -6,6 +6,8 @@
   - name: 2019
     expanded: true
     items:
+    - name: July 22
+      href: 2019/sprint-155-update.md  
     - name: July 1
       href: 2019/sprint-154-update.md      
     - name: June 10
@@ -292,6 +294,8 @@
   href: https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019?view=azure-devops
 - name: Azure Boards
   items:
+    - name: July 22
+      href: 2019/boards/sprint-155-update.md
     - name: July 1 
       href: 2019/boards/sprint-154-update.md
     - name: June 10  
@@ -309,7 +313,9 @@
     - name: January 14  
       href: 2019/boards/sprint-146-update.md
 - name: Azure Repos
-  items:  
+  items:
+    - name: July 22
+      href: 2019/repos/sprint-155-update.md  
     - name: July 1
       href: 2019/repos/sprint-154-update.md
     - name: June 10  
@@ -324,6 +330,8 @@
       href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
   items:
+    - name: July 22
+      href: 2019/pipelines/sprint-155-update.md
     - name: July 1
       href: 2019/pipelines/sprint-154-update.md
     - name: June 10  
@@ -350,6 +358,8 @@
       href: 2019/testplans/sprint-154-update.md
 - name: Azure Artifacts
   items:
+    - name: July 22
+      href: 2019/artifacts/sprint-155-update.md
     - name: July 1
       href: 2019/artifacts/sprint-154-update.md
     - name: June 10  
@@ -368,6 +378,8 @@
       href: 2019/artifacts/sprint-146-update.md
 - name: General
   items:
+    - name: July 22
+      href: 2019/general/sprint-155-update.md
     - name: July 1
       href: 2019/general/sprint-154-update.md
     - name: June 10  
