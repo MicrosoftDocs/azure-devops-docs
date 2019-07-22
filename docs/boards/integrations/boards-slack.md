@@ -48,7 +48,7 @@ Read this article to learn how to:
 
 ## Add the Azure Boards app to your Slack workspace
 
-1. To install the Azure Boards app to your Slack workspace, open a web browser, sign into Slack, and open the [Azure Boards app](https://azchatoppfeus2c.azchatops.visualstudio.com/_slack/installboardsapp). 
+1. To install the Azure Boards app to your Slack workspace, open a web browser, sign into Slack, and open the [Azure Boards app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp). 
 
 1. Once added, you will see a welcome message from the app as shown in the following image. 
 
