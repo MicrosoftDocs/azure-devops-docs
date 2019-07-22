@@ -82,6 +82,6 @@ If you want to make the packages in a feed available to all users in your organi
 
 ## Sharing packages publicly with anonymous users
 
-You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly)
+You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
 
 ::: moniker-end
