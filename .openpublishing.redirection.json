@@ -11799,6 +11799,11 @@
       "source_path": "docs/boards/get-started/customize-boards-agile.md",
       "redirect_url": "/azure/devops/boards/get-started/customize-boards",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/approve-extensions.md",
+      "redirect_url": "/azure/devops/marketplace/request-extensions",
+      "redirect_document_id": false
     }
   ]
 }

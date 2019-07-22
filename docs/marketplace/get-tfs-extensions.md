@@ -113,7 +113,7 @@ for future Marketplace purchases.
 7. Finish installing your extension. 
 
 8. If you installed a paid extension, 
-   make sure to [assign the extension to users who need access](faq-extensions.md#install-request-assign-and-access-extensions). 
+   make sure to [assign the extension to users who need access](install-extension.md#assign-paid-extensions-to-users). 
    Otherwise, you can go to your project collection to use your extension. 
    Also, tell your team about this extension, 
    so they can start using its capabilities too. 
