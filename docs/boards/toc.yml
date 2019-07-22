@@ -17,7 +17,7 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
-- name: Excel, Project, PowerPoint integration
+- name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project
     href: backlogs/office/track-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
@@ -43,6 +43,10 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+- name: Integrations
+  items:
+  - name: Azure Boards with Slack
+    href: integrations/boards-slack.md
 - name: Best tool for the job
   href: work-items/best-tool-add-update-link-work-items.md
 - name: REST API Reference
@@ -92,11 +96,11 @@
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Work as a Stakeholder
-    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Process Customization 
     href: ../reference/index.md
   - name: Client support for work tracking
-    href: ../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 

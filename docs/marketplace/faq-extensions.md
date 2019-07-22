@@ -7,12 +7,12 @@ ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2019
+ms.date: 07/18/2019
 monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
 
-# FAQs about getting extensions for Azure DevOps
+# FAQs - getting extensions for Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
@@ -20,24 +20,10 @@ In this article, find frequently asked questions and answers about getting exten
 
 ::: moniker range="azure-devops"
 
-## General
-
-<a name="difference"></a>
-
-### Q: What's the difference between free, preview, and paid extensions? 
-
-Extensions that are available during preview don't incur charges, aren't fully supported, and have no financially backed service level agreements. 
-
-Paid extensions are supported and generally are charged per user per month.
-
-[!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
-
-## Install, request, assign, and access extensions
-
 ### Q: Who can install extensions for Azure DevOps?
 
 A: The organization Owner and Project Collection Administrator can install extensions. If you don't have permissions, but you're an organization member, 
-you can request extensions instead. 
+you can [request extensions](request-extensions.md) instead. 
 
 <a name="find-owner"></a>
 
@@ -60,70 +46,6 @@ If you don't have permissions, but you're an organization member, you can [reque
 <a name="no-assignment"></a>
 *	If you get an "already installed or requested" error check with your Project Collection Administrator 
 or organization Owner, and ask them to assign the extension to you.
-
-<a name="paid-access"></a>
-
-### Q: When do I choose Install for paid extensions? 
-
-A: You can just choose **Install** when: 
-
-*	You want to install a free or preview extension. 
-*	You paid for access, uninstalled the extension, 
-and want to reinstall the extension. 
-*	You just need the extension for 
-[Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions) 
-who have access for that extension included with their subscriptions. 
-These subscribers get specific extensions  
-included with their subscriptions as benefits. They can use 
-these extensions after they're installed without paid access 
-and assignment. You only have to buy and assign extensions 
-for users who need access.
-
-<a name="cant-assign-extensions"></a>
-
-### Q:	Why can't I assign extensions?
-
-A: You can't assign extensions for one of the following reasons.
-
-*	You don't have [Project Collection Administrator or organization Owner permissions](#find-owner).
-
-* Your users don't have the correct access levels. 
-Most extensions require that users have Basic access, not Stakeholder, or Basic + Test Plans.
-
-* You assigned all the paid extensions that you bought.
-
-### Q: Why can't I buy extensions that aren't published by Microsoft?
-
-A: You can't buy third-party extensions because of one of the following reasons:
-* Restricted countries
-
-  In some countries, you can't use specific Azure subscriptions to buy extensions from non-Microsoft publishers. You can use those same subscriptions to buy Microsoft extensions, however. See who's able to purchase applications and services.
-  
-  If your country is supported in the Marketplace, but not for the extension that you want to purchase, contact the extension publisher.
-
-* Credit card required
-
-  Unless you have an Enterprise Agreement, you must have a credit card associated with your Azure subscription. For example, you can't use a Pay-As-You-Go subscription that's set up for invoice billing.
-  If you can't use your subscription, try using creating another Pay-As-You-Go Azure subscription with a credit card.
-  >[!NOTE]
-  >If you get the following message: "This Azure subscription doesn't have a credit card on file. Please select another subscription", select another subscription, or select **Create a new Azure subscription** to continue.]
-
-* Enterprise Agreement purchases
-
-  To buy non-Microsoft extensions from the Marketplace, your Azure Enterprise Agreement administrator must enable Azure Marketplace purchases. Go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) >Manage > Enrollment, and enable Azure Marketplace.
-
-  > [!NOTE]
-  > If you get the following message: "The ordering organization is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
-
-* Credit card problems
-  Purchases from non-Microsoft publishers are charged immediately, not at the end of your billing cycle, like Microsoft resources. If your credit card is declined for any reason, your purchase isn't completed. If this happens, try your purchase again, or contact your credit card customer service.
-
-  >[!NOTE] 
-  >If you get this message: "The payment provider declined the transaction. Please check your credit card information", try your purchase again later, or contact your credit card customer service.]
-
-<a name="extension-access"></a>
-
-[!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
 
 ::: moniker-end
 
@@ -155,8 +77,6 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 [!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
 
 <!-- ENDSECTION --> 
-
-## Install, request, assign, and access extensions
 
 <!-- BEGINSECTION class="m-qanda" -->
 
