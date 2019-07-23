@@ -50,7 +50,7 @@ If you have upgraded to Azure DevOps Server 2019.1, you can enable Analytics for
 	> [!div class="mx-imgBorder"]  
 	> ![Enable Analytics](_img/enable-analytics/enable-analytics.png) 
 
-	Once enabled, Analytics staging jobs beging to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model(../extend-analytics/data-model-analytics-service.md).
+	Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model(../extend-analytics/data-model-analytics-service.md).
 
 ## Pause or disable Analytics
 
@@ -85,7 +85,7 @@ For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it 
 	> [!div class="mx-imgBorder"]  
 	> ![Confirm Pause](_img/enable-analytics/confirm-resume.png) 
 
-	Once enabled, Analytics staging jobs beging to populate the Analytics data tables. This process could take some time depending on the size of your collection. 
+	Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. 
 
 
 ## What happens if I pause or disable Analytics? 
