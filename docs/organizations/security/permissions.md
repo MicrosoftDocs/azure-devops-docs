@@ -416,9 +416,17 @@ Project Collection Valid Users
 Security Service Group
 -->
 
+### [New Permissions settings preview](#tab/new-permissions-setting-preview) 
+
+> [!div class="mx-imgBorder"]  
+> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts-new.png)
+
+### [Current Permissions settings preview](#tab/permissions-settings-preview) 
+
 > [!div class="mx-imgBorder"]  
 > ![Project collection groups](_img/permissions/collection-admin-permissions-vsts.png)
 
+*** 
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -744,8 +752,17 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
+### [New Permissions settings preview](#tab/new-permissions-setting-preview) 
+
+> [!div class="mx-imgBorder"]  
+> ![Collection level permissions and groups](_img/permissions/collection-level-permissions-new.png)   
+
+### [Current Permissions settings preview](#tab/permissions-settings-preview) 
+
 > [!div class="mx-imgBorder"]  
 > ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
+
+*** 
 
 
 <table valign="top" width="100%">
@@ -947,9 +964,17 @@ You manage collection-level permissions through the [web portal admin context](.
 
 You manage project-level permissions from the [web portal admin context](set-project-collection-level-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
+### [New Permissions settings preview](#tab/new-permissions-setting-preview) 
+
+> [!div class="mx-imgBorder"]
+> ![Project-level permissions dialog](_img/permissions/project-level-permissions-new.png)
+
+### [Current Permissions settings preview](#tab/permissions-settings-preview) 
+
 > [!div class="mx-imgBorder"]
 > ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
 
+*** 
 
 <table valign="top" width="100%">
 <tbody valign="top">
