@@ -32,7 +32,7 @@ Requires the Package Management extension.
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Package type</td><td>(Required) Select the type of package to download</td></tr>
-<tr><td>Feed</td><td>(Required) Select the package source</td></tr>
+<tr><td>Feed</td><td>(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our <a href="#qa">Q&As</a> below for information on how to get a feed or project ID, or information on using project and feed name instead."</td></tr>
 <tr><td>View</td><td>(Optional) Select a view to see package versions only promoted to that view.</td></tr>
 <tr><td>Package</td><td>(Required) Select the package to download</td></tr>
 <tr><td>Version</td><td>(Required) Version of the package</td></tr>
@@ -49,7 +49,7 @@ Requires the Package Management extension.
 
 ## Examples
 
-### Download a nuget package from a regular feed and extract to destination directory
+### Download a nuget package from an organization-scoped feed and extract to destination directory
 
 ```YAML
 # Download an artifact with id 'cfe01b64-ded4-47b7-a569-2ac17cbcedbd' to $(System.ArtifactsDirectory)
@@ -63,7 +63,7 @@ Requires the Package Management extension.
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
 
-### Download a maven package from a public feed and download only pom files.
+### Download a maven package from a project-scoped feed and download only pom files.
 
 ```YAML
 # Download an artifact with name 'com.test:testpackage' to $(System.ArtifactsDirectory)
