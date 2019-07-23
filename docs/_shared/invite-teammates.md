@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Invite team members
 
-Give a team member access to your organization by adding their email address to your organization.
+Give team members access to your organization by adding their email addresses or GitHub usernames to your organization.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -18,9 +18,21 @@ Give a team member access to your organization by adding their email address to 
 
 4. Enter the following information:
 
-   - **Users:** Enter the email address or ID of the user. You can add several email addresses by separating them with a semicolon (;).   
+   - **Users:** Enter the email addresses (Microsoft accounts) or [GitHub usernames](#enable-github-invitations) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.  
    - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
-   - **Add to project:** Put your cursor in the project box, and then select a project from the resulting list.  
-   - **DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).   
+   - **Add to project:** Select the project you want to add them to.  
+   - **DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
+
+	> [!NOTE]  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 5. When you're done, select **Add** to complete your invitation.
+
+### Enable GitHub invitations
+
+Creating a new Azure DevOps organization, with your GitHub username, turns on the capability to enable GitHub invitations, by default. For existing organizations, your administrator can enable GitHub invitations via **Organization settings** > **Policies** tab.
+
+![External guest access policy ](_img/external-guest-access-policy.png)
+
+For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.md).
+
