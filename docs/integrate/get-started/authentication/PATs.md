@@ -33,7 +33,7 @@ curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_a
 <br/>
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 <br/>
-<code>Authorization: Basic BASE64PATSTRING</code> 
+<code>Authorization: Basic BASE64USERNAME:PATSTRING</code> 
 <br/>
 Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 <br/>

@@ -20,7 +20,7 @@ ms.date: 06/18/2019
 
 You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts#create-personal-access-tokens-to-authenticate-access) to create one.
 
-Once you have the PAT Token, run the `az devops login` command. You will be prompted to enter PAT token.
+Once you have the PAT, run the `az devops login` command. You will be prompted to enter PAT.
 
 
 ```bash
@@ -36,14 +36,15 @@ In the above experience, you need to manually enter the token when prompted. How
 
 There are cases where persisting a personal access token on the machine where the Azure CLI is running is not technically possible or is not secure. In these cases you can get a token from an environment variable.
 
-To use a personal access token, set the `AZURE_DEVOPS_EXT_PAT` environment variable:
+To use a personal access token, set the `AZURE_DEVOPS_EXT_PAT` environment variable at the process level:
 
 
 #### [Windows](#tab/windows)
 
 
 ```powershell
-set AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx
+# set environment variable for current process
+$env:AZURE_DEVOPS_EXT_PAT = 'xxxxxxxxxx'
 ```
 
 ##### [macOS and Linux](#tab/unix)
