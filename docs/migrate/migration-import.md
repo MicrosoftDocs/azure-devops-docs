@@ -483,7 +483,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
 |    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
  
-** Analytics IPs (Azure DevOps Server 2019 or later only)**
+**Analytics IPs (Azure DevOps Server 2019 or later only)**
 
 You only need to add an exception for the analytics IPs in your target import region if you included preview features with your import. 
 
@@ -613,7 +613,8 @@ A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/artic
 
 The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
 
->**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
+> [!NOTE]  
+> Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
 
 After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
