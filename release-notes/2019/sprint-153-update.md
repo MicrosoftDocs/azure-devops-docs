@@ -14,6 +14,10 @@ In the **Sprint 153 Update** of Azure DevOps, we continue to enhance the Azure B
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/nterH4fTd3M]
+
 ## Features
 
 General: 
