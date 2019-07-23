@@ -84,6 +84,8 @@
     href: ../accounts/faq-add-delete-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add team members
     href: ../accounts/faq-add-team-members.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Authenticate & invite with GitHub
+    href: faq-github-authentication.md
   - name: Access with Azure AD
     href: ../accounts/faq-azure-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Change app access
