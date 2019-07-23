@@ -4,7 +4,7 @@
 - task: DownloadPackage@1
   inputs:
     #packageType: 'nuget' # Options: maven, npm, nuget, pypi, upack
-    feed: # <feedId> for regular feeds, <projectId>/<feedId> for public feeds.
+    feed: # <feedId> for organization-scoped feeds, <projectId>/<feedId> for project-scoped feeds.
     #view: ' ' # Optional
     definition: 
     version: 
