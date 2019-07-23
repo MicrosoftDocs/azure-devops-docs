@@ -31,11 +31,15 @@ ms.topic: include
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
-Creating a new Azure DevOps organization with your GitHub username turns on this capability by default. For existing organizations, your administrator can turn on this capability via **Organization settings** > **Policies** tab.
-
-![External guest access policy ](_img/external-guest-access-policy.png)
-
 You can rename and delete your organization, or change the organization location. To learn more, see [Manage organizations](/azure/devops/organizations/accounts/organization-management).
+
+### Enable GitHub invitations
+
+Creating a new Azure DevOps organization with your GitHub username turns on the Invite GitHub users policy by default. For existing organizations, your administrator can turn on this capability via **Organization settings** > **Policies** tab. 
+
+Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.
+
+![Invite GitHub users policy ](_img/invite-github-users-policy.png)
 
 For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.md).
 
