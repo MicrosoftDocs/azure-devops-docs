@@ -51,7 +51,8 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 ![Search for items based on words contained in the History field](_img/hist-audit-query-team-explorer.png) 
 
-* * *
+---
+
 ## List items based on the contents of the History field  
 
 ::: moniker range=">= tfs-2017"
@@ -163,7 +164,8 @@ To view only the comments that were added to the log, choose the **Discussion On
 
 ![Work item form, History tab, TFS Web portal, Team Explorer](_img/ALM_HA_AllChanges.png) 
 
-* * *
+---
+
 ## Fields that support history, auditing, and revision tracking 
 
 You can use the following fields to filter queries and create reports. Several of these fields are populated with information as a work item progresses from one state to another. Other fields update when the work item is modified. Some fields don't appear on the work item form, but they are tracked for the WITs listed.  

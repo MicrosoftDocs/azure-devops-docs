@@ -46,7 +46,8 @@ steps:
    npm test
    ```
 
-* * *
+---
+
 ## Handle environment variables
 
 Environment variables throw the first wrinkle into writing cross-platform scripts.
@@ -82,7 +83,8 @@ steps:
    echo This is pipeline $(System.DefinitionId)
    ```
 
-* * *
+---
+
 ## Consider Bash or pwsh
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
@@ -127,7 +129,8 @@ steps:
    fi
    ```
 
-* * *
+---
+
 PowerShell Core (`pwsh`) is also an option.
 It requires each agent to have PowerShell Core installed.
 
@@ -223,4 +226,4 @@ Finally, add a task which uses the value, no matter how we got it.
    echo The IP address is $(IP_ADDR)
    ```
 
-* * *
+---

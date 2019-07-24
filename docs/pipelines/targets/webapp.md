@@ -77,7 +77,8 @@ To get started:
 
 5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
-* * *
+---
+
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
 ## Azure App Service Deploy task
@@ -157,7 +158,8 @@ When you link the artifact in your release pipeline to a build that compiles and
 it's automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
 This is where the task picks up the web package for deployment.
 
-* * *
+---
+
 <a name="endpoint"></a>
 
 ## Azure service connection
@@ -193,7 +195,8 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker-end
 
-* * *
+---
+
 ## Deploy to a virtual application
 
 #### [YAML](#tab/yaml/)
@@ -219,7 +222,8 @@ YAML pipelines aren't available on TFS.
 By default, your deployment happens to the root application in the Azure Web App. If you want to deploy to a specific virtual application,
 enter its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
 
-* * *
+---
+
 ## Deploy to a slot
 
 #### [YAML](#tab/yaml/)
@@ -257,7 +261,8 @@ YAML pipelines aren't available on TFS.
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
-* * *
+---
+
 ## Deploy to multiple web apps
 
 #### [YAML](#tab/yaml/)
@@ -314,7 +319,8 @@ YAML pipelines aren't available on TFS.
 If you want to deploy to multiple web apps, add stages to your release pipeline.
 You can control the order of deployment. To learn more, see [Stages](../process/stages.md).
 
-* * *
+---
+
 ## Configuration changes
 
 You might want to apply a specific configuration for your web app target before deploying to it.
@@ -368,7 +374,8 @@ To change `connectionString` by using variable substitution:
 1. Define `connectionString` as a variable in each of the stages. Set the appropriate value.
 1. Select the **XML variable substitution** option under **File Transforms and Variable Substitution Options** for the **Azure App Service Deploy** task.
 
-* * *
+---
+
 ## Deploying conditionally
 
 You can choose to deploy only certain builds to your Azure Web App.
@@ -411,5 +418,6 @@ In your release pipeline, you can implement various checks and conditions to con
 
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
-* * *
+---
+
 [!INCLUDE [include](_shared/webapp/deploy-options.md)]

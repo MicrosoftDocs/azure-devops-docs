@@ -179,7 +179,7 @@ Create a PowerShell script that prints `Hello world`.
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
    ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018.png) 
 
-   * * * 
+   --- 
 
    ::: moniker-end
 
@@ -425,7 +425,7 @@ Save and queue a build manually and test your build pipeline.
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
    ![build console](_img/get-started-designer/build-console-vsts.png)
 
-   * * *
+   ---
 
 4. Go to the build summary.
 
@@ -490,7 +490,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
    ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
 
-   * * *
+   ---
 
    ::: moniker-end
 
@@ -653,7 +653,7 @@ Define the process for running the script in two stages.
    > [!div class="mx-imgBorder"] 
    > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-rtm-new-editor.png)
 
-   * * *
+   ---
 
 7. Select the **Tasks** tab and select your **QA** stage.
 

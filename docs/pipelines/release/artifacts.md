@@ -146,7 +146,7 @@ sources.
 * [TeamCity](#teamcity)
 * [Other sources](#others)
 
-----
+---
 
 <a name="teambuild"></a>
 
@@ -180,7 +180,7 @@ The following features are available when using Azure Pipelines sources:
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
-----
+---
 
 <a name="tfvc"></a>
 
@@ -240,7 +240,7 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Work items and commits | Azure Pipelines cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
-----
+---
 
 <a name="jenkins"></a>
 
@@ -287,7 +287,7 @@ this into the link dialog field.
 For more information about Jenkins integration capabilities, see
 [Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
-----
+---
 
 <a name="container"></a>
 
@@ -311,7 +311,7 @@ The following features are available when using Azure Container Registry, Docker
 
 <p />
 
-----
+---
 
 <a name="nuget"></a>
 
@@ -343,7 +343,7 @@ The following features are available when using Azure Artifacts sources:
 > [!NOTE]
 > Only NuGet packages are currently supported in the Azure Artifacts release artifact type. Support for the other package types supported in Azure Artifacts is coming soon.
 
-----
+---
 
 <a name="externaltfs"></a>
 
@@ -400,7 +400,7 @@ The following features are available when using external TFS sources:
 > desired build into the appropriate field, or select
 > the **Latest** build.
 
-----
+---
 
 <a name="teamcity"></a>
 
@@ -442,7 +442,7 @@ The following features are available when using TeamCity sources:
 > projects when linking to a build, but you can type
 > this into the link dialog field.
 
-----
+---
 
 <a name="Custom artifacts"></a>
 
@@ -452,7 +452,7 @@ In addition to built-in artifact sources, Azure DevOps Pipelines supports integr
 
 For more details, see [Azure DevOps artifact extensibility model](https://aka.ms/artifactextensibility).
 
-----
+---
 
 <a name="others"></a>
 
@@ -468,7 +468,7 @@ a release pipeline, and add custom tasks to your
 stages that download the artifacts directly
 from your source.
 
-----
+---
 
 <h2 id="download">Artifact download</h2>
 

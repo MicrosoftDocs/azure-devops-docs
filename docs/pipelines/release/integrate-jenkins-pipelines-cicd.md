@@ -127,7 +127,8 @@ YAML builds aren't yet available on TFS.
 
 For an example of using the classic editor, see [Deploy an Azure Web App](../targets/webapp.md?tabs=classic).
 
-* * *
+---
+
 Whenever you trigger your Azure release pipeline, the artifacts published by the Jenkins CI job
 are downloaded and made available for your deployment. You get full traceability of your workflow,
 including the commits associated with each job.

@@ -164,7 +164,8 @@ Now, we recommend a few steps to ensure that we use our feed instead of the publ
    </packageSources>
    ```
 
-* * *
+---
+
 ## Run an initial package restore to populate your feed
 
 Now that you have upstream packages set up, you'll need to run an initial package restore to populate your new feed with the upstream packages.

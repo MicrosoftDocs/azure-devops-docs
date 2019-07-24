@@ -98,7 +98,8 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 You now have a pipeline that's ready to train your model!
 
-* * *
+---
+
 ## Azure Machine Learning service automation
 
 There are two primary ways to use automation with the Azure Machine Learning service:

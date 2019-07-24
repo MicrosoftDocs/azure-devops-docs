@@ -64,8 +64,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 > [!div class="mx-imgBorder"]  
 > ![Connect to a Project dialog, connect to a Project and Git repository](_img/view-add/connect-to-a-project-and-github.png)
 
-
-* * *
+---
 
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
@@ -142,7 +141,7 @@ Additional menu options support the following tasks:
 </tbody>
 </table>
 
-* * *
+---
 
 ## Add a work item
 
@@ -194,8 +193,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 > [!div class="mx-imgBorder"]
 > ![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
 
-* * *
-
+---
 
 <a id="sort" />
 

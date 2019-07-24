@@ -78,7 +78,8 @@ Unpacking objects: 100% (3/3), done.
    e2ccee6..55b26a5  feature1   -> origin/feature1
 ```
 
-* * *
+---
+
 ## Update branches with merge
 
 Apply changes downloaded through `fetch` using the `merge` command. `Merge` takes the commits retrieved from `fetch` and tries to add them to your local branch. The merge will keep the 
@@ -118,7 +119,8 @@ git merge
 You can merge without committing using `--no-commit` to attempt to perform the merge but not commit the final changes, which gives you a chance to inspect the changed files before finalizing
 the merge with a commit.
 
-* * *
+---
+
 <a name="pull"></a>  
 
 ## Fetch and merge with pull
@@ -159,7 +161,8 @@ Pull a remote branch into a local one by passing remote branch information into 
 
 This is a useful way to directly merge the work from remote branch into your local branch.
 
-* * *
+---
+
 ## Update your branch with the latest changes from master
 
 When working in a branch, you may want to incorporate the latest changes from the master branch into your branch. There are two different approaches you can use to perform this: rebase or merge.
@@ -207,7 +210,8 @@ git push
 
 
 
-* * *
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -78,7 +78,8 @@ If you need to cherry-pick a range of commits, you can use two commit IDs separa
  1 file changed, 32 insertions(+), 15 deletions(-)</font>
 </pre>
 
-* * *
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]

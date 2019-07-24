@@ -77,7 +77,7 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
    Now you are ready to create project using your own template
 
 
--------------
+---
 
 Previous: [Using the Generator](/About-Azure-DevOps-Demo-Generator/Using-the-Generator) 
 

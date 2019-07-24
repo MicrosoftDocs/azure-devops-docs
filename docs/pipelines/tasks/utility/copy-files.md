@@ -213,7 +213,8 @@ YAML builds are not yet available on TFS.
   $(Build.ArtifactStagingDirectory)
   ```
 
-* * *
+---
+
 #### Results
 
 These files are copied to the staging directory:
@@ -281,7 +282,8 @@ YAML builds are not yet available on TFS.
   $(Build.ArtifactStagingDirectory)
   ```
 
-* * *
+---
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

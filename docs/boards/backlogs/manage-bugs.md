@@ -93,7 +93,8 @@ To learn more about working in the old web form, see [Add work items to plan and
 ::: moniker-end  
 
 
-* * *
+---
+
 ## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  

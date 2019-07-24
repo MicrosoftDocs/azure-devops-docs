@@ -303,7 +303,8 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ::: moniker-end
 
-* * *
+---
+
 ### Pull request validation
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
@@ -607,7 +608,8 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* * *
+---
+
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.

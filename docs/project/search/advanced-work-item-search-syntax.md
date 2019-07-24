@@ -181,7 +181,7 @@ other search filter functions; for example, the search query strings
 
 You can use more than one `?` wildcard to match more than one character.
 
------------------
+---
 
 ![Warning](_img/_shared/Warning-hightop.png) **No results found for ...**  
 
@@ -196,7 +196,7 @@ You can use more than one `?` wildcard to match more than one character.
  of matches. For example, specify more characters of the word(s) you want to find,
  or add a condition or filter to limit the number of possible matches.
 
------------------
+---
 
 <a name="seemoreworkitem"></a>
 ## See more of the work item

@@ -86,7 +86,7 @@ for the test plan or test suite, then view the work item history.
 For test suites, other actions are tracked in the Test Suite Audit field. 
 For example, adding and removing test cases from a test suite are tracked in this field.
 
-*****
+---
 
 <a name="testcases"></a>
 ## Creating manual test cases
@@ -276,7 +276,7 @@ credentials for Azure DevOps when you clicked this link.
 Without signing out of Azure DevOps, click 'View Tests' 
 again to see the correct test suite and tests.
 
-*****
+---
 
 <a name="runtests"></a>
 ## Running manual tests
@@ -379,7 +379,7 @@ no opt-out mechanism is provided.
 
 **A:** Yes, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
-*****
+---
 
 <a name="trackstatus"></a>
 ## Tracking test status
@@ -416,7 +416,7 @@ is counted for each of the test suites separately.
 
 **A:** [Learn more here](how-long-to-keep-test-results.md).
 
-*****
+---
 
 <a name="repeatdifferent"><a/>
 ## Repeating a test with different data
@@ -439,7 +439,7 @@ which makes it difficult to switch from one platform to another.
 into your shared parameters grid. You can also copy the data from 
 your grid back into Excel if you need to.
 
-*****
+---
 
 <a name="manageresults"><a/>
 ## Managing test results
@@ -476,7 +476,7 @@ Test results are often deleted before you can analyze them.
 
 ![Keep a build indefinitely](_img/how-long-to-keep-test-results/build-keep-indefinitely.png)
 
-*****
+---
 
 <a name="sharesteps"><a/>
 ## Sharing steps between test cases
@@ -492,7 +492,7 @@ Test results are often deleted before you can analyze them.
 **A:** Yes. You provide values for the [parameters](repeat-test-with-different-data.md) in the test cases where the shared steps are used.  
 You don't have to provide values in the shared steps definition. However, you can provide one default row of values, which is used when you create an action recording of a standalone shared step.
 
-*****
+---
 
 <a name="tandfext"><a/>
 ## Test &amp; Feedback extension
@@ -560,6 +560,6 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
 
-*****
+---
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

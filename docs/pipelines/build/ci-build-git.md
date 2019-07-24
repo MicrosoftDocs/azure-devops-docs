@@ -71,7 +71,8 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 
 6. Select the **Save & queue** menu and then Select **Save**.
 
-* * *
+---
+
 ## Automatically build a change in topic branch
 
 Your are now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
@@ -123,7 +124,8 @@ YAML builds are not yet available on TFS.
 7. Choose your **topic branch**.  Select **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
 8. Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task.
 
-* * *
+---
+
 ## Validate pull requests
 
 Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
@@ -162,7 +164,8 @@ YAML builds are not yet available on TFS.
 1. Select **Pull requests**. Select **New pull request**.
 1. Create the pull request. Navigate back to your build pipeline. A build will be queued or completed for the merge commit of your pull request.
 
-* * *
+---
+
 ### Azure Pipelines or TFS repository
 
 1.  Navigate to the **Code** hub in Azure Repos or TFS.

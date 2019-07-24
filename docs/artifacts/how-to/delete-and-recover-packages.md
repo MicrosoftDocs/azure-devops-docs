@@ -161,7 +161,8 @@ Choose the package from **Azure Artifacts** and select _Delete latest_ from the 
 
 ![Unlist or delete Universal package](../_img/delete/delete-universal-package.png)
 
-* * *
+---
+
 ## Automatically delete old package versions with retention policies
 
 Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space.

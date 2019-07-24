@@ -169,7 +169,8 @@ jobs:
   - script: echo First step!
 ```
 
-* * *
+---
+
 Learn more about [multi-job pipelines](process/phases.md?tabs=yaml),
 using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#triggers), [variables](process/variables.md?tabs=yaml), and
@@ -395,7 +396,8 @@ each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
 will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
 Only 2 jobs will run simultaneously.
 
-* * *
+---
+
 #### Parallel
 
 This specifies how many duplicates of the job should run. This is useful for
@@ -573,7 +575,8 @@ variables:
 - group: my-variable-group-2  # another variable group
 ```
 
-* * *
+---
+
 ## Template references
 
 > [!NOTE]
@@ -1048,7 +1051,8 @@ trigger:
     - README.md
 ```
 
-* * *
+---
+
 ### PR trigger
 
 A pull request trigger specifies what branches will cause a pull request build to

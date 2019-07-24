@@ -159,7 +159,8 @@ You create these files using Work Item Templates, a power tool for Visual Studio
 
 4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
 
-* * *
+---
+
 <a id="add-wi"> </a>
 
 ## Add a work item using a template  
@@ -199,7 +200,7 @@ The main method for adding a work item using a template is to open the template 
 
 2. Paste the copied link into a web browser to check that it works as expected.    
 
-* * *
+---
 
 ::: moniker-end  
 
@@ -233,7 +234,7 @@ The main method for adding a work item using a template is to open the template 
 
 2. Paste the copied link into a web browser to check that it works as expected.    
 
-* * *
+---
 
 ::: moniker-end
 
@@ -376,7 +377,8 @@ The feature to apply a template to existing work items from the web browser isn'
 
     <img src="_img/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
 
-* * *
+---
+
 <a id="manage"> </a> 
 
 ## Manage work item templates
@@ -512,7 +514,7 @@ To make frequently-used templates more accessible, you can set a default templat
 
 To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
-* * *
+---
 ::: moniker range=">= tfs-2017"
 
 ## Add or remove tags from templates 

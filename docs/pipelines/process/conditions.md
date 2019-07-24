@@ -57,7 +57,8 @@ you can specify the conditions under which the task or job will run:
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
 
-* * *
+---
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.

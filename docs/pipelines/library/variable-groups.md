@@ -114,7 +114,8 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 > [!NOTE]
 > Linking a variable group to a specific stage is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
 
-* * *
+---
+
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the pipeline itself](../process/variables.md).
 For example, to access the value of a variable named **customer** in a variable group linked to the pipeline,
@@ -184,4 +185,4 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 [!INCLUDE [variable-collision](../_shared/variable-collision.md)]
 
-* * *
+---

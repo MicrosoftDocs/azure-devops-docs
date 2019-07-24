@@ -20,7 +20,7 @@ The **Docker** tasks you used in the build pipeline when you created the
 build artifacts push the Docker image back into your Azure Container Registry.
 The web app you created here will host an instance of that image and expose it as a website.
 
-*****
+---
 
 **Why use a separate release pipeline instead of the automatic deployment feature available in Web App for Containers?**
 
@@ -37,4 +37,4 @@ However, by using a separate release pipeline in Azure Pipelines or TFS you gain
   you can achieve end-to-end traceability from code to deployment by using a build-specific tag for each deployment.
   For example, the Docker build tasks let you tag your images with the **Build.ID** for each deployment.
 
-*****
+---

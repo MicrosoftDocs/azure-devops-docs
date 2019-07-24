@@ -918,7 +918,8 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* * *
+---
+
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.

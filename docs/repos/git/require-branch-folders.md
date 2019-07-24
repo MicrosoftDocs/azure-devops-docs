@@ -105,4 +105,4 @@ Then, repeat these commands for each branch you want to migrate:
 >[!NOTE]
 >Any custom permissions or branch policies you had set up will not be migrated.
 
-* * *
+---

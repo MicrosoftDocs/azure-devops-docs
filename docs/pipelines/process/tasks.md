@@ -97,7 +97,7 @@ The ability to restore to an older version of a release pipeline is not currentl
 
 Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
 
-* * *
+---
 
 <a name="controloptions"></a>
 
@@ -183,7 +183,8 @@ Select this option if you want subsequent tasks in the same job to run even if t
 
 Select this check box if you want the task to run even if the build or deployment is failing.
 
-* * *
+---
+
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
 > **Azure Pipelines preview feature**
@@ -285,7 +286,7 @@ On the [Variables tab](../build/variables.md) define this variable:
 
 Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
 
-* * *
+---
 
 ### Tool installer tasks
 

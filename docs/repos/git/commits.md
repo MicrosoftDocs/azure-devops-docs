@@ -163,7 +163,8 @@ Amend your last commit to correct small errors without making a new commit.
     git commit -m --amend "short descriptive message"
     ```
 
-* * *
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]

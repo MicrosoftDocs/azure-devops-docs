@@ -195,7 +195,8 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 ![Email work item from TEE](../queries/_img/share-plans-email-work-item-tfs.png)  
 
-* * *
+---
+
 <a id="email-summary-lists"></a>
 
 ## Email summary lists with links to items  
@@ -266,7 +267,8 @@ If you want to mail a list of all items in the backlog or query, simply choose t
 
 ![Email selected items from Eclipse query result list](../queries/_img/share-plans-email-work-item-list-eclipse.png)  
 
-* * *
+---
+
 <a id="copy-formatted-list"></a>
 ## Copy formatted list of work items  
 
@@ -334,7 +336,8 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ![Copy full path hyperlink for a work item from Eclipse](../queries/_img/share-plans-copy-URL-wi-eclipse.png)   
 
-* * *
+---
+
 <a id="export" /> 
 
 ::: moniker range=">= azure-devops-2019"

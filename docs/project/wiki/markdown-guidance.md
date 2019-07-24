@@ -172,7 +172,7 @@ To add a horizontal rule, add a line that's a series of dashes `---`. The line a
 <pre>
 above
 &nbsp;
-&#45;&#45;&#45;&#45;
+&#45;&#45;&#45;
 below
 </pre>
 </div>
@@ -181,7 +181,7 @@ below
 
 above    
 
------    
+---
 
 below    
 

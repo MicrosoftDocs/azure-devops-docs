@@ -85,7 +85,8 @@ View changes between two commits using `git diff`:
 <font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.cs"/&gt;</font>
 </pre>
 
-* * *
+---
+
 ## Retrieve files
 
 Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
@@ -136,7 +137,8 @@ Restore a file to any location by using `git show`. This command prints the file
 &gt; git show <font color="#b5bd68">85435fac:src/app.ts &gt; /home/frank/oldapp.ts</font>
 </pre>
 
-* * *
+---
+
 ## Compare branches
 
 Review potential changes from a [merge](merging.md) or [rebase](rebase.md) by comparing branches directly. 

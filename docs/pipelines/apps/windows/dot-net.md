@@ -53,7 +53,8 @@ https://github.com/adventworks/net-sample
 
 ::: moniker-end
 
-* * *
+---
+
 This quickstart works for apps targeting the .NET Framework 4 or newer. The sample app is a Visual Studio solution that has two projects: A .NET Class Library project targeting .NET Framework 4.5 and a Unit Test project.
 
 ## Set up continuous integration

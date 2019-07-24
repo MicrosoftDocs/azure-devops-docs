@@ -166,8 +166,7 @@ You can use the following shortcut keys to format your text:
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
 
-* * *
-
+---
 
 <a id="link-items"></a>
 
@@ -278,7 +277,8 @@ To open the menu options to download or delete several attachments, choose one o
 
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
-* * *
+---
+
 ::: moniker range="<= azure-devops-2019"
 
 ### Attachment size
@@ -337,7 +337,8 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 
-* * *
+---
+
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
 

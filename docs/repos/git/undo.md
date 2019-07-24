@@ -66,7 +66,8 @@ You can revert the file to the version in a specific commit by providing the com
 This differs from the earlier use of the `checkout` command used to swap to a different [branch](branches.md). 
 Git will tell you if it is changing a file or swapping between branches in the output, and complain if it's not clear which one you are trying to do.
 
-* * *
+---
+
 <a name="revert"></a>
 
 ## Revert changes in shared commits
@@ -117,7 +118,8 @@ to simply discard all changed files since the last commit and return the files t
 The `--hard` part of the command tells Git to reset the files to the state of the previous commit and discard any staged changes. 
 The `HEAD` argument tells Git to reset the local repository to the most recent commit. If you want to reset the repo to a different commit, provide the ID instead of HEAD.
 
-* * *
+---
+
 A `reset` affects all files in the current branch on the repository, not just those in your current directory. `Reset` only discards changes that haven't 
 been committed yet.
 

@@ -66,7 +66,8 @@ click **Connect**.
 
 Git will download and create your own copy of the code in a new folder for you to work with. 
 
-* * *
+---
+
 <a name="commit"></a>
 
 ## Commit your work
@@ -106,7 +107,8 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 
    This will save your changes locally to a new [commit](commits.md) in Git. Make sure to give the commit a short message describing your changes after the -m flag.   
 
-* * *
+---
+
 <a name="push"></a>
 
 ## Share your changes
@@ -143,7 +145,8 @@ branch of the code.
 3. Once the changes are approved, complete the pull request. 
    This will pull your changes from the branch into the master branch of the code.
 
-* * *
+---
+
 <a name="pull"></a>
 
 ## Sync with others
@@ -171,4 +174,4 @@ pull your branches regularly to keep them up to date with the changes from other
 
 Git will download the changes and merge them with your own changes into your local branch. 
 
-* * *
+---

@@ -123,7 +123,8 @@ git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam
 git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam C:\Repos\FabrikamFiber
 ```
 
-* * *
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]

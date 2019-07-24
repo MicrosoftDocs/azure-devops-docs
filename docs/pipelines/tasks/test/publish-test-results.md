@@ -343,7 +343,8 @@ YAML builds are not yet available on TFS.
 
 1. Save the pipeline and queue a build. Watch it create and push a Docker image to your registry and the test results to Azure DevOps.
 
-* * *
+---
+
 <a name="attachments"></a>
 
 ## Attachments support

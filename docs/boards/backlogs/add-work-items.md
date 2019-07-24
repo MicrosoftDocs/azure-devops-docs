@@ -122,7 +122,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
     If you work within Visual Studio 2017 or later version, a browser window will open with the work item form to fill out. If you work within Visual Studio 2015 or earlier version, a work item form opens within Visual Studio. 
 
-* * *
+---
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

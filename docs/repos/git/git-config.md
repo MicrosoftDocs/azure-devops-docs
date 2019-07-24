@@ -88,7 +88,8 @@ git config --global user.name "Jamal Hartnett"
 
 Similarly, to set your email, run `git config --global user.email "jamal@fabrikam.com"`.
 
-* * *
+---
+
 ### Prune remote branches during fetch
 Pruning removes remote-tracking branches that no longer exist on the remote and helps you keep your branches list clean and up to date. This setting is available at both global and repository scopes, and corresponds to the `git config` [fetch.prune](https://git-scm.com/docs/git-config#git-config-fetchprune) setting.
 
@@ -113,7 +114,8 @@ git config --global fetch.prune true
 
 This command will set fetch.prune to true in your global configuration file (recommended).
 
-* * *
+---
+
 ### Rebase local branch when pulling
 Rebasing sets aside the changes made by commits in the current branch that are not in the upstream branch, resets the current branch to the upstream branch, 
 then applies the changes that were set aside. This setting is available at both global and repository scopes, and corresponds to the `git config` [pull.rebase](https://git-scm.com/docs/git-config#git-config-pullrebase) setting. Valid settings are:
@@ -141,7 +143,8 @@ To configure pull.rebase, open a command prompt, and run:
 git config [--local|--global|--system] pull.rebase [true|false|interactive|preserve]
 ```
 
-* * *
+---
+
 ### Cryptographic network provider
 
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` [http.sslBackend](https://github.com/git-for-windows/repos/git/commit/d81216ee4dd46ae59a388044d1266d6fa9030c19) setting. The values are:
@@ -167,7 +170,8 @@ To configure http.sslBackend, open a command prompt, and run:
 git config --global http.sslBackend [openssl|schannel]
 ```
 
-* * *
+---
+
 ### Ignore & attributes files
 
 The **Ignore & attributes files** section is available at repository scope and allows you to view and edit the [gitignore](https://git-scm.com/docs/gitignore) and [gitattributes](https://git-scm.com/docs/gitattributes) files for your repository.

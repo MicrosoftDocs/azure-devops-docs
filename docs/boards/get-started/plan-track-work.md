@@ -53,7 +53,7 @@ Within each work item form, you can describe the work to be done, assign work to
 
 Here we show how to add user stories and child tasks from the web portal and add details to those work items . 
 
-* * * 
+--- 
 
 
 
@@ -98,7 +98,7 @@ To open the Features board from the User Stories board, choose **Features** from
 > [!div class="mx-imgBorder"]  
 > ![Open the features board](_img/plan-track-work/choose-features-board.png)  
 
-* * *
+---
 
 
 ## Add issues or user stories 
@@ -133,7 +133,7 @@ To open the Features board from the User Stories board, choose **Features** from
 
 2. To track the work you want to manage, add as many user stories that you need.  
 
-* * *
+---
 
 
 ## Add details to an issue or user story
@@ -296,7 +296,7 @@ Provide a relative estimate of the amount of work required to complete an issue.
 </table>
 
 
-* * *
+---
 
 
 ## Update status
@@ -322,7 +322,7 @@ As work starts, drag the user story card from the **Backlog** column to the **Ac
 You can add or rename columns as needed, see [Customize your board](customize-boards.md).
 
 
-* * *
+---
 
 
 
@@ -384,7 +384,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/plan-track-work/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/plan-track-work/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](_img/plan-track-work/collapse-task-list.png) |  
 
 
-* * *
+---
 
 
 ## Add details to a task
@@ -469,7 +469,7 @@ In addition to the fields you can define for a user story, you can specify the f
 </tbody>
 </table>
 
-* * *
+---
 
 
 <a id="discussion">  </a>

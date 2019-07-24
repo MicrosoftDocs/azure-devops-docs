@@ -149,7 +149,8 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 
 You'll need to bulk save the work items you've modified. 
 
-* * *
+---
+
 ## Link to a new work item   
 
 Here, we have selected to add a link to the selected work items.  

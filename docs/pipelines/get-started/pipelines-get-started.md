@@ -78,4 +78,4 @@ The basic steps are these:
 
 [Create your first pipeline](../create-first-pipeline.md).
 
-* * *
+---

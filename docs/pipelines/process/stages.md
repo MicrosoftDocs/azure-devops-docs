@@ -57,7 +57,8 @@ and [queuing policies](#queuing-policies).
 
 ![stage](../release/_img/definition-02.png)
 
-* * *
+---
+
 ## Specifying stages
 
 #### [YAML](#tab/yaml/)
@@ -141,7 +142,8 @@ for a stage in a release pipeline. You can:
 
 ![Defining options and policies](../release/_img/environments-03.png)
 
-* * *
+---
+
 ## Dependencies
 
 #### [YAML](#tab/yaml/)
@@ -225,7 +227,8 @@ You control the dependencies by setting the triggers on each stage of the releas
 * With a **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
 * With a **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
 
-* * *
+---
+
 <h2 id="conditions">Conditions</h2>
 
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
@@ -277,7 +280,8 @@ YAML is not supported in this version of TFS.
 #### [Classic](#tab/classic/)
 When you specify **After release** or **After stage** triggers, you can also specify the branch filters for the artifacts that are consumed in the release. Only when the branch filters are satisfied will the release be deployed to the given stage.
 
-* * *
+---
+
 <a name="queuing-policies"></a>
 ## Queuing policies
 
@@ -357,4 +361,4 @@ defined.
   the **QA** stage will be sent out immediately
   after the post-deployment approval for release **R1** is completed.
 
-* * *
+---

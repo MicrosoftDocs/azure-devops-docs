@@ -80,7 +80,8 @@ git push -u origin users/frank/bugfix
 Your commits on your local branch are added to the branch on `origin`, and a upstream tracking relationship will be set up in
 Git so that next time you `push` (or `pull`) from this local branch, you won't have to specify the remote branch name.
 
-* * *
+---
+
 ### Resolve merge conflicts before pushing   
 
 If there are [conflicts](merging.md) between your local commits on the commits on the remote branch, you must first resolve these conflicts before you can push your changes. 

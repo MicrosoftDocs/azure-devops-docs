@@ -193,7 +193,7 @@ Displays changes made to all items in SolutionA (including those in subfolders) 
 
 Displays details about changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
 
-   -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
     Changeset: 30
     User: Raisa Pokrovskaya (Fabrikam)
     Date: Monday, April 23, 2012 1:23:05 PM

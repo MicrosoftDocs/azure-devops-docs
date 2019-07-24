@@ -248,7 +248,8 @@ Select the version control paths you want to include and exclude. In most cases,
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
-* * *
+---
+
 ## PR triggers
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches,
@@ -401,7 +402,7 @@ If your Git repo is hosted in Azure Repos, there won't be a **Pull request valid
 
 Pull request triggers are not available for Other/external Git repos.
 
-* * *
+---
 ::: moniker range="azure-devops"
 
 ### Trigger builds using GitHub pull request comments
@@ -699,7 +700,8 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-* * *
+---
+
 <h2 id="gated">TFVC gated check-in</h2>
 
 If your code is in a [Team Foundation version control (TFVC)](../../repos/tfvc/overview.md) repo, use gated check-in to protect against breaking changes.

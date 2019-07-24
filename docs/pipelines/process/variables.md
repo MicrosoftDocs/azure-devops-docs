@@ -115,7 +115,8 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 [!INCLUDE [temp](_shared/access-variables-through-env.md)]
 
-* * *
+---
+
 <h2 id="secret-variables">Secrets</h2>
 
 #### [YAML](#tab/yaml/)
@@ -167,7 +168,8 @@ To pass a secret to a script, use the **Environment** section of the scripting t
 
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
-* * *
+---
+
 ## Share variables across pipelines
 
 To share variables across multiple pipelines in your project, you should set them using [variable groups](../library/variable-groups.md) under **Library** using the web interface. For more information, see [variable groups](../library/variable-groups.md).
@@ -344,7 +346,8 @@ The output variable `newworkdir` can be referenced in the input of a downstream 
 
 You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
 
-* * *
+---
+
 ## Set variables using expressions
 
 #### [YAML](#tab/yaml/)
@@ -384,7 +387,8 @@ You can use any of the supported expressions for setting a variable. Here is an 
 
 For more information about counters and other expressions, see [expressions](expressions.md).
 
-* * *
+---
+
 ## Allow at queue time
 
 #### [YAML](#tab/yaml/)
@@ -404,7 +408,8 @@ YAML is not supported in TFS.
 You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
 To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
 
-* * *
+---
+
 ## Expansion of variables
 
 #### [YAML](#tab/yaml/)
@@ -527,4 +532,5 @@ Variables are expanded once when the run is started, and again, at the beginning
    ```
 
 ---
-* * *
+---
+

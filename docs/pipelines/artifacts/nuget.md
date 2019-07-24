@@ -69,7 +69,8 @@ The NuGet task supports a number of options. The following list describes some o
 
 ![A screenshot of the NuGet task configured as outlined above](_img/nuget/create-packages-in-team-build.png)
 
-* * *
+---
+
 <a name="package-versioning"></a>
 ## Package versioning
 
@@ -120,7 +121,8 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 In the **NuGet** task, select **Pack options** and select one of the values for **Automatic package versioning**.
 
-* * *
+---
+
 Although Semantic Versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that after packages are produced, they're [immutable](/azure/devops/artifacts/feeds/immutability). They can't be updated or replaced. 
 
 When you’re producing a package in a build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
@@ -193,7 +195,8 @@ To publish to an external NuGet feed, you must first create a service connection
 
 ::: moniker-end
 
-* * *
+---
+
 ## Publish symbols for your packages
 
 When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).

@@ -190,7 +190,8 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 6. Save your project plan to retain scheduling and other data that TFS doesn't store.
 
-* * *
+---
+
 ## Indent tasks to create parent-child links
 
 When you indent tasks and then publish your plan, you create parent-child links between work items. Tasks will show up on the [taskboard](../../sprints/task-board.md) when they are assigned to the taskboard sprint.
@@ -214,7 +215,7 @@ To see the parent-child links that you just created, open **Links and Attachment
 
 ![Subordinate tasks create predecessor-successor lnk](_img/create-your-backlog-tasks-using-project/IC658914.png)
 
-* * *
+---
 
 ## Link tasks to create predecessor-successor links
 
@@ -230,7 +231,7 @@ When you link two tasks and publish your plan, TFS creates predecessor-successor
 
 ![Create predecessor-successor links in Project](_img/create-your-backlog-tasks-using-project/IC660421.png)  
 
-* * *
+---
 
 Although the work tracking system tracks predecessor-successor dependencies as work item links, it does not track dependency types, lead and lag time, or other constraints that Project does.
 
@@ -264,7 +265,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 ![View of work tracking fields mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
-* * *
+---
 
 To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
 

@@ -165,7 +165,8 @@ To download a Universal Package, add the **Universal Package** task and configur
 
 ![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
 
-* * *
+---
+
 ## Q&A
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?

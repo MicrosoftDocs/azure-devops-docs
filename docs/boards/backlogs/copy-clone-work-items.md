@@ -176,7 +176,8 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png)
 
-* * *
+---
+
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

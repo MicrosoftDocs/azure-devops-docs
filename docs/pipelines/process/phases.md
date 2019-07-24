@@ -173,7 +173,8 @@ YAML is not supported in this version of TFS.
 To add jobs to your build pipeline, edit the pipeline in Pipelines page, and select the **Process** tab for your pipeline.
 To add jobs to your release pipeline, edit the pipeline in Releases page, and select the **Process** tab for your pipeline.
 
-* * *
+---
+
 ## Types of jobs
 
 Jobs can be of different types, depending on where they run.
@@ -265,7 +266,8 @@ YAML is not yet supported in TFS.
 You have the option to specify demands in the pipeline, in the jobs, or both.
 If you specify demands in both the pipeline and in a job, the union of the two sets of demands is required for the system to select an agent.
 
-* * *
+---
+
 Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 <h3 id ="server-jobs">Server jobs</h3>
@@ -458,7 +460,8 @@ phased execution:
   **Always run** on a task at the end of the first job will
   not guarantee that tasks in subsequent jobs will run.
 
-* * *
+---
+
 <h2 id="conditions">Conditions</h2>
 
 You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
@@ -540,7 +543,8 @@ Use the **Run this job** option on an agent or server job to run the tasks
 Conditions are not supported in this version of TFS.
 ::: moniker-end
 
-* * *
+---
+
 <h2 id="timeouts">Timeouts</h2>
 
 To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
@@ -576,7 +580,8 @@ Select the job and then specify the timeout value.
 
 On the **Options** tab you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
-* * *
+---
+
 ::: moniker range="azure-devops"
 
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
@@ -693,7 +698,8 @@ a maximum of four agents at any one time:
 
 With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
-* * *
+---
+
 ## Slicing
 
 An agent job can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel.
@@ -726,7 +732,8 @@ Specify the **multi-agent** option on an agent job to leverage slicing.
 The job is dispatched as many times as the number of agents you specify,
 and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are automatically set in each job.
 
-* * *
+---
+
 ## Job variables
 
 If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
@@ -759,7 +766,8 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 Job variables are not yet supported in the web editor.
 
-* * *
+---
+
 For information about using a **condition**, see [Specify conditions](conditions.md).
 
 ## Workspace
@@ -809,7 +817,8 @@ When you run a pipeline on a self-hosted agent, by default, none of the sub-dire
 - [Azure Repos Git](../repos/azure-repos-git.md)
 - [TFVC](../repos/tfvc.md)
 
-* * *
+---
+
 <a name="artifact-download"></a>
 
 ## Artifact download
@@ -863,7 +872,8 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 ::: moniker-end
 
-* * *
+---
+
 For information about using **dependsOn** and **condition**, see [Specify conditions](conditions.md).
 
 ## Access to OAuth token
@@ -899,7 +909,8 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 Select the **Allow scripts to access OAuth token** option in the control options for the job.
 
-* * *
+---
+
 ## Related topics
 
 * [Deployment group jobs](deployment-group-phases.md)

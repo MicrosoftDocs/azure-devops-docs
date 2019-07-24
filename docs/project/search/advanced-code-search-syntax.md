@@ -129,7 +129,7 @@ other search filter functions; for example, the search query strings
 
 You can use more than one `?` wildcard to match more than one character.
 
-------------------
+---
 
 ![Warning](_img/_shared/Warning-hightop.png) **No results found for ...**  
 If there is a very large number of hits when using a wildcard search, such 
@@ -138,7 +138,7 @@ matching files were found. In this case, narrow your search to reduce the number
 of matches. For example, specify more characters of the word(s) you want to find,
 or add a condition or filter to limit the number of possible matches.   
 
-------------------
+---
 
 ### Search for phrases
 

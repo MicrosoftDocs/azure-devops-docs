@@ -126,7 +126,8 @@ Resolve merge conflicts on the command line:
     &gt; git commit -m <font color="#b5bd68">"Resolved both new api endpoints"</font>
     </pre>
 
-* * *
+---
+
 ## Next steps
 
 > [!div class="nextstepaction"]

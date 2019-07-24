@@ -69,7 +69,8 @@ YAML is not supported in TFS.
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
-* * *
+---
+
 ## Example: Publish two sets of artifacts
 
 #### [YAML](#tab/yaml/)
@@ -134,7 +135,8 @@ The completed build delivers two sets of artifacts.
 
 > You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
 
-* * *
+---
+
 ## Example: Assemble C++ artifacts into one location and publish as an artifact
 
 #### [YAML](#tab/yaml/)
@@ -195,7 +197,8 @@ YAML is not supported in TFS.
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
-* * *
+---
+
 ## How do I consume artifacts?
 
 ### Consume artifacts in release pipelines
@@ -248,7 +251,8 @@ YAML is not supported in TFS.
    $(System.ArtifactsDirectory)
    ```
 
-* * *
+---
+
 ## Tips
 
 * **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).

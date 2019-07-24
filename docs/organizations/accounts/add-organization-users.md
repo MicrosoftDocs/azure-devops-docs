@@ -114,7 +114,8 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
 
     You can see all security groups in a project using the [az devops security group list](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest#ext-azure-devops-az-devops-security-group-list) command.
 
-* * *
+---
+
 ## Related articles
 
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)

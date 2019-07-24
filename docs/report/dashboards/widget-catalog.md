@@ -288,7 +288,7 @@ The following widgets are organized under the service they support. Widgets that
 
 Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
  
-----
+---
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -299,7 +299,7 @@ Displays the list of work items currently assigned to the currently logged in us
   
 Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
-----
+---
 
 ### Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
@@ -308,7 +308,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 
 Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
-----
+---
 ::: moniker-end
 
 ### Chart for work items  
@@ -324,7 +324,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
 ::: moniker-end
 
-----
+---
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -340,7 +340,7 @@ From the configuration dialog, [specify the team, backlog level, and other param
 
 Hover over each color within the chart to see the count of items for a particular Kanban column. 
 
-----
+---
 
 <a id="cycle-time-widget"></a> 
 ### Cycle time  
@@ -351,7 +351,7 @@ Displays the cycle time of work items closed in a specified timeframe for a sing
 
 Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
 
-----
+---
 
 <a id="lead-time-widget"></a> 
 ### Lead time  
@@ -364,7 +364,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 
 To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
   
-----
+---
 
 ::: moniker-end
 
@@ -383,7 +383,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker-end
 
 
-----
+---
 
 <a id="other-links-widget"></a> 
 ### Other links 
@@ -406,7 +406,7 @@ The following links are displayed when the corresponding resource is configured 
 
 ::: moniker-end
 
-----
+---
 
 
 <a id="query-results-widget"></a> 
@@ -418,7 +418,7 @@ Adds a configurable tile that lists the results of a shared query.
 From the configuration dialog, select either a team favorite or shared query.  
 To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
 
-----
+---
 
 
 <a id="query-tile-widget"></a> 
@@ -430,7 +430,7 @@ Adds a configurable tile to display the summary of a shared query results.
 From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
 To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
   
-----
+---
 
 
 
@@ -443,7 +443,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 Teams [use the burndown chart to mitigate risk and check for scope creep](../../boards/sprints/sprint-burndown.md) throughout the sprint cycle. 
 
-----
+---
 
 
 
@@ -456,7 +456,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 Inserts the team's capacity bar chart for the current sprint. 
 To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint. See [Set capacity](../../boards/sprints/set-capacity.md).  
 
-----
+---
 
 
 <a id="sprint-overview-widget"></a> 
@@ -475,7 +475,7 @@ Inserts a configurable overview of sprint progress. You can choose between a cou
 Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 
-----
+---
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -488,7 +488,7 @@ The velocity widget tracks a team's capacity to deliver work sprint after sprint
 
 For additional guidance, see [Velocity](team-velocity.md). 
 
-----
+---
 
 ::: moniker-end
 
@@ -503,7 +503,7 @@ Provides quick access to open the following Agile tools and team resources:
 - [Task board](../../boards/sprints/task-board.md)  
 - [Queries](../../boards/queries/using-queries.md)  
 
-----
+---
 
 
 
@@ -526,7 +526,7 @@ Adds a configurable tile to display the summary of a code folder or Git reposito
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 
-----
+---
 
 <a id="pull-request-widget"></a> 
 ### Pull request 
@@ -544,7 +544,7 @@ Requires TFS 2015.2 or later version.
 ::: moniker-end
 
 
-----
+---
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -570,7 +570,7 @@ Hover over a bar to learn how long the build took to complete. Choose the bar to
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
 ::: moniker-end
 
-----
+---
 
 ::: moniker range=">= tfs-2017"
 
@@ -589,7 +589,7 @@ Requires TFS 2017.1 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
 
-----
+---
 
 ::: moniker-end
 
@@ -602,7 +602,7 @@ Requires TFS 2017.1 or later version.
 
 Configurable widget that you can use to view and track the status of a release pipeline. This widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
 
----- 
+--- 
 ::: moniker-end
 
  
@@ -616,7 +616,7 @@ Configurable widget that you can use to view and track the status of a release p
 
 Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc. To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
 
----- 
+--- 
 ::: moniker-end
 
 
@@ -645,7 +645,7 @@ Requires TFS 2017.2 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
 
-----
+---
 
 ::: moniker-end
 
@@ -662,7 +662,7 @@ From the configuration dialog, select the build or release whose test results yo
 
 The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md) 
 
----- 
+--- 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -685,7 +685,7 @@ The widget supports tracking advanced metrics for one or more build pipelines or
 
 To learn more, see [Configure the Test Results Trend (Advanced) widget](./configure-test-results-trend.md).
 
----- 
+--- 
 ::: moniker-end
 
 
@@ -702,7 +702,7 @@ To learn more, see [Configure the Test Results Trend (Advanced) widget](./config
 
 Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](http://go.microsoft.com/fwlink/?LinkId=808035) are supported.
 
-----
+---
 ::: moniker-end
 
 
@@ -722,7 +722,7 @@ Adds a configurable tile to display any type of information, guidance, or links 
 Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end
 
----- 
+--- 
 
 
 <a name="team-members-widget"></a> 
@@ -740,7 +740,7 @@ For team admins, supports access to the quick dialog to [add or remove team memb
 Requires TFS 2015.1 or later version.    
 ::: moniker-end
 
-----
+---
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
@@ -756,7 +756,7 @@ Team rooms support increased team productivity by providing a space to discuss w
 > [!NOTE]  
 > Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).  
 
-----
+---
 
 ::: moniker-end
 
@@ -772,7 +772,7 @@ Provides links to open or download Visual Studio. The Visual Studio IDE client c
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 
-----
+---
 
 
 <a id="how-to-widget"></a>
@@ -787,7 +787,7 @@ Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **P
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 
-----
+---
 
 
 ## Marketplace widgets

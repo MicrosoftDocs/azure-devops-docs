@@ -77,7 +77,8 @@ git branch feature1
 git checkout feature1
 ```
 
-* * *
+---
+
 ## Delete a branch
 
 > [!NOTE] 
@@ -107,7 +108,8 @@ Deleting a remote branch requires use of the `git push` command using the `--del
 git push origin --delete
 ```
 
-* * *
+---
+
 ## Use branches to manage development
 
 Git keeps track of which branch you are working on and makes sure that when you `checkout` a branch your files match the most recent commit on the branch. 

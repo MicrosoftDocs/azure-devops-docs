@@ -43,7 +43,8 @@ You add a deployment group job in the editor by selecting '...' on **Process** c
 > [!NOTE]
 > Deployment group jobs can only be used in release pipelines. They cannot be used in build pipelines.
 
-* * *
+---
+
 ## Timeouts
 
 Use the job timeout to specify the timeout in minutes for jobs in this job. A zero

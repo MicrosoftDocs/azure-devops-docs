@@ -44,7 +44,8 @@ YAML builds are not yet available on TFS.
 #### [Classic](#tab/classic/)
 If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
-* * *
+---
+
 ### Example
 
 At the time a run is started:

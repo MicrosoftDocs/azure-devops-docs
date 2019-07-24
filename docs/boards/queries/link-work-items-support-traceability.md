@@ -145,7 +145,8 @@ From the Query Results view, you can link a work item to a new or existing work 
 
 ![Link to an existing work item](_img/IC588289.png)
 
-* * *
+---
+
 ## Parent-child work item links
 
 These features let you quickly link or change links that use the parent-child link type:

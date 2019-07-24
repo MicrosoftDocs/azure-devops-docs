@@ -101,7 +101,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
     <li><strong>Working days</strong>: Set the active weekdays to use when tracking capacity and burndown.</li>
 	</ul>
 
-* * *
+---
 
 
 ## Customize fields
@@ -143,7 +143,7 @@ To quickly assign fields from the card without having to open the work item, add
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
 
-* * *
+---
 
 
 ## Customize columns
@@ -173,7 +173,7 @@ You can add columns or change column names.
 
 1. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
 
-* * *
+---
 
 
 ## Customize swimlanes 
@@ -218,7 +218,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 1. Choose **Save and close** when done. 
 
 
-* * *
+---
 
 > [!NOTE]   
 > Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-wit.md#enable-disable).
@@ -242,7 +242,7 @@ Here we show the customizations made in this article. The following image also s
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-agile-customized-view.png) 
 
-* * *
+---
 
 ## Try this next  
  

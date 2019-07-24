@@ -200,7 +200,7 @@ using Azure credentials or an Azure management certificate.
 
 > If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
-*****
+---
 
 <a name="sep-azure-rm-conditions"></a>
 <a name="arm-auto-connect"></a>
@@ -225,7 +225,7 @@ For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
 **NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
-*****
+---
 
 <h3 id="sep-servbus">Azure Service Bus service connection</h3>
 
@@ -244,7 +244,7 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 
 <!--
 
-*****
+---
 
 <h3 id="sep-servfabric">Azure Service Fabric service connection</h3>
 
@@ -271,7 +271,7 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 -->
 
-*****
+---
 
 <h3 id="sep-bbucket">Bitbucket Cloud service connection</h3>
 
@@ -285,7 +285,7 @@ Defines a connection to Bitbucket Cloud.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-chef">Chef service connection</h3>
 
@@ -300,7 +300,7 @@ Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-dochost">Docker Host service connection</h3>
 
@@ -317,8 +317,8 @@ Defines and secures a connection to a Docker host.
 Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/security/https/).
 
 [How do I create a new service connection?](#create-new)
-
-*****
+ 
+---
 
 <h3 id="sep-docreg">Docker Registry service connection</h3>
 
@@ -344,7 +344,7 @@ Defines a connection to a container registry.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-extgit">External Git service connection</h3>
 
@@ -363,7 +363,7 @@ Also see [Artifact sources](../release/artifacts.md#sources).
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-generic">Generic service connection</h3>
 
@@ -378,7 +378,7 @@ Defines and secures a connection to any other type of service or application.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-github">GitHub service connection</h3>
 
@@ -414,7 +414,7 @@ GitHub account in your profile:
 
 Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
-*****
+---
 
 <h3 id="sep-githubent">GitHub Enterprise Server service connection</h3>
 
@@ -452,7 +452,7 @@ GitHub account in your profile:
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
 
-*****
+---
 
 <h3 id="sep-jenkins">Jenkins service connection</h3>
 
@@ -474,7 +474,7 @@ Defines a connection to the Jenkins service.
 Also see [Azure Pipelines Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
-*****
+---
 
 <h3 id="sep-kuber">Kubernetes service connection</h3>
 
@@ -537,7 +537,7 @@ kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data.ca\.crt}'
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-npm">npm service connection</h3>
 
@@ -556,7 +556,7 @@ Defines and secures a connection to an npm server.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-nuget">NuGet service connection</h3>
 
@@ -576,7 +576,7 @@ Defines and secures a connection to a NuGet server.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-python-download">Python package download service connection</h3>
 
@@ -595,7 +595,7 @@ Defines and secures a connection to a Python repository for downloading Python p
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-python-upload">Python package upload service connection</h3>
 
@@ -615,7 +615,7 @@ Defines and secures a connection to a Python repository for uploading Python pac
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-fabric">Service Fabric service connection</h3>
 
@@ -638,7 +638,7 @@ Defines and secures a connection to a Service Fabric cluster.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-ssh">SSH service connection</h3>
 
@@ -661,7 +661,7 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 Also see [SSH task](../tasks/deploy/ssh.md)
 and [Copy Files Over SSH](../tasks/deploy/copy-files-over-ssh.md).
 
-*****
+---
 
 <h3 id="sep-subversion">Subversion service connection</h3>
 
@@ -681,7 +681,7 @@ Defines and secures a connection to the Subversion repository.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 <h3 id="sep-tfsts">Team Foundation Server / Azure Pipelines service connection</h3>
 
@@ -705,7 +705,7 @@ Use the **Verify connection** link to validate your connection information.
 
 See also [Authenticate access with personal access tokens for Azure DevOps and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-*****
+---
 
 <h3 id="sep-vsmobile">Visual Studio App Center service connection</h3>
 
@@ -721,7 +721,7 @@ Defines and secures a connection to Visual Studio App Center.
 
 [How do I create a new service connection?](#create-new)
 
-*****
+---
 
 ## Extensions for other service connections
 

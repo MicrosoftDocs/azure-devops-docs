@@ -75,7 +75,7 @@ It holds the set of steps to run after each job.
 We'll start with a very simple example and work up to the full task.
 
 #### my-decorator.yml (initial version)
-------
+---
 ```yaml
 - task: CmdLine@2
   displayName: 'Run my script (injected from decorator)'
@@ -116,7 +116,7 @@ Therefore, we should limit the decorator to jobs running against the default bra
 The updated file looks like this:
 
 #### my-decorator.yml (revised version)
-------
+---
 ```yaml
 steps:
 - ${{ if eq(resources.repositories['self'].ref, resources.repositories['self'].defaultBranch) }}:
@@ -138,7 +138,7 @@ The script task's ID is `d9bafed4-0b18-4f58-968d-86655b4d2ce9`.
 If we see another script task, we shouldn't inject ours.
 
 #### my-decorator.yml (final version)
-------
+---
 ```yaml
 steps:
 - ${{ if and(eq(resources.repositories['self'].ref, resources.repositories['self'].defaultBranch), not(containsValue(job.steps.*.task.id, 'd9bafed4-0b18-4f58-968d-86655b4d2ce9'))) }}:

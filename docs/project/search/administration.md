@@ -39,7 +39,7 @@ and [Requirements and compatibility](/azure/devops/server/requirements).
 **Stakeholders** do not have access to code, and therefore no access to Code Search. 
 All users have access to Work Item and Wiki Search.
 
-*****
+---
 
 <a name="config-ts-azuredevops"></a>
 ##  Install the Search extension in Azure DevOps Services
@@ -58,7 +58,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
 * For Code Search, see [Uninstall or disable an extension](../../marketplace/uninstall-disable-extensions.md) in the Marketplace documentation. 
 
-*****
+---
 
 <a name="install-tfs"></a>
 ## Install Search extension in Azure DevOps Server or TFS

@@ -61,7 +61,7 @@ When you add a user story, bug, task, or feature, you create a work item. Each w
 
 Add epics to track significant business initiatives. Add features to track specific applications or set of work. Define user stories to track work that you'll assign to specific team members, and bugs to track code defects. Lastly, use tasks to track even smaller amounts of work for which you want to track time either in hours or days.
 
-* * * 
+--- 
 
 If you want a project that uses the Scrum or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md).
 
@@ -104,7 +104,7 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 > ![Reorder work items](_img/about-boards/reorder-agile-backlog.png)  
 
 
-* * * 
+--- 
 
 
 ## Collaborate
@@ -129,7 +129,7 @@ Create dashboards that track status and trends of work being accomplished.  Set 
 > ![Work item form, Follow icon control](_img/about-boards/user-story-form-follow.png)  
 
 
-* * * 
+--- 
 
 To learn more, see:
 - [Discussion section](plan-track-work.md#discussion). 
@@ -155,7 +155,7 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](../sprints/_img/define-sprints/drag-drop-backlog-items-to-sprint.png)  
 
-* * * 
+--- 
 
 To learn more, see:
 - [Assign work to sprints](../sprints/assign-work-sprint.md)
@@ -187,7 +187,7 @@ You'll find you can work more effectively through these actions:
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](_img/about-boards/agile-hierarchy-with-header.png)
 
-* * * 
+--- 
 
 To learn more, see:
 - [Organize your backlog](../backlogs/organize-backlog.md)

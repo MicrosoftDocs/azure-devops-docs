@@ -69,7 +69,8 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 Git downloads and creates your own copy of the code in a new folder for you to work with. 
 
-* * *
+---
+
 <a name="commit"></a>
 
 ## Commit your work
@@ -133,7 +134,8 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 
    This will save your changes locally to a new [commit](commits.md) in Git. Make sure to give the commit a short message describing your changes after the `-m` flag.   
 
-* * *
+---
+
 <a name="push"></a>
 
 ## Share your changes
@@ -192,7 +194,8 @@ branch of the code.
 
    For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
 
-* * *
+---
+
 <a name="pull"></a>
 
 ## Sync with others
@@ -226,4 +229,4 @@ pull your branches regularly to keep them up to date with the changes from other
 
 Git downloads the changes and merges them with your own changes into your local branch. 
 
-* * *
+---

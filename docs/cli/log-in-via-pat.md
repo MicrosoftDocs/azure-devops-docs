@@ -54,7 +54,7 @@ $env:AZURE_DEVOPS_EXT_PAT = 'xxxxxxxxxx'
 export AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx
 ```
 
-* * *
+---
 
 Replace *xxxxxxxxxx* with the your PAT.
 

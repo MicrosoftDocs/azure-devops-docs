@@ -38,13 +38,13 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ![Visual Studio Git status bar](_img/share-your-code-in-git-vs/vs-status-bar.png)
 
-----
+---
 - ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) shows the number of unpublished commits in your local branch. Selecting this will open the **Sync** view in Team Explorer.
 - ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_pending_changes.png) shows the number of uncommitted file changes. Selecting this will open the **Changes** view in Team Explorer.
 - ![Visual Studio Repo Status Bar icon](_img/share-your-code-in-git-vs/vs_current_repo.png) shows the current Git repo. Selecting this will open the **Connect** view in Team Explorer.
 - ![Visual Studio branch status bar icon](_img/share-your-code-in-git-vs/vs_branch_picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.   
  
-----
+---
 
 ## Publish your code to Azure Repos
 

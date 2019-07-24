@@ -55,7 +55,8 @@ Check out the [script YAML task reference](../yaml-schema.md#script) for the sch
   pip install twine
   ```
 
-* * *
+---
+
 ## Authenticate Azure Artifacts with twine
 
 To use `twine` to publish Python packages, you first need to set up authentication. The [Python Twine Authenticate](../tasks/package/twine-authenticate.md) task stores your authentication credentials in an environment variable (`PYPIRC_PATH`). `twine` will reference this variable later.
