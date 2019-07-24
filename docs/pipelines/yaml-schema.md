@@ -420,6 +420,55 @@ jobs:
 
 ---
 
+## Deployment job
+
+A [deployment job](process/deployment-jobs.md) is a special type of job that is a collection of steps to be run sequentially against the environment. In YAML pipelines, we recommend that you put your deployment steps in a deployment job.
+
+# [Schema](#tab/schema)
+
+```YAML
+jobs:
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore
+  displayName: string  # friendly name to display in the UI
+  pool:                # see pool schema
+    name: string
+    demands: string | [ string ]
+  dependsOn: string 
+  condition: string 
+  continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: { string: string } | [ variable | variableReference ]  
+  environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:
+      deploy:
+      displayName: string                 # friendly name to display in the UI
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
+
+# [Example](#tab/example)
+
+```YAML
+jobs:
+  # track deployments on the environment
+- deployment: DeployWeb
+  displayName: deploy Web App
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  # creates an environment if it doesn't exist
+  environment: 'smarthotel-dev'
+  strategy:
+    # default deployment strategy, more coming...
+    runOnce:
+      deploy:
+        steps:
+        - script: echo my first deployment
+```
+
+---
+
 ## Steps
 
 Steps are a linear sequence of operations that make up a job.
@@ -1212,6 +1261,64 @@ pool:
   demands:
   - myCustomCapability   # check for existence of capability
   - agent.os -equals Darwin  # check for specific string in capability
+```
+
+---
+
+## Environment
+
+`environment` specifies the [environment](process/environments.md) or its resource that is to be targeted by a deployment job of the
+pipeline. It also holds information about the deployment strategy for running the steps defined inside the job.
+
+# [Schema](#tab/schema)
+
+Full syntax:
+
+```yaml
+environment:                # create environment and(or) record deployments
+  name: string              # name of the environment to run this job on.
+  resourceName: string      # name of the resource in the environment to record the deployments against
+  resourceId: number        # resource identifier
+  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
+  tags: string | [ string ] # tag names to filter the resources in the environment
+  strategy:                 # deployment strategy
+    runOnce:                # default strategy
+      deploy:
+        steps:
+        - script: echo Hello world
+```
+
+If you're specifying an environment or one of its resource and don't need to specify other properties, this can
+be shortened to:
+
+```yaml
+environment: environmentName.resourceName
+strategy:                 # deployment strategy
+    runOnce:              # default strategy
+      deploy:
+        steps:
+        - script: echo Hello world
+```
+
+# [Example](#tab/example)
+
+It is possible to scope down the target of deployment to a particular resource within the environment as shown below. 
+
+```yaml
+environment: 'smarthotel-dev.bookings'
+  strategy: 
+    runOnce:
+      deploy:
+        steps:
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            namespace: $(k8sNamespace)
+            manifests: $(System.ArtifactsDirectory)/manifests/*
+            imagePullSecrets: $(imagePullSecret)
+            containers: $(containerRegistry)/$(imageRepository):$(tag)
+            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 ---
