@@ -1,5 +1,17 @@
+---
+title: Build an Azure DevOps Demo Generator template
+description: Learn to build a template for the Azure DevOps Services Demo Generator
+ms.prod: devops  
+ms.technology: devops-new-user
+ms.manager: jillfra
+ms.author: sraj
+author: hsachinraj
+ms.topic: conceptual
+monikerRange: 'azure-devops'
+ms.date: 05/09/2018
+---
+
 # Building your own template
----------
 
 Azure DevOps Generator provides a number of templates, out of the box, that supports a wide variety of scenarios, from different project types to different programming languages, deployment platforms, etc., In addition to this, the generator also allows users to make their own templates. Users can convert their existing projects into templates and then provision new projects using that template. The ability to have custom templates can be useful in many scenarios, such as building custom training materials, provision only certain artifacts, etc., 
 
