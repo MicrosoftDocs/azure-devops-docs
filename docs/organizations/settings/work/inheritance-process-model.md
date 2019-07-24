@@ -11,8 +11,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/25/2018
+ms.date: 07/22/2019
 ---
+
 
 
 # About process customization and inherited processes  
@@ -37,21 +38,23 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 You'll see two types of processes:
 
-- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
+- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically updates your inherited process. 
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
 
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
 
-For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyAgile* process (which inherits from the *Agile* system process). Any changes you make to the *MyAgile* process also update the *Test Agile* project. You can't customize the *Scrum Project*, on the other hand, until you change it to a process which inherits from Scrum.
+For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process.. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
-> ![Admin context, Organization settings, Overview, Project list and the process they use](_img/process/mprocess-overview-project-list.png)
+> ![Admin context, Organization settings, Project list and the process they use](_img/process/projects-list.png)
 
 
 <a id="process-naming"></a>
+
 ### Process name restrictions  
+
 Process names must be unique and 128 Unicode characters or less. Also, names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```. 
 
 To rename a process, open the &hellip; context menu for the process and choose **Edit**. 
@@ -59,9 +62,29 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 ## Inherited objects versus custom objects 
 
-Each inherited process you create inherits the WITs defined in the system process&mdash;Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
+Each inherited process you create inherits the WITs defined in the system process&mdash;Basic, Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
+
+
+#### [Agile process](#tab/agile-process) 
 
 ![Agile work item types](../../../boards/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
+
+#### [Basic process](#tab/basic-process) 
+
+![Basic process work item hierarchy](../../../boards/get-started/_img/track-issues/basic-process-epics-issues-tasks.png)
+
+> [!NOTE]  
+> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
+
+#### [Scrum process](#tab/scrum-process) 
+
+![Scrum work item types](../../../boards/work-items/guidance/_img/ALM_PT_Scrum_WIT_Artifacts.png)
+
+#### [CMMI process](#tab/cmmi-process) 
+
+![CMMI work item types](../../../boards/work-items/guidance/_img/ALM_PT_CMMI_WIT_Artifacts.png)
+
+* * * 
 
 You can add fields and modify the workflow and work item form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to create a WIT, you can disable it. In addition, you can add custom WITs. 
 
@@ -119,6 +142,7 @@ When adding custom fields, note the following limits:
 In addition, you can [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.    
 
 ### What you can't customize 
+
 - You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
@@ -331,10 +355,12 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 </table>
 
 **The workflow states must conform to the following rules:** 
+
 - At least one state must be defined for either the *Proposed* or *In Progress* state categories 
 - At a minimum, there must be at least two workflow states defined
 
 **What you can't customize**  
+
 - You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
 - You can't modify the state assigned to the *Completed* state category for any WIT, custom or inherited 
 - You can't change the name of a custom state 
@@ -385,6 +411,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 
 **What you can't customize**  
+
 - You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
 - You can't remove an inherited portfolio level from the product (but you can rename them)
 - You can't insert a backlog level within the existing set of defined backlogs

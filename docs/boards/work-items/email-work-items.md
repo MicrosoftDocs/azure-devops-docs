@@ -206,6 +206,7 @@ Depending on the option and client you choose, summary lists may or may not incl
 
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2017"  
 
 <a id="team-services-email-list" /> 
@@ -336,11 +337,22 @@ To print the details of a work item, open a query in Visual Studio that contains
 * * *
 <a id="export" /> 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019"
 
 ## Export list as CSV 
 
 From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](../queries/view-run-query.md), choose the ![  ](../../_img/icons/actions-icon.png) actions icon, and choose <strong>Export to CSV</strong>.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Export a query as CSV](_img/email/export.png)   
