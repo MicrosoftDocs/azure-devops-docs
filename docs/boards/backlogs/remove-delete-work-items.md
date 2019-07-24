@@ -357,10 +357,10 @@ By changing the **State** of a work item to <em>Removed</em>, you effectively re
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. 
+> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 ::: moniker-end
 
@@ -403,8 +403,10 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
+
 > [!NOTE]  
 > The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"

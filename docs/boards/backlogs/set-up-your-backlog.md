@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 03/21/2019
+ms.date: 07/22/2019
 ---
 
 # Set up your Backlogs and Boards  
@@ -28,7 +28,7 @@ For an overview of the tools associated with your team, see [Manage and configur
 
 The first thing you need to understand is that your product **Backlog** and **Board** display work items which meet the following criteria:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 - Work item type belongs to the Requirements category. The types differ depending on the process selected for your project:  
 	- [Basic](../get-started/plan-track-work.md) : Issue, Backlog name=<strong>Issues</strong>  
@@ -37,9 +37,12 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 	- [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>  
 - Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
 - Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
+
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+[!INCLUDE [temp](../_shared/basic-process-note.md)]
+
+::: moniker range="<= tfs-2018"
 
 - Work item type belongs to the Requirements category. The types differ depending on the process selected for your project: 
 	- [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>  
@@ -93,13 +96,18 @@ If you don't see the work items you expect on your [product Backlog](create-your
 
 ## Add bugs to your backlogs and boards
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
+
 For all processes except the Basic process, each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban Board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
+
 ::: moniker-end
 
-::: moniker range="<= azure-devops"
+[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]
+
+::: moniker range="<= tfs-2018"
 
 Each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban Board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
+
 ::: moniker-end
 
 If you want bugs to show up on your Backlog and Board, choose <strong>Bugs are managed with requirements</strong>.
@@ -119,24 +127,60 @@ If you see the following error when you open your Kanban board, you need to corr
 Choose the **Correct this now** link to open the Settings dialog. To map the workflow states, refer to [Add columns to your Kanban board, Update Kanban column-to-State mappings](../boards/add-columns.md#state-mappings). 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017"
 
 ## Customize your Kanban Board checklist items
 
 Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For details, see [Customize cards](../boards/customize-cards.md#annotations).
 
-For example, here we've chosen to track bugs along with tasks, and  enable Task and Bug to appear within checklists. To learn more about checklists, see [Add task checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+For example, here we've chosen to track bugs along with tasks, and  enable Task, Bug, GitHub objects, and Tests to appear within checklists. 
+
+> [!div class="mx-imgBorder"]
+> ![Kanban board, Settings, Annotations](../boards/_img/customize-cards/annotate-settings-154.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+> [!NOTE]   
+> The GitHub annotations require Azure DevOps Server 2019 update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+To learn more about checklists, see the following articles: 
+- [Add task checklists](../boards/add-task-checklists.md)  
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+- [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md)
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+
+For example, here we've chosen to track bugs along with tasks, and  enable Task and Bug to appear within checklists. 
 
 > [!div class="mx-imgBorder"]
 > ![Kanban board, Settings, Annotations](_img/setup-backlog/annotations-product-backlog.png)
 
+To learn more about checklists, see the following articles: 
+- [Add task checklists](../boards/add-task-checklists.md)  
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+
+
 ::: moniker-end
+
 
 <a id="customize-checklist-2019" />
 
 ::: moniker range="azure-devops-2019"
 
-## Customize your Kanban Board checklist items
+## Add other work item types to your Kanban Board checklist items
 
 If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose whether or not these types appear within a checklist on your product Kanban board. You do this by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For details, see [Customize cards](../boards/customize-cards.md#annotations).
 
@@ -176,6 +220,7 @@ For details, see the following resources:
 - [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
 - [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md) 
 - [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
