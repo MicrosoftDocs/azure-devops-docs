@@ -37,9 +37,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="48"><strong>2019 Q3</strong></td>
+            <td rowspan="49"><strong>2019 Q3</strong></td>
             <td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189" data-raw-source="[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189)">Improve built-in charts: Sprint Burndown, CFD, and Velocity</a></td><td>Boards</td><td>2020</td>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110" data-raw-source="[@Mention support in HTML fields](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110)">@Mention support in HTML fields</a></td><td>Boards</td><td>2020</td></tr>        
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105" data-raw-source="[Better Azure Pipelines and Azure Boards integrations](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105)">Better Azure Pipelines and Azure Boards integrations</a></td><td>Boards</td><td>2020</td></tr>        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110" data-raw-source="[@Mention support in HTML fields](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110)">@Mention support in HTML fields</a></td><td>Boards</td><td>2020</td></tr>        
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561023" data-raw-source="[Change the process a project uses from one process to another (example: Agile to Scrum)](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561023)">Change the process a project uses from one process to another (example: Agile to Scrum)</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184" data-raw-source="[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184)">Display Rollup on Azure Boards – Backlogs</a></td><td>Boards</td><td>2020</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561096" data-raw-source="[Custom columns on Taskboard](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561096)">Custom columns on Taskboard</a></td><td>Boards</td><td>2020</td></tr>
@@ -118,7 +118,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="28"><a href="2019/sprint-155-update.md" data-raw-source="[22 July 2019](2019/sprint-155-update.md)">22 July 2019</a></td>
+            <td rowspan="29"><a href="2019/sprint-155-update.md" data-raw-source="[22 July 2019](2019/sprint-155-update.md)">22 July 2019</a></td>
             <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>Future</td>
          </tr>
         <tr><td>Get insights into your team’s health with three new Azure Boards Analytics reports</td><td>Boards</td><td>Future</td></tr>
@@ -128,10 +128,10 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Improved code search filtering options</td><td>Boards</td><td>Future</td></tr>
+         <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Approvals in multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Manage pipeline variables in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New predefined variables in YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
@@ -139,6 +139,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Show correct pool information on each job</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Link work items with multi-stage pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>CI triggers for new branches</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Pipeline caching (public preview)</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Single hosted pool</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>Future</td></tr>
