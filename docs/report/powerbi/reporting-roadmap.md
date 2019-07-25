@@ -33,7 +33,7 @@ Analytics in available for all organizations using Azure DevOps Services. It pro
 
 ::: moniker range="azure-devops-2019"
 
-Analytics in in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
+Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
 
 Analytics will become generally available in the next major release of Azure DevOps Server. While in Public Preview, Analytics is free.
 

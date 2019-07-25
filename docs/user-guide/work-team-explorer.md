@@ -127,7 +127,7 @@ To learn more about each page, see the following articles.
 
 ## Team Foundation version control 
 
-The following images show the pages available when you connect to a Git repository from Team Explorer. 
+The following images show the pages available when you connect to a TFVC repository from Team Explorer. 
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 

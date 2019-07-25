@@ -37,6 +37,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 #### [Web portal](#tab/browser/)
+
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -46,10 +47,12 @@ You can start viewing and adding work items once you connect to a project.
 
 > [!NOTE]   
 > The new Work Items experience is available when you connect to a GitHub repository. If you connect to a TFVC repository, you'll continue to see the legacy query-focused experience. 
+
 ::: moniker-end
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
+
 Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
@@ -63,6 +66,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 
 * * *
+
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
@@ -74,6 +78,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
 #### [Web portal](#tab/browser/)
+
 <table>
 <tbody valign="top">
 <tr>
@@ -97,6 +102,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
+
 <table>
 <tbody valign="top">
 <tr>
@@ -137,7 +143,9 @@ Additional menu options support the following tasks:
 </table>
 
 * * *
+
 ## Add a work item
+
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
 
 For example, here we choose User Story. 
@@ -156,7 +164,7 @@ Choose **New Work Item** and select the work item type you want.
 
 A browser window will open with the work item form to fill out. 
 
----
+* * *
 
 <!---
 > [!TIP]    
@@ -170,26 +178,32 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 
 
 <a id="filter" />
+
 ## Filter to create personal views
 
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 
 #### [Web portal](#tab/browser/)
+
 > [!div class="mx-imgBorder"]
 > ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 #### [Visual Studio 2019](#tab/visual-studio/)
+
 > [!div class="mx-imgBorder"]
 > ![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
 
 * * *
+
+
 <a id="sort" />
+
 ## Add columns and sort by a column 
 
 From the web portal, you can sort your view by one of the column fields that you select from the **Column Options** dialog. For details, see [Change column options](../backlogs/set-column-options.md).
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../_shared/discussion-tip-azure-devops.md)] 
 
 
 ## Copy selected items to the clipboard or email them

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 07/22/2019
 ---
 
 # Manage issues or impediments 
