@@ -92,6 +92,16 @@ Optionally, customize the value of **rootFolderOrFile** to alter what is include
 - task: PublishBuildArtifacts@1
 ```
 
+### Using a custom composer location
+
+If your composer.json is in a subfolder instead of the root directory, you can leverage the ```--working-dir``` argument to tell composer what directory to use. For example, if your composer.json is inside the subfolder ```pkgs```
+
+```composer install --no-interaction --working-dir=pkgs```
+
+You can also specify the absolute path, using the built-in system variables:
+
+```composer install --no-interaction --working-dir='$(system.defaultWorkingDirectory)/pkgs'```
+
 ## Build a container image
 
 You can also build and publish a Docker container image for your PHP app. For more information, see [Docker](docker.md).

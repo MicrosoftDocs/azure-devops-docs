@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 01/23/2019
+ms.date: 07/22/2019
 ---
 
 # Define, triage, and manage bugs
@@ -29,13 +29,9 @@ In a nutshell, you manage bugs through the following tasks:
 > * Update bug status throughout the bug lifecycle  
 > * Monitor bug assignments and trends    
 
+Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-> [!IMPORTANT]  
-> Depending on the process chosen to create your project&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called issues, user stories, product backlog items (PBIs), or requirements. All these work item types are similar: they describe the customer value to be delivered and the work to be performed.   
->
->By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). The Bug work item type isn't defined for the Basic process. Instead, you should track bugs and code defects using the Issue work item type. 
-
+[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]  
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
 
@@ -70,6 +66,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 #### [New web form](#tab/new-web-form/)
+
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
@@ -85,6 +82,7 @@ The new web form is only available from TFS 2017 and later versions.
 
 
 #### [Old web form](#tab/old-web-form/)
+
 ::: moniker range=">= tfs-2018"  
 The old web form is only available for TFS 2017 and earlier versions.  
 ::: moniker-end  
@@ -271,12 +269,15 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 ### Verify a bug, re-run tests defined for web apps 
 
 ::: moniker-end  
+
 ::: moniker range=">= tfs-2018"  
 Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 ::: moniker-end  
+
 ::: moniker range="tfs-2017"
 Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
 ::: moniker-end  
+
 ::: moniker range=">= tfs-2017"  
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
 
@@ -348,8 +349,6 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-
-
 ::: moniker range="<= azure-devops-2019"  
 
 
@@ -364,7 +363,6 @@ If you work from an on-premises Azure DevOps Server or TFS and you have SQL Serv
 To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
 
 ::: moniker-end  
-
 
 
 ### Use SonarQube to help manage technical debt

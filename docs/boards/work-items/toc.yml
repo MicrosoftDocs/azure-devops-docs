@@ -111,6 +111,7 @@
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Share information  
+    displayname: plan, plans, attachments, link, email, rich text
     href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayName: rich text, attach files, storyboard, social tools
   - name: Go mobile

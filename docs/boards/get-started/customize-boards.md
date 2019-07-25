@@ -94,7 +94,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 	<ul>
     <li><strong>Styles</strong>: Specify the card color to display based on field criteria you specify.</li>
     <li><strong>Tag colors</strong>: Specify the tag color to display based on tag criteria you specify.</li>
-    <li><strong>Annotations</strong>: Enable or disable task or test annotations.</li>
+    <li><strong>Annotations</strong>: Enable or disable task, test, bug, or GitHub annotations.</li>
     <li><strong>Tests</strong>: Configure how you want tests to appear and behave on the cards.</li>
     <li><strong>Card reordering</strong>: Choose to enable/disable changing of the backlog priority when dragging and dropping cards on the board.</li>
     <li><strong>Cumulative flow</strong>: Set how you want the cumulative flow diagram to display.</li>
