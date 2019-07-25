@@ -26,7 +26,7 @@ We offer a *free tier* for each. The *free tier* includes:
 - Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
 - One self-hosted CI/CD concurrent job
 
-To estimate costs for Azure DevOps, view the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To estimate costs for Azure DevOps, view the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Microsoft-hosted CI/CD
 
