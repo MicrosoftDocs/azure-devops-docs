@@ -439,7 +439,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Example:**  
 
 ```
-&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 ```
 
 **Result:**
