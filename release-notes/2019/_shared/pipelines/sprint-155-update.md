@@ -4,7 +4,7 @@ ms.topic: include
 
 ### kustomize and kompose as bake options in KubernetesManifest task
 
-[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
+[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
 
 ```YAML
 steps:
@@ -142,7 +142,7 @@ Here is an example of a report with the test summary.
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_14.png)
 
-For more details about flaky test management, see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/flaky-test-management?view=azure-devops).
+For more details about flaky test management, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/test/flaky-test-management?view=azure-devops).
 
 ### Improvements to the Deployment Center for WebApp in the Azure Portal
 
