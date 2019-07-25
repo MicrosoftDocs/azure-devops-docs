@@ -254,11 +254,11 @@
     href: caching/index.md
   - name: Conditions
     href: process/conditions.md
+  - name: Container jobs
+    href: process/container-phases.md
   - name: Demands
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
-  - name: Container jobs
-    href: process/container-phases.md
   - name: Deployment jobs
     href: process/deployment-jobs.md
   - name: Environments
