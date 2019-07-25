@@ -176,3 +176,9 @@ To learn more about how to start or pause experiments, assign traffic to the var
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_23.png)
+
+### Pipeline caching (public preview)
+
+Pipeline caching lets you save the results of a long-running operation, like a package restore or a dependency compilation, and restore it back during the next run of a pipeline. This can result in faster builds. 
+
+For more details, see the blog post with the full announcement [here](https://devblogs.microsoft.com/devops/caching-and-faster-artifacts-in-azure-pipelines/).
