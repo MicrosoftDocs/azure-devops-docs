@@ -24,26 +24,17 @@ monikerRange: 'azure-devops'
 
 ## Use a Microsoft-hosted agent
 
-The Microsoft-hosted agent pool provides 7 virtual machine images to choose from:
+Microsoft-hosted agent pools provides 7 virtual machine images to choose from, each includes various sets of included tools and software:
 
-* Visual Studio 2019 Preview on Windows Server 2019 (`windows-2019`)
-* Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
-* Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
-* Windows Server 1803 (`win1803`) - for running Windows containers
-* macOS X Mojave 10.14 (`macOS-10.14`)
-* macOS X High Sierra 10.13 (`macOS-10.13`)
-* Ubuntu 16.04 (`ubuntu-16.04`)
-
-| If your development team uses... | ...then choose this VM image... | ...or this pool in the classic editor |
-|----------------------------------|------------------------------|----------------------------|
-| .NET Core | ubuntu-16.04 or windows-2019 | Hosted Ubuntu 1604 or Hosted Windows 2019 with VS 2019 |
-| Visual Studio 2019 | windows-2019 | Hosted Windows 2019 with VS 2019 |
-| Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
-| Visual Studio 2015 | vs2015-win2012r2 | Hosted |
-| Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
-| Development tools on macOS (including Xcode 10.2) | macOS-10.14  | Hosted macOS |
-| Development tools on macOS (Xcode versions prior to 9.4.1) | macOS-10.13  | Hosted macOS High Sierra |
-| Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
+| Image | Classic Editor Pool | YAML VM Image Label | Included Software |
+| --- | --- | --- | --- |
+| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
+| Windows Server 2016 with Visual Studio 2017 | *Hosted VS2017* | `vs2017-win2016` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
+| Windows Server 2012 R2 with Visual Studio 2015 | *Hosted* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
+| Windows Server Core 1803 (*for running Windows containers*) | *Hosted Windows Container* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+| Ubuntu 16.04 | *Hosted Ubuntu 1604* | `ubuntu-latest` OR `ubuntu-16.04` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md)
+| macOS X Mojave 10.14 | *Hosted macOS* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
+| macOS X High Sierra 10.13 | *Hosted macOS High Sierra* |   `macOS-10.13` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
 
 Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
@@ -51,17 +42,17 @@ Pipelines will default to the Microsoft-hosted agent pool. You simply need to sp
 jobs:
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: echo hello from Linux
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - script: echo hello from macOS
 - job: Windows
   pool:
-    vmImage: 'windows-2019'
+    vmImage: 'windows-latest'
   steps:
   - script: echo hello from Windows
 ```
@@ -73,18 +64,6 @@ To disable the Microsoft-hosted macOS agent pool for all projects, disable the `
 To disable the Microsoft-hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 
 You can manually select from tool versions on macOS images. [See below](#mac-pick-tools).
-
-<h2 id="software">Software</h2>
-
-Software on Microsoft-hosted agents is updated once each month.
-
-* [Windows Server 2019 with Visual Studio 2019](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md).
-* [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Visual Studio 2015 on Windows Server 2012r2 (Hosted)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md).
-* [Windows Server 1803 (Hosted Windows Container)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
-* [Xcode 9, and 10 on macOS 10.14 (Hosted macOS)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md).
-* [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS High Sierra)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md).
-* [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
 
 ## Capabilities and limitations
 
