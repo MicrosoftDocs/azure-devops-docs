@@ -24,7 +24,7 @@ monikerRange: 'azure-devops'
 
 ## Use a Microsoft-hosted agent
 
-Microsoft-hosted agent pools provide 7 virtual machine images to choose from, each including a broad range of tools and software:
+Microsoft-hosted agent pools offer 7 virtual machine images to choose from, each including a broad range of tools and software:
 
 | Image | Classic Editor Pool | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
