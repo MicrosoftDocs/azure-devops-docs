@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 07/19/2019
+ms.date: 07/26/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1639,7 +1639,7 @@ steps:
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
-  clean: all
+  clean: true
   fetchDepth: 5
   lfs: true
   path: PutMyCodeHere
