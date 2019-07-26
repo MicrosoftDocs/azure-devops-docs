@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: jobourne
 author: joebourneMS
-ms.date: 06/14/2019
+ms.date: 07/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -21,6 +21,8 @@ monikerRange: 'azure-devops'
 > Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent pool today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.3), then select the 'Hosted macOS High Sierra' agent pool for your pipelines.
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
+
+<a name="software"></a>
 
 ## Use a Microsoft-hosted agent
 
