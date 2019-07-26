@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Improved code search filtering options
 
-Previously, code search supported 39 code search filters such as **comment:** and **def:**. Data suggested that there were many filters not being used, therefore we are removing a few filters and merging others. With this update we reduced the number of filters to 19. This will help by making code search queries more efficient and reduce clutter in the interface. 
+Previously, code search supported [39 code search filters](https://docs.microsoft.com/en-us/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops#functions-to-find-specific-types-of-code) such as **comment:** and **def:**. Data suggested that there were many filters not being used, therefore we are removing a few filters and merging others. With this update we reduced the [number of filters to 19](https://docs.microsoft.com/en-us/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops#functions-to-find-specific-types-of-code). This will help by making code search queries more efficient and reduce clutter in the interface. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_12.png "Code search filter options")
