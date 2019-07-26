@@ -7,10 +7,11 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 07/25/2019
 ---
 
 # Queries
