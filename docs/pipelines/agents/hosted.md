@@ -26,7 +26,7 @@ monikerRange: 'azure-devops'
 
 The Microsoft-hosted agent pool provides 7 virtual machine images to choose from:
 
-* Visual Studio 2019 Preview on Windows Server 2019 (`windows-2019`)
+* Visual Studio 2019 on Windows Server 2019 (`windows-2019`)
 * Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
 * Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
 * Windows Server 1803 (`win1803`) - for running Windows containers

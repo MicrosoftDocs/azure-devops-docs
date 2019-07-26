@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 07/09/2019
+ms.date: 07/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -415,6 +415,16 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 #### [YAML](#tab/yaml/)
 ::: moniker range="> azure-devops-2019"
 
+> [!IMPORTANT]
+> Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
+> 
+> If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, 
+> only the UI defined scheduled triggers are run. 
+> To run the YAML defined scheduled triggers in your YAML pipeline,
+> you must remove the scheduled triggers defined in the pipeline setting UI.
+> Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
+> scheduled triggers to start running.
+
 Scheduled triggers cause a build to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 ```yaml
@@ -614,17 +624,6 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-::: moniker range="> azure-devops-2019"
-
-> [!IMPORTANT]
-> Scheduled triggers are moving from the classic editor to YAML. 
-> Existing schedules defined in the classic editor will be honored, but
-> can't be updated, and new schedules can't be defined in the classic editor.
-> To update your existing classic editor schedules, migrate them to 
-> [YAML scheduled triggers](triggers.md?tabs=yaml#scheduled-triggers) 
-> and update them there. See [Migrating from the classic editor](triggers.md?tabs=yaml#migrating-from-the-classic-editor) for migration guidance.
-
-::: moniker-end
 
 Select the days and times when you want to run the build.
 

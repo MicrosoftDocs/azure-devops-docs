@@ -38,6 +38,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 
 
 <a id="mobile"></a>
+
 ## Open the mobile work item form  
 
 The mobile work item form will open when you click **View work item** from an email you receive from your mobile device. You'll receive this type of email under these circumstances:  
@@ -50,6 +51,7 @@ The mobile work item form will open when you click **View work item** from an em
 
 
 ## Update a work item
+
 Within the mobile form, you can do almost everything you can do from the [web portal form](../../boards/backlogs/add-work-items.md). Here are the actions you can take in the order they appear in the mobile form: 
 
 *  Add and remove tags
