@@ -26,7 +26,7 @@ Tip: Personal access tokens are like passwords. Keep them secret. Make sure you 
 
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 ```
-Authorization: Basic BASE64PATSTRING
+Authorization: Basic BASE64USERNAME:PATSTRING
 ``` 
 
 ## REST API
