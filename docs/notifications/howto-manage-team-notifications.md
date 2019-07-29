@@ -1,5 +1,5 @@
 ---
-title: Manage notifications for a team
+title: Manage notifications for a team or group
 titleSuffix: Azure DevOps
 description: Get notified when changes occur to source code, git, work items, and builds in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-collab
@@ -10,18 +10,18 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/19/2019  
+ms.date: 07/29/2019  
 monikerRange: '>= tfs-2017'
 ---
 
-# Manage notifications for a team
+# Manage notifications for a team or group
 
 [!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
 
 > [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
 
-As changes occur to work items, code reviews, pull requests, source control files, and builds, your team can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
+As changes occur to work items, code reviews, pull requests, source control files, and builds, your team or group can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
 
 ## Create a custom email subscription
 
@@ -30,21 +30,29 @@ A subscription lets you control what your team should be notified about and how 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
     ::: moniker range=">= azure-devops-2019"  
+
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+
     ::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)  
+    ::: moniker range=">= tfs-2017 <= tfs-2018" 
+
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
+
 	::: moniker-end
 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
-    ::: moniker range=">= azure-devops-2019"  
-    ![New subscription](_img/new-subscription-newnav.png)  
+    ::: moniker range=">= azure-devops-2019"
+
+    ![New subscription](_img/new-subscription-newnav.png) 
+
 	::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+    ::: moniker range=">= tfs-2017 <= tfs-2018"
+
    ![New subscription](_img/new-subscription.png)
+
 	::: moniker-end
 
 3. Select the type of activity you want your team to be notified of.
@@ -95,6 +103,26 @@ Choose the default method for your team to receive notifications by updating the
 
     ![Delivery settings options](_img/delivery-settings-options.png)
 
+Your team delivery settings are updated for notifications.
+
+## Manage group delivery settings
+
+Manage your group notifications by updating the group's **Delivery settings**.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
+  ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
+
+   ![Group notification settings](_img/group-notification-settings.png) 
+
+4. Choose which option best fits your group's needs, and then select **Save**.  
+
+    ![Delivery settings options](_img/group-delivery-settings.png)
+
+Your group delivery settings are updated for notifications.
+
 ## Related articles
 
-* [Manage personal notification settings](howto-manage-personal-notifications.md)  
+* [Manage personal notification settings](howto-manage-personal-notifications.md)
