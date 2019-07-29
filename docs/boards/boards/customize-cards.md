@@ -11,8 +11,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 03/21/2019
+ms.date: 07/19/2019
 ---
+
 
 
 # Customize cards  
@@ -406,7 +407,7 @@ Requires TFS 2015.1 or later version.
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Annotations provide visual cues about work items, indicating the number of tasks or tests that have been defined for that work item. Choose an annotation to expand the set or gain more information. 
 
-As shown in the following examples, the **Task** and **Test** annotations indicate that two each of tasks and tests have been defined for the work item. If you find that there are some features you're not using, you can disable them from the Annotations tab. 
+As shown in the following examples, the **Task** and **Test** annotations indicate that two each of tasks and tests have been defined for the work item. If you find that there are some features you're not using, you can disable them from the **Annotations** tab. 
 
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
@@ -431,13 +432,21 @@ To learn more about using these features, see [Add task checklists](../../boards
 1. Open the Settings dialog for the Kanban board you want to customize. 
 
 2. Choose **Annotations** and then check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
+::: moniker-end
 
+	::: moniker range=">= azure-devops-2019"  
+	![Kanban board, Settings dialog, Annotations tab](_img/customize-cards/annotate-settings-154.png)
+
+	> [!NOTE]   
+	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Board work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+
+	When done with your changes, choose **Save**.
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Kanban board, Settings dialog, Annotations tab](_img/customize-cards/annotate-settings.png)
 
-3. When done with your changes, choose **Save**.
-
-::: moniker-end
- 
+	When done with your changes, choose **Save**.
+	::: moniker-end
 
 <a id="tests" > </a>
 
@@ -491,7 +500,25 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 ## Related articles
 
-- [Configure status badges](../github/configure-status-badges.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
-- [Card reordering](reorder-cards.md)  
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+::: moniker range=">= azure-devops-2019"
 
+- [Card reordering](reorder-cards.md)  
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Configure status badges](../github/configure-status-badges.md) 
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
+- [Set working days](../../organizations/settings/set-working-days.md) 
+-   
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+- [Card reordering](reorder-cards.md)  
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
+- [Set working days](../../organizations/settings/set-working-days.md) 
+
+
+::: moniker-end

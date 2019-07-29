@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/25/2019
+ms.date: 07/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -34,13 +34,13 @@ Features that are available to users are controlled by access levels  - the full
 
 ## Prerequisites
 
-You must have project collection administrator or owner permissions in Azure DevOps. For more information, see [Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You must have Project Collection Administrator or organization Owner permissions in Azure DevOps. For more information, see [Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your organization
 
 Administrators can now add users to an organization, grant access to appropriate tooling extensions and service access level,
 and add users to groups all in one view. You can add up to 50 users at once. You can add more than 50 users by repeatedly
-using this Users view. When you add users, each receives a notification email with a
+using this Users view. When you add users, each user receives a notification email with a
 link to the organization page.
 
  > [!NOTE]
@@ -66,11 +66,13 @@ To give other users access to your organization, add their email addresses.
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
 
-   * **Users**: Enter the Microsoft account's email address for the user organization.
-   * **Access level**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
-   * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+   - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
+   - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
+   - **Add to project:** Select the project you want to add them to.  
+   - **DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
 
+	> [!NOTE]  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 5. Select **Add** to complete your invitation.
 
 <!---
@@ -116,13 +118,6 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
 ## Related articles
 
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
-
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-
 * [Delete users from Azure DevOps](delete-organization-users.md)
-
-* [Troubleshoot adding and deleting organization users in Azure DevOps](faq-add-delete-users.md)
-
-* [Troubleshoot adding members to projects in Azure DevOps](faq-add-team-members.md)

@@ -240,7 +240,7 @@ To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;
 **Example:**
 
 <pre>&#96;&#96;&#96;
-$ sudo npm install vsoagent-installer -g  
+sudo npm install vsoagent-installer -g  
 &#96;&#96;&#96;
 </pre>  
 
@@ -249,7 +249,7 @@ $ sudo npm install vsoagent-installer -g
 **Result:**
 
 ```
-$ sudo npm install vsoagent-installer -g
+sudo npm install vsoagent-installer -g
 ```
 
 <br/>
@@ -439,7 +439,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Example:**  
 
 ```
-&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 ```
 
 **Result:**

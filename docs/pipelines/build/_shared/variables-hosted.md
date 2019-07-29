@@ -125,7 +125,7 @@ Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangea
 <br><br> 
 See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 </td>
 </tr>
@@ -146,7 +146,7 @@ A typical use of this variable is to make it part of the label format, which you
 Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
 
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -154,7 +154,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.BuildUri</td>
 <td>The URI for the build. For example: <code>vstfs:///Build/Build/1430</code>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -166,7 +166,7 @@ By default, new build pipelines are not set up to clean this directory. You can 
 <br><br>
 For example: <code>c:\agent_work\1\b</code>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -222,7 +222,7 @@ See <a href="/azure/devops/pipelines/build/triggers" data-raw-source="[Build pip
 <tr><br/><td>Build.Repository.Clean</td>
 <td>The value you&#39;ve selected for <strong>Clean</strong> in the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[source repository settings](../repos/index.md)">source repository settings</a>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
@@ -232,7 +232,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 <p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
@@ -244,14 +244,14 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <br/><br/>
 This won&#39;t change, even if the name of the repository does.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.Repository.Name</td>
 <td>The name of the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
@@ -264,7 +264,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <li><code>GitHub</code>
 <li><code>Svn</code>: Subversion
 </ul>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -273,7 +273,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control. The name of the <a href="/azure/devops/repos/tfvc/create-work-workspaces" data-raw-source="[TFVC workspace](../../../repos/tfvc/create-work-workspaces.md)">TFVC workspace</a> used by the build agent.
 <br><br><br/>For example, if the Agent.BuildDirectory is <code>c:\agent_work\12</code> and the Agent.Id is <code>8</code>, the workspace name could be: <code>ws_12_8</code>
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -284,7 +284,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <li>Git: <code><a href="https://dev.azure.com/fabrikamfiber/_git/Scripts" data-raw-source="https://dev.azure.com/fabrikamfiber/_git/Scripts">https://dev.azure.com/fabrikamfiber/_git/Scripts</a></code>
 <li>TFVC: <code><a href="https://dev.azure.com/fabrikamfiber/" data-raw-source="https://dev.azure.com/fabrikamfiber/">https://dev.azure.com/fabrikamfiber/</a></code>
 </ul>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -330,7 +330,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>The name of the branch the build was queued for.
 <ul>
 <li>Git repo branch or pull request: The last path segment in the ref. For example, in <code>refs/heads/master</code> this value is <code>master</code>. In <code>refs/heads/feature/tools</code> this value is <code>tools</code>.</li>
-<li>TFVC repo branch: The last path segment in the root server path for the workspace. For example in <code>$/teamproject/main</code> this value is <code>main</code>.</li>
+<li>TFVC repo branch: The last path segment in the root server path for the workspace. For example, in <code>$/teamproject/main</code> this value is <code>main</code>.</li>
 <li>TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code> or <code>myshelveset;username@live.com</code>.</li>
 </ul>
 Note: In TFVC, if you are running a gated check-in build or manually building a shelveset, you cannot use this variable in your build number format.
@@ -344,7 +344,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 
 The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 <p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
@@ -357,7 +357,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <li>Git: The <a href="/azure/devops/repos/git/commits" data-raw-source="[commit](../../../repos/git/commits.md)">commit</a> ID.</li>
 <li>TFVC: the <a href="/azure/devops/repos/tfvc/find-view-changesets" data-raw-source="[changeset](../../../repos/tfvc/find-view-changesets.md)">changeset</a>.</li>
 </ul>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
 
@@ -382,7 +382,7 @@ Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangea
 <br><br> 
 See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 </td>
 </tr>
@@ -391,7 +391,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Git.SubmoduleCheckout</td>
 <td>The value you&#39;ve selected for <strong>Checkout submodules</strong> on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository tab](../repos/index.md)">repository tab</a>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
@@ -407,42 +407,42 @@ Note: This variable yields a value that is invalid for build use in a build numb
 <td>Build.TriggeredBy.BuildId</td>
 <td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the BuildID of the triggering build.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.DefinitionId</td>
 <td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the DefinitionID of the triggering build.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.DefinitionName</td>
 <td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the name of the triggering build pipeline.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.BuildNumber</td>
 <td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the number of the triggering build.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.ProjectID</td>
 <td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to ID of the project that contains the triggering build.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Common.TestResultsDirectory</td>
 <td>The local path on the agent where the test results are created. For example: <code>c:\agent_work\1\TestResults</code>
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 </table>
@@ -460,6 +460,36 @@ For example, <code>c:\agent_work\1</code>.</td>
 
 </table>
 
+## Deployment job variables
+
+These variables are scoped to a specific [Deployment job](../../process/deployment-jobs.md) and will be resolved only at job execution time. 
+
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+
+<tr>
+<td>Environment.Name</td>
+<td>Name of the environment targeted in the deployment job to run the deployment steps and record the deployment history. For example, <code>smarthotel-dev</code>.</td>
+</tr>
+
+<tr>
+<td>Environment.Id</td>
+<td>ID of the environment targeted in the deployment job. For example, <code>10</code>.</td>
+</tr>
+
+<tr>
+<td>Environment.ResourceName</td>
+<td>Name of the specific resource within the environment targeted in the deployment job to run the deployment steps and record the deployment history. For example, <code>bookings</code> which is a Kubernetes namespace that has been added as a resource to the environment <code>smarthotel-dev</code>.</td>
+</tr>
+
+<tr>
+<td>Environment.ResourceId</td>
+<td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
+</tr>
+
+</table>
+
+
 ## System variables
 
 <table>
@@ -471,7 +501,7 @@ For example, <code>c:\agent_work\1</code>.</td>
 <br/><br/>
 <a href="/azure/devops/pipelines/build/variables#systemaccesstoken" data-raw-source="[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken)">Use System.AccessToken from YAML scripts</a>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
@@ -533,7 +563,7 @@ Otherwise, it is set to <code>False</code>.</td>
 <td>System.TeamFoundationCollectionUri</td>
 <td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
@@ -550,6 +580,6 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>TF_BUILD</td>
 <td>Set to <code>True</code> if the script is being run by a build task.
 <br/><br/>
-This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 </table>

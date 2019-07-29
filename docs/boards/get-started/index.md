@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/17/2019
+ms.date: 07/24/2019
 ---
 
 
@@ -24,7 +24,7 @@ Use this guide to sign up and start using Azure Boards. Start with [Sign up and 
 Then, read [Plan and track work](plan-track-work.md) to start adding and tracking work items on the Kanban board. To add columns, swimlanes, or fields to your board, see [Customize your boards](customize-boards.md). 
 
 > [!NOTE]
-> This quickstart guide illustrates how to sign up, create a project, and and start tracking work using the Basic or Agile processes. If you want more information on working with other processes which offer other work item types, such as user stories and bugs, then see [Choose a process](../work-items/guidance/choose-process.md). You can [create additional projects](../../organizations/projects/create-project.md) using different processes.  
+> This quickstart guide illustrates how to sign up, create a project, and start tracking work using the Basic or Agile processes. If you want more information on working with other processes which offer other work item types, such as user stories and bugs, then see [Choose a process](../work-items/guidance/choose-process.md). You can [create additional projects](../../organizations/projects/create-project.md) using different processes.  
 > 
 > If you use GitHub and want to track your issues in Azure Boards, see [GitHub & Azure Boards](../github/index.md).
 

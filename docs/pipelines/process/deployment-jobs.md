@@ -14,93 +14,107 @@ monikerRange: 'azure-devops'
 
 # Deployment jobs
 
-**Azure Pipelines**
+[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
 
 > [!NOTE]
 >
 > To use deployment jobs, [make sure the Multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
 
-In YAML pipeline, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that is used to deploy your app to an environment.
+In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that is a collection of steps to be run sequentially against the environment.
 
 ## Overview
 
-The advantages of using deployment jobs include:
+Using deployment job provides some benefits:
 
-* You can deploy to an environment, which includes benefits such as being able to see the history of what you've deployed. It's especially helpful to be able to trace deployments in those scenarios where multiple pipelines, stages and jobs are deploying to the same resource (deployment target).
+ - **Deployment history**: You get end-to-end deployment history across pipelines down to a specific resource and status of the deployments for auditing.
+ - **Apply deployment strategy**: Define how your application is rolled-out.
 
-* You can control how your deployment steps run. 
-  > At the moment we offer only the `runOnce` strategy, which runs the deployment steps exactly once. The `rolling` strategy is on our roadmap to enable you to iteratively expand deployment steps.
+   > [!NOTE] 
+   > At the moment we offer only the *runOnce* strategy, which executes the steps once sequentially. Additional strategies like blue-green, canary and rolling are on our roadmap.
+
+## Schema
+
+Here's the full syntax to specify a deployment job: 
+
+```YAML
+jobs:
+- deployment: string                      # name of the deployment job, A-Z, a-z, 0-9, and underscore
+  displayName: string                     # friendly name to display in the UI
+  pool:                                   # see pool schema
+  name: string
+  demands: string | [ string ]
+  dependsOn: string | [ string ]
+  condition: string 
+  continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: { string: string } | [ variable | variableReference ]  
+  environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:
+      deploy:
+      displayName: string                 # friendly name to display in the UI
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
 
 ## Examples
 
-Here's a very simple abstract example of a deployment job: 
+The following example YAML snippet showcases a simple use of a deploy job - 
 
 ```YAML
 jobs:
-- deployment: string
-  dependsOn: string | [ string ]
-  condition: string
-  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  # track deployments on the environment
+- deployment: DeployWeb
+  displayName: deploy Web App
   pool:
-    name: string
-    demands: string | [ string ]
-  environment: string
+    vmImage: 'Ubuntu-16.04'
+  # creates an environment if it doesn't exist
+  environment: 'smarthotel-dev'
   strategy:
+    # default deployment strategy, more coming...
     runOnce:
       deploy:
         steps:
-        - script: echo Hello!
+        - script: echo my first deployment
 ```
 
-
-The following example YAML snippet showcases the use of a deploy job - 
-
-```YAML
-jobs:
-- deployment: DeployJob
-  displayName: Deploy Job
-  pool:
-    vmImage: Ubuntu-16.04
-  environment: staging
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - script: echo Hello
-```
-
-In the above example, with each run of this job, deployment history is recorded against the staging environment.
+In the above example, with each run of this job, deployment history is recorded against the "smarthotel-dev" environment.
 
 > [!NOTE]
 > - Currently only Kubernetes resources are supported within an environment, with support for VMs and other resources on the roadmap.
-> - It is also possible to create an environment with empty resources and use that as an abstract shell to record deployment history as shown in the example above.
+> - It is also possible to create an environment with empty resources and use that as an abstract shell to record deployment history as shown in the previous example.
 
-The following example snippet demonstrates how a pipeline can refer an environment and a resource within the same to be used as the target of a deployment job - 
+The following example snippet demonstrates how a pipeline can refer an environment and a resource within the same to be used as the target for a deployment job.
 
 ```YAML
-deployment: Deploy
-  displayName: Deploy job
-  pool:
-    vmImage: 
-  environment: staging.aks-cluster-namespace-1
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: staging
-            manifests: |
-              manifests/deployment.yml
-              manifests/service.yml
-            imagePullSecrets: |
-              demo-secret
-            containers: |
-              fabrikam.azurecr.io/sample:test
+jobs:
+- deployment: DeployWeb
+    displayName: deploy Web App
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    # records deployment against bookings resource - Kubernetes namespace
+    environment: 'smarthotel-dev.bookings'
+    strategy: 
+      runOnce:
+        deploy:
+          steps:
+            # No need to explicitly pass the connection details
+          - task: KubernetesManifest@0
+            displayName: Deploy to Kubernetes cluster
+            inputs:
+              action: deploy
+              namespace: $(k8sNamespace)
+              manifests: |
+                $(System.ArtifactsDirectory)/manifests/*
+              imagePullSecrets: |
+                $(imagePullSecret)
+              containers: |
+                $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-The above approach has the following advantages - 
-1. More selective recording of deployment history on a specific resource within the environment as opposed to recording the history on all resources within the environment.
-2. Referencing the Kubernetes type resource (aks-cluster-namespace-1 within environment staging in above example) results in **automatic propagation** of the service connection details (service connection backing the resource) for the steps authored under this deployment job. This is particularly useful in the cases where the same service connection value is to be set for multiple steps of the job.
+This approach has the following benefits:
+- Records deployment history on a specific resource within the environment as opposed to recording the history on all resources within the environment.
+- Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a kubernetes namespace: `smarthotel-dev.bookings`), since the deployment job is linked to the environment. 
+This is particularly useful in the cases where the same connection detail is to be set for multiple steps of the job.
+

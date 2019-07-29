@@ -120,6 +120,8 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 	`https://dev.azure.com/{yourorganization}`
 
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+
 Your next step is to  [create a project](#create-project). 
 
 <a id="create-project" />
@@ -159,8 +161,8 @@ You can add and invite others to work on your project by adding their email addr
 
 3. Complete the form by entering or selecting the following information:
 	<ul>
-    <li><strong>Users:</strong> Enter the email addresses (Microsoft account) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
-    <li><strong>Access level:</strong> Assign one of the following access levels: 
+	<li>**Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
+	<li>**Access level:** Assign one of the following access levels: 
 		<ul>
         <li><strong>Basic</strong>: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free. </li>
         <li><strong>Stakeholder</strong>: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users <strong>Stakeholder</strong> access for free.</li>
@@ -176,7 +178,7 @@ You can add and invite others to work on your project by adding their email addr
 	</ul>
 
 	> [!NOTE]  
-	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 
@@ -203,7 +205,6 @@ You can rename your project or change it's visibility. To learn more about manag
  
 > [!div class="nextstepaction"]
 > [Track issues and tasks](plan-track-work.md)
-
 
 ## Related articles  
 

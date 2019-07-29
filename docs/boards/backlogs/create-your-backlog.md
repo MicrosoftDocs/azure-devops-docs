@@ -50,7 +50,7 @@ From your web browser, open your product backlog.
     > [!TIP]    
     > Select the ![ ](../../_img/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![ ](../../_img/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
 
-1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
+1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
@@ -89,6 +89,8 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
+[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]
+
 If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs. Then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
@@ -98,6 +100,7 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 
 
 ::: moniker range="<= tfs-2018"
+
 > [!TIP]  
 > After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on the Kanban or sprint taskboards.  
 
@@ -105,6 +108,7 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 
 
 ::: moniker range="> tfs-2018"
+
 > [!TIP]  
 > After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
 
@@ -149,9 +153,9 @@ Repeat this step until you capture all your main ideas.
 ::: moniker-end
 
 > [!NOTE]  
-> Depending on whether you create your project with [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md), the items in your backlog might be called user stories, PBIs, or requirements. All three are similar. They describe the customer value to be delivered and the work to be performed.   
+> Depending on whether you create your project with [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md), the items in your backlog might be called issues, user stories, PBIs, or requirements. All three are similar. They describe the customer value to be delivered and the work to be performed.   
 >
->By default, user stories appear on Agile backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
+> By default, user stories appear on Agile backlogs, issues on Basic backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
 <a id="move-items-priority-order">  </a>
 
@@ -178,7 +182,7 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, they need more details. You capture these details within the work item form.
 
 > [!TIP]  
-> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Scrum, **Story Points** for Agile, or **Size** for CMMI. 
+> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Basic or Scrum, **Story Points** for Agile, or **Size** for CMMI. 
 
 To open each item, double-click or press Enter. Then add all the information you want to track. Enter as much detail as the team needs to:  
 - Understand the scope. 
