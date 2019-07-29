@@ -112,5 +112,5 @@ size 4923023
 
 ### Known issues
 
-If you use a version of LFS below 2.4.0 with TFS, there's an extra setup step required to [authenticate using NTLM instead of Kerberos](lfs-kerberos.md).
+If you use a version of LFS below 2.4.0 with Azure DevOps Server, there's an extra setup step required to [authenticate using NTLM instead of Kerberos](lfs-kerberos.md).
 This step is no longer necessary as of LFS 2.4.0, and we highly recommend you upgrade.
