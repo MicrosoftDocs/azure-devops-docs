@@ -119,7 +119,7 @@ When you inform your users of the completed change, include the following tasks 
 
 * [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
 * [Change Azure AD connection](change-azure-ad-connection.md)
-* [Enforce conditional access policies](manage-conditional-access.md)
+* [Enforce Conditional Access policies](manage-conditional-access.md)
 * [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
 
 
