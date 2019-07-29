@@ -235,7 +235,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
+To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. This will not remove the user from the team.
 
 ::: moniker-end
 
