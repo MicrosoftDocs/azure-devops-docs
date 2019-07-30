@@ -67,12 +67,13 @@ steps:
 You may want to specify additional properties on that job. In that case, you can use the `job` keyword.
 
 ```yaml
-job: myJob
-timeoutInMinutes: 10
-pool:
-  vmImage: 'ubuntu-16.04'
-steps:
-- bash: echo "Hello world"
+jobs:
+- job: myJob
+  timeoutInMinutes: 10
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - bash: echo "Hello world"
 ```
 
 Your pipeline may have multiple jobs. In that case, use the `jobs` keyword.
@@ -667,10 +668,10 @@ To run multiple jobs using multi-configuration option,
   on the **Variables** tab of the pipeline or in a [variable group](../library/variable-groups.md).
   Each variable, known in this context as a _multiplier_ variable,
   must be defined as a comma-delimited list of the values you want
-  to pass individually to the agents.
+  to pass individually to the agents. 
 
 * Enter the name of the multiplier variable, without the **$** and parentheses, as the
-  value of the **Multipliers** parameter.
+  value of the **Multipliers** parameter. Note that using a secret variable as a multiplier variable is not supported.
 
 * If you want to execute the job for more than one multiplier variable, enter
   the variable names as a comma-delimited list - omitting the **$** and parentheses

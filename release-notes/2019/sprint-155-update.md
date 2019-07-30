@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 07/22/2019
+ms.date: 07/30/2019
 description: In the **Sprint 155 Update** of Azure DevOps, we are introducing new Azure Boards Analytics reports to make it easier for you to track important team metrics.
 ---
 

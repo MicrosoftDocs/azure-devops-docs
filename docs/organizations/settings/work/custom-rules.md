@@ -33,8 +33,6 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 > [!NOTE]  
 > You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
->
-> Group membership rules are currently in private preview. If you are interested in testing these rules, please [send us an email request](mailto:dahellem@microsoft.com).
 
 ## Rule composition
 
