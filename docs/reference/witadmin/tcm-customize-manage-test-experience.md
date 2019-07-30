@@ -22,6 +22,9 @@ ms.date: 03/20/2018
 > [!IMPORTANT]  
 >**Feature availability**: You can only exercise the tcm commands against an on-premises TFS.  
 
+> [!IMPORTANT]
+> The **tcm** tool is currently unavailable in Visual Studio 2019.
+
 You can customize three of the features that are supported in Microsoft Test Manager using the `tcm fieldmapping` command. This command allows you to change the bug type used to automatically file bugs in Test Manager, and to customize the drop-down menu or pick lists for resolution states and failure types.  
 
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
