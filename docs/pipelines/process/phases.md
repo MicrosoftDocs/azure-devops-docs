@@ -67,12 +67,13 @@ steps:
 You may want to specify additional properties on that job. In that case, you can use the `job` keyword.
 
 ```yaml
-job: myJob
-timeoutInMinutes: 10
-pool:
-  vmImage: 'ubuntu-16.04'
-steps:
-- bash: echo "Hello world"
+jobs:
+- job: myJob
+  timeoutInMinutes: 10
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - bash: echo "Hello world"
 ```
 
 Your pipeline may have multiple jobs. In that case, use the `jobs` keyword.
