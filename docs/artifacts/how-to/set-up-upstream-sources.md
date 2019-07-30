@@ -23,7 +23,7 @@ Navigate to the **Packages** page and select "New Feed".
 
 Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
 
-Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your setting or configuration files. 
+Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
 
 ## Add public upstream sources to an existing feed
 
@@ -50,7 +50,7 @@ Selecting this option now means your feed will be configured to find and use pac
 1. From your feed page, go to **Feed settings** by clicking the gear icon
 2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in another organization_
-4. Enter the **Azure DevOps Services feed locator**, this is just `azure-feed://` follows by the organization name, feed name, and the view that is shared. For example: `azure-feed://myOrg/myFeed@local`
+4. Enter the **Azure DevOps Services feed locator**, this is just `azure-feed://` followed by the organization name, feed name, and the view that is shared. For example: `azure-feed://myOrg/myFeed@local`
 5. Select the package types you want to use and click _Add_.
 
 ## Consuming NuGet packages from upstream sources
