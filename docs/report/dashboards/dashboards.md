@@ -251,10 +251,12 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
   
 ## Related articles
+
 - [Review the widget catalog](widget-catalog.md)
 - [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 
+
 Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
 

@@ -63,7 +63,7 @@ If the task completes successfully, the task's output variable will contain the 
 After running this task with "Add to PATH," the `python` command in subsequent scripts will be for the highest available version of the interpreter matching the version spec and architecture.
 
 The versions of Python installed on the Microsoft-hosted Ubuntu and macOS images follow the symlinking structure for Unix-like systems defined in [PEP 394](https://www.python.org/dev/peps/pep-0394/).
-For example, for Python 3.7, `python37` is the actual interpreter.
+For example, for Python 3.7, `python3.7` is the actual interpreter.
 `python3` is symlinked to that interpreter, and `python` is a symlink to that symlink.
 
 On the Microsoft-hosted Windows images, the interpreter is just `python`.

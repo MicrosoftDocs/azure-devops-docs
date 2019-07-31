@@ -254,9 +254,9 @@ The following table indicates those elements or tasks associated with each type 
 </tr>
 <tr>
 <td>Charts </td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[Velocity](../../report/dashboards/velocity-chart-data-store.md)">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
 <td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
 <td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
 </tr>
