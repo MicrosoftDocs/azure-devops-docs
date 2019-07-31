@@ -143,9 +143,5 @@ This example shows that **Test Plans** has been disabled:
 - [Enable a preview feature](../../project/navigation/preview-features.md)   
 - [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
 
-<!---
 
-
-
---> 
 
