@@ -122,11 +122,38 @@ Updating your Kanban board as work progresses helps keep you and your team in sy
 
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
+::: moniker range="azure-devops"
+
+Choose the **Analytics** tab, and then choose **View full report** for the Cumulative Flow Diagram as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Analytics](_img/quickstart/open-analytics.png)
+
+The Average work in progress value excludes completed work items. 
+
+Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. Hover over a point in time to show how many work items are in a particular state. The default settings for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
+
+For example, On July 3, 101 items were in a Research state.
+
+> [!div class="mx-imgBorder"]  
+> ![Open CFD Analytics](../../report/dashboards/_img/cfd/analytics-cfd-azure-devops.png)
+
+The selections you make are only set for you, and persist across sessions until you change them. 
+
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
+
+Choose the chart as shown in the following image. 
+
 <img src="_img/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+
+::: moniker-end
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
@@ -161,3 +188,11 @@ If you're new to tracking work with Agile tools and want to understand what you 
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end
+
+
+## Related articles
+
+- [Kanban key concepts](kanban-key-concepts.md)
+- [Kanban best practices](best-practices-kanban.md)
+- [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

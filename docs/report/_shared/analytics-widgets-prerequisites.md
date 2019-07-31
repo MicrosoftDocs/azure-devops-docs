@@ -3,9 +3,12 @@ ms.topic: include
 ---
 
 <a id="permissions">  </a>
-## Prerequisites  
+
+
 
 ::: moniker range="azure-devops"
+
+## Prerequisites  
 
 - You must be a member of a project. If you don't have a team project yet, [create one](/azure/devops/organizations/accounts/set-up-vs). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). 
@@ -16,6 +19,8 @@ ms.topic: include
 
 
 ::: moniker range="azure-devops-2019"
+
+## Prerequisites  
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  

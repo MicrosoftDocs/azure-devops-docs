@@ -154,7 +154,7 @@ Velocity provides a useful metric for gaining insight into how much work your te
 
 Velocity is a measure of how much work a team can complete based on their sprint cadence. The built-in velocity chart measures velocity by summing the Story Points (Agile), Effort (Scrum), or Size (CMMI) defined for a sprint. 
 
-For example, in the chart shown below the green bar indicates the total estimated effort (story points) of the user stories completed within each sprint. Blue corresponds to the estimated effort of items not yet completed. Learn more: [View and work with the built-in team velocity chart](../../report/dashboards/velocity-chart-data-store.md). 
+For example, in the chart shown below the green bar indicates the total estimated effort (story points) of the user stories completed within each sprint. Blue corresponds to the estimated effort of items not yet completed. Learn more: [View and work with the built-in team velocity chart](../../report/dashboards/team-velocity.md). 
 
 ![Velocity chart](_img/velocity-chart.png)
 

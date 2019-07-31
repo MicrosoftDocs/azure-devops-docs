@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/22/2019
 ---
 
 # Kanban key concepts
@@ -48,7 +48,7 @@ Card reordering is a configurable setting for a team's Kanban board that either 
 
 ## Cumulative flow diagram (CFD) 
 
-The built-in CFD chart shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md). 
+The in-context CFD report shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow.md). 
 
 ## Cycle time
 
@@ -146,7 +146,8 @@ A WIP limit is a constraint that a team applies to one or more workflow stages t
 <a id="wip" />
 
 ## Work in Process (WIP)
-Work that has been started but isn&#39;t done or completed.  
+
+Work that has been started but isn't done or completed.  
 
 <a id="workflow-states" />
 
@@ -154,12 +155,9 @@ Work that has been started but isn&#39;t done or completed.
 
 Workflow states are defined for each work item type to support tracking the status of a work item, from its creation to it's completion. These states define the workflow process: actions, steps, or stages that a piece of work goes through from inception to completion.  
 
-**Examples of workflow states for the three system processes**
+The State and Reason fields differ depending on the work item type and process selected for the project. 
 
-> [!div class="mx-tdBreakAll"]  
-> |User Story, Agile process  |Product backlog item, Scrum process |Requirement, CMMI process  |  
-> |-------------|----------|---------| 
-> |![User Story workflow states, Agile process](../work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)|![Product backlog item workflow states, Scrum process](../work-items/guidance/_img/ALM_PT_Scrum_WF_PBI.png)|![Requirement workflow states, CMMI process](../work-items/guidance/_img/ALM_PT_CMMI_WF_Requirement.png)|
+[!INCLUDE [temp](../_shared/four-process-workflow.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -176,6 +174,7 @@ You can customize your workflow states, adding states, renaming states, and chan
 <a id="state-category" />
 
 ## Workflow state categories 
+
 State categories determine how the Kanban board treat each workflow state. The state categories used by the backlogs are <em>Proposed</em>, <em>In Progress</em>, <em>Resolved</em>, and <em>Completed</em>. Learn more: <a href="../work-items/workflow-and-state-categories.md" data-raw-source="[Workflow states and state categories](../work-items/workflow-and-state-categories.md)">Workflow states and state categories</a>. 
 
 ## Related articles 

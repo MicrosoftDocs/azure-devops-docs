@@ -347,7 +347,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint.  
 
 - [Sprint burndown](../sprints/sprint-burndown.md)
-- [Velocity](../../report/dashboards/velocity-chart-data-store.md)  
+- [Velocity](../../report/dashboards/team-velocity.md)  
 - [Forecasting](../sprints/forecast.md)    
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
