@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019
+ms.date: 07/22/2019
 ---
 
 # About Sprints, Scrum and project management 
@@ -117,12 +117,12 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ::: moniker-end  
 
+[!INCLUDE [temp](../_shared/velocity-section.md)]
 
 ## Try this next
 
 > [!div class="nextstepaction"]
 > [Schedule sprints](define-sprints.md) 
-
 
 ## Related articles 
 

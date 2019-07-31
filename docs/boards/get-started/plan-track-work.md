@@ -26,6 +26,8 @@ You track your work by creating work items. This article walks you through creat
 
 Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.  
 
+[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+
 #### [Basic process](#tab/basic-process) 
 
 The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
@@ -200,7 +202,7 @@ Choose **Save & Close** when done.
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete an issue. 
 <p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for <strong>Effort</strong> are used to calculate <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity](../../report/dashboards/velocity-chart-data-store.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
+<p>The estimates you set for <strong>Effort</strong> are used to calculate <a href="../../report/dashboards/team-velocity.md">velocity</a> and to <a href="../sprints/forecast.md">forecast sprints</a>.</p>
 </td> 
 </tr>
 </tbody>
@@ -289,7 +291,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete an issue.
 <p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set are used to calculate <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity](../../report/dashboards/velocity-chart-data-store.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
+<p>The estimates you set are used to calculate <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity](../../report/dashboards/team-velocity.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
 </td> 
 </tr>
 </tbody>
