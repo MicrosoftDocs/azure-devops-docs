@@ -10,16 +10,18 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 12/20/2018
 ---
 
-# Index to basic field descriptions 
+# Index to system field descriptions 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Use this index to look up a description of a field used to track an issue, task, or epic. This reference includes all fields defined for the Basic process. If you use another process&mdash;such as Agile, CMMI, or Scrum&mdash;see [Work item field index](work-item-field.md) for additional field definitions.
  
+[!INCLUDE [temp](../../_shared/basic-process-note.md)] 
+
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 
 ## Alphabetical index 
@@ -64,7 +66,6 @@ To support additional tracking needs, you can [define your own custom work item 
 <td width="33%">
 <h3>H-I</h3>
 <ul>
-
 <li><a href="../../queries/history-and-auditing.md" data-raw-source="[History](../../queries/history-and-auditing.md)">History</a> </li>
 <li><a href="../../queries/linking-attachments.md#hyper-link-count" data-raw-source="[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)">Hyperlink Count</a></li>
 <li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[ID](../../queries/titles-ids-descriptions.md)">ID</a> </li>
