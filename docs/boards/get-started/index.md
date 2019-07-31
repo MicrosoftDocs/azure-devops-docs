@@ -37,7 +37,7 @@ If you are tasked with managing Azure Boards settings, review [Manage your Azure
 
 ## Reference 
 
-- [Basic fields reference](../work-items/guidance/basic-field-reference.md)  
+- [System fields reference](../work-items/guidance/basic-field-reference.md)  
 - [Default permissions & access (Security)](permissions-access-boards.md) 
 
 ## Additional resources

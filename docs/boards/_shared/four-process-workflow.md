@@ -1,10 +1,7 @@
 ---
 ms.topic: include
 ---
-
----
-ms.topic: include
----
+ 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -38,3 +35,4 @@ ms.topic: include
 > ![Requirement workflow states, CMMI process](/azure/devops/boards/work-items/guidance/_img/ALM_PT_CMMI_WF_Requirement.png)
 
 * * *
+ 
