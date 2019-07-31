@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 07/17/2019
 ---
 
@@ -34,9 +34,9 @@ This suite of web-based tools is used to track work and support Agile methodolog
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
-## Bug (Agile process)
+## Bug 
 
-A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects.  
+A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects. The Bug work item type is available with the Agile, Scrum, and CMMI processes.
 
 [!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
 
@@ -59,6 +59,8 @@ The Inheritance process model is used to customize work-tracking objects and Agi
 **Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It is defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md)). 
 
 **Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It is defined for the Basic process and appears on the product backlog and [Issues Kanban board](plan-track-work.md). 
+
+[!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
 

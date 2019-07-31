@@ -139,7 +139,7 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
  ```ps
-# Writes a warning to build summary and to log in red text
+# Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 

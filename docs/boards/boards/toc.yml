@@ -2,8 +2,6 @@
   href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About boards & Kanban
   href: kanban-overview.md
-- name: "Backlogs, boards, & plans"
-  href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Quickstarts
   items:
   - name: Kanban board quickstart

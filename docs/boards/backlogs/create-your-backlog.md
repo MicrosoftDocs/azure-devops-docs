@@ -206,7 +206,7 @@ To open each item, double-click or press Enter. Then add all the information you
 <td>
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for <strong>Effort</strong>, <strong>Size</strong>, or <strong>Story Points</strong> are used to calculate <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity](../../report/dashboards/velocity-chart-data-store.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
+<p>The estimates you set for <strong>Effort</strong>, <strong>Size</strong>, or <strong>Story Points</strong> are used to calculate <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity](../../report/dashboards/team-velocity.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
 </td> 
 </tr>
 <tr>

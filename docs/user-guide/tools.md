@@ -80,18 +80,31 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
 - [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
+
+- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
+- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
+- [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in integrates work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
-- [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md): With Project Professional and the Team Foundation Server Extensions for Project Server, you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 < tfs-2017"
+
+- [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md): With Project Professional and the Team Foundation Server Extensions for Project Server, you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 
 ::: moniker-end
 
@@ -128,7 +141,8 @@ You can use the following browsers to access the web portal:
 Version        | Microsoft Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
 ---------------|-------------|-------------------|----------------|-------------|-------------
 Azure DevOps Services  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
-TFS 15         | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+Azure DevOps Server 2019 | most recent | 11 and later | 9.1 and later | most recent | most recent
+TFS 2018        | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
 TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
 
@@ -140,8 +154,8 @@ To learn more, see [Web portal navigation](../project/navigation/index.md).
 
 The following extensions are available and are built and maintained by the Azure DevOps Services product team:
 
-- [Buy Azure Test Plans](../organizations/billing/buy-basic-plus-test-plans.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
-- [Sign up for Azure Artifacts](../artifacts/sign-up-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
+- [Azure Test Plans](../organizations/billing/buy-basic-plus-test-plans.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
+- [Azure Artifacts](../artifacts/sign-up-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
