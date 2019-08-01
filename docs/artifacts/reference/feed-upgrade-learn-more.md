@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.author: phwilson
+author: chasewilson
 ms.date: 5/10/2019
 monikerRange: '>= tfs-2018'
 ---

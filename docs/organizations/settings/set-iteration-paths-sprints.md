@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019
+ms.date: 08/01/2019
 ---
 
 # Define Iteration Paths (aka sprints) and configure team iterations 
@@ -74,7 +74,9 @@ For TFS 2015 and earlier versions, the default iteration is the same as the back
 <a id="open-project-settings" />
 <a id="open-admin-context" />  
 
-## Open Project Settings    
+## Open Project Settings, list project iterations    
+
+#### [Browser](#tab/browser)
 
 From the web portal, open **Project Settings**.
 
@@ -89,10 +91,10 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end
 
-
 ::: moniker range="<= tfs-2018"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
+
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
@@ -115,6 +117,59 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end 
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+<a id="iteration-project-list" />
+
+::: moniker range="azure-devops"  
+
+You can list the iterations defined for a project using [az boards iteration project list](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+```
+az boards iteration project list [--depth]
+                                 [--path]
+                                 [--project]
+```
+
+- **depth**: Depth of child nodes to be listed. Example: --depth 3.
+- **path**: Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, lists iteration paths from the root level. 
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+
+```
+az boards iteration project list --depth 3 --project "Fabrikam Fiber" --output table
+ID     Identifier                            Name            Path                                           Has Children    Start Date            Finish Date
+-----  ------------------------------------  --------------  ---------------------------------------------  --------------  --------------------  --------------------
+55290  d77820e9-6bda-4deb-8052-cc519bc12ecc  Fabrikam Fiber  \Fabrikam Fiber\Iteration                      True
+55292  5938b25d-7235-499e-815f-4fc19d95d24c  Release 1       \Fabrikam Fiber\Iteration\Release 1            True
+55297  c7063041-ff3a-4d7f-bb46-c433c7030d59  Sprint 1        \Fabrikam Fiber\Iteration\Release 1\Sprint 1   False           2019-01-01T00:00:00Z  2019-01-18T00:00:00Z
+55298  dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2        \Fabrikam Fiber\Iteration\Release 1\Sprint 2   False           2019-01-21T00:00:00Z  2019-02-08T00:00:00Z
+55340  862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3        \Fabrikam Fiber\Iteration\Release 1\Sprint 3   False           2019-03-11T00:00:00Z  2019-03-29T00:00:00Z
+55341  8548898e-4dfd-4515-9d6e-d476d90033a3  Sprint 4        \Fabrikam Fiber\Iteration\Release 1\Sprint 4   False
+55342  d130534c-05dc-434b-a7f3-85689d11c36f  Sprint 5        \Fabrikam Fiber\Iteration\Release 1\Sprint 5   False
+55343  738f5c0b-c62b-4ba5-96ab-026e606b0cef  Sprint 6        \Fabrikam Fiber\Iteration\Release 1\Sprint 6   False           2018-07-16T00:00:00Z  2018-08-03T00:00:00Z
+55352  62ec9886-f537-4eaf-b3b9-2e785239174b  Sprint 7        \Fabrikam Fiber\Iteration\Release 1\Sprint 7   False
+55353  607b3754-699a-4eca-ab61-40b8ad72d243  Sprint 8        \Fabrikam Fiber\Iteration\Release 1\Sprint 8   False
+55354  c383d1d3-be7f-49f1-95aa-850e49916a58  Sprint 9        \Fabrikam Fiber\Iteration\Release 1\Sprint 9   False           2018-09-17T00:00:00Z  2018-10-05T00:00:00Z
+55355  f01f2536-7931-498d-b7f9-8a02c3815653  Sprint 10       \Fabrikam Fiber\Iteration\Release 1\Sprint 10  False
+55356  234d1760-7455-41cc-ba7c-0f10e1939c9c  Sprint 11       \Fabrikam Fiber\Iteration\Release 1\Sprint 11  False           2018-10-29T00:00:00Z  2018-11-16T00:00:00Z
+55299  a0554e98-b1f1-4230-8500-733c739a0113  Release 2       \Fabrikam Fiber\Iteration\Release 2            False
+55300  5c3a5d56-f860-4ebc-8838-7701256c88a4  Release 3       \Fabrikam Fiber\Iteration\Release 3            False
+55301  ad722430-042b-4c45-87e5-8d67572d4fc1  Release 4       \Fabrikam Fiber\Iteration\Release 4            False
+55364  8b738736-fef6-49f5-be2a-31c86add6589  Future          \Fabrikam Fiber\Iteration\Future               False
+55410  1ae491d7-c16e-42f6-a2a8-71eeedbad37e  Sprint 35       \Fabrikam Fiber\Iteration\Sprint 35            False           2019-08-01T00:00:00Z  2019-08-31T00:00:00Z
+55411  af3ef6a7-6551-451b-8f9f-63af7a60fc55  Sprint 36       \Fabrikam Fiber\Iteration\Sprint 36            False           2019-09-01T00:00:00Z  2019-09-30T00:00:00Z
+```
+
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+
+* * *
+
 
 <a id="admin-intro-tfs-2015" />
 
@@ -131,7 +186,11 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 
 ## Add iterations and set iteration dates
 
-From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
+You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
+
+#### [Browser](#tab/browser)
+
+From **Iterations**, you can add iterations that teams can then select for their use. 
 
 ::: moniker range=">= tfs-2017"
 
@@ -187,11 +246,66 @@ For Scrum-based projects, you'll see the following set of sprints.
  
 ::: moniker-end
 
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+```
+az boards iteration project create --name
+                                   [--finish-date]
+                                   [--path]
+                                   [--project]
+                                   [--start-date]
+```
+
+- **name**: Enter the name of the iteration path.
+- **finish-date**: Finish date of the iteration. Example: "2019-06-21".
+- **path**: Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber". 
+- **start-date**: Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
+
+For example, the following command adds Sprint 36 which starts on September 1, 2019 and ends September 30, 2019 as an iteration path to the default project at the root node.  
+
+```
+C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --finish-date 2019-09-30
+{
+  "attributes": {
+    "finishDate": "2019-09-30T00:00:00Z",
+    "startDate": "2019-09-01T00:00:00Z"
+  },
+  "children": null,
+  "hasChildren": false,
+  "id": 55411,
+  "identifier": "af3ef6a7-6551-451b-8f9f-63af7a60fc55",
+  "name": "Sprint 36",
+  "path": "\\Fabrikam Fiber\\Iteration\\Sprint 36",
+  "structureType": "iteration",
+  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Iterations/Sprint%2036"
+}
+```
+
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+
+* * *
+
+
+
 <a id="open-team-settings" />
 
-## Open team settings  
+## Open team settings, list team iterations  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
+
+#### [Browser](#tab/browser)
 
 From a web browser, open the web portal administrative context for your team.  
 
@@ -218,6 +332,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker-end
 
+
 ::: moniker range="<= tfs-2018"  
 
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
@@ -228,13 +343,51 @@ You open team settings from the top navigation bar. Select the team you want and
 ::: moniker-end
 
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+```
+az boards iteration team list --team
+                              [--project]
+                              [--timeframe]
+```
+
+- **team**: Name or ID of the project.
+- **project**: Name or ID of the project.
+- **timeframe**: A filter for which iterations are returned based on relative time. Only Current is supported. 
+
+For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+
+```
+C:\WINDOWS\system32>az boards iteration team list  --team "Service Delivery"  --project "Fabrikam Fiber" --output table
+ID                                    Name       Start Date                 Finish Date                Time Frame    Path
+------------------------------------  ---------  -------------------------  -------------------------  ------------  ---------------------------------
+c7063041-ff3a-4d7f-bb46-c433c7030d59  Sprint 1   2019-01-01T00:00:00+00:00  2019-01-18T00:00:00+00:00  past          Fabrikam Fiber\Release 1\Sprint 1
+dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019-02-08T00:00:00+00:00  past          Fabrikam Fiber\Release 1\Sprint 2
+862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3   2019-03-11T00:00:00+00:00  2019-03-29T00:00:00+00:00  current       Fabrikam Fiber\Release 1\Sprint 3
+```
+
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+
 <a id="activate">  </a>
 
-## Select team sprints and default iteration path  
+## Select team sprints and set the default iteration path  
 
 You [define sprints for the project](../../boards/sprints/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
 
 <a id="activate-team-services">  </a>
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -309,6 +462,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
+
 <a id="activate-sprints-tfs">  </a>
 
 ::: moniker range="<= tfs-2015" 
@@ -321,7 +475,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	If your team isn't listed in the navigation row, open the Overview tab, select your team, and then return to the Iterations tab.  
 
-2.	**Default iteration**. Only work items assigned to an iteration equal to or under the default iteration appear in the team's backlogs and boards. Also, the default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. 
+2. **Default iteration**. Only work items assigned to an iteration equal to or under the default iteration appear in the team's backlogs and boards. Also, the default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. 
 	
 	Open the context menu for the iteration path you want.
 
@@ -331,7 +485,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	This path determines which work items appear in your team backlogs and boards, and [the default assigned to](#default_path) work items created from any area under your team's context.  
 
-3.	**Active sprints**. Check each box under the default iteration that you want active for the team.  
+3. **Active sprints**. Check each box under the default iteration that you want active for the team.  
 
 	Here, the Fabrikam Fiber Web team activates Sprints 1 through 7. 
 
@@ -341,16 +495,69 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
+
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/get-started.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).   
+
+```
+az boards iteration team add --id --team
+                             [--project]
+
+az boards iteration team set-default-iteration --team
+                                               [--default-iteration-macro]
+                                               [--id]
+                                               [--project]
+
+az boards iteration team set-backlog-iteration --id --team
+                                               [--project]
+```
+
+
+- **default-iteration-macro**: Default iteration macro, the only valid entry is @CurrentIteration.  
+- **id**: Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#iteration-project-list).  
+- **team**: Name or ID of the team.
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+For example, the following command adds \Fabrikam Fiber\Iteration\Release 2 path to the Service Delivery team for the Fabrikam Fiber project. 
+
+```
+C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "Service Delivery" --project "Fabrikam Fiber"
+{
+  "attributes": {
+    "finishDate": null,
+    "startDate": null,
+    "timeFrame": "future"
+  },
+  "id": "a0554e98-b1f1-4230-8500-733c739a0113",
+  "name": "Release 2",
+  "path": "Fabrikam Fiber\\Release 2",
+  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/43e6bd2e-696f-492c-bbf7-9cde9cd420ea/_apis/work/teamsettings/iterations/a0554e98-b1f1-4230-8500-733c739a0113"
+}
+```
+
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+
 
 <a name="rename-delete"></a>
 
 ## Rename, move, or delete an iteration 
 
 When you rename an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths. 
+
+#### [Browser](#tab/browser)
 
 1. To rename an iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
@@ -369,7 +576,55 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 	> [!NOTE]   
 	> When you delete an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
 
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/ext/azure-devops/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+To rename or move an area path, use the `az boards area project update` command.
+
+```
+az boards iteration project delete --path
+                                   [--project]
+                                   [--yes]
+
+az boards iteration project update --path
+                                   [--child-id]
+                                   [--finish-date]
+                                   [--name]
+                                   [--project]
+                                   [--start-date]
+
+```
+
+- **path**: Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.  
+- **child-id**: Moves an existing iteration path and adds it as a child node for the specified path name or path ID.  
+- **name**: New name of the iteration path.  
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+- **finish-date**: Finish date of the iteration. Example : "2019-06-21".
+- **start-date**: Start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
+- **yes**: Do not prompt for confirmation.
+ 
+
+For example, the following command updates the start and end dates of the Sprint 3 iteration path for the Fabrikam Fiber project. 
+
+```
+C:\WINDOWS\system32>az boards iteration project update --path "\Fabrikam Fiber\Iteration\Release 1\Sprint 3" --finish-date 2019-08-31 --start-date 2019-08-01 --project "Fabrikam Fiber" --output table
+ID     Identifier                            Name      Start Date            Finish Date           Path                                          Has Children
+-----  ------------------------------------  --------  --------------------  --------------------  --------------------------------------------  --------------
+55340  862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3  2019-08-01T00:00:00Z  2019-08-31T00:00:00Z  \Fabrikam Fiber\Iteration\Release 1\Sprint 3  False
+
+C:\WINDOWS\system32>
+```
+
 ::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
 
 ::: moniker range=">= tfs-2017"
 
