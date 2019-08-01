@@ -9,8 +9,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/06/2018
 monikerRange: 'azure-devops'
 ---
@@ -18,9 +18,6 @@ monikerRange: 'azure-devops'
 # Publish and download Universal Packages in Azure Pipelines
 
 **Azure Pipelines**
-
-> [!NOTE]
-> Universal Packages are currently in public preview.
 
 When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 
