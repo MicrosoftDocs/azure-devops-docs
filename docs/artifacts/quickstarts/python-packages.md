@@ -33,6 +33,30 @@ You can change these settings later by [editing the feed](../feeds/edit-feed.md)
 
 ## Connect to your feed
 
+There are two primary ways to connect to a feed to push or pull Python packages:
+1. Install and use the [Python Credential Provider (artifacts-keyring)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you
+2. Set up your `pip.ini`/`pip.conf` for pushes, or your `.pypirc` for pulls, manually with credentials via a PAT
+
+### Option 1: Connect with Python Credential Provider to automate authentication
+
+The Python Credential Provider is a package (artifacts-keyring) that can be installed from the Python Package Index (PyPI). It allows the [pip command](https://pypi.org/project/pip/) (for package pulls) and the [twine command](https://pypi.org/project/twine/) (for package pushes) to authenticate to your feed by sending you through an authentication flow in your web browser. 
+
+**IMPORTANT:** You must have `pip version 19.2` and `twine version 1.13.0` or higher installed to use the Python Credential Provider.
+
+1. From your command-line, install the [artifacts-keyring package](https://github.com/microsoft/artifacts-keyring):
+    
+    `pip install artifacts-keyring`
+
+2. Install or upload packages to your feed:
+    1. Install: `pip install <package_name> --index-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/simple`
+    2. Upload: `twine upload --repository-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/upload <package_wheel_or_other_dist_format>`
+3. Follow the authentication flow in your browser
+
+> **Note:** The Python Credential Provider is designed for manual interaction. If you want to set up authentication in an Azure DevOps pipeline, you will want to use the [Pip Authenticate Task](../../pipelines/tasks/package/pip-authenticate.md) for installing packages or [Twine Authentication Task](../../pipelines/tasks/package/twine-authenticate.md) for pushing.
+
+
+### Option 2: Connect by manually configuring authentication
+
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
    > [!div class="mx-imgBorder"] 
