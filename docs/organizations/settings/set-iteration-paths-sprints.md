@@ -10,13 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019
+ms.date: 08/01/2019
 ---
 
 # Define Iteration Paths (aka sprints) and configure team iterations 
 
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
-
 
 You add Iteration Paths to support teams who implement Scrum or use sprint planning to group work items based on a time-box interval or sprint. You define Iteration Paths at the project level and then each team selects the ones they want to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
@@ -77,7 +76,6 @@ For TFS 2015 and earlier versions, the default iteration is the same as the back
 
 ## Open Project Settings, list project iterations    
 
-
 #### [Browser](#tab/browser)
 
 From the web portal, open **Project Settings**.
@@ -93,10 +91,10 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end
 
-
 ::: moniker range="<= tfs-2018"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
+
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
@@ -119,8 +117,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end 
 
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="iteration-project-list" />
 
@@ -165,9 +162,11 @@ ID     Identifier                            Name            Path               
 55411  af3ef6a7-6551-451b-8f9f-63af7a60fc55  Sprint 36       \Fabrikam Fiber\Iteration\Sprint 36            False           2019-09-01T00:00:00Z  2019-09-30T00:00:00Z
 ```
 
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
 
 * * *
 
@@ -189,7 +188,7 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 
 You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
 
-#### [Browser](#tab/browser) 
+#### [Browser](#tab/browser)
 
 From **Iterations**, you can add iterations that teams can then select for their use. 
 
@@ -249,7 +248,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
@@ -289,9 +288,12 @@ C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --star
 }
 ```
 
+
 ::: moniker-end
 
+
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
 
 * * *
 
@@ -330,6 +332,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker-end
 
+
 ::: moniker range="<= tfs-2018"  
 
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
@@ -340,7 +343,7 @@ You open team settings from the top navigation bar. Select the team you want and
 ::: moniker-end
 
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
@@ -367,13 +370,14 @@ dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019
 862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3   2019-03-11T00:00:00+00:00  2019-03-29T00:00:00+00:00  current       Fabrikam Fiber\Release 1\Sprint 3
 ```
 
+
 ::: moniker-end
 
 
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
 * * *
-* 
+
 
 <a id="activate">  </a>
 
@@ -458,6 +462,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
+
 <a id="activate-sprints-tfs">  </a>
 
 ::: moniker range="<= tfs-2015" 
@@ -470,7 +475,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	If your team isn't listed in the navigation row, open the Overview tab, select your team, and then return to the Iterations tab.  
 
-2.	**Default iteration**. Only work items assigned to an iteration equal to or under the default iteration appear in the team's backlogs and boards. Also, the default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. 
+2. **Default iteration**. Only work items assigned to an iteration equal to or under the default iteration appear in the team's backlogs and boards. Also, the default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. 
 	
 	Open the context menu for the iteration path you want.
 
@@ -480,7 +485,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	This path determines which work items appear in your team backlogs and boards, and [the default assigned to](#default_path) work items created from any area under your team's context.  
 
-3.	**Active sprints**. Check each box under the default iteration that you want active for the team.  
+3. **Active sprints**. Check each box under the default iteration that you want active for the team.  
 
 	Here, the Fabrikam Fiber Web team activates Sprints 1 through 7. 
 
@@ -490,10 +495,11 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
+
 ::: moniker-end
 
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
@@ -535,16 +541,15 @@ C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-73
 }
 ```
 
+
 ::: moniker-end
+
 
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
 * * *
 
 
-
-
-::: moniker range=">= tfs-2017"
 
 <a name="rename-delete"></a>
 
@@ -571,10 +576,8 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 	> [!NOTE]   
 	> When you delete an iteration node, the system automatically updates the existing work items with the node that you enter at the deletion prompt. 
 
-::: moniker-end
 
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range="azure-devops"
 
