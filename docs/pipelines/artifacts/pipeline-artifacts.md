@@ -8,8 +8,8 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.author: phwilson
+author: chasewilson
 ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
