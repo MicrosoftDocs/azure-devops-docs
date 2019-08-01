@@ -59,7 +59,7 @@ running 4 agents apiece.
 <li>In your web browser, sign in to Azure Pipelines, and navigate to the <strong>Agent pools</strong> tab:
 
 <ul>
-<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
+<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}</code></li>
 <li>Azure DevOps Server 2019: <code>https:&#x2F;&#x2F;dev.azure.com/{your_collection}/_settings/agentpools</code></li>
 <li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
 <li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
