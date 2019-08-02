@@ -76,8 +76,8 @@ public class ExecuteQuery
     /// Execute a WIQL query to return a list of bugs using the .NET client library
     /// </summary>
     /// <returns>List of Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
-    public async List<WorkItem> RunGetBugsQueryUsingClientLib()
-    {
+    public async Task<List<WorkItem>> RunGetBugsQueryUsingClientLib()
+    {        
         Uri uri = new Uri(_uri);
         string personalAccessToken = _personalAccessToken;
         string project = _project;
