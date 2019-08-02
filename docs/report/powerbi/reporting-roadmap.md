@@ -27,7 +27,7 @@ The future of reporting for Azure DevOps and Azure DevOps Server is Analytics.
 
 ::: moniker range="azure-devops"
 
-Analytics in available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](index.md) and access to the [OData feed](../extend-analytics/index.md) of Analytics remain in Preview. 
+Analytics is available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](index.md) and access to the [OData feed](../extend-analytics/index.md) of Analytics remain in Preview. 
 
 ::: moniker-end
 
