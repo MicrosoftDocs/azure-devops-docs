@@ -65,7 +65,7 @@ Then, in the next version of the product, you can reuse the existing test cases.
 to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases) to create a new baseline,
 where changes to these new test cases do not affect those referenced in test plans for the previous version of the product.
  
-> For more details of the ways you can work with test plans, test suits, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
+> For more details of the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
