@@ -198,8 +198,8 @@ Type `y` when prompted.
 
 We invite you to learn more about:
 * The services:
-  - [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/)
-  - [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
+  - [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)
+  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [Deploy to existing Kubernetes cluster template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/deploy-to-existing-kubernetes-cluster.yml)
 * Some of the tasks used in your pipeline, and how you can customize them:
   - [Docker task](../tasks/build/docker.md)

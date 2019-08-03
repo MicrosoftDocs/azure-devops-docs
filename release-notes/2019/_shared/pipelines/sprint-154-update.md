@@ -62,19 +62,19 @@ The publish test results task in Azure Pipelines lets you publish test results w
 
 ### Deployments in YAML pipeline
 
-A deployment job is a special type of [job](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#job) that is used to deploy your app to an environment. 
-With this update, we have added support for [step references](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#step-templates) in a deployment job. For example, you can define a set of steps in one file and refer to it in a deployment job. 
+A deployment job is a special type of [job](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#job) that is used to deploy your app to an environment. 
+With this update, we have added support for [step references](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#step-templates) in a deployment job. For example, you can define a set of steps in one file and refer to it in a deployment job. 
 
 We have also added support for additional properties to the deployment job. For example, here are few properties of a deployment job that you can now set,
 - **timeoutInMinutes** - how long to run the job before automatically cancelling
 - **cancelTimeoutInMinutes** - how much time to give 'run always even if cancelled tasks' before terminating them
 - **condition** - run job conditionally
-- **variables** - Hardcoded values can be added directly, or [variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml), 
-[variable group backed by an Azure key vault](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) can be referenced 
-or you can refer to a set of [variables defined in a file](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#variable-templates).
+- **variables** - Hardcoded values can be added directly, or [variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml), 
+[variable group backed by an Azure key vault](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) can be referenced 
+or you can refer to a set of [variables defined in a file](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#variable-templates).
 - **continueOnError** - if future jobs should run even if this deployment job fails; defaults to 'false'
 
-For more details about deployment jobs and the full syntax to specify a deployment job, see [Deployment job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/deployment-jobs?view=azure-devops).
+For more details about deployment jobs and the full syntax to specify a deployment job, see [Deployment job](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops).
 
 ### Optimizely integration
 
@@ -101,7 +101,7 @@ When you click **Add an artifact** in the release pipeline definition, you will 
 
 Previously, you had to go to the Marketplace to pay for additional pipelines. Now you can buy additional pipelines from the Azure DevOps portal. You can increase or decrease the count of Microsoft-hosted or self-hosted CI/CD from **Organization Settings > Billing**. 
 
-To learn more visit the documentation about buying CI/CD [here](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/buy-more-build-vs?view=azure-devops).
+To learn more visit the documentation about buying CI/CD [here](https://docs.microsoft.com/azure/devops/organizations/billing/buy-more-build-vs?view=azure-devops).
 
 ### Approve releases directly from Releases hub
 
