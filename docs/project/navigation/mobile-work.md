@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'
-ms.date: 11/19/2018
+ms.date: 08/02/2019
 ---
 
 #  View and update work items via the mobile browser   
@@ -62,7 +62,8 @@ Within the mobile form, you can do almost everything you can do from the [web po
 *  View and open a link from the Links tab
 *  Open and add an attachment from the Attachments tab
 
-Actions not available to you: 
+Actions not available to you within the mobile work item form: 
+*  You can't create or add new work items
 *  You can't initiate a development operation 
 *  You can't add a link  
 
