@@ -37,7 +37,7 @@ you can [request extensions](request-extensions.md) instead.
 
 ### Q: Why can't I install extensions for Azure DevOps?
 
-A:	You can't install extensions for one of the following reasons.
+A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
 *	You must have [Project Collection Administrator or organization Owner permissions](#find-owner). 
@@ -108,7 +108,7 @@ with [**Edit collection-level information** permissions](../organizations/securi
 
 ### Q: Why don't I see the project collection I want?
 
-A:	You must be a member of your project collection. 
+A: You must be a member of your project collection. 
 Follow these steps to check your identity that you use 
 to sign in to the Marketplace. 
 
