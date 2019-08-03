@@ -81,7 +81,27 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 ## Open your backlog from the web portal
 
-::: moniker range=">= azure-devops-2019"
+
+::: moniker range="azure-devops"
+
+1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+
+    To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Select another team](/azure/devops/boards/sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+
+1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
+
+    > [!div class="mx-imgBorder"]  
+    > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/_img/assign-items-sprint/select-product-backlog-agile-s155.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
