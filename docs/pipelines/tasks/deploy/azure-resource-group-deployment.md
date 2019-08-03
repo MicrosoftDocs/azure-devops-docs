@@ -30,7 +30,7 @@ Use this task in a build or release pipeline to deploy, start, stop, and delete 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Azure subscription</td><td>(Required) Select the Azure Resource Manager subscription for the deployment.</td></tr>
+<tr><td>Azure subscription</td><td>(Required) Select the Azure Resource Manager subscription for the deployment. The value specified for this field needs to be the resourceID for the service connection created for the subscription.</td></tr>
 <tr><td>Action</td><td>(Required) Action to be performed on the Azure resources or resource group.</td></tr>
 <tr><td>Resource group</td><td>(Required) Provide the name of a resource group.</td></tr>
 <tr><td>Location</td><td>(Required) Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored.</td></tr>
