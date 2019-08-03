@@ -1,7 +1,7 @@
 ---
 title: Sprint burndown
 titleSuffix: Azure Boards
-description: Review Scrum progress during and at the end of a sprint when working in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Review Scrum progress during and at the end of a sprint when working in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 3/29/2019
+ms.date: 07/22/2019
 ---
 
 
@@ -19,19 +19,27 @@ ms.date: 3/29/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
+::: moniker range="azure-devops"
 
-::: moniker range=">= azure-devops-2019"
-
-> [!NOTE]  
-> To add the current sprint's chart to a dashboard, add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown). For additional burndown and burnup widgets available through the Analytics service, see [Configure a Burndown or Burnup widget](../..//report/dashboards/configure-burndown-burnup-widgets.md). 
+Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The Analytics in-context sprint burndown report supports tracking a burndown of the number of Tasks or sum of Remaining Work, or other numeric field. If you want to track progress using other work item types, then you can use the [Analytics-based burndown and burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide more configuration options. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="azure-devops-2019"
 
+Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The in-context sprint burndown report supports tracking a burndown of Remaining Work. If you don't track Tasks or Remaining Work, then you can use the [Analytics-based burndown and burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide more configuration options. 
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The in-context sprint burndown report supports tracking a burndown of Remaining Work. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 > [!NOTE]  
-> To add the current sprint's chart to a dashboard, add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown).  
+> You can't add an in-context report to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown) to a dashboard. 
 
 ::: moniker-end
 
@@ -43,18 +51,14 @@ Use this article to learn:
 
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
-
-> [!NOTE]    
-> The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
+The in-context sprint burndown report is based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
 <tr valign="top">
 <td width="35%">
-
 <p>A healthy sprint burndown chart will look something like this. The <em>Ideal Trend</em> line connects the two points: </p>
 -   <strong>(1)</strong> Team&#39;s total capacity at the start of the sprint<br/>-   <strong>(2)</strong> 0 Remaining Work at the end of the sprint.<br/>
 <p>The slope represents the rate at which the team needs to burn down work to finish the sprint on time. </p>
-
 <p>The actual graph, the blue area, represents the total amount of planned sprint work and how it changes throughout the course of the sprint. The blue area corresponds to the sum of all Remaining Work set for all sprint tasks, and possibly bugs, that have the current sprint as their iteration path.  </p>
 </td>
 <td>
@@ -63,12 +67,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 </tr>
 </table>
 
-
-
 <a id="open-chart">  </a>
-
-
-
 
 ## Open the Sprint backlog for your team 
 
@@ -118,12 +117,53 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 ::: moniker-end
 
 
-## Open the sprint burndown chart 
+## View the sprint burndown in-context report   
+
+::: moniker range="azure-devops"
+
+To open the Sprint burndown report, choose **Analytics**. 
+
+Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. 
+
+Hover over a column area to show a summary. 
+
+#### [Sum of Remaining Work](#tab/remaining-work)
+
+When you choose to view the **Sum of Remaining Work**, the blue bars show the sum of Remaining Work per day for those tasks which are still active or in progress. As the Remaining Work is updated, the chart indicates the average rate of burndown. Projected lines indicate expected capacity for the team and scope increase.  
+
+> [!div class="mx-imgBorder"]  
+> ![Burndown trend based on Remaining Work](_img/burndown/analytics-burndown-remaining-work.png)
+
+
+
+#### [Count of Work Items ](#tab/work-items)
+
+When you choose to view the **Count of Work Items**, the blue bars show the count of tasks which are still active or in progress. As tasks are completed, trend lines indicate the average rate of burndown as well of scope increase when new tasks are added. When capacity is set for the team, the burndown trend for capacity is also shown. 
+
+> [!div class="mx-imgBorder"]  
+> ![Burndown trend based on Tasks](_img/burndown/analytics-burndown-trend-azure-devops.png)
+
+
+* * *
+
+> [!NOTE]  
+> The options for the sum fields depend on the numeric fields defined for task and requirement category work item types. The most common fields used to show the burndown trend are: 
+> - Count of work items (Tasks)
+> - [Remaining Work](../queries/query-numeric.md) 
+>
+> If you don't track work using Tasks, you can use the [Burndown widget to track sprint burndown](../../report/dashboards/configure-burndown-burnup-widgets.md) based on a count of other types of work items. 
+
+The selections you make are only set for you, and persist across sessions until you change them. 
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 Choose the chart to display it in a larger view. 
 
+::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/open-burndown-chart-agile.png)
 
@@ -140,11 +180,7 @@ Choose the chart to display it in a larger view.
 ::: moniker-end
 
 
-> [!NOTE]    
-> You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
-
-
-In particular you can review your sprint burndown charts to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
+You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
 
 | Sprint 1   |  Sprint 2  | Sprint 3 | 
 |------------|------------|----------| 
@@ -161,11 +197,13 @@ Teams may find it useful to review this record periodically during their sprint 
 In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
 
 ### Required activities: 
+
 *   [Schedule sprints for your team](define-sprints.md).  
 *   [Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *   [Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
 
 ### Recommended activities:
+
 *   Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
 *   Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
 *   Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
@@ -173,7 +211,9 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 
 
 <a id="empty-chart">  </a>
+
 ### Empty sprint burndown chart 
+
 If your sprint burndown chart appears empty, check the following:
 - Have you assigned tasks to the sprint associated with the chart?
 - Have you assigned remaining work to the tasks assigned to the sprint? 
@@ -181,11 +221,15 @@ If your sprint burndown chart appears empty, check the following:
 
 
 <a id="past-sprints">  </a>
+
 ## Current and past sprint burndown charts
+
 As you complete each sprint, the system maintains a history of your activity. 
 
 ::: moniker range=">= azure-devops-2019"
+
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
+
 > [!div class="mx-imgBorder"]  
 > ![Select a past sprint from the sprint selector](_img/burndown/select-past-sprint.png) 
 
@@ -198,17 +242,21 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 
 > [!div class="mx-imgBorder"]  
 > ![Past sprints provide historical record](_img/burndown/past-sprints.png) 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
 ![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
+
 ::: moniker-end
 
 ## Try this next
+
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
-You can use your team [velocity](../../report/dashboards/velocity-chart-data-store.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
+You can use your team [velocity](../../report/dashboards/team-velocity.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
 
 
 ## Related articles
@@ -222,14 +270,14 @@ And, from these industry resources:
 *   [Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
 *   [Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
-<!---
-TBD - Other types of burndown charts, Release burndown 
--->
-
 ::: moniker range="<= azure-devops-2019"
 
 For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 
 ::: moniker-end
 
+
+<!---
+TBD - Other types of burndown charts, Release burndown 
+-->
 

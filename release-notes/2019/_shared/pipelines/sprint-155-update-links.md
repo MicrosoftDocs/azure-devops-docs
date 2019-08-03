@@ -11,6 +11,7 @@ ms.topic: include
 - [Show correct pool information on each job](#show-correct-pool-information-on-each-job)
 - [Link work items with multi-stage YAML pipelines](#link-work-items-with-multi-stage-yaml-pipelines)
 - [CI triggers for new branches](#ci-triggers-for-new-branches)
+- [Pipeline caching (public preview)](#pipeline-caching-public-preview)
 
 #### Hosted VMs
 

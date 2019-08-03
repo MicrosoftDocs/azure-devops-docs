@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 06/14/2019
+ms.date: 08/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -58,11 +58,11 @@ None
 <td><p>Specify <a href="http://man7.org/linux/man-pages/man3/fnmatch.3.html">fnmatch pattern filters</a> (one per line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
-<li><code><em></code> copies all files in the specified source folder.</li>
-<li><code></em><em>*</code> copies all files in the specified source folder and all files in all sub-folders.</li>
-<li><code></em>*\bin*<em></code> copies all files recursively from any <code>bin</code> folder.</li>
+<li><code>*</code> copies all files in the specified source folder.</li>
+<li><code>**</code> copies all files in the specified source folder and all files in all sub-folders.</li>
+<li><code>**\bin\**</code> copies all files recursively from any <code>bin</code> folder.</li>
 </ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as <code></em>*\bin*<em></code> instead of <code></em>*\bin</code>.</p>
+<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as <code>**\bin\**</code> instead of <code>**\bin</code>.</p>
 <p>You must use the path separator that matches your build agent type, e.g. <code>/</code> must be used for Linux agents.
 <p>More examples are shown below.</p>
 </td>

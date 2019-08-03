@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/17/2019
+ms.date: 07/24/2019
 ---
 
 
@@ -37,7 +37,7 @@ If you are tasked with managing Azure Boards settings, review [Manage your Azure
 
 ## Reference 
 
-- [Basic fields reference](../work-items/guidance/basic-field-reference.md)  
+- [System fields reference](../work-items/guidance/basic-field-reference.md)  
 - [Default permissions & access (Security)](permissions-access-boards.md) 
 
 ## Additional resources

@@ -126,7 +126,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <a href="/azure/devops/pipelines/build/ci-build-git">Build multiple branches</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/get-started-multiplatform">Set up a multi-stage release</a>
+                            <a href="/azure/devops/pipelines/release/define-multistage-release-process">Set up a multi-stage release</a>
                         </p>
                     </div>
                 </div>

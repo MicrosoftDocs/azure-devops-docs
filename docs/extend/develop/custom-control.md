@@ -16,7 +16,7 @@ ms.date: 10/10/2017
 
 > This is only available on Azure DevOps Services and TFS 2017 or later.
 
-Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  In this article, you learn how to build your own custom control.
+Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  In this article, learn how to build your own custom control.
 
 <img alt="custom control in work item form" src="./_img/customcontrol.png" style="width: 600px;"/>
 

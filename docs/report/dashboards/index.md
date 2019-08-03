@@ -1,5 +1,5 @@
 ---
-title: Dashboards, charts, reports, & widgets
+title: Dashboards, reports, & widgets
 titleSuffix: Azure DevOps
 description: Learn about working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
 ms.custom: dashboards
@@ -14,7 +14,7 @@ monikerRange: ">= tfs-2013"
 ms.date: 04/05/2019
 ---
 
-# Dashboards, Charts, Reports, & Widgets
+# Dashboards, Reports, & Widgets
  
 [!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
 
@@ -284,7 +284,7 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Configure the Velocity widget](team-velocity.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
-- [View the built-in velocity chart](velocity-chart-data-store.md)
+- [View the built-in velocity chart](team-velocity.md)
 - [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 
 ::: moniker-end
@@ -292,7 +292,7 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 ::: moniker range="<= tfs-2018" 
 
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
-- [View the built-in velocity chart](velocity-chart-data-store.md)
+- [View the built-in velocity chart](team-velocity.md)
 - [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 
 ::: moniker-end

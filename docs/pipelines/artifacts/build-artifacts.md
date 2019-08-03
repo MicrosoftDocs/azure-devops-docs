@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 > [!NOTE]
-> We recommend upgrading from build artifacts to [pipeline artifacts (preview)](pipeline-artifacts.md) for faster output storage speeds. 
+> We recommend upgrading from build artifacts to [pipeline artifacts](pipeline-artifacts.md) for faster output storage speeds. 
 
 Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
 

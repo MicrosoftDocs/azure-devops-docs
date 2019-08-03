@@ -86,7 +86,7 @@ For code wikis, you can edit wiki pages in Repos hub also by using the option **
 > ![Create wiki and first page](_img/wiki/edit-in-repos.png)
 
 > [!NOTE]  
-> If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and contine editing.
+> If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and continue editing.
 
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
 

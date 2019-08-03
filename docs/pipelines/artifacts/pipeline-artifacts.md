@@ -8,19 +8,15 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.author: phwilson
+author: chasewilson
 ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline artifacts in Azure Pipelines (preview)
+# Pipeline artifacts in Azure Pipelines
 
 **Azure Pipelines**
-
-> [!NOTE]
-> Pipeline artifacts are the next generation of build artifacts in Azure Pipelines and are the recommended way to work with artifacts.
-> For the current artifacts, see [Build artifacts](build-artifacts.md).
 
 Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that need to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
 
