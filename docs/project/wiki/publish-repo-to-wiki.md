@@ -225,7 +225,7 @@ Each **.order** file defines the sequence of pages contained within a folder. Th
 
 You can add a **.order** file in the same way as you add any file from the **Code>Files** page. Name the file *.order*.
 
-Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name with dashes replaced with a space and without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
+Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name but without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
 
 For example:  
 

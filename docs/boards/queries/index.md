@@ -7,13 +7,14 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 07/25/2019
 ---
 
-# Queries
+# Queries  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -30,7 +31,7 @@ If you're just starting out, [Query index quick reference](query-index-quick-ref
 ## Overview  
 * [Ad hoc vs managed queries](adhoc-vs-managed-queries.md) 
 
--->
+-->  
  
 ## 5-Minute Quickstarts  
 

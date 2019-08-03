@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
 ms.manager: elbatk
-ms.date: 01/16/2019
+ms.date: 07/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -38,6 +38,10 @@ Continuous integration &#40;CI&#41; is the practice used by development teams to
 ## Environment
 
 An environment is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
+
+## Checks
+
+[Checks](../process/checks.md) define a set of validations required before a deployment can be performed. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
 
 ## Job
 

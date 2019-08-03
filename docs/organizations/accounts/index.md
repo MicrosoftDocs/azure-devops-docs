@@ -58,7 +58,7 @@ Sign up for an organization, add users, and manage permissions and access.
 * Manage access to your organization
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)
-    * [Manage conditional access](manage-conditional-access.md)
+    * [Manage Conditional Access](manage-conditional-access.md)
     * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
     * [Authenticate with personal access tokens](use-personal-access-tokens-to-authenticate.md)
     * [Revoke user PATs - for admins](admin-revoke-user-pats.md)

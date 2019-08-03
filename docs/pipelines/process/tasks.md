@@ -9,7 +9,7 @@ ms.technology: devops-cicd
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 11/28/2018
+ms.date: 07/30/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -48,7 +48,7 @@ name for the custom task to avoid this risk:
 
 ```yaml
 steps:
-- task: myPublisherId.myExtensionId.myTaskName@1
+- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1
 ```
 
 ::: moniker-end

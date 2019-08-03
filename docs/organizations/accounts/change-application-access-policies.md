@@ -61,4 +61,4 @@ To continue, you'll need at least Basic access and organization owner permission
 
 - [Need help?](faq-change-app-access.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
-- [Manage conditional access](manage-conditional-access.md)
+- [Manage Conditional Access](manage-conditional-access.md)

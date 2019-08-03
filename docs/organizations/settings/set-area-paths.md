@@ -10,12 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 08/01/2019
 ---
 
 # Define area paths and assign to a team
 
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+
 
 You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.
 
@@ -78,7 +79,9 @@ As needed, you can do the following actions at any time:
 
 <a id="open-admin-context" /><br/><a id="admin-intro-team-services" />
 
-## Open Project Settings
+## Open Project Settings, list project areas
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -127,13 +130,60 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end
 
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+You can list the area paths defined for a project using [az boards area project list](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+```
+az boards area project list [--depth]
+                            [--path]
+                            [--project]
+```
+
+- **depth**: Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
+
+- **path**: Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level. 
+
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".   
+
+For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+
+```
+C:\WINDOWS\system32>az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
+ID     Identifier                            Name                Path                                                Has Children
+-----  ------------------------------------  ------------------  --------------------------------------------------  --------------
+55302  91d8644a-e430-4fd0-aa95-742ea98770a3  Fabrikam Fiber      \Fabrikam Fiber\Area                                True
+55373  26be05fd-e68a-4fcb-833f-497f6bee45f2  Service Delivery    \Fabrikam Fiber\Area\Service Delivery               True
+55303  637dc203-0549-4415-9663-b6358ac27d21  Internet            \Fabrikam Fiber\Area\Service Delivery\Internet      False
+55306  3f2067f9-684f-4121-8004-4a4745198b39  Voice               \Fabrikam Fiber\Area\Service Delivery\Voice         False
+55372  4afc9ede-db1d-4703-8be6-95899b99be44  Email               \Fabrikam Fiber\Area\Service Delivery\Email         False
+55381  f96d4738-c67e-42d0-bd4e-99f6b3fdeb22  Service Status      \Fabrikam Fiber\Area\Service Delivery\Service S...  False
+55384  3a0c1189-6454-4ccd-9354-d72b653b7f74  TV                  \Fabrikam Fiber\Area\Service Delivery\TV            False
+55380  4ea27e90-248c-41a0-8d11-eace6c9fd90e  Account Management  \Fabrikam Fiber\Area\Account Management             True
+55382  4235f40d-753b-49dd-868f-82372065ec83  Shopping Cart       \Fabrikam Fiber\Area\Account Management\Shoppin...  False
+55383  49d34650-6c65-446c-aff6-79edd3a21a75  Customer Profile    \Fabrikam Fiber\Area\Account Management\Custome...  False
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+
 <a id="add-areas" /><br/>
 <a id="add-areas-team-services" />
 <a id="tfs-15-area-paths" />
 
 ## Add an area path 
 
+#### [Browser](#tab/browser) 
+
 If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
+
 ::: moniker range=">= tfs-2018"  
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
@@ -176,11 +226,61 @@ If you haven't added any areas or teams, you'll see that only one area is define
 ::: moniker-end
 
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+```
+az boards area project create --name
+                              [--path]
+                              [--project]
+```
+
+- **name**: Area path name. 
+- **path**: Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+For example, the following command adds the Voice area path to the Fabrikam Fiber project at the root node.  
+
+```
+C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber"
+{
+  "attributes": null,
+  "children": null,
+  "hasChildren": false,
+  "id": 55412,
+  "identifier": "b00f86a2-3d49-4ad2-af01-da2537947baa",
+  "name": "Voice",
+  "path": "\\Fabrikam Fiber\\Area\\Voice",
+  "structureType": "area",
+  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Areas/Voice"
+}
+```
+
+And, here is the same command with the table output format. 
+
+```
+C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber" --output table
+ID     Identifier                            Name    Path                         Has Children
+-----  ------------------------------------  ------  ---------------------------  --------------
+55413  3c16691b-160c-4498-ab42-aa77b7f354fc  Voice  \Fabrikam Fiber\Area\Voice  False
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
 <a id="open-team-settings" />
 
-## Open team settings  
+## Open team settings, list team area paths  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
+
+#### [Browser](#tab/browser)
 
 From a web browser, open the web portal administrative context for your team.  
 
@@ -216,10 +316,40 @@ You open team settings from the top navigation bar. Select the team you want and
 
 ::: moniker-end
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+
+```
+az boards area team list --team
+                         [--project] 
+```
+
+- **team**: Name or ID of the team.
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
+
+```
+C:\WINDOWS\system32>az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
+Area                             Include sub areas    Is Default
+-------------------------------  -------------------  ------------
+Fabrikam Fiber\Service Delivery  True                 True
+```
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
 <a id="default-iteration">  </a>
 <a id="team-area-paths">  </a>
 
-## Set team default area path(s)
+## Set team area path(s)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -237,6 +367,8 @@ The default area path determines the default area path assigned to work items th
 
 > [!IMPORTANT]  
 > Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -278,11 +410,50 @@ The default area path determines the default area path assigned to work items th
 ::: moniker-end  
 
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+```
+az boards area team add --path  --team
+                        [--include-sub-areas {false, true}]
+                        [--project]
+                        [--set-as-default]
+```
+
+- **path**: Absolute path of an area. Example: --path \ProjectName\Area\AreaName. 
+- **team**: Name or ID of the team.
+- **include-sub-areas**: Include child nodes of the area path. Accepted values: false, true. 
+- **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".  
+- **set-as-default**: Specify as the default area path for the team. Default: False.
+
+For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
+
+```
+C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+Area                                   Include sub areas    Is Default
+-------------------------------------  -------------------  ------------
+Fabrikam Fiber\Service Delivery\Voice  False                False
+Fabrikam Fiber\Voice                   True                 True
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+
 <a name="rename-delete"></a>
 
 ## Rename, move, or delete an area path
 
 When you rename an area or an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths.  
+
+
+#### [Browser](#tab/browser)
 
 1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
@@ -304,6 +475,61 @@ When you rename an area or an iteration, or move the node within the tree hierar
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
 
 ::: moniker-end
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
+
+You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+1. To rename or move an area path, use the `az boards area project update` command.
+
+    ```
+    az boards area project update --path
+                              [--child-id]
+                              [--name]
+                              [--project]
+    ```
+
+   - **path**: Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
+   - **child-id**: Moves an existing area path and adds it as a child node for the specified path name or ID.  
+   - **name**: Specifies the new name of the area path.  
+   - **project**: Name or ID of the project. Example: --project "Fabrikam Fiber".   
+
+    For example, the following command renames the Voice area path to Voice and Web for the Fabrikam Fiber project. 
+
+    ```
+    C:\WINDOWS\system32>az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
+    ID     Identifier                            Name           Path                                Has Children
+    -----  ------------------------------------  -------------  ----------------------------------  --------------
+    55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
+    ```
+
+1. To delete an area path from a team, use [az boards area team remove](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-remove).
+
+    ```
+    az boards area team remove --path
+                               --team
+                               [--project]
+    ```
+
+   - **path**: Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
+   - **team**: Name or ID of the team.
+   - **project**: Name or ID of the project. Example: --project "Fabrikam Fiber". 
+
+    For example, the following command removes the \Service Delivery\Voice area path from the Voice team of the Fabrikam Fiber project. 
+
+    ```
+    az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" --team Voice --project "Fabrikam Fiber" --output table
+    ```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
 
 ## Chart progress by area
 

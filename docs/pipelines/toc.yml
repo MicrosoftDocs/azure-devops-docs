@@ -234,7 +234,7 @@
     items:
     - name: Overview
       href: artifacts/artifacts-overview.md
-    - name: Pipeline artifacts (preview)
+    - name: Pipeline artifacts
       href: artifacts/pipeline-artifacts.md
     - name: Build artifacts
       href: artifacts/build-artifacts.md
@@ -252,13 +252,15 @@
       href: artifacts/universal-packages.md
   - name: Caching (preview)
     href: caching/index.md
+  - name: Checks
+    href: process/checks.md
   - name: Conditions
     href: process/conditions.md
+  - name: Container jobs
+    href: process/container-phases.md
   - name: Demands
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
-  - name: Container jobs
-    href: process/container-phases.md
   - name: Deployment jobs
     href: process/deployment-jobs.md
   - name: Environments
