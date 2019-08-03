@@ -1539,7 +1539,17 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
         <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
         <blockquote>
         All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
-        <blockquote></td>
+                <p>
+                    Although the <strong>Create tag definition</strong> permission appears
+                    in the security settings at the project-level,
+                    tagging permissions are actually collection level permissions that are scoped
+                    at the project level when they appear in the user interface.
+                    To scope tagging permissions to a single project when using the TFSSecurity command,
+                    you must provide the GUID for the project as part of the command syntax.
+                    Otherwise, your change will apply to the entire collection.
+                    Keep this in mind when changing or setting these permissions.
+                </p>
+            </blockquote></td>
     </tr>
     <tr>
         <td id="create-test-runs-permission">Create test runs</td>
@@ -2509,16 +2519,15 @@ You manage tagging permissions mostly from the <a href="/azure/devops/server/com
     <tr>
         <td id="create-tag-definition-permission">Create tag definition</td>
         <td>
-            Can create new tags and apply them to work items.
+            <a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">.Can create new tags and apply them to work items.</a>
             Users without this permission can only select from the existing set of tags for the project.
             <blockquote>
                 <p>
-                    Readers and Contributors inherit the <strong>Create tag definition</strong> permission
-                    as it is set explicitly to Allow for the Project Valid Users group.
+                    By default, Contributors are assinged the <strong>Create tag definition</strong> permission.
                 </p>
                 <p>
                     Although the <strong>Create tag definition</strong> permission appears
-                    in the security settings at the project level,
+                    in the security settings at the project-level,
                     tagging permissions are actually collection level permissions that are scoped
                     at the project level when they appear in the user interface.
                     To scope tagging permissions to a single project when using the TFSSecurity command,
