@@ -30,7 +30,7 @@ Project-scope queries help answer questions about a single project whereas organ
 ::: moniker range="azure-devops"
 
 - You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 
