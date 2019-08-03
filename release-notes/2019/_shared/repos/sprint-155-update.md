@@ -22,7 +22,7 @@ Coverage status will appear as a comment in the PR overview. You can view detail
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_16.png)
 
-Additionally, repo owners can now set code coverage policies and prevent large, untested changes from being merged into a branch. Desired coverage thresholds can be defined in an `azurepipelines-coverage.yml` settings file that is checked in at the root of the repo and coverage policy can be defined using the existing [configure a branch policy for additional services](https://docs.microsoft.com/en-us/azure/devops/repos/git/pr-status-policy?view=azure-devops) capability in Azure Repos.
+Additionally, repo owners can now set code coverage policies and prevent large, untested changes from being merged into a branch. Desired coverage thresholds can be defined in an `azurepipelines-coverage.yml` settings file that is checked in at the root of the repo and coverage policy can be defined using the existing [configure a branch policy for additional services](https://docs.microsoft.com/azure/devops/repos/git/pr-status-policy?view=azure-devops) capability in Azure Repos.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_17.png)

@@ -45,7 +45,7 @@ In addition, you can navigate to code and wiki search results without having to 
 
 ### Change the process used by a project
 
-Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](https://docs.microsoft.com/en-us/azure/devops/organizations/settings/work/manage-process?view=azure-devops#change-the-process-used-by-a-project). 
+Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](https://docs.microsoft.com/azure/devops/organizations/settings/work/manage-process?view=azure-devops#change-the-process-used-by-a-project). 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/154_28.png "Change the process used by a project")

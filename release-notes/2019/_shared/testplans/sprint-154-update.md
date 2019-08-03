@@ -19,4 +19,4 @@ The Test Plans* page will have most of the capabilities from the existing page i
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/154_24.png "New Test Plans page features")
 
-To learn more about the new page see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/test/new-test-plans-page?view=azure-devops).
+To learn more about the new page see the documentation [here](https://docs.microsoft.com/azure/devops/test/new-test-plans-page?view=azure-devops).

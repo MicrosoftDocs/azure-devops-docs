@@ -17,4 +17,4 @@ This capability must be enabled for existing organizations via a setting under *
 > [!NOTE]
 > This feature is not available for non-GitHub users, even if the policy is turned on.
 
-To learn more about inviting team members, see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#invite-team-members). If you are having issues connecting to Azure DevOps using GitHub, see the [troubleshooting authenticating & inviting GitHub users FAQs](https://docs.microsoft.com/en-us/azure/devops/organizations/security/faq-github-authentication?view=azure-devops).
+To learn more about inviting team members, see the documentation [here](https://docs.microsoft.com/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#invite-team-members). If you are having issues connecting to Azure DevOps using GitHub, see the [troubleshooting authenticating & inviting GitHub users FAQs](https://docs.microsoft.com/azure/devops/organizations/security/faq-github-authentication?view=azure-devops).
