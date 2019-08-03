@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 08/01/2019
 ---
 
 
@@ -51,6 +51,30 @@ Use this article to learn:
 
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
+
+
+::: moniker range="azure-devops"
+
+The in-context sprint burndown report is based on either a count of tasks or Remaining Work estimates, or other numeric field that you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
+
+<table>
+<tr valign="top">
+<td width="35%">
+<p>A healthy sprint burndown chart will look something like the image shown on the right. Typically, there will be a stair-case burndown as individual team members may only update their work items once a week or every few days. 
+The <strong>Total Scope</strong> line indicates the number of work items added after the sprint starts. The <strong>Projected Completion Date</strong> is calculated by considering the average burndown and total scope of tasks added to the sprint.</p>
+<p>Each blue bar indicates the number of tasks active or in progress each day of the sprint. While at the end of the sprint, the blue bar indicates 4 tasks are still active, since that day those tasks have been reassigned to another sprint, so the Remaining tasks is 0. </p>
+</td>
+<td>
+<img src="_img/burndown/analytics-burndown-trend-agile-past-may.png" alt="Healthy sprint burndown chart"/>
+</td>
+</tr>
+</table>
+
+::: moniker-end
+ 
+
+::: moniker range="< azure-devops"
+
 The in-context sprint burndown report is based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
@@ -67,11 +91,35 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 </tr>
 </table>
 
+::: moniker-end
+
 <a id="open-chart">  </a>
 
 ## Open the Sprint backlog for your team 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Open Work, Sprints, for a team](_img/add-tasks/open-sprint-backlog-s155-co.png)
+
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -123,9 +171,9 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 To open the Sprint burndown report, choose **Analytics**. 
 
-Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. 
+Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
-Hover over a column area to show a summary. 
+If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over a column area to show a summary. 
 
 #### [Sum of Remaining Work](#tab/remaining-work)
 
@@ -182,10 +230,25 @@ Choose the chart to display it in a larger view.
 
 You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
 
+::: moniker range="azure-devops"
+
+| May   |  June  | July | 
+|------------|------------|----------| 
+|![May burndown](_img/burndown/analytics-burndown-trend-agile-past-may.png) |![June burndown](_img/burndown/analytics-burndown-trend-agile-past-june.png)  |![July burndown](_img/burndown/analytics-burndown-trend-agile-past-july.png) |
+
+
+::: moniker-end
+
+::: moniker range="<azure-devops"
+
 | Sprint 1   |  Sprint 2  | Sprint 3 | 
 |------------|------------|----------| 
 |![Sprint 1](_img/ALM_SB_Chart_S1_225.png) |![Sprint 2](_img/ALM_SB_Chart_S2_225.png)  |![Sprint 3](_img/ALM_SB_Chart_S3_225.png) |
 
+
+::: moniker-end
+
+ 
 Teams may find it useful to review this record periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
 *   How does our projected velocity match up to our actual velocity? 
 *   How can we more accurately determine how much we will be able to accomplish in a sprint? 
@@ -261,10 +324,23 @@ You can use your team [velocity](../../report/dashboards/team-velocity.md) as in
 
 ## Related articles
 
-You can learn more about defining, planning, and executing your sprints from these topics:  
+You can learn more about defining, planning, and executing your sprints from these topics: 
+
+::: moniker range="<azure-devops"
 *   [Schedule sprints](define-sprints.md)  
 *   [Sprint planning](assign-work-sprint.md)  
-*   [taskboard](task-board.md)  
+*   [Update and monitor your Taskboard](task-board.md)  
+
+::: moniker-end
+
+
+::: moniker range="<azure-devops"
+*   [Schedule sprints](define-sprints.md)  
+*   [Sprint planning](assign-work-sprint.md)  
+*   [Update and monitor your Taskboard](task-board.md)  
+
+::: moniker-end
+
 
 And, from these industry resources:  
 *   [Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  

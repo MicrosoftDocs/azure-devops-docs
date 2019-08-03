@@ -1041,6 +1041,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/accounts/add-organization-users-from-user-hub.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/test/test-redirect-2.md",
       "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false

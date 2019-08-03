@@ -16,10 +16,7 @@ ms.date: 04/18/2019
 
 [!INCLUDE [version-header](../../_shared/version-vsts-only.md)]
 
-Package Search is available as a built-in extension in Azure DevOps. 
-Users can use Package Search by default when Artifacts service is installed and enabled in Azure DevOps Services.
-
-By using Package Search you can:
+Package Search is automatically available to users of Azure DevOps Services. By using Package Search you can:
 
 * **Search package by title and description**: You can quickly and easily find relevant packages by using 
 free text search on title and description. 
@@ -37,6 +34,7 @@ You can also narrow your search by using Boolean operators and combine search cr
 > [Web portal package search across organization feeds](_img/_shared/pkg-srch-u1.png)
 
 <a name="syntaxdetails"></a>
+
 ## Syntax for simple and compound searches
 
 Use simple search strings for words or phrases. The default is a whole word search; 
