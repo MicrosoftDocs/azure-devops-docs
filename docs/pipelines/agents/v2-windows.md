@@ -135,6 +135,10 @@ When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`
 ::: moniker range="azure-devops"
 When setup asks for your authentication type, choose **PAT**.
 Then paste the [PAT token you created](#permissions) into the command prompt window.
+
+> [!NOTE]
+> When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
@@ -153,7 +157,9 @@ When you configure your agent to connect to TFS, you've got the following option
 * **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent. 
+
+Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
 
 ::: moniker-end
 
