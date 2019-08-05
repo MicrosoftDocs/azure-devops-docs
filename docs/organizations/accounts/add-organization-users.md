@@ -48,7 +48,8 @@ link to the organization page.
  > user to Azure DevOps.
 
 
-#### [Portal](#tab/portal/)
+#### [Browser](#tab/browser)
+
 To give other users access to your organization, add their email addresses.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -92,6 +93,7 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 -->
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
 You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an organization.
 
 1. Add user to an organization
@@ -112,9 +114,10 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
     az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
     ```
 
-    You can see all security groups in a project using the [az devops security group list](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest#ext-azure-devops-az-devops-security-group-list) command.
+    You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 * * *
+
 ## Related articles
 
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)

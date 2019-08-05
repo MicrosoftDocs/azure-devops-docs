@@ -25,6 +25,9 @@ This is the comprehensive list of predefined variables.
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
 Learn more about [working with variables](../process/variables.md).
 
+> [!NOTE]
+> You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
+
 ## Build.Clean 
 
 ::: moniker range="> tfs-2017"

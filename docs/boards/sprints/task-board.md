@@ -51,7 +51,32 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Open the sprint Taskboard for your team
 
-::: moniker range=">= azure-devops-2019"
+
+
+
+::: moniker range="azure-devops"
+
+1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+
+	> [!div class="mx-imgBorder"]
+	> ![Open the sprint Taskboard for a team](_img/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
+
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]
+	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)
+
+1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
+
+	> [!div class="mx-imgBorder"]
+	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
 
 1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
