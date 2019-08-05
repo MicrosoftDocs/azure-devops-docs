@@ -16,7 +16,7 @@ First, get the tools and your feed URL:
 > [!NOTE]
 >
 > * The NuGet client's push command requires an API key. You can use any non-empty string you want. In this example, we used `key`.
-> * If you're prompted for credentials on the command line, ensure that the downloaded credential provider is in the same folder as NuGet.exe. For more help in using credential providers with NuGet, see [Authenticating feeds with nuget.exe credential providers](https://docs.microsoft.com/nuget/reference/extensibility/nuget-exe-credential-providers). For Azure DevOps, use a persoanl access token when prompt for credentials, see [Authenticate access with personal access tokens](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts).
+> * If you're prompted for credentials on the command line, ensure that the downloaded credential provider is in the same folder as NuGet.exe. For more help in using credential providers with NuGet, see [Authenticating feeds with nuget.exe credential providers](https://docs.microsoft.com/nuget/reference/extensibility/nuget-exe-credential-providers). For Azure DevOps, use a personal access token when prompted for credentials, see [Authenticate access with personal access tokens](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts).
 
 ## Get or create a sample package to push
 

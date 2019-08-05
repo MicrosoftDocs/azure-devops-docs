@@ -234,7 +234,7 @@
     items:
     - name: Overview
       href: artifacts/artifacts-overview.md
-    - name: Pipeline artifacts (preview)
+    - name: Pipeline artifacts
       href: artifacts/pipeline-artifacts.md
     - name: Build artifacts
       href: artifacts/build-artifacts.md
