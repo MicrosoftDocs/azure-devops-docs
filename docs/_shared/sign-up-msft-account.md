@@ -10,7 +10,7 @@ ms.topic: include
 
    ![Sign in with your Microsoft account](/azure/devops/_shared/_img/sign-in-with-microsoft-account.png)
 
-   If you don't have a Microsoft account, choose **Create one**. To learn more, see [create a Microsoft account](https://support.microsoft.com/en-us/help/4026324/microsoft-account-how-to-create).
+   If you don't have a Microsoft account, choose **Create one**. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create).
 
 3. Enter your password and select **Sign in**.
 
