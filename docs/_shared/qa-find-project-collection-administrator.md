@@ -1,4 +1,4 @@
-#### Q:	How do I find a Project Collection Administrator?
+#### Q: How do I find a Project Collection Administrator?
 
 A: If you have at least Basic access, you can find your [Project Collection Administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your organization's security settings.
 

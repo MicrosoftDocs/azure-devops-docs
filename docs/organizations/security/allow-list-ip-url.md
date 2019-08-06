@@ -86,7 +86,7 @@ During the import process, we highly recommend that you restrict access to your 
 
 ### Visual Studio and Azure Services
 
-If you or your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/en-us/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
+If you or your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
 
 ## Other important URLs to consider
 
