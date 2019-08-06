@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 12/20/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
