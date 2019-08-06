@@ -9,7 +9,7 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/29/2019
+ms.date: 07/30/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -52,15 +52,19 @@ In the options tab of the pipeline, add the demand to your pipeline.
 
 Register each agent that has the capability.
 
-0. Go to the Agent pools tab at the root of the control panel:
+1. In your web browser, navigate to Agent pools:
+
    [!INCLUDE [agent-pools-tab](../agents/_shared/agent-pools-tab.md)]
 
-1. Click the agent, and then click **Capabilities**
+1. Navigate to the capabilities tab for the agent:
+ 
+   [!INCLUDE [agent-capabilities](../agents/_shared/agent-capabilities-tab.md)]
 
-2. Add something like the following entry:
+1. Add something like the following entry:
 
 | First box | Second box |
 |---|---|
 | SpecialSoftware | C:\Program Files (x86)\SpecialSoftware |
 
-> **Tip:** When you manually queue a build you can change the demands for that run.
+> [!TIP]
+> When you manually queue a build you can change the demands for that run.

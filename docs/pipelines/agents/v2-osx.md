@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 03/19/2019
+ms.date: 07/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -47,34 +47,69 @@ After you get a feel for how agents work, or if you want to automate setting up 
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops"
 
-### Azure Pipelines and TFS 2017 and newer
+### Azure Pipelines
 
-<ol>
-<li>Log on to the machine using the account for which you&#39;ve prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the <strong>Agent pools</strong> tab:
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<ul>
-<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
-<li>Azure DevOps Server 2019: <code>https:&#x2F;&#x2F;dev.azure.com/{your_collection}/_settings/agentpools</code></li>
-<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
-<li>That didn&#39;t work: <a href="/azure/devops/server/admin/websitesettings" data-raw-source="[Get the correct URL](/azure/devops/server/admin/websitesettings)">Get the correct URL</a></li>
-</ul>
-</li>
+1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-<li>Click <strong>Download agent</strong>.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-<li>On the <strong>Get agent</strong> dialog box, click <strong>macOS</strong>.</li>
+1. Click **Download agent**.
 
-<li>Click the <strong>Download</strong> button.
+1. On the **Get agent** dialog box, click **macOS**.
 
-<li>Follow the instructions on the page.</li>
+1. Click the **Download** button.
 
-<li>Unpack the agent into the directory of your choice. <code>cd</code> to that directory and run <code>./config.sh</code>. Make sure that the path to the directory contains no spaces because tools and scripts don&#39;t always properly escape spaces.</li>
-</ol>
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+
+::: moniker-end
+
+::: moniker range=azure-devops-2019"
+
+### Azure DevOps Server 2019
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+
+1. Click **Download agent**.
+
+1. On the **Get agent** dialog box, click **macOS**.
+
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+
+1. Click **Download agent**.
+
+1. On the **Get agent** dialog box, click **macOS**.
+
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -82,11 +117,12 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
+1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 1. Follow the instructions on that page to download the agent.
 
-2. Configure the agent.
+1. Configure the agent.
+
    ```
    ./config.sh
    ```
@@ -123,9 +159,10 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
 To run the agent interactively:
 
-0. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
+1. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
 
 1. Run the agent.
+
    ```bash
    ./run.sh
    ```
@@ -255,21 +292,11 @@ Normally, the agent service runs only after the user logs in. If you want the ag
 
 When you configure the service, it takes a snapshot of some useful environment variables for your current logon user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
 
-> [!div class="vscom-steps-container" ]
-> 0. &nbsp;
->    ```bash
->    ./env.sh 
->    ```
-> 
-> 1. &nbsp;
->    ```bash
->    ./svc.sh stop
->    ```
-> 
-> 2. &nbsp;
->    ```bash
->    ./svc.sh start
->    ```
+```bash
+./env.sh
+./svc.sh stop
+./svc.sh start
+```
 
 The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
 
@@ -277,14 +304,13 @@ The snapshot of the environment variables is stored in `.env` file under agent r
 
 You can also run your own instructions and commands to run when the service starts.  For example, you could set up the environment or call scripts.
 
-0. Edit `runsvc.sh`.
+1. Edit `runsvc.sh`.
 
 1. Replace the following line with your instructions:
 
-```bash
-
-# insert anything to setup env when running as a service
-```
+   ```bash
+   # insert anything to setup env when running as a service
+   ```
 
 <h3 id="service-files">Service Files</h3>
 
