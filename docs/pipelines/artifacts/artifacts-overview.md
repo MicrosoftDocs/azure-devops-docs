@@ -8,8 +8,8 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 11/13/2018
 monikerRange: '>= tfs-2015'
 ---

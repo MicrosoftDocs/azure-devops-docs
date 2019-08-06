@@ -36,7 +36,7 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 
 1. Open [Azure Boards](https://azure.microsoft.com/services/devops/boards) and choose **Start free with Boards**.
 
-2. Choose **Create one** and enter an email address or phone number. Or, you can create an Outlook account at this time. To learn more, see [create a Microsoft account](https://support.microsoft.com/en-us/help/4026324/microsoft-account-how-to-create). 
+2. Choose **Create one** and enter an email address or phone number. Or, you can create an Outlook account at this time. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a Microsoft account](_img/acquisition/sign-in-new.png)
