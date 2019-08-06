@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 07/25/2019
 ---
 
-# Queries
+# Queries  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -31,7 +31,7 @@ If you're just starting out, [Query index quick reference](query-index-quick-ref
 ## Overview  
 * [Ad hoc vs managed queries](adhoc-vs-managed-queries.md) 
 
--->
+-->  
  
 ## 5-Minute Quickstarts  
 

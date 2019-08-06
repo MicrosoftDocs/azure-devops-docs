@@ -7,8 +7,8 @@ ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 8/22/2018
 monikerRange: '>= azure-devops'
 ---

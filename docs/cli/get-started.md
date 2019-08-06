@@ -23,7 +23,7 @@ ms.date: 07/08/2019
 
 To start using the Azure DevOps extension for Azure CLI, execute the following steps:
 
-1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use `az --version` to validate.
+1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use `az --version` to validate.
 
 2. Add the Azure DevOps extension:
 
@@ -72,7 +72,7 @@ Commands:
     feedback         : Displays information on how to provide feedback to the Azure DevOps CLI team.
     invoke           : This command will invoke request for any DevOps area and resource. Please use
                        only json output as the response of this command is not fixed. Helpful docs -
-                       https://docs.microsoft.com/en-us/rest/api/azure/devops/.
+                       https://docs.microsoft.com/rest/api/azure/devops/.
     login            : Set the credential (PAT) to use for a particular organization.
     logout           : Clear the credential for all or a particular organization.
 ```

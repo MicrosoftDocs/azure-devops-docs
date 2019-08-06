@@ -22,8 +22,8 @@ install extensions from the
 
 > [!TIP]
 > To learn about building your own extensions, 
-> see [developing](http://aka.ms/vsoextensions) 
-> and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
+> see [developing](https://aka.ms/vsoextensions) 
+> and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ you can create a new subscription when you make your first purchase.
 > To use an existing Azure subscription for billing,
 > you must have at least Co-administrator permissions for that subscription. 
 > If you don't have permissions, have an Azure Account Administrator 
-> or Service Administrator go to the [Azure portal](https://azure.microsoft.com/en-us/) and 
+> or Service Administrator go to the [Azure portal](https://azure.microsoft.com/) and 
 > [add you as Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
 > to the Azure subscription that you want to use for billing. 
 > Co-administrator permissions are available only in the Azure portal.
