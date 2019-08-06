@@ -10,12 +10,19 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 03/19/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2015'
 ---
 
 # Self-hosted Windows agents
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)**
+
+::: moniker range="tfs-2015"
+
+> [!IMPORTANT]
+> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](v1-windows.md).
+
+::: moniker-end
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
@@ -54,35 +61,51 @@ running 4 agents apiece.
 
 ### Azure Pipelines
 
-<ol>
-<li>Log on to the machine using the account for which you&#39;ve prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines, and navigate to the <strong>Agent pools</strong> tab:
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<ul>
-<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
-<li>Azure DevOps Server 2019: <code>https:&#x2F;&#x2F;dev.azure.com/{your_collection}/_settings/agentpools</code></li>
-<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
-<li>That didn&#39;t work: <a href="/azure/devops/server/admin/websitesettings" data-raw-source="[Get the correct URL](/azure/devops/server/admin/websitesettings)">Get the correct URL</a></li>
-</ul>
-</li>
+1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-<li>Click <strong>Download agent</strong>.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-<li>On the <strong>Get agent</strong> dialog box, click <strong>Windows</strong>.</li>
+1. Click **Download agent**.</li>
 
-<li>On the left pane, select the processor architecture of the installed Windows OS version on your machine.
+1. On the **Get agent** dialog box, click **Windows**.</li>
+
+1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
 The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-If you aren&#39;t sure which version of Windows is installed, <a href="https://docs.microsoft.com/windows/client-management/windows-version-search" data-raw-source="[follow these instructions to find out](https://docs.microsoft.com/windows/client-management/windows-version-search)">follow these instructions to find out</a>.</li>
+If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
-<li>On the right pane, click the <strong>Download</strong> button.
+1. On the right pane, click the **Download** button.
 
-<li>Follow the instructions on the page to download the agent.</li>
+1. Follow the instructions on the page to download the agent.
 
-<li>Unpack the agent into the directory of your choice. Then run <code>config.cmd</code>. This will ask you a series of questions to configure the agent.</li>
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
-</ol>
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### Azure DevOps Server 2019
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+
+1. Click **Download agent**.</li>
+
+1. On the **Get agent** dialog box, click **Windows**.</li>
+
+1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
+The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
+
+1. On the right pane, click the **Download** button.
+
+1. Follow the instructions on the page to download the agent.
+
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -90,31 +113,21 @@ If you aren&#39;t sure which version of Windows is installed, <a href="https://d
 
 ### TFS 2017 and TFS 2018
 
-<ol>
-<li>Log on to the machine using the account for which you&#39;ve prepared permissions as explained above.</li>
-<li>In your web browser, sign in to TFS, and navigate to the <strong>Agent pools</strong> tab:
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<ul>
-<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
-<li>Azure DevOps Server 2019: <code>https:&#x2F;&#x2F;dev.azure.com/{your_collection}/_settings/agentpools</code></li>
-<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
-<li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
-<li>That didn&#39;t work: <a href="/azure/devops/server/admin/websitesettings" data-raw-source="[Get the correct URL](/azure/devops/server/admin/websitesettings)">Get the correct URL</a></li>
-</ul>
-</li>
+1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-<li>Click <strong>Download agent</strong>.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
-<li>On the <strong>Get agent</strong> dialog box, click <strong>Windows</strong>.</li>
+1. Click **Download agent**.
 
-<li>Click the <strong>Download</strong> button.
+1. On the **Get agent** dialog box, click **Windows**.
 
-<li>Follow the instructions on the page to download the agent.</li>
+1. Click the **Download** button.
 
-<li>Unpack the agent into the directory of your choice. Then run <code>config.cmd</code>. Make sure that the path to the directory contains no spaces because tools and scripts don&#39;t always properly escape spaces.</li>
+1. Follow the instructions on the page to download the agent.
 
-</ol>
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -145,7 +158,7 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
-
+  
 When you configure your agent to connect to TFS, you've got the following options:
 
 * **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
@@ -153,7 +166,7 @@ When you configure your agent to connect to TFS, you've got the following option
 * **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
-
+ 
 * **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
@@ -240,9 +253,7 @@ The help provides information on authentication alternatives and unattended conf
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
-
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -268,21 +279,15 @@ MyEnv4=MyEnvValue4
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
-
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
 [!INCLUDE [include](../_shared/qa-versions.md)]
-
 ::: moniker-end
 
 <!-- ENDSECTION -->
