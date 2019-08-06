@@ -18,11 +18,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
+In this quickstart, you learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/services/devops/boards/) and [Repos](https://azure.microsoft.com/services/devops/repos/).
 
 Visual Studio subscribers get Basic access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
