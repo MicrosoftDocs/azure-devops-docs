@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 2/14/2019
@@ -182,5 +183,5 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ## Related articles 
 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's[default area path and iteration path.  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path.  
 

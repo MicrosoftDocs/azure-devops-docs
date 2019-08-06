@@ -1,4 +1,4 @@
-### Q:	How do I find the organization owner?
+### Q: How do I find the organization owner?
 
 If you have at least Basic access, you can find the current owner in your organization settings.
 

@@ -30,7 +30,7 @@ You need to set up billing when you need more than the *free tier* of resources 
 
 You also need to [set up billing](set-up-billing-for-your-organization-vs.md) to buy other features (for your users) that are offered by Microsoft or by other companies.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 

@@ -1,4 +1,4 @@
-#### Q:	Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
+#### Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
 
 A: Your list of organizations are associated with the identity that you use to sign in to Azure DevOps.
 

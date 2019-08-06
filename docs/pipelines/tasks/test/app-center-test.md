@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 This task lets you run test suites against an application binary (`.apk` or `.ipa` file) using App Center Test.
-For details about using this task, see the App Center documentation topic [Using Azure DevOps for UI Testing](https://docs.microsoft.com/en-us/appcenter/test-cloud/vsts-plugin).
+For details about using this task, see the App Center documentation topic [Using Azure DevOps for UI Testing](https://docs.microsoft.com/appcenter/test-cloud/vsts-plugin).
 
 ::: moniker range="<= tfs-2018"
 
