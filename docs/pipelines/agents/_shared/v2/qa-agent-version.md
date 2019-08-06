@@ -4,17 +4,17 @@ ms.topic: include
 
 ### How do I make sure I have the latest v2 agent version?
 
-0. Go to the _Agent pools_ control panel tab:
+1. Navigate to the **Agent pools** tab:
 
    [!INCLUDE [agent-pools-tab](../../_shared/agent-pools-tab.md)]
 
 1. Click the pool that contains the agent.
 
-2. Make sure the agent is enabled.
+1. Make sure the agent is enabled.
 
-3. Click **Agents**.
-
-4. Click **Capabilities**.
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](../../_shared/agent-capabilities-tab.md)]
 
 5. Look for the `Agent.Version` capability.
 

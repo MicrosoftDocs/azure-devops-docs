@@ -21,7 +21,7 @@ Security permissions for a User or Security group can be managed by running foll
 
 `az devops security permission -h`
 
-For more information on concepts related to Security permissions, kindly refer [REST API documentation](https://docs.microsoft.com/en-us/rest/api/azure/devops/security/?view=azure-devops-rest-5.0)
+For more information on concepts related to Security permissions, kindly refer [REST API documentation](https://docs.microsoft.com/rest/api/azure/devops/security/?view=azure-devops-rest-5.0)
 
 ## Find a namespace
 
