@@ -9,8 +9,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: jillfra 
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 05/6/2019
 featureFlags:
 - clicktale 
@@ -46,7 +46,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 # Build and Release Documentation
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 ::: moniker-end
 

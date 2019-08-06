@@ -1,6 +1,6 @@
 #### Q: Why can't users access extension features?
 
-A:	This can happen for the following reasons: 
+A: This can happen for the following reasons: 
 
 *	Most extensions require that users have at least Basic access, not Stakeholder. 
 For example, you can install the free 

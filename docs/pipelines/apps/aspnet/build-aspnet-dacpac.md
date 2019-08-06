@@ -7,8 +7,8 @@ description: Define a continuous integration (CI) build for your SQL server data
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---

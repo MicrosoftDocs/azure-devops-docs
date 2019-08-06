@@ -75,40 +75,36 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build task.
 
-<ol>
-<li><p>Open the Agent Pools control panel tab:
+1. In your web browser, navigate to Agent pools:
 
-[!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 
-</li>
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
 
-<li>In the left column, click the name of the Microsoft-hosted pool that you are using. In the right column click <strong>Capabilities</strong>.</li>
+1. Click **Add capability** and set the fields to `cmake` and `yes`.
 
-<li>Click <strong>Add capability</strong> and set the fields to <code>cmake</code> and <code>yes</code>.</li>
+1. Click **Save changes**.
 
-<li>Click <strong>Save changes</strong></li>
-</ol>
 
 ### How do I enable CMake for my on-premises agent?
 
-<ol>
-<li><a href="../../agents/agents.md#install" data-raw-source="[Deploy an agent](../../agents/agents.md#install)">Deploy an agent</a>.</li>
+1. [Deploy an agent](../../agents/agents.md#install).
 
-<li><a href="https://cmake.org/install/" data-raw-source="[Install CMake](https://cmake.org/install/)">Install CMake</a> and make sure to add it to the path of the user that the agent is running as on your agent machine.</li>
+1. [Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.
 
+1. In your web browser, navigate to Agent pools:
 
-<li><p>In your web browser, navigate to the <strong>Agent pools</strong> control panel tab:</p>
+   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 
-[!INCLUDE [agent-pools](../../agents/_shared/agent-pools-tab.md)]
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
 
-</li>
+1. Click **Add capability** and set the fields to `cmake` and `yes`.
 
-<li>In the left column, click the name of your agent pool. In the right column click <strong>Capabilities</strong>. </li>
-
-<li>Click <strong>Add capability</strong> and set the fields to <code>cmake</code> and <code>yes</code>.</li>
-
-<li>Click <strong>Save changes</strong></li>
-</ol>
+1. Click **Save changes**.
 
 
 ### How does CMake work? What arguments can I use?

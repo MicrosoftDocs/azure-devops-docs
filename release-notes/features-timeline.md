@@ -18,7 +18,7 @@ hide_comments: true
 | <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a> 
 | <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a> 
 | <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a> 
-| <a href="https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
+| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
 ****
 
@@ -2325,7 +2325,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="9"><a href="2016/jul-29-team-services.md" data-raw-source="[29 Jul 2016](2016/jul-29-team-services.md)">29 Jul 2016</a> </td>
             <td>Git and TFVC – History view and diff view updates</td>
-            <td></td><td><a href="https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
+            <td></td><td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
         </tr>
         <tr>
             <td>Restrict Package Management feed creation</td>
