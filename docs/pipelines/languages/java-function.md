@@ -6,9 +6,8 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
 ms.manager: jillfra
-ms.lead: alewis
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 4/23/2019
 monikerRange: 'azure-devops'
 ---

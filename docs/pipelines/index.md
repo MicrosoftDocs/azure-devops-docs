@@ -9,8 +9,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: jillfra 
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 05/6/2019
 featureFlags:
 - clicktale 
