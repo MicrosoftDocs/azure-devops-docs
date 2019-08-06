@@ -41,7 +41,7 @@ In interactive mode this command will ask for service principal password/secret 
 
 ### Using client certificate
 
-If AAD application uses [certificate for authentification](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials) then create .pem for the certificate and pass path to .pem file in `--azure-rm-service-principal-certificate-path` argument.
+If AAD application uses [certificate for authentification](/azure/active-directory/develop/active-directory-certificate-credentials) then create .pem for the certificate and pass path to .pem file in `--azure-rm-service-principal-certificate-path` argument.
 
 .pem file can be created using openssl 
 
