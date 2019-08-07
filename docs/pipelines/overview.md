@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 08/31/2018
 ms.topic: overview
 monikerRange: '>= tfs-2015 < azure-devops'

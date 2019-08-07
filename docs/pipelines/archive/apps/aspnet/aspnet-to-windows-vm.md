@@ -4,9 +4,8 @@ description: Set up a continuous integration (CI) build for your ASP.NET app, an
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-author: alewis
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.manager: jillfra
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
 ms.date: 06/27/2017
