@@ -94,21 +94,21 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
-0. From the New List dialog, choose **Input list**.  
+5. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+6.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-0.  Specify the titles of the work items you want to add and their work item type.
+7.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-0.  Publish your worksheet.
+8.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -118,7 +118,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-0.  Also, note how you can open a work item in the web portal to add more information.
+9.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 

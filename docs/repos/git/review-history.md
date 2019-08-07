@@ -36,13 +36,13 @@ In this tutorial you learn how to:
 Compare the changes between two versions of a file in your Git repo. 
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
+1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
     ![View history in your repo for a file](_img/history/vs-history-view.png)     
 
-1. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
-2. View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
-3. The diff view shows lines removed from the older commit and added in the new one.
+2. Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
+3. View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
+4. The diff view shows lines removed from the older commit and added in the new one.
 
     ![View diff changes in Visual Studio](_img/history/vs-diff-changes.png)
 
@@ -95,22 +95,22 @@ your branch.
 #### [Visual Studio](#tab/visual-studio/)
 To retrieve a previous version of a file that exists in your Visual Studio project:
 
-0. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
+1. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
    You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
 
    ![View file versions in Visual Studio](_img/history/vs-history-view.png)   
 
 To retrieve a previous version of a file that was deleted in a previous commit:
 
-0. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
+1. Open the **Changes** view in Team Explorer and select **View History** from the **Actions** drop-down. 
 
    ![View changes](_img/history/team-explorer-changes.png) 
 
-1. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
+2. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
 
    ![View changes](_img/history/vs-view-commit-details.png) 
 
-2. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
+3. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
 
    ![View deleted files in your Git repo with Visual Studio](_img/history/vs-open-deleted-file.png)
 

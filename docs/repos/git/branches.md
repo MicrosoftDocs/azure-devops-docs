@@ -63,9 +63,9 @@ You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch 
 #### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 & 2017
 
-0. Open up Team Explorer and go to the **Branches** view.
-1. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
-2. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
+1. Open up Team Explorer and go to the **Branches** view.
+2. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
+3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
 
     ![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
 
@@ -86,9 +86,9 @@ git checkout feature1
 #### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 & 2017
 
-0. Open up Team Explorer and go to the **Branches** view.
-1. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
-2. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
+1. Open up Team Explorer and go to the **Branches** view.
+2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
+3. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
 
     ![Deleting a branch in Visual Studio](_img/vsbranchdelete.gif)
 
