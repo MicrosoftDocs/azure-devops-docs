@@ -384,7 +384,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 ## Connect Azure DevOps Services to GitHub Enterprise Server
 
 > [!IMPORTANT]  
-> To connect Azure DevOps Services to your GitHub Enterprise Server, your GitHub Enterprise Server must be sufficiently accessible from the Internet. Make sure Azure DNS can resolve your GitHub Enterprise Server name and your firewall allows access from Azure Data Center IP addresses. To determine the IP address range, see [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653). A common error message encountered when connectivity issues exist is: 
+> To connect Azure DevOps Services to your GitHub Enterprise Server, your GitHub Enterprise Server must be sufficiently accessible from the Internet. Make sure Azure DNS can resolve your GitHub Enterprise Server name and your firewall allows access from Azure Data Center IP addresses. To determine the IP address range, see [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653). A common error message encountered when connectivity issues exist is: 
 > 
 > <em>The remote name could not be resolved: 'github-enterprise-server.contoso.com'</em>
 > 

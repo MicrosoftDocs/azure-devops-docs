@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 07/09/2019
+ms.author: sdanie
+author: steved0x
+ms.date: 08/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Expressions can be used wherever you need to specify a string, boolean, or number value when authoring a pipeline.
+Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
 ::: moniker range=">= azure-devops-2019"
@@ -34,6 +34,7 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
+Compile-time expressions can be used anywhere; runtime expressions are more limited.
 
 ```yaml
 # Two examples of expressions used to define variables

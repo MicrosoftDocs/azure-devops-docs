@@ -129,9 +129,10 @@ when a release is created by a continuous deployment trigger, based on:
   you can select the days of the week and the time of day that
   Azure Pipelines will automatically start a new deployment. Unlike scheduled
   release triggers, you cannot configure multiple schedules for stage triggers.
-  Note that, with scheduled triggers, a new deployment is created that deploys the 
-  artifacts from the _most recently available_ release, overwriting any previously deployed artifacts
-  for the stage. It does not necessarily require a newer version of the artifacts to be
+  Note that, with scheduled triggers, a new deployment request is created that deploys the 
+  artifacts from the current release. All deployment requests are executed on the stage as per the configured [queueing policies](../process/stages.md?tabs=classic#queuing-policies) defined on the stage.
+  For example, if the queueing policy is set to **Deploy latest and cancel the others**, any previously deployed artifacts
+  on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be
   available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)

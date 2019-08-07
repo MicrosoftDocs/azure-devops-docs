@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 4/8/2019
 monikerRange: '>= tfs-2015'
 ---
