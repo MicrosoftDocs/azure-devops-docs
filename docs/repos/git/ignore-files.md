@@ -140,14 +140,14 @@ remove the information about the file from Git's index:
 
 > These steps will not delete the file from your system. They just tell Git to ignore future updates to the file.
 
-0. Add the file in your .gitignore. 
+1. Add the file in your .gitignore. 
 
-1. Run the following:
+2. Run the following:
    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
    &gt; git rm --cached <font color="#b5bd68">&lt;file&gt;</font>
    </pre>
 
-2. Commit the removal of the file and the updated .gitignore to your repo. 
+3. Commit the removal of the file and the updated .gitignore to your repo. 
 
 ## Next steps
 

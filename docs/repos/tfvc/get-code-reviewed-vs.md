@@ -29,19 +29,19 @@ To ask for a code review, make sure you have [shared your code in TFVC](share-yo
 
 Jamal has changed the border color in the Hello World app, and he asks Johnnie to review the change.
 
-0. Before he checks in the change, Jamal goes to the my work page.
+1. Before he checks in the change, Jamal goes to the my work page.
 
    ![My Work from the team explorer home page](_img/get-code-reviewed-vs/IC682169.png) 
 
-1. He requests a review.
+2. He requests a review.
 
    ![Request code review link from the team explorer My Work page](_img/get-code-reviewed-vs/IC682170.png)
 
-2. He submits a request to Johnnie.
+3. He submits a request to Johnnie.
 
    ![Submit request button on the filled out new code review page in the teamexplorer](_img/get-code-reviewed-vs/IC682171.png)
 
-3. Jamal suspends his work on Hello World so that he can work on something else while he waits to hear back from Johnnie.
+4. Jamal suspends his work on Hello World so that he can work on something else while he waits to hear back from Johnnie.
 
    ![Suspend link in the my work page of the team explorer](_img/get-code-reviewed-vs/IC682757.png)
 
@@ -49,11 +49,11 @@ Jamal has changed the border color in the Hello World app, and he asks Johnnie t
 
 Johnnie will see the code review request in the team explorer, look at the changes, and give Jamal his feedback.
 
-0. Johnnie opens the my work page.
+1. Johnnie opens the my work page.
 
    ![My work in the team explorer home page](_img/get-code-reviewed-vs/IC682758.png)
 
-1. He sees Jamal's code review request.
+2. He sees Jamal's code review request.
 
    ![The code review request in the my work page](_img/get-code-reviewed-vs/IC683034.png)
 
@@ -62,33 +62,33 @@ Johnnie will see the code review request in the team explorer, look at the chang
 
    ![Project alerts link in the settings page of the team explorer](_img/get-code-reviewed-vs/IC682760.png)
 
-2. Johnnie opens the code review request.
+3. Johnnie opens the code review request.
 
    ![Open the review from the context menu on the review request](_img/get-code-reviewed-vs/IC683035.png)
 
-3. He accepts the review.
+4. He accepts the review.
 
    ![Accept the code review request](_img/get-code-reviewed-vs/IC683036.png)
 
-4. He opens the file that Jamal changed.
+5. He opens the file that Jamal changed.
 
    ![The file link (Site.css) in the code review page](_img/get-code-reviewed-vs/IC683037.png)
 
-5. Johnnie sees that Jamal changed the color to #ddd. He selects the code in the difference window and adds a comment (Keyboard: Ctrl + Shift + K).
+6. Johnnie sees that Jamal changed the color to #ddd. He selects the code in the difference window and adds a comment (Keyboard: Ctrl + Shift + K).
 
    ![Comment added to Site.css using the difference window toolbar button](_img/get-code-reviewed-vs/IC682763.png)
 
-6. He suggests a different color instead and sends the comment to Jamal.
+7. He suggests a different color instead and sends the comment to Jamal.
 
    ![Comment added and sent using the send comments button in the code review page in team explorer](_img/get-code-reviewed-vs/IC682764.png)
 
 ## Update the code based on the review feedback
 
-0. When Jamal gets a response from Johnnie, he resumes the work on Hello World.
+1. When Jamal gets a response from Johnnie, he resumes the work on Hello World.
 
    ![Resume link in the my work page of the team explorer](_img/get-code-reviewed-vs/IC683038.png)
 
-1. His changes are unshelved and the windows he had opened are restored, so he can incorporate the review feedback.
+2. His changes are unshelved and the windows he had opened are restored, so he can incorporate the review feedback.
 
    ![Work environment restored after resuming work](_img/get-code-reviewed-vs/IC683039.png)
 

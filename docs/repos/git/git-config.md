@@ -30,15 +30,15 @@ This article shows you how to configure and view Git settings and preferences in
 
 
 
-0. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
+1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
     ![Go to Team Explorer Settings](_img/git-config/menu-settings.png)
 
-1. Choose **Global Settings** or **Repository Settings** to view and configure global-level or repository-level settings.
+2. Choose **Global Settings** or **Repository Settings** to view and configure global-level or repository-level settings.
 
     ![Git settings](_img/git-config/git-global-local-settings.png)
 
-2. Visual Studio allows you to configure several common Git settings, as described in the following sections of this article. After configuring your desired settings, select **Update** to save the updated settings.
+3. Visual Studio allows you to configure several common Git settings, as described in the following sections of this article. After configuring your desired settings, select **Update** to save the updated settings.
 
     ![Update settings](_img/git-config/update-git-settings.png)
 
@@ -63,9 +63,9 @@ Visual Studio allows you to configure and check some of the most common Git conf
 The name and email that you provide will be used as the committer information for any commit you make. This setting is available at both global and repository scopes, and corresponds to the `git config` [user.email](https://git-scm.com/docs/git-config#git-config-useremail) and [user.name](https://git-scm.com/docs/git-config#git-config-username) settings.
 
 #### [Visual Studio](#tab/visual-studio/)
-0. In Team Explorer, go to **Settings**. To set your user name and email at the global level, go to **Global Settings**; to set these at the repository level, go to **Repository Settings**.
+1. In Team Explorer, go to **Settings**. To set your user name and email at the global level, go to **Global Settings**; to set these at the repository level, go to **Repository Settings**.
 
-1. Provide your user name and email, then choose **Update** to save. 
+2. Provide your user name and email, then choose **Update** to save. 
 
     ![Global settings username and email](_img/git-config/global-settings-username-email.png)
 
@@ -101,7 +101,7 @@ We recommend setting this option to **True** at the global level. Valid settings
 
 #### [Visual Studio](#tab/visual-studio/)
 Requires Visual Studio 2017 Update 5 and later.
-0. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
+1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
     ![Go to Team Explorer Settings](_img/git-config/fetch-prune.png)
 
@@ -126,9 +126,9 @@ then applies the changes that were set aside. This setting is available at both 
 
 #### [Visual Studio](#tab/visual-studio/)
 Requires Visual Studio 2017 Update 5 and later.
-0. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this option at the global level; go to **Repository Settings** to configure this option at the repo level.
+1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this option at the global level; go to **Repository Settings** to configure this option at the repo level.
 
-1. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
+2. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
 
     ![Go to Team Explorer Settings](_img/git-config/pull-rebase.png)
 
@@ -155,9 +155,9 @@ allowing for enterprise-wide management of certificates.
 #### [Visual Studio](#tab/visual-studio/)
 Requires Visual Studio 2017 Update 7 and later.
 
-0. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this setting.
+1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this setting.
 
-1. Set **Cryptographic network provider** to the desired value, and select **Update** to save.
+2. Set **Cryptographic network provider** to the desired value, and select **Update** to save.
 
 ![Cryptographic network provider](_img/git-config/cryptographic-network-provider.png)
 

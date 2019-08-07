@@ -76,15 +76,15 @@ In the following scenarios you might need multiple parallel jobs:
 
 Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enterprise** access level in the Users hub of TFS instance. Each of these users contributes one additional parallel job to each collection. You can use this benefit on all Team Foundation Servers in your organization.
 
-0. Browse to **Server settings**, **Access levels**.
+1. Browse to **Server settings**, **Access levels**.
 
    ![control-panel-server-vs-enterprise-access-levels](_img/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
-1. On the left side of the page, click **VS Enterprise**.
+2. On the left side of the page, click **VS Enterprise**.
 
-2. Add your users who have Visual Studio Enterprise subscriptions.
+3. Add your users who have Visual Studio Enterprise subscriptions.
 
 After you've added these users, additional licenses will appear on the resource limits page described below.
 
@@ -94,13 +94,13 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 ## View and manage parallel jobs
 
-0. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
+1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
    ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
-1. View or edit the number of purchased parallel jobs.
+2. View or edit the number of purchased parallel jobs.
 
 ## Q&A
 
