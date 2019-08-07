@@ -20,6 +20,8 @@ ms.date: 04/05/2019
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+
 [!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 Use this article to learn how to:
