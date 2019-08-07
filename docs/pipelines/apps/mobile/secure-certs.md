@@ -78,14 +78,14 @@ In the next section, we'll cover how to add another layer of security by encrypt
 You can add an extra layer of security by to your project by encrypting your .p12 and .mobileprovision files so that only those that have been given the appropriate credentials have permission to use them. The **Decrypt File** task makes this easy to set up in your build task.
 
 1. First, encrypt your files.
-   0. Open the Terminal app on your Mac.
-   1. Change to the folder containing your .p12 file and .mobileprovision file.
-   2. Type the following:
+   1. Open the Terminal app on your Mac.
+   2. Change to the folder containing your .p12 file and .mobileprovision file.
+   3. Type the following:
       ```
       openssl des3 -in iphonedeveloper.p12 -out iphonedeveloper.p12.enc
       ```
       substituting des3 for any encryption cypher you'd like to use and the appropriate input and output file names.
-   3. Enter a passphrase to encrypt the certificate when prompted and note this as you will use it later.
+   4. Enter a passphrase to encrypt the certificate when prompted and note this as you will use it later.
 
 2. Next, add these two files to source control (the encrypted .p12 and .mobileprovision files). This is secure particularly if you are using a private repository since a malicious user would need access to the repository, the encryption passphrase, and the P12 passphrase to be able to use your information without permission. Remove any unencrypted copies if present.
 
@@ -126,7 +126,7 @@ While you can just allow the build to attempt to auto-match or use identities an
 
 Follow these steps:
 
-0. Determine the full name of the identity and the UUID of the provisioning profile you wish to use.
+1. Determine the full name of the identity and the UUID of the provisioning profile you wish to use.
    1. Find the full name of your signing identity by opening the Terminal app and typing the following:
       ```
       security find-identity -v -p codesigning
@@ -144,14 +144,14 @@ Follow these steps:
 
    4. The name of the file that is highlighted is the UUID of your provisioning profile.
 
-1. Now update your Xcode or Xamarin.iOS build step with references to these two identifiers. Enter the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
+2. Now update your Xcode or Xamarin.iOS build step with references to these two identifiers. Enter the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
 
     - **Override Using**: Identifiers
     - **Signing Identity**: Full signing identity you found using the security command above
     - **Provisioning Profile UUID**: UUID of the provisioning profile from the filename above
 
 
-2. Next, if you are running the build agent as a launch agent, you will need to set up the build to unlock the default keychain.
+3. Next, if you are running the build agent as a launch agent, you will need to set up the build to unlock the default keychain.
 
    1. Go to the **Variables** tab and enter the following:
 
@@ -171,9 +171,9 @@ However, here are a few additional tips that can help you get your app up and ru
 
 Follow these steps:
 
-0. **Windows only**: You may need to install openssl.exe. If you have the [Git command line tools](http://www.git-scm.com/downloads) installed, openssl may already be in your path (Ex: C:\Program Files (x86)\Git\bin). If not, install the command line tools or download a binary distribution of OpenSSL for Windows from [one of the community mirrors](http://go.microsoft.com/fwlink/?LinkID=627128) and add it to your path. This will also need to be done on any Windows machines running the build agent.
+1. **Windows only**: You may need to install openssl.exe. If you have the [Git command line tools](http://www.git-scm.com/downloads) installed, openssl may already be in your path (Ex: C:\Program Files (x86)\Git\bin). If not, install the command line tools or download a binary distribution of OpenSSL for Windows from [one of the community mirrors](http://go.microsoft.com/fwlink/?LinkID=627128) and add it to your path. This will also need to be done on any Windows machines running the build agent.
 
-1. Now, encrypt the keystore for your app.
+2. Now, encrypt the keystore for your app.
    1. Open a terminal or command prompt and go to where your keystore is located.
    2. Type the following:
       ```
@@ -181,9 +181,9 @@ Follow these steps:
       ``` substituting des3 for any encryption cypher you'd like to use and the appropriate input and output file names.
    3. Enter a passphrase to encrypt the certificate when prompted and note this as you will use it later.
 
-2. Next, add the encrypted keystore to source control. This is secure particularly if you are using a private repository since a malicious user would need access to the repository, the encryption passphrase, the keystore password, and the alias password to be able to use your information without permission.
+3. Next, add the encrypted keystore to source control. This is secure particularly if you are using a private repository since a malicious user would need access to the repository, the encryption passphrase, the keystore password, and the alias password to be able to use your information without permission.
 
-3. Finally we'll update your build pipeline to decrypt and use the keystore.
+4. Finally we'll update your build pipeline to decrypt and use the keystore.
 
    1. Open your Android or Xamarin.iOS build pipeline and go to the **Variables** tab. Here we will enter the following:
       - **KEYSTORE**: Path to your encrypted keystore file in source control.
@@ -196,7 +196,7 @@ Follow these steps:
 
    2. Under the **Build** tab in your build pipeline, add a **Decrypt File** (OpenSSL) step and move this to the top of your build pipeline.
 
-4. Now, enter the proper information using the variables you created above to decrypt the file to a static filename.
+5. Now, enter the proper information using the variables you created above to decrypt the file to a static filename.
 
     - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
     - **Encrypted File**: $(KEYSTORE)
@@ -205,7 +205,7 @@ Follow these steps:
 
       ![Decrypt keystore settings](_img/secure-certs/secure-certs-9.png)
 
-5. Finally, updating the actual build step to use these values you entered is simple regardless of your build system.
+6. Finally, updating the actual build step to use these values you entered is simple regardless of your build system.
 
    1. If you are using the **Gradle, Ant, or Maven** build tasks, you can add the following under **Options**:
 

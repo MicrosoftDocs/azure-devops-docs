@@ -34,17 +34,17 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 <a name="workspace"></a>
 ## Configure your workspace
 
-0. In Visual Studio, configure your workspace.
+1. In Visual Studio, configure your workspace.
 
    ![On Team Explorer home page, click Configure Workspace](_img/share-your-code-in-tfvc-vs/ConfigureWorkspace.png)
 
    [I don't see the Configure Workspace link. What do I do next?](#workspace_exists)
 
-1. Confirm your workspace path, map your workspace, and get the source.
+2. Confirm your workspace path, map your workspace, and get the source.
 
    ![On Team Explorer home page, click Map and get](_img/share-your-code-in-tfvc-vs/MapAndGet.png)
 
-2. Now you can check in source, queue builds, and manage work.
+3. Now you can check in source, queue builds, and manage work.
 
    ![Visual Studio is now connected to your project](_img/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
 
@@ -63,38 +63,38 @@ Now that you've added your app, you can skip down to
 
 ### Move and open the solution
 
-0. Close the solution.
+1. Close the solution.
 
-1. Open the workspace folder that you created when you [configured your workspace](#workspace).
+2. Open the workspace folder that you created when you [configured your workspace](#workspace).
 
    ![Open the workspace folder from source control explorer](_img/share-your-code-in-tfvc-vs/open-workspace-folder-from-source-control-explorer.png)
 
-2. Move the code you want to upload to the workspace folder.
+3. Move the code you want to upload to the workspace folder.
 
    ![Move your source code to your workspace folder](_img/share-your-code-in-tfvc-vs/IC689415.png)
 
-3. Open your solution in Visual Studio.
+4. Open your solution in Visual Studio.
 
    ![Open your solution in Visual Studio](_img/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
 
 
 ### Add the solution to Azure Repos
 
-0. Open the solution explorer (Keyboard: Ctrl + Alt + L).
+1. Open the solution explorer (Keyboard: Ctrl + Alt + L).
 
-1. Add your solution to version control.
+2. Add your solution to version control.
 
    ![Add the solution to Azure Repos](_img/share-your-code-in-tfvc-vs/IC682953.png)
 
-2. Check in the solution.
+3. Check in the solution.
 
    ![Check in your solution](_img/share-your-code-in-tfvc-vs/IC682954.png)
 
-3. Add a comment and check in.
+4. Add a comment and check in.
 
    ![Add a comment and check in pending changes](_img/share-your-code-in-tfvc-vs/IC685248.png)
 
-4. Open the source control explorer.
+5. Open the source control explorer.
 
    ![Open the source control explorer](_img/share-your-code-in-tfvc-vs/IC682140.png)
 
@@ -107,11 +107,11 @@ Your whole team can work on the code now. All your changes are tracked in versio
 <a name="snapshot"></a>
 ## Snapshot (check in) your code
 
-0. When you edit code in Visual Studio, the changed file is automatically checked out. For example, Site.css is checked out after the border color has been changed to #ddd.
+1. When you edit code in Visual Studio, the changed file is automatically checked out. For example, Site.css is checked out after the border color has been changed to #ddd.
 
    ![Checked out file in the team explorer](_img/share-your-code-in-tfvc-vs/IC682155.png)
 
-1. Compare the modified file with the latest version in source control.
+2. Compare the modified file with the latest version in source control.
 
    ![Compare in the solution explorer's context menu](_img/share-your-code-in-tfvc-vs/IC682955.png)
 
@@ -119,25 +119,25 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
    ![Compare window](_img/share-your-code-in-tfvc-vs/IC682157.png)
 
-2. Check in the changes.
+3. Check in the changes.
 
    ![Check in from the context menu in the solution explorer](_img/share-your-code-in-tfvc-vs/IC682956.png)
 
    You can also check in from the code window, or the team explorer.
 
-3. If you're working on a task or fixing a bug that's tracked as a work item, add that work item to your pending changes. Source control will resolve the bug or close the task, and it'll link the changeset to the work item.
+4. If you're working on a task or fixing a bug that's tracked as a work item, add that work item to your pending changes. Source control will resolve the bug or close the task, and it'll link the changeset to the work item.
 
    ![Related work items in pending changes](_img/share-your-code-in-tfvc-vs/IC682159.png)
 
-4. Add a comment and check in.
+5. Add a comment and check in.
 
    ![Source control explorer, source file context menu, check in](_img/share-your-code-in-tfvc-vs/IC685249.png)
 
-5. Open the source control explorer.
+6. Open the source control explorer.
 
    ![Source control explorer in the team explorer home page](_img/share-your-code-in-tfvc-vs/IC682161.png)
 
-6. View the history of the file you changed.
+7. View the history of the file you changed.
 
    ![Source control explorer, source file context menu, view history](_img/share-your-code-in-tfvc-vs/IC682957.png)
 
