@@ -19,7 +19,7 @@ ms.date: 04/13/2018
 > [!NOTE]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
 >
-> With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
+> On Tuesday, September 3rd support for Azure DevOps Server 2019 RTW imports will be deprecated. If you're planning to import from that version, please complete your import before September 3rd or upgrade to Azure DevOps Server 2019.0.1 
 
 ## Data migration tool for Azure DevOps
 
@@ -30,6 +30,8 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 > [!IMPORTANT] 
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
+>
+> On Tuesday, September 3rd, support for Azure DevOps Server 2019 RTW imports will be depreciated. If you’re planning on importing from that version, please complete your import before September 3rd or upgrade to Azure DevOps Server 2019.0.1.
 
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
