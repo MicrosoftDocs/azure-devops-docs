@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<=tfs-2015'
 ms.date: 12/15/2017
 ---
@@ -330,8 +331,8 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">  
    >       <States>  
    >       <State type="Proposed" value="New"/>  
-   >       <State type="InProgress value="Active" />  
-   >       <State type="InProgress value="Resolved" />  
+   >       <State type="InProgress" value="Active" />  
+   >       <State type="InProgress" value="Resolved" />  
    >       <State type="Complete" value="Closed" />  
    >       </States>  
    > </RequirementWorkItems>  
