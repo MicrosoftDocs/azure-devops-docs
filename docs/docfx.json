@@ -4,7 +4,8 @@
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md", 
+          "**/*.yml"
         ],
         "group": "all",
         "exclude": [

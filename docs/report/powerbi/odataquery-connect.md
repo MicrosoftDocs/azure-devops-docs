@@ -17,7 +17,7 @@ ms.date: 08/07/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Using OData queries is the recommended approach for pulling data into Power BI. To get started quickly, check out the [Overview of sample reports using OData queries](sample-odata-overview.md). For information on other approaches, read the [Power BI integration vverview](overview.md). 
+Using OData queries is the recommended approach for pulling data into Power BI. To get started quickly, check out the [Overview of sample reports using OData queries](sample-odata-overview.md). For information on other approaches, read the [Power BI integration overview](overview.md). 
 
 Power BI can execute OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages: 
 1. All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
