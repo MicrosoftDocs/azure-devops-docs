@@ -18,7 +18,9 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-The Azure DevOps Power BI Data connector works with Analytics views. For more information, see [what are Analytics Views](what-are-analytics-views.md).
+The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
+
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
 
 ## Prerequisites
 

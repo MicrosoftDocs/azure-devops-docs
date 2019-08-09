@@ -26,7 +26,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 [!INCLUDE [temp](_shared/steps-open-control-panel-team-project.md)]
 
-0. Rename the repo from the Version Control tab.
+1. Rename the repo from the Version Control tab.
 
    ![Rename a repository](_img/repo-rename/AdminVC.png)
 

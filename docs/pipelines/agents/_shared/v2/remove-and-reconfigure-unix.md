@@ -6,12 +6,12 @@ ms.topic: include
 
 To remove the agent:
 
-0. Stop and uninstall the service as explained above.
+1. Stop and uninstall the service as explained above.
 
-1. Remove the agent.
+2. Remove the agent.
    ```bash
    ./config.sh remove
    ```
-2. Enter your credentials.
+3. Enter your credentials.
 
 After you've removed the agent, you can [configure it again](#download-configure).

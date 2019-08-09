@@ -37,7 +37,7 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
+1. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
    ![Synchronization](_img/gitquickstart-vs2017/sync.png)
 
@@ -45,7 +45,7 @@ In this tutorial you learn how to:
 
    ![Synchronization](_img/gitquickstart-vs2017/commit-created-locally.png)
 
-1. Select **Push** to share your commit with the remote repository.
+2. Select **Push** to share your commit with the remote repository.
 
    ![Push](_img/gitquickstart-vs2017/push-to-origin.png)
 

@@ -118,18 +118,18 @@ To learn more, see [Version, select, or unpublish a published wiki](wiki-select-
 
 Deleting a project wiki isn't supported with wiki APIs, but you can delete the wiki repository by completing the following steps.
 
-0. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
+1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
 
    ![Clone the wiki repository](_img/wiki/clone-wiki.png)
 
-1. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+2. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
    
    For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
    This returns all the wikis in the project, "sampleProject." Here you can get the repository ID of the wiki that you want to delete.
 
    ![Clone the wiki repository, copy the URL](_img/wiki/clone-repository.png)
 
-2. Use the following REST API to delete the git repository.
+3. Use the following REST API to delete the git repository.
 	
     For example: DELETE https://dev.azure.com/fabrikam/_apis/git/repositories/{repositoryId}?api-version=4.1
 	Use the repository ID of the project wiki found using the previous step. Ensure that the repository ID matches the project wiki that you want to remove.

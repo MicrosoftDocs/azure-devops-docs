@@ -22,17 +22,17 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 ## Upload your code
 
-0. [Download our Node.js Hello World sample app](http://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip).
+1. [Download our Node.js Hello World sample app](http://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip).
 
-1. Do you have your own code?
+2. Do you have your own code?
 
    * No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
    * Yes:
 
-     0. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
+     1. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
 
-     1. Upload your code to Azure Repos or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
+     2. Upload your code to Azure Repos or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
 
 [What code is in the sample app?](#code)
 
