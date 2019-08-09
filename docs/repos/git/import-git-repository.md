@@ -97,28 +97,28 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 
 The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing TFS with Azure Repos in the following steps.
 
-0. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
+1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
     ```
     git clone --bare https://github.com/contoso/old-contoso-repo.git
     cd old-contoso-repo.git
     ```
 
-1. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+2. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
-2. Run the following command to copy the source repo to the target repo.
+3. Run the following command to copy the source repo to the target repo.
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
-3. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
+4. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 
     ```
     git lfs fetch origin --all
     git lfs push --all https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ```
-4. Delete the temporary folder by running the following commands.
+5. Delete the temporary folder by running the following commands.
 
     ```
     cd ..

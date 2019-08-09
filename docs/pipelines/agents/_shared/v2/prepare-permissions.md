@@ -8,7 +8,7 @@ As a one-time step, you must register the agent. Someone with permission to
 [administer the agent queue](/azure/devops/organizations/security/about-security-roles?view=azure-devops#agent-queue-security-roles)
 must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
-Learn more about [how agents communicate](/azure/devops/pipelines/agents#communication).
+Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#communication).
 
 ::: moniker range=">= tfs-2017"
 

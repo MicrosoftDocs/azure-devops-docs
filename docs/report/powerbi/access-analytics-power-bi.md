@@ -17,7 +17,10 @@ ms.date: 09/10/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)] 
 
-You can access Analytics data through the Power BI Desktop OData feed. This method works for any organization that has alternate credentials enabled in Azure DevOps. OAuth is currently not supported. 
+You can access Analytics data through the Power BI Desktop OData feed. 
+
+> [!IMPORTANT]  
+> This method works for small organizations, as it always pulls in all the data into Power BI. Most filtering specified in the Power Query Editor are done client-side. For information on other approaches, read the [Power BI Integration Overview](overview.md). 
 
 ## Access Analytics OData feed
 

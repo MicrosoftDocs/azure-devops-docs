@@ -19,6 +19,8 @@ ms.date: 04/05/2019
 
 An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
 
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+
 A default set of Analytics views are provided, as shown below. 
 
 ::: moniker range="azure-devops"

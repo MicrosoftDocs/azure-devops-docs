@@ -20,44 +20,34 @@ ms.date: 04/05/2019
 
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
-[!INCLUDE [temp](../_shared/powerbi-preview.md)]
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The easiest way to pull Azure DevOps data into Power BI is to use the [Power BI Data Connector](data-connector-connect.md). The Azure DevOps Power BI Data connector works with Analytics views. For more information, read [What are Analytics views](what-are-analytics-views.md).
- 
-::: moniker range="azure-devops"
+## Supported data connection methods
 
-![Power BI Azure DevOps Connector (Beta)](_img/pbi-getstarted-123.png)
+You can pull data from Analytics into Power BI in one of three ways. It is important to understand each method, before choosing. 
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-![Power BI Azure DevOps Server Connector (Beta)](_img/pbi-getstarted-123-onprem.png)
-
-::: moniker-end
-
-## Support data connection methods
-You can pull data from Analyticss into Power BI in one of three ways. 
 
 <table width="90%">
 <tbody valign="top">
     <tr>
         <td width="25%"><b>Connection Option</td>
         <td><b>Description</td>
+        <td><b>Considerations</td>
+    </tr>
+    <tr>
+        <td><a href="odataquery-connect.md">Connect using the OData queries</href></td>
+        <td>Power BI can execute OData queries. OData queries are very powerful and can filter and aggregate data before returning it to Power BI.</td>
+        <td><b>This is the recommended method</b>, except for simpler reports on Boards data. It requires you to write OData queries, which is similar to writing SQL queries. Fortunately, we provide several <a href="sample-odata-overview.md">sample reports</href></a> to help you get started.</td>
     </tr>
     <tr>
         <td><a href="data-connector-connect.md">Connect using the Azure DevOps Data Connector</href></td>
-        <td>The Azure DevOps Data connector is the recommended way to connect Power BI to Analytics. The connector simplifies the data model into a single table and models historical data to simplify trend reporting.
-        The Azure DevOps Power BI Data connector works with <a href="what-are-analytics-views.md">Analytics views</href></a>. Last updated February 4th, 2018</td>
+        <td>The Azure DevOps Data connector works with <a href="what-are-analytics-views.md">Analytics views</href></a>. To access <b>Analytics views</b>, you must enable the feature as described in <a href="/azure/devops/project/navigation/preview-features">Enable preview features</href></a></td>
+        <td><b>This connector only works with Boards data (work items)</b> and does not support other data types, such as Pipelines. It provides a flat-list of work items, and does not support work item hierarchies. At this point, we have no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data</td>
     </tr>
     <tr>
-        <td><a href="access-analytics-power-bi.md">Connect using the Power BI OData connector</href></td>
-        <td>Using the Power BI OData connector is not recommended for anything other than analysis of current work items. Analytics data model has relationships and advanced filters which are necessary for many scenarios and are not supported using the OData connector</td>
-    </tr>
-    <tr>
-        <td><a href="data-connector-functions.md">Connect using Azure DevOps functions</href></td>
-        <td>This option is intended for advanced users who need a greater degree of control of what data is included in the model. Using the functions, you can specify OData queries as well as combine data from other sources, such as Azure DevOps REST APIs. You can also support complex model structures not supported by the Azure DevOps Data Connector. 
-        Last updated February 4th, 2018</td>
+        <td><a href="access-analytics-power-bi.md">Connect using the Power BI's OData Feed connector</href></td>
+        <td>Power BI provides an OData Feed connector that allows you to connect to and browse the Analytic's OData endpoint. This is the typical way Power BI interacts with OData feeds. You can browse and select the entities and use its Query Editor to filter the dataset.</td>
+        <td><b>Only use this method if you have a small account.</b> This method does not support server-side query folding. All filters are applied client-side. This means all the data is pulled into Power BI before applying the filters. If you have a small account, this may work just fine for you. However, if you have a large account, then you will likely experience long refresh times and timeouts.</td>
     </tr>
 </tbody>
 </table>
