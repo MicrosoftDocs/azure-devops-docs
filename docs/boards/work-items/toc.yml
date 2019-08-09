@@ -125,6 +125,8 @@
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
+  - name: Manage process templates
+    href: guidance/manage-process-templates.md
 - name: Reference
   items:
   - name: Work item form controls
