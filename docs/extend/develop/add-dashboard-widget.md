@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/06/2019
+ms.date: 08/07/2019
 ---
 
 # Add a dashboard widget
@@ -72,7 +72,7 @@ Use the 'npm install' command to retrieve the SDK:
 npm install vss-web-extension-sdk
 ```
 
->To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
+To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 ### Step 2: Your HTML page - `hello-world.html`
 
@@ -144,13 +144,14 @@ This callback has the rest of the JavaScript code needed for the widget. At the 
 
 `VSS.register` is used to map a function in javascript, which uniquely identifies the widget among the different contributions in your extension. The name should match the `id` that identifies your contribution as described in [Step 5](#widget-extension-manifest). For widgets, the function that is passed to `VSS.register` should return an object that satisfies the `IWidget` contract,
 for example, the returned object should have a load property whose value is another function that has the core logic to render the widget. 
-In our case, it's simply to update the text of the `h2` element to "Hello World".
+In our case, it's to update the text of the `h2` element to "Hello World".
 It's this function that is called when the widget framework instantiates your widget.
 We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` as success.
 
 <div class="alert alert-warning">
 
-    <b>Warning</b>: If this name used to register the widget doesn&#39;t match the ID for the contribution in the manifest, then the widget functions unexpectedly.<br/></div> 
+> [!WARNING]
+> If this name used to register the widget doesn&#39;t match the ID for the contribution in the manifest, then the widget functions unexpectedly.
 
 > The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
 
@@ -230,15 +231,18 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 >The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
 
 #### Icons
+
 The **icons** stanza specifies the path to your extension's icon in your manifest. 
 
 #### Contributions
+
 Each contribution entry defines [properties](./manifest.md#contributions). 
 
 - The **ID** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in [Step 3](#widget-javascript) to register your widget.
 - The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
 - The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
 - The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
+
 
 | Property           | Description                                                                                                                         
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -265,13 +269,16 @@ Once you've written your extension, the next step towards getting it into the Ma
 as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command line interface (CLI) to package your extension. 
 
 #### Get the packaging tool
+
 You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](http://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
 ```
+ <a name="package-the-extension"/>
 
 #### Package your extension
+
 Packaging your extension into a .vsix file is effortless once you have the tfx-cli, navigate to your extension's home directory and run the following command.
 
 ```no-highlight
@@ -285,6 +292,7 @@ tfx extension create --manifest-globs vss-extension.json
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
 #### Create publisher for the extension
+
 All extensions, including extensions from Microsoft, are identified as being provided by a publisher.
 If you aren't already a member of an existing publisher, you'll create one.
 
@@ -302,6 +310,7 @@ but without the need to share a set of credentials across a set of users.
 **You need to update the `vss-extension.json` manifest file in the samples to replace the dummy publisher ID `fabrikam` with your publisher ID.**
 
 #### Publish and share the extension
+
 After creating a publisher, you can now upload your extension to the Marketplace.
 
 1. Find the <b>Upload new extension</b> button, navigate to your packaged .vsix file, and select <i>upload</i>.
@@ -933,7 +942,7 @@ A contribution entry for widget configuration has:
 - The **properties** that contain a set of properties that includes name, description, and the URI of the HTML file used for configuration.
 
 To support configuration, the widget contribution needs to be changed as well. The array of **targets** for the widget needs to be updated to include the ID for the configuration in the form 
-<`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration` 
+<`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration`. 
 
 <div class="alert alert-warning">
     <b>Warning</b>: If the contribution entry for your configurable widget doesn&#39;t target the 

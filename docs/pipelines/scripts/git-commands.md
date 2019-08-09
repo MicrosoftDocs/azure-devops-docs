@@ -29,6 +29,13 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 <a name="enable"></a>
 ## Enable scripts to run Git commands
 
+> [!NOTE]
+> Before you begin, be sure your account's default identity is set with:
+> ```
+> git config --global user.email "you@example.com"
+> git config --global user.name "Your Name"
+> ```
+
 ### Grant version control permissions to the build service
 
 Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>

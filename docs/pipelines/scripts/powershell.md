@@ -48,17 +48,17 @@ steps:
 
 You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
-0. Push your script into your repo.
+1. Push your script into your repo.
 
-1. Add a PowerShell build task.
+2. Add a PowerShell build task.
 
    ![Add task](_img/BldStepAddBegin.png)
 
    ![Add PowerShell task](_img/BldScriptPSAdd.png)
 
-2. Drag the build task where you want it to run.
+3. Drag the build task where you want it to run.
 
-3. Specify the name of the script.
+4. Specify the name of the script.
 
 ::: moniker-end
 
