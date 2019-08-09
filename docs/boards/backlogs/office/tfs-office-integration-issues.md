@@ -74,11 +74,11 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
 
 ### Run the Gacutil tool  
 
-0. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
+1. Open the Visual Studio Command Prompt and choose to run it as an administrator. 
 
 	<img src="_img/tfs-office-issues-run-developer-cmd-prompt.png" alt="Developer Command Prompt for VS2015 start menu with 'Run as administrator' context menu" style="border: 2px solid #C3C3C3;" />
 
-1. **For Office 2016 and Office 2013**, run the following commands:   
+2. **For Office 2016 and Office 2013**, run the following commands:   
 
    ```
    GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Policy.12.0.Microsoft.Office.Interop.Excel.dll
@@ -97,7 +97,7 @@ Install Visual Studio to ensure that you have access to the Visual Studio Comman
    ```
    GACUTIL /I C:\Windows\assembly\GAC_MSIL\Policy.12.0.office\14.0.0.0__71e9bce111e9429c\Policy.12.0.Office.dll
    ```  
-2. Once you've successfully run the `GACUTIL` commands, restart Excel and look for the Team Foundation Add-in. 
+3. Once you've successfully run the `GACUTIL` commands, restart Excel and look for the Team Foundation Add-in. 
 
 If the above steps are unsuccessful, try the following steps:
 1.	Perform a full [repair of Office](https://support.office.com/article/Repair-an-Office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b?ui=en-US&rs=en-US&ad=US). 

@@ -12,14 +12,14 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018
+ms.date: 08/07/2019
 ---
 
 # Quickstart: Create a Wiki for your project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
-In this quickstart, you learn how to open a wiki and provision a Git repo for your wiki.
+In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
 
 Every team project can have a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 
@@ -80,6 +80,9 @@ If you don't have access to create a Wiki Git repository or if you don't have ac
 Your administrator can provision the Wiki Git repository or you can request that they elevate your permissions. Stakeholders can't create a wiki, as they have no permissions to work in **Repos** or **Code**.
 
 The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your team project is 'foobar' then the Wiki repo is labeled 'foobar.wiki'.
+
+> [!NOTE]
+> If you want to provision more wikis, then you must [publish code as a wiki](publish-repo-to-wiki.md). You can set up multiple wiki repos within a single project.
 
 ### Why is the Git repository hidden?
 
