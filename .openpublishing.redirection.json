@@ -11814,6 +11814,11 @@
       "source_path": "docs/marketplace/approve-extensions.md",
       "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/plan-track-work.md",
+      "redirect_url": "/azure/devops/boards/get-started/plan-track-work",
+      "redirect_document_id": false
     }
   ]
 }
