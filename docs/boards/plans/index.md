@@ -20,6 +20,12 @@ ms.date: 11/19/2018
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../organizations/settings/index.md).
 
+
+### Video: Agile at Scale 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3wM7v]
+
+
 ## Quickstarts
 
 - [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
