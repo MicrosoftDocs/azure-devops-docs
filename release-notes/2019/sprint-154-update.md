@@ -16,6 +16,10 @@ We also made improvements to make it easier for you to search and track work ite
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/JKfAjEDlAnk]
+
 ## Features
 
 General:
