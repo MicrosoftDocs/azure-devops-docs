@@ -183,3 +183,19 @@ The Google Analytics experiments extension for Azure DevOps adds experimentation
 Pipeline caching lets you save the results of a long-running operation, like a package restore or a dependency compilation, and restore it back during the next run of a pipeline. This can result in faster builds. 
 
 For more details, see the blog post with the full announcement [here](https://devblogs.microsoft.com/devops/caching-and-faster-artifacts-in-azure-pipelines/).
+
+### Pipeline variable group and variable management commands
+
+It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/variable-group?view=azure-cli-latest) and [variable](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/variable?view=azure-cli-latest) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
+
+### Run pipeline for a PR branch
+
+When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/build?view=azure-cli-latest#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
+
+### Skip the first pipeline run
+
+When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-create) for more information.
+
+###Service endpoint command enhancement
+
+Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/service-endpoint?view=azure-cli-latest) for more information.
