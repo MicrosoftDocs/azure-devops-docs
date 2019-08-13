@@ -62,6 +62,7 @@ Below are the steps to create a build or release task extension and put it on th
 * [Optional: Install and test your extension](#installandtest)
 
 <a name="createtask" />
+
 ## Step 1: Create the custom task
 
 Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
@@ -243,6 +244,7 @@ Hello Human
 This time the task succeeded since ```samplestring``` was supplied, and it correctly outputted "Hello Human"!
 
 <a name="testscripts" />
+
 ## Step 2: Unit testing your task scripts
 
 The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to be able to test all aspects
@@ -384,6 +386,7 @@ $env:TASK_TEST_TRACE=1
 ```
 
 <a name="extensionmanifest" />
+
 ## Step 3: Create the extension manifest file
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build or release task.
 
@@ -415,6 +418,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 >For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
 
 <a name="packageext" />
+
 ## Step 4: Package your extension
 
 Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
@@ -433,8 +437,11 @@ tfx extension create --manifest-globs vss-extension.json
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
 <a name="publishext" />
+
 ## Step 5: Publish your extension
+
 <a name="createpublisher" />
+
 ### Create your publisher
 
 All extensions, including those from Microsoft, are identified as being provided by a publisher.
@@ -479,6 +486,7 @@ Share it with your organization so that you can install and test it.
 Now that your extension is in the Marketplace and shared, anyone who wants to use it must install it.
 
 <a name="installandtest" />
+
 ## Optional: Install and test your extension
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
