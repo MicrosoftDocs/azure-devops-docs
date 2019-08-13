@@ -219,7 +219,7 @@ A: This might happen due to any of the following circumstances:
 
 ### Q: Why is my organization already connected to a directory? Can I change that directory?
 
-A: Your organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. You can [disconnect your organization](disconnect-organization-from-aad.md) from this directory, and [reconnect to another directory](connect-organization-to-azure-ad.md). You might have to migrate some users.
+A: Your organization was connected to a directory when the organization Owner created the organization, or sometime after that. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. You can [disconnect your organization](disconnect-organization-from-aad.md) from this directory, and [reconnect to another directory](connect-organization-to-azure-ad.md). You might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 
