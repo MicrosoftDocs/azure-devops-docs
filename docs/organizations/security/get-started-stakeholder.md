@@ -58,7 +58,7 @@ For information about working with pipelines, see these articles:
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
-2. Enter your credentials. If you can't sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
+2. Enter your credentials. If you can't sign in, ask the organization owner or Project Administrator to add you as a member of the project with Stakeholder access. 
 
 
 <a id="create-work-item">  </a>

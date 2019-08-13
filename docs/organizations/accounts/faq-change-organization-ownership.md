@@ -2,7 +2,7 @@
 title: Troubleshoot changing the owner of an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn the answers to frequently asked questions (FAQs), like changing the organization owner and organization name (URL), learning the difference between an organization owner and user, and more.
+description: Learn the answers to frequently asked questions (FAQs), like changing the organization Owner and organization name (URL), learning the difference between an organization Owner and user, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
@@ -14,7 +14,7 @@ ms.date: 07/02/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Troubleshoot changing the organization owner
+# Troubleshoot changing the organization Owner
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -34,22 +34,22 @@ A: This might happen for one of the following reasons:
 
 * The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).  
 * The user hasn't created a Visual Studio profile and agreed to the Terms of Service.  
-* If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.  
-* If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements described in this article.
+* If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization Owners list.  
+* If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization Owners list until they meet the requirements described in this article.
 
 [!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
 
-#### Q: Can I reverse an organization owner change?
+#### Q: Can I reverse an organization Owner change?
 
 A: Yes, if you're a Project Collection Administrator.
 
 #### Q: Can I change the organization name (URL), too?
 
-A: Only the organization owner can change the URL. If you're the organization owner, learn how to [change the organization URL](rename-vsts-organization.md).
+A: Only the organization Owner can change the URL. If you're the organization Owner, learn how to [change the organization URL](rename-vsts-organization.md).
 
-#### Q: How many organization owners can I have?
+#### Q: How many organization Owners can I have?
 
-A: Your organization can have only one owner. Only organization owners can [perform certain actions](#owner-differences), so make sure you keep your organization owner updated.
+A: Your organization can have only one owner. Only organization Owners can [perform certain actions](#owner-differences), so make sure you keep your organization Owner updated.
 
 #### Q: Why did you ask for extra information when I signed in?
 
@@ -61,18 +61,18 @@ A: If our Terms of Service have changed since you last signed in, you might be a
 
 A: This is not a bug and is how it has been implemented. We hope to address this soon.
 
-#### Q: What makes the organization owner different from other organization users?
+#### Q: What makes the organization Owner different from other organization users?
 
-A: The organization owner manages payments and access for organization users. The organization owner also manages billing for the organization through the [Azure classic portal](https://manage.windowsazure.com/) or the [Azure portal](https://portal.azure.com). 
+A: The organization Owner manages payments and access for organization users. The organization Owner also manages billing for the organization through the [Azure classic portal](https://manage.windowsazure.com/) or the [Azure portal](https://portal.azure.com). 
 
 Organization owners also have permissions to perform the following tasks:
 
 * Pay for users to access the organization
 * Pay for additional organization services
 * Rename the organization URL
-* Change the organization owner
+* Change the organization Owner
 
-Project collection administrators can manage user access and change the organization owner, but they can't rename the organization URL.
+Project collection administrators can manage user access and change the organization Owner, but they can't rename the organization URL.
 
 <a name="ChooseOrgAcctMSAcct"></a>
 

@@ -40,7 +40,7 @@ A project defines a process and data storage in which you manage your software p
 
 ## Connect from the web portal
 
-1. If you're not a member of a security group, ask your project administrator to add you.  
+1. If you're not a member of a security group, ask your Project Administrator to add you.  
 
 2. Open a browser window and enter a URL that uses the following form:  
 
@@ -264,7 +264,7 @@ You can locate the executable in the following folder: `*Drive*:\\Program Files 
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first 5 account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 

@@ -6,7 +6,7 @@
   items:
   - name: View permissions 
     href: view-permissions.md
-  - name: Look up the organization owner or a project administrator
+  - name: Look up the organization owner or a Project Administrator
     href: lookup-organization-owner-admin.md
   - name: Add users to a project or team 
     href: add-users-team-project.md

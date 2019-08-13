@@ -18,9 +18,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-#### Q: When do I need to add someone to the project collection administrator role in Azure DevOps?
+#### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
 
-A: It varies. For most organizations that use Azure DevOps, project collection administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
+A: It varies. For most organizations that use Azure DevOps, Project Collection Administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
 
 #### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
@@ -32,7 +32,7 @@ A: Project collection administrators must be members of the following groups or 
 
 - Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
 
-#### Q: I'm an admin, but I don't have permission to add a project collection administrator. What do I need?
+#### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
 
 A: The following permissions are required:
 

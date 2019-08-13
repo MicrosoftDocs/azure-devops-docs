@@ -44,7 +44,7 @@ To configure costs for Azure DevOps, see the [pricing calculator](https://azure.
 
 Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
 
-* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
