@@ -43,7 +43,7 @@ As your team grows, you can easily move from one team to two. In this example, w
 ## Prerequisites 
 
 - If you don't have a project yet, [create one](../projects/create-project.md).  
-- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
+- If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.   
 
 
 ## Add two feature teams 

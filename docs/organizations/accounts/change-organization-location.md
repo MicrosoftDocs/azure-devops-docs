@@ -33,4 +33,4 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Change organization location
 
-To change your organization region, contact [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization owner.
+To change your organization region, contact [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization Owner.

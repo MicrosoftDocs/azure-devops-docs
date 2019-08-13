@@ -22,7 +22,7 @@ If an organization user's personal access token (PAT) has been compromised, we r
 
 ## Prerequisites
 
-Only an organization administrator or project collection administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization owner](../security/lookup-organization-owner-admin.md).
+Only an organization administrator or Project Collection Administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization Owner](../security/lookup-organization-owner-admin.md).
 
 For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
