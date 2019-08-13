@@ -4,12 +4,12 @@ A: If you have at least Basic access, you can find your [Project Collection Admi
 
 ::: moniker range=">= azure-devops-2019"
 
-1. See [Show members of the Project Collection Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-collection-administrators-group).
+See [Show members of the Project Collection Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-collection-administrators-group).
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 
-1. See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
+See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
 
 ::: moniker-end
