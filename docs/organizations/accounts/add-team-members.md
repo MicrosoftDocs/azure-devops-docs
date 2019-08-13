@@ -34,12 +34,12 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 ## Prerequisites
 
 * If you don't have a project yet, first [create your project](../projects/connect-to-projects.md).
-* To add members to projects, you need [*project administrator*](../security/set-project-collection-level-permissions.md), [*project collection administrator*, or *organization owner*](faq-add-team-members.md#find-pca-owner) permissions.
+* To add members to projects, you need [*Project Administrator*](../security/set-project-collection-level-permissions.md), [*Project Collection Administrator*, or *organization Owner*](faq-add-team-members.md#find-pca-owner) permissions.
 * If your new members don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
 ## Add members to your project
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *Project Administrator*, *Project Collection Administrator*, or *organization Owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 

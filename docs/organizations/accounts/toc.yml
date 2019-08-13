@@ -16,7 +16,7 @@
   items:
   - name: Manage your organization
     items:
-    - name: Change organization owner
+    - name: Change organization Owner
       href: change-organization-ownership-vs.md
     - name: Rename organization
       href: rename-vsts-organization.md
@@ -84,7 +84,7 @@
     href: faq-change-app-access.md
   - name: Add administrators
     href: faq-add-administrators.md
-  - name: Change organization ownership
+  - name: Change organization Ownership
     href: faq-change-organization-ownership.md
   - name: Delete and restore organization
     href: faq-delete-restore-organization.md

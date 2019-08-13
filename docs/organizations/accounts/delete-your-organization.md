@@ -33,7 +33,7 @@ When you delete your organization, note the following:
 
   You're still charged for any paid users and services used during this billing cycle. Billing stops after the current cycle ends.
 
-To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
+To delete your organization, you need organization Owner permissions. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
 
 ## Prerequisites
 
@@ -41,8 +41,8 @@ If your organization uses an Azure subscription to bill purchases, you must [fir
 
 ## Delete organization
 
-To delete your organization, you need at least Basic access and organization owner
-permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
+To delete your organization, you need at least Basic access and organization Owner
+permissions. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

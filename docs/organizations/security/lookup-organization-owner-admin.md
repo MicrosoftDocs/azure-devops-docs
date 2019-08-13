@@ -34,7 +34,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Show members of the Project Administrators group
 
-If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
+If you aren't a Project Administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
 
 ::: moniker range=">= azure-devops-2019"
 
