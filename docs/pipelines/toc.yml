@@ -526,6 +526,8 @@
         href: tasks/package/npm-authenticate.md
       - name: NuGet
         href: tasks/package/nuget.md
+      - name: NuGet Authenticate
+        href: tasks/package/nuget-authenticate.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
