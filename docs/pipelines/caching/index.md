@@ -17,36 +17,56 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > Pipeline caching is in preview and should not be used in production pipelines. Please [report any issues](#known-issues-and-feedback) you experience, including problems determining the appropriate settings for your scenario.
 
-Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing (or avoid) the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
+Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing or avoiding the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
 
 Caching can be effective at improving build time provided the time to restore and save the cache is less than the time to produce the output again from scratch. Because of this, caching may not be effective in all scenarios and may actually have a negative impact on build time.
 
-### Comparison with artifacts
+Caching is currently supported in CI and deployment jobs, but not classic release jobs.
 
-Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions, but are designed for different scenarios and should not be used interchangeably. In general:
+### When to use artifacts versus caching
 
-* Use pipeline artifacts when you need to pass specific files from one job to another, and the second job will fail without them.
+Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) perform similar functions but are designed for different scenarios and should not be used interchangeably. In general:
 
-* Use pipeline caching when you want to improve build time by reusing files from the previous run. Not having these files will not impact the job's ability to run.
+* **Use pipeline artifacts** when you need to take specific files produced in one job and share them with other jobs (and these other jobs will likely fail without them).
 
-## Get started
+* **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
-Caching is enabled via the `CacheBeta` pipeline task. This task works like any other task and is added to the `steps` section of a job. When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps have run and assuming a successful job status, a special "post" step is run for each cache step. This step is responsible for saving the cache.
+## Using the Cache task
 
-> [!NOTE]
-> Currently there is no way to control when (or if) the cache save operation occurs; it always runs if the job completed successfully.
+Caching is added to a pipeline using the `CacheBeta` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-### Task configuration
-
-The Cache task has two required inputs: `key` and `path`. The key is the identifier of the cache you want to restore (or save). The path is the directory you want to restore the cache into and is also the directory that the cache is populated from when the cache is created.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
-> Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
+> Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the Q & A section for additional details.
 
-The key is composed of one or more strings (like the name of the tool, name of the job, current OS name) or file paths separated by a newline. For file paths, a hash is produced from the contents of the file. Using file paths in your cache key is useful when your project has a file that uniquely identifies a set of dependencies to be cached, like `package-lock.json`, `yarn.lock`, `Gemfile.lock`, or `Pipfile.lock`.
+### Configuring the task
 
-> [!NOTE]
-> Currently file paths in the cache key cannot contain wildcard characters, but we are working to add support for glob-style patterns.
+The `CacheBeta` task has two required inputs: `key` and `path`. 
+
+#### Path input
+
+`path` should be set to the directory to populate the cache from (on save) and to store files in (on restore). It can be absolute or relative. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
+
+#### Key input
+
+`key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
+
+* **Strings**: fixed value (like the name of the cache or a tool name) or taken from an environment variables (like the current OS or current job name)
+
+* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. This  could result in the task failing when this "file" does not exist. 
+  > [!TIP]
+  > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
+
+* **File patterns**: comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+  * `**/package-lock.json`: all package-lock.json files under the sources directory
+  * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
+
+The contents of any file identified by a file path or file pattern is hashed to produce a dynamic cache key. This is useful when your project has file(s) that uniquely identify what is being cached. For example, files like `package-lock.json`, `yarn.lock`, `Gemfile.lock`, or `Pipfile.lock` are commonly referenced in a cache key since they all represent a unique set of dependencies.
+
+Relative file paths or file patterns are resolved against `$(System.DefaultWorkingDirectory)`.
+
+#### Example
 
 Here is an example showing how to cache dependencies installed by Yarn:
 
@@ -57,10 +77,7 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: |
-      yarn
-      $(Agent.OS)
-      $(Build.SourcesDirectory)/yarn.lock
+    key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -69,14 +86,14 @@ steps:
 
 In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file which uniquely identifies the set of dependencies in the cache.
 
-On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.cache/yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
 
 ## Cache isolation and security
 
 To ensure isolation between caches from different pipelines and different branches, every cache belongs to a logical container called a scope. Scopes provide a security boundary that ensures a job from one pipeline cannot access the caches from a different pipeline, and a job building a PR has read access to the caches for the PR's target branch (for the same pipeline), but cannot write (create) caches in the target branch's scope.
 
-> [!NOTE]
-> Because caches are scoped to a project, pipeline, and branch, there is no need to include project, pipeline, or branch identifiers in your cache key.
+> [!TIP]
+> Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
 
 When a cache step is encountered during a run, the cache identified by the key is requested from the server. The server then looks for a cache with this key from the scopes visible to the job, and returns the cache (if available). On cache save (at the end of the job), a cache is written to the scope representing the pipeline and branch. See below for more details.
 
@@ -111,7 +128,7 @@ In the following example, the `install-deps.sh` step is skipped when the cache i
 steps:
 - task: CacheBeta@0
   inputs:
-    key: mykey
+    key: mykey | mylockfile
     path: $(Pipeline.Workspace)/mycache
     cacheHitVar: CACHE_RESTORED
 
@@ -129,16 +146,15 @@ For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable
 
 ```yaml
 variables:
-  BUNDLE_PATH: $(Pipeline.Workspace)/.cache/bundle
+  BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
 
 steps:
 - task: CacheBeta@0
   inputs:
-    key: |
-      gems
-      $(Agent.OS)
-      $(Build.SourcesDirectory)/my.gemspec
+    key: gems | $(Agent.OS) | my.gemspec
     path: $(BUNDLE_PATH)
+  displayName: Cache gems
+
 - script: bundle install
 ```
 
@@ -148,7 +164,6 @@ steps:
 
 ### Example
 
-
 ```yaml
 variables:
   CCACHE_DIR: $(Pipeline.Workspace)/ccache
@@ -157,17 +172,17 @@ steps:
 - bash: |
     sudo apt-get install ccache -y    
     echo "##vso[task.prependpath]/usr/lib/ccache"
-  displayName: Install ccache and use linked version of gcc, cc, etc
+  displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
 - task: CacheBeta@0
   inputs:
-    key: $(Agent.OS)
+    key: ccache | $(Agent.OS)
     path: $(CCACHE_DIR)
   displayName: ccache
 ```
 
 > [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature:  [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
+> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
 
 See [ccache configuration settings](
 https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
@@ -185,7 +200,7 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: $(Agent.OS)
+    key: gradle | $(Agent.OS)
     path: $(GRADLE_USER_HOME)
   displayName: Gradle build cache
 
@@ -213,14 +228,34 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: $(Build.SourcesDirectory)/pom.xml
+    key: maven | **/pom.xml
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
 - script: mvn install -B -e
 ```
 
-## npm
+## .NET/NuGet
+
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NPM_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+
+### Example
+
+```yaml
+variables:
+  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+
+steps:
+- task: CacheBeta@0
+  inputs:
+    key: nuget | packages.lock.json
+    path: $(NUGET_PACKAGES)
+  displayName: Cache NuGet packages
+```
+
+See [Package reference in project files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) for more details.
+
+## Node.js/npm
 
 There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules which can reduce or eliminate network calls to the public npm registry or to a private registry.
 
@@ -235,7 +270,7 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: $(Build.SourcesDirectory)/package-lock.json
+    key: npm | $(Agent.OS) | package-lock.json
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -244,10 +279,10 @@ steps:
 
 If your project does not have a `package-lock.json` file, reference the `package.json` file in the cache key input instead.
 
-> [!NOTE]
-> The `npm ci` command deletes the `node_modules` folder to ensure a consistent, repeatable set of modules is used. Therefore you should avoid caching `node_modules` when using `npm ci`.
+> [!TIP]
+> Because `npm ci` deletes the `node_modules` folder to ensure that a consistent, repeatable set of modules is used, you should avoid caching `node_modules` when calling `npm ci`.
 
-## Yarn
+## Node.js/Yarn
 
 Like with npm, there are different ways to cache packages installed with Yarn. The recommended way is to cache Yarn's [shared cache folder](https://yarnpkg.com/lang/en/docs/cli/cache/). This directory is managed by Yarn and contains a cached version of all downloaded packages. During install, Yarn checks this directory first (by default) for modules, which can reduce or eliminate network calls to public or private registries.
 
@@ -260,10 +295,7 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: |
-      yarn
-      $(Agent.OS)
-      $(Build.SourcesDirectory)/yarn.lock
+    key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -274,13 +306,30 @@ steps:
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
 
-### Top feature requests
+## Q & A
 
-* [10859 - Support wildcard/glob file patterns in cache key](https://github.com/microsoft/azure-pipelines-tasks/issues/10859)
-* [10842 - Enable fallback keys](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
-* [10841 - Include file attributes](https://github.com/microsoft/azure-pipelines-tasks/issues/10841)
+<!-- BEGINSECTION class="md-qanda" -->
 
-### Top bugs
+### Can I clear a cache?
 
-* [10858 - Relative file paths in cache key should be resolved against $(System.DefaultWorkingDirectory)](https://github.com/microsoft/azure-pipelines-tasks/issues/10858)
+Clearing a cache is currently not supported. However you can add a string literal (e.g. `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
 
+```yaml
+key: yarn | $(Agent.OS) | yarn.lock
+```
+
+to this:
+
+```yaml
+key: version2 | yarn | $(Agent.OS) | yarn.lock
+```
+
+### When does a cache expire?
+
+A cache will expire after 7 days of no activity.
+
+### Is there a limit on the size of a cache?
+
+During the public preview, there is no enforced limit on the size of individual caches or the total size of all caches in an organization.
+
+<!-- ENDSECTION -->

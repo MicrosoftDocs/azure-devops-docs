@@ -36,6 +36,7 @@ Optional tasks to consider include:
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Open the team profile and access team tools
 
 - Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 
@@ -360,16 +361,39 @@ For details on each configuration option, see one of the following articles:
 ## Configure Kanban boards 
 
 Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
+
 * [Columns](../../boards/boards/add-columns.md)  
 * [WIP limits](../../boards/boards/wip-limits.md)    
 * [Definition of Done](../../boards/boards/definition-of-done.md)  
 
 ::: moniker range=">= tfs-2015" 
+
 Additional elements you can configure include: 
 * [Split columns](../../boards/boards/split-columns.md)   
 * [Swimlanes](../../boards/boards/expedite-work.md)  
 * [Card fields, styles, tag colors, annotations, and card reordering](../../boards/boards/customize-cards.md#kanban-board)    
+
 ::: moniker-end
+
+
+::: moniker range=">= tfs-2015" 
+
+## Configure sprint Taskboards 
+
+::: moniker-end
+
+::: moniker range="azure-devops" 
+
+Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards as well as addition of customized columns. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops" 
+
+Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2017" 
 
@@ -387,6 +411,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 ::: moniker-end
 
 <a id="team-description" />
+
 ## Update team description and picture
 
 Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB. 
@@ -399,6 +424,7 @@ Team administrators can add and modify alerts so that the team can receive email
 <a id="team-rooms" />
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
+
 ## Manage team rooms 
 
 Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  
