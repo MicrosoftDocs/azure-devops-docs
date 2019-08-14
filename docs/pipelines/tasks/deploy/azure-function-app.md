@@ -52,17 +52,21 @@ steps:
   displayName: Azure Function App Deploy
   inputs:
     azureSubscription: $(azureSubscription)
-    appType: functionApp
     appName: samplefunctionapp
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 ```
-To deploy Function on Linux, set the appType parameter to **appType: functionAppLinux**.
+To deploy Function on Linux, add the appType parameter and set it to <code>appType: functionAppLinux</code>. If not mentioned, <code>functionApp</code> is taken as the default value.
+
+To explicitly specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>. 
+If not mentioned, <code>auto</code> is taken as the default value.
 
 For an end-to-end walkthrough, see [Build and deploy Java to Azure Functions](../../languages/java-function.md) for End-to-end CI/CD.
 
 ## Deployment methods
 
-Several deployment methods are available in this task. Auto is the default option. To change the deployment option, expand Additional Deployment Options and enable Select deployment method to choose from additional package-based deployment options.
+Several deployment methods are available in this task. Auto is the default option. 
+
+To change the deployment option in designer task, expand Additional Deployment Options and enable Select deployment method to choose from additional package-based deployment options.
 
 Based on the type of Azure App Service and Azure Pipelines agent, the task chooses a suitable deployment technology. The different deployment technologies used by the task are:
 
@@ -81,7 +85,6 @@ By default the task tries to select the appropriate deployment technology given 
 * For all others, use Run From Package (via Zip Deploy) 
 
 On non-Windows agent (for any App service type), the task relies on [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API) to deploy the Web App.
-
 
 ### [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API)
 

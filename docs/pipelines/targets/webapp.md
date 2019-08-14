@@ -85,7 +85,7 @@ Now you're ready to read through the rest of this topic to learn some of the mor
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
+The simplest way to deploy to an Azure Web App is to use the **Azure Web App Deploy** (`AzureWebApp`) task.
 
 ### Deploy a Web Deploy package (ASP.NET)
 
@@ -93,11 +93,11 @@ To deploy a .zip Web Deploy package (for example, from an [ASP.NET web app](../a
 add the following snippet to your azure-pipelines.yml file:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureWebApp@1
   inputs:
     azureSubscription: '<Azure service connection>'
-    WebAppName: '<Name of web app>'
-    Package: $(System.ArtifactsDirectory)/**/*.zip
+    appName: '<Name of web app>'
+    package: $(System.ArtifactsDirectory)/**/*.zip    
 ```
 
 The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.ArtifactsDirectory)` folder on your agent.
@@ -106,14 +106,15 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a Java app
 
-If you're building a [Java app](../apps/java/build-gradle.md), use the following snippet to deploy the web archive (.war):
+If you're building a [Java app](../apps/java/build-gradle.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureWebApp@1
   inputs:
     azureSubscription: '<Azure service connection>'
-    WebAppName: '<Name of web app>'
-    Package: '$(System.DefaultWorkingDirectory)/**/*.war'
+    appType: webAppLinux
+    appName: '<Name of web app>'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
 ```
 
 The snippet assumes that the build steps in your YAML file produce the .war archive in one of the folders in your source code folder structure;
@@ -125,17 +126,16 @@ For information on Azure service connections, see the [following section](#endpo
 ### Deploy a JavaScript Node.js app
 
 If you're building a [JavaScript Node.js app](../languages/javascript.md), you publish the entire contents of your
-working directory to the web app. The following snippet also generates a Web.config file during deployment and starts
+working directory to the web app. The following snippet also generates a Web.config file during deployment if the application does not have one and starts
 the iisnode handler on the Azure Web App:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureWebApp@1
   inputs:
     azureSubscription: '<Azure service connections>'
-    WebAppName: '<Name of web app>'
-    Package: '$(System.DefaultWorkingDirectory)'
-    GenerateWebConfig: true
-    WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'
+    appName: '<Name of web app>'
+    package: '$(System.DefaultWorkingDirectory)'
+    customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
 ```
 
 For information on Azure service connections, see the [following section](#endpoint).
@@ -148,8 +148,12 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
-The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** task.
+# [Classic](#tab/classic)
+::: moniker range=">= azure-devops-2019"
+The simplest way to deploy to an Azure Web App is to use the **Azure Web App Deploy** task.
+::: moniker-end
+
+To deploy to any Azure App service (Web app for Windows, Linux, container, Function app or web jobs), use the **Azure App Service Deploy** task.
 This task is automatically added to the release pipeline when you select one of the prebuilt deployment templates for Azure App Service deployment.
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
@@ -162,13 +166,13 @@ This is where the task picks up the web package for deployment.
 
 ## Azure service connection
 
-The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
+All the built-in Azure tasks require an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+You must supply an Azure service connection to the `AzureWebApp` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -199,7 +203,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the following:
+By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the `VirtualApplication` property of the `AzureRmWebAppDeployment` task:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -230,13 +234,11 @@ You can configure the Azure Web App to have multiple slots. Slots allow you to s
 The following example shows how to deploy to a staging slot, and then swap to a production slot:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureWebApp@1
   inputs:
     azureSubscription: '<Azure service connection>'
-    WebAppName: '<name of web app>'
-    DeployToSlotFlag: true
-    ResourceGroupName: '<name of resource group>'
-    SlotName: staging
+    appName: '<name of web app>'
+    slotName: staging
 
 - task: AzureAppServiceManage@0
   inputs:
@@ -255,7 +257,16 @@ YAML pipelines aren't available on TFS.
 
 #### [Classic](#tab/classic/)
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
-Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
+
+::: moniker range=">= azure-devops-2019"
+Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App Deploy** task to specify the slot to deploy to. 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+Use the option **Deploy to Slot or App Service Environment** in the **Azure App Service Deploy** task to specify the slot to deploy to. 
+::: moniker-end
+
+You can swap the slots by using the **Azure App Service Manage** task.
 
 * * *
 ## Deploy to multiple web apps
@@ -279,10 +290,10 @@ jobs:
   # the following will publish an artifact called drop
   - task: PublishBuildArtifacts@1
 
-  - task: AzureRmWebAppDeployment@3
+  - task: AzureWebApp@1
     inputs:
       azureSubscription: '<Test stage Azure service connection>'
-      WebAppName: '<name of test stage web app>'
+      appName: '<name of test stage web app>'
 
 - job: prod
   pool:
@@ -296,10 +307,10 @@ jobs:
     inputs:
       artifactName: drop
 
-  - task: AzureRmWebAppDeployment@3
+  - task: AzureWebApp@1
     inputs:
       azureSubscription: '<Prod stage Azure service connection>'
-      WebAppName: '<name of prod stage web app>'
+      appName: '<name of prod stage web app>'
 ```
 
 ::: moniker-end
@@ -317,11 +328,23 @@ You can control the order of deployment. To learn more, see [Stages](../process/
 * * *
 ## Configuration changes
 
-You might want to apply a specific configuration for your web app target before deploying to it.
+For most language stacks, [app settings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-app-settings) and [connection strings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
+App settings can also be resolved from Key Vault using [Key Vault references](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references).
+
+For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
+You might want to apply a specific configuration for your web app target before deploying to it. 
 This is particularly useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your Web.config file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
-a Web.config transformation or by substituting variables in your Web.config file.
+a Web.config transformation or by substituting variables in your Web.config file. 
+
+**Azure App Service Deploy task version 3** allows users to modify configuration settings in configuration files (*.config files) inside web packages and XML parameters files (parameters.xml), based on the stage name specified.
+
+::: moniker range="> tfs-2018"
+> [!NOTE]  
+> File transforms and variable substitution are also supported by the separate [File Transform task](../tasks/utility/file-transform.md) for use in Azure Pipelines.
+  You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+::: moniker-end
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -384,11 +407,11 @@ To do this in YAML, you can use one of these techniques:
 The following example shows how to use step conditions to deploy only builds that originate from the master branch:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureWebApp@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
     azureSubscription: '<Azure service connection>'
-    WebAppName: '<Name of web app>'
+    appName: '<name of web app>'
 ```
 
 To learn more about conditions, see [Specify conditions](../process/conditions.md).

@@ -57,12 +57,17 @@ steps:
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 ```
 
-To deploy Web App for linux, set the appType parameter to `appType: webAppLinux`.
+To deploy Web App for linux, set the appType parameter to <code>appType: webAppLinux</code>.
+
+To specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>. 
+If not mentioned, <code>auto</code> is taken as the default value.
 
 <a name="deployment-methods"></a>
 ## Deployment methods
 
-Several deployment methods are available in this task. Auto is the default option. To change the deployment option, expand Additional Deployment Options and enable **Select deployment method** to choose from additional package-based deployment options.
+Several deployment methods are available in this task. <code>Auto</code> is the default option. 
+
+To change the deployment option in designer task, expand Additional Deployment Options and enable **Select deployment method** to choose from additional package-based deployment options.
 
 Based on the type of Azure App Service and Azure Pipelines agent, the task chooses a suitable deployment technology. The different deployment technologies used by the task are:
 
