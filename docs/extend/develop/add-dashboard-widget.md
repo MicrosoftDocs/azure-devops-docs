@@ -135,7 +135,7 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
-
+<a name="vss-methods"></a>
 
 `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
 We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when we're done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded.
