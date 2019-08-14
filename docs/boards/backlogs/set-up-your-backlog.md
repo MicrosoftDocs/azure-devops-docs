@@ -86,10 +86,9 @@ If you don't see the work items you expect on your [product Backlog](create-your
 3. Add the <strong>State</strong>, <strong>Area Path</strong> and <strong>Iteration Path</strong> fields to the [column options](set-column-options.md).
 
 4. Check the query results and that the values of the work items you expect to show up on your backlog meet these criteria:
-
-- <strong>Area Path</strong> belongs to your team's area path(s)
-- <strong>Iteration Path</strong> belongs under your team's default iteration path
-- <strong>State</strong> isn't Closed, Completed, Done, or Removed. 
+	- <strong>Area Path</strong> belongs to your team's area path(s)
+	- <strong>Iteration Path</strong> belongs under your team's default iteration path
+	- <strong>State</strong> isn't Closed, Completed, Done, or Removed. 
 
 > [!NOTE]
 > You can also filter your product backlog to show or hide work items that are in an **In Progress** state category, corresponding to an Active, Resolved, Committed, Doing workflow state. 
@@ -303,13 +302,18 @@ The following settings can impact on the type and number of work items that will
 - In your Kanban board, newly added work items may not appear if they are stack ranked lower within the product backlog. By choosing the <strong>Show more items</strong> link, you can cause the board to refresh and display these additional items. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Backlogs, View Options, Hide In Progress](_img/setup-backlog/show-more-items.png)  
+	> ![Boards, Show more items](_img/setup-backlog/show-more-items.png) 
 
 - If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
 - If you have turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 
-	::: moniker range=">= azure-devops-2019"  
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Backlogs, View Options, Hide In Progress](_img/setup-backlog/hide-in-progress-s155.png)  
+	::: moniker-end
+
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Backlogs, View Options, Hide In Progress](_img/setup-backlog/hide-in-progress.png)  
 	::: moniker-end
