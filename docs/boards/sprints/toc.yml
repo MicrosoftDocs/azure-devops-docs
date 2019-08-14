@@ -20,11 +20,14 @@
     href: adjust-work.md
   - name: 5. Share your sprint plan 
     href: share-plan.md
-  - name: 6. Update the taskboard 
+  - name: 6. Update the Taskboard 
+    displayname: status, remaining work, scope 
     href: task-board.md
   - name: Monitor sprint burndown
+    displayname: charts, in-context charts, in context reports, remaining work, scope 
     href: sprint-burndown.md
   - name: Forecast
+    displayname: velocity, sprints, iterations  
     href: forecast.md
 - name: Concepts
   items:
@@ -34,7 +37,11 @@
     href: scrum-key-concepts.md
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
-
+- name: How-to-Guides
+  items:
+  - name: Customize a Taskboard
+    displayname: cards, fields, styles, columns 
+    href: customize-taskboard.md
 
 
 
