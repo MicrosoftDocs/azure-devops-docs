@@ -421,16 +421,30 @@ or package the build output into a .zip file to be deployed to a web application
 
 ### Publish artifacts to Azure Pipelines
 
-To simply publish the output of your build to Azure Pipelines, add the following code to your `azure-pipelines.yml` file:
+To publish the output of your .NET **build**, 
+* Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on CLI or add the DotNetCoreCLI@2 task with publish command.
+* Publish the artifact by using Publish artifact task.
+
+Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 steps:
-# ...
-# do this near the end of your pipeline in most cases
-- task: PublishBuildArtifacts@1
-```
 
-This code takes all the files in `$(Build.ArtifactStagingDirectory)` and upload them as an artifact of your build. For this task to work, you must have already published the output of your build to this directory by using the `dotnet publish --output $(Build.ArtifactStagingDirectory)` command. To copy additional files to this directory before publishing, see [Utility: copy files](../tasks/utility/copy-files.md).
+- task: DotNetCoreCLI@2
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+
+# this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'myWebsiteName'
+
+```
+To copy additional files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
 
