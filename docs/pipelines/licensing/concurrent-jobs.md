@@ -41,12 +41,11 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 
 We provide a *free tier* of service by default in your organization:
 
-- Public project: 10 free self-hosted parallel jobs.
+- Public project: Unlimited parallel jobs.
 - Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
 
 When the free tier is no longer sufficient:
 
-- Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
 - Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 There are no time limits on self-hosted jobs.
