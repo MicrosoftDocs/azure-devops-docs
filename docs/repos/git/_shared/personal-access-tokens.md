@@ -73,11 +73,8 @@ Your token is your identity and represents you when it's used. Keep your tokens 
 See the following examples of using your PAT.
 
 - Username: anything 
-- Password: your PAT here 
-
-or
- 
-- git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
+- Password: your PAT here  
+- git clone https://Username:Password@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
 
 
 
