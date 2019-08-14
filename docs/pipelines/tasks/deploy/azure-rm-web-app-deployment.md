@@ -112,6 +112,19 @@ steps:
     DockerRepository: $(DockerRepository)
     DockerImageTag: $(Build.BuildId)
 ```
+* To deploy to a specific app type, set <code>appType</code> to any of the following accepted values:  <code>webApp</code> (Web App on Windows), <code>webAppLinux</code> (Web App on Linux), <code>webAppContainer</code> (Web App for Containers - Linux), <code>functionApp</code> (Function App on Windows), 
+<code>functionAppLinux</code> (Function App on Linux), <code>functionAppContainer</code> (Function App for Containers - Linux), <code>apiApp</code> (API App), <code>mobileApp</code> (Mobile App).
+If not mentioned, <code>webApp</code> is taken as the default value.
+
+* To enable any advance deployment options, add the parameter <code>enableCustomDeployment: true</code> and include the below parameters as needed.
+
+  ```YAML
+      # deploymentMethod: 'runFromPackage' # supports zipDeploy as well
+      # appOffline: boolean    # Not applicable for 'runFromPackage'
+      # setParametersFile: string
+      # removeAdditionalFilesFlag: boolean
+      # additionalArguments: string
+  ```
 
 ## Output Variables
 
