@@ -137,10 +137,10 @@ The build stage uses the [Docker task](../tasks/build/docker.md) to build and pu
         tags: |
           $(tag)
           
-    - task: PublishPipelineArtifact@0
+    - task: PublishPipelineArtifact@1
       inputs:
         artifactName: 'manifests'
-        targetPath: 'manifests'
+        path: 'manifests'
 ```
 
 The deployment job uses the _Kubernetes manifest task_ to create the `imagePullSecret` required by Kubernetes cluster nodes to pull from the Azure Container Registry resource. Manifest files are then used by the Kubernetes manifest task to deploy to the Kubernetes cluster.
@@ -159,7 +159,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
       runOnce:
         deploy:
           steps:
-          - task: DownloadPipelineArtifact@1
+          - task: DownloadPipelineArtifact@2
             inputs:
               artifactName: 'manifests'
               downloadPath: '$(System.ArtifactsDirectory)/manifests'

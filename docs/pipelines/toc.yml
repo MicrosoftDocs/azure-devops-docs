@@ -526,6 +526,8 @@
         href: tasks/package/npm-authenticate.md
       - name: NuGet
         href: tasks/package/nuget.md
+      - name: NuGet Authenticate
+        href: tasks/package/nuget-authenticate.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
@@ -546,6 +548,10 @@
           href: tasks/package/prev-versions/nuget-publisher-0.md
         - name: NuGet Command 0.*
           href: tasks/package/nuget.md#custom-nuget-command
+        - name: Pip Authenticate 0.*
+          href: tasks/package/prev-versions/pip-authenticate-0.md
+        - name: Twine Authenticate 0.*
+          href: tasks/package/prev-versions/twine-authenticate-0.md
     - name: Deploy tasks
       items:
       - name: App Center Distribute

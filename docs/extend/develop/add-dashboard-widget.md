@@ -20,6 +20,7 @@ A single extension can have multiple contributions. In this article, learn how t
 This guide is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.
 
 ## Preparation and required setup for this tutorial
+
 To create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
 
 **Knowledge:**
@@ -27,7 +28,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 - An **organization** in Azure DevOps Services for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
-- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
+- The latest version of **node**, which can be downloaded [here](https://nodejs.org/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A home directory for your project. This directory is referred to as `home` throughout the tutorial.
@@ -47,16 +48,21 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 ```
 
 ## What you'll find in the tutorial
+
 1. The first part of this guide shows you how to create a new widget, which prints a simple "Hello World" message. 
 2. The [second part](#part-2) builds on the first one by adding a call to an Azure DevOps Services REST API. 
 3. The [third part](#part-3) explains how to add configuration to your widget. 
 
-> If you're in a hurry and want to get your hands on the code right away, you can download the complete samples [here](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets).
+> [!NOTE]   
+> If you're in a hurry and want to get your hands on the code right away, you can download the complete samples [here](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets). 
 > Once downloaded, go to the `widgets` folder, then follow [Step 6](#package-publish-share) and [Step 7](#add-from-catalog) directly to publish the sample extension which has the three sample widgets of varying complexities.
 
 Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) that we provide out of the box for you and some guidance on widget structure.
 
+<a id="part-1" />
+
 ## Part 1: Hello World
+
 This part presents a widget that prints "Hello World" using JavaScript.
 
 ![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sample.png)
@@ -99,6 +105,7 @@ Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS
 > Even though we are using an HTML file, most of the HTML head elements other than script and link are ignored by the framework.
 
 <a name="widget-javascript"/>
+
 ### Step 3: Your JavaScript
 
 We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a <code>&lt;script&gt;</code> element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
@@ -128,7 +135,7 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
-
+<a name="vss-methods"></a>
 
 `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
 We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when we're done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded.
@@ -148,12 +155,13 @@ In our case, it's to update the text of the `h2` element to "Hello World".
 It's this function that is called when the widget framework instantiates your widget.
 We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` as success.
 
-<div class="alert alert-warning">
 
 > [!WARNING]
-> If this name used to register the widget doesn&#39;t match the ID for the contribution in the manifest, then the widget functions unexpectedly.
+> If the name used to register the widget doesn&#39;t match the ID for the contribution in the manifest, then the widget functions unexpectedly.
 
-> The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
+The `vss-extension.json` should always be at the root of the folder (in this guide, `HelloWorld`). For all the other files, you can place them in whatever structure you want inside the folder, just make sure to update the references appropriately in the HTML files and in the `vss-extension.json` manifest. 
+
+<a id="image" />
 
 ### Step 4: Your extension&#39;s logo: <code>logo.png</code>
 
@@ -227,8 +235,8 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
     }
 ```
 
->[!NOTE]
->The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
+> [!NOTE]
+> The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
 
 #### Icons
 
@@ -237,22 +245,21 @@ The **icons** stanza specifies the path to your extension's icon in your manifes
 #### Contributions
 
 Each contribution entry defines [properties](./manifest.md#contributions). 
-
 - The **ID** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in [Step 3](#widget-javascript) to register your widget.
 - The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
 - The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
 - The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
 
 
-| Property           | Description                                                                                                                         
-|--------------------|-----------------------------------------------------------------------------------------------------------------|
-| name               | Name of the widget to display in the widget catalog.                                |
-| description        | Description of the widget to display in the widget catalog.        |
-| catalogIconUrl     | Relative path of the catalog icon that you added in [Step 4](#image) to display in the widget catalog. The image should be 98 px x 98 px. If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
-| previewImageUrl    | Relative path of the preview image that you added in [Step 4](#image) to display in the widget catalog for TFS 2015 Update 3 only. The image should be 330 px x 160 px. If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
-| uri                | Relative path of the HTML file that you added in [Step 1](#step-1-files). If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
-| supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The `widget size` is specified in terms of the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160 px. Any dimension above 1x1 gets an additional 10 px that represent the gutter between widgets. For example, a 3x2 widget is `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |
-| supportedScopes | At the moment, we support only team dashboards. The value has to be `project_team`. In the future, when we support other dashboard scopes, there will be more options to choose from here. |
+| Property           | Description    |
+|--------------------|----------------|
+| name               | Name of the widget to display in the widget catalog.               |  
+| description        | Description of the widget to display in the widget catalog.        |  
+| catalogIconUrl     | Relative path of the catalog icon that you added in [Step 4](#image) to display in the widget catalog. The image should be 98 px x 98 px. If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |  
+| previewImageUrl    | Relative path of the preview image that you added in [Step 4](#image) to display in the widget catalog for TFS 2015 Update 3 only. The image should be 330 px x 160 px. If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |  
+| uri                | Relative path of the HTML file that you added in [Step 1](#step-1-files). If you've used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |  
+| supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The `widget size` is specified in terms of the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160 px. Any dimension above 1x1 gets an additional 10 px that represent the gutter between widgets. For example, a 3x2 widget is `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |  
+| supportedScopes | At the moment, we support only team dashboards. The value has to be `project_team`. In the future, when we support other dashboard scopes, there will be more options to choose from here. |  
 
 
 #### Files
@@ -260,8 +267,10 @@ Each contribution entry defines [properties](./manifest.md#contributions).
 The **files** stanza states the files that you want to include in your package - your HTML page, your scripts, the SDK script, and your logo.
 Set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 
->[!NOTE]
->For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
+> [!NOTE]
+> For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
+
+<a id="package-publish-share" />
 
 ### Step 6: Package, Publish and Share
 
@@ -324,11 +333,15 @@ You'll need a personal access token, too.
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
+<a id="add-from-catalog" />
+
 ### Step 7: Add Widget From the Catalog
+
 Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
+<a id="part-2" />
 
 ## Part 2: Hello World with Azure DevOps Services REST API
 
@@ -337,6 +350,8 @@ In this example, we use the REST API for WorkItemTracking to fetch information a
 below the "Hello World" text. 
 
 ![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sample2.png)
+
+<a id="step-1-files" />
 
 ### Step 1: HTML 
 
@@ -398,6 +413,7 @@ This allows the framework to uniquely identify the widget within the extension.
 ```
 
 ### Step 2: Access Azure DevOps Services Resources
+
 To enable access to Azure DevOps Services resources, [scopes](./manifest.md#scopes) need to be specified in the extension manifest. We  add the `vso.work` scope to our manifest.  
 This scope indicates the widget needs read-only access to queries and work items. See all available scopes [here](./manifest.md#scopes).
 Add the below at the end of your extension manifest.
@@ -411,10 +427,8 @@ Add the below at the end of your extension manifest.
 }
 ```
 
-<div class="alert alert-warning">
-    <b>Warning</b>: Adding or changing scopes after publishing an extension is currently not supported. If you've already uploaded your extension, remove it from the Marketplace. 
-    Go to <a href="https://marketplace.visualstudio.com/manage/createpublisher" data-raw-source="[Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher)">Visual Studio Marketplace Publishing Portal</a>, right-click on your extension and select &quot;Remove&quot;.
-</div> 
+> [!WARNING]  
+> Adding or changing scopes after publishing an extension is currently not supported. If you've already uploaded your extension, remove it from the Marketplace. Go to ![Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), right-click your extension and select &quot;Remove&quot;.
 
 ### Step 3: Make the REST API Call 
 
@@ -555,6 +569,8 @@ Your final `hello-world2.html` is as follows:
 </html>
 ```
 
+<a id="widget-extension-manifest" />
+
 ### Step 5: Extension Manifest Updates
 
 In this step, we update the extension manifest to include an entry for our second widget.
@@ -615,9 +631,12 @@ If you have already published the extension before this point, you can repackage
 
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
+
+Now, go to your team dashboard at `http://dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
+
+<a id="part-3" />
 
 ## Part 3: Hello World with Configuration
 
@@ -817,7 +836,9 @@ At the end, your `configuration.html` looks like this:
     </html>
 ```
 
-### Step 4: JavaScript - Implement Reload in The Widget
+<a id="reload-widget" />
+
+### Step 4: JavaScript - Implement reload in the widget
 
 We've set up widget configuration to store the query path selected by the user.
 We now have to update the code in the widget to use this stored configuration instead of the hard-coded `Shared Queries/Feedback` from the previous example.
@@ -944,10 +965,8 @@ A contribution entry for widget configuration has:
 To support configuration, the widget contribution needs to be changed as well. The array of **targets** for the widget needs to be updated to include the ID for the configuration in the form 
 <`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration`. 
 
-<div class="alert alert-warning">
-    <b>Warning</b>: If the contribution entry for your configurable widget doesn&#39;t target the 
-    configuration using the right publisher and extension name as described above, the configure button doesn&#39;t show up for the widget. 
-</div> 
+> [!WARNING]  
+> If the contribution entry for your configurable widget doesn&#39;t target the configuration using the right publisher and extension name as described above, the configure button doesn&#39;t show up for the widget. 
 
 At the end of this part, the manifest file should contain three widgets and one configuration. You can get the complete manifest from the sample [here](https://github.com/Microsoft/vso-extension-samples/blob/master/widgets/vss-extension.json).
 
@@ -1025,9 +1044,9 @@ Open the configuration mode for your widget, you should now be able to see the o
 
 Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
 doesn't
-<div class="alert alert-warning">
-    <b>Warning</b>: If you remove an already supported size, then the widget fails to load properly. We are working on a fix for a future release.
-</div> 
+
+> [!WARNING]  
+> If you remove an already supported size, then the widget fails to load properly. We are working on a fix for a future release.
 
 Changing the name of the widget doesn't result in any visible change in the widget. 
 This is because our sample widgets don't display the widget name anywhere. Let us modify the sample code to display the widget name instead of the hard-coded text "Hello World".
