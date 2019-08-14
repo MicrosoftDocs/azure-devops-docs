@@ -35,7 +35,7 @@ To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
-You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Manage users
 
@@ -47,8 +47,6 @@ The Users view shows key information per user in a table. In this view, you can 
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 

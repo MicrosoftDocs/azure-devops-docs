@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 05/14/2019
+ms.date: 08/15/2019
 ---
 
 
@@ -29,7 +29,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per organization](#account-level)|  
 > |-------------|----------|  
-> |- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)<br/>- Experimental themes<br/>- Git commit menu extension points<br/>- [Multi-stage pipelines](../../pipelines/process/stages.md) <br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [Test analytics in new web platform](../../pipelines/test/test-analytics.md)<br/>- [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)  |- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)<br/>- Experimental themes<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- [Multi-stage pipelines](../../pipelines/process/stages.md)<br/>- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)<br/>- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [Test analytics in new web platform](../../pipelines/test/test-analytics.md)<br/>- [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)   |
+> |- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)<br/>- Enable modern search<br/>- Experimental themes<br/>- [Multi-stage pipelines](../../pipelines/process/stages.md)<br/>- [New Boards reports](https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-155-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports)<br/>- New release progress views <br/>-New service connections experience<br/>- [New Test Plans Page](/azure/devops/release-notes/2019/sprint-154-update#azure-test-plans)<br/>- [New Test Plans Page](/azure/devops/release-notes/2019/sprint-154-update#azure-test-plans)<br/>- New user hub<br/>- New Wiki experience<br/>- [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)<br/>- [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)<br/>- [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md) |- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)<br/>- Experimental themes<br/>- [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- [Multi-stage pipelines](../../pipelines/process/stages.md)<br/>- [New Boards reports](https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-155-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports)<br/>- New release progress views <br/>- New service connections experience<br/>- [New Test Plans Page](/azure/devops/release-notes/2019/sprint-154-update#azure-test-plans)<br/>- New user hub<br/>- New Wiki experience<br/>- [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)<br/>- [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)<br/>- [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)<br/>- [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)  |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -75,10 +75,12 @@ When you enable a feature at the organization level, you essentially turn it on 
 ## Features now enabled for all Azure DevOps Services 
 
 ### General
-
+- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)  
 - [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
 
 ### Azure Pipelines
+
+- [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
 - [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)
 - [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)  
 - [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>

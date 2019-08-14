@@ -11,10 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/22/2019
+ms.date: 08/12/2019
 ---
-
-
 
 # About process customization and inherited processes  
 
@@ -95,8 +93,9 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
-Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process.   
+Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process. 
 
+::: moniker range="azure-devops"
 
 <table width="80%">
 <tbody valign="top">
@@ -108,8 +107,9 @@ Fields are defined for all projects and processes in the organization. That mean
 <td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
 <td>
 <ul>
-<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
-<li><a href="customize-process-field.md#show-hide-field" data-raw-source="[Show/Hide field on form](customize-process-field.md#show-hide-field)">Show/Hide field on form</a></li>
+<li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
+<li><a href="customize-process-field.md#show-hide-field">Show/Hide field on form</a></li>
+<li><a href="customize-process-field.md#pick-list">Modify picklist (drop-down menu)</a></li>
 </ul>
 </td>
 </tr>
@@ -134,6 +134,50 @@ Fields are defined for all projects and processes in the organization. That mean
 </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Field type</th>
+<th width="65%">Customization support</th>
+</tr>
+<tr>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
+<td>
+<ul>
+<li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
+<li><a href="customize-process-field.md#show-hide-field">Show/Hide field on form</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Custom fields</td>
+<td>
+<ul>
+<li><a href="customize-process-field.md#add-field" data-raw-source="[Add a custom field](customize-process-field.md#add-field)">Add a custom field</a></li>
+<li><a href="customize-process-field.md#pick-list" data-raw-source="[Add picklist (drop-down menu)](customize-process-field.md#pick-list)">Add picklist (drop-down menu)</a></li>
+<li><a href="customize-process-field.md#identity" data-raw-source="[Add person-name/Identity](customize-process-field.md#identity)">Add person-name/Identity</a></li>
+<li><a href="customize-process-field.md#html" data-raw-source="[Add a rich-text (HTML) field](customize-process-field.md#html)">Add a rich-text (HTML) field</a> </li>
+<li><a href="customize-process-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)">Add a checkbox (Boolean) field</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add a custom control](custom-controls-process.md)">Add a custom control</a> </li>
+<li><a href="custom-rules.md" data-raw-source="[Add custom rules to a field](custom-rules.md)">Add custom rules to a field</a></li>
+<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
+<li><a href="customize-process-field.md#options" data-raw-source="[Set Required/Default options](customize-process-field.md#options)">Set Required/Default options</a></li>
+<li><a href="customize-process-form.md#move-field" data-raw-source="[Move the field within the layout](customize-process-form.md#move-field)">Move the field within the layout</a></li>
+<li><a href="customize-process-field.md#remove-field" data-raw-source="[Remove field from form](customize-process-field.md#remove-field)">Remove field from form</a></li>
+<li><a href="customize-process-field.md#delete-field" data-raw-source="[Delete field](customize-process-field.md#delete-field)">Delete field</a></li> 
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
 
 When adding custom fields, note the following limits:  
 *   A maximum of 64 fields can be defined for each WIT  

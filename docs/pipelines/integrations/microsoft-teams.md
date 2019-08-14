@@ -7,7 +7,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 06/18/2019
+ms.date: 08/07/2019
 monikerRange: 'azure-devops'
 ---
  
@@ -127,6 +127,7 @@ Here are all the commands supported by the Azure Pipelines app:
 
 
 >[!NOTE]
+> * You can use the Azure Pipelines app for Microsoft Teams only with a project hosted on Azure DevOps Services at this time.  
 > * The user must be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside chat/direct messages
 > * Deployment approvals which have applied the **Revalidate identity of approver before completing the approval** policy are not supported

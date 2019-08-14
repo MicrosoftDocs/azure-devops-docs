@@ -18,10 +18,31 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
+Use the **#ID** control to quickly link objects to work items. With this control, you can specify or select a work item ID and it is automatically linked to the object. 
 
-::: moniker range=">= tfs-2015"
-Use the **#ID** control to quickly link objects to work items.
+Use the **#ID**control within the following areas:
 
+::: moniker range="azure-devops"
+- A work item discussion or any rich-text field
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
+- Wiki page. 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+- A work item discussion 
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
+- Wiki page. 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < tfs-2018"
+- A work item discussion 
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments. 
 ::: moniker-end
 
 <a id="mention-wit-id">  </a>

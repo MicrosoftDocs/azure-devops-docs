@@ -9,12 +9,12 @@ ms.technology: devops-cicd
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.date: 8/22/2018
+ms.date: 08/13/2019
 monikerRange: '>= azure-devops'
 ---
 # Parallel jobs
 
-**Azure Pipelines | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
+**Azure Pipelines | [Azure DevOps Server 2019](concurrent-pipelines-tfs.md) | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
 You can use a _parallel job_ in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 

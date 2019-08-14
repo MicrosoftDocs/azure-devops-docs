@@ -20,6 +20,9 @@ monikerRange: 'azure-devops'
 
 Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that need to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
 
+> [!NOTE]
+> Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
+
 ## Publishing artifacts
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
@@ -156,7 +159,7 @@ For example, to download all `*.js` from the artifact `WebApp`:
 steps:
 - download: current
   artifact: WebApp
-  patterns: **/*.js
+  patterns: '**/*.js'
 ```
 
 Files (with the directory structure of the artifact preserved) are downloaded under `$(Pipeline.Workspace)/WebApp`.
@@ -168,7 +171,7 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     artifact: WebApp
-    patterns: **/*.js
+    patterns: '**/*.js'
     path: $(Build.SourcesDirectory)/bin
 ```
 
@@ -193,7 +196,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 * Matching patterns:
 
    ```
-   **/*.js
+   '**/*.js'
    ```
 
 ---
@@ -215,7 +218,7 @@ For example, to download all `.zip` files from all source artifacts:
 ```yaml
 steps:
 - download: current
-  patterns: **/*.zip
+  patterns: '**/*.zip'
 ```
 
 # [YAML (task)](#tab/yaml-task)
@@ -224,7 +227,7 @@ steps:
 steps:
 - task: DownloadPipelineArtifact@2
   inputs:
-    patterns: **/*.zip
+    patterns: '**/*.zip'
 ```
 
 # [Classic](#tab/classic)
@@ -234,7 +237,7 @@ steps:
 * Matching patterns:
 
    ```
-   **/*.zip
+   '**/*.zip'
    ```
 
 ---
@@ -264,3 +267,9 @@ When migrating from from build artifacts to pipeline artifacts:
 2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
 3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
+
+## Q&A
+
+### Can this task publish artifacts to a shared folder or network path?
+
+Not currently, but this feature is planned.
