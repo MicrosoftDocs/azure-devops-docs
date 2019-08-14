@@ -1,7 +1,6 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
@@ -11,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019 
+ms.date: 08/14/2019 
 ---
 
 
@@ -2196,7 +2195,6 @@ You manage the security of each area path from the [web portal](../../organizati
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
-
 > [!NOTE]  
 > Multiple teams may contribute to a project.
 > When that's the case, you can set up teams that are associated with an area.
@@ -2309,14 +2307,7 @@ Members of the Project Administrators group are automatically granted permission
 
 ## Iteration Path (object-level) 
 
-Iteration path permissions grant or restrict access to create and manage iteration paths.
-
-Multiple teams may contribute to a project. 
-When that's the case, you can set up teams that are associated with an area. 
-Permissions for the team's work items are assigned by assigning permissions to the area. 
-There are other [team settings](../settings/manage-teams.md) 
-that configure the team's agile planning tools.
-To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
+Iteration path permissions grant or restrict access to create and manage iteration paths, also referred to as sprints.
 
 You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#iteration-permissions). 
 
@@ -2324,9 +2315,6 @@ Members of the Project Administrators group are automatically granted these perm
 
 > [!div class="mx-imgBorder"]  
 > ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
-
-Consider granting team administrators, scrum masters, or team leads
-permissions to create, edit, or delete iteration nodes.
 
 <table valign="top" width="100%">
 <tbody valign="top">
