@@ -54,6 +54,16 @@ A full audit trail of all  edited and deleted comments is maintained in the <str
 
 
 
+::: moniker range="azure-devops"
+
+### Add a reaction to a comment 
+
+You can add one or more reactions to any comment. Choose a smiley icon at the upper-right corner of any comment or choose from the icons at the bottom of a comment next to any existing reactions. To remove your reaction, click the reaction on the bottom of your comment. The following shows an example of the experience of adding a reaction, as well as the display of reactions on a comment.
+
+> [!div class="mx-imgBorder"]  
+> ![Add reactions to a comment](/azure/devops/release-notes/2019/_img/156_09.png)  
+
+::: moniker-end 
 
 
 
