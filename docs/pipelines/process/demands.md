@@ -40,6 +40,18 @@ pool:
   demands: SpecialSoftware
 ```
 
+For multiple demands:
+
+```yaml
+pool:
+  name: MyPool
+  demands:
+  - myCustomCapability   # check for existence of capability
+  - agent.os -equals Darwin  # check for specific string in capability
+```
+
+For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
+
 # [Classic](#tab/classic)
 
 In the options tab of the pipeline, add the demand to your pipeline.
