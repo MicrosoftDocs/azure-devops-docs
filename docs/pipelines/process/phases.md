@@ -295,7 +295,7 @@ You can also use the simplified syntax:
 ```yaml
 jobs:
 - job: string
-  server: true
+  pool: server
 ```
 
 ::: moniker-end
