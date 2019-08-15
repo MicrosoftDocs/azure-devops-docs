@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 03/19/2019
+ms.date: 08/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -67,9 +67,9 @@ running 4 agents apiece.
 
    [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-1. Click **Download agent**.</li>
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-1. On the **Get agent** dialog box, click **Windows**.</li>
+1. On the **Get the agent** dialog box, choose **Windows**.
 
 1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
 The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
