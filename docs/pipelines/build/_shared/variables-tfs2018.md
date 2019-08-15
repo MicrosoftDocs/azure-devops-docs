@@ -56,6 +56,13 @@ ms.topic: include
 </tr>
 
 <tr>
+<td>Agent.TempDirectory</td>
+<td>
+A temporary folder that is cleaned after each pipeline run. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.
+</td>
+</tr>
+
+<tr>
 <td>Agent.ToolsDirectory</td>
 <td>
 The directory used by tasks such as <a href="/azure/devops/pipelines/tasks/tool/node-js" data-raw-source="[Node Tool Installer](../../tasks/tool/node-js.md)">Node Tool Installer</a> and <a href="/azure/devops/pipelines/tasks/tool/use-python-version" data-raw-source="[Use Python Version](../../tasks/tool/use-python-version.md)">Use Python Version</a> to switch between multiple versions of a tool.
