@@ -41,7 +41,7 @@ Before you can create a public project, you must enable anonymous access for you
 3. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png)
+	> ![Organization settings, Policy page, Security policies](_img/create-public-project/org-policies-change-anon.png)
 
 ## Add a public project to your organization
 

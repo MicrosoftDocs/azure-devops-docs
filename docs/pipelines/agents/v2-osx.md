@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -57,9 +57,9 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
    [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-1. Click **Download agent**.
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-1. On the **Get agent** dialog box, click **macOS**.
+1. On the **Get the agent** dialog box, click **macOS**.
 
 1. Click the **Download** button.
 
