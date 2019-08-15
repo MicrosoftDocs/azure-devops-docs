@@ -119,7 +119,7 @@ A typical use of this variable is to make it part of the label format, which you
 <br/><br/>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
 
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as a version control tag.
@@ -150,7 +150,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>The name of the build pipeline.
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
 </td>
 </tr>
 
@@ -164,7 +164,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>See &quot;<a href="#identity_values" data-raw-source="[How are the identity variables set?](#identity_values)">How are the identity variables set?</a>&quot;.
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.</td>
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.</td>
 </tr>
 
 <tr>
@@ -199,7 +199,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -300,7 +300,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
