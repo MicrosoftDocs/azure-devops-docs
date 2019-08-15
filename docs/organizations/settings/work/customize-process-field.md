@@ -94,7 +94,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 

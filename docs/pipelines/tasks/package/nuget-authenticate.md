@@ -81,12 +81,14 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 ```XML
 <configuration>
   <packageSources>
-    <!-- Any Azure Artifacts feeds within your organization will automatically be authenticated -->
-    <add key="MyOrganizationFeed" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
-    <!-- Any package source listed here whose URL matches the URL of a service connection in nuGetServiceConnections will also be authenticated.
-         The key name here does not need to match the name of the service connection. -->
+    <!-- Any package source listed here whose URL matches the URL of a service connection in nuGetServiceConnections will be authenticated.
+         The key name here does not need to match the name of the service connection. 
+         This can include Azure Artifacts feeds in other organizations, as well as third party NuGet repositories. -->
     <add key="OtherOrganizationFeed" value="https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/nuget/v3/index.json" />
     <add key="ThirdPartyRepository" value="https://{thirdPartyRepository}/index.json" />
+
+    <!-- Any Azure Artifacts feeds within your organization will still automatically be authenticated -->
+    <add key="MyOrganizationFeed" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
   </packageSources>
 </configuration>
 ```

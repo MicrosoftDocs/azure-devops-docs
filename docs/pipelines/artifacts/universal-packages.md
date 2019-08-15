@@ -103,7 +103,7 @@ In the **Universal Packages** task that you configured previously, choose the ap
 You can also download a Universal Package from your pipeline.
 
 #### [YAML](#tab/yaml/)
-To download a Universal Package from a feed in your organization, use the following snippet: 
+To download a Universal Package from a feed in your organization to a specified destination, use the following snippet: 
 
 ```yaml
 steps:
@@ -114,6 +114,7 @@ steps:
     vstsFeed: 'fabrikamFeed'
     vstsFeedPackage: 'fabrikam-package'
     vstsPackageVersion: 1.0.0
+    downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
 
 
@@ -122,6 +123,7 @@ steps:
 | vstsFeed                       | Feed that the package will be downloaded from.     |
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
+| downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
 | [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
 
 To download a Universal Package from an external source, use the following snippet:
