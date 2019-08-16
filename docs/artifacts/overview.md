@@ -51,4 +51,4 @@ Some Azure Artifacts services are compatible with only specific versions of TFS.
 
 ## Other package types
 
-Need to host other package types (Docker, CocoaPods, and so on)? Tell us on the [Azure Artifacts UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+Need to host other package types (Docker, CocoaPods, and so on)? Use the **Suggest a feature** link in [Visual Studio Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html).
