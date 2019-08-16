@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 08/15/2019
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -93,13 +93,13 @@ You delete or disable the rule from the actions menu of the rule.
 
 <img src="_img/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
 
+
+## Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+
 ## Related articles
 
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
 
-<!---
- - A work item state changes to a selected state<br/>- A work item state changes from one state to another state<br/>- A work item is created<br/>- A work item state is in a selected state<br/>- The value of a field equals a specified value<br/>- The value of a field does not equal a specified value<br/>- A value is defined for a field<br/>- No value is defined for a field<br/>- A change was made to the value of a field<br/>- No change was made to the value of a field
- - Clear the value of a field<br/>- Copy the value of a field to another field<br/>- Make a field read-only  <br/>- Make a field required<br/>- Set the value of a field<br/>- Set the value of a field to the current date-time<br/>- Set the value of a field to the current user
-
--->
