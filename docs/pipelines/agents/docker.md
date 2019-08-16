@@ -104,7 +104,7 @@ Next, we'll create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if (Test-Path Env:AZP_WORK) {
+    if (-not (Test-Path Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
