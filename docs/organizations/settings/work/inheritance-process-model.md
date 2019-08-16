@@ -187,14 +187,30 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-- You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+
+::: moniker range="azure-devops"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't change the picklist order, picklists display in alphabetic order
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
+
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
+
+::: moniker-end
 
 ### Configurable picklists 
 
@@ -244,6 +260,9 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+### Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
 
 ## WIT customizations 
 
@@ -483,4 +502,6 @@ And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../
 ## Object limits
 
 For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
+
+
 
