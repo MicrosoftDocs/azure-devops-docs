@@ -86,6 +86,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../backlogs/manage-issues-impediments.md" data-raw-source="[Manage issues or impediments](../backlogs/manage-issues-impediments.md)">Manage issues or impediments</a></li>
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
+<li><a href="../../organizations/settings/work/customize-process-field.md#add-a-picklist">Modify a default pick list</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
 </ul>
@@ -98,6 +99,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
+<li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items" data-raw-source="[Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback ](../../project/feedback/get-feedback.md)">Request feedback </a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Restore deleted work items</a></li>
@@ -203,8 +205,9 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items" data-raw-source="[Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)">Remove work items</a></li>
-<li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback ](../../project/feedback/get-feedback.md)">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Restore deleted work items</a></li>
+<li><a href="../../project/feedback/get-feedback.md">Request feedback </a></li>
+<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items"">Restore deleted work items</a></li>
+<li><a href="../../organizations/security/restrict-access.md#restrict-modification-closed-wi">Restrict modification of closed work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
