@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/26/2019
+ms.date: 08/15/2019
 ---
 
 # Grant or restrict access
@@ -192,6 +192,11 @@ You can restrict modification of work items by adding a rule to the work item ty
 > These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
+
+## Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../_shared/restrict-modification-closed-wi.md)]
+
 
 ## Next steps
 
