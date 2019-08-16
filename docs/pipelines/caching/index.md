@@ -237,7 +237,7 @@ steps:
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NPM_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
 
 ### Example
 
