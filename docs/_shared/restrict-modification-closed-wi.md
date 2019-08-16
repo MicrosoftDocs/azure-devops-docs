@@ -9,4 +9,4 @@ Depending on your business processes, you may want to prevent users from continu
 To learn how, see this blog post, [Prevent reopening work item once closed](http://devblogs.microsoft.com/premier-developer/prevent-reopening-work-item-once-closed-azure-devops-with-video/).
 
 > [!NOTE] 
-> The blog post addresses how to add a custom rule to an Inherited process, however, the idea can be equally applied by adding one or more custom rules to an Online XML process and work item type definitions. To learn more, see [Apply a field rule](/azure/devops/reference/xml/apply-rule-work-item-field.md).  
+> The blog post addresses how to add a custom rule to an Inherited process, however, the idea can be equally applied by adding one or more custom rules to an Online XML process and work item type definitions. To learn more, see [Apply a field rule](/azure/devops/reference/xml/apply-rule-work-item-field).  
