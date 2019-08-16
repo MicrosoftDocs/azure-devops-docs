@@ -41,7 +41,7 @@ python3 -m flask run
 py -3 -m venv .env
 .env\scripts\activate
 pip install -r requirements.txt
-set FLASK_APP=hello_app.webapp
+$env:FLASK_APP = "hello_app.webapp"
 python -m flask run
 ```
 
