@@ -256,8 +256,8 @@ or package the build output into a .war/jar file to be deployed to a web applica
 
 Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
 
-* [Build and deploy to a Java web app](languages/java-webpp.md)
-* [Build and deploy Java to Azure Functions](languages/java-function.md)
+* [Build and deploy to a Java web app](java-webapp.md)
+* [Build and deploy Java to Azure Functions](java-function.md)
 
 ::: moniker-end
 
