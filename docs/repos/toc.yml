@@ -6,6 +6,10 @@
   href: git/toc.yml 
 - name: Team Foundation version control
   href: tfvc/toc.yml 
+- name: Integrations
+  items:
+  - name: Azure Repos with Slack
+    href: integrations/repos-slack.md
 - name: REST API Reference
   items:
   - name: Git
