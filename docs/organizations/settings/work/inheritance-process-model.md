@@ -260,9 +260,23 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+
+### Restrict modification of select fields for select user groups
+
+Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+
+- `current user is a member of a group...`
+- `current user is not a member of a group...`
+
+For example, you can make the Title or the State field Read-only for select users or groups. 
+
 ### Restrict modification of closed work items 
 
 [!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+
+### Restrict modification of work items based on Area Path 
+
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
 ## WIT customizations 
 
