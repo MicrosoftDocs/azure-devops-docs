@@ -74,12 +74,14 @@ You add fields to a selected work item type.
    > [!TIP]  
    > Specify a name that builds off the field(s) you're acting on, or the conditions you're setting.
 
-   Here we define that the Acceptance Criteria field is required when the State changes to Active and it is currently empty.
+   Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
    <img src="_img/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
 
-   > [!NOTE]  
-   > The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
+   > [!TIP]  
+   > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.  
+
+	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
 
 1. Once you've added a custom rule, open a work item and verify that the rule works as you intended.
 
@@ -97,6 +99,20 @@ You delete or disable the rule from the actions menu of the rule.
 ## Restrict modification of closed work items 
 
 [!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+
+
+## Restrict modification of work items based on a user or group  
+
+You can customize work item types to support these restriction requests: 
+- Restrict who can create or modify a work item 
+- Restrict who can create specific work item types, such as Epics or Features 
+- Restict who can modify a specific field for a work item type 
+
+For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
+
+> [!div class="mx-imgBorder"]  
+> ![Custom rule](../../security/_img/grant-restrict/restrict-creating-work-items-inheritance.png)   
+
 
 ## Related articles
 
