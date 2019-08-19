@@ -103,6 +103,7 @@ Use this index to quickly access information on adding and updating work items&m
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items" data-raw-source="[Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback ](../../project/feedback/get-feedback.md)">Request feedback </a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Restore deleted work items</a></li>
+<li><a href="../../organizations/security/restrict-access.md#restrict-modifications-wits">Restrict modification</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
