@@ -186,10 +186,6 @@ Select this check box if you want the task to run even if the build or deploymen
 * * *
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
-> **Azure Pipelines preview feature**
->
-> To use this capability you must be working on Azure Pipelines and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
-
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
 
 * Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
