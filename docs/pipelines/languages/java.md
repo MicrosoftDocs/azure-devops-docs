@@ -245,6 +245,20 @@ steps:
     scriptPath: 'build.sh'
 ```
 
+## Next Steps
+
+After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package, 
+or package the build output into a .war/jar file to be deployed to a web application.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
+
+* [Build and deploy to a Java web app](languages/java-webpp.md)
+* [Build and deploy Java to Azure Functions](languages/java-function.md)
+
 ::: moniker-end
 
 <!--

@@ -420,6 +420,8 @@ jobs:
 
 ---
 
+::: moniker range="azure-devops"
+
 ## Deployment job
 
 A [deployment job](process/deployment-jobs.md) is a special type of job that is a collection of steps to be run sequentially against the environment. In YAML pipelines, we recommend that you put your deployment steps in a deployment job.
@@ -466,7 +468,7 @@ jobs:
         steps:
         - script: echo my first deployment
 ```
-
+::: moniker-end
 ---
 
 ## Steps
@@ -1264,7 +1266,7 @@ pool:
 ```
 
 ---
-
+::: moniker range="azure-devops"
 ## Environment
 
 `environment` specifies the [environment](process/environments.md) or its resource that is to be targeted by a deployment job of the
@@ -1322,6 +1324,7 @@ environment: 'smarthotel-dev.bookings'
 ```
 
 ---
+::: moniker-end
 
 ## Server
 
