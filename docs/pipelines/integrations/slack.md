@@ -138,3 +138,8 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > ![Consent to the requested app permissions](_img/troubleshooting/consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsSlackApps@microsoft.com`.
+
+## Related articles
+- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
