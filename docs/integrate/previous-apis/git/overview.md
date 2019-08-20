@@ -36,8 +36,8 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
 <table class="table table-striped; centered-table">
 <thead class="thead-inverse">
     <tr>
-        &lt;th =&quot;col-md-8&quot;&gt;Areas</th>
-        &lt;th =&quot;col-md-8&quot;&gt;Common Tasks</th>
+        <th class="col-md-8">Areas</th>
+        <th class="col-md-8">Common Tasks</th>
     </tr>
 </thead>
 <tbody>
