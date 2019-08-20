@@ -131,6 +131,11 @@ The directory administrator has permission to change this setting, as follows:
 
 1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
+
+#### Create the service principal manually with the user already having required permissions in Azure Active Directory
+
+You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
+
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found
 
