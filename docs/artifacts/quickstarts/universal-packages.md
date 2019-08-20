@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.date: 09/25/2018
+ms.date: 08/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -164,6 +164,19 @@ az artifacts universal download --organization https://fabrikam.visualstudio.com
 ```
 
 ---
+
+### Downloading the latest version
+
+When downloading a Universal Package, you can use a wildcard expression in the `version` parameter to download the highest version of a package according to [Semantic Versioning](https://semver.org) precedence rules.  
+
+#### Examples
+`*`: Highest version  
+`1.*`: Highest version with major version `1`  
+`1.2.*`: Highest patch release with major version `1` and minor version `2`  
+  
+Wildcard expressions do not currently support pre-release versions. It is not possible to get the latest pre-release version of a package.  
+  
+Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
 
 ## Next steps
 

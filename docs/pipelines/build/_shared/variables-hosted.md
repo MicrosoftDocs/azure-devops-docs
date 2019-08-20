@@ -150,7 +150,7 @@ A typical use of this variable is to make it part of the label format, which you
 <br><br>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/pipeline-options-for-git#label-sources" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
@@ -183,7 +183,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <br><br>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 </td>
 </tr>
@@ -199,7 +199,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <br><br>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 </td>
 </tr>
@@ -301,7 +301,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <br><br>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 </td>
 </tr>
