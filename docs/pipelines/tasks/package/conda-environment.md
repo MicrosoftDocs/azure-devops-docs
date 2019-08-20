@@ -19,6 +19,9 @@ monikerRange: 'azure-devops'
 
 Use this task in a build or release pipeline to create and activate a Conda environment.
 
+> [!NOTE]
+> This task has been deprecated. Use `conda` directly in the [bash task](../utility/bash.md) or [batch script task](../utility/batch-script.md) as an alternative.
+
 This task will create a Conda environment and activate it for subsequent build tasks.
 
 If the task finds an existing environment with the same name, the task will simply reactivate it. This is possible on self-hosted agents. To recreate the environment and reinstall any of its packages, set the "Clean the environment" option.
