@@ -3,10 +3,10 @@ title: Release, test and Git/TFVC history view improvements – Jul 29
 description: VSTS release notes for July 29 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 47937cb7-c488-4d34-add0-c40320d08483
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
