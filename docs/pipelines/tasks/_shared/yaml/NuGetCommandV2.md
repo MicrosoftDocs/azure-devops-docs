@@ -34,7 +34,7 @@
     #includeSymbols: false # Optional
     #toolPackage: # Optional
     #buildProperties: # Optional
-    #basePath: # Optional
+    #basePath: # Optional, specify path to nuspec files
     #verbosityPack: 'Detailed' # Options: quiet, normal, detailed
     #arguments: # Required when command == Custom
 ```

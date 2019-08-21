@@ -36,9 +36,9 @@ However, if you have workflows that publish packages with newer binaries without
 This prevents invalid packages from entering your development and build environments.
 However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.
 
-### NuGet 3.x is recommended
+### NuGet 4.8+ is recommended
 
-[!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
+[!INCLUDE [nuget-recommended-version](../_shared/nuget/nuget-recommended-version.md)]
 
 ### Authentication and authorization
 

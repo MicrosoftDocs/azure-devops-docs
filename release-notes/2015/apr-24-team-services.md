@@ -3,10 +3,10 @@ title: Team Project Rename – April 24
 description: Our top user request is now in Visual Studio Online and ready for feedback - customers can now rename team projects in their accounts.
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: ef604992-a297-4aae-b08c-cc96e1ab8de1
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
