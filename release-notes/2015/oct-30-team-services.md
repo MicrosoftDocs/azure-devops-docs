@@ -3,10 +3,10 @@ title: Dashboards, improved pull requests, test results and more – Oct 30
 description: VSTS release notes for October 30 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 961ad637-4194-4b9c-8042-0d4537a71b43
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Jan 21
 description: VSTS release notes for January 21 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: d5e11b3d-9e8d-4964-ba4e-821ff1a00a49
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
