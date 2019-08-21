@@ -47,8 +47,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>

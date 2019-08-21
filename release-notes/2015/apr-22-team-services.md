@@ -3,10 +3,10 @@ title: Application Insights – Synthetic Data Filtering, New Usage Experience f
 description: VSTS release notes for April 22 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 40e151ba-193b-4f02-9b66-60d8788b70db
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

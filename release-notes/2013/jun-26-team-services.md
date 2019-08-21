@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Jun 26
 description: VSTS release notes for June 26 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: de8ae787-f7be-4567-a0fc-a82b9bff98bb
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

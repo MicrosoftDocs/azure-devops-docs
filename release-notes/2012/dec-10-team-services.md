@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Dec 10
 description: VSTS release notes for December 10 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: ee451bdd-10c8-44cc-9d26-4b95a07035b2
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

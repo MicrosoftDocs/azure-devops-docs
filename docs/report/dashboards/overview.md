@@ -295,14 +295,14 @@ Azure Pipelines provides an in-context Test failures report, derived from Analyt
 
 ::: moniker range="azure-devops"
 
-### Pipeline failures report
+### Pipeline pass rate report
 
-The **Pipeline failures** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view additional details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
+The **Pipeline pass rate** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view additional details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Pipeline failures report](../../pipelines/reports/_img/pipelines-reports/pipelinefailurereport.png)
 
-Learn more about the [Pipeline failures report](../../pipelines/reports/pipelinereport.md#pipeline-failures-report).
+Learn more about the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
 ::: moniker-end
 
