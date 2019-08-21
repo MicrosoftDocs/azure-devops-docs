@@ -47,7 +47,6 @@ Each organization gets its own *free tier* of services (up to five users for eac
 * [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
-* Load testing (20,000 VUMs per month)
 * Unlimited Stakeholders
   [!INCLUDE [free-tier](../_shared/free-tier.md)]
 
