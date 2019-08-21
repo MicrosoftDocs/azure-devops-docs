@@ -3,10 +3,10 @@ title: Application Insights - save search page, pause export and alerts on expor
 description: VSTS release notes for March 27 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: dedb8bbf-6bf8-44c6-a101-9144f60d4781
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

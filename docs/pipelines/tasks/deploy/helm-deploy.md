@@ -200,7 +200,7 @@ This YAML example demonstrates the **package** command:
 <tr><td><code>recreate</code><br/>(Recreate Pods)</td><td>(Optional) Performs pods restart for the resource if applicable.<br/>Default value: false</td></tr>
 <tr><td><code>resetValues</code><br/>(Reset Values)</td><td>(Optional) Reset the values to the ones built into the chart.<br/>Default value: false</td></tr>
 <tr><td><code>force</code><br/>(Force)</td><td>(Optional) Force resource update through delete/recreate if required.<br/>Default value: false</td></tr>
-<tr><td><code>wait</code><br/>(Wait)</td><td>(Optional) Block until command execution completes.<br/>Default value: true​</td></tr>
+<tr><td><code>waitForExecution</code><br/>(Wait)</td><td>(Optional) Block until command execution completes.<br/>Default value: true​</td></tr>
 <tr><td><code>arguments</code><br/>(Arguments)</td><td>Helm command options</td></tr>
 </table>
 
