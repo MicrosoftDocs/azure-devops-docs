@@ -16,18 +16,18 @@ ms.date: 05/09/2018
 2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator V2 login](_img/homepage.png)
+    > ![Image of Azure DevOps Demo Generator V2 login](_img/homepage.png)
 
 
 1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps account.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)
+    > ![Image of Azure DevOps Demo Generator V2 permissions screen](_img/2.png)
 
 1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator template selection screen](_img/templateselection.png)
+    > ![Image of Azure DevOps Demo Generator template selection screen](_img/templateselection.png)
 
     The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. 
 
