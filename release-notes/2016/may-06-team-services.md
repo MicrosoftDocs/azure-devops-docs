@@ -3,10 +3,10 @@ title: RM updates, email formatting, a checkbox control, and more – May 6
 description: VSTS release notes for May 6 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: db77360b-f4ce-4fbf-8b76-af6d400f3e43
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

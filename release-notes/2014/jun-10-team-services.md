@@ -3,10 +3,10 @@ title: Visual Studio Online Updates - Jun 10
 description: VSTS release notes for June 10 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: cf8a4f31-2f47-44ee-8014-6a435f273ebb
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
