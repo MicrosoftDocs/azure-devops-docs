@@ -33,7 +33,7 @@ and actions in the release pipeline, such as the
 [stages](../process/stages.md),
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
-queuing options. There can be multiple releases from one released pipeline, and information
+queuing options. There can be multiple releases from one release pipeline, and information
 about each one is stored and displayed in Azure Pipelines for the specified
 [retention period](../policies/retention.md#release).  
 
