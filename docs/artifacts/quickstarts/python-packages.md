@@ -13,6 +13,8 @@ monikerRange: '=azure-devops'
 
 # Get started with Python packages in Azure Artifacts
 
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+
 This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
 
 ## Create a feed
