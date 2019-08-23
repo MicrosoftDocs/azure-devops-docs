@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kraigb
 author: kraigb
 ms.date: 04/26/2019

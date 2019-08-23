@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Jan 9
 description: VSTS release notes for January 9 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8359e77b-38a3-4558-8cee-6f9751cb9704
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

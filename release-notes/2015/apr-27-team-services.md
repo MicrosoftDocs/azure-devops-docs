@@ -3,10 +3,10 @@ title: Add fields to cards, board filtering – Apr 27
 description: VSTS release notes for April 27 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 485496af-5b81-42da-818f-0161141488ef
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
