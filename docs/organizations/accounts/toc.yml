@@ -70,6 +70,8 @@
       href: assign-access-levels-and-extensions-by-group-membership.md
     - name: Remove direct assignments
       href: remove-direct-assignments.md
+  - name: Add and manage banners
+    href: ../settings/manage-banners.md  
 - name: Troubleshooting
   items:
   - name: Create organization
