@@ -3,10 +3,10 @@ title: Application Insights Public Preview for iOS and Android, performance coun
 description: VSTS release notes for May 11 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: ab2dd5ed-ac45-46ed-96a5-64e8a09b324a
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

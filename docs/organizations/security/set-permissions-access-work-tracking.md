@@ -212,6 +212,7 @@ For details, see [Set permissions on a shared query or query folder](../../organ
 ::: moniker range=">= tfs-2017"  
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
+
 ## Edit or manage permissions for Delivery Plans 
 
 Delivery Plans are an object within a project. You manage plan permissions for each plan similar to the way you manage permissions for shared queries or query folders. The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
@@ -229,6 +230,7 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 <a id="move-delete-permissions"></a>
 
 ::: moniker range=">= azure-devops-2019"  
+
 ## Move or permanently delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
@@ -288,23 +290,16 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"  
+
 ## Additional options for restricting access to work items   
 
-> [!NOTE]   
-> You can use one or more of the following options with the On-premises XML process models. To learn more about process models, see [Customize work tracking experience](../../reference/customize-work.md).  
-
-You can restrict access to work tracking objects in one of two ways:
-
--   By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
--   [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-
-For more information about how to customize WITs, 
-see [Modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md).
+See [Restrict access, Restrict modification of work items based on a user or group ](restrict-access.md#restrict-modifications-wits) for additional options for customizing work item types to support restrictions. 
 
 ::: moniker-end
 
 ## Related articles 
 
-*   [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
-*   [Permissions and access for work tracking](permissions-access-work-tracking.md) 
-*   [Permissions and groups reference](permissions.md) 
+- [Grant or restrict access](restrict-access.md)  
+- [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
+- [Permissions and access for work tracking](permissions-access-work-tracking.md) 
+- [Permissions and groups reference](permissions.md) 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.date: 08/06/2018
+ms.date: 08/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -136,8 +136,8 @@ steps:
     command: download
     feedsToUse: external
     externalFeedCredentials: MSENG2
-    feedDownloadExternal: `fabrikamFeedExternal`
-    packageDownloadExternal: `fabrikam-package`
+    feedDownloadExternal: 'fabrikamFeedExternal'
+    packageDownloadExternal: 'fabrikam-package'
     versionDownloadExternal: 1.0.0
 ```
 
@@ -165,6 +165,11 @@ To download a Universal Package, add the **Universal Package** task and configur
 ![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
 
 * * *
+
+### Downloading the latest version
+
+You can use a wildcard expression as the version to get the latest (highest) version of a package. For more information, see [Downloading the latest version](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) in the quickstart guide.
+
 ## Q&A
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
