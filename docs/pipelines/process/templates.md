@@ -358,8 +358,8 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 ```yaml
 parameters:
-  restoreProjects: ''
-  buildProjects: ''
+  foo: ''
+  bar: ''
 
 steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
