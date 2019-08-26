@@ -177,6 +177,8 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
+    - name: Collect screenshots and video
+      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet

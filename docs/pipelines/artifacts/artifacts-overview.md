@@ -22,6 +22,9 @@ monikerRange: '>= tfs-2015'
 
 You can publish and consume many different types of packages and artifacts with Azure Pipelines. Your continuous integration/continuous deployment (CI/CD) pipeline can publish specific package types to their respective package repositories (NuGet, npm, Python, and so on). Or you can use build artifacts and pipeline artifacts to help store build outputs and intermediate files between build steps. You can then add onto, build, test, or even deploy those artifacts.
 
+> [!NOTE]
+> Aside from being published, Build and Release artifacts will be available as long as that Build or Release is retained unless otherwise specified. For more information on retaining Build and Release artifacts, see the [Retention Policy](../policies/retention.md) documentation.
+
 ## Supported artifact types
 
 The following table describes supported artifact types in Azure Pipelines.
@@ -35,7 +38,10 @@ The following table describes supported artifact types in Azure Pipelines.
 | [NuGet](nuget.md)                          | You can publish NuGet packages to Azure Artifacts, other NuGet services (like NuGet.org), or internal NuGet repositories. |
 | [PyPI](pypi.md)                            | You can publish Python packages to Azure Artifacts or PyPI repositories. |
 | [Symbols](symbols.md)                        | [Symbol files](/azure/devops/artifacts/concepts/symbols.md) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing specific product, package, or build information. |
-| [Universal](universal-packages.md)         | Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts. |                       
+| [Universal](universal-packages.md)         | Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts. |
+
+> [!NOTE]
+> Build and Release artifacts will be available as long as that Build or Release run is retained, unless you specify how long to retain the artifacts. For more information on retaining Build and Release artifacts, see the [Retention Policy](../policies/retention.md) documentation.                    
 
 ## How do I publish and consume artifacts?
 
