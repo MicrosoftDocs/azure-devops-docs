@@ -296,7 +296,8 @@ steps:
 ### Context
 
 Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
-Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus many of the [predefined variables](../build/variables.md).
+Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+the [system variables](../build/variables.md#system-variables). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 
