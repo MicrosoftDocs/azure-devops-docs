@@ -54,8 +54,6 @@
       href: test-different-configurations.md
     - name: Repeat a test with different data
       href: repeat-test-with-different-data.md
-    - name: Collect screenshots and video
-      href: collect-screenshots-and-video.md
     - name: Collect diagnostic data
       href: collect-diagnostic-data.md
     - name: Manage test results
