@@ -271,7 +271,7 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 ### View the current values of all variables
 
-1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
+1. Open the pipelines view of the summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.
 
    ![Opening the log for a release](_img/view-variable-values-link.png)
