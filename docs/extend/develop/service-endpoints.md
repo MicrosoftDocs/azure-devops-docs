@@ -34,8 +34,8 @@ Follow this guide to create a new Service Point contribution and leverage it in 
 ## Task overview
 
 This article walks through developing a service endpoint by creating an example extension for Azure DevOps Services that includes:
--	A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
--	A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
+- A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
+- A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
 > Note: Service endpoints created by users are created at the project level, not the organization level. 
 
@@ -269,9 +269,9 @@ This is the second field. It's a picklist
 - This field is populated by a REST call. 
 - The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
 - This is expressed in the `dataSourceBindings` array
-  -	The target is the name of the build task field to be populated ("project")
-  -	The endpointId is the name of the build task field containing the custom endpoint type
-  -	The REST call is chosen by the dataSourceName
+  - The target is the name of the build task field to be populated ("project")
+  - The endpointId is the name of the build task field containing the custom endpoint type
+  - The REST call is chosen by the dataSourceName
 
 If you've added the Build Task successfully, you should now see the Build Task when adding tasks to a build pipeline
 <img alt="Service endpoint build task selector" src="./_img/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
