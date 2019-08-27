@@ -87,7 +87,7 @@ You can pass parameters to both step and job templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
 
-To use parameters across multiple pipelines, see how to create a [variable group](../pipelines/library/variable-groups.md).
+To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
 ### Job templates with parameters
 
