@@ -21,6 +21,8 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
+- name: Manage teams
+  href: ../organizations/settings/scale/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project
@@ -99,8 +101,6 @@
     href: ../organizations/settings/manage-teams.md 
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
-  - name: Work as a Stakeholder
-    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Process Customization 
     href: ../reference/index.md
   - name: Client support for work tracking
