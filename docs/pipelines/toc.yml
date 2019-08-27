@@ -85,8 +85,10 @@
       href: languages/aks-template.md
     - name: Azure Machine Learning
       href: targets/azure-machine-learning.md
-    - name: Java to web App
+    - name: Java to web app
       href: languages/java-webapp.md
+    - name: Java to web app with MicroProfile
+      href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Java to Azure Function
       href: languages/java-function.md
     - name: Python to web app
