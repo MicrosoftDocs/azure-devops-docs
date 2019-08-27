@@ -46,30 +46,39 @@ To fix this issue, update the security appliances in order to support TLS 1.2 fo
 * `https://cdn.vsassets.io` -- hosts our CDN content
 * `https://gallerycdn.vsassets.io` -- hosts Azure DevOps extensions
 * `https://static2.sharepointonline.com` -- hosts some resources that we use in "office fabric" UI kit (fonts, etc)
+
+## More URLs for specific scenarios
 * `https://*.vstmrblob.vsassets.io` -- hosts our TCM log data
+* `https://*.vsblob.vsassets.io` -- hosts tools and packages for Azure Artifacts
+* `https://*.blob.core.windows.net` -- hosts packages for Azure Artifacts
+* `https://azurewebsites.net` -- NuGet connections
+* `https://nuget.org` -- NuGet connections
+
+> [!NOTE]
+> Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you are using by opening up `%AppData%\Nuget\NuGet.Config`.
 
 ## IP range restrictions
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open and update your allow-listed IPs to include the following IP addresses, based on your IP version. If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
+The various services and scenarios in Azure DevOps cover a wide range of destination IP addresses.  While a large majority of the traffic flows through the small set of of IP address ranges below, some legitimate traffic does not.  The abovementioned list of domain wildcards is the more exhaustive list of expected network traffic.  For example, the domain `https://0t3vsblobprodcus362.vsblob.vsassets.io` does not map to one of the below IP ranges, but it does match the expected domain pattern `https://*.blob.core.windows.net`, so it should not be blocked.  For this case, the IP address that `0t3vsblobprodcus362.vsblob.vsassets.io` maps to should be added to the firewall whitelist.
 
-**IPv4 ranges**
+**Key domains**
+
+* `dev.azure.com`
+* `*.dev.azure.com`
+* `visualstudio.com`
+* `*.visualstudio.com`
+
+**Key IPv4 ranges**
 
 * `13.107.6.0/24`
 * `13.107.9.0/24`
 * `13.107.42.0/24`
 * `13.107.43.0/24`
+> [!NOTE] If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 
-**IPv6 ranges**
+**Key IPv6 ranges**
 
 * `2620:1ec:4::/48`
 * `2620:1ec:a92::/48`
 * `2620:1ec:21::/48`
 * `2620:1ec:22::/48`
-
-## NuGet connections
-
-* `https://azurewebsites.net`
-* `https://nuget.org`
-
-> [!NOTE]
-> Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you are using by opening up `%APPData%\Nuget\NuGet.Config`.
