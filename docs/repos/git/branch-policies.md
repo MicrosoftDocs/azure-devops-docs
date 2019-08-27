@@ -210,10 +210,11 @@ In some cases, you need to bypass policy requirements so you can push changes to
 
 #### Can I push changes directly to a branch after a branch policy is configured?
 
-No. After you set up a branch policy, you cannot directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
+No. After you set up a required branch policy, you cannot directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
 
 >[!NOTE]
->If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after branch policy is configured.
+>* If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after a required branch policy is configured.
+>* If you configured optional branch policies, but no required branch policies, you can push changes directly to a branch.
 
 #### What is auto-complete?
 

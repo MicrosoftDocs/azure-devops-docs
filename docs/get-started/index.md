@@ -197,7 +197,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                             <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
                         </p>
                         <p>
-                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                            <a href="https://azure.microsoft.com/support/devops/">Azure DevOps support</a>
                         </p>
                         <p>
                             <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>

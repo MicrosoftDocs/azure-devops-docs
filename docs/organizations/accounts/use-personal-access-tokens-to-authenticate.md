@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/14/2019
+ms.date: 08/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,24 +18,13 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, we walk you through how to create or revoke PATS.
+Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATS.
 
-Azure DevOps uses enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication. Since PATs are an alternate form of user authentication, using a PAT gives you the same access level. If you create a PAT with a narrower scope, your access is limited to that particular scope.
+Azure DevOps uses enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication. Since PATs are an alternate form of user authentication, using a PAT gives you the same access level. If you create a PAT with a narrower [scope](../../integrate/get-started/authentication/oauth.md#scopes), your access is limited to that scope.
 
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
-
 [!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
-
-
-See the following examples of using your PAT.
-
-Username: `anything`
-Password: `your PAT here`
-
-or
-
-`git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName`
 
 To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
 
@@ -45,17 +34,21 @@ For administrators to revoke organization user PATs, see [Revoke other users' pe
 
 ## Frequently asked questions  
 
-### What is my Azure DevOps Services URL?
+### Q: What is my Azure DevOps Services URL?
 
-https://dev.azure.com/{yourorganization}
+A: https://dev.azure.com/{yourorganization}
 
-### Where can I learn more about how to use PATs?
+### Q: Can I regenerate a PAT?
 
-For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client).
+A: No, but you can extend a PaT or modify its scope.
 
-### What notifications will I get about my PAT?
+### Q: Where can I learn more about how to use PATs?
 
-Users receive two notifications during the lifetime of a PAT, one at creation and the other seven days before the expiration.
+A: For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client).
+
+### Q: What notifications will I get about my PAT?
+
+A: Users receive two notifications during the lifetime of a PAT, one at creation and the other seven days before the expiration.
 
 The following notification is sent at PAT creation:
 
@@ -65,9 +58,13 @@ The following notification is sent - a PAT is near expiration:
 
 ![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
-### What do I do if I get an unexpected PAT notification?
+### Q: What does "Full Access" mean?
 
-An administrator or a tool might have created a PAT on your behalf. See the following examples:
+A: The user has all access.
+
+### Q: What do I do if I get an unexpected PAT notification?
+
+A: An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
 - When you connect to an Azure DevOps Services Git repo through git.exe. it creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
 - When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app."

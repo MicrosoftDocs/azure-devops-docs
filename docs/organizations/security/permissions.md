@@ -1,7 +1,6 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
@@ -11,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019 
+ms.date: 08/14/2019 
 ---
 
 
@@ -48,8 +47,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
@@ -1539,7 +1537,17 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
         <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
         <blockquote>
         All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
-        <blockquote></td>
+                <p>
+                    Although the <strong>Create tag definition</strong> permission appears
+                    in the security settings at the project-level,
+                    tagging permissions are actually collection level permissions that are scoped
+                    at the project level when they appear in the user interface.
+                    To scope tagging permissions to a single project when using the TFSSecurity command,
+                    you must provide the GUID for the project as part of the command syntax.
+                    Otherwise, your change will apply to the entire collection.
+                    Keep this in mind when changing or setting these permissions.
+                </p>
+            </blockquote></td>
     </tr>
     <tr>
         <td id="create-test-runs-permission">Create test runs</td>
@@ -2186,7 +2194,6 @@ You manage the security of each area path from the [web portal](../../organizati
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
-
 > [!NOTE]  
 > Multiple teams may contribute to a project.
 > When that's the case, you can set up teams that are associated with an area.
@@ -2299,14 +2306,7 @@ Members of the Project Administrators group are automatically granted permission
 
 ## Iteration Path (object-level) 
 
-Iteration path permissions grant or restrict access to create and manage iteration paths.
-
-Multiple teams may contribute to a project. 
-When that's the case, you can set up teams that are associated with an area. 
-Permissions for the team's work items are assigned by assigning permissions to the area. 
-There are other [team settings](../settings/manage-teams.md) 
-that configure the team's agile planning tools.
-To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
+Iteration path permissions grant or restrict access to create and manage iteration paths, also referred to as sprints.
 
 You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#iteration-permissions). 
 
@@ -2314,9 +2314,6 @@ Members of the Project Administrators group are automatically granted these perm
 
 > [!div class="mx-imgBorder"]  
 > ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
-
-Consider granting team administrators, scrum masters, or team leads
-permissions to create, edit, or delete iteration nodes.
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -2509,16 +2506,15 @@ You manage tagging permissions mostly from the <a href="/azure/devops/server/com
     <tr>
         <td id="create-tag-definition-permission">Create tag definition</td>
         <td>
-            Can create new tags and apply them to work items.
+            <a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">.Can create new tags and apply them to work items.</a>
             Users without this permission can only select from the existing set of tags for the project.
             <blockquote>
                 <p>
-                    Readers and Contributors inherit the <strong>Create tag definition</strong> permission
-                    as it is set explicitly to Allow for the Project Valid Users group.
+                    By default, Contributors are assinged the <strong>Create tag definition</strong> permission.
                 </p>
                 <p>
                     Although the <strong>Create tag definition</strong> permission appears
-                    in the security settings at the project level,
+                    in the security settings at the project-level,
                     tagging permissions are actually collection level permissions that are scoped
                     at the project level when they appear in the user interface.
                     To scope tagging permissions to a single project when using the TFSSecurity command,

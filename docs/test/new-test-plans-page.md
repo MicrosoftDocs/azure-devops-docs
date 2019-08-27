@@ -50,7 +50,7 @@ Hence, test cases are reusable entities. By including them in a test plan or sui
 
 ## New capabilities
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new period. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new period. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
 
 ![test plans page](_img/new-test-plans-page/copy-test-plan.png)
@@ -103,7 +103,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 	- Existing charts capabilities
 - General:
 	- Performance improvements
-	- Enable [current extensibility points](https://docs.microsoft.com/en-us/azure/devops/extend/reference/targets/overview?view=azure-devops)
+	- Enable [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops)
 
 <a name="feedback"></a> 
 

@@ -137,10 +137,10 @@ The build stage uses the [Docker task](../tasks/build/docker.md) to build and pu
         tags: |
           $(tag)
           
-    - task: PublishPipelineArtifact@0
+    - task: PublishPipelineArtifact@1
       inputs:
         artifactName: 'manifests'
-        targetPath: 'manifests'
+        path: 'manifests'
 ```
 
 The deployment job uses the _Kubernetes manifest task_ to create the `imagePullSecret` required by Kubernetes cluster nodes to pull from the Azure Container Registry resource. Manifest files are then used by the Kubernetes manifest task to deploy to the Kubernetes cluster.
@@ -159,7 +159,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
       runOnce:
         deploy:
           steps:
-          - task: DownloadPipelineArtifact@1
+          - task: DownloadPipelineArtifact@2
             inputs:
               artifactName: 'manifests'
               downloadPath: '$(System.ArtifactsDirectory)/manifests'
@@ -198,8 +198,8 @@ Type `y` when prompted.
 
 We invite you to learn more about:
 * The services:
-  - [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/)
-  - [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
+  - [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)
+  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [Deploy to existing Kubernetes cluster template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/deploy-to-existing-kubernetes-cluster.yml)
 * Some of the tasks used in your pipeline, and how you can customize them:
   - [Docker task](../tasks/build/docker.md)

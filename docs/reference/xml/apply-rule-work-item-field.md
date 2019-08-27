@@ -287,6 +287,7 @@ You can make a pick list or assign value rule to apply or not apply to a group o
     If a user is in both groups, the "for" statement would be enforced, and the field would be required.
 
 <a id="tokens" /> 
+
 ### Use tokens to reference groups
 
 When you restrict a rule to a group, you must indicate the domain or scope of the group. For some values, you can use tokens.
@@ -360,7 +361,6 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 - [Add or modify a field](../add-modify-field.md)   
 - [All WITD XML elements reference](all-witd-xml-elements-reference.md)
-
 
 
 ### Person-named fields and validation errors
@@ -486,6 +486,7 @@ In the following XML example, SubStatus will be emptied as you type "Approved Ag
 > ```
 
 <!--- 
+
 #### Q: When would I define field rules using global workflow?
 
 **A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).

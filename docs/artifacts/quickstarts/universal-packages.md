@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.date: 09/25/2018
+ms.date: 08/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -102,7 +102,7 @@ az devops configure --defaults organization=https://[your-organization].visualst
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
 
-Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org/spec/v1.0.0.html) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
+Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer)](https://semver.org/spec/v1.0.0.html) without build metadata (`+` suffix).
 
 # [New URLs](#tab/azuredevops)
 
@@ -164,6 +164,19 @@ az artifacts universal download --organization https://fabrikam.visualstudio.com
 ```
 
 ---
+
+### Downloading the latest version
+
+When downloading a Universal Package, you can use a wildcard expression in the `version` parameter to download the highest version of a package according to [Semantic Versioning](https://semver.org) precedence rules.  
+
+#### Examples
+`*`: Highest version  
+`1.*`: Highest version with major version `1`  
+`1.2.*`: Highest patch release with major version `1` and minor version `2`  
+  
+Wildcard expressions do not currently support pre-release versions. It is not possible to get the latest pre-release version of a package.  
+  
+Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
 
 ## Next steps
 

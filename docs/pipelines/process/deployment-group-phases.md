@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: alewis
-author: alewis
+ms.author: sdanie
+author: steved0x
 ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---

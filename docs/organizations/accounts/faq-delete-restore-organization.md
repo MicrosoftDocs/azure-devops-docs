@@ -2,7 +2,7 @@
 title: Troubleshoot deleting, restoring organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn the answers to frequently asked questions (FAQs), like how to find the organization owner, how to delete or restore your organization, and more. 
+description: Learn the answers to frequently asked questions (FAQs), like how to find the organization Owner, how to delete or restore your organization, and more. 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158

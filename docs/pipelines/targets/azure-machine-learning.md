@@ -178,3 +178,8 @@ For more information on these commands, see the [CLI extension reference](https:
 ## Next steps
 
 Learn how you can further integrate machine learning into your pipelines with the [Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml).
+
+For more examples of using Azure Pipelines with Azure Machine Learning service, see the following repos:
+
+* [MLOps (CLI focused)](https://github.com/Microsoft/MLOps)
+* [MLOps (Python focused)](https://github.com/Microsoft/MLOpsPython)

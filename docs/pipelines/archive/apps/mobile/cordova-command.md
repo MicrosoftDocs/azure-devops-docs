@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: be45c6df-5da8-4b1c-b5b8-3e579ab39096
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---

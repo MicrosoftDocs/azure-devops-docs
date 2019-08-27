@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E6A051F3-8B84-4724-9110-F84DB1F3DCD5
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 08/04/2016
 monikerRange: 'tfs-2017'
 ---
@@ -28,11 +28,11 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 ## Enable Java, Apache Tomcat, and FTP for your Azure Web App
 
-0. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Edit or [create a Java web app](https://azure.microsoft.com/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
+2. Edit or [create a Java web app](https://azure.microsoft.com/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
 
-2. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
+3. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 
    ![Create FTP deployment credentials](_shared/_img/deployment-credentials.png)
 
@@ -133,11 +133,11 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 
 A: Yes.
 
-0. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Open your web app and download the publish profile.
+2. Open your web app and download the publish profile.
 
-2. Open your .PublishSettings file and copy some of the data from the ```publishMethod="FTP"``` section into your build variables.
+3. Open your .PublishSettings file and copy some of the data from the ```publishMethod="FTP"``` section into your build variables.
 
 | Name | Value from .PublishSettings file attribute| Notes |
 |---|---|---|

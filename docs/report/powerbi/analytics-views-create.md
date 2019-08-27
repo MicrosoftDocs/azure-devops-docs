@@ -19,6 +19,8 @@ ms.date: 04/05/2019
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+
 You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
 [!INCLUDE [temp](../_shared/boards-disabled.md)]

@@ -264,6 +264,9 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 * **Azure Pipelines, TFS 2017.3 and newer:** Select the check box to enable this option.
 
+> [!NOTE]
+> This is not enabled by default in *azure-pipelines.yml* and requires use of the **checkout** task.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"

@@ -105,7 +105,7 @@ The build stage uses the _Docker task_ to build and push the image to the contai
 
 We invite you to learn more about:
 * The services:
-  - [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
+  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
 * The method your pipeline uses to connect to the service: [Docker registry service connections](../library/service-endpoints.md#sep-docreg)
 * Some of the tasks used in your pipeline, and how you can customize them:

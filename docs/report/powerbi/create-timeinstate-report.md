@@ -267,7 +267,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 > 
 > [!NOTE]
-> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
+> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories.md).
 
 The following image shows the impact of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
 
@@ -491,5 +491,5 @@ Additional information is provided in this section for the DAX functions used to
 - [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
-- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

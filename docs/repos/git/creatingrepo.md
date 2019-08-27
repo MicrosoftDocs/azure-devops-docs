@@ -68,9 +68,9 @@ another remote Git repository.
 
 ### In an empty folder
 
-0. Open the **Connect** view in Team Explorer by choosing **Projects** then **Manage Connections** from the context menu. 
-1. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
-2. Select **Create** to create the repo.
+1. Open the **Connect** view in Team Explorer by choosing **Projects** then **Manage Connections** from the context menu. 
+2. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
+3. Select **Create** to create the repo.
 
    ![Creating a new local Git repository in Visual Studio Team Explorer](_img/CreateNewRepoVS.png)</ol>
 

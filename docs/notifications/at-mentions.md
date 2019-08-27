@@ -11,18 +11,34 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 05/15/2019
+ms.date: 08/22/2019
 ---
 
 # Use &#64;mentions in work items and pull requests
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
-The <strong>@mention</strong> control allows you to quickly pull someone into a work item or pull request.
+The <strong>@mention</strong> control allows you to quickly pull someone into a work item or pull request discussion. With this control, you select a project member from the search list and they get notified of the comment you enter. 
+
+Use the <strong>@mention</strong> control to start or continue a discussion within the following areas:
+
+::: moniker range="azure-devops"
+- A work item discussion or any rich-text field
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments. 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+- A work item discussion 
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments. 
+::: moniker-end
 
 ::: moniker range="tfs-2015"
 > [!NOTE]
-> The <strong>@mention</strong> control is available from TFS 2015 Update 2 and later versions.
+> The <strong>@mention</strong> control is available from TFS 2015.2 and later versions.
 ::: moniker-end
 
 <a id="mention-person-id">  </a>

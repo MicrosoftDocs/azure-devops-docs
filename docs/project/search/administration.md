@@ -173,15 +173,18 @@ and install a JRE manually before attempting to install Search.
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
 to point to the JRE installation folder. The configuration wizard may fail 
 to detect an existing JRE installation if it is not correctly configured, 
-or if the **JAVA\_HOME** setting points to an earlier version than that required 
-by Search. 
+or if the **JAVA\_HOME** setting points to an earlier version than that required by Search. 
 
-If there is a version of a JRE **earlier** than the minimum required by  
+> [!NOTE]   
+> We don't advise installing Elasticsearch on a machine where resources are shared, especially on a large enterprise environment with multiple application tiers. Instead, we recommend setting up Elasticsearch in a separate dedicated machine. In that way, the JAVA environment isn't shared across machines for other purposes.
+
+
+If there is a version of a JRE **earlier** than the minimum required by 
 Search, and the **JAVA\_HOME** variable is set to that version, we recommend 
 you install Search on a separate server because changing the value 
 of the **JAVA\_HOME** variable may cause other installed software to fail.
 
-If there is a version of Server JRE **equal to or later** than the minimum required
+If there is a version of Server JRE **equal to or later** than the minimum required 
 by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the JRE installation guide and then rerun the configuration wizard.

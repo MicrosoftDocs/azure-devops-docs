@@ -19,16 +19,16 @@ This page demonstrates how you can add charts to your extensions. Charts can be 
 These charts are easy to create, resizable, interactive and consistent with the Azure DevOps Services look and feel. 
 The following chart types are supported: 
 
-0. Line
-1. Bar
-2. Column 
-3. Area
-4. Stacked bar 
-5. Stacked column 
-6. Stacked area
-7. Pie 
-8. Pivot table
-9. Histogram 
+1. Line
+2. Bar
+3. Column 
+4. Area
+5. Stacked bar 
+6. Stacked column 
+7. Stacked area
+8. Pie 
+9. Pivot table
+10. Histogram 
 
 > If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/vsts-extension-samples).
 Once downloaded, go to the `charts` folder, then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
@@ -61,8 +61,8 @@ Ensure that the `VSS.SDK.js` file is inside the `sdk/scripts` folder so that the
 
 ### Images
 Add the following images to an `img` folder in your project directory so that the path is `home/img/logo.png` and `home/img/CatalogIcon.png`: 
-0. [Extension logo](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/logo.png) 
-1. [Catalog icon](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/CatalogIcon.png)
+1. [Extension logo](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/logo.png) 
+2. [Catalog icon](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/CatalogIcon.png)
 
 ### Extension manifest file
 In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md). Create a `vss-extension.json` file with the following contents: 

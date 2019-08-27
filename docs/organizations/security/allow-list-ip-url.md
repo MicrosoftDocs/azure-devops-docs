@@ -42,11 +42,11 @@ For domain-based firewalls, ensure the following domains are allowed:
 
 ## Incoming IP addresses
 
-Azure DevOps' incoming traffic hits the service through IP addresses and domains used by Microsoft Azure datacenters or third party providers.
-1.  To get the list of Azure IP ranges and Service Tags for Public Cloud, see [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519). This link provides the IP address ranges for global Azure as a whole, each Azure region within Public Cloud, and ranges for several Azure Services (Service Tags) such as Storage, SQL, and Azure Traffic Manager in Public Cloud.
+Azure DevOps' incoming traffic hits the service through IP addresses and domains used by Microsoft Azure data centers or third party providers.
+1.  To get the list of Azure IP ranges and Service Tags for Public Cloud, see [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). This link provides the IP address ranges for global Azure as a whole, each Azure region within Public Cloud, and ranges for several Azure Services (Service Tags) such as Storage, SQL, and Azure Traffic Manager in Public Cloud.
 2.  Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
 
-- *vsassets.io 
+- *.vsassets.io 
 - *.vsassetscdn.azure.cn 
 - *.gallerycdn.vsassets.io (Marketplace)
 - *.gallerycdn.azure.cn (Marketplace)
@@ -86,7 +86,7 @@ During the import process, we highly recommend that you restrict access to your 
 
 ### Visual Studio and Azure Services
 
-If you or your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/en-us/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
+If you or your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
 
 ## Other important URLs to consider
 

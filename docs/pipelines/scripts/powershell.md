@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -48,17 +48,17 @@ steps:
 
 You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
-0. Push your script into your repo.
+1. Push your script into your repo.
 
-1. Add a PowerShell build task.
+2. Add a PowerShell build task.
 
    ![Add task](_img/BldStepAddBegin.png)
 
    ![Add PowerShell task](_img/BldScriptPSAdd.png)
 
-2. Drag the build task where you want it to run.
+3. Drag the build task where you want it to run.
 
-3. Specify the name of the script.
+4. Specify the name of the script.
 
 ::: moniker-end
 
@@ -67,9 +67,6 @@ You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-wi
 For example, to version to your assemblies, copy and upload this script to your project:
 
 ```ps
-##-----------------------------------------------------------------------
-## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
-##-----------------------------------------------------------------------
 # Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #

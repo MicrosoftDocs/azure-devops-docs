@@ -62,21 +62,21 @@ If you have already created a repo for your Xcode project in Azure DevOps Servic
 
 ## Push your project
 
-0. Go to **Source Control** in Xcode and select **_Projectname_ -- master**, then **Configure...**  
+1. Go to **Source Control** in Xcode and select **_Projectname_ -- master**, then **Configure...**  
 
    ![Configure your Xcode Git project settings](_img/share-your-code-in-git-xcode/xcodeconfigureproject.png)
 
-1. Select **Remotes**, then select the ![plus](_img/share-your-code-in-git-xcode/xcodeplusicon.png) icon and choose **Add Remote...**
+2. Select **Remotes**, then select the ![plus](_img/share-your-code-in-git-xcode/xcodeplusicon.png) icon and choose **Add Remote...**
 
-2. In the **Address** field, paste the Git clone URL for your repo copied in the previous step. Select **Add Remote**, then select **Done** to finish creating the `origin` remote for your local Git repo.  
+3. In the **Address** field, paste the Git clone URL for your repo copied in the previous step. Select **Add Remote**, then select **Done** to finish creating the `origin` remote for your local Git repo.  
 
    ![Add a remote to the local Git repo for your Xcode project to connect to Azure DevOps Services](_img/share-your-code-in-git-xcode/xcodeaddremote2.png)
 
-3. Go to **Source Control, Push...**, enter the branchname on `origin` to push to, and select **Push**.
+4. Go to **Source Control, Push...**, enter the branchname on `origin` to push to, and select **Push**.
 
    ![Push your Xcode project to Azure DevOps Services](_img/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
-4. If prompted, enter your Azure DevOps Services credentials. For **Username**, enter your Azure DevOps Services username. For **Password**, enter a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
+5. If prompted, enter your Azure DevOps Services credentials. For **Username**, enter your Azure DevOps Services username. For **Password**, enter a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
 
    ![Authenticate using personal access tokens](_img/share-your-code-in-git-xcode/xcodeauthentication.png)
 

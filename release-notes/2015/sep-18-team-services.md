@@ -4,9 +4,9 @@ description: VSTS release notes for September 18 2015
 ms.assetid: 9232867d-6a5f-4716-8d60-c3e5debc311d
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

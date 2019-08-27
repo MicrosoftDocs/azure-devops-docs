@@ -85,8 +85,10 @@
       href: languages/aks-template.md
     - name: Azure Machine Learning
       href: targets/azure-machine-learning.md
-    - name: Java to web App
+    - name: Java to web app
       href: languages/java-webapp.md
+    - name: Java to web app with MicroProfile
+      href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Java to Azure Function
       href: languages/java-function.md
     - name: Python to web app
@@ -177,6 +179,8 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
+    - name: Collect screenshots and video
+      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -234,7 +238,7 @@
     items:
     - name: Overview
       href: artifacts/artifacts-overview.md
-    - name: Pipeline artifacts (preview)
+    - name: Pipeline artifacts
       href: artifacts/pipeline-artifacts.md
     - name: Build artifacts
       href: artifacts/build-artifacts.md
@@ -526,6 +530,8 @@
         href: tasks/package/npm-authenticate.md
       - name: NuGet
         href: tasks/package/nuget.md
+      - name: NuGet Authenticate
+        href: tasks/package/nuget-authenticate.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
@@ -546,6 +552,10 @@
           href: tasks/package/prev-versions/nuget-publisher-0.md
         - name: NuGet Command 0.*
           href: tasks/package/nuget.md#custom-nuget-command
+        - name: Pip Authenticate 0.*
+          href: tasks/package/prev-versions/pip-authenticate-0.md
+        - name: Twine Authenticate 0.*
+          href: tasks/package/prev-versions/twine-authenticate-0.md
     - name: Deploy tasks
       items:
       - name: App Center Distribute

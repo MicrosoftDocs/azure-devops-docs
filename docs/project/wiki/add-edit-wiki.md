@@ -21,10 +21,10 @@ ms.date: 12/17/2018
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-In this quickstart, you learn how to do the following tasks:  
+In this quickstart, learn how to do the following tasks:  
 
 > [!div class="checklist"]
-> * Open Wiki
+> * Open wiki
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
