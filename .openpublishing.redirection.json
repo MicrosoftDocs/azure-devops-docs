@@ -992,12 +992,12 @@
     },
     {
       "source_path": "docs/marketplace/how-to/approve-tfs-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/approve-extensions",
+      "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/approve-vsts-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/approve-extensions",
+      "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
     },
     {
@@ -3313,7 +3313,7 @@
     {
       "source_path": "docs/marketplace/extension-report.md",
       "redirect_url": "/azure/devops/extend/extension-report",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/extensions/publish/integration.md",
@@ -4663,11 +4663,6 @@
     {
       "source_path": "docs/pipelines/test/run-automated-tests-from-test-hub.md",
       "redirect_url": "/azure/devops/test/run-automated-tests-from-test-hub",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/pipelines/test/collect-screenshots-and-video.md",
-      "redirect_url": "/azure/devops/test/collect-screenshots-and-video",
       "redirect_document_id": false
     },
     {
@@ -7322,8 +7317,13 @@
     },
     {
       "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
+      "redirect_url": "/azure/devops/pipelines/test/collect-screenshots-and-video",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/collect-screenshots-and-video.md",
       "redirect_url": "/azure/devops/test/collect-screenshots-and-video",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/continuous-test-java.md",
