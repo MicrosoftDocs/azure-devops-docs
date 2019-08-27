@@ -56,7 +56,7 @@ Follow these instructions to set up a pipeline for a sample Node app.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your JavaScript sample repository.
+1. When the list of repositories appears, select your Node.js sample repository.
 
 1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 

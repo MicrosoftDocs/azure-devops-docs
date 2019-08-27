@@ -145,7 +145,7 @@ steps:
 > [!TIP]
 >
 > As an alternative, you can set up a [self-hosted agent](../agents/agents.md#install) and save the cost of running the tool installer.
-> You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds.
+> You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs thats are not officially supported by Azure DevOps or you have available on your corporate or on-premises environments only. 
 
 ::: moniker-end
 
@@ -283,7 +283,6 @@ steps:
   displayName: 'Install dotnetsay'
   inputs:
     command: custom
-    projects: '**/*.csproj'
     custom: tool
     arguments: 'install -g dotnetsay'
 ```

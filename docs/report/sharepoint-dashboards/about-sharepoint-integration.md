@@ -70,7 +70,7 @@ You can configure the TFS extension for SharePoint Products on your SharePoint s
 >
 > Here are your main options:
 > 
-> -	You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
+> - You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
 > - You can use the Team Foundation Server extensions for SharePoint Products configuration wizard to install SharePoint Foundation 2013 on a different server from the one running Team Foundation Server.
 > - You can use SharePoint Server. If you use the Enterprise edition of SharePoint Server, you must configure it for dashboard compatibility.
 > - You can use a different version of SharePoint Foundation than the one that ships with TFS.
