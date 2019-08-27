@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.date: 08/01/2019
+ms.date: 08/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,7 +33,7 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 
 | Argument                                                                                           | Description                                                         |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `nuGetServiceConnections`<br/>Service connection credentials for feeds outside this organization   | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-nuget" data-raw-source="[NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget)">NuGet service connection</a> names for feeds outside this organization/collection to additionally set up. If you only need feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
+| `nuGetServiceConnections`<br/>Service connection credentials for feeds outside this organization   | (Optional) Comma-separated list of [NuGet service connection](~/pipelines/library/service-endpoints.md#sep-nuget) names for feeds outside this organization/collection to additionally set up. If you only need feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `forceReinstallCredentialProvider`<br/>Reinstall the credential provider even if already installed | (Optional) Reinstall the credential provider to the user profile directory even if already installed. This may upgrade (or potentially downgrade) the credential provider. |
 | [!INCLUDE [temp](../_shared/control-options-arguments-md.md)] | |
 
@@ -74,21 +74,19 @@ If the only authenticated feeds you use are Azure Artifacts feeds in your organi
 
 ### Restore and push NuGet packages outside your organization
 
-If you use Azure Artifacts feeds from a different organization or use a third-party authenticated package repository, you'll need to set up <a href="~/pipelines/library/service-endpoints.md#sep-nuget" data-raw-source="[NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget)">NuGet service connections</a> and specify them in the `nuGetServiceConnections` input.
+If you use Azure Artifacts feeds from a different organization or use a third-party authenticated package repository, you'll need to set up [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) and specify them in the `nuGetServiceConnections` input.
 Feeds within your Azure Artifacts organization will also be automatically authenticated.
 
 #### nuget.config
 ```XML
 <configuration>
   <packageSources>
-    <!-- Any package source listed here whose URL matches the URL of a service connection in nuGetServiceConnections will be authenticated.
-         The key name here does not need to match the name of the service connection. 
-         This can include Azure Artifacts feeds in other organizations, as well as third party NuGet repositories. -->
+    <!-- Any Azure Artifacts feeds within your organization will automatically be authenticated -->
+    <add key="MyOrganizationFeed" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
+    <!-- Any package source listed here whose URL matches the URL of a service connection in nuGetServiceConnections will also be authenticated.
+         The key name here does not need to match the name of the service connection. -->
     <add key="OtherOrganizationFeed" value="https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/nuget/v3/index.json" />
     <add key="ThirdPartyRepository" value="https://{thirdPartyRepository}/index.json" />
-
-    <!-- Any Azure Artifacts feeds within your organization will still automatically be authenticated -->
-    <add key="MyOrganizationFeed" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
   </packageSources>
 </configuration>
 ```
@@ -114,7 +112,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 # ...
 - script: dotnet nuget push --api-key AzureArtifacts --source https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/nuget/v3/index.json MyProject.*.nupkg
 ```
-where `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of <a href="~/pipelines/library/service-endpoints.md#sep-nuget" data-raw-source="[NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget)">NuGet service connections</a> that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
+where `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
 
 ## Open source
@@ -134,6 +132,18 @@ Specifically, this task will configure:
 * dotnet / .NET Core SDK, version 2.1.400 or higher
 * MSBuild, version 15.8.166.59604 or higher
 
+However, upgrading to the latest stable version is recommended if you encounter any issues.  
+
+### I get "A task was canceled" errors during a package restore. What should I do?
+
+Known issues in NuGet and in the Azure Artifacts Credential Provider can cause this type of error.  
+
+A [known issue](https://github.com/NuGet/Home/issues/8198) in some versions of nuget/dotnet can cause this error, especially during large restores on resource constrained machines. This issue is fixed in [NuGet 5.2](https://docs.microsoft.com/nuget/release-notes/nuget-5.2-rtm), as well as .NET Core SDK 2.1.80X and 2.2.40X. If you are using an older version, try upgrading your version of NuGet or dotnet. The [.NET Core Tool Installer](~/pipelines/tasks/tool/dotnet-core-tool-installer.md) task can be used to install a newer version of the .NET Core SDK.  
+
+There are also known issues with the Azure Artifacts Credential Provider (installed by this task), including [artifacts-credprovider/#77](https://github.com/microsoft/artifacts-credprovider/issues/77) and [artifacts-credprovider/#108](https://github.com/microsoft/artifacts-credprovider/issues/108). If you experience these issues, ensure you have the latest credential provider by setting the input `forceReinstallCredentialProvider` to `true` in the NuGet Authenticate task. This will also ensure your credential provider is automatically updated as issues are resolved.  
+
+If neither of the above resolves the issue, please enable [Plugin Diagnostic Logging](https://github.com/NuGet/Home/wiki/Plugin-Diagnostic-Logging) and report the issue to [NuGet](https://github.com/NuGet/Home/issues) and the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider/issues).  
+
 ### How is this task different than the NuGetCommand and DotNetCoreCLI tasks?
 
 This task configures nuget.exe, dotnet, and MSBuild to authenticate with Azure Artifacts or other repositories that require authentication.
@@ -152,12 +162,12 @@ For example, this task can safely run either before or after a NuGet or .NET Cor
 
 Due to limitations in NuGet, this task cannot be used to set up a NuGet service connection that uses a NuGet API Key.
 Instead:
-1. Configure a <a href="~/pipelines/process/variables.md#secret-variables" data-raw-source="[secret variable](~/pipelines/process/variables.md#secret-variables)">secret variable</a> containing the ApiKey
+1. Configure a [secret variable](~/pipelines/process/variables.md#secret-variables) containing the ApiKey
 2. Perform the package push using `nuget push -ApiKey $(myNuGetApiKey)` or `dotnet nuget push --api-key $(myNuGetApiKey)`, assuming you named the variable `myNuGetApiKey`
 
 ### My agent is behind a web proxy. Will NuGetAuthenticate set up nuget.exe, dotnet, and MSBuild to use my proxy?
 
-No. While this task itself will work behind a web proxy <a href="~/pipelines/agents/proxy.md" data-raw-source="[secret variable](~/pipelines/agents/proxy.md)">your agent has been configured to use</a>, it does not configure NuGet tools to use the proxy.
+No. While this task itself will work behind a web proxy [your agent has been configured to use](~/pipelines/agents/proxy.md), it does not configure NuGet tools to use the proxy.
 
 To do so, you can either:
 * Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Note that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
