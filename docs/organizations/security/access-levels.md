@@ -841,7 +841,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
+::: moniker range="tfs-2017"
 
 - Change the priority of an item within a backlog
 - Delete work items 
@@ -851,6 +851,18 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 
 ::: moniker-end
+
+
+::: moniker range="<= tfs-2015"
+
+- Change the priority of an item within a backlog
+- Delete work items 
+- Create shared queries, view charts, and modify the home page  
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.  
+
+::: moniker-end
+
 
 > [!NOTE]
 > Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
