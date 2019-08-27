@@ -355,7 +355,7 @@ az boards iteration team list --team
                               [--timeframe]
 ```
 
-- **team**: Name or ID of the project.
+- **team**: Name or ID of the team.
 - **project**: Name or ID of the project.
 - **timeframe**: A filter for which iterations are returned based on relative time. Only Current is supported. 
 
