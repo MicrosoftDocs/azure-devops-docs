@@ -24,8 +24,11 @@ Use this task in a build or release pipeline to pause execution of the pipeline 
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/DelayV1.md)]
+
 ::: moniker-end
 
 ## Arguments

@@ -5,9 +5,9 @@ ms.assetid: 924f89e9-0914-2308-8090-b0543fac0556
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -39,7 +39,7 @@ See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/ma
 <a name="method_openWorkItem"></a>
 ### openWorkItem()
 
-Opens the specified work item. The host page will display the work item in a dialog.
+Opens the specified work item. The host page displays the work item in a dialog.
 
 #### Syntax
 <pre class='syntax'>
@@ -53,12 +53,12 @@ Opens the specified work item. The host page will display the work item in a dia
 
 #### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise will return null.
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise returns null.
 
 <a name="method_openNewWorkItem"></a>
 ### openNewWorkItem()
 
-Opens a new work item of the specified type. The host page will display the new work item in a dialog.
+Opens a new work item of the specified type. The host page displays the new work item in a dialog.
 
 #### Syntax
 <pre class='syntax'>
@@ -72,4 +72,4 @@ Opens a new work item of the specified type. The host page will display the new 
 
 #### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise will return null
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise  returns null.

@@ -47,7 +47,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>containerRegistry</code><br/>Container registry</td>
-    <td>(Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg)</td>
+    <td>(Optional) Name of the <a href="../../library/service-endpoints.md#sep-docreg" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md#sep-docreg)">Docker registry service connection</a></td>
   </tr>
   <tr>
     <td><code>repository</code><br/>Repository</td>
@@ -58,7 +58,7 @@ Following are the key benefits of using Docker task as compared to directly usin
     <td>(Optional) Multiline input where each line contains a tag to be used in build, push or buildAndPush commands<br/>Default value: $(Build.BuildId)</td>
   </tr>
   <tr>
-    <td><code>Dockerfile</code><br/>Tags</td>
+    <td><code>Dockerfile</code><br/>Dockerfile</td>
     <td>(Optional) Path to the Dockerfile<br/>Default value: **/Dockerfile</td>
   </tr>
   <tr>

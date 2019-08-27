@@ -1,10 +1,11 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md", 
+          "**/*.yml"
         ],
         "group": "all",
         "exclude": [

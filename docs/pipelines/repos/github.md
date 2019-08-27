@@ -726,9 +726,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same GitHub organization as the Git repo specified above.
+  - Contained in the same GitHub organization as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
 
 #### Authenticated submodules
@@ -755,12 +755,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -861,8 +861,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 You can configure the `clean` setting in the [Checkout](..//yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -902,17 +901,16 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
  ![GitHub options](_img/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -920,8 +918,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
----
-
+* * *
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
@@ -976,11 +973,11 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
 1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 
-1. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
-  For the status check, select the name of your pipeline in the **Status checks** list.
+   For the status check, select the name of your pipeline in the **Status checks** list.
 
-  ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
+   ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
 
 >[!IMPORTANT]
 >If your pipeline doesn't show up in this list, please ensure the following:

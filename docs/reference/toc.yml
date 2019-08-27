@@ -3,6 +3,8 @@
   href: index.md
 - name: About process (work tracking) customization
   href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Compare system processes  
+  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Inheritance Process Model 
   href: ../organizations/settings/work/toc.yml
 - name: On-premises XML Process Model 

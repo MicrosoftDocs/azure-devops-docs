@@ -9,8 +9,8 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 06/04/2019
-monikerRange: 'azure-devops'
+ms.date: 07/19/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Job and step templates
@@ -86,6 +86,8 @@ jobs:
 You can pass parameters to both step and job templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
+
+To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
 ### Job templates with parameters
 
@@ -163,6 +165,29 @@ steps:
 > For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
+
+Parameters are not limited to scalar strings.
+As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
+Likewise, sequences can be passed where sequences are expected.
+For example:
+
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: process.yml
+  parameters:
+    pool:   # this parameter is called `pool`
+      vmImage: ubuntu-latest  # and it's a mapping rather than a string
+
+
+# process.yml
+parameters:
+  pool: {}
+
+jobs:
+- job: build
+  pool: ${{ parameters.pool }}
+```
 
 ## Using other repositories
 
@@ -273,7 +298,8 @@ steps:
 ### Context
 
 Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
-Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus many of the [predefined variables](../build/variables.md).
+Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+the [system variables](../build/variables.md#system-variables). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 

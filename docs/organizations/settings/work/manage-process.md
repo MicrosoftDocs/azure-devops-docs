@@ -46,7 +46,7 @@ In this article, learn how to perform these tasks:
 
 <a id="create-inherited-process"></a>
 ## Create an inherited process
-You can create an inherited process from any one of the three system processes: [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
+You can create an inherited process from any one of the four system processes:[Basic](../../../boards/get-started/track-issues-tasks.md), [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
 
 1. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
 

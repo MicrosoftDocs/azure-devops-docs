@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 06/06/2019
+ms.date: 06/27/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This task publishes test results to Azure Pipelines or TFS when tests are executed
@@ -92,6 +94,7 @@ in the **Languages** section of these topics, which also includes examples for o
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly.  |
 | **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
 | **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
+| **Fully Qualified Name** | This is the reference of the namespace, test method, and test class used to publish the test result. The format of FQN is namespace.testclass.methodname. It is not supported in the UI but is available via API.  |
 | **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |
 | **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
 | **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
@@ -131,7 +134,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 (1): **Duration** is used only when **Date started** and **Date completed** are not available.
 
-(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If test test is data driven and has parameters, the character limit will include the parameters.
+(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 
@@ -155,7 +158,7 @@ The final image will be published to Docker or Azure Container Registry
 #### Get the code
 
 1. Import into Azure DevOps or fork into GitHub the following repository.
-   This sample code includes a `Dockerfile` file at the root of the repository along with `.vsts-ci.docker.yml` file.
+   This sample code includes a `Dockerfile` file at the root of the repository along with `.vsts-ci.docker.yml` file.
 
    ```URL
    https://github.com/MicrosoftDocs/pipelines-dotnet-core
@@ -197,12 +200,11 @@ The final image will be published to Docker or Azure Container Registry
 
 #### Define the build pipeline
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-1. If you have a Docker Hub account, and want to push the image to your Docker registry,
-   replace the contents of the `.vsts-ci.docker.yml` file with the following:
+1. If you have a Docker Hub account, and want to push the image to your Docker registry,
+   replace the contents of the `.vsts-ci.docker.yml` file with the following:
 
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
@@ -232,7 +234,7 @@ The final image will be published to Docker or Azure Container Registry
        pswd: $(dockerPassword)
    ```
 
-   Alternatively, if you configure an Azure Container Registry and want to push the image to that registry,
+   Alternatively, if you configure an Azure Container Registry and want to push the image to that registry,
    replace the contents of the `.vsts-ci.yml` file with the following:
 
    ```YAML
@@ -285,17 +287,16 @@ The final image will be published to Docker or Azure Container Registry
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 1. Create a new build pipeline using the **Empty job**.
 
-1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
+1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-   * **Agent queue**: `Hosted Ubuntu 1604`
+   * **Agent queue**: `Hosted Ubuntu 1604`
 
-1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
+1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
-   * **Type**: Inline
+   * **Type**: Inline
    * **Script**: To build, test and copy artifacts to host, use the following script:
 
      ```Bash
@@ -342,13 +343,12 @@ YAML builds are not yet available on TFS.
 
 1. Save the pipeline and queue a build. Watch it create and push a Docker image to your registry and the test results to Azure DevOps.
 
----
-
+* * *
 <a name="attachments"></a>
 
 ## Attachments support
 
-The Publish Test Results task provides support for attachments up to 100MB for both test run and test results for the following formats.
+The Publish Test Results task provides support for attachments for both test run and test results for the following formats. For public projects, we support 2GB of total attachments. 
 
 ### Visual Studio Test (TRX)
 
@@ -374,6 +374,26 @@ The Publish Test Results task provides support for attachments up to 100MB for b
 
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
+
+## Frequently Asked Questions
+
+#### What is the maximum permittable limit of FQN?
+
+The maximum FQN limit is 512 characters.
+
+#### Does the FQN Character limit also include properties and their values in case of data driven tests?
+
+Yes, the FQN character limit includes properties and their values.
+
+#### Will the FQN be different for sub-results?
+
+Currently, sub-results from the data driven tests will not show up in the corresponding data. 
+
+Example: I have a Test case: Add product to cart
+Data 1: Product = Apparel
+Data 2: Product = Footwear
+
+All test sub-result published will only have the test case name and the data of the first row.
 
 ## Open source
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ms.date: 04/05/2019
 ---
 
-# Dashboards and reports quick reference 
+# Dashboards, reports, & widgets quick reference 
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
 
@@ -23,6 +23,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 [!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
 
 ## Tasks
+
 ::: moniker range="azure-devops"
 
 <table valign="top">
@@ -47,7 +48,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="dashboards.md" data-raw-source="[Filter a dashboard](dashboards.md)">Filter a dashboard</a></li>
 <br/> 
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li><br/> 
+<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li> 
 <li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
 <li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li> 
@@ -55,10 +56,21 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 </td>
 <td width="50%"> 
+<strong>Analytics</strong>
+<ul>
+<li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
+<li><a href="analytics-widgets.md">Analytics widgets</a></li>
+<li><a href="../powerbi/what-is-analytics.md">What is Analytics?</a></li>
+</ul>
 <strong>Charts</strong>
 <ul>
 <li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
 <li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
+</ul>
+<strong>Reports</strong>
+<ul>
+<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
 </ul>
 <strong>Widgets</strong>
 <ul>
@@ -70,17 +82,13 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
-<strong>Reports</strong>
-<ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
-<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
-</ul>
 </td>
 </tr>
 </tbody>
 </table>
 
 ---
+
 ::: moniker-end
 
 
@@ -116,10 +124,24 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 </td>
 <td width="50%"> 
+<strong>Analytics</strong>
+<ul>
+<li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
+<li><a href="analytics-widgets.md">Analytics widgets</a></li>
+<li><a href="analytics-extension.md">Enable or install Analytics</a></li>
+<li><a href="../powerbi/what-is-analytics.md">What is Analytics?</a></li>
+</ul>
 <strong>Charts</strong>
 <ul>
 <li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
 <li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
+</ul>
+<strong>Reports</strong>
+<ul>
+<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
+<li><a href="../../report/sql-reports/index.md" data-raw-source="[SQL Server reports](../../report/sql-reports/index.md)">SQL Server reports</a></li>
+<li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
 </ul>
 <strong>Widgets</strong>
 <ul>
@@ -131,19 +153,13 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
-<strong>Reports</strong>
-<ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
-<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
-<li><a href="../../report/sql-reports/index.md" data-raw-source="[SQL Server reports](../../report/sql-reports/index.md)">SQL Server reports</a></li>
-<li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
-</ul>
 </td>
 </tr>
 </tbody>
 </table>
 
 ---
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
@@ -180,15 +196,15 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
 <li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
 </ul>
-<strong>Widgets</strong>
-<ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
-</ul>
 <strong>Reports</strong>
 <ul>
 <li><a href="../../report/sql-reports/index.md" data-raw-source="[SQL Server reports](../../report/sql-reports/index.md)">SQL Server reports</a></li>
 <li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
+</ul>
+<strong>Widgets</strong>
+<ul>
+<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
+<li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
 </td>
 </tr>
@@ -200,10 +216,24 @@ Use this index to quickly access information on tasks for configuring or accessi
 ::: moniker-end
 
 
-## In context charts
-::: moniker range=">= azure-devops-2019"
+## In-context reports
 
-In context charts appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, and **Pipelines>Builds>Analytics**. 
+::: moniker range="azure-devops"
+
+In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**. 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
+
+::: moniker-end
+
+<br/>
+
+::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
 <tbody valign="top">
@@ -212,20 +242,20 @@ In context charts appear on specific service pages, such as **Boards>Boards**, *
 <strong>Boards</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
-<li><a href="velocity-chart-data-store.md" data-raw-source="[Velocity chart](velocity-chart-data-store.md)">Velocity chart</a> </li>
+<li><a href="../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="team-velocity.md" data-raw-source="[Velocity chart](team-velocity.md)">Velocity chart</a> </li>
 </ul>
 </td>
 <td width="50%">
 <strong>Pipelines</strong>
 <ul>
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li> 
-<li><a href="../../pipelines/test/review-code-coverage-results.md" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li> 
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li> 
-<li><a href="../../pipelines/test/requirements-traceability.md" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md" data-raw-source="[Test analytics](../../pipelines/test/test-analytics.md)">Test analytics</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li> 
-<li><a href="../../pipelines/test/test-impact-analysis.md" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li> 
+<li><a href="../../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li> 
+<li><a href="../../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li> 
+<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test analytics](../../pipelines/test/test-analytics.md)">Test analytics</a></li> 
+<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li> 
+<li><a href="../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li> 
 </ul>
 </td>
 </tr>
@@ -238,7 +268,7 @@ In context charts appear on specific service pages, such as **Boards>Boards**, *
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-In context charts appear on specific service pages, such as **Work>Backlog**, **Boards>Backlogs** and **Build and Release>Builds**. 
+In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
 
 <table valign="top">
 <tbody valign="top">
@@ -248,7 +278,7 @@ In context charts appear on specific service pages, such as **Work>Backlog**, **
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
 <li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
-<li><a href="velocity-chart-data-store.md" data-raw-source="[Velocity chart)](velocity-chart-data-store.md)">Velocity chart)</a> </li>
+<li><a href="team-velocity.md" data-raw-source="[Velocity chart)](team-velocity.md)">Velocity chart)</a> </li>
 </ul>
 <td width="50%">
 <strong>Build &amp; Release</strong>
@@ -279,7 +309,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: indicates data is derived from the [Analytics service](../powerbi/what-is-analytics.md)  
+- **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
 - **Project**: indicates you can select the project and team when configuring the widget
 - **Team**: Indicates a widget that is scoped to a team  
 - **User**: Indicates you widget that is scoped to a user identity 

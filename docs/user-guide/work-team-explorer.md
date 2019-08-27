@@ -56,8 +56,6 @@ The Git and TFVC repos support different pages and functions. For a comparison o
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
->  [!div class="mx-tdCol2BreakAll"]  
-> 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
 > | ![Visual studio 2019, Team Explorer Home page with Git as source control](_img/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](_img/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827210.png) |  
@@ -129,9 +127,9 @@ To learn more about each page, see the following articles.
 
 ## Team Foundation version control 
 
-The following images show the pages available when you connect to a Git repository from Team Explorer. 
+The following images show the pages available when you connect to a TFVC repository from Team Explorer. 
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|

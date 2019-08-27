@@ -1,5 +1,5 @@
 - name: Backlogs
-  href: index.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About backlogs 
   href: backlogs-overview.md
 - name: Quickstarts
@@ -18,40 +18,16 @@
   items:
   - name: Refine your backlog
     href: best-practices-product-backlog.md
-  - name: Work in Excel or Project
-    href: office/track-work.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Schedule projects using Project
-    href: office/schedule-projects-using-microsoft-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Copy list
     href: copy-list.md 
-  - name: Excel, Project, PowerPoint
-    items:
-    - name: Bulk add or modify (Excel)
-      href: office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-    - name: "Create backlog items & tasks (Project)"
-      href: office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-    - name: Storyboard your ideas
-      href: office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-    - name: Add and share storyboard shapes
-      href: office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
-  - name: TFS-Office integration issues
-    href: office/tfs-office-integration-issues.md
-  - name: "Rollup estimated & actual work using Project"
-    href: office/rollup-estimated-and-actual-work-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Resolve Excel data conflicts
-    href: office/resolve-excel-data-conflicts-publish-refresh.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Resolve Excel data validation errors
-    href: office/resolve-excel-data-validation-errors.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Resolve invalid links in an Excel tree list
-    href: office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Product backlog controls

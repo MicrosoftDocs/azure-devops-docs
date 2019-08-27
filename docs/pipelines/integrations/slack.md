@@ -80,12 +80,12 @@ For example, users may want to hear only about failed builds or get notified onl
 ### Example: Get notifications only for failed builds
 
 > [!div class="mx-imgBorder"]
-![Build Filters](_img/integrations-slack/build-filters.png)
+> ![Build Filters](_img/integrations-slack/build-filters.png)
 
 ### Example: Get notifications only if the deployments are pushed to production environment
 
 > [!div class="mx-imgBorder"]
-![Release Filters](_img/integrations-slack/release-filters.png)
+> ![Release Filters](_img/integrations-slack/release-filters.png)
 
 ## Approve release deployments from your channel
 
@@ -118,6 +118,7 @@ The Azure Pipelines app can help you monitor the pipelines activity in your priv
 Post that, you can set up and manage your notifications the same way as you would for a public channel.
 
 >[!NOTE]
+> * You can use the Azure Pipelines app for Slack only with a project hosted on Azure DevOps Services at this time.
 > * The user has to be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside direct messages
 > * Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported
@@ -129,7 +130,7 @@ If you are experiencing the following errors when using the [Azure Pipelines App
 
 [!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azipelines signout` command followed by the `/azipelines signin` command. 
+In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azpipelines signout` command followed by the `/azpipelines signin` command. 
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 
@@ -137,3 +138,8 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > ![Consent to the requested app permissions](_img/troubleshooting/consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsSlackApps@microsoft.com`.
+
+## Related articles
+- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

@@ -9,16 +9,19 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Manage security permissions  
 
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+
 Security permissions for a User or Security group can be managed by running following group of commands:
 
 `az devops security permission -h`
 
-For more information on concepts related to Security permissions, kindly refer [REST API documentation](https://docs.microsoft.com/en-us/rest/api/azure/devops/security/?view=azure-devops-rest-5.0)
+For more information on concepts related to Security permissions, kindly refer [REST API documentation](https://docs.microsoft.com/rest/api/azure/devops/security/?view=azure-devops-rest-5.0)
 
 ## Find a namespace
 

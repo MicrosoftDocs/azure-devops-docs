@@ -4,8 +4,8 @@ description: Set up a continuous integration (CI) build for your ASP.NET Core ap
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.manager: jillfra
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
 ms.custom: "mvc, seodec18"

@@ -57,15 +57,15 @@ The Burndown report shows a stacked area chart of the **Completed Work** and **R
 
  You can review the Burndown report to determine the progress that the team made during an iteration. For example, you can find answers to the following questions:  
   
--   How fast is the team completing remaining work?  
+- How fast is the team completing remaining work?  
   
--   Is the team adding work during the iteration? Is the team allowing scope creep?  
+- Is the team adding work during the iteration? Is the team allowing scope creep?  
   
--   How much work can the team complete in the available time?  
+- How much work can the team complete in the available time?  
   
--   When can the team finish the work?  
+- When can the team finish the work?  
   
--   When can the team finish the current iteration?  
+- When can the team finish the current iteration?  
   
   <a name="Updating"></a> 
 
@@ -83,4 +83,4 @@ You can update the Burndown report by opening the report in Office Excel and cha
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

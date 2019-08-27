@@ -20,6 +20,8 @@
     href: ../user-guide/faqs.md
   - name: Service status  
     href: ../user-guide/service-status-info.md
+  - name: Service limits  
+    href: ../user-guide/service-limits.md
 - name: REST API Reference
   items:
   - name: Search

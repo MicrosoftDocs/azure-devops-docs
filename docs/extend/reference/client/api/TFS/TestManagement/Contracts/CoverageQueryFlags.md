@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -17,6 +17,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Values
 
-* `Modules` If set, the Coverage.Modules property will be populated.
-* `Functions` If set, the ModuleCoverage.Functions properties will be populated.
-* `BlockData` If set, the ModuleCoverage.CoverageData field will be populated.
+* `Modules` If set, the Coverage.Modules property is populated.
+* `Functions` If set, the ModuleCoverage.Functions properties are populated.
+* `BlockData` If set, the ModuleCoverage.CoverageData field is populated.

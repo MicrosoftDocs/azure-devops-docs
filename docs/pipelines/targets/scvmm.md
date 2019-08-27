@@ -39,7 +39,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
    following [these instructions](/system-center/vmm/install-console).
    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
-1. Install the **System Center Virtual Machine Manager (SCVMM)** extension
+2. Install the **System Center Virtual Machine Manager (SCVMM)** extension
    from Visual Studio Marketplace into TFS or Azure Pipelines:
 
    * If you are using **Azure Pipelines**,
@@ -50,7 +50,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
      in Visual Studio Marketplace, upload it to your
      Team Foundation Server, and install it.<p />
 
-1. Create an SCVMM service connection in your project:
+3. Create an SCVMM service connection in your project:
 
    * In your Azure Pipelines or TFS project in your web browser, navigate to the project settings and select **Service connections**.
 
@@ -67,7 +67,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
      - **Username** and **Password**: Enter the credentials
        required to connect to the vCenter Server. Username formats such as **username**, **domain\username**,
        **machine-name\\username**, and **.\\username** are supported.
-       UPN formats such as **username@domain.com** and built-in system 
+       UPN formats such as <strong>username@domain.com</strong> and built-in system 
        accounts such as **NT Authority\\System** are not supported.<p />
 
 <a name="newvm"></a>

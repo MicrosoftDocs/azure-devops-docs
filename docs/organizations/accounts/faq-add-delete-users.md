@@ -2,7 +2,7 @@
 title: Troubleshoot adding, removing users in an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization owner, manage Visual Studio subscriptions, and more.
+description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization Owner, manage Visual Studio subscriptions, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
-monikerRange: 'azure-devops'
+ms.date: 08/12/2019
+monikerRange: '>= tfs-2013'
 ---
 
 # Troubleshoot adding and deleting organization users
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ## Permissions
 
 ### Q: Why can't I manage users?
 
-A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
+A: To access and manage users, you must have Azure DevOps [Project Collection Administrator or organization Owner permissions](#find-owner).
 
 <a name="find-owner"></a>
 
@@ -42,7 +42,7 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
-For example, if a user selects **Visual Studio/MSDN Subscriber** but the user doesn't have a valid, active Visual Studio subscription, the user can work only [as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
+For example, if a user selects **Visual Studio/MSDN Subscriber**, but the user doesn't have a valid, active Visual Studio subscription, they can work only [as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -74,33 +74,32 @@ A: If no other access levels are available, users can [work as Stakeholders](../
 
 ### Q: What happened to Visual Studio Online Professional?
 
-A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly).
+A: In 2016, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Customers who'd been purchasing Visual Studio Online Professional were able to continue purchasing it after that point, but it wasn't available to new customers. On September 30, 2019, we'll officially retire Visual Studio Online Professional. As a courtesy, billing for it stopped after August 1, 2019.
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, you need to transition manually to get the new offering. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
+When Visual Studio Online Professional is retired, any users that are still assigned to it are assigned to the best [Azure DevOps access level](https://azure.microsoft.com/email/?destination=%2Fen-us%2Fpricing%2Fdetails%2Fdevops%2Fazure-devops-services%2F&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=azure-devops-services) available to your organization. As a result, your Professional users’ access may be downgraded to Basic or Stakeholder. To avoid being downgraded, buy a Visual Studio Professional monthly subscription and assign your Professional users to it. The monthly subscription has the same monthly cost as Visual Studio Online Professional.
 
-The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
+Follow these instructions to identify if you have Professional users, buy a monthly subscription, and assign them to it by September 30, 2019:
 
-If you're purchasing user access to Visual Studio Professional for a specific organization (possible only if you purchased before November 2015) and want to upgrade, do the following:
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Before the last day of the calendar month, sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-  
+
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3. Select **Users** and filter by access level to show only Professional users.
 
-   ![Select Billing tab in Organization settings](../billing/_img/_shared/select-billing-organization-settings.png)
-4. Reduce the number of paid Visual Studio Online Professional users to 0.
+   ![Sort by Access Level - Professional](_img/_shared/sort-by-professional-access-level.png)
 
-	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
+4. Buy a [Visual Studio Professional monthly subscription](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms.vs-professional-monthly&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=items_2).
+5. Assign your Professional users to the subscription in the [Visual Studio subscriptions administration portal](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmanage.visualstudio.com%2FSubscribers&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=Subscribers).
 
-5. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
+If you don’t complete these steps by September 30, 2019, and your users are downgraded to Basic or Stakeholder access, you may restore their Professional access at any time by following the instructions above.
 
 ## User access
 
 ### Q: What does "Last Access" mean in the All Users view?
 
-The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 
@@ -114,11 +113,11 @@ The value in **Last Access** is the last date a user accessed any resources or s
 
 ### Q: Why does a user lose access to some features?
 
-A: This might happen for different reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
+A: A user can lose access for the following reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
 *	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
-*	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
+*	The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
 *	The Azure subscription used for billing was unlinked from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
 
@@ -126,7 +125,7 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
-*	The user no longer has access to [features that are available only as extensions](https://visualstudio.microsoft.com/team-services/compare-features/). This might happen for different reasons:
+*	The user no longer has access to [features that are available only as extensions](https://visualstudio.microsoft.com/team-services/compare-features/). This lack of access might happen for one of the following reasons:
 
 	*	The user's access level no longer meets the extension's requirements. Most extensions require at least Basic access, not Stakeholder access. For more information, see the extension's description in the [Marketplace](https://marketplace.visualstudio.com).
 
@@ -162,8 +161,8 @@ A: You're probably a *guest* in the Azure AD that backs your Azure DevOps organi
 
 A: Select from the following two options:
 
-* Have the Azure AD administrator(s) remove you from the Azure AD and re-add you, making you an Azure AD *member* rather than a *guest* when they do. For more information, see [Can Azure AD B2B users be added as members instead of guests](https://docs.microsoft.com/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-* [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). This is an advanced process and [is not advised](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
+* Have the Azure AD administrator(s) remove you from the Azure AD and readd you, making you an Azure AD *member*, rather than a *guest*. For more information, see [Can Azure AD B2B users be added as members instead of guests](https://docs.microsoft.com/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
+* [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). This is an advanced process [we don't advise](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
 
 #### Convert Azure AD UserType from guest to member using Azure AD PowerShell
 
@@ -174,7 +173,7 @@ A: Select from the following two options:
 
 The user making the UserType change must have the following:
 
-* A work/school account (WSA)/native user in Azure AD. You can't do this with a Microsoft Account.
+* A work/school account (WSA)/native user in Azure AD. You can't change the UserType with a Microsoft Account.
 * Global administrator permissions
 
 > [!IMPORTANT]
@@ -186,17 +185,17 @@ The user making the UserType change must have the following:
 2. Go to the tenant that backs your Azure DevOps organization.
 3. Check the UserType. Confirm that the user is a guest.
 
-   ![Check UserType in azure portal](_img/faq/check-user-type-in-azure-portal.png)
+   ![Check UserType in Azure portal](_img/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
-5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, as pictured below. If you run into issues please review the system requirements and information at the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
+5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, as pictured below. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
 
    ![Administrator action in Windows PowerShell](_img/faq/Administrator-action-Windows-PowerShell.png)
 
 6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Azure AD. Be sure to use an ID that meets the criteria above.
 7. Execute `Get-AzureADuser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
-8. Execute `Set-AzureADUser -ObjectID <string> -UserType Member`, where <string> is the value of ObjectId returned by the previous command. This should set the user to member status.
-9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify this in the Azure Active Directory section of the Azure portal.
+8. Execute `Set-AzureADUser -ObjectID <string> -UserType Member`, where <string> is the value of ObjectId returned by the previous command. The user is set to member status.
+9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Azure Active Directory section of the Azure portal.
 While not the norm, we have seen it take several hours or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
 
 <a name="ChooseOrgAcctMSAcct"></a>

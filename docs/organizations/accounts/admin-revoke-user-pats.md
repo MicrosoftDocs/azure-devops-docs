@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/06/2019
+ms.date: 08/07/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,11 +18,11 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-If an organization user's personal access token (PAT) has been compromised, we recommend taking immediate action. Revoke their access tokens, as a precaution to protect your organization. In this article, we show you how administrators of Azure DevOps organizations can revoke PATs for users.
+If an organization user's personal access token (PAT) has been compromised, we recommend taking immediate action. Revoke their access tokens, as a precaution to protect your organization. In this article, we show you how administrators of Azure DevOps organizations can revoke PATs for users. Disabling a user also revokes their PAT, however there is latency (up to an hour) before the PAT stops working, once the disable or delete function completes in Azure AD. 
 
 ## Prerequisites
 
-Only an organization administrator or project collection administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization owner](../security/lookup-organization-owner-admin.md).
+Only an organization administrator or Project Collection Administrator (PCA) can revoke user PATs. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To learn how to find your organization's admin, see [Look up administrators and organization Owner](../security/lookup-organization-owner-admin.md).
 
 For users, if you want to create or revoke your own PATs, see [Create or revoke personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
@@ -50,11 +50,11 @@ Users can choose an expiry date for their personal access token, not to exceed o
 
 ## Frequently asked questions (FAQs)
 
-### What if a user leaves my company?
+### Q: What if a user leaves my company?
 
 A: Once a user is removed from Azure AD, the PATs and FedAuth tokens are invalidated within an hour, since the refresh token is valid only for one hour.
 
-### What about JSON web tokens (JWTs)?
+### Q: What about JSON web tokens (JWTs)?
 
 A: Revoke JWTs, issued as part of the OAuth flow, via the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin). However, you must use the date range option in the script.
 

@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 5/28/2019
+ms.date: 07/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 To build your code or deploy your software using Azure Pipelines you need at least one agent. As you add more code and people, you'll eventually need more.
@@ -114,7 +116,13 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 You can view the system capabilities of an agent, and manage its user capabilities by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+1. In your web browser, navigate to Agent pools:
+
+   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
 
 > [!TIP]
 >
@@ -335,7 +343,13 @@ Your pipelines won't run until they can target a compatible agent.
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+1. In your web browser, navigate to Agent pools:
+
+   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
 
 ## Q & A
 

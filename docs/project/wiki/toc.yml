@@ -6,9 +6,9 @@
   href: provisioned-vs-published-wiki.md
 - name: Quickstarts
   items:
-  - name: Create a Wiki for your project
+  - name: Create a wiki for your project
     href: wiki-create-repo.md
-  - name: "Add & edit Wiki pages"
+  - name: "Add & edit wiki pages"
     href: add-edit-wiki.md
   - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
@@ -28,13 +28,17 @@
     href: search-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md
+  - name: Create work item from wiki content
+    href: create-embed-wit-from-wiki.md
+  - name: Add comments to wiki
+    href: add-comments-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
-  - name: Update Wiki pages offline 
+  - name: Update wiki pages offline 
     href: wiki-update-offline.md
-  - name: "Manage Wiki permissions (Security)"
+  - name: "Manage wiki permissions (Security)"
     href: manage-readme-wiki-permissions.md
-  - name: Migrate Wiki extension pages  
+  - name: Migrate wiki extension pages  
     href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
@@ -42,7 +46,7 @@
     href: Markdown-guidance.md
   - name: Wiki markdown guidance
     href: wiki-markdown-guidance.md
-  - name: Keyboard shortcuts to manage Wiki pages 
+  - name: Keyboard shortcuts to manage wiki pages 
     href: wiki-keyboard-shortcuts.md
   - name: "Default permissions (Security)"
     href: wiki-readme-permissions.md

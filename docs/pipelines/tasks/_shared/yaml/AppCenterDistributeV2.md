@@ -1,6 +1,6 @@
 ```YAML
-# App Center Distribute
-# Distribute app builds to testers and users via App Center
+# App Center distribute
+# Distribute app builds to testers and users via Visual Studio App Center
 - task: AppCenterDistribute@2
   inputs:
     serverEndpoint: 

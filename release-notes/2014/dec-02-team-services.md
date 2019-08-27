@@ -3,10 +3,10 @@ title: A new identity control – Dec 2
 description: VSTS release notes for December 02 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: eef013c8-9727-404d-9ef4-b8386d797d0b
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -24,7 +24,7 @@ It should be very intuitive to use. When you put focus on the control, it starts
 
 ![Avatars](_img/12_02_02.png)
 
-We know there might be a few rough edges to iron out here, so please let us know what you think. You can contact me directly on twitter at [@aaronbjork](http://twitter.com/aaronbjork) with any feedback.
+We know there might be a few rough edges to iron out here, so please let us know what you think. You can contact us directly on [Twitter]((https://twitter.com/AzureDevOps) with any feedback.
 
 ## Pull request improvements
 

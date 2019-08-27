@@ -1,7 +1,6 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
@@ -11,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/17/2019 
+ms.date: 08/14/2019 
 ---
 
 
@@ -48,8 +47,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
@@ -128,29 +126,24 @@ To learn how to add users to a group or set a specific permission that you can m
 </tbody>
 </table>
 
-  
-
 
 ::: moniker-end
 
 
-
 ::: moniker range="tfs-2018"
-
-
 
 <table valign="top">
 <tbody valign="top">
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
-<li><a href="set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
+<li>&lt;a href=&quot;set-project-collection-level-permissions.md&gt;Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md>Make a user a team admin</a></li>
+<li>&lt;a href=&quot;../settings/add-team-administrator.md&gt;Make a user a team admin</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
+<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README &amp; Wiki</a></li>
 </ul>
 </td>
 <td width="33%">
@@ -190,9 +183,6 @@ To learn how to add users to a group or set a specific permission that you can m
 
 
 ::: moniker range="<= tfs-2017"
-
-
-
 
 
 <table valign="top">
@@ -401,9 +391,9 @@ You can't remove or delete the default server level groups.
 </tbody>
 </table>
 
-> The full name of each of these groups is **[Team Foundation]/{group name}**.
+> The full name of each of these groups is **[Team Foundation]\\{group name}**.
 > So the full name of the server level administrators group is
-> **[Team Foundation]/Team Foundation Administrators**.
+> **[Team Foundation]\\Team Foundation Administrators**.
 
 ::: moniker-end
 
@@ -424,9 +414,22 @@ Project Collection Valid Users
 Security Service Group
 -->
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
+
+> [!div class="mx-imgBorder"]  
+> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts-new.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 > [!div class="mx-imgBorder"]  
 > ![Project collection groups](_img/permissions/collection-admin-permissions-vsts.png)
 
+::: moniker-end
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -451,7 +454,7 @@ Security Service Group
             </p>
             <blockquote>
                 If your deployment uses SharePoint or Reporting,
-                consider <a href="../../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[adding the members of this group](../../organizations/security/set-project-collection-level-permissions.md)">adding the members of this group</a>
+                consider <a href="set-project-collection-level-permissions.md">adding the members of this group</a>
                 to the Site Collection Administrators group in SharePoint
                 and the Team Foundation Content Managers groups in Reporting Services.
             </blockquote>
@@ -506,12 +509,22 @@ Security Service Group
             </p>
         </td>
     </tr>
+    <tr>
+        <td>Security Service Group</td>
+        <td><p>Used to store users who have been granted permissions, but not added to any other security group.  </p>
+        </td>
+        <td>
+            <p>
+                Don't assign users to this group. If you are removing users from all security groups, check if you need to remove them from this group.   
+            </p>
+        </td>
+    </tr>
 </tbody>
 </table>
 
-> The full name of each of these groups is **[{collection name}]/{group name}**.
+> The full name of each of these groups is **[{collection name}]\\{group name}**.
 > So the full name of the administrator group for the default collection is
-> **[Default Collection]/Project Collection Administrators**.
+> **[Default Collection]\\Project Collection Administrators**.
 
 
 
@@ -531,13 +544,44 @@ Release Administrators (TFS 2017, Azure DevOps)
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{project name}]\{group name}**.
+> The full name of each of these groups is **[{project name}]\\{group name}**.
 > For example, the contributors group for a project called "My Project" is 
-> **[My Project]/Contributors**.
+> **[My Project]\\Contributors**.
 
 
 > [!NOTE]   
 > The project-level Release Administrator's group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created.  
+
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+> [!div class="mx-imgBorder"]  
+> ![Project groups](_img/permissions/project-permisions-s154.png)
+
+#### [Current page](#tab/current-page) 
+
+*To see the full image, click to expand*.
+
+[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+
+* * * 
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+*To see the full image, click to expand*.
+
+[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+
+::: moniker-end
+
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -589,8 +633,7 @@ For each project that you create, the system creates the followings project-leve
         <td>Release Administrators</td>
         <td>Has permissions to manage all release operations.
             <blockquote>
-                This group is defined after the first release pipeline is created. Valid for TFS-2017 and later versions.  
-            </blockquote></td>
+                This group is defined after the first release pipeline is created. Valid for TFS-2017 and later versions.<br/>            </blockquote></td>
         <td>Assign to users who define and manage release pipelines.</td>
     </tr>
     <tr>
@@ -753,9 +796,224 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
+
+> [!div class="mx-imgBorder"]  
+> ![Collection level permissions and groups](_img/permissions/collection-level-permissions-new.png)   
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
 > [!div class="mx-imgBorder"]  
 > ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    </tr>
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="70%">Description</th>
+    </tr>
+    <tr><td><h4>General</hr></td><td> </td> 
+    <tr>
+        <td id="alter-trace-settings">Alter trace settings</td>
+        <td>
+            Can <a href="https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
+        </td>
+    </tr>
+    <tr>
+        <td id="create-new-team-projects">Create new projects (formerly Create new team projects)</td>
+        <td>
+            Can <a href="../projects/create-project.md" data-raw-source="[add Azure DevOps projects](../projects/create-project.md)">add Azure DevOps projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-team-project">Delete team project</td>
+        <td>
+            Can <a href="../projects/delete-project.md" data-raw-source="[delete Azure DevOps projects](../projects/delete-project.md)">delete Azure DevOps projects</a>.
+            <blockquote>
+                Deleting a project will delete all data that is associated with the project.
+                You cannot undo the deletion of a project except
+                by restoring the collection to a point
+                before the project was deleted.
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-collection-level-information">Edit collection-level information</td>
+        <td>
+            Can add users and groups, and edit collection-level permissions for users and groups.
+            <blockquote>
+                <p>
+                    Edit collection-level information includes the ability to perform these tasks
+                    for all projects defined in a collection:
+                </p>
+                <ul>
+                    <li>Add and administer teams and all team-related features</li>
+                    <li>Create and modify areas and iterations</li>
+                    <li>Edit check-in policies</li>
+                    <li>Edit shared work item queries</li>
+                    <li>Edit project level and collection level permission ACLs</li>
+                    <li>Manage process templates</li>
+                    <li>Customize a project or process</li>
+                    <li>Create and modify global lists</li>
+                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
+                </ul>
+                <p>
+                    When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
+                    users can add or remove collection-level groups and implicitly
+                    allows these users to modify version control permissions.
+                    To grant all these permissions at a command prompt,
+                    you must use the <code>tf.exe Permission</code> command to grant
+                    the <strong>AdminConfiguration</strong> and <strong>AdminConnections</strong> permissions,
+                    in addition to GENERIC_WRITE.
+                </p>
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td><a id="view-audit-log-permission" />View audit log</td>
+        <td>
+            Can view the <a href="/azure/devops/organization/settings/azure-devops-auditing">audit log</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td id="view-collection-level-information">View instance-level information<br/>or View collection-level information</td>
+        <td>Can view project collection-level group membership and permissions.
+            <blockquote>
+                If you set the <strong>View instance-level information</strong> permission
+                to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+                no users will be able to access projects in the organization or project collection.
+            </blockquote></td>
+    </tr>
+    <tr><td><h4>Service Account</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="make-requests-on-behalf-of-others">Make requests on behalf of others</td>
+        <td>
+            Can perform operations on behalf of other users or services.
+            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies-tfs" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs)">service accounts</a>.
+        </td>
+    </tr>
+    <tr>
+        <td id="trigger-events">Trigger events</td>
+        <td>
+            Can trigger project alert events within the collection. Assign only to service accounts.
+            <blockquote>
+                Users with this permission can&#39;t remove built-in collection level groups
+                such as Project Collection Administrators.
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td id="view-system-synchronization-information">View system synchronization information</td>
+        <td>Can call the synchronization application programming interfaces. Assign only to service accounts.</td>
+    </tr>
+    <tr><td><h4>Boards</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="administer-process-permissions">Administer process permissions</td>
+        <td>
+            Can modify permissions for customizing work tracking by creating and customizing <a href="../settings/work/inheritance-process-model.md" data-raw-source="[inherited processes](../settings/work/inheritance-process-model.md)">inherited processes</a>. 
+            <ul>
+            <li><a href="../settings/work/customize-process.md" data-raw-source="[Customize a project](../settings/work/customize-process.md)">Customize a project</a></li>
+            <li><a href="../settings/work/manage-process.md" data-raw-source="[Add and manage processes](../settings/work/manage-process.md)">Add and manage processes</a></li>
+            </ul>
+            <p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default. </p>
+        </td>
+    </tr>
+    <tr>
+        <td id="create-process">Create process</td>
+        <td>
+            Can <a href="../settings/work/manage-process.md" data-raw-source="[create an inherited process](../settings/work/manage-process.md)">create an inherited process</a> used to customize work tracking and Azure Boards. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-field">Delete field from account</td>
+        <td>
+            Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-process">Delete process</td>
+        <td>
+            Can <a href="../settings/work/manage-process.md" data-raw-source="[delete an inherited process](../settings/work/manage-process.md)">delete an inherited process</a> used to customize work tracking and Azure Boards. Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-process">Edit process</td>
+        <td>
+            Can edit a <a href="../settings/work/customize-process.md" data-raw-source="[custom inherited process](../settings/work/customize-process.md)">custom inherited process</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users  granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+        </td>
+    </tr>
+    <tr><td><h4>Repos</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="administer-shelved-changes">Administer shelved changes</td>
+        <td>
+            Can delete <a href="../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelvesets created by other users</a>. Applies when TFVC is used as the source control. 
+        </td>
+    </tr>
+    <tr>
+        <td id="administer-workspaces">Administer workspaces</td>
+        <td>Can <a href="../../repos/tfvc/create-work-workspaces.md" data-raw-source="[create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md)">create and delete workspaces for other users</a>. Applies when TFVC is used as the source control. </td>
+    </tr>
+    <tr>
+        <td id="create-a-workspace">Create a workspace</td>
+        <td>
+            Can create a version control workspace. Applies when TFVC is used as the source control. 
+            <blockquote>
+                The <strong>Create a workspace</strong> permission is granted to all users
+                as part of their membership within the Project Collection Valid Users group.
+            </blockquote>
+        </td>
+    </tr>
+    <tr><td><h4>Pipelines</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="administer-build-resource-permissions">Administer build resource permissions</td>
+        <td>Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
+            <ul>
+            <li><a href="../../pipelines/policies/retention.md" data-raw-source="[Set retention policies](../../pipelines/policies/retention.md)">Set retention policies</a></li>
+            <li><a href="../../pipelines/licensing/concurrent-pipelines-ts.md" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)">Set resource limits for pipelines</a></li>
+            <li><a href="../../pipelines/agents/pools-queues.md" data-raw-source="[Add and manage agent pools](../../pipelines/agents/pools-queues.md)">Add and manage agent pools</a></li>
+            <li><a href="../../pipelines/release/deployment-groups/index.md" data-raw-source="[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)">Add and manage deployment pools</a></li>
+            </ul>
+            </td>
+    </tr>
+    <tr>
+        <td id="manage-build-resources">Manage build resources</td>
+        <td>Can manage build computers, build agents, and build controllers.</td>
+    </tr>
+    <tr>
+        <td id="use-build-resources">Use build resources</td>
+        <td>Can reserve and allocate build agents. Assign only to service accounts for build services.</td>
+    </tr>
+    <tr>
+        <td id="view-build-resources">View build resources</td>
+        <td>Can view, but not use, build controllers and build agents that are configured for an organization or project collection.</td>
+    </tr>
+    <tr><td><h4>Test Plans</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="manage-test-controllers">Manage test controllers</td>
+        <td>Can register and de-register test controllers.</td>
+    </tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -782,7 +1040,7 @@ You manage collection-level permissions through the [web portal admin context](.
             <li><a href="../settings/work/customize-process.md" data-raw-source="[Customize a project](../settings/work/customize-process.md)">Customize a project</a></li>
             <li><a href="../settings/work/manage-process.md" data-raw-source="[Add and manage processes](../settings/work/manage-process.md)">Add and manage processes</a></li>
             </ul>
-            <p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default. &gt;/p&gt;
+            <p>Applies to Azure DevOps Services and Azure DevOps Server 2019. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default.</p>
         </td>
     </tr>
     <tr>
@@ -862,7 +1120,6 @@ You manage collection-level permissions through the [web portal admin context](.
                     Edit collection-level information includes the ability to perform these tasks
                     for all projects defined in a collection:
                 </p>
-
                 <ul>
                     <li>Add and administer teams and all team-related features</li>
                     <li>Create and modify areas and iterations</li>
@@ -874,7 +1131,6 @@ You manage collection-level permissions through the [web portal admin context](.
                     <li>Create and modify global lists</li>
                     <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
-
                 <p>
                     When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
                     users can add or remove collection-level groups and implicitly
@@ -948,6 +1204,9 @@ You manage collection-level permissions through the [web portal admin context](.
 </tbody>
 </table>
 
+::: moniker-end
+
+
 
 <a name="project-level" />
 <a name="project_test">  </a>
@@ -958,8 +1217,172 @@ You manage collection-level permissions through the [web portal admin context](.
 
 You manage project-level permissions from the [web portal admin context](set-project-collection-level-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+> [!div class="mx-imgBorder"]
+> ![Project-level permissions dialog](_img/permissions/project-permissions-contributors-s154.png)
+
+#### [Current page](#tab/current-page) 
+
 > [!div class="mx-imgBorder"]
 > ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+
+* * *  
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+> [!div class="mx-imgBorder"]
+> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+#### [Preview page](#tab/preview-page) 
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="70%">Description</th>
+    </tr>
+    <tr><td><h4>General</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="delete-team-project-permission">Delete team project</td>
+        <td>Can <a href="../projects/delete-project.md">delete a project</a> from an organization or project collection.</td>
+    </tr>
+    <tr>
+        <td id="edit-team-project-level-information-permission">Edit project-level information</td>
+        <td>
+            Can edit project level permissions for users and groups.
+            <blockquote>
+                <p>
+                    <strong>Edit project-level information</strong> includes the ability
+                    to perform these tasks for the project:
+                </p>
+                <ul>
+                    <li>Create and modify areas and iterations</li>
+                    <li>Edit check-in policies</li>
+                    <li>Edit shared work item queries</li>
+                    <li>Edit project level permission ACLs</li>
+                    <li>Manage process templates</li>
+                    <li>Customize a project</li>
+                    <li>Create and modify global lists</li>
+                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project level events.</li>
+                </ul>
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-team-project-property-permission">Manage project properties</td>
+        <td>
+            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the <a href="/rest/api/azure/devops/core/projects/set%20project%20properties">Set project properties REST API</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td id="rename-team-project-permission">Rename project</td>
+        <td>Can <a href="../projects/rename-project.md" data-raw-source="[change the name of the project](../projects/rename-project.md)">change the name of the project</a>.</td>
+    </tr>
+    <tr>
+        <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
+    </tr>
+    <tr>
+        <td id="update-project-visibility">Update project visibility</td>
+        <td>Can <a href="../public/make-project-public.md" data-raw-source="[change the project visibility](../public/make-project-public.md)">change the project visibility</a> from private to public or public to private. Applies to Azure DevOps Services only.</td>
+    </tr>
+    <tr>
+        <td id="view-team-project-level-information-permission">View project-level information</td>
+        <td>Can view project level group membership and permissions.</td>
+    </tr>
+    <tr><td><h4>Boards</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="bypass-rules-permission">Bypass rules on work item updates</td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
+    </tr>
+    <tr>
+        <td id="change-process-team-project-permission">Change process of project</td>
+        <td>Can change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. </td>
+    </tr>
+    <tr>
+        <td id="create-tag-definition-permission">Create tag definition</td>
+        <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
+        <blockquote>
+        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+        <blockquote></td>
+    </tr>
+    <tr>
+        <td id="delete-work-items-in-this-project-permission">
+<p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
+<ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+</td>
+    </tr>
+    <tr>
+        <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Stakeholder access for a public project are granted this permission by default.
+        </td>
+    </tr>
+    <tr>
+        <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.</td>
+    </tr>
+    <tr><td><h4>Analytics</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
+        <td>Can delete <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[Analytics views](../../report/powerbi/analytics-views-manage.md)">Analytics views</a>
+that have been saved under the Shared area. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr>
+        <td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
+        <td>Can create and modify <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[shared Analytics views](../../report/powerbi/analytics-views-manage.md)">shared Analytics views</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr>
+        <td id="view-analytics-permission">View analytics</td>
+        <td>Can access data available from the <a href="../../report/powerbi/what-is-analytics.md" data-raw-source="[Analytics service](../../report/powerbi/what-is-analytics.md)">Analytics service</a>. For details, see <a href="../../report/powerbi/analytics-security.md" data-raw-source="[Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md)">Permissions required to access the Analytics service</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr><td><h4>Test Plans</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="create-test-runs-permission">Create test runs</td>
+        <td>Can add and remove test results and add or modify test runs. To learn more, see <a href="../../test/how-long-to-keep-test-results.md" data-raw-source="[Control how long to keep test results](../../test/how-long-to-keep-test-results.md)">Control how long to keep test results</a> and <a href="../../test/run-manual-tests.md" data-raw-source="[Run manual tests](../../test/run-manual-tests.md)">Run manual tests</a>. </td>
+    </tr>
+   <tr>
+        <td id="delete-test-runs-permission">Delete test runs</td>
+        <td>Can delete a test run.</td>
+    </tr>
+    <tr>
+        <td id="manage-test-configurations-permission">Manage test configurations</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test configurations](../../test/test-different-configurations.md)">test configurations</a>.</td>
+    </tr>
+    <tr>
+        <td id="manage-test-environments-permission">Manage test environments</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test environments](../../test/test-different-configurations.md)">test environments</a>.</td>
+    </tr>
+    <tr>
+        <td id="view-test-runs-permission">View test runs</td>
+        <td>Can view test plans under the project area path.</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+#### [Current page](#tab/current-page) 
 
 
 <table valign="top" width="100%">
@@ -1087,6 +1510,150 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 </tbody>
 </table>
 
+* * *
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="70%">Description</th>
+    </tr>
+    <tr>
+        <td id="bypass-rules-permission">Bypass rules on work item updates</td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
+    </tr>
+    <tr>
+        <td id="change-process-team-project-permission">Change process of project</td>
+        <td>Can change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. </td>
+    </tr>
+    <tr>
+        <td id="create-tag-definition-permission">Create tag definition</td>
+        <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
+        <blockquote>
+        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+                <p>
+                    Although the <strong>Create tag definition</strong> permission appears
+                    in the security settings at the project-level,
+                    tagging permissions are actually collection level permissions that are scoped
+                    at the project level when they appear in the user interface.
+                    To scope tagging permissions to a single project when using the TFSSecurity command,
+                    you must provide the GUID for the project as part of the command syntax.
+                    Otherwise, your change will apply to the entire collection.
+                    Keep this in mind when changing or setting these permissions.
+                </p>
+            </blockquote></td>
+    </tr>
+    <tr>
+        <td id="create-test-runs-permission">Create test runs</td>
+        <td>Can add and remove test results and add or modify test runs. To learn more, see <a href="../../test/how-long-to-keep-test-results.md" data-raw-source="[Control how long to keep test results](../../test/how-long-to-keep-test-results.md)">Control how long to keep test results</a> and <a href="../../test/run-manual-tests.md" data-raw-source="[Run manual tests](../../test/run-manual-tests.md)">Run manual tests</a>. </td>
+    </tr>
+    <tr>
+        <td id="delete-work-items-in-this-project-permission">
+<p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
+<ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+</td>
+    </tr>
+    <tr>
+        <td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
+        <td>Can delete <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[Analytics views](../../report/powerbi/analytics-views-manage.md)">Analytics views</a>
+that have been saved under the Shared area. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr>
+        <td id="delete-team-project-permission">Delete project</td>
+        <td>Can <a href="../projects/delete-project.md" data-raw-source="[delete a project](../projects/delete-project.md)">delete a project</a> from an organization or project collection.</td>
+    </tr>
+    <tr>
+        <td id="delete-test-runs-permission">Delete test runs</td>
+        <td>Can delete a test run.</td>
+    </tr>
+    <tr>
+        <td id="edit-team-project-level-information-permission">Edit project-level information</td>
+        <td>
+            Can edit project level permissions for users and groups.
+            <blockquote>
+                <p>
+                    <strong>Edit project-level information</strong> includes the ability
+                    to perform these tasks for the project:
+                </p>
+                <ul>
+                    <li>Create and modify areas and iterations</li>
+                    <li>Edit check-in policies</li>
+                    <li>Edit shared work item queries</li>
+                    <li>Edit project level permission ACLs</li>
+                    <li>Manage process templates</li>
+                    <li>Customize a project</li>
+                    <li>Create and modify global lists</li>
+                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project level events.</li>
+                </ul>
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
+        <td>Can create and modify <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[shared Analytics views](../../report/powerbi/analytics-views-manage.md)">shared Analytics views</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr>
+        <td id="manage-team-project-property-permission">Manage project properties</td>
+        <td>
+            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the <a href="/rest/api/azure/devops/core/projects/set%20project%20properties" data-raw-source="[Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties)">Set project properties REST API</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-test-configurations-permission">Manage test configurations</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test configurations](../../test/test-different-configurations.md)">test configurations</a>.</td>
+    </tr>
+    <tr>
+        <td id="manage-test-environments-permission">Manage test environments</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test environments](../../test/test-different-configurations.md)">test environments</a>.</td>
+    </tr>
+    <tr>
+        <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Stakeholder access for a public project are granted this permission by default.
+        </td>
+    </tr>
+    <tr>
+        <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.</td>
+    </tr>
+    <tr>
+        <td id="rename-team-project-permission">Rename project</td>
+        <td>Can <a href="../projects/rename-project.md" data-raw-source="[change the name of the project](../projects/rename-project.md)">change the name of the project</a>.</td>
+    </tr>
+    <tr>
+        <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
+    </tr>
+    <tr>
+        <td id="update-project-visibility">Update project visibility</td>
+        <td>Can <a href="../public/make-project-public.md" data-raw-source="[change the project visibility](../public/make-project-public.md)">change the project visibility</a> from private to public or public to private. Applies to Azure DevOps Services only.</td>
+    </tr>
+    <tr>
+        <td id="view-analytics-permission">View analytics</td>
+        <td>Can access data available from the <a href="../../report/powerbi/what-is-analytics.md" data-raw-source="[Analytics service](../../report/powerbi/what-is-analytics.md)">Analytics service</a>. For details, see <a href="../../report/powerbi/analytics-security.md" data-raw-source="[Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md)">Permissions required to access the Analytics service</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </td>
+    </tr>
+    <tr>
+        <td id="view-team-project-level-information-permission">View project-level information</td>
+        <td>Can view project level group membership and permissions.</td>
+    </tr>
+    <tr>
+        <td id="view-test-runs-permission">View test runs</td>
+        <td>Can view test plans under the project area path.</td>
+    </tr>
+</tbody>
+</table>
+
+::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -1149,28 +1716,6 @@ To set or override the permissions for a specific build definition, choose **Sec
 
 The following permissions are defined in Build. All of these can be set at both the levels.
 
-<!---
-Commenting this section out as it duplicates that defined in the following table.
-| Permission | Description |
-|------------|-------------|
-| **Administer build permissions** | Can change any of the other permissions listed here. |
-| **Queue builds** | Can queue new builds. |
-| **Delete build definition** | Can delete build definition(s). |
-| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](../../pipelines/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
-| **Destroy builds** | Can delete builds from the **Deleted** tab. |
-| **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
-| **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../../pipelines/build/triggers.md). This does not apply to PR builds. |
-| **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
-| **Stop builds** | Can stop builds queued by other team members or by the system.  |
-| **View build definition** | Can view build definition(s). |
-| **View builds** | Can view builds belonging to build definition(s). |
-| **Update build information** | It is recommended to leave this alone. It's intended to enable service accounts, not team members. |
-| **Manage build qualities** | _Only applies to XAML builds_ |
-| **Manage build queue** | _Only applies to XAML builds_ |
-
--->
-
 <table valign="top" width="100%">
 <tbody valign="top">
     <tr>
@@ -1228,7 +1773,7 @@ Commenting this section out as it duplicates that defined in the following table
     </tr>
     <tr>
         <td id="manage-build-queue-permission">Manage build queue</td>
-        <td>Can cancel, re-prioritize, or postpone queued builds. <i>Only applies to XAML builds</i>./td&gt;
+        <td>Can cancel, re-prioritize, or postpone queued builds. <i>Only applies to XAML builds</i>.</td>
     </tr>
     <tr>
         <td id="override-check-in-validation-by-build-permission">Override check-in validation by build</td>
@@ -1283,6 +1828,8 @@ Commenting this section out as it duplicates that defined in the following table
 <a id="git-repository">  </a>
 <a id="git-repository-permissions-object-level">  </a>
 <a id="nbspnbspnbspgit-repository-object-level">  </a>
+
+
 ## Git repository (object-level)
 
 <!---
@@ -1337,32 +1884,18 @@ By default, the project level Readers groups have only Read permissions.
         <th width="30%">Permission</th>
         <th width="70%">Description</th>
     </tr>
-<!--- REMOVED 
-    <tr>
-        <td id="git-administer-permission">Administer</td>
-        <td>
-            Can rename and delete the repository. If assigned to the top-level **Git repositories** entry, can add additional repositories.
-            <br /><br />
-            At the branch level, users can set permissions for the branch and unlock the branch.
-            <blockquote>
-                <b>TFS 2013, TFS 2015</b>: The Administer permission set on a individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-                Administer permissions at the top-level **Git repositories** entry. 
-            </blockquote>
-        </td>
-    </tr>
--->
     <tr>
         <td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
         <td>
-        Can opt-in to override branch policies by checking <strong>Override branch policies and enable merge</strong> when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
+        Can opt-in to override branch policies by checking <strong>Override branch policies and enable merge</strong> when completing a PR.
+        <blockquote>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. </blockquote>
         </td>
     </tr>
     <tr>
         <td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
         <td>
-        Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019. 
+        Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
+        <blockquote>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps Services and Azure DevOps Server 2019.</blockquote> 
         </td>
     </tr>
     <tr>
@@ -1372,12 +1905,10 @@ By default, the project level Readers groups have only Read permissions.
         <p>At the branch level, can push their changes to the branch and lock the branch. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. </p>
         </td>
     </tr>
-
     <tr>
         <td id="git-contribute-to-pull-requests-permission">Contribute to pull requests</td>
         <td>Can create, comment on, and vote on pull requests.</td>
     </tr>
-
     <tr>
         <td id="git-create-branch-permission">Create branch</td>
         <td>
@@ -1419,7 +1950,7 @@ By default, the project level Readers groups have only Read permissions.
           <li>Push directly to branches that have branch policies set</li>
         </ul>
         <br>
-        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); <strong>Bypass policies when completing pull requests</strong> and <strong>Bypass policies when pushing</strong>.)</b>
+        <blockquote>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions: <strong>Bypass policies when completing pull requests</strong> and <strong>Bypass policies when pushing</strong>.</blockquote>
         </td>
     </tr>
     <tr>
@@ -1460,7 +1991,7 @@ By default, the project level Readers groups have only Read permissions.
 </table>
 
 
->[!NOTE]  
+> [!NOTE]  
 > Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from  the top-level **Git repositories** entry. Branches inherit permissions from assignments made at the repository level. By default, the project level Readers groups only have Read permissions.
 
 To manage Git repo and branch permissions, see [Set branch permissions](../../repos/git/branch-permissions.md).
@@ -1663,7 +2194,6 @@ You manage the security of each area path from the [web portal](../../organizati
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
-
 > [!NOTE]  
 > Multiple teams may contribute to a project.
 > When that's the case, you can set up teams that are associated with an area.
@@ -1772,16 +2302,11 @@ Members of the Project Administrators group are automatically granted permission
 
 
 <a name="iteration-path-permissions"></a>
+
+
 ## Iteration Path (object-level) 
 
-Iteration path permissions grant or restrict access to create and manage iteration paths.
-
-Multiple teams may contribute to a project. 
-When that's the case, you can set up teams that are associated with an area. 
-Permissions for the team's work items are assigned by assigning permissions to the area. 
-There are other [team settings](../settings/manage-teams.md) 
-that configure the team's agile planning tools.
-To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
+Iteration path permissions grant or restrict access to create and manage iteration paths, also referred to as sprints.
 
 You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#iteration-permissions). 
 
@@ -1789,9 +2314,6 @@ Members of the Project Administrators group are automatically granted these perm
 
 > [!div class="mx-imgBorder"]  
 > ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
-
-Consider granting team administrators, scrum masters, or team leads
-permissions to create, edit, or delete iteration nodes.
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1901,11 +2423,14 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 > [!NOTE]  
 > For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 <table valign="top" width="100%">
 <tbody valign="top">
     <tr>
@@ -1939,6 +2464,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 
 ## Process (object-level)   
+
 You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage processes. Valid users are granted View (read-only) permissions. 
 
 
@@ -1980,16 +2506,15 @@ You manage tagging permissions mostly from the <a href="/azure/devops/server/com
     <tr>
         <td id="create-tag-definition-permission">Create tag definition</td>
         <td>
-            Can create new tags and apply them to work items.
+            <a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">.Can create new tags and apply them to work items.</a>
             Users without this permission can only select from the existing set of tags for the project.
             <blockquote>
                 <p>
-                    Readers and Contributors inherit the <strong>Create tag definition</strong> permission
-                    as it is set explicitly to Allow for the Project Valid Users group.
+                    By default, Contributors are assinged the <strong>Create tag definition</strong> permission.
                 </p>
                 <p>
                     Although the <strong>Create tag definition</strong> permission appears
-                    in the security settings at the project level,
+                    in the security settings at the project-level,
                     tagging permissions are actually collection level permissions that are scoped
                     at the project level when they appear in the user interface.
                     To scope tagging permissions to a single project when using the TFSSecurity command,
@@ -2088,22 +2613,123 @@ In addition, you can assign approvers to specific steps within a release pipelin
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or environment level.
 
->  [!div class="mx-tdCol2BreakAll"] 
-> 
-> | Permission | Description | Scopes |
-> |------------|-------------|--------|
-> | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release pipeline, Environment |
-> | **Create releases** | Can create new releases. | Project, Release pipeline |
-> | **Delete release pipeline** | Can delete release pipeline(s). | Project, Release pipeline |
-> | **Delete release environment** | Can delete environment(s) in release pipeline(s). | Project, Release pipeline, Environment |
-> | **Delete releases** | Can delete releases for a pipeline. | Project, Release pipeline |
-> | **Edit release pipeline** | Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs **Edit release environment** permission. | Project, Release pipeline |
-> | **Edit release environment** | Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Environment |
-> | **Manage deployments** | Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Environment |
-> | **Manage release approvers** | Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance. | Project, Release pipeline, Environment |
-> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission. | Project, Release pipeline |
-> | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
-> | **View releases** | Can view releases belonging to release pipeline(s). | Project, Release pipeline |
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="40%">Description</th>
+        <th width="30%">Scopes</th>
+    </tr>
+    <tr>
+        <td id="admin-release-permission">Administer release permissions</td>
+        <td>
+            Can change any of the other permissions listed here.
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="create-releases-permission">Create releases</td>
+        <td>
+            Can create new releases.
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-release-pipeline-permission">Delete release pipeline</td>
+        <td>
+           Can delete release pipeline(s).
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-release-environment-permission">Delete release environment</td>
+        <td>
+            Can delete environment(s) in release pipeline(s).
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="delete-releases-permission">Delete releases</td>
+        <td>
+           Can delete releases for a pipeline.  
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-release-permission">Edit release pipeline</td>
+        <td>
+           Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-release-environment-permission">Edit release environment</td>
+        <td>
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+        </td>
+        <td>
+            Project, Release pipeline, Environment  
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-deployments-permission">Manage deployments</td>
+        <td>
+          Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the <strong>Deploy</strong> action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release.  
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-release-environment-permission">Manage release approvers</td>
+        <td>
+           Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance.  
+        </td>
+        <td>
+            Project, Release pipeline, Environment
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-releases-permission">Manage releases</td>
+        <td>
+           Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
+        </td>
+        <td>
+            Project, Release pipeline
+        </td>
+    </tr>
+    <tr>
+        <td id="view-release-environment-permission">View release pipeline</td>
+        <td>
+           Can view release pipeline(s). 
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+    <tr>
+        <td id="view-releases-permission">View releases</td>
+        <td>
+           Can view releases belonging to release pipeline(s).  
+        </td>
+        <td>
+            Project, Release pipeline 
+        </td>
+    </tr>
+</tbody>
+</table>
 
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
@@ -2125,11 +2751,14 @@ level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
-| Permission | Description | 
-|------------|-------------| 
-| **Administer task group permissions** | Can add and remove users or groups to task group security. |
-| **Delete task group** | Can delete a task group. | 
-| **Edit task group** | Can create, modify, or delete a task group. | 
+> [!div class="tdCol2BreakAll"]  
+> | Permission | Description | 
+> |------------|-------------| 
+> | **Administer task group permissions** | Can add and remove users or groups to task group security. |
+> | **Delete task group** | Can delete a task group. | 
+> | **Edit task group** | Can create, modify, or delete a task group. | 
+
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -2151,25 +2780,21 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <th width="30%">Permission</th>
         <th width="70%">Description</th>
     </tr>
-
     <tr>
         <td>Delete Environment and Virtual Machines</td>
         <td>Can delete environments and templates. The permission is checked for the object that is being deleted.
         </td>
     </tr>
-
     <tr>
         <td>Delete Environment and Virtual Machines</td>
         <td>Can delete environments and templates. The permission is checked for the object that is being deleted.
         </td>
     </tr>
-
     <tr>
         <td>Delete Lab Locations</td>
         <td>Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the <strong>Delete Lab Location</strong> permission for that location.
         </td>
     </tr>
-
     <tr>
         <td>Edit Environment and Virtual Machines</td>
         <td>Can edit environments and templates. The permission is checked for the object that is being edited.
@@ -2185,33 +2810,28 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <td>Can import a virtual machine from a VMM library share.This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
         </td>
     </tr>
-
     <tr>
         <td>Manage Child Permissions</td>
         <td>
             Can change the permissions of all the child Lab Management objects. For example, if a user has <strong>Manage Child Permission</strong> for a project host group, the user can change permissions for all the environments under that project host group. 
         </td>
     </tr>
-
     <tr>
         <td>Manage Lab Locations</td>
         <td>
              Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the <strong>Manage Lab Location</strong> permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create project level locations (project host group and project library share).
         </td>
     </tr>
-
     <tr>
         <td>Manage Permissions</td>
         <td>Can modify the permissions for a Lab Management object. This permission is checked for the object whose permissions are being modified.
         </td>
     </tr>
-
     <tr>
         <td>Manage Snapshots</td>
         <td>Can perform all snapshot management tasks for an environment, which include taking a snapshot, reverting to a snapshot, renaming a snapshot, deleting a snapshot, and reading a snapshot.
         </td>
     </tr>
-
     <tr>
         <td>Pause Environment</td>
         <td>Can pause an environment.</td>
@@ -2231,8 +2851,6 @@ By default, the project Readers groups have only View lab resources (Read) permi
         <td>Can create environments for a project host group. Users who have this permission for a project library share can store environments and templates.
         </td>
     </tr>
-
-
 </tbody>
 </table>
 
@@ -2256,21 +2874,20 @@ There are no UI permissions associated with [managing email notifications or ale
 
 You can manage alert permissions using [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd).
 
-
-|TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
-|---|---|---|:---:|
-|CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
-|GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
-|GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
-|UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
-
+> [!div class="mx-tdBreakAll"]  
+> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
+> |---|---|---|:---:|
+> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
+> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
+> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
+> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
 
 
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Add users to a project](../accounts/add-team-members.md) (Azure DevOps)   
-- [Add users to a project](../../organizations/security/add-users-team-project.md) (TFS)   
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
+- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)

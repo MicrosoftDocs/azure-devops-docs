@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: ronai
+author: RoopeshNair
 ms.date: 9/21/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -31,6 +31,10 @@ Templates come with a set of predefined process parameters.
 
 ![Schematic showing tasks](_img/2017-user-experience/process-parameters-view-1.png)
 ::: moniker-end
+
+> [!NOTE]
+> 
+> The **Link** and **Unlink** functionality applies to build pipelines only. It does not apply to release pipelines.
 
 ::: moniker range="> tfs-2018"
 To link additional arguments across all tasks to new or existing process parameters, select **Link** from the task argument.

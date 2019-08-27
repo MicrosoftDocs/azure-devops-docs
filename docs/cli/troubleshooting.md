@@ -8,11 +8,14 @@ ms.prod: devops
 ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
+monikerRange: 'azure-devops'
 author: KathrynEE
 ms.date: 06/18/2019
 ---
 
 # Troubleshoot common errors in Azure DevOps CLI
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 ## Boards - Iterations and Area commands
 

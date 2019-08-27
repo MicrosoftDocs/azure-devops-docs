@@ -3,10 +3,10 @@ title: RM updates, email formatting, a checkbox control, and more – May 6
 description: VSTS release notes for May 6 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: db77360b-f4ce-4fbf-8b76-af6d400f3e43
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -132,7 +132,7 @@ The final thing I want to point out is that you might be noticing some subtle ch
 
 ![Restyled, cleaner dialog box](_img/5_06_13.png)
 
-There’s a lot here, so I hope you made it to the end. As always, free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+There’s a lot here, so I hope you made it to the end. As always, free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

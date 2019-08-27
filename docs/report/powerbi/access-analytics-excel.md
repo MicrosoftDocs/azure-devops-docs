@@ -1,7 +1,7 @@
 ---
-title: Access Analytics Service data through Excel
+title: Access Analytics data through Excel
 titleSuffix: Azure DevOps    
-description: How to guide for accessing the Analytics Service OData from Excel for Azure DevOps 
+description: How to guide for accessing Analytics OData from Excel for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
@@ -20,7 +20,7 @@ ms.date: 04/05/2019
 
 You can access data through Excel, generate reports and then publish the charts to PowerBI.com or use the Excel file
 as a basis for Power BI reports. At this time you will need to have alternate credentials enabled to access data
-the Analytics Service via Excel.
+Analytics via Excel.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -96,7 +96,7 @@ More information on these options can be found in the [Excel documentation](http
 
 ## Handling relationships
  
-By default, when basic data is returned from the Analytics Service, the data is related as shown in the figure below:
+By default, when basic data is returned from Analytics, the data is related as shown in the figure below:
 
 ![Entity relationships](_img/pbi-relationships.png)  
 

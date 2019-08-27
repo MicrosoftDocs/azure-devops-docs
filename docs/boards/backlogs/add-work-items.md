@@ -50,6 +50,13 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](../../project/navigation/_img/add-artifact/add-work-item-query-vert.png)
 
+
+    > [!NOTE]  
+    >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md), 
+    or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
+    >
+    > For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). Note that the Basic process requires Azure DevOps Server 2019.1 or later version. 
+
 ::: moniker-end
 
 
@@ -60,7 +67,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
     <img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
     > [!NOTE]  
-    >Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+    >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
     or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
     >
     > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
@@ -116,6 +123,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
     If you work within Visual Studio 2017 or later version, a browser window will open with the work item form to fill out. If you work within Visual Studio 2015 or earlier version, a work item form opens within Visual Studio. 
 
 * * *
+
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 ![Agile process, User story work item form](_img/add-new-work-item-vsts-user-story.png)  
@@ -132,6 +140,7 @@ Create as many work items as you need of the type you need to track the work you
 ## Update work items as work progresses
 
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
+
 ::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Update the State of a User Story](_img/add-work/update-state.png)   
@@ -144,11 +153,13 @@ Note that the location of the State field may differ depending on the work item 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).  
 
 ::: moniker-end
 
 ::: moniker range="= tfs-2018"
+
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Remove or delete a work item](remove-delete-work-items.md).    
 
 ::: moniker-end

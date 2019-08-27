@@ -16,7 +16,7 @@
   items:
   - name: Manage your organization
     items:
-    - name: Change organization owner
+    - name: Change organization Owner
       href: change-organization-ownership-vs.md
     - name: Rename organization
       href: rename-vsts-organization.md
@@ -28,13 +28,15 @@
       href: change-organization-location.md
     - name: Add privacy policy URL
       href: add-privacy-policy-url.md
+    - name: Change time zone
+      href: change-time-zone.md
   - name: Manage access
     items:
     - name: Add users to your organization
       href: add-organization-users.md
     - name: Manage users
       href: manage-users-table-view.md
-    - name: Manage conditional access
+    - name: Manage Conditional Access
       href: manage-conditional-access.md
     - name: Authenticate with PATs
       href: use-personal-access-tokens-to-authenticate.md
@@ -68,6 +70,8 @@
       href: assign-access-levels-and-extensions-by-group-membership.md
     - name: Remove direct assignments
       href: remove-direct-assignments.md
+  - name: Add and manage banners
+    href: ../settings/manage-banners.md  
 - name: Troubleshooting
   items:
   - name: Create organization
@@ -82,7 +86,7 @@
     href: faq-change-app-access.md
   - name: Add administrators
     href: faq-add-administrators.md
-  - name: Change organization ownership
+  - name: Change organization Ownership
     href: faq-change-organization-ownership.md
   - name: Delete and restore organization
     href: faq-delete-restore-organization.md

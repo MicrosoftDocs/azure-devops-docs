@@ -48,7 +48,7 @@ The task works with two service connection types: **Azure Resource Manager** and
 <tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure service connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>(Resource group)</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>(Kubernetes cluster)</td><td>(Required) Name of the AKS cluster.</td></tr>
-<tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the **kubectl** commands are run. If not specified, the default namespace is used.</td></tr>
+<tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the <strong>kubectl</strong> commands are run. If not specified, the default namespace is used.</td></tr>
 </table>
 
 This YAML example YAML shows how Azure Resource Manager is used to refer to the Kubernetes cluster.
@@ -74,7 +74,7 @@ variables:
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required) Select a Kubernetes service connection.</td></tr>
-<tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the **kubectl** commands are run. If not specified, the default namespace is used.</td></tr>
+<tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the <strong>kubectl</strong> commands are run. If not specified, the default namespace is used.</td></tr>
 </table>
 
 This YAML example YAML shows how Kubernetes service connection is used to refer to the Kubernetes cluster.
@@ -200,7 +200,7 @@ This YAML example demonstrates the **package** command:
 <tr><td><code>recreate</code><br/>(Recreate Pods)</td><td>(Optional) Performs pods restart for the resource if applicable.<br/>Default value: false</td></tr>
 <tr><td><code>resetValues</code><br/>(Reset Values)</td><td>(Optional) Reset the values to the ones built into the chart.<br/>Default value: false</td></tr>
 <tr><td><code>force</code><br/>(Force)</td><td>(Optional) Force resource update through delete/recreate if required.<br/>Default value: false</td></tr>
-<tr><td><code>wait</code><br/>(Wait)</td><td>(Optional) Block until command execution completes.<br/>Default value: true​</td></tr>
+<tr><td><code>waitForExecution</code><br/>(Wait)</td><td>(Optional) Block until command execution completes.<br/>Default value: true​</td></tr>
 <tr><td><code>arguments</code><br/>(Arguments)</td><td>Helm command options</td></tr>
 </table>
 

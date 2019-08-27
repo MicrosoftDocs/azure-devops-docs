@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 08/12/2019
 ---
 
 # Add and manage fields for an inherited process   
@@ -94,7 +94,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
@@ -110,11 +110,24 @@ You can add fields and specify the group and page where they should appear. Also
 
 ### Add a picklist  
 
+::: moniker range="azure-devops"
+
+You can add a new field and define a pick list or customize the pick list of an inherited field. 
+
+::: moniker-end
+
 1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. 
 
 	<img src="_img/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../_img/icons/delete_icon.png) delete icon.  
+
+	::: moniker range="azure-devops"
+	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Priority field, Definition tab dialog](_img/field/edit-priority-picklist.png)   
+	::: moniker-end
 
 2. (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values. 
 

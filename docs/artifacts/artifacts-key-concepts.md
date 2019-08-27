@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/6/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -26,6 +26,9 @@ If, on the server, you replace `package@version` (rev 1) with a new `package@ver
 If a package is broken, buggy, or shares unintended content (like secrets), the best response is to prepare a fix and publish it as a new version. Then, depending on the severity of the issue and how widely depended-on the package is, you can delete the package to make it unavailable for consumption.
 
 The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
+
+> [!NOTE]
+> If you delete a feed to recreate it, it will take a few minutes to be able to create a new feed with the same name.
 
 ## Recycle Bin
 

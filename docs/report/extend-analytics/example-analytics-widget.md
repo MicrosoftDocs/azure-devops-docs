@@ -1,7 +1,7 @@
 ---
 title: Example of an Analytics Widget
 titleSuffix: Azure DevOps 
-description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps   
+description: Describes the data entities and relationships provided by Analytics for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
@@ -59,5 +59,5 @@ To avoid excess complexity in the sample, we omitted certain technologies and pr
 
 ## Related articles
 
-- [What is the Analytics service?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Widgets based on Analytics](../dashboards/analytics-widgets.md)

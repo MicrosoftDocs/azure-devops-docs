@@ -58,7 +58,7 @@ For information about working with pipelines, see these articles:
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
-2. Enter your credentials. If you can't sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
+2. Enter your credentials. If you can't sign in, ask the organization owner or Project Administrator to add you as a member of the project with Stakeholder access. 
 
 
 <a id="create-work-item">  </a>
@@ -75,7 +75,7 @@ You can start viewing and adding work items once you connect to a project.
 	> [!div class="mx-imgBorder"]
 	> ![Open Boards>Work Items](../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
-1. Within the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots, as described next.  
+2. Within the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots, as described next.  
 	<table>
 	<tbody valign="top">
 	<tr>
@@ -97,14 +97,14 @@ You can start viewing and adding work items once you connect to a project.
 	</tbody>
 	</table>
 
-2. To add a work item, choose the work item type from the **New Work Item** drop down menu.  
+3. To add a work item, choose the work item type from the **New Work Item** drop down menu.  
 
 	For example, here we choose User Story. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Work Items, Add a work item ](../../boards/work-items/_img/view-add/work-items-hub-new.png)
 
-3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
+4. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
    ![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
 

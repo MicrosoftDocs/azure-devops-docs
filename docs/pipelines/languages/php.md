@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
-ms.manager: alewis
+ms.manager: jillfra
 ms.author: dastahel
 ms.reviewer: dastahel
 ms.custom: seodec18
@@ -91,6 +91,16 @@ Optionally, customize the value of **rootFolderOrFile** to alter what is include
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
 ```
+
+### Using a custom composer location
+
+If your composer.json is in a subfolder instead of the root directory, you can leverage the ```--working-dir``` argument to tell composer what directory to use. For example, if your composer.json is inside the subfolder ```pkgs```
+
+```composer install --no-interaction --working-dir=pkgs```
+
+You can also specify the absolute path, using the built-in system variables:
+
+```composer install --no-interaction --working-dir='$(system.defaultWorkingDirectory)/pkgs'```
 
 ## Build a container image
 

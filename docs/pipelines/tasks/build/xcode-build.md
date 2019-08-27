@@ -34,25 +34,25 @@ xcode
 <tr>
 <td>Actions</td>
 <td>
-Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `analyze`, and `archive`.  For example: `clean build` would run a clean build.  See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
+Space-delimited list of actions.  Valid options are <code>build</code>, <code>clean</code>, <code>test</code>, <code>analyze</code>, and <code>archive</code>.  For example: <code>clean build</code> would run a clean build.  See <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" data-raw-source="[Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)">Apple: Building from the command line with Xcode FAQ</a>.
 </td>
 </tr>
 <tr>
 <td>Configuration</td>
 <td>
-The default value is `$(Configuration)`. Make sure to specify a value (for example, `Release`) on the [variables tab](../../build/variables.md).
+The default value is <code>$(Configuration)</code>. Make sure to specify a value (for example, <code>Release</code>) on the <a href="../../build/variables.md" data-raw-source="[variables tab](../../build/variables.md)">variables tab</a>.
 </td>
 </tr>
 <tr>
 <td>SDK</td>
 <td>
-The default value is `$(SDK)`. Make sure to specify a value (for example, `iphonesimulator`) on the [variables tab](../../build/variables.md).
+The default value is <code>$(SDK)</code>. Make sure to specify a value (for example, <code>iphonesimulator</code>) on the <a href="../../build/variables.md" data-raw-source="[variables tab](../../build/variables.md)">variables tab</a>.
 </td>
 </tr>
 <tr>
 <td>Workspace Path</td>
 <td>
-(Optional) Relative path from repo root to where the xcworkspace folder exists. If you specify a value, you must also specify the Scheme. Do not specify a value if you are specifying the **-target** flag in Advanced, Arguments (described below).
+(Optional) Relative path from repo root to where the xcworkspace folder exists. If you specify a value, you must also specify the Scheme. Do not specify a value if you are specifying the <strong>-target</strong> flag in Advanced, Arguments (described below).
 </td>
 </tr>
 <tr>
@@ -86,8 +86,8 @@ Select this if you have an Xcode 8 project setup for Automatic Signing.
 <td>Override Using (Optional)</td>
 <td>
 <p>If the build should use a signing or provisioning method that is different than the default, choose that method here.</p>
-<p>Choose **File Contents** to use a P12 certificate and provisioning profile.
-Choose **Identifiers** to retrieve signing settings from the default Keychain and pre-installed profiles.</p>
+<p>Choose <strong>File Contents</strong> to use a P12 certificate and provisioning profile.
+Choose <strong>Identifiers</strong> to retrieve signing settings from the default Keychain and pre-installed profiles.</p>
 <p>Leave the corresponding fields blank if you do not wish to override default build settings.</p>
 </td>
 </tr>
@@ -101,7 +101,7 @@ Relative path to a PKCS12-formatted .p12 certificate file that contains a signin
 <td>P12 Password</td>
 <td>
 Password to the .p12 file.
-<blockquote><strong>Important: </strong> Use a [secret variable](../../build/variables.md) to avoid exposing this value.</blockquote>
+<blockquote><strong>Important: </strong> Use a <a href="../../build/variables.md" data-raw-source="[secret variable](../../build/variables.md)">secret variable</a> to avoid exposing this value.</blockquote>
 </td>
 </tr>
 <tr>
@@ -135,8 +135,8 @@ Optionally specify the destination for the product exported from the archive.
 <tr>
 <td>Export Options</td>
 <td>
-Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default `Auto` is selected.
-You can specify the export method and Team ID in the task by selecting `Specify` or provide the export options via a plist file by choosing `Plist`.
+Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default <code>Auto</code> is selected.
+You can specify the export method and Team ID in the task by selecting <code>Specify</code> or provide the export options via a plist file by choosing <code>Plist</code>.
 </td>
 </tr>
 <tr>
@@ -163,7 +163,7 @@ Path to a plist file that configures archive exporting.
 <tr>
 <td>Arguments</td>
 <td>
-(Optional) Specify additional command-line arguments for this build. See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
+(Optional) Specify additional command-line arguments for this build. See <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" data-raw-source="[Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)">Apple: Building from the command line with Xcode FAQ</a>.
 </td>
 </tr>
 <tr>
@@ -175,19 +175,19 @@ Working directory for the build. If you leave it blank, it is the root of the re
 <tr>
 <td>Output Directory</td>
 <td>
-Relative path where build output (binaries) will be placed. The default value includes build variables. Make sure to specify values on the [variables tab](../../build/variables.md).
+Relative path where build output (binaries) will be placed. The default value includes build variables. Make sure to specify values on the <a href="../../build/variables.md" data-raw-source="[variables tab](../../build/variables.md)">variables tab</a>.
 </td>
 </tr>
 <tr>
 <td>Xcode Developer Path</td>
 <td>
-(Optional) Path to Xcode Developer folder if you are not using the system default. Specify this argument when you've got multiple versions of Xcode installed your build agent. For example: `/Applications/Xcode 7.app/Contents/Developer`
+(Optional) Path to Xcode Developer folder if you are not using the system default. Specify this argument when you&#39;ve got multiple versions of Xcode installed your build agent. For example: <code>/Applications/Xcode 7.app/Contents/Developer</code>
 </td>
 </tr>
 <tr>
 <td>Use xcpretty</td>
 <td>
-Use [xcpretty](https://github.com/supermarin/xcpretty/blob/master/README.md) to format xcodebuild output and generate JUnit test results report. You must have xcpretty installed on the agent.
+Use <a href="https://github.com/supermarin/xcpretty/blob/master/README.md" data-raw-source="[xcpretty](https://github.com/supermarin/xcpretty/blob/master/README.md)">xcpretty</a> to format xcodebuild output and generate JUnit test results report. You must have xcpretty installed on the agent.
 <blockquote>If you select this option, make sure that <strong>Use xctool</strong> is cleared.</blockquote>
 </td>
 </tr>
@@ -203,17 +203,22 @@ If you have selected Use xcpretty (described above), select this option if you w
 <tr>
 <td>Use xctool</td>
 <td>
-Select if you want to run [xctool](https://github.com/facebook/xctool/blob/master/README.md) instead of [xcodebuild](https://developer.apple.com/library/archive/technotes/tn2339/_index.html). You must have xctool installed on the agent.
+Select if you want to run <a href="https://github.com/facebook/xctool/blob/master/README.md" data-raw-source="[xctool](https://github.com/facebook/xctool/blob/master/README.md)">xctool</a> instead of <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" data-raw-source="[xcodebuild](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)">xcodebuild</a>. You must have xctool installed on the agent.
 <blockquote>If you select this option, make sure that <strong>Use xcpretty</strong> is cleared.</blockquote>
 </td>
 </tr>
 <tr>
 <td>xctool Test Reporter Format</td>
 <td>
-You can specify this argument if you have selected Use xctool and included `test` in Actions (arguments described above). Specify `junit:output-file-path-here.xml` to generate a file that you can publish using the [Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults) task. When specified, `plain` is automatically added as well.
+You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults" data-raw-source="[Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
@@ -230,7 +235,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

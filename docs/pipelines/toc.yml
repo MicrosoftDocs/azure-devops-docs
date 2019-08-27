@@ -21,6 +21,9 @@
   - name: Create your first pipeline
     href: create-first-pipeline.md
     displayName: status badge, get started, first pipeline, import from github
+  - name: Create your first pipeline from CLI
+    href: create-first-pipeline-cli.md
+    displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
@@ -82,8 +85,10 @@
       href: languages/aks-template.md
     - name: Azure Machine Learning
       href: targets/azure-machine-learning.md
-    - name: Java to web App
+    - name: Java to web app
       href: languages/java-webapp.md
+    - name: Java to web app with MicroProfile
+      href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Java to Azure Function
       href: languages/java-function.md
     - name: Python to web app
@@ -170,8 +175,12 @@
       href: test/parallel-testing-any-test-runner.md
     - name: Parallel test with VSTest
       href: test/parallel-testing-vstest.md
+    - name: Flaky test management
+      href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
+    - name: Collect screenshots and video
+      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -229,7 +238,7 @@
     items:
     - name: Overview
       href: artifacts/artifacts-overview.md
-    - name: Pipeline artifacts (Preview)
+    - name: Pipeline artifacts
       href: artifacts/pipeline-artifacts.md
     - name: Build artifacts
       href: artifacts/build-artifacts.md
@@ -245,13 +254,17 @@
       href: artifacts/symbols.md
     - name: Universal 
       href: artifacts/universal-packages.md
+  - name: Caching (preview)
+    href: caching/index.md
+  - name: Checks
+    href: process/checks.md
   - name: Conditions
     href: process/conditions.md
+  - name: Container jobs
+    href: process/container-phases.md
   - name: Demands
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
-  - name: Container jobs
-    href: process/container-phases.md
   - name: Deployment jobs
     href: process/deployment-jobs.md
   - name: Environments
@@ -363,8 +376,6 @@
     items:
     - name: Build tasks
       items:
-      - name: .NET Core
-        href: tasks/build/dotnet-core.md
       - name: .NET Core CLI
         href: tasks/build/dotnet-core-cli.md
       - name: Android build
@@ -519,6 +530,8 @@
         href: tasks/package/npm-authenticate.md
       - name: NuGet
         href: tasks/package/nuget.md
+      - name: NuGet Authenticate
+        href: tasks/package/nuget-authenticate.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
@@ -539,6 +552,10 @@
           href: tasks/package/prev-versions/nuget-publisher-0.md
         - name: NuGet Command 0.*
           href: tasks/package/nuget.md#custom-nuget-command
+        - name: Pip Authenticate 0.*
+          href: tasks/package/prev-versions/pip-authenticate-0.md
+        - name: Twine Authenticate 0.*
+          href: tasks/package/prev-versions/twine-authenticate-0.md
     - name: Deploy tasks
       items:
       - name: App Center Distribute

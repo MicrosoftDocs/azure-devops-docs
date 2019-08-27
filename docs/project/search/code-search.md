@@ -23,8 +23,8 @@ and easily drill down or widen your search
 
 Go to [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 to install the extension as an administrator.
-Non-administrative users can also go here to request the extension be added. 
-For more details, see [Install an extension](../../marketplace/install-extension.md#install-extension) in the Marketplace documentation.
+Non-administrative users can also request the extension is added. 
+For more information, see [Install an extension](../../marketplace/install-extension.md).
 
 > Only users with Basic access can use Code Search.
 
@@ -34,11 +34,11 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
 1. Open the **Azure Repos** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+2. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 
    ![The Code Search textbox in the title bar](_img/code-search-get-started/title-bar-search-box-empty-new.png)    
 
-1. Enter a search string in the textbox, and press _Enter_ (or choose the 
+3. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
 ::: moniker-end
@@ -82,7 +82,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
 1. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
-   list, and type the criteria value.
+   list. Then, enter the criteria value.
 
    ![Search from title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
 
@@ -92,7 +92,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string 
     `error ext:resx` could be useful when you want to review all error strings in your code. 
-    But even if your plain text search string (without specific file type functions) 
+    But, even if your plain text search string (without specific file-type functions) 
     matches part of a filename, the file appears in the list of found files.
 
    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
@@ -103,7 +103,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails). 
 
-1. Widen your search to all projects, your entire organization, or narrow it to specific areas and types of code
+1. Widen your search to all projects or your entire organization. Or narrow it to specific areas and types of code
    by selecting from the drop-down lists at the top of the page.
 
    ![Use drop-down lists to widen or narrow your search](_img/code-search-get-started/select-projects.png)
@@ -120,13 +120,13 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
    ![Search for work items or wiki containing the same search string](_img/code-search-get-started/open-workitem.png)
 
-## How to search filters on a Multi Repo Multi branch enviroment
+## How to search filters on a Multi Repo Multi branch environment
 
 1. Enter search text `NOT kjhasdhkjashdkjkhjdashkjdsaahsdkj` and hit enter.
-1. Choose project filter as Team Project Name. Choose repository filter as your GIT repo. Choose branch filter as the desired branch.
-1. Enter search text ext:json and hit enter. You should be able to see the desired results.
+1. Choose project filter as Team Project Name. Choose repository filter as your GIT repo. Choose branch filter as the wanted branch.
+1. Enter search text ext:json and hit enter. You can see your wanted results.
 
-This search is a generic text which will have matches in all repositories like NOT kjhasdhkjashdkjkhjdashkjdsaahsdkj. The long string could be any garbage text which will not be present in any file. Adding a NOT before it inverts the logic and hence matches all files. 
+This search is a generic text, which will have matches in all repositories like NOT kjhasdhkjashdkjkhjdashkjdsaahsdkj. The long string could be any garbage text, which won't be present in any file. Adding a NOT before it inverts the logic and hence matches all files. 
  
 ## Next step
 

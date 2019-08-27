@@ -20,8 +20,11 @@ monikerRange: 'azure-devops'
 Use this task in a build or release pipeline to run a Python script.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PythonScriptV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -30,11 +33,16 @@ Use this task in a build or release pipeline to run a Python script.
 <tr><td>Type</td><td>(Required) Target script type: File path or Inline</td></tr>
 <tr><td>Script Path</td><td>(Required when targetType == filePath) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).</td></tr>
 <tr><td>Script</td><td>(Required when targetType == inline) The Python script to run</td></tr>
-<tr><td>Arguments</td><td>(Optional) Arguments passed to the script execution, available through `sys.argv`.</td></tr>
-<tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task assumes a Python interpreter is available on the PATH and simply attempts to run the `python` command.</td></tr>
+<tr><td>Arguments</td><td>(Optional) Arguments passed to the script execution, available through <code>sys.argv</code>.</td></tr>
+<tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task assumes a Python interpreter is available on the PATH and simply attempts to run the <code>python</code> command.</td></tr>
 <tr><td>Working directory</td><td>(Optional) undefined</td></tr>
 <tr><td>Fail on standard error</td><td>(Optional) If this is true, this task will fail if any text are written to the stderr stream.</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Remarks

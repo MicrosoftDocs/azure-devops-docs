@@ -304,8 +304,8 @@ For example, you can list items based on the team area path, and if they are in 
 </td>
   <td>
 <code>Work Item Type = User Story</code>
-<code>And _ Board Column _ = _ Code</code>
-<code>And _ Board Column Done _ = _ False</code>
+<code>And <em> Board Column </em> = <em> Code</code>
+<code>And </em> Board Column Done <em> = </em> False</code>
 
   </td>
 </tr>
@@ -314,7 +314,7 @@ For example, you can list items based on the team area path, and if they are in 
     Items in the Expedite swimlane
   </td>
   <td>
-      <code>Board Lane _ = _ Expedite</code>
+      <code>Board Lane <em> = </em> Expedite</code>
   </td>
 </tr>
 <tr>
@@ -322,7 +322,7 @@ For example, you can list items based on the team area path, and if they are in 
 Items in any swimlane that contains &quot;Test&quot;
   </td>
   <td>
-      <code>Board Lane _ Contains _ Test</code>
+      <code>Board Lane <em> Contains </em> Test</code>
   </td>
 </tr>
 </tbody>

@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 03/27/2018
@@ -137,7 +137,6 @@ See [Sign your mobile iOS app during CI](https://docs.microsoft.com/en-us/azure/
 
 # [Classic](#tab/classic)
 Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps simply add a [Publish Artifact task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops) to the end of your pipeline. 
-
 
 ### Set the Xamarin SDK version on macOS
 

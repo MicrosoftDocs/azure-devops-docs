@@ -3,10 +3,10 @@ title: Team Foundation Service updates - May 13
 description: VSTS release notes for May 13 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 6def2b57-0807-4355-a22f-7d10d74ccb8c
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

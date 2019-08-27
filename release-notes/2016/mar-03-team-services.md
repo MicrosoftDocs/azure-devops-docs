@@ -3,10 +3,10 @@ title: Better exploratory testing, test results for release environments, squash
 description: VSTS release notes for March 3 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 66042038-4458-4bd3-8257-91e3cd7c7ee4
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -84,7 +84,7 @@ nuget.exe delete <package ID> <package version> -Source <NuGet v2 endpoint URL> 
 
 We had originally included the Office 365 Connector in these notes. Unfortunately, this is not available yet.  We’re investigating a few open issues, and we’ll update this post as soon as we have more information. Thank you for your patience.
 
-That’s it! Lots of great new value here. Feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+That’s it! Lots of great new value here. Feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

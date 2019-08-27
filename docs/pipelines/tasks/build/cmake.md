@@ -25,8 +25,11 @@ Use this task in a build or release pipeline to build with the CMake cross-platf
 cmake
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CMakeV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -41,9 +44,9 @@ cmake
 <tr>
 <td>Working Directory</td>
 <td>
-<p>Working directory when CMake is run. The default value is `build`.</p>
-<p>If you specify a relative path, then it is relative to your repo. For example, if you specify `build`, the result is the same as if you specified `$(Build.SourcesDirectory)\build`.</p>
-<p>You can also specify a full path outside the repo, and you can use [variables](../../build/variables.md). For example: `$(Build.ArtifactStagingDirectory)\build`</p>
+<p>Working directory when CMake is run. The default value is <code>build</code>.</p>
+<p>If you specify a relative path, then it is relative to your repo. For example, if you specify <code>build</code>, the result is the same as if you specified <code>$(Build.SourcesDirectory)\build</code>.</p>
+<p>You can also specify a full path outside the repo, and you can use <a href="../../build/variables.md" data-raw-source="[variables](../../build/variables.md)">variables</a>. For example: <code>$(Build.ArtifactStagingDirectory)\build</code></p>
  <p>If the path you specify does not exist, CMake creates it.</p>
 </td>
 </tr>
@@ -53,7 +56,12 @@ cmake
 Arguments that you want to pass to CMake.
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Open source
@@ -67,38 +75,36 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build task.
 
-<ol>
-<li><p>Open the Agent Pools control panel tab:
-[!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
-</li>
+1. In your web browser, navigate to Agent pools:
 
-<li>In the left column, click the name of the Microsoft-hosted pool that you are using. In the right column click **Capabilities**.</li>
+   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 
-<li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
 
-<li>Click **Save changes**</li>
-</ol>
+1. Click **Add capability** and set the fields to `cmake` and `yes`.
+
+1. Click **Save changes**.
+
 
 ### How do I enable CMake for my on-premises agent?
 
-<ol>
-<li>[Deploy an agent](../../agents/agents.md#install).</li>
+1. [Deploy an agent](../../agents/agents.md#install).
 
-<li>[Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.</li>
+1. [Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.
 
+1. In your web browser, navigate to Agent pools:
 
-<li><p>In your web browser, navigate to the **Agent pools** control panel tab:</p>
+   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 
-[!INCLUDE [agent-pools](../../agents/_shared/agent-pools-tab.md)]
+1. Navigate to the capabilities tab:
+ 
+   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
 
-</li>
+1. Click **Add capability** and set the fields to `cmake` and `yes`.
 
-<li>In the left column, click the name of your agent pool. In the right column click **Capabilities**. </li>
-
-<li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
-
-<li>Click **Save changes**</li>
-</ol>
+1. Click **Save changes**.
 
 
 ### How does CMake work? What arguments can I use?

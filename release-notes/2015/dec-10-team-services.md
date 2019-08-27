@@ -3,10 +3,10 @@ title: Custom work item fields and more – Dec 10
 description: VSTS release notes for December 10 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 85a01555-f03d-4f49-8d8e-173db66cb79c
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -76,7 +76,7 @@ We’ve heard from many of you that you’d like to be able to filter your code 
 
 ![Filtering code search results by path](_img/12_10_07.png)
 
-That’s it for Sprint 92. Please reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for Sprint 92. Please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

@@ -3,10 +3,10 @@ title: Build preview, updated backlog navigation, branch policies, and more... �
 description: VSTS release notes for May 15 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -94,7 +94,7 @@ Finally, at the [BUILD](http://buildwindows.com/) conference two weeks ago, we a
 
 ![Power BI integration](_img/5_15_09.png)
 
-That’s a wrap for sprint 82. If you have questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for sprint 82. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

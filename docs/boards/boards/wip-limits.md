@@ -149,29 +149,29 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 ::: moniker range="tfs-2015" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
 	**TFS 2015.1 and later versions**  
-2. Choose **Columns** and then a column tab to set the WIP limit for that column.  
+3. Choose **Columns** and then a column tab to set the WIP limit for that column.  
 	
 	![Settings, Columns, set WIP limits](_img/wip-columns-settings.png)  
 
-3. When done with your changes, choose **Save**.  
+4. When done with your changes, choose **Save**.  
 
 	**TFS 2015**     
-4. Set the WIP limits for each intermediate column.     
+5. Set the WIP limits for each intermediate column.     
 	![Customize WIP limits](_img/WIP_5.png)    
    ::: moniker-end  
    ::: moniker range="tfs-2013"    
-5. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-6. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+7. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Open configuration settings](_img/columns/open-settings-2013.png)    
 
-7. Set the WIP limits for each intermediate column.           
+8. Set the WIP limits for each intermediate column.           
 
 	![Customize WIP limits](_img/WIP_5.png)   
 

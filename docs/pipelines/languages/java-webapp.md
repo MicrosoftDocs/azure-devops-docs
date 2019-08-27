@@ -6,10 +6,9 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
 ms.manager: jillfra
-ms.lead: alewis
-ms.author: alewis
-author: andyjlewis
-ms.date: 4/23/2019
+ms.author: phwilson
+author: chasewilson
+ms.date: 7/23/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -46,7 +45,7 @@ https://github.com/agoncal/agoncal-application-petstore-ee7
 
 # [Java SE](#tab/java-se)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-projects/spring-petclinic
@@ -113,50 +112,21 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "JAV
 
 [!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Maven**. Your new pipeline appears.
+When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. Your new pipeline appears.
 
-[!INCLUDE [include](_shared/create-pipeline-after-maven-template-selected.md)]
+[!INCLUDE [include](_shared/create-pipeline-after-template-selected.md)]
 
-## Edit the pipeline
+## See the pipeline run, and your app deployed
 
-After the pipeline has run, select the vertical ellipses in the upper-right corner of the window and then select **Edit pipeline**.
-
-### Set some variables for your deployment
-
-[!INCLUDE [include](_shared/deployment-variables.md)]
-
-### Deploy to your app service
-
-```yaml
-# add these as the last steps (below all the other `task` items under `steps`)
-# to deploy to your app service
-- task: CopyFiles@2
-  displayName: Copy Files
-  inputs:
-    SourceFolder: $(system.defaultworkingdirectory)
-    Contents: '**'
-    TargetFolder: $(build.artifactstagingdirectory)
-
-- task: PublishBuildArtifacts@1
-  displayName: Publish Artifact
-  inputs:
-    PathtoPublish: $(build.artifactstagingdirectory)
-
-- task: AzureWebApp@1
-  displayName: Azure Web App Deploy
-  inputs:
-    azureSubscription: $(serviceConnectionToAzure)
-    appType: webAppLinux
-    appName: $(appName)
-    package: $(build.artifactstagingdirectory)/**/*.war
-```
-
-## Run the pipeline and check out your site
-
-[!INCLUDE [include](_shared/run-pipeline.md)]
+As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
 After the pipeline has run, check out your site!
 
-`https://my-app-name.azurewebsites.net/petclinic`
+`https://my-app-name.azurewebsites.net`
+
+Also explore deployment history for the App by navigating to the "Environment". From the pipeline summary:
+
+1. Select the **Environments** tab.
+1. Select **View environment**.
 
 [!INCLUDE [include](_shared/clean-up-resources.md)]

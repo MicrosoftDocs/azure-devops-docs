@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/22/2019
 ---
 
 # Choose a process 
@@ -35,12 +35,12 @@ For details on creating a project using the process of your choice, see [Create 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
 
-The work tracking objects contained within the  default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. (Currently, the Basic process is in Preview and available from the Azure Boards cloud service.) For simplicity, they are referred to as a "process."
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
 
 
 <a id="template_intro"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ## Basic, Agile, Scrum, and CMMI
 
@@ -52,7 +52,7 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
 ## Agile, Scrum, and CMMI
 
@@ -64,8 +64,9 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 Choose the process that provides the best fit for your team.  
 
 ::: moniker range="<= tfs-2015"
+
 > [!NOTE]    
->Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
+> Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
 
 ::: moniker-end
 
@@ -74,7 +75,7 @@ Choose the process that provides the best fit for your team.
             <tr valign="top">
             <td>
             <p><b>Basic</b></p>
-            <p>Choose <a href="../../get-started/track-issues-tasks.md" data-raw-source="[Basic](../../get-started/track-issues-tasks.md)">Basic</a> when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
+            <p>Choose <a href="../../get-started/plan-track-work.md" data-raw-source="[Basic](../../get-started/plan-track-work.md)">Basic</a> when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
              <p>Tasks support tracking Remaining Work.</p>
             </td>
         <td>
@@ -369,21 +370,108 @@ those WITs used to track work and code defects for the three default processes.
 They also show some of the regressions to former states and transitions to removed states. 
 Each image shows only the default reason associated with the transition. 
 
+
+#### [Basic process](#tab/basic-process) 
+
 <table valign="top">
-<tr >
-<th width="33%">Agile</th>
-<th width="33%">Scrum</th>
-<th width="33%">CMMI</th>
-</tr>
 <tbody>
 <tr>
+<td>
+<h4>Epic, Issue, Task hierarchy</h4>
+<img src="../../get-started/_img/track-issues/basic-process-epics-issues-tasks.png" alt="Basic process work item hierarchy"/>
+</td>
+<td>
+<h4>Epic, Issue, Task workflow </h4>
+<img src="../../get-started/_img/track-issues/basic-process-workflow.png" alt="Basic process workflow"/>
+</td>
+<td>   </td>
+</tr>
+</tbody>
+</table>
+
+
+> [!NOTE]  
+> The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
+
+#### [Agile process](#tab/agile-process) 
+
+<table valign="top">
+<tbody>
+<tr>
+<td>
+<h4>User story</h4>
+<img src="_img/ALM_PT_Agile_WF_UserStory.png" alt="User story workflow states, Agile process"/>
+</td>
+<td>
+<h4>Feature</h4>
+<img src="_img/ALM_PT_Agile_WF_Feature.png" alt="Feature workflow states, Agile process"/>
+</td>
 <td>
 <h4>Epic</h4>
 <img src="_img/ALM_PT_Agile_WF_Epic.png" alt="Epic workflow states, Agile process"/>
 </td>
+</tr>
+<tr>
+<td>
+<h4>Bug</h4>
+<img src="_img/ALM_PT_Agile_WF_Bug.png" alt="Bug workflow states, Agile process"/>
+</td>
+<td>
+<h4>Task</h4>
+<img src="_img/ALM_PT_Agile_WF_Task.png" alt="Task workflow states, Agile process"/>
+</td>
+<td>   </td>
+</tr>
+</tbody>
+</table>
+
+
+#### [Scrum process](#tab/scrum-process) 
+
+<table valign="top">
+<tbody>
+<tr>
+<td>
+<h4>Product backlog item</h4>
+<img src="_img/ALM_PT_Scrum_WF_PBI.png" alt="Product backlog item workflow states, Scrum process"/>
+</td>
+<td>
+<h4>Feature</h4>
+<img src="_img/ALM_PT_Scrum_WF_Feature.png" alt="Feature workflow states, Scrum process"/>
+</td>
 <td>
 <h4>Epic</h4>
 <img src="_img/ALM_PT_Scrum_WF_Epic.png" alt="Epic workflow states, Scrum process"/>
+</td>
+</tr>
+<tr>
+<td>
+<h4>Bug</h4>
+<img src="_img/ALM_PT_Scrum_WF_Bug.png" alt="Bug workflow states, Scrum process"/>
+</td>
+<td>
+<h4>Task</h4>
+<img src="_img/ALM_PT_Scrum_WF_Task.png" alt="Task workflow states, Scrum process"/>
+</td>
+<td>  </td>
+</tr>
+<tr>
+</tbody>
+</table>
+
+
+#### [CMMI process](#tab/cmmi-process) 
+
+<table valign="top">
+<tbody>
+<tr>
+        <td>
+<h4>Requirement</h4>
+<img src="_img/ALM_PT_CMMI_WF_Requirement.png" alt="Requirement workflow states, CMMI process"/>
+</td>
+<td>
+<h4>Feature</h4>
+<img src="_img/ALM_PT_CMMI_WF_Feature.png" alt="Feature workflow states, CMMI process"/>
 </td>
 <td>
 <h4>Epic</h4>
@@ -392,62 +480,22 @@ Each image shows only the default reason associated with the transition.
 </tr>
 <tr>
 <td>
-<h4>Feature</h4>
-<img src="_img/ALM_PT_Agile_WF_Feature.png" alt="Feature workflow states, Agile process"/>
+<h4>Bug</h4>
+<img src="_img/ALM_PT_CMMI_WF_Bug.png" alt="Bug workflow states, CMMI process"/>
 </td>
 <td>
-<h4>Feature</h4>
-<img src="_img/ALM_PT_Scrum_WF_Feature.png" alt="Feature workflow states, Scrum process"/>
+<h4>Task</h4>
+<img src="_img/ALM_PT_CMMI_WF_Task.png" alt="Task workflow states, CMMI process"/>
 </td>
-<td>
-<h4>Feature</h4>
-<img src="_img/ALM_PT_CMMI_WF_Feature.png" alt="Feature workflow states, CMMI process"/>
-</td>
+<td>  </td>
 </tr>
 <tr>
-<td>
-<h4>User story</h4>
-<img src="_img/ALM_PT_Agile_WF_UserStory.png" alt="User story workflow states, Agile process"/>
-</td>
-<td>
-<h4>Product backlog item</h4>
-            <img src="_img/ALM_PT_Scrum_WF_PBI.png" alt="Product backlog item workflow states, Scrum process"/>
-        </td>
-        <td>
-<h4>Requirement</h4>
-            <img src="_img/ALM_PT_CMMI_WF_Requirement.png" alt="Requirement workflow states, CMMI process"/>
-        </td>
-    </tr>
-    <tr valign="top">
-        <td>
-<h4>Bug</h4>
-            <img src="_img/ALM_PT_Agile_WF_Bug.png" alt="Bug workflow states, Agile process"/>
-        </td>
-        <td>
-<h4>Bug</h4>
-            <img src="_img/ALM_PT_Scrum_WF_Bug.png" alt="Bug workflow states, Scrum process"/>
-        </td>
-        <td>
-<h4>Bug</h4>
-            <img src="_img/ALM_PT_CMMI_WF_Bug.png" alt="Bug workflow states, CMMI process"/>
-        </td>
-    </tr>
-    <tr valign="top">
-        <td>
-<h4>Task</h4>
-            <img src="_img/ALM_PT_Agile_WF_Task.png" alt="Task workflow states, Agile process"/>
-        </td>
-        <td>
-<h4>Task</h4>
-            <img src="_img/ALM_PT_Scrum_WF_Task.png" alt="Task workflow states, Scrum process"/>
-        </td>
-        <td>
-<h4>Task</h4>
-            <img src="_img/ALM_PT_CMMI_WF_Task.png" alt="Task workflow states, CMMI process"/>
-        </td>
-     </tr>
 </tbody>
 </table>
+
+
+* * *
+
 
 
 Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the taskboard by dragging it to its corresponding state column.
@@ -472,7 +520,9 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 
 <a id="wits-all"></a>
+
 ## Work item types added to all processes 
+
 The following WITs are added to all processes except the Basic process.  
 
   ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
@@ -486,8 +536,7 @@ Teams create and work with these types using the corresponding tool:
 Work items from these type definitions are not meant to be created manually and therefore are added to the Hidden Types category. 
 Work item types that are added to the Hidden Types category don't appear in the menus used to create new work items.   
 
-::: moniker range="<= tfs-2015"
-
+::: moniker range="tfs-2013"
 
 > [!NOTE]    
 >**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
@@ -499,10 +548,12 @@ Work item types that are added to the Hidden Types category don't appear in the 
 ::: moniker-end
 
 <a id="test-experience"></a>
+
 ### WITs that support the test experience  
+
 WITs that support the test experience and work with Test Manager and the web portal are linked together using the link types shown in the following picture. 
 
-  ![Test management work item types](_img/ALM_PT_WITS_TestExperience.png)
+![Test management work item types](_img/ALM_PT_WITS_TestExperience.png)
 
 From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
 and which test suites are defined for a test plan. 
@@ -513,6 +564,7 @@ See [Customize work tracking objects to support your team's processes](../../../
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
 ## Related articles
+
 <a id="term-note"></a>
 
 You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
