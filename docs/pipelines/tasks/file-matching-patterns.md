@@ -240,4 +240,27 @@ Fabrikam.pdb
 Fabrikam.xml
 ```
 
+<h4 id="doubleexcl_examples">Folder exclude</h4>
+
+Given the pattern:
+```
+**
+!sample/**
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+sample/Fabrikam.dll
+sample/Fabrikam.pdb
+sample/Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+```
+
 ### 

@@ -146,7 +146,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 
 ::: moniker range="< azure-devops"
 
-If you need a version of Node.js/npm that is not already installed on the Microsoft-hosted agent:
+If you need a version of Node.js/npm that is not already installed on the agent:
 
 1. In the pipeline, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
 
