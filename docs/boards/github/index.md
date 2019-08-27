@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/17/2019
+ms.date: 06/28/2019
 ---
 
 
@@ -21,12 +21,16 @@ ms.date: 05/17/2019
 
 Use this guide to connect Azure Boards with one or more GitHub repositories.  
  
-[!INCLUDE[temp](../../_shared/version-selector-minimize.md)]
-
-
 ::: moniker range="azure-devops"
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
+
+If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up for free and invite others to collaborate on your project](../get-started/sign-up-invite-teammates.md). You can also sign up and sign in using your GitHub credentials. 
+
+> [!div class="mx-imgBorder"]  
+> ![GitHub signin](_img/sign-in.png)   
+
+In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to Xbox.
 
 ::: moniker-end
 
@@ -36,14 +40,12 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 ::: moniker-end
 
-
-
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
 
 
 ::: moniker range="azure-devops"
 
-To connect Azure Boards to GitHub.com, [install and configure the Azure Boards app from GitHub](install-github-app.md). Or, alternatively [connect and configure from Azure Boards](connect-to-github.md). The first method is the recommended method as it provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. 
+To connect Azure Boards to GitHub.com, [connect and configure from Azure Boards](connect-to-github.md). Or, alternatively, [install and configure the Azure Boards app from GitHub](install-github-app.md). Both methods have been streamlined and support authenticating and operating via the app rather than an individual. 
 
 To connect Azure Boards to a GitHub Enterprise Server, see  [connect from Azure Boards](connect-to-github.md). 
 

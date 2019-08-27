@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration.
@@ -69,6 +71,8 @@ Since the code for the `Get Source` task in builds and `Download Artifact` task 
 
 The agent exposes proxy configuration via environment variables for every task execution.
 Task authors need to use [azure-pipelines-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib) methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
+
+Note that many tools do not automatically use the agent configured proxy settings. For example, tools such as `curl` and `dotnet` may require proxy environment variables such as `http_proxy` to also be set on the machine.
 
 ::: moniker-end
 

@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'
-ms.date: 11/19/2018
+ms.date: 08/02/2019
 ---
 
 #  View and update work items via the mobile browser   
@@ -38,6 +38,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 
 
 <a id="mobile"></a>
+
 ## Open the mobile work item form  
 
 The mobile work item form will open when you click **View work item** from an email you receive from your mobile device. You'll receive this type of email under these circumstances:  
@@ -50,6 +51,7 @@ The mobile work item form will open when you click **View work item** from an em
 
 
 ## Update a work item
+
 Within the mobile form, you can do almost everything you can do from the [web portal form](../../boards/backlogs/add-work-items.md). Here are the actions you can take in the order they appear in the mobile form: 
 
 *  Add and remove tags
@@ -60,7 +62,8 @@ Within the mobile form, you can do almost everything you can do from the [web po
 *  View and open a link from the Links tab
 *  Open and add an attachment from the Attachments tab
 
-Actions not available to you: 
+Actions not available to you within the mobile work item form: 
+*  You can't create or add new work items
 *  You can't initiate a development operation 
 *  You can't add a link  
 

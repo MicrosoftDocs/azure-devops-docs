@@ -23,7 +23,7 @@ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD
 
 ### Languages
 
-You can use many languages with Azure Pipelines, such as Python, Java, PHP, Ruby, C#, and Go.
+You can use many languages with Azure Pipelines, such as Python, Java, JavaScript, PHP, Ruby, C#, C++, and Go.
 
 ### Version control systems
 
@@ -31,7 +31,7 @@ Before you use continuous integration and continuous delivery practices for your
 
 ### Application types
 
-You can use Azure Pipelines with most application types, such as Java, JavaScript, Python, .NET, PHP, Go, Xcode, and C++.
+You can use Azure Pipelines with most application types, such as Java, JavaScript, Node.js, Python, .NET, C++, Go, PHP, and XCode.
 
 ### Deployment targets
 
@@ -66,11 +66,12 @@ Continuous integration is used to automate tests and builds for your project. CI
 Continuous delivery is used to automatically deploy and test code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice. 
 
 <br>
+
 | Continuous integration (CI)                    |  Continuous delivery (CD)                      |
 | -----------------------------------------------|------------------------------------------------|
 | Increase code coverage.                         | Automatically deploy code to production.        |
 | Build faster by splitting test and build runs.  | Ensure deployment targets have latest code.     |
-| Automatically ensure you don't ship broken code.| Use tested code from CI process.
+| Automatically ensure you don&#39;t ship broken code.| Use tested code from CI process.
 | Run tests continually.                          |
 
 ### Use Azure Pipelines for CI and CD

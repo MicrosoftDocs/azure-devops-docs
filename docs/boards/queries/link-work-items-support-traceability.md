@@ -60,6 +60,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 
 ::: moniker range="azure-devops" 
 <a id="link-remote-work-items">  </a>
+
 ## Cross-organization work item linking 
 
 Organizations that use Azure Active Directory can link work items that exist in different projects across organizations. Use the following link types as indicated:
@@ -156,6 +157,7 @@ These features let you quickly link or change links that use the parent-child li
 You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 <a id="test-plan-links">  </a>
+
 ## Test work item links
 
 Test related link types link test case management work items to one another, or to other work items. From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, and which test suites are defined for a test plan. However, these objects aren't linked to each other through link types.
@@ -175,12 +177,12 @@ For example, when you add Shared Steps to a Test Case, they are automatically li
 From **Test** you can add test plans, test suites, and test cases&mdash;which are linked, but not through a specific link type. Also, the test system creates and manages the associations of test results to test cases and test plans. 
 
 
-## Work items linked to code artifacts and builds  
+## Work items linked to code artifacts and build and release pipelines 
 
 As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.  
 
 ::: moniker range=">= azure-devops-2019"
-The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
+The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, Versioned Item, and Integrated in release environment. 
 
 <img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end

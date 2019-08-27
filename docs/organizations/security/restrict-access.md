@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/26/2019
+ms.date: 08/15/2019
 ---
 
 # Grant or restrict access
@@ -178,20 +178,55 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 </table>
 
-::: moniker range="<= azure-devops-2019"
+<a id="restrict-modifications-wits" />
 
 ## Restrict modification of work items based on a user or group  
 
-For [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
+::: moniker range="azure-devops-2019"
+
+### Inheritance process model
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types to support these restriction requests: 
+- Restrict who can create or modify a work item 
+- Restrict who can create specific work item types, such as Epics or Features 
+- Restict who can modify a specific field for a work item type 
+
+For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
+
+> [!div class="mx-imgBorder"]  
+> ![Custom rule](_img/grant-restrict/restrict-creating-work-items-inheritance.png)   
+
+You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### Online XML process model
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-You can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
 
-> [!NOTE]   
-> These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
-
+You  restrict access to work tracking objects in one of two ways:
+- [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+   
 ::: moniker-end
+
+## Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../_shared/restrict-modification-closed-wi.md)]
+
 
 ## Next steps
 

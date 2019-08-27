@@ -3,10 +3,10 @@ title: Improved commit traceability, custom multiline fields, and board/test int
 description: VSTS release notes for March 24 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 82e1be4f-ab46-40e1-a3f2-ad8fb9e18a67
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -86,7 +86,7 @@ You can now choose which build definitions report their status back to the Git s
 
 And finally, for those of you writing extensions, we’ve added a new contribution point on the board and backlog pages to allow you to write extensions as a pivot tab next to Board/Backlog/[Capacity] tabs.
 
-Feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. As always, any ideas on things you’d like to see us prioritize, head over to UserVoice to add your idea or vote for an existing one.
+Feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). As always, any ideas on things you’d like to see us prioritize, head over to UserVoice to add your idea or vote for an existing one.
 
 Thanks,
 

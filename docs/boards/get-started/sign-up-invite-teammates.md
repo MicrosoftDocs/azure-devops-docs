@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/14/2019
+ms.date: 07/17/2019
 ---
 
 
@@ -34,9 +34,9 @@ You can sign up for free with either a Microsoft or GitHub account. If you don't
 
 If you don't have a Microsoft account or GitHub account, follow these steps. 
 
-1. Open [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards) and choose **Start free with Boards**.
+1. Open [Azure Boards](https://azure.microsoft.com/services/devops/boards) and choose **Start free with Boards**.
 
-2. Choose **Create one** and enter an email address or phone number. Or, you can create an Outlook account at this time. To learn more, see [create a Microsoft account](https://support.microsoft.com/en-us/help/4026324/microsoft-account-how-to-create). 
+2. Choose **Create one** and enter an email address or phone number. Or, you can create an Outlook account at this time. To learn more, see [create a Microsoft account](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a Microsoft account](_img/acquisition/sign-in-new.png)
@@ -64,7 +64,7 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 
 	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
-Your next step is to start using your Kanban board to [track issues and tasks](track-issues-tasks.md), or [invite other users](#invite-others) to collaborate with your project. 
+Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 ## Sign up with a personal Microsoft account
 
@@ -120,6 +120,8 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 	`https://dev.azure.com/{yourorganization}`
 
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+
 Your next step is to  [create a project](#create-project). 
 
 <a id="create-project" />
@@ -140,7 +142,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board](_img/track-issues/issues-board-new-item.png)
 
-	You're now set to start [tracking issues, tasks, and features](track-issues-tasks.md), or [invite other users](#invite-others) to collaborate with your project. 
+	You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 
 <a id="invite-others" />
@@ -153,14 +155,14 @@ You can add and invite others to work on your project by adding their email addr
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert-2.png)
 
-1. Select **Users** > **Add new users**.
+2. Select **Users** > **Add new users**.
 
    ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
 
-2. Complete the form by entering or selecting the following information:
+3. Complete the form by entering or selecting the following information:
 	<ul>
-    <li><strong>Users:</strong> Enter the email addresses (Microsoft account) for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
-    <li><strong>Access level:</strong> Assign one of the following access levels: 
+	<li>**Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
+	<li>**Access level:** Assign one of the following access levels: 
 		<ul>
         <li><strong>Basic</strong>: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free. </li>
         <li><strong>Stakeholder</strong>: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users <strong>Stakeholder</strong> access for free.</li>
@@ -176,9 +178,9 @@ You can add and invite others to work on your project by adding their email addr
 	</ul>
 
 	> [!NOTE]  
-	> You must add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
-3. When you're done, select **Add** to complete your invitation.
+4. When you're done, select **Add** to complete your invitation.
 
 For more information, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 
@@ -202,8 +204,7 @@ You can rename your project or change it's visibility. To learn more about manag
 ## Try this next  
  
 > [!div class="nextstepaction"]
-> [Track issues and tasks](track-issues-tasks.md)
-
+> [Track issues and tasks](plan-track-work.md)
 
 ## Related articles  
 
@@ -213,20 +214,3 @@ You can rename your project or change it's visibility. To learn more about manag
 - [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
 
 
-
-
-<!--- REMOVED CONTENT
-
-Enter a name for your organization. The name can't contain spaces or special characters
- (such as / \ [ ] : | < > + = ; ? or &#42;), can't end in a period or comma, must be less than 256 characters, and must be unique within the DevOps namespace. You can also choose between several locations for where you want your data hosted. Select **Continue**.
-
-
-   ![Almost done](/azure/devops/_shared/_img/almost-done.png)
-
-   You see the following dialog box as your organization is created.
-
-   ![Taking you to your new organization](/azure/devops/_shared/_img/taking-you-to-your-new-azure-devops-org.png)
-
-	Congratulations, you're now an organization owner!
-
---> 

@@ -18,7 +18,6 @@ ms.date: 06/21/2019
 
 <a id="display-hierarchy">  </a>
 
-
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
@@ -105,8 +104,8 @@ For TFS 2018 and earlier versions, the Kanban board only shows the last node wit
 
 ::: moniker range="tfs-2018"
 
-> [!NOTE]   
-For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
+> [!NOTE]
+> For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
 
 ::: moniker-end
 

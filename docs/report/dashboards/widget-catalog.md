@@ -16,13 +16,16 @@ ms.date: 11/01/2018
 ---
 
 # Widget catalog 
+
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
 
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
 
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 
-The following widgets are organized under the service they support. Widgets that derive their data from the [Analytics service](../powerbi/what-is-analytics.md) are annotated with **Analytics**.  <!--- Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user. -->
+The following widgets are organized under the service they support. Widgets that derive their data from [Analytics](../powerbi/what-is-analytics.md) are annotated with **Analytics**. 
+
+<!--- Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user. -->
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -481,7 +484,8 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
-The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    
+The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams.  
+
 For additional guidance, see [Velocity](team-velocity.md). 
 
 ----

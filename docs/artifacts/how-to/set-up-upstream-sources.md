@@ -5,15 +5,15 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Configure upstream sources for Azure DevOps Services and TFS packages
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
 
@@ -23,52 +23,35 @@ Navigate to the **Packages** page and select "New Feed".
 
 Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
 
-![Add upstream sources when creating feed](_img/us-create-feed.png)
+Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
 
-Selecting this option now means **nuget.org** or **npmjs.org** do not have to be included in your nuget.config or npm config files to use packages from there.
+## Add public upstream sources to an existing feed
 
-> [!NOTE]
-> You can add Azure DevOps Services feeds as upstream sources as well following the directions below.
+1. From your feed page, go to **Feed settings** by clicking the gear icon
+2. On the **Upstream sources** tab, if you don't have any upstream sources you'll see a dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, choose _Public source_
 
-## Add upstream sources to existing feed
+    > **NOTE:** Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
-1. From your feed page, go to **Feed settings**
-2. On the upstream sources tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_:
+4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
 
-    ![Add upstreams when no upstreams exist](_img/us-no-upstreams.png)
+    > **NOTE:** You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
 
-    If you do already have upstreams, you can select "Add upstream source" in the top menu:
+## Add an Azure Artifacts feed in your organization as an upstream source
 
-    ![Add upstream sources to existing feed](_img/us-upstreams-exist.png)
+1. From your feed page, go to **Feed settings** by clicking the gear icon
+2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in this organization_
+4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
+5. Select the package types you want to use and click _Add_.
 
-3. You will see the following menu, choose if you'd like to add public sources or Azure DevOps Services feeds 
+## Add an Azure Artifacts feed in a different organization within your AAD tenant as an upstream source
 
-    > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
-
-    ![Add upstream sources - choose upstream source type](_img/us-add-new-upstream.png)
-
-    For public sources, choose **npmjs** or **nuget**:
-
-    ![Add public upstream sources](_img/us-add-public-source.png)
-
-    > [!NOTE] 
-    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your organization is in an enterprise.
-    
-    If your organization **isn't** in an enterprise, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
-
-    ![Add Azure DevOps Services upstream sources](_img/us-add-vsts-source.png)
-
-    If your organization **is** in an enterprise, input the **Azure DevOps Services feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
-
-    ![Add Azure DevOps Services upstream sources in an enterprise](_img/us-add-upstream-organization.png)
-
-### Adding Azure DevOps Services feeds as upstream sources
-
-The view we picked is the "default view". The default view is covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default.
-
-Once you add an upstream source, you can see it in the list of upstream sources for your feed.
-
-![List of sources](_img/us-with-sources.png)
+1. From your feed page, go to **Feed settings** by clicking the gear icon
+2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in another organization_
+4. Enter the **Azure DevOps Services feed locator**, this is just `azure-feed://` followed by the organization name, feed name, and the view that is shared. For example: `azure-feed://myOrg/myFeed@local`
+5. Select the package types you want to use and click _Add_.
 
 ## Consuming NuGet packages from upstream sources
 
@@ -91,3 +74,13 @@ npm install --save <package>
 See the [npm install docs](../get-started-npm.md) for more details.
 
 Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+
+## FAQs
+
+### What are views?
+
+Views are covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default. 
+
+### Why can't I see the feed I want to configure as an upstream?
+
+It could be the case that the feed owner has not shared a view to be available for upstreaming.

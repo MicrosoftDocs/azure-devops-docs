@@ -288,7 +288,7 @@ You use **witadmin changefield** to change the attributes of an existing field. 
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > | Attribute | Description |
 > |---|---|
@@ -329,7 +329,7 @@ Other related topics or resources:
   
 To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
-<a id="field-reference"></a>  
+<a id="field-reference"></a>
 
 [!INCLUDE [temp](../_shared/field-reference.md)]
 

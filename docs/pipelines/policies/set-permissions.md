@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/02/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -25,17 +25,17 @@ If your teammates want to edit pipelines, then have an administrator add them to
 
 1. Make sure you are a member of the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
 
-1. Go to your project summary: `https://dev.azure.com/{your-organization}/{your-project}`
+2. Go to your project summary: `https://dev.azure.com/{your-organization}/{your-project}`
 
-1. Invite the teammates to join the project.
+3. Invite the teammates to join the project.
 
- > [!div class="mx-imgBorder"]
- ![Invite button](_img/project-invite-button.png)
+   > [!div class="mx-imgBorder"]
+   > ![Invite button](_img/project-invite-button.png)
+   > 
+   > [!div class="mx-imgBorder"]
+   > ![Add users to project dialog box](_img/project-invite-dialog-box.png)
 
- > [!div class="mx-imgBorder"]
- ![Add users to project dialog box](_img/project-invite-dialog-box.png)
-
-1. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
+4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
 
 ## Confirm that contributors have pipeline permissions 
 
@@ -43,15 +43,15 @@ If you created your project after about October 2018, then the above procedure i
 
 1. Make sure you are a member of the Build Administrators group or the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
 
-1. Open the build security dialog box.
+2. Open the build security dialog box.
 
- > [!div class="mx-imgBorder"]
- ![Security menu item for all builds](_img/security-menu-item.png)
+   > [!div class="mx-imgBorder"]
+   > ![Security menu item for all builds](_img/security-menu-item.png)
 
-1. On the permissions dialog box, make sure the following permissions are set to Allow.
+3. On the permissions dialog box, make sure the following permissions are set to Allow.
 
- > [!div class="mx-imgBorder"]
- ![Permissions dialog box for all builds in the project](_img/builds-permissions-dialog-box.png)
+   > [!div class="mx-imgBorder"]
+   > ![Permissions dialog box for all builds in the project](_img/builds-permissions-dialog-box.png)
 
 ::: moniker-end
 
@@ -67,17 +67,17 @@ In addition to permission assignments, you manage security for several resources
 
    ![Open the Security dialog for all build pipelines](_img/set-build-release-permissions/open-all-build-definitions-security.png)
 
-  To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
+   To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
 
    <img src="_img//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
-1. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
 
    For example, here we change the permission for Edit build pipeline for the Contributors group to Allow.
 
    <img src="_img/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
-1. Save your changes.
+3. Save your changes.
 
 ## Set permissions for release pipelines
 

@@ -1,7 +1,7 @@
 ---
-title: Uninstall or disable extensions in Azure DevOps or Team Foundation Server (TFS)
+title: Uninstall disable extensions in Azure DevOps
 titleSuffix: Azure DevOps
-description: Uninstall or disable extensions for Azure DevOps or Team Foundation Server
+description: Uninstall, disable, or remove extensions for Azure DevOps
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -9,50 +9,69 @@ ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/19/2019
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
-
  
 # Uninstall or disable extensions
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-When you don't need an extension anymore, you can uninstall or disable this extension.
+When you don't need an extension anymore, you can uninstall or disable the extension. This article shows you how.
 
 > [!NOTE]
 > Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../organizations/billing/change-number-paid-extension-users.md).
 
 ## Prerequisites
 
-You must be a [Project collection administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
+You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
 
-## Disable or uninstall extensions
+::: moniker range="azure-devops"
 
-::: moniker range=">= azure-devops-2019"
+## Uninstall or disable extensions in Azure DevOps Services
 
-1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
+   
+   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
 
-2. Select the shopping bag icon and **Manage extensions**.
+3. Select **Extensions**, and then select the extension that you want to uninstall or disable.
 
-   ![Shopping bag icon, Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
+   ![Select uninstall or disable for extension](_img/org-settings-select-extension.png)
 
-3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
+4. Select **Uninstall** or select the ellipses (**...**), and then select **Disable**.
 
    ![Disable or uninstall extension](_img/disable-or-uninstall-extension.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
+## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
 
-2. Select the shopping bag icon and **Manage extensions**.
+1. Navigate to the local gallery management portal, (```http://{server}/_gallery/manage```).
 
-   ![Shopping bag icon, Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
+2. For the desired extension, select the ellipses (**...**), and then select **Remove**.
 
-3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
-
-   ![Uninstall or disable extensions](_img/disable-uninstall-extension.png)
+   ![Remove extension](_img/remove-extension-TFS.png)
 
 ::: moniker-end
+
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
+
+## Uninstall extensions in a Team Foundation Server Collection
+
+1. Navigate to the local gallery management portal, (```http://{server}:8080/tfs/_gallery/manage```).
+
+2. For the desired extension, select the ellipses (**...**), and then select **Remove**.
+
+   ![Remove extension](_img/remove-extension-TFS.png)
+
+::: moniker-end
+
+
+
+
+
+
+

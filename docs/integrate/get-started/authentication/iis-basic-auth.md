@@ -17,7 +17,7 @@ ms.date: 04/22/2019
 [!INCLUDE [version-header-tfs-only](../../../_shared/version-header-tfs-only.md)]
 
 We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
-off at all times when using TFS.  Only if necessary should you enable IIS Basic Authentication. When IIS 
+off at all times when using Azure DevOps Server.  Only if necessary should you enable IIS Basic Authentication. When IIS 
 Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an 
 authentication mechanism. 
 

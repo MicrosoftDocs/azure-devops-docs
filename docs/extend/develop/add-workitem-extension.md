@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/22/2016
 ---
 
@@ -55,7 +55,7 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| ```name```         | Text that will appear on the group   |
+| ```name```         | Text that appears on the group   |
 | ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts
 | ```height```       | (Optional) Defines the height of the group. When omitted, it is 100%
 
@@ -149,7 +149,7 @@ To add a page to the work item form, add a contribution to your extension manife
 
 | Property     | Description           |
 |--------------|-----------------------|
-| name         | Text that will appear on the tab page.   |
+| name         | Text that appears on the tab page.   |
 | uri          | URI to a page that hosts the html that shows on the work item form and its scripts. |
 
 ###  JavaScript sample
@@ -159,15 +159,17 @@ See the JavaScript sample in the form group section. The name of the registered 
 [!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
 
 <a name="showcontributions"></a>
+
 ## Configure contributions in work item form
-In Azure DevOps Services, by default the group extensions will appear in the end of the second column of the form and page contributions will appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users will have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
+
+In Azure DevOps Services, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
 ## Add menu action
 
 ![toolbar item in work item form](./_img/add-workitem-extension-toolbar.png)
 
-To add an item to the work item toolbar, add this contribution to your extension manifest. The item will appear in the ... dropdown in the top right of the work item form.
+To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 
  ```json
 "contributions": [
@@ -193,18 +195,18 @@ To add an item to the work item toolbar, add this contribution to your extension
 ### Properties
 | Property     | Description           |
 |--------------|-----------------------|
-| text         | Text that will appear on the toolbar item. |
-| title        | Tooltip text that will appear on the menu item. |
-| toolbarText  | Text that will appear when the item is being hovered over. |
+| text         | Text that appears on the toolbar item. |
+| title        | Tooltip text that appear on the menu item. |
+| toolbarText  | Text that appears when the item is being hovered over. |
 | uri          | URI to a page that registers the toolbar action handler. |
-| icon         | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri. |
-| group        | Determines where this menu item will appear in relation to the others. Toolbar items with the same group name will be grouped together divided by a separator from the rest of the items.
+| icon         | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri. |
+| group        | Determines where this menu item appears in relation to the others. Toolbar items with the same group name are grouped together divided by a separator from the rest of the items.
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution id.
 
 <a name="listenforevents"></a>   
 ## Listen for events
 
-To add an observer to the work item which listens to the work item events, add this contribution to your extension manifest. There will be no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
+To add an observer to the work item which listens to the work item events, add this contribution to your extension manifest. There is no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
 
  ```json
 "contributions": [

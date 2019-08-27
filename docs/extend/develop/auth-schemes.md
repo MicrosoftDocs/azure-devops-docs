@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 03/02/2016
 ---
 
@@ -146,7 +146,7 @@ The value of certificate has to be provided in the text area.
 ```
 
 ## No authentication
-This scheme is used when an endpoint type does not require to take any input. For e.g. external services that support anonymous access to its resources.
+This scheme is used when an endpoint type doesn't require to take any input. For e.g. external services that support anonymous access to its resources.
 
 ```json
 {

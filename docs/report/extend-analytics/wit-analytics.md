@@ -1,7 +1,7 @@
 ---
 title: Query work tracking data using OData 
 titleSuffix: Azure DevOps
-description: How to generate work item tracking reports for Azure DevOps using the OData Analytics service  
+description: How to generate work item tracking reports for Azure DevOps using OData Analytics  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -13,12 +13,12 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Query your work tracking data using the OData Analytics service
+# Query your work tracking data using OData Analytics
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 
-Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
+Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -51,16 +51,16 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 - You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- Install the [Analytics Marketplace extension](../dashboards/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.  
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 ### Query a single entity set
 
-To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
+To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for Analytics](data-model-analytics-service.md).
 
 For example, you query Areas by adding `/Areas`. The full URL is:
 
@@ -390,7 +390,7 @@ And, you can order by multiple items:
 
 ## Enforce server-side paging
 
-The Analytics Service forces paging when query results exceed 10000 records. In that case, you will get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
+Analytics forces paging when query results exceed 10000 records. In that case, you will get first page of data and link to follow to get next page. Link (`@odata.nextLink`) can be found at the end of the JSON output. It will look like an original query followed by `$skip` or `$skiptoken`. For example:
 
 
 > [!div class="tabbedCodeSnippets"]

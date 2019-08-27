@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -125,7 +125,7 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 | File bugs using screen capture and recording, and image action log | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create test cases and tasks | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Exploratory testing session insights | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Capture page load performance data](../connected-mode-exploratory-testing.md#create-bugs-or-tasks) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Capture page load performance data | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
 
 ## Conclusion

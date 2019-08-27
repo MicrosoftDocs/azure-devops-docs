@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 08/15/2019
 ---
 
 # Add columns to your Kanban board
@@ -29,17 +29,20 @@ For example, the main workflow stages performed by our example dev team are capt
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
 ::: moniker range="azure-devops"
+
 > [!NOTE]    
->If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> If you're looking at how to add columns to a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= azure-devops-2019"
+
 > [!NOTE]    
->If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+
 ::: moniker-end
 
 
@@ -144,6 +147,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"  
+
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -182,6 +186,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
+
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -304,6 +309,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
+
 ## Update Kanban column-to-State mappings
  
 Another "under the hood" item that impacts Kanban column-to-State mappings is categories. The Kanban board and other Agile tools uses categories to group WITs that they want to treat the same. 

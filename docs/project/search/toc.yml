@@ -18,6 +18,8 @@
     href: advanced-package-syntax.md
   - name: Configure search
     href: administration.md
-
-    
+- name: Troubleshooting
+  items:
+  - name: FAQs
+    href: faq.md
   

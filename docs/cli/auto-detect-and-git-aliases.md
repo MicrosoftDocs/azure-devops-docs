@@ -9,10 +9,13 @@ ms.technology: devops-ref
 ms.manager: jillfra 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Auto detect configuration and git aliases
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 The Azure DevOps Extension has been optimized for Azure Repos to work well with git workflows.
 
@@ -22,9 +25,9 @@ If you are working in a local check out of a repository, you can simply run `az 
 
 You can also configure the Azure DevOps Extension to add git aliases for common git-based Azure Repos commands like creating or adding reviewers to pull requests. This can be enabled by running the following command:
 
-> [!div class="tabbedCodeSnippets"]
+
 ```bash
-az devops configure --use-git-alias yes
+az devops configure --use-git-aliases true
 ```
 
 This will alias all `az repos` commands to `git repo` and all `az repos pr` commands to `git pr`.
@@ -32,7 +35,7 @@ So `az repos list` becomes `git repo list` and `az repo pr list` becomes `git pr
 
 For example, a pull request can now be created using the following command:
 
-> [!div class="tabbedCodeSnippets"]
+
 ```bash
 git pr create --target-branch {branch\_name}
 ```

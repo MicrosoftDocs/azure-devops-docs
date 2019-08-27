@@ -1,25 +1,32 @@
-- name: Start using Azure Boards (Basic process) 
-  href: index.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json
-- name: "What is Azure Boards?"
-  href: what-is-azure-boards-basic-process.md
+- name: Start using Azure Boards 
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Sign up and invite some teammates 
   href: sign-up-invite-teammates.md
 - name: Plan and track work
-  href: track-issues-tasks.md 
+  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
+  href: plan-track-work.md 
 - name: Customize your boards
+  displayName: cards, columns, field, swimlanes, settings, backlog levels, 
   href: customize-boards.md 
 - name: Manage your project
+  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
   href: manage-boards.md
+  displayName: cards, columns, field, swimlanes, settings
+- name: Concepts
+  items:
+  - name: "Why use Azure Boards?"
+    displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
+    href: why-use-azure-boards.md
+  - name: Key concepts
+    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
+    href: key-concepts.md 
 - name: Reference
   items:
   - name: Basic fields reference
-    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
-  - name: Key concepts
-    href: key-concepts.md 
+    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Default permissions & access (Security)
     href: permissions-access-boards.md
-  - name: "Why use Azure Boards?"
-    href: why-use-azure-boards.md
+
 
 
 

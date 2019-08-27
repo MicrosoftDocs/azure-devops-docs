@@ -1,7 +1,7 @@
 ---
-title: Dashboards, charts, reports, & widgets
+title: Dashboards, reports, & widgets
 titleSuffix: Azure DevOps
-description: Index to topics for working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
+description: Learn about working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
 ms.custom: dashboards
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
@@ -14,7 +14,7 @@ monikerRange: ">= tfs-2013"
 ms.date: 04/05/2019
 ---
 
-# Dashboards, Charts, Reports, & Widgets
+# Dashboards, Reports, & Widgets
  
 [!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
 
@@ -280,17 +280,21 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 ## Step-by-Step Tutorials
 
 ::: moniker range=">= azure-devops-2019"
-- [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
-- [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
-- [Configure the Velocity widget](team-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
-- [View the built-in velocity chart](velocity-chart-data-store.md)
-- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+
+- [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Configure the Velocity widget](team-velocity.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [View the built-in velocity chart](team-velocity.md)
+- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018" 
+
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
-- [View the built-in velocity chart](velocity-chart-data-store.md)
+- [View the built-in velocity chart](team-velocity.md)
 - [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+
 ::: moniker-end
 
 
@@ -303,15 +307,29 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 
 ## How-to Guides
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 - [Configure work item query-based charts](charts.md)
-- [Configure test status, progress, and result charts](../../test/track-test-status.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
+- [Configure test status, progress, and result charts](../../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)  
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+- [Configure work item query-based charts](charts.md)
+- [Configure test status, progress, and result charts](../../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)  
+- [Enable or install Analytics](analytics-extension.md)  
+
+::: moniker-end
+
+
+
+::: moniker range=">= tfs-2017"
 
 ## Samples
 
-- [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
-- [Add a chart widget](../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)  
+- [Add a chart widget](../../extend/develop/add-chart.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"  
@@ -319,8 +337,9 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 ## Reference 
 
 - [Widget catalog](widget-catalog.md)  
-- [Markdown guidance](../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Markdown guidance](../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Default permissions & access (Security)](charts-dashboard-permissions-access.md)
+
 ::: moniker-end
 
 ## Resources 
@@ -332,17 +351,22 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 - [Azure Boards](/azure/devops/boards/index)
 - [Azure Test Plans](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
+
 - [Agile](/azure/devops/boards/index)
 - [Testing](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2013"  
+
 - [Agile](/azure/devops/boards/index)
 - [Testing](/azure/devops/test/index-tp)
+
 ::: moniker-end
 
 

@@ -24,7 +24,8 @@ ms.date: 04/13/2018
 The data migration tool could flag errors which need to be corrected prior to performing a migration. Below are the most common errors that are encountered when prepping 
 for a migration. After correcting each error you will need to run the data migration tool validate command again to ensure the error(s) is/are actually gone.
 
-## Dealing with Size Warnings
+## Resolve size warnings
+
 If your collection is particularly large then you might receive one of the below messages after running the data migration tool. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
 
 ```cmdline
@@ -51,7 +52,8 @@ The database metadata size is currently {Metadata Size}GBs. This is above the ma
 
 Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to Azure DevOps Services. The volume of metadata in your collection is too large and needs to be [reduced](/azure/devops/server/upgrade/clean-up-data) below the mentioned limit to proceed with the import.   
 
-## Dealing with Collation Warnings
+## Resolve collation warnings
+
 Collation in this case refers to the collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
 
 ```cmdline
@@ -76,13 +78,15 @@ The collection database's collation '{collation}' is not supported for import to
 
 In order to continue your collection's collation will need to be [changed](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
     
-## Dealing with Identity Errors
+## Resolve identity errors
+
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
 ### ISVError:100014
+
 This error indicates that a permission is missing from a system group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) will need to be run.
 
-#### Project Collection Valid Users Error Message
+#### Project Collection Valid Users error message
 
 Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
 
@@ -100,7 +104,7 @@ The final command will look like:
 ```cmdline
 TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
-#### Project Collection Administrators Error Message
+#### Project Collection Administrators error message
 
 Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
 
@@ -174,7 +178,8 @@ Run the completed command against the Azure DevOps Server configuration database
 >
 > If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your Azure DevOps Server instance and that you're running the command on the configuration database. 
 
-### AAD Timeout Exception
+### AAD timeout exception
+
 On rare occasions some might receive an AAD timeout error when running the data migration tool prepare command. 
 
 ```cmdline
@@ -211,13 +216,16 @@ Number of active users is {Number of Users}.
 
 If this number is in the high five-digits or even six-digits ranges then it could be an indication that the volume of identities being mapped require more time than the timeout limit provides. You should inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible remove these groups and try again. If you still can't resolve this error then please reach out to [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
-## Dealing with Process Errors
+## Resolve process errors
+
 See the separate [Process Templates](migration-processtemplates.md) page for details on resolving common process errors.
 
-## Dealing with Field Validation Errors
+## Resolve field validation errors
 
+<a name= "VS403442" ></a>
+ 
+#### VS403442
 
-#### <a name= "VS403442" ></a> **VS403442**
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
 
 Sometimes your local collection may have a field whose name may conflict with Azure DevOps Services system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
@@ -226,7 +234,10 @@ Sometimes your local collection may have a field whose name may conflict with Az
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
 ```
 
-#### <a name= "VS403443" ></a> **VS403443**
+<a name= "VS403443" ></a> 
+
+#### VS403443
+
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
 
 Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
@@ -235,7 +246,10 @@ Sometimes your local collection may have different name for a particular field. 
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
 ```
 
-#### <a name= "VS403444"> </a> **VS403444**
+<a name= "VS403444"> </a>
+
+#### VS403444
+
 In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
 
 Sometimes your local collection may have different type for a particular field. Presently [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
@@ -243,21 +257,25 @@ Sometimes your local collection may have different type for a particular field. 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
 ```
->[!Note]
+>[!NOTE]
 > If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
 
-> [!Important]
-> Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
 
 ```cmdline
 witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName
 ```
 
+> [!IMPORTANT]
+> Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across the collection.
 
-## Dealing with Import Errors
+<a id="resolve-import-errors" />
+
+## Resolve import errors
+
 Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when the data migration tool attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
 
-### Verification Failures
+### Verification failures
+
 Verification failures happen when the import fails to start. Issues falling into this category mean that something with your import request isn't valid. Look up you error message below and follow the recommended guidance on how to resolve the error. After that your team can try to queue the import again.   
 
 **VS403254**
@@ -397,7 +415,8 @@ Importing multiple copies of the **SAME** collection is not supported by the dat
 
 From SQL Server Management Studio (SSMS) open the extended properties for the split copies that haven't been imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then re-run the prepare command and use the new import.json to queue the import.
 
-### Import Failures
+### Import failures
+
 When an import fails, the individual that queued the import will receive an email notification. Most of the time this email will include a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and try your import again. 
 
 If the error is more complex then the email will provide instructions on how to file a customer [support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. This will allow your team members to continue working. It's recommended not to attempt the import again until the issue causing the failure has been resolved. 

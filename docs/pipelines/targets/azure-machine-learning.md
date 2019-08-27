@@ -10,7 +10,7 @@ manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: jordane
 author: jpe316
-ms.date: 5/6/2019
+ms.date: 6/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,13 +18,15 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../_shared/version-team-services.md)]
 
-You can use a pipeline to automatically train and deploy machine learning models with the Azure Machine Learning service. Here you'll learn how to build a machine learning model, and then deploy the model as a web service. You'll end up with a pipeline that you can use to train your model.
+You can use a pipeline to automatically train and deploy machine learning models with the Azure Machine Learning service.
+Here you'll learn how to build a machine learning model, and then deploy the model as a web service. 
+You'll end up with a pipeline that you can use to train your model.
 
 ## Prerequisites
 
 Before you read this topic, you should understand [how the Azure Machine Learning service works](/azure/machine-learning/service/concept-azure-machine-learning-architecture).
 
-Follow the steps in the steps in [Azure Machine Learning quickstart: portal](/azure/machine-learning/service/setup-create-workspace) to create a workspace.
+Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-learning/service/setup-create-workspace) to create a workspace.
 
 ## Get the code
 
@@ -44,22 +46,59 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 
 ## Create the pipeline
 
+You can use 1 of the following approach to create a new pipeline.
+
+#### [YAML](#tab/yaml/)
 [!INCLUDE [include](../languages/_shared/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
 1. Replace `myresourcegroup` with the name of the Azure resource group that contains your Azure Machine Learning service workspace.
 
-1. Replace `myworkspace` with the name of your Azure Machine Learning service workspace.
+2. Replace `myworkspace` with the name of your Azure Machine Learning service workspace.
 
-1. When you're ready, select **Save and run**.
+3. When you're ready, select **Save and run**.
 
-1. You're prompted to commit your changes to the _azure-pipelines.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
+4. You're prompted to commit your changes to the _azure-pipelines.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
 
- If you want to watch your pipeline in action, select the build job.
+   If you want to watch your pipeline in action, select the build job.
 
 You now have a YAML pipeline in your repository that's ready to train your model!
 
+#### [Classic](#tab/classic/)
+To create a pipeline in the classic editor, use our template so that you automatically get all the tasks and variables you need.
+
+1. Go to **Pipelines**, and then select **New Pipeline**.
+
+1. Select **Use the classic editor** to create a pipeline without YAML.
+
+   ![classic-editor](../_shared/_img/classic-editor.png)
+
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. Select the **Machine Learning Model** template and then select **Apply**.
+
+1. On the **Tasks** tab, under **Parameters**, select your Azure subscription.
+
+1. Select the **Variables** tab, and then set the following variables:
+
+   |Variables  |Description  |
+   |---------|---------|
+   |resourceGroupName     | Name of an existing resource group|
+   |workspaceName     | Name of the workspace (will be created if it does not already exist) |
+   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/.azureml/sklearn.runconfig)|
+   |modelAssetPath     | The cloud path where the experiment run stores the model file. This should be equivalent to the path which will be used as the working directory when loading individual models in the score.py file. This could either be the root folder of all model files or the full path of the model file itself depending on how score.py loads it|
+   |modelName     | Name of model to register. This should be the same as used by the score.py when loading models|
+   |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
+   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/inferenceConfig.yml)|
+   |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
+   |aksComputeName     | Name of the existing AKS|
+
+1. Select **Save & queue**. If you want to watch your pipeline in action, select the build job.
+
+You now have a pipeline that's ready to train your model!
+
+* * *
 ## Azure Machine Learning service automation
 
 There are two primary ways to use automation with the Azure Machine Learning service:
@@ -139,3 +178,8 @@ For more information on these commands, see the [CLI extension reference](https:
 ## Next steps
 
 Learn how you can further integrate machine learning into your pipelines with the [Machine Learning extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml).
+
+For more examples of using Azure Pipelines with Azure Machine Learning service, see the following repos:
+
+* [MLOps (CLI focused)](https://github.com/Microsoft/MLOps)
+* [MLOps (Python focused)](https://github.com/Microsoft/MLOpsPython)

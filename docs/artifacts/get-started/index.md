@@ -7,8 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 05/22/2019
 ---

@@ -86,5 +86,5 @@ You can review the report to find answers to the following questions:
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
 

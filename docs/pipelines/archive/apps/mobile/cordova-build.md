@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 22fc4e22-ef0a-4c55-8cce-20ad2fa14342
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: dastahel
+author: davidstaheli
 ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -44,14 +44,14 @@ We'll assume for the purposes of this tutorial that you want to build a Cordova 
 ### Create the pipeline
 1. Open your project in your web browser.
 
- * On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` 
- * Azure Pipelines  ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```
+   * On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` 
+   * Azure Pipelines  ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```
 
-0. Create a build pipeline.
+2. Create a build pipeline.
 
- ![New build pipeline](../../../_shared/_img/create-new-build-definition.png)
+   ![New build pipeline](../../../_shared/_img/create-new-build-definition.png)
  
-0. Click Empty to start with an empty pipeline.
+3. Click Empty to start with an empty pipeline.
 
 <a name="win"></a>
 ### Building Android, Windows, or Windows Phone 8.0 on Windows
@@ -59,13 +59,17 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
 
 1. First we need to ensure that this particular build runs on Windows rather than macOS. Under the **General** tab, add a demand that **cmd** exists.
 
-  ![Windows Build pipeline - Demand](_img/cordova-build/tfs2015-3.png)
+   ![Windows Build pipeline - Demand](_img/cordova-build/tfs2015-3.png)
 
 2. Next we will add some build tasks.
 
-  <table>
+   <table>
    <tr>
-      <td>![Build: Cordova Build](https://github.com/Microsoft/vso-cordova-tasks/blob/master/Tasks/CordovaBuild/icon.png?raw=true)<br />**Build: Cordova Build**</td>
+      <td>
+
+![Build: Cordova Build](https://github.com/Microsoft/vso-cordova-tasks/blob/master/Tasks/CordovaBuild/icon.png?raw=true)
+
+<br />**Build: Cordova Build**</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -78,7 +82,11 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
       </td>
    </tr>
    <tr>
-    <td>![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
+    <td>
+
+![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/copy-and-publish-build-artifacts.png)
+
+<br />**Utility: Copy and Publish Build Artifacts**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -135,7 +143,7 @@ You are now all set! You can configure either of these build definitions further
 Using gulp in a CI environment can allow you to easily compile / transpile scripts (TypeScript, LESS, SASS) and even run tests thanks to the "gulp" and "npm install" build tasks.
 
 <a name="gulptypescript"></a>
-###TypeScript example
+### TypeScript example
 To add TypeScript compilation into your build pipeline using gulp, follow these steps:
 
 1. Take the sample files (gulpfile.js, package.json, karma.config.js) from the "samples/gulp" folder [in this GitHub repo](http://go.microsoft.com/fwlink/?LinkID=691189) and place them in the root of your project Cordova project
@@ -146,7 +154,11 @@ To add TypeScript compilation into your build pipeline using gulp, follow these 
 
 <table>
    <tr>
-      <td>![Package: npm](../../../tasks/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
+      <td>
+
+![Package: npm](../../../tasks/package/_img/npm.png)
+
+<br />**Package: npm** (or the older npm install)</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -158,7 +170,11 @@ To add TypeScript compilation into your build pipeline using gulp, follow these 
       </td>
    </tr>
    <tr>
-    <td>![Build: gulp](../../../tasks/build/_img/gulp.png)<br />**Build: gulp**</td>
+    <td>
+
+![Build: gulp](../../../tasks/build/_img/gulp.png)
+
+<br />**Build: gulp**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -178,13 +194,21 @@ Next, we will configure the pipeline to publish your test results to Azure Pipel
 
 <table>
    <tr>
-    <td>![Build: gulp](../../../tasks/build/_img/gulp.png)<br />**Build: gulp**</td>
+    <td>
+
+![Build: gulp](../../../tasks/build/_img/gulp.png)
+
+<br />**Build: gulp**</td>
 	  <td>
       <p>Update the **gulp Task(s)** option in the gulp task above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>
    </tr>
    <tr>
-      <td>![Test: Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishTestResults/icon.png?raw=true)<br />**Test: Publish Test Results**</td>
+      <td>
+
+![Test: Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishTestResults/icon.png?raw=true)
+
+<br />**Test: Publish Test Results**</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -201,7 +225,7 @@ Next, we will configure the pipeline to publish your test results to Azure Pipel
 That's it!
 
 <a name="agentsetup"></a>
-##In Depth: Private build agent setup
+## In Depth: Private build agent setup
 As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Microsoft-hosted agent pool in Azure Pipelines. This allows you to build without setting up a Windows build agent on-premises. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for Azure Pipelines agents targeted at building iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Microsoft-hosted agent pool in Azure Pipelines or MacinCloud's special Azure Pipelines plan.
 
 If you are not using the Azure Pipelines Microsoft-hosted agent pool or MacinCloud's streamlined [Azure Pipelines plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/azure-pipelines-agent) on Windows or macOS and integrate with either TFS or Azure Pipelines. The build machine simply needs to have HTTP access to the server with your TFS collection or Azure Pipelines.
@@ -217,7 +241,7 @@ Next you will need to install the [build agent](https://github.com/Microsoft/azu
 
 >**Troubleshooting Tip:** See [Internet Access & Proxy Setup" in the general Tools for Apache Cordova CI tutorial](http://go.microsoft.com/fwlink/?LinkID=691832) if your build servers have limited Internet connectivity or require routing traffic through a proxy.
 
-###Environment variables
+### Environment variables
 You should set the following environment variables if they have not already been configured on each server you have configured a build agent.
 
 <table>
@@ -240,7 +264,7 @@ You should set the following environment variables if they have not already been
       <td><strong>JAVA_HOME</strong></td>
       <td>Android</td>
       <td>Location of Java</td>
-      <td>C:\Program Files (x86)\Java\jdk1.7.0\_55</td>
+      <td>C:\Program Files (x86)\Java\jdk1.7.0_55</td>
     </tr>
     <tr>
       <td><strong>ANT_HOME</strong></td>
@@ -252,7 +276,7 @@ You should set the following environment variables if they have not already been
       <td><strong>GRADLE_USER_HOME</strong></td>
       <td>Optional</td>
       <td>Overrides the default location Gradle build system dependencies should be installed when building Android using Cordova 5.0.0+</td>
-      <td>If not specified, uses %USERPROFILE%\.gradle on Windows or ~/.gradle on macOS or Linux</td>
+      <td>If not specified, uses %USERPROFILE%.gradle on Windows or ~/.gradle on macOS or Linux</td>
     </tr>
     <tr>
       <td><strong>CORDOVA_CACHE</strong></td>

@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18
@@ -56,7 +56,7 @@ Follow these instructions to set up a pipeline for a sample Node app.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Java sample repository.
+1. When the list of repositories appears, select your Node.js sample repository.
 
 1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 
@@ -146,7 +146,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 
 ::: moniker range="< azure-devops"
 
-If you need a version of Node.js/npm that is not already installed on the Microsoft-hosted agent:
+If you need a version of Node.js/npm that is not already installed on the agent:
 
 1. In the pipeline, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
 

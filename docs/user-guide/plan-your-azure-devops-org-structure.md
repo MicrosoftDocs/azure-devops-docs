@@ -47,7 +47,6 @@ Each organization gets its own *free tier* of services (up to five users for eac
 * [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
-* Load testing (20,000 VUMs per month)
 * Unlimited Stakeholders
   [!INCLUDE [free-tier](../_shared/free-tier.md)]
 
@@ -76,9 +75,9 @@ A project in Azure DevOps contains the following set of features:
 * Repos for version control and management of source code and artifacts
 * Continuous test integration throughout the project life cycle Each organization contains one or more projects
 
-In the following image, the Contoso company has three projects within their Contoso-Manufacturing organization.
+In the following image, the Contoso company has four projects within their Contoso-Manufacturing organization.
 
-![Image of an organization with three projects](_shared/contoso-organization-with-projects.png)
+![Image of an organization with four projects](_shared/contoso-organization-with-projects.png)
 
 ## How many projects do you need?
 

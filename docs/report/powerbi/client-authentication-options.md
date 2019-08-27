@@ -1,7 +1,7 @@
 ---
 title: Client authentication options
 titleSuffix: Azure DevOps   
-description: Enter or change authentication credentials when you connect to the Analytics Service from Power BI or Excel
+description: Enter or change authentication credentials when you connect to Analytics from Power BI or Excel
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
@@ -20,13 +20,13 @@ ms.date: 04/05/2019
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to the Analytics Service using the OData feed, choose Azure Active Directory (<strong>Azure AD</strong>) for the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Azure Active Directory (<strong>Azure AD</strong>) for the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-When connecting from Power BI or Excel to the Analytics Service using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
 
 ::: moniker-end
 

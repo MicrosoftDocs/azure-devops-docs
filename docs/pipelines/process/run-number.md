@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 04/29/2019
+ms.author: sdanie
+author: steved0x
+ms.date: 07/08/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,8 +21,7 @@ monikerRange: '>= tfs-2015'
 
 You can customize how your pipeline runs are numbered.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 In YAML, this property is called `name`.
@@ -42,12 +41,10 @@ steps:
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
----
-
+* * *
 ### Example
 
 At the time a run is started:
@@ -85,7 +82,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Hours)` | 21 |
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
-| `$(Rev:.r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:.r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:.rr)** if you want the Rev number to begin with 01, 02, and so on. |
+| `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
 | `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |
@@ -106,6 +103,10 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### How big can a run number be?
+
+Runs may be up to 255 characters.
 
 ### In what time zone are the build number time values expressed?
 

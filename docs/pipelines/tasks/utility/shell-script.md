@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to run a shell script using bash.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,7 +30,9 @@ Use this task in a build or release pipeline to run a shell script using bash.
 sh
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 ```YAML
 - task: ShellScript@2
   inputs:
@@ -76,7 +80,12 @@ Working directory in which you want to run the script.  If you leave it empty it
 Select if you want this task to fail if any errors are written to the StandardError stream.
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
@@ -102,11 +111,15 @@ On the [Build tab](../../index.md) of a build pipeline, add this task:
 
 <table>
 <tr>
-<td>![](_img/shell-script.png)<br/>**Utility: Shell Script**</td>
+<td>
+
+![](_img/shell-script.png)
+
+<br/>**Utility: Shell Script**</td>
 <td>
 <p>Run test.bat.</p>
 <ul>
-<li>Script Path: ```test.sh```</li>
+<li>Script Path: <code>test.sh</code></li>
 </ul>
 </td>
 </tr>
@@ -135,7 +148,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

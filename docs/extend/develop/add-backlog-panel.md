@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/22/2016
 ---
 
@@ -76,7 +76,7 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item                                        |                   
+| title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
 | registeredObjectId | Id of the object registered for the panel                                             |    

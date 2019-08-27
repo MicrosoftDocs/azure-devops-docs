@@ -562,6 +562,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Manage a <a href="../boards/plans/portfolio-management.md" data-raw-source="[portfolio of backlogs](../boards/plans/portfolio-management.md)">portfolio of backlogs</a> and gain insight into each team&#39;s progress as well as the progress of all programs.</p>
 
 ![Portfolio management](_img/features/alm-feature-portfolio-management.png)
+
 <br/>
 
 
@@ -1222,13 +1223,15 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Azure Test Plans and exploratory testing](../test/index.md).</p>
-![Exploratory testing](_img/features/features-exploratory-testing.png)  
+<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.md)">Azure Test Plans and exploratory testing</a>.</p>
+
+![Exploratory testing](_img/features/features-exploratory-testing.png)
+
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Azure Test Plans, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
@@ -1906,7 +1909,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Comprehensive dashboard </b></p>
 <p>Manage all your apps, users, and devices from a single dashboard. Monitor crashes and feedback as well. As an admin, you&#39;ll have full control over which user can see and install which app. </p>
 
-![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)  
+![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)
+
 <br/>
 
 
@@ -2633,7 +2637,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](/../../release-notes.md)
+- [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 
 <br/>

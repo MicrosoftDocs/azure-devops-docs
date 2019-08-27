@@ -1,6 +1,6 @@
 ---
-title: Grant permissions for managing extensions in Visual Studio Team Foundation Server (TFS)
-description: Grant users or groups permission to manage extensions for Team Foundation Server
+title: Manage extension permissions - Azure DevOps
+description: Grant users or groups permission for managing extensions for Azure DevOps
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,35 +8,67 @@ ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 9/27/2017
+ms.date: 07/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Grant permissions to manage extensions
+# Manage extension permissions
 
 [!INCLUDE [version-vsts-tfs-2015-on](../../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 ::: moniker range="azure-devops"
 
-## Grant management permissions 
-
-To grant permissions to manage extensions (install, disable/enable, review and approve extension requests) for an on-prem collection or Azure DevOps Services organization, go to the collection/organization level Extension settings hub:
-
-![Extension settings hub](../_img/manage-permissions/extensions-settings.png)
-
-Select **Security** in the upper right of the Extension Security page:
-
-![Extension security button](../_img/manage-permissions/extensions-security-button.png)
-
-Add users or update permission settings:
-
-![Extension security](../_img/manage-permissions/extensions-security.png)
+In this article, learn how to grant permissions to users or groups for managing extensions. Extension management tasks include installing, disabling, enabling, reviewing, and approving extensions.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013 < azure-devops"
+::: moniker range=">=tfs-2015 < azure-devops"
 
-## Grant publish and update permissions on TFS
+In this article, learn how to grant permissions for publishing or updating extensions for users or groups.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Extensions**.
+
+    ![Extension settings hub](../_img/manage-permissions/extensions-settings.png)
+
+4. Select **Security** in the upper right of the Extension Security page:
+
+    ![Extension security button](../_img/manage-permissions/extensions-security-button.png)
+
+5. Add users or update permission settings:
+
+    ![Extension security](../_img/manage-permissions/extensions-security.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open Admin settings](../../_shared/_img/settings/open-admin-settings-server.png)
+
+3. Select **Extensions**, and then select **Security**.
+
+    ![Extension settings hub](../_shared/_img/select-extensions-and-security.png)
+
+4. Add users or update permission settings:
+
+    ![Extension security](../_img/manage-permissions/extensions-security.png)
+
+::: moniker-end
+
+::: moniker range=">=tfs-2015 < azure-devops-2019"
 
 To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
@@ -69,7 +101,7 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
     tfssecurity /g+ "[TEAM FOUNDATION]\TFS Extension Publishers" n:User /server:ServerURL
     ```
 
-You can add users later to "TFS Extension Publishers". This is a server-level permission, 
-so updating and deleting an extension will affect all the project collections that use the extension.
+You can add users later to "TFS Extension Publishers". This permission is a server-level permission, 
+so updating and deleting an extension affects all the project collections that use the extension.
 
 ::: moniker-end

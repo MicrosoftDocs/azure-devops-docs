@@ -20,13 +20,13 @@ For a full list of tools available on our images, visit our Image Generation rep
 
 YAML-based multi-stage pipelines can now be managed from the command line by using the `az pipelines` command. For example, you can setup and manage pipelines interactively from the CLI, or automate the entire setup using a script. 
 
-For more details about the command see the documentation [here](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest).
+For more details about the command see the documentation [here](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest).
 
 ### Manage build tags from a command line
 
 Managing build tags when you are creating builds from the command line is now easier. With the `az pipelines build tag` commands, you can now kick off a build and tag the build at the same time. The Azure Pipeline build tag command allows you to add, delete or list build tags. 
 
-For more details on the commands and its syntax, see the documentation [here](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines/build/tag?view=azure-cli-latest).
+For more details on the commands and its syntax, see the documentation [here](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines/build/tag?view=azure-cli-latest).
 
 ### Share test run results via URL 
 

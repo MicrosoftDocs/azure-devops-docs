@@ -6,8 +6,8 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 02/27/2018
 monikerRange: '>= tfs-2017'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
-description: How to guidance for creating a query for linked work items using the Analytics service for Azure DevOps   
+description: How to guidance for creating a query for linked work items using Analytics for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual

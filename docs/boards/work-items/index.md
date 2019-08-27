@@ -71,7 +71,7 @@ If you're just getting started, read [Track work with user stories, issues, bugs
 
 - [Choose a process](guidance/choose-process.md)  
 - [Agile process guidance](guidance/agile-process.md)  
-- [Basic process guidance](../get-started/track-issues-tasks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)  
+- [Basic process guidance](../get-started/plan-track-work.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)  
 - [CMMI process guidance](guidance/cmmi-process.md)  
 - [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 

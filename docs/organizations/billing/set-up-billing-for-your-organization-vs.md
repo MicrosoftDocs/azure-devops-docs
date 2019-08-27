@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019 
+ms.date: 06/27/2019 
 monikerRange: 'azure-devops'
 ---
 
@@ -24,14 +24,14 @@ In this quickstart, learn to set up billing for your organization in advance of 
 
 If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
 Ensure the following is true for the user who's setting up billing for the first time:
 
 * User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
-* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
+* User has [an Azure subscription that you can use to set up billing](add-backup-billing-managers.md)
 
 ## Set up billing
 

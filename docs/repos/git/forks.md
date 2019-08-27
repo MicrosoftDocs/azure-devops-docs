@@ -60,11 +60,11 @@ This will isolate their changes from yours until you've had a chance to vet the 
 <a name="create-fork" />
 ### Create the fork
 
-0. Navigate to the repository to fork, and choose **Fork**.
+1. Navigate to the repository to fork, and choose **Fork**.
 
-1. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
+2. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
 
-2. Choose **Fork** to create the fork.
+3. Choose **Fork** to create the fork.
 
 ![Create new fork](_img/forks/create-new-fork.png)
 

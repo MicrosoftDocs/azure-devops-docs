@@ -23,16 +23,24 @@ Use this task in a build or release pipeline to provide npm credentials to an .n
 > If you are using the npm task, you do not need to use the npm authenticate task. Instead use the feed configuration parameters that are available in the npm task.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NpmAuthenticateV0.md)]
+
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>.npmrc file to authenticate</td><td>(Optional) Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder e.g. "/packages/mypackage.npmrc".</td></tr>
-<tr><td>Credentials for registries outside this account/collection</td><td>(Optional) Credentials to use for external registries located in the project's .npmrc. For registries in this account/collection, leave this blank; the build’s credentials are used automatically.</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+<tr><td>.npmrc file to authenticate</td><td>(Optional) Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder e.g. &quot;/packages/mypackage.npmrc&quot;.</td></tr>
+<tr><td>Credentials for registries outside this account/collection</td><td>(Optional) Credentials to use for external registries located in the project&#39;s .npmrc. For registries in this account/collection, leave this blank; the build’s credentials are used automatically.</td></tr>
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Open source

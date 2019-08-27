@@ -30,7 +30,7 @@ You need to set up billing when you need more than the *free tier* of resources 
 
 You also need to [set up billing](set-up-billing-for-your-organization-vs.md) to buy other features (for your users) that are offered by Microsoft or by other companies.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -93,9 +93,9 @@ A: Yes, you can. You need to be an owner or contributor for an Azure subscriptio
 
 A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
 
-Another approach is to try to visit the [Azure Enterprise Portal](http://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization owner role. Only organization owners can set up new Azure billing in an Enterprise Agreement. 
+Another approach is to try to visit the [Azure Enterprise Portal](http://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization Owner role. Only organization Owners can set up new Azure billing in an Enterprise Agreement. 
 
-If you can't access the Azure Enterprise Portal, inquire within your organization to find out who your Enterprise Admin is, and ask that person to add you as an organization owner within the Azure Enterprise Portal. If you can't find this person, you can [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
+If you can't access the Azure Enterprise Portal, inquire within your organization to find out who your Enterprise Admin is, and ask that person to add you as an organization Owner within the Azure Enterprise Portal. If you can't find this person, you can [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
 
 ### Q: Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy Azure DevOps?
 
@@ -143,53 +143,6 @@ A: This happens if someone already [set up billing](set-up-billing-for-your-orga
 ### Q: Can I use the same Azure subscription for billing across multiple organizations?
 
 A: Yes, you can use the same Azure subscription for billing across multiple organizations. But you can't link a single organization to multiple Azure subscriptions.
-
-<a name="find-owner"></a>
-
-### Q: How do I find a project collection administrator?
-
-A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Select **Security** > **Project Collection Administrators** >  **Members**.
-
-   ![Security page, project collection administrators members](_img/security-members-project-collection-administrators.png)
-
-
-### Q: How do I find the organization owner?
-
-A: You can find the current owner in your organization settings.
-
-::: moniker range=">= azure-devops-2019"
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Go to your organization settings.
-
-    <img alt="Go to organization settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
-
-2. Find the current organization owner.
-
-   ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
-
-::: moniker-end
 
 ### Q: Can I buy Azure DevOps from my software reseller?
 

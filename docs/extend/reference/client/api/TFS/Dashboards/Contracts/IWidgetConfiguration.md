@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts IWidgetConfiguration API | Extensions for 
 description: Documentation for the IWidgetConfiguration contract.
 ms.assetid: 0BD0E5D1-27AD-45E1-AC74-A412466FAE62
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -20,7 +20,7 @@ Module path: `TFS/Dashboards/WidgetContracts`
 
 ### Members
 
-* `load`: Function. This is the method that is called by the widget framework to load the widget configuration. The first parameter for this method is of type [WidgetSettings](./WidgetSettings.md). This will have the current saved settings of the widget.
+* `load`: Function. This is the method that is called by the widget framework to load the widget configuration. The first parameter for this method is of type [WidgetSettings](./WidgetSettings.md). This has the current saved settings of the widget.
 The second parameter for this method is of type [IWidgetConfigurationContext](./IWidgetConfigurationContext.md) which can be used to communicate with the widget framework. 
 This method should return an object of type [WidgetStatus](./WidgetStatus.md) wrapped in a Promise. Widgets can use the [WidgetStatusHelper](./WidgetStatusHelper.md) to return either Success or Failure.
 

@@ -3,10 +3,10 @@ title: Team Foundation Service Updates for TechEd 2013
 description: VSTS release notes for June 3 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 9f20ce95-1478-47e5-94e7-37d942316c28
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

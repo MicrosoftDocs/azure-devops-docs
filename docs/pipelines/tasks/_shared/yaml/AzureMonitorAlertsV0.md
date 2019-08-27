@@ -1,5 +1,5 @@
 ```YAML
-# Azure Monitor Alerts
+# Azure Monitor alerts
 # Configure alerts on available metrics for an Azure resource
 - task: AzureMonitorAlerts@0
   inputs:

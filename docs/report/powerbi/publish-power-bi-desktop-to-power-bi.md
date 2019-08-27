@@ -1,7 +1,7 @@
 ---
 title: Publish a Power BI Desktop file to PowerBI.com  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics service for Azure DevOps 
+description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -70,7 +70,7 @@ At this point, the data will update on your scheduled basis using the credential
 
 ## Related articles
 
-- [Analytics service](index.md)  
+- [Analytics](index.md)  
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

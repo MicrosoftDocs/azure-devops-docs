@@ -21,10 +21,10 @@ ms.date: 12/17/2018
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-In this quickstart, you learn how to do the following tasks:  
+In this quickstart, learn how to do the following tasks:  
 
 > [!div class="checklist"]
-> * Open Wiki
+> * Open wiki
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -79,6 +79,14 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 ## Edit and delete wiki pages
 
 To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
+
+For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**
+
+> [!div class="mx-imgBorder"]  
+> ![Create wiki and first page](_img/wiki/edit-in-repos.png)
+
+> [!NOTE]  
+> If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and continue editing.
 
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
 

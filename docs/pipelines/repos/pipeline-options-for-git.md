@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 05/15/2019
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -82,10 +82,10 @@ This is the branch that you want to be the default when you manually queue this 
 Select one of the following options:
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -178,6 +178,9 @@ By default, your source code will be checked out into a directory called `s`. Fo
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
+> [!NOTE]
+> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](../yaml-schema.md#checkout) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -193,9 +196,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
+  - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
 ::: moniker-end
 
@@ -232,12 +235,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -260,6 +263,9 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 ::: moniker range=">= tfs-2017"
 
 * **Azure Pipelines, TFS 2017.3 and newer:** Select the check box to enable this option.
+
+> [!NOTE]
+> This is not enabled by default in *azure-pipelines.yml* and requires use of the **checkout** task.
 
 ::: moniker-end
 
@@ -317,7 +323,9 @@ git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL>
 
 ## Don't sync sources (TFS 2017 and newer only)
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
+Non-deployment jobs automatically fetch sources.
+Use this option if you want to skip that behavior.
+This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 

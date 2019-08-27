@@ -17,8 +17,9 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
+An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
 
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
 
 ## Resolve size warnings
 
@@ -34,7 +35,7 @@ Views that pull a large amount of data, might take a long time to refresh and lo
 
 ### **Error: The field 'FieldName' already exists**
 
-This error indicates that one of your project's [custom fields](../../organizations/settings/work/customize-process-field.md) is a duplicate of one of the [Analytics Service fields](../extend-analytics/data-model-analytics-service.md). 
+This error indicates that one of your project's [custom fields](../../organizations/settings/work/customize-process-field.md) is a duplicate of an [Analytics field](../extend-analytics/data-model-analytics-service.md). 
 
 To resolve this error, rename your custom field.
 
@@ -69,6 +70,6 @@ To resolve this collision, remove the duplicate column from the view's fields. Y
 ## Related articles
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md).  
-- [Data available from the Analytics Service](data-available-in-analytics.md)
-- [Grant permissions to access the Analytics service](./analytics-security.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)

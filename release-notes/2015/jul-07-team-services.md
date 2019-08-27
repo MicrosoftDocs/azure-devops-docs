@@ -3,10 +3,10 @@ title: Card colors and personal access tokens – Jul 7
 description: VSTS release notes for July 7 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 66780d76-a567-492d-b0ef-eccf20b89633
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -36,7 +36,7 @@ We also made a small change this sprint to allow you to add new backlog items di
 
 ![Adding work directly to a sprint](_img/7_7_04.png)
 
-That’s it for our sprint 84 deployment. If you have questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see use do next, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for our sprint 84 deployment. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see use do next, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2013'
 **Azure Pipelines | TFS 2018 | TFS 2017 | XAML builds**
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013.
@@ -37,33 +39,53 @@ Here are the steps to migrate from XAML builds to newer builds:
 
 1. If you're using a private TFS server, [set up agents](../agents/v2-windows.md) to run your builds.
 
-1. To get familiar with the new build system, create a ["Hello world" build pipeline](../create-first-pipeline.md).
+2. To get familiar with the new build system, create a ["Hello world" build pipeline](../create-first-pipeline.md).
 
-1. Create a new build pipeline intended to replace one of your XAML build pipelines.
+3. Create a new build pipeline intended to replace one of your XAML build pipelines.
 
- 1. Create a new build pipeline.
- 
- 1. Port your XAML settings.
+   1. Create a new build pipeline.
 
-1. On the [General tab](#general-tab), disable the XAML build pipeline.
+   1. Port your XAML settings.
 
-1. Repeat the previous two steps for each of your XAML build pipelines.
+4. On the [General tab](#general-tab), disable the XAML build pipeline.
 
-1. Take advantage of new build features and learn more about the kinds of apps you can build.
+5. Repeat the previous two steps for each of your XAML build pipelines.
 
-1. Learn how to customize, and if necessary extend your system.
+6. Take advantage of new build features and learn more about the kinds of apps you can build.
 
-1. When you no longer need the history and artifacts from your XAML builds, delete the XAML builds, and then the XAML build pipelines.
+7. Learn how to customize, and if necessary extend your system.
 
- > [!WARNING]
- > After you delete the XAML builds and pipelines, you cannot get them back.
+8. When you no longer need the history and artifacts from your XAML builds, delete the XAML builds, and then the XAML build pipelines.
+
+   > [!WARNING]
+   > After you delete the XAML builds and pipelines, you cannot get them back.
 
 ## Create new build pipelines
 
 If you're building a standard .NET app, you're probably using one of the out-of-the-box build templates such as TfvcTemplate.12.xaml or GitTemplate.12.xaml. In this case, it will probably just take you a few clicks to create build pipelines in the new build system.
 
 <ol>
-    [!INCLUDE [include](../_shared/begin-create-build-definition.md)]
+
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-open-team-project">
+<img src="~/pipelines/_shared/_img/browse-to-team-project.png" alt="Browse to project">
+
+<p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
+<ul>
+<li>On-premises TFS: <code>http://{your_server}:8080/tfs/DefaultCollection/{your_project}</code> </li>
+<li>Azure Pipelines: <code>https://dev.azure.com/{your_organization}/{your_project}</code></li>
+</ul>
+<p><a href="/azure/devops/server/admin/websitesettings" data-raw-source="[The TFS URL doesn&#39;t work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)">The TFS URL doesn&#39;t work for me. How can I get the correct URL?</a></p>
+</div>
+</li>
+
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
+<div class="collapse" id="expando-begin-create-build-definition-create">
+<img src="~/pipelines/_shared/_img/create-new-build-definition.png" alt="Build tab">
+<p>
+</div>
+</li>
 
 <li>Select a template to add commonly used tasks to your build pipeline.</li>
 

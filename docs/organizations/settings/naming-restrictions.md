@@ -3,7 +3,7 @@ title: Restrictions and conventions for naming
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Requirements for labeling objects like organization, project, tags, templates, and more, by length, uniqueness, and special characters 
-ms.technology: devops-collab
+ms.technology: devops-settings
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
@@ -1015,7 +1015,7 @@ Must contain sufficient space for the build (insufficient space leads to failed 
 <td>
 Drop location directory</td>
 <td>
-Must be a UNC path (for example, <code>\\server\share</code>).
+Must be a UNC path (for example, <code>\server\share</code>).
 </td>
 </tr>
 <tr>
@@ -1303,7 +1303,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
 <td>
 <ul>
 <li>
-<p>Can't end with a space ( ) or period (.)</p>
+<p>Can&#39;t end with a space ( ) or period (.)</p>
 </li>
 <li>
 <p>Must not contain the following printable characters: &#92; &#47; &quot;  : &lt; &gt;  | &#42; ? @ ; </p>
@@ -1381,7 +1381,7 @@ Workspace names must conform to the following restrictions.
 <td>
 <ul>
 <li>
-<p>Can't end with a space ( )</p>
+<p>Can&#39;t end with a space ( )</p>
 </li>
 <li><p>Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ; </p>
 </li>

@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
 > [!div class="mx-imgBorder"]  
-> ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
+> ![Changes made to the backlog levels](_img/process/portfolio-backlogs-modified.png) 
 
 Your project defines two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
@@ -32,6 +32,9 @@ Portfolio backlogs are useful for organizing your backlog under various business
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
+> [!NOTE]   
+> You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog.   
+
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
@@ -40,6 +43,7 @@ To learn more about what you can customize, see [About process customization and
 
 
 <a id="portfolio-backlogs">  </a>
+
 ## Add or edit portfolio backlogs 
 
 Each process defines two default portfolio backlogs, Epics and Features; each is associated with their corresponding work item types, epics and features. 
@@ -66,6 +70,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 
 <a id="edit-portfolio-backlog">  </a>
+
 ### Edit, rename, or delete a portfolio backlog 
 
 Open the context menu of a portfolio backlog that you've added to edit, rename, or delete it. From the Backlog levels page, open the Add portfolio backlog dialog. 
@@ -85,7 +90,9 @@ Deleting a backlog level removes the backlog and board associated with the level
 
 
 <a id="edit-product-backlog">  </a>
+
 ## Edit or rename the requirement backlog 
+
 The Requirement backlog, also referred to as the product backlog, defines the WITs that appear on the product backlog and Kanban board. The default WIT for Agile is User Story; for Scrum, Product Backlog Item; and for CMMI, Requirement. 
 
 You can rename the backlog, change the color, add WITs, and change the default WIT. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
@@ -99,7 +106,9 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
 
 
 <a id="edit-iteration-backlog">  </a>
+
 ## Edit the iteration backlog 
+
 The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and task boards. The default WIT for all processes is Task.  
 
 For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 

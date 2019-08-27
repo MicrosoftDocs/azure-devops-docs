@@ -140,5 +140,5 @@ The new repository should be created in a project you don't mind making public.
 ## Next steps
 
 > [!div class="nextstepaction"]
-- [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
+> - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
  

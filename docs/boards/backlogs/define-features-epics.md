@@ -70,7 +70,34 @@ you can <a href="../../organizations/settings/select-backlog-navigation-levels.m
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+
+    To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](../sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+
+	> [!TIP]    
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+
+1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint//select-product-backlog-agile-s155.png) 
+
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-column-options-s155.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -194,7 +221,7 @@ Provide a relative estimate of the amount of work required to complete a Feature
 </tr>
 <tr>
 <td>
-[](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md" data-raw-source="[](../queries/query-numeric.md)"></a>
 <a href="../queries/query-numeric.md">Business Value</a>
 </td>
 <td>
