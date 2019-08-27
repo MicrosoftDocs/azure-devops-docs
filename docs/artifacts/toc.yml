@@ -36,6 +36,8 @@
     href: tutorials/protect-oss-packages-with-upstream-sources.md
   - name: Communicate quality with release views
     href: feeds/views.md
+  - name: Migrate packages to Azure Artifacts
+    href: tutorials/migrate-packages.md
   - name: Move your packages to the cloud
     href: nuget/move-from-fileshares.md
 - name: Publish Artifacts with Azure Pipelines

@@ -5,10 +5,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.manager: jillfra
+ms.manager: barbkess
 ms.author: kraigb
 author: kraigb
-ms.date: 04/26/2019
+ms.date: 08/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -16,11 +16,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../_shared/version-team-services.md)]
 
-In this article, you learn how to set up an Azure Build pipeline to deploy a Python web app to Azure App Service on Linux. You begin with your locally runnable app code in a GitHub repository. You then provision your target App Service through the Azure portal. Finally, you create the Azure DevOps pipeline that automatically builds the code and deploys it to the App Service whenever there's a commit to the repository.
+In this article, you use Azure Pipelines to deploy a Python web app to Azure App Service on Linux. You begin with your locally runnable app code in a GitHub repository. You then provision your target App Service through the Azure portal. Finally, you create the Azure DevOps pipeline that automatically builds the code and deploys it to the App Service whenever there's a commit to the repository.
 
 ## Create a repository for your app code
 
-If you already have a Python web app in hand, make sure it's committed to a GitHub repository. If your app uses Django and a SQLite database, however, there are a few issues that prevent the app from running properly. See the specific [considerations for Django](#considerations-for-django) section given later in this article. If your Django app uses a separate database, however, you can use it with this walkthrough.
+If you already have a Python web app in hand, make sure it's committed to a GitHub repository. If your app uses Django and a SQLite database, however, there are a few issues that prevent the app from running properly. See the specific [considerations for Django](#considerations-for-django) section given later in this article. If your Django app uses a separate database, you can use it with this walkthrough.
 
 If you need an app to work with, **fork** the repository at [https://github.com/Microsoft/python-sample-vscode-flask-tutorial/](https://github.com/Microsoft/python-sample-vscode-flask-tutorial/), which comes from the tutorial, [Using Flask in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-flask).
 
@@ -45,6 +45,8 @@ set FLASK_APP=hello_app.webapp
 python -m flask run
 ```
 
+Close the browser and stop the Flask server (**Ctrl**+**C**) when you're finished.
+
 ## Provision the target Azure App Service
 
 The quickest means to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use the `az webapp up` command that both provisioning the App Service and performs an initial deployment of your app.
@@ -66,19 +68,31 @@ The quickest means to create an App Service instance is to use the Azure command
     > [!Tip]
     > The Cloud Shell is backed by an Azure Storage account in a resource group called "cloud-shell-storage-centralus" (or a variant appropriate to your location). That storage account contains an image of the Cloud Shell's file system, which stores the cloned repository. 
 
-1. In the Cloud Shell, use the [`az webapp up`](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest#az-webapp-up) command to create an App Service and initially deploy your app (`--sku B1` specifies the lowest price compute tier):
+1. In the Cloud Shell, change directories into the cloned repository folder:
 
     ```bash
-    # Change the value of the -n argument to a specific name for your app service.
-    # Names must be unique across azure, as the URL becomes <name>.azurewebsites.net.
-
-    az webapp up -n msdocs-flaskpipelines --sku B1 --launch-browser
+    # Change directory into the Flask app folder, or else the az webapp up command won't
+    # realize that you have a Python app.
+    cd python-sample-vscode-flask-tutorial
     ```
 
-    > [!Tip]
-    > Although the Cloud Shell interface doesn't support keystrokes like Ctrl+v to paste, you can right-click and select **Paste** from the popup menu.
+1. In the Cloud Shell, use the [`az webapp up`](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest#az-webapp-up) command to create an App Service and initially deploy your app (`--sku B1` specifies the lower price compute tier):
 
-1. After the command completes, a browser should automatically open (by virtue of the `--launch-browser` argument) to the URL `<app-name>.azurewebsites.net` where you can see the running app.
+    ```bash
+    # Be sure you're in the Flask app's folder, or a folder with Python code.    
+    # Change the value of the -n argument to a specific name for your app service.
+    # Names must be unique across Azure, as the URL becomes <name>.azurewebsites.net.
+
+    az webapp up -n yourname-flaskpipelines --sku B1
+    ```
+
+    When the command completes, it shows JSON output in the Cloud Shell.
+
+    > [!Tip]
+    > Although the Cloud Shell interface doesn't support keystrokes like **Ctrl**+**V** to paste, you can right-click and select **Paste** from the popup menu.
+
+    > [!Tip]
+    > If you encounter a "Permission denied" error with a *.zip* file, you may have tried to run the command in a folder that doesn't contain a Python app. In that case, the `az webapp up` command tries to create a Windows app service plan with which the command fails.
 
 1. If your app requires a custom startup command, like the python-sample-vscode-flask-tutorial app, you must set that property using the [`az webapp config set`](https://docs.microsoft.com/cli/azure/webapp/config?view=azure-cli-latest#az-webapp-config-set). For example, the python-sample-vscode-flask-tutorial app contains a file named *startup.txt* that contains its specific startup command, in which case the property is set to that filename.
 
@@ -89,8 +103,12 @@ The quickest means to create an App Service instance is to use the Azure command
         ```bash
         # Customize with your resource group, app name, and startup command
 
-        az webapp config set -g yourname_rg_Linux_centralus -n msdocs-flaskpipelines2 --startup-file startup.txt
+        az webapp config set -g yourname_rg_Linux_centralus -n yourname-flaskpipelines --startup-file startup.txt
         ```
+
+        Again, when the command completes, it shows JSON output in the Cloud Shell.
+
+1. To see the running app, open a browser and go to `<app-name>.azurewebsites.net` replacing `<app_name>` with the name you specified in the `az webapp up` command. If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
 
 > [!Note]
 > For a detailed description of the specific tasks performed by the `az webapp up` command, see [Provisioning an App Service with discrete commands](#provisioning-an-app-service-with-discrete-commands) at the end of this article.
@@ -187,7 +205,7 @@ In this section you create a simple starter pipeline to examine the general stru
 
 In this section you replace the steps in the starter pipeline with specific steps that ultimately deploy the app code to Azure App Service. All of the steps in the pipeline run on a computer referred to as the *build agent*, which is different from the computer on which your App Service is running. The agent's job is to follow the instructions in the pipeline, and must therefore be configured with any software that those instructions require.
 
-1. On the project dashboard, select **Pipelines** > **Build**, then select **Edit** in the upper right corner:
+1. On the project dashboard, select **Pipelines** > **Builds**, then select **Edit** in the upper right corner:
 
     ![Edit button for a build pipeline](../_img/python/edit-pipeline.png)
 
@@ -199,7 +217,7 @@ In this section you replace the steps in the starter pipeline with specific step
       ConnectedServiceName: '<your-service-connection>'
 
       # Replace this name to match the name of the App Service you created earlier
-      WebAppName: 'msdocs-flaskpipelines'
+      WebAppName: 'yourname-flaskpipelines'
     ```
 
     > [!Tip]
@@ -217,28 +235,7 @@ In this section you replace the steps in the starter pipeline with specific step
 
     The `steps:` element can contain children like `- task:`, which runs a specific task that's defined in Azure DevOps (see the full [Task reference](../tasks/index.md?view=azure-devops)), and `- script:`, which runs an arbitrary set of commands as you see in a moment. The task in the code above is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task; `@0` indicates "preview".
 
-1. At the bottom of the file, add the following [`script`](../scripts/cross-platform-scripting.md?view=azure-devops&tabs=yaml) element (with or without the explanatory comment), which creates a virtual environment on the build agent and installs your dependencies:
-
-    ```yaml
-    # The | symbol is a continuation character, indicating a multi-line script.
-    # A single-line script can immediately follows "- script:" without the |.
-    - script: |
-        # antenv3.6 is the virtual environment name that App Service expects with
-        # Python 3.6; use "antenv" for Python 3.7.
-        python3.6 -m venv antenv3.6
-        source antenv3.6/bin/activate
-        pip3.6 install setuptools
-        pip3.6 install -r requirements.txt
-
-      # The displayName is shows in the pipeline UI when a build runs
-      displayName: 'Install Dependencies'
-    ```
-
-    By default, Azure Pipelines automatically clones your source code repository on the build agent when you run the pipeline. The script above then installs dependencies in a virtual environment in a folder named *.env* alongside that source code. As a result, the source code folder contains everything you need to deploy to Azure App Service.
-
-1. (Optional) If your source code contains tests, you can add one or more `script` elements here to run those tests. You can then use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](python.md#run-tests).
-
-1. Because the last step in the pipeline deploys your app via a *.zip* file (that contains all your app code and the virtual environment), the next step in the pipeline must create that file. To create the file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the bottom of the YAML file:
+1. Because the last step in the pipeline deploys your app via a *.zip* file, the next step in the pipeline must create that file. To create the file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the bottom of the YAML file:
 
     ```yaml
     - task: ArchiveFiles@2
@@ -251,7 +248,7 @@ In this section you replace the steps in the starter pipeline with specific step
         verbose: # (no value); this input is optional
     ```
 
-    Using `$()` in a parameter value is how you reference variable, such as the built-in `Build.SourcesDirectory` variable that contains the location on the build agent where the pipeline cloned the app code and where the previous script created the virtual environment. The `archiveFile` parameter indicates where to place the *.zip* file, in this case using the built-in variable `Build.ArtifactsStagingDirectory`.
+    Using `$()` in a parameter value is how you reference variable, such as the built-in `Build.SourcesDirectory` variable that contains the location on the build agent where the pipeline cloned the app code. The `archiveFile` parameter indicates where to place the *.zip* file, in this case using the built-in variable `Build.ArtifactsStagingDirectory`.
 
     > [!Important]
     > When deploying to Azure App Service, be sure to use `includeRootFolder: false`. Otherwise, the contents of the *.zip* file are contained within a folder named `s` (for "sources"), which is then replicated on the App Service. As a result, the App Service on Linux container fails to find the app code.
@@ -278,13 +275,13 @@ In this section you replace the steps in the starter pipeline with specific step
 
     Note also that because the repository also contains the same startup command in a file named *startup.txt*, we could simply specify that file using `StartupCommand: 'startup.txt'`. 
 
-1. After all the additions, your *azure-pipelines.yaml* file should appear as follows, using again your specific values for the variables at the top in place of `'<your-service-connection>'` and `'msdocs-flaskpipelines'`. You might also have a different `StartupCommand` at the end (or none at all) if you're using your own app code.
+1. After all the additions, your *azure-pipelines.yaml* file should appear as follows, using again your specific values for the variables at the top in place of `'<your-service-connection>'` and `'yourname-flaskpipelines'`. You might also have a different `StartupCommand` at the end (or none at all) if you're using your own app code.
 
     ```yaml
     # This is the completed azure-pipelines.yaml file from previous steps.
     variables:
       ConnectedServiceName: '<your-service-connection>'
-      WebAppName: 'msdocs-flaskpipelines'
+      WebAppName: 'yourname-flaskpipelines'
 
     trigger:
     - master
@@ -333,7 +330,7 @@ In this section you replace the steps in the starter pipeline with specific step
 
 1. You're now ready to try it out! Select **Save** on the upper right of the editor, add a commit message and select **Save** in the popup, and then select **Run** on the pipeline editor. Azure Pipelines then *queues* another build, acquires an available build agent, the has that build agent run the pipeline.
 
-1. Once the build completes (it takes a few minutes, especially the deployment step), you should see green checkmarks next to each of the steps:
+1. Once the build completes (it takes a few minutes, especially the deployment step, durign which time your dependencies in `requirements.txt` should be deployed on App Service automatically), you should see green checkmarks next to each of the steps:
 
     ![Report for a completed build](../_img/python/build-complete.png)
 
@@ -393,6 +390,35 @@ When using Django, you typically want to migrate the data models using `manage.p
     ScriptType: File Path
     ScriptPath: 'post-deployment.sh'
 
+## Run tests on the build agent
+
+As part of your build process, you may want to run tests on your app code. Tests run on the build agent, so it's likely that you also need to first install your dependencies into a virtual environment on the build agent. After the tests have run, you can delete the virtual environment before creating the ZIP file for deployment. The following [`script`](../scripts/cross-platform-scripting.md?view=azure-devops&tabs=yaml) elements, which you would place before the `ArchiveFiles@2` task, illustrate this process:
+
+```yaml
+# The | symbol is a continuation character, indicating a multi-line script.
+# A single-line script can immediately follows "- script:" without the |.
+- script: |
+    python3.6 -m venv .env
+    source .env/bin/activate
+    pip3.6 install setuptools
+    pip3.6 install -r requirements.txt
+
+  # The displayName is shows in the pipeline UI when a build runs
+  displayName: 'Install Dependencies on build agent'
+
+- script: |
+    # Commands to run tests   
+  displayName: 'Run tests'
+
+- script: |
+    echo Deleting .env
+    deactivate
+    rm -rf .env
+  displayName: 'Remove .env before zip'
+```
+
+You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml) to make test results appear in the pipeline results screen. For more information, see [Build Python apps - Run tests](python.md#run-tests).
+
 ## Provisioning an App Service with discrete commands
 
 The `az webapp up` command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If you want more control over the process, however, you can use discrete commands to accomplish the same tasks. For example, you might want to use a specific name for the resource group. You might also want to create an App Service within an existing App Service plan.
@@ -419,7 +445,7 @@ The following steps perform the equivalent of the `az webapp up` command:
 
     Again, you see JSON output in the Cloud Shell when the command completes successfully. The plan created here uses the minimal B1 basic compute tier for the virtual machine (which has an associated cost). You can easily delete the plan when you delete the resource group.
 
-1. Run the following command to create the App Service instance in the plan, replacing `<app-name>` with an app name that's unique across Azure. (Typically, you use a personal or company name along with an app identifier, such as "msdocs-flaskpipelines"; the command fails if the name is already in use.) By assigning the App Service to the same resource group as the plan, it's easy to clean up all the resources together.
+1. Run the following command to create the App Service instance in the plan, replacing `<app-name>` with an app name that's unique across Azure. (Typically, you use a personal or company name along with an app identifier, such as "yourname-flaskpipelines"; the command fails if the name is already in use.) By assigning the App Service to the same resource group as the plan, it's easy to clean up all the resources together.
 
     ```bash
     az webapp create -g flaskpipelines-rg -p flaskpipelines-plan -n <app-name> --runtime "Python|3.6"
@@ -437,7 +463,7 @@ The following steps perform the equivalent of the `az webapp up` command:
     ```bash
     # Customize with your resource group, app name, and startup command
 
-    az webapp config set -g yourname_rg_Linux_centralus -n msdocs-flaskpipelines2 --startup-file startup.txt
+    az webapp config set -g yourname_rg_Linux_centralus -n yourname-flaskpipelines --startup-file startup.txt
     ```
 
 ## Clean up resources
