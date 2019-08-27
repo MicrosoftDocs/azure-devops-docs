@@ -53,7 +53,7 @@ jobs:
   strategy:
     runOnce:
       deploy:
-      displayName: string                 # friendly name to display in the UI
+        displayName: string                 # friendly name to display in the UI
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```

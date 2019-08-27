@@ -33,21 +33,23 @@ Get up and running with NuGet, npm, and Maven in Azure DevOps Services and TFS i
 
 If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your organization.
 
+You can control the amount of packages you retain using Retention Policies in your feed settings. For more information see [automatically deleting old packages](./how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies)
+
 <a name="versions-compatibility"></a>
 
 ## Versions and compatibility
 
 Some Azure Artifacts services are compatible with only specific versions of TFS. Check out the following table to see compatibility.
 
-| Feature                             | Azure DevOps Services     | TFS                         |
-|------------------------------------ |---------------------------|-----------------------------|
-| **NuGet**                           | Yes                       | TFS 2017 and newer          |
-| **npm**                             | Yes                       | TFS 2017 Update 1 and newer |
-| **NuGet.org upstream source**       | Yes                       | TFS 2018 Update 2 and newer |
-| **Maven**                           | Yes                       | TFS 2018 and newer          |
-| **Maven Central upstream source**   | Yes                       | No                          |
-| **Python**                          | Yes                       | No                          |
-| **Universal Packages**              | Yes                       | No                          |
+| Feature                           | Azure DevOps Services  | TFS                                        |
+|-----------------------------------|------------------------|--------------------------------------------|
+| **NuGet**                         | Yes                    | TFS 2017 and newer                         |
+| **npm**                           | Yes                    | TFS 2017 Update 1 and newer                |
+| **NuGet.org upstream source**     | Yes                    | TFS 2018 Update 2 and newer                |
+| **Maven**                         | Yes                    | TFS 2018 and newer                         |
+| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer|
+| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer|
+| **Universal Packages**            | Yes                    | No                                         |
 
 ## Other package types
 

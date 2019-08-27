@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Collect screenshots, video, logs, and attachments in continuous tests
 
-[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 When running tests in a CI/CD pipeline, collecting diagnostic data such as
 screenshots, video, logs, and attachments is often useful to help troubleshoot failures.
@@ -70,7 +70,7 @@ It does not apply if you are using NUnit or XUnit test frameworks.
 If you are not using the **Visual Studio Test** task, you must publish attachments in your test results in a different way:
 
 * If you are running tests in the build (CI) pipeline, you can use the
-  [Copy and Publish Build Artifacts](../pipelines/tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
+  [Copy and Publish Build Artifacts](../tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
   These will appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found
@@ -82,8 +82,8 @@ so the **Publish Test Results** task cannot publish attachments when these forma
 ## See also
 
 * [Continuous testing scenarios and capabilities](index.md)
-* [Set up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md)
-* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-testing-builds.md)
+* [Set up continuous testing for your builds](set-up-continuous-testing-builds.md)
+* [Test with unified agents and jobs](set-up-continuous-testing-builds.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

@@ -74,7 +74,8 @@ To run SQL scripts as part of a pipeline, you will need Azure Powershell scripts
 
 The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
 
-#### [ARM](#tab/ARM/)
+### ARM
+
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param
@@ -83,12 +84,12 @@ param
   [String] [Parameter(Mandatory = $true)] $ResourceGroup,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
-
 $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
 New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $
 ```
 
-#### [Classic](#tab/Classic/)
+### Classic
+
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param
@@ -120,7 +121,8 @@ else
 
 The following Powershell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
 
-#### [ARM](#tab/ARM/)
+### ARM
+
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param
@@ -129,11 +131,11 @@ param
   [String] [Parameter(Mandatory = $true)] $ResourceGroup,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
-
 Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
 ```
 
-#### [Classic](#tab/Classic/)
+### Classic
+
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param
