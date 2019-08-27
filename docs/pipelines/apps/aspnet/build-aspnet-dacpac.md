@@ -7,8 +7,8 @@ description: Define a continuous integration (CI) build for your SQL server data
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -84,13 +84,13 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 <h3 id="new_solution">How do I create an SQL server database solution?</h3>
 
-0. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 
-1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
+2. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
-2. Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
+3. Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
 
-3. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
+4. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]

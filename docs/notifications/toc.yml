@@ -16,6 +16,8 @@
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
+  - name: Set alerts, get notified when changes occur
+    href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
 - name: How-to guides

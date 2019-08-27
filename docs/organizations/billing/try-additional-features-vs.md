@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to try [Azure Test Plans ](https://azure.microsoft.com/en-us/services/devops/test-plans/) for 30 days free.
+In this quickstart, learn how to try [Azure Test Plans ](https://azure.microsoft.com/services/devops/test-plans/) for 30 days free.
 
 ## Prerequisites
 

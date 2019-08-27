@@ -7,8 +7,8 @@ description: Define a continuous integration (CI) build for your Azure Cloud Ser
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -32,13 +32,13 @@ For the instructions in this topic, you need an Azure Cloud Service project in V
 
 <ol>
 
-    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
-    <li>Select the <strong>Azure Cloud Service</strong> template.</li>
+<li>Select the <strong>Azure Cloud Service</strong> template.</li>
 
-    <li>As the repository source, select the project, repository, and branch.</li>
+<li>As the repository source, select the project, repository, and branch.</li>
 
-    <li>Remove the <strong>Azure Cloud Service Deployment task</strong> from the build pipeline, since you will be deploying the cloud service later through a release pipeline.</li>
+<li>Remove the <strong>Azure Cloud Service Deployment task</strong> from the build pipeline, since you will be deploying the cloud service later through a release pipeline.</li>
 </ol>
 
 ### Enable continuous integration (CI)
@@ -61,16 +61,16 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 <h3 id="new_solution">How do I create an Azure Cloud Service solution?</h3>
 
-0. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 
-1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
+2. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
-2. Select the **Cloud** templates section, and then choose the **Azure Cloud Service** template.
+3. Select the **Cloud** templates section, and then choose the **Azure Cloud Service** template.
 
-3. When prompted for the roles in the cloud service, choose the **ASP.NET Web role** to the project.
+4. When prompted for the roles in the cloud service, choose the **ASP.NET Web role** to the project.
 
-4. When prompted for the type of ASP.NET project for the Web role, choose the **MVC** project.
+5. When prompted for the type of ASP.NET project for the Web role, choose the **MVC** project.
 
-5. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
+6. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 <!-- ENDSECTION -->

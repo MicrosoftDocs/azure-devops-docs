@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 08/07/2019
 ---
 
 # What is Analytics?
@@ -60,23 +60,13 @@ If you want to develop your own widget based on Analytics, see [Create an Analyt
 
 [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
-The easiest way to pull Azure DevOps data into Power BI is to use the [Power BI Data Connector](data-connector-connect.md). The Azure DevOps Power BI data connector works with Analytics views. For more information, read [What are Analytics views](./what-are-analytics-views.md).
+To get started with Power BI and Azure DevOps Analytics:
+
+1. Read the [Power BI integration overview](overview.md)
+1. Check out the [Power BI Sample Reports](sample-odata-overview.md). They will get you started quickly on the most popular reports.
  
-::: moniker range="azure-devops"
-
-![Power BI Azure DevOps Connector (Beta)](_img/pbi-getstarted-123.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-![Power BI Azure DevOps Server Connector (Beta)](_img/pbi-getstarted-123-onprem.png)
-
-::: moniker-end
-
-Also, you'll find additional ways to pull Azure DevOps data into Power BI as described in [Power BI integration overview](overview.md).
-
 ## OData
+
 Analytics is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/index.md).
 
 ## Data available in Analytics
@@ -100,5 +90,3 @@ For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) 
 > [!div class="nextstepaction"]
 > [Analytics widgets](../dashboards/analytics-widgets.md) or [What are Analytics views?](what-are-analytics-views.md) 
 
-
-<!--- OPEN QUESTION - Do we need to mention that Azure DevOps Server project collections must choose between Inheritance and On-premises XML process models, which will also affect their access to Analytics. --> 

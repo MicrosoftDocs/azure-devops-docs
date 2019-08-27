@@ -150,6 +150,9 @@ If you don't specify any tag triggers, then by default, tags will not trigger pi
 > [!NOTE]
 > If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
 
+> [!NOTE]
+> Triggering on tags is not currently supported for Bitbucket Cloud repos.
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"

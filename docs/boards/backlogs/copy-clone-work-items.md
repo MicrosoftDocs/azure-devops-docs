@@ -38,10 +38,10 @@ Use this article to learn how to:
 
 ## Copy or clone a work item   
 
-Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. No  history or attachments are copied. 
+Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
-Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No  history or attachments are copied over from the original work item. 
-
+> [!NOTE]
+> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the  Closed By field when the State is New or Active, then that field will get copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
 
 ::: moniker range=">= tfs-2018"
 <!---#### Azure Boards and TFS 2018-->

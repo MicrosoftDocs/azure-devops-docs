@@ -47,7 +47,7 @@ Sign up for an organization, add users, and manage permissions and access.
 
 * [Set your preferences](../settings/set-your-preferences.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage your organization
-    * [Change your organization owner](change-organization-ownership.md)
+    * [Change your organization Owner](change-organization-ownership.md)
     * [Rename your organization](rename-organization.md)
     * [Delete your organization](delete-your-organization.md)
     * [Recover your organization](recover-your-organization.md)

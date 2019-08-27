@@ -118,6 +118,7 @@ The Azure Pipelines app can help you monitor the pipelines activity in your priv
 Post that, you can set up and manage your notifications the same way as you would for a public channel.
 
 >[!NOTE]
+> * You can use the Azure Pipelines app for Slack only with a project hosted on Azure DevOps Services at this time.
 > * The user has to be an admin of the project containing the pipeline to set up the subscriptions
 > * Notifications are currently not supported inside direct messages
 > * Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported
@@ -137,3 +138,8 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > ![Consent to the requested app permissions](_img/troubleshooting/consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsSlackApps@microsoft.com`.
+
+## Related articles
+- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

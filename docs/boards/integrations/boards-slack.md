@@ -19,9 +19,6 @@ ms.date: 07/18/2019
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
 
-> [!NOTE]  
-> You can only link the Azure Boards app for Slack to a project hosted on Azure DevOps Services at this time.  
-
 The Azure Boards app for Slack allows users to set up and manage subscriptions for create, update and other work item events, and get notifications for these 
 events in their Slack channel. Conversations in the Slack channel can be used to create work items. Previews for work item URLs help users to initiate discussions around work.
 
@@ -44,6 +41,7 @@ Read this article to learn how to:
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
+> * You can link the Azure Boards app for Slack only to a project hosted on Azure DevOps Services at this time.  
 > * Notifications are currently not supported inside direct messages.
 
 ## Add the Azure Boards app to your Slack workspace
@@ -143,9 +141,12 @@ access to the discussion that led to the creation of the work item.
 
 ## Previews of work item URLs
 
-To support collaboration around work items discussed within a channel, a preview of work items referenced in the channel is displayed. When a user pastes the work item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
+To support collaboration around work items discussed within a channel, a preview of work items referenced in the channel is displayed. When a user pastes the work 
+item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
 
 ![Pic: URL unfurling](./_img/url-unfurling.png)
+
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
 ## Unlink a project from a channel
 
@@ -194,5 +195,6 @@ If these steps don't resolve your authentication issue, contact us at `AzureDevO
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
+- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

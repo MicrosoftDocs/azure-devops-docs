@@ -51,15 +51,15 @@ and new branches that others have pushed but you don't have and downloads them i
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes. 
 Changes downloaded by `fetch` are not applied until you **Pull** or **Sync** the changes.
 
-0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
+1. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
    ![Synchronization view](_img/pulling/synchronization-menu.png)
 
-1. Choose **Fetch** to update the incoming commits list. (There are two **Fetch** links, one near the top and one in the **Incoming Commits** section. You can use either one as they both do the same thing.)
+2. Choose **Fetch** to update the incoming commits list. (There are two **Fetch** links, one near the top and one in the **Incoming Commits** section. You can use either one as they both do the same thing.)
 
    ![Fetch](_img/pulling/fetch.png)
 
-2. You can review the results of the fetch operation in the incoming commits section.
+3. You can review the results of the fetch operation in the incoming commits section.
 
    ![Incoming commits](_img/pulling/incoming-commits.png)
 
@@ -91,15 +91,15 @@ Git is generally very smart about resolving merge conflicts automatically, but s
 Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** view. **Sync** is a combined operation of pulling remote changes and then pushing local ones,
 synchronizing the commits on the local and remote branch.
 
-0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
+1. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
    ![Synchronization view](_img/pulling/synchronization-menu.png)
 
-1. Choose **Sync**.
+2. Choose **Sync**.
 
    ![Synchronization view](_img/pulling/sync.png)
 
-2. A confirmation message is displayed when the sync operation completes.
+3. A confirmation message is displayed when the sync operation completes.
 
    ![Synch operation complete](_img/pulling/sync-results.png)
 
@@ -130,15 +130,15 @@ Use `pull` to quickly bring your branch up to date with the remote when you aren
 Open the Team Explorer and open the Sync view. Then click the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
 updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.
 
-0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
+1. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
    ![Synchronization view](_img/pulling/synchronization-menu.png)
 
-1. Choose **Pull** to fetch remote changes and merge them into your local branch. (There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one as they both do the same thing.)
+2. Choose **Pull** to fetch remote changes and merge them into your local branch. (There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one as they both do the same thing.)
 
    ![Pull](_img/pulling/pull.png)
 
-2. A confirmation message is displayed when the pull operation completes.
+3. A confirmation message is displayed when the pull operation completes.
 
    ![Pull operation complete](_img/pulling/pull-results.png)
 
@@ -173,21 +173,21 @@ When working in a branch, you may want to incorporate the latest changes from th
 #### [Visual Studio](#tab/visual-studio/)
 To merge the latest changes from the master branch to your branch:
 
-0. Open the **Branches** view in Team Explorer. Ensure your desired target branch is checked out, right-click the target branch, and choose **Merge From**.
+1. Open the **Branches** view in Team Explorer. Ensure your desired target branch is checked out, right-click the target branch, and choose **Merge From**.
 
    ![Merge from](_img/pulling/merge-from-menu.png)
 
-1. Specify the desired **Merge from branch**, which is `master` in this example, and choose **Merge**.)
+2. Specify the desired **Merge from branch**, which is `master` in this example, and choose **Merge**.)
 
    ![Merge from master](_img/pulling/merge-from.png)
 
    If there are any merge conflicts you'll be notified at this stage. [Resolve the merge commits](merging.md?tabs=visual-studio) before proceeding to the next step.
 
-2. Enter a commit message and select **Commit Staged**.
+3. Enter a commit message and select **Commit Staged**.
 
    ![Commit merge from master](_img/pulling/commit-merge-from-master.png)
 
-3. When you are ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the Synchronization view.
+4. When you are ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the Synchronization view.
 
    ![Push](_img/pulling/merge-from-master-push.png)
 

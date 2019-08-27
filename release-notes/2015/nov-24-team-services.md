@@ -3,10 +3,10 @@ title: Git and TFVC together, Package Management build tasks, and more – Nov 2
 description: VSTS release notes for November 24 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: cc94e94f-389a-493a-9044-3fb7e9ad2e27
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

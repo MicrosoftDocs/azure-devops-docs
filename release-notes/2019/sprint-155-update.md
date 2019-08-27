@@ -16,6 +16,10 @@ In addition, we are excited to announce the new **Azure Boards app for Slack**. 
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/fS5Q3Y2AZZQ]
+
 ## Features
 
 ### General:

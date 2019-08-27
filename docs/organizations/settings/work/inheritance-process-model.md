@@ -11,10 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/22/2019
+ms.date: 08/12/2019
 ---
-
-
 
 # About process customization and inherited processes  
 
@@ -95,8 +93,9 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
-Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process.   
+Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process. 
 
+::: moniker range="azure-devops"
 
 <table width="80%">
 <tbody valign="top">
@@ -108,8 +107,9 @@ Fields are defined for all projects and processes in the organization. That mean
 <td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
 <td>
 <ul>
-<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
-<li><a href="customize-process-field.md#show-hide-field" data-raw-source="[Show/Hide field on form](customize-process-field.md#show-hide-field)">Show/Hide field on form</a></li>
+<li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
+<li><a href="customize-process-field.md#show-hide-field">Show/Hide field on form</a></li>
+<li><a href="customize-process-field.md#pick-list">Modify picklist (drop-down menu)</a></li>
 </ul>
 </td>
 </tr>
@@ -135,6 +135,50 @@ Fields are defined for all projects and processes in the organization. That mean
 </tbody>
 </table>
 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Field type</th>
+<th width="65%">Customization support</th>
+</tr>
+<tr>
+<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
+<td>
+<ul>
+<li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
+<li><a href="customize-process-field.md#show-hide-field">Show/Hide field on form</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Custom fields</td>
+<td>
+<ul>
+<li><a href="customize-process-field.md#add-field" data-raw-source="[Add a custom field](customize-process-field.md#add-field)">Add a custom field</a></li>
+<li><a href="customize-process-field.md#pick-list" data-raw-source="[Add picklist (drop-down menu)](customize-process-field.md#pick-list)">Add picklist (drop-down menu)</a></li>
+<li><a href="customize-process-field.md#identity" data-raw-source="[Add person-name/Identity](customize-process-field.md#identity)">Add person-name/Identity</a></li>
+<li><a href="customize-process-field.md#html" data-raw-source="[Add a rich-text (HTML) field](customize-process-field.md#html)">Add a rich-text (HTML) field</a> </li>
+<li><a href="customize-process-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)">Add a checkbox (Boolean) field</a></li>
+<li><a href="custom-controls-process.md" data-raw-source="[Add a custom control](custom-controls-process.md)">Add a custom control</a> </li>
+<li><a href="custom-rules.md" data-raw-source="[Add custom rules to a field](custom-rules.md)">Add custom rules to a field</a></li>
+<li><a href="customize-process-field.md#rename-field" data-raw-source="[Change the field label](customize-process-field.md#rename-field)">Change the field label</a></li>
+<li><a href="customize-process-field.md#options" data-raw-source="[Set Required/Default options](customize-process-field.md#options)">Set Required/Default options</a></li>
+<li><a href="customize-process-form.md#move-field" data-raw-source="[Move the field within the layout](customize-process-form.md#move-field)">Move the field within the layout</a></li>
+<li><a href="customize-process-field.md#remove-field" data-raw-source="[Remove field from form](customize-process-field.md#remove-field)">Remove field from form</a></li>
+<li><a href="customize-process-field.md#delete-field" data-raw-source="[Delete field](customize-process-field.md#delete-field)">Delete field</a></li> 
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
+
 When adding custom fields, note the following limits:  
 *   A maximum of 64 fields can be defined for each WIT  
 *   A maximum of 512 fields can be defined per process   
@@ -143,14 +187,30 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-- You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+
+::: moniker range="azure-devops"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't change the picklist order, picklists display in alphabetic order
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
+
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
+
+::: moniker-end
 
 ### Configurable picklists 
 
@@ -200,6 +260,23 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+
+### Restrict modification of select fields for select user groups
+
+Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+
+- `current user is a member of a group...`
+- `current user is not a member of a group...`
+
+For example, you can make the Title or the State field Read-only for select users or groups. 
+
+### Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+
+### Restrict modification of work items based on Area Path 
+
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
 ## WIT customizations 
 
@@ -432,11 +509,13 @@ When you add a WIT to a backlog level, the following fields are added to the WIT
 
 The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board. For details on it's usage, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/). 
 
-The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/velocity-chart-data-store.md).  
+The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).  
 
 And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
 
 ## Object limits
 
 For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
+
+
 

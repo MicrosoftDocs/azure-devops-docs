@@ -7,23 +7,42 @@ ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 10/20/2016
+ms.author: phwilson
+author: chasewilson
+ms.date: 08/14/2019
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
 # Parallel release jobs in Team Foundation Server
 
-**[Azure Pipelines](concurrent-jobs.md) | TFS 2018 | TFS 2017**
+**[Azure Pipelines](concurrent-jobs.md) | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 
-One free parallel job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional parallel job. You can buy additional private jobs from the Visual Studio Marketplace.
+One free parallel job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional parallel job. 
+
+::: moniker range="< azure-devops-2019"
+
+You can buy additional private jobs from the Visual Studio Marketplace.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+> [!IMPORTANT]
+> Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
+
+::: moniker-end
+
+::: moniker range="= tfs-2015"
 
 > Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 ## How a parallel job is consumed
 
@@ -76,17 +95,19 @@ In the following scenarios you might need multiple parallel jobs:
 
 Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enterprise** access level in the Users hub of TFS instance. Each of these users contributes one additional parallel job to each collection. You can use this benefit on all Team Foundation Servers in your organization.
 
-0. Browse to **Server settings**, **Access levels**.
+1. Browse to **Server settings**, **Access levels**.
 
    ![control-panel-server-vs-enterprise-access-levels](_img/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
-1. On the left side of the page, click **VS Enterprise**.
+2. On the left side of the page, click **VS Enterprise**.
 
-2. Add your users who have Visual Studio Enterprise subscriptions.
+3. Add your users who have Visual Studio Enterprise subscriptions.
 
 After you've added these users, additional licenses will appear on the resource limits page described below.
+
+
 
 ## Purchase additional parallel jobs
 
@@ -94,13 +115,15 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 ## View and manage parallel jobs
 
-0. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
+1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
    ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
-1. View or edit the number of purchased parallel jobs.
+2. View or edit the number of purchased parallel jobs.
+
+
 
 ## Q&A
 
@@ -123,3 +146,5 @@ In TFS 2015, so long as your users have a TFS CAL, they can manage releases for 
 ### How are releases licensed in Azure Pipelines?
 
 See [Parallel jobs in Azure Pipelines](concurrent-jobs.md).
+
+::: moniker-end

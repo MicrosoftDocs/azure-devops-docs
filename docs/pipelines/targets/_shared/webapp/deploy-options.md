@@ -7,7 +7,7 @@ Create a suitable service connection:
 
 ## Deployment mechanisms
 
-The preceding examples rely on the built-in [Azure App Service Deploy task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureRmWebAppDeploymentV3),
+The preceding examples rely on the built-in [Azure Web App task](../../../tasks/deploy/azure-rm-web-app.md),
 which provides simplified integration with Azure.
 
 If you use a Windows agent, this task uses Web Deploy technology to interact with the Azure Web App.
@@ -18,6 +18,8 @@ If you use the Linux agent, the task relies on the [Kudu REST APIs](https://gith
 The [Azure App Service Manage task](../../../tasks/deploy/azure-app-service-manage.md) is another task that's useful for deployment.
 You can use this task to start, stop, or restart the web app before or after deployment.
 You can also use this task to swap slots, install site extensions, or enable monitoring of the web app.
+
+You can use the [File Transform task](../../../tasks/utility/file-transform.md) to apply file transformations and variable substitutions on any configuration and parameters files.
 
 If the built-in tasks don't meet your needs, you can use other methods to script your deployment.
 View the YAML snippets in each of the following tasks for some examples:

@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -238,6 +238,29 @@ ConsoleHost.pdb
 Fabrikam.dll
 Fabrikam.pdb
 Fabrikam.xml
+```
+
+<h4 id="doubleexcl_examples">Folder exclude</h4>
+
+Given the pattern:
+```
+**
+!sample/**
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+sample/Fabrikam.dll
+sample/Fabrikam.pdb
+sample/Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
 ```
 
 ### 

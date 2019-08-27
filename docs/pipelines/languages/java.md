@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
 ms.topic: quickstart
 ms.date: 5/6/2019
@@ -244,6 +244,20 @@ steps:
   inputs:
     scriptPath: 'build.sh'
 ```
+
+## Next Steps
+
+After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package, 
+or package the build output into a .war/jar file to be deployed to a web application.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
+
+* [Build and deploy to a Java web app](java-webapp.md)
+* [Build and deploy Java to Azure Functions](java-function.md)
 
 ::: moniker-end
 

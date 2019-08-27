@@ -15,7 +15,8 @@ monikerRange: 'azure-devops'
 
 Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet. 
 
-> **Note:** Public feeds are project-scoped feeds that live inside a public project. You cannot convert an existing organization-scoped feed into a project-scoped feed or a public feed.
+> [!NOTE]
+> Public feeds are project-scoped feeds that live inside a public project. You cannot convert an existing organization-scoped feed into a project-scoped feed or a public feed.
 
 To learn more about feeds and their scopes, check out our [feeds documentation](../concepts/feeds.md).
 

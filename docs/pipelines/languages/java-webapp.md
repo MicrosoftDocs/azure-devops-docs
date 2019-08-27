@@ -6,9 +6,8 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
 ms.manager: jillfra
-ms.lead: alewis
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 7/23/2019
 monikerRange: 'azure-devops'
 ---
@@ -117,8 +116,17 @@ When the **Configure** tab appears, select **Show more**, and then select **Mave
 
 [!INCLUDE [include](_shared/create-pipeline-after-template-selected.md)]
 
+## See the pipeline run, and your app deployed
+
+As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
+
 After the pipeline has run, check out your site!
 
 `https://my-app-name.azurewebsites.net`
+
+Also explore deployment history for the App by navigating to the "Environment". From the pipeline summary:
+
+1. Select the **Environments** tab.
+1. Select **View environment**.
 
 [!INCLUDE [include](_shared/clean-up-resources.md)]

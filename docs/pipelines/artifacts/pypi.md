@@ -26,9 +26,9 @@ You can publish Python packages produced by your build to:
 
 To publish Python packages produced by your build, you'll use [twine](https://pypi.org/project/twine/), a widely used tool for publishing Python packages. This guide covers how to do the following in your pipeline:
 
-0. Install `twine` on your build agent
-1. Authenticate `twine` with your Azure Artifacts feeds
-2. Use a custom task that invokes `twine` to publish your Python packages
+1. Install `twine` on your build agent
+2. Authenticate `twine` with your Azure Artifacts feeds
+3. Use a custom task that invokes `twine` to publish your Python packages
 
 ## Install twine 
 

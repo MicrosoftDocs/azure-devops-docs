@@ -42,7 +42,7 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time in order to generate a trend report. 
@@ -52,7 +52,7 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops-2019"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 - Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
@@ -71,14 +71,14 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ### 1. Name your view and set to Private  
 
-0. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
+1. Give your view a name, such as Active bugs. Select **Private view** to save it under **My Views**. Otherwise, you can select **Shared view** to save it under **Shared Views**.  
 
    > [!div class="mx-imgBorder"]
    > ![General](_img/active-bugs-report/active-bugs-general.png)
 
 	Choose **Continue** to move to the next tab. 
 
-1. From the **Work items** tab, select the Project and Team that contain the data you want to report on.  
+2. From the **Work items** tab, select the Project and Team that contain the data you want to report on.  
  
 	Here we choose the FabrikamFiber project and the Fiber Suite App team.
     
@@ -87,26 +87,26 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 	To add additional projects or teams, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row and then select the project and team. 
 
-2. Under **Backlogs and work items**, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row, and then select **Bug** from the list of work items types.
+3. Under **Backlogs and work items**, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row, and then select **Bug** from the list of work items types.
 
     > [!div class="mx-imgBorder"]
     > ![Filter by "bug"](_img/active-bugs-report/wi-type-picker-bugs.png)
 
-3. Under **Field criteria**, choose the **State** field set to **Active**.   
+4. Under **Field criteria**, choose the **State** field set to **Active**.   
 
     > [!div class="mx-imgBorder"]
     >![filter active bugs](_img/active-bugs-report/active-bugs-field-criteria.png)
 
 	Choose **Continue** to move to the next tab. 
 
-4. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your project.  
+5. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your project.  
     
     > [!div class="mx-imgBorder"]
     > ![Fields](_img/active-bugs-report/fields-common.png)
 
 	Choose **Continue** to move to the next tab. 
 
-5. In the **History** tab, select **Rolling period in days** and enter **60** days. Keep the **Granularity** set to **Daily**. These selections will generate 60 snapshot rows of data for each active bug. Each day will include all the details of that work item as it was at the end of that day. 
+6. In the **History** tab, select **Rolling period in days** and enter **60** days. Keep the **Granularity** set to **Daily**. These selections will generate 60 snapshot rows of data for each active bug. Each day will include all the details of that work item as it was at the end of that day. 
     
     > [!div class="mx-imgBorder"]
     > ![60 days of history with Daily granularity](_img/active-bugs-report/active-bugs-history.png)
@@ -115,7 +115,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 	Choose **Continue** to move to the next tab. 
 
-6. On the last tab, **Verification**, click **Verify view**. The system will verify your view by running a test query against the dataset it defines and validate all your filter criteria. 
+7. On the last tab, **Verification**, click **Verify view**. The system will verify your view by running a test query against the dataset it defines and validate all your filter criteria. 
 
 	> [!div class="mx-imgBorder"]
     > ![Verify the view](_img/active-bugs-report/active-bugs-verify.png)
@@ -146,17 +146,17 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
    ::: moniker-end
 
 ::: moniker range="azure-devops-2019"  
-1. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
+2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2-onprem.png)
 
-2. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
+3. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
 
 	![Azure DevOps Server dialog, Collection and project name](_img/create-report/specify-collection-project.png)  
 ::: moniker-end
 
-3. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
+4. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
 
     > [!div class="mx-imgBorder"]
     > ![Active bugs load in Power BI ](_img/active-bugs-report/choose-view.png)
@@ -165,7 +165,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a daily bug trend report 
 
-0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
+1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**. 
 
     > [!div class="mx-imgBorder"]
     > ![Select work item field](_img/create-report/select-line-chart-work-id.png)
@@ -177,12 +177,12 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 	> 
 	> ![Adjust chart size](_img/active-bugs-report/adjust-view-size.png)  
      
-1. Click the context menu icon next to the **Work Item Id** field and change it from **Count** to **Count (Distinct)**.
+2. Click the context menu icon next to the **Work Item Id** field and change it from **Count** to **Count (Distinct)**.
 
    > [!div class="mx-imgBorder"]
    > ![Select work item field](_img/active-bugs-report/choose-count-distinct.png)
 
-2. Next, (1) select the **Date** field in the fields list as your axis. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+3. Next, (1) select the **Date** field in the fields list as your axis. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
    > [!div class="mx-imgBorder"]
    > ![Select Date, and change date hierarchy to date](_img/active-bugs-report/select-date.png)
@@ -196,14 +196,14 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Filter your trend by Priority
 
-0. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
+1. To group your bugs by `Priority`, search for the field in the list (a). Drag the Priority field into the `Legend` of your trend chart (b)
 
     > [!div class="mx-imgBorder"]
     > ![Group by priority](_img/active-bugs-report/filter-priority-legend.png)
 
-1. The chart now shows a daily distinct count of bugs, grouped by Priority.
+2. The chart now shows a daily distinct count of bugs, grouped by Priority.
 
-2. To just show only Priority 0 and 1 bugs, click the context menu icon next to the **Priority** field to set the filters.  
+3. To just show only Priority 0 and 1 bugs, click the context menu icon next to the **Priority** field to set the filters.  
     
     > [!div class="mx-imgBorder"]
     > ![Filter top priority bugs](_img/active-bugs-report/filter-priority-1-and-2.png)
@@ -212,9 +212,9 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Create a card for latest bug count
 
-0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
-1. Select the card visual, add the **Work Item Id** field, add the **Work Item Type** field, and click the context menu icon next to the field and change it from **Count** to **Count (Distinct)**.
+2. Select the card visual, add the **Work Item Id** field, add the **Work Item Type** field, and click the context menu icon next to the field and change it from **Count** to **Count (Distinct)**.
 
 	The card now shows the number of active bugs times the number of days they existed within the selected time period.  For this example, that number is 1066. 
     
@@ -233,9 +233,9 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Save your report, optionally share with others 
 
-0. Choose **File > Save As** to save your report to your local workspace. 
+1. Choose **File > Save As** to save your report to your local workspace. 
 
-1. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
+2. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
     > ![Latest active bug count](_img/active-bugs-report/publish-powerbi.png)

@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 03/15/2019
+ms.date: 07/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -63,17 +63,17 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
+If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
 
 ## Default agent pools
 

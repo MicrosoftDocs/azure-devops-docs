@@ -33,7 +33,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>Known Hosts Entry</td><td>(Required) The entry for this SSH key for the known_hosts file.</td></tr>
 <tr><td>SSH Public Key</td><td>(Required) The contents of the public SSH key.</td></tr>
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
-<tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
+<tr><td>SSH Key (Secure File)</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 
@@ -50,7 +50,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 You now have all necessary values for the "Install SSH Key" task:
 - 'Known Hosts Entry' - Enter the line copied in step 6
-- 'SSH Key', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
+- 'SSH Key (Secure File)', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
 
 ## Open source
 

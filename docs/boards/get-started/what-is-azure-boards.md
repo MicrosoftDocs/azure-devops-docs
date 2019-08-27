@@ -34,6 +34,7 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
  
 Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. 
 
+[!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -145,15 +146,32 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/sprint-planning-issues-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/sprint-planning-issues.png)  
+::: moniker-end
+
  
 #### [Agile process](#tab/agile-process) 
 
 **Assign backlog items to a sprint**
 
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](../sprints/_img/define-sprints/drag-drop-backlog-items-to-sprint.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/drag-drop-backlog-items-to-sprint.png)  
+::: moniker-end
 
 * * * 
 

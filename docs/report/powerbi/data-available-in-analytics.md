@@ -27,7 +27,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 
 ::: moniker-end
 
-Currently, you can access the following data from Analytics. This information was last updated on April 5, 2019. 
+Currently, you can access the following data from Analytics. This information was last updated on August 6, 2019 
 
 <table>
 <tr valign="bottom">
@@ -40,20 +40,26 @@ Currently, you can access the following data from Analytics. This information wa
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/boards/" data-raw-source="[Boards](https://azure.microsoft.com/services/devops/boards/)">Boards</a></td>
 <td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a>, <a href="overview.md" data-raw-source="[Power BI](overview.md)">Power BI</a></td>
-<td>Same as Azure DevOps</td>
-<td>Rollup - Q2, CY 2019</td>
+<td>Same as Azure DevOps Services</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Pipelines</a></td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</a></td>
-<td>Same as Azure DevOps</td>
-<td>Build/Release - CY 2019</td>
+<td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Build</a></td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics, <a href="https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops"data-raw-source="[Pipeline Analytics](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)">Pipeline Analytics, <a href="https://docs.microsoft.com/azure/devops/report/extend-analytics/index"data-raw-source="[OData Preview](/azure/devops/report/extend-analytics/index.md)">OData Preview</a></a></td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Release</a></td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
+<td>Pipeline Analytics - Q4, 2019</td>
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/test-plans/" data-raw-source="[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)">Test Plans</a></td>
 <td>None</td>
 <td>None</td>
-<td>Q2, CY 2019</td>
+<td>Test Plan Reporting - Q3 2019</td>
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/repos/" data-raw-source="[Repos](https://azure.microsoft.com/services/devops/repos/)">Repos</a></td>

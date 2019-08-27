@@ -27,7 +27,7 @@ Subscriptions also target **consumers**, which are external services that can pe
 ## Tutorial Overview - Custom Consumer Service
 
 This tutorial walks through developing an extension that implements a **sample consumer service** that includes:
--	Supported events that trigger actions to be taken
+- Supported events that trigger actions to be taken
     - Code pushed
     - Pull request created
     - Pull request updated

@@ -9,12 +9,12 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 06/05/2019
-monikerRange: '>= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017 <= azure-devops-2019'
 ---
 
-# License Azure Artifacts for TFS 2017 and 2018
+# License Azure Artifacts for TFS 2017, 2018 and 2019
 
-**TFS 2018** | **TFS 2017**
+**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
 
 Azure Artifacts is an *extension* to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
 

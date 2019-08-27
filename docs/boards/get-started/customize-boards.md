@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 01/11/2019
 ---
 
@@ -34,12 +34,20 @@ You can configure your Kanban board in several ways to support specific tracking
 
 Each team can customize their Issues and Epics boards and sprint Taskboards.  
 
+[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
 2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings](_img/customize-boards/open-settings-s155.png)  
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](_img/customize-boards/open-settings.png)  
+	::: moniker-end
 
 	The Settings dialog opens. 
 	
@@ -72,8 +80,14 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings](_img/customize-boards/open-settings-agile-s155.png)  
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](_img/customize-boards/open-settings-agile.png)  
+	::: moniker-end
 
 	The Settings dialog opens. 
 	
@@ -234,13 +248,27 @@ Here we show the customizations made in this article. The following image also s
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view.png) 
 
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view-s155.png) 
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view.png) 
+::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
 
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-agile-customized-view-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-agile-customized-view.png) 
+::: moniker-end
 
 * * *
 

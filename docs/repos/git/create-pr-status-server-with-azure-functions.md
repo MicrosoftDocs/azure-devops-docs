@@ -281,7 +281,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
 
-0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

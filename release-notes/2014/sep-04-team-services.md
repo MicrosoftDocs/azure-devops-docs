@@ -3,10 +3,10 @@ title: Query usability, Hubot, new charts, and more - Sep 4
 description: VSTS release notes for September 04 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 9d658d0e-70f2-4703-b4c1-5d36b5accd75
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

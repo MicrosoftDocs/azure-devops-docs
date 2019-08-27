@@ -37,7 +37,7 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
+1. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
    ![Synchronization](_img/gitquickstart-vs2017/sync.png)
 
@@ -45,11 +45,14 @@ In this tutorial you learn how to:
 
    ![Synchronization](_img/gitquickstart-vs2017/commit-created-locally.png)
 
-1. Select **Push** to share your commit with the remote repository.
+2. Select **Push** to share your commit with the remote repository.
 
    ![Push](_img/gitquickstart-vs2017/push-to-origin.png)
 
    If this is your first push to the repository you'll see the following message in place of the outgoing commits list: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes you'll see the list of commits.
+
+   > [!NOTE]
+   > To adjust your Git setup, go to **Team Explorer** > **Settings** > **Repository Settings** and make sure the correct **User**, **Email**, **Remotes** URLs, etc. are being used.
 
 #### [Command Line](#tab/command-line/)
 The `push` command updates the remote branch on `origin` with the commits from your local branch.
