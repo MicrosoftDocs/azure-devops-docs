@@ -24,6 +24,11 @@ Use this task in a build or release pipeline to build with the CMake cross-platf
 
 cmake
 
+> [!IMPORTANT]
+> The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed by default so you don't 
+> need to include a demand for CMake in your `azure-pipelines.yml` file. If you do include a demand
+> for CMake you may receive an error. To resolve, remove the demand.
+
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -73,19 +78,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### How do I enable CMake for Microsoft-hosted agents?
 
-The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed, but you must manually add the [capability](../../agents/agents.md#capabilities) to use the CMake build task.
-
-1. In your web browser, navigate to Agent pools:
-
-   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
-
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
-
-1. Click **Add capability** and set the fields to `cmake` and `yes`.
-
-1. Click **Save changes**.
+The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed already so you don't need to do anything. You do not need to add a demand for CMake in your `azure-pipelines.yml` file.
 
 
 ### How do I enable CMake for my on-premises agent?
