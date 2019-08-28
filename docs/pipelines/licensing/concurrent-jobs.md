@@ -138,7 +138,7 @@ You can have as many users as you want when you're using Azure Pipelines. There 
 
 ### Are there any limits on the number of builds and release pipelines that I can create?
 
-No. You can create hundreds or even thousands of definitions for no charge. You can register any number of self-hosted agents for no charge.
+No. You can create hundreds or even thousands of pipelines for no charge. You can register any number of self-hosted agents for no charge.
 
 ### As a Visual Studio Enterprise subscriber, do I get additional parallel jobs for TFS and Azure Pipelines?
 
