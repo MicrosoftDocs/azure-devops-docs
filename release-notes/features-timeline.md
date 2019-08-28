@@ -4103,6 +4103,36 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
+          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
+          <td>Aug. 20, 2019</td>
+          <td>17.153.29207.5</td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
+          <td>May 21, 2019</td>
+          <td>17.143.28912.1</td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
+          <td>Mar. 5, 2019</td>
+          <td>17.143.28621.4</td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2 Rerelease</a></td>
+          <td>Feb. 6, 2019</td>
+          <td>16.131.28601.4</td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
+          <td>Jan. 15, 2019</td>
+          <td>16.131.28507.4</td>
+        </tr>
+        <tr>
+          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.1](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.1</a></td>
+          <td>Nov 11, 2018</td>
+          <td>16.131.28226.3</td>
+        </tr>
+        <tr>
           <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3</a></td>
           <td>Sep. 12, 2018</td>
           <td>16.131.28106.2</td>
