@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 08/26/2019
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
@@ -61,16 +61,12 @@ You can use work items to track anything you need to track. Each work item repre
 
 ## Work item types (WITs)
 
-To track different types of work, different WITs are defined. The WITs available to you differ depending on the process or process template used to create your project.
+To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
 
-For example, the following WITs are available to you when you choose the Agile process. 
+[!INCLUDE [temp](../_shared/work-item-types.md)]
 
-<img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+The items in your backlog may be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
 
-> [!NOTE]  
-> The WITs available to you depend on the process chosen to create your project&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
-
-To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
 <a id="form" />
 
