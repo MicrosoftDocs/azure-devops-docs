@@ -295,15 +295,6 @@ In this section you replace the steps in the starter pipeline with specific step
         versionSpec: '3.6'
         architecture: 'x64'
 
-    - script: |
-        python3.6 -m venv antenv3.6
-        source antenv3.6/bin/activate
-        pip3.6 install setuptools
-        pip3.6 install -r requirements.txt
-
-      # The displayName is shows in the pipeline UI when a build runs
-      displayName: 'Install Dependencies'
-
     - task: ArchiveFiles@2
       inputs:
         rootFolderOrFile: '$(Build.SourcesDirectory)'
