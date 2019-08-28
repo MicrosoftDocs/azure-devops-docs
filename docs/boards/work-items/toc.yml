@@ -127,6 +127,8 @@
     href: set-work-item-experience-vs.md
   - name: Manage process templates
     href: guidance/manage-process-templates.md
+  - name: View deployment stages on work item form
+    href: work-item-deployments-control.md
 - name: Reference
   items:
   - name: Work item form controls
