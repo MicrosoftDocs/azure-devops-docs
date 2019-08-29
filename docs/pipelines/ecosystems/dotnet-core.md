@@ -510,9 +510,9 @@ If you want to publish your code to a NuGet feed, take the following steps:
 
 ::: moniker-end
 
-## Build a container
+## Build an image and push to container registry
 
-You can build a Docker container image after you build your project. For more information, see [Docker](docker.md).
+For your app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
 
 <a name="troubleshooting"></a>
 ## Troubleshooting

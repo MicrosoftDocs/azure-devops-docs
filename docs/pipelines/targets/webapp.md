@@ -125,7 +125,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a JavaScript Node.js app
 
-If you're building a [JavaScript Node.js app](../languages/javascript.md), you publish the entire contents of your
+If you're building a [JavaScript Node.js app](../ecosystems/javascript.md), you publish the entire contents of your
 working directory to the web app. The following snippet also generates a Web.config file during deployment if the application does not have one and starts
 the iisnode handler on the Azure Web App:
 

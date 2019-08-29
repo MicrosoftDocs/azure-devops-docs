@@ -40,7 +40,7 @@ in the pipeline.
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
-To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages. 
+To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 

@@ -8,30 +8,30 @@ ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
 ms.manager: jillfra
 ms.author: shasb
 author: shashankbarsin
-ms.date: 5/3/2019
+ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build and deploy to Azure Kubernetes Service
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../../_shared/version-team-services.md)]
 
- The Microsoft Azure Kubernetes Service manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications without container orchestration expertise. This service also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
+ Azure Kubernetes Service manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. This service also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
 
-In this step-by-step guide you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your Azure Kubernetes Service cluster.
+In this step-by-step guide, you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your Azure Kubernetes Service cluster.
 
 ## Prerequisites
-[!INCLUDE [include](../_shared/prerequisites.md)]
+[!INCLUDE [include](../../_shared/prerequisites.md)]
 
-[!INCLUDE [include](../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
 
 ## Get the code
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 
 ## Create the Azure resources
-[!INCLUDE [include](_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
 
 ### Create a container registry
 
@@ -52,14 +52,14 @@ az aks create \
 ```
 
 ## Sign in to Azure Pipelines
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](../_shared/create-project.md)]
 
 
 ## Create the pipeline
 ### Connect and select repository
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service**. 
 
@@ -89,7 +89,7 @@ When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service*
 
 8. The commit that will create your new pipeline appears. You can see the generated files mentioned above. Select **Save and run**.
 
-9. If you want, change the **Commit message** to something like _Add continuous deployment to our repo_. When you're ready, select **Save and run** to commit the new pipeline into your repo, and then begin the first run of your new pipeline!
+9. If you want, change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repo, and then begin the first run of your new pipeline!
 
 ## See the pipeline run, and your app deployed
 
@@ -114,9 +114,9 @@ If you're building our sample app, then _Hello world_ appears in your browser.
 <a name="how"></a>
 ## How we build your pipeline
 
-When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Deploy to existing kubernetes cluster template_.
+When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Deploy to Azure Kubernetes Service_ template.
 
-The build stage uses the [Docker task](../tasks/build/docker.md) to build and push the image to the Azure Container Registry.
+The build stage uses the [Docker task](../../tasks/build/docker.md) to build and push the image to the Azure Container Registry.
 
 ```YAML
 - stage: Build
@@ -187,7 +187,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
 ```
 
 
-[!INCLUDE [include](_shared/clean-up-resources.md)]
+[!INCLUDE [include](../_shared/clean-up-resources.md)]
 
 ```azurecli-interactive
 az group delete --name MC_myapp-rg_myapp_eastus
@@ -202,10 +202,10 @@ We invite you to learn more about:
   - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [Deploy to existing Kubernetes cluster template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/deploy-to-existing-kubernetes-cluster.yml)
 * Some of the tasks used in your pipeline, and how you can customize them:
-  - [Docker task](../tasks/build/docker.md)
-  - [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md)
+ - [Docker task](../../tasks/build/docker.md)
+ - [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
 * Some of the key concepts for this kind of pipeline:
-  - [Environments](../process/environments.md)
-  - [Deployment jobs](../process/deployment-jobs.md)
-  - [Stages](../process/stages.md)
-  - [Docker registry service connections](../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+  - [Environments](../../process/environments.md)
+  - [Deployment jobs](../../process/deployment-jobs.md)
+  - [Stages](../../process/stages.md)
+  - [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
