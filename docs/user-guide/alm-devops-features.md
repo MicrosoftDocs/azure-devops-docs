@@ -1209,7 +1209,7 @@ pipelines\tasks\build\_img
 <p>Use Visual Studio to create <a href="https://msdn.microsoft.com/library/dd286726.aspx" data-raw-source="[coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx)">coded UI tests</a> to test your application&#39;s user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to <a href="../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/languages/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
+<p>Use continuous integration builds to <a href="../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/ecosystems/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
 
 <p><b>Review automated test results after a build</b></p>
 <p><a href="../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Review your test results](../pipelines/test/review-continuous-test-results-after-build.md)">Review your test results</a> to analyze any problems that were found.</p>

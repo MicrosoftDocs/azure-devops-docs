@@ -175,9 +175,6 @@ featureFlags:
                             <a href="/azure/devops/pipelines/yaml-schema">YAML Schema</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/anaconda">Supported languages</a>
-                        </p>
-                        <p>
                             <a href="/azure/devops/pipelines/artifacts/artifacts-overview">Artifacts</a>
                         </p>
                         <p>
@@ -206,13 +203,13 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/pipelines/index">Build and deploy apps</a></h3>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
+                          <a href="/azure/devops/pipelines/ecosystems/dotnet-core">.NET Core</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a>
+                          <a href="/azure/devops/pipelines/ecosystems/anaconda">Anaconda</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/android">Android</a>
+                          <a href="/azure/devops/pipelines/ecosystems/android">Android</a>
                         </p>
                         <p>
                           <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a>
@@ -224,16 +221,16 @@ featureFlags:
                             <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker">Docker</a>
+                            <a href="/azure/devops/pipelines/ecosystems/docker">Docker</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/go">Go</a> 
+                            <a href="/azure/devops/pipelines/ecosystems/go">Go</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/java">Java</a>
+                            <a href="/azure/devops/pipelines/ecosystems/java">Java</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a><br/>                        </p>
+                            <a href="/azure/devops/pipelines/ecosystems/javascript">JavaScript and Node.js</a><br/>                        </p>
                         <p>
                             <a href="/azure/devops/pipelines/index">...plus more</a><br/>                        </p>
                     </div>
@@ -262,7 +259,7 @@ featureFlags:
                             <a href="/azure/devops/project/feedback/index">Exploratory testing &amp; stakeholder feedback</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
+                            <a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a>
                         </p>
                         <p>
                             <a href="/visualstudio/test/unit-test-your-code">Unit and functional testing</a>

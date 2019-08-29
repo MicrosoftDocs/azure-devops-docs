@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---
@@ -18,8 +18,6 @@ monikerRange: '> tfs-2018'
 
 Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
-
-See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust for build and push](../../build/content-trust.md).
 
 ::: moniker range="> tfs-2018"
 

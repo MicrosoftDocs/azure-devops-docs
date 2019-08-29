@@ -293,7 +293,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 ## Additional options for restricting access to work items   
 
-See [Restrict access, Restrict modification of work items based on a user or group ](restrict-access.md#restrict-modifications-wits) for additional options for customizing work item types to support restrictions. 
+See [Restrict access, Restrict modification of work items based on a user or group](restrict-access.md#restrict-modifications-wits) for additional options for customizing work item types to support restrictions. 
 
 ::: moniker-end
 

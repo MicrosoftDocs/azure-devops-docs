@@ -204,7 +204,7 @@ eval `ssh-agent`
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
-Copy you public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
+Copy your public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
 
 ### How can I verify that the public key I uploaded is the same key as I have locally?
 

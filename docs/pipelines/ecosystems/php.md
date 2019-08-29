@@ -43,7 +43,7 @@ For the exact versions of PHP that are preinstalled, refer to [Microsoft-hosted 
 On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A symlink at `/usr/bin/php` points to the currently set PHP version, so that when you run `php`, the set version executes. To use a PHP version other than the default, the symlink can be pointed to that version using the `update-alternatives` tool. Set the PHP version that you prefer by adding the following snippet to your `azure-pipelines.yml` file and changing the value of the **phpVersion** variable accordingly.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/php
 pool:
   vmImage: 'ubuntu-16.04'
 
@@ -102,6 +102,6 @@ You can also specify the absolute path, using the built-in system variables:
 
 ```composer install --no-interaction --working-dir='$(system.defaultWorkingDirectory)/pkgs'```
 
-## Build a container image
+## Build image and push to container registry
 
-You can also build and publish a Docker container image for your PHP app. For more information, see [Docker](docker.md).
+For your PHP app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
