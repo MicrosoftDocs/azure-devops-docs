@@ -47,7 +47,7 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
     ![Downloadin the generated template](_img/generatedfile.png)
 
-**Note:** The Extractor supports only limited artifacts and work item types and so it should not be considered as a migration tool for moving projects from one server to another. For what's supported and what's not supported, see the [limitations]() section
+**Note:** The Extractor supports only limited artifacts and work item types and so it should not be considered as a migration tool for moving projects from one server to another. For what's supported and what's not supported, see the limitations section
 
 ## Provisioning your project from your custom template
 
