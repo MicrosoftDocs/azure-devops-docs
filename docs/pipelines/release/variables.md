@@ -83,6 +83,9 @@ Using custom variables at project, release pipeline, and stage scope helps you t
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
+> [!NOTE]
+> Creating custom variables can overwrite standard variables. For example, the PowerShell **Path** environment variable. If you create a custom `Path` variable on a Windows agent, it will overwrite the `$env:Path` variable and PowerShell won't be able to run.
+
 ### Using custom variables
 
 To use custom variables in your build and release tasks, simply enclose the 
