@@ -260,7 +260,7 @@ steps:
 
 Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but can also be downloaded using the latest **Download Pipeline Artifact** task.
 
-When migrating from from build artifacts to pipeline artifacts:
+When migrating from build artifacts to pipeline artifacts:
 
 1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, just publish directly from the path containing the files.
 
