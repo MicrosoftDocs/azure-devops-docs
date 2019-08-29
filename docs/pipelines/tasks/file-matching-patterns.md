@@ -262,5 +262,3 @@ ConsoleHost.exe
 ConsoleHost.pdb
 ConsoleHost.xml
 ```
-
-### 
