@@ -648,4 +648,4 @@ Or, you can use a Kanban board to add child tasks, backlog items, or features. T
 
 ## Related articles
 
-- [Sample work item templates ](../work-items/work-item-template-examples.md)
+- [Sample work item templates](../work-items/work-item-template-examples.md)
