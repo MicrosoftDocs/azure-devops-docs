@@ -78,7 +78,7 @@ Keep in mind:
 
 `.artifactignore` files use the identical file-globbing syntax of `.gitignore` to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
 
-Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to incude only files in the artifact with a `.exe` extension:
+Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to include only files in the artifact with a `.exe` extension:
 
 ```
 **/*
