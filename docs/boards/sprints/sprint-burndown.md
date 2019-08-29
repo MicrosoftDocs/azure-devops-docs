@@ -184,7 +184,7 @@ When you choose to view the **Sum of Remaining Work**, the blue bars show the su
 
 
 
-#### [Count of Work Items ](#tab/work-items)
+#### [Count of Work Items](#tab/work-items)
 
 When you choose to view the **Count of Work Items**, the blue bars show the count of tasks which are still active or in progress. As tasks are completed, trend lines indicate the average rate of burndown as well of scope increase when new tasks are added. When capacity is set for the team, the burndown trend for capacity is also shown. 
 

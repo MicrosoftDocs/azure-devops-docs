@@ -25,7 +25,7 @@ Extensions are simple add-ons that can be used to customize and extend your expe
 - Code testing and tracking
 - Collaboration amongst team members
 
-In this set of documentation, we focus on how to install and remove extensions. For information about building extensions for the Marketplace, see the [Develop extensions ](../extend/index.md) documentation.
+In this set of documentation, we focus on how to install and remove extensions. For information about building extensions for the Marketplace, see the [Develop extensions](../extend/index.md) documentation.
 
 - [Overview of Marketplace extensions for Azure DevOps](overview.md)
 - [Trusting an extension or publisher in the Marketplace](trust.md)
