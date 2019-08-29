@@ -223,7 +223,7 @@ You can specify this argument if you have selected Use xctool and included <code
 
 ## Example
 
-[Build and test Xcode projects](../../languages/xcode.md)
+[Build and test Xcode projects](../../ecosystems/xcode.md)
 
 ## Open source
 

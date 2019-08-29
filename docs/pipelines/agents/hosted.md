@@ -110,6 +110,8 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >
 >If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+>
+>Our Mac IP ranges are not included in the Azure IPs above, though we are investigating options to publish these in the future.
 
 ### Can I use service tags instead?
 

@@ -31,7 +31,7 @@ automatically show up on your site.
 You'll need a continuous integration (CI) build pipeline that publishes your web application, as well as
 a deployment script that can be run locally on the Ubuntu server. To set up a CI build pipeline, see:
 
-* [Build your Node.js app with gulp](../../languages/javascript.md)
+* [Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 > Make sure you follow the additional steps in that topic for creating a build to deploy to Linux.
 

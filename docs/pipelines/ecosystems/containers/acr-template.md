@@ -8,30 +8,32 @@ ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.manager: jillfra
 ms.author: shasb
 author: shashankbarsin
-ms.date: 5/3/2019
+ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build and push to Azure Container Registry
-[!INCLUDE [include](../_shared/version-team-services.md)]
 
-The Microsoft Azure Container Registry enables you to build, store, and manage images for all types of container deployments.
+[!INCLUDE [include](../../_shared/version-team-services.md)]
 
-In this step-by-step guide you'll learn how to create a pipeline that continuously builds a repository that contains a Dockerfile. Every time you change your code, the images are automatically pushed to your Azure Container Registry.
+In this step-by-step guide you'll learn how to create a pipeline that continuously builds a repository that contains a Dockerfile. Every time you change your code, the images are automatically pushed to Azure Container Registry.
 
 ## Prerequisites
-[!INCLUDE [include](../_shared/prerequisites.md)]
 
-[!INCLUDE [include](../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../../_shared/prerequisites.md)]
+
+[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
 
 ## Get the code
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 
 ## Create a container registry
-[!INCLUDE [include](_shared/sign-in-azure-cli.md)]
+
+[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
 
 ```azurecli-interactive
 # Create a resource group
@@ -42,13 +44,16 @@ az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
 ```
 
 ## Sign in to Azure Pipelines
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](../_shared/create-project.md)]
 
 ## Create the pipeline
+
 ### Connect and select repository
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Docker**.
 
@@ -68,7 +73,7 @@ When the **Configure** tab appears, select **Docker**.
 
 5. The commit that will create your new pipeline appears. Select **Save and run**.
 
-6. If you want, change the **Commit message** to something like _Add continuous deployment to our repo`. When you're ready, select **Save and run** to commit the new pipeline into your repo, and then begin the first run of your new pipeline!
+6. If you want, change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repository, and then begin the first run of your new pipeline!
 
 As your pipeline runs, select the build job to watch your pipeline in action.
 
@@ -99,7 +104,7 @@ The build stage uses the _Docker task_ to build and push the image to the contai
           $(tag)
 ```
 
-[!INCLUDE [include](_shared/clean-up-resources.md)]
+[!INCLUDE [include](../_shared/clean-up-resources.md)]
 
 ## Learn more
 
@@ -107,10 +112,10 @@ We invite you to learn more about:
 * The services:
   - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
-* The method your pipeline uses to connect to the service: [Docker registry service connections](../library/service-endpoints.md#sep-docreg)
+* The method your pipeline uses to connect to the service: [Docker registry service connections](../../library/service-endpoints.md#sep-docreg)
 * Some of the tasks used in your pipeline, and how you can customize them:
-  - [Docker task](../tasks/build/docker.md)
-  - [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md)
+   * [Docker task](../../tasks/build/docker.md)
+   * [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
 * Some of the key concepts for this kind of pipeline:
-  - [Jobs](../process/phases.md)
-  - [Docker registry service connections](../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+   * [Jobs](../../process/phases.md)
+   * [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)

@@ -131,9 +131,9 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
   displayName: 'Run tests'
 ```
 
-## Build a container image
+## Build an image and push to container registry
 
-You can also build and publish a Docker container image for your app. For more information, see [Docker](docker.md).
+For your Go app, you can also [build an image](containers/build-image.md) and [[push it to a container registry](containers/push-image.md).
 
 ## Related extensions
 

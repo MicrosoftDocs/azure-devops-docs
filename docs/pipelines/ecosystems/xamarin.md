@@ -41,7 +41,7 @@ For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hos
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
   vmImage: 'macOS-10.13' # For Windows, use 'vs2017-win2016'
 ```
@@ -131,6 +131,7 @@ You can configure the output path by adding an argument to the Xamarin.iOS task 
       packageApp: true
       args: /p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"
 ```
+
 This example locates the .ipa in the Build Artifact Staging Directoy ready to be pushed into Azure DevOps as an artifact to each build run.To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline.
 
 See [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app) for more information about signing and provisioning your iOS app.
@@ -152,7 +153,7 @@ To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent
 You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining multiple [jobs](../process/phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
 
 ```yaml
-# https://docs.microsoft.com/vsts/pipelines/languages/xamarin
+# https://docs.microsoft.com/vsts/pipelines/ecosystems/xamarin
 jobs:
 - job: Android
   pool:

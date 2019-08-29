@@ -23,7 +23,7 @@ Access levels grant or restrict access to select web portal features. This is in
 
 [!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
 
-When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups&#151;**Readers**, **Contributors**, and **Project Administrators**&#151;as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
+When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators** as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
 ::: moniker range="azure-devops"  
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
@@ -175,7 +175,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -378,7 +378,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
