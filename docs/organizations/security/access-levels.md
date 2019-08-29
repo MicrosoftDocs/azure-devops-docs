@@ -175,7 +175,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -378,7 +378,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>

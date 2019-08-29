@@ -30,7 +30,7 @@ The advantages of using Kubernetes resource views within environments include -
   > ![ImagePullBackOff](_img/k8s-imagepullbackoff.png)
 
 ## Kubernetes resource creation
-### Azure provider
+<h3 id="resource-creation-aks">Azure Kubernetes Service</h3>
 A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) is created in the chosen cluster and namespace. For an RBAC enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) is created as well to limit the scope of the created service account to the chosen namespace. For an RBAC disabled cluster, the ServiceAccount created has cluster-wide privileges (across namespaces).
 
 1. In the environment details page, click on **Add resource** and choose **Kubernetes**.
@@ -38,7 +38,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 3. Choose the Azure subscription, cluster and namespace (new/existing).
 4. Click on **Validate and create** to create the Kubernetes resource.
 
-### Generic provider (using existing service account)
+<h3 id="resource-creation-generic">Generic provider (using existing service account)</h3>
 While the Azure Provider option creates a new ServiceAccount, the generic provider allows for using an existing ServiceAccount to allow a Kubernetes resource within environment to be mapped to a namespace.
 
 > [!TIP]

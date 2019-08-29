@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.author: ronai
+author: RoopeshNair
 ms.date: 5/2/2019
 monikerRange: 'azure-devops'
 ---

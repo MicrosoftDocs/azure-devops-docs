@@ -53,7 +53,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Gradle is a common build tool used for building Android projects. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
   vmImage: 'macOS-10.13'
 

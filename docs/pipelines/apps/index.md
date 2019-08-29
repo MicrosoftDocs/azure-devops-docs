@@ -27,23 +27,23 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build your app</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-4.md" data-raw-source="[ASP.NET 4 apps](aspnet/build-aspnet-4.md)">ASP.NET 4 apps</a></li>
- <li style="margin-bottom:5px"><a href="../languages/dotnet-core.md" data-raw-source="[ASP.NET Core apps](../languages/dotnet-core.md)">ASP.NET Core apps</a></li>
- <li style="margin-bottom:5px"><a href="../languages/java.md" data-raw-source="[Java apps](../languages/java.md)">Java apps</a></li>
- <li style="margin-bottom:5px"><a href="../languages/javascript.md" data-raw-source="[Node.js apps](../languages/javascript.md)">Node.js apps</a></li>
- <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-cloudservice.md" data-raw-source="[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)">Cloud Services apps</a></li>
- <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-dacpac.md" data-raw-source="[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)">SQL database DACPAC</a></li>
- <li style="margin-bottom:5px"><a href="windows/cpp.md" data-raw-source="[C++ apps for Windows](windows/cpp.md)">C++ apps for Windows</a></li>
- <li style="margin-bottom:5px"><a href="windows/universal.md" data-raw-source="[Universal Windows Platform apps](windows/universal.md)">Universal Windows Platform apps</a></li>
+ <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-4.md">ASP.NET 4 apps</a></li>
+ <li style="margin-bottom:5px"><a href="../ecosystems/dotnet-core.md">ASP.NET Core apps</a></li>
+ <li style="margin-bottom:5px"><a href="../ecosystems/java.md">Java apps</a></li>
+ <li style="margin-bottom:5px"><a href="../ecosystems/javascript.md">Node.js apps</a></li>
+ <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-cloudservice.md">Cloud Services apps</a></li>
+ <li style="margin-bottom:5px"><a href="aspnet/build-aspnet-dacpac.md">SQL database DACPAC</a></li>
+ <li style="margin-bottom:5px"><a href="windows/cpp.md">C++ apps for Windows</a></li>
+ <li style="margin-bottom:5px"><a href="windows/universal.md">Universal Windows Platform apps</a></li>
 </ul>
 </div>
 
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build mobile apps</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px"><a href="../languages/xamarin.md" data-raw-source="[Xamarin mobile apps](../languages/xamarin.md)">Xamarin mobile apps</a></li>
- <li style="margin-bottom:5px"><a href="../languages/xcode.md" data-raw-source="[Xcode mobile projects](../languages/xcode.md)">Xcode mobile projects</a></li>
- <li style="margin-bottom:5px"><a href="mobile/app-signing.md" data-raw-source="[Sign your mobile app](mobile/app-signing.md)">Sign your mobile app</a></li>
+ <li style="margin-bottom:5px"><a href="../ecosystems/xamarin.md">Xamarin mobile apps</a></li>
+ <li style="margin-bottom:5px"><a href="../ecosystems/xcode.md">Xcode mobile projects</a></li>
+ <li style="margin-bottom:5px"><a href="mobile/app-signing.md">Sign your mobile app</a></li>
 </ul>
 </div>
 

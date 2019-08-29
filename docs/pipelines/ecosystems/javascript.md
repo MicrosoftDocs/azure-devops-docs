@@ -693,31 +693,9 @@ To create a .zip file archive that is ready for publishing to a web app, use the
 
 ::: moniker range="azure-devops"
 
-## Build a container
+## Build and push image to container registry
 
-You can build a Docker image and push it to a container registry after you build your project. 
-
-If your application doesn't require orchestration with other containers, use the [Docker](../tasks/build/docker.md) task to build a container with your packaged application code and push it to your Docker registry.
-
-This example builds a Docker image. The `Dockerfile` for the image is located in the root of the source code repo, but you can configure it by using the `dockerFile` input.
-The image is not pushed to a Docker registry after it's built.
-
-```yaml
-- script: docker build -f Dockerfile -t contoso/myjavascriptapp:$(Build.BuildId)
-```
-
-After the Docker image is built, push it to a container registry by using the [Docker](../tasks/build/docker.md) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
-
-```yaml
-- task: Docker@1
-  inputs:
-     command: push An Image
-     containerregistrytype: container Registry
-     dockerRegistryEndpoint: registry.contoso.org
-     imageName: contoso/myjavasriptcontainer:v1.0.0
-```
-
-For more information, see the [Docker pipeline guide](docker.md).
+Once your source code is building successfully and your unit tests are in place and successful, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
 
 ::: moniker-end
 

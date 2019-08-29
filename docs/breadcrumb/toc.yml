@@ -87,7 +87,7 @@
       topicHref: /azure/devops/test/index
     - name: Continuous testing
       tocHref: /azure/devops/test/
-      topicHref: /azure/devops/pipelines/languages/dotnet-core.md#run-your-tests
+      topicHref: /azure/devops/pipelines/ecosystems/dotnet-core.md#run-your-tests
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index

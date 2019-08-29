@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker-end
 
-This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
+This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../ecosystems/dotnet-core.md).
 
 ::: moniker range="tfs-2017"
 

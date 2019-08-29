@@ -34,11 +34,7 @@ https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcor
 
 ## Define your CI build process
 
-You'll need a continuous integration (CI) build process that publishes a container image to a container registry (for example: Azure Container Registry) and packages a Helm chart.
-
-To set up a CI build process, see:
-
-* [Build a Docker image](../../languages/docker.md) and [create a Helm chart](../../languages/helm.md).
+Setup a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
 
 ## Prerequisites
 
