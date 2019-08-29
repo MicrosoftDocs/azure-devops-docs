@@ -58,8 +58,8 @@ Use Azure Pipelines to configure and automate your build and delivery tools and 
 
 ## How-to Guides
 
-- [Java to web App](../languages/java-webapp.md)
-- [Java to Azure Function](../languages/java-function.md)
+- [Java to web App](../ecosystems/java-webapp.md)
+- [Java to Azure Function](../ecosystems/java-function.md)
 - [Cross-platform scripts](../scripts/cross-platform-scripting.md)
 - [Run a PowerShell script](../scripts/powershell.md)
 - [Run Git commands](../scripts/git-commands.md)

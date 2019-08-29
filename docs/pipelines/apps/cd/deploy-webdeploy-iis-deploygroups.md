@@ -30,9 +30,9 @@ You'll need a continuous integration (CI) build pipeline that publishes your web
 
 * [Build ASP.NET 4 apps](../aspnet/build-aspnet-4.md)
 
-* [Build ASP.NET Core apps](../../languages/dotnet-core.md)
+* [Build ASP.NET Core apps](../../ecosystems/dotnet-core.md)
 
-* [Build JavaScript and Node.js apps](../../languages/javascript.md)
+* [Build JavaScript and Node.js apps](../../ecosystems/javascript.md)
 
 ## Prerequisites
 
