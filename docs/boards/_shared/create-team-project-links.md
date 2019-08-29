@@ -16,4 +16,4 @@ If you have a project, start tracking work:
 For more information on Agile tools:
 
 - [Team assets](/azure/devops/organizations/settings/about-teams-and-settings)  
-- [Best tool to add, update, and link work items ](/azure/devops/boards/work-items/best-tool-add-update-link-work-items)  
+- [Best tool to add, update, and link work items](/azure/devops/boards/work-items/best-tool-add-update-link-work-items)  
