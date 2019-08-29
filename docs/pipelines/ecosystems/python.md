@@ -32,7 +32,7 @@ For the exact versions of Python that are preinstalled, refer to [Microsoft-host
 Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/python
 pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
@@ -221,9 +221,9 @@ Then, add a [custom script task](../yaml-schema.md#script) to use `twine` to pub
 - script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
 ```
 
-## Build a container image
+## Build an image and push to container registry
 
-You can also build and publish a Docker container image for your app. For more information, see [Docker](docker.md).
+For your Python app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
 
 ## Related extensions
 

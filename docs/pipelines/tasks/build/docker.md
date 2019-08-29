@@ -7,6 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: shasb
 ms.author: shasb
+author: shashankbarsin
 ms.date: 02/12/2019
 monikerRange: '>= tfs-2018'
 ---
@@ -137,7 +138,7 @@ Following YAML snippet showcases container registry logout using a Docker regist
 ```
 
 ## Other commands and arguments
-The command and argument inputs can be used to run any generic command using docker client binary as shown below - 
+The command and argument inputs can be used to pass additional arguments for build or push commands using docker client binary as shown below - 
 
 ```YAML
 steps:

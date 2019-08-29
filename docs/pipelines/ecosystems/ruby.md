@@ -62,7 +62,7 @@ For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted
 Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the version of Ruby used in your pipeline. This snippet adds Ruby 2.4 or later to the path and sets subsequent pipeline tasks to use it.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/ruby
 pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
@@ -130,6 +130,6 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 ```
 
-## Build a container image
+## Build an image and push to container registry
 
-You can also build and publish a Docker container image for your Ruby app. For more information, see [Docker](docker.md).
+For your Ruby app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).

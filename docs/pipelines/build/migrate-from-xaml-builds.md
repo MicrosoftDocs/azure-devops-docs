@@ -221,7 +221,7 @@ Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (f
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
-See [continuous testing](../languages/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
+See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
 
 #### Publish Symbols
 

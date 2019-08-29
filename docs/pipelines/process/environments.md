@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.manager: shasb
-ms.author: shasb
-author: shashankbarsin
+ms.manager: jillfra
+ms.author: ronai
+author: RoopeshNair
 ms.date: 05/03/2019
 monikerRange: 'azure-devops'
 ---
@@ -17,18 +17,17 @@ monikerRange: 'azure-devops'
 
 Environment represents a collection of resources such as namespaces within Kubernetes clusters, Azure Web Apps, virtual machines, databases, which can be targeted by deployments from a pipeline. Typical examples of environments include *Dev, Test, QA, Staging and Production.*
 
-## Overview
-
+<h2 id="overview">Overview</h2>
 The advantages of using environments include - 
 - **Deployment history** - Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, [deployment history](#deployment-history) of an environment is useful to identify the source of changes.
 - **Traceability of commits and work items** - View jobs within the pipeline run that targeted an environment and the corresponding [commits and work items](#deployment-history) that were newly deployed to the environment. This allows one to track whether a code change (commit) or feature/bug-fix (work items) reached an environment.
 - **Diagnose resource health** - The resource health related information shown in resource views allows one to validate whether the application is functioning at its desired state or whether it has regressed post deployments.
 - **Permissions** - User permissions and pipeline permissions can be used to secure environments by specifying which users and pipelines are allowed to target an environment.
 
-## Resources
+<h2 id="resources">Resources</h2>
 While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, only [Kubernetes resource](environments-kubernetes.md) type is supported, with the roadmap of environments including support for other resources such as virtual machines, databases and more.
 
-## Environment creation
+<h2 id="creation">Environment creation</h2>
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
 2. In your project, navigate to the Pipelines page. Then choose Environments and click on **Create Environment**.
@@ -41,7 +40,7 @@ While environment at its core is a grouping of resources, the resources themselv
 > [!TIP]
 > It is possible to create an empty environment and reference the same from deployment jobs to record the deployment history against the environment.
 
-## Targeting an environment from a deployment job
+<h2 id="target-from-deployment-job">Targeting an environment from a deployment job</h2>
 A [deployment job](deployment-jobs.md) is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources) as shown in the following YAML snippet - 
 
 ```YAML
@@ -63,7 +62,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 > [!NOTE]
 > If the specified environment doesn't already exist, an empty environment is created using the environment name provided.
 
-## Targeting a specific resource within an environment from deployment job
+<h2 id="target-resource-from-deployment-job">Targeting a specific resource within an environment from deployment job</h2>
 It is possible to scope down the target of deployment to a particular resource within the environment as shown below. This allows for recording deployment history on a specific resource within the environment as opposed to recoding the history on all resources in the environment. Also, the steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job as shown below - 
 
 ```YAML
@@ -83,13 +82,13 @@ environment: 'smarthotel-dev.bookings'
             # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
-## Environment in run details
+<h2 id="in-run-details">Environment in run details</h2>
 All  environments targeted by deployment jobs of a specific run of a pipeline can be found under the *Environments* tab of pipeline run details as shown below -
 
   > [!div class="mx-imgBorder"]
   > ![Environments in run details](_img/environments-run.png)
 
-<h2 id="deployment-history"> Deployment history within environments </h2>
+<h2 id="deployment-history">Deployment history within environments</h2>
 The deployment history view within environments provides the following advantages - 
 
 1. View jobs from all pipelines that are targeting a specific environment. Consider the scenario where two microservices, each having its own pipeline, are deploying to the same environment. In that case, the deployment history listing helps identify all pipelines that are impacting this environment and also helps visualize the sequence of deployments by each of these pipelines.
@@ -103,7 +102,7 @@ The deployment history view within environments provides the following advantage
    > [!div class="mx-imgBorder"]
    > ![Commits under deployment history](_img/environments-deployment-history-commits.png)
 
-## Security
+<h2 id="security">Security</h2>
 
 <h3 id="user-permissions">User permissions</h3>
 Set appropriate user permissions to ensure that the users are pre-authorized to define a pipeline that targets the environment.

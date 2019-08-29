@@ -8,7 +8,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: shasb
 ms.author: shasb
 author: shashankbarsin
-ms.date: 04/16/2019
+ms.date: 07/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -54,11 +54,11 @@ Following are the key benefits of this task -
   </tr>
   <tr>
     <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. Regular expression (<a href="https://github.com/google/re2/wiki/Syntax" data-raw-source="[RE2 syntax](https://github.com/google/re2/wiki/Syntax)">RE2 syntax</a>) form specification of path is accepted.</td>
+    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
   </tr>
   <tr>
     <td><code>containers</code><br/>Containers</td>
-    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files<br/>Example: contosodemo.azurecr.io/helloworld:test</td>
+    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files. This multiline input accepts specifying multiple artifact substitutions in newline separated form. For example - <br>containers: |<br>&nbsp&nbspcontosodemo.azurecr.io/foo:test1<br>&nbsp&nbspcontosodemo.azurecr.io/bar:test2<br>In this example, all references to contosodemo.azurecr.io/foo and contosodemo.azurecr.io/bar are searched for in the image field of the input manifest files. For the matches found, the tags test1 and test2 are substituted.</td>
   </tr>
   <tr>
     <td><code>imagePullSecrets</code><br/>Image pull secrets</td>
@@ -83,8 +83,10 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/*
-    containers: 'foobar/demo:$(tagVariable)'
+    manifests: manifests/deployment.yml|manifests/service.yml
+    containers: |
+      foo/demo:$(tagVariable1)
+      bar/demo:$(tagVariable2)
     imagePullSecrets: |
       some-secret
       some-other-secret
@@ -117,7 +119,7 @@ In the above example, the tasks tries to find matches for the image foobar/demo 
   </tr>
   <tr>
     <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. Regular expression (<a href="https://github.com/google/re2/wiki/Syntax" data-raw-source="[RE2 syntax](https://github.com/google/re2/wiki/Syntax)">RE2 syntax</a>) form specification of path is accepted.</td>
+    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
   </tr>
   <tr>
     <td><code>containers</code><br/>Containers</td>
@@ -228,8 +230,16 @@ steps:
     <td>(Optional; Relevant if action == bake and renderType == helm2) Multiline input accepting path to the override files that are to be used when baking manifest files from helm charts</td>
   </tr>
   <tr>
-    <td><code>Overrides</code><br/>Override values</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --values switch when baking manifest files using helm</td>
+    <td><code>overrides</code><br/>Override values</td>
+    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --set switch when baking manifest files using helm</td>
+  </tr>
+  <tr>
+    <td><code>kustomizationPath</code><br/>Kustomization path</td>
+    <td>(Optional; Relevant if action == bake and renderType == kustomize) Path to the directory containing kustomization.yaml</td>
+  </tr>
+  <tr>
+    <td><code>dockerComposeFile</code><br/>Path to docker compose file</td>
+    <td>(Optional; Relevant if action == bake and renderType == kompose) Path to docker compose file</td>
   </tr>
 </table>
 

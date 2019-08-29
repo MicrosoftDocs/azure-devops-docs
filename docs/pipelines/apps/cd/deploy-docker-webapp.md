@@ -36,10 +36,7 @@ https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcor
 ```
 ## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build pipeline that publishes a Docker container image.
-To set up a CI build pipeline, see:
-
-* [Build and push a Docker image](../../languages/docker.md).
+Setup a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
 
 ## Prerequisites
 
