@@ -14,7 +14,7 @@
     href: develop/add-pipeline-decorator.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Samples
   items:
-  - name: C# client library extension samples
+  - name: Azure DevOps Services extension samples
     href: develop/samples-overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Concepts
   items:
