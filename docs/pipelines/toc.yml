@@ -254,6 +254,9 @@
       href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
+  - name: Approvals
+    href: process/approvals.md
+    displayName: approvals, checks
   - name: Artifacts
     items:
     - name: Overview
@@ -276,8 +279,6 @@
       href: artifacts/universal-packages.md
   - name: Caching (preview)
     href: caching/index.md
-  - name: Checks
-    href: process/checks.md
   - name: Conditions
     href: process/conditions.md
   - name: Container jobs
@@ -291,7 +292,7 @@
     items:
     - name: Overview
       href: process/environments.md
-      displayName: environment
+      displayName: environments, deployment, approvals
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
   - name: Expressions
@@ -360,6 +361,7 @@
     href: process/service-containers.md
   - name: Stages
     href: process/stages.md
+    displayName: stage, dependencies, conditions, queuing policies, approvals
   - name: Task groups
     href: library/task-groups.md
   - name: Tasks
