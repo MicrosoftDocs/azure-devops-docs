@@ -11916,6 +11916,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/process/checks.md",
+      "redirect_url": "/azure/devops/pipelines/process/approvals",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/pipelines/build/content-trust.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/containers/content-trust",
       "redirect_document_id": false
