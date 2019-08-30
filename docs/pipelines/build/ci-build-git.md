@@ -74,7 +74,7 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 * * *
 ## Automatically build a change in topic branch
 
-Your are now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
+You're now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
 
 Follow the steps below to edit a file and create a new topic branch.
 
