@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 08/30/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -26,17 +26,43 @@ For example, you can continuously deliver your app to a Windows VM hosted in Azu
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-## Example
+## Get the code
 
-If you want some sample code that works with this guidance, import (into Azure DevOps) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository, based on the desired runtime.
+
+#### [Java](#tab/java)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
-https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/container/Application
+https://github.com/spring-guides/gs-spring-boot-docker.git
+```
+#### [JavaScript](#tab/java-script)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
+https://github.com/MicrosoftDocs/pipelines-javascript-docker
+```
+#### [Python](#tab/python)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+```
+#### [.NET Core](#tab/dotnet-core)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
+```
+* * *
+
 ## Define your CI build pipeline
 
-Setup a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
+Set up a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
 
 ## Prerequisites
 

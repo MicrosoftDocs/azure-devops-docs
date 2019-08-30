@@ -9,7 +9,7 @@ ms.author: phwilson
 author: chasewilson
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.date: 5/6/2019
+ms.date: 08/30/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -258,6 +258,7 @@ Next we recommend that you learn more about creating a CI/CD pipeline for the de
 
 * [Build and deploy to a Java web app](java-webapp.md)
 * [Build and deploy Java to Azure Functions](java-function.md)
+* [Build and deploy Java to Azure Kubernetes service](kubernetes/aks-template.md)
 
 ::: moniker-end
 
