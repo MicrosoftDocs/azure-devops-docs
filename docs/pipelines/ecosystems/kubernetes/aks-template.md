@@ -8,11 +8,12 @@ ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
 ms.manager: jillfra
 ms.author: shasb
 author: shashankbarsin
-ms.date: 08/28/2019
+ms.date: 08/30/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build and deploy to Azure Kubernetes Service
+
 [!INCLUDE [include](../../_shared/version-team-services.md)]
 
  Azure Kubernetes Service manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. This service also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
@@ -20,17 +21,48 @@ monikerRange: 'azure-devops'
 In this step-by-step guide, you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your Azure Kubernetes Service cluster.
 
 ## Prerequisites
+
 [!INCLUDE [include](../../_shared/prerequisites.md)]
 
 [!INCLUDE [include](../../_shared/azure-prerequisites.md)]
 
 ## Get the code
+
+Based on the desired runtime, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository
+
+#### [Java](#tab/java)
+
 [!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/spring-guides/gs-spring-boot-docker.git
+```
+#### [JavaScript](#tab/java-script)
+
+[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
+#### [Python](#tab/python)
+
+[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+```
+#### [.NET Core](#tab/dotnet-core)
+
+[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
+```
+
+* * *
 
 ## Create the Azure resources
+
 [!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
 
 ### Create a container registry
