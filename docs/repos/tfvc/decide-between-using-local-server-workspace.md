@@ -18,68 +18,59 @@ monikerRange: '>= tfs-2015'
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. In most cases, local is best because it provides several advantages. Most notably, you can perform core version control operations even when you're not connected to your Team Foundation Server.
+When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. 
 
 <a name="local"></a>
 
-## Why should I use a local workspace?
+## When should I use a local workspace?
 
-When you use a local workspace, you get the following advantages:
-
-**Work offline easily.** You can quickly begin editing a file when your network connection is unavailable or unreliable. From Solution Explorer you can add, edit, delete, rename, undo, and compare items in your workspace even when you're not connected to your Team Foundation Server.
-
-**Easily restore files that you have deleted locally.** To restore locally deleted files, just [get your files](develop-your-app-team-foundation-version-control.md).
-
-**Visual Studio automatically detects changes.** When you add or delete files outside of Visual Studio, the program automatically detects these changes.
+Use a local workspace if there is not a reliable connection between your computer and the Azure DevOps instance you are connected to, and there will be less than 100,000 items in the workspace. It may be also be preferable to you if you do not need to work as part of a team and strongly prefer working with the filesystem in a manner similar to Git.
 
 >**Important:**  
->One drawback to using a local workspace is that performance degrades as the number of items increases. See the next section for details.
+
+>Using a local workspace can have performance degrade as the number of items approaches or exceeds 100,000. This is because local workspaces keep multiple copies of the same file to enable some version control actions locally due to the DevOps Server connection not being reliably available. This also means there is more room taken up on disk. 
+
+
 
 ## When might I need to use a server workspace?
 
-When you use a server workspace, Visual Studio keeps only one copy of each file. This can significantly reduce disk space usage and improve performance when you have a lot of items. We recommend that you use a server workspace if:
-
--   Your workspace contains more than 100,000 items.
+Use a server workspace when the specific conditions are not met for using a local workspace, or if...
 
 -   You want to use Visual Studio 2010 or earlier versions to work with the workspace.
 
 -   You need to use the **Enable get latest on check-out** option.
 
-**Work offline with difficulty and with poor performance.** When you are offline in a server workspace, you cannot work with your local files because they are read-only until you check them out. You can check out files only from Solution Explorer, and only after you switch to offline mode (as explained below). While you're offline, you can't perform any other operations, such as add, delete, rename, or undo.
-
 >**Tip:**
 You can improve responsiveness by enabling asynchronous checkout. For more information, see [Manage project collection workspace settings for your team](decide-between-using-local-server-workspace.md#Admin_Settings).
 
-### Switch to offline mode when using a server workspace
 
-When you use a server workspace and cannot connect to your Team Foundation Server, Source Control Explorer is disabled. However, if you have local copies of your files in your server workspace, you can still edit them from Solution Explorer. After the server becomes available again, you can check the changes into version control.
+### Working in a server workspace while disconnected
+You can still work in a server workspace if temporarily disconnected from the DevOps instance by taking a solution "offline". Later when the connection is available, you can take the solution "online" to return to the connected behavior. Visual Studio will detect the disconnected condition and take the solution offline automatically, but if you wish to do so manually, these are the steps.
 
->**Tip:**
-If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
-
-### To work with version-controlled files when the server is offline
+### To take a solution offline
 
 1.  From your local working folder, open the solution that you want to work on.
 
     If the server is offline, the **Go Offline** dialog box appears.
 
-2.  Choose **OK**, and then edit your solution files.
+2.  Choose **OK**
 
-3.  On the **File** menu, choose **Save**.
+When saving edits to files in your solution, you may be prompted with the **Save of Read-Only File** dialog box. This is expected. Choose **Overwrite** to remove the write-protection from the file. It should only ask once per file while offline.
 
-4.  In the **Save of Read-Only File** dialog box, choose **Overwrite** to remove the write-protection from the file.
+Visual Studio does not put the solution back online automatically, the user must do that using the following steps.
 
-### To commit your offline changes to the server when it is available
+### To bring your changes online when the DevOps service is available
 
 1.  In **Solution Explorer**, open the context menu for the solution or file, and then choose **Go Online**.
+    - or - 
+    In the **File** menu, under Source Control, choose **Go Online**.
 
     The **Go Online** dialog box appears and shows the changes that you made offline.
 
-2.  Under **Name**, select the check box for each change that you want to check in, and then choose **Go Online**.
+2.  Check the check box for each change that you want to check in, and then choose **Go Online**.
 
     The changes that you made offline are added to Team Foundation version control as pending changes.
 
-3.  In **Solution Explorer**, open the context menu for the files that you edited offline, and then choose **Check In** to commit the changes to the server.
 
 <a name="Admin_Settings"><a/>
 
