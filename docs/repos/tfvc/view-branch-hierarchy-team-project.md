@@ -72,8 +72,8 @@ The options that you can use to modify the view in this window are explained in 
 
 - <strong>A. Show menu <strong>You can select a typical view from the **Show</strong> menu: **All hierarchies</strong>, **Full hierarchy**, **Ancestors and descendants**, **Ancestors**, **Parent and children**, **Children**, or **Customized**.
 
-  >**Tip:**
-  >  If you want to see the full hierarchy for every version control path in your project, including those that are outside the scope of the active project in Source Control Explorer, select **All hierarchies**.
+  > [!TIP]
+  > If you want to see the full hierarchy for every version control path in your project, including those that are outside the scope of the active project in Source Control Explorer, select **All hierarchies**.
 
 - **B. Customize branch list button **Click this button to individually select the specific branches that you want to show.
 

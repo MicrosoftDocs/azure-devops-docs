@@ -94,7 +94,8 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 -   **Owner**: Only the owner of a workspace can use it.
 
-    >**Tip:**  Instead of changing the owner of your workspace when someone else needs to continue your work you can [suspend (or shelve)](suspend-your-work-manage-your-shelvesets.md) your work and then share the shelveset with them.
+    > [!TIP]
+    > Instead of changing the owner of your workspace when someone else needs to continue your work you can [suspend (or shelve)](suspend-your-work-manage-your-shelvesets.md) your work and then share the shelveset with them.
 
 -   **Computer**: This box identifies the dev machine where the workspace exists, and it is read-only. You cannot move a workspace from one computer to another. However, if the name of your dev machine has changed and you want that change to appear in this field, run [tf workspaces /updatecomputername](workspaces-command.md).
 
