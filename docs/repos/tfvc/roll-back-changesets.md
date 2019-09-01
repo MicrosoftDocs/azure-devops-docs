@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 A [changeset](find-view-changesets.md) is a permanent part of the history of your version-controlled items and cannot be undone or removed. However, you can roll back the effects of one or more changesets.
 
-> **Tip:**  
+> [!TIP]
 > You can confirm the changes that result from rolling back some items match what you intend to do before you commit them to the server. See [Tips](roll-back-changesets.md#tips) for details.
 
 **Required permissions**
