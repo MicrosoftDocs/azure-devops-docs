@@ -543,6 +543,11 @@ with administrative privileges. You will be prompted to enter:
 * The name of the Azure DevOps Server or TFS collection database.
 * The name of the Azure DevOps Server or TFS configuration database.
 * The name of the collection.
+* The entities to reindex. This can be one of the following values:
+  - **All**
+  - **Code**
+  - **WorkItem**
+  - **Wiki**
 
 Re-indexing a collection can take from a few minutes 
 to a few hours, depending on the size of the collection. 
