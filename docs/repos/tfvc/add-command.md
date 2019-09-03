@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2015'
 
 Adds files and folders to version control.
 
->**Tip:**  
->Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
+> [!TIP]
+> Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
