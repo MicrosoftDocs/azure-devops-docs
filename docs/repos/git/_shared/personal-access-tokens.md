@@ -72,8 +72,8 @@ Your token is your identity and represents you when it's used. Keep your tokens 
 
 See the following examples of using your PAT.
 
-- Username: anything 
-- Password: your PAT here 
+- Username: yourPAT
+- Password: yourPAT
 
 or
  
