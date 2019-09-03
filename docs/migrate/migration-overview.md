@@ -30,14 +30,11 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 > [!IMPORTANT] 
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
->
-> On Tuesday, September 3rd, support for Azure DevOps Server 2019 RTW imports will be depreciated. If you’re planning on importing from that version, please complete your import before September 3rd or upgrade to Azure DevOps Server 2019.0.1.
-
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
-* Azure DevOps Server 2019
 * Azure DevOps Server 2019.0.1
+* Azure DevOps Server 2019 Update 1
 
 > [!NOTE]
 > The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 

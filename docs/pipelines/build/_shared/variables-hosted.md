@@ -372,6 +372,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.SourceVersionMessage</td>
 <td>The comment of the commit or changeset.
 
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+
 Note: This variable is available in TFS 2015.4.
 </td>
 </tr>
@@ -533,7 +535,54 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>System.HostType</td>
 <td>Set to <code>build</code> if the pipeline is a build. For a release, the values are <code>deployment</code> for a Deployment group job and <code>release</code> for an Agent job.
+</tr>
+
 <tr>
+<td>System.JobAttempt</td>
+<td>Set to 1 the first time this job is attempted, and increments every time the job is retried.</td>
+</tr>
+
+<tr>
+<td>System.JobDisplayName</td>
+<td>The human-readable name given to a job.</td>
+</tr>
+
+<tr>
+<td>System.JobName</td>
+<td>The name of the job, typically used for expressing dependencies and accessing output variables.</td>
+</tr>
+
+<tr>
+<td>System.PhaseAttempt</td>
+<td>Set to 1 the first time this phase is attempted, and increments every time the job is retried.<br>
+<br>
+<b>Note:</b> "Phase" is a mostly-redundant concept which represents the design-time for a job (whereas job was the runtime version of a phase). We've mostly removed the concept of "phase" from Azure Pipelines. Matrix and multi-config jobs are the only place where "phase" is still distinct from "job". One phase can instantiate multiple jobs which differ only in their inputs.</td>
+</tr>
+
+<tr>
+<td>System.PhaseDisplayName</td>
+<td>The human-readable name given to a phase.</td>
+</tr>
+
+<tr>
+<td>System.PhaseName</td>
+<td>A string-based identifier for a job, typically used for expressing dependencies and accessing output variables.</td>
+</tr>
+
+<tr>
+<td>System.StageAttempt</td>
+<td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
+</tr>
+
+<tr>
+<td>System.StageDisplayName</td>
+<td>The human-readable name given to a stage.</td>
+</tr>
+
+<tr>
+<td>System.StageName</td>
+<td>A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables.</td>
+</tr>
 
 <tr>
 <td>System.PullRequest.IsFork</td>
