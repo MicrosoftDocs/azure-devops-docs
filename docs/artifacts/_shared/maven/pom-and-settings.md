@@ -44,15 +44,9 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
     <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
     <server>
       <id>dev.azure.com-yourFeedName</id>
-      <configuration>
-        <httpHeaders>
-          <property>
-            <name>Authorization</name>
-            <!--The generated token expires on or before 7/19/2017-->
-            <value>Basic Y2Fqb...</value>
-          </property>
-        </httpHeaders>
-      </configuration>
+      <username>Authorization</username>
+        <!--The generated token expires on or before 7/19/2017-->
+      <password>Y2Fqb...</password>
     </server>
   </servers>
 </settings>

@@ -159,7 +159,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/languages/dotnet-core.md#run-your-tests).
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"

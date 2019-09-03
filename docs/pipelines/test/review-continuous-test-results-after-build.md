@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
 
-Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
+Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
@@ -65,8 +65,8 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
   [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../languages/javascript.md#run-unit-tests)
-  - [Publishing fully-formed test reports for Python test runners](../languages/python.md#test)
+  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
   that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),

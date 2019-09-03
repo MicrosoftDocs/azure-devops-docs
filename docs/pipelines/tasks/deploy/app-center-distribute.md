@@ -70,7 +70,7 @@ This example pipeline builds an Android app, runs tests, and publishes the app u
 # Android
 # Build your Android project with Gradle.
 # Add steps that test, sign, and distribute the APK, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 
 pool:
   vmImage: 'macOS-latest'

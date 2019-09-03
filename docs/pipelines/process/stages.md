@@ -358,3 +358,30 @@ defined.
   after the post-deployment approval for release **R1** is completed.
 
 * * *
+
+## Approvals
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range="> azure-devops-2019"
+
+You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
+
+Currently, manual approval checks are supported on environments. 
+For more information, see [Approvals](approvals.md).
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
+Approvals are not yet supported in YAML pipelines in this version of Azure DevOps Server.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in this version of TFS.
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
+
+* * *

@@ -87,6 +87,9 @@ Single folder mapping within a version control hierarchy is useful because it li
 
 If you delete a workspace that contains pending changes, Team Foundation cancels the pending changes as part of the delete process. Deleting a workspace does not delete the files and folders on the client computer that were in that workspace.
 
+> [!NOTE]
+> Commands run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if using PowerShell's `Start()` method to run commands, as this option can be automatically set.
+
 ### Editing a Workspace
 
 You can change the following workspace attributes:  
