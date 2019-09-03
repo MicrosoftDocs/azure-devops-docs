@@ -99,7 +99,7 @@
       href: manage-large-files.md
 - name: How-to Guides
   items:
-  - name: Authenticate with SSH
+  - name: Authenticate with SSHAuthenticate with SSH
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
@@ -157,6 +157,8 @@
     href: mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
     href: ../../pipelines/build/triggers.md
+  - name: Work item completion on commit
+    href: resolution-mentions.md
   - name: Work with tags
     href: git-tags.md
 - name: Reference
