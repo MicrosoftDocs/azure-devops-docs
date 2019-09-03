@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 6/28/2019
+ms.date: 09/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -171,6 +171,53 @@ To pass a secret to a script, use the **Environment** section of the scripting t
 ## Share variables across pipelines
 
 To share variables across multiple pipelines in your project, you should set them using [variable groups](../library/variable-groups.md) under **Library** using the web interface. For more information, see [variable groups](../library/variable-groups.md).
+
+## Use output variables from tasks
+
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
+
+#### [YAML](#tab/yaml/)
+
+For these examples, assume we have a task called `MyTask` which sets an output variable called `MyVar`.
+
+### Use outputs in the same job
+
+```yaml
+steps:
+- task: MyTask@1  # this step generates the output variable
+  name: ProduceVar  # because we're going to depend on it, we need to name the step
+- script: echo $(ProduceVar.MyVar) # this step uses the output variable
+```
+
+### Use outputs in a different job
+
+```yaml
+jobs:
+- job: A
+  steps:
+  - task: MyTask@1  # this step generates the output variable
+    name: ProduceVar  # because we're going to depend on it, we need to name the step
+- job: B
+  dependsOn: A
+  variables:
+    # map the output variable from A into this job
+    varFromA: $[ dependencies.A.outputs['ProduceVar.MyVar'] ]
+  steps:
+  - script: echo $(varFromA) # this step uses the mapped-in variable
+```
+
+#### [Classic](#tab/classic/)
+
+### Use outputs in the same job
+
+In the **Output variables** section, give the producing task a reference name.
+Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableName>)` to refer to output variables.
+
+### Use outputs in a different job
+
+You must use YAML to consume output variables in a different job.
+
+* * *
 
 <h2 id="set-in-script">Set variables in scripts</h2>
 
