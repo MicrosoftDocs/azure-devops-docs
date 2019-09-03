@@ -1639,7 +1639,7 @@ steps:
 
 # [Example](#tab/example)
 If you want to modify the current repository using Git Operations and/or load Git Submodules
-Note: Dont forget to give the proper permissions to "Project Collection Build Service Accounts" in the project security.
+Note: Don't forget to give the proper permissions to "Project Collection Build Service Accounts" in the project security.
 
 ```yaml
 steps:
