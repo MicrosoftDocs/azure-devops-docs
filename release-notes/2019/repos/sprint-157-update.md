@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 09/02/2019
+ms.date: 09/03/2019
 ---
 
 # Azure Repos - Sprint 157 Update
