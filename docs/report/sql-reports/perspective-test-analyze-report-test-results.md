@@ -165,7 +165,7 @@ You can link test cases to other work items such as user stories, requirements, 
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

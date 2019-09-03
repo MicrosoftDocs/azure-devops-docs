@@ -37,8 +37,8 @@ over time by reducing the test debt.
 ## Example
 
 To view an example of publishing code coverage results for your choice of language,
-see the **Languages** section of the Pipelines topics. For example, collect and publish
-code coverage for [JavaScript](../languages/javascript.md) using Istanbul.
+see the **Ecosystems** section of the Pipelines topics. For example, collect and publish
+code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 
 ## View results 
 

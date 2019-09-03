@@ -73,11 +73,11 @@ This will bring up instructions on how to publish a package to your feed by usin
 
 ### Publish Python packages from your builds
 
-If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](/azure/devops/pipelines/targets/pypi).
+If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](../../pipelines/targets/pypi.md).
 
 ### Build Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azure-devops).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](../../pipelines/ecosystems/python.md).
 
 ## Resources
 

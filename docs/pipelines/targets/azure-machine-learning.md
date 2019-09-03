@@ -30,7 +30,7 @@ Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-l
 
 ## Get the code
 
-[!INCLUDE [include](../languages/_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../ecosystems/_shared/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-azureml
@@ -40,16 +40,17 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](../languages/_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/_shared/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../languages/_shared/create-project.md)]
+[!INCLUDE [include](../ecosystems/_shared/create-project.md)]
 
 ## Create the pipeline
 
 You can use 1 of the following approach to create a new pipeline.
 
 #### [YAML](#tab/yaml/)
-[!INCLUDE [include](../languages/_shared/create-pipeline-before-template-selected.md)]
+
+[!INCLUDE [include](../ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
