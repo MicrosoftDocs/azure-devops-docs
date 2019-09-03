@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 08/12/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -91,13 +91,12 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788" data-raw-source="[Streaming for Azure DevOps Auditing](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788)">Streaming for Azure DevOps Auditing</a></td><td>Administration</td><td>TBD</td></tr>
         </tr>
         <tr>
-            <td rowspan="7"><strong>2019 Q4</strong></td>
+            <td rowspan="6"><strong>2019 Q4</strong></td>
             <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456" data-raw-source="[Hide field based on group membership](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456)">Hide field based on group membership</a></td><td>Boards</td><td>TBD</td>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465" data-raw-source="[Full support for parent field on backlogs, boards, and queries](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465)">Full support for parent field on backlogs, boards, and queries</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833" data-raw-source="[Universal Packages feature updates](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833)">Universal Packages feature updates</a></td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281" data-raw-source="[Auditing for pipeline events](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281)">Auditing for pipeline events</a></td><td>Pipelines</td><td>TBD</td>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749" data-raw-source="[Page visits in Wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749)">Page visits in Wiki</a></td><td>Wiki</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574752" data-raw-source="[Tag Wiki pages](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574752)">Tag Wiki pages</a></td><td>Wiki</td><td>TBD</td>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261" data-raw-source="[Team-less Dashboards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261)">Team-less Dashboards</a></td><td>Reporting</td><td>TBD</td>
         </tr>
         <tr>
@@ -127,6 +126,28 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="19"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
+            <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
+         </tr>
+        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>Future</td></tr>      
+        <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Taskboard live updates</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Resolve work items via commits using key words</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>Future</td></tr>            
+        <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>Future</td></tr>
         <tr>
             <td rowspan="27"><a href="2019/sprint-156-update.md" data-raw-source="[12 August 2019](2019/sprint-156-update.md)">12 August 2019</a></td>
             <td>New UI to request access to an organization</td><td>General</td><td>Future</td>
