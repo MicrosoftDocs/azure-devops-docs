@@ -549,6 +549,8 @@
         href: tasks/package/cocoapods.md
       - name: Conda Environment
         href: tasks/package/conda-environment.md
+      - name: Maven Authenticate
+        href: tasks/package/maven-authenticate.md
       - name: npm
         href: tasks/package/npm.md
       - name: npm Authenticate
