@@ -56,6 +56,8 @@ The **WebLayout** and updated **Control** elements introduce several new element
 > The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
 
 <a id="header-customization" />
+
+
 ## Header customization
 
 In the new web form layout, the system manages several header elements within the **SystemControls** element. These include: 
