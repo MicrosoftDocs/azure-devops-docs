@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 01/31/2019
+ms.date: 09/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -111,6 +111,48 @@ or a pivot table chart. Choose **Tester** for the rows and
 **Resolution** for the columns. (Resolution type for test 
 results can only be set using Microsoft Test Manager.)
 
+## Progress Report
+To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
+1. How much testing is complete?
+2. What is the current status - how many tests have passed, failed or are blocked?
+3. Is the testing likely to complete in time?
+4. What is the rate of execution on a daily basis?
+5. Get a breakdown by test plan and suite to understand where execution is going slow or has many failed or blocked tests.
+6. View the progress each suite has made within a test plan and identify the areas that need attention.
+
+### Configuring the report
+By navigating to Test Plans > Progress Report*, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
+
+![left nav](_img/progress-report/navigation.png)
+
+### Understanding the report
+The progress report consists of three sections:
+1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, refer [here](new-test-plans-page.md).
+2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
+3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double clicking on it.
+
+![snippet](_img/progress-report/snippet.png)
+
+An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (i.e. tests are being executed) and the number of passed tests are on the rise.
+
+![good trend](_img/progress-report/goodtrend.png)
+
+An example of an unhealthy outcome trend is as follows because as time is progressing, there is no significant execution occurring and the # of passed and failed tests are continuing to remain flat. In such situations, use the details card to drill down and take suitable actions.
+
+![bad trend](_img/progress-report/badtrend.png)
+
+### Filtering
+
+By using the filter bar you can filter this report by Configuration, Tester, Test Case priority, and Test Case Assigned to. As example: you can filter by configuration 'Chrome' and then 'Edge' to understand where the execution and pass % are higher. Note: Tester is the person to whom the test point is assigned for execution whereas Assigned to is the person who is responsible for the reusable test case.
+
+### Behavior
+When using this progress report it is good to know the following points:
+1. The report lets you view data for one or more Test Plans in a single project. To view data across projects, use the [OData APIs](../report/extend-analytics/data-model-analytics-service.md). This report is also rendered using the same OData APIs. 
+2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
+3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
+4. Data processing for this report is occurring approximately every 15 mins. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in this report. 
+5. You can leverage this report for test plans created on or after September 1, 2019.
+
 ## Track test case status
 
 Use test case charts to find out the progress of your 
@@ -150,24 +192,24 @@ create for test cases.
 <a name="ExamplesTestCase"></a>
 ### Test case examples
 
-**How can I track burndown for test case creation?**
+**How can I track burn down for test case creation?**
 
-Use a stacked area trend chart to view the burndown for 
+Use a stacked area trend chart to view the burn down for 
 how many test cases are ready to be run. Choose **State** 
 for the stack by field and **Ascending** for the sort field.
 
 ![Create a stacked area chart: For Stack By, choose State, then sort by ascending value](_img/track-test-status/ExampleBurndownReadiness.png)
 
-**How can I track burndown for automation status?**
+**How can I track burn down for automation status?**
 
-Use a stacked area trend chart to view the burndown 
+Use a stacked area trend chart to view the burn down 
 for how many test cases have been automated. Choose 
 **Automation status** for the stack by field and **Ascending** 
 for the sort field.
 
 **If multiple teams own test cases in my test plan, can I see how many each team owns and the priorities of the tests?**
 
-If your teams are organized by area path, then your can use a 
+If your teams are organized by area path, then you can use a 
 test case pie chart. Choose **Area path** for the group by field.
 
 If you want to know the priorities of these tests, then create 
@@ -198,6 +240,9 @@ Learn more about
 [dashboards](../report/dashboards.md). 
 Or learn more about
 [team administration](../organizations/settings/manage-teams.md).
+
+### Feedback
+We would like you to know your feedback about the charts and progress report at azuretestplans@microsoft.com. In the process, do share screenshots for us to understand better.
 
 ## See also
 
