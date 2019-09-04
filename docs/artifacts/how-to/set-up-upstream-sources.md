@@ -31,11 +31,13 @@ Selecting this option now means your feed will be configured to find and use pac
 2. On the **Upstream sources** tab, if you don't have any upstream sources you'll see a dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, choose _Public source_
 
-    > **NOTE:** Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+    > [!NOTE]
+    > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
 4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
 
-    > **NOTE:** You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
+    > [!NOTE]
+    > You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
 
 ## Add an Azure Artifacts feed in your organization as an upstream source
 

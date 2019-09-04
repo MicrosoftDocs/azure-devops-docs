@@ -28,7 +28,8 @@ To perform these procedures, you must be a member of the **Team Foundation Admin
 
 1.  Check in any files that are checked out to the team member who has left.
 
-    >**Note:**  If the member's checked-out files do not need to be saved, omit this step.
+    > [!NOTE]
+    > If the member's checked-out files do not need to be saved, omit this step.
 
 2.  Delete the workspaces of the member who has left.
 

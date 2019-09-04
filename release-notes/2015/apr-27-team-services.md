@@ -22,7 +22,10 @@ This new setting is per team and work item type, and allows for up to 10 additio
 
 ![Configuring additional fields](_img/4_27_02.png)
 
-In a few more sprints we’ll have even more here, letting you use conditional formatting rules based on field/value pairs. Stay tuned. **Note:** The option to show additional fields is available only on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
+In a few more sprints we’ll have even more here, letting you use conditional formatting rules based on field/value pairs. Stay tuned.
+
+> [!NOTE]
+> The option to show additional fields is available only on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
 
 ## Kanban board filtering
 

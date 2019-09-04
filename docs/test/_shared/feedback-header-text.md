@@ -16,8 +16,9 @@ can provide feedback using the flow described in
 * [Voluntary feedback](../voluntary-stakeholder-feedback.md#voluntary)
 * [Track requests](../track-stakeholder-feedback.md#track)
 
->**NOTE**: This lightweight end-to-end flow is applicable only for web apps
-and by using Azure DevOps or TFS 2017. To get feedback for desktop apps, or for 
-earlier versions of TFS, use the feedback flow described in
-[this topic](../../project/feedback/get-feedback.md)
-about the Microsoft Feedback Client.
+> [!NOTE]
+> This lightweight end-to-end flow is applicable only for web apps
+> and by using Azure DevOps or TFS 2017. To get feedback for desktop apps, or for
+> earlier versions of TFS, use the feedback flow described in
+> [this topic](../../project/feedback/get-feedback.md)
+> about the Microsoft Feedback Client.

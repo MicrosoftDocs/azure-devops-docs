@@ -38,8 +38,8 @@ Later, as you develop functionality in the workspace on your dev machine, your c
 
 In special cases (for example, to fix a regression bug), you might need to get and work with a specific version of one or more files.
 
->**Note:**
->  Keep in mind that if you get an older version of a file, make changes to it, and then try to check it in, there is an increased chance that you will need to [resolve conflicts](resolve-team-foundation-version-control-conflicts.md) before you can complete the check-in.
+> [!NOTE]
+> Keep in mind that if you get an older version of a file, make changes to it, and then try to check it in, there is an increased chance that you will need to [resolve conflicts](resolve-team-foundation-version-control-conflicts.md) before you can complete the check-in.
 
 ### To get a specific version of some files from the History window
 

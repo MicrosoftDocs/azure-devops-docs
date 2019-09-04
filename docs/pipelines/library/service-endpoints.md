@@ -223,7 +223,8 @@ The dialog offers two main modes:
 
 For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
-**NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+> [!NOTE]
+> If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 *****
 

@@ -119,7 +119,8 @@ You want to copy just the readme and the files needed to run this C# console app
         |-- ConsoleApplication1.csproj
 ```
 
-> **Note:** _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
+> [!NOTE]
+> _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
 
 On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
