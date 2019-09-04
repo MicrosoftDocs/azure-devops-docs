@@ -51,8 +51,8 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download an artifact named 'WebApp' to 'bin' in $(Build.SourcesDirectory)
 - task: DownloadPipelineArtifact@2
   inputs:
-    artifact: 'WebApp'
-    path: $(Build.SourcesDirectory)/bin
+    artifactName: 'WebApp'
+    targetPath: $(Build.SourcesDirectory)/bin
 ```
 
 ### Download artifacts from a specific project/pipeline
@@ -61,10 +61,10 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download artifacts from a specific pipeline.
 - task: DownloadPipelineArtifact@2
   inputs:
-    source: 'specific'
+    buildType: 'specific'
     project: 'FabrikamFiber'
-    pipeline: 12
-    runVersion: 'latest'
+    pipelineId: 12
+    buildVersionToDownload: 'latest'
 ```
 
 ### Download artifacts from a specific branch
@@ -73,11 +73,11 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download artifacts from a specific branch with a tag
 - task: DownloadPipelineArtifact@2
   inputs:
-    source: 'specific'
+    buildType: 'specific'
     project: 'FabrikamFiber'
-    pipeline: 12
-    runVersion: 'latestFromBranch'
-    runBranch: 'refs/heads/master'
+    pipelineId: 12
+    buildVersionToDownload: 'latestFromBranch'
+    branchName: 'refs/heads/master'
     tags: 'testTag'
 ```
 
@@ -87,13 +87,13 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download an artifact named 'WebApp' from a specific build run to 'bin' in $(Build.SourcesDirectory)
 - task: DownloadPipelineArtifact@2
   inputs:
-    source: 'specific'
+    buildType: 'specific'
     artifact: 'WebApp'
-    path: $(Build.SourcesDirectory)/bin
+    targetPath: $(Build.SourcesDirectory)/bin
     project: 'FabrikamFiber'
-    pipeline: 12
-    runVersion: 'specific'
-    runId: 2995
+    pipelineId: 12
+    buildVersionToDownload: 'specific'
+    pipelineId: 2995
 ```
 
 ## Q&A
