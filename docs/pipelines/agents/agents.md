@@ -276,18 +276,19 @@ ensure that the agent starts automatically if the machine is restarted.
    or run the agent on a workgroup computer where the domain policies
    do not apply.
 
-   **Note:** There are security risks when you enable automatic logon
-   or disable the screen saver because you enable other users to walk
-   up to the computer and use the account that automatically logs on. If you configure the agent to run
-   in this way, you must ensure the computer is physically protected;
-   for example, located in a secure facility. If you use
-   Remote Desktop to access the computer on which an agent is running
-   with auto-logon, simply closing the Remote Desktop causes the
-   computer to be locked and any UI tests that run on this agent may
-   fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
-   command to disconnect from Remote Desktop. For example:
-
-   `%windir%\System32\tscon.exe 1 /dest:console`
+   > [!NOTE]
+   > There are security risks when you enable automatic logon
+   > or disable the screen saver because you enable other users to walk
+   > up to the computer and use the account that automatically logs on. If you configure the agent to run
+   > in this way, you must ensure the computer is physically protected;
+   > for example, located in a secure facility. If you use
+   > Remote Desktop to access the computer on which an agent is running
+   > with auto-logon, simply closing the Remote Desktop causes the
+   > computer to be locked and any UI tests that run on this agent may
+   > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
+   > command to disconnect from Remote Desktop. For example:
+   >
+   > `%windir%\System32\tscon.exe 1 /dest:console`
 
 <h2 id="account">Agent account</h2>
 

@@ -28,8 +28,8 @@ The team recently began [adopting Visual Studio and Team Foundation Server for d
 **Overview of this chapter**  
 Peter briefly reviews his backlog and selects the task he will work on today. He writes unit tests for the code he plans to develop. Typically, he runs the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. He often discusses the interface of his code with colleagues who will use the method he is writing.
 
->**Note:**  
->The My Work and Code Coverage features that are discussed in this topic are available only in Visual Studio Premium and Visual Studio Ultimate.
+> [!NOTE]
+> The My Work and Code Coverage features that are discussed in this topic are available only in Visual Studio Premium and Visual Studio Ultimate.
 
 ## Review personal backlog and prepare tasks to begin work
 

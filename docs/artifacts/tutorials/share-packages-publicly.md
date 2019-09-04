@@ -50,7 +50,8 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
 
 Now that you have a public feed, it's time to populate it with packages! 
 
-> **Note:** During the public preview, public feeds cannot store Universal Packages.
+> [!NOTE]
+> During the public preview, public feeds cannot store Universal Packages.
 
 If you're publishing using NuGet or Dotnet _and_ you're using a credential provider to authenticate, public feeds require you to use the new credential provider instead of the older `CredentialProvider.VSS.exe`. You can learn more about the new credential provider, including install and setup instructions in the [artifacts-credprovider GitHub repo](https://github.com/Microsoft/artifacts-credprovider).
 
