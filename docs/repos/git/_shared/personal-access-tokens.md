@@ -77,7 +77,7 @@ See the following examples of using your PAT.
 
 or
  
-- git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
+- git clone https://anything:{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 
 
 
