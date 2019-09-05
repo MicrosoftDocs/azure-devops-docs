@@ -19,11 +19,11 @@ We now have a new Azure Pipelines task **Azure App Service Settings** which supp
 
 ### Azure App Service now supports Swap with preview
 
-Azure App Service now supports **Swap with preview** on its deployment slots. This is a good way to validate the app with production configuration before the app is actually swapped into production. 
+Azure App Service now supports **Swap with preview** on its deployment slots. This is a good way to validate the app with production configuration before the app is actually swapped from a staging slot into production slot. This would also ensure that the target/production slot doesn't experience downtime.
 
 Azure App Service task now supports this multi-phase swap through the following new actions:
 
-* **Start Swap with Preview** - Initiates a swap with a preview (multi-phase swap) and applies target slot configuration to the source slot.
+* **Start Swap with Preview** - Initiates a swap with a preview (multi-phase swap) and applies target slot (for example, the production slot) configuration to the source slot.
 * **Complete Swap with Preview** - When you're ready to complete the pending swap, select the Complete Swap with Preview action.
 * **Cancel Swap with Preview** - To cancel a pending swap, select Cancel Swap with Preview.
 
