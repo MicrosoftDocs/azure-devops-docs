@@ -19,12 +19,14 @@ ms.date: 08/26/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
+Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product and the Excel plugin is no longer required.
+
 > [!NOTE]  
 > This feature is currently under private preview. <a href="mailto:dahellem@microsoft.com">Please email us directly</a> if you wish to enroll.
 
-## Importing new workitems
+## Importing new work items
 
-1. Create a local csv file and open in VS Code or Excel
+1. Create a local ***import.csv*** file and open it in VS Code or Excel
 
 2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In this example we also included the Priority field.
 
@@ -37,25 +39,25 @@ ms.date: 08/26/2019
    Issue,Remove old test code,2
    ```
 
-3. From the queries hub, click on the "Import Work Items" option
+3. From the queries hub in Azure Boards, click on the "Import Work Items" option.
 
    ![Import Work Items Image](_img/import-csv/import-1.png)
 
-4. Select your csv file and click the Import button
+4. Select your CSV file and click the "Import" button.
 
    ![Import Work Items Button Image](_img/import-csv/import-2.png)
 
-5. The import process will load the imported work items into the queries view for review. The work items have not been saved yet. Click "Save Items" to save the work items.
+5. The import process will load the imported work items into the queries view for review. The work items have **not** been saved yet. You must click "Save Items" to save the work items.
 
    ![Import Work Items Save Image](_img/import-csv/import-3.png)
 
-6. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the priority field.
+6. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the priority field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
    ![Import Work Items Save Image](_img/import-csv/import-error-1.png)
 
-## Updating existing workitems
+## Updating existing work items
 
-1. Create a query that contains all the columns you want to export and possibly edit. Save your query and select "Export to CSV" to save the csv file to your local machine.
+1. Create a query that contains all the columns you want to export and possibly edit. Save your query and select "Export to CSV" to save the data.csv file to your local machine.
 
    ![Import Work Items Save Image](_img/import-csv/import-update-1.png)
 
@@ -70,9 +72,9 @@ ms.date: 08/26/2019
    "16508","Issue","Remove old test code",,"To Do","2",
    ```
 
-2. Make the edits to your work items. When editing work items, the csv file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Plus any optional fields.
+2. Make the edits to your work items. When editing work items, the CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Plus any optional fields.
 
-   In this example we are going to change some values on the existing working items.
+   In this example we are going to change several values on the existing working items.
 
    ```
    ID,Work Item Type,Title,Assigned To,State,Priority,Tags
@@ -83,21 +85,21 @@ ms.date: 08/26/2019
    "16508","Issue","Remove old test code",,"To Do","3",
    ```
 
-3. Save the file and import (see step 4-6 above)
+3. Save the file and import (see steps 4-6 above)
 
 4. Any work items with value changes will be highlighted in bold. Click "Save Items" to apply the changes.
 
    ![Import Work Items Save Image](_img/import-csv/import-update-2.png)
 
-5. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the Assigned To field that needs to be fixed
+5. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
    ![Import Work Items Save Image](_img/import-csv/import-update-error-1.png)
 
 ## Q&A
 
-### Can I import new items and update existing items in the same vsc file?
+### Can I import new items and update existing items in the same CSV file?
 
-Absolutely. Leave the ID field empty for any new work items. See the last Epic item in the below example.
+Absolutely! Leave the ID field empty for any new work items. In the example below, note the Epic item is missing the ID.
 
 ```
 ID,Work Item Type,Title,Assigned To,State,Priority,Tags
@@ -109,9 +111,9 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 ,"Epic","Track Telementry for data imports",,"To Do","2",
 ```
 
-### Can I import a csv file that has a child parent relationship?
+### Can I import a CSV file that has a child parent relationship?
 
-Yes, child work items can be created by having indented title columns. The below example creates 3 child Issues under an Epic
+Yes, child work items can be created by having indented title columns. The below example creates 3 child Issues under an Epic.
 
 ```
 ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
