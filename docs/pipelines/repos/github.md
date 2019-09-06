@@ -643,7 +643,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ### Overriding YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the classic editor, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
+PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
 ![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
