@@ -470,12 +470,12 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 Scheduled triggers are evaluated and added to the build schedule when the following events occur.
 
 * A pipeline is created.
-* The pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A new branch is created. If the version of the pipeline's YAML file in that branch has a scheduled trigger that matches the current branch name, that scheduled trigger is added to the build schedule.
+* A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
+* A new branch is created. If the version of a pipeline's YAML file in that branch has a scheduled trigger that matches the new branch name, that scheduled trigger is added to the build schedule.
 
 ### Example of scheduled triggers for multiple branches
 
-For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the master branch on a daily basis.
+For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
 
 ```yaml
 schedules:
