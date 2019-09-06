@@ -492,7 +492,7 @@ schedules:
 
 Next, a new branch is created based off of `master`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
 
-If `new-feature` is added to the `branches` list and this change is pushed, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
+If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
 
 ```yaml
 schedules:
