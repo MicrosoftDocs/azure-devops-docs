@@ -376,6 +376,10 @@ pr: none
 
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
+> [!NOTE]
+> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> For more information, see [Overriding YAML triggers](../build/triggers.md#overriding-yaml-triggers).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
