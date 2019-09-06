@@ -26,8 +26,8 @@ For a variety of reasons, sometimes you need to set aside some or all of your wo
 
 -   **Code Review:** You want another team member to perform a code review of your pending changes.
 
-	>**Tip:**  
-	>If you are using Visual Studio Premium or a more powerful edition, you can use the [Code Review](day-life-alm-developer-write-new-code-user-story.md) feature.
+	> [!TIP]
+	> If you are using Visual Studio Premium or a more powerful edition, you can use the [Code Review](day-life-alm-developer-write-new-code-user-story.md) feature.
 
 -   **Private Build:** Before you check in your changes, you can use your automated build system to build and test your code.
 
@@ -59,8 +59,8 @@ When you are ready to resume the work, go the **Suspended & Shelved Work** secti
 
 ## Shelve your changes
 
->**Tip:**
-In either Solution Explorer or Source Control Explorer, you can shelve a specific subset of the files that you are working with: select them, open their context menu, and then choose **Shelve Pending Changes**. The **Pending Changes** page appears, ready to shelve only the files you selected.
+> [!TIP]
+> In either Solution Explorer or Source Control Explorer, you can shelve a specific subset of the files that you are working with: select them, open their context menu, and then choose **Shelve Pending Changes**. The **Pending Changes** page appears, ready to shelve only the files you selected.
 
 ### To shelve your changes
 
@@ -98,8 +98,8 @@ In either Solution Explorer or Source Control Explorer, you can shelve a specifi
 
     ![Find shelvesets](_img/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
-	>**Tip:**  
-	>If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
+	> [!TIP]
+	> If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
 
 4.  A list of shelvesets appears in the **Results** list. You can type a filter to reduce the size of the list.
 

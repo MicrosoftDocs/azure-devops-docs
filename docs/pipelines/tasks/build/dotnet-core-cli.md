@@ -177,7 +177,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 ### Run tests in your repository
 
 ```YAML
-# Run tests and publish test results.
+# Run tests and auto publish test results.
 - task: DotNetCLI@2
   inputs:
     command: 'test'

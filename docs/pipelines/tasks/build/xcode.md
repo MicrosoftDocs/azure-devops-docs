@@ -235,7 +235,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to A
 
 ## Example
 
-[Build your Xcode app](../../languages/xcode.md)
+[Build your Xcode app](../../ecosystems/xcode.md)
 
 ## Open source
 

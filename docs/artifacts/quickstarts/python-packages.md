@@ -13,6 +13,8 @@ monikerRange: '=azure-devops'
 
 # Get started with Python packages in Azure Artifacts
 
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+
 This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
 
 ## Create a feed
@@ -71,11 +73,11 @@ This will bring up instructions on how to publish a package to your feed by usin
 
 ### Publish Python packages from your builds
 
-If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](/azure/devops/pipelines/targets/pypi).
+If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](../../pipelines/targets/pypi.md).
 
 ### Build Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azure-devops).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](../../pipelines/ecosystems/python.md).
 
 ## Resources
 

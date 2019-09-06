@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 08/06/2019
+ms.date: 09/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATS.
+Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATs.
 
 Azure DevOps uses enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication. Since PATs are an alternate form of user authentication, using a PAT gives you the same access level. If you create a PAT with a narrower [scope](../../integrate/get-started/authentication/oauth.md#scopes), your access is limited to that scope.
 
@@ -26,11 +26,11 @@ For non-Microsoft tools that integrate into Azure DevOps but don't support Micro
 
 [!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
 
-To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
+For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
 
-To learn more about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
+For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
-For administrators to revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
+For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
 
 ## Frequently asked questions  
 

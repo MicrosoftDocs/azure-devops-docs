@@ -22,11 +22,11 @@ The task works on cross-platform agents running Windows, Linux, or Mac
 and uses several different [underlying deployment technologies](#deploy-methods).
 
 The task works for [ASP.NET](../../apps/aspnet/build-aspnet-4.md),
-[ASP.NET Core](../../languages/dotnet-core.md),
-[PHP](../../languages/php.md),
-[Java](../../languages/java.md),
-[Python](../../languages/python.md),
-[Go](../../languages/go.md), and
+[ASP.NET Core](../../ecosystems/dotnet-core.md),
+[PHP](../../ecosystems/php.md),
+[Java](../../ecosystems/java.md),
+[Python](../../ecosystems/python.md),
+[Go](../../ecosystems/go.md), and
 [Node.js](https://www.visualstudio.com/docs/release/examples/nodejs/node-to-azure-webapps) based web applications.
 
 The task can be used to deploy to a range of Azure App Services such as:
