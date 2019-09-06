@@ -89,7 +89,5 @@ We've made updates to several of the Azure Pipelines hosted VM images. The follo
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases). 
 
-For a full list of tools available for a particular image, go to **Settings > Agent pools > Details**.
-
 > [!NOTE]
 > We will remove Ruby 2.3 from all images in a coming update as it [reached end-of-life on March 31, 2019](https://www.ruby-lang.org/en/news/2019/03/31/support-of-ruby-2-3-has-ended/).
