@@ -74,3 +74,20 @@ Previously, it was possible to use the service account option to setup Kubernete
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/157_07.png)
+
+### Updates to hosted pipelines images
+
+We've made updates to several of the Azure Pipelines hosted VM images. The following are some the highlights in this update:
+
+* Added AWS, Google Cloud, and Zeit CLIs to Ubuntu 16.04
+* Updated Rust 1.36 to 1.37 on Ubuntu 16.04, VS2017, and VS2019
+* Updated Ruby 2.6.2 to 2.6.3 on Ubuntu 16.04
+* Updated Ruby 2.4.5 to 2.4.6, 2.5.3 to 2.5.5, and 2.6.1 to 2.6.3 on VS2017 and VS2019
+* Updated Google Chrome and web driver from 75 to 76
+* Added WIX Toolset Visual Studio Extension to VS 2019
+* Various bug fixes
+
+You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases). 
+
+> [!NOTE]
+> We will remove Ruby 2.3 from all images in a coming update as it [reached end-of-life on March 31, 2019](https://www.ruby-lang.org/en/news/2019/03/31/support-of-ruby-2-3-has-ended/).
