@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/03/2019
+ms.date: 09/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,11 +26,11 @@ For non-Microsoft tools that integrate into Azure DevOps but don't support Micro
 
 [!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
 
-To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
+For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
 
-To learn more about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
+For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
-For administrators to revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
+For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
 
 ## Frequently asked questions  
 
