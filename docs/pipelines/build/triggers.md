@@ -378,7 +378,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> For more information, see [Overriding YAML triggers](../build/triggers.md#overriding-yaml-triggers).
+> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
 
 ::: moniker-end
 
