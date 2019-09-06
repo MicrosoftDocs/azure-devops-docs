@@ -42,9 +42,11 @@ SOAP examples on this page require the following NuGet packages:
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 
+// https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/
+using Microsoft.VisualStudio.Services.Client;
+
 // https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/
 using Microsoft.VisualStudio.Services.Common; 
-using Microsoft.VisualStudio.Services.WebApi;
 
 /// <summary>
 /// This sample creates a new work item query for New Bugs, stores it under 'MyQueries', runs the query, and then sends the results to the console.
@@ -217,7 +219,7 @@ public static void AADRestSample()
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential());
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
-    List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
+	List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
 }
 ```
 
@@ -264,12 +266,12 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-    // Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssAadCredential()))
-    {
-        tpc.Authenticate();
-        Console.WriteLine(tpc.InstanceId);
-    }
+	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
+	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
+	{
+		tpc.Authenticate();
+		Console.WriteLine(tpc.InstanceId);
+	}
 }
 ```
 
@@ -278,10 +280,11 @@ public static void AADSoapSample()
 public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
-    NetworkCredential netCred = new NetworkCredential(username, password);
-    Microsoft.VisualStudio.Services.Common.WindowsCredential windowsCred = new Microsoft.VisualStudio.Services.Common.WindowsCredential(netCred);
-    VssCredentials vssCredentials = new VssCredentials(windowsCred);
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
+    NetworkCredential netCred = new NetworkCredential(basicAuthUsername, password);
+	BasicAuthCredential basicCred = new BasicAuthCredential(netCred);
+	TfsClientCredentials tfsCred = new TfsClientCredentials(basicCred);
+    tfsCred.AllowInteractive = false;
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), tfsCred))
     {
         tpc.Authenticate();
         Console.WriteLine(tpc.InstanceId);
@@ -293,12 +296,12 @@ public static void BasicAuthSoapSample()
 ```cs
 public static void MicrosoftAccountSample()
 {
-    // authenticate using Visual Studio sign-in prompt
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
-    {
-        tpc.Authenticate();
-        Console.WriteLine(tpc.InstanceId);
-    }
+	// authenticate using Visual Studio sign-in prompt
+	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri2), new TfsClientCredentials()))
+	{
+		tpc.Authenticate();
+		Console.WriteLine(tpc.InstanceId);
+	}
 }
 ```
 
@@ -313,9 +316,9 @@ public static void BasicAuthRestSample()
     // Create instance of VssConnection using basic auth credentials. 
     // For security, ensure you are connecting to an https server, since credentials get sent in plain text.
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials(new WindowsCredential(new NetworkCredential(username, password))));
-
+    
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
-    List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
+    List <QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
 }
 ```
 
@@ -328,7 +331,7 @@ public static void WindowsAuthRestSample()
 
     // Create instance of WorkItemTrackingHttpClient using VssConnection
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
-    List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
+	List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
 }
 ```
 
@@ -340,9 +343,10 @@ public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
     NetworkCredential netCred = new NetworkCredential(username, password);
-    Microsoft.VisualStudio.Services.Common.WindowsCredential windowsCred = new Microsoft.VisualStudio.Services.Common.WindowsCredential(netCred);
-    VssCredentials vssCredentials = new VssCredentials(windowsCred);
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
+    WindowsCredential windowsCred = new WindowsCredential(netCred);
+    TfsClientCredentials tfsCred = new TfsClientCredentials(windowsCred);
+    tfsCred.AllowInteractive = false;
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), tfsCred))
     {
         tpc.Authenticate();
         Console.WriteLine(tpc.InstanceId);
@@ -355,10 +359,10 @@ public static void BasicAuthSoapSample()
 public static void WindowsAuthenticationSoapSample()
 {
     // authenticate using windows authentication
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
-    {
-        tpc.Authenticate();
-        Console.WriteLine(tpc.InstanceId);
-    }
+	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new TfsClientCredentials()))
+	{
+		tpc.Authenticate();
+		Console.WriteLine(tpc.InstanceId);
+	}
 }
 ```
