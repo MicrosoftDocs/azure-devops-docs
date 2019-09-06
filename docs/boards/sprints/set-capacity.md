@@ -171,14 +171,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 	::: moniker-end  
 
-	<a id="customize-activity-list">  </a>  
-
-	::: moniker range="azure-devops"  
-
-	> [!NOTE]    
-	> Customizing the picklist of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
-
-	::: moniker-end
+	<a id="customize-activity-list">  </a> 
 
 	::: moniker range="azure-devops-2019"  
 
