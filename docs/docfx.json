@@ -54,7 +54,13 @@
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.team-services",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {
       "titleSuffix": {
