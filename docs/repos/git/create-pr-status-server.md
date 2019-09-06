@@ -6,8 +6,8 @@ ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'

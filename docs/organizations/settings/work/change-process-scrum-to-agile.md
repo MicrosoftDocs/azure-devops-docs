@@ -217,7 +217,7 @@ Your next step is to bulk update work items. The recommended sequence is:
 After changing the process, you may want to make additional updates as follows:
 
 - [Change the project name](../../../organizations/projects/rename-project.md)
-- [Update your project summary or vision ](../../../organizations/projects/project-vision-status.md)
+- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
 - Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-wit.md#enable-disable)
 
 ## Related articles
@@ -226,6 +226,6 @@ After changing the process, you may want to make additional updates as follows:
 - [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-wit.md)
-- [Show bugs on backlogs and boards ](../show-bugs-on-backlog.md)
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 - [Customize your boards](../../../boards/get-started/customize-boards.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

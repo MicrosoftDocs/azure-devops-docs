@@ -54,7 +54,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
-| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when the function returns success within 20 seconds and the success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record.   |
+| **Wait for completion** | Required. How the task reports completion. Can be **API response** (the default) - completion is when the function returns success within 20 seconds and the success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record.   |
 | **Success criteria** | Optional. How to parse the response body for success. By default, the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 

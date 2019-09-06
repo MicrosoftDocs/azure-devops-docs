@@ -141,7 +141,7 @@ These scenarios are supported for:
 ### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Run continuous tests with your builds](../../languages/dotnet-core.md#run-your-tests)
+* [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks

@@ -868,12 +868,12 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | Language | Template to use | 
 |-|-|
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
-| [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
+| [.NET Core](ecosystems/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
-| [Java](languages/java.md) | Gradle |
-| [JavaScript](languages/javascript.md) | Node.js |
-| [Xcode](languages/xcode.md) | Xcode |
+| [Java](ecosystems/java.md) | Gradle |
+| [JavaScript](ecosystems/javascript.md) | Node.js |
+| [Xcode](ecosystems/xcode.md) | Xcode |
 
 ## Q & A
 

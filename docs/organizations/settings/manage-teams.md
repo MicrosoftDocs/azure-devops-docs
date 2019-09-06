@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 04/25/2019
+ms.date: 08/15/2019
 ---
 
 # Manage and configure team tools

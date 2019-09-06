@@ -1,5 +1,5 @@
 ---
-title: License Azure Artifacts for TFS 2017 and 2018
+title: License Azure Artifacts for TFS 2017, 2018, and Azure DevOps Server 2019
 description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -8,13 +8,21 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/05/2019
-monikerRange: '>= tfs-2017 <= tfs-2018'
+ms.date: 09/03/2019
+monikerRange: '>= tfs-2017 <= azure-devops-2019'
 ---
 
-# License Azure Artifacts for TFS 2017 and 2018
+# License Azure Artifacts for TFS 2017, 2018, and Azure DevOps Server 2019
 
-**TFS 2018** | **TFS 2017**
+**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
+
+::: moniker range="= azure-devops-2019"
+
+Users with a Basic license can use Azure Artifacts on-premises without needing to purchase an Azure Artifacts extension. This means with Azure DevOps Server 2019, users with a Basic license can create and consume Azure Artifacts on-premises if they have a Basic license assigned.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Azure Artifacts is an *extension* to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
 
@@ -37,4 +45,4 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
    * [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
 
-
+::: moniker-end

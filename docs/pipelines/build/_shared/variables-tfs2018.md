@@ -323,6 +323,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceVersionMessage</td>
 <td>The comment of the commit or changeset.
 
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+
 Note: This variable is available in TFS 2015.4.
 </td>
 </tr>

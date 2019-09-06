@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.reviewer: greggboe
 ms.manager: jillfra
 ms.author: kaelli
+ms.custom: powerbisample
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
