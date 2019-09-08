@@ -91,6 +91,11 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 * Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
 
+## Artifacts
+
+* Confirm that all feeds that are scoped to the project only contain packages that can become public.
+* All packages in all feeds that are scoped to the public project will also become public.
+
 ## Extensions
 
 Are any extensions vital to your project's experience?
