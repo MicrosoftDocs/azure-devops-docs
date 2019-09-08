@@ -6,19 +6,24 @@ Historically, all feeds used to be scoped to a organization. However, to enable 
 
 A project-scoped feed is scoped to a project instead of a organization. Here are the main differences between the two feed types.
 
-Project-scoped feeds will always use the visibility of the project. If a project is public, so is the feed and if the project is private, the feed will also be private. Organization-scoped feeds will always be private.
+* Project-scoped feeds will always use the visibility of the project. If a project is public, so is the feed and if the project is private, the feed will also be private. Organization-scoped feeds will always be private.
 
-The URL of a project-scoped feed will include the project where organization-scoped feed URL won't.
+* The URL of a project-scoped feed will include the project where organization-scoped feed URL won't.
 
-Project-scoped feed:
-https://feeds.codedev.ms/contoso/projectId/_apis/Packaging/Feeds
+    * Project-scoped feed:
+    ```
+    https://feeds.codedev.ms/contoso/projectId/_apis/Packaging/Feeds
+    ```
 
-Organization-scoped feed:
-https://feeds.codedev.ms/contoso/_apis/Packaging/Feeds
+    * Organization-scoped feed:
+    ```
+    https://feeds.codedev.ms/contoso/_apis/Packaging/Feeds
+    ```
 
-All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
 
-All new feeds are recommended to be project-scoped, therefore, creating a new feed through the new create feed panel will always create a project-scoped feed.
+* All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
+
+* All new feeds are recommended to be project-scoped, therefore, creating a new feed through the new create feed panel will always create a project-scoped feed.
 
 ### What can I do if I'm concerned about my project-scoped feed's visibility
 
