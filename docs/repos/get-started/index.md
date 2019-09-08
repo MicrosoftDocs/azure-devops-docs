@@ -1,5 +1,5 @@
 ---
-title: Get started guide for Azure Repos 
+title: Guide for getting started with Azure Repos
 titleSuffix: Azure Repos 
 description: Sign up and get started using Azure Repos 
 ms.prod: devops
@@ -10,6 +10,7 @@ ms.author: sdanie
 author: apawast
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
+ms.custom: seo-javascript-september2019
 ---
 
 # Start using Azure Repos
