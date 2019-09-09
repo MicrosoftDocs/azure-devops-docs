@@ -44,6 +44,8 @@
       href: /azure/azure-functions/functions-how-to-azure-devops
     - name: Web App on Windows
       href: targets/webapp.md
+    - name: Web App on Linux Container
+      href: targets/webapp-on-container-linux.md
     - name: Azure Resource Manager
       href: library/connect-to-azure.md
     - name: Azure Government Cloud
