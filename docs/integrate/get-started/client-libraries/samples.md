@@ -279,8 +279,8 @@ public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
     NetworkCredential netCred = new NetworkCredential(username, password);
-    Microsoft.VisualStudio.Services.Common.WindowsCredential windowsCred = new Microsoft.VisualStudio.Services.Common.WindowsCredential(netCred);
-    VssCredentials vssCredentials = new VssCredentials(windowsCred);
+    WindowsCredential windowsCred = new WindowsCredential(netCred);
+    VssClientCredentials vssCredentials = new VssClientCredentials(windowsCred);
     using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
     {
         tpc.Authenticate();
@@ -312,7 +312,7 @@ public static void BasicAuthRestSample()
 {
     // Create instance of VssConnection using basic auth credentials. 
     // For security, ensure you are connecting to an https server, since credentials get sent in plain text.
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials(new WindowsCredential(new NetworkCredential(username, password))));
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssClientCredentials(new WindowsCredential(new NetworkCredential(username, password))));
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
     List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
@@ -340,8 +340,8 @@ public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
     NetworkCredential netCred = new NetworkCredential(username, password);
-    Microsoft.VisualStudio.Services.Common.WindowsCredential windowsCred = new Microsoft.VisualStudio.Services.Common.WindowsCredential(netCred);
-    VssCredentials vssCredentials = new VssCredentials(windowsCred);
+    WindowsCredential windowsCred = new WindowsCredential(netCred);
+    VssClientCredentials vssCredentials = new VssClientCredentials(windowsCred);
     using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
     {
         tpc.Authenticate();
