@@ -51,7 +51,7 @@ productDirectory:
     - title: Azure Boards
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./ _img/index/DevOpsIconBoards96.svg
-      links
+      links:
         - url: ./boards/get-started/what-is-azure-boards.md  
           text: What is Azure Boards? 
         - url: ./boards/work-items/guidance/choose-process.md 
