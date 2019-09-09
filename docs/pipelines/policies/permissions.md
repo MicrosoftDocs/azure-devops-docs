@@ -82,8 +82,6 @@ default.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
-* By default, contributors in a project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
-
 * In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
 * Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
