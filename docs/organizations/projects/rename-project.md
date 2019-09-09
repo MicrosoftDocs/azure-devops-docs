@@ -12,18 +12,16 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 07/08/2019
+ms.date: 09/09/2019
 ---
 
 # Rename a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-In this article, learn how to rename a project. A project rename updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. 
+In this article, learn how to rename a project. When you rename a project, it updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. 
 Projects can be renamed multiple times and older names can be reused. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
-
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 
 ## Rename a project
 
@@ -43,7 +41,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the Projects page, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
 
