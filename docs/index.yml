@@ -1,0 +1,168 @@
+### YamlMime:Hub
+
+title: Azure DevOps Documentation
+summary: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps
+brand: azure
+
+metadata:
+  title: Azure DevOps Documentation
+  description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps
+  services: service
+  ms.service: visual-studio-online
+  ms.topic: hub-page 
+  author: KathrynEE 
+  ms.author:kaelli 
+  ms.date: 09/30/2019 
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: What is Azure DevOps?
+      itemType: overview
+      url: ./user-guide/what-is-azure-devops.md
+    # Card
+    - title: What's new in Azure DevOps? 
+      itemType: whats-new 
+      url: ../release-notes/index.md
+    # Card
+    - title: Create your first pipeline
+      itemType: how-to-guide
+      url: /pipelines/get-started/pipelines-get-started.md
+    # Card
+    - title: Get started for free
+      itemType: how-to-guide
+      url: ./user-guide/sign-up-invite-teammates.md
+    # Card
+    - title: Connect to a project
+      itemType: how-to-guide
+      url: /organizations/projects/connect-to-projects.md
+    # Card
+    - title: Authenticate access with personal access tokens
+      itemType: how-to-guide
+      url: /organizations/accounts/use-personal-access-tokens-to-authenticate.md
+# productDirectory section (optional)
+productDirectory:
+  title: Azure DevOps Products
+  items:
+    # Card
+    - title: Azure Boards
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./ _img/index/DevOpsIconBoards96.svg
+      links
+        - url: ./boards/get-started/what-is-azure-boards.md  
+          text: What is Azure Boards? 
+        - url: ./boards/work-items/guidance/choose-process.md 
+          text: Choose a process
+        - url: ./boards/backlogs/create-your-backlog.md
+          text: Create your backlog
+        - url: ./boards/backlogs/office/bulk-add-modify-work-items-excel.md
+          text: Bulk add or modify work items
+    # Card
+    - title: Azure Repos
+      imageSrc: ./_img/index/DevOpsIconRepos96.svg
+      links:
+        - url: ./repos/get-started/what-is-repos.md
+          text: What is Azure Repos?
+        - url: ./repos/git/pull-requests-overview.md
+          text: Get started with Git & Visual Studio
+        - url: ./repos/git/pull-requests-overview.md
+          text: Review code with pull requests
+        - url: ./repos/git/clone.md
+          text: Clone an existing Git repo
+    # Card
+    - title: Azure Pipelines
+      imageSrc: ./_img/index/DevOpsIconPipelines96.svg
+      links:
+        - url: ./pipelines/get-started/what-is-azure-pipelines.md
+          text: What is Azure Pipelines?
+        - url: ./pipelines/create-first-pipeline.md
+          text: Create your first pipeline
+        - url: ./pipelines/get-started/what-is-azure-pipelines.md
+          text: What is Azure Pipelines?
+        - url: ./pipelines/yaml-schema.md
+          text: YAML Schema
+    # Card
+    - title: Azure Test Plans
+      imageSrc: _img/index/DevOpsIconTestPlans96.svg
+      links:
+        - url: ./test/overview.md
+          text: What is Azure Test Plans?
+        - url: ./test/create-a-test-plan.md
+          text: Create a test plan
+        - url: ./test/run-automated-tests-from-test-hub.md
+          text: Run automated tests
+        - url: ./test/create-test-cases.md
+          text: Create manual tests
+    # Card
+    - title: Azure Artifacts
+      imageSrc: ./_img/index/DevOpsIconArtifacts96.svg
+      links:
+        - url: ./artifacts/overview.md
+          text: What is Azure Artifacts?
+        - url: ./artifacts/get-started-nuget.md
+          text: NuGet
+    # Card
+    - title: Azure DevOps Server
+      imageSrc: https://docs.microsoft.com/media/common/i_server.svg
+      links:
+        - url: Azure DevOps Services vs. Azure DevOps Server
+          text: ./user-guide/about-azure-devops-services-tfs.md
+        - url: /azure/devops/server/install/get-started
+          text: Install
+        - url: /azure/devops/server/upgrade/get-started
+          text: Upgrade
+        - url: ./migrate/migrate-from-tfs.md
+          text: Migrate
+        - url: /azure/devops/server/admin/admin-quick-ref
+          text: Manage
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Get started
+      links:
+        - url: ./project/navigation/index.md
+          itemType: get-started
+          text: Web portal navigation
+        - url: ./user-guide/work-team-explorer.md
+          itemType: overview
+          text: Team Explorer navigation
+        - url: ./user-guide/tools
+          itemType: reference
+          text: Supported tools & clients
+        - url: ./user-guide/services
+          itemType: overview
+          text: Supported features & services
+      # footerLink 
+      footerLink:
+        url: /azure/devops/user-guide/index 
+        text: See more
+    # Card
+    - title: Collaborate
+      links:
+        - url: ./project/wiki/wiki-create-repo.md
+          itemType: quickstart
+          text: Create a Wiki for your project
+        - url: ./project/wiki/markdown-guidance.md
+          itemType: reference
+          text: Markdown syntax guidance
+        - url: ./organizations/public/create-public-project.md
+          itemType: quickstart
+          text: Create a public project
+      # footerLink (optional)
+      footerLink:
+        url: /azure/devops/project/index
+        text: See more
+    # Card
+    - title: GitHub Integration
+      links:
+        - url: ./boards/github/connect-to-github.md
+          itemType: quickstart
+          text: Azure Boards & GitHub
+        - url: ./pipelines/create-first-pipeline.md
+          itemType: quickstart
+          text: Azure Pipelines & GitHub
