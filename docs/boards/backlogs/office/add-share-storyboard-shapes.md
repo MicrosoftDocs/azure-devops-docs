@@ -15,7 +15,7 @@ ms.date: 09/06/2019
 
 # Add and share storyboard shapes
 
-[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [temp](../../../_shared/version-tfs-2018-earlier.md)]
 
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using Microsoft PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   
