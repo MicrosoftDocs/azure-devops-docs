@@ -1,22 +1,22 @@
 ---
 title: Migration checklist
-titleSuffix: Azure DevOps Services Public Project
-description: Best practices when changing a private project to a public project
+titleSuffix: Azure DevOps Services Public Project 
+description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
-ms.reviewer:
+ms.reviewer: 
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 02/19/2019
-monikerRange: "azure-devops"
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Private-to-public migration checklist
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]
+[!INCLUDE [temp](_shared/version-public-projects.md)]  
 
 In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
@@ -27,12 +27,12 @@ The checklist provided in this article indicates those items you may want to rev
 When you invite someone to become a member of a project, that person gains access to additional resources and details about the organization. Specifically, they have access to the following information.
 
 > [!div class="mx-tdCol2BreakAll"]  
-> | Area | Additional details a member receives |
+> | Area             | Additional details a member receives                |
 > |------------------|-----------------------------------------------------|
-> | Identities | List of all members added to the organization |
-> | Identities | Email contact information for each project member |
-> | Settings | Read-only view of all organization and project settings |
-> | Process metadata | All picklist values in all projects in the organization |
+> | Identities       | List of all members added to the organization       |
+> | Identities       | Email contact information for each project member   |
+> | Settings         | Read-only view of all organization and project settings  |
+> | Process metadata | All picklist values in all projects in the organization  |
 
 ## Cross-project linked objects
 
@@ -40,59 +40,61 @@ In Azure DevOps, you can link objects that exist in different projects defined i
 
 The link types used to construct these links, as illustrated in the following image, are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
-![Cross project link types](../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png)
+![Cross project link types](../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png) 
 
 Five kinds of cross-project links expose content from the private project.
 
 > [!div class="mx-tdCol2BreakAll"]  
-> | Link type | Exposed content |
+> | Link type            | Exposed content         |
 > |----------------------|-------------------------|
-> | Versioned Item | Project name, file name |
-> | Branch | Branch name |
-> | Wiki page | File name |
-> | Pull Request | Pull request title |
-> | Work item | Work item title |
+> | Versioned Item       | Project name, file name |
+> | Branch               | Branch name             |
+> | Wiki page            | File name               |
+> | Pull Request         | Pull request title      |
+> | Work item            | Work item title         |
+
 
 ## Agile tools and work items
 
-Because work-items maintain their history when migrated from a private to public project, you'll want to check the following:
+Because work-items maintain their history when migrated from a private to public project, you'll want to check the following: 
 
-- Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.
-- Be aware that all discussions and descriptions are available. Check that none contain embarrassing or problematic speech.
-- Confirm that none of your area paths have special, locked-down security settings. Denied permissions are not enforced in a public project, so restricted area paths become public.
+* Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.
+* Be aware that all discussions and descriptions are available. Check that none contain embarrassing or problematic speech.
+* Confirm that none of your area paths have special, locked-down security settings. Denied permissions are not enforced in a public project, so restricted area paths become public.
 
 > [!TIP]
 > If you aren't comfortable exposing the whole work item database, you have migration options.
 > See the [instructions for moving work items](#move-work-items).
 
+
 ## Code
 
-- Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
-- Be aware that all file contents and commit messages are available. Check that none contain embarrassing or problematic speech.
+* Confirm that you have no sensitive details in your repositories' history: unpatched security bugs, credentials, and code you don't have the right to distribute.
+* Be aware that all file contents and commit messages are available. Check that none contain embarrassing or problematic speech.
 
 > [!TIP]
 > If you aren't comfortable exposing an entire repository, you can migrate the tip to another project.
 > See the [instructions for a tip migration](#git-tip-only-migration).
 
-## Build and release
+## Build and release 
 
-- Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
-- Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
+* Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
+* Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
 If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/get-started-yaml.md).
 
 ## Test
 
-- Understand that manual and cloud load testing features won't be available to non-members in a public project.
+* Understand that manual and cloud load testing features won't be available to non-members in a public project.
 
 ## Analytics and dashboards
 
-- Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
+* Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
 
 ## Artifacts
 
-- Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
-- Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
+* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
+* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
 
 ## Extensions
 
@@ -100,8 +102,8 @@ Are any extensions vital to your project's experience?
 For instance, do you have a control on your work item form which renders data in a particular way?
 Are there custom extensions which expose important details?
 
-- Confirm that each extension's author has made it available for non-members by testing it.
-- If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md).
+* Confirm that each extension's author has made it available for non-members by testing it.
+* If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md).
 
 ## Partial migration tips
 
@@ -143,5 +145,5 @@ The new repository should be created in a project you don't mind making public.
 ## Next steps
 
 > [!div class="nextstepaction"]
->
 > - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
+ 
