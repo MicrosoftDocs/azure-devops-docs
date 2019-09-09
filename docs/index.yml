@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: Azure DevOps Documentation
-summary: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps
+summary: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
 brand: azure
 
 metadata:
   title: Azure DevOps Documentation
-  description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps
+  description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   services: service
   ms.service: visual-studio-online
   ms.topic: hub-page 
@@ -45,12 +45,12 @@ highlightedContent:
       url: /organizations/accounts/use-personal-access-tokens-to-authenticate.md
 # productDirectory section (optional)
 productDirectory:
-  title: Azure DevOps Products
+#  title: Azure DevOps Products
   items:
     # Card
     - title: Azure Boards
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./ _img/index/DevOpsIconBoards96.svg
+      imageSrc: ./_img/index/DevOpsIconBoards96.svg
       links:
         - url: ./boards/get-started/what-is-azure-boards.md  
           text: What is Azure Boards? 
@@ -58,6 +58,8 @@ productDirectory:
           text: Choose a process
         - url: ./boards/backlogs/create-your-backlog.md
           text: Create your backlog
+        - url: ./boards/get-started/plan-track-work.md
+          text: Plan and track work
         - url: ./boards/backlogs/office/bulk-add-modify-work-items-excel.md
           text: Bulk add or modify work items
     # Card
@@ -104,6 +106,10 @@ productDirectory:
           text: What is Azure Artifacts?
         - url: ./artifacts/get-started-nuget.md
           text: NuGet
+        - url: ./artifacts/get-started-npm.md
+          text: Use npm to store JavaScript packages
+        - url: ./artifacts/get-started-maven.md
+          text: Maven packages
     # Card
     - title: Azure DevOps Server
       imageSrc: https://docs.microsoft.com/media/common/i_server.svg
@@ -121,9 +127,10 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get started
   items:
     # Card
-    - title: Get started
+    - title: Key concepts
       links:
         - url: ./project/navigation/index.md
           itemType: get-started
@@ -131,16 +138,47 @@ conceptualContent:
         - url: ./user-guide/work-team-explorer.md
           itemType: overview
           text: Team Explorer navigation
-        - url: ./user-guide/tools
+        - url: ./user-guide/tools.md
           itemType: reference
           text: Supported tools & clients
-        - url: ./user-guide/services
+        - url: ./user-guide/services.md
           itemType: overview
           text: Supported features & services
+        - url: ./organizations/security/get-started-stakeholder.md
+          itemType: get-started
+          text: With Stakeholder access 
       # footerLink 
       footerLink:
         url: /azure/devops/user-guide/index 
         text: See more
+    # Card
+    - title: Build and deploy apps
+      links:
+        - url: ./pipelines/apps/aspnet/build-aspnet-4.md
+          itemType: how-to-guide
+          text: ASP.NET
+        - url: ./pipelines/ecosystems/dotnet-core.md
+          itemType: how-to-guide
+          text: .NET Core
+        - url: ./pipelines/apps/c-cpp/gcc.md
+          itemType: how-to-guide
+          text: C/C++ with GCC
+        - url: ./pipelines/apps/windows/cpp.md
+          itemType: how-to-guide
+          text: C/C++ with VC++
+        - url: ./pipelines/tasks/build/docker.md
+          itemType: reference
+          text: Docker
+        - url: ./pipelines/ecosystems/java.md
+          itemType: how-to-guide
+          text: Java
+        - url: ./pipelines/ecosystems/javascript.md
+          itemType: how-to-guide
+          text: JavaScript and Node.js
+      # footerLink 
+      footerLink:
+        url: /azure/devops/pipelines/index 
+        text: Plus more
     # Card
     - title: Collaborate
       links:
