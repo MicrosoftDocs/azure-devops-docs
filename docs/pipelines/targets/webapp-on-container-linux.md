@@ -87,6 +87,7 @@ YAML pipelines aren't available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 ::: moniker range="< azure-devops"
 
 > [!TIP] 
@@ -121,6 +122,7 @@ The **Azure WebApp Container** task similar to other built-in Azure tasks, requi
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 You must supply an Azure service connection to the `AzureWebAppContainer` task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below-
@@ -150,6 +152,7 @@ YAML pipelines aren't available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 ::: moniker range="azure-devops"
 
 The easiest way to get started with this task is to be signed in as a user who owns both the Azure DevOps Services organization and the Azure subscription.
@@ -175,6 +178,7 @@ App Service needs information about your registry and image to pull the private 
 ## Deploy with Azure Web App for Container
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 The simplest way to deploy to an Azure Web App Container is to use the **[Azure Web App for Containers](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureWebAppContainerV1)** task.
@@ -205,6 +209,8 @@ variables:
 
 The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Web App on Container** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to the Linux App Service.
 
+::: moniker-end
+
 ::: moniker range="< azure-devops-2019"
 
 YAML pipelines aren't available on TFS.
@@ -221,6 +227,7 @@ Templates exist for apps developed in various programming languages. If you can'
 ## Deploy to a slot
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops"
 
 You can configure the Azure Web App container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
