@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 11/19/2018
 ---
 
