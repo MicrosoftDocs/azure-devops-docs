@@ -67,8 +67,8 @@ Reasons you might want to change your process from Basic to Agile:
 
 1. Upon completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
-> [!div class="mx-imgBorder"]  
-> ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
 
     Steps to manually update your work items and board settings:
     - Update the column to state mapping for each team Kanban board.
