@@ -1,6 +1,6 @@
 - name: Azure Boards Documentation
   expanded: false
-  href: index.md
+  href: index.yml
 - name: "What is Azure Boards?"
   href: get-started/what-is-azure-boards.md
 - name: "Backlogs, boards, & plans"
