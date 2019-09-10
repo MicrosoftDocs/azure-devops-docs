@@ -163,18 +163,6 @@ tools:
     - title: Azure SQL Database
       imageSrc: https://docs.microsoft.com/azure/media/index/sqldatabase.svg
       url: ./pipelines/targets/azure-sqldb.md
-    - title: Azure Stack
-      imageSrc: https://docs.microsoft.com/azure/media/index/azure-stack.svg
-      url: ./pipelines/targets/azure-stack.md
-    - title: npm
-      imageSrc: https://docs.microsoft.com/media/logos/logo_npm.svg
-      url: ./pipelines/artifacts/npm.md
-    - title: Web App for Containers
-      imageSrc: https://docs.microsoft.com/azure/media/index/appservice.svg
-      url: ./pipelines/apps/cd/deploy-docker-webapp.md
-    - title: Linux VM
-      imageSrc: https://docs.microsoft.com/media/logos/logo_linux-color.svg
-      url: ./pipelines/apps/cd/deploy-linuxvm-deploygroups.md
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
