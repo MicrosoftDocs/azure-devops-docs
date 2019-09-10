@@ -51,8 +51,8 @@ When a minor version is released (for example, 1.2 to 1.3), you get that change 
 If you select a version named something such as __1.* (preview)__, keep in mind that this version is still under development and might have known problems.
 
 > __Tip:__ In a build definition you’ve got a few options to test a new major version of a task:
->  * If you change the version and have problems, you can revert the change from the history tab.
->  * Clone the build definition and test the cloned definition with the new major task version.
+> * If you change the version and have problems, you can revert the change from the history tab.
+> * Clone the build definition and test the cloned definition with the new major task version.
 
 ## Hosted Linux pool preview
 We’re offering a preview of our new hosted Linux pool to enable you to build and release on Linux machines without having to configure a private agent.

@@ -113,10 +113,10 @@ The following steps walk through the creation of Docker registry service connect
 
 11. In the dialog, enter values for the following fields:
 
-   - **Docker Registry:** `https://gcr.io/[PROJECT-ID]`, where `[PROJECT-ID]` is the name of your GCP project.
-   - ****Docker ID:** `_json_key`
-   - **Docker Password:** Paste the contents of `azure-pipelines-publisher-oneline.json`
-   - **Service connection name:** `gcrServiceConnection`
+- **Docker Registry:** `https://gcr.io/[PROJECT-ID]`, where `[PROJECT-ID]` is the name of your GCP project.
+- ****Docker ID:** `_json_key`
+- **Docker Password:** Paste the contents of `azure-pipelines-publisher-oneline.json`
+- **Service connection name:** `gcrServiceConnection`
 
 12. Click **Save** to create the service connection
 

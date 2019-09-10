@@ -49,11 +49,11 @@ This policy adds required or optional reviewers to a pull request when certain f
 ### Example
 This example request will alter a required reviewers policy so that it:
 
- * Protects the branch `master` and all branches starting with `releases/` in all repositories, and additionally the `adventureworks` branch in a specified repository
- * Triggers when a pull request contains files matching `API*.cs` or in the folder `sql/tables`
- * Adds two required reviewers when triggered
- * Rejects the pull request if any of the required reviewers have not approved it
- * Prevents the pull request from being completed if it does not comply with policy (*isBlocking* is true)
+* Protects the branch `master` and all branches starting with `releases/` in all repositories, and additionally the `adventureworks` branch in a specified repository
+* Triggers when a pull request contains files matching `API*.cs` or in the folder `sql/tables`
+* Adds two required reviewers when triggered
+* Rejects the pull request if any of the required reviewers have not approved it
+* Prevents the pull request from being completed if it does not comply with policy (*isBlocking* is true)
 
 
 #### Sample request
@@ -189,11 +189,11 @@ Requires that a specified minimum number of reviewers have to approved a pull re
 
 This example adds an approval count policy that:
 
- * Protects the master branch in all repositories in the project
- * Rejects the pull request if there is not at least one reviewer who has approved the pull request
- * Does not count the user who created the pull request
- * Does not block the pull request from being completed (*isBlocking* is false)
-     * The web interface warns the user on completion if the pull request does not comply with the policy
+* Protects the master branch in all repositories in the project
+* Rejects the pull request if there is not at least one reviewer who has approved the pull request
+* Does not count the user who created the pull request
+* Does not block the pull request from being completed (*isBlocking* is false)
+  * The web interface warns the user on completion if the pull request does not comply with the policy
 
 #### Sample request
 
@@ -295,11 +295,11 @@ Requires that the merged result of a pull request builds successfully using a sp
 ### Example
 This example adds a build policy that:
 
- * Protects branches beginning with `features/` in all repositories
- * Automatically queues a build using a specified definition once the merged code is available
- * Rejects the pull request if the build has not completed successfully
- * Does not block the pull request from being completed (*isBlocking* is false)
-     * The web interface warns the user on completion if the pull request does not comply with the policy
+* Protects branches beginning with `features/` in all repositories
+* Automatically queues a build using a specified definition once the merged code is available
+* Rejects the pull request if the build has not completed successfully
+* Does not block the pull request from being completed (*isBlocking* is false)
+  * The web interface warns the user on completion if the pull request does not comply with the policy
 
 #### Sample request
 
@@ -390,10 +390,10 @@ Requires that at least one work item is associated with a pull request before it
 
 This example adds a work item policy that:
 
- * Protects the master branch in all repositories in the project
- * Rejects the pull request if there is not at least one work item associated with the pull request
- * Does not block the pull request from being completed (*isBlocking* is false)
-     * The web interface warns the user on completion if the pull request does not comply with the policy
+* Protects the master branch in all repositories in the project
+* Rejects the pull request if there is not at least one work item associated with the pull request
+* Does not block the pull request from being completed (*isBlocking* is false)
+  * The web interface warns the user on completion if the pull request does not comply with the policy
 
 #### Sample request
 
@@ -484,7 +484,7 @@ Requires that a pull request uses a specific merge strategy when completed.
 
 This example adds a merge strategy policy that:
 
- * Ensures all pull requests going into master are squash merged
+* Ensures all pull requests going into master are squash merged
 
 #### Sample request
 

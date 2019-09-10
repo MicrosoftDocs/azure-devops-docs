@@ -82,8 +82,8 @@ Previously, when you had a scheduled release trigger, a release would get trigge
 ### Build and release log viewer enhancements
 
 We are rolling out enhancements to the log viewer for build and release. With this update, we are including the following changes:
-  * Do not show timestamps on every line of log, hence making it easy to parse the logs.
-  * Better support for ANSI color codes and special characters.
+* Do not show timestamps on every line of log, hence making it easy to parse the logs.
+* Better support for ANSI color codes and special characters.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/148_14.png)

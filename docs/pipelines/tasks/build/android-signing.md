@@ -24,7 +24,7 @@ Use this task in a pipeline to sign and align Android APK files.
 
 The build agent must have the following capabilities:
 
- * Java JDK
+* Java JDK
 
 ::: moniker range="> tfs-2018"
 

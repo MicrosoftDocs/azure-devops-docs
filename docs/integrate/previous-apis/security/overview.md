@@ -25,11 +25,11 @@ Each security namespace contains zero or more access control lists.
 Each access control list contains a token, an inherit flag and a set of zero or more access control entries. 
 Each access control entry contains an identity descriptor, an allowed permissions bitmask and an denied permissions bitmask.
 
- * [Security Namespaces](./securitynamespaces.md) 
- * [Access Control Lists (ACLs)](./acls.md)
- * [Access Control Entries (ACEs)](./aces.md) 
- * [Permissions](./permissions.md)
- * [Tokens](./tokens.md)
+* [Security Namespaces](./securitynamespaces.md) 
+* [Access Control Lists (ACLs)](./acls.md)
+* [Access Control Entries (ACEs)](./aces.md) 
+* [Permissions](./permissions.md)
+* [Tokens](./tokens.md)
 
 ## Common tasks
 

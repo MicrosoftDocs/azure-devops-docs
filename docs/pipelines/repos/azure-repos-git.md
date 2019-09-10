@@ -278,10 +278,10 @@ If your repository is Git then you can specify the branches where you want to tr
 You can also specify path filters to reduce the set of files that you want to trigger a build.
 
 > **Tips:**
->  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
->  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
->  * The order of path filters doesn't matter.
+> * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+> * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
+> * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+> * The order of path filters doesn't matter.
 
 #### Example
 

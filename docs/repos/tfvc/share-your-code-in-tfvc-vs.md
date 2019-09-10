@@ -155,8 +155,8 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 Yes:
 
- * [Upgrade From Visual SourceSafe](https://msdn.microsoft.com/library/ms253060).
- * [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
+* [Upgrade From Visual SourceSafe](https://msdn.microsoft.com/library/ms253060).
+* [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?

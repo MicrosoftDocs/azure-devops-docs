@@ -131,25 +131,25 @@ Use the **VMware Resource Deployment** task from the VMware extension and config
 
 To configure the **VMware Resource Deployment** task to provision a new virtual machine from a template, use these settings:
 
-   - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
-   
-   - **Action**: `Deploy Virtual Machines using Template`
-   
-   - **Template**: The name of the template that will be used to create the virtual machines. The template must exist in the location you enter for the **Datacenter** parameter.
-   
-   - **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
-   
-   - **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
-   
-   - **Compute Resource Type**: Select the type of hosting for the virtual machines: `VMware ESXi Host`, `Cluster`, or `Resource Pool`
-   
-   - **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
-   
-   - **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
-   
-   - **Description**: Optional. Enter a description to identify the deployment.
-   
-   - **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. See the note for the previous step to check for the presence of a self-signed certificate.<p />
+- **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
+
+- **Action**: `Deploy Virtual Machines using Template`
+
+- **Template**: The name of the template that will be used to create the virtual machines. The template must exist in the location you enter for the **Datacenter** parameter.
+
+- **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
+
+- **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
+
+- **Compute Resource Type**: Select the type of hosting for the virtual machines: `VMware ESXi Host`, `Cluster`, or `Resource Pool`
+
+- **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
+
+- **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
+
+- **Description**: Optional. Enter a description to identify the deployment.
+
+- **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. See the note for the previous step to check for the presence of a self-signed certificate.<p />
 
 ## Deploying build to virtual machines
 

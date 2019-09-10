@@ -57,13 +57,13 @@ A build completes
 * Event ID: `build.complete`
 
 #### Settings
- * `definitionName`: Filter events to include only completed builds for the specified pipeline
- * `buildStatus`: Filter events to include only completed builds for the specified completion status
-   * Valid values: 
-      * `Succeeded` 
-      * `PartiallySucceeded` 
-      * `Failed` 
-      * `Stopped` 
+* `definitionName`: Filter events to include only completed builds for the specified pipeline
+* `buildStatus`: Filter events to include only completed builds for the specified completion status
+  * Valid values: 
+    * `Succeeded` 
+    * `PartiallySucceeded` 
+    * `Failed` 
+    * `Stopped` 
 
 #### Sample payload
 ```json
@@ -166,7 +166,7 @@ A release was abandoned
 * Event ID: `ms.vss-release.release-abandoned-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -326,7 +326,7 @@ A release was created
 * Event ID: `ms.vss-release.release-created-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -486,16 +486,16 @@ A deployment approval has been completed
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
 
 #### Settings
- * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
-   * Valid values: 
-      * `2` - Approved
-      * `4` - Rejected
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-   * Valid values: 
-      * `1` - Pre-deployment
-      * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+* `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
+  * Valid values: 
+    * `2` - Approved
+    * `4` - Rejected
+* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  * Valid values: 
+    * `1` - Pre-deployment
+    * `2` - Post-deployment
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
 ```json
@@ -690,12 +690,12 @@ A deployment approval has been requested
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
 
 #### Settings
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-   * Valid values: 
-      * `1` - Pre-deployment
-      * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  * Valid values: 
+    * `1` - Pre-deployment
+    * `2` - Post-deployment
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -886,14 +886,14 @@ A deployment completed
 * Event ID: `ms.vss-release.deployment-completed-event`
 
 #### Settings
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
- * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
-   * Valid values: 
-      * `8` - Canceled
-      * `16` - Rejected
-      * `4` - Succeeded
-      * `128` - Partially Succeeded
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
+  * Valid values: 
+    * `8` - Canceled
+    * `16` - Rejected
+    * `4` - Succeeded
+    * `128` - Partially Succeeded
 
 #### Sample payload
 ```json
@@ -1004,8 +1004,8 @@ A deployment was started
 * Event ID: `ms.vss-release.deployment-started-event`
 
 #### Settings
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
 ```json
@@ -1118,8 +1118,8 @@ A changeset is checked into TFVC.
 * Event ID: `tfvc.checkin`
 
 #### Settings
- * `path`: Filter to checkins that change one or more files under the specified path
-   * Required
+* `path`: Filter to checkins that change one or more files under the specified path
+  * Required
 
 #### Sample payload
 ```json
@@ -1176,10 +1176,10 @@ Code is pushed to a Git repository
 * Event ID: `git.push`
 
 #### Settings
- * `branch`: The branch that code was pushed into
- * `pushedBy`: A group which has the pusher as its member
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
+* `branch`: The branch that code was pushed into
+* `pushedBy`: A group which has the pusher as its member
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
 
 #### Sample payload
 ```json
@@ -1270,11 +1270,11 @@ Pull request is created in a Git repository
 * Event ID: `git.pullrequest.created`
 
 #### Settings
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
 ```json
@@ -1374,11 +1374,11 @@ Pull request - Created merge commit
 * Event ID: `git.pullrequest.merged`
 
 #### Settings
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
 ```json
@@ -1479,17 +1479,17 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 * Event ID: `git.pullrequest.updated`
 
 #### Settings
- * `notificationType`: The type of pull request change
-   * Valid values: 
-      * `PushNotification` - Source branch updated
-      * `ReviewersUpdateNotification` - Reviewers changed
-      * `StatusUpdateNotification` - Status changed
-      * `ReviewerVoteNotification` - Votes score changed
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+* `notificationType`: The type of pull request change
+  * Valid values: 
+    * `PushNotification` - Source branch updated
+    * `ReviewersUpdateNotification` - Reviewers changed
+    * `StatusUpdateNotification` - Status changed
+    * `ReviewerVoteNotification` - Votes score changed
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
 ```json
@@ -1598,8 +1598,8 @@ Filter events to include only newly created work items.
 * Event ID: `workitem.created`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 ```json
@@ -1680,8 +1680,8 @@ Filter events to include only newly deleted work items.
 * Event ID: `workitem.deleted`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 ```json
@@ -1756,8 +1756,8 @@ Filter events to include only newly restored work items.
 * Event ID: `workitem.restored`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 ```json
@@ -1844,9 +1844,9 @@ Filter events to include only changed work items.
 * Event ID: `workitem.updated`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `changedFields`: Filter events to include only work items with the specified field(s) changed.
- * `workItemType`: Filter events to include only work items of the specified type.
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `changedFields`: Filter events to include only work items with the specified field(s) changed.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 ```json
@@ -1967,9 +1967,9 @@ Filter events to include only work items commented on.
 * Event ID: `workitem.commented`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `commentPattern`: The string that must be found in the comment.
- * `workItemType`: Filter events to include only work items of the specified type.
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `commentPattern`: The string that must be found in the comment.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 ```json
@@ -2053,10 +2053,10 @@ Triggers when a message is posted to a team room
 * Event ID: `message.posted`
 
 #### Settings
- * `messagePattern`: The string that must be found in the message
- * `roomId`: Filter events to include only messages sent to the specified Team room
-   * Data type: `number`
-   * Required
+* `messagePattern`: The string that must be found in the message
+* `roomId`: Filter events to include only messages sent to the specified Team room
+  * Data type: `number`
+  * Required
 
 #### Sample payload
 ```json

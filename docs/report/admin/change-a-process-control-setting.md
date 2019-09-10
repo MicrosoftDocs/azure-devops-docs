@@ -26,11 +26,11 @@ You can determine the current settings and change a setting by using the Warehou
 
 **Requirements** 
 
-  * SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
+* SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
 
-  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator-tfs).  
+* You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator-tfs).  
 
-  * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
+* The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
 ## Access the Warehouse Control Web Service
 1. Log on to the application-tier server.

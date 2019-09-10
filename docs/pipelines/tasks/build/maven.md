@@ -24,7 +24,7 @@ Use this task in a build or release pipeline to build your Java code.
 
 The build agent must have the following capability:
 
- * Maven
+* Maven
 
 ::: moniker range="> tfs-2018"
 

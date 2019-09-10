@@ -20,8 +20,8 @@ Add new features and capabilities to your organization by installing extensions.
 
 In this quickstart, learn how to do the following tasks:
 
-  - [Install extensions](#install-extension)
-  - [Assign paid extensions to users](#assign-paid-extensions-to-users)
+- [Install extensions](#install-extension)
+- [Assign paid extensions to users](#assign-paid-extensions-to-users)
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
@@ -56,9 +56,9 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
     ![Select organization for this extension](_img/get-vsts-extensions/select-install-extension.png)
 
-   * [Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
+    * [Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
 
-   * [Why can't I install this extension?](./faq-extensions.md#no-permissions) 
+    * [Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
 Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
 

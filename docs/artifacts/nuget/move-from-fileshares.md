@@ -76,8 +76,8 @@ Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\ser
 ### Make a plan for permissions
 
 When setting up your new feeds, you can either:
-  - Set up your feed permissions to match your existing file share permissions
-  - Align your feed permissions with existing Azure DevOps Services teams and groups
+- Set up your feed permissions to match your existing file share permissions
+- Align your feed permissions with existing Azure DevOps Services teams and groups
  
 If you want to match your existing file share permissions, note the permissions on each share that contains packages. 
 Specifically, note the principals with:

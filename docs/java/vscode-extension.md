@@ -22,9 +22,9 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Prerequisites
 
- - You already have an organization in Azure DevOps. If you do not already have an organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
- - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
- - You have already [cloned an Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
+- You already have an organization in Azure DevOps. If you do not already have an organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
+- You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
+- You have already [cloned an Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
 
 > [!VIDEO https://www.youtube.com/embed/HnDNdm1WCIo]
 
@@ -98,8 +98,8 @@ In addition to the status bar integrations, the extension also provides several 
 
 ## Secure credential storage
 When you run the `team signin` command, the credentials that you provide will be stored securely on your computer. On Windows, your credentials wil be stored by Windows Credential Manager. 
- - On macOS, your credentials will be stored in the Keychain. 
- - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
+- On macOS, your credentials will be stored in the Keychain. 
+- On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
 ## Next steps
 Check out the [README.md in the GitHub repository](https://github.com/Microsoft/vsts-vscode/blob/master/README.md) for more details on the extension.

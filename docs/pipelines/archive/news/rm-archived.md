@@ -1174,26 +1174,26 @@ Tie the output of the first task to the input list of machines in the second tas
 <a name="update-sep4-15"></a>
 ### September 4, 2015 Update (Azure Pipelines)
 
- * **Consume Build artifacts more easily**. You can now easily consume multiple
+* **Consume Build artifacts more easily**. You can now easily consume multiple
   artifacts published within a Team Build from RM. Linking a build
   definition to a release pipeline has also been simplified.
 
-   However, this change is a breaking change that requires you to edit
-   and save your release pipelines again. In particular, the paths to
-   which artifacts are downloaded by the agent have changed. With this
-   update, all artifacts provided by a source (build pipeline) are
-   downloaded to the **$(System.DefaultWorkingDirectory)\\{**_build pipeline name_**}**
-   folder by the agent. Use the artifact file picker whenever possible
-   to specify the paths to files as you set the parameters of tasks.
+  However, this change is a breaking change that requires you to edit
+  and save your release pipelines again. In particular, the paths to
+  which artifacts are downloaded by the agent have changed. With this
+  update, all artifacts provided by a source (build pipeline) are
+  downloaded to the **$(System.DefaultWorkingDirectory)\\{**_build pipeline name_**}**
+  folder by the agent. Use the artifact file picker whenever possible
+  to specify the paths to files as you set the parameters of tasks.
 
-   If you already have release pipelines created prior to this update,
-   open each release pipeline in turn and:
+  If you already have release pipelines created prior to this update,
+  open each release pipeline in turn and:
 
-   - Remove the artifacts that were added to the definition
-   - Re-link the artifact sources (add them back) to the definition
-   - Re-establish the trigger to that artifact source
-   - Edit the properties of the tasks to ensure that the input paths are correctly specified
-   - Save the release pipeline
+  - Remove the artifacts that were added to the definition
+  - Re-link the artifact sources (add them back) to the definition
+  - Re-establish the trigger to that artifact source
+  - Edit the properties of the tasks to ensure that the input paths are correctly specified
+  - Save the release pipeline
 
 
  * **Select artifacts more easily**. A file picker has been introduced

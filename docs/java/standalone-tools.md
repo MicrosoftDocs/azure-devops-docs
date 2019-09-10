@@ -41,8 +41,8 @@ PDM, CheckStyle and FindBugs support for Maven and Gradle is currently available
 ## Next Steps
 
 For more detailed instructions on enabling static analysis tools, which default rules are activated and how to configure them, see the following blog posts:
- - [Maven and Gradle build tasks support powerful code analysis tools](https://blogs.msdn.microsoft.com/devops/2016/10/12/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/)
- - [The Maven build task now supports PMD analysis out of the box](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box/)
- - [Maven and Gradle build task support Checkstyle analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/09/05/gradle-build-task-supports-checkstyle-analysis/)
+- [Maven and Gradle build tasks support powerful code analysis tools](https://blogs.msdn.microsoft.com/devops/2016/10/12/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/)
+- [The Maven build task now supports PMD analysis out of the box](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box/)
+- [Maven and Gradle build task support Checkstyle analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/09/05/gradle-build-task-supports-checkstyle-analysis/)
 
 

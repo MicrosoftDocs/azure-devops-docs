@@ -19,9 +19,9 @@ Configure an Azure DevOps Services or TFS Maven or Gradle build task to use Sona
 
 ## Prerequisites
 
- - You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Projects for Java topic](/azure/devops-project/azure-devops-project-java).
- - You have an existing Maven or Gradle build task.
- - You have a [SonarQube server](https://docs.sonarqube.org/display/SONAR/Installing+the+Server) set up to use.
+- You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Projects for Java topic](/azure/devops-project/azure-devops-project-java).
+- You have an existing Maven or Gradle build task.
+- You have a [SonarQube server](https://docs.sonarqube.org/display/SONAR/Installing+the+Server) set up to use.
 
 ## About SonarQube
 

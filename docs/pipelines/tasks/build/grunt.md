@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run Grunt tasks using the JavaSc
 
 The build agent must have the following capability:
 
- * Grunt
+* Grunt
 
 ::: moniker range="> tfs-2018"
 

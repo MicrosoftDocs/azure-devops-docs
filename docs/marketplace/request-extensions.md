@@ -17,8 +17,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
 If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. In this article, learn how to do the following tasks:
-  - [Request an extension](#request-an-extension)
-  - [Approve extension requests](#approve-extension-requests)
+- [Request an extension](#request-an-extension)
+- [Approve extension requests](#approve-extension-requests)
 
 ## Prerequisites
 

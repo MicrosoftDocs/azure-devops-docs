@@ -26,11 +26,11 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 Using deployment job provides some benefits:
 
- - **Deployment history**: You get end-to-end deployment history across pipelines down to a specific resource and status of the deployments for auditing.
- - **Apply deployment strategy**: Define how your application is rolled-out.
+- **Deployment history**: You get end-to-end deployment history across pipelines down to a specific resource and status of the deployments for auditing.
+- **Apply deployment strategy**: Define how your application is rolled-out.
 
-   > [!NOTE] 
-   > At the moment we offer only the *runOnce* strategy, which executes the steps once sequentially. Additional strategies like blue-green, canary and rolling are on our roadmap.
+  > [!NOTE] 
+  > At the moment we offer only the *runOnce* strategy, which executes the steps once sequentially. Additional strategies like blue-green, canary and rolling are on our roadmap.
 
 ## Schema
 

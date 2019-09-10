@@ -46,13 +46,13 @@ These approvers can be individual users or groups of users. These users must hav
 When a group is specified as an approver, only one of the users in that group needs to approve
 for the deployment to occur or the release to move forward.
 
-   * If you are using **Azure Pipelines**, you
-     can use local groups managed in Azure Pipelines or
-     Azure Active Directory (Azure AD) groups if they have been
-     added into Azure Pipelines.
-   * If you are using **Team Foundation Server** (TFS),
-     you can use local groups managed in TFS or Active
-     Directory (AD) groups if they have been added into TFS.
+* If you are using **Azure Pipelines**, you
+  can use local groups managed in Azure Pipelines or
+  Azure Active Directory (Azure AD) groups if they have been
+  added into Azure Pipelines.
+* If you are using **Team Foundation Server** (TFS),
+  you can use local groups managed in TFS or Active
+  Directory (AD) groups if they have been added into TFS.
 
 The creator of a deployment is considered to be a separate user
 role for deployments. For more details,
@@ -63,15 +63,15 @@ If no approval is granted within the **Timeout** specified for the approval, the
 
 Use the **Approval policies** to:
 
-   * Specify that the user who requested (initiated or created) the release cannot approve it.
-     If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
-     For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
-   * Force a revalidation of the user identity to take into account recently changed permissions.
-   * Reduce user workload by automatically approving subsequent prompts if the specified
-     user has already approved the deployment to a previous stage in the pipeline
-     (applies to pre-deployment approvals only). Take care when using this option; for example, you may
-     want to require a user to physically approve a deployment to production even though that user has
-     previously approved a deployment to a QA stage in the same release pipeline.  
+* Specify that the user who requested (initiated or created) the release cannot approve it.
+  If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
+  For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
+* Force a revalidation of the user identity to take into account recently changed permissions.
+* Reduce user workload by automatically approving subsequent prompts if the specified
+  user has already approved the deployment to a previous stage in the pipeline
+  (applies to pre-deployment approvals only). Take care when using this option; for example, you may
+  want to require a user to physically approve a deployment to production even though that user has
+  previously approved a deployment to a QA stage in the same release pipeline.  
 
 <a name="approve-release"></a>
 

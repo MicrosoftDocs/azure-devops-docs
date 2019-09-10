@@ -26,14 +26,14 @@ Depending on which conditions the user satisfies, you can require multi-factor a
 
 Azure DevOps enforces the policy for usage of personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. See the following details of how and what we enforce.
 
-   * For Web flows, CAP is honored 100%
-   * For third party client flow, like using a PAT with git.exe, we only support IP fencing policies - more specifically we don't support MFA policies. See the following examples:
-        * Policy 1 - Block all access from outside of IP range X, Y, and Z
-            * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or blocked if outside that list
-            * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z or blocked if outside that list
-        * Policy 2 - Require MFA when outside of IP range X, Y, and Z
-            * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or prompted for MFA if outside that list
-            * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z blocked if outside that list
+* For Web flows, CAP is honored 100%
+* For third party client flow, like using a PAT with git.exe, we only support IP fencing policies - more specifically we don't support MFA policies. See the following examples:
+  * Policy 1 - Block all access from outside of IP range X, Y, and Z
+    * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or blocked if outside that list
+    * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z or blocked if outside that list
+  * Policy 2 - Require MFA when outside of IP range X, Y, and Z
+    * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or prompted for MFA if outside that list
+    * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z blocked if outside that list
 
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.

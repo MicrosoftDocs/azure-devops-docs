@@ -109,11 +109,11 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 <a id="which_fields_are_non_reportable"></a>
 ### Q: Which fields can't I use to generate a report?
  
-   **A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report. 
+**A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report. 
 
-   * Description, History, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
+* Description, History, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
 
-   * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
+* Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  

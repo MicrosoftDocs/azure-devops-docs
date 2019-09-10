@@ -106,9 +106,9 @@ For information on making your extension public, visit [Make your listing public
 You can unpublish/delist free extensions, if you no longer want to offer them in the Marketplace or published by mistake. 
 
 Here are some scenarios where you might want to remove your extension from the Marketplace:
-  * You developed another extension and no longer want to offer the current one.
-  * Your extension has a problem, so you want to remove your extension from the Marketplace until you have resolved the problem.
-  * You published your extension as public by mistake.
+* You developed another extension and no longer want to offer the current one.
+* Your extension has a problem, so you want to remove your extension from the Marketplace until you have resolved the problem.
+* You published your extension as public by mistake.
 
 To unpublish, select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
 Your extension is unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension stays intact. 

@@ -234,8 +234,8 @@ We invite you to learn more about:
   - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
 * The template used to create your pipeline: [Deploy to existing Kubernetes cluster template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/deploy-to-existing-kubernetes-cluster.yml)
 * Some of the tasks used in your pipeline, and how you can customize them:
- - [Docker task](../../tasks/build/docker.md)
- - [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
+  - [Docker task](../../tasks/build/docker.md)
+  - [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
 * Some of the key concepts for this kind of pipeline:
   - [Environments](../../process/environments.md)
   - [Deployment jobs](../../process/deployment-jobs.md)
