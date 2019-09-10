@@ -23,17 +23,23 @@ Lets you create, delete, view, or modify properties and mappings associated with
 **Required Permissions**  
 To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**. To create a workspace, you must have the global **Create a workspace** permission set to **Allow**. To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf workspace /new [/noprompt] [/template:workspacename[;workspaceowner]]
-     [/computer:computername] [/comment:("comment"|@comment file)]
-     [workspacename[;workspaceowner]] [/login:username,[password]]
-     [/collection:TeamProjectCollectionUrl] [/permission:(Private|PublicLimited|Public)]
-     [/location:(local|server)]
-     
-    tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner] [/login:username,[password]]
+```
+tf workspace /new [/noprompt] [/template:workspacename[;workspaceowner]]
+[/computer:computername] [/comment:("comment"|@comment file)]
+[workspacename[;workspaceowner]] [/login:username,[password]]
+[/collection:TeamProjectCollectionUrl] [/permission:(Private|PublicLimited|Public)]
+[/location:(local|server)]
+```
 
-    tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comment file)] [/newname:workspacename]
-    [workspacename[;workspaceowner]] [/newowner:ownername] [/computer:computername] [/permission:(Private|PublicLimited|Public)] [/login:username,[password]]
-    [/location:(local|server)]
+```
+tf workspace /delete [/collection:TeamProjectCollectionUrl] workspacename[;workspaceowner] [/login:username,[password]]
+```
+
+```
+tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comment file)] [/newname:workspacename]
+[workspacename[;workspaceowner]] [/newowner:ownername] [/computer:computername] [/permission:(Private|PublicLimited|Public)] [/login:username,[password]]
+[/location:(local|server)]
+```
 
 ## Parameters
 
@@ -103,27 +109,39 @@ If no workspace specification is provided, the workspace for the current folder 
 
 The following example opens the **Add Workspace** dialog box and creates a new workspace. You can use the **Add Workspace** dialog box to edit the source control folder, owner, computer, comment, and local folders.
 
-    c:\projects>tf workspace /new /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspace /new /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 The following example creates a new workspace called Beta1 and assigns jenh as the workspace owner. You must have the AdminWorkspaces permission to assign ownership of a new workspace to another user. For more information on security permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    c:\projects>tf workspace /new Beta1;jenh
+```
+c:\projects>tf workspace /new Beta1;jenh
+```
 
 The following example creates a new workspace by using the Beta1 workspace that is owned by jenh as a template.
 
-    c:\projects>tf workspace /new /template:Beta1;jenh /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspace /new /template:Beta1;jenh /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 The following example removes the Beta1 workspace from the server.
 
-    c:\projects>tf workspace /delete Beta1
+```
+c:\projects>tf workspace /delete Beta1
+```
 
 The following example edits properties for the current workspace.
 
-    c:\projects>tf workspace
+```
+c:\projects>tf workspace
+```
 
 The following example opens the Beta1 workspace for which user jenh is the owner so that you can see its properties and mappings. If you have the AdminWorkspaces permissions, you can change the workspace properties and mappings.
 
-    c:\projects> tf workspace Beta1;jenh
+```
+c:\projects> tf workspace Beta1;jenh
+```
 
 ## See Also
 

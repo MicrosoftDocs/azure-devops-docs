@@ -27,7 +27,9 @@ The **rename** command changes the name or the path of a file or folder. You can
 
 To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
+```
+tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
+```
 
 ## Parameters<table>
 <thead>
@@ -109,15 +111,21 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example changes the name of 314.c to 1254.c.
 
-    c:\projects>tf rename  314.c  1254.c
+```
+c:\projects>tf rename  314.c  1254.c
+```
 
 The following example renames 314.c to 1254.c and moves it to the newdir folder.
 
-    c:\projects>tf rename 314.c ..\newdir\1254.c
+```
+c:\projects>tf rename 314.c ..\newdir\1254.c
+```
 
 The following example changes the name of Form1.vb to MainPage.vb and applies a lock to it.
 
-    c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
+```
+c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
+```
 
 ## See Also
 

@@ -78,32 +78,32 @@ Resolve merge conflicts on the command line:
 
 1. (Optional) Before performing any `pull` or `merge`, make sure that your repo is clean with `git status`. 
 
-    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git status
-    <font color="#b5bd68">On branch myfeature
-    nothing to commit, working directory clean</font>
-    </pre>
+    ```
+    > git status
+    On branch myfeature
+    nothing to commit, working directory clean
+    ```
 
 2. Perform your `pull` or `merge`. Use `git status` to see exactly which files did not merge properly.
 
-    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git pull origin <font color="#b5bd68">myfeature </font>   
+    ```
+    > git pull origin myfeature
 
-    <font color="#b5bd68">Auto-merging serverboot.js
+    Auto-merging serverboot.js
     CONFLICT (content): Merge conflict in serverboot.js
-    Automatic merge failed; fix conflicts and then commit the result</font>
-    </pre>
+    Automatic merge failed; fix conflicts and then commit the result
+    ```
 
 3. (Optional) Check the commit logs to find the commits that conflict with your own using `git log --merge`. 
 
-    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git log --merge
-    <font color="#b5bd68">commit fac422e78f105ccb44b50a00fc82d6ea89b15513
+    ```
+    > git log --merge
+    commit fac422e78f105ccb44b50a00fc82d6ea89b15513
     Merge: 9b28b1e 1dd2603
     Author: Francis Totten frank@fabrikam.com
 
-        merging new api endpoint</font>
-    </pre>   
+        merging new api endpoint
+    ```
 
 4. Update the conflicted files listed in `git status`. Git adds markers to files that have conflicts. These markers look like:   
 
@@ -121,10 +121,10 @@ Resolve merge conflicts on the command line:
 6. Resolve file deleting conflicts with `git add` (keep the file) or `git rm` (remove the file).
 7. If performing a merge (such as in a `pull`), commit the changes. If performing a rebase, use `git rebase --continue` to proceed.
 
-    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git add <font color="#b5bd68">serverboot.js</font>
-    &gt; git commit -m <font color="#b5bd68">"Resolved both new api endpoints"</font>
-    </pre>
+    ```
+    > git add serverboot.js
+    > git commit -m "Resolved both new api endpoints"
+    ```
 
 * * *
 ## Next steps

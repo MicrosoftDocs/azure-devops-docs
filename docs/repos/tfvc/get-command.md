@@ -22,9 +22,11 @@ Gets (downloads) either the latest version or a specified version of one or more
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
-    [/recursive] [/preview] [/noautoresolve] [/noprompt]
-    [/login:username,[password]]
+```
+tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
+[/recursive] [/preview] [/noautoresolve] [/noprompt]
+[/login:username,[password]]
+```
 
 ## Parameters
 
@@ -94,37 +96,49 @@ In all the following examples, assume that `$/SiteApp/Main/` is mapped to `c:\\c
 
 ### Get the latest version of all items in a workspace
 
-    c:\code\SiteApp\Main\SolutionA>tf get
+```
+c:\code\SiteApp\Main\SolutionA>tf get
+```
 
 Gets the latest versions of all items in the workspace. For example, the above command would recursively get all files in `$/SiteApp/Main/` including all its child folders.
 
 ### Recursively get the latest version of items of a certain type in a folder
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get *.cs /recursive
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get *.cs /recursive
+```
 
 Gets the latest version of all C\# (.cs) files in `c:\\code\\SiteApp\\Main\\SolutionA\\Project1`.
 
 ###  Get the latest version of a file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs
+```
 
 Gets the latest version of program.cs in Project1.
 
 ### Get a specific version of a file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs;8
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs;8
+```
 
 Gets version 8 of program.cs in Project1.
 
 ### Get the latest version of two files
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get file1.cs file2.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get file1.cs file2.cs
+```
 
 Gets the latest version of file1.cs and file2.cs in Project1.
 
 ### Synchronize a workspace to match a version of the team's codebase
 
-    c:\code\SiteApp\Main>tf get /v:15
+```
+c:\code\SiteApp\Main>tf get /v:15
+```
 
 Synchronizes the workspace to match the codebase as it existed when changeset 15 was created:
 
@@ -136,7 +150,9 @@ Synchronizes the workspace to match the codebase as it existed when changeset 15
 
 ### Synchronize a workspace to match a labeled version of the team's codebase
 
-    c:\code\SiteApp\Main>tf get /v:LLastKnownGood
+```
+c:\code\SiteApp\Main>tf get /v:LLastKnownGood
+```
 
 Synchronizes the workspace to match the items in the codebase that are [labeled](use-labels-take-snapshot-your-files.md) **LastKnownGood**:
 

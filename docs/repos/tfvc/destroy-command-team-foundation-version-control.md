@@ -30,8 +30,11 @@ After you delete the files you can synchronize the Team Foundation warehouse. Ot
 
 To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
-    [/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]
+```
+tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
+[/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]
+```
+
 ## Parameters
 
 <table>
@@ -86,9 +89,11 @@ After the system verifies your permissions, it runs the destroy command. This co
 
 If you run **tf destroy** without specifying **/i** and **/preview**, the system displays a console **Yes** or **No** prompt for each *filespec* value. Otherwise, you can specify **Yes to all**. If you do not specify **/keephistory**, you are prompted by an interactive text that warns of pending changes, if they exist. The interactive text points to **/preview** if you want more information about the changes. If you specify **/keephistory**, you are also prompted by **Yes**, **No**, or **All** text. If you select **Yes** or **All**, the destruction process starts, and the server paths to the destroyed items appear in the Command Prompt window.
 
-    Destroyed: <serverItem1>
-    Destroyed: <serverItem2>
-    Destroyed: ...
+```
+Destroyed: <serverItem1>
+Destroyed: <serverItem2>
+Destroyed: ...
+```
 
 If you specified the *versionspec* value as a tip, the server paths displayed in the Command Prompt window include deletion IDs. For example, X123 might appear in the Command Prompt window.
 
@@ -125,7 +130,9 @@ The following example permanently deletes the file a.cs.
 
 ### Code
 
-    C:\pi\ws1>tf destroy $/proj/pi/a.cs
+```
+C:\pi\ws1>tf destroy $/proj/pi/a.cs
+```
 
 ### Description
 
@@ -133,7 +140,9 @@ The following example deletes a folder, *aFolder*, type at the command line:
 
 ### Code
 
-    C:\tf delete $/MyTeamProject/aFolder
+```
+C:\tf delete $/MyTeamProject/aFolder
+```
 
 ### Description
 
@@ -141,7 +150,9 @@ To destroy the deleted item, *aFolder*, you must type at the command line:
 
 ### Code
 
-    tf destroy $/MyTeamProject/sFolder;x123
+```
+tf destroy $/MyTeamProject/sFolder;x123
+```
 
 Where x123 is the deletion ID.
 

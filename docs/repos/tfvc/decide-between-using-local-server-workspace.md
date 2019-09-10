@@ -110,7 +110,9 @@ If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you 
 
 **A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../../organizations/security/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your project collection.
 
-    tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
+```
+tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
+```
 
 ### Q: Why can't I see when some members of my team of checked out a file?
 
