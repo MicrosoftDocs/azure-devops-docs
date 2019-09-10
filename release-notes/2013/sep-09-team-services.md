@@ -55,10 +55,3 @@ That’s it for this sprint 53! As always let us know how we're doing on [User V
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-
