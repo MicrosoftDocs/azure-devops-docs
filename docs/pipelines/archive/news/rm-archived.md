@@ -1196,26 +1196,26 @@ Tie the output of the first task to the input list of machines in the second tas
   - Save the release pipeline
 
 
- * **Select artifacts more easily**. A file picker has been introduced
-   for selecting files from the artifact folder structure when setting the parameters for tasks. This is one of the features most requested
-   by early users.
+* **Select artifacts more easily**. A file picker has been introduced
+  for selecting files from the artifact folder structure when setting the parameters for tasks. This is one of the features most requested
+  by early users.
 
- * **Agent queues**. The Release Management agent pools now use queues.
-   Build and Release Management use the same pools and queues with this update.
+* **Agent queues**. The Release Management agent pools now use queues.
+  Build and Release Management use the same pools and queues with this update.
 
- * **Compare and view configuration variables**. Users can now view all
-   of the configuration variables across environments in a release
-   definition or in a release using the **Variables** page.
+* **Compare and view configuration variables**. Users can now view all
+  of the configuration variables across environments in a release
+  definition or in a release using the **Variables** page.
 
- * **Re-assign approvals**. Instead of approving or rejecting an approval
-   request, approvers can now re-assign the approval to another user or
-   group.
+* **Re-assign approvals**. Instead of approving or rejecting an approval
+  request, approvers can now re-assign the approval to another user or
+  group.
 
- * **Notification emails**. Release Management now sends email messages
-   to approvers when an approval is pending, and to environment owners
-   when the deployment to an environment has completed.
+* **Notification emails**. Release Management now sends email messages
+  to approvers when an approval is pending, and to environment owners
+  when the deployment to an environment has completed.
 
- * **Azure Service Principals**. When adding an Azure service connection,
-   you can now specify a service principal based authentication. This
-   will be required if you use 2-Factor Authentication with Azure Active Directory.
+* **Azure Service Principals**. When adding an Azure service connection,
+  you can now specify a service principal based authentication. This
+  will be required if you use 2-Factor Authentication with Azure Active Directory.
 

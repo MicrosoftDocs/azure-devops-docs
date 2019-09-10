@@ -77,7 +77,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
     - Execute test points against a web or desktop application 
     - Bulk execution or mark outcome
     - Assign test points
-	- Filtering
+    - Filtering
 
 **Capabilities from the following list will be added every 3 weeks:**
 

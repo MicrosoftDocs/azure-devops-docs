@@ -127,9 +127,9 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
-	- [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
- 	- [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
- 	- [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
+  - [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
+  - [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
+  - [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
 - [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
 - [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
