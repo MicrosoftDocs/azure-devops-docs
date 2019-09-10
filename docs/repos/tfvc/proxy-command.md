@@ -24,20 +24,31 @@ Configures your client computer to use a proxy server. Adds, deletes, and lists 
 
 To use the **proxy** command to configure a client computer, you must be a member of the **User** security group on the local computer. To use the **proxy** command to work with proxy records, you must have the AdminConfiguration permission. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf proxy ([/configure [Url]) [/collection:TeamProjectCollectionUrl]
-     [/login:UserName,[Password]]
+```
+tf proxy ([/configure [Url]) [/collection:TeamProjectCollectionUrl]
+[/login:UserName,[Password]]
+```
 
-    tf proxy /add Url [/name:Name] [/site:SiteName] 
-    [/description:Description] [/default:(global|site|all)] 
-    [/collection:TeamProjectCollectionUrl] [/login:UserName,[Password]] 
+```
+tf proxy /add Url [/name:Name] [/site:SiteName] 
+[/description:Description] [/default:(global|site|all)] 
+[/collection:TeamProjectCollectionUrl] [/login:UserName,[Password]] 
+```
 
-    tf proxy /delete Url [/collection:TeamProjectCollectionUrl]
-    [/login:UserName,[Password]] 
+```
+tf proxy /delete Url [/collection:TeamProjectCollectionUrl]
+[/login:UserName,[Password]] 
+```
 
-    tf proxy /list [Url1 Yrl2 ...] 
-    [/collection:TeamProjectCollectionUrl] [/login:UserName,[Password]]
+```
+tf proxy /list [Url1 Yrl2 ...] 
+[/collection:TeamProjectCollectionUrl] [/login:UserName,[Password]]
+```
 
-     tf proxy /enabled:(true|false)
+```
+tf proxy /enabled:(true|false)
+```
+
 ## Parameters
 
 <table><thead>
@@ -104,19 +115,27 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 ## Examples
 The following example automatically detects and configures a client computer to use a proxy, if a proxy record has been established:
 
-    c:\projects>tf proxy /configure
+```
+c:\projects>tf proxy /configure
+```
 
 The following example overrides any proxy records on Team Foundation Server and configures a client computer to use a specified proxy:
 
-    c:\projects>tf proxy /configure Url
+```
+c:\projects>tf proxy /configure Url
+```
 
 The following example adds a global record to Team Foundation Server about the availability of this proxy. The first time that a developer performs a get operation, Team Foundation Server will redirect all requests from that developer to the specified proxy.
 
-    c:\projects>tf proxy /add http://server:8081 /default:global /collection:http://tfsserver:8080/
+```
+c:\projects>tf proxy /add http://server:8081 /default:global /collection:http://tfsserver:8080/
+```
 
 The following example adds a site record to Team Foundation Server for developers in an Active Directory domain, which is named corp, to use this proxy server. The first time that a developer from that domain performs a get operation, Team Foundation Server will redirect all requests from that developer to the specified proxy.
 
-    c:\projects>tf proxy /add http://server:8081 /default:site /site:corp /collection:http://tfsserver:8080/
+```
+c:\projects>tf proxy /add http://server:8081 /default:site /site:corp /collection:http://tfsserver:8080/
+```
 
 ## See Also
 

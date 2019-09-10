@@ -22,7 +22,9 @@ Checks out a file and changes its pending change status to Edit. You can call th
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
+```
+tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
+```
 
 ## Parameters
 
@@ -38,13 +40,17 @@ Checks out a file and changes its pending change status to Edit. You can call th
 
 ### Check out a single item
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
+```
 
 Checks out program.cs.
 
 ### Check out two items
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 Checks out the files program1.cs and program2.c.
 

@@ -24,8 +24,10 @@ Locks or unlocks a file or folder to deny or restore the right of users to check
 
 To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md#lock-permission).
 
-    tf lock itemspec /lock:(none|checkout|checkin) 
-    [/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 
+```
+tf lock itemspec /lock:(none|checkout|checkin) 
+[/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 
+```
 
 ## Parameters
 
@@ -113,19 +115,27 @@ You can determine which files are locked in the Team Foundation version control 
 ## Examples
 The following example prevents other users from checking out 314.cs.
 
-    c:\projects>tf lock /lock:checkout 314.cs
+```
+c:\projects>tf lock /lock:checkout 314.cs
+```
 
 The following example prevents other users from checking in changes to 1256.cs but enables them to check it out in their workspaces.
 
-    c:\projects>tf lock /lock:checkin 1256.cs
+```
+c:\projects>tf lock /lock:checkin 1256.cs
+```
 
 The following example prevents other users from pending changes to any items in the src/ folder in the Team Foundation version control server.
 
-    c:\projects>tf lock /lock:checkout $/src
+```
+c:\projects>tf lock /lock:checkout $/src
+```
 
 The following example unlocks and makes all files in the src/ Team Foundation version control server folder available for check-out and check-in by other users.
 
-    c:\projects>tf lock /lock:none src/
+```
+c:\projects>tf lock /lock:none src/
+```
 
 ## See Also
 

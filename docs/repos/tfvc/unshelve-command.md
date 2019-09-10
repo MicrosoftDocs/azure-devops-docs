@@ -24,8 +24,11 @@ Restores shelved file revisions, check-in notes, comments, and work item associa
 
 To use the **unshelve** command, you must have the **Read** permission set to **Allow**, and you must have the **Check out** permission for the items in the shelveset set to **Allow**. Additionally, to delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf unshelve [/move] [shelvesetname[;username]] itemspec 
-    [/recursive] [/noprompt][/login:username,[password]]
+```
+tf unshelve [/move] [shelvesetname[;username]] itemspec 
+[/recursive] [/noprompt][/login:username,[password]]
+```
+
 ## Parameters<table>
 <thead>
 <tr>
@@ -116,11 +119,15 @@ You can delete a shelveset by using `tf shelve /delete`. For more information, s
 ## Examples
 The following example opens the **Unshelve** dialog box so that you can find and unshelve a shelveset into the current workspace. You also have an option in the dialog box to have the shelveset deleted when the unshelve operation completes.
 
-    c:\>tf unshelve
+```
+c:\>tf unshelve
+```
 
 The following example unshelves the shelveset buddytest\_1256 into the current workspace and removes it from Team Foundation Server.
 
-    c:\>tf unshelve /move buddytest_1256
+```
+c:\>tf unshelve /move buddytest_1256
+```
 
 ## See Also
 

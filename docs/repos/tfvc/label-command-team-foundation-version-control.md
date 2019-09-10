@@ -26,12 +26,16 @@ Attaches a label to or removes a label from a version of a file or folder in the
 
 To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf label labelname[@scope] [/owner:ownername] 
-    itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 
-    [/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]	
+```
+tf label labelname[@scope] [/owner:ownername] 
+itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 
+[/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]	
+```
 
-	tf label /delete labelname[@scope] 
-    itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
+tf label /delete labelname[@scope] 
+itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 
@@ -147,23 +151,33 @@ You can prevent other users from "overloading" a label such as "M3" in different
 ## Examples
 The following example attaches the "goodbuild" label to the workspace version of the "docs" folder and the files and folders it contains.
 
-    c:\projects>tf label goodbuild docs /recursive
+```
+c:\projects>tf label goodbuild docs /recursive
+```
 
 The following example attaches the "goodbuild" label to the "docs" folder but not the files and folders the docs folder contains.
 
-    c:\projects>tf label goodbuild docs
+```
+c:\projects>tf label goodbuild docs
+```
 
 The following example attaches the "goodbuild" label to version 3 of 314.cs in the Team Foundation version control server.
 
-    c:\projects>tf label goodbuild /version:3 $/src/314.cs
+```
+c:\projects>tf label goodbuild /version:3 $/src/314.cs
+```
 
 The following example deletes the "badbuild" label from all items in the Team Foundation version control server.
 
-    c:\projects>tf label /delete badbuild
+```
+c:\projects>tf label /delete badbuild
+```
 
 The following example uses the scope option to apply a label to 314.cs.
 
-    c:\projects>tf label goodbuild@$/TeamProject1 314.cs
+```
+c:\projects>tf label goodbuild@$/TeamProject1 314.cs
+```
 
 ## See Also
 

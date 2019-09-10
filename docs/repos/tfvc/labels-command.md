@@ -24,8 +24,10 @@ Displays the list of labels in the server for Team Foundation version control.
 
 To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf labels [/owner:ownername] [/format:(brief|detailed)] 
-    [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]
+```
+tf labels [/owner:ownername] [/format:(brief|detailed)] 
+[/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]
+```
 
 ## Parameters<table>
 
@@ -54,15 +56,21 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example displays the list of labels created by user "jasonj."
 
-    c:\projects> tf labels /owner:jasonj
+```
+c:\projects> tf labels /owner:jasonj
+```
 
 The following example displays information about "build1033" label and lists the files and folders to which the label has been applied in the Team Foundation version control server.
 
-    c:\projects> tf labels /format:detailed build1033
+```
+c:\projects> tf labels /format:detailed build1033
+```
 
 The following example displays all labels in the Team Foundation version control server that have a *labelname* that begins with "build" and are owned by the account executing the **labels** command.
 
-    c:\projects> tf labels build*
+```
+c:\projects> tf labels build*
+```
 
 ## See Also
 

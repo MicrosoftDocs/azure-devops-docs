@@ -24,7 +24,9 @@ Displays the history of a branch for a specified file or folder.
 
 To use the **branches** command, your **Read** permission must be set to **Allow** for the item and any branches to view their history. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUrl] [/login:username,[password]]
+```
+tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUrl] [/login:username,[password]]
+```
 
 ## Parameters<table>
 <thead>
@@ -84,23 +86,31 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The following example displays branch history for the version-controlled file C:\\314.cs.
 
-    c:\projects>tf branches 314.cs
+```
+c:\projects>tf branches 314.cs
+```
 
 The following example displays branch history for the header.h item in the Team Foundation version control server.
 
-    c:\projects>tf branches $/applications/header.h
+```
+c:\projects>tf branches $/applications/header.h
+```
 
 The following example displays the branch history of the folder $/rel30/math.
 
-    c:\projects>tf branches $/rel30/math/
+```
+c:\projects>tf branches $/rel30/math/
+```
 
 The following example displays the branch history for WindowsApplication13-branch. The results indicate the history for the specified branch by using angle brackets.
 
-    D:\projects\ws1>tf branches WindowsApplication13-branch
-    $/jun16-1/WindowsApplication13
-    >>      $/jun16-1/WindowsApplication13-branch   Branched from version 3 <<
-                    $/jun16-1/WindowsApplication13-branch-prime     Branched from version 5
-            $/jun16-1/WindowsApplication13-branch2  Branched from version 3
+```
+D:\projects\ws1>tf branches WindowsApplication13-branch
+$/jun16-1/WindowsApplication13
+>>      $/jun16-1/WindowsApplication13-branch   Branched from version 3 <<
+                $/jun16-1/WindowsApplication13-branch-prime     Branched from version 5
+        $/jun16-1/WindowsApplication13-branch2  Branched from version 3
+```
 
 ## See Also
 
