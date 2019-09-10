@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.assetid: 
+ms.assetid: CFFC2B0F-D4A8-4C0B-B485-823CE6C0E63C
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
@@ -29,7 +29,7 @@ If you already have an app in GitHub that you want to deploy, you can try creati
 However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
-    
+    TBA
 ```
 
 #### [Java](#tab/java)
@@ -39,7 +39,7 @@ If you already have an app in GitHub that you want to deploy, you can try creati
 However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
-    
+    TBA
 ```
 
 #### [Nodejs](#tab/nodejs)
@@ -49,7 +49,7 @@ If you already have an app in GitHub that you want to deploy, you can try creati
 However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
-    
+    TBA
 ```
 
 * * *
@@ -90,7 +90,7 @@ To get started:
 1. Fork this repo in GitHub, or import it into Azure Repos:
 
    ```
-   https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/container/Application
+       TBA
    ```
 2. Create a pipeline and select the **Docker** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
