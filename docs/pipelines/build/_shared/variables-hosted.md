@@ -373,6 +373,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>The comment of the commit or changeset.
 
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
 
 Note: This variable is available in TFS 2015.4.
 </td>
