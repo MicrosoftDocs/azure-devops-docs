@@ -541,7 +541,7 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example the two SQL commands would look like the following:
 
 ```sql
-ALTER DATABASE [TFoo] SET RECOVERY SIMPLE;
+ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
 
 USE [Foo]
 CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
