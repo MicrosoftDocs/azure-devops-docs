@@ -14,7 +14,7 @@ ms.date: 9/10/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Function App Container
+# Deploy a Function App Container
 
 You can automatically deploy your Azure Function to an Azure Function App for Linux Container after every successful build.
 
@@ -57,6 +57,7 @@ However, if you are a new user, then you might get a better start by using our s
 ## Build your app
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 Follow the [Build, test, and push Docker container apps](../languages/docker.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
@@ -108,14 +109,14 @@ Now that the build pipeline is in place, you will learn a few more common config
 
 ## Azure service connection
 
-The **[Azure Function App on Container Deploy](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppContainerV1/README.md)** task similar to other built-in Azure tasks, requires an Azure service connection as an
+The **[Azure Function App on Container Deploy](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppContainerV1/README.md)** task, similar to other built-in Azure tasks, requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the `AzureFunctionAppContainer` task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below-
+You must supply an Azure service connection to the `AzureFunctionAppContainer` task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below.
 
 ```yaml
 variables: 
@@ -209,6 +210,7 @@ YAML pipelines aren't available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 The simplest way to deploy to an Azure Function App Container is to use the **Azure Function App on Container Deploy** task.
 This task is added to the release pipeline when you select the deployment task for Azure Function App on Container deployment.
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
