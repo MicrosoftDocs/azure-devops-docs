@@ -50,6 +50,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |-------------|----------|  
 > |![list of conditions](_img/rules/when-condition-2.png) | ![list of actions](_img/rules/rule-actions.png)
 
+> [!NOTE]  
+> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available in the Azure DevOps Service.
+
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)]
