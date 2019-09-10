@@ -163,63 +163,46 @@ tools:
     - title: Azure SQL Database
       imageSrc: https://docs.microsoft.com/azure/media/index/sqldatabase.svg
       url: ./pipelines/targets/azure-sqldb.md
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Get started
-  items:
-    # Card
-    - title: Key concepts
-      links:
-        - url: ./project/navigation/index.md
-          itemType: get-started
-          text: Web portal navigation
-        - url: ./user-guide/work-team-explorer.md
-          itemType: overview
-          text: Team Explorer navigation
-        - url: ./user-guide/tools.md
-          itemType: reference
-          text: Supported tools & clients
-        - url: ./user-guide/services.md
-          itemType: overview
-          text: Supported features & services
-        - url: ./organizations/security/get-started-stakeholder.md
-          itemType: get-started
-          text: With Stakeholder access 
-      # footerLink 
-      footerLink:
-        url: /azure/devops/user-guide/index 
-        text: See more
-    # Card
-    - title: Collaborate
-      links:
-        - url: ./project/wiki/wiki-create-repo.md
-          itemType: quickstart
-          text: Create a Wiki for your project
-        - url: ./project/wiki/markdown-guidance.md
-          itemType: reference
-          text: Markdown syntax guidance
-        - url: ./organizations/public/create-public-project.md
-          itemType: quickstart
-          text: Create a public project
-      # footerLink (optional)
-      footerLink:
-        url: /azure/devops/project/index
-        text: See more
-    # Card
-    - title: GitHub Integration
-      links:
-        - url: ./boards/github/connect-to-github.md
-          itemType: quickstart
-          text: Azure Boards & GitHub
-        - url: ./pipelines/create-first-pipeline.md
-          itemType: quickstart
-          text: Azure Pipelines & GitHub
+
 # additionalContent section (optional)
-# Card with links style
 additionalContent:
   # Supports up to 3 sections
   sections:
+    - title: Get started
+      items:
+        # Card
+        - title: Key concepts
+          links:
+            - url: ./project/navigation/index.md
+              text: Web portal navigation
+            - url: ./user-guide/work-team-explorer.md
+              text: Team Explorer navigation
+            - url: ./user-guide/tools.md
+              text: Supported tools & clients
+            - url: ./user-guide/services.md
+              text: Supported features & services
+            - url: ./organizations/security/get-started-stakeholder.md
+              text: With Stakeholder access 
+            - url: /azure/devops/user-guide/index 
+              text: See more
+        # Card
+        - title: Collaborate
+          links:
+            - url: ./project/wiki/wiki-create-repo.md
+              text: Create a Wiki for your project
+            - url: ./project/wiki/markdown-guidance.md
+              text: Markdown syntax guidance
+            - url: ./organizations/public/create-public-project.md
+              text: Create a public project
+            - url: /azure/devops/project/index
+              text: See more
+        # Card
+        - title: GitHub Integration
+          links:
+            - url: ./boards/github/connect-to-github.md
+              text: Azure Boards & GitHub
+            - url: ./pipelines/create-first-pipeline.md
+              text: Azure Pipelines & GitHub
     - title: Tools and utilities
       items:
         # Card
@@ -242,10 +225,12 @@ additionalContent:
               url: ./organizations/settings/scale/index.md
             - text: Projects
               url: ./organizations/projects/index.md
-            - text: Organizations
-              url: ./organizations/accounts/index.md
+            - text: Public Projects
+              url: ./organizations/public/index.md
             - text: Processes
               url: ./reference/index.md
+            - text: Organizations
+              url: ./organizations/accounts/index.md
             - text: Repos, Pipelines, & Test
               url: ./organizations/settings/index.md
             - text: Notifications
@@ -258,7 +243,18 @@ additionalContent:
             - text: Access
               url: ./organizations/security/access-levels.md
             - text: Billing overview
-              url: .organizations/billing/overview.md
+              url: ./organizations/billing/overview.md
+        # Card
+        - title: Marketplace and Extensibility
+          links:
+            - text: Discover extensions
+              url: ./marketplace/overview.md
+            - text: Develop extensions
+              url: ./extend/get-started/node.md
+            - text: Integrate applications
+              url: ./integrate/index.md
+            - text: Service hooks
+              url: ./service-hooks/overview.md
         # Card
         - title: Developer Resources
           links:
