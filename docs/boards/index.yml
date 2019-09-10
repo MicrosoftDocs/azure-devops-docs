@@ -1,0 +1,124 @@
+### YamlMime:Hub
+
+title: Azure Boards Documentation
+summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
+brand: azure
+
+metadata:
+  title: Azure DevOps Documentation
+  description: Learn about planning & tracking issues, bugs, user stories, & other work; collaborate on software development with customizable Scrum, Kanban, and Agile tools.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: azure-boards
+  ms.topic: hub-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 09/30/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Azure Boards
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Boards?
+            url: ./boards/get-started/what-is-azure-boards.md
+          - text: Backlogs, Boards, Taskboards, and Delivery plans
+            url: ./boards/get-started/what-is-azure-boards.md
+      - linkListType: concept
+        links:
+          - text: Choose a process
+            url: ./work-items/guidance/choose-process.md
+          - text: Agile process workflow
+            url: ./work-items/guidance/agile-process-workflow.md
+          - text: About work items
+            url: ./work-items/about-work-items.md
+          - text: About teams and Agile tools
+            url: ./organizations/settings/about-teams-and-settings.md
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Sign up for free
+            url: ./get-started/sign-up-invite-teammates.md
+          - text: Plan and track work
+            url: ./get-started/plan-track-work.md
+          - text: Create your backlog
+            url: ./backlogs/create-your-backlog.md
+      - linkListType: tutorial
+        links:
+          - text: Define features and epics
+            url: ./backlogs/define-features-epics.md
+          - text: Bulk add or modify work items
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+          - text: Move, change, delete, or restore work items  
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+      - linkListType: how-to-guide
+        links:
+          - text: Customize your boards
+            url: ./get-started/customize-boards.md
+  - title: Integrate with GitHub
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Connect Azure Boards to GitHub
+            url: ./github/connect-to-github.md
+          - text: Link GitHub commits, pull requests, and issues to work items
+            url: ./github/link-to-from-github.md
+          - text: Configure status badges
+            url: ./github/configure-status-badgess.md
+  - title: Find and stuff
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create managed queries
+            url: ./queries/using-queries.md
+          - text: Perform ad hoc searches
+            url: ./queries/search-box-queries.md
+      - linkListType: concept
+        links:
+          - text: Link work items
+            url: ./queries/link-work-items-support-traceability.md
+  - title: Configure
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Set area paths
+            url: ../organizations/settings/set-area-paths.md
+          - text: Set iteration paths (aka sprints)
+            url: ../organizations/settings/set-iteration-paths-sprints.md
+      - linkListType: how-to-guide
+        links:
+          - text: Manage and configure team tools
+            url: ../organizations/settings/manage-teams.md
+  - title: Customize work tracking
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Add a custom field
+            url: ../organizations/settings/work/add-custom-field.md
+          - text: Add or modify a work item type
+            url: ../organizations/settings/work/add-custom-wit.md
+      - linkListType: tutorial
+        links:
+          - text: Customize the workflow
+            url: ../organizations/settings/work/customize-process-workflow.md
+      - linkListType: concept
+        links:
+          - text: Inheritance process model
+            url: ../organizations/settings/work/inheritance-process-model.md
+          - text: On-premises XML process model
+            url: ../reference/on-premises-xml-process-model.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fix re-ordering and nesting issues
+            url: ./backlogs/resolve-backlog-reorder-issues.md
+          - text: Set up your Backlogs and Boards
+            url: ./backlogs/set-up-your-backlog.md
+

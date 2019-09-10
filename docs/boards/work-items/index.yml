@@ -5,8 +5,9 @@ summary: Collaborate on software development through source control, work tracki
 brand: azure
 
 metadata:
-  title: Azure Boards Documentation
+  title: Azure DevOps Documentation
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
+  services: service
   ms.service: visual-studio-online
   ms.topic: hub-page 
   author: KathrynEE 
