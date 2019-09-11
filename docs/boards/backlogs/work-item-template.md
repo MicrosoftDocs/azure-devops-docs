@@ -174,9 +174,7 @@ The main method for adding a work item using a template is to open the template 
 
 #### [Browser](#tab/browser/)
 
-1. Open settings for a team.  
-
-    Choose **Project Settings**.
+1. Go to **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
