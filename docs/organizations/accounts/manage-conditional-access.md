@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -38,6 +38,8 @@ Azure DevOps enforces the policy for usage of personal access tokens (PATs), alt
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
 
+For more information, see the REST API reference article, section [API & TFS version mapping](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+
 ## Enable Conditional Access for Azure DevOps
 
 To enforce Conditional Access policy on your organization, you must enable the policy in Azure DevOps, as it is set to *off* by default. This setting only applies to alternate credentials, and doesn't apply if CAPs are set in Azure AD, regardless of the settings in Azure DevOps.
@@ -58,3 +60,5 @@ To enforce Conditional Access policy on your organization, you must enable the p
 
 * [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
 * [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+
+

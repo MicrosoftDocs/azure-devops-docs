@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 09/03/2019
+ms.date: 09/06/2019
 ---
 
 # Azure Pipelines - Sprint 157 Update

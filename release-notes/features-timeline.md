@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/03/2019
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -127,7 +127,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="19"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
+            <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
          </tr>
         <tr><td>Download a list of organizations to a directory</td><td>General</td><td>Future</td></tr>      
@@ -147,6 +147,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>Future</td></tr>            
         <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>Future</td></tr>
         <tr>
             <td rowspan="27"><a href="2019/sprint-156-update.md" data-raw-source="[12 August 2019](2019/sprint-156-update.md)">12 August 2019</a></td>
@@ -4112,7 +4113,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </tbody>
 </table>
 
-### Server Build Numbers
+## Server Build Numbers
 
 <table>
 <thead>
@@ -4164,6 +4165,16 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>16.131.27701.1</td>
         </tr>
          <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.2](https://aka.ms/tfs2018-update1)">2018.1.2</a></td>
+          <td>Nov. 27, 2018</td>
+          <td>16.122.28313.3</td>
+        </tr>
+         <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.1](https://aka.ms/tfs2018-update1)">2018.1.1</a></td>
+          <td>Sep. 12, 2018</td>
+          <td>16.122.28028.4</td>
+        </tr>
+         <tr>
           <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1](https://aka.ms/tfs2018-update1)">2018.1</a></td>
           <td>Feb. 20, 2018</td>
           <td>16.122.27409.2</td>
@@ -4203,6 +4214,12 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
         </tr>
+        <tr>
+          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.2](https://aka.ms/tfs2015-update4-vs)">2015.4.2</a></td>
+          <td>Apr. 9, 2019</td>
+          <td>14.114.28805.0</td>
+        </tr>
+        <tr>
         <tr>
           <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.1](https://aka.ms/tfs2015-update4-vs)">2015.4.1</a></td>
           <td>Feb. 28, 2018</td>

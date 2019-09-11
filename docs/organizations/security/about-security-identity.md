@@ -34,7 +34,7 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
