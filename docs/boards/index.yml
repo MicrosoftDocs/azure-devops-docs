@@ -28,6 +28,11 @@ landingContent:
             url: ./boards/get-started/what-is-azure-boards.md
           - text: Backlogs, Boards, Taskboards, and Delivery plans
             url: ./boards/get-started/what-is-azure-boards.md
+    linkLists:
+      - linkListType: video
+        links:
+          - text: What is Azure Boards?
+            url: https://sec.ch9.ms/ch9/6f7f/424c1d79-4896-4b8e-9034-0aa80ecb6f7f/AzureBoards_high.mp4
       - linkListType: concept
         links:
           - text: Choose a process
@@ -60,17 +65,7 @@ landingContent:
         links:
           - text: Customize your boards
             url: ./get-started/customize-boards.md
-  - title: Integrate with GitHub
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Connect Azure Boards to GitHub
-            url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, and issues to work items
-            url: ./github/link-to-from-github.md
-          - text: Configure status badges
-            url: ./github/configure-status-badgess.md
-  - title: Find and stuff
+  - title: Find and list work items
     linkLists:
       - linkListType: tutorial
         links:
@@ -82,25 +77,67 @@ landingContent:
         links:
           - text: Link work items
             url: ./queries/link-work-items-support-traceability.md
+      - linkListType: reference
+        links:
+          - text: Query quick reference
+            url: ./queries/query-index-quick-ref.md
+  - title: Plan and monitor sprints (Scrum)
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Assign work to sprints
+            url: ./sprints/assign-work-sprint.md
+          - text: Set area paths
+            url: ../organizations/settings/set-area-paths.md
+          - text: Monitor sprint burndown
+            url: ./sprints/sprint-burndown.md
+      - linkListType: how-to-guide
+        links:
+          - text: Customize a Taskboard
+            url: ./sprints/customize-taskboard.md
   - title: Configure
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Set area paths
-            url: ../organizations/settings/set-area-paths.md
+          - text: Set capacity
+            url: ./sprints/set-capacity.md
+          - text: Set capacity
+            url: ./sprints/set-capacity.md
           - text: Set iteration paths (aka sprints)
             url: ../organizations/settings/set-iteration-paths-sprints.md
       - linkListType: how-to-guide
         links:
           - text: Manage and configure team tools
             url: ../organizations/settings/manage-teams.md
+  - title: Integrate with GitHub
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Connect Azure Boards to GitHub
+            url: ./github/connect-to-github.md
+          - text: Link GitHub commits, pull requests, and issues to work items
+            url: ./github/link-to-from-github.md
+          - text: Configure status badges
+            url: ./github/configure-status-badges.md
+  - title: Agile at Scale
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Portfolio management
+            url: ./plans/portfolio-management.md
+          - text: Configure a hierarchy of teams
+            url: ./plans/configure-hierarchical-teams.md
+      - linkListType: tutorial
+        links:
+          - text: Visibility across teams
+            url: ./plans/visibility-across-teams.md
   - title: Customize work tracking
     linkLists:
       - linkListType: quickstart
         links:
           - text: Add a custom field
             url: ../organizations/settings/work/add-custom-field.md
-          - text: Add or modify a work item type
+          - text: Add or modify work item types
             url: ../organizations/settings/work/add-custom-wit.md
       - linkListType: tutorial
         links:
@@ -112,6 +149,14 @@ landingContent:
             url: ../organizations/settings/work/inheritance-process-model.md
           - text: On-premises XML process model
             url: ../reference/on-premises-xml-process-model.md
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Work item field index
+            url: ./work-items/guidance/work-item-field.md
+          - text: Work items quick reference
+            url: ./work-items/quick-ref.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
