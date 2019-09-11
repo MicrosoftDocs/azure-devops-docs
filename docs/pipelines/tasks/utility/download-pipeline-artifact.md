@@ -93,7 +93,6 @@ Use this task in a build or release pipeline to download pipeline artifacts from
     project: 'FabrikamFiber'
     pipelineId: 12
     buildVersionToDownload: 'specific'
-    pipelineId: 2995
 ```
 
 ## Q&A
