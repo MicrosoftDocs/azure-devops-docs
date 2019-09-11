@@ -42,7 +42,7 @@ landingContent:
           - text: About work items
             url: ./work-items/about-work-items.md
           - text: About teams and Agile tools
-            url: ./organizations/settings/about-teams-and-settings.md
+            url: ../organizations/settings/about-teams-and-settings.md
   - title: Get started
     linkLists:
       - linkListType: quickstart
@@ -61,10 +61,6 @@ landingContent:
             url: ./backlogs/office/bulk-add-modify-work-items-excel.md
           - text: Move, change, delete, or restore work items  
             url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-      - linkListType: how-to-guide
-        links:
-          - text: Customize your boards
-            url: ./get-started/customize-boards.md
   - title: Find and list work items
     linkLists:
       - linkListType: tutorial
@@ -87,28 +83,10 @@ landingContent:
         links:
           - text: Assign work to sprints
             url: ./sprints/assign-work-sprint.md
-          - text: Set area paths
-            url: ../organizations/settings/set-area-paths.md
+          - text: Set capacity
+            url: ./sprints/set-capacity.md
           - text: Monitor sprint burndown
             url: ./sprints/sprint-burndown.md
-      - linkListType: how-to-guide
-        links:
-          - text: Customize a Taskboard
-            url: ./sprints/customize-taskboard.md
-  - title: Configure
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Set capacity
-            url: ./sprints/set-capacity.md
-          - text: Set capacity
-            url: ./sprints/set-capacity.md
-          - text: Set iteration paths (aka sprints)
-            url: ../organizations/settings/set-iteration-paths-sprints.md
-      - linkListType: how-to-guide
-        links:
-          - text: Manage and configure team tools
-            url: ../organizations/settings/manage-teams.md
   - title: Integrate with GitHub
     linkLists:
       - linkListType: quickstart
@@ -127,10 +105,24 @@ landingContent:
             url: ./plans/portfolio-management.md
           - text: Configure a hierarchy of teams
             url: ./plans/configure-hierarchical-teams.md
-      - linkListType: tutorial
-        links:
           - text: Visibility across teams
             url: ./plans/visibility-across-teams.md
+  - title: Configure
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Set area paths
+            url: ../organizations/settings/set-area-paths.md
+          - text: Set iteration paths (aka sprints)
+            url: ../organizations/settings/set-iteration-paths-sprints.md
+      - linkListType: how-to-guide
+        links:
+          - text: Configure a Kanban board
+            url: ./get-started/customize-boards.md
+          - text: Configure a Taskboard
+            url: ./sprints/customize-taskboard.md
+          - text: Manage and configure team tools
+            url: ../organizations/settings/manage-teams.md
   - title: Customize work tracking
     linkLists:
       - linkListType: quickstart
