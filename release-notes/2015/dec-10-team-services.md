@@ -81,4 +81,3 @@ That’s it for Sprint 92. Please reach out on [Twitter](https://twitter.com/Azu
 Thanks,
 
 Aaron Bjork
-

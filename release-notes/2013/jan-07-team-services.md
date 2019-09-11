@@ -67,10 +67,3 @@ Our next deployment is coming on January 21st so we’ll see you again in two we
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

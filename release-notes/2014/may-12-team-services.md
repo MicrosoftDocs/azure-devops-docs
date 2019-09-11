@@ -79,13 +79,3 @@ If you have any additional questions, the OpsHub team will be monitoring for que
 Thanks,
 
 Will Smythe
-
-
-
-
-
-
-
-
-
-
