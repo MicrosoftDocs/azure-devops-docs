@@ -44,6 +44,8 @@
       href: targets/azure-functions-windows.md
     - name: Web App on Windows
       href: targets/webapp.md
+    - name: Web App on Linux
+      href: targets/webapp-linux.md
     - name: Web App on Linux Container
       href: targets/webapp-on-container-linux.md
     - name: Azure Resource Manager
