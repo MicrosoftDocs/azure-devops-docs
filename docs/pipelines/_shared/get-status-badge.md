@@ -4,7 +4,7 @@
 Many developers like to show that they're keeping their code quality high by displaying a status badge in their repo.
 
 > [!NOTE]
-> Even in a private project, anonymous badge access is enabled by default. With anonymous badge access enabled, anyone might be able to query information such as project names, branch names, job names, and build status through the badge status API. To turn off anonymous access, select the checkbox located in the  **Settings** tab of your project settings.
+> Even in a private project, anonymous badge access is enabled by default. With anonymous badge access enabled, users outside your organization might be able to query information such as project names, branch names, job names, and build status through the badge status API. To turn off anonymous access, select the checkbox located in the  **Settings** tab of your project settings.
 
 ![Status badge shows Azure pipeline succeeded](_img/azure-pipelines-succeeded.png)
 
