@@ -1,7 +1,7 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "release-notes",
+      "docset_name": "azure-devops-release-notes",
       "build_source_folder": "release-notes",
       "build_output_subfolder": "release-notes",
       "locale": "en-us",
@@ -17,9 +17,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "team-services",
+      "docset_name": "azure-devops-docs",
       "build_source_folder": "docs",
-      "build_output_subfolder": "team-services",
+      "build_output_subfolder": "docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
