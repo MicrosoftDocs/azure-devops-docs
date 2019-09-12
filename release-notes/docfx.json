@@ -46,7 +46,13 @@
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:devops",
       "ms.prodfamily": "ALM",
-      "hide_comments": "true"
+      "hide_comments": "true",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "VS.release-notes",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {},
     "template": [],
