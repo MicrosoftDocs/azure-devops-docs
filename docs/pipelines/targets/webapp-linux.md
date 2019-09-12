@@ -213,6 +213,8 @@ variables:
 
 The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The **Azure Web App Deploy** task will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Linux App Service.
 
+::: moniker-end
+
 ::: moniker range="< azure-devops-2019"
 
 YAML pipelines aren't available on TFS.
