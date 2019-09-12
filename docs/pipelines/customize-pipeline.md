@@ -9,13 +9,13 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 4/24/2019
-monikerRange: "azure-devops"
+ms.date: 09/12/2019
+monikerRange: ">= azure-devops-2019"
 ---
 
 # Customize your pipeline
 
-**Azure Pipelines**
+[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
