@@ -471,13 +471,13 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
-Scheduled triggers are evaluated for a branch, when the following events occur.
+Scheduled triggers are evaluated for a branch when the following events occur.
 
 * A pipeline is created.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
 * A new branch is created. 
 
-After one of these events occurs in a branch, any scheduled builds for that branch are added if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
+After one of these events occurs in a branch, any scheduled builds for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
 
 > [!IMPORTANT]
 > Scheduled builds for a branch are added only if the branch matches the branch filters for the 
