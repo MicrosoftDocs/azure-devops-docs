@@ -84,6 +84,10 @@ None
 <td>Flatten Folders</td>
 <td>Flatten the folder structure and copy all files into the specified target folder.</td>
 </tr>
+<tr>
+<td>Preserve Target Timestamp</td>
+<td>Using the original source file, preserve the target file timestamp.</td>
+</tr>
 
 
 <tr>
