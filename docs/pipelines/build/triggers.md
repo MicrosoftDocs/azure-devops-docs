@@ -484,6 +484,7 @@ Scheduled builds for a branch are added only if the scheduled triggers in the YA
 For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
 
 ```yaml
+# YAML file in the master branch
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily midnight build
@@ -497,6 +498,7 @@ Next, a new branch is created based off of `master`, named `new-feature`. The sc
 If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
 
 ```yaml
+# YAML file in the new-feature-branch
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily midnight build
@@ -506,18 +508,28 @@ schedules:
     - new-feature
 ```
 
-Now consider that there is an existing branch named `release-branch` that contains the following scheduled triggers, from when it was created off of the `master` branch. The branch filters only contain `master` and don't include `release-branch`.
+Now consider that there is an existing branch named `release` that contains a YAML file with the following scheduled triggers, from when it was created off of the `master` branch. The branch filters in that branch only contain `master` and don't include `release`, but `release` is added to the branch filters in the YAML file in the `master` branch.
 
 ```yaml
+# YAML file in the release branch
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily midnight build
   branches:
     include:
     - master
+
+# YAML file in the master branch with release added to the branches list
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - release
 ```
 
-If `release-branch` is added to the branch filters in the `master` branch, but **not** to the branch filters in the `release-branch`, the `release-branch` won't be built on that schedule. Only when the `feature-branch` is added to the branch filters in the YAML file **in the feature-branch** will the scheduled build be added to the scheduler according to the scheduled trigger.
+Because `release` was added to the branch filters in the `master` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
 ### Supported cron syntax
 
