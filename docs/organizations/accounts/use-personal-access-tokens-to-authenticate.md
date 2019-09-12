@@ -44,6 +44,9 @@ A: https://dev.azure.com/{yourorganization}
 
 A: No, but you can extend a PAT or modify its scope.
 
+## Q: Is there a way to renew a PAT via rest API?
+A: No, we don’t have a rest API to renew a PAT. It has to be done within the user interface (UI).
+
 ### Q: Where can I learn more about how to use PATs?
 
 A: For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client).
