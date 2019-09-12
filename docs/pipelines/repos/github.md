@@ -470,7 +470,7 @@ Pull request (PR) triggers cause a build to run whenever a pull request is opene
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
+> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in pipelines settings by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
@@ -643,7 +643,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ### Overriding YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the classic editor, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
+PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
 ![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
