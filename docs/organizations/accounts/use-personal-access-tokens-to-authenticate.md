@@ -126,7 +126,7 @@ public static async void GetBuilds()
 }
 ```
 <br/>
-When your code is working, it's a good time to switch from basic auth to <a href="oauth.md" data-raw-source="[OAuth](oauth.md)">OAuth</a>.
+When your code is working, it's a good time to switch from basic auth to <a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth](../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
 
 Enabling IIS Basic Authentication invalidates using PATs for TFS. Learn more about [using IIS Basic Authentication with TFS on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).
 

@@ -212,7 +212,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-   [Authenticating with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 

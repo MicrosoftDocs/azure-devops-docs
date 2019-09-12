@@ -77,7 +77,7 @@ Here's how to get a list of team projects from TFS using the default port and co
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/tfs/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Process the response
 
