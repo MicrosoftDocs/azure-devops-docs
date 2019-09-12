@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 09/06/2019
+ms.date: 09/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -477,7 +477,9 @@ Scheduled triggers are evaluated and added to the build schedule when the follow
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
 * A new branch is created. If the version of a pipeline's YAML file in that branch has a scheduled trigger that matches the new branch name, that scheduled trigger is added to the build schedule.
 
-### Example of scheduled triggers for multiple branches
+### Scheduled triggers for multiple branches
+
+Scheduled builds for a branch are added only if the scheduled triggers in the YAML file **in that particular branch** match the branch filters for that branch.
 
 For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
 
@@ -503,6 +505,19 @@ schedules:
     - master
     - new-feature
 ```
+
+Now consider that there is an existing branch named `release-branch` that contains the following scheduled triggers, from when it was created off of the `master` branch. The branch filters only contain `master` and don't include `release-branch`.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+If `release-branch` is added to the branch filters in the `master` branch, but **not** to the branch filters in the `release-branch`, the `release-branch` won't be built on that schedule. Only when the `feature-branch` is added to the branch filters in the YAML file **in the feature-branch** will the scheduled build be added to the scheduler according to the scheduled trigger.
 
 ### Supported cron syntax
 
