@@ -100,12 +100,12 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 
 ::: moniker range="azure-devops"
 
-[Add a user](#add-user) | [Update a user](#update-user) | [List users](#list-users) | [Show users](#show-users)
-
 The following parameters are optional for all commands, and not listed in the examples provided in this section. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
 - **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+
+[Add a user](#add-user) | [Update a user](#update-user) | [List users](#list-users) | [Show users](#show-users)
 
 <a id="add-user" /> 
 
