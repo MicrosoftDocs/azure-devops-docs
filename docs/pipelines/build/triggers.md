@@ -510,7 +510,7 @@ schedules:
     - new-feature
 ```
 
-Now consider that there is an existing branch named `release` that contains a YAML file with the following scheduled triggers, from when it was created off of the `master` branch. The branch filters in that branch only contain `master` and don't include `release`, but `release` **is** added to the branch filters in the YAML file in the `master` branch.
+Now consider that a branch named `release` is created based off `master`, and then `release` is added to the branch filters in the YAML file in the `master` branch, but not in the newly created `release` branch.
 
 ```yaml
 # YAML file in the release branch
