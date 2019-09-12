@@ -145,7 +145,7 @@ Here's how to get a list of projects from TFS using the default port and collect
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Process the response
 
