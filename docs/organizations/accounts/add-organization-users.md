@@ -50,6 +50,8 @@ link to the organization page.
 
 #### [Browser](#tab/browser)
 
+::: moniker range="azure-devops"
+
 To give other users access to your organization, add their email addresses.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -92,9 +94,23 @@ Then fill in the "Add new users" dialog:
 Next steps: [Manage users in table view](manage-users-table-view.md)
 -->
 
+::: moniker-end
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an organization.
+::: moniker range="azure-devops"
+
+[Add a user](#add-user) | [Update a user](#update-user) | [List users](#list-users) | [Show users](#show-users)
+
+The following parameters are optional for all commands, and not listed in the examples provided in this section. 
+
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+
+<a id="add-user" /> 
+
+### Add a user 
+You can add users through [Azure DevOps CLI](/azure/devops/cli/get-started?view=azure-devops) to an organization.
 
 1. Add user to an organization
 
@@ -106,7 +122,7 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
 
    * **license-type**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md)
 
-     For details, see [az devops user add command.](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/user?view=azure-cli-latest#ext-azure-devops-az-devops-user-add)
+   For details, see [az devops user add command.](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/user?view=azure-cli-latest#ext-azure-devops-az-devops-user-add)
 
 2. Add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://review.docs.microsoft.com/en-us/azure/devops/organizations/security/permissions-access?view=azure-devops).
 
@@ -115,6 +131,78 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
     ```
     
     You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+
+<a id="update-user" /> 
+
+### Update a user
+
+You can update a user's license type with [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. 
+
+```CLI
+az devops user update --license-type {advanced, earlyAdopter, express, professional, stakeholder} --user
+```
+
+#### Parameters
+
+- **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
+- **user**: The email ID or ID of the user.  
+
+#### Example
+
+For example, the following command updates the license type for email ID contoso@contoso.com from **Basic** to **Advanced**. 
+
+```CLI
+az devops user update --license-type advanced --user contoso@contoso.com
+```
+
+<a id="list-users" /> 
+
+### List users
+
+You can list the users in an organization with [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via AAD groups.
+
+```CLI
+az devops user list [--skip] [--top]
+```
+
+#### Parameters
+
+- **skip**: Optional. Number of users to skip.  
+- **top**: Optional. Maximum number of users to return. The max value is 10000; the default value is 100.  
+
+#### Example
+
+For example, the following command returns 25 users in your organization without skipping any.
+
+```CLI
+az devops user list --skip 0 --top 25
+```
+
+<a id="show-users" /> 
+
+### Show users
+
+You can show details for users in your organization with [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command.
+
+```CLI
+az devops user show --user
+```
+
+#### Parameters
+
+- **user**: The email ID or ID of the user.
+
+#### Example
+
+For example, the following command returns user details for the email ID contoso@contoso.com.
+
+```CLI
+az devops user show --user contoso@contoso.com
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
 * * *
 
