@@ -40,6 +40,8 @@
     items:
     - name: Azure SQL database
       href: targets/azure-sqldb.md
+    - name: Function App on Linux
+      href: targets/azure-functions.md
     - name: Function App on Windows
       href: targets/azure-functions-windows.md
     - name: Web App on Windows
