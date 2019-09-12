@@ -178,11 +178,11 @@ additionalContent:
               text: Team Explorer navigation
             - url: ./user-guide/tools.md
               text: Supported tools & clients
-            - url: ./user-guide/services.md
+            - url: ./user-guide/tools.md
               text: Supported features & services
-            - url: ./organizations/security/get-started-stakeholder.md
+            - url: ./user-guide/services.md
               text: With Stakeholder access 
-            - url: /azure/devops/user-guide/index 
+            - url: ./organizations/security/get-started-stakeholder.md
               text: See more
         # Card
         - title: Collaborate
