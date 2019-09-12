@@ -478,8 +478,8 @@ Scheduled triggers are evaluated and added to the build schedule when the follow
 * A new branch is created. If the version of a pipeline's YAML file in that branch has a scheduled trigger that matches the new branch name, that scheduled trigger is added to the build schedule.
 
 > [!IMPORTANT]
-> Scheduled builds for a branch are added only if the scheduled triggers in the 
-> YAML file **in that particular branch** match the branch filters for that branch.
+> Scheduled builds for a branch are added only if the branch matches the branch filters for the 
+> scheduled triggers in the YAML file **in that particular branch**.
 
 ### Example of scheduled triggers for multiple branches
 
@@ -510,7 +510,7 @@ schedules:
     - new-feature
 ```
 
-Now consider that there is an existing branch named `release` that contains a YAML file with the following scheduled triggers, from when it was created off of the `master` branch. The branch filters in that branch only contain `master` and don't include `release`, but `release` is added to the branch filters in the YAML file in the `master` branch.
+Now consider that there is an existing branch named `release` that contains a YAML file with the following scheduled triggers, from when it was created off of the `master` branch. The branch filters in that branch only contain `master` and don't include `release`, but `release` **is** added to the branch filters in the YAML file in the `master` branch.
 
 ```yaml
 # YAML file in the release branch
