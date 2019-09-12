@@ -71,7 +71,7 @@ landingContent:
             url: ../organizations/security/about-permissions.md
   - title: Plan and track work
     linkLists:
-      - linkListType: quickstarts
+      - linkListType: quickstart
         links:
           - text: Plan and track work
             url: ../boards/get-started/plan-track-work.md
