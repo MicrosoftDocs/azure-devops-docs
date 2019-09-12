@@ -53,7 +53,7 @@ landingContent:
             url: ../organizations/projects/connect-to-projects.md
   - title: Manage your project
     linkLists:
-      - linkListType: quickstarts
+      - linkListType: quickstart
         links:
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
@@ -101,7 +101,7 @@ landingContent:
             url: ../pipelines/yaml-schema.md
   - title: Set your preferences
     linkLists:
-      - linkListType: quickstarts
+      - linkListType: quickstart
         links:
           - text: Change profile preferences
             url: ../organizations/settings/set-your-preferences.md
