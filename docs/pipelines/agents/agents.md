@@ -370,3 +370,13 @@ Yes. This approach can work well for agents that run jobs that don't consume man
 You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume much disk and I/O resources.
 
 You might also run into problems if parallel build jobs are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
+
+::: moniker range=">= azure-devops-2019"
+
+## Learn more
+
+For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.
+* [Choose a Microsoft-hosted or self-hosted build agent](/learn/modules/host-build-agent/2-choose-a-build-agent)
+* [Host your own build agent in Azure Pipelines](/learn/modules/host-build-agent/)
+
+::: moniker-end
