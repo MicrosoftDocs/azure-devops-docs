@@ -44,7 +44,7 @@ Check out the quick starts to get you started:
 
 ## How-to guides
 
-- [Authenticate with PATs](./get-started/authentication/pats.md)
+- [Authenticate with PATs](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
 - [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/azure/devops/integrate/toc.json)
 
