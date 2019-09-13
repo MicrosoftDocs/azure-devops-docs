@@ -188,6 +188,11 @@ When you use the agent to deploy artifacts to a set of servers, it must have "li
 connectivity to those servers. The Microsoft-hosted agent pools, by default, have
 connectivity to Azure websites and servers running in Azure.
 
+> [!NOTE]
+> If your Azure resources are running in an Azure Virtual Network, you can get the 
+> [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed 
+> so you can configure the firewall rules for your Azure VNet to allow access by the agent.
+
 If your on-premises environments do not have connectivity to a Microsoft-hosted agent pool
 (which is typically the case due to intermediate firewalls), you'll need to
 manually configure a self-hosted agent on on-premises computer(s). The agents must have connectivity to the target
