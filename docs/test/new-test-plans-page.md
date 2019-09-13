@@ -36,7 +36,7 @@ The existing Test Plans page will continue to be available until we bring in mos
 
 The new Test Plans page has 5 sections:
 1. **Test Plan segment**: Use this to locate, favourite, edit, copy or clone a test plan.
-2. **Test Suites tree**: Use this to add, manage, export or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+2. **Test Suites tree**: Use this to add and manage test suites. Leverage this to also assign configurations and perform user acceptance testing.
 3. **Define tab**: Collate, add and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts which can also be pinned to dashboards.
@@ -64,20 +64,32 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 - Test Plan segment:
     - Locate & favourite
     - Edit test plan 
-    - Copy or clone a test plan (**New**)
+    - Copy or clone a test plan (**new**)
 - Test suites tree:
     - Create and manage suites (static, requirement or query based)
     - Assign configurations
 - Define tab:
     - Create and add new test cases
     - Add existing test cases
+    - Column options
     - Manage test cases
+    - Order tests cases
     - Filtering
+	- Column Sorting
+	- Grid to add, edit and manage test cases
 - Execute Tab:
     - Execute test points against a web or desktop application 
     - Bulk execution or mark outcome
+    - Column options
     - Assign test points
 	- Filtering
+	- View test execution history
+	- Ability to edit test case (**new**)
+	- Run With Options
+	- Column Sorting
+- Charts
+	- Existing charts capabilities
+
 
 **Capabilities from the following list will be added every 3 weeks:**
 
@@ -90,17 +102,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 	- User acceptance testing
 	- Export
 - Define tab
-	- Order tests cases
-	- See linked items: suites, requirements and bugs
-	- Column options & sorting on columns
-	- Grid to add, edit and manage test cases
-- Execute tab:
-	- View test results
-	- 'Run with options' to leverage Microsoft Test Manager for execution
-	- Ability to edit test case
-	- Column options & sorting on columns
-- Charts
-	- Existing charts capabilities
+	- See linked items: suites, requirements and bugs	
 - General:
 	- Performance improvements
 	- Enable [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops)
@@ -108,4 +110,4 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 <a name="feedback"></a> 
 
 ## Provide feedback
-Reach us at newtestplanpage@microsoft.com to share your thoughts on the new page. In the process, share screenshots as appropriate.
+Reach us at azuretestplans@microsoft.com to share your thoughts on the new page. In the process, share screenshots as appropriate.
