@@ -205,7 +205,20 @@ as shown in the following schematic.
 <a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or TFS. In addition, you must be a local administrator on the server in order to configure the agent. Your agent can authenticate to Azure Pipelines or TFS using one of the following methods:
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or TFS. In addition, you must be a local administrator on the server in order to configure the agent. 
+
+::: moniker range="azure-devops"
+
+Your agent can authenticate to Azure Pipelines or TFS using the following method:
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+Your agent can authenticate to Azure Pipelines or TFS using one of the following methods:
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2017"
 
