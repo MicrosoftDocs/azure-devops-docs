@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 ## Before you start
 
-For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](https://docs.microsoft.coms/nuget/install-nuget-client-tools).
+For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](/nuget/install-nuget-client-tools).
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
