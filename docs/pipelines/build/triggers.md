@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 07/26/2019
+ms.date: 09/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -376,6 +376,10 @@ pr: none
 
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
+> [!NOTE]
+> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -467,12 +471,69 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
-The schedules are read and updated when the following events occur, and schedules get 
-added to the scheduling database for the current branch, if the branch criteria is satisfied.
+Scheduled triggers are evaluated for a branch when the following events occur.
 
-* The yaml file is created or updated
-* A pipeline is created or updated
-* A new branch is created
+* A pipeline is created.
+* A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
+* A new branch is created. 
+
+After one of these events occurs in a branch, any scheduled builds for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
+
+> [!IMPORTANT]
+> Scheduled builds for a branch are added only if the branch matches the branch filters for the 
+> scheduled triggers in the YAML file **in that particular branch**.
+
+### Example of scheduled triggers for multiple branches
+
+For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
+
+```yaml
+# YAML file in the master branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+Next, a new branch is created based off of `master`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
+
+If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
+
+```yaml
+# YAML file in the new-feature-branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - new-feature
+```
+
+Now consider that a branch named `release` is created based off `master`, and then `release` is added to the branch filters in the YAML file in the `master` branch, but not in the newly created `release` branch.
+
+```yaml
+# YAML file in the release branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+
+# YAML file in the master branch with release added to the branches list
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - release
+```
+
+Because `release` was added to the branch filters in the `master` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
 ### Supported cron syntax
 
@@ -838,6 +899,11 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 * For [CI triggers](#ci-triggers), the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
 * For [PR triggers](#pr-triggers), the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
+* For [Scheduled triggers](#scheduled-triggers), the YAML file that is in the branch is used to set the scheduled triggers for that branch.
+
+### My CI or PR trigger doesn't seem to fire
+
+Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
 
 ::: moniker-end
 
