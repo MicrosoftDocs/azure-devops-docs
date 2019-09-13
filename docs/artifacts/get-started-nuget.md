@@ -16,9 +16,11 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
-
 ## Before you start
+
+For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](https://docs.microsoft.coms/nuget/install-nuget-client-tools).
+
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
 This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
@@ -29,8 +31,6 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 > Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
-
-You must have NuGet set up on your current machine for this quickstart. To learn more about NuGet installation and set up see the [official documentation](https://docs.microsoft.coms/nuget/install-nuget-client-tools).
 
 <a name="create-a-feed"></a>
 ## Create a feed
