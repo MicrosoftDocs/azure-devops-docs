@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: jillfra
-ms.date: 03/13/2019
+ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -85,11 +85,11 @@ To protect data in the case of hardware or service failures, Microsoft Azure sto
 
 To protect against accidental deletion of data, either by our customers or by our operation team, we also take point-in-time backups of both the Azure blob and the SQL databases. Our approach to these backups varies based on the storage type. For blobs, we have a separate copy of all blobs and regularly append new changes to each storage account. Since this data is immutable, we don't need to rewrite any existing storage as part of our backup procedures. SQL Azure, on the other hand, handles backups as a standard part of their service which we rely on. In both cases, these backups are also replicated in a paired region to ensure we can recover from a regional outage.
 
-In addition, we perform a "soft delete" for organization deletion operations. This lets us recover entire organizations for up to 30 days after deletion.
+In addition, we perform a "soft delete" for organization deletion operations. This lets us recover entire organizations for up to 28 days after deletion.
 
 ### Practice is critical
 
-Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. As mentioned, we have the capability of restoring your organization’s data to any point in time over the last 30 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
+Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. As mentioned, we have the capability of restoring your organization’s data to any point in time over the last 28 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
 
 ## Service availability
 
