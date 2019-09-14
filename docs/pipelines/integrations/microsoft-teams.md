@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 # Azure Pipelines with Microsoft Teams
 
 If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018)
- to easily monitor the events for your pipelines. Set up and manage subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in your Teams channels.
+ to easily monitor the events for your pipelines. Set up and manage subscriptions for for builds, releases, pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](_img/integrations-teams/notifications-teams.png)
@@ -45,20 +45,19 @@ To start monitoring a pipeline, use the following slash command inside a channel
 
 The pipeline URL can be to any page within your pipeline that has a `definitionId` or `buildId/releaseId` present in the URL. 
 
-For example, for Build pipelines, use:
+For example:
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123
 ```
 
-For Release pipelines, use:
+or:
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
 ```
 
-For Build pipelines, the channel is subscribed to the *Build completed* notification, and for Release pipelines, the channel is subscribed to the *Release deployment started*, *Release deployment 
-completed*, and *Release deployment approval pending* notifications.
+For Build pipelines, the channel is subscribed to *Build completed* notification. For Release pipelines, the channel is subscribed to  *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for *Run stage state changed* and *Run stage waiting for approval* notifications.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions added image](_img/integrations-teams/subscriptions-added-confirmation-teams.png)
@@ -96,10 +95,9 @@ For example, users may want to get notified only when builds fail or when deploy
 > [!div class="mx-imgBorder"]
 > ![Release Filters](_img/integrations-teams/teams-release-filters.png)
 
-## Approve release deployments from your channel
+## Approve deployments from your channel
 
-You can approve release deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notification (which 
-happens by default when subscribing to any release pipeline).
+You can approve deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to *Release deployment approval pending* notification for classic Releases or *Run stage waiting for approval* notification for YAML pipelines. Both these subscriptions are created by default when you subscribe to the pipeline.
 
 > [!div class="mx-imgBorder"]
 > ![Ready for approval](_img/integrations-teams/approve-teams.png)
