@@ -216,7 +216,7 @@ To change to the Azul Zulu OpenJDK, follow these simple steps:
 
 ![Java Migration flow](_img/administration/java-migration-flow.png)
 
-More details are available [here](https://github.com/msftazdev/Code-Search/tree/master/Java%20Migration).
+More details are available [here](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
 
 > [!NOTE]
 > * If you choose to use Azul Zulu OpenJDK, ensure you [download the latest updates](https://www.azul.com/downloads/zulu/zulu-windows/). It does not automatically install updates.
