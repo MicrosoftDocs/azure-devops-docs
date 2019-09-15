@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 # Azure Pipelines with Microsoft Teams
 
 If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018)
- to easily monitor the events for your pipelines. Set up and manage subscriptions for for builds, releases, pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
+ to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](_img/integrations-teams/notifications-teams.png)
@@ -102,13 +102,13 @@ You can approve deployments from within your channel without navigating to the A
 > [!div class="mx-imgBorder"]
 > ![Ready for approval](_img/integrations-teams/approve-teams.png)
 
-Whenever a deployment is pending for approval, a notification card with options to approve or reject the deployment is posted in the channel. Users can then review the details of
- the deployment in the notification and take action. In the following example, the deployment was approved and the approval status is displayed on the card.
+Whenever the running of a stage is pending for approval, a notification card with options to approve or reject the request is posted in the channel. Approvers can review the details of
+ the request in the notification and take appropriate action. In the following example, the deployment was approved and the approval status is displayed on the card.
 
 > [!div class="mx-imgBorder"]
 > ![Approved](_img/integrations-teams/approved-teams.png)
 
-The app supports all of the approval scenarios present in the Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence), and teams as approvers. You can approve deployments as an individual or on behalf of a team.
+The app supports all of the checks and approval scenarios present in the Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence), and teams as approvers. You can approve requests as an individual or on behalf of a team.
 
 ## Commands reference
 
