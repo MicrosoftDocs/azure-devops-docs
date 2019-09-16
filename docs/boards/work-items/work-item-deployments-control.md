@@ -21,7 +21,7 @@ ms.date: 08/26/2019
 > [!NOTE]  
 > The deployments control currently works with classic release pipelines only.
 >
-> This feature is currently under private preview. 
+> This feature is currently in preview and subject to change.
 
 The deployments control will show release information for only those work items that have been associated to a commit that is part of the build being released.
 
