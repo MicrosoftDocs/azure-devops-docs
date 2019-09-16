@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2019
+ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,11 +18,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-After you delete your organization, it's disabled but available for 30 days. If you change your mind during this time, you can recover your organization. After 30 days, your organization and data are permanently deleted.
+After you delete your organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover your organization. After 28 days, your organization and data are permanently deleted.
 
 ## Prerequisites
 
-* An organization deleted within the last 30 days.
+* An organization deleted within the last 28 days.
 * Organization Owner permissions to restore your organization. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
