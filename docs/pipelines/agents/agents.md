@@ -85,19 +85,26 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ## Parallel jobs
 
-You might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
+You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
 
-* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md)
+Microsoft provides a free tier of service by default in every organization that includes at least one parallel job. Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time. For more information on parallel jobs and different free tiers of service, see [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
-### Parallel jobs
+## Parallel jobs
 
 You might need more parallel jobs to use multiple agents at the same time:
 
 * [Parallel jobs in TFS](../licensing/concurrent-pipelines-tfs.md)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+> [!IMPORTANT]
+> Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
 
 ::: moniker-end
 
