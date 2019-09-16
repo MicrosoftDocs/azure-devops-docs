@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/18/2018
+ms.date: 09/10/2019
 ---
 
 # Add a build or release task
@@ -50,7 +50,7 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 
 ### Develop in Unix versus Windows
 
-This walkthrough was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
+This walk through was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
 
 If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ```export <var>=<val>```
 
@@ -480,7 +480,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 Now that you've uploaded your extension, it's in the Marketplace, but no one can see it. 
 Share it with your organization so that you can install and test it.
 
-1. Rightselectyour extension and select <b>Share...</b>, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
+1. Right select your extension and select <b>Share...</b>, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 >[!IMPORTANT]
 >Publishers must be verified in order to share extensions publicly, to learn more visit [Package/Publish/Install](../publish/overview.md)
@@ -494,12 +494,14 @@ Now that your extension is in the Marketplace and shared, anyone who wants to us
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
 1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administration page.
-2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group,selecton the extension link.
-3. Install the extension!
+2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, selection the extension link.
+3. Install the extension.
 
 If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
+
+For build and release tasks for packaging and publishing Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## Helpful links
 * [Extension Manifest Reference](./manifest.md)
