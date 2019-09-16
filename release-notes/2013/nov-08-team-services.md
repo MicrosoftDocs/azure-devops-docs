@@ -35,4 +35,3 @@ That’s it for today’s update. We’ll have more to talk about next week so d
 Thanks,
 
 Aaron Bjork
-

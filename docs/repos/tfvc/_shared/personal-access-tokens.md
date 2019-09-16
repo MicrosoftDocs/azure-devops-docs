@@ -28,18 +28,20 @@ ms.topic: include
    
 6. When you're done, make sure to *copy the token*. You'll use this token as your password.
 
-   <img alt="Use token as the password for your git tools or apps" src="./_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Use token as the password for your git tools or apps" src="./_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-	**Note: Remember that this token is your identity and acts as you when it's used. 
-	Keep your tokens secret and treat them like your password.**
+    **Note: Remember that this token is your identity and acts as you when it's used. 
+	  Keep your tokens secret and treat them like your password.**
 
-	**Tip:** To keep your token more secure, use credential managers 
-	so that you don't have to enter your credentials every time. 
-	Here are some recommended credential managers:
-    
-	*	Git: [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux) 
-	or [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) 
-	(Requires [Git for Windows](https://www.git-scm.com/download/win))
-	*	NuGet: [NuGet Credential Provider](/azure/devops/artifacts/nuget/nuget-exe)
+    > [!TIP]
+    > To keep your token more secure, use credential managers
+    > so that you don't have to enter your credentials every time.
+
+    Here are some recommended credential managers:
+
+    *	Git: [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux) 
+    or [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) 
+    (Requires [Git for Windows](https://www.git-scm.com/download/win))
+    *	NuGet: [NuGet Credential Provider](/azure/devops/artifacts/nuget/nuget-exe)
 
 7. When you don't need your token anymore, just revoke it to remove its access.

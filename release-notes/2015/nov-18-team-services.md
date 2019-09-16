@@ -77,13 +77,3 @@ We’re changing the way you purchase test case management capabilities with Vis
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-
