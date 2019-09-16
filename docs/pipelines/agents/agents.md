@@ -29,7 +29,7 @@ When your pipeline runs, the system begins one or more jobs.
 An agent is installable software that runs one job at a time.
 
 ::: moniker range=">= azure-devops-2019"
-Jobs can be run [directly on the host](../process/phases.md) or [in a container](../process/container-phases.md).
+Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops"
