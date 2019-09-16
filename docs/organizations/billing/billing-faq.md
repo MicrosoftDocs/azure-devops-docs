@@ -18,25 +18,15 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, you can find answers to frequently asked questions about billing for your organization.
+In this article, find answers to frequently asked questions about billing for your organization.
 
-Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [billing overview](overview.md).
+Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and for detailed pricing estimates, see the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
-You need to set up billing when you need more than the *free tier* of resources in your organization:
+## User billing
 
-[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
-[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
-
-You also need to [set up billing](set-up-billing-for-your-organization-vs.md) to buy other features (for your users) that are offered by Microsoft or by other companies.
-
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
-
-## Assignment-based billing
-
-For more information about assignment-based billing, see our [blog post](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdevblogs.microsoft.com%2Fdevops%2Fa-simpler-way-to-buy-azure-devops%2F&data=02%7C01%7CChrystal.Comley%40microsoft.com%7C51cb7ec0aab54fb4347908d738a24375%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637040142364199412&sdata=0bP8jgxkDPI%2F%2BSUs3WpODo8cmxKxzlUbeO4aeuxbSBk%3D&reserved=0).
-
-### Q: What is assignment-based billing?
+### Q: What is user assignment-based billing?
 
 ![Assignment-based billing is enabled](_img/_shared/assignment-based-billing-enabled.png)
 
@@ -48,7 +38,7 @@ Under assignment-based billing, all organizations start out with new users added
 
 ### Q: How can new users get Basic instead of Stakeholder when added to a Project?
 
-A: When a user who doesn’t yet exist in the organization is added to a project, previously they would get a Basic access level if one had been purchased, but wasn’t yet assigned to a user. Under assignment-based billing, you pay only for the users you assign, so there aren’t any that are “unassigned”. 
+A: When a user (who doesn’t yet exist in the organization) is added to a project, previously they would get a Basic access level if one had been purchased but wasn’t yet assigned to a user. Under assignment-based billing, you pay only for the users you assign, so there aren’t any that are “unassigned”. 
 
 If you want all new users added to a project to get Basic, just change the default access level (**Organization Settings** > **Billing**) to Basic.
 
@@ -58,7 +48,11 @@ For more granular control over what access level is assigned to new users, you m
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a group rule that applies to a given set of users, then you won’t start paying for them until those users actually sign in. If you have users who have never signed in and you want to stop paying for them, just remove them or assign them Stakeholder. You can sort by Last Access (#1) to see users who have never signed in and find out when they were added by exporting the list of users and checking the Date Created (#2) column.
+A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to a given set of users, then you won’t start paying for them until those users actually sign in. If you have users who have never signed in and you want to stop paying for them, just remove them or assign them Stakeholder. You can sort by Last Access (#1) to see users who have never signed in and find out when they were added by exporting the list of users and checking the Date Created (#2) column.
+
+### Q: How can I pay only once per user across multiple organizations?
+
+A: Multi-org billing/licensing is available in private preview. For more details on joining the preview and the timeline for general availability, see the [Azure DevOps Roadmap item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1366420).
 
 ![Last access](_img/_shared/last-access.png)
 
@@ -66,19 +60,25 @@ A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access l
 
 A: With **monthly billing**, purchases are a monthly commitment. With any updates, we charge you for the remainder of the current month. After that, you're charged on the 1st of each month. With **daily billing**, purchases are billed daily on a pro-rated basis. Changes to purchased quantities are reflected in usage billed to your Azure subscription by the following day.
 
-### Q: How are paid extensions changing in the Azure DevOps Marketplace in July 2019?
+### Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
 
-A: Microsoft ended support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly. We're working closely with publishers to help existing customers transition to the new model and will communicate to specific customers as publishers are ready.
+A: Microsoft ended support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly.
 
 ### Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
 
-A: As of June 1st, 2019, on-premises Azure Artifacts (ie. Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/license-azure-artifacts.md) to use the feature.
+A: As of June 1st, 2019, on-premises Azure Artifacts (for example, Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/license-azure-artifacts.md) to use the feature.
 
 ## General billing
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
 A: No. Azure DevOps must be purchased through an Azure subscription. (Think of it as your Azure billing account.)
+
+### Q: Can I use Azure DevOps for free?
+
+A: Yes. You can use Azure DevOps up to the free tier limits in you organization listed as follows:
+
+[!INCLUDE [free-tier](../../_shared/free-tier.md)]
 
 ### Q: What types of Azure subscriptions can be used to buy Azure DevOps?
 
