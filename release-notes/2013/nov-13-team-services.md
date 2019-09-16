@@ -115,5 +115,3 @@ As always we’re eager to hear any feedback on [User Voice](https://visualstudi
 Thanks,
 
 Brian Harry
-
-

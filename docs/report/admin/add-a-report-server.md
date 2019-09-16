@@ -80,7 +80,8 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 2.	Once your server has passed all the setup rules checks, pick the instance to add features to.   
 
-	**Tip:** If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
+	  > [!TIP]
+    > If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
 
 	![Add features to an existing instance](_img/installation-type.png)  
 
@@ -148,13 +149,15 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	![Use the default name for the database](_img/reporting-warehouse.png)  
 
-	**Tip:** Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
+    > [!TIP]
+    > Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
 
 3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](/azure/devops/server/admin/service-accounts-dependencies-tfs). 
 
 	![You'll need to add the reader account information](_img/analysis-services.png)  
 
-	**Tip:** Test the connection before continuing.  
+    > [!TIP]
+    > Test the connection before continuing.  
 
 4.	For **Reports**, provide the server name and the instance name in **Server**, separated by a slash.  
 
@@ -169,7 +172,8 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	![Edit the folder location to start configuring](_img/team-project-collections.png)  
 
-	**Tip:** If you don't see the **Reports Folder** tab, you might need to refresh or restart the administration console.  
+    > [!TIP]
+    > If you don't see the **Reports Folder** tab, you might need to refresh or restart the administration console.  
  
 6.	Unless you have reasons otherwise, use the example provided, and make sure you include the collection name.  
 

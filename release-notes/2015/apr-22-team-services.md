@@ -44,7 +44,7 @@ The four controls under Usage analytics show counts over 24 hours, and the trend
 
 ![Accessing usage analytics for longer time periods](_img/4_22_04.png)
 
-	This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
+  This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 
 ## Usage Reports Calculation for Daily Active Users
 
@@ -58,5 +58,3 @@ That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http:/
 Thanks,
 
 David Lubash
-
-

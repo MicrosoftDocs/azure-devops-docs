@@ -23,4 +23,3 @@ You can learn more about Pull Requests on the [Visual Studio devops blog](http:/
 Thanks,
 
 Matt Mitrik
-

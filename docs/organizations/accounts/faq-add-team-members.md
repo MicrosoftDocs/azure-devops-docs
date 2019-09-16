@@ -76,19 +76,27 @@ If you're an Azure AD guest, do one of the following:
 
     a. Connect to Azure AD:
 
-        C:\Users\rajr> Connect-AzureAD
+    ```
+    C:\Users\rajr> Connect-AzureAD
+    ```
 
     b. Find the **objectId** of the user:
-    
-        C:\Users\rajr> Get-AzureADUser
+
+    ```
+    C:\Users\rajr> Get-AzureADUser
+    ```
 
     c. Check the **usertype** attribute for this user to see if they're a guest or member:
-    
-        C:\Users\rajr> Get-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66
+
+    ```
+    C:\Users\rajr> Get-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66
+    ```
 
     d. Change the **usertype** from **member** to **guest**:
 
-        C:\Users\rajr> Set-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66 -UserType Member
+    ```
+    C:\Users\rajr> Set-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66 -UserType Member
+    ```
 
 <a name="users-delay"></a>
 
