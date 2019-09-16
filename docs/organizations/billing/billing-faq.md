@@ -30,9 +30,9 @@ For more information about user assignment-based billing, see our [blog post](ht
 
 ![Assignment-based billing is enabled](_img/_shared/assignment-based-billing-enabled.png)
 
-A: Assignment-based billing means you only pay for the users you assign an access level, and when you remove them, charges stop. There is no longer an extra step of increase/decreasing the paid count.
+A: User assignment-based billing means you only pay for the users you assign an access level, and when you remove them, charges stop. There is no longer an extra step of increase/decreasing the paid count.
 
-Under assignment-based billing, all organizations start out with new users added from Projects getting Stakeholder access, so you aren’t charged for new users who only need free Stakeholder access. If you want all new users to get Basic, just change the [default access level](../security/access-levels.md) for your organization to Basic.
+Under assignment-based billing, all organizations start out with new users added from Projects getting Stakeholder access, so you aren’t charged for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
 
 [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you’ll find that [assignment errors](../accounts/assign-access-levels-and-extensions-by-group-membership.md#resolve-assignment-errors) are no longer very common.
 
@@ -40,7 +40,7 @@ Under assignment-based billing, all organizations start out with new users added
 
 A: When a user (who doesn’t yet exist in the organization) is added to a project, previously they would get a Basic access level if one had been purchased but wasn’t yet assigned to a user. Under assignment-based billing, you pay only for the users you assign, so there aren’t any that are “unassigned”. 
 
-If you want all new users added to a project to get Basic, just change the default access level (**Organization Settings** > **Billing**) to Basic.
+If you want all new users added to a project to get Basic, change the default access level (**Organization Settings** > **Billing**) to Basic.
 
 ![Default access](_img/_shared/default-access-level-basic.png)
 
@@ -48,13 +48,13 @@ For more granular control over what access level is assigned to new users, you m
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to a given set of users, then you won’t start paying for them until those users actually sign in. If you have users who have never signed in and you want to stop paying for them, just remove them or assign them Stakeholder. You can sort by Last Access (#1) to see users who have never signed in and find out when they were added by exporting the list of users and checking the Date Created (#2) column.
+A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to a given set of users, then you won’t start paying for them until those users actually sign in. If you have users who have never signed in and you want to stop paying for them,  remove them or assign them Stakeholder. You can sort by Last Access (#1) to see users who have never signed in and find out when they were added by exporting the list of users and checking the Date Created (#2) column.
+
+![Last access](_img/_shared/last-access.png)
 
 ### Q: How can I pay only once per user across multiple organizations?
 
 A: Multi-org billing/licensing is available in private preview. For more details on joining the preview and the timeline for general availability, see the [Azure DevOps Roadmap item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1366420).
-
-![Last access](_img/_shared/last-access.png)
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
