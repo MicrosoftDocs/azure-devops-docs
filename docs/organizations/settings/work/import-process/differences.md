@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 **Azure DevOps Services (Hosted XML)**
  
 > [!IMPORTANT]  
-> Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:dahellem@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). 
 >
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
