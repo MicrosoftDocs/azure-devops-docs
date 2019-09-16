@@ -261,8 +261,8 @@ Together they write the following test:
                     "{0} is not within {1} of {2}", actualResult, allowableError, expectedResult);
             }
 
->**Tip:**  
->For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
+> [!TIP]
+> For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
 
 ## Red, Green, Refactor...
 
@@ -324,15 +324,16 @@ He verifies that the tests still pass:
 
 ![Unit Test Explorer with two passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
-> **Tip:**  
-> Every change you make while you are developing the code should be either a refactoring or an extension:  
-> <ul><li>Refactoring means that you do not change the tests because you are not adding new functionality.</li>  
-> <li>Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.</li></ul>
-> 
-> If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.  
-> 
-> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.  
-> 
+> [!TIP]
+> Every change you make while you are developing the code should be either a refactoring or an extension:
+>
+> - Refactoring means that you do not change the tests because you are not adding new functionality.
+> - Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
+>
+> If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.
+>
+> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.
+>
 > Run the tests after every change.
 
 ### ... and repeat
@@ -367,8 +368,8 @@ This test passes the first time it runs:
 
 Just to make sure this result is not a mistake, he temporarily introduces a small error into his test to make it fail. After seeing the failure, he fixes it again.
 
->**Tip:**  
->Always make a test fail before you make it pass.
+> [!TIP]
+> Always make a test fail before you make it pass.
 
 ### Exceptions
   
@@ -438,8 +439,8 @@ After it is fixed, all the tests pass:
 
 ![Unit Test Explorer with four passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675833.png)
 
->**Tip:**  
->Make sure every tests passes after every change that you make to the code.
+> [!TIP]
+> Make sure every tests passes after every change that you make to the code.
 
 <a name="coverage"></a>
 

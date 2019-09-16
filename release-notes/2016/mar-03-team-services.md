@@ -89,22 +89,3 @@ That’s it! Lots of great new value here. Feel free to reach out on [Twitter](h
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

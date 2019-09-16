@@ -264,7 +264,7 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer`.  
+To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer -g`.  
 
 <br/>
 

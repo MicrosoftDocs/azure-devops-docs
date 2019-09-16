@@ -73,7 +73,3 @@ That’s it for sprint 47. Let us know what you think. We're listening on [UserV
 Thanks,
 
 Aaron Bjork
-
-
-
-
