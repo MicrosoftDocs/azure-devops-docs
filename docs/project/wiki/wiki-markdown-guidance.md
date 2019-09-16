@@ -52,8 +52,6 @@ Consistency is maintained in the formatting in TOC.
 
 ## Add Mermaid diagrams to a Wiki page
 
-::: moniker range=">= azure-devops-2019"
-
 Wiki supports the following Mermaid diagram types:
 
 1.	[Flowcharts ](https://mermaidjs.github.io/#/flowchart)
