@@ -103,11 +103,6 @@ to pay for Azure DevOps. Before you make purchases by using this type of Azure s
 
 <img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-<a name="monthly-vs-daily-billing"></a>
-
-### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
-
-A: With **monthly billing**, purchases are a monthly commitment. With any updates, we charge you for the remainder of the current month. After that, you're charged on the 1st of each month. With **daily billing**, purchases are billed daily on a pro-rated basis. Changes to purchased quantities are reflected in usage billed to your Azure subscription by the following day.
 
 ### Q: Am I required to buy other Azure services?
 
@@ -116,16 +111,6 @@ A: Not at all. If you only want to buy Azure DevOps via Azure, you can do that.
 ### Q: Can tags be applied to organizations from the Azure portal?
 
 A: No, but this feature is in our backlog to add in the future.
-
-### Q: How are paid extensions changing in the Azure DevOps Marketplace in July 2019?
-
-A: Microsoft is ending support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly. We're working closely with publishers to help existing customers transition to the new model and will communicate to specific customers as publishers are ready.
-
-<a name="package-management"></a>
-
-### Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
-
-A: As of June 1st, 2019, on-premises Azure Artifacts (ie. Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/license-azure-artifacts.md) to use the feature.
 
 ## Enterprise Agreement customers
 
@@ -151,19 +136,17 @@ The only exclusion is for extensions offered by partners. These charges appear o
 
 ### Q: How are user charges (Azure DevOps User/Basic, Basic + Test Plans, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
-A: At the first purchase, we bill a prorated quantity to cover the remaining days in the current month. For instance, if a purchase of 10 Basic + Test Plans users happens on April 15, then we charge 5 units because 50% of the month remains (15 days of a 30-day month). On the first of May, and each month thereafter until you cancel, the full 10 units is billed.
-
-When you increase the paid quantity later, we also prorate the increased units to cover the remaining days in the current month. So if you buy 1 more Basic + Test Plans user on May 10, we would bill roughly 0.677 units (21 days remaining in the 31-day month of May).
+A: Charges are prorated daily.
 
 ### Q: How do reductions or cancellations work?
 
-A: When you reduce or cancel user charges or CI/CD charges, you're canceling automatic renewal. The features and/or CI/CD capacity continue through the end of the current calendar month, taking effect on the first day of the next month.
+A: Reductions and cancellations are effective immediately.
 
 ## Changes in Azure subscription status
 
 ### Q: What happens if I cancel my Azure subscription or my credit card expires?
 
-A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service. But you'll keep any paid users or paid CI/CD concurrent jobs until next month.
+A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service.
 
 >[!NOTE]
 >You must keep your Azure subscription in good standing to avoid interruptions in paid services.
