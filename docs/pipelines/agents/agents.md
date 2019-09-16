@@ -216,13 +216,13 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 ::: moniker range="azure-devops"
 
-Your agent can authenticate to Azure Pipelines or TFS using the following method:
+Your agent can authenticate to Azure Pipelines using the following method:
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
-Your agent can authenticate to Azure Pipelines or TFS using one of the following methods:
+Your agent can authenticate to Azure DevOps Server or TFS using one of the following methods:
 
 ::: moniker-end
 
