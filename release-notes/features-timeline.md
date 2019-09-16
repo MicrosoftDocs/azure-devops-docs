@@ -4113,7 +4113,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </tbody>
 </table>
 
-### Server Build Numbers
+## Server Build Numbers
 
 <table>
 <thead>
@@ -4164,7 +4164,17 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>May 7, 2018</td>
           <td>16.131.27701.1</td>
         </tr>
-        <tr>
+         <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.2](https://aka.ms/tfs2018-update1)">2018.1.2</a></td>
+          <td>Nov. 27, 2018</td>
+          <td>16.122.28313.3</td>
+        </tr>
+         <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.1](https://aka.ms/tfs2018-update1)">2018.1.1</a></td>
+          <td>Sep. 12, 2018</td>
+          <td>16.122.28028.4</td>
+        </tr>
+         <tr>
           <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1](https://aka.ms/tfs2018-update1)">2018.1</a></td>
           <td>Feb. 20, 2018</td>
           <td>16.122.27409.2</td>
@@ -4204,6 +4214,12 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
         </tr>
+        <tr>
+          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.2](https://aka.ms/tfs2015-update4-vs)">2015.4.2</a></td>
+          <td>Apr. 9, 2019</td>
+          <td>14.114.28805.0</td>
+        </tr>
+        <tr>
         <tr>
           <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.1](https://aka.ms/tfs2015-update4-vs)">2015.4.1</a></td>
           <td>Feb. 28, 2018</td>
