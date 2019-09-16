@@ -11924,6 +11924,11 @@
       "source_path": "docs/pipelines/build/content-trust.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/containers/content-trust",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/pats.md",
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": true
     }
   ]
 }
