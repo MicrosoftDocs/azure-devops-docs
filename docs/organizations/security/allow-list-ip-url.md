@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: jominana
 author: chcomley
 ms.manager: jillfra
-ms.date: 09/12/2019
+ms.date: 09/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -45,8 +45,7 @@ If you need to connect to Git repositories on Azure DevOps with SSH, you need to
 
 - ssh.dev.azure.com
 - ssh.visualstudio.com
-
-All IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud.
+- all IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud
 
 ## Other domains
 
