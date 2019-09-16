@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Azure DevOps Get Started Documentation
-summary: Learn the basics of the Azure DevOps interface and how to do some common tasks.
+summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
   title: Azure DevOps Get Started Documentation
-  description: Learn the basics of the Azure DevOps interface and how to do some common tasks.
+  description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
   ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-new-user
@@ -44,7 +44,7 @@ landingContent:
           - text: Azure Boards 
             url: ../boards/get-started/sign-up-invite-teammates.md
           - text: Azure Repos 
-            url: .../repos/get-started/sign-up-invite-teammates.md
+            url: ../repos/get-started/sign-up-invite-teammates.md
           - text: Azure Pipelines 
             url: ../pipelines/get-started/pipelines-sign-up.md
       - linkListType: how-to-guide
@@ -65,10 +65,8 @@ landingContent:
         links:
           - text: Default permissions and access
             url: ../organizations/security/permissions-access.md
-          - text: Access levels
-            url: ../organizations/security/access-levels.md
-          - text: Permissions and groups
-            url: ../organizations/security/about-permissions.md
+          - text: Permission lookup guide
+            url: ../organizations/security/permissions-lookup-guide.md
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart
@@ -111,6 +109,14 @@ landingContent:
             url: ../project/navigation/preview-features.md
           - text: Set favorites
             url: ../project/navigation/set-favorites.md
+  - title: Navigate
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Web portal navigation
+            url: ../project/navigation/index.md
+          - text: Team Explorer navigation
+            url: ../user-guide/work-team-explorer.md
   - title: Migrate and Import
     linkLists:
       - linkListType: concept
@@ -121,14 +127,7 @@ landingContent:
             url: ../migrate/migrate-from-tfs.md
           - text: Import
             url: ../migrate/migration-import.md
-  - title: Navigate
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Web portal navigation
-            url: ../project/navigation/index.md
-          - text: Team Explorer navigation
-            url: ../user-guide/work-team-explorer.md
+
 
 
 

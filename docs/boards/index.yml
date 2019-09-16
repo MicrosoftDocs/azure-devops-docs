@@ -4,8 +4,8 @@ title: Azure Boards Documentation
 summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
 
 metadata:
-  title: Azure DevOps Documentation
-  description: Learn about planning & tracking issues, bugs, user stories, & other work; collaborate on software development with customizable Scrum, Kanban, and Agile tools.
+  title: Azure Boards Documentation
+  description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
   ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: azure-boards
@@ -107,6 +107,14 @@ landingContent:
             url: ./plans/configure-hierarchical-teams.md
           - text: Visibility across teams
             url: ./plans/visibility-across-teams.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fix re-ordering and nesting issues
+            url: ./backlogs/resolve-backlog-reorder-issues.md
+          - text: Set up your Backlogs and Boards
+            url: ./backlogs/set-up-your-backlog.md
   - title: Configure
     linkLists:
       - linkListType: tutorial
@@ -149,11 +157,4 @@ landingContent:
             url: ./work-items/guidance/work-item-field.md
           - text: Work items quick reference
             url: ./work-items/quick-ref.md
-  - title: Troubleshoot
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Fix re-ordering and nesting issues
-            url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: Set up your Backlogs and Boards
-            url: ./backlogs/set-up-your-backlog.md
+

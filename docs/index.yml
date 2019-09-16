@@ -5,7 +5,7 @@ summary: Collaborate on software development through source control, work tracki
 brand: azure
 
 metadata:
-  title: Azure Boards Documentation
+  title: Azure DevOps Documentation
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.service: visual-studio-online
   ms.topic: hub-page 
@@ -178,32 +178,12 @@ additionalContent:
               text: Team Explorer navigation
             - url: ./user-guide/tools.md
               text: Supported tools & clients
-            - url: ./user-guide/tools.md
-              text: Supported features & services
             - url: ./user-guide/services.md
-              text: With Stakeholder access 
+              text: Supported features & services
             - url: ./organizations/security/get-started-stakeholder.md
-              text: See more
-        # Card
-        - title: Collaborate
-          links:
-            - url: ./project/wiki/wiki-create-repo.md
-              text: Create a Wiki for your project
-            - url: ./project/wiki/markdown-guidance.md
-              text: Markdown syntax guidance
-            - url: ./organizations/public/create-public-project.md
-              text: Create a public project
-            - url: /azure/devops/project/index
-              text: See more
-        # Card
-        - title: GitHub Integration
-          links:
-            - url: ./boards/github/connect-to-github.md
-              text: Azure Boards & GitHub
-            - url: ./pipelines/create-first-pipeline.md
-              text: Azure Pipelines & GitHub
-    - title: Tools and utilities
-      items:
+              text: Stakeholder access 
+            - url: ./get-started/index.yml
+              text: > See more
         # Card
         - title: Reporting
           links:
@@ -215,6 +195,34 @@ additionalContent:
               url: ./report/dashboards/charts.md
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
+            - url: ./report/index.md
+              text: > See more
+        # Card
+        - title: Collaborate
+          links:
+            - url: ./project/wiki/wiki-create-repo.md
+              text: Create a Wiki for your project
+            - url: ./project/wiki/markdown-guidance.md
+              text: Markdown syntax guidance
+            - url: ./organizations/public/create-public-project.md
+              text: Create a public project
+            - url: ./boards/work-items/follow-work-items.md
+              text: Follow work
+            - url: ./project/navigation/set-favorites.md
+              text: Set favorites
+            - url: /azure/devops/project/index
+              text: > See more
+        # Card
+        - title: GitHub Integration
+          links:
+            - url: ./boards/github/connect-to-github.md
+              text: Azure Boards & GitHub
+            - url: ./pipelines/create-first-pipeline.md
+              text: Azure Pipelines & GitHub
+            - url: /azure/devops-project/azure-devops-project-github
+              text: Azure DevOps Projects & GitHub
+    - title: Tools and utilities
+      items:
         # Card
         - title: Configure and Customize
           links:
@@ -239,10 +247,10 @@ additionalContent:
           links:
             - text: Permissions and groups
               url: ./organizations/security/about-permissions.md
-            - text: Access
+            - text: Access levels
               url: ./organizations/security/access-levels.md
             - text: Billing overview
-              url: ./organizations/billing/overview.md
+              url: ./organizations/billing/overview.md`
         # Card
         - title: Marketplace and Extensibility
           links:
