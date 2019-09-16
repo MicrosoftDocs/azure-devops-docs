@@ -56,7 +56,8 @@ For an example, see [Use a script to customize your build pipeline](../scripts/p
 
 Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
-**Tip:**  If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
+> [!TIP]
+> If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
 

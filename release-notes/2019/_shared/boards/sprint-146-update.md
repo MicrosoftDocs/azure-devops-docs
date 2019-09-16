@@ -15,4 +15,3 @@ The new Basic process provides three work item types (Epics, Issues, and Tasks) 
 > ![Badge](../../_img/146_20.png)
 
 See the [track issues and tasks](https://docs.microsoft.com/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops) documentation to help you get started with your new project.
-
