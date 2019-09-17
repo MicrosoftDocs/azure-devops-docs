@@ -155,8 +155,3 @@ As always, if you have comments or questions, please reach out on [Twitter](http
 Thanks,
 
 Aaron Bjork
-
-
-
-
-

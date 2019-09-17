@@ -69,8 +69,3 @@ Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if
 Thanks,
 
 Karen Ng
-
-
-
-
-

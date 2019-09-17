@@ -56,9 +56,9 @@ You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explore
 
 ![Checking in the pending changes](_img/develop-code-manage-pending-changes/IC591276.png)
 
->**Tip:**  
->-  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.  
->-  You can toggle between list and tree view from the actions menu.
+> [!TIP]
+> -  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.
+> -  You can toggle between list and tree view from the actions menu.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in:  
 -   [add](add-files-server.md)  
@@ -124,8 +124,8 @@ You can discard one, a few, or all of the pending changes in your workspace.
 
 1.  In Solution Explorer, the Pending Changes Window, or Source Control Explorer, select one or more items, open their context menu and choose **Undo** or **Undo Pending Changes**.
 
-    >**Tip:**  
-    >To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
+    > [!TIP]
+    > To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
 
 2.  In the **Undo Pending Changes** dialog box, make sure the changes you want to undo are selected, and then choose **Undo Changes**.
 
@@ -139,8 +139,8 @@ You can discard one, a few, or all of the pending changes in your workspace.
 - [Checkin command](checkin-command.md) : View pending changes in the **Check In** dialog box.  
 - [Undo command](undo-command.md) : Undo pending changes.
 
-  >**Tip:**  
-  >You can use this command to undo another user's check-out if you have sufficient permissions.
+  > [!TIP]
+  > You can use this command to undo another user's check-out if you have sufficient permissions.
 
 - [Difference Command](difference-command.md) : See what you have changed in a file.
 
