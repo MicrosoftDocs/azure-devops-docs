@@ -2,5 +2,5 @@
 ms.topic: include
 ---
 
-- [Supporting service account based authentication to connect to AKS](#supporting-service-account-based-authentication-to-connect-to-aks)
-- [Markdown file preview and a more discoverable file diff experience](#markdown-file-preview-and-a-more-discoverable-file-diff-experience)
+- [Use service account based authentication to connect to AKS](#use-service-account-based-authentication-to-connect-to-aks)
+- [Preview Markdown files in pull request Side-by-side diff](#Preview Markdown files in pull request Side-by-side diff )
