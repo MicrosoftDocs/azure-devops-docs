@@ -124,9 +124,7 @@ On the Build tab of a build pipeline, add these tasks:
 <table>
    <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong>
       </td>
 <td>
@@ -137,14 +135,10 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
       </td>
 </tr>
-
-        <tr>
-      <td>
-
+<tr>
+<td>
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display the operating system version.</p>
 <ul>
@@ -152,15 +146,10 @@ On the Build tab of a build pipeline, add these tasks:
  </ul>
 </td>
         </tr>
-
-
         <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display the environment variables.</p>
 <ul>
@@ -168,15 +157,10 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
 </td>
         </tr>
-
-
         <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
@@ -186,8 +170,9 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
 </td>
         </tr>
-
 </table>
+
+
 
 * * *
 ## Open source
