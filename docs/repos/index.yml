@@ -56,7 +56,6 @@ landingContent:
         links:
           - text: Git command reference
             url: ./git/command-prompt.md
-/git/command-prompt
   - title: Get started with TFVC
     linkLists:
       - linkListType: quickstart

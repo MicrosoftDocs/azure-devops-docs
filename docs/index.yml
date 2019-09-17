@@ -183,7 +183,7 @@ additionalContent:
             - url: ./organizations/security/get-started-stakeholder.md
               text: Stakeholder access 
             - url: ./get-started/index.yml
-              text: > See more
+              text: ... See more
         # Card
         - title: Reporting
           links:
@@ -196,7 +196,7 @@ additionalContent:
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
             - url: ./report/index.md
-              text: > See more
+              text: ... See more
         # Card
         - title: Collaborate
           links:
