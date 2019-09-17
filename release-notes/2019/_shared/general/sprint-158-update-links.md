@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-- [New UI to manage Organization and Project Permissions](#new-ui-to-manage-organization-and-project-permissions)
+- [New UI to manage organization and project permissions](#new-ui-to-manage-organization-and-project-permissions)

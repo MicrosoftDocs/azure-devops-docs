@@ -2,13 +2,13 @@
 ms.topic: include
 ---
 
-### Supporting service account based authentication to connect to AKS
+### Use service account based authentication to connect to AKS
 
-Previously, when configuring Azure Pipelines from Deployment Center workflow of AKS, we were using Azure Resource Manager Connection. This connection had access to the entire cluster and not the namespace for which the pipeline was configured.  In this sprint, we have moved our pipelines to start using Service Account based authentication to connect to the cluster which will have access to that namespace only.
+Previously, when configuring Azure Pipelines from the AKS Deployment Center, we were using Azure Resource Manager Connection. This connection had access to the entire cluster and not the namespace for which the pipeline was configured.  With this update, we've moved our pipelines to start using service account based authentication to connect to the cluster which will have access only to the namespace.
 
-### Markdown file preview and a more discoverable file diff experience
+### Preview Markdown files in pull request Side-by-side diff 
 
-You can now view a preview of what a markdown file would look like using the new **Preview** button.  To help users discover that they can view the full contents of a file in the diffing experience, we have added the **View** button.
+You can now see a preview of how a markdown file will look like by using the new **Preview** button. In addition, you can see the full content of a file from the Side-by-side diff by selecting the **View** button. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_10.png)
