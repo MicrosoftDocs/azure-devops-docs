@@ -211,7 +211,7 @@ additionalContent:
             - url: ./project/navigation/set-favorites.md
               text: Set favorites
             - url: /azure/devops/project/index
-              text: > See more
+              text: ... See more
         # Card
         - title: GitHub Integration
           links:
