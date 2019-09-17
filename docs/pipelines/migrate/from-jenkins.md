@@ -43,7 +43,7 @@ success and failures of the build pipeline.
 You'll find a familiar transition from a Jenkins declarative pipeline into
 an Azure Pipelines YAML configuration. The two are conceptually similar,
 supporting "configuration as code" and allowing you to check your configuration
-in to your version control system. Unlike Jenkins, however, Azure Pipelines
+into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
 pipeline](../yaml-schema.md).
 

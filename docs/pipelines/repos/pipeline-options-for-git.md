@@ -397,7 +397,8 @@ In these cases this option can help you conserve network and storage resources. 
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
-> **Tip:** The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
+> [!TIP]
+> The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
 
 ::: moniker-end
 
