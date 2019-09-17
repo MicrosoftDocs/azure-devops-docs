@@ -6,7 +6,7 @@ ms.topic: include
 
 We have added a new rule to the inherited rules engine for hiding fields. This rule will hide fields based on the users group membership. For example, if the user belongs to the "product owner" group, then hide a developer specific field.
 
-### 
+### Filtered follows
 
 Staying up to date on work items relevant to you or your team is incredibly important. It helps teams collaborate and stay on on track with projects, and makes sure all the right parties are involved. However, different stakeholders have different levels of investment in different efforts, and we believe that should be reflected in one's ability to follow the status of a work item. Previously, if anyone wanted to follow a work item and get notifications on any changes made, they would get email notifications for any and all changes made to the work item. However, after considering a lot of feedback, we wanted to make follows more flexible for all different work item stakeholders. Below you can see the new experience. You will notice a new settings button next to the "Follow" button on the top right corner of the work item. This will take you to a pop up that will let you configure your follow options.
 
