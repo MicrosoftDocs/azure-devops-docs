@@ -67,7 +67,7 @@ landingContent:
           - text: Suspend work and manage shelvesets
             url: ./tfvc/suspend-your-work-manage-your-shelvesets.md
           - text: Use Source Control Explorer to manage files
-            url: ./Use Source Control Explorer to manage files in TFVC.md
+            url: ./tfvc/use-source-control-explorer-manage-files-under-version-control.md
           - text: Get code reviewed
             url: ./tfvc/get-code-reviewed-vs.md
           - text: Create work spaces

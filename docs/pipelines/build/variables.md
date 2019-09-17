@@ -33,14 +33,14 @@ Learn more about [working with variables](../process/variables.md).
 ::: moniker range="> tfs-2017"
 
 This is a deprecated variable that modifies how the build agent cleans up source.
-To learn how to clean up source, see [source repositories](../repos/index.yml).
+To learn how to clean up source, see [source repositories](../repos/index.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 This variable modifies how the build agent cleans up source.
-To learn more, see [source repositories](../repos/index.yml).
+To learn more, see [source repositories](../repos/index.md).
 
 ::: moniker-end
 

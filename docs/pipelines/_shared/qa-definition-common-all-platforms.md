@@ -24,7 +24,7 @@ ms.topic: include
 
 * [Specify build options](../build/options.md) such as specifying how completed builds are named, building multiple configurations, creating work items on failure.
 
-* [Specify the repository](../repos/index.yml) to pick the source of the build and modify options such as how the agent workspace is cleaned.
+* [Specify the repository](../repos/index.md) to pick the source of the build and modify options such as how the agent workspace is cleaned.
 
 * [Set build triggers](../build/triggers.md) to modify how your CI builds run and to specify scheduled builds.
 

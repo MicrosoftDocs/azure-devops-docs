@@ -245,7 +245,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ### TFVC Include
 
-Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](../repos/index.yml).
+Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](../repos/index.md).
 
 ### CI trigger for a remote Git repo or Subversion
 
@@ -767,7 +767,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 If your code is in a [Team Foundation version control (TFVC)](../../repos/tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
-By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](../repos/index.yml).
+By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](../repos/index.md).
 
 Otherwise, you can clear this check box and specify the paths in the trigger.
 
@@ -791,7 +791,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### A few other things to know
 
-* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](../repos/index.yml).
+* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](../repos/index.md).
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
