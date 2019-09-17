@@ -58,7 +58,6 @@ For the instructions in this topic, you need a SQL server database project in Vi
 </li>
 
 <li>Select the <strong>.NET Desktop</strong> template.</li>
-
     <li>As the repository source, select the project, repository, and branch.</li>
 </ol>
 
