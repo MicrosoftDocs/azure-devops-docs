@@ -78,7 +78,7 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 ### Git repositories
 
-If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
+If your [repository type](../repos/index.yml) is one of the following, you can define multiple retention policies with branch filters:
 
 * Azure Repos Git or TFS Git
 * GitHub
@@ -109,7 +109,7 @@ refs/pull/*
 
 ### TFVC and Subversion repositories
 
-For TFVC and Subversion [repository types](../repos/index.md) you can modify a single policy with the same options shown above.
+For TFVC and Subversion [repository types](../repos/index.yml) you can modify a single policy with the same options shown above.
 
 ### Policy order
 
