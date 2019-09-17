@@ -250,7 +250,7 @@ additionalContent:
             - text: Access levels
               url: ./organizations/security/access-levels.md
             - text: Billing overview
-              url: ./organizations/billing/overview.md`
+              url: ./organizations/billing/overview.md
         # Card
         - title: Marketplace and Extensibility
           links:
