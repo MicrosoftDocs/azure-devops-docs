@@ -91,18 +91,9 @@ When you don't need your token anymore, just revoke it to remove access.
 
 1. From your home page, open your profile. Go to your security details.
 
-::: moniker range="azure-devops"
-
    ![Go to the organization home page, open your profile, go to Security](_img/my-profile-team-services.png)  
- 
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
-
-	<img alt="Go to the Azure DevOps Server home page, open your profile, go to Security" src="/azure/devops/repos/git/_shared/_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
-
-::: moniker-end
 
 2. Revoke access.
 
+   
    <img alt="Revoke a token or all tokens" src="/azure/devops/repos/git/_shared/_img/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />

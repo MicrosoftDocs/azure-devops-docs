@@ -1514,6 +1514,8 @@ Create a new account (collection) level group "Organization Leaders" and referen
 ```
 ... "[global]\Organization Leaders"
 ```
+> [!NOTE]
+> A freshly created global group might take a little while before being found by the import process.
 
 <a id="TF237094"></a>
 ### TF237094: Field name '[fieldName]' is used by the field '[refName]', so it cannot be used by the field '[refName]'.
