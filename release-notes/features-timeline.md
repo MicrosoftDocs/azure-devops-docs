@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/06/2019
+ms.date: 09/23/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
