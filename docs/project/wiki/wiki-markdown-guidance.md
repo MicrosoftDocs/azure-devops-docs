@@ -60,11 +60,11 @@ Wiki supports the following Mermaid diagram types:
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
-` ``` wiki-mermaid
+``` wiki-mermaid
 ::: mermaid
 <mermaid diagram syntax>
 :::
-``` `
+```
 
 Alternatively, there's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
