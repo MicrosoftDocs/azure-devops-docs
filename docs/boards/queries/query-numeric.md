@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 08/16/209  
+ms.date: 08/16/2019  
 ---
 
 # Query by numeric fields    

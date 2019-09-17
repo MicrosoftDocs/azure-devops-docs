@@ -131,7 +131,7 @@ You can build and test your project on multiple platforms. One way to do it is w
       vmImage: $(imageName)
     ```
 
-* Select **Save** and then confirm the changes to see your build run three jobs on three different platforms.
+* Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
 
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../pipelines/licensing/concurrent-jobs.md).
 

@@ -42,10 +42,6 @@ Any references to the latest versions of WIT Client OM will result in an obsolet
 
 ## Q&A
 
-### How do I know what tools are running?
-
-If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and ensure they are aware of our deprecation plan.
-
 ### How do I fix my tools?
 
 First thing you should investigate and determine if the tool is still needed. We have found that many organizations will create a tool for a specific reason for a short period of time. Then for one reason or another, that tool continues to run when it is no longer needed. For this type of scenario, you can simply shut the tool down.

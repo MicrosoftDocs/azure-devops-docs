@@ -3,13 +3,13 @@ title: Learn how to share code with packages
 titleSuffix: Azure Artifacts
 description: Use Azure Artifacts to manage and share code across teams and platforms  
 ms.custom: seodec18 
-ms.technology: devops-agile
+ms.technology: devops-artifacts
 ms.prod: devops
 ms.assetid:  
 ms.manager: jillfra
 ms.author: phwilson
 author: chasewilson
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 05/22/2019
 ---
 

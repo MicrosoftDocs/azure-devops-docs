@@ -50,10 +50,3 @@ If you have questions, feel free to reach out on [Twitter](https://twitter.com/A
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

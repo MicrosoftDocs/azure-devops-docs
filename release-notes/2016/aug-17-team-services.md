@@ -152,7 +152,8 @@ Does your team have a lot of build definitions. You can now use folders to keep 
 
 ![Manage folders](_img/8_17_15.png)
 
-**Tip:** Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
+> [!TIP]
+> Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
 
 ![Manage folders](_img/8_17_16.png)
 

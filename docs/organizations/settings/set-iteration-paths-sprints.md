@@ -373,10 +373,9 @@ az boards iteration team list --team
                               [--timeframe]
 ```
 
-
 #### Parameters
 
-- **team**: Required. Name or ID of the project.
+- **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project.
 - **timeframe**: Optional. A filter for which iterations are returned based on relative time. Only *Current* is supported. 
 
@@ -694,7 +693,6 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 *	[Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)  
 *	[Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
-
 ### Programmatic resources
 
 ::: moniker range="azure-devops"
@@ -706,7 +704,6 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 
 ::: moniker range="<= azure-devops-2019"
 
-- [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)

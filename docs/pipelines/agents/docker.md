@@ -6,8 +6,8 @@ description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.manager: jillfra
-ms.author: juliobv
-author: juliobbv
+ms.author: sdanie
+author: steved0x
 ms.date: 07/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
