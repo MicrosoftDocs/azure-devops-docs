@@ -82,7 +82,7 @@ Choose **AutoMerge** if you want to try to resolve selected conflicts using all 
 > [!TIP]
 > You can press and hold either the Ctrl or the Shift key and then select multiple conflicts.
 >
-> **Note:**  
+> [!NOTE]
 > If **AutoMerge** is disabled, then this conflict must be [manually resolved](resolve-team-foundation-version-control-conflicts.md#manual).
 
 <a name="manual"></a>
