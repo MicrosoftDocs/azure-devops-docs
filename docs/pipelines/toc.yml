@@ -50,8 +50,6 @@
       href: targets/webapp-linux.md
     - name: Web App on Linux Container
       href: targets/webapp-on-container-linux.md
-    - name: Function App on Container  
-      href: targets/function-app-container.md
     - name: Azure Resource Manager
       href: library/connect-to-azure.md
     - name: Azure Government Cloud
