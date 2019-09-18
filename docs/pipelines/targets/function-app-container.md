@@ -167,7 +167,7 @@ variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
-- task: AzureWebAppContainer@1 # Add this at the end of your file
+- task: AzureFunctionAppContainer@1 # Add this at the end of your file
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of the function app>'
