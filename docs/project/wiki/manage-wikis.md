@@ -19,9 +19,26 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
+In this article, find the following commands for managing wikis.
+
+## Commands
+
+
+|az devops wiki command  |description  |
+|---------|---------|
+|az devops wiki create     | Create a wiki.        |
+|az devops wiki delete   | Delete a wiki.        |
+|az devops wiki list   |  List all the wikis in a project or organization.       |
+|az devops wiki page    |  Manage wiki pages.       |
+|az devops wiki page create     | Add a new page.        |
+|az devops wiki page delete    | Delete a page.        |
+|az devops wiki page show    | Get the content of a page or open a page.        |
+|az devops wiki page update   |  Edit a page.       |
+|az devops wiki show    |  Show details of a wiki.       |
+
+
 ## List all the wikis in a project or organization
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 `az devops wiki list`
 
@@ -32,8 +49,3 @@ monikerRange: 'azure-devops'
 `az devops wiki delete`
 
 
-
-
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
-* * *
