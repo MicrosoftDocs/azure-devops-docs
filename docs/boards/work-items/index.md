@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.topic: conceptual
+ms.topic: landing-page
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE

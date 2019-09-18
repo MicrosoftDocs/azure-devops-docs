@@ -41,9 +41,3 @@ That’s it for this sprint. Let us know how we’re doing on [Twitter](https://
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-

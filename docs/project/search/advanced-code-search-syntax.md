@@ -1,9 +1,10 @@
 ---
 title: Use advanced code search options
-description: How To Use Code Search - Advanced options for using Code Search across all your projects in Azure DevOps and Team Foundation Server
+titleSuffix: Azure Repos
+description: Advanced options for using Code Search across all your projects in Azure DevOps
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
-ms.technology: devops-collab
+ms.technology: devops-collab, devops-code-git, devops-code-tfvc
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
