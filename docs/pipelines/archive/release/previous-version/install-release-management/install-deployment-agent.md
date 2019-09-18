@@ -30,10 +30,11 @@ for these has sufficient permissions to do whatever tasks are required for
 the release. The service account you use for the deployment agents is 
 automatically added to Release Management.
 
-***Tip:*** _As good practice, do not install the deployment agent on the 
-same machine as the Release Management server. If you do install the two on 
-the same machine and you need to upgrade, uninstall the server before you 
-uninstall the deployment agent._ 
+> [!TIP]
+> As good practice, do not install the deployment agent on the 
+> same machine as the Release Management server. If you do install the two on 
+> the same machine and you need to upgrade, uninstall the server before you 
+> uninstall the deployment agent. 
  
 ## Install and configure the Microsoft deployment agent
 
@@ -42,8 +43,9 @@ uninstall the deployment agent._
    where you will install the agent. You must also be a member of the 
    **Release Manager** role in Release Management.
 
-   ***Tip:*** _Do you need to add teammates to the **Release Manager** role 
-   in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
+   > [!TIP]
+   > Do you need to add teammates to the **Release Manager** role 
+   > in Release Management? See [Add users to Release Management](../add-users-and-groups.md).
 
 2. If you have not already downloaded the deployment agent, 
    **[do this now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)**.
@@ -64,8 +66,9 @@ uninstall the deployment agent._
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
 5. Specify the account to run the Microsoft Deployment Agent Windows 
    service and the URL of the Release Management Server. If you use a user 

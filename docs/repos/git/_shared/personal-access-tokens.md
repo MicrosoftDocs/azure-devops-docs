@@ -34,17 +34,17 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 1. Sign in to your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 2. From your home page, open your profile. Go to your security details.
 
-   <img alt="TFS home page, open your profile, go to Security" src="/azure/devops/repos/git/_shared/_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
+   ![TFS home page, open your profile, go to Security](_img/my-profile-team-services.png)
 
 3. Create a personal access token.
 
-   <img alt="Add a personal access token" src="/azure/devops/repos/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   ![Add a personal access token](_img/add-personal-access-token.png)
 
 4. Name your token. Select a lifespan for your token.
 
@@ -77,9 +77,7 @@ See the following examples of using your PAT.
 
 or
  
-- git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
-
-
+- git clone https://anything:{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
 
@@ -93,14 +91,9 @@ When you don't need your token anymore, just revoke it to remove access.
 
 1. From your home page, open your profile. Go to your security details.
 
-	**Azure DevOps Services**
-
-	<img alt="Go to the organization home page, open your profile, go to Security" src="/azure/devops/repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
- 
-   **Azure DevOps Server (formerly TFS)**
-
-	<img alt="Go to the Azure DevOps Server home page, open your profile, go to Security" src="/azure/devops/repos/git/_shared/_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
+   ![Go to the organization home page, open your profile, go to Security](_img/my-profile-team-services.png)  
 
 2. Revoke access.
 
+   
    <img alt="Revoke a token or all tokens" src="/azure/devops/repos/git/_shared/_img/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />

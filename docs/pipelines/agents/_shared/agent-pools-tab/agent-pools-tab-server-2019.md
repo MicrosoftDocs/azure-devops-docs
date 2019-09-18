@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-1. Choose **Azure DevOps**, **Organization settings**.
+1. Choose **Azure DevOps**, **Collection settings**.
 
-   ![Organization settings](../../_img/agent-pools-tab/organization-settings-2019.png)
+   ![Organization settings](../../_img/agent-pools-tab/collection-settings-2019.png)
 
 1. Choose **Agent pools**.
 
