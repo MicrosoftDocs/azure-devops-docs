@@ -108,7 +108,35 @@ The following agent pools are provided by default:
 By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted pools.
 
 > [!NOTE]
-> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that map to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+
+### Choosing a pool and agent in your pipeline
+
+# [YAML](#tab/yaml)
+
+To choose a Microsoft-hosted in your YAML pipeline, specify the name of the image.
+
+```yaml
+pool:
+  vmImage: ubuntu-16.04
+```
+
+To use a private pool with no demands:
+
+```yaml
+pool: MyPool
+```
+
+For more information, see the [YAML schema](../yaml-schema.md) for [pools](../yaml-schema.md#pool).
+
+# [Classic](#tab/classic)
+
+To choose a pool and agent in the classic editor, navigate the pipeline settings, and select the desired **Agent pool** and then the desired image from the **Agent Specification** drop-down.
+
+![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
+
+* * *
+
 
 ::: moniker-end
 
