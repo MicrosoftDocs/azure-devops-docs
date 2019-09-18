@@ -133,6 +133,7 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
 
 ```json
 {
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "{{taskguid}}",
     "name": "{{taskname}}",
     "friendlyName": "{{taskfriendlyname}}",
