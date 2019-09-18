@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 09/18/2019
 ---
 
 ::: moniker range="azure-devops"
