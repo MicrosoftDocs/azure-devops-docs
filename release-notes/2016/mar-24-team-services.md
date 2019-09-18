@@ -74,7 +74,10 @@ We’ve brought test configuration management to the web UI by adding a new Conf
 
 ## Enable build result extensions to specify order and column
 
-Build result section extensions can now specify which column and the order in which they appear. The result view has two columns, and all extensions will be in the first column by default. **Note**: All third-party extensions will appear after the build result sections we include.
+Build result section extensions can now specify which column and the order in which they appear. The result view has two columns, and all extensions will be in the first column by default.
+
+> [!NOTE]
+> All third-party extensions will appear after the build result sections we include.
 
 ![Configuring the order and column](_img/3_24_06.png)
 

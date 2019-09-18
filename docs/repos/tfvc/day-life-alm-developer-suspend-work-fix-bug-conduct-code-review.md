@@ -22,8 +22,8 @@ A powerful one-click way to switch your working context from one thread of work 
 
 [Peter has been busy writing some code to fulfill a backlog item task.](day-life-alm-developer-write-new-code-user-story.md) However, [his colleagues have found a bug](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) that is blocking them, and he wants to fix it immediately. He suspends the work that he's doing and fixes the bug. He asks Julia to review the fix and, after the review, checks in the fix and resumes work on his original task.
 
->**Note:**
->  The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
+> [!NOTE]
+> The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
 
 ## Suspend current work
 
@@ -37,8 +37,8 @@ Before he starts to work on the new bug, Peter wants to make sure that his curre
 
 Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
 
->**Note:**
->  Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
+> [!NOTE]
+> Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
 
 ### To suspend current work and begin work on a different task
 

@@ -77,7 +77,8 @@ If you are working in a [local workspace](decide-between-using-local-server-work
 
 If you add or remove a file outside Visual Studio, for example, in Windows Explorer (File Explorer in Windows 8), the **Detected changes** link appears in the **Excluded Changes** section. Choose this link if you want to include these changes. The **Promote Candidate Changes** dialog box appears. You can open the context menu of added items and choose **Browse in Windows Explorer** to display them or **Delete from disk** to delete them.
 
->**Note:**  Empty folders will not appear.
+> [!NOTE]
+> Empty folders will not appear.
 
 If items that you don't need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can select one of them, open its context menu, and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension** or **Ignore by file name** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on .tfignore files, see [Add files to the server](add-files-server.md).
 
@@ -115,10 +116,11 @@ The Diff window appears. See [Compare files](compare-files.md).
 
 You can discard one, a few, or all of the pending changes in your workspace.
 
->**Note:**  
->A few other options:  
->-  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
->- If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
+> [!NOTE]
+> A few other options:
+>
+> -  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
+> - If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
 
 ### To undo a few of your pending changes
 

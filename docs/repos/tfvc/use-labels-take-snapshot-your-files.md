@@ -69,8 +69,8 @@ Sometimes after you apply a label you decide that you need to change it. Team Fo
 
     -   To apply the label and then modify it after it has been applied, choose **Create and Edit**. This applies the label and then displays the **Label** window. For more information about using the **Label** window to edit a label, see [Use the Label Window to Work with Labels](use-labels-take-snapshot-your-files.md#label_window).
 
->**Note:**  
->When you apply a label using a name that already exists, the system warns you and asks if you want to continue. If you choose **OK** to continue, any items not contained in the path to which you are applying the label will no longer have that label.
+> [!NOTE]
+> When you apply a label using a name that already exists, the system warns you and asks if you want to continue. If you choose **OK** to continue, any items not contained in the path to which you are applying the label will no longer have that label.
 
 ## Rename a Label
 
