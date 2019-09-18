@@ -29,7 +29,7 @@ monikerRange: 'azure-devops'
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
 
 > [!NOTE]
-> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that map to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 | Image | Classic Editor Pool | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
