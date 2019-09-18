@@ -623,19 +623,7 @@ With Stakeholder access, users can create and modify work items and create and s
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-> [!div class="mx-tdBreakAll"]  
-> | Service, application, or setting | Private project | Public project|
-> |------------|-----------------|---------------|
-> |<strong>Dashboards</strong> | Partial access | Full access | 
-> |<strong>Wiki</strong>  | Partial access | Full access | 
-> |<strong>Boards</strong>  | Partial access | Full access | 
-> |<strong>Repos</strong> | No access | Full access | 
-> |<strong>Pipelines</strong>  | Full access | Full access | 
-> |<strong>Test Plans</strong>  | No access | No access | 
-> |<strong>Notifications</strong>  | Full access | Full access | 
-> |<strong>Semantic search</strong> | Full access | Full access | 
-> |<strong>Project settings</strong>  | Partial access | Partial access | 
-> |<strong>Organization settings</strong>  | Partial access | Partial access | 
+[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
 
 ::: moniker-end
 
