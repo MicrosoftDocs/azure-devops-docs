@@ -83,7 +83,7 @@ We've added a [messaging extension](https://docs.microsoft.com/en-us/microsoftte
 
 ### Updates to hosted pipelines images
 
-We've updated several of the Azure Pipelines hosted VM images. You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases). The following are some the highlights in this update:
+We've updated several of the Azure Pipelines hosted VM images. The following are some the highlights in this update:
 * Added Go 1.13 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019. Go 1.12 remains the default.
 * Added Android SDK and Build Tools 29 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019.
 * Added Az Module 2.6.0 to VS2017 and VS2019.
