@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 07/19/2019
+ms.date: 09/20/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -83,7 +83,7 @@ The following agent pools are provided by default:
 
 ::: moniker range="azure-devops"
 
-* **Hosted** pool with the following images:
+* **Azure Pipelines** hosted pool with the following images:
 
     * **Ubuntu 1604**: Enables you to build and release on
   Ubuntu 1604 machines without having to configure a self-hosted Linux agent. Agents in this pool do not
@@ -106,6 +106,9 @@ The following agent pools are provided by default:
   using containers, Windows builds should run in the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** pools.
 
 By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted pools.
+
+> [!NOTE]
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that map to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 ::: moniker-end
 
