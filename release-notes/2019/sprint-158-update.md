@@ -34,6 +34,10 @@ Check out the [Features](#features) list below for more.
 
 [!INCLUDE [sprint-158-update-links](_shared/pipelines/sprint-158-update-links.md)]
 
+### Reproting:
+
+[!INCLUDE [sprint-158-update-links](_shared/reporting/sprint-158-update-links.md)]
+
 ### Wiki:
 
 [!INCLUDE [sprint-158-update-links](_shared/wiki/sprint-158-update-links.md)]
@@ -53,6 +57,10 @@ Check out the [Features](#features) list below for more.
 ## Azure Pipelines
 
 [!INCLUDE [sprint-158-update](_shared/pipelines/sprint-158-update.md)]
+
+## Reporting
+
+[!INCLUDE [sprint-158-update](_shared/reporting/sprint-158-update.md)]
 
 ## Wiki
 
