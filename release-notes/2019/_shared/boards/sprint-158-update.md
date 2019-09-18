@@ -8,7 +8,7 @@ We've added a new rule to the inherited rules engine to let you hide fields in a
 
 ### Custom work item notification settings
 
-Staying up to date on work items relevant to you or your team is incredibly important. It helps teams collaborate and stay on on track with projects and makes sure all the right parties are involved. However, different stakeholders have different levels of investment in different efforts, and we believe that should be reflected in your ability to follow the status of a work item. 
+Staying up to date on work items relevant to you or your team is incredibly important. It helps teams collaborate and stay on track with projects and makes sure all the right parties are involved. However, different stakeholders have different levels of investment in different efforts, and we believe that should be reflected in your ability to follow the status of a work item. 
 
 Previously, if you wanted to follow a work item and get notifications on any changes made, you would get email notifications for any and all changes made to the work item. After considering your feedback, we are making following a work item more flexible for all stakeholders. Now, you will see a new settings button next to the **Follow** button on the top right corner of the work item. This will take you to a pop up that will let you configure your follow options.
 

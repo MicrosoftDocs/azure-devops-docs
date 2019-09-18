@@ -6,7 +6,7 @@ ms.topic: include
 
 **User assignment-based billing**
 
-With this update, we've added user assignment based billing. Instead of having to increase or decrease the number of paid **Basic** or **Basic + Test Plan** licenses your organization has available to assign, now that happens automatically when you add or remove users, or change their access level. This means that you’re never paying for more licenses than you’re using, and it makes automating your access level assignment much easier. For example, you have been able to set up group rules to control what access level is assigned to new users that join your team automatically. However, in the past, these only worked if you had extra licenses you were paying for that weren’t assigned to anyone yet, and if you ran out, the [group rule](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=azure-devops) failed. Those type of errors no longer happen, as long as the Azure subscription you use for billing stays active. 
+With this update, we've added user assignment-based billing. Instead of having to increase or decrease the number of paid **Basic** or **Basic + Test Plan** licenses your organization has available to assign, now that happens automatically when you add or remove users, or change their access level. This means that you’re never paying for more licenses than you’re using, and it makes automating your access level assignment much easier. For example, you have been able to set up group rules to control what access level is assigned to new users that join your team automatically. However, in the past, these only worked if you had extra licenses you were paying for that weren’t assigned to anyone yet, and if you ran out, the [group rule](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=azure-devops) failed. Those type of errors no longer happen, as long as the Azure subscription you use for billing stays active. 
 
 
 **Default access level for new users**
@@ -20,7 +20,7 @@ As part of the change to assignment-based billing, we've also switched from mont
 
 ### New UI to manage organization and project permissions
 
-Organization and project permissions management have a new look and performance has been improved. Now, new group members will appear in the list as they are added without requiring a forced page refresh. Head over to your **Oganizations Settings** and take a look.
+Organization and project permissions management have a new look and performance has been improved. Now, new group members will appear in the list as they are added without requiring a forced page refresh. Head over to your **Organizations Settings** and take a look.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_11.png)

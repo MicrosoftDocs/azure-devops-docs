@@ -10,7 +10,7 @@ description: In the **Sprint 158 Update** of Azure DevOps, we've added user assi
 
 #  User assignment based billing, default access level and daily billing - Sprint 158 Update
 
-In the **Sprint 158 Update** of Azure DevOps, we've added user assignment based billing. With this feature, the number of **Basic** or **Basic + Test Plan** licenses will change as you add or remove users. This means that you will only pay for the licenses that you are using. We’ve also added a new setting that lets you choose whether you want new users added to your organization to get full Basic access or limited/free Stakeholder access.
+In the **Sprint 158 Update** of Azure DevOps, we've added user assignment-based billing. With this feature, the number of **Basic** or **Basic + Test Plan** licenses will change as you add or remove users. This means that you will only pay for the licenses that you are using. We’ve also added a new setting that lets you choose whether you want new users added to your organization to get full Basic access or limited/free Stakeholder access.
 
 In addition, we switched from monthly to daily billing. This means that if you give a user paid access for a few weeks or even a few days, you pay only for the time they were assigned the paid access, rather than a full month.
 
