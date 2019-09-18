@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+ms.date: 09/18/2019 
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -57,9 +57,22 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 [!INCLUDE  [temp](_shared/open-wiki-hub.md)]
 
+## View a wiki page
+
+To view a wiki page, enter the `az devops wiki show` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki show --message
+                           [--open]
+
+
+
 <a id="add-page" />
 
 ## Add a wiki page
+
+#### [Browser](#tab/browser) 
 
 To add another page, choose **New page**. Or, to add a subpage, open the context menu of an existing page and select **Add subpage**.
 
@@ -70,6 +83,22 @@ Specify a unique title of 235 characters or less. Page titles are case-sensitive
 
 You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+To add a wiki page, enter the `az devops wiki page create` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page create --message
+                           [--expiration]
+                           [--id]
+                           [--type {error, info, warning}]
+```
+
+[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
 <a id="page-title-names"></a>
 
 ### Wiki page title naming restrictions
@@ -77,6 +106,8 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 [!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
 
 ## Edit and delete wiki pages
+
+#### [Browser](#tab/browser) 
 
 To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
 
@@ -93,6 +124,49 @@ To delete a page, open the context menu from the tree or the one inside the page
 > [!NOTE]  
 > Deleting a page deletes the page along with all the metadata and all its sub pages (if any) in the hierarchy.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+To edit a wiki page, enter the `az devops wiki page update` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page update --message
+                           [--expiration]
+                           [--id]
+                          
+```
+
+To delete a wiki page, enter the `az devops wiki page delete` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page delete --message
+                           [--expiration]
+                           [--id]
+                          
+```
+
+[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+::: moniker range="azure-devops"
+
+## Get wiki content
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+To get wiki content, enter the `az devops wiki show` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki show --message
+                           [--include-content]
+
+
+::: moniker-end
+
+* * *
 
 ## Reorder a wiki page
 
