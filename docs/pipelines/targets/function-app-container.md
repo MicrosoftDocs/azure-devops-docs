@@ -138,9 +138,9 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ## Configure registry credentials in Function App
 
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to your **Function App --> Platform features --> All settings**. Select **Container settings** from the app service and update the **Image source, Registry** and save.
 
-![container-settings](_img/webapp-linux/container-settings.png)
+![container-settings](_img/function-app-container/container-settings.png)
 
 ## Deploy with Azure Function App for Container
 
