@@ -34,7 +34,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 ::: moniker range="azure-devops"
 
-Follow the [Build, test, and push Docker container apps](../ecosystems/docker.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+Follow the [Build, test, and push Docker container apps](../ecosystems/containers/build-image.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
 ::: moniker-end
 
