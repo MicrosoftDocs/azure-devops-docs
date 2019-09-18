@@ -8,7 +8,7 @@ One of the most requested features in multi-stage pipelines is the ability to re
 
 You can now retry a pipeline stage when the execution fails. Any jobs that failed in the first attempt and those that depend transitively on those failed jobs are all re-attempted.
 
-Here are some examples, where this can help you save time. When you run multiple jobs in a stage and you want each stage to run tests on a different platform. If the tests on one platform fails while others pass, you can save time by not running the jobs that passed. Another example, a deployment stage may have failed due to flaky network connection. Retrying that stage will help you save time by not having to produce another build.
+Here are some examples, where this can help you save time. When you run multiple jobs in a stage, and you want each stage to run tests on a different platform. If the tests on one platform fails while others pass, you can save time by not running the jobs that passed. Another example, a deployment stage may have failed due to flaky network connection. Retrying that stage will help you save time by not having to produce another build.
 
 There are a few known gaps in this feature. For example, you cannot retry a stage that you explicitly cancel or a stage that has passed. We are working to close these gaps in future updates.
 
@@ -34,7 +34,7 @@ Test data and summary
 
 In July, we introduced flaky test management to support end-to-end lifecycle with detection, reporting and resolution. To enhance it further we are adding flaky bug management and resolution. 
 
-While investigating the flaky test you can create a bug using the **Bug** action which can then be assigned to a developer to further investigate the root cause of the flaky test. The bug report includes information about the pipeline like: error message, stack trace and other information associated with the test.
+While investigating the flaky test you can create a bug using the **Bug** action which can then be assigned to a developer to further investigate the root cause of the flaky test. The bug report includes information about the pipeline like error message, stack trace and other information associated with the test.
 
 When a bug report is resolved or closed, we will automatically unmark the test as unflaky. 
 
@@ -49,7 +49,7 @@ When a bug report is resolved or closed, we will automatically unmark the test a
 We continue to improve multi-stage YAML pipelines, with this update we enabled configuring approvals on service connections and agent pools.
 For approvals we follow segregation of roles between infrastructure owners and developers. By configuring approvals on your resources (environments, service connections, agent pools), you will be assured that all pipeline runs that use resources will first stop and seek approval. 
 
-The experiences is similar to how you configure approvals for environments. When an approval is pending on a resource referenced in a stage, the execution of the pipeline waits until the pipeline is manually approved.
+The experience is similar to how you configure approvals for environments. When an approval is pending on a resource referenced in a stage, the execution of the pipeline waits until the pipeline is manually approved.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_06.png)
@@ -96,7 +96,7 @@ You can find more details about the latest releases [here](https://github.com/mi
 
 ### Open Policy Agent installer task
 
-Open Policy Agent is an open source, general-purpose policy engine that enables unified, context-aware policy enforcement. We've added the Open Policy Agent installer task. It is particularly useful for in-pipeline policy enforcement with respect to Infrastructure as Code providers. For example, Open Policy Agent can evaluate rego policy files and Terraform plans in pipeline.
+Open Policy Agent is an open source, general-purpose policy engine that enables unified, context-aware policy enforcement. We've added the Open Policy Agent installer task. It is particularly useful for in-pipeline policy enforcement with respect to Infrastructure as Code providers.
 
 ### Pipeline decorators for release pipelines
 

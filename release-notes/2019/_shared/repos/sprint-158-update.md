@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-### Use service account based authentication to connect to AKS
+### Use service account-based authentication to connect to AKS
 
-Previously, when configuring Azure Pipelines from the AKS Deployment Center, we used Azure Resource Manager Connection. This connection had access to the entire cluster and not the namespace for which the pipeline was configured.  With this update, we've moved our pipelines to start using service account based authentication to connect to the cluster which will have access only to the namespace.
+Previously, when configuring Azure Pipelines from the AKS Deployment Center, we used Azure Resource Manager Connection. This connection had access to the entire cluster and not the namespace for which the pipeline was configured.  With this update, we've moved our pipelines to start using service account-based authentication to connect to the cluster which will have access only to the namespace.
 
 ### Preview Markdown files in pull request Side-by-side diff 
 
