@@ -65,7 +65,7 @@ To get started:
 1. Fork this repo in GitHub, or import it into Azure Repos:
 
    ```
-       https://github.com/azooinmyluggage/GHFunctionAppContainer
+   https://github.com/azooinmyluggage/GHFunctionAppContainer
    ```
 
 2. Create a pipeline and select the **Docker** template. This selection automatically adds the tasks required to build the code in the sample repository.
