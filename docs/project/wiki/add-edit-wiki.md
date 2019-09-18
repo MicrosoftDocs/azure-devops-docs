@@ -57,6 +57,8 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 [!INCLUDE  [temp](_shared/open-wiki-hub.md)]
 
+::: moniker range="= azure-devops"
+
 ## View a wiki page
 
 To view a wiki page, enter the `az devops wiki show` command. 
@@ -65,8 +67,9 @@ To view a wiki page, enter the `az devops wiki show` command.
 ```CLI
 az devops wiki show --message
                            [--open]
+```
 
-
+::: moniker-end
 
 <a id="add-page" />
 
