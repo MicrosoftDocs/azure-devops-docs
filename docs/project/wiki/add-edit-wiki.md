@@ -101,7 +101,7 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 * Change the parent-child relationship of a page
 * Change the order of the page within the hierarchy
 
-Moving a page in the hierarchy doesn't break links to it from other pages, as the page ID is added to the URL. Since the page ID is part of the UR, this ensures a permanent link that remains in tact as the wiki changes over time.
+Moving a page in the hierarchy doesn't break links to it from other pages, as the page ID is added to the URL. Since the page ID is part of the URL, this ensures a permanent link that remains in tact as the wiki changes over time.
 
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
