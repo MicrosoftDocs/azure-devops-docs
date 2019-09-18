@@ -10,49 +10,23 @@ ms.assetid: CFFC2B0F-D4A8-4C0B-B485-823CE6C0E63C
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 9/10/2019
+ms.date: 9/18/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy a Function App Container
 
-You can automatically deploy your Azure Function to an Azure Function App for Linux Container after every successful build.
+You can automatically deploy your functions to Azure Function App for Linux Container after every successful build.
 
 ## Before you begin
 
-Based on the desired runtime, [import](../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
-
-#### [.NET Core](#tab/dotnet-core/)
-
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
 However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
-    TBA
+    https://github.com/azooinmyluggage/GHFunctionAppContainer
 ```
-
-#### [Java](#tab/java)
-
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
-
-```
-    TBA
-```
-
-#### [Nodejs](#tab/nodejs)
-
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
-
-```
-    TBA
-```
-
-* * *
 
 ## Build your app
 
@@ -60,7 +34,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 ::: moniker range="azure-devops"
 
-Follow the [Build, test, and push Docker container apps](../languages/docker.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+Follow the [Build, test, and push Docker container apps](../languages/docker.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
 ::: moniker-end
 
@@ -91,7 +65,7 @@ To get started:
 1. Fork this repo in GitHub, or import it into Azure Repos:
 
    ```
-       TBA
+       https://github.com/azooinmyluggage/GHFunctionAppContainer
    ```
 2. Create a pipeline and select the **Docker** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
@@ -122,13 +96,13 @@ You must supply an Azure service connection to the `AzureFunctionAppContainer` t
 variables: 
     ## Add this under variables section in the pipeline
     azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
+    appName: <Name of the function App>
     containerRegistry: <Name of the Azure container registry>
     imageName: <Name of the image>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureFunctionAppContainer@1
-  displayName: 'Azure Function App on Container Deploy'
+  displayName: Azure Function App on Container Deploy
   inputs:
     azureSubscription: $(azureSubscription)
     appName: $(appName)
@@ -196,7 +170,7 @@ variables:
 - task: AzureWebAppContainer@1 # Add this at the end of your file
   inputs:
     azureSubscription: '<Azure service connection>'
-    appName: '<Name of the container web app>'
+    appName: '<Name of the function app>'
     imageName: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Function App on Container Deploy** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to the Azure Function App Container.
