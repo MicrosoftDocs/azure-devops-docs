@@ -34,7 +34,7 @@ Check out the [Features](#features) list below for more.
 
 [!INCLUDE [sprint-158-update-links](_shared/pipelines/sprint-158-update-links.md)]
 
-### Reproting:
+### Reporting:
 
 [!INCLUDE [sprint-158-update-links](_shared/reporting/sprint-158-update-links.md)]
 
