@@ -34,7 +34,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 ::: moniker range="azure-devops"
 
-Follow the [Build, test, and push Docker container apps](../languages/docker.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+Follow the [Build, test, and push Docker container apps](../ecosystems/docker.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
 ::: moniker-end
 
@@ -67,6 +67,7 @@ To get started:
    ```
        https://github.com/azooinmyluggage/GHFunctionAppContainer
    ```
+
 2. Create a pipeline and select the **Docker** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
 3. Save the pipeline and queue a build to see it in action.
@@ -98,16 +99,6 @@ variables:
     azureSubscription: <Name of the Azure subscription>
     appName: <Name of the function App>
     containerRegistry: <Name of the Azure container registry>
-    imageName: <Name of the image>
-
-## Add the below snippet at the end of your pipeline
-- task: AzureFunctionAppContainer@1
-  displayName: Azure Function App on Container Deploy
-  inputs:
-    azureSubscription: $(azureSubscription)
-    appName: $(appName)
-    imageName: $(imageName)
-    containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```    
 
 ::: moniker-end
@@ -173,6 +164,7 @@ variables:
     appName: '<Name of the function app>'
     imageName: $(containerRegistry)/$(imageRepository):$(tag)
 ```
+
 The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Function App on Container Deploy** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to the Azure Function App Container.
 
 ::: moniker-end
