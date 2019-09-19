@@ -12,7 +12,7 @@ ms.topic: include
 > |<strong>Azure Repos</strong> | No access | Full access | 
 > |<strong>Azure Pipelines</strong>  | Full access | Full access | 
 > |<strong>Azure Test Plans</strong>  | No access | No access | 
-> |<strong>Azure Artifacts</strong>  | No access | No access | 
+> |<strong>Azure Artifacts</strong>  | Full access | Full access | 
 > |<strong>Notifications</strong>  | Full access | Full access | 
 > |<strong>Semantic search</strong> | Full access | Full access | 
 > |<strong>Project settings</strong>  | Partial access | Partial access | 

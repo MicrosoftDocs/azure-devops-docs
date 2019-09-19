@@ -615,7 +615,7 @@ To view or edit a work item, select it and choose **Enter**.
 With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to many of the Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
  
 > [!NOTE]
-> Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete a task.
+> Stakeholders that choose a feature that's not available to them may in some instances receive an error message indicating that they don't have permissions to complete a task.
 
 ::: moniker range="azure-devops"
 
@@ -655,7 +655,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify dashboards 
 - View Delivery Plans (a Marketplace extension)
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.  
 
 ::: moniker-end
 
@@ -677,7 +677,6 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 
 ::: moniker-end
-
 
 ::: moniker range="<= tfs-2015"
 
