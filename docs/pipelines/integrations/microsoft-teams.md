@@ -97,7 +97,7 @@ For example, users may want to get notified only when builds fail or when deploy
 
 ## Approve deployments from your channel
 
-You can approve deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to *Release deployment approval pending* notification for classic Releases or *Run stage waiting for approval* notification for YAML pipelines. Both these subscriptions are created by default when you subscribe to the pipeline.
+You can approve deployments from within your channel without navigating to the Azure Pipelines portal by subscribing to the *Release deployment approval pending* notification for classic Releases or the *Run stage waiting for approval* notification for YAML pipelines. Both of these subscriptions are created by default when you subscribe to the pipeline.
 
 > [!div class="mx-imgBorder"]
 > ![Ready for approval](_img/integrations-teams/approve-teams.png)
