@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: jominana
 author: chcomley
 ms.manager: jillfra
-ms.date: 09/16/2019
+ms.date: 09/19/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -83,6 +83,9 @@ For more information about Azure DevOps and ExpressRoute, see [ExpressRoute for 
 
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQ](../../pipelines/agents/v2-windows.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
 
+## Hosted Windows and Linux Agents
+
+For more information about hosted Windows and Linux agents, see [Microsoft-hosted Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ## Hosted Mac Agents
 
