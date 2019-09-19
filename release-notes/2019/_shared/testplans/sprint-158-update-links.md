@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-- [New Test Plans being enabled for all](#New Test Plans page)
+- [New Test Plans page](#new-test-plans-page)
