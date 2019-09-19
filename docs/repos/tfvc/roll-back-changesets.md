@@ -44,7 +44,7 @@ For example, a developer wants to remove the effects of a changeset:
 
 1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
 
-    > **Note:**  
+    > [!NOTE]
     > The items you select determine the scope that the rollback changes.
 
 2.  In the **Rollback** dialog box, select **Rollback changes from a single changeset**.
@@ -62,7 +62,7 @@ For example, a developer wants to remove the effects of some consecutive changes
 
 1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
 
-    > **Note:**  
+    > [!NOTE]
     > The items you select determine the scope that the rollback changes.
 
 2.  In the **Rollback** dialog box, select **Rollback changes from a range of changesets**.

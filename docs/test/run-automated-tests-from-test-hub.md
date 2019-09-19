@@ -142,10 +142,11 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
 
-   > **Note**: If you are running UI tests such as CodeUI or Selenium
-   on physical browsers such as IE, Firefox, or Chrome, the agent
-   on the machines must be running in interactive mode and not
-   as a service. [More details](#faq-agentmode). 
+   > [!NOTE]
+   > If you are running UI tests such as CodeUI or Selenium
+   > on physical browsers such as IE, Firefox, or Chrome, the agent
+   > on the machines must be running in interactive mode and not
+   > as a service. [More details](#faq-agentmode). 
 
 8. In the **Pipeline** page of the release pipeline, verify
    that the build pipeline containing the test binaries is linked
