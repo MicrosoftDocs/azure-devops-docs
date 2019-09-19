@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Short and readable Wiki page URLs
 
-You no longer have to use a multiline URL to share wiki page links. We've made the URLs shorter and a lot easier to read so you can leverage the page IDs in the URLs. 
+You no longer have to use a multiline URL to share wiki page links. We've made the URLs shorter and a lot easier to read by leveraging the page IDs in the URLs. 
 
 The new structure of URLs will look like:
 
