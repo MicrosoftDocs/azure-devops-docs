@@ -114,7 +114,7 @@ By default, all contributors in a project are members of the **User** role on ho
 
 # [YAML](#tab/yaml)
 
-To choose a Microsoft-hosted in your YAML pipeline, specify the name of the image.
+To choose a Microsoft-hosted agent from the Azure Pipelines pool in your YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from the previous table..
 
 ```yaml
 pool:
@@ -131,7 +131,7 @@ For more information, see the [YAML schema](../yaml-schema.md) for [pools](../ya
 
 # [Classic](#tab/classic)
 
-To choose a pool and agent in the classic editor, navigate the pipeline settings, and select the desired **Agent pool** and then the desired image from the **Agent Specification** drop-down.
+To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down.
 
 ![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
 
