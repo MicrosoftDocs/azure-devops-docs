@@ -1,5 +1,5 @@
 - name: Azure Pipelines Documentation
-  href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
+  href: index.yml
 - name: Azure Pipelines
   href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Overview

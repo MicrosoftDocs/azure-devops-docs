@@ -1,5 +1,5 @@
 - name: Azure Test Plans Documentation
-  href: index.md
+  href: index.yml
 - name: Exploratory & Manual Testing
   href: ../test/toc.yml
 - name: Unit test your code
