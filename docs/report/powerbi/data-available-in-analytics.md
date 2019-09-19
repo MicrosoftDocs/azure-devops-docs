@@ -57,9 +57,9 @@ Currently, you can access the following data from Analytics. This information wa
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/test-plans/" data-raw-source="[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)">Test Plans</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/devops/test/track-test-status" data-raw-source="[Test Plans](https://docs.microsoft.com/en-us/azure/devops/test/track-test-status)">Progress Report</a></td>
 <td>None</td>
-<td>None</td>
-<td>Test Plan Reporting - Q3 2019</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/repos/" data-raw-source="[Repos](https://azure.microsoft.com/services/devops/repos/)">Repos</a></td>

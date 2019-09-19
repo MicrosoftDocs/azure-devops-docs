@@ -26,8 +26,9 @@ the tests.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
-**Note**: Stakeholders cannot create or manage test cases. You must have at least Basic access.
-See [Default manual testing permissions and access](manual-test-permissions.md).
+> [!NOTE]
+> Stakeholders cannot create or manage test cases. You must have at least Basic access.
+> See [Default manual testing permissions and access](manual-test-permissions.md).
 
 <a name="createcase"></a>
 ## Create test cases

@@ -38,8 +38,9 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> **Note**: This feature is available only in Azure DevOps.
-In addition, Stakeholders and Basic users cannot create or manage configurations.
+> [!NOTE]
+> This feature is available only in Azure DevOps.
+> In addition, Stakeholders and Basic users cannot create or manage configurations.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 

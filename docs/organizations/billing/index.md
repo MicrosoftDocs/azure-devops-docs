@@ -56,7 +56,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
-* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
+* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 * [Billing FAQ](billing-faq.md)
 * [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
