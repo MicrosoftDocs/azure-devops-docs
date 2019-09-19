@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/16/2019
+ms.date: 09/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -48,7 +48,11 @@ For more granular control over what access level is assigned to new users, you m
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to a given set of users, then you won’t start paying for them until those users actually sign in. If you have users who have never signed in and you want to stop paying for them,  remove them or assign them Stakeholder. You can sort by Last Access (#1) to see users who have never signed in and find out when they were added by exporting the list of users and checking the Date Created (#2) column.
+A: Yes, if you add a user and assign them a Basic or Basic + Test Plans access level, you start paying for them at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to potential new users (people you haven’t added manually), you won’t start paying until they sign in and are assigned an access level.
+
+### Q: How can I stop paying for users who aren't actively using Azure DevOps?
+
+A: If you have users who aren’t actively using Azure DevOps, you can stop paying for them by removing them or assigning them a free Stakeholder access level. You can sort by **Last Access** to find users who haven’t accessed the organization recently, and for users who have never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column.
 
 ![Last access](_img/_shared/last-access.png)
 
@@ -58,7 +62,7 @@ A: Multi-org billing/licensing is available in private preview. For more details
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
-A: With **monthly billing**, purchases are a monthly commitment. With any updates, we charge you for the remainder of the current month. After that, you're charged on the 1st of each month. With **daily billing**, purchases are billed daily on a pro-rated basis. Changes to purchased quantities are reflected in usage billed to your Azure subscription by the following day.
+A: As part of the change to user assignment-based billing, we have also switched from monthly to daily billing. That means that if you give a user paid access for a few weeks or even a few days, you pay only for the time they were assigned the paid access, rather than a full month. As we switch your organization from monthly to daily billing, your next Azure bill will likely be lower than it has been previously. The next month will be back to normal, once a full month of daily charges has accumulated.
 
 ### Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
 
@@ -136,7 +140,7 @@ The only exclusion is for extensions offered by partners. These charges appear o
 
 ### Q: How are user charges (Azure DevOps User/Basic, Basic + Test Plans, and Azure Artifacts) and CI/CD concurrent job charges (for both Microsoft-hosted and self-hosted CI/CD) processed?
 
-A: Charges are prorated daily.
+A: Azure DevOps charges are metered on a daily basis to the Azure subscription you selected when you set up billing. Charges accumulate and are included on the next Azure bill you receive.
 
 ### Q: How do reductions or cancellations work?
 
