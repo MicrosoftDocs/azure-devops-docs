@@ -43,8 +43,8 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 ## Suspend and resume your work from the My Work page
 
->**Note:**  
->The My Work feature is available only in Visual Studio Premium and Visual Studio Ultimate.
+> [!NOTE]
+> The My Work feature is available only in Visual Studio Premium and Visual Studio Ultimate.
 
 
 From the **My Work** page you can save and then restore not only your file changes and related work items, but also the position of your open windows, breakpoints, and other important cues.
