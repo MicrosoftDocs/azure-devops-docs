@@ -47,7 +47,7 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open the web portal and choose the project where you want to lookup members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to look up members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
 2. Choose **Project Settings** and then **Permissions**.
 
@@ -71,7 +71,7 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 
 #### [Current page](#tab/current-page) 
 
-1. Open the web portal and choose the project where you want to lookup members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to look up members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
 2. Choose **Project Settings** and then **Security**.
 
@@ -91,7 +91,7 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 
 ::: moniker range="azure-devops-2019"
 
-1. Open the web portal and choose the project where you want to lookup members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to look up members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
 2. Choose **Project Settings** and then **Security**.
 
@@ -109,7 +109,7 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 
 ::: moniker range="<= tfs-2018"  
 
-1. Open the web portal and choose the project where you want to lookup members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+1. Open the web portal and choose the project where you want to look up members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
 
