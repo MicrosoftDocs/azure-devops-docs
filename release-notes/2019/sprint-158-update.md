@@ -62,6 +62,10 @@ Check out the [Features](#features) list below for more.
 
 [!INCLUDE [sprint-158-update](_shared/pipelines/sprint-158-update.md)]
 
+## Azure Test Plans
+
+[!INCLUDE [sprint-158-update](_shared/testplans/sprint-158-update.md)]
+
 ## Reporting
 
 [!INCLUDE [sprint-158-update](_shared/reporting/sprint-158-update.md)]
