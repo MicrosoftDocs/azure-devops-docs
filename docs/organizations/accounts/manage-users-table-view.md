@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 09/18/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -37,7 +37,9 @@ To learn more, read [about access levels](../security/access-levels.md).
 
 You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
-## Manage users
+#### [Browser](#tab/browser)
+ 
+### Manage users
 
 The Users view shows key information per user in a table. In this view, you can do the following:
 
@@ -72,9 +74,70 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
-### How is *access* different from *permissions*?
+#### How is *access* different from *permissions*?
 
 Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+[Update a user](#update-user) | [Show users](#show-users)
+
+<a id="update-user" /> 
+
+### Update a user
+
+You can update a user's license type with [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. 
+
+```CLI
+az devops user update --license-type {advanced, earlyAdopter, express, professional, stakeholder} --user
+```
+
+#### Parameters
+
+- **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
+- **user**: The email ID or ID of the user.  
+
+#### Optional parameters
+
+The following parameters are optional for all commands, and not listed in the examples provided in this section. 
+
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+
+#### Example
+
+For example, the following command updates the license type for email ID contoso@contoso.com from **Basic** to **Advanced**. 
+
+```CLI
+az devops user update --license-type advanced --user contoso@contoso.com
+```
+
+<a id="show-users" /> 
+
+### Show users
+
+You can show details for users in your organization with [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command.
+
+```CLI
+az devops user show --user
+```
+
+#### Parameters
+
+- **user**: The email ID or ID of the user.
+
+#### Example
+
+For example, the following command returns user details for the email ID contoso@contoso.com.
+
+```CLI
+az devops user show --user contoso@contoso.com
+```
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
 
 ## Related articles
 

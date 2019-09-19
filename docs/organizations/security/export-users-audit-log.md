@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 09/18/2019
 ---
 
 # Export a list of users and their access levels
@@ -41,6 +41,8 @@ You can get a list of users and groups that have access to your Team Foundation 
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
   ::: moniker-end 
 
+#### [Browser](#tab/browser)
+ 
 ::: moniker range="azure-devops"
 
 1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
@@ -121,6 +123,45 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker-end
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+<a id="list-users" /> 
+
+### List users
+
+You can list the users in an organization with [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via AAD groups.
+
+```CLI
+az devops user list [--skip] [--top]
+```
+
+#### Parameters
+
+- **skip**: Optional. Number of users to skip.  
+- **top**: Optional. Maximum number of users to return. The max value is 10000; the default value is 100.  
+
+#### Other optional parameters
+
+The following parameters are optional for all commands, and not listed in the examples provided in this section. 
+
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+
+#### Example
+
+For example, the following command returns 25 users in your organization without skipping any.
+
+```CLI
+az devops user list --skip 0 --top 25
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
 
 ## Related articles
 
