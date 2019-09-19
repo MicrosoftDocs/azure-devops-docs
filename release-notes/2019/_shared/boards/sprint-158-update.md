@@ -4,7 +4,7 @@ ms.topic: include
 
 ### New rule to hide fields in a work item form based on condition 
 
-We've added a new rule to the inherited rules engine to let you hide fields in a work item form. This rule will hide fields based on the users group membership. For example, if the user belongs to the "product owner" group, then hide a developer specific field.
+We've added a new rule to the inherited rules engine to let you hide fields in a work item form. This rule will hide fields based on the users group membership. For example, if the user belongs to the "product owner" group, then hide a developer specific field. For more details see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/organizations/settings/work/custom-rules?view=azure-devops).
 
 ### Custom work item notification settings
 
@@ -19,3 +19,10 @@ From **Notification Settings**, you can choose from three notification options. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_05.png)
+
+### Link work items to deployments
+
+We are excited to release a preview of the Deployment control on the work item form. This control links your work items to a release and enables you to easily track where your work item has been deployed. To learn more see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/boards/work-items/work-item-deployments-control?view=azure-devops).
+
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/158_14.png)

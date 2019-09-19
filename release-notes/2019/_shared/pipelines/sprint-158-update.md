@@ -4,6 +4,9 @@ ms.topic: include
 
 ### Retry failed stages
 
+> [!NOTE]
+> To try this feature, you must have the preview feature **Multi-stage pipelines** enabled.
+
 One of the most requested features in multi-stage pipelines is the ability to retry a failed stage without having to start from the beginning. With this update, we are adding a big portion of this functionality.
 
 You can now retry a pipeline stage when the execution fails. Any jobs that failed in the first attempt and those that depend transitively on those failed jobs are all re-attempted.
@@ -12,7 +15,18 @@ Here are some examples, where this can help you save time. When you run multiple
 
 There are a few known gaps in this feature. For example, you cannot retry a stage that you explicitly cancel or a stage that has passed. We are working to close these gaps in future updates.
 
-To try this feature, you must have the preview feature **Multi-stage pipelines** enabled.
+### Enhancements to approvals in YAML pipelines
+
+> [!NOTE] 
+> You must have **Multi-stage pipelines** and **New service connection experience** preview features enabled to try this feature.
+
+We continue to improve multi-stage YAML pipelines, with this update we enabled configuring approvals on service connections and agent pools.
+For approvals we follow segregation of roles between infrastructure owners and developers. By configuring approvals on your resources (environments, service connections, agent pools), you will be assured that all pipeline runs that use resources will first stop and seek approval. 
+
+The experience is similar to how you configure approvals for environments. When an approval is pending on a resource referenced in a stage, the execution of the pipeline waits until the pipeline is manually approved.
+
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/158_06.png)
 
 ### Container structure testing support in Azure Pipeline
 ​
@@ -41,26 +55,14 @@ When a bug report is resolved or closed, we will automatically unmark the test a
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_03.png)
 
-### Approvals for service connections and agent pools
-
-> [!NOTE] 
-> The new service connection experience preview feature needs to be enabled to let you configure approvals on service connections.
-
-We continue to improve multi-stage YAML pipelines, with this update we enabled configuring approvals on service connections and agent pools.
-For approvals we follow segregation of roles between infrastructure owners and developers. By configuring approvals on your resources (environments, service connections, agent pools), you will be assured that all pipeline runs that use resources will first stop and seek approval. 
-
-The experience is similar to how you configure approvals for environments. When an approval is pending on a resource referenced in a stage, the execution of the pipeline waits until the pipeline is manually approved.
-
-> [!div class="mx-imgBorder"]
-> ![Badge](../../_img/158_06.png)
-
-To ensure protection is honored in all scenarios, you cannot use resources with approvals in classic release pipelines. Any classic release pipeline looking to use resources with protection would fail.
-
-### Enhancements to Azure Pipelines app for Slack and Teams
+### Enhancements to Azure Pipelines app for Slack and Microsoft Teams
 
 **Multi-stage YAML based pipelines**
 
-The Azure Pipelines app for Slack and Teams now supports multi-stage YAML pipelines for CI and CD. With this enhancement, you will get notified on various events related to YAML pipelines. To turn on this feature, enable multi-stage pipelines in the preview features section for the organization and the user. 
+> [!NOTE]
+> To try this feature, you must have the preview feature **Multi-stage pipelines** enabled.
+
+The Azure Pipelines app for Slack and Microsoft Teams now supports multi-stage YAML pipelines for CI and CD. With this enhancement, you will get notified on various events related to YAML pipelines. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_12.png)
@@ -76,7 +78,7 @@ Events supported for multi-stage YAML pipelines
 
 **URL unfurling and messaging extensions**
 
-We've added a [messaging extension](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
+We've added a [messaging extension](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Microsoft Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_08.png)
@@ -98,8 +100,16 @@ You can find more details about the latest releases [here](https://github.com/mi
 
 Open Policy Agent is an open source, general-purpose policy engine that enables unified, context-aware policy enforcement. We've added the Open Policy Agent installer task. It is particularly useful for in-pipeline policy enforcement with respect to Infrastructure as Code providers.
 
+For example, Open Policy Agent can evaluate [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) policy files and Terraform plans in pipeline. 
+
+```
+task: OpenPolicyAgentInstaller@0
+    inputs:
+          opaVersion: '0.13.5'
+```
+
 ### Pipeline decorators for release pipelines
 
-Pipeline decorators allows for adding steps to the beginning and end of every job. This is different than adding steps to a single definition because it applies to all pipelines in an organization.
+Pipeline decorators allow for adding steps to the beginning and end of every job. This is different than adding steps to a single definition because it applies to all pipelines in an organization.
 
 We have been supporting decorators for builds and YAML pipelines, with customers using them to centrally control the steps in their jobs. We are now extending the support to release pipelines as well. You can create extensions to add steps targeting the new contribution point and they will be added to all agent jobs in release pipelines.
