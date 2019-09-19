@@ -127,7 +127,7 @@ Here we show how to add and remove a user to the built-in Project Administrators
 
 * * *
 
-::: moniker-end    
+::: moniker-end 
 
 
 ::: moniker range="azure-devops-2019"
@@ -154,6 +154,8 @@ Here we show how to add and remove a user to the built-in Project Administrators
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+
+::: moniker-end 
 
 ::: moniker range="<= tfs-2018"
 
@@ -285,7 +287,6 @@ Here we show how to add and remove a user to the built-in Project Administrators
 ## Add a group and change its permissions at the organization or collection-level group 
 
 ::: moniker range="azure-devops"
-
 
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
@@ -429,7 +430,6 @@ You can change a group description or add a group image by editing the group pro
 
 1. Choose **Save** to save your changes.
 
-
 ### Manage organization-level groups 
 
 1. From the **Organization > Settings > Security** page, choose the group you want to manage, and hover over the context menu and select **Edit Group** or **Delete Group**.  
@@ -467,7 +467,6 @@ You can change a group name, description, add a group image, or delete a group.
 	> ![Edit group profile description](_img/project-collection/edit-project-level-group-current.png)   
 
 1. Choose **Save** to save your changes.
-
 
 ::: moniker-end
 
