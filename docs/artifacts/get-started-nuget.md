@@ -22,7 +22,7 @@ For this quickstart, you must have NuGet installed and set up. To learn more abo
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
 
 ::: moniker-end
 

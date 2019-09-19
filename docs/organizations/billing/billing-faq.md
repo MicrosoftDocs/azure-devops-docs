@@ -66,7 +66,7 @@ A: Microsoft ended support for purchasing 3rd party paid Azure DevOps extensions
 
 ### Q: Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
 
-A: As of June 1st, 2019, on-premises Azure Artifacts (for example, Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/license-azure-artifacts.md) to use the feature.
+A: As of June 1st, 2019, on-premises Azure Artifacts (for example, Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
 
 ## General billing
 
@@ -181,7 +181,7 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
 * [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
 * [Azure Test Plans](buy-basic-plus-test-plans.md) (formerly Test Manager)
-* [Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
+* [Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 
 ## Related articles
 

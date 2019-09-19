@@ -31,7 +31,7 @@ A note on terminology: you might also have heard feeds called package *repositor
 
 Get up and running with NuGet, npm, and Maven in Azure DevOps Services and TFS in just a few minutes with the [NuGet quickstart](get-started-nuget.md), [npm quickstart](get-started-npm.md), and [Maven quickstart](get-started-maven.md).
 
-If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your organization.
+If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](start-using-azure-artifacts.md) in your organization.
 
 You can control the amount of packages you retain using Retention Policies in your feed settings. For more information see [automatically deleting old packages](./how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies)
 
