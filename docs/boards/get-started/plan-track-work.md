@@ -32,6 +32,11 @@ Choose either the **Basic process** or **Agile process** for guidance depending 
 
 The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
 
+::: moniker range="<= azure-devops-2019"
+> [!NOTE]   
+> The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.  
+::: moniker-end
+
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
