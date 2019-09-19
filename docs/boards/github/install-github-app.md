@@ -30,7 +30,7 @@ This article walks you through the following 5 minute installation and configure
 	- Confirm the repositories you want to connect
 - (Optional) <strong>Get started</strong> 
 	- In Azure Boards, create a work item for adding a badge to your GitHub.com repo README file
-	- In GitHub.com, add the badge syntax to a repo README file, commmit the change, and create a pull request for the commit 
+	- In GitHub.com, add the badge syntax to a repo README file, commit the change, and create a pull request for the commit 
 	- In Azure Boards, add links to the GitHub commit and pull request to the work item; choose the GitHub pull request link to open the pull request in GitHub.com
 	- In GitHub.com, complete the pull request and view the badge added to your GitHub repo  
 
