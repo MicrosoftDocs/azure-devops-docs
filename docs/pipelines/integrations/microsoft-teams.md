@@ -7,7 +7,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 08/07/2019
+ms.date: 09/19/2019
 monikerRange: 'azure-devops'
 ---
  
@@ -57,7 +57,7 @@ or:
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
 ```
 
-For Build pipelines, the channel is subscribed to *Build completed* notification. For Release pipelines, the channel is subscribed to  *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for *Run stage state changed* and *Run stage waiting for approval* notifications.
+For Build pipelines, the channel is subscribed to the *Build completed* notification. For Release pipelines, the channel is subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for the *Run stage state changed* and *Run stage waiting for approval* notifications.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions added image](_img/integrations-teams/subscriptions-added-confirmation-teams.png)
