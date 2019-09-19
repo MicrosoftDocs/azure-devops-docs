@@ -1,6 +1,6 @@
 ---
-title: Sign up for Azure Artifacts
-description: Quickly start hosting NuGet, npm, Maven, Python, and universal packages in Azure DevOps Services
+title: Start Using Azure Artifacts. 
+description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -8,9 +8,19 @@ ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/22/2019
-monikerRange: 'azure-devops'
+ms.date: 09/03/2019
+monikerRange: '>= tfs-2017'
 ---
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+# License Azure Artifacts
+
+**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 # Sign up for Azure Artifacts
 
@@ -18,14 +28,47 @@ monikerRange: 'azure-devops'
 
 This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2 GB of storage. In the case that your organization needs more storage, you need to set up billing.
 
-For on-premises versions, TFS 2017 and 2018, see [License Azure Artifacts](license-azure-artifacts.md).
-
 ## Prerequisites
 
 Ensure that the following statements are true:
 
 - [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
+
+Users with a Basic license can use Azure Artifacts on-premises without needing to purchase an Azure Artifacts extension. This means with Azure DevOps Server 2019, users with a Basic license can create and consume Azure Artifacts on-premises if they have a Basic license assigned.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+Azure Artifacts is an *extension* to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
+
+Azure Artifacts is required for each user that consumes packages from (e.g., nuget restore or npm install) or produces packages to (e.g., nuget push or npm publish) Azure Artifacts feeds. Azure Artifacts is also required for each user that consumes or publishes symbols.
+
+## Install Azure Artifacts in TFS
+
+Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Azure Artifacts.
+
+> If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+
+## Assign licenses in TFS
+
+1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then, select **Azure Artifacts**.
+
+   ![Users page in TFS](_img/users-hub-tfs.png)
+
+2. Select **Assign**, enter the user to whom you want to assign licenses, and then select **Ok.**
+
+   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
+   * [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Billing and free monthly usage
 
@@ -98,3 +141,5 @@ A: If you remove your Azure Subscription from your Azure DevOps organization, yo
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
 A: Customers from before May 6, 2019 aren't charged for Artifacts storage until May 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
+
+::: moniker-end

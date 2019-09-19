@@ -6,12 +6,8 @@
   items:
   - name: What is Azure Artifacts?
     href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-  # - name: Sign up for Azure Artifacts
-  #   href: tbd
-  - name: License Azure Artifacts
-    href: license-azure-artifacts.md #remove after update
-  - name: Sign up for Azure Artifacts
-    href: sign-up-azure-artifacts.md
+  - name: Start using Azure Artifacts
+    href: start-using-azure-artifacts.md
   - name: Key concepts
     href: artifacts-key-concepts.md
 - name: Quickstarts
