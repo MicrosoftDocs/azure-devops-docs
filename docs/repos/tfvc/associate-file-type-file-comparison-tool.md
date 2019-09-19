@@ -72,8 +72,8 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
         %1 /title1=%6 %2 /title2=%7
 
-	>**Note:**  
-	>This capability is not related to version-control labels, which you apply to specific versions of items in version control, as described in [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+    > [!NOTE]
+    > This capability is not related to version-control labels, which you apply to specific versions of items in version control, as described in [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
 7.  In the **Configure Tool** dialog box, choose **OK**.  
 8.  If you want to specify more types of files, repeat steps 4-9.  

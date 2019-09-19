@@ -30,7 +30,8 @@ You can view basic reporting information within Microsoft Test Manager:
 
   This provides a status of all the tests that have been run, along with their current outcomes, within that specific test suite. This information can be seen on both the Test Activity Center (as shown below) or Plan Activity Center.
 
-  **Note**: The data shown at a suite level includes the tests that are explicitly within that suite node only - it does not include all the child suites within that suite.
+  > [!NOTE]
+  > The data shown at a suite level includes the tests that are explicitly within that suite node only - it does not include all the child suites within that suite.
 
   ![clip_image002](_img/tcm-reporting/tcm-02.png)
 
