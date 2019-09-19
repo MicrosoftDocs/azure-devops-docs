@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2019
+ms.date: 09/19/2019
 ---
 
 # .NET client libraries for Azure DevOps Services (and TFS)
@@ -88,7 +88,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 ## Pattern for use
 
 In general, you first create an authenticated connection to Azure DevOps Services or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
-Example:
+See the following examples:
 
 ```csharp
 using Microsoft.VisualStudio.Services.Common;
@@ -112,6 +112,39 @@ GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
 
 // Get data about a specific repository
 var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+```
+
+```NetStandard
+using System;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.TeamFoundation.SourceControl.WebApi;
+using Microsoft.VisualStudio.Services.WebApi;
+
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        const String c_collectionUri = "https://dev.azure.com/fabrikam";
+        const String c_projectName = "MyGreatProject";
+        const String c_repoName = "MyRepo";
+        const string c_pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+
+        static void Main(string[] args)
+        {
+            VssCredentials creds = new VssBasicCredential(string.Empty, c_pat);
+
+            // Connect to Azure DevOps Services
+            VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
+
+            // Get a GitHttpClient to talk to the Git endpoints
+            GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
+
+            // Get data about a specific repository
+            var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+        }
+    }
+}
 ```
 
 ## Reference
