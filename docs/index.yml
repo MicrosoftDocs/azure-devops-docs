@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
-title: Azure DevOps Documentation
+title: Azure DevOps documentation
 summary: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
 brand: azure
 
 metadata:
-  title: Azure DevOps Documentation
+  title: Azure DevOps documentation
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.service: visual-studio-online
   ms.topic: hub-page 
@@ -25,11 +25,11 @@ highlightedContent:
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
-      url: /azure/devops/release-notes/
+      url: ../release-notes/index.md
     # Card
     - title: Create your first pipeline
       itemType: how-to-guide
-      url: /pipelines/get-started/pipelines-get-started.md
+      url: ./pipelines/get-started/pipelines-get-started.md
     # Card
     - title: Get started for free
       itemType: how-to-guide
@@ -37,11 +37,11 @@ highlightedContent:
     # Card
     - title: Connect to a project
       itemType: how-to-guide
-      url: /organizations/projects/connect-to-projects.md
+      url: ./organizations/projects/connect-to-projects.md
     # Card
     - title: Authenticate access with personal access tokens
       itemType: how-to-guide
-      url: /organizations/accounts/use-personal-access-tokens-to-authenticate.md
+      url: ./organizations/accounts/use-personal-access-tokens-to-authenticate.md
 # productDirectory section (optional)
 productDirectory:
 #  title: Azure DevOps Products
@@ -81,8 +81,6 @@ productDirectory:
           text: What is Azure Pipelines?
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
-        - url: ./pipelines/get-started/what-is-azure-pipelines.md
-          text: What is Azure Pipelines?
         - url: ./pipelines/yaml-schema.md
           text: YAML Schema
     # Card
@@ -183,7 +181,7 @@ additionalContent:
             - url: ./organizations/security/get-started-stakeholder.md
               text: Stakeholder access 
             - url: ./get-started/index.yml
-              text: ... See more
+              text: See more &gt;
         # Card
         - title: Reporting
           links:
@@ -196,12 +194,12 @@ additionalContent:
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
             - url: ./report/index.md
-              text: ... See more
+              text: See more &gt;
         # Card
         - title: Collaborate
           links:
             - url: ./project/wiki/wiki-create-repo.md
-              text: Create a Wiki for your project
+              text: Create a wiki for your project
             - url: ./project/wiki/markdown-guidance.md
               text: Markdown syntax guidance
             - url: ./organizations/public/create-public-project.md
@@ -211,9 +209,9 @@ additionalContent:
             - url: ./project/navigation/set-favorites.md
               text: Set favorites
             - url: /azure/devops/project/index
-              text: ... See more
+              text: See more &gt;
         # Card
-        - title: GitHub Integration
+        - title: GitHub integration
           links:
             - url: ./boards/github/connect-to-github.md
               text: Azure Boards & GitHub
@@ -224,7 +222,7 @@ additionalContent:
     - title: Tools and utilities
       items:
         # Card
-        - title: Configure and Customize
+        - title: Configure and customize
           links:
             - text: User preferences
               url: ./organizations/settings/set-your-preferences.md
@@ -232,18 +230,18 @@ additionalContent:
               url: ./organizations/settings/scale/index.md
             - text: Projects
               url: ./organizations/projects/index.md
-            - text: Public Projects
+            - text: Public projects
               url: ./organizations/public/index.md
             - text: Processes
               url: ./reference/index.md
             - text: Organizations
               url: ./organizations/accounts/index.md
-            - text: Repos, Pipelines, & Test
+            - text: Repos, pipelines, & test
               url: ./organizations/settings/index.md
             - text: Notifications
               url: ./notifications/index.md
         # Card
-        - title: Security, Access, and Billing
+        - title: Security, access, and billing
           links:
             - text: Permissions and groups
               url: ./organizations/security/about-permissions.md
@@ -252,7 +250,7 @@ additionalContent:
             - text: Billing overview
               url: ./organizations/billing/overview.md
         # Card
-        - title: Marketplace and Extensibility
+        - title: Marketplace and extensibility
           links:
             - text: Discover extensions
               url: ./marketplace/overview.md
@@ -263,13 +261,13 @@ additionalContent:
             - text: Service hooks
               url: ./service-hooks/overview.md
         # Card
-        - title: Developer Resources
+        - title: Developer resources
           links:
-            - text: Command Line Interface
+            - text: Command line interface
               url: ./cli/index.md
             - text: REST APIs
               url: /rest/api/vsts/
-            - text: DevOps Resource Center
-              url: https://docs.microsoft.com/en-us/azure/devops/learn/
+            - text: DevOps resource center
+              url: https://docs.microsoft.com/azure/devops/learn/
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"
