@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
-title: Azure Boards Documentation
+title: Azure Boards documentation
 summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
 
 metadata:
-  title: Azure Boards Documentation
+  title: Azure Boards documentation
   description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
   ms.service: visual-studio-online
   ms.prod: devops 
-  ms.technology: azure-boards
+  ms.technology: devops-agile
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
@@ -26,7 +26,7 @@ landingContent:
         links:
           - text: What is Azure Boards?
             url: ./boards/get-started/what-is-azure-boards.md
-          - text: Backlogs, Boards, Taskboards, and Delivery plans
+          - text: Backlogs, boards, taskboards, and delivery plans
             url: ./boards/get-started/what-is-azure-boards.md
     linkLists:
       - linkListType: video
