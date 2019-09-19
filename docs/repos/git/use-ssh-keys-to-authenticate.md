@@ -102,11 +102,11 @@ Associate the public key generated in the previous step with your user ID.
 
    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
-2. Select **SSH Public Keys** , then select **Add**.
+2. Select **SSH public keys** , then select **+New Key**.
 
     ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. 
+3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
    >[!IMPORTANT]
    >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
