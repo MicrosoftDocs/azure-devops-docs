@@ -7,8 +7,11 @@ ms.topic: include
 We are expanding Rollup columns to support custom fields. When adding a Rollup column, you can still pick a Rollup column from the Quick list, however if you want to rollup on numeric fields that are not part of the out of the box process template, you can configure your own as follows : 
 1. Pick between Percentage and Total.
 2. Select a work item type or a Backlog level (usually backlogs aggregate several work item types). 
-3. Select the aggregation type.  Count ot work items or Sum. For Sum you'll need to select the field to summarize.
+3. Select the aggregation type.  Count of work items or Sum. For Sum you'll need to select the field to summarize.
 4. The OK button will bring you back to the column options panel where you can reorder your new custom column.
+
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/158_17.png)
 
 Note that you can't edit your custom column after clicking OK. If you need to make a change, remove the custom column and add another one as desired.  
 

@@ -8,11 +8,15 @@ ms.topic: include
 
 With this update, we've added user assignment-based billing. Instead of having to increase or decrease the number of paid **Basic** or **Basic + Test Plan** licenses your organization has available to assign, now that happens automatically when you add or remove users, or change their access level. This means that you’re never paying for more licenses than you’re using, and it makes automating your access level assignment much easier. For example, you have been able to set up group rules to control what access level is assigned to new users that join your team automatically. However, in the past, these only worked if you had extra licenses you were paying for that weren’t assigned to anyone yet, and if you ran out, the [group rule](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=azure-devops) failed. Those type of errors no longer happen, as long as the Azure subscription you use for billing stays active. 
 
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/158_15.png)
 
 **Default access level for new users**
 
 We’ve also added a new setting that lets you choose whether you want new users added to your organization to get full Basic access or limited/free Stakeholder access. In the past, new users got Basic if there were unassigned Basic licenses available, but Stakeholder if there weren’t. All organizations will start with their default access level set to Stakeholder, so there won’t be any unexpected charges for new users. If your organization typically kept extra unassigned licenses, so new users added to projects got full Basic access, make sure to [change your default access level to Basic](https://go.microsoft.com/fwlink/?linkid=2093704&clcid=0x409). 
 
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/158_16.png)
 
 **Daily billing**
 
