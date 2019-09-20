@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Azure Test Plans Documentation
+title: Azure Test Plans documentation
 summary: Improve your overall code quality by using manual and exploratory testing services for your apps.
 
 metadata:
-  title: Azure Test Plans Documentation
+  title: Azure Test Plans documentation
   description: Test your software using using manual and exploratory testing services to improve your overall code quality. 
   ms.service: visual-studio-online
   ms.prod: devops 
