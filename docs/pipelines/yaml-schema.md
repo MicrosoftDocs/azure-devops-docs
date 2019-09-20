@@ -1637,9 +1637,9 @@ steps:
 - checkout: none
 ```
 
-# [Example](#tab/example)
-If you want to modify the current repository using Git Operations and/or load Git Submodules
-Note: Don't forget to give the proper permissions to "Project Collection Build Service Accounts" in the project security.
+> [!NOTE]
+> If you want to modify the current repository using git operations and/or load git submodules, make sure to give the proper permissions to user in the agent in the repository security.
+> "Project Collection Build Service Accounts" if you are running the agent in Local Service Account
 
 ```yaml
 steps:
@@ -1647,7 +1647,6 @@ steps:
   submodules: true
   persistCredentials: true
 ```
-
 
 # [Example](#tab/example)
 
