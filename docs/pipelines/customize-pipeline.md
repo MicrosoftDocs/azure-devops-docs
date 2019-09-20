@@ -9,13 +9,13 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 4/24/2019
-monikerRange: "azure-devops"
+ms.date: 09/12/2019
+monikerRange: ">= azure-devops-2019"
 ---
 
 # Customize your pipeline
 
-**Azure Pipelines**
+[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
@@ -131,7 +131,7 @@ You can build and test your project on multiple platforms. One way to do it is w
       vmImage: $(imageName)
     ```
 
-* Select **Save** and then confirm the changes to see your build run three jobs on three different platforms.
+* Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
 
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../pipelines/licensing/concurrent-jobs.md).
 
@@ -223,12 +223,12 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
-* [.NET Core](languages/dotnet-core.md)
-* [Docker](languages/docker.md)
-* [Go](languages/go.md)
-* [Java](languages/java.md)
-* [Node.js](languages/javascript.md)
-* [Python](languages/python.md)
+* [.NET Core](ecosystems/dotnet-core.md)
+* [Containers](ecosystems/containers/build-image.md)
+* [Go](ecosystems/go.md)
+* [Java](ecosystems/java.md)
+* [Node.js](ecosystems/javascript.md)
+* [Python](ecosystems/python.md)
 
 Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../pipelines/process/deployment-jobs.md) with steps to deploy your app to an [environment](../pipelines/process/environments.md).
 

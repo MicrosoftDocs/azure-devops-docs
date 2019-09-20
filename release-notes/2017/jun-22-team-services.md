@@ -103,7 +103,8 @@ You can easily differentiate between a lightweight and an annotated tag here, as
 ### Delete tags
 There can be times when you want to delete a tag from your remote repo. It could be due to a typo in the tag name, or you might have tagged the wrong commit. You can easily delete tags from the VSTS UI by clicking the context menu of a tag on the __Tags__ page and selecting __Delete tag__. 
 
-**Note:** Deleting tags on remote repos should be exercised with caution.
+> [!NOTE]
+> Deleting tags on remote repos should be exercised with caution.
 
 ![delete tags](_img/06_22_16.png)
 

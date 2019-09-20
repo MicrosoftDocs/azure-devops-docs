@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 09/16/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -49,6 +49,31 @@ Consistency is maintained in the formatting in TOC.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
+## Add Mermaid diagrams to a Wiki page
+
+Wiki supports the following Mermaid diagram types:
+
+1.	[Flowcharts ](https://mermaidjs.github.io/#/flowchart)
+2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
+3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+
+To add Mermaid diagrams to a wiki page, use the following syntax:
+
+``` wiki-mermaid
+::: mermaid
+<mermaid diagram syntax>
+:::
+```
+
+Alternatively, there's also a toolbar button to add a default Mermaid diagram to a wiki page.
+
+![Mermaid diagram visual](_img/wiki/mermaid-diagram.png)
+
+> [!NOTE]
+> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser. 
+
+::: moniker-end
 
 ## Embed Videos in a Wiki page
 

@@ -18,7 +18,8 @@ The first thing I’ll highlight is that you now have configuration options for 
 
 ![Card configuration options](_img/4_10_01.png)
 
-**Note:** The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
+> [!NOTE]
+> The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
 
 ![Card configuration options dialog](_img/4_10_02.png)
 
@@ -50,10 +51,3 @@ If you have questions, feel free to reach out on [Twitter](https://twitter.com/A
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

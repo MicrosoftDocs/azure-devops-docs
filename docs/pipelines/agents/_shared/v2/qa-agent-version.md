@@ -16,9 +16,7 @@ ms.topic: include
  
    [!INCLUDE [agent-capabilities](../../_shared/agent-capabilities-tab.md)]
 
-5. Look for the `Agent.Version` capability.
-
-   > You can check this value against the latest published agent version. See [Azure Pipelines Agent](https://github.com/Microsoft/azure-pipelines-agent/releases) and check the page for the highest version number listed.
+5. Look for the `Agent.Version` capability. You can check this value against the latest published agent version. See [Azure Pipelines Agent](https://github.com/Microsoft/azure-pipelines-agent/releases) and check the page for the highest version number listed.
 
 6. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 

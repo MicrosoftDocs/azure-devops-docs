@@ -56,9 +56,9 @@ You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explore
 
 ![Checking in the pending changes](_img/develop-code-manage-pending-changes/IC591276.png)
 
->**Tip:**  
->-  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.  
->-  You can toggle between list and tree view from the actions menu.
+> [!TIP]
+> -  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.
+> -  You can toggle between list and tree view from the actions menu.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in:  
 -   [add](add-files-server.md)  
@@ -77,7 +77,8 @@ If you are working in a [local workspace](decide-between-using-local-server-work
 
 If you add or remove a file outside Visual Studio, for example, in Windows Explorer (File Explorer in Windows 8), the **Detected changes** link appears in the **Excluded Changes** section. Choose this link if you want to include these changes. The **Promote Candidate Changes** dialog box appears. You can open the context menu of added items and choose **Browse in Windows Explorer** to display them or **Delete from disk** to delete them.
 
->**Note:**  Empty folders will not appear.
+> [!NOTE]
+> Empty folders will not appear.
 
 If items that you don't need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can select one of them, open its context menu, and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension** or **Ignore by file name** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on .tfignore files, see [Add files to the server](add-files-server.md).
 
@@ -115,17 +116,18 @@ The Diff window appears. See [Compare files](compare-files.md).
 
 You can discard one, a few, or all of the pending changes in your workspace.
 
->**Note:**  
->A few other options:  
->-  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
->- If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
+> [!NOTE]
+> A few other options:
+>
+> -  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
+> - If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
 
 ### To undo a few of your pending changes
 
 1.  In Solution Explorer, the Pending Changes Window, or Source Control Explorer, select one or more items, open their context menu and choose **Undo** or **Undo Pending Changes**.
 
-    >**Tip:**  
-    >To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
+    > [!TIP]
+    > To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
 
 2.  In the **Undo Pending Changes** dialog box, make sure the changes you want to undo are selected, and then choose **Undo Changes**.
 
@@ -139,8 +141,8 @@ You can discard one, a few, or all of the pending changes in your workspace.
 - [Checkin command](checkin-command.md) : View pending changes in the **Check In** dialog box.  
 - [Undo command](undo-command.md) : Undo pending changes.
 
-  >**Tip:**  
-  >You can use this command to undo another user's check-out if you have sufficient permissions.
+  > [!TIP]
+  > You can use this command to undo another user's check-out if you have sufficient permissions.
 
 - [Difference Command](difference-command.md) : See what you have changed in a file.
 

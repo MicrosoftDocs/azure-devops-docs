@@ -15,7 +15,7 @@ ms.date: 07/19/2019
 
 # Configure status badges to add to GitHub README files 
 
-[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
  
 You can add Markdown syntax to a GitHub repo README.md file to display the status of your Kanban board. You do this by adding the syntax you choose from your Kanban board settings.  
 

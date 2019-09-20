@@ -211,7 +211,8 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    >**Tip:**  If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
+    > [!TIP]
+    > If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
 
 5. If it's your first time connecting to TFS, you need to add TFS to the list of recognized servers.
 

@@ -6,7 +6,7 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
-ms.technology: devops-new-user
+ms.technology: devops-artifacts
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 

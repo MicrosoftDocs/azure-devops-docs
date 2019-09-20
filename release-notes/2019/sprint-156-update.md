@@ -14,6 +14,10 @@ In the **Sprint 156 Update** of Azure DevOps, we continue to improve Azure Board
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/T7zJhPVGawQ]
+
 ## Features
 
 ### General:

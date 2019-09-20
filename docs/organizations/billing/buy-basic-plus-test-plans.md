@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 09/19/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -30,6 +30,7 @@ Ensure the following is true:
 
 * [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
 * You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* You've started an [Azure Test Plans trial](try-additional-features-vs.md)
 
 ## Increase amount of paid users
 
@@ -48,13 +49,12 @@ Ensure the following is true:
 
 5. Select **Confirm purchase**.
 
-   ![Select Confirm purchase to add more Basic users](_img/buy-more-basic-access/select-confirm-purchase.png)
-
-
-<a name="transitioning-test-manager-to-basic-plus-test-plans"></a>
-
 > [!NOTE]
-> We're moving from assignment of the Test Manager extension to assignment of the Basic + Test Plans access level, so you may have one or the other to assign, but the amount you can assign is the same for either. [Learn more](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
+> **Why can't I increase the number of paid users?**
+> We’re in the process of transitioning to assignment-based billing and your organization is set up for it already. Your charges will increase or decrease automatically as you assign and unassign Basic access to your users.
+
+>![Assignment-based billing is already be set up for your organization](_img/buy-more-basic-access/assignment-based-billing-enabled.png)
+
 
 ## Decrease amount of paid users
 

@@ -30,7 +30,7 @@ Get started with Azure DevOps Services and Java using your IDE and your tools.
  - [Android Studio plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Eclipse plugin](../repos/git/share-your-code-in-git-eclipse.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
  - [IntelliJ IDEA plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
- - [Build Android apps](../pipelines/languages/android.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Build Android apps](../pipelines/ecosystems/android.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
  - [Manage Maven packages](../artifacts/get-started-maven.md??toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)

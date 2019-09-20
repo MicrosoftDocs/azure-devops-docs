@@ -44,7 +44,7 @@ You're going to add jobs that run on three platforms.
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=azure-devops
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
 strategy:
   matrix:
     linux:
@@ -124,7 +124,7 @@ You've just learned the basics of using multiple platforms with Azure Pipelines.
 * [Jobs](process/phases.md?tabs=yaml)
 * [Cross-platform scripting](scripts/cross-platform-scripting.md)
 * [Templates](process/templates.md) to remove the duplication
-* Building [Node.js](languages/javascript.md) apps
-* Building [.NET Core](languages/dotnet-core.md), [Go](languages/go.md), [Java](languages/java.md), or [Python](languages/python.md) apps
+* Building [Node.js](ecosystems/javascript.md) apps
+* Building [.NET Core](ecosystems/dotnet-core.md), [Go](ecosystems/go.md), [Java](ecosystems/java.md), or [Python](ecosystems/python.md) apps
 
 For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).

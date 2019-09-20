@@ -6,8 +6,8 @@ ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -212,7 +212,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-   [Authenticating with personal access tokens](../../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
