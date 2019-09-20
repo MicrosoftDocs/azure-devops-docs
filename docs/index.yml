@@ -181,7 +181,7 @@ additionalContent:
             - url: ./organizations/security/get-started-stakeholder.md
               text: Stakeholder access 
             - url: ./get-started/index.yml
-              text: See more &gt;
+              text: "See more >"
         # Card
         - title: Reporting
           links:
@@ -194,7 +194,7 @@ additionalContent:
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
             - url: ./report/index.md
-              text: See more &gt;
+              text: "See more >"
         # Card
         - title: Collaborate
           links:
@@ -209,7 +209,7 @@ additionalContent:
             - url: ./project/navigation/set-favorites.md
               text: Set favorites
             - url: /azure/devops/project/index
-              text: See more &gt;
+              text: "See more >"
         # Card
         - title: GitHub integration
           links:
