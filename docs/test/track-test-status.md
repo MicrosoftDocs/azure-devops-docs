@@ -236,9 +236,6 @@ Learn more about
 Or learn more about
 [team administration](../organizations/settings/manage-teams.md).
 
-### Feedback
-We would like you to know your feedback about the charts and progress report at azuretestplans@microsoft.com. In the process, do share screenshots for us to understand better.
-
 ## See also
 *  [FAQs for manual testing](reference-qa.md#trackstatus)
 
