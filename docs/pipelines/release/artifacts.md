@@ -340,6 +340,12 @@ The following features are available when using Azure Artifacts sources:
 
 <p />
 
+*Note:* when obtaining Maven artifacts and the artifact is a snapshot build, mulitple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
+
+```PowerShell
+# Remove all copies of the artifact except the one with the lexicographically highest value.
+Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
+```
 ----
 
 <a name="externaltfs"></a>
