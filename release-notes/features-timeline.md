@@ -122,7 +122,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="20"><a href="2019/sprint-158-update.md" data-raw-source="[23 September 2019](2019/sprint-1578-update.md)">23 September 2019</a></td>
+            <td rowspan="21"><a href="2019/sprint-158-update.md" data-raw-source="[23 September 2019](2019/sprint-1578-update.md)">23 September 2019</a></td>
             <td>User assignment-based billing and default access level</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>New UI to manage organization and project permissions</td><td>General</td><td>Future</td></tr>
@@ -131,6 +131,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Link work items to deployments</td><td>Boards</td><td>Future</td></tr>  
         <tr><td>Use service account based authentication to connect to AKS</td><td>Repos</td><td>Future</td></tr>  
         <tr><td>Preview Markdown files in pull request Side-by-side diff</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Build policy expiration for manual builds</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Retry failed stages</td><td>Pipelines</td><td>Future</td></tr>  
         <tr><td>Enhancements to approvals in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>  
         <tr><td>Container structure testing support in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>  
