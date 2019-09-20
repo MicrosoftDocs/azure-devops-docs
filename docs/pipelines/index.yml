@@ -30,7 +30,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Sign up for free
-            url: ./get-started/sign-up-invite-teammates.md
+            url: ./get-started/pipelines-sign-up.md
           - text: Create your first pipeline
             url: create-first-pipeline.md
           - text: Customize your pipeline
@@ -55,18 +55,6 @@ landingContent:
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
-  - title: Reference guidance
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: YAML schema
-            url: yaml-schema.md
-          - text: Variable groups
-            url: ./library/variable-groups.md
-          - text: YAML schema
-            url: yaml-schema.md
-          - text: Release variables and debugging
-            url: ./release/variables.md
   - title: Build and test apps
     linkLists:
       - linkListType: tutorial
@@ -105,6 +93,18 @@ landingContent:
             url: ./get-started/pipelines-get-started.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Variable groups
+            url: ./library/variable-groups.md
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Release variables and debugging
+            url: ./release/variables.md
   - title: Integrate with GitHub
     linkLists:
       - linkListType: quickstart
