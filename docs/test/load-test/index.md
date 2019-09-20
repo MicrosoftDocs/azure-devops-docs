@@ -70,5 +70,5 @@ Learn how to run performance and load tests against your app.
 * [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 * [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
 * [Manual and exploratory testing](../index.md)
-* [Continuous testing](../../pipelines/index.md)
+* [Continuous testing](../../pipelines/index.yml)
 * [Unit testing](/visualstudio/test/developer-testing-scenarios)

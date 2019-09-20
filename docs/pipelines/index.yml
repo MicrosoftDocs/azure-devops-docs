@@ -21,9 +21,9 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Azure Pipelines
+  - title: Get started
     linkLists:
-      - linkListType: Get started
+      - linkListType: concept
         links:
           - text: What is Azure Pipelines?
             url: ./get-started/what-is-azure-pipelines.md

@@ -51,7 +51,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Test different configurations
-            url: ../test/test-different-configurationsn.md
+            url: ../test/test-different-configurations.md
   - title: Run automated tests
     linkLists:
       - linkListType: concept
