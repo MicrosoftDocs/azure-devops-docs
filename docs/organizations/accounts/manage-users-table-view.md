@@ -135,10 +135,6 @@ For example, the following command returns user details for the email ID contoso
 az devops user show --user contoso@contoso.com
 ```
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
-* * *
-
 ## Related articles
 
 * [Change number of paid extension users](../billing/buy-basic-access-add-users.md)
