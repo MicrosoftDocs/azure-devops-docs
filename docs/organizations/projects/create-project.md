@@ -89,7 +89,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
    - **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members.md).
    - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
    - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
-   - **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+   - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
    - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
    - [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 

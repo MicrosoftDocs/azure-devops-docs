@@ -204,6 +204,6 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Continuous testing](../pipelines/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Continuous testing](../pipelines/index.yml), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
