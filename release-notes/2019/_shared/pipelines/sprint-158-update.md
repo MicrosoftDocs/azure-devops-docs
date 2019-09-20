@@ -11,9 +11,9 @@ One of the most requested features in multi-stage pipelines is the ability to re
 
 You can now retry a pipeline stage when the execution fails. Any jobs that failed in the first attempt and those that depend transitively on those failed jobs are all re-attempted.
 
-Here are some examples, where this can help you save time. When you run multiple jobs in a stage, and you want each stage to run tests on a different platform. If the tests on one platform fails while others pass, you can save time by not running the jobs that passed. Another example, a deployment stage may have failed due to flaky network connection. Retrying that stage will help you save time by not having to produce another build.
+Here are some examples, where this can help you save time. When you run multiple jobs in a stage, and you want each stage to run tests on a different platform. If the tests on one platform fail while others pass, you can save time by not running the jobs that passed. Another example, a deployment stage may have failed due to flaky network connection. Retrying that stage will help you save time by not having to produce another build.
 
-There are a few known gaps in this feature. For example, you cannot retry a stage that you explicitly cancel or a stage that has passed. We are working to close these gaps in future updates.
+There are a few known gaps in this feature. For example, you cannot retry a stage that you explicitly cancel. We are working to close these gaps in future updates.
 
 ### Enhancements to approvals in YAML pipelines
 
