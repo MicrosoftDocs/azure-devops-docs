@@ -140,10 +140,6 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
-* * *
-
 ## Related articles
 
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
