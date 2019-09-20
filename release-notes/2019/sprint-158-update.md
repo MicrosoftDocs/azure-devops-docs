@@ -34,7 +34,7 @@ Check out the [Features](#features) list below for more.
 
 [!INCLUDE [sprint-158-update-links](_shared/pipelines/sprint-158-update-links.md)]
 
-### Test Plans:
+### Azure Test Plans:
 
 [!INCLUDE [sprint-158-update-links](_shared/testplans/sprint-158-update-links.md)]
 

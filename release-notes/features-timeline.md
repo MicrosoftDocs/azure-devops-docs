@@ -127,6 +127,29 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="20"><a href="2019/sprint-158-update.md" data-raw-source="[23 September 2019](2019/sprint-1578-update.md)">23 September 2019</a></td>
+            <td>User assignment-based billing and default access level</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>New UI to manage organization and project permissions</td><td>General</td><td>Future</td></tr>
+        <tr><td>New rule to hide fields in a work item form based on condition</td><td>Boards</td><td>Future</td></tr>  
+        <tr><td>Custom work item notification settings</td><td>Boards</td><td>Future</td></tr>  
+        <tr><td>Link work items to deployments</td><td>Boards</td><td>Future</td></tr>  
+        <tr><td>Use service account based authentication to connect to AKS</td><td>Repos</td><td>Future</td></tr>  
+        <tr><td>Preview Markdown files in pull request Side-by-side diff</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Retry failed stages</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>Enhancements to approvals in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>Container structure testing support in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>Flaky bug management and resolution</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>Enhancements to Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>  
+        <tr><td>Open Policy Agent installer task</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>Pipeline decorators for release pipelines</td><td>Pipelines</td><td>Future</td></tr>  
+        <tr><td>New Test Plans page</td><td>Test Plans</td><td>Future</td></tr>  
+        <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>Future</td></tr> 
+        <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>Future</td></tr> 
+        <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>Future</td></tr> 
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>Future</td></tr>   
+        <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
         </tr>
