@@ -114,7 +114,7 @@ By default, all contributors in a project are members of the **User** role on ho
 
 # [YAML](#tab/yaml)
 
-To choose a Microsoft-hosted agent from the Azure Pipelines pool in your YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from the [this](hosted.md#use-a-microsoft-hosted-agent) table.
+To choose a Microsoft-hosted agent from the Azure Pipelines pool in your YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ```yaml
 pool:
