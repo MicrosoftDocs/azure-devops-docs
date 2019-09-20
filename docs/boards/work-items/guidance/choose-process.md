@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 09/18/2019
 ---
 
 # Choose a process 
@@ -49,6 +49,12 @@ The default processes differ mainly in the work item types (WITs) they provide f
 Basic is the most lightweight and is in a selective Preview. 
 Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.  
 
 ::: moniker-end
 

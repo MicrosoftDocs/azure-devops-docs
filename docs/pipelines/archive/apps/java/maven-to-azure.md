@@ -81,7 +81,6 @@ On the Build tab, add these tasks:
 
 <table>
    <tr>
-
       <td><img src="../../../tasks/build/_img/maven.png" alt="Build: Maven"/> <strong>Build: Maven</strong></td>
       <td>
 <p>Build the app.</p>
@@ -90,7 +89,6 @@ On the Build tab, add these tasks:
 </ul>
       </td>
 </tr>
-
         <tr>
             <td><img src="../../../tasks/utility/_img/curl-upload-files.png" alt="Utility: cURL Upload Files"/> <strong>Utility: cURL Upload Files</strong></td>
             <td>

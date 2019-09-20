@@ -13,6 +13,8 @@ monikerRange: '=azure-devops'
 
 # Get started with Python packages in Azure Artifacts
 
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+
 This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
 
 ## Create a feed
@@ -52,7 +54,8 @@ The Python Credential Provider is a package (artifacts-keyring) in public previe
     2. Upload: `twine upload --repository-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/upload <package_wheel_or_other_dist_format>`
 3. Follow the authentication flow in your browser
 
-> **Note:** The Python Credential Provider is designed for manual interaction. If you want to set up authentication in an Azure DevOps pipeline, you will want to use the [Pip Authenticate Task](../../pipelines/tasks/package/pip-authenticate.md) for installing packages or [Twine Authentication Task](../../pipelines/tasks/package/twine-authenticate.md) for pushing.
+> [!NOTE]
+> The Python Credential Provider is designed for manual interaction. If you want to set up authentication in an Azure DevOps pipeline, you will want to use the [Pip Authenticate Task](../../pipelines/tasks/package/pip-authenticate.md) for installing packages or [Twine Authentication Task](../../pipelines/tasks/package/twine-authenticate.md) for pushing.
 
 
 ### Option 2: Connect by manually configuring authentication
@@ -71,11 +74,11 @@ This will bring up instructions on how to publish a package to your feed by usin
 
 ### Publish Python packages from your builds
 
-If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](/azure/devops/pipelines/targets/pypi).
+If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](../../pipelines/targets/pypi.md).
 
 ### Build Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azure-devops).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](../../pipelines/ecosystems/python.md).
 
 ## Resources
 

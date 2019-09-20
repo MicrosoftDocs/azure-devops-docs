@@ -40,7 +40,7 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     After you've forked it, clone it to your dev machine. 
     Learn how: [Fork a repo](https://help.github.com/en/articles/fork-a-repo).
 
-1. Navigtate to the cloned directory.
+1. Navigate to the cloned directory.
 
 1. Create a new pipeline:
 

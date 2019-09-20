@@ -33,5 +33,3 @@ That’s it for sprint 55. As always let us know how we're doing on [User Voice]
 Thanks,
 
 Aaron Bjork
-
-

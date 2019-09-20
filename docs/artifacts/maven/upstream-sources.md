@@ -13,7 +13,7 @@ monikerRange: '=azure-devops'
 
 # Use packages from Maven Central
 
-**Azure DevOps Services**
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
 
 If you want to use both private packages you've created **and** public packages from Maven Central, we recommend using upstream sources. 
 

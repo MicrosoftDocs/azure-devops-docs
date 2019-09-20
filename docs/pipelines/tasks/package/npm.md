@@ -215,7 +215,7 @@ Use this task in a build or release pipeline to install and publish npm packages
 
 [Build: gulp](../build/gulp.md)
 
-[Build your Node.js app with gulp](../../languages/javascript.md)
+[Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 ## Open source
 

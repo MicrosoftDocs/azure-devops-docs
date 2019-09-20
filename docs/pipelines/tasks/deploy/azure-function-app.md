@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: 2A56E8FD-07F1-43EF-AFB9-22B611DADC97
 ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 5/2/2019
 monikerRange: 'azure-devops'
 ---
@@ -60,7 +60,7 @@ To deploy Function on Linux, add the appType parameter and set it to <code>appTy
 To explicitly specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>. 
 If not mentioned, <code>auto</code> is taken as the default value.
 
-For an end-to-end walkthrough, see [Build and deploy Java to Azure Functions](../../languages/java-function.md) for End-to-end CI/CD.
+For an end-to-end walkthrough, see [Build and deploy Java to Azure Functions](../../ecosystems/java-function.md) for End-to-end CI/CD.
 
 ## Deployment methods
 

@@ -91,7 +91,7 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Continuous integration &amp; delivery</h3>
                                                         <p><a href="/azure/devops/pipelines/index">Build and release pipelines</a></p>
-                                                        <p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
+                                                        <p><a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a></p>
                                                         <p><a href="/azure/devops/deploy-azure/index">Deploy to Azure</a></p>
                                                         <p><a href="/azure/devops/artifacts/index">Package management</a></p>
                                                         <p><a href="/azure/devops/pipelines/library/index">Library assets</a></p>
@@ -140,7 +140,7 @@ featureFlags:
                                                         <h3>Test</h3>
                                                         <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
                                                         <p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
-                                                        <p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
+                                                        <p><a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a></p>
                                                         <p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
                                                     </div>
                                                 </div>

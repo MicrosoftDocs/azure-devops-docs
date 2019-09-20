@@ -118,9 +118,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ## Invite others to work on your Kanban board 
 
-All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project. 
-
-::: moniker-end
+All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project.
 
 ::: moniker range="azure-devops"
 

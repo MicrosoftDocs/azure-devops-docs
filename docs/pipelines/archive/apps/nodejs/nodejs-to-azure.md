@@ -70,7 +70,6 @@ On the **Tasks** or **Build** tab, add these tasks.
 
 <table>
    <tr>
-
       <td>
 
 <img src="../../../tasks/package/_img/npm.png" alt="Package: npm install"/>
@@ -83,7 +82,6 @@ On the **Tasks** or **Build** tab, add these tasks.
 </ul>
       </td>
 </tr>
-
         <tr>
             <td>
 

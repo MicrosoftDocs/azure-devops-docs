@@ -6,11 +6,11 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
+ms.technology: devops-agile
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 05/6/2019
 featureFlags:
