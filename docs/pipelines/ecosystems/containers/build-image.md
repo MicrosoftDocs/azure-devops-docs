@@ -75,16 +75,16 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
    
    variables:
      imageName: 'pipelines-javascript-docker'
-   
+   imageNmae:
    steps:
    - task: Docker@2
      displayName: Build an image
      inputs:
        repository: $(imageName)
        command: build
-       Dockerfile: app/Dockerfile
+       Dockerfile: '**/Dockerfile'
    ```
-
+Note: If you are using .net core then replace the  imageName: 'pipelines-javascript-docker 'with  imageName: 'pipelines-.net-core-docker'
 5. Select **Save and run**, after which you're prompted for a commit message as Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select **Save and run** again to see the pipeline in action.
 
    > [!TIP]
