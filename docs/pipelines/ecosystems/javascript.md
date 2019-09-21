@@ -1,5 +1,5 @@
 ---
-title: `Quickstart: Build and deploy JavaScript and Node.js apps`
+title: Build and deploy JavaScript and Node.js apps
 description: Automatically build JavaScript and Node.js apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
