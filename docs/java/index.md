@@ -4,7 +4,7 @@ description: Documentation for building and deploying Java projects with Azure D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.custom: java
+ms.custom: java, seo-java-september2019
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
 ms.manager: jillfra
 ms.author: dastahel
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 Built with Java teams in mind, Azure DevOps Services offers an open, cloud-hosted hub for Java DevOps. Code in your favorite IDEs, collaborate on pull requests, build, test, and deploy to any platform.
 
 > [!div class="mx-imgBorder"]
-> ![Code>Files repository page screen](_img/code-hub-with-java.png)
+> ![Code>Files repository page screen, Java DevOps hub](_img/code-hub-with-java.png)
 
 ## 5-Minute Quickstarts
 
