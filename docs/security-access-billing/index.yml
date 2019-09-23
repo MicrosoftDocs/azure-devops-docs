@@ -1,0 +1,98 @@
+### YamlMime:Landing
+
+title: Azure DevOps Security, Access, & Billing documentation
+summary: Lookup and assign users to groups, permissions, access levels, and manage billing for Azure DevOps. 
+
+metadata:
+  title: Azure DevOps Security, Access, & Billing documentation
+  description: Lookup and assign users to groups, permissions, access levels, and manage billing for Azure DevOps.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-security
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 09/30/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Default permissions and access
+            url: ../organizations/security/access-levels.md
+          - text: What are access levels?
+            url: ../organizations/security/access-levels.md
+          - text: About permissions and security groups
+            url: ../organizations/security/about-permissions.md
+          - text: About security roles
+            url: ../organizations/security/about-security-roles.md
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Add users to a team or project
+            url: ../organizations/security/add-users-team-project.md
+          - text: Set repository permissions
+            url: ../organizations/security/set-git-tfvc-repository-permissions.md
+          - text: Add project or collection administrators
+            url: ../organizations/security/set-project-collection-level-permissions.md
+          - text: Add users to an organization (cloud)
+            url: ../organizations/accounts/add-organization-users.md
+  - title: Add a custom security group
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Add users to a team or project
+            url: ../organizations/security/add-users-team-project.md
+  - title: Manage permissions
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: View permissions
+            url: ../organizations/security/view-permissions.md
+          - text: Change individual permissions
+            url: ../organizations/security/change-individual-permissions.md
+  - title: Change access levels
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Change access levels (cloud)
+            url: ../organizations/accounts/add-organization-users.md
+          - text: Change access levels (on-premises)
+            url: ../organizations/security/change-access-levels.md
+  - title: Manage billing
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Buy Basic access
+            url: ../organizations/billing/buy-basic-access-add-users.md
+          - text: Set up billing for your organization
+            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md
+          - text: Buy CI/CD for Azure DevOps
+            url: ../organizations/billing/buy-more-build-vs.md
+          - text: Try Azure Test Plans for free
+            url: ../organizations/billing/try-additional-features-vs.md
+  - title: Manage work tracking permissions (Azure Boards)
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Default permissions and access for Azure Boards
+            url: ../boards/get-started/permissions-access-boards.md
+      - linkListType: quickstart
+        links:
+          - text: Set work tracking permissions
+            url: ../organizations/security/set-permissions-access-work-tracking.md
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Permissions lookup guide
+            url: ../organizations/security/permissions-lookup-guide.md
+          - text: Permissions and groups
+            url: ../organizations/security/permissions.md
+

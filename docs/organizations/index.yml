@@ -1,0 +1,93 @@
+### YamlMime:Landing
+
+title: Azure DevOps Configure and Customize documentation
+summary: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
+
+metadata:
+  title: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-settings
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 09/30/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About settings
+            url: ./settings/about-settings.md
+          - text: About teams and Agile tools
+            url: ./settings/about-teams-and-settings.md
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Set user preferences
+            url: ./settings/set-your-preferences.md
+          - text: Get started as an administrator
+            url: ../user-guide/project-admin-tutorial.md
+          - text: Add project or collection administrators
+            url: ../organizations/security/set-project-collection-level-permissions.md
+  - title: Add a custom security group
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Add users to a team or project
+            url: ../organizations/security/add-users-team-project.md
+  - title: Manage permissions
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: View permissions
+            url: ../organizations/security/view-permissions.md
+          - text: Change individual permissions
+            url: ../organizations/security/change-individual-permissions.md
+  - title: Change access levels
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Change access levels (cloud)
+            url: ../organizations/accounts/add-organization-users.md
+          - text: Change access levels (on-premises)
+            url: ../organizations/security/change-access-levels.md
+  - title: Manage billing
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Buy Basic access
+            url: ../organizations/billing/buy-basic-access-add-users.md
+          - text: Set up billing for your organization
+            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md
+          - text: Buy CI/CD for Azure DevOps
+            url: ../organizations/billing/buy-more-build-vs.md
+          - text: Try Azure Test Plans for free
+            url: ../organizations/billing/try-additional-features-vs.md
+  - title: Configure notifications
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Default permissions and access for Azure Boards
+            url: ../notifications/about-notifications.md
+      - linkListType: quickstart
+        links:
+          - text: Set personal notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Set team notifications
+            url: ../notifications/howto-manage-team-notifications.md
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Permissions lookup guide
+            url: ../organizations/security/permissions-lookup-guide.md
+          - text: Permissions and groups
+            url: ../organizations/security/permissions.md
+
