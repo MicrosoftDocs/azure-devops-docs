@@ -81,7 +81,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Deploy to Azure
-            url: ./overview-azure.md
+            url: overview-azure.md
       - linkListType: tutorial
         links:
           - text: Connect to Azure
