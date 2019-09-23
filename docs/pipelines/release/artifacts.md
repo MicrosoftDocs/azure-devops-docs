@@ -339,8 +339,9 @@ The following features are available when using Azure Artifacts sources:
 |   Artifact download    | By default, packages are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
 <p />
+<h4 id="mavensnapshots">Handling Maven Snapshots</h4>
 
-*Note:* when obtaining Maven artifacts and the artifact is a snapshot build, mulitple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
+When obtaining Maven artifacts and the artifact is a snapshot build, mulitple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
 
 ```PowerShell
 # Remove all copies of the artifact except the one with the lexicographically highest value.
