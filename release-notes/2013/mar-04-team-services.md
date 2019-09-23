@@ -52,7 +52,8 @@ To fix this, you can now just double-click the step and correct the misspelling.
 
 ![Edit test case to fix it](_img/3_4_05.png)
 
-**Note:** Currently, if the test step contains any parameters (either in the action or expected result) then you cannot edit the step inline. You will see a warning message about this.
+> [!NOTE]
+> Currently, if the test step contains any parameters (either in the action or expected result) then you cannot edit the step inline. You will see a warning message about this.
 
 In future sprints, we will enable adding and deleting existing test steps and modifying the order of steps when you run a test.
 
@@ -70,7 +71,8 @@ The blocks in the margin have a subtle color gradation to help you visually iden
 
 Finally, this sprint we enabled support for scheduled builds with Git repositories. You can now build your Git repos using a build definition that is triggered on a daily schedule.
 
-**Note:** To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
+> [!NOTE]
+> To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
 That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 

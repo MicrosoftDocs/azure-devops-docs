@@ -55,20 +55,3 @@ That’s the list for sprint 68. As Brian mentioned in [his blog](http://blogs.m
 Thank you!
 
 Sean McBreen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

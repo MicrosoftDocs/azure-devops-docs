@@ -70,8 +70,9 @@ as `Data.DefaultConnection.ConnectionString` in the build or release pipeline (o
 }
 ```
 
-> **Note**: Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded. 
-If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
+> [!NOTE]
+> Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded.
+> If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
 
 See also: [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 

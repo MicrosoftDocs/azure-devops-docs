@@ -317,7 +317,7 @@ The following features are available when using Azure Container Registry, Docker
 
 <h3 id="artifactsource">Azure Artifacts</h3>
 
-To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/license-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
+To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/start-using-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 Scenarios where you may want to consume these artifacts are:
 

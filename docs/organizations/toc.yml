@@ -1,3 +1,4 @@
+
 - name: Azure DevOps manage & configure resources documentation
   expanded: false
   href: index.md
@@ -15,6 +16,8 @@
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    name: Manage authorizations
+    href: settings/manage-authorizations.md
   - name: Authentication
     items:
     - name: Authenticate access with personal access tokens
@@ -83,3 +86,4 @@
     href: /azure/devops/service-hooks/index
   - name: Web portal navigation
     href: /azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+

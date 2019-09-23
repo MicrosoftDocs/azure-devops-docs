@@ -31,7 +31,7 @@ While it is possible to use script for loading kubeconfig files onto the agent f
 
 In the **Azure Kubernetes Service** provider option, once the subscription, cluster and namespace inputs are provided, in addition to fetching and securely storing the required credentials, for an RBAC enabled cluster [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects are created such that the ServiceAccount is able to perform actions only on the chosen namespace.
 
-The **Generic provider (reusing existing ServiceAccount)** option can be used to configure a connection to any cloud provider's cluster - AKS/EKS/GKE/OpenShift/...
+The **Generic provider** (reusing existing ServiceAccount) option can be used to configure a connection to any cloud provider's cluster (AKS/EKS/GKE/OpenShift/etc.).
 
 ## Example
 ```YAML

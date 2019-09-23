@@ -30,6 +30,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field
 - When a user story is created, make the following fields required: Priority, Risk, and Effort
 - When current user is a member of "Project Administrators", then make Priority required
+- When current user is not a member of "Project Administrators", then hide the Priority field
 
 > [!NOTE]  
 > You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
@@ -50,6 +51,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |-------------|----------|  
 > |![list of conditions](_img/rules/when-condition-2.png) | ![list of actions](_img/rules/rule-actions.png)
 
+> [!NOTE]  
+> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available in the Azure DevOps Service.
+
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)]
@@ -62,28 +66,28 @@ As an example, you can make a field required based on the value assigned to the 
 
 You add fields to a selected work item type.
 
-1. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.
+1.  Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Process, WIT, Bug, Layout, New rule](_img/rules/custom-rule-create-rule.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Process, WIT, Bug, Layout, New rule](_img/rules/custom-rule-create-rule.png)
 
-   If you can't fill out the New work item rule dialog, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+    If you can't fill out the New work item rule dialog, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-1. Name the rule and select the condition(s) and action(s) from the dropdown menus.
+1.  Name the rule and select the condition(s) and action(s) from the dropdown menus.
 
-   > [!TIP]  
-   > Specify a name that builds off the field(s) you're acting on, or the conditions you're setting.
+    > [!TIP]  
+    > Specify a name that builds off the field(s) you're acting on, or the conditions you're setting.
 
-   Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
+    Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
-   <img src="_img/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
+    <img src="_img/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
 
-   > [!TIP]  
-   > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.  
+    > [!TIP]  
+    > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.
 
-	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
+        	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
 
-1. Once you've added a custom rule, open a work item and verify that the rule works as you intended.
+1.  Once you've added a custom rule, open a work item and verify that the rule works as you intended.
 
 <a id="delete-disable"> </a>
 
@@ -95,27 +99,25 @@ You delete or disable the rule from the actions menu of the rule.
 
 <img src="_img/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
 
-
-## Restrict modification of closed work items 
+## Restrict modification of closed work items
 
 [!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
 
+## Restrict modification of work items based on a user or group
 
-## Restrict modification of work items based on a user or group  
+You can customize work item types to support these restriction requests:
 
-You can customize work item types to support these restriction requests: 
-- Restrict who can create or modify a work item 
-- Restrict who can create specific work item types, such as Epics or Features 
-- Restict who can modify a specific field for a work item type 
+- Restrict who can create or modify a work item
+- Restrict who can create specific work item types, such as Epics or Features
+- Restrict who can modify a specific field for a work item type
+- Hide field from the form
 
-For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
+For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
 
 > [!div class="mx-imgBorder"]  
-> ![Custom rule](../../security/_img/grant-restrict/restrict-creating-work-items-inheritance.png)   
-
+> ![Custom rule](../../security/_img/grant-restrict/restrict-creating-work-items-inheritance.png)
 
 ## Related articles
 
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
-

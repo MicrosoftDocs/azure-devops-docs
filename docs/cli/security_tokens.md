@@ -147,6 +147,6 @@ If the tokens have variable-length path parts, then a separator character is use
 
    You need to append RepositoryID to update repo level permissions
 
-   Token format for project level permissions : 'repoV2/PROJECT_ID/REPO_ID'
+   Token format for repository level permissions : 'repoV2/PROJECT_ID/REPO_ID'
 
    For more information on this namespace and its tokens refer this [blog](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
