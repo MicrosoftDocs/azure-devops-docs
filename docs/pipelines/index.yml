@@ -93,7 +93,7 @@ landingContent:
             url: ./ecosystems/kubernetes/aks-template.md
   - title: Deploy using Azure DevOps Project
     linkLists:
-      - linkListType: tutorial
+      - linkListType: quickstart
         links:
           - text: Set up a CI/CD pipeline for a Java app 
             url: /azure/devops-project/azure-devops-project-java
@@ -107,7 +107,7 @@ landingContent:
             url: /azure/devops-project/azure-devops-project-aks
   - title: Set up continuous testing
     linkLists:
-      - linkListType: concept
+      - linkListType: tutorial
         links:
           - text: Build, test, and deploy .NET Core apps
             url: ./ecosystems/dotnet-core.md

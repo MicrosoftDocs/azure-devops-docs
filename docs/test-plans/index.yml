@@ -46,7 +46,7 @@ landingContent:
             url: ../test/create-test-cases.md
           - text: Run manual tests
             url: ../test/run-manual-tests.md
-      - linkListType: concept
+      - linkListType: tutorial
         links:
           - text: Test different configurations
             url: ../test/test-different-configurations.md
@@ -62,7 +62,7 @@ landingContent:
             url: ../test/track-test-status.md
   - title: Set up continuous testing
     linkLists:
-      - linkListType: concept
+      - linkListType: tutorial
         links:
           - text: Build, test, and deploy .NET Core apps
             url: ../pipelines/ecosystems/dotnet-core.md
