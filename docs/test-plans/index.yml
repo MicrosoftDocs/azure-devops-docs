@@ -27,8 +27,6 @@ landingContent:
         links:
           - text: What is Azure Test Plans?
             url: ../test/overview.md
-          - text: Manual testing
-            url: ../test/index.md
     linkLists:
       - linkListType: video
         links:
@@ -62,6 +60,20 @@ landingContent:
             url: ../test/associate-automated-test-with-test-case.md
           - text: Track test status
             url: ../test/track-test-status.md
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Build, test, and deploy .NET Core apps
+            url: ../pipelines/ecosystems/dotnet-core.md
+          - text: Integrate build and test tasks, Docker
+            url: ../pipelines/ecosystems/docker.md#integrate-build-and-test-tasks
+          - text: Run tests, Go
+            url: ../pipelines/ecosystems/go.md#test
+          - text: Run tests, Python
+            url: ../pipelines/ecosystems/python.md#run-tests
+          - text: Analyze test results
+            url: ../pipelines/test/test-analytics.md
   - title: Unit test your code with Visual Studio
     linkLists:
       - linkListType: quickstart

@@ -31,30 +31,12 @@ landingContent:
         links:
           - text: Sign up for free
             url: ./get-started/pipelines-sign-up.md
+          - text: Define a pipeline
+            url: ./get-started/pipelines-get-started.md
           - text: Create your first pipeline
             url: create-first-pipeline.md
           - text: Customize your pipeline
             url: customize-pipeline.md
-  - title: Key concepts
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Agents
-            url: ./agents/agents.md
-          - text: Agent pools
-            url: ./agents/pools-queues.md
-          - text: Conditions
-            url: ./process/conditions.md
-          - text: Expressions
-            url: ./process/expressions.md
-          - text: Jobs
-            url: ./process/phases.md
-          - text: Service connections
-            url: ./library/service-endpoints.md
-          - text: Stages
-            url: ./process/stages.md
-          - text: Tasks
-            url: ./process/tasks.md
   - title: Build and test apps
     linkLists:
       - linkListType: tutorial
@@ -65,6 +47,16 @@ landingContent:
             url: ./ecosystems/python.md
           - text: Build multiple branches
             url: ./build/ci-build-git.md
+  - title: Integrate with GitHub
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Build GitHub repositories
+            url: ./repos/github.md
+      - linkListType: tutorial
+        links:
+          - text: Create a CI/CD pipeline for GitHub code 
+            url: /azure/devops-project/azure-devops-project-github
   - title: Deploy
     linkLists:
       - linkListType: tutorial
@@ -85,6 +77,10 @@ landingContent:
             url: ./release/triggers.md
   - title: Deploy to Azure
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Deploy to Azure
+            url: ./overview-azure.md
       - linkListType: tutorial
         links:
           - text: Connect to Azure
@@ -93,6 +89,68 @@ landingContent:
             url: ./get-started/pipelines-get-started.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
+          - text: Deploy to Azure Kubernetes Service
+            url: ./ecosystems/kubernetes/aks-template.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Agents
+            url: ./agents/agents.md
+          - text: Agent pools
+            url: ./agents/pools-queues.md
+          - text: Conditions
+            url: ./process/conditions.md
+          - text: Expressions
+            url: ./process/expressions.md
+          - text: Jobs
+            url: ./process/phases.md
+          - text: Service connections
+            url: ./library/service-endpoints.md
+          - text: Stages
+            url: ./process/stages.md
+          - text: Tasks
+            url: ./process/tasks.md
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Build, test, and deploy .NET Core apps
+            url: ./ecosystems/dotnet-core.md
+          - text: Integrate build and test tasks, Docker
+            url: ./ecosystems/docker.md#integrate-build-and-test-tasks
+          - text: Run tests, Go
+            url: ./ecosystems/go.md#test
+          - text: Run tests, Python
+            url: ./ecosystems/python.md#run-tests
+          - text: Analyze test results
+            url: ./test/test-analytics.md
+  - title: Deploy using Azure DevOps Project
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Set up a CI/CD pipeline for a Java app 
+            url: /azure/devops-project/azure-devops-project-java
+          - text: Set up a CI/CD pipeline for Python
+            url: /azure/devops-project/azure-devops-project-python
+          - text: Set up a CI/CD pipeline for PHP
+            url: /azure/devops-project/azure-devops-project-php
+          - text: Set up a CI/CD pipeline for Node.js
+            url: /azure/devops-project/azure-devops-project-nodejs
+          - text: Deploy ASP.NET Core apps to Azure Kubernetes Service
+            url: /azure/devops-project/azure-devops-project-aks
+  - title: Ecosystems
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Build an image
+            url: ./ecosystems/containers/build-image.md
+          - text: Build and test Python apps
+            url: ./ecosystems/python.md
+          - text: Build and deploy to a PHP web app on Linux 
+            url: ./ecosystems/python-webapp.md
+          - text: Run pipelines with Anaconda environments 
+            url: ./ecosystems/anaconda.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
@@ -101,20 +159,15 @@ landingContent:
             url: yaml-schema.md
           - text: Variable groups
             url: ./library/variable-groups.md
-          - text: YAML schema
-            url: yaml-schema.md
           - text: Release variables and debugging
             url: ./release/variables.md
-  - title: Integrate with GitHub
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build GitHub repositories
-            url: ./repos/github.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Troubeshoot builds and releases
             url: troubleshooting.md
-
+          - text: Run a release in debug mode
+            url: ./pipelines/release/variables.md#run-a-release-in-debug-mode
+          - text: Troubleshoot Azure Resource Manager service connections
+            url: ./release/azure-rm-endpoint.md
