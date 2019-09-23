@@ -74,8 +74,6 @@ landingContent:
             url: ../pipelines/ecosystems/python.md#run-tests
           - text: Publish Code Coverage Results task
             url: ../pipelines/tasks/test/publish-code-coverage-results.md
-          - text: Visual Studio Test task
-            url: ../pipelines/test/vstest.md
           - text: Review test results
             url: ../pipelines/test/review-continuous-test-results-after-build.md
           - text: Analyze test results
