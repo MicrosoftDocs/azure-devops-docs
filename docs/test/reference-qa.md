@@ -576,7 +576,7 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 ![FAQ2](_img/FAQ2.png)
 
 ### Q: How can I edit the test case?
-**A:** If you have Basic License, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans License, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
+**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
 ![FAQ3](_img/FAQ3.png)
 
 ### Q: How can I see the outcome of each test case?
