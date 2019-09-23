@@ -32,7 +32,7 @@ The experience is similar to how you configure approvals for environments. When 
 ​
 Usage of containers in applications is increasing and thus the need for robust testing and validation. Azure Pipelines now brings supports for **Container Structure Tests**. This framework provides a convenient and powerful way to verify the contents and structure of your containers. 
 
-You can validate the structure of an image based on four categories of tests: command tests, file existence tests, file content tests and metadata tests. You can use the results in the pipeline to make go/no go decisions. Test data is available in the Pipeline run with an error message to help you troubleshoot better. 
+You can validate the structure of an image based on four categories of tests which can be run together: command tests, file existence tests, file content tests and metadata tests. You can use the results in the pipeline to make go/no go decisions. Test data is available in the Pipeline run with an error message to help you troubleshoot better. 
 
 Input the config file and image details
 
