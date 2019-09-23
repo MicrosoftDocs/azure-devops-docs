@@ -169,11 +169,11 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker range="azure-devops"
 
-To open the Sprint burndown report, choose **Analytics**. 
+1. To open the Sprint burndown report, choose **Analytics**. 
 
-Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+1. Use the interactive controls to choose the start and end of the sprint and count or sum field to use in the burndown. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
-If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over a column area to show a summary. 
+1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over a column area to show a summary. 
 
 #### [Sum of Remaining Work](#tab/remaining-work)
 
@@ -182,15 +182,12 @@ When you choose to view the **Sum of Remaining Work**, the blue bars show the su
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Remaining Work](_img/burndown/analytics-burndown-remaining-work.png)
 
-
-
 #### [Count of Work Items](#tab/work-items)
 
 When you choose to view the **Count of Work Items**, the blue bars show the count of tasks which are still active or in progress. As tasks are completed, trend lines indicate the average rate of burndown as well of scope increase when new tasks are added. When capacity is set for the team, the burndown trend for capacity is also shown. 
 
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Tasks](_img/burndown/analytics-burndown-trend-azure-devops.png)
-
 
 * * *
 
@@ -202,6 +199,15 @@ When you choose to view the **Count of Work Items**, the blue bars show the coun
 > If you don't track work using Tasks, you can use the [Burndown widget to track sprint burndown](../../report/dashboards/configure-burndown-burnup-widgets.md) based on a count of other types of work items. 
 
 The selections you make are only set for you, and persist across sessions until you change them. 
+
+### Add the report to a dashboard
+
+1. To add the report to a dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Analytics in-context report, Copy to dashboard](../../report/dashboards/_img/add-charts/add-analytics-chart-abbreviated.png) 
+
+1. Select the dashboard and choose **OK**.  
 
 ::: moniker-end
 

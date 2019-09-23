@@ -79,10 +79,10 @@ The system attempts to automatically resolve the conflicts displayed in the Pend
 
 Choose **AutoMerge** if you want to try to resolve selected conflicts using all the AutoMerge options described in [Understand the automatic options](resolve-team-foundation-version-control-conflicts.md#automatic_options) below.
 
-> **Tip:**  
+> [!TIP]
 > You can press and hold either the Ctrl or the Shift key and then select multiple conflicts.
-> 
-> **Note:**  
+>
+> [!NOTE]
 > If **AutoMerge** is disabled, then this conflict must be [manually resolved](resolve-team-foundation-version-control-conflicts.md#manual).
 
 <a name="manual"></a>

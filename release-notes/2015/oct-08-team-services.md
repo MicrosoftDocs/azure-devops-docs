@@ -53,12 +53,3 @@ Please reach out on [Twitter]((https://twitter.com/AzureDevOps)  if you have tho
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-
-
-

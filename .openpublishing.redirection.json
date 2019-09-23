@@ -11496,6 +11496,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/artifacts/sign-up-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/license-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
@@ -11924,6 +11934,11 @@
       "source_path": "docs/pipelines/build/content-trust.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/containers/content-trust",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/pats.md",
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": true
     }
   ]
 }

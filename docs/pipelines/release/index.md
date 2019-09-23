@@ -203,9 +203,10 @@ posted for all stages. However, you can selectively choose the stages for which 
 displayed in the status badge (for example, show only the production stage). Your team members can click the
 status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
-**Note**: If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
-automatically publish the deployment status to your repository. However, you can still use the
-"Enable the Deployment status badge" option described below to show deployment status within your version control system.
+> [!NOTE]
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
+> automatically publish the deployment status to your repository. However, you can still use the
+> "Enable the Deployment status badge" option described below to show deployment status within your version control system.
 
 **Report deployment status to Work**
 

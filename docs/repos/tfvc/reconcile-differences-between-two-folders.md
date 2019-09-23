@@ -24,8 +24,8 @@ After you compare a server folder and a local folder, you can reconcile the diff
 
 To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
->**Note:**
->  To reconcile two local folders or files, you do not need Team Foundation Server permissions.
+> [!NOTE]
+> To reconcile two local folders or files, you do not need Team Foundation Server permissions.
 
 ### To reconcile differences
 
@@ -39,8 +39,8 @@ To perform these procedures, you must have the **Read** and **Check out** permis
 
 3.  In the **Folder Difference** window, right-click the folder or file you want to reconcile, and click **Reconcile**.
 
-    >**Note**:
-    >  You can select multiple folders and files by holding down the CTRL key and clicking additional folders or files. Also, you can press CTRL+A to select all folders and files.
+    > [!NOTE]
+    > You can select multiple folders and files by holding down the CTRL key and clicking additional folders or files. Also, you can press CTRL+A to select all folders and files.
 
     The **Reconcile Folder Differences** window appears.
 

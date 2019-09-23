@@ -17,10 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
-**NOTE**: Release Management has now been combined with the Build features
-of Azure Pipelines and Team Foundation Server (TFS) in the new 
-**Pipelines** hub. For details of new features and changes, see
-[Team Foundation Build and Release release notes](2017.md).
+> [!NOTE]
+> Release Management has now been combined with the Build features
+> of Azure Pipelines and Team Foundation Server (TFS) in the new 
+> **Pipelines** hub. For details of new features and changes, see
+> [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -691,8 +692,9 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-_**NOTE**: This feature is being rolled out over time to all regions;
-therefore, it may not yet be available in your region._
+> [!NOTE]
+> This feature is being rolled out over time to all regions;
+> therefore, it may not yet be available in your region.
 
 <a name="apr26-tfsonprem"></a>
 **TFVC and TF Git as artifact sources**

@@ -1,6 +1,6 @@
 ---
 title: Add and share storyboard shapes
-titleSuffix: Azure Boards
+titleSuffix: TFS
 description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to Microsoft PowerPoint
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,12 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.topic: conceptual
-ms.date: 04/12/2019
+monikerRange: '<= tfs-2018'
+ms.date: 09/06/2019
 ---
 
 # Add and share storyboard shapes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-tfs-2018-earlier.md)]
 
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using Microsoft PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   

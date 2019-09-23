@@ -93,8 +93,8 @@ To use the **difference** command, you must have the **Read** permission for all
 |**/login**|Specifies the user name and password to authenticate the user with Team Foundation Server.|
 
 ## Remarks
->**Note:**  
->You can type **tf diff** or **tf difference** at the command line to run this command.
+> [!NOTE]
+> You can type **tf diff** or **tf difference** at the command line to run this command.
 
 You can use the **difference** command to compare and if it is possible, display differences between:
 

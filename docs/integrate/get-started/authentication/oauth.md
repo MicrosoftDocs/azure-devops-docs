@@ -9,10 +9,13 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 09/11/2019
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
+
+> [!NOTE]
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](PATs.md) to authenticate on behalf of a user.
 
 Authenticate your web app's users to access the REST APIs so that your app doesn't have to keep asking for their usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.

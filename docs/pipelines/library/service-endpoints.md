@@ -167,6 +167,7 @@ Azure Pipelines and TFS support a variety of service connection types by default
 * [GitHub Enterprise Server service connection](#sep-githubent)
 * [Jenkins service connection](#sep-jenkins)
 * [Kubernetes service connection](#sep-kuber)
+* [Maven service connection](#sep-maven)
 * [npm service connection](#sep-npm)
 * [NuGet service connection](#sep-nuget)
 * [Python package download service connection](#sep-python-download)
@@ -223,7 +224,8 @@ The dialog offers two main modes:
 
 For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
-**NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+> [!NOTE]
+> If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 *****
 
@@ -534,6 +536,25 @@ kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data.ca\.crt}'
 | Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
 | Kubeconfig | Required. Contents of the kubeconfig file  |
 | Context | Context within the kubeconfig file that is to be used for identifying the cluster |
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-maven">Maven service connection</h3>
+
+Defines and secures a connection to a Maven repository.
+
+|       Parameter       |                                                                                                                                  Description                                                                                                                                   |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+|     Registry URL      |                                                                                                                      Required. The URL of the Maven repository.                                                                                                                      |
+|     Registry Id       |                                                                                           Required. This is the ID of the server that matches the id element of the repository/mirror that Maven tries to connect to.                                                           |
+|       Username        |                                                                                          Required when connection type is **Username and Password**. The username for authentication.                                                                                          |
+|       Password        |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
+| Personal Access Token |                                  Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                                   |
+
+<p />
 
 [How do I create a new service connection?](#create-new)
 
