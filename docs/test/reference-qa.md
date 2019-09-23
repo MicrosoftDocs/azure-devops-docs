@@ -566,9 +566,10 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 **A:** You can assign configurations in two ways: 
 
 a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
+![FAQ1.1](_img/FAQ1.1.png)
 
 b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
-![FAQ1.2](_img/FAQ1.2.png)
+
 
 ### Q: How can I see the configurations assigned to my test cases?
 **A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
