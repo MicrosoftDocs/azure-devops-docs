@@ -4,7 +4,7 @@ description: Explore the feature isolation strategy using Team Foundation Versio
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-code-git
 ms.manager: jillfra
 ms.date: 04/25/2018
 ms.author: sdanie
