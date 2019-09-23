@@ -12,7 +12,7 @@ ms.date: 9/5/2019
 monikerRange: 'azure-devops'
 ---
 
-# Azure Web App task
+# Azure App Service Settings task
 
 [!INCLUDE [include](../../_shared/version-team-services.md)]
 
