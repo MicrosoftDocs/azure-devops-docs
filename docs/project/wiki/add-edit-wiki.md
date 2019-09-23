@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 09/18/2019 
+ms.date: 09/23/2019 
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -59,15 +59,32 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ::: moniker range="= azure-devops"
 
-## View a wiki page
+## View a wiki page - Azure DevOps CLI
 
-To view a wiki page, enter the `az devops wiki show` command. 
+To get the content of a page or open a page, enter the `az devops wiki show` command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops wiki show --message
-                           [--open]
+az devops wiki page show --path
+                         --wiki
+                         [--detect {false, true}]
+                         [--include-content]
+                         [--open]
+                         [--org]
+                         [--project]
+                         [--version]
 ```
+
+### Parameters
+
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--detect**: Optional. Automatically detect organization.
+- **--include-content**: Optional. Include content of the page.
+- **--open**: Optional. Open the wiki page in your web browser.
+- **--org --organization**: Optional. Azure DevOps organization URL.
+- **--project -p**: Optional. Name or ID of the project.
+- **--version -v**: Optional. Version (ETag) of the wiki page.
 
 ::: moniker-end
 
@@ -91,15 +108,49 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 To add a wiki page, enter the `az devops wiki page create` command. 
 
 > [!div class="tabbedCodeSnippets"]
+```Azure CLI
+
+az devops wiki page create --path
+                           --wiki
+                           [--comment]
+                           [--content]
+                           [--detect {false, true}]
+                           [--encoding {ascii, utf-16be, utf-16le, utf-8}]
+                           [--file-path]
+                           [--org]
+                           [--project]
+```
+
+#### Parameters
+
+- **--path**: Required. Path of the wiki page.  
+- **--wiki**: Required. Name or ID of the wiki.
+-  **--comment**: Optional. Comment in the commit message of file add operation. Default value: Added a new page using Azure DevOps CLI.
+-  **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified. 
+-  **--detect**: Optional. Automatically detect organization. Accepted values: false, true.
+-  **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
+accepted values: ascii, utf-16be, utf-16le, utf-8
+-  **--file-path**: Optional. Path of the file input if content is specified in the file.    
+-  **--org --organization**: Required if not configured as default or picked up via git config. Example: https://dev.azure.com/MyOrganizationName/. Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL.  
+-  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. 
+
+#### Examples
+
+Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
+
+> [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops wiki page create --message
-                           [--expiration]
-                           [--id]
-                           [--type {error, info, warning}]
+az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World"            --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
+```
+
+Update content of page with path 'my page' in a wiki with content from a file.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt            --encoding utf-8 --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
 [!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
-
 * * *
 
 <a id="page-title-names"></a>
@@ -129,25 +180,77 @@ To delete a page, open the context menu from the tree or the one inside the page
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
+## Edit wiki page
+
 To edit a wiki page, enter the `az devops wiki page update` command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops wiki page update --message
-                           [--expiration]
-                           [--id]
-                          
+az devops wiki page update --path
+                           --version
+                           --wiki
+                           [--comment]
+                           [--content]
+                           [--detect {false, true}]
+                           [--encoding {ascii, utf-16be, utf-16le, utf-8}]
+                           [--file-path]
+                           [--org]
+                           [--project]
 ```
+
+#### Parameters
+
+- **--path**: Required. Path of the wiki page.
+- **--version -v**: Required. Version (ETag) of file to edit.
+- **--wiki**: Required. Name of ID of the wiki.
+- **--comment**: Optional. Comment in the commit message of delete operation.
+- **--detect**: Optional. Automatically detect organization.
+- **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
+- **--file-path**: Optional. Path of the file input if content is specified in the file.
+- **--org --organization**: Optional. Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: https://dev.azure.com/MyOrganizationName/.
+- **--project -p**: Name or ID of the project.
+
+#### Examples
+
+Update content of page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World"            --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
+```
+
+Update content of page with path 'my page' in a wiki with content from a file.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt            --encoding utf-8 --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
+```
+
+## Delete wiki page
 
 To delete a wiki page, enter the `az devops wiki page delete` command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops wiki page delete --message
-                           [--expiration]
-                           [--id]
+az devops wiki page delete --path
+                           --wiki
+                           [--comment]
+                           [--detect {false, true}]
+                           [--org]
+                           [--project]
+                           [--yes]
                           
 ```
+
+#### Parameters
+
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--comment**: Optional. Comment in the commit message of delete operation.
+- **--detect**: Optional. Automatically detect organization.
+- **--org --organization**: Optional. Azure DevOps organization URL. 
+- **--project -p**: Optional. Name or ID of the project.
+- **--yes -y**: Optional. Do not prompt for confirmation.
 
 [!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
 
@@ -155,21 +258,35 @@ az devops wiki page delete --message
 
 ::: moniker range="azure-devops"
 
-## Get wiki content
+## Get wiki page content
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-To get wiki content, enter the `az devops wiki show` command. 
+To get wiki page content, enter the `az devops wiki show` command. 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops wiki show --message
-                           [--include-content]
+az devops wiki page show --path
+                         --wiki
+                         [--detect {false, true}]
+                         [--include-content]
+                         [--open]
+                         [--org]
+                         [--project]
+                         [--version]
+```
 
+#### Parameters
+
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--detect**: Optional. Automatically detect organization.
+- **--include-content**: Optional. Include content of the page.
+- **--open**: Open the wiki page in your web browser.
+- **--org --organization**: Optional. Azure DevOps organization URL. 
+- **--project -p**: Optional. Name or ID of the project.
+- **--version -v**: Optional. Version (ETag) of the wiki page.
 
 ::: moniker-end
 
-* * *
 
 ## Reorder a wiki page
 
