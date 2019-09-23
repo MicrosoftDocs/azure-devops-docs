@@ -1,7 +1,7 @@
 
 - name: Azure DevOps configure and customize resources documentation
   expanded: false
-  href: index.md
+  href: index.yml
 - name: About settings
   href: settings/about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Get started as an administrator
