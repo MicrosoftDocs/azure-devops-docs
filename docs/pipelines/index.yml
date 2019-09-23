@@ -27,6 +27,8 @@ landingContent:
         links:
           - text: What is Azure Pipelines?
             url: ./get-started/what-is-azure-pipelines.md
+          - text: Use Azure Pipelines
+            url: ./get-started/pipelines-get-started.md
       - linkListType: quickstart
         links:
           - text: Sign up for free
@@ -47,7 +49,7 @@ landingContent:
             url: ./ecosystems/python.md
           - text: Build multiple branches
             url: ./build/ci-build-git.md
-  - title: Integrate with GitHub
+  - title: Build GitHub repos
     linkLists:
       - linkListType: quickstart
         links:
@@ -76,7 +78,6 @@ landingContent:
           - text: Release triggers
             url: ./release/triggers.md
   - title: Deploy to Azure
-    linkLists:
       - linkListType: overview
         links:
           - text: Deploy to Azure
@@ -85,12 +86,66 @@ landingContent:
         links:
           - text: Connect to Azure
             url: ./library/connect-to-azure.md
-          - text: Deploy to Azure
-            url: ./get-started/pipelines-get-started.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
           - text: Deploy to Azure Kubernetes Service
             url: ./ecosystems/kubernetes/aks-template.md
+  - title: Deploy using Azure DevOps Project
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Set up a CI/CD pipeline for a Java app 
+            url: /azure/devops-project/azure-devops-project-java
+          - text: Set up a CI/CD pipeline for Python
+            url: /azure/devops-project/azure-devops-project-python
+          - text: Set up a CI/CD pipeline for PHP
+            url: /azure/devops-project/azure-devops-project-php
+          - text: Set up a CI/CD pipeline for Node.js
+            url: /azure/devops-project/azure-devops-project-nodejs
+          - text: Deploy ASP.NET Core apps to Azure Kubernetes Service
+            url: /azure/devops-project/azure-devops-project-aks
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Build, test, and deploy .NET Core apps
+            url: ./ecosystems/dotnet-core.md
+          - text: UI test with Selenium
+            url: ./test/continuous-test-selenium.md
+          - text: Run tests, Go
+            url: ./ecosystems/go.md#test
+          - text: Run tests, Python
+            url: ./ecosystems/python.md#run-tests
+          - text: Publish Code Coverage Results task
+            url: ./tasks/test/publish-code-coverage-results.md
+          - text: Visual Studio Test task
+            url: ./test/vstest.md
+          - text: Review test results
+            url: ./test/review-continuous-test-results-after-build.md
+          - text: Analyze test results
+            url: ./test/test-analytics.md
+  - title: Ecosystems
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Build an image
+            url: ./ecosystems/containers/build-image.md
+          - text: Build and test Python apps
+            url: ./ecosystems/python.md
+          - text: Build and deploy to a PHP web app on Linux 
+            url: ./ecosystems/python-webapp.md
+          - text: Run pipelines with Anaconda environments 
+            url: ./ecosystems/anaconda.md
+  - title: Publish packages
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Publish NuGet feeds
+            url: ./artifacts/nuget.md
+          - text: Publish symbols for debugging
+            url: ./artifacts/symbols.md
+          - text: Publish and download Universal Packages
+            url: ./artifacts/universal-packages.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
@@ -111,46 +166,6 @@ landingContent:
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
-  - title: Set up continuous testing
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Build, test, and deploy .NET Core apps
-            url: ./ecosystems/dotnet-core.md
-          - text: Integrate build and test tasks, Docker
-            url: ./ecosystems/docker.md#integrate-build-and-test-tasks
-          - text: Run tests, Go
-            url: ./ecosystems/go.md#test
-          - text: Run tests, Python
-            url: ./ecosystems/python.md#run-tests
-          - text: Analyze test results
-            url: ./test/test-analytics.md
-  - title: Deploy using Azure DevOps Project
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Set up a CI/CD pipeline for a Java app 
-            url: /azure/devops-project/azure-devops-project-java
-          - text: Set up a CI/CD pipeline for Python
-            url: /azure/devops-project/azure-devops-project-python
-          - text: Set up a CI/CD pipeline for PHP
-            url: /azure/devops-project/azure-devops-project-php
-          - text: Set up a CI/CD pipeline for Node.js
-            url: /azure/devops-project/azure-devops-project-nodejs
-          - text: Deploy ASP.NET Core apps to Azure Kubernetes Service
-            url: /azure/devops-project/azure-devops-project-aks
-  - title: Ecosystems
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Build an image
-            url: ./ecosystems/containers/build-image.md
-          - text: Build and test Python apps
-            url: ./ecosystems/python.md
-          - text: Build and deploy to a PHP web app on Linux 
-            url: ./ecosystems/python-webapp.md
-          - text: Run pipelines with Anaconda environments 
-            url: ./ecosystems/anaconda.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
@@ -161,6 +176,8 @@ landingContent:
             url: ./library/variable-groups.md
           - text: Release variables and debugging
             url: ./release/variables.md
+          - text: Tasks
+            url: ./tasks/index.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
@@ -168,6 +185,6 @@ landingContent:
           - text: Troubeshoot builds and releases
             url: troubleshooting.md
           - text: Run a release in debug mode
-            url: ./pipelines/release/variables.md#run-a-release-in-debug-mode
+            url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections
             url: ./release/azure-rm-endpoint.md
