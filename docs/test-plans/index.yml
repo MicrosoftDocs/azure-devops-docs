@@ -23,11 +23,6 @@ landingContent:
   # Card (optional)
   - title: About Azure Test Plans
     linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure Test Plans?
-            url: ../test/overview.md
-    linkLists:
       - linkListType: video
         links:
           - text: Capturing actionable feedback with manual testing
@@ -36,6 +31,11 @@ landingContent:
             url: https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player
           - text: Test & Feedback
             url: https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Test Plans?
+            url: ../test/overview.md
   - title: Run manual tests
     linkLists:
       - linkListType: quickstart
@@ -66,12 +66,18 @@ landingContent:
         links:
           - text: Build, test, and deploy .NET Core apps
             url: ../pipelines/ecosystems/dotnet-core.md
-          - text: Integrate build and test tasks, Docker
-            url: ../pipelines/ecosystems/docker.md#integrate-build-and-test-tasks
+          - text: UI test with Selenium
+            url: ../pipelines/test/continuous-test-selenium.md
           - text: Run tests, Go
             url: ../pipelines/ecosystems/go.md#test
           - text: Run tests, Python
             url: ../pipelines/ecosystems/python.md#run-tests
+          - text: Publish Code Coverage Results task
+            url: ../pipelines/tasks/test/publish-code-coverage-results.md
+          - text: Visual Studio Test task
+            url: ../pipelines/test/vstest.md
+          - text: Review test results
+            url: ../pipelines/test/review-continuous-test-results-after-build.md
           - text: Analyze test results
             url: ../pipelines/test/test-analytics.md
   - title: Unit test your code with Visual Studio
