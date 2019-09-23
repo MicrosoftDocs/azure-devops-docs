@@ -105,7 +105,7 @@ The following agent pools are provided by default:
   inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building
   using containers, Windows builds should run using the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** images.
 
-By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted pools.
+By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
@@ -238,7 +238,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ### I need more hosted build resources. What can I do?
 
-A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
+A: The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
 * [Host your own agents on infrastructure that you manage](agents.md).
 * [Buy additional parallel jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
