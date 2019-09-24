@@ -184,7 +184,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Default permissions and access for Azure Boards
+          - text: About notifications
             url: ../notifications/about-notifications.md
       - linkListType: quickstart
         links:
