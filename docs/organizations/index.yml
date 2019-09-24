@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Azure DevOps Configure and Customize documentation
+title: Azure DevOps configure and customize documentation
 summary: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
 
 metadata:
@@ -52,8 +52,6 @@ landingContent:
             url: ./settings/set-iteration-paths-sprints.md
           - text: Add a team administrator
             url: ./settings/add-team-administrator.md
-          - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
   - title: Add and manage projects
     linkLists:
       - linkListType: concept
@@ -90,27 +88,49 @@ landingContent:
             url: ./public/create-public-project.md
           - text: Manage project visibility
             url: ./public/make-project-public.md
-          - text: Define team area paths
-            url: ./settings/set-area-paths.md
-          - text: Configure team iterations
-            url: ./settings/set-iteration-paths-sprints.md
-          - text: Add a team administrator
-            url: ./settings/add-team-administrator.md
-          - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
-  - title: Set alerts or notifications
+  - title: Add and manage organizations (cloud)
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: Default permissions and access for Azure Boards
-            url: ../notifications/about-notifications.md
+          - text: About organizations
+            url: ./accounts/organization-management.md
+          - text: Plan your organizational structure
+            url: ../user-guide/plan-your-azure-devops-org-structure.md
       - linkListType: quickstart
         links:
-          - text: Set personal notifications
-            url: ../notifications/howto-manage-personal-notifications.md
-          - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
-  - title: Customize work tracking (Inheritance process model)  
+          - text: Create an organization 
+            url: ./accounts/create-organization.md
+          - text: "See more >"
+            url: ../security-access-billing/index.yml
+  - title: Add and manage project collections (on-premises)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About projects and scaling your organization
+            url: ./projects/about-projects.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a project collection
+            url: /azure/devops/server/admin/manage-project-collections
+          - text: "See more >"
+            url: ../security-access-billing/index.yml
+  - title: About processes (work tracking)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About process templates
+            url: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      - linkListType: concept
+        links:
+          - text: Agile process
+            url: ../boards/work-items/guidance/agile-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Basic process
+            url: ../boards/get-started/plan-track-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: CMMI process
+            url: ../boards/work-items/guidance/cmmi-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Scrum process
+            url: ../boards/work-items/guidance/scrum-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Customize work tracking (Inheritance process)  
     linkLists:
       - linkListType: overview
         links:
@@ -128,7 +148,7 @@ landingContent:
             url: ./settings/work/customize-process.md
           - text: Create and manage a process
             url: ./settings/work/manage-process.md
-  - title: Customize work tracking (On-premises XML)  
+  - title: Customize work tracking (On-premises XML process)  
     linkLists:
       - linkListType: overview
         links:
@@ -148,8 +168,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Compare process templates
-            url: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Process template files
             url: ../reference/process-templates/overview-process-template-files.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
       - linkListType: how-to-guide
@@ -162,4 +180,61 @@ landingContent:
         links:
           - text: XML element reference
             url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-
+  - title: Set alerts or notifications
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Default permissions and access for Azure Boards
+            url: ../notifications/about-notifications.md
+      - linkListType: quickstart
+        links:
+          - text: Set personal notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Set team notifications
+            url: ../notifications/howto-manage-team-notifications.md
+  - title: Configure Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with Service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a service hook with Web Hooks
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Slack
+            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Pipelines resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage agent pools
+            url: ..pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage deployment groups
+            url: ..pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage service connections
+            url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Repos resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create & manage Git repositories
+            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage Git branch policies
+            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage repository permissions
+            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add TFVC check-in policies
+            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Test resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set test retention policies
+            url: ..//test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

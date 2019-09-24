@@ -20,12 +20,14 @@
     href: ./settings/manage-authorizations.md
 - name: Teams
   href: settings/scale/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
+- name: Service hooks
+  href: ../service-hooks/toc.yml
 - name: Projects
   href: projects/toc.yml
 - name: Process
   href: ../reference/toc.yml
-- name: Notifications
-  href: ../notifications/toc.yml
 - name: DevOps settings
   href: settings/toc.yml
 - name: Reference
