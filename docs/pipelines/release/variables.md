@@ -161,7 +161,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
 | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`Automated` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
 | Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
 | Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
 | Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |
