@@ -102,7 +102,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 
 ## Example
 
-Following is an example of the YAML snippet listing the version of Azure CLI and Azure account.
+Following is an example of a YAML snippet which lists the version of Azure CLI and gets the details of the subscription.
 
 ```yaml
 - task: AzureCLI@2
