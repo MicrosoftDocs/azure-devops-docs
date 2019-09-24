@@ -21,34 +21,66 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
-- name: Manage teams
-  href: ../organizations/settings/scale/toc.yml
+- name: Add and manage teams
+  items:
+  - name: When to add a team or project
+    href: ../organizations/projects/about-projects.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: "About teams & Agile tools"
+    href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Quickstarts
+    items:
+    - name: Define area paths & assign to a team 
+      href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Define iteration (sprints) & configure team iterations 
+      href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Add a team
+      href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Add a team administrator
+      href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Add users to a project or team 
+      href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Concepts
+    items:
+  - name: "Area & iteration paths"
+    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: How-to Guides
+    items:    
+    - name: Configure team tools
+      href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Select backlog levels
+      href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Show bugs on backlogs & boards
+      href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Set working days
+      href: ../organizations/settings/set-working-days.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Set team favorites
+      href: ../project/navigation/set-favorites.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project
-    href: backlogs/office/track-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: backlogs/office/track-work.md
   - name: Bulk add or modify (Excel)
-    href: backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: backlogs/office/bulk-add-modify-work-items-excel.md
   - name: "Create backlog items & tasks (Project)"
-    href: backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: backlogs/office/create-your-backlog-tasks-using-project.md
   - name: Schedule projects using Project
-    href: backlogs/office/schedule-projects-using-microsoft-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: backlogs/office/schedule-projects-using-microsoft-project.md
   - name: Storyboard your ideas
-    href: backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: backlogs/office/storyboard-your-ideas-using-powerpoint.md
   - name: Add and share storyboard shapes
-    href: backlogs/office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: backlogs/office/add-share-storyboard-shapes.md
   - name: Troubleshooting
     items:
     - name: Office integration issues
-      href: backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      href: backlogs/office/tfs-office-integration-issues.md
     - name: "Rollup estimated & actual work using Project"
-      href: backlogs/office/rollup-estimated-and-actual-work-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      href: backlogs/office/rollup-estimated-and-actual-work-using-project.md
     - name: Resolve Excel data conflicts
-      href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
     - name: Resolve Excel data validation errors
-      href: backlogs/office/resolve-excel-data-validation-errors.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      href: backlogs/office/resolve-excel-data-validation-errors.md?
     - name: Resolve invalid links in an Excel tree list
-      href: backlogs/office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      href: backlogs/office/resolve-excel-invalid-links-tree-list.md
 - name: Integrations
   items:
   - name: Azure Boards with Slack
