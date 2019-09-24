@@ -10,7 +10,7 @@ manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: jordane
 author: jpe316
-ms.date: 6/27/2019
+ms.date: 09/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -106,7 +106,7 @@ There are two primary ways to use automation with the Azure Machine Learning ser
 
 * The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
 * The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
-   * The Python SDK includes [automated machine learning](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
+   * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
 
 The example with this document uses the Machine Learning CLI.
 
