@@ -1,7 +1,7 @@
 ---
 title: Ecosystems index
 titleSuffix: Azure DevOps Services
-description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS). Includes tutorials, references, and other documentation.
+description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS).  
 layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
@@ -16,7 +16,6 @@ featureFlags:
 - clicktale 
 monikerRange: '>= tfs-2013'
 ---
-
 
 ::: moniker range=">= azure-devops-2019"
 
