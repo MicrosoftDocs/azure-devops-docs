@@ -5,6 +5,10 @@
   href: get-started/what-is-azure-boards.md
 - name: "Backlogs, boards, & plans"
   href: backlogs/backlogs-boards-plans.md 
+- name: "Area & iteration paths"
+  href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: "About teams & Agile tools"
+  href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub
@@ -25,8 +29,6 @@
   items:
   - name: When to add a team or project
     href: ../organizations/projects/about-projects.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: "About teams & Agile tools"
-    href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Quickstarts
     items:
     - name: Define area paths & assign to a team 
@@ -39,10 +41,6 @@
       href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add users to a project or team 
       href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Concepts
-    items:
-  - name: "Area & iteration paths"
-    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: How-to Guides
     items:    
     - name: Configure team tools
