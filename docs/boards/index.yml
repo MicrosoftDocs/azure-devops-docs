@@ -149,6 +149,18 @@ landingContent:
             url: ../organizations/settings/work/inheritance-process-model.md
           - text: On-premises XML process model
             url: ../reference/on-premises-xml-process-model.md
+  - title: Manage permissions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set permissions and access for work tracking
+            url: ../organizations/security/set-permissions-access-work-tracking.md
+          - text: Set project-level permissions 
+            url: ../organizations/security/set-project-collection-level-permissions.md
+      - linkListType: reference
+        links:
+          - text: Default work tracking permissions
+            url: ../organizations/security/permissions-access-work-tracking.md
   - title: Reference
     linkLists:
       - linkListType: reference
@@ -157,4 +169,8 @@ landingContent:
             url: ./work-items/guidance/work-item-field.md
           - text: Work items quick reference
             url: ./work-items/quick-ref.md
+          - text: Azure DevOps CLI
+            url: /cli/azure/ext/azure-devops/boards
+          - text: REST API
+            url: /rest/api/azure/devops/work
 

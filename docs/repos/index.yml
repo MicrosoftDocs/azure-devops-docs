@@ -78,6 +78,18 @@ landingContent:
         links:
           - text: TFVC command reference
             url: ./tfvc/use-team-foundation-version-control-commands.md
+  - title: Configure resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create & manage Git repositories
+            url: ./git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage Git branch policies
+            url: ./git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage repository permissions
+            url: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add TFVC check-in policies
+            url: ./tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Reference
     linkLists:
       - linkListType: reference
