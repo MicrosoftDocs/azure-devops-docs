@@ -26,9 +26,11 @@ In this exercise, you are going to clone a GitHub repo into Azure DevOps, if you
 
 This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
-> 
-> **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
+> [!NOTE]
+> It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
+>
+> [!NOTE]
+> Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
 
 ## Configure Package Management
 
@@ -53,9 +55,10 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
     and press Enter 3 times to use the default id_rsa location as well as an empty pass phrase.
 
-   ![Create an SSH key](../_img/mavenpmjenkins/generate-key.png)
+    ![Create an SSH key](../_img/mavenpmjenkins/generate-key.png)
 
-   > **Note**: the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
+    > [!NOTE]
+    > the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
 
 1. Enter the following command to print out the public key in the terminal:
 
@@ -77,7 +80,8 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
     ![Add a new public key](../_img/mavenpmjenkins/add-ssh-key-to-vsts.png)
 
-   > **Note**: Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
+    > [!NOTE]
+    > Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
 
 ## Configure the Jenkins Maven installation
 

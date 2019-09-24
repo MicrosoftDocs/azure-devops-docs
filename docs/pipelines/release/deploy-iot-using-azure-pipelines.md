@@ -127,7 +127,8 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku &quot;Basic&quot; -registryLocation &quot;YOUR LOCATION&quot;</td></tr>
    </table>
 
-   **Note**: Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
+   > [!NOTE]
+   > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
    ![ARM](_img/Iot-devops-using-azure-pipelines/arm.png)
 
@@ -186,7 +187,8 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
    - device id
 
-     **Note**: Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
+     > [!NOTE]
+     > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
 
      ![Release Pipeline](_img/Iot-devops-using-azure-pipelines/release-pipeline.png)
 

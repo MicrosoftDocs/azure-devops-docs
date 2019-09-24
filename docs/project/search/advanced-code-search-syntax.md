@@ -154,7 +154,8 @@ Within a phrase:
 
 ### Search for special characters
 
-> **Note**: This feature is currently available only for Azure DevOps Services customers and not TFS.
+> [!NOTE]
+> This feature is currently available only for Azure DevOps Services customers and not TFS.
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:

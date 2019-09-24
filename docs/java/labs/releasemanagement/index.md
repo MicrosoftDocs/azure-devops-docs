@@ -103,7 +103,8 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![Replace Tokens task](../_img/releasemanagement/replace-tokens.png)
 
-    > **Note**: There are 2 tokenized files that the release will take advantage of, both of which live in the root of the MyShuttle2 repo. The build process published these files so that they are available as outputs of the build, ready for use in the Release process. `docker-compose.release.yml` contains tokens for the host port, container image names and tags.  `testng.release.xml` contains tokens for the baseUrl to test. These tokenized files make it possible to "Build Once, Deploy Many Times" since they separate the stage configuration and the binaries from the build. The Replace Tokens task inject release variables (which you will define shortly) into the tokens in the files.
+    > [!NOTE]
+    > There are 2 tokenized files that the release will take advantage of, both of which live in the root of the MyShuttle2 repo. The build process published these files so that they are available as outputs of the build, ready for use in the Release process. `docker-compose.release.yml` contains tokens for the host port, container image names and tags.  `testng.release.xml` contains tokens for the baseUrl to test. These tokenized files make it possible to "Build Once, Deploy Many Times" since they separate the stage configuration and the binaries from the build. The Replace Tokens task inject release variables (which you will define shortly) into the tokens in the files.
 
 1. Click the "+" icon on the job to add a new task. Type "docker" in the search box. Add a "Docker Compose" task.
 
@@ -120,7 +121,8 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![Run Services task](../_img/releasemanagement/run-services.png)
 
-    > **Note**: This task will start the 2 container apps in the docker engine of the host VM.
+    > [!NOTE]
+    > This task will start the 2 container apps in the docker engine of the host VM.
 
 1. Click the "+" icon on the job to add a new task. Type "command" in the search box. Add a "Command Line" task.
 
@@ -134,7 +136,8 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![Run Java task](../_img/releasemanagement/run-java.png)
 
-    > **Note**: This command invokes Java to run testNG tests. The run uses the `testng.release.xml` file which at this point in the release contains the correct `baseUrl` for the tests. If the tests fail, the release will fail.
+    > [!NOTE]
+    > This command invokes Java to run testNG tests. The run uses the `testng.release.xml` file which at this point in the release contains the correct `baseUrl` for the tests. If the tests fail, the release will fail.
 
 1. Click the "+" icon on the job to add a new task. Type "publish test" in the search box. Add a "Publish Test Results" task.
 
@@ -147,7 +150,8 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![Publish Test Results task](../_img/releasemanagement/publish-testresults.png)
 
-    > **Note**: This command grabs the JUnit test results file from the test run and publishes them to the release so that the test results are available in the Release summary.
+    > [!NOTE]
+    > This command grabs the JUnit test results file from the test run and publishes them to the release so that the test results are available in the Release summary.
 
 1. You should have 4 tasks in this order:
 
@@ -165,7 +169,8 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![Variables for the release](../_img/releasemanagement/release-vars.png)
 
-    > **Note**: You will need to use your azure container registry (e.g. `cdjavadev.azurecr.io`) in the image variables. Instead of using the `:latest` tag for the images, we explicitly use the build number, which was used to tag the images during the build. This allows us to "roll-forward" to previous tags for the images if we want to revert a release. The scope setting allows us to make variables that live at a release level (Release) or are stage-specific (like AzureVM). If you clone the stage to repeat this release in additional stages, you can just specify new values for the variables for those stages.
+    > [!NOTE]
+    > You will need to use your azure container registry (e.g. `cdjavadev.azurecr.io`) in the image variables. Instead of using the `:latest` tag for the images, we explicitly use the build number, which was used to tag the images during the build. This allows us to "roll-forward" to previous tags for the images if we want to revert a release. The scope setting allows us to make variables that live at a release level (Release) or are stage-specific (like AzureVM). If you clone the stage to repeat this release in additional stages, you can just specify new values for the variables for those stages.
 
 1. Click the Save button in the toolbar to save the pipeline.
 
@@ -189,4 +194,5 @@ In this task you will create a release pipeline with a single stage called Azure
 
     ![The site is running](../_img/releasemanagement/site-running.png)
 
-    > **Note**: You can log in by entering username `fred` and password `fredpassword`.
+    > [!NOTE]
+    > You can log in by entering username `fred` and password `fredpassword`.
