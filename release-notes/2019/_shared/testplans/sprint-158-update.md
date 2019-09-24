@@ -4,4 +4,4 @@ ms.topic: include
 
 ### New Test Plans page
 
-Most of the planning, authoring, executing and tracking capabilities are now available in the new Test Plans page. Hence, we are enabling it for all Test Plans users to experience the same and provide us with feedback. Remaining few capabilities to reach parity with the prior Test Plans page will be enabled on the new page in coming sprints. If necessary, users can still enable the prior Test Plans page. Read more [here](https://docs.microsoft.com/en-us/azure/devops/test/new-test-plans-page).
+Most of the planning, authoring, executing and tracking capabilities are now available in the new Test Plans page. Hence, we are enabling it for all Test Plans users so they can provide us with feedback. The remaining few capabilities require for us to reach parity with the prior Test Plans page will be enabled in the next few sprints. If necessary, users can disable the Test Plans page on the Preview Features menu. Read more [here](https://docs.microsoft.com/en-us/azure/devops/test/new-test-plans-page).
