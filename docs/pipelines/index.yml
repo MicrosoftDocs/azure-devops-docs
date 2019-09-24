@@ -46,7 +46,7 @@ landingContent:
           - text: Build an image
             url: ./ecosystems/containers/build-image.md
           - text: Build, test, & deploy .NET Core apps
-            url: .//ecosystems/dotnet-core.md
+            url: ./ecosystems/dotnet-core.md
           - text: Run pipelines with Anaconda environments 
             url: ./ecosystems/anaconda.md
           - text: Build, test, & deploy Android apps
@@ -63,6 +63,26 @@ landingContent:
             url: ./ecosystems/anaconda.md
           - text: "See more >"
             url: ./ecosystems/index.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Agents
+            url: ./agents/agents.md
+          - text: Agent pools
+            url: ./agents/pools-queues.md
+          - text: Conditions
+            url: ./process/conditions.md
+          - text: Expressions
+            url: ./process/expressions.md
+          - text: Jobs
+            url: ./process/phases.md
+          - text: Service connections
+            url: ./library/service-endpoints.md
+          - text: Stages
+            url: ./process/stages.md
+          - text: Tasks
+            url: ./process/tasks.md
   - title: Build with any repo
     linkLists:
       - linkListType: quickstart
@@ -127,26 +147,6 @@ landingContent:
             url: ./integrations/microsoft-teams.md
           - text: Integrate with service hooks
             url: ../service-hooks/overview.md
-  - title: Key concepts
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Agents
-            url: ./agents/agents.md
-          - text: Agent pools
-            url: ./agents/pools-queues.md
-          - text: Conditions
-            url: ./process/conditions.md
-          - text: Expressions
-            url: ./process/expressions.md
-          - text: Jobs
-            url: ./process/phases.md
-          - text: Service connections
-            url: ./library/service-endpoints.md
-          - text: Stages
-            url: ./process/stages.md
-          - text: Tasks
-            url: ./process/tasks.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
