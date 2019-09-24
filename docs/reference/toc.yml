@@ -9,9 +9,9 @@
 - name: Hosted XML Process Model 
   href: ../organizations/settings/work/hosted/toc.yml
 - name: Process templates
-  href: process-templates/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: process-templates/toc.yml
 - name: Microsoft Project Mapping file (Deprecated)
-  href: mapping/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
   items:
   - name: Configure features after an upgrade
