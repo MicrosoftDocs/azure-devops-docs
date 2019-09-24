@@ -1643,8 +1643,9 @@ steps:
 ```
 
 > [!NOTE]
-> If you want to modify the current repository using git operations and/or load git submodules, make sure to give the proper permissions to user in the agent in the repository security.
-> "Project Collection Build Service Accounts" if you are running the agent in Local Service Account
+> If you want to modify the current repository using git operations and/or load git submodules, 
+> make sure to give the proper permissions to the "Project Collection Build Service Accounts" user
+> if you are running the agent in Local Service Account.
 
 ```yaml
 steps:
