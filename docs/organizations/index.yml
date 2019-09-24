@@ -74,20 +74,6 @@ landingContent:
             url: ./projects/create-project.md
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
-  - title: Add and manage public projects
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: What is a public project?
-            url: ./public/about-public-projects.md
-          - text: Private-to-public migration checklist
-            url: ./public/migration-checklist.md
-      - linkListType: quickstart
-        links:
-          - text: Create a public project
-            url: ./public/create-public-project.md
-          - text: Manage project visibility
-            url: ./public/make-project-public.md
   - title: Add and manage organizations (cloud)
     linkLists:
       - linkListType: overview
@@ -102,34 +88,6 @@ landingContent:
             url: ./accounts/create-organization.md
           - text: "See more >"
             url: ../security-access-billing/index.yml
-  - title: Add and manage project collections (on-premises)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: About projects and scaling your organization
-            url: ./projects/about-projects.md
-      - linkListType: how-to-guide
-        links:
-          - text: Create a project collection
-            url: /azure/devops/server/admin/manage-project-collections
-          - text: "See more >"
-            url: ../security-access-billing/index.yml
-  - title: About processes (work tracking)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: About process templates
-            url: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-      - linkListType: concept
-        links:
-          - text: Agile process
-            url: ../boards/work-items/guidance/agile-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Basic process
-            url: ../boards/get-started/plan-track-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: CMMI process
-            url: ../boards/work-items/guidance/cmmi-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Scrum process
-            url: ../boards/work-items/guidance/scrum-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Customize work tracking (Inheritance process)  
     linkLists:
       - linkListType: overview
@@ -168,6 +126,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: About processes and process templates
+            url: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Process template files
             url: ../reference/process-templates/overview-process-template-files.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
       - linkListType: how-to-guide

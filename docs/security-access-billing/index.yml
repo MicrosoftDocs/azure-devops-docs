@@ -41,13 +41,12 @@ landingContent:
             url: ../organizations/security/set-git-tfvc-repository-permissions.md
           - text: Add project or collection administrators
             url: ../organizations/security/set-project-collection-level-permissions.md
-
   - title: Manage access to your organization (cloud)
     linkLists:
       - linkListType: overview
         links:
           - text: About organizations
-            url: ./accounts/organization-management.md
+            url: ../organizations/accounts/organization-management.md
       - linkListType: quickstart
         links:
           - text: Add users to an organization (cloud)
