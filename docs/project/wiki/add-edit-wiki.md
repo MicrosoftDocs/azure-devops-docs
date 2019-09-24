@@ -12,11 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-<<<<<<< HEAD
 ms.date: 09/23/2019 
-=======
-ms.date: 09/18/2019  
->>>>>>> e7c8dbebda590f6cff321130505613d91074626a
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -125,7 +121,7 @@ az devops wiki page create --path
                            [--project]
 ```
 
-#### Parameters
+### Parameters
 
 - **--path**: Required. Path of the wiki page.  
 - **--wiki**: Required. Name or ID of the wiki.
@@ -138,7 +134,7 @@ accepted values: ascii, utf-16be, utf-16le, utf-8
 -  **--org --organization**: Required if not configured as default or picked up via git config. Example: https://dev.azure.com/MyOrganizationName/. Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL.  
 -  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. 
 
-#### Examples
+### Examples
 
 Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
@@ -184,7 +180,7 @@ To delete a page, open the context menu from the tree or the one inside the page
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-## Edit wiki page
+### Edit wiki page
 
 To edit a wiki page, enter the `az devops wiki page update` command. 
 
@@ -230,7 +226,7 @@ Update content of page with path 'my page' in a wiki with content from a file.
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt            --encoding utf-8 --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
-## Delete wiki page
+### Delete wiki page
 
 To delete a wiki page, enter the `az devops wiki page delete` command. 
 
@@ -252,8 +248,8 @@ az devops wiki page delete --path
 - **--wiki**: Required. Name or ID of the wiki.
 - **--comment**: Optional. Comment in the commit message of delete operation.
 - **--detect**: Optional. Automatically detect organization.
-- **--org --organization**: Optional. Azure DevOps organization URL. 
-- **--project -p**: Optional. Name or ID of the project.
+- **--org --organization**: Optional. Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: https://dev.azure.com/MyOrganizationName/.
+- **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **--yes -y**: Optional. Do not prompt for confirmation.
 
 [!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
@@ -299,7 +295,8 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 * Change the parent-child relationship of a page
 * Change the order of the page within the hierarchy
 
-Moving a page in the hierarchy doesn't break links to it from other pages, as the page ID is added to the URL. Since the page ID is part of the URL, this ensures a permanent link that remains in tact as the wiki changes over time.
+> [!NOTE]  
+> Moving a page in the hierarchy may break links to it from other pages. You can always fix the links manually after you move. Reordering a page within a hierarchy has no impact on page links.
 
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
