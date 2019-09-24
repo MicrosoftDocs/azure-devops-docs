@@ -1,5 +1,3 @@
-- name: DevOps settings
-  href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Build and release
   items:
   - name: Agent pools & queues

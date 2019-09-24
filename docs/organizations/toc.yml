@@ -22,9 +22,11 @@
   href: settings/scale/toc.yml
 - name: Projects
   href: projects/toc.yml
+- name: Process
+  href: ../reference/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Notifications
-  href: ../notifications/toc.yml
-- name: Additional settings
+  href: ../notifications/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: DevOps settings
   href: settings/toc.yml
 - name: Reference
   items:
@@ -34,30 +36,44 @@
   items:
   - name: Area and iteration paths
     href: /rest/api/vsts/wit/classification%20nodes
-  - name: Teams
-    href: /rest/api/azure/devops/core/teams
+  - name: Notifications
+    href: /rest/api/azure/devops/notification
+  - name: Processes
+    href: /rest/api/azure/devops/processes/processes
+  - name: Process Templates
+    href: /rest/api/azure/devops/processadmin/processes
   - name: Projects
     href: /rest/api/azure/devops/core/projects
   - name: Teams
     href: /rest/api/vsts/core/teams
-  - name: Processes
-    href: /rest/api/vsts/processes/processes
-  - name: Notifications
-    href: /rest/api/azure/devops/notification
+  - name: Work Item Types
+    href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
+  - name: API SDK reference (Deprecated)
+    items:
+    - name: IProcessTemplates.AddUpdateTemplate
+      href: ../reference/api-ref/iprocess-templates-add-update-template.md
+    - name: WorkItem.Open method
+      href: ../reference/api-ref/open.md
+    - name: WorkItem.PartialOpen method
+      href: ../reference/api-ref/partialopen.md
 - name: Resources
   items:
-  - name: Add an alternate account to your Visual Studio subscription
-    href: /visualstudio/subscriptions/vs-alternate-identity
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: "Workflow states & categories"
+    href: /azure/devops/boards/work-items/workflow-and-state-categories
+  - name: Add a custom control to a form
+    href: /azure/devops/extend/develop/custom-control
+  - name: Permissions, Security, & Identity
+    href: /azure/devops/organizations/security/index
+  - name: Naming restrictions
+    href: /azure/devops/organizations/settings/naming-restrictions 
   - name: Marketplace & extensibility  
     href: /azure/devops/marketplace-extensibility/index
   - name: Git
     href: /azure/devops/repos/git/index
-  - name: Work items
-    href: /azure/devops/boards/work-items/index
   - name: Public projects
-    href: /azure/devops/organizations/public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-  - name: Process customization
-    href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: /azure/devops/organizations/public/index.md
   - name: Service hooks
     href: /azure/devops/service-hooks/index
   - name: Web portal navigation
