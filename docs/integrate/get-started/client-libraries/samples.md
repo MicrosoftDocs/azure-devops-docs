@@ -123,7 +123,7 @@ public static void SampleREST()
 }
 ```
 
-#### Example 2: Using SOAP-based client
+#### Example 2: Using SOAP-based client (.NET Framework only)
 
 ```cs
 // https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/
@@ -171,7 +171,7 @@ public static void SampleSOAP()
 }
 ```
 
-#### Example 3: Calling both REST and SOAP-based APIs using same TfsTeamProjectCollection instance
+#### Example 3: Calling both REST and SOAP-based APIs using same TfsTeamProjectCollection instance (.NET Framework only)
 ```cs
 // https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/
 using Microsoft.TeamFoundation.Client;
@@ -216,7 +216,7 @@ public static void MixedSample()
 public static void AADRestSample()
 {
     // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential());
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential(userName, password));
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
 	List<QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
@@ -235,7 +235,7 @@ public static void PersonalAccessTokenRestSample()
 }
 ```
 
-##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for REST services
+##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for REST services (.NET Framework only)
 ```cs
 public static void MicrosoftAccountRestSample()
 {
@@ -262,7 +262,7 @@ public static void OAuthSample()
 
 ### Creating a TfsTeamProjectCollection instance to use SOAP object model
 
-##### Azure Active Directory authentication for SOAP services
+##### Azure Active Directory authentication for SOAP services (.NET Framework only)
 ```cs
 public static void AADSoapSample()
 {
@@ -275,12 +275,12 @@ public static void AADSoapSample()
 }
 ```
 
-##### Basic authentication for SOAP services
+##### Basic authentication for SOAP services (.NET Framework only)
 ```cs
 public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
-    NetworkCredential netCred = new NetworkCredential(basicAuthUsername, password);
+    NetworkCredential netCred = new NetworkCredential(username, password);
     WindowsCredential windowsCred = new WindowsCredential(netCred);
     VssClientCredentials vssCredentials = new VssClientCredentials(windowsCred);
     using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
@@ -291,12 +291,12 @@ public static void BasicAuthSoapSample()
 }
 ```
 
-##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
+##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services (.NET Framework only)
 ```cs
 public static void MicrosoftAccountSample()
 {
 	// authenticate using Visual Studio sign-in prompt
-	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri2), new TfsClientCredentials()))
+	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
 	{
 		tpc.Authenticate();
 		Console.WriteLine(tpc.InstanceId);
@@ -336,7 +336,7 @@ public static void WindowsAuthRestSample()
 
 ### Creating a TfsTeamProjectCollection instance to use SOAP object model
 
-##### Basic authentication for SOAP services
+##### Basic authentication for SOAP services (.NET Framework only)
 ```cs
 public static void BasicAuthSoapSample()
 {
@@ -352,7 +352,7 @@ public static void BasicAuthSoapSample()
 }
 ```
 
-##### Windows authentication for SOAP services
+##### Windows authentication for SOAP services (.NET Framework only)
 ```cs
 public static void WindowsAuthenticationSoapSample()
 {
