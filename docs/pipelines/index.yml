@@ -59,8 +59,6 @@ landingContent:
             url: ./ecosystems/python.md
           - text: Build and deploy to a PHP web app on Linux 
             url: ./ecosystems/python-webapp.md
-          - text: Run pipelines with Anaconda environments 
-            url: ./ecosystems/anaconda.md
           - text: "See more >"
             url: ./ecosystems/index.md
   - title: Key concepts
@@ -147,6 +145,18 @@ landingContent:
             url: ./integrations/microsoft-teams.md
           - text: Integrate with service hooks
             url: ../service-hooks/overview.md
+  - title: Configure resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage agent pools
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage deployment groups
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage service connections
+            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Reference guidance
     linkLists:
       - linkListType: reference

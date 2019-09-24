@@ -23,6 +23,10 @@ landingContent:
   # Card (optional)
   - title: About Azure Test Plans
     linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Test Plans?
+            url: ../test/overview.md
       - linkListType: video
         links:
           - text: Capturing actionable feedback with manual testing
@@ -31,11 +35,6 @@ landingContent:
             url: https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player
           - text: Test & Feedback
             url: https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure Test Plans?
-            url: ../test/overview.md
   - title: Run manual tests
     linkLists:
       - linkListType: quickstart
@@ -100,4 +99,10 @@ landingContent:
             url: ../test/perform-exploratory-tests.md
           - text: Test in Connected mode
             url: ../test/connected-mode-exploratory-testing.md
+  - title: Configure Test resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set test retention policies
+            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
 

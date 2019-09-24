@@ -19,6 +19,10 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= azure-devops-2019"
 
+# Azure Pipelines ecosystem support
+
+Build and deploy your apps. Find guidance based on your language and platform. 
+
 ## Build your app
 
 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
