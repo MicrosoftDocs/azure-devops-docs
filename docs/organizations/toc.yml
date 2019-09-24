@@ -3,7 +3,7 @@
   expanded: false
   href: index.yml
 - name: About settings
-  href: settings/about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  href: ./settings/about-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: User preferences
@@ -17,15 +17,15 @@
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     name: Manage authorizations
-    href: settings/manage-authorizations.md
+    href: ./settings/manage-authorizations.md
 - name: Teams
   href: settings/scale/toc.yml
 - name: Projects
   href: projects/toc.yml
 - name: Process
-  href: ../reference/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../reference/toc.yml
 - name: Notifications
-  href: ../notifications/toc.yml?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../notifications/toc.yml
 - name: DevOps settings
   href: settings/toc.yml
 - name: Reference

@@ -25,7 +25,6 @@ landingContent:
         links:
           - text: About settings
             url: ./settings/about-settings.md
-
     linkLists:
       - linkListType: quickstart
         links:
@@ -163,52 +162,4 @@ landingContent:
         links:
           - text: XML element reference
             url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-
-
-
-
-
-
-  - title: Add a custom security group
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Add users to a team or project
-            url: ../organizations/security/add-users-team-project.md
-  - title: Manage permissions
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: View permissions
-            url: ../organizations/security/view-permissions.md
-          - text: Change individual permissions
-            url: ../organizations/security/change-individual-permissions.md
-  - title: Change access levels
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Change access levels (cloud)
-            url: ../organizations/accounts/add-organization-users.md
-          - text: Change access levels (on-premises)
-            url: ../organizations/security/change-access-levels.md
-  - title: Manage billing
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Buy Basic access
-            url: ../organizations/billing/buy-basic-access-add-users.md
-          - text: Set up billing for your organization
-            url: ../organizations/billing/set-up-billing-for-your-organization-vs.md
-          - text: Buy CI/CD for Azure DevOps
-            url: ../organizations/billing/buy-more-build-vs.md
-          - text: Try Azure Test Plans for free
-            url: ../organizations/billing/try-additional-features-vs.md
-  - title: Reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Permissions lookup guide
-            url: ../organizations/security/permissions-lookup-guide.md
-          - text: Permissions and groups
-            url: ../organizations/security/permissions.md
 
