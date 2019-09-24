@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/19/2019
+ms.date: 09/24/2019
 monikerRange: '>= tfs-2013'
 ---
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/19/2019
+ms.date: 09/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -72,6 +72,38 @@ A: Microsoft ended support for purchasing 3rd party paid Azure DevOps extensions
 
 A: As of June 1st, 2019, on-premises Azure Artifacts (for example, Package Management) is now included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
 
+## Multi-org billing
+
+Multi-org billing allows you to pay once per user, for organizations under the same Azure billing subscription.
+
+### Q: Does multi-org billing make sense for all customers?
+
+A: No. Each Azure DevOps organization comes with 5 free Basic users. Under multi-org billing, the 5 free Basic users are applied to the billing subscription, rather than the organization. If all or most of your users use only one organization, then the 5 free users per organization is more cost effective. If many of the same users need to access multiple organizations, then multi-org billing is likely the best option. 
+ 
+### Q: How can I turn on multi-org billing?
+
+A: Multi-org billing is available in private preview. For more details on joining the preview and the timeline for general availability, see the Azure DevOps Roadmap item.  
+ 
+### Q: Can I use different Azure subscriptions for billing, but still pay only once per user?
+
+A: No. Multi-org billing groups the per user charges at an Azure subscription level, so only organizations that share a common Azure subscription will be billed together. 
+ 
+### Q: Can I still see multiple line items for each of my organizations on my detailed Azure bill?
+
+A: Yes. First, all organizations under the same billing Azure subscription are ordered. The ordering is consistent month to month, but it isn't configurable. Second, the 5 free Basic users are applied to the first organization in the list, and any remaining value is carried over to subsequent organizations. Third, users are billed in the first organization they can access and not again in any subsequent organizations. Finally, based on these rules, if there are any charges for an organization, then there will be a separate line item for that organization on the detailed Azure bill. 
+ 
+### Q: Can I tell what access level a user has assigned in a different organization?
+
+A: No. User assignments are still made in each organization independently, and an administrator in one organization can’t tell whether a user they are adding already has an access level assigned in another organization.  
+ 
+### Q: What if a user is assigned Basic in one organization and Basic + Test Plans in another?
+
+A: They are billed for both Basic and Basic + Test Plans. This is a current limitation of multi-org billing. We recommend assigning users with group rules and setting up the same group rules in each organization to ensure consistent access level assignment. 
+ 
+### Q: How can I get a list of all the users I’m paying for under multi-org billing?
+
+A: Currently, the only way to pull a full list of all the users you’re paying for is to export a list of users from each of your organization settings > users and then to remove duplicates based on email address. When multi-org billing goes into GA (general availability), we'll have a way to export the list of all users under an Azure subscription. 
+ 
 ## General billing
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
