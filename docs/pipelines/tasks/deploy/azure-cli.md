@@ -27,8 +27,8 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 ### What's new in Version 2.0
 
 - Supports running PowerShell and PowerShell Core script
-- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or more
-- Powershell script works only with Windows agent, make sure the agent has PowerShell version 5 or below
+- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
+- Powershell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
 
 ## Prerequisites
 
