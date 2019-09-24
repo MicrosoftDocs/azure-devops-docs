@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2019
+ms.date: 09/18/2019
 ---
 
 # Use templates to add and update work items 
@@ -25,7 +25,6 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md)
-
 
 
 ## Prerequisites  
@@ -48,6 +47,9 @@ For example usage of work item templates, see [Sample work item templates](../wo
 ::: moniker-end
 
 
+> [!NOTE]  
+> If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
+
 <a id="capture"> </a> 
 
 ## Capture a work item as a template
@@ -55,6 +57,7 @@ For example usage of work item templates, see [Sample work item templates](../wo
 The steps to capture a work item differ based on the platform, version, and client you use.  
 
 #### [Browser](#tab/browser/)
+
 <a id="team-services-capture" /> 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -71,11 +74,11 @@ The steps to capture a work item differ based on the platform, version, and clie
     > [!div class="mx-imgBorder"]  
     > ![Capture template dialog](_img/templates/capture-template-vsts-s136.png) 
 
-3. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
+3. Once you've saved the template, choose **Copy link** to capture the URL for the template. 
 
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
+4. You can paste the URL link into a browser to create a work item, or provide it to others for their use to add work items. For example, you can add it as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md), a [dashboard via a markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), or other shared network resource.
 
-    You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink.  
+	Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
 ::: moniker-end  
 
@@ -138,14 +141,12 @@ If you connect to an on-premises TFS and primarily create work items working in 
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-capture" />
 
 If you primarily work in Visual Studio or Team Explorer, and want to create work items from templates that you can access from the Work Items page, you can create work item template files (extension .wt).
 
 You create these files using Work Item Templates, a power tool for Visual Studio, which you can download from [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
-
-> [!NOTE]  
-> If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
 
 1.  Open or run a query that lists the work item whose fields you want to capture.
 
@@ -174,9 +175,7 @@ The main method for adding a work item using a template is to open the template 
 
 #### [Browser](#tab/browser/)
 
-1. Open settings for a team.  
-
-    Choose **Project Settings**.
+1. Go to **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
@@ -274,18 +273,19 @@ To learn more about the markdown widget see [Add Markdown to a dashboard, Markdo
 
 <a id="apply"> </a>
 
-## Apply a template to existing work item(s)  
+## Apply a template to new or existing work item(s)  
 
 You can apply a template to a single work item or perform a bulk update of several work items.  
 
 <a id="team-services-apply" />
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= azure-devops-2019"  
 
 ### Apply a template within a work item form 
 
-1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
+1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
     > [!div class="mx-imgBorder"]
     > ![Apply a template to an existing work item within the form](_img/templates/apply-template-vsts-s136.png) 
@@ -600,7 +600,7 @@ You can save the URL as a text file or add the URL to a [dashboard](#markdown-wi
 
 ### Q: How do I set a default template for a team? 
 
-**A:** The feature to set a default template for a team isn't a supported at this time. 
+**A:** The feature to set a default template for a team isn't a supported feature at this time. 
 
 ::: moniker range="<= tfs-2015"
 From the Work Item Templates tool, you can set a default for each work item type. However, that default is set only for you and available only when working through Team Explorer. Open the template context menu and select **Set as default**. 

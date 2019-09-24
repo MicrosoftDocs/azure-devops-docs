@@ -13,6 +13,7 @@ https://login.microsoftonline.com
 https://app.vssps.visualstudio.com 
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
+https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
 ```

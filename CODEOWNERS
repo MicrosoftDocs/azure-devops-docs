@@ -1,0 +1,22 @@
+
+*  @MicrosoftDocs/azure-devops-content-team
+
+/docs/pipelines/**  @MicrosoftDocs/azure-devops-pipelines-content-approvers 
+/docs/repos/**  @MicrosoftDocs/azure-devops-repos-content-approvers
+/docs/integrate/**  @MicrosoftDocs/azure-devops-integrate-approvers
+/docs/marketplace/**  @MicrosoftDocs/azure-devops-integrate-approvers
+/docs/report/**  @MicrosoftDocs/azure-devops-report-content-approvers
+/docs/service-hooks/**  @MicrosoftDocs/azure-devops-integrate-approvers
+/docs/boards/**  @MicrosoftDocs/azure-devops-boards-content-approvers
+/docs/project/**  @MicrosoftDocs/azure-devops-repos-content-approvers
+/docs/deploy-azure/**  @MicrosoftDocs/azure-devops-repos-content-approvers
+/docs/notifications/**  @MicrosoftDocs/azure-devops-collaborate-content-approvers
+/docs/organizations/accounts/**  @MicrosoftDocs/azure-devops-setup-admin-approvers
+/docs/organizations/settings/**  @MicrosoftDocs/azure-devops-setup-admin-approvers
+/docs/organizations/billing/**  @MicrosoftDocs/azure-devops-setup-admin-approvers
+/release-notes/**  @MicrosoftDocs/azure-devops-release-notes-approvers
+/docs/organizations/security/**  @MicrosoftDocs/azure-devops-setup-admin-approvers 
+/.openpublishing.publish.config.json  @MicrosoftDocs/azure-devops-content-release-managers
+/docs/docfx.json  @MicrosoftDocs/azure-devops-content-release-managers
+/docs/test/**  @MicrosoftDocs/azure-devops-test-docs-approvers
+/docs/artifacts/**  @MicrosoftDocs/azure-devops-artifacts-content-approvers

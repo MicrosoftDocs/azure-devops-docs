@@ -36,7 +36,8 @@ Today we turned on email alerts for Git projects. You can now create email alert
 
 Finally, we made a few small changes to how your product backlog works.  First, the hub has been renamed to just "Backlogs", and your actual product backlog has been named according to the process template you're using (Agile = "Stories", Scrum = "Backlog Items", CMMI = "Requirements").  We also updated the logic of the product backlog to now __show all items until they reach the completed/done state__. Previously, when an item on your backlog was assigned to a sprint and moved to an in progress state, it would disappear from the backlog.  This has been changed so that items only disappear from the backlog after being marked as completed/done.
 
-**Note:** This could result in some items re-appearing on your backlog that were never marked as completed/done.  
+> [!NOTE]
+> This could result in some items re-appearing on your backlog that were never marked as completed/done.  
 
 ![Backlog with in progress items](_img/5_28_02.png)
 

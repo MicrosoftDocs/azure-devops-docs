@@ -57,29 +57,3 @@ That’s all the news for today. Thank you to each and every one of you that has
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 06/20/2019
+ms.date: 09/19/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -264,13 +264,13 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer`.  
+To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer -g`.  
 
 <br/>
 
 Within a Markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
-Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
+Set a language identifier for the code block to enable syntax highlighting for any of the supported languages in [highlightjs](https://github.com/highlightjs/highlight.js/tree/9.10.0/src/languages), version v9.10.0.
 
 <pre>
 ``` language

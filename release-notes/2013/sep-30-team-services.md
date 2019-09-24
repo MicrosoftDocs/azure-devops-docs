@@ -46,7 +46,3 @@ That’s it for this sprint 54. As always let us know how we're doing on [User V
 Thanks,
 
 Jamie Cool
-
-
-
-

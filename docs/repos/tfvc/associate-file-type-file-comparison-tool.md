@@ -37,8 +37,9 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 3.  In the **Extension** box, specify the extension (for example, .cpp) that you want to associate with your tool.
 
-	>**Tip:**  
-	>Specify `.*` if you want to associate all types of files with your tool.
+    > [!TIP]
+    > Specify `.*` if you want to associate all types of files with your tool.
+
 4.  In the **Operation** list, choose **Compare**.  
 5.  In the **Command** box, either type the path and name of your tool, or choose the ellipses (**...**) to locate and specify it. The result should resemble the following example:
 
@@ -51,8 +52,8 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     -   **%6**: Label ("friendly name") of the source file.  
     -   **%7**: Label ("friendly name") of the target file.
 
-    >**Tip:**  
-    >For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](http://go.microsoft.com/fwlink/?LinkID=200171).
+    > [!TIP]
+    > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](http://go.microsoft.com/fwlink/?LinkID=200171).
 
     **Use white space to delimit the arguments.**  
     For example, you might specify the following syntax to compare two files:
@@ -71,8 +72,8 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
         %1 /title1=%6 %2 /title2=%7
 
-	>**Note:**  
-	>This capability is not related to version-control labels, which you apply to specific versions of items in version control, as described in [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+    > [!NOTE]
+    > This capability is not related to version-control labels, which you apply to specific versions of items in version control, as described in [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
 7.  In the **Configure Tool** dialog box, choose **OK**.  
 8.  If you want to specify more types of files, repeat steps 4-9.  
