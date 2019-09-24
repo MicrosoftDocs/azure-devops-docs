@@ -158,9 +158,10 @@ The NuGetAuthenticate task is the recommended way to use authenticated feeds wit
 This task must run before you use a NuGet tool to restore or push packages to an authenticated package source such as Azure Artifacts. There are no other ordering requirements.
 For example, this task can safely run either before or after a NuGet or .NET Core tool installer task.
 
-### How do I configure a NuGet package source that uses ApiKey ("NuGet Api Keys")?
+### How do I configure a NuGet package source that uses ApiKey ("NuGet API keys"), such as nuget.org?
 
-Due to limitations in NuGet, this task cannot be used to set up a NuGet service connection that uses a NuGet API Key.
+Some package sources such as nuget.org use API keys for authentication when pushing packages, rather than username/password credentials. Due to limitations in NuGet, this task cannot be used to set up a NuGet service connection that uses an API key.  
+
 Instead:
 1. Configure a [secret variable](~/pipelines/process/variables.md#secret-variables) containing the ApiKey
 2. Perform the package push using `nuget push -ApiKey $(myNuGetApiKey)` or `dotnet nuget push --api-key $(myNuGetApiKey)`, assuming you named the variable `myNuGetApiKey`
