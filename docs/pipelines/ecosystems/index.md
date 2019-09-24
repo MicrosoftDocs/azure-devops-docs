@@ -14,7 +14,7 @@ author: steved0x
 ms.date: 05/6/2019
 featureFlags:
 - clicktale 
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -323,7 +323,7 @@ monikerRange: '>= tfs-2013'
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Kubernetes logo" src="_img/index/logo_kubernetes.svg">
+                                        <img alt="Kubernetes logo" src="../_img/index/logo_kubernetes.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
