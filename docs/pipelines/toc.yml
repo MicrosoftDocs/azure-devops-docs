@@ -26,9 +26,12 @@
     displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
-    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
+    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers 
 - name: Ecosystems
   items: 
+  - name: Ecosystems index
+    href: ecosystems/index.md
+    displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild

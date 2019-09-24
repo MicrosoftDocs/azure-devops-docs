@@ -67,16 +67,12 @@ landingContent:
         links:
           - text: Agents
             url: ./agents/agents.md
-          - text: Agent pools
-            url: ./agents/pools-queues.md
           - text: Conditions
             url: ./process/conditions.md
           - text: Expressions
             url: ./process/expressions.md
           - text: Jobs
             url: ./process/phases.md
-          - text: Service connections
-            url: ./library/service-endpoints.md
           - text: Stages
             url: ./process/stages.md
           - text: Tasks
@@ -152,11 +148,11 @@ landingContent:
           - text: Create and manage agent pools
             url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage deployment groups
-            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Set build and release retention policies
-            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./release/deployment-groups/.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage service connections
             url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Reference guidance
     linkLists:
       - linkListType: reference
