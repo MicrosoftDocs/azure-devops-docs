@@ -18,6 +18,7 @@ To open the wiki, enter the `az devops wiki show` command.
 az devops wiki show --message
                            [--wiki]
                            [--open]
+```
 
 [!INCLUDE [note-cli-not-supported](../../../_shared/note-cli-not-supported.md)]
 
