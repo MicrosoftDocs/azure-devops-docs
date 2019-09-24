@@ -22,7 +22,7 @@ In this article, find answers to frequently asked questions about billing for yo
 
 Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and for detailed pricing estimates, see the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
-## User billing
+## User assignment-based billing
 
 For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
@@ -58,7 +58,7 @@ A: If you have users who aren’t actively using Azure DevOps, you can stop payi
 
 ### Q: How can I pay only once per user across multiple organizations?
 
-A: Multi-org billing/licensing is available in private preview. For more details on joining the preview and the timeline for general availability, see the [Azure DevOps Roadmap item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1366420).
+A: Multi-org billing/licensing is available in private preview. For more details see [multi-org billing](#multi-org-billing).
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
@@ -82,7 +82,7 @@ A: No. Each Azure DevOps organization comes with 5 free Basic users. Under multi
  
 ### Q: How can I turn on multi-org billing?
 
-A: Multi-org billing is available in private preview. For more details on joining the preview and the timeline for general availability, see the Azure DevOps Roadmap item.  
+A: Multi-org billing is available in private preview. For more details on joining the preview and the timeline for general availability, see the [Azure DevOps Roadmap item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1366420).  
  
 ### Q: Can I use different Azure subscriptions for billing, but still pay only once per user?
 
