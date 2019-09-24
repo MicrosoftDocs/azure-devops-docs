@@ -401,8 +401,8 @@ to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
 **[this GitHub repository](https://github.com/Microsoft/Code-Search)**.
-You may wish to download all of the scripts into a local folder on your Azure DevOps Server
-server using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
+You may wish to download all of the scripts into a local folder on the server running the database for Azure DevOps Server
+using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
 the **SqlScripts** folder and its contents is present, along with the PowerShell scripts.
 
 ![Download script files for administration](_img/administration/script-filesv2.png)
@@ -543,6 +543,11 @@ with administrative privileges. You will be prompted to enter:
 * The name of the Azure DevOps Server or TFS collection database.
 * The name of the Azure DevOps Server or TFS configuration database.
 * The name of the collection.
+* The entities to reindex. This can be one of the following values:
+  - **All**
+  - **Code**
+  - **WorkItem**
+  - **Wiki**
 
 Re-indexing a collection can take from a few minutes 
 to a few hours, depending on the size of the collection. 

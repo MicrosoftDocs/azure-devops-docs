@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ---
 
 
@@ -102,7 +102,7 @@ The following table indicates those features available for each supported access
 
 <tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management), up to 2GB free</td>
-<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -781,19 +781,7 @@ To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-> [!div class="mx-tdBreakAll"]  
-> | Service, application, or setting | Private project | Public project|
-> |------------|-----------------|---------------|
-> |<strong>Dashboards</strong> | Partial access | Full access | 
-> |<strong>Wiki</strong>  | Partial access | Full access | 
-> |<strong>Boards</strong>  | Partial access | Full access | 
-> |<strong>Repos</strong> | No access | Full access | 
-> |<strong>Pipelines</strong>  | Full access | Full access | 
-> |<strong>Test Plans</strong>  | No access | No access | 
-> |<strong>Notifications</strong>  | Full access | Full access | 
-> |<strong>Semantic search</strong> | Full access | Full access | 
-> |<strong>Project settings</strong>  | Partial access | Partial access | 
-> |<strong>Organization settings</strong>  | Partial access | Partial access | 
+[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
 
 ::: moniker-end
 

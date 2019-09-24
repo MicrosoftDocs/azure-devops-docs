@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/03/2019
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -108,7 +108,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164" data-raw-source="[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164)">CC/BCC (carbon copy) recipient support for email notifications</a></td><td>Administration</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165" data-raw-source="[Notification feed](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165)">Notification feed</a></td><td>Administration</td><td>TBD</td>
         </tr>
-     </tbody>
+    </tbody>
 </table>
 
 ## Current features
@@ -127,9 +127,9 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="19"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
+            <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Download a list of organizations to a directory</td><td>General</td><td>Future</td></tr>      
         <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Taskboard live updates</td><td>Boards</td><td>Future</td></tr>
@@ -147,11 +147,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>Future</td></tr>            
         <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>Future</td></tr>
         <tr>
             <td rowspan="27"><a href="2019/sprint-156-update.md" data-raw-source="[12 August 2019](2019/sprint-156-update.md)">12 August 2019</a></td>
             <td>New UI to request access to an organization</td><td>General</td><td>Future</td>
-         </tr>
+        </tr>
         <tr><td>Read-only and required rules for group membership</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Customize system picklist values</td><td>Boards</td><td>Future</td></tr>
         <tr><td>New work item URL parameter</td><td>Boards</td><td>Future</td></tr>
@@ -181,7 +182,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="29"><a href="2019/sprint-155-update.md" data-raw-source="[22 July 2019](2019/sprint-155-update.md)">22 July 2019</a></td>
             <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>Future</td>
-         </tr>
+        </tr>
         <tr><td>Get insights into your team’s health with three new Azure Boards Analytics reports</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Azure Boards app for Slack</td><td>Boards</td><td>N/A</td></tr>
         <tr><td>Customize taskboard columns</td><td>Boards</td><td>Future</td></tr>
@@ -189,7 +190,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Improved code search filtering options</td><td>Boards</td><td>Future</td></tr>
-         <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>Future</td></tr>
@@ -213,7 +214,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="28"><a href="2019/sprint-154-update.md" data-raw-source="[1 July 2019](2019/sprint-154-update.md)">1 July 2019</a></td>
             <td>Azure DevOps CLI general availability</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Work item live reload</td><td>General</td><td>Future</td></tr>
         <tr><td>Manage iteration and area paths from the command line</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Work item parent column as column option</td><td>Boards</td><td>Future</td></tr>
@@ -245,7 +246,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="16"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
             <td>Changes to Azure DevOps IP address ranges</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Auditing public preview</td><td>General</td><td>N/A</td></tr>
         <tr><td>Manage security groups and permissions from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Quickly view linked GitHub activity from the Kanban board</td><td>Boards</td><td>2019.1</td></tr>
@@ -265,7 +266,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="15"><a href="2019/sprint-152-update.md" data-raw-source="[20 May 2019](2019/sprint-152-update.md)">20 May 2019</a></td>
             <td>Manage extensions from the command line</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Invoke REST APIs from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Manage users from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
@@ -4112,7 +4113,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </tbody>
 </table>
 
-### Server Build Numbers
+## Server Build Numbers
 
 <table>
 <thead>
@@ -4164,6 +4165,16 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>16.131.27701.1</td>
         </tr>
          <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.2](https://aka.ms/tfs2018-update1)">2018.1.2</a></td>
+          <td>Nov. 27, 2018</td>
+          <td>16.122.28313.3</td>
+        </tr>
+         <tr>
+          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.1](https://aka.ms/tfs2018-update1)">2018.1.1</a></td>
+          <td>Sep. 12, 2018</td>
+          <td>16.122.28028.4</td>
+        </tr>
+         <tr>
           <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1](https://aka.ms/tfs2018-update1)">2018.1</a></td>
           <td>Feb. 20, 2018</td>
           <td>16.122.27409.2</td>
@@ -4203,6 +4214,12 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>Nov. 16, 2016</td>
           <td>15.105.25910.00</td>
         </tr>
+        <tr>
+          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.2](https://aka.ms/tfs2015-update4-vs)">2015.4.2</a></td>
+          <td>Apr. 9, 2019</td>
+          <td>14.114.28805.0</td>
+        </tr>
+        <tr>
         <tr>
           <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.1](https://aka.ms/tfs2015-update4-vs)">2015.4.1</a></td>
           <td>Feb. 28, 2018</td>

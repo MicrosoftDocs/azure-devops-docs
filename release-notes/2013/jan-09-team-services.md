@@ -27,4 +27,3 @@ As always, let us know how we’re doing on [User Voice](https://visualstudio.us
 Thanks,
 
 Aaron Bjork
-

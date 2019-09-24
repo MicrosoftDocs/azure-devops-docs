@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile
-ms.topic: overview
+ms.topic: landing-page
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE

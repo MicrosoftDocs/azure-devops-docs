@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 07/19/2019
+ms.date: 09/20/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -83,7 +83,7 @@ The following agent pools are provided by default:
 
 ::: moniker range="azure-devops"
 
-* **Hosted** pool with the following images:
+* **Azure Pipelines** hosted pool with the following images:
 
     * **Ubuntu 1604**: Enables you to build and release on
   Ubuntu 1604 machines without having to configure a self-hosted Linux agent. Agents in this pool do not
@@ -96,16 +96,47 @@ The following agent pools are provided by default:
     * **macOS High Sierra**: Enables you to build and release on
   High Sierra macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
-    * **Windows 2019 with VS2019**: These machines have Visual Studio 2019 installed on Windows Server 2019 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
+    * **Windows 2019 with VS2019**: These machines have Visual Studio 2019 installed on Windows Server 2019 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
-    * **VS2017**: These machines have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
+    * **VS2017**: These machines have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
-    * **Hosted**: These machines have older versions of Visual Studio installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
+    * **Hosted**: These machines have older versions of Visual Studio installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
     * **Windows Container**: Enables you to run jobs
   inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building
-  using containers, Windows builds should run in the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** pools.
+  using containers, Windows builds should run using the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** images.
 
-By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted pools.
+By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
+
+> [!NOTE]
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
+
+### Choosing a pool and agent in your pipeline
+
+# [YAML](#tab/yaml)
+
+To choose a Microsoft-hosted agent from the Azure Pipelines pool in your YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
+
+```yaml
+pool:
+  vmImage: ubuntu-16.04
+```
+
+To use a private pool with no demands:
+
+```yaml
+pool: MyPool
+```
+
+For more information, see the [YAML schema](../yaml-schema.md) for [pools](../yaml-schema.md#pool).
+
+# [Classic](#tab/classic)
+
+To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down.
+
+![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
+
+* * *
+
 
 ::: moniker-end
 
@@ -207,7 +238,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ### I need more hosted build resources. What can I do?
 
-A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
+A: The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
 * [Host your own agents on infrastructure that you manage](agents.md).
 * [Buy additional parallel jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).

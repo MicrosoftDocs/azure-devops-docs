@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/26/2019
+ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,8 +18,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
-After 30 days, your organization and data are permanently deleted.
+If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
+After 28 days, your organization and data are permanently deleted.
 
 When you delete your organization, note the following:
 
@@ -27,7 +27,7 @@ When you delete your organization, note the following:
 
 * Your organization URL becomes available for anyone to use. (It might take up to one hour before your organization URL becomes available again.)
 
-* Your organization is disabled, and appears deleted in your profile for 30 days.
+* Your organization is disabled, and appears deleted in your profile for 28 days.
 
 * If your organization is linked to an Azure subscription for billing purchases, you must unlink your organization before you delete your organization.
 

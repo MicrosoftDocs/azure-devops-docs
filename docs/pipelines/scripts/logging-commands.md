@@ -19,7 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 The general format for a logging command is:
 
-    ##vso[area.action property1=value;property2=value;...]message
+```
+##vso[area.action property1=value;property2=value;...]message
+```
 
 To invoke a logging command, echo the command via standard output.
 

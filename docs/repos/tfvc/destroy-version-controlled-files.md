@@ -22,8 +22,8 @@ Over time, a version control server acquires a growing number of files and folde
 
 The following procedure shows you how to destroy files and folders by using the **tf** **destroy** command. Although the files are permanently removed, you can retain the history associated with them. For more information about the options and arguments available for **tf destroy**, see [Destroy Command (Team Foundation Version Control)](destroy-command-team-foundation-version-control.md).
 
->**Note:**
->  This operation is available only from the command-line.
+> [!NOTE]
+> This operation is available only from the command-line.
 
 **Required Permissions**
 
@@ -41,8 +41,8 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
             >tf destroy /preview /i $/MyTeamProject/aFile.cs
 
-        >**Note:**
-        >  The text in the Command Prompt window displays &quot;Destroyed: $/MyTeamProject/aFile.cs&quot;, but the file is not actually destroyed when you use the **/preview** option.
+        > [!NOTE]
+        > The text in the Command Prompt window displays &quot;Destroyed: $/MyTeamProject/aFile.cs&quot;, but the file is not actually destroyed when you use the **/preview** option.
 
     -   To destroy the file, aFile.cs, type at the command prompt:
 
@@ -54,8 +54,8 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
             >tf destroy /keephistory $/MyTeamProject/aFolder
 
-        >**Note:**
-        >  **/preview** cannot be specified with **/keephistory**.
+        > [!NOTE]
+        > **/preview** cannot be specified with **/keephistory**.
 
         This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](https://msdn.microsoft.com/library/ms181415).
 

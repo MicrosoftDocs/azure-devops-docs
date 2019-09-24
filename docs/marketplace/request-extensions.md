@@ -71,7 +71,7 @@ Review your requests after the Marketplace sends the request to your Project Col
 
 Your requests appear on the **Extensions** page, **Requested** tab.
 
-    ![Requested extensions page](_shared/_img/requested-extensions-2019.png)
+![Requested extensions page](_shared/_img/requested-extensions-2019.png)
 
 Your Project Collection Administrator can review your request after they get it.
 
