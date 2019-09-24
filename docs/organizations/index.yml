@@ -52,6 +52,34 @@ landingContent:
             url: ./settings/set-iteration-paths-sprints.md
           - text: Add a team administrator
             url: ./settings/add-team-administrator.md
+  - title: Set alerts or notifications
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About notifications
+            url: ../notifications/about-notifications.md
+      - linkListType: quickstart
+        links:
+          - text: Set personal notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Set team notifications
+            url: ../notifications/howto-manage-team-notifications.md
+  - title: Configure Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with Service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a service hook with Web Hooks
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Slack
+            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Add and manage projects
     linkLists:
       - linkListType: concept
@@ -140,42 +168,14 @@ landingContent:
         links:
           - text: XML element reference
             url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Set alerts or notifications
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: About notifications
-            url: ../notifications/about-notifications.md
-      - linkListType: quickstart
-        links:
-          - text: Set personal notifications
-            url: ../notifications/howto-manage-personal-notifications.md
-          - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
-  - title: Configure Service hooks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Integrate with Service hooks
-            url: ../service-hooks/overview.md
-      - linkListType: quickstart
-        links:
-          - text: Create a service hook with Web Hooks
-            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Slack
-            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Pipelines resources
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Create and manage agent pools
-            url: ..pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage deployment groups
-            url: ..pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/release/deployment-groups.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Set build and release retention policies
             url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage service connections

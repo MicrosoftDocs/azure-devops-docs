@@ -2,8 +2,6 @@
 - name: Azure DevOps security, access, and billing documentation
   expanded: false
   href: index.yml
-- name: About security, access, and billing
-  href: ../organizations/settings/about-settings.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops//security-access-billing/breadcrumb/toc.json
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops//security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Security, access, & identity
