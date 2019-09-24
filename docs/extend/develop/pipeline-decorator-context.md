@@ -93,7 +93,7 @@ job =
 For instance, to conditionally add a task only if it doesn't already exist:
 
 ```yaml
-- ${{ if not(containsValue(job.steps.*.task.id, 'f3ab91e7-bed6-436a-b651-399a66fe6c2a')) }}
+- ${{ if not(containsValue(job.steps.*.task.id, 'f3ab91e7-bed6-436a-b651-399a66fe6c2a')) }}:
   - script: echo conditionally inserted
 ```
 
