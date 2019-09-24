@@ -12,6 +12,10 @@
   href: ../organizations/accounts/toc.yml
 - name: Billing
   href: ../organizations/billing/toc.yml
+- name: Audit
+  items:
+  - name: Access auditing
+    href: ../organizations/settings/azure-devops-auditing.md
 - name: Authentication
   items:
   - name: Authentication guidance
