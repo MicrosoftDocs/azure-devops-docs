@@ -38,7 +38,7 @@ steps:
 Repositories contain the following properties:
 
 ```javascript
-resources['repositories']['sef'] =
+resources['repositories']['self'] =
 {
 	"alias": "self",
 	"id": "<repo guid>",
