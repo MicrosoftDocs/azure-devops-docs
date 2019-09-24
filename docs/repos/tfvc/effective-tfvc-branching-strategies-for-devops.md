@@ -4,7 +4,7 @@ description: Learn to manage branching strategies with a DevOps mindset in Team 
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-code-git
+ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.date: 04/25/2018
 ms.author: sdanie
