@@ -182,7 +182,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```js
     var bodyParser = require('body-parser')
 
-    app.use(bodyParser.json());
+    app.use(bodyParser.json())
     ```
 
 3. To simplify making REST API calls to Azure Repos, install the [azure-devops-node-api](https://www.npmjs.com/package/azure-devops-node-api) package.
@@ -194,15 +194,15 @@ Now that your server can receive service hook events when new PRs are created, u
 4. Update `app.js` to use the azure-devops-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
 
     ``` javascript
-    const vsts = require("azure-devops-node-api");
+    const vsts = require("azure-devops-node-api")
 
-    const collectionURL = process.env.COLLECTIONURL;    
-    const token = process.env.TOKEN;
+    const collectionURL = process.env.COLLECTIONURL    
+    const token = process.env.TOKEN
 
-    var authHandler = vsts.getPersonalAccessTokenHandler(token);
-    var connection = new vsts.WebApi(collectionURL, authHandler);
+    var authHandler = vsts.getPersonalAccessTokenHandler(token)
+    var connection = new vsts.WebApi(collectionURL, authHandler)
 
-    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } );
+    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } )
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
@@ -223,9 +223,9 @@ Now that your server can receive service hook events when new PRs are created, u
 8. Update the `post()` function to read the PR details from the service hook payload. You'll need these values in order to post back status.
 
     ``` javascript
-    var repoId = req.body.resource.repository.id;
-    var pullRequestId = req.body.resource.pullRequestId;
-    var title = req.body.resource.title;
+    var repoId = req.body.resource.repository.id
+    var pullRequestId = req.body.resource.pullRequestId
+    var title = req.body.resource.title
     ```
 
 9. Build the status object to post on the PR. 
@@ -264,7 +264,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ``` javascript
     vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
         console.log(result);
-    });
+    })
     ```
 
 12. The resulting method should look something like this:
@@ -273,9 +273,9 @@ Now that your server can receive service hook events when new PRs are created, u
     app.post("/", function (req, res) {
 
         // Get the details about the PR from the service hook payload
-        var repoId = req.body.resource.repository.id;
-        var pullRequestId = req.body.resource.pullRequestId;
-        var title = req.body.resource.title;
+        var repoId = req.body.resource.repository.id
+        var pullRequestId = req.body.resource.pullRequestId
+        var title = req.body.resource.title
 
         // Build the status object that we want to post.
         // Assume that the PR is ready for review...
@@ -293,16 +293,16 @@ Now that your server can receive service hook events when new PRs are created, u
         if (title.includes("WIP")) {
 
             // If so, change the status to pending and change the description.
-            prStatus.state = "pending";
+            prStatus.state = "pending"
             prStatus.description = "Work in progress"
         }
 
         // Post the status to the PR
         vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
-            console.log(result);
+            console.log(result)
         });
 
-        res.send("Received the POST");
+        res.send("Received the POST")
     })
     ```
 
