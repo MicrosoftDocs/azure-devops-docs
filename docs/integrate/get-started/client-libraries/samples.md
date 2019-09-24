@@ -357,7 +357,7 @@ public static void BasicAuthSoapSample()
 public static void WindowsAuthenticationSoapSample()
 {
     // authenticate using windows authentication
-	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new TfsClientCredentials()))
+	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
 	{
 		tpc.Authenticate();
 		Console.WriteLine(tpc.InstanceId);
