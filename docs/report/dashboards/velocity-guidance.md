@@ -62,6 +62,10 @@ For example, you can create a chart of the number of Product backlog items and b
 - [Plan your sprint](../../boards/sprints/assign-work-sprint.md) 
 
 ### Industry resources
+
+> ![NOTE]
+> These industry resource links may require a paid subscription to view their website contents.
+
 - [How Should We Use Velocity?](https://www.scrumalliance.org/community/articles/2013/2013-april/how-should-we-use-velocity)  
 - [Velocity Is Not the Goal](https://www.scrumalliance.org/community/articles/2017/march/sprint-velocity-sense-and-nonsense)   
 - [How to Calculate and Use Velocity to Help Your Team and Your Projects](https://www.scrumalliance.org/community/articles/2014/february/velocity)
