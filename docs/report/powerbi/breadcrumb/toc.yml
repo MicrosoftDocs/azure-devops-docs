@@ -1,11 +1,11 @@
-- name: Azure DevOps Services
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Analytics
-    tocHref: /azure/devops/
+  - name: Reporting
+    tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
     items:
-    - name: Power BI
-      tocHref: /azure/devops/
+    - name: Power BI Integration
+      tocHref: /azure/devops/report/powerbi/
       topicHref: /azure/devops/report/powerbi/index

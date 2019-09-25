@@ -1,6 +1,6 @@
 ```YAML
-# Use Python Version
-# Retrieves the specified version of Python from the tool cache. Optionally add it to PATH.
+# Use Python version
+# Use the specified version of Python from the tool cache, optionally adding it to the PATH
 - task: UsePythonVersion@0
   inputs:
     #versionSpec: '3.x' 

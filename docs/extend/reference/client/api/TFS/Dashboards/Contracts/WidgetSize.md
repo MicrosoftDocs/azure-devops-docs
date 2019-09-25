@@ -5,9 +5,9 @@ title: TFS/Dashboards/Contracts WidgetSize API | Extensions for Azure DevOps Ser
 description: Documentation for the WidgetSize contract.
 ms.assetid: 129AD617-0ED3-434E-A0A9-4423D15FAC75
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

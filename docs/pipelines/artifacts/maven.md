@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
 ms.manager: jillfra
-ms.author: elbatk, yebronsh
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.custom: seodec18
@@ -25,7 +25,7 @@ monikerRange: '>= tfs-2018'
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
 
 1. Navigate to your Maven feed and click "Connect to Feed". Click on "Maven".
-![Connect to Feed - Maven](_img\maven\consume-artifacts-using-maven.png)
+![Connect to Feed - Maven](_img/maven/consume-artifacts-using-maven.png)
 
 1. Click on "Generate Maven Credentials"
 

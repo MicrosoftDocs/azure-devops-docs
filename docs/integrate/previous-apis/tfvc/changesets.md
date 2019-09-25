@@ -7,8 +7,8 @@ description: Work with TFVC changesets programmatically using the REST APIs for 
 ms.assetid: 27A32DF1-E6D8-47E1-93FB-7FB812F2B47D
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -39,8 +39,8 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={vers
 | searchCriteria.author        | string                  |         | Person who checked in the changeset.<br/>Example: `searchCriteria.author=johnsmith@live.com`.
 | searchCriteria.fromId        | int                     |         | ID of the oldest changeset to return.
 | searchCriteria.toId          | int                     |         | ID of the newest changeset to return.
-| searchCriteria.fromDate      | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the earliest changeset to return.
-| searchCriteria.toDate        | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the latest changesets to return.
+| searchCriteria.fromDate      | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the earliest changeset to return.
+| searchCriteria.toDate        | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the latest changesets to return.
 | $top                         | int                     | 100     | The maximum number of results to return.
 | $skip                        | int                     | 0       | Number of results to skip.
 | $orderby                     | "id asc" or "id desc"   | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.

@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/01/2018
+ms.author: sdanie
+author: steved0x
+ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,8 +20,8 @@ Azure DevOps and Team Foundation Server (TFS) offer a web-based solution for man
 
 In the past, we have also shipped a client based solution as Microsoft Test Manager. The Test Center in Microsoft Test Manager client is a desktop-based manual testing solution, which has traditionally been used by testers for their manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)). 
 
->[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
+> [!NOTE]
+> [!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
 
 ### Supported combinations
 
@@ -48,14 +48,13 @@ Comparison of [test planning with [!INCLUDE [test-hub-include-nolink](../_shared
 | Add/remove tests from test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Assign individual testers to test plan/test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create/edit/assign configurations | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Clone test plan/test suite\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Add tests from other test suites\*  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
+| Copy/clone test plan/test suite  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Order manual tests within suites (RBS, QBS, Static) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | Export test plans and test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+The copy/clone capability is surfaced via the following APIs: [Copy/Clone a Test Plan](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and [Copy/Clone a Test Suite](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose this capability through the out-of-box UI in a future release.
 
 ### Test authoring
 
@@ -126,7 +125,7 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 | File bugs using screen capture and recording, and image action log | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Create test cases and tasks | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
 | Exploratory testing session insights | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Capture page load performance data](../connected-mode-exploratory-testing.md#create-bugs-or-tasks) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Capture page load performance data | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
 
 ## Conclusion

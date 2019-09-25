@@ -39,7 +39,7 @@ By using the Test perspective, you can create reports that answer the following 
 > [!NOTE]
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
- To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this topic.  
+ To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this article.  
   
  
 <a name="example_report"></a>  
@@ -158,14 +158,14 @@ The following table describes the attributes that are defined for the Test Run d
   
 <a name="work_item"></a> 
 ###  Work item and work item linked dimensions  
-You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this topic, provides an example of using the linked work item.  
+You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this article, provides an example of using the linked work item.  
   
  For a description of each attribute, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

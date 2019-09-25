@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 01/18/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -30,13 +30,14 @@ You can view basic reporting information within Microsoft Test Manager:
 
   This provides a status of all the tests that have been run, along with their current outcomes, within that specific test suite. This information can be seen on both the Test Activity Center (as shown below) or Plan Activity Center.
 
-  **Note**: The data shown at a suite level includes the tests that are explicitly within that suite node only - it does not include all the child suites within that suite.
+  > [!NOTE]
+  > The data shown at a suite level includes the tests that are explicitly within that suite node only - it does not include all the child suites within that suite.
 
   ![clip_image002](_img/tcm-reporting/tcm-02.png)
 
 ## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs etc? Why?
 
-[Creating Reports in Microsoft Excel by Using Work Item Queries](http://msdn.microsoft.com/en-us/library/dd433251.aspx)
+[Creating Reports in Microsoft Excel by Using Work Item Queries](https://msdn.microsoft.com/library/dd433251.aspx)
 
 You can use the above method to query for any TFS "Work Items". So, you should be able to create a report for "Test Case", "Bug", "Task" work items.
 
@@ -60,29 +61,29 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    Details of each of the Test related reports can be found below:
 
-   * [Test Management Reports](http://msdn.microsoft.com/en-us/library/ee795293.aspx)
+   * [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
 
-     - [Build Quality Excel Report](http://msdn.microsoft.com/en-us/library/ee730418.aspx)
+     - [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
 
-     - [Test Team Productivity Excel Report](http://msdn.microsoft.com/en-us/library/ee730422.aspx)
+     - [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
 
-     - [Test Team Progress Excel Report](http://msdn.microsoft.com/en-us/library/ee730420.aspx)
+     - [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
 
-     - [Testing Gaps Excel Report (Agile)](http://msdn.microsoft.com/en-us/library/ee730419.aspx)
+     - [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
 
-     - [Testing Gaps Excel Report (CMMI)](http://msdn.microsoft.com/en-us/library/ee730423.aspx)
+     - [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
 
-   * [Failure Analysis Excel Report](http://msdn.microsoft.com/en-us/library/ee461520.aspx)
+   * [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
 
-   * [Test Activity Excel Report](http://msdn.microsoft.com/en-us/library/ee461586.aspx)
+   * [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
 
-   * [Test Case Readiness Report](http://msdn.microsoft.com/en-us/library/dd380713.aspx)
+   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-   * [Test Plan Progress Report](http://msdn.microsoft.com/en-us/library/dd380702.aspx)
+   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
-   * [User Story Test Status Excel Report (Agile)](http://msdn.microsoft.com/en-us/library/dd695788.aspx)
+   * [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
 
-   * [Requirement Test Status Excel Report (CMMI)](http://msdn.microsoft.com/en-us/library/ee461538.aspx)
+   * [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
 
 2. Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
@@ -92,15 +93,15 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    Details of each of the Test related reports can be found below:
 
-   * [Build Quality Indicators Report](http://msdn.microsoft.com/en-us/library/dd380683.aspx)
+   * [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
 
-   * [Stories Overview Report (Agile)](http://msdn.microsoft.com/en-us/library/dd380648.aspx)
+   * [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
 
-   * [Requirements Overview Report (CMMI)](http://msdn.microsoft.com/en-us/library/ee461517.aspx)
+   * [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
 
-   * [Test Case Readiness Report](http://msdn.microsoft.com/en-us/library/dd380713.aspx)
+   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-   * [Test Plan Progress Report](http://msdn.microsoft.com/en-us/library/dd380702.aspx)
+   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Reporting Services based Reports listed above. Why?
 
@@ -110,15 +111,15 @@ Team Foundation Server requires a report server that is dedicated only to its us
 
 Links:
 
-* [Installing Team Foundation Components](http://msdn.microsoft.com/en-us/library/dd631902.aspx)
+* [Installing Team Foundation Components](https://msdn.microsoft.com/library/dd631902.aspx)
 
-* [Configuring Resources to Support Team Projects](http://msdn.microsoft.com/en-us/library/dd386330.aspx)
+* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 
-* [Add a Report Server to Your Deployment](http://msdn.microsoft.com/en-us/library/ee712737.aspx)
+* [Add a Report Server to Your Deployment](https://msdn.microsoft.com/library/ee712737.aspx)
 
-* [Add a Report Server to a Team Project Collection](http://msdn.microsoft.com/en-us/library/dd386355.aspx)
+* [Add a Report Server to a Team Project Collection](https://msdn.microsoft.com/library/dd386355.aspx)
 
-* [Add Reports to a Team Project](http://msdn.microsoft.com/en-us/library/ee712730.aspx)
+* [Add Reports to a Team Project](https://msdn.microsoft.com/library/ee712730.aspx)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Excel Reports listed above. Why?
 
@@ -130,15 +131,15 @@ In addition, for Excel Reports, you also need to enable SharePoint on the Team F
 
 Links:
 
-* [Installing Team Foundation Components](http://msdn.microsoft.com/en-us/library/dd631902.aspx)
+* [Installing Team Foundation Components](https://msdn.microsoft.com/library/dd631902.aspx)
 
-* [Configuring Resources to Support Team Projects](http://msdn.microsoft.com/en-us/library/dd386330.aspx)
+* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 
-* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](http://msdn.microsoft.com/en-us/library/dd386329.aspx)
+* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](https://msdn.microsoft.com/library/dd386329.aspx)
 
-* [Add a SharePoint Web Application to Your Deployment](http://msdn.microsoft.com/en-us/library/dd236907.aspx)
+* [Add a SharePoint Web Application to Your Deployment](https://msdn.microsoft.com/library/dd236907.aspx)
 
-* [Configure a Default Location for Team Project Portals](http://msdn.microsoft.com/en-us/library/dd386357.aspx)
+* [Configure a Default Location for Team Project Portals](https://msdn.microsoft.com/library/dd386357.aspx)
 
 ## We don't plan on installing SharePoint - is there no way of getting the "out-of-the-box" Excel reports, primarily for Test related reports?
 
@@ -224,11 +225,11 @@ All the test related measures present in the Analysis Services cube are shown be
 
 Description for each of above measures can be found here:
 
-[http://msdn.microsoft.com/en-us/library/ms244708.aspx#measures](http://msdn.microsoft.com/en-us/library/ms244708.aspx#measures)
+[https://msdn.microsoft.com/library/ms244708.aspx#measures](https://msdn.microsoft.com/library/ms244708.aspx#measures)
 
 A list of all the perspectives and measure groups present in Team Foundation Server can be found here:
 
-[http://msdn.microsoft.com/en-us/library/ms244710.aspx](http://msdn.microsoft.com/en-us/library/ms244710.aspx)
+[https://msdn.microsoft.com/library/ms244710.aspx](https://msdn.microsoft.com/library/ms244710.aspx)
 
 ## What are the different Test related dimensions in the Analysis Services cube that I can use to create my custom test reports?
 
@@ -238,17 +239,17 @@ All the dimensions present in the Analysis Services cube are shown below:
 
 Description for all the Test specific dimensions can be found here:
 
-[http://msdn.microsoft.com/en-us/library/ms244708.aspx#dimensions](http://msdn.microsoft.com/en-us/library/ms244708.aspx#dimensions)
+[https://msdn.microsoft.com/library/ms244708.aspx#dimensions](https://msdn.microsoft.com/library/ms244708.aspx#dimensions)
 
 ## Can I control what information makes it into the warehouse or cube? If so, how?
 
 Here is a quick primer on the different components of data warehouse and how data moves from the Operation store to Warehouse to Cube using the warehouse adapters.
 
-[Components of the Data Warehouse for Team Foundation](http://msdn.microsoft.com/en-us/library/ms244687.aspx)
+[Components of the Data Warehouse for Team Foundation](https://msdn.microsoft.com/library/ms244687.aspx)
 
 Yes, you can control what goes into the warehouse - refer to below topic for details around work item specific fields:
 
-[Adding and Modifying Work Item Fields to Support Reporting](http://msdn.microsoft.com/en-us/library/ee921481.aspx)
+[Adding and Modifying Work Item Fields to Support Reporting](https://msdn.microsoft.com/library/ee921481.aspx)
 
 Note that you can use the above to control Test Case Work item field customizations. However, since the other test artifacts (Test Suites, Test Runs, Test Results etc.) are not work items, it is not possible to use the above approach.
 
@@ -258,7 +259,7 @@ That is correct - Test Steps along with expected results and the passed or faile
 
 However, there are couple of ways of getting this Step related data:
 
-1. **TFS APIs**: You could get this information using the [TFS APIs](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.testmanagement.client.aspx)
+1. **TFS APIs**: You could get this information using the [TFS APIs](https://msdn.microsoft.com/library/microsoft.teamfoundation.testmanagement.client.aspx)
    Refer to a sample Test Steps Report, which was created using the TFS APIs.
 
    [http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx](http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx)

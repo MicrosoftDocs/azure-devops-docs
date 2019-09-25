@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 
 # Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
 
@@ -90,7 +90,7 @@ By keeping branches short-lived,  merge conflicts are kept to as few as possible
 
 ### Why only branch if necessary?
 
-To embrace [DevOps](http://aka.ms/devops), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
+To embrace [DevOps](https://aka.ms/devops), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
 
 ### Why remove branches?
 

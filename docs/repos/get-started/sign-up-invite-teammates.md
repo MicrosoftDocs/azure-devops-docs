@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: quickstart
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
-ms.date: 09/10/2018
+author: apawast
+ms.date: 05/06/2018
 monikerRange: 'azure-devops'
 ---
 
@@ -19,6 +19,10 @@ monikerRange: 'azure-devops'
 <a name="MicrosoftAccount"></a>
 
 [!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
+
+<a name="GitHubAccount"></a>
+
+[!INCLUDE [sign-in-github-account](../../_shared/sign-in-github-account.md)]
 
 <a id="invite-others" />
 

@@ -16,7 +16,7 @@ ms.date: 10/31/2017
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this topic. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
+If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this article. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
   
 > [!NOTE]  
 >  When you use Office Project to create parent and child tasks, it assigns parent tasks the rollup of hours that are defined for all its child tasks. Rollup hours are not published to Team Foundation so that the hours are not double-counted in certain reports. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the publication to Team Foundation of the hours that are assigned to summary tasks. You can view the rollup of hours for summary tasks in Office Project but not in Team Foundation. For more information, see [Customize the Microsoft Project field mapping file](../../reference/xml/map-microsoft-project-fields-to-tf-fields.md).  

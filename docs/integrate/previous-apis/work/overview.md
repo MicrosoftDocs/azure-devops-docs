@@ -7,8 +7,8 @@ description: Work with work tooling programmatically using the REST APIs for Tea
 ms.assetid: fe538cca-d062-445e-8dc2-852a6758f5c3
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -53,7 +53,7 @@ ms.date: 08/04/2016
 2. Update [card fields](./card-fields.md#updatecardfieldsonaboard) for a board.
 
 ### Update card style rules on a board
-1. Get [card styling rules ](./card-rules.md#getcardstylingrulesforaboard) for a board.
+1. Get [card styling rules](./card-rules.md#getcardstylingrulesforaboard) for a board.
 2. Update [card styling rules](./card-rules.md#updatecardstylingrulesonaboard) for a board.
 
 ### Update chart settings

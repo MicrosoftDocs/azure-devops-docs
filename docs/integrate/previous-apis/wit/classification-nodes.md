@@ -7,8 +7,8 @@ description: Work with work item areas and iterations programmatically using the
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 [!INCLUDE [API_version](../_data/version.md)]
 
 All work items have an area and an iteration field. 
-The values that these fields can have are defined in the [classification hierarchies](http://msdn.microsoft.com/library/ms181692.aspx). 
+The values that these fields can have are defined in the [classification hierarchies](https://msdn.microsoft.com/library/ms181692.aspx). 
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -711,7 +711,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classi
 
 * [C# (DeleteArea method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/ClassificationNodesSample.cs#L339)
 
-###Delete an iteration node
+### Delete an iteration node
 
 #### Sample request
 

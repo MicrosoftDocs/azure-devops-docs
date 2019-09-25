@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Clone an existing Git repo
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create a complete local copy of an existing Git repo by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.
@@ -47,11 +47,11 @@ If you're using Azure DevOps Services or Team Foundation Server 2017, you can fi
 
 1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, **Files**.
 
-  ![Repos files](../get-started/_img/clone-repo/repos-files.png)
+   ![Repos files](../get-started/_img/clone-repo/repos-files.png)
 
-1. Select **Clone** in the upper right.
+2. Select **Clone** in the upper right.
 
-  ![Get a clone a URL from Azure Repos](./_img/get_clone_url.gif)
+   ![Get a clone a URL from Azure Repos](./_img/get_clone_url.gif)
 
 If you need to clone a GitHub repo, you'll need to get the clone URL from the **Clone or download** button while viewing the repo on the web in GitHub. 
 
@@ -61,9 +61,8 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 ## Clone a repo 
 
-# [Visual Studio](#tab/visual-studio)
-
-* [Clone from Azure DevOps Services / Team Foundation Server](#clone-from-visual-studio-team-services--team-foundation-server)
+#### [Visual Studio](#tab/visual-studio/)
+* [Clone from Azure DevOps Services / Team Foundation Server](#clone-from-azure-devops-services--team-foundation-server)
 * [Clone from another Git provider](#clone-from-another-git-provider)
 * [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
 
@@ -71,45 +70,44 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 1. In Team Explorer, open up the **Connect** page by selecting the **Connect** icon, and then choose **Manage Connections**, **Connect to Project**.
 
-  ![Cloning Azure DevOps Services Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
-  
-1. On the **Connect to a Project** dialog, select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
-to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.
-   
+   ![Cloning Azure DevOps Services Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
+
+2. On the **Connect to a Project** dialog, select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
+   to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.
+
    ![Cloning a Git Repository from a connected Azure DevOps organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
 
-  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 
-1. Verify the location of the cloned repo on your PC and select **Clone**.
+3. Verify the location of the cloned repo on your PC and select **Clone**.
 
 ### Clone from another Git provider
 
 If you are not using Azure Repos, you can still clone your repo in Team Explorer and work with your code in Visual Studio.
 
 1. In Team Explorer, open the **Connect** view.
-1. Select **Clone** under **Local Git Repositories** and enter the URL for your Git repo&mdash;this will be provided by your team or Git hosting provider.
-1. Select a folder where you want your cloned repo to be kept.
-1. Select **Clone** to clone the repo.
+2. Select **Clone** under **Local Git Repositories** and enter the URL for your Git repo&mdash;this will be provided by your team or Git hosting provider.
+3. Select a folder where you want your cloned repo to be kept.
+4. Select **Clone** to clone the repo.
 
-  ![Clone your repo from other providers using Visual Studio](_img/clone_other_providers.png)
+   ![Clone your repo from other providers using Visual Studio](_img/clone_other_providers.png)
 
 ### Open a solution in Visual Studio from a cloned repo
 
 1. Open a solution in a cloned repo in Visual Studio by right-clicking on the repository in the Team Explorer **Connect** view and selecting **Open**.
 
-  ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs.png)
+   ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs.png)
 
-1. You'll be taken to the **Home** view in Team Explorer. Double-click your project solution file in the **Solutions** area to open the solution in Solution Explorer.
+2. You'll be taken to the **Home** view in Team Explorer. Double-click your project solution file in the **Solutions** area to open the solution in Solution Explorer.
 
-  ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs-sln.png)
+   ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs-sln.png)
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 ### Prerequisites
 
 * Ensure you have installed the [Git command line package](http://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](set-up-credential-managers.md) before continuing.
+right [Git Credential Manager](set-up-credential-managers.md) or have [configured SSH authentication](use-ssh-keys-to-authenticate.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 
@@ -125,8 +123,7 @@ git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam
 git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam C:\Repos\FabrikamFiber
 ```
 
----
-
+* * *
 ## Next steps
 
 > [!div class="nextstepaction"]

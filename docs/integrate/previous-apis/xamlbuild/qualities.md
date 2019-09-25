@@ -7,8 +7,8 @@ description: Configure a project's build qualities programmatically using the RE
 ms.assetid: 0C352988-B949-4515-A89F-5562F86E937F
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

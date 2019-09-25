@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Find a file or folder in your Git repository
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Files** page.
 
@@ -28,8 +28,6 @@ While browsing your Git repository, start typing in the path control box to sear
 ![SearchResultsExperience](_img/find-a-file/find-file-results.png)
 
 ### Hotkey navigation
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

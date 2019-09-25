@@ -1,13 +1,14 @@
 ```YAML
 # Deploy to Kubernetes
-# Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
+# Deploy, configure, update a Kubernetes cluster in Azure Container Service by running kubectl commands
 - task: Kubernetes@1
   inputs:
-    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection, none
+    #connectionType: 'Kubernetes Service Connection' # Options: Azure Resource Manager, Kubernetes Service Connection, none
     #kubernetesServiceEndpoint: # Required when connectionType == Kubernetes Service Connection
     #azureSubscriptionEndpoint: # Required when connectionType == Azure Resource Manager
     #azureResourceGroup: # Required when connectionType == Azure Resource Manager
     #kubernetesCluster: # Required when connectionType == Azure Resource Manager
+    #useClusterAdmin: false # Optional
     #namespace: # Optional
     #command: # Optional. Options: apply, create, delete, exec, expose, get, login, logout, logs, run, set, top
     #useConfigurationFile: false # Optional

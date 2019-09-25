@@ -46,7 +46,7 @@ and virtual machine environments, but at a higher level:
 
 If you are new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
 
-* [Quickstart: Create your first pipeline](../get-started-yaml.md)
+* [Create your first pipeline](../create-first-pipeline.md)
 * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
 * [Building GitHub repositories](../repos/github.md)
 
@@ -488,7 +488,7 @@ environment variables in Travis and their analog in Azure Pipelines:
 | `TRAVIS_PULL_REQUEST_BRANCH` | `SYSTEM_PULLREQUEST_SOURCEBRANCH` | The name of the branch where the pull request originated. |
 | `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into master; this command will identify the pull request commit itself. |
 | `TRAVIS_PULL_REQUEST_SLUG`   |                                | The name of the forked repository, if the pull request originated in a fork.  There's no analog to this in Azure Pipelines. |
-| `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORYNAME`         | The name of the repository that this build is configured for. |
+| `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORY_NAME`         | The name of the repository that this build is configured for. |
 | `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps have succeeded (returned `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
 | `TRAVIS_TAG`                 | `BUILD_SOURCEBRANCH`           | If this build was queued by the creation of a tag then this is the name of that tag.  For Azure Pipelines, the `BUILD_SOURCEBRANCH` will be set to the full Git reference name, eg `refs/tags/tag_name`. |
 | `TRAVIS_BUILD_STAGE_NAME`    |                                | The name of the stage in Travis. As we saw earlier, Azure Pipelines handles flow control using jobs. You can reference `AGENT_JOBNAME`. |
@@ -554,7 +554,7 @@ trigger:
 Travis supports caching dependencies and intermediate build output to improve
 build times.  Azure Pipelines does not support caching intermediate build
 output, but does offer integration with
-[Azure Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/)
+[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/)
 for dependency storage.
 
 ## Git submodules

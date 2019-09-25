@@ -26,7 +26,9 @@ A fundamental aspect of requirements traceability is association of the requirem
 > Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 <a name="agileteams"></a>

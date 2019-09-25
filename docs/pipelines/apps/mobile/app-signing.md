@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2018'
@@ -111,7 +111,7 @@ Use this method when you do not have enduring access to the build agent, such as
 #### Install the provisioning profile during your build
 
 1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your build before the Xcode or Xamarin.iOS task.
-1. For the **Provisioning profile location** option, choose **Secure Files**.
+1. For the **Provisioning profile location** option, choose **Secure Files** (in YAML, `secureFiles`).
 1. Next to the **Provisioning profile** field, click the settings icon and upload your provisioning profile file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Provisioning profile** dropdown.
 1. Enable the checkbox labeled **Remove profile after build**. This will ensure that the provisioning profile is not left on the agent machine.

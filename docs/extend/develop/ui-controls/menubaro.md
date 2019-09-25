@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -22,14 +22,7 @@ This page shows different samples about the menubar control.
 ## Basic menubar
 This sample shows the basic usage of the toolbar. Notice how `text` is added to the separators which becomes a group text for sub menus.
 
-<ul class="nav nav-tabs" data-tabs="tabs">
-<li class="active"><a data-toggle="tab" href="#typescript_basic_menubar">TypeScript</a></li>
-<li><a data-toggle="tab" href="#javascript_basic_menubar">JavaScript</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="typescript_basic_menubar" class="tab-pane fade in active">
-<pre><code class="lang-typescript">
+```typescript
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
   
@@ -63,10 +56,9 @@ var menubarOptions = {
 };
 
 var menubar = Controls.create<Menus.MenuBar, any>(Menus.MenuBar, container, menubarOptions);
-</code></pre>
-  </div>
-  <div id="javascript_basic_menubar" class="tab-pane fade">
-<pre><code class="lang-javascript">
+```
+
+```javascript
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
@@ -103,9 +95,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
  });
   
 VSS.notifyLoadSucceeded();
- </code></pre>
-  </div>
-</div>
+```
 
 <div align="center" style="padding-top:15px">
 <img alt="Basic menubar extension gif" src="_img/basic_menubar.gif" /> 
@@ -115,14 +105,7 @@ VSS.notifyLoadSucceeded();
 ## Actions of the menubar
 This sample uses `executeAction` delegate to react menubar commands.
 
-<ul class="nav nav-tabs" data-tabs="tabs">
-<li class="active"><a data-toggle="tab" href="#typescript_action_menubar">TypeScript</a></li>
-<li><a data-toggle="tab" href="#javascript_action_menubar">JavaScript</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="typescript_action_menubar" class="tab-pane fade in active">
-<pre><code class="lang-typescript">
+```typescript
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 
@@ -158,10 +141,10 @@ var menubarOptions = {
 };
 
 Controls.create<Menus.MenuBar, any>(Menus.MenuBar, container, menubarOptions);
-</code></pre>
-  </div>
-  <div id="javascript_action_menubar" class="tab-pane fade">
-<pre><code class="lang-javascript">
+```
+
+
+```javascript
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
@@ -200,9 +183,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
  });
   
 VSS.notifyLoadSucceeded();
- </code></pre>
-  </div>
-</div>
+```
 
 <div align="center" style="padding-top:15px">
 <img alt="Action menubar extension gif" src="_img/action_menubar.gif" /> 
@@ -215,14 +196,7 @@ This sample shows how the menu items can be enabled/disabled.
 <button id="btnToggle">Toggle Enabled/Disabled</button>
 ```
 
-<ul class="nav nav-tabs" data-tabs="tabs">
-<li class="active"><a data-toggle="tab" href="#typescript_toggle_menubar">TypeScript</a></li>
-<li><a data-toggle="tab" href="#javascript_toggle_menubar">JavaScript</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="typescript_toggle_menubar" class="tab-pane fade in active">
-<pre><code class="lang-typescript">
+```typescript
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 
@@ -244,10 +218,9 @@ $("#btnToggle").click(function (e) {
     { id: "settings", disabled: !(settingsItem.getCommandState() & Menus.MenuItemState.Disabled) },
   ]);
 });
-</code></pre>
-  </div>
-  <div id="javascript_toggle_menubar" class="tab-pane fade">
-<pre><code class="lang-javascript">
+```
+
+```javascript
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
@@ -279,9 +252,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
 });
   
 VSS.notifyLoadSucceeded();
- </code></pre>
-  </div>
-</div>
+```
 
 <div align="center" style="padding-top:15px">
 <img alt="Toggle menubar extension gif" src="_img/toggle_menubar.gif" /> 
@@ -293,14 +264,9 @@ This sample shows how the menu items can be made visible/hidden.
 ```html
 <button id="btnToggle">Toggle Show/Hide</button>
 ```
-<ul class="nav nav-tabs" data-tabs="tabs">
-<li class="active"><a data-toggle="tab" href="#typescript_hide_menubar">TypeScript</a></li>
-<li><a data-toggle="tab" href="#javascript_hide_menubar">JavaScript</a></li>
-</ul>
 
-<div class="tab-content">
-  <div id="typescript_hide_menubar" class="tab-pane fade in active">
-<pre><code class="lang-typescript">
+
+```typescript
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 
@@ -322,10 +288,9 @@ $("#btnToggle").click(function (e) {
     { id: "help", hidden: !(helpItem.getCommandState() & Menus.MenuItemState.Hidden) }
   ]);
 });
-</code></pre>
-  </div>
-  <div id="javascript_hide_menubar" class="tab-pane fade">
-<pre><code class="lang-javascript">
+```
+
+```javascript
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
@@ -349,9 +314,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
 });
   
 VSS.notifyLoadSucceeded();
- </code></pre>
-  </div>
-</div>
+```
 
 <div align="center" style="padding-top:15px">
 <img alt="Hide menubar extension gif" src="_img/hide_menubar.gif" /> 

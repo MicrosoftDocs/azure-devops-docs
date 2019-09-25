@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -90,10 +90,11 @@ meets a wide range or criteria, without requiring user intervention.
 
    ![Configuring the Query Work Items approval gate](_img/deploy-using-approvals/gates-04.png)
 
-   >You'll need to open the **Advanced** section to see the **Maximum Threshold** setting.
-   For more details about the gate arguments, see [Work Item Query task](../tasks/utility/work-item-query.md).
+   > You'll need to open the **Advanced** section to see the **Lower Threshold** setting.
+   > You can also set an **Output Variable** to be returned from the gate task. 
+   > For more details about the gate arguments, see [Work Item Query task](../tasks/utility/work-item-query.md).
 
-1. Open the **Options for all gates** section and specify the timeout and the sampling interval.
+1. Open the **Evaluation options** section and specify the timeout and the sampling interval.
    For this example, choose short periods so that you can see the results reasonably quickly.
    The minimum values you can specify are 6 minutes timeout and 5 minutes sampling interval.
 
@@ -131,7 +132,7 @@ Intervention** task in your pipeline.
    ![Adding an Agentless job to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
    Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless job](../process/server-phases.md).
+   [agentless job](../process/phases.md#server-jobs).
 
 1. Drag and drop the new agentless job to the start of the QA process, before the existing agent job.
    Then choose **+** in the **Agentless job** bar and add a **Manual Intervention** task to the job.

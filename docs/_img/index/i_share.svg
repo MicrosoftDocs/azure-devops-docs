@@ -1,0 +1,24 @@
+<svg id="Titles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_share</title>
+  <circle class="cls-1" cx="32" cy="35.56" r="24.89"/>
+  <circle class="cls-2" cx="32" cy="10.67" r="8.89"/>
+  <circle class="cls-2" cx="53.33" cy="46.22" r="8.89"/>
+  <circle class="cls-2" cx="10.67" cy="46.22" r="8.89"/>
+</svg>

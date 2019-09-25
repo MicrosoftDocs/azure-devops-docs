@@ -55,46 +55,46 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
   
  The assignment is completed by using the following pieces of information:  
   
--   The priority of the requirement. See the notes in the following subsection.  
+- The priority of the requirement. See the notes in the following subsection.  
   
--   The estimated cost. Given the number of team members and the length of the iteration, each iteration has only a fixed number of hours that are available for development. Furthermore, a significant number of those hours will be used for iteration planning and other tasks that do not directly involve development.  
+- The estimated cost. Given the number of team members and the length of the iteration, each iteration has only a fixed number of hours that are available for development. Furthermore, a significant number of those hours will be used for iteration planning and other tasks that do not directly involve development.  
   
--   Dependencies among the product requirements. In an incremental series of requirements, the simplest requirements must be tackled before enhancements in the same area.  
+- Dependencies among the product requirements. In an incremental series of requirements, the simplest requirements must be tackled before enhancements in the same area.  
   
- You can define the requirement in a work item by specifying a variety of information, as the following illustrations show:  
+  You can define the requirement in a work item by specifying a variety of information, as the following illustrations show:  
   
- ![Requirement work item form](_img/procguid_cmmiform.png "ProcGuid_CMMIform")  
+  ![Requirement work item form](_img/procguid_cmmiform.png "ProcGuid_CMMIform")  
   
 ### Some guidelines on prioritization  
  Many detailed schemes exist for prioritization. We will examine some of these when we consider iteration planning. For now, at the project level, we include some guidelines that may be useful to help manage risk and optimize added value.  
   
-1.  Prioritize minimal end-to-end scenarios.  
+1. Prioritize minimal end-to-end scenarios.  
   
-     Aim to achieve a simple end-to-end scenario as early in the project as possible. Later, add more features to the different parts of the scenario. This practice ensures that the principal functions of the platform and the principal ideas in the requirements are tried early.  
+    Aim to achieve a simple end-to-end scenario as early in the project as possible. Later, add more features to the different parts of the scenario. This practice ensures that the principal functions of the platform and the principal ideas in the requirements are tried early.  
   
-     By contrast, do not divide the schedule according to the architecture. A schedule that completes the database, then the business logic, and then the user interface will probably require a great deal of rework to integrate the parts at the end. In the same manner, a horizontal split such as {sales component; warehouse component; payment component} is not recommended. It would probably produce a wonderful system for selling on the Web but run out of time before the business has a means of getting money from its customers. Complete components can be scheduled for later iterations only if they are truly optional add-ons.  
+    By contrast, do not divide the schedule according to the architecture. A schedule that completes the database, then the business logic, and then the user interface will probably require a great deal of rework to integrate the parts at the end. In the same manner, a horizontal split such as {sales component; warehouse component; payment component} is not recommended. It would probably produce a wonderful system for selling on the Web but run out of time before the business has a means of getting money from its customers. Complete components can be scheduled for later iterations only if they are truly optional add-ons.  
   
-2.  Prioritize technical risk.  
+2. Prioritize technical risk.  
   
-     If a scenario includes a technically risky element, develop it early in the schedule. Take a "fail early" approach to risk. If something cannot be accomplished, you want to know this early in the project so that it can be canceled or replaced with an alternative approach. So prioritize technically risky requirements into early iterations.  
+    If a scenario includes a technically risky element, develop it early in the schedule. Take a "fail early" approach to risk. If something cannot be accomplished, you want to know this early in the project so that it can be canceled or replaced with an alternative approach. So prioritize technically risky requirements into early iterations.  
   
-3.  Prioritize reduction of uncertainty.  
+3. Prioritize reduction of uncertainty.  
   
-     The business stakeholders will not be sure about some requirements. It is difficult to predict what product behavior will work best in the business context. Prioritize work that is likely to reduce the uncertainties. This can often be achieved by developing a simpler version of the scenario with which users can experiment. Defer the full scenario to a later iteration, in which the results of these experiments can be considered.  
+    The business stakeholders will not be sure about some requirements. It is difficult to predict what product behavior will work best in the business context. Prioritize work that is likely to reduce the uncertainties. This can often be achieved by developing a simpler version of the scenario with which users can experiment. Defer the full scenario to a later iteration, in which the results of these experiments can be considered.  
   
-4.  Prioritize highly valuable requirements.  
+4. Prioritize highly valuable requirements.  
   
-     If possible, try to establish an opportunity-cost-of-delay function for each scenario. Use these to determine the requirements that can potentially bring more value to the customers earlier. Prioritize these requirements into earlier iterations. This may buy you the option of releasing a partial product early  
+    If possible, try to establish an opportunity-cost-of-delay function for each scenario. Use these to determine the requirements that can potentially bring more value to the customers earlier. Prioritize these requirements into earlier iterations. This may buy you the option of releasing a partial product early  
   
-5.  Group scenarios that are common to multiple personas.  
+5. Group scenarios that are common to multiple personas.  
   
-     If you have scenarios that have utility for two or more personas, group these together. Rank them by the number of personas that require the scenario. Prioritize the scenarios that apply to a larger number of personas into early iterations.  
+    If you have scenarios that have utility for two or more personas, group these together. Rank them by the number of personas that require the scenario. Prioritize the scenarios that apply to a larger number of personas into early iterations.  
   
-6.  Rank personas.  
+6. Rank personas.  
   
-     Personas represent market segments or user groups. Marketing people or business owners should be able to articulate the priority of such segments or groups based on utility to be delivered or the value of the segment. If segments or user groups can be ranked in priority, show this by listing the personas for each segment by rank. Identify the scenarios for the highest ranked personas, and prioritize these into earlier iterations in the schedule.  
+    Personas represent market segments or user groups. Marketing people or business owners should be able to articulate the priority of such segments or groups based on utility to be delivered or the value of the segment. If segments or user groups can be ranked in priority, show this by listing the personas for each segment by rank. Identify the scenarios for the highest ranked personas, and prioritize these into earlier iterations in the schedule.  
   
- In general, we want to prioritize the reduction of risk because of the possibility of failure. We want to prioritize common functionality because it is likely to be required and unlikely to change. We want to prioritize more valuable requirements. We want to enable the option for early release of the product to a subset of personas by prioritizing all scenarios that are required to satisfy the needs of any one persona.  
+   In general, we want to prioritize the reduction of risk because of the possibility of failure. We want to prioritize common functionality because it is likely to be required and unlikely to change. We want to prioritize more valuable requirements. We want to enable the option for early release of the product to a subset of personas by prioritizing all scenarios that are required to satisfy the needs of any one persona.  
   
 ##  <a name="PlanTests"></a> Planning tests  
  The work estimate for each requirement must include the effort that is required to test the requirement, either manually or by creating an automated test.  

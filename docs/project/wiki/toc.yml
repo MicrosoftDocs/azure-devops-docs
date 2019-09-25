@@ -1,21 +1,17 @@
 - name: Wikis
   href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
-- name: Overview
-  items:
-  - name: "About Wikis, READMes, & Markdown"
-    href: about-readme-wiki.md  
-  - name: Provisioned vs published wikis 
-    href: provisioned-vs-published-wiki.md
+- name: "About Wikis, READMes, & Markdown"
+  href: about-readme-wiki.md  
+- name: Provisioned vs published wikis 
+  href: provisioned-vs-published-wiki.md
 - name: Quickstarts
   items:
-  - name: Create a Wiki for your project
+  - name: Create a wiki for your project
     href: wiki-create-repo.md
-  - name: "Add & edit Wiki pages"
+  - name: "Add & edit wiki pages"
     href: add-edit-wiki.md
   - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
-  - name: Share your project vision
-    href: project-vision-status.md
 - name: Concepts
   items:
   - name: Wiki file structure
@@ -30,35 +26,29 @@
     href: filter-print-wiki.md
   - name: Search Wiki content
     href: search-wiki.md
+  - name: Follow wiki pages, get notifications
+    href: follow-notifications-wiki-pages.md
+  - name: Create work item from wiki content
+    href: create-embed-wit-from-wiki.md
+  - name: Add comments to wiki
+    href: add-comments-wiki.md
   - name: Version, select, or un-publish a wiki
     href: wiki-select-unpublish-versions.md
-  - name: Update Wiki pages offline 
+  - name: Update wiki pages offline 
     href: wiki-update-offline.md
-  - name: "Manage Wiki permissions (Security)"
+  - name: "Manage wiki permissions (Security)"
     href: manage-readme-wiki-permissions.md
-  - name: Migrate Wiki extension pages  
+  - name: Migrate wiki extension pages  
     href: migrate-extension-wiki-pages.md
 - name: Reference
   items:
-  - name: Markdown guidance
+  - name: Basic markdown guidance
     href: Markdown-guidance.md
   - name: Wiki markdown guidance
     href: wiki-markdown-guidance.md
-  - name: Keyboard shortcuts to manage Wiki pages 
+  - name: Keyboard shortcuts to manage wiki pages 
     href: wiki-keyboard-shortcuts.md
   - name: "Default permissions (Security)"
     href: wiki-readme-permissions.md
-  - name: "REST API, Wikis"
-    href: /rest/api/vsts/wiki/wikis 
-  - name: Fetch Wiki Search Results
-    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
   - name: Data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json
-- name: Resources 
-  items:
-  - name: Navigate basics
-    href: ../navigation/index.md
-  - name: Dashboards
-    href: ../../report/dashboards/index.md
-  - name: Manage projects
-    href: ../../organizations/projects/index.md
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json

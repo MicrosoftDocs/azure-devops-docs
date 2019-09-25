@@ -128,36 +128,36 @@ A best-effort transformation is made to maintain the field groupings and layout 
 **Transformed or added elements**  
 
 <ul>
-<li>If you have a **Layout** with ```Target=Web```, it is transformed to the **WebLayout** definition</li>
-<li>If you simply have a single **Layout** section, a new section with the **WebLayout** definition is added</li>
-<li>All parent **Tabs** are converted to a **Page**</li>
-<li>All non-nested **Groups** within a **Tab** are converted to a **Group**; if you have more than four of these groups, some are combined into a single **Group** </li>
-<li>All nested **Groups** within a **Group** remain a **Group** </li>
-<li>All **HTMLFieldControl** and **WebPageControl** elements are moved to the first **Section** within a **Page**. </li>
+<li>If you have a <strong>Layout</strong> with <code>Target=Web</code>, it is transformed to the <strong>WebLayout</strong> definition</li>
+<li>If you simply have a single <strong>Layout</strong> section, a new section with the <strong>WebLayout</strong> definition is added</li>
+<li>All parent <strong>Tabs</strong> are converted to a <strong>Page</strong></li>
+<li>All non-nested <strong>Groups</strong> within a <strong>Tab</strong> are converted to a <strong>Group</strong>; if you have more than four of these groups, some are combined into a single <strong>Group</strong> </li>
+<li>All nested <strong>Groups</strong> within a <strong>Group</strong> remain a <strong>Group</strong> </li>
+<li>All <strong>HTMLFieldControl</strong> and <strong>WebPageControl</strong> elements are moved to the first <strong>Section</strong> within a <strong>Page</strong>. </li>
 </ul>
 
 **Removed elements and attributes**  
 
 <ul>
-<li>All **Splitter** elements are removed </li>
-<li><p>All elements within the form header and **Control** elements with the following type designations are removed from the **WebLayout** section:</p>
+<li>All <strong>Splitter</strong> elements are removed </li>
+<li><p>All elements within the form header and <strong>Control</strong> elements with the following type designations are removed from the <strong>WebLayout</strong> section:</p>
 <ul>
-<li>```AttachmentsControl```</li>
-<li>```LinksControl``` </li>
-<li>```WorkItemClassificationControl```</li>
-<li>```WorkItemLogControl```</li>
+<li><code>AttachmentsControl</code></li>
+<li><code>LinksControl</code> </li>
+<li><code>WorkItemClassificationControl</code></li>
+<li><code>WorkItemLogControl</code></li>
 </ul>
-<p>They aren't required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
+<p>They aren&#39;t required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
 </li>
-<li>The following attributes are removed from each **Control** and **Group** elements:
+<li>The following attributes are removed from each <strong>Control</strong> and <strong>Group</strong> elements:
 <ul>
-<li>```ControlSpacing```</li>
-<li>```FixedWidth``` </li>
-<li>```LabelSpacing```</li>
-<li>```Margin``` </li>
-<li>```MinimumSize```</li>
-<li>```Padding```</li>
-<li>```PercentWidth``` </li>
+<li><code>ControlSpacing</code></li>
+<li><code>FixedWidth</code> </li>
+<li><code>LabelSpacing</code></li>
+<li><code>Margin</code> </li>
+<li><code>MinimumSize</code></li>
+<li><code>Padding</code></li>
+<li><code>PercentWidth</code> </li>
 </ul>
 </li>
 </ul>

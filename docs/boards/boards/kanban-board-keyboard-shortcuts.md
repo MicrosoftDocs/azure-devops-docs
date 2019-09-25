@@ -18,7 +18,9 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
 
 ::: moniker range="tfs-2015"
+
 Global keyboard shortcuts are available from TFS 2015.2 and later versions.
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]

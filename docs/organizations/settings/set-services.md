@@ -33,7 +33,7 @@ You can control which services are available through the web portal by turning a
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
-::: moniker-end
+  ::: moniker-end
 
 ## Change the visibility for a service  
 
@@ -60,7 +60,7 @@ You can control which services are available through the web portal by turning a
 
 If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled and won't appear in the [widget catalog](../../report/dashboards/widget-catalog.md).
 
-If you disable **Boards**, you also disable [**Analytics views**](../../report/analytics/what-are-analytics-views.md).
+If you disable **Boards**, you also disable [**Analytics views**](../../report/powerbi/what-are-analytics-views.md).
 
 ## Related articles
 

@@ -3,16 +3,16 @@ title: Team Foundation Service updates - May 28
 description: VSTS release notes for May 28 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 07422a87-fd33-4a13-a201-5fe9b7bc694f
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - May 28
+# Team Foundation Service updates - May 28
 
-##Build IaaS
+## Build IaaS
 
 Over the past few months, we’ve been working hard on our build service. You haven’t seen much from it yet but the benefits really come to life with today’s deployment. We’ve been working on porting our build pool from the older Azure VM Roles to the new Azure IaaS VMs. There are a number of benefits that come from this:
 
@@ -26,17 +26,18 @@ As I write this, we are currently in the middle of a switch over from the old po
 
 There’s no easy way to tell, in this transition period, whether or not your account is configured to run on the old pool or the new pool. The easiest way to do it would be to create a simple Windows Store app, check it in and submit a build for it. If it succeeds, you are on the new pool.
 
-##Git Alerts
+## Git Alerts
 
 Today we turned on email alerts for Git projects. You can now create email alerts that are triggered when commits are pushed to the service. Push alerts may be filtered by author, committer, pusher, comment, project, and/or repository. If you've never used alerts before, click your name in the page header and select **My Alerts**. From this dialog you can configure which alerts you want to subscribe to and where you want the alerts sent.
 
 ![Git alerts for Team Foundation Service](_img/5_28_01.png)
 
-##Backlogs 
+## Backlogs 
 
 Finally, we made a few small changes to how your product backlog works.  First, the hub has been renamed to just "Backlogs", and your actual product backlog has been named according to the process template you're using (Agile = "Stories", Scrum = "Backlog Items", CMMI = "Requirements").  We also updated the logic of the product backlog to now __show all items until they reach the completed/done state__. Previously, when an item on your backlog was assigned to a sprint and moved to an in progress state, it would disappear from the backlog.  This has been changed so that items only disappear from the backlog after being marked as completed/done.
 
-**Note:** This could result in some items re-appearing on your backlog that were never marked as completed/done.  
+> [!NOTE]
+> This could result in some items re-appearing on your backlog that were never marked as completed/done.  
 
 ![Backlog with in progress items](_img/5_28_02.png)
 

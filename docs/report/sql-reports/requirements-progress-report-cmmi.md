@@ -76,15 +76,15 @@ The Requirements Progress report lists all requirements, filtered by product are
 ##  <a name="Interpreting"></a> Interpreting the Report  
  Depending on your area of focus, you can filter the report in the following ways:  
   
--   Specify the **Iteration** and **Area** paths of interest.  
+- Specify the **Iteration** and **Area** paths of interest.  
   
--   Change the **Recent (Calendar) Days**.  
+- Change the **Recent (Calendar) Days**.  
   
-     By default, the value of this field is seven days.  
+   By default, the value of this field is seven days.  
   
--   Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
+- Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this topic.  
+  For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Questions That the Report Answers  
  You can review the report to determine how much work the team performed for the past week or recent period. Specifically, you can find answers to the following questions:  
@@ -132,19 +132,19 @@ The Requirements Progress report lists all requirements, filtered by product are
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Requirements Progress report or change its display in the following ways:  
   
--   Filter the list of requirements that appear by changing the iteration or area paths.  
+- Filter the list of requirements that appear by changing the iteration or area paths.  
   
--   Change the time interval that determines what is considered recent.  
+- Change the time interval that determines what is considered recent.  
   
-     The amount of **Recently Completed** work is the work that the team performed or added during the interval specified by **Recent (Calendar) Days**. To determine whether the team performed any work in the last week, you set the value to 7 days. To determine how much work the team completed in the last month, you set the value to 30 days.  
+   The amount of **Recently Completed** work is the work that the team performed or added during the interval specified by **Recent (Calendar) Days**. To determine whether the team performed any work in the last week, you set the value to 7 days. To determine how much work the team completed in the last month, you set the value to 30 days.  
   
--   Change the scale that is used to show progress.  
+- Change the scale that is used to show progress.  
   
-     You can view the report in absolute scale or in 100% scale. Absolute scale shows progress relative to work that the team performed on all requirements in the report, and 100% scale shows progress specific to the baseline of work for each requirement.  
+   You can view the report in absolute scale or in 100% scale. Absolute scale shows progress relative to work that the team performed on all requirements in the report, and 100% scale shows progress specific to the baseline of work for each requirement.  
   
- The following illustration shows the available filters and display options.  
+  The following illustration shows the available filters and display options.  
   
- ![Filters for Stories Progress report](_img/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
+  ![Filters for Stories Progress report](_img/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
   
 #### To filter the requirements that appear in the report  
   

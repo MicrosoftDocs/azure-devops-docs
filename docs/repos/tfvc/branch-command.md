@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **branch** command copies an item or set of items, including metadata and version control history, from one location to another in the Team Foundation version control server and in the local workspace.
 
@@ -30,15 +30,15 @@ To use the **branch** command, you must have the **Read** permission for the sou
     tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]] [/recursive]
 ## Parameters
 
-|**Argument**|**Description**|
-|---|---|
-|*olditem*|Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.|
-|*newitem*|Specifies the name of the destination file or folder or the parent folder for the destination. If *newitem* already exists and is a Team Foundation version control server folder, Team Foundation creates the branched items within it. Otherwise, *newitem* specifies the name of the destination file or folder. Conflicts can occur during check-in if the destination already exists.|
-|*versionspec*|Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).|
-|*comment*|Provides a comment about the branch.|
-|*@commentfile*|Specifies the path of a file that contains the comment that is used for the branch.|
-|*authorname*|The user-provided value for the **/author** option.|
-|*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+|     **Argument**      |                                                                                                                                                                                      **Description**                                                                                                                                                                                       |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       *olditem*       |                                                                                                                      Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.                                                                                                                      |
+|       *newitem*       | Specifies the name of the destination file or folder or the parent folder for the destination. If *newitem* already exists and is a Team Foundation version control server folder, Team Foundation creates the branched items within it. Otherwise, *newitem* specifies the name of the destination file or folder. Conflicts can occur during check-in if the destination already exists. |
+|     *versionspec*     |                                                            Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).                                                            |
+|       *comment*       |                                                                                                                                                                            Provides a comment about the branch.                                                                                                                                                                            |
+| <em>@commentfile</em> |                                                                                                                                                    Specifies the path of a file that contains the comment that is used for the branch.                                                                                                                                                     |
+|     *authorname*      |                                                                                                                                                                    The user-provided value for the **/author** option.                                                                                                                                                                     |
+|      *username*       |                                                                                                                                 Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                                                  |
 
 <table><thead>
 <tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.date: 09/10/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
@@ -31,7 +31,7 @@ In this article, we'll show you how to start working with your code in Azure Rep
 Install one of the following Git command-line tools:
 
   - To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager for Windows](../git/set-up-credential-managers.md#windows).
-  - To install Git for macOS and Linux, see [Install Git Credential Manager for macOS and Linux](../git/set-up-credential-managers.md#macos-and-linux).
+  - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
 
 ## Get your code
 
@@ -95,7 +95,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    cd fabrikam-web
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    cd SmartHotel360
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 
@@ -254,7 +254,7 @@ This example shows the basic steps of creating and completing a pull request.
    cd fabrikam-web
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 

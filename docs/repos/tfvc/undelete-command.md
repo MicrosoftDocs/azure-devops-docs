@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,12 +16,12 @@ monikerRange: '>= tfs-2015'
 
 # Undelete Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **undelete** command restores items that were previously deleted.
 
->**Note:**  
->  ** **The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 
@@ -31,11 +31,11 @@ To use the **undelete** command, you must have the **Check out** permission set 
     [/recursive] itemspec[;deletionID] [/login:username,[password]]
 ## Parameters
 
-**Argument**|**Description**|
-|---|---|
-|*itemspec*|Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).|
-|*deletionID*|Specifies a unique identifier that disambiguates multiple deleted items with the same name.|
-|*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+| **Argument** |                                                                                                                 **Description**                                                                                                                 |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be). |
+| *deletionID* |                                                                           Specifies a unique identifier that disambiguates multiple deleted items with the same name.                                                                           |
+|  *username*  |                                                            Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                            |
 
 <table><thead>
 <tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>

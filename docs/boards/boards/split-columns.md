@@ -63,14 +63,14 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 ::: moniker range=">= azure-devops-2019"
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
 
-0. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.  
+2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.  
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
@@ -78,7 +78,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board settings dialog, Split columns](_img/columns/split-columns-tfs-2018.png)  
 
-0. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
 
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
@@ -87,13 +87,13 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
-0. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
+2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
@@ -101,31 +101,31 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board settings dialog, Split columns](_img/columns/split-columns-tfs-2018.png)  
 
-0. When done with your changes, choose **Save**.  
+3. When done with your changes, choose **Save**.  
 
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
-::: moniker-end
+   ::: moniker-end
 
 ::: moniker range="tfs-2015"  
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
 	**For TFS 2015.1 and later versions**  
-0.	Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
+2. Choose **Columns** and then choose the column tab that you want to split. Place a check in the checkbox to cause the column to split.   
 
-	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
+   ![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
 
-	> [!NOTE]   
-	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
+   > [!NOTE]   
+   > You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
-0. When done with your changes, choose **Save**.  
+3. When done with your changes, choose **Save**.  
 
 	**For TFS 2015**   
-0. Choose the column tab that you want to set.   
+4. Choose the column tab that you want to set.   
 
 	![Customize Kanban board with split columns](_img/kanban-board-configure-split-columns.png)  
    

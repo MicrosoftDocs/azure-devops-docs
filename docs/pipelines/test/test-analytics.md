@@ -1,5 +1,5 @@
 ---
-title: Analyze test results
+title: Test Analytics
 description: Get meaningful insights with test analytics in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops
@@ -9,11 +9,11 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
 author: vinodjo
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+ms.date: 06/28/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
-# Analyze test results
+# Test Analytics
 
 [!INCLUDE [version-header-ap](../_shared/version-team-services.md)]
 
@@ -26,17 +26,9 @@ It helps improve the efficiency of your pipeline by identifying repetitive, high
 
 Read the [glossary](./test-glossary.md) to understand test reports terminology.
 
-::: moniker range="<= tfs-2018"
+## Install the Analytics extension if required
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-
-::: moniker-end
-
-## Install the Analytics extension
-
-1. Go to the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in Marketplace.
-1. Choose to install the Analytics extension. You might need to sign in with your Azure DevOps Services organization credentials.
-2. Select the organization where you would like to install this extension and confirm. [Learn more about installing extensions](../../marketplace/overview.md).
+For more information, see [The Analytics Marketplace extension](../../report/dashboards/analytics-extension.md).
 
 <a name="viewinbuild"></a>
 

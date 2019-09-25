@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Resolve Team Foundation Version Control conflicts
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
 
@@ -79,10 +79,10 @@ The system attempts to automatically resolve the conflicts displayed in the Pend
 
 Choose **AutoMerge** if you want to try to resolve selected conflicts using all the AutoMerge options described in [Understand the automatic options](resolve-team-foundation-version-control-conflicts.md#automatic_options) below.
 
-> **Tip:**  
+> [!TIP]
 > You can press and hold either the Ctrl or the Shift key and then select multiple conflicts.
-
-> **Note:**  
+>
+> [!NOTE]
 > If **AutoMerge** is disabled, then this conflict must be [manually resolved](resolve-team-foundation-version-control-conflicts.md#manual).
 
 <a name="manual"></a>

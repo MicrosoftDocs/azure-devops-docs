@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 12/20/2018
---- 
+---
 
 # CMMI process work item types and workflow
 
@@ -56,31 +56,29 @@ Use the following guidance and that provided for [fields used in common across w
   <tr>
     <td>
       <p>
-        [Description](../../queries/titles-ids-descriptions.md)
+        <a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a>
       </p>
     </td>
     <td>
-      <p>Provide enough detail for estimating how much work will be required to implement the requirement. Focus on who the requirement is for, what users want to accomplish, and why. Don't describe how the requirement should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</p>
+      <p>Provide enough detail for estimating how much work will be required to implement the requirement. Focus on who the requirement is for, what users want to accomplish, and why. Don&#39;t describe how the requirement should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</p>
       <p>In HTML fields, you can add rich text and images. </p>
       <p>
-        
       </p>
     </td>
   </tr>
   <tr>
     <td>
-      <p>[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md)</p>
+      <p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md)">Impact Assessment</a></p>
     </td>
     <td>
       <p>The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.</p>
       <p>
-        
       </p>
     </td>
   </tr>
   <tr>
     <td>
-      <p>[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (Required) </p>
+      <p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (Required) </p>
     </td>
     <td>
       <p>The kind of requirement to implement. You can specify one of the following values: </p>
@@ -132,10 +130,8 @@ Use the following guidance and that provided for [fields used in common across w
       </ul>
     </td>
   </tr>
-
-
 <tr>
-	<td><p>[Value area](../../queries/planning-ranking-priorities.md)</p></td>
+    <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value area](../../queries/planning-ranking-priorities.md)">Value area</a></p></td>
 	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
         <ul>
         <li>
@@ -150,38 +146,31 @@ Use the following guidance and that provided for [fields used in common across w
         </li>
       </ul>
 </td></tr>
-
   <tr>
     <td>
       <p>
-        [Size](../../queries/query-numeric.md) </p>
+        <a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> </p>
     </td>
     <td>
-
- 
-
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p>
+      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p>
     </td>
   </tr>
 <tr>
-	<td><p>[Original Estimate](../../queries/query-numeric.md) </p></td>
-	<td><p>The amount of estimated work required to complete a task. Typically, this field doesn't change after it is assigned.</p>
+    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a> </p></td>
+    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
-
 <tr>
-	<td><p>[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md) </p></td>
-	<td><p>The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) when you use it for scheduling.</p>
+    <td><p><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md)">Start Date/Finish Date</a> </p></td>
+    <td><p>The target dates for when the work will start or finish. These fields are filled in by <a href="../../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)">Microsoft Project</a> when you use it for scheduling.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
-
-
   <tr>
     <td>
       <p>
-        [Priority](../../queries/planning-ranking-priorities.md) (Required)</p>
+        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> (Required)</p>
     </td>
     <td>
       <p>A subjective rating of the requirement as it relates to the business. Allowed values are:</p>
@@ -192,7 +181,7 @@ Use the following guidance and that provided for [fields used in common across w
         </li>
         <li>
           <p>
-            <strong>2</strong>: (default) Product cannot ship without the item, but it doesn't have to be addressed immediately. </p>
+            <strong>2</strong>: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. </p>
         </li>
         <li>
           <p>
@@ -207,7 +196,7 @@ Use the following guidance and that provided for [fields used in common across w
   <tr>
     <td>
       <p>
-       [Triage](../../queries/planning-ranking-priorities.md) (Required) </p>
+       <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Triage](../../queries/planning-ranking-priorities.md)">Triage</a> (Required) </p>
     </td>
     <td>
       <p>Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the Proposed state and specify one of the following values: <strong>Pending</strong> (default), <strong>More Info</strong>, <strong>Info Received</strong>, and <strong>Triaged</strong>.</p>
@@ -216,7 +205,7 @@ Use the following guidance and that provided for [fields used in common across w
   <tr>
     <td>
       <p>
-        [Blocked](../../queries/planning-ranking-priorities.md)</p>
+        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Blocked](../../queries/planning-ranking-priorities.md)">Blocked</a></p>
     </td>
     <td>
       <p>Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify <strong>Yes</strong> of <strong>No</strong>.</p>
@@ -225,27 +214,25 @@ Use the following guidance and that provided for [fields used in common across w
   <tr>
     <td>
       <p>
-        [Committed](../../queries/planning-ranking-priorities.md) (Required)  </p>
+        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Committed](../../queries/planning-ranking-priorities.md)">Committed</a> (Required)  </p>
     </td>
     <td>
       <p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
     </td>
   </tr>
-
   <tr>
     <td>
       <p>
-        [Integrated In](../../queries/build-test-integration.md)  </p>
+        <a href="../../queries/build-test-integration.md" data-raw-source="[Integrated In](../../queries/build-test-integration.md)">Integrated In</a>  </p>
     </td>
     <td>
       <p>Product build number that incorporates the requirement, change request, or fixes a bug.</p>
     </td>
   </tr>
-
   <tr>
     <td>
       <p>
-        [User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (Required) </p>
+        <a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md)">User Acceptance Test</a> (Required) </p>
     </td>
     <td>
       <p>The status of the user acceptance test for a requirement. You can specify one of the following values:   </p>
@@ -283,12 +270,10 @@ Use the following guidance and that provided for [fields used in common across w
 	<p>You specify Not Ready when the requirement is in the Active state, and you specify Ready when the requirement is in the Resolved state.</p>
     </td>
   </tr>
-
-
   <tr>
     <td>
       <p>
-        [Subject Matter Experts](cmmi/guidance-requirements-field-reference-cmmi.md) 
+        <a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Subject Matter Experts](cmmi/guidance-requirements-field-reference-cmmi.md)">Subject Matter Experts</a> 
       </p>
     </td>
     <td>
@@ -361,7 +346,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 </thead>
 <tbody valign="top">
 <tr>
-<td><p>[Task Type](cmmi/guidance-requirements-field-reference-cmmi.md) </p></td>
+<td><p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Task Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Task Type</a> </p></td>
 <td><p>Select the kind of task to implement from the allowed values:</p>
 <ul>
 <li><p><strong>Corrective Action</strong></p></li>
@@ -370,7 +355,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 </ul></td>
 </tr>
 <tr>
-<td><p>[Discipline](../../queries/query-numeric.md)</p></td>
+<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Discipline](../../queries/query-numeric.md)">Discipline</a></p></td>
 <td><p>Select the discipline this task represents when your team estimates sprint capacity by activity.</p>
 <ul>
 <li><p><strong>Analysis</strong></p></li>
@@ -379,23 +364,21 @@ When teams estimate work they define tasks and estimate the hours or days to com
 <li><p><strong>User Education</strong></p></li>
 <li><p><strong>User Experience</strong></p></li>
 </ul>
-<p>This field is also used to calculate capacity by discipline. It is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file. (2)</p>
-<p>For additional guidance, see [Implement development tasks](cmmi/guidance-implement-development-tasks.md).</p></td>
+<p>This field is also used to calculate capacity by discipline. It is assigned to <code>type=&amp;quot;Activity&amp;quot;</code> in the ProcessConfiguration file. (2)</p>
+<p>For additional guidance, see <a href="cmmi/guidance-implement-development-tasks.md" data-raw-source="[Implement development tasks](cmmi/guidance-implement-development-tasks.md)">Implement development tasks</a>.</p></td>
 </tr>
 <tr>
-<td><p>[Original Estimate](../../queries/query-numeric.md) </p></td>
-<td><p>The amount of estimated work required to complete a task. Typically, this field doesn't change after it is assigned.</p></td>
+<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a> </p></td>
+<td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p></td>
 </tr>
 <tr>
-<td><p>[Remaining Work](../../queries/query-numeric.md)</p></td>
+<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
 <td>
-
-<p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../sprints/sprint-burndown.md), and the [Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx) report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
-
+<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the <a href="https://msdn.microsoft.com/library/ff731588.aspx" data-raw-source="[Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
 </td>
 </tr>
 <tr>
-<td><p>[Completed Work](../../queries/query-numeric.md)</p></td>
+<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a></p></td>
 <td><p>The amount of work that has been spent implementing a task.</p></td>
 </tr>
 </tbody>
@@ -440,6 +423,7 @@ Work items you add from the widget are automatically scoped to your team's defau
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
 
 ## Customize work item types
+
 [!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
 
 ## Related articles 
@@ -453,8 +437,7 @@ The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to 
 
 This field doesn't appear on the work item form. 
 
-
-  
+::: moniker range="<= tfs-2015"
 
 ### Links control, client work item form 
 
@@ -546,4 +529,4 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </tbody>
 </table>
 
-
+::: moniker-end

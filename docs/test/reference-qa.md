@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/01/2018
+ms.author: sdanie
+author: steved0x
+ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -51,9 +51,11 @@ Drag and drop tests to reorder them.
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
 
-### Q: Can I copy, clone, and move test plans and test suites?
+<a name="copyclonetce"></a>
 
-**A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
+### Q: Can I copy or clone test plans and test suites?
+
+**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -134,9 +136,10 @@ Switch between Grid and List views using the View menu at the right of the windo
 
 ![Use the View menu to switch between List and Grid views](_img/create-test-cases/GridViewSwitch.png)
 
-> **Note**: Do not use the Team plugin for Excel to add or update test case work items.
-  Excel cannot parse the format used to store test steps, and in some cases
-  this may affect the formatting of the test case work items. 
+> [!NOTE]
+> Do not use the Team plugin for Excel to add or update test case work items.
+> Excel cannot parse the format used to store test steps, and in some cases
+> this may affect the formatting of the test case work items. 
 
 ### Q: Can I bulk edit multiple test cases?
 
@@ -155,12 +158,6 @@ just the ones that you want to bulk edit using the grid.
 
 To return to the test suite view, switch the view 
 from Grid back to List.
-
-<a name="copyclonetce"></a>
-
-### Q: Can I copy, clone, and move test plans and test suites?
-
-**A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
 
 ### Q: Can I copy test cases and test steps from an existing Excel worksheet?
 
@@ -316,7 +313,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for Azure DevOps. 
+**A:** Yes, if you have Azure Test Plans for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -375,7 +372,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: Can I opt out of telemetry for the Test Runner client? 
 
 **A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
-in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
 no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
@@ -534,7 +531,7 @@ Some browser versions do not currently support all the features of the Test &amp
 
 <p />
 For more details, see 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web), Azure DevOps tab.
+<a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
 
 <a name="recording-playback"><a/>
 ### Q: How do I play the video recordings I created with the extension?

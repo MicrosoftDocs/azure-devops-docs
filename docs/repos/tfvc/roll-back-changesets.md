@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,11 +16,11 @@ monikerRange: '>= tfs-2015'
 
 # Roll back changesets
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 A [changeset](find-view-changesets.md) is a permanent part of the history of your version-controlled items and cannot be undone or removed. However, you can roll back the effects of one or more changesets.
 
-> **Tip:**  
+> [!TIP]
 > You can confirm the changes that result from rolling back some items match what you intend to do before you commit them to the server. See [Tips](roll-back-changesets.md#tips) for details.
 
 **Required permissions**
@@ -44,7 +44,7 @@ For example, a developer wants to remove the effects of a changeset:
 
 1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
 
-    > **Note:**  
+    > [!NOTE]
     > The items you select determine the scope that the rollback changes.
 
 2.  In the **Rollback** dialog box, select **Rollback changes from a single changeset**.
@@ -62,7 +62,7 @@ For example, a developer wants to remove the effects of some consecutive changes
 
 1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and choose **Rollback**.
 
-    > **Note:**  
+    > [!NOTE]
     > The items you select determine the scope that the rollback changes.
 
 2.  In the **Rollback** dialog box, select **Rollback changes from a range of changesets**.

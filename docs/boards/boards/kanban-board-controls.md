@@ -49,6 +49,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 > [!div class="mx-tdCol2BreakAll"]
 > |Control                  | Function                      |
 > |--------------------------|-------------------------------|
@@ -71,10 +72,13 @@ Enter **?** to open the Kanban board keyboard shortcuts.
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 Global keyboard shortcuts are available from TFS 2015.2 and later versions.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end

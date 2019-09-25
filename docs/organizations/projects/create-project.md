@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/25/2019
+ms.date: 03/26/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -109,7 +109,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-3. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](../../project/wiki/project-vision-status.md).
+3. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](project-vision-status.md).
 
 ::: moniker-end
 
@@ -142,11 +142,11 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 
 1. If you have TFS 2017.1 or a later version, choose the ![gear icon](../../_img/icons/gear-icon.png) to open the **Projects** page, and then choose **New Project**.
 
-  > [!div class="mx-imgBorder"]  
-  > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
-
-   >Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
-
+   > [!div class="mx-imgBorder"]  
+   > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
+   > 
+   > Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
+   > 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
@@ -211,7 +211,8 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    >**Tip:**  If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
+    > [!TIP]
+    > If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
 
 5. If it's your first time connecting to TFS, you need to add TFS to the list of recognized servers.
 
@@ -236,7 +237,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
     Not sure which system to use? Learn more about 
     [Git](../../repos/git/overview.md) or [TFVC](../../repos/tfvc/overview.md).
 
-    After you've created your project, you can [add repositories](#git-and-tfvs-repos).
+    After you've created your project, you can [add repositories](#add-a-repository).
 
 10. Unless your project collection is configured to support a SharePoint project portal, you're done.
 
@@ -254,8 +255,8 @@ You can create a project from Team Explorer after you have connected to an on-pr
 	<table>
 	<tbody valign="top">
 	<tr>
-	<td>![Team Explorer Home page w/ TFVC as source control](_img/IC827209.png)</td>
-	<td>![Team Explorer Home page with Git as source control](_img/IC827210.png)</td>
+    <td><img src="_img/IC827209.png" alt="Team Explorer Home page w/ TFVC as source control"/></td>
+    <td><img src="_img/IC827210.png" alt="Team Explorer Home page with Git as source control"/></td>
 	</tr>
 	</tbody>
 	</table>

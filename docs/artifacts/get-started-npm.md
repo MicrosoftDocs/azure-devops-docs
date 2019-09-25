@@ -6,8 +6,8 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 02/27/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 This quickstart guides you through using npm to store JavaScript packages in Azure DevOps Services or Team Foundation Server (TFS). It covers installation, license assigning, and setup.
 
-## Step 1: License the Azure Artifacts extension
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
-::: moniker range="< azure-devops-2019" 
+## License the Azure Artifacts extension
 
 ### Install Azure Artifacts in TFS
 
@@ -30,9 +30,9 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="azure-devops-2019" 
 
-### Assign Azure Artifacts in Azure DevOps Services
+## Assign Azure Artifacts in Azure DevOps Services
 
 Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
 
@@ -52,7 +52,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019" 
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
 ### Assign licenses in TFS
 
@@ -74,7 +74,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ::: moniker-end
 
-## Step 2: Create a feed
+## Create a feed
 
 On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
 
@@ -97,9 +97,11 @@ In the dialog box:
 
 ::: moniker-end
 
-You can change these settings later by [editing the feed](./feeds/edit-feed.md).
+You can change these settings later by editing the feed.
 
-## Step 3: Set up your .npmrc files
+[!INCLUDE [edit-feed](_shared/edit-feed.md)]
+
+## Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
@@ -124,7 +126,7 @@ We recommend that you use two .npmrc files:
 
      ::: moniker-end
 
-  1. Copy the "registry" text:
+  2. Copy the "registry" text:
 
      ::: moniker range=">= azure-devops-2019"
 
@@ -139,7 +141,7 @@ We recommend that you use two .npmrc files:
 
      ::: moniker-end
 
-  1. From your **Packages** page, select **Connect to feed**.
+  3. From your **Packages** page, select **Connect to feed**.
 
      ![Connect to feed button on the upper right of the page](_shared/_img/connect-to-feed.png)
 
@@ -174,7 +176,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 There are two options for setting up authentication in a build task:
 * [Without a task runner](#without-a-task-runner)
-* [With a task runner (for example, Gulp)](#with-a-task-runner-eg-make-gulp-work)
+* [With a task runner (for example, make Gulp work)](#with-a-task-runner-for-example-make-gulp-work)
 
 #### Without a task runner
 To set up npm authentication in a build task _without_ a task runner, use the following directions:
@@ -194,11 +196,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
+2. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
 
-1. Select **Empty job** at the top of the form.
+3. Select **Empty job** at the top of the form.
 
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
+4. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -213,11 +215,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Select **Package** or search for **npm** on the search bar, select **npm**, and select **Add**:
+5. Select **Package** or search for **npm** on the search bar, select **npm**, and select **Add**:
 
    ![Package tab](_shared/_img/build-definition/build-definition-npm-task.png)
 
-1. Select the **npm install** task under **Agent job 1**:
+6. Select the **npm install** task under **Agent job 1**:
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -232,11 +234,11 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
    ::: moniker-end
 
-1. Browse to and select your folder under **Working folder with package.json**:
+7. Browse to and select your folder under **Working folder with package.json**:
 
    ![Working folder](_shared/_img/build-definition/build-definition-working-folder.png)
 
-1. Expand **Custom registries and authentication**. Here you have a few options: 
+8. Expand **Custom registries and authentication**. Here you have a few options: 
 
    * **Registries in my .npmrc**
 
@@ -270,11 +272,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
+2. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
 
-1. Select **Empty process** at the top of the form.
+3. Select **Empty process** at the top of the form.
 
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
+4. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -289,11 +291,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Select **Package** or search for **npm** in the search bar, select **npm Authenticate**, and select **Add**:
+5. Select **Package** or search for **npm** in the search bar, select **npm Authenticate**, and select **Add**:
 
    ![Package tab](_shared/_img/build-definition/build-definition-npm-auth-task.png)
 
-1. Select the **npm Authenticate** task under **Agent job 1**:
+6. Select the **npm Authenticate** task under **Agent job 1**:
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -308,17 +310,17 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    ::: moniker-end
 
-1. Browse to and select your file under **.npmrc file to authenticate**:
+7. Browse to and select your file under **.npmrc file to authenticate**:
 
    ![Selecting the .npmrc file](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
    > You can choose credentials to authenticate to outside your current organization or collection by setting up [service connections](../pipelines/library/service-endpoints.md#sep-npm).
 
-1. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
+8. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
 
-## Step 4: Use packages from npmjs.com
+## Use packages from npmjs.com
 
-In addition to packages that you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Step 2](#step-2-create-a-feed)), you should be able to use packages from an upstream source. To try it, run an `npm install` command (for example, `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](concepts/upstream-sources.md).
+In addition to packages that you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Create a feed](#create-a-feed)), you should be able to use packages from an upstream source. To try it, run an `npm install` command (for example, `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](concepts/upstream-sources.md).
 
 You can choose to enable or disable upstream sources on the **Settings** > **Upstream sources** tab:
 
@@ -335,11 +337,11 @@ You can choose to enable or disable upstream sources on the **Settings** > **Ups
 
 ::: moniker-end
 
-## Step 5: Build your project
+## Build your project
 
-At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Step 2](#step-2-create-a-feed).
+At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
 
-## Step 6: Publish an npm package
+## Publish an npm package
 
 You can now publish the npm package:
 
@@ -347,7 +349,7 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-> The `npm publish` command will work because of the credentials that you acquired in [Step 3](#step-3-set-up-your-npmrc).
+> The `npm publish` command will work because of the credentials that you acquired in [Set up your .npmrc files](#set-up-your-npmrc-files).
 
 If you have followed all of the steps up to this point, package publishing should simply work.
 

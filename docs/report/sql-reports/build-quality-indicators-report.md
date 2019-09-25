@@ -9,7 +9,7 @@ ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -62,13 +62,13 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
  You can filter the report in the following ways:  
   
--   Change the range of the X-axis by specifying the number of builds and specifying the end date for the report. The date of the first build shown will depend on the frequency of builds.  
+- Change the range of the X-axis by specifying the number of builds and specifying the end date for the report. The date of the first build shown will depend on the frequency of builds.  
   
--   Filter the set of builds that the report shows by specifying the platform, configuration, and build definition to include in the report. Set the parameters in that sequence because the set of available values for build definition depends on the platform and configuration.  
+- Filter the set of builds that the report shows by specifying the platform, configuration, and build definition to include in the report. Set the parameters in that sequence because the set of available values for build definition depends on the platform and configuration.  
   
--   Filter the bugs that are counted in the report by specifying the product areas to include. This filter does not affect the set of builds that appear on the X-axis, the code churn, code coverage, or test results.  
+- Filter the bugs that are counted in the report by specifying the product areas to include. This filter does not affect the set of builds that appear on the X-axis, the code churn, code coverage, or test results.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Test and Build Management Activities  
  For the Build Quality Indicators report to be useful and depict all the quality indicators that it can display, team members must perform the following activities to manage tests and builds:  
@@ -124,13 +124,13 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
 ### Healthy Version of Report  
  A healthy Build Quality Indicators report will show the following indicators:  
   
--   Most tests are passing (large areas of green), and few tests are failing (small amounts of red).  
+- Most tests are passing (large areas of green), and few tests are failing (small amounts of red).  
   
--   The percentage of red is less than 20-30 percent.  
+- The percentage of red is less than 20-30 percent.  
   
- As the following illustration shows, code coverage and test pass rates are high and increasing over time. Code churn, active bugs, inconclusive tests, and failed tests are all low and decreasing.  
+  As the following illustration shows, code coverage and test pass rates are high and increasing over time. Code churn, active bugs, inconclusive tests, and failed tests are all low and decreasing.  
   
- ![Healthy version of Build Qualities Indicator](_img/procguid_buildquality_healthy.png "ProcGuid_BuildQuality_Healthy")  
+  ![Healthy version of Build Qualities Indicator](_img/procguid_buildquality_healthy.png "ProcGuid_BuildQuality_Healthy")  
   
 ### Unhealthy Versions of the Build Quality Indicators Report  
  An unhealthy version of the Build Quality Indicators report shows one or more of the following indicators. You might want to investigate the cause according to the following guidance.  
@@ -172,20 +172,20 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
 ##  <a name="Changing"></a> Filtering the Report  
  You can filter the Build Quality Indicators report in the following ways:  
   
--   Change the time interval by specifying the number of builds and specifying the end date for the report.  
+- Change the time interval by specifying the number of builds and specifying the end date for the report.  
   
--   Filter the set of builds that are represented in the report by specifying the platform, configuration, and build definition to include in the report.  
+- Filter the set of builds that are represented in the report by specifying the platform, configuration, and build definition to include in the report.  
   
-    > [!NOTE]
-    >  You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
+  > [!NOTE]
+  >  You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
   
--   Filter the bugs that are counted in the report by specifying the product areas to include.  
+- Filter the bugs that are counted in the report by specifying the product areas to include.  
   
- The following illustration shows the available filters:  
+  The following illustration shows the available filters:  
   
- ![Filters for Build Quality Indicators](_img/procguid_buildqualityindicators_filters.png "ProcGuid_BuildQualityIndicators_Filters")  
+  ![Filters for Build Quality Indicators](_img/procguid_buildqualityindicators_filters.png "ProcGuid_BuildQualityIndicators_Filters")  
   
- Apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
+  Apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
   
 #### To filter the builds that appear in the report  
   

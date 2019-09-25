@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -79,7 +79,8 @@ Code Search is an opt-in feature, and can be installed later from the Local Gall
 To do this, go to **Local Gallery** (`http://{Server}/tfs/_gallery`) as an administrator.
 Non-administrative users can also go here to request the extension be added to TFS or Azure DevOps Server. 
 
-For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 
+in the Local gallery documentation.
 
 <a name="config-tfs"></a>
 ## Configure Search in Azure DevOps Server or TFS
@@ -161,7 +162,7 @@ as part of the configuration:
 #### Java installation notes
 
 If the Search configuration wizard does not detect a working installation of a 
-Java Runtime Environment (JRE), it provides an option to download and install the latest version. 
+Java Runtime Environment (JRE), it provides an option to download and install the latest supported version. 
 Internet connectivity is required to download this.
 If the target server does not have Internet connectivity, you must download 
 and install a JRE manually before attempting to install Search.
@@ -172,15 +173,18 @@ and install a JRE manually before attempting to install Search.
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
 to point to the JRE installation folder. The configuration wizard may fail 
 to detect an existing JRE installation if it is not correctly configured, 
-or if the **JAVA\_HOME** setting points to an earlier version than that required 
-by Search. 
+or if the **JAVA\_HOME** setting points to an earlier version than that required by Search. 
 
-If there is a version of a JRE **earlier** than the minimum required by  
+> [!NOTE]   
+> We don't advise installing Elasticsearch on a machine where resources are shared, especially on a large enterprise environment with multiple application tiers. Instead, we recommend setting up Elasticsearch in a separate dedicated machine. In that way, the JAVA environment isn't shared across machines for other purposes.
+
+
+If there is a version of a JRE **earlier** than the minimum required by 
 Search, and the **JAVA\_HOME** variable is set to that version, we recommend 
 you install Search on a separate server because changing the value 
 of the **JAVA\_HOME** variable may cause other installed software to fail.
 
-If there is a version of Server JRE **equal to or later** than the minimum required
+If there is a version of Server JRE **equal to or later** than the minimum required 
 by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the JRE installation guide and then rerun the configuration wizard.
@@ -275,14 +279,20 @@ Consider the following when configuring Search:
     This will cause all Search indexes for all collections to be re-created which,
     depending on the size of each collection, might take some time.<p />
     
-* If you are **detaching a collection** from one Azure DevOps Server or TFS instance in order to attach it to another instance, ensure that:
+* If you are **detaching a collection** from one Azure DevOps Server or TFS instance in order to attach it to another 
+  instance, follow the below sequence:
 
-  - Search has been configured on the target Azure DevOps Server or TFS instance.
+  - Detach the collection from source Azure DevOps Server or TFS instance.
 
-  - Before you detach the collection, you have uninstalled the Search extension (Code, Work Item, or Wiki) for that collection from the **Manage Extensions** page of your source server instance.
+  - Configure Search on the target Azure DevOps Server or TFS instance (if not yet done already).
 
-  - After you attach the collection to the target Azure DevOps Server or TFS instance, you install the Search extension (Code, Work Item, or Wiki) for that collection from the Local Gallery by
-    browsing to it from that Azure DevOps Server or TFS instance.
+  - Attach the collection to the target Azure DevOps Server or TFS instance
+
+  - Uninstall all the Search extensions (Code, Work Item, or Wiki) for that collection from the **Local Gallery** 
+    page of your source Azure DevOps Server or TFS instance.
+
+  - Install the Search extension (Code, Work Item, or Wiki) for that collection from the **Local Gallery** by
+    browsing to it from your target Azure DevOps Server or TFS instance.
 
 <a name="separate-server"></a>
 ### Installing or updating Search on a separate server
@@ -391,8 +401,8 @@ to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
 **[this GitHub repository](https://github.com/Microsoft/Code-Search)**.
-You may wish to download all of the scripts into a local folder on your Azure DevOps Server
-server using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
+You may wish to download all of the scripts into a local folder on the server running the database for Azure DevOps Server
+using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
 the **SqlScripts** folder and its contents is present, along with the PowerShell scripts.
 
 ![Download script files for administration](_img/administration/script-filesv2.png)
@@ -412,7 +422,7 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
 
-(For TFS 2017 Update 1 and later, and Azure DeveOps Server, see the [next section](#index-update1))
+(For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#index-update1))
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection:
 
@@ -454,7 +464,7 @@ To check the indexing status after Search is configured, or after the extension 
 1. If the problem persists, contact customer support at the address shown at the end of this topic. 
 
 <a name="index-update1"></a>
-### Check indexing status for TFS 2017 Update 1 and later, and Azure DeveOps Server
+### Check indexing status for TFS 2017 Update 1 and later, and Azure DevOps Server
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection:
 
@@ -533,6 +543,11 @@ with administrative privileges. You will be prompted to enter:
 * The name of the Azure DevOps Server or TFS collection database.
 * The name of the Azure DevOps Server or TFS configuration database.
 * The name of the collection.
+* The entities to reindex. This can be one of the following values:
+  - **All**
+  - **Code**
+  - **WorkItem**
+  - **Wiki**
 
 Re-indexing a collection can take from a few minutes 
 to a few hours, depending on the size of the collection. 
@@ -569,14 +584,14 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker-end
 
-1. Remove the Search feature:
+2. Remove the Search feature:
 
    - Open the Azure DevOps Server or TFS Administration Console.
    - In the left pane, select the name of the server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select the **Search service** and choose **Remove**.<p />
   
-1. Remove the Elasticsearch service:
+3. Remove the Elasticsearch service:
 
    - Open **Command Prompt** as an administrator
    - Change directory:
@@ -588,15 +603,16 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
      * For TFS 2017, `"service.bat remove"`
      * For TFS 2018 and Azure DevOps Server, `"elasticsearch-service.bat remove"`<p />
     
-1. Remove Search data:
+4. Remove Search data:
 
    - Delete the contents of the location described by the environment variable `SEARCH_ES_INDEX_PATH`<p />
     
-1. Remove environment variables:
+5. Remove environment variables:
 
    - Delete the environment variable `"SEARCH_ES_INDEX_PATH"`
    - Delete the environment variable `"ES_HEAP_SIZE"` (this environment variable is obsolete for TFS 2018 Update 2 and later, and Azure DevOps Server).<p />
     
+<a name="unconfig-separate-server"></a>
 ### Unconfigure Search when its configured on a separate server
 
 1. Uninstall the Search extension (Code, Work Item, or Wiki) for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
@@ -613,14 +629,14 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker-end
 
-1. Remove the Search feature:
+2. Remove the Search feature:
 
    - Open the In the Remove Feature dialog,  Administration Console.
    - In the left pane, select the name of the Azure DevOps Server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select **Search service** and choose **Remove**.<p />
 
-1. Remove the Elasticsearch service and data
+3. Remove the Elasticsearch service and data
 
    - Open **PowerShell** as an administrator
    - Go to the folder where **Configure Search.ps1** is installed along with the rest of the files required for a remote install of Search.
@@ -647,14 +663,16 @@ Search for Azure DevOps Server and TFS has the following limitation:
 * [Azure DevOps Server or TFS overall performance is affected](#server-slow)
 * ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
+<a name="no-search-box"></a>
 **Search is configured but the Search box is not displayed**
 
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](#config-ts) or [configure](#config-tfs) the extension.
+   If not, [install](#install-tfs) or [configure](#config-ts-azuredevops) the extension.
 
+<a name="no-results-install"></a>
 **No search results are shown after installing or configuring Search**
 
 1. Wait until you are sure sufficient time has elapsed

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -39,8 +39,8 @@ When you deny access to an authentication method, no app can use that method to 
 > To remove access for personal access tokens,
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-To continue, you'll need at least Basic access and organization owner permissions.
-[How do I find the organization owner?](faq-change-app-access.md#find-owner)
+To continue, you'll need at least Basic access and organization Owner permissions.
+[How do I find the organization Owner?](faq-change-app-access.md#find-owner)
 
 ## Change application access policies
 
@@ -50,7 +50,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
+3. In the Policies tab, review your application connection settings. Change these settings, based on your security policies.
 
    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
 
@@ -61,4 +61,4 @@ To continue, you'll need at least Basic access and organization owner permission
 
 - [Need help?](faq-change-app-access.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
-- [Manage conditional access](manage-conditional-access.md)
+- [Manage Conditional Access](manage-conditional-access.md)

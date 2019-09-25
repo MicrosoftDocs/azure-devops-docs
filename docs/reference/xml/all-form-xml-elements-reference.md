@@ -22,148 +22,116 @@ ms.date: 03/02/2017
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 You can use the information in this topic as a quick reference to all the elements and main attributes that control the form for a type of work item. You specify these elements in the `FORM` element container, the third and final major section of the definition of a type of work item. Many elements are nested within others to form groups, sections, or tabs in a work item form. For more information about how to group these elements, see [Design the work item form](design-work-item-form.md).  
-  
-  
+
+
 <a name="FORM"></a> 
-##FORM example  
+## FORM example  
 The following example shows the overall structure of the **FORM** element. You specify the layout of a form by using the **Layout** element. You can specify different layouts that target different clients. For example, you can specify one layout for Windows clients and a different layout for the web portal. A layout typically consists of the top of the form and then a group of tabs. The sequence in which you define the elements within the layout determines the sequence in which the elements appear on the form.  
-  
+
 You group elements to appear within columns by using the **Group** and **Column** elements. You use a **Control** element to define each field that you want to appear on the form. You use the **Tab** element to support different functional areas of field groups.  
-  
+
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FORM>  
-      <Layout>  
-        <Group>  
-          <Column PercentWidth="70">  
-            <Group>  
-              <Column PercentWidth="100">  
-                <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
-                <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />  
-                <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />  
-                <Group>  
-                  <Column PercentWidth="50">  
-                    <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />  
-                  </Column>  
-                  <Column PercentWidth="50">  
-                    <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />  
-                  </Column>  
-                </Group>  
-              </Column>  
-            </Group>  
-          </Column>  
-          <Column PercentWidth="30">  
-            <Group Label="Status">  
-              <Column PercentWidth="100">  
-                <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />  
-                <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
-                <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
-              </Column>  
-            </Group>  
-          </Column>  
-        </Group>  
-. . .  
-</Layout>  
-</FORM>  
-```  
-  
+> ```XML
+> <FORM>  
+>       <Layout>  
+>         <Group>  
+>           <Column PercentWidth="70">  
+>             <Group>  
+>               <Column PercentWidth="100">  
+>                 <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
+>                 <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />  
+>                 <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />  
+>                 <Group>  
+>                   <Column PercentWidth="50">  
+>                     <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />  
+>                   </Column>  
+>                   <Column PercentWidth="50">  
+>                     <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />  
+>                   </Column>  
+>                 </Group>  
+>               </Column>  
+>             </Group>  
+>           </Column>  
+>           <Column PercentWidth="30">  
+>             <Group Label="Status">  
+>               <Column PercentWidth="100">  
+>                 <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />  
+>                 <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
+>                 <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
+>               </Column>  
+>             </Group>  
+>           </Column>  
+>         </Group>  
+> . . .  
+> </Layout>  
+> </FORM>  
+> ```  
+
 <a name="FormElements"></a> 
-##Form elements  
+## Form elements  
 You can specify how information and work item fields are grouped and appear in a work item form using the elements that are described in the following table.  
-  
+
 > [!NOTE]  
 >  For best results, you should nest `Control` elements in a `Group`, and you should nest `Group` elements in a `Column`, even if the column spans the full width of the form. Also, you should nest every `Column` section in a `Group`, even if the group has no visible label or boundary.  
- 
+
 
 <table Responsive="true" summary="table">
 <tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th><th scope="col"><p>Required?</p></th>
 </tr>
-<tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form's regions into columns.</p>
+<tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form&#39;s regions into columns.</p>
 <code>
-&lt;Column PercentWidth="WidthPercentOfContainingElement" FixedWidth="WidthInPixels"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
-&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
-&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
-&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
-&lt;/Column &gt;  
-</code>
+&lt;Column PercentWidth=&quot;WidthPercentOfContainingElement&quot; FixedWidth=&quot;WidthInPixels&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Column &gt;<br/></code>
 </td><td data-th="Required?"><p>Recommended</p></td>
 </tr>
 
 <tr><td data-th="Element"><p><strong>Control</strong></p></td>
 <td data-th="Description"><p>Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
 <code>
-&lt;Control FieldName="FieldName" Type="AttachmentsControl | DateTimeControl | FieldControl |   
-&#160;HtmlFieldControl | LabelControl | LinksControl | WebpageControl | WorkItemClassificationControl |  
-&#160;WorkItemLogControl" Label="LabelText" LabelPosition="Top | Bottom | Left | Right"  
-&#160;Padding="(top, bottom, left, right)" 
-&#160;Margin="( top, bottom, left, right)"   
-&#160;ReadOnly="True | False" MinimumSize="(Width,Height)"   
-&#160;Name="InstanceName" /&gt;
+&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;AttachmentsControl | DateTimeControl | FieldControl |<br/>&#160;HtmlFieldControl | LabelControl | LinksControl | WebpageControl | WorkItemClassificationControl |<br/>&#160;WorkItemLogControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot;<br/>&#160;Padding=&quot;(top, bottom, left, right)&quot; 
+&#160;Margin=&quot;( top, bottom, left, right)&quot;<br/>&#160;ReadOnly=&quot;True | False&quot; MinimumSize=&quot;(Width,Height)&quot;<br/>&#160;Name=&quot;InstanceName&quot; /&gt;
 </code>
-<p>For more information, see [Control XML element reference](control-xml-element-reference.md).</p></td><td data-th="Required?"><p>Required</p></td>
+<p>For more information, see <a href="control-xml-element-reference.md" data-raw-source="[Control XML element reference](control-xml-element-reference.md)">Control XML element reference</a>.</p></td><td data-th="Required?"><p>Required</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>FORM</strong></p></td><td data-th="Description"><p>Defines the top-level form element.</p>
 <code>
-&lt;FORM&gt;  
-&#160;&#160;&#160;&lt;Layout&gt; . . . &lt;/Layout&gt;   
-&lt;/FORM&gt;
+&lt;FORM&gt;<br/>&#160;&#160;&#160;&lt;Layout&gt; . . . &lt;/Layout&gt;<br/>&lt;/FORM&gt;
 </code>
 </td><td data-th="Required?"><p>Required</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>Group</strong></p></td><td data-th="Description"><p>Provides a visual grouping of elements, similar to the Windows GroupBox.</p>
 <code>
-&lt;Group Label="LabelText" Padding="(top, bottom, left, right)" Margin="(top, bottom, left, right)"&gt;  
-   &lt;Column&gt; . . . &lt;/Column&gt;  
-&lt;/Group &gt;  
-</code>
+&lt;Group Label=&quot;LabelText&quot; Padding=&quot;(top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>   &lt;Column&gt; . . . &lt;/Column&gt;<br/>&lt;/Group &gt;<br/></code>
 </td><td data-th="Required?"><p>Recommended</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>Layout</strong></p></td><td data-th="Description"><p>Defines the layout of the work item form.</p>
 <code>
-&lt;Layout Target="ClientName" MinimumSize="(width,height)" Padding="(top, bottom, left, right)"   
-Margin="(left, top, right, bottom)" ControlSpacing="Distance" LabelSpacing="Distance"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
-&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
-&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
-&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
-&lt;/Layout&gt;
+&lt;Layout Target=&quot;ClientName&quot; MinimumSize=&quot;(width,height)&quot; Padding=&quot;(top, bottom, left, right)&quot;<br/>Margin=&quot;(left, top, right, bottom)&quot; ControlSpacing=&quot;Distance&quot; LabelSpacing=&quot;Distance&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Layout&gt;
 </code>
 </td><td data-th="Required?"><p>Required</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>Splitter</strong></p></td><td data-th="Description"><p>Divides a form into two areas to support the layout of two sibling form elements.</p>
 <code>
-&lt;Splitter /&gt;  
-</code>
+&lt;Splitter /&gt;<br/></code>
 </td><td data-th="Required?"><p>Optional</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>Tab</strong></p></td><td data-th="Description"><p>Defines the layout of a single tab in a tab group.</p>
 <code>
-&lt;Tab Label="LabelText" Padding="(top, bottom, left, right)" Margin="(top, bottom, left, right)"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
-&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
-&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
-&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
-&lt;/Tab&gt;  
-</code>
+&lt;Tab Label=&quot;LabelText&quot; Padding=&quot;(top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Tab&gt;<br/></code>
 </td><td data-th="Required?"><p>Optional</p></td>
 </tr>
 <tr>
 <td data-th="Element"><p><strong>TabGroup</strong></p></td><td data-th="Description"><p>Defines one or more tabs for the form.</p>
 <code>
-&lt;TabGroup Padding="( top, bottom, left, right)" Margin="(top, bottom, left, right)"&gt;  
-&#160;&#160;&#160;&lt;Tab&gt; . . . &lt;/Tab&gt;  
-&lt;/TabGroup&gt;  
-</code>
+&lt;TabGroup Padding=&quot;( top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>&#160;&#160;&#160;&lt;Tab&gt; . . . &lt;/Tab&gt;<br/>&lt;/TabGroup&gt;<br/></code>
 </td><td data-th="Required?"><p>Optional</p></td>
 </tr>
 </table>
 
-  
+
 <a name="FormAttributes"></a> 
-##Attributes that are used to format FORM elements  
+## Attributes that are used to format FORM elements  
 You can control the spacing and size of many elements on a work item form by specifying the attributes that the following table describes. For more information, see [Design the work item form](design-work-item-form.md).  
- 
+
 |**Attribute**|**Description**|**Applicable Elements**|  
 |-------------------|---------------------|-----------------------------|  
 |`ControlSpacing`|Optional. Specifies the vertical offset of controls. Integer.|`Layout`|  
@@ -179,25 +147,25 @@ You can control the spacing and size of many elements on a work item form by spe
 |`ReadOnly`|Optional. You can display a read-only field in a control. Different controls respond to this attribute in slightly different ways.|`Control`|  
 |`Target`|Optional. String that specifies to which client this layout applies. Visual Studio displays this work item type in this layout if the `Target` attribute is omitted or set to Windows Forms. External clients can specify additional layouts by using custom `Target` attributes that Visual Studio ignores.<br /> The following values are valid:<br /> `WinForms`: Applies the form to Team Explorer and Team Explorer Everywhere.<br /> `Web`: Applies the form to the web portal.|`Layout`|  
 |`Type`|Required. The type of the control. For more information, see [Control](control-xml-element-reference.md).|`Control`|  
- 
+
 <a name="LabelElements"></a> 
-##Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
+## Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
  The `WebpageControlOptions` element and its child elements have the following syntax structure:  
-  
+
 > [!div class="tabbedCodeSnippets"]
-```XML
-<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-      <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
-      <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
-      </Link>  
-      <Content>  
-      <![CDATA[Contents of HTML]]>  
-      </Content>  
-</WebpageControlOptions>  
-```  
-  
+> ```XML
+> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
+>       <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
+>       <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
+>       </Link>  
+>       <Content>  
+>       <![CDATA[Contents of HTML]]>  
+>       </Content>  
+> </WebpageControlOptions>  
+> ```  
+
  You use the elements that are described in the following table to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md).  
-  
+
 |Element|Required?|Description|  
 |-------------|---------------|-----------------|  
 |`Content`|Optional `WebpageControlOptions` element.|Specifies the CDATA HTML-based content to appear in a work item form.<br /><br /> `<Content>    <![CDATA[Contents of HTML]]> </Content>`<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
@@ -206,30 +174,30 @@ You can control the spacing and size of many elements on a work item form by spe
 |`Param`|Optional `Link` element.|Specifies a value to determine the URL of the hyperlink when `URLPath` is specified for the `Link` element.<br /><br /> `<Param index="IndexValue " value="ParamValue " type ="Original &#124; Current"/>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
 |`Text`|Optional `LabelText` element.|Container element for the information or label to appear on the work item form.<br /><br /> `<Text>    <Link >       <Param />    </Link>LabelText </Text>`<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
 |`WebpageControlOptions`|Optional `Control` element when `type="WebpageControl"`|Container element that specifies the options for the Web page control.<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
-  
+
 ##  <a name="LinkElements"></a> Elements that filter and display link relationships  
  You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add link control to a work item form, you can specify filters that restrict the types of links that users can create and the types of work items between which users can create links. The `LinksControlOptions` element and its child elements have the following structure:  
-  
+
 > [!div class="tabbedCodeSnippets"]
-```XML
-<LinksControlOptions>  
-   <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-       <Filter LinkType="linkTypeRefName" FilterOn="reverseName | forwardName" />  
-   </WorkItemLinkFilters>  
-   <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
-       <Filter LinkType="externalLinkName"/>  
-   </ExternalLinkFilters>  
-   <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
-       <Filter WorkItemType="workItemTypeReferenceName"/>  
-   </WorkItemTypeFilters>  
-   <LinkColumns>  
-      <LinkColumn RefName="referenceName" | LinkAttribute="linkAttributeName"/>  
-   </LinkColumns>  
-</LinksControlOptions>  
-```  
-  
+> ```XML
+> <LinksControlOptions>  
+>    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
+>        <Filter LinkType="linkTypeRefName" FilterOn="reverseName | forwardName" />  
+>    </WorkItemLinkFilters>  
+>    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
+>        <Filter LinkType="externalLinkName"/>  
+>    </ExternalLinkFilters>  
+>    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
+>        <Filter WorkItemType="workItemTypeReferenceName"/>  
+>    </WorkItemTypeFilters>  
+>    <LinkColumns>  
+>       <LinkColumn RefName="referenceName" | LinkAttribute="linkAttributeName"/>  
+>    </LinkColumns>  
+> </LinksControlOptions>  
+> ```  
+
  Specifically, you use the elements that are summarized in the following table. For more information about how to use these elements, see [Define link controls to restrict link relationships](define-link-controls.md) and [LinksControlOptions](linkscontroloptions-xml-elements.md).  
-  
+
 |Element|Required?|Description|  
 |-------------|---------------|-----------------|  
 |`LinksControlOptions`|Optional `Control` element when `type="LinksControl"`|Provides a container for elements that define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item.|  
@@ -240,8 +208,7 @@ You can control the spacing and size of many elements on a work item form by spe
 |`Filter` (work item types)|Optional `WorkItemTypeFilters` element when the `FilterType` attribute is `exclude` or `include`.|Specifies the types of work items to include or exclude from the set of work item types between which users can link.|  
 |`LinkColumns`|Optional `LinksControlOptions` element|Provides a container for one or more `LinkColumn` tags.|  
 |`LinkColumn`|Required `LinkColumns` element|Specifies the work item fields and link type attributes to appear on the work item form for the list of links.|  
-  
+
 ## Related articles
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [Design the work item form](design-work-item-form.md)     
- 

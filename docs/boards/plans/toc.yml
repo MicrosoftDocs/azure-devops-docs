@@ -1,21 +1,8 @@
 - name: Plans (Agile at scale)
-  href: index.md
-- name: Overview
-  expanded: true
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   items:
-  - name: "About teams & Agile tools"
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
-  - name: Start using Azure Boards
-    href: ../get-started/index.md 
-- name: Quickstarts
-  items:
-  - name: Add and manage dashboards
-    href: ../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
-  - name: Add a team administrator
-    href: ../../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
-  - name: Manage teams and configure team tools
-    href: ../../organizations/settings/manage-teams.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json  
 - name: Tutorials
+
   items:
   - name: Portfolio management
     href: portfolio-management.md
@@ -23,12 +10,8 @@
     href: configure-hierarchical-teams.md
   - name: Review team delivery plans
     href: review-team-plans.md
-  - name: Set team favorites
-    href: ../../project/navigation/set-favorites.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
   - name: Visibility across teams
     href: visibility-across-teams.md
   - name: Agile culture
@@ -39,47 +22,11 @@
   items:
   - name: Edit plan permissions 
     href: edit-delivery-plan-permissions.md
-  - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-  - name: Manage team notifications
-    href: ../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json   
-  - name: Manage teams and configure team tools
-    href: ../../organizations/settings/configure-team-settings.md 
-    items:
-    - name: Select backlog levels
-      href: ../../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-    - name: "Show bugs on backlogs & boards"
-      href: ../../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-    - name: Set working days
-      href: ../../organizations/settings/set-working-days.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
-  - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-  - name: "Manage permissions & access (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
 - name: Reference
   items:
-  - name: "Default permissions & access (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-  - name:  Delivery plan keyboard shortcuts
+  - name: Delivery plan keyboard shortcuts
     href: delivery-plan-keyboard-shortcuts.md
-  - name: REST API, Teams
-    href: /rest/api/vsts/core/teams
-  - name: REST API, Plans
-    href: /rest/api/vsts/boards/plans
-  - name: REST API, Area and Iteration Paths
-    href: /rest/api/vsts/wit/classification%20nodes  
-- name: Resources
-  items:
-  - name: "Scale & Configure Teams"
-    href: ../../organizations/settings/scale/index.md
-  - name: Customization
-    href: ../../reference/index.md
-  - name: Agile culture
-    href: /azure/devops/agile/agile-culture
-  - name: Scale Agile to large teams
-    href: /azure/devops/agile/scale-agile-large-teams
-  - name: Creating productive teams
-    href: /azure/devops/agile/productive-teams
+
 

@@ -7,15 +7,15 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/22/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 03/21/2019
 ---
 
 # Add tabs on backlog pages
 
-If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the backlog pages.
-In this example, we'll add a simple Hello World tab on the Product Backlog and the Iteration Backlog.
+If you have a web page that can be hosted in an iframe, it can also be hosted in Azure DevOps Services. This webpage would be a tab on the backlog pages.
+In this example, we'll add a Hello World tab on the Product Backlog and the Iteration Backlog.
 
 ![Tab location on the Azure DevOps Services Product backlog page](../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
 
@@ -38,7 +38,7 @@ Update your [extension manifest](../develop/manifest.md) file with the following
 	        "description": "Adds a 'Hello' tab to the Product and Iteration backlog tabs.",
 	        "targets": [
 	            "ms.vss-work-web.product-backlog-tabs",
-				"ms.vss-work-web.iteration-backlog-tabs",
+				"ms.vss-work-web.iteration-backlog-tabs"
 	        ],
 	        "properties": {
 	            "name": "Hello",
@@ -81,14 +81,14 @@ For each contribution in your extension, the manifest defines
 |--------------------|----------------------------------------------------------------------------------------|                                
 | name               | Name of the hub					                                                      |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
-| registeredObjectId | Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
+| registeredObjectId | ID of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
 
 ### Scopes
 It includes the [scopes](./manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 ### Files
-Include all of the files your extension will access. <br>
+Include all of the files your extension accesses. <br>
 For your files, set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 	
 ## Example registeredObjectId

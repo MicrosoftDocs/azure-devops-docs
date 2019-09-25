@@ -1,78 +1,38 @@
 - name: Billing
-  href: index.md
-- name: Overview
-  items:
-  - name: Billing overview 
-    href: overview.md
+  href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+- name: Billing overview 
+  href: overview.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Set up billing
     href: set-up-billing-for-your-organization-vs.md
-  - name: Pay for users
+  - name: Buy Basic for users
     href: buy-basic-access-add-users.md
+  - name: Try Azure Test Plans for free
+    href: try-additional-features-vs.md
+  - name: Buy Basic + Test Plans for users
+    href: buy-basic-plus-test-plans.md
   - name: Buy CI/CD
     href: buy-more-build-vs.md
-  - name: Start free trials
-    href: try-additional-features-vs.md
+  - name: Buy Azure Artifacts
+    href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
-- name: Tutorials
-  items:
-  - name: Connect to Azure AD
-    href: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Billing management
-    items:
-    - name: Add user to make purchases
-      href: add-backup-billing-managers.md
-    - name: Change Azure subscription
-      href: change-azure-subscription.md
-    - name: Change number of paid users
-      href: reduce-cancel-paid-users.md
-    - name: Buy Azure DevOps Server CALs or Test
-      href: buy-access-tfs-test-hub.md
-    - name: Billing FAQ
-      href: billing-faq.md
-  - name: Manage extensions (Marketplace)
-    items:
-    - name: Change number of paid users
-      href: change-number-paid-extension-users.md
-    - name: Approve requests
-      href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-    - name: Assign paid extensions to users
-      href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-    - name: Uninstall or disable extensions
-      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-    - name: Buy Azure DevOps Server CALs or Test  
-      href: buy-access-tfs-test-hub.md 
+  - name: Add user to make purchases
+    href: add-backup-billing-managers.md
+  - name: Change Azure subscription
+    href: change-azure-subscription.md
+  - name: Buy Azure DevOps Server CALs or Test
+    href: buy-access-tfs-test-hub.md
+  - name: Billing FAQ
+    href: billing-faq.md
   - name: Guidance for Cloud Solution Providers
     items:
-    - name: "CSPs: Set up your customer"
-      href: csp/set-up-csp-customer.md
-    - name: "CSPs: Buy Azure DevOps for your customers"
+    - name: "CSPs: Buy Azure DevOps"
       href: csp/buy-csp-azure-devops.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: /visualstudio/subscriptions/vscloud-csp
     - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
-- name: Reference
-  items:
-  - name: Permissions 
-    href: ../../security/permissions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-  - name: About access levels
-    href: ../../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-  - name: Default permissions & access
-    href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-  - name: Data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Start using Azure DevOps
-    href: ../../user-guide/index.yml
-  - name: Manage organizations
-    href: ../accounts/index.md
-  - name: "Security & identity"
-    href: ../../security/index.md
-  - name: Marketplace extensions
-    href: ../../marketplace/index.md

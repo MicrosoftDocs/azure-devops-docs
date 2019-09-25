@@ -45,11 +45,11 @@ After the team has started to find and fix bugs, you can track the team's progre
   
  You can filter the Bug Status report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the bugs that are counted in the report by specifying iteration and area paths, bug state, priority, and severity.  
+- Filter the bugs that are counted in the report by specifying iteration and area paths, bug state, priority, and severity.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this topic.  
+  For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Required Activities for Tracking Bugs  
  For the Bug Status report to be useful and accurate, the team must perform the following activities:  
@@ -118,15 +118,15 @@ After the team has started to find and fix bugs, you can track the team's progre
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Bug Status report or change its display in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the set of bugs that are counted by changing the iteration paths, the area paths, the state, the severity, or the priority.  
+- Filter the set of bugs that are counted by changing the iteration paths, the area paths, the state, the severity, or the priority.  
   
--   Change the grouping based on priority or severity.  
+- Change the grouping based on priority or severity.  
   
- The following illustration shows the available filters and display options:  
+  The following illustration shows the available filters and display options:  
   
- ![Filters for Bug Status](_img/procguid_bugstatus.png "ProcGuid_BugStatus")  
+  ![Filters for Bug Status](_img/procguid_bugstatus.png "ProcGuid_BugStatus")  
   
 #### To filter the set of bugs that are counted in the report  
   

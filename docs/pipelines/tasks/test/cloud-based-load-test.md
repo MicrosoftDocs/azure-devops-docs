@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -25,7 +25,9 @@ Microsoft Azure and can be used to test your app's
 performance by generating load on it.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -35,8 +37,11 @@ The agent must have the following capability:
 * Azure PowerShell
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -85,7 +90,9 @@ a failure to be reported. For more details, see:
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

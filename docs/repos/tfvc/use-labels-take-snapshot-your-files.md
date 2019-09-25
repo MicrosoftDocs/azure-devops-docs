@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use labels to take a snapshot of your files
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Labels let you take a snapshot of your files so that at a later date you can refer back to that snapshot. By using your label, you can view, build, or even roll back a large set of files to the state they were in when you applied the label.
 
@@ -35,13 +35,13 @@ After you have applied the label, you can use it to qualify operations such as b
 
 Sometimes after you apply a label you decide that you need to change it. Team Foundation version control enables you to apply a label to additional files, remove a label from certain files, and even to modify which version of a specific file to which the label applies.
 
->**Tip:**  
->Applying a label provides many of the same benefits as creating a branch, but typically with lower cost and complexity. The tradeoff is that for large databases, operations such as merging may take much longer when running against a label.
+> [!TIP]
+> Applying a label provides many of the same benefits as creating a branch, but typically with lower cost and complexity. The tradeoff is that for large databases, operations such as merging may take much longer when running against a label.
 
 ## Apply a Label
 
->**Tip:**  
->When you use Visual Studio to apply a label that already exists, the operation removes the label from all file versions and then applies the label. From the command prompt, however, the label operation is additive. See [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
+> [!TIP]
+> When you use Visual Studio to apply a label that already exists, the operation removes the label from all file versions and then applies the label. From the command prompt, however, the label operation is additive. See [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md).
 
 ### Apply a label
 
@@ -69,8 +69,8 @@ Sometimes after you apply a label you decide that you need to change it. Team Fo
 
     -   To apply the label and then modify it after it has been applied, choose **Create and Edit**. This applies the label and then displays the **Label** window. For more information about using the **Label** window to edit a label, see [Use the Label Window to Work with Labels](use-labels-take-snapshot-your-files.md#label_window).
 
->**Note:**  
->When you apply a label using a name that already exists, the system warns you and asks if you want to continue. If you choose **OK** to continue, any items not contained in the path to which you are applying the label will no longer have that label.
+> [!NOTE]
+> When you apply a label using a name that already exists, the system warns you and asks if you want to continue. If you choose **OK** to continue, any items not contained in the path to which you are applying the label will no longer have that label.
 
 ## Rename a Label
 
@@ -200,8 +200,8 @@ You can use the Label window to perform the following tasks:
 
 2.  In the **Choose Item Version** dialog box, navigate to and then select the item that you want to add.
 
-    >**Tip:**  
-    >You can press and hold the CONTROL or SHIFT keys and then select multiple items.
+    > [!TIP]
+    > You can press and hold the CONTROL or SHIFT keys and then select multiple items.
 
 3.  (Optional) If you need the label to target a specific version, from the **Version** list, select:
 
@@ -268,12 +268,12 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
 ## Work from the command prompt
 
--    [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)  Apply or remove a label.
+- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)  Apply or remove a label.
 
-    >**Tip:**  
-    >When you use this command to apply a label, you can specify a scope other than the project.
+  > [!TIP]
+  > When you use this command to apply a label, you can specify a scope other than the project.
 
--    [Labels Command](labels-command.md)  List labels.
+- [Labels Command](labels-command.md)  List labels.
 
 ## See Also
 

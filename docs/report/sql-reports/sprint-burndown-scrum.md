@@ -32,26 +32,26 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
   
  A sprint burndown graph displays the following pieces of data:  
   
--   The Ideal Trend line indicates an ideal situation in which the team burns down all of the effort that remains at a constant rate by the end of the sprint.  
+- The Ideal Trend line indicates an ideal situation in which the team burns down all of the effort that remains at a constant rate by the end of the sprint.  
   
--   The In Progress series shows how many hours remain for tasks that are marked as **In Progress** in a sprint.  
+- The In Progress series shows how many hours remain for tasks that are marked as **In Progress** in a sprint.  
   
--   The To Do series shows how many hours remain for tasks that are marked as **To Do** in a sprint.  
+- The To Do series shows how many hours remain for tasks that are marked as **To Do** in a sprint.  
   
- Both the In Progress and the To Do series are drawn based on the actual progress of your team as it completes tasks.  
+  Both the In Progress and the To Do series are drawn based on the actual progress of your team as it completes tasks.  
   
- The following illustration shows an example of a sprint burndown graph.  
+  The following illustration shows an example of a sprint burndown graph.  
   
- ![Sprint burndown chart](_img/scrum_sprintburndown.png "Scrum_SprintBurndown")  
+  ![Sprint burndown chart](_img/scrum_sprintburndown.png "Scrum_SprintBurndown")  
   
- You can filter the report by selecting the **Iteration** or **Area**.  
+  You can filter the report by selecting the **Iteration** or **Area**.  
   
 ### Required activities to support the sprint burndown report  
  For the burndown report to be useful and accurate, your team must perform the following activities for tracking tasks:  
   
 -   [Define sprints](../../boards/sprints/define-sprints.md) for your team.  
   
--   [Define tasks for each product backlog item](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) you're working on within the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (**Iteration**) and to your team's default **Area** path.  
+-   [Define tasks for each product backlog item](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) you're working on within the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (**Iteration**) and to your team's default **Area** path.  
   
 -   Specify and update the **Remaining Work** field for each task or subtask as it is worked on.  
   

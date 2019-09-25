@@ -12,7 +12,7 @@ monikerRange: "<= azure-devops-2019"
 ms.date: 11/19/2018
 ---
 
-#Resolve data warehouse schema conflicts
+# Resolve data warehouse schema conflicts
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
 
@@ -21,7 +21,7 @@ Schema conflicts occur when a set of attributes for reportable fields differs ac
 All reportable data from all team projects that are defined in all project collections for a deployment of Visual Studio Team Foundation Server is written to a single relational data warehouse. Data from that warehouse is then processed and written to the cube. Collecting data into a single data warehouse supports reporting across team project collections. However, because fields are managed distinctly for each project collection, schema conflicts can occur when different definitions are assigned to one or more attributes of a field that is assigned the same reporting reference name. 
 
 
-##Schema conflict error messages  
+## Schema conflict error messages  
 
 When a schema conflict occurs, an error message will appear in the following locations:  
 
@@ -41,7 +41,7 @@ When a schema conflict occurs, an error message will appear in the following loc
  
 In addition to the previous messages, you can obtain more information by using the **GetProcessingStatus** operation of the Warehouse Control Web service. For more information, see Manually Process the Data Warehouse and Analysis Services Cube for Team Foundation Server.
  
-##Sources of schema conflicts
+## Sources of schema conflicts
 
 Schema conflicts occur when a project administrator performs one of the following actions:
 
@@ -100,25 +100,25 @@ You can review the event log on the application-tier server to obtain more infor
 
 1. Review the attributes that are assigned to the field in all project collections. You can use the **witadmin listfields** command, which has the following syntax:
 
-	```
+    ```
 	witadmin listfields /collection:CollectionURL /n:RefName   ```
 
 	For more information, see [Manage work item fields](https://msdn.microsoft.com/library/dd236909.aspx).
 
 2. Determine in which of the following ways you want to resolve the conflict:
 
-	* Change the attribute for the field in one project collection to match the assignments that are made in other project collections. You should take this action when teams use the field in the same ways in similar reports or for cross-project reporting. 
+   * Change the attribute for the field in one project collection to match the assignments that are made in other project collections. You should take this action when teams use the field in the same ways in similar reports or for cross-project reporting. 
 	
-	* Relabel the reporting reference name of the field in conflict. You should take this action when the fields are used in different ways or you must maintain a different field. In this case, the field is not used by teams that work in different project collections for cross-project reporting. 
+   * Relabel the reporting reference name of the field in conflict. You should take this action when the fields are used in different ways or you must maintain a different field. In this case, the field is not used by teams that work in different project collections for cross-project reporting. 
 	
-	For more information, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).
+     For more information, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).
 	
-	* Mark a field as non-reportable for one or more collections. You should take this action when the field is not used for reports about those project collections. 
+   * Mark a field as non-reportable for one or more collections. You should take this action when the field is not used for reports about those project collections. 
 	
-	* Remove the field from the team project collection. You should take this action if the field is not used by any team projects or reports. 	
+   * Remove the field from the team project collection. You should take this action if the field is not used by any team projects or reports.  
 
-	> [!NOTE]  
-	> If you remove a field that is used in a report, the report will no longer display correctly.  
+     > [!NOTE]  
+     > If you remove a field that is used in a report, the report will no longer display correctly.  
 
 3. Change the attribute that is assigned to a field, based on the decisions that you made in the previous step. Use the **witadmin changefield** command. 
 
@@ -131,7 +131,7 @@ You can review the event log on the application-tier server to obtain more infor
 	> [!IMPORTANT]  
 	> If you delete a field permanently, you remove the field and all data that it stores from data storage.  
 
-##Verify resolution of schema conflicts 
+## Verify resolution of schema conflicts 
  
 You can verify that the schema conflicts have been resolved by [manually processing the data warehouse](manually-process-data-warehouse-and-cube.md) and then checking the reports to determine whether they are updated. Or you can wait until the warehouse adapter jobs run, according to their default schedule. By default, the relational database is processed every few minutes. However, the Analysis Services cube is processed every two hours by default.
 

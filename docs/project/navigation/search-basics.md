@@ -32,14 +32,14 @@ With the search box, you can quickly find a code file or work item.
 <a name="start-search"></a>
 ## Initiate a code search 
 
-Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md#install-extension).  
+Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
 
 ::: moniker range=">= azure-devops-2019"
   
 To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Code Search box](/azure/devops/boards/boards/(../../organizations/public/_img/search/code-search-vert.png) 
+> ![Code Search box](../../organizations/public/_img/search/code-search-vert.png) 
 ::: moniker-end  
 
 
@@ -93,12 +93,12 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box](/azure/devops/boards/boards/(_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box](_img/search/work-item-search-vert.png)    
 
-0. Search results are displayed in a snippet view where the matches found are shown in bold.
+1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/_img/work-item-search-get-started/results-matching.png)
 
@@ -106,7 +106,7 @@ To learn more, see [Search code](../search/code-search.md).
    Work item search matches derived forms of your search terms; for example, a search for
    "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-0. Select a snippet of a work item to display it in the right window. 
+2. Select a snippet of a work item to display it in the right window. 
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
@@ -232,12 +232,12 @@ With wiki search, you can search within a project wiki or across all wikis creat
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option](/azure/devops/boards/boards/(../wiki/_img/search/search-wiki-vert.png)   
+> ![Wiki search option](../wiki/_img/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](/azure/devops/boards/boards/(../wiki/_img/search/wiki-search-example-vert.png)   
+> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
 ::: moniker-end  
 

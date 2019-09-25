@@ -2,6 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Feedback
+  - name: Collaborate
     tocHref: /azure/devops/project/feedback/
-    topicHref: /azure/devops/project/feedback/index
+    topicHref: /azure/devops/project/index
+    items:
+    - name: Stakeholder Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index

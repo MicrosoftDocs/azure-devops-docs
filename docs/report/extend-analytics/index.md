@@ -1,7 +1,7 @@
 ---
 title: Extend Analytics with OData
-titleSuffix: Azure DevOps Services  
-description: Using OData backed Analytics Service for Azure DevOps 
+titleSuffix: Azure DevOps  
+description: Using OData backed Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: jillfra
@@ -15,9 +15,9 @@ ms.date: 11/1/2018
 
 #  Extend Analytics with OData (Preview) 
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
+Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
 ## 5-Minute Quickstarts
 
@@ -36,37 +36,29 @@ Using OData, you can directly query the Analytics Service for Azure DevOps from 
 - [Work item tracking queries](analytics-recipes.md)
 - [Create an Analytics widget](example-analytics-widget.md)
 
-<!---
-- [Build a hub extension against the analytics service](building-extension-against-analytics-service.md)
-- [Build a dashboard widget extension](widget-extensions-against-analytics-service.md)
-- [Add widget configuration to an extension](widget-extension-against-analytics-service-configuration.md)
--->
 
- 
 ## Concepts
-- [Data available in the Analytics Service](../analytics/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
-- [Performance and latency](../analytics/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Data available in Analytics](../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Performance and latency](../powerbi/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 
-
 <!--
-Planned:
-Understand Agile process data
+Planned:Understand Agile process data
 -->
 
 ## How-to Guides
-- [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Set permissions (Security)](../powerbi/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 
 
 ## Reference
-- [Analytics OData v4 endpoint](data-model-analytics-service.md)
+- [Data model](data-model-analytics-service.md)
 - [Supported functions & clauses](odata-supported-features.md) 
 - [API versioning](odata-api-version.md)
 
  
 ## Resources
-- [Analytics](../analytics/index.md)
-- [PowerBI](../powerbi/index.md)
+- [PowerBI](../powerbi/index.md)  
+- [Dashboards, Charts, Reports, & Widgets](../dashboards/index.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 

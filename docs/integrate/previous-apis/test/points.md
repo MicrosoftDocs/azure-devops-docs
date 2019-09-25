@@ -7,8 +7,8 @@ description: Work with test points programmatically using the REST APIs for Team
 ms.assetid: 70C0FE8E-1A6B-4C0A-BC8A-46DAF75A9418
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

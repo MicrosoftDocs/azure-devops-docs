@@ -1,0 +1,89 @@
+
+- name: Azure DevOps manage & configure resources documentation
+  expanded: false
+  href: index.md
+- name: About settings
+  href: settings/about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+- name: Get started as an administrator
+  href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: User preferences
+  items:
+  - name: Set user preferences
+    href: settings/set-your-preferences.md
+  - name: Enable preview features
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Set personal favorites
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Configure personal notifications
+    href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    name: Manage authorizations
+    href: settings/manage-authorizations.md
+  - name: Authentication
+    items:
+    - name: Authenticate access with personal access tokens
+      href: accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Authorize access to REST APIs with OAuth 2.0
+      href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Use SSH key authentication
+      href: ../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Revoke users' PATs - for admins
+      href: accounts/admin-revoke-user-pats.md
+- name: Teams
+  href: settings/scale/toc.yml
+- name: Projects
+  href: projects/toc.yml
+- name: Organizations
+  href: accounts/toc.yml
+- name: Billing
+  href: billing/toc.yml
+- name: Security & identity
+  href: security/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
+- name: Additional settings
+  href: settings/toc.yml
+- name: Reference
+  items:
+  - name: Features index
+    href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: REST API reference
+  items:
+  - name: Area and iteration paths
+    href: /rest/api/vsts/wit/classification%20nodes
+  - name: Authentication guidance
+    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Teams
+    href: /rest/api/azure/devops/core/teams
+  - name: Projects
+    href: /rest/api/azure/devops/core/projects
+  - name: Teams
+    href: /rest/api/vsts/core/teams
+  - name: Organizations
+    href: /rest/api/azure/devops/account/accounts
+  - name: Security
+    href: /rest/api/azure/devops/security/
+  - name: Permissions
+    href: /rest/api/vsts/security/permissions 
+  - name: Processes
+    href: /rest/api/vsts/processes/processes
+  - name: Notifications
+    href: /rest/api/azure/devops/notification
+- name: Resources
+  items:
+  - name: Add an alternate account to your Visual Studio subscription
+    href: /visualstudio/subscriptions/vs-alternate-identity
+  - name: Marketplace & extensibility  
+    href: /azure/devops/marketplace-extensibility/index
+  - name: Git
+    href: /azure/devops/repos/git/index
+  - name: Work items
+    href: /azure/devops/boards/work-items/index
+  - name: Public projects
+    href: /azure/devops/organizations/public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Process customization
+    href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Service hooks
+    href: /azure/devops/service-hooks/index
+  - name: Web portal navigation
+    href: /azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+

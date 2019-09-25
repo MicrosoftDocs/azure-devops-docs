@@ -34,7 +34,7 @@ By reviewing the release burndown report, you can understand how quickly your te
 ### Required activities for tracking release burndown  
  For the burndown graph to be useful and accurate, your team must perform the following activities for tracking work items:  
   
--   Specify the number of releases you want to track and [define the start and end dates for each sprint](http://msdn.microsoft.com/f292f3bc-b472-4399-a7e4-49151d4c0484).  
+-   Specify the number of releases you want to track and [define the start and end dates for each sprint](https://msdn.microsoft.com/f292f3bc-b472-4399-a7e4-49151d4c0484).  
   
 -   Define product backlog items and bugs, and assign each to a sprint or iteration.  (**Iteration** field). Make sure that all backlog items are assigned to your team's area path or subarea.  
   

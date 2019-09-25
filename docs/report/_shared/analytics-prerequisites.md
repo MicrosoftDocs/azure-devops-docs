@@ -5,8 +5,26 @@ ms.topic: include
 <a id="prerequisites">  </a>
 ## Prerequisites  
 
-* You must be a member of a team project. If you don't have a team project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the team project, except stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
+
+::: moniker range="azure-devops"
+
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- [Enable the Analytics Views preview feature](/azure/devops/project/navigation/preview-features) either for the individual user or the organization. 
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have [enabled or installed Analytics](/azure/devops/report/dashboards/analytics-extension) for a project collection. You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+
+::: moniker-end
+

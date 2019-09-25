@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -18,8 +18,10 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
+
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+
 ::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
@@ -49,7 +51,9 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Test Impact Analysis supported scenarios
@@ -62,7 +66,7 @@ At present, TIA is supported for:
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
 * CI and in PR workflows
-* Git, GitHub, External Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
+* Git, GitHub, Other Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
 * IIS interactions (over REST, SOAP APIs), using HTTP/HTTPS protocols
 * Automated Tests
 * Single machine topology. Tests and app (SUT) must be running on the same machine.

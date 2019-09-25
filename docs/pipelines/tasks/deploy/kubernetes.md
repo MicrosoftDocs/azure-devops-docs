@@ -6,8 +6,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
-ms.manager: dastahel
-ms.author: dastahel
+ms.manager: jillfra
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 01/18/2019
 monikerRange: 'azure-devops'
 ---
@@ -151,7 +152,7 @@ This YAML example demonstrates the setting up of ImagePullSecrets:
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>secretType</code><br/>Type of secret</td><td>(Required) Create or update an ImagePullSecret or any other generic secret. Acceptable values: <b>dockerRegistry</b> for ImagePullSecret or <b>generic</b> for any other type of secret.<br/>Default value: dockerRegistry</td></tr>
-<tr><td><code>secretArguments</code><br/>Arguments</td><td>(Optional) Specify keys and literal values to insert in the secret. For example, <code>--from-literal=key1=value1 --from-literal=key2=\"top secret\"</code></td></tr>
+<tr><td><code>secretArguments</code><br/>Arguments</td><td>(Optional) Specify keys and literal values to insert in the secret. For example, <code>--from-literal=key1=value1 --from-literal=key2=&quot;top secret&quot;</code></td></tr>
 <tr><td><code>secretName</code><br/>Secret name</td><td>(Optional) Name of the secret.</td></tr>
 </table>
 
@@ -197,7 +198,7 @@ ConfigMaps allow you to decouple configuration artifacts from image content to m
 <tr><td><code>useConfigMapFile</code><br/>Use file</td><td>(Optional) Create a ConfigMap from an individual file, or from multiple files by specifying a directory.<br/>Default value: false</td></tr>
 <tr><td><code>configMapFile</code><br/>ConfigMap File</td><td>(Required if useConfigMapFile == true) Specify a file or directory that contains the configMaps.</td></tr>
 <tr><td><code>configMapArguments</code><br/>Arguments</td><td>(Optional) Specify keys and literal values to insert in configMap.
-For example, <code>--from-literal=key1=value1 --from-literal=key2=\"top secret\"</code></td></tr>
+For example, <code>--from-literal=key1=value1 --from-literal=key2=&quot;top secret&quot;</code></td></tr>
 </table>
 
 This YAML example creates a ConfigMap by pointing to a ConfigMap file:
@@ -254,7 +255,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>versionOrLocation</code><br/>Version</td><td>(Optional) Explicitly choose a version of kubectl to be used, or specify the path (location) of the kubectl binary.<br/>Default value: version</td></tr>
-<tr><td><code>versionSpec</code><br/>Version spec</td><td>(Required if versionOrLocation == version) The version of the kubectl to be used. Examples: **1.7.0**, **1.x.0**, **4.x.0**, **6.10.0**, **>=6.10.0**<br/>Default value: 1.7.0</td></tr>
+<tr><td><code>versionSpec</code><br/>Version spec</td><td>(Required if versionOrLocation == version) The version of the kubectl to be used. Examples: <strong>1.7.0</strong>, <strong>1.x.0</strong>, <strong>4.x.0</strong>, <strong>6.10.0</strong>, <strong>&gt;=6.10.0</strong><br/>Default value: 1.7.0</td></tr>
 <tr><td><code>checkLatest</code><br/>Check for latest version</td><td>(Optional) If true, a check for the latest version of kubectl is performed.<br/>Default value: false</td></tr>
 <tr><td><code>specifyLocation</code><br/>Specify location</td><td>(Required) Full path to the kubectl.exe file.</td></tr>
 <tr><td><code>cwd</code><br/>Working directory</td><td>(Optional) Working directory for the Kubectl command.<br/>Default value: $(System.DefaultWorkingDirectory)</td></tr>

@@ -7,8 +7,8 @@ description: Work with TFVC items programmatically using the REST APIs for Team 
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -39,16 +39,16 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items/{path}?api-version={ve
 
 When you specify the path of file in the URL, the response contains the contents of the file. You can also get a [specific version](#getaspecificversion) of an item. 
 
-###Using path as query parameter
+### Using path as query parameter
 The path can be specified as a query parameter as well.  
 This format should be used for certain files (like web.config) that are not accessible by using the path as part of the URL due to the default ASP .NET protection. 
 
-####Request
+#### Request
 ```
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fabrikam-Fiber-TFVC/WebSite/WebSite/web.config&api-version={version}
 ```
-####Response
-#####Status code: 200
+#### Response
+##### Status code: 200
 ```xml
 <?xml version="1.0"?>
 <configuration>
@@ -59,12 +59,12 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fab
 </configuration>
 ```
 
-####Request
+#### Request
 ```
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items/$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml?api-version={version}
 ```
-####Response
-#####Status code: 200
+#### Response
+##### Status code: 200
 ```html
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -99,14 +99,14 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items/$/Fabrikam
 
 Specify the path to the file using the `scopePath` parameter to get the metadata for that file, or for a [specific version](#getaspecificversion) of the file.
 
-####Sample request
+#### Sample request
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/tfvc/items?scopePath=/$/Fabrikam-Fiber-inc/AuthSample/AuthSample.sln?api-version={version}
 ```
 
-####Response
-#####Status code: 200
+#### Response
+##### Status code: 200
 ```json
 {
   "count": 1,
@@ -217,7 +217,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-
 
 
 ### Multiple items
-To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#mutlipleitems) for each item, too.
+To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#afolderanditschildren) for each item, too.
 
 #### Sample request
 

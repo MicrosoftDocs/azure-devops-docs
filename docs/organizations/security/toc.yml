@@ -1,22 +1,17 @@
 - name: "Security & identity"
-  href: index.md
-- name: Overview
-  items:
-  - name: About security and identity  
-    href: about-security-identity.md
+  href: index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+- name: About security and identity  
+  href: about-security-identity.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Quickstart
-  expanded: true
   items:
   - name: View permissions 
     href: view-permissions.md
-  - name: Look up the organization owner or a project administrator
+  - name: Look up the organization owner or a Project Administrator
     href: lookup-organization-owner-admin.md
   - name: Add users to a project or team 
     href: add-users-team-project.md
   - name: Set Git or TFVC repository permissions
     href: set-git-tfvc-repository-permissions.md
-  - name: Add a team administrator
-    href: ../settings/add-team-administrator.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
   - name: Add administrators or set permissions at the project or collection level
     href: set-project-collection-level-permissions.md 
 - name: Tutorials 
@@ -32,7 +27,7 @@
   - name: Remove user accounts 
     href: remove-users-prohibit-access.md 
   - name: Get started as a Stakeholder
-    href: ../../organizations/security/get-started-stakeholder.md
+    href: get-started-stakeholder.md
 - name: Concepts
   items:
   - name: About permissions and groups
@@ -40,19 +35,15 @@
   - name: About security roles
     href: about-security-roles.md      
   - name: About access levels 
-    href: access-levels.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+    href: access-levels.md
   - name: Azure Active Directory groups
-    href: ../accounts/access-with-azure-ad.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: ../accounts/access-with-azure-ad.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Active Directory groups 
-    href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
-  - name: Security glossary 
-    href: security-glossary.md
-  - name: Resources granted to project members
-    href: ../accounts/resources-granted-to-project-members.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
-- name: How-to Guides
+    href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: How-to guides
   items:
   - name: Add users to Azure DevOps Services
-    href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Change access levels
     href: change-access-levels.md?view=azure-devops-2019
   - name: Export user list  
@@ -60,53 +51,53 @@
   - name: Set permissions for an object or role
     items: 
     - name: Set dashboard permissions
-      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
-    - name: Set delivery plan permissions
-      href: set-permissions-access-work-tracking.md#plan-permissions
+      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set Git branch permissions
-      href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+      href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set pipeline permissions
-      href: ../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+      href: ../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Provide Stakeholders access to edit pipelines
       href: provide-stakeholder-pipeline-access.md
     - name: Set package feed permissions
-      href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+      href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set Wiki permissions
-      href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
-    - name: Set work tracking permissions 
-      href: set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+      href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Set work tracking and plan permissions 
+      href: set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set feedback permissions
-      href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+      href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set permissions to manage extensions
-      href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+      href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set SQL Server report permissions 
-    href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set SharePoint project portal permissions
-    href: set-sharepoint-permissions.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: set-sharepoint-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Sign-in to the web or a client
-    href: ../projects/connect-to-projects.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: ../projects/connect-to-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Revoke user PATs - for admins
     href: ../accounts/admin-revoke-user-pats.md
 - name: Troubleshooting
   items:
   - name: Add and delete users
-    href: ../accounts/faq-add-delete-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: ../accounts/faq-add-delete-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add team members
-    href: ../accounts/faq-add-team-members.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../accounts/faq-add-team-members.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Authenticate & invite with GitHub
+    href: faq-github-authentication.md
   - name: Access with Azure AD
-    href: ../accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../accounts/faq-azure-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Change app access
-    href: ../accounts/faq-change-app-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../accounts/faq-change-app-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add administrators
-    href: ../accounts/faq-add-administrators.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../accounts/faq-add-administrators.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage group-based licensing
-    href: ../accounts/faq-manage-group-based-licensing.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../accounts/faq-manage-group-based-licensing.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Resolve connection issues
-    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
-    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json   
+    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Network connections
     href: faq-network-connections.md
   - name: Trace permissions
@@ -120,22 +111,23 @@
   - name: Permissions & groups 
     href: permissions.md
   - name: Git permissions prior to TFS 2017 Update 1
-    href: git-permissions-before-2017.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: git-permissions-before-2017.md
   - name: Web site settings and security
-    href: /azure/devops/server/admin/websitesettings
-  - name: Azure DevOps Services data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Azure DevOps Services 
+    items:
+    - name: Data protection overview
+      href: data-protection.md 
+    - name: Data location
+      href: data-location.md 
+    - name: Credential storage
+      href: credential-storage.md 
+    - name: Add IP addresses and URLs to allow list
+      href: allow-list-ip-url.md
+      displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: TFSSecurity command
-    href: /azure/devops/server/ref/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
-  - name: REST API, Permissions
-    href: /rest/api/vsts/security/permissions 
-- name: Resources
-  items:
-  - name: All settings
-    href: ../settings/index.md
-  - name: Manage organizations 
-    href: ../accounts/index.md
-  - name: REST API authentication guidance
-    href: ../../integrate/get-started/authentication/authentication-guidance.md
-  - name: Technical articles
-    href: ../../articles/index.md
+    href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Security glossary 
+    href: security-glossary.md
+
+

@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -28,8 +28,11 @@ This task was used in a build or release pipeline to test mobile apps with Xamar
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/XamarinTestCloudV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -71,7 +74,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

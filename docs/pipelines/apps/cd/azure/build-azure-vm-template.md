@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -62,15 +62,15 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
-1. [Create a new build pipeline](../../../get-started-designer.md#create-a-build-pipeline) for the solution you just checked into a TFS or Git repo.
+1. [Create a new build pipeline](../../../create-first-pipeline.md#create-a-build-pipeline) for the solution you just checked into a TFS or Git repo.
 
-1. [Enable continuous integration (CI)](../../../get-started-designer.md#enable-continuous-integration-ci). This tells the system to queue a build whenever someone on your team commits or checks in new code.
+1. [Enable continuous integration (CI)](../../../create-first-pipeline.md#enable-continuous-integration-ci). This tells the system to queue a build whenever someone on your team commits or checks in new code.
 
-1. [Publish the artifacts from the build](../../../get-started-designer.md#publish-an-artifact-from-your-build).
+1. [Publish the artifacts from the build](../../../create-first-pipeline.md#publish-an-artifact-from-your-build).
    Make sure that the template files from your ARM template
    project are included in the artifacts published by your build pipeline.
 
-1. [Save the pipeline and queue a new build](../../../get-started-designer.md#save-and-queue-the-build).
+1. [Save the pipeline and queue a new build](../../../create-first-pipeline.md#save-and-queue-the-build).
    Verify that the artifact contains the **Templates** folder containing the template files
    **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**.
    This is the template that your release pipeline will consume to provision an Azure virtual machine.

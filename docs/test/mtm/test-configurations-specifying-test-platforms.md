@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -31,7 +31,7 @@ Use Microsoft Test Manager to specify test configurations. But you can still run
 
 **Requirements**
 
-* [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/)
+* [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 
 ## Planning tests with configurations  
  

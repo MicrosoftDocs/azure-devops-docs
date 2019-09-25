@@ -44,18 +44,20 @@ If you are looking for a specific work item, use the ad hoc search box. If you w
 
 For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
-###Additional tips for working with queries
--   To find work items that are assigned to you, add **@Me** as the value for the Assigned To field in one of the query clauses.  
--   All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
--   You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](../queries/using-queries.md).   
--   You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
--   You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
+### Additional tips for working with queries
+
+- To find work items that are assigned to you, add <strong>@Me</strong> as the value for the Assigned To field in one of the query clauses.  
+- All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
+- You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](../queries/using-queries.md).   
+- You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
+- You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
 ::: moniker range="azure-devops"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
 
 <a id="my-shared"/>
+
 ## My Queries, Shared Queries, and Favorites
 
 Only you can view and run queries that you save under **My Queries** with the queries directory. Also, you can favorite one of these queries to have it appear within your query selector.
@@ -68,11 +70,13 @@ For details, see:
 - [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
 
 <a id="examples"/>
+
 ## Example queries 
 
 You can list work items based on the following criteria...
 
 ### Identity based queries  
+
 - [Active items assigned to me](query-by-workflow-changes.md#me)
 - [Closed items that were assigned to me](query-by-workflow-changes.md#me)
 - [Active items assigned to my team](query-by-workflow-changes.md#me)
@@ -82,12 +86,14 @@ You can list work items based on the following criteria...
 - [Team or group membership queries](query-by-workflow-changes.md#group)
 
 ### Keywords or phrases
+
 - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
 - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
 - [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
 - [Category based queries](titles-ids-descriptions.md#category)
 
 ### Work item count and numeric field queries 
+
 - [Count of active bugs per developer](query-numeric.md#counts)
 - [Count of bugs by area and states](query-numeric.md#counts)
 - [Sum of story points and their status](query-numeric.md#effort)
@@ -96,6 +102,7 @@ You can list work items based on the following criteria...
 
 
 ### History and revision change queries
+
 - [History contains a specific word](history-and-auditing.md)
 - [History doesn't contain a specific word](history-and-auditing.md)
 - [Reactivated items](history-and-auditing.md)
@@ -103,6 +110,7 @@ You can list work items based on the following criteria...
 - [Items you've been associated with](history-and-auditing.md)
 
 ### Date and iteration based queries
+
 - [Items created in the last 30 days](query-by-date-or-current-iteration.md)
 - [Items modified on a specific date](query-by-date-or-current-iteration.md)
 - [Items resolved today](query-by-date-or-current-iteration.md)
@@ -111,6 +119,7 @@ You can list work items based on the following criteria...
 - [Items closed in the current sprint](query-by-date-or-current-iteration.md)
 
 ### State, reason, or workflow changes
+
 - [Resolved user stories](query-by-workflow-changes.md#workflow-change)
 - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change)
 - [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)
@@ -122,18 +131,21 @@ You can list work items based on the following criteria...
 - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
   
 ### Link and attachment count queries 
-- [All child items of a single epic ](linking-attachments.md)
+
+- [All child items of a single epic](linking-attachments.md)
 - [All related items](linking-attachments.md)
 - [Items with one or more attachments](linking-attachments.md)
 - [Items with 2 or more hyperlinks](linking-attachments.md)
 - [Items containing external links](linking-attachments.md)
 
 ### Tag based queries
+
 - [Items containing a specific tag](add-tags-to-work-items.md)
 - [Items that don't contain a specific tag](add-tags-to-work-items.md)
-- [Items that contain two or more tags ](add-tags-to-work-items.md)
+- [Items that contain two or more tags](add-tags-to-work-items.md)
 
 ### Build and test field queries
+
 - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
 - [List automated test cases](build-test-integration.md)
 - [List requirement-based test suites](build-test-integration.md)
@@ -141,6 +153,7 @@ You can list work items based on the following criteria...
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Team focus queries
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
 - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
@@ -176,6 +189,7 @@ To learn about query charts and widgets, see these topics:
  
 
 ### Query within or across projects
+
 By default, you query within a single project. However, using the query editor, you can [query across projects](using-queries.md#across-projects). 
 
 ### Visualize related work and other objects 

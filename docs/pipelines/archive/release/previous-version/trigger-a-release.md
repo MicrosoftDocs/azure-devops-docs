@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -22,9 +22,10 @@ Build (TFBuild). You can choose which stage of your release pipeline to start
 with. To trigger a release from a build, you must configure both your build 
 process and your release path.
 
-**Note**: This procedure applies only to releases that use a deployment agent 
-and a Build template in TFS. For information about other release scenarios, 
-see the **[Q & A](#blogposts)** at the end of this topic.
+> [!NOTE]
+> This procedure applies only to releases that use a deployment agent 
+> and a Build template in TFS. For information about other release scenarios, 
+> see the **[Q & A](#blogposts)** at the end of this topic.
 
 If you haven't created your release path yet, go 
 **[here](manage-your-release.md)** to do that.

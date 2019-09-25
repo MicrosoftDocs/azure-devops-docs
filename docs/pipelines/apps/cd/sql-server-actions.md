@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -23,7 +23,7 @@ However, you may want to perform other SQL server actions
 as part of your release workflow.
 
 At present, the SQL task does not support other actions.
-Instead, you can use the [PowerShell task]()
+Instead, you can use the [PowerShell task](../../tasks/utility/powershell.md)
 in your workflow to execute a SQL script.
 The SQL script can be specified either as an artifact or as an inline script.
 
@@ -105,7 +105,7 @@ Exports a live database, including database schema and user data, from SQL Serve
 
 ```command
 SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /SourceServerName:"<ServerName>.database.windows.net"
-/SourceDatabaseName:"<DatabseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
+/SourceDatabaseName:"<DatabaseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
 ```
 
 **Example:**

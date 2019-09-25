@@ -7,8 +7,8 @@ description: Work with Git items (files and folders) programmatically using the 
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -64,11 +64,11 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 When you get an item that is a file, the response is a stream (`application/octet-stream`) that contains the contents of the file. You can also get a [specific version](#getaspecificversion) of an item. 
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-Git/_apis/repos/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
 ```
-####Sample response
+#### Sample response
 
 ```html
 <div class="jumbotron">
@@ -97,14 +97,14 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-Git/_apis/re
     </div>
 </div>
 ```
-#####Status code: 200
+##### Status code: 200
 
 ### Zip a folder
 <a name="zipafolder" />
 
 Set `scopePath` to the folder that you want to get in a zipped format and include the request header `Accept: application/zip`.
 
-####Sample request
+#### Sample request
 ```http
 Accept: application/zip
 ```
@@ -120,7 +120,7 @@ You can get a .zip file that contains the contents of a [specific version](#geta
 
 Set the accept header to `application/json` to get the metadata for a file, or for a [specific version](#getaspecificversion) of a file.
 
-####Sample request
+#### Sample request
 
 ```http
 Accept: application/json
@@ -129,10 +129,10 @@ Accept: application/json
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
 ```
 
-####Response
+#### Response
 The objectId in the metadata is the SHA1 hash of the item.
 
-#####Status code: 200
+##### Status code: 200
 ```json
 {
   "count": 1,
@@ -299,7 +299,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 
 ### Multiple items
 To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body.
-You can specify the [version](#getaspecificversion) and [recursion level](#mutlipleitems) for each item, too.
+You can specify the [version](#getaspecificversion) and [recursion level](#afolderanditschildren) for each item, too.
 
 #### Sample request
 

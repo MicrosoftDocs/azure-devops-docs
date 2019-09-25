@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Decide between using a local or a server workspace
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. In most cases, local is best because it provides several advantages. Most notably, you can perform core version control operations even when you're not connected to your Team Foundation Server.
 
@@ -47,15 +47,15 @@ When you use a server workspace, Visual Studio keeps only one copy of each file.
 
 **Work offline with difficulty and with poor performance.** When you are offline in a server workspace, you cannot work with your local files because they are read-only until you check them out. You can check out files only from Solution Explorer, and only after you switch to offline mode (as explained below). While you're offline, you can't perform any other operations, such as add, delete, rename, or undo.
 
->**Tip:**
-You can improve responsiveness by enabling asynchronous checkout. For more information, see [Manage project collection workspace settings for your team](decide-between-using-local-server-workspace.md#Admin_Settings).
+> [!TIP]
+> You can improve responsiveness by enabling asynchronous checkout. For more information, see [Manage project collection workspace settings for your team](decide-between-using-local-server-workspace.md#Admin_Settings).
 
 ### Switch to offline mode when using a server workspace
 
 When you use a server workspace and cannot connect to your Team Foundation Server, Source Control Explorer is disabled. However, if you have local copies of your files in your server workspace, you can still edit them from Solution Explorer. After the server becomes available again, you can check the changes into version control.
 
->**Tip:**
-If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
+> [!TIP]
+> If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
 
 ### To work with version-controlled files when the server is offline
 

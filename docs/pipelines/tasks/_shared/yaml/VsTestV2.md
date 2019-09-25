@@ -4,7 +4,10 @@
 - task: VSTest@2
   inputs:
     #testSelector: 'testAssemblies' # Options: testAssemblies, testPlan, testRun
-    #testAssemblyVer2: '**\*test*.dll!**\*TestAdapter.dll!**\obj\**' # Required when testSelector == TestAssemblies
+    #testAssemblyVer2: | # Required when testSelector == TestAssemblies
+    #  **\*test*.dll
+    #  !**\*TestAdapter.dll
+    #  !**\obj\** 
     #testPlan: # Required when testSelector == TestPlan
     #testSuite: # Required when testSelector == TestPlan
     #testConfiguration: # Required when testSelector == TestPlan
@@ -15,7 +18,7 @@
     #runAllTestsAfterXBuilds: '50' # Optional
     #uiTests: false # Optional
     #vstestLocationMethod: 'version' # Optional. Options: version, location
-    #vsTestVersion: 'latest' # Optional. Options: latest, 15.0, 14.0, toolsInstaller
+    #vsTestVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, toolsInstaller
     #vstestLocation: # Optional
     #runSettingsFile: # Optional
     #overrideTestrunParameters: # Optional
@@ -34,7 +37,7 @@
     #platform: # Optional
     #configuration: # Optional
     #publishRunAttachments: true # Optional
-    #diagnosticsEnabled: True # Optional
+    #diagnosticsEnabled: false # Optional
     #collectDumpOn: 'onAbortOnly' # Optional. Options: onAbortOnly, always, never
     #rerunFailedTests: False # Optional
     #rerunType: 'basedOnTestFailurePercentage' # Optional. Options: basedOnTestFailurePercentage, basedOnTestFailureCount

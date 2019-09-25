@@ -1,13 +1,11 @@
 ```YAML
-# File Transform
+# File transform
+# Replace tokens with variable values in XML or JSON configuration files
 - task: FileTransform@1
-  displayName: 'File Transform: '
   inputs:
-    folderPath: $(System.DefaultWorkingDirectory)/**/*.zip
-    enableXmlTransform: true
-    xmlTransformationRules: |
-      -transform **\*.Release.config -xml **\*.config
-      -transform **\*.$(Release.EnvironmentName).config -xml **\*.config
-    fileType: xml
-    targetFiles: '**/*.config, parameters.xml'
+    #folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip' 
+    #enableXmlTransform: # Optional
+    #xmlTransformationRules: '-transform **\*.Release.config -xml **\*.config-transform **\*.$(Release.EnvironmentName).config -xml **\*.config' # Optional
+    #fileType: # Optional. Options: xml, json
+    #targetFiles: # Optional
 ```

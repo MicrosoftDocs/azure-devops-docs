@@ -2,10 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Settings
-    tocHref: /azure/devops/organizations/
+  - name: Manage & Configure Resources
+    tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
     items:
-    - name: All settings
-      tocHref: /azure/devops/
+    - name: DevOps Settings
+      tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index

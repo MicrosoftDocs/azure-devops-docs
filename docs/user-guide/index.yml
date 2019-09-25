@@ -5,14 +5,14 @@ metadata:
   title: New user guide
   titleSuffix: Azure DevOps
   ms.custom: seodec18
-  description: Learn the basics of the Azure DevOps interface and how to perform some common tasks.
-  ms.date: 01/15/2019
+  description: Learn the basics of the Azure DevOps interface and how to do some common tasks.
+  ms.date: 04/05/2019
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   ms.author: chcomley
   author: chcomley
-  manager: douge
+  manager: jillfra
 abstract:
   description: New to Azure DevOps? Welcome! We'll walk you through the basics and some common tasks.
   aside:
@@ -64,7 +64,7 @@ sections:
           title: Azure DevOps
           alt: DevOps logo 
           src: https://docs.microsoft.com/media/common/i_dev-ops.svg
-        title: Create organizations
+        title: Create an organization or project collection
       - href: ../organizations/projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
@@ -172,13 +172,6 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: concepts.md
-        html: <p></p>
-        image:
-          title: Concepts in the Azure DevOps user guide
-          alt: Learn about logo
-          src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        title: Key concepts
       - href: plan-your-azure-devops-org-structure.md
         html: <p></p>
         image:
@@ -214,6 +207,13 @@ sections:
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
+      - href: what-is-azure-devops.md
+        html: <p></p>
+        image:
+          title: What is Azure DevOps?
+          alt: Article logo
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "What is Azure DevOps?"
       - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:
@@ -247,21 +247,21 @@ sections:
       - href: ../security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Default access and permissions for Azure DevOps
+          title: Default access and permissions
           alt: Overview logo
           src: https://docs.microsoft.com/media/common/i_overview.svg
         title: Default permissions and access
       - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Users access levels in Azure DevOps
+          title: User access levels
           alt: Protect logo
           src: https://docs.microsoft.com/media/common/i_protect.svg
         title: About access levels
       - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
-          title: Azure DevOps data protection overview
+          title: Data protection overview
           alt: Security protection logo
           src: https://docs.microsoft.com//media/common/i_threat-protection.svg
         title: Data protection overview
@@ -282,28 +282,28 @@ sections:
       - href: ../organizations/security/index.md
         html: <p></p>
         image:
-          title: Azure DevOps security and identity
+          title: Security and identity
           alt: Security management logo
           src: https://docs.microsoft.com/media/common/i_security-management.svg
         title: Security and identity
       - href: ../organizations/projects/index.md
         html: <p></p>
         image:
-          title: Manage Azure DevOps projects
+          title: Manage projects
           alt: Management logo
           src: https://docs.microsoft.com/media/common/i_management.svg
         title: Manage projects
       - href: ../organizations/billing/index.md
         html: <p></p>
         image:
-          title: Azure DevOps billing
+          title: Billing
           alt: Billing logo
           src: https://docs.microsoft.com/media/common/i_billing.svg
         title: Billing
       - href: ../organizations/accounts/index.md
         html: <p></p>
         image: 
-          title: Azure DevOps organization management
+          title: Organization management
           alt: Management logo
           src: https://docs.microsoft.com/media/common/i_account-management.svg
         title: Manage organizations

@@ -9,7 +9,7 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
-ms.date: 12/07/2018
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,10 +20,19 @@ monikerRange: '>= tfs-2015'
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
 
-Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
+Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
+
+::: moniker range=">= azure-devops-2019"
+
+You can also perform deeper analysis of test results by using the
+[Analytics Service](../../report/powerbi/what-is-analytics.md).
+For an example of using this with your build and deploy pipelines, see [Analyze test results](test-analytics.md).
+
+::: moniker-end
+
 Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="< azure-devops-2019"
@@ -44,7 +53,7 @@ Published test results can be viewed in the **Tests** tab in a build or release 
 
 ## Surface test results in the Tests tab 
 
-Tests results can be surfaced in the **Tests** tab using one of the following options:
+Test results can be surfaced in the **Tests** tab using one of the following options:
 
 * **Automatically  inferred  test  results**.  By default, your pipeline can automatically infer the test output for a few popular test runners.
   This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
@@ -53,11 +62,12 @@ Tests results can be surfaced in the **Tests** tab using one of the following op
   - Javascript - Mocha,  Jest  and  Jasmine
   - Python- Unittest
  
-  **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
-  [(more details)](#automatically_inferred_tests). Also see:  
+    > [!NOTE]
+    > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
+    > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../languages/javascript.md#run-unit-tests)
-  - [Publishing fully-formed test reports for Python test runners](../languages/python.md#test)
+  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
   that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
@@ -152,6 +162,10 @@ you can organize the **Results** view exactly as you require.
 
 <a name="fullpageview"></a>
 
+### Test debt management with bugs
+
+To manage your test debt for failing or long running tests you can create a bug or add data to exisiting bug and all view all associated work items in the work item tab. 
+
 ### Immersive troubleshooting experience
 
 Error messages and stack traces are lengthy in nature and need enough real estate to view the details during troubleshooting.
@@ -159,6 +173,16 @@ To provide an immersive troubleshooting experience, the **Details** view can be 
 able to perform the required operations in context, such as bug creation or requirement association for the selected test result.
 
 ![Full page panel view](_img/review-continuous-test-results-after-build/full-page-panel-view.png)
+
+<a name="debugginginfo"></a>
+
+### Troubleshooting data for Test failure
+
+For the test failures, the error messages and stack traces are available for troubleshooting. You can also view all attachments associated with the test failure in the *Attachments* tab. 
+
+### Test debt management
+
+You can create or add to an existing bug to manage test debt for failures or long running tests. The *Work Items* tab details all bugs and requirements associated with a Test to help you analyze the requirement impact as well know status and who is working on the bug. 
 
 <a name="historyview"></a>
 
@@ -271,5 +295,11 @@ The following features are not available for inferred test reports:
 > Some runners such as Mocha have multiple built-in console reporters such as [dot-matrix](https://mochajs.org/#dot-matrix) and [progress-bar](https://mochajs.org/#progress). 
 > If you have configured a non-default console output for your test runner, or you are using a custom reporter,
 > Azure DevOps will not be able to infer the test results. It can only infer the results from the [default](https://mochajs.org/#spec) reporter. 
+
+## See also
+
+* [Analyze test results](test-analytics.md)
+* [Trace test requirements](requirements-traceability.md)
+* [Review code coverage results](review-code-coverage-results.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

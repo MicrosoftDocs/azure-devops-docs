@@ -1,6 +1,6 @@
 ```YAML
 # Service Fabric PowerShell
-# Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
+# Run a PowerShell script in the context of an Azure Service Fabric cluster connection
 - task: ServiceFabricPowerShell@1
   inputs:
     clusterConnection: 

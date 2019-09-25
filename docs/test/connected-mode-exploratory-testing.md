@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -161,7 +161,7 @@ The extension lets you create test cases as you explore your application.
 
    ![Stop the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-05.png)
 
-1. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+2. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
    sessions in Azure DevOps or TFS.
 
    ![View the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-06.png)

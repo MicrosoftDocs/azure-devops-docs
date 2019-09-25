@@ -49,11 +49,11 @@ After the team creates test plans and starts to run tests by using the test mana
   
  You can filter the Test Plan Progress report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.  
+- Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Managing Test Cases and Test Plans  
  For the Test Plan Progress report to be useful and accurate, the team must perform the following activities to manage test plans:  

@@ -41,7 +41,7 @@ In this article you'll learn:
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -52,10 +52,10 @@ In this article you'll learn:
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
-- 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -66,7 +66,7 @@ In this article you'll learn:
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
-- 
+
 ::: moniker-end
 
 
@@ -100,50 +100,44 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"  
 
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
 
-0. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan** . 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
-0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
+2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end 
+	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png)  
+   ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 
 
-0. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan** . 
 
-	::: moniker range="azure-devops"  
-	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/add-plan.png) 
-	::: moniker-end  
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
-	::: moniker-end  
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
-0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
-
+2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+
 ::: moniker-end
 
 When defining a plan, note the following:  
@@ -161,14 +155,14 @@ Once you've defined a plan, you can further customize it.
 1. Choose the ![ ](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
-	- Edit the teams you've selected and their backlog level  
-	- Set field criteria to further limit the work items that will appear on the plan 
-	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
+   - Edit the teams you've selected and their backlog level  
+   - Set field criteria to further limit the work items that will appear on the plan 
+   - Add markers to show important upcoming events on your timeline 
+   - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
-	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-	<img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
+     <img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
 
 3. To set a marker, open the Markers page, specify a date and select a color. 	
 
@@ -185,7 +179,6 @@ Once you've defined a few plans, you'll see them listed from the Plans page unde
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project.
 
 To open a plan, simply choose the plan name.  
-
 
 ## Interactive elements of plans, change the plan view  
  

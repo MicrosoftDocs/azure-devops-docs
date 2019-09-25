@@ -42,11 +42,11 @@ After the team starts to define test cases, you can use the Test Case Readiness 
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the test cases that are counted in the report by specifying area paths, priority, and state.  
+- Filter the test cases that are counted in the report by specifying area paths, priority, and state.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required activities for tracking test cases  
  For the Test Case Readiness report to be useful and accurate, the team must perform the following activities:  

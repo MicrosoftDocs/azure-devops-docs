@@ -1,6 +1,6 @@
 ```YAML
-# Download Fileshare Artifacts
-# Download artifacts from a file share e.g \\share\drop
+# Download artifacts from file share
+# Download artifacts from a file share, like \\share\drop
 - task: DownloadFileshareArtifacts@1
   inputs:
     filesharePath: 

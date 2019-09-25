@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Shelvesets Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about a set of shelved changes.
 
@@ -26,6 +26,7 @@ To use the **shelvesets** command, you must the have **Read** permission and the
 
     tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
 ## Parameters<table>
+
 |**Argument**|**Description**|
 |---|---|
 |*ownername*|Provides a value such as * or DOMAIN\john to the **/owner** option.|

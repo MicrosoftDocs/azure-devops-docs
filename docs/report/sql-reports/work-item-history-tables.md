@@ -26,17 +26,17 @@ You can query for historical data about bugs, tasks, and other types of work ite
   
  FactWorkItemHistory is associated with the following dimension tables:  
   
--   DimArea  
+- DimArea  
   
--   DimIteration  
+- DimIteration  
   
--   DimPerson  
+- DimPerson  
   
--   DimTeamProject  
+- DimTeamProject  
   
--   DimWorkItem  
+- DimWorkItem  
   
- You can use the following sample query to find the historical workload trend for the period between 2009-09-21 and 2009-09-30 for certain user stories. For each user story in the team project, this query returns information about the total completed work, the original estimated work, the remaining work, and the total story points for every day during that period.  
+  You can use the following sample query to find the historical workload trend for the period between 2009-09-21 and 2009-09-30 for certain user stories. For each user story in the team project, this query returns information about the total completed work, the original estimated work, the remaining work, and the total story points for every day during that period.  
   
 > [!NOTE]    
 >  This query assumes that a user story is linked to other work items through child links.  

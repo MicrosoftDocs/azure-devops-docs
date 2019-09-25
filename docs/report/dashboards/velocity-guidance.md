@@ -1,6 +1,6 @@
 ---
 title: Velocity metrics and usage guidance
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps 
 description: Guidance for working with velocity charts generated for a team or project in Azure DevOps & Team Foundation Server
 ms.custom: dashboards
 ms.technology: devops-analytics  
@@ -15,7 +15,7 @@ ms.date: 11/01/2018
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
  
 Velocity provides a useful metric for these activities:  
 - Support sprint planning  

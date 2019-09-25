@@ -1,7 +1,11 @@
-- name: Team Foundation Server
+- name: Azure DevOps 
   tocHref: /azure/devops/
-  topicHref: /azure/devops/server/index
-  items: 
-  - name: SharePoint Integration
+  topicHref: /azure/devops/index
+  items:
+  - name: Azure DevOps Server Administration
     tocHref: /azure/devops/report/sharepoint-dashboards/
-    topicHref: /azure/devops/report/sharepoint-dashboards/index
+    topicHref: /azure/devops/server/admin/admin-quick-ref
+    items:
+    - name: SharePoint Integration
+      tocHref: /azure/devops/report/sharepoint-dashboards/
+      topicHref: /azure/devops/report/sharepoint-dashboards/index

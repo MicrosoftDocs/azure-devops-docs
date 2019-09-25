@@ -2,8 +2,8 @@
 title: Restrictions and conventions for naming
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Requirements to meet when labeling objects such as an organization, project, tags, templates, and more, like length, uniqueness, and special characters 
-ms.technology: devops-collab
+description: Requirements for labeling objects like organization, project, tags, templates, and more, by length, uniqueness, and special characters 
+ms.technology: devops-settings
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
@@ -11,14 +11,14 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 01/11/2019
+ms.date: 6/21/2019
 ---
 
 # Naming restrictions and conventions  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-Most components in Azure DevOps must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
+Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
@@ -28,9 +28,9 @@ Common restrictions include not exceeding the character length for a name, not c
 <a id="CommonRestrictions">   </a>
 ### Common considerations 
 
-The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
+The length restrictions in this article are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For details, see [About Unicode and Character Sets](https://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
 
-As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
@@ -49,7 +49,7 @@ Both the operating system and Active Directory impose certain restrictions on co
 
 <a id="AccountNames">   </a>
 ### User account names
-User accounts identify people added to a project or project collection. These user accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
+User accounts identify people added to a project or project collection. These user accounts might correspond to an Active Directory, Azure Active Directory, Windows, or other user account types.  
 
 You add existing user accounts. You can't create a user account. To add user accounts to a  project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md) . 
 
@@ -108,7 +108,7 @@ User accounts that you add must conform to the following restrictions.
 <td>
 <ul>
 <li>
-<p>Must not include the following printable characters: "/ \ [ ] : | &lt; &gt; + = ; ? *</p>
+<p>Must not include the following printable characters: &quot;/ \ [ ] : | &lt; &gt; + = ; ? *</p>
 </li>
 <li>
 <p>Must not include nonprintable characters in the ASCII value range of 1-31</p>
@@ -192,7 +192,7 @@ Special character restrictions
 <td>
 <ul>
 <li>
-Must not include the following printable characters: "/ \ [ ] : | &lt; &gt; + = ; ? *
+Must not include the following printable characters: &quot;/ \ [ ] : | &lt; &gt; + = ; ? *
 </li>
 <li>
 Must not include nonprintable characters in the ASCII value range of 1-31
@@ -258,7 +258,7 @@ If your deployment includes SharePoint Products or SQL Server Reporting Services
 <ul>
 <li>
 Must not contain any Unicode control characters or surrogate characters.</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]</li>
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</li>
 <li>Must not contain an ellipsis (&hellip;) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -272,7 +272,7 @@ Reserved names
 <td>
 <ul>
 <li>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, Web, or WEB <br/>
-Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -320,7 +320,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -338,7 +338,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -350,7 +350,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 
 ### Process and process templates 
 
-A process defines the building blocks of the work item tracking system as well as other sub-systems you access when you connect to a project.  
+A process defines the building blocks of the work item tracking system and other subsystems you access when you connect to a project.  
 
 > [!NOTE]   
 >  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
@@ -378,7 +378,7 @@ Processes you define or customize must conform to the following restrictions.
 </td>
 <td>
 <ul>
-<li>Must be unique across the Team Foundation server.</li>
+<li>Must be unique across TFS.</li>
 <li>If you upload a template with the same name as an existing template, the existing template is overwritten.</li>
 </ul>
 </td>
@@ -403,7 +403,7 @@ Must not exceed 2 GB (gigabytes).
 
 Your [Kanban board](../../boards/boards/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
-You can customize your Kanban boards to match how your team works by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
+Customize your Kanban boards by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
 
 Column and swimlane names must conform to the following restrictions.
 
@@ -456,7 +456,7 @@ Must not contain any Unicode control characters or surrogate characters
 ### Teams 
 Team names identify a group of individuals or groups that collectively work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. 
 
-As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
+As such, team names must conform to conventions that allow them to be rendered as part of a valid URL. Each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
 
 Team names must conform to the following restrictions.   
 
@@ -499,7 +499,7 @@ Special characters
 Must not contain any Unicode control characters or surrogate characters
 </li>
 <li>
-Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>
 Must not contain an ellipsis (&hellip;) or a double period (..)
@@ -521,7 +521,7 @@ Reserved names
 <ul>
 <li>
 Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX <br/>
-Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).
+Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -531,13 +531,13 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 
 <a id="WorkItems">   </a>
 
-## Work items, work item types and customizations
+## Work items, work item types, and customizations
 
 You use work items to capture information to plan and track your software development projects. With work items, you can describe the work to be done, assign work, track status, and coordinate efforts within your team. Different types of work items&mdash;such as user stories, tasks, bugs, and issues&mdash;track different types of information.  
 
-All work item tracking objects are associated with one or more names. Most have friendly display names and all, except work item types and global lists, are associated with reference names. A friendly name is a unique, user-visible identifier for a field. Using friendly names ensure consistency across all projects and work item types in a project collection. The system uses the reference name internally and you cannot change it after it is defined.  
+All work item tracking objects are associated with one or more names. Most have friendly display names, except work item types and global lists, are associated with reference names. A friendly name is a unique, user-visible identifier for a field. Using friendly names ensures consistency across projects and work item types in a project collection. The system uses the reference name internally and you cannot change it after it is defined.  
 
-Restrictions are placed on several elements associated with work items, including reference and friendly names, field names, and attachment size  
+There are restrictions on several elements that are associated with work items, including reference and friendly names, field names, and attachment size.  
 
 You can [modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md) to support your team's processes. 
 
@@ -564,7 +564,7 @@ Default maximum size: 4,096 kilobytes
 </li>
 <li>
 <p>Absolute maximum size: 2 gigabytes</p>
-<p>[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md).</p></li>
+<p><a href="../../reference/xml/change-maximum-attachment-size-work-items.md" data-raw-source="[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md)">Change the maximum attachment size for work items</a>.</p></li>
 </ul>
 </td>
 </tr>
@@ -573,7 +573,7 @@ Default maximum size: 4,096 kilobytes
 
 ### Area Path and Iteration Path 
 
-Two work item fields, **Area Path** and **Iteration Path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods in which they'll be worked on.
+Two work item fields, **Area Path** and **Iteration Path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods for addressing those work items.
 
 These multi-node fields use the backslash (&#92;) characters to denote the hierarchy of nodes within the tree structure.  
 
@@ -606,10 +606,10 @@ The names you assign to child nodes to these fields must conform to the followin
 <p>Must not contain Unicode control characters</p>
 </li>
 <li>
-<p>Must not contain any one of the following characters: &#92; &#47; $ ? &#42; : " &amp; &gt; &lt; &#35; % | +  </p>
+<p>Must not contain any one of the following characters: &#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +  </p>
 </li>
 <li>
-Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -626,7 +626,7 @@ Must not contain characters prohibited by the local file system. For more inform
 <li>
 <p>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX</p>
 
-<p>Learn more about reserved names: [File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx).</p>
+<p>Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.</p>
 </li>
 </ul>
 </td>
@@ -704,11 +704,11 @@ Length
 
 ### Field, link type, and category reference names 
 
-You must define a reference name whenever you add or create a work item field, link type, or category. Each work item field has an associated field reference name. The field reference name uniquely identifies each field and cannot be changed after it's assigned.  
+Define a reference name whenever you add or create a work item field, link type, or category. Each work item field has an associated field reference name. The field reference name uniquely identifies each field and can't be changed after it's assigned.  
 
 All reference names can be up to 70 Unicode characters long.  
 
-You can define a reference name by using alphanumeric characters, underscore characters, and hyphen characters. Each reference name must contain at least one period (.), but no period can appear at the start or end of a name. A reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).  
+Define a reference name by using alphanumeric characters, underscore characters, and hyphen characters. Each reference name must contain at least one period (.), but no period can appear at the start or end of a name. A reference name can't start with a number or an underscore, and it can't have multiple consecutive hyphens, such as (--).  
 
 Work item field reference names that you add must conform to the following restrictions.  
 
@@ -764,7 +764,7 @@ Must not be identical to any other field reference name within the project colle
 </li>
 <li>
 Must not be identical to any other field reference name after those names are processed by the computer to replace all periods (.) with underscores (&#95;)<br/>
-For example, the field reference names ```My._Field``` and ```My_.Field``` would both be processed by the computer to be the same name: ```My__Field```
+For example, the field reference names <code>My.<em>Field</code> and <code>My</em>.Field</code> would both be processed by the computer to be the same name: <code>My__Field</code>
 </li>
 </ul>
 </td>
@@ -775,11 +775,11 @@ For example, the field reference names ```My._Field``` and ```My_.Field``` would
 
 The work item type definition language includes the concept of a *field reference name*. Field reference names can help you to port definitions between Team Foundation project collections and also to allow third party integrations to find and refer to specific fields. These names are globally unique, just as a namespace in the .NET Framework application is globally unique.  
 
-Field reference names cannot be renamed. If, for example, you changed the field name "Title" to "Header", the field reference name of that field remains the same. Integrations and internal representations of fields should use the field reference name instead of depending on the field name itself.  
+Field reference names cannot be renamed. If for example, you changed the field name "Title" to "Header", the field reference name of that field remains the same. Integrations and internal representations of fields should use the field reference name instead of depending on the field name itself.  
  
 The System namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. Team Foundation Server prevents you from creating your own System.X field because it might impede Team Foundation Server functionality.  
 
-The Microsoft namespace is used to define work item tracking fields. These fields are defined in a work item type definition of the TFS process templates. TFS does not prevent you from creating your own Microsoft.X field. However, this practice is strongly discouraged because it might impede Team Foundation Server TFS functionality or the ability for the Configure Features wizard to successfully update a project after a TFS upgrade.   
+The Microsoft namespace is used to define work item tracking fields. These fields are defined in a work item type definition of the TFS process templates. TFS does not prevent you from creating your own Microsoft.X field. However, this practice is discouraged because it might impede TFS functionality or the ability for the Configure Features wizard to successfully update a project after an upgrade.   
 
 Customers and partners can create their own field namespaces for custom work item types.  
 
@@ -818,12 +818,12 @@ Microsoft.VSTS.TCM.AutomationStatus<br/>
 Microsoft.VSTS.TCM.TestSuiteType</p>
 </td>
 <td>
-<p>The fictitious company *Fabrikam Fiber* might define the following custom work item fields:</p>
+<p>The fictitious company <em>Fabrikam Fiber</em> might define the following custom work item fields:</p>
 <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;FabrikamFiber.Common.Severity<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.Common.Phase<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.RiskManagement.RiskType<br/>
 &nbsp;&nbsp;&nbsp;FabrikamFiber.RiskManagement.Resolution</p>
-<p>The fictitious software company *Contoso Corporation* might define the following work item fields:</p>
+<p>The fictitious software company <em>Contoso Corporation</em> might define the following work item fields:</p>
 <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;Contoso.Common.BusinessPriority<br/>
 &nbsp;&nbsp;&nbsp;Contoso.Bug.FoundInPhase<br/>
 &nbsp;&nbsp;&nbsp;Contoso.Bug.FixInPhase</p>
@@ -924,7 +924,7 @@ Global lists must conform to the following restrictions.
 <td>Number of items</td>
 <td>
 <ul>
-<li>Can't be empty. The global list must contain at least one ```LISTITEM``` element.</li>
+<li>Can&#39;t be empty. The global list must contain at least one <code>LISTITEM</code> element.</li>
 </ul>
 </td>
 </tr>
@@ -946,7 +946,7 @@ Global lists must conform to the following restrictions.
 ### Work item tags
 
 Work item tags correspond to one or two keyword phrases that 
-supports your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
+support your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
 
 Tag names must conform to the following restrictions.  
 
@@ -971,7 +971,7 @@ Tag names must conform to the following restrictions.
 <td>Special characters</p></td>
 <td>
 <ul>
-<li>Must not contain separator characters: `,` or `;`</li>
+<li>Must not contain separator characters: <code>,</code> or <code>;</code></li>
 <li>Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters  </li>
 </ul>
 </td>
@@ -988,7 +988,7 @@ Team Foundation Build lets you manage all the aspects of the build process on a 
 
 ### Build computer 
 
-Team Foundation Build is a separate installation from the TFS application tier, data tier, or Visual Studio client. You may designate a separate computer. Otherwise, you can install the build side-by-side on the client computer or on the servers.  
+Team Foundation Build is a separate installation from the TFS application tier, data tier, or Visual Studio client. You may choose a separate computer. Otherwise, you can install the build side-by-side on the client computer or on the servers.  
 
 Your on-premises build computer must conform to the following restrictions.  
 
@@ -1008,14 +1008,14 @@ Must contain sufficient space for the build (insufficient space leads to failed 
 <td>
 <p>Build directory</p>
 </td>
-<td>Must be a local path (for example, *C:\BuildDirectory*).
+<td>Must be a local path (for example, <em>C:\BuildDirectory</em>).
 </td>
 </tr>
 <tr>
 <td>
 Drop location directory</td>
 <td>
-Must be a UNC path (for example, ```\\server\share```).
+Must be a UNC path (for example, <code>\server\share</code>).
 </td>
 </tr>
 <tr>
@@ -1025,7 +1025,7 @@ Must be a UNC path (for example, ```\\server\share```).
 <td>Each generated build is put in a new directory in the drop folder.
 <ul>
 <li>
-The Team Foundation Server Service account (for example, *Domain*&#92;TFSSERVICE) must have Full Control permission access to the UNC drop location.
+The Team Foundation Server Service account (for example, <em>Domain</em>&#92;TFSSERVICE) must have Full Control permission access to the UNC drop location.
 </li>
 <li>The UNC drop location must be a shared folder.
 </li>
@@ -1053,7 +1053,7 @@ If you change the TFS Service account after the initial installation, you must m
 <p>Firewall issues</p>
 </td>
 <td>
-If the build computer is firewall enabled, make sure that the program **tfsbuildservice** is in the exceptions list.
+If the build computer is firewall enabled, make sure that the program <strong>tfsbuildservice</strong> is in the exceptions list.
 </td>
 </tr>
 </table>
@@ -1177,12 +1177,12 @@ In the web portal and REST API certain operations (Edit, Rename, and Delete) hav
 </tr>
 <tr>
 <td>
-<p>Web portal and REST specific length restrictions</p>
+<p>Web portal and REST-specific length restrictions</p>
 </td>
 <td>
 <ul>
 <li>
-<p>Must not contain more than 215 Unicode characters for a combined project name, directory and file name.</p>
+<p>Must not contain more than 215 Unicode characters for a combined project name, directory, and file name.</p>
 </li>
 </ul>
 </td>
@@ -1222,7 +1222,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -1253,9 +1253,9 @@ Files and folders you add to Team Foundation version control must conform to the
 </td>
 <td>
 <ul>
-<li>Names must not contain the following printable characters: &#92; &#47; : &#42; ? " &lt; &gt; | ; </li>
+<li>Names must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; </li>
 <li>
-Folders must not reside outside the mapped directory for the active workspace
+Folders must not be outside the mapped directory for the active workspace
 </li>
 </ul>
 </td>
@@ -1269,7 +1269,7 @@ File names
 <li>
 Must not begin with a $
 </li>
-<li>Must not contain the following printable characters: &#92; &#47; : &#42; ? " &lt; &gt; | ; </li>
+<li>Must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; </li>
 </ul>
 </td>
 </tr>
@@ -1277,7 +1277,7 @@ Must not begin with a $
 
 ## TFVC Labels
 
-In Team Foundation version control (TFVC), a label is a name applied to a specific set of revisions. You can attach labels to a set of unrelated files in version control. This lets you retrieve the files or act upon them as a group. The following table describes the restrictions put on label names.
+In Team Foundation version control (TFVC), a label is a name applied to a specific set of revisions. You can attach labels to a set of unrelated files in version control, which lets you retrieve the files or act upon them as a group. The following table describes the restrictions put on label names.
 
 <table>
 <tr>
@@ -1303,10 +1303,10 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
 <td>
 <ul>
 <li>
-<p>Cannot end with a space ( ) or period (.)</p>
+<p>Can&#39;t end with a space ( ) or period (.)</p>
 </li>
 <li>
-<p>Must not contain the following printable characters: &#92; &#47; "  : &lt; &gt;  | &#42; ? @ ; </p>
+<p>Must not contain the following printable characters: &#92; &#47; &quot;  : &lt; &gt;  | &#42; ? @ ; </p>
 </li>
 </ul>
 </td>
@@ -1344,7 +1344,7 @@ Shelveset names must conform to the following restrictions.
 <ul>
 <li>
 
-<p>Must not contain the following printable characters: &#92; &#47;  "  : &lt; &gt;  | &#42; ? ; </p>
+<p>Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ; </p>
 </li>
 </ul>
 </td>
@@ -1381,9 +1381,9 @@ Workspace names must conform to the following restrictions.
 <td>
 <ul>
 <li>
-<p>Cannot end with a space ( )</p>
+<p>Can&#39;t end with a space ( )</p>
 </li>
-<li><p>Must not contain the following printable characters: &#92; &#47;  "  : &lt; &gt;  | &#42; ? ; </p>
+<li><p>Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ; </p>
 </li>
 </ul>
 </td>

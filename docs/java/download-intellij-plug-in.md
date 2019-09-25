@@ -35,13 +35,13 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
-1. Click the `Install plugin` button and restart IntelliJ IDEA. 
+2. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
+3. Click the `Install plugin` button and restart IntelliJ IDEA. 
  
- ## Next Steps 
-* Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
+   ## Next Steps 
+4. Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
  
- ## Frequently Asked Questions (FAQ)
+   ## Frequently Asked Questions (FAQ)
 
 **Q:  What versions of IntelliJ IDEA are supported?**
 

@@ -5,10 +5,10 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+ms.date: 03/21/2019
 ---
 
 [!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
@@ -43,7 +43,7 @@ Module path: `TFS/Core/RestClient`
 * [getProjectCollections()](#method_getProjectCollections)
 * [getProjects()](#method_getProjects)
 * [getTeam()](#method_getTeam)
-* [getTeamMembers()](#method_getTeamMembers)
+* [getTeamMembersWithExtendedProperties()](#method_getTeamMembersWithExtendedProperties)
 * [getTeams()](#method_getTeams)
 * [queueCreateProject()](#method_queueCreateProject)
 * [queueDeleteProject()](#method_queueDeleteProject)
@@ -198,7 +198,7 @@ Module path: `TFS/Core/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](CoreHttpClient2_2.md)
 
 <a name="method_getTeam"></a>
 <h2 class='method'>getTeam()</h2>
@@ -219,14 +219,14 @@ Module path: `TFS/Core/RestClient`
 
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
 
-<a name="method_getTeamMembers"></a>
-<h2 class='method'>getTeamMembers()</h2>
+<a name="method_getTeamMembersWithExtendedProperties"></a>
+<h2 class='method'>getTeamMembersWithExtendedProperties()</h2>
 
 
 
 ### Syntax
 <pre class='syntax'>
- IPromise&lt;VSS_Common_Contracts.IdentityRef[]&gt; <b>getTeamMembers</b>(projectId, teamId, top, skip)
+ IPromise&lt;VSS_Common_Contracts.IdentityRef[]&gt; <b>TeamMember</b>(projectId, teamId, top, skip)
 </pre>
 
 ### Parameters

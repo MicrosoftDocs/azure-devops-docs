@@ -9,7 +9,7 @@ ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -82,7 +82,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 
 <a name="measures"></a> 
 ##  Build measures  
- The following table describes the measures that are associated with builds. The **Build Coverage** measure group requires that the test team instrument tests to gather code coverage data. For more information, see [Required activities](#tracking) later in this topic. For an example of a report that uses several of these measures, see [Build Quality Indicators](build-quality-indicators-report.md).  
+ The following table describes the measures that are associated with builds. The **Build Coverage** measure group requires that the test team instrument tests to gather code coverage data. For more information, see [Required activities](#tracking) later in this article. For an example of a report that uses several of these measures, see [Build Quality Indicators](build-quality-indicators-report.md).  
   
 |Measure Group|Measure|Description|  
 |-------------------|-------------|-----------------|  
@@ -106,11 +106,11 @@ By using PivotChart reports in Excel, you can display the build status over time
  You can use the attributes in the following table to aggregate a measure, filter a report, or specify a report axis. These attributes supplement the **Team Project** and **Date** shared dimensions that [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes.  
   
 > [!NOTE]  
-> To use the **Assembly**, **Build Flavor**, or **Build Platform** dimension attributes, the test team must publish the test results to the TFS data store. For more information, see [Required activities](#tracking) later in this topic.  
+> To use the **Assembly**, **Build Flavor**, or **Build Platform** dimension attributes, the test team must publish the test results to the TFS data store. For more information, see [Required activities](#tracking) later in this article.  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).|  
 |Build|Build Pipeline Name|Name that is assigned to the build pipeline for which a build was executed.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  

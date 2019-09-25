@@ -7,6 +7,7 @@ ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
 ms.manager: madhurig
 ms.custom: seodec18
 ms.author: dastahel
+author: davidstaheli
 ms.reviewer: lukillgo
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
@@ -29,8 +30,11 @@ None
 This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
+
 ::: moniker-end
 
 ## Arguments

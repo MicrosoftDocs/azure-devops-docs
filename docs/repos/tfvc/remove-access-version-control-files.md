@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,14 +16,14 @@ monikerRange: '>= tfs-2015'
 
 # Remove Access to Version Control Files
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 As a Team Foundation administrator, you may have to remove access to a file that is under version control. For example, someone may check in a file infected with a virus. You can also permanently destroy version controlled files. For more information, see [Destroy Version Controlled Files](destroy-version-controlled-files.md).
 
 The following procedure provides the details for removing the file by using the user interface or the **tf** command-line utility. Access is removed by overwriting the bad version with a clean version and adding the clean version to the database. By setting the read/write permissions, you can prevent the file from appearing in Source Control Explorer.
 
->**Note:**  
->Although the file remains in the database in a deleted state, do not remove the row for the file directly from the database or you may experience unexpected results.
+> [!NOTE]
+> Although the file remains in the database in a deleted state, do not remove the row for the file directly from the database or you may experience unexpected results.
 
 &nbsp;
 
@@ -46,8 +46,8 @@ To remove access to Team Foundation version control files, you must belong to th
 
 5.  Check in the file. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
-    >**Note:**  
-    >You might want to make sure that any client user who has a local copy of the file on their computer, removes any reference to the file in Solution Explorer and manually removes any copy of the file on their client computer.
+    > [!NOTE]
+    > You might want to make sure that any client user who has a local copy of the file on their computer, removes any reference to the file in Solution Explorer and manually removes any copy of the file on their client computer.
 
 6.  Right-click the file and then click **Properties** to open the **Properties** dialog box for the file. On the **Properties** dialog box, click the **Security** tab, and clear the **Inherit Security Settings** box.
 

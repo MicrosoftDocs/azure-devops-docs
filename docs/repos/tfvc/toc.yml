@@ -1,9 +1,7 @@
-- name: TFVC
-  href: index.md
-- name: Overview
-  items:
-  - name: Learn about TFVC
-    href: overview.md
+- name: Team Foundation version control
+  href: index.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json 
+- name: Learn about TFVC
+  href: overview.md
 - name: Quickstarts
   items:
   - name: Visual Studio
@@ -118,8 +116,6 @@
     href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: "Default TFVC permissions (Security)"
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: TFVC command reference
     items:
     - name: Use Team Foundation version control commands
@@ -211,4 +207,4 @@
 - name: Resources
   items:
   - name: Administering TFVC
-    href: https://msdn.microsoft.com/library/ms181455.aspx
+    href: /azure/devops/repos/tfvc/administering-team-foundation-version-control

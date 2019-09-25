@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Clean Up Files When Users Leave
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When a member leaves a team, version control administrators must correctly dispose of that member's files.
 
@@ -28,7 +28,8 @@ To perform these procedures, you must be a member of the **Team Foundation Admin
 
 1.  Check in any files that are checked out to the team member who has left.
 
-    >**Note:**  If the member's checked-out files do not need to be saved, omit this step.
+    > [!NOTE]
+    > If the member's checked-out files do not need to be saved, omit this step.
 
 2.  Delete the workspaces of the member who has left.
 

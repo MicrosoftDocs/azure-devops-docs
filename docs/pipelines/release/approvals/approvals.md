@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -95,7 +95,7 @@ where the user can approve or reject the release.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

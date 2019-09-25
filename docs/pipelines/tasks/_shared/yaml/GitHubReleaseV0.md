@@ -1,13 +1,14 @@
 ```YAML
 # GitHub Release
-# Create, edit, or delete a GitHub release.
+# Create, edit, or delete a GitHub release
 - task: GitHubRelease@0
   inputs:
     gitHubConnection: 
-    repositoryName: 
+    #repositoryName: '$(Build.Repository.Name)' 
     #action: 'create' # Options: create, edit, delete
     #target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
     #tagSource: 'auto' # Required when action == Create# Options: auto, manual
+    #tagPattern: # Optional
     #tag: # Required when action == Edit || Action == Delete || TagSource == Manual
     #title: # Optional
     #releaseNotesSource: 'file' # Optional. Options: file, input
@@ -18,4 +19,6 @@
     #isDraft: false # Optional
     #isPreRelease: false # Optional
     #addChangeLog: true # Optional
+    #compareWith: 'lastFullRelease' # Required when addChangeLog == True. Options: lastFullRelease, lastRelease, lastReleaseByTag
+    #releaseTag: # Required when compareWith == LastReleaseByTag
 ```

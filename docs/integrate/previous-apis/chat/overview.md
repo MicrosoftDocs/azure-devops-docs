@@ -7,8 +7,8 @@ description: Work with team rooms, users, and messages programmatically using th
 ms.assetid: 8A15216E-A1DC-423A-939C-981C95648307
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

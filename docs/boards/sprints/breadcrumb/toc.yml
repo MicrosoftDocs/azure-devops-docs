@@ -7,5 +7,5 @@
     topicHref: /azure/devops/boards/index
     items:
     - name: Sprints (Scrum)
-      tocHref: /azure/devops/
+      tocHref: /azure/devops/boards/sprints/
       topicHref: /azure/devops/boards/sprints/index

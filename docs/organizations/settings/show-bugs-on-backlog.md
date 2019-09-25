@@ -18,8 +18,12 @@ ms.date: 02/20/2019
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
 
-> [!NOTE]   
-You can only define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> You can define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
+
+::: moniker-end
 
 When you track bugs as requirements, they'll show up on the product backlog and Kanban board. When you track bugs similar to tasks, they'll show up on the sprint backlogs and task boards. If you want to track additional work item types (WITs) or custom WITs on your backlogs or boards, you can. See [Add other work item types to backlogs or boards](#add-other-wits) later in this topic.
 
@@ -47,34 +51,34 @@ In the **Working with bugs** dialog, you can select from the following three opt
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+1. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
 
-0. When done with your changes, choose **Save**.  
+1. When done with your changes, choose **Save**.  
 
-0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
+1. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
 
-0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+2. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
 
-0. When done with your changes, choose **Save**.  
+3. When done with your changes, choose **Save**.  
 
-0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+4. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
 ::: moniker-end
 
@@ -82,17 +86,17 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 Requires TFS 2013.4 or later version. 
 
-0. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
+1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
 
-0. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
+1. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 
 	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
-0. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
+2. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
 
-0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
 ::: moniker-end
 
@@ -105,6 +109,7 @@ When you manage bugs with requirements or with tasks, they'll show up on one or 
 
 
 <a id="add-other-wits" /> 
+
 ## Add other work item types to your backlogs or boards
 
 Bugs are a common item that teams want to track, and choose how they track it. See [Manage bugs](../../boards/backlogs/manage-bugs.md) for more guidance. 
@@ -112,14 +117,19 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
 ::: moniker range=">= azure-devops-2019"  
+
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"    
+
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
+
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 ## Create, list, and manage bugs 

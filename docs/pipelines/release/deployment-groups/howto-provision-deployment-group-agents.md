@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -158,7 +158,8 @@ where:
 * **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
 * **PATToken** is required. The Personal Access Token that will be used to authenticate against Azure Pipelines to download and configure the agent
 
->**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
+> [!NOTE]
+> If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
 For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 

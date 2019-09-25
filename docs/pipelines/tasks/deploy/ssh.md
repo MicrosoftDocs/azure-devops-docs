@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -21,7 +21,9 @@ Use this task in a build or release pipeline to run shell commands or a script o
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Prerequisites
@@ -30,8 +32,11 @@ This task enables you to connect to a remote machine using SSH and run commands 
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/SshV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -66,7 +71,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

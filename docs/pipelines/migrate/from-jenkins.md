@@ -5,7 +5,7 @@ description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ethomson
 author: ethomson
 ms.date: 02/07/2019
@@ -43,7 +43,7 @@ success and failures of the build pipeline.
 You'll find a familiar transition from a Jenkins declarative pipeline into
 an Azure Pipelines YAML configuration. The two are conceptually similar,
 supporting "configuration as code" and allowing you to check your configuration
-in to your version control system. Unlike Jenkins, however, Azure Pipelines
+into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
 pipeline](../yaml-schema.md).
 
@@ -99,7 +99,7 @@ jobs:
 If you are not using a Jenkins declarative pipeline with a Jenkinsfile,
 and are instead using the graphical interface to define your build configuration,
 then you may be more comfortable with the
-[visual designer](../get-started-designer.md)
+classic editor
 in Azure Pipelines.
 
 ## Container-Based Builds

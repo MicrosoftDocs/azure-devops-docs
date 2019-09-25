@@ -8,7 +8,6 @@ ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Disable SharePoint integration after TFS 2018 upgrade
@@ -19,7 +18,7 @@ With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more in
 
 **If you are upgrading from a previous version configured to integrate with SharePoint, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load.**
 
-This topic provides instructions on how to disable integration on a **SharePoint 2010 or 2013** server after upgrading to TFS 2018. 
+this article provides instructions on how to disable integration on a **SharePoint 2010 or 2013** server after upgrading to TFS 2018. 
 
 If you wish to upgrade to **SharePoint 2016**, please see [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./upgrade-from-sharepoint2013-to-sharepoint-2106.md)
 

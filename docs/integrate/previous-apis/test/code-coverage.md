@@ -7,8 +7,8 @@ description: Work with code coverage programmatically using the REST APIs for Te
 ms.assetid: 459B4485-EAFB-445D-BAA1-EF7A913BD282
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

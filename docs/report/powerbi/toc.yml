@@ -1,78 +1,90 @@
-- name: "Power BI (Azure DevOps Analytics)"
+- name: Power BI Integration
   href: index.md
-- name: Overview
-  items:
-  - name: Power BI integration
-    href: overview.md
-  - name: What are Analytics views?
-    href: ../analytics/what-are-analytics-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-  - name: Reporting roadmap
-    href: ../analytics/reporting-roadmap.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-- name: Quickstarts
-  items:
-  - name: Create a report using an Analytics view
-    href: create-quick-report.md
+- name: About Power BI integration
+  href: overview.md
+- name: What is the Analytics service?
+  href: what-is-analytics.md
 - name: Tutorials
   items:
-  - name: Create an Analytics view
-    href: ../analytics/analytics-views-create.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-  - name: Manage Analytics views
-    href: ../analytics/analytics-views-manage.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Create a Power BI report using OData Queries
+    href: create-quick-report-odataq.md
+  - name: Create a Power BI report using an Analytics View
 - name: Concepts
   items:
-  - name: Data available
-    href: ../analytics/data-available-in-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-  - name: Default Analytics views
-    href: ../analytics/analytics-default-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Filters applied to historical data
-    href: ../analytics/analytics-historical-filtering.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+    href: analytics-historical-filtering.md
+  - name: Performance & latency
+    href: performance-latency.md
+  - name: Data available from Analytics
+    href: data-available-in-analytics.md
+  - name: What are Analytics views?
+    href: what-are-analytics-views.md
+  - name: Default Analytics views
+    href: analytics-default-views.md
+  - name: Analytics views dataset design
+    href: data-connector-dataset.md
 - name: How-to Guides
   items:
-  - name: Connect using Data Connector 
+  - name: Connect using OData queries
+    href: odataquery-connect.md
+  - name: Connect using Analytics Views 
     href: data-connector-connect.md
-  - name: Connect using OData
+  - name: Create an Analytics view
+    href: analytics-views-create.md?
+  - name: Manage Analytics views
+    href: analytics-views-manage.md
+  - name: Connect using the OData Feed
     href: access-analytics-power-bi.md
-  - name: Connect using Power Query (Advanced)
+  - name: Connect using Advanced Functions
     href: data-connector-functions.md
-  - name: Client OData authentication 
-    href: ../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-  - name: "Publish to PowerBI.com"
-    href: publish-power-bi-desktop-to-power-bi.md  
-  - name: Set permissions (Security)
-    href: ../analytics/analytics-security.md
+  - name: Set Analytics permissions (Security)
+    href: analytics-security.md
 - name: Samples
   items:
-  - name: Active bugs report 
-    href: active-bugs-sample-report.md
-  - name: Get a count of work items
-    href: data-connector-examples.md
-  - name: Add a last refresh date
-    href: add-last-refresh-time.md  
-  - name: Filter on teams
-    href: create-team-filter.md  
-  - name: Calculate time-in-state 
-    href: create-timeinstate-report.md
+  - name: Using OData Queries
+    items:
+    - name: Sample reports overview
+      href: sample-odata-overview.md
+    - name: Boards - Open bugs
+      href: sample-boards-openbugs.md
+    - name: Boards - Bug trend
+      href: sample-boards-bugtrend.md
+    - name: Boards - Rollup
+      href: sample-boards-rollup.md
+    - name: Boards - Feature progress
+      href: sample-boards-featureprogress.md
+    - name: Boards - Work Items and Direct Links
+      href: sample-boards-directlinks.md
+    - name: Boards - Release burndown
+      href: sample-boards-releaseburndown.md
+    - name: Boards - Sprint burndown
+      href: sample-boards-sprintburndown.md
+    - name: Boards - CFD
+      href: sample-boards-cfd.md
+    - name: Boards - Lead/Cycle time
+      href: sample-boards-leadcycletime.md
+    - name: Boards - Add a team slicer
+      href: sample-boards-teamslicer.md
+  - name: Use Analytics views
+    items:
+    - name: Active bugs report 
+      href: active-bugs-sample-report.md
+    - name: Get a count of work items
+      href: data-connector-examples.md
+    - name: Add a last refresh date
+      href: add-last-refresh-time.md  
+    - name: Filter on teams
+      href: create-team-filter.md  
+    - name: Calculate time-in-state 
+      href: create-timeinstate-report.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
-    href: ../analytics/troubleshooting-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+    href: troubleshooting-views.md
 - name: Reference
   items:
-  - name: Work item field index
-    href: ../../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
+  - name: Data available
+    href: data-available-in-analytics.md
   - name: Dataset design 
-    href: data-connector-dataset.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Analytics
-    href: ../analytics/index.md
-  - name: Extend Analytics with OData
-    href: ../extend-analytics/index.md
-  - name: Dashboards
-    href: ../dashboards/index.md
-  - name: Power BI Desktop
-    href: /power-bi/desktop-getting-started
-  - name: Power BI Documentation
-    href: /power-bi/
-  - name: "Developer Community: PowerBI support forum"
-    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
+    href: data-connector-dataset.md
+

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 07/30/2018
 monikerRange: '>= tfs-2013'
@@ -75,7 +75,7 @@ To do that I'll use the following command:
 The graph structure of history becomes visible when there's a merge.
 Git creates a new commit when I merged my branch into another branch.
 This is a merge commit.
-There aren't any changes included this merge commit since I didn't have conflicts.
+There aren't any changes included in this merge commit since I didn't have conflicts.
 If I had conflicts, the merge commit would include the changes needed to resolve those conflicts.
 
 ## History in the real world

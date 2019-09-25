@@ -18,7 +18,7 @@ ms.date: 09/07/2017
 Teams can quickly find important information about their team projects by using dashboards. Dashboards show project data, support investigation, and provide tools for teams to quickly perform common tasks.  
   
 > [!TIP]  
->  See [Dashboards](../dashboards.md) for information about creating dashboards in the web portal. If you work in Azure DevOps, you can also [Create Power BI dashboards and reports](https://visualstudio.microsoft.com/get-started/report/report-on-vso-with-power-bi-vs). This topic discusses SharePoint site dashboards.  
+>  See [Dashboards](../dashboards.md) for information about creating dashboards in the web portal. If you work in Azure DevOps, you can also [Create Power BI dashboards and reports](https://visualstudio.microsoft.com/get-started/report/report-on-vso-with-power-bi-vs). this article discusses SharePoint site dashboards.  
   
  To view a dashboard, choose **Go to project portal** from the **Documents** page in Team Explorer.  
   
@@ -46,18 +46,18 @@ Teams can quickly find important information about their team projects by using 
 ##  <a name="Sample"></a> Dashboards and web parts  
  Dashboards use SharePoint Products to display web parts. You can add many types of web parts to a dashboard.  TFS web parts show lists of work items, work item counts, and other project data that is derived from TFS databases. These are the web parts that TFS provides:  
   
--   Completed Builds Web Part  
--   Go to Work Item Web Part    
--   New Work Item Shortcuts Web Part    
--   Project Portal Links Web Part    
--   Query Results Web Part    
--   Recent Check-ins Web Part   
--   Team Project Portal Shortcut Web Part   
--   Work Item Summary Web Part  
+- Completed Builds Web Part  
+- Go to Work Item Web Part    
+- New Work Item Shortcuts Web Part    
+- Project Portal Links Web Part    
+- Query Results Web Part    
+- Recent Check-ins Web Part   
+- Team Project Portal Shortcut Web Part   
+- Work Item Summary Web Part  
   
- The following illustration and table show and describe a sample dashboard, Bugs dashboard. For more information, see [Bugs](bugs-dashboard-agile-cmmi.md).  
+  The following illustration and table show and describe a sample dashboard, Bugs dashboard. For more information, see [Bugs](bugs-dashboard-agile-cmmi.md).  
   
- ![Bugs Dashboard](_img/procguid_dashbugs.png "ProcGuid_DashBugs")  
+  ![Bugs Dashboard](_img/procguid_dashbugs.png "ProcGuid_DashBugs")  
   
 |Dashboard element|Element title|Source data|Data displayed|  
 |-----------------------|-------------------|-----------------|--------------------|  
@@ -91,16 +91,16 @@ Teams can quickly find important information about their team projects by using 
   
 ##  <a name="Customizing"></a> Customize a dashboard  
 Here's how you can customize a SharePoint dashboard:    
--   Add columns, or sort columns in an existing work item list.    
--   Change the query that is referenced by one of the existing work item lists.    
--   Add a custom query Web part that displays the list of work items that the query finds. For example, you can add a query that lists all active requirements, issues, or other types of work items that are assigned to you.    
--   Add other SharePoint site supported Web parts that integrate with Office Outlook or search functions of SharePoint Products.    
--   Change the filters of each report in Office Excel to focus on specific product areas or iterations.    
--   Add existing or ad hoc Excel reports.  
+- Add columns, or sort columns in an existing work item list.    
+- Change the query that is referenced by one of the existing work item lists.    
+- Add a custom query Web part that displays the list of work items that the query finds. For example, you can add a query that lists all active requirements, issues, or other types of work items that are assigned to you.    
+- Add other SharePoint site supported Web parts that integrate with Office Outlook or search functions of SharePoint Products.    
+- Change the filters of each report in Office Excel to focus on specific product areas or iterations.    
+- Add existing or ad hoc Excel reports.  
   
- For more information about how to work with and customize reports in Office Excel, see these articles:  
+  For more information about how to work with and customize reports in Office Excel, see these articles:  
   
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)    
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)   
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)    
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)
+- [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)    
+- [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)   
+- [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)    
+- [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)

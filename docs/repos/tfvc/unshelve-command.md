@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Unshelve Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Restores shelved file revisions, check-in notes, comments, and work item associations to the current workspace or removes an existing shelveset from the server.
 
@@ -46,13 +46,12 @@ To use the **unshelve** command, you must have the **Read** permission set to **
 <td><p><i>Itemspec</i></p></td>
 <td><p>Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.</p>
 <p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p>
->**Note:**  
->You can specify more than one *Itemspec* argument.
+&gt;<strong>Note:</strong><br/>&gt;You can specify more than one <em>Itemspec</em> argument.
 </td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName&lt;/i.</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,8 +94,6 @@ When you unshelve a shelveset, Team Foundation restores each shelved revision in
 You can use the **unshelve** command to restore individual file revisions from a shelveset to your workspace. You should run get after unshelving to reconcile any changes checked into the server since the shelveset was created.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
-
-### 
 
 #### Recycle Shelved Changes
 

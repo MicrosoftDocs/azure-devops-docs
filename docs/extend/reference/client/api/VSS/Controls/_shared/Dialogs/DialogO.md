@@ -38,7 +38,7 @@ string
 <a name="method_getDialogResult"></a>
 <h3 class='method'>getDialogResult()</h3>
 
-Gets the current dialog result which will be used when ok button is clicked.
+Gets the current dialog result which is used when the ok button is selected.
 
 
 #### Returns
@@ -58,7 +58,7 @@ void
 
 #### Parameters
 
-* `dialogResult`: any. Result object used when ok button is clicked.
+* `dialogResult`: any. Result object used when the ok button is selected.
 
 <a name="method_close"></a>
 <h3 class='method'>close()</h3>

@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -34,8 +34,8 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Query
 | definitionId  | int   | Releases for this definition.
 | createdBy     | string   | Releases created by this user.<br/>Alias of the user. `chuckreinhart@outlook.com`, for example.
-| minCreatedTime | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created after this time.
-| maxCreatedTime | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created before this time.
+| minCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created after this time.
+| maxCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created before this time.
 | statusFilter        | enum {<br/>&nbsp;&nbsp;Draft,<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>} | Releases that have this status.
 | $expand		| enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;approvals,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of releases.
 | $top		| int | Number of releases to get

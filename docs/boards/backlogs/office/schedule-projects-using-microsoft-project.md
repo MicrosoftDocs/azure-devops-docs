@@ -11,7 +11,7 @@ author: KathrynEE
 ms.topic: conceptual
 monikerRange: '< azure-devops-2019'
 ms.date: 02/11/2019  
----  
+---
 
 # Schedule projects using Microsoft Project  
 
@@ -87,7 +87,7 @@ To learn more, see:
 - [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md)
 
   
-###Add fields to the task work item type
+### Add fields to the task work item type
 To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command line tool to export and import the definition file for each work item type. 
  
 [!INCLUDE [temp](../../_shared/process-editor.md)]
@@ -97,7 +97,7 @@ For more information, see:
 - [Add or modify work item fields to support reporting](../../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
 
 
-###Update the Microsoft Project Mapping File
+### Update the Microsoft Project Mapping File
 The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
 
 To learn more, see [TFSFieldMapping](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).   

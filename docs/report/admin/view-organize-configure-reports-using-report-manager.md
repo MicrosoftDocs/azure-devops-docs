@@ -21,7 +21,7 @@ After you create and publish reports in SQL Server Report Designer, you can use 
   
  When you open Report Manager, you start in the Contents page, which shows the items that you have permission to view. You might also have permission to add, delete, and move those items. For more information, see the following page on the Microsoft Web site: [Contents Page (Report Manager)](http://go.microsoft.com/fwlink/?LinkID=182175).  
   
- After you click a report, you can perform one or more of the tasks that are described in this topic.  
+ After you click a report, you can perform one or more of the tasks that are described in this article.  
   
 ##  <a name="ViewAReport"></a> View a report  
  By using the **View** tab, you can display results for reports. You can adjust parameters, subscribe to the report, and navigate through the report. You can also refresh, export, and print the report. For more information, see the following page on the Microsoft Web site: [Viewing Reports](http://go.microsoft.com/fwlink/?LinkId=182176).  
@@ -46,11 +46,11 @@ After you create and publish reports in SQL Server Report Designer, you can use 
   
  You can create two types of subscriptions:  
   
--   **Standard subscription**: A standard subscription consists of static values that cannot be varied during subscription processing. For each standard subscription, you can specify one set of presentation options, delivery options, and report parameters.  
+- **Standard subscription**: A standard subscription consists of static values that cannot be varied during subscription processing. For each standard subscription, you can specify one set of presentation options, delivery options, and report parameters.  
   
--   **Data-driven subscription**: Data-driven subscriptions retrieve their presentation options, delivery options, and report parameters from a data source at run time. You might use data-driven subscriptions if you want to vary report output for each recipient. For more information, see the following page on the Microsoft Web site: [Data-Driven Subscriptions](http://go.microsoft.com/fwlink/?LinkId=181969).  
+- **Data-driven subscription**: Data-driven subscriptions retrieve their presentation options, delivery options, and report parameters from a data source at run time. You might use data-driven subscriptions if you want to vary report output for each recipient. For more information, see the following page on the Microsoft Web site: [Data-Driven Subscriptions](http://go.microsoft.com/fwlink/?LinkId=181969).  
   
- For each subscription, you can have reports automatically delivered to you by e-mail or copied to a file share. You configure the delivery details, schedule, and the parameter values. For more information, see the following page on the Microsoft Web site: [Subscription Overview](http://go.microsoft.com/fwlink/?LinkId=181970).  
+  For each subscription, you can have reports automatically delivered to you by e-mail or copied to a file share. You configure the delivery details, schedule, and the parameter values. For more information, see the following page on the Microsoft Web site: [Subscription Overview](http://go.microsoft.com/fwlink/?LinkId=181970).  
   
 ## Related notes
 -  [Choose the source of data and authoring tool](https://msdn.microsoft.com/library/bb649557.aspx)   

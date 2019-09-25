@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Add Check-In Policies
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). By default, the following check-in policy types are available:
 
@@ -26,16 +26,10 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 -   **Work Items**   Requires that one or more work items be associated with the check-in.
 
-**Required Permissions**
-
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
-
 > Visual Studio 2017 : Check-in policies in Visual Studio 2017 must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio 2017 on your computer. If you have multiple installations of Visual Studio 2017, you'll need to set the check-in policy on each installation. [Learn more](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 
 
-Procedure
------------------------------------------------------------------------------
-
+## Procedure
 
 ### To create a check-in policy
 

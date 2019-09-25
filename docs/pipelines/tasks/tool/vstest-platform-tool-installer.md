@@ -5,9 +5,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
-ms.manager: dastahel
+ms.manager: jillfra
 ms.custom: seodec18
-ms.author: dastahel
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -26,8 +27,11 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 [none]
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.md)]
+
 ::: moniker-end
 
 ## Arguments

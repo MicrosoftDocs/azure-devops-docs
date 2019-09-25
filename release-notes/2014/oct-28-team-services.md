@@ -3,18 +3,18 @@ title: European Datacenter & REST 1.0 - Oct 28
 description: VSTS release notes for October 28 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 7e1aadad-f21b-4243-9083-9b6c4f515eec
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#European Datacenter & REST 1.0 - Oct 28
+# European Datacenter & REST 1.0 - Oct 28
 
-##European Datacenter
+## European Datacenter
 
-By popular demand, with today’s update, you can now create VS Online accounts in the Azure “West Europe” region, based in the Netherlands. You can get started by going to [http://visualstudio.com](http://visualstudio.com/) and creating a new account. The account creation page will auto detect the data center that’s nearest to you, or you can click the “change options” link to override the choice.
+By popular demand, with today’s update, you can now create VS Online accounts in the Azure “West Europe” region, based in the Netherlands. You can get started by going to [https://visualstudio.com](https://visualstudio.com/) and creating a new account. The account creation page will auto detect the data center that’s nearest to you, or you can click the “change options” link to override the choice.
 
 ![Creating a West Europe account](_img/10_28_01.png)
 
@@ -24,7 +24,7 @@ Application Insights, which is still in preview, is not available in Europe, but
 
 We plan to add additional regions around the world, but have not finalized the roadmap. Feel free to use [http://visualstudio.uservoice.com](http://visualstudio.uservoice.com/) to tell us where the next region should be.
 
-##Visual Studio Online REST API version 1.0 is here
+## Visual Studio Online REST API version 1.0 is here
 
 In May, we announced the public preview of a new set of REST APIs for Visual Studio Online. Today, we are happy to announce that these APIs have graduated to 1.0 release status. This marks an important milestone in our journey to support easier integration between Visual Studio Online and other services, including your own custom tools and services.
 
@@ -38,7 +38,7 @@ To explore the available APIs, see the [Visual Studio Online REST API Reference]
 
 **Developers with existing apps using the 1.0 preview APIs:** you should start migrating to the release 1.0 APIs as soon as possible. Graduated preview APIs (any API in the 1.0 set) are subject to stop working in 12 weeks from today. To learn more about versioning and migrating, see the [versioning and migration](/rest/api/vsts/?view=vsts-rest-4.1) page.
 
-##Service hooks is out of preview
+## Service hooks is out of preview
 
 I am also happy to announce that the service hooks features is out of preview and is a fully supported feature of Visual Studio Online. Service hooks let your app or service get notified instantly when an event happens in Visual Studio Online. With service hooks your app or service can avoid continuously polling to check for changes, such as completed builds, commits or check-ins, or work item changes.
 

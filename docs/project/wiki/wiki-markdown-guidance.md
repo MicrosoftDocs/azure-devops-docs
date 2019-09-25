@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 09/16/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -39,7 +39,7 @@ All HTML and Markdown tags are stripped from the headings while adding it inside
 For example: Adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
-> [![Tags for TOC](_img/toc_tags.png)
+> ![Tags for TOC](_img/toc_tags.png)
 
 Consistency is maintained in the formatting in TOC.
 
@@ -49,6 +49,31 @@ Consistency is maintained in the formatting in TOC.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
+## Add Mermaid diagrams to a Wiki page
+
+Wiki supports the following Mermaid diagram types:
+
+1.	[Flowcharts ](https://mermaidjs.github.io/#/flowchart)
+2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
+3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+
+To add Mermaid diagrams to a wiki page, use the following syntax:
+
+``` wiki-mermaid
+::: mermaid
+<mermaid diagram syntax>
+:::
+```
+
+Alternatively, there's also a toolbar button to add a default Mermaid diagram to a wiki page.
+
+![Mermaid diagram visual](_img/wiki/mermaid-diagram.png)
+
+> [!NOTE]
+> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser. 
+
+::: moniker-end
 
 ## Embed Videos in a Wiki page
 
@@ -115,8 +140,24 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
 
 > ![Query Results Icon](_img/query_selector_icon.png)
-
+> 
 > ![Query Selector Pane](_img/query_selector_pane.png)
+
+
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019"
+
+## @mention users and groups
+
+To @mention users or groups in wiki, key in "@" in the wiki editor. This will open up an autosuggest from which you can mention users or groups who will get notified by email.
+
+> ![Mention Autosuggest](_img/mention-autosuggest.png)
+
+You can also select "@mention" from the edit toolbar.
+
+> ![Mention from edit toolbar](_img/mention-toolbar.png)
 
 
 ::: moniker-end
@@ -162,7 +203,7 @@ In wiki pages, you can also create rich content using HTML tags.
 ```
 
 </br>
-**Result:**
+<strong>Result:</strong>
 </br>
 <video src="_img/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
 </video>

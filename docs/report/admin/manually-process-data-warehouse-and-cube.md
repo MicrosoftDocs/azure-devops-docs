@@ -35,13 +35,13 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 ### To access the web services
 
-1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](/azure/devops/server/admin/add-administrator-tfs).  
+1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](/tfs/server/admin/add-administrator-tfs).  
 
 	Also, make sure that your server-level **Administer warehouse** permission must be set to **Allow**.
 
 2. Log on to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
-	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx  ``` 
+	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx``` 
 
 	If another name was used other than **tfs** for the virtual directory, then type the *IIS Virtual Directory* that was specified when Team Foundation Server was installed.  
 
@@ -122,7 +122,7 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Work I
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
-2. Enter the name of the dimension. From the above error message, the dimension name is ```dimWorkItem```.  
+2. Enter the name of the dimension. From the above error message, the dimension name is ```vDimWorkItemOverlay```.  
  
 3. The service returns **True** when it successfully resets the value to 1100. 
 

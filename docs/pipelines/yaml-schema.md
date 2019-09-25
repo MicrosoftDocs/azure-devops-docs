@@ -7,8 +7,9 @@ ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
+author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 03/06/2019
+ms.date: 08/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -18,16 +19,61 @@ monikerRange: '>= azure-devops-2019'
 
 Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
 
+::: moniker range="azure-devops"
 > The best way to get started with YAML pipelines is through the
-[quickstart guide](get-started-yaml.md).
+[quickstart guide](create-first-pipeline.md).
 > After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+::: moniker-end
+
+::: moniker range="< azure-devops"
+> To learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+::: moniker-end
 
 ## Pipeline structure
 
-Pipelines are made of one or more jobs and may include resources and
-variables. Jobs are made of one or more steps plus some job-specific data.
+::: moniker range="> azure-devops-2019"
+
+Pipelines are made of one or more stages describing a CI/CD process.
+Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages.
+
+Stages consist of one or more jobs, which are units of work assignable to a particular machine.
+Both stages and jobs may be arranged into dependency graphs: "run this stage before that one" or "this job depends on the output of that job".
+
+Jobs consist of a linear series of steps.
 Steps can be tasks, scripts, or references to external templates.
-This is reflected in the structure of the YAML file.
+
+This hierarchy is reflected in the structure of the YAML file.
+
+- Pipeline
+  - Stage A
+    - Job 1
+      - Step 1.1
+      - Step 1.2
+      - ...
+    - Job 2
+      - Step 2.1
+      - Step 2.2
+      - ...
+  - Stage B
+    - ...
+
+For simpler pipelines, not all of these levels are required. For example,
+in a single-job build, you can omit the containers for "stages" and "jobs" since there
+are only steps. Also, many options shown here are optional and have good
+defaults, so your YAML definitions are unlikely to include all of them.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Pipelines are made of one or more jobs describing a CI/CD process.
+Jobs are units of work assignable to a particular machine.
+Jobs may be arranged into dependency graphs, for example: "this job depends on the output of that job".
+
+Jobs consist of a linear series of steps.
+Steps can be tasks, scripts, or references to external templates.
+
+This hierarchy is reflected in the structure of the YAML file.
 
 - Pipeline
   - Job 1
@@ -38,13 +84,12 @@ This is reflected in the structure of the YAML file.
     - Step 2.1
     - Step 2.2
     - ...
-  - ...
 
-For simpler pipelines, not all of these levels are required. For example,
-in a single-job build, you can omit the container for "jobs" since there
+For single-job pipelines, you can omit the container "jobs" since there
 are only steps. Also, many options shown here are optional and have good
 defaults, so your YAML definitions are unlikely to include all of them.
 
+::: moniker-end
 
 ### Conventions
 
@@ -61,342 +106,162 @@ template reference are allowed.
 
 This document covers the schema of an Azure Pipelines YAML file.
 To learn the basics of YAML, see [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/).
-Note: Azure Pipelines doesn't support all features of YAML, such as complex keys and sets.
+Note: Azure Pipelines doesn't support all features of YAML, such as anchors, complex keys, and sets.
 
 ## Pipeline
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
+::: moniker range="> azure-devops-2019"
 ```yaml
 name: string  # build numbering format
 resources:
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
-variables: { string: string } | [ variable ]
+variables: { string: string } | [ variable | templateReference ]
+trigger: trigger
+pr: pr
+stages: [ stage | templateReference ]
+```
+
+If you have a single [stage](#stage), you can omit `stages` and directly specify [jobs](#job):
+
+```yaml
+# ... other pipeline-level keywords
+jobs: [ job | templateReference ]
+```
+
+If you have a single stage and a single job, you can omit those keywords and directly specify [steps](#steps):
+
+```yaml
+# ... other pipeline-level keywords
+steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+```yaml
+name: string  # build numbering format
+resources:
+  containers: [ containerResource ]
+  repositories: [ repositoryResource ]
+variables: { string: string } | [ variable | templateReference ]
 trigger: trigger
 pr: pr
 jobs: [ job | templateReference ]
 ```
 
-# [Example](#tab/example)
+If you have a single job, you can omit the `jobs` keyword and directly specify [steps](#steps):
 
 ```yaml
-name: $(Date:yyyyMMdd).$(Rev:.r)
+# ... other pipeline-level keywords
+steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
+::: moniker-end
+
+#### [Example](#tab/example/)
+```yaml
+name: $(Date:yyyyMMdd)$(Rev:.r)
 variables:
   var1: value1
+jobs:
+- job: One
+  steps:
+  - script: echo First step!
 ```
 
----
-
-Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
+* * *
+Learn more about [multi-job pipelines](process/phases.md?tabs=yaml),
 using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
-[triggers](#trigger), [PR triggers](#pr-trigger), [variables](process/variables.md?tabs=yaml), and
-[build number formats](build/options.md#build-number-format).
-
-### Variables
-
-Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
-
-# [Schema](#tab/schema)
-
-For a simple set of hardcoded variables:
-
-```yaml
-variables: { string: string }
-```
-
-To include variable groups, switch to this list syntax:
-
-```yaml
-variables:
-  - name: string # name of a variable
-    value: any # value of the variable
-  - group: string # name of a variable group
-```
-
-`name`/`value` pairs and `group`s can be repeated.
-
-# [Example](#tab/example)
-
-```yaml
-variables:
-  MY_VAR: my value
-  ANOTHER_VAR: another value
-```
-
-```yaml
-variables:
-- name: MY_VARIABLE           # hardcoded value
-  value: some value
-- group: my-variable-group-1  # variable group
-- group: my-variable-group-2  # another variable group
-```
-
-> [!Note]
-> You must also link your [variable groups](library/variable-groups.md) in the pipeline editor before they'll be available.
-
----
-
-### Container resource
-
-[Container jobs](process/container-phases.md) let you isolate your tools and
-dependencies inside a container. The agent will launch an instance of your
-specified container, then run steps inside it. The `container` resource lets
-you specify your container images.
-
-[Service containers](process/service-containers.md) run alongside a job to
-provide various dependencies such as databases.
-
-# [Schema](#tab/schema)
-
-```yaml
-resources:
-  containers:
-  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    image: string  # container image name
-    options: string  # arguments to pass to container at startup
-    endpoint: string  # endpoint for a private container registry
-    env: { string: string }  # list of environment variables to add
-    ports: [ string ] # ports to expose on the container
-    volumes: [ string ] # volumes to mount on the container
-```
-
-# [Example](#tab/example)
-
-```yaml
-resources:
-  containers:
-  - container: linux
-    image: ubuntu:16.04
-  - container: my_service
-    image: my_service:tag
-    ports:
-    - 8080:80 # bind container port 80 to 8080 on the host machine
-    - 6379 # bind container port 6379 to a random available port on the host machine
-    volumes:
-    - /src/dir:/dst/dir # mount /src/dir on the host into /dst/dir in the container
-```
-
----
-
-### Repository resource
-
-If your pipeline has [templates](#job-templates) in another repository, you must
-let the system know about that repository. The `repository` resource lets you
-specify an external repository.
-
-# [Schema](#tab/schema)
-
-```yaml
-resources:
-  repositories:
-  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: enum  # see below
-    name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use, defaults to 'refs/heads/master'
-    endpoint: string  # name of the service connection to use (for non-Azure Repos types)
-```
-
-# [Example](#tab/example)
-```yaml
-
-resources:
-  repositories:
-  - repository: common
-    type: github
-    name: Contoso/CommonTools
-```
-
----
-
-#### Type
-
-Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
-repository in the same project. For example, `otherRepo`. To refer to a repo in
-another project within the same organization, prefix the name with that project's name.
-For example, `OtherProject/otherRepo`.
-
-If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. Also,
-GitHub repos require a [service connection](library/service-endpoints.md)
-for authorization.
-
-## Trigger
-
-A trigger specifies what branches will cause a continuous integration build to
-run. If left unspecified, pushes to every branch will trigger a build.
-Learn more about [triggers](build/triggers.md?tabs=yaml#continuous-integration-ci)
-and how to specify them.
-
-# [Schema](#tab/schema)
-
-List syntax:
-
-```yaml
-trigger: [ string ] # list of branch names
-```
-
-Disable syntax:
-
-```yaml
-trigger: none # will disable CI builds entirely
-```
-
-Full syntax:
+[triggers](#triggers), [variables](process/variables.md?tabs=yaml), and
+[build number formats](process/run-number.md).
 
 ::: moniker range="> azure-devops-2019"
+## Stage
 
-```yaml
-trigger:
-  batch: boolean # batch changes if true, start a new build for every push if false
-  branches:
-    include: [ string ] # branch names which will trigger a build
-    exclude: [ string ] # branch names which will not
-  tags:
-    include: [ string ] # tag names which will trigger a build
-    exclude: [ string ] # tag names which will not
-  paths:
-    include: [ string ] # file paths which must match to trigger a build
-    exclude: [ string ] # file paths which will not trigger a build
-```
+A stage is a collection of related jobs.
+By default, stages run sequentially, starting only after the stage ahead of them has completed.
 
-::: moniker-end
+You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
 
-::: moniker range="<= azure-devops-2019"
-
-```yaml
-trigger:
-  batch: boolean # batch changes if true, start a new build for every push if false
-  branches:
-    include: [ string ] # branch names which will trigger a build
-    exclude: [ string ] # branch names which will not
-  paths:
-    include: [ string ] # file paths which must match to trigger a build
-    exclude: [ string ] # file paths which will not trigger a build
-```
-
-::: moniker-end
-
-# [Example](#tab/example)
-
-List syntax:
-
-```yaml
-trigger:
-- master
-- develop
-```
-
-Disable syntax:
-
-```yaml
-trigger: none # will disable CI builds entirely
-```
-
-Full syntax:
-
-```yaml
-trigger:
-  batch: true
-  branches:
-    include:
-    - features/*
-    exclude:
-    - features/experimental/*
-  paths:
-    exclude:
-    - README.md
-```
-
----
-
-## PR trigger
-
-A pull request trigger specifies what branches will cause a pull request build to
-run. If left unspecified, pull requests to every branch will trigger a build.
-Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pull-request-validation)
-and how to specify them.
-
-Note that `pr` is valid for GitHub, not any other Git provider.
+Currently, manual approval checks are supported on [environments](#environment). 
+For more information, see [Approvals](process/approvals.md).
 
 # [Schema](#tab/schema)
 
-List syntax:
-
 ```yaml
-pr: [ string ] # list of branch names
-```
-
-Disable syntax:
-
-```yaml
-pr: none # will disable PR builds entirely
-```
-
-Full syntax:
-
-```yaml
-pr:
-  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
-  branches:
-    include: [ string ] # branch names which will trigger a build
-    exclude: [ string ] # branch names which will not
-  paths:
-    include: [ string ] # file paths which must match to trigger a build
-    exclude: [ string ] # file paths which will not trigger a build
+stages:
+- stage: string  # name of the stage, A-Z, a-z, 0-9, and underscore
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  variables: { string: string } | [ variable | variableReference ] 
+  jobs: [ job | templateReference]
 ```
 
 # [Example](#tab/example)
 
-List syntax:
+This example will run three stages, one after another.
+The middle stage will run two jobs in parallel.
 
 ```yaml
-pr:
-- master
-- develop
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - script: echo Building!
+- stage: Test
+  jobs:
+  - job: TestOnWindows
+    steps:
+    - script: echo Testing on Windows!
+  - job: TestOnLinux
+    steps:
+    - script: echo Testing on Linux!
+- stage: Deploy
+  jobs:
+  - job: Deploy
+    steps:
+    - script: echo Deploying the code!
 ```
 
-Disable syntax:
+This example will run two stages in parallel.
+(For brevity, the jobs and steps have been omitted.)
 
 ```yaml
-pr: none # will disable PR builds entirely
-```
-
-Full syntax:
-
-```yaml
-pr:
-  branches:
-    include:
-    - features/*
-    exclude:
-    - features/experimental/*
-  paths:
-    exclude:
-    - README.md
+stages:
+- stage: BuildWin
+  displayName: Build for Windows
+- stage: BuildMac
+  displayName: Build for Mac
+  dependsOn: [] # by specifying an empty array, this stage doesn't depend on the stage before it
 ```
 
 ---
+
+Learn more about [stages](process/stages.md), [conditions](process/conditions.md?tabs=yaml), and [variables](#variables).
+<!-- TODO: link to info about stage dependencies -->
+::: moniker-end
 
 ## Job
 
-A [job](process/phases.md?tabs=yaml) is a collection of steps to be run by an
-[agent](agents/agents.md) or, in some cases, on the server. Jobs can be
-run [conditionally](process/multiple-phases.md?tabs=yaml#conditions), and they
-may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
+A [job](process/phases.md?tabs=yaml) is a collection of [steps](#steps) to be run by an
+[agent](agents/agents.md) or on the [server](#server). Jobs can be
+run [conditionally](process/phases.md?tabs=yaml#conditions), and they
+may [depend on earlier jobs](process/phases.md?tabs=yaml#dependencies).
 
 # [Schema](#tab/schema)
 
 ```yaml
+jobs:
 - job: string  # name of the job, A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    matrix: # matrix strategy, see below
     parallel: # parallel strategy, see below
-    maxParallel: number # maximum number of agents to simultaneously run copies of this job on
+    matrix: # matrix strategy, see below
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
   workspace:
@@ -404,14 +269,15 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   container: containerReference # container to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable ] 
-  steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
+  variables: { string: string } | [ variable | variableReference ] 
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
 
 # [Example](#tab/example)
 
 ```yaml
+jobs:
 - job: MyJob
   displayName: My First Job
   continueOnError: true
@@ -423,14 +289,11 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 
 ---
 
-Learn more about [variables](process/variables.md?tabs=yaml). Also see
-the schema references for [pool](#pool), [server](#server), [script](#script),
-[bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
-and [step templates](#step-template).
+Learn more about [variables](process/variables.md?tabs=yaml), [steps](#steps), [pools](#pool), and [server jobs](#server),.
 
 > [!Note]
-> If you have only one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
-> which omits many of the keywords here.
+> If you have only one stage and one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
+> as a shorter way to describe the steps to run.
 
 ### Container reference
 
@@ -453,13 +316,17 @@ container:
 # [Example](#tab/example)
 
 ```yaml
-container: ubuntu:16.04 # Docker Hub image reference
+jobs:
+- job: RunsInContainer
+  container: ubuntu:16.04 # Docker Hub image reference
 ```
 
 ```yaml
-container: # inline container specification
-  image: ubuntu:16.04
-  options: --hostname container-test --ip 192.168.0.1
+jobs:
+- job: RunsInContainer
+  container: # inline container specification
+    image: ubuntu:16.04
+    options: --hostname container-test --ip 192.168.0.1
 ```
 
 ```yaml
@@ -487,11 +354,11 @@ jobs:
 Matrixing generates copies of a job with different inputs. This is useful for
 testing against different configurations or platform versions.
 
-# [Schema](#tab/schema)
-
+#### [Schema](#tab/schema/)
 ```yaml
 strategy:
   matrix: { string1: { string2: string3 } }
+  maxParallel: number
 ```
 
 For each `string1` in the matrix, a copy of the job will be generated. `string1`
@@ -499,24 +366,41 @@ is the copy's name and will be appended to the name of the job. For each
 `string2`, a variable called `string2` with the value `string3` will be available 
 to the job.
 
-# [Example](#tab/example)
+> [!NOTE]
+> Matrix configuration names must contain only basic Latin alphabet letters (A-Z, a-z), numbers, and underscores (`_`).
+> They must start with a letter.
+> Also, they must be 100 characters or less.
 
+<a name="maximum-parallelism"></a>
+Optionally, `maxParallel` specifies the maximum number of simultaneous matrix legs to run at once.
+::: moniker range="> azure-devops-2019"
+If not specified or set to 0, no limit will be applied.
+::: moniker-end
+::: moniker range="azure-devops-2019"
+If not specified, no limit will be applied.
+::: moniker-end
+
+#### [Example](#tab/example/)
 ```yaml
-job: Build
-strategy:
-  matrix:
-    Python35:
-      PYTHON_VERSION: '3.5'
-    Python36:
-      PYTHON_VERSION: '3.6'
+jobs:
+- job: Build
+  strategy:
+    matrix:
+      Python35:
+        PYTHON_VERSION: '3.5'
+      Python36:
+        PYTHON_VERSION: '3.6'
+      Python37:
+        PYTHON_VERSION: '3.7'
+    maxParallel: 2
 ```
 
-This matrix will create two jobs, "Build Python35" and "Build Python36". Within
+This matrix will create three jobs, "Build Python35", "Build Python36", and "Build Python37". Within
 each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
 will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
+Only 2 jobs will run simultaneously.
 
----
-
+* * *
 #### Parallel
 
 This specifies how many duplicates of the job should run. This is useful for
@@ -533,49 +417,271 @@ strategy:
 # [Example](#tab/example)
 
 ```yaml
-strategy:
-  parallel: 4
+jobs:
+- job: SliceItFourWays
+  strategy:
+    parallel: 4
 ```
 
 ---
 
+::: moniker range="azure-devops"
 
-#### Maximum Parallelism
+## Deployment job
 
-Regardless of which strategy is chosen and how many jobs are generated, this
-value specifies the maximum number of agents which will run at a time for
-this family of jobs. It defaults to unlimited if not specified.
+A [deployment job](process/deployment-jobs.md) is a special type of job that is a collection of steps to be run sequentially against the environment. In YAML pipelines, we recommend that you put your deployment steps in a deployment job.
+
+# [Schema](#tab/schema)
+
+```YAML
+jobs:
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore
+  displayName: string  # friendly name to display in the UI
+  pool:                # see pool schema
+    name: string
+    demands: string | [ string ]
+  dependsOn: string 
+  condition: string 
+  continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: { string: string } | [ variable | variableReference ]  
+  environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
+
+# [Example](#tab/example)
+
+```YAML
+jobs:
+  # track deployments on the environment
+- deployment: DeployWeb
+  displayName: deploy Web App
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  # creates an environment if it doesn't exist
+  environment: 'smarthotel-dev'
+  strategy:
+    # default deployment strategy, more coming...
+    runOnce:
+      deploy:
+        steps:
+        - script: echo my first deployment
+```
+::: moniker-end
+
+---
+
+## Steps
+
+Steps are a linear sequence of operations that make up a job.
+Each step runs in its own process on an agent and has access to the pipeline workspace on disk.
+This means environment variables are not preserved between steps but filesystem changes are.
 
 # [Schema](#tab/schema)
 
 ```yaml
-strategy:
-  maxParallel: number
+steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 # [Example](#tab/example)
 
 ```yaml
-strategy:
-  maxParallel: 2
-  matrix:
-    Python35:
-      PYTHON_VERSION: '3.5'
-    Python36:
-      PYTHON_VERSION: '3.6'
-    Python37:
-      PYTHON_VERSION: '3.7'
+steps:
+- script: echo This runs in the default shell on any machine
+- bash: |
+    echo This multiline script always runs in Bash.
+    echo Even on Windows machines!
+- pwsh: |
+    Write-Host "This multiline script always runs in PowerShell Core."
+    Write-Host "Even on non-Windows machines!"
 ```
-
-This example will generate 3 jobs but only run 2 at a time.
 
 ---
 
+See the schema references for [script](#script),
+[bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
+and [step templates](#step-templates) for more details about each.
 
-## Job templates
+## Variables
 
-Jobs can also be specified in a job template. Job templates are separate
-files which you can reference in the main pipeline definition.
+Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
+Variables may be specified at the pipeline, stage, or job level.
+
+#### [Schema](#tab/schema/)
+For a simple set of hardcoded variables:
+
+```yaml
+variables: { string: string }
+```
+
+To include variable groups, switch to this list syntax:
+
+```yaml
+variables:
+- name: string # name of a variable
+  value: any # value of the variable
+- group: string # name of a variable group
+```
+
+`name`/`value` pairs and `group`s can be repeated.
+
+Variables may also be included from [templates](#variable-templates).
+
+#### [Example](#tab/example/)
+::: moniker range="> azure-devops-2019"
+
+```yaml
+variables:      # pipeline-level
+  MY_VAR: 'my value'
+  ANOTHER_VAR: 'another value'
+
+stages:
+- stage: Build
+  variables:    # stage-level
+    STAGE_VAR: 'that happened'
+
+  jobs:
+  - job: FirstJob
+    variables:  # job-level
+      JOB_VAR: 'a job var'
+    steps:
+    - script: echo $(MY_VAR) $(STAGE_VAR) $(JOB_VAR)
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+variables:      # pipeline-level
+  MY_VAR: 'my value'
+  ANOTHER_VAR: 'another value'
+
+jobs:
+- job: FirstJob
+  variables:  # job-level
+    JOB_VAR: 'a job var'
+  steps:
+  - script: echo $(MY_VAR) $(STAGE_VAR) $(JOB_VAR)
+```
+
+::: moniker-end
+
+```yaml
+variables:
+- name: MY_VARIABLE           # hardcoded value
+  value: some value
+- group: my-variable-group-1  # variable group
+- group: my-variable-group-2  # another variable group
+```
+
+* * *
+## Template references
+
+> [!NOTE]
+> Be sure to see the full [template expression syntax](process/templates.md#template-expressions) (all forms of `${{ }}`).
+
+::: moniker range="> azure-devops-2019"
+
+You can export reusable sections of your pipeline to a separate file.
+These separate files are known as templates.
+Azure Pipelines supports four kinds of templates:
+- [Stage](#stage-templates)
+- [Job](#job-templates)
+- [Step](#step-templates)
+- [Variable](#variable-templates)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can export reusable sections of your pipeline to a separate file.
+These separate files are known as templates.
+Azure DevOps Server 2019 supports two kinds of templates:
+- [Job](#job-templates)
+- [Step](#step-templates)
+
+::: moniker-end
+
+Templates may themselves include other templates.
+Azure Pipelines supports a maximum of 50 unique template files in a single pipeline.
+
+::: moniker range="> azure-devops-2019"
+### Stage templates
+
+A set of stages can be defined in one file and used multiple places in other files.
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+- template: string # name of template to include
+  parameters: { string: any } # provided parameters
+```
+
+And in the included template:
+
+```yaml
+parameters: { string: any } # expected parameters
+stages: [ stage ]
+```
+
+# [Example](#tab/example)
+
+In this example, a stage is repeated twice for two different testing regimes.
+The stage itself is only specified once.
+
+```yaml
+# File: stages/test.yml
+
+parameters:
+  name: ''
+  testFile: ''
+
+stages:
+- stage: Test_${{ parameters.name }}
+  jobs:
+  - job: ${{ parameters.name }}_Windows
+    pool:
+      vmImage: vs2017-win2016
+    steps:
+    - script: npm install
+    - script: npm test -- --file=${{ parameters.testFile }}
+  - job: ${{ parameters.name }}_Mac
+    pool:
+      vmImage: macos-10.13
+    steps:
+    - script: npm install
+    - script: npm test -- --file=${{ parameters.testFile }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+stages:
+- template: stages/test.yml  # Template reference
+  parameters:
+    name: Mini
+    testFile: tests/miniSuite.js
+
+- template: stages/test.yml  # Template reference
+  parameters:
+    name: Full
+    testFile: tests/fullSuite.js
+```
+
+---
+::: moniker-end
+
+### Job templates
+
+A set of jobs can be defined in one file and used multiple places in other files.
 
 # [Schema](#tab/schema)
 
@@ -642,7 +748,459 @@ jobs:
 
 ---
 
+See [templates](process/templates.md) for more about working with job templates.
+
+### Step templates
+
+A set of steps can be defined in one file and used multiple places in another file.
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+steps:
+- template: string  # reference to template
+  parameters: { string: any } # provided parameters
+```
+
+And in the included template:
+
+```yaml
+parameters: { string: any } # expected parameters
+steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+```
+
+# [Example](#tab/example)
+
+```yaml
+# File: steps/build.yml
+
+steps:
+- script: npm install
+- script: npm test
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- job: macOS
+  pool:
+    vmImage: 'macOS-10.13'
+  steps:
+  - template: steps/build.yml # Template reference
+
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - template: steps/build.yml # Template reference
+
+- job: Windows
+  pool:
+    vmImage: 'vs2017-win2016'
+  steps:
+  - template: steps/build.yml # Template reference
+  - script: sign              # Extra step on Windows only
+```
+
+---
+
 See [templates](process/templates.md) for more about working with templates.
+
+::: moniker range="> azure-devops-2019"
+
+### Variable templates
+
+A set of variables can be defined in one file and referenced several times in other files.
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+- template: string            # name of template file to include
+  parameters: { string: any } # provided parameters
+```
+
+And in the included template:
+
+```yaml
+parameters: { string: any }   # expected parameters
+variables: [ variable ]
+```
+
+# [Example](#tab/example)
+
+In this example, a set of variables is repeated across multiple pipelines.
+The variables are only specified once.
+
+```yaml
+# File: variables/build.yml
+variables:
+- name: vmImage
+  value: vs2017-win2016
+- name: arch
+  value: x64
+- name: config
+  value: debug
+```
+
+```yaml
+# File: component-x-pipeline.yml
+variables:
+- template: variables/build.yml  # Template reference
+pool:
+  vmImage: ${{ variables.vmImage }}
+steps:
+- script: build x ${{ variables.arch }} ${{ variables.config }}
+```
+
+```yaml
+# File: component-y-pipeline.yml
+variables:
+- template: variables/build.yml  # Template reference
+pool:
+  vmImage: ${{ variables.vmImage }}
+steps:
+- script: build y ${{ variables.arch }} ${{ variables.config }}
+```
+
+---
+
+::: moniker-end
+
+## Resources
+
+### Container resource
+
+[Container jobs](process/container-phases.md) let you isolate your tools and
+dependencies inside a container. The agent will launch an instance of your
+specified container, then run steps inside it. The `container` resource lets
+you specify your container images.
+
+[Service containers](process/service-containers.md) run alongside a job to
+provide various dependencies such as databases.
+
+# [Schema](#tab/schema)
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # endpoint for a private container registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+```
+
+# [Example](#tab/example)
+
+```yaml
+resources:
+  containers:
+  - container: linux
+    image: ubuntu:16.04
+  - container: my_service
+    image: my_service:tag
+    ports:
+    - 8080:80 # bind container port 80 to 8080 on the host machine
+    - 6379 # bind container port 6379 to a random available port on the host machine
+    volumes:
+    - /src/dir:/dst/dir # mount /src/dir on the host into /dst/dir in the container
+```
+
+---
+
+### Repository resource
+
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
+let the system know about that repository. The `repository` resource lets you
+specify an external repository.
+
+# [Schema](#tab/schema)
+
+```yaml
+resources:
+  repositories:
+  - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    type: enum  # see below
+    name: string  # repository name (format depends on `type`)
+    ref: string  # ref name to use, defaults to 'refs/heads/master'
+    endpoint: string  # name of the service connection to use (for non-Azure Repos types)
+```
+
+# [Example](#tab/example)
+```yaml
+
+resources:
+  repositories:
+  - repository: common
+    type: github
+    name: Contoso/CommonTools
+```
+
+---
+
+#### Type
+
+Pipelines support two types of repositories, `git` and `github`. `git` refers to
+Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+repository in the same project. For example, `otherRepo`. To refer to a repo in
+another project within the same organization, prefix the name with that project's name.
+For example, `OtherProject/otherRepo`.
+
+If you choose `github` as your type, then `name` is the full name of the GitHub
+repo including the user or organization. For example, `Microsoft/vscode`. Also,
+GitHub repos require a [service connection](library/service-endpoints.md)
+for authorization.
+
+## Triggers
+
+* [Push trigger](#push-trigger)
+* [PR trigger](#pr-trigger)
+* [Scheduled trigger](#scheduled-trigger)
+
+### Push trigger
+
+A trigger specifies what branches will cause a continuous integration build to
+run. If left unspecified, pushes to every branch will trigger a build.
+Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
+and how to specify them.
+Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
+
+#### [Schema](#tab/schema/)
+There are three distinct options for `trigger`: a list of branches to include, a way to disable CI triggering, and the full syntax for ultimate control.
+
+List syntax:
+
+```yaml
+trigger: [ string ] # list of branch names
+```
+
+Disable syntax:
+
+```yaml
+trigger: none # will disable CI builds entirely
+```
+
+Full syntax:
+
+::: moniker range="> azure-devops-2019"
+
+```yaml
+trigger:
+  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  tags:
+    include: [ string ] # tag names which will trigger a build
+    exclude: [ string ] # tag names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+```yaml
+trigger:
+  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+::: moniker-end
+
+>[!IMPORTANT]
+>When you specify a `trigger`, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
+#### [Example](#tab/example/)
+List syntax:
+
+```yaml
+trigger:
+- master
+- develop
+```
+
+Disable syntax:
+
+```yaml
+trigger: none # will disable CI builds (but not PR builds)
+```
+
+Full syntax:
+
+```yaml
+trigger:
+  batch: true
+  branches:
+    include:
+    - features/*
+    exclude:
+    - features/experimental/*
+  paths:
+    exclude:
+    - README.md
+```
+
+* * *
+### PR trigger
+
+A pull request trigger specifies what branches will cause a pull request build to
+run. If left unspecified, pull requests to every branch will trigger a build.
+Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pr-triggers)
+and how to specify them.
+
+::: moniker range="azure-devops"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
+
+# [Schema](#tab/schema)
+
+There are three distinct options for `pr`: a list of branches to include, a way to disable PR triggering, and the full syntax for ultimate control.
+
+List syntax:
+
+```yaml
+pr: [ string ] # list of branch names
+```
+
+Disable syntax:
+
+```yaml
+pr: none # will disable PR builds entirely; will not disable CI triggers
+```
+
+Full syntax:
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
+# [Example](#tab/example)
+
+List syntax:
+
+```yaml
+pr:
+- master
+- develop
+```
+
+Disable syntax:
+
+```yaml
+pr: none # will disable PR builds (but not CI builds)
+```
+
+Full syntax:
+
+```yaml
+pr:
+  branches:
+    include:
+    - features/*
+    exclude:
+    - features/experimental/*
+  paths:
+    exclude:
+    - README.md
+```
+
+---
+
+### Scheduled trigger
+
+::: moniker range="<= azure-devops-2019"
+
+YAML scheduled triggers are not available in this version of Azure DevOps Server or TFS. 
+You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+A scheduled trigger specifies a schedule on which branches will be built. 
+If left unspecified, no scheduled builds will occur.
+Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers)
+and how to specify them.
+
+
+
+# [Schema](#tab/schema)
+
+```yaml
+schedules:
+- cron: string # cron syntax defining a schedule
+  displayName: string # friendly name given to a specific schedule
+  branches:
+    include: [ string ] # which branches the schedule applies to
+    exclude: [ string ] # which branches to exclude from the schedule
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+```
+
+>[!IMPORTANT]
+>When you specify a scheduled trigger, only branches that are explicitly configured to be included are scheduled for a build. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, no branches will be built.
+
+# [Example](#tab/example)
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/ancient/*
+- cron: "0 12 * * 0"
+  displayName: Weekly Sunday build
+  branches:
+    include:
+    - releases/*
+  always: true
+```
+
+In this example, two schedules are defined. The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+
+The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
+
+---
+
+::: moniker-end
 
 ## Pool
 
@@ -713,10 +1271,71 @@ pool:
 ```
 
 ---
+::: moniker range="azure-devops"
+## Environment
+
+`environment` specifies the [environment](process/environments.md) or its resource that is to be targeted by a deployment job of the
+pipeline. It also holds information about the deployment strategy for running the steps defined inside the job.
+
+# [Schema](#tab/schema)
+
+Full syntax:
+
+```yaml
+environment:                # create environment and(or) record deployments
+  name: string              # name of the environment to run this job on.
+  resourceName: string      # name of the resource in the environment to record the deployments against
+  resourceId: number        # resource identifier
+  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
+  tags: string | [ string ] # tag names to filter the resources in the environment
+  strategy:                 # deployment strategy
+    runOnce:                # default strategy
+      deploy:
+        steps:
+        - script: echo Hello world
+```
+
+If you're specifying an environment or one of its resource and don't need to specify other properties, this can
+be shortened to:
+
+```yaml
+environment: environmentName.resourceName
+strategy:                 # deployment strategy
+    runOnce:              # default strategy
+      deploy:
+        steps:
+        - script: echo Hello world
+```
+
+# [Example](#tab/example)
+
+It is possible to scope down the target of deployment to a particular resource within the environment as shown below. 
+
+```yaml
+environment: 'smarthotel-dev.bookings'
+  strategy: 
+    runOnce:
+      deploy:
+        steps:
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            namespace: $(k8sNamespace)
+            manifests: $(System.ArtifactsDirectory)/manifests/*
+            imagePullSecrets: $(imagePullSecret)
+            containers: $(containerRegistry)/$(imageRepository):$(tag)
+            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+```
+
+---
+::: moniker-end
 
 ## Server
 
-`server` specifies a [server job](process/server-phases.md).
+`server` specifies a [server job](process/phases.md#server-jobs).
+Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
+or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
 
 # [Schema](#tab/schema)
 
@@ -729,7 +1348,9 @@ pool: server
 # [Example](#tab/example)
 
 ```yaml
-pool: server
+jobs:
+- job: RunOnServer
+  pool: server
 ```
 
 ---
@@ -742,6 +1363,7 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - script: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -757,6 +1379,7 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - script: echo Hello world!
   displayName: Say hello
 ```
@@ -774,6 +1397,7 @@ It will run a script in Bash on Windows, macOS, or Linux.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - bash: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -789,6 +1413,7 @@ It will run a script in Bash on Windows, macOS, or Linux.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - bash: |
     which bash
     echo Hello $name
@@ -804,12 +1429,13 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 
 ## Pwsh
 
-`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
-It will run a script in PowerShell on Windows, macOS, or Linux.
+`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md) with `pwsh` set to `true`.
+It will run a script in PowerShell Core on Windows, macOS, or Linux.
 
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - pwsh: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -827,6 +1453,7 @@ It will run a script in PowerShell on Windows, macOS, or Linux.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - pwsh: echo Hello $(name)
   displayName: Say hello
   name: firstStep
@@ -849,6 +1476,7 @@ It will run a script in PowerShell on Windows.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -866,6 +1494,7 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - powershell: echo Hello $(name)
   displayName: Say hello
   name: firstStep
@@ -933,33 +1562,104 @@ steps:
 
 ---
 
-## Checkout
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
 
-`checkout` informs the system how to handle checking out source code.
+::: moniker range="azure-devops"
+## Publish
+
+`publish` is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). It will publish (upload) a file or folder as a pipeline artifact that can be consumed by other jobs and pipelines.
 
 # [Schema](#tab/schema)
 
 ```yaml
-- checkout: self  # self represents the repo where the initial Pipelines YAML file was found
-  clean: boolean  # whether to fetch clean each time
-  fetchDepth: number  # the depth of commits to ask Git to fetch
-  lfs: boolean  # whether to download Git-LFS files
-  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
-  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
-  persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
-```
-
-Or to avoid syncing sources at all:
-
-```yaml
-- checkout: none
+steps:
+- publish: string # path to a file or folder
+  artifact: string # artifact name
 ```
 
 # [Example](#tab/example)
 
 ```yaml
+steps:
+- publish: $(Build.SourcesDirectory)/build
+  artifact: WebApp
+```
+
+---
+
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+
+## Download
+
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run to `$(Pipeline.Workspace)`. It can also be used to disable automatic downloading of artifacts in classic release and deployment jobs.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- download: [ current | none ] # disable automatic download if "none"
+  artifact: string # artifact name
+  patterns: string # patterns representing files to include
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- download: current
+  artifact: WebApp
+  patterns: '**/.js'
+```
+
+---
+
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+::: moniker-end
+
+## Checkout
+
+Non-deployment jobs automatically check out source code.
+You can configure or suppress this behavior with `checkout`.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
-  clean: false
+  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
+  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
+  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+```
+
+Or to avoid syncing sources at all:
+
+```yaml
+steps:
+- checkout: none
+```
+
+> [!NOTE]
+> If you want to modify the current repository using git operations and/or load git submodules, 
+> make sure to give the proper permissions to the "Project Collection Build Service Accounts" user
+> if you are running the agent in Local Service Account.
+
+```yaml
+steps:
+- checkout: self
+  submodules: true
+  persistCredentials: true
+```
+
+# [Example](#tab/example)
+
+```yaml
+steps:
+- checkout: self  # self represents the repo where the initial Pipelines YAML file was found
+  clean: true
   fetchDepth: 5
   lfs: true
   path: PutMyCodeHere
@@ -975,6 +1675,7 @@ Or to avoid syncing sources at all:
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -989,6 +1690,7 @@ Or to avoid syncing sources at all:
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - task: VSBuild@1
   displayName: Build
   timeoutInMinutes: 120
@@ -998,68 +1700,13 @@ Or to avoid syncing sources at all:
 
 ---
 
-## Step template
-
-A set of steps can be defined in one file and used multiple places in another file.
-
-# [Schema](#tab/schema)
-
-In the main pipeline:
-
-```yaml
-steps:
-- template: string  # reference to template
-  parameters: { string: any } # provided parameters
-```
-
-And in the included template:
-
-```yaml
-parameters: { string: any } # expected parameters
-steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
-```
-
-# [Example](#tab/example)
-
-```yaml
-# File: steps/build.yml
-
-steps:
-- script: npm install
-- script: npm test
-```
-
-```yaml
-# File: azure-pipelines.yml
-
-jobs:
-- job: macOS
-  pool:
-    vmImage: 'macOS-10.13'
-  steps:
-  - template: steps/build.yml # Template reference
-
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-  - template: steps/build.yml # Template reference
-
-- job: Windows
-  pool:
-    vmImage: 'vs2017-win2016'
-  steps:
-  - template: steps/build.yml # Template reference
-  - script: sign              # Extra step on Windows only
-```
-
----
-
-See [templates](process/templates.md) for more about working with templates.
-
 ## Syntax highlighting
 
 Syntax highlighting is available for the pipeline schema via a VS Code
 extension. You can [download VS Code](https://code.visualstudio.com),
 [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and
 [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
+<!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
+     look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
+     in the first few screenfuls. -->
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.

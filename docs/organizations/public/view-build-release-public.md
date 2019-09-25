@@ -13,11 +13,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# View build and release pipelines
+# Quickstart: View build and release pipelines
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-When you're viewing a public project, you can view the status of build and release pipelines. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
+In this quickstart, you learn how to view the status of build and release pipelines for public projects. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]
 
@@ -37,6 +37,7 @@ From there, you can drill into the details of a release. For example, here we sh
 
 > ![Pipelines, Build status page ](_img/pipelines/release-chart.png)
 
-## Related articles
+## Next steps
 
-- [Release pipelines](../../pipelines/release/index.md)
+> [!div class="nextstepaction"]
+> [Review release pipelines](../../pipelines/release/index.md)

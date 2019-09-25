@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Team Foundation version control commands
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
@@ -208,15 +208,15 @@ For example, the [Checkout command](checkout-or-edit-command.md):
 
 Let's review the arguments from this example:
 
--   *itemspec*: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
+- *itemspec*: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
 
--   **/lock:(none|checkin|checkout)**: You are not required to specify the **/lock** option. If you do not specify it, then the system by default specifies **/lock:none**. Otherwise, you can specify one of the lock options.
+- **/lock:(none|checkin|checkout)**: You are not required to specify the **/lock** option. If you do not specify it, then the system by default specifies **/lock:none**. Otherwise, you can specify one of the lock options.
 
--   The following arguments are optional and if you do not supply them, none of their effects apply to the command:
+- The following arguments are optional and if you do not supply them, none of their effects apply to the command:
 
-    -   **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
+  - **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
 
-    -   **/login**:*username**,password*: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
+  - **/login**:*username*<em>,password</em>: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
 
 ## Specify the items affected by a command
 
@@ -226,7 +226,7 @@ You can use itemspecs and versionspecs to specify which items are affected by a 
 
 #### Use an itemspec argument to specify affected items
 
-You use an *itemspec* (item specification) to specify the items affected by a command. You can specify items either on a client machine or on your Team Foundation Server. You can use wildcard characters such as **\*** and **?**.
+You use an *itemspec* (item specification) to specify the items affected by a command. You can specify items either on a client machine or on your Team Foundation Server. You can use wildcard characters such as **\\*** and **?**.
 
 #### Client itemspec arguments
 
@@ -367,7 +367,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see [DateTime](https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1).</p></td>
+<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime" data-raw-source="[DateTime](https://msdn.microsoft.com/library/system.datetime)">DateTime</a> and <a href="https://msdn.microsoft.com/library/az4se3k1" data-raw-source="[Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1)">Standard Date and Time Format Strings</a>.</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>
@@ -443,11 +443,11 @@ Use the **/lock** option to apply or remove a lock at the same time you run anot
 
 -   **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
 
->**Note:**  
->In a few cases, the lock operation can fail:
+> [!NOTE]
+> In a few cases, the lock operation can fail:
 >
->- If any other users have locked any of the specified items, the lock operation will fail.
->- The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
+> - If any other users have locked any of the specified items, the lock operation will fail.
+> - The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
 
 ### Use option shortcuts
 

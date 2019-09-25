@@ -1,6 +1,6 @@
 ```YAML
 # .NET Core
-# Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
+# Build, test, package, or publish a dotnet application, or run a custom dotnet command
 - task: DotNetCoreCLI@2
   inputs:
     #command: 'build' # Options: build, push, pack, publish, restore, run, test, custom
@@ -9,6 +9,7 @@
     #custom: # Required when command == Custom
     #arguments: # Optional
     #publishTestResults: true # Optional
+    #testRunTitle: # Optional
     #zipAfterPublish: true # Optional
     #modifyOutputPath: true # Optional
     #feedsToUse: 'select' # Options: select, config
@@ -28,6 +29,8 @@
     #configuration: '$(BuildConfiguration)' # Optional
     #packDirectory: '$(Build.ArtifactStagingDirectory)' # Optional
     #nobuild: false # Optional
+    #includesymbols: false # Optional
+    #includesource: false # Optional
     #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
     #versionEnvVar: # Required when versioningScheme == ByEnvVar
     #majorVersion: '1' # Required when versioningScheme == ByPrereleaseNumber

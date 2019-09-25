@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -63,7 +63,6 @@ To use your feed and upstream source, follow the instructions to [consume NuGet 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-::: moniker range="azure-devops"
 
 ::: moniker range=">= azure-devops-2019"
 

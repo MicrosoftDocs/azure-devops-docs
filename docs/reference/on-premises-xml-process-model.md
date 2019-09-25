@@ -9,11 +9,11 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops-2019'
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 ---
 
 
-# On-premises XML process model 
+# On-premises XML process customization
 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
@@ -45,14 +45,14 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Fields  </td>
 <td>
 <ul>
-<li>[Add or modify a field](add-modify-field.md)</li>
-<li>[Add a checkbox (Boolean) field](add-modify-field.md#boolean-field) (TFS 2017.2)</li>
-<li>[Add rules to a field](add-modify-field.md#add-rules)</li>
-<li>[Change a field label](add-modify-field.md#change-label)</li>
-<li>[Add a custom control field](add-modify-field.md#custom-control)</li>
-<li>[Remove a field from a form](add-modify-field.md#change-label)</li>
-<li>[Change a field attribute](add-modify-field.md#change-attribute)</li>
-<li>[Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)</li><li>[Delete a field](add-modify-field.md#delete-field)</li> 
+<li><a href="add-modify-field.md" data-raw-source="[Add or modify a field](add-modify-field.md)">Add or modify a field</a></li>
+<li><a href="add-modify-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](add-modify-field.md#boolean-field)">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
+<li><a href="add-modify-field.md#add-rules" data-raw-source="[Add rules to a field](add-modify-field.md#add-rules)">Add rules to a field</a></li>
+<li><a href="add-modify-field.md#change-label" data-raw-source="[Change a field label](add-modify-field.md#change-label)">Change a field label</a></li>
+<li><a href="add-modify-field.md#custom-control" data-raw-source="[Add a custom control field](add-modify-field.md#custom-control)">Add a custom control field</a></li>
+<li><a href="add-modify-field.md#change-label" data-raw-source="[Remove a field from a form](add-modify-field.md#change-label)">Remove a field from a form</a></li>
+<li><a href="add-modify-field.md#change-attribute" data-raw-source="[Change a field attribute](add-modify-field.md#change-attribute)">Change a field attribute</a></li>
+<li><a href="add-modify-field.md#integration-fields" data-raw-source="[Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)">Add fields that integrate with test, build, and version control</a></li><li><a href="add-modify-field.md#delete-field" data-raw-source="[Delete a field](add-modify-field.md#delete-field)">Delete a field</a></li> 
 </ul>
 </td>
 </tr>
@@ -60,14 +60,14 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Pick lists  </td>
 <td>
 <ul>
-<li>[Area paths](../organizations/settings/set-area-paths.md)</li>
-<li>[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)</li>
-<li>[Add a custom pick list](add-modify-field.md#picklist)</li>
-<li>[Modify a pre-defined pick list](add-modify-field.md#picklist)</li>
-<li>[State or Reason fields (customize workflow)](xml/change-workflow-wit.md)</li>
-<li>[Person-name field (add users)](../organizations/security/add-users-team-project.md) </li>
-<li>[Resolution State & Failure Type](customize-work.md#test-experience)</li>
-<li>[Define global lists](xml/define-global-lists.md) </li>
+<li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Area paths](../organizations/settings/set-area-paths.md)">Area paths</a></li>
+<li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)">Iteration paths</a></li>
+<li><a href="add-modify-field.md#picklist" data-raw-source="[Add a custom pick list](add-modify-field.md#picklist)">Add a custom pick list</a></li>
+<li><a href="add-modify-field.md#picklist" data-raw-source="[Modify a pre-defined pick list](add-modify-field.md#picklist)">Modify a pre-defined pick list</a></li>
+<li><a href="xml/change-workflow-wit.md" data-raw-source="[State or Reason fields (customize workflow)](xml/change-workflow-wit.md)">State or Reason fields (customize workflow)</a></li>
+<li><a href="../organizations/security/add-users-team-project.md" data-raw-source="[Person-name field (add users)](../organizations/security/add-users-team-project.md)">Person-name field (add users)</a> </li>
+<li><a href="customize-work.md#test-experience" data-raw-source="[Resolution State &amp; Failure Type](customize-work.md#test-experience)">Resolution State &amp; Failure Type</a></li>
+<li><a href="xml/define-global-lists.md" data-raw-source="[Define global lists](xml/define-global-lists.md)">Define global lists</a> </li>
 </ul>
 </td>
 </tr>
@@ -75,12 +75,12 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Work item types</td>
 <td>
 <ul>
-<li>[Add or modify a work item type](add-modify-wit.md)</li>
-<li>[Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)</li>
-<li>[Customize the form](xml/change-work-item-form-layout.md)</li>
-<li>[Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)</li>
-<li>[Specify the WIT icon](xml/process-configuration-xml-element.md)</li>
-<li>[Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors) </li>
+<li><a href="add-modify-wit.md" data-raw-source="[Add or modify a work item type](add-modify-wit.md)">Add or modify a work item type</a></li>
+<li><a href="xml/change-workflow-wit.md" data-raw-source="[Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)">Change the workflow (States, Reasons, Transitions)</a></li>
+<li><a href="xml/change-work-item-form-layout.md" data-raw-source="[Customize the form](xml/change-work-item-form-layout.md)">Customize the form</a></li>
+<li><a href="xml/process-configuration-xml-element.md#wit-colors" data-raw-source="[Specify the WIT color](xml/process-configuration-xml-element.md#wit-colors)">Specify the WIT color</a></li>
+<li><a href="xml/process-configuration-xml-element.md" data-raw-source="[Specify the WIT icon](xml/process-configuration-xml-element.md)">Specify the WIT icon</a></li>
+<li><a href="xml/process-configuration-xml-element.md#state-colors" data-raw-source="[Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)">Specify the workflow state color</a> </li>
 </ul>
 </td>
 </tr>
@@ -88,16 +88,16 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Backlogs and process configuration  </td>
 <td>
 <ul>
-<li>[Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)</li>
-<li>[Add portfolio backlogs](add-portfolio-backlogs.md)</li>
-<li>[Configure the quick add panel](xml/process-configuration-xml-element.md#add)</li>
-<li>[Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)</li>
-<li>[Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)</li>
-<li>[Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days) </li>
-<li>[Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors) </li>
-<li>[Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors) </li>
-<li>[Process configuration](xml/process-configuration-xml-element.md)</li>
-<li>[Categories](xml/categories-xml-element-reference.md) </li>
+<li><a href="add-wits-to-backlogs-and-boards.md" data-raw-source="[Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)">Add WITs to backlogs or boards</a></li>
+<li><a href="add-portfolio-backlogs.md" data-raw-source="[Add portfolio backlogs](add-portfolio-backlogs.md)">Add portfolio backlogs</a></li>
+<li><a href="xml/process-configuration-xml-element.md#add" data-raw-source="[Configure the quick add panel](xml/process-configuration-xml-element.md#add)">Configure the quick add panel</a></li>
+<li><a href="xml/process-configuration-xml-element.md#columns" data-raw-source="[Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)">Configure the default backlog columns</a></li>
+<li><a href="xml/process-configuration-xml-element.md#number_items" data-raw-source="[Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)">Set maximum number of task board items</a></li>
+<li><a href="xml/process-configuration-xml-element.md#weekend_days" data-raw-source="[Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)">Set default weekend days (Scrum)</a> </li>
+<li><a href="xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)">Set default bug management behavior</a> </li>
+<li><a href="xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)">Set default hidden backlogs</a> </li>
+<li><a href="xml/process-configuration-xml-element.md" data-raw-source="[Process configuration](xml/process-configuration-xml-element.md)">Process configuration</a></li>
+<li><a href="xml/categories-xml-element-reference.md" data-raw-source="[Categories](xml/categories-xml-element-reference.md)">Categories</a> </li>
 </ul>
 </td>
 </tr>
@@ -105,9 +105,9 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Process template </td>
 <td>
 <ul>
-<li>[Customize](process-templates/customize-process.md)</li>
-<li>[Manage (upload/download)](../boards/work-items/guidance/manage-process-templates.md)</li>
-<li>[Maintenance and upgrade implications](#before-you-customize) </li>
+<li><a href="process-templates/customize-process.md" data-raw-source="[Customize](process-templates/customize-process.md)">Customize</a></li>
+<li><a href="../boards/work-items/guidance/manage-process-templates.md" data-raw-source="[Manage (upload/download)](../boards/work-items/guidance/manage-process-templates.md)">Manage (upload/download)</a></li>
+<li><a href="#before-you-customize" data-raw-source="[Maintenance and upgrade implications](#before-you-customize)">Maintenance and upgrade implications</a> </li>
 </ul>
 </td>
 </tr>
@@ -115,9 +115,9 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>Link types </td>
 <td>
 <ul>
-<li>[Add a custom link type](xml/link-type-element-reference.md)</li>
-<li>[Delete a custom link type](witadmin/manage-link-types.md)</li>
-<li>[Deactivate/activate a custom link type](witadmin/manage-link-types.md)</li>
+<li><a href="xml/link-type-element-reference.md" data-raw-source="[Add a custom link type](xml/link-type-element-reference.md)">Add a custom link type</a></li>
+<li><a href="witadmin/manage-link-types.md" data-raw-source="[Delete a custom link type](witadmin/manage-link-types.md)">Delete a custom link type</a></li>
+<li><a href="witadmin/manage-link-types.md" data-raw-source="[Deactivate/activate a custom link type](witadmin/manage-link-types.md)">Deactivate/activate a custom link type</a></li>
 </ul>
 </td>
 </tr>
@@ -170,7 +170,7 @@ The Configure Features Wizard requires that specific work item types, workflow s
 <li>WITs: Change the workflow </li>
 <li>Agile tools: Change the WITs defined for the Requirement Category, Task Category, or Feature Category.</li>
 <li>Agile tools: Change the metastate mapping defined in the process configuration.  </li>
-<li>Agile tools: Change a field specified for a ```TypeField``` in the process configuration.   </li>
+<li>Agile tools: Change a field specified for a <code>TypeField</code> in the process configuration.   </li>
 </ul>
 
 In addition, changes you make to WITs or the workflow could require updates to other artifacts provided with your process, such as Excel or SQL Server Reporting Services reports.

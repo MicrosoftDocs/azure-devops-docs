@@ -1,7 +1,11 @@
-- name: Team Foundation Server
-  tocHref: /tfs/
-  topicHref: /azure/devops/server/index
-  items: 
-  - name: Project Server Integration
-    tocHref: /azure/devops/tfs-ps-sync/
-    topicHref: /azure/devops/reference/tfs-ps-sync/index
+- name: Azure DevOps 
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items:
+  - name: Azure DevOps Server Administration
+    tocHref: /azure/devops/server/
+    topicHref: /azure/devops/server/admin/admin-quick-ref
+    items:
+    - name: Project Server integration (Deprecated)
+      tocHref: /azure/devops/reference/tfs-ps-sync/
+      topicHref: /azure/devops/reference/tfs-ps-sync/index

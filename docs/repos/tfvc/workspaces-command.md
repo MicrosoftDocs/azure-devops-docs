@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Workspaces Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about workspaces in the system and updates cached information about a user name or computer name change on the server that is running Visual Studio Team Foundation Server.
 
@@ -43,11 +43,11 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 <tbody>
 <tr>
 <td><p><em>ownername</em></p></td>
-<td><p>Provides a value to the <strong>/owner</strong> option. Specify &quot;*&quot; to match workspaces created by any user.</p></td>
+<td><p>Provides a value to the <strong>/owner</strong> option. Specify &quot;<em>&quot; to match workspaces created by any user.</p></td>
 </tr>
 <tr>
 <td><p><em>computername</em></p></td>
-<td><p>Provides a value to the <strong>/computer</strong> option. Specify &quot;*&quot; to match workspaces on any computer.</p></td>
+<td><p>Provides a value to the <strong>/computer</strong> option. Specify &quot;</em>&quot; to match workspaces on any computer.</p></td>
 </tr>
 <tr>
 <td><p><em>workspacename</em></p></td>
@@ -63,11 +63,11 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName</em>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td>
 </tr>
 </tbody>
 </table>
