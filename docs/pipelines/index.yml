@@ -43,21 +43,23 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Build an image
+          - text: Container image
             url: ./ecosystems/containers/build-image.md
-          - text: Build, test, & deploy .NET Core apps
+          - text: .NET Core apps
             url: ./ecosystems/dotnet-core.md
-          - text: Run pipelines with Anaconda environments 
+          - text: Anaconda  
             url: ./ecosystems/anaconda.md
-          - text: Build, test, & deploy Android apps
+          - text: Android 
             url: ./ecosystems/android.md
-          - text: Run Java apps 
+          - text: Azure Kubernetes Service 
+            url: ./ecosystems/kubernetes/aks-template.md
+          - text: Java 
             url: ./ecosystems/java.md
-          - text: Build, test, & deploy JavaScript and Node.js apps
+          - text: JavaScript & Node.js apps
             url: ./ecosystems/javascript.md
-          - text: Build and test Python apps
+          - text: Python apps
             url: ./ecosystems/python.md
-          - text: Build and deploy to a PHP web app on Linux 
+          - text: PHP  
             url: ./ecosystems/python-webapp.md
           - text: "See more >"
             url: ./ecosystems/index.md
@@ -77,17 +79,25 @@ landingContent:
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
-  - title: Build with any repo
+  - title: Build with any repositories
     linkLists:
-      - linkListType: quickstart
+      - linkListType: how-to-guide
         links:
-          - text: Build GitHub repositories
+          - text: GitHub 
             url: ./repos/github.md
+          - text: Azure Repos Git 
+            url: ./repos/azure-repos-git.md
+          - text: Team Foundation version control 
+            url: ./repos/tfvc.md
+          - text: BitBucket Cloud
+            url: ./repos/pipeline-options-for-git.md
+          - text: Subversion 
+            url: ./repos/pipeline-options-for-git.md
+          - text: Generic Git 
+            url: ./repos/pipeline-options-for-git.md
       - linkListType: tutorial
         links:
-          - text: Create a CI/CD pipeline for GitHub code 
-            url: /azure/devops-project/azure-devops-project-github
-          - text: Build multiple branches
+          - text: Build multiple Git branches
             url: ./build/ci-build-git.md
   - title: Deploy to Azure
     linkLists:
