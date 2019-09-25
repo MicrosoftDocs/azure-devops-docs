@@ -56,7 +56,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## Resources
 
-- [Manage projects](../projects/index.md)  
-- [Azure Repos](../../repos/index.md)  
-- [Azure Boards](../../boards/index.md)  
+- [Manage projects](/azure/devops/organizations/projects/index)  
+- [Azure Repos](/azure/devops/repos/index)  
+- [Azure Boards](/azure/devops/boards/index)  
 
