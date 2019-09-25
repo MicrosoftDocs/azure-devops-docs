@@ -40,7 +40,7 @@ There are a number of other features across Work, Code, Build, Release, and even
 - [Use Anaconda tools for data science in your pipeline](#use-anaconda-tools-for-data-science-in-your-pipeline)
 - [Simplify definitions with multiple agentless tasks](#simplify-definitions-with-multiple-agentless-tasks)
 - [Manage limits on self-hosted, concurrent CI/CD jobs](#manage-limits-on-self-hosted-concurrent-cicd-jobs)
-- [Streamline authentication from agent VMs to Azure Resource Manager](#streamline-authentication-from-agent-vms-to-azure-resource-manager)
+- [Streamline authentication from agent VMs in Azure to Azure Resource Manager](#streamline-authentication-from-agent-vms-in-azure-to-azure-resource-manager)
 
 ### Authentication
 
@@ -57,7 +57,7 @@ A new tool to help you import and export an **Inherited Process** is [now availa
 Column Options, like those in Queries, are now available in the Work Items hub to make organizing your most important work items even more personal. This also enables multi-column sorting if you’d like to sort on more than one column. See the [Work Items hub](/azure/devops/work/work-items/view-add-work-items?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Column Options in the Work Items hub](_img/135_01.png)
+> ![Column Options in the Work Items hub](_img/135_01.png)
 
 ## Code
 
@@ -66,7 +66,7 @@ Column Options, like those in Queries, are now available in the Work Items hub t
 For teams that use pull requests (PRs) and [branch policies](/azure/devops/git/branch-policies), there may be occasions when people need to override and bypass those policies - for example, when deploying a hotfix to a production issue in the middle of the night. It makes sense to trust developers to do the right thing and to use the override capability sparingly. At the same time, teams need a way to verify that those policy overrides are being used in the right situations. To support this, we’ve added a new notification filter to allow users and teams to receive email alerts any time a policy is bypassed. Begin with the **A pull request is created or updated** template and select **Policy Bypass** from the list of filters. Select **Policies were bypassed** as the value and you’ll be notified any time a PR is completed, and policies are bypassed.
 
 > [!div class="mx-imgBorder"]
-![Bypass policy notification](_img/135_11.png)
+> ![Bypass policy notification](_img/135_11.png)
 
 ### Favorite a branch from within a pull request
 
@@ -82,7 +82,7 @@ When a viewing a pull request, it’s now easy to mark the source branch as a fa
 A [new release progress view](https://go.microsoft.com/fwlink/?linkid=874485) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
 
 > [!div class="mx-imgBorder"]
-![Release Pipeline view](_img/135_03.png)
+> ![Release Pipeline view](_img/135_03.png)
 
 #### Pipeline, release details, and environments
 
@@ -91,45 +91,45 @@ The **Pipeline** view shows the artifacts of the release and the environments wh
 Environments are modeled in a way to help understand their status, along with detailed progress. At any point, you can get to the logs by clicking on the status link within the environment.
 
 > [!div class="mx-imgBorder"]
-![Release artifacts and environments](_img/135_04.png)
+> ![Release artifacts and environments](_img/135_04.png)
 
 #### Pre-deployment and post-deployment
 
 If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon hanging off the right or left side of the environment.
 
 > [!div class="mx-imgBorder"]
-![Release environment actions](_img/135_05.png)
+> ![Release environment actions](_img/135_05.png)
 
 Graphical views of the gates and a quick action to view logs helps to keep releases moving.
 
 > [!div class="mx-imgBorder"]
-![Release environment actions](_img/135_05b.png)
+> ![Release environment actions](_img/135_05b.png)
 
 #### Commits and work items
 
 With each new release, you can see the list of associated commits and work items for each environment separately by clicking on the environment. If the list is long, use filters to find a commit or work item you’re interested in.
 
 > [!div class="mx-imgBorder"]
-![Release environment commits and work items](_img/135_06.png)
+> ![Release environment commits and work items](_img/135_06.png)
 
 #### Deployment progress and logs
 
 The environments show live updates for in-progress deployments, including how many phases and tasks are complete and the running time. Clicking the environment status opens a view containing the logs, with focus on the what’s currently active.
 
 > [!div class="mx-imgBorder"]
-![Release environment logs](_img/135_07.png)
+> ![Release environment logs](_img/135_07.png)
 
 Plus you can click into the logs to enter a focused view, which also will be coming to build and test views soon.
 
 > [!div class="mx-imgBorder"]
-![Release environment logs detail](_img/135_07b.png)
+> ![Release environment logs detail](_img/135_07b.png)
 
 #### Test results and extensibility
 
 Results from test execution are also surfaced for each environment. Clicking on the test results opens a view containing test details including results from other extensions that contribute to the process.
 
 > [!div class="mx-imgBorder"]
-![Release test results](_img/135_08.png)
+> ![Release test results](_img/135_08.png)
 
 Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](https://go.microsoft.com/fwlink/?linkid=874486) documentation for more information.
 
@@ -167,7 +167,7 @@ There are multiple ways to run build and release agents. Running them yourself i
 For example, if your code needs to call Azure Resource Manager, then you would simply assign the VM’s Service Principal the appropriate role using Role-Based Access Control (RBAC) in Azure AD. See the [build and release agents](/azure/devops/pipelines/agents/agents) and [Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![Add Azure Resource Manager Service Endpoint dialog](_img/135_09.png)
+> ![Add Azure Resource Manager Service Endpoint dialog](_img/135_09.png)
 
 ## Notifications
 
@@ -182,14 +182,14 @@ When alternative authentication is setup for your user account, you'll now recei
 See the [authentication](/azure/devops/organizations/security/about-security-identity?view=azure-devops#authentication) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-![VSTS PAT added email](_img/135_02.png)
+> ![VSTS PAT added email](_img/135_02.png)
 
 ## Feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/_img/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -17,25 +17,16 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-You can automatically deploy your database updates to Azure SQL database after every successful build. Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+You can automatically deploy your database updates to Azure SQL database after every successful build.
 
 ## DACPAC
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
-# [YAML](#tab/yaml)
-
-::: moniker range="< azure-devops"
-
-YAML is not supported in TFS.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
+#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
 
 To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
@@ -53,14 +44,18 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+::: moniker range="< azure-devops-2019"
 
+YAML pipelines aren't available in TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
 When setting up a release pipeline, choose **Start with an empty pipeline**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
 
----
-
+* * *
 See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
 
 ## SQL scripts
@@ -78,6 +73,22 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
 To run SQL scripts as part of a pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent cannot communicate with Azure SQL Database.
 
 The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
+
+### ARM
+
+```powershell
+[CmdletBinding(DefaultParameterSetName = 'None')]
+param
+(
+  [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
+  [String] $AzureFirewallName = "AzureWebAppFirewall"
+)
+$agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
+New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $
+```
+
+### Classic
 
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
@@ -110,6 +121,21 @@ else
 
 The following Powershell script removes firewall rules. You can check-in this script as `RemoveAzureFirewall.ps1` into your repository.
 
+### ARM
+
+```powershell
+[CmdletBinding(DefaultParameterSetName = 'None')]
+param
+(
+  [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroup,
+  [String] $AzureFirewallName = "AzureWebAppFirewall"
+)
+Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
+```
+
+### Classic
+
 ```powershell
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param
@@ -126,9 +152,8 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 }
 ```
 
-# [YAML](#tab/yaml)
-
-::: moniker range="azure-devops"
+#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
@@ -164,16 +189,16 @@ steps:
     ScriptArguments: '$(ServerName)'
     azurePowerShellVersion: LatestVersion
 ```
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-YAML is not supported in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+::: moniker range="< azure-devops-2019"
 
+YAML pipelines aren't available in TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
@@ -182,8 +207,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 - Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
 - Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
 
----
-
+* * *
 ## Azure service connection
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
@@ -206,9 +230,8 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 You may choose to deploy only certain builds to your Azure database.
 
-# [YAML](#tab/yaml)
-
-::: moniker range="azure-devops"
+#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -233,14 +256,13 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
@@ -250,8 +272,7 @@ In your release pipeline you can implement various checks and conditions to cont
 
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
----
-
+* * *
 ## Additional SQL actions
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
@@ -332,7 +353,7 @@ Exports a live database, including database schema and user data, from SQL Serve
 
 ```command
 SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /SourceServerName:"<ServerName>.database.windows.net"
-/SourceDatabaseName:"<DatabseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
+/SourceDatabaseName:"<DatabaseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
 ```
 
 **Example:**

@@ -5,8 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
-ms.manager: shasb
-ms.author: shasb
+ms.manager: jillfra
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---
@@ -18,8 +19,6 @@ monikerRange: '> tfs-2018'
 Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
 
-See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust for build and push](../../build/content-trust.md).
-
 ::: moniker range="> tfs-2018"
 
 ## Container registry types
@@ -28,7 +27,7 @@ See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.</td></tr>
+<tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a> to manually set up the connection.</td></tr>
 <tr><td><code>azureContainerRegistry</code><br/>(Azure container registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
 </table>
 
@@ -52,7 +51,7 @@ The **containerregistrytype** value is required when using any container registr
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td><td>(Required) [Docker registry service connection](../../library/service-endpoints.md).</td></tr>
+<tr><td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td><td>(Required) <a href="../../library/service-endpoints.md" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md)">Docker registry service connection</a>.</td></tr>
 </table>
 
 This YAML example specifies a container registry other than ACR where **Contoso**

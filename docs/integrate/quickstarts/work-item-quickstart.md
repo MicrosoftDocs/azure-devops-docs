@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 06/27/2017
 ---
 
@@ -20,7 +20,7 @@ A common scenario in Azure DevOps Services is to fetch work items using queries.
 To work on this Quickstart, you'll need the following prerequisites:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
-* A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
+* A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 ## Create a C# project in Visual Studio
@@ -31,12 +31,12 @@ To learn about C# programming within Visual Studio, find the [Visual Studio C# p
 There are a few things happening in the code sample below:
 
 1. Authenticating
-    0. Create credentials using your PAT
-    0. Generate the client
-1. Get the work items
-    0. Create the query you want to use
-    0. Get the results for that query
-    0. Get each of the work items by ID
+   1. Create credentials using your PAT
+   2. Generate the client
+2. Get the work items
+   1. Create the query you want to use
+   2. Get the results for that query
+   3. Get each of the work items by ID
 
 ## C# code snippet
 ```cs
@@ -76,8 +76,8 @@ public class ExecuteQuery
     /// Execute a WIQL query to return a list of bugs using the .NET client library
     /// </summary>
     /// <returns>List of Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
-    public async List<WorkItem> RunGetBugsQueryUsingClientLib()
-    {
+    public async Task<List<WorkItem>> RunGetBugsQueryUsingClientLib()
+    {        
         Uri uri = new Uri(_uri);
         string personalAccessToken = _personalAccessToken;
         string project = _project;

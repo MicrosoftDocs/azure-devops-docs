@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Forks
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
@@ -60,11 +60,11 @@ This will isolate their changes from yours until you've had a chance to vet the 
 <a name="create-fork" />
 ### Create the fork
 
-0. Navigate to the repository to fork, and choose **Fork**.
+1. Navigate to the repository to fork, and choose **Fork**.
 
-0. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
+2. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
 
-0. Choose **Fork** to create the fork.
+3. Choose **Fork** to create the fork.
 
 ![Create new fork](_img/forks/create-new-fork.png)
 

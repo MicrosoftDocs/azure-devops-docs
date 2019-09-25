@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Find and view changesets
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 
@@ -69,39 +69,39 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 ## Search for changesets
 
-1.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), on the menu bar, choose **File**, **Source Control**, **Find**, **Find Changesets**.
+1. In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), on the menu bar, choose **File**, **Source Control**, **Find**, **Find Changesets**.
 
-    The **Find Changesets** dialog box appears.
+   The **Find Changesets** dialog box appears.
 
-    ![Find Changesets dialog box](_img/find-view-changesets/IC612255.png)
+   ![Find Changesets dialog box](_img/find-view-changesets/IC612255.png)
 
-2.  (Optional) Next to the **Containing File **box, choose **Browse**.
+2. (Optional) Next to the <strong>Containing File **box, choose **Browse</strong>.
 
-3.  (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
+3. (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
 
-4.  (Optional) In the **Range** section, choose one of the following options:
+4. (Optional) In the **Range** section, choose one of the following options:
 
-    -   **All changes**   Retrieves all changesets that were applied to that file or folder.
+   -   **All changes**   Retrieves all changesets that were applied to that file or folder.
 
-    -   **Changeset number**   Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
+   -   **Changeset number**   Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
 
-    -   **Created date**   Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
+   -   **Created date**   Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
 
-5.  Choose **Find**.
+5. Choose **Find**.
 
-    Changesets that match your criteria appear in the **Results** list.
+   Changesets that match your criteria appear in the **Results** list.
 
-6.  Right-click the changeset for which you want information, and select **Changeset Details...**
+6. Right-click the changeset for which you want information, and select **Changeset Details...**
 
-    The **Details for Changeset** dialog box appears.
+   The **Details for Changeset** dialog box appears.
 
-    ![Details for Changeset dialog box](_img/find-view-changesets/IC615597.png)
+   ![Details for Changeset dialog box](_img/find-view-changesets/IC615597.png)
 
-7.  In the **Details for Changeset** dialog box, view the change types that were added and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
+7. In the **Details for Changeset** dialog box, view the change types that were added and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
 
-8.  Close the **Details for Changeset** dialog box.
+8. Close the **Details for Changeset** dialog box.
 
-9.  Choose **OK**.
+9. Choose **OK**.
 
 ## Work with changesets
 

@@ -17,20 +17,20 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to set permissions to view or author reports.  
+This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
 
 [![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)
 [![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
 [![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+> [!IMPORTANT]
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json).
 
 
 Now that you've uploaded reports, you'll want to enable members of your team to view or manage them. Also, to create or modify reports, you'll need to grant them access to read databases. 
 
-##Add accounts to predefined roles to view or manage reports
+## Add accounts to predefined roles to view or manage reports
 Add report viewers to the **Browser** role. Add TFS report authors to the **Team Foundation Content Manager** role.
 
 > [!TIP]    
@@ -55,7 +55,7 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 4. Add the account name and select their role. 
  ![Assign user to a role in Report Manager](_img/IC665040.png)
 
-##Add report authors to database roles
+## Add report authors to database roles
 If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube need only read access to the cube. 
 
 1. If you aren't an administrator for the TFS database, [get added as one](/azure/devops/server/admin/add-administrator-tfs). 
@@ -88,12 +88,12 @@ If members need to create or customize reports, add their accounts to the **TfsW
 > Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  
 
 
-##Try this next
+## Try this next
  
 - [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
 
 
-##Related notes
+## Related notes
  
 - [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)  
 

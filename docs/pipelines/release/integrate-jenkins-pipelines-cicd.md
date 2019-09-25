@@ -4,7 +4,7 @@ description: Set up continuous integration (CI) and continuous deployment (CD) f
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.author: ahomer
+ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
 ms.manager: jillfra
@@ -44,7 +44,7 @@ Azure using Azure Pipelines.
 ## Before you begin
 
 * You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
-  Bitbucket Cloud, GitLab, or any another source control provider that Jenkins can interact with.
+  Bitbucket Cloud, or any another source control provider that Jenkins can interact with.
 * You'll need a Jenkins server where you run your CI builds. You can quickly
   [set up a Jenkins server on Azure](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template). 
 * You'll need a Jenkins project that builds you app. For example, 
@@ -60,7 +60,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/en-us/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -75,7 +75,7 @@ and select the default version and source alias.
 
 For more information, see [Jenkins artifacts](artifacts.md#jenkins).
 If you are not familiar with the general concepts in this section, see
-[Creating a release pipeline](../get-started-yaml.md)
+[Creating a release pipeline](../create-first-pipeline.md)
 and [Release artifacts and artifact sources](artifacts.md).
 
 ## Define the deployment steps
@@ -83,8 +83,7 @@ and [Release artifacts and artifact sources](artifacts.md).
 Add the tasks you require to deploy your app to your chosen target in the **Agent job** section in the **Tasks** page
 of your release pipeline. For example, add the **Azure App Service Deploy** task to deploy a web app. 
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 Add the **Azure App Service Deploy** task YAML code to a job in the  `.yml` file at the root of the repository.
@@ -117,8 +116,7 @@ YAML builds aren't yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 1. In the **Tasks** page of your release pipeline, choose the **+**
   (plus sign) in the **Agent job** section.
 
@@ -127,10 +125,9 @@ YAML builds aren't yet available on TFS.
 
 1. Save the pipeline.
 
-For an example of using the designer, see [Deploy an Azure Web App](../targets/webapp.md?tabs=designer).
+For an example of using the classic editor, see [Deploy an Azure Web App](../targets/webapp.md?tabs=classic).
 
----
-
+* * *
 Whenever you trigger your Azure release pipeline, the artifacts published by the Jenkins CI job
 are downloaded and made available for your deployment. You get full traceability of your workflow,
 including the commits associated with each job.
@@ -171,13 +168,13 @@ to your Jenkins Server, you can trigger a release for an Azure pipeline from a J
 1. Leave **username** empty and enter your PAT as the password.
 
 1. Select the Azure DevOps project and the release definition to trigger.
- 
+
 Now a new CD release will be triggered every time your Jenkins CI job is completed.
 
 # See also
 
 * [Artifacts](artifacts.md)
-* [Stages](environments.md)
+* [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](../yaml-schema.md)
 

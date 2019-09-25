@@ -7,9 +7,9 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/07/2018
+ms.author: ronai
+author: RoopeshNair
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -182,16 +182,15 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
   The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
   Also see [UI testing considerations](ui-testing-considerations.md).
-<!--
-For example,  
-
+  <!--
+  For example,  
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```
--->
+  -->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and release agents](../agents/agents.md#account) and [UI testing considerations](ui-testing-considerations.md).
+  See [Build and release agents](../agents/agents.md#interactive-or-service) and [UI testing considerations](ui-testing-considerations.md).
 
 <a name="include-test"></a>
 ## Include the test in a release
@@ -232,7 +231,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
      ![Configuring the variables](_img/continuous-test-selenium/continuous-test-selenium-08a.png)
 
-1. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
+2. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
 
    * In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
      Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
@@ -242,12 +241,12 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
   
      You can find a task more easily by using the search textbox.
 
-1. In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
+3. In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
    Select the **Visual Studio Test** task and choose **Add**.
 
-  ![Adding a Visual Studio Test task](_img/continuous-test-selenium/continuous-test-selenium-09a.png)
+   ![Adding a Visual Studio Test task](_img/continuous-test-selenium/continuous-test-selenium-09a.png)
 
-1. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
+4. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
    task to **Installed by Tools Installer**.
 
@@ -255,14 +254,14 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
-1. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
+5. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.
 
    ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
 
    <a name="view-results"></a>
 
-1. To view the test results, open the release summary from the **Releases** page
+6. To view the test results, open the release summary from the **Releases** page
    and choose the **Tests** link.
 
 ## Next steps

@@ -22,7 +22,7 @@ You can resolve most errors using the procedures provided in this article.
  
 
 <a name="tf208000"></a> 
-##TF208000: Duplicate titles  
+## TF208000: Duplicate titles  
 
 If you add a value to multiple Title columns of a work item, when you try to publish the tree, the error message **TF208000** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link.  
   
@@ -76,7 +76,7 @@ If the first work item in the list has no value in the **Title 1** column, the e
   
     2.  If the first work item should be lower in the list, move the correct work item to the top of the list.  
   
-         For more information about how to move work items, see [Bulk add work items with Excel](http://msdn.microsoft.com/67595fec-a872-43e3-b934-9dd1a766218c).  
+         For more information about how to move work items, see [Bulk add work items with Excel](https://msdn.microsoft.com/67595fec-a872-43e3-b934-9dd1a766218c).  
   
 3.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
@@ -141,6 +141,6 @@ This message indicates that you can publish the changes that you made to the fie
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Work in Excel or Project](track-work.md)
 
-###Required permissions  
+### Required permissions  
   
 To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 

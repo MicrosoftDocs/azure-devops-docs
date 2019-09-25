@@ -1,9 +1,11 @@
-- name: Integrate with other services
-  href: index.md
-- name: Overview
+- name: Service Hooks
+  href: index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json
+- name: Integrate with service hooks
   href: overview.md
 - name: Quickstarts
   items:
+  - name: Create a service hook with Grafana
+    href: services/grafana.md
   - name: Create a service hook with Slack
     href: services/slack.md
   - name: Create a service hook with Jenkins
@@ -24,9 +26,4 @@
   items:
   - name: Troubleshoot and FAQs
     href: troubleshoot.md
-- name: Resources
-  items:
-  - name: Visual Studio Marketplace
-    href: https://marketplace.visualstudio.com/
-  - name: Billing information
-    href: ../organizations/billing/index.md
+

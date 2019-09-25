@@ -9,7 +9,7 @@ ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -57,11 +57,11 @@ The Build Summary lists builds and provides information about test results, test
   
  You can filter the Build Summary report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the build definitions by specifying the platforms, configurations, build definitions, build qualities, or build progress to include in the report.  
+- Filter the build definitions by specifying the platforms, configurations, build definitions, build qualities, or build progress to include in the report.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Build Management Activities  
  For the Build Summary report to be useful, team members must perform the following activities to manage builds:  
@@ -103,17 +103,17 @@ The Build Summary lists builds and provides information about test results, test
 ### Questions That the Report Answers  
  You can use this report to find answers to these questions:  
   
--   What is the status of all builds over time?  
+- What is the status of all builds over time?  
   
--   Which builds succeeded?  
+- Which builds succeeded?  
   
--   Which builds have a significant number of changes to the code?  
+- Which builds have a significant number of changes to the code?  
   
--   Which builds are ready to install?  
+- Which builds are ready to install?  
   
--   How much of the code did the tests execute?  
+- How much of the code did the tests execute?  
   
- The Build Summary report does not indicate the causes of problems, but it points to where you can look to determine the root cause of problems. This report also does not indicate the size or significance of build problems.  
+  The Build Summary report does not indicate the causes of problems, but it points to where you can look to determine the root cause of problems. This report also does not indicate the size or significance of build problems.  
   
 ### Healthy Version of Report  
  A healthy Build Summary report show the following indicators:  
@@ -140,18 +140,18 @@ The Build Summary lists builds and provides information about test results, test
 ##  <a name="Changing"></a> Filtering the Report  
  You can filter the Build Summary report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the set of builds that are represented in the report by specifying the platform, configuration, build definition, build quality, and build progress to include in the report.  
+- Filter the set of builds that are represented in the report by specifying the platform, configuration, build definition, build quality, and build progress to include in the report.  
   
-    > [!NOTE]
-    >  You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
+  > [!NOTE]
+  >  You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
   
- The following illustration shows the available filters:  
+  The following illustration shows the available filters:  
   
- ![Filters for Build Summary report](_img/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
+  ![Filters for Build Summary report](_img/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
   
- You must apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
+  You must apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
   
 #### To filter the builds that appear in the report  
   

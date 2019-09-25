@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -27,15 +27,12 @@ When you create your project, a team of the same name is automatically created. 
 <tr>
 <td width="40%">
 
-**Single project and team defined within an organization or collection**  
-![Single collection-project-team conceptual image](_img/about-projects/project-concept.png)  
-</td>
+<strong>Single project and team defined within an organization or collection</strong><br/><img src="_img/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
 
 <td width="60%">
 
-**Multiple projects and teams defined within organization or collection**
-![Scaled collection-project-team conceptual image](_img/about-projects/multiple-projects-concept.png)  
-
+<strong>Multiple projects and teams defined within organization or collection</strong>
+<img src="_img/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
 </td>
 </tr>
 </tbody>
@@ -85,8 +82,8 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](_img/about-projects/projects-hub-vert.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects](_img/about-projects/projects-hub-vert.png)  
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -96,13 +93,13 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
 
@@ -110,8 +107,8 @@ You can view the projects defined for your organization by opening the **Project
 
 1. Choose the name of the server.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -182,7 +179,7 @@ You can configure and customize most services and applications to support your b
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
 - **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/languages/dotnet-core.md#run-your-tests).
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -192,7 +189,7 @@ You can configure and customize most services and applications to support your b
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 - **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/languages/dotnet-core.md#run-your-tests).
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -224,7 +221,7 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
-- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).

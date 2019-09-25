@@ -43,17 +43,20 @@ Create a public project, make an existing project public, or work in a public pr
 * [Search the code base](code-search-public.md)  
 * [Search work items](work-item-search-public.md)
 
+## Tutorials
+
+* [Create a Public Feed](../../artifacts/tutorials/share-packages-publicly.md)
+
 ## Reference
 
 * [Default roles and permissions](default-roles-access-public.md)
 * [Terms of service](service-limits-public.md)
 * [Feature differences for non-members](feature-differences.md)
-* [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 
 ## Resources
 
-- [Git Repositories](../../git/index.md)  
-- [Work Items](../../boards/work-items/index.md)  
 - [Manage projects](../projects/index.md)  
-- [Process Customization](../settings/work/customize-process.md)
+- [Azure Repos](../../repos/index.md)  
+- [Azure Boards](../../boards/index.md)  
 

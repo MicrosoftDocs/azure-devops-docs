@@ -62,13 +62,13 @@ https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
    ::: moniker range=">= azure-devops-2019"  
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)
-   ::: moniker-end
+   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)  
+   ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)
+   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
 
-   ![View organization level notifications page](_img/view-organization-notification-hub.png)
+   ![View organization level notifications page](_img/view-organization-notification-hub.png)  
 
    ::: moniker-end
 
@@ -77,25 +77,24 @@ https://dev.azure.com/{organization}/_admin/_notifications
 Select the Notifications page under project settings.
 
    ::: moniker range=">= tfs-2018"  
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
-
+   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+   ::: moniker-end  
    ::: moniker range="<= tfs-2018"  
 
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
 
    ![View team level notifications page](_img/view-team-notification-hub.png)
-
+   ::: moniker-end
 
 ## Navigating to the personal notifications page
 
-Select the Notifications page under your profile.
+Select the Notifications page under your profile.  
 
    ::: moniker range=">= azure-devops-2019"  
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)
-   ::: moniker-end
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
 
-   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
-
-   ::: moniker range="<= tfs-2018"
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
-   ::: moniker-end
+   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
+   ::: moniker-end  

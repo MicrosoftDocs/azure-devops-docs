@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -17,10 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
-**NOTE**: Release Management has now been combined with the Build features
-of Azure Pipelines and Team Foundation Server (TFS) in the new 
-**Pipelines** hub. For details of new features and changes, see
-[Team Foundation Build and Release release notes](2017.md).
+> [!NOTE]
+> Release Management has now been combined with the Build features
+> of Azure Pipelines and Team Foundation Server (TFS) in the new 
+> **Pipelines** hub. For details of new features and changes, see
+> [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -28,29 +29,29 @@ of Azure Pipelines and Team Foundation Server (TFS) in the new
 The following changes, categorized by release date, were added to Release Management:
 
 * **Team Foundation Server**
- - [November 16, 2016 Update](#update-nov16)
- - [Mar 3, 2016 Update](#update-mar3-16)
- - [Feb 12, 2016 Update](#update-feb12-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [Mar 3, 2016 Update](#update-mar3-16)
+  - [Feb 12, 2016 Update](#update-feb12-16)
 * **Azure Pipelines**
- - [November 23, 2016 Update](#update-nov23-16)
- - [November 16, 2016 Update](#update-nov16)
- - [October 12, 2016 Update](#update-oct12-16)
- - [September 21, 2016 Update](#update-sep21-16)
- - [September 2, 2016 Update](#update-sep2-16)
- - [July 28, 2016 Update](#update-jul28-16)
- - [June 24, 2016 Update](#update-jun24-16)
- - [May 23, 2016 Update](#update-may23-16)
- - [April 26, 2016 Update](#update-apr26-16)
- - [April 8, 2016 Update](#update-apr8-16)
- - [March 15, 2016 Update](#update-mar15-16)
- - [February 24, 2016 Update](#update-feb24-16)
- - [February 11, 2016 Update](#update-feb11-16)
- - [December 1, 2015 Update ](#update-dec1-15)
- - [November 18, 2015 Update](#update-nov18-15)
- - [November 03, 2015 Update](#update-nov3-15)
- - [October 19, 2015 Update ](#update-oct19-15)
- - [September 21, 2015 Update ](#update-sep21-15)
- - [September 4, 2015 Update](#update-sep4-15)
+  - [November 23, 2016 Update](#update-nov23-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [October 12, 2016 Update](#update-oct12-16)
+  - [September 21, 2016 Update](#update-sep21-16)
+  - [September 2, 2016 Update](#update-sep2-16)
+  - [July 28, 2016 Update](#update-jul28-16)
+  - [June 24, 2016 Update](#update-jun24-16)
+  - [May 23, 2016 Update](#update-may23-16)
+  - [April 26, 2016 Update](#update-apr26-16)
+  - [April 8, 2016 Update](#update-apr8-16)
+  - [March 15, 2016 Update](#update-mar15-16)
+  - [February 24, 2016 Update](#update-feb24-16)
+  - [February 11, 2016 Update](#update-feb11-16)
+  - [December 1, 2015 Update](#update-dec1-15)
+  - [November 18, 2015 Update](#update-nov18-15)
+  - [November 03, 2015 Update](#update-nov3-15)
+  - [October 19, 2015 Update](#update-oct19-15)
+  - [September 21, 2015 Update](#update-sep21-15)
+  - [September 4, 2015 Update](#update-sep4-15)
 
 <a name="update-nov23-16"></a>
 ### November 23, 2016 Update (Azure Pipelines)
@@ -388,7 +389,7 @@ Two new features make it easier to deploy applications to Azure:
   and so has access to all resources within the subscription. For more details, see
   [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
- ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
+  ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
 
 * **Deployment to national Azure clouds**. Use the new **Environment** setting in an
   Azure Classic service connection to target a specific Azure cloud, including pre-defined
@@ -396,7 +397,7 @@ Two new features make it easier to deploy applications to Azure:
   For more details, see
   [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic).
 
- ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
+  ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
 
 <a name="jul28-softdelete"></a>
 **Soft delete of releases**
@@ -439,7 +440,7 @@ Two new features make it easier to work with artifacts and artifact sources:
   name of the build pipeline, you can edit the source alias to reflect the name of the
   build pipeline.
 
- For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
+  For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
 
 * A number of variables of the format Build.\* (such as Build.BuildId and Build.BuildNumber)
   are exposed for use in task parameters. When multiple sources are associated with a release,
@@ -691,8 +692,9 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-_**NOTE**: This feature is being rolled out over time to all regions;
-therefore, it may not yet be available in your region._
+> [!NOTE]
+> This feature is being rolled out over time to all regions;
+> therefore, it may not yet be available in your region.
 
 <a name="apr26-tfsonprem"></a>
 **TFVC and TF Git as artifact sources**
@@ -843,17 +845,17 @@ to satisfy these requirements. The extension adds
 a number of tasks to your task catalog:
 
 * The **Tokenization** task helps in replacing
-special tokens in any configuration file with the
-required environment-specific values at release time.
+  special tokens in any configuration file with the
+  required environment-specific values at release time.
 
- ![Inline Powershell script](_img/rm-archived/release-notes-12.png)
+  ![Inline Powershell script](_img/rm-archived/release-notes-12.png)
 
 * The **Rollback** task that checks whether any of
- the previous tasks in the environment have failed,
- and provides that information to your custom
- PowerShell script. Based on information about
- which task has failed, your custom script can run
- appropriate cleanup logic.
+  the previous tasks in the environment have failed,
+  and provides that information to your custom
+  PowerShell script. Based on information about
+  which task has failed, your custom script can run
+  appropriate cleanup logic.
 
 <a name="update-mar3-16"></a>
 ### Mar 3, 2016 Update (Team Foundation Server)
@@ -1055,7 +1057,7 @@ process, or multiple releases may be queued up on a
 production environment awaiting approval after they
 have passed QA. Queuing policies allow you to deploy in
 parallel, deploy in sequence, or just deploy the latest one.
-See [Queuing policies](../../release/environments.md#queuing-policies)
+See [Queuing policies](../../process/stages.md#queuing-policies)
 
 ![Configuring queuing policies](_img/rm-archived/release-notes-04.png)
 

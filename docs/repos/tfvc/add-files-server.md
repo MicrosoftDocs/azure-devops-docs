@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 03/20/2018
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Add files to the server
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 
@@ -132,13 +132,13 @@ You can also manually add files to version control.
 >[!IMPORTANT]
 >Make sure this folder is checked in before you proceed. If you are creating the folder now, open its context menu and choose **Check In**, and then check in the new folder before proceeding.
 
-3.  Drag the folders or files from Windows Explorer (or File Explorer) into the folder in Source Control Explorer.
+3. Drag the folders or files from Windows Explorer (or File Explorer) into the folder in Source Control Explorer.
 
-4.  When the **Add to Source Control** dialog box appears, make sure all the files you want to add are selected, and then choose **Include item(s)**.
+4. When the **Add to Source Control** dialog box appears, make sure all the files you want to add are selected, and then choose **Include item(s)**.
 
-5.  Choose **Finish**.
+5. Choose **Finish**.
 
-6.  In Team Explorer, when the **Pending Changes** page appears, make sure the binaries that you want to add appear in the **Included Changes** section. Choose **Check In**.
+6. In Team Explorer, when the **Pending Changes** page appears, make sure the binaries that you want to add appear in the **Included Changes** section. Choose **Check In**.
 
 ## Leverage third-party binaries that your code does not build
 

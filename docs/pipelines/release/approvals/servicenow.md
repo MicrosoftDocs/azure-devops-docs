@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
@@ -177,7 +177,7 @@ and [Update change request states](https://docs.servicenow.com/bundle/istanbul-i
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also

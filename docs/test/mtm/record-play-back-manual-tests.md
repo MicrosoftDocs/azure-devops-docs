@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -51,7 +51,7 @@ a web-based app, install the app on a test server,
 and run Microsoft Test Manager on the machine where 
 you'll run your web browser.
 
-To get Microsoft Test Manager, install [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/)
+To get Microsoft Test Manager, install [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 or [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/)
 
 ### Run a test case

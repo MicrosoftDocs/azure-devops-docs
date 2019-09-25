@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 02/19/2019  
+ms.date: 09/19/2019  
 ---
 
 # Wiki Git repository files and file structure
@@ -43,7 +43,7 @@ The wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name.  
+Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the wiki changes over time. 
 
 [!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
 

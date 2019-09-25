@@ -1,36 +1,82 @@
 ---
-title: Get started with Azure Pipelines 
-ms.custom: seodec18
-description: Sign up and get started with Azure Pipelines 
+title: Learn how to build and deploy your apps 
+titleSuffix: Azure Pipelines
+description: Use Azure Pipelines to build and deploy your apps
 ms.prod: devops
-ms.technology: devops-new-user
+ms.technology: devops-cicd
+ms.assetid:  
+ms.manager: jillfra
+ms.author: elbatk
+author: elbatk
 ms.topic: overview
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: 'azure-devops'
-ms.date: 09/05/2018
+ms.date: 05/06/2019
 ---
 
-# Get started with Azure Pipelines  
 
-**Azure Pipelines**
+# Azure Pipelines
 
-Azure Pipelines is a fully featured continuous integration (CI) and continuous delivery (CD) service. It works with your preferred Git provider and can deploy to most major cloud services, which include Azure services. Start with your code on GitHub, GitLab, Bitbucket, or [Azure Repos](/azure/devops/repos/index). Then you can automate the build, test, and deployment of your code to Microsoft Azure, Google Cloud, or Amazon cloud services.
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
-Use Azure Pipelines to configure and automate your build and delivery tools and environments in YAML (as infrastructure as code). Or you can use the visual designer in your Azure DevOps web portal at [https://dev.azure.com](https://dev.azure.com). Azure Pipelines documentation shows you both approaches.
+Azure Pipelines is a fully featured continuous integration (CI) and continuous delivery (CD) service. It works with your preferred Git provider and can deploy to most major cloud services, which include Azure services. Start with your code on GitHub, GitHub Enterprise Server, GitLab, Bitbucket Cloud, or [Azure Repos](/azure/devops/repos/index). Then you can automate the build, testing, and deployment of your code to Microsoft Azure, Google Cloud Platform, or Amazon Web Services.
 
-Follow the links in this short guide to sign up and use Azure Pipelines. 
+Use Azure Pipelines to configure and automate your build and delivery tools and environments in YAML (as configuration as code). Or you can use the classic editor in the Azure DevOps web portal at [https://dev.azure.com](https://dev.azure.com). Azure Pipelines documentation shows you both approaches.
 
-## What is Azure Pipelines?
+## Videos 
 
-For more information on Azure Pipelines, see [What is Azure Pipelines?](what-is-azure-pipelines.md). See how you can use it to automate and streamline the build, test, and deployment of your code projects. 
+#### Build and deploy your code with Azure Pipelines
 
-## Use Azure Pipelines
-
-Quickly learn the different ways you can [use Azure Pipelines](pipelines-get-started.md) to automate your builds and releases.
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 
 
-## Key concepts for Azure Pipelines
+#### Continuously build GitHub projects with Azure Pipelines
 
-The [Key concepts for Azure Pipelines guide](key-pipelines-concepts.md) explains how Azure Pipelines works. It also explains key terms and concepts.  
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+
+## 5-Minute Quickstarts  
+
+- [Create your first pipeline](../create-first-pipeline.md)
+- [Customize your pipeline](../customize-pipeline.md)
+
+## Tutorials
+
+- [Build GitHub repositories](../repos/github.md)
+- [Build Azure Repos Git repositories](../repos/azure-repos-git.md)
+- [Build multiple branches](../build/ci-build-git.md)
+- [Set up a multi-stage release](../release/define-multistage-release-process.md)
+
+
+## Concepts 
+      
+- [Build and release agents](../agents/agents.md)
+- [Agent pools](../agents/pools-queues.md)
+- [Microsoft-hosted agents](../agents/hosted.md)
+
+
+## How-to Guides
+
+- [Java to web App](../ecosystems/java-webapp.md)
+- [Java to Azure Function](../ecosystems/java-function.md)
+- [Cross-platform scripts](../scripts/cross-platform-scripting.md)
+- [Run a PowerShell script](../scripts/powershell.md)
+- [Run Git commands](../scripts/git-commands.md)
+
+## Troubleshooting
+
+- [Troubleshoot build and release](../troubleshooting.md)
+- [Debug deployment issues](../release/variables.md#debug-mode)
+- [Troubleshoot Azure connections](../release/azure-rm-endpoint.md)
+
+## Reference 
+
+- [YAML schema](../yaml-schema.md)
+- [Tasks](../tasks/index.md)
+
+
+## Resources 
+
+- [Azure Repos](../../repos/index.md)
+- [Azure Artifacts](../../artifacts/index.md)

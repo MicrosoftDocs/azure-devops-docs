@@ -9,7 +9,8 @@ ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/08/2018
 ---
@@ -37,10 +38,7 @@ In this article you'll learn how to:
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 [!INCLUDE [temp](../_shared/open-queries.md)] 
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -58,11 +56,12 @@ The buttons to move up or down within the query results list are inside the work
 ![Triage query results ](_img/triage-queries/scrum-active-bug-triage-mode-co.png)
 
 > [!TIP]    
-> The same buttoms to move up or down within a work item list are available from a **Work Items** page when you choose a work item. See 
+> The same buttons to move up or down within a work item list are available from a **Work Items** page when you choose a work item. See 
 ::: moniker-end
 
 
 <a id="save-bulk-changes" />
+
 ## Bulk update and save changes to work items 
 
 You can update several work items through the triage process, and then do a bulk save when you're finished. 

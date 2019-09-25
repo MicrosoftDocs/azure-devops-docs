@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Copy changes with cherry-pick
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
@@ -33,19 +33,17 @@ In this tutorial you learn how to:
 
 ## Cherry-pick a commit
 
-# [Visual Studio](#tab/visual-studio)
-
-0. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
-0. Right-click the branch containing the changes you want and select **View History...**. 
-0. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
+#### [Visual Studio](#tab/visual-studio/)
+1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
+2. Right-click the branch containing the changes you want and select **View History...**. 
+3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
     Visual Studio copies the changes made in that commit into a new one on your current branch.
     ![Cherry pick from inside Visual Studio](_img/vscherrypick.gif)
 
 Repeat this process for each commit you need to bring over to your current branch.
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 Use `git log` to find the commit ID of the commit whose changes you want to copy.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
@@ -56,7 +54,7 @@ Date:   Wed May 18 21:10:39 2016 +0000
 
 add complex query parsing logic</font>
 </pre>
- 
+
 Once you have the commit ID, you pass it to `git cherry-pick` to copy the changed into your current branch.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
@@ -80,8 +78,7 @@ If you need to cherry-pick a range of commits, you can use two commit IDs separa
  1 file changed, 32 insertions(+), 15 deletions(-)</font>
 </pre>
 
----
-
+* * *
 ## Next steps
 
 > [!div class="nextstepaction"]

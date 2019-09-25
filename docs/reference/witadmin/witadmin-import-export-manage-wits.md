@@ -29,7 +29,7 @@ You can manage work item types for a project by using the following **witadmin**
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 
 
-**Requirements**  
+## Prerequisites  
   
 For the project where the work item types are defined, you must have the following permissions set:   
 -   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
@@ -67,15 +67,17 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
- When you use the **destroywitd** command, it destroys all the following objects:  
+
+When you use the **destroywitd** command, it destroys all the following objects:  
   
--   The work item type   
--   All work items of that type    
--   Corresponding entries in the work item tables, the long text tables, and the link tables   
--   Objects in the work item type metadata cache  
+- The work item type   
+- All work items of that type    
+- Corresponding entries in the work item tables, the long text tables, and the link tables   
+- Objects in the work item type metadata cache  
   
 ## Examples  
- Unless otherwise specified, the following values apply in each example:  
+
+Unless otherwise specified, the following values apply in each example:  
   
 -   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
 -   Project name: AdventureWorks    
@@ -84,34 +86,38 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
 -   Default encoding: UTF-8  
   
 ### Export the definition of a WIT  
- The following command exports the definition for myworkitem to the file, myworkitems.xml.  
+
+The following command exports the definition for myworkitem to the file, myworkitems.xml.  
   
 ```  
 witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem  
 ```  
   
- The following example exports the work item by using Unicode (UTF-7) encoding.  
+The following example exports the work item by using Unicode (UTF-7) encoding.  
   
 ```  
 witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /e:utf-7  
 ```  
   
 ### Export the definition of a WIT and its referenced global lists  
- The following example exports the work item type and its referenced global lists.  
+
+The following example exports the work item type and its referenced global lists.  
   
 ```  
 witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /exportgloballists  
 ```  
   
 ### List the definition of a WIT  
- The following example displays the definition of the work item type the Command Prompt window.  
+
+The following example displays the definition of the work item type the Command Prompt window.  
   
 ```  
 witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /n:myworkitem  
 ```  
   
 ### Import the definition of WITs  
- The following example imports the work item definition from the XML file.  
+
+The following example imports the work item definition from the XML file.  
   
 ```  
 witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks  
@@ -127,13 +133,16 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 ## Q & A  
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
- **A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+
+**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
   
- Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
+Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
 <a name="color"></a> 
+
 ###  Q: How do I change the color associated with a WIT?  
- **A:** In the web portal, work items appear in query results and on the backlog and board pages of the Agile planning tools. To change the color associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../xml/process-configuration-xml-element.md).  
+
+**A:** In the web portal, work items appear in query results and on the backlog and board pages of the Agile planning tools. To change the color associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../xml/process-configuration-xml-element.md).  
   
  ![Color assignments to different work item types](_img/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
   
@@ -141,36 +150,38 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 **A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-	<TRANSITION from=" " to="New">  
-	   <FIELDS>  
-	     <FIELD refname="System.CreatedBy">  
-	          <VALIDUSER not="[Team Project Name]Project Valid Users" />  
-	     </FIELD>  
-	   </FIELDS>  
-	</TRANSITION>  	  
-```  
+> ```XML  
+>     <TRANSITION from=" " to="New">  
+>        <FIELDS>  
+>          <FIELD refname="System.CreatedBy">  
+>               <VALIDUSER not="[Team Project Name]Project Valid Users" />  
+>          </FIELD>  
+>        </FIELDS>  
+>     </TRANSITION>     
+> ```  
   
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:  
   
--  [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
--  Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
+- [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
+- Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<TRANSITION from=" " to="New">  
-   <FIELDS>  
-     <FIELD refname="System.CreatedBy">  
-         <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
-     </FIELD>  
-   </FIELDS>  
-</TRANSITION>  
-```  
+> ```XML 
+> <TRANSITION from=" " to="New">  
+>    <FIELDS>  
+>      <FIELD refname="System.CreatedBy">  
+>          <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
+>      </FIELD>  
+>    </FIELDS>  
+> </TRANSITION>  
+> ```  
 
 
 <a name="delete"></a>  
-###   Q: How do I delete a WIT?  
- **A:** To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use `witadmin destroywitd`, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use Impediment you can delete the WIT labeled Impediment from the Fabrikam Web Site project.  
+
+### Q: How do I delete a WIT?  
+
+**A:** To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use `witadmin destroywitd`, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use Impediment you can delete the WIT labeled Impediment from the Fabrikam Web Site project.  
   
 ```  
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment"   

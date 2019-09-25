@@ -1,23 +1,10 @@
 - name: Start using Azure Repos
-  href: index.md
-  items:
-  - name: "What is Azure Repos?"
-    href: what-is-repos.md
-  - name: Sign up and invite some teammates 
-    href: sign-up-invite-teammates.md
-  - name: Code with Git
-    href: code-with-git.md
-  - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/get-started/toc.json&bc=/azure/devops/repos/get-started/breadcrumb/toc.json
-  - name: Key concepts
-    href: key-concepts-repos.md
-- name: Resources
-  items:
-  - name: Visual Studio IDE
-    href: /visualstudio/
-  - name: Visual Studio Code 
-    href: https://code.visualstudio.com/docs
-  - name: Visual Studio for Mac
-    href: /visualstudio/mac
-  - name: Manage projects
-    href: ../../organizations/projects/index.md
+  href: index.md?toc=/azure/devops/repos/get-started/toc.json&bc=/azure/devops/repos/get-started/breadcrumb/toc.json 
+- name: "What is Azure Repos?"
+  href: what-is-repos.md
+- name: Sign up and invite some teammates 
+  href: sign-up-invite-teammates.md
+- name: Code with Git
+  href: code-with-git.md
+- name: Key concepts
+  href: key-concepts-repos.md

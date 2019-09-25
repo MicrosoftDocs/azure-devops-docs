@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -17,11 +17,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
+You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build.
 
 ## VMware connection
 
@@ -31,22 +29,28 @@ You need to first configure how Azure Pipelines connects to vCenter. You cannot 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
+
+You need to first configure how Azure DevOps Server connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
 1. Install the VMware vSphere Management 
-SDK to call VMware API functions that access vSphere
-web services. To install and configure the SDK on 
-the agent machine:
+   SDK to call VMware API functions that access vSphere
+   web services. To install and configure the SDK on 
+   the agent machine:
 
    * Download and install the latest 
      version of the Java Runtime Environment from 
-     [this location](http://aka.ms/downloadjre).
+     [this location](https://aka.ms/downloadjre).
 
-   * Go to [this location](http://aka.ms/vspheresdk)
+   * Go to [this location](https://aka.ms/vspheresdk)
      and sign in with your existing credentials or register
      with the website. Then download the **vSphere 6.0 
      Management SDK**.
@@ -66,10 +70,10 @@ the agent machine:
      path will be:  
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
-1. Install the [VMware extension ](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
+2. Install the [VMware extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
    from Visual Studio Marketplace into TFS or Azure Pipelines.
 
-1. Follow these steps to create a vCenter Server service connection in your project:
+3. Follow these steps to create a vCenter Server service connection in your project:
 
    * Open your Azure Pipelines or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
@@ -89,39 +93,39 @@ the agent machine:
        required to connect to the vCenter Server.
        Username formats such as **username**, **domain\\username**,
        **machine-name\\username**, and **.\\username** are supported.
-       UPN formats such as **username@domain.com** and built-in system 
+       UPN formats such as <strong>username@domain.com</strong> and built-in system 
        accounts such as **NT Authority\\System** are not supported.<p/>
 
 ## Managing VM snapshots
 
 Use the **VMware Resource Deployment** task from the VMware extension and configure the properties as follows to take snapshot of virtual machines, or to revert or delete them:
    
-   - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
+- **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
    
-   - **Action**: Select one of the actions: **Take Snapshot of Virtual Machines**, **Revert Snapshot of Virtual Machines**, or **Delete Snapshot of Virtual Machines**.
+- **Action**: Select one of the actions: **Take Snapshot of Virtual Machines**, **Revert Snapshot of Virtual Machines**, or **Delete Snapshot of Virtual Machines**.
    
-   - **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
+- **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
    
-   - **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
+- **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
    
-   - **Snapshot Name**: Enter the name of the snapshot. This snapshot must exist if you use the revert or delete action.
+- **Snapshot Name**: Enter the name of the snapshot. This snapshot must exist if you use the revert or delete action.
    
-   - **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
+- **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
    
-   - **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
+- **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
    
-   - **Description**: Optional. Enter a description for the **Take Snapshot of Virtual Machines** action, such as `$(Build.DefinitionName).$(Build.BuildNumber)`. This can be used to track the execution of the build or release that created the snapshot.
+- **Description**: Optional. Enter a description for the **Take Snapshot of Virtual Machines** action, such as `$(Build.DefinitionName).$(Build.BuildNumber)`. This can be used to track the execution of the build or release that created the snapshot.
    
-   - **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority.<p />
+- **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority.<p />
 
-   >To verify if a self-signed certificate is installed 
-   on the vCenter Server, open the VMware vSphere Web 
-   Client in your browser and check for a certificate
-   error page. The vSphere Web Client URL will be 
-   of the form `https://machine.domain/vsphere-client/`.
-   Good practice guidance for vCenter Server certificates 
-   can be found in the [VMware Knowledge Base](http://aka.ms/vcentercertificate)
-   (article 2057223).
+  >To verify if a self-signed certificate is installed 
+  on the vCenter Server, open the VMware vSphere Web 
+  Client in your browser and check for a certificate
+  error page. The vSphere Web Client URL will be 
+  of the form `https://machine.domain/vsphere-client/`.
+  Good practice guidance for vCenter Server certificates 
+  can be found in the [VMware Knowledge Base](https://aka.ms/vcentercertificate)
+  (article 2057223).
 
 ## Provisioning virtual machines
 

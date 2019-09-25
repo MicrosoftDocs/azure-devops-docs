@@ -9,7 +9,7 @@ Note that the updated variable value is scoped to the job being executed, and do
 Variable names are transformed to uppercase, and the characters "." and " " are replaced by "_".
 
 For example, `Agent.WorkFolder` becomes `AGENT_WORKFOLDER`.
-On Windows, you access this as `%AGENT_WORKFOLDER` or `$env:AGENT_WORKFOLDER`.
+On Windows, you access this as `%AGENT_WORKFOLDER%` or `$env:AGENT_WORKFOLDER`.
 On Linux and macOS, you use `$AGENT_WORKFOLDER`.
 
 > [!TIP]

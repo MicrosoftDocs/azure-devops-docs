@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -24,9 +24,9 @@ To automate your deployments, deploy the same way to multiple environments,
 and run deployment and validation scripts, follow these steps.
 For less complex scenarios, such as deploying to Azure websites or cloud services, 
 follow steps to set up continuous deployment from 
-**[TFVC](http://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
+**[TFVC](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
 or 
-**[Git](http://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso-git/)** 
+**[Git](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso-git/)** 
 instead.
 
 Before you start, you'll need:
@@ -34,9 +34,9 @@ Before you start, you'll need:
 * **An Azure DevOps organization**.
 * **A project**.
 * **Azure VMs**. If you need to create them, 
-  **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
+  **[here's how](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 
-  **[here](http://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
+  **[here](https://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 
@@ -100,7 +100,7 @@ along with the environments. You can add stages and environments, too.
 
    Each new build will trigger a release. You can also manually trigger a new release.
 
-###Q: How can I view and customize the deployment actions for each stage of my release?
+### Q: How can I view and customize the deployment actions for each stage of my release?
 
 **A**: In the Release Management client, go to **Configure Apps**, **vNext Release 
 Templates** and open your release template.
@@ -108,7 +108,7 @@ Learn more **[here](release-without-agents.md)**.
 
 ![Release Template Designer](_img/deploy-continuously-09.png)
 
-###Q: How can I use a different Azure Pipelines account for my releases?
+### Q: How can I use a different Azure Pipelines account for my releases?
 
 **A**: In the Release Management client, go to **Administration**, **Settings**, and edit the URL.
 

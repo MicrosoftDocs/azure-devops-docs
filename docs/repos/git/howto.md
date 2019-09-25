@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 #  Frequently Asked Git Questions
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ### Is there an easy way to get a remote branch downloaded into my local repository?
 
@@ -65,7 +65,7 @@ Checking out to a different branch in Git will affect the state of files on your
 that represent the state of your branch. If you attempt to change branches while you have uncommitted changes, those changes would be overwritten during the checkout. Git doesn't
 want you to accidentally lose your changes, so it prevents the checkout from happening. You can resolve this by:
 
-----
+---
 - Abandoning the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
 - Committing the changes. See [saving your work in Git with commits](commits.md). 
 - [Stashing](howto.md#stash) your current work, saving the changes for later and cleaning up the workspace to the last commit.    

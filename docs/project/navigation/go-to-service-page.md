@@ -82,19 +82,19 @@ Select configurations are made to teams through the team settings pages. For an 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
 
-0. Expand **Boards** and choose **Team configuration**. 
+1. Expand **Boards** and choose **Team configuration**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Team configuration](_img/go-to-app/team-configurations-new-nav.png)  
 
-0. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
+1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
-0. If you need to switch to a different team, use the team selector within the breadcrumbs.
+1. If you need to switch to a different team, use the team selector within the breadcrumbs.
    
 	> [!div class="mx-imgBorder"]  
 	> ![Team Configuration, Team breadcrumb](../../organizations/settings/_img/team-defaults/select-team-context.png) 
 
-0. To add a team administrator, add team members, or change the team profile, choose **Teams** from the vertical sidebar, and then choose the name of the team you want to configure. 
+1. To add a team administrator, add team members, or change the team profile, choose **Teams** from the vertical sidebar, and then choose the name of the team you want to configure. 
 
 ::: moniker-end
 
@@ -105,11 +105,11 @@ You open team settings from the top navigation bar. Select the team you want and
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png)  
 
-0. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
+1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
-0. To add a team administrator, add team members, or change the team profile, choose **Overview**. 
-1. 
-::: moniker-end
+1. To add a team administrator, add team members, or change the team profile, choose **Overview**. 
+2. 
+   ::: moniker-end
 
 
 <a id="project-admin-context" /> 
@@ -120,12 +120,12 @@ Administrators configure resources for a project and manage project-level permis
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Project Settings**.
+1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
 
-0. From there, you can choose a page from the list. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards**, **Build and release**, **Code**, **Test**, and **Extensions** to select from the list. 
+1. From there, you can choose a page from the list. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards**, **Build and release**, **Code**, **Test**, and **Extensions** to select from the list. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Project settings](_img/go-to-app/project-setting-hubs.png)  
@@ -191,12 +191,12 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range="azure-devops-2019"
 
-0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Build and release** to select a page from the list. 
+1. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Build and release** to select a page from the list. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account settings, Projects](_img/go-to-app/admin-account-settings.png) 
@@ -206,12 +206,12 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
+1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-organization-settings.png) 
 
-0. From there, you can choose a page. Settings are organized based on the service they support. 
+1. From there, you can choose a page. Settings are organized based on the service they support. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account settings, Projects](_img/go-to-app/open-admin-settings-horizontal.png) 
@@ -228,7 +228,7 @@ Members of the Team Foundation Server Administrators group configure resources f
 
 	<img src="../../organizations/security/_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
+1. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
 
 	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs). 
 

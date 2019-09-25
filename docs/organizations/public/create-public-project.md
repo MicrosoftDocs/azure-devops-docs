@@ -13,11 +13,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Create a public project in your organization
+# Quickstart: Create a public project in your organization
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-A public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
+In this quickstart, learn how to create or add a public project to your organizationA public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
 
 A public project allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).
 
@@ -26,7 +26,7 @@ You can add a public project to your existing organization, or create an organiz
 ## Prerequisites
 
 - You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-- As an organization owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
+- As an organization Owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
 
 ## Enable anonymous access to projects for your organization
 
@@ -41,7 +41,7 @@ Before you can create a public project, you must enable anonymous access for you
 3. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png)
+	> ![Organization settings, Policy page, Security policies](_img/create-public-project/org-policies-change-anon.png)
 
 ## Add a public project to your organization
 
@@ -88,6 +88,3 @@ To provide instant access, share the URL of your public project, which provides 
 > [!div class="nextstepaction"]
 > [Invite users to contribute to your public project](invite-users-public.md)
 
-## Related articles
-
-- [Differences and limitations for non-members of a public project](feature-differences.md)

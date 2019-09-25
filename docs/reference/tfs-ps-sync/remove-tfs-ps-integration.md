@@ -37,7 +37,7 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 <li>(Optional) Delete TFS database catalog mappings.</li> 
 </ol>
 
-###Required permissions
+### Required permissions
 
 To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
 
@@ -50,10 +50,10 @@ To run the **witadmin** commands you must be a member of the Team Foundation Adm
 > Upgrading to TFS 2017 removes the **TFSAdmin** command line tool. In order to have a list of all mapped elements to remove in procedures 3 through 6, you'll want to perform the following steps. 
 
 1. To get a list of all mapped collections, run this command on the application tier server for TFS:  
-	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl ```  
+	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl```  
 
 2. To get a list of all mapped projects, run this command on each mapped collection:  
-	```TfsAdmin ProjectServer /GetMappedProjects /collection:tpcUrl ```
+	```TfsAdmin ProjectServer /GetMappedProjects /collection:tpcUrl```
 
 3. To get a list of all mapped WITs, run this command on each mapped project:  
 	```TfsAdmin ProjectServer /GetMappedWorkItemTypes /collection:tpcUrl teamProject:TeamProjectName```
@@ -90,7 +90,7 @@ To remove the Project Server tab and associated fields, run **witadmin** to expo
 	a. `<Group Label="Publish">`  
 	b. `<Group Label="Mapped Fields (Project Plan)">`  
 	c. `<Group Label="Mapped Fields (Project Plan : Work Item)">`  
-	d. Remaining `<Control>` elements with `FieldName="Microsoft.Sync.ProjSrv.*" or FieldName="Mirror.*" `  
+	d. Remaining `<Control>` elements with `FieldName="Microsoft.Sync.ProjSrv.*" or FieldName="Mirror.*"`  
 
 5. Import the updated WIT xml file. 
 
@@ -118,7 +118,7 @@ Example steps:
 	       <DEFAULTWORKITEMTYPE name="Task" />  
 	       <WORKITEMTYPE name="User Story" />   
 	</CATEGORY>
-	```
+    ```
 3. Import the updated categories.xml file. 
 
 	```witadmin importcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
@@ -141,7 +141,7 @@ Example steps:
 	<?xml version="1.0" encoding="utf-8"?>
 	<GLOBALWORKFLOW>
 	</GLOBALWORKFLOW>
-	```
+    ```
 
 3. Import the updated XML file. 
 
@@ -210,7 +210,8 @@ Use the following commands to delete the TFS tables:
 `DROP TABLE [dbo].[TFS_mapped_projects]`   
 `DROP TABLE [dbo].[TFS_status_approvals]`   
 
->**Note:** If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
+> [!NOTE]
+> If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
 >
 >![Sample screenshot of error message](_img/ps-tfs-integ-error-message.png)
 
@@ -223,17 +224,17 @@ From Project Server, remove all fields that end in `(TFS)`.
 - From Project Server 2010, go to: **PWA Home Page>Server Settings>Enterprise Custom Fields and Lookup Tables**
 - From Project Server 2013, go to: PWA home page, click the 'gear' button and then choose **PWA Settings>Enterprise Custom Fields and Lookup Tables**
  
-<ol><li>Remove all TFS fields, those ending in `(TFS)`, for example: 
+<ol><li>Remove all TFS fields, those ending in <code>(TFS)</code>, for example: 
 <ul><li>Active Assignment (TFS)</li>
 <li>IsTaskTypeInitialized (TFS)</li>
 <li>Submitted Revision (TFS)</li>
 <li>Work Item Id (TFS)</li>
 <li>Work Item Type (TFS)</li>
 </ul>
-<p>For example, delete the `IsTaskTypeInitialized (TFS)` field:</p> 
-![Enterprise custom fields](_img/ps-tfs-integ-enterprise-custom-fields.png)
+<p>For example, delete the <code>IsTaskTypeInitialized (TFS)</code> field:</p> 
+<img src="_img/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
 </li>
-<li>Also, delete all lookup tables that start with `Microsoft.VSTS`, for example: 
+<li>Also, delete all lookup tables that start with <code>Microsoft.VSTS</code>, for example: 
 <ul><li>Microsoft.VSTS.ProjSrv.SubmittedRevLT.DoNotDelete</li>
 <li>Microsoft.VSTS.ProjSrv.SyncToTFSLT.DoNotDelete</li>
 <li>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</li>
@@ -241,8 +242,8 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Microsoft.VSTS.ProjSrv.WITypeLT.DoNotDelete </li>
 <li>Microsoft.VSTS.ProjSrv.WorkItemIdLT.DoNotDelete</li>
 </ul>
-<p>For example, here we delete the `Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete` field:</p>
-![Enterprise custom fields](_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png)
+<p>For example, here we delete the <code>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</code> field:</p>
+<img src="_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
 </li>
 </ol>
 

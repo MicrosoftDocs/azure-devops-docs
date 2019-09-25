@@ -2,7 +2,7 @@
 title: 11 reasons to start using Azure Boards
 titleSuffix: Azure Boards & TFS 
 description: Understand why to use Azure Boards to track your issues, user stories, bugs, tasks, and other work  
-ms.custom: "boards-get-started, seodec18"   
+ms.custom: "boards-get-started, seodec18"
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
@@ -17,7 +17,7 @@ ms.date: 01/11/2019
 
 # 11 Reasons for using Azure Boards to plan and track your work 
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 We know you have a choice of tracking systems. So why use Azure Boards to plan and track your work, bugs, and customer issues? 
 
@@ -92,7 +92,7 @@ By using [configurable dashboards](../../report/dashboards/dashboards.md), you c
 > [!div class="mx-imgBorder"]  
 > ![Example bug burndown widget](/azure/devops/report/dashboards/_img/burndown-widget/burndownup-bug-burndown.png)  
 
-In addition to dashboards, you have access to the [Analytics service](../../report/analytics/what-is-analytics.md), which is optimized for fast read-access and server-based aggregations. By using [Analytics views](../../report/analytics/what-are-analytics-views.md) and [Power BI](../../report/analytics/what-are-analytics-views.md), you can create highly sophisticated reports on the project data of interest. 
+In addition to dashboards, you have access to the [Analytics service](../../report/powerbi/what-is-analytics.md), which is optimized for fast read-access and server-based aggregations. By using [Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Power BI](../../report/powerbi/what-are-analytics-views.md), you can create highly sophisticated reports on the project data of interest. 
 
 
 ## 8. Office integration 
@@ -128,9 +128,6 @@ Last but not least, you can start for free and add up to five free users and unl
 Get started today. To learn how, see [Sign up for free and invite others to collaborate on your project](sign-up-invite-teammates.md). 
 
 
-##Related articles
+## Related articles
 
-- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
-
-
-
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)

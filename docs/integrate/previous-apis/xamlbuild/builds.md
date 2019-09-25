@@ -7,8 +7,8 @@ description: Get builds programmatically using the REST APIs for Team Foundation
 ms.assetid: 0B7A8B2D-8901-46FB-8F15-CF6101B24218
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -34,7 +34,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 | Query
 | definition    | string   | Builds that have this definition.
 | requestedFor  | string   | Builds requested by this user<br/>Alias of the user. `fabrikamfiber4@hotmail.com`, for example.
-| minFinishTime | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished after this time.
+| minFinishTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished after this time.
 | quality       | string   | Builds that have this [quality](./qualities.md).
 | status        | enum {<br/>&nbsp;&nbsp;All<br/>&nbsp;&nbsp;Failed<br/>&nbsp;&nbsp;InProgress<br/>&nbsp;&nbsp;None<br/>&nbsp;&nbsp;NotStarted<br/>&nbsp;&nbsp;PartiallySucceeded<br/>&nbsp;&nbsp;Stopped<br/>&nbsp;&nbsp;Succeeded<br/>} | Builds that have this status. Combine flags with a comma, e.g. `InProgress,NotStarted` to list builds that haven't finished yet.
 | $skip         | int      | Number of builds to skip.

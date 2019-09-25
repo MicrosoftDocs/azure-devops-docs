@@ -19,11 +19,11 @@ ms.date: 02/22/2017
 
 This error may occur under the following conditions:  
   
--   When the New Team Project Wizard connects to Team Foundation Server to determine whether your user account has been granted permission to create a project.  
+- When the New Team Project Wizard connects to Team Foundation Server to determine whether your user account has been granted permission to create a project.  
   
--   The wizard, while creating a project, encounters another server component (for example, the virtual directory used by Internet Information Services) and does not find the required permissions set on your user account.    
+- The wizard, while creating a project, encounters another server component (for example, the virtual directory used by Internet Information Services) and does not find the required permissions set on your user account.    
   
- To create a project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a project](../../organizations/projects/create-project.md) .  
+  To create a project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a project](../../organizations/projects/create-project.md) .  
   
 ### To correct this error  
   

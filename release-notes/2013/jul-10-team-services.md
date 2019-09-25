@@ -3,18 +3,18 @@ title: Team Foundation Service updates - July 10
 description: VSTS release notes for July 10 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: fb442da5-ffd1-4c26-9864-78fa94c32735
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - July 10
+# Team Foundation Service updates - July 10
 
 A few updates were pushed to the service this morning that you’ll want to take note of. 
 
-##Backlog Mapping
+## Backlog Mapping
 
 First, the Agile Portfolio Management feature announced back on [June 3rd](jun-03-team-services.md) has an improved backlog linking experience. The new mapping panel allows you to quickly link items on your team’s product backlog directly to a “higher level” features backlog. When turned on, you can simply drag an item from your product backlog onto an item in the feature backlog to create the link.  In the screenshot below, notice the two items at the bottom of the backlog that are un-parented.  These are items that have been added to my product backlog but aren’t yet linked to a feature.
 
@@ -28,7 +28,7 @@ Finally, the “Ticket administration” feature is now pulled into my view as i
 
 ![The backlog item mapped to it's parent feature](_img/7_10_03.png)
 
-##Team Permissions
+## Team Permissions
 
 We also made a change today to “who can do what” at the team level. Before today’s changes, all team members could perform the following actions:
 

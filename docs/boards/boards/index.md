@@ -9,9 +9,9 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 11/19/2018
---- 
+---
 
 # Boards (Kanban)
 
@@ -27,6 +27,7 @@ If you're a project administrator just getting started, review the [Configure se
 - [Kanban board quickstart](kanban-quickstart.md)  
 
 ## Step-by-Step Tutorials
+
 ::: moniker range=">= tfs-2017"
 
 - [Kanban board basics](kanban-basics.md)
@@ -35,6 +36,7 @@ If you're a project administrator just getting started, review the [Configure se
 - [Add inline tests](add-run-update-tests.md)
 - [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
 - [Enable live updates](live-updates.md)
+
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -43,6 +45,7 @@ If you're a project administrator just getting started, review the [Configure se
 - [Task checklists](add-task-checklists.md)
 - [Epics & features](kanban-epics-features-stories.md)
 - [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -50,6 +53,7 @@ If you're a project administrator just getting started, review the [Configure se
 - [Kanban basics](kanban-basics.md)
 - [Features](kanban-epics-features-stories.md)
 - [Cumulative flow](../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)  
+
 ::: moniker-end
 
 ## Concepts 
@@ -62,12 +66,14 @@ If you're a project administrator just getting started, review the [Configure se
 ## How-to Guides
 
 ::: moniker range=">= tfs-2015"
+
 - [Add columns](add-columns.md) 
 - [Customize cards](../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
 - [Split columns](split-columns.md)  
 - [Expedite work (swimlanes)](expedite-work.md)  
 - [Definition of done](definition-of-done.md)  
+
 ::: moniker-end  
 
 ::: moniker range="tfs-2013"
@@ -75,22 +81,26 @@ If you're a project administrator just getting started, review the [Configure se
 - [Add columns](add-columns.md) 
 - [Customize cards](../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
+
 ::: moniker-end  
 
 
 ## Reference 
+
 ::: moniker range=">= tfs-2015"
 
 - [Kanban board controls](kanban-board-controls.md) 
 - [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
 - [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)      
+
 ::: moniker-end  
   
 ::: moniker range="tfs-2013" 
 
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
 - [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json)      
+
 ::: moniker-end  
 
 ## Resources 

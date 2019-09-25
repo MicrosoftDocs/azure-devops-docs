@@ -1,6 +1,6 @@
 ```YAML
-# cURL Upload Files
-# Use cURL to upload files.
+# cURL upload files
+# Use cURL's supported protocols to upload files
 - task: cURLUploader@2
   inputs:
     files: 

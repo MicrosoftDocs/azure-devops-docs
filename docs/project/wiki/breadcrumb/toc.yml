@@ -2,6 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Wikis
+  - name: Collaborate
     tocHref: /azure/devops/project/wiki/
-    topicHref: /azure/devops/project/wiki/index
+    topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/wiki/index

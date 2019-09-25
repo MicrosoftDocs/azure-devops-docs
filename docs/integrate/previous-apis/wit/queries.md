@@ -7,8 +7,8 @@ description: Work with work item queries programmatically using the REST APIs fo
 ms.assetid: F91A2D76-3586-4552-A9F4-AC9E5CBB46D4
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -4909,7 +4909,7 @@ Content-type: Application/json
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name      | string  | Name of the query.
-| wiql      | string  | [Query string](http://msdn.microsoft.com/library/bb130306.aspx).
+| wiql      | string  | [Query string](https://msdn.microsoft.com/library/bb130306.aspx).
 
 #### Sample request
 
@@ -5116,7 +5116,7 @@ Content-type: Application/json
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| wiql      | string  | New [query string](http://msdn.microsoft.com/library/bb130306.aspx).
+| wiql      | string  | New [query string](https://msdn.microsoft.com/library/bb130306.aspx).
 
 #### Sample request
 

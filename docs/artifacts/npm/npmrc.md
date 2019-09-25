@@ -5,8 +5,8 @@ ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -82,7 +82,7 @@ You should have a project specific **_.npmrc_** containing only your feed's regi
 
 ### Windows
 
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_%USERPROFILE%\\.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
 
 ```json
 "scripts": {
@@ -96,7 +96,7 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 
-`vsts-npm-auth` is not supported on TFS.
+`vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
 
 ::: moniker-end
 

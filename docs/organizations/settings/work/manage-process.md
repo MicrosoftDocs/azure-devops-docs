@@ -23,8 +23,7 @@ ms.date: 05/31/2018
 
 You customize your project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a project, you select the process you want your project to use. 
 
-> [!IMPORTANT]  
-> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -40,20 +39,16 @@ In this article, learn how to perform these tasks:
 > * Enable or disable a process
 > * Set a process as the default to use when adding projects  
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
-
 <a id="create-inherited-process"></a>
 ## Create an inherited process
-You can create an inherited process from any one of the three system processes: [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
+You can create an inherited process from any one of the four system processes:[Basic](../../../boards/get-started/track-issues-tasks.md), [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
 
-0. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
+1. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
 
 	Here, we create an inherited process from the Agile system process.   
 
@@ -62,9 +57,9 @@ You can create an inherited process from any one of the three system processes: 
 
 	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../security/set-project-collection-level-permissions.md#collection-level).
 
-0.	Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
+1. Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
-	<img src="_img/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
+   <img src="_img/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
 
 Once you've defined the inherited process, you can perform these actions: 
 - [Customize a project using an inherited process](customize-process.md)   
@@ -74,36 +69,38 @@ Once you've defined the inherited process, you can perform these actions:
 <a id="migrate"></a>
 ## Change the process used by a project    
 
-You can change the process a project uses from a system process or inherited process to an inherited process. You can only change projects to use another process that inherits from the same system process. That is, you can change an Agile-based project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based project to an Agile-derived inherited process.  
+You can change the process a project uses from a system process or inherited process to another inherited process. There are two mechanisms to change a projects process. The first is to switch to a process where the project is derived from the same system process. Meaning, you can move a project between processes that use the same base process like Agile or Scrum.
+
+The second method is to migrate your project between two completely different process types. For example, moving from Agile to Scrum, or Basic to Agile.
+
+For the second method, we have provided detailed steps for three common scenerios of changing the process used by a project.
+
+- [Scrum to Agile](./change-process-scrum-to-agile.md)
+- [Agile to Scrum](./change-process-agile-to-scrum.md)
+- [Basic to Agile](./change-process-basic-to-agile.md)
 
 > [!NOTE]    
 > You can change the process of a project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process. 
 >
 >Also, if you change a project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
 
-0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
+1. Choose the process that contains the project you want to change. For example, say you want change a project from from Agile to Scrum, then choose the **Agile** process.
 
-	Here we open the menu for the Agile system process:
+   > [!div class="mx-imgBorder"]  
+   > ![Choose the Agile process](_img/agile-to-scrum/choose-agile.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Agile process context menu, Choose Change team projects to use Agile](_img/process/change-project-to-system-process.png) 
+2. Choose **Projects**, and then choose the ![ ](../../../_img/icons/actions-icon.png) actions icon for the project you want to change, and select **Change process**. 
 
-	The system lists only those projects that are valid for the current process.
+   > [!div class="mx-imgBorder"]  
+   > ![Choose Projects tab](_img/agile-to-scrum/choose-projects-myfirstproject.png)
 
-0. Click the checkbox of those projects you want to change to use the Agile process. 	
-
-	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile appear under the Available projects column.
- 
-	<img src="_img/process/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
-
-1. After  you've confirmed that the projects you want to change are correct, click Ok. 
+Follow the steps in the wizard
 
 > [!IMPORTANT]  
 >When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
 > 
 > - If you make a field required, work items with that field undefined show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
 > - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project. 
-
 
 <a id="create-team-project">  </a>
 ## Create a project from a process 
@@ -113,7 +110,7 @@ You can change the process a project uses from a system process or inherited pro
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
 
-0. The Create new project page opens. For details, see [Create a project](../../../organizations/projects/create-project.md).
+1. The Create new project page opens. For details, see [Create a project](../../../organizations/projects/create-project.md).
 
 <a id="copy-process">  </a>
 ## Copy a process
@@ -128,18 +125,18 @@ It's a good practice to test the customizations you make before rolling out the 
 	> [!div class="mx-imgBorder"]  
 	> ![Make a copy of a selected inherited process](_img/process/copy-process.png) 
 
-0. Fill out the dialog with the name of the copied process and choose **Copy process**.
+1. Fill out the dialog with the name of the copied process and choose **Copy process**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Make a copy of a selected inherited process](_img/process/copy-process-dialog.png) 
 	
-0. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
+1. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
 
-0. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <process name>**](#migrate) option from the context menu. 
+1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <process name>**](#migrate) option from the context menu. 
 
-0. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <process name>**](#migrate) option from the context menu.  
+1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <process name>**](#migrate) option from the context menu.  
 
-0.  Disable or delete the original process. 
+1.  Disable or delete the original process. 
  
 
 <a id="enable-process">  </a>

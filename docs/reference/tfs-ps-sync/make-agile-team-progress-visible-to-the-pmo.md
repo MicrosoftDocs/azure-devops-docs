@@ -31,11 +31,11 @@ ms.date: 01/12/2017
   
  To perform the procedures in this topic, the following permissions must be assigned:  
   
--   To publish tasks from an enterprise project plan to Team Foundation, Team Foundation users must be members of the **Contributors** group for the project.  
+- To publish tasks from an enterprise project plan to Team Foundation, Team Foundation users must be members of the **Contributors** group for the project.  
   
--   To update work items in Team Foundation and submit them to Project Server, Team Foundation users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or those users must have the Open Project and View Project Site permissions in Project. Those users must also be added to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.  
+- To update work items in Team Foundation and submit them to Project Server, Team Foundation users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or those users must have the Open Project and View Project Site permissions in Project. Those users must also be added to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.  
   
- For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="Overview"></a> Process overview of Agile development and PMO visibility  
  As the following illustration shows, the team lead initiates the process by planning the user stories and tasks in Team Foundation Server. The synchronization engine creates status updates for each user story that is submitted to Project Server. Because the project manager has enabled automatic approvals for the enterprise project plan, Project Server automatically updates the plan with changes that were made in Team Foundation. The project manager can review the plan for implementing new user stories and track their progress in the project plan.  
@@ -128,11 +128,11 @@ Edit Work Items dialog box
 ##  <a name="ActionsProgramManagers"></a> Tasks and recommended practices for the program office  
  As a member of the program office, you can engage in the following activities to monitor the work that the agile development team is performing:  
   
--   [Review User Stories, and Plan Project Schedule](#ReviewStories)  
--   [Review Progress to Your Plan](#ReviewProgress)  
--   [Review Progress for Project Portfolio](#ReviewPortfolio)  
+- [Review User Stories, and Plan Project Schedule](#ReviewStories)  
+- [Review Progress to Your Plan](#ReviewProgress)  
+- [Review Progress for Project Portfolio](#ReviewPortfolio)  
   
- In addition, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
+  In addition, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
   
 ###  <a name="ReviewStories"></a> Review user stories, and plan project schedule  
  As new user stories are submitted to Project Server, they automatically appear in your enterprise project plan. As the following illustration shows, the three user stories that were submitted by the agile team in [Submit User Stories to Project Server](#SubmitStories) are added to the project plan.  

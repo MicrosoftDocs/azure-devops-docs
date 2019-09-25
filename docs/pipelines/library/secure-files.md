@@ -5,7 +5,7 @@ description: Understand secure files for Azure Pipelines and Team Foundation Ser
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: dastahel
+ms.manager: jillfra
 ms.author: madhurig
 ms.date: 12/18/2018
 monikerRange: '>= tfs-2015'
@@ -50,8 +50,7 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
-### How do I authorize a secure file for use in all pipelines?
-
+<h3 id="secure-file-authorization">How do I authorize a secure file for use in all pipelines?</h3>
  1. Navigate to the **Library** tab in **Azure Pipelines**.
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 

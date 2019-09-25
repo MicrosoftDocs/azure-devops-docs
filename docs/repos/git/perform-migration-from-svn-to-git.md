@@ -3,9 +3,9 @@ title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-code-git
 ms.manager: jillfra
-ms.date: 04/25/2018
+ms.date: 06/04/2019
 ms.author: hkamel
 author: hkamel
 monikerRange: '>= tfs-2013'
@@ -47,7 +47,7 @@ Configure a migration environment on a local workstation and install the followi
 
 * [Git](https://git-for-windows.github.io/)
 * [Subversion](http://subversion.apache.org/packages.html)
-* [git-svn utility](https://www.kernel.org/pub/software/scm/repos/git/docs/git-svn.html) (already part of Git)
+* [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
 ](/azure/devops/repos/git/create-new-repo)
@@ -115,9 +115,8 @@ git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
->
-> Read more about **.gitignore**: [Ignore file changes with Git]
-(/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+> 
+> Read more about **.gitignore**: [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -125,24 +124,28 @@ In this step, you will create a bare repository and make its default branch matc
 
 1. Create a bare Git repository
 
-   ```
-   git init --bare c:\new-bare.git
-   cd c:\new-bare.git
-   git symbolic-ref HEAD refs/heads/trunk
-   ```
+    ```
+    git init --bare c:\new-bare.git
+    cd c:\new-bare.git
+    git symbolic-ref HEAD refs/heads/trunk
+    ```
+
 2. Push the local Git repository to the new bare Git repository
-   ```
-   cd c:\mytempdir
-   git remote add bare c:\new-bare.git
-   git config remote.bare.push 'refs/remotes/*:refs/heads/*'
-   git push bare
-   ```
+   
+    ```
+    cd c:\mytempdir 
+    git remote add bare c:\new-bare.git 
+    git config remote.bare.push 'refs/remotes/*:refs/heads/*' 
+    git push bare 
+    ```
+
 3. Rename "trunk" branch to "master"
 Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
-   ```
-   cd c:\new-bare.git
-   git branch -m trunk master
-   ```
+   
+    ```
+    cd c:\new-bare.git
+    git branch -m trunk master
+    ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
 

@@ -1,0 +1,1 @@
+Within your selected organization, create a _project_. If you don't have any projects in your organization, you see a **Create a project to get started** screen. Otherwise, select the **Create Project** button in the upper-right corner of the dashboard.

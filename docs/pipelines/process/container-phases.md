@@ -8,18 +8,23 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: macoope
-ms.date: 01/15/2019
-monikerRange: 'azure-devops'
+ms.date: 05/06/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Container jobs
 
 **Azure Pipelines**
 
-By default, jobs run on the host machine where the [agent](../agents/agents.md)
+By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
-This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
+This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the stage where your tasks run.
+
+<!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
+::: moniker-end
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
@@ -32,7 +37,7 @@ Then, each step of the job will run inside the container.
 ### Linux-based containers
 
 The Azure Pipelines system requires a few things in Linux-based containers:
-- Bash (for the `bash` step / task, which most container pipelines will use)
+- Bash
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
@@ -46,6 +51,9 @@ containers available on Docker Hub, especially those based on Alpine Linux, don'
 minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure Pipelines
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
+
+Also note: the Red Hat Enterprise Linux 6 build of the agent won't run container job.
+Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 
 ### Windows Containers
 
@@ -101,7 +109,7 @@ steps:
 
 ## Multiple jobs
 
-Containers are also useful for running the same steps in [multiple jobs](multiple-phases.md).
+Containers are also useful for running the same steps in multiple [jobs](phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
 (And we don't have to mention the `jobs` keyword, since there's only a single job defined.)
 
@@ -205,8 +213,8 @@ jobs:
     - script: printenv
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
-Container jobs are not yet supported in the designer.
+Container jobs are not yet supported in the classic editor.
 
 ---

@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -33,12 +33,13 @@ not removed. Then install the latest server and client. When you configure
 the latest update for your Release Management server, use the same SQL Server 
 instance that you used before for the database server.
 
-***Tip:*** _If you installed TFS Express or basic, you have an instance of 
-SQL Server Express available to you. If you installed TFS, you already have 
-the necessary permissions on the SQL Server. If you don't know if you're 
-using SQL Express, look at the **Application Tier** node in the TFS 
-administration console. Scroll down to **Data Tier Summary** and look for 
-**SQLServerExpress** to confirm._
+> [!TIP]
+> If you installed TFS Express or basic, you have an instance of
+> SQL Server Express available to you. If you installed TFS, you already have
+> the necessary permissions on the SQL Server. If you don't know if you're
+> using SQL Express, look at the **Application Tier** node in the TFS
+> administration console. Scroll down to **Data Tier Summary** and look for
+> **SQLServerExpress** to confirm.
 
 <a name="installserver"></a>
 ## Install the Release Management server
@@ -48,7 +49,7 @@ administration console. Scroll down to **Data Tier Summary** and look for
    where you will install the Release Management server and a member of 
    **sysadmin** server role in SQL Server.
 
-1. If you have not already downloaded the Release Management server, 
+2. If you have not already downloaded the Release Management server, 
    **[do this now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)**.
 
    _Note that this is a 90-day trial version of Release Management. For 
@@ -59,18 +60,19 @@ administration console. Scroll down to **Data Tier Summary** and look for
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
-1. Launch **rm_Server.exe**. If you want to install to a specific location 
+3. Launch **rm_Server.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
    ![Starting the installation of the server](_img/install-server-client-02.png)
 
-1. Restart your computer, if prompted, and then choose **Launch**.
+4. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
-1. Specify the SQL Server instance to host the Release Management Server 
+5. Specify the SQL Server instance to host the Release Management Server 
    database and then choose **Test** to verify connectivity. Accept the default 
    values for the service account and web port (Network Service and port 1000) 
    or specify alternates. For more information, see 
@@ -80,17 +82,17 @@ administration console. Scroll down to **Data Tier Summary** and look for
    Release Management server uses the identity set here for its Application 
    Pools in IIS and the Release Management Monitor Windows service.
 
-   ***Important:*** _If you specify an alternative account as the identity for 
+   ***Important:*** <em>If you specify an alternative account as the identity for 
    the service, this must be in the form **domain\user**. Do not use the format 
-   **user@domain**._
+   <strong>user@domain</strong>.</em>
  
    ![Specifying the identity and server settings](_img/install-server-client-03.png)
 
-1. Choose **Apply settings**.
+6. Choose **Apply settings**.
 
    ![Configuration summary page](_img/install-server-client-04.png)
 
-1. After the success message appears, close the configuration summary and 
+7. After the success message appears, close the configuration summary and 
    the server console and then install the Release Management client (as 
    described next). Most configuration and administration tasks take place in 
    the client.
@@ -121,8 +123,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
 1. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
 1. Enter the name of the Release Management server. If you're installing the 
    client on the same computer that is running Release Management server, you 
@@ -130,9 +133,10 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
    ![Connecting the client to the server](_img/install-server-client-06.png)
 
-   ***Tip:*** _If you changed any of the default options in your Release 
-   Management server setup, you can change the protocol or port number here so 
-   that you can connect to the server._
+   > [!TIP]
+   > If you changed any of the default options in your Release
+   > Management server setup, you can change the protocol or port number here so
+   > that you can connect to the server.
 
 ## Related topics
 

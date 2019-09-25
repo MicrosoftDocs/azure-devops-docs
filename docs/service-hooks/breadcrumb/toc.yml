@@ -2,10 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Settings
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
-    items:
-    - name: Service hooks
+  - name: Marketplace & Extensibility
+    tocHref: /azure/devops/service-hooks/
+    topicHref: /azure/devops/marketplace-extensibility/index
+    items: 
+    - name: Service Hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index

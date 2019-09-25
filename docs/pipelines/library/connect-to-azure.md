@@ -7,19 +7,21 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/18/18
 monikerRange: '>= tfs-2017'
 ---
 
-# Create an Azure service connection
+# Connect to Microsoft Azure
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
+
+> For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
 ::: moniker range="azure-devops"
 
@@ -30,6 +32,7 @@ We recommend this simple approach if:
 * You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
 * You don't need to further limit the permissions for Azure resources accessed through the service connection.
 * You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -50,12 +53,12 @@ We recommend this simple approach if:
 
 1. After the new service connection is created:
 
-   * If you're using the designer, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+   * If you're using the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you're using YAML, copy the connection name into your code as the `azureSubscription` value.
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource.
 
-   * If you're using the designer, select data you need. For example, the App service name.
+   * If you're using the classic editor, select data you need. For example, the App service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
@@ -74,6 +77,7 @@ or a [VM with a managed service identity](#use-msi).
 
    * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
+   * [How to create Azure Service Principal with a certificate using Azure PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.

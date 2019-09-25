@@ -7,8 +7,8 @@ description: Work with updates to work items programmatically using the REST API
 ms.assetid: B4C07EF4-535A-4479-803D-C181553613EE
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

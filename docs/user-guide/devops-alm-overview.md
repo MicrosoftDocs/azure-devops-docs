@@ -8,7 +8,7 @@ ms.technology: devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: jillfra
 ms.author: kaelli
-ms.date: 02/01/2019
+ms.date: 06/02/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -59,7 +59,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 [![Android Studio](_img/overview/code-git-android-studio-1.png)](/../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/../java/download-intellij-plug-in.md)  
 
 <br/>
-[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)  
+<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="_img/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="_img/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="_img/overview/code-git-xcode.png" alt="Xcode"/></a>  
 
 ### TFVC
 
@@ -119,7 +119,6 @@ As your team grows, your tools grow. You can easily add teams which can focus on
 Once you've signed up for Azure DevOps Services or installed Azure DevOps Server, get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
 - [About Azure DevOps](about-azure-devops-services-tfs.md)
-- [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
@@ -128,13 +127,13 @@ Once you've signed up for Azure DevOps Services or installed Azure DevOps Server
 ### Azure DevOps Server updates
 
 - [What's new](/azure/devops/server/whats-new)
-- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md)
+- [Migrate data from TFS to Azure DevOps Services](../migrate/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
 [Azure DevOps Services Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
 
-On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basic, and Advanced](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
+On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basic, and Basic + Test Plans](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
 
 
 ### Extensibility: Create first-class integration experiences
@@ -158,7 +157,7 @@ Industry-standard RESTful APIs extend the power of Azure DevOps from your apps a
 
 Monitor your web and device apps to gain actionable insight to improve performance, determine usage patterns, and plan for the next version of your software.  
 
-[Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
+[Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
 [Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  

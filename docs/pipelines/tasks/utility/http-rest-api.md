@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2018'
 Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -31,11 +33,14 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 
 ## Demands
 
-This task can be used in only an [agentless job](../../process/server-phases.md).
+This task can be used in only an [agentless job](../../process/phases.md#server-jobs).
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -49,7 +54,7 @@ This task can be used in only an [agentless job](../../process/server-phases.md)
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
-| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when the function returns success within 20 seconds and the success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record.   |
+| **Wait for completion** | Required. How the task reports completion. Can be **API response** (the default) - completion is when the function returns success within 20 seconds and the success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record.   |
 | **Success criteria** | Optional. How to parse the response body for success. By default, the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 

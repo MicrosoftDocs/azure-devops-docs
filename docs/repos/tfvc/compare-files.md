@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Compare files
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [comparing files with Git and Visual Studio](../../repos/git/review-history.md).  
 
@@ -119,7 +119,7 @@ Merge more complex changes between two versions when you [resolve merge conflict
 
 If you need to merge two files with significant differences outside of TFVC conflict resolution, use the [vsdiffmerge command line tool](https://roadtoalm.com/2013/10/22/use-visual-studio-as-your-diff-and-merging-tool-for-local-files).
 The vsdiffmerge tool allows you to merge changes side-by-side and pick which contents you want to keep for each difference between the files.
-Run the command with four file parameters followed by the `/m` flag from the Visual Studio Developer Command Prompt to bring up the merge tool directly against any tow files. 
+Run the command with four file parameters followed by the `/m` flag from the Visual Studio Developer Command Prompt to bring up the merge tool directly against any two files. 
 
 The basic syntax for vsdiffmerge.exe is:
 

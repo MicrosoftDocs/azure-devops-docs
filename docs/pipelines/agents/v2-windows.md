@@ -1,26 +1,33 @@
 ---
-title: Deploy a build and release agent on Windows
+title: Deploy a Azure Pipelines agent on Windows
 ms.custom: seodec18
-description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 01/14/2019
-monikerRange: '>= tfs-2017'
+ms.author: sdanie
+author: steved0x
+ms.date: 08/15/2019
+monikerRange: '>= tfs-2015'
 ---
 
-# Deploy an agent on Windows
+# Self-hosted Windows agents
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)**
+
+::: moniker range="tfs-2015"
+
+> [!IMPORTANT]
+> For TFS 2015, see [Self-hosted Windows agents - TFS 2015](v1-windows.md).
+
+::: moniker-end
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
-> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Windows agent.
+> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
@@ -31,6 +38,9 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 Make sure your machine is prepared with our [Windows system prerequisites](https://aka.ms/vstsagentwinsystem).
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
+
+You should run agent setup manually the first time.
+After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
 ### Hardware specs 
 
@@ -51,29 +61,51 @@ running 4 agents apiece.
 
 ### Azure Pipelines
 
-<ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
-</li>
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<li>Click **Download agent**.</li>
+1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-<li>On the **Get agent** dialog box, click **Windows**.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-<li>On the left pane, select the processor architecture of your machine (x86 or x64). </li>
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-<li>On the right pane, click the **Download** button.
+1. On the **Get the agent** dialog box, choose **Windows**.
 
-<li>Follow the instructions on the page to download the agent.</li>
+1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
+The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
 
-<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+1. On the right pane, click the **Download** button.
 
-</ol>
+1. Follow the instructions on the page to download the agent.
 
-> [!Tip]
-> Choose the processor according to the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/windows/client-management/windows-version-search).
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### Azure DevOps Server 2019
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+
+1. Click **Download agent**.</li>
+
+1. On the **Get agent** dialog box, click **Windows**.</li>
+
+1. On the left pane, select the processor architecture of the installed Windows OS version on your machine.
+The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+If you aren't sure which version of Windows is installed, [follow these instructions to find out](/windows/client-management/windows-version-search).
+
+1. On the right pane, click the **Download** button.
+
+1. Follow the instructions on the page to download the agent.
+
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -81,28 +113,27 @@ running 4 agents apiece.
 
 ### TFS 2017 and TFS 2018
 
-<ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
-</li>
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<li>Click **Download agent**.</li>
+1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-<li>On the **Get agent** dialog box, click **Windows**.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
-<li>Click the **Download** button.
+1. Click **Download agent**.
 
-<li>Follow the instructions on the page to download the agent.</li>
+1. On the **Get agent** dialog box, click **Windows**.
 
-<li>Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
+1. Click the **Download** button.
 
-</ol>
+1. Follow the instructions on the page to download the agent.
+
+1. Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
 > [!Note]
-> We recommend you configure the agent from an elevated PowerShell window.
+> We strongly recommend you configure the agent from an elevated PowerShell window.
+> If you want to configure as a service, this is **required**.
 
 ### Server URL and authentication
 
@@ -117,6 +148,10 @@ When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`
 ::: moniker range="azure-devops"
 When setup asks for your authentication type, choose **PAT**.
 Then paste the [PAT token you created](#permissions) into the command prompt window.
+
+> [!NOTE]
+> When using PAT as the authentication method, the PAT token is only used during the initial configuration of the agent. Later, if the PAT expires or needs to be renewed, no further changes are required by the agent.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
@@ -135,15 +170,17 @@ When you configure your agent to connect to TFS, you've got the following option
 * **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent. 
+
+Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
 
 ::: moniker-end
 
 ### Choose interactive or service mode
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
-Note that if you configure as a service, the username you choose to run as should be 20 characters or less.
+If you choose to run as a service (which we recommend), the username you run as should be 20 characters or less.
 
 ## Run the agent
 
@@ -153,7 +190,10 @@ Note that if you configure as a service, the username you choose to run as shoul
  .\run.cmd
  ```
 
-If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "Azure Pipelines Agent (*name of your agent*)".
+If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
+- "Azure Pipelines Agent (*name of your agent*)".
+- "VSTS Agent (*name of your agent*)".
+- "vstsagent.(*organization name*).(*name of your agent*)".
 
 > [!Note]
 > If you need to change the agent's logon account, don't do it from the Services
@@ -178,7 +218,10 @@ After you've removed the agent, you can [configure it again](#download-configure
 
 The agent can be set up from a script with no human intervention.
 You must pass `--unattended` and the answers to all questions.
-Consult `.\config --help` for details about the required responses.
+
+[!INCLUDE [unattend](./_shared/v2/unattended-config.md)]
+
+`.\config --help` always lists the latest required and optional responses.
 
 ## Help on other options
 

@@ -10,4 +10,4 @@ You've just put your own CI pipeline in place to automatically build and validat
 
 You can also modify this build pipeline to meet the needs of your team. To learn more see one of these topics:
 
-* [CI builds for Git in Azure Pipelines](../../build/ci-build-git.md)
+* [Customize your pipeline](../../customize-pipeline.md)

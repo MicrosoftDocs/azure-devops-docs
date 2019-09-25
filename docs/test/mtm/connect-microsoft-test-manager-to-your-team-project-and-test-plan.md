@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -26,7 +26,7 @@ Use Microsoft Test Manager to help you test the application you built. Microsoft
   
 ### Connect Microsoft Test Manager to your project and test plan  
   
-1. If you don't have Microsoft Test Manager, download and install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/).  
+1. If you don't have Microsoft Test Manager, download and install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).  
   
    Don't have a project? [Set up a project](../../organizations/projects/create-project.md)  
   

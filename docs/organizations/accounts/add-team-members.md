@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 034/05/2019
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -26,7 +26,7 @@ if you have seats available.
 * [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
 if you *don't* have available seats.
 
-When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features are provided with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users.md). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
@@ -34,12 +34,12 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 ## Prerequisites
 
 * If you don't have a project yet, first [create your project](../projects/connect-to-projects.md).
-* To add members to projects, you need [*project administrator*](../security/set-project-collection-level-permissions.md), [*project collection administrator*, or *organization owner*](faq-add-team-members.md#find-pca-owner) permissions.
+* To add members to projects, you need [*Project Administrator*](../security/set-project-collection-level-permissions.md), [*Project Collection Administrator*, or *organization Owner*](faq-add-team-members.md#find-pca-owner) permissions.
 * If your new members don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
 ## Add members to your project
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *Project Administrator*, *Project Collection Administrator*, or *organization Owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
@@ -55,7 +55,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
 
- Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
+   Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
 
 Which email addresses can I add?
 
@@ -75,7 +75,7 @@ Which email addresses can I add?
 
   * **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
-   [Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
+    [Why can't I add any more members?](faq-add-team-members.md#cant-add-users)
 
 ## Next steps
 

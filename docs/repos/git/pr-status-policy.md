@@ -6,8 +6,8 @@ ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 06/18/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Configure a branch policy for an external service 
 
-#### Azure Repos | TFS 2018 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
 
 Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -37,13 +37,13 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 3. Select the service you want to create a policy for from the list.  If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy.
 
-  ![Select the policy from the list](_img/pr-status-policy/choose-service.png)
+   ![Select the policy from the list](_img/pr-status-policy/choose-service.png)
 
-  - **Policy requirement** determines whether or not this policy is optional or required to complete pull requests into the branch. 
-  - **Authorized account** is used to enforce that status from only the specified account will be counted towards the policy fulfillment. 
-  - **Reset conditions** is used to determine when a posted status is no longer valid. If the status posted is specific to the latest code (i.e. a build), check **Reset status whenever there are new changes** to reset the status when the source branch changes. 
-  - **Policy applicability** determines whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
-  - **Default display name** allows you to specify an optional display name for your policy.
+   - **Policy requirement** determines whether or not this policy is optional or required to complete pull requests into the branch. 
+   - **Authorized account** is used to enforce that status from only the specified account will be counted towards the policy fulfillment. 
+   - **Reset conditions** is used to determine when a posted status is no longer valid. If the status posted is specific to the latest code (i.e. a build), check **Reset status whenever there are new changes** to reset the status when the source branch changes. 
+   - **Policy applicability** determines whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
+   - **Default display name** allows you to specify an optional display name for your policy.
 
 ## Create a new pull request
 

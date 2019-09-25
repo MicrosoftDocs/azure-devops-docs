@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Resolve merge conflicts
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
 Git attempts to resolve these changes by using the [history](review-history.md) in your repo to determine what the merged files should look like.
@@ -55,18 +55,17 @@ Rebased branches will merge into your main branch without conflicts.
 
 ## Resolve merge conflicts 
 
-# [Visual Studio](#tab/visual-studio)
+#### [Visual Studio](#tab/visual-studio/)
+1. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
+2. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
 
-0. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
-0. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
-   
    ![Prompt when there is a merge conflict when you pull a change](_img/merge_prompt_vs.png)   
 
-0. This will bring up a list of files with conflicts. Selecting a file lets you accept the changes in the source branch you are merging from with the **Take Source** button or accept the changes in the branch you are merging into using **Keep Target**. 
-You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](git-config.md#diff--merge-tools).
-0. Use the checkboxes next to the lines modified to select between remote and local changes entirely, or edit the results directly in the **Result** editor under the **Source** and **Target** editor in the diff view.   
-0. When done making changes, click **Accept Merge** . Repeat this for all conflicting files.
-0. Open the **Changes** view in Team Explorer and commit the changes to create the merge commit and resolve the conflict.
+3. This will bring up a list of files with conflicts. Selecting a file lets you accept the changes in the source branch you are merging from with the **Take Source** button or accept the changes in the branch you are merging into using **Keep Target**. 
+   You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](git-config.md#diff--merge-tools).
+4. Use the checkboxes next to the lines modified to select between remote and local changes entirely, or edit the results directly in the **Result** editor under the **Source** and **Target** editor in the diff view.   
+5. When done making changes, click **Accept Merge** . Repeat this for all conflicting files.
+6. Open the **Changes** view in Team Explorer and commit the changes to create the merge commit and resolve the conflict.
 
    ![Resolving Merge Conflicts in Visual Studio](_img/vsmerge.gif)  
 
@@ -74,11 +73,10 @@ You can manually merge changes by selecting **Merge**, then entering the changes
 
     ![VSMergeTool comparison options](_img/vsmergeoptions.png)
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 Resolve merge conflicts on the command line:   
 
-0. (Optional) Before performing any `pull` or `merge`, make sure that your repo is clean with `git status`. 
+1. (Optional) Before performing any `pull` or `merge`, make sure that your repo is clean with `git status`. 
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git status
@@ -86,50 +84,49 @@ Resolve merge conflicts on the command line:
     nothing to commit, working directory clean</font>
     </pre>
 
-0. Perform your `pull` or `merge`. Use `git status` to see exactly which files did not merge properly.
+2. Perform your `pull` or `merge`. Use `git status` to see exactly which files did not merge properly.
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git pull origin <font color="#b5bd68">myfeature </font>   
-    
+
     <font color="#b5bd68">Auto-merging serverboot.js
     CONFLICT (content): Merge conflict in serverboot.js
     Automatic merge failed; fix conflicts and then commit the result</font>
     </pre>
 
-0. (Optional) Check the commit logs to find the commits that conflict with your own using `git log --merge`. 
+3. (Optional) Check the commit logs to find the commits that conflict with your own using `git log --merge`. 
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git log --merge
     <font color="#b5bd68">commit fac422e78f105ccb44b50a00fc82d6ea89b15513
     Merge: 9b28b1e 1dd2603
     Author: Francis Totten frank@fabrikam.com
-    
+
         merging new api endpoint</font>
     </pre>   
 
-0. Update the conflicted files listed in `git status`. Git adds markers to files that have conflicts. These markers look like:   
-   
-    <pre>
-    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+4. Update the conflicted files listed in `git status`. Git adds markers to files that have conflicts. These markers look like:   
+
+    ```
+    <<<<<<< HEAD
     console.log("Writing changes to dev console");
     =======
     debug("Writing changes to debug module);
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt; dev-updates
-    </pre>
+    >>>>>>> dev-updates
+    ```
 
     The `<<<<<<<` section are the changes from one commit, the `=======` separates the changes, and `>>>>>>>` for the other conflicting commit.   
 
-0. Edit the files so that they look exactly how they should, removing the markers. Use `git add` to stage the resolved changes.
-0. Resolve file deleting conflicts with `git add` (keep the file) or `git rm` (remove the file).
-0. If performing a merge (such as in a `pull`), commit the changes. If performing a rebase, use `git rebase --continue` to proceed.
+5. Edit the files so that they look exactly how they should, removing the markers. Use `git add` to stage the resolved changes.
+6. Resolve file deleting conflicts with `git add` (keep the file) or `git rm` (remove the file).
+7. If performing a merge (such as in a `pull`), commit the changes. If performing a rebase, use `git rebase --continue` to proceed.
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git add <font color="#b5bd68">serverboot.js</font>
     &gt; git commit -m <font color="#b5bd68">"Resolved both new api endpoints"</font>
     </pre>
 
----
-
+* * *
 ## Next steps
 
 > [!div class="nextstepaction"]

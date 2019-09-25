@@ -1,15 +1,16 @@
 ---
 title: Use advanced code search options
-description: How To Use Code Search - Advanced options for using Code Search across all your projects in Azure DevOps and Team Foundation Server
+titleSuffix: Azure Repos
+description: Advanced options for using Code Search across all your projects in Azure DevOps
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
-ms.technology: devops-collab
+ms.technology: devops-collab, devops-code-git, devops-code-tfvc
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/07/2018
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
+ms.date: 04/15/2019
 ---
 
 # How To: Use Code Search
@@ -38,6 +39,10 @@ By using Code Search you can:
   that text across all your projects and files. Easily trace how your code works 
   by using the shortcut menu to search for related items such as definitions and 
   references - directly from inside a file.<p />
+
+> [!NOTE]
+> You cannot search code in forked repositories. 
+
 
 <a name="syntaxdetails"></a>
 ## Syntax for simple and compound searches
@@ -149,7 +154,8 @@ Within a phrase:
 
 ### Search for special characters
 
-> **Note**: This feature is currently available only for Azure DevOps Services customers and not TFS.
+> [!NOTE]
+> This feature is currently available only for Azure DevOps Services customers and not TFS.
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:
@@ -182,45 +188,45 @@ C#, C, C++, Java, and Visual Basic.NET code.
 
 | To find code where _findThis_ appears as a ... | ... search for argument **arg:**_findThis_ |
 | --- | --- |
-| Argument | **arg:**_findThis_ | 
+| Argument | **arg:**_findThis_ ```Deprecated in July 2019```| 
 | Base type | **basetype:**_findThis_ | 
-| Calling function | **caller:**_findThis_ |
+| Calling function | **caller:**_findThis_ ```Deprecated in July 2019```|
 | Class definition or declaration | **class:**_findThis_ |
-| Class declaration | **classdecl:**_findThis_ |
-| Class definition | **classdef:**_findThis_ |
+| Class declaration | **classdecl:**_findThis_ ```Merged with class:```|
+| Class definition | **classdef:**_findThis_  ```Merged with class:```|
 | Comment | **comment:**_findThis_ |
-| Constructor | **ctor:**_findThis_ |
+| Constructor | **ctor:**_findThis_ ```Merged with method:```|
 | Declaration | **decl:**_findThis_ |
 | Definition | **def:**_findThis_ |
-| Destructor | **dtor:**_findThis_ |
+| Destructor | **dtor:**_findThis_ ```Merged with method:```|
 | Enumerator | **enum:**_findThis_ |
-| Extern | **extern:**_findThis_ |
+| Extern | **extern:**_findThis_ ```Deprecated in July 2019```|
 | Field | **field:**_findThis_ |
-| Friend function | **friend:**_findThis_ |
-| Function | **func:**_findThis_ |
-| Function declaration | **funcdecl:**_findThis_ |
-| Function definition | **funcdef:**_findThis_ |
-| Global | **global:**_findThis_ |
-| Header | **header:**_findThis_ |
+| Friend function | **friend:**_findThis_ ```Deprecated in July 2019```|
+| Function | **func:**_findThis_ ```Merged with method:```|
+| Function declaration | **funcdecl:**_findThis_ ```Merged with method:```|
+| Function definition | **funcdef:**_findThis_ ```Merged with method:```|
+| Global | **global:**_findThis_ ```Deprecated in July 2019```|
+| Header | **header:**_findThis_ ```Deprecated in July 2019```|
 | Interface | **interface:**_findThis_ |
 | Macro | **macro:**_findThis_ |
-| Macro definition | **macrodef:**_findThis_ |
-| Macro reference | **macroref:**_findThis_ |
+| Macro definition | **macrodef:**_findThis_ ```Merged with macro:```|
+| Macro reference | **macroref:**_findThis_ ```Merged with macro:```|
 | Method | **method:**_findThis_ |
-| Method declaration | **methoddecl:**_findThis_ |
-| Method definition | **methoddef:**_findThis_ |
+| Method declaration | **methoddecl:**_findThis_ ```Merged with method:```|
+| Method definition | **methoddef:**_findThis_ ```Merged with method:```|
 | Namespace | **namespace:**_findThis_ |
 | Property | **prop:**_findThis_ |
 | Reference | **ref:**_findThis_ |
 | String literal | **strlit:**_findThis_ |
-| Struct | **struct:**_findThis_ |
-| Struct declaration | **structdecl:**_findThis_ |
-| Struct definition | **structdef:**_findThis_ |
-| Template argument | **tmplarg:**_findThis_ |
-| Template specification | **tmplspec:**_findThis_ |
+| Struct | **struct:**_findThis_ ```Merged with type:```|
+| Struct declaration | **structdecl:**_findThis_ ```Merged with type:```|
+| Struct definition | **structdef:**_findThis_ ```Merged with type:```|
+| Template argument | **tmplarg:**_findThis_ ```Deprecated in July 2019```|
+| Template specification | **tmplspec:**_findThis_ ```Deprecated in July 2019```|
 | Type | **type:**_findThis_ |
-| Typedef | **typedef:**_findThis_ |
-| Union | **union:**_findThis_ |
+| Typedef | **typedef:**_findThis_ ```Merged with type:```|
+| Union | **union:**_findThis_ ```Deprecated in July 2019```|
 
 <a name="locationfunctions"></a>
 ## Functions to select projects, repositories, paths, and files

@@ -22,15 +22,15 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
 ## At the start of an iteration  
  Iteration planning takes place at or before the start of each iteration. It includes the following tasks:  
   
--   Review the requirements that are assigned to the iteration, and define them in more detail.  
+- Review the requirements that are assigned to the iteration, and define them in more detail.  
   
--   Create task work items for the work that must be performed to implement and test each requirement. Link the tasks to the requirement work item by using the parent link type.  
+- Create task work items for the work that must be performed to implement and test each requirement. Link the tasks to the requirement work item by using the parent link type.  
   
--   Set the Original Estimate field of each task. Divide tasks that have estimates that are longer than a few days.  
+- Set the Original Estimate field of each task. Divide tasks that have estimates that are longer than a few days.  
   
--   Compare the estimates with the time that is available for the iteration. If the estimate total is too long, simplify some of the requirements, or defer them to later iterations.  
+- Compare the estimates with the time that is available for the iteration. If the estimate total is too long, simplify some of the requirements, or defer them to later iterations.  
   
- For more information, see [Plan an iteration](guidance-plan-an-iteration-cmmi.md).  
+  For more information, see [Plan an iteration](guidance-plan-an-iteration-cmmi.md).  
   
 ## During an iteration  
   
@@ -95,11 +95,11 @@ The requirements are considered completed only if the associated tests pass.
   
  The integration consists of two steps:  
   
--   A forward integration, to merge the newer code from the main branch into the local project branch. After performing the merge, automatic and manual tests are run. This will create some defects. The defects are fixed at high priority.  
+- A forward integration, to merge the newer code from the main branch into the local project branch. After performing the merge, automatic and manual tests are run. This will create some defects. The defects are fixed at high priority.  
   
--   A reverse integration. The local branch code is merged into the main branch, and the build and full test suite on the main branch runs. The changes are reversed if any errors occur. Introducing errors to the main branch is frowned upon. If no errors occur, the integration is declared completed.  
+- A reverse integration. The local branch code is merged into the main branch, and the build and full test suite on the main branch runs. The changes are reversed if any errors occur. Introducing errors to the main branch is frowned upon. If no errors occur, the integration is declared completed.  
   
- We recommend that you perform an integration at the end of each iteration. If you delay it, the list of bugs to be fixed after forward integration is longer. If it takes a long time to fix the bugs, the main branch will have new material, and you will have to perform another forward integration.  
+  We recommend that you perform an integration at the end of each iteration. If you delay it, the list of bugs to be fixed after forward integration is longer. If it takes a long time to fix the bugs, the main branch will have new material, and you will have to perform another forward integration.  
   
 ### Preparing for the Next Iteration  
  Toward or at the end of an iteration, several project management activities are performed. These include reviewing risks and reviewing the plan with regard to change requests and changed development estimates.  

@@ -1,7 +1,7 @@
 ---
 title: Storyboard your ideas with Microsoft PowerPoint
-titleSuffix: Azure Boards 
-description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Azure Boards or Team Foundation Server  
+titleSuffix: TFS 
+description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
@@ -9,12 +9,13 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 05/10/2017
+monikerRange: '<= tfs-2018'
+ms.date: 09/06/2019
 ---
 
 # Storyboard your ideas using Microsoft PowerPoint
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-tfs-2018-earlier.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that Microsoft PowerPoint Storyboarding provides.
 
@@ -109,7 +110,7 @@ Start using Storyboarding with PowerPoint today by downloading the free plug-in 
 ### Custom shapes 
 You can create your own shapes using [My Shapes](add-share-storyboard-shapes.md), which get saved to the following folder in a .sbsx file:
 
-<code><i>Drive</i>:\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
+<code><i>Drive</i>:\Users\\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
 
 <!---
 You can then share your custom shapes or import custom shapes developed by others in the Visual Studio community.  

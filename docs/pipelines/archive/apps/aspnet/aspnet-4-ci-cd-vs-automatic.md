@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 498BF7D8-2932-46FB-BD38-E8EBD1C5CABA
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 02/10/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -33,7 +33,7 @@ The quickest way to create a continuous delivery pipeline is with the Continuous
 which automate the creation of build and release definitions. The tools assume that you have an existing Azure Pipelines subscription,
 and that your project has been added to source control.
 
-To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](http://aka.ms/CD4VS).
+To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](https://aka.ms/CD4VS).
 
 ## Create the build and release definitions automatically
 

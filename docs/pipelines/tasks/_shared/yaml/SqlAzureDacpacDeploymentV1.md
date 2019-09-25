@@ -1,6 +1,6 @@
 ```YAML
-# Azure SQL Database Deployment
-# Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
+# Azure SQL Database deployment
+# Deploy an Azure SQL Database using DACPAC or run scripts using SQLCMD
 - task: SqlAzureDacpacDeployment@1
   inputs:
     #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM

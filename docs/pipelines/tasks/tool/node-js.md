@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -26,8 +26,11 @@ Use this task in a build or release pipeline to find, download, and cache a spec
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.md)]
+
 ::: moniker-end
 
 ## Arguments

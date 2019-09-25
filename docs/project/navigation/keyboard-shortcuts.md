@@ -1,5 +1,5 @@
 ---
-title: Web portal& Team Explorer keyboard shortcuts 
+title: Web portal Team Explorer keyboard shortcuts 
 titleSuffix: Azure DevOps
 description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
 ms.custom: Navigation
@@ -31,31 +31,17 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 <tbody valign="top">
 <tr>
 <td width="50%">
-<p>**Navigate**</p> 
- 
-**Ctrl+Alt,a**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![admin link](../../boards/_img/icons/gear_icon.png) admin link  
-**Ctrl+Alt,h**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![help link](../../boards/_img/icons/help.png) help link  
-**Ctrl+Alt,s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><br/>
-**Ctrl+Alt,**![Down arrow](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section   
-**Ctrl+Alt,**![Up arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section   
+<p><strong>Navigate</strong></p> 
 
+<strong>Ctrl+Alt,a</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to <img src="../../boards/_img/icons/gear_icon.png" alt="admin link"/> admin link<br/><strong>Ctrl+Alt,h</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to <img src="../../boards/_img/icons/help.png" alt="help link"/> help link<br/><strong>Ctrl+Alt,s</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><br/>
+<strong>Ctrl+Alt,</strong><img src="/azure/devops/boards/_img/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section<br/><strong>Ctrl+Alt,</strong><img src="/azure/devops/boards/_img/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section<br/>
 </td>
 <td width="50%">
 
-<p>**Navigate within lists**</p>
-**Tab**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
-**Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list  
-**Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list<br/>
-**Ctrl+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;Move item up/down within list  
-**Shift**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight consecutive items  
-**Menu**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open context menu  
-**Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss context menu<br/> 
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose selected menu item  
- 
+<p><strong>Navigate within lists</strong></p>
+<strong>Tab</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus<br/><img src="../../boards/_img/icons/Arrow_Next.png" alt="Left/right arrow"/> <img src="/azure/devops/boards/_img/icons/Arrow_Previous.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/><img src="/azure/devops/boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="/azure/devops/boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Ctrl+Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list<br/><strong>Ctrl+End</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list<br/>
+<strong>Ctrl+</strong><img src="../../boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;Move item up/down within list<br/><strong>Shift</strong><img src="../../boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight consecutive items<br/><strong>Menu</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open context menu<br/><strong>Esc</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss context menu<br/> 
+<img src="../../boards/_img/icons/Arrow_Next.png" alt="Left/right arrow"/> <img src="../../boards/_img/icons/Arrow_Previous.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/><img src="../../boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose selected menu item<br/>
 </td>
 </tr>
 </tbody>
@@ -131,19 +117,20 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018"  
 ## Wiki  
-::: moniker-end
+::: moniker-end  
+
 ::: moniker range="tfs-2018"
 > [!NOTE]  
 > Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018"  
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
 
 ::: moniker-end
- 
+
 ## Team Explorer navigational shortcuts
 
 Use these shortcuts when working in Team Explorer. 
@@ -152,47 +139,20 @@ Use these shortcuts when working in Team Explorer.
 <tbody valign="top" width="100%" style="font-size:90%">
 <tr>
 <td width="56%">
-<p>**Navigate**</p> 
-**Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  
-**Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](../../pipelines/overview.md)  
-**Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../organizations/projects/connect-to-projects.md)  
-**Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)  
-**Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../../repos/git/gitquickstart.md)   
-**Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open [Changes (Git)](../../repos/git/gitquickstart.md)  
-**Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home  
-**Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)  
-**Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)   
-**Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../../report/sql-reports/reporting-services-reports.md)  
-**Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
-**Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items    
-**Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)  
-
+<p><strong>Navigate</strong></p> 
+<strong>Ctrl+0,a</strong>&nbsp;&nbsp;&nbsp;Open web portal<br/><strong>Ctrl+0,b</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../pipelines/overview.md" data-raw-source="[Build](../../pipelines/overview.md)">Build</a><br/><strong>Ctrl+0,c</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a><br/><strong>Ctrl+0,d</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../report/sharepoint-dashboards/share-information-using-the-project-portal.md" data-raw-source="[Documents](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)">Documents</a><br/><strong>Ctrl+0,e</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a><br/><strong>Ctrl+0,g</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a><br/><strong>Ctrl+0,h</strong>&nbsp;&nbsp;&nbsp;Open Home<br/><strong>Ctrl+0,m</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)">My Work (TFVC)</a><br/><strong>Ctrl+0,p</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Pending changes (TFVC)</a><br/><strong>Ctrl+0,r</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[Reports](../../report/sql-reports/reporting-services-reports.md)">Reports</a><br/><strong>Ctrl+0,s</strong>&nbsp;&nbsp;&nbsp;Open Settings<br/><strong>Ctrl+0,w</strong>&nbsp;&nbsp;&nbsp;Open Work items<br/><strong>Ctrl+0,y</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Synchronization (Git)](../../repos/git/gitquickstart.md)">Synchronization (Git)</a><br/>
 <br/>
-**Ctrl+'**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  
-**Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page  
-**Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]   
-**Alt+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png)![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
+<strong>Ctrl+&#39;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><strong>Alt+0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page<br/><strong>Alt+1</strong>&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]<br/><strong>Alt+</strong><img src="../../boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/><img src="../../boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
 
 </td>
 
 
 <td width="44%">
-<p>**Context menu**</p> 
-![Down arrow](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu  
-**Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu   
-<br/>
-<p>**Work item commands**</p> 
+<p><strong>Context menu</strong></p> 
+<img src="../../boards/_img/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu<br/><strong>Esc</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu<br/><img src="../../boards/_img/icons/Arrow_Next.png" alt="Left/right arrow"/> <img src="../../boards/_img/icons/Arrow_Previous.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/><img src="../../boards/_img/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/_img/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu<br/><br/>
+<p><strong>Work item commands</strong></p> 
 
-**Alt+m,g**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item  
-**Alt+m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a work item](../../boards/backlogs/add-work-items.md)  
-**Alt+m,q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a query](../../boards/queries/using-queries.md)  
-**Shift+Alt,c**&nbsp;&nbsp;Copy selected work item  
-**Shift+Alt,l**&nbsp;&nbsp;Link to new work item  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item  
- 
+<strong>Alt+m,g</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item<br/><strong>Alt+m,i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Add a work item](../../boards/backlogs/add-work-items.md)">Add a work item</a><br/><strong>Alt+m,q</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../boards/queries/using-queries.md" data-raw-source="[Add a query](../../boards/queries/using-queries.md)">Add a query</a><br/><strong>Shift+Alt,c</strong>&nbsp;&nbsp;Copy selected work item<br/><strong>Shift+Alt,l</strong>&nbsp;&nbsp;Link to new work item<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item<br/>
 
 </td>
 </tr>
@@ -204,50 +164,6 @@ You can use query results shortcuts whenever you have a list of work items, such
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
 
 
-<!---
-<table>
-<tbody valign="top" width="100%" style="font-size:90%">
-<tr>
-<td>
-<p>**Query editor**</p> 
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus down  
-**Tab**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus right, one field at a time   
-**Shift+**![Left/right arrow](../../boards/_img/icons/Arrow_Next.png)![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;Move focus left/right one field at a time  
-**End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to end of current clause    
-<br/>
-**Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy selected clause   
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes (editor or results)   
-**Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied clause    
-**Shift+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png)![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;Highlight consecutive clauses  
-Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete contents of current field or clause 
-</td>
-
-
-<td>
-<p>**Query results**</p> 
-
-**F5**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refresh   
-**Shift+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png)![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Highlight consecutive rows   
-**Shift+Alt,n**&nbsp;&nbsp;&nbsp;Move focus to next item  
-**Shift+Alt,p**&nbsp;&nbsp;&nbsp;Move focus to previous item  
-**Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list  
-**End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list  
-<br/>
-**+/-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand/collapse current row  
-**PgUp/PgDn**&nbsp;&nbsp;&nbsp;&nbsp;Scroll up/down  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scroll left/right  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item  
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes   
-
-</td>
-</tr>
-</tbody>
-</table>
--->
-
-
 
 ## Related articles 
 
@@ -257,7 +173,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Web portal navigation](..//navigation/index.md) 
 
-###Install Team Explorer  
+### Install Team Explorer  
 
 Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
 

@@ -60,12 +60,12 @@ We're excited to announce the general availability of the new text editor on the
 You can use this control in any text field on the work item form, including in your discussions. Here is the new experience that you can expect to see:
 
 > [!div class="mx-imgBorder"]
-![Text editor](_img/143_05.png)
+> ![Text editor](_img/143_05.png)
 
 Below, you can see the code snippet experience. With this addition, you can easily and clearly discuss code in the work item form.
 
 > [!div class="mx-imgBorder"]
-![Text editor code](_img/143_06.png)
+> ![Text editor code](_img/143_06.png)
 
 We really want to start making the work item a more social experience. Our first step in that journey is bringing emoji support to your text fields and discussions on the work item. Using emojis, you will be able to bring your descriptions and comments to life and give them a bit more personality!
 
@@ -78,7 +78,7 @@ The work done for this editor is open source, so please feel free to check out t
 Most of the experiences in **Azure Repos** require you to select a repo and then a branch in that repo. To improve this experience for organizations with large number of branches, we are rolling out a new branch picker. The picker now allows you to select your favorite branches or quickly search for a branch.
 
 > [!div class="mx-imgBorder"]
-![Branch picker](_img/143_04.png)
+> ![Branch picker](_img/143_04.png)
 
 ### Draft pull requests
 
@@ -87,12 +87,12 @@ In order to prevent pull requests from being completed before they're ready and 
 Draft pull requests can be created by selecting **Create as draft** from the **Create** button drop down when creating a pull request.
 
 > [!div class="mx-imgBorder"]
-![Create PR draft](_img/143_02.png)
+> ![Create PR draft](_img/143_02.png)
 
 Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/143_03.png)
+> ![Badge](_img/143_03.png)
 
 Draft pull requests do not include reviewers or run builds by default but allow you to manually add reviewers and run builds. To promote the pull request to a normal pull request, simply click the **Publish** button from the pull request detail page.
 
@@ -146,11 +146,11 @@ Up until now, project contributors could not create pipelines unless they are ex
 By default, **Azure Pipelines** used to re-run all jobs when you redeploy a previously failed run. Now, you can override this behavior by configuring the **Deployment Option** when deploying. By selecting the **All jobs and limit to failed targets in a deployment group** option, the re-run will run all the jobs and skip the deployments to the targets that are already up to date.  
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/143_08.png)
+> ![Badge](_img/143_08.png)
 
 ### Support for Infrastructure as Code
 
-We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps projects](https://azure.microsoft.com/en-in/features/devops-projects/). IaC is a process of managing and provisioning computing infrastructure with some declarative approach, while setting their configuration using definition files instead of traditional interactive configuration tools. This will enable you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution using a template for deployment. This template can be used for different environments such as testing, staging, and production.
+We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps projects](https://azure.microsoft.com/features/devops-projects/). IaC is a process of managing and provisioning computing infrastructure with some declarative approach, while setting their configuration using definition files instead of traditional interactive configuration tools. This will enable you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution using a template for deployment. This template can be used for different environments such as testing, staging, and production.
 
 ## Azure Artifacts
 
@@ -160,13 +160,13 @@ Previously, in order to exclude files from published artifacts, you would have t
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-), [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) (for Python), and [Universal Packages](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+), [NuGet](https://docs.microsoft.com/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) (for Python), and [Universal Packages](https://docs.microsoft.com/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/143_10.png)
+> ![Badge](_img/143_10.png)
 
 ### Azure Artifacts REST API documentation updates
 
@@ -188,7 +188,7 @@ Read about the new features below and head over to Azure DevOps to try them for 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

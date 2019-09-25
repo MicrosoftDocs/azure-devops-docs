@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 # Customize a process when using Hosted XML
 
 **Azure DevOps Services (Hosted XML)**
- 
+
 > [!IMPORTANT]  
 > With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
@@ -34,8 +34,7 @@ A process is a zip file containing a set of interdependent files used to define 
 <th>Used when importing/updating a process </th>
 <th>Used when creating a new project</th> 
 <th>Replaced by system defaults</th> 
-<th>Ignored </th>   
-</tr>
+<th>Ignored </th><br/></tr>
 <tr valign="top">
 <td>
 <p>Work Item Tracking</p>
@@ -58,8 +57,7 @@ A process is a zip file containing a set of interdependent files used to define 
 <p>Microsoft Project mappings</p> 
 <p>Reports</p> 
 <p>Portal (SharePoint Products) </p> 
-</td>    
-</tr>
+</td><br/></tr>
 </tbody>
 </table>
 
@@ -67,7 +65,7 @@ A process is a zip file containing a set of interdependent files used to define 
 ![Supported process plug-ins and objects for process import](_img/ALM_IP_SupportedPlugins.png)
 
 For a summary of differences between what's supported in Azure DevOps Services versus an on-premises TFS, see [Process template customizations differences](differences.md).  
- 
+
 ## How to customize a process
 It's easiest to customize a process by starting with a well-defined process rather than building one from scratch.   
 While you can update an existing process you've used with an on-premises TFS, you'll need 
@@ -81,33 +79,33 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 ### Export and import a process  
 
-1.  From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
-    
-	<img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
-  
-    Save the zip file and extract all files.
+1. From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
 
-2.	Rename the process in the ProcessTemplate.xml file located in the root folder.
+   <img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
 
-    Name the process to distinguish it from existing ones.
-    
-    ```<name>MyCompany Agile Process  </name>```
+   Save the zip file and extract all files.
 
-    Change the version type, and major and minor numbers. Provide a distinct GUID for the type. For example: 
+2. Rename the process in the ProcessTemplate.xml file located in the root folder.
+
+   Name the process to distinguish it from existing ones.
+
+   ```<name>MyCompany Agile Process  </name>```
+
+   Change the version type, and major and minor numbers. Provide a distinct GUID for the type. For example: 
 
    ```<version type="F50EFC58-C2FC-4C66-9814-E395D90778A3" major="1" minor="1"/>```
 
-3.	Apply [supported customizations](#supported-customizations).  
-         
-4.  Create a zip file of all files and folders in the root directory.
+3. Apply [supported customizations](#supported-customizations).  
 
-5.  [Import the zip file of your custom process](import-process.md).
- 
+4. Create a zip file of all files and folders in the root directory.
+
+5. [Import the zip file of your custom process](import-process.md).
+
 <a id="supported-customizations"></a>
 
 ## Supported customizations
 You can apply the following customizations to your process 
- 
+
 *   [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md)    
 *   [Add or modify a field](../../../../reference/add-modify-wit.md)    
 *   [Add up to five portfolio backlogs](../../../../reference/add-portfolio-backlogs.md)
@@ -136,7 +134,7 @@ You can import up to 32 processes to Azure DevOps Services. Your custom process 
       * [Global lists](#wit-global-list-definitions) 
     * [Workflow](#work-item-workflow) 
     * [Form layout](#work-item-form-layout)
- 
+
 <a id="process"></a>
 ### Process template
 Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md). In addition, it must meet the following conditions:  
@@ -144,17 +142,17 @@ Your ProcessTemplate.xml file must conform to the syntax and rules described in 
 * Contain only one Categories.xml definition file  
 * Contain only one ProcessConfiguration.xml definition file  
 * Friendly names must be unique across all fields and WIT definitions
- 
+
 In addition, your process must pass the following validation checks:  
 * Process names must be unique and 155 Unicode characters or less.
   * Templates with the same name and version GUID overwrite existing processes.
   * Templates with the same name but a different version GUID generate an error.  
   * Process names cannot contain the following special characters:  
-     ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
+     ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >```  
     See [Naming restrictions](../../naming-restrictions.md) for additional constraints.
 * Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation fails.
 * Process total size should be 2 GB or less, or project creation fails.
- 
+
 <a id="process-configuration"></a>
 ### Process configuration
 The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In addition, it must meet the following conditions:  
@@ -231,7 +229,7 @@ The following core system fields are hard-coded as identity fields:
 *   Authorized As (System.AuthorizedAs)
 *   Changed By (System.ChangedBy)   
 *   Created By (System.CreatedBy)  
- 
+
 The following fields are only considered identity fields if an identity rule is applied to their ```FIELD``` definition. 
 *   Activated By (Microsoft.VSTS.Common.ActivatedBy)  
 *   Closed By (Microsoft.VSTS.Common.ClosedBy)  

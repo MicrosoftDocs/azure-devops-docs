@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 05/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,37 +18,34 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Set up billing when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
+[Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies.
 
-The Free tier includes:
+The *free tier* includes:
 
-* Five Azure DevOps users (Basic).
-* Five Azure Artifacts users.
-* Free Tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month).
-* One self-hosted CI/CD concurrent job.
-* 20,000 virtual user minutes of cloud-based load testing.
+[!INCLUDE [free-tier](../../_shared/free-tier.md)]
 
-> During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
-> 
-> These are the paid services that are offered by Microsoft:
->
-> * [Azure DevOps users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-> * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
-> * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
-> * [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Test Manager)
-> * [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (formerly Package Management)
->
-> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests that you run. By default, paid usage is turned off for your organization.
-> You can only enable paid usage via the Azure portal.
+During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
+ 
+The following links take you to the paid services that are offered by Microsoft:
+
+ * [Buy Basic access for users](buy-basic-access-add-users.md)
+ * [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+ * [Buy CI/CD](buy-more-build-vs.md)
+ * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+ * [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
+
+Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+
 ## Prerequisites
 
-The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, Azure DevOps tab, you need:
+Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
 
-* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
+* User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 

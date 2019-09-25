@@ -49,56 +49,56 @@ If you're not a member of the project administrators group, [get added](../../or
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **All**. Expand **Shared Queries**. 
+1. Choose **All**. Expand **Shared Queries**. 
  
-0. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](_img/organize-queries/select-new-folder.png)
 
-0. Enter the name for the folder. If you want to change the location of the folder, select it from the Folder drop down menu.  
+2. Enter the name for the folder. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
 	Here we name the folder *Service Delivery* with the intention that it will be used by the Service Delivery team.
 
 	> [!div class="mx-imgBorder"]  
 	> ![New folder dialog](_img/permissions/new-folder-dialog.png)
 
-0.  To set permissions for the folder you just added, choose the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.
+3. To set permissions for the folder you just added, choose the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.
 
-0.  Change the permissions so that the team member or group can contribute and manage permissions for the folder. Choose the **Add...** menu to add a user identity or group. 
+4. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Choose the **Add...** menu to add a user identity or group. 
 
-	Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
+   Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a query folder](_img/permissions/permissions-dialog-query-folder-service-delivery.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Permissions dialog for a query folder](_img/permissions/permissions-dialog-query-folder-service-delivery.png) 
 
-    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
+   **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-0. (Optional) Turn inheritance off. Default is **On**. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+5. (Optional) Turn inheritance off. Default is **On**. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
   
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-0. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
+1. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
 
 	![New query folder link on queries context menu](_img/set-query-perm-new-folder.png)  
 
-0.  To set permissions for the folder, choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder you just added and choose **Security**.
+1. To set permissions for the folder, choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder you just added and choose **Security**.
 
-	![Permissions dialog for a query folder](_img/set-permissions-query-folder-security.png)
+   ![Permissions dialog for a query folder](_img/set-permissions-query-folder-security.png)
 
-0.  Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
+2. Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
 
-	Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
+   Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-	<img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />    
+   <img src="_img/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />    
 
-    Choose the **Add...** menu to add a user identity or group.
+   Choose the **Add...** menu to add a user identity or group.
 
-    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
+   **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-0. (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+3. (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
 
 ::: moniker-end
 
@@ -108,32 +108,32 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range=">= azure-devops-2019"
 
-0.  Choose  the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.  
+1. Choose  the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open query permissions](_img/permissions/query-permissions-select.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Open query permissions](_img/permissions/query-permissions-select.png)
 
-0.  Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
+1. Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
-	Here we deny permissions for project admins.  
+   Here we deny permissions for project admins.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a query](_img/permissions/query-permissions-dialog.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Permissions dialog for a query](_img/permissions/query-permissions-dialog.png)
 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-0.  Choose the ![ ](../_img/icons/context_menu.png) context menu icon and select **Security**. 
+1. Choose the ![ ](../_img/icons/context_menu.png) context menu icon and select **Security**. 
 
-	![Open query permissions](_img/set-query-perm-security-menu-option.png)
+   ![Open query permissions](_img/set-query-perm-security-menu-option.png)
 
-0.  Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
+1. Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
-	Here we deny permissions for project admins.  
+   Here we deny permissions for project admins.  
 
-	![Permissions dialog for a query](_img/set-permissions-deny-for-query.png)
+   ![Permissions dialog for a query](_img/set-permissions-deny-for-query.png)
 
 ::: moniker-end
 

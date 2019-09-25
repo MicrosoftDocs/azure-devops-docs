@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -26,8 +26,11 @@ The build agent must have the following capability:
  * Grunt
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GruntV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -41,7 +44,7 @@ The build agent must have the following capability:
 </thead>
 <tr>
 <td>Grunt File Path</td>
-<td>Relative path from the repo root to the Grunt script that you want to run. The default value is ```gruntfile.js```
+<td>Relative path from the repo root to the Grunt script that you want to run. The default value is <code>gruntfile.js</code>
 </td>
 </tr>
 <tr>
@@ -54,14 +57,16 @@ The build agent must have the following capability:
 <tr>
 <td>Arguments</td>
 <td>
-<p>Additional arguments passed to Grunt. See [Using the CLI](http://gruntjs.com/using-the-cli).</p><p>Tip: ```--gruntfile``` is not needed. This argument is handled by the Grunt file path argument shown above.</p>
+<p>Additional arguments passed to Grunt. See <a href="http://gruntjs.com/using-the-cli" data-raw-source="[Using the CLI](http://gruntjs.com/using-the-cli)">Using the CLI</a>.</p><p>Tip: <code>--gruntfile</code> is not needed. This argument is handled by the Grunt file path argument shown above.</p>
 </td>
 </tr>
 <tr>
 <td>Working directory</td>
 <td>Current working directory when the script is run.  If you leave it blank, the working directory is the folder where the script is located.</td>
 </tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example

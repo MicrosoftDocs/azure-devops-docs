@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Ignore file changes with Git
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Not every file created or updated in your code should be committed to Git. Temporary files from your development environment, test outputs and logs are all examples
 of files that you create but are not part of your codebase. Customize which files Git tracks through the gitignore feature.
@@ -23,7 +23,7 @@ of files that you create but are not part of your codebase. Customize which file
 In this tutorial you learn how to:
 
 > [!div class="checklist"]
-> * Use gitignore to prevent tracking or files
+> * Use gitignore to prevent tracking of files
 > * Ignore files only on your system
 > * Ignore files across all repos on your system
 > * Ignore changes to committed files
@@ -111,7 +111,7 @@ same as the one used in .gitignore.
 Set up a global .gitignore for use across all repos on your system using the command line `git config` tool:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git config core.excludesfile <font color="#b5bd68">C:\Users\frank\.gitignore_global</font>
+&gt; git config core.excludesfile <font color="#b5bd68">C:\Users\frank&#92;.gitignore_global</font>
 </pre>
 
 This is particularly useful for ignoring entire file types you don't want to ever commit, such as compiled binaries.
@@ -124,13 +124,13 @@ During development it's convenient to stop tracking file changes to a file commi
 customizing settings or configuration files that are part of your project source for your own work environment.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git update-index --assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
+&gt; git update-index --skip-worktree <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
 
 Resume tracking files with:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git update-index --no-assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
+&gt; git update-index --no-skip-worktree <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
 
 #### Permanently ignore changes to a file
@@ -140,14 +140,14 @@ remove the information about the file from Git's index:
 
 > These steps will not delete the file from your system. They just tell Git to ignore future updates to the file.
 
-0. Add the file in your .gitignore. 
+1. Add the file in your .gitignore. 
 
-0. Run the following:
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git rm --cached <font color="#b5bd68">&lt;file&gt;</font>
-</pre>
+2. Run the following:
+   <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+   &gt; git rm --cached <font color="#b5bd68">&lt;file&gt;</font>
+   </pre>
 
-0. Commit the removal of the file and the updated .gitignore to your repo. 
+3. Commit the removal of the file and the updated .gitignore to your repo. 
 
 ## Next steps
 

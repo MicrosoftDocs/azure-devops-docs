@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Require branches to be created in folders
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.
@@ -71,28 +71,26 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 
 ## Rename old branches
 
-# [Browser](#tab/browser)
+#### [Browser](#tab/browser/)
+1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
+2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
+3. Choose its context menu (the `...` button) and choose **New branch**.
 
-0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
-0. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
-0. Choose its context menu (the `...` button) and choose **New branch**.
+   ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
 
-  ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
+4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-0. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
+   ![Create new branch](_img/require-branch-folders/create-new-branch.png)
 
-  ![Create new branch](_img/require-branch-folders/create-new-branch.png)
+5. Choose the red trashcan icon next to the old branch name to delete it.
 
-0. Choose the red trashcan icon next to the old branch name to delete it.
-
-  ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
+   ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
 
 
 >[!NOTE] 
 >Any custom permissions or branch policies you had set up will not be migrated.
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 First, make sure you have the latest set of branches:
 
     cd {your_repo}
@@ -107,4 +105,4 @@ Then, repeat these commands for each branch you want to migrate:
 >[!NOTE]
 >Any custom permissions or branch policies you had set up will not be migrated.
 
----
+* * *

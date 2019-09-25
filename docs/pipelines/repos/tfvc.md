@@ -8,7 +8,6 @@ ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.custom: seodec18
 ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -94,6 +93,8 @@ If you select **True** then the build pipeline performs an undo of any changes a
 [//]: # (TODO: confirm this is correct for TFVC; clarify folder)
 
 Select **true** to delete the repository folder.
+
+## Label sources
 
 [!INCLUDE [include](_shared/label-sources.md)]
 

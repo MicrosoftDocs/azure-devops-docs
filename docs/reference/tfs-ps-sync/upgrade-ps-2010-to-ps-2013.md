@@ -17,9 +17,9 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
   
 > [!NOTE]
 >  You cannot upgrade directly from Project Server 2007 to Project Server 2013. Instead, you first upgrade the app-tier and web-tier servers to Project Server 2010, then upgrade the required databases to Project Server 2013. For information about how to upgrade from Project Server 2007 to Project Server 2010, see the following resources on Microsoft TechNet:  
->   
->  -   [Upgrade and Migration for Project Server 2010 TechNet Resource Center](http://go.microsoft.com/fwlink/?LinkId=262119)  
-> -   [Microsoft Project Server 2010 Upgrade SuperFlow Center](http://go.microsoft.com/fwlink/p/?LinkId=253657)  
+> 
+> - [Upgrade and Migration for Project Server 2010 TechNet Resource Center](http://go.microsoft.com/fwlink/?LinkId=262119)  
+>   -   [Microsoft Project Server 2010 Upgrade SuperFlow Center](http://go.microsoft.com/fwlink/p/?LinkId=253657)  
   
 ## Upgrade process  
   
@@ -31,7 +31,7 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
   
 -   If you have moved from Windows authentication to Claims Based Authentication, synchronize the Active Directory security groups with Project Server.  
   
-     For instructions, see [Manage security group synchronization with Active Directory in Project Server 2013](http://technet.microsoft.com/library/gg750243.aspx).  
+     For instructions, see [Manage security group synchronization with Active Directory in Project Server 2013](https://technet.microsoft.com/library/gg750243.aspx).  
   
 #### Set or verify database permissions  
   

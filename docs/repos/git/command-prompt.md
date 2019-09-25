@@ -8,7 +8,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 
 #  Git command reference 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 ## Overview
 
@@ -153,13 +153,13 @@ Learn more:
 > [!WARNING]
 > If you are not an experienced Git user, exercise caution when using the `reset` command. [Learn more](undo.md)
 
-| How do I ? | Git command | Visual Studio |
-|------------|-------------|--------------|
-| Revert all changes and roll back to the most recent commit | git reset --hard HEAD | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
-| Revert staging of files, but keep file changes | git reset --mixed HEAD | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....** 
-| Delete untracked files | git clean -f | In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.
-| Reset your local branch to the most recent commit on a remote branch | git reset --hard *remote*/*branchname*<br>(for example, git reset --hard origin/master) | Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**
-| Revert a commit pushed to a remote repository | git revert *commitID* | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit to revert and select **Revert**.
+|                              How do I ?                              |                                       Git command                                       |                                                                                                      Visual Studio                                                                                                      |
+|----------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Revert all changes and roll back to the most recent commit      |                                  git reset --hard HEAD                                  | Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** |
+|            Revert staging of files, but keep file changes            |                                 git reset --mixed HEAD                                  |  Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**  |
+|                        Delete untracked files                        |                                      git clean -f                                       |                                        In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.                                         |
+| Reset your local branch to the most recent commit on a remote branch | git reset --hard *remote*/*branchname*<br>(for example, git reset --hard origin/master) |                                                        Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**                                                        |
+|            Revert a commit pushed to a remote repository             |                                  git revert *commitID*                                  |                         Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit to revert and select **Revert**.                          |
    
 Learn more: 
    

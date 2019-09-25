@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -281,10 +281,9 @@ public static void BasicAuthSoapSample()
 {
     // Authenticate using Basic Authentication
     NetworkCredential netCred = new NetworkCredential(basicAuthUsername, password);
-	BasicAuthCredential basicCred = new BasicAuthCredential(netCred);
-	TfsClientCredentials tfsCred = new TfsClientCredentials(basicCred);
-    tfsCred.AllowInteractive = false;
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), tfsCred))
+    WindowsCredential windowsCred = new WindowsCredential(netCred);
+    VssClientCredentials vssCredentials = new VssClientCredentials(windowsCred);
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
     {
         tpc.Authenticate();
         Console.WriteLine(tpc.InstanceId);
@@ -315,8 +314,8 @@ public static void BasicAuthRestSample()
 {
     // Create instance of VssConnection using basic auth credentials. 
     // For security, ensure you are connecting to an https server, since credentials get sent in plain text.
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials(new WindowsCredential(new NetworkCredential(username, password))));
-    
+    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssClientCredentials(new WindowsCredential(new NetworkCredential(username, password))));
+
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
     List <QueryHierarchyItem> items = witClient.GetQueriesAsync(teamProjectName).Result;
 }
@@ -344,9 +343,8 @@ public static void BasicAuthSoapSample()
     // Authenticate using Basic Authentication
     NetworkCredential netCred = new NetworkCredential(username, password);
     WindowsCredential windowsCred = new WindowsCredential(netCred);
-    TfsClientCredentials tfsCred = new TfsClientCredentials(windowsCred);
-    tfsCred.AllowInteractive = false;
-    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), tfsCred))
+    VssClientCredentials vssCredentials = new VssClientCredentials(windowsCred);
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), vssCredentials))
     {
         tpc.Authenticate();
         Console.WriteLine(tpc.InstanceId);

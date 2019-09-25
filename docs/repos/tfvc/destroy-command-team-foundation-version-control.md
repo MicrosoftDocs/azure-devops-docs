@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Destroy Command (Team Foundation Version Control)
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
 
@@ -45,10 +45,10 @@ To use the **destroy** command, you must belong to the **Team Foundation Adminis
 	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
-	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName.</em></p></td></tr>
+    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-	<td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
+    <td><p>The URL of the project collection that contains files that you want to destroy (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr></tbody>
 </table>
 
 <table><thead>
@@ -100,6 +100,7 @@ However, the file is actually not destroyed because you used the **/preview** op
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 
+
 ### Effects of /keephistory on Other Version Control Operations
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
@@ -111,6 +112,12 @@ If you specify the **/keephistory** option to retain the history of destroyed fi
 ### Destroying Previously Deleted Items
 
 If an item has already been deleted, a deletion ID is attached to it and results in a filename change.
+
+### Effects of TF DESTROY on TFVC repo Code Search
+
+Code Search does not handle TF DESTROY notifications and so using TF DESTROY for TFVC repos will not automatically delete files in the Search index.
+As a result, these files appear in the code search results. To avoid these ghost files scenario, users are recommended to delete files before TF DESTROY operation. 
+
 ## Examples
 ### Description
 

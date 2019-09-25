@@ -9,7 +9,7 @@ ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -56,11 +56,11 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the build definitions by specifying the platforms, configurations, and build definitions to include in the report.  
+- Filter the build definitions by specifying the platforms, configurations, and build definitions to include in the report.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Build Management Activities  
  For the Build Success Over Time report to be useful, team members must perform the following activities to manage builds:  
@@ -93,17 +93,17 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
 ### Questions That the Report Answers  
  You can review the Build Success Over Time report to find answers to these questions:  
   
--   How high is the quality of the builds?  
+- How high is the quality of the builds?  
   
--   Is the quality improving, deteriorating, or staying constant?  
+- Is the quality improving, deteriorating, or staying constant?  
   
--   What parts of the project are ready to test?  
+- What parts of the project are ready to test?  
   
--   What parts of the project are having trouble with regressions or bad checkins?  
+- What parts of the project are having trouble with regressions or bad checkins?  
   
--   How well is the code tested?  
+- How well is the code tested?  
   
- Team members should review the last column of the Build Success Over Time report to determine whether the most recent builds have passed. If long sections in the report are not green, project managers and development leads should determine the root of persistent problems.  
+  Team members should review the last column of the Build Success Over Time report to determine whether the most recent builds have passed. If long sections in the report are not green, project managers and development leads should determine the root of persistent problems.  
   
 ### Healthy and Unhealthy Versions of Report  
  A healthy Build Success Over Time report will show successive days of green, which indicate that builds are passing. An unhealthy version of the report will show long blocks of orange or red. These blocks indicate that builds are not passing or that tests are failing. The following illustration shows that some builds are in good shape and some need investigation:  
@@ -113,18 +113,18 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
 ##  <a name="Changing"></a> Filtering the Report  
  You can filter the Build Success Over Time report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the builds that appear in the report by specifying the platform, configuration, and build definitions to include.  
+- Filter the builds that appear in the report by specifying the platform, configuration, and build definitions to include.  
   
-    > [!NOTE]
-    >  You can configure build definition to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
+  > [!NOTE]
+  >  You can configure build definition to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.  
   
- The following illustration shows the available filters:  
+  The following illustration shows the available filters:  
   
- ![Filters for Build Summary report](_img/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
+  ![Filters for Build Summary report](_img/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
   
- You must apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you applied previously.  
+  You must apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you applied previously.  
   
 #### To filter the builds that appear in the report  
   

@@ -1,4 +1,4 @@
---- 
+---
 title: Import and export global lists using witadmin
 titleSuffix: TFS  
 description: Customize or update a global list by export/import using witadmin for Team Foundation Server 
@@ -23,18 +23,18 @@ Global lists are pick lists that you can include in one or more fields and types
 >**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
--   **destroygloballist**:  Destroys a global list.    
--   **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
--   **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
--   **listgloballist**:  Displays the name of each global list defined on the server.  
+- **destroygloballist**:  Destroys a global list.    
+- **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
+- **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
+- **listgloballist**:  Displays the name of each global list defined on the server.  
   
- See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
 
 [!INCLUDE [temp](../../_shared/process-editor.md)] 
   
-**Requirements**  
+## Prerequisites  
   
 For the project collection where the global lists are defined, you must have the following permissions set:  
   
@@ -54,7 +54,7 @@ witadmin importgloballist /collection:CollectionURL /f:FileName [/e:Encoding]
 witadmin listgloballist /collection:CollectionURL  
 ```  
   
-#### Parameters  
+### Parameters  
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
@@ -66,6 +66,7 @@ witadmin listgloballist /collection:CollectionURL
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
+
 Importing a global list creates a list if one does not exist. If the list already exists, the **witadmin importgloballist** command will warn you that the current list will be overwritten. You can write your own program to update an existing global list, or you can update the global list yourself with the new data.  
   
 To create a new global list, start with the following code and modify it as needed. This example defines a global list of disciplines that you can assign to tasks.  
@@ -93,12 +94,14 @@ To create a new global list, start with the following code and modify it as need
  For information about export and import of type definitions, see [Import, export, and manage work item types](witadmin-import-export-manage-wits.md).  
   
 ## Examples  
+
 Unless otherwise specified, the following values apply in each example:  
   
 -   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection     
 -   Server Web site port number: 8080   
   
 ### Display the names of global lists  
+
 The following example shows the global lists defined on the server. The example exports the global lists using the default UTF-8 encoding:  
   
 ```  
@@ -106,6 +109,7 @@ witadmin listgloballist /collection:http://AdventureWorksServer:8080/tfs/Default
 ```  
   
 ### Export the definition of global lists  
+
 The following example exports the global lists:  
   
 ```  
@@ -119,6 +123,7 @@ witadmin exportgloballist /collection:http://AdventureWorksServer:8080/tfs/Defau
 ```  
   
 ### Import the definition of global lists  
+
 The following example imports global lists:  
   
 ```  
@@ -132,6 +137,7 @@ witadmin importgloballist /collection:http://AdventureWorksServer:8080/tfs/Defau
 ```  
   
 ## Related articles 
+
 -  [GLOBALLIST XML element reference](../xml/define-global-lists.md)   
 -  [Customize global workflow](../xml/global-workflow-xml-element-reference.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

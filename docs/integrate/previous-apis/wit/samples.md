@@ -7,8 +7,8 @@ description: Samples for work item tracking using the REST APIs and .Net Librari
 ms.assetid: 6830FA0E-9EA6-4AD3-913D-9E3450315C13
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/24/2016
 ---
 
@@ -517,7 +517,7 @@ There are a few things happening in the code sample below:
 >    Object[] patchDocument = new Object[4];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Authorization Errors" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Priority", value = "1" };
 >    patchDocument[3] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Severity", value = "2 - High" };
 >
@@ -577,7 +577,7 @@ There are a few things happening in the code sample below:
 >        new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >
@@ -637,7 +637,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >    Object[] patchDocument = new Object[6];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Imported bug from my other system (rest api)" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/System.CreatedBy", value = "Some User" };
 >    patchDocument[3] = new { op = "add", path = "/fields/System.ChangedBy", value = "Some User" };
 >    patchDocument[4] = new { op = "add", path = "/fields/System.CreatedDate", value = "4/15/2016" };
@@ -699,7 +699,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >      new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >

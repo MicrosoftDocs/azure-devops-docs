@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -65,7 +65,7 @@ though service management methodologies such as ITIL. For more details, see [Rel
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [ServiceNow release and deployment control](servicenow.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)
 

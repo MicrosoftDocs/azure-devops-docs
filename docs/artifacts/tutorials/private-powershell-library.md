@@ -4,8 +4,8 @@ description: Use Azure Artifacts within Azure DevOps Services to create your own
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: amullans
 ms.date: 11/19/2018
 monikerRange: 'azure-devops'
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
 > [!NOTE]
-> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../license-azure-artifacts.md).
+> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../start-using-azure-artifacts.md).
 
 In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShell repository that your team can download and upload PowerShell modules to. You'll complete the following steps:
 
@@ -31,7 +31,7 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 ## Prerequisites
 
 1. [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
-2. [An Azure DevOps Services Account](https://azure.microsoft.com/en-us/services/devops/)
+2. [An Azure DevOps Services Account](https://azure.microsoft.com/services/devops/)
 
 ## Create a PAT to get command-line access to Azure DevOps Services
 
@@ -154,7 +154,7 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     FileList = @('PSModule.psm1',
              'PSGet.Format.ps1xml',
              'PSGet.Resource.psd1')
-   ```	     
+   ```       
 
 ### Package and send the module
 
@@ -168,30 +168,30 @@ We now have the module and the module manifest. We are ready to package it and s
 
     The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
 
-    * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
-    * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
-    * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
+   * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
+   * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
+   * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
-    ```xml
-    <?xml version="1.0"?>
-    <package >
-      <metadata>
-        <id>Get-Hello</id>
-        <version>1.0.0</version>
-        <authors>frantot</authors>
-        <owners>frantot</owners>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>The module says hello to the user</description>
-        <releaseNotes>This is the newest I know of.</releaseNotes>
-        <copyright>Copyright 2019</copyright>
-        <tags>Francis Totten</tags>
-        <dependencies>
-        </dependencies>
-      </metadata>
-    </package>
-    ```
+     ```xml
+     <?xml version="1.0"?>
+     <package >
+     <metadata>
+       <id>Get-Hello</id>
+       <version>1.0.0</version>
+       <authors>frantot</authors>
+       <owners>frantot</owners>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>The module says hello to the user</description>
+       <releaseNotes>This is the newest I know of.</releaseNotes>
+       <copyright>Copyright 2019</copyright>
+       <tags>Francis Totten</tags>
+       <dependencies>
+       </dependencies>
+     </metadata>
+     </package>
+     ```
 
-3. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
+2. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
 
      Package the module with the defined parameters within the `.nuspec` file:
     ```powershell
@@ -226,7 +226,8 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted
     ```
     
-    > **NOTE:** You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
+    > [!NOTE]
+    > You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
     
     If you're still using the older ```visualstudio.com``` URLs, use this command instead:
 

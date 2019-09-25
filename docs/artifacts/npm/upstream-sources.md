@@ -5,8 +5,8 @@ ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/13/2017
 monikerRange: '>= tfs-2017'
@@ -44,9 +44,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 > [!NOTE]
 > Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
 
-::: moniker range="azure-devops"
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"  
 
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
 

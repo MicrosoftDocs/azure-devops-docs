@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -30,9 +30,9 @@ You'll need a continuous integration (CI) build pipeline that publishes your web
 
 * [Build ASP.NET 4 apps](../aspnet/build-aspnet-4.md)
 
-* [Build ASP.NET Core apps](../../languages/dotnet-core.md)
+* [Build ASP.NET Core apps](../../ecosystems/dotnet-core.md)
 
-* [Build JavaScript and Node.js apps](../../languages/javascript.md)
+* [Build JavaScript and Node.js apps](../../ecosystems/javascript.md)
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ The configuration varies depending on the type of app you are deploying.
 
 #### Node.js app
 
-Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+Follow the instructions in [this topic](https://github.com/Azure/iisnode) to install and configure IISnode on IIS servers.
 
 [!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 

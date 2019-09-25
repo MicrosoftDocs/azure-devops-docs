@@ -10,7 +10,6 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
@@ -35,7 +34,7 @@ In this configuration, with Excel Services configured, your TFS sites on SharePo
 
 ![TFS/SharePoint Integration - Upgrading to SharePoint 2016 - TFS SharePoint 2013 Site - Before Upgrade](./_img/sharepoint-2016-upgrade-before-upgrade-site-example.png)
 
-To upgrade to SharePoint 2016, you must first set up a SharePoint 2016 Server. [Excel Services was deprecated in SharePoint 2016](https://technet.microsoft.com/library/mt346112%28v=office.16%29.aspx) and replaced with Office Online Server. If you had Excel Services configured in SharePoint 2013, then you will need to [configure Office Online Server](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx) to ensure Excel Charts continue to display on the TFS SharePoint sites. See [References for configuring Office Online Server for SharePoint 2016](#references) later in this topic for more information.
+To upgrade to SharePoint 2016, you must first set up a SharePoint 2016 Server. [Excel Services was deprecated in SharePoint 2016](https://technet.microsoft.com/library/mt346112%28v=office.16%29.aspx) and replaced with Office Online Server. If you had Excel Services configured in SharePoint 2013, then you will need to [configure Office Online Server](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx) to ensure Excel Charts continue to display on the TFS SharePoint sites. See [References for configuring Office Online Server for SharePoint 2016](#references) later in this article for more information.
 
 The first step is to set up a SharePoint 2016 server. 
 

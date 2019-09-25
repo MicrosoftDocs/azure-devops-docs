@@ -1,17 +1,11 @@
-- name: Extend Analytics with OData
+- name: Extend Analytics with OData (Preview)
   href: index.md
-- name: Overview
-  items:
-  - name: "What is Analytics?"
-    href: ../analytics/what-is-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
-  - name: Reporting roadmap
-    href: ../analytics/reporting-roadmap.md
-- name: Quickstarts
-  items:
-  - name: Query work item data 
-    href: wit-analytics.md
-  - name: "Project & organization-scoped queries" 
-    href: account-scoped-queries.md
+- name: Quick reference
+  href: quick-ref.md
+- name: Query work item data 
+  href: wit-analytics.md
+- name: "Project & organization-scoped queries" 
+  href: account-scoped-queries.md
 - name: Tutorials
   items:
   - name: Query aggregate data
@@ -28,32 +22,14 @@
     href: analytics-recipes.md
   - name: Create an Analytics widget
     href: example-analytics-widget.md  
-- name: Concepts
-  items:
-  - name: Data available
-    href: ../analytics/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
-  - name: "Performance & latency"
-    href: ../analytics/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
-  - name: Query guidelines
-    href: odata-query-guidelines.md  
-- name: How-to Guides
-  items:
-  - name: Set permissions (Security) 
-    href: ../analytics/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Analytics OData v4 endpoint
+  - name: Query guidelines
+    href: odata-query-guidelines.md  
+  - name: Data model  
     href: data-model-analytics-service.md
   - name: "Supported functions & clauses"
     href: odata-supported-features.md 
   - name: API versioning
     href: odata-api-version.md 
-- name: Resources
-  items:
-  - name: "Analytics"
-    href: ../analytics/index.md
-  - name: "Power BI integration"
-    href: ../powerbi/index.md
-  - name: OData Extension for Data Aggregation Version 4.0
-    href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html
 

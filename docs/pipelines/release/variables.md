@@ -1,5 +1,5 @@
 ---
-title: Release variables  and debugging
+title: Release variables and debugging
 ms.custom: seodec18
 description: Understand release variables in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
@@ -7,18 +7,23 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Default and custom release variables and debugging
+# Release variables and debugging
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand variables in YAML pipelines, see [variables](../process/variables.md).
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
@@ -30,7 +35,7 @@ and the value of this variable can be changed from one stage
 to another. These are **custom variables**.
 
 * Use information about the context of the particular release,
-[stage](environments.md), [artifacts](artifacts.md), or
+[stage](../process/stages.md), [artifacts](artifacts.md), or
 [agent](../agents/agents.md) in which the deployment pipeline is
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
@@ -77,6 +82,9 @@ Using custom variables at project, release pipeline, and stage scope helps you t
   During a deployment, the Azure Pipelines release service
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
+
+> [!NOTE]
+> Creating custom variables can overwrite standard variables. For example, the PowerShell **Path** environment variable. If you create a custom `Path` variable on a Windows agent, it will overwrite the `$env:Path` variable and PowerShell won't be able to run.
 
 ### Using custom variables
 
@@ -153,7 +161,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
 | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`Automated` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
 | Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
 | Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
 | Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |
@@ -266,7 +274,7 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 ### View the current values of all variables
 
-1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
+1. Open the pipelines view of the summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.
 
    ![Opening the log for a release](_img/view-variable-values-link.png)

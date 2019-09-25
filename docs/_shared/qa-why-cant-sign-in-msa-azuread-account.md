@@ -1,4 +1,4 @@
-#### Q:	Why can't I sign in after I select "personal Microsoft account" or "work or school account"?
+### Q: Why can't I sign in after I select "personal Microsoft account" or "work or school account"?
 
 A: When your sign-in address is shared by your personal Microsoft account and by your work account or school account, but your selected identity doesn't have access, you can't sign in. Although both identities use the same sign-in address, they're separate: they have different profiles, security settings, and permissions.
 
@@ -8,7 +8,7 @@ Sign out completely from Azure DevOps by completing the following steps. Closing
 
 2. Open a private or incognito browsing session. 
 
-3. Go to this URL: `http://aka.ms/vssignout`.
+3. Go to this URL: `https://aka.ms/vssignout`.
 
    You see a message that says, "Sign out in progress." After you sign out, you're redirected to the Azure DevOps @dev.azure.microsoft.com webpage.
 

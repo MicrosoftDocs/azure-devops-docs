@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Proxy Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Configures your client computer to use a proxy server. Adds, deletes, and lists proxy records about the location and availability of one or more proxy servers within your deployment, including any remote sites.
 
@@ -44,13 +44,13 @@ To use the **proxy** command to configure a client computer, you must be a membe
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>Url</em></p></td>
-	<td><p>Identifies the proxy server. You must use the following format: http://proxyServerName:proxyPortNumber.</p><p>Where <em>proxyServerName</em> is the name of the proxy server and <em>proxyPortNumber</em> is the assigned listening port (for example, <strong>http://server:8081</strong>).</p></td></tr>
+    <td><p>Identifies the proxy server. You must use the following format: http://proxyServerName:proxyPortNumber.</p><p>Where <em>proxyServerName</em> is the name of the proxy server and <em>proxyPortNumber</em> is the assigned listening port (for example, <strong><a href="http://server:8081" data-raw-source="http://server:8081">http://server:8081</a></strong>).</p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-	<td><p>Identifies the project collection. You must use the following format: http://ApplicationTierServerName:PortNumber/<em>Directory</em>/<em>CollectionName</em>.</p><p>Where <em>ApplicationTierServerName</em> is the name of the application-tier server, <em>PortNumber</em> is the assigned listening port, and <em>Directory</em>/<em>CollectionName</em> are the names of the directory and the collection (for example, <strong>http://server:8080/tfs/newcollection1</strong>).</p></td></tr>
+    <td><p>Identifies the project collection. You must use the following format: http://ApplicationTierServerName:PortNumber/<em>Directory</em>/<em>CollectionName</em>.</p><p>Where <em>ApplicationTierServerName</em> is the name of the application-tier server, <em>PortNumber</em> is the assigned listening port, and <em>Directory</em>/<em>CollectionName</em> are the names of the directory and the collection (for example, <strong><a href="http://server:8080/tfs/newcollection1" data-raw-source="http://server:8080/tfs/newcollection1">http://server:8080/tfs/newcollection1</a></strong>).</p></td></tr>
 <tr>
 	<td><p><em>UserName</em></p></td>
-	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a user name value as either <em>Domain</em>\<em>UserName</em> or <em>UserName</em>.</p></td></tr>
+    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a user name value as either <em>Domain</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td></tr>
 <tr>
 	<td><p><em>Password</em></p></td>
 	<td><p>Provides a password for the user name.</p></td></tr></tbody>
@@ -81,7 +81,7 @@ To use the **proxy** command to configure a client computer, you must be a membe
 	<td><p>Specifies a description of the proxy record.</p></td></tr>
 <tr>
 	<td><p><strong>/default</strong></p></td>
-	<td><p>Specifies the scope of the proxy record. If you add a proxy record with the default set to global, the first time that a developer performs a get operation, Team Foundation Server will redirect that developer's request to the proxy that is specified by the global record. If you add a proxy record with the default set to site, the first time that a developer from within the specified Active Directory domain performs a get operation, Team Foundation Server will redirect that developer's request to the proxy that is specified by the record that is associated with the site.</p><p>You can specify one of the following values:</p><ul><li><p><strong>global</strong></p></li><li><p><strong>site</strong></p></li><li><p><strong>all</strong></p></li></ul></td></tr>
+    <td><p>Specifies the scope of the proxy record. If you add a proxy record with the default set to global, the first time that a developer performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the global record. If you add a proxy record with the default set to site, the first time that a developer from within the specified Active Directory domain performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the record that is associated with the site.</p><p>You can specify one of the following values:</p><ul><li><p><strong>global</strong></p></li><li><p><strong>site</strong></p></li><li><p><strong>all</strong></p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/delete</strong></p></td>
 	<td><p>Deletes a proxy record from Team Foundation Server.</p></td></tr>

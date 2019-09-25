@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/22/2019
 ---
 
 
@@ -22,7 +22,9 @@ ms.date: 02/14/2019
 Your Kanban board provides you with a visual interactive space for you and your team to plan and show progress. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
 Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. 
-####In a nutshell you use boards to: 
+
+#### In a nutshell you use boards to: 
+
 - Implement [Kanban methods](kanban-basics.md) 
 - Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
 - Monitor progress and update the status of work items by [drag-and-drop to a column](#update)
@@ -32,7 +34,7 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 
 ## Product and portfolio boards 
@@ -41,13 +43,11 @@ Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a cor
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
-
 ::: moniker range=">= azure-devops-2019"
 
 ![Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ![Kanban board, Agile template](_img/kanban-basics-intro.png)     
@@ -107,9 +107,12 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 In addition to these team configurations, you can [customize a project](#customize) by adding or modifying work item types, the workflow, and add customized portfolio backlogs and boards. 
 
 <a id="update" />
+
 ## Update work item status
+
 ::: moniker range=">= tfs-2015"
-Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
+
+Once you&#39;ve configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
 
@@ -119,18 +122,41 @@ Once you've configured your Kanban board, you can add work items directly to the
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. 
 ::: moniker-end
 
+## Cumulative flow diagram
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+The Cumulative Flow Diagram (CFD) is an in-context report available for both product and portfolio backlog levels. Use this chart to monitor key metrics to fine tune your processes. 
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Open CFD Analytics](../../report/dashboards/_img/cfd/analytics-cfd-azure-devops.png)
+
+The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+<img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+
+The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
+
+::: moniker-end
+
+By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time.  
+
+To learn more, see the following articles:  
+- [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md) 
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
+- [Lead time and cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)
+
+
 ## Display of leaf node work items  
-
-When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board. 
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
 
-To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
-::: moniker-end
-
 <a id="limits-multi-team" />
+
 ## Limitations of multi-team Kanban board views 
 
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
@@ -150,9 +176,11 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 
 <a id="customize" />
+
 ## Customize your project and boards 
-::: moniker range="azure-devops"
-If you need more than three board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+
+::: moniker range="azure-devops" 
+If you need more than three board levels, you can add more. To learn how, see <a href="../../organizations/settings/work/customize-process-backlogs-boards.md" data-raw-source="[Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)">Customize your backlogs or boards for a process</a>. 
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
@@ -174,6 +202,7 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
   
 
 ## Related articles  
+
 - [Kanban key concepts](kanban-key-concepts.md) 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 

@@ -7,8 +7,8 @@ description: Work with work item attachments programmatically using the REST API
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -26,8 +26,8 @@ ms.date: 08/04/2016
 To attach a file to a work item, upload the attachment to the attachment store, then [attach it to the work item](./work-items.md#addanattachment).
 
 
->[!NOTE]  
-For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item. 
+> [!NOTE]
+> For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item. 
 
 
 ```no-highlight
@@ -194,12 +194,12 @@ GET https://{instance}/DefaultCollection/_apis/wit/attachments/{attachment}?api-
 | Query
 | api-version| string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET https://fabrikam-fiber-inc:8080/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
 ```
 
-####Response
+#### Response
 Status code: 200
 ```json
 { file-contents }

@@ -7,8 +7,8 @@ description: Access control lists reference for integrating with VSTS
 ms.assetid: 79447872-9742-42c5-9d4a-2e291df06c85
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 03/15/2017
 ---
 

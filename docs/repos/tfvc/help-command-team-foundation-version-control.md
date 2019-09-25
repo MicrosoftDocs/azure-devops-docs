@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Help Command (Team Foundation Version Control)
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays help on the command line that contains information about syntax for a Team Foundation version control command.
 
@@ -36,7 +36,7 @@ Displays help on the command line that contains information about syntax for a T
 </tbody>
 </table>
 ## Remarks
-If you do not know which command you need, type **tf help** for a list of all commands.
+If you do not know which command you need, type <strong>tf help</strong> for a list of all commands.
 
 If you specify the *commandname* parameter, the command line displays information about the arguments and options for that command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it cannot find any matching command, alias, or short name, you will get an error.
 

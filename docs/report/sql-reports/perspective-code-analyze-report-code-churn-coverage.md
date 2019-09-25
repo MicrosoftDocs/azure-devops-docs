@@ -35,7 +35,7 @@ By using the Run Coverage perspective, you can create reports that answer the fo
 Which assemblies have the least test coverage?<br />-   Which test runs cover the most code?
 Which architectures or build types have the most test coverage? 
 
->[!NOTE]  
+> [!NOTE]  
 >If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
  
@@ -125,14 +125,14 @@ The following table describes the measures in the Run Coverage measure group. By
   
 <a name="run_dimensions"></a> 
 ##  Dimensions and attributes in the Run Coverage Perspective that support filtering and categorization  
- The following table describes the dimensions and attributes in the Run Coverage perspective. These attributes supplement the **Team Project** and **Date** shared dimensions that [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes later in this topic. You can aggregate the measures along each of these attributes.  
+ The following table describes the dimensions and attributes in the Run Coverage perspective. These attributes supplement the **Team Project** and **Date** shared dimensions that [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes later in this article. You can aggregate the measures along each of these attributes.  
   
 > [!NOTE]  
-> Before you can use the **Assembly** or **Build Flavor** attributes, the test team must specify them and publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this topic.  
+> Before you can use the **Assembly** or **Build Flavor** attributes, the test team must specify them and publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this article.  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
@@ -146,7 +146,7 @@ The following table describes the measures in the Run Coverage measure group. By
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)  
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)  
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 -   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  

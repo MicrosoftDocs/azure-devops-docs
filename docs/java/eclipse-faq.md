@@ -9,13 +9,14 @@ ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2013'
 ---
 
 
 # Eclipse Plug-in for Azure DevOps Services & TFS Frequently Asked Questions (FAQ)
 
+* [Which versions of Eclipse work with the TEE plugin?](#which-versions-of-eclipse-work-with-the-tee-plugin)
 * [Is there a Beginner's Guide for TEE?](#is-there-a-beginners-guide-for-tee)
 * [Is there a way to view local repos in TEE 2015 in Eclipse (Mars) or is it assumed one would use the other Git tooling for Eclipse?](#is-there-a-way-to-view-local-repos-in-tee-2015-in-eclipse-mars-or-is-it-assumed-one-would-use-the-other-git-tooling-for-eclipse)
 * [Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to Azure DevOps Services? Or is the Git command-line the way to do it?](#also-is-there-an-easy-way-using-tee-to-import-a-local-git-repo-and-push-it-up-to-azure-devops-services-or-is-the-git-command-line-the-way-to-do-it)
@@ -23,6 +24,10 @@ monikerRange: '>= tfs-2013'
 * [The TEE Command Line Client has removed the "tf profile" command. How can I connect to TFS without having to repeatedly type my credentials?](#the-tee-command-line-client-has-removed-the-tf-profile-command-how-can-i-connect-to-tfs-without-having-to-repeatedly-type-my-credentials)
 * [How can I fix the "Authentication not supported" error when using Eclipse to perform Git operations with TFS?](#how-can-i-fix-the-authentication-not-supported-error-when-using-eclipse-to-perform-git-operations-with-tfs)
 * [Does the Eclipse plug-in support TFVC?](#does-the-eclipse-plug-in-support-tfvc)
+
+### Which versions of Eclipse work with the TEE plugin?
+
+The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 ### Is there a Beginner's Guide for TEE?
 

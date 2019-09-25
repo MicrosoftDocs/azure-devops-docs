@@ -12,12 +12,22 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/25/2019  
+ms.date: 05/29/2019  
 ---
 
-# Publish a Git repository to a wiki
+# Quickstart: Publish a Git repository to a wiki
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+
+In this quickstart, you learn how to do the following tasks:
+
+> [!div class="checklist"]
+> * Open Wiki
+> * Publish a Git repo to a wiki
+> * Edit pages of a published wiki
+> * Add pages to a published wiki
+> * Change the page sequence of a published wiki
+> * Make a page the wiki home page
 
 Content that you already maintain in a Git repository can be published to a wiki. For example, content written to support a software development kit (SDK), product documentation, or README files can quickly be published to a wiki. Multiple wikis can be published within a single team project.
 
@@ -28,16 +38,6 @@ By publishing your Markdown files to a wiki, you gain the following benefits:
 - Publish new versions of the content
 - Manage content in the same way you manage your code base
 - Readers can search the wiki easily using the Wiki search feature
-
-Use this article to learn how to:  
-
-> [!div class="checklist"]
-> * Open Wiki
-> * Publish a Git repo to a wiki
-> * Edit pages of a published wiki
-> * Add pages to a published wiki
-> * Change the page sequence of a published wiki
-> * Make a page the wiki home page
 
 To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
@@ -69,20 +69,6 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
-Choose **Wiki**.
-
-> [!div class="mx-imgBorder"]  
-> ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
-
-- If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
-- If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (ellipses icon), then choose **Wiki>Wiki**.
-
-![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
-
-::: moniker-end
-
 ## Publish a Git repository to a wiki
 
 Choose this option when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
@@ -95,7 +81,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> [!NOTE]
 	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md), and then return and refresh this page.
 
-	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code as wiki** menu option.
+	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code wiki** menu option.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Publish code as wiki menu option](_img/wiki/publish-code-menu-option.png)
@@ -107,7 +93,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 
 	Specify the root of the repository when you want to publish all Markdown files in the repository to your wiki.  
 
-3. Choose **Publish**. The wiki repo is populated with the Markdown files and folders included within the repo you selected. If a sub-folder does not contain a Markdown file, it doesn't appear in the  Wiki.
+3. Choose **Publish**. The wiki repo is populated with the Markdown files and folders included within the repo you selected.
 
 	For example, the following image shows the published repo for the files contained in the azure-docs-sdk-node repository selected in Step 2.
 
@@ -115,13 +101,13 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> ![Published wiki from existing repo Markdown files](_img/wiki/published-wiki.png)
  
 	The wiki Table of Contents (TOC) contains the following:
-	- Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
-	- A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
+   - Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
+   - A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
 
-	And here is an image of the contents of the azure-docs-sdk-node repository.
+     And here is an image of the contents of the azure-docs-sdk-node repository.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
+     > [!div class="mx-imgBorder"]  
+     > ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 
@@ -239,7 +225,7 @@ Each **.order** file defines the sequence of pages contained within a folder. Th
 
 You can add a **.order** file in the same way as you add any file from the **Code>Files** page. Name the file *.order*.
 
-Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name with dashes replaced with a space and without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
+Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name but without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
 
 For example:  
 
@@ -253,18 +239,18 @@ Misc content
 
 ## Set a home page
 
-By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever someone selects **Wiki** within the web portal or chooses the ![home link](./_img/wiki/home-link.png) home icon.
+By default, the first file that appears at the root within alphabetical order is set as the wiki home page. The home page opens whenever you select **Wiki** within the web portal or choose the home icon.
 
 You can change the home page by setting the page sequence within the root **.order** file.
 
-For example:  
+For example, enter the page name into the first line:  
 
 ```
-New Home Page
-README
+New home page name here
 page-2
 page-3
 Page-4
+README
 Misc content
 ```
 
@@ -272,15 +258,12 @@ Misc content
 
 For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
 
+Displayed in the following example, Test has both a folder and an md file, which creates a hierarchy inside of the Wiki tree.
+
+![Promote a folder to a page](_img/promote-folder.png)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
 
-## Related articles
-
-- [Wiki Git repository files, file structure, and naming conventions](wiki-file-structure.md)
-- [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-- [Update wiki pages offline](wiki-update-offline.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

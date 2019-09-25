@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/19/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can increase or decrease the number of paid users for a feature or extension, to scale with your team's needs.  
+In this article, learn how you can increase or decrease the number of paid users for a feature or extension, to scale with your team's needs.  
 
 ## Prerequisites
 

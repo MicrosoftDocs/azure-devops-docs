@@ -127,7 +127,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 
 
 > [!TIP]
-> When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
+> When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/team-velocity.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
 To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
 
@@ -190,7 +190,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range=">= azure-devops-2019"
 ## Use Analytics to gain visibility across teams   
 
-You can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
+You can add [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 

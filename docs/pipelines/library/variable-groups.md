@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 02/05/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -18,8 +18,8 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 Use a variable group to store values that you want to control and make available across
-multiple pipelines. Variable groups are defined and managed in the **Library** tab of the
-**Pipelines** hub.
+multiple pipelines. Variable groups are defined and managed in the **Library** page under
+**Pipelines**.
 
 ::: moniker range="< tfs-2018"
 > [!NOTE]
@@ -32,7 +32,7 @@ multiple pipelines. Variable groups are defined and managed in the **Library** t
 Choose **+ Variable group**.
 
 1. Enter a name and description for the group.
- 
+
 1. Decide if you want the variable group to be accessible for any pipeline
    by setting the **Allow access to all pipelines** option. This option allows
    pipelines defined in YAML, which are not automatically authorized for variable groups,
@@ -53,16 +53,17 @@ Choose **+ Variable group**.
 
 ## Use a variable group
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="> tfs-2018"
 
-You can add a variable group by referencing it in your YAML file:
+To use a variable from a variable group, you need to add a reference to the group in your YAML file:
 
 ```yaml
 variables:
 - group: my-variable-group
 ```
+
+Thereafter variables from the variable group can be used in your YAML file.
 
 If you use both variables and variable groups, you'll have to use `name`/`value` syntax for the individual (non-grouped) variables:
 
@@ -99,8 +100,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 To use a variable group, open your pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
 In a build pipeline, you see a list of available groups. In a release pipeline (as shown below), you
@@ -116,8 +116,7 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 > [!NOTE]
 > Linking a variable group to a specific stage is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
 
----
-
+* * *
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the pipeline itself](../process/variables.md).
 For example, to access the value of a variable named **customer** in a variable group linked to the pipeline,
@@ -167,8 +166,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ## Expansion of variables in a group
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
 When you set a variable in a group and use it in a YAML file, it has the same precedence as any other variable defined within the YAML file. 
@@ -179,8 +177,7 @@ For more information about precedence of variables, see the topic on [variables]
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 
 1. Variable set at queue time
@@ -189,4 +186,4 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 [!INCLUDE [variable-collision](../_shared/variable-collision.md)]
 
----
+* * *

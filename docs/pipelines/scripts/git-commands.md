@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 01/03/2019
+ms.author: phwilson
+author: chasewilson
+ms.date: 03/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -29,6 +29,13 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 <a name="enable"></a>
 ## Enable scripts to run Git commands
 
+> [!NOTE]
+> Before you begin, be sure your account's default identity is set with:
+> ```
+> git config --global user.email "you@example.com"
+> git config --global user.name "Your Name"
+> ```
+
 ### Grant version control permissions to the build service
 
 Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
@@ -41,13 +48,25 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 </ul>
 
-<p>![manage project](_img/manage-project.png)</p>
+<p>
+
+![manage project](_img/manage-project.png)
+
+</p>
 
 <p>If you see this page, select the repo, and then click the link:</p>
 
-<p>![control panel top to project](_img/control-panel-top-to-team-project.png)</p>
+<p>
 
-<p>![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)</p>
+![control panel top to project](_img/control-panel-top-to-team-project.png)
+
+</p>
+
+<p>
+
+![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)
+
+</p>
 
 </div>
 
@@ -96,7 +115,7 @@ steps:
 
 Learn more about [`checkout`](../yaml-schema.md#checkout).
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
 
@@ -131,7 +150,7 @@ steps:
   clean: true
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 * On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
@@ -206,11 +225,9 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-
-### Can I run Git commands if my remote repo is in GitHub or an external Git service such as Bitbucket?
+### Can I run Git commands if my remote repo is in GitHub or another Git service such as Bitbucket Cloud?
 
 Yes
-
 
 ### Which tasks can I use to run Git commands?
 
@@ -225,7 +242,30 @@ Yes
 
 ### How do I avoid triggering a CI build when the script pushes?
 
-Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+::: moniker range="<= azure-devops-2019"
+
+Add ```***NO_CI***``` to your commit message. Here are examples:
+* ```git commit -m "This is a commit message ***NO_CI***"```
+* ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+Add `[skip ci]` to your commit message or description. Here are examples:
+* ```git commit -m "This is a commit message [skip ci]"```
+* ```git merge origin/features/hello-world -m "Merge to master [skip ci]"```
+
+You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
+
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
+
+::: moniker-end
 
 ::: moniker range="< tfs-2018"
 

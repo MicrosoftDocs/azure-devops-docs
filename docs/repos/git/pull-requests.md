@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 11/26/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Review code with pull requests
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before
@@ -32,15 +32,15 @@ New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) ab
 
 1. To view pull requests in a specific repository in a project, [navigate](../../project/navigation/go-to-project-repo.md) to that project in the web portal and select **Repos**, **Pull requests**.
 
-  ![View your pull requests](_img/repos-navigation/repos-pull-requests.png)
+   ![View your pull requests](_img/repos-navigation/repos-pull-requests.png)
 
-1. Verify that the correct repository is selected.
+2. Verify that the correct repository is selected.
 
-  ![Select repository](_img/repos-navigation/pull-requests-breadcrumb.png)
+   ![Select repository](_img/repos-navigation/pull-requests-breadcrumb.png)
 
-1. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
+3. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
-  ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
+   ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
 
 You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
@@ -92,9 +92,9 @@ When you publish or update a feature branch in Azure Repos, you get a prompt ask
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
-::: moniker range="<= tfs-2018"
-
 ::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 When you publish or update a feature branch in Azure Repos, you get a prompt asking if you would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
 
@@ -103,6 +103,8 @@ When you publish or update a feature branch in Azure Repos, you get a prompt ask
 ![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push-files-tab.png)
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
+
+::: moniker-end
 
 ### From a linked work item
 
@@ -234,15 +236,15 @@ Add reviewers to your pull request.
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers-new-nav.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers-new-nav.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
-  ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+   ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
 
 ::: moniker-end
 
@@ -252,15 +254,15 @@ Add reviewers to your pull request.
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
-  ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+   ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
 
 ::: moniker-end
 
@@ -275,11 +277,11 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items-new-nav.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-work-items-new-nav.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
 This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
@@ -292,11 +294,11 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
 This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
@@ -489,17 +491,17 @@ Subscribe to email alerts to get notified when changes are made to your pull req
 
    ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png) 
 
-1. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+2. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
 
-  ![Notifications](./_img/pull-requests/pr-notifications.png)
+   ![Notifications](./_img/pull-requests/pr-notifications.png)
 
-1. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
+3. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
 
-  ![Notifications](./_img/pull-requests/view-pr-notifications.png)
+   ![Notifications](./_img/pull-requests/view-pr-notifications.png)
 
-1. To opt-out of a notification, set the **State** to **Off**.
+4. To opt-out of a notification, set the **State** to **Off**.
 
-  ![Notifications](./_img/pull-requests/opt-out-notifications.png)
+   ![Notifications](./_img/pull-requests/opt-out-notifications.png)
 
 ::: moniker-end
 
@@ -513,8 +515,8 @@ undo the pull request for an existing target branch in your repo.
 In the dialog that appears, pick the branch where you want to undo the pull request changes in the **Target branch** selector and the name of a new branch where the reverted changes will be created in the **Topic branch name** field, then select **Revert**. 
 Select **Create pull request** to merge the newly created branch in a second pull request to complete the revert.
 
->[!NOTE]
->The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch does not contain a reverted commit for each of the commits merged in the original pull request.
+> [!NOTE]
+> The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch does not contain a reverted commit for each of the commits merged in the original pull request.
 
 ## Cherry-pick a pull request
 

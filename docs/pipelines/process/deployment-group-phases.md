@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: alewis
-author: alewis
+ms.author: sdanie
+author: steved0x
 ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -25,8 +25,7 @@ monikerRange: '>= tfs-2018'
 
 You can select specific sets of servers from a deployment group to receive the deployment by specifying the machine tags that you have defined for each server in the deployment group. You can also specify the proportion of the target servers that the pipeline should deploy to at the same time. This ensures that the app running on these servers is capable of handling requests while the deployment is taking place.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 > [!NOTE]
@@ -38,15 +37,13 @@ You can select specific sets of servers from a deployment group to receive the d
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 You add a deployment group job in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a release pipeline. The properties for the deployment group job are displayed when you select the job in the editor.
 
 > [!NOTE]
 > Deployment group jobs can only be used in release pipelines. They cannot be used in build pipelines.
 
----
-
+* * *
 ## Timeouts
 
 Use the job timeout to specify the timeout in minutes for jobs in this job. A zero
@@ -56,6 +53,4 @@ Use the job timeout to specify the timeout in minutes for jobs in this job. A ze
 ## Related topics
 
 * [Jobs](phases.md)
-* [Server jobs](server-phases.md)
-* [Multiple jobs](multiple-phases.md)
-* [Specify conditions](conditions.md)
+* [Conditions](conditions.md)

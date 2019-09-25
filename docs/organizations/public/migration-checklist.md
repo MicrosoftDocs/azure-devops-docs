@@ -14,17 +14,17 @@ ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
-# Private-to-public migration checklist
+# Quickstart: Private-to-public migration checklist
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-Before changing the visibility of your private project to public, you'll want to consider what data may be exposed to non-members. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
+In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
 The checklist provided in this article indicates those items you may want to review before making a project public. It also provides tips for migrating work items or files to a new project so that you can expose only current and future content.
 
-## Account identities and settings
+## Organization identities and settings
 
-When you invite someone to become a member of a project, that person gains access to additional resources and details about the account. Specifically, they have access to the following information.
+When you invite someone to become a member of a project, that person gains access to additional resources and details about the organization. Specifically, they have access to the following information.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | Area             | Additional details a member receives                |
@@ -32,7 +32,7 @@ When you invite someone to become a member of a project, that person gains acces
 > | Identities       | List of all members added to the organization       |
 > | Identities       | Email contact information for each project member   |
 > | Settings         | Read-only view of all organization and project settings  |
-> | Process metadata | All picklist values in all projects in the account  |
+> | Process metadata | All picklist values in all projects in the organization  |
 
 ## Cross-project linked objects
 
@@ -102,8 +102,8 @@ Are there custom extensions which expose important details?
 
 ## Partial migration tips
 
-Accounts containing sensitive material should not enable the public projects policy.
-In that case, we recommend creating an entirely separate account to host your public projects.
+Organizations containing sensitive material should not enable the public projects policy.
+In that case, we recommend creating an entirely separate organization to host your public projects.
 
 <a id="move-work-items" />
 
@@ -114,7 +114,7 @@ Cross-project links continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 
 If you have a large number of sensitive work items, consider keeping your current project private.
-Instead, create a new public project in another account.
+Instead, create a new public project in another organization.
 Migrating work items can be accomplished using the open source [WiMigrator](https://github.com/Microsoft/vsts-work-item-migrator) maintained by Microsoft.
 
 ### Git tip-only migration
@@ -137,11 +137,8 @@ The new repository should be created in a project you don't mind making public.
 - Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
 - Push up your new repository: `git push --set-upstream origin master`
 
-## Related articles
+## Next steps
 
-- [Make a project public](make-project-public.md) 
-
-<!---
-[!INCLUDE [warning](_shared/warning-cross-link.md)]
-
--->
+> [!div class="nextstepaction"]
+> - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
+ 

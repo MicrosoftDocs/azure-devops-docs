@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2018'
 In this exercise, you are going to set up package management with Maven in Azure DevOps Services. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure an Azure DevOps Services build to publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
-> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
+> These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/). If you are following along with your own environment, and you don't 
+> see Artifacts, turn it on from the Project Settings > Overview menu. For more information, 
+> see [Where is Package Management](../../../artifacts/where-is-package-management.md).
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
@@ -26,7 +28,8 @@ In this exercise, you are going to set up package management with Maven in Azure
 
 This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps Services agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps Services team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md) This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: This exercise shows how to do a Maven build using just Azure DevOps Services. To see how to perform a Maven build using Jenkins that still integrates into the Azure DevOps Services Package Feed, please refer to the Maven Package Management with Azure DevOps Services Team Build lab.
+> [!NOTE]
+> This exercise shows how to do a Maven build using just Azure DevOps Services. To see how to perform a Maven build using Jenkins that still integrates into the Azure DevOps Services Package Feed, please refer to the Maven Package Management with Azure DevOps Services Team Build lab.
 
 ## Create a Maven Package Feed
 
@@ -49,8 +52,6 @@ In this task you will create credentials for the Maven feed. You will then creat
 1. In the Packages Hub, make sure you have selected the Maven feed and click "Connect to Feed".
 
 1. In the left menu, click on Maven.
-
-> **Note**: At the time of writing, Maven package feeds are a preview feature. You will need to enable the Maven package feed feature in order to connect to Package Management to/from Maven.
 
 1. Click "Generate Maven Credentials"
 
@@ -78,7 +79,8 @@ In this task you will create credentials for the Maven feed. You will then creat
 
 1. Commit your changes to the repo.
 
-    > **Note**: If this is your first commit to Azure DevOps Services, you will be prompted to update your display name and email address for the repo. These are simply for display purposes, but usually are matched to your Azure DevOps Services profile.
+    > [!NOTE]
+    > If this is your first commit to Azure DevOps Services, you will be prompted to update your display name and email address for the repo. These are simply for display purposes, but usually are matched to your Azure DevOps Services profile.
 
 **IntelliJ**
 
@@ -162,7 +164,8 @@ In this task you will create a build that will publish the MyShuttleCalc library
 
     ![Build summary page](../_img/mavenpmvsts/build-summary.png)
 
-   > **Note**: Each time you run the build, the patch number (the last of the 3-digit version numbers) will increment. In the image above, the build has run 6 times so the latest build number is 0.0.6. The package version matches the build number because we supplied the build version number to Maven in the Maven task.
+    > [!NOTE]
+    > Each time you run the build, the patch number (the last of the 3-digit version numbers) will increment. In the image above, the build has run 6 times so the latest build number is 0.0.6. The package version matches the build number because we supplied the build version number to Maven in the Maven task.
 
 1. Navigate back to the Maven package feed. There you will see the MyShuttleCalc package.
 

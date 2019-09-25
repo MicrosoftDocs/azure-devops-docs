@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -146,7 +146,7 @@ actions needed to deploy your app.
 You have the following options for creating release templates:
 
 * [Create a release template for environments without deployment agents](release-without-agents.md#CreateReleaseTemplate)
-* [Create a release template for environments with deployment agents ](release-with-agents.md#CreateReleaseTemplate)
+* [Create a release template for environments with deployment agents](release-with-agents.md#CreateReleaseTemplate)
 
 <a name="StartRelease"></a>
 ### Start a release 

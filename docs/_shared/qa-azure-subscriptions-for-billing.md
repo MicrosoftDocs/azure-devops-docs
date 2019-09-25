@@ -16,10 +16,10 @@ instead.
 
 **Important for Visual Studio subscribers and Visual Studio Dev Essentials members**:
 
-*	You can't use [monthly credits for Visual Studio subscriptions](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) 
-or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/offers/ms-azr-0022p/) to pay for Azure DevOps purchases. 
-You can still use these types of Azure subscriptions for billing, 
-but the monthly credits won't apply, so your credit card will be billed for charges instead.
+* You can't use [monthly credits for Visual Studio subscriptions](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) 
+  or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.com/offers/ms-azr-0022p/) to pay for Azure DevOps purchases. 
+  You can still use these types of Azure subscriptions for billing, 
+  but the monthly credits won't apply, so your credit card will be billed for charges instead.
  
 * Before you use these Azure subscriptions for billing, you must remove their [default spending limit indefinitely](https://azure.microsoft.com/pricing/spending-limits/).
 
@@ -29,14 +29,14 @@ but the monthly credits won't apply, so your credit card will be billed for char
     will be suspended, including Azure DevOps purchases,
     Visual Studio Marketplace purchases, and Azure resources.
 
-    <img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Spending limit" src="/azure/devops/_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-    <img alt="Remove spending limit indefinitely" src="_img/azure-remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Remove spending limit indefinitely" src="/azure/devops/_shared/_img/azure-remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 	If you have Administrator permissions for your subscription, 
 	remove the spending limit by visiting the 
 	[Azure Account Center](https://account.windowsazure.com):
 	
-	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
-	0.	Select your Azure subscription. 
-	0.	Remove your spending limit **indefinitely**.
+  1. Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
+  2. Select your Azure subscription. 
+  3. Remove your spending limit **indefinitely**.

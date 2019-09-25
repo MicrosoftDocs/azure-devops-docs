@@ -32,20 +32,22 @@ You customize the mapping by modifying the FileMapping.xml file. The following t
 For more information, see [Define initial areas, iterations, and Project mapping file](../process-templates/define-classification-plug-in.md).  
 
 <a name="MappingE"></a> 
+
 ##  Specify how fields are mapped  
+
  You specify mapped fields by using the **Mapping** element and the following syntax structure:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<Mappings>  
-   <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
-            ProjectField=""  
-            ProjectName=""  
-         ProjectUnits=""  
-         PublishOnly=""  
-         IfSummaryRefreshOnly=""/>  
-</Mappings>  
-```  
+> ```XML  
+> <Mappings>  
+>    <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
+>             ProjectField=""  
+>             ProjectName=""  
+>          ProjectUnits=""  
+>          PublishOnly=""  
+>          IfSummaryRefreshOnly=""/>  
+> </Mappings>  
+> ```  
   
  The following table describes the attributes of the **Mapping** element.  
   
@@ -59,7 +61,9 @@ For more information, see [Define initial areas, iterations, and Project mapping
 |**IfSummaryRefreshOnly**|Optional. If set to `true`, indicates that the field is never published to the work item database but is refreshed from the work item database when the following conditions are also true:<br /><br /> -   The row for the field is a summary task in Project.<br />-   The summary task has the values of Publish and Refresh set to `Yes`.<br />-   The summary task contains at least one child task that is bound to TFS.<br /><br /> Any updates or calculations that Project makes can overwrite the value that is refreshed from the work item database in the project plan. However, the modified value is never saved to the work item database. This attribute is typically used for summary fields that, if published to the work item database, lead to data inconsistencies.<br /><br /> If set to `false`, indicates that the field may be both published and refreshed. By default, this attribute is set to `false`. **Note:**  The `IfSummaryRefreshOnly` attribute supersedes the `PublishOnly` attribute. For more information, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). <br /><br /> By default, the **IfSummaryRefreshOnly** attribute is set to `true` for the **Original Estimate**, **Remaining Work**, and **Completed Work** fields.|  
   
 <a name="OtherE"></a> 
+
 ## Specify the fields for synchronization, links, and attachments  
+
  In addition to the **Mapping** element, two other elements determine how fields will synchronize and which field will support links and attachments.  
   
  The **SyncField** element specifies which column serves as the synchronization field. The synchronization field is titled "Publish and Refresh" and allows the user to indicate whether a task row is published or refreshed only.  
@@ -67,51 +71,52 @@ For more information, see [Define initial areas, iterations, and Project mapping
  You use the following XML syntax to specify which column maps to the synchronization field. You set the ProjectField attribute to a valid column in Project.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<SyncField ProjectField="" />  
-```  
+> ```XML 
+> <SyncField ProjectField="" />  
+> ```  
   
  The **LinksField** element specifies the links and attachments column. By using the links and attachments column, users can indicate whether a particular task row has links or attachments.  
   
  You use the following XML syntax to specify which column maps to the links and attachments field. You set the ProjectField attribute to a valid column in Project.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<LinksField ProjectField="" />  
-```  
+> ```XML  
+> <LinksField ProjectField="" />  
+> ```  
   
-<a name="DefaultFM"></a> 
-##Default field mappings  
+<a name="DefaultFM"></a>
+ 
+## Default field mappings  
+
  The following example shows how the MSF for Agile Software Development process template maps fields in work items to columns in Project.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<?xml version="1.0" encoding="utf-8"?>  
-<MSProject>  
-  <Mappings>  
-    <Mapping WorkItemTrackingFieldReferenceName="System.AreaPath" ProjectField="pjTaskOutlineCode9" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.AssignedTo" ProjectField="pjTaskResourceNames" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.Id" ProjectField="pjTaskText10" ProjectName="Work Item ID" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.IterationPath" ProjectField="pjTaskOutlineCode10" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.Reason" ProjectField="pjTaskText14" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.Rev" ProjectField="pjTaskText23" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.State" ProjectField="pjTaskText13" ProjectName="State" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.Title" ProjectField="pjTaskName" />  
-    <Mapping WorkItemTrackingFieldReferenceName="System.WorkItemType" ProjectField="pjTaskText24" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Common.Priority" ProjectField="pjTaskText19" ProjectName="Work Item Priority" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Common.StackRank" ProjectField="pjTaskNumber1" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.RemainingWork" ProjectField="pjTaskRemainingWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
-    <LinksField ProjectField="pjTaskText26" />  
-    <SyncField ProjectField="pjTaskText25" />  
-  </Mappings>  
-</MSProject>  
-```  
+> ```XML 
+> <?xml version="1.0" encoding="utf-8"?>  
+> <MSProject>  
+>   <Mappings>  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.AreaPath" ProjectField="pjTaskOutlineCode9" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.AssignedTo" ProjectField="pjTaskResourceNames" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.Id" ProjectField="pjTaskText10" ProjectName="Work Item ID" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.IterationPath" ProjectField="pjTaskOutlineCode10" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.Reason" ProjectField="pjTaskText14" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.Rev" ProjectField="pjTaskText23" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.State" ProjectField="pjTaskText13" ProjectName="State" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.Title" ProjectField="pjTaskName" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="System.WorkItemType" ProjectField="pjTaskText24" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Common.Priority" ProjectField="pjTaskText19" ProjectName="Work Item Priority" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Common.StackRank" ProjectField="pjTaskNumber1" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.RemainingWork" ProjectField="pjTaskRemainingWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
+>     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
+>     <LinksField ProjectField="pjTaskText26" />  
+>     <SyncField ProjectField="pjTaskText25" />  
+>   </Mappings>  
+> </MSProject>  
+> ```  
   
 ## Related articles   
 
-- [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)
-- [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)   
+- [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md) 

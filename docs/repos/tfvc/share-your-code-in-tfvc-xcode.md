@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: quickstart
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Share your code in TFVC using Xcode
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
 
@@ -92,8 +92,8 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 
 ## Additional information
 
-* [Should I use Git or TFVC for my project?](#should-i-use-git-or-tfvc-for-my-team-project)
-* [If my project uses Git Version control, can I still share my Xcode projects in Azure DevOps Services?](#if-my-team-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-azure-devops-services)
+* [Should I use Git or TFVC for my project?](#should-i-use-git-or-tfvc-for-my-project)
+* [If my project uses Git Version control, can I still share my Xcode projects in Azure DevOps Services?](#if-my-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-azure-devops-services)
 
 ### Should I use Git or TFVC for my project?
 
