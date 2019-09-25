@@ -129,7 +129,7 @@ By default, all project contributors in an organization have access to the Micro
 
 ### I need more agents. What can I do?
 
-A: All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
+All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 
