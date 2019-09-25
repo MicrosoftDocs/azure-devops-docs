@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 08/15/2019
+ms.date: 09/25/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -287,6 +287,9 @@ Command:
 #### Automatic login and lock
 
 Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/HT201476).
+
+> [!NOTE]
+> For more information, see the [Terminally Geeky: use automatic login more securely](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) blog. The .plist file mentioned in this linked article may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/5779922/make-os-x-load-your-desktop-before-you-log-in).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
