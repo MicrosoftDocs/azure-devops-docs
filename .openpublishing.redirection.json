@@ -4927,7 +4927,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md",
+      "redirect_url": "https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md",
       "redirect_document_id": false
     },
     {
