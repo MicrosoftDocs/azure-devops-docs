@@ -7,9 +7,9 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
-ms.date: 06/30/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 06/12/2019
 ---
 
 # Choosing the right authentication mechanism
@@ -27,6 +27,9 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services Extension](../../../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
+
+> [!NOTE]
+> The Azure DevOps API doesn't support non-interactive service access via service principals.
 
 To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
 

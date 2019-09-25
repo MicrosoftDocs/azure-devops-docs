@@ -18,7 +18,9 @@ ms.date: 11/19/2018
 
  
 ::: moniker range="tfs-2017" 
+
 Installation of Delivery Plans requires TFS 2017.2 or later version.
+
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)] 

@@ -21,8 +21,11 @@ Use this task in a build or release pipeline to find or download a specific vers
 tools cache and add it to the PATH. Use the task to change the version of Go Lang used in subsequent tasks.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GoToolV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -31,7 +34,12 @@ tools cache and add it to the PATH. Use the task to change the version of Go Lan
 <tr><td>Version</td><td>(Required) Go tool version to download and install. Example: 1.9.3</td></tr>
 <tr><td>GOPATH</td><td>(Optional) Value for the GOPATH environment variable.</td></tr>
 <tr><td>GOBIN</td><td>(Optional) Value for the GOBIN environment variable.</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Open source

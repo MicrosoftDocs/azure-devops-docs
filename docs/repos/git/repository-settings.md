@@ -40,11 +40,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
 
-1. Select **options** to view and configure your repository settings.
+2. Select **options** to view and configure your repository settings.
 
-  ![The options UI](_img/repository-settings/repository-settings.png)
+   ![The options UI](_img/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -52,11 +52,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
 
-1. Select **options** to view and configure your repository settings.
+2. Select **options** to view and configure your repository settings.
 
-  ![The options UI](_img/repository-settings/repository-settings.png)
+   ![The options UI](_img/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -64,11 +64,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
 
-1. Select **options** to view and configure your repository settings.
+2. Select **options** to view and configure your repository settings.
 
-  ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
+   ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
 

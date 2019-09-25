@@ -101,7 +101,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                     <div class="cardText">
                         <h3><a href="/azure/devops/project/search/index">Search</a></h3>
                         <p>
-                            <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki and work items</a>
+                            <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki, package and work items</a>
                         </p>
                         <p>
                             <a href="/azure/devops/project/search/code-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Code search</a>
@@ -111,6 +111,9 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                         </p>
                         <p>
                             <a href="/azure/devops/project/wiki/search-wiki?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Wiki search</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/search/package-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Package search</a>
                         </p>
                     </div>
                 </div>
@@ -194,7 +197,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                             <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
                         </p>
                         <p>
-                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                            <a href="https://azure.microsoft.com/support/devops/">Azure DevOps support</a>
                         </p>
                         <p>
                             <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>

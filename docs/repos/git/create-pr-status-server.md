@@ -6,8 +6,8 @@ ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -84,7 +84,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
     node app.js
     ```
 
-  Verify the server is running by browsing to `http://localhost:3000/`.
+   Verify the server is running by browsing to `http://localhost:3000/`.
 
 ## Listen for HTTP POST requests
 The web server is going to receive `POST` requests from Azure DevOps Services, so you need to handle those requests in your server.
@@ -212,7 +212,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-[Authenticating with personal access tokens](../../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -230,13 +230,13 @@ Now that your server can receive service hook events when new PRs are created, u
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+   `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
-  The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
+   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
-  The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed. This is the place where users can go to get more information about the status, for example, a build report or test run. If no URL is specified, the description will appear as text with no link.
+   The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed. This is the place where users can go to get more information about the status, for example, a build report or test run. If no URL is specified, the description will appear as text with no link.
 
-  The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status. 
+   The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status. 
 
     ``` javascript
         var prStatus = {
@@ -339,7 +339,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
 
-0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

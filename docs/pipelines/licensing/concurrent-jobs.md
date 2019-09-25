@@ -7,14 +7,14 @@ ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 8/22/2018
+ms.author: phwilson
+author: chasewilson
+ms.date: 08/13/2019
 monikerRange: '>= azure-devops'
 ---
 # Parallel jobs
 
-**Azure Pipelines | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
+**Azure Pipelines | [Azure DevOps Server 2019](concurrent-pipelines-tfs.md) | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
 You can use a _parallel job_ in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
@@ -30,10 +30,10 @@ We provide a *free tier* of service by default in every organization:
 When the free tier is no longer sufficient:
 
 - Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
-- Private project: You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+- Private project: You can pay for additional capacity per parallel job. The first additional capacity purchased only removes the monthly time limit on the free job and allows you to run each job for up to 360 minutes (6 hours). Additional purchases after the first will start to add additional parallel jobs [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 
-> [!NOTE]
-> When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization still stays at 1. This purchase only removes the limits on the free parallel job that you have. To be able to run two jobs concurrently, you will need to purchase two parallel jobs. 
+> [!NOTE] 
+> When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
 
 ## Self-hosted CI/CD
 
@@ -41,12 +41,11 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 
 We provide a *free tier* of service by default in your organization:
 
-- Public project: 10 free self-hosted parallel jobs.
+- Public project: Unlimited parallel jobs.
 - Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
 
 When the free tier is no longer sufficient:
 
-- Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
 - Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 There are no time limits on self-hosted jobs.
@@ -139,7 +138,7 @@ You can have as many users as you want when you're using Azure Pipelines. There 
 
 ### Are there any limits on the number of builds and release pipelines that I can create?
 
-No. You can create hundreds or even thousands of definitions for no charge. You can register any number of self-hosted agents for no charge.
+No. You can create hundreds or even thousands of pipelines for no charge. You can register any number of self-hosted agents for no charge.
 
 ### As a Visual Studio Enterprise subscriber, do I get additional parallel jobs for TFS and Azure Pipelines?
 

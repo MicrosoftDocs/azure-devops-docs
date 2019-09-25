@@ -1,16 +1,13 @@
 - name: Sprints (Scrum) 
-  href: index.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-- name: Overview
-
-  items:
-  - name: About sprints and Scrum
-    href: scrum-overview.md
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: About sprints and Scrum
+  href: scrum-overview.md
 - name: Quickstarts
   items:
   - name: Schedule sprints
     href: define-sprints.md 
   - name: Define iteration paths or sprints
-    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json    
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json    
 - name: Tutorials 
   items:
   - name: 1. Assign backlog items to a sprint
@@ -23,11 +20,14 @@
     href: adjust-work.md
   - name: 5. Share your sprint plan 
     href: share-plan.md
-  - name: 6. Update the taskboard 
+  - name: 6. Update the Taskboard 
+    displayname: status, remaining work, scope 
     href: task-board.md
   - name: Monitor sprint burndown
+    displayname: charts, in-context charts, in context reports, remaining work, scope 
     href: sprint-burndown.md
   - name: Forecast
+    displayname: velocity, sprints, iterations  
     href: forecast.md
 - name: Concepts
   items:
@@ -37,7 +37,11 @@
     href: scrum-key-concepts.md
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
-
+- name: How-to-Guides
+  items:
+  - name: Customize a Taskboard
+    displayname: cards, fields, styles, columns 
+    href: customize-taskboard.md
 
 
 

@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: midenn
-author: mitchdenny
-ms.date: 09/25/2018
+ms.author: phwilson
+author: chasewilson
+ms.date: 08/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -102,7 +102,7 @@ az devops configure --defaults organization=https://[your-organization].visualst
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
 
-Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org/spec/v1.0.0.html) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
+Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer) 2.0.0](https://semver.org/spec/v2.0.0.html) without build metadata (`+` suffix).
 
 # [New URLs](#tab/azuredevops)
 
@@ -144,6 +144,39 @@ az artifacts universal download --organization https://fabrikam.visualstudio.com
 ```
 
 ---
+
+### Filtered Universal Package downloads
+
+For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files. The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+
+The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
+
+# [New URLs](#tab/azuredevops)
+
+```azurecli
+az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+```
+
+#  [Legacy URLs](#tab/vsts)
+
+```azurecli
+az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+```
+
+---
+
+### Downloading the latest version
+
+When downloading a Universal Package, you can use a wildcard expression in the `version` parameter to download the highest version of a package according to [Semantic Versioning](https://semver.org) precedence rules.  
+
+#### Examples
+`*`: Highest version  
+`1.*`: Highest version with major version `1`  
+`1.2.*`: Highest patch release with major version `1` and minor version `2`  
+  
+Wildcard expressions do not currently support pre-release versions. It is not possible to get the latest pre-release version of a package.  
+  
+Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
 
 ## Next steps
 

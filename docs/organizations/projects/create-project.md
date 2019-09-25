@@ -142,11 +142,11 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 
 1. If you have TFS 2017.1 or a later version, choose the ![gear icon](../../_img/icons/gear-icon.png) to open the **Projects** page, and then choose **New Project**.
 
-  > [!div class="mx-imgBorder"]  
-  > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
-
-   >Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
-
+   > [!div class="mx-imgBorder"]  
+   > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
+   > 
+   > Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
+   > 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
@@ -211,7 +211,8 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    >**Tip:**  If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
+    > [!TIP]
+    > If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
 
 5. If it's your first time connecting to TFS, you need to add TFS to the list of recognized servers.
 
@@ -254,8 +255,8 @@ You can create a project from Team Explorer after you have connected to an on-pr
 	<table>
 	<tbody valign="top">
 	<tr>
-	<td>![Team Explorer Home page w/ TFVC as source control](_img/IC827209.png)</td>
-	<td>![Team Explorer Home page with Git as source control](_img/IC827210.png)</td>
+    <td><img src="_img/IC827209.png" alt="Team Explorer Home page w/ TFVC as source control"/></td>
+    <td><img src="_img/IC827210.png" alt="Team Explorer Home page with Git as source control"/></td>
 	</tr>
 	</tbody>
 	</table>

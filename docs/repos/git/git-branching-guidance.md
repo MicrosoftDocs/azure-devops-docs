@@ -27,9 +27,9 @@ The following branching strategies are based on the way we use Git here at Micro
 
 Keep your branch strategy simple by building your strategy from these three concepts:
 
-0. Use feature branches for all new features and bug fixes.
-0. Merge feature branches into the master branch using pull requests. 
-0. Keep a high quality, up-to-date master branch.  
+1. Use feature branches for all new features and bug fixes.
+2. Merge feature branches into the master branch using pull requests. 
+3. Keep a high quality, up-to-date master branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 
@@ -99,9 +99,9 @@ Your master branch needs these qualities so that feature branches created by you
 
 Set up a [branch policy](branch-policies.md) for your master branch that:   
 
-0. Requires a pull request to merge code. This prevents direct pushes to the master branch and ensures discussion of proposed changes.
-0. Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
-0. Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.    
+1. Requires a pull request to merge code. This prevents direct pushes to the master branch and ensures discussion of proposed changes.
+2. Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
+3. Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.    
 
 >[!TIP]
 >The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
@@ -133,9 +133,9 @@ Merging the feature branch into the master branch can bring over release-specifi
 
 Update the master branch with a change made in the release branch with these steps:
 
-0. Create a new feature branch off the master branch to port the changes.
-0. Cherry-pick the changes from the release branch to your new feature branch.
-0. Merge the feature branch back into the master branch in a second pull request. 
+1. Create a new feature branch off the master branch to port the changes.
+2. Cherry-pick the changes from the release branch to your new feature branch.
+3. Merge the feature branch back into the master branch in a second pull request. 
    
 
 ![image of release branch workflows](_img/branching-guidance/releasebranching_master.png)

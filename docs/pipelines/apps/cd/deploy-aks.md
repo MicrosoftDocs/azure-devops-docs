@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 08/30/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -22,23 +22,45 @@ Azure Pipelines.
 
 After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
 
-## Example
 
-If you want some sample code that works with this guidance, import (into Azure DevOps) or fork (into GitHub) this repo:
+## Get the code
+
+If you want some sample code that works with this guidance, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps), or fork (into GitHub), the following repository, based on the desired runtime.
+
+#### [Java](#tab/java)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
-https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/kubernetes/Application
+https://github.com/spring-guides/gs-spring-boot-docker.git
+```
+#### [JavaScript](#tab/java-script)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
+https://github.com/MicrosoftDocs/pipelines-javascript-docker
+```
+#### [Python](#tab/python)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+```
+#### [.NET Core](#tab/dotnet-core)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
+```
+* * *
 
 
 ## Define your CI build process
 
-You'll need a continuous integration (CI) build process that publishes a container image to a container registry (for example: Azure Container Registry) and packages a Helm chart.
-
-To set up a CI build process, see:
-
-* [Build a Docker image](../../languages/docker.md) and [create a Helm chart](../../languages/helm.md).
+Set up a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
 
 ## Prerequisites
 
@@ -48,7 +70,7 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
-1. In the Azure Portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
+1. In the Azure portal, choose **Create a resource**, **New**, **Containers**, then choose **Kubernetes Service**.    
 
 1. Select or create a new Resource Group, enter name for your new Kubernetes Service cluster and DNS name prefix.
 
@@ -69,7 +91,7 @@ you must establish an authentication mechanism. This can be achieved in two ways
 ## Create a release pipeline
 
 The build pipeline used to set up CI has already built a Docker image and pushed it to an Azure Container Registry.
-It also packaged and published a Helm chart as an artifact. In the release pipeline we'll deploy the container image as a Helm application to the AKS cluster.
+It also packaged and published a Helm chart as an artifact. In the release pipeline, we'll deploy the container image as a Helm application to the AKS cluster.
 
 1. In **Azure Pipelines**, or the **Build &amp; Release** hub in TFS, open the summary for your build.
 
@@ -90,7 +112,7 @@ It also packaged and published a Helm chart as an artifact. In the release pipel
    Configure the settings for this task as follows:
 
    - **Connection Type**: Select **Azure Resource Manager** to connect to an AKS cluster by using
-     an Azure service connection. If, alternatively, you want to connect to any Kubernetes
+     an Azure service connection. Alternatively, if you want to connect to any Kubernetes
      cluster by using kubeconfig or a service account, you can select **Kubernetes Service Connection**.
      In this case, you will need to create and select a Kubernetes service connection instead of
      an Azure subscription for the following setting.

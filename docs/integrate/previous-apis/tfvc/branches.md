@@ -7,8 +7,8 @@ description: Work with TFVC branches programmatically using the REST APIs for Te
 ms.assetid: 9C1923A9-4887-4DC4-9C20-153C19D453CE
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

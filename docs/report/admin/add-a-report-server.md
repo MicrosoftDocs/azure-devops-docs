@@ -34,20 +34,20 @@ On-premises installations of TFS can include reports to help you manage your sof
 > [!NOTE]  
 >If you installed TFS on a client operating system, such as Windows 7, you can't add reporting as described here, because it isn't supported on client operating systems. 
 
-##What do I need to know before adding a report server?  
+## What do I need to know before adding a report server?  
 <!-- BEGINSECTION class="md-qanda" -->
 
-####Q: What kind of report server can I add?
+#### Q: What kind of report server can I add?
 
 **A:** You'll need to add SQL Server Reporting Services to provide a report server for TFS. This can be added to the SQL Server instance that is supporting TFS, or to a different instance.
 
-####Q: What permissions do I need?
+#### Q: What permissions do I need?
 **A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](/azure/devops/server/admin/add-administrator-tfs).
 
-####Q: Can I add reporting if TFS is installed on a client operating system?
+#### Q: Can I add reporting if TFS is installed on a client operating system?
 **A:** No. You can't add reporting and analysis services on a client operating system. Your choices aren't easy. If you still want to add reporting, either [move the team project collection](/azure/devops/server/admin/move-project-collection) to a deployment of TFS that supports reporting, or [restore your entire deployment to a different server](/azure/devops/server/admin/backup/tut-single-svr-home) that is running a server operating system and a version of SQL Server that supports reporting.
 
-####Q: How do I find out if I already have reporting available for TFS?
+#### Q: How do I find out if I already have reporting available for TFS?
 
 **A:** Look in the administration console for Team Foundation Server. If you see a reporting node and it shows that reporting is configured and enabled, it's already there.  
 
@@ -55,7 +55,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 
 Jump to the bottom of this article to confirm that reports are available for the team project collection, and then move on to [Upload reports to a team project](upload-reports.md).
 
-####Q: Do I need to back up my data first?
+#### Q: Do I need to back up my data first?
 **A:** You should have a recent backup available. If you don't, you can [make a backup using Scheduled Backups](/azure/devops/server/admin/backup/config-backup-sched-plan).
 
 <!-- ENDSECTION -->
@@ -69,7 +69,7 @@ Jump to the bottom of this article to confirm that reports are available for the
 
 <a id="AddRSandAS">  </a>
 
-##Add Reporting Services and Analysis Services to SQL Server 
+## Add Reporting Services and Analysis Services to SQL Server 
 After you confirm that you have an edition of SQL Server that supports reporting (or you upgrade to one), add the reporting and analysis services features if they aren't already configured.
 
 1.	Open the SQL Server Installation Center to add features to an existing installation.  
@@ -80,7 +80,8 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 2.	Once your server has passed all the setup rules checks, pick the instance to add features to.   
 
-	**Tip:** If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
+	  > [!TIP]
+    > If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
 
 	![Add features to an existing instance](_img/installation-type.png)  
 
@@ -107,7 +108,7 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 If you had to choose **Install Only** when you added reporting, you'll need to open Reporting Services Configuration Manager and do some additional configuration. If not, jump ahead to [Add Reporting to TFS](#add_reporting_to_tfs).
 
-##Configure Reporting Services Manually  
+## Configure Reporting Services Manually  
 
 1.	Open Reporting Services Configuration Manager and connect to your report server.  
 
@@ -148,13 +149,15 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	![Use the default name for the database](_img/reporting-warehouse.png)  
 
-	**Tip:** Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
+    > [!TIP]
+    > Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
 
 3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](/azure/devops/server/admin/service-accounts-dependencies-tfs). 
 
 	![You'll need to add the reader account information](_img/analysis-services.png)  
 
-	**Tip:** Test the connection before continuing.  
+    > [!TIP]
+    > Test the connection before continuing.  
 
 4.	For **Reports**, provide the server name and the instance name in **Server**, separated by a slash.  
 
@@ -169,7 +172,8 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	![Edit the folder location to start configuring](_img/team-project-collections.png)  
 
-	**Tip:** If you don't see the **Reports Folder** tab, you might need to refresh or restart the administration console.  
+    > [!TIP]
+    > If you don't see the **Reports Folder** tab, you might need to refresh or restart the administration console.  
  
 6.	Unless you have reasons otherwise, use the example provided, and make sure you include the collection name.  
 
@@ -177,22 +181,22 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 Now that you've added reporting to the server and to the team project collection, you're ready to start adding reports to your projects.
 
-##Try this next
+## Try this next
 
 [Upload reports to a team project](upload-reports.md) 
 
-##Related content
+## Related content
 You can learn more about installing and configuring SQL Server for use with on-premises TFS from these topics:  
 *  [Supported versions and edition](/azure/devops/server/requirements#sql-server)  
 *  [Working with named instances](/azure/devops/server/install/sql-server/install-sql-server)  
 *  [Using SQL Server 2012 AlwaysOn](/azure/devops/server/install/sql-server/use-always-on-groups)  
 *  [Understanding how TFS, SQL Server, and Reporting all work together](/azure/devops/server/architecture/sql-server-databases)   
 
-###Set permissions
+### Set permissions
 - [Set administrator permissions](/azure/devops/server/admin/add-administrator-tfs)  
 
 
-###Change the data reader account  
+### Change the data reader account  
 - [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
 - [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies-tfs) 
 

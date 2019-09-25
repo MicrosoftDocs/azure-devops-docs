@@ -39,22 +39,22 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<LinksControlOptions>  
-   <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-       <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
-   </WorkItemLinkFilters>  
-   <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
-       <Filter LinkType="externalLinkName"/>  
-   </ExternalLinkFilters>  
-   <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
-       <Filter WorkItemType="workItemTypeReferenceName"/>  
-   </WorkItemTypeFilters>  
-   <LinkColumns>  
-      <LinkColumn RefName="reference name" | LinkAttribute="link attribute name"/>  
-   </LinkColumns>  
-</LinksControlOptions>  
-```  
+> ```XML
+> <LinksControlOptions>  
+>    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
+>        <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
+>    </WorkItemLinkFilters>  
+>    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
+>        <Filter LinkType="externalLinkName"/>  
+>    </ExternalLinkFilters>  
+>    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
+>        <Filter WorkItemType="workItemTypeReferenceName"/>  
+>    </WorkItemTypeFilters>  
+>    <LinkColumns>  
+>       <LinkColumn RefName="reference name" | LinkAttribute="link attribute name"/>  
+>    </LinkColumns>  
+> </LinksControlOptions>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -100,27 +100,27 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
  The following example specifies how to enable the creation of links whose type is `Microsoft.VSTS.Common.TestedBy` and show the `Forward Name` for this link type. The filter options disallow creation of links to all external link types. In addition, displayed default column fields for the listed links correspond to the following friendly names: ID, Work Item Type, Title, Assigned To, State, and the Comment field defined for the link. For more examples, see [Define link controls to restrict link relationships](define-link-controls.md).  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Control Type="LinksControl" Name="TestedBy" Label="&Work items testing this bug:" LabelPosition="Top">  
-   <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="include">  
-         <Filter LinkType="Microsoft.VSTS.Common.TestedBy" FilterOn="forwardname" />  
-      </WorkItemLinkFilters>  
-      <WorkItemTypeFilters FilterType="include">  
-          <Filter WorkItemType="Test Case" />  
-      </WorkItemTypeFilters>  
-          <ExternalLinkFilters FilterType="excludeAll"/>  
-      <LinkColumns>  
-          <LinkColumn RefName="System.ID" />  
-          <LinkColumn RefName="System.WorkItemType" />  
-          <LinkColumn RefName="System.Title" />  
-          <LinkColumn RefName="System.AssignedTo" />  
-          <LinkColumn RefName="System.State" />  
-          <LinkColumn LinkAttribute="System.Links.Comment" />  
-      </LinkColumns>  
-   </LinksControlOptions>  
-</Control>  
-```  
+> ```XML
+> <Control Type="LinksControl" Name="TestedBy" Label="&Work items testing this bug:" LabelPosition="Top">  
+>    <LinksControlOptions>  
+>       <WorkItemLinkFilters FilterType="include">  
+>          <Filter LinkType="Microsoft.VSTS.Common.TestedBy" FilterOn="forwardname" />  
+>       </WorkItemLinkFilters>  
+>       <WorkItemTypeFilters FilterType="include">  
+>           <Filter WorkItemType="Test Case" />  
+>       </WorkItemTypeFilters>  
+>           <ExternalLinkFilters FilterType="excludeAll"/>  
+>       <LinkColumns>  
+>           <LinkColumn RefName="System.ID" />  
+>           <LinkColumn RefName="System.WorkItemType" />  
+>           <LinkColumn RefName="System.Title" />  
+>           <LinkColumn RefName="System.AssignedTo" />  
+>           <LinkColumn RefName="System.State" />  
+>           <LinkColumn LinkAttribute="System.Links.Comment" />  
+>       </LinkColumns>  
+>    </LinksControlOptions>  
+> </Control>  
+> ```  
 
 <a name="Toolbar"></a>   
 ##  LinksControl toolbar buttons  

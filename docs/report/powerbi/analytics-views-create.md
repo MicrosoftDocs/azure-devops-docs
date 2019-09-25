@@ -19,6 +19,8 @@ ms.date: 04/05/2019
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+
 You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
 [!INCLUDE [temp](../_shared/boards-disabled.md)]
@@ -83,9 +85,9 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
    By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add additional projects defined in the organization to the filter. 
 
- You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
-> [!div class="mx-imgBorder"]
-> ![Area Path picker example](_img/editable-views/area-path.png)
+  You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
+  > [!div class="mx-imgBorder"]
+  > ![Area Path picker example](_img/editable-views/area-path.png)
 
 * **Add filters for backlogs and work items types**
 
@@ -118,7 +120,7 @@ In the next tab, <strong>Fields</strong>, you can add and remove fields that you
 You can add any custom fields you've added through an inherited process.
 
 > [!NOTE]
->  You can't add fields with a data type of Plain Text (long text) or HTML (rich-text). These fields aren't available from the Analytics service for the purposes of reporting. 
+>  You can't add fields with a data type of Plain Text (long text) or HTML (rich-text). These fields aren't available from Analytics for the purposes of reporting. 
 
 
 <a id="select-trend-data" />
@@ -146,7 +148,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 > | **Date range** | Choose this option and select a specific start and end date to include in the dataset, or check the to present checkbox to specify a rolling window with no fixed end date. When you check **to present**, the end date corresponds to the day the reports is refreshed. If you uncheck it, the end date is always the date selected on the end date field. |
 > | **All history** | Choose this option to include the complete history for all work items you've selected in your filter criteria. If you have a significant history, specify a Weekly or Monthly granularity.|
 
-**Exclude closed items**  - The Analytics service stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
+**Exclude closed items**  - Analytics stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
 
  > [!div class="mx-imgBorder"]
  >![Exclude work items for a rolling period of 14 days](_img/editable-views/history-exclude.png)
@@ -204,7 +206,7 @@ Choose the **Edit** link to edit a view.
 ## Related articles
 
 - [Manage Analytics views](analytics-views-manage.md) 
-- [Data available from the Analytics Service](data-available-in-analytics.md)
-- [Grant permissions to access the Analytics service](./analytics-security.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
 - [Power BI integration overview](overview.md)
 

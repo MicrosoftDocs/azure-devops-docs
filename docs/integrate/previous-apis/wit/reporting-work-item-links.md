@@ -7,8 +7,8 @@ description: Report on work item links programmatically using the REST APIs for 
 ms.assetid: 56c1dc20-c204-4550-8294-8d88b6a54aec
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -24,12 +24,12 @@ This API provides access to all work item links in your project or collection an
 The response of the API contains a batch of work item links ("values"), a URL to the next batch of work item links ("nextLink") and a boolean that tells you whether you have read all currently available work item links ("isLastBatch").
 
 The workflow for building your warehouse is as follows:
-  1. Make a request to the API without providing a watermark parameter
-  2. Process the work item links returned by the API
-  3. Persist "nextLink" and check "isLastBatch"
-    * If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
-  4. Make the next request using the URL from "nextLink"
-  5. Go to step 2
+1. Make a request to the API without providing a watermark parameter
+2. Process the work item links returned by the API
+3. Persist "nextLink" and check "isLastBatch"
+   * If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
+4. Make the next request using the URL from "nextLink"
+5. Go to step 2
 
 ## Get a batch of work item links
 

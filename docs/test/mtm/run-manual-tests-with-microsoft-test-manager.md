@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -23,11 +23,11 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
->**The web portal or Microsoft Test Runner?** Use the web-based test runner
-in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
-Test Runner for desktop applications. You can 
-[launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
-from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
+> **The web portal or Microsoft Test Runner?** Use the web-based test runner
+> in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
+> Test Runner for desktop applications. You can 
+> [launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
+> from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
   
 ### Running test cases with Microsoft Test Runner  
   

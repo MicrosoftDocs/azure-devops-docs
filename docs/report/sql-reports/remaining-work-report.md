@@ -36,11 +36,11 @@ After the team has estimated its tasks and begun work, you can use the Remaining
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, types of work items, and states.  
+- Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, types of work items, and states.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
+  For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Hours of Work  
  The following illustration shows an example of the Remaining Work report in the **Hours of Work** view. This example is healthy in that a steady rate of work is being completed. However, the team significantly underestimated the amount of work that was required to complete the iteration, as shown by the hours remaining at the start and the hours completed at the end.  
@@ -125,15 +125,15 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Remaining Work report or change its display in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths, types of work items, and work item states.  
+- Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths, types of work items, and work item states.  
   
--   Switch the view in which the report appears.  
+- Switch the view in which the report appears.  
   
- The following illustration shows the available filters and display options:  
+  The following illustration shows the available filters and display options:  
   
- ![Filters for Remaining Work report](_img/procguid_remainingwork.png "ProcGuid_RemainingWork")  
+  ![Filters for Remaining Work report](_img/procguid_remainingwork.png "ProcGuid_RemainingWork")  
   
 #### To filter the tasks, user stories, and bugs that appear in the report  
   

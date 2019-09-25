@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019
+ms.date: 07/22/2019
 ---
 
 # About Sprints, Scrum and project management 
@@ -58,12 +58,16 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
 ::: moniker range=">= azure-devops-2019"
-![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+> [!div class="mx-imgBorder"]  
+> ![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-!["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+> [!div class="mx-imgBorder"]  
+> ["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
@@ -78,14 +82,17 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker range=">= azure-devops-2019"
 
-0. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)
 
+	> [!NOTE]   
+	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
+
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
+1. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Sprints>Sprint selector](_img/overview/select-a-sprint-new-nav.png)
@@ -110,12 +117,12 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ::: moniker-end  
 
+[!INCLUDE [temp](../_shared/velocity-section.md)]
 
 ## Try this next
 
 > [!div class="nextstepaction"]
 > [Schedule sprints](define-sprints.md) 
-
 
 ## Related articles 
 

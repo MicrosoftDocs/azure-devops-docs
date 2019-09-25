@@ -7,8 +7,8 @@ description: Index of using service hooks to integrate third party apps with Azu
 ms.assetid: ae372488-1430-4b68-b12e-a0a09ecad685
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/23/2016
 ---
 

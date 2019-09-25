@@ -14,6 +14,8 @@
       href: create-test-cases.md
     - name: Run manual tests
       href: run-manual-tests.md
+    - name: New test plans page
+      href: new-test-plans-page.md 
   - name: "Test & Feedback extension"
     items:
     - name: Install the extension
@@ -52,8 +54,6 @@
       href: test-different-configurations.md
     - name: Repeat a test with different data
       href: repeat-test-with-different-data.md
-    - name: Collect screenshots and video
-      href: collect-screenshots-and-video.md
     - name: Collect diagnostic data
       href: collect-diagnostic-data.md
     - name: Manage test results

@@ -1,7 +1,7 @@
 ---
-title: Dataset design for Power BI & Azure DevOps
+title: Analytics Views - Dataset design
 titleSuffix: Azure DevOps
-description: Describes dataset that is created in Power BI for an Analytics View for Azure DevOps 
+description: Describes the dataset that is created in Power BI for an Analytics View 
 ms.technology: devops-analytics
 ms.prod: devops
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Dataset design for the Power BI Connector for Azure DevOps
+# Analytics views dataset design
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
@@ -27,9 +27,9 @@ To learn more about Power BI and datasets, see [Power BI - basic concepts for Po
 
 ## Flattening the Analytics OData endpoint
 
-The Analytics OData endpoint provides a normalized representation of the Analytics service data. The data is normalized primarily to support reporting on the "many-to-many" relationships that exist between the data, such as work items and  associated tags. 
+The Analytics OData endpoint provides a normalized representation of Analytics data. The data is normalized primarily to support reporting on the "many-to-many" relationships that exist between the data, such as work items and  associated tags. 
 
-The Power BI Data Connector represents this data as a single table so that the relationships shown in our [Analytics service data model](../extend-analytics/data-model-analytics-service.md) do not need to be recreated in Power BI. This allows you to filter immediately on complex fields, such as work item tags. 
+The Power BI Data Connector represents this data as a single table so that the relationships shown in our [Analytics data model](../extend-analytics/data-model-analytics-service.md) do not need to be recreated in Power BI. This allows you to filter immediately on complex fields, such as work item tags. 
 
 The process greatly simplifies getting your reports up and running. However, not all of the fields available through the Analytics OData endpoint are available for selection in an Analytics view. 
 
@@ -72,9 +72,9 @@ You can select the following Analytics-based fields in an Analytics view:
 > | Tags | Semicolon delimited list of Tags | 
 > | WorkItemRevisionSK | The Analytics unique key for the work item revision, used to join related entities | 
 
-For information about state categories, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). For more detailed information on the Analytics service data model, see [Data model for the Analytics service](../extend-analytics/data-model-analytics-service.md). 
+For information about state categories, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories.md). For more detailed information on Analytics data model, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
-To access any additional fields available through the [Analytics service](../extend-analytics/analytics-metadata.md), include the corresponding Surrogate Keys(SK) or Work Item Id in the Analytics view and create the necessary mapping tables based on the Analytics Navigational Property. 
+To access any additional fields available through [Analytics](../extend-analytics/analytics-metadata.md), include the corresponding Surrogate Keys(SK) or Work Item Id in the Analytics view and create the necessary mapping tables based on the Analytics Navigational Property. 
 
 * Iterations (IterationSK)
 * Areas (AreaSK)
@@ -90,7 +90,7 @@ To access any additional fields available through the [Analytics service](../ext
 
 Understanding the [Analytics data model](../extend-analytics/data-model-analytics-service.md) is critical to building good relationships between entities. 
 
-By default, when basic data is returned from the Analytics service, the data is related as shown in the figure below:
+By default, when basic data is returned from Analytics, the data is related as shown in the figure below:
 
 ![Entity relationships](_img/pbi-relationships.png)  
 
@@ -124,7 +124,7 @@ Now you can list Areas by Project and get a count of Areas in each project.
 
 ## Historical data modeling
 
-The Analytics service models historical data as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. If the week has not completed, the snapshot value for the week is based on the current value.
+Analytics models historical data as a **periodic snapshot fact table**. The fact table contains one row created at midnight for each work item at the end of each period. For example, history on a daily period is modeled as one row at midnight for each day, while a weekly period would be one row at midnight of the last day of the week. If the week has not completed, the snapshot value for the week is based on the current value.
 
 The grain of this table is the period, not the individual work item. This means that **a single Work Item will appear multiple times**, once for each historical period. Selecting the last 30 days of history will result in a single work item appearing 30 times in the data model. If the work item has not changed within the last 30 days, the most recent revision of the work item is replicated on each day.
 
@@ -138,7 +138,7 @@ For example, if you want to show a table of work items and values for the associ
 ![Power BI Date menu of options](./_img/data-connector-date.png)
 
 ## Related articles  
-- [Data model for the Analytics service](../extend-analytics/data-model-analytics-service.md)
+- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
 - [Power BI integration overview](overview.md)  
 - [Work item field index](../../boards/work-items/guidance/work-item-field.md)
 - [Work item categories](../../reference/xml/use-categories-to-group-work-item-types.md)

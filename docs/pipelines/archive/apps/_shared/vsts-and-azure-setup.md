@@ -12,6 +12,6 @@ Before you begin, make sure that you are:
 
 * Using the **New Release pipeline Editor** that is currently in preview.
 
- ![preview features action in profile menu](_img/preview-features-action-in-profile-menu.png)
+  ![preview features action in profile menu](_img/preview-features-action-in-profile-menu.png)
 
- ![new release pipeline editor preview on](_img/new-release-definition-editor-preview-on.png)
+  ![new release pipeline editor preview on](_img/new-release-definition-editor-preview-on.png)

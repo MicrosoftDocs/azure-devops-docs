@@ -44,11 +44,11 @@ To use the **branches** command, your **Read** permission must be set to **Allow
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>Domain</i>\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>Domain\UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 </tbody>
 </table>

@@ -8,8 +8,7 @@ ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.custom: seodec18
-ms.date: 03/06/2019
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,11 +22,20 @@ monikerRange: '>= tfs-2015'
 
 ## Configure a repository
 
-At the beginning of a pipeline, the agent downloads files from your repository into a local sources directory.
-
-::: moniker range=">= tfs-2018"
-If your pipeline consists of multiple jobs, the agent downloads source files at the beginning of each job. You can specify only one source repository for your entire pipeline.
+::: moniker range="> azure-devops-2019"
+At the beginning of each non-deployment pipeline job, the agent downloads files from your repository into a local sources directory.
+You can specify only one source repository for your entire pipeline.
+Deployment jobs do not automatically download sources.
 ::: moniker-end
+
+::: moniker range=">= tfs-2018 <= azure-devops-2019"
+At the beginning of each pipeline job, the agent downloads files from your repository into a local sources directory.
+You can specify only one source repository for your entire pipeline.
+::: moniker-end
+
+::: moniker range="< tfs-2018"
+At the beginning of a pipeline, the agent downloads files from your repository into a local sources directory.
+:::moniker-end
 
 ::: moniker range="azure-devops"
 **Azure Pipelines:** To specify the source repository, while editing your pipeline, click the **YAML** or **Tasks** tab, then click **Get sources**, and then select the type of repo that contains your source files.

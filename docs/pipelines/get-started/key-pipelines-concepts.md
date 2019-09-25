@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
 ms.manager: elbatk
-ms.date: 01/16/2019
+ms.date: 07/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -22,6 +22,10 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one job at a time.
 
 For more in-depth information about the different types of agents and how to use them, see [Build and release agents](../agents/agents.md).
+
+## Approvals
+
+[Approvals](../process/approvals.md) define a set of validations required before a deployment can be performed. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
 
 ## Artifact
 

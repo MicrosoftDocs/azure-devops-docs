@@ -33,12 +33,12 @@ Share with your team the reason for the locking of the branch and make sure your
 
 ## Lock a branch using the Branches view
 
-0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
+1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 
-0. Locate your branch on the **Branches** view. You can search for your branch using the **Search all branches** box in the upper right.
+2. Locate your branch on the **Branches** view. You can search for your branch using the **Search all branches** box in the upper right.
 
-0. Lock the branch by selecting the **...** icon next to the branch name and then selecting **Lock** from the menu. A lock icon will appear next to the branch name.
-Unlock a locked branch by selecting **Unlock** from the same menu.
+3. Lock the branch by selecting the **...** icon next to the branch name and then selecting **Lock** from the menu. A lock icon will appear next to the branch name.
+   Unlock a locked branch by selecting **Unlock** from the same menu.
 
    ![Lock a branch from the branches context menu](_img/branches/branches_context_menu_lock.png)
 

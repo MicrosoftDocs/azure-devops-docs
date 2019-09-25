@@ -3,18 +3,18 @@ title: Team Foundation Service updates - Oct 29
 description: VSTS release notes for October 29 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 0d3e5cc9-4814-40a6-b551-f32c85e94aae
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 29
+# Team Foundation Service updates - Oct 29
 
 The update to the service this week contains a lot of bug fixes & one new feature in the build space.
 
-##Build drops
+## Build drops
 
 With this update we are introducing a new option for hosted build drops. First some background. With the on-premises version of TFS, outputs from a build are dropped onto a file share. When we first introduced the hosted build service, dropping the outputs to a file share wasn’t an option since the build service does not have access to file shares inside your firewall. We solved this problem by putting the build outputs into a /drops folder in version control.
 
@@ -36,7 +36,7 @@ You will have the ability to view your build diagnostic logs in TFS Web Access o
 
 ![Diagnostic logs](_img/10_29_03.png)
 
-##Continued UX updates
+## Continued UX updates
 
 As we mentioned in our last release notes, our plan is to continue refining the UI to ensure it’s easy to use and visually appealing. In this update we have updated the grid headers across the site so they are consistent in all experiences. We've worked at getting the right level of contrast between the column headers and the content as well as improving padding between the toolbar, grid headers, and grid content.
 

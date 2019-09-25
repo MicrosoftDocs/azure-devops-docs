@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts WidgetSettings API | Extensions for Azure 
 description: Documentation for the WidgetSettings contract.
 ms.assetid: FA3CF072-EE45-42D6-92DA-AEA6D27218BA
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

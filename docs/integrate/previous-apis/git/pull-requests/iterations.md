@@ -7,8 +7,8 @@ description: Work with Git pull requests programmatically using the REST APIs fo
 ms.assetid: EF349F15-C2BD-4338-9DB8-3FF7DECC5801
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 11/3/2016
 ---
 

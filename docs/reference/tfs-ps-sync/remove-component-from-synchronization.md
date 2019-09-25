@@ -46,11 +46,11 @@ When you delete a task from Project Server that has been synchronized with a wor
   
  The **/force** switch automatically removes mapped or linked components. If you use this switch, you must run only one command for each collection and instance of PWA that you want to remove from participating in synchronization. To shut down the synchronization engine by using the **/force** switch, perform the following actions in the indicated sequence:  
   
-1.  Remove mapping for each collection as [Removing a Team Project Collection from Participating in Synchronization](#remove_tpc) describes later in this topic.  
+1. Remove mapping for each collection as [Removing a Team Project Collection from Participating in Synchronization](#remove_tpc) describes later in this topic.  
   
-2.  Unregister each instance of PWA as [Removing an Instance of PWA from Participating in Synchronization](#removepwa) describes later in this topic.  
+2. Unregister each instance of PWA as [Removing an Instance of PWA from Participating in Synchronization](#removepwa) describes later in this topic.  
   
- The synchronization engine runs under a job service that the Team Foundation Background Job Agent manages. A synchronization engine is registered for each collection that is mapped to an instance of PWA. When you remove the integration of Project Server and Team Foundation Server, you shut down synchronization and cause the following actions to occur:  
+   The synchronization engine runs under a job service that the Team Foundation Background Job Agent manages. A synchronization engine is registered for each collection that is mapped to an instance of PWA. When you remove the integration of Project Server and Team Foundation Server, you shut down synchronization and cause the following actions to occur:  
   
 -   Remove the association between tasks in Project and work items in the project.  
   

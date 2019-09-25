@@ -1,4 +1,4 @@
-#### Q:	Can I create more than one project?
+#### Q: Can I create more than one project?
 
 A: Yes, multiple projects help you keep work separate when you have development projects for different teams. Only one project collection is supported.
 

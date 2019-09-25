@@ -9,7 +9,7 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
-ms.date: 12/07/2018
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
 
-Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
+Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
@@ -62,11 +62,12 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   - Javascript - Mocha,  Jest  and  Jasmine
   - Python- Unittest
  
-  **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
-  [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
+    > [!NOTE]
+    > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
+    > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
-  - [Publishing fully-formed test reports for JavaScript test runners](../languages/javascript.md#run-unit-tests)
-  - [Publishing fully-formed test reports for Python test runners](../languages/python.md#test)
+  - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)
 
 * **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
   that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
@@ -161,6 +162,10 @@ you can organize the **Results** view exactly as you require.
 
 <a name="fullpageview"></a>
 
+### Test debt management with bugs
+
+To manage your test debt for failing or long running tests you can create a bug or add data to exisiting bug and all view all associated work items in the work item tab. 
+
 ### Immersive troubleshooting experience
 
 Error messages and stack traces are lengthy in nature and need enough real estate to view the details during troubleshooting.
@@ -168,6 +173,16 @@ To provide an immersive troubleshooting experience, the **Details** view can be 
 able to perform the required operations in context, such as bug creation or requirement association for the selected test result.
 
 ![Full page panel view](_img/review-continuous-test-results-after-build/full-page-panel-view.png)
+
+<a name="debugginginfo"></a>
+
+### Troubleshooting data for Test failure
+
+For the test failures, the error messages and stack traces are available for troubleshooting. You can also view all attachments associated with the test failure in the *Attachments* tab. 
+
+### Test debt management
+
+You can create or add to an existing bug to manage test debt for failures or long running tests. The *Work Items* tab details all bugs and requirements associated with a Test to help you analyze the requirement impact as well know status and who is working on the bug. 
 
 <a name="historyview"></a>
 

@@ -7,8 +7,8 @@ ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/19/2016
 ---
 
@@ -27,14 +27,13 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center">
     <b>Build your first extension</b>
-    </div>  
-</div>
+    </div><br/></div>
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
     This tutorial walks you through the entire extension creation process while you create a hub within Azure DevOps Services. 
-    From start to finish, you'll learn everything that you need to know about writing an extension and publishing it 
+    From start to finish, you&#39;ll learn everything that you need to know about writing an extension and publishing it 
     to the Marketplace.
     </div>
 </div>
@@ -216,8 +215,8 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
     Service hook publishers define a set of events. Subscriptions listen for the events and define actions to take based on the event. 
-    Subscriptions also target *consumer services*, which are external services that can perform their own actions, when an event occurs.
-    This tutorial walks through creating a custom *consumer service*. 
+    Subscriptions also target <em>consumer services</em>, which are external services that can perform their own actions, when an event occurs.
+    This tutorial walks through creating a custom <em>consumer service</em>. 
     </div>
 </div>
 </div>
@@ -243,7 +242,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
     Widgets can be implemented into your Azure DevOps Services dashboard via contribution extensions. This tutorial is split into three parts: 
-    Creating a "Hello World" widget, Adding a call to an Azure DevOps Services REST API, Adding configuration to your widget. 
+    Creating a &quot;Hello World&quot; widget, Adding a call to an Azure DevOps Services REST API, Adding configuration to your widget. 
     </div>
 </div>
 </div>
@@ -269,8 +268,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
     This short tutorial is to show a developer the correct syntax for calling a REST API within their extension. You can also choose to display the results 
-    of your API call in a grid afterwards.  
-    </div>
+    of your API call in a grid afterwards.<br/>    </div>
 </div>
 </div>
 </div>

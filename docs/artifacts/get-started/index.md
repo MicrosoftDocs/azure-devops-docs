@@ -3,26 +3,26 @@ title: Learn how to share code with packages
 titleSuffix: Azure Artifacts
 description: Use Azure Artifacts to manage and share code across teams and platforms  
 ms.custom: seodec18 
-ms.technology: devops-agile
+ms.technology: devops-artifacts
 ms.prod: devops
 ms.assetid:  
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.topic: conceptual
-ms.date: 05/06/2019
+ms.author: phwilson
+author: chasewilson
+ms.topic: landing-page
+ms.date: 05/22/2019
 ---
 
 # Azure Artifacts
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
-With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private source swith teams of any size. You can 
+With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
 add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  
 
 Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and Team Foundation Server (TFS) 2017 and 2018.
 
-## 5-Minute Quickstarts  
+## 5-minute quickstarts  
 
 - [NuGet](../get-started-nuget.md)
 - [npm](../get-started-npm.md)
@@ -30,7 +30,7 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 - [Python](../quickstarts/python-packages.md)
 - [Universal](../quickstarts/universal-packages.md)
 
-## Step-by-Step Tutorials
+## Step-by-step tutorials
 
 - [Create a private PowerShell repository](../tutorials/private-powershell-library.md)
 - [Protect OSS packages with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
@@ -46,7 +46,7 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 - [Symbols](../concepts/symbols.md)
 
 
-## How-to Guides
+## How-to guides
 
 - [Publish a NuGet package](../nuget/publish.md)
 - [Consume NuGet packages](../nuget/consume.md)

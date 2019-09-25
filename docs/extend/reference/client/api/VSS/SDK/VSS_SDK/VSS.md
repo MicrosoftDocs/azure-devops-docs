@@ -5,8 +5,8 @@ title: VSS SDK Reference for Azure DevOps Services
 description: An overview of the VSS SDK in Azure DevOps Services Integration
 ms.assetid: 19744f62-02a9-479b-8b9c-e52800e6c24c
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
@@ -53,7 +53,7 @@ Initiates the handshake with the host window.
 <h2 class='method'>require()</h2>
 
 Ensures that the AMD loader from the host is configured and fetches a script (AMD) module 
-(and its dependencies)  . If no callback is supplied, this will still perform an asynchronous
+(and its dependencies)  . If no callback is supplied, this still performs an asynchronous
 fetch of the module (unlike AMD require which returns synchronously). This method has no return value.
 
 Usage:
@@ -225,7 +225,7 @@ Get contributions that target a given contribution id. The returned contribution
 
 ### Parameters
 
-* `targetContributionId`: string. Contributions that target the contribution with this ID will be returned
+* `targetContributionId`: string. Contributions that target the contribution with this ID are returned
 
 ### Returns
 
@@ -269,7 +269,7 @@ Get an instance of an object registered with the given id
 <a name="method_getAccessToken"></a>
 <h2 class='method'>getAccessToken()</h2>
 
-Fetch an access token which will allow calls to be made to other Azure DevOps Services services
+Fetch an access token which allows calls to be made to other Azure DevOps Services services
 
 ### Syntax
 <pre class='syntax'>

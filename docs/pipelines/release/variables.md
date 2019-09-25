@@ -83,6 +83,9 @@ Using custom variables at project, release pipeline, and stage scope helps you t
   decrypts these values when referenced by the tasks and passes them
   to the agent over a secure HTTPS channel.
 
+> [!NOTE]
+> Creating custom variables can overwrite standard variables. For example, the PowerShell **Path** environment variable. If you create a custom `Path` variable on a Windows agent, it will overwrite the `$env:Path` variable and PowerShell won't be able to run.
+
 ### Using custom variables
 
 To use custom variables in your build and release tasks, simply enclose the 
@@ -158,7 +161,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
 | Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`Automated` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.Reason | The reason for the deployment. Supported values are:<br>`ContinuousIntegration` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
 | Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
 | Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
 | Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |
@@ -271,7 +274,7 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 ### View the current values of all variables
 
-1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
+1. Open the pipelines view of the summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.
 
    ![Opening the log for a release](_img/view-variable-values-link.png)

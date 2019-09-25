@@ -34,37 +34,37 @@ you can instead use [TFVC with Azure Repos](../../repos/tfvc/share-your-code-in-
 
 ## Clone your repository
 
-0. Clone the repository onto your dev machine.
+1. Clone the repository onto your dev machine.
 
- ![Choose Clone Repository](_img/share-your-code-in-git-vs/IC684063.png)
+   ![Choose Clone Repository](_img/share-your-code-in-git-vs/IC684063.png)
 
-0. Store the repository locally.
+2. Store the repository locally.
 
- ![Choose Clone to store the repository locally](_img/share-your-code-in-git-vs/IC682931.png)
+   ![Choose Clone to store the repository locally](_img/share-your-code-in-git-vs/IC682931.png)
 
 ## Create a new app
 If you don't already have an app in the repo, create one.
 
-0. Create a new project.
+1. Create a new project.
 
- ![New solution from team explorer](_img/share-your-code-in-git-vs/team-explorer-git-new-solution.png)
+   ![New solution from team explorer](_img/share-your-code-in-git-vs/team-explorer-git-new-solution.png)
 
-0. Choose a template and add the new code project to version control.
+2. Choose a template and add the new code project to version control.
 
- ![Choose a template](_img/create-your-app-vs/IC687148.png)
+   ![Choose a template](_img/create-your-app-vs/IC687148.png)
 
 ## Confirm your settings and add the app
 
-0. On the changes page (Keyboard: Ctrl + 0, G), if you haven't already done it,
-confirm your user name and email address.
+1. On the changes page (Keyboard: Ctrl + 0, G), if you haven't already done it,
+   confirm your user name and email address.
 
- ![Configure settings from the changes page](_img/share-your-code-in-git-vs/confirm-git-settings-from-changes-page.png)
+   ![Configure settings from the changes page](_img/share-your-code-in-git-vs/confirm-git-settings-from-changes-page.png)
 
- ![Confirm the default settings](_img/share-your-code-in-git-vs/git-initial-settings-with-default-values.png)
+   ![Confirm the default settings](_img/share-your-code-in-git-vs/git-initial-settings-with-default-values.png)
 
-0. Add a comment and commit your app to version control.
+2. Add a comment and commit your app to version control.
 
- ![Add app to version control on Changes page](_img/share-your-code-in-git-vs/team-explorer-git-changes-add-app.png)
+   ![Add app to version control on Changes page](_img/share-your-code-in-git-vs/team-explorer-git-changes-add-app.png)
 
 
 ## Snapshot (commit) your code
@@ -72,51 +72,51 @@ confirm your user name and email address.
 With your code project stored in a local Git repository on your dev machine, 
 you can commit as early and as often as you like.
 
-0. As you write your code, your changes are automatically tracked by Visual Studio. 
-You can commit one or more specific changes to your local repository from Solution Explorer
-(Keyboard: Ctrl + Alt + L).
+1. As you write your code, your changes are automatically tracked by Visual Studio. 
+   You can commit one or more specific changes to your local repository from Solution Explorer
+   (Keyboard: Ctrl + Alt + L).
 
- ![When your changes are ready, select Commit](_img/share-your-code-in-git-vs/IC683030.png)
+   ![When your changes are ready, select Commit](_img/share-your-code-in-git-vs/IC683030.png)
 
-0. On the Changes page, add a comment and then commit your changes.
+2. On the Changes page, add a comment and then commit your changes.
 
- ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/IC683031.png)
+   ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/IC683031.png)
 
- These changes are now committed.
+   These changes are now committed.
 
- ![Your changes are now committed](_img/share-your-code-in-git-vs/IC683032.png)
+   ![Your changes are now committed](_img/share-your-code-in-git-vs/IC683032.png)
 
 ## Pull changes from your team
 
 Pull changes on a regular basis to ensure your code integrates well with the latest code from the team.
 
-0. From the commits page (Keyboard: Ctrl + 0, O), fetch the commits to see any changes that your team has made.
+1. From the commits page (Keyboard: Ctrl + 0, O), fetch the commits to see any changes that your team has made.
 
- ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs/IC682939.png)
+   ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs/IC682939.png)
 
-0. When you're ready, pull these commits into your local repository.
+2. When you're ready, pull these commits into your local repository.
 
- ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs/IC682942.png)
+   ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs/IC682942.png)
 
-0. The changes from your team are now integrated in your local repository.
+3. The changes from your team are now integrated in your local repository.
 
- ![The changes are now integrated](_img/share-your-code-in-git-vs/IC682943.png)
+   ![The changes are now integrated](_img/share-your-code-in-git-vs/IC682943.png)
 
 ## Push your local commits to the server
 
 When the code you've written on your dev machine is ready, you can push your changes from your local Git repository to the project.
 
-0. From the changes page (Keyboard: Ctrl + 0, G), make sure you've committed your changes.
+1. From the changes page (Keyboard: Ctrl + 0, G), make sure you've committed your changes.
 
- ![Committing from the Changes page](_img/share-your-code-in-git-vs/IC682975.png)
+   ![Committing from the Changes page](_img/share-your-code-in-git-vs/IC682975.png)
 
-0. Go to the commits page (Keyboard: Ctrl + 0, C).
+2. Go to the commits page (Keyboard: Ctrl + 0, C).
 
- ![Push changes](_img/share-your-code-in-git-vs/IC682976.png)
+   ![Push changes](_img/share-your-code-in-git-vs/IC682976.png)
 
-0. Push your changes.
+3. Push your changes.
 
- ![Push changes](_img/share-your-code-in-git-vs/IC682977.png)
+   ![Push changes](_img/share-your-code-in-git-vs/IC682977.png)
 
 
 ## Q&A

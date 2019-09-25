@@ -18,11 +18,11 @@ This error occurs when the New Team Project Wizard attempts to check the Team Fo
   
  The likely causes of this problem are:  
   
--   The network is not available    
--   The Team Foundation server is not available    
--   There is an unexpected problem with the CommonStructureService Web service.  
+- The network is not available    
+- The Team Foundation server is not available    
+- There is an unexpected problem with the CommonStructureService Web service.  
   
- The procedures below will help you correct the cause.  
+  The procedures below will help you correct the cause.  
   
 ### To correct this error  
   

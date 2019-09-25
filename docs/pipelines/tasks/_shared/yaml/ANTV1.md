@@ -11,7 +11,7 @@
     #testRunTitle: # Optional
     #codeCoverageToolOptions: 'None' # Optional. Options: none, cobertura, jaCoCo
     #codeCoverageClassFilesDirectories: '.' # Required when codeCoverageToolOptions != None
-    #codeCoverageClassFilter: # Optional
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageSourceDirectories: # Optional
     #codeCoverageFailIfEmpty: false # Optional
     #antHomeDirectory: # Optional

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 06/24/2019
 ---
 
 # Default permissions and access for charts and dashboards   
@@ -25,6 +25,7 @@ For an overview of dashboard and chart features, see [Dashboards, charts, & widg
 
 
 ::: moniker range=">= tfs-2015" 
+
 ## Dashboards, charts, reports, and widgets
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [About dashboards, charts, reports, and widgets](overview.md). You set [dashboard permissions at the team level](dashboard-permissions.md) from the team dashboard page. 
@@ -41,6 +42,7 @@ Users granted Stakeholder access to private projects can't view or create query 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013" 
+
 ## Dashboards and charts
 
 You can pin charts to a team dashboard **Home** page. 
@@ -53,7 +55,7 @@ You can pin charts to a team dashboard **Home** page.
 
 ## Power BI Integration and Analytics views
 
-From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics is the reporting platform for Azure DevOps. To learn more, see [What is Analytics?](../../report/powerbi/what-is-analytics.md). 
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
 
@@ -63,11 +65,12 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 
 ## Related articles
+
 ::: moniker range=">= azure-devops-2019" 
 
 - [Work across projects](../../project/navigation/work-across-projects.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md) 
-- [Set permissions to access the Analytics Service and Analytics views](../powerbi/analytics-security.md)
+- [Set permissions to access Analytics data and Analytics views](../powerbi/analytics-security.md)
 
 ::: moniker-end
 

@@ -95,7 +95,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    cd fabrikam-web
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    cd SmartHotel360
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 
@@ -254,7 +254,7 @@ This example shows the basic steps of creating and completing a pull request.
    cd fabrikam-web
    ```
 
-  Keep this command window open, because you'll use it in the following steps.
+   Keep this command window open, because you'll use it in the following steps.
 
 ::: moniker-end
 

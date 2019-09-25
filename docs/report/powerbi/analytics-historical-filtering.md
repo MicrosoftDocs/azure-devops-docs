@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
- 
+
 # Applying filters to historical data
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]. 
@@ -45,6 +45,7 @@ Let's say when creating an Analytics View or configuring the Burndown widget, yo
 * Tags contains Customer
 
 Applying these filters to the set of work item revisions yields the following matches:
+
 |Match?|Rev #|Changed Date|ID|Title|State|Area Path|Tags|
 |---|---|---|---|---|---|---|---|
 |![Not matched](./_img/icons/table-no.png)|1|Jan-01|1001|A bug|New|||

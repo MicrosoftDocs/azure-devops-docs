@@ -6,14 +6,16 @@
   items:
   - name: Set up billing
     href: set-up-billing-for-your-organization-vs.md
-  - name: Pay for users
+  - name: Buy Basic for users
     href: buy-basic-access-add-users.md
+  - name: Try Azure Test Plans for free
+    href: try-additional-features-vs.md
+  - name: Buy Basic + Test Plans for users
+    href: buy-basic-plus-test-plans.md
   - name: Buy CI/CD
     href: buy-more-build-vs.md
   - name: Buy Azure Artifacts
-    href: ../../artifacts/sign-up-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Start free trials
-    href: try-additional-features-vs.md
+    href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
 - name: How-to guides
@@ -26,8 +28,6 @@
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQ
     href: billing-faq.md
-  - name: Buy Azure DevOps Server CALs or Test  
-    href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Buy Azure DevOps"

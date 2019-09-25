@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -27,5 +27,5 @@ Interface for options that can be supplied with document actions
 * `scopeValue`: string. Optional. The value of the scope where the document is stored. Can be Current or Me.
 
 * `defaultValue`: any. Optional. The default value to return when using getValue(). If the document has no value,
-this value will be used instead.
+this value is used instead.
 

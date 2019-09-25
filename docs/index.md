@@ -70,13 +70,13 @@ featureFlags:
                     <div class="cardText">
                         <h3>GitHub integration</h3>
                         <p>
-                            <a href="/azure/devops/boards/github/index">GitHub & Azure Boards</a>
+                            <a href="/azure/devops/boards/github/index">GitHub &amp; Azure Boards</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/get-started-yaml">GitHub & Azure Pipelines</a>
+                            <a href="/azure/devops/pipelines/get-started-yaml">GitHub &amp; Azure Pipelines</a>
                         </p>
                         <p>
-                            <a href="/azure/devops-project/azure-devops-project-github">GitHub & Azure DevOps Projects</a>
+                            <a href="/azure/devops-project/azure-devops-project-github">GitHub &amp; Azure DevOps Projects</a>
                         </p>
                     </div>
                 </div>
@@ -175,9 +175,6 @@ featureFlags:
                             <a href="/azure/devops/pipelines/yaml-schema">YAML Schema</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/anaconda">Supported languages</a>
-                        </p>
-                        <p>
                             <a href="/azure/devops/pipelines/artifacts/artifacts-overview">Artifacts</a>
                         </p>
                         <p>
@@ -206,13 +203,13 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/pipelines/index">Build and deploy apps</a></h3>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
+                          <a href="/azure/devops/pipelines/ecosystems/dotnet-core">.NET Core</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a>
+                          <a href="/azure/devops/pipelines/ecosystems/anaconda">Anaconda</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/android">Android</a>
+                          <a href="/azure/devops/pipelines/ecosystems/android">Android</a>
                         </p>
                         <p>
                           <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a>
@@ -224,20 +221,18 @@ featureFlags:
                             <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker">Docker</a>
+                            <a href="/azure/devops/pipelines/ecosystems/docker">Docker</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/go">Go</a> 
+                            <a href="/azure/devops/pipelines/ecosystems/go">Go</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/java">Java</a>
+                            <a href="/azure/devops/pipelines/ecosystems/java">Java</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
-                        </p>
+                            <a href="/azure/devops/pipelines/ecosystems/javascript">JavaScript and Node.js</a><br/>                        </p>
                         <p>
-                            <a href="/azure/devops/pipelines/index">...plus more</a>   
-                        </p>
+                            <a href="/azure/devops/pipelines/index">...plus more</a><br/>                        </p>
                     </div>
                 </div>
             </div>
@@ -261,10 +256,10 @@ featureFlags:
                             <a href="/azure/devops/test/index">Manual testing</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/index">Exploratory testing & stakeholder feedback</a>
+                            <a href="/azure/devops/project/feedback/index">Exploratory testing &amp; stakeholder feedback</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
+                            <a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a>
                         </p>
                         <p>
                             <a href="/visualstudio/test/unit-test-your-code">Unit and functional testing</a>
@@ -277,7 +272,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -315,7 +309,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -337,7 +330,7 @@ featureFlags:
                             <a href="/azure/devops/server/admin/admin-quick-ref">Manage</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/migrate/index">Migrate & Import</a>
+                            <a href="/azure/devops/migrate/index">Migrate &amp; Import</a>
                         </p>
                     </div>
                 </div>
@@ -354,7 +347,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What's new</h3>
+                        <h3>What&#39;s new</h3>
                         <p>
                             <a href="/azure/devops/release-notes/index">Azure DevOps Services</a>
                         </p>
@@ -369,9 +362,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -384,7 +374,7 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/report/index">Reporting</a></h3>
                         <p>
-                            <a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, & Widgets</a>
+                            <a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, &amp; Widgets</a>
                         </p>
                         <p>
                             <a href="/azure/devops/report/powerbi/index">Power BI integration</a>
@@ -403,8 +393,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -440,7 +428,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/organizations/index">Manage & Configure Resources</a></h3>
+                        <h3><a href="/azure/devops/organizations/index">Manage &amp; Configure Resources</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/scale/index">Teams</a>
                         </p>
@@ -454,7 +442,7 @@ featureFlags:
                             <a href="/azure/devops/organizations/billing/index">Billing</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/security/index">Security</a>
+                            <a href="/azure/devops/organizations/security/index">Security & Permissions</a>
                         </p>
                         <p>
                             <a href="/azure/devops/notifications/index">Notifications</a>
@@ -505,7 +493,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/marketplace-extensibility/index">Marketplace & Extensibility</a></h3>
+                        <h3><a href="/azure/devops/marketplace-extensibility/index">Marketplace &amp; Extensibility</a></h3>
                         <p>
                             <a href="/azure/devops/marketplace">Discover extensions</a>
                         </p>
@@ -535,7 +523,7 @@ featureFlags:
                     <div class="cardText">
                         <h3><a href="/azure/devops/dev-resources/index">Developer Resources</a></h3>
                         <p>
-                            <a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">Command Line Interface</a>
+                            <a href="/azure/devops/cli/index">Command Line Interface</a>
                         </p>
                         <p>
                             <a href="/rest/api/vsts/">REST APIs</a>
@@ -563,19 +551,19 @@ featureFlags:
                     <div class="cardText">
                         <h3>Related resources</h3>
                         <p>
-                            <a href="/azure/devops/learn/">Azure DevOps Index Documentation</a>
+                            <a href="/azure/devops/">Azure DevOps Index Documentation</a>
                         </p>
                         <p>
                             <a href="/azure/devops/learn/">DevOps Resource Center</a>
                         </p>
                         <p>
-                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
+                            <a href="/azure/devops-project/">Azure DevOps Projects</a>
                         </p>
                         <p>
                             <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
                         </p>
                         <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
+                            <a href="https://marketplace.visualstudio.com/azuredevops">Azure DevOps Marketplace</a>
                         </p>
                         <p>
                             <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
@@ -603,7 +591,7 @@ featureFlags:
                             <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
                         </p>
                         <p>
-                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                            <a href="https://azure.microsoft.com/support/devops/">Azure DevOps support</a>
                         </p>
                         <p>
                             <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>
@@ -616,8 +604,6 @@ featureFlags:
             </div>
         </div>
     </li> 
-
-
 </ul>
     </div>
 </div>

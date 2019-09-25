@@ -16,13 +16,13 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
 
    ::: moniker range=">= tfs-2018 < azure-devops-2019"
 
-1. From the **Packages** page, select **Connect to Feed**.
+2. From the **Packages** page, select **Connect to Feed**.
 
    ![Connect to feed button on the upper right of the page](../_img/connect-to-feed.png)
 
    ::: moniker-end
 
-1. Open the **Maven** tab, select **Generate Maven credentials**, and copy the generated credentials.
+3. Open the **Maven** tab, select **Generate Maven credentials**, and copy the generated credentials.
 
    * Maven pulls credentials from your **settings.xml** file.
    
@@ -34,7 +34,7 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
    
    * If the file doesn't exist, create one now.
 
-1. Inside the `<settings>` and `<servers>` elements in the file, paste the credentials that you copied in **Step 3**.
+4. Inside the `<settings>` and `<servers>` elements in the file, paste the credentials that you copied in **Step 3**.
 
 **Sample settings.xml:**
 
@@ -44,15 +44,9 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
     <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
     <server>
       <id>dev.azure.com-yourFeedName</id>
-      <configuration>
-        <httpHeaders>
-          <property>
-            <name>Authorization</name>
-            <!--The generated token expires on or before 7/19/2017-->
-            <value>Basic Y2Fqb...</value>
-          </property>
-        </httpHeaders>
-      </configuration>
+      <username>Authorization</username>
+        <!--The generated token expires on or before 7/19/2017-->
+      <password>Y2Fqb...</password>
     </server>
   </servers>
 </settings>

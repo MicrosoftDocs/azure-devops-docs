@@ -7,8 +7,8 @@ description: Work with service hook consumers programmatically using the REST AP
 ms.assetid: B05297FC-F542-42FD-ACDA-E9734974ACBC
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

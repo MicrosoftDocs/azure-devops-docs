@@ -33,17 +33,16 @@ Use command line tools, REST APIS, client SDKs and more to interface with Azure 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Command Line Interface</h3>
+                        <h3><a href="../cli/index.md">Command Line Interface</a></h3>
                         <p>
-                            <a href="/cli/azure/ext/azure-devops/index">Azure DevOps commands</a>
+                            <a href="../cli/get-started.md">Get Started with Azure DevOps CLI</a>
                         </p>
                         <p>
-                            <a href="/cli/azure/install-azure-cli">Install the Azure CLI</a>
+                            <a href="../cli/log-in-via-pat.md">Sign in with a Personal Access Token (PAT)</a>
                         </p>
                         <p>
-                            <a href="https://github.com/Azure/azure-devops-cli-extension">Azure DevOps Extension for Azure CLI</a>
-                        </p>
-                    </div>
+                            <a href="../cli/policy-configuration-file.md">Configure policies</a>
+                        </p><br/>                    </div>
                 </div>
             </div>
         </div>

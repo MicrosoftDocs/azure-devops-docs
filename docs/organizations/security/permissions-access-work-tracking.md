@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/07/2018
+ms.date: 06/02/2019
 ---
 
 # Permissions and access for work tracking
@@ -20,13 +20,13 @@ ms.date: 01/07/2018
 
 ::: moniker range=">= azure-devops-2019"
 
-As a member of an Azure DevOps project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure DevOps project, you can use most of the features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"
 
-As a member of an Azure DevOps project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all features under the **Work** hub. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure DevOps project, you can use most of the features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all features under the **Work** hub. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 ::: moniker-end
 
@@ -118,43 +118,41 @@ You set project-level information permissions from **Project Settings**>**Securi
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">[View project-level information](set-project-collection-level-permissions.md) 
+<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../../organizations/settings/set-area-paths.md) 
+<td align="left">Area node: <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Edit work items under the node](../../organizations/settings/set-area-paths.md)">Edit work items under the node</a> 
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)  
-</td>
+<td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
-<td align="left">[Edit project-level information](set-project-collection-level-permissions.md)     
-</td>
+<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[Edit project-level information](set-project-collection-level-permissions.md)">Edit project-level information</a><br/></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -175,7 +173,7 @@ The **Edit project-level information** permission includes the ability to perfor
 
 ## Team administrator role and permissions  
 
-The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the project.
+The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
 
 
 <table>
@@ -190,53 +188,53 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](../../organizations/settings/add-team-administrator.md) </p>
+<td align="left"><a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[Add a team administrator](../../organizations/settings/add-team-administrator.md)">Add a team administrator</a> </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
 <td align="left">
-[Add team members](../../organizations/settings/add-teams.md) </p>
+<a href="../../organizations/settings/add-teams.md" data-raw-source="[Add team members](../../organizations/settings/add-teams.md)">Add team members</a> </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
-<td align="left">[View shared work item queries](../../boards/queries/using-queries.md)</p>
+<td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">
-[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+<a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)">Manage shared query and query folder permissions</a><br/>(Contribute, Delete, Manage Permissions)
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">
-[Add and edit dashboards](../../report/dashboards.md) 
+<a href="../../report/dashboards.md" data-raw-source="[Add and edit dashboards](../../report/dashboards.md)">Add and edit dashboards</a> 
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
-<td>![checkmark](_img/icons/checkmark.png)</td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -267,7 +265,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 - [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)  
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
 - [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).  
- 
+
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
 ![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  

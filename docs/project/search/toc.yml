@@ -6,14 +6,20 @@
   href: code-search.md
 - name: Search work items
   href: work-item-search.md
+- name: Search packages
+  href: package-search.md
 - name: How-to Guides
   items:
-  - name: Use Code Search
+  - name: Use code search
     href: advanced-code-search-syntax.md
-  - name: Use Work Item Search
+  - name: Use work item search
     href: advanced-work-item-search-syntax.md
-  - name: Administer Search
+  - name: Use package search
+    href: advanced-package-syntax.md
+  - name: Configure search
     href: administration.md
-
-    
+- name: Troubleshooting
+  items:
+  - name: FAQs
+    href: faq.md
   

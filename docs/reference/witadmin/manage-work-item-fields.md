@@ -99,7 +99,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 - The `VALIDUSER` rule is specified for a work item type    
 - The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
   
- For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
+  For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
   
 ### Attributes that you can change for each work item type  
 

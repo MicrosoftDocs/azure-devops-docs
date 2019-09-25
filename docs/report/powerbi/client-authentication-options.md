@@ -1,7 +1,7 @@
 ---
 title: Client authentication options
 titleSuffix: Azure DevOps   
-description: Enter or change authentication credentials when you connect to the Analytics Service from Power BI or Excel
+description: Enter or change authentication credentials when you connect to Analytics from Power BI or Excel
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
@@ -20,13 +20,13 @@ ms.date: 04/05/2019
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to the Analytics Service using the OData feed, choose Azure Active Directory (<strong>Azure AD</strong>) for the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Azure Active Directory (<strong>Azure AD</strong>) for the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-When connecting from Power BI or Excel to the Analytics Service using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
 
 ::: moniker-end
 
@@ -75,27 +75,27 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 ## Create a Personal Access Token  
 
-0. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
+1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
 
 	![User Profile, My Security menu option](../../_shared/_img/open-security.png)  
 
-0. Enter the required information: 
-	- Add a description  
-	- Set the expiration period  
-	- Select the organization 
-	- Choose Selected scopes
-	- Check the **Analytics (read)**
+1. Enter the required information: 
+   - Add a description  
+   - Set the expiration period  
+   - Select the organization 
+   - Choose Selected scopes
+   - Check the **Analytics (read)**
 	
-	And, then choose **Create Token**.  
+     And, then choose **Create Token**.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create personal access token](_img/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
+     > [!div class="mx-imgBorder"]  
+     > ![Create personal access token](_img/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
 
-0. Copy the token that displays. If you navigate away from the page, you won't be able to retrieve it later.  
+2. Copy the token that displays. If you navigate away from the page, you won't be able to retrieve it later.  
 
 	![Copy Personal Access Token dialog](_img/client-authentication/copy-personal-access-token.png)  
 
-0. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
+3. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
 
@@ -125,20 +125,20 @@ authentication screens are identical. This walkthrough is done using Power BI De
 	::: moniker-end
 
 5. In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>:  
-	- If you are using an AAC, enter your username and password  
-	- If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
+   - If you are using an AAC, enter your username and password  
+   - If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
 
-	::: moniker range="azure-devops"
+     ::: moniker range="azure-devops"
 
-	<img src="_img/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="_img/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
-	::: moniker-end
+     ::: moniker-end
 
-	::: moniker range="azure-devops-2019"
+     ::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="_img/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
-	::: moniker-end
+     ::: moniker-end
 
 <a id="update-credentials">  </a>
 ## Change authentication credentials
@@ -177,7 +177,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-5. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**. 
+4. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**. 
 
 ### Update credentials in Excel 
 
@@ -201,7 +201,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-5. In the next **Data Source Settings** dialog, click the Edit button under the Credentials setting. 
+4. In the next **Data Source Settings** dialog, click the Edit button under the Credentials setting. 
  
 	::: moniker range="azure-devops"
 
@@ -215,7 +215,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-6. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**.
+5. Edit the credentials as noted above, click **Save**, then **Done**, then **Close**.
 
 
 ## Publish to PowerBI.com

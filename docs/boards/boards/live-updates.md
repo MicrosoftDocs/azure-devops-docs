@@ -15,11 +15,13 @@ ms.date: 02/14/2019
 ---
 
 
-<a id="live-updates"></a>
+
 
 # Enable live updates 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+
+<a id="live-updates"></a>
 
 Enable live updates to automatically refresh your Kanban board when changes occur. As other team members move or reorder cards, your board will automatically update with the changes. With live updates enabled, you no longer have to press F5 to see the latest changes.  
 

@@ -49,41 +49,41 @@ To use Git, you'll need to have the client tools installed on your computer.
 ## Clone
 To get started, you'll first need to clone your repo to your local machine.  Once you have a local clone, you can start adding code to your repo.
 
-0. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
+1. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Azure DevOps Services from Visual Studio.
+2. Sign in to Azure DevOps Services from Visual Studio.
 
-0. Clone the repository to your computer.
+3. Clone the repository to your computer.
 
 	![Click the Clone Repository link](_img/get-started/VSClone1.png)
 	
-0. The clone URL is automatically populated and a default local path is provided.  Change the local path to the location where you want to store your repo.  Click **Clone** to start copying the repo locally.
+4. The clone URL is automatically populated and a default local path is provided.  Change the local path to the location where you want to store your repo.  Click **Clone** to start copying the repo locally.
 
 	![Click the Clone button](_img/get-started/VSClone2.png)  
 
 ## Add code to your repo
 Let's add a new app to the repo so we can make some changes.
 
-0. Create a new project in Visual Studio from the team explorer.
+1. Create a new project in Visual Studio from the team explorer.
 
- ![New solution link in team explorer](_img/get-started/new-solution-link-in-team-explorer.png)
+   ![New solution link in team explorer](_img/get-started/new-solution-link-in-team-explorer.png)
 
-0. Create a new Console Application.  Notice that the location is set to the location on disk where the empty repo was cloned and the Add to source control option is checked.
+2. Create a new Console Application.  Notice that the location is set to the location on disk where the empty repo was cloned and the Add to source control option is checked.
 
 	![Notice the location is the path to the local repo](_img/get-started/VSProjectLocation.png)
 	
-0. In Team Explorer, navigate to the Changes page.  Notice that your new solution is showing up on the Home page under Solutions.
+3. In Team Explorer, navigate to the Changes page.  Notice that your new solution is showing up on the Home page under Solutions.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Azure DevOps Services.
-If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
+4. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Azure DevOps Services.
+   If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
 	
-0. In your browser, view the changes pushed to the server by clicking on **CODE**.    
+5. In your browser, view the changes pushed to the server by clicking on **CODE**.    
 
 	![See the recently pushed changes under CODE](_img/get-started/VSOAppAdded.png)
 
@@ -93,61 +93,61 @@ These types of branches are often called "topic branches" as they are created fo
 
 Let's make a change in a topic branch to explore some additional features.  
 
-0. In Team Explorer, navigate to the Branches page.
+1. In Team Explorer, navigate to the Branches page.
 	
 	![Click the Branches tile](_img/get-started/VSBranches1.png)
 	
-0. On the Branches page, right-click on the **master** branch and choose **New Local Branch From...** to create a new topic branch.
+2. On the Branches page, right-click on the **master** branch and choose **New Local Branch From...** to create a new topic branch.
 
 	![Right-click and choose New Local Branch From](_img/get-started/VSBranchesNewLocal.png)
 	
-0. Enter a name for your branch and click **Create Branch**.  When naming your branches, use slashes to organize your branches.
+3. Enter a name for your branch and click **Create Branch**.  When naming your branches, use slashes to organize your branches.
 
 	![Enter a branch name and click Create Branch](_img/get-started/VSBranchesCreate.png)
 
 ## Make a change to your app
 Now that you have a new topic branch, you're ready to start making changes to your app.
 
-0. Add a "hello, world" message to the console app.
+1. Add a "hello, world" message to the console app.
 
 	![Add a "Hello, world" message](_img/get-started/VSHelloWorld.png)
 
 ## Commit
-0. Right-click on the file in Solution Explorer and choose **Commit**.  
+1. Right-click on the file in Solution Explorer and choose **Commit**.  
 
 	![Right-click and choose Commit](_img/get-started/VSCommit.png)
 
-0. On the Changes page, enter a commit message and click **Commit** to commit the changes to your topic branch.
+2. On the Changes page, enter a commit message and click **Commit** to commit the changes to your topic branch.
 
 	![Enter a comment and click Commit](_img/get-started/VSChangesCommit.png)
 
 ## Publish
 To share the changes in your topic branch, you'll need to publish it to the server.
 
-0. Click on the **Sync** link in the successful commit notification to open the Synchronization page.
+1. Click on the **Sync** link in the successful commit notification to open the Synchronization page.
 
 	![Click Sync to open the Sync page](_img/get-started/VSCommitSyncMessage.png)
 	
-0. On the Sync page, click on the **Publish** link to push the changes on your topic branch to the server.
+2. On the Sync page, click on the **Publish** link to push the changes on your topic branch to the server.
 
 	![Click Publish to push your changes](_img/get-started/VSSyncPublish.png)
 
 ## Conduct a pull request
 Pull Requests are a common workflow for reviewing code created in a topic branch and merging changes.  Let's create a pull request to see how it works.
 
-0. In your browser, open the **Code** page and click **Pull requests** to view the **Pull Requests** page.
+1. In your browser, open the **Code** page and click **Pull requests** to view the **Pull Requests** page.
 
 	![Click CODE, then Pull Requests](_img/get-started/WebPullRequestHub.png)
 
-0. Click on **New Pull Request** to create a new pull request.
+2. Click on **New Pull Request** to create a new pull request.
 
 	![Click New Pull Request](_img/get-started/WebPullRequestNew.png)
 	
-0. Select your topic branch from the first drop-down.  The default branch (master) is the default target branch.
+3. Select your topic branch from the first drop-down.  The default branch (master) is the default target branch.
 
 	![Select your topic branch](_img/get-started/WebPullRequestSelectBranch.png)
 	
-0. Verify that the preview contains the changes you want to review and click **Create Pull Request**.
+4. Verify that the preview contains the changes you want to review and click **Create Pull Request**.
 
 	![Click Create Pull Request](_img/get-started/WebPullRequestCreate.png)
 	
@@ -186,7 +186,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 First you'll need to:
 * [Make sure you're set up to use the command prompt](command-prompt.md#set_up)
 
- ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
+  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
 * Get the clone URL from the Repos page in Azure DevOps Services.
 

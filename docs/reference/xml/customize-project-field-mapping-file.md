@@ -14,7 +14,7 @@ ms.date: 05/06/2019
 
 # Customize the Microsoft Project field mapping file
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)] 
 
 You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Project, the field map determines which fields in the work item database match the fields in Project.  
 
@@ -32,14 +32,14 @@ For information on using Project and TFS to track work, see [Create your backlog
  You use the following XML syntax to specify a mapping between a work item type field and an Project field. The `Mapping` element is then used to specify a field mapping.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<Mapping WorkItemTrackingFieldReferenceName=""   
-         ProjectField=""  
-         ProjectName=""  
-         ProjectUnits=""  
-         PublishOnly="">  
-         IfSummaryRefreshOnly=""/>  
-```  
+> ```XML 
+> <Mapping WorkItemTrackingFieldReferenceName=""   
+>          ProjectField=""  
+>          ProjectName=""  
+>          ProjectUnits=""  
+>          PublishOnly="">  
+>          IfSummaryRefreshOnly=""/>  
+> ```  
   
 ### Attributes  
  The following table describes the attributes that can be used with the `Mapping` element.  
@@ -57,24 +57,24 @@ For information on using Project and TFS to track work, see [Create your backlog
   
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Mapping WorkItemTrackingFieldReferenceName="System.Title"   
-         ProjectField="pjTaskName"/>  
-```  
+> ```XML
+> <Mapping WorkItemTrackingFieldReferenceName="System.Title"   
+>          ProjectField="pjTaskName"/>  
+> ```  
   
  The following XML syntax shows a more complex example of how to map the work item type field that has the start date to the start date Project field. Because the field is calculated, it is specified to publish and not refresh in order to prevent errors from being introduced by Team Explorer updates.  
   
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true"/>  
-```  
-  
-> [!NOTE]  
+> ```XML
+> <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true"/>  
+> ```  
+> 
+> [!NOTE]
 >  As a best practice, you should map calculated fields in Project to read-only fields in Team Foundation. This helps avoid confusion so that team members do not try to change calculated fields.   
   
 <a name="Reserved"></a> 
-##ReservedField element  
+## ReservedField element  
  The `ReservedField` element works to support hierarchical links defined between tasks and is an optional element.  
   
  If this element is not specified in the mapping, then Project uses the default `pjNumber20` field.  
@@ -86,16 +86,16 @@ For information on using Project and TFS to track work, see [Create your backlog
  You must specify a synchronization field in the Microsoft Project field mapping file. Use the following XML syntax to specify which field is the synchronization field. To specify a synchronization field, use the `SyncField` element. The `ProjectField` attribute must be set to a valid Project field.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<SyncField ProjectField="" />  
-```  
+> ```XML 
+> <SyncField ProjectField="" />  
+> ```  
   
  The following example shows how to specify **pjTaskText25** as the synchronization field:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<SyncField ProjectField="pjTaskText25" />  
-```  
+> ```XML  
+> <SyncField ProjectField="pjTaskText25" />  
+> ```  
   
 For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
@@ -113,26 +113,26 @@ For more information about how to use the synchronization field in Project, see 
  If you want to specify a different character than those listed in the above table, then you can define the `ResourceNameSeparator` by using the following syntax:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<ResourceNameSeparator WorkItemTrackingCharacter="" ProjectCharacter=""/>  
-```  
+> ```XML  
+> <ResourceNameSeparator WorkItemTrackingCharacter="" ProjectCharacter=""/>  
+> ```  
   
- The following example shows how to specify the character "**\***" as the separator to use in Project when the Team Foundation character is "**-**":  
+ The following example shows how to specify the character "**\\***" as the separator to use in Project when the Team Foundation character is "*<em>-</em>*":  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
-```  
-<a name="Hierarchy"></a>   
-##  Hierarchy link type  
- When you create summary tasks in  Project, a tree link is created between the summary task, the parent, and the subordinate or child tasks. Project uses the default System.LinkTypes.Hierarchy to create these links.  
+> ```XML 
+> <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
+> ```  
+> <a name="Hierarchy"></a>   
+> ##  Hierarchy link type  
+>  When you create summary tasks in  Project, a tree link is created between the summary task, the parent, and the subordinate or child tasks. Project uses the default System.LinkTypes.Hierarchy to create these links.  
   
 <a name="Dependency"></a> 
 ##  Dependency link type  
  When you create links between tasks in Project, you create a dependent link between the tasks. The predecessor task is assigned a Predecessor link and the successor task is assigned a Successor link. These are the default designations that are defined for the System.LinkTypes.Dependency link type.  
   
 <a name="PublishRefresh"></a> 
-##Mapping attributes that affect publishing and refreshing  
+## Mapping attributes that affect publishing and refreshing  
  The following mapping fields and Project field values determine whether a value for a work item is published or refreshed:  
   
 -   The value of the **Publish and Refresh** value for each work item.    

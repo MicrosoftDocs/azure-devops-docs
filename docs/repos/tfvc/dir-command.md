@@ -55,11 +55,11 @@ You can specify more than one Itemspec argument.
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains one or more files or folders about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection/).</p></td>
+<td><p>The URL of the project collection that contains one or more files or folders about which you want to display information (for example, <a href="http://myserver:8080/tfs/DefaultCollection/" data-raw-source="http://myserver:8080/tfs/DefaultCollection/">http://myserver:8080/tfs/DefaultCollection/</a>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ You can specify more than one Itemspec argument.
 </tbody>
 </table>
 ## Remarks
-The **dir** command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
+The <strong>dir</strong> command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
 
 For links to other Team Foundation commands that provide additional information about items in your Team Foundation version control server and the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
 

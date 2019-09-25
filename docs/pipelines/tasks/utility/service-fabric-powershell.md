@@ -30,8 +30,11 @@ deploy to a Service Fabric cluster.
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
+
 ::: moniker-end
 
 ## Arguments

@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/18/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -55,11 +55,11 @@ Add any internal sources as an Azure DevOps Services upstream.
 
 Find out more information about [upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
 
-### Sources not in your organization should be added using the feed locator
+### Sources not in your organization but in the same AAD tenant should be added using the feed locator
 
 The feed locator uses the following syntax:
 
-`vsts-feeds://<organization>/<feed>@<view>`
+`azure-feed://<organization>/<feed>@<view>`
 
 ### Ensure that the order of the sources matches your desired package resolution order
 

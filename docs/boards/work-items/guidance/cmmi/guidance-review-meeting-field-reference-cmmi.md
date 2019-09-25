@@ -27,7 +27,7 @@ The following fields track information and changes for review meetings. Your tea
 > |**Purpose**|The purpose and focus of the meeting.<br/><br/>Reference name=Microsoft.VSTS.CMMI.Purpose|HTML|  
 > |**Comments**|Additional information that you want to record.<br/><br/>Reference name=Microsoft.VSTS.CMMI.Comments|HTML|  
 > |**Minutes**|The details of what the team discussed and agreed upon during the meeting. You can use this field to record what the team reviewed, what criteria the team applied, and what problems the team identified.<br/><br/>Reference name=Microsoft.VSTS.CMMI.Minutes|HTML|  
-> |**Meeting Type**|The meeting venue. You can specify one of the following values:<br /-   Meeting<br />-   Offline<br/><br/>Reference name=Microsoft.VSTS.CMMI.MeetingType|String|  
+> |**Meeting Type**|The meeting venue. You can specify one of the following values:<br/>- Meeting<br/>- Offline<br/><br/>Reference name=Microsoft.VSTS.CMMI.MeetingType|String|  
 > |**Called Date**|The date and time when the meeting is scheduled.<br/><br/>Reference name=Microsoft.VSTS.CMMI.CalledDate|DateTime|  
 > |**Called By**|The name of the team member who scheduled the meeting.<br/><br/>Reference name=Microsoft.VSTS.CMMI.CalledBy|String|  
 > |**Required Attendee 1**<br />**&hellip;**<br />**Required Attendee 8**|The names of each team member who is required to attend the meeting.<br/><br/>Reference name=Microsoft.VSTS.CMMI.RequiredAttendee1 &hellip; Microsoft.VSTS.CMMI.RequiredAttendee8|String|  

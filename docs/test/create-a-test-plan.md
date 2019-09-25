@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 01/11/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -22,6 +22,7 @@ For more information about manual testing, see [Planned manual testing](overview
 and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
 <a name="testplans"></a>
+
 ## What are test plans, test suites, and test cases?
 
 [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of 
@@ -64,14 +65,42 @@ Then, in the next version of the product, you can reuse the existing test cases.
 to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases) to create a new baseline,
 where changes to these new test cases do not affect those referenced in test plans for the previous version of the product.
  
-> For more details of the ways you can work with test plans, test suits, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
+> For more details of the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
-**Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
+## Prerequisites
+
+To manage test artifacts, you must have the correct permissions and access level.
+
+### Manage test artifacts permissions
+
+You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts). 
+
+### Access level
+
+::: moniker range="< azure-devops-2019"
+
+To create and edit a test artifact (Test plan, Test suite, Test case, Test configuration, shared step, or shared parameter) you must have your [access level set to Advanced](../organizations/security/access-levels.md).
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+To create and edit a test artifact (Test plan, Test suite, Test case, Test configuration, shared step, or shared parameter) you must have one of the following access levels:
+
+- [Basic + Test plans](../organizations/security/access-levels.md)
+- [Visual Studio Enterprise](../organizations/security/access-levels.md)
+- [Basic](../organizations/security/access-levels.md) - can create and edit Test cases but cannot create or edit the other types of Test artifacts
+
+>[!NOTE]
+> Stakeholders cannot create or manage test cases. You must have at least Basic access.
 See [Default manual testing permissions and access](manual-test-permissions.md).
 
+::: moniker-end
+
 <a name="testplan"></a>
+
 ## Create a test plan
 
 1. If you want to use Azure DevOps, and haven't done so already, 
@@ -79,16 +108,16 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
    [create your project](../organizations/accounts/organization-management.md), 
    and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
-1. In Azure DevOps or TFS, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+2. In Azure DevOps or TFS, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
    If you already have a test plan, choose the **Test Plans** breadcrumb to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](_img/create-a-test-plan/goto-test-plans-page.png)
 
-1. In the **Test Plans** list page, choose **+ New Test Plan** to create a test plan for your current sprint.
+3. In the **Test Plans** list page, choose **+ New Test Plan** to create a test plan for your current sprint.
  
    ![Creating a new test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
-1. In the **New Test Plan** dialog, enter a name for the test plan.
+4. In the **New Test Plan** dialog, enter a name for the test plan.
    Check the area path and iteration are set as you require. Then choose **Create**.
 
    ![Adding test plan details](_img/create-a-test-plan/CreateATestPlan2.png) 

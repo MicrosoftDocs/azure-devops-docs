@@ -16,9 +16,9 @@ featureFlags:
 ---
 
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Marketplace & Extensibility</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Marketplace &amp; Extensibility</p>
 
-# Azure DevOps Marketplace & Extensibility Documentation 
+# Azure DevOps, Marketplace & extensibility documentation 
 
 Discover, manage, develop extensions and widgets for integration with Azure DevOps. 
 
@@ -34,8 +34,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Discover & Manage Extensions</h3>
-                        <h3><a href="/azure/devops/marketplace/index">Discover & Manage Extensions</a></h3>
+                        <h3><a href="/azure/devops/marketplace/index">Discover &amp; Manage extensions</a></h3>
                         <p>
                             <a href="/azure/devops/marketplace/overview">Discover extensions</a>
                         </p>
@@ -63,7 +62,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/extend/index">Develop Extensions</a></h3>
+                        <h3><a href="/azure/devops/extend/index">Develop extensions</a></h3>
                         <p>
                             <a href="/azure/devops/extend/overview">What are extensions?</a>
                         </p>
@@ -91,7 +90,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/integrate/index">Integrate Applications</a></h3>
+                        <h3><a href="/azure/devops/integrate/index">Integrate applications</a></h3>
                         <p>
                             <a href="/azure/devops/integrate">Integration overview</a>
                         </p>
@@ -103,7 +102,6 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">

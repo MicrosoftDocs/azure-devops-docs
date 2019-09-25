@@ -83,7 +83,12 @@ to change each one individually.
 
 3. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
-4. Save your updated pipeline.
+4. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
+Today, there is no provision for users to choose which of the task variables to convert into task group parameters. In case you don't intend to prameterize a task variable, there is a work around. You can provide the same variable as default value for the task group parameter.  
+
+For example: Let's say you have a task input $(foobar) which you don't intend to parameterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures at runtime the expanded task gets the same input its intended to.
+
+5. Save your updated pipeline.
 
 ::: moniker range="> tfs-2017"
 
@@ -107,6 +112,8 @@ Select a task group name to open the details page.
   non-variable parameters, edit the existing parameter variables,
   or convert parameter values to and from variables. When you save the changes,
   all definitions that use this task group will pick up the changes.
+  
+All the variable parameters of the task group will show up as mandatory parameters in the pipeline definition. You can also set the default value for the task group parameters.
 
 * In the **History** tab you can see the history of changes to the group.
 
@@ -157,7 +164,7 @@ task groups so that they behave in the same way and provide the same advantages.
 
 
 
-## Working in taskgroup versions
+## Working with taskgroup versions
 Any taskgroup update can be a minor or major version update.
 
 ### Minor version 

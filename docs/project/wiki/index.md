@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/11/2019
+ms.date: 08/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,12 +20,13 @@ monikerRange: '>= tfs-2015'
 Wikis and repository README files are great ways to share information with your team and stakeholders.
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes).
+
 ::: moniker-end
 
-<br/>
-> [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]
+> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
 
 ## 5-minute quickstarts  
 
@@ -68,7 +69,9 @@ Wikis and repository README files are great ways to share information with your 
 - [Filter or print wiki content](filter-print-wiki.md)  
 - [Search wiki content](search-wiki.md)
 - [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
-- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)  
+- [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
+- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)
+- [Add comments to wiki](add-comments-wiki.md)  
 - [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 - [Markdown guidance](markdown-guidance.md)

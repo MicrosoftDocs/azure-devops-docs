@@ -4,7 +4,7 @@ description: Learn how to remove a large binary from your Git history to manage 
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-code-git
 ms.manager: jillfra
 ms.date: 04/27/2018
 ms.author: edwardf
@@ -73,7 +73,7 @@ Alternatively, you can get the SHA hash from viewing the branch history in the V
 Remember that git uses pointers to determine where in the repository the head or current branch are located. Because of this, the repository state that you are interested in will be at some point in the past. To 'go back in time' and make that prior desired state the new current state, you will need to use the git rebase command:
 
 > `git rebase -i <SHA hash of desired new current branch>`
-
+> 
 > ![Rebase to remove the video file](./_img/remove-binaries/RemoveBinaries-diagram-local-repo-rebase.png)
 
 The `-i` switch provides a little extra safety, because it will bring up the history in an editor (My implementation of git on the command line in Windows brings up the classic *vi* editor, which you may remember if you've worked with a Unix-based system.)  
@@ -95,7 +95,7 @@ The `-i` switch provides a little extra safety, because it will bring up the his
 Now type `git log` again - the offending branch should be absent from the log. If it is, you are ready for the final step, which requires project admin permissions.
 
 > `git log`
-
+> 
 > ![Local and server repos after rebase](./_img/remove-binaries/RemoveBinaries-repo-after-rebase.png)
 
 *Notice that the commit for the large video is now gone from the local repo*
@@ -104,8 +104,8 @@ Now type `git log` again - the offending branch should be absent from the log. I
 `git push --force`
 
 > ![Command Prompt - git push --force](./_img/remove-binaries/RemoveBinaries-force-push-command.png)
-
-
+> 
+> 
 > ![Command Prompt - git push --force result](./_img/remove-binaries/RemoveBinaries-force-push.png)
 
 This command will force your repository to overwrite the repository on the server.

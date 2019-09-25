@@ -7,13 +7,14 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.topic: conceptual
+ms.author: kaelli
+author: KathrynEE
+ms.topic: landing-page
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 08/16/2019  
 ---
 
-# Queries
+# Queries  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
@@ -30,7 +31,7 @@ If you're just starting out, [Query index quick reference](query-index-quick-ref
 ## Overview  
 * [Ad hoc vs managed queries](adhoc-vs-managed-queries.md) 
 
--->
+-->  
  
 ## 5-Minute Quickstarts  
 
@@ -48,14 +49,14 @@ If you're just starting out, [Query index quick reference](query-index-quick-ref
 
 - [Query by title, ID, or description](titles-ids-descriptions.md)
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)  
-- [Query by area or iteration path](query-by-area-iteration-path.md)   
+- [Query by area or iteration path](query-by-area-iteration-path.md) 
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)   
 - [Query history](history-and-auditing.md)  
 - [Query a numeric field](query-numeric.md)  
 - [Query by picklist value](planning-ranking-priorities.md)  
 - [Query by build & test integration fields](build-test-integration.md)  
 - [Query by links or attachments](linking-attachments.md) 
-
+- [Query by field value comparisons](query-field-value.md) 
 
 ## How-to Guides
 - [Configure work item query-based charts](../../report/dashboards/charts.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json) 

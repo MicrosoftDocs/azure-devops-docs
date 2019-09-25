@@ -28,7 +28,8 @@ monikerRange: '>= tfs-2013'
 
 This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
 
-## Validating a Collection
+## Validating a collection
+
 Now that you've confirmed you're on the latest version of Azure DevOps Server the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
 Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
 Running a validation is done through the data migration tool. To start, take a copy of the [data migration tool](https://aka.ms/AzureDevOpsImport) and copy it onto one of your 
@@ -84,10 +85,11 @@ a log is generated for each major validation operation. For example, if TfsMigra
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
 
-## Generating Import Files
+## Generating import files
 By this point you will have run the data migration tool *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
 
-### Prepare Command
+### Prepare command
+
 The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
 
 Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
@@ -129,7 +131,7 @@ After opening the log directory noted in the data migration tool's output you wi
 contains the generated mapping of AD to Azure AD identities. ```import.json``` is the import specification file which needs to be filled out. 
 It's recommended that you take time to fill out the import specification file, ```import.json```, and review the identity map log file, ```IdentityMapLog.csv```, for completeness before kicking off an import. 
 
-### Import Specification File
+### Import specification file
 
 The import specification, ```import.json```, is a JSON file which provides import settings. It includes information such as the desired organization name, storage account information, etc. Most of fields are auto-populated, some fields require user input prior to attempting an import.
 
@@ -160,7 +162,9 @@ In this case, the user planning the Fabrikam import added the organization name 
 
 
 <a id="supported-azure-regions-for-import"></a>
+
 ### Supported Azure Regions for Import
+
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/). However, not all Azure regions that Azure DevOps Services is present in are supported for import. The following table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
  
 
@@ -168,25 +172,30 @@ Azure DevOps Services is available in several Azure [regions](https://azure.micr
 |---------------------------------|--------------------------------|-----------------------------|
 |    United States                |    Central United States       |      CUS                    |
 |    Europe                       |    Western Europe              |      WEU                    |
-|.   United Kingdom.              |    United Kingdom South        |      UKS                    |
+|    United Kingdom               |    United Kingdom South        |      UKS                    |
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
 |    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
-### Identity Map Log
+### Identity map log
+
 Arguably the identity map log is of equal importance to the actual data that you will be migrating to Azure DevOps Services. When reviewing the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into Azure DevOps Services whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active. 
 
-#### Active Identities
+#### Active identities
+
 Active identities refer to identities that will be users in Azure DevOps Services post-import. On Azure DevOps Services, these identities will be licensed and show up as a user in the organization after migration. These identities are marked as 'active' in the "Expected Import Status" column in the identity map log file.
 
 <a id="historical-identities"></a>
-#### Historical Identities
+
+#### Historical identities
+
 These are identities that are mapped as 'historical' in the "Expected Import Status" column in the identity map log file. Also, identities that have no line entry present in the file will also become historical. An example of an identity with no entry would be an employee that no longer works at a company. 
 Historical Identities do **NOT** have access to an organization after migration, do **NOT** have a licenses, and do **NOT** show up as a user in the organization. All that is persisted is the notion of that identity's name in the organization. This way their history can be searched at a later date. It's recommended that historical identities be used for users that are no longer at the company or won't ever be needing access to the organization. Identities imported historically **CANNOT** be migrated later to become active identities. 
 
 ### Understanding an Identity Map Log
+
 After opening the identity map log file, you will be presented with something similar to the below example. 
 
 ![Identity map log file generated by the data migration tool](_img/migration-import/identityMapNewlyGenerated.png)
@@ -221,6 +230,7 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 4. The user that owned that identity no longer works at the company.
 
 In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
+
 #### Historical Identities (Small Teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
@@ -252,12 +262,14 @@ By this point you will have everything ready to execute on your import. You will
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
 ### Detaching your Collection
+
 [Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the Azure DevOps Server server's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
 If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
 
 <a id="generating-a-dacpac" />
+
 ### Generating a DACPAC
 
 > [!IMPORTANT]  
@@ -353,6 +365,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    South India                  |    South India                 |
 |    Central Canada               |    Central Canada              |
 |    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
+|    UK South                     |    UK South                    |
 
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
@@ -407,8 +420,8 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 
 |    Service                                                       |    IP                                                                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181   |
-|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153         |
+|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56   |
+|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236         |
 |    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114                                                        |
 |    Azure DevOps Services - Brazil South                          |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175                                                                         |
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
@@ -422,7 +435,7 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 
 |    Service                                    |    IP                                                                        |
 |-----------------------------------------------|------------------------------------------------------------------------------|
-|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250, 13.86.39.233, 40.80.217.53  |
+|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250, 13.86.39.233, 40.80.217.53, 52.232.229.122  |
 |    Releases service - West Europe             |    13.95.223.69, 104.45.64.13                                                |
 |    Releases service - Australia East          |    13.73.204.151, 20.40.176.135                                              |
 |    Releases service - Brazil South            |    191.235.94.154, 20.40.116.69                                              |
@@ -461,7 +474,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163     |
+|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163, 20.45.3.51     |
 |    Azure Artifacts Blob - West Europe            |    23.97.221.25     |
 |    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113, 40.82.221.14   |
 |    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |
@@ -470,6 +483,21 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
 |    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
  
+**Analytics IPs (Azure DevOps Server 2019 or later only)**
+
+You only need to add an exception for the analytics IPs in your target import region if you included preview features with your import. 
+
+|    Service                                     |    IP                                                                             |
+|------------------------------------------------|-----------------------------------------------------------------------------------|
+|    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
+|    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9                                                      |
+|    Analytics service - Australia East          | 20.40.179.159                                                                     |
+|    Analytics service - Brazil South            | 20.40.113.248                                                                     |
+|    Analytics service - India South             | 40.81.73.58                                                                       |
+|    Analytics service - Canada Central          | 40.82.185.214                                                                     |
+|    Analytics service - East Asia (Hong Kong)   | 40.81.25.239                                                                      |
+|    Analytics service - UK South                | 40.81.159.247                                                                     |
+
 
 #### Configuring IP Firewall Exceptions
 
@@ -513,7 +541,7 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example the two SQL commands would look like the following:
 
 ```sql
-ALTER DATABASE [TFoo] SET RECOVERY SIMPLE;
+ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
 
 USE [Foo]
 CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
@@ -585,7 +613,8 @@ A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/artic
 
 The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
 
->**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
+> [!NOTE]  
+> Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
 
 After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
@@ -622,7 +651,7 @@ Using the Fabrikam example, the final import specification file should look like
 
 ![Completed import specification file](_img/migration-import/ImportSpecFillOutNoType.png)
 
-### Determining the Type of Import 
+### Determine the type of import 
 Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the organization full time in Azure DevOps Services once the import completes. Determining which type of import to be run is based off the value you provide for the import type parameter. 
 
 > It's always recommended that you complete a dry run import first.   
@@ -634,9 +663,10 @@ Dry run imports help teams to test the migration of their collections. It's not 
 
 Most dry run organizations will have 15 days before they're deleted. Dry run organizations can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run organization will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run organization. 
 
-Be sure to check out the [post import](migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](migration-troubleshooting.md#dealing-with-import-errors) steps. 
+Be sure to check out the [post import](migration-post-import.md) article for additional details on post import activities. Should your import encounter any problems, review the [import troubleshooting](migration-troubleshooting.md#resolve-import-errors) steps. 
 
-## Running an Import
+## Run an import
+
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
 > [!NOTE]

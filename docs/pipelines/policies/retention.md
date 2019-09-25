@@ -2,14 +2,13 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
-ms.custom: seodec18
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 08/26/2016
+ms.author: sdanie
+author: steved0x
+ms.date: 09/09/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,43 +17,46 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
-Retention policies are used to configure how long builds and
-releases are to be retained by the system. The primary reasons to
-delete older builds and releases are to conserve storage and to
-reduce clutter. The main reasons to keep builds and releases are
-for audit and tracking.
-
-## Build retention
-
-In most cases you don't need to retain completed builds longer than
-a certain number of days. Using build retention policies, you can
-control **how many days** you want to keep each build before
-deleting it and the **minimum number of builds** that should be
-retained for each pipeline.
-
-As an author of a build pipeline, you can customize retention
-policies for builds of your pipeline on the **Retention** tab.
-You can also customize these policies on a branch-by-branch basis
-if you are building from [Git repositories](#git-repositories).
-
-### Global build retention policy
-
-If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
-
-If you are using Azure Pipelines, you can view but not change these settings for your organization.
-
-Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
-
-::: moniker range="azure-devops"
-
-* Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+Retention policies are used to configure how long runs and releases are to be retained by the system. 
+The primary reasons to delete older runs and releases are to conserve storage and reduce clutter. 
+The main reasons to keep runs and releases are for audit and tracking.
+
+## Run retention
+
+In most cases you don't need to retain completed runs longer than a certain number of days. 
+Using run retention policies, you can control **how many days** you want to keep each run before deleting it. 
+
+::: moniker range="<= tfs-2018"
+
+Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be retained for each pipeline.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!NOTE]
+> Ability to specify the number of runs to keep before removal is in development for Azure Pipelines. 
+
+::: moniker-end
+
+As an author of a run pipeline, you can customize retention policies for runs of your pipeline on the **Settings** tab in your project's settings.
+
+::: moniker range="<= tfs-2018"
+
+You can also customize these policies on a branch-by-branch basis if you are building from [Git repositories](#git-repositories).
+
+## Global build retention policy
+
+You can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 * TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
@@ -68,16 +70,16 @@ Global build retention policy settings can be managed from the **Pipelines** set
 
 ::: moniker-end
 
-The **maximum retention policy** sets the upper limit for how longs
-builds can be retained for all build pipelines.
-Authors of build pipelines cannot configure settings for their
-definitions beyond the values specified here.
+::: moniker range="<= tfs-2018"
+
+The **maximum retention policy** sets the upper limit for how long runs can be retained for all build pipelines.
+Authors of build pipelines cannot configure settings for their definitions beyond the values specified here.
 
 The **default retention policy** sets the default retention values for all the build pipelines. Authors of build pipelines can override these values.
 
-The **build destruction policy** helps you keep the builds for a certain period of time after they are deleted. This policy cannot be overridden in individual build pipelines.
+The **Permanently destroy releases** helps you keep the runs for a certain period of time after they are deleted. This policy cannot be overridden in individual build pipelines.
 
-### Git repositories
+## Git repositories
 
 If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
@@ -120,7 +122,11 @@ The "All" branches policy is automatically added as the last policy in the evalu
 
 ![define git retention policy max shown in pipeline](_img/define-git-retention-policy-max-shown-in-definition.png)
 
-### What parts of the build get deleted
+::: moniker-end
+
+### What parts of the run get deleted
+
+::: moniker range="<= tfs-2018"
 
 When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
@@ -134,20 +140,33 @@ The following information is deleted when a build is deleted:
 * [Published artifacts](../tasks/utility/publish-build-artifacts.md)
 * [Published symbols](../tasks/build/index-sources-publish-symbols.md)
 
-### When are builds deleted
+::: moniker-end
 
-#### Azure Pipelines
+::: moniker range="> tfs-2018"
+
+In Azure Pipelines, the entire run is deleted. 
+
+::: moniker-end
+
+
+### When are runs deleted
+
+::: moniker range="> tfs-2018"
 
 Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
 
-#### TFS
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 Your retention policies run every day at 3:00 A.M. UTC. There is no option to change this process.
+
+::: moniker-end
 
 <h2 id="release">Release retention</h2>
 
 The release retention policies for a release pipeline determine how long a release
-and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
+and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
 recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
@@ -162,7 +181,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* Azure Pipelines: `https://dev.azure.com/{your_organization}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* Azure Pipelines: `https://dev.azure.com/{organizaion}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
@@ -172,6 +191,8 @@ configure settings for their definitions beyond the values specified here.
 The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
+
+::: moniker range="<=tfs-2018"
 
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
@@ -196,6 +217,8 @@ days after being deployed to Dev, its retention timer is reset,
 and it is retained in the system for another 30 days.
 
 When specifying custom policies per pipeline, you cannot exceed the maximum limits set by administrator.
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
@@ -224,33 +247,33 @@ for the associated build will determine when that build is deleted.
 
 No
 
-### If I mark a build or a release to be retained indefinitely, does the retention policy still apply?
+### If I mark a run or a release to be retained indefinitely, does the retention policy still apply?
 
 No. Neither the pipeline's retention policy nor the maximum
 limits set by the administrator are applied when you mark an
-individual build or release to be retained indefinitely.
+individual run or release to be retained indefinitely.
 It will remain until you stop retaining it indefinitely.
 
-### How do I specify that builds deployed to production will be retained longer?
+### How do I specify that runs deployed to production will be retained longer?
 
 Customize the retention policy on the release pipeline. Specify
 the number of days that releases deployed to production must be
-retained. In addition, indicate that builds associated with that
-release are to be retained. This will override the build retention
+retained. In addition, indicate that runs associated with that
+release are to be retained. This will override the run retention
 policy.
 
-### I did not mark builds to be retained indefinitely. However, I see a large number of builds being retained. How can I prevent this?
+### I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?
 
-Builds that are deployed as part of releases are also governed by
+Runs that are deployed as part of releases are also governed by
 the release retention policy. Customize the release retention
 policy as explained above.
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
 Test results published within a stage of a release are
-associated with both the release and the build. These test results
+associated with both the release and the run. These test results
 are retained as specified by the retention policy configured for
-the build and for the test results. If you are not deploying Team
+the run and for the test results. If you are not deploying Team
 Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
 governed by the retention settings of the release they belong to.

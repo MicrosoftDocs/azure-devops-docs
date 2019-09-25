@@ -6,24 +6,24 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: ahomer
-author: 
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Search the code base of a public project
+# Quickstart: Search the code base of a public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-With code search, you can locate specific types of code and easily narrow or widen your search.
+In this quickstart, you learn how to search the code base of a public projects. With code search, you can locate specific types of code and easily narrow or widen your search.
 
 <a name="start-search"></a>
 
 ## Start a search
 
-To start your search, choose **Repos>Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
+To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](_img/search/code-search-vert.png)
@@ -64,20 +64,23 @@ To start your search, choose **Repos>Files** or other page under **Repos**, ente
 
 2. Use the tabs in the results page to view the **History** of the file or to **Compare** versions of the file. Choose **Blame** to view the last commit, person, and date to modify the file.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Use tabs to view history and compare files](_img/search/code-search-contents-history-views.png)
-
+   > [!div class="mx-imgBorder"]  
+   > ![Use tabs to view history and compare files](_img/search/code-search-contents-history-views.png)
+   > 
    > Open the search results in a new browser tab from either search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab.
+   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   > ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   > to the new browser tab.
 
 3. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the file in Code Explorer](_img/search/code-search-open-file.png)
 
-## Related articles
+## Next steps
 
-* [Search work items](work-item-search-public.md)
+> [!div class="nextstepaction"]
+> [Search work items](work-item-search-public.md)
+
+

@@ -54,19 +54,19 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
 1. In **Azure Pipelines**, select **Builds**.
 
-1. On the right-side of the screen, select **+ NEW** to create a new build.
+2. On the right-side of the screen, select **+ NEW** to create a new build.
 
-1. Choose the **repository** for the sample application you imported earlier in this tutorial, and then choose **continue**.
+3. Choose the **repository** for the sample application you imported earlier in this tutorial, and then choose **continue**.
 
-1. Search for the **ASP.NET Application** build template, and then select **Apply**.
+4. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
-  ![ASP.NET Template](_img/cosmos-db/aspnettemplate.png)
+   ![ASP.NET Template](_img/cosmos-db/aspnettemplate.png)
 
-1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
+5. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
 
-1. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
+6. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
 
-1. Select the build **hyperlink** to examine the running build.  In a few minutes the build completes.  The build produces artifacts which can be used to deploy to Azure.
+7. Select the build **hyperlink** to examine the running build.  In a few minutes the build completes.  The build produces artifacts which can be used to deploy to Azure.
 
 ## Set up CD to Azure for your App
 
@@ -74,35 +74,35 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Select **Release** to create a release pipeline linked to the build artifacts from the CI pipeline you created with the previous steps.
 
-1. Choose the **Azure App Service deployment** template, and then choose **Apply**.
+2. Choose the **Azure App Service deployment** template, and then choose **Apply**.
 
-1. On the **Environments** section, select the **job and task** link.
+3. On the **Environments** section, select the **job and task** link.
 
-1. Select the **Azure Subscription**, and then select **Authorize**.
+4. Select the **Azure Subscription**, and then select **Authorize**.
 
-  ![Authorize Azure Subscription](_img/cosmos-db/authorizeazure.png)
+   ![Authorize Azure Subscription](_img/cosmos-db/authorizeazure.png)
 
-1. Choose an **App Service name**.
+5. Choose an **App Service name**.
 
-1. Select the **Deploy Azure App Service** task, and then select the **File Transforms & Variable Substitution Options** setting.  
+6. Select the **Deploy Azure App Service** task, and then select the **File Transforms & Variable Substitution Options** setting.  
 
-1. Enable the checkbox for **XML Variable substitution**.
+7. Enable the checkbox for **XML Variable substitution**.
 
-1. At the top of the menu, select **Variables**.
+8. At the top of the menu, select **Variables**.
 
-1. Retrieve your **endpoint** (URL) and **authKey** (primary or secondary key) for your Azure Cosmos DB account.  This information can be found on the Azure portal.
+9. Retrieve your **endpoint** (URL) and **authKey** (primary or secondary key) for your Azure Cosmos DB account.  This information can be found on the Azure portal.
 
-  ![Auth and endpoint](_img/cosmos-db/keys.png)
+   ![Auth and endpoint](_img/cosmos-db/keys.png)
 
-1. Select **+ Add** to create a new variable named **endpoint**.  Select **+ Add** to create a second variable named **authKey**.
+10. Select **+ Add** to create a new variable named **endpoint**.  Select **+ Add** to create a second variable named **authKey**.
 
-1. Select the **padlock** icon to make the authKey variable secret.
+11. Select the **padlock** icon to make the authKey variable secret.
 
-1. Select the **Pipeline** menu.
+12. Select the **Pipeline** menu.
 
-1. Under the **Artifacts** ideas, choose the **Continuous deployment trigger** icon.  On the right side of the screen, ensure **Enabled** is on.
+13. Under the **Artifacts** ideas, choose the **Continuous deployment trigger** icon.  On the right side of the screen, ensure **Enabled** is on.
 
-1. Select **Save** to save changes for the release definition.
+14. Select **Save** to save changes for the release definition.
 
 ## Review the CI/CD pipeline
 

@@ -20,13 +20,13 @@ Project managers and software development teams can use the tools they prefer, w
   
  The integration of the two server products provides flexibility in how projects are managed. As a project manager, you can manage your project by using one or a combination of the following three methods:  
   
--   **Define and track deliverables**. You define the requirements and features to be delivered, and the development team defines the implementation tasks. For more information, see [Top-down planning of business requirements](top-down-plan-mapped-team-project.md).  
+- **Define and track deliverables**. You define the requirements and features to be delivered, and the development team defines the implementation tasks. For more information, see [Top-down planning of business requirements](top-down-plan-mapped-team-project.md).  
   
--   **Define and track both deliverables and tasks**. You define the project details, and the development team reports status updates. For more information, see [Manage project details](manage-project-details.md).  
+- **Define and track both deliverables and tasks**. You define the project details, and the development team reports status updates. For more information, see [Manage project details](manage-project-details.md).  
   
--   **Review progress of agile teams**. You review progress of work submitted to Project Server, and the development team manages both project deliverables and tasks. For more information, see [Make Agile team progress visible](make-agile-team-progress-visible-to-the-pmo.md).  
+- **Review progress of agile teams**. You review progress of work submitted to Project Server, and the development team manages both project deliverables and tasks. For more information, see [Make Agile team progress visible](make-agile-team-progress-visible-to-the-pmo.md).  
   
- For each of these methods, resource managers can accurately plan and manage resources, project managers can balance workload across resources for multiple software projects, and the program management office (PMO) can view up-to-date status and track the overall health of the software portfolio that is under development. In addition, business analysts have access to quality metrics over time.  
+  For each of these methods, resource managers can accurately plan and manage resources, project managers can balance workload across resources for multiple software projects, and the program management office (PMO) can view up-to-date status and track the overall health of the software portfolio that is under development. In addition, business analysts have access to quality metrics over time.  
   
 > [!IMPORTANT]
 >  This topic applies to Microsoft Project Professional 2007, Project Professional 2010, or Project Professional 2013 from a client computer that has Visual Studio 2013 installed. Also, the integration of Visual Studio Team Foundation Server 2013 and Project Server [must be configured](system-and-setup-requirements.md).  

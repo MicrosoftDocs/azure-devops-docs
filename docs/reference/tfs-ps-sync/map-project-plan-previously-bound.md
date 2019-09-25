@@ -31,13 +31,13 @@ ms.date: 01/12/2017
   
  To perform these procedures, you must have the following permissions:  
   
--   To map a project plan to a project, you must have the **Administer Project Server integration** permission for a project collection, or you must belong to the **Team Foundation Administrators**  group. Also, the service account for Team Foundation Server must have administrative permissions to the instances of PWA that will participate in data synchronization.  
+- To map a project plan to a project, you must have the **Administer Project Server integration** permission for a project collection, or you must belong to the **Team Foundation Administrators**  group. Also, the service account for Team Foundation Server must have administrative permissions to the instances of PWA that will participate in data synchronization.  
   
--   To publish and refresh work items in Excel and to set work items to be synchronized, you must be a member of the **Contributors** group for the project that is mapped in Team Foundation Server.  
+- To publish and refresh work items in Excel and to set work items to be synchronized, you must be a member of the **Contributors** group for the project that is mapped in Team Foundation Server.  
   
--   To approve and publish updates, you must be a member of the **Project Manager** group on Project Server.  
+- To approve and publish updates, you must be a member of the **Project Manager** group on Project Server.  
   
- For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="capture_ids"></a> Record IDs of Work Items That You Want to Synchronize  
  You must record the IDs of all work items that you will want to synchronize after you map your project plan to the project. You will use these IDs to perform a later step in the process.  
@@ -76,36 +76,36 @@ ms.date: 01/12/2017
   
 #### To map an enterprise project plan to a project  
   
-1.  Open a Command Prompt window where either Visual Studio 2013 or Team Explorer 2013 is installed and enter:  
+1. Open a Command Prompt window where either Visual Studio 2013 or Team Explorer 2013 is installed and enter:  
   
-    ```  
-    cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
+   ```  
+   cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
+   ```  
   
-     On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
+    On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
   
-2.  Enter the following command, and then choose the ENTER key:  
+2. Enter the following command, and then choose the ENTER key:  
   
-    ```  
-    TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /nofixedwork /projectFieldForWorkItemType:ProjectFieldName  
-    ```  
+   ```  
+   TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /nofixedwork /projectFieldForWorkItemType:ProjectFieldName  
+   ```  
   
-     Make the following replacements and specifications:  
+    Make the following replacements and specifications:  
   
-    -   Replace *tpcUrl* with the URL of the project collection.  
+   - Replace *tpcUrl* with the URL of the project collection.  
   
-    -   Replace *EnterpriseProjectName* with the name of the enterprise project plan.  
+   - Replace *EnterpriseProjectName* with the name of the enterprise project plan.  
   
-    -   Replace *TeamProjectName* with the name of the project.  
+   - Replace *TeamProjectName* with the name of the project.  
   
-    -   Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. This list should correspond to the types of work items whose IDs you recorded in the first procedure in this topic, [Record the IDs of Work Items That You Want to Synchronize](#capture_ids).  
+   - Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. This list should correspond to the types of work items whose IDs you recorded in the first procedure in this topic, [Record the IDs of Work Items That You Want to Synchronize](#capture_ids).  
   
-        > [!IMPORTANT]
-        >  Map all work item types that you want to synchronize with the project.  
+     > [!IMPORTANT]
+     >  Map all work item types that you want to synchronize with the project.  
   
-    -   (Optional) Specify the **/noFixedWork** argument if you want to prevent fixed-task-type assignments.  
+   - (Optional) Specify the **/noFixedWork** argument if you want to prevent fixed-task-type assignments.  
   
-    -   (Optional) Specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item. If you do not specify this argument, the default value of pjTaskText30 is used.  
+   - (Optional) Specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item. If you do not specify this argument, the default value of pjTaskText30 is used.  
   
      The following messages appear:  
   
@@ -113,7 +113,7 @@ ms.date: 01/12/2017
   
      **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*  
   
-3.  If your project plan is open, close it, and then close Project Professional.  
+3. If your project plan is open, close it, and then close Project Professional.  
   
 ##  <a name="set_synch"></a> Bulk Edit Work Items to Be Synchronized  
  In this procedure, you bulk edit the work items that correspond to the IDs that you recorded in the first procedure in this topic, [Record Work-Item IDs That You Want to Synchronize](#capture_ids). You can bulk edit work items mostly easily by using Microsoft Excel.  

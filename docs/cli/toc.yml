@@ -1,0 +1,34 @@
+- name: Azure DevOps CLI
+  href: index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
+- name: Get started
+  href: get-started.md 
+- name: How-to Guides
+  items:
+  - name: Sign in with a Personal Access Token
+    href: log-in-via-pat.md
+  - name: Output formats
+    href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
+  - name: Query
+    href: /cli/azure/query-azure-cli?view=azure-cli-latest
+  - name: Auto detect configuration and git aliases 
+    href: auto-detect-and-git-aliases.md
+  - name: Configure policies
+    href: policy-configuration-file.md
+  - name: Run commands in a release pipeline 
+    href: azure-devops-cli-in-release-pipeline.md
+  - name: Run commands in a YAML build pipeline
+    href: azure-devops-cli-in-yaml.md  
+  - name: Manage security permissions
+    href: permissions.md
+  - name: Manage security connections
+    href: service_endpoint.md
+- name: Troubleshooting
+  items:
+  - name: Troubleshooting common errors
+    href: troubleshooting.md
+- name: Reference
+  items:
+  - name: Command reference
+    href: /cli/azure/ext/azure-devops?view=azure-cli-latest
+  - name: Security tokens
+    href: security_tokens.md

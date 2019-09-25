@@ -80,23 +80,23 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 ### Drag and Drop a Changeset into the Tracking Changeset Window
 
-1.  In **Source Control Explorer**, select either a branch, a folder, or a file which is contained within a branch.
+1. In **Source Control Explorer**, select either a branch, a folder, or a file which is contained within a branch.
 
-2.  Right-click the selected item and click **View History**.
+2. Right-click the selected item and click **View History**.
 
-3.  In the **History **window, right-click the changeset that you want to view and select **Track Changeset**.
+3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
 
-    The **Select Branches** dialog box appears.
+   The **Select Branches** dialog box appears.
 
-4.  (Optional) In the **Target branches** list, check the branches that you want to view and uncheck the branches that you want to hide.
+4. (Optional) In the **Target branches** list, check the branches that you want to view and uncheck the branches that you want to hide.
 
-5.  Click **Visualize**.
+5. Click **Visualize**.
 
-    The **Tracking Changeset** window appears.
+   The **Tracking Changeset** window appears.
 
-6.  Drag the branch which contains the changeset to the target branch.
+6. Drag the branch which contains the changeset to the target branch.
 
-    The **Source Control Merge Wizard** appears. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
+   The **Source Control Merge Wizard** appears. For information about how to use this wizard to complete the merge, see [Use the Source Control Merge Wizard to Complete a Merge](merge-folders-files.md#sourcecontrolwizard).
 
 ### Example: Where is that New Method?
 
@@ -124,8 +124,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
 3.  Select the range of changes that you want to merge into the target branch by selecting either the **All changes up to a specific version** or **Selected changesets** option, and click **Next**.
 
-    >**Tip:**
-    >  If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
+    > [!TIP]
+    > If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
     -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
@@ -156,8 +156,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
 
-        >**Tip:**
-        >  You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
+        > [!TIP]
+        > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
 
 4.  Click **Next**, and then on the **Perform the merge operation** page, click **Finish**.
 

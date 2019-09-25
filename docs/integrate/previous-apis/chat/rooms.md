@@ -7,8 +7,8 @@ description: Work with team rooms programmatically using the REST APIs for Team 
 ms.assetid: 6E6370DD-6E61-4F56-BCAD-8A66CC45965A
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -153,18 +153,15 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/12797?api-version=1.0
 
 ## Create a room
 <a name="createaroom" />
-```no-highlight
-POST https://{instance}/DefaultCollection/_apis/chat/rooms?api-version={version}
-```
-```http
-Content-Type: application/json
-```
-```json
+<code>no-highlight
+POST https://{instance}/DefaultCollection/_apis/chat/rooms?api-version={version}</code>
+<code>http
+Content-Type: application/json</code>
+<code>json
 {
   name: {name},
   description: {description}
-}
-```
+}</code>
 
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
@@ -282,7 +279,7 @@ DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}?api-versio
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
- 
+
 #### Sample request
 
 ```

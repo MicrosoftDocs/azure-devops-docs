@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Manage & Configure Resources</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Manage &amp; Configure Resources</p>
 
 
 # Azure DevOps Manage & Configure Resources Documentation

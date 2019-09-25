@@ -7,8 +7,8 @@ description: Work with test cases programmatically using the REST APIs for Team 
 ms.assetid: 17A2D523-0FEA-47EE-9C61-98D016F4F91D
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

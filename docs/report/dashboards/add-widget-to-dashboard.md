@@ -29,24 +29,27 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all work tracking Analytics widgets are disabled and won't appear in the widget catalog. If Analytics is disabled or not installed, then all Analytics widgets are disabled. 
+> 
+> To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). For Analytics, see [enable or install Analytics](analytics-extension.md)]. 
 
 ::: moniker-end
 
 
 ## Select a dashboard 
+
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
+1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
 	If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
-0. Choose the dashboard you want to modify. 
+1. Choose the dashboard you want to modify. 
 
 ::: moniker-end
 
@@ -69,6 +72,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 
 ## Add a widget   
+
 ::: moniker range=">= azure-devops-2019"
 
 To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. 
@@ -100,31 +104,34 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 ::: moniker-end
 
 <a id="add-analytics-widget" />
+
 ::: moniker range="azure-devops-2019"
+
 ## Add an Analytics widget
 
-This example shows how to add the Velocity widget available from the Analytics service to a dashboard. 
+This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
-0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
 	If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
-0. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
 
-0. [Choose the dashboard](dashboards.md#choose-dashboard) that you want to modify. 
+1. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
 
-0. Choose ![edit icon](_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
+2. [Choose the dashboard](dashboards.md#choose-dashboard) that you want to modify. 
 
-0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
+3. Choose ![edit icon](_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
+
+4. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Velocity widget in widget catalog](_img/add-widgets/velocity-in-widget-catalog.png)
 
-0. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
+5. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
 
-0. Next, configure the widget. For details, see the following articles: 
+6. Next, configure the widget. For details, see the following articles: 
 	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
 	- [Configure cumulative flow](cumulative-flow.md)  
 	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
@@ -137,6 +144,7 @@ This example shows how to add the Velocity widget available from the Analytics s
 <a id="configure" />
 
 ## Configure a widget  
+
 Most widgets support configuration, which may include specifying the title, setting the widget size, and other widget-specific variables.
 
 ::: moniker range=">= tfs-2018"
@@ -181,8 +189,10 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 ::: moniker-end
 
 <a id="move-delete" />
+
 ## Move or delete a widget 
-To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget's options menu. 
+
+To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget&#39;s options menu. 
 
 ::: moniker range="tfs-2015"
 Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
@@ -231,7 +241,9 @@ When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](
 
 
 <a id="copy" />
+
 ## Copy a widget
+
 You can copy a widget to the same dashboard or to another team dashboard. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
 ::: moniker-end
 
@@ -252,6 +264,7 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 
 
 ## Widget size
+
 Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
 
 For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
@@ -271,6 +284,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 
 ## Try this next 
+
 > [!div class="nextstepaction"]
 > [Review the widget catalog](widget-catalog.md)
 > or
@@ -279,8 +293,8 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
-- [What is the Analytics Service?](../powerbi/what-is-analytics.md)
+- [Analytics-based widgets](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

@@ -44,8 +44,11 @@ A generic service connection for a PyPI index.
 > * **Password/Token Key**: password for your PyPI account
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -64,6 +67,5 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
-
 
 <!-- ENDSECTION -->

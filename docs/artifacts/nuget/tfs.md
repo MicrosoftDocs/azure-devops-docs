@@ -5,8 +5,8 @@ ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017 < azure-devops'

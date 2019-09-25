@@ -7,8 +7,8 @@ description: Samples for work item tracking using the REST APIs and .Net Librari
 ms.assetid: 6830FA0E-9EA6-4AD3-913D-9E3450315C13
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/24/2016
 ---
 

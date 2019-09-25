@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/05/2019  
+ms.date: 06/17/2019  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -29,7 +29,7 @@ In Azure DevOps, you have the following options for maintaining wiki content.
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
 > [!NOTE]  
-> The publish code as wiki feature is currently available on Azure DevOps. For 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
+> The publish code as wiki feature is currently available on Azure DevOps Server 2018 and later versions. For older versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
 
 ## Wiki page menu options
 
@@ -37,14 +37,14 @@ With a *provisioned wiki*, you add and edit pages directly within the **Wiki**. 
 
 With a publish code as wiki, you add, edit, and update content from **Repos** or **Code**.
 
-The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the* publish as code wiki* pages.
+The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |    Provisioned wiki    | Publish code as wiki |
 > |------|---------|
 > | ![Provisioned wiki page menu options](_img/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](_img/wiki/diff-menu-options.png) |
 
-For example, the **Edit** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
+For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
 
 ## Supported features and operational differences
 
@@ -110,9 +110,29 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-Versioning allows you to publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and the ability to unpublish content that you've previously published to a wiki, are only supported for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning, and the ability to unpublish content that you've previously published to a wiki, are supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
+
+## Delete project wiki
+
+Deleting a project wiki isn't supported with wiki APIs, but you can delete the wiki repository by completing the following steps.
+
+1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
+
+   ![Clone the wiki repository](_img/wiki/clone-wiki.png)
+
+2. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+   
+   For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
+   This returns all the wikis in the project, "sampleProject." Here you can get the repository ID of the wiki that you want to delete.
+
+   ![Clone the wiki repository, copy the URL](_img/wiki/clone-repository.png)
+
+3. Use the following REST API to delete the git repository.
+	
+    For example: DELETE https://dev.azure.com/fabrikam/_apis/git/repositories/{repositoryId}?api-version=4.1
+	Use the repository ID of the project wiki found using the previous step. Ensure that the repository ID matches the project wiki that you want to remove.
 
 ## Update a wiki by working offline
 

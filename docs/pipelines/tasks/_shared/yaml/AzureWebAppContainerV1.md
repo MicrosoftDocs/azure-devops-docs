@@ -1,15 +1,15 @@
 ```YAML
-# Azure Web App for Container
-# Update Azure App Services on Docker containers
+# Azure Web App for Containers
+# Deploy containers to Azure App Service
 - task: AzureWebAppContainer@1
   inputs:
     azureSubscription: 
-    #osType: 'Linux' # Options: linux, windows
     appName: 
     #deployToSlotOrASE: false # Optional
     #resourceGroupName: # Required when deployToSlotOrASE == True
     #slotName: 'production' # Required when deployToSlotOrASE == True
-    imageName: 
+    #containers: # Optional
+    #multicontainerConfigFile: # Optional
     #containerCommand: # Optional
     #appSettings: # Optional
     #configurationStrings: # Optional

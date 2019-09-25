@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 08/26/2019
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
@@ -61,16 +61,12 @@ You can use work items to track anything you need to track. Each work item repre
 
 ## Work item types (WITs)
 
-To track different types of work, different WITs are defined. The WITs available to you differ depending on the process or process template used to create your project.
+To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
 
-For example, the following WITs are available to you when you choose the Agile process. 
+[!INCLUDE [temp](../_shared/work-item-types.md)]
 
-<img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+The items in your backlog may be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
 
-> [!NOTE]  
-> The WITs available to you depend on the process chosen to create your project&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
-
-To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
 <a id="form" />
 
@@ -120,11 +116,14 @@ The new web form provides a number of experiences not provided with the old web 
 
 
 <a id="portal-clients"></a>  
+
 ## Track work in the web portal 
+
 You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md). 
 
 
 ## Web portal and clients that support tracking work items  
+
 You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
 
 ### Web portal 
@@ -136,6 +135,7 @@ Use the web portal to accomplish the following tasks.
 
 <a id="assign" />
 <a id="assign-work-items"></a>
+
 ## Assign work items to a project member
 
 You can only assign a work item to one person at a time. The **Assigned To** field is a person-name field designed to hold an user identity recognizable by the system. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few. 
@@ -180,6 +180,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
 <a id="assign-to-sprint"></a>
+
 ## Assign work items to a sprint 
 
 To schedule work items to be worked on during a specific time period, you assign the **Iteration Path**. First, you define the Iteration Paths for use in the project, and then each team selects the Iteration Paths that they'll use. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md). 
@@ -196,6 +197,7 @@ Based on how your team answers these questions, they can choose how they want to
 For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
 <a id="queries" />
+
 ## Find or list work items 
 
 You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
@@ -207,6 +209,7 @@ To learn more, see these topics:
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
+
 ## Use work item templates to quickly fill in forms
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
@@ -217,6 +220,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 
 
 <a id="customize" />
+
 ## Customize a WIT 
 
 ::: moniker range="azure-devops"
@@ -235,6 +239,7 @@ You can add or modify the fields contained within a WIT or add a custom WIT. To 
 
 
 <a id="permissions-access" />
+
 ## Required permissions and access
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/access-levels.md#stakeholder-access). 
@@ -252,6 +257,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 
 ## Related articles 
+
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md) 
