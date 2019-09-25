@@ -57,7 +57,7 @@ this is known as an "interleaved" pattern.
 
 Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
 
-You must define and include pattern before an exclude one. <a href="#character_set_examples">examples</a>.
+You must define an include pattern before an exclude one. <a href="#character_set_examples">examples</a>.
 
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
