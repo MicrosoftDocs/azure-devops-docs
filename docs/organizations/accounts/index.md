@@ -91,5 +91,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-- [Get started using Azure DevOps](../../get-started/index.md)
+- [Get started using Azure DevOps](../../get-started/index.yml)
 - [Marketplace & extensibility](../../marketplace-extensibility/index.md)
