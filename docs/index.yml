@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
-      url: ../release-notes/index.md
+      url: /azure/devops/release-notes/index
     # Card
     - title: Create your first pipeline
       itemType: how-to-guide
