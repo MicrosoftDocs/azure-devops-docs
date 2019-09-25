@@ -143,7 +143,8 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 }          
 ```
 
-> **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> [!NOTE]
+> If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 > If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
 
 ### Example of additional properties

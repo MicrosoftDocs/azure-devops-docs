@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 08/26/2019
+ms.date: 09/18/2019
 ---
 
 # Get started as a Stakeholder
@@ -615,7 +615,7 @@ To view or edit a work item, select it and choose **Enter**.
 With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to many of the Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
  
 > [!NOTE]
-> Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete a task.
+> Stakeholders that choose a feature that's not available to them may in some instances receive an error message indicating that they don't have permissions to complete a task.
 
 ::: moniker range="azure-devops"
 
@@ -623,19 +623,7 @@ With Stakeholder access, users can create and modify work items and create and s
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-> [!div class="mx-tdBreakAll"]  
-> | Service, application, or setting | Private project | Public project|
-> |------------|-----------------|---------------|
-> |<strong>Dashboards</strong> | Partial access | Full access | 
-> |<strong>Wiki</strong>  | Partial access | Full access | 
-> |<strong>Boards</strong>  | Partial access | Full access | 
-> |<strong>Repos</strong> | No access | Full access | 
-> |<strong>Pipelines</strong>  | Full access | Full access | 
-> |<strong>Test Plans</strong>  | No access | No access | 
-> |<strong>Notifications</strong>  | Full access | Full access | 
-> |<strong>Semantic search</strong> | Full access | Full access | 
-> |<strong>Project settings</strong>  | Partial access | Partial access | 
-> |<strong>Organization settings</strong>  | Partial access | Partial access | 
+[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
 
 ::: moniker-end
 
@@ -667,7 +655,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify dashboards 
 - View Delivery Plans (a Marketplace extension)
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.  
 
 ::: moniker-end
 
@@ -689,7 +677,6 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 
 ::: moniker-end
-
 
 ::: moniker range="<= tfs-2015"
 

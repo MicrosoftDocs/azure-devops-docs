@@ -4927,7 +4927,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md",
+      "redirect_url": "https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md",
       "redirect_document_id": false
     },
     {
@@ -11494,6 +11494,16 @@
       "source_path": "docs/artifacts/vsts-package-badges.md",
       "redirect_url": "/azure/devops/artifacts/package-badges",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/sign-up-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/license-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
