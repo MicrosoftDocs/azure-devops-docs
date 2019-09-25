@@ -3,16 +3,16 @@ title: Visual Studio Online Updates - May 12
 description: VSTS release notes for May 12 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: c2b37732-0483-4345-9832-b0cda35b8c5e
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Visual Studio Online updates – May 12
+# Visual Studio Online updates – May 12
 
-##Integrate with Visual Studio Online
+## Integrate with Visual Studio Online
 
 Today we are releasing a preview of a new way to extend and integrate with Visual Studio Online using REST, OAuth, and service hooks. With this deployment you can:
 
@@ -21,7 +21,7 @@ Today we are releasing a preview of a new way to extend and integrate with Visua
 
 You can find more information about the types of scenarios now possible at our [Visual Studio Online Integration](https://visualstudio.microsoft.com/integrate/explore/explore-vso-vsi) hub.
 
-###REST APIs
+### REST APIs
 
 Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
 
@@ -29,7 +29,7 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 [Explore the APIs](/azure/devops/integrate/)
 
-###Authorization
+### Authorization
 
 With OAuth 2.0 support in Visual Studio Online, now you can safely access information and perform operations on Visual Studio Online on behalf of a user. OAuth enables users to safely grant your app or service access to their resources.
 
@@ -37,7 +37,7 @@ With OAuth 2.0 support in Visual Studio Online, now you can safely access inform
 
 [Registering your app](https://app.vssps.visualstudio.com/app/register?_ga=1.9631093.1191187031.1470846728)
 
-###Service Hooks
+### Service Hooks
 
 Service hooks let your app or service get notified instantly when an event happens in Visual Studio Online. With service hooks your app or service can avoid continuously polling to check for changes, such as completed builds, commits/checkins, or work item changes. This enables powerful integration scenarios where Visual Studio online can inform another service of a change, enabling the use of both services together.
 
@@ -56,13 +56,13 @@ Services hooks can be found as a new hub in project administration.
 
 [Supported events](/azure/devops/service-hooks/events?view=azure-devops)
 
-###Extensibility Preview
+### Extensibility Preview
 
 re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](https://msdn.microsoft.com/library/bb165336.aspx).
 
 Give it a try. We can’t wait to see what you come up with.
 
-##Service Migration with OpsHub
+## Service Migration with OpsHub
 
 Since we launched Visual Studio Online, many of our on-premises Team Foundation Server customers who have loved used TFS have wanted to start using Visual Studio Online. One of the things customers have asked us to help them with for that transition is to be able to migrate their work items, test cases, test results, and source code files in version control repositories. Today, we’re happy to announce a free migration utility that we have partnered with OpsHub to create that will help you with a one-way migration of the most commonly requested artifacts in TFS to bring them to your Visual Studio Online account. You can now find it on the [Visual Studio Gallery](https://aka.ms/OpsHubVSOMigrationUtility):
 
@@ -79,13 +79,3 @@ If you have any additional questions, the OpsHub team will be monitoring for que
 Thanks,
 
 Will Smythe
-
-
-
-
-
-
-
-
-
-

@@ -2,20 +2,20 @@
 title: Resource limits & constraints  
 titleSuffix: Azure DevOps Services  
 description: Limits on the resources individual users can consume in Azure DevOps Services, and the number of work item tracking requests they can make 
-ms.technology: devops-collab
+ms.technology: devops-ecosystem
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: jillfra
 ms.author: kaelli
-author: KathrynEE
+author: chcomley
 ms.date: 09/07/2017
 monikerRange: '>= tfs-2018'
 ---
 
 <!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
 
-#Rate limits  
+# Rate limits  
 
 **Azure DevOps Services**
 
@@ -30,10 +30,10 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
-##Current rate limits
+## Current rate limits
 Azure DevOps Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
-###Global consumption limit
+### Global consumption limit
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
 
 - One of their shared resources is at risk of being overwhelmed, and 
@@ -72,7 +72,7 @@ We take a similar approach to rate limiting in Azure Pipelines. Since pipelines 
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
-To avoid disruption of existing applications, the following commands are temporarily whitelisted:
+To avoid disruption of existing applications, the following commands are temporarily added to an allow list:
 
 - ```GetWorkItem```
 - ```PageWorkitemsById```
@@ -86,7 +86,7 @@ To avoid hitting these limits, we recommend:
 As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.  
 --> 
 
-##User experience
+## User experience
 
 When an individual user's requests are delayed by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.  
 

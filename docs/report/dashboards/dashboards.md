@@ -80,12 +80,12 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ::: moniker range=">= azure-devops-2019"
 ## Select a dashboard 
 
-0. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
+1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 	 
-0. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+1. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](_img/dashboards/favorite-dashboard.png)  
@@ -251,10 +251,12 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
   
 ## Related articles
+
 - [Review the widget catalog](widget-catalog.md)
 - [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 
+
 Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
 

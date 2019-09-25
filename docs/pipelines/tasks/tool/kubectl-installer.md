@@ -17,6 +17,14 @@ monikerRange: 'azure-devops'
 
 This task can be used for installing a specific version of kubectl binary on agents.
 
+::: moniker range="> tfs-2018"
+
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/KubectlInstallerV0.md)]
+
+::: moniker-end
+
 ## Task inputs
 
 <table>
@@ -28,7 +36,7 @@ This task can be used for installing a specific version of kubectl binary on age
   </thead>
   <tr>
     <td><code>kubectlVersion</code><br/>Kubectl version spec</td>
-    <td>(Required) The version of kubectl to be installed on the agent. Acceptable values are 'latest' or any semver string like '1.14.0'<br/>Default value: latest</td>
+    <td>(Optional) The version of kubectl to be installed on the agent. Acceptable values are <code>latest</code> or any semantic version string like <code>1.15.0</code><br/>Default value: <code>latest</code></td>
   </tr>
 </table>
 
@@ -47,7 +55,7 @@ The following YAML example demonstrates the use of an explicit version string ra
 - task: KubectlInstaller@0
   displayName: Kubectl installer
   inputs: 
-    kubectlVersion: 1.13.0
+    kubectlVersion: 1.15.0
 ```
 
 ## Open source

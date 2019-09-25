@@ -27,7 +27,7 @@ Work item templates can help save time and provide guidance to your team when de
 Review this article for examples of defining specific values of work item templates. For guidance on adding, managing, and applying work item templates, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
 <a id="area-path"> </a> 
@@ -53,10 +53,10 @@ To provide guidance, enter HTML syntax into a rich-text field's value.
 For example, here we add the following syntax into the <strong>Repos Steps</strong> field
 
 > [!div class="tabbedCodeSnippets"]
-```HTML
-<p><b>Steps to reproduce:</b><br>1.&nbsp; <br><br><b>Expected Behavior:</b><br>1. <br><br><b>Affected Branch:</b> <br> <b>Affected Build:</b><br></p>
-```
-
+> ```HTML
+> <p><b>Steps to reproduce:</b><br>1.&nbsp; <br><br><b>Expected Behavior:</b><br>1. <br><br><b>Affected Branch:</b> <br> <b>Affected Build:</b><br></p>
+> ```
+> 
 > [!div class="mx-imgBorder"]  
 > ![Capture template dialog](_img/template/repo-steps.png) 
 

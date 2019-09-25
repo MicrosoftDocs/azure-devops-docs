@@ -22,7 +22,7 @@ ms.date: 03/20/2018
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
- 
+
 
 During process import, the process is validated to ensure the system works as expected for the custom process. 
 You'll receive a list of error messages if the process fails validation.  
@@ -34,7 +34,7 @@ Each error has a link to learn more about the specific validation failure and gu
 Apply the resolution fix(es) provided for the message(s) that you received, zip up the updated files, and retry the import operation.  
 
 If you're just starting your customization, [review the validation rules provided](customize-process.md).  
- 
+
 
 <a id="info-only"></a>
 ## Information messages - no action required
@@ -46,9 +46,9 @@ The process that you're importing doesn't include the named field in the process
 #### Scenario example
 
 1. Add custom field to Bug.xml work item
-```xml
-  <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
-```
+   ```xml
+   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
+   ```
 2. [Import process](import-process.md)
 3. Remove field from Bug.xml
 4. [Import updated process](import-process.md)
@@ -68,9 +68,9 @@ The process that you're updating doesn't include the named WIT that exists in th
 
 #### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
-```xml
+   ```xml
    <WORKITEMTYPE name="LSI" refname="My.LSI">  
-```
+   ```
 2. [Import process](import-process.md)  
 3. Remove the LSI work item type from the process  
 4. [Import updated process](import-process.md)  
@@ -86,14 +86,14 @@ As part of updating the existing process, the system renames the WIT in the curr
 
 #### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
-```xml
-  <WORKITEMTYPE name="LSI" refname="My.LSI">  
-```
+   ```xml
+   <WORKITEMTYPE name="LSI" refname="My.LSI">  
+   ```
 2. [Import process](import-process.md)  
 3. Rename the LSI work item type to Live Site Incident  
-```xml
-  <WORKITEMTYPE name="Live Site Incident" refname="My.LSI">  
-```
+   ```xml
+   <WORKITEMTYPE name="Live Site Incident" refname="My.LSI">  
+   ```
 4. [Import updated process](import-process.md)  
 
 The system displays an information message about the WIT to be renamed.  
@@ -279,7 +279,7 @@ The WorkItems.xml file has been updated to contain only one `ProjectConfiguratio
 ### TF402587: Required ProcessConfiguration file missing.
 The WorkItems.xml file specifies the ProcessConfiguration file to upload. 
 Either the file isn't specified, contains an out-of-date specification, the specified file is missing from the template, or the folder/file name isn't correct. 
- 
+
 #### Error example
 The configuration specified is out-of-date and specifies two files that aren't contained in the Process folder. 
 ```xml
@@ -432,7 +432,7 @@ The name of the WIT referenced for Microsoft.EpicCategory is misspelled.
 
 You can only specify custom categories that you use to configure an Agile tool feature in the ProcessConfiguration.  
 Review your ProcessConfiguration.xml file and determine if you've missed adding support for a category. Otherwise, remove *[categoryName]* from the Categories.xml file.
- 
+
 #### Error example
 ProcessConfiguration doesn't reference Microsoft.EpicCategory, although it's defined in the Categories.xml definition file. 
 
@@ -1175,11 +1175,10 @@ To fix this error, simply rename the `refname` attribute for the named field in 
 #### Error example
 ```xml
 <FIELD name="CustomField" refname="System.CustomField" type="String" />
-  
+
   - OR - 
-  
+
 <FIELD name="CustomField" refname="Microsoft.VSTS.CustomField" type="String" />
-  
 ```
 #### Resolution example
 ```xml
@@ -1199,7 +1198,7 @@ requires a pick list is defined for the Microsoft.VSTS.Common.Activity field in 
 
 If you have added bugs to the Task Category, you must ensure that the Bug.xml file contains the 
 named field and specifies the same pick list as is defined for it in the Task.xml file. 
- 
+
 #### Error example
 Bug.xml has the field defined, but not the pick list.
 ```xml
@@ -1470,7 +1469,7 @@ Bug.xml has the priority field defined, but has a different list of values than 
           <LISTITEM value="1"/>
           <LISTITEM value="2"/>
         </ALLOWEDVALUES>
-		<DEFAULT from="value" value="2" />
+        <DEFAULT from="value" value="2" />
       </FIELD>
 ```
 
@@ -1488,7 +1487,7 @@ Corrected Bug.xml including a new field
         <DEFAULT from="value" value="2" />
       </FIELD>
 
-	  <FIELD name="Custom Priority" refname="Custom.Priority" type="Integer" reportable="dimension">
+      <FIELD name="Custom Priority" refname="Custom.Priority" type="Integer" reportable="dimension">
         <HELPTEXT>Business importance. 1=must fix; 4=unimportant.</HELPTEXT>
         <ALLOWEDVALUES expanditems="true">
           <LISTITEM value="0"/>
@@ -1515,6 +1514,8 @@ Create a new account (collection) level group "Organization Leaders" and referen
 ```
 ... "[global]\Organization Leaders"
 ```
+> [!NOTE]
+> A freshly created global group might take a little while before being found by the import process.
 
 <a id="TF237094"></a>
 ### TF237094: Field name '[fieldName]' is used by the field '[refName]', so it cannot be used by the field '[refName]'.
@@ -1546,12 +1547,11 @@ In the new form layout, a group can only contain one HTMLFieldControl or WebPage
 #### Error example
 ```xml
 <Section>
-	<Group Label="Description:">
-		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />
+    <Group Label="Description:">
+        <Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />
         <Control Label="Business Case For Request:" Type="HtmlFieldControl" FieldName="MB.BusinessCase" />
-	</Group>
+    </Group>
 </Section>
-
 ```
 
 To resolve this, create two separate groups that contain one control each.
@@ -1559,12 +1559,12 @@ To resolve this, create two separate groups that contain one control each.
 #### Resolution example
 ```xml
 <Section>
-	<Group Label="Reason for Request">
-		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />       
-	</Group>
-	<Group Label="Business Case">
-		<Control Label="Business Case For Request" Type="HtmlFieldControl" FieldName="Custom.BusinessCase" />       
-	</Group>
+    <Group Label="Reason for Request">
+        <Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />       
+    </Group>
+    <Group Label="Business Case">
+        <Control Label="Business Case For Request" Type="HtmlFieldControl" FieldName="Custom.BusinessCase" />       
+    </Group>
 </Section>
 ```
 

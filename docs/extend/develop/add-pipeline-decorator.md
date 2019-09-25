@@ -19,13 +19,13 @@ This is different than adding steps to a single definition because it applies to
 
 Suppose our organization requires running a virus scanner on all build outputs that could be released.
 Instead of requiring every pipeline author to remember to add that step, we'll create a decorator which automatically injects the step.
-Our pipeline decorator will inject a custom task that does virus scanning at the end of every pipeline job.
+Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
 
 ## Author a pipeline decorator
 
 This example assumes you're familiar with the [contribution models](contributions-overview.md).
 
-Start by [creating an extension](add-build-task.md#step-3-create-the-extension-manifest-file).
+Start by [creating an extension](add-build-task.md#extensionmanifest). 
 After you follow the tutorial, you'll have a `vss-extension.json` file.
 In this file, add contribution for our new pipeline decorator.
 
@@ -44,6 +44,13 @@ In this file, add contribution for our new pipeline decorator.
                 "template": "my-decorator.yml"
             }
         }
+    ],
+    "files": [
+        {
+            "path": "my-decorator.yml",
+            "addressable": true,
+            "contentType": "text/plain"
+        }
     ]
 }
 ```
@@ -57,22 +64,24 @@ Let's take a look at the properties and what they are used for:
 | `targets` | Decorators can run before your job, after, or both. The two targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. In this example, we use only `post-job-tasks` because we want to run at the end of the job. |
 | `properties` | The only property required is a `template`. The template is a YAML file included in your extension which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
 
-This extension will contribute a pipeline decorator.
+This extension contributes a pipeline decorator.
 Next, we'll create a template YAML file to define the decorator's behavior.
 
 ## Decorator YAML
 
 In the extension's properties, we chose the name "my-decorator.yml".
 Create that file in the root of your contribution.
-It will hold the set of steps to run after each job.
+It holds the set of steps to run after each job.
 We'll start with a very simple example and work up to the full task.
 
 #### my-decorator.yml (initial version)
 ------
 ```yaml
 steps:
-- script: dir
-  displayName: 'Run my script (injected from decorator)'
+  - task: CmdLine@2
+    displayName: 'Run my script (injected from decorator)'
+    inputs:
+      script: dir
 ```
 
 ## Installating the decorator
@@ -86,11 +95,11 @@ Once the extension has been shared with your organization, [search for the exten
 > [!IMPORTANT]
 > Pipeline decorators are in preview.
 > You must [enable the feature at the organization level](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users)
-> Otherwise, pipeline decorators will not run.
+> Otherwise, pipeline decorators don't run.
 
 Save the file, then [build and install the extension](../get-started/node.md).
 Create and run a simple pipeline.
-The decorator will automatically inject our `dir` script at the end of every job.
+The decorator automatically injects our `dir` script at the end of every job.
 A pipeline run looks similar to:
 
 ![Pipeline decorator running a simple script](_img/mydecorator-runmyscript.png)
@@ -142,7 +151,7 @@ steps:
 
 #### Scoping
 
-You cannot scope the contribution to apply to certain pipelines within your organization. When you install the extension it applies to all jobs across your organization.
+You can't scope the contribution to apply to certain pipelines within your organization. When you install the extension it applies to all jobs across your organization.
 
 #### Endpoints
 
@@ -164,7 +173,7 @@ You'll see the following:
 
 ![View pipeline decorator context](_img/system-debugcontext.png)
 
-Click the task to see the logs, which report the available context is available and runtime values.
+Select the task to see the logs, which report the available context is available and runtime values.
 
 ## Helpful Links
 

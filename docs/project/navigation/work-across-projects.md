@@ -3,7 +3,7 @@ title: Work across projects
 titleSuffix: Azure DevOps
 description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: Navigation
-ms.technology: devops-new-user
+ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual

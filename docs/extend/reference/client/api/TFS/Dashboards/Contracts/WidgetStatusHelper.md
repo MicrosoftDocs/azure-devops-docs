@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetHelpers WidgetStatusHelper API | Extensions for Azur
 description: Documentation for the WidgetStatusHelper helper class.
 ms.assetid: 56D8E588-8873-47A8-AE58-48CA0530D5A5
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

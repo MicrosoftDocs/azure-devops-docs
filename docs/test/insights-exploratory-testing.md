@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -32,7 +32,7 @@ at team or individual level, and for a specific period.
 
      ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
-1. Explore the **Recent exploratory sessions** page. It contains three main sections:
+2. Explore the **Recent exploratory sessions** page. It contains three main sections:
 
    **Summary view** - shows a graphical breakdown of the work items explored, work items 
    created, session owners, and the total time for these sessions.
@@ -89,7 +89,7 @@ app from the information collected during your exploratory testing sessions.
      form for that individual item. For example, if you have pivoted
      the list based on explored work items, expand a work 
      item and select a child bug, task, or test case to see
-     the work item form for just that item.<p /> 
+     the work item form for just that item.<p />
 
    ![Get deep insights from Details view](_img/insights-exploratory-testing/insights-exploratory-testing-07.png)
 

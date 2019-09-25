@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/05/2019
+ms.date: 6/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -86,8 +86,8 @@ Azure Pipelines runs the following steps as part of every deployment:
 
 ::: moniker range="< azure-devops-2019"
 
-Release pipelines and build pipelines have separate designer interfaces
-(separate UIs). The main differences in the pipelines are the support in release
+Release pipelines and build pipelines have separate UIs.
+The main differences in the pipelines are the support in release
 pipelines for different types of triggers, and the support for approvals and gates.
 
 ::: moniker-end
@@ -134,8 +134,17 @@ After all those deployments are successful, a second job is used to switch traff
     
 * **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
+
 <a name="draftrelease"></a>
 ## What is a draft release?
+
+::: moniker range="azure-devops"
+
+Draft releases are deprecated in Azure Pipelines because you can change variables while you are [creating the release](#editvariables).
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 Creating a draft release allows you to edit some of the settings for the release and the tasks,
 depending on your role permissions, before starting the deployment.
@@ -153,6 +162,8 @@ After you finish editing the draft release, choose **Start** from the draft rele
 
 ![Start a draft release](_img/what-is-release-management/start-draft.png)
 
+::: moniker-end
+
 <a name="editvariables"></a>
 ## How do I specify variables I want to edit when a release is created?
 
@@ -161,7 +172,7 @@ you want to be able to edit when a release is created and queued.
 
 ![Specifying variables to be edited when a release is created and queued](_img/what-is-release-management/define-release-edit-variables.png)
 
-Then, when you create and queue a new release, you can edit the values for these variables.
+Then, when you create a new release, you can edit the values for these variables.
 
 ![Editing variables when a release is created and queued](_img/what-is-release-management/populate-release-edit-variables.png)
 
@@ -192,9 +203,10 @@ posted for all stages. However, you can selectively choose the stages for which 
 displayed in the status badge (for example, show only the production stage). Your team members can click the
 status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
-**Note**: If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
-automatically publish the deployment status to your repository. However, you can still use the
-"Enable the Deployment status badge" option described below to show deployment status within your version control system.
+> [!NOTE]
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
+> automatically publish the deployment status to your repository. However, you can still use the
+> "Enable the Deployment status badge" option described below to show deployment status within your version control system.
 
 **Report deployment status to Work**
 

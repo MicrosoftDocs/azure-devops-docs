@@ -47,5 +47,5 @@ To reduce noise, you don’t get notified for pages that you follow when the act
 - [Clone an existing Git repo](../../repos/git/clone.md)
 - [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
 

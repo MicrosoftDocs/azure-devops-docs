@@ -7,12 +7,12 @@ description: Work with test management programmatically using the REST APIs for 
 ms.assetid: 82EB89BA-B237-453B-8F15-E2747458C790
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Test Management
+# Test management
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
@@ -63,7 +63,7 @@ After you've run some tests...
 2. Get the ID of a run from the list, and get the [results](./results.md#getalistofresults) for that run.
 3. You can also get [statistics](./runs.md#gettestrunstatistic) for the run.
 
-## Licensing Requirements
+## Licensing requirements
 Test resources are subject to specific licensing and access restrictions. Please refer to the documentation links below for ensuring that the REST APIs are accessed with the appropriate user context.
 
 [Access Levels for Test Manager](https://visualstudio.microsoft.com/docs/work/connect/change-access-levels#test-manager)

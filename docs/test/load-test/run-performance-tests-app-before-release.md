@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: tutorial
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -47,7 +47,7 @@ actions in your app at the same time.
 
    If you don't see the template for the web performance and load test project type,
    ensure you have installed the required packages during Visual Studio setup.
-   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
+   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
 
    ![Installing packages required for web performance and load testing](_img/run-performance-tests-app-before-release/install-tools.png)
 

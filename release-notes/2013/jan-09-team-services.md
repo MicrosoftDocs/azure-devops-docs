@@ -3,16 +3,16 @@ title: Team Foundation Service updates - Jan 9
 description: VSTS release notes for January 9 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8359e77b-38a3-4558-8cee-6f9751cb9704
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Jan 9
+# Team Foundation Service updates - Jan 9
 
-##Account rename
+## Account rename
 
 One of the most requested features to date has been the ability to rename your account. We are happy to report that starting today, you can rename your account directly through the admin UI. We don’t often release new features outside our normal 3 week cadence, but this feature has been in such high demand that we decided to get it out the door the moment it was ready.
 
@@ -27,4 +27,3 @@ As always, let us know how we’re doing on [User Voice](https://visualstudio.us
 Thanks,
 
 Aaron Bjork
-

@@ -38,21 +38,21 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 ::: moniker range=">= azure-devops-2019"
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
 
-0. Choose **Card reordering** and select from the two reordering  behaviors listed.  
+2. Choose **Card reordering** and select from the two reordering  behaviors listed.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings dialog, Card reordering dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
 
 	The setting you choose applies to all active Kanban boards for your team.  
 
-0. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
 
 ::: moniker-end 
 
@@ -64,20 +64,20 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
-0. Choose **Card reordering** and select from the two reordering behaviors listed.  
+2. Choose **Card reordering** and select from the two reordering behaviors listed.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings dialog, Card reordering dialog](../../boards/boards/_img/kanban-card-reordering-up1.png) 
 
 	The setting you choose applies to all active Kanban boards for your team.  
 
-0. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
 
 	> [!TIP]
 	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 

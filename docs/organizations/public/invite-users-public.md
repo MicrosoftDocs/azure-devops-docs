@@ -16,17 +16,21 @@ monikerRange: 'azure-devops'
 
 <a id="invite-others" />
 
-# Invite users to contribute to your public project
+# Quickstart: Invite users to contribute to your public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-To enable users to contribute to your project, you must add them as a member.
+In this quickstart, you learn how to enable users to contribute to your project.
+
+## Prerequisites
+
+Add the user as a member of your organization.
 
 > [!IMPORTANT]
 > Before you add a member, review the notes provided in [private-to-public migration checklist](migration-checklist.md) as well as
 > the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
 
-## Open Organization Settings>Users
+## Open Organization Settings > Users
 
 1. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project.
 
@@ -59,11 +63,11 @@ To enable users to contribute to your project, you must add them as a member.
 
  Are admins able to add new users from this page, or only users who have been previously added to the organization?  
 
-0. Add members from your project page.   
+1. Add members from your project page.   
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/create-public-project/add-members.png)
 
-0. Fill out the form. 
+1. Fill out the form. 
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/create-public-project/add-member-form.png)
 -->
@@ -72,3 +76,4 @@ To enable users to contribute to your project, you must add them as a member.
 
 > [!div class="nextstepaction"]
 > [Clone an existing Git repo](clone-git-repo-public.md)
+

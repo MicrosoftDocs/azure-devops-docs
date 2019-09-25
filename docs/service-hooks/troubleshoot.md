@@ -7,8 +7,8 @@ description: Troubleshoot problems with the services you have integrated with yo
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 
@@ -142,7 +142,8 @@ A: Use tfssecurity.exe from the command line, for example:
     tfssecurity /a+ /collection: https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-**Note:** The GUID represents the project ID, which can be retrieved using the [Projects](/azure/devops/integrate/previous-apis/tfs/projects) REST API.
+> [!NOTE]
+> The GUID represents the project ID, which can be retrieved using the [Projects](/azure/devops/integrate/previous-apis/tfs/projects) REST API.
 
 #### Q: Can I programmatically create subscriptions? 
 

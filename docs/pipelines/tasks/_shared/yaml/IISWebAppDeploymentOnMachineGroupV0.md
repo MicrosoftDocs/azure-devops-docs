@@ -1,5 +1,5 @@
 ```YAML
-# IIS Web App Deploy
+# IIS web app deploy
 # Deploy a website or web application using Web Deploy
 - task: IISWebAppDeploymentOnMachineGroup@0
   inputs:

@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -17,7 +17,7 @@ Module path: `VSS/Operations/Contracts`
 
 ### Values
 
-* `NotSet` The operation object does not have the status set.
+* `NotSet` The operation object doesn't have the status set.
 
 * `Queued` The operation has been queued.
 

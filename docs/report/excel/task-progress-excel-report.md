@@ -20,18 +20,22 @@ You can use the Task Progress report to track how much work the team has complet
 > [!NOTE]
 >  You can view the Task Progress report from the Progress dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+<a name="Data"></a>
+
+## Data in the report  
+
  You can use the Task Progress report to track how much work remains to be completed. This report is based on a PivotChart report that shows the last four weeks of data that is captured for Tasks and that is stored in the data warehouse.  
   
  ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")  
   
-### Required Activities for Tracking Tasks  
+### Required activities for tracking tasks  
+
  For the Task Progress report to be useful and accurate, the team must perform the following activities:  
   
 -   Define Tasks.  
@@ -40,18 +44,24 @@ You can use the Task Progress report to track how much work the team has complet
   
 -   (optional) Specify the **Iteration** and **Area** paths of each Task if you want to filter by those fields.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+<a name="Interpreting"></a> 
+
+## Interpret the report 
+ 
  You should expect the Task Progress report to vary based on where you are in your product development cycle. Early iterations should show a gradual increase in the number of active Tasks. Iterations that are near the end of a product cycle should show a wide band of closed Tasks.  
   
  You can review the report to determine the progress over time or during an iteration. Specifically, you can find answers to the following questions:  
   
--   Is the team making progress toward closing Tasks?  
+- Is the team making progress toward closing Tasks?  
   
--   Is the team adding work?  
+- Is the team adding work?  
   
- For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).  
+  For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).  
   
-##  <a name="Updating"></a> Updating and Customizing the Report  
+<a name="Updating"></a> 
+  
+##  Update and customize the report  
+
  You can update the Task Progress report by opening the report in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  
@@ -60,15 +70,7 @@ You can use the Task Progress report to track how much work the team has complet
 |Burn down chart for Tasks in a product area|Change the filter for **Area** (default=All)|  
 |Burn down chart for Tasks over the most recent six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
   
- For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes
- [Excel reports](excel-reports.md)
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

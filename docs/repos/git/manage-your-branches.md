@@ -78,8 +78,8 @@ If the branch has a pull request open, you can see its pull request ID. Select t
 The ahead and behind numbers listed for each branch are in comparison with the branch currently labeled **Compare** on the Branches page. Update your compare branch to see how far ahead or behind
 your branches shown on the page are to another branch in your repo:
 
-0. Select the **...** next to the branch you want to set as the baseline for comparison.   
-0. Select **Set as compare branch**.
+1. Select the **...** next to the branch you want to set as the baseline for comparison.   
+2. Select **Set as compare branch**.
 
 The **Compare** label will move to this branch and the other branches on the page will have the number of commits ahead/behind updated to reflect the new comparison.
 
@@ -108,7 +108,7 @@ This is useful when you want to use a branch other than `master` for new changes
 
 4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
-  ![Set default branch](_img/pull-requests/set-default-branch-new-nav.png)
+   ![Set default branch](_img/pull-requests/set-default-branch-new-nav.png)
 
 ::: moniker-end
 

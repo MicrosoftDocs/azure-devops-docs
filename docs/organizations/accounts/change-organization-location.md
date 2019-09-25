@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 07/02/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,10 +27,10 @@ When you [create an organization](create-organization.md), you can choose the re
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select **Overview**. The region is listed under Organization information.
+3. Select **Overview**. The region is listed below.
 
    ![Find the region under the organization settings](_img/change-organization-location/organization-settings-region.png)
 
 ## Change organization location
 
-To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization owner.
+To change your organization region, contact [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization Owner.

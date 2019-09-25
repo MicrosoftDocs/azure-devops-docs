@@ -9,7 +9,7 @@ ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/14/2018
+ms.date: 07/03/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,19 +33,18 @@ You can use Azure Pipelines to build an app on written in any language, on multi
 
 You should now have a sample app in your GitHub account.
 
-## Add additional platforms
+## Add a pipeline
 
-In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're going to add additional jobs that run on other platforms.
+In the sample repo, there's no pipeline yet.
+You're going to add jobs that run on three platforms.
 
 1. Go to your fork of the sample code on GitHub.
 
-1. Select `azure-pipelines.yml`, and then select the _Edit this file_ pencil icon.
-
-1. In GitHub's web editor, replace the existing content with the content below.
+1. Choose 'Create new file'. Name the file `azure-pipelines.yml`, and give it the contents below.
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=azure-devops
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/javascript?view=azure-devops
 strategy:
   matrix:
     linux:
@@ -125,7 +124,7 @@ You've just learned the basics of using multiple platforms with Azure Pipelines.
 * [Jobs](process/phases.md?tabs=yaml)
 * [Cross-platform scripting](scripts/cross-platform-scripting.md)
 * [Templates](process/templates.md) to remove the duplication
-* Building [Node.js](languages/javascript.md) apps
-* Building [.NET Core](languages/dotnet-core.md), [Go](languages/go.md), [Java](languages/java.md), or [Python](languages/python.md) apps
+* Building [Node.js](ecosystems/javascript.md) apps
+* Building [.NET Core](ecosystems/dotnet-core.md), [Go](ecosystems/go.md), [Java](ecosystems/java.md), or [Python](ecosystems/python.md) apps
 
 For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).

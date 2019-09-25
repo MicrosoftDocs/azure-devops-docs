@@ -22,6 +22,8 @@
       items:
         - name: Add or modify a work item type
           href: ../add-modify-wit.md
+        - name: Customize the work item form
+          href: ../customize-wit-form.md
         - name: Design the work item form
           href: design-work-item-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Add the Attachments control
@@ -52,6 +54,14 @@
       href: ../manage-new-form-rollout.md
     - name: Use team fields instead of area paths
       href: ../use-team-fields-instead-area-paths.md
+    - name: Archive (manual updates)
+      items:
+        - name: Update a project based on a MSF v4.2 process template
+          href: update-a-team-project-v4-dot-2-process-template.md
+        - name: Update a project manually to support test management
+          href: update-a-team-project-manually-to-support-test-management.md
+        - name: Update the workflow for agile projects
+          href: update-the-workflow-for-agile-team-projects.md
 - name: Troubleshooting
   items:
     - name: Resolve process configuration issues

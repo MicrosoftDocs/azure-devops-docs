@@ -54,11 +54,11 @@ You can analyze the progress and quality of your project by viewing the reports 
   
  Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
--   Team Explorer is running on the same computer as Reporting Services.  
+- Team Explorer is running on the same computer as Reporting Services.  
   
--   You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
+- You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
   
- To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
+  To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
   
 1.  Choose the report and then press Enter.  
   

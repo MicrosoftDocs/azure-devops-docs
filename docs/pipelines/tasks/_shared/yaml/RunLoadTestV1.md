@@ -1,6 +1,6 @@
 ```YAML
-# Cloud-based Load Test
-# Runs the load test in the cloud with Azure Pipelines.
+# Cloud-based load test
+# Run a load test in the cloud with Azure Pipelines
 - task: CloudLoadTest@1
   inputs:
     #connectedServiceName: # Optional

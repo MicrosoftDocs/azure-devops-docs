@@ -30,7 +30,7 @@ The advantages of using Kubernetes resource views within environments include -
   > ![ImagePullBackOff](_img/k8s-imagepullbackoff.png)
 
 ## Kubernetes resource creation
-### Azure provider
+<h3 id="resource-creation-aks">Azure Kubernetes Service</h3>
 A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) is created in the chosen cluster and namespace. For an RBAC enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) is created as well to limit the scope of the created service account to the chosen namespace. For an RBAC disabled cluster, the ServiceAccount created has cluster-wide privileges (across namespaces).
 
 1. In the environment details page, click on **Add resource** and choose **Kubernetes**.
@@ -38,7 +38,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 3. Choose the Azure subscription, cluster and namespace (new/existing).
 4. Click on **Validate and create** to create the Kubernetes resource.
 
-### Generic provider (using existing service account)
+<h3 id="resource-creation-generic">Generic provider (using existing service account)</h3>
 While the Azure Provider option creates a new ServiceAccount, the generic provider allows for using an existing ServiceAccount to allow a Kubernetes resource within environment to be mapped to a namespace.
 
 > [!TIP]
@@ -49,21 +49,21 @@ While the Azure Provider option creates a new ServiceAccount, the generic provid
 3. Input cluster name and namespace values.
 4. For fetching Server URL, execute the following command on your shell - 
 
-  ```
-  kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}
-  ```
+   ```
+   kubectl config view --minify -o jsonpath={.clusters[0].cluster.server}
+   ```
 5. For fetching Secret object required to connect and authenticate with the cluster, the following sequence of commands need to be run -
 
-  ```
-  kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}
-  ```   
+   ```
+   kubectl get serviceAccounts <service-account-name> -n <namespace> -o=jsonpath={.secrets[*].name}
+   ```   
 
-  The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
+   The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
 
-  ```
-  kubectl get secret <service-account-secret-name> -n <namespace> -o json
-  ```
+   ```
+   kubectl get secret <service-account-secret-name> -n <namespace> -o json
+   ```
 
-  Copy and paste the Secret object fetched in JSON form into the Secret text-field.
+   Copy and paste the Secret object fetched in JSON form into the Secret text-field.
 
 6. Click on **Validate and create** to create the Kubernetes resource.

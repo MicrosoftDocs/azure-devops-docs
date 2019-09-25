@@ -60,63 +60,63 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
   
 ## To change how work item fields are mapped to Project  
   
-1.  Open a Command Prompt window where you have installed TFS and change the directory to point to the tools. For example:  
+1. Open a Command Prompt window where you have installed TFS and change the directory to point to the tools. For example:  
   
-    ```  
-    cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 
-    ```  
+   ```  
+   cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 
+   ```  
   
-    > [!TIP]  
-    >  Project isn't required to download the mapping file, however, it is required to upload it.  
+   > [!TIP]  
+   >  Project isn't required to download the mapping file, however, it is required to upload it.  
   
-2.  Download the mapping file by entering the following command:  
+2. Download the mapping file by entering the following command:  
   
-    ```  
-    TFSFieldMapping download /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
-    ```  
+   ```  
+   TFSFieldMapping download /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
+   ```  
   
-    > [!TIP]  
-    >  If a name contains spaces, enclose the name in quotes.  
+   > [!TIP]  
+   >  If a name contains spaces, enclose the name in quotes.  
   
-3.  Open the mapping file in a text editor or XML editor.  
+3. Open the mapping file in a text editor or XML editor.  
   
-4.  Add new mappings or edit existing mappings in the following format:  
+4. Add new mappings or edit existing mappings in the following format:  
   
-    > [!div class="tabbedCodeSnippets"]
-	```XML   
-    <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
-       ProjectField=""  
-       ProjectName=""  
-       ProjectUnits=""  
-       PublishOnly=""  
-       IfSummaryRefreshOnly=""/>    
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML   
+   > <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
+   >    ProjectField=""  
+   >    ProjectName=""  
+   >    ProjectUnits=""  
+   >    PublishOnly=""  
+   >    IfSummaryRefreshOnly=""/>    
+   > ```  
   
-     For example, to add additional scheduling fields to a project created using the Scrum process template, add the following mappings:  
+    For example, to add additional scheduling fields to a project created using the Scrum process template, add the following mappings:  
   
-    > [!div class="tabbedCodeSnippets"]
-	```XML   
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />    
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML   
+   > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
+   > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
+   > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
+   > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />    
+   > ```  
   
-     The default Scrum template only maps the Remaining Work field to Project.  
+    The default Scrum template only maps the Remaining Work field to Project.  
   
-    > [!NOTE]  
-    >  For a full list of all Project field values for the ProjectField attribute, see [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md).  
+   > [!NOTE]  
+   >  For a full list of all Project field values for the ProjectField attribute, see [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md).  
   
-5.  (Optional) Indicate if the field is to be published but not refreshed. Add the `PublishOnly` attribute to the mapping section for that field and set the attribute to `true`. This attribute can be used to allow for team members to see a field value but not be able to change it in Team Foundation.  
+5. (Optional) Indicate if the field is to be published but not refreshed. Add the `PublishOnly` attribute to the mapping section for that field and set the attribute to `true`. This attribute can be used to allow for team members to see a field value but not be able to change it in Team Foundation.  
   
-6.  (Optional) Indicate how summary tasks are to be refreshed  in Project. Add `fSummaryRefreshOnly="true"` attribute to indicate that the field is never published to the work item database but is refreshed from the work item database when  the row for the field is a summary task in Project, the summary task has **Publish and Refresh=Yes**, and the summary task contains at least one child task that is published to work tracking.  
+6. (Optional) Indicate how summary tasks are to be refreshed  in Project. Add `fSummaryRefreshOnly="true"` attribute to indicate that the field is never published to the work item database but is refreshed from the work item database when  the row for the field is a summary task in Project, the summary task has **Publish and Refresh=Yes**, and the summary task contains at least one child task that is published to work tracking.  
   
-7.  Save and upload the file:  
+7. Save and upload the file:  
   
-    > [!div class="tabbedCodeSnippets"]
-	```   
-    TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```   
+   > TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
+   > ```  
   
 ## Related articles
 -  [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)   

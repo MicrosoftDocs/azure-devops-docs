@@ -26,15 +26,15 @@ Non-member users generally see the same views as authenticated users, with non-p
 
 ## Decide whether to make an extension visible to non-member users
 
-As the extension developer, you can make all or part of your extension available to non-member users. These users will only be able to use your extension from within a public project. If you choose to not make your extension available to non-member users, no change is required and there is no impact on members (regardless of whether they use your extension from within a public project or not).
+As the extension developer, you can make all or part of your extension available to non-member users. These users can only use your extension from within a public project. If you choose to not make your extension available to non-member users, no change is required and there is no impact on members (regardless of whether they use your extension from within a public project or not).
 
 Use this checklist to help decide if you should make your extension available to non-member users:
 
 > [!div class="checklist"]
-* Data presented by your extension is relevant to non-member users
-* Your extension contributes capabilities at the project level
-* Your extension contributes to areas of the product that are accessible by non-member users
-* Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
+> * Data presented by your extension is relevant to non-member users
+> * Your extension contributes capabilities at the project level
+> * Your extension contributes to areas of the product that are accessible by non-member users
+> * Your extension doesn't extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
 
 ## Contribution visibility
 
@@ -136,7 +136,7 @@ Because data managed by the [extension data service](./data-storage.md) is not s
 
 #### Example: handling data access errors
 
-If the data service is unable to access the data service due to permission limitations by the calling user, the promise returned from the call to `getValue` will be rejected. The error passed to the reject function will have a name that can be checked to understand why the call to read or write data failed.
+If the data service can't access the data service due to permission limitations by the calling user, the promise returned from the call to `getValue` is rejected. The error passed to the reject function has a name that can be checked to understand why the call to read or write data failed.
 
 ```javascript
 VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
@@ -166,7 +166,7 @@ A good best practice in general is to use permissions to decide whether or not t
 
 #### Example: check whether the user has permission to queue builds
 
-This example shows how to use the Security REST client to check whether the user has permissions to queue builds in the current project. By default, non-member users will not have this permission.
+This example shows how to use the Security REST client to check whether the user has permissions to queue builds in the current project. By default, non-member users don't have this permission.
 
 ```javascript
 VSS.require(["VSS/Service", "VSS/organizations/security/RestClient"], function(VSS_Service, Security_RestClient) {
@@ -219,7 +219,7 @@ Just like other types of contributions, the visibility of dashboard widget contr
 
 In addition to controlling visibility of the widget to non-member users, the dashboard framework provides an optional, open-form storage mechanism for widget settings. Two mechanisms are available for indicate whether a widget's settings are available for use by non-member users in public projects. 
 
-A widget with configurable settings that is visible to non-member users **must** follow one of the following patterns. Not doing so will block the widget from surfacing to these users.
+A widget with configurable settings that is visible to non-member users **must** follow one of the following patterns. Not doing so blocks the widget from surfacing to these users.
 
 ### Pattern 1: widget declares its instances only store project-specific settings
 
@@ -254,11 +254,11 @@ If your extension contributes a build or release task, no change is required to 
 
 ## Work item tracking considerations
 
-Extensions that extend the work item form or other work item experiences or interact with work item tracking REST APIs will not work for non-member users in the context of a public project without changes.
+Extensions that extend the work item form or other work item experiences or interact with work item tracking REST APIs don't work for non-member users in the context of a public project without changes.
 
 ### Work item form
 
-All work item updates or deletes will fail for non-member users.
+All work item updates or deletes fail for non-member users.
 
 ### Identities
 
@@ -266,12 +266,12 @@ In Azure DevOps Services REST API version 5.0 and later, identities are returned
 
 ### APIs
 
-Only project-scoped REST APIs can be invoked by an extension when the current user is not an organization member. Any REST API call this is not scoped to a project will be rejected.
+Only project-scoped REST APIs can be invoked by an extension when the current user is not an organization member. Any REST API call this is not scoped to a project are rejected.
 
 ### Queries
 
 There are limitations for non-member users related to work item queries:
 
 * non-member users can only execute know queries (by ID or path)
-* Queries must be scoped to the current project. Any work items not belonging to the current project will be excluded.
-* non-member user cannot create new queries or execute WIQL queries
+* Queries must be scoped to the current project. Any work items not belonging to the current project are excluded.
+* non-member user can't create new queries or execute WIQL queries

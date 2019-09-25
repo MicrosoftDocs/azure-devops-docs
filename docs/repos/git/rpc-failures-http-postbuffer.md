@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jepling
 ms.author: jobourne
-author: joebourneMS
+author: thejoebourneidentity
 ms.topic: conceptual
 ms.date: 01/22/2019
 monikerRange: '>= tfs-2013'

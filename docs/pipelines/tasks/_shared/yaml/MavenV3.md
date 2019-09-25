@@ -1,6 +1,6 @@
 ```YAML
 # Maven
-# Build with Apache Maven
+# Build, test, and deploy with Apache Maven
 - task: Maven@3
   inputs:
     #mavenPomFile: 'pom.xml' 
@@ -9,8 +9,8 @@
     #publishJUnitResults: true 
     #testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
-    #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
-    #codeCoverageClassFilter: # Optional
+    #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageClassFilesDirectories: # Optional
     #codeCoverageSourceDirectories: # Optional
     #codeCoverageFailIfEmpty: false # Optional
@@ -23,6 +23,7 @@
     #mavenSetM2Home: false # Required when mavenVersionOption == Path
     #mavenOptions: '-Xmx1024m' # Optional
     #mavenAuthenticateFeed: false 
+    #effectivePomSkip: false 
     #sonarQubeRunAnalysis: false 
     #sqMavenPluginVersionChoice: 'latest' # Required when sonarQubeRunAnalysis == True# Options: latest, pom
     #checkStyleRunAnalysis: false # Optional

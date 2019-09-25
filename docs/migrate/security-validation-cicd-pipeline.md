@@ -11,7 +11,12 @@ ms.author: sdanie
 author: mikedouglasdev
 monikerRange: '>= tfs-2015'
 ---
+
+
 # Learn how to add continuous security validation to your CI/CD pipeline
+
+[!INCLUDE [version-azure-devops](../_shared/version-ts-tfs-2015-2016.md)]
+
 
 Are you planning Azure DevOps continuous integration and deployment pipelines? You probably have a few questions, such as:
 * How do you ensure your application is safe?
@@ -29,7 +34,7 @@ Continuous security validation should be added at each step from development thr
 
 ## IDE / Pull Request
 
-Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://visualstudio.microsoft.com/docs/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
+Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://docs.microsoft.com/azure/devops/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
 
 ## CI (Continuous Integration)
 
@@ -57,7 +62,7 @@ The application CI/CD pipeline should run within a few minutes, so you don't wan
 
 ![Pipeline](_img/security-validation-cicd-pipeline/pipeline.png)
 
-In addition to validating the application, the infrastructure should also be validated to check for any vulnerabilities. When using the public cloud such as Azure, deploying the application and shared infrastructure is easy, so it is important to validate that everything has been done securely. Azure includes many tools to help report and prevent these vulnerabilities including Security Center and Azure Policies. Also, we have set up a scanner that can ensure any public endpoints and ports have been whitelisted or else it will raise an infrastructure issue. This is run as part of the Network pipeline to provide immediate verification, but it also needs to be executed each night to ensure that there aren't any resources publicly exposed that should not be.
+In addition to validating the application, the infrastructure should also be validated to check for any vulnerabilities. When using the public cloud such as Azure, deploying the application and shared infrastructure is easy, so it is important to validate that everything has been done securely. Azure includes many tools to help report and prevent these vulnerabilities including Security Center and Azure Policies. Also, we have set up a scanner that can ensure any public endpoints and ports have been added to an allow list or else it will raise an infrastructure issue. This is run as part of the Network pipeline to provide immediate verification, but it also needs to be executed each night to ensure that there aren't any resources publicly exposed that should not be.
 
 ![Endpoint](_img/security-validation-cicd-pipeline/endpoint.png)
 
@@ -71,7 +76,7 @@ Even with continuous security validation running against every change to help en
 
 Minimize security vulnerabilities by taking a holistic and layered approach to security including secure infrastructure, application architecture, continuous validation, and monitoring. DevSecOps practices enable your entire team to incorporate these security capabilities throughout the entire lifecycle of your application.  Establishing continuous security validation into your CI/CD pipeline can allow your application to stay secure while you are improving the deployment frequency to meet needs of your business to stay ahead of the competition.
 
-##Reference information
+## Reference information
 
 * [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 * [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool

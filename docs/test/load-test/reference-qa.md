@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -153,8 +153,8 @@ and virtual user minutes will be charged accordingly.
 
 * Visual Studio IDE: 48 hours
 * Azure DevOps Load test page:
- - URL-based load tests: 48 hours
- - JMeter load tests: 4 hours
+  - URL-based load tests: 48 hours
+  - JMeter load tests: 4 hours
 * Azure portal: 1 hour
 
 ### Q: Do other load tests run on the same virtual machines that host my agents?

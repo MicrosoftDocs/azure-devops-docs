@@ -7,8 +7,8 @@ description: Work with service hooks programmatically using the REST APIs for Te
 ms.assetid: 9AFC70D7-D27B-45EF-A374-4A7283BF1E4C
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

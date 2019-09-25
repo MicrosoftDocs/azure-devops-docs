@@ -16,10 +16,12 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](_shared/version.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](languages/dotnet-core.md#troubleshooting)
+This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting)
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Run commands locally at the command prompt
@@ -40,21 +42,21 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 Start by looking at the logs in your completed build or release. If they don't provide enough detail, you can make them more verbose:
 
-0. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
+1. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
 
-0. Queue the build or release.
+2. Queue the build or release.
 
-0. In the explorer tab, view your completed build or release and click the failing task to view its output.
+3. In the explorer tab, view your completed build or release and click the failing task to view its output.
 
-0. If you need a copy of all the logs, click **Download all logs as zip**.
+4. If you need a copy of all the logs, click **Download all logs as zip**.
 
 ### Diagnostic logs
 
-0. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
+1. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
 
-0. Queue the build.
+2. Queue the build.
 
-0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
+3. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
 
 > Diagnostic logs are not yet available for releases.
 
@@ -68,17 +70,17 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
 
 * The log file generated when you ran `config.cmd`. This log:
 
- - Includes this line near the top: `Adding Command: configure`
+  - Includes this line near the top: `Adding Command: configure`
 
- - Shows the configuration choices made.
+  - Shows the configuration choices made.
 
 * The log file generated when you ran `run.cmd`. This log:
 
- - Cannot be opened until the process is terminated.
+  - Cannot be opened until the process is terminated.
 
- - Attempts to connect to your Azure DevOps organization or Team Foundation Server.
+  - Attempts to connect to your Azure DevOps organization or Team Foundation Server.
 
- - Shows when each job was run, and how it completed
+  - Shows when each job was run, and how it completed
 
 Both logs show how the agent capabilities were detected and set.
 
@@ -111,40 +113,40 @@ macOS/Linux:
 
 ##### Windows
 
-0. Start [Fiddler](http://www.telerik.com/fiddler).
+1. Start [Fiddler](http://www.telerik.com/fiddler).
 
-0. We recommend you listen only to agent traffic.  File > Capture Traffic off (F12)  
+2. We recommend you listen only to agent traffic.  File > Capture Traffic off (F12)  
 
-0. Enable decrypting HTTPS traffic.  Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
+3. Enable decrypting HTTPS traffic.  Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
 
-0. Let the agent know to use the proxy:
+4. Let the agent know to use the proxy:
 
- ```cmd
-set VSTS_HTTP_PROXY=http://127.0.0.1:8888
- ```
+   ```cmd
+   set VSTS_HTTP_PROXY=http://127.0.0.1:8888
+   ```
 
-0. Run the agent interactively.  If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
+5. Run the agent interactively.  If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
 
-0. Restart the agent.
+6. Restart the agent.
 
 
 ##### macOS and Linux
 
 Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of the agent.
 
-0. Start Charles Proxy.
+1. Start Charles Proxy.
 
-0. Charles: Proxy > Proxy Settings > SSL Tab.  Enable.  Add URL.  
+2. Charles: Proxy > Proxy Settings > SSL Tab.  Enable.  Add URL.  
 
-0. Charles: Proxy > Mac OSX Proxy.  Recommend disabling to only see agent traffic.
+3. Charles: Proxy > Mac OSX Proxy.  Recommend disabling to only see agent traffic.
 
- ```bash
-export VSTS_HTTP_PROXY=http://127.0.0.1:8888
- ```
+   ```bash
+   export VSTS_HTTP_PROXY=http://127.0.0.1:8888
+   ```
 
-0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
+4. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
-0. Restart the agent.
+5. Restart the agent.
 
 ## File- and folder-in-use errors
 File or folder in use errors are often indicated by error messages such as:

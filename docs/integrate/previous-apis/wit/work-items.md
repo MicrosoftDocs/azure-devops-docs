@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/23/2016
 ---
 
@@ -85,25 +85,25 @@ This API is often used in combination with other work item tracking APIs for man
 
 For all of the work items samples, check out the [samples page](./samples.md).
 
-##	Get a list of work items
+##  Get a list of work items
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={version}&ids={string}[&fields={string}&asOf={DateTime}&$expand={enum{relations}&ErrorPolicy={string}]
 ```
 
-| Parameter         | Type 	                                                            | Default | Notes
+| Parameter         | Type                                                              | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
 | instance          | string                                                            |         | TFS server name ({server:port}).
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| ids				| string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
-| fields	    	| string                                                            |         | A comma-separated list of up to 100 fields to get with each work item.<br/>If not specified, all fields with values are returned. Calculated fields such as Attached File Count must be specifically queried for using this parameter.
-| asOf				| [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
-| $expand			| enum { all, relations, none }										| none    | Gets work item relationships (work item links, hyperlinks, file attachments, etc.).
-| ErrorPolicy		| string { throw, omit }                                            | throw   | Determines if the call will throw an error when encountering a work item (default behavior) that doesn't exist or simply omit it.
+| ids               | string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
+| fields            | string                                                            |         | A comma-separated list of up to 100 fields to get with each work item.<br/>If not specified, all fields with values are returned. Calculated fields such as Attached File Count must be specifically queried for using this parameter.
+| asOf              | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
+| $expand           | enum { all, relations, none }                                     | none    | Gets work item relationships (work item links, hyperlinks, file attachments, etc.).
+| ErrorPolicy       | string { throw, omit }                                            | throw   | Determines if the call will throw an error when encountering a work item (default behavior) that doesn't exist or simply omit it.
 
-###	By IDs
+### By IDs
 <a name="byids" />
 
 #### Sample request
@@ -191,7 +191,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&ap
 * [C# (GetWorkItemsByIDs method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L20)
 
 
-###	With specific fields
+### With specific fields
 <a name="withspecificfields" />
 
 #### Sample request
@@ -248,7 +248,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fi
 * [C# (GetWorkItemsWithSpecificFields method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L38)
 
 
-###	As of a date
+### As of a date
 <a name="asofdate" />
 
 #### Sample request
@@ -576,21 +576,21 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
 * [C# (GetWorkItemsWithLinksAndAttachments method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L98)
 
 
-##	Get a work item
+##  Get a work item
 <a name="getaworkitem" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}?api-version={version}[&$expand={enum{relations}]
 ```
 
-| Parameter         | Type 	                                                            | Default | Notes
+| Parameter         | Type                                                              | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
 | instance          | string                                                            |         | TFS server name ({server:port}).
-| id				| string                                                            |         | ID of the work item to retrieve.
+| id                | string                                                            |         | ID of the work item to retrieve.
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $expand			| enum { all, relations, none }										| none    | Gets work item relationships (work item links, hyperlinks and file attachments).
+| $expand           | enum { all, relations, none }                                     | none    | Gets work item relationships (work item links, hyperlinks and file attachments).
 
 #### Sample request
 
@@ -831,12 +831,12 @@ Get the default values that will be filled in automatically when you create a ne
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/workitems/${workItemTypeName}?api-version={version}
 ```
 
-| Parameter         | Type 		| Notes
+| Parameter         | Type      | Notes
 |:------------------|:----------|:-------------------------------------------------------------------
 | URL
-| instance          | string	| TFS server name ({server:port}).
-| project			| string	| Name or ID of a [project](../tfs/projects.md) where the work item type is defined.
-| workItemTypeName	| string    | Name of the [work item type](./work-item-types.md).
+| instance          | string    | TFS server name ({server:port}).
+| project           | string    | Name or ID of a [project](../tfs/projects.md) where the work item type is defined.
+| workItemTypeName  | string    | Name of the [work item type](./work-item-types.md).
 | Query
 | api-version       | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -907,10 +907,9 @@ public void GetDefaultValues()
         }
     }
 }
-
 ```
 
-##	Create a work item
+##  Create a work item
 <a name="create-work-item" />
 
 When you create a work item, you can provide values for any of the work item fields.
@@ -923,45 +922,45 @@ Content-Type: application/json-patch+json
 ```
 ```json
 [
-	{
-		"op": "add",
-		"path": { string }
-		"value": { string or int, depending on the field }
-	},
-	{
-		"op": "add",
-		"path": "/relations/-",
-		"value":
-		{
-			"rel": { string },
-			"url": { string },
-			"attributes":
-			{
-				{ name/value pairs }
-			}
-		}
-	}
+    {
+        "op": "add",
+        "path": { string }
+        "value": { string or int, depending on the field }
+    },
+    {
+        "op": "add",
+        "path": "/relations/-",
+        "value":
+        {
+            "rel": { string },
+            "url": { string },
+            "attributes":
+            {
+                { name/value pairs }
+            }
+        }
+    }
 ]
 ```
 
-| Parameter         | Type 	                                |  Notes
+| Parameter         | Type                                  |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
 | instance          | string                                | TFS server name ({server:port}).
-| project			| string								| Name or ID of a [project](../tfs/projects.md) where the work item should be created.
-| workItemTypeName	| string                                | Name of the [work item type](./work-item-types.md).
+| project           | string                                | Name or ID of a [project](../tfs/projects.md) where the work item should be created.
+| workItemTypeName  | string                                | Name of the [work item type](./work-item-types.md).
 | Query
 | api-version       | string                                | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body - field
-| op				| enum { add, replace, test }           | The operation to perform on the field.<br/>You can use add or replace to set the value of a field when you create a work item.<br/>Use test to verify that the value is valid without actually saving the work item.
-| path				| string                                | Path to the value you want to add, replace, remove, or test.<br/>For a field, use "/fields/{reference name}".
+| op                | enum { add, replace, test }           | The operation to perform on the field.<br/>You can use add or replace to set the value of a field when you create a work item.<br/>Use test to verify that the value is valid without actually saving the work item.
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For a field, use "/fields/{reference name}".
 | value             | string or int, depending on the field | New value to set.
 | Body - relation
-| op				| enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
-| path				| string                                | Path to the value you want to add, replace, remove, or test.<br/>For a specific relation, use "relations/Id".<br/>For all relations, use "/relations/-".
-| value.rel			| string								| Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
-| value.url			| string								| URL of the item you are relating to the current work item.
-| value.attributes	| array of name/value pairs				| Additional attributes of the relationship (e.g. comment, isLocked, etc.)
+| op                | enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For a specific relation, use "relations/Id".<br/>For all relations, use "/relations/-".
+| value.rel         | string                                | Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
+| value.url         | string                                | URL of the item you are relating to the current work item.
+| value.attributes  | array of name/value pairs             | Additional attributes of the relationship (e.g. comment, isLocked, etc.)
 
 If any of the new field values or relations are not valid, the work item will not be created.
 
@@ -1140,7 +1139,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workite
 * [C# (CreateAndLinkToWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L198)
 * [C# (ByPassRulesOnCreate method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L271)
 
-##	Update work items
+##  Update work items
 <a name="updateworkitems" />
 
 ```no-highlight
@@ -1151,44 +1150,44 @@ Content-Type: application/json-patch+json
 ```
 ```json
 [
-	{
-		"op": "add",
-		"path": { string }
-		"value": { string or int, depending on the field }
-	},
-	{
-		"op": "add",
-		"path": "/relations/-",
-		"value":
-		{
-			"rel": { string },
-			"url": { string },
-			"attributes":
-			{
-				{ name/value pairs }
-			}
-		}
-	}
+    {
+        "op": "add",
+        "path": { string }
+        "value": { string or int, depending on the field }
+    },
+    {
+        "op": "add",
+        "path": "/relations/-",
+        "value":
+        {
+            "rel": { string },
+            "url": { string },
+            "attributes":
+            {
+                { name/value pairs }
+            }
+        }
+    }
 ]
 ```
 
-| Parameter         | Type 	                                |  Notes
+| Parameter         | Type                                  |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
 | instance          | string                                | TFS server name ({server:port}).
-| id				| string                               	| ID of the work item to retrieve.
+| id                | string                                | ID of the work item to retrieve.
 | Query
 | api-version       | string                                | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body - field
-| op				| enum { add, replace, remove, test }   | The operation to perform on the field. <br/>You can use add or replace to set the value of a field.<br/>Use remove to clear the value of the field.<br/>Use test to verify that the value is valid without actually saving the work item.
-| path				| string                                | Path to the value you want to add, replace, remove, or test.<br/>For a field, use "/fields/{reference name}".
+| op                | enum { add, replace, remove, test }   | The operation to perform on the field. <br/>You can use add or replace to set the value of a field.<br/>Use remove to clear the value of the field.<br/>Use test to verify that the value is valid without actually saving the work item.
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For a field, use "/fields/{reference name}".
 | value             | string or int, depending on the field | New value to set.
 | Body - relation
-| op				| enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
-| path				| string                                | Path to the value you want to add, replace, remove, or test.<br/>For a specific relation, use "relations/Id".<br/>For all relations, use "/relations/-".
-| value.rel			| string								| Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
-| value.url			| string								| URL of the item you are relating to the current work item.
-| value.attributes	| array of name/value pairs				| Additional attributes of the relationship (e.g. comment, isLocked, etc.)
+| op                | enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For replacing, removing, or testing a specific relation, use "/relations/Id". Id is the 0 based 'index' of relation in the list of relations currently on this work item. <br/>For adding relations, use "/relations/-".
+| value.rel         | string                                | Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
+| value.url         | string                                | URL of the item you are relating to the current work item.
+| value.attributes  | array of name/value pairs             | Additional attributes of the relationship (e.g. comment, isLocked, etc.)
 
 If any of the new field values or relations are not valid, or if the work item has been saved by someone else since the revision was retrieved, the work item will not be updated.
 

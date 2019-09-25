@@ -7,9 +7,9 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
-ms.date: 12/07/2018
+ms.author: UshaN
+author: UshaN
+ms.date: 09/24/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -22,60 +22,107 @@ script containing Azure CLI commands against an Azure subscription.
 
 This task is used to run Azure CLI commands on 
 cross-platform agents running on Linux, macOS, or Windows operating systems.
- 
-This task is under development. If you encounter problems, or wish to
-share feedback about the task and features you would like to see,
-please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 
-### What's new in Version 1.0
 
-- Supports the new [AZ CLI 2.0](/cli/azure/overview), which is Python based
-- Works with agents on Linux, macOS, and Windows
-- To work with [Azure CLI 1.0](/azure/cli-install-nodejs), which is node based, switch to task version 0.0
-- Both versions of Azure-CLI can coexist in the same system, but task V1.0 logs into the Python based AZ CLI using the user's subscription, whereas task V0.0 logs into the node based Azure CLI. Therefore, scripts should include only the appropriate corresponding commands.
-- Limitations:
-  - No support for Classic subscriptions. AZ CLI 2.0 supports only Azure Resource Manager (ARM) subscriptions
-  - Currently, Microsoft-hosted agents do not have the AZ CLI installed. You can either install it using `npm install -g azure-cli` (on Microsoft-hosted Linux agents, use `sudo npm install -g azure-cli`) or use a self-hosted agent with the AZ CLI pre-installed.
+### What's new in Version 2.0
 
-## Demands
-
-None
+- Supports running PowerShell and PowerShell Core script
+- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
+- Powershell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
 
 ## Prerequisites
 
-* A Microsoft Azure subscription
-* A service connection to your Azure account. You can use either:
-  - [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic)
-  - [Azure Resource Manager service connection](../../library/connect-to-azure.md)
-* Azure CLI installed on the computer(s) that run the build and release agent.
-  See [Install the Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/).
+- A Microsoft Azure subscription
+
+- [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account
+
+- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/) on the computer(s) that run the build and release agent. 
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
+  
+## Task Inputs
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+<tr>
+    <td><code>azureSubscription</code><br/>Azure subscription</td>
+    <td>(Required) Select an Azure resource manager subscription for the deployment. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions</td>
+</tr>
+<tr>
+    <td><code>scriptType</code><br/>Script Type</td>
+    <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script. Select <b>Shell/PowerShell Core</b> script when running on Linux agent or <b>Batch/PowerShell/PowerShell Core</b> script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows)</td>
+</tr>
+<tr>
+    <td><code>scriptLocation</code><br/>Script Location</td>
+    <td>(Required) Path to script: File path or Inline script<br/>Default value: scriptPath</td>
+</tr>
+<tr>
+    <td><code>scriptPath</code><br/>Script Path</td>
+    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the the default working directory</td>
+</tr>
+<tr>
+    <td><code>inlineScript</code><br/>Inline Script</td>
+    <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux based agents. For batch files use the prefix \"call\" before every azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
+</tr>
+<tr>
+    <td><code>scriptArguments</code><br/>Script Arguments</td>
+    <td>(Optional) Arguments passed to the script</td>
+</tr>
+<tr>
+    <td><code>powerShellErrorActionPreference</code><br/>ErrorActionPreference</td>
+    <td>(Optional) Prepends the line <b>$ErrorActionPreference = 'VALUE'</b> at the top of your powershell/powershell core script<br/>Default value: stop</td>
+</tr>
+<tr>
+    <td><code>addSpnToEnvironment</code><br/>Access service principal details in script</td>
+    <td>(Optional) Adds service principal id and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$servicePrincipalId, $servicePrincipalKey and $tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
+</tr>
+<tr>
+    <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
+    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
+</tr>
+<tr>
+    <td><code>workingDirectory</code><br/>Working Directory</td>
+    <td>(Optional) Current working directory where the script is run.  Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td>
+</tr>
+<tr>
+    <td><code>failOnStandardError</code><br/>Fail on Standard Error</td>
+    <td>(Optional) If this is true, this task will fail when any errors are written to the StandardError stream. Unselect the checkbox to ignore standard errors and rely on exit codes to determine the status<br/>Default value: false</td>
+</tr>
+<tr>
+    <td><code>powerShellIgnoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td>
+    <td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td>
+</tr>
+</table>
 
 ::: moniker range="> tfs-2018"
-## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzureCLIV1.md)]
+
+## Example
+
+Following is an example of a YAML snippet which lists the version of Azure CLI and gets the details of the subscription.
+
+```yaml
+- task: AzureCLI@2
+  displayName: Azure CLI
+  inputs:
+    azureSubscription: <Name of the Azure subscription>
+    scriptType: ps
+    scriptLocation: inlineScript
+    inlineScript: |
+        az --version
+        az account show
+```
+
 ::: moniker-end
-
-## Arguments
-
-| Argument | Description |
-| -------- | ----------- |
-| **Azure Connection Type** | Required. Select the type of service connection used to define the connection to Azure. Choose **Azure Classic** or **Azure Resource Manager**. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions.
-| **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
-| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/documentation/articles/resource-group-overview/) for more details. |
-| **Script Location** | Required. The way that the script is provided. Choose **Inline Script** or **Script Path** (the default). |
-| **Inline Script** | Required if you select **Inline Script** for the **Script Location** parameter. Type or copy the script code to execute here. You can include [default variables](../../release/variables.md#default-variables), global variables, and stage variables. |
-| **Script Path** | Required if you select **Script Path** for the **Script Location** parameter. The path to a linked artifact that is the **.bat**, **.cmd**, or **.sh** script you want to run. It can be a fully-qualified path, or a valid path relative to the default working directory. |
-| **Arguments** | Optional. Any arguments you want to pass to the script. |
-| **Advanced - Working Directory** | Optional. The working directory in which the script will execute. If not specified, this will be the folder containing the script file. |
-| **Advanced - Fail on Standard Error** | Set this option if you want the build to fail if errors are written to the **StandardError** stream. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## Related tasks
 
-* [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
-* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
+- [Azure Resource Group Deployment](azure-resource-group-deployment.md)
+- [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+- [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Open source
 

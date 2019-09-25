@@ -54,13 +54,13 @@ Part of creating a good architecture is investigating alternative architectural 
   
  You can represent system diagrams in Visual Studio in the following ways:  
   
--   Use case diagrams. The main user scenarios are represented as use cases, and the major components of the system are shown as subsystems. Each use case can be placed inside the subsystem that deals with it. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
+- Use case diagrams. The main user scenarios are represented as use cases, and the major components of the system are shown as subsystems. Each use case can be placed inside the subsystem that deals with it. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
   
--   UML component diagrams. These diagrams let you show communications channels between the components, in addition to dependencies. You might also want to create class diagrams to describe the types that are visible at the interfaces to the components, and you can create sequence diagrams to show their interactions. For more information, see [UML Component Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), and [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
+- UML component diagrams. These diagrams let you show communications channels between the components, in addition to dependencies. You might also want to create class diagrams to describe the types that are visible at the interfaces to the components, and you can create sequence diagrams to show their interactions. For more information, see [UML Component Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), and [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
   
--   [Layer diagrams](https://msdn.microsoft.com/library/dd418995). A layer diagram describes the block structure of the application. It shows only components and the dependencies between them. It has the benefit that, after the code is written, you can validate the code and the dependencies against the diagram. For more information, see [Layer Diagrams: Guidelines](https://msdn.microsoft.com/library/dd418995).  
+- [Layer diagrams](https://msdn.microsoft.com/library/dd418995). A layer diagram describes the block structure of the application. It shows only components and the dependencies between them. It has the benefit that, after the code is written, you can validate the code and the dependencies against the diagram. For more information, see [Layer Diagrams: Guidelines](https://msdn.microsoft.com/library/dd418995).  
   
- For each subsystem, you can create a package that describes its types and behavior in more detail. For more information, see [Define packages and namespaces](https://msdn.microsoft.com/library/dd465144).  
+  For each subsystem, you can create a package that describes its types and behavior in more detail. For more information, see [Define packages and namespaces](https://msdn.microsoft.com/library/dd465144).  
   
 ##  <a name="CreateProofs"></a> Create Proofs of Concept  
  Significant risks to the project can be mitigated by creating an architectural proof of concept. It is important to address risk as early as possible in the project so that key strategic and architectural decisions can be made while it is still easy to modify fundamental pieces of the architecture. Creating early proofs of concept reduces overall project risk and unknowns. Lower project risk and fewer unknowns make planning and estimating in later iterations more accurate. Proofs of concept can be temporary and discarded after the issues have been addressed, or they can be built as the foundation of the core architecture.  
@@ -87,17 +87,17 @@ Part of creating a good architecture is investigating alternative architectural 
   
  The rating should take into account the following factors:  
   
--   **Development cost** Is this solution easy or difficult to implement? What is its impact on other areas?  
+- **Development cost** Is this solution easy or difficult to implement? What is its impact on other areas?  
   
--   **Operational cost** At run time, will this solution work easily, or will it adversely affect usability, performance, and so on?  
+- **Operational cost** At run time, will this solution work easily, or will it adversely affect usability, performance, and so on?  
   
--   **Risk** Is this solution certain to address the scenario well, or are there unknown costs? Could this solution have an adverse impact on the team's ability to accommodate future enhancements in the requirements?  
+- **Risk** Is this solution certain to address the scenario well, or are there unknown costs? Could this solution have an adverse impact on the team's ability to accommodate future enhancements in the requirements?  
   
- If a proof of concept has been built for a strategy, use information from that proof of concept to help determine the values.  
+  If a proof of concept has been built for a strategy, use information from that proof of concept to help determine the values.  
   
- At the bottom of the table, sum the values from the scenarios. Use these figures as an input to the discussion that leads to decisions on the alternative architectures.  
+  At the bottom of the table, sum the values from the scenarios. Use these figures as an input to the discussion that leads to decisions on the alternative architectures.  
   
- Upload the completed assessment matrix to the project portal.  
+  Upload the completed assessment matrix to the project portal.  
   
 ##  <a name="Select"></a> Select the Architecture  
  After the assessment matrix is created, a review meeting is held to determine which architecture to use in the next iteration. The assessment matrix and information that is discovered from creating the proofs of concept is used to help make a decision. After the architecture is selected, diagrams for the architecture are checked in as the reference solution, and a justification document is created that captures the reasons behind the selection.  

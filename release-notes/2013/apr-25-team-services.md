@@ -3,14 +3,14 @@ title: Team Foundation Service updates - Apr 25
 description: VSTS release notes for April 25 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 7696bc78-b73a-40ba-b1db-8c13ff4aa111
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Apr 25
+# Team Foundation Service updates - Apr 25
 
 You may have noticed April 15th came and went with no mention of any Team Foundation Service update. If everything had been “normal” April 15th would have been the date for our Sprint 46 deployment. Unfortunately, nothing has been normal.
 

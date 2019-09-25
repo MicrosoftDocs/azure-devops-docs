@@ -2,7 +2,7 @@
 title: What are best practices for working with product and portfolio backlogs 
 titleSuffix: Azure Boards
 description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
-ms.custom: "boards-backlogs, seodec18"     
+ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
@@ -25,7 +25,9 @@ implement them and deliver the results to your customers.
 To get started, see [Create your backlog](create-your-backlog.md). 
 
 <a name="product-owner-role"></a>
+
 ## Role of the product owner  
+
 Product owners play an important role in Scrum, primarily as the interface between customers and the team. To enable product owners to perform the following responsibilities, they need to be added to the Contributors group. 
 
 * Analyzing customer requirements and articulate them as user stories, features, or requirements  
@@ -41,7 +43,9 @@ A product owner can reduce the need for detailed specifications by being more re
 
  
 <a name="acceptance"></a>
+
 ## Acceptance criteria
+
 Acceptance criteria define what "Done" means by describing the conditions that the team should use to verify whether a requirement or bug fix has been fully implemented. You can capture these criteria in the work item. Clear acceptance criteria help with estimating and developing requirements and with testing.
 
 Product owners are the ultimate deciders of the criteria that create customer value.
@@ -83,6 +87,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 
 <a id="refine">  </a>
+
 ## Refine your backlog
   
 Backlog refinement supports your sprint planning efforts and helps minimize these often seen challenges:
@@ -107,11 +112,14 @@ You'll know that you've done a good job refining your backlog when your sprint p
 
 
 <a name="spikes"></a>
+
 ## Capture and manage spikes
+
 In addition to new features and requirements to build, you can capture non-feature work that still needs to be done for a healthy ecosystem of delivery. This work can include necessary research, design, exploration, or prototyping. Any work done that doesn't directly lead to shippable software can be considered and captured as a spike.
 
 As the need to perform this work arises, capture it along with other items on your backlog. To track that it is a spike, you can either preface the title with the word "[Spike]" or add the tag "Spike" to the work item.  
 
 ## Additional resources
+
 - [What is Agile?](/azure/devops/learn/agile/what-is-agile)  
 - [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)  

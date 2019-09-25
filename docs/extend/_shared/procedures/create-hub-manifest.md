@@ -1,4 +1,4 @@
-0. Add your contribution - the Hello hub - to your extension manifest.
+1. Add your contribution - the Hello hub - to your extension manifest.
 
 	> Include the [scopes](../../develop/manifest.md#scopes) that your extension requires.
 	> In this case, we need vso.work to access work items.
@@ -25,7 +25,7 @@
 			"vso.work"
 		]
     }
-	```
+    ```
 
 	For each contribution in your extension, the manifest defines
 	
@@ -39,7 +39,7 @@
 | order | Placement of the hub in the hub group. |
 | uri | Path (relative to the extension's baseUri) of the page to surface as the hub. |
 
-0. Add the files that you want to include in your package - your HTML page, your scripts, the SDK script and your logo.
+1. Add the files that you want to include in your package - your HTML page, your scripts, the SDK script and your logo.
 
 	```json
 	{
@@ -59,6 +59,6 @@
 			}
 		]
     }
-	```
+    ```
 
 	Set `addressable` to `true` unless you include other files that don't need to be URL-addressable.

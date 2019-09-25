@@ -1,12 +1,7 @@
 - name: Boards (Kanban) 
-  href: index.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json
-- name: Overview
-
-  items:
-  - name: About boards & Kanban
-    href: kanban-overview.md
-  - name: "Backlogs, boards, & plans"
-    href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: About boards & Kanban
+  href: kanban-overview.md
 - name: Quickstarts
   items:
   - name: Kanban board quickstart
@@ -14,7 +9,7 @@
   - name: Enable live updates
     href: live-updates.md
   - name: Drive Git development
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Kanban board basics
@@ -36,7 +31,7 @@
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
-    href: ../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+    href: ../../boards/boards/customize-cards.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work (swimlanes)
@@ -52,7 +47,7 @@
 - name: Troubleshooting
   items:
   - name: Set up your backlogs and boards
-    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Boards (Kanban) board controls

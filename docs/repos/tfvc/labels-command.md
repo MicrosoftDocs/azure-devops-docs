@@ -28,6 +28,7 @@ To use the **labels** command, you must have the **Read** permission set to **Al
     [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]
 
 ## Parameters<table>
+
 |**Argument**|**Description**|
 |---|---|
 |*ownername*|Provides a username as DOMAIN\JuanGo or juango to the **/owner** option.|
@@ -35,12 +36,13 @@ To use the **labels** command, you must have the **Read** permission set to **Al
 |*TeamProjectCollectionUrl*|The URL of the project collection for which you want to display the list of labels (for example, http://myserver:8080/tfs/DefaultCollection).|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName.*|
 
-|**Option**|**Description**|
-|---|---|
-|**/owner**|Specifies the name of the user who owns the label. By default, the owner is the person who applies the label.|
-|**/format**|Displays information about the specified label in one of the following formats:<ul><li><strong>Brief:</strong> Includes label, owner, and date created. This is the default.</li><li><strong>Detailed:</strong> Includes also comments, scope, and a list of files and folders associated with each label.</li></ul>|
-|**/collection**|Specifies the project collection.|
-|**/login**|Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.|
+|   **Option**    |                                                                                                                                      **Description**                                                                                                                                       |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   **/owner**    |                                                                                       Specifies the name of the user who owns the label. By default, the owner is the person who applies the label.                                                                                        |
+|   **/format**   | Displays information about the specified label in one of the following formats:<ul><li>**Brief:** Includes label, owner, and date created. This is the default.</li><li>**Detailed:** Includes also comments, scope, and a list of files and folders associated with each label.</li></ul> |
+| **/collection** |                                                                                                                             Specifies the project collection.                                                                                                                              |
+|   **/login**    |                                                                                          Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.                                                                                          |
+
 ## Remarks
 The **labels** command displays information about labels in the Team Foundation version control server. If you do not specify a Team Foundation version control server, the Team Explorer tries to determine the Team Foundation version control server based by using the current directory. If the current directory is not mapped to a Team Foundation version control server, you must specify one by using the **/s** option.
 

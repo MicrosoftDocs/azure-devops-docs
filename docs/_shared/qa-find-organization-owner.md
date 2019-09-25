@@ -1,4 +1,4 @@
-### Q:	How do I find the organization owner?
+### Q: How do I find the organization owner?
 
 If you have at least Basic access, you can find the current owner in your organization settings.
 
@@ -8,6 +8,6 @@ If you have at least Basic access, you can find the current owner in your organi
 
 2.	Find the current owner.
 
-	![Find the current owner in organization information](../organizations/accounts/_img/change-organization-ownership/find-organization-owner.png)
+	![Find the current owner in organization information](/azure/devops/organizations/accounts/_img/change-organization-ownership/find-organization-owner.png)
 
 

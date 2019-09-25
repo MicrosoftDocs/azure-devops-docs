@@ -16,6 +16,7 @@ ms.date: 2/14/2019
 
 
 <a id="define-tasks">  </a>
+
 # 2. Add tasks to backlog items 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
@@ -39,23 +40,46 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ## Open a Sprint backlog for a team 
 
-::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+::: moniker range="azure-devops"
 
-	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    > [!div class="mx-imgBorder"]  
+    > ![Open Work, Sprints, for a team](_img/add-tasks/open-sprint-backlog-s155-co.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
+    ![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -63,7 +87,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -75,7 +99,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
@@ -86,6 +110,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 
 <a id="define-tasks" />
+
 ## Add tasks to backlog items
 
 If you haven't yet assigned backlog items to your sprint, [do that now](assign-work-sprint.md). Also, you'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
@@ -93,7 +118,7 @@ If you haven't yet assigned backlog items to your sprint, [do that now](assign-w
 For each sprint backlog item, add a task. Adding tasks from the sprint backlog or board automatically links the task to its parent backlog item. 
 
 > [!TIP]    
-> You can quickly add several tasks on the taskboard by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the taskboard](../../boards/boards/customize-cards.md#task-board). 
+> You can quickly add several tasks on the taskboard by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the taskboard](customize-taskboard.md). 
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -113,7 +138,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 > ![Add task from the taskboard](_img/add-tasks/add-task-board-agile.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).   
+> You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).   
 
 ::: moniker-end
 
@@ -135,7 +160,7 @@ Another option, is to open the **Board**, and add tasks as cards. Simply click t
 > ![Add task from the taskboard](_img/add-tasks/add-task-board-standard.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).  
+> You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).  
 
 ::: moniker-end
 
@@ -147,17 +172,22 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who'
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Add task](_img/add-tasks/add-task-form.png)
-::: moniker-end	
+::: moniker-end 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 <a id="task-form-team-services" /> 
 <!--- Task form, new form -->
 ![New task form](_img/sp-scrum-task-form.png)  
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 <a id="task-form-tfs-2015-13" /> 
+
 <!--- Task form, old form -->
 
 !["Web portal, Task form, old form](_img/IC797606.png)  	
+
 ::: moniker-end
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
@@ -175,25 +205,26 @@ During the sprint, team members update remaining work to continually reflect the
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p>[Original Estimate](../queries/query-numeric.md)</p></td>
-	<td><p>The amount of estimated work required to complete a task. Typically, this field doesn't change after it is assigned.</p>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Original Estimate](../queries/query-numeric.md)">Original Estimate</a></p></td>
+    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
 <tr>
-	<td width="18%"><p>[Remaining Work](../queries/query-numeric.md)</p></td>
-	<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](set-capacity.md) and the [sprint burndown chart](sprint-burndown.md)You can specify work in any unit of measurement your team chooses.</p></td></tr>
+    <td width="18%"><p><a href="../queries/query-numeric.md" data-raw-source="[Remaining Work](../queries/query-numeric.md)">Remaining Work</a></p></td>
+    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="set-capacity.md" data-raw-source="[capacity charts](set-capacity.md)">capacity charts</a> and the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a>You can specify work in any unit of measurement your team chooses.</p></td></tr>
 <tr>
-	<td><p>[Completed Work](../queries/query-numeric.md) </p></td>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Completed Work](../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>
 <tr>
-	<td><p>[Activity](../queries/query-numeric.md) </p></td>
+    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a> </p></td>
 	<td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
 </tbody>
 </table>  
 
 
 <a id="unparented-tasks">  </a>
+
 ## Unparented tasks
 
 Tasks without links to parent backlog items or user stories appear at the top of the taskboard. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
@@ -204,7 +235,6 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
@@ -213,6 +243,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md) 
 

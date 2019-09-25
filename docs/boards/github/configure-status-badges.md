@@ -10,23 +10,28 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/19/2019
 ---
 
 # Configure status badges to add to GitHub README files 
 
-[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
  
 You can add Markdown syntax to a GitHub repo README.md file to display the status of your Kanban board. You do this by adding the syntax you choose from your Kanban board settings.  
- 
-> [!NOTE]   
-> This syntax will work whether you have or haven't [connected your project to a GitHub.com or GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+The syntax shown works whether you have or haven't [connected your project to a GitHub.com or GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
 ## Prerequisites 
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * You must be added to the team administrator role for the team's settings you want to modify, or be a member of the <strong>Project Administrators</strong> security group. To get added, see [Add a team administrator](/azure/devops/organizations/security/add-team-administrator) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 * You must be granted <strong>Stakeholder</strong> access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  

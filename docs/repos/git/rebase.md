@@ -43,9 +43,9 @@ In this tutorial you learn how to:
 
 Rebasing is a powerful tool for catching up changes a main branch but you must be careful about its use. Some things to keep in mind before you rebase:
 
-0. Never rebase commits that have been [pushed](pushing.md) and shared with others. The only exception to this rule is when you are certain no one on your team is using the commits or the branch you pushed.
-0. Use rebase to catch up with the commits on another branch as you work with a local feature branch. This is especially useful when working in long-running feature branches to check how your changes work with the latest updates on the master branch.
-0. You can't update a published branch with a `push` after you've rebased the local branch. You'll need to force push the branch to rewrite the history of the remote branch to match the local history. Never force push branches in use by others.
+1. Never rebase commits that have been [pushed](pushing.md) and shared with others. The only exception to this rule is when you are certain no one on your team is using the commits or the branch you pushed.
+2. Use rebase to catch up with the commits on another branch as you work with a local feature branch. This is especially useful when working in long-running feature branches to check how your changes work with the latest updates on the master branch.
+3. You can't update a published branch with a `push` after you've rebased the local branch. You'll need to force push the branch to rewrite the history of the remote branch to match the local history. Never force push branches in use by others.
 
 During a rebase, Git attempts to reconcile the changes recorded in the commits on your branch and the changes in the commits in the target branch.
 Resolve any conflicts between the commits in the same way that you resolve [merge conflicts](merging.md).
@@ -79,7 +79,7 @@ Applying: Updated feature
 Applying: updated feature again
 Applying: final feature update</font>
 </pre>
- 
+
 If you hit a conflict, resolve the conflicting files, do a `git add` to stage the merged changes, then continue the rebase with `git rebase --continue`. 
 
 ---
@@ -101,7 +101,7 @@ After a successful rebase, your local branch will have a different history than 
 ## Squash local commits
 
 > Interactive rebase is not currently supported in Visual Studio, but you can use the following command line steps to consolidate your commits.
- 
+
 A special use of `rebase` is available to condense the changes made in a set of commits down to one single commit. This is useful to clean up commit histories
 before they are [pushed](pushing.md) to a remote branch.  The benefits to the readability are significant, and since you never rebase shared code, you can summarize the 
 changes easily.
@@ -116,10 +116,8 @@ command. If you had five commits to squash, then you'd make sure there are no un
 This will open up an editor where you will see something like:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-<font color="#b5bd68">pick 7b43f3f Updated router.js  
-pick 00859d9 Updated README.md 
-pick 9d247f7 initial commits            
-pick 7068b09 Updated README.md with build instructions</font>
+<font color="#b5bd68">pick 7b43f3f Updated router.js<br/>pick 00859d9 Updated README.md 
+pick 9d247f7 initial commits<br/>pick 7068b09 Updated README.md with build instructions</font>
 </pre>
 
 You'll keep the first of the changes (leave it `pick`), and then change `pick` to `squash` for the rest of the changes. Save and close the editor. 

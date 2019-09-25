@@ -6,24 +6,24 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
-ms.author: ahomer
-author: 
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
-# Search for work items defined in a public project
+# Quickstart: Search for work items defined in a public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-With work item search, you can quickly find work items defined within a public project.
+In this quickstart, you learn how to perform a work item search to quickly find work items defined within a public project.
 
 <a name="start-search"></a>
 
 ## Initiate a search
 
-1. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
+1. Choose **Work > Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)
@@ -75,6 +75,9 @@ With work item search, you can quickly find work items defined within a public p
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
-## Related articles
+## Next steps
 
-* [Search the code base](code-search-public.md)
+> [!div class="nextstepaction"]
+> [Search the code base](code-search-public.md)
+
+

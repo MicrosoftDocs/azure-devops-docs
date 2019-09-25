@@ -1,38 +1,26 @@
-- name: Discover & Manage Extensions
+- name: Discover & manage extensions
   href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
-- name: Discover Marketplace extensions 
-  href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
+- name: Marketplace extensions
+  href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json
+- name: Trusting Marketplace offerings
+  href: trust.md
 - name: Quickstarts
   items:
-  - name: Install free Azure DevOps Services extensions
+  - name: Install extensions
     href: install-extension.md
-  - name: Preview paid Azure DevOps Services extensions
-    href: start-trial-extension.md
-  - name: Install paid Azure DevOps Services extensions
-    href: install-paid-extension.md
-  - name: Assign paid extensions
-    href: assign-paid-extensions.md
+  - name: Request and approve extensions
+    href: request-extensions.md
   - name: Install extensions on-premises
     href: get-tfs-extensions.md
-  - name: Trusting offerings in Marketplace
-    href: trust.md
-- name: How-to Guides
+- name: How-to guides
   items:
-  - name: Manage extension permissions (Security)
-    href: how-to/grant-permissions.md
-  - name: Request extensions
-    href: request-extensions.md
-  - name: Approve extension requests
-    href: approve-extensions.md
   - name: Uninstall or disable extensions
     href: uninstall-disable-extensions.md
-  - name: Change number of paid users for extensions for TFS
-    href: how-to/change-paid-extension-users.md
-- name: Troubleshooting
-  items:
-  - name: FAQs about getting and paying for extensions
+  - name: Manage extension permissions
+    href: how-to/grant-permissions.md
+  - name: FAQs about extensions
     href: faq-extensions.md
-  - name: FAQs about the Marketplace
-    href: marketplace-billing-qa.md
-  - name: FAQs about TFS extensions
-    href: tfs-extension-faqs.md
+- name: Resources
+  items: 
+  - name: Get extensions for Visual Studio
+    href: https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019#install-or-uninstall-visual-studio-extensions

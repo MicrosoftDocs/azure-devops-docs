@@ -1,6 +1,6 @@
 ```YAML
 # Azure CLI
-# Run Azure CLI commands against an Azure subscription in a Shell script when runnning on Linux agent or Batch script when running on Windows agent.
+# Run Azure CLI commands against an Azure subscription in a Shell script when running on Linux agent or Batch script when running on Windows agent.
 - task: AzureCLI@1
   inputs:
     azureSubscription: 

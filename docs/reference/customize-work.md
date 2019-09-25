@@ -31,6 +31,7 @@ Customizations you make occur at one of three levels:
 
 
 <a id="shared-resources"></a>
+
 ## Shared resources  
 
 Each project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](../organizations/settings/about-areas-iterations.md). 
@@ -55,7 +56,7 @@ Your project determines the objects available to track work and the configuratio
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
+>- **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
 >- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments       
  
@@ -64,109 +65,104 @@ The following table summarizes the differences between the three supported proce
 <table width="90%">
 <tr valign="bottom">
 <th width="50%">Feature </th>
-<th >[Inheritance](../organizations/settings/work/inheritance-process-model.md)</th>
-<th >[Hosted XML](../organizations/settings/work/hosted-xml-process-model.md)</th>
-<th >[On-premises XML](on-premises-xml-process-model.md)</th>
+<th ><a href="../organizations/settings/work/inheritance-process-model.md" data-raw-source="[Inheritance](../organizations/settings/work/inheritance-process-model.md)">Inheritance</a></th>
+<th ><a href="../organizations/settings/work/hosted-xml-process-model.md" data-raw-source="[Hosted XML](../organizations/settings/work/hosted-xml-process-model.md)">Hosted XML</a></th>
+<th ><a href="on-premises-xml-process-model.md" data-raw-source="[On-premises XML](on-premises-xml-process-model.md)">On-premises XML</a></th>
 </tr>
-
 <tbody valign="top" align="center">
-
 <tr>
 <td align="left">WYSIWYG editing</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Create inherited custom processes</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td></td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Create custom process templates (see note 1)</td>
 <td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Inherit changes in system processes (Agile, Scrum, CMMI)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
-
 <tr>
 <td align="left">Updated process changes automatically apply to projects</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 </tr>
-
 <tr>
 <td align="left">Basic customizations supported (fields, workflow, work item types, backlog levels)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
-<td align="left">Advanced customizations supported (custom link types, global lists, global workflow, team fields)</td>
-<td> </td>
+<td align="left">Global lists</td>
+<td>Picklists</td>
 <td>(see note 2)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
-<td align="left">Update Microsoft field mappings using the [**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md) command-line tool</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects</td>
+<td align="left">Advanced customizations supported (custom link types, team fields, global worflow)</td>
 <td> </td>
 <td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
-<td align="left">Use the **witadmin** command-line tools to list information about projects</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
+<tr>
+<td align="left">Use the <a href="witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md" data-raw-source="[**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)"><strong>witadmin</strong> command-line tools</a> to edit projects</td>
+<td> </td>
+<td> </td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
 <tr>
 <td align="left">REST API (read)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">REST API (write)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
-
 </tbody>
 </table>
 
 **Notes:**
+
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
 
 <a id="choose-process-model" />
+
 ::: moniker range="azure-devops-2019"
+
 ## Choose the process model for your project collection 
-For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between **XML** (On-premises XML process model) and **Inheritance** (Inheritance process model), as shown in the following dialog. 
+
+For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you&#39;ll need to choose between <strong>XML</strong> (On-premises XML process model) and <strong>Inheritance</strong> (Inheritance process model), as shown in the following dialog. 
 
 > [!div class="mx-imgBorder"]  
 > ![Create Team Project Collection wizard, Collection Name dialog](_img/azd-2019/configure-new-collection-inheritance.png)   
@@ -179,6 +175,7 @@ To learn more about project collections, see [Manage project collections](/azure
 ::: moniker-end
 
 <a id="access-permissions"></a>
+
 ## Grant or restrict access to work tracking tools  
 
 You can grant or restrict access to select features and functions through the web portal. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
@@ -198,10 +195,10 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>Manage access </td>
 <td>
 <ul>
-<li>[About access levels](../organizations/security/access-levels.md)</li>
-<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)</li>
-<li>[Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md)</li>
-<li>[Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members)</li>
+<li><a href="../organizations/security/access-levels.md" data-raw-source="[About access levels](../organizations/security/access-levels.md)">About access levels</a></li>
+<li><a href="../organizations/accounts/add-team-members.md" data-raw-source="[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)">Add team members (Azure DevOps Services)</a></li>
+<li><a href="../organizations/security/change-access-levels.md" data-raw-source="[Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md)">Change access levels (on-premises deployments)</a></li>
+<li><a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members)">Add team members (on-premises deployments)</a></li>
 </ul>
 </td>
 </tr>
@@ -209,13 +206,13 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>Permissions   </td>
 <td>
 <ul>
-<li>[Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)</li>
-<li>[Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)</li>
-<li>[Work item query and folder permissions](../boards/queries/set-query-permissions.md)</li>
-<li>[Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)</li>
-<li>[Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)</li>
-<li>[Tagging permissions](../organizations/security/permissions.md#tags)</li>
-<li>[Test permissions](../organizations/security/permissions.md#project_test)</li>
+<li><a href="../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path" data-raw-source="[Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)">Area path permissions</a></li>
+<li><a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">Process permissions</a></li>
+<li><a href="../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder permissions](../boards/queries/set-query-permissions.md)">Work item query and folder permissions</a></li>
+<li><a href="../report/dashboards/dashboard-permissions.md#set-permissions" data-raw-source="[Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)">Dashboard permissions</a></li>
+<li><a href="../organizations/security/set-permissions-access-work-tracking.md#plan-permissions" data-raw-source="[Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)">Plan permissions</a></li>
+<li><a href="../organizations/security/permissions.md#tags" data-raw-source="[Tagging permissions](../organizations/security/permissions.md#tags)">Tagging permissions</a></li>
+<li><a href="../organizations/security/permissions.md#project_test" data-raw-source="[Test permissions](../organizations/security/permissions.md#project_test)">Test permissions</a></li>
 </ul>
 </td>
 </tr>
@@ -223,19 +220,23 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>Shared resources </td>
 <td>
 <ul>
-<li>[Alerts](../boards/queries/alerts-and-notifications.md)</li>
-<li>[Area paths](../organizations/settings/set-area-paths.md)</li>
-<li>[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)</li>
-<li>[Queries](../boards/queries/using-queries.md)</li>
-<li>[Tags](../boards/queries/add-tags-to-work-items.md)</li>
+<li><a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[Alerts](../boards/queries/alerts-and-notifications.md)">Alerts</a></li>
+<li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Area paths](../organizations/settings/set-area-paths.md)">Area paths</a></li>
+<li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)">Iteration paths</a></li>
+<li><a href="../boards/queries/using-queries.md" data-raw-source="[Queries](../boards/queries/using-queries.md)">Queries</a></li>
+<li><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Tags](../boards/queries/add-tags-to-work-items.md)">Tags</a></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
   
-::: moniker range=">= tfs-2013 <= azure-devops-2019"
+
+
+::: moniker range=">= tfs-2013 <=azure-devops-2019"
+
 <a id="test-experience"></a>
+
 ## Customize the test experience
 
 Several WITs support the test experience within the web portal **Test** pages and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
@@ -253,13 +254,17 @@ See the following resources for additional usage and customization information:
 ::: moniker-end
 
 <a id="person-name-field"></a>
+
 ## Change the pick list for a person-name field  
+
 To add values for fields associated with user accounts such as **Assigned To** add users to a security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to the server. These accounts are often synchronized with Active Directory or Azure Active Directory. See [Add AD/Azure AD users or groups to a built-in security group](../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
 ## Less common customizations   
+
 You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the project.  
 
 <a id="limits">  </a>
+
 ### Backlog and board limits (Hosted XML, On-premises XML) 
 
 To limit the display load time to acceptable parameters, the task board is restricted to a maximum of 1000 work items. For details, see [Process configuration XML element reference](xml/process-configuration-xml-element.md). 
@@ -267,13 +272,14 @@ To limit the display load time to acceptable parameters, the task board is restr
 You can increase this value up to a maximum of 1500 by specifying a value for the `workItemCountLimit` attribute of the **TaskBacklog** element. For details, see [Process configuration XML element reference](xml/process-configuration-xml-element.md#backlog_page). 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="800" >
-    . . .
-</TaskBacklog>
-```
+> ```XML
+> <TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="800" >
+>     . . .
+> </TaskBacklog>
+> ```
 
 <a id="assign-fields">  </a>
+
 ### Change field assignments (Hosted XML, On-premises XML) 
 
 You can change the work item fields that are used in calculating capacity, burndown charts, forecasting, and velocity. Any change you make to one of the default assignments should correspond to a change made to the WIT used to define and capture information for that value. 
@@ -292,6 +298,7 @@ The fields you assign are used by the following tools:
 
 
 ## Additional options 
+
 Do you want to customize your tools in a way that's not supported?  
 
 Here are a few options available to you:  

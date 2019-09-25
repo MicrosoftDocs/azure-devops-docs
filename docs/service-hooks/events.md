@@ -7,8 +7,8 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/04/2016
 ---
 
@@ -83,7 +83,7 @@ A build completes
     "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
   },
   "resource": {
-    "uri": "vstfs:///pipelines/Build/2",
+    "uri": "vstfs:///Build/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",

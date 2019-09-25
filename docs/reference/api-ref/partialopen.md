@@ -32,7 +32,7 @@ Opens this work item for modification by loading only the latest revision of thi
 <h4>C#</h4>
 </td>
 <td>
-```public void PartialOpen()```
+<code>public void PartialOpen()</code>
 </td>
 </tr>
 
@@ -41,8 +41,8 @@ Opens this work item for modification by loading only the latest revision of thi
 <h4>C++</h4>
 </td>
 <td>
-```public:```<br/>
-```void PartialOpen()```
+<code>public:</code><br/>
+<code>void PartialOpen()</code>
 </td>
 </tr>
 
@@ -51,7 +51,7 @@ Opens this work item for modification by loading only the latest revision of thi
 <h4>F#</h4>
 </td>
 <td>
-```member PartialOpen : unit -> unit```
+<code>member PartialOpen : unit -&gt; unit</code>
 </td>
 </tr>
 
@@ -60,7 +60,7 @@ Opens this work item for modification by loading only the latest revision of thi
 <h4>JScript</h4>
 </td>
 <td>
-```public void PartialOpen()```
+<code>public void PartialOpen()</code>
 </td>
 </tr>
 
@@ -69,8 +69,8 @@ Opens this work item for modification by loading only the latest revision of thi
 <h4>VB</h4>
 </td>
 <td>
-```'Declaration```<br/>
-```Public Sub PartialOpen```
+<code>&#39;Declaration</code><br/>
+<code>Public Sub PartialOpen</code>
 </td>
 </tr>
 </table>

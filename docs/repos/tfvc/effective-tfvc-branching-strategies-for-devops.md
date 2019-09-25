@@ -4,7 +4,7 @@ description: Learn to manage branching strategies with a DevOps mindset in Team 
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.date: 04/25/2018
 ms.author: sdanie
@@ -119,7 +119,7 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 - Avoid using **cherry-picking** to get your code to production
 - Do not attempt to solve **people** or **process** problems with tools
 
-#Reference information
+# Reference information
 - [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
 - [Team Foundation Version Control (TFVC)](overview.md)

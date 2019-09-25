@@ -7,8 +7,8 @@ description: Get builds programmatically using the REST APIs for Team Foundation
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -37,16 +37,16 @@ To modify or delete an existing workspace, you must be the owner or have the glo
 
 ## Parameters
 
-|**Argument**|**Description**|
-|---|---|
-|*workspacename*|Specifies a name for the workspace which to create, edit, delete, or display information about.|
-|*workspaceowner*|Specifies a username for the workspace. This parameter is required when the workspace owner is not the person performing the command.|
-|*computername*|Provides a value to the **/computer** option.|
-|*comment*|Provides a value to the **/comment** option.|
-|*@commentfile*|Specifies the path of a file where the comment should be read.|
-|*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
-|*TeamProjectCollectionUrl*|The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, http://myserver:8080/tfs/DefaultCollection).|
-|*ownername*|Provides a value to the **/newowner** option.|
+|        **Argument**        |                                                                                         **Description**                                                                                         |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      *workspacename*       |                                                 Specifies a name for the workspace which to create, edit, delete, or display information about.                                                 |
+|      *workspaceowner*      |                              Specifies a username for the workspace. This parameter is required when the workspace owner is not the person performing the command.                              |
+|       *computername*       |                                                                          Provides a value to the **/computer** option.                                                                          |
+|         *comment*          |                                                                          Provides a value to the **/comment** option.                                                                           |
+|   <em>@commentfile</em>    |                                                                 Specifies the path of a file where the comment should be read.                                                                  |
+|         *username*         |                                    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                    |
+| *TeamProjectCollectionUrl* | The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, <http://myserver:8080/tfs/DefaultCollection>). |
+|        *ownername*         |                                                                          Provides a value to the **/newowner** option.                                                                          |
 
 |**Option**|**Description**|
 |---|---|
@@ -73,7 +73,7 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 Before you can add files to the version control server or check out items on the server in order to edit them, you must create a workspace or associate an existing one with the current directory. For more information, see [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md).
 
-To make the current directory a working folder for an existing workspace on your computer, type `tf workspace` *workspacename*, where *workspacename* is the name of the existing workspace. The **Edit Workspace** dialog box appears. Click **click here to enter a new working folder**, type the server path for which you want to map the current directory in the **Source Control Folder **box, type the current directory in the **Local Folder** box, and click **OK**.
+To make the current directory a working folder for an existing workspace on your computer, type `tf workspace` *workspacename*, where *workspacename* is the name of the existing workspace. The **Edit Workspace** dialog box appears. Click **click here to enter a new working folder**, type the server path for which you want to map the current directory in the <strong>Source Control Folder <strong>box, type the current directory in the **Local Folder</strong> box, and click **OK</strong>.
 
 When you create a new workspace, you can specify a *template workspace* as part of the **/new** option. When you specify a template workspace, Team Foundation creates a new workspace on the current computer, sets the owner to the current owner, and replicates the following workspace properties into the new workspace from the template workspace: mappings and comment. If no name is specified, the system uses a name based on the current computer name. When you create a workspace using a template, Team Foundation does not retrieve the files to which it maps from the server. Use the [Get Command](get-command.md) to synchronize the new workspace with the latest version on the server.
 
@@ -86,6 +86,9 @@ Single folder mapping within a version control hierarchy is useful because it li
 ### Deleting a Workspace
 
 If you delete a workspace that contains pending changes, Team Foundation cancels the pending changes as part of the delete process. Deleting a workspace does not delete the files and folders on the client computer that were in that workspace.
+
+> [!NOTE]
+> Commands run manually require the `/noprompt` option to bypass user acknowledgement. Be careful if using PowerShell's `Start()` method to run commands, as this option can be automatically set.
 
 ### Editing a Workspace
 

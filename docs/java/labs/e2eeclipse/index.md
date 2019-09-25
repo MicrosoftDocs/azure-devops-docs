@@ -8,7 +8,7 @@ ms.custom: java
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.date: 01/22/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -28,6 +28,9 @@ In this scenario, you will open the running MyShuttle application and discover a
 
 This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private Azure DevOps Services agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
 
+> [!NOTE]
+> The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
+
 ## Install the Exploratory Testing Extension for Chrome
 
 In this task you will install the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) into Chrome.
@@ -46,7 +49,8 @@ In this task you will install the [Exploratory Testing extension](https://market
 
     ![Select the Team to Connect to](../_img/e2eeclipse/select-team.png)
 
-    > **Note**: Your team name may be different
+    > [!NOTE]
+    > Your team name may be different
 
 ## Configure Branch Policies
 
@@ -69,7 +73,8 @@ In this task you will enforce quality on the master branch by creating branch po
 
     ![Policy configuration](../_img/e2eeclipse/policy.png)
 
-    > **Note**: You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
+    > [!NOTE]
+    > You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
 
 ## Log a Bug using the Exploratory Test Extension
 
@@ -79,7 +84,8 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Start a test sessions](../_img/e2eeclipse/start-test-session.png)
 
-    > **Note**: The test extension is now recording all of your interactions. You can see the test icon beaker has a green dot indicating that a session is currently running.
+    > [!NOTE]
+    > The test extension is now recording all of your interactions. You can see the test icon beaker has a green dot indicating that a session is currently running.
 
 1. Enter `http://localhost:8081/myshuttledev` in the toolbar to navigate to the application. Enter `fred` for the username and `fredpassword` for the password and click Log In.
 
@@ -105,7 +111,8 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Log the Bug](../_img/e2eeclipse/log-bug.png)
 
-    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
+    > [!NOTE]
+    > All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
 
 1. Once the bug has been created, click the Stop button in the Test Extension toolbar to end the test session.
 
@@ -139,7 +146,8 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![Confirm the bug is correctly assigned and in Azure DevOps Services](../_img/e2eeclipse/findbug.png)
 
-    > **Note**: If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
+    > [!NOTE]
+    > If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
 
 5. Create a new branch
 
@@ -189,15 +197,18 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![Build is running to validate the PR](../_img/e2eeclipse/pr-overview.png)
 
-    > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
-
-    > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
+    > [!NOTE]
+    > If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
+    >
+    > [!NOTE]
+    > You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 
 14. Click on the Files tab to open the file compare. Note the changes.
 
     ![PR File Compare](../_img/e2eeclipse/PR-file-compare.png)
 
-    > **Note**: You can comment on code or files in the PR and have conversations with the team throughout the review process.
+    > [!NOTE]
+    > You can comment on code or files in the PR and have conversations with the team throughout the review process.
 
 15. Click Approve to approve the PR.
 

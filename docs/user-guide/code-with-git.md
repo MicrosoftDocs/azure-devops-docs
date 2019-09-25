@@ -26,8 +26,8 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. Install one of the following Git command-line tools:
 
-  - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows).
-  - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md)
+   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows).
+   - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md)
 
 ## Clone the repo to your computer
 
@@ -35,21 +35,21 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the project for your organization, and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
-  ![Screenshot of project with Repos highlighted](_img/project-select-repos-vert.png)
+   ![Screenshot of project with Repos highlighted](_img/project-select-repos-vert.png)
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
   
-  ![Screenshot of project with Copy icon highlighted](_img/code-with-git-clone-repo.png)
+   ![Screenshot of project with Copy icon highlighted](_img/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
-  ```
-  git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
-  ```
+   ```
+   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+   ```
   
-  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo. This copy is put into a new folder for you to work with.
+   A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo. This copy is put into a new folder for you to work with.
 
-  Keep this command window open (you'll use it in the following steps).
+   Keep this command window open (you'll use it in the following steps).
 
 ::: moniker-end
 
@@ -59,17 +59,17 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
 
-  ![Screenshot of project in web browser, with Copy icon highlighted](_img/code-with-git-clone-repo-prev.png)
+   ![Screenshot of project in web browser, with Copy icon highlighted](_img/code-with-git-clone-repo-prev.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
-  ```
-  git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
-  ```
+   ```
+   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
+   ```
   
-  A copy of the code downloads into a new folder in Git. The code includes all of your [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo.
+   A copy of the code downloads into a new folder in Git. The code includes all of your [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo.
 
-  Keep the command window open (use it in the following steps).
+   Keep the command window open (use it in the following steps).
 
 ::: moniker-end
 
@@ -81,24 +81,24 @@ In the following steps, we make a change to the files on your computer, commit t
 
 2. In the Git command window, go to the `contoso-demo` directory by entering the following command:
 
-  ```
-  cd contoso-demo
-  ```
+   ```
+   cd contoso-demo
+   ```
 
 3. Commit your changes by entering the following commands in the Git command window:
 
-  ```
-  git add .
-  git commit -m "My first commit"
-  ```
+   ```
+   git add .
+   git commit -m "My first commit"
+   ```
 
-  The `git add .` command stages any new or changed files, and `git commit -m` creates a commit with the specified commit message.
+   The `git add .` command stages any new or changed files, and `git commit -m` creates a commit with the specified commit message.
 
 4. Push your changes to the Git repo on the server. Enter the following command into the Git command window:
 
-  ```
-  git push
-  ```
+   ```
+   git push
+   ```
 
 ## View history
 
@@ -106,11 +106,11 @@ In the following steps, we make a change to the files on your computer, commit t
 
 1. Switch back to the web portal, and select **History** from the Code page to view your new commit.
 
-  ![Screenshot of web portal, with History highlighted](_img/code-history-vert.png)
+   ![Screenshot of web portal, with History highlighted](_img/code-history-vert.png)
 
 2. Switch to the **Files** tab, and select the README file to view your changes.
 
-  ![Screenshot of README file](_img/first-edit-readme-file.png)
+   ![Screenshot of README file](_img/first-edit-readme-file.png)
 
 ::: moniker-end
 
@@ -118,11 +118,11 @@ In the following steps, we make a change to the files on your computer, commit t
 
 1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. Two commits appear: the first commit, where the README and .gitignore were added upon repo creation, and the commit you just made.
 
-  ![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
+   ![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
 2. Switch to the **Files** tab, and select the README file to view your changes.
 
-  ![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
+   ![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
 
 ::: moniker-end
 
@@ -131,7 +131,3 @@ In the following steps, we make a change to the files on your computer, commit t
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 
-## Related articles
-
-- [Plan & track work](plan-track-work.md)
-- [Learn more about working with a Git repo](../repos/git/index.md).

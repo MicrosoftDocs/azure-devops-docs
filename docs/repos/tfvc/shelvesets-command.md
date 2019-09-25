@@ -26,6 +26,7 @@ To use the **shelvesets** command, you must the have **Read** permission and the
 
     tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
 ## Parameters<table>
+
 |**Argument**|**Description**|
 |---|---|
 |*ownername*|Provides a value such as * or DOMAIN\john to the **/owner** option.|

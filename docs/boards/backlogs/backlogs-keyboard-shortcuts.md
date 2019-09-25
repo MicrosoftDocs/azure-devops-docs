@@ -20,8 +20,10 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)] 
 
 ::: moniker range="tfs-2015"
+
 > [!NOTE]   
 > Requires TFS 2015.2 or later version.
+
 ::: moniker-end
 
 

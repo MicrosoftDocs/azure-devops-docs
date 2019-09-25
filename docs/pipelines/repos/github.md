@@ -8,8 +8,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.custom: seodec18
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -137,13 +136,16 @@ There are 3 authentication types for granting Azure Pipelines access to your Git
 
 | Authentication type            | Builds run using              | Works with [GitHub Checks](https://developer.github.com/v3/checks/) |
 |--------------------------------|-------------------------------|-----|
-| 1. GitHub App                  | The Azure Pipelines identity  | Yes |
-| 2. OAuth                       | Your personal GitHub identity | No  |
-| 3. Personal access token (PAT) | Your personal GitHub identity | No  |
+| 1. [GitHub App](#github-app-authentication) | The Azure Pipelines identity  | Yes |
+| 2. [OAuth](#oauth-authentication)           | Your personal GitHub identity | No  |
+| 3. [Personal access token (PAT)](#personal-access-token-pat-authentication) | Your personal GitHub identity | No  |
 
 ### GitHub app authentication
 
-The Azure Pipelines GitHub App is the **recommended** authentication type. By installing it in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
+>[!NOTE]
+>The Azure Pipelines GitHub App is the **recommended** authentication type for continuous integration pipelines. For release pipelines that are triggered by changes to a GitHub repository, use [OAuth](#oauth-authentication) or [personal access token](#personal-access-token-pat-authentication) authentication.
+
+By installing the GitHub App in your GitHub account or organization, your pipeline can run without using your personal GitHub identity. Builds and GitHub status updates will be performed using the Azure Pipelines identity. The app works with [GitHub Checks](https://developer.github.com/v3/checks/) to display build, test, and code coverage results in GitHub.
 
 #### Install the GitHub App
 
@@ -304,6 +306,8 @@ You can have a pipeline triggered when the following events occur in GitHub:
 
 ### CI triggers
 
+Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
+
 # [YAML](#tab/yaml)
 
 YAML builds are configured by default with a CI trigger on all branches.
@@ -320,6 +324,8 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`). See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
@@ -353,6 +359,9 @@ trigger:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
+
+>[!IMPORTANT]
+>When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 #### Tags
 
@@ -457,11 +466,11 @@ For example, you want your build to be triggered by changes in master and most, 
 
 # [YAML](#tab/yaml)
 
-PR triggers enable you to start a pipeline when a PR is created or updated.
+Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request.
 
 > [!NOTE]
-> New pipelines automatically override YAML PR triggers with a setting in the UI.
-> To opt into YAML-based control, you must disable this setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
+> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in pipelines settings by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
@@ -476,10 +485,19 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
 
-You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
-You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+```yaml
+pr:
+  branches:
+    include:
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
+```
+
+>[!IMPORTANT]
+>When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`). See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
 You can specify branches to include and exclude. For example:
 
@@ -625,7 +643,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ### Overriding YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the classic editor, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
+PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
 ![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
@@ -708,9 +726,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same GitHub organization as the Git repo specified above.
+  - Contained in the same GitHub organization as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
 
 #### Authenticated submodules
@@ -737,12 +755,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -843,8 +861,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 You can configure the `clean` setting in the [Checkout](..//yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -884,17 +901,16 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
  ![GitHub options](_img/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -902,8 +918,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
----
-
+* * *
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
@@ -958,11 +973,11 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
 1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 
-1. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
-  For the status check, select the name of your pipeline in the **Status checks** list.
+   For the status check, select the name of your pipeline in the **Status checks** list.
 
-  ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
+   ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
 
 >[!IMPORTANT]
 >If your pipeline doesn't show up in this list, please ensure the following:

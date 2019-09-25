@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/22/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Manage Organizations  
+# Manage organizations  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -27,13 +27,12 @@ Sign up for an organization, add users, and manage permissions and access.
 ## 5-minute quickstarts
 
 * [Create your organization or project collection](create-organization.md)
-* [Try extensions for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Try Azure Test Plans for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add a team admin](../settings/add-team-administrator.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
 ## Step-by-step tutorials
 
-* [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
 * [Change individual permissions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Grant or restrict permissions](../security/restrict-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
@@ -48,17 +47,18 @@ Sign up for an organization, add users, and manage permissions and access.
 
 * [Set your preferences](../settings/set-your-preferences.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage your organization
-    * [Change your organization owner](change-organization-ownership.md)
+    * [Change your organization Owner](change-organization-ownership.md)
     * [Rename your organization](rename-organization.md)
     * [Delete your organization](delete-your-organization.md)
     * [Recover your organization](recover-your-organization.md)
     * [Sign in with different credentials](../projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Change organization location (region)](change-organization-location.md)
     * [Add privacy policy URL](add-privacy-policy-url.md)
+    * [Change time zone](change-time-zone.md)
 * Manage access to your organization
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)
-    * [Manage conditional access](manage-conditional-access.md)
+    * [Manage Conditional Access](manage-conditional-access.md)
     * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
     * [Authenticate with personal access tokens](use-personal-access-tokens-to-authenticate.md)
     * [Revoke user PATs - for admins](admin-revoke-user-pats.md)
@@ -68,16 +68,17 @@ Sign up for an organization, add users, and manage permissions and access.
     * Access with Azure AD
         * [Add Azure AD group to Azure DevOps group](manage-azure-active-directory-groups.md)
         * [Add Azure DevOps users to Azure AD](add-users-to-azure-ad.md)
-        * [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
         * [Delete Azure DevOps users connected to Azure AD](delete-users-from-services-azure-ad.md)
+        * [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
+        * [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
+        * [Change your Azure AD tenant connection](change-azure-ad-connection.md)
+        
 * Manage extensions
-    * [Install extensions](../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
-    * [Assign paid extensions access](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+    * [Install extensions](../../marketplace/install-extension.md)
     * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage group-based licensing
-    * [Assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
-    * [Migrate to group-based resource management](migrate-to-group-based-resource-management.md)
+    * [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
     * [Remove direct assignments](remove-direct-assignments.md)
 
 ## Reference
@@ -90,5 +91,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Get started using Azure DevOps](../../get-started/index.md)
+- [Marketplace & extensibility](../../marketplace-extensibility/index.md)

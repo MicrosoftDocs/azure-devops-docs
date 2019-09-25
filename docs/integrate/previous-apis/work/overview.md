@@ -7,8 +7,8 @@ description: Work with work tooling programmatically using the REST APIs for Tea
 ms.assetid: fe538cca-d062-445e-8dc2-852a6758f5c3
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

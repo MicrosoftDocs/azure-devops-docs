@@ -46,13 +46,12 @@ To use the **unshelve** command, you must have the **Read** permission set to **
 <td><p><i>Itemspec</i></p></td>
 <td><p>Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.</p>
 <p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p>
->**Note:**  
->You can specify more than one *Itemspec* argument.
+&gt;<strong>Note:</strong><br/>&gt;You can specify more than one <em>Itemspec</em> argument.
 </td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName&lt;/i.</p></td>
 </tr>
 </tbody>
 </table>

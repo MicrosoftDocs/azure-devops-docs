@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 02/12/18
 monikerRange: '>= tfs-2015'
 ---
@@ -76,13 +76,11 @@ The following permissions are defined for pipelines. All of these can be set at 
 <p />
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
-**Project Collection Administrators**, **Project Administrators**, and
-**Build Administrators** are given all of the above permissions by
+<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
+<strong>Build Administrators</strong> are given all of the above permissions by
 default.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
-
-* By default, contributors in a project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
 
 * In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
@@ -135,12 +133,12 @@ The following permissions are defined for releases. The scope column explains wh
 <p />
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
-**Project Collection Administrators**, **Project Administrators**, and
-**Release Administrators** are given all of the above permissions by
-default. **Contributors** are given all permissions except
-**Administer release permissions**. **Readers**, by default,
-are denied all permissions except **View release pipeline** and
-**View releases**.
+<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
+<strong>Release Administrators</strong> are given all of the above permissions by
+default. <strong>Contributors</strong> are given all permissions except
+<strong>Administer release permissions</strong>. <strong>Readers</strong>, by default,
+are denied all permissions except <strong>View release pipeline</strong> and
+<strong>View releases</strong>.
 
 ## Task group permissions
 Task group permissions follow a hierarchical model.

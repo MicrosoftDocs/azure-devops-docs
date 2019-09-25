@@ -52,7 +52,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Open your Kanban board](/azure/devops/boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
@@ -64,7 +64,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> [!TIP]    
 	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
-0. Select **Features** or **Epics** from the backlog selector menu . 
+1. Select **Features** or **Epics** from the backlog selector menu . 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose portfolio backlog level, Features or Epics](_img/features-epics/select-portfolio-level.png) 
@@ -108,7 +108,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Choose another team from the project menu](/azure/devops/boards/sprints/_img/capacity/vso-team-selector.png)  
 
-0. Your Kanban board for the selected portfolio backlog displays.  
+1. Your Kanban board for the selected portfolio backlog displays.  
 
 	![Kanban board, Agile template](_img/features-epics/features-board-standard.png)   
 

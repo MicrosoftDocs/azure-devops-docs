@@ -1,11 +1,11 @@
 - name: Extend Analytics with OData (Preview)
-  href: index.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: index.md
 - name: Quick reference
-  href: quick-ref.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: quick-ref.md
 - name: Query work item data 
-  href: wit-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: wit-analytics.md
 - name: "Project & organization-scoped queries" 
-  href: account-scoped-queries.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
+  href: account-scoped-queries.md
 - name: Tutorials
   items:
   - name: Query aggregate data
@@ -22,18 +22,10 @@
     href: analytics-recipes.md
   - name: Create an Analytics widget
     href: example-analytics-widget.md  
-- name: Concepts
+- name: Reference
   items:
   - name: Query guidelines
     href: odata-query-guidelines.md  
-- name: How-to Guides
-  items:
-  - name: Install the Analytics extension (on-premises)
-    href: ../dashboards/analytics-extension.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
-  - name: Set permissions (Security) 
-    href: ../powerbi/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
-- name: Reference
-  items:
   - name: Data model  
     href: data-model-analytics-service.md
   - name: "Supported functions & clauses"

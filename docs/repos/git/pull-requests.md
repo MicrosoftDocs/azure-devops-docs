@@ -32,15 +32,15 @@ New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) ab
 
 1. To view pull requests in a specific repository in a project, [navigate](../../project/navigation/go-to-project-repo.md) to that project in the web portal and select **Repos**, **Pull requests**.
 
-  ![View your pull requests](_img/repos-navigation/repos-pull-requests.png)
+   ![View your pull requests](_img/repos-navigation/repos-pull-requests.png)
 
-1. Verify that the correct repository is selected.
+2. Verify that the correct repository is selected.
 
-  ![Select repository](_img/repos-navigation/pull-requests-breadcrumb.png)
+   ![Select repository](_img/repos-navigation/pull-requests-breadcrumb.png)
 
-1. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
+3. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
-  ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
+   ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
 
 You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
@@ -236,15 +236,15 @@ Add reviewers to your pull request.
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers-new-nav.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers-new-nav.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
-  ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+   ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
 
 ::: moniker-end
 
@@ -254,15 +254,15 @@ Add reviewers to your pull request.
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-reviewers.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
-  ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
+   ![Add pull request reviewer](_img/pull-requests/add-pr-reviewer.png)
 
 ::: moniker-end
 
@@ -277,11 +277,11 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items-new-nav.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-work-items-new-nav.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
 This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
@@ -294,11 +294,11 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-  ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
+   ![Pull request overview](_img/pull-requests/pull-request-overview-work-items.png)
 
-1. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
+2. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Work Items** area.
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the ![remove icon](_img/pull-requests/pr_remove_icon.png) that appears when you hover over the work item. 
 This only removes the link between a work item to a pull request; links created in the branch or from commits stay in the work item.
@@ -491,17 +491,17 @@ Subscribe to email alerts to get notified when changes are made to your pull req
 
    ![open up the administrative area of the Azure DevOps Services web portal for your project](_img/pull-requests/gear_icon_settings.png) 
 
-1. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+2. Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
 
-  ![Notifications](./_img/pull-requests/pr-notifications.png)
+   ![Notifications](./_img/pull-requests/pr-notifications.png)
 
-1. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
+3. To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
 
-  ![Notifications](./_img/pull-requests/view-pr-notifications.png)
+   ![Notifications](./_img/pull-requests/view-pr-notifications.png)
 
-1. To opt-out of a notification, set the **State** to **Off**.
+4. To opt-out of a notification, set the **State** to **Off**.
 
-  ![Notifications](./_img/pull-requests/opt-out-notifications.png)
+   ![Notifications](./_img/pull-requests/opt-out-notifications.png)
 
 ::: moniker-end
 

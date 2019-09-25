@@ -26,39 +26,36 @@ You can publish Python packages produced by your build to:
 
 To publish Python packages produced by your build, you'll use [twine](https://pypi.org/project/twine/), a widely used tool for publishing Python packages. This guide covers how to do the following in your pipeline:
 
-0. Install `twine` on your build agent
-0. Authenticate `twine` with your Azure Artifacts feeds
-0. Use a custom task that invokes `twine` to publish your Python packages
+1. Install `twine` on your build agent
+2. Authenticate `twine` with your Azure Artifacts feeds
+3. Use a custom task that invokes `twine` to publish your Python packages
 
 ## Install twine 
 
 First, you'll need to run `pip install twine` to ensure the build agent has `twine` installed.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 - script: 'pip install twine'
 ```
 
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 ![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
 
 * Type
 
- ```
-inline
-```
+  ```
+  inline
+  ```
 * Script
 
- ```
-pip install twine
-```
+  ```
+  pip install twine
+  ```
 
----
-
+* * *
 ## Authenticate Azure Artifacts with twine
 
 To use `twine` to publish Python packages, you first need to set up authentication. The [Python Twine Authenticate](../tasks/package/twine-authenticate.md) task stores your authentication credentials in an environment variable (`PYPIRC_PATH`). `twine` will reference this variable later.

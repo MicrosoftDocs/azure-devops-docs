@@ -1,12 +1,9 @@
 - name: Work items
-  href: index.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-- name: Overview
-
-  items:
-  - name: About work items
-    href: about-work-items.md
-  - name: Quick reference
-    href: quick-ref.md
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: About work items
+  href: about-work-items.md
+- name: Quick reference
+  href: quick-ref.md
 - name: Quickstarts
   items:
   - name: "View & add work items"
@@ -14,26 +11,26 @@
     href: view-add-work-items.md 
   - name: "Add & update a work item"    
     displayName: follow, update status, Discussion  
-    href: ../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/add-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Drive Git development
     displayName: create branch, new branch 
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Follow work
     href: follow-work-items.md
   - name: Manage bugs
-    href: ../backlogs/manage-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/manage-bugs.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Manage issues
-    href: ../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: "Move, change, or delete"
-    href: ../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Link work items
-    href: ../backlogs/add-link.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/add-link.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Bulk modify (web)
-    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Copy/clone 
-    href: ../backlogs/copy-clone-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../backlogs/copy-clone-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Choose a process
@@ -44,7 +41,7 @@
     - name: Agile workflow
       href: guidance/agile-process-workflow.md
   - name: Basic process guidance
-    href: ../get-started/track-issues-tasks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../get-started/track-issues-tasks.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Scrum process guidance
     href: guidance/scrum-process.md
     items:
@@ -96,7 +93,7 @@
   - name: Agile glossary
     href: agile-glossary.md
   - name: Linking & traceability
-    href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
+    href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md
 - name: Samples
@@ -106,27 +103,32 @@
 - name: How-to Guides
   items:
   - name: "Use @mentions in discussions" 
-    href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "Use #ID to link to work items"
-    href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Add tags to work items
-    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
+    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Share information  
-    href: ../queries/share-plans.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    displayname: plan, plans, attachments, link, email, rich text
+    href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayName: rich text, attach files, storyboard, social tools
   - name: Go mobile
-    href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
     displayName: export, cvs 
   - name: Delete test artifacts
-    href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
+  - name: Manage process templates
+    href: guidance/manage-process-templates.md
+  - name: View deployment stages on work item form
+    href: work-item-deployments-control.md
 - name: Reference
   items:
   - name: Work item form controls
@@ -134,7 +136,7 @@
   - name: Keyboard shortcuts 
     href: work-item-form-keyboard-shortcuts.md
   - name: Link types 
-    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
   - name: Field reference

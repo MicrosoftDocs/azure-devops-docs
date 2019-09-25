@@ -1,7 +1,11 @@
 - name: Process Templates
-  href: index.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
+  href: index.md
+- name: Choose a process 
+  href: ../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Manage process templates
+  href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Customize a process template
-  href: customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  href: customize-process.md
 - name: Reference
   items:
     - name: Process template XML elements

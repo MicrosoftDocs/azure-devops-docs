@@ -18,11 +18,11 @@ ms.date: 10/17/17
 
 If your team has completed multiple sprints, you can forecast release and product completion dates and plan future projects more accurately by reviewing the velocity report. Based on the velocity of previous sprints that the report illustrates, you can accomplish the following goals:  
   
--   Track how much effort your team has reported as complete for each sprint.  
+- Track how much effort your team has reported as complete for each sprint.  
   
--   Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.  
+- Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.  
   
- You can access similar information from the [velocity chart](../guidance/team-velocity.md) provided in the web portal.  
+  You can access similar information from the [velocity chart](../guidance/team-velocity.md) provided in the web portal.  
   
 > [!NOTE]
 >  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  

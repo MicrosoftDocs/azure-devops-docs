@@ -5,8 +5,8 @@ ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -36,9 +36,9 @@ However, if you have workflows that publish packages with newer binaries without
 This prevents invalid packages from entering your development and build environments.
 However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.
 
-### NuGet 3.x is recommended
+### NuGet 4.8+ is recommended
 
-[!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
+[!INCLUDE [nuget-recommended-version](../_shared/nuget/nuget-recommended-version.md)]
 
 ### Authentication and authorization
 

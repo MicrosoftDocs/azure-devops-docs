@@ -1,6 +1,6 @@
 ```YAML
-# Azure File Copy
-# Copy files to Azure blob or VM(s)
+# Azure file copy
+# Copy files to Azure Blob Storage or virtual machines
 - task: AzureFileCopy@2
   inputs:
     sourcePath: 

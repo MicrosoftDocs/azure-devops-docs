@@ -9,7 +9,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 ms.date: 09/28/2017
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops-2019'
 ---
 
 # About SharePoint integration  
@@ -42,6 +42,7 @@ If you are running TFS 2017 or earlier and want to configure your integration wi
 
 
 <a id="compat" />
+
 ## TFS-SharePoint version compatibility  
 
 > [!IMPORTANT]  
@@ -58,7 +59,7 @@ TFS 2013 | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 201
 TFS 2012 | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)<br/>Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows SharePoint Services 3.0
 TFS 2010 | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows SharePoint Services 3.0
 
-### Authentication
+## Authentication
 
 NTLM is the recommended authentication provider. Team Foundation Server Extensions for SharePoint Products doesn't support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic authentication to move to claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS supports only NTLM-based claims.
 
@@ -69,19 +70,19 @@ You can configure the TFS extension for SharePoint Products on your SharePoint s
 >
 > Here are your main options:
 > 
-> -	You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
+> - You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
 > - You can use the Team Foundation Server extensions for SharePoint Products configuration wizard to install SharePoint Foundation 2013 on a different server from the one running Team Foundation Server.
 > - You can use SharePoint Server. If you use the Enterprise edition of SharePoint Server, you must configure it for dashboard compatibility.
 > - You can use a different version of SharePoint Foundation than the one that ships with TFS.
 
-### Dashboard requirements
+## Dashboard requirements
 
 TFS contains dashboards that use SharePoint Products features to display team data. The dashboards that are available to you depend on the version of SharePoint Products you use:
 
 - If you use any supported Enterprise edition of SharePoint Server, you get five dashboards that are based on Microsoft Excel.
 - If you use any other SharePoint Products (including the Standard editions of SharePoint Server), you get two dashboards that are based on SQL Server Reporting Services.
 
-### SharePoint hardware requirements
+## SharePoint hardware requirements
 
 If you install SharePoint Products, you must have more robust hardware than what is listed in the preceding table. For example, SharePoint Foundation 2013 requires a 64-bit, four-core CPU and a base minimum of 8 GB of system memory. If you install SharePoint 2013 on a server that's also running SQL Server, SharePoint recommends that you have 24 GB of system memory.
 
@@ -92,8 +93,8 @@ For complete SharePoint hardware requirements, see the following articles:
 * [Hardware and software requirements (SharePoint Server 2010)](https://technet.microsoft.com/library/cc262485(v=office.14).aspx)
 
 
-
 ## TFS 2018, Azure DevOps Server 2019, and later versions
+
 Starting with TFS 2018, we no longer offer the TFS Extension for SharePoint. Additionally, we won't support TFS 2017 integration with SharePoint 2016 (the TFS Extension for SharePoint only supports Sharepoint 2013 and earlier versions). TFS 2017 and earlier versions will continue to work with their supported versions of SharePoint. For more information, read [Discontinue TFS 2017 (and earlier versions) SharePoint integration](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 
 **If you are upgrading to TFS 2018 from a previous version configured to integrate with SharePoint 2010 or 2013**, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load. For more information, read [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).

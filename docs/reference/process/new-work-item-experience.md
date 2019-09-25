@@ -24,8 +24,8 @@ ms.date: 03/20/2018
 Work items have received a facelift. To provide a fresher, more modern experience to tracking work, we've replaced our "old and clunky" form. Along with the noticeable responsive form layout, with the nre form you now have access to these features:
 
 - **Discussion control** with a discussion indicator in the banner that summarizes the number of comments in the discussion and from which you can quickly jump to the discussion and add your comments; this control also supports:
-	- **@mention** which allows you to quickly add team members to receive an email notification with your comments and a link to the work item in which you mentioned them.
-	- **#ID** which provides a quick way to create links to other work items within the Discussion control 
+  - <strong>@mention</strong> which allows you to quickly add team members to receive an email notification with your comments and a link to the work item in which you mentioned them.
+  - **#ID** which provides a quick way to create links to other work items within the Discussion control 
 - **Related Work control** that provides a quick method to link to and view linked work items 
 - **Development control** where you're able to engage with code changes, pull requests, and builds through interactive experiences as described in [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - **History page** with improved readability and with indicators for important changes such as reassignment, change of state, discussion comment, and more 
@@ -67,7 +67,7 @@ Use the new Discussion section to add and review comments made about the work be
 
 Click the ![Discussions icon](../../boards/_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../../boards/_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
-Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Within the discussion section, you can use the [<strong>@mention</strong> control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 <img src="../../boards/backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
@@ -92,7 +92,7 @@ When you switch, all forms displayed through the web portal for all work item ty
 As this switch is set on a per-user basis, other users will continue to see the old form until they also choose to switch.  
 
 <a id="switch-back">  </a> 
-###Switch back to the old form 
+### Switch back to the old form 
 
 If your admin has enabled opt-in to support switch back. Simply choose the ![](../../_img/icons/actions-icon.png) actions icon to open the context menu to switch back to the old layouts.  
 

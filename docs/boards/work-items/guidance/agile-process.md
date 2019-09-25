@@ -181,7 +181,7 @@ The project administrator for each project [defines area and iteration paths](..
 <tr>
 <td><p>Bug Triage</p></td>
 <td><p>Lists all active bugs that are not assigned to a team member.</p>
-<p>The [Triage Workbook references](https://msdn.microsoft.com/library/dd380707.aspx) this query. </p></td>
+<p>The <a href="https://msdn.microsoft.com/library/dd380707.aspx" data-raw-source="[Triage Workbook references](https://msdn.microsoft.com/library/dd380707.aspx)">Triage Workbook references</a> this query. </p></td>
 </tr>
 <tr>
 <td><p>Completed Tasks</p></td>
@@ -194,7 +194,7 @@ The project administrator for each project [defines area and iteration paths](..
 <tr>
 <td><p>Open Issues</p></td>
 <td><p>Lists all issues under the specified iteration path that are not closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.</p>
-<p>The [Issues Workbook](https://msdn.microsoft.com/library/dd380707.aspx) references this query. </p></td>
+<p>The <a href="https://msdn.microsoft.com/library/dd380707.aspx" data-raw-source="[Issues Workbook](https://msdn.microsoft.com/library/dd380707.aspx)">Issues Workbook</a> references this query. </p></td>
 </tr>
 <tr>
 <td><p>Open Test Cases</p></td>
@@ -220,8 +220,8 @@ The project administrator for each project [defines area and iteration paths](..
 </table>
 
   
-> [!TIP]    
-> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../queries/query-by-date-or-current-iteration.md).  
+> [!TIP]
+> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the <strong>@CurrentIteration</strong> macro](../../queries/query-by-date-or-current-iteration.md).  
 
 
 

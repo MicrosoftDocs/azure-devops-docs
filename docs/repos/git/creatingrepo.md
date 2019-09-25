@@ -44,19 +44,18 @@ The following video explains what Git repos are, and shows you how to create the
 Manage any folder with source code or Visual Studio solution in Git by creating a repo for them. 
 Later you can connect this Git repo to a remote Git repo to share your work with others. 
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 ### Create a repo 
 
 * [Create a repo from a new solution](#from-a-new-solution)
 * [Create a repo from an existing solution](#from-an-existing-solution)
 * [Create a repo in an empty folder](#in-an-empty-folder)
-* [Connect a local repo to a remote](#connect-a-local-repo-to-a-remote)
+* [Connect a local repo to a remote](#remotes)
 
 ### From a new solution
 
 Create a new Git repo for your new Visual Studio solution by selecting **Create new Git repository** when creating the solution:
-   
+
 ![Select Create new Git repository when creating a new solution](_img/vscreategitrepo.png) 
 
 ### From an existing solution
@@ -69,11 +68,11 @@ another remote Git repository.
 
 ### In an empty folder
 
-0. Open the **Connect** view in Team Explorer by choosing **Projects** then **Manage Connections** from the context menu. 
-0. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
-0. Select **Create** to create the repo.
+1. Open the **Connect** view in Team Explorer by choosing **Projects** then **Manage Connections** from the context menu. 
+2. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
+3. Select **Create** to create the repo.
 
-  ![Creating a new local Git repository in Visual Studio Team Explorer](_img/CreateNewRepoVS.png)</ol>
+   ![Creating a new local Git repository in Visual Studio Team Explorer](_img/CreateNewRepoVS.png)</ol>
 
 <a name="remotes" />
 ### Connect a local repo to a remote
@@ -86,8 +85,7 @@ Under **Remotes**, select **Add**.
 Enter `origin` in the **Name** field and enter the [clone URL](clone.md#clone_url) for your repo in the **Fetch** field. 
 Make sure that **Push matches fetch** is checked and select **Save**. 
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 Open up a command prompt and navigate to the top-level folder containing your project's code, or a new folder if you are starting from scratch. 
 Create the Git repository using the `init` command as shown in the following example. After the repo is created, you'll see a confirmation like `Initialized empty Git repository in current directory`. 
 
@@ -113,8 +111,7 @@ git push origin users/frank/feature
 > [!NOTE]
 > You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
 
----
-
+* * *
 ## Next steps
 
 > [!div class="nextstepaction"]

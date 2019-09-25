@@ -7,21 +7,21 @@ ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
 # Basic styles for your widgets
 
-We recommend you use the basic styles provided via the Widget SDK. Using these styles will help you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
+We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
 To use these styles, add the below line inside the `VSS.require` block in the javascript code for your widget.
 
 ```javascript
 	WidgetHelpers.IncludeWidgetStyles();
 ```
 
-This will pull a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
+This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
 It also includes styles for headings (h1, h2, h3 etc.), links, and more.
 
 Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the javascript code for your widget configuration.
@@ -29,7 +29,7 @@ Similarly, to use common styles in the widget configuration, include the line be
 ```javascript
 	WidgetHelpers.IncludeWidgetConfigurationStyles();
 ```
-This will pull a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration. 
+This pulls a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration. 
 It includes styles for font-family, font-size and styles for common form elements like input, textarea, and select. 
 
 > [!NOTE]
@@ -70,7 +70,7 @@ Subtitles are text that supplement the title. They may not always make sense whe
 
 > **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.  
 
-Use the below structure and classes "title", "inner-title" and "subtitle" to get the right font, color and margins for a title and subtitle combination. The title will get a greater font-size than the subtitle. The subtitle will have a subdued color relative to the title or rest of the widget.
+Use the below structure and classes "title", "inner-title" and "subtitle" to get the right font, color and margins for a title and subtitle combination. The title gets a greater font-size than the subtitle. The subtitle has a subdued color relative to the title or rest of the widget.
 
 ```html 
 	<div class="widget">
@@ -132,15 +132,15 @@ To use the same styles as these widgets, add the "big-count" class on the HTML e
 
 ### Make a widget a hyperlink
 
-Clicking anywhere on some widgets will redirect the user to another page. To have your widget do the same, you can: 
+Clicking anywhere on some widgets redirects the user to another page. To have your widget do the same, you can: 
 
 * Add an anchor tag as a child to the HTML element that acts as your widget container. 
 * Put all your widget content inside the anchor tag.
-* Since your widget will be hosted in an iframe, add the attribute "target" with value "_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
+* Since your widget is hosted in an iframe, add the attribute "target" with value "_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
 * In addition to the "widget" class, add the "clickable" class to the widget container. 
 
-Your widget content will get the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget. 
-The widget will also get a custom visual cue on focus to help users who use the keyboard to navigate the dashboard. 
+Your widget content gets the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget. 
+The widget also gets a custom visual cue on focus to help users who use the keyboard to navigate the dashboard. 
 
 > **Design principle:** Use the "clickable" class and the `<a>` tag to make the entire widget clickable. This is ideal when your widget is a summary of data available on another page.
 
@@ -229,7 +229,7 @@ In order to display these messages in a manner consistent with 1st party widgets
 </span>
 ```
 
-The above will have the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
+The above has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
 
 Example:
 There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.

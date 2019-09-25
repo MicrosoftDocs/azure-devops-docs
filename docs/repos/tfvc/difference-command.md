@@ -74,7 +74,7 @@ To use the **difference** command, you must have the **Read** permission for all
 	<td><p>Specifies the name of a folder or file in the shelveset to compare to the base shelveset version.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
-	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName.</em></p></td></tr></tbody>
+    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr></tbody>
 </table>
 
 |**Option**|**Description**|
@@ -93,8 +93,8 @@ To use the **difference** command, you must have the **Read** permission for all
 |**/login**|Specifies the user name and password to authenticate the user with Team Foundation Server.|
 
 ## Remarks
->**Note:**  
->You can type **tf diff** or **tf difference** at the command line to run this command.
+> [!NOTE]
+> You can type **tf diff** or **tf difference** at the command line to run this command.
 
 You can use the **difference** command to compare and if it is possible, display differences between:
 
@@ -124,68 +124,68 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The *format* parameter, used with the **/format** option, specifies many different output formats. The available output types are
 
--   **Visual**
+- **Visual**
 
-    **Visual** format type opens an external difference application. By default diffmerge.exe is launched.
+  **Visual** format type opens an external difference application. By default diffmerge.exe is launched.
 
--   **Brief**
+- **Brief**
 
-    Brief format prints whether the files being compared differ.
+  Brief format prints whether the files being compared differ.
 
--   **Context**
+- **Context**
 
-    **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff -c** output format.
+  **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff -c** output format.
 
--   **RCS**
+- **RCS**
 
-    **RCS** format is similar to **/format:unix**, except context lines are not supplied.
+  **RCS** format is similar to **/format:unix**, except context lines are not supplied.
 
-    No special handing for a missing end of line marker at the end of the file is provided.
+  No special handing for a missing end of line marker at the end of the file is provided.
 
--   **SS**
+- **SS**
 
-    **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<http://go.microsoft.com/fwlink/?LinkId=99139>).
+  **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<http://go.microsoft.com/fwlink/?LinkId=99139>).
 
--   **SS\_SideBySide**
+- **SS\_SideBySide**
 
-    **SS\_SideBySide** is the default side-by-side output format for Visual SourceSafe.
+  **SS\_SideBySide** is the default side-by-side output format for Visual SourceSafe.
 
--   **SS\_Unix**
+- **SS\_Unix**
 
-    SS\_Unix is similar to the /format:unix output format, but /format:ss\_unix includes context lines and /format:unix does not.
+  SS\_Unix is similar to the /format:unix output format, but /format:ss\_unix includes context lines and /format:unix does not.
 
--   **Unified**
+- **Unified**
 
-    **Unified** format is derived from the UNIX based **diff -u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
+  **Unified** format is derived from the UNIX based **diff -u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
 
-    **Unified** format produces a new unified difference string (@@ ... @@) line only when the distance to the next difference string is larger than the number of context lines.
+  **Unified** format produces a new unified difference string (@@ ... @@) line only when the distance to the next difference string is larger than the number of context lines.
 
--   **Unix**
+- **Unix**
 
-    This output type is derived from the UNIX based **diff** command output format.
+  This output type is derived from the UNIX based **diff** command output format.
 
-    The **Unix** output format is constructed in the following way:
+  The **Unix** output format is constructed in the following way:
 
-            <metadataline>
-        "< " line prefix for lines from the first file
-        "---" line
-        "> " line prefix for lines from the second file
+          <metadataline>
+      "< " line prefix for lines from the first file
+      "---" line
+      "> " line prefix for lines from the second file
 
-        <metadataline> can be one of these possibilities:
-        #a#,# -- add lines from line # in file1 into file2 at lines #->#
-        #,#d# -- delete lines from line # -> # in file 1 from file2 at line #
-        #,#c#,# -- change lines from line # -> # in file1 into the lines in file2 at line # -> #
+      <metadataline> can be one of these possibilities:
+      #a#,# -- add lines from line # in file1 into file2 at lines #->#
+      #,#d# -- delete lines from line # -> # in file 1 from file2 at line #
+      #,#c#,# -- change lines from line # -> # in file1 into the lines in file2 at line # -> #
 
-        # signs separated by commas indicate a line range.
-        # signs before the character indicate line numbers in the first file
-        # signs after the character indicate line numbers in the second file
+      # signs separated by commas indicate a line range.
+      # signs before the character indicate line numbers in the first file
+      # signs after the character indicate line numbers in the second file
 
-        /// No end of line marker at the end of the file:
-        /// \ No newline at end of file
-## Examples
-The following example displays the differences between the local version of 314.cs and the workspace version of 314.cs that is the version of the file that was checked out from the Team Foundation version control server.
+      /// No end of line marker at the end of the file:
+      /// \ No newline at end of file
+  ## Examples
+  The following example displays the differences between the local version of 314.cs and the workspace version of 314.cs that is the version of the file that was checked out from the Team Foundation version control server.
 
-    c:\projects>tf difference 314.cs
+  c:\projects>tf difference 314.cs
 
 The following example displays all files that have been changed in the src folder. Does not display files that have been changed in subfolders of src.
 

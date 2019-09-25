@@ -22,9 +22,9 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker range=">= tfs-2017"
 
-> [!NOTE]  
+> [!NOTE]
 > You can also [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
-> 
+
 ::: moniker-end
 
 ## Prerequisites
@@ -78,6 +78,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2015"  
+
 ## Add the Other links widget to your dashboard
 
 Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
@@ -93,23 +94,23 @@ To request feedback, you fill out a form that generates an email request to your
 
 ::: moniker range="azure-devops"  
 
-0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
 
-0. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
+1. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
 
 	![Select stakeholders on Request Feedback form](_img/ALM_GF_FeedbackReviewers.png)  
 
-3. Tell your reviewers how to run the app they'll be reviewing.
+2. Tell your reviewers how to run the app they'll be reviewing.
 
 	![Launch application instructions rich-text area on Request Feedback form](_img/ALM_GF_TellStakeholders.png)  
 
-4. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
+3. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
 
 	![Feedback focus textbox on Request Feedback form](_img/ALM_GF_FocusFeedback.png)  
 
-5. Send the request. 
+4. Send the request. 
 
 	![Send Button on Request Feedback form](_img/ALM_GF_SendRequest.png)  
 
@@ -117,7 +118,8 @@ To request feedback, you fill out a form that generates an email request to your
 
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019" 
-0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+
+1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
 
@@ -125,19 +127,19 @@ To request feedback, you fill out a form that generates an email request to your
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 
-0. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
+1. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
 
 	![Select stakeholders on Request Feedback form](_img/ALM_GF_FeedbackReviewers.png)  
 
-3. Tell your reviewers how to run the app they'll be reviewing.
+2. Tell your reviewers how to run the app they'll be reviewing.
 
 	![Launch application instructions rich-text area on Request Feedback form](_img/ALM_GF_TellStakeholders.png)  
 
-4. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
+3. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
 
 	![Feedback focus textbox on Request Feedback form](_img/ALM_GF_FocusFeedback.png)  
 
-5. Send the request. 
+4. Send the request. 
 
 	![Send Button on Request Feedback form](_img/ALM_GF_SendRequest.png)  
 
@@ -176,7 +178,8 @@ To request feedback, you fill out a form that generates an email request to your
 ::: moniker-end 
 
 
-## Provide Feedback
+## Provide feedback
+
 Reviewers launch your application and provide feedback through the free Microsoft Feedback Client.
 
 1. Reviewers who don't have a version of Visual Studio installed can download the feedback client directly from the feedback request they receive.
@@ -209,6 +212,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	![Submit page on Feedback Client](_img/ALM_GF_ModifyFeedback.png)  
 
 ## Review feedback
+
 1. Open the Feedback query. 
 
 	![Feedback link on Queries page in the web portal](_img/ALM_GF_FeedbackQuery.png)  

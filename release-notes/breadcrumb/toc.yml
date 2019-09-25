@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Features Timeline
+  - name: Release Notes
     tocHref: /azure/devops/release-notes/
-    topicHref: /azure/devops/release-notes/index
+    topicHref: https://aka.ms/azuredevops/releasenotes

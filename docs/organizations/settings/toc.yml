@@ -1,4 +1,4 @@
-- name: DevOps Settings
+- name: DevOps settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Build and release
   items:
@@ -24,6 +24,10 @@
   items:
   - name: Set test retention policies
     href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+- name: Audit
+  items:
+  - name: Access auditing
+    href: azure-devops-auditing.md
 
 
 

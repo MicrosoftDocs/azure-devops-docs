@@ -37,46 +37,46 @@ By default all members of an organization or project collection can view Deliver
 
 ## Edit permissions for a delivery plan
 
-0. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
+1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](_img/permissions/open-plans-security.png)     
 
-0. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
+2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
 
-0. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
+3. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
 
 	For example, here we grant permission to Raisa to edit the plan.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Permissions dialog for a delivery plan](_img/permissions/permissions-plans-dialog.png)
 
-0. Choose **Save changes** when done. 
+4. Choose **Save changes** when done. 
 
 
 ::: moniker-end 
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
+1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](_img/permissions/open-plans-security.png)     
 
-0. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
+2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
 
-0. With the user or group selected, set the permission you want them to have to **Allow**. 
+3. With the user or group selected, set the permission you want them to have to **Allow**. 
 
 	For example, here we grant permission to Raisa to edit the plan.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Permissions dialog for a delivery plan](_img/permissions/permissions-plans-dialog.png)
 
-0. Choose **Save changes** when done. 
+4. Choose **Save changes** when done. 
 
 ::: moniker-end  
 

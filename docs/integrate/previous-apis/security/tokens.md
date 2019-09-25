@@ -7,8 +7,8 @@ description: Secure Git repositories and branches programmatically using the RES
 ms.assetid: e9da48fa-fefb-4b17-bdb2-fff937b3cdab
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 03/15/2017
 ---
 

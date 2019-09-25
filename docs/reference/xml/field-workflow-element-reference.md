@@ -22,29 +22,29 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD refname="fieldReferenceName">  
-   <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-   <ALLOWEXISTINGVALUE />  
-   <CANNOTLOSEVALUE />  
-   <COPY />  
-   <DEFAULT />  
-   <EMPTY />  
-   <FROZEN />  
-   <MATCH />  
-   <NOTSAMEAS />  
-   <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-   <READONLY />  
-   <REQUIRED />  
-   <SERVERDEFAULT />  
-   <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-   <VALIDUSER />  
-   <WHEN> . . . </WHEN>  
-   <WHENNOT> . . . </WHENNOT>  
-   <WHENCHANGED> . . . </WHENCHANGED>  
-   <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-<FIELD>  
-```  
+> ```XML
+> <FIELD refname="fieldReferenceName">  
+>    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+>    <ALLOWEXISTINGVALUE />  
+>    <CANNOTLOSEVALUE />  
+>    <COPY />  
+>    <DEFAULT />  
+>    <EMPTY />  
+>    <FROZEN />  
+>    <MATCH />  
+>    <NOTSAMEAS />  
+>    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+>    <READONLY />  
+>    <REQUIRED />  
+>    <SERVERDEFAULT />  
+>    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+>    <VALIDUSER />  
+>    <WHEN> . . . </WHEN>  
+>    <WHENNOT> . . . </WHENNOT>  
+>    <WHENCHANGED> . . . </WHENCHANGED>  
+>    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+> <FIELD>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  

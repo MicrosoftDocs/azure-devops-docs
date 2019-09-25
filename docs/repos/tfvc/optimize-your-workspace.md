@@ -57,19 +57,19 @@ The main problem with this approach is that it would also provide her with a lot
 <table><tbody>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC756627.png" title="Step 1" alt="Step 1" /></p></td>
-	<td><p>Raisa doesn't develop customized build processes so she doesn't need `$/SiteApp/BuildProcessTemplates`. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to `$/SiteApp/Main/`. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn't need.</p><p>To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than <strong>explicitly</strong> including each code project (for example, `$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL`) she instead maps `$/SiteApp/Main/FabrikamFiber/`, and thus she <strong>implicitly</strong> maps all the sub-folders that contain the code projects she needs.</p></td></tr>
+    <td><p>Raisa doesn&#39;t develop customized build processes so she doesn&#39;t need <code>$/SiteApp/BuildProcessTemplates</code>. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to <code>$/SiteApp/Main/</code>. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn&#39;t need.</p><p>To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than <strong>explicitly</strong> including each code project (for example, <code>$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL</code>) she instead maps <code>$/SiteApp/Main/FabrikamFiber/</code>, and thus she <strong>implicitly</strong> maps all the sub-folders that contain the code projects she needs.</p></td></tr>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC646325.png" title="Step 2" alt="Step 2" /></p></td>
-	<td><p>Raisa does not need the files in `$/SiteApp/Main/FabrikamFiber/3DModels` or `$/SiteApp/Main/FabrikamFiber/Docs`, and because they are implicitly mapped by<img src="_img/optimize-your-workspace/IC756627.png" title="Step 1" alt="Step 1" />, she uses two <strong>cloaked</strong> mappings to exclude these folders from her workspace.</p></td></tr>
+    <td><p>Raisa does not need the files in <code>$/SiteApp/Main/FabrikamFiber/3DModels</code> or <code>$/SiteApp/Main/FabrikamFiber/Docs</code>, and because they are implicitly mapped by<img src="_img/optimize-your-workspace/IC756627.png" title="Step 1" alt="Step 1" />, she uses two <strong>cloaked</strong> mappings to exclude these folders from her workspace.</p></td></tr>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC646326.png" title="Step 3" alt="Step 3" /></p></td>
-	<td><p>Raisa and others on her team maintain and sometimes augment a set of some fundamental libraries. She needs almost all current libraries in this folder and expects to need libraries her team adds there in the future, so she maps `$/SiteApp/Main/libraries/Common`.</p></td></tr>
+    <td><p>Raisa and others on her team maintain and sometimes augment a set of some fundamental libraries. She needs almost all current libraries in this folder and expects to need libraries her team adds there in the future, so she maps <code>$/SiteApp/Main/libraries/Common</code>.</p></td></tr>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC646327.png" title="Step 4" alt="Step 4" /></p></td>
-	<td><p>Raisa needs only a small segment of a large folder, `$/SiteApp/Main/libraries/Common/LibraryC`, so she maps it as <strong>cloaked</strong> and then explicitly maps just the sub-folder she needs: `$/SiteApp/Main/libraries/Common/LibraryC/Sub-Library1`.</p></td></tr>
+    <td><p>Raisa needs only a small segment of a large folder, <code>$/SiteApp/Main/libraries/Common/LibraryC</code>, so she maps it as <strong>cloaked</strong> and then explicitly maps just the sub-folder she needs: <code>$/SiteApp/Main/libraries/Common/LibraryC/Sub-Library1</code>.</p></td></tr>
 <tr>
 	<td><p><img src="_img/optimize-your-workspace/IC646328.png" title="Step 5" alt="Step 5" /></p></td>
-	<td><p>Raisa needs some of the files immediately within `LibraryD`, but she does not need the large contents of its sub-folders, so she applies a <strong>non-recursive</strong> mapping to this folder: `$/SiteApp/Main/libraries/Specialized/LibraryD/*`.</p></td></tr></tbody>
+    <td><p>Raisa needs some of the files immediately within <code>LibraryD</code>, but she does not need the large contents of its sub-folders, so she applies a <strong>non-recursive</strong> mapping to this folder: <code>$/SiteApp/Main/libraries/Specialized/LibraryD/*</code>.</p></td></tr></tbody>
 </table>
 
 <a name="isolate"></a>
@@ -95,5 +95,5 @@ Raisa manages her work in three workspaces, each of which maps folders in a bran
 
 ![Branches](_img/optimize-your-workspace/IC720117.png)
 
-> **Note:**  
+> [!NOTE]
 > [Branching](use-branches-isolate-risk-team-foundation-version-control.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.

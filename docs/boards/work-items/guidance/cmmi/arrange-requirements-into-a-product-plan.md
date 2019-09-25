@@ -28,53 +28,53 @@ After you analyze your customer requirements sufficiently to understand what the
   
  **Customer requirements**  
   
--   Customer requirements are determined by discussion with the prospective users and other stakeholders.  
+- Customer requirements are determined by discussion with the prospective users and other stakeholders.  
   
--   To help analyze these requirements, you will typically create storyboards and models, and you decompose the scenarios into smaller steps, forming a tree. You can link modeling elements such as use cases and activities to scenario work items.  
+- To help analyze these requirements, you will typically create storyboards and models, and you decompose the scenarios into smaller steps, forming a tree. You can link modeling elements such as use cases and activities to scenario work items.  
   
--   There are two kinds of customer requirement:  
+- There are two kinds of customer requirement:  
   
-    -   Scenarios, also known as use cases, represent sequences of interactions between the users and product, in pursuit of specific goals. An example scenario might have the title "User buys a book."  
+  -   Scenarios, also known as use cases, represent sequences of interactions between the users and product, in pursuit of specific goals. An example scenario might have the title "User buys a book."  
   
-    -   Quality of Service requirements include performance, security, usability, and other criteria.  
+  -   Quality of Service requirements include performance, security, usability, and other criteria.  
   
--   You can represent these requirements as work items of type requirement, with the Requirement Type field set to Scenario or Quality of Service. For more information, see [Develop requirements](guidance-develop-requirements.md).  
+- You can represent these requirements as work items of type requirement, with the Requirement Type field set to Scenario or Quality of Service. For more information, see [Develop requirements](guidance-develop-requirements.md).  
   
--   These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../test/create-a-test-plan.md).  
+- These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../test/create-a-test-plan.md).  
   
--   [View the backlog](../../../backlogs/create-your-backlog.md) or open the Customer Requirement query to list these requirement work items.  
+- [View the backlog](../../../backlogs/create-your-backlog.md) or open the Customer Requirement query to list these requirement work items.  
   
--   Use the [Requirements Progress](../../../../report/sql-reports/requirements-progress-report-cmmi.md) report to monitor which requirements have been satisfied.  
+- Use the [Requirements Progress](../../../../report/sql-reports/requirements-progress-report-cmmi.md) report to monitor which requirements have been satisfied.  
   
- **Features**  
+  **Features**  
   
--   A feature is an item in a product plan that represents a group of tasks. In product planning, representatives of the development team and stakeholders assign features to iterations. For more information, see [Plan a project](guidance-plan-a-project-cmmi.md).  
+- A feature is an item in a product plan that represents a group of tasks. In product planning, representatives of the development team and stakeholders assign features to iterations. For more information, see [Plan a project](guidance-plan-a-project-cmmi.md).  
   
--   Enter features as requirement work items with the Requirements Type field set to Feature.  
+- Enter features as requirement work items with the Requirements Type field set to Feature.  
   
--   The feature's title states, in users' terms, what the users will be able to do with the product, that they could not do in previous iterations. There are no items, or very few items, on the plan that do not deliver new user value.  
+- The feature's title states, in users' terms, what the users will be able to do with the product, that they could not do in previous iterations. There are no items, or very few items, on the plan that do not deliver new user value.  
   
-     For example, this sequence of features could form an implementation plan:  
+   For example, this sequence of features could form an implementation plan:  
   
-    -   "A buyer can pick a book from a list and add it to a wish list."  
+  - "A buyer can pick a book from a list and add it to a wish list."  
   
-    -   "The book list displays prices. In the wish list, the total price is displayed."  
+  - "The book list displays prices. In the wish list, the total price is displayed."  
   
-    -   "Vendors can attach tags to books. Buyers can filter the book list by tag."  
+  - "Vendors can attach tags to books. Buyers can filter the book list by tag."  
   
-     Notice that no feature touches just one step in the user experience, and no feature involves just one part of the product architecture. Instead, as the features are implemented, several functions are revisited and augmented with new user value.  
+    Notice that no feature touches just one step in the user experience, and no feature involves just one part of the product architecture. Instead, as the features are implemented, several functions are revisited and augmented with new user value.  
   
--   A feature is assigned to an iteration during product planning. All the tasks under a feature must be assigned to the same iteration.  
+- A feature is assigned to an iteration during product planning. All the tasks under a feature must be assigned to the same iteration.  
   
--   A feature describes a partial realization of the customer requirements. It is a subset of the customer requirements, and it might implement each customer requirement to a limited extent.  
+- A feature describes a partial realization of the customer requirements. It is a subset of the customer requirements, and it might implement each customer requirement to a limited extent.  
   
--   Every feature can be linked to one or more test cases that test the part of the requirements that the feature represents. These test cases are a subset of the system tests that are linked to the customer requirements.  
+- Every feature can be linked to one or more test cases that test the part of the requirements that the feature represents. These test cases are a subset of the system tests that are linked to the customer requirements.  
   
--   The feature's state must not be marked complete until its tests are fully defined and pass.  
+- The feature's state must not be marked complete until its tests are fully defined and pass.  
   
--   Every feature is a group of development and test tasks. It is the root of a tree of tasks. The development tasks implement the partial requirements that the feature describes. The test tasks design and execute the appropriate test cases.  
+- Every feature is a group of development and test tasks. It is the root of a tree of tasks. The development tasks implement the partial requirements that the feature describes. The test tasks design and execute the appropriate test cases.  
   
--   You use the Product Requirements query to list features.  
+- You use the Product Requirements query to list features.  
   
 ### Finding features  
  Separating requirements into incremental features is a creative task that must involve developers, analysts, and stakeholders. A feature defines a piece of the product's functionality that can sensibly be implemented separately from the surrounding functions. Therefore, a workable set of feature definitions and an ordering into a plan depends partly on the architecture of the system.  
@@ -126,9 +126,9 @@ After you analyze your customer requirements sufficiently to understand what the
   
  But sometimes you can separate out other aspects of the scenarios. In this example, the team might implement a basic version of the user experience in early iterations and then improve it later. So you might add the following feature:  
   
--   Iteration 6 - Restaurant can choose the color scheme and font of its menu and upload its own logo and pictures of meals.  
+- Iteration 6 - Restaurant can choose the color scheme and font of its menu and upload its own logo and pictures of meals.  
   
- This type of feature does not emerge directly from the decomposition into steps, but it usually emerges in discussion of storyboards. User experience features are good candidates for later iterations.  
+  This type of feature does not emerge directly from the decomposition into steps, but it usually emerges in discussion of storyboards. User experience features are good candidates for later iterations.  
   
 ### Entering and inspecting features  
  Create work items with work item type of requirement, and set the Requirement Type field to Feature. Set the feature title to the short description.  
@@ -163,10 +163,10 @@ After you analyze your customer requirements sufficiently to understand what the
   
  The following activities are part of iteration planning:  
   
--   Create tasks for development and testing, and link them as children to the feature requirements.  
+- Create tasks for development and testing, and link them as children to the feature requirements.  
   
--   Create test cases for the aspects of the customer requirements that are to be developed in each feature. The test cases should be linked to the customer requirements so that you can monitor how complete the requirements are.  
+- Create test cases for the aspects of the customer requirements that are to be developed in each feature. The test cases should be linked to the customer requirements so that you can monitor how complete the requirements are.  
   
- You can also link test cases to the features so that you can track the correspondence between features and requirements. The feature should not be marked complete until the linked test cases pass.  
+  You can also link test cases to the features so that you can track the correspondence between features and requirements. The feature should not be marked complete until the linked test cases pass.  
   
- For more information, see [Plan an iteration](guidance-plan-an-iteration-cmmi.md).
+  For more information, see [Plan an iteration](guidance-plan-an-iteration-cmmi.md).

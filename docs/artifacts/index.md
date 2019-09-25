@@ -6,7 +6,7 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
-ms.technology: devops-new-user
+ms.technology: devops-artifacts
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
@@ -22,8 +22,6 @@ featureFlags:
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p>
 
 
-
-
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
@@ -35,7 +33,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Artifacts & Package Management</h3>
+                        <h3>Azure Artifacts &amp; Package Management</h3>
                         <p>
                             <a href="/azure/devops/artifacts/overview">What is Azure Artifacts?</a>
                         </p>
@@ -102,7 +100,7 @@ featureFlags:
                             <a href="/azure/devops/pipelines/artifacts/npm">Publish npm packages</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/artifacts/npm/npmrc">Set up your client's npmrc</a>
+                            <a href="/azure/devops/artifacts/npm/npmrc">Set up your client&#39;s npmrc</a>
                         </p>
                         <p>
                             <a href="/azure/devops/artifacts/npm/upstream-sources">Use packages from npmjs.com</a>
@@ -160,7 +158,6 @@ featureFlags:
                         <p>
                             <a href="/azure/devops/pipelines/artifacts/pypi">Publish Python packages in Azure Pipelines</a>
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -183,7 +180,6 @@ featureFlags:
                         <p>
                             <a href="/azure/devops/pipelines/artifacts/universal-packages">Publish and download Universal Packages in Azure Pipelines</a>
                         </p>
-
                     </div>
                 </div>
             </div>

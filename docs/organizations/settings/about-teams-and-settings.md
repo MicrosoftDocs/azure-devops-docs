@@ -59,18 +59,18 @@ These tools reference the team's default area path, iteration path, and selected
 <td>Backlogs  </td>
 <td>
 <ul>
-<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
-<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
-<li>[Epics backlog](../../boards/backlogs/define-features-epics.md)</li>
-<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+<li><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Product backlog](../../boards/backlogs/create-your-backlog.md)">Product backlog</a></li>
+<li><a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[Features backlog](../../boards/backlogs/define-features-epics.md)">Features backlog</a></li>
+<li><a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[Epics backlog](../../boards/backlogs/define-features-epics.md)">Epics backlog</a></li>
+<li><a href="../../boards/sprints/forecast.md" data-raw-source="[Forecast](../../boards/sprints/forecast.md)">Forecast</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select active iteration paths (sprints)</a></li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -78,16 +78,16 @@ These tools reference the team's default area path, iteration path, and selected
 <td>Sprints and Scrum </td>
 <td>
 <ul>
-<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
-<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
-<li>[Task board](../../boards/sprints/task-board.md)</li>
-<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+<li><a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)">Sprint backlogs</a></li>
+<li><a href="../../boards/sprints/set-capacity.md" data-raw-source="[Sprint capacity](../../boards/sprints/set-capacity.md)">Sprint capacity</a></li>
+<li><a href="../../boards/sprints/task-board.md" data-raw-source="[Task board](../../boards/sprints/task-board.md)">Task board</a></li>
+<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Set working days](set-working-days.md)</li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select active iteration paths (sprints)</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Set working days](set-working-days.md)">Set working days</a></li>
 </ul>
 </td>
 </tr>
@@ -95,18 +95,18 @@ These tools reference the team's default area path, iteration path, and selected
 <td>Kanban boards</td>
 <td>
 <ul>
-<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
-<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
-<li>[Epics board](../../boards/boards/kanban-epics-features-stories.md)</li>
-<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+<li><a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a></li>
+<li><a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Features board](../../boards/boards/kanban-epics-features-stories.md)">Features board</a></li>
+<li><a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Epics board](../../boards/boards/kanban-epics-features-stories.md)">Epics board</a></li>
+<li><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default iteration path](set-iteration-paths-sprints.md)</li>
-<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default iteration path](set-iteration-paths-sprints.md)">Select default iteration path</a></li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -114,18 +114,18 @@ These tools reference the team's default area path, iteration path, and selected
 <td>Widgets  </td>
 <td>
 <ul>
-<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
-<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
-<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
-<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
-<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+<li><a href="../../report/dashboards/widget-catalog.md#new-work-item-widget" data-raw-source="[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)">New work item</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)">Sprint overview</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)">Team members</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Add team members](../security/add-users-team-project.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select active iteration paths (sprints)</a></li>
+<li><a href="../security/add-users-team-project.md" data-raw-source="[Add team members](../security/add-users-team-project.md)">Add team members</a></li>
 </ul>
 </td>
 </tr>
@@ -133,13 +133,13 @@ These tools reference the team's default area path, iteration path, and selected
 <td>Other tools </td>
 <td>
 <ul>
-<li>[Favorites](../../project/navigation/set-favorites.md)</li>
-<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
-<li>[Delivery plans](../../boards/plans/review-team-plans.md)</li>
-<li>[Queries](../../boards/queries/using-queries.md)</li>
-<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
-<li>[Dashboards](../../report/dashboards/dashboards.md)</li>
-<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Favorites](../../project/navigation/set-favorites.md)">Favorites</a></li>
+<li><a href="../../boards/backlogs/work-item-template.md" data-raw-source="[Work item templates](../../boards/backlogs/work-item-template.md)">Work item templates</a></li>
+<li><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery plans](../../boards/plans/review-team-plans.md)">Delivery plans</a></li>
+<li><a href="../../boards/queries/using-queries.md" data-raw-source="[Queries](../../boards/queries/using-queries.md)">Queries</a></li>
+<li><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></li>
+<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards](../../report/dashboards/dashboards.md)">Dashboards</a></li>
+<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts](../../notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
 </ul>
 </td>
 <td>
@@ -165,18 +165,18 @@ Not applicable
 <td>Backlogs  </td>
 <td>
 <ul>
-<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
-<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
-<li>[Epics backlog](../../boards/backlogs/define-features-epics.md)</li>
-<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+<li><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Product backlog](../../boards/backlogs/create-your-backlog.md)">Product backlog</a></li>
+<li><a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[Features backlog](../../boards/backlogs/define-features-epics.md)">Features backlog</a></li>
+<li><a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[Epics backlog](../../boards/backlogs/define-features-epics.md)">Epics backlog</a></li>
+<li><a href="../../boards/sprints/forecast.md" data-raw-source="[Forecast](../../boards/sprints/forecast.md)">Forecast</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -184,17 +184,17 @@ Not applicable
 <td>Sprints and Scrum </td>
 <td>
 <ul>
-<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
-<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
-<li>[Task board](../../boards/sprints/task-board.md)</li>
-<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+<li><a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)">Sprint backlogs</a></li>
+<li><a href="../../boards/sprints/set-capacity.md" data-raw-source="[Sprint capacity](../../boards/sprints/set-capacity.md)">Sprint capacity</a></li>
+<li><a href="../../boards/sprints/task-board.md" data-raw-source="[Task board](../../boards/sprints/task-board.md)">Task board</a></li>
+<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Set working days](set-working-days.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Set working days](set-working-days.md)">Set working days</a></li>
 </ul>
 </td>
 </tr>
@@ -202,18 +202,18 @@ Not applicable
 <td>Kanban boards</td>
 <td>
 <ul>
-<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
-<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
-<li>[Epics board](../../boards/boards/kanban-epics-features-stories.md)</li>
-<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+<li><a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a></li>
+<li><a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Features board](../../boards/boards/kanban-epics-features-stories.md)">Features board</a></li>
+<li><a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Epics board](../../boards/boards/kanban-epics-features-stories.md)">Epics board</a></li>
+<li><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -221,18 +221,18 @@ Not applicable
 <td>Widgets  </td>
 <td>
 <ul>
-<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
-<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
-<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
-<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
-<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+<li><a href="../../report/dashboards/widget-catalog.md#new-work-item-widget" data-raw-source="[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)">New work item</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)">Sprint overview</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)">Team members</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Add team members](../security/add-users-team-project.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="../security/add-users-team-project.md" data-raw-source="[Add team members](../security/add-users-team-project.md)">Add team members</a></li>
 </ul>
 </td>
 </tr>
@@ -240,13 +240,13 @@ Not applicable
 <td>Other tools </td>
 <td>
 <ul>
-<li>[Favorites](../../project/navigation/set-favorites.md)</li>
-<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
-<li>[Queries](../../boards/queries/using-queries.md)</li>
-<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
-<li>[Dashboards](../../report/dashboards/dashboards.md)</li>
-<li>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</li>
-<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Favorites](../../project/navigation/set-favorites.md)">Favorites</a></li>
+<li><a href="../../boards/backlogs/work-item-template.md" data-raw-source="[Work item templates](../../boards/backlogs/work-item-template.md)">Work item templates</a></li>
+<li><a href="../../boards/queries/using-queries.md" data-raw-source="[Queries](../../boards/queries/using-queries.md)">Queries</a></li>
+<li><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></li>
+<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards](../../report/dashboards/dashboards.md)">Dashboards</a></li>
+<li><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
+<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts](../../notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
 </ul>
 </td>
 <td>
@@ -275,16 +275,16 @@ Not applicable
 <td>Backlogs  </td>
 <td>
 <ul>
-<li>[Product backlog](../../boards/backlogs/create-your-backlog.md)</li>
-<li>[Features backlog](../../boards/backlogs/define-features-epics.md)</li>
-<li>[Forecast](../../boards/sprints/forecast.md)</li> 
+<li><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Product backlog](../../boards/backlogs/create-your-backlog.md)">Product backlog</a></li>
+<li><a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[Features backlog](../../boards/backlogs/define-features-epics.md)">Features backlog</a></li>
+<li><a href="../../boards/sprints/forecast.md" data-raw-source="[Forecast](../../boards/sprints/forecast.md)">Forecast</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -292,17 +292,17 @@ Not applicable
 <td>Sprints and Scrum </td>
 <td>
 <ul>
-<li>[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)</li>
-<li>[Sprint capacity](../../boards/sprints/set-capacity.md)</li>
-<li>[Task board](../../boards/sprints/task-board.md)</li>
-<li>[Sprint burndown](../../boards/sprints/sprint-burndown.md)</li>
+<li><a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)">Sprint backlogs</a></li>
+<li><a href="../../boards/sprints/set-capacity.md" data-raw-source="[Sprint capacity](../../boards/sprints/set-capacity.md)">Sprint capacity</a></li>
+<li><a href="../../boards/sprints/task-board.md" data-raw-source="[Task board](../../boards/sprints/task-board.md)">Task board</a></li>
+<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Set working days](set-working-days.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="set-working-days.md" data-raw-source="[Set working days](set-working-days.md)">Set working days</a></li>
 </ul>
 </td>
 </tr>
@@ -310,17 +310,17 @@ Not applicable
 <td>Kanban boards</td>
 <td>
 <ul>
-<li>[Kanban board](../../boards/boards/kanban-basics.md)</li>
-<li>[Features board](../../boards/boards/kanban-epics-features-stories.md)</li>
-<li>[Cumulative flow](../../report/dashboards/cumulative-flow.md)</li>
+<li><a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a></li>
+<li><a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Features board](../../boards/boards/kanban-epics-features-stories.md)">Features board</a></li>
+<li><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="select-backlog-navigation-levels.md" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
+<li><a href="show-bugs-on-backlog.md" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -328,18 +328,18 @@ Not applicable
 <td>Widgets  </td>
 <td>
 <ul>
-<li>[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)</li>
-<li>[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)</li>
-<li>[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)</li>
-<li>[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)</li>
-<li>[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)</li> 
+<li><a href="../../report/dashboards/widget-catalog.md#new-work-item-widget" data-raw-source="[New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)">New work item</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)">Sprint overview</a></li>
+<li><a href="../../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[Team members](../../report/dashboards/widget-catalog.md#team-members-widget)">Team members</a></li> 
 </ul>
 </td>
 <td>
 <ul>
-<li>[Configure area paths](set-area-paths.md)</li>
-<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
-<li>[Add team members](../security/add-users-team-project.md)</li>
+<li><a href="set-area-paths.md" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
+<li><a href="set-iteration-paths-sprints.md" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="../security/add-users-team-project.md" data-raw-source="[Add team members](../security/add-users-team-project.md)">Add team members</a></li>
 </ul>
 </td>
 </tr>
@@ -347,13 +347,13 @@ Not applicable
 <td>Other tools </td>
 <td>
 <ul>
-<li>[Favorites](../../project/navigation/set-favorites.md)</li>
-<li>[Work item templates](../../boards/backlogs/work-item-template.md)</li>
-<li>[Queries](../../boards/queries/using-queries.md)</li>
-<li>[Velocity](../../report/dashboards/team-velocity.md)</li>
-<li>[Team home page](../../report/dashboards/team-dashboard.md)</li>
-<li>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</li>
-<li>[Alerts](../../notifications/howto-manage-team-notifications.md) </li> 
+<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Favorites](../../project/navigation/set-favorites.md)">Favorites</a></li>
+<li><a href="../../boards/backlogs/work-item-template.md" data-raw-source="[Work item templates](../../boards/backlogs/work-item-template.md)">Work item templates</a></li>
+<li><a href="../../boards/queries/using-queries.md" data-raw-source="[Queries](../../boards/queries/using-queries.md)">Queries</a></li>
+<li><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></li>
+<li><a href="../../report/dashboards/team-dashboard.md" data-raw-source="[Team home page](../../report/dashboards/team-dashboard.md)">Team home page</a></li>
+<li><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
+<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts](../../notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
 </ul>
 </td>
 <td>
@@ -398,7 +398,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Portfolio or product backlogs</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)</td>
+<td>Equal to or under team&#39;s <a href="../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)">backlog iteration path</a></td>
 <td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
 </tr>
 
@@ -406,14 +406,14 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Kanban boards (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)</td>
+<td>Equal to or under team&#39;s <a href="../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)">backlog iteration path</a></td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 
 <tr valign="top" > 
 <td>Sprint backlogs (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Team's selected iteration paths</td>
+<td>Team&#39;s selected iteration paths</td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 
@@ -421,7 +421,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Task boards (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Team's selected iteration paths</td>
+<td>Team&#39;s selected iteration paths</td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 
@@ -436,11 +436,11 @@ In addition, several tools reference the team's default iteration and selected i
 
 <p><b>Notes:</b><p>
 <ol>
-<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths).</li>
-<li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
-<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
-<li>Work items whose State equals Removed don't appear on boards.</li> 
+<li>Agile tools filter items based on the team&#39;s selected area path(s). Teams can choose <a href="../../organizations/settings/set-area-paths.md#team-area-paths" data-raw-source="[whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths)">whether to include or exclude items assigned to subarea paths</a>.</li>
+<li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don&#39;t appear on portfolio and product backlogs.</li>
+<li>You can add custom workflow states and assign them to one of three state categories. The <a href="../../boards/work-items/workflow-and-state-categories.md" data-raw-source="[state categories](../../boards/work-items/workflow-and-state-categories.md)">state categories</a> determine which work items appear on backlog and board views. </li>
+<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see <a href="../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes" data-raw-source="[parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes)">parent-child links between items</a>.</li>
+<li>Work items whose State equals Removed don&#39;t appear on boards.</li> 
 </ol>
 
 
@@ -460,7 +460,7 @@ When you add a team, a security group is automatically created with the team nam
 <img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker range=">= tfs-2017"
-You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
+You can also use the <strong>@mention</strong> control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
 ::: moniker-end
 
 ## Work on more than one team

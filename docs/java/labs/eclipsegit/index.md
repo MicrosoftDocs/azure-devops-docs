@@ -8,7 +8,7 @@ ms.custom: java
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.date: 07/10/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,6 +25,9 @@ In this exercise, you are going to import the MyShuttle2 repo within your organi
 ## Prerequisites
 
 This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingvstsproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
+
+> [!NOTE]
+> The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 ## Connect to Azure DevOps Services from Eclipse
 
@@ -122,7 +125,8 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![MyShuttle project](../_img/eclipsegit/eclipse-myshuttle.png)
 
-   > **Note**: The project will not currently compile and there may be build errors temporarily, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
+    > [!NOTE]
+    > The project will not currently compile and there may be build errors temporarily, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
 
 ## Clone MyShuttleCalc from Azure DevOps Services with Eclipse
 

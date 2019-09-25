@@ -73,7 +73,7 @@ See the [Navigation Update](https://aka.ms/vstsnewnav) blog post for more inform
 One of our long-standing feature requests has been to offer a dark theme. We're happy to let you know that this is now available as part of the new navigation. You can turn on dark theme by selecting **Theme** from the menu underneath your avatar in the top right of every page.
 
 > [!div class="mx-imgBorder"]
-![Dark theme](_img/142_08.png)
+> ![Dark theme](_img/142_08.png)
 
 ## Azure Boards
 
@@ -82,20 +82,20 @@ One of our long-standing feature requests has been to offer a dark theme. We're 
 Attaching files to work items allows you and your team to centralize reference materials so they are always close by when you need them. It's now easier to add a new attachment by simply dragging and dropping the file anywhere on the work item form. You can continue viewing the attachments as a list or switch to a grid view to show a thumbnail preview. Double-click on the file to open a preview and cycle through them to quickly find the information you need.
 
 > [!div class="mx-imgBorder"]
-![Work item attachments](_img/142_01.gif)
+> ![Work item attachments](_img/142_01.gif)
 
 ### Manage dependencies by linking work items across your organizations
 
 Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
 
-> [!NOTE] 
+> [!NOTE]
 > Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Azure AD tenant.
-
+> 
 > [!div class="mx-imgBorder"]
-![Remote link](_img/142_05.png)
+> ![Remote link](_img/142_05.png)
 
 As you begin to manage several dependencies, use the new **Remote Link Count** field in **Queries** to list the work items that have remote dependencies in your project, or consider installing the [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker) extension. This extension, which was created by the Windows group at Microsoft to meet their scale needs, builds upon remote links to display a rich hierarchy and graphical representation of your dependencies.
-​
+ 
 ### Open work items from search
 
 Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from [UserVoice](https://visualstudio.uservoice.com/forums/330519-azure-devops-formerly-visual-studio-team-services/suggestions/33988486-open-item-from-search).
@@ -177,9 +177,9 @@ The Azure Pipelines [open source, cross-platform agent](https://github.com/Micro
 We have added support for cloning variable groups. Whenever you want to replicate a variable group and just update few of the variables, you don't need to go through the tedious process of adding variables one by one. You can now quickly make a copy of your variable group, update the values appropriately, and save it as a new variable group. 
 
 > [!div class="mx-imgBorder"]
-![Clone variable group](_img/142_13.png)
-
-> [!NOTE] 
+> ![Clone variable group](_img/142_13.png)
+> 
+> [!NOTE]
 > The secret variable values are not copied over when you clone a variable group. You need to update the encrypted variables and then save the cloned variable group.
 
 ### See commits and work items for all linked sources
@@ -187,7 +187,7 @@ We have added support for cloning variable groups. Whenever you want to replicat
 Continuing our commitment towards improved traceability, we are happy to announce that customers can now see the commit and work items details for all the artifacts linked to the pipeline. By default, the commit and work item is compared with the last deployment to the same stage. However, you can compare with any other previous deployment if needed.
 
 > [!div class="mx-imgBorder"]
-![Linked sources](_img/142_15.png)
+> ![Linked sources](_img/142_15.png)
 
 ### Run from Package supported in Azure App Service deployments
 
@@ -220,10 +220,10 @@ You can now use the Azure Test Runner (ATR) client to run manual tests for deskt
 ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 
 > [!div class="mx-imgBorder"]
-![Azure Test Runner](_img/142_01.png)
-
+> ![Azure Test Runner](_img/142_01.png)
+> 
 > [!div class="mx-imgBorder"]
-![Azure Test Runner install](_img/142_02.png)
+> ![Azure Test Runner install](_img/142_02.png)
 
 ## Azure Artifacts
 
@@ -258,11 +258,10 @@ Read about the new features below and head over to Azure DevOps to try them for 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 
 Thanks,
 
 Aaron Bjork
-

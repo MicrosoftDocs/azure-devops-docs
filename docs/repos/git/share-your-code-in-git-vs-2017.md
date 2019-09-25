@@ -57,48 +57,48 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 2. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
 
- ![Publish your code from VS directly into Azure Repos](_img/share-your-code-in-git-vs-2017/publish-git-repo.png)
+   ![Publish your code from VS directly into Azure Repos](_img/share-your-code-in-git-vs-2017/publish-git-repo.png)
 
-0. Verify your email and select your account in the **Team Services Domain** drop-down. 
+3. Verify your email and select your account in the **Team Services Domain** drop-down. 
 
-0. Enter your repository name and select **Publish repository**. 
+4. Enter your repository name and select **Publish repository**. 
 
- ![Publish your VS project to a new Git repo in Azure Repos](_img/share-your-code-in-git-vs-2017/vsts-publish-repo.png)
+   ![Publish your VS project to a new Git repo in Azure Repos](_img/share-your-code-in-git-vs-2017/vsts-publish-repo.png)
 
    This creates a new project in your account with the same name as the repository. To create the repo in an existing project, click **Advanced** next to **Repository name** and select a project.
 
-0. Your code is now in a Git repo in Azure Repos. You can view your code on the web by selecting **See it on the web** .
+5. Your code is now in a Git repo in Azure Repos. You can view your code on the web by selecting **See it on the web** .
   
-  ![View your Azure Repos/TFS Git repo on the Web](_img/share-your-code-in-git-vs-2017/vsts-view-on-web.png)
+   ![View your Azure Repos/TFS Git repo on the Web](_img/share-your-code-in-git-vs-2017/vsts-view-on-web.png)
   
 ## Commit and push updates
 
-0. As you write your code, your changes are automatically tracked by Visual Studio. 
-You can [commit](commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png) from the status bar.
+1. As you write your code, your changes are automatically tracked by Visual Studio. 
+   You can [commit](commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-pending-changes.png) from the status bar.
 
-0. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
+2. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
 
- ![Add a comment and choose Commit](_img/share-your-code-in-git-vs-2017/vs-commit-changes.png)
+   ![Add a comment and choose Commit](_img/share-your-code-in-git-vs-2017/vs-commit-changes.png)
 
-0. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) (or select **Sync** from the **Home** view in Team Explorer). Select **Push** to 
-update your code in Azure DevOps Services/TFS.
+3. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) (or select **Sync** from the **Home** view in Team Explorer). Select **Push** to 
+   update your code in Azure DevOps Services/TFS.
 
- ![Push your changes](_img/share-your-code-in-git-vs-2017/vs-push-commits.png)
+   ![Push your changes](_img/share-your-code-in-git-vs-2017/vs-push-commits.png)
 
 ## Get changes from others
 
 Sync your local repo with changes from your team as they make updates.
 
-0. From the **Synchronization** view in Team Explorer, fetch the [commits](commits.md) that your team has made. 
-Double-click a commit to view its file changes.
+1. From the **Synchronization** view in Team Explorer, fetch the [commits](commits.md) that your team has made. 
+   Double-click a commit to view its file changes.
 
- ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs-2017/fetch-commits.png)
+   ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs-2017/fetch-commits.png)
 
-0. Select **Sync** to merge the fetched commits into your local repo and then [push](pushing.md) any unpublished changes to Azure Repos.
+2. Select **Sync** to merge the fetched commits into your local repo and then [push](pushing.md) any unpublished changes to Azure Repos.
 
- ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs-2017/sync-commits.png)
+   ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs-2017/sync-commits.png)
 
-0. The changes from your team are now in your local repo and visible in Visual Studio.
+3. The changes from your team are now in your local repo and visible in Visual Studio.
  
 ## Frequently asked questions
 

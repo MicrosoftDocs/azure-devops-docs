@@ -3,18 +3,18 @@ title: Team Foundation Service updates - Mar 22
 description: VSTS release notes for March 22 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: cb4abbef-5cca-433a-b70d-5c2c759a8dec
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Mar 22
+# Team Foundation Service updates - Mar 22
 
 We have added improvements to our Git support and test case management for you this sprint.
 
-##Branches View
+## Branches View
 
 In this sprint we added a new branches view for team projects using Git. This lets you see:
 
@@ -30,9 +30,10 @@ You can also compare two branches. View the list of commits and the summary of c
 
 ![Compare branches](_img/3_22_02.png)
 
-**Note:** Unlike most of the recent web access code improvements, this view is specific to team projects using Git. While our goal is to mirror the experiences as much as possible, that doesn’t always make sense. For example, the shelveset view is unique to TFVC. For this branches view, we want to make the most of the features offered by Git and help support common Git workflows.
+> [!NOTE]
+> Unlike most of the recent web access code improvements, this view is specific to team projects using Git. While our goal is to mirror the experiences as much as possible, that doesn’t always make sense. For example, the shelveset view is unique to TFVC. For this branches view, we want to make the most of the features offered by Git and help support common Git workflows.
 
-##Test Case Management
+## Test Case Management
 
 Our web based test runner also got some nice additions this sprint:
 

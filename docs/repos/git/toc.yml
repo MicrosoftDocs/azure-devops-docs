@@ -99,7 +99,7 @@
       href: manage-large-files.md
 - name: How-to Guides
   items:
-  - name: Authenticate with SSH
+  - name: Authenticate with SSHAuthenticate with SSH
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
@@ -115,6 +115,8 @@
     href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+  - name: Go get using Azure Repos
+    href: go-get.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Manage repos
@@ -155,6 +157,8 @@
     href: mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
     href: ../../pipelines/build/triggers.md
+  - name: Work item completion on commit
+    href: resolution-mentions.md
   - name: Work with tags
     href: git-tags.md
 - name: Reference

@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -30,5 +30,5 @@ AMD javascript module loader configuration
 
 * `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}. 
 
-* `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader will wait for scripts to load.
+* `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader waits for scripts to load.
 

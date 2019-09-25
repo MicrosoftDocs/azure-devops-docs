@@ -45,11 +45,11 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the tasks, stories, test cases, and bugs that are counted in the report by specifying one or more iterations, area paths, and types of work items.  
+- Filter the tasks, stories, test cases, and bugs that are counted in the report by specifying one or more iterations, area paths, and types of work items.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
+  For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Required Activities for Tracking Unplanned Work  
  For the Unplanned Work report to be useful and accurate, the team must perform the following activities to track work items:  
@@ -87,16 +87,16 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Unplanned Work report or change its display in the following ways:  
   
--   Change the plan completion date and start dates for the report.  
+- Change the plan completion date and start dates for the report.  
   
-    > [!IMPORTANT]
-    >  The plan completion date refers to the date when your team finishes planning for the iteration.  
+  > [!IMPORTANT]
+  >  The plan completion date refers to the date when your team finishes planning for the iteration.  
   
--   Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths and types of work items.  
+- Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths and types of work items.  
   
- The following illustration shows the available filters and display options:  
+  The following illustration shows the available filters and display options:  
   
- ![Filters for Unplanned Work report](_img/procg_unplannedwork.png "ProcG_UnplannedWork")  
+  ![Filters for Unplanned Work report](_img/procg_unplannedwork.png "ProcG_UnplannedWork")  
   
 #### To filter the tasks, user stories, and bugs that appear in the report  
   
