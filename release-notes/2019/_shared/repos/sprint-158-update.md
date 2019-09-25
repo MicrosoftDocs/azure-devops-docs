@@ -26,3 +26,5 @@ Administrators can now set a push policy to prevent commits from being pushed to
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/158_20.png)
+
+This feature was prioritized based on a [suggestion from the Developer Community](https://developercommunity.visualstudio.com/content/idea/365841/add-git-pre-receive-hooks.html) to deliver a similar experience. We will continue to keep the ticket open and encourage users to tell us what other types of push policies you'd like to see. 
