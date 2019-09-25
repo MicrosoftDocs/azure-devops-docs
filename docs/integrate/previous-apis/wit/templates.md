@@ -7,8 +7,8 @@ description: Work with work item templates programmatically using the REST APIs 
 ms.assetid: 0FF507EB-0E59-45F9-8A04-E3E95BA3DA58
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/26/2016
 ---
 

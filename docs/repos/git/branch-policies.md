@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Improve code quality with branch policies
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 
 Branch policies help teams protect their important [branches](branches.md) of development. 
 Policies enforce your team's code quality and change management standards.
@@ -24,23 +24,23 @@ Policies enforce your team's code quality and change management standards.
 
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-  If you're not using the new navigation preview, select **Code**, **Branches**.
+   If you're not using the new navigation preview, select **Code**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav.png)
 
-1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-  ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](_img/branches/branches-page.png)
 
-1. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
+3. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
 
-  ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
+   ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
 
-1. Configure your desired policies in the **Policies** page. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
+4. Configure your desired policies in the **Policies** page. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
 
-  ![Policies tab](_img/branch-policies/save-policy-changes.png)  
+   ![Policies tab](_img/branch-policies/save-policy-changes.png)  
 
 <a name="require_reviewers"></a>
    
@@ -210,10 +210,11 @@ In some cases, you need to bypass policy requirements so you can push changes to
 
 #### Can I push changes directly to a branch after a branch policy is configured?
 
-No. After you set up a branch policy, you cannot directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
+No. After you set up a required branch policy, you cannot directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
 
 >[!NOTE]
->If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after branch policy is configured.
+>* If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after a required branch policy is configured.
+>* If you configured optional branch policies, but no required branch policies, you can push changes directly to a branch.
 
 #### What is auto-complete?
 

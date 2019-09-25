@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 06/02/2019
 ---
 
 # About security and identity
@@ -34,7 +34,7 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
@@ -134,14 +134,14 @@ Azure DevOps is pre-configured with default security groups. Default permissions
 <td>
 <p>User or group has permissions to perform a task:</p>
 <ul>
-<li>**Allow**</li>
-<li>**Inherited allow**</li>
+<li><strong>Allow</strong></li>
+<li><strong>Inherited allow</strong></li>
 </ul>
-<p>User or group doesn't have permission to perform a task:</p>
+<p>User or group doesn&#39;t have permission to perform a task:</p>
 <ul>
-<li>**Deny**</li>
-<li>**Inherited deny**</li>
-<li>**Not set** </li>
+<li><strong>Deny</strong></li>
+<li><strong>Inherited deny</strong></li>
+<li><strong>Not set</strong> </li>
 </ul>
 </td>
 </tr>

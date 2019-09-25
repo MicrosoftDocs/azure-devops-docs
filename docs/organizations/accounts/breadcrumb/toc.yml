@@ -2,10 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Manage
-    tocHref: /azure/devops/organizations/
+  - name: Manage & Configure Resources
+    tocHref: /azure/devops/organizations/accounts/
     topicHref: /azure/devops/organizations/index
     items:
-    - name: Manage organizations
+    - name: Manage Organizations
       tocHref: /azure/devops/organizations/accounts/
       topicHref: /azure/devops/organizations/accounts/index

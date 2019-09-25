@@ -2,16 +2,32 @@
 ms.topic: include
 ---
 
-<ul>
-<li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools</code></li>
+::: moniker range="azure-devops"
 
-<li>TFS 2018: <code>https:&#x2F;&#x2F;{your_server}/DefaultCollection/_admin/_AgentPool</code></li>
+[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab.md)]
 
-<li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
+::: moniker-end
 
-<li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
+::: moniker range="azure-devops-2019"
 
-<li>That didn't work: [Get the correct URL](/azure/devops/server/admin/websitesettings)</li>
-</ul>
+[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-server-2019.md)]
 
+::: moniker-end
 
+::: moniker range="tfs-2018"
+
+[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-tfs-2018.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
+[!INCLUDE [agent-pools-tab](agent-pools-tab/agent-pools-tab-tfs-2015.md)]
+
+::: moniker-end

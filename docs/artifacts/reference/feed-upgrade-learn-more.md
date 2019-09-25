@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
-ms.date: 1/25/2019
+ms.author: phwilson
+author: chasewilson
+ms.date: 5/10/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -16,17 +16,21 @@ monikerRange: '>= tfs-2018'
 
 As part of adding the ability to use [upstream sources](../concepts/upstream-sources.md) with more public sources (like nuget.org) and with other Azure DevOps Services feeds, we made some changes to how packages are cached/saved from those sources. We also made some changes to how upstream packages are used in [views](../concepts/views.md). Before upgrading a feed that previously used views, you should be aware of the behavior changes outlined in this article.
 
+::: moniker range="azure-devops"  
+
+All Azure DevOps Services feeds have been upgraded.
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2018 < azure-devops"  
+
 ## Determine if your feed is a legacy feed
 
 You can check if your feed is using the legacy upstream sources feature by attempting to [add the nuget.org upstream source](../nuget/upstream-sources.md#existing-feed). You may also see a banner in your feed.
 
 ![Feed upgrade banner at top of feed list](_img/feed-upgrade-banner.jpg)
 
-If you're unable to do so, your feed is a legacy feed. You can also determine if your feed is a legacy feed using the criteria below:
-
-- **TFS users:** all feeds created using TFS 2018 RTM and earlier are legacy feeds. 
-- **Azure DevOps Services users** who enabled the **nuget.org upstream source** preview feature: all feeds created before the preview feature was enabled are legacy feeds
-- **Azure DevOps Services users** who didn't enable the preview feature: all feeds created before the February update are legacy feeds
+If you're unable to do so, your feed is a legacy feed. All feeds created using TFS 2018 RTM and earlier are legacy feeds.
 
 ## Upgrade a legacy feed
 
@@ -56,6 +60,4 @@ In legacy feeds, when you run an `npm install` command, the feed will check to s
 
 After you upgrade your feed, Azure DevOps Services automatically handles the saving of all packages. If you're using TFS, only your TFS server needs access to the internet to save packages from upstream.
 
-## How to upgrade a legacy feed
-
-You'll be able to upgrade a legacy feed to take advantage of the new upstream sources support in the next month or two. Keep an eye on the [release notes](/azure/devops/release-notes/) for more information.
+::: moniker-end  

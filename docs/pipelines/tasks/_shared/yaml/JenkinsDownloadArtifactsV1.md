@@ -1,5 +1,5 @@
 ```YAML
-# Jenkins Download Artifacts
+# Jenkins download artifacts
 # Download artifacts produced by a Jenkins job
 - task: JenkinsDownloadArtifacts@1
   inputs:

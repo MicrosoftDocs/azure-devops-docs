@@ -5,8 +5,8 @@ ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 02/16/2018
 monikerRange: '>= tfs-2018'
@@ -21,7 +21,10 @@ You can share your packages anywhere you can share an image with badges. You can
 Example NuGet package badge:  
 ![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](_shared/_img/package-badge.png)
 
-## Enable package sharing
+> [!NOTE]
+> Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Prereleased versions will not be displayed in badges, instead the badge will show the latest release version.
+
+## Enable package sharing  
 
 To start sharing your Azure DevOps Services-hosted packages with badges you'll first have to turn on **Package sharing** in your feed settings.
 

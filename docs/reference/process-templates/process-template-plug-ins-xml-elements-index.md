@@ -18,115 +18,38 @@ ms.date: 02/24/2017
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema definition for process templates.  
-  
+
 > [!NOTE]  
 >  The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax.  
-  
+
 ##  Alphabetical index  
 
 
 <table>
 <tr>
 <td>
--   [activateFeatures](define-project-portal-plug-in.md)      
--   [CATEGORIES](../xml/use-categories-to-group-work-item-types.md)    
--   [CATEGORY](../xml/use-categories-to-group-work-item-types.md)    
--   [checkin_note](define-initial-configuration-version-control.md)    
--   [Children](define-classification-plug-in.md)    
--   [Datasources](add-reports-to-the-process-template.md)    
--   [DEFAULTWORKITEMTYPE](../xml/categories-xml-element-reference.md) (category)  
--   [Dependencies](process-template-xml-elements-reference.md) (ProcessTemplate)  
--   [dependencies](define-tasks-to-process-a-plug-in.md) (task)  
--   [dependency](process-template-xml-elements-reference.md) (ProcessTemplate)  
--   [dependency](define-tasks-to-process-a-plug-in.md) (task)  
--   [description](process-template-xml-elements-reference.md)      
--   [documentLibraries](define-project-portal-plug-in.md)     
--   [documentLibrary](define-project-portal-plug-in.md)    
--   [exclusive_checkout](define-initial-configuration-version-control.md)    
--   [feature](define-project-portal-plug-in.md)    
--   [FIELD](add-work-item-instance-process-template.md) (work item instance)  
--   [FIELD](../xml/all-field-xml-elements-reference.md)    
--   [FIELDS](../xml/all-field-xml-elements-reference.md)    
-</td>
+-   <a href="define-project-portal-plug-in.md" data-raw-source="[activateFeatures](define-project-portal-plug-in.md)">activateFeatures</a><br/>-   <a href="../xml/use-categories-to-group-work-item-types.md" data-raw-source="[CATEGORIES](../xml/use-categories-to-group-work-item-types.md)">CATEGORIES</a><br/>-   <a href="../xml/use-categories-to-group-work-item-types.md" data-raw-source="[CATEGORY](../xml/use-categories-to-group-work-item-types.md)">CATEGORY</a><br/>-   <a href="define-initial-configuration-version-control.md" data-raw-source="[checkin_note](define-initial-configuration-version-control.md)">checkin_note</a><br/>-   <a href="define-classification-plug-in.md" data-raw-source="[Children](define-classification-plug-in.md)">Children</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[Datasources](add-reports-to-the-process-template.md)">Datasources</a><br/>-   <a href="../xml/categories-xml-element-reference.md" data-raw-source="[DEFAULTWORKITEMTYPE](../xml/categories-xml-element-reference.md)">DEFAULTWORKITEMTYPE</a> (category)<br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[Dependencies](process-template-xml-elements-reference.md)">Dependencies</a> (ProcessTemplate)<br/>-   <a href="define-tasks-to-process-a-plug-in.md" data-raw-source="[dependencies](define-tasks-to-process-a-plug-in.md)">dependencies</a> (task)<br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[dependency](process-template-xml-elements-reference.md)">dependency</a> (ProcessTemplate)<br/>-   <a href="define-tasks-to-process-a-plug-in.md" data-raw-source="[dependency](define-tasks-to-process-a-plug-in.md)">dependency</a> (task)<br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[description](process-template-xml-elements-reference.md)">description</a><br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[documentLibraries](define-project-portal-plug-in.md)">documentLibraries</a><br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[documentLibrary](define-project-portal-plug-in.md)">documentLibrary</a><br/>-   <a href="define-initial-configuration-version-control.md" data-raw-source="[exclusive_checkout](define-initial-configuration-version-control.md)">exclusive_checkout</a><br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[feature](define-project-portal-plug-in.md)">feature</a><br/>-   <a href="add-work-item-instance-process-template.md" data-raw-source="[FIELD](add-work-item-instance-process-template.md)">FIELD</a> (work item instance)<br/>-   <a href="../xml/all-field-xml-elements-reference.md" data-raw-source="[FIELD](../xml/all-field-xml-elements-reference.md)">FIELD</a><br/>-   <a href="../xml/all-field-xml-elements-reference.md" data-raw-source="[FIELDS](../xml/all-field-xml-elements-reference.md)">FIELDS</a><br/></td>
 <td>
--   [File](define-project-portal-plug-in.md)    
--   [files](define-project-portal-plug-in.md)    
--   [folder](define-project-portal-plug-in.md) (portal)  
--   [folder](add-reports-to-the-process-template.md) (reporting)  
--   [folders](define-project-portal-plug-in.md) (portal)  
--   [folders](add-reports-to-the-process-template.md) (reporting)  
--   [get_latest_on_checkout](define-initial-configuration-version-control.md)    
--   [Group](define-groups-teams-permissions-plug-in.md)      
--   [group](process-template-xml-elements-reference.md) (ProcessTemplate)  
--   [Groups](define-groups-teams-permissions-plug-in.md) (groups)  
--   [groups](process-template-xml-elements-reference.md) (ProcessTemplate)   
--   [HYPERLINK](add-work-item-instance-process-template.md)    
--   [LINKTYPE](add-link-type-definitions-to-a-process-template.md)    
--   [LINKTYPES](add-link-type-definitions-to-a-process-template.md)    
--   [member](define-groups-teams-permissions-plug-in.md)    
--   [members](define-groups-teams-permissions-plug-in.md)    
--   [Metadata](process-template-xml-elements-reference.md)    
--   [name](../xml/apply-rule-work-item-field.md)    
--   [Node](define-classification-plug-in.md)    
--   [Nodes](define-classification-plug-in.md)    
-</td>
+-   <a href="define-project-portal-plug-in.md" data-raw-source="[File](define-project-portal-plug-in.md)">File</a><br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[files](define-project-portal-plug-in.md)">files</a><br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[folder](define-project-portal-plug-in.md)">folder</a> (portal)<br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[folder](add-reports-to-the-process-template.md)">folder</a> (reporting)<br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[folders](define-project-portal-plug-in.md)">folders</a> (portal)<br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[folders](add-reports-to-the-process-template.md)">folders</a> (reporting)<br/>-   <a href="define-initial-configuration-version-control.md" data-raw-source="[get_latest_on_checkout](define-initial-configuration-version-control.md)">get_latest_on_checkout</a><br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[Group](define-groups-teams-permissions-plug-in.md)">Group</a><br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[group](process-template-xml-elements-reference.md)">group</a> (ProcessTemplate)<br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[Groups](define-groups-teams-permissions-plug-in.md)">Groups</a> (groups)<br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[groups](process-template-xml-elements-reference.md)">groups</a> (ProcessTemplate)<br/>-   <a href="add-work-item-instance-process-template.md" data-raw-source="[HYPERLINK](add-work-item-instance-process-template.md)">HYPERLINK</a><br/>-   <a href="add-link-type-definitions-to-a-process-template.md" data-raw-source="[LINKTYPE](add-link-type-definitions-to-a-process-template.md)">LINKTYPE</a><br/>-   <a href="add-link-type-definitions-to-a-process-template.md" data-raw-source="[LINKTYPES](add-link-type-definitions-to-a-process-template.md)">LINKTYPES</a><br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[member](define-groups-teams-permissions-plug-in.md)">member</a><br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[members](define-groups-teams-permissions-plug-in.md)">members</a><br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[Metadata](process-template-xml-elements-reference.md)">Metadata</a><br/>-   <a href="../xml/apply-rule-work-item-field.md" data-raw-source="[name](../xml/apply-rule-work-item-field.md)">name</a><br/>-   <a href="define-classification-plug-in.md" data-raw-source="[Node](define-classification-plug-in.md)">Node</a><br/>-   <a href="define-classification-plug-in.md" data-raw-source="[Nodes](define-classification-plug-in.md)">Nodes</a><br/></td>
 <td>
--   [parameter](add-reports-to-the-process-template.md)    
--   [parameters](add-reports-to-the-process-template.md)    
--   [permission](define-groups-teams-permissions-plug-in.md)    
--   [Permission](add-work-item-queries-process-template.md) (query)  
--   [permissions](define-groups-teams-permissions-plug-in.md)    
--   [plugin](process-template-xml-elements-reference.md)    
--   [plugins](process-template-xml-elements-reference.md)    
--   [Portal](../xml/define-default-copy-value-field.md)    
--   [ProcessTemplate](../xml/all-form-xml-elements-reference.md) (root)    
--   [ProcessTemplate](define-tasks-to-process-a-plug-in.md) (taskXml)    
--   [Properties](define-classification-plug-in.md) (classification)  
--   [properties](add-reports-to-the-process-template.md) (reporting)     
--   [property](define-classification-plug-in.md) (classification)    
--   [property](add-reports-to-the-process-template.md) (reporting)    
--   [QUERIES](add-work-item-queries-process-template.md)    
--   [Query](add-work-item-queries-process-template.md)    
--   [QueryFolder](add-work-item-queries-process-template.md)    
--   [Reference](add-reports-to-the-process-template.md)    
--   [report](add-reports-to-the-process-template.md)    
-</td>
+-   <a href="add-reports-to-the-process-template.md" data-raw-source="[parameter](add-reports-to-the-process-template.md)">parameter</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[parameters](add-reports-to-the-process-template.md)">parameters</a><br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[permission](define-groups-teams-permissions-plug-in.md)">permission</a><br/>-   <a href="add-work-item-queries-process-template.md" data-raw-source="[Permission](add-work-item-queries-process-template.md)">Permission</a> (query)<br/>-   <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[permissions](define-groups-teams-permissions-plug-in.md)">permissions</a><br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[plugin](process-template-xml-elements-reference.md)">plugin</a><br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[plugins](process-template-xml-elements-reference.md)">plugins</a><br/>-   <a href="../xml/define-default-copy-value-field.md" data-raw-source="[Portal](../xml/define-default-copy-value-field.md)">Portal</a><br/>-   <a href="../xml/all-form-xml-elements-reference.md" data-raw-source="[ProcessTemplate](../xml/all-form-xml-elements-reference.md)">ProcessTemplate</a> (root)<br/>-   <a href="define-tasks-to-process-a-plug-in.md" data-raw-source="[ProcessTemplate](define-tasks-to-process-a-plug-in.md)">ProcessTemplate</a> (taskXml)<br/>-   <a href="define-classification-plug-in.md" data-raw-source="[Properties](define-classification-plug-in.md)">Properties</a> (classification)<br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[properties](add-reports-to-the-process-template.md)">properties</a> (reporting)<br/>-   <a href="define-classification-plug-in.md" data-raw-source="[property](define-classification-plug-in.md)">property</a> (classification)<br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[property](add-reports-to-the-process-template.md)">property</a> (reporting)<br/>-   <a href="add-work-item-queries-process-template.md" data-raw-source="[QUERIES](add-work-item-queries-process-template.md)">QUERIES</a><br/>-   <a href="add-work-item-queries-process-template.md" data-raw-source="[Query](add-work-item-queries-process-template.md)">Query</a><br/>-   <a href="add-work-item-queries-process-template.md" data-raw-source="[QueryFolder](add-work-item-queries-process-template.md)">QueryFolder</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[Reference](add-reports-to-the-process-template.md)">Reference</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[report](add-reports-to-the-process-template.md)">report</a><br/></td>
 <td>
--   [ReportingServices](add-reports-to-the-process-template.md)    
--   [reports](add-reports-to-the-process-template.md)    
--   [site](add-reports-to-the-process-template.md) (reporting)  
--   [site](define-project-portal-plug-in.md)  (portal)  
--   [task](define-tasks-to-process-a-plug-in.md)    
--   [tasklist](process-template-xml-elements-reference.md)    
--   [taskXml](define-tasks-to-process-a-plug-in.md)    
--   [TeamFoundationServer](define-work-item-query-process-template.md)    
--   [TeamProject](define-work-item-query-process-template.md)    
--   [TestConfigurations](define-initial-configuration-test-manager.md)    
--   [TestResolutionStates](define-initial-configuration-test-manager.md)    
--   [TestSettings](define-initial-configuration-test-manager.md)    
--   [TestVariables](define-initial-configuration-test-manager.md)    
--   [WI](add-work-item-instance-process-template.md)    
--   [Wiql](define-work-item-query-process-template.md)    
--   [WorkItemQuery](define-work-item-query-process-template.md)    
--   [WORKITEMS](add-work-item-instance-process-template.md)    
--   [WORKITEMTYPE](../xml/use-categories-to-group-work-item-types.md) (category)  
--   [WORKITEMTYPE](../xml/all-witd-xml-elements-reference.md) (definition)   
-</td>
+-   <a href="add-reports-to-the-process-template.md" data-raw-source="[ReportingServices](add-reports-to-the-process-template.md)">ReportingServices</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[reports](add-reports-to-the-process-template.md)">reports</a><br/>-   <a href="add-reports-to-the-process-template.md" data-raw-source="[site](add-reports-to-the-process-template.md)">site</a> (reporting)<br/>-   <a href="define-project-portal-plug-in.md" data-raw-source="[site](define-project-portal-plug-in.md)">site</a>  (portal)<br/>-   <a href="define-tasks-to-process-a-plug-in.md" data-raw-source="[task](define-tasks-to-process-a-plug-in.md)">task</a><br/>-   <a href="process-template-xml-elements-reference.md" data-raw-source="[tasklist](process-template-xml-elements-reference.md)">tasklist</a><br/>-   <a href="define-tasks-to-process-a-plug-in.md" data-raw-source="[taskXml](define-tasks-to-process-a-plug-in.md)">taskXml</a><br/>-   <a href="define-work-item-query-process-template.md" data-raw-source="[TeamFoundationServer](define-work-item-query-process-template.md)">TeamFoundationServer</a><br/>-   <a href="define-work-item-query-process-template.md" data-raw-source="[TeamProject](define-work-item-query-process-template.md)">TeamProject</a><br/>-   <a href="define-initial-configuration-test-manager.md" data-raw-source="[TestConfigurations](define-initial-configuration-test-manager.md)">TestConfigurations</a><br/>-   <a href="define-initial-configuration-test-manager.md" data-raw-source="[TestResolutionStates](define-initial-configuration-test-manager.md)">TestResolutionStates</a><br/>-   <a href="define-initial-configuration-test-manager.md" data-raw-source="[TestSettings](define-initial-configuration-test-manager.md)">TestSettings</a><br/>-   <a href="define-initial-configuration-test-manager.md" data-raw-source="[TestVariables](define-initial-configuration-test-manager.md)">TestVariables</a><br/>-   <a href="add-work-item-instance-process-template.md" data-raw-source="[WI](add-work-item-instance-process-template.md)">WI</a><br/>-   <a href="define-work-item-query-process-template.md" data-raw-source="[Wiql](define-work-item-query-process-template.md)">Wiql</a><br/>-   <a href="define-work-item-query-process-template.md" data-raw-source="[WorkItemQuery](define-work-item-query-process-template.md)">WorkItemQuery</a><br/>-   <a href="add-work-item-instance-process-template.md" data-raw-source="[WORKITEMS](add-work-item-instance-process-template.md)">WORKITEMS</a><br/>-   <a href="../xml/use-categories-to-group-work-item-types.md" data-raw-source="[WORKITEMTYPE](../xml/use-categories-to-group-work-item-types.md)">WORKITEMTYPE</a> (category)<br/>-   <a href="../xml/all-witd-xml-elements-reference.md" data-raw-source="[WORKITEMTYPE](../xml/all-witd-xml-elements-reference.md)">WORKITEMTYPE</a> (definition)<br/></td>
 </tr>
 </table>
 
- 
+
 <a name="pt"></a>   
 ##  Elements that define the root plug-in for process templates  
  The ProcessTemplate file contains two main parent elements within the **ProcessTemplate** root element: **metadata** and **groups**. The syntax for each of the following elements and their child elements is described in [Process template XML elements reference](process-template-xml-elements-reference.md).  
-  
+
 -   **metadata**: **description, name, plugin, plugins**   
 -   **groups: dependencies, dependency, group, tasklist**  
-  
+
 <a name="tasks"></a> 
 ##  Elements that define plug-in tasks  
  You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for each plug-in. You can access the topic that provides detailed information and examples for each plug-in and element in the following table.  
-  
+
 |Plug-in|Related topic|Elements|  
 |--------------|-------------------|--------------|  
 |All|[Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)|**dependencies, dependency, ProcessTemplate, task, tasks, taskXml**|  
@@ -139,10 +62,10 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Test Management|[Define the initial configuration of Test Manager](define-initial-configuration-test-manager.md)|**dependencies, dependency, TestConfigurations, TestResolutionState, TestSettings, TestVariables**|  
 |Version Control|[Define the initial configuration of Team Foundation version control](define-initial-configuration-version-control.md)|**checkin_note, exclusive_checkout, get_latest_on_checkout, permission**|  
 |Work Item Tracking|[Define objects for tracking work items](define-objects-track-work-items-plug-in.md)|**CATEGORIES, FIELD, GLOBALLISTS, HYPERLINK, LINKTYPE, LINKTYPES, Permission, Query, QueryFolder, QUERIES, WI, WORKITEMS, WORKITEMTYPE, WORKITEMTYPES**|  
-  
+
 ##  <a name="typedefinitions"></a> Type definition elements that define objects for tracking work  
  In the Work Item Tracking plug-in, you can specify several type definition files and query definition files to upload. You can access the topic that provides detailed information and examples for each object and element in the following table:  
-  
+
 |Object|Related topic|Elements|  
 |------------|-------------------|--------------|  
 |Categories|[Categories XML element reference](../xml/categories-xml-element-reference.md)|**CATEGORIES, CATEGORY**|  
@@ -150,7 +73,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Link types|[Define a custom link type](../xml/define-custom-link-type.md)|**LinkType, LinkTypes**|  
 |Work item queries|[Define a work item query](define-work-item-query-process-template.md)|**TeamFoundationServer, TeamProject, Wiql, WorkItemQuery**|  
 |Work item types|[All WITD elements](../xml/all-witd-xml-elements-reference.md)|Top level elements only: **DESCRIPTION, FIELDS (Definition), FORM, GLOBALLISTS, WITD, WORKFLOW, WORKITEMTYPE**|  
-  
+
 ## Related articles
 - [Support global teams](../xml/localization-and-globalization-of-witd-child-elements.md)   
 - [All WITD elements](../xml/all-witd-xml-elements-reference.md)   

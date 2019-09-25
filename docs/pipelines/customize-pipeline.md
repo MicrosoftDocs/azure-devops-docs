@@ -9,25 +9,19 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 4/24/2019
-monikerRange: "azure-devops"
+ms.date: 09/12/2019
+monikerRange: ">= azure-devops-2019"
 ---
 
 # Customize your pipeline
 
-**Azure Pipelines**
+[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
 ## Prerequisite
 
 Follow instructions in [Create your first pipeline](create-first-pipeline.md) to create a working pipeline.
-
-While you can use any of the sample repositories mentioned in [Create your first pipeline](create-first-pipeline.md) to complete this quickstart, we recommend using the sample Java project as some of the instructions in this topic are based on that sample repo.
-
-```
-https://github.com/MicrosoftDocs/pipelines-java
-```
 
 ## Understand the `azure-pipelines.yml` file
 
@@ -56,9 +50,9 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
           goals: 'package'
    ```
 
-> [!Note]
-> The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
-
+   > [!Note]
+   > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
+    
 This pipeline runs whenever your team pushes a change to the master branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
@@ -137,7 +131,7 @@ You can build and test your project on multiple platforms. One way to do it is w
       vmImage: $(imageName)
     ```
 
-* Select **Save** and then confirm the changes to see your build run three jobs on three different platforms.
+* Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
 
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../pipelines/licensing/concurrent-jobs.md).
 
@@ -229,13 +223,15 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
-* [.NET Core](languages/dotnet-core.md)
-* [Docker](languages/docker.md)
-* [Go](languages/go.md)
-* [Java](languages/java.md)
-* [Node.js](languages/javascript.md)
-* [Python](languages/python.md)
+* [.NET Core](ecosystems/dotnet-core.md)
+* [Containers](ecosystems/containers/build-image.md)
+* [Go](ecosystems/go.md)
+* [Java](ecosystems/java.md)
+* [Node.js](ecosystems/javascript.md)
+* [Python](ecosystems/python.md)
 
-Or, to learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
+Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../pipelines/process/deployment-jobs.md) with steps to deploy your app to an [environment](../pipelines/process/environments.md).
+
+To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).

@@ -27,7 +27,7 @@ void
 
 #### Parameters
 
-* `minWidth`: number. minimum number of pixels the fixed side will fill.
+* `minWidth`: number. minimum number of pixels the fixed side fills.
 
 <a name="method_setMaxWidth"></a>
 <h3 class='method'>setMaxWidth()</h3>
@@ -41,7 +41,7 @@ void
 
 #### Parameters
 
-* `maxWidth`: number. maximum number of pixels the fixed side will fill.
+* `maxWidth`: number. maximum number of pixels the fixed side fills.
 
 <a name="method_resize"></a>
 <h3 class='method'>resize()</h3>

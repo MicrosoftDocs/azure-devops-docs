@@ -5,8 +5,8 @@ ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'

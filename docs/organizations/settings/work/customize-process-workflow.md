@@ -18,7 +18,6 @@ ms.date: 04/22/2019
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
-
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
 
 Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
@@ -27,8 +26,6 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -64,7 +61,7 @@ States you add appear in the picklist for the States field shown in work item fo
 	> [!NOTE]   
 	> You can't change the order of states. States are listed in the order you add them within the **States** page, and they're listed alphabetically within the drop down list of a work item form).  
 	
-0. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
+1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
 
 	Here we show the State drop-down menu with Triaged selected. 
 
@@ -101,7 +98,7 @@ When you hide or remove a state:
 
 You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category. 
 
-0. Open the &hellip; context menu for the state you want to hide and choose the <strong>Hide</strong> option. 
+1. Open the &hellip; context menu for the state you want to hide and choose the <strong>Hide</strong> option. 
 
 	Here we hide the Resolved state for the Bug WIT. 
 
@@ -116,13 +113,13 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 <a id="remove-state"></a>
 ## Remove a custom state 
-0. Open the &hellip; context menu for the state you want to remove, and choose <strong>Remove</strong>. You can only remove a custom state.     
+1. Open the &hellip; context menu for the state you want to remove, and choose <strong>Remove</strong>. You can only remove a custom state.     
 
-0. From the Remove State dialog, click <strong>Remove</strong>.   
+1. From the Remove State dialog, click <strong>Remove</strong>.   
 
 	<img src="_img/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
-1.  If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
+2. If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
  
 
 ## Related articles   

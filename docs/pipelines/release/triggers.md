@@ -13,12 +13,17 @@ ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Release, branch, and stage triggers
+# Release triggers
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
 ::: moniker-end
 
 You can configure when releases should be created, and when those releases should be deployed to stages,
@@ -124,9 +129,10 @@ when a release is created by a continuous deployment trigger, based on:
   you can select the days of the week and the time of day that
   Azure Pipelines will automatically start a new deployment. Unlike scheduled
   release triggers, you cannot configure multiple schedules for stage triggers.
-  Note that, with scheduled triggers, a new deployment is created that deploys the 
-  artifacts from the _most recently available_ release, overwriting any previously deployed artifacts
-  for the stage. It does not necessarily require a newer version of the artifacts to be
+  Note that, with scheduled triggers, a new deployment request is created that deploys the 
+  artifacts from the current release. All deployment requests are executed on the stage as per the configured [queueing policies](../process/stages.md?tabs=classic#queuing-policies) defined on the stage.
+  For example, if the queueing policy is set to **Deploy latest and cancel the others**, any previously deployed artifacts
+  on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be
   available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)

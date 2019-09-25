@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: overview
 ms.date: 09/18/2018
 layout: LandingPage
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch policies
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 Branch policies are an important part of the Git workflow and enable you to:
 
@@ -35,9 +35,9 @@ Developers pushing changes directly to the protected branches will have their pu
 
 Keep your branch strategy simple by building your strategy from these three concepts:
 
-0. Use feature branches for all new features and bug fixes.
-0. Merge feature branches into the master branch using pull requests. 
-0. Keep a high quality, up-to-date master branch.  
+1. Use feature branches for all new features and bug fixes.
+2. Merge feature branches into the master branch using pull requests. 
+3. Keep a high quality, up-to-date master branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 

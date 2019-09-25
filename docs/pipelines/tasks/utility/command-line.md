@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/15/2019
+ms.date: 08/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,7 +30,9 @@ Use this task in a build or release pipeline to run a program from the command p
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
 
 The CmdLine task also has a shortcut syntax in YAML:
@@ -41,6 +45,19 @@ The CmdLine task also has a shortcut syntax in YAML:
   env: { string: string } # mapping of environment variables to add
 ```
 ::: moniker-end
+
+## Running batch and .CMD files
+
+Azure Pipelines puts your inline script contents into a temporary batch file (.cmd) in order to run it.
+When you want to run a batch file from another batch file in Windows CMD, you must use the `call` command, otherwise the first batch file is terminated.
+This will result in Azure Pipelines running your intended script up until the first batch file, then running the batch file, then ending the step.
+Additional lines in the first script wouldn't be run.
+You should always prepend `call` before executing a batch file in an Azure Pipelines script step.
+
+> [!IMPORTANT]
+> You may not realize you're running a batch file.
+> For example, `npm` on Windows, along with any tools that you install using `npm install -g`, are actually batch files.
+> Always use `call npm <command>` to run NPM commands in a Command Line task on Windows.
 
 ## Arguments
 
@@ -60,29 +77,32 @@ The CmdLine task also has a shortcut syntax in YAML:
 </tr>
 <tr>
 <td>Working directory</td>
-<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
+<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</td>
 </tr>
 <tr>
 <td>Fail on standard error</td>
 <td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
 </tr>
 <tr>
-<td>Env[ironment variables]</td>
-<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-```yaml
+<td>Environment variables</td>
+<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+<code>yaml
 - script: echo %MYSECRET%
   env:
-    MySecret: $(Foo)
-```
+    MySecret: $(Foo)</code>
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 - script: date /t
@@ -98,64 +118,63 @@ steps:
     aVarFromYaml: someValue
 ```
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 On the Build tab of a build pipeline, add these tasks:
 
 <table>
    <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**
+      <td>
+<img src="_img/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong>
       </td>
 <td>
 <p>Get the date.</p>
 <ul>
-<li>Tool: ```date```</li>
- <li>Arguments: ```/t```</li>
+<li>Tool: <code>date</code></li>
+ <li>Arguments: <code>/t</code></li>
 </ul>
       </td>
 </tr>
-   
-        <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+<tr>
+<td>
+<img src="_img/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the operating system version.</p>
 <ul>
-<li>Tool: ```ver```</li>
+<li>Tool: <code>ver</code></li>
  </ul>
 </td>
         </tr>
-
-   
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+      <td>
+<img src="_img/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the environment variables.</p>
 <ul>
-<li>Tool: ```set```</li>
+<li>Tool: <code>set</code></li>
 </ul>
 </td>
         </tr>
-
-   
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+      <td>
+<img src="_img/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
-<li>Tool: ```dir```</li>
- <li>Arguments: ```/s```</li>
-<li>Advanced, Working folder: ```$(Agent.BuildDirectory)```</li>
+<li>Tool: <code>dir</code></li>
+ <li>Arguments: <code>/s</code></li>
+<li>Advanced, Working folder: <code>$(Agent.BuildDirectory)</code></li>
 </ul>
 </td>
         </tr>
-
 </table>
 
----
 
+
+* * *
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -171,7 +190,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

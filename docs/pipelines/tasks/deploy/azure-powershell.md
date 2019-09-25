@@ -20,8 +20,11 @@ monikerRange: 'azure-devops'
 Use this task in a build or release pipeline to run a PowerShell script within an Azure environment.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -36,12 +39,16 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters.</td></tr>
 <tr><td>ErrorActionPreference</td><td>(Optional) Select the value of the ErrorActionPreference variable for executing the script.</td></tr>
 <tr><td>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream.</td></tr>
-<tr><td>Azure PowerShell Version</td><td>(Optional) In case of Microsoft-hosted agents, the supported Azure PowerShell Versions are: 2.1.0, 3.8.0, 4.2.1 and 5.1.1 (Hosted VS2017 pool), 3.6.0 (Hosted pool).
+<tr><td>Azure PowerShell Version</td><td>(Optional) In case of Microsoft-hosted agents, the supported Azure PowerShell version.
 To pick the latest version available on the agent, select "Latest installed version".
 
 For self-hosted agents you can specify preferred version of Azure PowerShell using "Specify version"</td></tr>
-<tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. The Hosted VS2017 pool currently supports versions: 2.1.0, 3.8.0, 4.2.1, 5.1.1</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+<tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported.</td></tr>
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Open source

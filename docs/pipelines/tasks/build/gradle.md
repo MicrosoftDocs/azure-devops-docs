@@ -14,14 +14,17 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Gradle task
- 
+
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -35,18 +38,18 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 </thead>
 <tr>
 <td>Gradle Wrapper</td>
-<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
-<p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p></td>
+<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the <code>gradlew.bat</code> wrapper. Agents on Linux or macOS can use the <code>gradlew</code> shell script.</p>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" data-raw-source="[The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)">The Gradle Wrapper</a>.</p></td>
 </tr>
 <tr>
 <td>Options</td>
 <td><p>Specify any command line options you want to pass to the Gradle wrapper.</p>
-<p>See [Gradle Command Line](https://docs.gradle.org/current/userguide/gradle_command_line.html).</p></td>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_command_line.html" data-raw-source="[Gradle Command Line](https://docs.gradle.org/current/userguide/gradle_command_line.html)">Gradle Command Line</a>.</p></td>
 </tr>
 <tr>
 <td>Tasks</td>
-<td><p>The task(s) for Gradle to execute. A list of tasks can be taken from `gradlew tasks` issued from a command prompt. </p>
-<p>See [Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html).</p></td>
+<td><p>The task(s) for Gradle to execute. A list of task names should be separated by spaces and can be taken from <code>gradlew tasks</code> issued from a command prompt. </p>
+<p>See <a href="https://docs.gradle.org/current/userguide/tutorial_using_tasks.html" data-raw-source="[Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)">Gradle Build Script Basics</a>.</p></td>
 </tr>
 <tr>
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
@@ -57,7 +60,7 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 </tr>
 <tr>
 <td>Test Results Files</td>
-<td>Test results files path.  Wildcards can be used.  For example, ```**/TEST-*.xml``` for all xml files whose name starts with TEST-."</td>
+<td>Test results files path.  Wildcards can be used.  For example, <code><em>*/TEST-</em>.xml</code> for all xml files whose name starts with TEST-.&quot;</td>
 </tr>
 <tr>
 <td>Test Run Title</td>
@@ -94,24 +97,29 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 <tr>
 <td>Run SonarQube Analysis</td>
 <td>Select if you want to run a SonarQube analysis.
-See [The Gradle build task now supports SonarQube analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/).
+See <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/" data-raw-source="[The Gradle build task now supports SonarQube analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/)">The Gradle build task now supports SonarQube analysis</a>.
 </td>
 </tr>
 <tr>
 <td>Run PMD Analysis</td>
-<td>Select if you want to perform a [PMD static analysis](https://pmd.github.io/).
-A build result page for each project is shown on the **Artifacts** tab of the completed build.
-See [Gradle build task now also supports PMD analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/).
+<td>Select if you want to perform a <a href="https://pmd.github.io/" data-raw-source="[PMD static analysis](https://pmd.github.io/)">PMD static analysis</a>.
+A build result page for each project is shown on the <strong>Artifacts</strong> tab of the completed build.
+See <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/" data-raw-source="[Gradle build task now also supports PMD analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/)">Gradle build task now also supports PMD analysis</a>.
 </td>
 </tr>
 <tr>
 <td>Run Checkstyle Analysis</td>
-<td>Select if you want to perform a [Checkstyle static analysis](http://checkstyle.sourceforge.net)
+<td>Select if you want to perform a <a href="http://checkstyle.sourceforge.net" data-raw-source="[Checkstyle static analysis](http://checkstyle.sourceforge.net)">Checkstyle static analysis</a>
 The build summary reports the number of issues found by Checkstyle. Detailed issue logs are available under the build Artifact tab of the build summary.
 If the Checkstyle analysis is customized, the task only attempts to find the reports and produce a summary.
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
@@ -132,18 +140,18 @@ The Gradle wrapper allows the build agent to download and configure the exact Gr
    JVM.
 
 1. Create the Gradle wrapper by issuing the following command from the root project directory where your 
-build.gradle resides:
+   build.gradle resides:
 
-  `jamal@fabrikam> gradle wrapper`
+   `jamal@fabrikam> gradle wrapper`
 
-0. Upload your Gradle wrapper to your remote repository.
-   
+2. Upload your Gradle wrapper to your remote repository.
+
    There is a binary artifact that is generated by the gradle wrapper ( located at `gradle/wrapper/gradle-wrapper.jar` ).
    This binary file is small and doesn't require updating. If you need to change the Gradle 
    configuration run on the build agent, you update the `gradle-wrapper.properties`.
-   
+
    The repository should look something like this:
-   
+
 ```
 |-- gradle/
     `-- wrapper/

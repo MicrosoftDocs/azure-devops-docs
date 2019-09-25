@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Properties Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about items under version control.
 
@@ -32,7 +32,7 @@ To use the **properties** command, you must have the **Read** permission set to 
 <tr><th><p><strong>Argument </strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-	<td><p>The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
+    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr>
 <tr>
 	<td><p><em>Itemspec</em></p></td>
 	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
@@ -41,7 +41,7 @@ To use the **properties** command, you must have the **Read** permission set to 
 	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
-	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>Domain</em>\<em>UserName</em> or <em>UserName</em>.</p></td></tr></tbody>
+    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>Domain</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td></tr></tbody>
 </table>
 
 |**Option**|**Description**|

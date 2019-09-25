@@ -1,13 +1,13 @@
-- name: Azure Artifacts
+- name: Azure Artifacts Documentation
   href: index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+- name: Azure Artifacts
+  href: get-started/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: What is Azure Artifacts?
     href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-  # - name: Sign up for Azure Artifacts
-  #   href: tbd
-  - name: License Azure Artifacts
-    href: license-azure-artifacts.md #remove after update
+  - name: Start using Azure Artifacts
+    href: start-using-azure-artifacts.md
   - name: Key concepts
     href: artifacts-key-concepts.md
 - name: Quickstarts
@@ -26,10 +26,14 @@
   items:
   - name: Create a private PowerShell repository
     href: tutorials/private-powershell-library.md
+  - name: Share packages publicly (preview)
+    href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
   - name: Communicate quality with release views
     href: feeds/views.md
+  - name: Migrate packages to Azure Artifacts
+    href: tutorials/migrate-packages.md
   - name: Move your packages to the cloud
     href: nuget/move-from-fileshares.md
 - name: Publish Artifacts with Azure Pipelines
@@ -54,10 +58,14 @@
     href: concepts/views.md
   - name: Upstream sources
     href: concepts/upstream-sources.md
+  - name: Feeds
+    href: concepts/feeds.md
   - name: Complete graphs
     href: concepts/package-graph.md
   - name: Symbols
     href: concepts/symbols.md
+  - name: Where is Package Management?
+    href: where-is-package-management.md
 - name: How-to
   items:
   - name: NuGet
@@ -138,5 +146,8 @@
     href: reference/artifactignore.md
 - name: Resources
   items: 
-  - name: Where is Package Management?
-    href: where-is-package-management.md
+  - name: Azure Repos
+    href: /azure/devops/repos 
+  - name: Azure Pipelines
+    href: /azure/devops/pipelines 
+

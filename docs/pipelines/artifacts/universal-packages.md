@@ -9,18 +9,15 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
-ms.date: 08/06/2018
+ms.author: phwilson
+author: chasewilson
+ms.date: 08/16/2019
 monikerRange: 'azure-devops'
 ---
 
 # Publish and download Universal Packages in Azure Pipelines
 
 **Azure Pipelines**
-
-> [!NOTE]
-> Universal Packages are currently in public preview.
 
 When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 
@@ -52,7 +49,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [personal access token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To publish the files that you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
 
@@ -95,7 +92,7 @@ In the **Universal Packages** snippet that you added previously, add the `versio
     packagePublishDescription: '<Package description>'
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 In the **Universal Packages** task that you configured previously, choose the appropriate **Version** increment option.
 
@@ -105,9 +102,8 @@ In the **Universal Packages** task that you configured previously, choose the ap
 
 You can also download a Universal Package from your pipeline.
 
-# [YAML](#tab/yaml)
-
-To download a Universal Package from a feed in your organization, use the following snippet: 
+#### [YAML](#tab/yaml/)
+To download a Universal Package from a feed in your organization to a specified destination, use the following snippet: 
 
 ```yaml
 steps:
@@ -118,13 +114,16 @@ steps:
     vstsFeed: 'fabrikamFeed'
     vstsFeedPackage: 'fabrikam-package'
     vstsPackageVersion: 1.0.0
+    downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | vstsFeed                       | Feed that the package will be downloaded from.     |
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
+| downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
 | [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
 
 To download a Universal Package from an external source, use the following snippet:
@@ -137,10 +136,11 @@ steps:
     command: download
     feedsToUse: external
     externalFeedCredentials: MSENG2
-    feedDownloadExternal: `fabrikamFeedExternal`
-    packageDownloadExternal: `fabrikam-package`
+    feedDownloadExternal: 'fabrikamFeedExternal'
+    packageDownloadExternal: 'fabrikam-package'
     versionDownloadExternal: 1.0.0
 ```
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
@@ -151,8 +151,7 @@ steps:
 | versionDownloadExternal        | Version of the package to be downloaded.        |
 | [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
 
 - **Command:** Download
@@ -165,7 +164,11 @@ To download a Universal Package, add the **Universal Package** task and configur
 
 ![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
 
----
+* * *
+
+### Downloading the latest version
+
+You can use a wildcard expression as the version to get the latest (highest) version of a package. For more information, see [Downloading the latest version](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) in the quickstart guide.
 
 ## Q&A
 

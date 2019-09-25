@@ -1,239 +1,34 @@
-- name: All settings
+- name: DevOps settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Overview
-  expanded: true
+- name: Build and release
   items:
-    - name: About settings
-      href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: When to add a team or project
-      href: ../projects/about-projects.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Quickstarts
+  - name: Agent pools & queues
+    href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Service endpoints
+    href: ../../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Retention & limits
+    href: ../../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Deployment pools & groups
+    href: ../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Code
   items:
-    - name: Get started as a project admin
-      href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Define area paths & assign to a team 
-      href: set-area-paths.md
-    - name: Define iteration paths (sprints) & configure team iterations
-      href: set-iteration-paths-sprints.md
-    - name: Add a team
-      href: add-teams.md
-    - name: Add a team administrator
-      href: add-team-administrator.md
-    - name: Add a custom field
-      href: ./work/add-custom-field.md
-    - name: Add a custom work item type
-      href: ./work/add-custom-wit.md
-    - name: View permissions
-      href: ../security/view-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Look up an owner or project admin
-      href: ../security/lookup-organization-owner-admin.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Add users to a project or team
-      href: ../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Tutorials
+  - name: Create & manage Git repositories
+    href: ../../git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage Git branch policies
+    href: ../../git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage repository permissions
+    href: ../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Add TFVC Check-In Policies
+    href: ../../tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Test
   items:
-    - name: Add and manage users
-      href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Configure a hierarchy of teams
-      href: ../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Change individual permissions
-      href: ../security/change-individual-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Grant or restrict permissions to select tasks
-      href: ../security/restrict-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Manage personal notifications
-      href: ../../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Customize a project
-      href: ./work/customize-process.md
-    - name: Create and manage a process
-      href: ./work/manage-process.md
-    - name: Add a project
-      href: ../accounts/create-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Concepts
+  - name: Set test retention policies
+    href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+- name: Audit
   items:
-    - name: "Area & iteration paths"
-      href: about-areas-iterations.md
-    - name: "Teams & Agile tools"
-      href: about-teams-and-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Notifications
-      href: ../../notifications/about-notifications.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Process customization
-      href: ./work/inheritance-process-model.md
-- name: How-to guides
-  items:
-    - name: Manage profile preferences
-      items:
-        - name: Set your preferences
-          href: set-your-preferences.md
-        - name: Enable preview features
-          href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Set personal or team favorites
-          href: ../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Add an alternate account to your Visual Studio subscription
-          href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Authentication
-          items:
-            - name: Authenticate access with personal access tokens
-              href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Authorize access to REST APIs with OAuth 2.0
-              href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Use SSH key authentication
-              href: ../../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Revoke users' PATs - for admins
-              href: ../accounts/admin-revoke-user-pats.md
-    - name: Make a project public or private
-      href: ../public/make-project-public.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Change service visibility
-      href: set-services.md
-    - name: Manage teams 
-      items:
-        - name: Manage teams and configure team tools
-          href: manage-teams.md
-        - name: Use work item templates
-          href: ../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Customize cards on boards
-          href: ../../boards/boards/customize-cards.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Reorder cards
-          href: ../../boards/boards/reorder-cards.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Select backlog levels
-          href: select-backlog-navigation-levels.md
-        - name: Show bugs on backlogs & boards
-          href: show-bugs-on-backlog.md
-        - name: Set working days
-          href: set-working-days.md
-        - name: Switch team context
-          href: ../../project/navigation/go-to-project-repo.md
-    - name: Security
-      items:
-        - name: Add administrators, set permissions
-          href: ../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Set Git or TFVC repository permissions
-          href: ../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Set build and release permissions
-          href: ../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Set work tracking permissions
-          href: ../security/set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Notifications
-      items:
-        - name: View your subscriptions, opt-out as needed
-          href: ../../notifications/unsubscribe-default-notification.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Change your email address
-          href: ../../notifications/change-email-address.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Manage team notifications
-          href: ../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Service hooks
-      href: ../../service-hooks/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Set dashboard permissions
-      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Extensions
-      items:
-        - name: Install extension
-          href: ../../marketplace/install-extension.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Assign paid extensions access
-          href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Approve requests for extensions
-          href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Uninstall or disable extensions
-          href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Process configuration
-      items:
-        - name: Add and manage fields
-          href: ./work/customize-process-field.md
-        - name: Add and manage work item types
-          href: ./work/customize-process-wit.md
-        - name: Customize a web form
-          href: ./work/customize-process-form.md
-        - name: Customize a workflow
-          href: ./work/customize-process-workflow.md
-        - name: Add a custom rule
-          href: ./work/custom-rules.md
-        - name: Add a custom control
-          href: ./work/custom-controls-process.md
-        - name: Customize backlogs & boards
-          href: ./work/customize-process-backlogs-boards.md
-        - name: Hosted XML process model
-          items:
-            - name: Hosted XML process overview
-              href: ./work/hosted-xml-process-model.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Customize a Hosted XML process
-              href: ./work/import-process/customize-process.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Import a process
-              href: ./work/import-process/import-process.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Customize form layout
-              href: ../../reference/customize-wit-form.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-            - name: Migrate Hosted XML to inherited
-              items:
-                - name: Supported clone operations
-                  href: ./work/upgrade-support-hosted-to-inherited.md
-                - name: Clone a Hosted XML process to Inheritance
-                  href: ./work/upgrade-hosted-to-inherited.md
-                - name: Change a project from Hosted XML to Inheritance
-                  href: ./work/change-process-from-hosted-to-inherited.md
-    - name: Build and release
-      items:
-        - name: Agent pools & queues
-          href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Service endpoints
-          href: ../../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Retention & limits
-          href: ../../pipelines/policies/retention.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Deployment pools & groups
-          href: ../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Code
-      items:
-        - name: Create & manage Git repositories
-          href: ../../git/create-new-repo.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Manage Git branch policies
-          href: ../../git/branch-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Manage repository permissions
-          href: ../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Add TFVC Check-In Policies
-          href: ../../tfvc/add-check-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Test
-      items:
-        - name: Set test retention policies
-          href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Manage your organization
-      items:
-        - name: Change owner
-          href: ../accounts/change-organization-ownership.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Rename organization
-          href: ../accounts/rename-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Delete organization
-          href: ../accounts/delete-your-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Recover organization
-          href: ../accounts/recover-your-organization.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-        - name: Change organization location (region)
-          href: ../accounts/change-organization-location.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Reference
-  items:
-    - name: "Default permissions & access"
-      href: ../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Work tracking object limits
-      href: ./work/object-limits.md
-    - name: REST APIs
-      items:
-        - name: Azure DevOps REST APIs
-          href: /rest/api/vsts
-        - name: Area and Iteration Paths
-          href: /rest/api/vsts/wit/classification%20nodes
-        - name: Processes
-          href: /rest/api/vsts/processes/processes
-        - name: Work Item Types
-          href: /rest/api/vsts/processdefinitions/work%20item%20types
-        - name: Add a custom control to a form
-          href: ../../extend/develop/custom-control.md
-        - name: Data protection overview
-          href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Resources
-  items:
-    - name: Manage projects
-      href: ../projects/index.md
-    - name: Security & identity
-      href: ../security/index.md
-    - name: READMEs & Wikis
-      href: ../../project/wiki/index.md
-    - name: "Manage extensions (Marketplace)"
-      href: ../../marketplace/index.md
-    - name: Manage organizations
-      href: ../accounts/index.md
-    - name: Billing
-      href: ../billing/index.md
+  - name: Access auditing
+    href: azure-devops-auditing.md
+
+
+
+

@@ -3,7 +3,7 @@ title: Troubleshoot connecting project
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
-ms.technology: devops-security
+ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 ms.manager: jillfra
@@ -39,9 +39,9 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 Two types of identities can sign in: Microsoft accounts and Azure Active Directory (Azure AD) accounts. Depending on your account, you might experience one of the following errors.
 
 > 401 - Not Authorized
-
+> 
 > [!div class="mx-imgBorder"]
-![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
+> ![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
 
 The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
 
@@ -55,9 +55,9 @@ If you think you're a member of the organization but are blocked by this error p
 Your work or school Azure AD account doesn't have access, but your personal Microsoft account does.
 
 > 401 - Work or school, or Personal account
-
+> 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
+> ![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
 
  A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
 
@@ -75,9 +75,9 @@ To sign out of your current work or school Azure AD account, select **Sign in wi
 Your personal Microsoft account doesn't have access, but your Azure AD account does. This scenario is an opposite version of the 401 error page. In this case, the personal account (Microsoft account identity) doesn't have access to the organization and the work or school account (Azure AD identity) does. The same guidance from Scenario 1 applies, but in reverse.
 
 > 401 - Work or school, or Personal account
-
+> 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
+> ![troubleshoot Azure DevOps connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
 
 ### Mitigation
 
@@ -114,7 +114,7 @@ When you use two or more organizations that are linked to Azure AD, such as orga
 When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
 
 > TF31003: Either you have not entered the necessary credentials, or your user account does not have permission to connect to the Team Foundation Server
-
+> 
 > TF31002: Unable to connect to this Team Foundation Server
 
 To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).

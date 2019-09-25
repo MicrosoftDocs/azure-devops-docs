@@ -35,7 +35,7 @@ You can synchronize data between Visual Studio Team Foundation Server (TFS) and 
     >  For Project Server 2013, both **Classic Mode** and **Claims Based** authentication are supported.  
   
 -   **For project managers**: Visual Studio 2012 and one of the following versions of Microsoft Project must be installed on the same machine that will be used to manage enterprise project plans that will participate in data synchronization with projects:  
-    -   Project Professional 2007 with SP2 and the update that you can download from the following page on the Microsoft website: [Description of the Office Project 2007 hotfix package (Project-x-none.msp): February 23, 2010](https://support.microsoft.com/en-us/help/2597955/description-of-the-project-2007-hotfix-package-project-x-none-msp-febr)  
+    -   Project Professional 2007 with SP2 and the update that you can download from the following page on the Microsoft website: [Description of the Office Project 2007 hotfix package (Project-x-none.msp): February 23, 2010](https://support.microsoft.com/help/2597955/description-of-the-project-2007-hotfix-package-project-x-none-msp-febr)  
     -   Project Professional 2007 with SP3  
     -   Project Professional 2010  
     -   Project Professional 2013.  
@@ -45,7 +45,7 @@ You can synchronize data between Visual Studio Team Foundation Server (TFS) and 
 
 <a id="compat" />
 ## TFS-Project Server version compatiblity
-**TFS 2017 discontinues support for Project Server**
+<strong>TFS 2017 discontinues support for Project Server</strong>
 
 > [!IMPORTANT]  
 > TFS 2017 and later versions no longer support native integration with Office Project Server. For more information, see [Synchronize TFS with Project Server, third-party support](sync-ps-tfs.md).

@@ -3,18 +3,18 @@ title: Quick code editing, backlog filtering, and more – Dec 17
 description: VSTS release notes for December 17 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: b3b83314-3e24-4e41-a94d-02fda9d458a4
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Quick code editing, backlog filtering, and more – Dec 17
+# Quick code editing, backlog filtering, and more – Dec 17
 
 Before we jump into the changes coming this week, I want to call out that this will be our last deployment of 2014. Our next sprint ends right in the middle of the holiday season, so we’ve chosen to skip that deployment. We’ll see you again in late January with our next update. Happy holidays everyone!
 
-##Quick code editing
+## Quick code editing
 
 This sprint we added the ability to make a quick edit to a file in version control directly from your web browser and then commit those changes straight back to the service. When browsing a source file, you now have an Edit command that puts the file into editing mode. Changes can then be made inline, complete with color coding and formatting support. As soon as you click the Save command, we create a new commit/changeset with your changes. Use the diff view to see exactly what changes you’re making before committing the changes. If the file is a Markdown or HTML file, you can also preview your changes before you save them.
 
@@ -34,7 +34,7 @@ We also enabled the ability to create links to existing (or new) markdown files 
 
 With these features we hope the creation and editing of your project documentation is easy and fast!
 
-##Filtering on backlogs and queries
+## Filtering on backlogs and queries
 
 Today we turned on a new feature that lets you quickly filter backlogs and query results. On the toolbar you’ll notice a new filter textbox. Just type in text from the items you’re looking for…
 
@@ -46,7 +46,7 @@ Today we turned on a new feature that lets you quickly filter backlogs and query
 
 While drag-and-drop reordering is disabled when filtering, the context menu on each item still lets you move an item to the top of your backlog or to a specific position.
 
-##Sprint backlog and task board improvements
+## Sprint backlog and task board improvements
 
 We made three usability updates to sprint backlogs and the task board.
 
@@ -66,19 +66,19 @@ And, you might have noticed in the screenshot above that we made a small change 
 
 [https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087)
 
-##New integrations: Slack and Azuqua
+## New integrations: Slack and Azuqua
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](http://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](http://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.
 
 To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://marketplace.visualstudio.com/vsts).
 
-##Preview APIs for adding and updating files in source control
+## Preview APIs for adding and updating files in source control
 
 REST APIs for adding, editing, renaming, and deleting files in TF Version Control and Git projects are now available for preview. These JSON-based APIs (which are used by the new quick code editing feature) enable you to create Changeset and Push resources via POST operations. For Git, you can add and update files in an existing branch or create a new branch. You can also rename, move, and delete files. One limitation, which will be addressed in the next deployment, is that these APIs are currently only callable when using basic authentication (not OAuth).
 
 To learn more about these APIs, see [Visual Studio Online REST API Versions and History](/rest/api/vsts/?view=vsts-rest-4.1#where-are-the-earlier-versions-of-rest-apis-before-41).
 
-##CodeLens for Visual Studio Online in Preview
+## CodeLens for Visual Studio Online in Preview
 
 Finally, we turned on the CodeLens feature for all Visual Studio Online accounts with today’s deployment. If you’re not familiar with CodeLens, head over to our [devops blog](http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/11/codelens-in-visual-studio-online-is-now-in-public-preview.aspx) to read about how you can start using it.
 

@@ -8,17 +8,19 @@ ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 04/17/2019
+ms.date: 05/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Pipeline runs
 
+![Pipeline overview](_img/run-overview.svg)
+
 When you run a pipeline, a lot of things happen under the covers.
 While you often won't need to know about them, once in a while it's useful to have the big picture.
 At a high level, Azure Pipelines will:
 - [Process the pipeline](#process-the-pipeline)
-- [Request one more more agents to run jobs](#request-an-agent)
+- [Request one or more agents to run jobs](#request-an-agent)
 - Hand off jobs to agents and collect the results
 
 On the agent side, for each job, an agent will:
@@ -34,11 +36,12 @@ Let's break down each action one by one.
 
 ## Process the pipeline
 
+![Expand YAML templates](_img/run-expansion.svg)
+
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
-2. Next, evaluate dependencies at the stage level to pick the first stage(s) to run.
-<!-- TODO: link to new content on stages once that's available. -->
-3. For each stage selected to run, evaluate [dependencies at the job level](multiple-phases.md#dependencies) to pick the first job(s) to run.
+2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
+3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#multi-configuration) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
@@ -55,7 +58,7 @@ After step 1, template parameters have been completely resolved and no longer ex
 ## Request an agent
 
 Whenever Azure Pipelines needs to run a job, it will ask the [pool](../agents/pools-queues.md) for an [agent](../agents/agents.md).
-([Server jobs](server-phases.md) are an exception, since they run on the Azure Pipelines server itself.)
+([Server jobs](phases.md#server-jobs) are an exception, since they run on the Azure Pipelines server itself.)
 [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/pools-queues.md) agent pools work slightly differently.
 
 ### Microsoft-hosted agent pool requests
@@ -69,6 +72,8 @@ Conceptually, the Microsoft-hosted pool is one giant, global pool of machines.
 (In reality, it's a number of different physical pools split by geography and operating system type.)
 Based on the `vmImage` (in YAML) or pool name (in the classic editor) requested, an agent is selected.
 
+![Pool selection](_img/run-select-pool.svg)
+
 All agents in the Microsoft pool are fresh, new virtual machines which haven't run any pipelines before.
 When the job completes, the agent VM will be discarded.
 
@@ -80,7 +85,7 @@ If there are no available parallel slots, the job has to wait on a slot to free 
 
 Once a parallel slot is available, the self-hosted pool is examined for a compatible agent.
 Self-hosted agents offer [capabilities](../agents/agents.md#capabilities), which are strings indicating that particular software is installed or settings are configured.
-The pipeline has [demands](../build/options.md#demands), which are the capabilities required to run the job.
+The pipeline has [demands](demands.md), which are the capabilities required to run the job.
 If a free agent whose capabilities match the pipeline's demands cannot be found, the job will continue waiting.
 If there are no agents in the pool whose capabilities match the demands, the job will fail.
 
@@ -98,6 +103,8 @@ Then it begins [running steps](#run-each-step).
 
 Steps are run sequentially, one after another.
 Before a step can start, all the previous steps must be finished (or skipped).
+
+![Run each task](_img/run-tasks.svg)
 
 Steps are implemented by [tasks](tasks.md).
 Tasks themselves are implemented as Node.js or PowerShell scripts.
@@ -127,6 +134,8 @@ Each step can report warnings, errors, and failures.
 Errors and warnings are reported to the pipeline summary page, marking the task as "succeeded with issues".
 Failures are also reported to the summary page, but they mark the task as "failed".
 A step is a failure if it either explicitly reports failure (using a `##vso` command) or ends the script with a non-zero exit code.
+
+![Logs and results flow from agent to service](_img/run-logging.svg)
 
 As steps run, the agent is constantly sending output lines to the service.
 That's why you can see a live feed of the console.

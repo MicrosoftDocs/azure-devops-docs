@@ -150,15 +150,15 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 **A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-	<TRANSITION from=" " to="New">  
-	   <FIELDS>  
-	     <FIELD refname="System.CreatedBy">  
-	          <VALIDUSER not="[Team Project Name]Project Valid Users" />  
-	     </FIELD>  
-	   </FIELDS>  
-	</TRANSITION>  	  
-```  
+> ```XML  
+>     <TRANSITION from=" " to="New">  
+>        <FIELDS>  
+>          <FIELD refname="System.CreatedBy">  
+>               <VALIDUSER not="[Team Project Name]Project Valid Users" />  
+>          </FIELD>  
+>        </FIELDS>  
+>     </TRANSITION>     
+> ```  
   
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:  
   
@@ -166,15 +166,15 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 - Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<TRANSITION from=" " to="New">  
-   <FIELDS>  
-     <FIELD refname="System.CreatedBy">  
-         <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
-     </FIELD>  
-   </FIELDS>  
-</TRANSITION>  
-```  
+> ```XML 
+> <TRANSITION from=" " to="New">  
+>    <FIELDS>  
+>      <FIELD refname="System.CreatedBy">  
+>          <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
+>      </FIELD>  
+>    </FIELDS>  
+> </TRANSITION>  
+> ```  
 
 
 <a name="delete"></a>  

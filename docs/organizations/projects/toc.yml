@@ -1,51 +1,19 @@
 - name: Manage projects
   href: index.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: About projects
-    href: about-projects.md
-  - name: What do I get with a project?
-    href: ../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+- name: About projects
+  href: about-projects.md
+- name: What do I get with a project?
+  href: ../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: Get started as an administrator
-    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Share your project vision
     href: project-vision-status.md
   - name: Connect a project to GitHub  
-    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Define area paths
-    href: ../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Define iteration paths or sprints
-    href: ../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Add users to a project or team 
-    href: ../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Add a team and members"
-    href: ../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Add admins or set perms
-    href: ../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-- name: Tutorials
-  items:
-  - name: Change individual permissions 
-    href: ../security/change-individual-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Grant or restrict permissions
-    href: ../security/restrict-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Customize a project
-    href: ../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../boards/github/install-github-app.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Customize a project
-    href: ../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: About areas and iterations
-    href: ../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: About teams and Agile tools
-    href: ../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Resources granted to members
-    href: resources-granted-to-project-members.md
-  - name: Clients & tools
-    href: ../../user-guide/tools.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Azure DevOps Services vs Azure DevOps Server"
-    href: ../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: resources-granted-to-project-members.md 
 - name: How-to guides
   items:
   - name: Create a project
@@ -57,10 +25,12 @@
   - name: Restore a project
     href: restore-project.md
   - name: Change service visibility
-    href: ../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../settings/set-services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Set project visibility
+    href: ../public/make-project-public.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Save project data
     href: save-project-data.md
-  - name: Connect to projects
+  - name: Connect a project
     href: connect-to-projects.md
 - name: Troubleshooting
   items:
@@ -69,34 +39,10 @@
   - name: Rename a project
     href: faq-rename-project.md
   - name: Add administrators
-    href: ../accounts/faq-add-administrators.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../accounts/faq-add-administrators.md
   - name: Set up Visual Studio
-    href: ../accounts/faq-set-up-vs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../accounts/faq-set-up-vs.md
   - name: Troubleshoot connection
-    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
-    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-- name: Reference
-  items:
-  - name: Features index
-    href: ../../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Default permissions & access"
-    href: ../security/permissions-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Permission lookup guide"
-    href: ../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Data protection overview
-    href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Start using Azure DevOps
-    href: ../../user-guide/index.yml
-  - name: "Security & identity"
-    href: ../security/index.md
-  - name: Notifications
-    href: ../../notifications/index.md
-  - name: Public projects
-    href: ../public/index.md
-  - name: All settings
-    href: ../settings/index.md
-  - name: Migration & Import
-    href: ../../migrate/index.md
+    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

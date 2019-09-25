@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -26,7 +26,7 @@ Used by IHostDialogService.openMessageDialog().
 
 * `escapeButton`: [IMessageDialogButton](../../../VSS/References/VSS_SDK_Interfaces/IMessageDialogButton.md). Optional. Button to use when the user presses the Esc key. Default is the last button.
 
-* `requiredTypedConfirmation`: string. Optional. If this is set, the user will be presented with a text box. Non-rejecting buttons will be disabled until the user types in this string.
+* `requiredTypedConfirmation`: string. Optional. If this is set, the user is presented with a text box. Non-rejecting buttons are disabled until the user types in this string.
 
 * `title`: string. Optional. Text for the title bar of the dialog. Default is &quot;Confirm&quot;.
 

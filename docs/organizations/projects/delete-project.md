@@ -11,51 +11,31 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/19/2018
+ms.date: 07/08/2019
 ---
 
 # Delete a project
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are in use.
+In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are only in use.
 
 > [!Caution]
-> Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md).
+> Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
+::: moniker range=">= azure-devops-2019"
 
 ## Delete project
 
-> [!CAUTION]
-> If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open the project that you want to delete.
 
-::: moniker range=">= tfs-2017"
+2. Select **Project settings** > **Overview**, scroll down the page to find "Delete project", and then select **Delete**."
 
-1. Open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to delete and choose **Delete**.
+    ![Select Project settings, Overview, and scroll to delete project](_img/delete-project/select-project-settings-overview-scroll-delete.png)
 
-   > [!div class="mx-imgBorder"]
-   > ![Choose Delete menu option](_img/delete-project/choose-delete-menu-option.png)
+3. To confirm deletion, enter the project name into the popup screen, and then select **Delete**.
 
-    If you don't see the actions icon ![actions icon image](../../_img/icons/actions-icon.png), either you're not accessing Azure DevOps or you're not a member of the Project Collection Administrators group. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
-
-2. Enter the name of the project, and then select **Delete**.
-
-   >[!div class="mx-imgBorder"]
-   ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-0. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to delete and choose **Delete**.
-
-   If you don't see the ![](../../_img/icons/context-menu.png) context icon menu, you don't have the permissions to delete the project. Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
-
-0. You must enter the name of the project in order to initiate the delete operation.
-
-   >[!div class="mx-imgBorder"]
-   ![delete-team-project-dialog](_img/delete-project/delete-team-project-dialog.png)
+    ![popup confirmation delete project screen](_img/delete-project/confirm-delete-project.png)
 
 Your project is deleted and can be restored up to 28 days afterward.
 
@@ -65,9 +45,12 @@ Your project is deleted and can be restored up to 28 days afterward.
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
+
+[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
+
 ## Delete a project from TFS
 
-Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/ref/command-line/tfsdeleteproject-cmd) to delete all artifacts.
+Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
 1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator-tfs):
 

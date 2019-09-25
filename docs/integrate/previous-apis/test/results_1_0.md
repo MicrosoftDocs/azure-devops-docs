@@ -7,8 +7,8 @@ description: Work with test results programmatically using the REST APIs for Tea
 ms.assetid: FCBFFCFB-E57E-492F-9984-BD9C77EA4153
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/25/2016
 ---
 
@@ -558,7 +558,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/
 ```
 
 
-##Get a list of action results
+## Get a list of action results
 
 Gets the action results for an iteration in a test result.
 
@@ -646,7 +646,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/
 ```
 
 
-##Get a list of parameterized results
+## Get a list of parameterized results
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results/{result}/iterations/{iteration}/parameterresults?api-version={version}[&paramName={string}]

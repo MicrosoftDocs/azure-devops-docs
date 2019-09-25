@@ -1,10 +1,11 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md", 
+          "**/*.yml"
         ],
         "group": "all",
         "exclude": [
@@ -43,7 +44,7 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps Services", "Azure DevOps", "VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
+      "searchScope": ["Azure DevOps Services"],
       "author": "thomps23",
       "ms.author": "jillfra",
       "ms.date": "09/05/2018",
@@ -54,7 +55,12 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
-      "toc_preview": true  
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.team-services",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {
       "titleSuffix": {

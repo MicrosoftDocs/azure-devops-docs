@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Developing extensions for Azure DevOps Services vertical web navigation | Azure DevOps Services
-description: Guidance for developing Azure DevOps Services extensions that will be used in the new vertical web navigation
+description: Guidance for developing Azure DevOps Services extensions to be used in the new vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: jillfra
@@ -99,7 +99,7 @@ var menuContributionHandler = (function () {
 
 You can optionally set an asset (like a .png or .jpg) as the icon for your hub. This icon appears next to the hub in the vertical navigation bar. It must be packaged with your extension.
 
-> Note: these icons will not appear in horizontal navigation
+> Note: these icons don't appear in horizontal navigation
 
 To set an icon for your hub:
 

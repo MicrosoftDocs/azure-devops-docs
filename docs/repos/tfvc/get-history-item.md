@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Get the history of an item
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation version control maintains historical data related to every version of every file that has ever been checked in.
 
@@ -146,15 +146,15 @@ All labels that have been applied to the item are listed in a table that include
 
 ## Common Tasks
 
-|Task|Supporting content|
-|---|---|
-|**View the item as it existed when the labeled changeset was checked in:** Right-click a label and then click **View**. (This command is available only if the item is a file.)|None|
-|**Edit the label:** Right-click the label and click **Edit Label**.| [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md) |
-|**Delete the label: **Right-click the label and click **Delete Label**.| [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md) |
-|**Compare a past version of the item with the current version:** Right-click a label and then click **Compare** to compare a past version of the item with the current version.| [Compare files](compare-files.md) [Compare folders](compare-folders.md) |
-|**Get a past version of the item: **Right-click a label and then click **Get This Version** to download the past version of the item to your workspace.| [Download (get) files from the Server](download-get-files-from-server.md) |
-|**View other branches to which the labeled changeset has merged: **Right-click the label and click **Track Changeset**. (This command is available only if the item is a file.)| [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) |
-|**View which users made specific changes within the labeled version of a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.)| [View file changes using annotate](view-file-changes-using-annotate.md) |
+|                                                                                             Task                                                                                              |                                        Supporting content                                         |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+|        **View the item as it existed when the labeled changeset was checked in:** Right-click a label and then click **View**. (This command is available only if the item is a file.)        |                                               None                                                |
+|                                                              **Edit the label:** Right-click the label and click **Edit Label**.                                                              |       [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md)       |
+|                                                          **Delete the label: \*\*Right-click the label and click \*\*Delete Label**.                                                          |       [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md)       |
+|        **Compare a past version of the item with the current version:** Right-click a label and then click **Compare** to compare a past version of the item with the current version.        |              [Compare files](compare-files.md) [Compare folders](compare-folders.md)              |
+|                  **Get a past version of the item: \*\*Right-click a label and then click \*\*Get This Version** to download the past version of the item to your workspace.                  |             [Download (get) files from the Server](download-get-files-from-server.md)             |
+|      **View other branches to which the labeled changeset has merged: \*\*Right-click the label and click \*\*Track Changeset**. (This command is available only if the item is a file.)      | [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) |
+| **View which users made specific changes within the labeled version of a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.) |              [View file changes using annotate](view-file-changes-using-annotate.md)              |
 
 ## See Also
 

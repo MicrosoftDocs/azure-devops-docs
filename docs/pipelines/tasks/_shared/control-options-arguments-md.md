@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-[Control options](../../process/tasks.md#controloptions)
+[Control options](/azure/devops/pipelines/process/tasks#controloptions)

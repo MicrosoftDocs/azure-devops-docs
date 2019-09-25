@@ -1,11 +1,9 @@
 - name: Notifications
   href: index.md
-- name: Overview
-  items:
-  - name: About notifications
-    href: about-notifications.md
-  - name: Navigating the UI
-    href: navigating-the-ui.md 
+- name: About notifications
+  href: about-notifications.md
+- name: Navigating the UI
+  href: navigating-the-ui.md 
 - name: Concepts
   items:
   - name: Events and notifications
@@ -15,12 +13,13 @@
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
+  - name: Set alerts, get notified when changes occur
+    href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
-
 - name: How-to guides
   items:
   - name: Manage organization notifications
@@ -58,19 +57,8 @@
   - name: Events
     href: oob-supported-event-types.md
   - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
-  - name: Data protection overview
-    href: ../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
-- name: Resources    
-  items:
-  - name: Git
-    href: ../repos/git/index.md
-  - name: Work items
-    href: ../boards/work-items/index.md
-  - name: Service Hooks
-    href: ../service-hooks/index.md
-  - name: REST API
-    href: https://visualstudio.microsoft.com/docs/integrate/api/notification/subscriptions
+
 

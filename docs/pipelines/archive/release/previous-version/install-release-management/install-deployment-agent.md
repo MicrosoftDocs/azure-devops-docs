@@ -30,10 +30,11 @@ for these has sufficient permissions to do whatever tasks are required for
 the release. The service account you use for the deployment agents is 
 automatically added to Release Management.
 
-***Tip:*** _As good practice, do not install the deployment agent on the 
-same machine as the Release Management server. If you do install the two on 
-the same machine and you need to upgrade, uninstall the server before you 
-uninstall the deployment agent._ 
+> [!TIP]
+> As good practice, do not install the deployment agent on the 
+> same machine as the Release Management server. If you do install the two on 
+> the same machine and you need to upgrade, uninstall the server before you 
+> uninstall the deployment agent. 
  
 ## Install and configure the Microsoft deployment agent
 
@@ -42,10 +43,11 @@ uninstall the deployment agent._
    where you will install the agent. You must also be a member of the 
    **Release Manager** role in Release Management.
 
-   ***Tip:*** _Do you need to add team mates to the **Release Manager** role 
-   in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
+   > [!TIP]
+   > Do you need to add teammates to the **Release Manager** role 
+   > in Release Management? See [Add users to Release Management](../add-users-and-groups.md).
 
-1. If you have not already downloaded the deployment agent, 
+2. If you have not already downloaded the deployment agent, 
    **[do this now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)**.
 
    _Note that this is a 90-day trial version of Release Management. For 
@@ -56,18 +58,19 @@ uninstall the deployment agent._
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
-1. Launch **rm_Deployment.exe**. If you want to install to a specific location 
+3. Launch **rm_Deployment.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
    ![Starting the installation of the agent](_img/install-agent-02.png)
 
-1. Restart your computer, if prompted, and then choose **Launch**.
+4. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
-1. Specify the account to run the Microsoft Deployment Agent Windows 
+5. Specify the account to run the Microsoft Deployment Agent Windows 
    service and the URL of the Release Management Server. If you use a user 
    account, choose **Test** to verify the password. The deployment agent uses 
    this identity to configure this machine for your release. Make sure the 
@@ -77,17 +80,17 @@ uninstall the deployment agent._
    **Administrators** security group. If this identity will need to access 
    builds on the network, make sure it has access to the network drop location.
 
-   ***Important:*** _If you specify an alternative account as the identity for 
+   ***Important:*** <em>If you specify an alternative account as the identity for 
    the agent, this must be in the form **domain\user**. Do not use the format 
-   **user@domain**._
+   <strong>user@domain</strong>.</em>
 
    ![Configuring the agent service account and server location](_img/install-agent-03.png)
  
-1. Choose **Apply settings**.
+6. Choose **Apply settings**.
 
    ![Configuration summary page](_img/install-agent-04.png)
 
-1. After the success message appears, close the configuration summary. Repeat
+7. After the success message appears, close the configuration summary. Repeat
    these steps as required on every computer in the environment.
 
 ## Related topics

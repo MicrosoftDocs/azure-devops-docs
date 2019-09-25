@@ -1,0 +1,43 @@
+- name: Azure DevOps Reporting Documentation
+  expanded: false
+  href: index.md  
+- name: Reporting roadmap 
+  href: powerbi/reporting-roadmap.md
+- name: Dashboards, Charts, Reports, & Widgets   
+  href: dashboards/toc.yml  
+- name: Power BI Integration 
+  href: powerbi/toc.yml  
+- name: Extend Analytics with OData (Preview)  
+  href: extend-analytics/toc.yml  
+- name: SQL Server Reporting (Legacy)  
+  href: sql-reports/toc.yml 
+- name: SharePoint Integration (Deprecated)  
+  href: sharepoint-dashboards/toc.yml 
+- name: REST API Reference
+  items:
+  - name: Dashboards
+    href: /rest/api/azure/devops/dashboard/dashboards
+  - name: Widgets
+    href: /rest/api/azure/devops/dashboard/widgets
+  - name: Charts
+    href: /rest/api/azure/devops/work/charts
+  - name: Build Report
+    href: /rest/api/azure/devops/build/report
+- name: Resources
+  items:
+  - name: Azure Boards  
+    href: /azure/devops/boards/index
+  - name: Azure Test Plans  
+    href: /azure/devops/test-plans/index
+  - name: Azure Pipelines  
+    href: /azure/devops/pipelines/index
+  - name: Work item field index  
+    href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Marketplace widgets
+    href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+  - name: Power BI Documentation
+    href: /power-bi/
+  - name: "Developer Community: Power BI support forum"
+    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
+  - name: OData Extension for Data Aggregation Version 4.0
+    href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

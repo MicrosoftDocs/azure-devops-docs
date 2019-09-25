@@ -7,14 +7,14 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
-ms.date: 09/26/2018
+ms.date: 09/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Use SSH key authentication
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 Update 3
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Connect to your Git repos through SSH on macOS or Linux, or on Windows when you can't (or don't want to) use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
@@ -97,23 +97,23 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 Associate the public key generated in the previous step with your user ID.
 
-0.  Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
-user interface. Select **Security** in the menu that appears.
+1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
+   user interface. Select **Security** in the menu that appears.
 
-    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
+   ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
-0. Select **SSH Public Keys** , then select **Add**.
+2. Select **SSH public keys** , then select **+New Key**.
 
     ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. 
+3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
-  >[!IMPORTANT]
-  >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
+   >[!IMPORTANT]
+   >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
     ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
 
-0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
+4. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
 <a name="copy-url"></a>
 
@@ -122,13 +122,13 @@ user interface. Select **Security** in the menu that appears.
 >[!NOTE]
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
+1. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
    ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
 
    [!INCLUDE [project-urls](../../_shared/project-urls.md)]
  
-0. Run `git clone` from the command prompt. 
+2. Run `git clone` from the command prompt. 
 
    ```
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
@@ -204,7 +204,7 @@ eval `ssh-agent`
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
-Copy you public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
+Copy your public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
 
 ### How can I verify that the public key I uploaded is the same key as I have locally?
 
@@ -240,8 +240,8 @@ Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to conne
 
 To use keys created with `ssh-keygen` in a different place than the default, you do two things:
 
-0. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
-0. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
+1. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
+2. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
 
 ```
 ssh-add /home/jamal/.ssh/id_jamal.rsa
@@ -263,6 +263,78 @@ You can find `ssh-add` as part of the Git for Windows distribution and also run 
 
 On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
 takes care of starting `ssh-agent` for you.
+
+### I have multiple SSH keys.  How do I use different SSH keys for different SSH servers or repos?
+Generally, if you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
+
+However, this doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured.  Azure DevOps will blindly accept the first key that the client provides during authentication.  If that key is invalid for the requested repo, the request will fail with the following error:
+> ```
+> remote: Public key authentication failed.
+> fatal: Could not read from remote repository.
+> ```
+
+For Azure DevOps, you'll need to configure SSH to explicitly use a specific key file.  One way to do this to edit your `~/.ssh/config` file (for example, `/home/jamal/.ssh` or `C:\Users\jamal\.ssh`) as follows:
+```
+# The settings in each Host section are applied to any Git SSH remote URL with a matching hostname.
+# Generally:
+# * SSH uses the first matching line for each parameter name, e.g. if there's multiple values for a
+#   parameter across multiple matching Host sections
+# * "IdentitiesOnly yes" prevents keys cached in ssh-agent from being tried before the IdentityFile
+#   values we explicitly set.
+# * On Windows, ~/.ssh/your_public_key maps to %USERPROFILE%\.ssh\your_public_key, e.g.
+#   C:\Users\<username>\.ssh\your_public_key.
+
+# To use the same key across all hosted Azure DevOps organizations, where the SSH URL host is
+# ssh.dev.azure.com (like git@ssh.dev.azure.com:v3/some_organization/some_project/some_repo), add
+# the Host section below:
+Host ssh.dev.azure.com
+IdentityFile ~/.ssh/your_public_key
+IdentitiesOnly yes
+
+# Since all hosted Azure DevOps URLs have the same hostname (ssh.dev.azure.com), if you need
+# different keys for different organizations (or just different repos within the same organization),
+# you'll need to use host aliases to create separate Host sections.
+#
+# Imagine that we have the following two SSH URLs:
+# * git@ssh.dev.azure.com:v3/org1/org1_project/org1_repo
+#   * For this, we want to use key1, so we'll use devops_key1 as the Host alias.
+# * git@ssh.dev.azure.com:v3/org2/org2_project/org2_repo
+#   * For this, we want to use key2, so we'll use devops_key2 as the Host alias.
+#
+# You'll need to substitute ssh.dev.azure.com with the Host alias in the SSH URL you use with Git.
+# The SSH URLs above become:
+# * git@devops_key1:v3/org1/org1_project/org1_repo
+# * git@devops_key2:v3/org2/org2_project/org2_repo
+#
+# To set explicit keys for the two host aliases and to tell SSH to use the correct actual hostname,
+# add the next two Host sections:
+Host devops_key1
+HostName ssh.dev.azure.com
+IdentityFile ~/.ssh/public_key_for_org1
+IdentitiesOnly yes
+Host devops_key2
+HostName ssh.dev.azure.com
+IdentityFile ~/.ssh/public_key_for_org2
+IdentitiesOnly yes
+
+# If you have an SSH URL where the hostname is vs-ssh.visualstudio.com, from when Azure DevOps was
+# formerly called Visual Studio Team Services, add the following Host section.
+# Alternately, you can just replace the hostname in your SSH URL with ssh.dev.azure.com.  Both
+# ssh.dev.azure.com and vs-ssh.visualstudio.com point to the same place.
+Host vs-ssh.visualstudio.com
+IdentityFile ~/.ssh/your_public_key
+IdentitiesOnly yes
+
+# If you have an on-premises Azure DevOps Server instance, where SSH URLs look like
+# ssh://someHost:22/someCollection/some_project/_git/some_repo, add the following Host section:
+Host someHost
+IdentityFile ~/.ssh/your_public_key
+IdentitiesOnly yes
+
+# Put global defaults here.  Note that "*" also matches any hosts that match the sections above, and
+# remember that SSH uses the first matching line for each parameter name.
+Host *
+```
 
 ### What notifications may I receive regarding my SSH keys?
 

@@ -35,21 +35,21 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the tasks that are counted in the report by specifying iteration and area paths and work item states. You can also filter the report to show user stories and bugs.  
+- Filter the tasks that are counted in the report by specifying iteration and area paths and work item states. You can also filter the report to show user stories and bugs.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
+  For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
- You can use the Burndown and Burn Rate report to understand how well the team is progressing and whether the team or a team member is over-allocated. The upper section of the report displays a version of the Remaining Work report, as the following illustration shows.  
+  You can use the Burndown and Burn Rate report to understand how well the team is progressing and whether the team or a team member is over-allocated. The upper section of the report displays a version of the Remaining Work report, as the following illustration shows.  
   
- ![Example Burndown and Velocity report &#45; bottom](_img/procguid_burndownbottom.png "ProcGuid_BurndownBottom")  
+  ![Example Burndown and Velocity report &#45; bottom](_img/procguid_burndownbottom.png "ProcGuid_BurndownBottom")  
   
- In addition, you can display trend lines that predict when work will be completed. The ideal trend line calculates a slope or trajectory for when work will be completed based on the amount of work remaining and the end date that you define for the report. The actual trend line is calculated based on the team's actual progress in completing work and closing work items.  
+  In addition, you can display trend lines that predict when work will be completed. The ideal trend line calculates a slope or trajectory for when work will be completed based on the amount of work remaining and the end date that you define for the report. The actual trend line is calculated based on the team's actual progress in completing work and closing work items.  
   
- The lower section of the report presents a calculation of the team's burn rate, both actual and required, and a breakdown of work assignments to each team member, as the following illustration shows:  
+  The lower section of the report presents a calculation of the team's burn rate, both actual and required, and a breakdown of work assignments to each team member, as the following illustration shows:  
   
- ![Example Burndown and Velocity report &#45; top](_img/procguid_part2burndown.png "ProcGuid_Part2Burndown")  
+  ![Example Burndown and Velocity report &#45; top](_img/procguid_part2burndown.png "ProcGuid_Part2Burndown")  
   
 ### Burndown  
  Burndown shows the trend of how much work has been completed and how much work remains across time in an iteration or a release. The source of the raw data is either work hours or work remaining, which is tracked on the vertical axis, and the time period (days), which is tracked on the horizontal axis.  
@@ -98,11 +98,11 @@ After a team has worked on one or more iterations, also known as sprints, you ca
 ##  <a name="Interpreting"></a> Interpreting the Report  
  You can filter the report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, work item types, and work item states.  
+- Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, work item types, and work item states.  
   
- For more information, see [Filtering of the Report and Changing the Display](#Changing) later in this article.  
+  For more information, see [Filtering of the Report and Changing the Display](#Changing) later in this article.  
   
 ### Questions That the Report Answers  
  You can review the report to determine the progress that the team made within an iteration or over time. For example, you can find answers to the following questions:  
@@ -148,15 +148,15 @@ After a team has worked on one or more iterations, also known as sprints, you ca
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Burndown and Burn Rate report or change its display in the following ways:  
   
--   Filter the user stories, bugs, and tasks that the report represents by specifying iteration and area paths, work item types, and work item states  
+- Filter the user stories, bugs, and tasks that the report represents by specifying iteration and area paths, work item types, and work item states  
   
--   Change the view.  
+- Change the view.  
   
--   Specify the type of trend line to display.  
+- Specify the type of trend line to display.  
   
- The following illustration shows the available filters and display options:  
+  The following illustration shows the available filters and display options:  
   
- ![Filters for the Burndown and Velocity report](_img/procguid_burndown.png "ProcGuid_Burndown")  
+  ![Filters for the Burndown and Velocity report](_img/procguid_burndown.png "ProcGuid_Burndown")  
   
 #### To filter the set of work items that are counted in the report  
   

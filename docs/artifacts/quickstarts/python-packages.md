@@ -5,36 +5,19 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 10/31/2018
 monikerRange: '=azure-devops'
 ---
 
 # Get started with Python packages in Azure Artifacts
 
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+
 This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
 
-> [!NOTE]
-> Python package functionality in Azure Artifacts is currently in public preview.
-
-## Step 1: License the Azure Artifacts extension
-
-### Assign Azure Artifacts in Azure DevOps Services
-
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
-
-Assign your licenses by following these instructions:
-
-1. Go to your organization and select **Admin settings** on the lower left of the UX.
-2. Select **Users**.
-3. Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
-4. If you're selecting multiple users, select **Assign extensions** and choose the Azure Artifacts extension. If you're selecting only one user, select the Azure Artifacts box under **Extensions** and select **Save changes**.
-
-If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-
-## Step 2: Create a feed
+## Create a feed
 
 On your first visit to Azure Artifacts, you're welcomed with an image that prompts you to create a new feed. Select the **+ New feed** button.
 
@@ -50,7 +33,32 @@ In the dialog box:
 
 You can change these settings later by [editing the feed](../feeds/edit-feed.md).
 
-## Step 3: Connect to your feed
+## Connect to your feed
+
+There are two primary ways to connect to a feed to push or pull Python packages:
+1. Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you
+2. Set up your `pip.ini`/`pip.conf` for pushes, or your `.pypirc` for pulls, manually with credentials via a PAT
+
+### Option 1: Connect with Python Credential Provider (preview) to automate authentication
+
+The Python Credential Provider is a package (artifacts-keyring) in public preview that can be installed from the Python Package Index (PyPI). It allows the [pip command](https://pypi.org/project/pip/) (for package pulls) and the [twine command](https://pypi.org/project/twine/) (for package pushes) to authenticate to your feed by sending you through an authentication flow in your web browser. 
+
+**IMPORTANT:** You must have `pip version 19.2` and `twine version 1.13.0` or higher installed to use the Python Credential Provider.
+
+1. From your command-line, install the [artifacts-keyring package](https://github.com/microsoft/artifacts-keyring):
+    
+    `pip install artifacts-keyring --pre`
+
+2. Install or upload packages to your feed:
+    1. Install: `pip install <package_name> --index-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/simple`
+    2. Upload: `twine upload --repository-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/upload <package_wheel_or_other_dist_format>`
+3. Follow the authentication flow in your browser
+
+> [!NOTE]
+> The Python Credential Provider is designed for manual interaction. If you want to set up authentication in an Azure DevOps pipeline, you will want to use the [Pip Authenticate Task](../../pipelines/tasks/package/pip-authenticate.md) for installing packages or [Twine Authentication Task](../../pipelines/tasks/package/twine-authenticate.md) for pushing.
+
+
+### Option 2: Connect by manually configuring authentication
 
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
@@ -66,11 +74,11 @@ This will bring up instructions on how to publish a package to your feed by usin
 
 ### Publish Python packages from your builds
 
-If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](/azure/devops/pipelines/targets/pypi).
+If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](../../pipelines/targets/pypi.md).
 
 ### Build Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azure-devops).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](../../pipelines/ecosystems/python.md).
 
 ## Resources
 

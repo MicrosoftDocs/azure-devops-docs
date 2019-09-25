@@ -28,27 +28,27 @@ ms.date: 01/12/2017
   
 #### To list registered instances of PWA  
   
-1.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+1. Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
-    ```  
-    cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
-    ```  
+   ```  
+   cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
+   ```  
   
-     On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles**.  
+    On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles**.  
   
-2.  Type the following command, and then choose the **ENTER** key.  
+2. Type the following command, and then choose the **ENTER** key.  
   
-    ```  
-    TfsAdmin ProjectServer /GetRegisteredPWA /tfs:tfsUrl  
-    ```  
+   ```  
+   TfsAdmin ProjectServer /GetRegisteredPWA /tfs:tfsUrl  
+   ```  
   
-     Replace *tfsUrl* with the uniform resource locator (URL) of the application-tier server.  
+    Replace *tfsUrl* with the uniform resource locator (URL) of the application-tier server.  
   
-     The following message appears:  
+    The following message appears:  
   
-     **The following PWA instances are registered:** *pwaUrl*.  
+    **The following PWA instances are registered:** *pwaUrl*.  
   
- For more information, see [Register an instance of PWA](register-pwa.md).  
+   For more information, see [Register an instance of PWA](register-pwa.md).  
   
 ##  <a name="GetMappedPWAs"></a> Retrieve the project collections that are mapped to an instance of PWA  
  By using the following command, you can determine which collections are mapped to an instance of PWA and available to participate in data synchronization. You can associate an enterprise project plan only with a project that is hosted on a collection that has been mapped to the instance of PWA that supports your plan.  
@@ -114,11 +114,11 @@ ms.date: 01/12/2017
   
 #### For information about how to add users to the enterprise resource pool, see the following pages on the Microsoft website:  
   
--   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)  
+- [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)  
   
--   [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
+- [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
   
- In addition, you must grant users in Team Foundation access to sign in to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  In addition, you must grant users in Team Foundation access to sign in to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ## Related articles  
  [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md)   

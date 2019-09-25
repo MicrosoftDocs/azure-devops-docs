@@ -7,8 +7,8 @@ ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -40,14 +40,14 @@ and an action on the queries context menu to launch your hub.
 ## Create a hub
 
 Use a hub to surface your web app in an iframe in Azure DevOps Services.
-The one we're creating here will show up in the project's **Work** hub group.
+The one we're creating here show ups in the project's **Work** hub group.
 
 ![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
 
-Start by creating the web app with the page that will be your hub.
+Start by creating the web app with the page that is your hub.
 
 [!INCLUDE [Webapp](../_shared/procedures/create-hub-app-asp4.md)]
 
@@ -77,7 +77,7 @@ The extension manifest tells Azure DevOps Services about your extension.
 
 [!INCLUDE [Install](../_shared/procedures/install.md)]
 
-[!INCLUDE [ExtensionsTab](../_shared/extensions-tab.md)]
+
 
 ### Try out your extension
 
@@ -110,7 +110,7 @@ Call a REST API and display the results in the grid control.
     // Load Azure DevOps Services controls
 	VSS.require(["VSS/Controls", "VSS/Controls/Grids"],
 		function (Controls, Grids) {
-	```
+    ```
 
 	to this:
 
@@ -122,7 +122,7 @@ Call a REST API and display the results in the grid control.
 
         // Get a WIT client to make REST calls to Azure DevOps Services
         var witClient = VSS_Service.getCollectionClient(TFS_Wit_WebApi.WorkItemTrackingHttpClient);
-	```
+    ```
 
 1. Call the API (```getWorkItems```) using the client service (```witClient```),
 with a callback that loads the grid control with the results.
@@ -146,7 +146,7 @@ with a callback that loads the grid control with the results.
         // This data source is rendered into the Grid columns defined above
         source: dataSource
     });
-	```
+    ```
 
 	to this:
 
@@ -177,7 +177,7 @@ with a callback that loads the grid control with the results.
             source: workItems
         }); 
     });
-	```
+    ```
 
 	This code assumes you have at least four work items in your project. If you don't create them before you try the action.
 
@@ -210,7 +210,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 			vstsContext.project.name + "/_apps/hub/" +
 			VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld";
 	}
-	```
+    ```
 
 	Refresh the page and try it again. It opens the Hello hub.
 
@@ -221,7 +221,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 		vstsContext.project.name + "/_apps/hub/" +
 		VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld?queryId=" +
 		actionContext.queryId;
-	```
+    ```
 
 1. Update ```hello-world.html``` to run the query from the action context instead of getting a hardcoded set of work items.
 
@@ -274,13 +274,13 @@ See the [contributions reference](../reference/targets/overview.md) to see other
             });
         });
     });
-	```
+    ```
 
 1. Run the action again from a query (not a folder) to see the results of that query in the Hello hub.
 
 	![Query results in the hello hub](../_shared/procedures/_img/create-action/my-work-items.png)
 
-	Now when you use your action, the results of the selected query will be displayed in your hub.
+	Now when you use your action, the results of the selected query is displayed in your hub.
 
 <a id="deploy"></a>
 ## Deploy your extension to Microsoft Azure

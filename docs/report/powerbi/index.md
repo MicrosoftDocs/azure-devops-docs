@@ -1,5 +1,5 @@
 ---
-title: Create Power BI reports from Analytics service 
+title: Create Power BI reports from Analytics 
 titleSuffix: Azure DevOps
 description: Create PowerBI charts, reports, and dashboards based on the Analytics  Service for Azure DevOps 
 ms.prod: devops
@@ -16,41 +16,38 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]  
 
-With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics service. To learn more about Analytics, see [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](reporting-roadmap.md).
+With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to [Azure DevOps Analytics](what-is-analytics.md) to enable data-driven decisions. However, we acknowledge that customers often need more than what is provided in the product. 
+
+With Power BI, you can pull data from [Azure DevOps Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. To learn more, read our [Power BI Integration Overview](overview.md)
 
 [!INCLUDE [temp](../_shared/powerbi-preview.md)]
 
+## Overview
 
-## 5-Minute Quickstarts
- - [Create a Power BI report with an Analytics view](create-quick-report.md)
- 
-## Videos
-
-High-level overview of Power BI Desktop, from getting data and building a report to uploading this report to Power BI so it can be refreshed and shared with other users. Learn how to build stunning reports using Power BI Desktop.
-
-
-[!Video https://channel9.msdn.com/Events/Connect/2017/T251/player]
-
-
-Learn how to build stunning reports using Power BI Desktop.
-
+-  [Power BI Integration overview](overview.md)
 
 ## Tutorials 
 
-- [Create an Analytics view](analytics-views-create.md) 
-- [Manage Analytics views](analytics-views-manage.md) 
-
+- [Create a Power BI report using OData Queries](create-quick-report-odataq.md)
+- [Create a Power BI report using an Analytics View](create-quick-report.md)
 
 ## How-to Guides
-- [Connect using the Data Connector](data-connector-connect.md)
+
+- [Connect using Analytics views](analytics-views-manage.md)
+- [Create an Analytics view](analytics-views-create.md)
+- [Manage Analytics views](data-connector-connect.md)
 - [Connect using OData feed](access-analytics-power-bi.md)    
-- [Connect using Azure DevOps functions (Advanced)](data-connector-functions.md)  
-- [Client OData authentication](client-authentication-options.md)
-- [Publish to PowerBI.com](publish-power-bi-desktop-to-power-bi.md) 
 - [Set permissions (Security)](analytics-security.md)
 
-## Samples
-- [Example Power BI Reports using the Data Connector](data-connector-examples.md)  
+## Sample Reports
+
+### Samples using OData Queries
+
+- [Overview of Sample Reports using OData Queries](sample-odata-overview.md)
+[!INCLUDE [temp](_shared/sample-fulllist.md)]
+
+### Samples using Analytics View
+
 - [Active bugs report](active-bugs-sample-report.md)  
 - [Get a count of work items](data-connector-examples.md)  
 - [Add a last refresh date](add-last-refresh-time.md)   
@@ -59,16 +56,19 @@ Learn how to build stunning reports using Power BI Desktop.
 
 
 ## References
+
 - [Default Analytics views](analytics-default-views.md)
 - [Create Analytics views](analytics-views-create.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 
 
 ## Resources 
+
+- [Writing OData queries](../extend-analytics/quick-ref.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)    
 - [Dashboards, Charts, Reports & Widgets](../dashboards/index.md)  
-- [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
-- [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
+- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
+- [Power BI Documentation](/power-bi)  
 
 
 

@@ -1,0 +1,11 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Reporting
+    tocHref: /azure/devops/report/admin/
+    topicHref: /azure/devops/report/index
+    items:
+    - name: SQL Reports (Legacy)
+      tocHref: /azure/devops/report/sql-reports/admin/
+      topicHref: /azure/devops/report/sql-reports/index

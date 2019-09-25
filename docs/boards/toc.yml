@@ -1,0 +1,110 @@
+- name: Azure Boards Documentation
+  expanded: false
+  href: index.md
+- name: "What is Azure Boards?"
+  href: get-started/what-is-azure-boards.md
+- name: "Backlogs, boards, & plans"
+  href: backlogs/backlogs-boards-plans.md 
+- name: Get started
+  href: get-started/toc.yml
+- name: Azure Boards & GitHub
+  href: github/toc.yml 
+- name: Work Items
+  href: work-items/toc.yml 
+- name: Boards
+  href: boards/toc.yml 
+- name: Backlogs
+  href: backlogs/toc.yml 
+- name: Sprints
+  href: sprints/toc.yml 
+- name: Queries
+  href: queries/toc.yml 
+- name: Plans & Agile at Scale
+  href: plans/toc.yml
+- name: Manage teams
+  href: ../organizations/settings/scale/toc.yml
+- name: Excel, Project, PowerPoint 
+  items:
+  - name: Work in Excel or Project
+    href: backlogs/office/track-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Bulk add or modify (Excel)
+    href: backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: "Create backlog items & tasks (Project)"
+    href: backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Schedule projects using Project
+    href: backlogs/office/schedule-projects-using-microsoft-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Storyboard your ideas
+    href: backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Add and share storyboard shapes
+    href: backlogs/office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Troubleshooting
+    items:
+    - name: Office integration issues
+      href: backlogs/office/tfs-office-integration-issues.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: "Rollup estimated & actual work using Project"
+      href: backlogs/office/rollup-estimated-and-actual-work-using-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve Excel data conflicts
+      href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve Excel data validation errors
+      href: backlogs/office/resolve-excel-data-validation-errors.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Resolve invalid links in an Excel tree list
+      href: backlogs/office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+- name: Integrations
+  items:
+  - name: Azure Boards with Slack
+    href: integrations/boards-slack.md
+- name: Best tool for the job
+  href: work-items/best-tool-add-update-link-work-items.md
+- name: REST API Reference
+  items:
+  - name: Work Items
+    href: /rest/api/vsts/wit/work%20items
+  - name: Fields
+    href: /rest/api/azure/devops/wit/fields
+  - name: Boards
+    href: /rest/api/vsts/work/boards
+  - name: Backlogs
+    href: /rest/api/azure/devops/work/backlogs
+  - name: Queries
+    href: /rest/api/azure/devops/wit/queries
+  - name: Plans
+    href: /rest/api/vsts/boards/plans 
+  - name: Wiql
+    href: /rest/api/vsts/wit/wiql 
+- name: Marketplace Extensions
+  items:
+  - name: Wiql Editor 
+    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
+  - name: Enhanced Export 
+    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
+- name: Azure DevOps Learn Resources
+  items:
+  - name: What is Agile?
+    href: /azure/devops/agile/what-is-agile
+  - name: What is Agile development?
+    href: /azure/devops/agile/what-is-agile-development
+  - name: Agile culture
+    href: /azure/devops/agile/agile-culture
+  - name: Creating productive teams
+    href: /azure/devops/agile/productive-teams
+  - name: What is Scrum?
+    href: /azure/devops/agile/what-is-scrum
+- name: Resources
+  items:
+  - name: "Default permissions (Security)"
+    href: ../organizations/security/permissions-access-work-tracking.md 
+  - name: Define area paths
+    href: ../organizations/settings/set-area-paths.md
+  - name: Define iteration paths (aka sprints)
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Manage teams and configure team tools
+    href: ../organizations/settings/manage-teams.md 
+  - name: Dashboards, Charts, Reports, & Widgets
+    href: ../report/dashboards/dashboards.md 
+  - name: Process Customization 
+    href: ../reference/index.md
+  - name: Client support for work tracking
+    href: ../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+  - name: Azure DevOps CLI
+    href: /cli/azure/ext/azure-devops/boards
+

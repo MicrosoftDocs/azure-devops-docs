@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Label Command (Team Foundation Version Control)
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Updated: October 2011
 
@@ -48,7 +48,7 @@ To use the **label** command, you must have the **Label** permission set to **Al
 <td><p>Identifies the name of the label to attach, modify, or remove from the specified items.</p></td>
 </tr>
 <tr>
-<td><p><i>@scope</i></p></td>
+<td><p><i><xref href="scope" data-throw-if-not-resolved="False" data-raw-source="@scope"></xref></i></p></td>
 <td><p>Specifies a Team Foundation version control server directory within which the labelname is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Team Foundation version control server.</p></td>
 </tr>
 <tr>
@@ -78,16 +78,16 @@ You can specify more than one <i>Itemspec</i> argument.
 <td><p>A user-provided comment about the label.</p></td>
 </tr>
 <tr>
-<td><p><i>@commentfile</i></p></td>
+<td><p><i><xref href="commentfile" data-throw-if-not-resolved="False" data-raw-source="@commentfile"></xref></i></p></td>
 <td><p>The user-provided path of a file on disk that contains the comment to use for the check-in.</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\\<i>UserName</i> or <i>UserName</i>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -137,7 +137,7 @@ For information about an existing label that includes a list of the items to whi
 
 ### Managing Overloaded Labels
 
-Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the *@scope* parameter is the project, for example, $/TeamProject1.
+Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the <em>@scope</em> parameter is the project, for example, $/TeamProject1.
 
 If another team or user adds a common label such as "M3" to a set of version-controlled files in a different part of the Team Foundation version control server, you can apply the M3 label to version-controlled files in your project as long as the root project folders are in different directories. For example, if files in the $/math directory are labeled "M3," you can apply the "M3" to files in your $/projects directory.
 

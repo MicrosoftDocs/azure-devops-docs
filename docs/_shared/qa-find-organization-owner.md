@@ -1,12 +1,13 @@
-### Q:	How do I find the organization owner?
+### Q: How do I find the organization owner?
 
 If you have at least Basic access, you can find the current owner in your organization settings.
 
-1.	Go to your organization settings.
+1.	Go to your **Organization settings**.
 
-	<img alt="Go to your organization settings" src="/azure/devops/_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+    ![Open Organization settings](_img/settings/open-admin-settings-vert.png)	
 
-1.	Under **Settings**, find the current owner.
+2.	Find the current owner.
 
-	<img alt="Find the current owner" src="/azure/devops/_shared/_img/organization-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+	![Find the current owner in organization information](/azure/devops/organizations/accounts/_img/change-organization-ownership/find-organization-owner.png)
+
 

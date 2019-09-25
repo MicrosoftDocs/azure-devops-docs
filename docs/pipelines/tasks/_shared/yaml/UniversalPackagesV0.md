@@ -1,6 +1,6 @@
 ```YAML
-# Universal Packages
-# Download or publish Universal Packages.
+# Universal packages
+# Download or publish Universal Packages
 - task: UniversalPackages@0
   inputs:
     #command: 'download' # Options: download, publish

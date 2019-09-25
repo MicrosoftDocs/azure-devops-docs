@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/07/2018
+ms.date: 08/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,8 +30,11 @@ Use this task in a build or release pipeline to copy files from a source folder 
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -44,27 +49,27 @@ None
 <tr>
 <td>Source Folder</td>
 <td>
-<p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
-<p>If your build produces artifacts outside of the sources directory, specify ```$(Agent.BuildDirectory)``` to copy files from the directory created for the pipeline.</p>
+<p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
+<p>If your build produces artifacts outside of the sources directory, specify <code>$(Agent.BuildDirectory)</code> to copy files from the directory created for the pipeline.</p>
 </td>
 </tr>
 <tr>
 <td>Contents</td>
-<td><p>Specify match pattern filters (one on each line) that you want to apply to the list of files to be copied. For example:
+<td><p>Specify <a href="http://man7.org/linux/man-pages/man3/fnmatch.3.html">fnmatch pattern filters</a> (one per line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
-<li>```*``` copies all files in the specified source folder.</li>
-<li>```**\*``` copies all files in the specified source folder and all files in all sub-folders.</li>
-<li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
+<li><code>*</code> copies all files in the specified source folder.</li>
+<li><code>**</code> copies all files in the specified source folder and all files in all sub-folders.</li>
+<li><code>**\bin\**</code> copies all files recursively from any <code>bin</code> folder.</li>
 </ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
-<p>You must use the path separator that matches your build agent type, e.g. `/` must be used for Linux agents.
+<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as <code>**\bin\**</code> instead of <code>**\bin</code>.</p>
+<p>You must use the path separator that matches your build agent type, e.g. <code>/</code> must be used for Linux agents.
 <p>More examples are shown below.</p>
 </td>
 </tr>
 <tr>
 <td>Target Folder</td>
-<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../artifacts/build-artifacts.md).</td>
+<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify <code>$(Build.ArtifactStagingDirectory)</code> if you intend to <a href="../../artifacts/build-artifacts.md" data-raw-source="[publish the files as build artifacts](../../artifacts/build-artifacts.md)">publish the files as build artifacts</a>.</td>
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 <tr>
@@ -79,7 +84,16 @@ None
 <td>Flatten Folders</td>
 <td>Flatten the folder structure and copy all files into the specified target folder.</td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+<tr>
+<td>Preserve Target Timestamp</td>
+<td>Using the original source file, preserve the target file timestamp.</td>
+</tr>
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Notes
@@ -109,12 +123,12 @@ You want to copy just the readme and the files needed to run this C# console app
         |-- ConsoleApplication1.csproj
 ```
 
-> **Note:** _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
+> [!NOTE]
+> _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
 
 On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
@@ -166,15 +180,14 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 ![icon](_img/copy-files.png) **Utility: Copy Files**
 
 * Source folder
 
- ```
-$(Build.SourcesDirectory)
-```
+  ```
+  $(Build.SourcesDirectory)
+  ```
 
 * Contents
 
@@ -201,12 +214,11 @@ $(Build.SourcesDirectory)
 
 * Target folder
 
- ```
-$(Build.ArtifactStagingDirectory)
-```
+  ```
+  $(Build.ArtifactStagingDirectory)
+  ```
 
----
-
+* * *
 #### Results
 
 These files are copied to the staging directory:
@@ -225,8 +237,7 @@ These files are copied to the staging directory:
 ### Copy everything from the source directory except the .git folder
 
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
@@ -251,15 +262,14 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 ![icon](_img/copy-files.png) **Utility: Copy Files**
 
 * Source folder
 
- ```
-$(Build.SourcesDirectory)
-```
+  ```
+  $(Build.SourcesDirectory)
+  ```
 
 * Contents
 
@@ -272,12 +282,11 @@ $(Build.SourcesDirectory)
 
 * Target folder
 
- ```
-$(Build.ArtifactStagingDirectory)
-```
+  ```
+  $(Build.ArtifactStagingDirectory)
+  ```
 
----
-
+* * *
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -297,7 +306,9 @@ See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

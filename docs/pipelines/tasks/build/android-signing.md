@@ -9,7 +9,7 @@ ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.date: 08/10/2016
+ms.date: 07/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to sign and align Android APK files.
+Use this task in a pipeline to sign and align Android APK files.
 
 ## Demands
 
@@ -27,8 +27,11 @@ The build agent must have the following capabilities:
  * Java JDK
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AndroidSigningV3.md)]
+
 ::: moniker-end
 
  ## Arguments
@@ -41,12 +44,12 @@ The build agent must have the following capabilities:
 </tr>
 </thead>
 <tr>
-<td>APK Files</td>
+<td>APK files</td>
 <td>
 <p>Relative path from the repo root to the APK(s) you want to sign.  You can use wildcards to specify multiple files. For example:</p>
 <ul>
-<li>```outputs\apk\*.apk``` to sign all .APK files in the outputs\apk\ subfolder</li>
-<li>```**\\bin\\*.apk``` to sign all .APK files in all bin subfolders</li>
+<li><code>outputs\apk*.apk</code> to sign all .APK files in the outputs\apk\ subfolder</li>
+<li><code><em>*\bin\</em>.apk</code> to sign all .APK files in all bin subfolders</li>
 </ul>
 </td>
 </tr>
@@ -56,42 +59,42 @@ The build agent must have the following capabilities:
 <tr>
 <td>Sign the APK</td>
 <td>
-Select this option to sign the APK with a provided keystore file. Unsigned APKs can only run in an emulator. APKs must be signed to run on a device.
+Select this option to sign the APK with a provided Android Keystore file. Unsigned APKs can only run in an emulator. APKs must be signed to run on a device.
 </td>
 </tr>
 <tr>
-<td>Keystore File</td>
+<td>Keystore file</td>
 <td>
-Enter the file path to the keystore file that should be used to sign the APK. It can either be checked into source control or placed on the build machine directly by an administrator. It is recommended to encrypt the keystore file in source control and use the **Decrypt File** task to decrypt the file during the build.
+Select or enter the file name of the Android Keystore file that should be used to sign the APK. This file must be uploaded to the <a href="../../library/secure-files.md" data-raw-source="[secure files](../../library/secure-files.md)">secure files</a> library where it is securely stored with encryption. The Android Keystore file will be used to sign the APK, but will be removed from the agent machine when the pipeline completes.
 </td>
 </tr>
 <tr>
-<td>Keystore Password</td>
+<td>Keystore password</td>
 <td>
-<p>Enter the password for the provided keystore file.</p>
-<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../process/variables.md#secret-variables).
+<p>Enter the password for the provided Android Keystore file.</p>
+<blockquote><strong>Important: </strong> Use a new variable with its lock enabled on the Variables pane to encrypt this value. See <a href="../../process/variables.md#secret-variables" data-raw-source="[secret variables](../../process/variables.md#secret-variables)">secret variables</a>.
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>Alias</td>
 <td>
-Enter the alias that identifies the public/private key pair to be used in the keystore file.
+Enter the alias that identifies the public/private key pair to be used in the Android Keystore file.
 </td>
 </tr>
 <tr>
-<td>Key Password</td>
+<td>Key password</td>
 <td>
-Enter the key password for the alias and keystore file.
-<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../process/variables.md#secret-variables).
+Enter the key password for the alias and Android Keystore file.
+<blockquote><strong>Important: </strong> Use a new variable with its lock enabled on the Variables pane to encrypt this value. See <a href="../../process/variables.md#secret-variables" data-raw-source="[secret variables](../../process/variables.md#secret-variables)">secret variables</a>.
 </blockquote>
 </td>
 </tr>
 <tr>
-<td>Jarsigner Arguments</td>
+<td>Apksigner arguments</td>
 <td>
-<p>Provide any options to pass to the jarsigner command line.  Default is ```-verbose -sigalg MD5withRSA -digestalg SHA1```</p>
-<p>See [jarsigner documentation](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html).</p>
+<p>(Optional) Provide any options to pass to the apksigner command line.  The default is <code>--verbose</code>.</p>
+<p>See the <a href="https://developer.android.com/studio/command-line/apksigner" data-raw-source="[apksigner documentation](https://developer.android.com/studio/command-line/apksigner)">apksigner documentation</a>.</p>
 </td>
 </tr>
 <tr>
@@ -100,16 +103,21 @@ Enter the key password for the alias and keystore file.
 <tr>
 <td>Zipalign</td>
 <td>
-<p>Select if you want to zipalign your package.  This reduces the amount of RAM consumed by an app.</p>
+<p>(Optional) Indicate whether to zipalign your package. This reduces the amount of RAM consumed by an app. The default is <code>true</code>.</p>
 </td>
 </tr>
 <tr>
-<td>Zipalign Location</td>
+<td>Zipalign location</td>
 <td>
-<p>(Optional) The location of the zipalign executable used during signing.  Defaults to the zipalign found in the Android SDK version folder your application builds against.</p>
+<p>(Optional) The location of the zipalign executable used during signing. Defaults to the zipalign found in the Android SDK version folder that your application builds with.</p>
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Related tasks

@@ -1,6 +1,6 @@
 ```YAML
-# Cloud-based Apache JMeter Load Test
-# Runs the Apache JMeter load test in cloud
+# Cloud-based Apache JMeter load test
+# Run an Apache JMeter load test in the cloud
 - task: ApacheJMeterLoadTest@1
   inputs:
     #connectedServiceName: # Optional

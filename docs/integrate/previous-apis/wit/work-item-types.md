@@ -7,8 +7,8 @@ description: Work with work item types programmatically using the REST APIs for 
 ms.assetid: C58D078F-9310-4BE9-95A5-715CB70370FD
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -48,16 +48,16 @@ Use this sequence when you use the Hosted XML process model, i.e., when you mana
 The main difference is that there are now two main layout sections within the **FORM** node. The first section, contained within the **Layout** element, defines the form layout when viewed through a client such as Visual Studio. The second section, contained within the **WebLayout** element, defines the form layout when viewed through a web browser. 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FORM>
-   <Layout HideReadOnlyEmptyFields="true" HideControlBorders="true">
-       . . .  
-   </Layout>
-   <WebLayout>
-       . . .  
-   </WebLayout>
-</FORM>
-```
+> ```XML
+> <FORM>
+>    <Layout HideReadOnlyEmptyFields="true" HideControlBorders="true">
+>        . . .  
+>    </Layout>
+>    <WebLayout>
+>        . . .  
+>    </WebLayout>
+> </FORM>
+> ```
 
 See the following topics to make the indicated customizations: 
  
@@ -72,33 +72,33 @@ See the following topics to make the indicated customizations:
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
 
-0.  If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
+1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
-0.  Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
+1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
 
-	For example:
+   For example:
   
-    ```  
-    %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer 
-    ```  
+   ```  
+   %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer 
+   ```  
 
-0.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
-        witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+       witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for an organization is https://dev.azure.com/*OrganizationName*.
+   An example of a <em>CollectionURL</em> for an organization is https://dev.azure.com/*OrganizationName*.
 
-1.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
+3. Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 
-2.  Import the WIT definition file.  
+4. Import the WIT definition file.  
 
-        witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+       witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
 
-3.  Open either the web portal to view the changes. If the client is already open, refresh the page. 
+5. Open either the web portal to view the changes. If the client is already open, refresh the page. 
 
-    The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
+   The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
 
-    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
+   For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  

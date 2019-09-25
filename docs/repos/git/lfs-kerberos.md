@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
@@ -27,18 +27,18 @@ If you can't upgrade to 2.4.0, you can remove the Kerberos credential and let Gi
 > Credentials sent via HTTP will be passed in clear text.
 > [Ensure your instance of TFS is configured for HTTPS](/azure/devops/server/admin/websitesettings), and do not use HTTP with Git-LFS.
 
-0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
+1. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 
    ![Open Credential Manager](_img/manage-large-files/launch-credential-manager.png)
 
-0. Choose *Windows Credentials*.
+2. Choose *Windows Credentials*.
 
    ![Choose Windows Credentials](_img/manage-large-files/choose-windows-credentials.png)
 
-0. Find your TFS URL in the credential list.
-0. Choose *Remove*.
+3. Find your TFS URL in the credential list.
+4. Choose *Remove*.
 
    ![Choose Remove](_img/manage-large-files/choose-remove.png)
 
-0. Return to your Git client (Visual Studio or the command line) and push your changes.
-When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.
+5. Return to your Git client (Visual Studio or the command line) and push your changes.
+   When prompted for credentials, be sure to enter them in the form *DOMAIN\username*.

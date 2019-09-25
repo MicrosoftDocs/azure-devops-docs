@@ -9,7 +9,7 @@ ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 01/23/2019
 ---
 
@@ -28,6 +28,7 @@ With **Backlogs**, you can quickly plan your project by adding user stories or r
 If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. If you want to add another product backlog, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json).
 
 ::: moniker range=">= tfs-2017"
+
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
@@ -38,6 +39,7 @@ If you're a project administrator just getting started, review the [Configure se
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
@@ -67,6 +69,7 @@ If you're a project administrator just getting started, review the [Configure se
 
 
 ## Reference   
+
 - [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)

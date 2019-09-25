@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 06/12/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -22,7 +22,7 @@ The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features, such as [Azure Test Plans](../billing/buy-basic-plus-test-plans.md).
 
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
@@ -35,7 +35,7 @@ To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
-You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Manage users
 
@@ -47,8 +47,6 @@ The Users view shows key information per user in a table. In this view, you can 
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -62,15 +60,15 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-    * **Add to projects**
-    * **Remove from projects**
-    * **Assign extensions**
-    * **Revoke extensions** (if there are extensions)
-    * **Change access levels**
-    * **Remove direct assignments**
-    * **Remove from organization** (deletes user)
+   * **Add to projects**
+   * **Remove from projects**
+   * **Assign extensions**
+   * **Revoke extensions** (if there are extensions)
+   * **Change access levels**
+   * **Remove direct assignments**
+   * **Remove from organization** (deletes user)
 
-    ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
+     ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
 
@@ -80,7 +78,7 @@ Access levels control which features are available to users. Permissions control
 
 ## Related articles
 
-* [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
+* [Change number of paid extension users](../billing/buy-basic-access-add-users.md)
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)

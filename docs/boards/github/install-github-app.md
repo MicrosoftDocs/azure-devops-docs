@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 04/26/2019
+ms.date: 06/28/2019
 ---
 
 # Install and configure the Azure Boards app for GitHub  
@@ -19,10 +19,7 @@ ms.date: 04/26/2019
 
 By installing the Azure Boards app for GitHub, you can configure and manage the connections of your Azure Boards projects (hosted service only) with your GitHub.com repositories. By connecting your Azure Boards projects with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
 
-> [!IMPORTANT]
-> The Azure Boards app for GitHub is in preview. Watch for public availability in the [GitHub Marketplace](https://github.com/marketplace/category/project-management) and announcement in our [release notes](/azure/devops/release-notes/) and [blog](https://devblogs.microsoft.com/devops/) soon.
-
-The Azure Boards app for GitHub is the preferred method for integrating Azure Boards with GitHub. While the end result is the same as the instructions provided to [Connect Azure Boards to GitHub](connect-to-github.md), it allows you to manage the connection and configuration from the GitHub.com web portal. 
+While the steps to make the GitHub-Azure Boards connection are different depending on your starting point, the end result is the same. You can [connect from Azure Boards](connect-to-github.md) or use the instructions provided in this article to connect from GitHub.  
 
 This article walks you through the following 5 minute installation and configure process: 
 
@@ -42,11 +39,12 @@ You can learn more about the Azure Boards app from the [GitHub Marketplace](http
 ## Prerequisites 
 
 * You must be an administrator or owner of the GitHub repository you'll be connecting to. 
-- To install the Azure Boards app, you must be an administrator or owner of the GitHub repository or GitHub organization.
-- To connect to the Azure Boards project, you must have read permission to the GitHub repository.
-
+* To install the Azure Boards app, you must be an administrator or owner of the GitHub repository or GitHub organization.
+* To connect to the Azure Boards project, you must have read permission to the GitHub repository.
 
 > [!IMPORTANT]  
+> If your repository is already connected via another authentication type such as OAuth, you'll need to remove that repository from your existing connection before re-connecting it via the GitHub App. Follow the steps in the [remove repositories](#add-or-remove-repositories-from-azure-boards) section before starting the GitHub App configuration.
+>
 > You can connect an Azure DevOps organization to multiple GitHub repositories so long as you are an administrator for those repositories. However, you can't connect a GitHub repository to more than one Azure Boards project. To understand why, review [Troubleshoot GitHub & Azure Boards connection, Unexpected results when linking to projects defined in two or more Azure DevOps organizations](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
 
 <a id="install" />
@@ -190,7 +188,7 @@ Once you've integrated Azure Boards with GitHub using the Azure Boards app, you 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](_img/github/repo-actions-menu.png)  
 
-0. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose <strong>Remove</strong> to confirm.
+1. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose <strong>Remove</strong> to confirm.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Confirm remove GitHub connection dialog](_img/github/remove-connection-confirmation.png)  

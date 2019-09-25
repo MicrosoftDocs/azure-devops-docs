@@ -16,22 +16,22 @@ ms.date: 04/04/2017
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize your project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
-  
+
  This illustration shows that you can create or customize eight types of objects. For projects, you can customize categories, work item types, and process configuration. For project collections, you can customize global lists, link types, and work item fields. You can customize global workflow for a project or for a project collection. For a description of these objects and other customization options, see [Agile glossary](../../boards/work-items/agile-glossary.md) and [Customize your work tracking experience](../customize-work.md).  
-  
+
  ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
-  
+
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema type definition for work item tracking. Elements are organized alphabetically and by the following four major groups:  
-  
+
 -   **WITD**: The root element of the definition schema for types of work items.  
-  
+
 -   **FIELD** (Definition): You use this element and its child elements to define a work item field and to specify the rules and conditions that apply to it. See [Modify a field or add a custom field](../add-modify-field.md). To access descriptions for all fields defined within the default process templates, including system fields, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
-  
+
 -   **WORKFLOW**: You use this element and its child elements to define the states, transitions, and reasons that compose the workflow of a type of work item. In addition to the following elements, you can use most of the elements listed under [FIELD](#index_b) to reference a field and apply conditions to it when a user changes its state. For more information, see [Change the workflow](change-workflow-wit.md).  
-  
+
     > [!NOTE]  
     >Changes you make to the workflow can affect the operation of the Agile planning tools, the backlog and task board pages, and other tools. You might need to customize the process configuration. See [Process configuration](process-configuration-xml-element.md).  
-  
+
 -   **FORM**: You use this element and its child elements to specify the fields that appear on the work item form and the layout or design of the form. For more information, see [Design the work item form](design-work-item-form.md).  
 
 
@@ -52,125 +52,27 @@ By using the index of elements in this topic, you can look up the syntax structu
 <tr>
 <td>
 <h3>WITD</h3>
-- [DESCRIPTION](all-witd-xml-elements-reference.md)  
-- [FIELDS](field-definition-element-reference.md) (Definition)  
-- [FORM](all-form-xml-elements-reference.md)  
-- [GLOBALISTS](define-global-lists.md)  
-- [WITD](all-witd-xml-elements-reference.md)  
-- [WORKFLOW](all-workflow-xml-elements-reference.md)  
-- [WORKITEMTYPE](all-witd-xml-elements-reference.md) 
- 
+- <a href="all-witd-xml-elements-reference.md" data-raw-source="[DESCRIPTION](all-witd-xml-elements-reference.md)">DESCRIPTION</a><br/>- <a href="field-definition-element-reference.md" data-raw-source="[FIELDS](field-definition-element-reference.md)">FIELDS</a> (Definition)<br/>- <a href="all-form-xml-elements-reference.md" data-raw-source="[FORM](all-form-xml-elements-reference.md)">FORM</a><br/>- <a href="define-global-lists.md" data-raw-source="[GLOBALISTS](define-global-lists.md)">GLOBALISTS</a><br/>- <a href="all-witd-xml-elements-reference.md" data-raw-source="[WITD](all-witd-xml-elements-reference.md)">WITD</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[WORKFLOW](all-workflow-xml-elements-reference.md)">WORKFLOW</a><br/>- <a href="all-witd-xml-elements-reference.md" data-raw-source="[WORKITEMTYPE](all-witd-xml-elements-reference.md)">WORKITEMTYPE</a> 
+
 <h3 style="margin-bottom:8px">WORKFLOW</h3>
-- [ACTION](automate-field-assignments-state-transition-reason.md)     
-- [ACTIONS](automate-field-assignments-state-transition-reason.md)     
-- [DEFAULTREASON](all-workflow-xml-elements-reference.md)     
-- [FIELD (Workflow)](field-workflow-element-reference.md)     
-- [FIELDS (Workflow)](define-default-copy-value-field.md)     
-- [REASON](all-workflow-xml-elements-reference.md)     
-- [REASONS](all-workflow-xml-elements-reference.md)     
-- [STATE](all-workflow-xml-elements-reference.md)     
-- [STATES](all-workflow-xml-elements-reference.md)     
-- [TRANSITION](transition-xml-element.md)     
-- [TRANSITIONS](all-workflow-xml-elements-reference.md)     
-- [WORKFLOW](all-workflow-xml-elements-reference.md) 
+- <a href="automate-field-assignments-state-transition-reason.md" data-raw-source="[ACTION](automate-field-assignments-state-transition-reason.md)">ACTION</a><br/>- <a href="automate-field-assignments-state-transition-reason.md" data-raw-source="[ACTIONS](automate-field-assignments-state-transition-reason.md)">ACTIONS</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[DEFAULTREASON](all-workflow-xml-elements-reference.md)">DEFAULTREASON</a><br/>- <a href="field-workflow-element-reference.md" data-raw-source="[FIELD (Workflow)](field-workflow-element-reference.md)">FIELD (Workflow)</a><br/>- <a href="define-default-copy-value-field.md" data-raw-source="[FIELDS (Workflow)](define-default-copy-value-field.md)">FIELDS (Workflow)</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[REASON](all-workflow-xml-elements-reference.md)">REASON</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[REASONS](all-workflow-xml-elements-reference.md)">REASONS</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[STATE](all-workflow-xml-elements-reference.md)">STATE</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[STATES](all-workflow-xml-elements-reference.md)">STATES</a><br/>- <a href="transition-xml-element.md" data-raw-source="[TRANSITION](transition-xml-element.md)">TRANSITION</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[TRANSITIONS](all-workflow-xml-elements-reference.md)">TRANSITIONS</a><br/>- <a href="all-workflow-xml-elements-reference.md" data-raw-source="[WORKFLOW](all-workflow-xml-elements-reference.md)">WORKFLOW</a> 
 </td>
 <td>
 
 <a name="index_b"></a> 
 <h3 style="margin-bottom:8px">FIELD</h3>
-- [ALLOWEDVALUES](define-pick-lists.md)  
-- [ALLOWEXISTINGVALUE](define-pick-lists.md)  
-- [CANNOTLOSEVALUE](apply-rule-work-item-field.md)  
-- [COPY](define-default-copy-value-field.md)  
-- [DEFAULT](define-default-copy-value-field.md)  
-- [EMPTY](apply-rule-work-item-field.md)  
-- [FIELD (Definition)](field-definition-element-reference.md)   
-- [FROZEN](apply-rule-work-item-field.md)   
-- [HELPTEXT](provide-help-text-hyperlinks-web-content-form.md)   
-- [GLOBALISTS](define-global-lists.md)     
-- [LISTITEM (Global Lists)](define-global-lists.md)     
-- [LISTITEM (Pick Lists)](define-pick-lists.md)     
-- [MATCH](apply-pattern-matching-to-string-field.md)     
-- [NOTSAMEAS](apply-rule-work-item-field.md)     
-- [PROHIBITEDVALUES](define-pick-lists.md)     
-- [READONLY](apply-rule-work-item-field.md)     
-- [REQUIRED](apply-rule-work-item-field.md)     
-- [SERVERDEFAULT](define-default-copy-value-field.md)     
-- [SUGGESTEDVALUES](define-pick-lists.md)     
-- [VALIDUSER](apply-rule-work-item-field.md)     
-- [WHEN](assign-conditional-based-values-and-rules.md)     
-- [WHENNOT](assign-conditional-based-values-and-rules.md)     
-- [WHENCHANGED](assign-conditional-based-values-and-rules.md)     
-- [WHENNOTCHANGED](assign-conditional-based-values-and-rules.md)
+- <a href="define-pick-lists.md" data-raw-source="[ALLOWEDVALUES](define-pick-lists.md)">ALLOWEDVALUES</a><br/>- <a href="define-pick-lists.md" data-raw-source="[ALLOWEXISTINGVALUE](define-pick-lists.md)">ALLOWEXISTINGVALUE</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[CANNOTLOSEVALUE](apply-rule-work-item-field.md)">CANNOTLOSEVALUE</a><br/>- <a href="define-default-copy-value-field.md" data-raw-source="[COPY](define-default-copy-value-field.md)">COPY</a><br/>- <a href="define-default-copy-value-field.md" data-raw-source="[DEFAULT](define-default-copy-value-field.md)">DEFAULT</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[EMPTY](apply-rule-work-item-field.md)">EMPTY</a><br/>- <a href="field-definition-element-reference.md" data-raw-source="[FIELD (Definition)](field-definition-element-reference.md)">FIELD (Definition)</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[FROZEN](apply-rule-work-item-field.md)">FROZEN</a><br/>- <a href="provide-help-text-hyperlinks-web-content-form.md" data-raw-source="[HELPTEXT](provide-help-text-hyperlinks-web-content-form.md)">HELPTEXT</a><br/>- <a href="define-global-lists.md" data-raw-source="[GLOBALISTS](define-global-lists.md)">GLOBALISTS</a><br/>- <a href="define-global-lists.md" data-raw-source="[LISTITEM (Global Lists)](define-global-lists.md)">LISTITEM (Global Lists)</a><br/>- <a href="define-pick-lists.md" data-raw-source="[LISTITEM (Pick Lists)](define-pick-lists.md)">LISTITEM (Pick Lists)</a><br/>- <a href="apply-pattern-matching-to-string-field.md" data-raw-source="[MATCH](apply-pattern-matching-to-string-field.md)">MATCH</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[NOTSAMEAS](apply-rule-work-item-field.md)">NOTSAMEAS</a><br/>- <a href="define-pick-lists.md" data-raw-source="[PROHIBITEDVALUES](define-pick-lists.md)">PROHIBITEDVALUES</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[READONLY](apply-rule-work-item-field.md)">READONLY</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[REQUIRED](apply-rule-work-item-field.md)">REQUIRED</a><br/>- <a href="define-default-copy-value-field.md" data-raw-source="[SERVERDEFAULT](define-default-copy-value-field.md)">SERVERDEFAULT</a><br/>- <a href="define-pick-lists.md" data-raw-source="[SUGGESTEDVALUES](define-pick-lists.md)">SUGGESTEDVALUES</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[VALIDUSER](apply-rule-work-item-field.md)">VALIDUSER</a><br/>- <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[WHEN](assign-conditional-based-values-and-rules.md)">WHEN</a><br/>- <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[WHENNOT](assign-conditional-based-values-and-rules.md)">WHENNOT</a><br/>- <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[WHENCHANGED](assign-conditional-based-values-and-rules.md)">WHENCHANGED</a><br/>- <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[WHENNOTCHANGED](assign-conditional-based-values-and-rules.md)">WHENNOTCHANGED</a>
 </td>
 <td> 
 <h3 style="margin-bottom:8px">FORM-Layout</h3>
-- [Column](all-form-xml-elements-reference.md)     
-- [Content](webpagecontroloptions-xml-elements-reference.md)     
-- [Control](control-xml-element-reference.md)     
-- [ExternalLinkFilters](linkscontroloptions-elements.md)     
-- [Filter](linkscontroloptions-elements.md)     
-- [FORM](all-form-xml-elements-reference.md)     
-- [Group](all-form-xml-elements-reference.md)     
-- [LabelText](labeltext-and-text-xml-elements-reference.md)     
-- [Layout](layout-xml-element-reference.md)     
-- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)     
-- [Link (Hyperlink)](link-param-xml-elements-reference.md)     
-- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)     
-- [LinkColumn](linkscontroloptions-elements.md)     
-- [LinkColumns](linkscontroloptions-elements.md)     
-- [LinksControlOptions](linkscontroloptions-elements.md)     
-- [Param](link-param-xml-elements-reference.md)     
-- [Splitter](all-form-xml-elements-reference.md)     
-- [Tab](tab-xml-element-reference.md)     
-- [TabGroup](all-form-xml-elements-reference.md)     
-- [Text](labeltext-and-text-xml-elements-reference.md)      
-- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
-- [WorkItemLinkFilters](linkscontroloptions-elements.md)     
-- [WorkItemTypeFilters](linkscontroloptions-elements.md)      
-</td>
+- <a href="all-form-xml-elements-reference.md" data-raw-source="[Column](all-form-xml-elements-reference.md)">Column</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[Content](webpagecontroloptions-xml-elements-reference.md)">Content</a><br/>- <a href="control-xml-element-reference.md" data-raw-source="[Control](control-xml-element-reference.md)">Control</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[ExternalLinkFilters](linkscontroloptions-elements.md)">ExternalLinkFilters</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[Filter](linkscontroloptions-elements.md)">Filter</a><br/>- <a href="all-form-xml-elements-reference.md" data-raw-source="[FORM](all-form-xml-elements-reference.md)">FORM</a><br/>- <a href="all-form-xml-elements-reference.md" data-raw-source="[Group](all-form-xml-elements-reference.md)">Group</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[LabelText](labeltext-and-text-xml-elements-reference.md)">LabelText</a><br/>- <a href="layout-xml-element-reference.md" data-raw-source="[Layout](layout-xml-element-reference.md)">Layout</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[Link (Label Text)](labeltext-and-text-xml-elements-reference.md)">Link (Label Text)</a><br/>- <a href="link-param-xml-elements-reference.md" data-raw-source="[Link (Hyperlink)](link-param-xml-elements-reference.md)">Link (Hyperlink)</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[Link (Web page)](webpagecontroloptions-xml-elements-reference.md)">Link (Web page)</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinkColumn](linkscontroloptions-elements.md)">LinkColumn</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinkColumns](linkscontroloptions-elements.md)">LinkColumns</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinksControlOptions](linkscontroloptions-elements.md)">LinksControlOptions</a><br/>- <a href="link-param-xml-elements-reference.md" data-raw-source="[Param](link-param-xml-elements-reference.md)">Param</a><br/>- <a href="all-form-xml-elements-reference.md" data-raw-source="[Splitter](all-form-xml-elements-reference.md)">Splitter</a><br/>- <a href="tab-xml-element-reference.md" data-raw-source="[Tab](tab-xml-element-reference.md)">Tab</a><br/>- <a href="all-form-xml-elements-reference.md" data-raw-source="[TabGroup](all-form-xml-elements-reference.md)">TabGroup</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[Text](labeltext-and-text-xml-elements-reference.md)">Text</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)">WebpageControlOptions</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[WorkItemLinkFilters](linkscontroloptions-elements.md)">WorkItemLinkFilters</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[WorkItemTypeFilters](linkscontroloptions-elements.md)">WorkItemTypeFilters</a><br/></td>
 <td>
 <h3 style="margin-bottom:8px">FORM-WebLayout</h3>
-- [Column](linkscontroloptions-xml-elements.md)   
-- [Columns](linkscontroloptions-xml-elements.md)   
-- [Content](webpagecontroloptions-xml-elements-reference.md)
-- [Control](weblayout-xml-elements.md)  
-- [ControlContribution](weblayout-xml-elements.md)  
-- [ExternalLinkFilter](linkscontroloptions-xml-elements.md)    
-- [ExternalLinkFilters](apply-rule-work-item-field.md)  
-- [Extension](weblayout-xml-elements.md)    
-- [Extensions](weblayout-xml-elements.md)    
-- [Filter](linkscontroloptions-elements.md)    
-- [FORM](weblayout-xml-elements.md)   
-- [Group](weblayout-xml-elements.md)   
-- [GroupContribution](weblayout-xml-elements.md)   
-- [Input](weblayout-xml-elements.md)    
-- [Inputs](weblayout-xml-elements.md)    
-- [LabelText](labeltext-and-text-xml-elements-reference.md)    
-- [Layout](layout-xml-element-reference.md)    
-- [Link (Hyperlink)](link-param-xml-elements-reference.md)    
-- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)    
-- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)    
-- [LinkColumn](linkscontroloptions-elements.md)    
-- [LinkColumns](linkscontroloptions-elements.md)    
-- [LinkFilters](linkscontroloptions-xml-elements.md)   
-- [LinksControlOptions](linkscontroloptions-elements.md)    
-- [ListViewOptions](linkscontroloptions-xml-elements.md)   
-- [Page](weblayout-xml-elements.md)    
-- [PageContribution](weblayout-xml-elements.md)  
-- [Param](link-param-xml-elements-reference.md)   
-- [Section](weblayout-xml-elements.md)  
-- [SystemControls](weblayout-xml-elements.md)     
-- [Text](labeltext-and-text-xml-elements-reference.md)      
-- [WebLayout](weblayout-xml-elements.md)  
-- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)      
-- [WorkItemLinkFilter](linkscontroloptions-xml-elements.md)   
-- [WorkItemLinkFilters](linkscontroloptions-elements.md)    
-- [WorkItemTypeFilters](linkscontroloptions-elements.md)    
-</td>
+- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[Column](linkscontroloptions-xml-elements.md)">Column</a><br/>- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[Columns](linkscontroloptions-xml-elements.md)">Columns</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[Content](webpagecontroloptions-xml-elements-reference.md)">Content</a>
+- <a href="weblayout-xml-elements.md" data-raw-source="[Control](weblayout-xml-elements.md)">Control</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[ControlContribution](weblayout-xml-elements.md)">ControlContribution</a><br/>- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[ExternalLinkFilter](linkscontroloptions-xml-elements.md)">ExternalLinkFilter</a><br/>- <a href="apply-rule-work-item-field.md" data-raw-source="[ExternalLinkFilters](apply-rule-work-item-field.md)">ExternalLinkFilters</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Extension](weblayout-xml-elements.md)">Extension</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Extensions](weblayout-xml-elements.md)">Extensions</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[Filter](linkscontroloptions-elements.md)">Filter</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[FORM](weblayout-xml-elements.md)">FORM</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Group](weblayout-xml-elements.md)">Group</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[GroupContribution](weblayout-xml-elements.md)">GroupContribution</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Input](weblayout-xml-elements.md)">Input</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Inputs](weblayout-xml-elements.md)">Inputs</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[LabelText](labeltext-and-text-xml-elements-reference.md)">LabelText</a><br/>- <a href="layout-xml-element-reference.md" data-raw-source="[Layout](layout-xml-element-reference.md)">Layout</a><br/>- <a href="link-param-xml-elements-reference.md" data-raw-source="[Link (Hyperlink)](link-param-xml-elements-reference.md)">Link (Hyperlink)</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[Link (Label Text)](labeltext-and-text-xml-elements-reference.md)">Link (Label Text)</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[Link (Web page)](webpagecontroloptions-xml-elements-reference.md)">Link (Web page)</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinkColumn](linkscontroloptions-elements.md)">LinkColumn</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinkColumns](linkscontroloptions-elements.md)">LinkColumns</a><br/>- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[LinkFilters](linkscontroloptions-xml-elements.md)">LinkFilters</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[LinksControlOptions](linkscontroloptions-elements.md)">LinksControlOptions</a><br/>- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[ListViewOptions](linkscontroloptions-xml-elements.md)">ListViewOptions</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Page](weblayout-xml-elements.md)">Page</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[PageContribution](weblayout-xml-elements.md)">PageContribution</a><br/>- <a href="link-param-xml-elements-reference.md" data-raw-source="[Param](link-param-xml-elements-reference.md)">Param</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[Section](weblayout-xml-elements.md)">Section</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[SystemControls](weblayout-xml-elements.md)">SystemControls</a><br/>- <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[Text](labeltext-and-text-xml-elements-reference.md)">Text</a><br/>- <a href="weblayout-xml-elements.md" data-raw-source="[WebLayout](weblayout-xml-elements.md)">WebLayout</a><br/>- <a href="webpagecontroloptions-xml-elements-reference.md" data-raw-source="[WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)">WebpageControlOptions</a><br/>- <a href="linkscontroloptions-xml-elements.md" data-raw-source="[WorkItemLinkFilter](linkscontroloptions-xml-elements.md)">WorkItemLinkFilter</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[WorkItemLinkFilters](linkscontroloptions-elements.md)">WorkItemLinkFilters</a><br/>- <a href="linkscontroloptions-elements.md" data-raw-source="[WorkItemTypeFilters](linkscontroloptions-elements.md)">WorkItemTypeFilters</a><br/></td>
 </tr>
 </table>
-  
+
 <a name="index_objects"></a> 
 
 ## Index of other work tracking object XML elements    
@@ -180,51 +82,15 @@ The following table provides an index to the reference topics for the elements u
 <table>
 <tr>
 <td>
-<h3>[Categories](categories-xml-element-reference.md)</h3>
-- CATEGORIES    
-- CATEGORY   
-- DEFAULTWORKITEMTYPE  
-- WORKITEMTYPE  
-
-<h3 style="margin-bottom:8px">[Global lists](define-global-lists.md)</h3>
-- GLOBALLISTS     
-- GLOBALLIST   
-- LISTITEM   
-
-<h3 style="margin-bottom:8px">[Link types](link-type-element-reference.md)</h3>
-- LinkTypes    
-- LinkType    
-</td>
+<h3><a href="categories-xml-element-reference.md" data-raw-source="[Categories](categories-xml-element-reference.md)">Categories</a></h3>
+- CATEGORIES<br/>- CATEGORY<br/>- DEFAULTWORKITEMTYPE<br/>- WORKITEMTYPE<br/>
+<h3 style="margin-bottom:8px"><a href="define-global-lists.md" data-raw-source="[Global lists](define-global-lists.md)">Global lists</a></h3>
+- GLOBALLISTS<br/>- GLOBALLIST<br/>- LISTITEM<br/>
+<h3 style="margin-bottom:8px"><a href="link-type-element-reference.md" data-raw-source="[Link types](link-type-element-reference.md)">Link types</a></h3>
+- LinkTypes<br/>- LinkType<br/></td>
 <td>
-<h3 style="margin-bottom:8px">[ProcessConfiguration](process-configuration-xml-element.md)</h3>
-- AddPanel  
-- BugWorkItems  
-- Column  
-- Columns  
-- DayOfWeek  
-- FeedbackRequestWorkItems  
-- FeedbackResponseWorkItems  
-- Field  
-- Fields  
-- PortfolioBacklog   
-- PortfolioBacklogs  
-- ProjectProcessConfiguration  
-- Properties    
-- Property   
-- RequirementBacklog     
-- State  
-- States  
-- TaskBacklog  
-- TestPlanWorkItems  
-- TestSuiteWorkItems  
-- TypeField  
-- TypeFields  
-- TypeFieldValue  
-- TypeFieldValues  
-- Weekends  
-- WorkItemColor  
-- WorkItemColors  
-</td>
+<h3 style="margin-bottom:8px"><a href="process-configuration-xml-element.md" data-raw-source="[ProcessConfiguration](process-configuration-xml-element.md)">ProcessConfiguration</a></h3>
+- AddPanel<br/>- BugWorkItems<br/>- Column<br/>- Columns<br/>- DayOfWeek<br/>- FeedbackRequestWorkItems<br/>- FeedbackResponseWorkItems<br/>- Field<br/>- Fields<br/>- PortfolioBacklog<br/>- PortfolioBacklogs<br/>- ProjectProcessConfiguration<br/>- Properties<br/>- Property<br/>- RequirementBacklog<br/>- State<br/>- States<br/>- TaskBacklog<br/>- TestPlanWorkItems<br/>- TestSuiteWorkItems<br/>- TypeField<br/>- TypeFields<br/>- TypeFieldValue<br/>- TypeFieldValues<br/>- Weekends<br/>- WorkItemColor<br/>- WorkItemColors<br/></td>
 </tr>
 </table> 
 

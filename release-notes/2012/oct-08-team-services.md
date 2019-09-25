@@ -3,16 +3,16 @@ title: Team Foundation Service updates - Oct 8
 description: VSTS release notes for October 8 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: e39e465e-4faa-4dfe-99ca-afbadf7d4ec2
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Oct 8
+# Team Foundation Service updates - Oct 8
 
-##400 character paths on the server
+## 400 character paths on the server
 
 One of the top votes on [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) is eliminating the 260 character path limit for developers. As Brian Harry mentioned on his [blog](http://blogs.msdn.com/b/bharry/archive/2012/09/12/visual-studio-update-this-fall.aspx), we have been working on eliminating the server side part of this problem. With this release, we have upped the path limit you can use in TFS version control to 400 characters. While this does not change the 260 path limit on the client, it is a step in the right direction.
 
@@ -22,7 +22,7 @@ So how can you start using long server paths? It’s enabled right now on the se
 
 Since this change required an updated to the client, once the upcoming VS 2012 update is available, it’s recommended that you update all of your clients to this version if your team wants to use long paths. If an older client attempts to retrieve a source path that is longer than it can handle locally it will fail in the same manner it does today if your “local path + source path” exceeds the maximum allowed length. Of course older clients will work just fine against servers using long paths as long as they only map a portion of the tree that fits into the 1st 260 characters.
 
-##Updated learn section
+## Updated learn section
 
 We have also updated the [learn](https://visualstudio.microsoft.com/get-started/) section of the site & added several new articles:
 

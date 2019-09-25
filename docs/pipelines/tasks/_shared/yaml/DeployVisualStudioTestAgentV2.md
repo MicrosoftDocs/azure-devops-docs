@@ -1,6 +1,6 @@
 ```YAML
-# Visual Studio Test Agent Deployment
-# Deprecated: This task and it’s companion task (Run Functional Tests) are deprecated. Use the 'Visual Studio Test' task instead. The VSTest task can run unit as well as functional tests. Run tests on one or more agents using the multi-agent job setting. Use the 'Visual Studio Test Platform' task to run tests without needing Visual Studio on the agent. VSTest task also brings new capabilities such as automatically rerunning failed tests.
+# Visual Studio test agent deployment
+# Deprecated: Instead, use the 'Visual Studio Test' task to run unit and functional tests
 - task: DeployVisualStudioTestAgent@2
   inputs:
     testMachines: 

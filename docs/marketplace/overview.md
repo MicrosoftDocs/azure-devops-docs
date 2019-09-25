@@ -1,74 +1,57 @@
 ---
-title: Visual Studio Marketplace overview | Azure DevOps Services & TFS 
-description: Overview of Visual Studio, Visual Studio Code, and Azure DevOps Services/TFS extensions offered through the Visual Studio Marketplace
+title: Visual Studio Marketplace overview | Azure DevOps
+description: Overview of Visual Studio, Visual Studio Code, and Azure DevOps extensions offered through the Visual Studio Marketplace
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+ms.author: chcomley
+author: chcomley
+ms.date: 07/11/2019
+monikerRange: '>= tfs-2015'
 ---
 
-#  Discover extensions in the Marketplace
+#  Marketplace extensions for Azure DevOps
 
-In the Visual Studio Marketplace you can do the following:
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-- Discover and install extensions for Visual Studio, **Azure DevOps Services**, **Team Foundation Server (TFS)**, and Visual Studio Code
-- Purchase subscriptions for Visual Studio or Xamarin University
+In the Visual Studio Marketplace you can do the following tasks:
+
+- Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
+- Purchase Visual Studio subscriptions
 
 ![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
 
->[!NOTE]
-> This documentation focuses on discovering and installing extensions. Most extensions are available for free. For information on purchasing, see the following:
-> - [Azure DevOps Services billing overview](../organizations/billing/overview.md)
-> - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
-> - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
-> - [How to buy Xamarin University](../organizations/billing/xamarin-univ.md)
+This documentation focuses on discovering and installing extensions. Most extensions are available for free. 
+For information on purchasing, see the following articles:
+- [Azure DevOps billing overview](../organizations/billing/overview.md)
+- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
+- [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 
 ## What are extensions?
 
-An extension is an installable unit that contributes new capabilities into Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). 
+Extensions provide new capabilities when they're installed in Azure DevOps. You can find extensions from within Azure DevOps or directly from the [Marketplace](https://marketplace.visualstudio.com/azuredevops), which is home to hundreds of extensions that can help you with the following tasks: 
 
-Extending Azure DevOps Services is the easiest way for users to get the most out of their 
-devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions
-that can be installed to help with the following:
-
-- Planning and tracking of work items, sprints, scrums, etc.
+- Planning and tracking of work items, sprints, scrums, and so on
 - Build and release flows
 - Code testing and tracking
-- Collaboration amongst team members
+- Collaboration with team members
 
-Adding extensions to your organization is incredibly easy:
+Adding extensions to your organization can be quickly achieved with the following steps:
 
-1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+1. Search and find extensions for your organization in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
-You must have administrative permissions to upload or install extensions.
+To upload, install, or assign extensions you need [Project Collection Administrator or organization Owner permissions](./faq-extensions.md#find-owner).
 
 ## Get or build extensions
 
-| Product | Topics |
+| Product | Articles |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Azure DevOps Services | [Get extensions for Azure DevOps Services](install-extension.md) <br/> [Develop extensions for Azure DevOps Services](https://aka.ms/vsoextensions) |
-| Team Foundation Server | [Get extensions for TFS](get-tfs-extensions.md) <br/> [Develop extensions for Team Foundation Server](https://aka.ms/vsoextensions) |
+| Azure DevOps | [Get extensions for Azure DevOps](install-extension.md) <br/> [Develop extensions for Azure DevOps](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](https://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
-
-
-## Free extensions
-
-There are many free extensions available in the Marketplace, too numerous to list. However, the following extensions are listed as they quickly add a lot of value and are easily installed.
-
-- [Work Item Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search)   
-- [Campfire integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-campfire)   
-- [Hipchat integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-hipchat)   
-- [Slack integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack)   
-- [Microsoft Teams integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)    
-
-Browse the [Marketplace](https://marketplace.visualstudio.com/) to find additional extensions.
 
 
 

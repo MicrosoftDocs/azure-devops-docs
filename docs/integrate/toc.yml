@@ -1,11 +1,11 @@
-- name: "Integrate"
+- name: Integrate applications
   href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Create a bug
-      href: quickstarts/create-bug-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: quickstarts/create-bug-quickstart.md
     - name: Query work items
-      href: quickstarts/work-item-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: quickstarts/work-item-quickstart.md
 - name: Samples
   items:
     - name: Samples
@@ -30,10 +30,10 @@
       href: ./concepts/wit-client-om-deprecation.md
     - name: Migration Guide
       href: ./concepts/migration-guide.md
-- name: How-to Guides
+- name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: get-started/authentication/pats.md
+      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
     - name: Authenticate with OAuth 2.0
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically
@@ -350,16 +350,8 @@
               href: previous-apis/xamlbuild/queues.md
             - name: Requests
               href: previous-apis/xamlbuild/requests.md
-
 - name: Troubleshooting
   items:
     - name: IIS Basic Authentication and PATs
       href: get-started/authentication/iis-basic-auth.md
-- name: REST API reference
-  href: /rest/api/vsts/
-- name: .NET client libraries reference
-  href: https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet
-- name: How to get help
-  href: ../extend/support/help.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
-- name: Visual Studio extensions
-  href: ide/extensions/overview.md
+

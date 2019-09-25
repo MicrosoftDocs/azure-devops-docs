@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 12/20/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
@@ -55,47 +55,47 @@ https://github.com/Microsoft/UWPQuickStart
 
 1. Create a new build pipeline.
 
- # [Azure Repos or TFS repo](#tab/vsts)
+   # [Azure Repos or TFS repo](#tab/vsts)
 
- Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+   Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
- # [GitHub repo](#tab/github)
+   # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+   Navigate to the **Builds** tab Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
- ---
+   ---
 
-1. In the right panel, click **Universal Windows Platform**, and then click **Apply**.
+2. In the right panel, click **Universal Windows Platform**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
+   You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent pool**:
+3. For the **Agent pool**:
 
- * **Azure Pipelines:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+   * **Azure Pipelines:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
+   * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
 
-1. Click **Get sources** and then:
+4. Click **Get sources** and then:
 
- # [Azure Repos or TFS repo](#tab/vsts)
+   # [Azure Repos or TFS repo](#tab/vsts)
 
- Observe that the new build pipeline is automatically linked to your repository.
+   Observe that the new build pipeline is automatically linked to your repository.
 
- # [GitHub repo](#tab/github)
+   # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo.
+   Select your version control repository. You'll need to authorize access to your repo.
 
- ---
+   ---
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
+5. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
+6. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+7. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 [//]: # (TODO:> [!TIP])
 [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
@@ -109,4 +109,8 @@ https://github.com/Microsoft/UWPQuickStart
 You can now update the build pipeline to generate production builds.
 
  * [Signing UWP package](/windows/uwp/packaging/create-certificate-package-signing)
- * [Associate package with the store](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx)
+ * [Associate package with the store](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)
+ 
+## Related topics
+
+* [Set up automated builds for your UWP app](/windows/uwp/packaging/auto-build-package-uwp-apps)

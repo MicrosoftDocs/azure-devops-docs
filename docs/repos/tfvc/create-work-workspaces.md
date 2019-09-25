@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Create and work with workspaces
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 
@@ -65,7 +65,7 @@ You can create and manage your workspaces from the command prompt. You can also 
  
 #### Q: Why would I need to change the working folders? How should I do it?
 
-**A:** In general, you should map your entire project to a single local folder under **c:\\Users\\***YourName***\\Source\\Workspaces\\**. For example:
+**A:** In general, you should map your entire project to a single local folder under **c:\\Users\\**<em>YourName</em>**\\Source\\Workspaces\\**. For example:
 
 ![Edit Workspace dialog box](_img/create-work-workspaces/IC720118.png)
 Some tips on effective folder names:
@@ -94,7 +94,8 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 -   **Owner**: Only the owner of a workspace can use it.
 
-    >**Tip:**  Instead of changing the owner of your workspace when someone else needs to continue your work you can [suspend (or shelve)](suspend-your-work-manage-your-shelvesets.md) your work and then share the shelveset with them.
+    > [!TIP]
+    > Instead of changing the owner of your workspace when someone else needs to continue your work you can [suspend (or shelve)](suspend-your-work-manage-your-shelvesets.md) your work and then share the shelveset with them.
 
 -   **Computer**: This box identifies the dev machine where the workspace exists, and it is read-only. You cannot move a workspace from one computer to another. However, if the name of your dev machine has changed and you want that change to appear in this field, run [tf workspaces /updatecomputername](workspaces-command.md).
 

@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -42,8 +44,11 @@ Use this task when you want to run tests on remote machines, and you cannot run 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
+
 ::: moniker-end
 
 ### Arguments
@@ -64,7 +69,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Distribute tests by number of machines** | When checked, distributes tests based on the number of machines, instead of distributing tests at the assembly level, irrespective of the container assemblies passed to the task. |
 | **Test Run Title** | Optional. A name for this test run, used to identify it for reporting and in comparison with other test runs. |
 | **Platform** | Optional. The build platform against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `x64` or `x86`<br />- If you have defined a variable for platform in your build task, use that here. |
-| **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
+| **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
 | **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager. <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from Microsoft Test Manager}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in Microsoft Test Manager.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
@@ -136,7 +141,7 @@ These scenarios are supported for:
 ### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Run continuous tests with your builds](../../languages/dotnet-core.md#run-your-tests)
+* [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks
@@ -163,7 +168,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

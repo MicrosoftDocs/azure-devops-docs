@@ -20,34 +20,34 @@ Teams use project portals to share information and support how their team works.
   
 ## Open the project portal  
   
-1.  From Team Explorer, open the documents page.  
+1. From Team Explorer, open the documents page.  
   
-    <table>
-	<tbody valign="top">
-	<tr>
-	<td>**Git**</td>
-	<td>**TFVC**</td>
-	</tr>
-	<tr>
-	<td>![Team Explorer Home page with Git as source control](_img/alm_te_githome.png "ALM_TE_GitHome")</td>
-	<td>![Team Explorer Home page w&#47; TFVC as source control](_img/tracking_teamproject.png "Tracking_TeamProject")</td>
-	</tr>
-	</tbody>
-	</table> 
+   <table>
+   <tbody valign="top">
+   <tr>
+   <td><strong>Git</strong></td>
+   <td><strong>TFVC</strong></td>
+   </tr>
+   <tr>
+   <td><img src="_img/alm_te_githome.png" alt="Team Explorer Home page with Git as source control" title="ALM_TE_GitHome"/></td>
+   <td><img src="_img/tracking_teamproject.png" alt="Team Explorer Home page w&#47; TFVC as source control" title="Tracking_TeamProject"/></td>
+   </tr>
+   </tbody>
+   </table> 
     
-     If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](configure-or-add-a-project-portal.md).  
+    If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](configure-or-add-a-project-portal.md).  
   
-2.  Show the project portal.  
+2. Show the project portal.  
   
-     ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
+    ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-     From the web portal, choose the **Go to project portal** from the home page or a dashboard which contains the [Other links widget](../widget-catalog.md). 
+    From the web portal, choose the **Go to project portal** from the home page or a dashboard which contains the [Other links widget](../widget-catalog.md). 
   
-     The link opens to the Project, Progress, or Release dashboard, depending on your SharePoint site configuration and the process template used to create your team project.  
+    The link opens to the Project, Progress, or Release dashboard, depending on your SharePoint site configuration and the process template used to create your team project.  
   
-     To learn more about SharePoint dashboards, see [Project portal dashboards](project-portal-dashboards.md).  
+    To learn more about SharePoint dashboards, see [Project portal dashboards](project-portal-dashboards.md).  
   
-     If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../organizations/security/set-sharepoint-permissions.md).  
+    If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../organizations/security/set-sharepoint-permissions.md).  
   
   
 ## Related notes

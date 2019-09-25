@@ -34,8 +34,19 @@ When you delete test artifacts, the following actions occur:
 
 ## Prerequisites
 
+::: moniker range="< azure-devops-2019"
+
 - You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). 
 - You must also have your [access level set to Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+- You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). 
+- You must also have your [access level](../../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**, which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
+
+::: moniker-end
 
 To delete test artifacts, the following restrictions and operations apply:  
 - Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.  
@@ -43,12 +54,16 @@ To delete test artifacts, the following restrictions and operations apply:
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
 
 ::: moniker range="tfs-2017" 
+
 > [!NOTE]   
 > The permanently delete feature of test artifacts is available for TFS 2017.1 and later versions. 
+
 ::: moniker-end
 
 <a id="test-experience"></a>
+
 ## Work item types that support the test experience  
+
 The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager. These work item types are linked together using the link types shown. 
 
   ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)

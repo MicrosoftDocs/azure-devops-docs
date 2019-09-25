@@ -31,7 +31,7 @@ ms.date: 04/13/2017
 By adding work items to your process template, you define a set of tasks or other items that act as reminders for each project manager to perform after the project is created. For example, you can create one task each to assign permissions to team members, define product areas and milestones, set up build definitions, and determine the branch strategy for version control.  
   
 <a name="defining"></a> 
-##Define a work item instance   
+## Define a work item instance   
 To define a work item instance, you specify the work item type along with field values for those work items. You use the **WI** and **FIELD** elements that are contained within the **WORKITEMS** element. You specify the set of work item instances within a **taskXml** element in the WorkItemTracking plug-in file.  
   
 The type attribute for the **WI** element specifies which work item type is being created, such as task, user story, or issue. You must assign values to each required field based on the type of work item.  
@@ -39,42 +39,42 @@ The type attribute for the **WI** element specifies which work item type is bein
 The following example specifies a work item task that reminds project administrators to assign team members to one or more security groups. Values are assigned to all required fields. Because work item instances depend on the type definitions for work items, you must specify the task for creating work item instances after the task for creating work item types.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<task id="WIT_Instances" name="Work Item tasks definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item instances created">   
-   <dependencies>  
-      <dependency taskId="WITs" />  
-   </dependencies>  
-   <taskXml>  
-       <WORKITEMS>  
-       <WI type="Task">  
-          <FIELD refname="System.Title" value="Setup: Set Permissions" />  
-          <FIELD refname="System.IterationPath" value="$$PROJECTNAME$$\Iteration 0" />  
-          <FIELD refname="System.State" value="Active" />  
-          <FIELD refname="System.Reason" value="New" />  
-          <FIELD refname="System.Description" value="Using the admin UI in Visual Studio adds team members to one of the three groups: Project administrators, Contributors, or Readers." />  
-         </WI>  
-      </WORKITEMS>  
-   </taskXml>  
-</task>  
-```  
+> ```XML
+> <task id="WIT_Instances" name="Work Item tasks definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item instances created">   
+>    <dependencies>  
+>       <dependency taskId="WITs" />  
+>    </dependencies>  
+>    <taskXml>  
+>        <WORKITEMS>  
+>        <WI type="Task">  
+>           <FIELD refname="System.Title" value="Setup: Set Permissions" />  
+>           <FIELD refname="System.IterationPath" value="$$PROJECTNAME$$\Iteration 0" />  
+>           <FIELD refname="System.State" value="Active" />  
+>           <FIELD refname="System.Reason" value="New" />  
+>           <FIELD refname="System.Description" value="Using the admin UI in Visual Studio adds team members to one of the three groups: Project administrators, Contributors, or Readers." />  
+>          </WI>  
+>       </WORKITEMS>  
+>    </taskXml>  
+> </task>  
+> ```  
   
   
 <a name="elements"></a> 
-###WORKITEMS elements
+### WORKITEMS elements
  The following syntax shows the structure of the **WORKITEMS** element and its child elements. You specify these elements within a **taskXml** element in the WorkItemTracking plug-in file.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<WORKITEMS>  
-      <WI type="TypeA">  
-      <FIELD refname="Field1" value="Value1" />  
-      <FIELD refname="Field2" value="Value2" />  
-      . . .  
-      <FIELD refname="FieldN" value="ValueN" />  
-      </WI>  
-      . . .  
-</WORKITEMS>  
-```  
+> ```XML
+> <WORKITEMS>  
+>       <WI type="TypeA">  
+>       <FIELD refname="Field1" value="Value1" />  
+>       <FIELD refname="Field2" value="Value2" />  
+>       . . .  
+>       <FIELD refname="FieldN" value="ValueN" />  
+>       </WI>  
+>       . . .  
+> </WORKITEMS>  
+> ```  
   
 |Element| Description and syntax|  
 |-------------|-----------------|  

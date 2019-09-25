@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Save work with commits
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 
@@ -41,7 +41,7 @@ Git tracks file changes in your repo as you work, and separates the files in you
 
 When you create a commit, only the staged changes and unchanged files are used for the snapshot. 
 Changes to unstaged but modified files are kept, but the commit uses the unmodified version from the previous commit in its snapshot.
-   
+
 Commits are created in your local Git repository, so you don't have to worry about your changes being perfect. 
 Continue to create commits as you work, [pushing](pushing.md) your changes to the team when they are ready to share.
 
@@ -74,7 +74,7 @@ Staging lets you to selectively add files to a commit while excluding changes ma
 # [Visual Studio](#tab/visual-studio)
 
 #### Visual Studio 2015 (Update 2) and 2017
-   
+
 Visual Studio keeps track of file changes to your project as you do your work. When you are ready to stage changes, open up the **Changes** view in Team Explorer. 
 
 Stage individual file changes by right-clicking a file in the **Change** view and selecting **Stage**. 
@@ -85,7 +85,7 @@ Staging a change creates a **Staged Changes** section in Team Explorer. Only cha
 > [!NOTE]
 > The Team Explorer **Changes** view had **Included Files** and **Excluded Files** sections before Visual Studio 2015 Update 2. The **Changes** view was updated in Visual Studio 2015 Update 2 for better
 compatibility with other Git tools.</blockquote>
-   
+
 Stage multiple files or folders by selecting them then right-clicking and choosing **Stage** or by dragging and dropping files from the **Changes** list into the **Staged Changes** list. 
 
 Ignore files by right-clicking and selecting **Ignore this local item** or **Ignore this extension**. This adds an entry to the .gitignore file in your local repo. If the ignored file was added 
@@ -149,24 +149,21 @@ Amend your last commit to correct small errors without making a new commit.
 > [!WARNING]
 > Do not amend [pushed](pushing.md) commits. If you need to update pushed code, [undo the changes with revert](undo.md) or create and push another commit.
 
-# [Visual Studio](#tab/visual-studio)
-
-0. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
-0. Enter the updated commit message and select **Amend Previous Commit** from the **Actions** drop-down.   
+#### [Visual Studio](#tab/visual-studio/)
+1. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
+2. Enter the updated commit message and select **Amend Previous Commit** from the **Actions** drop-down.   
 
     ![Amend a commit in Visual Studio](_img/vs_amend_commit.png)
 
-# [Command Line](#tab/command-line)
-
-0. Stage your changes using `git add` just as you would if you were creating a new commit.
-0. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
+#### [Command Line](#tab/command-line/)
+1. Stage your changes using `git add` just as you would if you were creating a new commit.
+2. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
 
     ```
     git commit -m --amend "short descriptive message"
     ```
 
----
-
+* * *
 ## Next steps
 
 > [!div class="nextstepaction"]

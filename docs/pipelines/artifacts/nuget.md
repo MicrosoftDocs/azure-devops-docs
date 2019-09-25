@@ -32,8 +32,7 @@ You can publish NuGet packages from your build to NuGet feeds. You can publish t
 
 There are various ways to create NuGet packages during a build. If you're already using MSBuild or some other task to create your packages, skip this section and [publish your packages](#publish-packages). Otherwise, add a **NuGet** task:
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 To create a package, add the following snippet to your azure-pipelines.yml file.
 
@@ -56,8 +55,7 @@ The NuGet task supports a number of options. The following list describes some o
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 Add the **NuGet** task to your build in order to create a NuGet package. Make sure to add this task below the task that builds your application and above any tasks that require the packages you build.
 
 The NuGet task supports a number of options. The following list describes some of the key ones. The [task documentation](../tasks/package/nuget.md) describes the rest.
@@ -71,8 +69,7 @@ The NuGet task supports a number of options. The following list describes some o
 
 ![A screenshot of the NuGet task configured as outlined above](_img/nuget/create-packages-in-team-build.png)
 
----
-
+* * *
 <a name="package-versioning"></a>
 ## Package versioning
 
@@ -92,8 +89,7 @@ When you create a package in continuous integration (CI), you can use Semantic V
 
 * Use a script in your build pipeline to generate the version.
 
-#  [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 This example shows how to use the date and time as the prerelease label.
 
@@ -121,12 +117,10 @@ For a list of other possible values for `versioningScheme`, see the [NuGet task]
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 In the **NuGet** task, select **Pack options** and select one of the values for **Automatic package versioning**.
 
----
-
+* * *
 Although Semantic Versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that after packages are produced, they're [immutable](/azure/devops/artifacts/feeds/immutability). They can't be updated or replaced. 
 
 When you’re producing a package in a build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
@@ -140,8 +134,7 @@ When you’re producing a package in a build, you can’t know whether it will b
 
 In the previous section, you learned how to create a package with every build. When you're ready to share the changes to your package with your users, you can publish it.
 
-#  [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.
 
@@ -174,8 +167,7 @@ To publish a package to a NuGet feed, add the following snippet to your `azure-p
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 To publish NuGet packages created by your build, add the **NuGet** task and configure these options:
 
 - **Command**: push
@@ -201,8 +193,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 ::: moniker-end
 
----
-
+* * *
 ## Publish symbols for your packages
 
 When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).

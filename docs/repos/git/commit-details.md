@@ -8,7 +8,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sancha
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Commit details
 
-#### Azure Repos | TFS 2018 | TFS 2017 Update 1 
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1 
 
 ## Commit details view
 
@@ -77,10 +77,10 @@ The source explorer allows you to select a file or a folder to view changes asso
     ![Diff to parent](_img/commit-details/10DifftoParent.png)
  	
 * The file explorer view provides all the capabilities that we get in the file explorer view i.e. you can
-    * browse files in a side by side or inline diff view 
-    * use the navigation keys to browse the next set of changes
-    * preview the files
-    * compare file diff for previous commits
+  * browse files in a side by side or inline diff view 
+  * use the navigation keys to browse the next set of changes
+  * preview the files
+  * compare file diff for previous commits
 		
     ![Diff view](_img/commit-details/11SidebySide.png)
  	

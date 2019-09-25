@@ -28,7 +28,7 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
   - [Azure Repos](../repos/get-started/sign-up-invite-teammates.md)
   - [Azure Boards](../boards/get-started/sign-up-invite-teammates.md)
   - [Azure Artifacts](../artifacts/index.md)
-  - [Azure Test Plans](../test/index-tp.md)
+  - [Azure Test Plans](../test-plans/index.md)
 
 ::: moniker-end
 
@@ -86,15 +86,15 @@ See [Administrator roles](roles.md#administrator-roles).
 
 See [Requirements and compatibility](/azure/devops/server/requirements).  
 
-## Can stakeholders who don't use Visual Studio participate on our team?
+## Can Stakeholders who don't use Visual Studio participate on our team?
 
-Yes. You can provide access to stakeholders who have no client access license for the following activities:  
+Yes. You can provide access to Stakeholders who have no client access license for the following activities:  
 
 - **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  
   
-     To grant stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).  
+     To grant Stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).  
   
-- **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
+- **Provide feedback**: To allow your Stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
 
 ::: moniker range="<= tfs-2018"
 
@@ -106,13 +106,13 @@ Yes. You can connect to a project from one of the following clients:
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  (requires Team Foundation add-in)  
 - [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)  
-- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx)  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
 
-::: end-moniker
+::: moniker-end
 
-::: moniker range="= tfs-2017"
+::: moniker range="tfs-2017"
 
 >[!NOTE]  
 >Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details.  

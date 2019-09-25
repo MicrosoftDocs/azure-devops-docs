@@ -43,6 +43,10 @@ Create a public project, make an existing project public, or work in a public pr
 * [Search the code base](code-search-public.md)  
 * [Search work items](work-item-search-public.md)
 
+## Tutorials
+
+* [Create a Public Feed](../../artifacts/tutorials/share-packages-publicly.md)
+
 ## Reference
 
 * [Default roles and permissions](default-roles-access-public.md)
@@ -52,8 +56,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## Resources
 
-- [Git Repositories](../../git/index.md)  
-- [Work Items](../../boards/work-items/index.md)  
 - [Manage projects](../projects/index.md)  
-- [Process Customization](../settings/work/customize-process.md)
+- [Azure Repos](../../repos/index.md)  
+- [Azure Boards](../../boards/index.md)  
 

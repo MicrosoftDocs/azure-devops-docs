@@ -20,12 +20,17 @@ monikerRange: '>= tfs-2015'
 Use this task in a build or release pipeline to install and publish npm packages.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NpmV1.md)]
+
 ::: moniker-end
 
 ## Install npm packages
@@ -44,13 +49,13 @@ Use this task in a build or release pipeline to install and publish npm packages
     <tr>
         <td>Command</td>
         <td>
-            npm command to run. Select `install` here.
+            npm command to run. Select <code>install</code> here.
         </td>
     </tr>
     <tr>
         <td>Working folder with package.json</td>
         <td>
-            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".
+            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. &quot;/packages/mypackage&quot;.
         </td>
     </tr>
     <tr>
@@ -59,12 +64,12 @@ Use this task in a build or release pipeline to install and publish npm packages
     <tr>
         <td>Registries to use</td>
         <td>
-            **Registries in my .npmrc:**
+            <strong>Registries in my .npmrc:</strong>
             <ul>
-                <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control. If no .npmrc file is present, the task will default to using packages directly from npmjs.</li>
-                <ul><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li></ul>
+                <li>Select this option to use feeds specified in a <a href="https://docs.npmjs.com/files/npmrc" data-raw-source="[.npmrc](https://docs.npmjs.com/files/npmrc)">.npmrc</a> file you&#39;ve checked into source control. If no .npmrc file is present, the task will default to using packages directly from npmjs.</li>
+                <ul><li>Credentials for registries outside this organization/collection can be used to inject credentials you&#39;ve provided as an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a> into your .npmrc as the build runs.</li></ul>
             </ul>
-            **Use packages from this Azure Artifacts/TFS registry:**
+            <strong>Use packages from this Azure Artifacts/TFS registry:</strong>
             <ul>
                 <li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.</li>
             </ul>
@@ -79,7 +84,12 @@ Use this task in a build or release pipeline to install and publish npm packages
             Enables verbose logging.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Publish npm packages
@@ -98,13 +108,13 @@ Use this task in a build or release pipeline to install and publish npm packages
     <tr>
         <td>Command</td>
         <td>
-            npm command to run. Select `publish` here.
+            npm command to run. Select <code>publish</code> here.
         </td>
     </tr>
     <tr>
         <td>Working folder with package.json</td>
         <td>
-            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".
+            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. &quot;/packages/mypackage&quot;.
         </td>
     </tr>
     <tr>
@@ -114,9 +124,9 @@ Use this task in a build or release pipeline to install and publish npm packages
         <td>Registry location</td>
         <td>
             <ul>
-                <li>**Registry I select here** publishes to an Azure Artifacts registry in the same organization/collection as the build. After you select this option, select the target registry from the dropdown.
+                <li><strong>Registry I select here</strong> publishes to an Azure Artifacts registry in the same organization/collection as the build. After you select this option, select the target registry from the dropdown.
                 </li>
-                <li>**External npm registry (including other organizations/collections)** publishes to an external server such as [npm](https://www.npmjs.com/), [MyGet](http://www.myget.org/), or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an [npm service connection](../../library/service-endpoints.md#sep-npm).
+                <li><strong>External npm registry (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.npmjs.com/" data-raw-source="[npm](https://www.npmjs.com/)">npm</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](http://www.myget.org/)">MyGet</a>, or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a>.
                 </li>
             </ul>
         </td>
@@ -130,7 +140,12 @@ Use this task in a build or release pipeline to install and publish npm packages
             Enables verbose logging.
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Custom npm command
@@ -150,13 +165,13 @@ Use this task in a build or release pipeline to install and publish npm packages
     <tr>
         <td>Command</td>
         <td>
-            npm command to run. Select `custom` here.
+            npm command to run. Select <code>custom</code> here.
         </td>
     </tr>
     <tr>
         <td>Working folder with package.json</td>
         <td>
-            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".
+            Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. &quot;/packages/mypackage&quot;.
         </td>
     </tr>
     <tr>
@@ -164,9 +179,9 @@ Use this task in a build or release pipeline to install and publish npm packages
         <td>
             The custom command and arguments you wish to be executed.
             <br />
-            If your arguments contain double quotes (\"), escape them with a slash (\\), and surround the escaped string with double quotes (\").
+            If your arguments contain double quotes (&quot;), escape them with a slash (), and surround the escaped string with double quotes (&quot;).
             <br />
-            Example: to run `npm run myTask -- --users='{"foo":"bar"}'`, provide this input: `run myTask -- --users="{\"foo\":\"bar\"}"`.
+            Example: to run <code>npm run myTask -- --users=&#39;{&quot;foo&quot;:&quot;bar&quot;}&#39;</code>, provide this input: <code>run myTask -- --users=&quot;{&amp;quot;foo&amp;quot;:&amp;quot;bar&amp;quot;}&quot;</code>.
         </td>
     </tr>
     <tr>
@@ -175,27 +190,32 @@ Use this task in a build or release pipeline to install and publish npm packages
     <tr>
         <td>Registries to use</td>
         <td>
-            *Leave this section blank to use packages from npmjs directly.* Otherwise, select one of these options:
+            <em>Leave this section blank to use packages from npmjs directly.</em> Otherwise, select one of these options:
             <br />
-            **Registries in my .npmrc:**
+            <strong>Registries in my .npmrc:</strong>
             <ul>
-                <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control.</li>
-                <li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li>
+                <li>Select this option to use feeds specified in a <a href="https://docs.npmjs.com/files/npmrc" data-raw-source="[.npmrc](https://docs.npmjs.com/files/npmrc)">.npmrc</a> file you&#39;ve checked into source control.</li>
+                <li>Credentials for registries outside this organization/collection can be used to inject credentials you&#39;ve provided as an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a> into your .npmrc as the build runs.</li>
             </ul>
-            **Use packages from this Azure Artifacts/TFS registry:**
+            <strong>Use packages from this Azure Artifacts/TFS registry:</strong>
             <ul>
                 <li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.</li>
             </ul>
         </td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Examples
 
 [Build: gulp](../build/gulp.md)
 
-[Build your Node.js app with gulp](../../languages/javascript.md)
+[Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 ## Open source
 
@@ -212,7 +232,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

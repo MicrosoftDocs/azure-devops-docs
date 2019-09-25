@@ -19,10 +19,12 @@ monikerRange: '>= tfs-2017'
 
 Use this task in a build or release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -30,8 +32,11 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 None
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
+
 ::: moniker-end
 
 ## Arguments

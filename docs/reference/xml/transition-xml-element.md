@@ -23,13 +23,13 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<TRANSITION from="NameOfStartingState" to="NameOfEndingState" for="UserGroupName" not="UserGroupName">  
-       <ACTIONS> . . . </ACTIONS>  
-       <REASONS> . . . </REASONS>  
-       <FIELDS> . . . </FIELDS>  
-</TRANSITION>  
-```  
+> ```XML  
+> <TRANSITION from="NameOfStartingState" to="NameOfEndingState" for="UserGroupName" not="UserGroupName">  
+>        <ACTIONS> . . . </ACTIONS>  
+>        <REASONS> . . . </REASONS>  
+>        <FIELDS> . . . </FIELDS>  
+> </TRANSITION>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -75,29 +75,29 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
  In the following example, the reasons are defined for the transition from the **Active** to the **Resolved** workflow state.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<TRANSITION from="Active" to="Resolved">  
-   . . .  
-   <REASONS>  
-      <DEFAULTREASON value="Fixed"/>  
-      <REASON value="Deferred"/>  
-      <REASON value="Duplicate"/>  
-      <REASON value="As Designed"/>  
-      <REASON value="Unable to Reproduce"/>  
-      <REASON value="Obsolete"/>  
-   </REASONS>  
-   . . .  
-</TRANSITION>  
-```  
+> ```XML  
+> <TRANSITION from="Active" to="Resolved">  
+>    . . .  
+>    <REASONS>  
+>       <DEFAULTREASON value="Fixed"/>  
+>       <REASON value="Deferred"/>  
+>       <REASON value="Duplicate"/>  
+>       <REASON value="As Designed"/>  
+>       <REASON value="Unable to Reproduce"/>  
+>       <REASON value="Obsolete"/>  
+>    </REASONS>  
+>    . . .  
+> </TRANSITION>  
+> ```  
   
 ## Example  
  In the following rule, the ability to transition a work item from the **Resolved** to the **Completed** state is restricted to all project testers, except for new testers who have just joined the team.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">  
-</TRANSITION>  
-```  
+> ```XML
+> <TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">  
+> </TRANSITION>  
+> ```  
   
 ::: moniker range=">= tfs-2018" 
 ## Auto completion of work items with pull requests  

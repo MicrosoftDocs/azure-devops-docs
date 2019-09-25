@@ -5,9 +5,9 @@ title: TFS/Dashboards/WidgetContracts CustomSettings API | Extensions for Azure 
 description: Documentation for the CustomSettings contract.
 ms.assetid: 19CB39FF-952A-4071-BED8-48F4DE45F082
 ms.manager: jillfra
-author: elbatk
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

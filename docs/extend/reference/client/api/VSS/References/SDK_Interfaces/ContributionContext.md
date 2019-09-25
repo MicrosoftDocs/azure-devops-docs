@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -22,7 +22,7 @@ Model for a contribution context object which is used for contributed content pr
 
 ### Members
 
-* `containerCssClass`: string. CSS class for the container element which will host this content. Typical usage is to just supply a unique CSS class on the element, register an enhancement for that class in a TypeScript module, and reference that TypeScript module in this ContributionContent object.
+* `containerCssClass`: string. CSS class for the container element which hosts this content. Typical usage is to just supply a unique CSS class on the element, register an enhancement for that class in a TypeScript module, and reference that TypeScript module in this ContributionContent object.
 
 * `contributionData`: any. Generic property bag which individual contributions can use to pass data to the client
 

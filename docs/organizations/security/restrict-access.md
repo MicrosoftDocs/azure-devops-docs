@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/26/2019
+ms.date: 08/15/2019
 ---
 
 # Grant or restrict access
@@ -59,44 +59,44 @@ To delegate tasks to other members within your organization, consider creating a
 
 <table>
 <tr>
-<td width="25%">**Role**
+<td width="25%"><strong>Role</strong>
 </td>
-<td width="30%">**Tasks to perform**
+<td width="30%"><strong>Tasks to perform</strong>
 </td>
-<td width="45%">**Permissions to set to Allow**
+<td width="45%"><strong>Permissions to set to Allow</strong>
 </td>
 </tr>
 
 <tr>
 <td>Development lead (Git)</td>
 <td> Manage branch policies</td>
-<td>Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../repos/git/branch-permissions.md).</td>
+<td>Edit policies, Force push, and Manage permissions<br/>See <a href="../../repos/git/branch-permissions.md" data-raw-source="[Set branch permissions](../../repos/git/branch-permissions.md)">Set branch permissions</a>.</td>
 </tr>
 
 <tr>
 <td>Development lead (TFVC)</td>
 <td>Manage repository and branches</td>
-<td>Administer labels, Manage branch, and Manage permissions<br/>See [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md).</td>
+<td>Administer labels, Manage branch, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
 
 <tr>
 <td>Software architect (Git)</td>
 <td>Manage repositories</td>
-<td>Create repositories, Force push, and Manage permissions<br/>See [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md).</td>
+<td>Create repositories, Force push, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
 
 <tr>
 <td>Team administrators</td>
 <td>Add area paths for their team<br/>Add shared queries for their team</td>
-<td>Create child nodes, Delete this node, Edit this node<br/>See [Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>
-Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md).</td>
+<td>Create child nodes, Delete this node, Edit this node<br/>See <a href="set-permissions-access-work-tracking.md#set-permissions-area-path" data-raw-source="[Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)">Create child nodes, modify work items under an area path</a><br/>
+Contribute, Delete, Manage permissions (for a query folder), See <a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Set query permissions](../../boards/queries/set-query-permissions.md)">Set query permissions</a>.</td>
 </tr>
 
 <tr>
 <td>Contributors</td>
 <td>Add shared queries under a query folder, Contribute to dashboards</td>
-<td>Contribute, Delete (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md)<br/>
-View, Edit, and Manage dashboards, See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md).
+<td>Contribute, Delete (for a query folder), See <a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Set query permissions](../../boards/queries/set-query-permissions.md)">Set query permissions</a><br/>
+View, Edit, and Manage dashboards, See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.
 </td>
 </tr>
 
@@ -104,38 +104,38 @@ View, Edit, and Manage dashboards, See [Set dashboard permissions](../../report/
 <td>Project or product manager</td>
 <td>Add area paths, iteration paths, and shared queries<br/>
 Delete and restore work items, Move work items out of this project, Permanently delete work items</td>
-<td>Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
 
 
 <tr>
-<td>Process template manager ([Inheritance process model](../settings/work/inheritance-process-model.md))</td>
+<td>Process template manager (<a href="../settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../settings/work/inheritance-process-model.md)">Inheritance process model</a>)</td>
 <td>Work tracking customization </td>
-<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
 
 <tr>
-<td>Process template manager ([Hosted XML process model](../settings/work/hosted-xml-process-model.md))</td>
+<td>Process template manager (<a href="../settings/work/hosted-xml-process-model.md" data-raw-source="[Hosted XML process model](../settings/work/hosted-xml-process-model.md)">Hosted XML process model</a>)</td>
 <td>Work tracking customization </td>
-<td>Edit collection-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Edit collection-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
 
 <tr>
-<td>Project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))</td>
+<td>Project management (<a href="../../reference/on-premises-xml-process-model.md" data-raw-source="[On-premises XML process model](../../reference/on-premises-xml-process-model.md)">On-premises XML process model</a>)</td>
 <td>Work tracking customization </td>
-<td>Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).</td>
+<td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
 
 <tr>
 <td>Permissions manager</td>
 <td>Manage permissions for a project, account, or collection </td>
 <td>For a project, Edit project-level information<br/> 
-For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To grant permissions, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).<br/><br/>You can also grant permissions to manage permissions for the following objects:
+For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see <a href="permissions-lookup-guide.md" data-raw-source="[Permission lookup guide](permissions-lookup-guide.md)">Permission lookup guide</a>. To grant permissions, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.<br/><br/>You can also grant permissions to manage permissions for the following objects:
 <ul>
-<li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
-<li>[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)</li>
-<li>[Administer build and release permissions](../../pipelines/policies/set-permissions.md)</li>
-<li>[Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).</li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)">Manage Git or TFVC repository permissions</a></li>
+<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)">Manage Git branch permissions</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Administer build and release permissions](../../pipelines/policies/set-permissions.md)">Administer build and release permissions</a></li>
+<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)">Manage Wiki permissions</a>.</li>
 </td>
 </tr>
 
@@ -148,52 +148,86 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
 
 <table>
 <tr>
-<td width="25%">**Area to restrict**  
-</td>
-<td width="75%">**Permissions to set to Deny**
+<td width="25%"><strong>Area to restrict</strong><br/></td>
+<td width="75%"><strong>Permissions to set to Deny</strong>
 </td>
 </tr>
 
 <tr>
 <td>View or contribute to a repository</td>
-<td>View, Contribute<br/>See [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md).</td>
+<td>View, Contribute<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
 
 <tr>
 <td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md).</td>
+<td>Edit work items in this node, View work items in this node<br/>See <a href="set-permissions-access-work-tracking.md" data-raw-source="[Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md)">Set permissions and access for work tracking, Modify work items under an area path</a>.</td>
 </tr>
 
 <tr>
 <td>View or update select build and release pipelines</td>
 <td>Edit build pipeline, View build pipeline<br/>
 Edit release pipeline, View release pipeline<br/>
-You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/set-permissions.md).</td>
+You set these permissions at the object level. See <a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Set build and release permissions](../../pipelines/policies/set-permissions.md)">Set build and release permissions</a>.</td>
 </tr>
 
 <tr>
 <td>Edit a dashboard</td>
 <td>View dashboards<br/>
-See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md).</td>
+See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.</td>
 </tr>
 
 </table>
 
-::: moniker range="<= azure-devops-2019"
+<a id="restrict-modifications-wits" />
 
 ## Restrict modification of work items based on a user or group  
 
-For [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
+::: moniker range="azure-devops-2019"
+
+### Inheritance process model
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types to support these restriction requests: 
+- Restrict who can create or modify a work item 
+- Restrict who can create specific work item types, such as Epics or Features 
+- Restict who can modify a specific field for a work item type 
+
+For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
+
+> [!div class="mx-imgBorder"]  
+> ![Custom rule](_img/grant-restrict/restrict-creating-work-items-inheritance.png)   
+
+You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### Online XML process model
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-You can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
 
-> [!NOTE]   
-> These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
-
+You  restrict access to work tracking objects in one of two ways:
+- [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+   
 ::: moniker-end
- 
+
+## Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../_shared/restrict-modification-closed-wi.md)]
+
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -206,7 +240,7 @@ You can restrict modification of work items by adding a rule to the work item ty
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
- 
+
 
 <!--- 
 This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions 

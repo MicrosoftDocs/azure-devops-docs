@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 11/29/2018
+ms.author: phwilson
+author: chasewilson
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -29,8 +29,7 @@ Some scripts just pass arguments to a cross-platform tool. For instance, calling
 `npm` with a set of arguments can be easily accomplished with a `script` step.
 `script` runs in each platform's native script interpreter: Bash on macOS and Linux, CMD on Windows.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 - script: |
@@ -38,18 +37,16 @@ steps:
     npm test
 ```
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 1. Add a **Command Line** task to your pipeline.
 
-1. Replace the body of the script with:
-```
-npm install
-npm test
-```
+2. Replace the body of the script with:
+   ```
+   npm install
+   npm test
+   ```
 
----
-
+* * *
 ## Handle environment variables
 
 Environment variables throw the first wrinkle into writing cross-platform scripts.
@@ -61,8 +58,7 @@ it knows about. By surrounding a variable name in `$( )`, it will be expanded
 before the platform's shell ever sees it. For instance, if you want to echo out
 the ID of the pipeline, the following script is cross-platform friendly:
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 - script: echo This is pipeline $(System.DefinitionId)
@@ -78,21 +74,19 @@ steps:
 - script: echo The value passed in is $(Example)
 ```
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 1. Add a **Command Line** task to your pipeline.
 
-1. Replace the body of the script with:
-```
-echo This is pipeline $(System.DefinitionId)
-```
+2. Replace the body of the script with:
+   ```
+   echo This is pipeline $(System.DefinitionId)
+   ```
 
----
-
-## Consider Bash
+* * *
+## Consider Bash or pwsh
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
-Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash.
+Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) Bash.
 ::: moniker range="azure-devops"
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end
@@ -100,8 +94,7 @@ For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 For example, if you need to make a decision based on whether this is a pull
 request build:
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 trigger:
     batch: true
@@ -120,22 +113,23 @@ steps:
   displayName: Hello world
 ```
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 1. Add a **Bash** task to your pipeline.
 
-1. For the **Type**, select Inline.
+2. For the **Type**, select Inline.
 
-1. Replace the body of the script with:
-```bash
-if [ -n "$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]; then
+3. Replace the body of the script with:
+   ```bash
+   if [ -n "$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]; then
     echo This is for pull request $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
-else
+   else
     echo This is not a pull request build. The trigger was $BUILD_REASON
-fi
-```
+   fi
+   ```
 
----
+* * *
+PowerShell Core (`pwsh`) is also an option.
+It requires each agent to have PowerShell Core installed.
 
 ## Switch based on platform
 
@@ -150,8 +144,7 @@ And on Ubuntu Linux, it's `ip addr`.
 
 Set up the below pipeline, then try running it against agents on different platforms.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 # Linux
@@ -178,57 +171,56 @@ steps:
     echo The IP address is $(IP_ADDR)
 ```
 
-# [Designer](#tab/designer)
-
+#### [Classic](#tab/classic/)
 First, add a Linux script.
 
 1. Add a **Bash** task to your pipeline.
 
-1. Set the **Type** to Inline.
+2. Set the **Type** to Inline.
 
-1. Replace the body of the script with:
-```bash
-export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
-echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-```
+3. Replace the body of the script with:
+   ```bash
+   export IPADDR=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+   echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+   ```
 
-1. Change the value of **Run this task** to "Custom conditions".
+4. Change the value of **Run this task** to "Custom conditions".
 
-1. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Linux' )".
+5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Linux' )".
 
 Next, add a macOS script.
 
 1. Repeat the above steps, but for the body of the script, enter:
-```bash
-export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
-echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
-```
+   ```bash
+   export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
+   echo ##vso[task.setvariable variable=IP_ADDR]$IPADDR
+   ```
 
-1. For the **Custom condition**, enter "eq( variables['Agent.OS'], 'Darwin' )".
+2. For the **Custom condition**, enter "eq( variables['Agent.OS'], 'Darwin' )".
 
 Next, add a Windows script.
 
 1. Add a **PowerShell** task to your pipeline.
 
-1. Set the **Type** to Inline.
+2. Set the **Type** to Inline.
 
-1. Replace the body of the script with:
-```powershell
-Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
-Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
-```
+3. Replace the body of the script with:
+   ```powershell
+   Set-Variable -Name IPADDR -Value (Get-NetIPAddress | ?{ $_.AddressFamily -eq "IPv4" -and !($_.IPAddress -match "169") -and !($_.IPaddress -match "127") }).IPAddress
+   Write-Host ##vso[task.setvariable variable=IP_ADDR]$env:IPADDR
+   ```
 
-1. Change the value of **Run this task** to "Custom conditions".
+4. Change the value of **Run this task** to "Custom conditions".
 
-1. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
+5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
 
 Finally, add a task which uses the value, no matter how we got it.
 
 1. Add a **Command line** task to your pipeline.
 
-1. Replace the body of the task with:
-```
-echo The IP address is $(IP_ADDR)
-```
+2. Replace the body of the task with:
+   ```
+   echo The IP address is $(IP_ADDR)
+   ```
 
----
+* * *

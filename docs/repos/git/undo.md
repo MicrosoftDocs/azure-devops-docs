@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Undo changes
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 
@@ -41,18 +41,16 @@ Restore file contents back to a known good version, removing unwanted changes.
 > [!WARNING]
 > These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
 
-# [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 &amp; 2017
 
-0. Open up the **Changes** view in Team Explorer.
-0. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
-0. Right-click that file and select **Undo Changes**.
+1. Open up the **Changes** view in Team Explorer.
+2. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
+3. Right-click that file and select **Undo Changes**.
 
     ![Reset a single file with Git in Visual Studio](_img/vs_reset_single_file.gif)
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 You can use the `checkout` command and give it the filename(s) to change. Use wildcards for undoing changes to multiple files.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
@@ -68,9 +66,7 @@ You can revert the file to the version in a specific commit by providing the com
 This differs from the earlier use of the `checkout` command used to swap to a different [branch](branches.md). 
 Git will tell you if it is changing a file or swapping between branches in the output, and complain if it's not clear which one you are trying to do.
 
----
-
-
+* * *
 <a name="revert"></a>
 
 ## Revert changes in shared commits
@@ -105,17 +101,15 @@ to simply discard all changed files since the last commit and return the files t
 > [!WARNING]
 > Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
 
-# [Visual Studio](#tab/visual-studio)
-
-0. Open up the **Changes** view in Team Explorer. 
-0. Select **Actions** and choose **View History** from the drop-down. 
-0. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-0. Choose **Reset and delete changes...**.
+#### [Visual Studio](#tab/visual-studio/)
+1. Open up the **Changes** view in Team Explorer. 
+2. Select **Actions** and choose **View History** from the drop-down. 
+3. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
+4. Choose **Reset and delete changes...**.
 
     ![Reset a branch from Visual Studio](_img/vs_reset_branch.png)
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git reset --hard HEAD 
 </pre>
@@ -123,10 +117,7 @@ to simply discard all changed files since the last commit and return the files t
 The `--hard` part of the command tells Git to reset the files to the state of the previous commit and discard any staged changes. 
 The `HEAD` argument tells Git to reset the local repository to the most recent commit. If you want to reset the repo to a different commit, provide the ID instead of HEAD.
 
----
-
-
-
+* * *
 A `reset` affects all files in the current branch on the repository, not just those in your current directory. `Reset` only discards changes that haven't 
 been committed yet.
 
