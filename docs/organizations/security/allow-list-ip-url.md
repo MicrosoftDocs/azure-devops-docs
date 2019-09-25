@@ -3,7 +3,7 @@ title: Add IP addresses and URLs to allow list - Azure DevOps
 description: Learn how to add IP addresses and URLs for Azure DevOps to the Allow list
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: jominana
 author: chcomley
 ms.manager: jillfra
@@ -78,6 +78,10 @@ If your organization uses ExpressRoute, ensure the following addresses are allow
 |13.107.43.20/32  | 2620:1ec:22::20/128       |
 
 For more information about Azure DevOps and ExpressRoute, see [ExpressRoute for Azure DevOps](https://devblogs.microsoft.com/devops/expressroute-for-azure-devops/). 
+
+## Using Microsoft-hosted Agents
+
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
 
 ## Connecting Private Build Agents
 

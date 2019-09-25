@@ -41,24 +41,26 @@
     href: ecosystems/android.md
   - name: Azure
     items:
+    - name: Azure Government Cloud
+      href: library/government-cloud.md
+    - name: Azure Resource Manager
+      href: library/connect-to-azure.md
     - name: Azure SQL database
       href: targets/azure-sqldb.md
+    - name: Azure Stack
+      href: targets/azure-stack.md
+    - name: Function App on Container
+      href: targets/function-app-container.md
     - name: Function App on Linux
       href: targets/azure-functions.md
     - name: Function App on Windows
       href: targets/azure-functions-windows.md
-    - name: Web App on Windows
-      href: targets/webapp.md
     - name: Web App on Linux
       href: targets/webapp-linux.md
     - name: Web App on Linux Container
       href: targets/webapp-on-container-linux.md
-    - name: Azure Resource Manager
-      href: library/connect-to-azure.md
-    - name: Azure Government Cloud
-      href: library/government-cloud.md
-    - name: Azure Stack
-      href: targets/azure-stack.md
+    - name: Web App on Windows
+      href: targets/webapp.md
   - name: Containers
     items:
     - name: Build images
