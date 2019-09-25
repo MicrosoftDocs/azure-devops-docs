@@ -30,8 +30,9 @@ ms.topic: include
 
     <img alt="Use token as the password for your git tools or apps" src="./_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-    **Note: Remember that this token is your identity and acts as you when it's used. 
-	  Keep your tokens secret and treat them like your password.**
+    > [!NOTE]
+    > Remember that this token is your identity and acts as you when it's used. 
+    > Keep your tokens secret and treat them like your password.**
 
     > [!TIP]
     > To keep your token more secure, use credential managers

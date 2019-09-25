@@ -443,11 +443,11 @@ Use the **/lock** option to apply or remove a lock at the same time you run anot
 
 -   **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
 
->**Note:**  
->In a few cases, the lock operation can fail:
+> [!NOTE]
+> In a few cases, the lock operation can fail:
 >
->- If any other users have locked any of the specified items, the lock operation will fail.
->- The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
+> - If any other users have locked any of the specified items, the lock operation will fail.
+> - The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
 
 ### Use option shortcuts
 

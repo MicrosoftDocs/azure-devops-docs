@@ -205,7 +205,7 @@ You can now pause or disable build definitions. If you plan to make changes to y
 
 Typing the parameters in build definition tasks can sometimes be error prone. With task input validation, task authors can ensure appropriate values are specified. Validation expressions follow the familiar expression syntax used for task conditions and can use any of the supported functions besides the general functions supported by task conditions, including URL, IPV4, email, number range, sha1, length, or match.
 
-Read more about the goals and usage on the [vsts-tasks repo page](https://github.com/Microsoft/vsts-tasks/blob/master/docs/taskinputvalidation.md).
+Read more about the goals and usage on the [vsts-tasks repo page](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/taskinputvalidation.md).
 
 ## Release
 
