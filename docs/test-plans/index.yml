@@ -49,48 +49,6 @@ landingContent:
         links:
           - text: Test different configurations
             url: ../test/test-different-configurations.md
-  - title: Run automated tests
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Run automated tests
-            url: ../test/run-automated-tests-from-test-hub.md
-          - text: Associate automated tests with test cases
-            url: ../test/associate-automated-test-with-test-case.md
-          - text: Track test status
-            url: ../test/track-test-status.md
-  - title: Set up continuous testing
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Build, test, and deploy .NET Core apps
-            url: ../pipelines/ecosystems/dotnet-core.md
-          - text: UI test with Selenium
-            url: ../pipelines/test/continuous-test-selenium.md
-          - text: Run tests, Go
-            url: ../pipelines/ecosystems/go.md#test
-          - text: Run tests, Python
-            url: ../pipelines/ecosystems/python.md#run-tests
-          - text: Publish Code Coverage Results task
-            url: ../pipelines/tasks/test/publish-code-coverage-results.md
-          - text: Review test results
-            url: ../pipelines/test/review-continuous-test-results-after-build.md
-          - text: Analyze test results
-            url: ../pipelines/test/test-analytics.md
-  - title: Unit test your code with Visual Studio
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Create a unit test project
-            url: /visualstudio/test/create-a-unit-test-project
-      - linkListType: tutorial
-        links:
-          - text: Get started with Live Unit Testing
-            url: /visualstudio/test/run-unit-tests-with-test-explorer
-          - text: Get started with Microsoft IntelliTest
-            url: /visualstudio/test/intellitest-manual/getting-started
-          - text: Use code coverage to determine how much code is being tested
-            url: /visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested
   - title: Test & Feedback extension
     linkLists:
       - linkListType: quickstart
@@ -105,4 +63,32 @@ landingContent:
         links:
           - text: Set test retention policies
             url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  - title: Run automated tests
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Run automated tests from test hub
+            url: ../test/run-automated-tests-from-test-hub.md
+          - text: Associate automated tests with test cases
+            url: ../test/associate-automated-test-with-test-case.md
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: .NET Core apps
+            url: ../pipelines/ecosystems/dotnet-core.md
+          - text: Selenium
+            url: ../pipelines/test/continuous-test-selenium.md
+          - text: Go
+            url: ../pipelines/ecosystems/go.md#test
+          - text: Python
+            url: ../pipelines/ecosystems/python.md#run-tests
+          - text: Review Code Coverage Results task
+            url: ../pipelines/tasks/test/review-code-coverage-results.md
+          - text: Review test results
+            url: ../pipelines/test/review-continuous-test-results-after-build.md
+          - text: Analyze test results
+            url: ../pipelines/test/test-analytics.md
+
+
 
