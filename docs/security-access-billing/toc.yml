@@ -31,7 +31,11 @@
   - name: Security
     href: /rest/api/azure/devops/security/
   - name: Permissions
-    href: /rest/api/vsts/security/permissions 
+    href: /rest/api/vsts/security/permissions/ 
+  - name: Organizations (Account)
+    href: /rest/api/azure/devops/account/
+  - name: Audit
+    href: /rest/api/vsts/security/audit/
 - name: Resources
   items:
   - name: Add an alternate account to your Visual Studio subscription
