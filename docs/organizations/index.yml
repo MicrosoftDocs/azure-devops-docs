@@ -74,18 +74,6 @@ landingContent:
             url: ./projects/create-project.md
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
-  - title: Set alerts or notifications
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: About notifications
-            url: ../notifications/about-notifications.md
-      - linkListType: quickstart
-        links:
-          - text: Set personal notifications
-            url: ../notifications/howto-manage-personal-notifications.md
-          - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
   - title: Add and manage organizations (cloud)
     linkLists:
       - linkListType: overview
@@ -100,6 +88,48 @@ landingContent:
             url: ./accounts/create-organization.md
           - text: "See more >"
             url: ../security-access-billing/index.yml
+  - title: Set alerts or notifications
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About notifications
+            url: ../notifications/about-notifications.md
+      - linkListType: quickstart
+        links:
+          - text: Set personal notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Set team notifications
+            url: ../notifications/howto-manage-team-notifications.md
+  - title: Configure Repos resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create & manage Git repositories
+            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage Git branch policies
+            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage repository permissions
+            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add TFVC check-in policies
+            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Pipelines resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage agent pools
+            url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage deployment groups
+            url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage service connections
+            url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Test resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set test retention policies
+            url: ..//test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Customize work tracking (Inheritance process)  
     linkLists:
       - linkListType: overview
@@ -152,36 +182,6 @@ landingContent:
         links:
           - text: XML element reference
             url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Pipelines resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create and manage agent pools
-            url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage deployment groups
-            url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Set build and release retention policies
-            url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage service connections
-            url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Repos resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create & manage Git repositories
-            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage Git branch policies
-            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage repository permissions
-            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Add TFVC check-in policies
-            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Test resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Set test retention policies
-            url: ..//test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Service hooks
     linkLists:
       - linkListType: overview
