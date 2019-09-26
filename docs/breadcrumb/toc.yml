@@ -42,13 +42,13 @@
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
-   - name: Azure DevOps Server Administration
-     tocHref: /azure/devops/server/
-     topicHref: /azure/devops/server/admin/admin-quick-ref
-     items:
-     - name: SharePoint Dashboards (Deprecated)
-       tocHref: /azure/devops/report/sharepoint-dashboards/
-       topicHref: /azure/devops/report/sharepoint-dashboards/index
-     - name: Project Server Integration (Deprecated)
-       tocHref: /azure/devops/reference/tfs-ps-sync/
-       topicHref: /azure/devops/reference/tfs-ps-sync/index
+  - name: Azure DevOps Server Administration
+    tocHref: /azure/devops/server/
+    topicHref: /azure/devops/server/admin/admin-quick-ref
+    items:
+    - name: SharePoint Dashboards (Deprecated)
+      tocHref: /azure/devops/report/sharepoint-dashboards/
+      topicHref: /azure/devops/report/sharepoint-dashboards/index
+    - name: Project Server Integration (Deprecated)
+      tocHref: /azure/devops/reference/tfs-ps-sync/
+      topicHref: /azure/devops/reference/tfs-ps-sync/index
