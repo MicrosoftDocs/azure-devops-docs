@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/16/209  
+ms.date: 09/26/2019 
 ---
 
 # Query quick reference 
@@ -288,6 +288,7 @@ The following table lists common query fields and their data type for which samp
 ## Related articles
 
 - [Query by field value comparisons](query-field-value.md) 
+- [Guidance to create high-performing queries](high-performing-queries.md)
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
