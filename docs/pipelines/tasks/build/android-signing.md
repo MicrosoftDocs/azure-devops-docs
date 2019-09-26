@@ -62,7 +62,7 @@ Select this option to sign the APK with a provided keystore file. Unsigned APKs 
 <tr>
 <td>Keystore File</td>
 <td>
-Enter the secure file ID of the keystore file that should be used to sign the APK. To save the keystore file, go to Piplines > Library > Secure files and upload the secure file there. To find the secure file ID, click on the keystore file you have uploaded in the list of secure file and, in the page URI, copy the secureFileId property.
+Enter the secure file name of the keystore file that should be used to sign the APK. To save the keystore file as a secure file, go to Piplines > Library > Secure files and upload it.
 </td>
 </tr>
 <tr>
