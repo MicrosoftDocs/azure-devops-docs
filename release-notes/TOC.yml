@@ -6,6 +6,8 @@
   - name: 2019
     expanded: true
     items:
+    - name: September 23
+      href: 2019/sprint-158-update.md 
     - name: September 3
       href: 2019/sprint-157-update.md 
     - name: August 12
@@ -298,6 +300,8 @@
   href: https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019?view=azure-devops
 - name: Azure Boards
   items:
+    - name: September 23
+      href: 2019/boards/sprint-158-update.md
     - name: September 3
       href: 2019/boards/sprint-157-update.md
     - name: August 12
@@ -322,6 +326,8 @@
       href: 2019/boards/sprint-146-update.md
 - name: Azure Repos
   items:
+    - name: September 23
+      href: 2019/repos/sprint-158-update.md 
     - name: September 3
       href: 2019/repos/sprint-157-update.md 
     - name: August 12
@@ -342,6 +348,8 @@
       href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
   items:
+    - name: September 23
+      href: 2019/pipelines/sprint-158-update.md
     - name: September 3
       href: 2019/pipelines/sprint-157-update.md
     - name: August 12
@@ -370,6 +378,8 @@
       href: 2019/pipelines/sprint-146-update.md
 - name: Azure Test Plans
   items:
+    - name: September 23
+      href: 2019/testplans/sprint-158-update.md
     - name: August 12
       href: 2019/testplans/sprint-156-update.md
     - name: July 1
@@ -400,6 +410,8 @@
       href: 2019/artifacts/sprint-146-update.md
 - name: General
   items:
+    - name: September 23
+      href: 2019/general/sprint-158-update.md
     - name: September 3
       href: 2019/general/sprint-157-update.md
     - name: August 12
@@ -426,6 +438,8 @@
       href: 2019/general/sprint-146-update.md
 - name: Reporting
   items:
+    - name: September 23 
+      href: 2019/reporting/sprint-158-update.md
     - name: September 3 
       href: 2019/reporting/sprint-157-update.md
     - name: August 12 
@@ -438,6 +452,8 @@
       href: 2019/reporting/sprint-147-update.md
 - name: Wiki
   items:
+    - name: September 23
+      href: 2019/wiki/sprint-158-update.md  
     - name: August 12
       href: 2019/wiki/sprint-156-update.md
     - name: July 1

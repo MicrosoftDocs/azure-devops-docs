@@ -96,7 +96,7 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 
-`vsts-npm-auth` is not supported on TFS.
+`vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
 
 ::: moniker-end
 

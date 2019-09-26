@@ -78,5 +78,5 @@ Use Azure Pipelines to configure and automate your build and delivery tools and 
 
 ## Resources 
 
-- [Azure Repos](../../repos/index.md)
+- [Azure Repos](../../repos/index.yml)
 - [Azure Artifacts](../../artifacts/index.md)
