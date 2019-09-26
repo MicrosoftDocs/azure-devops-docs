@@ -74,6 +74,8 @@ landingContent:
             url: ./projects/create-project.md
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
+          - text: Connect to GitHub
+            url: ../boards/github/connect-to-github.md
   - title: Add and manage organizations (cloud)
     linkLists:
       - linkListType: overview
