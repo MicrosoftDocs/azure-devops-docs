@@ -20,8 +20,8 @@
     tocHref: /azure/devops/artifacts/
     topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
-    tocHref: /azure/devops/test-plans/
-    topicHref: /azure/devops/test-plans/index
+    tocHref: /azure/devops/test/
+    topicHref: /azure/devops/test/index
     items:
   - name: Reporting
     tocHref: /azure/devops/report/
