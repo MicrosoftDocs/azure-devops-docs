@@ -39,7 +39,7 @@ All HTML and Markdown tags are stripped from the headings while adding it inside
 For example: Adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
-> [![Tags for TOC](_img/toc_tags.png)
+> ![Tags for TOC](_img/toc_tags.png)
 
 Consistency is maintained in the formatting in TOC.
 
