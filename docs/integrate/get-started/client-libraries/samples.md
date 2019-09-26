@@ -160,13 +160,3 @@ public static void OAuthSample()
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssOAuthAccessTokenCredential(accessToken));
 }
 ```
-
-##### Basic Authentication for REST services
-```cs
-public static void BasicAuthRestSample()
-{
-    // Create instance of VssConnection using basic auth credentials. 
-    // For security, ensure you are connecting to an https server, since credentials get sent in plain text.
-    VssConnection connection = new VssConnection(new Uri(collectionUri), new VssBasicCredential(username, password));
-}
-```
