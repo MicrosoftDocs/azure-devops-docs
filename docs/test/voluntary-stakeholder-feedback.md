@@ -83,6 +83,6 @@ voluntarily, even if you haven't received a specific
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
 * [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
