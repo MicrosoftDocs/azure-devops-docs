@@ -1,4 +1,4 @@
-- name: Exploratory & Manual Testing 
+- name: Exploratory & manual testing 
   href: index.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
 - name: About exploratory and manual testing
   href: overview.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json

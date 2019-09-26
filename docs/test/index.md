@@ -12,7 +12,7 @@ ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Exploratory &amp; Manual Testing
+# Exploratory &amp; manual testing
 
 [!INCLUDE [version-header](_shared/version-header.md)]
 
