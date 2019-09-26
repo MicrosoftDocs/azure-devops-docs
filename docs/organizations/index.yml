@@ -132,6 +132,20 @@ landingContent:
         links:
           - text: Set test retention policies
             url: ..//test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with Service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a service hook with Web Hooks
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Integrate with Slack
+            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Customize work tracking (Inheritance process)  
     linkLists:
       - linkListType: overview
@@ -184,17 +198,3 @@ landingContent:
         links:
           - text: XML element reference
             url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Service hooks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Integrate with Service hooks
-            url: ../service-hooks/overview.md
-      - linkListType: quickstart
-        links:
-          - text: Create a service hook with Web Hooks
-            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Slack
-            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
