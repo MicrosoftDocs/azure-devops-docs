@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2019
+ms.date: 09/19/2019
 ---
 
 # .NET client libraries for Azure DevOps Services (and TFS)
@@ -88,7 +88,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 ## Pattern for use
 
 In general, you first create an authenticated connection to Azure DevOps Services or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
-Example:
+See the following examples:
 
 ```csharp
 using Microsoft.VisualStudio.Services.Common;
@@ -113,6 +113,43 @@ GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
 // Get data about a specific repository
 var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
 ```
+
+Authentication paths that produce an interactive dialog are not available in the .NET Standard version of the .NET client libraries. When using the .NET Standard version of the .NET client libraries, you will need to provide credentials more explicitly in order to authenticate, as in the example below.
+
+```csharp
+using System;
+using Microsoft.VisualStudio.Services.Common;
+using Microsoft.TeamFoundation.SourceControl.WebApi;
+using Microsoft.VisualStudio.Services.WebApi;
+
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        const String c_collectionUri = "https://dev.azure.com/fabrikam";
+        const String c_projectName = "MyGreatProject";
+        const String c_repoName = "MyRepo";
+        const string c_pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+
+        static void Main(string[] args)
+        {
+            VssCredentials creds = new VssBasicCredential(string.Empty, c_pat);
+
+            // Connect to Azure DevOps Services
+            VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
+
+            // Get a GitHttpClient to talk to the Git endpoints
+            GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
+
+            // Get data about a specific repository
+            var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+        }
+    }
+}
+```
+
+Further authentication samples can be found on our [.NET Samples Page](../get-started/client-libraries/samples.md).
 
 ## Reference
 

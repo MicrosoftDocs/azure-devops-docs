@@ -124,13 +124,13 @@ During development it's convenient to stop tracking file changes to a file commi
 customizing settings or configuration files that are part of your project source for your own work environment.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git update-index --assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
+&gt; git update-index --skip-worktree <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
 
 Resume tracking files with:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git update-index --no-assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
+&gt; git update-index --no-skip-worktree <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
 
 #### Permanently ignore changes to a file
