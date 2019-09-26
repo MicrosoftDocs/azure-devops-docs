@@ -117,16 +117,16 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Build, test, and deploy .NET Core apps
+          - text: .NET Core apps
             url: ./ecosystems/dotnet-core.md
-          - text: UI test with Selenium
+          - text: Selenium
             url: ./test/continuous-test-selenium.md
-          - text: Run tests, Go
+          - text: Go
             url: ./ecosystems/go.md#test
-          - text: Run tests, Python
+          - text: Python
             url: ./ecosystems/python.md#run-tests
-          - text: Publish Code Coverage Results task
-            url: ./tasks/test/publish-code-coverage-results.md
+          - text: Review Code Coverage Results task
+            url: ./tasks/test/review-code-coverage-results.md
           - text: Review test results
             url: ./test/review-continuous-test-results-after-build.md
           - text: Analyze test results
