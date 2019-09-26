@@ -92,6 +92,8 @@
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Notifications
     href: /rest/api/azure/devops/notification
+  - name: Service hooks
+    href: /rest/api/azure/devops/hooks
   - name: Processes
     href: /rest/api/azure/devops/processes/processes
   - name: Process Templates
@@ -120,8 +122,6 @@
     href: ./public/index.md
   - name: Azure Boards
     href: ../boards/index.yml
-  - name: "Workflow states & categories"
-    href: ../boards/work-items/workflow-and-state-categories.md
   - name: Azure Repos
     href: ../repos/index.yml
   - name: Web portal navigation

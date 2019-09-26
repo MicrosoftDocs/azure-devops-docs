@@ -175,7 +175,7 @@ landingContent:
           - text: Create and manage agent pools
             url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage deployment groups
-            url: ../pipelines/release/deployment-groups.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Set build and release retention policies
             url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage service connections
