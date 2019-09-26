@@ -8,8 +8,10 @@
       href: quickstarts/work-item-quickstart.md
 - name: Samples
   items:
-    - name: Samples
+    - name: .NET
       href: get-started/client-libraries/samples.md
+    - name: .NET (Legacy)
+      href: get-started/client-libraries/soapSamples.md
 - name: Concepts
   items:
     - name: Best practices
