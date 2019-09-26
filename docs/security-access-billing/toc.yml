@@ -1,5 +1,5 @@
 
-- name: Azure DevOps security, access, and billing documentation
+- name: Security, access, & billing
   expanded: false
   href: index.yml
 - name: Get started as an administrator
