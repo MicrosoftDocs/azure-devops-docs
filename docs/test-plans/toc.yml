@@ -32,17 +32,3 @@
     href: ../test/mtm/collect-more-diagnostic-data-in-manual-tests.md
   - name: Test Microsoft Store apps
     href: ../test/mtm/testing-microsoft-store-apps.md
-- name: REST API Reference
-  items:
-  - name: Test Management
-    href: /rest/api/azure/devops/test
-  - name: Test Plans
-    href: /rest/api/azure/devops/testplan/test%20%20plans
-- name: Resources
-  items:
-  - name: Azure DevOps Blog, Test
-    href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
-  - name: Plug-ins for Visual Studio
-    href: http://go.microsoft.com/fwlink/?LinkID=246630
-  - name: Create custom code & plug-ins
-    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests

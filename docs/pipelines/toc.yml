@@ -1,9 +1,7 @@
 - name: Azure Pipelines
   href: index.yml
-- name: Azure Pipelines
+- name: Get started
   href: get-started/index.md
-- name: Overview
-  href: get-started/overview.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
 - name: Sign up for Azure Pipelines

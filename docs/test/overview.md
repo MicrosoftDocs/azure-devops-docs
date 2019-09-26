@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 12/04/2018
+ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -43,6 +43,7 @@ and gathering feedback from stakeholders.
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="manual-testing"></a>
+
 ## Planned manual testing
 
 Manual testing has evolved with the software development process
@@ -51,7 +52,23 @@ can begin manual testing right from their Kanban boards in the Work
 hub. Teams that need more advanced capabilities can use the Test
 hub for all their test management needs.
 
-### Manual testing from the Kanban board
+Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
+
+| | | |
+| --- | --- | --- |
+| ![icon](_img/testplan-icon.png)<br />[Create a test plan](create-a-test-plan.md) | ![icon](_img/testcases-icon.png)<br />[Create test cases](create-test-cases.md) | ![icon](_img/runtests2-icon.png)<br />[Run manual tests](run-manual-tests.md) |
+| ![icon](_img/marketplace-icon.png)<br />[Install the extension](perform-exploratory-tests.md) | ![icon](_img/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](_img/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
+| | | |
+
+## Videos
+
+| | |
+| --- | --- |
+| <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | |
+| | |
+
+## Manual testing from the Kanban board
 
 Get started with manual testing easily using the Kanban board in 
 the Work hub. Add, view, and interact with test cases directly
@@ -63,7 +80,7 @@ to use these features. See more at [Add, run, and update inline tests](../boards
 
 ![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
 
-### Manual testing in Test Manager
+## Manual testing in Test Manager
 
 [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
 a rich test management solution for teams that need advanced manual
@@ -73,7 +90,7 @@ execution, and tracking. Get started using the advanced manual
 testing features with the
 [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
-#### Test planning
+### Test planning
 
 Create and manage test plans and test suites for your teams with ease.
 Create static suites, requirement-based suites, or query-based suites.
@@ -82,7 +99,7 @@ See more at [Create test plans](create-a-test-plan.md)
 
 ![Creating manual test plans](_img/manual-testing/create-test-plans-01.png)
 
-#### Test authoring
+### Test authoring
 
 Create multiple test cases in one operation, or easily add existing
 test cases to a test suite. Assign single or multiple testers to 
@@ -91,7 +108,7 @@ across test suites. See more at [Create test cases](create-test-cases.md).
 
 ![Creating manual test cases](_img/manual-testing/create-test-cases-01.png)
 
-#### Testing applications
+### Testing applications
 
 [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
 test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
@@ -100,7 +117,7 @@ to help your developers reproduce the issues. See more at [Run tests for web app
 
 ![Testing web applications](_img/manual-testing/test-web-app-01.png)
 
-#### Test tracking
+## Test tracking
 
 Quickly configure lightweight charts to track your manual test results
 using the chart types of your choice, and pin the charts to your dashboard to
@@ -111,6 +128,7 @@ See more at [Track test status](track-test-status.md).
 ![Test status tracking](_img/manual-testing/track-test-status-01.png)
 
 <a name="user-acceptance"></a>
+
 ## User acceptance testing
 
 User acceptance testing (UAT) is a key factor in software development
@@ -125,6 +143,7 @@ See more at [User acceptance testing](user-acceptance-testing.md).
 ![Assigning testers to run all tests](_img/manual-testing/assign-testers-01.png)
 
 <a name="exploratory-testing"></a>
+
 ## Exploratory testing for everyone
 
 Maximizing quality in modern software development processes is a
@@ -172,6 +191,7 @@ of the work items created, the work items explored and not explored, session own
 and more.
 
 <a name="stakeholder-feedback"></a>
+
 ## Stakeholder feedback
 
 Seeking feedback from stakeholders outside the development team, such

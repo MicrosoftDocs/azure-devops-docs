@@ -1,110 +1,123 @@
 - name: Exploratory & manual testing 
-  href: index.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+  href: index.md
 - name: About exploratory and manual testing
-  href: overview.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+  href: overview.md
 - name: About load testing
-  href: load-test/overview.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+  href: load-test/overview.md
 - name: Quickstarts
   expanded: true
   items:
   - name: Manual testing
     items:
     - name: Create a test plan
-      href: create-a-test-plan.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: create-a-test-plan.md
     - name: Create test cases
-      href: create-test-cases.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: create-test-cases.md
     - name: Run manual tests
-      href: run-manual-tests.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: run-manual-tests.md
     - name: New test plans page
-      href: new-test-plans-page.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json 
+      href: new-test-plans-page.md 
   - name: "Test & Feedback extension"
     items:
     - name: Install the extension
-      href: perform-exploratory-tests.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: perform-exploratory-tests.md
     - name: Test in Connected mode
-      href: connected-mode-exploratory-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: connected-mode-exploratory-testing.md
     - name: Test in Standalone mode
-      href: standalone-mode-exploratory-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: standalone-mode-exploratory-testing.md
   - name: Load testing
     items:
     - name: Load test with Visual Studio
-      href: load-test/getting-started-with-performance-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/getting-started-with-performance-testing.md
     - name: Load test with Azure DevOps
-      href: load-test/get-started-simple-cloud-load-test.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/get-started-simple-cloud-load-test.md
     - name: Load test with Azure portal
-      href: load-test/app-service-web-app-performance-test.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/app-service-web-app-performance-test.md
     - name: View and compare results
-      href: load-test/performance-reports.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/performance-reports.md
 - name: Tutorials
   items:
   - name: Test from the Kanban board
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Load test before release
-    href: load-test/run-performance-tests-app-before-release.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: load-test/run-performance-tests-app-before-release.md
 - name: How-to Guides
   items:
   - name: Manual testing
     items:
     - name: Track test status
-      href: track-test-status.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: track-test-status.md
     - name: Delete test artifacts
-      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: ../boards/backlogs/delete-test-artifacts.md
     - name: Perform user acceptance testing
-      href: user-acceptance-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: user-acceptance-testing.md
     - name: Test different configurations
-      href: test-different-configurations.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: test-different-configurations.md
     - name: Repeat a test with different data
-      href: repeat-test-with-different-data.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: repeat-test-with-different-data.md
     - name: Collect diagnostic data
-      href: collect-diagnostic-data.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: collect-diagnostic-data.md
     - name: Manage test results
-      href: how-long-to-keep-test-results.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
-      href: associate-automated-test-with-test-case.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: associate-automated-test-with-test-case.md
     - name: Run tests from test plans
-      href: run-automated-tests-from-test-hub.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: run-automated-tests-from-test-hub.md
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items
-      href: explore-workitems-exploratory-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: explore-workitems-exploratory-testing.md
     - name: Add to existing bugs
-      href: add-to-bugs-exploratory-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: add-to-bugs-exploratory-testing.md
     - name: Get insights from tests
-      href: insights-exploratory-testing.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: insights-exploratory-testing.md
     - name: Request stakeholder feedback
-      href: request-stakeholder-feedback.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: request-stakeholder-feedback.md
     - name: Provide stakeholder feedback
-      href: provide-stakeholder-feedback.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: provide-stakeholder-feedback.md
     - name: Get voluntary stakeholder feedback
-      href: voluntary-stakeholder-feedback.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: voluntary-stakeholder-feedback.md
     - name: Track stakeholder feedback requests
-      href: track-stakeholder-feedback.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: track-stakeholder-feedback.md
   - name: Load testing
     items:
     - name: Add app performance data
-      href: load-test/get-performance-data-for-load-tests.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/get-performance-data-for-load-tests.md
     - name: Run Apache JMeter load tests
-      href: load-test/get-started-jmeter-test.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/get-started-jmeter-test.md
     - name: Record and replay tests
-      href: load-test/record-and-replay-cloud-load-tests.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/record-and-replay-cloud-load-tests.md
     - name: Test private and intranet apps
-      href: load-test/clt-behind-firewall.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/clt-behind-firewall.md
     - name: Test using your own servers
-      href: load-test/clt-with-private-machines.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/clt-with-private-machines.md
     - name: Install certificates and software
-      href: load-test/install-certs-and-software.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+      href: load-test/install-certs-and-software.md
 - name: Reference
   items:
   - name: Default permissions (Security)
-    href: manual-test-permissions.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: manual-test-permissions.md
   - name: Manual testing FAQs
-    href: reference-qa.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: reference-qa.md
   - name: Load testing FAQs
-    href: load-test/reference-qa.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: load-test/reference-qa.md
   - name: TCM Reporting FAQs
-    href: reference-tcm.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+    href: reference-tcm.md
   - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
-
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: REST API Reference
+  items:
+  - name: Test Management
+    href: /rest/api/azure/devops/test
+  - name: Test Plans
+    href: /rest/api/azure/devops/testplan/test%20%20plans
+- name: Resources
+  items:
+  - name: Azure DevOps Blog, Test
+    href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+  - name: Plug-ins for Visual Studio
+    href: http://go.microsoft.com/fwlink/?LinkID=246630
+  - name: Create custom code & plug-ins
+    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
 
 
