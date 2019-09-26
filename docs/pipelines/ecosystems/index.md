@@ -267,7 +267,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="UWP logo" src="https://docs.microsoft.com/media/logos/logo_Windows.svg">
+                                        <img alt="UWP logo" src="../_img/index/logo_uwp.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -750,7 +750,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="UWP logo" src="_img/index/logo_uwp.svg">
+                                        <img alt="UWP logo" src="../_img/index/logo_uwp.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
