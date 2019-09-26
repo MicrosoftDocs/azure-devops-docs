@@ -1,5 +1,5 @@
 ---
-title: Ecosystems index
+title: Build and deploy apps, any app and platform ecosystems index
 titleSuffix: Azure DevOps Services
 description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS).  
 layout: LandingPage
@@ -135,7 +135,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="containers/build-image.md">
+                <a href="./containers/build-image.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -267,7 +267,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="UWP logo" src="../_img/index/logo_uwp.svg">
+                                        <img alt="UWP logo" src="https://docs.microsoft.com/media/logos/logo_Windows.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -321,7 +321,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 <a href="#index3"></a>
 <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
-                <a href="kubernetes/deploy.md">
+                <a href="./kubernetes/deploy.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -618,7 +618,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="containers/build-image.md">
+                <a href="./containers/build-image.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -803,7 +803,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
-                <a href="targets/azure-sqldb.md">
+                <a href="../targets/azure-sqldb.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -821,7 +821,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="targets/webapp.md">
+                <a href="../targets/webapp.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -839,7 +839,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="apps/cd/deploy-linuxvm-deploygroups.md">
+                <a href="../apps/cd/deploy-linuxvm-deploygroups.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -857,7 +857,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="artifacts/npm.md">
+                <a href="../artifacts/npm.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -875,7 +875,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="artifacts/nuget.md">
+                <a href="../artifacts/nuget.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -893,7 +893,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="targets/scvmm.md">
+                <a href="../targets/scvmm.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -911,7 +911,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="targets/vmware.md">
+                <a href="../targets/vmware.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -929,7 +929,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="apps/cd/deploy-docker-webapp.md">
+                <a href="../apps/cd/deploy-docker-webapp.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -947,7 +947,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                 </a>
             </li>
             <li>
-                <a href="apps/cd/deploy-webdeploy-iis-deploygroups.md">
+                <a href="../apps/cd/deploy-webdeploy-iis-deploygroups.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

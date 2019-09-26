@@ -1,10 +1,11 @@
 - name: Exploratory & Manual Testing 
-  href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
 - name: About exploratory and manual testing
-  href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  href: overview.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
 - name: About load testing
-  href: load-test/overview.md
+  href: load-test/overview.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
 - name: Quickstarts
+  expanded: true
   items:
   - name: Manual testing
     items:

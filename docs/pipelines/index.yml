@@ -79,7 +79,7 @@ landingContent:
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
-  - title: Build with any repositories
+  - title: Build any repository
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -158,7 +158,7 @@ landingContent:
           - text: Create and manage agent pools
             url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage deployment groups
-            url: ./release/deployment-groups/.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./release/deployment-groups.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create and manage service connections
             url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Set build and release retention policies
