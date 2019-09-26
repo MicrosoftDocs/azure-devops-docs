@@ -289,7 +289,7 @@ You can also extend and add your own agentless tasks, but there are some restric
 - Agentless tasks cannot run scripts.
 - You must select one of the pre-defined execution handlers: HttpRequest handler to call an HTTP endpoint, or ServiceBus handler to post a message on the Azure service bus.
 
-For examples on how to create such tasks, see the [InvokeRestAPI](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1) and [PublishToAzureServiceBus](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1) tasks.
+For examples on how to create such tasks, see the [InvokeRestAPI](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1) and [PublishToAzureServiceBus](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1) tasks.
 
 ### Apple provisioning profiles can be installed from source repositories
 
