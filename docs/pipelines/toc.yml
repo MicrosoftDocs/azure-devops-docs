@@ -3,18 +3,13 @@
 - name: Azure Pipelines
   href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Overview
-  expanded: true
-  items:
-  - name: Overview
-    href: get-started/overview.md
-  - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
-  - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md
-  - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+  href: get-started/overview.md
+- name: What is Azure Pipelines?
+  href: get-started/what-is-azure-pipelines.md - name: Sign up for Azure Pipelines
+  href: get-started/pipelines-sign-up.md - name: How to use Azure Pipelines
+  href: get-started/pipelines-get-started.md
+- name: Key concepts
+  href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
