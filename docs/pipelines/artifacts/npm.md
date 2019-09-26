@@ -72,7 +72,7 @@ To publish to an external npm registry, you must first create a service connecti
 
 * * *
 > [!NOTE]
-> The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. Ensure that your working folder has an `.npmrc` file with a `registry=` line, as detailed in the **Connect to feed** screen in your feed.
+> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
 ## Q&A
 
