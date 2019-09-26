@@ -84,7 +84,7 @@ landingContent:
           - text: Python
             url: ../pipelines/ecosystems/python.md#run-tests
           - text: Review Code Coverage Results task
-            url: ../pipelines/tasks/test/review-code-coverage-results.md
+            url: ../pipelines/test/review-code-coverage-results.md
           - text: Review test results
             url: ../pipelines/test/review-continuous-test-results-after-build.md
           - text: Analyze test results
