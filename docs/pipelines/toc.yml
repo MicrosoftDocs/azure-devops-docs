@@ -1,4 +1,4 @@
-- name: Azure Pipelines Documentation
+- name: Azure Pipelines
   href: index.yml
 - name: Azure Pipelines
   href: get-started/index.md
