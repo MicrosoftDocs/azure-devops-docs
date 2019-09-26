@@ -1,5 +1,5 @@
-- name: Exploratory & manual testing 
-  href: index.md
+- name: Azure Test Plans 
+  href: index.yml
 - name: About exploratory and manual testing
   href: overview.md
 - name: About load testing
