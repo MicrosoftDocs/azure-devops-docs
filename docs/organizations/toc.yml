@@ -1,5 +1,5 @@
 
-- name: Azure DevOps configure and customize resources documentation
+- name: Configure & customize 
   expanded: false
   href: index.yml
 - name: About settings
@@ -22,24 +22,22 @@
   items:
   - name: How-to guides
     items:
-    - name: Manage your organization
-      items:
-      - name: Change organization Owner
-        href: ./accounts/change-organization-ownership-vs.md
-      - name: Rename organization
-        href: ./accounts/rename-vsts-organization.md
-      - name: Delete organization
-        href: ./accounts/delete-your-organization.md
-      - name: Recover organization
-        href: ./accounts/recover-your-vsts-organization.md
-      - name: Change organization location
-        href: ./accounts/change-organization-location.md
-      - name: Add privacy policy URL
-        href: ./accounts/add-privacy-policy-url.md
-      - name: Change time zone
-        href: ./accounts/change-time-zone.md
-      - name: Add and manage banners
-        href: ./settings/manage-banners.md 
+    - name: Change organization Owner
+      href: ./accounts/change-organization-ownership-vs.md
+    - name: Rename organization
+      href: ./accounts/rename-vsts-organization.md
+    - name: Delete organization
+      href: ./accounts/delete-your-organization.md
+    - name: Recover organization
+      href: ./accounts/recover-your-vsts-organization.md
+    - name: Change organization location
+      href: ./accounts/change-organization-location.md
+    - name: Add privacy policy URL
+      href: ./accounts/add-privacy-policy-url.md
+    - name: Change time zone
+      href: ./accounts/change-time-zone.md
+    - name: Add and manage banners
+      href: ./settings/manage-banners.md 
   - name: Troubleshooting
     items:
     - name: Create organization
@@ -115,19 +113,17 @@
 - name: Resources
   items:
   - name: Security, access, & billing
-    href: /azure/devops/organizations/security-access-billing/index
-  - name: Public projects
-    href: /azure/devops/organizations/public/index.md
-  - name: Azure Boards
-    href: /azure/devops/boards/index
-  - name: "Workflow states & categories"
-    href: /azure/devops/boards/work-items/workflow-and-state-categories
-  - name: Add a custom control to a form
-    href: /azure/devops/extend/develop/custom-control
+    href: ../security-access-billing/index.yml
   - name: Marketplace & extensibility  
-    href: /azure/devops/marketplace-extensibility/index
-  - name: Git
-    href: /azure/devops/repos/git/index
+    href: ../marketplace-extensibility/index.md
+  - name: Public projects
+    href: ./public/index.md
+  - name: Azure Boards
+    href: ../boards/index.yml
+  - name: "Workflow states & categories"
+    href: ../boards/work-items/workflow-and-state-categories.md
+  - name: Azure Repos
+    href: ../repos/index.yml
   - name: Web portal navigation
-    href: /azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: ../project/navigation/index.md
 
