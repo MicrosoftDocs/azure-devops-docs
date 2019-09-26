@@ -212,7 +212,7 @@ With test features, you gain access to the following features:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity
 
-To learn more, see [Testing overview](../test/index.md).
+To learn more, see [Testing overview](../test/index.yml).
 
 ## Collaboration services
 

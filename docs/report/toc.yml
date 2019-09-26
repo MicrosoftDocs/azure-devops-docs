@@ -28,7 +28,7 @@
   - name: Azure Boards  
     href: /azure/devops/boards/index
   - name: Azure Test Plans  
-    href: /azure/devops/test-plans/index
+    href: /azure/devops/test/index
   - name: Azure Pipelines  
     href: /azure/devops/pipelines/index
   - name: Work item field index  

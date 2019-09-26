@@ -11939,6 +11939,16 @@
       "source_path": "docs/integrate/get-started/authentication/pats.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/get-started/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test-plans/index.md",
+      "redirect_url": "/azure/devops/test/index",
+      "redirect_document_id": true
     }
   ]
 }
