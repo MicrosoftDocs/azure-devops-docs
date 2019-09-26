@@ -72,7 +72,7 @@ You can create reports and query for data by using the warehouse database. The d
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
- For more information, see [Testing overview](../../test/index.md) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx).  
+ For more information, see [Testing overview](../../test/index.yml) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx).  
   
 <a name="WorkItems"></a>
 ##  Tasks, Bugs and Other Types of Work Items  
