@@ -1,7 +1,9 @@
-- name: Azure Test Plans Documentation
+- name: Azure Test Plans
   href: index.yml
-- name: Exploratory & Manual Testing
+- name: Exploratory & manual testing
   href: ../test/toc.yml
+- name: Request stakeholder feedback
+  href: ../project/feedback/toc.yml
 - name: Unit test your code
   href: /visualstudio/test/unit-test-your-code
 - name: Microsoft Test Manager (Deprecated)
@@ -38,8 +40,6 @@
     href: /rest/api/azure/devops/testplan/test%20%20plans
 - name: Resources
   items:
-  - name: Request stakeholder feedback
-    href: ../project/feedback/toc.yml
   - name: Azure DevOps Blog, Test
     href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
   - name: Plug-ins for Visual Studio
