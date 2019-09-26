@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/20/2019  
+ms.date: 09/26/2019  
 ---
 
 
@@ -59,6 +59,9 @@ If you filter on a group that contains a large number of members, your result se
 ## Avoid use of negated operators 
 
 Negated operators&mdash;such as `<>, Not In, Not Under, Not In Group`&mdash;are likely to make your query non-selective, which can result in a large result set. 
+
+Only use negated operators when it is absolutely necessary. Always try to find alternatives first. For example, if Field1 has values A, B, C, D; specifying `Field1 In A, B, C` provides a better alternative to the clause `Field1 <> D`.
+
 
 ## Avoid string comparisons  
 
