@@ -1,0 +1,91 @@
+### YamlMime:Landing
+
+title: Azure Test Plans documentation
+summary: Improve your overall code quality by using manual and exploratory testing services for your apps.
+
+metadata:
+  title: Azure Test Plans documentation
+  description: Test your software using using manual and exploratory testing services to improve your overall code quality. 
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-test
+  ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 09/30/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Azure Test Plans
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Test Plans?
+            url: ../test/overview.md
+      - linkListType: video
+        links:
+          - text: Capturing actionable feedback with manual testing
+            url: https://www.youtube.com/embed/u-fdqhxonPc
+          - text: Test Case Explorer
+            url: https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player
+          - text: Test & Feedback
+            url: https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player
+  - title: Run manual tests
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create test plans and suites
+            url: ../test/create-a-test-plan.md
+          - text: Create manual test cases
+            url: ../test/create-test-cases.md
+          - text: Run manual tests
+            url: ../test/run-manual-tests.md
+      - linkListType: tutorial
+        links:
+          - text: Test different configurations
+            url: ../test/test-different-configurations.md
+  - title: Test & Feedback extension
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Install the Test & Feedback extension
+            url: ../test/perform-exploratory-tests.md
+          - text: Test in Connected mode
+            url: ../test/connected-mode-exploratory-testing.md
+  - title: Configure Test resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set test retention policies
+            url: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  - title: Run automated tests
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Run automated tests from test hub
+            url: ../test/run-automated-tests-from-test-hub.md
+          - text: Associate automated tests with test cases
+            url: ../test/associate-automated-test-with-test-case.md
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: .NET Core apps
+            url: ../pipelines/ecosystems/dotnet-core.md
+          - text: Go
+            url: ../pipelines/ecosystems/go.md#test
+          - text: Python
+            url: ../pipelines/ecosystems/python.md#run-tests
+          - text: UI testing using Selenium
+            url: ../pipelines/test/continuous-test-selenium.md
+          - text: Review code coverage results
+            url: ../pipelines/test/review-code-coverage-results.md
+          - text: Review test results
+            url: ../pipelines/test/review-continuous-test-results-after-build.md
+          - text: Analyze test results
+            url: ../pipelines/test/test-analytics.md

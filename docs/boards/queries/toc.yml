@@ -18,6 +18,10 @@
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
+- name: Concepts
+  items:
+  - name: High-performing queries
+    href: high-performing-queries.md 
 - name: Samples
   items:
   - name: Query by title, ID, or description
