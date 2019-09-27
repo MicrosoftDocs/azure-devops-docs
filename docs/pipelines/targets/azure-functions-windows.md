@@ -14,7 +14,7 @@ ms.date: 9/11/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy a Azure Function
+# Deploy an Azure Function
 
 You can automatically deploy your Azure Function after every successful build.
 
