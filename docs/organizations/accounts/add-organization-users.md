@@ -97,9 +97,7 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 <a id="add-user" /> 
 
 ### Add a user 
-You can add users through [Azure DevOps CLI](/azure/devops/cli/get-started?view=azure-devops) to an organization.
-
-Add user to an organization
+You can add users through [Azure DevOps CLI](/azure/devops/cli/get-started?view=azure-devops) to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command.
 
 ```CLI
 az devops user add –-email-id 

@@ -38,6 +38,7 @@ To learn more, read [about access levels](../security/access-levels.md).
 You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Manage users in Azure DevOps
+From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
 #### [Browser](#tab/browser)
  
