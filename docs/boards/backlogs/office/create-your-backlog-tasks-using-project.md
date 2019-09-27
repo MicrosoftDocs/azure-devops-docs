@@ -9,19 +9,18 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE  
 ms.topic: conceptual
-monikerRange: '< azure-devops-2019'
-ms.date: 04/11/2019
+monikerRange: '<= tfs-2018'
+ms.date: 08/15/2019
 ---
 
 
 # Create your backlog and tasks using Microsoft Project 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
 
 If Microsoft Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
-> [!IMPORTANT]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. You can continue to use Microsoft Excel.  
+[!INCLUDE [temp](../../_shared/deprecate-project.md)]
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 
@@ -34,15 +33,17 @@ Use this article to learn how to:
 > * Link tasks to create predecessor-successor links  
 > * View how Project columns map to work item fields    
 
-::: moniker range="<= tfs-2017"  
+
+::: moniker range="<= tfs-2015"  
 > [!NOTE] 
->You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../../reference/tfs-ps-sync/synchronize-tfs-project-server.md), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
+> You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../../reference/tfs-ps-sync/synchronize-tfs-project-server.md), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
+> 
 ::: moniker-end  
 
 
 ## Prerequisites 
 
-::: moniker range=">= tfs-2017" 
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 - Office Project 2010 or later version, including Office Project 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in  Azure Boards or TFS. 
@@ -55,11 +56,12 @@ Use this article to learn how to:
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 
-To learn more about compatibility requirements, see [Compatibility with Azure DevOps Services and TFS versions](/azure/devops/server/compatibility). 
+To learn more about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility). 
 
 ## Add tasks and publish work items
 
 #### [Office Project 365](#tab/office-365/)
+
 1. If you don't have Office Project 2010 or a more recent version, [install it](https://products.office.com/project). 
 
 2. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
@@ -135,6 +137,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 
 #### [Office Project 2007](#tab/office-2007/)
+
 1. If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). 
 
 1. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
@@ -311,6 +314,7 @@ You can manage your project plan using Project and all the features that Project
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
+
 You can't delete work items from Excel nor from Project. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../remove-delete-work-items.md).
 
 ### Do you want to add Project fields to work items?
