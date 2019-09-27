@@ -9,6 +9,8 @@ Connect to your project using a [supported web browser](/azure/devops/server/com
 
 If you need to switch your team project, choose the ![project-icon.png](../../../_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
+::: moniker range="= azure-devops"
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/get-started.md).
@@ -37,12 +39,14 @@ Open a wiki named 'myprojectwiki'.
 az devops wiki show --wiki myprojectwiki --open
 ```
 
+::: moniker-end
+
 * * *
 
 ::: moniker range=">= tfs-2018 <azure-devops"
 
 [!INCLUDE [note-cli-not-supported](../../../_shared/note-cli-not-supported.md)]
 
-::: end-moniker
+::: moniker-end
 
 
