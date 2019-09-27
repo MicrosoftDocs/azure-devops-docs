@@ -37,6 +37,8 @@ To learn more, read [about access levels](../security/access-levels.md).
 
 You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
+## Manage users in Azure DevOps
+
 #### [Browser](#tab/browser)
  
 ### Manage users
