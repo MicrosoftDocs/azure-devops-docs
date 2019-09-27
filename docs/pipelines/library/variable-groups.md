@@ -56,12 +56,14 @@ Choose **+ Variable group**.
 #### [YAML](#tab/yaml/)
 ::: moniker range="> tfs-2018"
 
-You can add a variable group by referencing it in your YAML file:
+To use a variable from a variable group, you need to add a reference to the group in your YAML file:
 
 ```yaml
 variables:
 - group: my-variable-group
 ```
+
+Thereafter variables from the variable group can be used in your YAML file.
 
 If you use both variables and variable groups, you'll have to use `name`/`value` syntax for the individual (non-grouped) variables:
 

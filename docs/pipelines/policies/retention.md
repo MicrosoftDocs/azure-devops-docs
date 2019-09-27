@@ -227,7 +227,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 The build linked to a release has its own retention policy,
 which may be shorter than that of the release. If you want to retain
 the build for the same period as the release, set the
-**Retain build** checkbox for the appropriate stages. This
+**Retain associated artifacts** checkbox for the appropriate stages. This
 overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
