@@ -70,7 +70,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)
 - [What is Azure DevOps Projects?](/azure/devops-project/overview)
-- [Azure Pipelines](../pipelines/index.md)
+- [Azure Pipelines](../pipelines/index.yml)
 
 ::: moniker-end
 

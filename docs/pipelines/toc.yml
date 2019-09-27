@@ -1,20 +1,15 @@
-- name: Azure Pipelines Documentation
-  href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Azure Pipelines
-  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: Overview
-    href: get-started/overview.md
-  - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
-  - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md
-  - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+  href: index.yml
+- name: Get started
+  href: get-started/index.md
+- name: What is Azure Pipelines?
+  href: get-started/what-is-azure-pipelines.md
+- name: Sign up for Azure Pipelines
+  href: get-started/pipelines-sign-up.md
+- name: How to use Azure Pipelines
+  href: get-started/pipelines-get-started.md
+- name: Key concepts
+  href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
@@ -26,9 +21,12 @@
     displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
-    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
+    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers 
 - name: Ecosystems
   items: 
+  - name: Ecosystems index
+    href: ecosystems/index.md
+    displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
@@ -104,7 +102,6 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
-
 - name: How-to guides
   items:
   - name: CI/CD

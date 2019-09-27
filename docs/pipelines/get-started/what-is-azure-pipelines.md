@@ -8,12 +8,12 @@ ms.topic: overview
 ms.manager: jillfra
 ms.manager: elbatk
 ms.date: 05/31/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2017'
 ---
 
 # What is Azure Pipelines?
 
-**Azure Pipelines**
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
@@ -55,6 +55,7 @@ If you use private projects, you can run up to 1,800 minutes (30 hours) of pipel
 Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Why should I use CI and CD and Azure Pipelines?
+
 Implementing CI and CD pipelines helps to ensure consistent and quality code that's readily available to users.
 
 Azure Pipelines is a quick, easy, and safe way to automate building your projects and making them available to users.

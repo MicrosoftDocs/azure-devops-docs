@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 09/26/2019
 ---
 
 
@@ -31,7 +31,9 @@ With queries, you can perform these functions:
 - Create a chart that shows a burndown or burnup over time 
 - View a tree of parent-child related work items 
 
-For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). For specific examples, click  one of the following links.  
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
+For specific examples, choose one of the following articles listed under [Example queries](#examples).  
 
 ## Getting started 
 
