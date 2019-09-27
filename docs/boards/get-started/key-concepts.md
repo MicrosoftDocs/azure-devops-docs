@@ -89,6 +89,8 @@ A picklist specifies an enumerated set of values that appear within a drop-down 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
 
+[!INCLUDE [temp](../../_shared/glossary-terms/rollup.md)] 
+
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
