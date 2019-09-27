@@ -124,7 +124,7 @@ For further details, see [az devops user add command](https://docs.microsoft.com
 
 #### Example
 
-The following command adds the user with email ID contoso@contoso.com to the your organization. It grants stakeholder level access to the user and shows the result in table format.
+The following command adds the user with email ID contoso@contoso.com to your organization. It grants stakeholder level access to the user and shows the result in table format.
 
 ```CLI
 az devops user add --email-id contoso@contoso.com --license-type stakeholder --output table
