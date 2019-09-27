@@ -265,6 +265,10 @@ From the product backlog you can multi-select several work items and choose **Ch
 
 [!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+
+
 ## Related articles  
 
 - [Define features and epics](define-features-epics.md)

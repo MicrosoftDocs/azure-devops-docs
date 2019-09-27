@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 06/28/2019
 ---
 
 # Change column options 
@@ -22,6 +22,8 @@ From each backlog page or query, you can add or remove columns. Or, you can drag
 
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
+
+## Open Column options
 
 Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across the user's sessions.    
 
@@ -37,6 +39,9 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 ![Open column options](_img/set-column-open-dialog-s125.png) 
 
 ::: moniker-end 
+
+
+## Add or remove columns
 
 ::: moniker range=">= tfs-2018"
 
@@ -78,6 +83,13 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+## Add or remove rollup columns
+
+Rollup columns can display progress bars or the sum of numeric fields of child items. To learn more, see [Display rollup progress or totals](display-rollup.md). 
+
+::: moniker-end
 
 ## Use keyboard shortcuts to change the column order, column width, or sort options
 
@@ -96,6 +108,19 @@ For additional keyboard shortcuts, enter **Shift-?** to display available comman
 
 ## Related articles
 
+::: moniker range="azure-devops"
+
+- [Display rollup progress or totals](display-rollup.md)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [Create managed queries](../queries/using-queries.md)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+- [Work item field index](../work-items/guidance/work-item-field.md) 
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [Create managed queries](../queries/using-queries.md)
+
+::: moniker-end
