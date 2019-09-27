@@ -27,8 +27,6 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
   - [Azure Pipelines](../pipelines/get-started/pipelines-sign-up.md)
   - [Azure Repos](../repos/get-started/sign-up-invite-teammates.md)
   - [Azure Boards](../boards/get-started/sign-up-invite-teammates.md)
-  - [Azure Artifacts](../artifacts/index.md)
-  - [Azure Test Plans](../test-plans/index.md)
 
 ::: moniker-end
 

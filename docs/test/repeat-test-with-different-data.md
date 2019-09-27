@@ -141,7 +141,7 @@ Record and playback doesn't work with all applications. For details, see
 ## See also
 
 * [FAQs for manual testing](reference-qa.md#repeatdifferent)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](how-long-to-keep-test-results.md)
