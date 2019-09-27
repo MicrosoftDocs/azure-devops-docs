@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Advanced options for using Code Search across all your projects in Azure DevOps
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
-ms.technology: devops-collab, devops-code-git, devops-code-tfvc
+ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
