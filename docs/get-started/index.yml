@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Azure DevOps Get Started Documentation
+title: Get started documentation
 summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
@@ -117,7 +117,7 @@ landingContent:
             url: ../project/navigation/index.md
           - text: Team Explorer navigation
             url: ../user-guide/work-team-explorer.md
-  - title: Migrate and import
+  - title: Migrate & import
     linkLists:
       - linkListType: concept
         links:

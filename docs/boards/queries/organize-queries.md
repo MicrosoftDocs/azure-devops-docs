@@ -118,6 +118,7 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 <!-- ENDSECTION --> 
 
 ## Related articles
+
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Set query permissions](set-query-permissions.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)

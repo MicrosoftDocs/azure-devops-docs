@@ -8,12 +8,12 @@ ms.topic: overview
 ms.manager: jillfra
 ms.manager: elbatk
 ms.date: 05/31/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2017'
 ---
 
 # What is Azure Pipelines?
 
-**Azure Pipelines**
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
 Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
