@@ -134,7 +134,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ### List users
 
-You can list the users in an organization with [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via AAD groups.
+You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via AAD groups.
 
 ```CLI
 az devops user list [--skip] [--top]
@@ -143,18 +143,18 @@ az devops user list [--skip] [--top]
 #### Parameters
 
 - **skip**: Optional. Number of users to skip.  
-- **top**: Optional. Maximum number of users to return. The max value is 10000; the default value is 100.  
+- **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.  
 
 #### Other optional parameters
 
 The following parameters are optional for all commands, and not listed in the examples provided in this section. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
 
 #### Example
 
-The following command returns 5 users in your organization without skipping any and shows the result in table format.
+The following command returns five users in your organization without skipping any and shows the result in table format.
 
 ```CLI
 az devops user list --skip 0 --top 5  --output table
