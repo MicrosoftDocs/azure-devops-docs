@@ -120,16 +120,21 @@ az devops user add –-email-id
 The following parameters are optional for all commands, and not listed in the examples provided in this section. 
 
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 For further details, see [az devops user add command](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/user?view=azure-cli-latest#ext-azure-devops-az-devops-user-add).
 
 #### Example
 
-The following command adds the user with email ID contoso@contoso.com to the specified organization. It grants basic access to the user and sends an email invite as well.
+The following command adds the user with email ID contoso@contoso.com to the your organization. It grants stakeholder level access to the user and shows the result in table format.
 
 ```CLI
-az devops user add –-email-id contoso@contoso.com --license-type basic --org https://dev.azure.com/contoso --send-email-invite true
+az devops user add --email-id contoso@contoso.com --license-type stakeholder --output table
+
+ID                                    Display Name          Email                 License Type    Access Level    Status
+
+------------------------------------  --------------------  --------------------  --------------  --------------  --------
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
 You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://review.docs.microsoft.com/en-us/azure/devops/organizations/security/permissions-access?view=azure-devops).

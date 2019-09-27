@@ -151,10 +151,18 @@ The following parameters are optional for all commands, and not listed in the ex
 
 #### Example
 
-For example, the following command returns 25 users in your organization without skipping any.
+The following command returns 5 users in your organization without skipping any and shows the result in table format.
 
 ```CLI
-az devops user list --skip 0 --top 25
+az devops user list --skip 0 --top 5  --output table
+
+ID                                    Display Name            Email                          License Type    Access Level    Status
+------------------------------------  ----------------------  -----------------------------  --------------  --------------  --------
+3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  Christie Church         fabrikamfiber1@contoso.com     stakeholder     Stakeholder     active
+8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d  Chuck Reinhart          fabrikamfiber3@contoso.com     stakeholder     Stakeholder     active
+3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  contoso@contoso.com     contoso@contoso.com            stakeholder     Stakeholder     active
+f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.com           express         Basic           active
+74be024c-ebf5-4993-81eb-81ae1551e45f  Helena Petersen         fabrikamfiber8@contoso.com     stakeholder     Stakeholder     active
 ```
 
 ::: moniker-end
