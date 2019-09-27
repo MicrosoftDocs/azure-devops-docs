@@ -77,18 +77,15 @@ landingContent:
         links:
           - text: .NET Core apps
             url: ../pipelines/ecosystems/dotnet-core.md
-          - text: Selenium
-            url: ../pipelines/test/continuous-test-selenium.md
           - text: Go
             url: ../pipelines/ecosystems/go.md#test
           - text: Python
             url: ../pipelines/ecosystems/python.md#run-tests
-          - text: Review Code Coverage Results task
+          - text: UI testing using Selenium
+            url: ../pipelines/test/continuous-test-selenium.md
+          - text: Review code coverage results
             url: ../pipelines/test/review-code-coverage-results.md
           - text: Review test results
             url: ../pipelines/test/review-continuous-test-results-after-build.md
           - text: Analyze test results
             url: ../pipelines/test/test-analytics.md
-
-
-
