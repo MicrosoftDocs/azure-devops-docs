@@ -102,7 +102,7 @@ Agile methodologies speed up the development and test cycle and make sure that y
 No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
 -->
 
-In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.md), and [run unit tests](/visualstudio/test/developer-testing-scenarios). 
+In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.yml), and [run unit tests](/visualstudio/test/developer-testing-scenarios). 
 
 Azure Pipelines, and Build &amp; Release in TFS, help you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 

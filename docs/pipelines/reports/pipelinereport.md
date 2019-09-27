@@ -61,27 +61,21 @@ The report contain the following sections:
 
   - **Summary**: Provides the key  metrics of pass rate of the pipeline over the specified period. The default view shows data for 14 days, which you can modify.
 
-  - **Failure and pass rate trend**: Shows the pass percentage trend along with a distribution of failures across runs.  
-
-    > [!div class="mx-imgBorder"]
-    > ![View pass rate](_img/pipelines-reports/pass-rate.png)
-
-  - **Top failing tasks & their trend**: Provides a trend of failed tasks across pipeline runs during the specified period. Higher the number of failures of a task on a day larger the bubble size. Along with the trend, find the insight of the top failing tasks for the pipeline.
-
     > [!div class="mx-imgBorder"]
     > ![View Top Failing Task](_img/pipelines-reports/top-failing.png)
     
+  - **Failure trend**: Shows the number of failures per day. This data is divided by stages if multiple stages are applicable for the pipeline.
+    > [!div class="mx-imgBorder"]
+    > ![View pass rate](_img/pipelines-reports/pass-rate.png)
+
+  - **Top failing tasks & their failed runs**: Lists the top failing tasks, their trend and provides pointers to their failed runs. Analyze the failures in the build to fix your failing task and improve the pass rate of the pipeline.
+        
     > [!div class="mx-imgBorder"]
     > ![View Task Failure Details](_img/pipelines-reports/failing-tasks.png)
 
-  - **Failed runs**: View the latest runs where a specific task failed. Analyze the failures in the build to fix your failing task and improve the pass rate of the pipeline. 
-
-    > [!div class="mx-imgBorder"]
-    > ![View Failed Runs](_img/pipelines-reports/failed-runs.png)
-
 ## Pipeline duration report
 
-The **Pipeline duration** report shows how long your pipeline typically takes to complete successfully. You can review the duration trend and view insights into whether a specific task has contributed to an increase in duration, which you can further analyze. 
+The **Pipeline duration** report shows how long your pipeline typically takes to complete successfully. You can review the duration trend and analyze the top tasks by duration to optimize the duration of the pipeline.
 
 > [!div class="mx-imgBorder"]
 > ![View Duration Summary](_img/pipelines-reports/duration-summary.png)

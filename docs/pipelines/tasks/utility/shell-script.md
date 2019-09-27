@@ -107,7 +107,7 @@ echo "SYSTEM_HOSTTYPE is $SYSTEM_HOSTTYPE"
 echo "Over and out."
 ```
 
-On the [Build tab](../../index.md) of a build pipeline, add this task:
+On the [Build tab](../../index.yml) of a build pipeline, add this task:
 
 <table>
 <tr>

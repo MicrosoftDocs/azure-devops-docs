@@ -1,0 +1,187 @@
+### YamlMime:Landing
+
+title: Azure Pipelines documentation
+summary: Implement continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
+
+metadata:
+  title: Azure Pipelines documentation
+  description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-cicd
+  ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 09/30/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is Azure Pipelines?
+            url: ./get-started/what-is-azure-pipelines.md
+          - text: Use Azure Pipelines
+            url: ./get-started/pipelines-get-started.md
+      - linkListType: quickstart
+        links:
+          - text: Sign up for free
+            url: ./get-started/pipelines-sign-up.md
+          - text: Define a pipeline
+            url: ./get-started/pipelines-get-started.md
+          - text: Create your first pipeline
+            url: create-first-pipeline.md
+          - text: Customize your pipeline
+            url: customize-pipeline.md
+  - title: Build and deploy any language, any ecosystem
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Container image
+            url: ./ecosystems/containers/build-image.md
+          - text: .NET Core apps
+            url: ./ecosystems/dotnet-core.md
+          - text: Anaconda  
+            url: ./ecosystems/anaconda.md
+          - text: Android 
+            url: ./ecosystems/android.md
+          - text: Azure Kubernetes Service 
+            url: ./ecosystems/kubernetes/aks-template.md
+          - text: Java 
+            url: ./ecosystems/java.md
+          - text: JavaScript & Node.js apps
+            url: ./ecosystems/javascript.md
+          - text: Python apps
+            url: ./ecosystems/python.md
+          - text: PHP  
+            url: ./ecosystems/python-webapp.md
+          - text: "See more >"
+            url: ./ecosystems/index.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Agents
+            url: ./agents/agents.md
+          - text: Conditions
+            url: ./process/conditions.md
+          - text: Expressions
+            url: ./process/expressions.md
+          - text: Jobs
+            url: ./process/phases.md
+          - text: Stages
+            url: ./process/stages.md
+          - text: Tasks
+            url: ./process/tasks.md
+  - title: Build any repository
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: GitHub 
+            url: ./repos/github.md
+          - text: Azure Repos Git 
+            url: ./repos/azure-repos-git.md
+          - text: Team Foundation version control 
+            url: ./repos/tfvc.md
+          - text: BitBucket Cloud
+            url: ./repos/pipeline-options-for-git.md
+          - text: Subversion 
+            url: ./repos/pipeline-options-for-git.md
+          - text: Generic Git 
+            url: ./repos/pipeline-options-for-git.md
+      - linkListType: tutorial
+        links:
+          - text: Build multiple Git branches
+            url: ./build/ci-build-git.md
+  - title: Deploy to Azure
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Deploy to Azure
+            url: overview-azure.md
+      - linkListType: tutorial
+        links:
+          - text: Connect to Azure
+            url: ./library/connect-to-azure.md
+          - text: Deploy to Azure SQL Database
+            url: ./targets/azure-sqldb.md
+          - text: Deploy to Azure Kubernetes Service
+            url: ./ecosystems/kubernetes/aks-template.md
+  - title: Set up continuous testing
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: .NET Core apps
+            url: ./ecosystems/dotnet-core.md
+          - text: Go
+            url: ./ecosystems/go.md#test
+          - text: Python
+            url: ./ecosystems/python.md#run-tests
+          - text: UI testing using Selenium
+            url: ./test/continuous-test-selenium.md
+          - text: Review code coverage results
+            url: ./test/review-code-coverage-results.md
+          - text: Review test results
+            url: ./test/review-continuous-test-results-after-build.md
+          - text: Analyze test results
+            url: ./test/test-analytics.md
+  - title: Publish packages
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Publish NuGet feeds
+            url: ./artifacts/nuget.md
+          - text: Publish symbols for debugging
+            url: ./artifacts/symbols.md
+          - text: Publish and download Universal Packages
+            url: ./artifacts/universal-packages.md
+  - title: Integrate with other apps
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Integrate with Slack
+            url: ./integrations/slack.md
+          - text: Integrate with Microsoft Teams
+            url: ./integrations/microsoft-teams.md
+          - text: Integrate with service hooks
+            url: ../service-hooks/overview.md
+  - title: Configure resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage agent pools
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage deployment groups
+            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage service connections
+            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Variable groups
+            url: ./library/variable-groups.md
+          - text: Release variables and debugging
+            url: ./release/variables.md
+          - text: Tasks
+            url: ./tasks/index.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubeshoot builds and releases
+            url: troubleshooting.md
+          - text: Run a release in debug mode
+            url: ./release/variables.md#run-a-release-in-debug-mode
+          - text: Troubleshoot Azure Resource Manager service connections
+            url: ./release/azure-rm-endpoint.md

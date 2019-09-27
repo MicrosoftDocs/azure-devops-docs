@@ -272,7 +272,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= tfs-2015"
 
-You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
+You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
 
