@@ -34,7 +34,7 @@ Xamarin.iOS
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Solution</td><td>(Required) Relative path from the repository root of the Xamarin.iOS solution to build. May contain wildcards.</td></tr>
+<tr><td>Solution</td><td>(Required) Relative path from the repository root of the Xamarin.iOS solution or csproj project to build. May contain wildcards.</td></tr>
 <tr><td>Configuration</td><td>(Required) Standard configurations are Ad-Hoc, AppStore, Debug, Release.</td></tr>
 <tr><td>Clean</td><td>(Optional) Run a clean build (/t:clean) prior to the build.</td></tr>
 <tr><td>Create app package</td><td>(Required) Indicates whether an IPA should be generated as a part of the build.</td></tr>
