@@ -27,10 +27,7 @@ We provide a *free tier* of service by default in every organization:
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
 - Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
 
-When the free tier is no longer sufficient:
-
-- Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
-- Private project: You can pay for additional capacity per parallel job. The first additional capacity purchased only removes the monthly time limit on the free job and allows you to run each job for up to 360 minutes (6 hours). Additional purchases after the first will start to add additional parallel jobs [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 
 > [!NOTE] 
 > When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
