@@ -25,13 +25,13 @@ In this article, find the following CLI commands for managing wikis.
 
 |Commands  |description  |
 |---------|---------|
-|[az devops wiki create](#create-wiki)     | Create a wiki.        |
+|[az devops wiki create](#create-a-wiki)     | Create a wiki.        |
 |[az devops wiki delete](#delete-a-wiki)   | Delete a wiki.        |
 |[az devops wiki list](#list-wikis)   |  List all the wikis in a project or organization.       |
 |[az devops wiki page](add-edit-wiki.md)    |  Manage wiki pages.       |
 |[az devops wiki page create](#create-a-wiki-page)     | Add a new page.        |
 |[az devops wiki page delete](add-edit-wiki.md#delete-wiki-page)   | Delete a page.        |
-|[az devops wiki page show](add-edit-wiki.md#get-wiki-page-content)    | Get the content of a page or open a page.        |
+|[az devops wiki page show](add-edit-wiki.md#view-a-wiki-page)    | Get the content of a page or open a page.        |
 |[az devops wiki page update](add-edit-wiki.md#edit-wiki-page)   |  Edit a page.       |
 |[az devops wiki show](#show-wiki)    |  Show details of a wiki.       |
 
