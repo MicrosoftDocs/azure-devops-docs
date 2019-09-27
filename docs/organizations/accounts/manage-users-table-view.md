@@ -90,7 +90,8 @@ Access levels control which features are available to users. Permissions control
 You can update a user's license type with [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. 
 
 ```CLI
-az devops user update --license-type {advanced, earlyAdopter, express, professional, stakeholder} --user
+az devops user update --license-type {advanced, earlyAdopter, express, professional, stakeholder}
+                      --user
 ```
 
 #### Parameters
@@ -107,10 +108,15 @@ The following parameters are optional for all commands, and not listed in the ex
 
 #### Example
 
-For example, the following command updates the license type for email ID contoso@contoso.com from **Basic** to **Advanced**. 
+The following command updates the license type for email ID contoso@contoso.com from **Basic** to **Stakeholder** and shows the result in table format.
 
 ```CLI
-az devops user update --license-type advanced --user contoso@contoso.com
+az devops user update --license-type stakeholder --user contoso@contoso.com --output table
+
+ID                                    Display Name         Email                License Type    Access Level    Status
+------------------------------------  -------------------  -------------------  --------------  --------------  --------
+
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     pending
 ```
 
 <a id="show-users" /> 
@@ -129,10 +135,15 @@ az devops user show --user
 
 #### Example
 
-For example, the following command returns user details for the email ID contoso@contoso.com.
+The following command returns user details for the email ID contoso@contoso.com in table format.
 
 ```CLI
-az devops user show --user contoso@contoso.com
+az devops user show --user contoso@contoso.com --output table
+
+ID                                    Display Name         Email                License Type    Access Level    Status
+------------------------------------  -------------------  -------------------  --------------  --------------  --------
+
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 ```
 
 ## Related articles
