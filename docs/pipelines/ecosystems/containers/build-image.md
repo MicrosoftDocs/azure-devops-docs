@@ -94,6 +94,10 @@ steps:
 
 Some commonly used images are pre-cached on the Microsoft-hosted agents to avoiding long time intervals spent in pulling these images from container registry for every job. Images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/windowsservercore`, `microsoft/nanoserver`, and `microsoft/aspnetcore-build` are pre-cached on Windows agents while `jekyll/builder` and `mcr.microsoft.com/azure-pipelines/node8-typescript` are pre-cached on Linux agents. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation/releases) repository.
 
+## Self-hosted agents
+
+Docker needs to be installed on self-hosted agent machines prior to runs that try to build container images. To address this issue, a step corresponding to [Docker installer task](../../tasks/tool/docker-installer.md) can be placed in the pipeline definition prior to the step related to [Docker task](../../tasks/build/docker.md).
+
 ## Frequently asked questions
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
