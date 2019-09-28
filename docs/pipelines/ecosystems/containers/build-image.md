@@ -98,6 +98,16 @@ Some commonly used images are pre-cached on the Microsoft-hosted agents to avoid
 
 Docker needs to be installed on self-hosted agent machines prior to runs that try to build container images. To address this issue, a step corresponding to [Docker installer task](../../tasks/tool/docker-installer.md) can be placed in the pipeline definition prior to the step related to [Docker task](../../tasks/build/docker.md).
 
+## Script based docker builds
+
+Note that it also possible to build (or any Docker command) images by running docker on script as shown below: 
+
+```
+docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
+```
+
+The above command results in an equivalent image in terms of content as the one built by using the Docker task. The Docker task itself internally calls docker binary on script, but also stitches together a few more commands to provide a few additional benefits as described in the [Docker task's documentation](../../tasks/build/docker.md).
+
 ## Frequently asked questions
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
