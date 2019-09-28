@@ -84,3 +84,8 @@ Note that to allow image pull from private registries, prior to the `deploy` act
 > [!TIP]
 > - If setting up an end-to-end CI-CD pipeline from scratch for a repository containing a Dockerfile, checkout the [Deploy to Azure Kubernetes template](aks-template.md), which constructs an end-to-end YAML pipeline along with creation of an [environment](../../process/environments.md) and [Kubernetes resource](../../process/environments-kubernetes.md) to help visualize these deployments.
 > -  While YAML based pipeline currently supports triggers on a single Git repository, if triggers are required for manifest files stored in another Git repository or if triggers are required for Azure Container Registry or Docker Hub, usage of release pipelines instead of a YAML based pipeline is recommended for doing the Kubernetes deployments.
+
+## Alternatives
+Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
+- [Kubectl task](../../tasks/deploy/kubernetes.md)
+- kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```
