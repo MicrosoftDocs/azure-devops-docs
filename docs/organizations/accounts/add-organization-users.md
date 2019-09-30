@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -94,29 +94,50 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an organization.
+[Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
 
-1. Add user to an organization
 
-    ```
-    az devops user add –-email-id contoso@contoso.com --license-type basic --org https://dev.azure.com/contoso --send-email-invite true
-    ```
+<a id="add-user" /> 
 
-   * **email-id**: Enter the Microsoft account's email address for the user organization
+### Add a user 
 
-   * **license-type**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md)
+You can add users  to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
 
-     For details, see [az devops user add command.](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/user?view=azure-cli-latest#ext-azure-devops-az-devops-user-add)
+```CLI
+az devops user add –-email-id 
+		   --license-type {advanced, earlyAdopter, express, professional, stakeholder}
+		   [--send-email-invite {false, true}]
+           [--org]
+```
 
-2. Add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://review.docs.microsoft.com/en-us/azure/devops/organizations/security/permissions-access?view=azure-devops).
+#### Parameters
 
-    ```
-    az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
-    ```
-    
-    You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+- **email-id**: Enter the Microsoft account's email address for the user organization.
+- **license-type**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+- **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
-* * *
+
+#### Example
+
+The following command adds the user with the email address contoso@contoso.com to your organization. It grants stakeholder level access to the user and shows the result in table format.
+
+```CLI
+az devops user add --email-id contoso@contoso.com --license-type stakeholder --output table
+
+ID                                    Display Name          Email                 License Type    Access Level    Status
+
+------------------------------------  --------------------  --------------------  --------------  --------------  --------
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
+```
+
+You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://review.docs.microsoft.com/en-us/azure/devops/organizations/security/permissions-access?view=azure-devops).
+
+```CLI
+az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
+```
+
+You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 ## Related articles
 
@@ -124,3 +145,4 @@ You can add users through [Azure DevOps CLI](../../cli/get-started.md) to an org
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
+* [Export a list of users and their access levels](../security/export-users-audit-log.md)

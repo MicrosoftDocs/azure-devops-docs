@@ -105,8 +105,8 @@ steps:
   - task: AppCenterDistribute@3
     inputs:
       serverEndpoint: 'AppCenter'
-      appSlug: '{APP_CENTER_SLUG}'
-      appFile: '{APP_FILE}' # Relative path from the repo root to the APK or IPA file you want to publish
+      appSlug: '$(APP_CENTER_SLUG)'
+      appFile: '$(APP_FILE)' # Relative path from the repo root to the APK or IPA file you want to publish
       symbolsOption: 'Android'
       releaseNotesOption: 'input'
       releaseNotesInput: 'Here are the release notes for this version.'
