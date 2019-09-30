@@ -77,7 +77,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 
 ### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
-At present, the code coverage reporting functionality provided by this task is limited and tt does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 
+At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 
 If you use multiple publish code coverage tasks in the pipeline, the summary and report is shown for the last task. Any previously uploaded data is ignored.
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
