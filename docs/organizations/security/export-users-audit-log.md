@@ -33,6 +33,7 @@ You can get a list of users and groups that have access to your Team Foundation 
 ::: moniker-end    
 
 ## Prerequisites
+
 ::: moniker range="azure-devops" 
 * You must be the organization owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
   ::: moniker-end    
@@ -130,27 +131,25 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker range="azure-devops"  
 
+[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
+
+
 <a id="list-users" /> 
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via AAD groups.
+You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
 
 ```CLI
-az devops user list [--skip] [--top]
+az devops user list [--org] [--skip] [--top]
 ```
 
 #### Parameters
 
-- **skip**: Optional. Number of users to skip.  
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
+- - **skip**: Optional. Number of users to skip.  
 - **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.  
 
-#### Other optional parameters
-
-The following parameters are optional for all commands, and not listed in the examples provided in this section. 
-
-- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
 
 #### Example
 
