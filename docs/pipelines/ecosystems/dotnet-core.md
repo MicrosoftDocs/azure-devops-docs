@@ -136,9 +136,10 @@ If you need a version of the .NET Core SDK that isn't already installed on the M
 ```yaml
 # do this before all your .NET Core tasks
 steps:
-- task: DotNetCoreInstaller@0
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
   inputs:
-    version: '2.1.300' # replace this value with the version that you need for your project
+    version: 3.0.100
 # ...
 ```
 
