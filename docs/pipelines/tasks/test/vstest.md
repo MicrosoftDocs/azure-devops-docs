@@ -103,7 +103,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 To run automated tests that use TestCase as a data source, the following is needed:
 1. You must have Visual Studio 2017.6 or higher on the agent machine. Visual Studio Test Platform Installer task cannot be used to run tests that use TestCase as a data source.
-2. Create a [PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) that is authorized for the scope “Work Items (full)”.
+2. Create a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in the previous step.
 
 ### I am running into issues when running data-driven xUnit and NUnit tests with some of the task options. Are there known limitations?
