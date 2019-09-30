@@ -538,12 +538,12 @@
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
         href: tasks/test/cloud-based-web-performance-test.md
+      - name: Container Structure Test Task
+        href: tasks/test/container-structure-test-task.md
       - name: Publish Code Coverage Results
         href: tasks/test/publish-code-coverage-results.md
       - name: Publish Test Results
         href: tasks/test/publish-test-results.md
-      - name: Container Structure Test Task
-        href: tasks/test/container-structure-test-task.md
       - name: Run Functional Tests
         href: tasks/test/run-functional-tests.md
       - name: Visual Studio Test
