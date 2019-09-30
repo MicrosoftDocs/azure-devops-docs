@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Azure Boards 
+  - name: Security, access, & billing
     tocHref: /azure/devops/
-    topicHref: /azure/devops/boards/index
+    topicHref: /azure/devops/security-access-billing/index

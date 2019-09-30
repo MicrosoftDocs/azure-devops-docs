@@ -1,6 +1,4 @@
-- name: DevOps settings
-  href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: Build and release
+- name: Pipelines (Build and release)
   items:
   - name: Agent pools & queues
     href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -10,7 +8,7 @@
     href: ../../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Deployment pools & groups
     href: ../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Code
+- name: Repos (Code)
   items:
   - name: Create & manage Git repositories
     href: ../../git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -24,10 +22,7 @@
   items:
   - name: Set test retention policies
     href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
-- name: Audit
-  items:
-  - name: Access auditing
-    href: azure-devops-auditing.md
+
 
 
 
