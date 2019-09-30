@@ -131,7 +131,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker range="azure-devops"  
 
-[Add a user](../accounts/add-organization-users.md#add-user) | [List users](list-users) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
+[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
 
 
 <a id="list-users" /> 
