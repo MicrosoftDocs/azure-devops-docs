@@ -77,9 +77,12 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique | OutFile 'authors-transform.txt'
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
+
+> [!NOTE]
+> Encoding can be adjusted by appending the **-Encoding** option to the command above, for instance, `OutFile 'authors-transform.txt' -Encoding utf8`.
 
 ### Clone the Subversion repository using git-svn
 
