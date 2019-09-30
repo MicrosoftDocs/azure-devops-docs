@@ -6,6 +6,8 @@ This is how it appears in the new pipeline creation:
 Task input in the new yaml based pipeline creation flow:
 ![Container Test in YAML based Pipeline](_img/yaml-based-pipeline.png)
 This is how the yaml looks.
+[!INCLUDE [temp](../../_shared/ContainerStructureTestV1.md)]
+
 ![YAML file](_img/yaml-file.png)
 This Is the results page.
 ![Test Reporting Page](_img/results-page.png)
