@@ -18,7 +18,7 @@ ms.date: 08/15/2019
 
 [!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
 
-If Microsoft Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
+If Microsoft Project is your preferred tool for tracking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 [!INCLUDE [temp](../../_shared/deprecate-project.md)]
 
