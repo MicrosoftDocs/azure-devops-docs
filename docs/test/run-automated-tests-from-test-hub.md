@@ -202,6 +202,8 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    to come back later and analyze the results. Also use this link if you
    want to open the release to view the release logs.
 
+**Note** : Manually attaching of files is not supported for automated test results.
+
    [What are the typical error scenarios or issues I should look out for if my tests don't run?](#faq-errors)
 
 6. The **Test results** page lists the results for each test in the
