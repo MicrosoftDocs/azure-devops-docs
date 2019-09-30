@@ -131,7 +131,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker range="azure-devops"  
 
-[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
+[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
 
 
 <a id="list-users" /> 
@@ -141,7 +141,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
 
 ```CLI
-az devops user list --org [--skip] [--top]
+az devops user list [--org] [--skip] [--top]
 ```
 
 #### Parameters
