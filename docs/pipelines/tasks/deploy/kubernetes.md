@@ -1,5 +1,5 @@
 ---
-title: Deploy to Kubernetes task
+title: Kubectl task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands.
 ms.topic: reference
@@ -9,11 +9,11 @@ ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
 ms.manager: jillfra
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 01/18/2019
+ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
-# Deploy to Kubernetes task
+# Kubectl task
 
 [!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
 
