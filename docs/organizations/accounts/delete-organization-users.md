@@ -26,6 +26,9 @@ If users no longer require access to a project or your organization, you can rem
 
 ## Remove users from your organization
 
+
+#### [Browser](#tab/browser)
+
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
@@ -59,6 +62,41 @@ If users no longer require access to a project or your organization, you can rem
 > - Azure Active Directory (AD)-backed organizations. After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
 > - Managed service account (MSA)-backed organizations. After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
+
+
+<a id="remove-user" /> 
+
+### Remove a user 
+
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
+
+```CLI
+az devops user add --user
+                      [--org]
+                      [--yes]
+```
+
+#### Parameters
+
+- **user**: The email address or ID of the user. 
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Do not prompt for confirmation.
+
+#### Example
+
+The following command removes the user with the email address contoso@contoso.com from the contoso organization.  
+
+```CLI
+az devops user remove --user contoso@contoso.com --org https://dev.azure.com/contoso/ --yes
+```
+
+* * *
+
+
 ## Remove users from a team or project
 
 To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. See [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
@@ -72,3 +110,4 @@ To remove users from a project, remove them from the **Teams** groups they belon
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting organization users in the Users page](faq-add-delete-users.md)
 - [Troubleshoot adding members to projects](faq-add-team-members.md)
+- [Export a list of users and their access levels](../security/export-users-audit-log.md)

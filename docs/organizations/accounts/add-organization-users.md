@@ -94,7 +94,7 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
+[Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
 
 
 <a id="add-user" /> 
@@ -104,9 +104,10 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 You can add users  to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
 
 ```CLI
-az devops user add –-email-id --org 
+az devops user add –-email-id 
 		   --license-type {advanced, earlyAdopter, express, professional, stakeholder}
 		   [--send-email-invite {false, true}]
+           [--org]
 ```
 
 #### Parameters
@@ -144,3 +145,4 @@ You can see all security groups in a project using the [az devops security group
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
+* [Export a list of users and their access levels](../security/export-users-audit-log.md)

@@ -84,7 +84,7 @@ Access levels control which features are available to users. Permissions control
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Update a user](#update-user) | [Show users](#show-users)
+[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
 <a id="update-user" /> 
 
@@ -93,8 +93,8 @@ Access levels control which features are available to users. Permissions control
 You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
 
 ```CLI
-az devops user update --org --license-type {advanced, earlyAdopter, express, professional, stakeholder}
-                      --user
+az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
+                      --user [--org]
 ```
 
 #### Parameters
@@ -124,7 +124,7 @@ ID                                    Display Name         Email                
 You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
 
 ```CLI
-az devops user show --user --org
+az devops user show --user [--org]
 ```
 
 #### Parameters
@@ -152,3 +152,5 @@ ID                                    Display Name         Email                
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
+* [Export a list of users and their access levels](../security/export-users-audit-log.md)
+
