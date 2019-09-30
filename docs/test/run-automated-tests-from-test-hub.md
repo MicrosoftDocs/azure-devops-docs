@@ -8,10 +8,9 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
+ms.date: 09/30/2019
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Run automated tests from test plans
 
@@ -202,7 +201,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    to come back later and analyze the results. Also use this link if you
    want to open the release to view the release logs.
 
-**Note** : Manually attaching of files is not supported for automated test results.
+   **Note** : Manually attaching of files is not supported for automated test results.
 
    [What are the typical error scenarios or issues I should look out for if my tests don't run?](#faq-errors)
 
