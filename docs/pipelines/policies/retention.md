@@ -6,8 +6,8 @@ description: Build and release retention policies in Azure Pipelines and Team Fo
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: jillfra
-ms.author: sdanie
-author: steved0x
+ms.author: jukullam
+author: juliakm
 ms.date: 09/09/2019
 monikerRange: '>= tfs-2015'
 ---
