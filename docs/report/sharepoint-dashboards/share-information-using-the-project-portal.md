@@ -8,7 +8,7 @@ ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/09/17
+ms.date: 09/09/2017
 ms.topic: conceptual
 ---
 
