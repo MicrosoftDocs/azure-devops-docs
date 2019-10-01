@@ -8,7 +8,7 @@ description: Query for data about the changes in the code that is under version 
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Code Churn tables
