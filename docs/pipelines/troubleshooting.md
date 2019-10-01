@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](_shared/version.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](languages/dotnet-core.md#troubleshooting)
+This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting)
 
 ::: moniker range="<= tfs-2018"
 

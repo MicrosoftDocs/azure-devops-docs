@@ -21,6 +21,7 @@ If you don't see the Team ribbon in Microsoft Excel, as shown in the image below
 
 <img src="_img/tfs-office-issues-excel-team-ribbon.png" alt="Excel TFS-Office integration Team ribbon" style="border: 1px solid #C3C3C3;" /> 
 
+[!INCLUDE [temp](../../_shared/deprecate-project.md)]
 
 ## Enable the Team Foundation Add-in 
 
@@ -38,6 +39,7 @@ If you don't see the Team ribbon in Microsoft Excel, as shown in the image below
 If the Team ribbon does not appear at next launch, the load behavior of the add-in may have changed and you will need to complete the following steps: 
 
 ### Update the Registry 
+
 1.	Launch the Registry Editor from your Windows Start Menu by typing regedit in the Search or Run box.
 
 	<img src="_img/tfs-office-issues-run-regedit.png" alt="Run regedit command" style="border: 1px solid #C3C3C3;" /> 
@@ -52,7 +54,6 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
 	- HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins
 
 	<img src="_img/tfs-office-issues-regedit-loadbehavior-key.png" alt="LoadBehavior entry" style="border: 1px solid #C3C3C3;" /> 
-
 
 3.	Double click to open **LoadBehavior** and set the value data field to **3** (if the value is **0**, the Team ribbon will not load).
  
@@ -70,6 +71,7 @@ This error is typically caused when you install Visual Studio before you install
 
 
 ### Prerequisites 
+
 Install Visual Studio to ensure that you have access to the Visual Studio Command Prompt and the  [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool). If you do not have Visual Studio, you can install the [Visual Studio Community edition for free](https://visualstudio.microsoft.com/downloads/).   
 
 ### Run the Gacutil tool  

@@ -347,7 +347,7 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 ::: moniker range=">= azure-devops-2019"  
 - [Power BI Integration](../powerbi/index.md)
 - [Extend Analytics with OData](../extend-analytics/index.md)
-- [Azure Pipelines](../../pipelines/index.md)
+- [Azure Pipelines](../../pipelines/index.yml)
 - [Azure Boards](/azure/devops/boards/index)
 - [Azure Test Plans](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  

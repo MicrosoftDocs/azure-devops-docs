@@ -5,7 +5,3 @@
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
-    items:
-    - name: Plans (Agile at Scale)
-      tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boards/plans/index

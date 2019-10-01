@@ -10,7 +10,7 @@ manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: jordane
 author: jpe316
-ms.date: 6/27/2019
+ms.date: 09/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -30,7 +30,7 @@ Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-l
 
 ## Get the code
 
-[!INCLUDE [include](../languages/_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../ecosystems/_shared/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-azureml
@@ -40,16 +40,17 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](../languages/_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/_shared/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../languages/_shared/create-project.md)]
+[!INCLUDE [include](../ecosystems/_shared/create-project.md)]
 
 ## Create the pipeline
 
 You can use 1 of the following approach to create a new pipeline.
 
 #### [YAML](#tab/yaml/)
-[!INCLUDE [include](../languages/_shared/create-pipeline-before-template-selected.md)]
+
+[!INCLUDE [include](../ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
@@ -105,6 +106,7 @@ There are two primary ways to use automation with the Azure Machine Learning ser
 
 * The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
 * The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
+   * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
 
 The example with this document uses the Machine Learning CLI.
 

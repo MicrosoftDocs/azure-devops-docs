@@ -1190,7 +1190,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p><a href="../test/index.md" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.md)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p><a href="../test/index.yml" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.yml)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create <a href="/visualstudio/test/create-unit-tests-menu" data-raw-source="[unit tests](/visualstudio/test/create-unit-tests-menu)">unit tests</a> and run them frequently to make sure your code is working properly.</p>
@@ -1209,7 +1209,7 @@ pipelines\tasks\build\_img
 <p>Use Visual Studio to create <a href="https://msdn.microsoft.com/library/dd286726.aspx" data-raw-source="[coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx)">coded UI tests</a> to test your application&#39;s user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to <a href="../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/languages/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
+<p>Use continuous integration builds to <a href="../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/ecosystems/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
 
 <p><b>Review automated test results after a build</b></p>
 <p><a href="../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Review your test results](../pipelines/test/review-continuous-test-results-after-build.md)">Review your test results</a> to analyze any problems that were found.</p>
@@ -1223,7 +1223,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.md)">Azure Test Plans and exploratory testing</a>.</p>
+<p>Explore user stories without test cases or test steps using <a href="../test/index.yml" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.yml)">Azure Test Plans and exploratory testing</a>.</p>
 
 ![Exploratory testing](_img/features/features-exploratory-testing.png)
 

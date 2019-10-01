@@ -9,7 +9,7 @@ ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 01/23/2019
 ---
 

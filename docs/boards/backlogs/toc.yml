@@ -20,6 +20,8 @@
     href: best-practices-product-backlog.md
 - name: How-to Guides
   items:
+  - name: Display rollup progress bars or totals
+    href: display-rollup.md
   - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Copy list

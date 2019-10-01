@@ -18,6 +18,10 @@
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
+- name: Concepts
+  items:
+  - name: High-performing queries
+    href: high-performing-queries.md 
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -54,6 +58,8 @@
     href: set-query-permissions.md
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
+  - name: Import work items from CSV 
+    href: import-work-items-from-csv.md 
 - name: Reference
   items:
   - name: "Query fields, operators & macros"

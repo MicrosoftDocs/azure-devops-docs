@@ -373,10 +373,9 @@ az boards iteration team list --team
                               [--timeframe]
 ```
 
-
 #### Parameters
 
-- **team**: Required. Name or ID of the project.
+- **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project.
 - **timeframe**: Optional. A filter for which iterations are returned based on relative time. Only *Current* is supported. 
 
@@ -457,12 +456,12 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	![Work, Iterations page for team](../../boards/sprints/_img/dsprints-team-work-iterations-page.png)  
 
-<a id="set-backlog-iteration">  </a>
+    <a id="set-backlog-iteration">  </a>
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
-	![Work, Iterations page for team, set team backlog iteration for backlogs and boards](_img/team-defaults/stdefaults-team-backlog-iteration.png)
+    ![Work, Iterations page for team, set team backlog iteration for backlogs and boards](_img/team-defaults/stdefaults-team-backlog-iteration.png)
 
-	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
+    Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
 3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
@@ -694,7 +693,6 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 *	[Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)  
 *	[Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
-
 ### Programmatic resources
 
 ::: moniker range="azure-devops"
@@ -706,7 +704,6 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 
 ::: moniker range="<= azure-devops-2019"
 
-- [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)

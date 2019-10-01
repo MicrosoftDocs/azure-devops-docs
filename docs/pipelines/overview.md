@@ -41,7 +41,7 @@ Once you have continuous integration in place, the next step is to create a rele
 
 ## Continuous testing
 
-Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](languages/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner. 
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](ecosystems/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner. 
 
 * Maintain quality and find problems as you develop. Continuous testing with TFS ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
 * Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.

@@ -23,6 +23,10 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 For more in-depth information about the different types of agents and how to use them, see [Build and release agents](../agents/agents.md).
 
+## Approvals
+
+[Approvals](../process/approvals.md) define a set of validations required before a deployment can be performed. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
+
 ## Artifact
 
 An artifact is a collection of files or packages published by a run. Artifacts are made available to subsequent tasks, such as distribution or deployment. For more information, see [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md).
@@ -38,10 +42,6 @@ Continuous integration &#40;CI&#41; is the practice used by development teams to
 ## Environment
 
 An environment is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
-
-## Checks
-
-[Checks](../process/checks.md) define a set of validations required before a deployment can be performed. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
 
 ## Job
 

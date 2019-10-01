@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/07/2019
 ---
@@ -152,9 +152,9 @@ Repeat for every Pivoted StateCategory column.
 1. Enter "PercentComplete" for **New column name**.
 1. Enter the following in **Custom column formula**.
 
-    ``
+    ```
     = ([Proposed]+[InProgress]+[Resolved])/([Proposed]+[InProgress]+[Resolved]+[Completed])
-    ``
+    ```
 
     > [!NOTE]
     > It is possible you won't have a Resolved column, if the work items don't have States mapped to the Resolved State Category. 

@@ -43,7 +43,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 ![Sprint planning, horizontal nav](_img/sp-intro.png) 
 
 ::: moniker-end
-
+	
 In this article you'll learn how to:  
 
 > [!div class="checklist"]   
@@ -141,7 +141,7 @@ From your web browser, open your product backlog.
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md).
 
 ::: moniker-end
 
@@ -155,7 +155,6 @@ Before you start planning your sprint, you'll want to have [created, prioritized
 Also, you'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
-
 
 ::: moniker range=">=azure-devops-2019"
 
@@ -176,7 +175,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 2. Select one or more items from the backlog and drag them to the sprint you are planning. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
-3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window will update with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
+3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window updates with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](_img/assign-items-sprint/sprint-window-effort.png)   

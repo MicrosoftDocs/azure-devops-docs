@@ -141,7 +141,7 @@ sources.
 * [TFVC, Git, and GitHub](#tfvc)
 * [Jenkins](#jenkins)
 * [Azure Container Registry, Docker, and Kubernetes](#container)
-* [Azure Artifacts (NuGet, Maven, and npm)](#nuget)
+* [Azure Artifacts (NuGet, Maven, npm, Python, and Universal Packages)](#artifacts)
 * [External or on-premises TFS](#externaltfs)
 * [TeamCity](#teamcity)
 * [Other sources](#others)
@@ -313,11 +313,11 @@ The following features are available when using Azure Container Registry, Docker
 
 ----
 
-<a name="nuget"></a>
+<a name="artifacts"></a>
 
-<h3 id="nugetsource">Azure Artifacts (NuGet packages only)</h3>
+<h3 id="artifactsource">Azure Artifacts</h3>
 
-To use NuGet packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/license-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
+To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/start-using-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 Scenarios where you may want to consume these artifacts are:
 
@@ -339,10 +339,14 @@ The following features are available when using Azure Artifacts sources:
 |   Artifact download    | By default, packages are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
 <p />
+<h4 id="mavensnapshots">Handling Maven Snapshots</h4>
 
-> [!NOTE]
-> Only NuGet packages are currently supported in the Azure Artifacts release artifact type. Support for the other package types supported in Azure Artifacts is coming soon.
+When obtaining Maven artifacts and the artifact is a snapshot build, multiple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
 
+```PowerShell
+# Remove all copies of the artifact except the one with the lexicographically highest value.
+Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
+```
 ----
 
 <a name="externaltfs"></a>

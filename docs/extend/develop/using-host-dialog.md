@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 09/19/2019
 ---
 
 # Modal dialog
@@ -246,4 +246,13 @@ To not show any buttons on the dialog, you can set the `buttons` attribute to `n
         buttons: null
     };
 ```
+
+### More information
+
+If you have a question or are looking for more information, consider going to one of the following areas:
+
+- [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
+- [Azure DevOps Support Bot](https://azuredevopsvirtualagent.azurewebsites.net/)
+- [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
+
 
