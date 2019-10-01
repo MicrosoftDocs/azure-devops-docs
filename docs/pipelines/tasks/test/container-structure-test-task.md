@@ -26,12 +26,12 @@ Tests within this framework are specified through a YAML or JSON config file. Mu
 
 ## Container Structure Test Task
 
-This task publishes test results to Azure Pipelines or TFS when tests are executed for containers to provide a comprehensive test reporting and analytics experience. 
+This task helps you run conatiner structure tests and publish test results to Azure Pipelines and provides a comprehensive test reporting and analytics experience. 
 
 > [!NOTE]
 > This is an early preview feature. More upcoming features will be rolled out in upcoming sprints. 
 
-## Build, Test, and Publish Test
+## Build, Test and Publish Test
 
 The container structure test task can be added in the classic pipeline as well as in unified pipeline (multi-stage) & YAML based pipelines.
 
