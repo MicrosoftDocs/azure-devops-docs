@@ -6,7 +6,8 @@ ms.topic: overview
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.manager: elbatk
+ms.author: jukullam
+author: juliakm
 ms.date: 07/24/2019
 monikerRange: 'azure-devops'
 ---
