@@ -5,7 +5,3 @@
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
-    items:
-    - name: Git
-      tocHref: /azure/devops/repos/git/
-      topicHref: /azure/devops/repos/git/index
