@@ -9,8 +9,8 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: admahesh
 author: Additi
-ms.date: 09/30/2019
-monikerRange: '>= tfs-2015'
+ms.date: 10/01/2019
+monikerRange: 'azure-devops'
 ---
 
 # Container Structure Tests
@@ -26,7 +26,7 @@ Tests within this framework are specified through a YAML or JSON config file. Mu
 
 ## Container Structure Test Task
 
-This task helps you run conatiner structure tests and publish test results to Azure Pipelines and provides a comprehensive test reporting and analytics experience. 
+This task helps you run container structure tests and publish test results to Azure Pipelines and provides a comprehensive test reporting and analytics experience. 
 
 > [!NOTE]
 > This is an early preview feature. More upcoming features will be rolled out in upcoming sprints. 
@@ -38,10 +38,14 @@ The container structure test task can be added in the classic pipeline as well a
 # [YAML](#tab/yaml)
 
 In the new YAML based unified pipeline, you can search for task in the window.
-![Container Test in Unified Pipeline](_img/unified-pipeline-creation.png)
+
+> [!div class="mx-imgBorder"]
+> ![Container Test in Unified Pipeline](_img/unified-pipeline-creation.png)
 
 Once the task is added, you need to set the config file path, docker registory service connection, container repository and tag, if required. Task input in the yaml based pipeline is created.
-![Container Test in YAML based Pipeline](_img/yaml-based-pipeline.png)
+
+> [!div class="mx-imgBorder"]
+> ![Container Test in YAML based Pipeline](_img/yaml-based-pipeline.png)
 
 ### YAML file
 
