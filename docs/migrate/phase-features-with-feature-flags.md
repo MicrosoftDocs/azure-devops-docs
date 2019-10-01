@@ -2,12 +2,12 @@
 title:  Progressively expose your features using feature flags 
 description: Explore how to progressively expose your features in production for some or all users 
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.manager: jillfra
 ms.date: 04/26/2018
-ms.author: sdanie
-author: wpschaub
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
