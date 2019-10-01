@@ -1,15 +1,9 @@
 - name: Azure Artifacts Documentation
-  href: index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-- name: Azure Artifacts
-  href: get-started/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: What is Azure Artifacts?
-    href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-  - name: Start using Azure Artifacts
-    href: start-using-azure-artifacts.md
-  - name: Key concepts
-    href: artifacts-key-concepts.md
+  href: index.yml
+- name: What is Azure Artifacts?   href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+- name: Start using Azure Artifacts   href: start-using-azure-artifacts.md
+- name: Key concepts
+  href: artifacts-key-concepts.md
 - name: Quickstarts
   items:
   - name: NuGet
