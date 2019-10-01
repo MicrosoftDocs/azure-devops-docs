@@ -8,7 +8,7 @@ description: Lists all user stories, filtered by product area and iteration in o
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
