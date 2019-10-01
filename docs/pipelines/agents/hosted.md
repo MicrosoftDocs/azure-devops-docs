@@ -25,7 +25,6 @@ monikerRange: 'azure-devops'
 <a name="software"></a>
 
 ## Use a Microsoft-hosted agent
-
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
 
 > [!NOTE]
@@ -33,7 +32,7 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 
 | Image | Classic Editor Pool | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
+| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS 2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
 | Windows Server 2016 with Visual Studio 2017 | *Hosted VS2017* | `vs2017-win2016` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
 | Windows Server 2012 R2 with Visual Studio 2015 | *Hosted* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
 | Windows Server Core 1803 (*for running Windows containers*) | *Hosted Windows Container* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
