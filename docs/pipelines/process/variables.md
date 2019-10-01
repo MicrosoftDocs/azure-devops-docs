@@ -10,6 +10,7 @@ ms.manager: jillfra
 ms.author: jukullam
 author: juliakm
 ms.date: 09/03/2019
+
 monikerRange: '>= tfs-2015'
 ---
 
@@ -236,13 +237,13 @@ variable available to downstream steps within the same job.
 steps:
 
 # Create a variable
-- script: |
-    echo '##vso[task.setvariable variable=sauce]crushed tomatoes'
+- bash: |
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 
 # Use the variable
 # "$(sauce)" is replaced by the contents of the `sauce` variable by Azure Pipelines
 # before handing the body of the script to the shell.
-- script: |
+- bash: |
     echo my pipeline variable is $(sauce)
 ```
 
@@ -253,12 +254,12 @@ steps:
 
 # Create a variable
 # Note that this does _not_ update the environment of the current script.
-- script: |
-    echo '##vso[task.setvariable variable=sauce]crushed tomatoes'
+- bash: |
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 
 # An environment variable called `SAUCE` has been added to all downstream steps
 - bash: |
-    echo my environment variable is $SAUCE
+    echo "my environment variable is $SAUCE"
 - pwsh: |
     Write-Host "my environment variable is $env:SAUCE"
 ```

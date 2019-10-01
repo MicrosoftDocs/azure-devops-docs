@@ -114,7 +114,9 @@ GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
 var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
 ```
 
-```NetStandard
+Authentication paths that produce an interactive dialog are not available in the .NET Standard version of the .NET client libraries. When using the .NET Standard version of the .NET client libraries, you will need to provide credentials more explicitly in order to authenticate, as in the example below.
+
+```csharp
 using System;
 using Microsoft.VisualStudio.Services.Common;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
@@ -146,6 +148,8 @@ namespace ConsoleApp1
     }
 }
 ```
+
+Further authentication samples can be found on our [.NET Samples Page](../get-started/client-libraries/samples.md).
 
 ## Reference
 

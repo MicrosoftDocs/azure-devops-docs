@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: jobourne
 author: thejoebourneidentity
-ms.date: 07/26/2019
+ms.date: 09/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -26,7 +26,10 @@ monikerRange: 'azure-devops'
 
 ## Use a Microsoft-hosted agent
 
-Microsoft-hosted agent pools offer 7 virtual machine images to choose from, each including a broad range of tools and software:
+Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
+
+> [!NOTE]
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 | Image | Classic Editor Pool | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
@@ -126,7 +129,7 @@ By default, all project contributors in an organization have access to the Micro
 
 ### I need more agents. What can I do?
 
-A: All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
+All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 

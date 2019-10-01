@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 08/22/2019
 ---
 
 # Backlogs, portfolios, and Agile project management 
@@ -25,6 +25,21 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 #### In a nutshell you use Backlogs to: 
 
+::: moniker range="azure-devops"  
+
+- Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
+- [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
+- [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
+- Quickly assign backlog items to team members and to sprints using either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
+- Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
+- [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint
+- [Display rollup progress, counts, or totals](display-rollup.md) to show completion of work or amount of work still to do.
+
+::: moniker-end 
+
+::: moniker range="<= azure-devops-2019"  
+
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
@@ -33,6 +48,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
 
+::: moniker-end 
 
 [!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
@@ -138,6 +154,8 @@ For example, here the Customer Service team has organized several backlog items 
 
 [!INCLUDE [temp](../_shared/velocity-section.md)]
 
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+
 <a id="multi-team">  </a>
 
 ## Work with multi-team ownership of backlog items  
@@ -146,7 +164,7 @@ When you have several teams, your hierarchical views may show items that belong 
 
 ### View backlog items and parent items owned by other teams
 
-Your team's product backlog lists only those items whose area path matches those assigned to your team. For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). However, if you show parents, 
+Your team's product backlog lists only those items whose area path matches those assigned to your team. However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
 ::: moniker range="azure-devops"
@@ -200,6 +218,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 
 ::: moniker-end   
 
+For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
 
 ### View Epics and child items owned by other teams
 

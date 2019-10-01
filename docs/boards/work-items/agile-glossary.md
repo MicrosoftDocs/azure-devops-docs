@@ -116,6 +116,8 @@ Specifies an inter-related set of files that contain the XML definitions for tra
 
 [!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
 
+[!INCLUDE [temp](../../_shared/glossary-terms/rollup.md)] 
+
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  

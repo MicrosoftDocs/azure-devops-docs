@@ -138,6 +138,6 @@ Use a query to explore the work items that users have not yet explored.
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
 * [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

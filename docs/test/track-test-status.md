@@ -61,6 +61,9 @@ When using this progress report it is good to know the following points:
 4. Data processing for this report is occurring approximately every 15 mins. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in this report. 
 5. You can leverage this report for test plans created on or after September 1, 2019.
 
+### Provide feedback
+Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+
 ## Charts
 
 ### Track testing progress
@@ -235,9 +238,6 @@ Learn more about
 [dashboards](../report/dashboards.md). 
 Or learn more about
 [team administration](../organizations/settings/manage-teams.md).
-
-### Feedback
-We would like you to know your feedback about the charts and progress report at azuretestplans@microsoft.com. In the process, do share screenshots for us to understand better.
 
 ## See also
 *  [FAQs for manual testing](reference-qa.md#trackstatus)

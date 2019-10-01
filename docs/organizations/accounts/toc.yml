@@ -44,7 +44,8 @@
       href: admin-revoke-user-pats.md
     - name: Change app access policies
       href: change-application-access-policies.md
-    - name: Delete users from organization
+    - name: Remove users from organization
+      displayname: delete
       href: delete-organization-users.md
     - name: Add external users
       href: add-external-user.md

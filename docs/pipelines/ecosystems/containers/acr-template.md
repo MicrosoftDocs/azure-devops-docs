@@ -8,7 +8,7 @@ ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.manager: jillfra
 ms.author: shasb
 author: shashankbarsin
-ms.date: 08/30/2019
+ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -26,37 +26,11 @@ In this step-by-step guide, you'll learn how to create a pipeline that continuou
 
 ## Get the code
 
-Based on the desired runtime, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
-
-#### [Java](#tab/java)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/spring-guides/gs-spring-boot-docker.git
-```
-#### [JavaScript](#tab/java-script)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+Fork the following repository containing a sample application and a Dockerfile:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
-#### [Python](#tab/python)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
-```
-#### [.NET Core](#tab/dotnet-core)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
-```
-* * *
 
 ## Create a container registry
 
