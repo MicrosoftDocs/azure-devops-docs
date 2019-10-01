@@ -56,6 +56,8 @@ The **WebLayout** and updated **Control** elements introduce several new element
 > The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
 
 <a id="header-customization" />
+
+
 ## Header customization
 
 In the new web form layout, the system manages several header elements within the **SystemControls** element. These include: 
@@ -603,74 +605,72 @@ Once the extensions have been installed, you add the <b>Contribution</b> element
 
 When you export the XML definition, it will contain a comment section that lists the installed extensions, their IDs, and any required inputs. For example: 
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <!--**********************Work Item Extensions**********************
-> Extension:
->     Name: color-control-dev
->     Id: mariamclaughlin.color-control-dev
->     Control contribution:
->         Id: mariamclaughlin.color-control-dev.color-control-contribution
->         Description: 
->         Inputs:
->             Id: FieldName
->             Description: The field associated with the control.
->             Type: Field
->             IsRequired: true
->             Id: Labels
->             Description: The list of values to select from.
->             Type: String
->             IsRequired: false
->             Id: Colors
->             Description: The field associated with the control.
->             Type: String
->             IsRequired: false  
-> Extension:
->     Name: vsts-workitem-recentlyviewed
->     Id: mmanela.vsts-workitem-recentlyviewed  
->     Group contribution:
->         Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
->         Description: Recently viewed work item form group  
-> Extension:
->     Name: vsts-extensions-multi-values-control
->     Id: ms-devlabs.vsts-extensions-multi-values-control   
->     Control contribution:
->         Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
->         Description: Multi Values Selection Control.
->         Inputs:
->             Id: FieldName
->             Description: The field associated with the control.
->             Type: Field
->             IsRequired: true
->             Id: Values
->             Description: The list of values to select from.
->             Type: String
->             IsRequired: false
-> Extension:
->     Name: vsts-extension-workitem-activities
->     Id: ms-devlabs.vsts-extension-workitem-activities   
-> Extension:
->     Name: vsts-uservoice-ui
->     Id: ms-devlabs.vsts-uservoice-ui   
->     Group contribution:
->         Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
->         Description: Shows User Voice details on the work item form
-> --> 
-> ```
+```XML
+<!--**********************Work Item Extensions**********************
+Extension:
+    Name: color-control-dev
+    Id: mariamclaughlin.color-control-dev
+    Control contribution:
+        Id: mariamclaughlin.color-control-dev.color-control-contribution
+        Description: 
+        Inputs:
+            Id: FieldName
+            Description: The field associated with the control.
+            Type: Field
+            IsRequired: true
+            Id: Labels
+            Description: The list of values to select from.
+            Type: String
+            IsRequired: false
+            Id: Colors
+            Description: The field associated with the control.
+            Type: String
+            IsRequired: false  
+Extension:
+    Name: vsts-workitem-recentlyviewed
+    Id: mmanela.vsts-workitem-recentlyviewed  
+    Group contribution:
+        Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
+        Description: Recently viewed work item form group  
+Extension:
+    Name: vsts-extensions-multi-values-control
+    Id: ms-devlabs.vsts-extensions-multi-values-control   
+    Control contribution:
+        Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
+        Description: Multi Values Selection Control.
+        Inputs:
+            Id: FieldName
+            Description: The field associated with the control.
+            Type: Field
+            IsRequired: true
+            Id: Values
+            Description: The list of values to select from.
+            Type: String
+            IsRequired: false
+Extension:
+    Name: vsts-extension-workitem-activities
+    Id: ms-devlabs.vsts-extension-workitem-activities   
+Extension:
+    Name: vsts-uservoice-ui
+    Id: ms-devlabs.vsts-uservoice-ui   
+    Group contribution:
+        Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
+        Description: Shows User Voice details on the work item form
+-->
+```
 
 
 Given the above example, you can add the following code snippet to your work item type definition to turn on the user voice group ```vsts-uservoice-ui``` extension by specifying the extension Id:
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <WebLayout>
-> ... 
->  <Extensions>
->      <Extension Id="ms-devlabs.vsts-uservoice-ui" /> 
->  </Extensions> 
-> ...
-> </WebLayout> 
-> ```
+```XML
+<WebLayout>
+... 
+ <Extensions>
+     <Extension Id="ms-devlabs.vsts-uservoice-ui" />
+ </Extensions>
+...
+</WebLayout> 
+```
 
 Upon import of the updated WIT definition, the group extension will automatically appear on your work item form.
 
