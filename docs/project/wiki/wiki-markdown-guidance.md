@@ -48,12 +48,12 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Add Mermaid diagrams to a Wiki page
 
 > [!NOTE] 
-> The Mermaid support feature is in the process of deployment and is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization. For status on the current work item, see the [Mermaid support in wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751) work item in [features under development](/azure/devops/release-notes/features-timeline#features-under-development).
+> Mermaid diagram support was added in the [Sprint 158 update (September 23, 2019) release](/azure/devops/release-notes/2019/sprint-158-update#mermaid-diagram-support-in-wiki) and is in the process of deployment. Until deployment is completed, the feature is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization.
 
 Wiki supports the following Mermaid diagram types:
 
