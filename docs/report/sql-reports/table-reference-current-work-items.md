@@ -8,7 +8,7 @@ description: Query for data about the current state of bugs, task, and other typ
 ms.assetid: 8f70c31b-1c6f-4d5b-8413-3948a298d879
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Current Work Item tables
