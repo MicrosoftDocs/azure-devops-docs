@@ -44,9 +44,9 @@ Restore file contents back to a known good version, removing unwanted changes.
 #### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 &amp; 2017
 
-0. Open up the **Changes** view in Team Explorer.
-1. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
-2. Right-click that file and select **Undo Changes**.
+1. Open up the **Changes** view in Team Explorer.
+2. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
+3. Right-click that file and select **Undo Changes**.
 
     ![Reset a single file with Git in Visual Studio](_img/vs_reset_single_file.gif)
 
@@ -102,10 +102,10 @@ to simply discard all changed files since the last commit and return the files t
 > Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open up the **Changes** view in Team Explorer. 
-1. Select **Actions** and choose **View History** from the drop-down. 
-2. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-3. Choose **Reset and delete changes...**.
+1. Open up the **Changes** view in Team Explorer. 
+2. Select **Actions** and choose **View History** from the drop-down. 
+3. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
+4. Choose **Reset and delete changes...**.
 
     ![Reset a branch from Visual Studio](_img/vs_reset_branch.png)
 

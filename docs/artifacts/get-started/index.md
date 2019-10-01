@@ -3,13 +3,13 @@ title: Learn how to share code with packages
 titleSuffix: Azure Artifacts
 description: Use Azure Artifacts to manage and share code across teams and platforms  
 ms.custom: seodec18 
-ms.technology: devops-agile
+ms.technology: devops-artifacts
 ms.prod: devops
 ms.assetid:  
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.topic: conceptual
+ms.author: phwilson
+author: chasewilson
+ms.topic: landing-page
 ms.date: 05/22/2019
 ---
 
@@ -63,5 +63,5 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 
 ## Resources 
 
-- [Azure Repos](../../repos/index.md)
-- [Azure Pipelines](../../pipelines/index.md)
+- [Azure Repos](../../repos/index.yml)
+- [Azure Pipelines](../../pipelines/index.yml)

@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+ms.date: 09/18/2019  
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -21,10 +21,10 @@ ms.date: 12/17/2018
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-We show you how to do the following in this article:  
+In this quickstart, learn how to do the following tasks:  
 
 > [!div class="checklist"]
-> * Open Wiki
+> * Open wiki
 > * Add a wiki page
 > * View revisions for a page
 > * Edit and delete wiki pages
@@ -80,6 +80,14 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 
 To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
 
+For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**
+
+> [!div class="mx-imgBorder"]  
+> ![Create wiki and first page](_img/wiki/edit-in-repos.png)
+
+> [!NOTE]  
+> If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and continue editing.
+
 To delete a page, open the context menu from the tree or the one inside the page and select **Delete**.  Confirm the delete in the dialog box that opens.
 
 > [!NOTE]  
@@ -93,8 +101,7 @@ You can reorder pages within the wiki tree view to have pages appear in the orde
 * Change the parent-child relationship of a page
 * Change the order of the page within the hierarchy
 
-> [!NOTE]  
-> Moving a page in the hierarchy may break links to it from other pages. You can always fix the links manually after you move. Reordering a page within a hierarchy has no impact on page links.
+Moving a page in the hierarchy doesn't break links to it from other pages, as the page ID is added to the URL. Since the page ID is part of the URL, this ensures a permanent link that remains in tact as the wiki changes over time.
 
 You can also use keyboard shortcuts to reorder pages. Select a page and press **CTRL + UP ARROW** or **CTRL + DOWN ARROW** to change page orders.
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
@@ -113,9 +120,4 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 > [!div class="nextstepaction"]
 > [View wiki page history and revert](wiki-view-history.md)
 
-## Related articles
 
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-* [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md)
-* [Get started with Git](../../repos/git/gitquickstart.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

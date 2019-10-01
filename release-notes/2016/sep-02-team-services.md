@@ -3,10 +3,10 @@ title: Custom work item types and stakeholder support for exploratory testing â€
 description: VSTS release notes for September 02 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 6dacf469-d201-4cc9-8fd4-4fab64c975bc
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

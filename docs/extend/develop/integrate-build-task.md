@@ -7,8 +7,8 @@ ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 11/29/2018
 ---
 
@@ -20,7 +20,7 @@ to enable fundamental build and deployment scenarios that we recommend you exami
 
 ## Custom build task JSON
 
-When creating a custom build or release task with an extension, your extension will include a `task.json` file for each build or release task.
+When creating a custom build or release task with an extension, your extension includes a `task.json` file for each build or release task.
 This file describes the build or release task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
 
 The build/release task SDK documentation is [on GitHub](https://github.com/Microsoft/azure-pipelines-task-lib).
@@ -65,7 +65,7 @@ multiple versions in one extension.
                     
 
 >[!NOTE]
->The code will look for the `task.json` file inside the task folder. If one is not found, it will look just *one* level deeper.
->An error will be thrown if one is not found in either level.
+>The code looks for the `task.json` file inside the task folder. If one is not found, it looks just *one* level deeper.
+>An error is thrown if one is not found in either level.
 
 

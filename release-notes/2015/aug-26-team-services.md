@@ -3,10 +3,10 @@ title: Sprint planning improvements and SonarQube analysis build tasks – Aug 2
 description: VSTS release notes for August 26 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: a08691ea-e68d-4846-a306-adb0e30b28b4
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -36,7 +36,7 @@ Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. B
 
 ![SonarQube build analysis settings](_img/8_26_04.png)
 
-That’s a wrap for our deployment this week. As always, please reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on what you’d like to see us do next, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for our deployment this week. As always, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

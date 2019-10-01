@@ -3,10 +3,10 @@ title: RM updates, email formatting, a checkbox control, and more – May 6
 description: VSTS release notes for May 6 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: db77360b-f4ce-4fbf-8b76-af6d400f3e43
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -76,7 +76,10 @@ Second, it’s very common to need to understand and identify test cases or cont
 
 This release brings with it quite a few Release Management (RM) improvements. Let’s walk through the new capabilities…
 
-First, Release Management now supports linking repositories (both Git and Team Foundation Version Control) as artifact sources directly to a release definition, enabling you to consume resources in your repos without having to publish build artifacts with the same files. **Note:** There is no support yet for auto-triggering new releases when a commit is made into these repositories, but that work is in flight, so stay tuned.
+First, Release Management now supports linking repositories (both Git and Team Foundation Version Control) as artifact sources directly to a release definition, enabling you to consume resources in your repos without having to publish build artifacts with the same files.
+
+> [!NOTE]
+> There is no support yet for auto-triggering new releases when a commit is made into these repositories, but that work is in flight, so stay tuned.
 
 ![Linking a repository in Release Management](_img/5_06_09.png)
 
@@ -132,7 +135,7 @@ The final thing I want to point out is that you might be noticing some subtle ch
 
 ![Restyled, cleaner dialog box](_img/5_06_13.png)
 
-There’s a lot here, so I hope you made it to the end. As always, free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+There’s a lot here, so I hope you made it to the end. As always, free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

@@ -7,13 +7,13 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---
 
-# Azure DevOps Services REST API Reference
+# Azure DevOps Services REST API reference
 
 Welcome to the Azure DevOps Services REST API Reference. 
 
@@ -145,7 +145,7 @@ Here's how to get a list of projects from TFS using the default port and collect
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](./get-started/authentication/PATs.md).
+The examples above use personal access tokens, which requires that you [[create a personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Process the response
 

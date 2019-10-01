@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.date: 12/30/2016
 ---
 
-# Bug Trends Excel Report
+# Bug Trends Excel report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -20,7 +20,11 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
 > [!NOTE]
 >  You can view the Bugs Trends report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
   
-##  <a name="Data"></a> Data in the Report  
+
+<a name="Data"></a>  
+
+##  Data in the report  
+
  You can use the Bug Trends report to understand the rate at which the team is finding, fixing, and closing Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. That data is stored in the data warehouse.  
   
  ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")  
@@ -29,7 +33,8 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
   
  For information about healthy and unhealthy versions of the report, see [Bug Trends](../sql-reports/bug-trends-report.md).  
   
-### Required Activities for Tracking Bugs  
+### Required activities for tracking bugs 
+ 
  For the Bug Trends report to be useful and accurate, the team must perform the following activities:  
   
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
@@ -39,8 +44,12 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
   
 -   Update the **State** of each Bug as it is fixed, verified, and closed.  
   
-##  <a name="Updating"></a> Customizing the Report  
- You can customize the Bug Trends report by opening the report in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
+
+<a name="Updating"></a> 
+
+## Customize the report  
+
+You can customize the Bug Trends report by opening the report in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  
 |----------|------------|  
@@ -48,15 +57,7 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
 |Bug trends for a product area|Change the filter for **Area** (default=All)|  
 |Bug trends for the last six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
   
- For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to Customize Excel Reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes  
- [Excel reports](excel-reports.md)
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

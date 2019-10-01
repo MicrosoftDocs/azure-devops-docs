@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -140,6 +140,6 @@ To view and update the test results:
 ## See Also  
 
 * [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
-* [Continuous testing scenarios and capabilities](../../pipelines/index.md)
+* [Continuous testing scenarios and capabilities](../../pipelines/index.yml)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

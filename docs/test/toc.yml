@@ -1,10 +1,11 @@
-- name: Exploratory & Manual Testing 
-  href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: Azure Test Plans 
+  href: index.yml
 - name: About exploratory and manual testing
-  href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  href: overview.md
 - name: About load testing
   href: load-test/overview.md
 - name: Quickstarts
+  expanded: true
   items:
   - name: Manual testing
     items:
@@ -14,6 +15,8 @@
       href: create-test-cases.md
     - name: Run manual tests
       href: run-manual-tests.md
+    - name: New test plans page
+      href: new-test-plans-page.md 
   - name: "Test & Feedback extension"
     items:
     - name: Install the extension
@@ -45,15 +48,13 @@
     - name: Track test status
       href: track-test-status.md
     - name: Delete test artifacts
-      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      href: ../boards/backlogs/delete-test-artifacts.md
     - name: Perform user acceptance testing
       href: user-acceptance-testing.md
     - name: Test different configurations
       href: test-different-configurations.md
     - name: Repeat a test with different data
       href: repeat-test-with-different-data.md
-    - name: Collect screenshots and video
-      href: collect-screenshots-and-video.md
     - name: Collect diagnostic data
       href: collect-diagnostic-data.md
     - name: Manage test results
@@ -94,6 +95,8 @@
       href: load-test/install-certs-and-software.md
 - name: Reference
   items:
+  - name: Default permissions (Security)
+    href: manual-test-permissions.md
   - name: Manual testing FAQs
     href: reference-qa.md
   - name: Load testing FAQs
@@ -101,8 +104,20 @@
   - name: TCM Reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
-  - name: Default permissions (Security)
-    href: manual-test-permissions.md
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: REST API Reference
+  items:
+  - name: Test Management
+    href: /rest/api/azure/devops/test
+  - name: Test Plans
+    href: /rest/api/azure/devops/testplan/test%20%20plans
+- name: Resources
+  items:
+  - name: Azure DevOps Blog, Test
+    href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+  - name: Plug-ins for Visual Studio
+    href: http://go.microsoft.com/fwlink/?LinkID=246630
+  - name: Create custom code & plug-ins
+    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
 
 

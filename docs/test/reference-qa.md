@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -136,9 +136,10 @@ Switch between Grid and List views using the View menu at the right of the windo
 
 ![Use the View menu to switch between List and Grid views](_img/create-test-cases/GridViewSwitch.png)
 
-> **Note**: Do not use the Team plugin for Excel to add or update test case work items.
-  Excel cannot parse the format used to store test steps, and in some cases
-  this may affect the formatting of the test case work items. 
+> [!NOTE]
+> Do not use the Team plugin for Excel to add or update test case work items.
+> Excel cannot parse the format used to store test steps, and in some cases
+> this may affect the formatting of the test case work items. 
 
 ### Q: Can I bulk edit multiple test cases?
 

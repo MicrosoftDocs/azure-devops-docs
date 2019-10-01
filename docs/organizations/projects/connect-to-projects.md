@@ -13,11 +13,11 @@ ms.date: 05/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Connect to a project in Azure DevOps
+# Quickstart: Connect to a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To share code, build apps, track work, and collaborate with team members, you connect to a project from one of the following clients:
+In this quickstart, you learn how to connect to a project in order to share code, build apps, track work, and collaborate with team members, from one of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
@@ -26,20 +26,21 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
 - [Visual Studio Code](../../java/vscode-extension.md)    
 
-> [!NOTE]
-> A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
+A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
 
-If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
+## Prerequisites
 
-From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
+- If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
-To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
+- From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, configure your client to [connect to a TFS Proxy server](#proxy).
+
+- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
 <a id="web-portal">  </a>
 
 ## Connect from the web portal
 
-1. If you're not a member of a security group, ask your project administrator to add you.  
+1. If you're not a member of a security group, ask your Project Administrator to add you.  
 
 2. Open a browser window and enter a URL that uses the following form:  
 
@@ -263,7 +264,7 @@ You can locate the executable in the following folder: `*Drive*:\\Program Files 
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first 5 account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 

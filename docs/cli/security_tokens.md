@@ -1,4 +1,21 @@
-# Security tokens for Permissions management
+---
+title: Azure DevOps CLI Security tokens for permissions management
+titleSuffix: Azure DevOps 
+description: Use Azure DevOps CLI to manage security tokens for permissions management
+ms.topic: reference 
+ms.manager: jillfra
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: jillfra 
+ms.author: geverghe
+author: KathrynEE
+monikerRange: 'azure-devops'
+ms.date: 06/18/2019
+---
+
+# Security tokens for permissions management
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 Tokens are arbitrary strings representing resources in Azure DevOps. Token format differs per resource type, however hierarchy and separator characters are common between all tokens.
 
@@ -130,6 +147,6 @@ If the tokens have variable-length path parts, then a separator character is use
 
    You need to append RepositoryID to update repo level permissions
 
-   Token format for project level permissions : 'repoV2/PROJECT_ID/REPO_ID'
+   Token format for repository level permissions : 'repoV2/PROJECT_ID/REPO_ID'
 
    For more information on this namespace and its tokens refer this [blog](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)

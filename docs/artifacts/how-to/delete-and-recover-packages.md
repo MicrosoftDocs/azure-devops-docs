@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 03/22/2018
 monikerRange: '>= tfs-2017'
@@ -206,7 +206,7 @@ To configure retention policies:
 
 ## Recover a deleted package from the recycle bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
+If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
 
 ::: moniker range=">= azure-devops-2019"
 

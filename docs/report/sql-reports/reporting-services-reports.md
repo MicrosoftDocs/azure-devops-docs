@@ -37,7 +37,7 @@ Build reports track the quality of software under development. By defining tests
 <ol>
 <li><a href="../../pipelines/agents/agents.md" data-raw-source="[Configure a build system](../../pipelines/agents/agents.md)">Configure a build system</a></li>
 <li><a href="../../pipelines/get-started-designer.md" data-raw-source="[Get started with CI/CD](../../pipelines/get-started-designer.md)">Get started with CI/CD</a></li>
-<li><a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/languages/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
+<li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
 <li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>
@@ -110,7 +110,7 @@ Project management reports provide insight into how much work the team is tackli
 ![Sample stories overview report](../admin/_img/IC665011.png)  
 
 
-##Monitor test plans and bug tracking
+## Monitor test plans and bug tracking
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
 <table width="100%">

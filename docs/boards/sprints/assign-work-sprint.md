@@ -43,7 +43,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 ![Sprint planning, horizontal nav](_img/sp-intro.png) 
 
 ::: moniker-end
-
+	
 In this article you'll learn how to:  
 
 > [!div class="checklist"]   
@@ -68,12 +68,40 @@ some or all of the items based on these estimates.
 
 ## Open your team's product backlog
 
+From your web browser, open your product backlog. 
+
 > [!NOTE]  
 > Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
-::: moniker range=">= azure-devops-2019"
+
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+
+    To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](../sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+
+	> [!TIP]    
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+
+1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint//select-product-backlog-agile-s155.png) 
+
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-column-options-s155.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -113,7 +141,7 @@ some or all of the items based on these estimates.
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md).
 
 ::: moniker-end
 
@@ -128,7 +156,6 @@ Also, you'll want to have [set the start and end dates for your sprint](define-s
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
 
-
 ::: moniker range=">=azure-devops-2019"
 
 1. The next step is to open the Planning pane. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
@@ -138,13 +165,17 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).  <!--- Check with Marina about what permissions are needed to add a sprint or select a sprint --> 
 
-1. You can drag and drop items from the **Backlog** onto a sprint. 
+1. You can drag and drop items from the **Backlog** onto a sprint.  
+
+	> [!NOTE]   
+	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
+
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
 2. Select one or more items from the backlog and drag them to the sprint you are planning. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
-3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window will update with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
+3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window updates with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](_img/assign-items-sprint/sprint-window-effort.png)   

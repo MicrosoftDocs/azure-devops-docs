@@ -7,8 +7,8 @@ description: Work with work item attachments programmatically using the REST API
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

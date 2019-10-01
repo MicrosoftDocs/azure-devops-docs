@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 04/29/2019
+ms.author: sdanie
+author: steved0x
+ms.date: 07/08/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,8 +21,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 You can specify conditions under which a step, job, or stage will run.
@@ -35,7 +34,7 @@ It's as if you specified "condition: succeeded()" (see [Job status functions](ex
 ```yaml
 jobs:
 - job: Foo
-  
+
   steps:
   - script: echo Hello!
     condition: always() # this step will always run, even if the pipeline is cancelled
@@ -51,16 +50,14 @@ jobs:
 YAML is not yet supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
 you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
 
----
-
+* * *
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -70,7 +67,7 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 > In TFS 2017.3, custom task conditions are available in the user interface only for Build pipelines. You can use the Release [REST APIs](../../integrate/index.md) to establish custom conditions for Release pipelines.
 
 ::: moniker-end
- 
+
 Conditions are written as expressions.
 The agent evaluates the expression beginning with the innermost function and works its way out.
 The final result is a boolean value that determines if the task, job, or stage should run or not.
@@ -117,6 +114,19 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 ```
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
+
+### Use a template parameter as part of a condition
+
+Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions.
+
+```yaml
+parameters:
+  doThing: false
+
+steps:
+- script: echo I did a thing
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+```
 
 ## Q&A
 

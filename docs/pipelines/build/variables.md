@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 05/09/2019
+ms.author: sdanie
+author: steved0x
+ms.date: 08/23/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,19 +25,22 @@ This is the comprehensive list of predefined variables.
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
 Learn more about [working with variables](../process/variables.md).
 
+> [!NOTE]
+> You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
+
 ## Build.Clean 
 
 ::: moniker range="> tfs-2017"
 
 This is a deprecated variable that modifies how the build agent cleans up source.
-To learn how to clean up source, see [source repositories](repository.md).
+To learn how to clean up source, see [source repositories](../repos/index.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 This variable modifies how the build agent cleans up source.
-To learn more, see [source repositories](repository.md).
+To learn more, see [source repositories](../repos/index.md).
 
 ::: moniker-end
 
@@ -78,23 +81,33 @@ pushes and pulls in your scripts.
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/variables-hosted.md)]
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 [!INCLUDE [include](_shared/variables-server2019.md)]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 [!INCLUDE [include](_shared/variables-tfs2018.md)]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 [!INCLUDE [include](_shared/variables-tfs2017.md)]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 [!INCLUDE [include](_shared/variables-tfs2015.md)]
+
 ::: moniker-end
 
 <a name="identity_values"></a>

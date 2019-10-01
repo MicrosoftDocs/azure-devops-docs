@@ -1,12 +1,12 @@
-- name: Azure DevOps Get Started Documentation
-  href: index.md
-- name: Start Using Azure DevOps
+- name: Get started 
+  href: index.yml
+- name: Start using Azure DevOps
   href: ../user-guide/toc.yml
-- name: Web Portal Navigation
+- name: Web portal navigation
   href: ../project/navigation/toc.yml 
-- name: Search Across Azure DevOps
+- name: Search across Azure DevOps
   href: ../project/search/toc.yml 
-- name: Migrate & Import
+- name: Migrate & import
   href: ../migrate/toc.yml 
 - name: Reference
   items:
@@ -20,6 +20,8 @@
     href: ../user-guide/faqs.md
   - name: Service status  
     href: ../user-guide/service-status-info.md
+  - name: Service limits  
+    href: ../user-guide/service-limits.md
 - name: REST API Reference
   items:
   - name: Search
@@ -36,7 +38,7 @@
     href: /azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
     href: /azure/devops/java/download-intellij-plug-in
-- name: Azure DevOps Services status & security
+- name: status & security (Azure DevOps Services)
   items: 
   - name: Service status  
     href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
@@ -56,17 +58,15 @@
       href: /azure/devops/learn/git/git-at-scale
 - name: Resources
   items:
-  - name: Set your preferences  
-    href: /azure/devops/organizations/settings/set-your-preferences
+  - name: Configure & customize 
+    href: /azure/devops/organizations/index
   - name: Manage projects 
     href: /azure/devops/organizations/projects/index
-  - name: Permissions, Security, & Identity 
-    href: /azure/devops/organizations/security/index
-  - name: Marketplace & Extensibility
+  - name: Marketplace & extensibility
     href: /azure/devops/marketplace-extensibility/index
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
-  - name: Code Search Video
+  - name: Code search video
     href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
 
 

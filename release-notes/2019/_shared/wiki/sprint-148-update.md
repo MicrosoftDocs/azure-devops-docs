@@ -2,6 +2,8 @@
 ms.topic: include
 ---
 
+<a id="mention-users-groups" />
+
 ### @mention users and groups
 
 You can now @mention users and groups in a wiki page. This makes documents like a team's contact page, guidance documents and knowledge documents richer. The image below is an example showing a sprint retrospective with tasks and the person responsible.

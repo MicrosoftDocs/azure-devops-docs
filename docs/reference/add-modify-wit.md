@@ -67,19 +67,19 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
    [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-1. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
     `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-2. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+3. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
 
-3. Import the WIT definition file.  
+4. Import the WIT definition file.  
 
    `witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
-4. Open the web portal or refresh the page to view the changes.  
+5. Open the web portal or refresh the page to view the changes.  
 
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
@@ -104,7 +104,9 @@ You add fields and field rules to the **FIELDS** section. For the field to appea
 
 For example, to add the work item ID to a form, specify the following XML syntax within the `FORM` section.
 
-    <Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```xml
+<Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```
 
 To learn more about defining fields, see [Add or modify a field](add-modify-field.md).
 
@@ -237,20 +239,24 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 
 -   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
-        <TRANSITION from=" " to="New">
-           <FIELDS>
-              <FIELD refname="System.CreatedBy">
-                <VALIDUSER for="Allowed Group" not="Disallowed Group" />
-              </FIELD>
-           </FIELDS>
-        </TRANSITION> 
+    ```xml
+    <TRANSITION from=" " to="New">
+        <FIELDS>
+            <FIELD refname="System.CreatedBy">
+            <VALIDUSER for="Allowed Group" not="Disallowed Group" />
+            </FIELD>
+        </FIELDS>
+    </TRANSITION> 
+    ```
 
 <a id="delete-wit">  </a>
 ## Delete a WIT (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
-    witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
+witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
 
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
 

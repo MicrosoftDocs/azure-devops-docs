@@ -21,7 +21,7 @@ ms.date: 02/04/2019
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
-For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md).
+For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
 <a id="field-values" /> 
 
@@ -79,9 +79,6 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
     <td><p> <strong>picklistString</strong><sup>2</sup></p></td>
     <td><p>Custom field defined to contain a pick list of short text string (255 characters or less) values.</p></td></tr>
-<tr>
-    <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
-    <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
 <tr>
     <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
     <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
@@ -348,7 +345,8 @@ You can use the macros described in the following table to filter your queries b
 1. The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
 1. The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>. 
 1. The <strong><xref href="RecentProjectActivity**" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity**"></xref> macro is supported for Azure Boards (cloud service) only at this time.
-1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure Boards (cloud service) only at this time.<br/>1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
+1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
 
 

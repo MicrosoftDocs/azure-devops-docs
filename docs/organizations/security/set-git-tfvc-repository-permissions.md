@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 06/24/2019
 ---
 
 
@@ -18,7 +18,7 @@ ms.date: 02/11/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manager permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
+By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
 ## Prerequisites
 
@@ -34,13 +34,16 @@ To contribute to the source code, you must be granted **Basic** access level or 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
+
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
 
 For a description of each security group and permission level, see [Permissions and group reference](permissions.md).  
 
 ::: moniker range=">= tfs-2015"
+
 ### Git
+
 You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/overview.md).
 
 [!INCLUDE [temp](_shared/code-git.md)]
@@ -67,12 +70,11 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 You can set the permissions for all Git repositories for a project, or for a single repository. 
 
-
 ::: moniker range=">= azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+2. To set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 
@@ -82,6 +84,9 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
+	> [!NOTE]  
+	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+ 
 4. When done, choose **Save changes**. 
 
 ::: moniker-end
@@ -116,6 +121,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ## Set TFVC repository permissions
 
+
 ::: moniker range=">= azure-devops-2019"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
@@ -125,6 +131,9 @@ You can set the permissions for all Git repositories for a project, or for a sin
 	*To see the full image, click to expand*.
 
 	[![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
+
+	> [!NOTE]  
+	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
 
 1. Save your changes.  
 

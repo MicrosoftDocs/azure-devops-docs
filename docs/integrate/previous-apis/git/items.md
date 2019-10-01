@@ -7,8 +7,8 @@ description: Work with Git items (files and folders) programmatically using the 
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

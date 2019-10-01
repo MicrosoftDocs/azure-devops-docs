@@ -22,25 +22,25 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## 5-minute quickstarts
 
-- [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 - [Share your project vision](project-vision-status.md)
-- [Define area paths](../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Define iteration paths or sprints](../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Add a team](../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-- [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
+- [Define area paths](../settings/set-area-paths.md)
+- [Define iteration paths or sprints](../settings/set-iteration-paths-sprints.md)
+- [Add a team](../settings/add-teams.md)
+- [Add users to a project or team](../security/add-users-team-project.md)
+- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md)  
 
 ## Step-by-step tutorials
 
-- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
--  [Customize a project (Azure DevOps Services)](../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
+- [Grant or restrict permissions to select tasks](../security/restrict-access.md)
+-  [Customize a project (Azure DevOps Services)](../settings/work/customize-process.md)
 
 ## Concepts
 
-- [Customize a project](../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [About areas and iterations](../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [About teams and Agile tools](../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
+- [Customize a project](../../reference/on-premises-xml-process-model.md)
+- [About areas and iterations](../settings/about-areas-iterations.md)
+- [About teams and Agile tools](../settings/about-teams-and-settings.md)  
 - [Resources granted to project members](resources-granted-to-project-members.md)  
 
 ## How-to guides
@@ -51,7 +51,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)
 - [Restore a project](restore-project.md)
-- [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Change service visibility](../settings/set-services.md)
 - [Connect to projects](connect-to-projects.md)
 
 ::: moniker-end
@@ -61,20 +61,27 @@ Structure your projects by adding area paths, iteration paths, and teams.
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)
-- [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Change service visibility](../settings/set-services.md)
 - [Connect to projects](connect-to-projects.md)
 
 ::: moniker-end
 
 ## Reference
 
-- [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
-- [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Default permissions and access](../../organizations/security/permissions-access.md)
+- [Permission lookup guide (Security)](../security/permissions-lookup-guide.md)
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md)
 
 ## Resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
+- [Get Started using Azure DevOps](../../get-started/index.yml)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
 - [Public Projects](../public/index.md)
 - [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)
+
+## Q & A
+
+### Q: Can I move or transfer a project to another organization or collection? 
+
+**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
+ 

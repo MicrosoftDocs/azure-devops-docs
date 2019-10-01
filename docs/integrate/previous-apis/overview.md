@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -65,7 +65,8 @@ There are many ways to authenticate your application or service with Team Servic
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [TFS Extension](https://www.visualstudio.com/docs/integrate/extensions/get-started/node#files) | TFS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/docs/integrate/extensions/develop/add-dashboard-widget) |
 
-> **Note:** You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance).
+> [!NOTE]
+> You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance).
 
 ### Assemble the request
 
@@ -77,7 +78,7 @@ Here's how to get a list of team projects from TFS using the default port and co
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/tfs/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats).
+The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Process the response
 

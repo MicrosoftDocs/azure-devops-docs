@@ -7,8 +7,8 @@ ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -37,7 +37,7 @@ Here is an example of a contribution type declaration in an extension manifest:
         {
             "id": "hub",
             "name": "Web Access Hub",
-            "description": "A hub that will appear in the hubs menu at the top of web pages.",
+            "description": "A hub that appears in the hubs menu at the top of web pages.",
             "properties": {
                 "name": {
                     "description": "The text to display for the hub",

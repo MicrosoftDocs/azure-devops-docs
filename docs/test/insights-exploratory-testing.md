@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -89,7 +89,7 @@ app from the information collected during your exploratory testing sessions.
      form for that individual item. For example, if you have pivoted
      the list based on explored work items, expand a work 
      item and select a child bug, task, or test case to see
-     the work item form for just that item.<p /> 
+     the work item form for just that item.<p />
 
    ![Get deep insights from Details view](_img/insights-exploratory-testing/insights-exploratory-testing-07.png)
 
@@ -138,6 +138,6 @@ Use a query to explore the work items that users have not yet explored.
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
 * [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

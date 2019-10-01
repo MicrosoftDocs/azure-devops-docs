@@ -7,8 +7,8 @@ description: Use the REST APIs for Team Foundation Server to access TFVC resourc
 ms.assetid: F279AADC-016F-4A89-BBFC-EFA9363D3DC0
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

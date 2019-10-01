@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
+ms.date: 06/22/2017
 ---
 
 # Git Tags web view, build definition import/export, and improved user management – June 22
@@ -102,7 +103,8 @@ You can easily differentiate between a lightweight and an annotated tag here, as
 ### Delete tags
 There can be times when you want to delete a tag from your remote repo. It could be due to a typo in the tag name, or you might have tagged the wrong commit. You can easily delete tags from the VSTS UI by clicking the context menu of a tag on the __Tags__ page and selecting __Delete tag__. 
 
-**Note:** Deleting tags on remote repos should be exercised with caution.
+> [!NOTE]
+> Deleting tags on remote repos should be exercised with caution.
 
 ![delete tags](_img/06_22_16.png)
 
@@ -132,7 +134,7 @@ We’re pleased to announce that now you can do it!
 
 ## Visual Studio latest and hosted agent pools
 
-We’re changing the model for how you deal with hosted agents and different versions of Visual Studio. Due to architectural, storage, and performance limitations, we’re no longer going to offer multiple versions of Visual Studio on a single hosted agent pool. For details on the history and rationale for these changes, see [Visual Studio Services VS Hosted Pools](https://github.com/Microsoft/vsts-tasks/blob/master/docs/vshostedpools.md) on GitHub. 
+We’re changing the model for how you deal with hosted agents and different versions of Visual Studio. Due to architectural, storage, and performance limitations, we’re no longer going to offer multiple versions of Visual Studio on a single hosted agent pool. For details on the history and rationale for these changes, see [Visual Studio Services VS Hosted Pools](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/vshostedpools.md) on GitHub. 
 
 In this release you’ll see the following changes:
 
@@ -214,7 +216,7 @@ The package list contains a new __Last pushed__ column with humanized dates so y
 ![Last Pushed Column](_img/06_22_06.png)
 
 ## Package build task updates
-We’ve made comprehensive updates to the __NuGet__, __npm__, __Maven__, and __dotnet__ build tasks, including fixes to most of the issues logged in the [vsts-tasks repo on GitHub](https://github.com/microsoft/vsts-tasks).
+We’ve made comprehensive updates to the __NuGet__, __npm__, __Maven__, and __dotnet__ build tasks, including fixes to most of the issues logged in the [vsts-tasks repo on GitHub](https://github.com/Microsoft/azure-pipelines-tasks).
 
 ### New unified NuGet task
 We’ve combined the __NuGet Restore__, __NuGet Packager__, and __NuGet Publisher__ task into a unified __NuGet__ build task to align better with the rest of the build task library; the new task uses NuGet 4.0.0 by default. Accordingly, we’ve deprecated the old tasks, and we recommend moving to the new NuGet task as you have time. This change coincides with a wave of improvements outlined below that you’ll only be able to access by using the combined task.

@@ -1,7 +1,7 @@
 ---
 title: Add last refresh date to a PowerBI report 
 titleSuffix: Azure DevOps
-description: Sample report that shows how to add a field showing the last refresh date to an existing PowerBI report based on the Analytics service  
+description: Sample report that shows how to add a field showing the last refresh date to an existing PowerBI report based on Analytics  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 

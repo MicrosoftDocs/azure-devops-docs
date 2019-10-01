@@ -44,7 +44,8 @@ In this task you will install the [Exploratory Testing extension](https://market
 
     ![Select the Team to Connect to](../_img/e2eintellij/select-team.png)
 
-    > **Note**: Your team name may be different
+    > [!NOTE]
+    > Your team name may be different
 
 ## Configure Branch Policies
 
@@ -68,7 +69,8 @@ In this task you will enforce quality on the master branch by creating branch po
 
     ![Policy configuration](../_img/e2eintellij/policy.png)
 
-    > **Note**: You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
+    > [!NOTE]
+    > You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
 
 ## Log a Bug using the Exploratory Test Extension
 
@@ -78,7 +80,8 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Start a test sessions](../_img/e2eintellij/start-test-session.png)
 
-    > **Note**: The test extension is now recording all of your interactions. You can see the test icon beaker has a green dot indicating that a session is currently running.
+    > [!NOTE]
+    > The test extension is now recording all of your interactions. You can see the test icon beaker has a green dot indicating that a session is currently running.
 
 1. Enter `http://localhost:8081/myshuttledev` in the toolbar to navigate to the application. Enter `fred` for the username and `fredpassword` for the password and click Log In.
 
@@ -104,7 +107,8 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Log the Bug](../_img/e2eintellij/log-bug.png)
 
-    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
+    > [!NOTE]
+    > All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
 
 1. Once the bug has been created, click the Stop button in the Test Extension toolbar to end the test session.
 
@@ -130,7 +134,8 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![Create a branch from the Work Item](../_img/e2eintellij/create-branch.png)
 
-    > **Note**: If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
+    > [!NOTE]
+    > If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
 
 3. In the dialog, change the branch name to "totalsBug" and click Create.
 
@@ -157,7 +162,8 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 8. On the upper right of the Commit message box there is an Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
 
-    > **Note**: In this case we don't need to associate the checkin with the Bug since the branch is already associated with the Bug.
+    > [!NOTE]
+    > In this case we don't need to associate the checkin with the Bug since the branch is already associated with the Bug.
 
     ![Associate a work item with a commit](../_img/e2eintellij/associate-commit.png)
 
@@ -173,15 +179,18 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
      ![Build is running to validate the PR](../_img/e2eintellij/pr-overview.png)
 
-    > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
-    > 
-    > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
+    > [!NOTE]
+    > If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
+    >
+    > [!NOTE]
+    > You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 
 12. Click on the Files tab to open the file compare. Note the changes.
 
      ![PR File Compare](../_img/e2eintellij/PR-file-compare.png)
 
-     > **Note**: You can comment on code or files in the PR and have conversations with the team throughout the review process.
+    > [!NOTE]
+    > You can comment on code or files in the PR and have conversations with the team throughout the review process.
 
 13. Click Approve to approve the PR.
 

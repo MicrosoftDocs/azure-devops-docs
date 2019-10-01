@@ -3,10 +3,10 @@ title: Card configuration options – Apr 10
 description: VSTS release notes for April 10 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 585770d3-173f-4c37-bad9-acfb4ea143ff
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -18,7 +18,8 @@ The first thing I’ll highlight is that you now have configuration options for 
 
 ![Card configuration options](_img/4_10_01.png)
 
-**Note:** The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
+> [!NOTE]
+> The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
 
 ![Card configuration options dialog](_img/4_10_02.png)
 
@@ -45,15 +46,8 @@ This sprint we also made a change to the code history hub by introducing a new v
 
 Finally, we enabled last week [support for up to 100 cores](http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
 
-If you have questions, feel free to reach out on [Twitter](https://twitter.com/VisualStudio) ([@aaronbjork](https://twitter.com/aaronbjork)). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
+If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
 
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

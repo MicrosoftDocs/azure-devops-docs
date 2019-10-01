@@ -7,8 +7,8 @@ description: Work with work item comments programmatically using the REST APIs f
 ms.assetid: EF2796AF-2400-4396-ABFC-1903BA1581CC
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -32,11 +32,11 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
    * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
    * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization owner, if you're not already in the directory.
+2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization Owner, if you're not already in the directory.
 
    What does an example directory look like?
   
-   Suppose Jamal is an Azure AD global administrator at Fabrikam and is listed in the Fabrikam directory with his work account (jamalhartnett@fabrikam.com). He's also the organization owner and a user with a Microsoft account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with Azure DevOps. To free up the access used by his Microsoft account, he must change the organization owner to his work account.
+   Suppose Jamal is an Azure AD global administrator at Fabrikam and is listed in the Fabrikam directory with his work account (jamalhartnett@fabrikam.com). He's also the organization Owner and a user with a Microsoft account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with Azure DevOps. To free up the access used by his Microsoft account, he must change the organization Owner to his work account.
 
    Nicole is user at Fabrikam. She has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address as her Microsoft account. Nicole continues to work seamlessly with the same sign-in address.
 

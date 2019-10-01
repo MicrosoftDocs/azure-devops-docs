@@ -7,8 +7,8 @@ description: Work with teams, projects, and project collections programmatically
 ms.assetid: 2FFBCD08-28E6-4EB4-86E4-557E416E4380
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

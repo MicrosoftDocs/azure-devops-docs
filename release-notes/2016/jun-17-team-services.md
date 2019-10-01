@@ -3,10 +3,10 @@ title: Git & TFVC updates plus improved test traceability … – June 20
 description: VSTS release notes for June 17 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: fa3df506-57bb-4910-9dca-4bf1b567b97e
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -150,13 +150,8 @@ Signed-in users who have Owner/Creator/Contributor permissions on a publisher wi
 
 And finally, it has been always possible to add notifications of XAML builds in the team room. In this latest deployment we added the ability to receive notifications from Build vNext as well.
 
-As always, if you have comments or questions, please reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have comments or questions, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 
 Aaron Bjork
-
-
-
-
-

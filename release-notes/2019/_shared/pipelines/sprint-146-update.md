@@ -4,7 +4,7 @@ ms.topic: include
 
 ### GitHub Enterprise support in the pipeline wizard
 
-Previously, you could use the [visual designer](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-designer?view=azure-devops&tabs=new-nav) to create pipelines for GitHub Enterprise repositories. Now, you can also use the **New build pipeline** wizard to create your pipelines.
+Previously, you could use the [visual designer](https://docs.microsoft.com/azure/devops/pipelines/get-started-designer?view=azure-devops&tabs=new-nav) to create pipelines for GitHub Enterprise repositories. Now, you can also use the **New build pipeline** wizard to create your pipelines.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/146_08.png)
@@ -14,20 +14,20 @@ The wizard analyzes your GitHub Enterprise repository to suggest a YAML template
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/146_10.png)
 
-For more details, see the documentation on creating your first pipeline [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-yaml?view=azure-devops).
+For more details, see the documentation on creating your first pipeline [here](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azure-devops).
 
 ### Automatic GitHub service connections in pipelines
 
 When using the **New build pipeline** wizard to create a pipeline for GitHub, the page for choosing or creating a GitHub service connection led to confusion about which connection to select from the list. Now, you don’t need to choose a connection. The wizard automatically creates and re-uses a service connection for the repository you choose.
 
-If you wish to manually choose a connection other than the one that is automatically selected, follow the **Choose connection** hyperlink. For more details, see [Build GitHub repositories](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops).
+If you wish to manually choose a connection other than the one that is automatically selected, follow the **Choose connection** hyperlink. For more details, see [Build GitHub repositories](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops).
 
 > [!NOTE]
 > The selection is based on the [Azure Pipelines GitHub App](https://github.com/apps/azure-pipelines) (if it is installed in the repository) or your personal GitHub identity (using OAuth).
 
 ### Display status for each pipeline job in GitHub Checks
 
-Previously, a single build status was posted to GitHub Checks for your pipeline even if it included jobs for multiple platforms (e.g., Linux, macOS, and Windows). Now, status is posted to GitHub Checks for each job in the pipeline. Additionally, you can re-run the entire build or only individual failed jobs from GitHub Checks. To use this functionality, your pipeline must be configured to use the [Azure Pipelines GitHub App](https://github.com/apps/azure-pipelines). For additional details, see [Integrate using the GitHub App](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops#integrate-using-the-github-app). To set up a pipeline with jobs for multiple platforms, see [Create a multi-platform pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-multiplatform?view=azure-devops).
+Previously, a single build status was posted to GitHub Checks for your pipeline even if it included jobs for multiple platforms (e.g., Linux, macOS, and Windows). Now, status is posted to GitHub Checks for each job in the pipeline. Additionally, you can re-run the entire build or only individual failed jobs from GitHub Checks. To use this functionality, your pipeline must be configured to use the [Azure Pipelines GitHub App](https://github.com/apps/azure-pipelines). For additional details, see [Integrate using the GitHub App](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#integrate-using-the-github-app). To set up a pipeline with jobs for multiple platforms, see [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/146_09.png)
@@ -95,19 +95,19 @@ This task allows installation of any version of Docker CLI on the agents as spec
 
 Previously, Microsoft hosted agents had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this update, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers using Azure can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs.
 
-This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed. If you’re currently building or running Java apps on-premises or with other JDKs, consider moving to Zulu on Azure for free support and maintenance. For more information, see the blog [Microsoft and Azul Systems bring free Java LTS support to Azure](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/).
+This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed. If you’re currently building or running Java apps on-premises or with other JDKs, consider moving to Zulu on Azure for free support and maintenance. For more information, see the blog [Microsoft and Azul Systems bring free Java LTS support to Azure](https://azure.microsoft.com/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/).
 
 ### YAML support for Bitbucket Cloud pipelines
 
-Previously, [YAML-based pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops) didn’t support Bitbucket Cloud. Now, you can either use YAML to define your Bitbucket Cloud pipelines or use the visual designer to do the same. To use YAML, add an **azure-pipelines.yml** file to your repository. In Azure Pipelines, choose **New build pipeline**, then select **Use the visual designer** hyperlink, select "Bitbucket Cloud" and "YAML". Here you can enter the path to your repository’s YAML file.
+Previously, [YAML-based pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops) didn’t support Bitbucket Cloud. Now, you can either use YAML to define your Bitbucket Cloud pipelines or use the visual designer to do the same. To use YAML, add an **azure-pipelines.yml** file to your repository. In Azure Pipelines, choose **New build pipeline**, then select **Use the visual designer** hyperlink, select "Bitbucket Cloud" and "YAML". Here you can enter the path to your repository’s YAML file.
 
-For more details, see the [YAML syntax guide](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema) and [GitHub repository of YAML samples](https://github.com/microsoft/azure-pipelines-yaml). 
+For more details, see the [YAML syntax guide](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema) and [GitHub repository of YAML samples](https://github.com/microsoft/azure-pipelines-yaml). 
 
 ### Avoid triggering multiple CI builds for pull requests
 
 The YAML build templates included with Azure Pipelines were configured to trigger builds for any branch within a repository. This included pull request topic branches. As a result, two builds were triggered when pull requests were created. One build for the pull request branch in response to the continuous integration trigger, and a second build for the pull request branch in response to the pull request trigger.
 
-By using the YAML snippet below, the built-in YAML templates will be configured to trigger a continuous integration build only for the **master** branch. New pull requests will still build using the pull request trigger. For more details, see the documentation for [build pipeline triggers](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml).
+By using the YAML snippet below, the built-in YAML templates will be configured to trigger a continuous integration build only for the **master** branch. New pull requests will still build using the pull request trigger. For more details, see the documentation for [build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml).
 
 ```yaml
 trigger:
@@ -118,7 +118,7 @@ trigger:
 
 Until now, pull request validation builds for forked repositories didn’t have permission to upload and download build artifacts or change the build number. Permissions were restricted because it was insecure to make the agent’s broader-scoped permissions available during a fork build triggered by an unknown user. With this update, agent permissions are scoped so that your pipeline can perform these operations if you need to.
 
-Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/archive-files?view=azure-devops&tabs=yaml) and [Publish Build Artifacts task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops).
+Below is an example of the YAML that you can use to archive build outputs in a tar.gz file into the artifact staging directory. Then, it publishes the output to Azure Pipelines to be associated with the build. For more details, see the documentation on [Archive Files task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/archive-files?view=azure-devops&tabs=yaml) and [Publish Build Artifacts task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops).
 
 ```yaml
 - task: ArchiveFiles@2
@@ -135,7 +135,7 @@ Below is an example of the YAML that you can use to archive build outputs in a t
 
 ### New option in Publish Test Results task to fail build on failed tests
 
-[Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results) is used to publish test results to Azure Pipelines when tests are run using your choice of test runner. Until now, the task would simply publish results from a results file and would not fail the build even if the results file contained failed tests. This meant that you had to write custom steps to have the build fail on test failures.
+[Publish Test Results task](https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results) is used to publish test results to Azure Pipelines when tests are run using your choice of test runner. Until now, the task would simply publish results from a results file and would not fail the build even if the results file contained failed tests. This meant that you had to write custom steps to have the build fail on test failures.
 
 We have now added an option in the task to fail the build if there are any failed tests.
 

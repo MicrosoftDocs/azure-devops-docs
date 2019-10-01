@@ -1,8 +1,7 @@
-- name: Azure DevOps Process Customization Documentation
-  expanded: false
-  href: index.md
 - name: About process (work tracking) customization
-  href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  href: customize-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Compare system processes  
+  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Inheritance Process Model 
   href: ../organizations/settings/work/toc.yml
 - name: On-premises XML Process Model 
@@ -27,24 +26,6 @@
     href: update-customized-process-template.md
   - name: When upgrading from TFS 2008 or TFS 2010
     href: upgrade-tfs-2008-or-2010.md
-- name: REST API Reference
-  items:
-  - name: Area and Iteration Paths
-    href: /rest/api/azure/devops/wit/Classification%20Nodes
-  - name: Processes
-    href: /rest/api/azure/devops/processes/processes
-  - name: Process Templates
-    href: /rest/api/azure/devops/processadmin/processes
-  - name: Work Item Types
-    href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
-- name: API SDK reference (Deprecated)
-  items:
-  - name: IProcessTemplates.AddUpdateTemplate
-    href: api-ref/iprocess-templates-add-update-template.md
-  - name: WorkItem.Open method
-    href: api-ref/open.md
-  - name: WorkItem.PartialOpen method
-    href: api-ref/partialopen.md
 - name: Resources
   items:
   - name: Azure Boards
@@ -56,7 +37,7 @@
   - name: Permissions, Security, & Identity
     href: /azure/devops/organizations/security/index
   - name: Naming restrictions
-    href: /azure/devops/organizations/settings/naming-restrictions 
+    href: /azure/devops/organizations/settings/naming-restrictions
   - name: Deprecation of WIT & Test Client OM
     href: /azure/devops/integrate/concepts/wit-client-om-deprecation
   - name: Changes made to process templates

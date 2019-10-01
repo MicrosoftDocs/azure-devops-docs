@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 05/30/2019
+ms.date: 09/19/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -204,16 +204,16 @@ Combine these elements to apply emphasis to text.
 
 ::: moniker range="tfs-2018"
 
-> [!NOTE]  
+> [!NOTE]
 > There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
-> 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-> [!NOTE]  
+> [!NOTE]
 > There is no Markdown syntax that supports underlining text.
-> 
+
 ::: moniker-end
 
 **Example:**
@@ -240,7 +240,7 @@ To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;
 **Example:**
 
 <pre>&#96;&#96;&#96;
-$ sudo npm install vsoagent-installer -g  
+sudo npm install vsoagent-installer -g  
 &#96;&#96;&#96;
 </pre>  
 
@@ -249,7 +249,7 @@ $ sudo npm install vsoagent-installer -g
 **Result:**
 
 ```
-$ sudo npm install vsoagent-installer -g
+sudo npm install vsoagent-installer -g
 ```
 
 <br/>
@@ -264,13 +264,13 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer`.  
+To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer -g`.  
 
 <br/>
 
 Within a Markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
-Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
+Set a language identifier for the code block to enable syntax highlighting for any of the supported languages in [highlightjs](https://github.com/highlightjs/highlight.js/tree/9.10.0/src/languages), version v9.10.0.
 
 <pre>
 ``` language
@@ -325,8 +325,8 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
-  
-  
+
+
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -358,11 +358,11 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Example:**
 
-<pre>
+```
 - Item 1
 - Item 2
 - Item 3
-</pre>
+```
 
 **Result:**
 
@@ -373,7 +373,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 ### Nested lists
 
 **Example:**  
-<pre>
+```
 1. First item.
    - Item 1
    - Item 2
@@ -382,18 +382,18 @@ Ordered lists start with a number followed by a period for each list item. Unord
    - Nested item 1
    - Nested item 2
    - Nested item 3 
-</pre>
+```
 
 **Result:**  
 
 1. First item.
-	- Item 1
-	- Item 2
-	- Item 3
+    - Item 1
+    - Item 2
+    - Item 3
 2. Second item.
-	- Nested item 1
-	- Nested item 2
-	- Nested item 3
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 <a id="link-work-items" />
@@ -414,23 +414,21 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Supported links for Welcome pages:**
 
-<ul>
-<li>Relative path: ```[text to display](/target.md)```  </li>
-<li>Absolute path in Git: ```[text to display](/folder/target.md)``` </li>
-<li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
-<li>URL: ```[text to display](http://address.com)```  </li>
-</ul>
+- Relative path: `[text to display](/target.md)` 
+- Absolute path in Git: `[text to display](/folder/target.md)`
+- Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Markdown widget:**
 
 <ul>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 **Supported links for Wiki:**  
 <ul>
-<li>Absolute path of Wiki pages: ```[text to display](/parent-page/child-page)``` </li>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>Absolute path of Wiki pages: <code>[text to display](/parent-page/child-page)</code> </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 > [!NOTE]  
@@ -440,9 +438,9 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Example:**  
 
-<pre>
-&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
-</pre>
+```
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+```
 
 **Result:**
 
@@ -476,9 +474,9 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 **Example:**
 
-<pre>
+```
 ###Link to a heading in the page
-</pre>
+```
 
 <br/>
 
@@ -521,7 +519,9 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
+
 ![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
+
 </pre>
 
 <br/>
@@ -573,7 +573,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 <br/>
 
 **Result:**  
- 
+
 <img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]
@@ -636,26 +636,29 @@ To escape emojis, enclose them using the \` character.
 </tr>
 <tr>
 <td>
-<p>To insert one of the following characters, prefix with a backslash:</p>
-<p style="margin-bottom:2px;"><code>\   backslash </code> </p>
-<p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
-<p style="margin-bottom:2px;"><code>_   underscore  </code></p>
-<p style="margin-bottom:2px;"><code>{}  curly braces  </code> </p>
-<p style="margin-bottom:2px;"><code>[]  square brackets </code></p>
-<p style="margin-bottom:2px;"><code>()  parentheses  </code></p>
-<p style="margin-bottom:2px;"><code>#   hash mark  </code> </p>
-<p style="margin-bottom:2px;"><code>+   plus sign  </code></p>
-<p style="margin-bottom:2px;"><code>-   minus sign (hyphen) </code></p>
-<p style="margin-bottom:2px;"><code>.   dot  </code> </p>
-<p style="margin-bottom:2px;"><code>!   exclamation mark  </code></p>
+<p>To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).</p>
+<p style="margin-bottom:2px;"><code>&#92;</code>, backslash </p>
+<p style="margin-bottom:2px;"><code>&#96;</code>, backtick</p>
+<p style="margin-bottom:2px;"><code>&#95;</code>, underscore</p>
+<p style="margin-bottom:2px;"><code>{}</code>, curly braces </p>
+<p style="margin-bottom:2px;"><code>[]</code>, square brackets</p>
+<p style="margin-bottom:2px;"><code>()</code>, parentheses</p>
+<p style="margin-bottom:2px;"><code>#</code>, hash mark </p>
+<p style="margin-bottom:2px;"><code>+</code>, plus sign</p>
+<p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
+<p style="margin-bottom:2px;"><code>.</code>, period </p>
+<p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
 </td>
-<td>Some examples on inserting special characters
-<p>Enter <code>\\</code> to get \\ </p>
-<p>Enter <code>\_</code> to get _ </p>
-<p>Enter <code>\#</code> to get \# </p>
-<p>Enter <code>\(</code> to get \( </p>
-<p>Enter <code>\.</code> to get \. </p>
-<p>Enter <code>\!</code> to get \! </p>
+<td>
+<p>Some examples on inserting special characters:</p>
+
+<p>Enter <code>&#92;&#92;</code> to get \ </p>
+<p>Enter <code>&#92;&#95;</code> to get &#95; </p>
+<p>Enter <code>&#92;# </code> to get # </p>
+<p>Enter <code>&#92;(</code> to get ( </p> 
+<p>Enter <code>&#92;.</code> to get . </p>
+<p>Enter <code>&#92;!</code> to get ! </p>
+
 </td>
 </tr>
 </tbody>
@@ -760,7 +763,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
 
 ### Example: Algebraic notation
 
@@ -772,12 +775,11 @@ And, the area of a triangle is:
 $$
 A_{triangle}=\frac{1}{2}({b}\cdot{h})
 $$
-
 ```
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+> ![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
 
 ### Example: Sums and Integrals
 
@@ -794,7 +796,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 
@@ -806,4 +808,4 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-  
+

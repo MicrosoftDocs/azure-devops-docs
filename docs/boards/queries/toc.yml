@@ -1,9 +1,9 @@
 - name: Queries
-  href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About managed queries
   href: example-queries.md
 - name: Ad hoc vs managed queries
-  href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Query quick reference
   href: query-index-quick-ref.md
 - name: Quickstarts
@@ -18,6 +18,10 @@
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
+- name: Concepts
+  items:
+  - name: High-performing queries
+    href: high-performing-queries.md 
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -32,10 +36,12 @@
   - name: Query by date or current sprint
     href: query-by-date-or-current-iteration.md  
   - name: Query based on tags
-    href: add-tags-to-work-items.md#query 
+    href: add-tags-to-work-items.md#query
   - name: Query history
     href: history-and-auditing.md  
     displayname: revision, rev, Contains Words
+  - name: Query by field comparison
+    href: query-field-value.md   
   - name: Query by a numeric field
     href: query-numeric.md  
   - name: Query by picklist value
@@ -52,6 +58,8 @@
     href: set-query-permissions.md
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
+  - name: Import work items from CSV 
+    href: import-work-items-from-csv.md 
 - name: Reference
   items:
   - name: "Query fields, operators & macros"

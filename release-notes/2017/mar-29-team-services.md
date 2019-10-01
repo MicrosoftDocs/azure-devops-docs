@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 03/29/2017
 ---
 
 # PR filtering by people and improved Azure resource group template parameter experience – Mar 29

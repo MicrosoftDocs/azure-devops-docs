@@ -26,7 +26,7 @@ A new [notification type](#subscribe-to-package-update-notifications) and better
 
 ### Work
 
-- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-work-in-the-area-paths-of-a-team-with-the-new-teamareas-macro)
+- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-macro)
 
 ### Build and Release
 
@@ -72,6 +72,8 @@ However, with this Update, the full phrase is returned and highlighted.
 > ![result including full search term](_img/133_02.png)
 
 ## Work
+
+<a id="query-macro" />
 
 ### Query work in the Area Paths of a Team with the new @TeamAreas macro
 

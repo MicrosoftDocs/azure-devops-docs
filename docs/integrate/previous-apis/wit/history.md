@@ -7,8 +7,8 @@ description: Work with work item discussion history programmatically using the R
 ms.assetid: 572C9AF7-91A1-41F9-80A5-905AD9C39464
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -27,7 +27,7 @@ While you work with your application, Microsoft Test Manager can record your act
   
 ## Explore your app  
   
-1. Install [the latest build of your application](../../pipelines/index.md). If it's a desktop application, install it on a machine that has Microsoft Test Manager. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have Microsoft Test Manager.  
+1. Install [the latest build of your application](../../pipelines/index.yml). If it's a desktop application, install it on a machine that has Microsoft Test Manager. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have Microsoft Test Manager.  
   
 1. [Connect Microsoft Test Manager to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) if you haven't already. The test plan stores default settings and test results.  
   

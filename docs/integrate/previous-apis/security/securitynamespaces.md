@@ -7,8 +7,8 @@ description: Security namespace reference fpr integrating with VSTS
 ms.assetid: c5b4c4b9-8d80-43a4-92c5-8ecdd335ac49
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 03/15/2017
 ---
 

@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -69,6 +69,6 @@ Learn how to run performance and load tests against your app.
 * [Create custom code &amp; plug-ins](/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
 * [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 * [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
-* [Manual and exploratory testing](../index.md)
-* [Continuous testing](../../pipelines/index.md)
+* [Manual and exploratory testing](../index.yml)
+* [Continuous testing](../../pipelines/index.yml)
 * [Unit testing](/visualstudio/test/developer-testing-scenarios)

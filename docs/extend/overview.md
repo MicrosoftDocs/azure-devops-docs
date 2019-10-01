@@ -7,8 +7,8 @@ ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 10/26/2017
 ---
 
@@ -29,10 +29,10 @@ where they can be kept privately for you and your team or shared with the millio
 </div>
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
-- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the marketplace. 
+- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
 - Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
 
-All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the marketplace. From the marketplace,
+All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the Marketplace. From the Marketplace,
 extensions can be installed directly by Azure DevOps Services users.
 
 

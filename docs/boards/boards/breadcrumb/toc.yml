@@ -5,7 +5,4 @@
   - name: Azure Boards 
     tocHref: /azure/devops/
     topicHref: /azure/devops/boards/index
-    items:
-    - name: Boards (Kanban)
-      tocHref: /azure/devops/
-      topicHref: /azure/devops/boards/boards/index
+

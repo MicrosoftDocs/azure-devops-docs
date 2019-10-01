@@ -7,8 +7,8 @@ description: Work with Git commits programmatically using the REST APIs for Team
 ms.assetid: DD768682-3DC8-4E00-85E8-699633A93EB2
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/23/2016
 ---
 

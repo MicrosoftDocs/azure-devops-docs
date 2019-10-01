@@ -4,8 +4,8 @@ description: Discover Azure Artifacts - the new home of Package Management in Az
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
@@ -30,6 +30,4 @@ The new update has introduced a new, top-level area that is the home of Package 
 
 ## Azure Artifacts billing model
 
-Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](sign-up-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](sign-up-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?
-
-
+Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](start-using-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](start-using-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?

@@ -12,29 +12,46 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/19/2018
+ms.date: 09/17/2019
 ---
 
 # Rename a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-A project rename updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. 
-Projects can be renamed multiple times and older names can be reused as well. 
+In this article, learn how to rename a project. When you rename a project, it updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. Projects can be renamed multiple times and older names can be reused. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
+> [!WARNING]
+> Renaming a project sends email notifications to everyone in the project, if there are less than 1,000 users. If there are greater than 1,000 users in your project, only PCAs receive email notifications.
 
-## Choose to rename a project
+## Rename a project
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2019"
 
-1. From the Projects page, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open the project that you want to rename.
+
+2. Select **Project settings** > **Overview**, and then enter a new name and select **Save**. 
+
+   ![Enter a new name, and then select Save to rename your project](_img/rename-project/rename-project-azure-devops.png)
+
+3. To confirm the rename, enter the new project name, check the box next to, "I understand the consequences of renaming this project," and then select **Save**.
+
+   ![Enter new project name, check the box, and then save](_img/rename-project/rename-project-confirm.png)
+
+	Your project is renamed.
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+1. Sign in to your organization.
+2. From the Projects page, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/choose-rename-menu-option.png)
 
-1. Edit the name. 
+3. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/rename-project-dialog.png)
@@ -45,11 +62,12 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker range="tfs-2015"
 
-1. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
+1. Sign in to your organization.
+2. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
 
 	![Enter a new project name](_img/rename-project/collection-rename.png)
 
-1. Edit the name. 
+3. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/rename-project-dialog.png)
@@ -197,6 +215,7 @@ The reporting and SharePoint server administrator can manually run these jobs to
   Use of <em>@project</em> also continues to work after a project rename and also don't need to be updated.
 
 - Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
+
   1. Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
      so that Excel reports contain the correct data.
      If the new project name is not synced to the warehouse,

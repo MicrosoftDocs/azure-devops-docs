@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -123,7 +123,7 @@ see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-u
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 
-**A:** Yes, see [Automate system tests](../../pipelines/index.md).
+**A:** Yes, see [Automate system tests](../../pipelines/index.yml).
   
 ## See Also  
 

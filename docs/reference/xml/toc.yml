@@ -22,6 +22,8 @@
       items:
         - name: Add or modify a work item type
           href: ../add-modify-wit.md
+        - name: Customize the work item form
+          href: ../customize-wit-form.md
         - name: Design the work item form
           href: design-work-item-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Add the Attachments control

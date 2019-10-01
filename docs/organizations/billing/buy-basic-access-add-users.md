@@ -10,19 +10,19 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 09/24/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Buy Basic access for users
+# Quickstart: Buy Basic access for users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/en-us/services/devops/boards/) and [Repos](https://azure.microsoft.com/en-us/services/devops/repos/).
+In this quickstart, learn how to pay for more users who need access to [Boards](https://azure.microsoft.com/services/devops/boards/) and [Repos](https://azure.microsoft.com/services/devops/repos/).
 
 Visual Studio subscribers get Basic access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
@@ -71,6 +71,12 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ::: moniker-end
 
+> [!NOTE]
+> **Why can't I increase the number of paid users?**
+> We’re in the process of transitioning to assignment-based billing and your organization is set up for it already. Your charges will increase or decrease automatically as you assign and unassign Basic access to your users.
+
+>![Assignment-based billing is already be set up for your organization](_img/buy-more-basic-access/assignment-based-billing-enabled.png)
+
 ## Decrease amount of paid users
 
 As your team contracts, you can decrease the number of paid users in your organization.
@@ -97,9 +103,3 @@ As your team contracts, you can decrease the number of paid users in your organi
 > [!div class="nextstepaction"]
 > [Buy CI/CD](buy-more-build-vs.md#prerequisites)
 
-## Related articles
-
-* [Add backup billing managers](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

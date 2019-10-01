@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Nov 8
 description: VSTS release notes for November 08 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 16f98008-1ba7-4b07-ae6b-07490f37822b
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -35,4 +35,3 @@ That’s it for today’s update. We’ll have more to talk about next week so d
 Thanks,
 
 Aaron Bjork
-

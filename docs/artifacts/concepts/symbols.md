@@ -6,8 +6,8 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 10/19/2017
 monikerRange: '>= tfs-2017'
 ---
@@ -44,7 +44,7 @@ If you publish your application's executables via NuGet packages, there are two 
 If you're publishing packages to Azure Artifacts, there's no need to use NuGet symbols packages. Instead, configure the [Index Sources and Publish Symbols](../../pipelines/tasks/build/index-sources-publish-symbols.md) task in Team Build [using the walkthrough](../../pipelines/artifacts/symbols.md).
 
 ### Sharing public symbols on SymbolSource.org
-If you're publishing your packages to NuGet.org, you can publish corresponding [symbols packages](/nuget/create-packages/symbol-packages) to [SymbolSource.org](http://www.symbolsource.org/). If you're using the [NuGet](../../pipelines/tasks/package/nuget.md) or [.NET Core](../../pipelines/tasks/build/dotnet-core.md) tasks in Team Build, check **Create symbols package** to create a symbol package when you pack your executables.
+If you're publishing your packages to NuGet.org, you can publish corresponding [symbols packages](/nuget/create-packages/symbol-packages) to [SymbolSource.org](http://www.symbolsource.org/). If you're using the [NuGet](../../pipelines/tasks/package/nuget.md) or [.NET Core](../../pipelines/tasks/build/dotnet-core-cli.md) tasks in Team Build, check **Create symbols package** to create a symbol package when you pack your executables.
 
 ## Learn more
 To learn more about symbols, see [the Windows documentation](/windows-hardware/drivers/debugger/introduction-to-symbols).

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 2/14/2019
@@ -34,11 +35,41 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 
 
 <a id="quick-start-schedule">   </a>
+
 ## Quick start guide to scheduling sprints
 
 To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Open Work, Sprints, for a team](_img/add-tasks/open-sprint-backlog-s155-co.png)
+
+1. To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+2. Choose **Set sprint dates**.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Boards>Sprints>set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
+
+3. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 
+
+4. Choose **Save and close**. You'll see the date listed. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -65,7 +96,6 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	> ![Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
@@ -112,6 +142,7 @@ Of course, if you have several teams, more complex release and sprint cadences t
 
 
 <a id="schedule">   </a>
+
 ## Add and schedule new sprints for several teams and release cadences 
  
 > [!NOTE]    
@@ -132,6 +163,8 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-agile.png)
 
+
+
 ::: moniker-end
 
 
@@ -144,10 +177,11 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md) or [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Related articles 
 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's[default area path and iteration path.  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path.  
 

@@ -7,8 +7,8 @@ description: Work with teams programmatically using the REST APIs for Team Found
 ms.assetid: 5DF98D4C-7E59-4C44-B495-D664AC2AC71B
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

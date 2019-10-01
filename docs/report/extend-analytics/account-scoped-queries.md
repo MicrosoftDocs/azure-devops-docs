@@ -1,7 +1,7 @@
 ---
 title: Organization and project scope queries
 titleSuffix: Azure DevOps 
-description: How to guide to query the OData Analytics service for an organization or at the project-level in Azure DevOps
+description: How to guide to query OData Analytics for an organization or at the project-level in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: kokosins
@@ -17,7 +17,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Using the Analytics Service for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
+Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 
 Project-scope queries help answer questions about a single project whereas organization-scope queries allow you to answer questions which cross project boundaries. Organization scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
 
@@ -28,18 +28,22 @@ Project-scope queries help answer questions about a single project whereas organ
 ## Prerequisites
 
 ::: moniker range="azure-devops"
+
 - You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- Install the [Analytics Marketplace extension](../dashboards/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
+
+- [Enable or install Analytics](../dashboards/analytics-extension.md)].  
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
+
 ::: moniker-end
 
 <a id="project-scope" />
@@ -181,7 +185,7 @@ Without the additional filter, the request will fail if the parent of any work i
 
 ## Project-level security restrictions
 
-The Analytics Service has a few additional restrictions on query syntax related to project level security.
+Analytics has a few additional restrictions on query syntax related to project level security.
 
 The `any` or `all` filters apply to the base Entity on an `$expand`.  For filters based on a Project we explicitly ignore the filter when using an `$expand`:
 

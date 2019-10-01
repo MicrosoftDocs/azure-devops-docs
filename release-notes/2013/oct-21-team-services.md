@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Oct 21
 description: VSTS release notes for October 21 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 79a305c6-4033-453a-89e8-f957f0f19ad1
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -33,5 +33,3 @@ That’s it for sprint 55. As always let us know how we're doing on [User Voice]
 Thanks,
 
 Aaron Bjork
-
-

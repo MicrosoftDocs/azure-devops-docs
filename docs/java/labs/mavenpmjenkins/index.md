@@ -26,9 +26,11 @@ In this exercise, you are going to clone a GitHub repo into Azure DevOps, if you
 
 This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
-> 
-> **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
+> [!NOTE]
+> It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
+>
+> [!NOTE]
+> Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
 
 ## Configure Package Management
 
@@ -53,9 +55,10 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
     and press Enter 3 times to use the default id_rsa location as well as an empty pass phrase.
 
-   ![Create an SSH key](../_img/mavenpmjenkins/generate-key.png)
+    ![Create an SSH key](../_img/mavenpmjenkins/generate-key.png)
 
-   > **Note**: the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
+    > [!NOTE]
+    > the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
 
 1. Enter the following command to print out the public key in the terminal:
 
@@ -77,7 +80,8 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
     ![Add a new public key](../_img/mavenpmjenkins/add-ssh-key-to-vsts.png)
 
-   > **Note**: Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
+    > [!NOTE]
+    > Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
 
 ## Configure the Jenkins Maven installation
 
@@ -103,9 +107,9 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
     ![Navigate to MyShuttleCalc repo](../_img/mavenpmjenkins/navigate-to-repo.png)
 
-2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH url into the clipboard.
+2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH URL into the clipboard. **Do not include the `git@` portion of the URL.**
 
-    ![Copy the SSH url](../_img/mavenpmjenkins/ssh-url.png)
+    ![Copy the SSH URL](../_img/mavenpmjenkins/ssh-URL.png)
 
 3. Go back to Jenkins in your browser.
 
@@ -113,7 +117,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 5. Enter `MyShuttleCalc` for the item name and click on "Maven Project". Click OK.
 
-6. In the Source Code Management section, select Git. Paste in the SSH url to the MyShuttleCalc repo.
+6. In the Source Code Management section, select Git. If you do not see an option for Git, you may be using an old version of Jenkins. Paste the SSH URL into the MyShuttleCalc repo.
 
 7. Click the "Add" button in the Credentials section and select "Jenkins".
 
@@ -193,7 +197,7 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     | Name | Value | Notes |
     | --------------- | ---------------------------- | ----------------------------------------------------------- |
     | Connection Name | `Azure VM Jenkins` | The name of this connection |
-    | Server URL | `http://10.0.0.4:8080`  | The internal IP address of the Azure VM on port 8080 (the Jenkins port)
+    | Server URL | `http://MyJenkinsServer:8080`  | The public URL of the Azure VM on port 8080 (the Jenkins port)
     | Username | The username you created in Jenkins | |
     | Password | The password you created in Jenkins | |
 

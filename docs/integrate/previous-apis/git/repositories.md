@@ -7,8 +7,8 @@ description: Work with Git repositories programmatically using the REST APIs for
 ms.assetid: BCB55CB9-4E2B-4D8B-ABC8-A503254F2FE9
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

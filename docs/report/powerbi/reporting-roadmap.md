@@ -10,38 +10,38 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 04/05/2019
+ms.date: 05/30/2019
 ---
 
 # Reporting roadmap for Azure DevOps 
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-The future of reporting for Azure DevOps and Azure DevOps Server is the Analytics Service. 
+The future of reporting for Azure DevOps and Azure DevOps Server is Analytics. 
 
 > [!NOTE]  
 > If you are looking for information about the Azure Analysis Services, see 
 [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
 
-## The Analytics service
+## Analytics
 
 ::: moniker range="azure-devops"
 
-The Analytics Service in available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](index.md) and access to the [OData feed](../extend-analytics/index.md) of the Analytics Service remain in Preview. 
+Analytics is available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](index.md) and access to the [OData feed](../extend-analytics/index.md) of Analytics remain in Preview. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-The Analytics Service is in Public Preview for Azure DevOps Server 2019. You gain access to it by [installing the Analytics Marketplace extension](../dashboards/analytics-extension.md). Installing it provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
+Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](index.md), and access to the [OData feed](../extend-analytics/index.md).
 
-The Analytics Service will become generally available in the next major release of Azure DevOps Server. While in Public Preview, the Analytics extension is free.
+Analytics will become generally available in the next major release of Azure DevOps Server. While in Public Preview, Analytics is free.
 
-Team Foundation Server (TFS) 2018 and earlier versions do not support the Analytics extension. 
+Team Foundation Server (TFS) 2018 and earlier versions do not support Analytics. 
 
 ::: moniker-end
 
-To learn more, see [What is the Analytics Service](what-is-analytics.md). It currently contains partial data. We are working to add all reportable data to the Analytics Service. See [Data Available in Analytics](./data-available-in-analytics.md) for more information.
+To learn more, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We are working to add all reportable data to Analytics. See [Data Available in Analytics](./data-available-in-analytics.md) for more information.
 
 
 ::: moniker range="tfs-2018 || azure-devops-2019"  

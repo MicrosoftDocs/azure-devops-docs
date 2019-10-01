@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -142,10 +142,11 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
 
-   > **Note**: If you are running UI tests such as CodeUI or Selenium
-   on physical browsers such as IE, Firefox, or Chrome, the agent
-   on the machines must be running in interactive mode and not
-   as a service. [More details](#faq-agentmode). 
+   > [!NOTE]
+   > If you are running UI tests such as CodeUI or Selenium
+   > on physical browsers such as IE, Firefox, or Chrome, the agent
+   > on the machines must be running in interactive mode and not
+   > as a service. [More details](#faq-agentmode). 
 
 8. In the **Pipeline** page of the release pipeline, verify
    that the build pipeline containing the test binaries is linked
@@ -406,6 +407,6 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Continuous testing scenarios and capabilities](index.md)
+* [Continuous testing scenarios and capabilities](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

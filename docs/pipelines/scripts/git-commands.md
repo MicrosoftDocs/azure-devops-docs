@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: phwilson
+author: chasewilson
 ms.date: 03/22/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -29,6 +29,13 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 <a name="enable"></a>
 ## Enable scripts to run Git commands
 
+> [!NOTE]
+> Before you begin, be sure your account's default identity is set with:
+> ```
+> git config --global user.email "you@example.com"
+> git config --global user.name "Your Name"
+> ```
+
 ### Grant version control permissions to the build service
 
 Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
@@ -41,13 +48,25 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 </ul>
 
-<p>![manage project](_img/manage-project.png)</p>
+<p>
+
+![manage project](_img/manage-project.png)
+
+</p>
 
 <p>If you see this page, select the repo, and then click the link:</p>
 
-<p>![control panel top to project](_img/control-panel-top-to-team-project.png)</p>
+<p>
 
-<p>![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)</p>
+![control panel top to project](_img/control-panel-top-to-team-project.png)
+
+</p>
+
+<p>
+
+![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)
+
+</p>
 
 </div>
 

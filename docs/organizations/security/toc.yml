@@ -6,7 +6,7 @@
   items:
   - name: View permissions 
     href: view-permissions.md
-  - name: Look up the organization owner or a project administrator
+  - name: Look up the organization owner or a Project Administrator
     href: lookup-organization-owner-admin.md
   - name: Add users to a project or team 
     href: add-users-team-project.md
@@ -84,6 +84,8 @@
     href: ../accounts/faq-add-delete-users.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add team members
     href: ../accounts/faq-add-team-members.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Authenticate & invite with GitHub
+    href: faq-github-authentication.md
   - name: Access with Azure AD
     href: ../accounts/faq-azure-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Change app access
@@ -120,6 +122,8 @@
       href: data-location.md 
     - name: Credential storage
       href: credential-storage.md 
+    - name: Add IP addresses and URLs to allow list
+      href: allow-list-ip-url.md
       displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: TFSSecurity command
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

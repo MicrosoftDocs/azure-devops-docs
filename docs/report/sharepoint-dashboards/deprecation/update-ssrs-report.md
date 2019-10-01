@@ -10,7 +10,6 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Update SSRS Report after SharePoint is disabled
@@ -48,7 +47,8 @@ Follow these steps to replace the URL:
 5. Replace **PROJECTNAME** with the name of your team project
 6. Replace **REPORTNAME** with the name of your report.
 
-    **NOTE**: You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
+    > [!NOTE]
+    > You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
 
 7. Save your changes to the PageViewer web part.
 

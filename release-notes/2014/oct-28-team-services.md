@@ -3,10 +3,10 @@ title: European Datacenter & REST 1.0 - Oct 28
 description: VSTS release notes for October 28 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 7e1aadad-f21b-4243-9083-9b6c4f515eec
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -14,7 +14,7 @@ author: yukom
 
 ## European Datacenter
 
-By popular demand, with today’s update, you can now create VS Online accounts in the Azure “West Europe” region, based in the Netherlands. You can get started by going to [http://visualstudio.com](http://visualstudio.com/) and creating a new account. The account creation page will auto detect the data center that’s nearest to you, or you can click the “change options” link to override the choice.
+By popular demand, with today’s update, you can now create VS Online accounts in the Azure “West Europe” region, based in the Netherlands. You can get started by going to [https://visualstudio.com](https://visualstudio.com/) and creating a new account. The account creation page will auto detect the data center that’s nearest to you, or you can click the “change options” link to override the choice.
 
 ![Creating a West Europe account](_img/10_28_01.png)
 

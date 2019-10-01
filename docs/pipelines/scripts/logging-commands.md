@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.manager: jillfra
-ms.author: alewis
-ms.date: 04/10/2019
+ms.author: phwilson
+ms.date: 09/24/2019
 ---
 
 # Logging commands
@@ -19,7 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 The general format for a logging command is:
 
-    ##vso[area.action property1=value;property2=value;...]message
+```
+##vso[area.action property1=value;property2=value;...]message
+```
 
 To invoke a logging command, echo the command via standard output.
 
@@ -37,6 +39,8 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 ```
 
 ---
+
+File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 ## Task commands
 
@@ -151,11 +155,11 @@ Finish the timeline record for the current task, set task result and current ope
 #### Properties
 
 * `result` = 
- - `Succeeded` The task succeeded.
- - `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
- - `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
- - `Cancelled` Cancels the build.
- - `Skipped` Logs the task outcome as skipped.
+  - `Succeeded` The task succeeded.
+  - `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
+  - `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
+  - `Cancelled` Cancels the build.
+  - `Skipped` Logs the task outcome as skipped.
    
 #### Example
 
@@ -346,7 +350,7 @@ Upload user interested file as additional log information to the current timelin
 ##vso[task.uploadfile]c:\additionalfile.log
 ```
 
-### PrependPath: Upload a file that can be downloaded with task logs
+### PrependPath: Prepend a path to the  PATH environment variable
 
 `##vso[task.prependpath]local file path`
 

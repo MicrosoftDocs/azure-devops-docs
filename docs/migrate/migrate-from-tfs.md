@@ -78,7 +78,8 @@ various approaches against your motivations for moving into Azure DevOps Service
 is the right strategy.
 
 
-## Related notes 
+## Related articles
+
 - [About Azure DevOps Services and Azure DevOps Server](../user-guide/about-azure-devops-services-tfs.md)  
 - [Pricing, Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Pricing, Azure DevOps Server](https://visualstudio.microsoft.com/team-services/tfs-pricing/)

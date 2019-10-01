@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 09/18/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -35,9 +35,14 @@ To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
-You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
-## Manage users
+## Manage users in Azure DevOps
+From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
+
+#### [Browser](#tab/browser)
+ 
+### Manage users
 
 The Users view shows key information per user in a table. In this view, you can do the following:
 
@@ -47,8 +52,6 @@ The Users view shows key information per user in a table. In this view, you can 
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -74,9 +77,73 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
-### How is *access* different from *permissions*?
+#### How is *access* different from *permissions*?
 
 Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
+
+<a id="update-user" /> 
+
+### Update a user
+
+You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+```CLI
+az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
+                      --user [--org]
+```
+
+#### Parameters
+
+- **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
+- **user**: The email address or ID of the user.  
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+
+#### Example
+
+The following command updates the license type for email address contoso@contoso.com from **Basic** to **Stakeholder** and shows the result in table format.
+
+```CLI
+az devops user update --license-type stakeholder --user contoso@contoso.com --output table
+
+ID                                    Display Name         Email                License Type    Access Level    Status
+------------------------------------  -------------------  -------------------  --------------  --------------  --------
+
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     pending
+```
+
+<a id="show-users" /> 
+
+### Show users
+
+You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
+
+```CLI
+az devops user show --user [--org]
+```
+
+#### Parameters
+
+- **user**: The email address or ID of the user.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- 
+#### Example
+
+The following command returns user details for the email address contoso@contoso.com in table format.
+
+```CLI
+az devops user show --user contoso@contoso.com --output table
+
+ID                                    Display Name         Email                License Type    Access Level    Status
+------------------------------------  -------------------  -------------------  --------------  --------------  --------
+
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
+```
 
 ## Related articles
 
@@ -85,3 +152,5 @@ Access levels control which features are available to users. Permissions control
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
+* [Export a list of users and their access levels](../security/export-users-audit-log.md)
+

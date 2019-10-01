@@ -84,6 +84,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 ::: moniker range=">= azure-devops-2019"
 
 ## Azure Boards
+
 You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
 
 ::: moniker-end
@@ -91,6 +92,7 @@ You can plan and track work from the web portal **Boards** hub, and using Eclips
 ::: moniker range="azure-devops"
 
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
@@ -258,7 +260,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= azure-devops-2019"
 
-## Test Plans
+## Azure Test Plans
 
 ::: moniker-end
 
@@ -270,7 +272,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= tfs-2015"
 
-You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
+You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -281,7 +283,19 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 
 ## Azure Artifacts
 
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops" 
+
+Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019" 
+
+Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
 
 ::: moniker-end
 
@@ -292,9 +306,12 @@ You can manage feeds from the web portal, **Artifacts** or **Build and release >
 
 You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](_shared/package-feeds.md)]
 
 ::: moniker-end

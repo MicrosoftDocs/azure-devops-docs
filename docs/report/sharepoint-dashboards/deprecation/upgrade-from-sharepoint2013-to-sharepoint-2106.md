@@ -10,7 +10,6 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016

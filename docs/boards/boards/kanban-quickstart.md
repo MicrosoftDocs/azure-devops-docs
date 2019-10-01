@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/22/2019
 ---
 
 # Start using your Kanban board
@@ -52,19 +52,31 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 ## Add work items 
 
-1. To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
-
 ::: moniker range=">= azure-devops-2019"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Add a new item on Kanban board, new nav](_img/quickstart/add-new-item-agile-s155.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
 > [!div class="mx-imgBorder"]  
 > ![Add a new item on Kanban board, new nav](_img/quickstart/add-new-item-agile.png) 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 The system automatically saves the work item with the title you entered. You can add as many work items you want by using this method. 
 
 ::: moniker-end
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -102,17 +114,35 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+
 
 ## Invite others to work on your Kanban board 
 
-All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project. 
+All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project.
 
-<img src="_img/kanban-basics-url.png" alt="Browser URL for the Kanban board" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Browser URL for the Kanban board](_img/quickstart/kanban-board-url-s155.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Browser URL for the Kanban board](_img/quickstart/kanban-board-url.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+![Browser URL for the Kanban board](_img/kanban-basics-url.png)
+
+::: moniker-end
 
 To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md).   
 
-::: moniker-end
+
 
 ## Try this next 
 
@@ -121,6 +151,12 @@ To get the full power of the Kanban board, configure it to map the flow of work 
 > [!div class="nextstepaction"]
 > [Kanban basics](kanban-basics.md)  
 
+## Related articles
+
+- [Kanban key concepts](kanban-key-concepts.md)
+- [Kanban best practices](best-practices-kanban.md)
+- [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
 
 
 

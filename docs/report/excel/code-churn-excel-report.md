@@ -84,15 +84,8 @@ With the Code Churn report, you can analyze how source files are changing over t
 |Code churn for a product area|Change the filter for **Area** (default=All)|  
 |Code churn for the most recent six, eight, or more weeks|In the Columns PivotTable Field List, replace **@@Last 4 weeks@@** with a different **Set**|  
   
- For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
-  
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
-  
-## Related notes  
- [Excel reports](excel-reports.md)
+
+## Related articles
+
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

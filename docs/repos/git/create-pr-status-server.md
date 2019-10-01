@@ -6,8 +6,8 @@ ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -212,7 +212,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-   [Authenticating with personal access tokens](../../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -339,7 +339,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
 
-0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

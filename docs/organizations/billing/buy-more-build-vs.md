@@ -14,11 +14,11 @@ ms.date: 06/07/2019
 monikerRange: 'azure-devops'
 ---
 
-# Buy CI/CD for Azure DevOps
+# Quickstart: Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this quickstart, you learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:
@@ -26,7 +26,7 @@ We offer a *free tier* for each. The *free tier* includes:
 - Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
 - One self-hosted CI/CD concurrent job
 
-To estimate costs for Azure DevOps, view the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To estimate costs for Azure DevOps, view the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Microsoft-hosted CI/CD
 
@@ -102,7 +102,7 @@ To view your current CI/CD capacity details and consumption, complete the follow
   
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
- go to your organization toolbar, and then go to **Parallel jobs** under **Pipelines**.
+   go to your organization toolbar, and then go to **Parallel jobs** under **Pipelines**.
 
    ![Pipelines, Parallel jobs](_img/_shared/pipelines-parallel-jobs.png)
 
@@ -121,9 +121,3 @@ The hosted XAML build controller is no longer supported.
 > [!div class="nextstepaction"]
 > [Try Azure Test Plans for free](try-additional-features-vs.md)
 
-## Related articles
-
-* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
-* [Azure DevOps Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
-* [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)
-* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)

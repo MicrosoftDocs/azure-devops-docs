@@ -1,0 +1,137 @@
+### YamlMime:Landing
+
+title: Get started documentation
+summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
+
+metadata:
+  title: Azure DevOps Get Started Documentation
+  description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-new-user
+  ms.topic: landing-page 
+  author: kaelli 
+  ms.author: KathrynEE 
+  ms.date: 09/30/2019 
+  manager: jillfra
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Azure DevOps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure DevOps?
+            url: ../user-guide/what-is-azure-devops.md
+          - text: What is Azure Boards?
+            url: ../boards/get-started/what-is-azure-boards.md
+          - text: What is Azure Repos?
+            url: ../repos/get-started/what-is-repos.md
+          - text: What is Azure Pipelines?
+            url: ../pipelines/get-started/what-is-azure-pipelines.md
+          - text: Supported features and services
+            url: ../organizations/security/get-started-stakeholder.md
+  - title: Sign up for free
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Azure DevOps (includes all services)
+            url: ../user-guide/sign-up-invite-teammates.md
+          - text: Azure Boards 
+            url: ../boards/get-started/sign-up-invite-teammates.md
+          - text: Azure Repos 
+            url: ../repos/get-started/sign-up-invite-teammates.md
+          - text: Azure Pipelines 
+            url: ../pipelines/get-started/pipelines-sign-up.md
+      - linkListType: how-to-guide
+        links:
+          - text: Connect to a project
+            url: ../organizations/projects/connect-to-projects.md
+  - title: Manage your project
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Manage your project
+            url: ../user-guide/project-admin-tutorial.md
+          - text: Add users to a team or project
+            url: ../organizations/security/add-users-team-project.md
+          - text: Add administrators
+            url: ../organizations/security/set-project-collection-level-permissions.md
+      - linkListType: concept
+        links:
+          - text: Default permissions and access
+            url: ../organizations/security/permissions-access.md
+          - text: Permission lookup guide
+            url: ../organizations/security/permissions-lookup-guide.md
+  - title: Plan and track work
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Plan and track work
+            url: ../boards/get-started/plan-track-work.md
+          - text: Create your backlog
+            url: ../boards/backlogs/create-your-backlog.md
+          - text: Get started as a Stakeholder
+            url: ../organizations/security/get-started-stakeholder.md
+  - title: Collaborate on code
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Clone a repository
+            url: ../repos/git/clone.md
+          - text: Create a repository
+            url: ../repos/git/create-new-repo.md
+          - text: Authenticate with SSH
+            url: ../repos/git/use-ssh-keys-to-authenticate.md
+  - title: Build and deploy your apps
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create your first pipeline
+            url: ../pipelines/get-started/pipelines-get-started.md
+      - linkListType: reference
+        links:
+          - text: YAML Schema
+            url: ../pipelines/yaml-schema.md
+  - title: Set your preferences
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Change profile preferences
+            url: ../organizations/settings/set-your-preferences.md
+          - text: Manage your notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Preview new features
+            url: ../project/navigation/preview-features.md
+          - text: Set favorites
+            url: ../project/navigation/set-favorites.md
+  - title: Navigate
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Web portal navigation
+            url: ../project/navigation/index.md
+          - text: Team Explorer navigation
+            url: ../user-guide/work-team-explorer.md
+  - title: Migrate & import
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Migrate from TFS to Azure DevOps Services
+            url: ../migrate/migration-overview.md
+          - text: Migration options
+            url: ../migrate/migrate-from-tfs.md
+          - text: Import
+            url: ../migrate/migration-import.md
+
+
+
+
+
+
+
+

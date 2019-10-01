@@ -7,8 +7,8 @@ description: Get Agent queues using the REST APIs for Team Foundation Server.
 ms.assetid: 61C7F854-3CF5-405E-A74C-1DF9101E38E9
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 # Agent queues

@@ -3,11 +3,11 @@ title: Azure DevOps - Data Protection
 description: Learn how Microsoft protects your projects and data in Azure DevOps. Microsoft is committed to making sure that your projects stay safe and secure, without exception. 
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
 ms.manager: jillfra
-ms.date: 03/13/2019
+ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -85,11 +85,11 @@ To protect data in the case of hardware or service failures, Microsoft Azure sto
 
 To protect against accidental deletion of data, either by our customers or by our operation team, we also take point-in-time backups of both the Azure blob and the SQL databases. Our approach to these backups varies based on the storage type. For blobs, we have a separate copy of all blobs and regularly append new changes to each storage account. Since this data is immutable, we don't need to rewrite any existing storage as part of our backup procedures. SQL Azure, on the other hand, handles backups as a standard part of their service which we rely on. In both cases, these backups are also replicated in a paired region to ensure we can recover from a regional outage.
 
-In addition, we perform a "soft delete" for organization deletion operations. This lets us recover entire organizations for up to 30 days after deletion.
+In addition, we perform a "soft delete" for organization deletion operations. This lets us recover entire organizations for up to 28 days after deletion.
 
 ### Practice is critical
 
-Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. We have the capability of restoring your organization’s data to any point in time over the last 30 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
+Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. As mentioned, we have the capability of restoring your organization’s data to any point in time over the last 28 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
 
 ## Service availability
 
@@ -101,7 +101,7 @@ In some cases, a malicious distributed denial-of-service (DDoS) attack can affec
 
 ### Live site response
 
-While we strive for the service to be available 100% of the time, sometimes things happen that prevent us from meeting that goal. If this happens, we provide transparency to our users throughout the incident. Our 24x7 operations team is always on hand to rapidly identify the issue and to engage the necessary development team resources. Those resources then address the problem. They also aim to update the service status page and blog within minutes of detecting an issue that affects the service. Once the team has addressed an issue, our "live-site incident" process continues as we identify the root cause of the issue and track the necessary changes to ensure we prevent similar issues in the future.
+While we strive for the service to be available 100% of the time, sometimes things happen that prevent us from meeting that goal. If this happens, we provide transparency to our users throughout the incident. Our 24x7 operations team is always on hand to rapidly identify the issue and to engage the necessary development team resources. Those resources then address the problem. They also aim to update the service status page within minutes of detecting an issue that affects the service. Once the team has addressed an issue, our "live-site incident" process continues as we identify the root cause of the issue and track the necessary changes to ensure we prevent similar issues in the future.
 
 Azure DevOps live-site management processes are crafted to ensure a deep focus on service health and customer experience. Our processes minimize our time to detect, respond to, and mitigate impacting issues. Ownership for Live site is shared across all engineering disciplines, so there are continual improvements evolving out of direct experience. This means that monitoring, diagnostics, resiliency, and quality assurance processes are improved over time. Live-site management in Azure DevOps is broken into three distinct tracks, shown as follows:
 
@@ -192,7 +192,7 @@ To learn more about data location, see [Azure DevOps data location](data-locatio
 
 ### Law enforcement access
 
-In some cases, third parties such as law enforcement entities may approach us to obtain access to customer data stored within Azure DevOps. By policy, we will attempt to redirect the requests to the organization owner for resolution. When we are compelled by court order to disclose customer data to a third party, we will make a reasonable effort to notify the organization owner in advance unless we are legally prohibited from doing so.
+In some cases, third parties such as law enforcement entities may approach us to obtain access to customer data stored within Azure DevOps. By policy, we will attempt to redirect the requests to the organization Owner for resolution. When we are compelled by court order to disclose customer data to a third party, we will make a reasonable effort to notify the organization Owner in advance unless we are legally prohibited from doing so.
 
 Some customers require that their data be stored in a particular geographic location to ensure a specific legal jurisdiction for any law enforcement activities. At this time, Azure DevOps can host organizations in 8 geographies across the world: United States, Canada, Europe, UK, India, Australia, Asia Pacific, and Brazil. All customer data such as source code, work items, test results as well as the geo-redundant mirrors and offsite backups are maintained within the selected geography.
 

@@ -11,7 +11,12 @@ ms.author: sdanie
 author: mikedouglasdev
 monikerRange: '>= tfs-2015'
 ---
+
+
 # Learn how to add continuous security validation to your CI/CD pipeline
+
+[!INCLUDE [version-azure-devops](../_shared/version-ts-tfs-2015-2016.md)]
+
 
 Are you planning Azure DevOps continuous integration and deployment pipelines? You probably have a few questions, such as:
 * How do you ensure your application is safe?
@@ -29,7 +34,7 @@ Continuous security validation should be added at each step from development thr
 
 ## IDE / Pull Request
 
-Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://visualstudio.microsoft.com/docs/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
+Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://docs.microsoft.com/azure/devops/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
 
 ## CI (Continuous Integration)
 

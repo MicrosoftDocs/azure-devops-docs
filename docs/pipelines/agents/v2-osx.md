@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 03/19/2019
+ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
@@ -45,26 +47,69 @@ After you get a feel for how agents work, or if you want to automate setting up 
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops"
 
-### Azure Pipelines and TFS 2017 and newer
+### Azure Pipelines
 
-<ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
-</li>
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<li>Click **Download agent**.</li>
+1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-<li>On the **Get agent** dialog box, click **macOS**.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-<li>Click the **Download** button.
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-<li>Follow the instructions on the page.</li>
+1. On the **Get the agent** dialog box, click **macOS**.
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
-</ol>
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+
+::: moniker-end
+
+::: moniker range=azure-devops-2019"
+
+### Azure DevOps Server 2019
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+
+1. Click **Download agent**.
+
+1. On the **Get agent** dialog box, click **macOS**.
+
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+
+1. Click **Download agent**.
+
+1. On the **Get agent** dialog box, click **macOS**.
+
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -72,14 +117,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
+1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
-0. Follow the instructions on that page to download the agent.
+1. Follow the instructions on that page to download the agent.
 
-0. Configure the agent.
- ```
-./config.sh
- ```
+1. Configure the agent.
+
+   ```
+   ./config.sh
+   ```
 
 ::: moniker-end
 
@@ -113,12 +159,13 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
 To run the agent interactively:
 
-0. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
+1. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
 
-0. Run the agent.
- ```bash
-./run.sh
- ```
+1. Run the agent.
+
+   ```bash
+   ./run.sh
+   ```
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
@@ -241,25 +288,18 @@ Command:
 
 Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/HT201476).
 
+> [!NOTE]
+> For more information, see the [Terminally Geeky: use automatic login more securely](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) blog. The .plist file mentioned in that blog may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/5779922/make-os-x-load-your-desktop-before-you-log-in).
+
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
 When you configure the service, it takes a snapshot of some useful environment variables for your current logon user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
 
-> [!div class="vscom-steps-container" ]
-> 0. &nbsp;
->  ```bash
-> ./env.sh 
->  ```
->
-> 0. &nbsp;
-> ```bash
-> ./svc.sh stop
->  ```
->
-> 0. &nbsp;
->  ```bash
-> ./svc.sh start
->  ```
+```bash
+./env.sh
+./svc.sh stop
+./svc.sh start
+```
 
 The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
 
@@ -267,15 +307,13 @@ The snapshot of the environment variables is stored in `.env` file under agent r
 
 You can also run your own instructions and commands to run when the service starts.  For example, you could set up the environment or call scripts.
 
-0. Edit `runsvc.sh`.
+1. Edit `runsvc.sh`.
 
-0. Replace the following line with your instructions:
+1. Replace the following line with your instructions:
 
-```bash
-
-# insert anything to setup env when running as a service
-
-```
+   ```bash
+   # insert anything to setup env when running as a service
+   ```
 
 <h3 id="service-files">Service Files</h3>
 
@@ -326,7 +364,9 @@ You can use the template described above as to facilitate generating other kinds
 [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -338,15 +378,21 @@ You can use the template described above as to facilitate generating other kinds
 [Run the agent behind a web proxy](proxy.md)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [include](../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

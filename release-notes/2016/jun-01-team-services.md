@@ -3,10 +3,10 @@ title: SSH connections to Git repos, Docker integration, and more – June 1
 description: VSTS release notes for June 1 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 97422998-d25a-4e10-a77a-28cca7641dd4
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

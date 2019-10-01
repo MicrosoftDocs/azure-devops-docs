@@ -1,11 +1,9 @@
 - name: SharePoint Integration
-  href: index.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
-- name: Overview
-  items:
-  - name: About SharePoint integration
-    href: about-sharepoint-integration.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
-  - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
-    href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
+  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
+- name: About SharePoint integration
+  href: about-sharepoint-integration.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
+- name: Discontinue the TFS 2017 (and earlier) SharePoint integration
+  href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts
   items:
   - name: Share information using the SharePoint portal
@@ -42,31 +40,31 @@
       href: ./configure-sharepoint-tfs-2017-earlier.md
       items:
       - name: Install on same server
-        href: /azure/devops/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /azure/devops/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
       - name: Install on different server
-        href: /azure/devops/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /azure/devops/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
       - name: Configure enterprise app definition
-        href: /azure/devops/server/install/sharepoint/config-enterprise-app-def?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /azure/devops/server/install/sharepoint/config-enterprise-app-def?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
       - name: Verify SharePoint
-        href: /azure/devops/server/install/sharepoint/verify-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /azure/devops/server/install/sharepoint/verify-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
       - name: Move SharePoint to new hardware
-        href: /azure/devops/server/install/sharepoint/move-sharepoint-new-hardware?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
+        href: /azure/devops/server/install/sharepoint/move-sharepoint-new-hardware?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Set SharePoint permissions
-    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
+    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
   - name: Manage SharePoint integration
     items:
     - name: Add SharePoint products to TFS
-      href: /azure/devops/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+      href: /azure/devops/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
     - name: Modify or remove access between SharePoint web app and TFS
-      href: /azure/devops/server/admin/modify-remove-access-shareport-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
+      href: /azure/devops/server/admin/modify-remove-access-shareport-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
     - name: Configure SharePoint Server 2010 or 2007 for dashboards
-      href: /azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
+      href: /azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
   - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
     href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
-    href: ../../boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
+    href: ../../boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: SharePoint dashboards 
@@ -148,7 +146,7 @@
     - name: Excel reports (CMMI)
       href: ../../report/excel/excel-reports-cmmi.md  
   - name: Issues & Triage Excel workbooks
-    href: ../guidance/workbooks.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
+    href: ../guidance/workbooks.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Microsoft Teams

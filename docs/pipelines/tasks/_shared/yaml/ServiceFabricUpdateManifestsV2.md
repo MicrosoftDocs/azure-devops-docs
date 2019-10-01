@@ -1,6 +1,6 @@
 ```YAML
-# Update Service Fabric Manifests
-# Automatically updates portions of the application and service manifests within a packaged Service Fabric application.
+# Update Service Fabric manifests
+# Automatically update portions of application and service manifests in a packaged Azure Service Fabric application
 - task: ServiceFabricUpdateManifests@2
   inputs:
     #updateType: 'Manifest versions' # Options: manifest Versions, docker Image Settings

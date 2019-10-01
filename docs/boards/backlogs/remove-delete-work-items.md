@@ -268,7 +268,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
 * To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the <strong>Project Administrators **group or have the **Delete work items in this project</strong> permission set to **Allow**. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+* To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
@@ -357,10 +357,10 @@ By changing the **State** of a work item to <em>Removed</em>, you effectively re
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. 
+> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 ::: moniker-end
 
@@ -403,8 +403,10 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
+
 > [!NOTE]  
 > The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"

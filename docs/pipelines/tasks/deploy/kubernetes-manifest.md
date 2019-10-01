@@ -8,7 +8,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: shasb
 ms.author: shasb
 author: shashankbarsin
-ms.date: 04/16/2019
+ms.date: 07/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -46,7 +46,7 @@ Following are the key benefits of this task -
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>
@@ -54,11 +54,11 @@ Following are the key benefits of this task -
   </tr>
   <tr>
     <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. Regular expression ([RE2 syntax](https://github.com/google/re2/wiki/Syntax)) form specification of path is accepted.</td>
+    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
   </tr>
   <tr>
     <td><code>containers</code><br/>Containers</td>
-    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files<br/>Example: contosodemo.azurecr.io/helloworld:test</td>
+    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files. This multiline input accepts specifying multiple artifact substitutions in newline separated form. For example - <br>containers: |<br>&nbsp&nbspcontosodemo.azurecr.io/foo:test1<br>&nbsp&nbspcontosodemo.azurecr.io/bar:test2<br>In this example, all references to contosodemo.azurecr.io/foo and contosodemo.azurecr.io/bar are searched for in the image field of the input manifest files. For the matches found, the tags test1 and test2 are substituted.</td>
   </tr>
   <tr>
     <td><code>imagePullSecrets</code><br/>Image pull secrets</td>
@@ -66,11 +66,11 @@ Following are the key benefits of this task -
   </tr>
   <tr>
     <td><code>strategy</code><br/>Strategy</td>
-    <td>(Optional) Deployment strategy to be used while applying manifest files on the cluster. Currently, 'canary' is the only acceptable deployment strategy</td>
+    <td>(Optional) Deployment strategy to be used while applying manifest files on the cluster. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
   </tr>
   <tr>
     <td><code>percentage</code><br/>Percentage</td>
-    <td>(Required if strategy ==  canary) Percentage used to compute the number of replicas of '-baseline' and '-canary' varaints of the workloads found in manifest files. For the specified percentage input, if (percentage * numberOfDesirerdReplicas)/100 is not a round number, the floor of this number is used while creating '-baseline' and '-canary'<br/>Example: If Deployment hello-world was found in the input manifest file with 'replicas: 4' and if 'strategy: canary' and 'percentage: 25' are given as inputs to the task, then the Deployments hello-world-baseline and hello-world-canary are created with 1 replica each. The '-baseline' variant is created with the same image and tag as the stable version (4 replica variant prior to deployment) while the '-canary' variant is created with the image and tag correspoding to the new changes being deployed</td>
+    <td>(Required if strategy ==  canary) Percentage used to compute the number of replicas of &#39;-baseline&#39; and &#39;-canary&#39; varaints of the workloads found in manifest files. For the specified percentage input, if (percentage * numberOfDesirerdReplicas)/100 is not a round number, the floor of this number is used while creating &#39;-baseline&#39; and &#39;-canary&#39;<br/>Example: If Deployment hello-world was found in the input manifest file with &#39;replicas: 4&#39; and if &#39;strategy: canary&#39; and &#39;percentage: 25&#39; are given as inputs to the task, then the Deployments hello-world-baseline and hello-world-canary are created with 1 replica each. The &#39;-baseline&#39; variant is created with the same image and tag as the stable version (4 replica variant prior to deployment) while the &#39;-canary&#39; variant is created with the image and tag correspoding to the new changes being deployed</td>
   </tr>
 </table>
 
@@ -83,8 +83,10 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/*
-    containers: 'foobar/demo:$(tagVariable)'
+    manifests: manifests/deployment.yml|manifests/service.yml
+    containers: |
+      foo/demo:$(tagVariable1)
+      bar/demo:$(tagVariable2)
     imagePullSecrets: |
       some-secret
       some-other-secret
@@ -109,7 +111,7 @@ In the above example, the tasks tries to find matches for the image foobar/demo 
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>
@@ -117,7 +119,7 @@ In the above example, the tasks tries to find matches for the image foobar/demo 
   </tr>
   <tr>
     <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. Regular expression ([RE2 syntax](https://github.com/google/re2/wiki/Syntax)) form specification of path is accepted.</td>
+    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
   </tr>
   <tr>
     <td><code>containers</code><br/>Containers</td>
@@ -129,7 +131,7 @@ In the above example, the tasks tries to find matches for the image foobar/demo 
   </tr>
   <tr>
     <td><code>strategy</code><br/>Strategy</td>
-    <td>(Optional) Deployment strategy that was used in the deploy action prior to promote/reject. Currently, 'canary' is the only acceptable deployment strategy</td>
+    <td>(Optional) Deployment strategy that was used in the deploy action prior to promote/reject. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
   </tr>
 </table>
 
@@ -155,17 +157,17 @@ In the above example, the tasks tries to find matches for the image foobar/demo 
   </tr>
   <tr>
     <td><code>dockerRegistryEndpoint</code><br/>Docker registry service connection</td>
-    <td>(Required if action == createSecret and secretType == dockerRegistry) The specified service connection's credentials are used to create a docker-registry secret within the cluster. This secret's name can then be referred to from manifest files under the imagePullSecrets field</td>
+    <td>(Required if action == createSecret and secretType == dockerRegistry) The specified service connection&#39;s credentials are used to create a docker-registry secret within the cluster. This secret&#39;s name can then be referred to from manifest files under the imagePullSecrets field</td>
   </tr>
   <tr>
     <td><code>secretArguments</code><br/>Secret arguments</td>
     <td>(Required if action == createSecret and secretType == generic) Multiline input accepting keys and literal values to be used for secret creation/updation. Example: --from-literal=key1=value1 
-    --from-literal=key2=\"top secret\"."
+    --from-literal=key2=&quot;top secret&quot;.&quot;
     </td>
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>
@@ -228,8 +230,16 @@ steps:
     <td>(Optional; Relevant if action == bake and renderType == helm2) Multiline input accepting path to the override files that are to be used when baking manifest files from helm charts</td>
   </tr>
   <tr>
-    <td><code>Overrides</code><br/>Override values</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --values switch when baking manifest files using helm</td>
+    <td><code>overrides</code><br/>Override values</td>
+    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --set switch when baking manifest files using helm</td>
+  </tr>
+  <tr>
+    <td><code>kustomizationPath</code><br/>Kustomization path</td>
+    <td>(Optional; Relevant if action == bake and renderType == kustomize) Path to the directory containing kustomization.yaml</td>
+  </tr>
+  <tr>
+    <td><code>dockerComposeFile</code><br/>Path to docker compose file</td>
+    <td>(Optional; Relevant if action == bake and renderType == kompose) Path to docker compose file</td>
   </tr>
 </table>
 
@@ -280,7 +290,7 @@ steps:
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>
@@ -341,7 +351,7 @@ steps:
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>
@@ -383,7 +393,7 @@ steps:
   </tr>
   <tr>
     <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)</td>
+    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
   </tr>
   <tr>
     <td><code>namespace</code><br/>Namespace</td>

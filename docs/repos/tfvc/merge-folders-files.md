@@ -124,8 +124,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
 3.  Select the range of changes that you want to merge into the target branch by selecting either the **All changes up to a specific version** or **Selected changesets** option, and click **Next**.
 
-    >**Tip:**
-    >  If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
+    > [!TIP]
+    > If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
     -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
@@ -156,8 +156,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
 
-        >**Tip:**
-        >  You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
+        > [!TIP]
+        > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
 
 4.  Click **Next**, and then on the **Perform the merge operation** page, click **Finish**.
 

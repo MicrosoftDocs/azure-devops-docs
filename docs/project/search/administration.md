@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -141,7 +141,7 @@ as part of the configuration:
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Azul Zulu OpenJDK](https://www.azul.com/downloads/zulu/zulu-windows/) (see [Java installation notes](#java-notes))
+* [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/) (see [Java installation notes](#java-notes))
 * [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](http://www.antlr.org/) language recognition parser
@@ -156,7 +156,7 @@ as part of the configuration:
    maintained and updated in line with the software provider's recommendations. 
    Also see the [Java installation notes](#java-notes) that follow.
 4. The Azul Zulu OpenJDK does not automatically install updates.
-   Ensure you regularly [check for updates](https://www.azul.com/downloads/zulu/zulu-windows/).
+   Ensure you regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
 
 <a name="java-notes"></a>
 #### Java installation notes
@@ -168,20 +168,23 @@ If the target server does not have Internet connectivity, you must download
 and install a JRE manually before attempting to install Search.
 
 > Versions of Search prior to Azure DevOps Server used the [Oracle Server Java Runtime Environment](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
-> In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/downloads/zulu/zulu-windows/).
+> In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/).
 
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
 to point to the JRE installation folder. The configuration wizard may fail 
 to detect an existing JRE installation if it is not correctly configured, 
-or if the **JAVA\_HOME** setting points to an earlier version than that required 
-by Search. 
+or if the **JAVA\_HOME** setting points to an earlier version than that required by Search. 
 
-If there is a version of a JRE **earlier** than the minimum required by  
+> [!NOTE]   
+> We don't advise installing Elasticsearch on a machine where resources are shared, especially on a large enterprise environment with multiple application tiers. Instead, we recommend setting up Elasticsearch in a separate dedicated machine. In that way, the JAVA environment isn't shared across machines for other purposes.
+
+
+If there is a version of a JRE **earlier** than the minimum required by 
 Search, and the **JAVA\_HOME** variable is set to that version, we recommend 
 you install Search on a separate server because changing the value 
 of the **JAVA\_HOME** variable may cause other installed software to fail.
 
-If there is a version of Server JRE **equal to or later** than the minimum required
+If there is a version of Server JRE **equal to or later** than the minimum required 
 by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the JRE installation guide and then rerun the configuration wizard.
@@ -213,10 +216,10 @@ To change to the Azul Zulu OpenJDK, follow these simple steps:
 
 ![Java Migration flow](_img/administration/java-migration-flow.png)
 
-More details are available [here](https://github.com/msftazdev/Code-Search/tree/master/Java%20Migration).
+More details are available [here](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
 
 > [!NOTE]
-> * If you choose to use Azul Zulu OpenJDK, ensure you [download the latest updates](https://www.azul.com/downloads/zulu/zulu-windows/). It does not automatically install updates.
+> * If you choose to use Azul Zulu OpenJDK, ensure you [download the latest updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk). It does not automatically install updates.
 
 ### Installation considerations
 
@@ -398,8 +401,8 @@ to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
 **[this GitHub repository](https://github.com/Microsoft/Code-Search)**.
-You may wish to download all of the scripts into a local folder on your Azure DevOps Server
-server using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
+You may wish to download all of the scripts into a local folder on the server running the database for Azure DevOps Server
+using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
 the **SqlScripts** folder and its contents is present, along with the PowerShell scripts.
 
 ![Download script files for administration](_img/administration/script-filesv2.png)
@@ -540,6 +543,11 @@ with administrative privileges. You will be prompted to enter:
 * The name of the Azure DevOps Server or TFS collection database.
 * The name of the Azure DevOps Server or TFS configuration database.
 * The name of the collection.
+* The entities to reindex. This can be one of the following values:
+  - **All**
+  - **Code**
+  - **WorkItem**
+  - **Wiki**
 
 Re-indexing a collection can take from a few minutes 
 to a few hours, depending on the size of the collection. 

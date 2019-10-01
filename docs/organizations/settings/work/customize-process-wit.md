@@ -72,6 +72,7 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 
 <a id="overview">  </a>
+
 ## Change description, icon or color
 
 To change the description, icon or color of a custom WIT, choose Edit from the WIT context menu. 
@@ -81,6 +82,7 @@ Here we change the description, icon and color for the Ticket custom WIT.
 <img src="_img/process/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="enable-disable"></a>
+
 ## Enable or disable a WIT  
 
 You can disable a custom WIT, which prevents users from being able to add work items using it. However, all existing work items defined using the custom WIT remain available. You can query for them and edit them.
@@ -94,9 +96,10 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 > [!NOTE]    
 > Disabling a WIT removes the WIT from the **New** drop down and add experiences. Creating a work item of that WIT is also blocked via REST APIs.  
 >
->No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
+> No changes are made to existing work items of that type. You can update or delete them and they continue to appear on backlogs and boards. Also, you can change the work item type of disabled WITs to an enabled type, but you can't change the type to a disabled WIT.
 
 <a id="destroy">  </a>
+
 ## Delete or destroy a custom WIT 
 
 > [!IMPORTANT]  

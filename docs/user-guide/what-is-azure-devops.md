@@ -82,8 +82,6 @@ On **November 19, 2018**, the latest version of Team Foundation Server (the on-p
 
 Many of the featured services in VSTS are now offered as standalone ones in both Azure DevOps Services and Azure DevOps Server RC 1:
 
->  [!div class="mx-tdCol2BreakAll"]  
-> 
 > | VSTS feature name    | Azure DevOps service name | Description |
 > |----------------------|----------------------|-------------|
 > | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |

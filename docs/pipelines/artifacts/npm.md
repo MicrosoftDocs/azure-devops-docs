@@ -27,8 +27,7 @@ You can publish npm packages produced by your build to:
 * Azure Artifacts or the TFS Package Management service.
 * Other registries such as `https://registry.npmjs.org/`.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
 
@@ -59,8 +58,7 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
 
 - **working folder**: Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
@@ -72,10 +70,9 @@ To publish an npm package to a Package Management feed, add the **npm** task. Th
 
 To publish to an external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
 
----
-
+* * *
 > [!NOTE]
-> The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. Ensure that your working folder has an `.npmrc` file with a `registry=` line, as detailed in the **Connect to feed** screen in your feed.
+> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
 ## Q&A
 

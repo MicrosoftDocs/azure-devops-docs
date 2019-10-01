@@ -7,8 +7,8 @@ description: Work with the work item query language programmatically using the R
 ms.assetid: C98285FE-3882-4F35-9E19-9A6E109EED66
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 04/04/2017
 ---
 

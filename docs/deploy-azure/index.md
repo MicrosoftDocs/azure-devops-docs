@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
 ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.date: 07/09/2018
 ms.topic: conceptual
 layout: LandingPage
@@ -70,7 +70,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)
 - [What is Azure DevOps Projects?](/azure/devops-project/overview)
-- [Azure Pipelines](../pipelines/index.md)
+- [Azure Pipelines](../pipelines/index.yml)
 
 ::: moniker-end
 

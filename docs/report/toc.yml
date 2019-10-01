@@ -1,4 +1,4 @@
-- name: Azure DevOps Reporting Documentation
+- name: Reporting
   expanded: false
   href: index.md  
 - name: Reporting roadmap 
@@ -11,6 +11,8 @@
   href: extend-analytics/toc.yml  
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
+- name: SharePoint Integration (Deprecated)  
+  href: sharepoint-dashboards/toc.yml 
 - name: REST API Reference
   items:
   - name: Dashboards
@@ -26,9 +28,11 @@
   - name: Azure Boards  
     href: /azure/devops/boards/index
   - name: Azure Test Plans  
-    href: /azure/devops/test-plans/index
+    href: /azure/devops/test/index
   - name: Azure Pipelines  
     href: /azure/devops/pipelines/index
+  - name: "Rollup of work & other fields"
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md
   - name: Work item field index  
     href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Marketplace widgets

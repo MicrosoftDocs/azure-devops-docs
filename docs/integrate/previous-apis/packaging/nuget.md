@@ -4,8 +4,8 @@ description: Work with NuGet packages programmatically using the REST APIs for V
 ms.assetid: 8D402655-CA86-4673-B091-244C0B2B673B
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem

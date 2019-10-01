@@ -9,16 +9,19 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 07/25/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules can also be used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
+
+> [!NOTE]
+> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
 
 ## Prerequisites
 
@@ -49,13 +52,13 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
    ![Complete add a group rule dialog](_img/assign-access-levels/add-group-rule-dialog-new.png)
 
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
+A notification displays, showing the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
 
 ![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
 
 ## Resolve assignment errors
 
-As users sign in to your organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps notifies all **Project Collection Administrators** via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following steps:
+As users sign in to your organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps notifies all **Project Collection Administrators** via email that they must make a purchase. To find users in an error state, the Project Collection Administrator can do the following steps:
 
 1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or access levels.
 2. To see how many of each resource are missing, choose **Fix assignment errors**.
@@ -74,7 +77,7 @@ As users sign in to your organization, they're assigned access levels and extens
 
    ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
 
-When the same access level or extension is assigned to the user both directly and through a group, the user consumes only one access level or extension. No additional licenses are required to perform the migration.
+When the same access level or extension is assigned to the user, both directly and through a group, the user consumes only one access level or extension. No additional licenses are required.
 
 ## Verify group rule
 
@@ -84,9 +87,10 @@ When the same access level or extension is assigned to the user both directly an
 
 - Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
 
-Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization.
+Your group rule is in effect.
 
 ## Related articles
 
 * [Buy and install extensions](../../marketplace/install-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+

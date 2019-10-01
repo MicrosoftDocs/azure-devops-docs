@@ -6,11 +6,11 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
+ms.technology: devops-agile
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 05/6/2019
 featureFlags:
@@ -123,6 +123,9 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                     </div>
                     <div class="cardText">
                         <h3><a href="/azure/devops/reference/process-templates/index">Process Templates</a></h3>
+                        <p>
+                            <a href="/azure/devops/boards/work-items/guidance/choose-process?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json">Compare system (default) processes</a>
+                        </p>
                         <p>
                             <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template files</a>
                         </p>

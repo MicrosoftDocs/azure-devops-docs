@@ -7,8 +7,8 @@ description: Work with test results programmatically using the REST APIs for Tea
 ms.assetid: 70243742-BBC4-4586-AD22-A7756675A767
 ms.manager: jillfra
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/05/2016
 ---
 

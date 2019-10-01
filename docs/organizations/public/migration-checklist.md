@@ -14,11 +14,11 @@ ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
-# Private-to-public migration checklist
+# Quickstart: Private-to-public migration checklist
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-Before changing the visibility of your private project to public, you'll want to consider what data may be exposed to non-members. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
+In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
 The checklist provided in this article indicates those items you may want to review before making a project public. It also provides tips for migrating work items or files to a new project so that you can expose only current and future content.
 
@@ -137,8 +137,8 @@ The new repository should be created in a project you don't mind making public.
 - Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
 - Push up your new repository: `git push --set-upstream origin master`
 
-## Related articles
+## Next steps
 
-- [Make a project public](make-project-public.md) 
-- [Managing Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
+> [!div class="nextstepaction"]
+> - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
  

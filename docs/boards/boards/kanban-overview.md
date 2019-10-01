@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/22/2019
 ---
 
 
@@ -34,7 +34,7 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](kanban-basics.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 
 ## Product and portfolio boards 
@@ -57,6 +57,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
+
 
 ## Configure and customize your Kanban board
 
@@ -121,11 +122,38 @@ Once you&#39;ve configured your Kanban board, you can add work items directly to
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. 
 ::: moniker-end
 
+## Cumulative flow diagram
+
+The Cumulative Flow Diagram (CFD) is an in-context report available for both product and portfolio backlog levels. Use this chart to monitor key metrics to fine tune your processes. 
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Open CFD Analytics](../../report/dashboards/_img/cfd/analytics-cfd-azure-devops.png)
+
+The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+<img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+
+The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
+
+::: moniker-end
+
+By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time.  
+
+To learn more, see the following articles:  
+- [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md) 
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
+- [Lead time and cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)
+
 
 ## Display of leaf node work items  
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
-
 
 <a id="limits-multi-team" />
 

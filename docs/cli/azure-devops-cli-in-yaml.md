@@ -1,4 +1,21 @@
+---
+title: Azure DevOps CLI in Azure Pipeline YAML
+titleSuffix: Azure DevOps 
+description: Use Azure DevOps CLI to create Azure Pipeline YAML
+ms.topic: reference 
+ms.manager: jillfra
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: jillfra 
+ms.author: geverghe
+author: KathrynEE
+monikerRange: 'azure-devops'
+ms.date: 06/18/2019
+---
+
 # Azure DevOps CLI in Azure Pipeline YAML
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 
@@ -27,9 +44,11 @@ steps:
     az pipelines build list
     git pr list
   displayName: 'Show build list and PRs'
+
 ```
 
 ### For Linux: azure-pipelines-steps-linux.yml
+
 
 ```yaml
 steps:
@@ -67,7 +86,8 @@ steps:
     displayName: 'Show build list and PRs'
 ```
 
-For Windows: azure-pipelines-steps-win.yml
+#### For Windows: azure-pipelines-steps-win.yml
+
 
 ```yaml
 steps:
@@ -134,4 +154,4 @@ jobs:
     vmImage: 'vs2017-win2016'
   steps:
   - template: azure-pipelines-steps-win.yml
-
+```

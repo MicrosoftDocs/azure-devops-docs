@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: landing-page
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
@@ -19,6 +19,12 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../organizations/settings/index.md).
+
+
+### Video: Agile at Scale 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3wM7v]
+
 
 ## Quickstarts
 
