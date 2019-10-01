@@ -8,7 +8,7 @@ description: Use the Test Plan Progress report to track the team's progress in t
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Test Plan Progress Report

@@ -8,7 +8,7 @@ description: Determine how many test cases have been defined and are ready to ru
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Test Case Readiness report
