@@ -52,6 +52,9 @@ Consistency is maintained in the formatting in TOC.
 
 ## Add Mermaid diagrams to a Wiki page
 
+> [!NOTE] 
+> The Mermaid support feature is in the process of deployment and is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization. For status on the current work item, see the [Mermaid support in wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751) work item in [features under development](../release-notes/features-timeline#features-under-development).
+
 Wiki supports the following Mermaid diagram types:
 
 1.	[Flowcharts ](https://mermaidjs.github.io/#/flowchart)
