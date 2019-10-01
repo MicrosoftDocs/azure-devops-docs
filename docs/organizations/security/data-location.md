@@ -3,7 +3,7 @@ title: Azure DevOps - data location
 description: Learn where your data is stored for Azure DevOps
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 ms.manager: jillfra

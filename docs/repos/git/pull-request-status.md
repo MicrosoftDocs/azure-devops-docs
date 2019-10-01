@@ -54,7 +54,7 @@ Essentially, status is the way a user or service posts their evaluation about a 
 * Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example. 
-Consider a [CI service](../../pipelines/index.md) that is required to build all code changes in a project. 
+Consider a [CI service](../../pipelines/index.yml) that is required to build all code changes in a project. 
 When that service evaluates the changes in a pull request, it needs to post back the results of the build and tests. 
 For changes that pass the build, a status like this might be posted on the PR:
 

@@ -76,7 +76,7 @@ gulp
 
 ### Run gulp.js
 
-On the [Build](../../index.md) tab:
+On the [Build](../../index.yml) tab:
 
 <table>
 <tr>

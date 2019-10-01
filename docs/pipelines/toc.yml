@@ -1,20 +1,15 @@
-- name: Azure Pipelines Documentation
-  href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Azure Pipelines
-  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: Overview
-    href: get-started/overview.md
-  - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
-  - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md
-  - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+  href: index.yml
+- name: Get started
+  href: get-started/index.md
+- name: What is Azure Pipelines?
+  href: get-started/what-is-azure-pipelines.md
+- name: Sign up for Azure Pipelines
+  href: get-started/pipelines-sign-up.md
+- name: How to use Azure Pipelines
+  href: get-started/pipelines-get-started.md
+- name: Key concepts
+  href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
@@ -26,9 +21,12 @@
     displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
-    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
+    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers 
 - name: Ecosystems
   items: 
+  - name: Ecosystems index
+    href: ecosystems/index.md
+    displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
@@ -38,24 +36,26 @@
     href: ecosystems/android.md
   - name: Azure
     items:
+    - name: Azure Government Cloud
+      href: library/government-cloud.md
+    - name: Azure Resource Manager
+      href: library/connect-to-azure.md
     - name: Azure SQL database
       href: targets/azure-sqldb.md
+    - name: Azure Stack
+      href: targets/azure-stack.md
+    - name: Function App on Container
+      href: targets/function-app-container.md
     - name: Function App on Linux
       href: targets/azure-functions.md
     - name: Function App on Windows
       href: targets/azure-functions-windows.md
-    - name: Web App on Windows
-      href: targets/webapp.md
     - name: Web App on Linux
       href: targets/webapp-linux.md
     - name: Web App on Linux Container
       href: targets/webapp-on-container-linux.md
-    - name: Azure Resource Manager
-      href: library/connect-to-azure.md
-    - name: Azure Government Cloud
-      href: library/government-cloud.md
-    - name: Azure Stack
-      href: targets/azure-stack.md
+    - name: Web App on Windows
+      href: targets/webapp.md
   - name: Containers
     items:
     - name: Build images
@@ -102,7 +102,6 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
-
 - name: How-to guides
   items:
   - name: CI/CD
@@ -207,8 +206,6 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: Collect screenshots and video
-      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -667,8 +664,6 @@
       items:
       - name: Docker Installer
         href: tasks/tool/docker-installer.md
-      - name: .NET Core Tool Installer
-        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
       - name: Helm Installer
@@ -681,6 +676,8 @@
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer
         href: tasks/tool/nuget.md
+      - name: Use .NET Core
+        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Use Python Version
         href: tasks/tool/use-python-version.md
       - name: Use Ruby Version

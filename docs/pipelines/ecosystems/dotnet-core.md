@@ -443,6 +443,10 @@ steps:
     artifactName: 'myWebsiteName'
 
 ```
+
+> [!NOTE]
+> The `dotNetCoreCLI@2` task has a `publishWebProjects` input that is set to **true** by default. This publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
+
 To copy additional files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed

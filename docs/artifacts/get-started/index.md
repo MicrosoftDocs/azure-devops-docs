@@ -63,5 +63,5 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 
 ## Resources 
 
-- [Azure Repos](../../repos/index.md)
-- [Azure Pipelines](../../pipelines/index.md)
+- [Azure Repos](../../repos/index.yml)
+- [Azure Pipelines](../../pipelines/index.yml)

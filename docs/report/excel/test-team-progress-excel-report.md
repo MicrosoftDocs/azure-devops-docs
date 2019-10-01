@@ -24,7 +24,7 @@ Teams who are responsible for testing software can use the Test Team Progress re
 - **Failure Analysis**: Helps the team monitor how many regressions they are finding.  
 - **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.  
   
-  This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.md).  
+  This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.yml).  
   
 > [!NOTE]
 >  You can access the Test Team Progress report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  

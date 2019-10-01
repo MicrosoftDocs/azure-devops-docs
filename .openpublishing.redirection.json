@@ -4927,7 +4927,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md",
+      "redirect_url": "https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md",
       "redirect_document_id": false
     },
     {
@@ -11938,6 +11938,16 @@
     {
       "source_path": "docs/integrate/get-started/authentication/pats.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/get-started/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test-plans/index.md",
+      "redirect_url": "/azure/devops/test/index",
       "redirect_document_id": true
     }
   ]

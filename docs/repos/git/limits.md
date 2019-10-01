@@ -46,7 +46,7 @@ size-garbage: 0 bytes
 In uncommon circumstances, repositories may be larger than 10GB.
 For instance, the Windows repository is at least 300GB.
 For that reason, we do not have a hard block in place.
-If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [GVFS](https://gvfs.io), or [Azure Artifacts](../../artifacts/index.md) to refactor your development artifacts.
+If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [VFS for Git](https://vfsforgit.org), or [Azure Artifacts](../../artifacts/index.md) to refactor your development artifacts.
 
 ## Push size
 

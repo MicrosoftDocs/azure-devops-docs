@@ -1,0 +1,44 @@
+
+- name: Security, access, & billing
+  expanded: false
+  href: index.yml
+- name: Get started as an administrator
+  href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+- name: Security, access, & identity
+  href: ../organizations/security/toc.yml
+- name: Organizations
+  href: ../organizations/accounts/toc.yml
+- name: Billing
+  href: ../organizations/billing/toc.yml
+- name: Audit
+  items:
+  - name: Access auditing
+    href: ../organizations/settings/azure-devops-auditing.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+- name: Authentication
+  items:
+  - name: Authentication guidance
+    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Authenticate access with personal access tokens
+    href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Authorize access to REST APIs with OAuth 2.0
+    href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Use SSH key authentication
+    href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Revoke users' PATs - for admins
+    href: ../organizations/accounts/admin-revoke-user-pats.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+- name: REST API reference
+  items:
+  - name: Security
+    href: /rest/api/azure/devops/security/
+  - name: Permissions
+    href: /rest/api/vsts/security/permissions/ 
+  - name: Organizations (Account)
+    href: /rest/api/azure/devops/account/
+  - name: Audit
+    href: /rest/api/vsts/security/audit/
+- name: Resources
+  items:
+  - name: Add an alternate account to your Visual Studio subscription
+    href: /visualstudio/subscriptions/vs-alternate-identity
+
+
