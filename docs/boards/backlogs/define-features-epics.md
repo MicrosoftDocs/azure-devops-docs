@@ -294,6 +294,10 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
+
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 

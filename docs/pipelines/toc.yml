@@ -206,8 +206,6 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: Collect screenshots and video
-      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -666,8 +664,6 @@
       items:
       - name: Docker Installer
         href: tasks/tool/docker-installer.md
-      - name: .NET Core Tool Installer
-        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
       - name: Helm Installer
@@ -680,6 +676,8 @@
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer
         href: tasks/tool/nuget.md
+      - name: Use .NET Core
+        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Use Python Version
         href: tasks/tool/use-python-version.md
       - name: Use Ruby Version

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.topic: article
 ms.author: chcomley
 author: chcomley
-ms.date: 06-01-2017
+ms.date: 06/01/2017
 ---
 
 # Release API Contracts

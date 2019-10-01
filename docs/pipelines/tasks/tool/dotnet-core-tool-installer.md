@@ -1,5 +1,5 @@
 ---
-title: .NET Core Tool Installer task
+title: Use .NET Core task
 description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,7 @@ ms.date: 5/2/2019
 monikerRange: 'azure-devops'
 ---
 
-# .NET Core Tool Installer task
+# Use .NET Core task
 
 **Azure Pipelines**
 

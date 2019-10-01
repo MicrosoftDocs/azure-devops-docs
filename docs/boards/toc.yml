@@ -121,6 +121,8 @@
     href: /azure/devops/agile/what-is-scrum
 - name: Resources
   items:
+  - name: "Rollup of work and other fields"
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md
   - name: "Default permissions (Security)"
     href: ../organizations/security/permissions-access-work-tracking.md 
   - name: Define area paths

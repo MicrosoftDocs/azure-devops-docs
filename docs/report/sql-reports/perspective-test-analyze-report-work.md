@@ -8,7 +8,7 @@ description: Analyze current or historical data for work items and test cases by
 ms.assetid: c6d0d2da-d63f-4e9c-b92e-50c4605a72ef
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
