@@ -37,8 +37,3 @@ That’s it for today.
 Thanks.
 
 Aaron Bjork
-
-
-
-
-

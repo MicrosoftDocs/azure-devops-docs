@@ -184,7 +184,6 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   Also see [UI testing considerations](ui-testing-considerations.md).
   <!--
   For example,  
-
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```

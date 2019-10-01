@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker-end
 
-This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
+This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../ecosystems/dotnet-core.md).
 
 ::: moniker range="tfs-2017"
 
@@ -54,7 +54,7 @@ The sample app is a Visual Studio solution that has two projects: An ASP.NET Web
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end
 
-* After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
+* After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **ASP.NET** template. This automatically adds the tasks required to build the code in the sample repository.
 
 * Save the pipeline and queue a build to see it in action.
 

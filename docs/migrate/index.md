@@ -17,7 +17,7 @@ author: kaelli
 
 To migrate from an Azure DevOps on-premises deployment to Azure DevOps Services, review the articles provided in this migration guide.   
 
-For the full documentation set, go to the [Azure DevOps Documentation](../index.md).
+For the full documentation set, go to the [Azure DevOps Documentation](/azure/devops/index).
    
 ##	Migration and integration
 

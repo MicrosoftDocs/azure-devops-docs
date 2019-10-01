@@ -8,8 +8,8 @@ ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: jobourne
-author: joebourneMS
-ms.date: 07/26/2019
+author: thejoebourneidentity
+ms.date: 09/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -25,12 +25,14 @@ monikerRange: 'azure-devops'
 <a name="software"></a>
 
 ## Use a Microsoft-hosted agent
+Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
 
-Microsoft-hosted agent pools offer 7 virtual machine images to choose from, each including a broad range of tools and software:
+> [!NOTE]
+> The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 | Image | Classic Editor Pool | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
+| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS 2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
 | Windows Server 2016 with Visual Studio 2017 | *Hosted VS2017* | `vs2017-win2016` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
 | Windows Server 2012 R2 with Visual Studio 2015 | *Hosted* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
 | Windows Server Core 1803 (*for running Windows containers*) | *Hosted Windows Container* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
@@ -102,7 +104,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
-To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/confirmation.aspx?id=41653) for all regions in that geography.
+To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) for all regions in that geography.
 
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
@@ -110,6 +112,8 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >
 >If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+>
+>Our Mac IP ranges are not included in the Azure IPs above, though we are investigating options to publish these in the future.
 
 ### Can I use service tags instead?
 
@@ -124,7 +128,7 @@ By default, all project contributors in an organization have access to the Micro
 
 ### I need more agents. What can I do?
 
-A: All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
+All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need more minutes, or need to run additional builds or releases in parallel, then you can buy more [parallel jobs](../licensing/concurrent-jobs.md) for private projects.
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 

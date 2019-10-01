@@ -65,7 +65,9 @@ At the time a run is started:
 
 If you specify this build number format:
 
-    $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+```
+$(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+```
 
 Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_20190505.2**
 
@@ -82,7 +84,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Hours)` | 21 |
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
-| `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
+| `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
 | `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |

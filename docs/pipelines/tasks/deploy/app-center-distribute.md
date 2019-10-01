@@ -44,7 +44,6 @@ For details about using this task, see the App Center documentation topic [Deplo
 <tr><td>Symbols path</td><td>(Optional) Relative path from the repo root to the symbols folder.</td></tr>
 <tr><td>Symbols path (*.pdb)</td><td>(Optional) Relative path from the repo root to PDB symbols files. Path may contain wildcards.</td></tr>
 <tr><td>dSYM path</td><td>(Optional) Relative path from the repo root to dSYM folder. Path may contain wildcards.</td></tr>
-<tr><td>Mapping file</td><td>(Optional) Relative path from the repo root to Android&#39;s mapping.txt file.</td></tr>
 <tr><td>Include all items in parent folder</td><td>(Optional) Upload the selected symbols file or folder and all other items inside the same parent folder. This is required for React Native apps.</td></tr>
 <tr><td>Create release notes</td><td>(Required) Release notes will be attached to the release and shown to testers on the installation page. Options: <code>input</code>, <code>file</code>.</td></tr>
 <tr><td>Release notes</td><td>(Required) Release notes for this version.</td></tr>
@@ -70,7 +69,7 @@ This example pipeline builds an Android app, runs tests, and publishes the app u
 # Android
 # Build your Android project with Gradle.
 # Add steps that test, sign, and distribute the APK, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 
 pool:
   vmImage: 'macOS-latest'
@@ -106,8 +105,8 @@ steps:
   - task: AppCenterDistribute@3
     inputs:
       serverEndpoint: 'AppCenter'
-      appSlug: '{APP_CENTER_SLUG}'
-      appFile: '{APP_FILE}' # Relative path from the repo root to the APK or IPA file you want to publish
+      appSlug: '$(APP_CENTER_SLUG)'
+      appFile: '$(APP_FILE)' # Relative path from the repo root to the APK or IPA file you want to publish
       symbolsOption: 'Android'
       releaseNotesOption: 'input'
       releaseNotesInput: 'Here are the release notes for this version.'

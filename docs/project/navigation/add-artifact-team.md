@@ -174,4 +174,4 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 ## Related articles
 
 - [Azure Artifacts](../../artifacts/index.md)  
-- [Exploratory & Manual Testing](../../test/index.md)  
+- [Exploratory & Manual Testing](../../test/index.yml)  

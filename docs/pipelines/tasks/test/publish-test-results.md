@@ -34,7 +34,7 @@ Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-
 
 Other built-in tasks such as [Visual Studio Test task](vstest.md) automatically publish
 test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
-[Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+[Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.Net Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
 provide publishing results as an option within the task.
 If you are using any of these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
@@ -74,8 +74,8 @@ The results files can be produced by multiple runners, not just a specific
 runner. For example, jUnit results format is supported by many runners and
 not just jUnit.
 
-To publish test results for Python using YAML, see [Python](../../languages/python.md)
-in the **Languages** section of these topics, which also includes examples for other languages. 
+To publish test results for Python using YAML, see [Python](../../ecosystems/python.md)
+in the **Ecosystems** section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 
@@ -142,9 +142,9 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 For Docker based apps there are many ways to build your application and run tests:
 
-* [Build and test in a build pipeline](../../languages/docker.md): build and tests execute in the pipeline and test results are published using the **Publish Test Results** task.
-* [Build and test with a multi-stage Docker file](../../languages/docker.md): build and tests execute inside the container using a multi-stage Docker file, as such test results are not published back to the pipeline.
-* [Build, test, and publish results with a Docker file](#publishtestindocker): build and tests execute inside the container and results are published back to the pipeline. See the example below.
+* Build and test in a build pipeline: build and tests execute in the pipeline and test results are published using the **Publish Test Results** task.
+* Build and test with a multi-stage Dockerfile: build and tests execute inside the container using a multi-stage Docker file, as such test results are not published back to the pipeline.
+* Build, test, and publish results with a Dockerfile: build and tests execute inside the container and results are published back to the pipeline. See the example below.
 
 <a name="publishtestindocker"></a>
 

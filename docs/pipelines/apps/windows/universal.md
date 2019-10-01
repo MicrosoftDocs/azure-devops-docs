@@ -109,4 +109,8 @@ https://github.com/Microsoft/UWPQuickStart
 You can now update the build pipeline to generate production builds.
 
  * [Signing UWP package](/windows/uwp/packaging/create-certificate-package-signing)
- * [Associate package with the store](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx)
+ * [Associate package with the store](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)
+ 
+## Related topics
+
+* [Set up automated builds for your UWP app](/windows/uwp/packaging/auto-build-package-uwp-apps)

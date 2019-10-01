@@ -37,10 +37,11 @@ The instructions below use the default bash shell used on Linux and macOS, but t
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
     [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
   
-   3. For seamless commanding, set the organization and project as defaults in configuration.
+4. For seamless commanding, set the organization and project as defaults in configuration.
  
-      `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
-      ## Download and install Git
+    `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
+    
+## Download and install Git
 
 * [Windows](#windows)
 * [macOS](#macos)

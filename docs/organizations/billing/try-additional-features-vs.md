@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/01/2019
+ms.date: 09/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,11 +18,14 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, learn how to try [Azure Test Plans ](https://azure.microsoft.com/services/devops/test-plans/) for 30 days free.
+In this quickstart, learn how to try [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/) for 30 days free.
 
 ## Prerequisites
 
-Ensure you have [Project Collection Administrator or organization Owner](../security/lookup-organization-owner-admin.md) permissions.
+Ensure the following is true:
+
+* [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
+* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 
 ## Try Azure Test Plans
 

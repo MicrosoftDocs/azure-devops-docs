@@ -76,7 +76,7 @@ When your team decides to branch the codebase, you can convert the Main folder t
 If you've got an idea for a new app, you can use version control from the start. Create a new code project (Keyboard: Ctrl + Shift + N), and add it to TFVC version control:
 
 ![Create a new solution under version control](_img/set-up-team-foundation-version-control-your-dev-machine/IC696635.png)
-> **Tip:**
+> [!TIP]
 > We suggest that you put your new project in **c:\Users\\**<em>YourName</em>**\Source\Workspaces\\**.
 
 When the **Choose Source Control** dialog box appears, choose **Team Foundation Version Control**.

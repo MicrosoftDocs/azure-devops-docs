@@ -76,7 +76,7 @@ gulp
 
 ### Run gulp.js
 
-On the [Build](../../index.md) tab:
+On the [Build](../../index.yml) tab:
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ On the [Build](../../index.md) tab:
 
 ### Build a Node.js app
 
-[Build your Node.js app with gulp](../../languages/javascript.md)
+[Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 ## Open source
 

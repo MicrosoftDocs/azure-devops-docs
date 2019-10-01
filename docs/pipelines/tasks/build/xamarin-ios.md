@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a pipeline to build an iOS app with Xamarin on macOS. For more information, see the [Xamarin guidance](../../languages/xamarin.md) and [Sign your app during CI](../../apps/mobile/app-signing.md).
+Use this task in a pipeline to build an iOS app with Xamarin on macOS. For more information, see the [Xamarin guidance](../../ecosystems/xamarin.md) and [Sign your app during CI](../../apps/mobile/app-signing.md).
 
 ## Demands
 
@@ -34,7 +34,7 @@ Xamarin.iOS
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Solution</td><td>(Required) Relative path from the repository root of the Xamarin.iOS solution to build. May contain wildcards.</td></tr>
+<tr><td>Solution</td><td>(Required) Relative path from the repository root of the Xamarin.iOS solution or csproj project to build. May contain wildcards.</td></tr>
 <tr><td>Configuration</td><td>(Required) Standard configurations are Ad-Hoc, AppStore, Debug, Release.</td></tr>
 <tr><td>Clean</td><td>(Optional) Run a clean build (/t:clean) prior to the build.</td></tr>
 <tr><td>Create app package</td><td>(Required) Indicates whether an IPA should be generated as a part of the build.</td></tr>

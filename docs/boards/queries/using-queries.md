@@ -21,6 +21,8 @@ ms.date: 02/01/2019
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
+If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
 In this article you'll learn:  
 
 > [!div class="checklist"]    

@@ -38,8 +38,9 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> **Note**: This feature is available only in Azure DevOps.
-In addition, Stakeholders and Basic users cannot create or manage configurations.
+> [!NOTE]
+> This feature is available only in Azure DevOps.
+> In addition, Stakeholders and Basic users cannot create or manage configurations.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
@@ -157,7 +158,7 @@ The same test case can have different configuration settings in different test s
 
 ## See also
 
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

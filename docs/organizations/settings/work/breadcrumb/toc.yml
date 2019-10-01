@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Process Customization
-    tocHref: /azure/devops/organizations/settings/work/
-    topicHref: /azure/devops/reference/index
-    items:
-    - name: Inheritance Process
-      tocHref: /azure/devops/organizations/settings/work/
-      topicHref: /azure/devops/organizations/settings/work/index
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index

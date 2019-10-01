@@ -3,11 +3,11 @@ title: Add IP addresses and URLs to allow list - Azure DevOps
 description: Learn how to add IP addresses and URLs for Azure DevOps to the Allow list
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: jominana
 author: chcomley
 ms.manager: jillfra
-ms.date: 07/01/2019
+ms.date: 09/19/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -15,9 +15,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-If you or your organization uses security measures, such as a firewall or a proxy server, there are IP addresses and domain URLs that you might want to add to the Allow list.  Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
+If your organization uses security measures, such as a firewall or a proxy server, there are IP addresses and domain URLs that you might want to add to the Allow list. Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
 
-The endpoint data in the following chart, lists requirements for connectivity from a user’s machine to Azure DevOps. It doesn’t include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections.
+The endpoint data, in the following chart, lists requirements for connectivity from a user’s machine to Azure DevOps. The list doesn’t include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections.
 
 ## Azure DevOps IP addresses
 
@@ -32,19 +32,24 @@ Ensure the following IP addresses are allowed, so your organization works with a
 
 ## Azure DevOps domains
 
-For domain-based firewalls, ensure the following domains are allowed:
-
+For domain-based firewalls, ensure the following domains are allowed.
 
 |      Domains       |
 |--------------------|
 | - dev.azure.com/\* |
 | - \*.dev.azure.com |
 
-## Incoming IP addresses
+## SSH connections
 
-Azure DevOps' incoming traffic hits the service through IP addresses and domains used by Microsoft Azure data centers or third party providers.
-1.  To get the list of Azure IP ranges and Service Tags for Public Cloud, see [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). This link provides the IP address ranges for global Azure as a whole, each Azure region within Public Cloud, and ranges for several Azure Services (Service Tags) such as Storage, SQL, and Azure Traffic Manager in Public Cloud.
-2.  Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
+If you need to connect to Git repositories on Azure DevOps with SSH, you need to allow requests to port 22 for the following:
+
+- ssh.dev.azure.com
+- ssh.visualstudio.com
+- all IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud
+
+## Other domains
+
+Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
 
 - *.vsassets.io 
 - *.vsassetscdn.azure.cn 
@@ -74,9 +79,21 @@ If your organization uses ExpressRoute, ensure the following addresses are allow
 
 For more information about Azure DevOps and ExpressRoute, see [ExpressRoute for Azure DevOps](https://devblogs.microsoft.com/devops/expressroute-for-azure-devops/). 
 
+## Using Microsoft-hosted Agents
+
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
+
 ## Connecting Private Build Agents
 
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQ](../../pipelines/agents/v2-windows.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
+
+## Hosted Windows and Linux Agents
+
+For more information about hosted Windows and Linux agents, see [Microsoft-hosted Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges).
+
+## Hosted Mac Agents
+
+Unfortunately, currently we don't publish hosted Mac IP address ranges.
 
 ## Azure DevOps Import Service
 
@@ -86,7 +103,7 @@ During the import process, we highly recommend that you restrict access to your 
 
 ### Visual Studio and Azure Services
 
-If you or your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
+If your organization use security measures, like a firewall or a proxy server, add domain URLs to the Allow list. Open ports and protocols also, for the best experience with Visual Studio and Azure Services. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
 
 ## Other important URLs to consider
 

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 07/26/2019
+ms.date: 08/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -180,6 +180,11 @@ using [containers](#container-resource) and [repositories](#repository-resource)
 
 A stage is a collection of related jobs.
 By default, stages run sequentially, starting only after the stage ahead of them has completed.
+
+You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
+
+Currently, manual approval checks are supported on [environments](#environment). 
+For more information, see [Approvals](process/approvals.md).
 
 # [Schema](#tab/schema)
 
@@ -445,7 +450,6 @@ jobs:
   strategy:
     runOnce:
       deploy:
-      displayName: string                 # friendly name to display in the UI
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
@@ -469,6 +473,7 @@ jobs:
         - script: echo my first deployment
 ```
 ::: moniker-end
+
 ---
 
 ## Steps
@@ -1635,6 +1640,18 @@ Or to avoid syncing sources at all:
 ```yaml
 steps:
 - checkout: none
+```
+
+> [!NOTE]
+> If you want to modify the current repository using git operations and/or load git submodules, 
+> make sure to give the proper permissions to the "Project Collection Build Service Accounts" user
+> if you are running the agent in Local Service Account.
+
+```yaml
+steps:
+- checkout: self
+  submodules: true
+  persistCredentials: true
 ```
 
 # [Example](#tab/example)
