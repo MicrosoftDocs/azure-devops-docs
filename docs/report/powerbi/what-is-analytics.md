@@ -36,7 +36,7 @@ Once you've [enabled or installed Analytics](../dashboards/analytics-extension.m
 
 ::: moniker-end
 
-You can access Analytics through dashboard widgets, in-context reports, Power BI, and OData. In addition to the [work tracking widgets](../dashboards/analytics-widgets.md), you can [analyze test results](../../pipelines/test/test-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json) via the test analytic charts for builds and releases. 
+You can access Analytics through dashboard widgets, in-context reports, Power BI, and OData. In addition to the [work tracking widgets](../dashboards/analytics-widgets.md), you can [analyze test results](../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) via the test analytic charts for builds and releases. 
 
 ## Dashboard widgets
 

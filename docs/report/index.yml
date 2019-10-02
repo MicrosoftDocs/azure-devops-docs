@@ -1,18 +1,18 @@
 ### YamlMime:Landing
 
-title: Azure Boards documentation
-summary: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
+title: Azure DevOps Reporting documentation
+summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. Get started with reporting in Azure DevOps by learning about the various features.
 
 metadata:
-  title: Azure Boards documentation
-  description: Plan, track, and discuss work across teams. Define and update issues, bugs, user stories, & other work with customizable Scrum, Kanban, and Agile tools. 
+  title: Azure DevOps Reporting documentation
+  description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
   ms.service: visual-studio-online
   ms.prod: devops 
-  ms.technology: devops-agile
+  ms.technology: devops-analytics
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/30/2019 
+  ms.date: 10/04/2019 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -20,157 +20,95 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Azure Boards
+  - title: Configure charts & dashboards
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Boards?
-            url: ./boards/get-started/what-is-azure-boards.md
-          - text: Backlogs, boards, taskboards, and delivery plans
-            url: ./boards/get-started/what-is-azure-boards.md
+          - text: About dashboards, charts, reports & widgets
+            url: ./dashboards/overview.md
+          - text: Quick reference
+            url: ./dashboards/quick-ref.md
+          - text: Widget catalog
+            url: ./dashboards/widget-catalog.md
+      - linkListType: Tutorial
+        links:
+          - text: Add, rename, and delete dashboards
+            url: ./dashboards/dashboards.md
+          - text: Add a widget to a dashboard
+            url: ./dashboards/add-widget-to-dashboard.md
+          - text: Configure Burndown & Burnup widgets
+            url: ./dashboards/configure-burndown-burnup-widgets.md
+          - text: View and configure team velocity
+            url: ./dashboards/team-velocity.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create status and trend query-based charts
+            url: ./dashboards/charts.md
+  - title: Create Power BI reports
     linkLists:
-      - linkListType: video
+      - linkListType: overview
         links:
-          - text: What is Azure Boards?
-            url: https://sec.ch9.ms/ch9/6f7f/424c1d79-4896-4b8e-9034-0aa80ecb6f7f/AzureBoards_high.mp4
-      - linkListType: concept
-        links:
-          - text: Choose a process
-            url: ./work-items/guidance/choose-process.md
-          - text: Agile process workflow
-            url: ./work-items/guidance/agile-process-workflow.md
-          - text: About work items
-            url: ./work-items/about-work-items.md
-          - text: About teams and Agile tools
-            url: ../organizations/settings/about-teams-and-settings.md
-  - title: Get started
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Sign up for free
-            url: ./get-started/sign-up-invite-teammates.md
-          - text: Plan and track work
-            url: ./get-started/plan-track-work.md
-          - text: Create your backlog
-            url: ./backlogs/create-your-backlog.md
+          - text: About Power BI integration
+            url: ./powerbi/overview.md
+          - text: What is Analytics
+            url: ./powerbi/what-is-analytics.md
+          - text: What are Analytics views?
+            url: ./powerbi/what-are-analytics-views.md
       - linkListType: tutorial
         links:
-          - text: Define features and epics
-            url: ./backlogs/define-features-epics.md
-          - text: Bulk add or modify work items
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-          - text: Move, change, delete, or restore work items  
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-  - title: Find and list work items
+          - text: Create an Analytics view
+            url: ./powerbi/analytics-views-create.md
+          - text: Connect to Power BI data connector 
+            url: ./powerbi/data-connector-connect.md
+          - text: Create a Power BI report with an OData Query
+            url: ./powerbi/create-quick-report-odataq.md
+  - title: Extend Analytics with OData (Preview)
     linkLists:
+      - linkListType: overview
+        links:
+          - text: About Power BI integration
+            url: ./powerbi/overview.md
+          - text: Quick reference
+            url: ./extend-analytics/quick-ref.md
       - linkListType: tutorial
         links:
-          - text: Create managed queries
-            url: ./queries/using-queries.md
-          - text: Perform ad hoc searches
-            url: ./queries/search-box-queries.md
-      - linkListType: concept
-        links:
-          - text: Link work items
-            url: ./queries/link-work-items-support-traceability.md
+          - text: Query work tracking data
+            url: ./extend-analytics/wit-analytics.md
+          - text: Project and organization-scoped queries
+            url: ./extend-analytics/account-scoped-queries.md
+          - text: Aggregate work tracking data
+            url: ./extend-analytics/aggregated-data-analytics.md
       - linkListType: reference
         links:
-          - text: Query quick reference
-            url: ./queries/query-index-quick-ref.md
-  - title: Plan and monitor sprints (Scrum)
+          - text: Query guidelines for Analytics with OData
+            url: ./extend-analytics/odata-query-guidelines.md
+  - title: View SQL Server Reports (Legacy)
     linkLists:
-      - linkListType: tutorial
+      - linkListType: overview
         links:
-          - text: Assign work to sprints
-            url: ./sprints/assign-work-sprint.md
-          - text: Set capacity
-            url: ./sprints/set-capacity.md
-          - text: Monitor sprint burndown
-            url: ./sprints/sprint-burndown.md
-  - title: Integrate with GitHub
-    linkLists:
-      - linkListType: quickstart
+          - text: Reporting Services reports
+            url: ./sql-reports/reporting-services-reports.md
+      - linkListType: how-to-guide
         links:
-          - text: Connect Azure Boards to GitHub
-            url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, and issues to work items
-            url: ./github/link-to-from-github.md
-          - text: Configure status badges
-            url: ./github/configure-status-badges.md
-  - title: Agile at Scale
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Portfolio management
-            url: ./plans/portfolio-management.md
-          - text: Configure a hierarchy of teams
-            url: ./plans/configure-hierarchical-teams.md
-          - text: Visibility across teams
-            url: ./plans/visibility-across-teams.md
-  - title: Troubleshoot
+          - text: Create Excel reports from a work item query
+            url: ./excel/create-status-and-trend-excel-reports.md
+          - text: Create a Detailed Report using Report Designer
+            url: ./sql-reports/create-a-detailed-report-using-report-designer.md
+          - text: Add reports to a team project
+            url: ./admin/add-reports-to-a-team-project.md
+  - title: Develop widgets and dashboard exensions
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Fix re-ordering and nesting issues
-            url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: Set up your Backlogs and Boards
-            url: ./backlogs/set-up-your-backlog.md
-  - title: Configure
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Set area paths
-            url: ../organizations/settings/set-area-paths.md
-          - text: Set iteration paths (aka sprints)
-            url: ../organizations/settings/set-iteration-paths-sprints.md
-      - linkListType: how-to-guide
-        links:
-          - text: Configure a Kanban board
-            url: ./get-started/customize-boards.md
-          - text: Configure a Taskboard
-            url: ./sprints/customize-taskboard.md
-          - text: Manage and configure team tools
-            url: ../organizations/settings/manage-teams.md
-  - title: Customize work tracking
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Add a custom field
-            url: ../organizations/settings/work/add-custom-field.md
-          - text: Add or modify work item types
-            url: ../organizations/settings/work/add-custom-wit.md
-      - linkListType: tutorial
-        links:
-          - text: Customize the workflow
-            url: ../organizations/settings/work/customize-process-workflow.md
-      - linkListType: concept
-        links:
-          - text: Inheritance process model
-            url: ../organizations/settings/work/inheritance-process-model.md
-          - text: On-premises XML process model
-            url: ../reference/on-premises-xml-process-model.md
-  - title: Manage permissions
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Set permissions and access for work tracking
-            url: ../organizations/security/set-permissions-access-work-tracking.md
-          - text: Set project-level permissions 
-            url: ../organizations/security/set-project-collection-level-permissions.md
-      - linkListType: reference
-        links:
-          - text: Default work tracking permissions
-            url: ../organizations/security/permissions-access-work-tracking.md
-  - title: Reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Work item field index
-            url: ./work-items/guidance/work-item-field.md
-          - text: Work items quick reference
-            url: ./work-items/quick-ref.md
-          - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/boards
-          - text: REST API
-            url: /rest/api/azure/devops/work
+          - text: Develop a web extension
+            url: ../extend/get-started/node.md
+          - text: Add a dashboard widget
+            url: ../extend/develop/add-dashboard-widget.md
+          - text: Add a chart
+            url: ../extend/develop/add-chart.md
+
+
+
+
+
 

@@ -1,5 +1,4 @@
 - name: SQL Reports (Legacy)
-  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Reporting Services Reports
   href: reporting-services-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Quickstarts

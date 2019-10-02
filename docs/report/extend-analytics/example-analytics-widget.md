@@ -59,5 +59,5 @@ To avoid excess complexity in the sample, we omitted certain technologies and pr
 
 ## Related articles
 
-- [What is Analytics?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [What is Analytics?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Widgets based on Analytics](../dashboards/analytics-widgets.md)
