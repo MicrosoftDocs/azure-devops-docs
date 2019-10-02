@@ -2,12 +2,12 @@
 title: Post Import
 description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps.
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-learn
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---

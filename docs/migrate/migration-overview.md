@@ -2,12 +2,12 @@
 title: Migration overview from Azure DevOps Server to Azure DevOps Services | Azure DevOps 
 description: Overview of the high fidelity migration process from Azure DevOps Server to Azure DevOps Services
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-learn
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
