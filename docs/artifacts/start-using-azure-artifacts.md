@@ -26,7 +26,6 @@ Ensure that the following statements are true:
 - [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 
-::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
 

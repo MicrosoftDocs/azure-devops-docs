@@ -1,5 +1,4 @@
-- name: Dashboards, Reports, & Widgets
-- name: About dashboards & reports
+- name: Dashboards, charts, reports, & widgets
   displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
   href: overview.md
 - name: Quick reference
