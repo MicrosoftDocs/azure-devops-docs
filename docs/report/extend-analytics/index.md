@@ -57,8 +57,8 @@ Planned:Understand Agile process data
 
  
 ## Resources
-- [PowerBI](../powerbi/index.md)  
-- [Dashboards, Charts, Reports, & Widgets](../dashboards/index.md)  
+- [PowerBI](../powerbi/overview.md)  
+- [Dashboards, Charts, Reports, & Widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 

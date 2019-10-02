@@ -1,7 +1,5 @@
-- name: SharePoint Integration
-  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
 - name: About SharePoint integration
-  href: about-sharepoint-integration.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
+  href: about-sharepoint-integration.md
 - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
   href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts

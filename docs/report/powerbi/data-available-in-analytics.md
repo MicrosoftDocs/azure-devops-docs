@@ -39,13 +39,13 @@ Currently, you can access the following data from Analytics. This information wa
 <tbody valign="top">
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/boards/" data-raw-source="[Boards](https://azure.microsoft.com/services/devops/boards/)">Boards</a></td>
-<td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a>, <a href="overview.md" data-raw-source="[Power BI](overview.md)">Power BI</a></td>
+<td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a>, <a href="overview.md" data-raw-source="[Power BI](overview.md)">Power BI</a></td>
 <td>Same as Azure DevOps Services</td>
 <td></td>
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Build</a></td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics, <a href="https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops"data-raw-source="[Pipeline Analytics](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)">Pipeline Analytics, <a href="https://docs.microsoft.com/azure/devops/report/extend-analytics/index"data-raw-source="[OData Preview](/azure/devops/report/extend-analytics/index.md)">OData Preview</a></a></td>
+<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics, <a href="https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops"data-raw-source="[Pipeline Analytics](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)">Pipeline Analytics, <a href="https://docs.microsoft.com/azure/devops/report/extend-analytics/index"data-raw-source="[OData Preview](/azure/devops/report/extend-analytics/quick-ref.md)">OData Preview</a></a></td>
 <td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
 <td></td>
 </tr>

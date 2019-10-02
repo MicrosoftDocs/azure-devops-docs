@@ -345,8 +345,8 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 ## Resources 
 
 ::: moniker range=">= azure-devops-2019"  
-- [Power BI Integration](../powerbi/index.md)
-- [Extend Analytics with OData](../extend-analytics/index.md)
+- [Power BI Integration](../powerbi/overview.md)
+- [Extend Analytics with OData](../extend-analytics/quick-ref.md)
 - [Azure Pipelines](../../pipelines/index.yml)
 - [Azure Boards](/azure/devops/boards/index)
 - [Azure Test Plans](/azure/devops/test/index-tp)
