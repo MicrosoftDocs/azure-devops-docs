@@ -14,11 +14,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 2/14/2019
 ---
 
-<a id="adjust-work">  </a>
+
 
 # 4. Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+
+<a id="adjust-work">  </a>
 
 After you've defined all the tasks for all the sprint backlog items, you'll want to check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
