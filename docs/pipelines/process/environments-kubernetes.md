@@ -31,6 +31,7 @@ The advantages of using Kubernetes resource views within environments include -
 
 ## Kubernetes resource creation
 <h3 id="resource-creation-aks">Azure Kubernetes Service</h3>
+
 A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) is created in the chosen cluster and namespace. For an RBAC enabled cluster, [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) is created as well to limit the scope of the created service account to the chosen namespace. For an RBAC disabled cluster, the ServiceAccount created has cluster-wide privileges (across namespaces).
 
 1. In the environment details page, click on **Add resource** and choose **Kubernetes**.
