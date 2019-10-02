@@ -1,7 +1,9 @@
 - name: Azure Artifacts Documentation
   href: index.yml
-- name: What is Azure Artifacts?   href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-- name: Start using Azure Artifacts   href: start-using-azure-artifacts.md
+- name: What is Azure Artifacts?
+  href: overview.md
+- name: Start using Azure Artifacts
+  href: start-using-azure-artifacts.md
 - name: Key concepts
   href: artifacts-key-concepts.md
 - name: Quickstarts
@@ -35,15 +37,15 @@
   # - name: Install packages from Artifacts feeds
   #   href: tbd
   - name: NuGet
-    href: /azure/devops/pipelines/artifacts/nuget?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - name: npm 
-    href: /azure/devops/pipelines/artifacts/npm?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - name: Maven
-    href: /azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/packages/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - name: Python
-    href: /azure/devops/pipelines/targets/pypi?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/targets/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - name: Universal
-    href: /azure/devops/pipelines/artifacts/universal-packages?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Best practices
@@ -120,8 +122,6 @@
     href: feeds/feed-permissions.md
   - name: Set up upstream sources
     href: how-to/set-up-upstream-sources.md
-  # - name: Set up Jenkins + NuGet - if this has low views, delete it
-  #   href: /azure/devops/pipelines/packages/jenkins?toc=/azure/devops/artifacts/toc.json
   - name: Use badges to share your packages
     href: package-badges.md
   - name: Delete and recover packages

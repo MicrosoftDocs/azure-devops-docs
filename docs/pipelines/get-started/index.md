@@ -50,4 +50,4 @@ The [Key concepts for Azure Pipelines guide](key-pipelines-concepts.md) explains
 ## Related articles
 
 - [Azure Repos](../../repos/index.yml)
-- [Azure Artifacts](../../artifacts/index.md)
+- [Azure Artifacts](../../artifacts/index.yml)

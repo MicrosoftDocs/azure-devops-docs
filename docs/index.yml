@@ -193,7 +193,7 @@ additionalContent:
               url: ./report/dashboards/charts.md
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
-            - url: ./report/index.md
+            - url: ./report/index.yml
               text: "See more >"
         # Card
         - title: Collaborate

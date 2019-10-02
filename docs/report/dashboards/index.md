@@ -291,18 +291,18 @@ You add widgets to dashboards to quickly add charts and information to a dashboa
 
 ::: moniker range="<= tfs-2018" 
 
-- [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [View the built-in velocity chart](team-velocity.md)
-- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 
 ::: moniker-end
 
 
 ## Concepts
 
-- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Velocity metrics and usage guidance](velocity-guidance.md)
-- [Burndown guidance](burndown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
+- [Burndown guidance](burndown-guidance.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 
 
 ## How-to Guides

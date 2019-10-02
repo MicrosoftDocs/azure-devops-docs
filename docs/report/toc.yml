@@ -1,6 +1,6 @@
 - name: Reporting
   expanded: false
-  href: index.md  
+  href: index.yml
 - name: Reporting roadmap 
   href: powerbi/reporting-roadmap.md
 - name: Dashboards, Charts, Reports, & Widgets   

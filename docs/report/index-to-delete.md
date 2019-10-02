@@ -148,13 +148,13 @@ Reporting in Azure DevOps enables software development teams to make data driven
                             <a href="/azure/devops/report/sql-reports/">Reporting Services Reports</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/report/excel/create-status-and-trend-excel-reports?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json">Create Excel reports</a>
+                            <a href="/azure/devops/report/excel/create-status-and-trend-excel-reports?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json">Create Excel reports</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/report/admin/grant-permissions-to-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json">Grant permissions to view or create reports</a>
+                            <a href="/azure/devops/report/admin/grant-permissions-to-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json">Grant permissions to view or create reports</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/report/admin/manage-reports-data-warehouse-cube?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json">Manage the data warehouse and analysis services cube</a>
+                            <a href="/azure/devops/report/admin/manage-reports-data-warehouse-cube?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json">Manage the data warehouse and analysis services cube</a>
                         </p>
                     </div>
                 </div>
