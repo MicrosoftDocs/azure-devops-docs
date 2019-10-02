@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Emails from subscriptions or notifications are delayed
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 Learn why you may not be receiving an expected notification email, and how to check the notification statistics.
 

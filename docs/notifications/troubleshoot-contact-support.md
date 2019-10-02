@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Contact support
 
-[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 
 If you've reviewed the troubleshooting sections and can't resolve your issue, please consider opening a free support ticket.
