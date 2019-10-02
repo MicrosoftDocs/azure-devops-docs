@@ -12,23 +12,7 @@ ms.date: 4/8/2019
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range="azure-devops"
-
 # Use Azure Pipelines
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# Use Azure DevOps Server Pipelines
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-# Use build and release
-
-::: moniker-end
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
