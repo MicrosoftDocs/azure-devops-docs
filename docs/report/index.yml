@@ -30,7 +30,7 @@ landingContent:
             url: ./dashboards/quick-ref.md
           - text: Widget catalog
             url: ./dashboards/widget-catalog.md
-      - linkListType: Tutorial
+      - linkListType: tutorial
         links:
           - text: Add, rename, and delete dashboards
             url: ./dashboards/dashboards.md
@@ -96,7 +96,7 @@ landingContent:
             url: ./sql-reports/create-a-detailed-report-using-report-designer.md
           - text: Add reports to a team project
             url: ./admin/add-reports-to-a-team-project.md
-  - title: Develop widgets and dashboard exensions
+  - title: Develop widgets and dashboard extensions
     linkLists:
       - linkListType: how-to-guide
         links:

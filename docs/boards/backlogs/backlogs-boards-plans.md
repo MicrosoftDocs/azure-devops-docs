@@ -14,23 +14,22 @@ monikerRange: '>= tfs-2013'
 ms.date: 08/24/2019
 ---
 
-::: moniker range=">= tfs-2017"
 
-# Tasks supported by Backlogs, Boards, Taskboards, and Delivery plans 
+
+# Tasks supported by Backlogs, Boards, & Taskboards, 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each?
+::: moniker range=">= tfs-2017"
+
+What can you do from a backlog view versus a board view? How do these differ from delivery plans? How do changes you make in one show up on the other? What customizations can you make for each?
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-# Backlogs and boards
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each? 
+What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each?
+ 
 ::: moniker-end 
 
 Which view should you use to work with Agile methods?  

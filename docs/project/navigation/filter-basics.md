@@ -15,13 +15,9 @@ ms.date: 02/08/2019
 ---
   
 
-::: moniker range=">= azure-devops-2019"
-# Filter lists, boards, and directories 
-::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-# Filter lists and boards 
-::: moniker-end
+# Filter lists, boards, and directories 
+
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
 Several applications and pages support filtering, which is very useful when a large number of artifacts or items have been defined. Most directory views provide one or more filter functions. 

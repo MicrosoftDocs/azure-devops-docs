@@ -15,11 +15,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/15/2019
 ---
 
-<a id="set-capacity">  </a>
+
 
 # 3. Set sprint capacity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+
+<a id="set-capacity">  </a>
 
 As a next step, you'll want to determine your team's actual capacity. Whereas velocity correlates to how your team estimates requirements, capacity correlates to actual task time - either hours or days. Capacity takes into consideration the variation in work hours by team members as well as holidays, vacation days, and non-working days. 
 
