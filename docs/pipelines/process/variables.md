@@ -67,7 +67,10 @@ steps:
 In the YAML file, you can set a variable at various scopes:
 
 - At the root level, to make it available to all jobs in the pipeline
+- At the stage level, to make it available only to a specific stage
 - At the job level, to make it available only to a specific job
+
+Variables at the job level override variables at the root and stage level. Variables at the stage level override variables at the root level. 
 
 ```yaml
 variables:
