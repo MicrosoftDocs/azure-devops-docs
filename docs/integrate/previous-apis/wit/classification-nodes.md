@@ -728,7 +728,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classi
 ### Getting Started
 <a name="samples-getting-started" />
 
-If this is your first time using the REST API's or .Net Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first.
+If this is your first time using the REST API's or .NET Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first.
 
 >All sample source code can be found in [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 

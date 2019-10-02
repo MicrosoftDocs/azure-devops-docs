@@ -67,9 +67,9 @@ using (var client = new HttpClient())
 
 ```
 
-## .Net Client Libraries
+## .NET Client Libraries
 
-In this example we are using two of the .Net Client Libraries. Make sure these are referenced within your .net project.
+In this example we are using two of the .NET Client Libraries. Make sure these are referenced within your .net project.
 
 [TFS Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 
