@@ -156,7 +156,7 @@ Many jobs have cleanup steps which need to run no matter what else happened, so 
 Cleanup steps might also be set to run only on [cancellation](#timeouts-and-disconnects).
 A succeeding cleanup step cannot save the job from failing; jobs can never go back to success after entering failure.
 
-# Timeouts and disconnects
+## Timeouts and disconnects
 
 Each job has a timeout.
 If the job has not completed in the specified time, the server will cancel the job.
