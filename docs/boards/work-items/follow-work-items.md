@@ -21,7 +21,13 @@ ms.date: 11/19/2018
 
 <a id="follow"></a>  
 
-To get notified of changes made to a work item or a pull request, you can elect to follow them. 
+To get notified of changes made to a specific work item or a pull request, you can elect to follow them. To subscribe to receive notifications of other changes that occur, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+
+> [!NOTE]  
+> Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/howto-manage-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
+>
+> ![Work item notification templates](_img/follow-work/work-item-notifications.png) 
+
 
 This article shows you how to:
 
@@ -56,13 +62,32 @@ This article shows you how to:
 
 ::: moniker-end 
 
+follow-work-with-notifications
 
 ## Follow a work item
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
+::: moniker range="azure-devops"
+
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
+
+If you want to specify conditions on when you'll get notified of changes, choose the ![ ](../_img/icons/gear_icon.png) gear icon and choose from the options provided. 
+
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Notification settings dialog for follow](_img/follow-work/notification-settings-for-follow.png) 
+
+By default, you are **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you are @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
+
+::: moniker-end
 
 ::: moniker range="tfs-2017"
 
