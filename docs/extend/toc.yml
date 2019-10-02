@@ -62,7 +62,7 @@
       href: develop/call-rest-api.md
     - name: Extensions for public projects
       href: develop/public-project.md
-    - name: New navigation (preview)
+    - name: Use vertical navigation
       href: develop/web-navigation.md
     - name: Work with URLs
       href: develop/work-with-urls.md      
