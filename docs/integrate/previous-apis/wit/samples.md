@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Tracking Samples | REST API Reference for Team Foundation Server
-description: Samples for work item tracking using the REST APIs and .Net Libraries for Team Foundation Server. 
+description: Samples for work item tracking using the REST APIs and .NET Libraries for Team Foundation Server. 
 ms.assetid: 6830FA0E-9EA6-4AD3-913D-9E3450315C13
 ms.manager: jillfra
 ms.topic: article
@@ -21,7 +21,7 @@ ms.date: 08/24/2016
 ## Getting Started Sample
 <a name="gettingstartedsample" />
 
-If this is your first time using the REST API's or .Net Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first. 
+If this is your first time using the REST API's or .NET Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first. 
 
 All sample source code is located at [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 
