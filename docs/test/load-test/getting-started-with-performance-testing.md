@@ -12,8 +12,8 @@ ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 
-<a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio and Azure DevOps
+<a name="cloudloadtest"></a>
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
