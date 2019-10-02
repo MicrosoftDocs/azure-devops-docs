@@ -12,19 +12,10 @@ ms.date: 09/03/2019
 monikerRange: '>= tfs-2017'
 ---
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-# License Azure Artifacts
+# Sign up or license Azure Artifacts
 
-**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-# Sign up for Azure Artifacts
-
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../_shared/version-tfs-2017-through-vsts.md)]
 
 This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2 GB of storage. In the case that your organization needs more storage, you need to set up billing.
 

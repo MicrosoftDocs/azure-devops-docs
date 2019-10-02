@@ -15,13 +15,8 @@ ms.date: 11/19/2018
 ---
 
 
-::: moniker range=">= azure-devops-2019" 
-# Keyboard shortcuts for work item forms and the Work Items page
-::: moniker-end  
-
-::: moniker range="<= tfs-2018"  
 # Keyboard shortcuts for work item forms 
-::: moniker-end  
+  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 

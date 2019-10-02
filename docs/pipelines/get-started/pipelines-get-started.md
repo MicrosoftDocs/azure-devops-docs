@@ -12,29 +12,16 @@ ms.date: 4/8/2019
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range="azure-devops"
 
-# Use Azure Pipelines
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# Use Azure DevOps Server Pipelines
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-# Use build and release
-
-::: moniker-end
+# Use Azure Pipelines (formerly Build and Release)
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 You define your pipeline mostly in code in a YAML file alongside the rest of the code for your app. 
@@ -63,6 +50,7 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 You create and configure your build and release pipelines in the web portal with the classic editor.
 When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
 
