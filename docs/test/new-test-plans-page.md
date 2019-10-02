@@ -96,7 +96,3 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 - General:
 	- Performance improvements
 	- Enable [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops)
-
-<a name="feedback"></a>
-## Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the new page. In the process, share screenshots as appropriate.
