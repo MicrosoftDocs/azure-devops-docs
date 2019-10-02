@@ -62,14 +62,6 @@ With Power BI, you can pull data from [Azure DevOps Analytics](what-is-analytics
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 
 
-## Resources 
-
-- [Writing OData queries](../extend-analytics/quick-ref.md)
-- [Extend Analytics with OData](../extend-analytics/index.md)    
-- [Dashboards, Charts, Reports & Widgets](../dashboards/index.md)  
-- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
-- [Power BI Documentation](/power-bi)  
-
 
 
 

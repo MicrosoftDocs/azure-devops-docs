@@ -1,6 +1,5 @@
-- name: SQL Reports (Legacy)
 - name: Reporting Services Reports
-  href: reporting-services-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  href: reporting-services-reports.md
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
@@ -149,12 +148,12 @@
   - name: Address inaccuracies published for summary values
     href: address-inaccuracies-published-for-summary-values.md
   - name: Resolve schema conflicts in the data warehouse
-    href: ../admin/resolve-schema-conflicts.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../admin/resolve-schema-conflicts.md
 - name: Resources
   items:
   - name: Change reporting attributes
     href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: SharePoint Integration (Deprecated)
-    href: ../sharepoint-dashboards/index.md
+    href: ../sharepoint-dashboards/about-sharepoint-integration.md
   - name: Server Administration 
     href: /azure/devops/server/server/index

@@ -67,7 +67,7 @@ To get started with Power BI and Azure DevOps Analytics:
  
 ## OData
 
-Analytics is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/index.md).
+Analytics is fully accessible via OData. If you would like to prepare custom queries and tooling with our OData API, see [Extend on Analytics](../extend-analytics/quick-ref.md).
 
 ## Data available in Analytics
 
@@ -81,7 +81,7 @@ At this point, not all data is available via Analytics. For more information, re
 
 Azure DevOps Server 2019 and later versions support Analytics. TFS 2018 and earlier versions do not support Analytics.
 
-For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require Analytics. You may also use [SQL Server Reporting](../sql-reports/index.md). 
+For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require Analytics. You may also use [SQL Server Reporting](../sql-reports/reporting-services-reports.md). 
 
 ::: moniker-end
 
