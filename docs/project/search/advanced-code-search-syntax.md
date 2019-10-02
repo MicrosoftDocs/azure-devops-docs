@@ -247,7 +247,8 @@ Narrow the search to a specific location using the `proj`, `repo`, or `path` fil
 Narrow the search to specific files using the `file` or `ext` filters:
 
 * `QueueJobsNow file:queueRegister*` finds all occurrences of the word **QueueJobsNow** in all 
-  files where the filename starts with **queueRegister**.
+  files where the filename starts with **queueRegister**. 
+* Searching for filename within quotes will match the files with the exact name. file:"queueRegister" will match all files with the name   queueRegister without any extension
 * `QueueJobsNow ext:cs` finds all occurrences of the word **QueueJobsNow** in only C# source files.
 * A plain text search string that does not include file type functions 
   will also find files where the string matches part of the filename.
