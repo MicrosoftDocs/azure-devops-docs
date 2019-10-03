@@ -17,7 +17,7 @@ monikerRange: '>= azure-devops'
 
 A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring or execution. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page is in public preview and is being made default for all Test Plans users. The new page has most of the capabilities from the prior page and provides few fresh capabilities too. Additional capabilities will be added every 3 weeks. See list on what's coming [next](#journey). The prior Test Plans page can still be accessed for some more time until we ensure that the new page has all of its capabilities. We highly recommend leveraging the new page and sharing your feedback with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
+This new page is in public preview and is being made default for all Test Plans users. The new page has most of the capabilities from the prior page and provides few fresh capabilities too. Additional capabilities will be added every 3 weeks. See list on what's coming [next](#journey). The prior Test Plans page can still be accessed for some more time until we ensure that the new page has all of its capabilities. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
 1. Sign-in into your Azure DevOps Services organization
 2. Click on your Avatar on the top right and navigate to "Preview Features"
