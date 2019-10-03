@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 07/19/2019
+ms.date: 10/02/2019
 ---
 
 # Query by date or current iteration
@@ -137,6 +137,13 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
     <p>Items closed within a specified time period</p>
   </td>
   <td><img src="_img/q-by-closed-time-period.png" alt="Clause for finding items closed within a specified time period"/>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Items that haven't been closed (Closed Date is null)</p>
+  </td>
+  <td><img src="_img/q-closed-date-null.png" alt="Clause for finding items whose Closed Date is empty or null"/>
   </td>
 </tr>
 <tr>

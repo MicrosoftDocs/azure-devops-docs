@@ -11,14 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 02/07/2019
+ms.date: 10/02/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
+When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
 ## Supported operators and macros 
 
@@ -51,8 +51,16 @@ Query clauses that specify a text or rich-text field can use the operators and m
 </table>
 
 #### Notes:  
+
 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+
+
+## Use `Contains words` for string matches
+ 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. 
+
+While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
 
 <a id="keyword"/>
@@ -64,6 +72,11 @@ Use **Contains** or **Contains Words** to list items that partially or exactly m
 ![Editor for flat list query for filtering key words](_img/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
+
+For example, specify **Contains Words** and <strong>inform&#42;</strong> to filter on a text field that contains *inform* or *information* or *informational*. 
+
+> [!div class="mx-imgBorder"] 
+> ![Use wild card with Contains Words](_img/text-queries/contains-word-wildcard.png)
 
 
 <a id="undefined-value"/>

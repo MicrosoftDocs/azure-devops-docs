@@ -12,17 +12,14 @@ ms.date: 09/03/2019
 monikerRange: '>= tfs-2017'
 ---
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+# Sign up for Azure Artifacts
 
-# License Azure Artifacts
+**Azure DevOps** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
 
-**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
-
-::: moniker-end
+> [!NOTE]
+> If you are using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
 
 ::: moniker range="azure-devops"
-
-# Sign up for Azure Artifacts
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
