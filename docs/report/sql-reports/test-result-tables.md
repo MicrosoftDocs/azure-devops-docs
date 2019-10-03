@@ -8,7 +8,7 @@ description: Query for data about test results
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Test Result tables

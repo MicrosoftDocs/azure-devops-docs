@@ -3,8 +3,8 @@ title: Migrate & Import Documentation
 titleSuffix: Azure DevOps
 description: Learn how to migrate from on-premises to cloud hosted Azure DevOps services; import data into Azure DevOps.
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.manager: jillfra
 ms.date: 01/04/2018
 ms.author: kaelli

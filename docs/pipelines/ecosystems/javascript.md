@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
+ms.author: jukullam
+author: juliakm
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019

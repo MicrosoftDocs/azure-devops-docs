@@ -206,8 +206,6 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: Collect screenshots and video
-      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -526,7 +524,7 @@
         href: tasks/utility/service-fabric-powershell.md
       - name: Shell script
         href: tasks/utility/shell-script.md
-      - name: Update Service Fabric App Versions
+      - name: Update Service Fabric Manifests
         href: tasks/utility/service-fabric-versioning.md
     - name: Test tasks
       items:
@@ -538,6 +536,8 @@
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
         href: tasks/test/cloud-based-web-performance-test.md
+      - name: Container Structure Test Task
+        href: tasks/test/container-structure-test-task.md
       - name: Publish Code Coverage Results
         href: tasks/test/publish-code-coverage-results.md
       - name: Publish Test Results

@@ -233,15 +233,12 @@ Bug Behavior
     <li>Add <code>Fixed and verified</code> as a Resolved Reason </li>
     </ul>
     </li>
-
     <li>CMMI Bug:
     <ul>
     <li> Add fields: <code>Size</code>, <code>Discipline</code>, <code>Original Work</code>, <code>Completed Work</code>, and <code>Value Area</code>   </li>
     <li>Add  <code>New</code> state and corresponding workflow transitions</li>
     </ul>
     </li>
-
-
     <li>Scrum Bug:<br/>    <ul>
     <li>Add fields: <code>Activity</code>, <code>Remaining Work</code>, <code>Priority</code>, and <code>Value Area</code></li>
     <li>Add rule to zero out <code>Remaining Work</code> when <code>State=Done</code></li>
@@ -300,15 +297,19 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 1. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 
-   ```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
+    ```
+    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"
+    ```
 
-       For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
+    For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
 
-       For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
+    For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
 
-   For  example,  import the Feedback Request WIT:
+    For  example,  import the Feedback Request WIT:
 
-   ```witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection"/p:MyProject /f:"C:\MyTemplates\WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml"``` 
+    ```
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection"/p:MyProject /f:"C:\MyTemplates\WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml"
+    ``` 
 
 Here's a checklist of WITs to import to support new features:   
 -   **Portfolio Backlogs**: Epic and Feature

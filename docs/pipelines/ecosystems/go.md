@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
+ms.author: jukullam
+author: juliakm
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 04/24/2019
