@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/02/2019
 ---
 
 
@@ -202,6 +202,15 @@ The following image shows the query results that are returned.
 
 ![Direct links query results](_img/example-work-item-queries/IC588291.png)  
 
+<a id="orphan-stories" />
+
+## List orphan user stories
+
+If you typically organize your user stories under features, you can quickly find those user stories that are orphan by opening the product backlog, enable Parents On view option,  and scroll down to the section that lists Unparented Stories (Agile) or Unparented Backlog items (Scrum)
+
+> [!div class="mx-imgBorder"]  
+> ![List orphan stories or backlog items](_img/link-attachments/list-orphan-stories.png) 
+
 <a id="table-field"/>
 
 ## Link and attachment count and comment fields 
@@ -258,6 +267,15 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <td><p>Link Description</p></td>
 <td><p>Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) </p>
 <p>Reference Name=System.Links.Description, Data type=PlainText</p></td>
+<td>All</td>
+</tr>
+<tr>
+<td><a id="parent"/>
+<p>Parent</p></td>
+<td><p>When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stories the ID of the work item within an Integer field. </p>
+<blockquote>The Parent field is available from Azure DevOps Services only at this time. You can't specify this field within a query clause. </blockquote> 
+<p>Reference Name=System.Parent, Data type=Integer</p>
+</td>
 <td>All</td>
 </tr>
 <tr>

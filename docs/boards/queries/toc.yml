@@ -26,29 +26,34 @@
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
-    displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria
+    displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria, Resolution, System Info, Team Project, Title, Work Item Type
   - name: Query by assignment or workflow changes
     href: query-by-workflow-changes.md 
-    displayname: Identity, Assigned To, Changed By, State, Reason, Board Column, Board Lane
+    displayname: Identity, Assigned To, Changed By, State, Reason, Board Column, Board Lane, Activated By, State Changed Date 
   - name: Query by area or iteration
     href: query-by-area-iteration-path.md   
     displayname: Area Path, Node Name, Iteration Path 
   - name: Query by date or current sprint
+    displayname: CurrentIteration, Activated, Change, Closed, Created, Due, Target, Finish Date, Iteration Path, Resolved Date, Start Date, State Change 
     href: query-by-date-or-current-iteration.md  
   - name: Query based on tags
     href: add-tags-to-work-items.md#query
   - name: Query history
+    displayname: revision, rev, Contains Words, Watermark
     href: history-and-auditing.md  
-    displayname: revision, rev, Contains Words
   - name: Query by field comparison
     href: query-field-value.md   
   - name: Query by a numeric field
+    displayname: Activity, Business Value, Completed Work, Remaining Work, Original Estimate, Discipline, Effort, Story Points, Size, Task Type
     href: query-numeric.md  
   - name: Query by picklist value
+    displayname: Backlog Priority, Blocked, Committed, Escalate, Priority, Risk, Severity, Stack Rank, Time Criticality, Triage, Value Area 
     href: planning-ranking-priorities.md  
   - name: Query by links or attachments
+    displayname: Attachment File Count, Comment Count, External Link Count, Hyperlink Count, Link comment, Link Description, Related Link Count, Remote Link Count, Parent
     href: linking-attachments.md 
   - name: Query by build & test integration fields
+    displayname: Automation Status, Found In, Integration Build, Issue, Parameters, Steps, System Info, Repo Steps, Test Suite Type, Automated, Query Text, LocalDataSource
     href: build-test-integration.md  
 - name: How-to Guides
   items:

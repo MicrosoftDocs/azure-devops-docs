@@ -161,7 +161,9 @@ CFD reports are available for each backlog level, both product and portfolio bac
 
 1. Next, choose **View full report** for the Cumulative Flow Diagram.  
 
-1. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. Hover over a point in time to show how many work items are in a particular state. The default settings for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
+1. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. You can choose a Rolling period of 14 days or up to 180 days.  
+
+	Hover over a point in time to show how many work items are in a particular state. The default settings for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
 
 	For example, On July 3, 101 items were in a Research state.
 

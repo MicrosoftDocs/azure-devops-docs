@@ -21,7 +21,9 @@ ms.date: 11/19/2018
 
 <a id="follow"></a>  
 
-To get notified of changes made to a specific work item or a pull request, you can elect to follow them. To subscribe to receive notifications of other changes that occur, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
+To get notified of changes made to a specific work item or a pull request, you can elect to follow them. The Follow feature provides an ad hoc way of getting notified on a case-by-case basis. 
+
+On the other hand, if you want to subscribe to receive notifications automatically based on changes that occur based on your targeted set of criteria, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). For example, you can create a subscription to automatically get notified whenever a work item that you created or that was assigned to you is modified. 
 
 > [!NOTE]  
 > Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/howto-manage-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 

@@ -171,7 +171,7 @@ The following table indicates the operators and macros available for the differe
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
-<a id="samples' />
+<a id="samples" />
 
 ## Query samples for select fields 
 
