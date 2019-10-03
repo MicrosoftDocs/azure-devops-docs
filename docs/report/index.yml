@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure DevOps Reporting documentation
-summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. Get started with reporting in Azure DevOps by learning about the various features.
+summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. 
 
 metadata:
   title: Azure DevOps Reporting documentation
@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/04/2019 
+  ms.date: 10/03/2019 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
