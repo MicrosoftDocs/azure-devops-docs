@@ -37,15 +37,15 @@ To learn more about collecting and publishing code coverage results for the lang
 
 Once you have configured a pipeline that collects and publishes code coverage, it posts a code coverage status when a pull request is raised. By default, the server checks for atleast 70% of changed lines being covered by tests. The diff coverage threshold target can be changed to a value of your choice. See the settings configuration section below to learn more about this. 
 
-![coverageStatusCheck](_img/coveragestatuscheck.png)
+![coverageStatusCheck](_img/codecoverage-for-pullrequests/coveragestatuscheck.png)
 
 The status check evaluates the diff coverage value for all the code files in the pull request. If you would like to view the % diff coverage value for each of the files, you can turn on details as mentioned in the configuration section. Turning on details posts details as a comment in the pull request.
 
-![coverageDetailComments](_img/coverageDetailsComments.png)
+![coverageDetailComments](_img/codecoverage-for-pullrequests/coverageDetailsComments.png)
 
 In the changed files view of a pull request, lines that are changed are also annotated with coverage indicators to show whether those lines are covered.
 
-![coverageIndicatorsPR](_img/coverageIndicatorsPR.png)
+![coverageIndicatorsPR](_img/codecoverage-for-pullrequests/coverageIndicatorsPR.png)
 
 > [!NOTE] 
 > While you can build code from a wide variety of version control systems that Azure Pipelines supports, the 'code coverage for pull requests' feature discussed in this document is currently available only for Azure Repos.
@@ -79,5 +79,14 @@ Code coverage status check for pull requests is only a suggestion for developers
 > [!NOTE] 
 > Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior is not specific to code coverage policy.
 
+## Q&A
+
+### Which coverage tools and result formats can be used for validating code coverage in pull requests?
+Code coverage for pull requests capability is currently only available for Visual Studio code coverage (.coverage) formats. This can be used if you publish code coverage using the Visual Studio Test task, the test verb of dotnet core task and the TRX option of the publish test results task.
+Support for other coverage tools and result formats will be added in future milestones.
+
+### If multiple pipelines are triggered when a pull request is raised, will coverage be merged across the pipelines?
+If multiple pipelines are triggered when a pull request is raised, code coverage will not be merged. The capability is currently designed for a single pipeline that collects and publishes code coverage for pull requests. 
+If you need the ability to merge coverage data across pipelines, please file a feature request on [developer community]https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
