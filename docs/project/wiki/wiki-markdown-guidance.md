@@ -1,17 +1,17 @@
 ---
 title: Markdown syntax for wikis in Azure DevOps
-titleSuffix: Azure DevOps 
-description: Learn how to share information, add tables & mathematical notation using Markdown within wikis  
+titleSuffix: Azure DevOps
+description: Learn how to share information, add tables & mathematical notation using Markdown within wikis
 ms.prod: devops
 ms.technology: devops-collab
-ms.assetid: 
+ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 09/16/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -29,7 +29,7 @@ Here you can find some Wiki-specific Markdown syntax guidance for use in Azure D
 
 You can now just add a tag [[\_TOC\_]] to enable a table of contents in your page. The TOC is generated when the tag is added and there is at least one heading in the page.
 
-> [!div class="mx-imgBorder"]  
+> [!div class="mx-imgBorder"]
 > ![Table of contents](_img/toc_sample.png)
 
 The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
@@ -39,16 +39,44 @@ All HTML and Markdown tags are stripped from the headings while adding it inside
 For example: Adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
-> [![Tags for TOC](_img/toc_tags.png)
+> ![Tags for TOC](_img/toc_tags.png)
 
 Consistency is maintained in the formatting in TOC.
 
-> [!NOTE] 
+> [!NOTE]
 > The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+## Add Mermaid diagrams to a Wiki page
+
+> [!NOTE] 
+> Mermaid diagram support was added in the [Sprint 158 update (September 23, 2019) release](/azure/devops/release-notes/2019/sprint-158-update#mermaid-diagram-support-in-wiki) and is in the process of deployment. Until deployment is completed, the feature is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization.
+
+Wiki supports the following Mermaid diagram types:
+
+1.	[Flowcharts](https://mermaidjs.github.io/#/flowchart)
+2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
+3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+
+To add Mermaid diagrams to a wiki page, use the following syntax:
+
+``` wiki-mermaid
+::: mermaid
+<mermaid diagram syntax>
+:::
+```
+
+Alternatively, there's also a toolbar button to add a default Mermaid diagram to a wiki page.
+
+![Mermaid diagram visual](_img/wiki/mermaid-diagram.png)
+
+> [!NOTE]
+> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+
+::: moniker-end
 
 ## Embed Videos in a Wiki page
 
@@ -83,13 +111,13 @@ tag: post
 title: Hello world
 ---
 ```
- 
+
 ![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
 
 Tags with list:
 ```yaml
 ---
-tags: 
+tags:
 - post
 - code
 - web
@@ -115,7 +143,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
 
 > ![Query Results Icon](_img/query_selector_icon.png)
-> 
+>
 > ![Query Selector Pane](_img/query_selector_pane.png)
 
 
@@ -147,8 +175,8 @@ Enter the pound sign (`#`), and then enter a work item ID.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
-> This feature is available with TFS 2018.2 and later versions.  
+> [!NOTE]
+> This feature is available with TFS 2018.2 and later versions.
 ::: moniker-end
 
 
@@ -159,7 +187,7 @@ Enter the pound sign (`#`), and then enter a work item ID.
 In wiki pages, you can also create rich content using HTML tags.
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
+> [!NOTE]
 > Pasting rich content as HTML is supported in TFS 2018.2 and later versions.
 ::: moniker-end
 
@@ -171,7 +199,7 @@ In wiki pages, you can also create rich content using HTML tags.
 </video>
 ```
 
-**For example:**  
+**For example:**
 ```HTML
 <video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
 </video>
@@ -190,7 +218,7 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><tt>This text is teletype text.</tt></p>
 <font color="blue">Colored text</font>
 <center>This text is center-aligned.</center>
-<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sup>superscript</sup> text.</p>
 <p>This text contains <sub>subscript</sub> text.</p>
 <p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
@@ -202,7 +230,7 @@ In wiki pages, you can also create rich content using HTML tags.
 <p><tt>This text is teletype text.</tt></p>
 <font color="blue">Colored text</font>
 <center>This text is center-aligned.</center>
-<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sup>superscript</sup> text.</p>
 <p>This text contains <sub>subscript</sub> text.</p>
 <p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>

@@ -87,8 +87,8 @@ The previous example illustrates how you can use the **Tracking Changeset** wind
 
 -   The branches to which the changeset has been merged (displayed in green), including the numbers of changesets in which the merge was implemented.
 
-	>**Tip:**  
-	>You can click one of these branches (for example, **Version2** in the previous example) to highlight all the merges that were required for the changeset to reach that branch.
+	> [!TIP]
+	> You can click one of these branches (for example, **Version2** in the previous example) to highlight all the merges that were required for the changeset to reach that branch.
 
 -   Whether the merge was a standard merge (solid line) or a baseless merge (dashed line).
 

@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Jan 30
 description: VSTS release notes for January 30 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: e856a07a-2d14-4846-8db7-0741898f2c85
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -83,4 +83,3 @@ Please check all these improvements out. As always, let us know what you think a
 Thanks,
 
 Brian Harry
-

@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 06/02/2019 
+ms.date: 08/23/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
@@ -69,7 +69,7 @@ When you plan a move, a few fundamental differences between Azure DevOps Server 
 ### Azure DevOps Services scales by using organizations and projects
 
 Azure DevOps Services differs slightly from Azure DevOps Server. There are currently only two options for scoping and scaling
-data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always have exactly one project collection. Organizations can have many projects, such as project collections.
+data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always have exactly one project collection. Organizations can have many projects within a collection.
 
 <!--- Commenting out forward looking content for now 
 We are planning a third option for scoping and scaling data in Azure DevOps Services: a new entity called an Enterprise. Rather than adding support for multiple project collections within an organization, multiple

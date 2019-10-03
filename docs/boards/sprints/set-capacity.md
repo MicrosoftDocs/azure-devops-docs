@@ -171,14 +171,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 	::: moniker-end  
 
-	<a id="customize-activity-list">  </a>  
-
-	::: moniker range="azure-devops"  
-
-	> [!NOTE]    
-	> Customizing the picklist of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
-
-	::: moniker-end
+	<a id="customize-activity-list">  </a> 
 
 	::: moniker range="azure-devops-2019"  
 
@@ -235,7 +228,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
+To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. This will not remove the user from the team.
 
 ::: moniker-end
 

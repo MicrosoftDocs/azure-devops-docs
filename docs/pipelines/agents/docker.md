@@ -6,8 +6,8 @@ description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.manager: jillfra
-ms.author: juliobv
-author: juliobbv
+ms.author: sdanie
+author: steved0x
 ms.date: 07/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
@@ -104,7 +104,7 @@ Next, we'll create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if (Test-Path Env:AZP_WORK) {
+    if (-not (Test-Path Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2019
+ms.date: 09/18/2019
 ---
 
 # About process customization and inherited processes  
@@ -27,7 +27,6 @@ To customize the work tracking system, you *customize* an inherited process thro
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
-
 <a id="what-you-can-customize">  </a>
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
 
@@ -38,6 +37,13 @@ You'll see two types of processes:
 
 - ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically updates your inherited process. 
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> The Basic process is available with Azure DevOps Server 2019 Update 1 and later versions.  
+
+::: moniker-end
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
 
@@ -56,6 +62,23 @@ For example, as shown in the following image, you see a list of  projects define
 Process names must be unique and 128 Unicode characters or less. Also, names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```. 
 
 To rename a process, open the &hellip; context menu for the process and choose **Edit**. 
+
+::: moniker range="azure-devops"
+
+## Change the reference process of a project 
+
+If you want to switch the process a project uses from one system process to another, you can do that. To make these changes, you must create an inherited process based on the process you want to switch to. For example, instructions are provided to support the following changes: 
+
+- [From Basic to Agile](change-process-agile-to-scrum.md)
+- [From Scrum to Agile](change-process-agile-to-scrum.md)
+- [From Agile to Scrum](change-process-agile-to-scrum.md)
+
+Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI. 
+
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The system processes are summarized in [Choose a process](../../../boards/work-items/guidance/choose-process.md).
+
+
+::: moniker-end
 
 
 ## Inherited objects versus custom objects 
@@ -187,14 +210,30 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-- You can't change the field name or data type once you've defined it - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+
+::: moniker range="azure-devops"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't change the picklist order, picklists display in alphabetic order
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
+
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
+
+::: moniker-end
 
 ### Configurable picklists 
 
@@ -244,6 +283,23 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+
+### Restrict modification of select fields for select user groups
+
+Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+
+- `current user is a member of a group...`
+- `current user is not a member of a group...`
+
+For example, you can make the Title or the State field Read-only for select users or groups. 
+
+### Restrict modification of closed work items 
+
+[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+
+### Restrict modification of work items based on Area Path 
+
+You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
 ## WIT customizations 
 
@@ -483,4 +539,6 @@ And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../
 ## Object limits
 
 For a list of limits placed on the number of fields, WITs, backlog levels, and other objects you can customize, see [Work tracking object limits](object-limits.md). 
+
+
 

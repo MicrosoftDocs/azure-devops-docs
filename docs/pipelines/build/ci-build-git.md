@@ -74,7 +74,7 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 * * *
 ## Automatically build a change in topic branch
 
-Your are now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
+You're now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
 
 Follow the steps below to edit a file and create a new topic branch.
 
@@ -165,9 +165,9 @@ YAML builds are not yet available on TFS.
 * * *
 ### Azure Pipelines or TFS repository
 
-1.  Navigate to the **Code** hub in Azure Repos or TFS.
-1.  Choose your **repository** and Select **Branches**.  Choose the **master branch**.
-1.  You will implement a branch policy to protect the master branch.  Select the **ellipsis** to the right of your branch name and Select **Branch policies**.
+1.  Navigate to the **Repos** hub in Azure Repos or TFS.
+1.  Choose your **repository** and select **Branches**.  Choose the **master branch**.
+1.  You will implement a branch policy to protect the master branch.  Select the **ellipsis** to the right of your branch name and select **Branch policies**.
 1.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.   
 1.  Under the **Build validation** menu choose **Add build policy**.
 1.  Choose the appropriate build pipeline.

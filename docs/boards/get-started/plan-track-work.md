@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/17/2019
+ms.date: 08/23/2019
 ---
 
 
@@ -35,7 +35,7 @@ The Basic process provides three work item types&mdash;epics, issues, and tasks&
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) 
+> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -49,7 +49,7 @@ The Agile process provides several work item types&mdash;for example, user stori
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) 
+> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -79,7 +79,6 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 #### [Basic process](#tab/basic-process) 
 
 The Issues Kanban board is the best tool for quickly adding issues and child tasks. To open, choose **Boards>Boards**.  
-
 ![Open your Kanban board](_img/track-issues/open-kanban-board-issues.png)  
 
 The Epics Kanban board is the best tool for quickly adding epics and issues that are children of those epics. 
@@ -474,23 +473,7 @@ In addition to the fields you can define for a user story, you can specify the f
 * * *
 
 
-<a id="discussion">  </a>
-
-## Capture comments in the Discussion section 
-
-Use the **Discussion** section within a form to add and review comments about the work under development. 
-
-> [!div class="mx-imgBorder"]  
-> ![Discussion section within a work item form](../backlogs/_img/discussion-section.png)   
-
-Use the <strong>@mention</strong> control to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference another issue, task, or work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
-
-The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
-
-> [!div class="mx-imgBorder"]  
-> ![Discussion section, Rich Text Editor toolbar](../queries/_img/share-plans/discussion-rich-text-editor-toolbar.png)  
-
-Use the icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-ID, and ![ ](../../_img/icons/pr-id.png) pull-request ID &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've previously selected. 
+[!INCLUDE [temp](../_shared/discussion-tip.md)]
 
 
 ## Try this next  

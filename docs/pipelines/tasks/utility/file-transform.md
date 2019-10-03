@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 21/02/2019
+ms.date: 02/21/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -70,8 +70,9 @@ as `Data.DefaultConnection.ConnectionString` in the build or release pipeline (o
 }
 ```
 
-> **Note**: Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded. 
-If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
+> [!NOTE]
+> Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded.
+> If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
 
 See also: [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 

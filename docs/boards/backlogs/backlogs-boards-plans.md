@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 08/24/2019
 ---
 
 ::: moniker range=">= tfs-2017"
@@ -157,6 +157,8 @@ For details about working in each type of backlog, see [Create your backlog](cre
 > [!TIP]  
 > You can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).  
 
+<a id="kanban-taskboards" />
+
 ### Kanban and Taskboards
 
 Kanban and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and you monitor the flow through the cumulative flow chart. Taskboards track tasks defined for a sprint and you monitor the flow via the sprint burndown chart. 
@@ -167,6 +169,7 @@ For details about working in each type of board, see [Kanban basics](../boards/k
 
 The following table indicates those elements or tasks associated with each type of backlog and board. 
 
+::: moniker range=">= azure-devops-2019"
 
 <table width="100%"> 
 <tbody valign="top">
@@ -178,7 +181,6 @@ The following table indicates those elements or tasks associated with each type 
 <th width="15%">Backlog type:<br/>Sprint</th>
 <th width="15%">Board type:<br/>Task</th>
 </tr>
-
 <tr>
 <td>Corresponding backlog or board type</td>
 <td>Kanban</td>
@@ -187,7 +189,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Task</td>
 <td>Sprint</td>
 </tr>
-
 <tr>
 <td>Add items and child items<br/>(see notes 1, 2)</td>
 <td>Yes</td>
@@ -196,7 +197,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes</td>
 <td>Yes</td>
 </tr>
-
 <tr>
 <td>Reorder items</td>
 <td>Yes</td>
@@ -205,7 +205,6 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes</td>
 <td>Yes</td>
 </tr>
-
 <tr>
 <td>Map items</td>
 <td>Yes (except the top-level portfolio backlog)</td>
@@ -214,8 +213,145 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 <td>No</td>
 </tr>
+<tr>
+<tr>
+<td>Filter by keyword and select fields</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Show/hide parents</td>
+<td>Yes (except the top-level portfolio backlog)</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show/hide in progress items<br/>(see note 3)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Forecast</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Customize: show bugs (see note 1)</td>
+<td>No </td>
+<td>Yes </td>
+<td>Yes </td>
+<td>Yes </td>
+<td>Yes </td>
+</tr>
+<tr>
+<td>Configure: Columns</td>
+<td>Yes, see <a href="set-column-options.md">Column options</a></td>
+<td>Yes, see <a href="set-column-options.md">Column options</a></td>
+<td>Yes, see <a href="../boards/add-columns.md">Add columns</a></td>
+<td>Yes, see <a href="set-column-options.md">Column options</a></td>
+<td>Yes, see <a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
+</tr>
+<tr>
+<td>Display rollup progress, counts, or totals</td>
+<td>Yes, see [Display rollup](display-rollup.md) </td>
+<td>Yes, see [Display rollup](display-rollup.md)</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Customize: Add more backlog or board views </td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
+<td>Yes, when you add another team (see note 4)</td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
+</tr>
+<tr>
+<td>Cutomize cards</td>
+<td>n/a</td>
+<td>n/a</td>
+<td><a href="../../boards/boards/customize-cards.md">Customize: cards</a></td></td>
+<td>n/a</td>
+<td><a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
+</tr>
+<tr>
+<td>In-context reports </td>
+<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
+<td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
+<td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
+</tr>
+<tr>
+<td>Duration (see note 5) </td>
+<td>Project or release</td>
+<td>Project</td>
+<td>Project</td>
+<td>Sprint</td>
+<td>Sprint</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
 
 
+::: moniker range="<= tfs-2018"
+
+<table width="100%"> 
+<tbody valign="top">
+<tr>
+<th width="25%">Associated element or task</th>
+<th width="15%">Backlog type:<br/>Portfolio</th>
+<th width="15%">Backlog type:<br/>Product</th>
+<th width="15%">Board type:<br/>Kanban</th>
+<th width="15%">Backlog type:<br/>Sprint</th>
+<th width="15%">Board type:<br/>Task</th>
+</tr>
+<tr>
+<td>Corresponding backlog or board type</td>
+<td>Kanban</td>
+<td>Kanban</td>
+<td>Portfolio or product</td>
+<td>Task</td>
+<td>Sprint</td>
+</tr>
+<tr>
+<td>Add items and child items<br/>(see notes 1, 2)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Reorder items</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Map items</td>
+<td>Yes (except the top-level portfolio backlog)</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
 <tr>
 <td>Filter</td>
 <td>Text or tags</td>
@@ -262,7 +398,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
 <td>Yes, see <a href="../boards/add-columns.md" data-raw-source="[Add columns](../boards/add-columns.md)">Add columns</a></td>
 <td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
-<td>Yes, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize workflow](../../organizations/settings/work/customize-process-workflow.md)">Customize workflow</a></td>
+<td>Yes, see <a href="../sprints/customize-taskboard.md" data-raw-source="[Customize Taskboard](../sprints/customize-taskboard.md)">Customize Taskboard</a></td>
 </tr>
 <tr>
 <td>Customize: Add more backlog or board views </td>
@@ -278,7 +414,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>n/a</td>
 <td>Yes</td>
 <td>n/a</td>
-<td>Yes</td>
+<td><a href="../sprints/customize-taskboard.md" data-raw-source="[Customize Taskboard](../sprints/customize-taskboard.md)">Customize Taskboard</a></td>
 </tr>
 <tr>
 <td>Charts </td>
@@ -288,7 +424,6 @@ The following table indicates those elements or tasks associated with each type 
 <td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
 <td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
 </tr>
-
 <tr>
 <td>Duration (see note 5) </td>
 <td>Project or release</td>
@@ -296,10 +431,12 @@ The following table indicates those elements or tasks associated with each type 
 <td>Project</td>
 <td>Sprint</td>
 <td>Sprint</td>
-
 </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
 
 
 **Notes:**
@@ -308,6 +445,9 @@ The following table indicates those elements or tasks associated with each type 
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../sprints/forecast.md).  
 4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) for details.  
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../sprints/sprint-burndown.md#past-sprints).
+
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
 
 
 ## Product backlog "In Progress" filter

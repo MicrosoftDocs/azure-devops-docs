@@ -16,10 +16,13 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
+## Before you start
+
+For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](/nuget/install-nuget-client-tools).
+
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-## Before you start
-This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
 
 ::: moniker-end
 

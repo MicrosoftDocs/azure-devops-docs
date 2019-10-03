@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 07/18/2019
+ms.date: 08/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -73,9 +73,9 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
    [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-1. Click **Download agent**.</li>
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-1. On the **Get agent** dialog box, click **Linux**.</li>
+1. On the **Get the agent** dialog box, click **Linux**.
 
 1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
 

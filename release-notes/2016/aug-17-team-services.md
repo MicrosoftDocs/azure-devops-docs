@@ -3,10 +3,10 @@ title: Pull Requests refresh and much, much more – Aug 17
 description: VSTS release notes for August 17 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 7ecf0247-57e9-4439-97cc-730d78905324
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -152,7 +152,8 @@ Does your team have a lot of build definitions. You can now use folders to keep 
 
 ![Manage folders](_img/8_17_15.png)
 
-**Tip:** Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
+> [!TIP]
+> Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
 
 ![Manage folders](_img/8_17_16.png)
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Build your .NET desktop app for Windows
 
-**Azure Pipelines | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | Azure DevOps Server 2019 | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -38,16 +38,28 @@ https://github.com/adventworks/net-sample
 ```
 
 #### [Azure Repos or TFS repo](#tab/vsts/)
+
+::: moniker range=">= azure-devops-2019"
+
+[!INCLUDE [include](../_shared/get-sample-code-azure-devops.md)]
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
+::: moniker-end
+
 #### [GitHub repo](#tab/github/)
-::: moniker range="azure-devops"
+
+::: moniker range=">= azure-devops-2019"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
 **TFS**: Does not apply.
 
@@ -65,6 +77,18 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 1. Create a new build pipeline.
 
    # [Azure Repos or TFS repo](#tab/vsts)
+   
+   ::: moniker range=">= azure-devops-2019"
+    
+   Navigate to the **Files** tab of the **Repos** hub, and then click **Set up build**.
+
+   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-repos-hub.png)
+
+   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+    
+   ::: moniker-end
+
+   ::: moniker range="< azure-devops-2019"
 
    Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -72,11 +96,13 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
    You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
+   ::: moniker-end
+
    # [GitHub repo](#tab/github)
 
    Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
-   ---
+   * * *
 
 2. In the right panel, select **.NET Desktop**, and then click **Apply**.
 
@@ -98,7 +124,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
    Select your version control repository. You'll need to authorize access to your repo.
 
-   ---
+   * * *
 
 5. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 

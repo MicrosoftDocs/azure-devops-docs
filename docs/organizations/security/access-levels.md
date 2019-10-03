@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/25/2019
+ms.date: 09/18/2019
 ---
 
 
@@ -19,11 +19,11 @@ ms.date: 06/25/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
+Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups, which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
 
 [!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
 
-When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups&#151;**Readers**, **Contributors**, and **Project Administrators**&#151;as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
+When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators** as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
 ::: moniker range="azure-devops"  
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
@@ -102,7 +102,7 @@ The following table indicates those features available for each supported access
 
 <tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management), up to 2GB free</td>
-<td> </td>
+<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -175,7 +175,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -218,21 +218,6 @@ read wiki pages. </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<!---
-<tr>
-<td align="left"><strong>Microsoft published Azure DevOps Extensions</strong></td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-</tr>
--->
-
-
 </tbody>
 </table>
 
@@ -304,7 +289,7 @@ The following table indicates those features available for each supported access
 </tr>
 
 <tr>
-<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
+<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -378,7 +363,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
+<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
 </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -516,7 +501,7 @@ The following table indicates those features available for each supported access
 
 
 <tr>
-<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management), up to 2GB free</td>
+<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
 <td> </td>
 <td> </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -781,19 +766,7 @@ To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-> [!div class="mx-tdBreakAll"]  
-> | Service, application, or setting | Private project | Public project|
-> |------------|-----------------|---------------|
-> |<strong>Dashboards</strong> | Partial access | Full access | 
-> |<strong>Wiki</strong>  | Partial access | Full access | 
-> |<strong>Boards</strong>  | Partial access | Full access | 
-> |<strong>Repos</strong> | No access | Full access | 
-> |<strong>Pipelines</strong>  | Full access | Full access | 
-> |<strong>Test Plans</strong>  | No access | No access | 
-> |<strong>Notifications</strong>  | Full access | Full access | 
-> |<strong>Semantic search</strong> | Full access | Full access | 
-> |<strong>Project settings</strong>  | Partial access | Partial access | 
-> |<strong>Organization settings</strong>  | Partial access | Partial access | 
+[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
 
 ::: moniker-end
 
@@ -841,7 +814,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
+::: moniker range="tfs-2017"
 
 - Change the priority of an item within a backlog
 - Delete work items 
@@ -851,6 +824,18 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 
 ::: moniker-end
+
+
+::: moniker range="<= tfs-2015"
+
+- Change the priority of an item within a backlog
+- Delete work items 
+- Create shared queries, view charts, and modify the home page  
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.  
+
+::: moniker-end
+
 
 > [!NOTE]
 > Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.

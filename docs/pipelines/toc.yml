@@ -1,20 +1,15 @@
-- name: Azure Pipelines Documentation
-  href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Azure Pipelines
-  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: Overview
-    href: get-started/overview.md
-  - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
-  - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md
-  - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+  href: index.yml
+- name: Get started
+  href: get-started/index.md
+- name: What is Azure Pipelines?
+  href: get-started/what-is-azure-pipelines.md
+- name: Sign up for Azure Pipelines
+  href: get-started/pipelines-sign-up.md
+- name: How to use Azure Pipelines
+  href: get-started/pipelines-get-started.md
+- name: Key concepts
+  href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
@@ -26,73 +21,109 @@
     displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
-    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
+    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers 
 - name: Ecosystems
   items: 
+  - name: Ecosystems index
+    href: ecosystems/index.md
+    displayName: language, platform
   - name: .NET Core
-    href: languages/dotnet-core.md
+    href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
   - name: Anaconda
-    href: languages/anaconda.md
+    href: ecosystems/anaconda.md
   - name: Android
-    href: languages/android.md
+    href: ecosystems/android.md
   - name: Azure
     items:
-    - name: Azure SQL database
-      href: targets/azure-sqldb.md
-    - name: Web App on Windows
-      href: targets/webapp.md
-    - name: Azure Resource Manager
-      href: library/connect-to-azure.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
+    - name: Azure Resource Manager
+      href: library/connect-to-azure.md
+    - name: Azure SQL database
+      href: targets/azure-sqldb.md
     - name: Azure Stack
       href: targets/azure-stack.md
-  - name: Docker
-    href: languages/docker.md
-    displayName: image, dockerfile, azure container, acr, arm, compose, docker-compose
+    - name: Function App on Container
+      href: targets/function-app-container.md
+    - name: Function App on Linux
+      href: targets/azure-functions.md
+    - name: Function App on Windows
+      href: targets/azure-functions-windows.md
+    - name: Web App on Linux
+      href: targets/webapp-linux.md
+    - name: Web App on Linux Container
+      href: targets/webapp-on-container-linux.md
+    - name: Web App on Windows
+      href: targets/webapp.md
+  - name: Containers
+    items:
+    - name: Build images
+      href: ecosystems/containers/build-image.md
+      displayName: docker, compose, docker-compose, arm, buildkit, image
+    - name: Push images
+      href: ecosystems/containers/push-image.md
+      displayName: container registry, acr, gcr, ecr, docker hub, azure container registry, google container registry
+    - name: Content trust
+      displayName: docker content trust, dct
+      href: ecosystems/containers/content-trust.md
   - name: Go
-    href: languages/go.md
-    displayName: workspace, gopath, goroot, go get, dep, dep ensure 
-  - name: Helm
-    href: languages/helm.md
+    href: ecosystems/go.md
+    displayName: workspace, gopath, goroot, go get, dep, dep ensure
   - name: Java
-    href: languages/java.md
+    href: ecosystems/java.md
     displayName: maven, goals, gradle, ant
   - name: JavaScript
-    href: languages/javascript.md
+    href: ecosystems/javascript.md
     displayName: node, node.js, nodetool, npm, yarn, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+  - name: Kubernetes
+    items:
+    - name: Deploy manifests
+      href: ecosystems/kubernetes/deploy.md
+      displayName: kubernetes, aks, gke, eks
+    - name: Bake manifests
+      href: ecosystems/kubernetes/bake.md
+      displayName: helm
+    - name: Multi-cloud deployments
+      href: ecosystems/kubernetes/multi-cloud.md
+      displayName: kubernetes, multicloud, aks, gke, eks
+    - name: Deployment strategies
+      href: ecosystems/kubernetes/deployment-strategies.md 
+      displayName: canary, strategy, kubernetes, aks, gke, eks
   - name: PHP
-    href: languages/php.md
+    href: ecosystems/php.md
   - name: Python
-    href: languages/python.md
+    href: ecosystems/python.md
     displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
   - name: Ruby
-    href: languages/ruby.md
+    href: ecosystems/ruby.md
     displayName: rails, bundler, rake, simplecov, cobertura
   - name: Xamarin
-    href: languages/xamarin.md
+    href: ecosystems/xamarin.md
   - name: Xcode
-    href: languages/xcode.md
-
+    href: ecosystems/xcode.md
 - name: How-to guides
   items:
   - name: CI/CD
     items:
     - name: Azure Container Registry
-      href: languages/acr-template.md
+      href: ecosystems/containers/acr-template.md
     - name: Azure Kubernetes Service
-      href: languages/aks-template.md
+      href: ecosystems/kubernetes/aks-template.md
+    - name: Kubernetes canary deployments
+      href: ecosystems/kubernetes/canary-demo.md
     - name: Azure Machine Learning
       href: targets/azure-machine-learning.md
     - name: Java to web App
-      href: languages/java-webapp.md
+      href: ecosystems/java-webapp.md
+    - name: Java to web app with MicroProfile
+      href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Java to Azure Function
-      href: languages/java-function.md
+      href: ecosystems/java-function.md
     - name: Python to web app
-      href: languages/python-webapp.md
+      href: ecosystems/python-webapp.md
     - name: PHP to web app
-      href: languages/php-webapp.md
+      href: ecosystems/php-webapp.md
   - name: Build pipelines (classic)
     items:
     - name: Cross-platform scripts
@@ -109,8 +140,6 @@
 #      href: build/ci-build-git.md
 #    - name: Build on multiple platforms
 #      href: get-started-multiplatform.md
-    - name: Use Content Trust
-      href: build/content-trust.md
   - name: Release pipelines (classic)
     items:
     - name: Set up a multi-stage release
@@ -230,6 +259,9 @@
       href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
+  - name: Approvals
+    href: process/approvals.md
+    displayName: approvals, checks
   - name: Artifacts
     items:
     - name: Overview
@@ -252,8 +284,6 @@
       href: artifacts/universal-packages.md
   - name: Caching (preview)
     href: caching/index.md
-  - name: Checks
-    href: process/checks.md
   - name: Conditions
     href: process/conditions.md
   - name: Container jobs
@@ -267,6 +297,7 @@
     items:
     - name: Overview
       href: process/environments.md
+      displayName: environments, deployment, approvals
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
   - name: Expressions
@@ -335,6 +366,7 @@
     href: process/service-containers.md
   - name: Stages
     href: process/stages.md
+    displayName: stage, dependencies, conditions, queuing policies, approvals
   - name: Task groups
     href: library/task-groups.md
   - name: Tasks
@@ -504,6 +536,8 @@
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
         href: tasks/test/cloud-based-web-performance-test.md
+      - name: Container Structure Test Task
+        href: tasks/test/container-structure-test-task.md
       - name: Publish Code Coverage Results
         href: tasks/test/publish-code-coverage-results.md
       - name: Publish Test Results
@@ -520,12 +554,16 @@
         href: tasks/package/cocoapods.md
       - name: Conda Environment
         href: tasks/package/conda-environment.md
+      - name: Maven Authenticate
+        href: tasks/package/maven-authenticate.md
       - name: npm
         href: tasks/package/npm.md
       - name: npm Authenticate
         href: tasks/package/npm-authenticate.md
       - name: NuGet
         href: tasks/package/nuget.md
+      - name: NuGet Authenticate
+        href: tasks/package/nuget-authenticate.md
       - name: PyPI Publisher
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
@@ -546,6 +584,10 @@
           href: tasks/package/prev-versions/nuget-publisher-0.md
         - name: NuGet Command 0.*
           href: tasks/package/nuget.md#custom-nuget-command
+        - name: Pip Authenticate 0.*
+          href: tasks/package/prev-versions/pip-authenticate-0.md
+        - name: Twine Authenticate 0.*
+          href: tasks/package/prev-versions/twine-authenticate-0.md
     - name: Deploy tasks
       items:
       - name: App Center Distribute
@@ -624,8 +666,6 @@
       items:
       - name: Docker Installer
         href: tasks/tool/docker-installer.md
-      - name: .NET Core Tool Installer
-        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
       - name: Helm Installer
@@ -638,6 +678,8 @@
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer
         href: tasks/tool/nuget.md
+      - name: Use .NET Core
+        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Use Python Version
         href: tasks/tool/use-python-version.md
       - name: Use Ruby Version

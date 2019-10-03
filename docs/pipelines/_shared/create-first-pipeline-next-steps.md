@@ -2,12 +2,12 @@
 
 You've just learned how to create your first Azure Pipeline. Now you're ready to configure a pipeline for the language of your choice:
 
-* [.NET Core](../languages/dotnet-core.md)
-* [Docker](../languages/docker.md)
-* [Go](../languages/go.md)
-* [Java](../languages/java.md)
-* [Node.js](../languages/javascript.md)
-* [Python](../languages/python.md)
+* [.NET Core](../ecosystems/dotnet-core.md)
+* [Containers](../ecosystems/containers/build-image.md)
+* [Go](../ecosystems/go.md)
+* [Java](../ecosystems/java.md)
+* [Node.js](../ecosystems/javascript.md)
+* [Python](../ecosystems/python.md)
 
 Or, you can proceed to [customize the pipeline](../customize-pipeline.md) you just created.
 

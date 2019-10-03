@@ -4,9 +4,9 @@ description: VSTS release notes for October 8 2015
 ms.prod: devops
 ms.technology: devops-release-notes
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -53,12 +53,3 @@ Please reach out on [Twitter]((https://twitter.com/AzureDevOps)  if you have tho
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-
-
-

@@ -19,7 +19,11 @@ ms.date: 06/28/2019
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-You can change a project based on the Basic process to use the Agile process. Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
+You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
+
+[!INCLUDE [temp](../_shared/cloud-only-feature.md)]
+
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 
 |  Process | Work item types | Workflow |
 |------|---------|---------|
@@ -67,8 +71,8 @@ Reasons you might want to change your process from Basic to Agile:
 
 1. Upon completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
-> [!div class="mx-imgBorder"]  
-> ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
 
     Steps to manually update your work items and board settings:
     - Update the column to state mapping for each team Kanban board.
@@ -98,7 +102,7 @@ You can customize Kanban boards to display intermediate columns. For each column
 
 <!---
   > [!div class="mx-imgBorder"]
-  > ![Wizrd](_img/change-process/change-process-basic-to-agile-wizard.gif)
+  > ![Wizard](_img/change-process/change-process-basic-to-agile-wizard.gif)
 
 5. Update the [board settings](../../../boards/get-started/customize-boards.md) for each board so that the column to state mapping is correct.
 
@@ -166,7 +170,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![View team backlog](_img/change-process/backlog-basic-to-agile.png)
 
-   If you want to change any user stories to bugs, do that now using bulk update and **Change type**. If you want to show bugs at the same level as user stories, then make that change now. For details, see [Show bugs on backlogs and boards ](../show-bugs-on-backlog.md).
+   If you want to change any user stories to bugs, do that now using bulk update and **Change type**. If you want to show bugs at the same level as user stories, then make that change now. For details, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 1. Go to your team board and verify that the column settings are valid.
 
@@ -180,7 +184,7 @@ Your next step is to bulk update work items. The recommended sequence is:
 After changing the process, you may want to make additional updates as follows:
 
 - [Change the project name](../../../organizations/projects/rename-project.md)
-- [Update your project summary or vision ](../../../organizations/projects/project-vision-status.md)
+- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
 
 ## Related articles
 
@@ -188,6 +192,6 @@ After changing the process, you may want to make additional updates as follows:
 - [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
 - [Add and manage work item types](./customize-process-wit.md)
-- [Show bugs on backlogs and boards ](../show-bugs-on-backlog.md)
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 - [Customize your boards](../../../boards/get-started/customize-boards.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

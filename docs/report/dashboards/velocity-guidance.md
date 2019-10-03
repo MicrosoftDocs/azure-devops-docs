@@ -61,10 +61,5 @@ For example, you can create a chart of the number of Product backlog items and b
 - [Forecast your sprints](../../boards/sprints/forecast.md) 
 - [Plan your sprint](../../boards/sprints/assign-work-sprint.md) 
 
-### Industry resources
-- [How Should We Use Velocity?](https://www.scrumalliance.org/community/articles/2013/2013-april/how-should-we-use-velocity)  
-- [Velocity Is Not the Goal](https://www.scrumalliance.org/community/articles/2017/march/sprint-velocity-sense-and-nonsense)   
-- [How to Calculate and Use Velocity to Help Your Team and Your Projects](https://www.scrumalliance.org/community/articles/2014/february/velocity)
-
 ### Add other teams
 If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those set for the team. 

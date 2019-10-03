@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Manage & Configure Resources
-    tocHref: /azure/devops/organizations/accounts/
-    topicHref: /azure/devops/organizations/index
-    items:
-    - name: Manage Organizations
-      tocHref: /azure/devops/organizations/accounts/
-      topicHref: /azure/devops/organizations/accounts/index
+  - name: Security, access, & billing
+    tocHref: /azure/devops/security-access-billing/
+    topicHref: /azure/devops/security-access-billing/index

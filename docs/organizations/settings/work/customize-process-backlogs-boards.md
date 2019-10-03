@@ -52,6 +52,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
  
 
 <a id="add-portfolio-backlog">  </a>
+
 ### Add a portfolio backlog 
 	
 1. From the  **Backlog levels** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
@@ -76,7 +77,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 Open the context menu of a portfolio backlog that you've added to edit, rename, or delete it. From the Backlog levels page, open the Add portfolio backlog dialog. 
 
 > [!NOTE]    
-> You can't can't add an inherited WIT to any backlog level. 
+> You can't add an inherited WIT to any backlog level. 
 
 <img src="_img/process/process-portfolio-backlog-context-menu.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 

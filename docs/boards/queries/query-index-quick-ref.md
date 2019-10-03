@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 09/26/2019 
 ---
 
 # Query quick reference 
@@ -113,11 +113,6 @@ The following table indicates the operators and macros available for the differe
 	<td><p> <strong>HTML</strong> </p></td>
     <td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a>. </td>
 	<td>Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup></td>
-</tr>
-<tr>
-	<td><p><strong>History</strong> </p></td>
-    <td>Custom formatted field used to track historical information associated with the <strong>History</strong> field.Query samples: <a href="history-and-auditing.md" data-raw-source="[History and auditing](history-and-auditing.md)">History and auditing</a>. </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever</td>
 </tr>
 <tr>
     <td><strong>Identity</strong></td>
@@ -292,6 +287,8 @@ The following table lists common query fields and their data type for which samp
 
 ## Related articles
 
+- [Query by field value comparisons](query-field-value.md) 
+- [Guidance to create high-performing queries](high-performing-queries.md)
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

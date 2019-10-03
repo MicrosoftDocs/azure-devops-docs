@@ -3,10 +3,10 @@ title: Visual Studio Online updates - Mar 18
 description: VSTS release notes for March 18 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: b8c94e45-6582-474c-9fc9-2706dc40bc01
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

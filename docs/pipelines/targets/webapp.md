@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.assetid:
 ms.custom: seodec18
-ms.author: sdanie
-author: steved0x
+ms.author: jukullam
+author: juliakm
 ms.date: 4/4/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -80,7 +80,7 @@ To get started:
 * * *
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
-## Azure App Service Deploy task
+## Azure Web App Deploy task
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -125,7 +125,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a JavaScript Node.js app
 
-If you're building a [JavaScript Node.js app](../languages/javascript.md), you publish the entire contents of your
+If you're building a [JavaScript Node.js app](../ecosystems/javascript.md), you publish the entire contents of your
 working directory to the web app. The following snippet also generates a Web.config file during deployment if the application does not have one and starts
 the iisnode handler on the Azure Web App:
 
@@ -206,7 +206,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the `VirtualApplication` property of the `AzureRmWebAppDeployment` task:
 
 ```yaml
-- task: AzureRmWebAppDeployment@3
+- task: AzureRmWebAppDeployment@4
   inputs:
     VirtualApplication: '<name of virtual application>'
 ```
@@ -338,7 +338,7 @@ For example, if your Web.config file contains a connection string named `connect
 you can change its value before deploying to each web app. You can do this either by applying
 a Web.config transformation or by substituting variables in your Web.config file. 
 
-**Azure App Service Deploy task version 3** allows users to modify configuration settings in configuration files (*.config files) inside web packages and XML parameters files (parameters.xml), based on the stage name specified.
+**Azure App Service Deploy task** allows users to modify configuration settings in configuration files (*.config files) inside web packages and XML parameters files (parameters.xml), based on the stage name specified.
 
 ::: moniker range="> tfs-2018"
 > [!NOTE]  
@@ -357,7 +357,7 @@ jobs:
   variables:
     connectionString: <test-stage connection string>
   steps:
-  - task: AzureRmWebAppDeployment@3
+  - task: AzureRmWebAppDeployment@4
     inputs:
       azureSubscription: '<Test stage Azure service connection>'
       WebAppName: '<name of test stage web app>'
@@ -368,7 +368,7 @@ jobs:
   variables:
     connectionString: <prod-stage connection string>
   steps:
-  - task: AzureRmWebAppDeployment@3
+  - task: AzureRmWebAppDeployment@4
     inputs:
       azureSubscription: '<Prod stage Azure service connection>'
       WebAppName: '<name of prod stage web app>'

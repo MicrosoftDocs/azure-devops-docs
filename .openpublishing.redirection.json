@@ -992,12 +992,12 @@
     },
     {
       "source_path": "docs/marketplace/how-to/approve-tfs-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/approve-extensions",
+      "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/approve-vsts-extensions.md",
-      "redirect_url": "/azure/devops/marketplace/approve-extensions",
+      "redirect_url": "/azure/devops/marketplace/request-extensions",
       "redirect_document_id": false
     },
     {
@@ -1077,12 +1077,12 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-nodejs-docker.md",
-      "redirect_url": "/azure/devops/pipelines/languages/javascript",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/azure/devops/pipelines/languages/docker",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
       "redirect_document_id": false
     },
     {
@@ -1102,7 +1102,7 @@
     },
     {
       "source_path": "docs/build/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/azure/devops/pipelines/languages/dotnet-core",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -1157,7 +1157,7 @@
     },
     {
       "source_path": "docs/build/get-started/java-maven.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
@@ -1452,7 +1452,7 @@
     },
     {
       "source_path": "docs/build-release/azure/java.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
@@ -1462,12 +1462,12 @@
     },
     {
       "source_path": "docs/build-release/apps/xamarin.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xamarin",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xamarin",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/xcode/xcode-projects.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xcode",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xcode",
       "redirect_document_id": false
     },
     {
@@ -1732,12 +1732,12 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/aspnetcore-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/languages/dotnet-core",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/azure/devops/pipelines/languages/dotnet-core",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -1752,12 +1752,12 @@
     },
     {
       "source_path": "docs/build-release/apps/java/maven-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/java/maven.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
@@ -1882,17 +1882,17 @@
     },
     {
       "source_path": "docs/build-release/get-started/java-maven.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/java/quick-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/quick-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/languages/javascript",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
       "redirect_document_id": false
     },
     {
@@ -2902,12 +2902,12 @@
     },
     {
       "source_path": "docs/build-release/test/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/test/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
@@ -3313,7 +3313,7 @@
     {
       "source_path": "docs/marketplace/extension-report.md",
       "redirect_url": "/azure/devops/extend/extension-report",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/extensions/publish/integration.md",
@@ -4262,7 +4262,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/getting-started/continuous-test-java.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
@@ -4666,11 +4666,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/pipelines/test/collect-screenshots-and-video.md",
-      "redirect_url": "/azure/devops/test/collect-screenshots-and-video",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/pipelines/test/overview.md",
       "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
@@ -4932,7 +4927,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md",
+      "redirect_url": "https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md",
       "redirect_document_id": false
     },
     {
@@ -7322,8 +7317,13 @@
     },
     {
       "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
-      "redirect_url": "/azure/devops/test/collect-screenshots-and-video",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/test/collect-screenshots-and-video",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/collect-screenshots-and-video.md",
+      "redirect_url": "/azure/devops/pipelines/test/collect-screenshots-and-video",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/continuous-test-java.md",
@@ -7522,8 +7522,8 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-core.md",
-      "redirect_url": "/azure/devops/pipelines/languages/dotnet-core",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-dacpac.md",
@@ -7537,48 +7537,48 @@
     },
     {
       "source_path": "docs/build-release/apps/containers/build.md",
-      "redirect_url": "/azure/devops/pipelines/languages/docker",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
       "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/apps/containers/build.md",
-      "redirect_url": "/azure/devops/pipelines/languages/docker",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/apps/go/go.md",
-      "redirect_url": "/azure/devops/pipelines/languages/go",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/go",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/go/go.md",
-      "redirect_url": "/azure/devops/pipelines/languages/go",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/go",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/java/build-gradle.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/java/build-gradle.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/java/build-maven.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/java/build-maven.md",
-      "redirect_url": "/azure/devops/pipelines/languages/java",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/android.md",
-      "redirect_url": "/azure/devops/pipelines/languages/android",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/android",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/app-signing.md",
@@ -7592,28 +7592,28 @@
     },
     {
       "source_path": "docs/build-release/apps/mobile/xamarin.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xamarin",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xamarin",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/mobile/xamarin.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xamarin",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xamarin",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/xcode-ios.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xcode",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xcode",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/mobile/xcode-ios.md",
-      "redirect_url": "/azure/devops/pipelines/languages/xcode",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xcode",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-gulp.md",
-      "redirect_url": "/azure/devops/pipelines/languages/javascript",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/windows/cpp.md",
@@ -8217,7 +8217,7 @@
     },
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-core.md",
-      "redirect_url": "/azure/devops/pipelines/languages/dotnet-core",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -11496,6 +11496,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/artifacts/sign-up-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/license-azure-artifacts.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
@@ -11816,9 +11826,129 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/languages/acr-template.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/containers/acr-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/aks-template.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/kubernetes/aks-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/anaconda.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/anaconda",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/android.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/android",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/docker.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/containers/build-image",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/dotnet-core.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/go.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/go",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/helm.md",
+      "redirect_url": "/azure/devops/pipelines/build/helm-provenance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/java-function.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java-function",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/java-webapp.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java-webapp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/java.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/java",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/javascript.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/php-webapp.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/php-webapp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/php.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/php",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/python-webapp.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/python-webapp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/python.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/python",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/ruby.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/ruby",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/xamarin.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xamarin",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/languages/xcode.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/xcode",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/user-guide/plan-track-work.md",
       "redirect_url": "/azure/devops/boards/get-started/plan-track-work",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/process/checks.md",
+      "redirect_url": "/azure/devops/pipelines/process/approvals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/build/content-trust.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/containers/content-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/get-started/authentication/pats.md",
+      "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/get-started/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test-plans/index.md",
+      "redirect_url": "/azure/devops/test/index",
+      "redirect_document_id": true
     }
   ]
 }

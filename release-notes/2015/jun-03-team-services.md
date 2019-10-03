@@ -3,10 +3,10 @@ title: Swim lanes, #mention, Build test steps – Jun 3
 description: VSTS release notes for June 3 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 6f3afec0-bf60-46c0-82d5-48f8d60edc30
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -49,6 +49,3 @@ If you have any questions, feel free to reach out on [Twitter](https://twitter.c
 Thanks,
 
 Aaron Bjork
-
-
-

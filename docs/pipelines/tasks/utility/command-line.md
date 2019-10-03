@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/15/2019
+ms.date: 08/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -45,6 +45,19 @@ The CmdLine task also has a shortcut syntax in YAML:
   env: { string: string } # mapping of environment variables to add
 ```
 ::: moniker-end
+
+## Running batch and .CMD files
+
+Azure Pipelines puts your inline script contents into a temporary batch file (.cmd) in order to run it.
+When you want to run a batch file from another batch file in Windows CMD, you must use the `call` command, otherwise the first batch file is terminated.
+This will result in Azure Pipelines running your intended script up until the first batch file, then running the batch file, then ending the step.
+Additional lines in the first script wouldn't be run.
+You should always prepend `call` before executing a batch file in an Azure Pipelines script step.
+
+> [!IMPORTANT]
+> You may not realize you're running a batch file.
+> For example, `npm` on Windows, along with any tools that you install using `npm install -g`, are actually batch files.
+> Always use `call npm <command>` to run NPM commands in a Command Line task on Windows.
 
 ## Arguments
 
@@ -111,9 +124,7 @@ On the Build tab of a build pipeline, add these tasks:
 <table>
    <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong>
       </td>
 <td>
@@ -124,14 +135,10 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
       </td>
 </tr>
-
-        <tr>
-      <td>
-
+<tr>
+<td>
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display the operating system version.</p>
 <ul>
@@ -139,15 +146,10 @@ On the Build tab of a build pipeline, add these tasks:
  </ul>
 </td>
         </tr>
-
-
         <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display the environment variables.</p>
 <ul>
@@ -155,15 +157,10 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
 </td>
         </tr>
-
-
         <tr>
       <td>
-
 <img src="_img/command-line.png" alt=""/>
-
 <br/><strong>Utility: Command Line</strong></td>
-
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
@@ -173,8 +170,9 @@ On the Build tab of a build pipeline, add these tasks:
 </ul>
 </td>
         </tr>
-
 </table>
+
+
 
 * * *
 ## Open source

@@ -6,7 +6,7 @@ ms.date: 1/24/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 description: In the Sprint 129 Update of Visual Studio Team Services (VSTS) on January 24, 2018, as we return with the work from Sprint 128 and 129, you’ll notice several enhancements that should delight members from across your team.
 hide_comments: true
 ---

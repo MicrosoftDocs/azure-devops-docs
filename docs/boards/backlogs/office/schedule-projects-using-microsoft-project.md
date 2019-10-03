@@ -9,19 +9,17 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '< azure-devops-2019'
-ms.date: 02/11/2019  
+monikerRange: '<= tfs-2018'
+ms.date: 08/15/2019
 ---
 
 # Schedule projects using Microsoft Project  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
 
 You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-
-> [!IMPORTANT]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. You can continue to use Microsoft Excel.  
+[!INCLUDE [temp](../../_shared/deprecate-project.md)]
 
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
@@ -36,12 +34,14 @@ You can use Project 2010 or later versions to plan projects, schedule tasks, ass
 Project 2010 and later versions support several new project fields and functions. Depending on how you use Project to schedule team tasks, you may want to update the task work item form to display some of the new fields. To maintain new Project fields in both your project plan and in TFS, you have to customize the task work item type and the Microsoft Project Field mapping file for the project. 
 
 > [!NOTE]  
->Customizing the Project Field mapping file is only support for on-premises TFS and the On-premises XML process model.  
+> Customizing the Project Field mapping file is only support for TFS 2018 and earlier versions.  
   
 <a name="NewFeatures"></a> 
+
 ##  New task-related features in Project 2010 and Project 2013  
  
 ### Schedule tasks manually or automatically
+
 By using Task Mode, which is accessed through the following Ribbon menu, you have more flexibility in the way you and team members schedule tasks.
 
 ![Task mode scheduling ribbon menu options](_img/tfs_oiproj_taskmode_menu.png "TFS_OIProj_TaskMode_Menu")
@@ -49,7 +49,7 @@ By using Task Mode, which is accessed through the following Ribbon menu, you hav
 By using manually scheduled tasks, which are indicated by the ![Pinned task icon](_img/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. 
 
 > [!IMPORTANT]  
->In order for team members to manually schedule their tasks, you'll have to [add the necessary project fields to the task work item](#download). You can only modify the task WIT definition for the On-premises XML process model.  
+> In order for team members to manually schedule their tasks, you'll have to [add the necessary project fields to the task work item](#download). You can only modify the task WIT definition for the On-premises XML process model.  
 
 Start and finish dates for autoscheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.
 
@@ -64,6 +64,7 @@ By using Active Mode, you can determine the impact to the schedule when you spec
    
 
 <a name="download"></a>   
+
 ##  Add Project fields to TFS (On-premises XML)  
 
 For team members to be able to view or modify new Project fields from the web portal or Team Foundation client, you must customize both the task WIT definition and update the Microsoft Project Mapping file. By making these changes, you maintain the data fields in both the Project plan and in the work tracking database. You can make these fields read-only or modifiable. You can use them to find work items by using queries and construct reports. Specifically, you can add fields that enable team members to specify their start and end dates for pinned tasks. By adding these fields to the task work item form, you can view and modify the start and end dates using a Team Foundation client.  
@@ -88,6 +89,7 @@ To learn more, see:
 
   
 ### Add fields to the task work item type
+
 To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command line tool to export and import the definition file for each work item type. 
  
 [!INCLUDE [temp](../../_shared/process-editor.md)]
@@ -98,9 +100,11 @@ For more information, see:
 
 
 ### Update the Microsoft Project Mapping File
+
 The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
 
 To learn more, see [TFSFieldMapping](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).   
   
 ## Related articles
+
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)

@@ -172,8 +172,7 @@ The Google Analytics experiments framework lets you test almost any change or va
 
 The Google Analytics experiments extension for Azure DevOps adds experimentation steps to the build and release pipelines, so you can continuously iterate, learn and deploy at an accelerated pace by managing the experiments on a continuous basis while gaining all the DevOps benefits from Azure Pipelines. 
 
-> [!NOTE]
-> The extension will be available within the next week.
+You can download the [Google Analytics experiments extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.GoogleAnalytics) from the Marketplace. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_23.png)
@@ -196,6 +195,6 @@ When creating a PR, it can be challenging to validate if the changes might break
 
 When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-create) for more information.
 
-###Service endpoint command enhancement
+### Service endpoint command enhancement
 
 Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/service-endpoint?view=azure-cli-latest) for more information.

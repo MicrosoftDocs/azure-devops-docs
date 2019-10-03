@@ -1,5 +1,5 @@
 ---
-title: Query by numeric field
+title: Query by numeric fields
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 08/16/2019  
 ---
 
 # Query by numeric fields    
@@ -120,6 +120,18 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 ::: moniker range="<= tfs-2018"
 ![Configure chart, count of bugs by area, state, pivot chart](_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png)
 ::: moniker-end
+
+
+<a id="undefined-value"/>
+
+## Undefined field value queries
+
+You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type User Stories whose Story Points field is blank.  
+
+> [!div class="mx-imgBorder"]  
+> ![Filter based on blank entries](_img/numeric/field-value-blank.png)
+
+To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
 
 <a id="effort"/>

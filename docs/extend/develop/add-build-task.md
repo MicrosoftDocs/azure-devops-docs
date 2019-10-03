@@ -9,7 +9,7 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/18/2018
+ms.date: 09/10/2019
 ---
 
 # Add a build or release task
@@ -21,7 +21,8 @@ These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
-> **Note:** This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
+> [!NOTE]
+> This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Preparation and required setup for this tutorial
 
@@ -29,7 +30,9 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 
 - An **organization** in Azure DevOps Services, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
-- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
+- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
+
+  But be aware that the production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
 - **Visual Studio Code** for intellisense and debugging support, which can be downloaded [here](https://code.visualstudio.com/)
     <a name="cli" />
@@ -48,7 +51,7 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 
 ### Develop in Unix versus Windows
 
-This walkthrough was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
+This walk through was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
 
 If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ```export <var>=<val>```
 
@@ -62,6 +65,7 @@ Below are the steps to create a build or release task extension and put it on th
 * [Optional: Install and test your extension](#installandtest)
 
 <a name="createtask" />
+
 ## Step 1: Create the custom task
 
 Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
@@ -130,6 +134,7 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
 
 ```json
 {
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "{{taskguid}}",
     "name": "{{taskname}}",
     "friendlyName": "{{taskfriendlyname}}",
@@ -154,7 +159,7 @@ Copy the code below and replace the ```{{placeholders}}``` with your tasks infor
         }
     ],
     "execution": {
-        "Node": {
+        "Node10": {
             "target": "index.js"
         }
     }
@@ -243,6 +248,7 @@ Hello Human
 This time the task succeeded since ```samplestring``` was supplied, and it correctly outputted "Hello Human"!
 
 <a name="testscripts" />
+
 ## Step 2: Unit testing your task scripts
 
 The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to be able to test all aspects
@@ -384,6 +390,7 @@ $env:TASK_TEST_TRACE=1
 ```
 
 <a name="extensionmanifest" />
+
 ## Step 3: Create the extension manifest file
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build or release task.
 
@@ -415,6 +422,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 >For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
 
 <a name="packageext" />
+
 ## Step 4: Package your extension
 
 Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
@@ -433,8 +441,11 @@ tfx extension create --manifest-globs vss-extension.json
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
 <a name="publishext" />
+
 ## Step 5: Publish your extension
+
 <a name="createpublisher" />
+
 ### Create your publisher
 
 All extensions, including those from Microsoft, are identified as being provided by a publisher.
@@ -471,7 +482,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 Now that you've uploaded your extension, it's in the Marketplace, but no one can see it. 
 Share it with your organization so that you can install and test it.
 
-1. Rightselectyour extension and select <b>Share...</b>, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
+1. Right select your extension and select <b>Share...</b>, and enter your organization information. You can share it with other accounts that you want to have access to your extension, too.
 
 >[!IMPORTANT]
 >Publishers must be verified in order to share extensions publicly, to learn more visit [Package/Publish/Install](../publish/overview.md)
@@ -479,16 +490,20 @@ Share it with your organization so that you can install and test it.
 Now that your extension is in the Marketplace and shared, anyone who wants to use it must install it.
 
 <a name="installandtest" />
+
 ## Optional: Install and test your extension
+
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
 1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administration page.
-2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group,selecton the extension link.
-3. Install the extension!
+2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, selection the extension link.
+3. Install the extension.
 
 If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
+
+For build and release tasks for packaging and publishing Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## Helpful links
 * [Extension Manifest Reference](./manifest.md)

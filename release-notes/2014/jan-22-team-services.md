@@ -3,10 +3,10 @@ title: Visual Studio Online updates – Jan 22
 description: VSTS release notes for January 21 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 6ca7d730-1127-4b8f-8fa6-8357f999ac0f
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -37,4 +37,3 @@ That’s it for this sprint.
 Thanks,
 
 Aaron Bjork
-

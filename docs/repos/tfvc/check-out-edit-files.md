@@ -38,19 +38,16 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
    -   **Unchanged**: Do not apply a lock to the items.  
    -   **Check Out**: Prevent other users from checking out and checking in the items until you check in and unlock them.
 
-       >**Note:**  
-       >In Visual Studio Team Foundation Server 2012 this option is not available if you are using a [local workspace](decide-between-using-local-server-workspace.md). Also, this lock is not enforceable because other users might be using local workspaces. See [Understand lock types](understand-lock-types.md).</p></td>
-       </tr>
-       </tbody>
-       </table>
+       > [!NOTE]
+       > In Visual Studio Team Foundation Server 2012 this option is not available if you are using a [local workspace](decide-between-using-local-server-workspace.md). Also, this lock is not enforceable because other users might be using local workspaces. See [Understand lock types](understand-lock-types.md).
 
    -   **Check In**: Allow other users to check out the items you are checking out, but prevent them from checking in their changes until you check in your changes and unlock the items.
 
-   > **Note:**  
-   > The **Lock type** menu is not available if:</p>
-   > <ul>
-   > <li>Another team member has locked the file.</li>
-   > <li>The <strong>Enable multiple check-out</strong> option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose <strong>Team</strong>, <strong>Project Settings</strong>, <strong>Source Control</strong>).</li></ul>  
+   > [!NOTE]
+   > The **Lock type** menu is not available if:
+   >
+   > - Another team member has locked the file.
+   > - The **Enable multiple check-out** option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose **Team**, **Project Settings**, **Source Control**).
 
    If any other users have locked any of the specified items, the lock operation will fail. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
 

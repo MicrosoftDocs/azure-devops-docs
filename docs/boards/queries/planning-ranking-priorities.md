@@ -182,10 +182,14 @@ To add the field to the form, add the Stack Rank field to a work item type ([for
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
 
-    `<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
+```xml
+<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+```
 
-    or, for Scrum
+or, for Scrum
 
-    `<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
+```xml
+<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+```
 
 ::: moniker-end  

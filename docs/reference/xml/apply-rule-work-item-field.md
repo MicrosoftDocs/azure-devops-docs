@@ -264,29 +264,36 @@ You can make a pick list or assign value rule to apply or not apply to a group o
 
     Use **for** to apply a rule to a group. This example requires any user in the Junior Analysts group to complete the Second Approver field.
 
-        <FIELD name="Second Approver">
+    ```xml
+    <FIELD name="Second Approver">
         <REQUIRED for="Example1\Junior Analysts"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Restrict modification of a field to a group of users:**
 
     Use **not** to exclude a group from a rule. This example defines the Triage Description field as read-only for everyone except those users in the Triage Committee group.
 
-        <FIELD name="Triage Description">
+    ```xml
+    <FIELD name="Triage Description">
         <READONLY not="[Project]\Triage Committee" />
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Make a field required for some users and not for others:**
 
     Use a combination of **for** and **not** to simultaneously apply a rule to some and not for others. This example defines Severity as a required field for users in the Project Members group, but not for those in the Project Admins group.
 
-        <FIELD name="Severity">
+    ```xml
+    <FIELD name="Severity">
         <REQUIRED for="[Project]\Project Members" not="[Global]\Project Admins"/>
-        </FIELD>
+    </FIELD>
+    ```
 
     If a user is in both groups, the "for" statement would be enforced, and the field would be required.
 
 <a id="tokens" /> 
+
 ### Use tokens to reference groups
 
 When you restrict a rule to a group, you must indicate the domain or scope of the group. For some values, you can use tokens.
@@ -317,29 +324,37 @@ Person-name fields can accept values that reference both users and groups. Field
 
     Use [GLOBAL] to reference a collection-scoped TFS group, such as the Project Collection Administrators group or a Windows group you add to a collection. For example:
 
-        <FIELD name="Title">
+    ```xml
+    <FIELD name="Title">
         <READONLY for="[GLOBAL]\Project Collection Valid Users"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Scope to a server instance &mdash;[Team Foundation]:**
 
     Use the [Team Foundation] token to reference a server-scoped TFS group, such as a built-in group or a Windows group you add to a server-level group. For example:
 
-        <FIELD name="Title">
+    ```xml
+    <FIELD name="Title">
         <READONLY for="[Team Foundation]\Team Foundation Valid Users"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Specify a domain qualified account or group:**
 
     Domain-qualified account name, such as the one shown in the following example, can be used to reference a domain user or group. Note that some rules only support groups and do not support referencing domain users.
 
-        <LISTITEM value="FABRIKAM\Christie Church's Direct Reports"/>
+    ```xml
+    <LISTITEM value="FABRIKAM\Christie Church's Direct Reports"/>
+    ```
 
 All users and groups must be qualified by one of these tokens. For example, the following XML isn't valid because it doesn't qualify the specified group with a valid token.
 
-    <FIELD name="Title">
+```xml
+<FIELD name="Title">
     <READONLY for="Dev Team"/>
-    </FIELD>
+</FIELD>
+```
 
 To learn more about built-in groups, see [Permissions and groups](../../organizations/security/permissions.md) 
 
@@ -360,7 +375,6 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 - [Add or modify a field](../add-modify-field.md)   
 - [All WITD XML elements reference](all-witd-xml-elements-reference.md)
-
 
 
 ### Person-named fields and validation errors
@@ -486,6 +500,7 @@ In the following XML example, SubStatus will be emptied as you type "Approved Ag
 > ```
 
 <!--- 
+
 #### Q: When would I define field rules using global workflow?
 
 **A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).

@@ -69,8 +69,35 @@ where changes to these new test cases do not affect those referenced in test pla
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
-**Note**: Stakeholders cannot create or manage test plans. You must have at least Basic access.
+## Prerequisites
+
+To manage test artifacts, you must have the correct permissions and access level.
+
+### Manage test artifacts permissions
+
+You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts). 
+
+### Access level
+
+::: moniker range="< azure-devops-2019"
+
+To create and edit a test artifact (Test plan, Test suite, Test case, Test configuration, shared step, or shared parameter) you must have your [access level set to Advanced](../organizations/security/access-levels.md).
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+To create and edit a test artifact (Test plan, Test suite, Test case, Test configuration, shared step, or shared parameter) you must have one of the following access levels:
+
+- [Basic + Test plans](../organizations/security/access-levels.md)
+- [Visual Studio Enterprise](../organizations/security/access-levels.md)
+- [Basic](../organizations/security/access-levels.md) - can create and edit Test cases but cannot create or edit the other types of Test artifacts
+
+>[!NOTE]
+> Stakeholders cannot create or manage test cases. You must have at least Basic access.
 See [Default manual testing permissions and access](manual-test-permissions.md).
+
+::: moniker-end
 
 <a name="testplan"></a>
 

@@ -126,7 +126,7 @@ When you go to your build results, you’ll have clearer insight into the logs, 
 
 ### Pass environment variables to tasks
 
-CI/CD task authors can set a new property, [**showEnvironmentVariables**](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/CmdLineV2/task.json#L23), in the task.json to pass environment variables to tasks. When you do so, an extra control is rendered on the task in the build editor. This is available for the **Powershell**, **Cmd**, and **Bash** tasks.
+CI/CD task authors can set a new property, [**showEnvironmentVariables**](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/CmdLineV2/task.json#L23), in the task.json to pass environment variables to tasks. When you do so, an extra control is rendered on the task in the build editor. This is available for the **Powershell**, **Cmd**, and **Bash** tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Pass environment variables](_img/136_07.png)
@@ -174,7 +174,7 @@ New and improved Windows remote PowerShell based tasks are available. These impr
 
 **PowerShell on Target task (version: 3.*)**: You can add inline script, modify PSSession options, control "ErrorActionPreference", and fail on standard error.
 
-**Azure File Copy task (version: 2.*)**: Ships with the latest AzCopy (v7.1.0) that addresses a [GitHub issue](https://github.com/Microsoft/vsts-tasks/issues/5590).
+**Azure File Copy task (version: 2.*)**: Ships with the latest AzCopy (v7.1.0) that addresses a [GitHub issue](https://github.com/Microsoft/azure-pipelines-tasks/issues/5590).
 
 ### GitHub artifacts show associated commits deployed in a release
 

@@ -21,7 +21,7 @@ ms.date: 02/04/2019
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
-For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md).
+For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
 <a id="field-values" /> 
 
@@ -79,9 +79,6 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
     <td><p> <strong>picklistString</strong><sup>2</sup></p></td>
     <td><p>Custom field defined to contain a pick list of short text string (255 characters or less) values.</p></td></tr>
-<tr>
-    <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
-    <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
 <tr>
     <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
     <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>

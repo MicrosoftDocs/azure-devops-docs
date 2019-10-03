@@ -121,22 +121,39 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 ::: moniker-end
 
 
-## Customize the taskboard
+## Customize the Taskboard
 
-Each team can customize their **Taskboard** in the following ways:
+Each team can customize their **Taskboard** in the following ways: 
+
+::: moniker range="azure-devops"
+
+- [Add or rename columns](customize-taskboard.md#add-columns).
+- [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
+- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 - [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show additional fields.
 - [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
 
-Unlike the Kanban board for a product backlog, you can't add additional columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. This would  update the columns for the **Taskboard** for all teams within the project.
+Unlike the Kanban board for a product backlog, you can't add additional columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. This would update the columns for the **Taskboard** for all teams within the project.
+
+::: moniker-end
 
 ::: moniker range="azure-devops"  
+
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 An administrator can customize the **Taskboard** for all teams in the following ways based on the process model selected for the project:
+
 **Inherited process model:**
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
@@ -144,13 +161,16 @@ An administrator can customize the **Taskboard** for all teams in the following 
 **On-prem XML process model:** 
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- 
 ::: moniker-end
 
 
 ::: moniker range="<= tfs-2018"
+
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
 - [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
 
 <a id="review-progress">  </a>
@@ -314,7 +334,7 @@ As you can see, the taskboard provides a lot of support for your Scrum activitie
 *	[Scrum best practices](best-practices-scrum.md)
 *	[Sprint planning](assign-work-sprint.md)
 *	[Schedule sprints](define-sprints.md)
-*	[Customize cards on the taskboard](../../boards/boards/customize-cards.md#task-board)
+*	[Customize a sprint Taskboard](customize-taskboard.md)
 *	[Capacity planning](../sprints/set-capacity.md)
 
 <!---

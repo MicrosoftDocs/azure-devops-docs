@@ -295,7 +295,7 @@ You can also use the simplified syntax:
 ```yaml
 jobs:
 - job: string
-  server: true
+  pool: server
 ```
 
 ::: moniker-end
@@ -311,6 +311,7 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 ::: moniker range="tfs-2017"
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
+
 ---
 
 <h2 id="dependencies">Dependencies</h2>

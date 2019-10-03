@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/07/2019
+ms.date: 09/24/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -70,6 +70,12 @@ The number of users to whom you can assign Basic appears on the right side of yo
 > ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
 ::: moniker-end
+
+> [!NOTE]
+> **Why can't I increase the number of paid users?**
+> We’re in the process of transitioning to assignment-based billing and your organization is set up for it already. Your charges will increase or decrease automatically as you assign and unassign Basic access to your users.
+
+>![Assignment-based billing is already be set up for your organization](_img/buy-more-basic-access/assignment-based-billing-enabled.png)
 
 ## Decrease amount of paid users
 

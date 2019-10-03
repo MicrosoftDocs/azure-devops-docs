@@ -23,9 +23,9 @@ The task supports popular coverage result formats such as
 [Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core-cli.md),
-[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md)
 also provide the option to publish code coverage data to the pipeline.
-If you are using these tasks, you do not need a separate [Publish Test Results task](publish-test-results.md)
+If you are using these tasks, you do not need a separate [Publish Code Coverage Results task](publish-code-coverage-results.md)
 in the pipeline.
 
 ## Demands
@@ -40,7 +40,7 @@ in the pipeline.
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
-To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages. 
+To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 
@@ -75,15 +75,10 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< azure-devops"
-
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-
-::: moniker-end
-
-<!-- ENDSECTION -->
+### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
+At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 
+If you use multiple publish code coverage tasks in the pipeline, the summary and report is shown for the last task. Any previously uploaded data is ignored.
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
 

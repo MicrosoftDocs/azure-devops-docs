@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 09/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -45,10 +45,10 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 ## 5-minute quickstarts  
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Pay for users](buy-basic-access-add-users.md)
+* [Pay for users](buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-test-plans)
 * [Buy Azure Pipelines](buy-more-build-vs.md)
 * [Try Azure Test Plans for free](try-additional-features-vs.md)
-* [Buy Basic + Test Plans access](buy-basic-plus-test-plans.md)
+* [Buy Basic + Test Plans access](buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-devops-server-for-your-users)
 
 ## How-to guides
 
@@ -56,7 +56,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
-* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
+* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 * [Billing FAQ](billing-faq.md)
 * [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
 
@@ -83,7 +83,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 ## Other resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
+- [Get Started using Azure DevOps](../../get-started/index.yml)
 - [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
 - [Azure DevOps Server Administration](/azure/devops/server/server/index)
 - [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

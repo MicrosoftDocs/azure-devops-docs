@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.author: ronai
+author: RoopeshNair
 ms.date: 5/2/2019
 monikerRange: 'azure-devops'
 ---
@@ -53,7 +53,7 @@ jobs:
   strategy:
     runOnce:
       deploy:
-      displayName: string                 # friendly name to display in the UI
+        displayName: string                 # friendly name to display in the UI
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
@@ -90,27 +90,27 @@ The following example snippet demonstrates how a pipeline can refer an environme
 ```YAML
 jobs:
 - deployment: DeployWeb
-    displayName: deploy Web App
-    pool:
-      vmImage: 'Ubuntu-16.04'
-    # records deployment against bookings resource - Kubernetes namespace
-    environment: 'smarthotel-dev.bookings'
-    strategy: 
-      runOnce:
-        deploy:
-          steps:
-            # No need to explicitly pass the connection details
-          - task: KubernetesManifest@0
-            displayName: Deploy to Kubernetes cluster
-            inputs:
-              action: deploy
-              namespace: $(k8sNamespace)
-              manifests: |
-                $(System.ArtifactsDirectory)/manifests/*
-              imagePullSecrets: |
-                $(imagePullSecret)
-              containers: |
-                $(containerRegistry)/$(imageRepository):$(tag)
+  displayName: deploy Web App
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  # records deployment against bookings resource - Kubernetes namespace
+  environment: 'smarthotel-dev.bookings'
+  strategy: 
+    runOnce:
+      deploy:
+        steps:
+          # No need to explicitly pass the connection details
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            namespace: $(k8sNamespace)
+            manifests: |
+              $(System.ArtifactsDirectory)/manifests/*
+            imagePullSecrets: |
+              $(imagePullSecret)
+            containers: |
+              $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
 This approach has the following benefits:

@@ -3,10 +3,10 @@ title: Visual Studio Online updates - Dec 11
 description: VSTS release notes for December 11 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 6e13356b-2fb3-45eb-8e41-38d7d423ac8e
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

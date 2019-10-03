@@ -1,5 +1,5 @@
 ---
-title: Job and step templates
+title: Templates
 ms.custom: seodec18
 description: How to re-use pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
@@ -9,11 +9,11 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
-ms.date: 07/19/2019
+ms.date: 09/25/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Job and step templates
+# Templates
 
 **Azure Pipelines**
 
@@ -58,7 +58,7 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-## Job reuse
+## Job re-use
 
 Much like steps, jobs can be reused.
 
@@ -81,13 +81,60 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
+## Stage re-use
+
+Stages can also be reused.
+
+```yaml
+# File: templates/stages.yml
+stages:
+- stage: Stage1
+  jobs:
+  - job: Build
+    steps:
+    - script: npm install
+
+  - job: Test
+    steps:
+    - script: npm test
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+stages:
+- template: templates/stages.yml  # Template reference
+```
+
+## Variable re-use
+
+Variables can be defined in one YAML and used in another.
+
+```yaml
+# File: vars.yml
+variables:
+  favoriteVeggie: 'brussels sprouts'
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+variables:
+- template: vars.yml  # Template reference
+
+steps:
+- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+```
+
 ## Passing parameters
 
-You can pass parameters to both step and job templates.
+You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
 
-### Job templates with parameters
+To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
+
+### Job, stage, and step templates with parameters
 
 ```yaml
 # File: templates/npm-with-params.yml
@@ -128,9 +175,8 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
-### Step templates with parameters
-
-You can also use parameters with step templates:
+You can also use parameters with step or stage templates.
+For example, steps with parameters:
 
 ```yaml
 # File: templates/steps-with-params.yml
@@ -296,7 +342,8 @@ steps:
 ### Context
 
 Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
-Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus many of the [predefined variables](../build/variables.md).
+Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+the [system variables](../build/variables.md#system-variables). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 

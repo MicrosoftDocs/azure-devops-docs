@@ -4,9 +4,9 @@ description: VSTS release notes for August 13 2012
 ms.assetid: e9fe612f-7435-4cf5-b476-666952ef9139
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

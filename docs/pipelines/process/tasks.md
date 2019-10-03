@@ -7,8 +7,8 @@ ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: sdanie
-author: steved0x
+ms.author: jukullam
+author: juliakm
 ms.date: 07/30/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -185,10 +185,6 @@ Select this check box if you want the task to run even if the build or deploymen
 
 * * *
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
-
-> **Azure Pipelines preview feature**
->
-> To use this capability you must be working on Azure Pipelines and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
 
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
 

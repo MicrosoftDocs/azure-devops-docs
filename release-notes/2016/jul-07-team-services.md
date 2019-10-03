@@ -3,10 +3,10 @@ title: Resize charts, PR comment tracking, RM updates and more – Jul 7
 description: VSTS release notes for July 7 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8a3e5bae-91b5-44d0-8d79-ec4b61393f6d
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 

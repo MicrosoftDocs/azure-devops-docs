@@ -7,9 +7,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
-ms.date: 02/12/18
+ms.author: jukullam
+author: juliakm
+ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -82,8 +82,6 @@ default.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
-* By default, contributors in a project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
-
 * In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
 * Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
@@ -128,7 +126,7 @@ The following permissions are defined for releases. The scope column explains wh
 > | **Edit release stage** | Can edit stage(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release pipeline** permission. This permission also controls whether a user can edit the configuration inside the stage of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Stage |
 > | **Manage deployments** | Can initiate a direct deployment of a release to a stage. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** or **Redeploy** actions in a release. If the condition on a stage is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Stage |
 > | **Manage release approvers** | Can add or edit approvers for stage(s) in release pipeline(s). This permissions also controls whether a user can edit the approvers inside the stage of a specific release instance. | Project, Release pipeline, Stage |
-> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific stage in a release instance, the user also needs **Edit release stage** permission. | Project, Release pipeline |
+> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific stage in a release instance (including variables marked as `settable at release time`), the user also needs **Edit release stage** permission. | Project, Release pipeline |
 > | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
 > | **View releases** | Can view releases belonging to release pipeline(s). | Project, Release pipeline |
 

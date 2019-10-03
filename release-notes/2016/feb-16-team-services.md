@@ -3,10 +3,10 @@ title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Su
 description: VSTS release notes for February 16 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8356f67c-3c1a-4094-a8af-e1c63b3b39aa
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -122,15 +122,3 @@ As always, we welcome your feedback. For problems, let us know via Send-a-Smile 
 Thanks
 
 Anand Kamat
-
-
-
-
-
-
-
-
-
-
-
-

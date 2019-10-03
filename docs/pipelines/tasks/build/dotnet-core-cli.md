@@ -48,7 +48,7 @@ If you choose &#39;Use an environment variable&#39;, you must select an environm
 
 If you choose &#39;Use the build number&#39;, this will use the build number to version your package. <strong>Note:</strong> Under Options set the build number format to be &#39;<a href="https://go.microsoft.com/fwlink/?LinkID=627416" data-raw-source="[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)">$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)</a>&#39; <br/>Options: <code>off</code>, <code>byPrereleaseNumber</code>, <code>byEnvVar</code>, <code>byBuildNumber</code>, </td></tr>
 <tr><td><code>arguments</code><br/>Arguments</td><td>Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected<br/>Note: This input only currently accepts arguments for <code>build</code>, <code>publish</code>, <code>run</code>, <code>test</code>, <code>custom</code>. If you would like to add arguments for a command not listed, use <code>custom</code>.</td></tr>
-<tr><td><code>projects</code><br/>Path to project(s)</td><td>The path to the csproj file(s) to use. You can use wildcards (e.g. <code>&ast;&ast;/.csproj</code> for all .csproj files in all subfolders).</td></tr>
+<tr><td><code>projects</code><br/>Path to project(s)</td><td>The path to the csproj file(s) to use. You can use wildcards (e.g. <code>&ast;&ast;/&ast;.csproj</code> for all .csproj files in all subfolders).</td></tr>
 <tr><td><code>noCache</code><br/>Disable local cache</td><td>Prevents NuGet from using packages from local machine caches.</td></tr>
 <tr><td><code>packagesDirectory</code><br/>Destination directory</td><td>Specifies the folder in which packages are installed. If no folder is specified, packages are restored into the default NuGet package cache</td></tr>
 <tr><td><code>buildProperties</code><br/>Additional build properties</td><td>Specifies a list of <code>token = value</code> pairs, separated by semicolons, where each occurrence of $token$ in the .nuspec file will be replaced with the given value. Values can be strings in quotation marks</td></tr>
@@ -177,7 +177,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 ### Run tests in your repository
 
 ```YAML
-# Run tests and publish test results.
+# Run tests and auto publish test results.
 - task: DotNetCLI@2
   inputs:
     command: 'test'

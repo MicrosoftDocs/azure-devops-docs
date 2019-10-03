@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Azure DevOps Services extension samples
 
-You can get started developing your extension by working from an sample. 
+You can get started developing your extension by working from a sample. 
 The Microsoft samples listed below show the capabilities of the extension framework and how to 
 contribute to various areas. Each sample illustrates one or more contributions. We've limited the 
 number of contributions for each sample to increase understanding of the extension framework.
@@ -38,7 +38,7 @@ number of contributions for each sample to increase understanding of the extensi
 | [User Voice UI](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui) | [GitHub](https://github.com/Microsoft/vsts-uservoice-ui-extension) | Group (work item form), Hub, Extension data | Shows rich data of the linked User Voice suggestions on the work item form. It covers the following techniques: calling external APIs, add tags to work item, add links to work item, resize of container. |
 | [Work Item Details](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails) | [GitHub](https://github.com/ALM-Rangers/Work-Item-Details-Widget-Extension) | Context menu action (work item), Dashboard Widget | View details of work item(s) on your dashboard |
 | [WSJF](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) | [GitHub](https://github.com/Microsoft/vsts-wsjf-extension) | Notification (work item), Context menu action (work item) | Calculates the Weighted Shortest Job First (WSJF), which is a formula to calculate the backlog items with highest ROI. It is a popular prioritization feature in frameworks like [SAFe](http://www.scaledagileframework.com/wsjf/). |
-| Cascading Picklists | [GitHub](https://github.com/microsoft/azure-devops-extension-cascading-picklist) | Work Item Form | Convert regular picklist fields into lists that display or hide values depending on the value of a parent picklist. |
+| [Cascading Picklists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension) | [GitHub](https://github.com/microsoft/azure-devops-extension-cascading-picklist) | Work Item Form | Convert regular picklist fields into lists that display or hide values depending on the value of a parent picklist. |
 
 ## How to get started
 

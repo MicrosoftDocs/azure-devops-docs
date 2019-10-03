@@ -9,7 +9,7 @@ ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Analyze and report on test results using the test perspective 
@@ -113,7 +113,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
  The test case corresponds to a type of work item that the test team uses to define both manual and automated tests that your team can run and manage by using Microsoft Test Manager. A test plan consists of test configurations and test suites. A test configuration defines the software or hardware on which you want to run your tests. A test suite defines a hierarchy within the plan so that you can group test cases together.  
   
- For more information, see [Testing overview](../../test/index.md).  
+ For more information, see [Testing overview](../../test/index.yml).  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
@@ -165,7 +165,7 @@ You can link test cases to other work items such as user stories, requirements, 
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

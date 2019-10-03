@@ -38,8 +38,8 @@ Later, as you develop functionality in the workspace on your dev machine, your c
 
 In special cases (for example, to fix a regression bug), you might need to get and work with a specific version of one or more files.
 
->**Note:**
->  Keep in mind that if you get an older version of a file, make changes to it, and then try to check it in, there is an increased chance that you will need to [resolve conflicts](resolve-team-foundation-version-control-conflicts.md) before you can complete the check-in.
+> [!NOTE]
+> Keep in mind that if you get an older version of a file, make changes to it, and then try to check it in, there is an increased chance that you will need to [resolve conflicts](resolve-team-foundation-version-control-conflicts.md) before you can complete the check-in.
 
 ### To get a specific version of some files from the History window
 
@@ -69,15 +69,15 @@ In special cases (for example, to fix a regression bug), you might need to get a
 
     If selected, files from the server will overwrite all files that do not have the read-only attribute associated with them and are not checked out. Only files on the server, which are different, will overwrite the files in the local workspace. By default, this option is not selected.
 
-    >**Tip:**
-    >  This option is equivalent to running the following command: [tf get /overwrite](get-command.md).
+    > [!TIP]
+    > This option is equivalent to running the following command: [tf get /overwrite](get-command.md).
 
 4.  (Optional) Select the **Overwrite all files even if the local version matches the specified version** option.
 
     If selected, files from the server overwrite all files.
 
-    >**Tip:**
-    >  This option is equivalent to running the following command: [tf get /force](get-command.md).
+    > [!TIP]
+    > This option is equivalent to running the following command: [tf get /force](get-command.md).
 
 5.  Choose **Get**.
 

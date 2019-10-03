@@ -60,17 +60,20 @@ The Bash task also has a shortcut syntax in YAML:
 <td>Environment variables</td>
 <td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 <pre><code class="lang-yaml">
-- script: echo $MYSECRET
-  env:
-    MySecret: $(Foo)
-
-\# equivalent using task syntax - note that this is NOT a task input
-- task: Bash@3
-  inputs:
-    type: inline
-    script: echo $MYSECRET
-  env:
-    MySecret: $(Foo)
+steps:
+  - task: Bash@3
+    inputs:
+      targetType: 'inline'
+      script: echo $MYSECRET
+    env:
+      MySecret: $(Foo)
+</code></pre>
+<br/><br/>This is equivalent to:<br/><br/>
+<pre><code class="lang-yaml">
+steps:
+  - script: echo $MYSECRET
+    env:
+      MySecret: $(Foo)
 </code></pre>
 </td>
 </tr>

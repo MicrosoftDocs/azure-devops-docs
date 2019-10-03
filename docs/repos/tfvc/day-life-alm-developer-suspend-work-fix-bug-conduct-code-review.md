@@ -22,8 +22,8 @@ A powerful one-click way to switch your working context from one thread of work 
 
 [Peter has been busy writing some code to fulfill a backlog item task.](day-life-alm-developer-write-new-code-user-story.md) However, [his colleagues have found a bug](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md) that is blocking them, and he wants to fix it immediately. He suspends the work that he's doing and fixes the bug. He asks Julia to review the fix and, after the review, checks in the fix and resumes work on his original task.
 
->**Note:**
->  The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
+> [!NOTE]
+> The My Work and Code Review features that Peter uses are available only in Visual Studio Premium and Visual Studio Ultimate.
 
 ## Suspend current work
 
@@ -37,8 +37,8 @@ Before he starts to work on the new bug, Peter wants to make sure that his curre
 
 Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
 
->**Note:**
->  Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
+> [!NOTE]
+> Your working context is linked to the work items that show as In Progress on the My Work page. By using **Suspend** and **Resume**, you can quickly switch between different tasks. Your open solutions and files, code changes, and Visual Studio layout are all switched together.
 
 ### To suspend current work and begin work on a different task
 
@@ -65,8 +65,8 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 
         Alternatively, you can switch to a work item that you previously suspended by dragging it from under **Suspended Work**.
 
->**Tip:**
->  The currently In Progress work items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the In Progress state when you switch from one task to another.
+> [!TIP]
+> The currently In Progress work items link to your current code changes and Visual Studio state. To allow Visual Studio to help you organize your work, make sure that the appropriate items are in the In Progress state when you switch from one task to another.
 
 ## Investigate the bug
 
@@ -166,8 +166,8 @@ In her comments, Julia points out that the test is wrong. The allowable error sh
                 TestEqual(1000, 1000*1e-7, true); // Less than allowed error
                 TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
->**Tip:**
->  Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
+> [!TIP]
+> Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
 ## To perform a code review![My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)![Diff window. Code Review page - Accept link, Overall comment, code block comment](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **My Code Reviews & Requests** section and open the request.
@@ -240,8 +240,8 @@ The test passes once again:
 
 ![Unit Test Explorer showing passed test for equal](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675828.png)
 
->**Tip:**
->  To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
+> [!TIP]
+> To fix a bug, follow the same practice as in code development. Write a test that fails and then make the test pass. Check in the code and the tests only when the tests pass.
 
 Peter now turns his attention to the test case in which the bug was discovered. The steps to reproduce the bug are clearly described in the test case work item. He follows the steps and discovers that the invoices are correctly listed.
 

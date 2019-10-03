@@ -102,7 +102,7 @@ A typical use of this variable is to make it part of the label format, which you
 <br/><br/>
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as a version control tag.
@@ -133,7 +133,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>The name of the build pipeline.
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 </td>
 </tr>
@@ -148,7 +148,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>See &quot;<a href="#identity_values" data-raw-source="[How are the identity variables set?](#identity_values)">How are the identity variables set?</a>&quot;.
 
 
-Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[label format](../repos/index.md)">label format</a> will fail.
+Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
 </td>
 </tr>
@@ -185,7 +185,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -286,7 +286,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/build/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -308,6 +308,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>Build.SourceVersionMessage</td>
 <td>The comment of the commit or changeset.
+
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
 Note: This variable is available in TFS 2015.4.
 </td>
@@ -393,22 +395,22 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.PullRequestId</td>
-<td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: <code>http://our-server:8080/tfs/DefaultCollection/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
+<td>The URL to the repo that contains the pull request. For example: <code>http://our-server:8080/tfs/DefaultCollection/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation)">Git PR affected by a branch policy</a>.</td>
+<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
 </tr>
 
 <tr>
