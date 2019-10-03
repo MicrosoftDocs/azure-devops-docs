@@ -78,6 +78,8 @@ Alternatively, there's also a toolbar button to add a default Mermaid diagram to
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
 ## Embed Videos in a Wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
