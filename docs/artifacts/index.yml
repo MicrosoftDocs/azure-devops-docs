@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/04/2019 
+  ms.date: 10/03/2019 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -82,12 +82,12 @@ landingContent:
         links:
           - text: Set up Azure Pipelines and Maven packages
             url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-            url: ./maven/install.md
           - text: Use packages from Maven Central
             url: ./maven/upstream-sources.md 
           - text: Publish Maven artifacts
             url: ./maven/publish.md
           - text: Install Maven artifacts
+            url: ./maven/install.md
   - title: Python
     linkLists:
       - linkListType: quickstart
