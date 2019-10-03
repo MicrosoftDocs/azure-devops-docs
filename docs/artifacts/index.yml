@@ -46,10 +46,12 @@ landingContent:
         links:
           - text: Get started with NuGet packages
             url: get-started-nuget.md
-      - linkListType: tutorial
+      - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and NuGet
+          - text: Set up Azure Pipelines and NuGet packages
             url: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Use packages from nuget.org
+            url: ./nuget/upstream-sources.md
           - text: Publish a NuGet package
             url: ./nuget/publish.md
           - text: Consume NuGet packages
@@ -60,11 +62,11 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Use npm to store JavaScript packages
+          - text: Get started with npm and JavaScript packages
             url: get-started-npm.md
       - linkListType: how-to-guide
         links:
-          - text: Publish npm packages to Azure Pipelines
+          - text: Set up Azure Pipelines and npm packages
             url: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
           - text: Use packages from npmjs.com
             url: ./npm/upstream-sources.md
@@ -78,14 +80,14 @@ landingContent:
             url: get-started-maven.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Maven
-            url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Set up Azure Pipelines and Maven packages
+            url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+            url: ./maven/install.md
+          - text: Use packages from Maven Central
+            url: ./maven/upstream-sources.md 
           - text: Publish Maven artifacts
             url: ./maven/publish.md
           - text: Install Maven artifacts
-            url: ./maven/install.md
-          - text: Use packages from Maven Central
-            url: ./maven/upstream-sources.md
   - title: Python
     linkLists:
       - linkListType: quickstart
@@ -94,15 +96,15 @@ landingContent:
             url: ./quickstarts/python-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Publish Python packages in Azure Pipelines
+          - text: Set up Azure Pipelines and Python packages
             url: ../pipelines/artifacts/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - title: Universal Packages
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Publish & download a Universal Package
+          - text: Get started with Universal packages
             url: ./quickstarts/universal-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Publish & download Universal Packages in Azure Pipelines
+          - text: Set up Azure Pipelines and Universal packages
             url: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 

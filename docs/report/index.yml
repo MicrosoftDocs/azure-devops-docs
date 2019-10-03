@@ -54,6 +54,8 @@ landingContent:
             url: ./powerbi/what-is-analytics.md
           - text: What are Analytics views?
             url: ./powerbi/what-are-analytics-views.md
+          - text: Reporting roadmap
+            url: ./powerbi/reporting-roadmap.md
       - linkListType: tutorial
         links:
           - text: Create an Analytics view
@@ -62,6 +64,20 @@ landingContent:
             url: ./powerbi/data-connector-connect.md
           - text: Create a Power BI report with an OData Query
             url: ./powerbi/create-quick-report-odataq.md
+  - title: Sample Power BI reports 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Sample reports using OData queries
+            url: ./powerbi/sample-odata-overview.md
+          - text: Data available from Analytics
+            url: ./powerbi/data-available-in-analytics.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add a column for last refresh date
+            url: ./powerbi/add-last-refresh-time.md
+          - text: Calculate time-in-state 
+            url: ./powerbi/create-timeinstate-report.md
   - title: Extend Analytics with OData (Preview)
     linkLists:
       - linkListType: overview
@@ -70,7 +86,7 @@ landingContent:
             url: ./powerbi/overview.md
           - text: Quick reference
             url: ./extend-analytics/quick-ref.md
-      - linkListType: tutorial
+      - linkListType: quickstart
         links:
           - text: Query work tracking data
             url: ./extend-analytics/wit-analytics.md
