@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 10/02/2019
 ---
 
 # Create and save managed queries with the query editor
@@ -119,6 +119,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 <a id="define-clause" />
 
 ## Define a clause
+
 You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
@@ -144,7 +145,10 @@ For example, you can search for all work items assigned to you by specifying the
 
 For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
 
-All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required.  
+All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
+
+> [!TIP]
+> To view the WIQL syntax for a query, and how parenthesis are used to group clauses, install the [Marketplace Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). This extension supports viewing the WIQL syntax and exporting it to a WIQL file for use in REST API calls. To learn more, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 
 ### Checklist for how to define a query clause
 
