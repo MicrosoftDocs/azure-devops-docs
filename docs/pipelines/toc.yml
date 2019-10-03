@@ -524,7 +524,7 @@
         href: tasks/utility/service-fabric-powershell.md
       - name: Shell script
         href: tasks/utility/shell-script.md
-      - name: Update Service Fabric App Versions
+      - name: Update Service Fabric Manifests
         href: tasks/utility/service-fabric-versioning.md
     - name: Test tasks
       items:
