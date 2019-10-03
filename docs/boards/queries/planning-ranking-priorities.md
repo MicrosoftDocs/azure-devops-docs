@@ -160,8 +160,9 @@ The following table describes the fields that you can use to plan and prioritize
 </table>
 
 #### Notes:  
-1. To change the menu selection, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-1. The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
+
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+1. The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
 ## Related articles 
