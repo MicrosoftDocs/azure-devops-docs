@@ -31,7 +31,7 @@ If you want to export work items to Excel, see [Bulk add or modify work items wi
   
 - To access an Microsoft Excel report, your team project must have been configured with a project portal based on SharePoint Server Enterprise Edition.  
   
-- To open a report in Microsoft Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any product in Visual Studio ALM.  
+- To open a report in Microsoft Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any Visual Studio client.  
   
   To view or modify an Excel report that is stored under the Documents node for a team project, you must be assigned or belong to a group that has been assigned **Read** permissions for Team Foundation. You must also be assigned the **Visitors** or **Members** permissions, respectively, in SharePoint Products for the team project.  
   

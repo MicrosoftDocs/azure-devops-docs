@@ -21,10 +21,7 @@ ms.date: 08/23/2019
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
-> [!NOTE]  
-> The Basic process is currently only available from Azure DevOps Services. For on-premises deployments, choose the Agile process. 
-
-Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.  
+Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.
 
 [!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
@@ -75,6 +72,8 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 <a id="define-new-work">  </a>
 
 ## Open the Kanban board 
+
+A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 #### [Basic process](#tab/basic-process) 
 
