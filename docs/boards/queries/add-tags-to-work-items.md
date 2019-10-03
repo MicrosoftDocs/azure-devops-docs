@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 09/26/2019
@@ -215,7 +216,9 @@ While no hard limit exists, creating more than 100K tags for a project collectio
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
-	TF401243: Failed to save work item because too many new tags were added to the work item.
+```
+TF401243: Failed to save work item because too many new tags were added to the work item.
+```
 
 Simply save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
