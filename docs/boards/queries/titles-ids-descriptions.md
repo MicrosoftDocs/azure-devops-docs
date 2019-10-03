@@ -176,7 +176,6 @@ System Info<sup>1</sup>
   </td>
   <td>
     <p>Information about the software and system configuration that is relevant to the bug, code review, or feedback. </p>
-
     <p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
   </td>
   <td>Bug, Code Review Request, Feedback Request<br/>  </td>
