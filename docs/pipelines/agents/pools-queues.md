@@ -127,7 +127,7 @@ For more information, see the [YAML schema](../yaml-schema.md) for [pools](../ya
 
 # [Classic](#tab/classic)
 
-To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. For more information about each image, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
+To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down, using the **Classic Editor Pool** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
 
