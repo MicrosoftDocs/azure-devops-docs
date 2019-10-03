@@ -36,6 +36,8 @@ To get started, you'll want to follow the steps outlined below.
 
 [![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
+> [!NOTE]  
+> A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Product and portfolio boards 
 
@@ -57,7 +59,6 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
-
 
 ## Configure and customize your Kanban board
 
