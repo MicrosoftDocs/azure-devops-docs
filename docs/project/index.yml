@@ -72,6 +72,32 @@ landingContent:
             url: ../notifications/howto-manage-personal-notifications.md
           - text: Set team notifications
             url: ../notifications/howto-manage-team-notifications.md
+  - title: Request and provide feedback
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Feedback tools
+            url: ./feedback/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Request stakeholder feedback (Test & Feedback extension)
+            url: ../test/request-stakeholder-feedback.md
+          - text: Request  feedback (work tracking)
+            url: ./feedback/get-feedback.md
+  - title: Configure Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with Service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a service hook with Web Hooks
+            url: ../service-hooks/services/webhooks.md
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md
+          - text: Integrate with Slack
+            url: ../service-hooks/services/slack.md
   - title: Search
     linkLists:
       - linkListType: overview
@@ -92,31 +118,5 @@ landingContent:
             url: ./search/work-item-search.md
           - text: Search wiki
             url: ./wiki/search-wiki.md
-  - title: Configure Service hooks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Integrate with Service hooks
-            url: ../service-hooks/overview.md
-      - linkListType: quickstart
-        links:
-          - text: Create a service hook with Web Hooks
-            url: ../service-hooks/services/webhooks.md
-          - text: Integrate with Teams
-            url: ../service-hooks/services/teams.md
-          - text: Integrate with Slack
-            url: ../service-hooks/services/slack.md
-  - title: Request and provide feedback
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Feedback tools
-            url: ./feedback/index.md
-      - linkListType: how-to-guide
-        links:
-          - text: Request stakeholder feedback (Test & Feedback extension)
-            url: ../test/request-stakeholder-feedback.md
-          - text: Request  feedback (work tracking)
-            url: ./feedback/get-feedback.md
 
 
