@@ -1,6 +1,4 @@
 - name: Extend Analytics with OData (Preview)
-  href: index.md
-- name: Quick reference
   href: quick-ref.md
 - name: Query work item data 
   href: wit-analytics.md

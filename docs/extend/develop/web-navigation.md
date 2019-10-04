@@ -2,19 +2,19 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Developing extensions for Azure DevOps Services vertical web navigation | Azure DevOps Services
-description: Guidance for developing Azure DevOps Services extensions to be used in the new vertical web navigation
+description: Guidance for developing Azure DevOps Services extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: 'azure-devops'
 ms.author: wismythe
 author: willsmythe
-ms.date: 06/21/2018
+ms.date: 10/02/2019
 ---
 
-# Guidance for extension developers impacted by new navigation preview
+# Guidance for extension developers impacted by vertical navigation
 
-Our new vertical navigation preview brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
+Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
 ## Team context
 
@@ -38,7 +38,7 @@ In traditional horizontal navigation, a user could navigate into a project or te
     }
 }
 ```
-We do not recommend relaying on `VSS.getWebContext().team` and follow below guidance based on category your extension falls under.
+We do not recommend relying on `VSS.getWebContext().team`. Instead, follow the guidance below, based on the category your extension falls under.
 
 ### Hub extensions that are team aware
 If your extension needs to provide users a way to select a team, you can use the Teams REST API to get a list of teams for the current project. Here is an example of how to call this API from your extension:

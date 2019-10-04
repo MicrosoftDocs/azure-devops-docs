@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Notifications  
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
 Stay up-to-date with changes as they occur by subscribing to events such as code changes, build completions, or work item assignments.  
 

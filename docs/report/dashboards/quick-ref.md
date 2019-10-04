@@ -70,7 +70,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <strong>Reports</strong>
 <ul>
 <li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
-<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
+<li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 </ul>
 <strong>Widgets</strong>
 <ul>
@@ -139,8 +139,8 @@ Use this index to quickly access information on tasks for configuring or accessi
 <strong>Reports</strong>
 <ul>
 <li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
-<li><a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a> </li>
-<li><a href="../../report/sql-reports/index.md" data-raw-source="[SQL Server reports](../../report/sql-reports/index.md)">SQL Server reports</a></li>
+<li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
+<li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
 <li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
 </ul>
 <strong>Widgets</strong>
@@ -198,7 +198,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Reports</strong>
 <ul>
-<li><a href="../../report/sql-reports/index.md" data-raw-source="[SQL Server reports](../../report/sql-reports/index.md)">SQL Server reports</a></li>
+<li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
 <li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
 </ul>
 <strong>Widgets</strong>

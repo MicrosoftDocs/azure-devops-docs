@@ -120,7 +120,7 @@ Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemN
 
 ![High-level dashboard on Azure DevOps](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
-# What's the value?
+## What's the value?
 
 Using a ring-deployment strategy you can gather feedback to validate your hypothesis. You can decommission old releases and distribute new releases without the risk of affecting all users. 
 
