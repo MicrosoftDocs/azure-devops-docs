@@ -218,21 +218,6 @@ read wiki pages. </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<!---
-<tr>
-<td align="left"><strong>Microsoft published Azure DevOps Extensions</strong></td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>
-
-![checkmark](/azure/devops/_img/icons/checkmark.png)
-
-</td>
-</tr>
--->
-
-
 </tbody>
 </table>
 
