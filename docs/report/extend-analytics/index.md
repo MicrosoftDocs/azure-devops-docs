@@ -38,8 +38,8 @@ Using OData, you can directly query Analytics for Azure DevOps from a supported 
 
 
 ## Concepts
-- [Data available in Analytics](../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
-- [Performance and latency](../powerbi/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Data available in Analytics](../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Performance and latency](../powerbi/performance-latency.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 
 <!--
@@ -47,7 +47,7 @@ Planned:Understand Agile process data
 -->
 
 ## How-to Guides
-- [Set permissions (Security)](../powerbi/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Set permissions (Security)](../powerbi/analytics-security.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 
 
 ## Reference
@@ -57,8 +57,8 @@ Planned:Understand Agile process data
 
  
 ## Resources
-- [PowerBI](../powerbi/index.md)  
-- [Dashboards, Charts, Reports, & Widgets](../dashboards/index.md)  
+- [PowerBI](../powerbi/overview.md)  
+- [Dashboards, Charts, Reports, & Widgets](../dashboards/overview.md)  
 - [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 

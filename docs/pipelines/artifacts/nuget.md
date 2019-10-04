@@ -202,4 +202,4 @@ When you push packages to a Package Management feed, you can also [publish symbo
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)

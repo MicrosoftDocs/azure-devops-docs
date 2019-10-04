@@ -12,9 +12,12 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Artifacts in Azure DevOps Services and Azure DevOps Server
+# What is Azure Artifacts? 
 
 [!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+
+With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
+add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  
 
 Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and Team Foundation Server (TFS) 2017 and 2018.
 

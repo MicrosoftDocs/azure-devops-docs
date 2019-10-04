@@ -1,0 +1,130 @@
+### YamlMime:Landing
+
+title: Azure DevOps Reporting documentation
+summary: Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. 
+
+metadata:
+  title: Azure DevOps Reporting documentation
+  description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-analytics
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 10/03/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Configure charts & dashboards
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About dashboards, charts, reports & widgets
+            url: ./dashboards/overview.md
+          - text: Quick reference
+            url: ./dashboards/quick-ref.md
+          - text: Widget catalog
+            url: ./dashboards/widget-catalog.md
+      - linkListType: tutorial
+        links:
+          - text: Add, rename, and delete dashboards
+            url: ./dashboards/dashboards.md
+          - text: Add a widget to a dashboard
+            url: ./dashboards/add-widget-to-dashboard.md
+          - text: Configure Burndown & Burnup widgets
+            url: ./dashboards/configure-burndown-burnup-widgets.md
+          - text: View and configure team velocity
+            url: ./dashboards/team-velocity.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create status and trend query-based charts
+            url: ./dashboards/charts.md
+  - title: Create Power BI reports
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Power BI integration
+            url: ./powerbi/overview.md
+          - text: What is Analytics
+            url: ./powerbi/what-is-analytics.md
+          - text: What are Analytics views?
+            url: ./powerbi/what-are-analytics-views.md
+          - text: Reporting roadmap
+            url: ./powerbi/reporting-roadmap.md
+      - linkListType: tutorial
+        links:
+          - text: Create an Analytics view
+            url: ./powerbi/analytics-views-create.md
+          - text: Connect to Power BI data connector 
+            url: ./powerbi/data-connector-connect.md
+          - text: Create a Power BI report with an OData Query
+            url: ./powerbi/create-quick-report-odataq.md
+  - title: Sample Power BI reports 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Sample reports using OData queries
+            url: ./powerbi/sample-odata-overview.md
+          - text: Data available from Analytics
+            url: ./powerbi/data-available-in-analytics.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add a column for last refresh date
+            url: ./powerbi/add-last-refresh-time.md
+          - text: Calculate time-in-state 
+            url: ./powerbi/create-timeinstate-report.md
+  - title: Extend Analytics with OData (Preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Power BI integration
+            url: ./powerbi/overview.md
+          - text: Quick reference
+            url: ./extend-analytics/quick-ref.md
+      - linkListType: quickstart
+        links:
+          - text: Query work tracking data
+            url: ./extend-analytics/wit-analytics.md
+          - text: Project and organization-scoped queries
+            url: ./extend-analytics/account-scoped-queries.md
+          - text: Aggregate work tracking data
+            url: ./extend-analytics/aggregated-data-analytics.md
+      - linkListType: reference
+        links:
+          - text: Query guidelines for Analytics with OData
+            url: ./extend-analytics/odata-query-guidelines.md
+  - title: View SQL Server Reports (Legacy)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Reporting Services reports
+            url: ./sql-reports/reporting-services-reports.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create Excel reports from a work item query
+            url: ./excel/create-status-and-trend-excel-reports.md
+          - text: Create a Detailed Report using Report Designer
+            url: ./sql-reports/create-a-detailed-report-using-report-designer.md
+          - text: Add reports to a team project
+            url: ./admin/add-reports-to-a-team-project.md
+  - title: Develop widgets and dashboard extensions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Develop a web extension
+            url: ../extend/get-started/node.md
+          - text: Add a dashboard widget
+            url: ../extend/develop/add-dashboard-widget.md
+          - text: Add a chart
+            url: ../extend/develop/add-chart.md
+
+
+
+
+
+

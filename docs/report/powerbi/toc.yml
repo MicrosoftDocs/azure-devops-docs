@@ -1,14 +1,13 @@
-- name: Power BI Integration
-  href: index.md
 - name: About Power BI integration
   href: overview.md
 - name: What is the Analytics service?
   href: what-is-analytics.md
 - name: Tutorials
   items:
+  - name: Create a Power BI report using an Analytics View
+    href: create-quick-report.md
   - name: Create a Power BI report using OData Queries
     href: create-quick-report-odataq.md
-  - name: Create a Power BI report using an Analytics View
 - name: Concepts
   items:
   - name: Filters applied to historical data

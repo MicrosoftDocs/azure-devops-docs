@@ -11949,6 +11949,11 @@
       "source_path": "docs/test-plans/index.md",
       "redirect_url": "/azure/devops/test/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/artifacts/get-started/index.md",
+      "redirect_url": "/azure/devops/artifacts/index",
+      "redirect_document_id": true
     }
   ]
 }
