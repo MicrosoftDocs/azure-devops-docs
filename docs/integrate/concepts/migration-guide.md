@@ -21,7 +21,7 @@ monikerRange: "azure-devops"
 
 This guide is to help you migrate your .NET code from using [WIT Client OM](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) to our REST based [.Net Client Libraries](dotnet-client-libraries.md). Below is table of the common work item tracking scenarios with links back to its respected API documentation.
 
-View the [Azure Devops WIT Client OM Migration Guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide) repo for all the sample code covered in these scenarios.
+View the [Azure DevOps WIT Client OM Migration Guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide) repo for all the sample code covered in these scenarios.
 
 ## Common scenarios
 
