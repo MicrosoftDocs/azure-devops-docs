@@ -35,4 +35,4 @@ A: Only organization or project administrators can invite new users to join the 
 ## Related articles
 
 * [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md)
-* [Add organization users to Azure Devops](../accounts/add-organization-users.md)
+* [Add organization users to Azure DevOps](../accounts/add-organization-users.md)
