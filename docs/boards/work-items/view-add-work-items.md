@@ -144,8 +144,6 @@ Additional menu options support the following tasks:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
-
 ### View work item
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).
@@ -175,11 +173,7 @@ ID    Type    Title      Assigned To          State
 864   Bug     fix-issue  contoso@contoso.com  New
 ```
 
-::: moniker-end
-
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
------
+* * *
 
 ## Add a work item
 
@@ -220,8 +214,6 @@ Enter a title and then save the work item. Before you can change the State from 
 ![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range="azure-devops"  
 
 For example, here we choose Bug.
 
@@ -276,11 +268,7 @@ ID    Type    Title      Assigned To          State
 864   Bug     fix-issue  contoso@contoso.com  New
 ```
 
-::: moniker-end
-
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
------
+* * *
 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
