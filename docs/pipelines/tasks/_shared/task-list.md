@@ -6,7 +6,7 @@ ms.topic: include
 
 |Task   |  Versions  |
 |-------|----------|
-| [Android build and release task](../build/android-build.md) - Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
+| [Android build task (deprecated; use Gradle)](../build/android-build.md) - Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | [Android signing build and release task](../build/android-signing.md) - Android signing build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | [Ant build and release task](../build/ant.md) - Learn how to build with Apache Ant | Azure Pipelines, TFS 2015 RTM and newer |
 | [Azure IoTEdge task](../build/azure-iot-edge.md) - Build, test, and deploy applications quickly and efficiently to Azure IoT Edge | Azure Pipelines |
@@ -88,13 +88,13 @@ ms.topic: include
 |Task   |  Versions  |
 |-------|----------|
 | [App Center Test task](../test/app-center-test.md) - Test app packages with Visual Studio App Center. | Azure Pipelines, TFS 2017 and newer |
-| [Cloud-based Load Test task](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| [Cloud-based Web Performance Test task](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
+| [Cloud-based Load Test task (Deprecated)](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
+| [Cloud-based Web Performance Test task (Deprecated)](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
 | [Container Structure Test Task](../test/container-structure-test-task.md) - Test container structure by container task and integrate test reporting into your build and release pipelines | Azure Pipelines |
 | [Publish Code Coverage Results task](../test/publish-code-coverage-results.md) - Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build | Azure Pipelines, TFS 2015 RTM and newer |
 | [Publish Test Results task](../test/publish-test-results.md) - Publish Test Results to integrate test reporting into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | [Run Functional Tests task](../test/run-functional-tests.md) - Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| [Cloud-based Apache JMeter Load Test task](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
+| [Cloud-based Apache JMeter Load Test task (Deprecated)](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
 | [Visual Studio Test Agent Deployment task](../test/visual-studio-test-agent-deployment.md) - Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | [Visual Studio Test task](../test/vstest.md) - Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. | Azure Pipelines |
 | [Xamarin Test Cloud task](../test/xamarin-test-cloud.md) - This task is deprecated. Use the App Center Test task instead. | Azure Pipelines, TFS 2015 RTM and newer |
@@ -127,7 +127,7 @@ ms.topic: include
 | [Bash task](../utility/bash.md) - Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | [Batch Script task](../utility/batch-script.md) - Execute .bat or .cmd scripts when building your code | Azure Pipelines, TFS 2015 RTM and newer |
 | [Command Line task](../utility/command-line.md) - Execute tools from a command prompt when building code | Azure Pipelines, TFS 2015 RTM and newer |
-| [Copy and Publish Build Artifacts task](../utility/copy-and-publish-build-artifacts.md) - Copy build artifacts to a staging folder and publish them with  (TFS) | Azure Pipelines, TFS 2015 RTM and newer |
+| [Copy and Publish Build Artifacts task](../utility/copy-and-publish-build-artifacts.md) - Copy build artifacts to a staging folder and publish them | TFS 2015 RTM. Deprecated on Azure Pipelines and newer versions of TFS. |
 | [Copy Files task](../utility/copy-files.md) - Copy files between folders with match patterns when building code | Azure Pipelines, TFS 2015.3 and newer |
 | [cURL Upload Files task](../utility/curl-upload-files.md) - Use cURL to upload files with supported protocols | Azure Pipelines, TFS 2015 RTM and newer |
 | [Decrypt File (OpenSSL) task](../utility/decrypt-file.md) - A thin utility task for file decryption using OpenSSL | Azure Pipelines |
@@ -159,4 +159,3 @@ ms.topic: include
 | [Shell Script task](../utility/shell-script.md) - Execute a bash script when building code | Azure Pipelines, TFS 2015 RTM and newer |
 | [Query Work Items task](../utility/work-item-query.md) - Ensure the number of matching items returned by a work item query is within the configured threshold | Azure Pipelines, TFS 2017 and newer |
 | [Xamarin License task](../utility/xamarin-license.md) - Activate or deactivate a Xamarin license when building code | Azure Pipelines, TFS 2015 RTM and newer |
-
