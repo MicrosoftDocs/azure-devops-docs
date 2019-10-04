@@ -35,16 +35,16 @@ ms.topic: include
 |--------|-----------|
 | ![icon](../deploy/_img/appcenterdistribute.png) [App Center Distribute task](../deploy/app-center-distribute.md) - Distribute app builds to testers and users through App Center | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../deploy/_img/azureappservicemanage.png) [Azure App Service Manage task](../deploy/azure-app-service-manage.md) - Start, Stop, Restart, Slot swap, Install site extensions, or Enable Continuous Monitoring for an Azure App Service | Azure Pipelines |
-| [Azure CLI task](../deploy/azure-cli.md) - build task to run a shell or batch script containing Microsoft Azure CLI commands | Azure Pipelines, Azure DevOps Server 2019 |
+| ![icon](../deploy/_img/azure-cli-icon.png) [Azure CLI task](../deploy/azure-cli.md) - build task to run a shell or batch script containing Microsoft Azure CLI commands | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/azurecloudpowershelldeployment.png) [Azure Cloud Service Deployment task](../deploy/azure-cloud-powershell-deployment.md) - Deploy an Azure Cloud Service | Azure Pipelines |
-| [Azure File Copy task](../deploy/azure-file-copy.md) - build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../deploy/_img/azure-file-copy-icon.png) [Azure File Copy task](../deploy/azure-file-copy.md) - build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) | Azure Pipelines, TFS 2015.3 and newer |
 | [Azure Function App task](../deploy/azure-function-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
-| [Azure Key Vault task](../deploy/azure-key-vault.md) - Azure Key Vault task for use in the jobs of all of your build and release pipelines | Azure Pipelines, Azure DevOps Server 2019 |
+| ![icon](../deploy/_img/azure-key-vault-icon.png) [Azure Key Vault task](../deploy/azure-key-vault.md) - Azure Key Vault task for use in the jobs of all of your build and release pipelines | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts task](../deploy/azure-monitor-alerts.md) - Configure alerts on available metrics for an Azure resource | Azure Pipelines |
 | ![icon](../deploy/_img/azuremysqldeployment.png) [Azure Database for Mysql Deployment task](../deploy/azure-mysql-deployment.md) - Run your scripts and make changes to your Azure DB for Mysql. | Azure Pipelines |
 | ![icon](../deploy/_img/azure-policy-check-gate.png) [Azure Policy Check Gate task](../deploy/azure-policy-check-gate.md) - Security and compliance assessment with Azure policies on resources that belong to the resource group and Azure subscription. | Azure Pipelines |
-| ![icon](../deploy/_img/azurepowershell.png) [Azure PowerShell task](../deploy/azure-powershell.md) - Run a PowerShell script within an Azure environment | Azure Pipelines |
-| ![icon](../deploy/_img/azureresourcegroupdeployment.png) [Azure Resource Group Deployment task](../deploy/azure-resource-group-deployment.md) - Deploy, start, stop, or delete Azure Resource Groups | Azure Pipelines |
+| ![icon](../deploy/_img/azure-powershell-icon.png) [Azure PowerShell task](../deploy/azure-powershell.md) - Run a PowerShell script within an Azure environment | Azure Pipelines |
+| ![icon](../deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment task](../deploy/azure-resource-group-deployment.md) - Deploy, start, stop, or delete Azure Resource Groups | Azure Pipelines |
 | [Azure Function App for Container task](../deploy/azure-rm-functionapp-containers.md) - Deploy Azure Functions on Linux using custom images | Azure Pipelines |
 | [Azure Web App for Container task](../deploy/azure-rm-web-app-containers.md) - Deploy Web Apps, Functions, and WebJobs to Azure App Services | Azure Pipelines |
 | ![icon](../deploy/_img/azurermwebappdeployment.png) [Azure App Service Deploy task](../deploy/azure-rm-web-app-deployment.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines, Azure DevOps Server 2019 |
@@ -60,13 +60,13 @@ ms.topic: include
 | ![icon](../deploy/_img/kubernetes.png) [Kubectl task](../deploy/kubernetes.md) - Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands. | Azure Pipelines |
 | [MySQL Database Deployment On Machine Group task](../deploy/mysqldb-deployment.md) - The task is used to deploy for MySQL Database. | Azure Pipelines |
 | ![icon](../deploy/_img/packerbuild.png) [Build Machine Image task](../deploy/packer-build.md) - Build a machine image using Packer to use for Azure Virtual machine scale set deployment | Azure Pipelines |
-| [PowerShell on Target Machines task](../deploy/powershell-on-target-machines.md) - PowerShell on Target Machines build task | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines task](../deploy/powershell-on-target-machines.md) - PowerShell on Target Machines build task | Azure Pipelines, TFS 2015 RTM and newer |
 | [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md) - Service Fabric Compose Deploy Deployment task | Azure Pipelines, Azure DevOps Server 2019 |
 | [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md) - Service Fabric Application Deployment task | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../deploy/_img/sqlazuredacpacdeployment.png) [Azure SQL Database Deployment task](../deploy/sql-azure-dacpac-deployment.md) - Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD | Azure Pipelines |
 | ![icon](../deploy/_img/sqldacpacdeploymentonmachinegroup.png) [WinRM SQL Server DB Deployment task](../deploy/sql-dacpac-deployment-on-machine-group.md) - Deploy to SQL Server Database using DACPAC or SQL scripts | Azure Pipelines |
 | ![icon](../deploy/_img/ssh.png) [SSH Deployment task](../deploy/ssh.md) - SSH task for use in the jobs of all of your build and release pipelines | Azure Pipelines, TFS 2017 and newer |
-| [Windows Machine File Copy task](../deploy/windows-machine-file-copy.md) - Copy application files and other artifacts to remote Windows machines | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../deploy/_img/windows-machine-file-copy-icon.png) [Windows Machine File Copy task](../deploy/windows-machine-file-copy.md) - Copy application files and other artifacts to remote Windows machines | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Package
 
@@ -88,14 +88,14 @@ ms.topic: include
 | Task   | Versions  |
 |--------|-----------|
 | ![icon](../test/_img/appcentertest.png) [App Center Test task](../test/app-center-test.md) - Test app packages with Visual Studio App Center. | Azure Pipelines, TFS 2017 and newer |
-| [Cloud-based Load Test task (Deprecated)](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test task (Deprecated)](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | [Cloud-based Web Performance Test task (Deprecated)](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
 | [Container Structure Test Task](../test/container-structure-test-task.md) - Test container structure by container task and integrate test reporting into your build and release pipelines | Azure Pipelines |
-| [Publish Code Coverage Results task](../test/publish-code-coverage-results.md) - Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results task](../test/publish-code-coverage-results.md) - Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/publish-test-results.png) [Publish Test Results task](../test/publish-test-results.md) - Publish Test Results to integrate test reporting into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| [Run Functional Tests task](../test/run-functional-tests.md) - Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/run-functional-tests-icon.png) [Run Functional Tests task](../test/run-functional-tests.md) - Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | [Cloud-based Apache JMeter Load Test task (Deprecated)](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
-| [Visual Studio Test Agent Deployment task](../test/visual-studio-test-agent-deployment.md) - Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment task](../test/visual-studio-test-agent-deployment.md) - Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/vstest.png) [Visual Studio Test task](../test/vstest.md) - Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. | Azure Pipelines |
 | [Xamarin Test Cloud task](../test/xamarin-test-cloud.md) - This task is deprecated. Use the App Center Test task instead. | Azure Pipelines, TFS 2015 RTM and newer |
 
