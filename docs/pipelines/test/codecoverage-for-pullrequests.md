@@ -21,14 +21,14 @@ Code coverage is an important quality metric and helps you measure the percentag
 
 ### Full coverage, diff coverage
 
-Typically, coverage gets measured for the entire codebase of a project. This is **'full coverage'**.
-However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This is **'diff coverage'**.
+Typically, coverage gets measured for the entire codebase of a project. This is **full coverage**.
+However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This is **diff coverage**.
 
 ## Pre-requisites
 
 In order to get coverage metrics for a pull request, first configure a pipeline that validates pull requests. In this pipeline, configure the test tool you are using to collect code coverage metrics. Coverage results must then be published to the server for reporting. 
 
-To learn more about collecting and publishing code coverage results for the language of your choice, see the **Ecosystems** section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md).
+To learn more about collecting and publishing code coverage results for the language of your choice, see the [Ecosystems](../ecosystems/index.md) section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md).
 
 > [!NOTE] 
 > While you can collect and publish code coverage results for many different languages using Azure Pipelines, the 'code coverage for pull requests' feature discussed in this document is currently available only for .NET and .NET core projects using the Visual Studio code coverage results format (file extension .coverage). Support for other languages and coverage formats will be added in future milestones.
@@ -65,7 +65,7 @@ The settings that can be changed are:
 | target | Target threshold value for diff coverage must be met for a successful coverage status to be posted. | 70% | Desired % number | 
 | comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off
 
-Sample YAML files for different coverage settings can be found in the [code coverage YAML samples repo](https://github.com/microsoftdocs/codecoverage-yaml-samples)
+Sample YAML files for different coverage settings can be found in the [code coverage YAML samples repo](https://github.com/microsoftdocs/codecoverage-yaml-samples).
 
 > [!NOTE] 
 > Coverage indicators light up in the changed files view regardless of whether the pull request comment details are turned on.
@@ -93,6 +93,6 @@ Support for other coverage tools and result formats will be added in future mile
 ### If multiple pipelines are triggered when a pull request is raised, will coverage be merged across the pipelines?
 
 If multiple pipelines are triggered when a pull request is raised, code coverage will not be merged. The capability is currently designed for a single pipeline that collects and publishes code coverage for pull requests. 
-If you need the ability to merge coverage data across pipelines, please file a feature request on [developer community]https://developercommunity.visualstudio.com/spaces/21/index.html). 
+If you need the ability to merge coverage data across pipelines, please file a feature request on [developer community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
