@@ -28,10 +28,10 @@ However, in the context of pull requests, developers are focused on the changes 
 
 In order to get coverage metrics for a pull request, first configure a pipeline that validates pull requests. In this pipeline, configure the test tool you are using to collect code coverage metrics. Coverage results must then be published to the server for reporting. 
 
-To learn more about collecting and publishing code coverage results for the language of your choice, see the [Ecosystems](../ecosystems/index.md) section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md).
+To learn more about collecting and publishing code coverage results for the language of your choice, see the [Ecosystems](../ecosystems/index.md) section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md#collect-code-coverage).
 
 > [!NOTE] 
-> While you can collect and publish code coverage results for many different languages using Azure Pipelines, the 'code coverage for pull requests' feature discussed in this document is currently available only for .NET and .NET core projects using the Visual Studio code coverage results format (file extension .coverage). Support for other languages and coverage formats will be added in future milestones.
+> While you can collect and publish code coverage results for many different languages using Azure Pipelines, the **code coverage for pull requests** feature discussed in this document is currently available only for .NET and .NET core projects using the Visual Studio code coverage results format (file extension .coverage). Support for other languages and coverage formats will be added in future milestones.
 
 ## Coverage status, details and indicators
 
