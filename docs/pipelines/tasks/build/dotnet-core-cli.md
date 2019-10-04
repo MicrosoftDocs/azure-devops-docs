@@ -178,7 +178,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 
 ```YAML
 # Run tests and auto publish test results.
-- task: DotNetCLI@2
+- task: DotNetCoreCLI@2
   inputs:
     command: 'test'
 ```
