@@ -8,7 +8,7 @@ description: Use Work Item Test Result tables to query for data about work items
 ms.assetid: 33dbfef7-c17b-4884-9a33-cfc61a1d7cd6
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 

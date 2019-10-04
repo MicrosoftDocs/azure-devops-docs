@@ -84,20 +84,19 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
->    <DEFAULT from="value" value="False" />
->    <HELPTEXT>Triage work item</HELPTEXT>
-> </FIELD>
-> ```
+
+```XML
+<FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
+   <DEFAULT from="value" value="False" />
+   <HELPTEXT>Triage work item</HELPTEXT>
+</FIELD>
+```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" /> 
-> ```
+```XML
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" />
+```
  
 The field will appear as a checkbox on the form. 
 ::: moniker-end
@@ -144,13 +143,12 @@ To add a custom field or add rules to a field, edit the WIT definition. You can 
 
 For example, with the following code snippet, you can enforce the rule that only members of the Management Team, a customer defined TFS group, can modify the Stack Rank field once a work item has been created.
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  
->    <FROZEN not="[project]\Management Team" />  
->    <HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.</HELPTEXT>
-> </FIELD>  
-> ```
+```XML
+<FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  
+   <FROZEN not="[project]\Management Team" />  
+   <HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.</HELPTEXT>
+</FIELD>  
+```
 
 You apply rules to accomplish the following actions:  
 
@@ -180,41 +178,40 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 
    The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
 
-   > [!div class="tabbedCodeSnippets"]
-   > ```XML
-   > <FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
-   >    <ALLOWEDVALUES>
-   >       <LISTITEM value="Customer" />
-   >       <LISTITEM value="Executive Management" />
-   >       <LISTITEM value="Other" />
-   >       <LISTITEM value="Support" />
-   >       <LISTITEM value="Team" />
-   >       <LISTITEM value="Technicians" />
-   >       <DEFAULTVALUE value="Customer" />
-   >     </ALLOWEDVALUES>
-   > </FIELD>
-   > ```
-   > 
+   ```XML
+   <FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
+      <ALLOWEDVALUES>
+         <LISTITEM value="Customer" />
+         <LISTITEM value="Executive Management" />
+         <LISTITEM value="Other" />
+         <LISTITEM value="Support" />
+         <LISTITEM value="Team" />
+         <LISTITEM value="Technicians" />
+         <DEFAULTVALUE value="Customer" />
+       </ALLOWEDVALUES>
+   </FIELD>
+   ```
+   
    > [!TIP]
    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md#WorkItemFields). 
 
 3. Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
 
    For example, the following code snippet adds the Requestor field to appear below the Reason field on the work item form.
-   > [!div class="tabbedCodeSnippets"]
-   > ```XML
-   > <Column PercentWidth="50">
-   >    <Group Label="Status">
-   >       <Column PercentWidth="100">
-   >          <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
-   >          <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
-   >          <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
-   >          <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
-   >       </Column>
-   >    </Group>
-   > </Column>
-   > ```
-   > 
+
+   ```XML
+   <Column PercentWidth="50">
+      <Group Label="Status">
+         <Column PercentWidth="100">
+            <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
+            <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
+            <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
+            <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
+         </Column>
+      </Group>
+   </Column>
+   ```
+   
    > [!TIP]
    > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](xml/control-xml-element-reference.md).   
 
@@ -236,21 +233,19 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 1. In the `FORM` and `Layout` sections, find the definition of the field you want to modify. This example modifies the label for the **Title** field:
 
-   > [!div class="tabbedCodeSnippets"]
-   > ```XML
-   > <Column PercentWidth="70">  
-   >    <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />  
-   > </Column>
-   > ```
+   ```XML
+   <Column PercentWidth="70">  
+      <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />  
+   </Column>
+   ```
 
 2. Change the label for the field so that the Portuguese branch office working on this particular project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
 
-   > [!div class="tabbedCodeSnippets"]
-   > ```XML
-   > <Column PercentWidth="70">  
-   >    <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
-   > </Column>
-   > ```
+   ```XML
+   <Column PercentWidth="70">  
+      <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
+   </Column>
+   ```
 
 3. Import the modified WIT definition.
 
@@ -281,10 +276,9 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 
 You use **witadmin changefield** to change the attributes of an existing field. For example, the following command changes the friendly name defined for MyCompany.Type to Evaluation Method.  
 
-> [!div class="tabbedCodeSnippets"]
-> ```
-> witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.Type /name:"Evaluation Method"
-> ```  
+```
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.Type /name:"Evaluation Method"
+```  
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
 
@@ -421,18 +415,22 @@ When you remove a field from a specific type of work item, that field is not rem
 
 2.  Verify the field is not in use. For example:
 
-        witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
+    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
 
-        Field: MyCompany.CustomContact
-        Name: Custom Contact
-        Type: String
-        Reportable As: dimension
-        Use: Not In Use
-        Indexed: False
+    Field: MyCompany.CustomContact
+    Name: Custom Contact
+    Type: String
+    Reportable As: dimension
+    Use: Not In Use
+    Indexed: False
+    ```
 
 3.  Delete the field. For example:
 
-        witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
+    witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
 
 4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
 

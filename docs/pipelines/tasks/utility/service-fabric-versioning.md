@@ -12,19 +12,17 @@ author: RoopeshNair
 ms.date: 08/20/2019
 monikerRange: '>= tfs-2017'
 ---
-::: moniker range=">= tfs-2018"
 
 # Update Service Fabric Manifests task
 
-::: moniker-end
+[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="= tfs-2017"
 
-# Update Service Fabric App Versions task
+> [!NOTE]
+> In TFS 2017 this task is named **Update Service Fabric App Versions task**.
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build pipeline to automatically update 
 the versions of a packaged Service Fabric app.

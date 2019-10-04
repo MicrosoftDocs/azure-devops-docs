@@ -2,12 +2,12 @@
 title: Troubleshooting the migration import from Azure DevOps Server to Azure DevOps Services | Azure DevOps
 description: Guidance for fixing common DataMigratorTool validation errors. 
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-learn
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
@@ -17,7 +17,7 @@ ms.date: 04/13/2018
 [!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 > [!NOTE]
-> It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImportt) to progress through your import. The guide links to the technical documentation as needed.
+> It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
 > With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 

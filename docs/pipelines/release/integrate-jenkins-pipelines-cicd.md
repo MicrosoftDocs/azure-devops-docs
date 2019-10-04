@@ -171,7 +171,7 @@ to your Jenkins Server, you can trigger a release for an Azure pipeline from a J
 
 Now a new CD release will be triggered every time your Jenkins CI job is completed.
 
-# See also
+## See also
 
 * [Artifacts](artifacts.md)
 * [Stages](../process/stages.md)
