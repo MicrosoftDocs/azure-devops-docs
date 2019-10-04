@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # About notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 Notifications help you and your team stay informed about activity that occurs within your Azure DevOps projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds. You can be notified via email. For example,you can get notified whenever a bug that you opened is resolved or when a work item is assigned to you.
 
