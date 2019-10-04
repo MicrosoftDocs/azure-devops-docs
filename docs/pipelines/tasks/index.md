@@ -21,6 +21,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
+This article provides an index of built-in tasks. To learn more about tasks, including creating custom tasks, custom extensions, and finding tasks on the Visual Studio Marketplace, see [Tasks concepts](../process/tasks.md).
+
 [!INCLUDE [task-list](_shared/task-list.md)]
 
 To learn more about tool installer tasks, see [Tool installers](../process/tasks.md#tool-installers).
