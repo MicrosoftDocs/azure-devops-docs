@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/26/2019 
+ms.date: 10/02/2019
 ---
 
 # Query quick reference 
@@ -19,6 +19,10 @@ ms.date: 09/26/2019
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
+For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
 ## Query tasks 
 
@@ -167,6 +171,7 @@ The following table indicates the operators and macros available for the differe
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
+<a id="samples" />
 
 ## Query samples for select fields 
 

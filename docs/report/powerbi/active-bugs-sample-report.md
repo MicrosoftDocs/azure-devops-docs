@@ -135,33 +135,33 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 1. Open Power BI Desktop.  
 
 ::: moniker range="azure-devops"  
-2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps (Beta)**, and then (4) **Connect**. 
+1. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps (Beta)**, and then (4) **Connect**. 
 
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2.png)
 
-3. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
+1. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
 
-	![Azure DevOps dialog, Organization and project name](_img/create-report/specify-account.png)  
-   ::: moniker-end
+    ![Azure DevOps dialog, Organization and project name](_img/create-report/specify-account.png)  
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"  
-2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
+1. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2-onprem.png)
 
-3. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
+1. Enter the URL for your server and collection, the same project for which you defined the Active Bugs view. 
 
 	![Azure DevOps Server dialog, Collection and project name](_img/create-report/specify-collection-project.png)  
 ::: moniker-end
 
-4. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
+1. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
 
     > [!div class="mx-imgBorder"]
     > ![Active bugs load in Power BI ](_img/active-bugs-report/choose-view.png)
 
-	Need help connecting? See [Connect with Power BI Data Connector](data-connector-connect.md).
+Need help connecting? See [Connect with Power BI Data Connector](data-connector-connect.md).
 
 ## Create a daily bug trend report 
 

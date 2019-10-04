@@ -7,9 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
-ms.author: sdanie
-author: steved0x
-ms.date: 09/25/2019
+ms.author: jukullam
+author: juliakm
+ms.date: 09/03/2019
+
 monikerRange: '>= tfs-2015'
 ---
 
@@ -66,7 +67,10 @@ steps:
 In the YAML file, you can set a variable at various scopes:
 
 - At the root level, to make it available to all jobs in the pipeline
+- At the stage level, to make it available only to a specific stage
 - At the job level, to make it available only to a specific job
+
+Variables at the job level override variables at the root and stage level. Variables at the stage level override variables at the root level. 
 
 ```yaml
 variables:

@@ -208,8 +208,6 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: Collect screenshots and video
-      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -528,7 +526,7 @@
         href: tasks/utility/service-fabric-powershell.md
       - name: Shell script
         href: tasks/utility/shell-script.md
-      - name: Update Service Fabric App Versions
+      - name: Update Service Fabric Manifests
         href: tasks/utility/service-fabric-versioning.md
     - name: Test tasks
       items:
@@ -540,6 +538,8 @@
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
         href: tasks/test/cloud-based-web-performance-test.md
+      - name: Container Structure Test Task
+        href: tasks/test/container-structure-test-task.md
       - name: Publish Code Coverage Results
         href: tasks/test/publish-code-coverage-results.md
       - name: Publish Test Results
@@ -668,8 +668,6 @@
       items:
       - name: Docker Installer
         href: tasks/tool/docker-installer.md
-      - name: .NET Core Tool Installer
-        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
       - name: Helm Installer
@@ -682,6 +680,8 @@
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer
         href: tasks/tool/nuget.md
+      - name: Use .NET Core
+        href: tasks/tool/dotnet-core-tool-installer.md
       - name: Use Python Version
         href: tasks/tool/use-python-version.md
       - name: Use Ruby Version

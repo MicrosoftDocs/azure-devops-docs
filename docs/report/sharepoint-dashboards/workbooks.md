@@ -27,7 +27,7 @@ You can open a workbook from the Documents page in Team Explorer. Or, you can op
   
 -   Your team project must be provisioned with SharePoint Products and the project portal enabled. For more information, see [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  
   
--   To open a workbook in Office Excel, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any product in Visual Studio ALM.  
+-   To open a workbook in Office Excel, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any Visual Studio client.  
 -   To view a shared query, you must be assigned or belong to a group that has been assigned **Read** permissions for the shared query folder for the team project. To modify a query, you must be assigned or belong to a group that has been assigned **Contribute** or **Full Control** permissions for the shared query. See [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
 -   To create or modify work items, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).  
   

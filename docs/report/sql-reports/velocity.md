@@ -8,7 +8,7 @@ description: Use the velocity report to forecast release and product completion 
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 

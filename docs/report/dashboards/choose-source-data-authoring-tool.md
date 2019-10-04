@@ -63,7 +63,7 @@ For more information about this source of data, see [Perspectives and measure gr
 The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the project collections is gathered and maintained in the warehouse database. If you are familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
 
 > [!NOTE]   
-> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../../reference/xml/reportable-fields-reference.md).
+> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).
 
 
 For more information about the warehouse database, see [Table reference for the relational warehouse database](../sql-reports/table-reference-relational-warehouse-database.md).
