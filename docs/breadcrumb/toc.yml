@@ -5,7 +5,6 @@
   - name: Get started
     tocHref: /azure/devops/get-started/
     topicHref: /azure/devops/get-started/index
-    items:
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -15,30 +14,37 @@
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
-    items:
   - name: Azure Artifacts
     tocHref: /azure/devops/artifacts/
     topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
     tocHref: /azure/devops/test/
     topicHref: /azure/devops/test/index
-    items:
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
-    items:
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
+    - name: Notifications
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/project/index
+    - name: Wiki
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/index
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
-    items:
   - name: Configure & customize
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
-    items:
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
