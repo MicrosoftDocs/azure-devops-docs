@@ -22,7 +22,7 @@ Use the Azure Function App task to deploy [Functions](/azure/azure-functions/) t
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>azureSubscription</code><br/>Azure subscription</td><td>(Required) Name of the <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
-<tr><td><code>appType</code><br/>App type</td><td>(Optional) Web App type</td>
+<tr><td><code>appType</code><br/>App type</td><td>(Required) Function App type</td>
 <tr><td><code>appName</code><br/>App name</td><td>(Required) Name of an existing App Service</td>
 <tr><td><code>deployToSlotOrASE</code><br/>Deploy to Slot or App Service Environment</td><td>(Optional) Select the option to deploy to an existing deployment slot or Azure App Service Environment. For both the targets, the task needs Resource group name. In case the deployment target is a slot, by default the deployment is done to the production slot. Any other existing slot name can also be provided. In case the deployment target is an Azure App Service environment, specify the resource group name<br/>Default value: false</td>
 <tr><td><code>resourceGroupName</code><br/>Resource group</td><td>(Required if deployToSlotOrASE is true) Name of the resource group</td>
