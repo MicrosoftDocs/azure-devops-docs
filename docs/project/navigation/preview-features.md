@@ -97,7 +97,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ### Azure Artifacts 
 - [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
-- [Updated package experience](../../artifacts/index.md) 
+- [Updated package experience](../../artifacts/index.yml) 
 
 ### Azure Test Plans
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  

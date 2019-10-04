@@ -22,6 +22,8 @@ ms.date: 10/03/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
+<a id="set-capacity">  </a>
+
 As a next step, you'll want to determine your team's actual capacity. Whereas velocity correlates to how your team estimates requirements, capacity correlates to actual task time - either hours or days. Capacity takes into consideration the variation in work hours by team members as well as holidays, vacation days, and non-working days. 
 
 Because days off and time available for each team member can vary from sprint to sprint, you can set capacity for each sprint. The capacity tool helps you make sure your team isn't over or under committed for the sprint. Also, as you work day-to-day, you'll be able to see if your team is on track.

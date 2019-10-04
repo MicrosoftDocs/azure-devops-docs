@@ -31,7 +31,7 @@ az devops configure --use-git-aliases true
 ```
 
 This will alias all `az repos` commands to `git repo` and all `az repos pr` commands to `git pr`.
-So `az repos list` becomes `git repo list` and `az repo pr list` becomes `git pr list`
+So `az repos list` becomes `git repo list` and `az repos pr list` becomes `git pr list`
 
 For example, a pull request can now be created using the following command:
 

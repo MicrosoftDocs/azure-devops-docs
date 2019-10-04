@@ -1,0 +1,110 @@
+### YamlMime:Landing
+
+title: Azure Artifacts documentation
+summary: Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.
+
+metadata:
+  title: Azure Artifacts documentation
+  description:  Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds. 
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-artifacts
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 10/03/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Artifacts?
+            url: overview.md
+          - text: Sign up for Azure Artifacts
+            url: sign-up-azure-artifacts.md
+          - text: Best practices for using Azure Artifacts
+            url: ./concepts/best-practices.md
+          - text: Consume packages from public sources
+            url: ./concepts/upstream-sources.md
+      - linkListType: tutorial
+        links:
+          - text: Move your packages to the cloud
+            url: ./nuget/move-from-fileshares.md
+          - text: Communicate package quality with release views
+            url: ./feeds/views.md
+          - text: Set permissions and grant access
+            url: ./feeds/feed-permissions.md
+  - title: NuGet
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with NuGet packages
+            url: get-started-nuget.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Azure Pipelines and NuGet packages
+            url: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Use packages from nuget.org
+            url: ./nuget/upstream-sources.md
+          - text: Publish a NuGet package
+            url: ./nuget/publish.md
+          - text: Consume NuGet packages
+            url: ./nuget/consume.md
+          - text: Use NuGet with Azure DevOps Services feeds
+            url: ./nuget/nuget-exe.md
+  - title: npm
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with npm and JavaScript packages
+            url: get-started-npm.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Azure Pipelines and npm packages
+            url: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Use packages from npmjs.com
+            url: ./npm/upstream-sources.md
+          - text: Set up your client's npmrc
+            url: ./npm/npmrc.md
+  - title: Maven
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with Maven packages
+            url: get-started-maven.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Azure Pipelines and Maven packages
+            url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+          - text: Use packages from Maven Central
+            url: ./maven/upstream-sources.md 
+          - text: Publish Maven artifacts
+            url: ./maven/publish.md
+          - text: Install Maven artifacts
+            url: ./maven/install.md
+  - title: Python
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with Python packages
+            url: ./quickstarts/python-packages.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Azure Pipelines and Python packages
+            url: ../pipelines/artifacts/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+  - title: Universal Packages
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with Universal packages
+            url: ./quickstarts/universal-packages.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Azure Pipelines and Universal packages
+            url: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 

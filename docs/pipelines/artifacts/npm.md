@@ -78,4 +78,4 @@ To publish to an external npm registry, you must first create a service connecti
 
 ### Where can I learn about the Azure Pipelines and TFS Package Management service?
 
-[Package Management service](../../artifacts/index.md) 
+[Package Management service](../../artifacts/index.yml) 

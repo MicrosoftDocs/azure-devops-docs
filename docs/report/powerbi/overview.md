@@ -11,16 +11,45 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>=azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 10/04/2019
 ---
 
 # About Power BI integration
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-[Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
+With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to [Azure DevOps Analytics](what-is-analytics.md) to enable data-driven decisions. However, we acknowledge that customers often need more than what is provided in the product. 
+
+With Power BI, you can pull data from [Azure DevOps Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+
+## Prerequisites
+
+Before you get started using Power BI to work with Analytics, make sure you have completed the following steps:
+
+::: moniker range="azure-devops"
+
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
+1. Configure the [permissions required to access Analytics](analytics-security.md).  
+1. Review the [knowledge base of Power BI articles](/power-bi).  
+1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
+1. [Enable or install the Analytics extension](../dashboards/analytics-extension.md).  
+1. Configure the [permissions required to access Analytics](analytics-security.md).  
+1. Review the [knowledge base of Power BI articles](/power-bi).  
+1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
+
+::: moniker-end
+
+
 
 ## Supported data connection methods
 
@@ -52,28 +81,29 @@ You can pull data from Analytics into Power BI in one of three ways. It is impor
 </tbody>
 </table>
 
-## Prerequisites
 
-Before you get started using Power BI to work with Analytics, make sure you have completed the following steps:
+## Sample Reports
 
-::: moniker range="azure-devops"
+### Sample reports using OData Queries
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. Configure the [permissions required to access Analytics](analytics-security.md).  
-1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
 
-::: moniker-end
+For specific examples, see one of the following articles: 
 
-::: moniker range="azure-devops-2019"
+[!INCLUDE [temp](_shared/sample-fulllist.md)].
 
+### Sample reports using Analytics View
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. [Enable or install the Analytics extension](../dashboards/analytics-extension.md).  
-1. Configure the [permissions required to access Analytics](analytics-security.md).  
-1. Review the [knowledge base of Power BI articles](/power-bi).  
-1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
-
-::: moniker-end
+- [Active bugs report](active-bugs-sample-report.md)  
+- [Get a count of work items](data-connector-examples.md)  
+- [Add a last refresh date](add-last-refresh-time.md)   
+- [Filter on teams](create-team-filter.md)   
+- [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)   
 
 
+## Related articles
+
+- [Extend Analytics with OData](../extend-analytics/quick-ref.md)    
+- [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
+- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
+- [Power BI documentation](/power-bi)  
