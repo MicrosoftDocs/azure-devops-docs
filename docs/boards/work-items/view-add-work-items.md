@@ -64,6 +64,9 @@ If you don't see the **Work Items** option, you need to connect to a project and
 > [!div class="mx-imgBorder"]  
 > ![Connect to a Project dialog, connect to a Project and Git repository](_img/view-add/connect-to-a-project-and-github.png)
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no az boards command that opens the Work Items page at this time. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
 
 * * *
 
@@ -144,6 +147,8 @@ Additional menu options support the following tasks:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
+
 ### View work item
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).
@@ -172,6 +177,10 @@ ID    Type    Title      Assigned To          State
 ----  ------  ---------  -------------------  -------
 864   Bug     fix-issue  contoso@contoso.com  New
 ```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
 * * *
 
@@ -215,6 +224,8 @@ Enter a title and then save the work item. Before you can change the State from 
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
+::: moniker range="azure-devops"  
+
 For example, here we choose Bug.
 
 ### Add work item
@@ -240,17 +251,17 @@ az boards work-item create --title
 #### Parameters
 
 - **title**: Title of the work item.
-- **type**: Type of work item (such as *Bug*).
+- **type**: Type of work item (for example, *Bug*).
 
 #### Optional parameters
 
-- **area**: Area the work item is assigned to (such as *Demos*).
-- **assigned-to**: Name of the person the work item is assigned-to (such as *fabrikam*).
+- **area**: Area the work item is assigned to (for example, *Demos*).
+- **assigned-to**: Name of the person the work item is assigned-to (for example, *fabrikam*).
 - **description**: Description of the work item.
 - **detect**: Automatically detect organization (accepted values: `false`, `true`).
 - **discussion**: Comment to add to a discussion in a work item.
 - **fields**: Space separated `field=value` pairs for custom fields you would like to set.
-- **iteration**: Iteration path of the work item (such as *DemosIteration 1*).
+- **iteration**: Iteration path of the work item (for example, *DemosIteration 1*).
 - **open**: Open the work item in the default web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
@@ -267,6 +278,10 @@ ID    Type    Title      Assigned To          State
 ----  ------  ---------  -------------------  -------
 864   Bug     fix-issue  contoso@contoso.com  New
 ```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
 * * *
 
@@ -289,6 +304,10 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 > [!div class="mx-imgBorder"]
 > ![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no az boards command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 
 * * *
 
