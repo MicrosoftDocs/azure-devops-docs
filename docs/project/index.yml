@@ -1,0 +1,122 @@
+### YamlMime:Landing
+
+title: Collaborate documentation
+summary: Share information, create public projects, integrate with other services, and collaborate with team members and stakeholders in Azure DevOps.
+
+metadata:
+  title: Collaborate documentation
+  description: Share information, create public projects, integrate with other services, and collaborate with team members and stakeholders in Azure DevOps.
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-collab
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 10/08/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Add and manage wikis
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About wikis, READMEs, and Markdown
+            url: ./wiki/about-readme-wiki.md
+          - text: Provisioned vs published wikis
+            url: ./wiki/provisioned-vs-published-wiki.md
+      - linkListType: video
+        links:
+          - text: Add a Wiki to your Azure DevOps project
+            url: https://www.youtube.com/embed/744v1IefE-E?start=0
+      - linkListType: quickstart
+        links:
+          - text: Create a wiki for your project
+            url: ./wiki/wiki-create-repo.md
+          - text: Add and edit wiki pages
+            url: ./wiki/add-edit-wiki.md
+          - text: Publish a Git repository to a wiki
+            url: ./wiki/publish-repo-to-wiki.md
+      - linkListType: reference
+        links:
+          - text: Syntax guidance for basic Markdown usage
+            url: ./wiki/markdown-guidance.md
+          - text: Syntax guidance for Markdown usage in Wiki
+            url: ./wiki/wiki-markdown-guidance.md
+  - title: Create and manage a public project
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is a public project?
+            url: ../organizations/public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+      - linkListType: quickstart
+        links:
+          - text: Create a public project
+            url: ../organizations/public/create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: Invite users to your public project
+            url: ../organizations/public/invite-users-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: Make a private project public
+            url: ../organizations/public/make-project-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+  - title: Set alerts or notifications
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About notifications
+            url: ../notifications/about-notifications.md
+      - linkListType: quickstart
+        links:
+          - text: Set personal notifications
+            url: ../notifications/howto-manage-personal-notifications.md
+          - text: Set team notifications
+            url: ../notifications/howto-manage-team-notifications.md
+  - title: Search
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Search across all your code, wiki, packages and work items
+            url: ./search/overview.md
+      - linkListType: video
+        links:
+          - text: Code search
+            url: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+      - linkListType: how-to-guide
+        links:
+          - text: Search code
+            url: ./search/code-search.md
+          - text: Search packages
+            url: ./search/package-search.md
+          - text: Search work items
+            url: ./search/work-item-search.md
+          - text: Search wiki
+            url: ./wiki/search-wiki.md
+  - title: Configure Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with Service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Create a service hook with Web Hooks
+            url: ../service-hooks/services/webhooks.md
+          - text: Integrate with Teams
+            url: ../service-hooks/services/teams.md
+          - text: Integrate with Slack
+            url: ../service-hooks/services/slack.md
+  - title: Request and provide feedback
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Feedback tools
+            url: ./feedback/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Request stakeholder feedback (Test & Feedback extension)
+            url: ../test/request-stakeholder-feedback.md
+          - text: Request  feedback (work tracking)
+            url: ./feedback/get-feedback.md
+
+

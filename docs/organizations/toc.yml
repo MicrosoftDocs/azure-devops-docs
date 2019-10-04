@@ -99,7 +99,7 @@
   - name: Process Templates
     href: /rest/api/azure/devops/processadmin/processes
   - name: Projects
-    href: /rest/api/azure/devops/core/projects
+    href: /rest/api/a zure/devops/core/projects
   - name: Teams
     href: /rest/api/vsts/core/teams
   - name: Work Item Types
