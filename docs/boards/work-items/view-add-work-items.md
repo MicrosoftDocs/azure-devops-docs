@@ -144,9 +144,9 @@ Additional menu options support the following tasks:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-### View work item
-
 ::: moniker range="azure-devops"  
+
+### View work item
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).
 
@@ -179,7 +179,7 @@ ID    Type    Title      Assigned To          State
 
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
-* * *
+-----
 
 ## Add a work item
 
@@ -280,7 +280,7 @@ ID    Type    Title      Assigned To          State
 
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
-* * *
+-----
 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
