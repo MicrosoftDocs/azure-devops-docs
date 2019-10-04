@@ -75,7 +75,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 ## View work items
 
-Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
+Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  You can also use an Azure DevOps CLI command to view details about a work item.
 
 #### [Web portal](#tab/browser/)
 
@@ -142,29 +142,55 @@ Additional menu options support the following tasks:
 </tbody>
 </table>
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+### View work item
+
+::: moniker range="azure-devops"  
+
+You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).
+
+```CLI
+az boards work-item show --id
+                         [--detect {false, true}]
+                         [--open]
+                         [--org]
+```
+
+#### Parameters
+
+- **id**: The ID of the work item.
+- **open**: Optional. Open the work item in the default web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+#### Example
+
+The following command opens the bug with the ID 864 in your default web browser. It also displays the results in the Azure DevOps CLI in table format.
+
+```CLI
+az boards work-item show --id 864  --open --output table
+
+ID    Type    Title      Assigned To          State
+----  ------  ---------  -------------------  -------
+864   Bug     fix-issue  contoso@contoso.com  New
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
 * * *
 
 ## Add a work item
 
-Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  
-
-For example, here we choose User Story. 
+Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
 # [Web portal](#tab/browser)
 
+For example, here we choose User Story. 
+
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
-
-# [Visual Studio 2019](#tab/visual-studio)
-
-Choose **New Work Item** and select the work item type you want. 
-
-> [!div class="mx-imgBorder"]  
-> ![Work Items, Add User Story](_img/view-add/add-user-story-vs-te.png)
-
-A browser window will open with the work item form to fill out. 
-
-* * *
 
 <!---
 > [!TIP]    
@@ -173,6 +199,88 @@ A browser window will open with the work item form to fill out.
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 ![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
+
+# [Visual Studio 2019](#tab/visual-studio)
+
+For example, here we choose User Story. 
+
+Choose **New Work Item** and select the work item type you want. 
+
+> [!div class="mx-imgBorder"]  
+> ![Work Items, Add User Story](_img/view-add/add-user-story-vs-te.png)
+
+A browser window will open with the work item form to fill out. 
+
+<!---
+> [!TIP]    
+> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
+
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
+
+![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+For example, here we choose Bug.
+
+### Add work item
+
+You can add a new work item with the [az boards work-item create](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+```CLI
+az boards work-item create --title
+                           --type
+                           [--area]
+                           [--assigned-to]
+                           [--description]
+                           [--detect {false, true}]
+                           [--discussion]
+                           [--fields]
+                           [--iteration]
+                           [--open]
+                           [--org]
+                           [--project]
+                           [--reason]
+```
+
+#### Parameters
+
+- **title**: Title of the work item.
+- **type**: Type of work item (such as *Bug*).
+
+#### Optional parameters
+
+- **area**: Area the work item is assigned to (such as *Demos*).
+- **assigned-to**: Name of the person the work item is assigned-to (such as *fabrikam*).
+- **description**: Description of the work item.
+- **detect**: Automatically detect organization (accepted values: `false`, `true`).
+- **discussion**: Comment to add to a discussion in a work item.
+- **fields**: Space separated `field=value` pairs for custom fields you would like to set.
+- **iteration**: Iteration path of the work item (such as *DemosIteration 1*).
+- **open**: Open the work item in the default web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **reason**: Reason for the state of the work item.
+
+#### Example
+
+The following command creates a new bug work item titled "fix-issue". It assigns the bug to the user contoso@contoso.com and shows the results of the command in table format.
+
+```CLI
+az boards work-item create --title fix-issue --type bug --assigned-to contoso@contoso.com --output table
+
+ID    Type    Title      Assigned To          State
+----  ------  ---------  -------------------  -------
+864   Bug     fix-issue  contoso@contoso.com  New
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
