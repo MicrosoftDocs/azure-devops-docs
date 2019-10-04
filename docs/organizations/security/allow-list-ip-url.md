@@ -44,7 +44,7 @@ For domain-based firewalls, ensure the following domains are allowed.
 If you need to connect to Git repositories on Azure DevOps with SSH, you need to allow requests to port 22 for the following:
 
 - ssh.dev.azure.com
-- ssh.visualstudio.com
+- vs-ssh.visualstudio.com
 - all IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud
 
 ## Other domains
