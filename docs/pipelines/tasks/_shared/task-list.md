@@ -25,7 +25,7 @@ ms.topic: include
 | ![icon](../build/_img/visual-studio-build.png) [Visual Studio Build build and release task](../build/visual-studio-build.md) - Visual Studio Build build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-android.png) [Xamarin.Android build and release task](../build/xamarin-android.md) - Xamarin.Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-ios.png) [Xamarin.iOS build and release task](../build/xamarin-ios.md) - Xamarin.iOS build and release task | Azure Pipelines, TFS 2015 RTM and newer |
-| [Xcode Build build and release task](../build/xcode-build.md) - Xcode Build build and release task | TFS 2015, TFS 2017, TFS 2018 |
+| ![icon](../build/_img/xcode-build.png) [Xcode Build build and release task](../build/xcode-build.md) - Xcode Build build and release task | TFS 2015, TFS 2017, TFS 2018 |
 | ![icon](../build/_img/xcode-package-ios.png) [Xcode Package iOS build and release task](../build/xcode-package-ios.md) - Xcode Package iOS build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xcode.png) [Xcode build and release task](../build/xcode.md) - Xcode build and release task | Azure Pipelines |
 
@@ -38,25 +38,25 @@ ms.topic: include
 | ![icon](../deploy/_img/azure-cli-icon.png) [Azure CLI task](../deploy/azure-cli.md) - build task to run a shell or batch script containing Microsoft Azure CLI commands | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/azurecloudpowershelldeployment.png) [Azure Cloud Service Deployment task](../deploy/azure-cloud-powershell-deployment.md) - Deploy an Azure Cloud Service | Azure Pipelines |
 | ![icon](../deploy/_img/azure-file-copy-icon.png) [Azure File Copy task](../deploy/azure-file-copy.md) - build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) | Azure Pipelines, TFS 2015.3 and newer |
-| [Azure Function App task](../deploy/azure-function-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
+| ![icon](../deploy/_img/azure-function-app.png) [Azure Function App task](../deploy/azure-function-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
 | ![icon](../deploy/_img/azure-key-vault-icon.png) [Azure Key Vault task](../deploy/azure-key-vault.md) - Azure Key Vault task for use in the jobs of all of your build and release pipelines | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts task](../deploy/azure-monitor-alerts.md) - Configure alerts on available metrics for an Azure resource | Azure Pipelines |
 | ![icon](../deploy/_img/azuremysqldeployment.png) [Azure Database for Mysql Deployment task](../deploy/azure-mysql-deployment.md) - Run your scripts and make changes to your Azure DB for Mysql. | Azure Pipelines |
 | ![icon](../deploy/_img/azure-policy-check-gate.png) [Azure Policy Check Gate task](../deploy/azure-policy-check-gate.md) - Security and compliance assessment with Azure policies on resources that belong to the resource group and Azure subscription. | Azure Pipelines |
 | ![icon](../deploy/_img/azure-powershell-icon.png) [Azure PowerShell task](../deploy/azure-powershell.md) - Run a PowerShell script within an Azure environment | Azure Pipelines |
 | ![icon](../deploy/_img/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment task](../deploy/azure-resource-group-deployment.md) - Deploy, start, stop, or delete Azure Resource Groups | Azure Pipelines |
-| [Azure Function App for Container task](../deploy/azure-rm-functionapp-containers.md) - Deploy Azure Functions on Linux using custom images | Azure Pipelines |
-| [Azure Web App for Container task](../deploy/azure-rm-web-app-containers.md) - Deploy Web Apps, Functions, and WebJobs to Azure App Services | Azure Pipelines |
+| ![icon](../deploy/_img/azure-rm-functionapp-containers.png) [Azure Function App for Container task](../deploy/azure-rm-functionapp-containers.md) - Deploy Azure Functions on Linux using custom images | Azure Pipelines |
+| ![icon](../deploy/_img/azure-rm-web-app-containers.png) [Azure Web App for Container task](../deploy/azure-rm-web-app-containers.md) - Deploy Web Apps, Functions, and WebJobs to Azure App Services | Azure Pipelines |
 | ![icon](../deploy/_img/azurermwebappdeployment.png) [Azure App Service Deploy task](../deploy/azure-rm-web-app-deployment.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines, Azure DevOps Server 2019 |
 | [Azure Web App task](../deploy/azure-rm-web-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
 | ![icon](../deploy/_img/azurevmssdeployment.png) [Azure VM Scale Set Deployment task](../deploy/azure-vmss-deployment.md) - Deploy Virtual Machine scale set image | Azure Pipelines |
 | ![icon](../deploy/_img/chefknife.png) [Chef Knife task](../deploy/chef-knife.md) - Run scripts with Knife commands on your Chef workstation | Azure Pipelines |
 | ![icon](../deploy/_img/chef.png) [Chef task](../deploy/chef.md) - Deploy to Chef environments by editing environment attributes | Azure Pipelines |
-| [Copy Files Over SSH task](../deploy/copy-files-over-ssh.md) - Copy Files Over SSH task for use in the jobs of all of your build and release pipelines | Azure Pipelines, TFS 2017 and newer |
+| ![icon](../deploy/_img/copy-files-over-ssh.png) [Copy Files Over SSH task](../deploy/copy-files-over-ssh.md) - Copy Files Over SSH task for use in the jobs of all of your build and release pipelines | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../deploy/_img/helmdeploy.png) [Package and Deploy Helm Charts task](../deploy/helm-deploy.md) - Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands. | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/iiswebappdeploymentonmachinegroup.png) [IIS Web App Deploy task](../deploy/iis-web-app-deployment-on-machine-group.md) - Deploy a website or web app using WebDeploy | Azure Pipelines |
 | ![icon](../deploy/_img/iiswebappmanagementonmachinegroup.png) [IIS Web App Manage task](../deploy/iis-web-app-management-on-machine-group.md) - Create or update a Website, Web App, Virtual Directory, or Application Pool | Azure Pipelines |
-| [Kubernetes Manifest task](../deploy/kubernetes-manifest.md) - Bake and deploy manifests to Kubernetes clusters | Azure Pipelines |
+| ![icon](../deploy/_img/kubernetes-manifest.png) [Kubernetes Manifest task](../deploy/kubernetes-manifest.md) - Bake and deploy manifests to Kubernetes clusters | Azure Pipelines |
 | ![icon](../deploy/_img/kubernetes.png) [Kubectl task](../deploy/kubernetes.md) - Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands. | Azure Pipelines |
 | [MySQL Database Deployment On Machine Group task](../deploy/mysqldb-deployment.md) - The task is used to deploy for MySQL Database. | Azure Pipelines |
 | ![icon](../deploy/_img/packerbuild.png) [Build Machine Image task](../deploy/packer-build.md) - Build a machine image using Packer to use for Azure Virtual machine scale set deployment | Azure Pipelines |
