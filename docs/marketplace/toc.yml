@@ -1,5 +1,3 @@
-- name: Discover & manage extensions
-  href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Marketplace extensions
   href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json
 - name: Trusting Marketplace offerings

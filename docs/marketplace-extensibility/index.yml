@@ -1,0 +1,110 @@
+### YamlMime:Landing
+
+title: Marketplace & extensibility documentation
+summary: Discover, manage, develop extensions and widgets for integration with Azure DevOps. 
+
+metadata:
+  title: Marketplace & extensibility documentation
+  description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-marketplace
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 10/08/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Discover & manage Marketplace extensions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Azure DevOps Marketplace
+            url: ../marketplace/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Discover extensions
+            url: ../marketplace/overview.md
+          - text: Request extensions
+            url: ../marketplace/request-extensions.md
+          - text: Install extensions
+            url: ../marketplace/install-extension.md
+          - text: Assign paid extensions
+            url: ../marketplace/assign-paid-extensions.md
+  - title: Develop extensions
+    linkLists:
+      - linkListType: video
+        links:
+          - text: Develop an Azure DevOps Services extension with continuous delivery pipeline
+            url: .https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3
+      - linkListType: quickstart
+        links:
+          - text: Develop a web extension
+            url: ../extend/get-started/node.md
+          - text: Extension samples
+            url: ../extend/develop/samples-overview.md
+          - text: Extensibility points
+            url: ../extend/reference/targets/overview.md
+      - linkListType: tutorial
+        links:
+          - text: Create a custom pipelines task
+            url: ../extend/develop/add-build-task.md
+          - text: Bulk add or modify work items
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+          - text: Move, change, delete, or restore work items  
+            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
+  - title: Integrate applications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integration overview
+            url: ../integrate/index.md
+          - text: Perform ad hoc searches
+            url: ./queries/search-box-queries.md
+      - linkListType: how-to-guide
+        links:
+          - text: Authorize access to REST APIs with OAuth 2.0
+            url: ../integrate/get-started/authentication/oauth.md
+          - text: Authenticate access with personal access tokens
+            url: ../integrate/get-started/authentication/pats.md
+      - linkListType: reference
+        links:
+          - text: .NET client libraries
+            url: ../integrate/concepts/dotnet-client-libraries.md
+  - title: Integrate with Slack or Microsoft Teams
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create managed queries
+            url: ./queries/using-queries.md
+          - text: Perform ad hoc searches
+            url: ./queries/search-box-queries.md
+      - linkListType: concept
+        links:
+          - text: Link work items
+            url: ./queries/link-work-items-support-traceability.md
+      - linkListType: reference
+        links:
+          - text: Query quick reference
+            url: ./queries/query-index-quick-ref.md
+  - title: Integrate with Service hooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Integrate with service hooks
+            url: ../service-hooks/overview.md
+      - linkListType: tutorial
+        links:
+          - text: Create a service hook with Microsoft Teams
+            url: ../service-hooks/services/teams.md
+          - text: Create a service hook with WebHooks
+            url: ../service-hooks/services/webhooks.md
+
+
+
+
