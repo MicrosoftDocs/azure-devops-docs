@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-This article describes how to customize the Azure Pipelines *azure-pipeline.yml* file to build, test, and deploy Python apps or scripts.
+This article describes how to customize the Azure Pipelines *azure-pipelines.yml* file to build, test, and deploy Python apps or scripts.
 
 If you're new to pipelines, or want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
@@ -28,7 +28,7 @@ You don't have to set up anything for Azure Pipelines to build Python projects. 
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipeline.yml*. The following snippet sets the pipeline to use Python 3.6:
+To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipelines.yml*. The following snippet sets the pipeline to use Python 3.6:
 
 ```yaml
 steps:
