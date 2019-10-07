@@ -14,17 +14,7 @@ ms.topic: quickstart
 ms.date: 02/14/2019
 ---
 
-::: moniker range=">= tfs-2017"
-
-# Add, update, and follow a work item 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
 # Add and update a work item
-
-::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

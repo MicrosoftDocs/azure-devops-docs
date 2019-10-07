@@ -1,5 +1,5 @@
 ---
-title: Android build and release task
+title: Android build task (deprecated; use Gradle)
 ms.custom: seodec18
 description: Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference

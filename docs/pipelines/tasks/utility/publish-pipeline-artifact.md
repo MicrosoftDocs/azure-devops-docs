@@ -10,6 +10,7 @@ ms.custom: seodec18
 ms.author: wismyth
 author: willsmythe
 ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
 # Publish Pipeline Artifact task

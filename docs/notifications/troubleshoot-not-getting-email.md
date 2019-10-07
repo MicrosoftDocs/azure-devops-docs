@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Not getting emails from Azure DevOps subscriptions or notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services, which matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 

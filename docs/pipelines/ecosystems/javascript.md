@@ -718,7 +718,7 @@ If you can build your project on your development machine but are having trouble
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
 
 ### Where can I learn more about tasks?
 
