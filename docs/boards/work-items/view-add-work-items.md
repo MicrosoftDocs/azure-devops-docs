@@ -66,7 +66,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-There is no az boards command that opens the Work Items page at this time. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that opens the Work Items page at this time. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 
 * * *
 
@@ -155,14 +155,13 @@ You can view a new work item with the [az boards work-item show](/cli/azure/ext/
 
 ```CLI
 az boards work-item show --id
-                         [--detect {false, true}]
                          [--open]
                          [--org]
 ```
 
 #### Parameters
 
-- **id**: The ID of the work item.
+- **id**: Required. The ID of the work item.
 - **open**: Optional. Open the work item in the default web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
@@ -226,8 +225,6 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ::: moniker range="azure-devops"  
 
-For example, here we choose Bug.
-
 ### Add work item
 
 You can add a new work item with the [az boards work-item create](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
@@ -238,7 +235,6 @@ az boards work-item create --title
                            [--area]
                            [--assigned-to]
                            [--description]
-                           [--detect {false, true}]
                            [--discussion]
                            [--fields]
                            [--iteration]
@@ -258,7 +254,6 @@ az boards work-item create --title
 - **area**: Area the work item is assigned to (for example, *Demos*).
 - **assigned-to**: Name of the person the work item is assigned-to (for example, *fabrikam*).
 - **description**: Description of the work item.
-- **detect**: Automatically detect organization (accepted values: `false`, `true`).
 - **discussion**: Comment to add to a discussion in a work item.
 - **fields**: Space separated `field=value` pairs for custom fields you would like to set.
 - **iteration**: Iteration path of the work item (for example, *DemosIteration 1*).
@@ -269,7 +264,7 @@ az boards work-item create --title
 
 #### Example
 
-The following command creates a new bug work item titled "fix-issue". It assigns the bug to the user contoso@contoso.com and shows the results of the command in table format.
+The following command creates a bug titled "fix-issue". It assigns the bug to the user contoso@contoso.com and shows the results of the command in table format.
 
 ```CLI
 az boards work-item create --title fix-issue --type bug --assigned-to contoso@contoso.com --output table
@@ -307,7 +302,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-There is no az boards command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 
 * * *
 
