@@ -14,17 +14,7 @@ ms.topic: quickstart
 ms.date: 02/14/2019
 ---
 
-::: moniker range=">= tfs-2017"
-
-# Add, update, and follow a work item 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
 # Add and update a work item
-
-::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -51,11 +41,11 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > ![Work, add artifact](../../project/navigation/_img/add-artifact/add-work-item-query-vert.png)
 
 
-> [!NOTE]  
->Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md), 
+> [!NOTE]
+> Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
 or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). Note that the Basic process requires Azure DevOps Server 2019.1 or later version. 
+> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). Note that the Basic process requires Azure DevOps Server 2019.1 or later version.
 
 ::: moniker-end
 

@@ -15,11 +15,13 @@ ms.date: 2/14/2019
 
 
 
-<a id="define-tasks">  </a>
+
 
 # 2. Add tasks to backlog items 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+
+<a id="define-tasks">  </a>
 
 You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 

@@ -60,7 +60,7 @@ To resolve the problem, consider the following:
   - The Azure Boards application had it's access denied for one of the repositories.
   - GitHub might be unavailable/unreachable. This could be due to an outage in either service or an infrastructure/network issue on-prem. You can check service status from the following links:
       - [GitHub](https://status.github.com)  
-      - [Azure Devops](https://status.dev.azure.com/)
+      - [Azure DevOps](https://status.dev.azure.com/)
 
 	To resolve the first issue, delete and recreate the connection to the GitHub repository. This will cause GitHub to prompt to reauthorize Azure Boards.   
 

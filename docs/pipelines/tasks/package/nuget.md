@@ -1,7 +1,7 @@
 ---
 title: NuGet restore, pack, and publish task
 ms.custom: seodec18
-description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS).
+description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
