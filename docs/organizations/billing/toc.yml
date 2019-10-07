@@ -2,12 +2,12 @@
   href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Billing overview 
   href: overview.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
-- name: Paid access for users
-  href: buy-basic-access-add-users.md
 - name: Quickstarts
   items:
   - name: Set up billing
     href: set-up-billing-for-your-organization-vs.md
+  - name: Buy access for users
+    href: buy-basic-access-add-users.md
   - name: Try Azure Test Plans for free
     href: try-additional-features-vs.md
   - name: Buy CI/CD
