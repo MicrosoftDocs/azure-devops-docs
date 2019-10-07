@@ -6,7 +6,7 @@
   items:
   - name: Set up billing
     href: set-up-billing-for-your-organization-vs.md
-  - name: Buy access for users
+  - name: Manage paid access for users
     href: buy-basic-access-add-users.md
   - name: Try Azure Test Plans for free
     href: try-additional-features-vs.md
