@@ -123,6 +123,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../_img/icons/delete_icon.png) delete icon.  
 
 	::: moniker range="azure-devops"
+	<a id="edit-picklist-inherited" />
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  

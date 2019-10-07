@@ -3,12 +3,12 @@ title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.manager: jillfra
 ms.date: 04/26/2018
-ms.author: sdanie
-author: wpschaub
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
@@ -120,7 +120,7 @@ Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemN
 
 ![High-level dashboard on Azure DevOps](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
-# What's the value?
+## What's the value?
 
 Using a ring-deployment strategy you can gather feedback to validate your hypothesis. You can decommission old releases and distribute new releases without the risk of affecting all users. 
 

@@ -247,9 +247,8 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
      Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
-    <!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
-
-        To expand or collapse a tree view list, choose the + or signs.    
+    <!-- You can change the display of the work items that are listed by using one of the following user interface controls:  
+      To expand or collapse a tree view list, choose the + or signs.    
       To resize a column, point your cursor at the edge of a column header and drag it to a new location.    
       To sort on a column field, choose the column title.    
       To move a column field, choose the column title and drag to another location. -->  

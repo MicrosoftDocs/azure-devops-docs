@@ -49,7 +49,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 ## Extension building checklist
 
 1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Azure Devops extensions overview](https://azure.microsoft.com/services/devops/extend/)
+    1. [Azure DevOps extensions overview](https://azure.microsoft.com/services/devops/extend/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: jillfra
-ms.manager: elbatk
+ms.author: jukullam
+author: juliakm
 ms.date: 05/31/2019
 monikerRange: '>= tfs-2017'
 ---

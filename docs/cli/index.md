@@ -39,7 +39,7 @@ The Azure DevOps extension for Azure Command Line Interface (CLI) allows you to 
 - [Manage security permissions](permissions.md)
 - [Troubleshooting common errors](troubleshooting.md)
 
-# Reference
+## Reference
 
 - [Command Reference](/cli/azure/ext/azure-devops?view=azure-cli-latest)
 - [Azure DevOps CLI Extension GitHub Repo](https://github.com/Azure/azure-devops-cli-extension)

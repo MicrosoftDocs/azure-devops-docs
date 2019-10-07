@@ -85,25 +85,21 @@ The following agent pools are provided by default:
 
 * **Azure Pipelines** hosted pool with the following images:
 
-    * **Ubuntu 1604**: Enables you to build and release on
-  Ubuntu 1604 machines without having to configure a self-hosted Linux agent. Agents in this pool do not
-  run in a container, but the Docker tools are available for you to use if you want to
-  run [container jobs](../process/container-phases.md).
+    * **Ubuntu 1604**: Enables you to build and release on Ubuntu 1604 machines without having to configure a self-hosted Linux agent. Agents in this pool do not run in a container, but the Docker tools are available for you to use if you want to run [container jobs](../process/container-phases.md).
 
-    * **macOS**: Enables you to build and release on
-  Mojave macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
+    * **macOS**: Enables you to build and release on Mojave macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
-    * **macOS High Sierra**: Enables you to build and release on
-  High Sierra macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
+    * **macOS High Sierra**: Enables you to build and release on High Sierra macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
     * **Windows 2019 with VS2019**: These machines have Visual Studio 2019 installed on Windows Server 2019 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
     * **VS2017**: These machines have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
     * **Hosted**: These machines have older versions of Visual Studio installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
-    * **Windows Container**: Enables you to run jobs
-  inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building
-  using containers, Windows builds should run using the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** images.
+
+    * **Windows Container**: Enables you to run jobs inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building using containers, Windows builds should run using the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** images.
+
+For more information about the Azure Pipelines hosted images and their installed software, see [Microsoft-hosted agents](hosted.md#use-a-microsoft-hosted-agent).
 
 By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted agents.
 
@@ -131,7 +127,7 @@ For more information, see the [YAML schema](../yaml-schema.md) for [pools](../ya
 
 # [Classic](#tab/classic)
 
-To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down.
+To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
 

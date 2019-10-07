@@ -36,19 +36,19 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 ::: moniker-end
 
 ## 5-Minute Quickstarts  
-- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)  
+- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)  
 
 
 ## Concepts 
 
-- [Choose data source and authoring tool](../dashboards/choose-source-data-authoring-tool.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
-- [Components of the data warehouse](components-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)  
+- [Choose data source and authoring tool](../dashboards/choose-source-data-authoring-tool.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Components of the data warehouse](components-data-warehouse.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)  
 
 ## How-to Guides
 
-- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
-- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
-- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
+- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
 
   
 ## Reference

@@ -195,7 +195,7 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
      ![clip_image011](_img/tcm-reporting/tcm-11.jpg)
 
-  1. This should connect you to the TFS_Analysis database. If your data warehouse for Visual Studio ALM is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
+  1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
 
      ![clip_image012](_img/tcm-reporting/tcm-12.jpg)
 
