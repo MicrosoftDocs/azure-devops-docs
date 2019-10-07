@@ -14,7 +14,7 @@ ms.date: 10/07/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Paid access for users
+# Quickstart: Manage paid access for users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
