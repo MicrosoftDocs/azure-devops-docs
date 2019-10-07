@@ -104,8 +104,8 @@ ms.topic: include
 | ![icon](../package/_img/nuget.png) [NuGet Authenticate](../package/nuget-authenticate.md) - Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. | Azure Pipelines |
 | ![icon](../package/_img/nuget.png) [NuGet restore, pack, and publish task](../package/nuget.md) - Learn all about how you can make use of NuGet packages when you are building code . | Azure Pipelines, TFS 2018 and newer |
 | ![icon](../package/_img/pypi-publisher.png) [PyPI Publisher task (Deprecated)](../package/pypi-publisher.md) - How to upload a package to PyPI when building code | Azure Pipelines |
-| [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
-| [Python Twine Upload Authenticate](../package/twine-authenticate.md) - Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. | Azure Pipelines |
+| ![icon](../package/_img/pip-authenticate.png) [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
+| ![icon](../package/_img/twine-authenticate.png) [Python Twine Upload Authenticate](../package/twine-authenticate.md) - Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. | Azure Pipelines |
 
 ## Deploy
 
@@ -157,8 +157,7 @@ ms.topic: include
 | [Kubectl installer task](../tool/kubectl-installer.md) - Install kubectl on an agent machine | Azure Pipelines |
 | ![icon](../tool/_img/node.png) [Node.js Tool Installer task](../tool/node-js.md) - Find, download, and cache a specified version of Node.js and add it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/nuget.png) [NuGet Tool Installer task](../tool/nuget.md) - Find, download, and cache a specified version of NuGet and add it to the PATH | Azure Pipelines |
-| [Use .NET Core task](../tool/dotnet-core-tool-installer.md) - Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH | Azure Pipelines |
+| ![icon](../tool/_img/dotnet.png) [Use .NET Core task](../tool/dotnet-core-tool-installer.md) - Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH | Azure Pipelines |
 | [Use Python Version task](../tool/use-python-version.md) - Select a version of Python to run on an agent and optionally add it to PATH | Azure Pipelines |
 | [Use Ruby Version task](../tool/use-ruby-version.md) - Select a version of Ruby to run on an agent and optionally add it to PATH | Azure Pipelines |
-| [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) - Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data | Azure Pipelines |
-
+| ![icon](../tool/_img/vstest.png) [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) - Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data | Azure Pipelines |
