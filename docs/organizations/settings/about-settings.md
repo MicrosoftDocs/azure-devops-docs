@@ -13,10 +13,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 06/05/2019
 ---
 
-::: moniker range="azure-devops" 
-# About user, team, project, and organization-level settings 
+
+
+# About settings at the user, team, project, or organization-level 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+
+::: moniker range="azure-devops"
 
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
@@ -28,10 +31,6 @@ If you're just getting started as a Project Administrator, see [Get started as a
 ::: moniker-end  
 
 ::: moniker range="<= azure-devops-2019"
-
-# About user, team, project, and collection-level settings
-
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 

@@ -1,5 +1,5 @@
 ---
-title: Cloud-based Apache JMeter Load Test task
+title: Cloud-based Apache JMeter Load Test task (Deprecated)
 description: Runs the Apache JMeter load test in cloud
 ms.topic: reference
 ms.prod: devops
