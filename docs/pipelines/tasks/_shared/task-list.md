@@ -71,9 +71,9 @@ ms.topic: include
 | ![icon](../utility/_img/pythonscript.png) [Python Script task](../utility/python-script.md) - Run a Python script in a build or release pipeline | Azure Pipelines |
 | ![icon](../utility/_img/azure-monitor.png) [Query Azure Monitor Alerts task](../utility/azure-monitor.md) - Observe the configured Azure monitor rules for active alerts  in a build or release pipeline | Azure Pipelines, TFS 2017 and newer |
 | [Query Work Items task](../utility/work-item-query.md) - Ensure the number of matching items returned by a work item query is within the configured threshold | Azure Pipelines, TFS 2017 and newer |
-| [Service Fabric PowerShell Utility task](../utility/service-fabric-powershell.md) - Service Fabric PowerShell task for use in build or release pipelines in | Azure Pipelines, Azure DevOps Server 2019 |
+| ![icon](../utility/_img/service-fabric-powershell.png) [Service Fabric PowerShell Utility task](../utility/service-fabric-powershell.md) - Service Fabric PowerShell task for use in build or release pipelines in | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/shell-script.png) [Shell Script task](../utility/shell-script.md) - Execute a bash script when building code | Azure Pipelines, TFS 2015 RTM and newer |
-| [Update Service Fabric Manifests task](../utility/service-fabric-versioning.md) - Update the Service Fabric App versions | Azure Pipelines, TFS 2017 and newer |
+| ![icon](../utility/_img/service-fabric-versioning.png) [Update Service Fabric Manifests task](../utility/service-fabric-versioning.md) - Update the Service Fabric App versions | Azure Pipelines, TFS 2017 and newer |
 | [Xamarin License task](../utility/xamarin-license.md) - Activate or deactivate a Xamarin license when building code | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Test
@@ -97,11 +97,11 @@ ms.topic: include
 | Task   | Versions  |
 |--------|-----------|
 | ![icon](../package/_img/cocoapods.png) [CocoaPods task](../package/cocoapods.md) - Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS). | Azure Pipelines, TFS 2015 RTM and newer |
-| [Conda Environment task](../package/conda-environment.md) - How to create and activate a Conda environment when building code | Azure Pipelines |
-| [Maven Authenticate task (for task runners)](../package/maven-authenticate.md) - Provides credentials for Azure Artifacts feeds and external Maven repositories. | Azure Pipelines |
+| ![icon](../package/_img/conda.png) [Conda Environment task](../package/conda-environment.md) - How to create and activate a Conda environment when building code | Azure Pipelines |
+| ![icon](../package/_img/maven.png) [Maven Authenticate task (for task runners)](../package/maven-authenticate.md) - Provides credentials for Azure Artifacts feeds and external Maven repositories. | Azure Pipelines |
 | ![icon](../package/_img/npmauthenticate.png) [npm Authenticate task (for task runners)](../package/npm-authenticate.md) - Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries. | Azure Pipelines |
 | ![icon](../package/_img/npm.png) [npm task](../package/npm.md) - How to use npm packages when building code in Azure Pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| [NuGet Authenticate](../package/nuget-authenticate.md) - Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. | Azure Pipelines |
+| ![icon](../package/_img/nuget.png) [NuGet Authenticate](../package/nuget-authenticate.md) - Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. | Azure Pipelines |
 | ![icon](../package/_img/nuget.png) [NuGet restore, pack, and publish task](../package/nuget.md) - Learn all about how you can make use of NuGet packages when you are building code . | Azure Pipelines, TFS 2018 and newer |
 | ![icon](../package/_img/pypi-publisher.png) [PyPI Publisher task (Deprecated)](../package/pypi-publisher.md) - How to upload a package to PyPI when building code | Azure Pipelines |
 | [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
@@ -128,7 +128,7 @@ ms.topic: include
 | ![icon](../deploy/_img/sqlazuredacpacdeployment.png) [Azure SQL Database Deployment task](../deploy/sql-azure-dacpac-deployment.md) - Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD | Azure Pipelines |
 | ![icon](../deploy/_img/azurevmssdeployment.png) [Azure VM Scale Set Deployment task](../deploy/azure-vmss-deployment.md) - Deploy Virtual Machine scale set image | Azure Pipelines |
 | ![icon](../deploy/_img/azure-rm-web-app-containers.png) [Azure Web App for Container task](../deploy/azure-rm-web-app-containers.md) - Deploy Web Apps, Functions, and WebJobs to Azure App Services | Azure Pipelines |
-| [Azure Web App task](../deploy/azure-rm-web-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
+| ![icon](../deploy/_img/azure-rm-web-app.png) [Azure Web App task](../deploy/azure-rm-web-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
 | ![icon](../deploy/_img/packerbuild.png) [Build Machine Image task](../deploy/packer-build.md) - Build a machine image using Packer to use for Azure Virtual machine scale set deployment | Azure Pipelines |
 | ![icon](../deploy/_img/chefknife.png) [Chef Knife task](../deploy/chef-knife.md) - Run scripts with Knife commands on your Chef workstation | Azure Pipelines |
 | ![icon](../deploy/_img/chef.png) [Chef task](../deploy/chef.md) - Deploy to Chef environments by editing environment attributes | Azure Pipelines |
@@ -137,11 +137,11 @@ ms.topic: include
 | ![icon](../deploy/_img/iiswebappmanagementonmachinegroup.png) [IIS Web App Manage task](../deploy/iis-web-app-management-on-machine-group.md) - Create or update a Website, Web App, Virtual Directory, or Application Pool | Azure Pipelines |
 | ![icon](../deploy/_img/kubernetes.png) [Kubectl task](../deploy/kubernetes.md) - Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands. | Azure Pipelines |
 | ![icon](../deploy/_img/kubernetes-manifest.png) [Kubernetes Manifest task](../deploy/kubernetes-manifest.md) - Bake and deploy manifests to Kubernetes clusters | Azure Pipelines |
-| [MySQL Database Deployment On Machine Group task](../deploy/mysqldb-deployment.md) - The task is used to deploy for MySQL Database. | Azure Pipelines |
+| ![icon](../deploy/_img/mysqldb-deployment.png) [MySQL Database Deployment On Machine Group task](../deploy/mysqldb-deployment.md) - The task is used to deploy for MySQL Database. | Azure Pipelines |
 | ![icon](../deploy/_img/helmdeploy.png) [Package and Deploy Helm Charts task](../deploy/helm-deploy.md) - Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands. | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/powershell-on-target-machines-icon.png) [PowerShell on Target Machines task](../deploy/powershell-on-target-machines.md) - PowerShell on Target Machines build task | Azure Pipelines, TFS 2015 RTM and newer |
-| [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md) - Service Fabric Application Deployment task | Azure Pipelines, TFS 2017 and newer |
-| [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md) - Service Fabric Compose Deploy Deployment task | Azure Pipelines, Azure DevOps Server 2019 |
+| ![icon](../deploy/_img/service-fabric-deploy.png) [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md) - Service Fabric Application Deployment task | Azure Pipelines, TFS 2017 and newer |
+| ![icon](../deploy/_img/service-fabric-compose-deploy.png) [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md) - Service Fabric Compose Deploy Deployment task | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/ssh.png) [SSH Deployment task](../deploy/ssh.md) - SSH task for use in the jobs of all of your build and release pipelines | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../deploy/_img/windows-machine-file-copy-icon.png) [Windows Machine File Copy task](../deploy/windows-machine-file-copy.md) - Copy application files and other artifacts to remote Windows machines | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../deploy/_img/sqldacpacdeploymentonmachinegroup.png) [WinRM SQL Server DB Deployment task](../deploy/sql-dacpac-deployment-on-machine-group.md) - Deploy to SQL Server Database using DACPAC or SQL scripts | Azure Pipelines |
@@ -153,11 +153,12 @@ ms.topic: include
 | ![icon](../tool/_img/docker-installer.png) [Docker Installer task](../tool/docker-installer.md) - Install the Docker CLI on an agent machine | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../tool/_img/gotool.png) [Go Tool Installer task](../tool/go-tool.md) - Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/helminstaller.png) [Helm installer task](../tool/helm-installer.md) - Install helm on an agent machine | Azure Pipelines |
-| [Java Tool Installer task](../tool/java-tool-installer.md) - Change the version of Java | Azure Pipelines |
+| ![icon](../tool/_img/java.png) [Java Tool Installer task](../tool/java-tool-installer.md) - Change the version of Java | Azure Pipelines |
 | [Kubectl installer task](../tool/kubectl-installer.md) - Install kubectl on an agent machine | Azure Pipelines |
-| [Node.js Tool Installer task](../tool/node-js.md) - Find, download, and cache a specified version of Node.js and add it to the PATH | Azure Pipelines |
+| ![icon](../tool/_img/node.png) [Node.js Tool Installer task](../tool/node-js.md) - Find, download, and cache a specified version of Node.js and add it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/nuget.png) [NuGet Tool Installer task](../tool/nuget.md) - Find, download, and cache a specified version of NuGet and add it to the PATH | Azure Pipelines |
 | [Use .NET Core task](../tool/dotnet-core-tool-installer.md) - Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH | Azure Pipelines |
 | [Use Python Version task](../tool/use-python-version.md) - Select a version of Python to run on an agent and optionally add it to PATH | Azure Pipelines |
 | [Use Ruby Version task](../tool/use-ruby-version.md) - Select a version of Ruby to run on an agent and optionally add it to PATH | Azure Pipelines |
 | [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) - Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data | Azure Pipelines |
+
