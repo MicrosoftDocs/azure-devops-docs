@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 09/27/2019 
+ms.date: 10/07/2019 
 ---
 
 # Quickstart: Add and edit wiki pages
