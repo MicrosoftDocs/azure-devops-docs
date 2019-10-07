@@ -23,7 +23,7 @@ ms.topic: include
 | ![icon](../build/_img/maven.png) [Maven build and release task](../build/maven.md) - Maven build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/msbuild.png) [MSBuild build and release task](../build/msbuild.md) - MSBuild build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/sonarqube.png) [SonarQube - Prepare Analysis Configuration](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Configure all the required settings before executing the build | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](../build/_img/sonarqube.png) [SonarQube - Publish Quality Gate Result](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Display the Quality Gate status in the build summary | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - Publish Quality Gate Result ](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Display the Quality Gate status in the build summary | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../build/_img/sonarqube.png) [SonarQube - Run Code Analysis](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Run the analysis of the source code | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../build/_img/visual-studio-build.png) [Visual Studio Build build and release task](../build/visual-studio-build.md) - Visual Studio Build build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-android.png) [Xamarin.Android build and release task](../build/xamarin-android.md) - Xamarin.Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
@@ -38,7 +38,7 @@ ms.topic: include
 |--------|-----------|
 | ![icon](../utility/_img/archive-files.png) [Archive Files task](../utility/archive-files.md) - Use an archive file to then create a source folder | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/azurenlbmanagement.png) [Azure Network Load Balancer task](../utility/azure-nlb-management.md) - Connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool | Azure Pipelines |
-| [Azure Policy task](../utility/azure-policy.md) - Security and compliance assessment with Azure policies | Azure Pipelines, Azure DevOps Server 2019 |
+| ![icon](../utility/_img/azure-policy.png) [Azure Policy task](../utility/azure-policy.md) - Security and compliance assessment with Azure policies | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/bash.png) [Bash task](../utility/bash.md) - Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | ![icon](../utility/_img/batch-script.png) [Batch Script task](../utility/batch-script.md) - Execute .bat or .cmd scripts when building your code | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../utility/_img/command-line.png) [Command Line task](../utility/command-line.md) - Execute tools from a command prompt when building code | Azure Pipelines, TFS 2015 RTM and newer |
