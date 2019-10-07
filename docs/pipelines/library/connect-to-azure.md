@@ -75,9 +75,8 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
-   * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
-   * [How to create Azure Service Principal with a certificate using Azure PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
+   * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
