@@ -22,9 +22,9 @@ ms.topic: include
 | ![icon](../build/_img/jenkins-queue-job.png) [Jenkins Queue Job build and release task](../build/jenkins-queue-job.md) - Queue a job on a Jenkins server build and release task | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../build/_img/maven.png) [Maven build and release task](../build/maven.md) - Maven build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/msbuild.png) [MSBuild build and release task](../build/msbuild.md) - MSBuild build and release task | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](../build/_img/sonarqube.png) [SonarQube - Prepare Analysis Configuration](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Configure all the required settings before executing the build | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](../build/_img/sonarqube.png) [SonarQube - Publish Quality Gate Result ](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Display the Quality Gate status in the build summary | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](../build/_img/sonarqube.png) [SonarQube - Run Code Analysis](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/). Run the analysis of the source code | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - Prepare Analysis Configuration](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/) - Configure all the required settings before executing the build | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - Publish Quality Gate Result ](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/) - Display the Quality Gate status in the build summary | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - Run Code Analysis](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-azure-devops/) - Run the analysis of the source code | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../build/_img/visual-studio-build.png) [Visual Studio Build build and release task](../build/visual-studio-build.md) - Visual Studio Build build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-android.png) [Xamarin.Android build and release task](../build/xamarin-android.md) - Xamarin.Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-ios.png) [Xamarin.iOS build and release task](../build/xamarin-ios.md) - Xamarin.iOS build and release task | Azure Pipelines, TFS 2015 RTM and newer |
@@ -49,17 +49,17 @@ ms.topic: include
 | ![icon](../utility/_img/delay.png) [Delay task](../utility/delay.md) - Pause execution of a build or release pipeline for a fixed delay time | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/delete-files.png) [Delete Files task](../utility/delete-files.md) - Delete files from the agent working directory when building code | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../utility/_img/downloadbuildartifacts.png) [Download Build Artifacts task](../utility/download-build-artifacts.md) - Download Build Artifacts task for use in a build or release pipeline | Azure Pipelines |
-| [Download Fileshare Artifacts task](../utility/download-fileshare-artifacts.md) - Download Fileshare Artifacts task for Azure Pipelines and TFS | Azure Pipelines |
-| [Download GitHub Release task](../utility/download-github-release.md) - Download assets from your GitHub release as part of your pipeline | Azure Pipelines |
+| ![icon](../utility/_img/download-fileshare-artifacts.png) [Download Fileshare Artifacts task](../utility/download-fileshare-artifacts.md) - Download Fileshare Artifacts task for Azure Pipelines and TFS | Azure Pipelines |
+| ![icon](../utility/_img/download-github-release.png) [Download GitHub Release task](../utility/download-github-release.md) - Download assets from your GitHub release as part of your pipeline | Azure Pipelines |
 | ![icon](../utility/_img/downloadpackage.png) [Download Package task](../utility/download-package.md) - Download a package from a Package Management feed in Azure Artifacts or TFS. | Azure Pipelines |
 | ![icon](../utility/_img/download-pipeline-artifact.png) [Download Pipeline Artifact task](../utility/download-pipeline-artifact.md) - Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline | Azure Pipelines |
-| [Download Secure File task](../utility/download-secure-file.md) - Download a secure file to a temporary location on the build or release agent in | Azure Pipelines |
+| ![icon](../utility/_img/download-secure-file.png) [Download Secure File task](../utility/download-secure-file.md) - Download a secure file to a temporary location on the build or release agent in | Azure Pipelines |
 | ![icon](../utility/_img/extract-files.png) [Extract Files task](../utility/extract-files.md) - Extract files from archives to a target folder using minimatch patterns on  (TFS) | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/file-transform.png) [File Transform task](../utility/file-transform.md) - Apply configuration file transformations and variable substitution to a target package or folder | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/ftp-upload.png) [FTP Upload task](../utility/ftp-upload.md) - Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on  (TFS) | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/github-release.png) [GitHub Release task](../utility/github-release.md) - Create, edit, or discard a GitHub release. | Azure Pipelines |
-| [Install Apple Certificate task](../utility/install-apple-certificate.md) - Install an Apple certificate required to build on a macOS agent on  (TFS) | Azure Pipelines, TFS 2018 and newer |
-| [Install Apple Provisioning Profile task](../utility/install-apple-provisioning-profile.md) - Install an Apple provisioning profile required to build on a macOS agent | Azure Pipelines, TFS 2018 and newer |
+| ![icon](../utility/_img/install-apple-certificate.png) [Install Apple Certificate task](../utility/install-apple-certificate.md) - Install an Apple certificate required to build on a macOS agent on  (TFS) | Azure Pipelines, TFS 2018 and newer |
+| ![icon](../utility/_img/install-apple-provisioning-profile.png) [Install Apple Provisioning Profile task](../utility/install-apple-provisioning-profile.md) - Install an Apple provisioning profile required to build on a macOS agent | Azure Pipelines, TFS 2018 and newer |
 | ![icon](../utility/_img/installsshkey.png) [Install SSH Key task](../utility/install-ssh-key.md) - Install an SSH key prior to a build or release | Azure Pipelines |
 | ![icon](../utility/_img/azure-function.png) [Invoke Azure Function task](../utility/azure-function.md) - Invoke a HTTP triggered function in an Azure function app and parse the response | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/http-rest-api.png) [Invoke HTTP REST API task](../utility/http-rest-api.md) - Build and release task to invoke an HTTP API and parse the response with a build or release pipeline | Azure Pipelines, TFS 2018 and newer |
@@ -71,11 +71,11 @@ ms.topic: include
 | ![icon](../utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus task](../utility/publish-to-azure-service-bus.md) - Send a message to an Azure Service Bus with a build or release pipeline | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/pythonscript.png) [Python Script task](../utility/python-script.md) - Run a Python script in a build or release pipeline | Azure Pipelines |
 | ![icon](../utility/_img/azure-monitor.png) [Query Azure Monitor Alerts task](../utility/azure-monitor.md) - Observe the configured Azure monitor rules for active alerts  in a build or release pipeline | Azure Pipelines, TFS 2017 and newer |
-| [Query Work Items task](../utility/work-item-query.md) - Ensure the number of matching items returned by a work item query is within the configured threshold | Azure Pipelines, TFS 2017 and newer |
+| ![icon](../utility/_img/work-item-query.png) [Query Work Items task](../utility/work-item-query.md) - Ensure the number of matching items returned by a work item query is within the configured threshold | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/service-fabric-powershell.png) [Service Fabric PowerShell Utility task](../utility/service-fabric-powershell.md) - Service Fabric PowerShell task for use in build or release pipelines in | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/_img/shell-script.png) [Shell Script task](../utility/shell-script.md) - Execute a bash script when building code | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../utility/_img/service-fabric-versioning.png) [Update Service Fabric Manifests task](../utility/service-fabric-versioning.md) - Update the Service Fabric App versions | Azure Pipelines, TFS 2017 and newer |
-| [Xamarin License task](../utility/xamarin-license.md) - Activate or deactivate a Xamarin license when building code | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../utility/_img/xamarin.png) [Xamarin License task](../utility/xamarin-license.md) - Activate or deactivate a Xamarin license when building code | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Test
 
@@ -91,7 +91,7 @@ ms.topic: include
 | ![icon](../test/_img/run-functional-tests-icon.png) [Run Functional Tests task](../test/run-functional-tests.md) - Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/visual-studio-test-agent-deployment-icon.png) [Visual Studio Test Agent Deployment task](../test/visual-studio-test-agent-deployment.md) - Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/vstest.png) [Visual Studio Test task](../test/vstest.md) - Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. | Azure Pipelines |
-| [Xamarin Test Cloud task](../test/xamarin-test-cloud.md) - This task is deprecated. Use the App Center Test task instead. | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/xamarin.png) [Xamarin Test Cloud task](../test/xamarin-test-cloud.md) - This task is deprecated. Use the App Center Test task instead. | Azure Pipelines, TFS 2015 RTM and newer |
 
 ## Package
 
@@ -102,8 +102,8 @@ ms.topic: include
 | ![icon](../package/_img/maven.png) [Maven Authenticate task (for task runners)](../package/maven-authenticate.md) - Provides credentials for Azure Artifacts feeds and external Maven repositories. | Azure Pipelines |
 | ![icon](../package/_img/npmauthenticate.png) [npm Authenticate task (for task runners)](../package/npm-authenticate.md) - Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries. | Azure Pipelines |
 | ![icon](../package/_img/npm.png) [npm task](../package/npm.md) - How to use npm packages when building code in Azure Pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](../package/_img/nuget.png) [NuGet Authenticate](../package/nuget-authenticate.md) - Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories. | Azure Pipelines |
-| ![icon](../package/_img/nuget.png) [NuGet restore, pack, and publish task](../package/nuget.md) - Learn all about how you can make use of NuGet packages when you are building code . | Azure Pipelines, TFS 2018 and newer |
+| ![icon](../package/_img/nuget.png) [NuGet Authenticate](../package/nuget-authenticate.md) - Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories | Azure Pipelines |
+| ![icon](../package/_img/nuget.png) [NuGet restore, pack, and publish task](../package/nuget.md) - Learn all about how you can make use of NuGet packages when you are building code | Azure Pipelines, TFS 2018 and newer |
 | ![icon](../package/_img/pypi-publisher.png) [PyPI Publisher task (Deprecated)](../package/pypi-publisher.md) - How to upload a package to PyPI when building code | Azure Pipelines |
 | ![icon](../package/_img/pip-authenticate.png) [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
 | ![icon](../package/_img/twine-authenticate.png) [Python Twine Upload Authenticate](../package/twine-authenticate.md) - Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. | Azure Pipelines |
