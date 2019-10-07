@@ -14,18 +14,8 @@ monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019
 ---
 
-::: moniker range=">= tfs-2018"
 
 # Filter backlogs or queries based on keywords, tags, or other fields  
-
-::: moniker-end 
-
-
-::: moniker range="<= tfs-2017"
-
-# Filter backlogs or queries based on keywords 
-
-::: moniker-end 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 

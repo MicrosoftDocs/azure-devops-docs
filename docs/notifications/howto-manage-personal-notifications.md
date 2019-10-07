@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Manage your notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 As changes occur to your code base, builds, work items, and other operations, you can receive email notifications. For example, you can set an alert, so you're notified whenever a bug that you opened is resolved or you're assigned to a work item.
 

@@ -558,7 +558,7 @@ of the .NET Core SDK that's used in your build.
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
 
 ### Where can I learn more about .NET Core commands?
 

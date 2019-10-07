@@ -94,7 +94,7 @@ Pausing Analytics (2019.1) or disabling the Analytics extension (2019), disables
 - [Analytics widgets](analytics-widgets.md)
 - [Analytics in-context reports, such as pipeline and test reports](overview.md#incontext-reports)
 - [Power BI integration using Analytics views](../powerbi/what-are-analytics-views.md)
-- [OData endpoint queries](../extend-analytics/index.md) 
+- [OData endpoint queries](../extend-analytics/quick-ref.md) 
 
 Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and your data will then be updated. 
 
