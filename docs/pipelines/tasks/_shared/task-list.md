@@ -22,8 +22,8 @@ ms.topic: include
 | ![icon](../build/_img/jenkins-queue-job.png) [Jenkins Queue Job build and release task](../build/jenkins-queue-job.md) - Queue a job on a Jenkins server build and release task | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../build/_img/maven.png) [Maven build and release task](../build/maven.md) - Maven build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/msbuild.png) [MSBuild build and release task](../build/msbuild.md) - MSBuild build and release task | Azure Pipelines, TFS 2015 RTM and newer |
-| [SonarQube - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | Azure Pipelines, TFS 2015.3 and newer |
-| [SonarQube - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - Begin Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Fetch the Quality Profile from SonarQube to configure the analysis | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](../build/_img/sonarqube.png) [SonarQube - End Analysis](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS). Finish the analysis and upload the results to SonarQube | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../build/_img/visual-studio-build.png) [Visual Studio Build build and release task](../build/visual-studio-build.md) - Visual Studio Build build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-android.png) [Xamarin.Android build and release task](../build/xamarin-android.md) - Xamarin.Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/xamarin-ios.png) [Xamarin.iOS build and release task](../build/xamarin-ios.md) - Xamarin.iOS build and release task | Azure Pipelines, TFS 2015 RTM and newer |
@@ -161,3 +161,4 @@ ms.topic: include
 | [Use Python Version task](../tool/use-python-version.md) - Select a version of Python to run on an agent and optionally add it to PATH | Azure Pipelines |
 | [Use Ruby Version task](../tool/use-ruby-version.md) - Select a version of Ruby to run on an agent and optionally add it to PATH | Azure Pipelines |
 | ![icon](../tool/_img/vstest.png) [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) - Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data | Azure Pipelines |
+
