@@ -20,11 +20,11 @@ This article describes how to customize the Azure Pipelines *azure-pipeline.yml*
 
 If you're new to pipelines, or want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
-To create and activate an Anaconda environment and install Anaconda packages with conda, see [Run pipelines with Anaconda environments](./anaconda.md).
+To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Configure build environment
 
-You don't have to set up any Azure Pipelines infrastructure to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
+You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
 
 ### Use a specific Python version
 
@@ -60,8 +60,8 @@ jobs:
     inputs:
       versionSpec: '$(python.version)'
 
-  # Add tasks to run using each Python version in the matrix
 ```
+You can add tasks to run using each Python version in the matrix.
 
 ## Run Python scripts
 
@@ -105,7 +105,7 @@ After you update `pip` and friends, a typical next step is to install dependenci
 
 You can use scripts to install and run various tests in your pipeline.
 
-### Run lint tests with Flake8
+### Run lint tests with flake8
 
 To install or upgrade `flake8` and use it to run lint tests, use the following YAML:
 
@@ -118,7 +118,7 @@ To install or upgrade `flake8` and use it to run lint tests, use the following Y
 
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-To install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format, use the following YAML:
+Use the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
 
 ```yaml
 - script: |
@@ -130,7 +130,7 @@ To install `pytest` and `pytest-cov`, run tests, output test results in JUnit fo
 
 ### Run tests with Tox
 
-When you run tests with Tox, you can run parallel jobs to split up the work. This is different than on your development computer, where you run your test environments in series. The following sample uses `tox -e py` to run whichever version of Python is active for the current job.
+Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. The following sample uses `tox -e py` to run whichever version of Python is active for the current job.
 
 ```yaml
 - job:
@@ -187,22 +187,23 @@ Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage
 
 ## Package and deliver code
 
-To authenticate with `twine`, use the [Twine Upload Authenticate task](../tasks/package/twine-authenticate.md) to store authentication credentials in the `PYPIRC_PATH` environment variable.
+To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package/twine-authenticate.md) to store authentication credentials in the `PYPIRC_PATH` environment variable.
 
 ```yaml
 - task: TwineAuthenticate@0
   inputs:
-    artifactFeeds: 'feed_name1, feed_name2'
-    externalFeeds: 'feed_name1, feed_name2'
+    artifactFeed: '<Azure Artifacts feed name>'
+    pythonUploadServiceConnection: '<twine service connection from external organization>'
 ```
 
-Then, add a custom [script](../yaml-schema.md#script) task that uses `twine` to publish your packages.
+Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publish your packages.
 
 ```yaml
-- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
+- script: |
+   twine upload -r "<feed or service connection name>" --config-file $(PYPIRC_PATH) <package path/files>
 ```
 
-For your Python app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
+You can also use Azure Pipelines to [build an image](containers/build-image.md) for your Python app and [push it to a container registry](containers/push-image.md).
 
 ## Related extensions
 
