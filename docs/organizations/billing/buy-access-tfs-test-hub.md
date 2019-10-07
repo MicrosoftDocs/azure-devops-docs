@@ -21,7 +21,7 @@ For [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), you pay per 
 
 Paid users are entitled access to Basic features in your company's Azure DevOps Server. Paying monthly for users is a great alternative to buying User CALs, which typically have a 3-year commitment term. When you buy access in this way, you aren't required to use Azure DevOps Services (although you can use Azure DevOps Services in addition to Azure DevOps Server).
 
-You can also buy [Basic + Test Plans](buy-basic-plus-test-plans.md) for your users monthly. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in Azure DevOps Server.
+You can also buy [paid access](buy-basic-access-add-users.md) for your users monthly. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in Azure DevOps Server.
 
 To learn more about the requirements to access Azure DevOps Server or Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about licensing, see the [pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing). To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
@@ -48,7 +48,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
-2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy Basic + Test Plans](buy-basic-plus-test-plans.md).
+2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy paid access for users](buy-basic-access-add-users.md).
 
     Test Plans installs automatically in Azure DevOps Server.
 
@@ -67,7 +67,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
-2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy Basic + Test Plans access](buy-basic-plus-test-plans.md).
+2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [buy paid access](buy-basic-access-add-users.md).
 
     Test Plans installs automatically in Azure DevOps Server.
 
