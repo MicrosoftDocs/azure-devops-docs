@@ -13,7 +13,7 @@
     #csmFile: # Required when  TemplateLocation == Linked Artifact
     #csmParametersFile: # Optional
     #overrideParameters: # Optional
-    #deploymentMode: 'Incremental' # Options: incremental, complete, validation
+    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validation
     #enableDeploymentPrerequisites: 'None' # Optional. Options: none, configureVMwithWinRM, configureVMWithDGAgent
     #teamServicesConnection: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #teamProject: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
