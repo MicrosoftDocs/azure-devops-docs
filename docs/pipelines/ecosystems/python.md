@@ -100,7 +100,7 @@ To parameterize script execution, use the `PythonScript` task with `arguments` v
     arguments: --world Venus
 ```
 
-### Install dependenciesd
+### Install dependencies
 
 You can use scripts to install specific PyPI packages with `pip`. For example, this YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
