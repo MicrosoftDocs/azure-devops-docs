@@ -54,18 +54,12 @@ landingContent:
         links:
           - text: Create a custom pipelines task
             url: ../extend/develop/add-build-task.md
-          - text: Bulk add or modify work items
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
-          - text: Move, change, delete, or restore work items  
-            url: ./backlogs/office/bulk-add-modify-work-items-excel.md
   - title: Integrate applications
     linkLists:
       - linkListType: overview
         links:
           - text: Integration overview
             url: ../integrate/index.md
-          - text: Perform ad hoc searches
-            url: ./queries/search-box-queries.md
       - linkListType: how-to-guide
         links:
           - text: Authorize access to REST APIs with OAuth 2.0
@@ -78,32 +72,26 @@ landingContent:
             url: ../integrate/concepts/dotnet-client-libraries.md
   - title: Integrate with Slack or Microsoft Teams
     linkLists:
-      - linkListType: tutorial
+      - linkListType: how-to-guide
         links:
-          - text: Create managed queries
-            url: ./queries/using-queries.md
-          - text: Perform ad hoc searches
-            url: ./queries/search-box-queries.md
-      - linkListType: concept
-        links:
-          - text: Link work items
-            url: ./queries/link-work-items-support-traceability.md
-      - linkListType: reference
-        links:
-          - text: Query quick reference
-            url: ./queries/query-index-quick-ref.md
+          - text: Azure Boards with Slack
+            url: ../boards/integrations/boards-slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+          - text: Azure Pipelines with Slack
+            url: ../pipelines/integrations/slack.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+          - text: Azure Pipelines with Microsoft Teams
+            url: ../pipelines/integrations/microsoft-teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
   - title: Integrate with Service hooks
     linkLists:
       - linkListType: overview
         links:
           - text: Integrate with service hooks
-            url: ../service-hooks/overview.md
+            url: ../service-hooks/overview.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
       - linkListType: tutorial
         links:
           - text: Create a service hook with Microsoft Teams
-            url: ../service-hooks/services/teams.md
+            url: ../service-hooks/services/teams.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
           - text: Create a service hook with WebHooks
-            url: ../service-hooks/services/webhooks.md
+            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 
 
 
