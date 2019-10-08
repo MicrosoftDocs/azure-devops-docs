@@ -93,7 +93,7 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each Basic or Basic + Test Plan user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md).
+If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each Basic or Basic + Test Plan user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md#multi-org-billing).
 
 ## Next steps
 
