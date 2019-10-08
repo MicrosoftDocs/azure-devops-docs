@@ -65,6 +65,6 @@ To configure costs for Azure DevOps, see the [pricing calculator](https://azure.
 ## Related articles
 
 - [Buy Basic access for users](buy-basic-access-add-users.md)
-- [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+- [Buy Azure Test Plans](buy-basic-access-add-users.md)
 - [Buy CI/CD](buy-more-build-vs.md)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
