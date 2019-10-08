@@ -8,7 +8,7 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: jillfra
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 10/03/2019
+ms.date: 10/08/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -82,9 +82,27 @@ You can also run inline Python scripts with the [Python Script task](../tasks/ut
       print('Hello world 2')
 ```
 
-### Install dependencies
+To parameterize script execution, use the `PythonScript` task with `arguments` values to pass arguments into the executing process. You can use `sys.argv` or the more sophisticated `argparse` library to parse the arguments.
 
-You can use a script to install specific PyPI packages with `pip`. For example, the following YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
+```yaml
+- task: PythonScript@0
+  inputs:
+    scriptSource: inline
+    script: |
+      import sys
+      print ('Executing script file is:', str(sys.argv[0]))
+      print ('The arguments are:', str(sys.argv))
+      import argparse
+      parser = argparse.ArgumentParser()
+      parser.add_argument("--world", help="Provide the name of the world to greet.")
+      args = parser.parse_args()
+      print ('Hello ', args.world)
+    arguments: --world Venus
+```
+
+### Install dependenciesd
+
+You can use scripts to install specific PyPI packages with `pip`. For example, the following YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
