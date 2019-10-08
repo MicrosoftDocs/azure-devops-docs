@@ -86,7 +86,7 @@ You can also run inline Python scripts with the [Python Script](../tasks/utility
 ```yaml
 - task: PythonScript@0
   inputs:
-    targetType: 'inline'
+    scriptSource: 'inline'
     script: |
       print('Hello world 1')
       print('Hello world 2')
