@@ -27,8 +27,12 @@ Already familiar with the concepts and want to jump right in? Start with these h
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
 - [Use Maven Central as an upstream](../maven/upstream-sources.md)
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > Custom upstream sources are currently only supported for npm.
+
+::: moniker-end
 
 ## Benefits of upstream sources
 
