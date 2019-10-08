@@ -28,7 +28,7 @@ A: Azure DevOps is free for these users to join:
 
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), like working with your backlog, work items, and queries.
 
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features, like [Azure Test Plans](../billing/buy-basic-plus-test-plans.md).
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
 
 	[Learn what else you get with Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/).
 
@@ -59,8 +59,6 @@ A: If you're a new user, you can change your profile details. You need to do thi
 #### Q: Why are some features not available in my organization?
 
 A: Some features require you to install an extension, which might be available for free or paid.
-
-For example, web-based test case management requires [Azure Test Plans](../billing/buy-basic-plus-test-plans.md). You can try the Basic + Test Plans trial if you haven't started it already. Otherwise, you can [pay for user access](../billing/buy-basic-plus-test-plans.md).
 
 #### Q: How many organizations can I create?
 
