@@ -28,6 +28,9 @@ The new update has introduced a new, top-level area that is the home of Package 
 
 ![Go to Azure Artifacts](_shared/_img/goto-feed-hub-azure-devops-newnav.png)
 
+> [!NOTE]
+> If you don't see **Artifacts** or want to turn the service off, see more info in [Change service visibility](../organizations/settings/set-services.md)
+
 ## Azure Artifacts billing model
 
 Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](start-using-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](start-using-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?
