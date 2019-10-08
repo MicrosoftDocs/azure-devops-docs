@@ -60,7 +60,7 @@ az devops service-endpoint create
 Prerequisite for using this command is that user should be aware of the request format for creating that particular kind of service endpoint.
 
 It can be achived using the following steps:
-Create endpoint of same time from UI and capture it's network trace (using tool of your preference like Fiddler, Chrome Developer tool)
+Create endpoint of same type from UI and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool)
 
 ![Docker Create UI](_img/DockerServiceEndpointCreateUI.png)
 
