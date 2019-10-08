@@ -22,7 +22,7 @@ If you're new to pipelines, or want an end-to-end walkthrough, see [Use CI/CD to
 
 To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
 
-## Configure build environment
+## Build environment
 
 You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
 
@@ -102,7 +102,7 @@ To parameterize script execution, use the `PythonScript` task with `arguments` v
 
 ### Install dependenciesd
 
-You can use scripts to install specific PyPI packages with `pip`. For example, the following YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
+You can use scripts to install specific PyPI packages with `pip`. For example, this YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
@@ -125,7 +125,7 @@ You can use scripts to install and run various tests in your pipeline.
 
 ### Run lint tests with flake8
 
-To install or upgrade `flake8` and use it to run lint tests, use the following YAML:
+To install or upgrade `flake8` and use it to run lint tests, use this YAML:
 
 ```yaml
 - script: |
@@ -136,7 +136,7 @@ To install or upgrade `flake8` and use it to run lint tests, use the following Y
 
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-Use the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
+Use this YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
 
 ```yaml
 - script: |
@@ -148,7 +148,7 @@ Use the following YAML to install `pytest` and `pytest-cov`, run tests, output t
 
 ### Run tests with Tox
 
-Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. The following sample uses `tox -e py` to run whichever version of Python is active for the current job.
+Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
 
 ```yaml
 - job:
