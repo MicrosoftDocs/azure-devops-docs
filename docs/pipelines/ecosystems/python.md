@@ -92,6 +92,25 @@ You can also run inline Python scripts with the [Python Script](../tasks/utility
       print('Hello world 2')
 ```
 
+To create parameterized Python execution use the [Python Script](../tasks/utility/python-script.md) task and then the **arguments** value may be used to pass arguments into the executing Python process. These may then be parsed using `sys.argv` or the more sophisticated `argparse` library.
+
+```yaml
+- task: PythonScript@0
+  inputs:
+    scriptSource: inline
+    script: |
+      import sys
+      print ('Executing script file is:', str(sys.argv[0]))
+      print ('The arguments are:', str(sys.argv))
+      import argparse
+      parser = argparse.ArgumentParser()
+      parser.add_argument("--world", help="Provide the name of the world to greet.")
+      args = parser.parse_args()
+      print ('Hello ', args.world)
+    arguments: --world Venus
+```
+
+
 ## Install dependencies
 
 ### Install specific PyPI packages with pip
