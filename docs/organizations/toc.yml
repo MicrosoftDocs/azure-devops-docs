@@ -117,7 +117,7 @@
   - name: Security, access, & billing
     href: ../security-access-billing/index.yml
   - name: Marketplace & extensibility  
-    href: ../marketplace-extensibility/index.md
+    href: ../marketplace-extensibility/index.yml
   - name: Public projects
     href: ./public/index.md
   - name: Azure Boards
