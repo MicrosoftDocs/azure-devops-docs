@@ -1,14 +1,11 @@
 - name: Azure Boards Documentation
-  expanded: false
   href: index.yml
 - name: "What is Azure Boards?"
   href: get-started/what-is-azure-boards.md
 - name: "Backlogs, boards, & plans"
   href: backlogs/backlogs-boards-plans.md 
-- name: "Area & iteration paths"
-  href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: "About teams & Agile tools"
-  href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Best tool for the job
+  href: work-items/best-tool-add-update-link-work-items.md
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub
@@ -83,8 +80,8 @@
   items:
   - name: Azure Boards with Slack
     href: integrations/boards-slack.md
-- name: Best tool for the job
-  href: work-items/best-tool-add-update-link-work-items.md
+  - name: Project Server Integration (Deprecated)
+    href: /azure/devops/reference/tfs-ps-sync/index
 - name: REST API Reference
   items:
   - name: Work Items
