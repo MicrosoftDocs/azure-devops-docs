@@ -139,7 +139,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 3.0.100
+    version: 3.0.x
 # ...
 ```
 
