@@ -27,7 +27,7 @@ landingContent:
           - text: Get Started with Azure DevOps CLI
             url: ../cli/get-started.md
           - text: Sign in with a Personal Access Token (PAT)
-            url: .../cli/log-in-via-pat.md
+            url: ../cli/log-in-via-pat.md
           - text: Configure policies
             url: ../cli/policy-configuration-file.md
   - title: Azure DevOps REST API Reference
@@ -39,7 +39,7 @@ landingContent:
           - text: Build
             url: /rest/api/azure/devops/build/index
           - text: Core
-            url: ./rest/api/azure/devops/core/index
+            url: /rest/api/azure/devops/core/index
           - text: Git
             url: /rest/api/azure/devops/git/index
           - text: Work item tracking
