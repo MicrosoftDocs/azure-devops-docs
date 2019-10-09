@@ -217,14 +217,7 @@ you get the benefit of using the package cache.
 
 ::: moniker range="azure-devops"  
 
-To restore packages, use the `dotnet restore` command:
-
-```yaml
-steps:
-- script: dotnet restore
-```
-
-Or to restore packages from a custom feed, use the **.NET Core** task:
+To restore packages from a custom feed, use the **.NET Core** task:
 
 ```yaml
 # do this before your build tasks
