@@ -36,7 +36,7 @@
   - name: Developer resources
     tocHref: /azure/devops/developer-resources/
     topicHref: /azure/devops/developer-resources/index
- - name: Collaborate
+  - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
