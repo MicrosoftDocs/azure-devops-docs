@@ -23,15 +23,18 @@
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
+  - name: Notifications
+    tocHref: /azure/devops/notifications/
+    topicHref: /azure/devops/organizations/index
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
-    - name: Notifications
-      tocHref: /azure/devops/notifications/
-      topicHref: /azure/devops/project/index
     - name: Wiki
       tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/index
+    - name: Public Projects
+      tocHref: /azure/devops/organizations/public/
       topicHref: /azure/devops/project/index
     - name: Search
       tocHref: /azure/devops/project/search/
