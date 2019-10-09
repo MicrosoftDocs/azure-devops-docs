@@ -139,6 +139,7 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
+    packageType: 'sdk' # other option is 'runtime', use for multi-targeting
     version: 3.0.x
 # ...
 ```
