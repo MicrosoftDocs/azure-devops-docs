@@ -20,6 +20,8 @@ Secrets are available on the agent for tasks and scripts to use **(so be careful
 > 
 > We will not ever mask substrings of secrets. If, for example, "abc123" is set as a secret, "abc" will not be masked from the logs.
 > This is to avoid masking secrets at too granular of a level, making the logs unreadable.
+> For this reason, secrets should not contain structured data. If "{ "foo": "bar" }" is set as a secret,
+> "bar" will not be masked from the logs.
 
 Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
 You can explicitly map them in, though.
