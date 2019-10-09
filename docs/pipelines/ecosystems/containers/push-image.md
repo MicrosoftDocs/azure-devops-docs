@@ -37,7 +37,7 @@ The following YAML snippet showcases the usage of [Docker registry service conne
 
 ## Azure Container Registry
 
-Under Azure Container Registry option of [Docker registry service connection](../../library/service-endpoints.md#sep-docreg), the subscription (associated with the AAD identity of the user signed into Azure DevOps) and container registry within the subscription can be chosen to create the service connection. These service connections can  be subsequently referenced from a pipeline task as shown in the YAML snippet above.
+Under Azure Container Registry option of [Docker registry service connection](../../library/service-endpoints.md#sep-docreg), the subscription (associated with the AAD identity of the user signed into Azure DevOps) and container registry within the subscription can be chosen to create the service connection. These service connections can be subsequently referenced from a pipeline task as shown in the YAML snippet above.
 
 For creating a new pipeline for a repository containing Dockerfile, the [Build and Push to Azure Container Registry document](acr-template.md) describes the Docker template automatically recommended by Azure Pipelines upon detecting of Dockerfile in the repository. The Azure subscription and Azure Container Registry inputs provided for template configuration are used by Azure Pipelines to automatically create the Docker registry service connection and even construct a functioning build and push pipeline by referencing the created service connection.
 
