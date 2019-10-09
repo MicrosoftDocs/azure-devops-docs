@@ -1,20 +1,20 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Extension Manifest Reference| Extensions for Azure DevOps Services
-description: How to create a manifest for your extension to Azure DevOps Services.
+title: Extension Manifest Reference| Extensions for Azure DevOps
+description: How to create a manifest for your extension to Azure DevOps
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/26/2016
+ms.date: 10/09/2019
 ---
 
 # Extension manifest reference
 
-Every extension has a JSON manifest file which defines basic info about the extension and how it wants to extend and enhance the experience.
+Every extension has a JSON manifest file which defines basic info about the extension and how it can extend and enhance the experience. This article shows you how to create a manifest for your extensions to Azure DevOps.
 
 Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
 
@@ -46,9 +46,10 @@ Here is an example of what a typical manifest will look like:
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
 <a id="public-flag" />
+
 #### Mark an extension public
 
-By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
+By default, all extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops/) are private  and are therefore only visible to the publisher and accounts that the publisher has shared the extension with. If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
 ```json
 {
@@ -518,9 +519,12 @@ The `files` section is where you reference any files you wish to include in your
 
 Properties for the Files section:
 
-- **path** - Path of resource, root directory is where your manifest file is located
-- **addressable** - Set to **true** if you want your file to be URL-addressable
-- **packagePath** - Places your resource from disk to the specified value when packaged
+- **path** - Path to resource on disk, which can be relative to your root directory.
+- **addressable** – (optional) Set to **true** if you want your file to be URL-addressable. Defaults to **false**.
+- **packagePath** – (optional) Path to the resource within the package. Defaults to the relative path on disk from your root directory.
+- **contentType** – (optional) MIME type of the file. Defaults to a best guess based on the file extension and OS settings.
+- **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries will be added for this file. Defaults to the packagePath.
+- **lang** – (optional) Language of this asset. Localized files are served based on the Accept-Language header. Leave blank to signify this file is in the default (or fallback) language. Localized versions of the same file should have the same assetType.
 
 ## Contributions
 

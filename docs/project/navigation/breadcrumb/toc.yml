@@ -5,7 +5,3 @@
   - name: Get Started
     tocHref: /azure/devops/project/navigation/
     topicHref: /azure/devops/get-started/index
-    items: 
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
