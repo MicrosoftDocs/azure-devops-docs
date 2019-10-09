@@ -104,4 +104,23 @@ jobs:
             action: deploy
             namespace: openshiftnamespace
             manifests: manifests/*
+- deployment:
+  displayName: Deploy to DigitalOcean
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.digitaloceannamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            namespace: digitaloceannamespace
+            manifests: manifests/*
 ```
+
+> [!NOTE]
+> When using the service account option, [ensure that a Rolebinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding) which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
