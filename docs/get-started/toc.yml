@@ -4,8 +4,6 @@
   href: ../user-guide/toc.yml
 - name: Web portal navigation
   href: ../project/navigation/toc.yml 
-- name: Search across Azure DevOps
-  href: ../project/search/toc.yml 
 - name: Migrate & import
   href: ../migrate/toc.yml 
 - name: Reference
@@ -22,10 +20,6 @@
     href: ../user-guide/service-status-info.md
   - name: Service limits  
     href: ../user-guide/service-limits.md
-- name: REST API Reference
-  items:
-  - name: Search
-    href: https://docs.microsoft.com/rest/api/vsts/search/?view=vsts-rest-4.1
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
@@ -38,7 +32,7 @@
     href: /azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
     href: /azure/devops/java/download-intellij-plug-in
-- name: status & security (Azure DevOps Services)
+- name: Status & security (Azure DevOps Services)
   items: 
   - name: Service status  
     href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  

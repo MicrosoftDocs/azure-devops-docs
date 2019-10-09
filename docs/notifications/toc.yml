@@ -1,5 +1,3 @@
-- name: Notifications
-  href: index.md
 - name: About notifications
   href: about-notifications.md
 - name: Navigating the UI
@@ -32,7 +30,7 @@
     href: change-email-address.md
   - name: Use subscription logging for troubleshooting
     href: howto-use-subscription-logging.md
-  - name: Exclude yourself from notification of events initiated by you
+  - name: Exclude yourself from notification of events you initiated
     href: howto-exclude-self-from-email.md
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
