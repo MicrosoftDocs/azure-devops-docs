@@ -81,6 +81,7 @@
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
+    items:
     - name: Organizations
       tocHref: /azure/devops/organizations/accounts/
       topicHref: /azure/devops/security-access-billing/index
