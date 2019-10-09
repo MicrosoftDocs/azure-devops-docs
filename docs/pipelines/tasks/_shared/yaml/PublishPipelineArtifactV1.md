@@ -4,5 +4,5 @@
 - task: PublishPipelineArtifact@1
   inputs:
     #targetPath: '$(Pipeline.Workspace)' 
-    #artifact: # Optional
+    #artifactName: # 'drop'
 ```
