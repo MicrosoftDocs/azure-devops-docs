@@ -3,5 +3,5 @@
   topicHref: /azure/devops/index
   items: 
   - name: Configure & customize
-    tocHref: /azure/devops/organizations/
+    tocHref: /azure/devops/organizations/settings/work/
     topicHref: /azure/devops/organizations/index
