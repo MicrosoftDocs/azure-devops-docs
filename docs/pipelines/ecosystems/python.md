@@ -1,6 +1,6 @@
 ---
 title: Build and test Python apps
-description: Automatically build and test Python apps with Azure Pipelines, Azure DevOps
+description: Automatically build and test Python apps with Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,7 +8,7 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: jillfra
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 04/17/2019
+ms.date: 10/08/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -16,26 +16,21 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts.
+This article describes how to customize the Azure Pipelines *azure-pipelines.yml* file to build, test, and deploy Python apps or scripts.
 
-> [!Tip]
-> Are you new to pipelines or looking for an end-to-end walkthrough? If so, see [Deploy a Python web app using CI/CD to Azure App Service on Linux](python-webapp.md).
+If you're new to pipelines, or want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
+
+To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Build environment
 
-You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
-
-For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To select a specific version of Python installed on Microsoft-hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your job.
+You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
 
 ### Use a specific Python version
 
-Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
+To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/python
-pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
-
 steps:
 - task: UsePythonVersion@0
   inputs:
@@ -44,10 +39,9 @@ steps:
 
 ### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, perhaps to test a package against those versions, define a *job* with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version.
+To run a pipeline with multiple Python versions, for example to test a package against those versions, define a `job` with a `matrix` of Python versions. Then set the `UsePythonVersion` task to reference the `matrix` variable.
 
 ```yaml
-# https://aka.ms/yaml
 jobs:
 - job: 'Test'
   pool:
@@ -66,22 +60,18 @@ jobs:
     inputs:
       versionSpec: '$(python.version)'
 
-  # Add additional tasks to run using each Python version in the matrix above
 ```
+You can add tasks to run using each Python version in the matrix.
 
-### Create and activate an Anaconda environment
+## Run Python scripts
 
-See [Run pipelines with Anaconda environments](./anaconda.md).
-
-## Run a Python script
-
-To run other Python script in your repository, use a `script` element and specify the filename:
+To run Python scripts in your repository, use a `script` element and specify a filename. For example:
 
 ```yaml
 - script: python src/example.py
 ```
 
-You can also run inline Python scripts with the [Python Script](../tasks/utility/python-script.md) task:
+You can also run inline Python scripts with the [Python Script task](../tasks/utility/python-script.md):
 
 ```yaml
 - task: PythonScript@0
@@ -92,37 +82,50 @@ You can also run inline Python scripts with the [Python Script](../tasks/utility
       print('Hello world 2')
 ```
 
-## Install dependencies
+To parameterize script execution, use the `PythonScript` task with `arguments` values to pass arguments into the executing process. You can use `sys.argv` or the more sophisticated `argparse` library to parse the arguments.
 
-### Install specific PyPI packages with pip
+```yaml
+- task: PythonScript@0
+  inputs:
+    scriptSource: inline
+    script: |
+      import sys
+      print ('Executing script file is:', str(sys.argv[0]))
+      print ('The arguments are:', str(sys.argv))
+      import argparse
+      parser = argparse.ArgumentParser()
+      parser.add_argument("--world", help="Provide the name of the world to greet.")
+      args = parser.parse_args()
+      print ('Hello ', args.world)
+    arguments: --world Venus
+```
 
-Add the following YAML to install or upgrade `pip` and two specific packages: `setuptools` and `wheel`.
+### Install dependencies
+
+You can use scripts to install specific PyPI packages with `pip`. For example, this YAML installs or upgrades `pip` and the `setuptools` and `wheel` packages.
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
   displayName: 'Install tools'
 ```
 
-### Install requirements with pip
+### Install requirements
 
-After updating `pip` and friends, a typical next step is to install from `requirements.txt`.
+After you update `pip` and friends, a typical next step is to install dependencies from *requirements.txt*:
 
 ```yaml
 - script: pip install -r requirements.txt
   displayName: 'Install requirements'
 ```
 
-### Install Anaconda packages with conda
-
-See [Run pipelines with Anaconda environments](./anaconda.md).
-
 <a name="test"></a>
-
 ## Run tests
 
-### Run lint tests with Flake8
+You can use scripts to install and run various tests in your pipeline.
 
-Add the following YAML to install or upgrade `flake8` and use it to run lint tests.
+### Run lint tests with flake8
+
+To install or upgrade `flake8` and use it to run lint tests, use this YAML:
 
 ```yaml
 - script: |
@@ -133,7 +136,7 @@ Add the following YAML to install or upgrade `flake8` and use it to run lint tes
 
 ### Test with pytest and collect coverage metrics with pytest-cov
 
-Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
+Use this YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format:
 
 ```yaml
 - script: |
@@ -143,33 +146,9 @@ Add the following YAML to install `pytest` and `pytest-cov`, run tests, output t
   displayName: 'Test with pytest'
 ```
 
-### Publish test results
-
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server.
-
-```yaml
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Publish test results for Python $(python.version)'
-```
-
-### Publish code coverage results
-
-Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
-
-```yaml
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: Cobertura
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
-```
-
 ### Run tests with Tox
 
-When running tests with Tox, you can run parallel jobs to split up the work. This is somewhat different from how you would run Tox on your development machine, where you would run all of your test environments in series. In the sample below, note the use of `tox -e py` to run whichever version of Python is active for the current job.
+Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
 
 ```yaml
 - job:
@@ -200,34 +179,53 @@ When running tests with Tox, you can run parallel jobs to split up the work. Thi
     displayName: 'Run Tox'
 ```
 
-## Package and deliver your code
+### Publish test results
 
-### Authenticate with twine
+Add the [Publish Test Results task](../tasks/test/publish-test-results.md) to publish JUnit or xUnit test results to the server:
 
-The [Twine Authenticate task](../tasks/package/twine-authenticate.md) stores authentication credentials for twine in the `PYPIRC_PATH` environment variable.
+```yaml
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: '**/test-*.xml'
+    testRunTitle: 'Publish test results for Python $(python.version)'
+```
+
+### Publish code coverage results
+
+Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results to the server. You can see coverage metrics in the build summary, and download HTML reports for further analysis.
+
+```yaml
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
+```
+
+## Package and deliver code
+
+To authenticate with `twine`, use the [Twine Authenticate task](../tasks/package/twine-authenticate.md) to store authentication credentials in the `PYPIRC_PATH` environment variable.
 
 ```yaml
 - task: TwineAuthenticate@0
   inputs:
-    artifactFeeds: 'feed_name1, feed_name2'
-    externalFeeds: 'feed_name1, feed_name2'
+    artifactFeed: '<Azure Artifacts feed name>'
+    pythonUploadServiceConnection: '<twine service connection from external organization>'
 ```
 
-### Publish with twine
-
-Then, add a [custom script task](../yaml-schema.md#script) to use `twine` to publish your packages.
+Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publish your packages.
 
 ```yaml
-- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
+- script: |
+   twine upload -r "<feed or service connection name>" --config-file $(PYPIRC_PATH) <package path/files>
 ```
 
-## Build an image and push to container registry
-
-For your Python app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
+You can also use Azure Pipelines to [build an image](containers/build-image.md) for your Python app and [push it to a container registry](containers/push-image.md).
 
 ## Related extensions
 
 - [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
 - [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-- [Azure Pipelines Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
+- [Azure DevOps plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 - [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  
