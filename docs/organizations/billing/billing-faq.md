@@ -216,7 +216,6 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
 * [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
 * [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
-* [Azure Test Plans](buy-basic-plus-test-plans.md) (formerly Test Manager)
 * [Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 
 ## Related articles

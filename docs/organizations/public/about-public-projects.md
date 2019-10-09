@@ -17,6 +17,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
+Create a public project, make an existing project public, or work in a public project to support your development of software applications.  
+
 An Azure DevOps Services public project provides support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open source software. Users aren't required to sign in to gain read-only access to many of the services.  
 
 > [!NOTE]
