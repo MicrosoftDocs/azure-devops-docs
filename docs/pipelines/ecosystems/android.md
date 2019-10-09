@@ -126,7 +126,7 @@ Don't forget to arrange the emulator parameters to fit your testing environment.
 # Create emulator
 echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
 
-echo $ANDROID_HOME/emulator/emulator -list-avds
+$ANDROID_HOME/emulator/emulator -list-avds
 
 echo "Starting emulator"
 
