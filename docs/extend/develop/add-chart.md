@@ -2,41 +2,43 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Add a chart | Extensions for Azure DevOps Services
-description: Add a chart to your extension in Azure DevOps Services.
+description: Add a chart to your extension in Azure DevOps Services
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/10/2016
+ms.date: 10/08/2019
 ---
 
 # Add a chart
 
-This page demonstrates how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
+[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-These charts are easy to create, resizable, interactive and consistent with the Azure DevOps Services look and feel. 
+This article demonstrates how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
+
+Charts are easy to create, resizable, interactive, and consistent with the Azure DevOps Services look and feel. 
 The following chart types are supported: 
 
-1. Line
-2. Bar
-3. Column 
-4. Area
-5. Stacked bar 
-6. Stacked column 
-7. Stacked area
-8. Pie 
-9. Pivot table
-10. Histogram 
+- Line
+- Bar
+- Column
+- Area
+- Stacked bar
+- Stacked column 
+- Stacked area
+- Pie 
+- Pivot table
+- Histogram 
 
 > If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/vsts-extension-samples).
-Once downloaded, go to the `charts` folder, then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
+Once downloaded, go to the `charts` folder, and then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
 The extension contains sample chart widgets.  
 
 ## How to organize your code 
 
-For the purposes of this tutorial, we'll be creating a widget and adding a chart to it. 
+For the purposes of this tutorial, we create a widget and add a chart to it. 
 To do so, in the `home` folder for your project, create a `chart.html` file with the following contents: 
 
 ### HTML file
@@ -131,10 +133,10 @@ In the `home` folder of your project, create your [extension manifest file](../d
 }
 ```
 
-Before uploading this extension, you'll need to update the `publisher` to yours. 
+Before uploading this extension, you must update the `publisher` to yours. 
 
 Put the following code snippets into a `chart.js` file in a `scripts` folder, so that the path is `home/scripts/chart.js`.
-Then follow [the packaging and publishing instructions](../publish/overview.md) to publish your extension.
+Then, follow [the packaging and publishing instructions](../publish/overview.md) to publish your extension.
 
 ## Charts
 
@@ -191,7 +193,7 @@ Here, the chart's size is defined in `hostOptions`. The series property is an ar
 For pie charts, we also have some special options that are defined by the `specializedOptions` property. Here, we're explicitly enabling data labels for the pie chart. 
 We also need to set the size of the pie chart by specifying its outer diameter. 
 
-Rendering the chart requires a container to render it in, the chart options, and a call to the Chart Service to get initialize the chart and render it. 
+Rendering the chart requires a container to render it in, the chart options, and a call to the Chart Service to get initialize the chart and render it. For more information on chart options, see [vss-web-extension-sdk/typings/charts](https://github.com/microsoft/vss-web-extension-sdk/blob/master/typings/charts.d.ts).
 
 ### Stacked area chart
 
