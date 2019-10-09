@@ -462,7 +462,19 @@ steps:
     versionEnvVar: version
 ```
 
-For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).
+To publish a NuGet package as an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed and add this snippet:
+
+```yaml
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    publishVstsFeed: '<feedName>'
+    allowPackageConflicts: true
+```
+
+For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  
 
 ### Deploy a web app
 
