@@ -1,0 +1,56 @@
+### YamlMime:Landing
+
+title: Developer resources documentation
+summary: Use command line tools, REST APIS, client SDKs and more to interface with Azure DevOps programmatically.  
+
+metadata:
+  title: Azure DevOps Developer resources documentation 
+  description: Use command line interface, REST APIs, typescript tools and more to interface with Azure DevOps .
+  ms.service: visual-studio-online
+  ms.prod: devops 
+  ms.technology: devops-reference
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 10/09/2019 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Command Line Interface (CLI)
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get Started with Azure DevOps CLI
+            url: ../cli/get-started.md
+          - text: Sign in with a Personal Access Token (PAT)
+            url: .../cli/log-in-via-pat.md
+          - text: Configure policies
+            url: ../cli/policy-configuration-file.md
+  - title: Azure DevOps REST API Reference
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get started
+            url: /rest/api/azure/devops/index
+          - text: Build
+            url: /rest/api/azure/devops/build/index
+          - text: Core
+            url: ./rest/api/azure/devops/core/index
+          - text: Git
+            url: /rest/api/azure/devops/git/index
+          - text: Work item tracking
+            url: /rest/api/azure/devops/wit/index
+  - title: Azure DevOps Demo generator
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: About the Demo generator
+            url: ../demo-gen/index.md
+          - text: Get started
+            url: ../demo-gen/use-demo-generator-v2.md
+
+

@@ -1,5 +1,4 @@
-- name: Azure DevOps CLI
-  href: index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
+
 - name: Get started
   href: get-started.md 
 - name: How-to Guides
