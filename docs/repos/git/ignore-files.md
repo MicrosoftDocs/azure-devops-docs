@@ -134,7 +134,8 @@ Resume tracking files with:
 </pre>
 
 Alternatively, you can use the following flags, however, these are primarily for marking files that should not be changed by developers:
-Disable changetracking
+
+Disable change tracking
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git update-index --assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
