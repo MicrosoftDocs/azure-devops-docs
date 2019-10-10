@@ -21,7 +21,7 @@ Suppose our organization requires running a virus scanner on all build outputs t
 Instead of requiring every pipeline author to remember to add that step, we'll create a decorator which automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
 
-## Author a pipeline decorator
+## Author a pipeline decorator 
 
 This example assumes you're familiar with the [contribution models](contributions-overview.md).
 
