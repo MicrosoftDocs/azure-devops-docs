@@ -23,28 +23,77 @@
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
+    items:
+    - name: SharePoint Dashboards (Deprecated)
+      tocHref: /azure/devops/report/sharepoint-dashboards/
+      topicHref: /azure/devops/report/index
   - name: Notifications
     tocHref: /azure/devops/notifications/
     topicHref: /azure/devops/organizations/index
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
+  - name: Developer resources
+    tocHref: /azure/devops/developer-resources/
+    topicHref: /azure/devops/developer-resources/index
+  - name: Collaborate
+    tocHref: /azure/devops/project/
+    topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/index
+    - name: Public projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/project/index
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
+    items:
+    - name: Discover & manage extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Integrate applications
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Service Hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/marketplace-extensibility/index
   - name: Configure & customize
-    tocHref: /azure/devops/organizations/
+    tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
+    items:
+    - name: Projects
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/index
+    - name: Process
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/organizations/index
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
+    items:
+    - name: Organizations
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/security-access-billing/index
+    - name: Billing
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/security-access-billing/index
+    - name: Security
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/security-access-billing/index
   - name: Azure DevOps Server Administration
     tocHref: /azure/devops/server/
     topicHref: /azure/devops/server/admin/admin-quick-ref
-    items:
-  - name: SharePoint Dashboards (Deprecated)
-    tocHref: /azure/devops/report/sharepoint-dashboards/
-    topicHref: /azure/devops/report/index
   - name: Project Server Integration (Deprecated)
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
