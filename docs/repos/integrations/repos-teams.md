@@ -122,19 +122,19 @@ The following steps demonstrate how to customize subscriptions.
 
 ### Example: Get notifications only when my team is in the reviewer list for a PR
 
- > [!div class="mx-imgBorder"]
-    > ![Add subscription screen 1](./_img/integrations-teams/Filters-1.png)
+> [!div class="mx-imgBorder"]
+> ![Add subscription screen 1](./_img/integrations-teams/Filters-1.png)
 
-   > [!div class="mx-imgBorder"]
-    > ![Add subscription screen 2](./_img/integrations-teams/Filters-2.png)
+> [!div class="mx-imgBorder"]
+> ![Add subscription screen 2](./_img/integrations-teams/Filters-2.png)
 
-   > [!div class="mx-imgBorder"]
-    > ![Add subscription screen 3 with filters](./_img/integrations-teams/Filters-3.png)
+> [!div class="mx-imgBorder"]
+> ![Add subscription screen 3 with filters](./_img/integrations-teams/Filters-3.png)
     
     
 > [!NOTE]
->* All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
->* For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
+> * All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
+> * For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
 
 ## Previews of pull request URLs
 
@@ -159,7 +159,7 @@ The following table lists all the `/azrepos commands` you can use in your Slack 
 
 If you are experiencing the following errors when using the Azure Repos App, follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](./_shared/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Repos signout` command and then run the `@Azure Repos signin` command in the channel where the Azure Repos app for Microsoft Teams is installed.
 
