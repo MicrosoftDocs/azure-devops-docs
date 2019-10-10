@@ -21,7 +21,7 @@ As a pipeline decorator author, you can use this context to make decisions about
 
 Pipeline resources are available on the `resources` object.
 
-### Repositories
+### Repositories 
 
 Currently, there is only one key: `repositories`.
 `repositories` is a map from repo ID to information about the repository.
