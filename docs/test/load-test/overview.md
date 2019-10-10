@@ -94,7 +94,7 @@ If you use code based tests for load testing and .NET is your platform of choice
 and [Micro Focus Load Runner](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview) are options to consider.
 
 In addition, extensions from several load test vendors such as [SOASTA](https://marketplace.visualstudio.com/items?itemName=SOASTA.SOASTA-Extension)
-(now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=apicasystem.apica-loadtest), and
+(now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=ApicaSystems.apica-loadtest), and
 [Load Impact](https://marketplace.visualstudio.com/items?itemName=julienstroheker.loadimpact) are available in the Azure DevOps and Azure marketplace.
 
 
