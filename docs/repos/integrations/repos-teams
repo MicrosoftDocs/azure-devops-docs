@@ -21,7 +21,7 @@ in or when a pull request (PR) is created, updated or merged. The app supports m
 Team Foundation Version Control (TFVC) repositories.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](_img/integrations-slack/notifications.png)
+> ![Notifications image](_img/integrations-teams/notifications.png)
 
 Read this article to learn how to: 
 
@@ -49,7 +49,7 @@ Visit the App store in Microsoft Teams and search for the Azure Repos app. Upon 
 displays as shown in the following image. Use the @azure repos handle to start interacting with the app.
    
     > [!div class="mx-imgBorder"]
-    > ![Welcome message](./_img/integrations-slack/welcome-message.png)
+    > ![Welcome message](./_img/integrations-teams/welcome.png)
 
 
 ## Connect the Azure Repos app to your repositories
@@ -57,7 +57,14 @@ displays as shown in the following image. Use the @azure repos handle to start i
 1.	Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
    
     > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-slack/sign-in.png)
+    > ![Sign in prompt image ](./_img/integrations-teams/signin.png)
+
+   > [!div class="mx-imgBorder"]
+    > ![Sign in prompt image ](./_img/integrations-teams/signin1.png)
+
+   > [!div class="mx-imgBorder"]
+    > ![Sign in prompt image ](./_img/integrations-teams/SignInComplete.png)
+
 
 2.	To start monitoring a repository, use the following command inside a channel:
 
@@ -83,7 +90,7 @@ displays as shown in the following image. Use the @azure repos handle to start i
 **Pull request created** event. For TFVC repositories, the channel is subscribed to **Code checked in** event.
 
     > [!div class="mx-imgBorder"]
-    > ![Default subscriptions creation message](./_img/integrations-slack/subscriptions-added-confirmation.png)
+    > ![Default subscriptions creation message](./_img/integrations-teams/subscribe.png)
 
 
 ## Manage subscriptions
@@ -98,12 +105,12 @@ This command lists all the current subscriptions for the channel and allows you 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
 > [!div class="mx-imgBorder"]
-> ![View subscriptions](./_img/integrations-slack/subscriptions-list.png)
+> ![View subscriptions](./_img/integrations-teams/subscriptions.png)
 
 ## Using filters to only get notifications that you want
 When a user subscribes to a repository using `@azure repos subscribe` command, a default subscription is created with no filters applied.
 Often, users need to customize these subscriptions to only be notified when certain conditions are met. 
-For example, users may want to get notified only when PRs have a specific reviewer. 
+For example, users may want to get notified only when PRs have a particular group added as reviewer. 
 
 The following steps demonstrate how to customize subscriptions.
 
@@ -115,14 +122,16 @@ The following steps demonstrate how to customize subscriptions.
 
 ### Example: Get notifications only when my team is in the reviewer list for a PR
 
-> [!div class="mx-imgBorder"]
-> ![Reviewer has my team](./_img/integrations-slack/reviewer-filters.png)
+ > [!div class="mx-imgBorder"]
+    > ![Add subscription screen 1](./_img/integrations-teams/Filters-1.png)
 
-### Example: Notify when merge attempt fails due to a policy violation
+   > [!div class="mx-imgBorder"]
+    > ![Add subscription screen 2](./_img/integrations-teams/Filters-2.png)
 
-> [!div class="mx-imgBorder"]
-> ![Merge attempt unsuccessful – due to policy violation](./_img/integrations-slack/merge-filters.png)
-
+   > [!div class="mx-imgBorder"]
+    > ![Add subscription screen 3 with filters](./_img/integrations-teams/Filters-3.png)
+    
+    
 > [!NOTE]
 >* All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
 >* For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
@@ -132,7 +141,7 @@ The following steps demonstrate how to customize subscriptions.
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-slack/url-unfurling.png)
+> ![URL unfurling](./_img/integrations-teams/urlpreview.png)
 
 ## Command reference
 
