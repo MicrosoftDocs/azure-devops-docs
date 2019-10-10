@@ -10,17 +10,17 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 04/15/2019
+ms.date: 10/10/2019
 ---
 
 # How To: Use Code Search
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
-By using Code Search you can:
+By using Code Search you can do the following tasks:
 
 * **Search across all of your projects**:
-  Search in your own codebase and your partner teams' codebases. Use cross-project 
+  Search in your own codebase and your partner teams' code bases. Use cross-project 
   searches over all the code in your Azure DevOps or TFS instance to search 
   across your enterprise's entire codebase. Narrow your search by using project, repository, 
   path, file name, and other filter operators. Use wildcards to widen your search and 
@@ -45,6 +45,7 @@ By using Code Search you can:
 
 
 <a name="syntaxdetails"></a>
+
 ## Syntax for simple and compound searches
 
 Use simple search strings for words or phrases. The default is a whole word search; 
@@ -172,7 +173,25 @@ according to the following rules:
   escape character `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
 
+### Search based on proximity
+
+You can search for files based on the term *vicinity* using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance. 
+
+For example:
+
+- BEFORE: `term1` BEFORE `term2` - returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.
+- AFTER: `term1` AFTER `term2`: returns the same results as `term2` BEFORE `term1`.
+- NEAR: `term1` NEAR `term2`: returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.
+
+> [!NOTE]
+> - This feature is currently available only for Azure DevOps Services customers and not TFS.
+> - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported. 
+> - You can combine proximity operators with other filters and operators to narrow your search.
+> - There isn't support to customize the token distance, which defaults to five. 
+
+
 <a name="codefunctions"></a>
+
 ## Functions to find specific types of code
 
 As you type in the search box, select functions and keywords from the drop-down 
@@ -229,6 +248,7 @@ C#, C, C++, Java, and Visual Basic.NET code.
 | Union | **union:**_findThis_ ```Deprecated in July 2019```|
 
 <a name="locationfunctions"></a>
+
 ## Functions to select projects, repositories, paths, and files
 
 Functions make it easy to narrow the search to specified locations, 
@@ -248,6 +268,7 @@ Narrow the search to specific files using the `file` or `ext` filters:
 
 * `QueueJobsNow file:queueRegister*` finds all occurrences of the word **QueueJobsNow** in all 
   files where the filename starts with **queueRegister**.
+  Use quotes to find files without extensions: file:"queueRegister" finds all files with the name QueueRegister without an extension.
 * `QueueJobsNow ext:cs` finds all occurrences of the word **QueueJobsNow** in only C# source files.
 * A plain text search string that does not include file type functions 
   will also find files where the string matches part of the filename.
