@@ -161,12 +161,12 @@ If you are experiencing the following errors when using the Azure Repos App, fol
 
 [!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
 
-In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
+In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Repos signout` command and then run the `@Azure Repos signin` command in the channel where the Azure Repos app for Microsoft Teams is installed.
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 
 > [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](_img/troubleshooting/consent-page-teams.png)
+> ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-teams.png)
 
 If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsTeamsApps@microsoft.com`.
 
