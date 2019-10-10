@@ -1,30 +1,27 @@
 ---
 title: Link work items to deployments
 titleSuffix: Azure Boards
-description: Link your work item to releases to visualize what deployments your work item has been deployed too
-ms.custom: work-items, releases
+description: Link your work item to releases to visualize which deployments include your work items
+ms.custom: boards-work-items  
 ms.technology: devops-agile
 ms.prod: devops
-ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
+ms.assetid: 
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
-author: danhellem
+author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 08/26/2019
+ms.date: 10/10/2018
 --- 
 
 # Link work items to deployments
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released.
+The release deployments control shows release information for those work items that have been associated to a commit which is part of a build being released. To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
 > [!NOTE]  
-> The release deployments control currently works with classic release pipelines and with Azure DevOps Services (cloud) only.  If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see XXX. 
-
-
-- [Learn how to associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)
+> The release deployments control currently works with classic release pipelines and with Azure DevOps Services (cloud) only. If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
 
 ## Configure release
 

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 03/20/2018
+ms.date: 10/10/2018
 ---
 
 
@@ -105,6 +105,8 @@ You can perform the following tasks with the Hosted XML process model.
 </tr>
 </tbody>
 </table>
+
+<a id="add-support-wit" />
 
 ## Add release deployment support to a work item type
 
