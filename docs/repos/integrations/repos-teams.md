@@ -57,10 +57,10 @@ displays as shown in the following image. Use the @azure repos handle to start i
 1.	Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
    
     > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/signin.png)
+    > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
 
    > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/signin1.png)
+    > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
 
    > [!div class="mx-imgBorder"]
     > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
@@ -105,7 +105,7 @@ This command lists all the current subscriptions for the channel and allows you 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
 > [!div class="mx-imgBorder"]
-> ![View subscriptions](./_img/integrations-teams/subscriptions.png)
+> ![View subscriptions](./_img/integrations-teams/Subscriptions.png)
 
 ## Using filters to only get notifications that you want
 When a user subscribes to a repository using `@azure repos subscribe` command, a default subscription is created with no filters applied.
@@ -141,7 +141,7 @@ The following steps demonstrate how to customize subscriptions.
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-teams/url-preview.png)
+> ![URL unfurling](./_img/integrations-teams/URL-Preview.png)
 
 ## Command reference
 
