@@ -100,15 +100,39 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ::: moniker range="< azure-devops"
 
-1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **ASP.NET Core**. This template automatically adds the tasks you need to build the code in the sample repository.
+#### [YAML](#tab/yaml/)
+You can use a YAML to build your .NET Core project on Azure DevOps Server. 
 
-2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+```yaml
+trigger:
+- master
+
+pool: Default
+
+variables:
+  buildConfiguration: 'Release'
+
+# do this before all your .NET Core tasks
+steps:
+- task: DotNetCoreInstaller@2
+  inputs:
+    version: '2.2.402' # replace this value with the version that you need for your project
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+```
+
+#### [Classic](#tab/classic/)
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **Empty Pipeline**. 
+
+2. In the task catalog, find and add the **.NET Core** task. This task will run `dotnet build` to build the code in the sample repository.
+
+3. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
    You now have a working pipeline that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, **Edit** it.
+4. When you're ready to make changes to your pipeline, **Edit** it.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+5. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
