@@ -21,7 +21,7 @@ in or when a pull request (PR) is created, updated or merged. The app supports m
 Team Foundation Version Control (TFVC) repositories.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](_img/integrations-teams/notifications.png)
+> ![Notifications image](_img/integrations-teams/NotificationsCards.png)
 
 Read this article to learn how to: 
 
@@ -63,7 +63,7 @@ displays as shown in the following image. Use the @azure repos handle to start i
     > ![Sign in prompt image ](./_img/integrations-teams/signin1.png)
 
    > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/SignInComplete.png)
+    > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
 2.	To start monitoring a repository, use the following command inside a channel:
@@ -90,7 +90,7 @@ displays as shown in the following image. Use the @azure repos handle to start i
 **Pull request created** event. For TFVC repositories, the channel is subscribed to **Code checked in** event.
 
     > [!div class="mx-imgBorder"]
-    > ![Default subscriptions creation message](./_img/integrations-teams/subscribe.png)
+    > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
@@ -141,7 +141,7 @@ The following steps demonstrate how to customize subscriptions.
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-teams/urlpreview.png)
+> ![URL unfurling](./_img/integrations-teams/url-preview.png)
 
 ## Command reference
 
