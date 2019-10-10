@@ -1,5 +1,5 @@
 ---
-title: See release deployment information from the work item form
+title: Link work items to deployments
 titleSuffix: Azure Boards
 description: Link your work item to releases to visualize what deployments your work item has been deployed too
 ms.custom: work-items, releases
@@ -18,12 +18,11 @@ ms.date: 08/26/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-> [!NOTE]  
-> The deployments control currently works with classic release pipelines only.
->
-> This feature is currently in preview and subject to change.
+The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released.
 
-The deployments control will show release information for only those work items that have been associated to a commit that is part of the build being released.
+> [!NOTE]  
+> The release deployments control currently works with classic release pipelines and with Azure DevOps Services (cloud) only.  If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see XXX. 
+
 
 - [Learn how to associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)
 
