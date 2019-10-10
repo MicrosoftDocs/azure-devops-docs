@@ -20,7 +20,7 @@ ms.date: 10/10/2019
 By using Code Search you can do the following tasks:
 
 * **Search across all of your projects**:
-  Search in your own codebase and your partner teams' codebases. Use cross-project 
+  Search in your own codebase and your partner teams' code bases. Use cross-project 
   searches over all the code in your Azure DevOps or TFS instance to search 
   across your enterprise's entire codebase. Narrow your search by using project, repository, 
   path, file name, and other filter operators. Use wildcards to widen your search and 
@@ -187,7 +187,7 @@ For example:
 > - This feature is currently available only for Azure DevOps Services customers and not TFS.
 > - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported. 
 > - You can combine proximity operators with other filters and operators to narrow your search.
-> - There isn't support to customize the token distance, which is defaults to five. 
+> - There isn't support to customize the token distance, which defaults to five. 
 
 
 <a name="codefunctions"></a>
