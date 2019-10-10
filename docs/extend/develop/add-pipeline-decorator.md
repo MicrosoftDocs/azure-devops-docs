@@ -21,7 +21,7 @@ Suppose our organization requires running a virus scanner on all build outputs t
 Instead of requiring every pipeline author to remember to add that step, we'll create a decorator which automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
 
-## Author a pipeline decorator 
+## Author a pipeline decorator
 
 This example assumes you're familiar with the [contribution models](contributions-overview.md).
 
@@ -61,7 +61,7 @@ Let's take a look at the properties and what they are used for:
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. The two targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. In this example, we use only `post-job-tasks` because we want to run at the end of the job. |
+| `targets` | Decorators can run before your job, after, or both. The two targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. In this example, we use only `post-job-tasks` because we want to run at the end of the job . |
 | `properties` | The only property required is a `template`. The template is a YAML file included in your extension which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
 
 This extension contributes a pipeline decorator.
