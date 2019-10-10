@@ -110,7 +110,7 @@ You can perform the following tasks with the Hosted XML process model.
 
 ## Add release deployment support to a work item type
 
-The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. 
+The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/work-items/work-item-deployments-control.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -119,11 +119,12 @@ The release deployments control shows release information for only those work it
 </Group>
 ```
 
-This syntax has been been added to the following work item type definitions of these default process templates.
+This syntax has been been added to the following work item type definitions of the default process templates.
 
-|Agile|Basic|Scrum|CMMI |
-|-----|-----|-----|-----|    
-- Bug<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Task<br/>- Test Case<br/>- User Story<br/> |- Issue<br/>- Task<br/>- Test Case<br/> |Bug<br/> - Epic<br/> - Feature<br/> - Impediment<br/> - Product Backlog Item<br/> - Task<br/> - Test Case |- Bug<br/> - Change Request<br/> - Epic<br/> - Feature<br/> - Issue<br/> - Requirement<br/> - Review<br/> - Risk<br/> - Task|
+> [!div class="mx-tdBreakAll"]  
+> |Agile|Basic|Scrum|CMMI |  
+> |-----|-----|-----|-----|  
+> |- Bug<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Task<br/>- Test Case<br/>- User Story|- Issue<br/>- Task<br/>- Test Case|Bug<br/>- Epic<br/>- Feature<br/> - Impediment<br/> - Product Backlog Item<br/>- Task<br/>- Test Case|- Bug<br/>- Change Request<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Requirement<br/>- Review<br/>- Risk<br/>- Task|
 
 
 <a id="hosted-xml-sequence"></a>
