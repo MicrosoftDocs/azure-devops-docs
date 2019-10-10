@@ -179,14 +179,13 @@ You can search for files based on the term *vicinity* using proximity operators:
 
 For example:
 
-- BEFORE: < term1 > BEFORE < term2 > - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them.
-- AFTER: < term1 > AFTER < term2 >: returns the same results as < term2 > BEFORE < term1 >.
-- NEAR: < term1 > NEAR < term2 >: returns all files where term1 is within five token distance from term2 in any direction. 
-< term1 > NEAR < term2 > returns the same results as < term1 > BEFORE < term2 > OR < term2 > BEFORE < term1 >.
+- BEFORE: `term1` BEFORE `term2` - returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.
+- AFTER: `term1` AFTER `term2`: returns the same results as `term2` BEFORE `term1`.
+- NEAR: `term1` NEAR `term2`: returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.
 
 > [!NOTE]
 > - This feature is currently available only for Azure DevOps Services customers and not TFS.
-> - Wildcards and composite proximity searches, such as <term1> BEFORE <term2> AFTER <term3> aren't supported. 
+> - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported. 
 > - You can combine proximity operators with other filters and operators to narrow your search.
 > - There isn't support to customize the token distance, which is defaults to five. 
 
