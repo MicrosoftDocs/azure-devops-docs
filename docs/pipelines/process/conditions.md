@@ -143,7 +143,8 @@ jobs:
   dependsOn: Foo
   condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check if true
   steps:
-    - script: echo "Job Foo ran and doThing is true."```
+    - script: echo "Job Foo ran and doThing is true."
+```
 
 ## Q&A
 
