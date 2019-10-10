@@ -3,5 +3,5 @@
   topicHref: /azure/devops/index
   items: 
   - name: Security, access, & billing
-    tocHref: /azure/devops/security-access-billing/
+    tocHref: /azure/devops/organizations/security/
     topicHref: /azure/devops/security-access-billing/index
