@@ -56,41 +56,41 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 1. Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
    
-  > [!div class="mx-imgBorder"]
-  > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
+   > [!div class="mx-imgBorder"]
+   > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
 
-  > [!div class="mx-imgBorder"]
-  > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
 
-  > [!div class="mx-imgBorder"]
-  > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
+   > [!div class="mx-imgBorder"]
+   > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
 2. To start monitoring a repository, use the following command inside a channel:
 
-  ```
-  @azure repos subscribe [repository url]
-  ```
+   ```
+   @azure repos subscribe [repository url]
+   ```
 
-  The repository URL can be to any page within your repository that has your repository name.
+   The repository URL can be to any page within your repository that has your repository name.
 
-  For example, for Git repositories, use:
+   For example, for Git repositories, use:
 
-  ```
-  @azure repos subscribe https://dev.azure.com/myorg/myproject/_git/myrepository
-  ```
+   ```
+   @azure repos subscribe https://dev.azure.com/myorg/myproject/_git/myrepository
+   ```
 
-  For TFVC repositories, use:
+   For TFVC repositories, use:
 
-  ```
-  @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
-  ```
+   ```
+   @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
+   ```
 
 3. The subscribe command gets you started with a default subscription. For Git repositories, the channel gets subscribed to 
 **Pull request created** event. For TFVC repositories, the channel is subscribed to **Code checked in** event.
 
-  > [!div class="mx-imgBorder"]
-  > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
+   > [!div class="mx-imgBorder"]
+   > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
