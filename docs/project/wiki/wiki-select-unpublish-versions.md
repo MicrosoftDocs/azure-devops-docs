@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: sunar
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/14/2019  
+ms.date: 10/11/2019  
 ---
 
 # Publish, unpublish, and select version of a wiki
@@ -56,7 +56,10 @@ To select a wiki version, choose the version from the branch options from the **
 
 ## Unpublish a published wiki
 
-If you no longer want a repository to be published as a wiki, you can choose to unpublish it from **Wiki**. Unpublishing a wiki unpublishes all versions of the repository that you have published previously.
+If you no longer want a repository to be published as a wiki, you can choose to unpublish it from **Wiki**. 
+
+> [!NOTE]
+> Unpublishing a wiki unpublishes the entire code wiki, which includes all versions of the repository that you have published previously.
 
 1. Select the wiki you want to unpublish, open the context menu, and select **Unpublish wiki**.
 
