@@ -46,51 +46,51 @@ access policies for your organization](../../organizations/accounts/change-appli
 ## Add the Azure Repos app to your team in Microsoft Teams
 
 Visit the App store in Microsoft Teams and search for the Azure Repos app. Upon installing, a welcome message from the app 
-displays as shown in the following image. Use the @azure repos handle to start interacting with the app.
+displays as shown in the following image. Use the `@azure repos` handle to start interacting with the app.
    
-    > [!div class="mx-imgBorder"]
-    > ![Welcome message](./_img/integrations-teams/welcome.png)
+> [!div class="mx-imgBorder"]
+> ![Welcome message](./_img/integrations-teams/welcome.png)
 
 
 ## Connect the Azure Repos app to your repositories
 
-1.	Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
+1. Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
    
-    > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
+  > [!div class="mx-imgBorder"]
+  > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
 
-   > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
+  > [!div class="mx-imgBorder"]
+  > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
 
-   > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
+  > [!div class="mx-imgBorder"]
+  > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
-2.	To start monitoring a repository, use the following command inside a channel:
+2. To start monitoring a repository, use the following command inside a channel:
 
-    ```
-    @azure repos subscribe [repository url]
-    ```
+  ```
+  @azure repos subscribe [repository url]
+  ```
 
-    The repository URL can be to any page within your repository that has your repository name.
+  The repository URL can be to any page within your repository that has your repository name.
 
-    For example, for Git repositories, use:
+  For example, for Git repositories, use:
 
-    ```
-    @azure repos subscribe https://dev.azure.com/myorg/myproject/_git/myrepository
-    ```
+  ```
+  @azure repos subscribe https://dev.azure.com/myorg/myproject/_git/myrepository
+  ```
 
-    For TFVC repositories, use:
+  For TFVC repositories, use:
 
-    ```
-    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
-    ```
+  ```
+  @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
+  ```
 
 3. The subscribe command gets you started with a default subscription. For Git repositories, the channel gets subscribed to 
 **Pull request created** event. For TFVC repositories, the channel is subscribed to **Code checked in** event.
 
-    > [!div class="mx-imgBorder"]
-    > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
+  > [!div class="mx-imgBorder"]
+  > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
@@ -108,6 +108,7 @@ When adding subscriptions, you can customize the notifications you get by using 
 > ![View subscriptions](./_img/integrations-teams/Subscriptions.png)
 
 ## Using filters to only get notifications that you want
+
 When a user subscribes to a repository using `@azure repos subscribe` command, a default subscription is created with no filters applied.
 Often, users need to customize these subscriptions to only be notified when certain conditions are met. 
 For example, users may want to get notified only when PRs have a particular group added as reviewer. 
