@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2019
+ms.date: 10/11/2019
 ---
 
 
@@ -239,6 +239,86 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end 
+
+::: moniker range="azure-devops"
+
+## Show team information in the Azure DevOps CLI
+
+From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list) command.
+
+| [Show team details](#show-details) | [List team members](#list-members)
+
+<a id="show-details" /> 
+
+### Show team details
+
+You can view details about a team in your organization with the [az devops team show](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).
+
+```CLI
+az devops team show --team
+                    [--org]
+                    [--project]
+```
+
+#### Parameters
+
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example
+
+The following command shows information about the team in your organization named **FabrikamTeam** and returns the details in table format.  
+
+```CLI
+az devops team show --team FabrikamTeam --output table
+
+ID                                    Name          Description
+------------------------------------  ------------  -------------------------------------------------
+a48cb46f-7366-4f4b-baf5-b3632398ed1e  FabrikamTeam  The default project team. Was Fabrikam Fiber Team
+``` 
+
+<a id="list-members" /> 
+
+### List team members
+
+You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+
+```CLI
+az devops team list-member --team
+                           [--org]
+                           [--project]
+                           [--skip]
+                           [--top]
+```
+
+#### Parameters
+
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **skip**: Optional. Number of members to skip.
+- **top**: Optional. Maximum number of members to return.
+
+#### Example
+
+The following command lists the first five members of the team named **FabrikamTeam** and returns the details in table format.  
+
+```CLI 
+az devops team list-member --team FabrikamTeam --top 5 --output table
+
+ID                                    Name               Email
+------------------------------------  -----------------  --------------------------
+3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  Maria Antunes 	 fabrikamfiber1@hotmail.com
+8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d  Dmytro Melnik	 fabrikamfiber3@hotmail.com
+d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Sarah Ferreira	 fabrikamfiber4@hotmail.com
+bd30c189-db0f-4dd6-9418-5d8b41dc1754  Maksims Perkons	 fabrikamfiber5@hotmail.com
+35b1952b-ca8c-45b5-a60c-d6b0086aa584  Hugo Karklins	 contoso@contoso.com
+``` 
+
+::: moniker-end 
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
 
 ## Next steps
 
