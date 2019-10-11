@@ -131,17 +131,29 @@ See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
 
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file:
+If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x:
 
 ```yaml
-# do this before all your .NET Core tasks
+ steps:
+    - task: UseDotNet@2
+      inputs:
+        version: '3.0.x'
+
+    - task: UseDotNet@2
+      inputs:
+        version: '2.2.x'
+        packageType: runtime
+```
+
+If you are installing on a Windows agent, it will already have a .Net Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true`: 
+
+```yaml
 steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    packageType: 'sdk' # other option is 'runtime', use for multi-targeting
     version: 3.0.x
-# ...
+    performMultiLevelLookup: true
 ```
 
 > [!TIP]
@@ -402,10 +414,40 @@ steps:
 
 ::: moniker-end
 
-> [!TIP]
-> If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
-> Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
+### Collect code coverage metrics with Coverlet
+If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+
+Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+
+To run tests and publish code coverage with Coverlet, add this snippet to your `azure-pipelines.yml` file:
+
+```yaml
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: Refit.Tests/Refit.Tests.csproj
+    arguments: -c $(BuildConfiguration) --settings $(System.DefaultWorkingDirectory)/CodeCoverage.runsettings --collect:"XPlat Code Coverage" -- RunConfiguration.DisableAppDomain=true
+  displayName: Run Tests
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path . dotnet-reportgenerator-globaltool
+  displayName: Install ReportGenerator tool
+  
+- script: reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"Cobertura"
+  displayName: Create reports
+  
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
+
+```
+ 
 ## Package and deliver your code
 
 After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package, 
@@ -462,16 +504,14 @@ steps:
     versionEnvVar: version
 ```
 
-To publish a NuGet package as an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed and add this snippet:
+To publish a NuGet package as an Azure Artifacts feed, add this snippet:
 
 ```yaml
 steps:
-- task: NuGetCommand@2
-  displayName: 'NuGet push'
-  inputs:
-    command: push
-    publishVstsFeed: '<feedName>'
-    allowPackageConflicts: true
+- task: NuGetAuthenticate@0
+  #inputs:
+    #nuGetServiceConnections: MyOtherOrganizationFeed, MyExternalPackageRepository # Optional
+    #forceReinstallCredentialProvider: false # Optional
 ```
 
 For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  
