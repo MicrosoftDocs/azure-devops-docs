@@ -168,7 +168,7 @@ This YAML example demonstrates the **install** command:
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>
-<tr><td><code>chartPath</code><br/>(Chart Path)</td><td>(Required) Path to the chart to install. This can be a path to a packaged chart or a path to an unpacked chart directory. For example, if <b>./redis</b> is specified the task will run <b>helm install ./redis</b></td></tr>
+<tr><td><code>chartPath</code><br/>(Chart Path)</td><td>(Required) Path to the chart to install. This can be a path to a packaged chart or a path to an unpacked chart directory. For example, if <b>./redis</b> is specified the task will run <b>helm install ./redis</b>. If you are consuming a chart which is published as an artifact then the path will be <b>$(System.DefaultWorkingDirectory)/ARTIFACT-NAME/Charts/CHART-NAME</b></td></tr>
 <tr><td><code>version</code><br/>(Version)</td><td>(Optional) Specify the exact chart version to install. If this is not specified, the latest version is installed. Set the version on the chart to this semver version.</td></tr>
 <tr><td><code>destination</code><br/>(Destination)</td><td>(Optional) Specify values in a YAML file or a URL.<br/>Default value: $(Build.ArtifactStagingDirectory)</td></tr>
 <tr><td><code>updatedependency</code><br/>(Update Dependency)</td><td>(Optional) Run helm dependency update before installing the chart. Update dependencies from <b>requirements.yaml</b> to the <b>charts/</b> directory before packaging.<br/>Default value: false</td></tr>
