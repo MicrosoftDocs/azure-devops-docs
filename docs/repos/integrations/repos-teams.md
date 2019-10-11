@@ -145,9 +145,9 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 ## Command reference
 
-The following table lists all the `/azrepos commands` you can use in your Slack channel
+The following table lists all the Azure repos commands you can use in your Teams channel
 
-|Slash command	| Functionality |
+|Command	| Functionality |
 | -------------------- |----------------|
 | @azure repos subscribe [repository url]	| Subscribe to a repository to receive notifications |
 | @azure repos subscriptions	| Add or remove subscriptions for this channel |
@@ -172,5 +172,5 @@ If these steps don't resolve your authentication issue, please reach out to us a
 
 ## Related articles
 
-- [Azure Boards with Slack](https://aka.ms/AzureBoardsTeamsIntegration)
-- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesTeamsIntegration)
+- [Azure Boards with Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+- [Azure Pipelines with Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
