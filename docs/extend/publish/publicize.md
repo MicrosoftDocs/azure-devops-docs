@@ -20,7 +20,7 @@ The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops
 
 This page covers the required steps to make your integration or extension listing publicly available in the Marketplace. 
 
-* Learn more about developing an [extension for Azure DevOps](../index.md)
+* Learn more about developing an [extension for Azure DevOps](../overview.md)
 * Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
 * Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
 

@@ -39,6 +39,9 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
+
+> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
