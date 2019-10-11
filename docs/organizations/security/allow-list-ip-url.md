@@ -115,6 +115,8 @@ If your organization use security measures, like a firewall or a proxy server, a
 - https://go.microsoft.com
 - https://graph.windows.net
 - https://app.vssps.visualstudio.com
+- https://aadcdn.msauth.net
+- https://aadcdn.msftauth.net
 
 ### A more general list of URLs for signing into Azure DevOps and Azure
 
