@@ -897,91 +897,126 @@ A deployment completed
 
 #### Sample payload
 ```json
-{
-  "id": "c3e52c57-187a-45c4-abe2-184a48291bad",
-  "eventType": "ms.vss-release.deployment-completed-event",
-  "publisherId": "rm",
-  "scope": "all",
-  "message": {
-    "text": "Deployment of release Release-1 on environment Dev Succeeded.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded."
-  },
-  "detailedMessage": {
-    "text": "Deployment of release Release-1 on environment Dev Succeeded. Time to deploy: 0.11 minutes.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded. Time to deploy: 0.11 minutes.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded. Time to deploy: 0.11 minutes."
-  },
-  "resource": {
-    "environment": {
-      "id": 5,
-      "releaseId": 0,
-      "name": "Dev",
-      "status": "succeeded",
-      "variables": {},
-      "preDeployApprovals": [],
-      "postDeployApprovals": [],
-      "preApprovalsSnapshot": {
-        "approvals": [],
-        "approvalOptions": {
-          "requiredApproverCount": 0,
-          "releaseCreatorCanBeApprover": true
-        }
-      },
-      "postApprovalsSnapshot": {
-        "approvals": []
-      },
-      "deploySteps": [],
-      "rank": 1,
-      "definitionEnvironmentId": 1,
-      "queueId": 1,
-      "environmentOptions": {
-        "emailNotificationType": "OnlyOnFailure",
-        "emailRecipients": "release.environment.owner;release.creator",
-        "skipArtifactsDownload": false,
-        "timeoutInMinutes": 0,
-        "enableAccessToken": false
-      },
-      "demands": [],
-      "conditions": [],
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "workflowTasks": [
-        {
-          "taskId": "00000000-0000-0000-0000-000000000000",
-          "version": "*",
-          "name": "Deploy Website to Azure",
-          "enabled": true,
-          "alwaysRun": false,
-          "continueOnError": false,
-          "timeoutInMinutes": 0,
-          "definitionType": null,
-          "inputs": {
-            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-            "WebSiteName": "$(webAppName)",
-            "WebSiteLocation": "Southeast Asia",
-            "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-          }
-        }
-      ],
-      "deployPhasesSnapshot": [],
-      "owner": {
-        "id": "4247c988-4060-4712-abca-ff44681dd78a",
-        "displayName": "Chuck Reinhart"
-      },
-      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-      "schedules": [],
-      "release": {
-        "id": 1,
-        "name": "Release-1",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
-      }
+"environment": {
+            "id": 5,
+            "releaseId": 0,
+            "name": "Dev",
+            "status": "succeeded",
+            "variables": {},
+            "variableGroups": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "preApprovalsSnapshot": {
+                "approvals": [],
+                "approvalOptions": {
+                    "requiredApproverCount": 0,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": "beforeGates"
+                }
+            },
+            "postApprovalsSnapshot": {
+                "approvals": []
+            },
+            "deploySteps": [],
+            "rank": 1,
+            "definitionEnvironmentId": 1,
+            "queueId": 1,
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": false,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [],
+            "modifiedOn": "2016-01-21T08:19:17.26Z",
+            "workflowTasks": [],
+            "deployPhasesSnapshot": [],
+            "owner": {
+                "displayName": "Chuck Reinhart",
+                "id": "4247c988-4060-4712-abca-ff44681dd78a"
+            },
+            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+            "schedules": [],
+            "release": {
+                "id": 1,
+                "name": "Release-1",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "releaseDefinition": {
+                "id": 1,
+                "name": "Fabrikam.CD",
+                "projectReference": null,
+                "_links": {}
+            },
+            "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            }
+        },
+        "project": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Fabrikam"
+        },
+        "deployment": {
+            "id": 0,
+            "release": {
+                "id": 1,
+                "name": "Release-1",
+                "artifacts": [],
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "releaseDefinition": null,
+            "releaseEnvironment": {
+                "id": 5,
+                "name": "Dev",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "projectReference": null,
+            "definitionEnvironmentId": 0,
+            "attempt": 1,
+            "reason": "none",
+            "deploymentStatus": "succeeded",
+            "operationStatus": "Undefined",
+            "requestedBy": null,
+            "startedOn": "2016-01-21T08:19:17.26Z",
+            "completedOn": "2016-01-21T08:25:17.26Z",
+            "lastModifiedOn": "0001-01-01T00:00:00",
+            "lastModifiedBy": null,
+            "conditions": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "_links": {}
+        },
+        "comment": null,
+        "data": {}
     },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
-    }
-  },
   "resourceVersion": "3.0-preview.1",
   "resourceContainers": {
     "collection": {
@@ -1010,100 +1045,136 @@ A deployment was started
 #### Sample payload
 ```json
 {
-  "id": "055285c7-9d7a-4ca0-bbfe-5eb0529d312e",
-  "eventType": "ms.vss-release.deployment-started-event",
-  "publisherId": "rm",
-  "scope": "all",
-  "message": {
-    "text": "Deployment of release Release-1 to environment Dev started.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4'>Dev</a> started.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4) started."
-  },
-  "detailedMessage": {
-    "text": "Deployment of release Release-1 on environment Dev started.\\r\\nTrigger: Manual",
-    "html": "Deployment on environment <a href='Dev'>http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4</a> started.\\r\\nTrigger: Manual",
-    "markdown": "Deployment on environment [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4) started.\\r\\nTrigger: Dev"
-  },
-  "resource": {
-    "environment": {
-      "id": 5,
-      "releaseId": 0,
-      "name": "Dev",
-      "status": "queued",
-      "variables": {},
-      "preDeployApprovals": [],
-      "postDeployApprovals": [],
-      "preApprovalsSnapshot": {
-        "approvals": [],
-        "approvalOptions": {
-          "requiredApproverCount": 0,
-          "releaseCreatorCanBeApprover": true
-        }
-      },
-      "postApprovalsSnapshot": {
-        "approvals": []
-      },
-      "deploySteps": [],
-      "rank": 1,
-      "definitionEnvironmentId": 1,
-      "queueId": 1,
-      "environmentOptions": {
-        "emailNotificationType": "OnlyOnFailure",
-        "emailRecipients": "release.environment.owner;release.creator",
-        "skipArtifactsDownload": false,
-        "timeoutInMinutes": 0,
-        "enableAccessToken": false
-      },
-      "demands": [],
-      "conditions": [],
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "workflowTasks": [
-        {
-          "taskId": "00000000-0000-0000-0000-000000000000",
-          "version": "*",
-          "name": "Deploy Website to Azure",
-          "enabled": true,
-          "alwaysRun": false,
-          "continueOnError": false,
-          "timeoutInMinutes": 0,
-          "definitionType": null,
-          "inputs": {
-            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-            "WebSiteName": "$(webAppName)",
-            "WebSiteLocation": "Southeast Asia",
-            "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-          }
-        }
-      ],
-      "deployPhasesSnapshot": [],
-      "owner": {
-        "id": "4247c988-4060-4712-abca-ff44681dd78a",
-        "displayName": "Chuck Reinhart"
-      },
-      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-      "schedules": [],
-      "release": {
-        "id": 5,
-        "name": "Release-1",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
-      }
+    "id": "1f04688d-98bb-4206-850f-43389f4c8cb4",
+    "eventType": "ms.vss-release.deployment-started-event",
+    "publisherId": "rm",
+    "message": {
+        "text": "Deployment of release Release-5 to stage Dev started.",
+        "html": "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
+        "markdown": "Deployment on stage [Dev](http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
     },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
-    }
-  },
-  "resourceVersion": "3.0-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    "detailedMessage": {
+        "text": "Deployment of release Release-5 on stage Dev started.\r\nTrigger: Manual",
+        "html": "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
+        "markdown": "Deployment on stage [Release-1](http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
     },
-    "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-    }
-  },
-  "createdDate": "2016-09-19T13:03:28.4539019Z"
+    "resource": {
+        "environment": {
+            "id": 5,
+            "releaseId": 0,
+            "name": "Dev",
+            "status": "queued",
+            "variables": {},
+            "variableGroups": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "preApprovalsSnapshot": {
+                "approvals": [],
+                "approvalOptions": {
+                    "requiredApproverCount": 0,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": "beforeGates"
+                }
+            },
+            "postApprovalsSnapshot": {
+                "approvals": []
+            },
+            "deploySteps": [],
+            "rank": 1,
+            "definitionEnvironmentId": 1,
+            "queueId": 1,
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": false,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [],
+            "modifiedOn": "2016-01-21T08:19:17.26Z",
+            "workflowTasks": [],
+            "deployPhasesSnapshot": [],
+            "owner": {
+                "displayName": "Chuck Reinhart",
+                "id": "4247c988-4060-4712-abca-ff44681dd78a"
+            },
+            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+            "schedules": [],
+            "release": {
+                "id": 5,
+                "name": "Release-5",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            }
+        },
+        "release": {
+            "id": 0,
+            "name": null,
+            "status": "undefined",
+            "createdOn": "0001-01-01T00:00:00",
+            "modifiedOn": "0001-01-01T00:00:00",
+            "modifiedBy": null,
+            "createdBy": null,
+            "environments": [],
+            "variables": {},
+            "variableGroups": [],
+            "artifacts": [],
+            "releaseDefinition": {
+                "id": 1,
+                "name": "Fabrikam.CD",
+                "projectReference": null,
+                "_links": {}
+            },
+            "releaseDefinitionRevision": 0,
+            "reason": "none",
+            "releaseNameFormat": null,
+            "keepForever": false,
+            "definitionSnapshotRevision": 0,
+            "logsContainerUrl": null,
+            "_links": {},
+            "tags": [],
+            "triggeringArtifactAlias": null,
+            "projectReference": null
+        },
+        "project": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Fabrikam"
+        }
+    },
+    "resourceVersion": "3.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+        },
+        "account": {
+            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+        },
+        "project": {
+            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+        }
+    },
+    "createdDate": "2019-10-10T17:49:39.157Z"
 }
 ```
 
