@@ -131,7 +131,7 @@ See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
 
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x:
+If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x, add this snippet:
 
 ```yaml
  steps:
@@ -145,7 +145,7 @@ If you need a version of the .NET Core SDK that isn't already installed on the M
         packageType: runtime
 ```
 
-If you are installing on a Windows agent, it will already have a .Net Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true`: 
+If you are installing on a Windows agent, it will already have a .NET Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true` in this snippet: 
 
 ```yaml
 steps:
