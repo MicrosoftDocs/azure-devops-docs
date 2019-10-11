@@ -32,7 +32,7 @@ you require. Supported results formats include [CTest](https://cmake.org/cmake/h
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
 
-Other built-in tasks such as [Visual Studio Test task](vstest.md) automatically publish
+Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
 test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
 [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.Net Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
 provide publishing results as an option within the task.

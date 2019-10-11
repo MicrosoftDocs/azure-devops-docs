@@ -127,6 +127,24 @@ steps:
 - script: echo I did a thing
   condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
 ```
+### Use the output variable from a job in a condition in a subsequent job
+
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-in-script). 
+
+```yaml
+jobs:
+- job: Foo
+  steps:
+    - script: |
+        echo "This is job Foo."
+        echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
+      name: DetermineResult
+- job: Bar
+  dependsOn: Foo
+  condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check if true
+  steps:
+    - script: echo "Job Foo ran and doThing is true."
+```
 
 ## Q&A
 

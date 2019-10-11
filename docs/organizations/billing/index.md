@@ -84,7 +84,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 ## Other resources
 
 - [Get Started using Azure DevOps](../../get-started/index.yml)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Azure DevOps Server Administration](/azure/devops/server/server/index)
 - [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 

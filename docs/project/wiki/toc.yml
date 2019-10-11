@@ -1,5 +1,3 @@
-- name: Wikis
-  href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: "About Wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
 - name: Provisioned vs published wikis 

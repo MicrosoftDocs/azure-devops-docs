@@ -82,10 +82,10 @@ ms.topic: include
 | Task   | Versions  |
 |--------|-----------|
 | ![icon](../test/_img/appcentertest.png) [App Center Test task](../test/app-center-test.md) - Test app packages with Visual Studio App Center. | Azure Pipelines, TFS 2017 and newer |
-| [Cloud-based Apache JMeter Load Test task (Deprecated)](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
+| ![icon](../test/_img/run-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test task (Deprecated)](../test/run-jmeter-load-test.md) - Runs the Apache JMeter load test in cloud | Azure Pipelines |
 | ![icon](../test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test task (Deprecated)](../test/cloud-based-load-test.md) - Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| [Cloud-based Web Performance Test task (Deprecated)](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
-| [Container Structure Test Task](../test/container-structure-test-task.md) - Test container structure by container task and integrate test reporting into your build and release pipelines | Azure Pipelines |
+| ![icon](../test/_img/cloud-based-web-performance-test.png) [Cloud-based Web Performance Test task (Deprecated)](../test/cloud-based-web-performance-test.md) - Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../test/_img/container-structure-test-task.png) [Container Structure Test Task](../test/container-structure-test-task.md) - Test container structure by container task and integrate test reporting into your build and release pipelines | Azure Pipelines |
 | ![icon](../test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results task](../test/publish-code-coverage-results.md) - Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/publish-test-results-icon.png) [Publish Test Results task](../test/publish-test-results.md) - Publish Test Results to integrate test reporting into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../test/_img/run-functional-tests-icon.png) [Run Functional Tests task](../test/run-functional-tests.md) - Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines | Azure Pipelines, TFS 2015 RTM and newer |
@@ -155,11 +155,10 @@ ms.topic: include
 | ![icon](../tool/_img/gotool.png) [Go Tool Installer task](../tool/go-tool.md) - Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/helminstaller.png) [Helm installer task](../tool/helm-installer.md) - Install helm on an agent machine | Azure Pipelines |
 | ![icon](../tool/_img/java.png) [Java Tool Installer task](../tool/java-tool-installer.md) - Change the version of Java | Azure Pipelines |
-| [Kubectl installer task](../tool/kubectl-installer.md) - Install kubectl on an agent machine | Azure Pipelines |
+| ![icon](../tool/_img/kubectl-installer.png) [Kubectl installer task](../tool/kubectl-installer.md) - Install kubectl on an agent machine | Azure Pipelines |
 | ![icon](../tool/_img/node.png) [Node.js Tool Installer task](../tool/node-js.md) - Find, download, and cache a specified version of Node.js and add it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/nuget.png) [NuGet Tool Installer task](../tool/nuget.md) - Find, download, and cache a specified version of NuGet and add it to the PATH | Azure Pipelines |
 | ![icon](../tool/_img/dotnet.png) [Use .NET Core task](../tool/dotnet-core-tool-installer.md) - Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH | Azure Pipelines |
-| [Use Python Version task](../tool/use-python-version.md) - Select a version of Python to run on an agent and optionally add it to PATH | Azure Pipelines |
-| [Use Ruby Version task](../tool/use-ruby-version.md) - Select a version of Ruby to run on an agent and optionally add it to PATH | Azure Pipelines |
+| ![icon](../tool/_img/use-python-version.png) [Use Python Version task](../tool/use-python-version.md) - Select a version of Python to run on an agent and optionally add it to PATH | Azure Pipelines |
+| ![icon](../tool/_img/use-ruby-version.png) [Use Ruby Version task](../tool/use-ruby-version.md) - Select a version of Ruby to run on an agent and optionally add it to PATH | Azure Pipelines |
 | ![icon](../tool/_img/vstest.png) [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) - Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data | Azure Pipelines |
-

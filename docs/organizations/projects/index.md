@@ -75,7 +75,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 ## Resources
 
 - [Get Started using Azure DevOps](../../get-started/index.yml)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Public Projects](../public/index.md)
 - [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)
 

@@ -4,7 +4,7 @@ title: Get started documentation
 summary: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
 
 metadata:
-  title: Azure DevOps Get Started Documentation
+  title: Learn how to start using Azure DevOps
   description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
   ms.service: visual-studio-online
   ms.prod: devops 
@@ -28,13 +28,13 @@ landingContent:
           - text: What is Azure DevOps?
             url: ../user-guide/what-is-azure-devops.md
           - text: What is Azure Boards?
-            url: ../boards/get-started/what-is-azure-boards.md
+            url: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: What is Azure Repos?
-            url: ../repos/get-started/what-is-repos.md
+            url: ../repos/get-started/what-is-repos.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: What is Azure Pipelines?
-            url: ../pipelines/get-started/what-is-azure-pipelines.md
-          - text: Supported features and services
-            url: ../organizations/security/get-started-stakeholder.md
+            url: ../pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+          - text: Get started as a Stakeholder
+            url: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - title: Sign up for free
     linkLists:
       - linkListType: quickstart
@@ -50,7 +50,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Connect to a project
-            url: ../organizations/projects/connect-to-projects.md
+            url: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - title: Manage your project
     linkLists:
       - linkListType: quickstart
@@ -58,15 +58,15 @@ landingContent:
           - text: Manage your project
             url: ../user-guide/project-admin-tutorial.md
           - text: Add users to a team or project
-            url: ../organizations/security/add-users-team-project.md
+            url: ../organizations/security/add-users-team-project.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Add administrators
-            url: ../organizations/security/set-project-collection-level-permissions.md
+            url: ../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
       - linkListType: concept
         links:
           - text: Default permissions and access
-            url: ../organizations/security/permissions-access.md
+            url: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Permission lookup guide
-            url: ../organizations/security/permissions-lookup-guide.md
+            url: ../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - title: Plan and track work
     linkLists:
       - linkListType: quickstart
@@ -75,8 +75,6 @@ landingContent:
             url: ../boards/get-started/plan-track-work.md
           - text: Create your backlog
             url: ../boards/backlogs/create-your-backlog.md
-          - text: Get started as a Stakeholder
-            url: ../organizations/security/get-started-stakeholder.md
   - title: Collaborate on code
     linkLists:
       - linkListType: quickstart
@@ -87,6 +85,8 @@ landingContent:
             url: ../repos/git/create-new-repo.md
           - text: Authenticate with SSH
             url: ../repos/git/use-ssh-keys-to-authenticate.md
+          - text: Search code across projects
+            url: ../project/search/code-search.md
   - title: Build and deploy your apps
     linkLists:
       - linkListType: quickstart
@@ -102,13 +102,13 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Change profile preferences
-            url: ../organizations/settings/set-your-preferences.md
+            url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Manage your notifications
-            url: ../notifications/howto-manage-personal-notifications.md
+            url: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Preview new features
-            url: ../project/navigation/preview-features.md
+            url: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Set favorites
-            url: ../project/navigation/set-favorites.md
+            url: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - title: Navigate
     linkLists:
       - linkListType: how-to-guide

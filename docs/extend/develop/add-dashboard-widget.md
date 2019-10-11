@@ -14,7 +14,7 @@ ms.date: 08/07/2019
 
 # Add a dashboard widget
 
-Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../index.md). 
+Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. In this article, learn how to create an extension with multiple widgets as contributions.
 
 This guide is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.

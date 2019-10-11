@@ -19,6 +19,10 @@
   - name: "Why use Azure Boards?"
     displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
     href: why-use-azure-boards.md
+  - name: "Area & iteration paths"
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: "About teams & Agile tools"
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Key concepts
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
     href: key-concepts.md 

@@ -561,6 +561,40 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
 
+## FAQ on New Test Plans Page
+
+### Q: How can I assign configurations to my test cases?
+**A:** You can assign configurations in two ways: 
+
+a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
+![FAQ1.1](_img/FAQ1.1.png)
+
+b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
+
+
+### Q: How can I see the configurations assigned to my test cases?
+**A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
+![FAQ2](_img/FAQ2.png)
+
+### Q: How can I edit the test case?
+**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
+![FAQ3](_img/FAQ3.png)
+
+### Q: How can I see the outcome of each test case?
+**A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
+![FAQ4](_img/FAQ4.png)
+
+### Q: How can I assign testers?
+**A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
+![FAQ5](_img/FAQ5.png)
+
+### Q: How can I view the execution history of the test case?
+**A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
+
+
+### Q: Can I select more than 1 work item while creating a requirement based suite?
+**A:** No, the requirement based suite is linked to one work item.
+
 *****
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
