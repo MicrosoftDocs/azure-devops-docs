@@ -93,7 +93,7 @@ Enter the key password for the alias and Android Keystore file.
 <tr>
 <td>apksignerArguments</td>
 <td>
-<p>(Optional) Provide any options to pass to the apksigner command line. Default is: <code>-verbose -sigalg MD5withRSA -digestalg SHA1</code>.</p>
+<p>(Optional) Provide any options to pass to the apksigner command line. Default is: <code>--verbose</code>.</p>
 <p>See the <a href="https://developer.android.com/studio/command-line/apksigner" data-raw-source="[apksigner documentation](https://developer.android.com/studio/command-line/apksigner)">apksigner documentation</a>.</p>
 </td>
 </tr>
