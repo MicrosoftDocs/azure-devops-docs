@@ -41,12 +41,10 @@ az devops wiki show --wiki myprojectwiki --open
 
 ::: moniker-end
 
-* * *
-
-::: moniker range=">= tfs-2018 <azure-devops"
+::: moniker range=">= tfs-2018 < azure-devops"
 
 [!INCLUDE [note-cli-not-supported](../../../_shared/note-cli-not-supported.md)]
 
 ::: moniker-end
 
-
+* * *
