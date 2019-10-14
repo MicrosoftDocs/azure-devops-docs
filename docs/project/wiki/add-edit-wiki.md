@@ -128,6 +128,8 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
+::: moniker range="azure-devops"
+
 To add a wiki page, enter the `az devops wiki page create` command. 
 
 > [!div class="tabbedCodeSnippets"]
@@ -169,7 +171,13 @@ Update content of page with path 'my page' in a wiki with content from a file.
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8
 ```
 
+::: moniker-end
+
+::: moniker range=">= tfs-2018 < azure-devops"
+
 [!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+
+::: moniker-end
 
 * * *
 
@@ -199,6 +207,8 @@ To delete a page, open the context menu from the tree or the one inside the page
 > Deleting a page deletes the page along with all the metadata and all its sub pages (if any) in the hierarchy.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"
 
 ### Edit wiki page
 
@@ -276,6 +286,14 @@ Delete a wiki page with path 'my wiki' in a wiki named 'myprojectwiki'.
 ```CLI
 az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 ```
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018 < azure-devops"
+
+[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+
+::: moniker-end
 
 * * *
 
