@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/10/2018
+ms.date: 10/14/2018
 --- 
 
 # Link work items to deployments
