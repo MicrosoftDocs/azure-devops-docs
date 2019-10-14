@@ -119,5 +119,5 @@ The hosted XAML build controller is no longer supported.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Try Azure Test Plans for free](try-additional-features-vs.md)
+> [Buy access to Azure DevOps Server or Azure Test Plans](try-additional-features-vs.md)
 
