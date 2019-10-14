@@ -393,7 +393,6 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../accounts/add-external-user.md" data-raw-source="[Add external users](../accounts/add-external-user.md)">Add external users</a></li>
 <li><a href="../accounts/manage-users-table-view.md" data-raw-source="[Manage user access levels](../accounts/manage-users-table-view.md)">Manage user access levels</a></li>
 <li><a href="../accounts/delete-organization-users.md" data-raw-source="[Remove users](../accounts/delete-organization-users.md)">Remove users</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
 </ul></td>
 <td>For large organizations with a sizable number of users, we recommend that you <a href="../accounts/access-with-azure-ad.md" data-raw-source="[manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md)">manage user access through Azure Active Directory</a>. For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level <strong>Users</strong> page, you can also <a href="../security/export-users-audit-log.md" data-raw-source="[export the set of users and their access levels](../security/export-users-audit-log.md)">export the set of users and their access levels</a>.  </td>
 </tr>
@@ -421,8 +420,6 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li><a href="../../marketplace/install-extension.md" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-extension.md)">Install and manage Marketplace extensions</a></li>
 <li><a href="../../marketplace/approve-extensions.md" data-raw-source="[Approve extensions](../../marketplace/approve-extensions.md)">Approve extensions</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
-<li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Change the number of paid users](../billing/buy-basic-access-add-users.md)">Change the number of paid users</a> </li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)">Grant permissions to manage extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md" data-raw-source="[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)">Uninstall or disable extensions</a></li>
 </ul></td>
