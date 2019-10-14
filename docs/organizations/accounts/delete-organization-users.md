@@ -72,7 +72,7 @@ If users no longer require access to a project or your organization, you can rem
 
 ### Remove a user 
 
-You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```CLI
 az devops user add --user
