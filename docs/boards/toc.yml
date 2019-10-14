@@ -128,6 +128,8 @@
     href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md 
+  - name: Dependency Tracker
+    href: /azure/devops/extensions/dependency-tracker/overview
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Process Customization 

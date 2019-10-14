@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: kaelli
-ms.reviewer: danhellem
+ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 06/28/2019
 ---
