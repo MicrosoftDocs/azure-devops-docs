@@ -24,7 +24,7 @@ The following image shows how an information message is displayed. Users can can
 > [!div class="mx-imgBorder"]  
 > ![Information banner](_img/banners/show-banner-info.png)   
 
-You can only manage banners using the Azure DevOps Command Line Interface (CLI), [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can only manage banners using the Azure DevOps Command Line Interface (CLI), [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 
 <!--- QUESTIONS 
@@ -38,7 +38,7 @@ Could not update the expiration date to a null value
 ## Prerequisites 
 
 - To add or manage banners, you must be a member of the Project Collection Administrators security group.  
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
 
@@ -230,7 +230,7 @@ C:\WINDOWS\system32>az devops admin banner update --id 7653f414-3c01-424f-8f84-e
 
 ## Related articles
 
-- [Get started with Azure DevOps CLI](../../cli/get-started.md)  
+- [Get started with Azure DevOps CLI](../../cli/index.md)  
 - [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner)   
 - [About projects and scaling your organization](../projects/about-projects.md)  
 

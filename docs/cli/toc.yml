@@ -1,6 +1,6 @@
 
 - name: Get started
-  href: get-started.md 
+  href: index.md 
 - name: How-to Guides
   items:
   - name: Sign in with a Personal Access Token
