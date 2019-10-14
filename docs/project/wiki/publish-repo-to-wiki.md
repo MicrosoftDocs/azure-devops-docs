@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= azure-devops-2019'
 ms.date: 05/29/2019  
