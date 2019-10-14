@@ -9,7 +9,7 @@
     #apksignerKeystorePassword: # Optional
     #apksignerKeystoreAlias: # Optional
     #apksignerKeyPassword: # Optional
-    #apksignerArguments: '-verbose -sigalg MD5withRSA -digestalg SHA1' # Optional
+    #apksignerArguments: '--verbose' # Optional
     #apksignerFile: # Optional
     #zipalign: true # Optional
     #zipalignFile: # Optional
