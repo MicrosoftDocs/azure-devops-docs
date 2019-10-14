@@ -27,7 +27,7 @@ The following types of users can join your organization for free:
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
 > [!NOTE]
-> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) depending on the [default access level](../billing/buy-basic-access-add-users.md#select-the-default-access-level-for-new-users) your organization has selected. Learn [how to add members to projects](add-team-members.md).
+> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn [how to add members to projects](add-team-members.md).
 >
 > When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
 

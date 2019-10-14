@@ -1,27 +1,25 @@
-- name: Develop Extensions
-  href: index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: What are extensions?
-  href: ./overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+  href: ./overview.md
 - name: Quickstarts
   items:
   - name: Develop a web extension
-    href: get-started/node.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: get-started/node.md
 - name: Tutorials
   items:
   - name: Create a custom pipelines task
-    href: develop/add-build-task.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: develop/add-build-task.md
   - name: Use a pipeline decorator
-    href: develop/add-pipeline-decorator.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
   - name: Azure DevOps Services extension samples
-    href: develop/samples-overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: develop/samples-overview.md
 - name: Concepts
   items:
   - name: Extensibility points
-    href: reference/targets/overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: reference/targets/overview.md
   - name: Contribution model
-    href: develop/contributions-overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+    href: develop/contributions-overview.md
 - name: How-to Guides
   items:
   - name: Develop
@@ -37,9 +35,9 @@
     - name: Add a service hook
       href: develop/add-service-hook.md
     - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
     - name: Store data and settings

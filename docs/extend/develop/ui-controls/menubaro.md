@@ -224,16 +224,7 @@ $("#btnToggle").click(function (e) {
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
-
   var menuItems = [
-    { id: "new-tab", text: "New tab", icon: "icon-info" },
-    { separator: true },
-    { id: "save-all", text: "Save all", icon: "icon-save-all" },
-    { separator: true },
-    { id: "exit", text: "Exit", noIcon: true }
-  ];
-
- var menuItems = [
     { id: "settings", text: "Settings...", icon: "icon-settings" },
     { id: "help", text: "Help", icon: "icon-help", tag: "test" } 
   ];
