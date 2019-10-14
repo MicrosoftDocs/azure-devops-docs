@@ -913,7 +913,7 @@ Removed sections per Harish Kumar Agarwal, "adds no value" 06/05/2019 chcomley
 
 Full access to **Test Plans** and load testing features requires **VS Enterprise** or **Basic + Test Plans** access. Visual Studio Test Professional, plus the test features in the web portal, are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
 
-To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
+To learn more, see [Buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md). 
 
 ::: moniker-end
 
