@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Configure & customize 
-    tocHref: /azure/devops/organizations/
+  - name: Collaborate
+    tocHref: /azure/devops/notifications/
     topicHref: /azure/devops/organizations/index

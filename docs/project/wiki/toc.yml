@@ -1,5 +1,3 @@
-- name: Wikis
-  href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: "About Wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
 - name: Provisioned vs published wikis 
@@ -20,6 +18,8 @@
     href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: How-to guides
   items:
+  - name: Manage wikis
+    href: manage-wikis.md
   - name: View Wiki history and revert
     href: wiki-view-history.md
   - name: Filter or print wiki content 

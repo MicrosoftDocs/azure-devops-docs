@@ -8,7 +8,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
-ms.date: 05/17/2019
+ms.date: 10/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -728,7 +728,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
   - Contained in the same GitHub organization as the Git repo specified above.
 
-  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. 
+    - For example, this one would be checked out: `git submodule add ../../submodule.git mymodule` 
+	- This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
 
 
 #### Authenticated submodules

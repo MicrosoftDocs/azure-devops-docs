@@ -1628,7 +1628,7 @@ pipelines\tasks\build\_img
 <p>You can <a href="../marketplace/get-vsts-extensions.md" data-raw-source="[get and quickly install extensions](../marketplace/get-vsts-extensions.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
 
 <p><b>Try Azure Test Plans for free</b></p>
-<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans for free](../billing/try-additional-features-vs.md)">start a trial for Azure Test Plans for free</a>.</p>
+<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md)"></a>.</p>
 
 
 <p><b>Get extensions for...</b></p>

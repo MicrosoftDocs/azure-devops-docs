@@ -1,4 +1,3 @@
-
 - name: Configure & customize 
   expanded: false
   href: index.yml
@@ -23,29 +22,29 @@
   - name: How-to guides
     items:
     - name: Change organization Owner
-      href: ./accounts/change-organization-ownership-vs.md
+      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Rename organization
-      href: ./accounts/rename-vsts-organization.md
+      href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete organization
-      href: ./accounts/delete-your-organization.md
+      href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Recover organization
-      href: ./accounts/recover-your-vsts-organization.md
+      href: ./accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization location
-      href: ./accounts/change-organization-location.md
+      href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add privacy policy URL
-      href: ./accounts/add-privacy-policy-url.md
+      href: ./accounts/add-privacy-policy-url.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
-      href: ./accounts/change-time-zone.md
+      href: ./accounts/change-time-zone.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add and manage banners
       href: ./settings/manage-banners.md 
   - name: Troubleshooting
     items:
     - name: Create organization
-      href: ./accounts/faq-create-organization.md
+      href: ./accounts/faq-create-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Ownership
-      href: ./accounts/faq-change-organization-ownership.md
+      href: ./accounts/faq-change-organization-ownership.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete and restore organization
-      href: ./accounts/faq-delete-restore-organization.md
+      href: ./accounts/faq-delete-restore-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Teams
   href: settings/scale/toc.yml
 - name: Notifications
@@ -96,13 +95,13 @@
     href: /rest/api/azure/devops/hooks
   - name: Processes
     href: /rest/api/azure/devops/processes/processes
-  - name: Process Templates
+  - name: Process templates
     href: /rest/api/azure/devops/processadmin/processes
   - name: Projects
     href: /rest/api/azure/devops/core/projects
   - name: Teams
     href: /rest/api/vsts/core/teams
-  - name: Work Item Types
+  - name: Work item types
     href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
   - name: API SDK reference (Deprecated)
     items:
@@ -117,7 +116,7 @@
   - name: Security, access, & billing
     href: ../security-access-billing/index.yml
   - name: Marketplace & extensibility  
-    href: ../marketplace-extensibility/index.md
+    href: ../marketplace-extensibility/index.yml
   - name: Public projects
     href: ./public/index.md
   - name: Azure Boards
