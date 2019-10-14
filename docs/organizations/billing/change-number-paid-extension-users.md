@@ -1,8 +1,8 @@
 ---
-title: Change the number of paid users for an extension
+title: Change the number of users for an extension
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Increase or decrease the number of paid users for a feature or extension as your team grows or gets smaller
+description: Increase or decrease the number of users for a feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/14/2019
+ms.date: 10/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Change the number of paid extension users for Azure DevOps
+# Change the number of extension users for Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how you can increase or decrease the number of paid users for a feature or extension, to scale with your team's needs.  
+In this article, learn how you can increase or decrease the number of users for a feature or extension, to scale with your team's needs.  
 
 ## Prerequisites
 
 You must have [access to billing](add-backup-billing-managers.md) for your organization's Azure subscription.
 
-## Change number of paid users
+## Change number of extension users
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -36,19 +36,19 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
    ![Select Users to get to extensions for users](_img/change-number-paid-extension-users/select-users-in-organization-settings.png)
 
-4. Select **Change quantity** under the paid extension you want to change.
+4. Select **Change quantity** under the extension you want to change.
 
    ![Select Change quantity](_img/change-number-paid-extension-users/change-quantity-paid-extensions.png)
 
-5. Update the total number of paid users, and then select **Continue**.
+5. Update the total number of users, and then select **Continue**.
 
-   ![Update the quantity of paid extension users](_img/_shared/update-quantity-users.png)
+   ![Update the quantity of extension users](_img/_shared/update-quantity-users.png)
 
 6. Review, and then select Confirm.
 
-   ![Confirm your updates to paid extension users](_img/_shared/confirm-update-extension-users.png)
+   ![Confirm your updates to extension users](_img/_shared/confirm-update-extension-users.png)
 
-The number of paid extension users is updated.
+The number of extension users is updated.
 
 ## Next steps
 

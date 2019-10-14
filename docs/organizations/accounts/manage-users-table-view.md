@@ -145,7 +145,6 @@ ID                                    Display Name         Email                
 
 ## Related articles
 
-* [Change number of paid extension users](../billing/buy-basic-access-add-users.md)
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
