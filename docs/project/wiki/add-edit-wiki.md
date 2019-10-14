@@ -12,7 +12,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 10/07/2019 
+ms.date: 10/14/2019 
 ---
 
 # Quickstart: Add and edit wiki pages
@@ -216,7 +216,7 @@ az devops wiki page update --path
                            [--subscription]
 ```
 
-#### Parameters
+### Parameters
 
 - **--path**: Required. Path of the wiki page.
 - **--version -v**: Required. Version (ETag) of file to edit.
@@ -226,7 +226,7 @@ az devops wiki page update --path
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
-#### Examples
+### Examples
 
 Update content of page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
@@ -257,7 +257,7 @@ az devops wiki page delete --path
                           
 ```
 
-#### Parameters
+### Parameters
 
 - **--path**: Required. Path of the wiki page.
 - **--wiki**: Required. Name or ID of the wiki.
@@ -268,7 +268,7 @@ az devops wiki page delete --path
 
 [!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
 
-#### Example
+### Example
 
 Delete a wiki page with path 'my wiki' in a wiki named 'myprojectwiki'.
 
