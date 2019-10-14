@@ -45,7 +45,7 @@ Keep the following information in mind:
 - **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
 - **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
 - **Basic** is free for the first 5 users, and paid for 6 or more users.
-- **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
+- **Basic + Test Plans** is paid only, see [Buy access to Azure DevOps Server or Azure Test Plans](try-additional-features-vs.md).
 
 ## Select the default access level for new users
 
