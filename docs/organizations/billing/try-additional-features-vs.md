@@ -46,7 +46,7 @@ If you stop paying for these users within your organization, your administrator 
 ## Buy monthly access to Azure Test Plans
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
-2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, buy [Basic + Test Plans](buy-basic-access-add-users.md). 
+2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, pay for [Basic + Test Plans users in your organization](buy-basic-access-add-users.md). 
    These users are invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans or Microsoft Test Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15).
 
 > [!NOTE]
