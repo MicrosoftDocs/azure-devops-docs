@@ -31,11 +31,17 @@ After spot checking the organization you will want to consider if you want to re
 
 ## Set up billing
 
-To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you'll need to set up billing for your organization. You can do this when you make your first purchase by selecting an Azure subscription that you'd like to use for billing. This links the subscription to your organization, so that all future purchases for your organization will use the same Azure subscription for billing.
+To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-org billing](../organizations/billing/billing-faq.md#multi-org-billing). You can then assign as many Basic users as you need to free of charge during the calendar month in which you run the import.
 
 ## Manage users and access
 
 Your organization includes 5 free users with [Basic](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) for free - they get basic features plus additional features, based on their subscription level. Add [Stakeholder](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) for free, too-they can access your work items and view your backlogs.
+
+**Behavior change** - All users will start with Stakeholder access: This change will start rolling out in the first week of Nov 2019. If you have questions or concerns, [contact us](mailto:vsc@microsoft.com).
+- **Before**: After import, users who had Basic access in TFS will start with Basic after import, and other users start with Stakeholder.
+- **After**: After import, all users will start out with free Stakeholder access.
+
+As Visual Studio subscribers log in to the organization, they are  detected. For all other users, you need to [assign paid access](../organizations/billing/buy-basic-access-add-users.md). Keep in mind, if you automate access using [group rules](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md), the rules  only apply to existing users if you [remove the direct assignments](../organizations/accounts/remove-direct-assignments.md) which were applied to users during import. 
 
 This means that you shouldn't have to take any other import steps if your identity mapping file has just 5 users with Basic access, Visual Studio subscriptions, and Stakeholder access. If you have more than 5 users with Basic access, you'll need to [pay for these users in your organization](../organizations/billing/buy-basic-access-add-users.md). Just make sure to do this before the end of the calendar month when you import. Otherwise, these users' feature access will change from Basic to Stakeholder on the 1st day of the next calendar month. To find out how many additional users you'll need to pay for, visit your organization (```https://dev.azure.com/{yourorganization}/_user```) so you can find the number of paid users that you've assigned:
 
