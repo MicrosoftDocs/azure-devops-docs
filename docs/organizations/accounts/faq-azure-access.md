@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -146,6 +146,10 @@ You can do this by adding your Microsoft account as a member to your Azure AD.
 
 A: You must be a member or have read access in those directories. Otherwise, you can add them
 [using B2B collaboration through your Azure AD administrator](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/). You can also add them by using their Microsoft accounts, or by creating new work accounts for them in your directory.
+
+### Q: What if I get an error trying to map a user to an existing member of my organization?
+
+A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/en-us/support/devops/)
 
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
@@ -289,11 +293,11 @@ Select the bolded text to see which users are affected.
 
 ### Q: What if I have over 100 users and want to connect to Azure AD?
 
-A: If you have more than 100 users, [contact support](https://azure.microsoft.com/support/devops/).
+A: If you have more than 100 users, you can still connect, however you may need to [contact support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
 
 ### Q: I have more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
-A: Currently, the in-app feature doesn't support connections for organizations with over 100 members. Please [contact support](https://azure.microsoft.com/support/devops/).
+A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won’t work beyond 100. Please [contact support](https://azure.microsoft.com/support/devops/).
 
 <a name="get-support"></a>
 
