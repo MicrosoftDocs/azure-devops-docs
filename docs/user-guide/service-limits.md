@@ -7,8 +7,8 @@ ms.technology: devops-new-user
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
 ms.manager: jillfra
 ms.date: 07/30/2019
-ms.author: danhellem
-author: danhellem
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'azure-devops'
 ---
 
