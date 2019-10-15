@@ -55,8 +55,6 @@
     href: ../admin/disable-data-warehouse.md
 - name: Reference
   items:
-  - name: Reportable fields reference 
-    href: ../../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Reporting Services reports 
     items:
     - name: Backlog Overview (Scrum)
@@ -149,9 +147,4 @@
     href: address-inaccuracies-published-for-summary-values.md
   - name: Resolve schema conflicts in the data warehouse
     href: ../admin/resolve-schema-conflicts.md
-- name: Resources
-  items:
-  - name: Change reporting attributes
-    href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Server Administration 
-    href: /azure/devops/server/server/index
+

@@ -40,7 +40,7 @@ featureFlags:
                                                         <p><a href="/azure/devops/boards/get-started/index">Azure Boards</a></p>
                                                         <p><a href="/azure/devops/pipelines/get-started/pipelines-get-started">Azure Pipelines</a></p>
                                                         <p><a href="/azure/devops/user-guide/index">Azure DevOps</a></p>
-                                                        <p><a href="/azure/devops/project/navigation/preview-features">Web portal navigation</a></p>
+                                                        <p><a href="/azure/devops/project/navigation/index">Web portal navigation</a></p>
                                                         <p><a href="/azure/devops/release-notes/index">What&#39;s new</a></p>
                                                         <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
@@ -55,10 +55,10 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Plan and track work</h3>
-                                                        <p><a href="/azure/devops/boards/work-items/quick-ref">Work Items</a></p>
-                                                        <p><a href="/azure/devops/boards/boards/index">Boards (Kanban)</a></p>
-                                                        <p><a href="/azure/devops/boards/backlogs/index">Backlogs</a></p>
-                                                        <p><a href="/azure/devops/boards/sprints/index">Sprints (Scrum)</a></p>
+                                                        <p><a href="/azure/devops/boards/work-items/about-work-items">Work Items</a></p>
+                                                        <p><a href="/azure/devops/boards/boards/kanban-overview">Boards (Kanban)</a></p>
+                                                        <p><a href="/azure/devops/boards/backlogs/backlogs-overview">Backlogs</a></p>
+                                                        <p><a href="/azure/devops/boards/sprints/scrum-overview">Sprints (Scrum)</a></p>
                                                         <p><a href="/azure/devops/boards/queries/query-index-quick-ref">Queries</a></p>
                                                         <p><a href="/azure/devops/organizations/settings/work/inheritance-process-model">Process customization</a></p>
                                                         <p><a href="/azure/devops/boards/plans/index">Plans (Agile at scale)</a></p>
@@ -109,9 +109,9 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Reporting</h3>
                                                         <p><a href="/azure/devops/report/dashboards/quick-ref">Dashboards, Charts, Reports, &amp; Widgets</a></p>
-                                                        <p><a href="/azure/devops/report/powerbi/index">Power BI Integration</a></p>
-                                                        <p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
-                                                        <p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports (Legacy)</a></p>
+                                                        <p><a href="/azure/devops/report/powerbi/overview">Power BI Integration</a></p>
+                                                        <p><a href="/azure/devops/report/extend-analytics/quick-ref">Extend Analytics with OData</a></p>
+                                                        <p><a href="/azure/devops/report/sql-reports/reporting-services-reports">SQL Server Reports (Legacy)</a></p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -35,6 +35,12 @@
     href: ../reference/xml/support-rollup-of-work-and-other-fields.md
   - name: Work item field index  
     href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Reportable fields reference 
+    href: ../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Change reporting attributes
+    href: ../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Server Administration 
+    href: /azure/devops/server/server/index
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
   - name: Power BI Documentation
