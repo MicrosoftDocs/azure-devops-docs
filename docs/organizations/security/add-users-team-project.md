@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2019
+ms.date: 10/14/2019
 ---
 
 
@@ -46,7 +46,61 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+
+#### [Preview page](#tab/preview-page) 
+
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+
+2. Choose **Project Settings** and then **Permissions**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project groups](_img/permissions/project-permisions-s154.png)
+
+1. Under **Groups**, choose one of the following options:
+   - **Readers**: To add users who require read-only access to the project, choose .
+   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+
+   Here we choose the **Contributors** group.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Security page, Contributors group](_img/add-users/open-contributors-groups-s154-new.png) 
+
+1. Next, choose the **Members** tab.
+
+   By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
+
+    > [!TIP]
+    > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
+
+1. Choose **Add** to add a user or a user group.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Security page, Contributors group, Members page, Add button](_img/add-users/add-users-to-contributors-s154.png) 
+
+2. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your requirements.
+
+	![Add users and group dialog](_img/add-users/invite-members-contributors-s154.png)  
+
+   > [!NOTE]
+   > The first time you add a user or group to Azure DevOps,
+   > you can't browse to it or check the friendly name.
+   > After the identity has been added, you can just enter the friendly name.
+
+	Choose **Save** when done. 
+
+3. You may customize user permissions for other functionality in the project. For example, in [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+
+   > [!NOTE]
+   > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+
+
+#### [Current page](#tab/current-page) 
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -57,9 +111,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 1. Under **Groups**, choose one of the following options:
-   * To add users who require read-only access to the project, choose **Readers**.
-   * To add users who contribute fully to this project or who have been granted Stakeholder access, choose **Contributors**.
-   * For users who need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Readers**: To add users who require read-only access to the project, choose .
+   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 1. Next, choose the **Members** tab.
 
@@ -84,16 +138,66 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just enter the friendly name.
 
-2. In **Identities**, specify the name of the user or group you want to add.
+	Choose **Save changes** when complete. 
 
-3. Depending on the user, you may customize their permissions for other functionality in the project. For example, in [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+3. (Optional) You can customize a users permissions for other functionality in the project. For example, in [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 ::: moniker-end
 
+
+::: moniker range="azure-devops-2019"
+
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+
+2. Choose **Project Settings** and then **Security**.
+
+	*To see the full image, click to expand*.
+
+	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+
+1. Under **Groups**, choose one of the following options:
+   - **Readers**: To add users who require read-only access to the project, choose .
+   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+
+1. Next, choose the **Members** tab.
+
+   Here we choose the **Contributors** group.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
+
+   By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
+
+    > [!TIP]
+    > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
+
+1. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+
+2. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
+
+	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+
+   > [!NOTE]
+   > The first time you add a user or group to Azure DevOps,
+   > you can't browse to it or check the friendly name.
+   > After the identity has been added, you can just enter the friendly name.
+
+	Choose **Save changes** when complete. 
+
+3. (Optional) You can customize a users permissions for other functionality in the project. For example, in [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+
+   > [!NOTE]
+   > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+
+::: moniker-end
+
+
 ::: moniker range="<= tfs-2018"
+
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
@@ -101,9 +205,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 2. Choose **Security** and under **Groups**, choose one of the following options:
-   * To add users who require read-only access to the project, choose **Readers**.
-   * To add users who contribute fully to this project, choose **Contributors**.
-   * For users who need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   - **Readers**: To add users who require read-only access to the project, choose .
+   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 3. Next, choose the **Members** tab.
 
@@ -128,9 +232,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just enter the friendly name.
 
-6. In **Identities**, specify the name of the user or group you want to add.
-
-7. You may want to customize user permissions for other functionality within the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+7. (Optional) You may want to customize user permissions for other functionality within the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
