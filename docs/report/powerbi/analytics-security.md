@@ -18,7 +18,7 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-To use [Power BI for Azure DevOps](index.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
+To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
 To edit an Analytics view or connect to an Analytics view in Power BI, you must have permissions for that view. 
 
