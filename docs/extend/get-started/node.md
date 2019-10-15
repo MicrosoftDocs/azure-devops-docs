@@ -187,8 +187,14 @@ You're now ready to package your extension and publish (upload) it to the Market
    ```
    tfx extension create
    ```
-
-3. Once this completes you see a message indicating your extension has been successfully packaged:
+   
+   Should you be missing tfx (the command run is unrecognised), Install the tfx-cli package by running installation:
+   ```
+   npm install vss-web-extension-sdk --save
+   ```
+   Once the installation completes, re-run the original command in this step again.
+   
+4. Once this completes you see a message indicating your extension has been successfully packaged:
    ```
    === Completed operation: create extension ===
    - VSIX: C:\my-first-extension\AnnetteNielsen.my-first-extension-1.0.0.vsix
