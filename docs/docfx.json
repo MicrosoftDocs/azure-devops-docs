@@ -75,7 +75,7 @@
         "report/powerbi/**": ">= azure-devops-2019",
         "report/sql-reports/**": "<= azure-devops-2019",
         "reference/tfs-ps-sync/**": "<= tfs-2015",
-        "reference/witadmin/**": "<= azure-devops-2019"
+        "reference/witadmin/**": "<= azure-devops-2019",
         "reference/mapping/**": "<= azure-devops-2019"
       },
       "ROBOTS":{
