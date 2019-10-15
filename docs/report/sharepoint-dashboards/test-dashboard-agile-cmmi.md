@@ -8,6 +8,7 @@ ms.assetid: 701fd381-fff0-4508-9316-852a45b6afb4
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---
 

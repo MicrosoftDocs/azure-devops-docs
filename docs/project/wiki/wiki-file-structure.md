@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
 ms.date: 09/19/2019  
