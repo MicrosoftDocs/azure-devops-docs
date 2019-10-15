@@ -80,6 +80,4 @@ If you're just starting out, [Query index quick reference](query-index-quick-ref
 - [Kanban](../boards/index.md)
 - [Scrum](../sprints/index.md)
 - [Work item customization](../../reference/index.md)
-- [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)   
-- [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
-  
+
