@@ -144,7 +144,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.BuildNumber</td>
-<td>The name of the completed build. You can specify the <a href="/azure/devops/pipelines/process" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
+<td>The name of the completed build. You can specify the <a href="/azure/devops/pipelines/process/run-number.md" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
 A typical use of this variable is to make it part of the label format, which you specify on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository tab](../repos/index.md)">repository tab</a>.
 <br><br>
 
