@@ -482,7 +482,7 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 ### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
 
-You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it into the version and run number. 
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it into the major and minor run numbers. 
 
 ```yaml
 trigger:
@@ -492,10 +492,10 @@ trigger:
         - master
 steps:
 - bash: |
-    MAJOR_BUILD = $BUILD_BUILDNUMBER | cut -d "." -f1
-    RUN = $BUILD_BUILDNUMBER | cut -d "." -f2
-    echo $MAJOR_BUILD
-    echo $RUN
+    echo $BUILD_BUILDNUMBER | cut -d "." -f1
+   ech $BUILD_BUILDNUMBER | cut -d "." -f2
+    echo $MAJOR_RUN
+    echo $MINOR_RUN
 ```
 
 <!-- ENDSECTION -->
