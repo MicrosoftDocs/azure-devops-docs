@@ -73,9 +73,10 @@
         "report/excel/**": "<= tfs-2017",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sharepoint-dashboards/**": "<= tfs-2017",
         "report/sql-reports/**": "<= azure-devops-2019",
-        "work/tfs-ps-sync/**": "<= tfs-2015"
+        "reference/tfs-ps-sync/**": "<= tfs-2015",
+        "reference/witadmin/**": "<= azure-devops-2019"
+        "reference/mapping/**": "<= azure-devops-2019"
       },
       "ROBOTS":{
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"

@@ -173,7 +173,7 @@ featureFlags:
                                                         <p><a href="/azure/devops/organizations/projects/index">Manage projects</a></p>
                                                         <p><a href="/azure/devops/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a></p>
                                                         <p><a href="/azure/devops/organizations/security/index">Security &amp; identity</a></p>
-                                                        <p><a href="/azure/devops/reference/index">Customization</a></p>
+                                                        <p><a href="/azure/devops/reference/customize-work">Customization</a></p>
                                                         <p><a href="/azure/devops/organizations/accounts/index">Manage organizations</a></p>
                                                         <p><a href="/azure/devops/billing/index">Billing</a></p>
                                                         <p><a href="/azure/devops/notifications/index">Manage notifications</a></p>
