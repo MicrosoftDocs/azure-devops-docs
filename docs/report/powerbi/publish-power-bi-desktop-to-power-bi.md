@@ -19,7 +19,7 @@ ms.date: 11/01/2018
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
 
-1. If using an [Analytics View](what-are-analytics-views.md) , verify that the view is Shared and not Private.
+1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
 2. Open the **Power BI Desktop** file with your data.  
 
@@ -70,7 +70,7 @@ At this point, the data will update on your scheduled basis using the credential
 
 ## Related articles
 
-- [Analytics](index.md)  
+- [About Power BI integration](overview.md)  
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
