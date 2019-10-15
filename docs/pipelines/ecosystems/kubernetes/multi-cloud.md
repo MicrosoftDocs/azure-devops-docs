@@ -123,4 +123,4 @@ jobs:
 ```
 
 > [!NOTE]
-> When using the service account option, [ensure that a Rolebinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
+> When using the service account option, [ensure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding). This grants permissions in the `edit` `ClusterRole` to the desired service account. A RoleBinding is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
