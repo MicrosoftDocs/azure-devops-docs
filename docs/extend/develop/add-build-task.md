@@ -398,10 +398,11 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
-
 >[!NOTE]
 >The **publisher** here must be changed to your publisher name. If you would like to create a publisher now, go to
-[create your publisher](#createpublisher) for instructions> [!IMPORTANT]
+[create your publisher](#createpublisher) for instructions.
+
+> [!IMPORTANT]
 > Extension authors must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version.
 .  
 
