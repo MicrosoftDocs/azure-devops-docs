@@ -11,13 +11,25 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 08/22/2019
+ms.date: 10/14/2019
 ---
 
 # Backlogs, portfolios, and Agile project management 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
+
+::: moniker range=">= tfs-2017"
+With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
+::: moniker-end
+
+If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. If you want to add another product backlog, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).
+
+## Use backlogs
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -261,7 +273,7 @@ From these views, you can reparent items, both those that you own and those owne
 However, you can't reorder items that another team owns.  
 
 This enables management teams to focus on high level features and epics, and development teams 
-to focus on just those backlog items they're responsible to deliver. 
+to focus on just those backlog items they're responsible to deliver.
 
 To make this work for you, you'll need to [add teams and set their area paths](../../organizations/settings/add-teams.md). 
 For example, you can create a team structure similar to this one with two management and three development teams.
@@ -289,7 +301,6 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-
 [!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Try this next  
@@ -301,7 +312,9 @@ If you're just getting started, see [Start using Azure Boards](../get-started/in
 - [Web portal navigation](../../project/navigation/index.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md)  
 - [About work items](../work-items/about-work-items.md)  
-
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [Agile culture](/azure/devops/learn/agile/agile-culture) 
 
 
  

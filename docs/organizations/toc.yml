@@ -79,12 +79,26 @@
   items:
   - name: Set test retention policies
     href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+- name: Microsoft Project Mapping file (Deprecated)
+  href: ../reference/mapping/toc.yml
+- name: Configure Features Wizard (Deprecated)
+  items:
+  - name: Configure features after an upgrade
+    href: ../reference/configure-features-after-upgrade.md
+  - name: New features added through feature enablement
+    href: ../reference/new-features-added.md
+  - name: Add features manually
+    href: ../reference/add-features-manually.md
+  - name: Additional configuration options
+    href: ../reference/additional-configuration-options.md
+  - name: Update a customized process template to access new features
+    href: ../reference/update-customized-process-template.md
+  - name: When upgrading from TFS 2008 or TFS 2010
+    href: ../reference/upgrade-tfs-2008-or-2010.md
 - name: Reference
   items:
   - name: Naming restrictions
     href: ./settings/naming-restrictions.md
-  - name: Features index
-    href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths

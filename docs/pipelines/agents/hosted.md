@@ -30,15 +30,16 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
-| Image | Classic Editor Pool | YAML VM Image Label | Included Software |
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *Hosted Windows 2019 with VS 2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
-| Windows Server 2016 with Visual Studio 2017 | *Hosted VS2017* | `vs2017-win2016` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
-| Windows Server 2012 R2 with Visual Studio 2015 | *Hosted* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
-| Windows Server Core 1803 (*for running Windows containers*) | *Hosted Windows Container* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
-| Ubuntu 16.04 | *Hosted Ubuntu 1604* | `ubuntu-latest` OR `ubuntu-16.04` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *Hosted macOS* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
-| macOS X High Sierra 10.13 | *Hosted macOS High Sierra* |   `macOS-10.13` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md)
+| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
+| Windows Server 2012 R2 with Visual Studio 2015 | *vs2015-win2012r2* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
+| Windows Server Core 1803 (*for running Windows containers*) | *win1803* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1804-README.md)
+| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md)
+| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
+| macOS X High Sierra 10.13 | *macOS-10.13* |   `macOS-10.13` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
 
 Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 

@@ -88,7 +88,7 @@ Access levels control which features are available to users. Permissions control
 
 ### Update a user
 
-You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```CLI
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
@@ -119,7 +119,7 @@ ID                                    Display Name         Email                
 
 ### Show users
 
-You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
+You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```CLI
 az devops user show --user [--org]
