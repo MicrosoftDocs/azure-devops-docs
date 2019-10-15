@@ -11994,6 +11994,16 @@
       "source_path": "docs/reference/index.md",
       "redirect_url": "/azure/devops/reference/customize-work",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/dashboards/index.md",
+      "redirect_url": "/azure/devops/report/dashboards/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/sql-reports/index.md",
+      "redirect_url": "/azure/devops/report/sql-reports/reporting-services-reports",
+      "redirect_document_id": false
     }
   ]
 }

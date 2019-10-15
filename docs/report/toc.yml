@@ -3,9 +3,9 @@
   href: index.yml
 - name: Reporting roadmap 
   href: powerbi/reporting-roadmap.md
-- name: Dashboards, Charts, Reports, & Widgets   
+- name: Dashboards, charts, reports, & widgets   
   href: dashboards/toc.yml  
-- name: Power BI Integration 
+- name: Power BI integration 
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
