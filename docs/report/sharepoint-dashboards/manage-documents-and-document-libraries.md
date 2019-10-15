@@ -8,6 +8,7 @@ ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
+monikerRange: '< tfs-2018'
 ms.topic: conceptual
 ---
 

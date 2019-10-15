@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
-monikerRange: '>=tfs-2013'
+monikerRange: '>= tfs-2013'
 ms.topic: tutorial
 ---
 
