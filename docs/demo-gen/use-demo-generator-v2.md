@@ -9,7 +9,7 @@ ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.date: 10/10/2019
 ---
-# Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator
+# Get started creating and populating demo Azure DevOps Services projects
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
