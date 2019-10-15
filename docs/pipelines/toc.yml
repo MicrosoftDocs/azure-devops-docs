@@ -86,7 +86,7 @@
       displayName: helm
     - name: Multi-cloud deployments
       href: ecosystems/kubernetes/multi-cloud.md
-      displayName: kubernetes, multicloud, aks, gke, eks
+      displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
     - name: Deployment strategies
       href: ecosystems/kubernetes/deployment-strategies.md 
       displayName: canary, strategy, kubernetes, aks, gke, eks
