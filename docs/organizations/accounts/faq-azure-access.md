@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/14/2019
+ms.date: 10/15/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -201,6 +201,10 @@ A: When users are disabled or removed from your directory, they can no longer ac
 - [Connect your organization to Azure AD](connect-organization-to-aad.md)
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)
 - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
+
+### Q: How can I manage multiple organizations that are backed by Azure AD?
+
+A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Manage multiple organizations backed by Azure AD](connect-organization-to-azure-ad.md#manage-multiple-organizations-backed-by-azure-ad).
 
 <a name="connect-o365-azure-ad"></a>
 
