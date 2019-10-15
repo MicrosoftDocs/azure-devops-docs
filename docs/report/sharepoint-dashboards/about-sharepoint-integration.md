@@ -9,7 +9,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 ms.date: 09/28/2017
 ms.topic: overview
-monikerRange: '<= azure-devops-2019'
+monikerRange: '<= tfs-2018'
 ---
 
 # About SharePoint integration  

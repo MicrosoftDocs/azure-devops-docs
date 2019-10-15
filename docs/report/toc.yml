@@ -9,6 +9,12 @@
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
+- name: Project portal & process guidance
+  items:
+  - name: Configure or add a project portal
+    href: ./sharepoint-dashboards/configure-or-add-a-project-portal.md 
+  - name: Configure or redirect process guidance
+    href: ./sharepoint-dashboards/configure-or-redirect-process-guidance.md 
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
 - name: SharePoint Integration (Deprecated)  
