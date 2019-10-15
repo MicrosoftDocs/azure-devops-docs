@@ -11959,6 +11959,11 @@
       "source_path": "docs/organizations/billing/buy-basic-plus-test-plans.md",
       "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cli/get-started.md",
+      "redirect_url": "/azure/devops/cli/index",
+      "redirect_document_id": false
     }
   ]
 }
