@@ -1,5 +1,5 @@
 ---
-title: Run number
+title: Run (build) number
 ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: reference
@@ -15,11 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Run number
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-You can customize how your pipeline runs are numbered.
+You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
