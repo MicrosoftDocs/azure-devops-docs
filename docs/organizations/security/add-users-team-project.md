@@ -374,18 +374,18 @@ az devops team list-member --team
 
 #### Example
 
-The following command lists the first five members of the team named **FabrikamTeam** and returns the details in table format.  
+The following command lists the first five members of the team named **Fabrikam Team** and returns the details in table format.  
 
 ```CLI 
 az devops team list-member --team "Fabrikam Team" --top 5 --output table
 
 ID                                    Name               Email
 ------------------------------------  -----------------  --------------------------
-3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  Maria Antunes 	 fabrikamfiber1@hotmail.com
-8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d  Dmytro Melnik	 fabrikamfiber3@hotmail.com
-d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Sarah Ferreira	 fabrikamfiber4@hotmail.com
-bd30c189-db0f-4dd6-9418-5d8b41dc1754  Maksims Perkons	 fabrikamfiber5@hotmail.com
-35b1952b-ca8c-45b5-a60c-d6b0086aa584  Hugo Karklins	 contoso@contoso.com
+3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  Christie Church    fabrikamfiber1@hotmail.com
+19d9411e-9a34-45bb-b985-d24d9d87c0c9  Johnnie McLeod     fabrikamfiber2@hotmail.com
+8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d  Chuck Reinhart     fabrikamfiber3@hotmail.com
+d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Jamal Hartnett     fabrikamfiber4@hotmail.com
+bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.com
 ``` 
 
 <a id="show-details" /> 
