@@ -598,6 +598,8 @@
         href: tasks/deploy/azure-rm-web-app-deployment.md
       - name: Azure App Service Manage
         href: tasks/deploy/azure-app-service-manage.md
+      - name: Azure App Service Settings
+        href: tasks/deploy/azure-app-service-settings.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
       - name: Azure Cloud PowerShell Deployment

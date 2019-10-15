@@ -24,7 +24,7 @@ The most common built-in security groups&mdash;**Readers**, **Contributors**, an
 
 In general, use the following guidance when assign users to an access level and security group: 
 - Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
-- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. Also, 
+- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 - Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 - Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 

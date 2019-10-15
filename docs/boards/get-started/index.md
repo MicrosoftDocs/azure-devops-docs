@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/24/2019
+ms.date: 10/14/2019
 ---
 
 
@@ -30,23 +30,18 @@ Then, read [Plan and track work](plan-track-work.md) to start adding and trackin
 
 If you are tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for additional configurations and resources that you may want to make. 
 
-## Concepts
+## Related articles
 
 - [Why use Azure Boards?](why-use-azure-boards.md)
 - [Key concepts](key-concepts.md)
-
-## Reference 
-
-- [System fields reference](../work-items/guidance/basic-field-reference.md)  
 - [Default permissions & access (Security)](permissions-access-boards.md) 
 
 ## Additional resources
 
 - [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)  
-- [Connect a project to GitHub](../../boards/github/connect-to-github.md)  
 - [Web portal navigation](../../project/navigation/index.md) 
-- [Work items](../work-items/index.md)  
-- [Sprints (Scrum)](../sprints/index.md)
+- [Work items](../work-items/about-work-items.md)  
+- [Sprints (Scrum)](../sprints/scrum-overview.md)
 - [Process customization](../../organizations/settings/work/inheritance-process-model.md)
 
 
