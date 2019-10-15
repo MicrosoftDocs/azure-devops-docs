@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 10/14/2019
 ---
 
 
@@ -40,8 +40,8 @@ Assign users or groups of users to one of the following access levels:
 ::: moniker range="azure-devops"
 
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional or MSDN Platforms subscription, and to users for whom you are paying for Basic + Test Plans access in an organization.
-- **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with an Azure DevOps Server CAL or Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
+- **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional or MSDN Platforms subscription, and to users for whom you are paying for Basic access in an organization.
+- **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with an Azure DevOps Server CAL or Visual Studio Professional subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
@@ -913,7 +913,7 @@ Removed sections per Harish Kumar Agarwal, "adds no value" 06/05/2019 chcomley
 
 Full access to **Test Plans** and load testing features requires **VS Enterprise** or **Basic + Test Plans** access. Visual Studio Test Professional, plus the test features in the web portal, are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
 
-To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
+To learn more, see [Buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md). 
 
 ::: moniker-end
 

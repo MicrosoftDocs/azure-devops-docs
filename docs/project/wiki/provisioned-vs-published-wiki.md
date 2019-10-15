@@ -79,7 +79,7 @@ The following table summarizes those operations or features that may differ, dep
 
 ## Add pages
 
-For a *provisioned wiki*, select **New page** or **Add subpage**. To learn more, see [Add and edit wiki pages](add-edit-wiki.md#add-page).
+For a *provisioned wiki*, select **New page** or **Add subpage**. To learn more, see [Add and edit wiki pages](add-edit-wiki.md#add-a-wiki-page).
 
 For a *publish code as wiki*, add a Markdown file under the folder of the branch that you published. The file must end in **.md** for the wiki to recognize it as a page to publish. To learn more, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
 
