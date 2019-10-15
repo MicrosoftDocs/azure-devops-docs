@@ -11,14 +11,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 10/14/2019
 ---
 
 # About Sprints, Scrum and project management 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-The Scrum method uses Iteration Paths, also referred to as sprints, to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
+Your Sprints tools includes a filtered backlog based on an Iteration Path, and a similarly filtered Taskboard. These tools are useful for implementing Scrum practices. With Scrum, you can schedule and plan sprints, update your taskboard, and monitor your sprint burndown. 
+
+Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
 
 
 [!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
@@ -130,7 +132,8 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development) 
  
 
 

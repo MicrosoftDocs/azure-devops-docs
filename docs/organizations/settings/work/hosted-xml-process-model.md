@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 03/20/2018
+ms.date: 10/10/2018
 ---
 
 
@@ -24,6 +24,8 @@ ms.date: 03/20/2018
 > **Feature availability**:  The Hosted XML process model is only supported for select accounts of Azure DevOps Services.  
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
+
+## Supported customizations
 
 You can perform the following tasks with the Hosted XML process model. 
 
@@ -104,10 +106,31 @@ You can perform the following tasks with the Hosted XML process model.
 </tbody>
 </table>
 
+<a id="add-support-wit" />
+
+## Add release deployment support to a work item type
+
+The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/work-items/work-item-deployments-control.md). 
+
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Group Label="Deployment">
+    <Control Type="DeploymentsControl" Name="Deployments" />
+</Group>
+```
+
+This syntax has been been added to the following work item type definitions of the default process templates.
+
+> [!div class="mx-tdBreakAll"]  
+> |Agile|Basic|Scrum|CMMI |  
+> |-----|-----|-----|-----|  
+> |- Bug<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Task<br/>- Test Case<br/>- User Story|- Issue<br/>- Task<br/>- Test Case|- Bug<br/>- Epic<br/>- Feature<br/> - Impediment<br/> - Product Backlog Item<br/>- Task<br/>- Test Case|- Bug<br/>- Change Request<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Requirement<br/>- Review<br/>- Risk<br/>- Task|
 
 
 <a id="hosted-xml-sequence"></a>
  
+## Customization sequence
+
 Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
 [![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  

@@ -231,7 +231,7 @@ To learn more, see [Triage work items](../queries/triage-work-items.md).
 ## Assign bugs to a sprint  
 Once bugs have been triaged, it's time to assign them to a sprint to get fixed. By addressing a set of bugs to get fixed every sprint, your team can keep the total number of bugs to a reasonable size.  
 
-When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../sprints/assign-work-sprint.md) during your sprint planning sessions. 
+When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do a Product Backlog Item (PBI) and user story](../sprints/assign-work-sprint.md) during your sprint planning sessions. 
 
 When bugs are treated as tasks, they're often automatically linked to a PBI or user story. So, assigning their parent PBI or user story to a sprint will [assign the linked bugs to the same sprint as the parent PBI or user story](../sprints/task-board.md) during your sprint planning sessions. 
 
