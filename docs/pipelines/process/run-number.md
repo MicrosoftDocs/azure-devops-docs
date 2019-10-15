@@ -13,7 +13,7 @@ ms.date: 07/08/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Run number
+# Run (build) number
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
