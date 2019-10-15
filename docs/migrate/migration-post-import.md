@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/13/2018
+ms.date: 10/14/2018
 ---
 
 # Post import
@@ -42,12 +42,6 @@ Your organization includes 5 free users with [Basic](https://visualstudio.micros
 - **After**: After import, all users will start out with free Stakeholder access.
 
 As Visual Studio subscribers log in to the organization, they are  detected. For all other users, you need to [assign paid access](../organizations/billing/buy-basic-access-add-users.md). Keep in mind, if you automate access using [group rules](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md), the rules  only apply to existing users if you [remove the direct assignments](../organizations/accounts/remove-direct-assignments.md) which were applied to users during import. 
-
-This means that you shouldn't have to take any other import steps if your identity mapping file has just 5 users with Basic access, Visual Studio subscriptions, and Stakeholder access. If you have more than 5 users with Basic access, you'll need to [pay for these users in your organization](../organizations/billing/buy-basic-access-add-users.md). Just make sure to do this before the end of the calendar month when you import. Otherwise, these users' feature access will change from Basic to Stakeholder on the 1st day of the next calendar month. To find out how many additional users you'll need to pay for, visit your organization (```https://dev.azure.com/{yourorganization}/_user```) so you can find the number of paid users that you've assigned:
-
-![User Summary on an organization](_img/migration-post-import/UserSummary.png)
-
-Dry run imports do not have their licenses reset on the 1st of the month. Unlike production imports, their grace period extends for the life of the organization. So you don't need to worry about purchasing licenses while testing out an import. 
 
 ## Builds
 
