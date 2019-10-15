@@ -476,3 +476,27 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 * To Boolean: `True`
 * To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
 
+## Q&A
+
+<!-- BEGINSECTION class="md-qanda" -->
+
+### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
+
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it into the version and run number. 
+
+```yaml
+trigger:
+    batch: true
+    branches:
+        include:
+        - master
+steps:
+- bash: |
+    MAJOR_BUILD = $BUILD_BUILDNUMBER | cut -d "." -f1
+    RUN = $BUILD_BUILDNUMBER | cut -d "." -f2
+    echo $MAJOR_BUILD
+    echo $RUN
+```
+
+<!-- ENDSECTION -->
+
