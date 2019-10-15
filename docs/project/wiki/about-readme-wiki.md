@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: overview
 ms.date: 03/11/2019
 monikerRange: '>= tfs-2015'
