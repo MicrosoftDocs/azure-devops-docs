@@ -363,7 +363,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><strong>Billing</strong></td>
 <td><ul>
 <li><a href="../billing/set-up-billing-for-your-organization-vs.md" data-raw-source="[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)">Set up billing</a></li>
-<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans for free](../billing/try-additional-features-vs.md)">Try Azure Test Plans for free</a></li>
+<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md)">Try Azure Test Plans for free</a></li>
 <li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)">Pay for users (Basic)</a></li>
 <li><a href="../billing/buy-more-build-vs.md" data-raw-source="[Buy CI/CD](../billing/buy-more-build-vs.md)">Buy CI/CD</a></li>
 <li><a href="../billing/add-backup-billing-managers.md" data-raw-source="[Add a user to make purchases](../billing/add-backup-billing-managers.md)">Add a user to make purchases</a></li>

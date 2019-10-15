@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ---
 
 # Add a rule to a work item type (Inheritance process)
