@@ -143,6 +143,8 @@ echo "Emulator started"
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
 
+[Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+
 ::: moniker range="> tfs-2018"
 
 [!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
