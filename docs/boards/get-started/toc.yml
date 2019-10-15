@@ -1,5 +1,5 @@
 - name: Start using Azure Boards 
-  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: index.md
 - name: Sign up and invite some teammates 
   href: sign-up-invite-teammates.md
 - name: Plan and track work
