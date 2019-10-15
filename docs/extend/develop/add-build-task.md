@@ -402,10 +402,6 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 >The **publisher** here must be changed to your publisher name. If you would like to create a publisher now, go to
 [create your publisher](#createpublisher) for instructions.
 
-> [!IMPORTANT]
-> Extension authors must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version.
-.  
-
 ### Contributions
 
 | Property     | Description            |
@@ -437,8 +433,10 @@ Packaging your extension into a .vsix file is effortless once you have the [tfx-
 tfx extension create --manifest-globs vss-extension.json
 ```
 
-> [!IMPORTANT]
-> Authors must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version.
+> [!NOTE] 
+> An extension/integration's version must be incremented on every update. <br> 
+> When updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
+> You must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version.
 
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
