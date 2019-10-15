@@ -17,10 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-When you don't need an extension anymore, you can uninstall or disable the extension. This article shows you how.
-
-> [!NOTE]
-> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../organizations/billing/change-number-paid-extension-users.md).
+In this article, learn how to uninstall or disable an extension you no longer need.
 
 ## Prerequisites
 

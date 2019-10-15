@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -161,7 +161,7 @@ A public project, on the other hand, doesn't require users  to sign in to gain r
 
 When you add a project, look at using the following elements to structure it to support your business needs:
 
-- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project.  
+- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project. If you're using TFVC and heading toward a consolidated project model, create root folders for different teams and projects, just as you would create separate repos in Git. Folders can be secured as needed and workspace mappings can control what segments of the repo you're actively using. 
 - [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams.
 - [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
