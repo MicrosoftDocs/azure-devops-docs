@@ -1,5 +1,5 @@
-- name: Azure DevOps Developer Resources Documentation
-  href: index.md
+- name: Developer resources 
+  href: index.yml
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
 - name: Azure DevOps REST APIs
