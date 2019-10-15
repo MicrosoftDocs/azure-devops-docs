@@ -2,30 +2,14 @@
   href: customize-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Compare system processes  
   href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Inheritance Process Model 
+- name: Inheritance process model 
   href: ../organizations/settings/work/toc.yml
-- name: On-premises XML Process Model 
+- name: On-premises XML process model  
   href: xml/toc.yml
-- name: Hosted XML Process Model 
+- name: Hosted XML process model 
   href: ../organizations/settings/work/hosted/toc.yml
 - name: Process templates
   href: process-templates/toc.yml
-- name: Microsoft Project Mapping file (Deprecated)
-  href: mapping/toc.yml
-- name: Configure Features Wizard (Deprecated)
-  items:
-  - name: Configure features after an upgrade
-    href: configure-features-after-upgrade.md
-  - name: New features added through feature enablement
-    href: new-features-added.md
-  - name: Add features manually
-    href: add-features-manually.md
-  - name: Additional configuration options
-    href: additional-configuration-options.md
-  - name: Update a customized process template to access new features
-    href: update-customized-process-template.md
-  - name: When upgrading from TFS 2008 or TFS 2010
-    href: upgrade-tfs-2008-or-2010.md
 - name: Resources
   items:
   - name: Azure Boards

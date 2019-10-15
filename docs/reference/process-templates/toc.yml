@@ -1,4 +1,4 @@
-- name: Process Templates
+- name: Process templates
   href: index.md
 - name: Choose a process 
   href: ../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

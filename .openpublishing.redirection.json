@@ -11964,6 +11964,36 @@
       "source_path": "docs/cli/get-started.md",
       "redirect_url": "/azure/devops/cli/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/index.md",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/index.md",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/index.md",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/sprints/index.md",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/index.md",
+      "redirect_url": "/azure/devops/boards/queries/example-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/index.md",
+      "redirect_url": "/azure/devops/reference/customize-work",
+      "redirect_document_id": false
     }
   ]
 }
