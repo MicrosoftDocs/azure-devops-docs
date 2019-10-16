@@ -16,7 +16,7 @@ ms.date: 12/07/2018
 
 **Azure Pipelines**
 
-Use this task in a pipeline to publish artifacts for the Azure Pipeline (note that publishing is NOT supported in release pipelines, it is supported in multi stage pipelines, build pipelines and yaml pipelines).
+Use this task in a pipeline to publish artifacts for the Azure Pipeline (note that publishing is NOT supported in release pipelines. It is supported in multi stage pipelines, build pipelines, and yaml pipelines).
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
