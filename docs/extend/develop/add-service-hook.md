@@ -5,7 +5,7 @@ title: Create a consumer service for service hooks | Extensions for Azure DevOps
 description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps Services.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

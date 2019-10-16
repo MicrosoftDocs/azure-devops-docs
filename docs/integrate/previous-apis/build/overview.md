@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Build Overview | REST API Reference for Team Foundation Server
 description: Work with VSTS builds programmatically using the REST APIs.
 ms.assetid: 6C2E7900-891E-4C9E-9FD1-4798E37019FB
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

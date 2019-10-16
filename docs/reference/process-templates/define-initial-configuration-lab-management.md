@@ -5,8 +5,9 @@ description: Customize the project's initial security configuration for Lab Mana
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---

@@ -5,7 +5,7 @@ description: Search your Git repo in Azure DevOps Services or TFS for a specific
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: atinb
 author: apawast
 ms.topic: conceptual

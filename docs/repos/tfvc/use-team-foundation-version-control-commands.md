@@ -5,7 +5,7 @@ description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

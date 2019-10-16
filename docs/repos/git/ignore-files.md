@@ -5,7 +5,7 @@ description: Use gitignore, git update-index, and repo management to ignore and 
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

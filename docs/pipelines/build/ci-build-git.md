@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.author: mlearned
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6

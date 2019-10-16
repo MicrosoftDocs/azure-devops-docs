@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 0B8D8335-A15A-4F8E-A731-767BC6C6A4B3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 4/29/2019

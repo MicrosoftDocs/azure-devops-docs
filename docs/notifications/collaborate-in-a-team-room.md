@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2018

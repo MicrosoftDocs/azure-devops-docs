@@ -5,7 +5,7 @@ description: Update an existing installation and version compatibility requireme
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: aa45b668-d753-4837-a5cc-ffdc82f08c1c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

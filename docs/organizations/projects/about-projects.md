@@ -6,7 +6,7 @@ description: Understand project management and how you can track progress and co
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 10/15/2019

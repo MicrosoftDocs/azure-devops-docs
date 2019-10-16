@@ -6,7 +6,7 @@ ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
