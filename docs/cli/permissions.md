@@ -60,17 +60,17 @@ Here, permissions could be a single permission type or combination of multiple p
 You will get the permission details available for any namespace with `az devops security permission namespace show --id` command.
 You will have to pass this permission bits while assigning allow/deny permissions and removing permissions.
 
-#### Add permissions
+#### Assign permissions
 
-`az  devops security permission add  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --allow-bit 4 deny-bit 1`
+`az  devops security permission update  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --allow-bit 4 --deny-bit 1`
 
 Here, --allow-bit/--deny-bit could be a single permission bit or addition of multiple permission bits.
 
 #### Reset permissions
 
-`az  devops security permission reset  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --permissions 5`
+`az  devops security permission reset  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --permission-bit 5`
 
-Here, --permissions could be a single permission bit or addition of multiple permission bits.
+Here, --permission-bit could be a single permission bit or addition of multiple permission bits.
 
 #### Reset all permissions
 
