@@ -73,7 +73,9 @@ is the name of the Docker registry service connection for the container registry
 <tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
 <tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
 <tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td></tr>
+<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the | operator in YAML to indicate that newlines should be preserved. <br/>Example: <pre>dockerComposeFileArgs: |
+    firstArg=$(firstArg)
+    secondArg=$(secondArg)</pre></td></tr>
 <tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
 <tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
 <tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>

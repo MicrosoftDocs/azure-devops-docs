@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: ac07307f-e87c-43d5-a044-01023cea2e50
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>=tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ms.date: 10/03/2017
 ---
 

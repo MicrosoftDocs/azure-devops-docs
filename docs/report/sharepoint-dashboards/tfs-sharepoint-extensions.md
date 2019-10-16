@@ -8,6 +8,7 @@ ms.reviewer: greggboe
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 11/02/2017
 ---
 
