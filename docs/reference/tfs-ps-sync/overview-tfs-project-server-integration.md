@@ -5,8 +5,9 @@ description: Understand how to customize data synchronization between Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/12/2017
 ms.topic: overview
 ---

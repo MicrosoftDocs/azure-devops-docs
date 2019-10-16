@@ -5,7 +5,8 @@ description: This message might appear in a dialog box when you save a work item
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.topic: Troubleshooting
 ms.date: 10/22/2017

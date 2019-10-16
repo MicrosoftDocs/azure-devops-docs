@@ -1,62 +1,62 @@
 ---
-title: Invite users
+title: Invite users to contribute to public project
 titleSuffix: Azure DevOps Services Public Project  
-description: Invite others to contribute to you public project  
+description: Invite others to contribute to your public project  
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 
 <a id="invite-others" />
 
-# Quickstart: Invite users to contribute to your public project
+# Quickstart: Invite users to your public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-In this quickstart, you learn how to enable users to contribute to your project.
-
-## Prerequisites
-
-Add the user as a member of your organization.
+In this quickstart, learn how to enable public users to contribute to your project.
 
 > [!IMPORTANT]
 > Before you add a member, review the notes provided in [private-to-public migration checklist](migration-checklist.md) as well as
 > the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
 
-## Open Organization Settings > Users
+## Prerequisites
 
-1. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project.
+You must have [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
-2. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
+## Add users
 
-3. Then, choose **Users** to open **Manage users**. Choose **Add new users** to open the dialog.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Add new users dialog](_img/invite-users/open-manage-users-vert.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-## Add user accounts to a project
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-1. Fill out the form based on the guidance provided.
+3. Select **Users**, and then select **Add users**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Invite new users](_img/invite-users/add-new-user-form.png)
+   [:::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
+
+4. Complete the form based on the following guidance, and then select **Add**.
 
 	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
 	- **Access level**: You can add up to 5 users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**.  To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
-	- **Add to projects**: Select the public project that you created, or select **Add All** to add the user to all projects defined for the organization.  
+	- **Add to projects**: Select each public project that you want to add the user to.  
 	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+	- **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
 
-2. When you're done, choose **Add** to complete your invitation.
+    :::image type="content" source="_img/invite-users/add-new-users-dialog.png" alt-text="Complete the form and the select Add":::
+
+5. Advise the external user to locate the email that they received from Azure DevOps and select the URL link. This final step adds the user to your project.
+
+>[!Note]
+>If you need to resend the invitation email, go to **Users**, select the user, and select **Resend invite**.
 
 <!---
 ## Add members to your public project from your project page 

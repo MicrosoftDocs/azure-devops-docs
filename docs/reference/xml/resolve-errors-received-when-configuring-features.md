@@ -5,7 +5,7 @@ description: Occurs when definitions in the project conflict with definitions in
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/19/2017

@@ -4,7 +4,7 @@ description: Recover deleted packages and set up policies to automatically delet
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

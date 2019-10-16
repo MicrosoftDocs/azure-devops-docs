@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Results | REST API Reference for Team Foundation Server
 description: Work with test results programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 70243742-BBC4-4586-AD22-A7756675A767
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

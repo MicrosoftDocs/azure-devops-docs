@@ -5,7 +5,7 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

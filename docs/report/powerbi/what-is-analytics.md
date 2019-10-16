@@ -5,7 +5,7 @@ description: Understand how you can use Analytics data to answer quantitative qu
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

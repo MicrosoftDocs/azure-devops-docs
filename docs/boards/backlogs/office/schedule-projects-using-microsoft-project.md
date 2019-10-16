@@ -5,7 +5,7 @@ description: Use Microsoft Project 2010 to plan work, schedule tasks, assign res
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

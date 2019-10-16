@@ -5,7 +5,7 @@ description: Add links to GitHub commits and pull requests to or from Azure Boar
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:    
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -7,7 +7,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.author: kaelli

@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
 ms.date: 08/28/2019

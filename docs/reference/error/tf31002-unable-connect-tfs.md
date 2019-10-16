@@ -5,7 +5,7 @@ description: Receive the error when you try to connect to Azure DevOps Services 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

@@ -4,7 +4,7 @@ description: Download Fileshare Artifacts task for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 515F989D-28E5-4EB3-99E4-7F81E9977F6C
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

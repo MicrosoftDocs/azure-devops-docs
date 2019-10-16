@@ -6,8 +6,9 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019

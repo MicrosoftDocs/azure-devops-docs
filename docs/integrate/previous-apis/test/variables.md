@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Variables | REST API Reference for Team Foundation Server
 description: Work with test variables programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 0ac1da87-798b-47cf-8426-8fc08d230e7f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

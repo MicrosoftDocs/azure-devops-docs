@@ -5,7 +5,7 @@ description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

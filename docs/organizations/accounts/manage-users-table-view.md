@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -44,7 +44,7 @@ From your web browser you can view and edit certain user information. From the A
  
 ### Manage users
 
-The Users view shows key information per user in a table. In this view, you can do the following:
+The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
@@ -57,9 +57,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users** > **Add new users**.
-
-   ![Select the Users tab, and then select Add new users](_img/_shared/add-new-users.png)
+3. Select **Users**.
 
 4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 

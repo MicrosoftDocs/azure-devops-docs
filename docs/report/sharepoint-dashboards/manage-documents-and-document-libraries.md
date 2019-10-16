@@ -5,8 +5,9 @@ description: Create documents libraries and share to all team members by uploadi
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 monikerRange: '< tfs-2018'
 ms.topic: conceptual

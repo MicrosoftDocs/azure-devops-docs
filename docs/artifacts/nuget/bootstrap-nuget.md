@@ -4,7 +4,7 @@ description: Set up the NuGet developer environment for Azure Artifacts in Azure
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

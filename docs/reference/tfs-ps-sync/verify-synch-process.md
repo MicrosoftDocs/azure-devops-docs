@@ -5,7 +5,7 @@ description: Verify the synchronization process for the integration of Team Foun
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 767af0db-6c5d-4c1e-b2a3-8b4ffbd8ff6d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

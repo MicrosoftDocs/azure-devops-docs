@@ -7,7 +7,7 @@ ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'

@@ -5,7 +5,7 @@ description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

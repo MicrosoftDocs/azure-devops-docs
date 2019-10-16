@@ -5,7 +5,7 @@ description: Steps to modify the XML syntax to support using a team field with T
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

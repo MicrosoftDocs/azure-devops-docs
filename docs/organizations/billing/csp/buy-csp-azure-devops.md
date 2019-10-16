@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/10/2019

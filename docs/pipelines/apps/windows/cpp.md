@@ -5,7 +5,7 @@ description: Automatically build your C++ Windows app with Azure Pipelines, Azur
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 3/1/2019

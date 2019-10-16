@@ -4,7 +4,7 @@ description: Partners in the cloud service provider (CSP) program can enable the
 ms.prod: devops
 ms.technology: devops-billing
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/10/2018
