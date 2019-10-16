@@ -5,7 +5,7 @@ description: Get notified when changes occur to source code, git, work items, an
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

@@ -5,7 +5,7 @@ ms.assetid: EE46001A-8B9C-4E09-B99B-4F104013DFAD
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

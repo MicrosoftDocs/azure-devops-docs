@@ -5,7 +5,7 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

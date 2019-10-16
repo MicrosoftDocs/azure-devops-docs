@@ -5,7 +5,7 @@ description: Sets up authentication with twine to Python feeds so you can publis
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/02/2019

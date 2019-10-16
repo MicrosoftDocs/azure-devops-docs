@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops  
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

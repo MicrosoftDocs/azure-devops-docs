@@ -7,7 +7,7 @@ ms.topic: tutorial
 ms.author: mlearned
 author: mlearned
 ms.reviewer: nicolela
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'

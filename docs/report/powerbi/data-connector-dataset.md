@@ -5,7 +5,7 @@ description: Describes the dataset that is created in Power BI for an Analytics 
 ms.technology: devops-analytics
 ms.prod: devops
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: angurusw
 ms.author: kaelli
 author: KathrynEE

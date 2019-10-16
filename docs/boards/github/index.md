@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: landing-page
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

@@ -4,7 +4,7 @@ description: Understand how notifications or alerts are managed in Azure DevOps
 ms.prod: devops
 ms.technology: devops-collab
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

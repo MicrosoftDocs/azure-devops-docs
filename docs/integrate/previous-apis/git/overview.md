@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git | REST API Reference for Team Foundation Server
 description: Work with Git programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 19DFAB3F-274F-41DF-ACD5-93DCEE626121
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

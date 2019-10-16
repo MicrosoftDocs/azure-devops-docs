@@ -5,8 +5,9 @@ description: Guide to configuring and customizing work tracking features for TFS
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops-2019'
 ms.date: 05/06/2019

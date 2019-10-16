@@ -5,7 +5,7 @@ description: How to guide for accessing Analytics OData from Excel for Azure Dev
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: E661D20C-073E-44F1-A91C-B1460A93E2B2 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

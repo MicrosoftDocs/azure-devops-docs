@@ -5,7 +5,7 @@ description: XML syntax and usage for all ProcessConfiguration elements to suppo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

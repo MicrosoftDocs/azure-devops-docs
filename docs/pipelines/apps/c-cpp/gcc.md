@@ -5,7 +5,7 @@ description: Learn how you can use continuous integration in Azure Pipelines or 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 ms.date: 04/18/2018
 ms.topic: quickstart
