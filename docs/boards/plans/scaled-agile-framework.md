@@ -5,7 +5,7 @@ description: How to implement the Scaled Agile Framework to support epics, relea
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

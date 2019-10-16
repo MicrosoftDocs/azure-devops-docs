@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

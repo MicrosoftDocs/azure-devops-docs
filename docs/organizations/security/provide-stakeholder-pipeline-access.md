@@ -5,7 +5,7 @@ description: Add & update work items, approve releases, view work tracking progr
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

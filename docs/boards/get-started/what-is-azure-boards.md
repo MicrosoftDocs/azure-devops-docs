@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

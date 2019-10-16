@@ -5,7 +5,7 @@ description: Manage dependencies, link work items to other work items, code and 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

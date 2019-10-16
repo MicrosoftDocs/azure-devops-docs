@@ -5,7 +5,7 @@ ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

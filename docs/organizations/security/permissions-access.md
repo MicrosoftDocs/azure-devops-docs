@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

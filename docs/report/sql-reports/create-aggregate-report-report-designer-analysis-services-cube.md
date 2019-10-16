@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: How to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

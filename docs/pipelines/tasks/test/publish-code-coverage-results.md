@@ -5,7 +5,7 @@ ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT

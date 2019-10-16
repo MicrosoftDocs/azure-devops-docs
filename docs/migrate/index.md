@@ -5,7 +5,7 @@ description: Learn how to migrate from on-premises to cloud hosted Azure DevOps 
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 01/04/2018
 ms.author: kaelli
 author: kaelli

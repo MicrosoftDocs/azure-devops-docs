@@ -6,7 +6,7 @@ ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

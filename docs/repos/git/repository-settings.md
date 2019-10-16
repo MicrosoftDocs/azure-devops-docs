@@ -5,7 +5,7 @@ description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

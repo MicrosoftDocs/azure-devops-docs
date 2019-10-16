@@ -5,7 +5,7 @@ ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 09/09/2019

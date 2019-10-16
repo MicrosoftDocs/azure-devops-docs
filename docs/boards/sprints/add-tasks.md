@@ -5,7 +5,7 @@ description: Add tasks to user stories assigned to a sprint or iteration working
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
