@@ -1,5 +1,5 @@
 ---
-title: Change connection to Azure AD
+title: Switch to another Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change or switch your organization connection to a different Azure Active Directory
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 
-# Change connection to Azure AD
+# Switch to another Azure AD
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -33,16 +33,23 @@ Before you disconnect your organization from your directory, and then connect to
 ## Change the Azure AD connection
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-  
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Disconnect directory**.
+2. Open your profile menu, and then select :::image type="icon" source="../../_img/icons/actions-icon.png"::: next to Azure DevOps profile.
+
+   :::image type="content" source="_img/connect-organization-to-aad/select-more-actions.png" alt-text="Select the three dots next to Azure DevOps profile":::
+
+3. Select **Switch directory**.
+
+   :::image type="content" source="_img/connect-organization-to-aad/select-switch-directory.png" alt-text="Switch your Azure Active Directory":::
+
+4. Choose another directory, and then select **Switch**.
+
+   :::image type="content" source="_img/connect-organization-to-aad/switch-to-another-directory.png" alt-text="Choose another directory and then select the Switch button":::
 
    ![Select the Disconnect directory button](_img/_shared/select-disconnect-directory.png)
 
-4. Sign out, and then sign back in to Azure DevOps.
-5. Prepare your mapping list for inviting users to Azure AD.
+5. Sign out, and then sign back in to Azure DevOps.
+6. Prepare your mapping list for inviting users to Azure AD.
 
     1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
     2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -55,7 +62,7 @@ Before you disconnect your organization from your directory, and then connect to
 
     4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who is in the Azure DevOps organization and NOT in the Azure AD. For any user that you don't create an Azure AD email address for, be prepared to invite these users as guests to the Azure AD in future steps.
 
-6. [Connect to Azure AD](connect-organization-to-azure-ad.md), so users can regain access.
+7. [Connect to Azure AD](connect-organization-to-azure-ad.md), so users can regain access.
 
    ![Select Azure AD Connect directory](_img/connect-organization-to-aad/select-azure-ad-connect-directory.png)
 
