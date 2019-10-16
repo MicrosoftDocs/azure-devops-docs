@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/16/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -31,7 +31,7 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
 * The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure Active Directory guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
-## Invite an external user to your organization
+## Invite external user
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -39,15 +39,21 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users**, and then select **Add new users**.
+3. Select **Users**, and then select **Add users**.
 
-   ![Select Add new users](_img/_shared/add-new-users.png)
+   [:::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
 
-4. Enter the external user's email address followed by a semicolon, and then select **Add**. A warning message appears, indicating that an external user is being added from outside your directory.
+4. Complete the form based on the following guidance, and then select **Add**.
 
-   ![Add external user](_img/add-external-user/add-external-user-vert.png)
+	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
+	- **Access level**: You can add up to 5 users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**.  To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
+	- **Add to projects**: Select each public project that you want to add the user to.  
+	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+	- **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
 
-5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which adds the user to your organization.
+    :::image type="content" source="_img/invite-users/add-new-users-dialog.png" alt-text="Complete the form and the select Add":::
+
+5. Advise the external user to locate the email that they received from Azure DevOps and select the URL link. This final step adds the user to your organization.
 
 >[!Note]
 >If you need to resend the invitation email, go to **Users**, select the user, and select **Resend invite**.

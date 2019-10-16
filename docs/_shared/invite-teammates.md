@@ -14,7 +14,7 @@ Give team members access to your organization by adding their email addresses or
 
 3. Select **Users** > **Add new users**.
 
-   ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
+   :::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select Add users":::]
 
 4. Enter the following information:
 
