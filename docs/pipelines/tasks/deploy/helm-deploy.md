@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'

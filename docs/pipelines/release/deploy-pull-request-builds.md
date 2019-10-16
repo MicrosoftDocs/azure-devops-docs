@@ -4,7 +4,7 @@ description: DevOps CI CD - Deploy pull request builds from Azure Repos and GitH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: moala
 author: raiyanalam
 ms.date: 12/18/2018

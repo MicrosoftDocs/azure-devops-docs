@@ -5,8 +5,9 @@ description: Index to topics for working with TFS-Project Server synchronization
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 07/14/2017
 ---

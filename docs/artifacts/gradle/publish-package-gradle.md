@@ -3,7 +3,7 @@ title: Publish a Maven artifact using Gradle and Azure DevOps Services
 description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.reviewer: dastahel

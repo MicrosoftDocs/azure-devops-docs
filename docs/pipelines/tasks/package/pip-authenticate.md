@@ -5,7 +5,7 @@ description: Sets up authentication with pip so you can perform pip commands in 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/02/2019

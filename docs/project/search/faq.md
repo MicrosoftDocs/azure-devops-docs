@@ -3,7 +3,7 @@ title: Answers to common questions about Azure DevOps Search
 description: Troubleshooting issues regarding Azure DevOps Search for Azure DevOps services aka Visual Studio Team Services (VSTS) or Azure DevOps server aka Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-collab
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sunar
 author: sandeepchads
 ms.date: 01/23/2019

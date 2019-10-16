@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE

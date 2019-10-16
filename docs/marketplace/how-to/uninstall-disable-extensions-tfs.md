@@ -4,7 +4,7 @@ description: Uninstall or disable extensions for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: ef7ce82f-ca09-4804-8698-2820ddaec1b8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/11/2019

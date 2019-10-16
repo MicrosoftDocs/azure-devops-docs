@@ -5,7 +5,7 @@ description: View the branch hierarchy of a project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

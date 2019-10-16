@@ -5,7 +5,7 @@ description: Understand the benefits of creating a public project, provide anony
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

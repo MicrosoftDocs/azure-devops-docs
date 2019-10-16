@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

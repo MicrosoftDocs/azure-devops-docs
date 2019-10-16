@@ -5,7 +5,7 @@ ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 09/09/2019
@@ -171,7 +171,9 @@ recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
+::: moniker range="<= tfs-2018"
 You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
+::: moniker-end
 
 ### Global release retention policy
 

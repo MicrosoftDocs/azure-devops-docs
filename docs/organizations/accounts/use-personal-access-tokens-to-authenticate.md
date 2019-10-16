@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/12/2019
