@@ -59,7 +59,7 @@ When using this progress report it is good to know the following points:
 2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
 3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
 4. Data processing for this report is occurring approximately every 15 mins. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in this report. 
-5. You can leverage this report for test plans created on or after September 1, 2019.
+5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
 
 ### Provide feedback
 Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
