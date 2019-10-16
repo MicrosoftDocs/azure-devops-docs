@@ -14,7 +14,7 @@ Give team members access to your organization by adding their email addresses or
 
 3. Select **Users** > **Add new users**.
 
-   :::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select Add users":::]
+   :::image type="content" source="_img/add-new-users.png" alt-text="Select Add users":::
 
 4. Enter the following information:
 
