@@ -694,6 +694,16 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+- name: Case Studies & Best Practices
+  items:
+    - name: Add Continuous Security Validation to your CICD Pipeline 
+      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+    - name: Build and Deployment Automation Case Study
+      href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your features using feature flags
+      href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your releases using deployment rings
+      href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
 - name: Developer Resources
   items:
   - name: REST API reference
