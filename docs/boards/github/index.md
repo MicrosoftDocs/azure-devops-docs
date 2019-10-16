@@ -73,6 +73,6 @@ Integration steps include:
 
 - [Web portal navigation](../../project/navigation/index.md)  
 - [Link work items](../backlogs/add-link.md)
-- [Work items](../work-items/index.md)
+- [About work items](../work-items/about-work-items.md)
 - [Process customization](../../organizations/settings/work/inheritance-process-model.md)  
 

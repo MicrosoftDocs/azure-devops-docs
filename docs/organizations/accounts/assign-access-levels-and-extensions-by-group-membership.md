@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/25/2019
+ms.date: 10/15/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
@@ -36,11 +36,11 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
+3. Go to the **Permissions** tab, and then check the membership of the **Project Collection Administrators** group.
 
    ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-new.png)
 
-4. Select **Users** > **Group rules**. This view shows you all of your created group rules.
+4. Go to the **Users** tab, and then select **Group rules**. This view shows you all of your created group rules.
 
    ![View group rules](_img/assign-access-levels/see-group-rules.png)
 
@@ -73,7 +73,7 @@ As users sign in to your organization, they're assigned access levels and extens
    > [!NOTE]
    > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
-2. Add members and select **Add**.
+2. Add members, and then select **Add**.
 
    ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
 
@@ -81,11 +81,11 @@ When the same access level or extension is assigned to the user, both directly a
 
 ## Verify group rule
 
-- Verify that the resources are applied to each group. On the **Group rules** tab, highlight a group and select **Summary**.
+- Verify that the resources are applied to each group. On the **Group rules** tab, look to the top right for the Summary.
 
-- Verify individual user resources. On the **Users** page, highlight a user and select **Summary**.
+   :::image type="content" source="_img/assign-access-levels/group-rule-summary.png" alt-text="Select Group rules, highlight rule and see the summary to the right":::
 
-- Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
+- Verify individual user resources. On the **Users** tab, look to the top right for the Summary.
 
 Your group rule is in effect.
 

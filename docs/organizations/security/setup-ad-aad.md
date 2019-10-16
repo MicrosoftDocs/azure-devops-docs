@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 10/14/2019
 ---
 
 
@@ -20,6 +20,8 @@ ms.date: 02/19/2019
 The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) for Azure DevOps Server or Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps to support billing.
+
+[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
 
 ::: moniker range="azure-devops"
 Use this topic to access articles that show you how to:

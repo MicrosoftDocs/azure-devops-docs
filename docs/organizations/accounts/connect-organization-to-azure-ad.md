@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/30/2019
+ms.date: 10/15/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -114,6 +114,27 @@ When you inform your users of the completed change, include the following tasks 
 
 - [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity if you don't want to be prompted to choose between accounts.
 - [Manage your Visual Studio with MSDN subscription](/visualstudio/subscriptions/manage-vs-subscriptions), if you used a Microsoft account to sign up for Azure DevOps. Link work or school accounts to this subscription.
+
+## Manage multiple organizations backed by Azure AD
+
+You can download a complete list of organizations backed by an Azure Active Directory tenant. 
+The following details are included:
+- organization IDs
+- organization names
+- organization URLs
+- organization owners
+
+For any of the organizations that are backed by your directory, complete the following steps.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Azure Active Directory**, and then **Download**.
+
+   :::image type="content" source="_img/_shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
 
 ## Related articles
 

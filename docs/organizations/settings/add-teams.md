@@ -153,7 +153,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ### List teams 
 
-You can list teams using [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can list teams using [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -196,7 +196,7 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 
 ### Add a team 
 
-You can add a team using [az devops team create](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can add a team using [az devops team create](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
