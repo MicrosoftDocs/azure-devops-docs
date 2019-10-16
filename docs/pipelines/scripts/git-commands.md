@@ -43,7 +43,7 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <div class="collapse" id="expando-version-control-permissions">
 
 <ul>
-<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
+<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol</code></li>
 
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 </ul>
