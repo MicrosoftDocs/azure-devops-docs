@@ -364,6 +364,45 @@ jobs:
     name: echovar
 ```
 
+The `runOnce` strategy of a [deployment](deployment-jobs.md) also specifies a strategy with a single job instance named `deploy`:
+
+```yaml
+strategy:
+  runOnce:
+    deploy:  # <- job name
+      steps:
+```
+
+Therefore, output variables of deployments need to be prefixed with that job name (in this case, `deploy`):
+
+```yaml
+jobs:
+
+# Set an output variable from a deployment
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job for the first slice
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
