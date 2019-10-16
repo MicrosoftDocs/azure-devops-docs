@@ -5,7 +5,7 @@ description: Default set of fields that appear in the relational warehouse datab
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/01/2019 

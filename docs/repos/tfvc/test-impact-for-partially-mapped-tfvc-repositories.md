@@ -8,7 +8,7 @@ ms.technology: devops-code-tfvc
 ms.date: 03/08/2018
 ms.author: sdanie
 author: apawast
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ---
 

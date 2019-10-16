@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Items | REST API Reference for Team Foundation Server
 description: Work with TFVC items programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 35C86B30-7BAA-45C8-B9A3-CFA560B1CDA7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

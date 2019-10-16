@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Tracking Samples | REST API Reference for Team Foundation Server
 description: Samples for work item tracking using the REST APIs and .NET Libraries for Team Foundation Server. 
 ms.assetid: 6830FA0E-9EA6-4AD3-913D-9E3450315C13
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

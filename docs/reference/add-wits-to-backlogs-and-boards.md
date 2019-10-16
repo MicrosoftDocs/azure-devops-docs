@@ -5,7 +5,7 @@ description: Add work item types to customize your tracking capabilities on prod
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -5,7 +5,7 @@ description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

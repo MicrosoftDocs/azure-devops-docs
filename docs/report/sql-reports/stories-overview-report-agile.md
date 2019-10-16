@@ -6,8 +6,9 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all user stories, filtered by area and iteration and in order of importance.
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/2017
 ---
 

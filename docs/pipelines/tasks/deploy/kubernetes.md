@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/28/2019

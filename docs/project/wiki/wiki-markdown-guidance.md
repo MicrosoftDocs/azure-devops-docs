@@ -5,7 +5,7 @@ description: Learn how to share information, add tables & mathematical notation 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

@@ -5,7 +5,7 @@ description: Modify or add a work item field to support queries, reports, and wo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

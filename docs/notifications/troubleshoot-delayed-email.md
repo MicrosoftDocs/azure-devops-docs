@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Troubleshooting steps for delayed emails from notifications in Azure DevOps Services and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

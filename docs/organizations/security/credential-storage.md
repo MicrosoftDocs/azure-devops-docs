@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 01/25/2019
 monikerRange: 'azure-devops'
 ---

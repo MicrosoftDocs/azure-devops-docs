@@ -5,7 +5,7 @@ description: Steps for how to look up users who can help you gain access or chan
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

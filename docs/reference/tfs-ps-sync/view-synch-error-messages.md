@@ -5,8 +5,9 @@ description: View synchronization engine error messages when using Team Foundati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd4e04e2-7a15-4a2c-8833-301f1292cdba
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---

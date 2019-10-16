@@ -3,7 +3,7 @@ title: Where is Package Management? | Azure DevOps
 description: Discover Azure Artifacts - the new home of Package Management in Azure DevOps.
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 05/10/2019

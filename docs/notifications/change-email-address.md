@@ -5,7 +5,7 @@ description: Change the email address used to receive alerts or email  notificat
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/14/2019

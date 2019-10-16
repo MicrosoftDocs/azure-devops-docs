@@ -5,7 +5,7 @@ description: Clone a Hosted XML process model to an inherited process in Azure D
 ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
