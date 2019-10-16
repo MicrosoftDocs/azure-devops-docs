@@ -464,6 +464,8 @@ Tasks listed in the following table must be performed by an administrator who ha
 
 ::: moniker range="azure-devops"
 
+You customize work item types using the Inheritance process model. 
+
 <table valign="top">
 <tbody valign="top">
 <tr>
@@ -480,7 +482,10 @@ Tasks listed in the following table must be performed by an administrator who ha
 <li><a href="../../organizations/settings/work/customize-process-field.md#pick-list">Add a picklist (drop-down menu)</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#html">Add a rich-text (HTML) field</a> </li>
 <li><a href="../../organizations/settings/work/customize-process-workflow.md#states">Add, edit, or remove a WIT workflow state</a></li>
-<br/>
+</ul>
+</td>
+<td width="33%">
+<ul>
 <li><a href="../../organizations/settings/work/customize-process-field.md#rename-field">Change a field label</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#overview">Change the WIT color or description</a></li>
 <li><a href="../../organizations/settings/work/change-process-agile-to-scrum.md">Change the reference process from Agile to Scrum</a></li>
@@ -488,22 +493,20 @@ Tasks listed in the following table must be performed by an administrator who ha
 <li><a href="../../organizations/settings/work/change-process-scrum-to-agile.md">Change the reference process from Scrum to Agile</a></li>
 <li><a href="../../organizations/projects/create-project.md">Create a project</a></li>
 <li><a href="about-work-items.md#customize">Customize work items</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
+<br/>
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
 <li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
-<br/>
-<li><a href="../../organizations/settings/work/customize-process-field.md#add-a-picklist">Modify a default pick list</a></li>
-<li><a href="../../organizations/settings/work/customize-process-form.md#move-field">Move the field within the layout</a></li>
 </ul>
 </td>
 <td width="34%">
 <ul>
+
+<li><a href="../../organizations/settings/work/customize-process-field.md#add-a-picklist">Modify a default pick list</a></li>
+<li><a href="../../organizations/settings/work/customize-process-form.md#move-field">Move the field within the layout</a></li>
+<br/>
 <li><a href="../../organizations/settings/work/customize-process-field.md#remove-field">Remove a field from form</a></li>
 <li><a href="../../organizations/security/restrict-access.md#restrict-modifications-wits">Restrict modification</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#options">Set Required/Default options</a></li>
@@ -518,6 +521,10 @@ Tasks listed in the following table must be performed by an administrator who ha
 
 
 ::: moniker range="azure-devops-2019"
+
+You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
+
+### Inherited process model
 
 <table valign="top">
 <tbody valign="top">
@@ -537,7 +544,10 @@ Tasks listed in the following table must be performed by an administrator who ha
 <li><a href="../../organizations/settings/work/customize-process-field.md#pick-list">Add a picklist (drop-down menu)</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#html">Add a rich-text (HTML) field</a> </li>
 <li><a href="../../organizations/settings/work/customize-process-workflow.md#states">Add, edit, or remove a WIT workflow state</a></li>
-<br/>
+</ul>
+</td>
+<td width="33%">
+<ul>
 <li><a href="../../organizations/settings/work/customize-process-field.md#rename-field">Change a field label</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#overview">Change the WIT color or description</a></li>
 <li><a href="../../organizations/settings/work/change-process-agile-to-scrum.md">Change the reference process from Agile to Scrum</a></li>
@@ -545,22 +555,20 @@ Tasks listed in the following table must be performed by an administrator who ha
 <li><a href="../../organizations/settings/work/change-process-scrum-to-agile.md">Change the reference process from Scrum to Agile</a></li>
 <li><a href="../../organizations/projects/create-project.md">Create a project</a></li>
 <li><a href="about-work-items.md#customize">Customize work items</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
+<br/>
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
 <li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
-<br/>
-<li><a href="../../organizations/settings/work/customize-process-field.md#add-a-picklist">Modify a default pick list</a></li>
-<li><a href="../../organizations/settings/work/customize-process-form.md#move-field">Move the field within the layout</a></li>
 </ul>
 </td>
 <td width="34%">
 <ul>
+
+<li><a href="../../organizations/settings/work/customize-process-field.md#add-a-picklist">Modify a default pick list</a></li>
+<li><a href="../../organizations/settings/work/customize-process-form.md#move-field">Move the field within the layout</a></li>
+<br/>
 <li><a href="../../organizations/settings/work/customize-process-field.md#remove-field">Remove a field from form</a></li>
 <li><a href="../../organizations/security/restrict-access.md#restrict-modifications-wits">Restrict modification</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#options">Set Required/Default options</a></li>
@@ -571,12 +579,9 @@ Tasks listed in the following table must be performed by an administrator who ha
 </tbody>
 </table>
 
-::: moniker-end
 
+### On-premises XML process model
 
-
-
-::: moniker range="<= tfs-2018"
 
 <table valign="top">
 <tbody valign="top">
@@ -591,7 +596,51 @@ Tasks listed in the following table must be performed by an administrator who ha
 <li><a href="../../reference/add-modify-field.md#custom-control">Add a custom control field</a></li>
 <li><a href="../../reference/add-modify-field.md#integration-fields">Add fields that integrate with test, build, and version control</a></li>
 <li><a href="../../reference/xml/change-workflow-wit.md">Add/remove State or Reason fields (customize workflow)</a></li>
+</ul>
+</td>
+<td width="33%">
+<ul>
+<li><a href="../../reference/add-modify-field.md#change-attribute">Change a field attribute</a></li>
+<li><a href="../../reference/add-modify-field.md#change-label">Change a field label</a></li>
+<li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
+<li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
+<li><a href="../../reference/xml/define-global-lists.md">Define global lists</a> </li>
+<li><a href="../../reference/add-modify-field.md#delete-field">Delete a field</a></li> 
+</ul>
+</td>
+<td width="34%">
+<ul>
+<li><a href="../../reference/add-modify-field.md#picklist">Modify a pre-defined pick list</a></li>
+<li><a href="../../reference/add-modify-field.md#change-label">Remove a field from a form</a></li>
+<br/>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
+::: moniker-end
+
+
+
+
+::: moniker range="<= tfs-2018"
+
+You customize work item types using the On-premises XML process model. For additional customization options, see [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+<td width="33%">
+<ul>
+<li><a href="../../reference/add-modify-field.md#boolean-field">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
+<li><a href="../../reference/add-modify-field.md">Add a custom field </a></li>
+<li><a href="../../reference/add-modify-field.md#picklist">Add a custom pick list</a></li>
+<li><a href="../../reference/add-modify-field.md">Add or modify a field</a></li>
+<li><a href="../../reference/add-modify-field.md#add-rules">Add rules to a field</a></li>
+<li><a href="../../reference/add-modify-field.md#custom-control">Add a custom control field</a></li>
+<li><a href="../../reference/add-modify-field.md#integration-fields">Add fields that integrate with test, build, and version control</a></li>
+<li><a href="../../reference/xml/change-workflow-wit.md">Add/remove State or Reason fields (customize workflow)</a></li>
 </ul>
 </td>
 <td width="33%">
