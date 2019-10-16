@@ -114,6 +114,8 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails). 
 
+::: moniker-end
+
 ::: moniker range=" azure-devops-2019" 
 
 1. The search page shows a list of the matching code files. The selected file has all
