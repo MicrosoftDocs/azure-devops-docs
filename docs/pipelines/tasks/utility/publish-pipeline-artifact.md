@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build pipeline to publish pipeline artifacts to Azure Pipeline (note that publishing is only supported in build pipelines).
+Use this task in a pipeline to publish artifacts for the Azure Pipeline (note that publishing is NOT supported in release pipelines. It is supported in multi stage pipelines, build pipelines, and yaml pipelines).
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
