@@ -5,7 +5,7 @@ ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 01/31/2018

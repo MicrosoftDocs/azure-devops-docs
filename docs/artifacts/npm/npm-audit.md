@@ -3,7 +3,7 @@ title: Use npm audit with Azure Artifacts
 description: Use npm audit within Azure DevOps Services with Azure Artifacts
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

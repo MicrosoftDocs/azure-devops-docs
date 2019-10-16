@@ -5,7 +5,7 @@ description: Create a local copy of an existing repo using Visual Studio or comm
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
@@ -69,8 +69,8 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 If you want to switch the process a project uses from one system process to another, you can do that. To make these changes, you must create an inherited process based on the process you want to switch to. For example, instructions are provided to support the following changes: 
 
-- [From Basic to Agile](change-process-agile-to-scrum.md)
-- [From Scrum to Agile](change-process-agile-to-scrum.md)
+- [From Basic to Agile](change-process-basic-to-agile.md)
+- [From Scrum to Agile](change-process-scrum-to-agile.md)
 - [From Agile to Scrum](change-process-agile-to-scrum.md)
 
 Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI. 

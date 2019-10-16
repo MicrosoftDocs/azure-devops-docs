@@ -5,7 +5,7 @@ description: Provides credentials for Azure Artifacts feeds and external Maven r
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/06/2019

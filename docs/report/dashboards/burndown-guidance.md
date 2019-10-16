@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

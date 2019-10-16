@@ -5,7 +5,7 @@ description: Learn how to add your Organization's privacy policy URL to comply w
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/10/2019

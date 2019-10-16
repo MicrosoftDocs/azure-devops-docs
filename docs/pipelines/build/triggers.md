@@ -4,7 +4,7 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18

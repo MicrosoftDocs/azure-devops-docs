@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Service Hook Consumers | REST API Reference for Team Foundation Server
 description: Work with service hook consumers programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B05297FC-F542-42FD-ACDA-E9734974ACBC
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley

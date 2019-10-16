@@ -6,7 +6,7 @@ description: Change picture, set preferred email, or other user preferences from
 ms.prod: devops
 ms.technology: devops-settings
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.date: 10/16/2019
 
 # Set user preferences
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 From your profile page, you can change your picture or other account preferences. In this article, learn how to set the following:
 
@@ -40,6 +40,7 @@ From your profile page, you can change your picture or other account preferences
 </tr>
 </tbody>
 </table>
+
 
 Locale settings include language, date and time pattern, time zone, and user interface theme.
 
@@ -102,7 +103,40 @@ Locale settings include language, date and time pattern, time zone, and user int
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
 
-::: moniker-end  
+::: moniker-end
+
+For more information on setting your preferences, see the following articles.
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Task</th>
+</tr>
+<tr>
+<td>Security</td>
+<td>
+<ul>
+<li><a href="../../accounts/use-personal-access-tokens-to-authenticate.md" data-raw-source="[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)">Personal access tokens</a></li>
+<li><a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)">Alternate authentication credentials</a></li>
+<li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)">OAuth authorizations</a></li>
+<li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)">SSH public keys</a></li>
+ <li><a href="manage-authorizations.md" data-raw-source="[Manage authorizations](manage-authorizations.md)">Manage authorizations</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>
+<ul>
+<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="../../integrate/concepts/rate-limits.md" data-raw-source="[Usage](../../integrate/concepts/rate-limits.md)">Usage</a></li>
+<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li> 
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Related articles
 

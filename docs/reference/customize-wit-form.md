@@ -5,7 +5,7 @@ description: Customize the web version of the work item form in Azure DevOps Ser
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

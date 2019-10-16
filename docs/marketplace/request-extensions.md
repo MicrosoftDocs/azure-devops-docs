@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/18/2019

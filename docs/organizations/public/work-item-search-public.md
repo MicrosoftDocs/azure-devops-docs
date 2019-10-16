@@ -5,7 +5,7 @@ description: Use Work Item Search to search across all work item fields over one
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

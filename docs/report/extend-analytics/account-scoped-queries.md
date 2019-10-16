@@ -5,7 +5,7 @@ description: How to guide to query OData Analytics for an organization or at the
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: kokosins
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

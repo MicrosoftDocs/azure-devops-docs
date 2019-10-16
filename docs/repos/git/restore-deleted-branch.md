@@ -5,7 +5,7 @@ description: Use the branches page to restore a deleted Git branch in Azure DevO
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kangan
 author: kaylangan
 ms.topic: conceptual

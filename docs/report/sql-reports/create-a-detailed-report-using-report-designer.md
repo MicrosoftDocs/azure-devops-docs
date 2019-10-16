@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

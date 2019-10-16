@@ -2,7 +2,7 @@
 title: Packages | REST API Reference for VSTS 
 description: Work with packages programmatically using the REST APIs for VSTS .
 ms.assetid: 1f8825e8-7916-488b-b71e-c807f1f5234d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem

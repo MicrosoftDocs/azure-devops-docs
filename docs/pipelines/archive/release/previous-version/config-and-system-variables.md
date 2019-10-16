@@ -6,7 +6,7 @@ ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

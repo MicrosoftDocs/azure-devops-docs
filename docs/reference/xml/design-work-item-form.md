@@ -5,7 +5,7 @@ description: Place and group fields on the form so that they can support the dat
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2017'

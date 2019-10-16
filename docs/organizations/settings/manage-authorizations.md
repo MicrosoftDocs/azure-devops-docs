@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Authorize other services to access Azure DevOps
 description: Authorize other services to work with Azure DevOps Services
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

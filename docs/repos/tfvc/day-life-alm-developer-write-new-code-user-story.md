@@ -5,7 +5,7 @@ description: A day in the life of an devops developer. Write new code for a user
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

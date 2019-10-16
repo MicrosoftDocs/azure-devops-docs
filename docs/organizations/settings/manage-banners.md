@@ -5,7 +5,7 @@ description: Add, update, or remove an information banner to your organization
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 08/01/2019

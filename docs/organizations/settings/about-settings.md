@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

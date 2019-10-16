@@ -6,7 +6,7 @@ description: Get an integrated set of features to help you plan, code, collabora
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 04/26/2019
