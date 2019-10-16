@@ -5,7 +5,7 @@ description: Enable the new work item form for customizing the work tracking exp
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

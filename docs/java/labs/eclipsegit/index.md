@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 05/13/2019

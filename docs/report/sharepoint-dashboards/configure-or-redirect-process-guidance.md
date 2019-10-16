@@ -5,7 +5,7 @@ description: How to customize links to process guidance-Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017

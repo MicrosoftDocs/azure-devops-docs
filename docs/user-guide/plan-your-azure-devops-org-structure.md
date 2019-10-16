@@ -6,7 +6,7 @@ description: Begin planning your organizational structure, including projects, t
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW

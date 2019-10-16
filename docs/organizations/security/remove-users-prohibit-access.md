@@ -5,7 +5,7 @@ description: Manage changes to an organization when users leave a project or com
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

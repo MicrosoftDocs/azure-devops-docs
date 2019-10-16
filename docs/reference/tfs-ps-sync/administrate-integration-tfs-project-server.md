@@ -5,8 +5,9 @@ description: Manage the configuration of Team Foundation Server & Project Server
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 529c5a49-31d7-4080-b3b5-1bcc95c8a102
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---

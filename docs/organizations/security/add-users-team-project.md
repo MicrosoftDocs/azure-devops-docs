@@ -4,7 +4,7 @@ description: Quickstart guide to add users to a group, project, or team
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: devops
 ms.technology: devops-security
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -341,6 +341,86 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end 
+
+::: moniker range="azure-devops"
+
+## List team members
+
+From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list) command.
+
+| [List team members](#list-members) | [Show team details](#show-details)
+
+<a id="list-members" /> 
+
+### List team members
+
+You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+
+```CLI
+az devops team list-member --team
+                           [--org]
+                           [--project]
+                           [--skip]
+                           [--top]
+```
+
+#### Parameters
+
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **skip**: Optional. Number of members to skip.
+- **top**: Optional. Maximum number of members to return.
+
+#### Example
+
+The following command lists the first five members of the team named **Fabrikam Team** and returns the details in table format.  
+
+```CLI 
+az devops team list-member --team "Fabrikam Team" --top 5 --output table
+
+ID                                    Name               Email
+------------------------------------  -----------------  --------------------------
+3b5f0c34-4aec-4bf4-8708-1d36f0dbc468  Christie Church    fabrikamfiber1@hotmail.com
+19d9411e-9a34-45bb-b985-d24d9d87c0c9  Johnnie McLeod     fabrikamfiber2@hotmail.com
+8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d  Chuck Reinhart     fabrikamfiber3@hotmail.com
+d291b0c4-a05c-4ea6-8df1-4b41d5f39eff  Jamal Hartnett     fabrikamfiber4@hotmail.com
+bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.com
+``` 
+
+<a id="show-details" /> 
+
+### Show team details
+
+You can view details about a team in your organization with the [az devops team show](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI
+az devops team show --team
+                    [--org]
+                    [--project]
+```
+
+#### Parameters
+
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example
+
+The following command shows information about the team in your organization named **Fabrikam Team** and returns the details in table format.  
+
+```CLI
+az devops team show --team "Fabrikam Team" --output table
+
+ID                                    Name          Description
+------------------------------------  ------------  -------------------------------------------------
+a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. Was Fabrikam Fiber Team
+``` 
+
+::: moniker-end 
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
 
 ## Next steps
 

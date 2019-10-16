@@ -5,7 +5,7 @@ description: View build and release status an pipelines for a public project
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

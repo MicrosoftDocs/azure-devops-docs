@@ -5,7 +5,7 @@ description: Learn how to automatically build, test, and deploy your code with A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 05/31/2019

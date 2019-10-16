@@ -6,7 +6,7 @@ description: Learn how to share code within a Git repo and new project
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 03/26/2019
