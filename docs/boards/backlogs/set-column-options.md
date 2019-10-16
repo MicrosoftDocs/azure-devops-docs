@@ -8,6 +8,7 @@ ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 06/28/2019
 ---

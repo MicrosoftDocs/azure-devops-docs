@@ -9,6 +9,7 @@ ms.assetid: ecd05065-521c-451f-acd9-efde10fa1822
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
+monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---
 

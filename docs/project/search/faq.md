@@ -4,7 +4,7 @@ description: Troubleshooting issues regarding Azure DevOps Search for Azure DevO
 ms.prod: devops
 ms.technology: devops-collab
 ms.manager: jillfra
-ms.author: sancha
+ms.author: sunar
 author: sandeepchads
 ms.date: 01/23/2019
 monikerRange: '> tfs-2018'

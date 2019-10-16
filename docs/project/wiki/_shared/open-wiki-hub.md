@@ -13,7 +13,7 @@ If you need to switch your team project, choose the ![project-icon.png](../../..
 
 ::: moniker range="= azure-devops"
 
-You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/get-started.md).
+You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI

@@ -33,7 +33,7 @@ Project members have access to resources beyond the specific project. Those reso
 
 * Information about other members, including their email address and other contact details that's hidden from non-members.
 * The **Settings** area, including security groups and permissions.
-* All installed extensions, including paid extensions (if you assign a license).
+* All installed extensions.
 * [Process](../settings/work/manage-process.md) metadata from all processes in the organization, including the work item types, its fields, and picklist items. Picklist items can show sensitive information like release dates, as shown in this example:
 
    ![Edit the private release dates field](../projects/_img/edit-field-release-in-feature.png)

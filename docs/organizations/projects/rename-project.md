@@ -12,7 +12,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 09/17/2019
+ms.date: 10/15/2019
 ---
 
 # Rename a project in Azure DevOps
