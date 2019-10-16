@@ -171,7 +171,9 @@ recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
+::: moniker range="<= tfs-2018"
 You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
+::: moniker-end
 
 ### Global release retention policy
 
