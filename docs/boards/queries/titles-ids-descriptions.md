@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 10/16/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -78,6 +78,7 @@ For example, specify **Contains Words** and <strong>inform&#42;</strong> to filt
 > [!div class="mx-imgBorder"] 
 > ![Use wild card with Contains Words](_img/text-queries/contains-word-wildcard.png)
 
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
 <a id="undefined-value"/>
 
