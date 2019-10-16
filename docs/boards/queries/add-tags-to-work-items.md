@@ -40,6 +40,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 
 <a id="assign"></a>
+
 ## Add tags to a work item
 
 Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
@@ -72,7 +73,9 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 
 
 <a id="bulk-modify"></a>
+
 ## Bulk add or remove tags 
+
 ::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
@@ -94,6 +97,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 
 <a id="query"></a>
+
 ## Query for work items based on tags  
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
@@ -103,16 +107,20 @@ To query work items based on tags, add a clause for each tag you want to use to 
 > Adding tags to a query is supported from TFS 2013.2 and later versions.
 ::: moniker-end
 
+> [!TIP]    
+> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
 > ![Bulk add to several work items](_img/add-tags/query-tags-add-or.png) 
 
-> [!TIP]    
-> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
 
 <a id="show-tags"></a>
+
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
@@ -142,7 +150,9 @@ All tags that have been added to the listed work items appear.
 ::: moniker-end
 
 <a id="filter"></a>
+
 ## Filter lists using tags  
+
 From the web portal, you can filter backlogs, boards, and query results using tags. 
  
 ::: moniker range=">= tfs-2017"
@@ -185,7 +195,8 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015"  
+::: moniker range=">=tfs-2015"
+  
 ## Color-code tags on boards
 
 You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
@@ -212,6 +223,7 @@ Requires TFS 2015.1 or later version.
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
 ### Limits on number of tags
+
 While no hard limit exists, creating more than 100K tags for a project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/10/2018
+ms.date: 10/16/2019
 ---
 
 
@@ -21,7 +21,7 @@ ms.date: 10/10/2018
 
 
 > [!NOTE]   
-> **Feature availability**:  The Hosted XML process model is only supported for select accounts of Azure DevOps Services.  
+> **Feature availability**:  The Hosted XML process model is only supported for organizations that have been migrated to Azure DevOps Services using the TFS Database Import Service(which is no longer available).  
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 

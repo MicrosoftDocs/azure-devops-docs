@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 03/20/2018
+ms.date: 10/16/2019
 ---
 
 # Customize a process when using Hosted XML
@@ -119,6 +119,7 @@ Refer to the [restrictions](#restrictions) below for a list of limitations impos
 <a id="rule-summary"></a>
 
 ## Restrictions
+
 You can import up to 32 processes to Azure DevOps Services. Your custom process must conform to all rules summarized below, otherwise a validation error message may occur upon import.
 * [Process](#process)
   * [Process configuration](#process-configuration)
@@ -136,7 +137,9 @@ You can import up to 32 processes to Azure DevOps Services. Your custom process 
     * [Form layout](#work-item-form-layout)
 
 <a id="process"></a>
+
 ### Process template
+
 Your ProcessTemplate.xml file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../../../../reference/process-templates/process-template-xml-elements-reference.md). In addition, it must meet the following conditions:  
 * Limit the number of WITs defined to 64
 * Contain only one Categories.xml definition file  
@@ -154,7 +157,9 @@ In addition, your process must pass the following validation checks:
 * Process total size should be 2 GB or less, or project creation fails.
 
 <a id="process-configuration"></a>
+
 ### Process configuration
+
 The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In addition, it must meet the following conditions:  
 *   Specify all ```TypeFields```
 *   Limit definition to five portfolio backlogs  
@@ -163,13 +168,17 @@ The ProcessConfiguration.xml definition file must conform to the syntax and rule
 *   Contain required workflow state-to-metastate mappings, and not reference unsupported metastates    
 
 <a id="categories"></a>
+
 ### Categories
+
 The Categories.xml definition file must conform to the syntax and rules described in [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md). In addition it must meet the following conditions:    
 *   Limit definition to 32 categories  
 *   Define all categories referenced in the ProcessConfiguration.xml file         
 
 <a id="work-item-types"></a>
+
 ### Work item types
+
 The  ```WITD``` element and its child elements must conform to the syntax and rules described in [WITD XML element reference](../../../../reference/xml/all-witd-xml-elements-reference.md). In addition, it must meet the following conditions:       
 *   Limit definition of 512 fields within a single WIT, and 512 fields across all WITs 
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files 
@@ -180,7 +189,9 @@ The  ```WITD``` element and its child elements must conform to the syntax and ru
 
 
 <a id="work-item-fields"></a>
+
 ### Work item fields
+
 The ```FIELDS``` section and its child elements must conform to the syntax and rules described in [FIELD XML element reference](../../../../reference/xml/field-definition-element-reference.md). In addition, it must meet the following conditions:      
 *   ```FIELD``` element and child elements can contain a ```GLOBALLIST``` element  
 *   The friendly name and required refname assigned to a WIT must be unique within the set of WIT definition files  
@@ -188,14 +199,18 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
     Reference names must contain only letters, no spaces, and at least one period (.). 
 
 <a id="limits"></a>
+
 #### Limit restrictions  
+
 *   Limit definition to 512 fields 
 *   Limit definition of person-name fields, ones with an attribute of ```syncnamechanges=true```, to 64 per work item type
 *   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
 <a id="required-fields"></a>
+
 #### Required fields
+
 *   For all WITs that belong to a category used to define a process configuration backlog, specify the field used for ```type=Team``` in the ProcessConfiguration.xml file 
 *   For all WITs that belong to a category used to define a process configuration backlog, specify the field used for ```type=Order``` in the ProcessConfiguration.xml file    
 *   For all WITs that belong to a category used to define a regular backlog or portfolio backlog, specify the field used for ```type=Effort``` in the ProcessConfiguration.xml file 
@@ -207,6 +222,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 
 
 #### Rule restrictions
+
 In addition to the standard [field rule restrictions](../../../../reference/xml/apply-rule-work-item-field.md), the following restrictions are enforced:
 *   Field rule elements can't specify the *for* and *not* attributes   
 *   ```FIELD``` elements can't contain the following child rule elements: ```CANNOTLOSEVALUE```,  ```NOTSAMEAS```, ```MATCH```, ```PROHIBITEDVALUES``` 
@@ -217,12 +233,16 @@ In addition to the standard [field rule restrictions](../../../../reference/xml/
     *   System.ChangedBy can contain the rules: ```REQUIRED```, ```DEFAULT```, ```ALLOWEXISTINGVALUE``` and ```VALIDUSER```.    
 
 <a id="consistent-names-attributes"></a>
-#### Consistent names and attributes   
+
+#### Consistent names and attributes 
+  
 *   Within the process: ```name```, ```type```, and other attributes defined within a ```FIELD``` element must be the same across all WIT definitions
 *   Within a project collection: ```name```, ```type```, and other attributes defined within a ```FIELD``` element must be the same across all WIT definitions      
 
 <a id="identity-fields"></a>
+
 #### Identity fields 
+
 Identity fields correspond to fields used to contain account, user, or group names. 
 The following core system fields are hard-coded as identity fields:    
 *   Assigned To (System.AssignedTo)  
@@ -249,7 +269,8 @@ For the current release of import process, the following restrictions are in eff
     *   ```SUGGESTEDVALUES```   
 2.  Don't specify any rules that contain non-identity values within the ```FIELD``` definition of an identity field.  
 
-**Correct example**   
+**Correct example**  
+ 
 To limit the account names that are valid within an identity field, specify the  ```VALIDUSER```  with a group name attribute.   
 ```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
@@ -258,10 +279,12 @@ To limit the account names that are valid within an identity field, specify the 
         <HELPTEXT>The program manager responsible for signing off on the user story.</HELPTEXT>
     </FIELD>
 ```
+
 Prior to importing the process, make sure that you've created the group in the project(s) that the process updates. 
 
 
 **Incorrect example**  
+
 The following example isn't valid as it specifies the ```ALLOWEDVALUES``` element and the ```DEFAULT``` element which specifies ```value="Not Assigned"```, a non-identity string.    
 ```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
