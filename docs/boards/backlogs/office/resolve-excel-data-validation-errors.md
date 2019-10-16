@@ -5,7 +5,7 @@ description: Address rule errors that occur when publishing a list from Excel or
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

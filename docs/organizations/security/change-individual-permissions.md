@@ -5,7 +5,7 @@ description: Add custom security groups, change permissions for groups or indivi
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

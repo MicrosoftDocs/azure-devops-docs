@@ -5,7 +5,7 @@ description: Use the branches page to delete a Git branch in Azure DevOps Servic
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

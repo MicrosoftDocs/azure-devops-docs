@@ -5,7 +5,7 @@ description: Configure teams to support portfolio backlogs to track progress acr
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Overview | REST API Reference for Team Foundation Server
 description: Work with test management programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 82EB89BA-B237-453B-8F15-E2747458C790
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

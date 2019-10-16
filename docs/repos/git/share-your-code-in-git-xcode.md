@@ -5,7 +5,7 @@ description: "Share code in Git using Xcode"
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

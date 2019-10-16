@@ -5,7 +5,7 @@ description: Quick Start with Git and Azure DevOps Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

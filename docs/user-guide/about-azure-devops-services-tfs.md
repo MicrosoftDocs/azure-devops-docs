@@ -7,7 +7,7 @@ description: Understand the fundamental differences between Azure DevOps Service
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 

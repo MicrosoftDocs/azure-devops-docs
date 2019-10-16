@@ -6,7 +6,7 @@ description: Learn how you can automatically generate a CI/CD pipeline to deploy
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/02/2017

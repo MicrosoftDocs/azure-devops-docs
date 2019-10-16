@@ -6,7 +6,7 @@ description: Index of documentation for finding, requesting, installing, and uni
 ms.assetid: afd7c3b8-a09f-4a38-8207-bc84e678a39b
 ms.prod: devops
 ms.technology: devops-marketplace
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/10/2019

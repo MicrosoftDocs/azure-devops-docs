@@ -5,7 +5,7 @@ description: Syntax and usage of the FIELD element used to specify data fields w
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/16/2017

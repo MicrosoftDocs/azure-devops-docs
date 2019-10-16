@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: XAML Builds | REST API Reference for Team Foundation Server
 description: Get builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 0B7A8B2D-8901-46FB-8F15-CF6101B24218
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

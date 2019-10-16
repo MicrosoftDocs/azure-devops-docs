@@ -5,7 +5,7 @@ ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

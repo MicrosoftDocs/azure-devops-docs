@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

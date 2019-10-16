@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

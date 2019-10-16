@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Query Language | REST API Reference for Team Foundation Server
 description: Work with the work item query language programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C98285FE-3882-4F35-9E19-9A6E109EED66
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
