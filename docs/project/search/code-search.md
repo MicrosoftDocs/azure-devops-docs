@@ -160,7 +160,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted (only the first 100 hits are highlighted). 
