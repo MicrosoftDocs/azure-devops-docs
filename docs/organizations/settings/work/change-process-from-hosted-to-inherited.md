@@ -5,7 +5,7 @@ description: Upgrade a project that uses a Hosted XML process model to an inheri
 ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

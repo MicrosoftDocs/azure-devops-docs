@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 07/05/2019

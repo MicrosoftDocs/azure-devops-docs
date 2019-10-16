@@ -5,7 +5,7 @@ title: Custom build/release task reference | Extensions for Azure DevOps Service
 description: Reference for creating a custom build or release task with an extension in Azure DevOps Services.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

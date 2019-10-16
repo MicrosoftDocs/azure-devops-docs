@@ -4,7 +4,7 @@ description: Automatically build JavaScript and Node.js apps with Azure Pipeline
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.reviewer: vijayma

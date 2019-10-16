@@ -4,7 +4,7 @@ description: Use these controls in your extension for Azure DevOps Services.
 ms.assetid: ccb6413e-ca29-4f3d-8f1d-caf896706b10
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

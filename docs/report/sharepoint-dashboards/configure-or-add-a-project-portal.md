@@ -5,7 +5,7 @@ description: How the SharePoint project portal provides access to shared documen
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017

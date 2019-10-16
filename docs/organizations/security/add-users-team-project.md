@@ -4,7 +4,7 @@ description: Quickstart guide to add users to a group, project, or team
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: devops
 ms.technology: devops-security
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

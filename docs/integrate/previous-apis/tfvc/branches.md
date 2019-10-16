@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Branches | REST API Reference for Team Foundation Server
 description: Work with TFVC branches programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 9C1923A9-4887-4DC4-9C20-153C19D453CE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

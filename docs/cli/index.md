@@ -3,10 +3,10 @@ title: Learn about Azure DevOps command line interface extension
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps extension command line interface 
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: geverghe
 author: KathrynEE
 monikerRange: 'azure-devops'

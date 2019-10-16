@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'

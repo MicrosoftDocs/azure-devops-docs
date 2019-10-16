@@ -5,7 +5,7 @@ title: Service Endpoints | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

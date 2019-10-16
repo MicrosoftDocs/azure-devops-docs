@@ -8,7 +8,7 @@ ms.topic: reference
 ms.assetid: 9ff71bb8-2e3d-49ae-97c0-5c8bd37c3b93
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---

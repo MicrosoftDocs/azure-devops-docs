@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: quickstart
 ms.date: 05/18/2018

@@ -6,7 +6,7 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: elbatk
 ms.date: 10/31/2018
 monikerRange: 'azure-devops'

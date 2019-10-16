@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli

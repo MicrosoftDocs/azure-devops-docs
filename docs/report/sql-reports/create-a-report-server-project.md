@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: Use SQL Server Report Designer to create a report to track the team's progress by-Team Foundation Server 
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

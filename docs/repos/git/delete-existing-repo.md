@@ -5,7 +5,7 @@ description: Remove an existing Git repo in an Azure DevOps Services or Team Fou
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

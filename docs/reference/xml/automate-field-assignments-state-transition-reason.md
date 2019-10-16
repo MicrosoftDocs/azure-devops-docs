@@ -5,7 +5,8 @@ description: Transition work items from one state to another state based on an e
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 02/14/2017

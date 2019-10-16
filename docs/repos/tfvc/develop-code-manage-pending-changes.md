@@ -5,7 +5,7 @@ description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -5,7 +5,7 @@ description: Fix errors reported upon importing a process to support customizati
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

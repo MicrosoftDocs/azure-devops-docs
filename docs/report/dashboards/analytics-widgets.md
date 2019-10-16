@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about the widgets based on Analytics data that you can add to a dashboard  
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE

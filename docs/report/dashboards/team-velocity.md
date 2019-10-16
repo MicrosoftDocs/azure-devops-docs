@@ -8,7 +8,7 @@ ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 

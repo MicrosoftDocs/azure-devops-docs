@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 08/13/2019

@@ -5,7 +5,7 @@ description: Configure the two server products before you synchronize data betwe
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: dd8f80c2-3faa-45a2-9941-1382a8b5c910
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

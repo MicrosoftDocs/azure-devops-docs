@@ -5,7 +5,7 @@ description: Working with feeds in Jenkins-CI
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'

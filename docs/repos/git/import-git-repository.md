@@ -5,7 +5,7 @@ description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure Dev
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

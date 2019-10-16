@@ -5,7 +5,7 @@ description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
