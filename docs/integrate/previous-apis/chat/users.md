@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Room Users | REST API Reference for Team Foundation Server
 description: Work with users in team rooms programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 6452FEDA-E518-4983-B37B-C50BB17E0047
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

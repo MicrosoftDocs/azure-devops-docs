@@ -5,7 +5,7 @@ description: Best practices when integrating with the REST APIs for Azure DevOps
 ms.technology: devops-ecosystem
 ms.prod: devops
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: liho
 ms.date: 01/25/2017
 ---

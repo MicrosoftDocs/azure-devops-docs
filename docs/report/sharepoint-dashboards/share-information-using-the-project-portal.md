@@ -5,7 +5,7 @@ description: Use the SharePoint project portal to share information with your te
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/09/2017

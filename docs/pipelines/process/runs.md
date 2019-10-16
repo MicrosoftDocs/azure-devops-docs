@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
 ms.date: 05/29/2019

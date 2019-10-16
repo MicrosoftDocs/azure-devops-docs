@@ -5,7 +5,7 @@ ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/07/2018

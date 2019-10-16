@@ -5,7 +5,7 @@ ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE

@@ -4,7 +4,7 @@ description: Libraries for calling Azure DevOps Services REST APIs.
 ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
+ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

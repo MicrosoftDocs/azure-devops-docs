@@ -6,8 +6,9 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: e05d8187-c5cc-423a-b977-6ce5ad52abc4
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---

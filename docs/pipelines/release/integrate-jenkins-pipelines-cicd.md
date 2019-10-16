@@ -7,7 +7,7 @@ ms.topic: tutorial
 ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019

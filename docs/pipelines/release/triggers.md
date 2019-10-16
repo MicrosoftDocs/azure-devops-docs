@@ -5,7 +5,7 @@ ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18

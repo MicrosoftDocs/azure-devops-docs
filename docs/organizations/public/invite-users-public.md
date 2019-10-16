@@ -6,7 +6,7 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

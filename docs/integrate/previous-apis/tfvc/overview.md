@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Overview | REST API Reference for Team Foundation Server
 description: Use the REST APIs for Team Foundation Server to access TFVC resources like changesets, shelvesets, and TFVC items.
 ms.assetid: F279AADC-016F-4A89-BBFC-EFA9363D3DC0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

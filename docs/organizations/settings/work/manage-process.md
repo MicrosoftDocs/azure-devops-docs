@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

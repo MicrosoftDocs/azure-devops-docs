@@ -5,7 +5,7 @@ description: Add items, plan, order, and estimate your backlog of deliverables i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: kaelli
 author: KathrynEE  
 ms.topic: conceptual

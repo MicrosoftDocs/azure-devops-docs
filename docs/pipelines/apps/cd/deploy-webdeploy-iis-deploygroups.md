@@ -5,7 +5,7 @@ ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

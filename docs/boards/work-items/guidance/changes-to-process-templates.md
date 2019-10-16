@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

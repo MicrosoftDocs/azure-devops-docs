@@ -5,7 +5,7 @@ description: Authenticate to Azure DevOps Services and TFS Git repos using crede
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

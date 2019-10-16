@@ -5,7 +5,7 @@ title: Developing extensions for Azure DevOps Services vertical web navigation |
 description: Guidance for developing Azure DevOps Services extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast

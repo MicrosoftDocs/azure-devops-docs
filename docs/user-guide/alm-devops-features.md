@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference

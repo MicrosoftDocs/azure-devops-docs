@@ -5,7 +5,7 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam

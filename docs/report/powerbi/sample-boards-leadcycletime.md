@@ -5,7 +5,7 @@ description: Sample Power BI queries to generate Lead/Cycle Time reports
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE

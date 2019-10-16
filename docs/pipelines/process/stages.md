@@ -6,7 +6,7 @@ ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 05/03/2019

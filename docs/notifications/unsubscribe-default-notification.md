@@ -5,7 +5,7 @@ description: View your notifications and unsubscribe from a default or built-in 
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2018
