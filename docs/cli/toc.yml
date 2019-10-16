@@ -19,7 +19,7 @@
     href: azure-devops-cli-in-yaml.md  
   - name: Manage security permissions
     href: permissions.md
-  - name: Manage security connections
+  - name: Manage service connections
     href: service_endpoint.md
 - name: Troubleshooting
   items:
