@@ -213,8 +213,8 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 <ul>
 <li><p><strong>Proposed</strong>: Indicates work items that are new, not yet committed, or not yet being worked on.</p></li>
 <li><p><strong>InProgress</strong>: Indicates work items that have been committed or are actively being worked on.</p></li>
-<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the <a href="../../boards/boards/kanban-basics.md">Kanban board</a> to be valid, exactly one workflow state must be mapped to the <strong>Complete</strong> state category.</p>
-<p>Once a workflow state transitions to a state that is associated with the <strong>Complete</strong> metastate, the associated work item will fall off the product backlog. However, it will continue to be listed on the Kanban board.</p></li>
+<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the <a href="../../boards/boards/kanban-basics.md">Kanban board</a> to be valid, exactly one workflow state must be mapped to the <strong>Complete</strong> state category. If additional workflow states need to be represented, they can be mapped to the <strong>Resolved</strong> state category.</p>
+<p>Once a workflow state transitions to a state that is associated with the <strong>Complete</strong> metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.</p></li>
 </ul>
 <p>Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.</p></li>
 <li><p>Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the <strong>Resolved</strong> state category which indicates bugs that have been resolved.</p>
