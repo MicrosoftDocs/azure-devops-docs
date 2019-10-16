@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -116,6 +116,8 @@ When you inform your users of the completed change, include the following tasks 
 - [Manage your Visual Studio with MSDN subscription](/visualstudio/subscriptions/manage-vs-subscriptions), if you used a Microsoft account to sign up for Azure DevOps. Link work or school accounts to this subscription.
 
 ## Manage multiple organizations backed by Azure AD
+
+## Get list of organizations
 
 You can download a complete list of organizations backed by an Azure Active Directory tenant. 
 The following details are included:
