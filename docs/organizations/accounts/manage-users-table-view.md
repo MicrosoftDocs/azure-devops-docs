@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2019
+ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -44,7 +44,7 @@ From your web browser you can view and edit certain user information. From the A
  
 ### Manage users
 
-The Users view shows key information per user in a table. In this view, you can do the following:
+The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
@@ -57,9 +57,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users** > **Add new users**.
-
-   ![Select the Users tab, and then select Add new users](_img/_shared/add-new-users.png)
+3. Select **Users**.
 
 4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 
@@ -88,7 +86,7 @@ Access levels control which features are available to users. Permissions control
 
 ### Update a user
 
-You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```CLI
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
@@ -119,7 +117,7 @@ ID                                    Display Name         Email                
 
 ### Show users
 
-You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/get-started.md).
+You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```CLI
 az devops user show --user [--org]
@@ -145,7 +143,6 @@ ID                                    Display Name         Email                
 
 ## Related articles
 
-* [Change number of paid extension users](../billing/buy-basic-access-add-users.md)
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)

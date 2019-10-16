@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>=tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 

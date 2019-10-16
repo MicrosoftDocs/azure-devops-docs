@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 06/17/2019  

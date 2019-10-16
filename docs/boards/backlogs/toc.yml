@@ -1,5 +1,3 @@
-- name: Backlogs
-  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About backlogs 
   href: backlogs-overview.md
 - name: Quickstarts

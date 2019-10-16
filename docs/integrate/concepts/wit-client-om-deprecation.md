@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2C636EA8-6A10-48C1-9620-F792915EBB65
 ms.manager: jillfra
-ms.author: dahellem
-author: DanHellem
+ms.author: liho
+author: KathrynEE
 ms.topic: reference
 monikerRange: "azure-devops"
 ms.date: 08/29/2018
