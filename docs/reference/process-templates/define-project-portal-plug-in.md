@@ -5,7 +5,7 @@ description: Define the initial document libraries, library structure, and docum
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

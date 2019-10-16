@@ -5,7 +5,7 @@ ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE

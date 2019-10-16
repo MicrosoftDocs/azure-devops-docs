@@ -6,7 +6,7 @@ ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

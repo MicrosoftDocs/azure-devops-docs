@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'

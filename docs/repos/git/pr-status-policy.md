@@ -5,7 +5,7 @@ description: Configure a branch policy to require status from a 3rd party pull r
 ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual

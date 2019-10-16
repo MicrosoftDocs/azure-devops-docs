@@ -5,7 +5,7 @@ description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

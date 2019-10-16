@@ -5,8 +5,9 @@ titleSuffix: Azure DevOps & TFS
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 99ee70ef-3389-4f78-a600-3772b70c0022
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 10/23/2017
 ---

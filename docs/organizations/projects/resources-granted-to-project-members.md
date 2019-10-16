@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'

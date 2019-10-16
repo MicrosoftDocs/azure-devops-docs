@@ -4,7 +4,7 @@ description: Learn how to deploy to Azure using Azure Pipelines and TFS Build & 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/09/2018

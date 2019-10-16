@@ -5,7 +5,7 @@ description: XML syntax to scope the allowed links within a links control elemen
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

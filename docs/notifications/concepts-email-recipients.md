@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Describes how email recipients are determined for notifications and events in Azure DevOps Services and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

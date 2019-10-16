@@ -3,7 +3,7 @@ title: Migrate your packages to Azure Artifacts
 description: Use a PowerShell Module to easily migrate your packages to an Azure Artifacts Feed
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.reviewer: elbatk 

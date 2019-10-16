@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Uses to show the data for only those team projects that you specify.
 ms.assetid: 7e4570e4-443b-4589-9d16-5699f51664b5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

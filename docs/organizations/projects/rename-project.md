@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

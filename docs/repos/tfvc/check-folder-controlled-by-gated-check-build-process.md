@@ -5,7 +5,7 @@ description: Check in to a folder that is controlled by a gated check-in build p
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -5,7 +5,7 @@ description: Resolves data conflicts when publishing a work item from Excel or P
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

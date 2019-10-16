@@ -5,7 +5,7 @@ description: Use the branches page to create a new Git branch in Azure DevOps Se
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

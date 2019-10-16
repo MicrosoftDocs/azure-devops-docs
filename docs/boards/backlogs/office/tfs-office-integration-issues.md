@@ -5,7 +5,7 @@ description: Resolve common integration issues that occur with TFS Office integr
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

@@ -5,7 +5,7 @@ description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

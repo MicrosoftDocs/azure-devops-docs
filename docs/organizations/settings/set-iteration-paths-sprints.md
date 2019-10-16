@@ -5,7 +5,7 @@ description: Define the iterations or sprints to use when assigning work items i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

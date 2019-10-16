@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
