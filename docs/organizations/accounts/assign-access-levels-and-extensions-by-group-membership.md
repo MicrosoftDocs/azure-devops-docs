@@ -6,7 +6,7 @@ description: Learn how to assign group-based licensing for users in Azure Active
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 10/15/2019

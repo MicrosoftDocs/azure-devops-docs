@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---

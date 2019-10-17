@@ -5,7 +5,7 @@ ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: harishkragarwal
 author: harishkragarwal
 ms.date: 07/01/2019

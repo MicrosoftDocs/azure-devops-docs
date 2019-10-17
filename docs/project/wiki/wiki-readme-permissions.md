@@ -5,7 +5,7 @@ description: Default permission and access assignments made to social tools such
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference

@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: reference
 ms.date: 02/14/2017
 ---

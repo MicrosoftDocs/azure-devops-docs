@@ -5,7 +5,7 @@ description: Update a project manually to support test management.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017

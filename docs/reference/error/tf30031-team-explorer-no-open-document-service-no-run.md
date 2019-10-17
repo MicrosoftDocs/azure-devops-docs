@@ -1,11 +1,13 @@
 ---
-title: TF30031-Team Explorer can't open a document... titleSuffix: Azure DevOps & TFS
+title: TF30031-Team Explorer can't open a document... 
+titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer tries to open a document stored in the document library for a project.
 ms.prod: devops
 ms.technology: devops-agile
-ms.assetid: 80812479-89ac-41e8-8f6f-21bd4254f863
+ms.manager: mijacobs9-89ac-41e8-8f6f-21bd4254f863
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---

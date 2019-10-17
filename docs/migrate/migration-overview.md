@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

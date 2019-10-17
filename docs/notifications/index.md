@@ -4,7 +4,7 @@ description: Index to topics for getting notifications or alerts from Azure DevO
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2018
