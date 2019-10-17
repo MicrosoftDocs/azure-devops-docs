@@ -36,15 +36,15 @@ Before you disconnect your organization from your directory, and then connect to
 
 2. Open your profile menu, and then select :::image type="icon" source="../../_img/icons/actions-icon.png"::: next to Azure DevOps profile.
 
-   :::image type="content" source="_img/connect-organization-to-aad/select-more-actions.png" alt-text="Select the three dots next to Azure DevOps profile":::
+   ![Open profile and then select the three dots for more actions](_img/change-azure-ad-connection.md/select-more-actions.png)
 
 3. Select **Switch directory**.
 
-   :::image type="content" source="_img/connect-organization-to-aad/select-switch-directory.png" alt-text="Switch your Azure Active Directory":::
+   ![Switch your Azure Active Directory](_img/change-azure-ad-connection.md/select-switch-directory.png)
 
 4. Choose another directory, and then select **Switch**.
 
-   :::image type="content" source="_img/connect-organization-to-aad/switch-to-another-directory.png" alt-text="Choose another directory and then select the Switch button":::
+   ![Choose another directory and then select the Switch button](_img/change-azure-ad-connection.md/switch-to-another-directory.png)
 
    ![Select the Disconnect directory button](_img/_shared/select-disconnect-directory.png)
 
