@@ -590,7 +590,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker-end
 
 > [!TIP] 
-> There is a 2000 character limit recognized by browsers. 
+> There is a 2000 character limit imposed by some browser clients. 
 
 You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
 
