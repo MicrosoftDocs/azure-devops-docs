@@ -9,7 +9,7 @@ ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
-ms.date: 07/05/2019
+ms.date: 10/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -44,7 +44,7 @@ The build agent must have the following capabilities:
 </tr>
 </thead>
 <tr>
-<td>APK files</td>
+<td>apkFiles</td>
 <td>
 <p>Relative path from the repo root to the APK(s) you want to sign.  You can use wildcards to specify multiple files. For example:</p>
 <ul>
@@ -57,19 +57,19 @@ The build agent must have the following capabilities:
 <th style="text-align: center" colspan="2">Signing Options</th>
 </tr>
 <tr>
-<td>Sign the APK</td>
+<td>apksign</td>
 <td>
 Select this option to sign the APK with a provided Android Keystore file. Unsigned APKs can only run in an emulator. APKs must be signed to run on a device.
 </td>
 </tr>
 <tr>
-<td>Keystore file</td>
+<td>apksignerKeystoreFile</td>
 <td>
 Select or enter the file name of the Android Keystore file that should be used to sign the APK. This file must be uploaded to the <a href="../../library/secure-files.md" data-raw-source="[secure files](../../library/secure-files.md)">secure files</a> library where it is securely stored with encryption. The Android Keystore file will be used to sign the APK, but will be removed from the agent machine when the pipeline completes.
 </td>
 </tr>
 <tr>
-<td>Keystore password</td>
+<td>apksignerKeystorePassword</td>
 <td>
 <p>Enter the password for the provided Android Keystore file.</p>
 <blockquote><strong>Important: </strong> Use a new variable with its lock enabled on the Variables pane to encrypt this value. See <a href="../../process/variables.md#secret-variables" data-raw-source="[secret variables](../../process/variables.md#secret-variables)">secret variables</a>.
@@ -77,13 +77,13 @@ Select or enter the file name of the Android Keystore file that should be used t
 </td>
 </tr>
 <tr>
-<td>Alias</td>
+<td>apksignerKeystoreAlias</td>
 <td>
-Enter the alias that identifies the public/private key pair to be used in the Android Keystore file.
+Enter the alias that identifies the public/private key pair to be used in the keystore file.
 </td>
 </tr>
 <tr>
-<td>Key password</td>
+<td>apksignerKeyPassword</td>
 <td>
 Enter the key password for the alias and Android Keystore file.
 <blockquote><strong>Important: </strong> Use a new variable with its lock enabled on the Variables pane to encrypt this value. See <a href="../../process/variables.md#secret-variables" data-raw-source="[secret variables](../../process/variables.md#secret-variables)">secret variables</a>.
@@ -91,25 +91,31 @@ Enter the key password for the alias and Android Keystore file.
 </td>
 </tr>
 <tr>
-<td>Apksigner arguments</td>
+<td>apksignerArguments</td>
 <td>
-<p>(Optional) Provide any options to pass to the apksigner command line.  The default is <code>--verbose</code>.</p>
+<p>(Optional) Provide any options to pass to the apksigner command line. Default is: <code>--verbose</code>.</p>
 <p>See the <a href="https://developer.android.com/studio/command-line/apksigner" data-raw-source="[apksigner documentation](https://developer.android.com/studio/command-line/apksigner)">apksigner documentation</a>.</p>
+</td>
+</tr>
+ <tr>
+<td>apksignerFile</td>
+<td>
+<p>(Optional) Optionally specify the location of the apksigner executable used during signing. This defaults to the apksigner found in the Android SDK version folder that your application builds against.</p>
 </td>
 </tr>
 <tr>
 <th style="text-align: center" colspan="2">Zipalign Options</th>
 </tr>
 <tr>
-<td>Zipalign</td>
+<td>zipalign</td>
 <td>
-<p>(Optional) Indicate whether to zipalign your package. This reduces the amount of RAM consumed by an app. The default is <code>true</code>.</p>
+<p>(Optional) Select if you want to zipalign your package. This reduces the amount of RAM consumed by an app. The default is <code>true</code>.</p>
 </td>
 </tr>
 <tr>
-<td>Zipalign location</td>
+<td>zipalignFile</td>
 <td>
-<p>(Optional) The location of the zipalign executable used during signing. Defaults to the zipalign found in the Android SDK version folder that your application builds with.</p>
+<p>(Optional) Optionally specify the location of the zipalign executable used during signing. This defaults to the zipalign found in the Android SDK version folder that your application builds against.</p>
 </td>
 </tr>
 
