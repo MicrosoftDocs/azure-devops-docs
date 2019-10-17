@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2019
+ms.date: 10/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -126,7 +126,7 @@ The following details are included:
 - organization URLs
 - organization owners
 
-For any of the organizations that are backed by your directory, complete the following steps.
+For any of the organizations backed by your directory, complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
