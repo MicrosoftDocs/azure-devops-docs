@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
 
-
+[!INCLUDE [rest-api-docs-rollout](../../../../../../../_shared/rest-api-docs-rollout.md)]
 
 Module path: `TFS/TestManagement/RestClient`
 
