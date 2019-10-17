@@ -364,16 +364,7 @@ jobs:
     name: echovar
 ```
 
-The `runOnce` strategy of a [deployment](deployment-jobs.md) also specifies a strategy with a single job instance named `deploy`:
-
-```yaml
-strategy:
-  runOnce:
-    deploy:  # <- job name
-      steps:
-```
-
-Therefore, output variables of deployments need to be prefixed with that job name (in this case, `deploy`):
+The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
 
 ```yaml
 jobs:
@@ -397,7 +388,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-16.04'
   variables:
-    myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy.setvarStep.myOutputVar'] ]
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
