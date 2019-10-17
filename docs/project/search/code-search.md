@@ -26,6 +26,7 @@ to install the extension as an administrator.
 Non-administrative users can also request the extension is added. 
 For more information, see [Install an extension](../../marketplace/install-extension.md).
 
+> [!NOTE]
 > Only users with Basic access can use Code Search.
 
 ## Start searching
