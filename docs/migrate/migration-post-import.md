@@ -1,6 +1,7 @@
 ---
-title: Post Import
-description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps.
+title: Post migration import steps to validate and configure an organization
+titleSuffix: Azure DevOps
+description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps Services.
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
@@ -35,11 +36,11 @@ To pay for users or services in Azure DevOps Services, like hosted build and dep
 
 ## Manage users and access
 
-Your organization includes 5 free users with [Basic](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for Agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) for free&mdash;they get basic features plus additional features&mdash;based on their subscription level. Also, you can add [Stakeholder](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) for free, which allows them to have partial access to Agile tools, create work items, and view backlogs and boards.
+Your organization includes 5 free users with [Basic](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for Agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) for free&mdash;they get basic features plus additional features&mdash;based on their subscription level. Also, you can add [Stakeholder](../organizations/security/get-started-stakeholder.md) for free, which allows them to have partial access to Agile tools, create work items, and view backlogs and boards.
 
 As Visual Studio subscribers log in to the organization, they are  automatically detected. For all other users, you need to [assign paid access](../organizations/billing/buy-basic-access-add-users.md). Keep in mind, if you automate access using [group rules](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md), the rules only apply to existing users if you [remove the direct assignments](../organizations/accounts/remove-direct-assignments.md) which were applied to users during import. 
 
-**Behavior change**&mdash;Starting between Monday, November 11th and Wednesday, November 13th, the default access behavior for imports will change. Previously, all imports tried to give users an equivalent access level post import. This means that users that had **_Basic_** received Basic access, and other users started with **_Stakeholder_** access. Once this change happens, all users will start out with free **_Stakeholder_** access. **You will continue to be able to assign Basic access to any users who need it at no cost, until the end of the calendar month during which your import is run.** If you have any questions or concerns about this change, feel free to [contact us](mailto:vsc@microsoft.com).
+**Behavior change**&mdash;Starting between Monday, November 11th and Wednesday, November 13th, the default access behavior for imports will change. Previously, all imports tried to give users an equivalent access level post import. This means that users that had **_Basic_** received Basic access, and other users started with **_Stakeholder_** access. Once this change happens, all users will start out with free **_Stakeholder_** access. **You will continue to be able to assign Basic access to any users who need it at no cost, until the end of the calendar month during which your import is run.** If you have any questions or concerns about this change, feel free to [contact us](mailto:AzureDevOpsImport@microsoft.com?subject=Default%20access%20level%20change).
 
 ## Builds
 
