@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 10/18/2019
 ---
 
 
@@ -30,7 +30,9 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure Devops CLI.
+
+#### [Browser](#tab/browser)
 
 > [!TIP]    
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
@@ -47,7 +49,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 2. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
 
-3. Choose a folder within a breadcrumb to open a query folder. 
+3. Choose a folder within a breadcrumb to open a query folder.
 	> [!div class="mx-imgBorder"]  
 	> ![queries breadcrumb example](_img/example-queries/queries-breadcrumb-example.png)
 
@@ -104,6 +106,62 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 - Periodically, [triage query results](triage-work-items.md) to review and update status.  
 
 ::: moniker-end
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az boards query [--id]
+                [--org]
+                [--path]
+                [--project]
+                [--wiql] 
+``` 
+
+#### Parameters
+
+- **id**: The ID of an existing query. Required unless --path or --wiql is specified.
+- **wiql**: The query in Work Item Query Language format. Ignored if --id or --path is specified.
+- **path**: The path of an existing query. Ignored if --id is specified.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example
+
+The following command runs a query with the specified ID and shows the result in table format.  
+
+```CLI
+az boards query --id 6c286d74-26a5-4cce-bfcf-bf9123495bfe  --output table
+
+Priority    Node Name         Work Item Type    Title                             Remaining Work
+----------  ----------------  ----------------  --------------------------------  ----------------
+1           Voice             Bug               Apply fix elsewhere as needed
+2           CMMI              Bug               Slow response on form
+1           Fiber             Bug               Check issues with permissions     0
+2           Fiber             Bug               Voicemail hang issue              0
+2           FabrikamBB        Bug               Research slow response time
+1           FabrikamBB        Bug               Fix performance issues            0 
+``` 
+
+The following command runs a query with the specified WIQL and shows the result in table format.  
+
+```CLI 
+az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork], [System.AssignedTo], [System.State], [System.Tags], [System.AreaPath] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
+
+Priority    Node Name       Work Item Type    Title                  Remaining Work
+----------  --------------  ----------------  ----------------       ----------------
+2           Fabrikam Fiber  Bug               Slow response on form
+2           Fabrikam Fiber  Bug               Check permissions
+2           Fabrikam Fiber  Bug               Fix performance issue
+2           Fabrikam Fiber  Bug               Secure Sign-in 
+``` 
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * * 
 
 <a id="view-rename-delete" />
 
