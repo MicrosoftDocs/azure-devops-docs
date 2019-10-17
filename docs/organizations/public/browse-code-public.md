@@ -5,7 +5,7 @@ description: Review the code base and current work by browsing repos, files, bra
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: quickstart

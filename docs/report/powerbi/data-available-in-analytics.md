@@ -5,7 +5,7 @@ description: Data available for reporting purposes using Analytics for Azure Dev
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

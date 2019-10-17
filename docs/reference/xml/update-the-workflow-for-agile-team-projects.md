@@ -5,7 +5,7 @@ description: Update the workflow for agile projects to manually update the user 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<=tfs-2015'

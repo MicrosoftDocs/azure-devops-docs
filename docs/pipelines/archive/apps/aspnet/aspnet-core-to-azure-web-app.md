@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
 ms.custom: "mvc, seodec18"
 ms.date: 06/24/2017

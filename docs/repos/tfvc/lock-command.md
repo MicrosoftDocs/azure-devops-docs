@@ -5,7 +5,7 @@ description: Lock or unlock files or folder under TFVC version control using the
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

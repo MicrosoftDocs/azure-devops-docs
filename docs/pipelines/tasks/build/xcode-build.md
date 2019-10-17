@@ -5,7 +5,7 @@ description: Xcode Build build and release task for Azure Pipelines and Team Fou
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 08/10/2016

@@ -8,7 +8,7 @@ ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 05/23/2017
 ---
 
