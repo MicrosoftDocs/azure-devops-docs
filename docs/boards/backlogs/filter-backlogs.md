@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 10/16/2019
 ---
 
 
@@ -33,6 +33,18 @@ To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) fi
 
 > [!div class="mx-imgBorder"]  
 > ![Filter by keyword](_img/filter/filter-s144.png)  
+
+
+Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
+
+- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
+- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
+- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
+- **Tags**: All tags assigned to work items on the board
+- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
+
+> [!NOTE]   
+> Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
 
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the ![ ](../../_img/icons/filtered.png) filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
