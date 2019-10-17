@@ -482,7 +482,8 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 ### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
 
-You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it into the major and minor run numbers. 
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the the major and minor run numbers.
+The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with `task.setvariable`. These variables are available to downstream steps.
 
 ```yaml
 trigger:
@@ -492,10 +493,19 @@ trigger:
         - master
 steps:
 - bash: |
-    echo $BUILD_BUILDNUMBER | cut -d "." -f1
-   ech $BUILD_BUILDNUMBER | cut -d "." -f2
-    echo $MAJOR_RUN
-    echo $MINOR_RUN
+    MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
+    echo "This is the major run number: $MAJOR_RUN"
+    
+    MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
+    echo "This is the major run number: $MINOR_RUN"
+    
+    # create pipeline variables
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
+    echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
+
+- bash: |
+    echo My pipeline variable for major run is $MAJOR
+    echo My pipeline variable for minor run is $MINOR
 ```
 
 <!-- ENDSECTION -->
