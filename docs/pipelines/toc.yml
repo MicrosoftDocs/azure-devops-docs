@@ -356,7 +356,7 @@
     href: policies/retention.md
   - name: Run (build) number
     href: process/run-number.md
-    displayName: build (build) number
+    displayName: build number, run number
   - name: Runs
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
