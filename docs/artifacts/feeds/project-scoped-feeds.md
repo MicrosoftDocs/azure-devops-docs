@@ -10,15 +10,9 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 * The URL of a project-scoped feed will include the project where organization-scoped feed URL won't.
 
-    * Project-scoped feed:
-    ```
-    https://feeds.codedev.ms/contoso/projectId/_apis/Packaging/Feeds
-    ```
+    * Project-scoped feed: `https://feeds.codedev.ms/contoso/projectId/_apis/Packaging/Feeds`
 
-    * Organization-scoped feed:
-    ```
-    https://feeds.codedev.ms/contoso/_apis/Packaging/Feeds
-    ```
+    * Organization-scoped feed: ` https://feeds.codedev.ms/contoso/_apis/Packaging/Feeds`
 
 * All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
 
