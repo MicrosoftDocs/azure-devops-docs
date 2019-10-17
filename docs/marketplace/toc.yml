@@ -1,5 +1,5 @@
 - name: Marketplace extensions
-  href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json
+  href: overview.md
 - name: Trusting Marketplace offerings
   href: trust.md
 - name: Quickstarts
@@ -21,4 +21,4 @@
 - name: Resources
   items: 
   - name: Get extensions for Visual Studio
-    href: https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019#install-or-uninstall-visual-studio-extensions
+    href: /visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019#install-or-uninstall-visual-studio-extensions

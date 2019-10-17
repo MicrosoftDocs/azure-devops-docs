@@ -12019,6 +12019,11 @@
       "source_path": "docs/report/sharepoint-dashboards/index.md",
       "redirect_url": "/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/index.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
+      "redirect_document_id": false
     }
   ]
 }
