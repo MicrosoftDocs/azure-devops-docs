@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2019
+ms.date: 10/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -117,6 +117,8 @@ When you inform your users of the completed change, include the following tasks 
 
 ## Manage multiple organizations backed by Azure AD
 
+## Get list of organizations
+
 You can download a complete list of organizations backed by an Azure Active Directory tenant. 
 The following details are included:
 - organization IDs
@@ -124,7 +126,7 @@ The following details are included:
 - organization URLs
 - organization owners
 
-For any of the organizations that are backed by your directory, complete the following steps.
+For any of the organizations backed by your directory, complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
