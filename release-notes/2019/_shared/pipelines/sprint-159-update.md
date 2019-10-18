@@ -21,7 +21,7 @@ We've made updates to several of the Azure Pipelines hosted VM images. The follo
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 
 > [!Note] 
-> We will remove Ruby 2.3 from all images in a future update since it [reached end-of-life on March 31, 2019](https://www.ruby-lang.org/en/news/2019/03/31/support-of-ruby-2-3-has-ended/).
+> We will remove Ruby 2.3.x from all images in a future update since it [reached end-of-life on March 31, 2019](https://www.ruby-lang.org/en/news/2019/03/31/support-of-ruby-2-3-has-ended/). In addition, we will remove Python 3.4.x which [reached end-of-life on March 18, 2019](https://www.python.org/downloads/release/python-340/).
 
 ### CD capabilities for your multi-stage YAML pipelines
 
