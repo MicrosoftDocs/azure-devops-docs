@@ -9,12 +9,14 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/18/2019
 ---
 
 # Call a REST API
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
+
+[!INCLUDE [rest-api-docs-rollout](../../_shared/rest-api-docs-rollout.md)]
 
 ## Client services
 
