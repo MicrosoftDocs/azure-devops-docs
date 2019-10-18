@@ -21,6 +21,7 @@
   - name: High-performing queries
     href: high-performing-queries.md 
 - name: Samples
+  expanded: true
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
