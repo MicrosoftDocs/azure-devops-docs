@@ -24,6 +24,12 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ::: moniker-end
 
+
+## My pipeline isn't starting
+
+## My pipeline started but didn't complete successfully
+## Check for failures of command-line steps
+## My pipeline is failing on a command-line step
 ## Run commands locally at the command prompt
 
 It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
@@ -38,6 +44,14 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 
 ## Get logs to diagnose problems
+
+* [Build and Release logs](#build-and-release-logs)
+* [Diagnostic logs](#diagnostic-logs)
+  * [Worker diagnostic logs](#worker-diagnostic-logs)
+  * [Agent diagnostic logs](#agent-diagnostic-logs)
+  * [Other logs](#other-logs)
+* [HTTP trace logs](#http-trace-logs)
+
 
 
 ### Build and Release logs
@@ -150,13 +164,16 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 
 5. Restart the agent.
 
-## File- and folder-in-use errors
+## File or folder in use errors
 
-File or folder in use errors are often indicated by error messages such as:
-> Access to the path [...] is denied.  
-> The process cannot access the file [...] because it is being used by another process.  
-> Access is denied.  
-> Can't move [...] to [...]
+File or folder in use errors are often indicated by error messages such as: `Access to the path [...] is denied.`, `The process cannot access the file [...] because it is being used by another process.`, `Access is denied.`, `Can't move [...] to [...]`
+
+Troubleshooting steps:
+
+* [Detect files and folders in use](#detect-files-and-folders-in-use)
+* [Anti-virus exclusion](#anti-virus-exclusion)
+* [MSBuild and /nodeReuse:false](#msbuild-and-nodereusefalse)
+* [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
 
 ### Detect files and folders in use
 
@@ -188,6 +205,12 @@ File-in-use issues may result when leveraging the concurrent-process feature of 
 If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
 
 ## Process hang
+
+Process hang causes and troubleshooting steps:
+
+* [Waiting for Input](#waiting-for-input)
+* [Process dump](#process-dump)
+* [WiX project](#wix-project)
 
 ### Waiting for Input
 
@@ -226,6 +249,7 @@ If your pipeline includes a Bash script that sets variables using the `##vso` co
 This occurs because of an interaction with `set -x`.
 The solution is to disable `set -x` temporarily before setting a variable.
 The Bash syntax for doing that is `set +x`.
+
 ```bash
 set +x
 echo ##vso[task.setvariable variable=MY_VAR]my_value
