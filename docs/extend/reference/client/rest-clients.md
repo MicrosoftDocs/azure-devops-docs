@@ -17,7 +17,7 @@ ms.date: 10/18/2019
 
 A REST client simplifies calling [Azure DevOps Services REST APIs](/rest/api/vsts/) from your client-side (JavaScript/TypeScript) extension code.
 
-[!INCLUDE [rest-api-docs-rollout](../../../../../../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../../_shared/rest-api-docs-rollout.md)]
 
 ### Get started
 
