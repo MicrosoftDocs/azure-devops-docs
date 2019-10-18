@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build an Android app with .
+Use this task in a build or release pipeline to build an Android app with Xamarin.
 
 ## Demands
 
