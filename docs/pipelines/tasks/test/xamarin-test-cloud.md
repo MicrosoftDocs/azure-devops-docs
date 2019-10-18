@@ -21,7 +21,8 @@ monikerRange: '>= tfs-2015'
 This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
 > [!NOTE]
-> This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AppCenterTestV1) task instead.
+> This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AppCenterTestV1) task instead. [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+
 
 ## Demands
 
