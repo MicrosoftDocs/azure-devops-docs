@@ -66,7 +66,7 @@ The **Total Scope** line indicates the number of work items added after the spri
 > ![Choose another team](_img/burndown/analytics-burndown-stories-count-past-s159.png) 
 
 > [!NOTE]  
-> The Scope increase line reflects the number of new user stories added to the sprint. If the team's default iteration is the **@CurrentIteration**, then new user stories are added to the current iteration. The scope decreases as the Iteration Path is modified. 
+> The Scope increase line reflects the number of new user stories added to the sprint. If the team's default iteration is the <strong>@CurrentIteration</strong>, then new user stories are added to the current iteration. The scope decreases as the Iteration Path is modified. 
 
 ::: moniker-end
  
@@ -195,7 +195,6 @@ When you choose to view the **Count of Work Items**, the blue area shows the cou
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Count of Work Items](_img/burndown/analytics-burndown-count-of-work-items-s159.png)
 
-* * *
 
 #### [Sum of Story Points](#tab/story-points)
 
@@ -255,18 +254,18 @@ You can review sprint burndown in-context reports to show the team patterns in e
 #### [May](#tab/may)
 
 > [!div class="mx-imgBorder"]  
-> ![May burndown](_img/burndown/analytics-burndown-trend-agile-past-may.png)
+> ![May burndown](_img/burndown/may.png)
 
 #### [June](#tab/june)
 
 
 > [!div class="mx-imgBorder"]  
-> ![June burndown](_img/burndown/analytics-burndown-trend-agile-past-june.png) 
+> ![June burndown](_img/burndown/june.png) 
 
 #### [July](#tab/july)
 
 > [!div class="mx-imgBorder"]  
-> ![July burndown](_img/burndown/analytics-burndown-trend-agile-past-july.png)
+> ![July burndown](_img/burndown/july.png)
 
 ::: moniker-end
 
