@@ -16,7 +16,7 @@ ms.date: 10/18/2019
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
 
-[!INCLUDE [rest-api-docs-rollout](../../../../../../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../_shared/rest-api-docs-rollout.md)]
 
 ## Client services
 
