@@ -39,7 +39,14 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+
+::: moniker range="azure-devops-2019"
+> [!NOTE]  
+> You can't add an in-context report to a dashboard. However, you can add the [Analytics-based burndown or burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) to a dashboard. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
 > [!NOTE]  
 > You can't add an in-context report to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown) to a dashboard. 
 
@@ -60,7 +67,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 The in-context sprint burndown report is based on either a count of tasks or Remaining Work estimates, or other numeric field that you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 A healthy sprint burndown chart will look something like the image shown below. Typically, there will be a stair-case burndown as individual team members may only update their work items once a week or every few days. 
-The **Total Scope** line indicates the number of work items added after the sprint starts. The <strong>Ideal Trend/strong> line is calculated based on the number of work items, days in the sprint, and number of working days. </p>
+The **Total Scope** line indicates the number of work items added after the sprint starts. The <strong>Ideal Trend</strong> line is calculated based on the number of work items, days in the sprint, and number of working days. </p>
 
 The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, 3 work items are still active at the end of the sprint.  
 
@@ -171,16 +178,20 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 1. To open the Sprint burndown report, choose **Analytics**. 
 
+	> [!div class="mx-imgBorder"]  
+	> ![Open Analytics](_img/burndown/open-analytics.png)
+
 1. Use the interactive controls to choose from the following options:  
 
 	a. The **Start Date** and **End Date** of the sprint. These will default to the team's current iteration sprint dates.   
-	b. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.
-	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of another fields, such as Story Points, Effort, or Size, or other field  
-	d. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../organizations/settings/set-working-days.md) and [Set sprint capacity](set-capacity.md). 
 
-	Choose **Reset** to reset the controls to the default options. 
+	b. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.  
 
- 	By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of another fields, such as Story Points, Effort, or Size, or other field.  
+
+	d. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../organizations/settings/set-working-days.md) and [Set sprint capacity](set-capacity.md).  
+
+	Choose **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
 1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over any point on the chart to show a summary of the data for a specific day.
 
@@ -216,15 +227,6 @@ When you choose to view the **Stories backlog** and **Sum of Story Points**, the
 
 The selections you make are only set for you, and persist across sessions until you change them. 
 
-### Add the report to a dashboard
-
-1. To add the report to a dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](../../report/dashboards/_img/add-charts/add-analytics-chart-abbreviated.png) 
-
-1. Select the dashboard and choose **OK**.  
-
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -249,42 +251,25 @@ Choose the chart to display it in a larger view.
 > ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
 
-You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
+> [!div class="mx-imgBorder"]  
+> ![Opened Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
-#### [May](#tab/may)
+## Add the report to a dashboard
 
-> [!div class="mx-imgBorder"]  
-> ![May burndown](_img/burndown/may.png)
+1. To add the report to a dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
 
-#### [June](#tab/june)
+	> [!div class="mx-imgBorder"]  
+	> ![Analytics in-context report, Copy to dashboard](../../report/dashboards/_img/add-charts/add-analytics-chart-abbreviated.png) 
 
-
-> [!div class="mx-imgBorder"]  
-> ![June burndown](_img/burndown/june.png) 
-
-#### [July](#tab/july)
-
-> [!div class="mx-imgBorder"]  
-> ![July burndown](_img/burndown/july.png)
+1. Select the dashboard and choose **OK**.  
 
 ::: moniker-end
-
-::: moniker range="< azure-devops"
-
-| Sprint 1   |  Sprint 2  | Sprint 3 |  
-|------------|------------|----------|  
-|![Sprint 1](_img/ALM_SB_Chart_S1_225.png) |![Sprint 2](_img/ALM_SB_Chart_S2_225.png) |![Sprint 3](_img/ALM_SB_Chart_S3_225.png) |  
-
-::: moniker-end
-
- 
-Teams may find it useful to review these reports periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
-*   How does our projected velocity match up to our actual velocity? 
-*   How can we more accurately determine how much we will be able to accomplish in a sprint? 
-*   How can we complete work at a more regular pace throughout the sprint?
 
 
 ## Team activities to track tasks and Remaining Work  
@@ -321,7 +306,6 @@ If your sprint burndown chart appears empty, check the following:
 
 As you complete each sprint, the system maintains a history of your activity. 
 
-
 ::: moniker range=">= azure-devops-2019"
 
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.
@@ -346,6 +330,43 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
 
 ::: moniker-end
+
+
+You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
+
+::: moniker range="azure-devops"
+
+#### [May](#tab/may)
+
+> [!div class="mx-imgBorder"]  
+> ![May burndown](_img/burndown/may.png)
+
+#### [June](#tab/june)
+
+
+> [!div class="mx-imgBorder"]  
+> ![June burndown](_img/burndown/june.png) 
+
+#### [July](#tab/july)
+
+> [!div class="mx-imgBorder"]  
+> ![July burndown](_img/burndown/july.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+| Sprint 1   |  Sprint 2  | Sprint 3 |  
+|------------|------------|----------|  
+|![Sprint 1](_img/ALM_SB_Chart_S1_225.png) |![Sprint 2](_img/ALM_SB_Chart_S2_225.png) |![Sprint 3](_img/ALM_SB_Chart_S3_225.png) |  
+
+::: moniker-end
+
+Teams may find it useful to review these reports periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
+*   How does our projected velocity match up to our actual velocity? 
+*   How can we more accurately determine how much we will be able to accomplish in a sprint? 
+*   How can we complete work at a more regular pace throughout the sprint?
+
 
 ## Try this next
 
