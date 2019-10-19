@@ -21,13 +21,15 @@ ms.date: 10/17/2019
 
 ::: moniker range="azure-devops"
 
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The Analytics in-context sprint burndown report supports tracking a burndown of the number of Tasks or sum of Remaining Work, or other numeric field. If you want to track progress using other work item types, then you can use the [Analytics-based burndown and burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide more configuration options. 
+Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The Analytics in-context sprint burndown report supports tracking a burndown based on a count of work items or a sum of Story Points/Size/Effort, Remaining Work, or other numeric field. 
+
+You can add this report to a dashboard, or track progress using the [Analytics-based burndown or burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide additional configuration options. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The in-context sprint burndown report supports tracking a burndown of Remaining Work. If you don't track Tasks or Remaining Work, then you can use the [Analytics-based burndown and burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide more configuration options. 
+Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The in-context sprint burndown report supports tracking a burndown of Remaining Work. If you don't track Tasks or Remaining Work, then you can use the [Analytics-based burndown and burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide more configuration options. 
 
 ::: moniker-end
 
@@ -37,7 +39,7 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 > [!NOTE]  
 > You can't add an in-context report to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown) to a dashboard. 
 
@@ -51,22 +53,22 @@ Use this article to learn:
 
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
-
+## Overview of the in-context sprint burndown report
 
 ::: moniker range="azure-devops"
 
 The in-context sprint burndown report is based on either a count of tasks or Remaining Work estimates, or other numeric field that you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
-
 A healthy sprint burndown chart will look something like the image shown below. Typically, there will be a stair-case burndown as individual team members may only update their work items once a week or every few days. 
-The **Total Scope** line indicates the number of work items added after the sprint starts. The <strong>Projected Completion Date</strong> is calculated by considering the average burndown and total scope of tasks added to the sprint.</p>
-<p>The blue area indicates the number of work items active or in progress each day of the sprint. While at the end of the sprint, the blue area indicates 3 work items are still active. 
+The **Total Scope** line indicates the number of work items added after the sprint starts. The <strong>Ideal Trend/strong> line is calculated based on the number of work items, days in the sprint, and number of working days. </p>
+
+The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, 3 work items are still active at the end of the sprint.  
 
 > [!div class="mx-imgBorder"]  
 > ![Choose another team](_img/burndown/analytics-burndown-stories-count-past-s159.png) 
 
 > [!NOTE]  
-> The Scope increase line reflects the number of new user stories added to the sprint. If the team's default iteration is the <strong>@CurrentIteration</strong>, then new user stories are added to the current iteration. The scope decreases as the Iteration Path is modified. 
+> The Scope increase line reflects the number of new user stories added to the sprint. If the team's default iteration is the <strong>@CurrentIteration</strong>, then new user stories are added to the current iteration. The scope decreases as the Iteration Path is modified to another sprint, or work items are completed.  
 
 ::: moniker-end
  
@@ -169,28 +171,29 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 1. To open the Sprint burndown report, choose **Analytics**. 
 
-1. Use the interactive controls to choose from the following options:
-	a. The Start and End dates of the sprint
-	b. The product backlog (Stories, Issues, Product Backlog Items, or Requirements) or tasks backlog to use 
-	c. The field to use to calculate burndown, either a Count of Work Items or a sum of another fields, such as Story Points, Effort, or Size, or other field
-	d. Show non-working days, which appear as gray bars in the background when enabled.
+1. Use the interactive controls to choose from the following options:  
 
-	Choose Reset to reset the controls to the default options. 
+	a. The **Start Date** and **End Date** of the sprint. These will default to the team's current iteration sprint dates.   
+	b. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.
+	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of another fields, such as Story Points, Effort, or Size, or other field  
+	d. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../organizations/settings/set-working-days.md) and [Set sprint capacity](set-capacity.md). 
 
- and count or sum field to use in the burndown. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+	Choose **Reset** to reset the controls to the default options. 
 
-1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over a column area to show a summary. 
+ 	By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+
+1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over any point on the chart to show a summary of the data for a specific day.
 
 #### [Sum of Remaining Work](#tab/remaining-work)
 
-When you choose to view the **Tasks backlog** and **Sum of Remaining Work**, the blue area shows the sum of Remaining Work per day for those tasks which are still active or in progress. As the Remaining Work is updated, the chart indicates the rate of burndown. The Scope trend line indicates the addition of Remaining Work after the start of the sprint.  The Ideal trend line indicates the ideal burndown rate for the sprint. Capacity lines are only shown when the team has configured capacity.  
+When you choose to view the **Tasks backlog** and **Sum of Remaining Work**, the blue area shows the sum of Remaining Work per day for those tasks which are still active or in progress. As the Remaining Work is updated, the chart indicates the rate of burndown. The **Scope** trend line indicates the addition of Remaining Work after the start of the sprint. The **Ideal** trend line indicates the ideal burndown rate for the sprint. **Capacity** lines are only shown when the team has configured capacity.  
 
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Remaining Work](_img/burndown/analytics-burndown-remaining-work-s159.png)
 
 #### [Count of Work Items](#tab/work-items)
 
-When you choose to view the **Count of Work Items**, the blue area shows the count of work items&mdash;could be tasks or requirements depending on the backlog selected&mdash;which are still active or in progress. The Scope trend line indicates when new work items are added after the start of the sprint. The Ideal trend line indicates the ideal burndown rate for the sprint. 
+When you choose to view the **Count of Work Items**, the blue area shows the count of work items&mdash;could be stories/backlog items/requirements or tasks depending on the backlog selected&mdash;which are still active or in progress. The **Scope** trend line indicates when new work items are added after the start of the sprint. The **Ideal** trend line indicates the ideal burndown rate for the sprint. 
 
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Count of Work Items](_img/burndown/analytics-burndown-count-of-work-items-s159.png)
@@ -198,7 +201,7 @@ When you choose to view the **Count of Work Items**, the blue area shows the cou
 
 #### [Sum of Story Points](#tab/story-points)
 
-When you choose to view the **Stories backlog** and **Sum of Story Points**, the blue area shows the sum of Story Points for all User Stories which are still active or in progress. The Scope trend line indicates when Story Points are added after the start of the sprint. The Ideal trend line indicates the ideal burndown rate for the sprint.   
+When you choose to view the **Stories backlog** and **Sum of Story Points**, the blue area shows the sum of Story Points for all User Stories which are still active or in progress. The **Scope** trend line indicates when Story Points are added after the start of the sprint. The **Ideal** trend line indicates the ideal burndown rate for the sprint.   
 
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Story Points](_img/burndown/analytics-burndown-story-points.png)
@@ -208,8 +211,8 @@ When you choose to view the **Stories backlog** and **Sum of Story Points**, the
 > [!NOTE]  
 > The options for the sum fields depend on the numeric fields defined for task and requirement category work item types. The most common fields used to show the burndown trend are: 
 > - Count of work items  
-> - sum of [Story Points, Effort, or Size](../queries/query-numeric.md#fields) 
-> - Sum of [Completed Work, Original Estimate, or Remaining Work](../queries/query-numeric.md#fields). 
+> - Sum of [Story Points, Effort, or Size](../queries/query-numeric.md#fields) 
+> - Sum of [Remaining Work](../queries/query-numeric.md#fields). 
 
 The selections you make are only set for you, and persist across sessions until you change them. 
 
@@ -269,23 +272,22 @@ You can review sprint burndown in-context reports to show the team patterns in e
 
 ::: moniker-end
 
-::: moniker range="<azure-devops"
+::: moniker range="< azure-devops"
 
-| Sprint 1   |  Sprint 2  | Sprint 3 | 
-|------------|------------|----------| 
-|![Sprint 1](_img/burndown/may.png) |![Sprint 2](_img/burndown/june.png)  |![Sprint 3](_img/burndown/july.png) |
-
+| Sprint 1   |  Sprint 2  | Sprint 3 |  
+|------------|------------|----------|  
+|![Sprint 1](_img/ALM_SB_Chart_S1_225.png) |![Sprint 2](_img/ALM_SB_Chart_S2_225.png) |![Sprint 3](_img/ALM_SB_Chart_S3_225.png) |  
 
 ::: moniker-end
 
  
-Teams may find it useful to review this record periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
+Teams may find it useful to review these reports periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as: 
 *   How does our projected velocity match up to our actual velocity? 
 *   How can we more accurately determine how much we will be able to accomplish in a sprint? 
 *   How can we complete work at a more regular pace throughout the sprint?
 
 
-## Required and recommended activities   
+## Team activities to track tasks and Remaining Work  
 
 In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
 
@@ -354,23 +356,13 @@ You can use your team [velocity](../../report/dashboards/team-velocity.md) as in
 
 ## Related articles
 
-You can learn more about defining, planning, and executing your sprints from these topics: 
+You can learn more about defining, planning, and executing your sprints from these articles: 
 
-::: moniker range="<azure-devops"
-*   [Schedule sprints](define-sprints.md)  
-*   [Sprint planning](assign-work-sprint.md)  
-*   [Update and monitor your Taskboard](task-board.md)  
-
-::: moniker-end
-
-
-::: moniker range="<azure-devops"
-*   [Schedule sprints](define-sprints.md)  
-*   [Sprint planning](assign-work-sprint.md)  
-*   [Update and monitor your Taskboard](task-board.md)  
-
-::: moniker-end
-
+- [Schedule sprints](define-sprints.md)  
+- [Sprint planning](assign-work-sprint.md)  
+- [Add tasks to backlog items](add-tasks.md)
+- [Update and monitor your Taskboard](task-board.md)  
+- [Scrum and best practices](best-practices-scrum.md)
 
 And, from these industry resources:  
 *   [Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
