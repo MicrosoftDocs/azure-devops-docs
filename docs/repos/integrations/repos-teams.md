@@ -9,7 +9,7 @@ ms.manager: gopinach
 ms.author: karrg
 author: RGKarthik
 monikerRange: 'azure-devops'
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ---
 
 # Azure Repos with Microsoft Teams
@@ -27,7 +27,7 @@ Read this article to learn how to:
 
 > [!div class="checklist"]  
 > * Add the Azure Repos app to your team in Microsoft Teams
-> * Connect Azure Repos app to your repositories
+> * Connect the Azure Repos app to your repositories
 > * Manage subscriptions to repository related events in your channel
 > * Using filters effectively to customize subscriptions
 
@@ -86,8 +86,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
 
-3. The subscribe command gets you started with a default subscription. For Git repositories, the channel gets subscribed to 
-**Pull request created** event. For TFVC repositories, the channel is subscribed to **Code checked in** event.
+3. The subscribe command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event. For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
    > [!div class="mx-imgBorder"]
    > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
@@ -95,7 +94,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 ## Manage subscriptions
 
-To view, add and remove subscriptions for a channel, use the `subscriptions` command:
+To view, add, and remove subscriptions for a channel, use the `subscriptions` command:
 
 ```
 @azure repos subscriptions    
@@ -107,10 +106,10 @@ When adding subscriptions, you can customize the notifications you get by using 
 > [!div class="mx-imgBorder"]
 > ![View subscriptions](./_img/integrations-teams/Subscriptions.png)
 
-## Using filters to only get notifications that you want
+## Using filters to get only notifications that you want
 
 When a user subscribes to a repository using `@azure repos subscribe` command, a default subscription is created with no filters applied.
-Often, users need to customize these subscriptions to only be notified when certain conditions are met. 
+Often, users need to customize these subscriptions to be notified only when certain conditions are met. 
 For example, users may want to get notified only when PRs have a particular group added as reviewer. 
 
 The following steps demonstrate how to customize subscriptions.
@@ -146,7 +145,7 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 ## Command reference
 
-The following table lists all the Azure repos commands you can use in your Teams channel
+The following table lists all the Azure repos commands you can use in your Teams channel.
 
 |Command	| Functionality |
 | -------------------- |----------------|
