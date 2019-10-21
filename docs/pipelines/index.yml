@@ -6,7 +6,6 @@ summary: Implement continuous integration and continuous delivery (CI/CD) for th
 metadata:
   title: Azure Pipelines documentation
   description: Configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-cicd
   ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  

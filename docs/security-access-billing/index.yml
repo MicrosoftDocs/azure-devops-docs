@@ -6,7 +6,6 @@ summary: Lookup and assign users to security groups, permissions, access levels,
 metadata:
   title: Azure DevOps Security, Access, & Billing documentation
   description: Lookup and assign users to groups, permissions, access levels, and manage billing for Azure DevOps.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-security
   ms.topic: landing-page 
