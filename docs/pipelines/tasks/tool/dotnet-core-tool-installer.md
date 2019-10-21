@@ -23,7 +23,7 @@ You can also use this task to change the version of .NET Core used in subsequent
 
 One other reason to use tool installer is if you want to decouple your pipeline from our update cycles to help avoid a pipeline run being broken due to a change we make to our agent software.
 
-### Whats New
+### What's New
 
 - Support for installing multiple versions side by side.
 
