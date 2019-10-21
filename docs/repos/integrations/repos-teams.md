@@ -15,7 +15,7 @@ ms.date: 10/10/2019
 # Azure Repos with Microsoft Teams
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
-[Azure Repos app for Teams](URL TBD - link to come once app is live) to easily monitor your repositories. 
+[Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 
 Set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked 
 in or when a pull request (PR) is created, updated or merged. The app supports monitoring both Git and 
 Team Foundation Version Control (TFVC) repositories.
