@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 10/17/2019
+ms.date: 10/21/2019
 ---
 
 
@@ -24,6 +24,14 @@ ms.date: 10/17/2019
 Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). The Analytics in-context sprint burndown report supports tracking a burndown based on a count of work items or a sum of Story Points/Size/Effort, Remaining Work, or other numeric field. 
 
 You can add this report to a dashboard, or track progress using the [Analytics-based burndown or burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) which provide additional configuration options. 
+
+Use this article to learn:
+
+> [!div class="checklist"]      
+> * How to view current and past sprint burndowns 
+> * How to set interactive controls to personalize your view of the sprint burndown report 
+> * How to add the sprint burndown report to a dashboard 
+> * Required and recommended activities to support sprint burndown    
 
 ::: moniker-end
 
@@ -41,22 +49,28 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 
 ::: moniker range="azure-devops-2019"
+
 > [!NOTE]  
 > You can't add an in-context report to a dashboard. However, you can add the [Analytics-based burndown or burnup widgets](../../report/dashboards/configure-burndown-burnup-widgets.md) to a dashboard. 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
+
 > [!NOTE]  
 > You can't add an in-context report to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown) to a dashboard. 
 
 ::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 Use this article to learn:
 
 > [!div class="checklist"]      
 > * How to view current and past sprint burndowns 
 > * Required and recommended activities to support sprint burndown    
+
+::: moniker-end
 
 For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-guidance.md).
 
