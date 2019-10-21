@@ -50,7 +50,7 @@ Runtime expression syntax can be used for variables that are expanded at runtime
 |Template expression|`${{ var }}`|Compile time|Left side|Empty string|
 |Runtime expression|`$[VAR]`|runtime|Right side|`0`|
 
-All pipeline variables when processed become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[VAR]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
+All pipeline variables when processed become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
 
 ## Set variables in pipeline
 
