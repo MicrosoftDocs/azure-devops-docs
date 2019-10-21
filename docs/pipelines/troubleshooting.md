@@ -42,6 +42,8 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ## Get logs to diagnose problems
 
+Start by looking at the logs in your completed build or release.
+
 * [Build and Release logs](#build-and-release-logs)
 * [Diagnostic logs](#diagnostic-logs)
   * [Worker diagnostic logs](#worker-diagnostic-logs)
@@ -50,10 +52,9 @@ Keep in mind, some differences are in effect when executing a command on a local
 * [HTTP trace logs](#http-trace-logs)
 
 
+### Configure verbose logs
 
-### Build and Release logs
-
-Start by looking at the logs in your completed build or release. If they don't provide enough detail, you can make them more verbose:
+ To assist with troubleshooting, you can configure your logs to be more verbose.
 
 ::: moniker range="azure-devops"
 
@@ -69,7 +70,27 @@ Start by looking at the logs in your completed build or release. If they don't p
 
 ::: moniker-end
 
+
+### Download logs
+
+::: moniker range="azure-devops"
+
+* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
+* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+* To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.diagnostics` variable to `true`.
+* To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.diagnostics`, set its value to `true`, and select to **Allow at Queue Time**.
+
+::: moniker-end
+
+### Build and Release logs
 ### TODO This is the old content that is replaced by the monikered section above
+
+TODO what is the difference between this and diagnostic logs? I moved the discussion of setting verbose to above here.
 
 1. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
 
