@@ -76,10 +76,10 @@ On the **Version Control** tab, select the repository in which you want to run G
 
 Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Branch creation:**  Allow
+* **Create branch:**  Allow
 * **Contribute:**  Allow
-* **Read:**  Inherited allow
-* **Tag creation:**  Inherited allow
+* **Read:**  Allow (system)
+* **Create tag:**  Allow (system)
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
