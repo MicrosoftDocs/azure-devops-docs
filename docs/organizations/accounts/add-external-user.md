@@ -40,8 +40,8 @@ Learn how to invite external users to your organization, if you access Azure Dev
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
-
-   [:::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
+   
+   ![Select the Users tab, and then select Add users](../../_shared/_img/add-new-users.png)
 
 4. Complete the form based on the following guidance, and then select **Add**.
 
