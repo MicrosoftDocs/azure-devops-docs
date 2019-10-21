@@ -8,7 +8,7 @@ ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -415,7 +415,7 @@ trigger:
 
 You can opt-out of CI builds either by [disabling the CI trigger](#disabling-the-ci-trigger), or by [skipping CI builds for individual commits](#skipping-ci-for-individual-commits)).
 
-You can also override the YAML CI trigger in the classic editor and disable it there. For more information, see [Overriding YAML triggers](#overriding-yaml-triggers).
+You can also override the YAML CI trigger in the pipeline editor and disable it there. For more information, see [Overriding YAML triggers](#overriding-yaml-triggers).
 
 #### Disabling the CI trigger
 
@@ -643,13 +643,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ### Overriding YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
-
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
-
-Select either the **Continuous integration** trigger or the **Pull request validation** trigger, and configure your desired setting by enabling or disabling **Override the YAML ... trigger from here**.
-
-![Override YAML trigger](_img/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
+[!INCLUDE [overriding-yaml-triggers](../_shared/overriding-yaml-triggers.md)]
 
 ## Getting the source code
 
