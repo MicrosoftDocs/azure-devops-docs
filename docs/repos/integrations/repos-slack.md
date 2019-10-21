@@ -9,7 +9,7 @@ ms.manager: bijuv
 ms.author: karrg
 author: RGKarthik
 monikerRange: 'azure-devops'
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ---
 
 # Azure Repos with Slack
@@ -139,7 +139,7 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 ## Command reference
 
-The following table lists all the `/azrepos commands` you can use in your Slack channel
+The following table lists all the `/azrepos commands` you can use in your Slack channel.
 
 |Slash command	| Functionality |
 | -------------------- |----------------|
