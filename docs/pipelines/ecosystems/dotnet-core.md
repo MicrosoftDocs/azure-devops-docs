@@ -101,7 +101,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ::: moniker range="< azure-devops"
 
 #### [YAML](#tab/yaml/)
-You can use a YAML to build your .NET Core project on Azure DevOps Server. 
+1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
 ```yaml
 trigger:
@@ -120,9 +120,18 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 ```
+2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+
+3. Set the **Agent pool** and **YAML file path** for your pipeline. 
+
+4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+
+5. When you're ready to make changes to your pipeline, **Edit** it.
+
+6. See the sections below to learn some of the more common ways to customize your pipeline.
 
 #### [Classic](#tab/classic/)
-1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **Empty Pipeline**. 
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **Empty Pipeline**. 
 
 2. In the task catalog, find and add the **.NET Core** task. This task will run `dotnet build` to build the code in the sample repository.
 
