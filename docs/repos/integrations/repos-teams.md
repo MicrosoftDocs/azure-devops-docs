@@ -54,7 +54,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 ## Connect the Azure Repos app to your repositories
 
-1. Once the app has been installed in your team, authenticate yourself to Azure Repos using `@azure repos signin` command.
+1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command.
    
    > [!div class="mx-imgBorder"]
    > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
@@ -86,7 +86,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
 
-3. The subscribe command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event. For TFVC repositories, the channel is subscribed to the **Code checked in** event.
+3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event. For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
    > [!div class="mx-imgBorder"]
    > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
@@ -100,7 +100,7 @@ To view, add, and remove subscriptions for a channel, use the `subscriptions` co
 @azure repos subscriptions    
 ```
 
-This command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
+The `subscription` command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
 > [!div class="mx-imgBorder"]
@@ -108,7 +108,7 @@ When adding subscriptions, you can customize the notifications you get by using 
 
 ## Using filters to get only notifications that you want
 
-When a user subscribes to a repository using `@azure repos subscribe` command, a default subscription is created with no filters applied.
+When a user subscribes to a repository using the `@azure repos subscribe` command, a default subscription is created with no filters applied.
 Often, users need to customize these subscriptions to be notified only when certain conditions are met. 
 For example, users may want to get notified only when PRs have a particular group added as reviewer. 
 
