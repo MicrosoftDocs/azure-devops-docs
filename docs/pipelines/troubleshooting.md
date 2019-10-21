@@ -44,8 +44,8 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 Start by looking at the logs in your completed build or release.
 
-* [Build and Release logs](#build-and-release-logs)
-* [Diagnostic logs](#diagnostic-logs)
+* [Configure verbose logs](#configure-verbose-logs)
+* [Download logs](#download-logs)
   * [Worker diagnostic logs](#worker-diagnostic-logs)
   * [Agent diagnostic logs](#agent-diagnostic-logs)
   * [Other logs](#other-logs)
@@ -71,44 +71,28 @@ Start by looking at the logs in your completed build or release.
 ::: moniker-end
 
 
-### Download logs
+### View and download logs
 
 ::: moniker range="azure-devops"
 
-* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
-* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`.
+To view individual logs for each step, navigate to the build results for the run, and select the job and step. TODO it looks like you can download the individual log if you don't have the multi-stage experience enabled, how to do it when you have it enabled?
+
+To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)).
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.diagnostics` variable to `true`.
-* To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.diagnostics`, set its value to `true`, and select to **Allow at Queue Time**.
+To download all logs, navigate to the build results for the run, choose **Download all logs as zip**.
+
+TODO I copied this note from below, what versions does it apply to
+> Diagnostic logs are not yet available for releases.
 
 ::: moniker-end
 
-### Build and Release logs
-### TODO This is the old content that is replaced by the monikered section above
-
-TODO what is the difference between this and diagnostic logs? I moved the discussion of setting verbose to above here.
-
-1. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
-
-2. Queue the build or release.
-
-3. In the explorer tab, view your completed build or release and click the failing task to view its output.
-
-4. If you need a copy of all the logs, click **Download all logs as zip**.
-
-### Diagnostic logs
-
-1. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
-
-2. Queue the build.
-
-3. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
-
-> Diagnostic logs are not yet available for releases.
+* [Worker diagnostic logs](#worker-diagnostic-logs)
+* [Agent diagnostic logs](#agent-diagnostic-logs)
+* [Other logs](#other-logs)
 
 #### Worker diagnostic logs
 
