@@ -24,7 +24,25 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ::: moniker-end
 
+## My pipelines isn't starting
 
+### Triggers
+
+If a pipeline doesn't start at all, check the triggers for that pipeline. 
+
+#### Override the YAML trigger setting
+
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, check that setting.
+
+[!INCLUDE [overriding-yaml-triggers](_shared/overriding-yaml-triggers.md)]
+
+#### Pull request triggers
+
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+
+#### Scheduled triggers
+
+### Waiting for agents
 
 ## My pipeline is failing on a command-line step such as MSBUILD
 
