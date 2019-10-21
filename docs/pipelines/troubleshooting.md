@@ -34,6 +34,7 @@ Check the logs for the exact command-line executed by the failing task. Attempti
 
 For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
+
 ### Differences between local command prompt and agent
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
@@ -53,6 +54,22 @@ Keep in mind, some differences are in effect when executing a command on a local
 ### Build and Release logs
 
 Start by looking at the logs in your completed build or release. If they don't provide enough detail, you can make them more verbose:
+
+::: moniker range="azure-devops"
+
+* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
+* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+* To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.diagnostics` variable to `true`.
+* To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.diagnostics`, set its value to `true`, and select to **Allow at Queue Time**.
+
+::: moniker-end
+
+### TODO This is the old content that is replaced by the monikered section above
 
 1. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
 
