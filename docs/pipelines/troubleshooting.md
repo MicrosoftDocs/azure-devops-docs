@@ -25,18 +25,14 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 ::: moniker-end
 
 
-## My pipeline isn't starting
 
-## My pipeline started but didn't complete successfully
-## Check for failures of command-line steps
-## My pipeline is failing on a command-line step
-## Run commands locally at the command prompt
+## My pipeline is failing on a command-line step such as MSBUILD
 
 It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 ### Differences between local command prompt and agent
 
