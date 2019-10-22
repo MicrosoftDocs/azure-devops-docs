@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 10/21/2019
+ms.date: 10/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -229,14 +229,6 @@ You can opt out of CI builds entirely by specifying `trigger: none`.
 # A pipeline with no CI trigger
 trigger: none
 ```
-
-You can also override the YAML CI trigger in the pipeline editor and disable it there. 
-
-[!INCLUDE [overriding-yaml-triggers](../_shared/overriding-yaml-triggers.md)]
-
-> [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in pipelines settings by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
 
 >[!IMPORTANT]
 >When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
