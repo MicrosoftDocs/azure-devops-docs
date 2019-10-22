@@ -67,7 +67,7 @@ If a pipeline doesn't start at all, check the triggers for that pipeline.
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, check that setting.
 
-[!INCLUDE [overriding-yaml-triggers](_shared/overriding-yaml-triggers.md)]
+
 
 #### Pull request triggers
 
