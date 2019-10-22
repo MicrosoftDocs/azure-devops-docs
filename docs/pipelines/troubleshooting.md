@@ -28,7 +28,7 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
   * It doesn't start at all
     * Triggers
       * Overridden YAML triggers
-      * branch filters excluding all branches
+      * Branch filters excluding all branches
       * Scheduled triggers
         * UTC time zone
         * Pipelines designer triggers overriding yaml scheduled triggers
@@ -43,21 +43,23 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
     * Configure verbose logs to get more detail
     * Log types
       * Pipeline diagnostic logs
+        * Viewable per step in build summary page, or
+          Download all logs (includes log types below except HTTP)
       * Worker diagnostic logs
       * Agent diagnostic logs
       * Other logs
-      * HTTP trace logs
-* Problem type resolutions
-  * Command-line step failures such as MSBUILD issues
-  * File of folder in use errors
-  * Process hang
-  * Line endings for multiple platforms
-  * Variables having single quote appended
-  * Agent connection issues
-  * TFVC
+    * HTTP trace logs
+  * Problem type resolutions
+      * Command-line step failures such as MSBUILD issues
+      * File of folder in use errors
+      * Process hang
+      * Line endings for multiple platforms
+      * Variables having single quote appended
+      * Agent connection issues
+      * TFVC
 
 
-## My pipelines isn't starting
+## My pipeline isn't starting
 
 ### Triggers
 
