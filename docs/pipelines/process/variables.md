@@ -38,19 +38,19 @@ Any variable which begins with one of these strings (regardless of capitalizatio
 
 Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When a variable with macro syntax cannot be output, the variable itself is printed. For example, if `$(var)` cannot be replaced, `$(var)` displays. Variables with macro syntax only be used on the right side of pipeline definitions. 
+Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` displays. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
 
-Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions will only expand the left side of pipeline definitions. 
+Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
 
-Runtime expression syntax can be used for variables that are expanded at runtime (`$[VAR]`). When a variable with runtime expression syntax cannot be output, the number `0` is printed instead. These variables can only be used on the right side of pipeline definitions. 
+Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.VAR]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.VALUE]`, but `$[variables.KEY]: value` is not.
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
-|Macro|`$(var)`|runtime|Right side|Prints `$(var)`|
-|Template expression|`${{ var }}`|Compile time|Left side|Empty string|
-|Runtime expression|`$[VAR]`|runtime|Right side|`0`|
+|macro|`$(var)`|runtime|value (right side)|prints `$(var)`|
+|template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
+|runtime expression|`$[variables.VAR]`|runtime|value (right side)|empty string|
 
-All pipeline variables when processed become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
+When pipeline variables are turned into environment variables, variable names become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
 
 ## Set variables in pipeline
 
