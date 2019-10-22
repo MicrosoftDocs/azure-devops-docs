@@ -347,6 +347,18 @@ You're now ready to try it out!
 
    ![View of the Flask example code running on App Service](../_img/python/app-results.png)
 
+> [!IMPORTANT]
+> If your app fails because of a missing dependency, then your *requirements.txt* file was not processed during deployment. This behavior happens if you created the web app directly on the portal rather than using the `az webapp up` command as shown in this article.
+>
+> The `az webapp up` command specifically sets the build action `SCM_DO_BUILD_DURING_DEPLOYMENT` to `true`. If you provisioned the app service through the portal, however, this action is not automatically set.
+>
+> The following steps set the action:
+> 1. Open the [Azure portal](https://portal.azure.com), select your App Service, then select **Configuration**.
+> 1. Under the **Application Settings** tab, select **New Application Setting**.
+> 1. In the popup that appears, set **Name** to `SCM_DO_BUILD_DURING_DEPLOYMENT`, set **Value** to `true`, and select **OK**.
+> 1. Select **Save** at the top of the **Configuration** page.
+> 1. Run the pipeline again. Your dependencies should be installed during deployment.
+
 ## Run a post-deployment script
 
 A post-deployment script can, for example, define environment variables expected by the app code. To avoid hard-coding specific variable values in your YAML file, you can instead define variables in the pipeline's web interface and then refer to the variable name in the script. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
