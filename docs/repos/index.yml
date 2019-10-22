@@ -6,7 +6,6 @@ summary: Collaborate on code development using free Git public and private repos
 metadata:
   title: Azure Repos Documentation
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: azure-repos
   ms.topic: landing-page 
