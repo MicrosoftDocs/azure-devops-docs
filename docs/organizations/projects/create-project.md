@@ -100,7 +100,7 @@ For guidance in determining your selections, see [Choosing the right source cont
 >  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
@@ -121,6 +121,35 @@ For guidance in determining your selections, see [Choosing the right source cont
 
    Select one of the following tasks to get started:
    - **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members.md).
+   - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+   - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+   - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
+   - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+   - [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
+
+2. Enter information into the form provided. Provide a name for your project, and optionally a description. Expand **Advanced** to select the initial source control type and work item process. 
+
+   > [!div class="mx-imgBorder"]  
+   > ![Create new project form, 2019](_img/create-project/create-new-project-2019.png)  
+
+   See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+
+3. When your project has been created, the welcome page appears.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
+
+   Select one of the following tasks to get started:
    - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
    - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
    - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
@@ -385,11 +414,16 @@ From this page you can choose a project to open the [project settings](../settin
 
 From Team Explorer, you can view a list of projects by connecting to an organization or server. For details, see [Connect to a project](connect-to-projects.md).
 
+#### Visual Studio 2019
 > [!div class="mx-imgBorder"]  
 > ![Connect to a project dialog](_img/create-project/connect-to-a-project-2019.png)  
 
+#### Visual Studio 2017
+
 > [!div class="mx-imgBorder"]  
 > ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2017.png)  
+
+#### Visual Studio 2015
 
 > [!div class="mx-imgBorder"]  
 > ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2015.png)  
