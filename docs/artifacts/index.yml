@@ -6,7 +6,6 @@ summary: Code once and share packages across your organization. Host your privat
 metadata:
   title: Azure Artifacts documentation
   description:  Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds. 
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-artifacts
   ms.topic: landing-page 
