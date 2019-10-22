@@ -75,39 +75,24 @@ If you have a project already, and want to start coding an application project, 
 ## Create a project
 
 When you create a project, the main options you specify are:
-- The organization or project collection where the project is defined
-- The process used which determines the work item types available for tracking work using Azure Boards
-- The type of repository used for source control, Git or Team Foundation version control (TFVC). 
 
-For guidance in determining your selections, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+- The organization or project collection where the project is defined.  For guidance, see [About projects and scaling your organization](about-projects.md).
+- A project name. Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
+- A project description. Optional.
+- The type of repository used for initial source control, Git or Team Foundation version control (TFVC). Git is selected as the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
+- The process used which determines the work item types available for tracking work using Azure Boards. The default process, Agile, is used if you don't specify another one. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
 
 
 #### [Browser](#tab/browser) 
 
-::: moniker range=">= tfs-2018 < azure-devops"
-
-> [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-> [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported.
->
-> If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support). 
->  
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
-1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
+1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page. Choose the organization, and then choose **Create Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
 
-2. Enter information into the form provided. Provide a name for your project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
+2. Enter information into the form provided. Provide a name for your project, and choose the visibility, initial source control type, work item process. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
 
    > [!div class="mx-imgBorder"]  
    > ![Create new project form, latest vsts](_img/create-project/create-new-project-form-new-nav.png)  
@@ -165,43 +150,44 @@ For guidance in determining your selections, see [Choosing the right source cont
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-2. Fill out the form provided. Provide a name for your new project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
+2. Fill out the form provided. Provide a name for your new project, initial source control type, work item process. 
 
    > [!div class="mx-imgBorder"]  
-   > ![Create new project form](_img/create-project/create-project-form-prev-nav.png)  
-
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+   > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png) 
 
 3. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](project-vision-status.md).
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2018 < azure-devops"
 
-::: moniker range="tfs-2015"
-
-If you're using TFS 2015.2 or later version, then you can create a project from the web as well. It's important to note that for projects created from the web, Reporting and SharePoint integration steps are skipped when creating the project. You can still set up [Reporting](../../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/azure/devops/server/admin/add-sharepoint-to-tfs) manually after project creation.
+> [!IMPORTANT]  
+> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-Creating a project from the web portal is supported for TFS 2015.2 and later versions. For earlier versions, use [Team Explorer to create a project](#te).  
+Creating a project from the web portal is supported for TFS 2015.2 and later versions. For earlier versions, use [Team Explorer to create a project](#te). 
+
+> [!IMPORTANT]  
+> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. You can still set up [Reporting](../../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/azure/devops/server/admin/add-sharepoint-to-tfs) manually after project creation.
+>
+> If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support). 
 
 1. If you have TFS 2015.2 or a later version, choose the ![gear icon](../../_img/icons/gear-icon.png) to open the **Projects** page, and then choose **New Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
-   > 
-   > Otherwise, for TFS 2015.2 or TFS 2017, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
-   > 
+   
+	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
+
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
    Select the collection administration page for the collection you want to create the project in from the left pane, and choose **Create a new project...**.
 
-2. Enter information into the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
-
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+2. Enter information into the form provided. Provide a name for your new project, a short description, and select its initial source control type and work item tracking process.
 
     > [!div class="mx-imgBorder"]  
     > ![Create new project form, tfs](_img/create-project/clickcreatetfs.png)
@@ -218,7 +204,7 @@ Creating a project from the web portal isn't supported for TFS 2015 and earlier 
 
 ::: moniker range="azure-devops"
 
-Creating a project from Visual Studio/Team Explorer is not supported for Azure DevOps Services. If you choose to add a team project from Team Explorer, you'll be redirected to the web portal.   
+If you choose to add a team project from Visual Studio/Team Explorer, you'll be redirected to the web portal.  Creating a project from Team Explorer is not supported for Azure DevOps Services. 
 
 ::: moniker-end
 
@@ -358,6 +344,8 @@ d45ea33b-c61a-4b38-bb84-eccca71de2f1  MyFirstProject1  Private       Agile      
 
 #### [Browser](#tab/browser)  
 
+Connect to a project, collection, or server from your web browser. 
+
 ::: moniker range="azure-devops" 
 
 1. To view the projects defined for an organization, choose the  ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page.
@@ -376,9 +364,7 @@ d45ea33b-c61a-4b38-bb84-eccca71de2f1  MyFirstProject1  Private       Agile      
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2019 <= azure-devops-2019"  
-
-Connect to a project, collection, or server from your web browser. 
+::: moniker range=">= tfs-2018 <= azure-devops-2019"  
 
 1. To view the projects defined for a collection, choose the  ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page.
 
@@ -387,7 +373,7 @@ Connect to a project, collection, or server from your web browser.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-2019.png)  
 
-1. Or, choose ***Admin settings** and then choose **Projects** to list all projects. 
+1. Or, choose **Admin settings** and then choose **Projects** to list all projects. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
@@ -398,8 +384,6 @@ Connect to a project, collection, or server from your web browser.
 
 
 ::: moniker range="<= tfs-2017"  
-
-Connect to a project or collection from your web browser. 
 
 Open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Collection settings**. 
 
@@ -503,8 +487,6 @@ C:\WINDOWS\system32>az devops project show --project MyFirstProject --open --org
 ID                                    Name            Visibility    Process            Source Control
 ------------------------------------  --------------  ------------  -----------------  ----------------
 5417a1c3-4b04-44d1-aead-50774b9dbf5f  MyFirstProject  Private       Scrum - Inherited  Git
-
-C:\Users\kaelli>
 
 ```
 
