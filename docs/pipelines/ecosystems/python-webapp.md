@@ -8,7 +8,7 @@ ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.manager: barbkess
 ms.author: kraigb
 author: kraigb
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 monikerRange: 'azure-devops'
 ---
 
