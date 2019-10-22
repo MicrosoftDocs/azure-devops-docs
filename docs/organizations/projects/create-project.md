@@ -38,15 +38,15 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker range="azure-devops" 
 
-- You create a project within an organization. If you haven't created an organization yet, do that now. See [Sign up and invite teammates ](../../user-guide/sign-up-invite-teammates), which also creates a project, or [Create an organization](/azure/devops/organizations/accounts/create-organization).  
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you are the Organization Owner you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You create a project within an organization. If you haven't created an organization yet, do that now. See [Sign up and invite teammates ](../../user-guide/sign-up-invite-teammates.md), which also creates a project, or [Create an organization](../accounts/create-organization.md).  
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you are the Organization Owner you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. See [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end  
 
@@ -329,26 +329,71 @@ d45ea33b-c61a-4b38-bb84-eccca71de2f1  MyFirstProject1  Private       Agile      
 
 #### [Browser](#tab/browser)  
 
-1. To view the projects defined for an organization or collection, choose the  ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page.
+::: moniker range="azure-devops" 
 
-1. Choose the organization or collection to view the list of projects. The last two or three projects your connected to are listed at the top. Choose any project to connect to that project. 
+1. To view the projects defined for an organization, choose the  ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page.
+
+1. Choose the organization to view the list of projects. The last two or three projects you connected to are listed at the top. Choose any project to connect to that project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects.png)  
 
-1. Or, choose **Organization settings** or **Admin settings** and then choose **Projects** to list all projects. 
+1. Or, choose **Organization settings** and then choose **Projects** to list all projects. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-org-settings.png)  
 
 	From this page you can choose a project to open the [project settings](../settings/about-settings.md) for that project. Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
 
+::: moniker-end  
+
+::: moniker range=">= tfs-2019 <= azure-devops-2019"  
+
+Connect to a project, collection, or server from your web browser. 
+
+1. To view the projects defined for a collection, choose the  ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page.
+
+1. Choose the collection to view the list of projects. The last two or three projects you connected to are listed at the top. Choose any project to connect to that project. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects](_img/create-project/list-projects-2019.png)  
+
+1. Or, choose ***Admin settings** and then choose **Projects** to list all projects. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
+
+	From this page you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
+
+::: moniker-end  
+
+
+::: moniker range="<= tfs-2017"  
+
+Connect to a project or collection from your web browser. 
+
+Open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Collection settings**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Overview tab, Project list, Collection settings](_img/create-project/list-projects-2017.png)
+
+From this page you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
+
+::: moniker-end  
+
 #### [Team Explorer](#tab/team-explorer)
 
-From Team Explorer, you can view a list of projects by connecting to a collection or organization. For details, see [Connect to a project](connect-to-projects.md).
+From Team Explorer, you can view a list of projects by connecting to an organization or server. For details, see [Connect to a project](connect-to-projects.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Connect to a project dialog](_img/create-project/connect-to-a-project-2019.png)  
+
+> [!div class="mx-imgBorder"]  
+> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2017.png)  
+
+> [!div class="mx-imgBorder"]  
+> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2015.png)  
+
 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -435,6 +480,7 @@ C:\Users\kaelli>
 
 ---
 
+<a id="add-a-repository" />
 
 ::: moniker range=">= tfs-2015"
 
