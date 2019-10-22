@@ -5,7 +5,7 @@ description: Requirements to support Team Foundation Server-Project Server integ
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: adaa1930-a8f9-4bd8-8c91-02bd7b8d9d5d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -173,5 +173,5 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ## Related articles
 
-- [Azure Artifacts](../../artifacts/index.md)  
-- [Exploratory & Manual Testing](../../test/index.md)  
+- [Azure Artifacts](../../artifacts/index.yml)  
+- [Exploratory & Manual Testing](../../test/index.yml)  

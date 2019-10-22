@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
-For details about using this task, see the App Center documentation topic [Deploy Azure DevOps Builds with App Center](https://docs.microsoft.com/appcenter/distribution/vsts-deploy).
+- [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+- For details about using this task, see the App Center documentation article [Deploy Azure DevOps Builds with App Center](/appcenter/distribution/vsts-deploy).
+
 
 ::: moniker range="<= tfs-2018"
 
@@ -44,7 +46,6 @@ For details about using this task, see the App Center documentation topic [Deplo
 <tr><td>Symbols path</td><td>(Optional) Relative path from the repo root to the symbols folder.</td></tr>
 <tr><td>Symbols path (*.pdb)</td><td>(Optional) Relative path from the repo root to PDB symbols files. Path may contain wildcards.</td></tr>
 <tr><td>dSYM path</td><td>(Optional) Relative path from the repo root to dSYM folder. Path may contain wildcards.</td></tr>
-<tr><td>Mapping file</td><td>(Optional) Relative path from the repo root to Android&#39;s mapping.txt file.</td></tr>
 <tr><td>Include all items in parent folder</td><td>(Optional) Upload the selected symbols file or folder and all other items inside the same parent folder. This is required for React Native apps.</td></tr>
 <tr><td>Create release notes</td><td>(Required) Release notes will be attached to the release and shown to testers on the installation page. Options: <code>input</code>, <code>file</code>.</td></tr>
 <tr><td>Release notes</td><td>(Required) Release notes for this version.</td></tr>

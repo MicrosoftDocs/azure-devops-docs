@@ -4,7 +4,7 @@ description: Consume NuGet packages from Azure DevOps Services or Team Foundatio
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

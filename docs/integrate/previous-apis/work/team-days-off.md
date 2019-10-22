@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Days Off | REST API Reference for Team Foundation Server
 description: Work with team days off programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: b1bfef41-c787-40dd-be4d-6ed981e55fdd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

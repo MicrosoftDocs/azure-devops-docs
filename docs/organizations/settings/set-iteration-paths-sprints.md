@@ -5,7 +5,7 @@ description: Define the iterations or sprints to use when assigning work items i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -128,7 +128,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker range="azure-devops"  
 
-You can list the iterations defined for a project using [az boards iteration project list](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can list the iterations defined for a project using [az boards iteration project list](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -265,7 +265,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 ::: moniker range="azure-devops"
 
-You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -364,7 +364,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 ::: moniker range="azure-devops"
 
-You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -456,12 +456,12 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	![Work, Iterations page for team](../../boards/sprints/_img/dsprints-team-work-iterations-page.png)  
 
-<a id="set-backlog-iteration">  </a>
+    <a id="set-backlog-iteration">  </a>
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
-	![Work, Iterations page for team, set team backlog iteration for backlogs and boards](_img/team-defaults/stdefaults-team-backlog-iteration.png)
+    ![Work, Iterations page for team, set team backlog iteration for backlogs and boards](_img/team-defaults/stdefaults-team-backlog-iteration.png)
 
-	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
+    Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
 3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
@@ -525,7 +525,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker range="azure-devops"
 
-You can add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/get-started.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).   
+You can add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/index.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).   
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -604,7 +604,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
 ::: moniker range="azure-devops"
 
-You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/ext/azure-devops/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/ext/azure-devops/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 <a id="delete-update-iteration-paths" /> 
 

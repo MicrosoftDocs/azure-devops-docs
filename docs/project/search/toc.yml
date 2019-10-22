@@ -1,14 +1,12 @@
-- name: Search
-  href: index.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json
 - name: About Search
-  href: overview.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json
+  href: overview.md
 - name: Search code
   href: code-search.md
 - name: Search work items
   href: work-item-search.md
 - name: Search packages
   href: package-search.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Use code search
     href: advanced-code-search-syntax.md

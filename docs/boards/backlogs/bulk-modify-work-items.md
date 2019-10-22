@@ -5,7 +5,7 @@ description: Bulk edit/modify/update several/multiple backlog items, tasks, or b
 ms.custom: "boards-backlogs, seodec18" 
 ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

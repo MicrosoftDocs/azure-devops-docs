@@ -5,7 +5,7 @@ ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/07/2018

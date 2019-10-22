@@ -5,7 +5,7 @@ description: Uses to look up the syntax structure and find examples of how to us
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

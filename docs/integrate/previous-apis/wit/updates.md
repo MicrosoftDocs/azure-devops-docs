@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Updates | REST API Reference for Team Foundation Server
 description: Work with updates to work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B4C07EF4-535A-4479-803D-C181553613EE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

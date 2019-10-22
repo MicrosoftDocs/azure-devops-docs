@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 03/11/2019
@@ -74,8 +74,8 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## Resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Get Started using Azure DevOps](../../get-started/index.yml)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Public Projects](../public/index.md)
 - [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)
 

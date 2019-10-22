@@ -5,5 +5,5 @@
   inputs:
     azureSubscription: 
     keyVaultName: 
-    #secretsFilter: '*' # Options: editableOptions
+    secretsFilter: '*'
 ```

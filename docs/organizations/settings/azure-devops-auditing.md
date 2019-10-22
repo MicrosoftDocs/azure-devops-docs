@@ -6,9 +6,9 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
-author: chcomley
+author: roofers
 ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.date: 06/12/2019

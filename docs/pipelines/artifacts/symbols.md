@@ -6,7 +6,7 @@ description: Publish symbols to a symbol server for debugging using Azure Pipeli
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 10/18/2017
 monikerRange: '> tfs-2015'

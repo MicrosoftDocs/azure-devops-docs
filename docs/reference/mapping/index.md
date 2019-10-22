@@ -5,7 +5,7 @@ description: Index to topics for customizing the mapping of fields between Micro
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

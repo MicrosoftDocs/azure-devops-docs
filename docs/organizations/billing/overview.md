@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/28/2019
@@ -29,7 +29,7 @@ During your first purchase for your organization, you're prompted to select the 
 The following links take you to the paid services that are offered by Microsoft:
 
  * [Buy Basic access for users](buy-basic-access-add-users.md)
- * [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+ * [Buy Azure Test Plans](buy-basic-access-add-users.md)
  * [Buy CI/CD](buy-more-build-vs.md)
  * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
  * [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.

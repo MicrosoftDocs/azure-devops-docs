@@ -5,7 +5,7 @@ ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -67,9 +67,9 @@ using (var client = new HttpClient())
 
 ```
 
-## .Net Client Libraries
+## .NET Client Libraries
 
-In this example we are using two of the .Net Client Libraries. Make sure these are referenced within your .net project.
+In this example we are using two of the .NET Client Libraries. Make sure these are referenced within your .net project.
 
 [TFS Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 

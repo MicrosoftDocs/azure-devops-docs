@@ -4,7 +4,7 @@ description: Learn how to make an informed decision, trusting an extension or pu
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-marketplace
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

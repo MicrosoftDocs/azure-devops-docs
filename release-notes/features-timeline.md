@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/06/2019
+ms.date: 09/23/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -37,76 +37,61 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="51"><strong>2019 Q3</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1510185" data-raw-source="[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1510185)">Improve built-in charts: Sprint Burndown, CFD, and Velocity</a></td><td>Boards</td><td>2020</td>        
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105" data-raw-source="[Better Azure Pipelines and Azure Boards integrations](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105)">Better Azure Pipelines and Azure Boards integrations</a></td><td>Boards</td><td>2020</td></tr>        
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110" data-raw-source="[@Mention support in HTML fields](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110)">@Mention support in HTML fields</a></td><td>Boards</td><td>2020</td></tr>        
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582455" data-raw-source="[Live updates on task board](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582455)">Live updates on task board</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184" data-raw-source="[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184)">Display Rollup on Azure Boards – Backlogs</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582466" data-raw-source="[Import work items using csv/Excel from the web experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582466)">Import work items using csv/Excel from the web experience</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561619" data-raw-source="[Update work item notifications to be more customizable and flexible](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561619)">Update work item notifications to be more customizable and flexible</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136" data-raw-source="[VFS for Git - Public Preview of macOS support](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136)">VFS for Git - Public Preview of macOS support</a></td><td>Repos</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728" data-raw-source="[Better support for branch policy administration across repos & projects](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728)">Better support for branch policy administration across repos & projects</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476894" data-raw-source="[Support for more granular required reviewer policy across specific required reviewers](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476894)">Support for more granular required reviewer policy across specific required reviewers</a></td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476896" data-raw-source="[Enable users to customize their notifications for pull request comments](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476896)">Enable users to customize their notifications for pull request comments</a></td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553151" data-raw-source="[Add ability to update work items on commits](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553151)">Add ability to update work items on commits</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553152" data-raw-source="[Support 'Push Policies' to block commits meeting certain criteria](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553152)">Support 'Push Policies' to block commits meeting certain criteria</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553153" data-raw-source="[Allow manual builds to expire in PR policy](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553153)">Allow manual builds to expire in PR policy</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553154" data-raw-source="[Support per-file marking during PR review](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553154)">Support per-file marking during PR review</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553248" data-raw-source="[Add comment notifications to service hooks](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553248)">Add comment notifications to service hooks</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553249" data-raw-source="[Fix casing papercuts in the PR and file explorer experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553249)">Fix casing papercuts in the PR and file explorer experiences</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221169" data-raw-source="[Release traceability – Work Item integration](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221169)">Release traceability – Work Item integration</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437713" data-raw-source="[Unified hosted pool](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437713)">Unified hosted pool</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026" data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454027" data-raw-source="[Retry failed run or redeploy an older run](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454027)">Retry failed run or redeploy an older run</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030" data-raw-source="[Support for various trigger types in YAML](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030)">Support for various trigger types in YAML</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454367" data-raw-source="[Control which secrets & resources can be used in specific pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454367)">Control which secrets & resources can be used in specific pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458319" data-raw-source="[Speed up pipelines with caching](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458319)">Speed up pipelines with caching</a></td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458324" data-raw-source="[Faster, more flexible artifacts](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458324)">Faster, more flexible artifacts</a></td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570268" data-raw-source="[Auditing for release events](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570268)">Auditing for release events</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570283" data-raw-source="[Automatic creation of Release notes with wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570283)">Automatic creation of Release notes with wiki</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510336" data-raw-source="[Approvals in YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510336)">Approvals in YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511438" data-raw-source="[Support for Ubuntu 18.04 in hosted agents](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511438)">Support for Ubuntu 18.04 in hosted agents</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1551124" data-raw-source="[Administrators can force all builds to use project-scoped tokens](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1551124)">Administrators can force all builds to use project-scoped tokens</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285" data-raw-source="[Automated checks (gates) between stages](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285)">Automated checks (gates) between stages</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286" data-raw-source="[Deployment strategies](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286)">Deployment strategies</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570277" data-raw-source="[Container images as a first class pipeline resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570277)">Container images as a first class pipeline resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280" data-raw-source="[Azure Resource Group based environments](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280)">Azure Resource Group based environments</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570266" data-raw-source="[Configure pipelines to consume artifacts published by another pipeline](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570266)">Configure pipelines to consume artifacts published by another pipeline</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570271" data-raw-source="[Environment to support virtual machine resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570271)">Environment to support virtual machine resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1424595" data-raw-source="[Test Progress Report](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1424595)">Test Progress Report</a></td><td>Test Plans</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221151" data-raw-source="[Upstream sources work across organizations, with 15-minute refresh times](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221151)">Upstream sources work across organizations, with 15-minute refresh times</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496" data-raw-source="[Simplified set-up and Pipelines experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496)">Simplified set-up and Pipelines experiences</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498" data-raw-source="[Billing management and cost controls](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498)">Billing management and cost controls</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561620" data-raw-source="[Bring markdown comments to wiki pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561620)">Bring markdown comments to wiki pages</a></td><td>Wiki</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751" data-raw-source="[Mermaid support in Wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751)">Mermaid support in Wiki</a></td><td>Wiki</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580258" data-raw-source="[Rollup on Backlog](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580258)">Rollup on Backlog</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580259" data-raw-source="[Sprint Burndown widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580259)">Sprint Burndown widget</a></td><td>Reporting</td><td>TBD</td></tr>
+            <td rowspan="46"><strong>2019 Q4</strong></td>
+            <td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414" data-raw-source="[Updated Permissions & Org Settings pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414)">Updated Permissions & Org Settings pages</a></td><td>Administration</td><td>TBD</td>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420" data-raw-source="[Pay for users once per user across organizations under the same Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420)">Pay for users once per user across organizations under the same Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705" data-raw-source="[Policy to control and restrict new Azure DevOps organizations](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705)">Policy to control and restrict new Azure DevOps organizations</a></td><td>Administration</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602" data-raw-source="[Export list of all Azure DevOps users paid under an Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602)">Export list of all Azure DevOps users paid under an Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854" data-raw-source="[Improve the team management and team member management user experience in project settings](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854)">Improve the team management and team member management user experience in project settings</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414" data-raw-source="[Updated Security & Org Settings pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414)">Updated Security & Org Settings pages</a></td><td>Administration</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788" data-raw-source="[Streaming for Azure DevOps Auditing](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788)">Streaming for Azure DevOps Auditing</a></td><td>Administration</td><td>TBD</td></tr>
-        </tr>
-        <tr>
-            <td rowspan="6"><strong>2019 Q4</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456" data-raw-source="[Hide field based on group membership](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456)">Hide field based on group membership</a></td><td>Boards</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465" data-raw-source="[Full support for parent field on backlogs, boards, and queries](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465)">Full support for parent field on backlogs, boards, and queries</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582456" data-raw-source="[Hide field based on group membership](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582456)">Hide field based on group membership</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582465" data-raw-source="[Full support for parent field on backlogs, boards, and queries](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582465)">Full support for parent field on backlogs, boards, and queries</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596091" data-raw-source="[Open source project to automate state transitions based on child work item state](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596091)">Open source project to automate state transitions based on child work item state</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596092" data-raw-source="[Allow system work item types to appear on a backlog level](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596092)">Allow system work item types to appear on a backlog level</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596095" data-raw-source="[Add state transition restriction rules to the inherited process model](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596095)">Add state transition restriction rules to the inherited process model</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596096" data-raw-source="[Improve deployments control on the work item form to filter and sort for large repos and active releases](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596096)">Improve deployments control on the work item form to filter and sort for large repos and active releases</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614051" data-raw-source="[Azure Repos app for MS Teams](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614051)">Azure Repos app for MS Teams</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614163" data-raw-source="[Upgrade Repos Landing Pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614163)">Upgrade Repos Landing Pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614171" data-raw-source="[Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614171)">Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614172" data-raw-source="[Upgrade Commit details page to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614172)">Upgrade Commit details page to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614173" data-raw-source="[Upgrade branch compare pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614173)">Upgrade branch compare pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614236" data-raw-source="[Add required reviewers per pull request](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614236)">Add required reviewers per pull request</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614239" data-raw-source="[View members of a team by clicking the team name](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614239)">View members of a team by clicking the team name</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614246" data-raw-source="[Suggesting and accepting code changes in a PR](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614246)">Suggesting and accepting code changes in a PR</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728" data-raw-source="[Better support for branch policy administration across repos & projects](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728)">Better support for branch policy administration across repos & projects</a></td><td>Repos</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614053" data-raw-source="[@mention support in Azure Pipelines, Board and Repos app in MS Teams](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614053)">@mention support in Azure Pipelines, Board and Repos app in MS Teams</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570285" data-raw-source="[Automated checks (gates) between stages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570285)">Automated checks (gates) between stages</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570271" data-raw-source="[Environment to support virtual machine resource](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570271)">Environment to support virtual machine resource</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570277" data-raw-source="[Container images as a first class pipeline resource](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570277)">Container images as a first class pipeline resource</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570280" data-raw-source="[Azure Resource Group based environments](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570280)">Azure Resource Group based environments</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570281" data-raw-source="[Auditing for pipeline events](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570281)">Auditing for pipeline events</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026" data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1615463" data-raw-source="[General availability of multi-stage pipelines UX](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1615463)">General availability of multi-stage pipelines UX</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174" data-raw-source="[Elastic self-hosted agent pools](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174)">Elastic self-hosted agent pools</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030" data-raw-source="[External pipelines as a first class resource in yaml pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030)">External pipelines as a first class resource in yaml pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570283" data-raw-source="[Automatic creation of Release notes with wiki](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570283)">Automatic creation of Release notes with wiki</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286" data-raw-source="[Deployments with zero downtime and minimum risk](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286)">Deployments with zero downtime and minimum risk</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580259" data-raw-source="[Sprint Burndown widget](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580259)">Sprint Burndown widget</a></td><td>Reporting</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580261" data-raw-source="[Team-less Dashboards](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580261)">Team-less Dashboards</a></td><td>Reporting</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1616285" data-raw-source="[Persona-based new Test Plans page](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1616285)">Persona-based new Test Plans page</a></td><td>Test Plans</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496" data-raw-source="[Simplified Artifacts setup and Pipelines experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496)">Simplified Artifacts setup and Pipelines experiences</a></td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616773" data-raw-source="[Artifacts events available in the auditing service](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616773)">Artifacts events available in the auditing service</a></td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616782" data-raw-source="[Pipeline Artifacts GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616782)">Pipeline Artifacts GA</a></td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616780" data-raw-source="[Pipeline Caching GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616780)">Pipeline Caching GA</a></td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498" data-raw-source="[Billing management and cost controls](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498)">Billing management and cost controls</a></td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458316" data-raw-source="[Public (unauthenticated) feeds](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458316)">Public (unauthenticated) feeds</a></td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833" data-raw-source="[Universal Packages feature updates](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833)">Universal Packages feature updates</a></td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281" data-raw-source="[Auditing for pipeline events](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281)">Auditing for pipeline events</a></td><td>Pipelines</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749" data-raw-source="[Page visits in Wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749)">Page visits in Wiki</a></td><td>Wiki</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261" data-raw-source="[Team-less Dashboards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261)">Team-less Dashboards</a></td><td>Reporting</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609297" data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1574749" data-raw-source="[Page visits in Wiki](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1574749)">Page visits in Wiki</a></td><td>Wiki</td><td>TBD</td></tr>
         </tr>
         <tr>
-            <td rowspan="6"><strong>Future</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138" data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221139" data-raw-source="[A discussion-centric Work Item form](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221139)">A discussion-centric Work Item form</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221167" data-raw-source="[Deployment Groups easy configuration of Azure VMs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221167)">Deployment Groups easy configuration of Azure VMs</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174" data-raw-source="[Extensible Pool Providers](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174)">Extensible Pool Providers</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164" data-raw-source="[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164)">CC/BCC (carbon copy) recipient support for email notifications</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165" data-raw-source="[Notification feed](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165)">Notification feed</a></td><td>Administration</td><td>TBD</td>
+        <td rowspan="5"><strong>Future</strong></td>
+            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221164" data-raw-source="[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221164)">CC/BCC (carbon copy) recipient support for email notifications</a></td><td>Administration</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165" data-raw-source="[Notification feed](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165)">Notification feed</a></td><td>Administration</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609290" data-raw-source="[Adding custom upstream sources](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609290)">Adding custom upstream sources</a></td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609307" data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826" data-raw-source="[Export Permissions Log by Resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826)">Export Permissions Log by Resource</a></td><td>Artifacts</td><td>TBD</td>
         </tr>
     </tbody>
 </table>
@@ -127,121 +112,165 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="17"><a href="2019/sprint-159-update.md" data-raw-source="[14 October 2019](2019/sprint-159-update.md)">14 October 2019</a></td>
+            <td>Azure Boards app for Microsoft Teams</td><td>Boards</td><td>N/A</td>
+        </tr>
+        <tr><td>Import work items from a CSV file</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Add parent field to work item cards</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Add parent field to backlog and queries</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Quick navigation in Azure Boards search</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Azure Repos app for Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Mark files as reviewed in a pull request</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>New Web UI for Azure Repos landing pages (preview)</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Proximity support for code search</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Deploy Azure Resource Manager (ARM) to subscription and management group level</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>CD capabilities for your multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Bitbucket integration and other improvements in getting started with pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for PowerShell scripts in Azure CLI task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Search for wiki pages across accounts</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Access recently visited wiki pages</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Instant search for wiki</td><td>Wiki</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="21"><a href="2019/sprint-158-update.md" data-raw-source="[23 September 2019](2019/sprint-1578-update.md)">23 September 2019</a></td>
+            <td>User assignment-based billing and default access level</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>New UI to manage organization and project permissions</td><td>General</td><td>2020</td></tr>
+        <tr><td>New rule to hide fields in a work item form based on condition</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Custom work item notification settings</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Link work items to deployments</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Use service account based authentication to connect to AKS</td><td>Repos</td><td>2020</td></tr>  
+        <tr><td>Preview Markdown files in pull request Side-by-side diff</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Build policy expiration for manual builds</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Retry failed stages</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Enhancements to approvals in YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Container structure testing support in Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Flaky bug management and resolution</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Enhancements to Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>  
+        <tr><td>Open Policy Agent installer task</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Pipeline decorators for release pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>New Test Plans page</td><td>Test Plans</td><td>2020</td></tr>  
+        <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr> 
+        <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr> 
+        <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr> 
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>2020</td></tr>   
+        <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>Future</td></tr>      
-        <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Taskboard live updates</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Resolve work items via commits using key words</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>Future</td></tr>            
-        <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>2020</td></tr>      
+        <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Taskboard live updates</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Resolve work items via commits using key words</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>2020</td></tr>            
+        <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>2020</td></tr>
         <tr>
             <td rowspan="27"><a href="2019/sprint-156-update.md" data-raw-source="[12 August 2019](2019/sprint-156-update.md)">12 August 2019</a></td>
-            <td>New UI to request access to an organization</td><td>General</td><td>Future</td>
+            <td>New UI to request access to an organization</td><td>General</td><td>2020</td>
         </tr>
-        <tr><td>Read-only and required rules for group membership</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Customize system picklist values</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>New work item URL parameter</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Mention people, work items and PRs in text fields</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Reactions on discussion comments</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Pin Azure Boards reports to the dashboard</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Read-only and required rules for group membership</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Customize system picklist values</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>New work item URL parameter</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Mention people, work items and PRs in text fields</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Reactions on discussion comments</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Pin Azure Boards reports to the dashboard</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Repos app for Slack</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>Future</td></tr>    
-        <tr><td>New build image template for Dockerfile</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Arguments input in Docker Compose task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Fix warning in large test attachments</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>2020</td></tr>    
+        <tr><td>New build image template for Dockerfile</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Arguments input in Docker Compose task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Fix warning in large test attachments</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Linux Web App support for Java workflows in Azure DevOps Projects</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Pipeline variable group and variable management commands</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Run pipeline for a PR branch</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Skip the first pipeline run</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service endpoint command enhancement</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Test Plan progress report (public preview)</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Enhancement to Test Plans page</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Improvement to the Query Results widget</td><td>Reporting</td><td>Future</td></tr>
-        <tr><td>Comments in wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr><td>Hide folders and files starting with “.” in wiki tree</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Linux Web App support for Java workflows in Azure DevOps Projects</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline variable group and variable management commands</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Run pipeline for a PR branch</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Skip the first pipeline run</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service endpoint command enhancement</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Test Plan progress report (public preview)</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Enhancement to Test Plans page</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Improvement to the Query Results widget</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Comments in wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Hide folders and files starting with “.” in wiki tree</td><td>Wiki</td><td>2020</td></tr>
         <tr>
             <td rowspan="29"><a href="2019/sprint-155-update.md" data-raw-source="[22 July 2019](2019/sprint-155-update.md)">22 July 2019</a></td>
-            <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>Future</td>
+            <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>2020</td>
         </tr>
-        <tr><td>Get insights into your team’s health with three new Azure Boards Analytics reports</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Get insights into your team’s health with three new Azure Boards Analytics reports</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Boards app for Slack</td><td>Boards</td><td>N/A</td></tr>
-        <tr><td>Customize taskboard columns</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Toggle to show or hide completed child work items on the backlog</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Improved code search filtering options</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Approvals in multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Manage pipeline variables in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>New predefined variables in YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Cancel stage in a multi-stage YAML pipeline run</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Show correct pool information on each job</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Link work items with multi-stage pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>CI triggers for new branches</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Pipeline caching (public preview)</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Single hosted pool</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Improvements to the Deployment Center for WebApp in the Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Integration with Google Analytics</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Customize taskboard columns</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Toggle to show or hide completed child work items on the backlog</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Improved code search filtering options</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approvals in multi-stage YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Manage pipeline variables in YAML editor</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>New predefined variables in YAML pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Cancel stage in a multi-stage YAML pipeline run</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Show correct pool information on each job</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Link work items with multi-stage pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>CI triggers for new branches</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline caching (public preview)</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Single hosted pool</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Improvements to the Deployment Center for WebApp in the Azure Portal</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Integration with Google Analytics</td><td>Pipelines</td><td>2020</td></tr>
         <tr>
             <td rowspan="28"><a href="2019/sprint-154-update.md" data-raw-source="[1 July 2019](2019/sprint-154-update.md)">1 July 2019</a></td>
             <td>Azure DevOps CLI general availability</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>Work item live reload</td><td>General</td><td>Future</td></tr>
-        <tr><td>Manage iteration and area paths from the command line</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Work item parent column as column option</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Instant search for work items</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Search for a work item as you type</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Change the process used by a project</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Hide custom fields from layout</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Work item live reload</td><td>General</td><td>2020</td></tr>
+        <tr><td>Manage iteration and area paths from the command line</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Work item parent column as column option</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Instant search for work items</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Search for a work item as you type</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Change the process used by a project</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Hide custom fields from layout</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Pipelines app for Jira</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Improvements to the Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Add a GitHub release as an artifact source</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updated Agent Pool interface in organization settings</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Add a GitHub release as an artifact source</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updated Agent Pool interface in organization settings</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Single hosted pool</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Deployments in YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Control variables that can be overridden at queue time</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Deployments in YAML pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Control variables that can be overridden at queue time</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Optimizely integration</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Support for large test attachments</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Pay for additional pipelines from the Azure DevOps portal</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Approve releases directly from Releases hub</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Approve releases directly from Releases hub</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Deploy external Git repositories to Azure Kubernetes Services (AKS)</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Support for BitBucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Select a Dockerfile in deployment center for AKS and WebApp Containers</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Rich editing for code wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr><td>Create and embed work items from a wiki page</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Rich editing for code wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Create and embed work items from a wiki page</td><td>Wiki</td><td>2020</td></tr>
         <tr>
         <tr>
             <td rowspan="16"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
@@ -250,16 +279,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Auditing public preview</td><td>General</td><td>N/A</td></tr>
         <tr><td>Manage security groups and permissions from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Quickly view linked GitHub activity from the Kanban board</td><td>Boards</td><td>2019.1</td></tr>
-        <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Preview text files on work item</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>See all teams in Boards, Backlogs, and Sprints pickers</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Preview text files on work item</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>See all teams in Boards, Backlogs, and Sprints pickers</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Use cron syntax to specify schedules in a YAML file</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Go get command support in Azure Repos</td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Package Search</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Package Search</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Support for queries with tree of work items</td><td>Wiki</td><td>2019</td></tr>
         <tr><td>Top publisher certification program</td><td>Marketplace</td><td>N/A</td></tr>
         <tr>
@@ -4309,7 +4338,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"]
-> ![Make a suggestion](_img/help-make-a-suggestion.png)
+> ["div class="mx-imgBorder"]
+> "[Make a suggestion](_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

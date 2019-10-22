@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 06/07/2019
@@ -119,5 +119,5 @@ The hosted XAML build controller is no longer supported.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Try Azure Test Plans for free](try-additional-features-vs.md)
+> [Buy access to Azure DevOps Server or Azure Test Plans](try-additional-features-vs.md)
 

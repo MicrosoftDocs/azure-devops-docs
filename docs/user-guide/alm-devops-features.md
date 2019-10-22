@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
@@ -1190,7 +1190,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p><a href="../test/index.md" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.md)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p><a href="../test/index.yml" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.yml)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create <a href="/visualstudio/test/create-unit-tests-menu" data-raw-source="[unit tests](/visualstudio/test/create-unit-tests-menu)">unit tests</a> and run them frequently to make sure your code is working properly.</p>
@@ -1223,7 +1223,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.md)">Azure Test Plans and exploratory testing</a>.</p>
+<p>Explore user stories without test cases or test steps using <a href="../test/index.yml" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.yml)">Azure Test Plans and exploratory testing</a>.</p>
 
 ![Exploratory testing](_img/features/features-exploratory-testing.png)
 
@@ -1628,7 +1628,7 @@ pipelines\tasks\build\_img
 <p>You can <a href="../marketplace/get-vsts-extensions.md" data-raw-source="[get and quickly install extensions](../marketplace/get-vsts-extensions.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
 
 <p><b>Try Azure Test Plans for free</b></p>
-<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans for free](../billing/try-additional-features-vs.md)">start a trial for Azure Test Plans for free</a>.</p>
+<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md)"></a>.</p>
 
 
 <p><b>Get extensions for...</b></p>

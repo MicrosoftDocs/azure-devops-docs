@@ -5,7 +5,7 @@ description: Update a process template to support customizing work tracking for 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: How to close work items using commit messages
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual

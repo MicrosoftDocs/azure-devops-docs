@@ -5,7 +5,7 @@ description: Quick start helping users to create a trend report using an Analyti
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

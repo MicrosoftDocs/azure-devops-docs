@@ -5,8 +5,9 @@ description: Define the artifacts to be uploaded or created for a process templa
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: af1b9f73-b930-49b6-b6f2-68d691b152aa
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---

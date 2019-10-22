@@ -5,7 +5,7 @@ description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope

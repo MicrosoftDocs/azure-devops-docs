@@ -5,7 +5,7 @@ description: Manage mappings between an enterprise project and a project to supp
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05c10281-e873-43ea-80a3-23050438c379
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

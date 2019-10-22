@@ -5,7 +5,7 @@ title: Package, publish, & unpublish extensions | Azure DevOps Services
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -52,6 +52,13 @@ tfx extension create --manifest-globs vss-extension.json
 >[!NOTE]
 >An extension/integration's version must be incremented on every update. <br>
 >If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and saves the new version to your manifest.
+
+#### Check package size
+
+Check the size of the vsix after it is packaged. If greater than 50 MB then it needs to be optimized. To do so, consider the following:
+* De-duplicate the common dependences, if any, by stating them once in the extension package.
+* Fetch things at runtime or during install time rather than providing it within the package. Consider using the tool installer lib to pull tool dependencies at runtime. Using the lib offers benefits where the tool is cached by version so for private agents, it won't get downloaded every build. We made it a lib so it can be used outside of tool installer tasks. The one consideration, is the task will not work in disconnected scenarios (no internet).  That should just be in the description / docs for the task.
+* Some customers have had good success with WebPack to tree shake their dependencies in their tasks.
 
 <a id="upload"></a>
 ## Publish

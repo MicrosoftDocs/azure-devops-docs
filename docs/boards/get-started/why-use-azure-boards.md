@@ -6,7 +6,7 @@ ms.custom: "boards-get-started, seodec18"
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -41,7 +41,7 @@ Visual tools help teams quickly see and share progress. For example, with [Kanba
 
 With [product backlogs](../backlogs/create-your-backlog.md), you can quickly add work items and prioritize work to keep the most important work at the top of the stack. And, with [delivery plans](../plans/review-team-plans.md), teams can share their plans against a calendar view. 
 
-Use [built-in scrum boards and planning tools](../sprints/index.md) to help your teams run effective stand-ups, planning meetings, and retrospectives.
+Use [built-in scrum boards and planning tools](../sprints/scrum-overview.md) to help your teams run effective stand-ups, planning meetings, and retrospectives.
 
 ## 3. Easy to customize
 

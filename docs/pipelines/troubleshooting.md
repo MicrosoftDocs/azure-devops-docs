@@ -4,7 +4,7 @@ description: Learn how to troubleshoot builds and releases in Azure Pipelines an
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chrispat
 ms.reviewer: chrispat
 ms.custom: seodec18

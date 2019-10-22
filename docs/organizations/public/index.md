@@ -5,7 +5,7 @@ description: Index to topics for creating and working in public projects for Azu
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -56,7 +56,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## Resources
 
-- [Manage projects](../projects/index.md)  
-- [Azure Repos](../../repos/index.md)  
-- [Azure Boards](../../boards/index.md)  
+- [Manage projects](/azure/devops/organizations/projects/index)  
+- [Azure Repos](/azure/devops/repos/index)  
+- [Azure Boards](/azure/devops/boards/index)  
 

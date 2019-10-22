@@ -5,7 +5,7 @@ description: Use gitignore, git update-index, and repo management to ignore and 
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -131,6 +131,18 @@ Resume tracking files with:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git update-index --no-skip-worktree <font color="#b5bd68">&lt;file&gt;</font>
+</pre>
+
+Alternatively, you can use the following flags, however, these are primarily for marking files that should not be changed by developers:
+
+Disable change tracking
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git update-index --assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
+</pre>
+
+Resume change tracking
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git update-index --no-assume-unchanged <font color="#b5bd68">&lt;file&gt;</font>
 </pre>
 
 #### Permanently ignore changes to a file

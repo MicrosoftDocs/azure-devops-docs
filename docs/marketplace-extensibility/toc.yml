@@ -1,6 +1,6 @@
-- name: Azure DevOps Marketplace & Extensibility Documentation
-  href: index.md
-- name: Discover & Manage Extensions
+- name: Marketplace & extensibility
+  href: index.yml
+- name: Discover & manage extensions
   href: ../marketplace/toc.yml
 - name: Develop extensions
   href: ../extend/toc.yml 

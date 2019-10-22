@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Commits | REST API Reference for Team Foundation Server
 description: Work with Git commits programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: DD768682-3DC8-4E00-85E8-699633A93EB2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -3,7 +3,7 @@ title: Where is Package Management? | Azure DevOps
 description: Discover Azure Artifacts - the new home of Package Management in Azure DevOps.
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 05/10/2019
@@ -27,6 +27,9 @@ Before the UI update, your Package Management home was in the **Packages** hub o
 The new update has introduced a new, top-level area that is the home of Package Management in Azure DevOps Services. This area is known as **Azure Artifacts** and can be reached simply by selecting the _Artifacts_ button on the left of the UI:
 
 ![Go to Azure Artifacts](_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+
+> [!NOTE]
+> If you don't see **Artifacts** or want to turn the service off, see more info in [Change service visibility](../organizations/settings/set-services.md)
 
 ## Azure Artifacts billing model
 

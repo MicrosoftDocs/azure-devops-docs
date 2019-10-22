@@ -4,7 +4,7 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -851,7 +851,9 @@ Wildcards patterns allow `*` to match zero or more characters and `?` to match a
 For branches and tags, a wildcard may appear anywhere in the pattern.
 
 For paths, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
-You may not include `*` in the middle of a path filter, and you may not use `?`.
+
+> [!IMPORTANT]
+> You may **not** include `*` in the middle of a path filter, and you may not use `?`.
 
 ```yaml
 trigger:

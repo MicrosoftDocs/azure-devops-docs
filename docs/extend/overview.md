@@ -5,7 +5,7 @@ title: Developing extensions for Azure DevOps Services and Team Foundation Serve
 description: Overview of creating extensions for Azure DevOps Services
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -35,7 +35,6 @@ where they can be kept privately for you and your team or shared with the millio
 All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the Marketplace. From the Marketplace,
 extensions can be installed directly by Azure DevOps Services users.
 
-
 ## What can you do with extensions?
 
 There are dozens of places where you can add to the Azure DevOps Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
@@ -46,10 +45,16 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 - Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
 - Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 
 
+## Build an extension for your delivery pipeline
+You can develop an Azure DevOps Services extension for your continuous delivery pipeline as described in the following video.
+
+<a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="_img/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
+
+
 ## Extension building checklist
 
 1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Azure Devops extensions overview](https://azure.microsoft.com/services/devops/extend/)
+    1. [Azure DevOps extensions overview](https://azure.microsoft.com/services/devops/extend/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)

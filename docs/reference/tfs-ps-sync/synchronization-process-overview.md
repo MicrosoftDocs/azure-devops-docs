@@ -5,7 +5,7 @@ description: Understand how the synchronization engine manages the flow of data 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a34c054a-1361-43ce-962e-bf29ce04ffb2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/05/2017

@@ -172,8 +172,7 @@ The Google Analytics experiments framework lets you test almost any change or va
 
 The Google Analytics experiments extension for Azure DevOps adds experimentation steps to the build and release pipelines, so you can continuously iterate, learn and deploy at an accelerated pace by managing the experiments on a continuous basis while gaining all the DevOps benefits from Azure Pipelines. 
 
-> [!NOTE]
-> The extension will be available within the next week.
+You can download the [Google Analytics experiments extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.GoogleAnalytics) from the Marketplace. 
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/155_23.png)

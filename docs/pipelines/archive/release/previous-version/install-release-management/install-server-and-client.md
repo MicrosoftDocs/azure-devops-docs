@@ -6,7 +6,7 @@ ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

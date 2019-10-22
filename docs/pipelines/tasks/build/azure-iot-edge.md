@@ -93,7 +93,19 @@ steps:
 <tr><td><code>deviceId</code><br/>IoT Edge device ID</td><td>(Required) Specify the IoT Edge <b>Device ID</b>.</td></tr>
 </table>
 
-
+The following YAML example deploys module images:
+```YAML
+steps:
+- task: AzureIoTEdge@2
+  displayName: 'Azure IoT Edge - Deploy to IoT Edge devices'
+  inputs:
+    action: 'Deploy to IoT Edge devices'
+    deploymentFilePath: deployment.template.json
+    azureSubscription: $(azureSubscriptionEndpoint)
+    iothubname: iothubname
+    deviceOption: 'Single Device'
+    deviceId: deviceId
+```
 
 
 

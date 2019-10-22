@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.author: mlearned
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
@@ -165,9 +165,9 @@ YAML builds are not yet available on TFS.
 * * *
 ### Azure Pipelines or TFS repository
 
-1.  Navigate to the **Code** hub in Azure Repos or TFS.
-1.  Choose your **repository** and Select **Branches**.  Choose the **master branch**.
-1.  You will implement a branch policy to protect the master branch.  Select the **ellipsis** to the right of your branch name and Select **Branch policies**.
+1.  Navigate to the **Repos** hub in Azure Repos or TFS.
+1.  Choose your **repository** and select **Branches**.  Choose the **master branch**.
+1.  You will implement a branch policy to protect the master branch.  Select the **ellipsis** to the right of your branch name and select **Branch policies**.
 1.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.   
 1.  Under the **Build validation** menu choose **Add build policy**.
 1.  Choose the appropriate build pipeline.

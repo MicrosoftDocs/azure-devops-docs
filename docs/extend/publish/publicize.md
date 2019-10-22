@@ -5,7 +5,7 @@ title: Make Your Extension or Integration Public | Extensions for Azure DevOps S
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= azure-devops-2019'
 ms.author: chcomley
 author: chcomley
@@ -20,7 +20,7 @@ The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops
 
 This page covers the required steps to make your integration or extension listing publicly available in the Marketplace. 
 
-* Learn more about developing an [extension for Azure DevOps](../index.md)
+* Learn more about developing an [extension for Azure DevOps](../overview.md)
 * Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
 * Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
 

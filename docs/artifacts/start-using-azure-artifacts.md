@@ -5,24 +5,21 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/03/2019
 monikerRange: '>= tfs-2017'
 ---
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+# Sign up for Azure Artifacts
 
-# License Azure Artifacts
+**Azure DevOps** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
 
-**Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
-
-::: moniker-end
+> [!NOTE]
+> If you are using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
 
 ::: moniker range="azure-devops"
-
-# Sign up for Azure Artifacts
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
