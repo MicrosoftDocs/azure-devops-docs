@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.manager: shashban
 ms.author: shashban
 author: shashankbansal
-ms.date: 07/25/2019
+ms.date: 10/21/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -45,3 +45,26 @@ You can add multiple approvers to an environment. These approvers can be individ
 > Currently, all the specified approvers must approve for the stage to proceed.
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently.
+
+## Checks
+
+### Evaluate artifact
+
+You can evaluate artifact(s) to be deployed in an environment against custom policies.
+
+> [!NOTE]
+> Currently, this works with container image artifacts and on a Kubernetes resource only
+> 
+
+To define a custom policy evaluation over the artifact(s)-
+
+1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about creating an environment.
+
+2. Navigate to Checks for the environment.
+
+3. Select **Evaluate Artifact** from the list.
+
+4. Paste the policy definition. (see more about writing policy definitions) and click save.
+
+Next time a deployment is targeted on the check configured environment, policy will be evaluated and logs viewable from the pipeline run view.
+
