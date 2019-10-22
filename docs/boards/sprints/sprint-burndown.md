@@ -201,7 +201,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 	b. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.  
 
-	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of another fields, such as Story Points, Effort, or Size, or other field.  
+	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of a field, such as Story Points, Effort, or Size.  
 
 	d. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../organizations/settings/set-working-days.md) and [Set sprint capacity](set-capacity.md).  
 
