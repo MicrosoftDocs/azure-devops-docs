@@ -7,7 +7,7 @@ brand: azure
 metadata:
   title: Azure DevOps documentation
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
-  ms.service: visual-studio-online
+  ms.prod: devops 
   ms.topic: hub-page 
   author: KathrynEE 
   ms.author: kaelli 
