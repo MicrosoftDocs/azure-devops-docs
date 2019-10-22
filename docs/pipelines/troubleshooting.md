@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: chrispat
 ms.reviewer: chrispat
 ms.custom: seodec18
-ms.date: 10/17/2019
+ms.date: 10/25/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,6 +23,39 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
 
 ::: moniker-end
+
+* My pipeline isn't starting
+  * It doesn't start at all
+    * Triggers
+      * Overridden YAML triggers
+      * branch filters excluding all branches
+      * Scheduled triggers
+        * UTC time zone
+        * Pipelines designer triggers overriding yaml scheduled triggers
+    * Tenant dormancy? (is this a big factor)
+  * It tries to start but never gets going
+    * Agents
+      * Parallel job limits - no available agents or you have hit your free limits
+      * Demands/capabilities - no matching agents
+      * Pipeline service degradation - https://status.dev.azure.com/
+* My pipeline starts but it fails to complete successfully
+  * Check logs to see what part is failing
+    * Configure verbose logs to get more detail
+    * Log types
+      * Pipeline diagnostic logs
+      * Worker diagnostic logs
+      * Agent diagnostic logs
+      * Other logs
+      * HTTP trace logs
+* Problem type resolutions
+  * Command-line step failures such as MSBUILD issues
+  * File of folder in use errors
+  * Process hang
+  * Line endings for multiple platforms
+  * Variables having single quote appended
+  * Agent connection issues
+  * TFVC
+
 
 ## My pipelines isn't starting
 
