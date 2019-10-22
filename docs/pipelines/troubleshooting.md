@@ -25,16 +25,17 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 ::: moniker-end
 
 * My pipeline isn't starting
-  * It doesn't start at all
-    * Triggers
-      * Overridden YAML triggers
-      * Branch filters excluding all branches
-      * Scheduled triggers
+  * If it doesn't start at all
+    * [Triggers](#triggers)
+      * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
+      * [Pull request triggers](#pull-request-triggers)
+      * [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
+      * [Scheduled triggers](#scheduled-triggers)
         * UTC time zone
         * Pipelines designer triggers overriding yaml scheduled triggers
     * Tenant dormancy? (is this a big factor)
   * It tries to start but never gets going
-    * Agents
+    * [Waiting for agents](#waiting-for-agents)
       * Parallel job limits - no available agents or you have hit your free limits
       * Demands/capabilities - no matching agents
       * Pipeline service degradation - https://status.dev.azure.com/
@@ -61,11 +62,28 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ## My pipeline isn't starting
 
+If your pipeline doesn't start based on the triggers you have configured, but does run when triggered manually, check the following items.
+
+* [Triggers](#triggers)
+  * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
+  * [Pull request triggers](#pull-request-triggers)
+  * [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
+  * [Scheduled triggers](#scheduled-triggers)
+
+If your pipelines appears to start, but then seems to stall before it ever gets going, check the following items.
+
+* [Waiting for agents](#waiting-for-agents)
+
 ### Triggers
 
-If a pipeline doesn't start at all, check the triggers for that pipeline. 
+If a pipeline doesn't start at all, check the following common trigger related issues. 
 
-#### Override the YAML trigger setting
+* [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
+* [Pull request triggers](#pull-request-triggers)
+* [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
+* [Scheduled triggers](#scheduled-triggers)
+
+#### Overridden YAML trigger setting
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
 
@@ -87,18 +105,16 @@ For more information, see [Scheduled triggers](build/triggers.md).
 
 ### Waiting for agents
 
-## My pipeline is failing on a command-line step such as MSBUILD
+If your pipeline starts but then immediately stalls, check the following agent related items.
 
-It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
+#### Parallel job limits - no available agents or you have hit your free limits
 
-Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
+If you are currently running other pipelines, you may not have any remaining parallel jobs. To check, see TODO
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+#### Demands/capabilities - no matching agents
 
+If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
-### Differences between local command prompt and agent
-
-Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
 ## Get logs to diagnose problems
@@ -242,6 +258,20 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 4. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 5. Restart the agent.
+
+## My pipeline is failing on a command-line step such as MSBUILD
+
+It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
+
+Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
+
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+
+
+### Differences between local command prompt and agent
+
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+
 
 ## File or folder in use errors
 
