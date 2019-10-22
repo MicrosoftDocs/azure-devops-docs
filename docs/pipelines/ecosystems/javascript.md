@@ -73,20 +73,13 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ::: moniker range="< azure-devops"
 #### [YAML](#tab/yaml/)
-1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
+1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. This YAML assumes that you have Node.js with npm installed. 
 
 ```yaml
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+pool: Default
 
 - script: |
     npm install
