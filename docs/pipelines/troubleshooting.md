@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](_shared/version.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting)
+This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting).
 
 ::: moniker range="<= tfs-2018"
 
@@ -24,9 +24,16 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ::: moniker-end
 
-* My pipeline isn't starting
+You can use the following troubleshooting outline to help diagnose issues with your pipeline.
+
+* [My pipeline isn't triggering](#my-pipeline-isnt-triggering)
+* [My pipeline tries to start but never gets an agent](#my-pipeline-tries-to-start-but-never-gets-an-agent)
+* [My pipeline starts but fails to complete successfully](#my-pipeline-starts-but-fails-to-complete-successfully)
+
+### My pipeline isn't triggering
+
   * If it doesn't start at all
-    * [Triggers](#triggers)
+    * [Check the pipeline triggers](#triggers)
       * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
       * [Pull request triggers](#pull-request-triggers)
       * [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
@@ -39,7 +46,13 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
       * Parallel job limits - no available agents or you have hit your free limits
       * Demands/capabilities - no matching agents
       * Pipeline service degradation - https://status.dev.azure.com/
-* My pipeline starts but it fails to complete successfully
+
+### My pipeline tries to start but never gets an agent
+
+### My pipeline starts but fails to complete successfully
+
+
+* **My pipeline starts but it fails to complete successfully**
   * Check logs to see what part is failing
     * Configure verbose logs to get more detail
     * Log types
@@ -52,7 +65,7 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
     * HTTP trace logs
   * Problem type resolutions
       * Command-line step failures such as MSBUILD issues
-      * File of folder in use errors
+      * File or folder in use errors
       * Process hang
       * Line endings for multiple platforms
       * Variables having single quote appended
@@ -166,6 +179,8 @@ TODO I copied this note from below, what versions does it apply to
 > Diagnostic logs are not yet available for releases.
 
 ::: moniker-end
+
+In addition to the pipeline diagnostic logs, the following specialized log types are available, and may contain information to help you troubleshoot.
 
 * [Worker diagnostic logs](#worker-diagnostic-logs)
 * [Agent diagnostic logs](#agent-diagnostic-logs)
