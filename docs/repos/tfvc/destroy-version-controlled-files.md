@@ -5,7 +5,7 @@ description: Destroy Version Controlled Files
 ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

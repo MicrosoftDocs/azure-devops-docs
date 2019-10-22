@@ -5,7 +5,7 @@ description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

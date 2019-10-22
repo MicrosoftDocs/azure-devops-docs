@@ -6,7 +6,7 @@ ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/20/2019

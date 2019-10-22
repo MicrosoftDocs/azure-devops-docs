@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vinojos
 author: vinodjo
 ms.date: 12/07/2018

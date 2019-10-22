@@ -7,18 +7,20 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
 
-<a name="SetUpCurrentUsers"></a>
+
 
 # Add organization users to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+<a name="SetUpCurrentUsers"></a>
 
 If your organization was created with a Microsoft account, you can connect your organization to your directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then you can sign in to Azure DevOps with the same user name and password that you use with these Microsoft services. You can also enforce policies for accessing your team's critical resources and key assets.
 

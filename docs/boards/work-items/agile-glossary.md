@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.prod: devops
 ms.assetid:  
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -115,6 +115,8 @@ Specifies an inter-related set of files that contain the XML definitions for tra
 [!INCLUDE [temp](../../_shared/glossary-terms/queries.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/rollup.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 

@@ -6,7 +6,7 @@ ms.date: 09/10/2018
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

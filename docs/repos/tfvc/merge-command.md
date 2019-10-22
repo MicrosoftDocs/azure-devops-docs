@@ -5,7 +5,7 @@ description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

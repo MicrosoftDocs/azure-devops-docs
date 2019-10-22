@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 06/12/2019
@@ -27,7 +27,7 @@ Sign up for an organization, add users, and manage permissions and access.
 ## 5-minute quickstarts
 
 * [Create your organization or project collection](create-organization.md)
-* [Try Azure Test Plans for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add a team admin](../settings/add-team-administrator.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
@@ -91,5 +91,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-- [Get started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & extensibility](../../marketplace-extensibility/index.md)
+- [Get started using Azure DevOps](../../get-started/index.yml)
+- [Marketplace & extensibility](../../marketplace-extensibility/index.yml)

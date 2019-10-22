@@ -5,7 +5,8 @@ description: Change how specific fields are published from Project to Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 monikerRange: '<= tfs-2018'
 ms.date: 05/06/2019

@@ -7,7 +7,7 @@ ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -14,23 +14,22 @@ monikerRange: '>= tfs-2013'
 ms.date: 08/24/2019
 ---
 
-::: moniker range=">= tfs-2017"
 
-# Tasks supported by Backlogs, Boards, Taskboards, and Delivery plans 
+
+# Tasks supported by Backlogs, Boards, & Taskboards, 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each?
+::: moniker range=">= tfs-2017"
+
+What can you do from a backlog view versus a board view? How do these differ from delivery plans? How do changes you make in one show up on the other? What customizations can you make for each?
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-# Backlogs and boards
-
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each? 
+What can you do from a backlog view versus a board view? How do changes you make in one show up on the other? What customizations can you make for each?
+ 
 ::: moniker-end 
 
 Which view should you use to work with Agile methods?  
@@ -169,7 +168,6 @@ For details about working in each type of board, see [Kanban basics](../boards/k
 
 The following table indicates those elements or tasks associated with each type of backlog and board. 
 
-
 ::: moniker range=">= azure-devops-2019"
 
 <table width="100%"> 
@@ -215,6 +213,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 </tr>
 <tr>
+<tr>
 <td>Filter by keyword and select fields</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -247,7 +246,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>No</td>
 </tr>
 <tr>
-<td>Customize: Show bugs (see note 1)</td>
+<td>Customize: show bugs (see note 1)</td>
 <td>No </td>
 <td>Yes </td>
 <td>Yes </td>
@@ -263,12 +262,20 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
 </tr>
 <tr>
+<td>Display rollup progress, counts, or totals</td>
+<td>Yes, see [Display rollup](display-rollup.md) </td>
+<td>Yes, see [Display rollup](display-rollup.md)</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
 <td>Customize: Add more backlog or board views </td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md">Select backlog navigation levels</a></td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
 <td>Yes, when you add another team (see note 4)</td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md">Select backlog navigation levels</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md">Schedule sprints</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md">Schedule sprints</a></td>
+<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
+<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 </tr>
 <tr>
 <td>Cutomize cards</td>
@@ -279,10 +286,10 @@ The following table indicates those elements or tasks associated with each type 
 <td><a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
 </tr>
 <tr>
-<td>Charts </td>
+<td>In-context reports </td>
 <td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
 <td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md"">Velocity</a></td>
+<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
 <td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
 <td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
 </tr>
@@ -430,12 +437,16 @@ The following table indicates those elements or tasks associated with each type 
 ::: moniker-end
 
 
+
 **Notes:**
 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and taskboards. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).  
 2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../sprints/forecast.md).  
 4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) for details.  
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../sprints/sprint-burndown.md#past-sprints).
+
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
 
 
 ## Product backlog "In Progress" filter

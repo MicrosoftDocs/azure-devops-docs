@@ -1,6 +1,6 @@
 ---
 title: Azure App Service Manage task
-description: Start, Stop, Restart, Slot swap, Install site extensions, or Enable Continuous Monitoring for an Azure App Service
+description: Start, Stop, Restart, Slot swap, Swap with Preview, Install site extensions, or Enable Continuous Monitoring for an Azure App Service
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to start, stop, restart, slot swap, install site extensions, or enable continuous monitoring for an Azure App Service.
+Use this task in a build or release pipeline to start, stop, restart, slot swap, Swap with Preview, install site extensions, or enable continuous monitoring for an Azure App Service.
 
 ::: moniker range="> tfs-2018"
 
@@ -31,7 +31,7 @@ Use this task in a build or release pipeline to start, stop, restart, slot swap,
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Azure subscription</td><td>(Required) Select the Azure Resource Manager subscription</td></tr>
-<tr><td>Action</td><td>(Optional) Action to be performed on the App Service. You can Start, Stop, Restart, Slot swap, Install site extensions or enable Continuous Monitoring for an Azure App Service</td></tr>
+<tr><td>Action</td><td>(Optional) Action to be performed on the App Service. You can Start, Stop, Restart, Slot swap, Start Swap with Preview, Complete Swap with preview, Cancel Swap with preview, Install site extensions or enable Continuous Monitoring for an Azure App Service</td></tr>
 <tr><td>App Service name</td><td>(Required) Enter or select the name of an existing Azure App Service</td></tr>
 <tr><td>Specify Slot or App Service Environment</td><td>(Optional) undefined</td></tr>
 <tr><td>Resource group</td><td>(Required) Enter or Select the Azure Resource Group that contains the Azure App Service specified above</td></tr>
@@ -51,6 +51,11 @@ Use this task in a build or release pipeline to start, stop, restart, slot swap,
 </tr>
 
 </table>
+
+## What happens during a swap
+When you swap two slots (usually from a staging slot into the production slot), make sure that the production slot is always the target slot. This way, the swap operation doesn't affect your production app.
+Also at any point of the swap (or swap with preview) operation, all work of initializing the swapped apps happens on the source slot. The target slot remains online while the source slot is being prepared and warmed up, regardless of where the swap succeeds or fails. 
+Please refer to [Set up staging environments in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#AboutConfiguration) for more details.
 
 ## Open source
 

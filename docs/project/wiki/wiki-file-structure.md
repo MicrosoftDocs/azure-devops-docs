@@ -7,9 +7,9 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
 ms.date: 09/19/2019  

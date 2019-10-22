@@ -1,5 +1,5 @@
 - name: Service Hooks
-  href: index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json
+  href: index.md
 - name: Integrate with service hooks
   href: overview.md
 - name: Quickstarts

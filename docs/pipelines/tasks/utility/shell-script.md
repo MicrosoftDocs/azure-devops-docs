@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -107,7 +107,7 @@ echo "SYSTEM_HOSTTYPE is $SYSTEM_HOSTTYPE"
 echo "Over and out."
 ```
 
-On the [Build tab](../../index.md) of a build pipeline, add this task:
+On the [Build tab](../../index.yml) of a build pipeline, add this task:
 
 <table>
 <tr>

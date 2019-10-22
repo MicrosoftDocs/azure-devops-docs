@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

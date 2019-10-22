@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 05/15/2019 

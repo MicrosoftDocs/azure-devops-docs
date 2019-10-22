@@ -6,8 +6,9 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
 ms.topic: reference
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---

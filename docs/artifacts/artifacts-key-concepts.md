@@ -4,7 +4,7 @@ description: Key concepts for Azure Artifacts within Azure DevOps Services and T
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 2/6/2018

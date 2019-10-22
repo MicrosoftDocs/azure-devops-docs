@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/11/2019

@@ -5,7 +5,7 @@ description: Write and test OData queries for use in Power BI integration
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -6,7 +6,7 @@ description: Understand how Azure DevOps tools support various software developm
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

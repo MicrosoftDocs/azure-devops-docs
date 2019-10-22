@@ -144,11 +144,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.BuildNumber</td>
-<td>The name of the completed build. You can specify the build number format that generates this value in the <a href="/azure/devops/pipelines/build/options" data-raw-source="[pipeline options](../options.md)">pipeline options</a>.
-<br><br>
+<td>The name of the completed build. You can specify <a href="/azure/devops/pipelines/process/run-number" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
 A typical use of this variable is to make it part of the label format, which you specify on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository tab](../repos/index.md)">repository tab</a>.
 <br><br>
-
 
 Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
@@ -535,7 +533,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.HostType</td>
-<td>Set to <code>build</code> if the pipeline is a build. For a release, the values are <code>deployment</code> for a Deployment group job and <code>release</code> for an Agent job.
+<td>Set to <code>build</code> if the pipeline is a build. For a release, the values are <code>deployment</code> for a Deployment group job, <code>gates</code> during evaluation of gates, and <code>release</code> for other (Agent and Agentless) jobs.
 </tr>
 
 <tr>

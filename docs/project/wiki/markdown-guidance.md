@@ -5,10 +5,10 @@ description: Learn how to share information, add tables & mathematical notation 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
 ms.date: 09/19/2019

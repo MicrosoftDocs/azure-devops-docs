@@ -5,7 +5,7 @@ ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

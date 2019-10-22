@@ -4,7 +4,7 @@ description: Use packages from npmjs.com in Azure DevOps Services and Team Found
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

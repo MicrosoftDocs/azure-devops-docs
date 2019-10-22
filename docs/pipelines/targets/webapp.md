@@ -5,11 +5,11 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
-ms.author: sdanie
-author: steved0x
+ms.author: jukullam
+author: juliakm
 ms.date: 4/4/2019
 monikerRange: '>= tfs-2017'
 ---

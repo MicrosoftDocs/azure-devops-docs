@@ -5,7 +5,7 @@ ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

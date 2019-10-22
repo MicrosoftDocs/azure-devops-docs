@@ -1,20 +1,15 @@
-- name: Azure Pipelines Documentation
-  href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Azure Pipelines
-  href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: Overview
-    href: get-started/overview.md
-  - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md
-  - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md
-  - name: Key concepts
-    href: get-started/key-pipelines-concepts.md
+  href: index.yml
+- name: Get started
+  href: get-started/index.md
+- name: What is Azure Pipelines?
+  href: get-started/what-is-azure-pipelines.md
+- name: Sign up for Azure Pipelines
+  href: get-started/pipelines-sign-up.md
+- name: How to use Azure Pipelines
+  href: get-started/pipelines-get-started.md
+- name: Key concepts
+  href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
@@ -26,9 +21,12 @@
     displayName: status badge, get started, first pipeline
   - name: Customize your pipeline
     href: customize-pipeline.md
-    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers, 
+    displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers 
 - name: Ecosystems
   items: 
+  - name: Ecosystems index
+    href: ecosystems/index.md
+    displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
@@ -88,7 +86,7 @@
       displayName: helm
     - name: Multi-cloud deployments
       href: ecosystems/kubernetes/multi-cloud.md
-      displayName: kubernetes, multicloud, aks, gke, eks
+      displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
     - name: Deployment strategies
       href: ecosystems/kubernetes/deployment-strategies.md 
       displayName: canary, strategy, kubernetes, aks, gke, eks
@@ -104,7 +102,6 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
-
 - name: How-to guides
   items:
   - name: CI/CD
@@ -197,6 +194,8 @@
       href: test/test-analytics.md
     - name: Review code coverage
       href: test/review-code-coverage-results.md
+    - name: Code coverage for pull requests
+      href: test/codecoverage-for-pullrequests.md    
     - name: Trace test requirements
       href: test/requirements-traceability.md
     - name: Use Test Impact Analysis
@@ -209,8 +208,6 @@
       href: test/flaky-test-management.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: Collect screenshots and video
-      href: test/collect-screenshots-and-video.md
   - name: Package
     items:
     - name: NuGet
@@ -357,9 +354,9 @@
     href: process/resources.md
   - name: Retention policy
     href: policies/retention.md
-  - name: Run number
+  - name: Run (build) number
     href: process/run-number.md
-    displayName: build number
+    displayName: build number, run number
   - name: Runs
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
@@ -529,7 +526,7 @@
         href: tasks/utility/service-fabric-powershell.md
       - name: Shell script
         href: tasks/utility/shell-script.md
-      - name: Update Service Fabric App Versions
+      - name: Update Service Fabric Manifests
         href: tasks/utility/service-fabric-versioning.md
     - name: Test tasks
       items:
@@ -541,6 +538,8 @@
         href: tasks/test/cloud-based-load-test.md
       - name: Cloud-based Web Performance Test
         href: tasks/test/cloud-based-web-performance-test.md
+      - name: Container Structure Test Task
+        href: tasks/test/container-structure-test-task.md
       - name: Publish Code Coverage Results
         href: tasks/test/publish-code-coverage-results.md
       - name: Publish Test Results
@@ -599,6 +598,8 @@
         href: tasks/deploy/azure-rm-web-app-deployment.md
       - name: Azure App Service Manage
         href: tasks/deploy/azure-app-service-manage.md
+      - name: Azure App Service Settings
+        href: tasks/deploy/azure-app-service-settings.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
       - name: Azure Cloud PowerShell Deployment
@@ -695,6 +696,16 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+- name: Case Studies & Best Practices
+  items:
+    - name: Add Continuous Security Validation to your CICD Pipeline 
+      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+    - name: Build and Deployment Automation Case Study
+      href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your features using feature flags
+      href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your releases using deployment rings
+      href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
 - name: Developer Resources
   items:
   - name: REST API reference

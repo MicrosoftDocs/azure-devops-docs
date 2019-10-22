@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/19/2019
@@ -47,7 +47,7 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Pay for users](buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-test-plans)
 * [Buy Azure Pipelines](buy-more-build-vs.md)
-* [Try Azure Test Plans for free](try-additional-features-vs.md)
+* [Buy access to Azure DevOps Server or Azure Test Plans](try-additional-features-vs.md)
 * [Buy Basic + Test Plans access](buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-devops-server-for-your-users)
 
 ## How-to guides
@@ -83,8 +83,8 @@ Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
 ## Other resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Get Started using Azure DevOps](../../get-started/index.yml)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
 - [Azure DevOps Server Administration](/azure/devops/server/server/index)
 - [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 

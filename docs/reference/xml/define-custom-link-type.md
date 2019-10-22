@@ -5,7 +5,8 @@ description: Add a custom link type to meet your project tracking requirements i
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 0d0d51f7-b8d0-4e5d-82b9-766ee12690ba
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019'

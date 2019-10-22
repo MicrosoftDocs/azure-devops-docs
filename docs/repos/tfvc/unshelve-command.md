@@ -5,7 +5,7 @@ description: Unshelve Command
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

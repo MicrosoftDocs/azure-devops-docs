@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/03/2019
@@ -56,6 +56,8 @@ You can include a pattern, exclude a subset of it, and then re-include a subset 
 this is known as an "interleaved" pattern.
 
 Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
+
+You must define an include pattern before an exclude one. See <a href="#character_set_examples">examples</a>.
 
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.

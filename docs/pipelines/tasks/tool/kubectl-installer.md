@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2773400c-3701-48b7-b56a-a5b612719687
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
 ms.date: 04/17/2019

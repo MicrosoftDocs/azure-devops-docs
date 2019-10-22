@@ -5,7 +5,7 @@ description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

@@ -4,7 +4,7 @@ description: Index to topics for getting notifications or alerts from Azure DevO
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2018
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Notifications  
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
 Stay up-to-date with changes as they occur by subscribing to events such as code changes, build completions, or work item assignments.  
 
@@ -59,7 +59,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 ## Resources
 
 * [Git](../repos/git/index.md)
-* [Work items](../boards/work-items/index.md)
+* [Work items](../boards/work-items/about-work-items.md)
 * [Service Hooks](../service-hooks/index.md)  
 * [REST API](https://visualstudio.microsoft.com/docs/integrate/api/notification/subscriptions)
 * [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)

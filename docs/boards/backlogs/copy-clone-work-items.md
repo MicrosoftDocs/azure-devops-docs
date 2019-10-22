@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial

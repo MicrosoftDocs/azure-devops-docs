@@ -5,7 +5,7 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
 ms.custom: seodec18
 ms.author: puagarw
@@ -14,7 +14,7 @@ ms.date: 9/11/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy a Azure Function
+# Deploy an Azure Function
 
 You can automatically deploy your Azure Function after every successful build.
 

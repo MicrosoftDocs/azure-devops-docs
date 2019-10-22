@@ -5,7 +5,7 @@ description: Turn your ideas and goals into something visual using the Storypoin
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

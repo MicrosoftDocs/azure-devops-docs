@@ -7,10 +7,10 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.date: 11/19/2018
 monikerRange: '>= tfs-2017'
 ---

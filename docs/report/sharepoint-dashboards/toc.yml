@@ -1,7 +1,5 @@
-- name: SharePoint Integration
-  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
 - name: About SharePoint integration
-  href: about-sharepoint-integration.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
+  href: about-sharepoint-integration.md
 - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
   href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts
@@ -10,12 +8,6 @@
     href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal.md 
   - name: Manage documents and document libraries
     href: ../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md 
-- name: Tutorials
-  items:
-  - name: Configure or add a project portal
-    href: ../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md 
-  - name: Configure or redirect process guidance
-    href: ../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md 
 - name: Concepts
   items:
   - name: Features removed when disabling SharePoint integration

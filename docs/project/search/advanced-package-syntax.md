@@ -4,9 +4,9 @@ titleSuffix: Azure Artifacts
 description: Advanced options for using Package Search across all your feeds in a Azure DevOps organization
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
-ms.technology: devops-collab, devops-artifacts
+ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

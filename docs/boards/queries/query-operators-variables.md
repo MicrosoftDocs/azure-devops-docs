@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.date: 02/04/2019
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
-For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md).
+For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
 <a id="field-values" /> 
 

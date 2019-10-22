@@ -5,7 +5,7 @@ description: Resolving Merge Conflicts in Git from Visual Studio or the command 
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

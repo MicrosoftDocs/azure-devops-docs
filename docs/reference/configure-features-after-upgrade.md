@@ -4,7 +4,7 @@ description: Configure features after an upgrade to  the application-tier server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A71B6DD4-2780-4B61-B863-03BBE44AC953
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

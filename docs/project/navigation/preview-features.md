@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -97,7 +97,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ### Azure Artifacts 
 - [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
-- [Updated package experience](../../artifacts/index.md) 
+- [Updated package experience](../../artifacts/index.yml) 
 
 ### Azure Test Plans
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  

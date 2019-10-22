@@ -5,7 +5,7 @@ description: Overview of public project user roles and access
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

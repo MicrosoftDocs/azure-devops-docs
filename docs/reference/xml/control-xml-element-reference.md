@@ -5,7 +5,8 @@ description: Use the control element to define a work item field, text, hyperlin
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 5fe3a3ce-6dc5-4e58-9c20-2885f38c6f13
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2015'

@@ -5,7 +5,7 @@ description: Create a local copy of a repo using Visual Studio or command line c
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual

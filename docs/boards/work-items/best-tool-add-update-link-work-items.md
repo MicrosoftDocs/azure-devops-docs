@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 07/17/2019

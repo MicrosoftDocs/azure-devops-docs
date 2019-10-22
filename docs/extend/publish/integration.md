@@ -5,7 +5,7 @@ title: Package and Publish an Integration | Extensions for Azure DevOps Services
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

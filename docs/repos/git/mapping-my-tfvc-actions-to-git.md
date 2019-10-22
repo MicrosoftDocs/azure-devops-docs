@@ -5,7 +5,7 @@ description: Learn to map Team Foundation Version Control (TFVC) commands and wo
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: wpschaub
 ms.topic: conceptual

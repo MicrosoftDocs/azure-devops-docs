@@ -6,7 +6,7 @@ description: Follow these steps to resolve connection issues with Azure DevOps S
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting

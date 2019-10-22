@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,21 +14,17 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/14/2019
 ---
 
-
-::: moniker range=">= azure-devops-2019"
-
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
 
-Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
+::: moniker range=">= azure-devops-2019"
 
+Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-# Delete or restore work items 
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 

@@ -6,7 +6,7 @@ titleSuffix: TFS
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -117,7 +117,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 ### Q: How do I refresh the report to show the most recent data?
 

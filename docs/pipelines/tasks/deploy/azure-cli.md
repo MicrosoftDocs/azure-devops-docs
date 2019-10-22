@@ -5,7 +5,7 @@ ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: UshaN
 author: UshaN
@@ -54,7 +54,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
-    <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script. Select <b>Shell/PowerShell Core</b> script when running on Linux agent or <b>Batch/PowerShell/PowerShell Core</b> script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows)</td>
+    <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script. Select <b>bash/pscore</b> script when running on Linux agent or <b>batch/ps/pscore</b> script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows)</td>
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>

@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

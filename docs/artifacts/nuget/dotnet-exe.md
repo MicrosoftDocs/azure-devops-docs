@@ -4,7 +4,7 @@ description: Authenticating to feeds with NuGet in Azure Artifacts
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

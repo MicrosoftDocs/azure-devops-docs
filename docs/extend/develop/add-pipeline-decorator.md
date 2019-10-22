@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
-ms.manager: jillfra
-ms.author: stfrance
-author: stephenmichaelf
+ms.manager: mijacobs
+ms.author: macoope
+author: vtbassmatt
 ms.date: 02/28/2019
 monikerRange: '> azure-devops-2019'
 ---
@@ -61,7 +61,7 @@ Let's take a look at the properties and what they are used for:
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. The two targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. In this example, we use only `post-job-tasks` because we want to run at the end of the job. |
+| `targets` | Decorators can run before your job, after, or both. For executing the decorator before or after jobs in build or yaml pipelines, the targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. `ms.azure-release-pipelines-agent-job.pre-job-tasks` and `ms.azure-release-pipelines-agent-job.post-job-tasks` targets inject the decorators in jobs in release pipelines. In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs. |
 | `properties` | The only property required is a `template`. The template is a YAML file included in your extension which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
 
 This extension contributes a pipeline decorator.
@@ -87,7 +87,7 @@ steps:
 ## Installating the decorator
 
 In order to add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
-Only private extensions can contribute pipeline decorators.
+**Only private extensions can contribute pipeline decorators.**
 The extension needs to be authored and shared with your organization before it can be used.
 
 Once the extension has been shared with your organization, [search for the extension](https://marketplace.visualstudio.com/search?term=tag%3APipeline%20decorator&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) and install it.
