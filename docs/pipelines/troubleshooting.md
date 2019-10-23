@@ -184,7 +184,7 @@ In addition to viewing logs in the pipeline build summary, you download complete
 
   ![Enable system diagnostics](_img/troubleshooting/enable-system-diagnostics.png)
 
-* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`. For more information see [Predefined variables](build/variables.md).
+* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`. 
 
 ::: moniker-end
 
