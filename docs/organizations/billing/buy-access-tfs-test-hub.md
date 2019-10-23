@@ -1,8 +1,8 @@
 ---
-title: Buy client access licenses for Azure DevOps Server or access to Azure Test Plans
+title: Buy access to Azure DevOps Server, Azure Test Plans
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18
-description: Steps for administrators to follow on how to buy client access licenses (CALs) or access to Azure Test Plans 
+description: Steps for how to buy monthly access to Azure DevOps Server or Azure Test Plans 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2019
+ms.date: 10/23/2019
 monikerRange: '>= tfs-2015 <= azure-devops-2019'
 ---
 # Buy access to Azure DevOps Server or Azure Test Plans
