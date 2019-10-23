@@ -31,7 +31,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
+3.  Open PowerPoint Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
     <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
 
