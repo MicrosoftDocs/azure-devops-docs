@@ -572,6 +572,8 @@
         href: tasks/package/pip-authenticate.md
       - name: Python Twine Upload Authenticate
         href: tasks/package/twine-authenticate.md
+      - name: Universal Packages
+        href: tasks/package/universal-packages.md
       - name: Xamarin Component Restore
         href: /xamarin/cross-platform/troubleshooting/component-nuget
       - name: Previous versions
