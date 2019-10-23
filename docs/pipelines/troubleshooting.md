@@ -120,6 +120,15 @@ If you are currently running other pipelines, you may not have any remaining par
 
 If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
+To check the capabilities and demands specified for your agents and pipelines, see [Capabilites](agents/agents.md#capabilities).
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands and you are using Microsoft-hosted agents, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 #### Check Azure DevOps status for a service degradation
