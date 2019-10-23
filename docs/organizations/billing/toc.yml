@@ -22,7 +22,7 @@
     href: add-backup-billing-managers.md
   - name: Change Azure subscription
     href: change-azure-subscription.md
-  - name: Buy Azure DevOps Server CALs or Test
+  - name: Buy Azure DevOps Server or Azure Test Plans
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQ
     href: billing-faq.md
