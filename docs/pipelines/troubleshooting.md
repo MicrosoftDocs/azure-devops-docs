@@ -59,7 +59,7 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 #### Branch filters in CI and PR triggers
 
-When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers)
+When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
 
 #### Scheduled triggers
 
@@ -68,21 +68,6 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline setting UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
 
 For more information, see [Scheduled triggers](build/triggers.md).
-
-  * If it doesn't start at all
-    * [Check the pipeline triggers](#triggers)
-      * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
-      * [Pull request triggers](#pull-request-triggers)
-      * [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
-      * [Scheduled triggers](#scheduled-triggers)
-        * UTC time zone
-        * Pipelines designer triggers overriding yaml scheduled triggers
-    * Tenant dormancy? (is this a big factor)
-  * It tries to start but never gets going
-    * [Waiting for agents](#waiting-for-agents)
-      * Parallel job limits - no available agents or you have hit your free limits
-      * Demands/capabilities - no matching agents
-      * Pipeline service degradation - https://status.dev.azure.com/
 
 ### My pipeline tries to start but never gets an agent
 
@@ -109,12 +94,19 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-jobs.md).
 
-To check your limits, navigate to Project settings, Pipelines, Limits.
+To check your limits, navigate to **Project settings**, **Pipelines**, **Limits**.
 
 ![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
 
+You can view the count of in-progress jobs by selecting **View in-progress jobs**.
 
+![View in-progress jobs](_img/troubleshooting/view-in-progress-jobs.png)
 
+You can view all jobs, including queued jobs, by selecting **Agent pools** from the **Project settings**.
+
+![View queued jobs](_img/troubleshooting/agent-pools-jobs.png)
+
+In this example, the concurrent job limit is one, with one job running and one queued up. When all agents are busy running jobs, as in this example, the following message is displayed when additional jobs are queued: `The agent request is not running because all potential agents are running other requests. Current position in queue: 1`. In this example the job is next in the queue so its position is one.
 
 ::: moniker-end
 
