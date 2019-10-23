@@ -24,7 +24,7 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ::: moniker-end
 
-You can use the following troubleshooting outline to help diagnose issues with your pipeline.
+You can use the following troubleshooting sections to help diagnose issues with your pipeline.
 
 * [My pipeline isn't triggering](#my-pipeline-isnt-triggering)
 * [My pipeline tries to start but never gets an agent](#my-pipeline-tries-to-start-but-never-gets-an-agent)
@@ -143,7 +143,7 @@ If your pipeline starts but fails to successfully complete, review the logs to i
 
 * [Get logs to diagnose problems](#get-logs-to-diagnose-problems)
   * [Configure verbose logs](#configure-verbose-logs)
-  * [Download logs](#download-logs)
+  * [View and download logs](#view-and-download-logs)
     * [Worker diagnostic logs](#worker-diagnostic-logs)
     * [Agent diagnostic logs](#agent-diagnostic-logs)
     * [Other logs](#other-logs)
@@ -167,7 +167,7 @@ Start by looking at the logs in your completed build or release. You can view lo
 In addition to viewing logs in the pipeline build summary, you download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
 
 * [Configure verbose logs](#configure-verbose-logs)
-* [Download logs](#download-logs)
+* [View and download logs](#view-and-download-logs)
   * [Worker diagnostic logs](#worker-diagnostic-logs)
   * [Agent diagnostic logs](#agent-diagnostic-logs)
   * [Other logs](#other-logs)
