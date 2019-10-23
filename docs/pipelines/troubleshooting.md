@@ -111,7 +111,7 @@ If you are currently running other pipelines, you may not have any remaining par
 
 To check your limits, navigate to Project settings, Pipelines, Limits.
 
-![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.pngg)
+![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
 
 
 
