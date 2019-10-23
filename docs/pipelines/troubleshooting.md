@@ -86,6 +86,39 @@ For more information, see [Scheduled triggers](build/triggers.md).
 
 ### My pipeline tries to start but never gets an agent
 
+If your pipeline tries to start, but never gets an agent, check the following items.
+
+::: moniker range="azure-devops"
+
+* [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+* [Check Azure DevOps status for a service degradation](#check-azure-devops-status-for-a-service-degradation)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+* [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+
+::: moniker-end
+
+#### Parallel job limits - no available agents or you have hit your free limits
+
+If you are currently running other pipelines, you may not have any remaining parallel jobs. To check, see TODO
+
+#### Demands that don't match the capabilities of an agent
+
+If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
+
+::: moniker range="azure-devops"
+
+#### Check Azure DevOps status for a service degradation
+
+Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) for any issues that may cause a service degradation, such as increased queue time for agents. For more information, see [Azure DevOps Service Status](../user-guide/service-status-info.md).
+
+::: moniker-end
+
 ### My pipeline starts but fails to complete successfully
 
 
