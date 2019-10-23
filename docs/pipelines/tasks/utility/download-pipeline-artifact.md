@@ -32,7 +32,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 | -------- | ----------- |
 | `buildType`<br/>Download artifacts produced by | Download artifacts produced by the current pipeline run, or from a specific pipeline run.<br/>Options: `current`, `specific` |
 | `specificBuildWithTriggering`<br/>When appropriate, download artifacts from the triggering build | A boolean specifying whether to download artifacts from a triggering build. |
-| `tags`<br/>Build Tags | A coma-delimited list of tags. Only builds with these tags will be returned. |
+| `tags`<br/>Build Tags | A comma-delimited list of tags. Only builds with these tags will be returned. |
 | `artifactName`<br/>Artifact Name | The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded. |
 | `itemPattern`<br/>Matching Patterns | One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) |
 | `targetPath`<br/>Destination Directory | Directory to download the artifact files. Can be relative to the pipeline workspace directory or absolute. If multi-download option is applied (by leaving an empty artifact name), a sub-directory will be created for each. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |

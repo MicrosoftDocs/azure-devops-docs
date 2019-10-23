@@ -6,7 +6,6 @@ summary: Reporting in Azure DevOps enables software development teams to make da
 metadata:
   title: Azure DevOps Reporting documentation
   description: Add, view, manage, and monitor status and trends with dashboards, widgets, Analytics & Power BI.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-analytics
   ms.topic: landing-page 
