@@ -21,7 +21,7 @@ ms.date: 06/12/2019
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this quickstart, you learn how to access, export, and filter audit logs. Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
+In this quickstart, learn how to access, export, and filter audit logs. Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
 
 When an audit-able event occurs, a log entry is recorded as an audit event. Events contain information such as IP, user who caused the event, what happened, and other useful pieces of data that help you answer the who, what, when, and where. 
 
