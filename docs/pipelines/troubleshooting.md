@@ -30,7 +30,7 @@ You can use the following troubleshooting outline to help diagnose issues with y
 * [My pipeline tries to start but never gets an agent](#my-pipeline-tries-to-start-but-never-gets-an-agent)
 * [My pipeline starts but fails to complete successfully](#my-pipeline-starts-but-fails-to-complete-successfully)
 
-### My pipeline isn't triggering
+## My pipeline isn't triggering
 
 If a pipeline doesn't start at all, check the following common trigger related issues. 
 
@@ -49,19 +49,19 @@ If a pipeline doesn't start at all, check the following common trigger related i
 ::: moniker-end
 
 
-#### Overridden YAML trigger setting
+### Overridden YAML trigger setting
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
 
-#### Using pull request triggers with Azure Repos
+### Using pull request triggers with Azure Repos
 
 If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
 
-#### Branch filters in CI and PR triggers
+### Branch filters in CI and PR triggers
 
 When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
 
-#### Scheduled triggers
+### Scheduled triggers
 
 YAML scheduled triggers are set using UTC time zone. If your scheduled triggers don't seem to be firing at the right time, confirm the conversions between UTC and your local time zone, taking into account the day setting as well.
 
@@ -69,7 +69,7 @@ If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled 
 
 For more information, see [Scheduled triggers](build/triggers.md).
 
-### My pipeline tries to start but never gets an agent
+## My pipeline tries to start but never gets an agent
 
 If your pipeline tries to start, but never gets an agent, check the following items.
 
@@ -88,7 +88,7 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 ::: moniker-end
 
-#### Parallel job limits - no available agents or you have hit your free limits
+### Parallel job limits - no available agents or you have hit your free limits
 
 ::: moniker range="azure-devops"
 
@@ -116,7 +116,7 @@ If you are currently running other pipelines, you may not have any remaining par
 
 ::: moniker-end
 
-#### Demands that don't match the capabilities of an agent
+### Demands that don't match the capabilities of an agent
 
 If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
@@ -131,67 +131,34 @@ To check the capabilities and demands specified for your agents and pipelines, s
 
 ::: moniker range="azure-devops"
 
-#### Check Azure DevOps status for a service degradation
+### Check Azure DevOps status for a service degradation
 
 Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) for any issues that may cause a service degradation, such as increased queue time for agents. For more information, see [Azure DevOps Service Status](../user-guide/service-status-info.md).
 
 ::: moniker-end
 
-### My pipeline starts but fails to complete successfully
+## My pipeline starts but fails to complete successfully
 
+If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some common issues and solutions are provided in the following sections.
 
-* **My pipeline starts but it fails to complete successfully**
-  * Check logs to see what part is failing
-    * Configure verbose logs to get more detail
-    * Log types
-      * Pipeline diagnostic logs
-        * Viewable per step in build summary page, or
-          Download all logs (includes log types below except HTTP)
-      * Worker diagnostic logs
-      * Agent diagnostic logs
-      * Other logs
-    * HTTP trace logs
-  * Problem type resolutions
-      * Command-line step failures such as MSBUILD issues
-      * File or folder in use errors
-      * Process hang
-      * Line endings for multiple platforms
-      * Variables having single quote appended
-      * Agent connection issues
-      * TFVC
+* [Get logs to diagnose problems](#get-logs-to-diagnose-problems)
+  * [Configure verbose logs](#configure-verbose-logs)
+  * [Download logs](#download-logs)
+    * [Worker diagnostic logs](#worker-diagnostic-logs)
+    * [Agent diagnostic logs](#agent-diagnostic-logs)
+    * [Other logs](#other-logs)
+  * [HTTP trace logs](#http-trace-logs)
 
+### Common issues and solutions
 
-## My pipeline isn't starting
-
-If your pipeline doesn't start based on the triggers you have configured, but does run when triggered manually, check the following items.
-
-* [Triggers](#triggers)
-  * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
-  * [Pull request triggers](#pull-request-triggers)
-  * [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
-  * [Scheduled triggers](#scheduled-triggers)
-
-If your pipelines appears to start, but then seems to stall before it ever gets going, check the following items.
-
-* [Waiting for agents](#waiting-for-agents)
-
-### Triggers
-
-
-
-### Waiting for agents
-
-If your pipeline starts but then immediately stalls, check the following agent related items.
-
-#### Parallel job limits - no available agents or you have hit your free limits
-
-If you are currently running other pipelines, you may not have any remaining parallel jobs. To check, see TODO
-
-#### Demands/capabilities - no matching agents
-
-If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
-
-
+* [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [File or folder in use errors](#file-or-folder-in-use-errors)
+* [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
+* [Process hang](#process-hang)
+* [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
+* [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
+* [Agent connection issues](#agent-connection-issues)
+* [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
 
 ## Get logs to diagnose problems
 
