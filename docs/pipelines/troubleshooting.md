@@ -162,7 +162,9 @@ If your pipeline starts but fails to successfully complete, review the logs to i
 
 ## Get logs to diagnose problems
 
-Start by looking at the logs in your completed build or release.
+Start by looking at the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
+
+In addition to viewing logs in the pipeline build summary, you download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
 
 * [Configure verbose logs](#configure-verbose-logs)
 * [Download logs](#download-logs)
@@ -179,7 +181,10 @@ Start by looking at the logs in your completed build or release.
 ::: moniker range="azure-devops"
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
-* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`.
+
+  ![Enable system diagnostics](_img/troubleshooting/enable-system-diagnostics.png)
+
+* To configure verbose logs for all runs, you can add a variable named `system.diagnostics` and set its value to `true`. For more information see [Predefined variables](build/variables.md).
 
 ::: moniker-end
 
@@ -195,9 +200,13 @@ Start by looking at the logs in your completed build or release.
 
 ::: moniker range="azure-devops"
 
-To view individual logs for each step, navigate to the build results for the run, and select the job and step. TODO it looks like you can download the individual log if you don't have the multi-stage experience enabled, how to do it when you have it enabled?
+To view individual logs for each step, navigate to the build results for the run, and select the job and step. 
+
+![Task log](_img/troubleshooting/job-task-logs.png)
 
 To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)).
+
+![Download logs](_img/troubleshooting/download-logs.png)
 
 ::: moniker-end
 
