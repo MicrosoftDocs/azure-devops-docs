@@ -180,4 +180,4 @@ Note that while Semantic Versioning specifies that versions must increase over t
 
 ## Next steps
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in a build, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md).
+In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in a build, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
