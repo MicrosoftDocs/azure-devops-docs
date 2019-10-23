@@ -105,7 +105,24 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 #### Parallel job limits - no available agents or you have hit your free limits
 
-If you are currently running other pipelines, you may not have any remaining parallel jobs. To check, see TODO
+::: moniker range="azure-devops"
+
+If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-jobs.md).
+
+To check your limits, navigate to Project settings, Pipelines, Limits.
+
+![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.pngg)
+
+
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-pipelines-tfs.md).
+
+::: moniker-end
 
 #### Demands that don't match the capabilities of an agent
 
