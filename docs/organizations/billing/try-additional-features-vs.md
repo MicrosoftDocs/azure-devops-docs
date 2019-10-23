@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Try Azure Test Plans for free
 
-[!INCLUDE [version-vsts-only](../../boards/work-items/_shared/version-vsts-only.md)]
+[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
 
 In this quickstart, learn how to try Azure Test Plans for free for 30 days.
 
