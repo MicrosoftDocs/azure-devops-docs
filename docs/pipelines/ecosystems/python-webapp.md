@@ -8,7 +8,7 @@ ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.manager: barbkess
 ms.author: kraigb
 author: kraigb
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -346,6 +346,18 @@ You're now ready to try it out!
    If you're using the Flask example, the app should appear as follows:
 
    ![View of the Flask example code running on App Service](../_img/python/app-results.png)
+
+> [!IMPORTANT]
+> If your app fails because of a missing dependency, then your *requirements.txt* file was not processed during deployment. This behavior happens if you created the web app directly on the portal rather than using the `az webapp up` command as shown in this article.
+>
+> The `az webapp up` command specifically sets the build action `SCM_DO_BUILD_DURING_DEPLOYMENT` to `true`. If you provisioned the app service through the portal, however, this action is not automatically set.
+>
+> The following steps set the action:
+> 1. Open the [Azure portal](https://portal.azure.com), select your App Service, then select **Configuration**.
+> 1. Under the **Application Settings** tab, select **New Application Setting**.
+> 1. In the popup that appears, set **Name** to `SCM_DO_BUILD_DURING_DEPLOYMENT`, set **Value** to `true`, and select **OK**.
+> 1. Select **Save** at the top of the **Configuration** page.
+> 1. Run the pipeline again. Your dependencies should be installed during deployment.
 
 ## Run a post-deployment script
 
