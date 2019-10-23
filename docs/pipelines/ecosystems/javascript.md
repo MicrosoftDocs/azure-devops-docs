@@ -73,7 +73,12 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ::: moniker range="< azure-devops"
 #### [YAML](#tab/yaml/)
-1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. This YAML assumes that you have Node.js with npm installed. 
+1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-javascript
+
+2. Add an `azure-pipelines.yml` file in your repository. This YAML assumes that you have Node.js with npm installed on your server. 
 
 ```yaml
 trigger:
@@ -86,15 +91,15 @@ pool: Default
     npm run build
   displayName: 'npm install and build'
 ```
-2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+3. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
 
-3. Set the **Agent pool** and **YAML file path** for your pipeline. 
+4. Set the **Agent pool** and **YAML file path** for your pipeline. 
 
-4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+5. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-5. When you're ready to make changes to your pipeline, **Edit** it.
+6. When you're ready to make changes to your pipeline, **Edit** it.
 
-6. See the sections below to learn some of the more common ways to customize your pipeline.
+7. See the sections below to learn some of the more common ways to customize your pipeline.
 
 #### [Classic](#tab/classic/)
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
