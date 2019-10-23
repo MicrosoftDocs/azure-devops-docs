@@ -32,6 +32,43 @@ You can use the following troubleshooting outline to help diagnose issues with y
 
 ### My pipeline isn't triggering
 
+If a pipeline doesn't start at all, check the following common trigger related issues. 
+
+* [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
+* [Using pull request triggers with Azure Repos](#using-pull-request-triggers-with-azure-repos)
+* [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
+* [Scheduled triggers](#scheduled-triggers)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> An additional reason that runs may not start is that your organization goes dormant five minutes after the last user signs out of Azure DevOps. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+> * A nightly build of code in your organization will run only one night until someone signs in again.
+> * CI builds of an Other Git repo will stop running until someone signs in again.
+
+::: moniker-end
+
+
+#### Overridden YAML trigger setting
+
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
+
+#### Using pull request triggers with Azure Repos
+
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+
+#### Branch filters in CI and PR triggers
+
+When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers)
+
+#### Scheduled triggers
+
+YAML scheduled triggers are set using UTC time zone. If your scheduled triggers don't seem to be firing at the right time, confirm the conversions between UTC and your local time zone, taking into account the day setting as well.
+
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline setting UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
+
+For more information, see [Scheduled triggers](build/triggers.md).
+
   * If it doesn't start at all
     * [Check the pipeline triggers](#triggers)
       * [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
@@ -89,32 +126,7 @@ If your pipelines appears to start, but then seems to stall before it ever gets 
 
 ### Triggers
 
-If a pipeline doesn't start at all, check the following common trigger related issues. 
 
-* [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
-* [Pull request triggers](#pull-request-triggers)
-* [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
-* [Scheduled triggers](#scheduled-triggers)
-
-#### Overridden YAML trigger setting
-
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
-
-#### Pull request triggers
-
-If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
-
-#### Branch filters in CI and PR triggers
-
-When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers)
-
-#### Scheduled triggers
-
-YAML scheduled triggers are set using UTC time zone. If your scheduled triggers don't seem to be firing at the right time, confirm the conversions between UTC and your local time zone, taking into account the day setting as well.
-
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline setting UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
-
-For more information, see [Scheduled triggers](build/triggers.md).
 
 ### Waiting for agents
 
