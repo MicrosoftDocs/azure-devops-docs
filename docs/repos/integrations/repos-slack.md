@@ -82,8 +82,7 @@ access policies for your organization](../../organizations/accounts/change-appli
     /azrepos subscribe https://dev.azure.com/myorg/myproject/_versionControl
     ```
 
-3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** 
-event, and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
+3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** event (with target branch =  master), and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
     > [!div class="mx-imgBorder"]
     > ![Default subscriptions creation message](./_img/integrations-slack/subscriptions-added-confirmation.png)
@@ -136,6 +135,8 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 > [!div class="mx-imgBorder"]
 > ![URL unfurling](./_img/integrations-slack/url-unfurling.png)
+
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
 ## Command reference
 
