@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2019
+ms.date: 10/24/2019
 ---
 
 # Add a build or release task
@@ -193,7 +193,7 @@ import tl = require('azure-pipelines-task-lib/task');
 
 async function run() {
     try {
-        const inputString: string = tl.getInput('samplestring', true);
+        const inputString: string | undefined = tl.getInput('samplestring', true);
         if (inputString == 'bad') {
             tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
             return;
