@@ -139,7 +139,7 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ## My pipeline starts but fails to complete successfully
 
-If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some common issues and solutions are provided in the following sections.
+If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some [Common issues and solutions](#common-issues-and-solutions) are provided in the following sections.
 
 * [Get logs to diagnose problems](#get-logs-to-diagnose-problems)
   * [Configure verbose logs](#configure-verbose-logs)
@@ -148,17 +148,6 @@ If your pipeline starts but fails to successfully complete, review the logs to i
     * [Agent diagnostic logs](#agent-diagnostic-logs)
     * [Other logs](#other-logs)
   * [HTTP trace logs](#http-trace-logs)
-
-### Common issues and solutions
-
-* [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
-* [File or folder in use errors](#file-or-folder-in-use-errors)
-* [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
-* [Process hang](#process-hang)
-* [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
-* [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
-* [Agent connection issues](#agent-connection-issues)
-* [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
 
 ## Get logs to diagnose problems
 
@@ -313,7 +302,18 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 
 5. Restart the agent.
 
-## My pipeline is failing on a command-line step such as MSBUILD
+## Common issues and solutions
+
+* [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [File or folder in use errors](#file-or-folder-in-use-errors)
+* [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
+* [Process hang](#process-hang)
+* [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
+* [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
+* [Agent connection issues](#agent-connection-issues)
+* [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
+
+### My pipeline is failing on a command-line step such as MSBUILD
 
 It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
 
@@ -322,12 +322,12 @@ Check the logs for the exact command-line executed by the failing task. Attempti
 For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
-### Differences between local command prompt and agent
+#### Differences between local command prompt and agent
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
 
-## File or folder in use errors
+### File or folder in use errors
 
 File or folder in use errors are often indicated by error messages such as: `Access to the path [...] is denied.`, `The process cannot access the file [...] because it is being used by another process.`, `Access is denied.`, `Can't move [...] to [...]`
 
@@ -338,15 +338,15 @@ Troubleshooting steps:
 * [MSBuild and /nodeReuse:false](#msbuild-and-nodereusefalse)
 * [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
 
-### Detect files and folders in use
+#### Detect files and folders in use
 
 On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
 
-### Anti-virus exclusion
+#### Anti-virus exclusion
 
 Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.
 
-### MSBuild and /nodeReuse:false
+#### MSBuild and /nodeReuse:false
 
 If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild process(es) will remain running after the build completes. The process(es) remain for some time in anticipation of a potential subsequent build.
 
@@ -355,7 +355,7 @@ This feature of MSBuild can interfere with attempts to delete or move a director
 The MSBuild and Visual Studio Build tasks already add `/nr:false` to the arguments passed to MSBuild. However, if you invoke MSBuild from your own script, then you would need to specify the argument.
 
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
-### MSBuild and /maxcpucount:[n]
+#### MSBuild and /maxcpucount:[n]
 
 By default the build tasks such as [MSBuild](tasks/build/msbuild.md) and [Visual Studio Build](tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
@@ -363,11 +363,11 @@ Try adding the `/m:1` argument to your build tasks to force MSBuild to run only 
 
 File-in-use issues may result when leveraging the concurrent-process feature of MSBuild. Not specifying the argument `/maxcpucount:[n]` (short form `/m:[n]`) instructs MSBuild to use a single process only. If you are using the MSBuild or Visual Studio Build tasks, you may need to specify "/m:1" to override the "/m" argument that is added by default.
 
-## Intermittent or inconsistent MSBuild failures
+### Intermittent or inconsistent MSBuild failures
 
 If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
 
-## Process hang
+### Process hang
 
 Process hang causes and troubleshooting steps:
 
@@ -375,7 +375,7 @@ Process hang causes and troubleshooting steps:
 * [Process dump](#process-dump)
 * [WiX project](#wix-project)
 
-### Waiting for Input
+#### Waiting for Input
 
 A process hang may indicate that a process is waiting for input.
 
@@ -383,15 +383,15 @@ Running the agent from the command line of an interactive logged on session may 
 
 Running the agent as a service may help to eliminate programs from prompting for input. For example in .Net, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When running as a Windows service, the value is false.
 
-### Process dump
+#### Process dump
 
 Analyzing a dump of the process can help to identify what a deadlocked process is waiting on.
 
-### WiX project
+#### WiX project
 
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
 
-## Line endings for multiple platforms
+### Line endings for multiple platforms
 
 When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
 Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
@@ -406,7 +406,7 @@ In that file, add the following line:
 * text eol=lf
 ```
 
-## Variables having ' (single quote) appended
+### Variables having ' (single quote) appended
 
 If your pipeline includes a Bash script that sets variables using the `##vso` command, you may see an additional `'` appended to the value of the variable you set.
 This occurs because of an interaction with `set -x`.
@@ -419,7 +419,7 @@ echo ##vso[task.setvariable variable=MY_VAR]my_value
 set -x
 ```
 
-### Why does this happen?
+#### Why does this happen?
 
 Many Bash scripts include the `set -x` command to assist with debugging.
 Bash will trace exactly what command was executed and echo it to stdout.
@@ -445,9 +445,9 @@ However, when it sees the second line, the agent will process everything to the 
 `MY_VAR` will be set to "my_value'".
 
 
-## Agent connection issues
+### Agent connection issues
 
-### Config fails while testing agent connection (on-premises TFS only)
+#### Config fails while testing agent connection (on-premises TFS only)
 
 ```
 Testing agent connection.
@@ -477,24 +477,24 @@ This error may indicate the agent lost communication with the server for a span 
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
-### Builds or releases not starting
+#### Builds or releases not starting
 
-#### TFS Job Agent not started
+##### TFS Job Agent not started
 This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
-#### Misconfigured notification URL (1.x agent version)
+##### Misconfigured notification URL (1.x agent version)
 
 This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
-## Team Foundation Version Control (TFVC)
+### Team Foundation Version Control (TFVC)
 
-### Get sources not downloading some files
+#### Get sources not downloading some files
 
 This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
-### Get sources through Team Foundation Proxy
+#### Get sources through Team Foundation Proxy
 
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
 
