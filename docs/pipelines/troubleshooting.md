@@ -141,7 +141,7 @@ Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) fo
 
 ## My pipeline starts but fails to complete successfully
 
-If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some [Common issues and solutions](#common-issues-and-solutions) are provided in the following sections.
+If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some [Common issues and resolutions](#common-issues-and-resolutions) are provided in the following sections.
 
 * [Get logs to diagnose problems](#get-logs-to-diagnose-problems)
   * [Configure verbose logs](#configure-verbose-logs)
@@ -307,7 +307,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 
 5. Restart the agent.
 
-## Common issues and solutions
+## Common issues and resolutions
 
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
