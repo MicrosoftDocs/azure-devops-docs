@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.manager: mijacobs
 ms.author: sunar
-author: sandeepchads
+author: chcomley
 ms.date: 01/23/2019
 monikerRange: '> tfs-2018'
 ---
