@@ -90,7 +90,7 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 <td>Clean</td>
 <td>
 <p>Set to False if you want to make this an incremental build. This setting might reduce your build time, especially if your codebase is large. This option has no practical effect unless you also set Clean repository to False.</p>
-<p>Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild <code>/target:clean</code> argument.</p>
+<p>Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild <code>/target:clean</code> argument.</p><p>See [repo options](/devops/pipelines/repos/pipeline-options-for-git#clean-the-local-repo-on-the-agent).</p>
 </td>
 </tr>
 <tr>
