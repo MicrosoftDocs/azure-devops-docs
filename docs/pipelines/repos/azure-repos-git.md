@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 10/22/2019
+ms.date: 07/02/2019
 monikerRange: '>= tfs-2015'
 ---
 

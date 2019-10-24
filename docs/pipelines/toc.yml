@@ -378,7 +378,6 @@
     href: process/templates.md
   - name: Triggers
     href: build/triggers.md
-    displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
   - name: Users
     href: policies/set-permissions.md 
   - name: Variable groups
