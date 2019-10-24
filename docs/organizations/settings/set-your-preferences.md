@@ -11,52 +11,33 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 10/16/2019
+ms.date: 10/23/2019
 ---
 
 # Set user preferences
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-From your profile page, you can change your picture or other account preferences. In this article, learn how to set the following:
+From your profile page, you can change your picture or other account preferences. In this article, learn how to complete the following tasks:
 
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Profile </td>
-<td>
-<ul>
-<li>Change your picture</li>
-<li>Change your display name</li>
-<li>Change your preferred email</li>
-<li>Change your locale settings</li> 
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-Locale settings include language, date and time pattern, time zone, and user interface theme.
+- Change your picture
+- Change your display name
+- Change your preferred email
+- Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 ## Change profile settings  
 
 ::: moniker range="azure-devops"
 
-1. To change your user preferences, open your profile menu, and then select **Azure DevOps profile**.
+1. To change your user preferences, open your profile menu, and then select **User settings**.
 
    ![Open profile user settings](_img/open-profile-user-settings.png)
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
    ![Edit the About page](_img/edit-about-page.png)
 
-3. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone, and then select **Save**.
+3. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
 
    ![Set time and locale preferences](_img/set-time-and-locale-user-preferences.png)
 
@@ -105,43 +86,14 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 ::: moniker-end
 
-For more information on setting your preferences, see the following articles.
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Security</td>
-<td>
-<ul>
-<li><a href="../../accounts/use-personal-access-tokens-to-authenticate.md" data-raw-source="[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)">Personal access tokens</a></li>
-<li><a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)">Alternate authentication credentials</a></li>
-<li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)">OAuth authorizations</a></li>
-<li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)">SSH public keys</a></li>
- <li><a href="manage-authorizations.md" data-raw-source="[Manage authorizations](manage-authorizations.md)">Manage authorizations</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Other</td>
-<td>
-<ul>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="../../integrate/concepts/rate-limits.md" data-raw-source="[Usage](../../integrate/concepts/rate-limits.md)">Usage</a></li>
-<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li> 
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
 ## Related articles
 
-For more information, see the following articles.
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
+- [Enable preview features](../../project/navigation/preview-features.md)
+- [Set favorites](../../notifications/howto-manage-personal-notifications.md)
 
+
+<!--- 
 <table width="80%">
 <tbody valign="top">
 <tr>
@@ -173,7 +125,7 @@ For more information, see the following articles.
 </tr>
 </tbody>
 </table>
-
+--> 
 
 
 
