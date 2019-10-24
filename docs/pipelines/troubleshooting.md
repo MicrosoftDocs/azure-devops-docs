@@ -334,7 +334,12 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ### File or folder in use errors
 
-File or folder in use errors are often indicated by error messages such as: `Access to the path [...] is denied.`, `The process cannot access the file [...] because it is being used by another process.`, `Access is denied.`, `Can't move [...] to [...]`
+File or folder in use errors are often indicated by error messages such as: 
+
+* `Access to the path [...] is denied.`
+* `The process cannot access the file [...] because it is being used by another process.`
+* `Access is denied.`
+* `Can't move [...] to [...]`
 
 Troubleshooting steps:
 
