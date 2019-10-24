@@ -186,6 +186,12 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
   If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
 
+#### Boost
+  Hosted agents contain prebuilt boost libraries with their headers in the directory designated by BOOST_ROOT environment variable. In order to include the boost headers the compiler flags should add `BOOST_ROOT/include` to the search path.
+  For example g++ command linke in the linux environment must include `-I` flag:
+  ```
+  g++ -I "$BOOST_ROOT/include" ...
+  ```
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 
