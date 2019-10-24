@@ -406,8 +406,12 @@ to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as 
 
 Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a re-installation of search. While following these instructions for an upgrade, in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
 
-`Configure-TFSSearch.ps1 -Operation remove`
-`Configure-TFSSearch.ps1 -Operation install -TFSSearchInstallPath <install location> -TFSSearchIndexPath $env:SEARCH_ES_INDEX_PATH`
+
+```
+Configure-TFSSearch.ps1 -Operation remove
+Configure-TFSSearch.ps1 -Operation install -TFSSearchInstallPath <install location> -TFSSearchIndexPath $env:SEARCH_ES_INDEX_PATH
+```
+
 
 <a name="manage-tfs"></a>
 
