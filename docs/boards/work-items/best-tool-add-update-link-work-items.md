@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 07/17/2019
+ms.date: 10/17/2019
 ---
 
 
@@ -57,7 +57,8 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 	- That you've recently viewed or updated
 	- That has been recently updated, completed, or created for the project. 
 
-**Additional supported tasks**: 
+#### Additional supported tasks: 
+
 - [Add a work item](view-add-work-items.md)  
 - [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)  
 - [View work items through a mobile browser](../..//project/navigation/mobile-work.md)
@@ -79,7 +80,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
 - Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
-- [Filtering work items to focus on different views](../boards/filter-kanban-board.md) 
+- [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
 
@@ -112,6 +113,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Planning a sprint](../sprints/assign-work-sprint.md) 
 - [Forecasting work](../sprints/forecast.md) 
 - [Emailing a list of backlog items](email-work-items.md)
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md) 
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 
@@ -374,8 +376,6 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </table>
 
 
-
-
 ## Marketplace extensions 
 
 A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
@@ -393,6 +393,7 @@ Provides you access to these additional tools through the Team Explorer plug-in 
 
 ## Related articles 
 
+- [Set up your Backlogs and Boards](../backlogs/set-up-your-backlog.md)  
 - [Navigate in the web portal](../../project/navigation/index.md)
 - [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
 - [Why use Azure Boards?](../get-started/why-use-azure-boards.md)
