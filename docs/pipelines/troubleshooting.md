@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 03/14/2019
+ms.date: 10/25/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](_shared/version.md)]
 
-This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting)
+This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting).
 
 ::: moniker range="<= tfs-2018"
 
@@ -24,41 +24,197 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 
 ::: moniker-end
 
-## Run commands locally at the command prompt
-It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
+You can use the following troubleshooting sections to help diagnose issues with your pipeline.
 
-Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
+* [My pipeline isn't triggering](#my-pipeline-isnt-triggering)
+* [My pipeline tries to start but never gets an agent](#my-pipeline-tries-to-start-but-never-gets-an-agent)
+* [My pipeline starts but fails to complete successfully](#my-pipeline-starts-but-fails-to-complete-successfully)
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) problem.
+## My pipeline isn't triggering
 
-### Differences between local command prompt and agent
-Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+If a pipeline doesn't start at all, check the following common trigger related issues. 
 
+* [Overridden YAML trigger setting](#overridden-yaml-trigger-setting)
+* [Using pull request triggers with Azure Repos](#using-pull-request-triggers-with-azure-repos)
+* [Branch filters in CI and PR triggers](#branch-filters-in-ci-and-pr-triggers)
+* [Scheduled triggers](#scheduled-triggers)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> An additional reason that runs may not start is that your organization goes dormant five minutes after the last user signs out of Azure DevOps. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+> * A nightly build of code in your organization will run only one night until someone signs in again.
+> * CI builds of an Other Git repo will stop running until someone signs in again.
+
+::: moniker-end
+
+
+### Overridden YAML trigger setting
+
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
+
+### Using pull request triggers with Azure Repos
+
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+
+### Branch filters in CI and PR triggers
+
+When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
+
+### Scheduled triggers
+
+YAML scheduled triggers are set using UTC time zone. If your scheduled triggers don't seem to be firing at the right time, confirm the conversions between UTC and your local time zone, taking into account the day setting as well.
+
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline setting UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
+
+For more information, see [Scheduled triggers](build/triggers.md).
+
+## My pipeline tries to start but never gets an agent
+
+If your pipeline tries to start, but never gets an agent, check the following items.
+
+::: moniker range="azure-devops"
+
+* [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+* [Check agent connection issues](#agent-connection-issues)
+* [Check Azure DevOps status for a service degradation](#check-azure-devops-status-for-a-service-degradation)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+* [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+* [Check other connection issues](#agent-connection-issues)
+
+::: moniker-end
+
+### Parallel job limits - no available agents or you have hit your free limits
+
+::: moniker range="azure-devops"
+
+If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-jobs.md).
+
+To check your limits, navigate to **Project settings**, **Parallel jobs**.
+
+![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
+
+You can view the count of in-progress jobs by selecting **View in-progress jobs**.
+
+![View in-progress jobs](_img/troubleshooting/view-in-progress-jobs.png)
+
+You can view all jobs, including queued jobs, by selecting **Agent pools** from the **Project settings**.
+
+![View queued jobs](_img/troubleshooting/agent-pools-jobs.png)
+
+In this example, the concurrent job limit is one, with one job running and one queued up. When all agents are busy running jobs, as in this example, the following message is displayed when additional jobs are queued: `The agent request is not running because all potential agents are running other requests. Current position in queue: 1`. In this example the job is next in the queue so its position is one.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-pipelines-tfs.md).
+
+::: moniker-end
+
+### Demands that don't match the capabilities of an agent
+
+If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
+
+To check the capabilities and demands specified for your agents and pipelines, see [Capabilites](agents/agents.md#capabilities).
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands and you are using Microsoft-hosted agents, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Check Azure DevOps status for a service degradation
+
+Check the [Azure DevOps Service Status Portal](https://status.dev.azure.com/) for any issues that may cause a service degradation, such as increased queue time for agents. For more information, see [Azure DevOps Service Status](../user-guide/service-status-info.md).
+
+::: moniker-end
+
+## My pipeline starts but fails to complete successfully
+
+If your pipeline starts but fails to successfully complete, review the logs to identify the failure and research a solution. Some [Common issues and resolutions](#common-issues-and-resolutions) are provided in the following sections.
+
+* [Get logs to diagnose problems](#get-logs-to-diagnose-problems)
+  * [Configure verbose logs](#configure-verbose-logs)
+  * [View and download logs](#view-and-download-logs)
+    * [Worker diagnostic logs](#worker-diagnostic-logs)
+    * [Agent diagnostic logs](#agent-diagnostic-logs)
+    * [Other logs](#other-logs)
+  * [HTTP trace logs](#http-trace-logs)
 
 ## Get logs to diagnose problems
 
+Start by looking at the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
 
-### Build and Release logs
+In addition to viewing logs in the pipeline build summary, you can download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
 
-Start by looking at the logs in your completed build or release. If they don't provide enough detail, you can make them more verbose:
+* [Configure verbose logs](#configure-verbose-logs)
+* [View and download logs](#view-and-download-logs)
+  * [Worker diagnostic logs](#worker-diagnostic-logs)
+  * [Agent diagnostic logs](#agent-diagnostic-logs)
+  * [Other logs](#other-logs)
+* [HTTP trace logs](#http-trace-logs)
 
-1. On the **Variables** tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
 
-2. Queue the build or release.
+### Configure verbose logs
 
-3. In the explorer tab, view your completed build or release and click the failing task to view its output.
+ To assist with troubleshooting, you can configure your logs to be more verbose.
 
-4. If you need a copy of all the logs, click **Download all logs as zip**.
+::: moniker range="azure-devops"
 
-### Diagnostic logs
+* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
 
-1. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
+  ![Enable system diagnostics](_img/troubleshooting/enable-system-diagnostics.png)
 
-2. Queue the build.
+* To configure verbose logs for all runs, you can add a variable named `system.debug` and set its value to `true`. 
 
-3. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
+::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+* To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.debug` variable to `true`.
+* To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.debug`, set its value to `true`, and select to **Allow at Queue Time**.
+
+::: moniker-end
+
+
+### View and download logs
+
+::: moniker range="azure-devops"
+
+To view individual logs for each step, navigate to the build results for the run, and select the job and step. 
+
+![Task log](_img/troubleshooting/job-task-logs.png)
+
+To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)).
+
+![Download logs](_img/troubleshooting/download-logs.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+To download all logs, navigate to the build results for the run, choose **Download all logs as zip**.
+
+TODO I copied this note from below, what versions does it apply to
 > Diagnostic logs are not yet available for releases.
+
+::: moniker-end
+
+In addition to the pipeline diagnostic logs, the following specialized log types are available, and may contain information to help you troubleshoot.
+
+* [Worker diagnostic logs](#worker-diagnostic-logs)
+* [Agent diagnostic logs](#agent-diagnostic-logs)
+* [Other logs](#other-logs)
 
 #### Worker diagnostic logs
 
@@ -95,7 +251,12 @@ that ran your build.
 
 ### HTTP trace logs
 
-> **Important:** HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.
+* [Use built-in HTTP tracing](#use-built-in-http-tracing)
+* [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
+* [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
+
+> [!IMPORTANT]
+> HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.
 
 #### Use built-in HTTP tracing
 
@@ -109,15 +270,13 @@ macOS/Linux:
     export VSTS_AGENT_HTTPTRACE=true
 ```
 
-#### Use full HTTP tracing
-
-##### Windows
+#### Use full HTTP tracing - Windows
 
 1. Start [Fiddler](http://www.telerik.com/fiddler).
 
-2. We recommend you listen only to agent traffic.  File > Capture Traffic off (F12)  
+2. We recommend you listen only to agent traffic. File > Capture Traffic off (F12)  
 
-3. Enable decrypting HTTPS traffic.  Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
+3. Enable decrypting HTTPS traffic. Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
 
 4. Let the agent know to use the proxy:
 
@@ -125,43 +284,80 @@ macOS/Linux:
    set VSTS_HTTP_PROXY=http://127.0.0.1:8888
    ```
 
-5. Run the agent interactively.  If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
+5. Run the agent interactively. If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
 
 6. Restart the agent.
 
 
-##### macOS and Linux
+#### Use full HTTP tracing - macOS and Linux
 
 Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of the agent.
 
 1. Start Charles Proxy.
 
-2. Charles: Proxy > Proxy Settings > SSL Tab.  Enable.  Add URL.  
+2. Charles: Proxy > Proxy Settings > SSL Tab. Enable. Add URL.
 
-3. Charles: Proxy > Mac OSX Proxy.  Recommend disabling to only see agent traffic.
+3. Charles: Proxy > Mac OSX Proxy. Recommend disabling to only see agent traffic.
 
    ```bash
    export VSTS_HTTP_PROXY=http://127.0.0.1:8888
    ```
 
-4. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
+4. Run the agent interactively. If it's running as a service, you can set in the .env file. See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 5. Restart the agent.
 
-## File- and folder-in-use errors
-File or folder in use errors are often indicated by error messages such as:
-> Access to the path [...] is denied.  
-> The process cannot access the file [...] because it is being used by another process.  
-> Access is denied.  
-> Can't move [...] to [...]
+## Common issues and resolutions
 
-### Detect files and folders in use
+* [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [File or folder in use errors](#file-or-folder-in-use-errors)
+* [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
+* [Process hang](#process-hang)
+* [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
+* [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
+* [Agent connection issues](#agent-connection-issues)
+* [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
+
+### My pipeline is failing on a command-line step such as MSBUILD
+
+It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
+
+Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
+
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+
+
+#### Differences between local command prompt and agent
+
+Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
+
+
+### File or folder in use errors
+
+File or folder in use errors are often indicated by error messages such as: 
+
+* `Access to the path [...] is denied.`
+* `The process cannot access the file [...] because it is being used by another process.`
+* `Access is denied.`
+* `Can't move [...] to [...]`
+
+Troubleshooting steps:
+
+* [Detect files and folders in use](#detect-files-and-folders-in-use)
+* [Anti-virus exclusion](#anti-virus-exclusion)
+* [MSBuild and /nodeReuse:false](#msbuild-and-nodereusefalse)
+* [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
+
+#### Detect files and folders in use
+
 On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
 
-### Anti-virus exclusion
+#### Anti-virus exclusion
+
 Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.
 
-### MSBuild and /nodeReuse:false
+#### MSBuild and /nodeReuse:false
+
 If you invoke MSBuild during your build, make sure to pass the argument `/nodeReuse:false` (short form `/nr:false`). Otherwise MSBuild process(es) will remain running after the build completes. The process(es) remain for some time in anticipation of a potential subsequent build.
 
 This feature of MSBuild can interfere with attempts to delete or move a directory - due to a conflict with the working directory of the MSBuild process(es).
@@ -169,7 +365,7 @@ This feature of MSBuild can interfere with attempts to delete or move a director
 The MSBuild and Visual Studio Build tasks already add `/nr:false` to the arguments passed to MSBuild. However, if you invoke MSBuild from your own script, then you would need to specify the argument.
 
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
-### MSBuild and /maxcpucount:[n]
+#### MSBuild and /maxcpucount:[n]
 
 By default the build tasks such as [MSBuild](tasks/build/msbuild.md) and [Visual Studio Build](tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
@@ -177,26 +373,35 @@ Try adding the `/m:1` argument to your build tasks to force MSBuild to run only 
 
 File-in-use issues may result when leveraging the concurrent-process feature of MSBuild. Not specifying the argument `/maxcpucount:[n]` (short form `/m:[n]`) instructs MSBuild to use a single process only. If you are using the MSBuild or Visual Studio Build tasks, you may need to specify "/m:1" to override the "/m" argument that is added by default.
 
-## Intermittent or inconsistent MSBuild failures
+### Intermittent or inconsistent MSBuild failures
 
-If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn)
+If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn).
 
-## Process hang
+### Process hang
 
-### Waiting for Input
+Process hang causes and troubleshooting steps:
+
+* [Waiting for Input](#waiting-for-input)
+* [Process dump](#process-dump)
+* [WiX project](#wix-project)
+
+#### Waiting for Input
+
 A process hang may indicate that a process is waiting for input.
 
 Running the agent from the command line of an interactive logged on session may help to identify whether a process is prompting with a dialog for input.
 
 Running the agent as a service may help to eliminate programs from prompting for input. For example in .Net, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When running as a Windows service, the value is false.
 
-### Process dump
+#### Process dump
+
 Analyzing a dump of the process can help to identify what a deadlocked process is waiting on.
 
-### WiX project
+#### WiX project
+
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
 
-## Line endings for multiple platforms
+### Line endings for multiple platforms
 
 When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
 Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
@@ -211,24 +416,27 @@ In that file, add the following line:
 * text eol=lf
 ```
 
-## Variables having ' (single quote) appended
+### Variables having ' (single quote) appended
 
 If your pipeline includes a Bash script that sets variables using the `##vso` command, you may see an additional `'` appended to the value of the variable you set.
 This occurs because of an interaction with `set -x`.
 The solution is to disable `set -x` temporarily before setting a variable.
 The Bash syntax for doing that is `set +x`.
+
 ```bash
 set +x
 echo ##vso[task.setvariable variable=MY_VAR]my_value
 set -x
 ```
 
-### Why does this happen?
+#### Why does this happen?
+
 Many Bash scripts include the `set -x` command to assist with debugging.
 Bash will trace exactly what command was executed and echo it to stdout.
 This will cause the agent to see the `##vso` command twice, and the second time, Bash will have added the `'` character to the end.
 
 For instance, consider this pipeline:
+
 ```yaml
 steps:
 - bash: |
@@ -247,9 +455,9 @@ However, when it sees the second line, the agent will process everything to the 
 `MY_VAR` will be set to "my_value'".
 
 
-## Agent connection issues
+### Agent connection issues
 
-### Config fails while testing agent connection (on-premises TFS only)
+#### Config fails while testing agent connection (on-premises TFS only)
 
 ```
 Testing agent connection.
@@ -279,22 +487,25 @@ This error may indicate the agent lost communication with the server for a span 
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
-### Builds or releases not starting
+#### Builds or releases not starting
 
-#### TFS Job Agent not started
+##### TFS Job Agent not started
 This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
-#### Misconfigured notification URL (1.x agent version)
+##### Misconfigured notification URL (1.x agent version)
+
 This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
 
-## Team Foundation Version Control (TFVC)
+### Team Foundation Version Control (TFVC)
 
-### Get sources not downloading some files
+#### Get sources not downloading some files
+
 This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
-### Get sources through Team Foundation Proxy
+#### Get sources through Team Foundation Proxy
+
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
 
 Windows:
