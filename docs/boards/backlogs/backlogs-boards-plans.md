@@ -11,12 +11,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 08/24/2019
+ms.date: 10/17/2019
 ---
 
 
 
-# Tasks supported by Backlogs, Boards, & Taskboards, 
+# Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
