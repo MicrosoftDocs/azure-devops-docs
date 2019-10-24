@@ -55,7 +55,7 @@ YAML pipelines can have their `trigger` and `pr` trigger settings overridden in 
 
 ### Using pull request triggers with Azure Repos
 
-If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
 
 ### Branch filters in CI and PR triggers
 
@@ -77,6 +77,7 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
 * [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+* [Check agent connection issues](#agent-connection-issues)
 * [Check Azure DevOps status for a service degradation](#check-azure-devops-status-for-a-service-degradation)
 
 ::: moniker-end
@@ -85,6 +86,7 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
 * [Demands that don't match the capabilities of an agent](#demands-that-dont-match-the-capabilities-of-an-agent)
+* [Check other connection issues](#agent-connection-issues)
 
 ::: moniker-end
 
@@ -94,7 +96,7 @@ If your pipeline tries to start, but never gets an agent, check the following it
 
 If you are currently running other pipelines, you may not have any remaining parallel jobs, or you may have hit your [free limits](licensing/concurrent-jobs.md).
 
-To check your limits, navigate to **Project settings**, **Pipelines**, **Limits**.
+To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
 ![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
 
@@ -153,7 +155,7 @@ If your pipeline starts but fails to successfully complete, review the logs to i
 
 Start by looking at the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
 
-In addition to viewing logs in the pipeline build summary, you download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
+In addition to viewing logs in the pipeline build summary, you can download complete logs which include additional diagnostic information, and you can configure more verbose logs to assist with your troubleshooting.
 
 * [Configure verbose logs](#configure-verbose-logs)
 * [View and download logs](#view-and-download-logs)
@@ -249,7 +251,12 @@ that ran your build.
 
 ### HTTP trace logs
 
-> **Important:** HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.
+* [Use built-in HTTP tracing](#use-built-in-http-tracing)
+* [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
+* [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
+
+> [!IMPORTANT]
+> HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.
 
 #### Use built-in HTTP tracing
 
@@ -263,15 +270,13 @@ macOS/Linux:
     export VSTS_AGENT_HTTPTRACE=true
 ```
 
-#### Use full HTTP tracing
-
-##### Windows
+#### Use full HTTP tracing - Windows
 
 1. Start [Fiddler](http://www.telerik.com/fiddler).
 
-2. We recommend you listen only to agent traffic.  File > Capture Traffic off (F12)  
+2. We recommend you listen only to agent traffic. File > Capture Traffic off (F12)  
 
-3. Enable decrypting HTTPS traffic.  Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
+3. Enable decrypting HTTPS traffic. Tools > Fiddler Options > HTTPS tab. Decrypt HTTPS traffic
 
 4. Let the agent know to use the proxy:
 
@@ -279,26 +284,26 @@ macOS/Linux:
    set VSTS_HTTP_PROXY=http://127.0.0.1:8888
    ```
 
-5. Run the agent interactively.  If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
+5. Run the agent interactively. If you're running as a service, you can set as the environment variable in control panel for the account the service is running as.
 
 6. Restart the agent.
 
 
-##### macOS and Linux
+#### Use full HTTP tracing - macOS and Linux
 
 Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of the agent.
 
 1. Start Charles Proxy.
 
-2. Charles: Proxy > Proxy Settings > SSL Tab.  Enable.  Add URL.  
+2. Charles: Proxy > Proxy Settings > SSL Tab. Enable. Add URL.
 
-3. Charles: Proxy > Mac OSX Proxy.  Recommend disabling to only see agent traffic.
+3. Charles: Proxy > Mac OSX Proxy. Recommend disabling to only see agent traffic.
 
    ```bash
    export VSTS_HTTP_PROXY=http://127.0.0.1:8888
    ```
 
-4. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
+4. Run the agent interactively. If it's running as a service, you can set in the .env file. See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 5. Restart the agent.
 
@@ -319,7 +324,7 @@ It is helpful to narrow whether a build or release failure is the result of an A
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
 #### Differences between local command prompt and agent
