@@ -69,7 +69,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
     <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux based agents. For batch files use the prefix \"call\" before every azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
 </tr>
 <tr>
-    <td><code>scriptArguments</code><br/>Script Arguments</td>
+    <td><code>arguments</code><br/>Script Arguments</td>
     <td>(Optional) Arguments passed to the script</td>
 </tr>
 <tr>
