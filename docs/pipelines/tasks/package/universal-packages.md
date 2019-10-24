@@ -46,7 +46,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `vstsPackageVersion`<br/>Package version | Select the package version or use a variable containing the version to download. This can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
 | `feedDownloadExternal`<br/>Feed | Specifies the name of an external feed to download from. |
 | `packageDownloadExternal`<br/>Package name | Specifies the package name to download |
-| `versionDownloadExternal`<br/>Package version | Package version | Select the package version or use a variable containing the version to download. This can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
+| `versionDownloadExternal`<br/>Package version | Select the package version or use a variable containing the version to download. This can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
 | `publishDirectory`<br/>Path to file(s) to publish | Specifies the path to list of files to be published. |
 | `feedsToUsePublish`<br/>Feed location | You can either select a feed from this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
 | `publishFeedCredentials`<br/>organization/collection connection | Credentials to use for external feeds. |
