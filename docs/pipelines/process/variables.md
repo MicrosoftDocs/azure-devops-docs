@@ -584,5 +584,4 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will be 20, since the variables are expanded just before the step
    ```
 
----
-* * *
+
