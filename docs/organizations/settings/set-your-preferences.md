@@ -29,7 +29,7 @@ From your profile page, you can change your picture or other account preferences
 
 ::: moniker range="azure-devops"
 
-1. To change your user preferences, open your profile menu, and then select **Azure DevOps profile**.
+1. To change your user preferences, open your profile menu, and then select **User settings**.
 
    ![Open profile user settings](_img/open-profile-user-settings.png)
 
