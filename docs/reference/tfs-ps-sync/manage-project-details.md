@@ -29,7 +29,7 @@ ms.date: 01/12/2017
   
   
 > [!NOTE]
->  For a demonstration video, see the following page on the Microsoft website: [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222611). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server  
+>  For a demonstration video, see the following page on the Microsoft website: [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222611). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server  
   
  **Requirements**  
   
@@ -62,7 +62,7 @@ ms.date: 01/12/2017
 |Area to configure|Recommended configuration|Notes|  
 |-----------------------|-------------------------------|-----------|  
 |Process template for project|Microsoft Solutions Framework (MSF) for Capability Maturity Model Integration (CMMI) Process Improvement|The CMMI template provides requirement and task types of work items. You can use the backlog and board pages to manage your backlog and plan and run your sprints. Or, you can use shared queries that you open in Excel to quickly define and link requirements and tasks. **Note:**  You can also use a customized CMMI process template or other template and customize it to meet your needs.|  
-|Project mapping|`/workItemTypes:Requirement,Task`|When you map the enterprise project plan to the project, specify requirement and task as the work item type items to participate in synchronization. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](http://go.microsoft.com/fwlink/?LinkId=203354).|  
+|Project mapping|`/workItemTypes:Requirement,Task`|When you map the enterprise project plan to the project, specify requirement and task as the work item type items to participate in synchronization. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
 |Field mappings|`/useDefaultFieldMappings`|You can use default field mappings. No additional field mappings are required.|  
 |Resource Names|You must add team members to the Team Members group for each instance of PWA, or you must grant them the Open Project and View Project Site permissions in Project. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).<br /><br /> Also, you must add all valid users in Team Foundation who are assigned requirements, deliverables or tasks in Project to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.|You must grant permissions to all user accounts that are assigned as resources in the project plan or that are named in the Assigned To field for a work item. These users submit status updates that flow into the status queue for the instance of PWA.<br /><br /> All names that are assigned to the **Resource Names** field must be recognized as valid contributors of the project.|  
 |Project managers|Accounts of users of Project Professional must be granted the **View Project-level information** permission or assigned as members of the **Reader** group in Team Foundation for projects to which they will publish.|You must grant project managers permissions to modify work items for those projects that are mapped to their enterprise project plans.|  
@@ -93,7 +93,7 @@ ms.date: 01/12/2017
   
  You should publish only those tasks that you want to have tracked in Team Foundation. For example, you should not publish the summary tasks **Project Schedule** and **Development**, which the previous illustration shows, to Team Foundation because they have no work to track.  
   
- To maintain control of your schedule, you can set a baseline to track the team progress against the target schedule. For more information, see the following page on the Microsoft website: [Create or update a baseline or an interim plan](http://go.microsoft.com/fwlink/?LinkId=203362).  
+ To maintain control of your schedule, you can set a baseline to track the team progress against the target schedule. For more information, see the following page on the Microsoft website: [Create or update a baseline or an interim plan](https://go.microsoft.com/fwlink/?LinkId=203362).  
   
  After you have set the baseline, you can save and publish the project plan to Project Server. The baseline value appears as the **Original Estimate** for a work item in Team Foundation. As the following illustration shows, a status notification in the lower-left corner indicates when publishing is completed.  
   

@@ -700,7 +700,7 @@ To learn more, see [Configure the Test Results Trend (Advanced) widget](./config
 
 ![Embedded web page widget](_img/embedded-web-page-widget.png)
 
-Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](http://go.microsoft.com/fwlink/?LinkId=808035) are supported.
+Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
 
 ----
 ::: moniker-end

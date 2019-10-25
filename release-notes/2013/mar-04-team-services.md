@@ -74,6 +74,6 @@ Finally, this sprint we enabled support for scheduled builds with Git repositori
 > [!NOTE]
 > To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
-That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,

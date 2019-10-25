@@ -41,7 +41,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
  To use these commands, you must belong to the **Team Foundation Administrators**  group. To register or unregister an instance of PWA, you must also belong to the Administrators group for the instance. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
  
   
