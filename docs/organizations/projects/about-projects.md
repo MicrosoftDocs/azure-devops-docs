@@ -2,14 +2,14 @@
 title: About projects and scaling your organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
-description: Understand project management and how you can track progress and collaborate on building software solutions.
+description: Understand how to structure your project to support collaboration on building software solutions.
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -214,6 +214,20 @@ To review  stories and short videos on how Microsoft transitioned from waterfall
 
 In addition to connecting through a web browser, you can connect to a project from the following clients:
 
+::: moniker range=">= azure-devops-2019"
+
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
@@ -224,7 +238,16 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
+::: moniker-end
+
 See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
+
+## Q & A
+
+### Q: Can I move or transfer a project to another organization or collection? 
+
+**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
+ 
 
 ## Related articles
 
