@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 Search makes it easy to locate information across all your projects, from anywhere and any computer or mobile device,
 using just a web browser.
 
-## 5-Minute Quickstarts
+## 5-minute quickstarts
 
 | | | 
 | --- | --- |
@@ -31,7 +31,7 @@ using just a web browser.
 
 <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/500/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe>
 
-## How-to Guides
+## How-to guides
 
 * [Use Code Search](advanced-code-search-syntax.md)
 * [Use Work Item Search](advanced-work-item-search-syntax.md)
