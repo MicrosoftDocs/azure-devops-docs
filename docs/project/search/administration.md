@@ -16,8 +16,6 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
-In this topic:
-
 ::: moniker range="= azure-devops"
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Services**

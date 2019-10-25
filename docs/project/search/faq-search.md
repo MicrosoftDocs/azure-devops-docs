@@ -16,16 +16,22 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
-In this article, learn about the following frequently asked questions and troubleshooting information:
-* [Search is configured but the Search box is not displayed](#no-search-box)
-* [No search results are shown after installing or configuring Search](#no-results-install)
-* [How do I know if indexing was triggered for all the collections?](#indexing-status-for-collections)
-* [Search stops working and no results are shown](#no-results-later)
-* [Search does not show the expected results](#unexpected-results)
-* [Azure DevOps Server or TFS overall performance is affected](#server-slow)
-* ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
-* [Partial results in code search](#partial-results-in-code-search)
-* [Wildcard Search](#wildcard-search)
+- [Troubleshoot Search](#troubleshoot-search)
+- [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
+- [Q: Why are no search results shown after installing or configuring Search?](#q-why-are-no-search-results-shown-after-installing-or-configuring-search)
+- [Q: How do I know if indexing was triggered for all the collections?](#q-how-do-i-know-if-indexing-was-triggered-for-all-the-collections)
+- [Q: Why does Search stop working and no results are shown?](#q-why-does-search-stop-working-and-no-results-are-shown)
+- [Q: Why doesn't Search show the expected results?](#q-why-doesnt-search-show-the-expected-results)
+- [Q: Why is Azure DevOps Server or TFS overall performance affected?](#q-why-is-azure-devops-server-or-tfs-overall-performance-affected)
+- [Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?](#q-why-doesnt-search-work-post-upgrade-to-azure-devops-server-2019-update-1)
+- [Partial results in code search](#partial-results-in-code-search)
+  - [Problem](#problem)
+  - [Explanation](#explanation)
+  - [Recommendation](#recommendation)
+- [Wildcard search](#wildcard-search)
+  - [Problem](#problem-1)
+  - [Explanation](#explanation-1)
+  - [Recommendation](#recommendation-1)
 
 <a name="no-search-box"></a>
 
