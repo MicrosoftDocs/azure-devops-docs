@@ -98,7 +98,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2019"
 
 ### YAML
 1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
