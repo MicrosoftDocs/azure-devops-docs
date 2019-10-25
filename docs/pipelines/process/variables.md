@@ -32,23 +32,23 @@ In this topic, we discuss user-defined variables. Names of these variables consi
 
 A few variable prefixes are reserved by the system and should not be used.
 These are: `endpoint`, `input`, `secret`, and `securefile`.
-Any variable which begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
+Any variable that begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
 
 ## Understand variable syntax
 
-Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
+Azure Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` displays. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
+Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
 
 Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
 
-Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.VAR]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.VALUE]`, but `$[variables.KEY]: value` is not.
+Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.value]`, but `$[variables.key]: value` is not.
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
 |macro|`$(var)`|runtime|value (right side)|prints `$(var)`|
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
-|runtime expression|`$[variables.VAR]`|runtime|value (right side)|empty string|
+|runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
 When pipeline variables are turned into environment variables, variable names become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
 
