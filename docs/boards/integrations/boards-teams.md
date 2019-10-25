@@ -5,10 +5,10 @@ description: Create work items and monitor work item activity in Azure Boards pr
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: conceptual
-ms.manager: gopinach
-ms.reviewer: atinb
+ms.manager: mijacobs
+ms.reviewer: karrg
 ms.author: karrg
-author: RG Karthik
+author: RGKarthik
 monikerRange: 'azure-devops'
 ms.date: 10/24/2019
 ---

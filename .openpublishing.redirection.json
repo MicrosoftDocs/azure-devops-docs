@@ -12024,6 +12024,61 @@
       "source_path": "docs/migrate/index.md",
       "redirect_url": "/azure/devops/migrate/migration-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/public/index.md",
+      "redirect_url": "/azure/devops/organizations/public/about-public-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/mapping/index.md",
+      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/index.md",
+      "redirect_url": "/azure/devops/reference/on-premises-xml-process-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/work/hosted/index.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/hosted-xml-process-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/work/index.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/inheritance-process-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/scale/index.md",
+      "redirect_url": "/azure/devops/settings/about-teams-and-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/projects/index.md",
+      "redirect_url": "/azure/devops/projects/about-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/index.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/index.md",
+      "redirect_url": "/azure/devops/notifications/about-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/index.md",
+      "redirect_url": "/azure/devops/extend/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/index.md",
+      "redirect_url": "/azure/devops/marketplace/overview",
+      "redirect_document_id": false
     }
   ]
 }
