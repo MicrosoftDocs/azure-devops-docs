@@ -604,6 +604,8 @@ However, there might be cases where you no longer want to use Search or you want
 install. This requires multiple steps, depending on whether Search is configured
 on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on a [separate server](#unconfig-separate-server).
 
+::: moniker-end
+
 <a name="unconfig-same-server"></a>
 
 ### Unconfigure Search on the machine configured as your Azure DevOps Server
