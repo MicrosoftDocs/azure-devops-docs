@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Create work items and monitor work item activity in Azure Boards project from Microsoft Teams channels
 ms.prod: devops
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: tutorial
 ms.manager: mijacobs
 ms.reviewer: karrg
 ms.author: karrg
@@ -15,9 +15,11 @@ ms.date: 10/24/2019
  
 # Azure Boards with Microsoft Teams
 
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+
 If you use [Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software), you can use the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000644?tab=Overview) to create work items and monitor work item activity in your Azure Boards project from your Teams channel. 
 
-This app allows users to set up and manage subscriptions for create, update and other work item events, and get notifications for these events in their Teams channel. Conversations in the channel can be used to create work items. Using messaging extension, users can search and share work items with other members in the channel. Users can also get previews for work item URLs to initiate discussions and keep the conversations contextual.
+With this app, users can set up and manage subscriptions for creating and updating work items, and managing other work item events. Also users get notifications for these events in their Teams channel. Users can create work items from conversations in the channel. Using messaging extension, users can search and share work items with other members in the channel. Users can also get previews for work item URLs to initiate discussions and keep the conversations contextual.
 
 ![Pic: Notification](./_img/integrations-teams/notifications.png)
 
@@ -41,7 +43,9 @@ Read this article to learn how to:
 > * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.  
 > * Notifications are currently not supported inside direct messages.
 
-## Add the Azure Boards app to your team in Microsoft Teams
+## Add the Azure Boards app to Microsoft Teams
+
+You add the app to your Teams channel in Microsoft Teams.
 
 1. Visit the App store in Microsoft Teams and search for the Azure Boards app. Upon installing, you will see a welcome message from the app as shown in the following image. 
 
@@ -59,7 +63,7 @@ To use the app, you must first link your Azure Boards project to your Teams chan
 	
 	![Pic: signin](./_img/integrations-teams/signin2.png)
 
-2. After signing in, use the following command inside a Teams channel to link to the Azure Boards project which you specify with the URL :
+2. After signing in, use the following command inside a Teams channel to link to the Azure Boards project which you specify with the URL:
 
 	```
 	@azure boards link [project url]
@@ -145,7 +149,7 @@ To help users search and share work items, Azure Boards app for Microsoft Teams 
 
 ![Pic: URL unfurling](./_img/integrations-teams/compose extension.png)
 
-## Previews of work item URLs
+## Preview work item URLs
 
 To support collaboration around work items discussed within a channel, a preview of work items referenced in the channel is displayed. When a user pastes the work item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
 
