@@ -51,7 +51,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
    
 ### Managing approvals and rejections  
- All changes to work items that are linked to Project Server must be submitted for approval to the project manager of the enterprise project plan that is mapped to the project. You can set up automatic approval so that all updates from Team Foundation are automatically approved. For more information, see [Approve or reject task updates](http://go.microsoft.com/fwlink/?LinkId=203361).  
+ All changes to work items that are linked to Project Server must be submitted for approval to the project manager of the enterprise project plan that is mapped to the project. You can set up automatic approval so that all updates from Team Foundation are automatically approved. For more information, see [Approve or reject task updates](https://go.microsoft.com/fwlink/?LinkId=203361).  
   
  Approved work items typically get rolled back into the enterprise project plan. Rejected work items require resolution and resubmission.  
   

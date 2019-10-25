@@ -73,7 +73,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 1. Verify that you have the following tools, configurations, and permissions. 
 
-	* If you haven't installed TFS power tools, [install them now](http://go.microsoft.com/fwlink/?LinkId=320602).  
+	* If you haven't installed TFS power tools, [install them now](https://go.microsoft.com/fwlink/?LinkId=320602).  
 	* If you haven't installed Visual Studio, [install a version of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.  
 	* If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator-tfs).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
@@ -169,6 +169,6 @@ You can always check the names by opening the context menu for any report, choos
 **A:** See [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](https://msdn.microsoft.com/library/ms244710.aspx).
 
 #### Q: Where can I go if I have more questions?
-**A:** Search for an answer or post a question in the [Team Foundation Server - Reporting & Warehouse forum](http://go.microsoft.com/fwlink/?LinkId=95680).
+**A:** Search for an answer or post a question in the [Team Foundation Server - Reporting & Warehouse forum](https://go.microsoft.com/fwlink/?LinkId=95680).
 
 <!-- ENDSECTION -->

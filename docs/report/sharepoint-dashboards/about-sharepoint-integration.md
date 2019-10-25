@@ -89,7 +89,7 @@ If you install SharePoint Products, you must have more robust hardware than what
 For complete SharePoint hardware requirements, see the following articles:
 
 * [Hardware and software requirements for SharePoint 2013 (SharePoint Foundation 2013/SharePoint Server 2013)](https://technet.microsoft.com/library/cc262485.aspx)
-* [Hardware and software requirements (SharePoint Foundation 2010)](http://go.microsoft.com/fwlink/?LinkId=231850)
+* [Hardware and software requirements (SharePoint Foundation 2010)](https://go.microsoft.com/fwlink/?LinkId=231850)
 * [Hardware and software requirements (SharePoint Server 2010)](https://technet.microsoft.com/library/cc262485(v=office.14).aspx)
 
 
