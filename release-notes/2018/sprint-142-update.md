@@ -251,7 +251,7 @@ In February 2017, we announced [support for Azure Active Directory Conditional A
 Read about the new features below and head over to Azure DevOps to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

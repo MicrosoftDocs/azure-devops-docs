@@ -2268,51 +2268,51 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item history tab</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Managing a NuGet package’s lifecycle</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build queue tab</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Hosted build pool build agent migration</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Xamarin license step removed</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Jenkins with untrusted SSL certificates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Apple App Store extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Request Feedback</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checkstyle static analysis</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Deployment manual intervention</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Service endpoint improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SQL database deployment task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>User lifecycle management improvements</td>
@@ -2327,47 +2327,47 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Updates <br />
                 Comments, now with markdown and emoji <br />
                 Auto-complete pull requests waiting on policies</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clone Git repositories from your browser using Tower</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Download packages without NuGet</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Packages: Get started quickly</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Queue Jenkins jobs from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Jenkins service hook enhancements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Run SSH commands on remote machines from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create archives from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Copy files over SSH from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Download Jenkins artifacts to builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Use FTP or FTPS to upload files from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Google Play Extension improvements</td>
@@ -2379,31 +2379,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item templates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Quickly “Unfollow” work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Drag and drop attachments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Assigned to Me widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard permissions</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configure test outcomes for tests across different test suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test Run and Test Result summary – traceability to Releases and manual test artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Unpublish extension – Removing a public extension from the Marketplace</td>
@@ -2420,7 +2420,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Restrict Package Management feed creation</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release management improvements – Azure deployments, release policies: <br />
@@ -2430,23 +2430,23 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Policies – Retention of releases and builds <br />
                 Release definition authoring improvements – linked artifacts improvements <br />
                 Release – redeploy after success</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test traceability and release environments support in Test History</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory testing improvements – view unexplored work items, capture web page load data</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Java PMD analysis in Gradle build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>User management – export users and licenses</td>
@@ -2454,169 +2454,169 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Backlog extension points</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="18"><a href="2016/jul-07-team-services.md" data-raw-source="[7 Jul 2016](2016/jul-07-team-services.md)">7 Jul 2016</a>  </td>
             <td>Resizable WIT charts on dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Filter boards to a parent work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Links front and center</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test settings configuration for Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Comment tracking for pull requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Browse Code Coverage reports in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Maven and Gradle tasks produce a build summary when running a SonarQube analysis</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Agent queue role-based security</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Task-level time-outs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Import/Export/Clone release definition</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Web app deployment using ARM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Partially successful deployments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>View and download attachments associated with releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>GitHub artifacts for RM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>.NET SQL Extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Image action log in Web Test runner</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Order tests in Test hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Pick a build to test with</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="22"><a href="2016/jun-17-team-services.md" data-raw-source="[17 Jun 2016](2016/jun-17-team-services.md)">17 Jun 2016</a></td>
             <td>Git &amp; TFVC – Browsing branches</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – Ahead/behind</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – Branch picker includes “Mine”</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – Path control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – File type icons</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Items – An improved header</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Items – Custom states</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing – Insights</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing – Auto stop screen recordings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Screen recording support in Web runner (for Chrome) </td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Bugs filed as children – Web runner / Exploratory testing extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test – History across branches</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test – Automated testing for SCVMM and VMWare</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Test status visibility</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Support Java PMD analysis in Maven build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Passing oauth tokens to scripts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build – Enable path filters for Git CI triggers</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build – Updated hosted pool software</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboards – Resizable query results widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Third-party plugins – Jenkins plug-in to RM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Marketplace – Publisher review responses</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Team Rooms – Build vNext support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="1"><a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/" data-raw-source="[6 Jun 2016](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/)">6 Jun 2016</a></td>
@@ -2626,15 +2626,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="15"><a href="2016/jun-01-team-services.md" data-raw-source="[1 Jun 2016](2016/jun-01-team-services.md)">1 Jun 2016</a></td>
             <td>Filtering in Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Process configuration REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboards REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SSH clients can connect to Git repos</td>
@@ -2642,56 +2642,56 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Redesigned Branches page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create and send links to specific sections of code</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>API updates for package management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Screenshot and system info support in Chrome Web runner</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Ordering of tests in Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Docker integration for build and release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SonarQube results in pull request view</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test results trend for build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Service hooks for release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>TeamCity artifacts for release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management Client SDK</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="19"><a href="2016/may-06-team-services.md" data-raw-source="[6 May 2016](2016/may-06-team-services.md)">6 May 2016</a></td>
             <td>Email improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checkbox control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Item page management</td>
@@ -2699,72 +2699,72 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Turning board annotations on/off</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clear Formatting command</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Adding attachments during manual testing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test plan/suite columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build and release summary updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management repository linking</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Copy, Export, and Import release definitions</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Schedule based deployments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Simplified Release definition wizard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>New Release Management job execution variables</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Improved build and pull request traceability</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Team Project rename permission</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Admin settings Work hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>UX improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="17"><a href="2016/apr-13-team-services.md" data-raw-source="[13 Apr 2016](2016/apr-13-team-services.md)">13 Apr 2016</a></td>
             <td>Follow a work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Change work item type</td>
@@ -2776,31 +2776,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Kanban board live updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Pick lists for work Items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checklist improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build to Line number</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build log view supports much larger logs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Java Build templates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Xamarin Build Tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Widget SDK: Reusable CSS and DOM templates</td>
@@ -2816,28 +2816,28 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Release Management – Email release summary</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Dashboard widget for release definition summary</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Deploy based on conditions in multiple environments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Provision VMs or run a PS script using SCVMM extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="11"><a href="2016/mar-24-team-services.md" data-raw-source="[24 Mar 2016](2016/mar-24-team-services.md)">24 Mar 2016</a></td>
             <td>Commit traceability</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>View Git LFS files in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git for Windows now includes Team Services authentication by default</td>
@@ -2849,64 +2849,64 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test progress from your cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Capture screen recordings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Queue a Run by specifying your test suite</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configuration management in the Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Enable build result extensions to specify order and column</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configure status API reporting for a build definition</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Tab contribution point</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="13"><a href="2016/mar-03-team-services.md" data-raw-source="[3 Mar 2016](2016/mar-03-team-services.md)">3 Mar 2016</a></td>
             <td>View test results for each release environment</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Triggers: Deploy based on completion in multiple environments (join)</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Epic and Feature board drill-down</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory testing directly from a work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Data collection: Image action log</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create test cases based on Image action log data</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Assigning configurations to test plans, test suites and test cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Squash merge pull requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clone in IntelliJ, Android Studio, etc.</td>
@@ -2939,23 +2939,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item query charts in the dashboard catalog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Cumulative flow diagram widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Flexible build policy for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>SonarQube Quality Gates in Build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>RM: UI extensibility</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>SCVMM support</td>
@@ -2963,7 +2963,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Exploratory Testing improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Azure SQL Database Deployment task</td>
@@ -2971,15 +2971,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Delete Test Plan</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>#mention</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Keyboard shortcuts for Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="17"><a href="2016/jan-25-team-services.md" data-raw-source="[25 Jan 2016](2016/jan-25-team-services.md)">25 Jan 2016</a></td>
@@ -2988,35 +2988,35 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Create branch and links to related artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Build widgets in the catalog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Markdown widget with file from repository</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Auto-refresh dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Richer visualizations in the build summary page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>View passed test results and file bugs in build summary page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Test summary in build status notification email</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Support for editing tags in the bulk edit dialog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Deleting a custom field</td>
@@ -3024,15 +3024,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Keyboard shortcuts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Test plan improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Exploratory testing improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Release orchestration improvements</td>
@@ -3044,11 +3044,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Search scope selector</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Search across Git and TFVC projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="8"><a href="2015/dec-10-team-services.md" data-raw-source="[10 Dec 2015](2015/dec-10-team-services.md)">10 Dec 2015</a></td>
@@ -3057,23 +3057,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item discussion</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work item history improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Deleting work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Dashboards edit mode</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Keyboard shortcuts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>On-Premises support for Exploratory Testing extension:</td>
@@ -3081,36 +3081,36 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Scope code search using path filters</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/nov-24-team-services.md" data-raw-source="[24 Nov 2015](2015/nov-24-team-services.md)">24 Nov 2015</a></td>
             <td>Git and TFVC in the same team project</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Package Management build tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Implement a task once for multiple platforms</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Pull Request Widget for Dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td><xref href="mention" data-throw-if-not-resolved="False" data-raw-source="@mention"></xref> and #ID in code</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Reordering cards on boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Global shortcut keys</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/nov-18-team-services.md" data-raw-source="[18 Nov 2015](2015/nov-18-team-services.md)">18 Nov 2015</a></td>
@@ -3131,7 +3131,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Results in Build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing extension</td>
@@ -3144,27 +3144,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="6"><a href="2015/oct-30-team-services.md" data-raw-source="[30 Oct 2015](2015/oct-30-team-services.md)">30 Oct 2015</a></td>
             <td>Dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved pull request experience</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Manual test iteration results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Retention policy for test results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Reorder and re-parent tasks from the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2015/oct-08-team-services.md" data-raw-source="[8 Oct 2015](2015/oct-08-team-services.md)">8 Oct 2015</a></td>
@@ -3173,40 +3173,40 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Starting with Git, made easy</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved commit details</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis from a Maven build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/sep-18-team-services.md" data-raw-source="[18 Sep 2015](2015/sep-18-team-services.md)">18 Sep 2015</a></td>
             <td>Inline tasks on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Query and display of Kanban fields</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Multi-select items on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Branch policy to require linked work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Export test outcomes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Work item trend and rollup reporting in Power BI</td>
@@ -3214,37 +3214,37 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Support for publishing xUnit results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-26-team-services.md" data-raw-source="[26 Aug 2015](2015/aug-26-team-services.md)">26 Aug 2015</a></td>
             <td>Rename columns in place</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Choosing users for capacity planning</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Burndown with available capacity</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis build tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-07-team-services.md" data-raw-source="[7 Aug 2015](2015/aug-07-team-services.md)">7 Aug 2015</a></td>
             <td>Multi-select items on the product backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Reorder cards when changing columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Color tags and titles on your cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Libraries for integrating with VSTS now available at nuget.org</td>
@@ -3258,23 +3258,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2015/jul-17-team-services.md" data-raw-source="[17 Jul 2015](2015/jul-17-team-services.md)">17 Jul 2015</a></td>
             <td>Multiple activities per team member</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Configure settings directly from backlogs/boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Hide empty fields on cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Card coloring on Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Drag any item to an iteration from anywhere</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Build your projects hosted in GitHub</td>
@@ -3287,57 +3287,57 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2015/jul-07-team-services.md" data-raw-source="[7 Jul 2015](2015/jul-07-team-services.md)">7 Jul 2015</a></td>
             <td>Card coloring on Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Personal access tokens</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Adding work directly to a sprint</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/jun-03-team-services.md" data-raw-source="[3 Jun 2015](2015/jun-03-team-services.md)">3 Jun 2015</a></td>
             <td>Kanban swim lanes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>#Mention work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Automated testing in Build vNext</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
         </tr>
         <tr>
             <td>Team settings API</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/may-15-team-services.md" data-raw-source="[15 May 2015](2015/may-15-team-services.md)">15 May 2015</a></td>
             <td>Build vNext</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Backlog navigation update</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Opt-in to portfolio backlogs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Improved SAFe support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban collapsed columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Git branch policies</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Power BI &amp; VSO</td>
@@ -3370,15 +3370,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/apr-27-team-services.md" data-raw-source="[27 Apr 2015](2015/apr-27-team-services.md)">27 Apr 2015</a></td>
             <td>Adding fields to cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board filtering</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Card options on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Account restore</td>
@@ -3387,7 +3387,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2015/apr-24-team-services.md" data-raw-source="[24 Apr 2015](2015/apr-24-team-services.md)">24 Apr 2015</a></td>
             <td>Team Project Rename</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/apr-22-team-services.md" data-raw-source="[22 Apr 2015](2015/apr-22-team-services.md)">22 Apr 2015</a></td>
@@ -3405,19 +3405,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/apr-10-team-services.md" data-raw-source="[10 Apr 2015](2015/apr-10-team-services.md)">10 Apr 2015</a></td>
             <td>Configure cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Markdown editing for definition of done</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>CFD options</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Web history view for Git projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/mar-27-team-services.md" data-raw-source="[27 Mar 2015](2015/mar-27-team-services.md)">27 Mar 2015</a></td>
@@ -3427,27 +3427,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2015/mar-10-team-services.md" data-raw-source="[10 Mar 2015](2015/mar-10-team-services.md)">10 Mar 2015</a></td>
             <td>Current iteration query token</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban definition of done</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Responsive card sizes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Bugs on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Syntax highlight for XML, Sass, Objective-C, R</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for accounts in West Europe</td>
@@ -3461,15 +3461,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/feb-18-team-services.md" data-raw-source="[18 Feb 2015](2015/feb-18-team-services.md)">18 Feb 2015</a></td>
             <td>Adding and editing directly from the board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Split columns on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Assign multiple people to test suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Application Insights in the Azure Preview Portal</td>
@@ -3488,19 +3488,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/jan-27-team-services.md" data-raw-source="[27 Jan 2015](2015/jan-27-team-services.md)">27 Jan 2015</a></td>
             <td>Basic license upgraded</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Unparented Tasks on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Inline editing on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td><a href="http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
@@ -3510,15 +3510,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="6"><a href="2014/dec-17-team-services.md" data-raw-source="[17 Dec 2014](2014/dec-17-team-services.md)">17 Dec 2014</a></td>
             <td>Quick code editing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Filtering on backlogs and queries</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Sprint backlog and task board improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>New integrations: Slack and Azuqua</td>
@@ -3526,7 +3526,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Preview APIs for adding and updating files in source control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for Visual Studio Team Services</td>
@@ -3544,23 +3544,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5"><a href="2014/dec-02-team-services.md" data-raw-source="[2 Dec 2014](2014/dec-02-team-services.md)">2 Dec 2014</a></td>
             <td>Identity control and avatars</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Pull Request improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Taskboard changes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board persisted column headers</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Sharing personal queries</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2014/dec-02-team-services.md" data-raw-source="[12 Nov 2014](2014/dec-02-team-services.md)">12 Nov 2014</a></td>
@@ -3570,31 +3570,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2014/nov-04-team-services.md" data-raw-source="[4 Nov 2014](2014/nov-04-team-services.md)">4 Nov 2014</a></td>
             <td>Bugs on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test execution charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Recent test results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Preview Markdown and HTML files in Code Explorer</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Browse link dialog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>REST batch support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Third-party OAuth scopes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/oct-28-team-services.md" data-raw-source="[28 Oct 2014](2014/oct-28-team-services.md)">28 Oct 2014</a></td>
@@ -3612,45 +3612,45 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2014/oct-14-team-services.md" data-raw-source="[14 Oct 2014](2014/oct-14-team-services.md)">14 Oct 2014</a></td>
             <td>Test artifacts as work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
         </tr>
         <tr>
             <td>Copy and paste query results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/sep-23-team-services.md" data-raw-source="[23 Sep 2014](2014/sep-23-team-services.md)">23 Sep 2014</a></td>
             <td>Maximizing text area fields</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Navigating to links</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Work item performance improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="6"><a href="2014/sep-04-team-services.md" data-raw-source="[4 Sep 2014](2014/sep-04-team-services.md)">4 Sep 2014</a></td>
             <td>Work Item query improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Quick search through tree controls</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Longer trend charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Test Cases related to Test Suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>WIT REST API v1.2</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Event and resource versioning within service hooks</td>
@@ -3659,16 +3659,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2014/aug-27-team-services.md" data-raw-source="[27 Aug 2014](2014/aug-27-team-services.md)">27 Aug 2014</a></td>
             <td>A license for Stakeholders</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/aug-18-team-services.md" data-raw-source="[18 Aug 2014](2014/aug-18-team-services.md)">18 Aug 2014</a></td>
             <td>Project Welcome pages</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
             <td>Tagging support in the Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2014/jul-21-team-services.md" data-raw-source="[21 Jul 2014](2014/jul-21-team-services.md)">21 Jul 2014</a></td>
@@ -3681,7 +3681,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Trend charts + aggregation</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test Hub added to the Advanced License</td>
@@ -3694,20 +3694,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/jul-01-team-services.md" data-raw-source="[1 Jul 2014](2014/jul-01-team-services.md)">1 Jul 2014</a></td>
             <td>Hiding work in progress on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
         </tr>
         <tr>
             <td>Full Screen on the backlog and boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td>Move to position on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td><a href="2014/jun-10-team-services.md" data-raw-source="[10 Jun 2014](2014/jun-10-team-services.md)">10 Jun 2014</a></td>
             <td>Pull Requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/may-20-team-services.md" data-raw-source="[20 May 2014](2014/may-20-team-services.md)">20 May 2014</a></td>
@@ -3716,7 +3716,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Copy/Paste shared parameter data between VS Online and Excel</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
         </tr>
         <tr>
             <td>End of data export period</td>
@@ -3742,7 +3742,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Shared Parameters for Test Cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/mar-18-team-services.md" data-raw-source="[18 Mar 2014](2014/mar-18-team-services.md)">18 Mar 2014</a></td>
@@ -3756,7 +3756,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/feb-28-team-services.md" data-raw-source="[28 Feb 2014](2014/feb-28-team-services.md)">28 Feb 2014</a></td>
             <td>Build support for Java code managed in Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>Java JDK, Ant, and Maven libraries preinstalled in hosted build</td>
@@ -3764,29 +3764,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Maven support for TF version control projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/feb-10-team-services.md" data-raw-source="[10 Feb 2014](2014/feb-10-team-services.md)">10 Feb 2014</a></td>
             <td>Exporting test artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>New “create tags” permission</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/jan-22-team-services.md" data-raw-source="[22 Jan 2014](2014/jan-22-team-services.md)">22 Jan 2014</a></td>
             <td>Querying tags</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>Removing weekends from the Burndown</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>Configurable CFD dates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/dec-11-team-services.md" data-raw-source="[11 Dec 2013](2013/dec-11-team-services.md)">11 Dec 2013</a></td>
@@ -3799,7 +3799,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Asynchronous backlogs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/nov-13-team-services.md" data-raw-source="[13 Nov 2013](2013/nov-13-team-services.md)">13 Nov 2013</a></td>
@@ -3817,12 +3817,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2013/nov-08-team-services.md" data-raw-source="[8 Nov 2013](2013/nov-08-team-services.md)">8 Nov 2013</a></td>
             <td>Work item chart pinning</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-21-team-services.md" data-raw-source="[21 Oct 2013](2013/oct-21-team-services.md)">21 Oct 2013</a></td>
             <td>New account and project pages</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-17-team-services.md" data-raw-source="[17 Oct 2013](2013/oct-17-team-services.md)">17 Oct 2013</a></td>
@@ -3832,59 +3832,59 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2013/sep-30-team-services.md" data-raw-source="[30 Sep 2013](2013/sep-30-team-services.md)">30 Sep 2013</a></td>
             <td>New languages supported for code syntax highlighting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>Color picking in charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td>Column options for the test case grid view</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/sep-09-team-services.md" data-raw-source="[9 Sep 2013](2013/sep-09-team-services.md)">9 Sep 2013</a></td>
             <td>Work item charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Bulk edit of test cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Delete a team project</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Work items from code discussion</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td><a href="2013/aug-19-team-services.md" data-raw-source="[19 Aug 2013](2013/aug-19-team-services.md)">19 Aug 2013</a></td>
             <td>Improved code commenting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jul-29-team-services.md" data-raw-source="[29 Jul 2013](2013/jul-29-team-services.md)">29 Jul 2013</a></td>
             <td>Improved permission management for Git repos</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team room Git push events</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Deleting team rooms</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2013/jul-10-team-services.md" data-raw-source="[10 Jul 2013](2013/jul-10-team-services.md)">10 Jul 2013</a></td>
             <td>Backlog mapping</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team permission changes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jun-26-team-services.md" data-raw-source="[26 Jun 2013](2013/jun-26-team-services.md)">26 Jun 2013</a></td>
@@ -3893,41 +3893,41 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Paste images into work items in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Open Microsoft Test Runner from web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jun-19-team-services.md" data-raw-source="[19 Jun 2013](2013/jun-19-team-services.md)">19 Jun 2013</a></td>
             <td>Agile Portfolio Management updates – view filter and quick decompose</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Open MTM from web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Admin panel color change</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2013/jun-03-team-services.md" data-raw-source="[3 Jun 2013](2013/jun-03-team-services.md)">3 Jun 2013</a></td>
             <td>Agile Portfolio Management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Lightweight code commenting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team Room</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Create/modify test plans through Web UI</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Cloud load testing</td>
@@ -3940,37 +3940,37 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Git alerts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Backlog updates – name changed to &quot;backlogs&quot; and now backlogs show all items until they reach the completed state</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/may-13-team-services.md" data-raw-source="[13 May 2013](2013/may-13-team-services.md)">13 May 2013</a></td>
             <td>Work item colors based on process template settings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Usability updates – icon updates and sentence casing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Navigation updates in Web UI, including ability to view past iterations</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Git multi-repo support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2013/mar-22-team-services.md" data-raw-source="[22 Mar 2013](2013/mar-22-team-services.md)">22 Mar 2013</a></td>
             <td>Branches view for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>TCM Improvements – bulk edit test step pass/fail, double click test step reorder, hover over inline images</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/mar-04-team-services.md" data-raw-source="[4 Mar 2013](2013/mar-04-team-services.md)">4 Mar 2013</a></td>
@@ -3987,12 +3987,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Scheduled builds for Git-based projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/feb-11-team-services.md" data-raw-source="[11 Feb 2013](2013/feb-11-team-services.md)">11 Feb 2013</a></td>
             <td>Continuous Integration for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
@@ -4013,7 +4013,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Git support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Test Hub in Web UI</td>

@@ -106,7 +106,7 @@ See the following resources as they relate to updating your project:
 - [Additional configuration options](additional-configuration-options.md)
 - [Changes made to process templates to support new features](../boards/work-items/guidance/changes-to-process-templates.md)
 
-If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 
 
 <a id="program-updates"> </a>
