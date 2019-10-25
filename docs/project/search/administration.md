@@ -74,6 +74,11 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
 ::: moniker range="<= azure-devops-2019"
 
+## Prerequisites
+
+To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization.
+Non-administrative users can also request the extension is added.
+
 <a name="install-tfs"></a>
 
 ## Install Search extension
