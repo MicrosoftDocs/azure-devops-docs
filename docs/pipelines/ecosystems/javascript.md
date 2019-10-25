@@ -100,10 +100,9 @@ pool: Default
 6. When you're ready to make changes to your pipeline, **Edit** it.
 
 7. See the sections below to learn some of the more common ways to customize your pipeline.
-
-#### [Classic](#tab/classic/)
 ::: moniker-end
 ::: moniker range="< azure-devops" 
+#### [Classic](#tab/classic/)
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
     ```
