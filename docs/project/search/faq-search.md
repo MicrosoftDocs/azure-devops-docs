@@ -120,7 +120,7 @@ A:
 
 ## Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?
 
-A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrade-search-in-azure-devops-server-and-tfs) were followed for upgrade.
+A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
 If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
 
 ## Partial results in code search
