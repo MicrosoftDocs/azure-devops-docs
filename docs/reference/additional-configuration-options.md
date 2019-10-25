@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 ---
 
 <!---
-Supports the following FWLINK: Additional configuration options are available - changes: http://go.microsoft.com/fwlink/?LinkID=242982 - 
+Supports the following FWLINK: Additional configuration options are available - changes: https://go.microsoft.com/fwlink/?LinkID=242982 - 
 -->
 
 # Additional configuration options post update

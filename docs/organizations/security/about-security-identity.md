@@ -18,6 +18,8 @@ ms.date: 06/02/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
+For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
+
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 

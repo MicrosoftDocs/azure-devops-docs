@@ -475,7 +475,7 @@ You can learn more about each process template definition files from these resou
 * [Categories XML Element Reference](https://msdn.microsoft.com/library/dd286631.aspx)
 * [Process Configuration XML Element Reference](xml/process-configuration-xml-element.md)
 
-You can post a question or search for answers to your update questions in one of these forums: [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) or [the web portal](http://go.microsoft.com/fwlink/?LinkId=257843).
+You can post a question or search for answers to your update questions in one of these forums: [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) or [the web portal](https://go.microsoft.com/fwlink/?LinkId=257843).
 
 
 
