@@ -18,9 +18,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="= azure-devops"
 
-* **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Services**
-  - [Install the Search extension](#config-ts-azuredevops)
-  - [Uninstall the Search extension](#uninstall-ts-azuredevops)<p />
+In this article, learn how to install and uninstall the Search extension in Azure DevOps Services.
 
 ::: moniker-end
 
@@ -604,8 +602,6 @@ However, there might be cases where you no longer want to use Search or you want
 install. This requires multiple steps, depending on whether Search is configured
 on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on a [separate server](#unconfig-separate-server).
 
-::: moniker-end
-
 <a name="unconfig-same-server"></a>
 
 ### Unconfigure Search on the machine configured as your Azure DevOps Server
@@ -614,17 +610,21 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    Do this by navigating to the **Manage Extensions** page of each collection in
    your Azure DevOps Server or TFS instance:
 
-   ::: moniker range=">= azure-devops-2019"
+::: moniker-end
+
+   ::: moniker range="azure-devops-2019"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
-   ::: moniker range="< azure-devops-2019"
+   ::: moniker range="<= tfs-2018"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
 
    ::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 2. Remove the Search feature:
 
@@ -660,6 +660,8 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
 1. Uninstall the Search extension (Code, Work Item, or Wiki) for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
 
+::: moniker-end
+
    ::: moniker range=">= azure-devops-2019"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
@@ -671,6 +673,8 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
 
    ::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 2. Remove the Search feature:
 
