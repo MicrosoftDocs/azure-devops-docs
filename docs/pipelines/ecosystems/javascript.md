@@ -72,7 +72,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019" 
-#### [YAML](#tab/yaml/)
+### YAML
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
     ```
@@ -102,7 +102,7 @@ pool: Default
 7. See the sections below to learn some of the more common ways to customize your pipeline.
 ::: moniker-end
 ::: moniker range="< azure-devops" 
-#### [Classic](#tab/classic/)
+### Classic
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
     ```
