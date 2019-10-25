@@ -183,3 +183,13 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 
 <!-- ENDSECTION -->
+
+
+
+## Related articles
+
+* [Troubleshoot service hooks and FAQs](troubleshoot.md)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+* [Billing information](../organizations/billing/index.md)
+
+

@@ -1,7 +1,7 @@
 ---
 title: Hosted XML process model 
 titleSuffix: Azure DevOps Services
-description: Guide to configuring and customizing work tracking features for the Hosted XML process model 
+description: How to customize work tracking features using the Hosted XML process model 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/16/2019
+ms.date: 10/24/2019
 ---
 
 
@@ -134,3 +134,16 @@ This syntax has been been added to the following work item type definitions of t
 Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
 [![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+
+
+
+## Related articles
+- [Customize a Hosted XML process](./import-process/customize-process.md)  
+- [Import a process](./import-process/import-process.md)  
+- [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md)  
+- [Work tracking object limits](object-limits.md)
+- [REST APIS: Processes](/rest/api/vsts/processes/processes)
+
+
+
+

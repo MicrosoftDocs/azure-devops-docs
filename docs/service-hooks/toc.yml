@@ -1,5 +1,3 @@
-- name: Service Hooks
-  href: index.md
 - name: Integrate with service hooks
   href: overview.md
 - name: Quickstarts
