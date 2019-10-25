@@ -98,9 +98,9 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops"
 
-#### [YAML](#tab/yaml/)
+### YAML
 1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
 ```yaml
@@ -130,7 +130,10 @@ steps:
 
 6. See the sections below to learn some of the more common ways to customize your pipeline.
 
-#### [Classic](#tab/classic/)
+::: moniker-end
+::: moniker range="< azure-devops" 
+### Classic
+
 1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **Empty Pipeline**. 
 
 2. In the task catalog, find and add the **.NET Core** task. This task will run `dotnet build` to build the code in the sample repository.
