@@ -129,6 +129,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: mykey | mylockfile
+    restoreKeye: mykey
     path: $(Pipeline.Workspace)/mycache
     cacheHitVar: CACHE_RESTORED
 
@@ -152,6 +153,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: gems | $(Agent.OS) | my.gemspec
+    restoreKeys: gems | $(Agent.OS)
     path: $(BUNDLE_PATH)
   displayName: Cache gems
 
@@ -177,6 +179,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: ccache | $(Agent.OS)
+    restoreKeys: ccache
     path: $(CCACHE_DIR)
   displayName: ccache
 ```
@@ -201,6 +204,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: gradle | $(Agent.OS)
+    restoreKeys: gradle
     path: $(GRADLE_USER_HOME)
   displayName: Gradle build cache
 
@@ -228,7 +232,8 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: maven | **/pom.xml
+    key: maven | $(Agent.OS) | **/pom.xml
+    restoreKeys: maven | $(Agent.OS)
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
@@ -243,12 +248,13 @@ If you use `PackageReferences` to manage NuGet dependencies directly within your
 
 ```yaml
 variables:
-  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+  PACKAGES_PATH: $(Pipeline.Workspace)/.nuget/packages
 
 steps:
 - task: CacheBeta@0
   inputs:
-    key: nuget | packages.lock.json
+    key: nuget | $(Agent.OS) | packages.lock.json
+    restoreKeys: nuget | $(gent.OS)
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
@@ -271,6 +277,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: npm | $(Agent.OS) | package-lock.json
+    restoreKeys: npm | $(Agent.OS)
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -296,6 +303,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
+    restoreKeys: yarn | $(Agent.OS)
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
