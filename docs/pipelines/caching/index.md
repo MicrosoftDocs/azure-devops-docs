@@ -129,7 +129,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: mykey | mylockfile
-    restoreKeye: mykey
+    restoreKeys: mykey
     path: $(Pipeline.Workspace)/mycache
     cacheHitVar: CACHE_RESTORED
 
