@@ -12,26 +12,26 @@ ms.date: 10/25/2019
 monikerRange: '>= tfs-2017'
 ---
 
-## Troubleshoot Search
+# Troubleshoot Search
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 - [Troubleshoot Search](#troubleshoot-search)
-- [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
-- [Q: Why are no search results shown after installing or configuring Search?](#q-why-are-no-search-results-shown-after-installing-or-configuring-search)
-- [Q: How do I know if indexing was triggered for all the collections?](#q-how-do-i-know-if-indexing-was-triggered-for-all-the-collections)
-- [Q: Why does Search stop working and no results are shown?](#q-why-does-search-stop-working-and-no-results-are-shown)
-- [Q: Why doesn't Search show the expected results?](#q-why-doesnt-search-show-the-expected-results)
-- [Q: Why is Azure DevOps Server or TFS overall performance affected?](#q-why-is-azure-devops-server-or-tfs-overall-performance-affected)
-- [Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?](#q-why-doesnt-search-work-post-upgrade-to-azure-devops-server-2019-update-1)
-- [Partial results in code search](#partial-results-in-code-search)
-  - [Problem](#problem)
-  - [Explanation](#explanation)
-  - [Recommendation](#recommendation)
-- [Wildcard search](#wildcard-search)
-  - [Problem](#problem-1)
-  - [Explanation](#explanation-1)
-  - [Recommendation](#recommendation-1)
+  - [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
+  - [Q: Why are no search results shown after installing or configuring Search?](#q-why-are-no-search-results-shown-after-installing-or-configuring-search)
+  - [Q: How do I know if indexing was triggered for all the collections?](#q-how-do-i-know-if-indexing-was-triggered-for-all-the-collections)
+  - [Q: Why does Search stop working and no results are shown?](#q-why-does-search-stop-working-and-no-results-are-shown)
+  - [Q: Why doesn't Search show the expected results?](#q-why-doesnt-search-show-the-expected-results)
+  - [Q: Why is Azure DevOps Server or TFS overall performance affected?](#q-why-is-azure-devops-server-or-tfs-overall-performance-affected)
+  - [Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?](#q-why-doesnt-search-work-post-upgrade-to-azure-devops-server-2019-update-1)
+  - [Partial results in code search](#partial-results-in-code-search)
+    - [Problem](#problem)
+    - [Explanation](#explanation)
+    - [Recommendation](#recommendation)
+  - [Wildcard search](#wildcard-search)
+    - [Problem](#problem-1)
+    - [Explanation](#explanation-1)
+    - [Recommendation](#recommendation-1)
 
 <a name="no-search-box"></a>
 
@@ -41,7 +41,7 @@ A:
    Navigate to a project and check if the search box is displayed at the top right. 
 
 2. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](#install-tfs) or [configure](#config-ts-azuredevops) the extension.
+   If not, [install](administration.md#install-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
 
 <a name="no-results-install"></a>
 
@@ -53,13 +53,13 @@ A:
    it may take up to 12 hours depending on the size and number of code files, work items, or wiki pages.
 
 2. If no results are shown after this period, 
-   [check indexing status](#check-index). 
+   [check indexing status](administration.md#check-index). 
 
 <a name="indexing-status-for-collections"></a>
 
 ## Q: How do I know if indexing was triggered for all the collections?
 A:
-* [Check indexing status](#check-index) separately for each collection.
+* [Check indexing status](administration.md#check-index) separately for each collection.
 
 <a name="no-results-later"></a>
 
@@ -103,16 +103,16 @@ name of the server where Search is installed:
 A: 
 1. If the files were added in the last few minutes,
    wait for ten minutes or so while they are indexed.
-2. [Check indexing status](#check-index) for the collection. 
+2. [Check indexing status](administration.md#check-index) for the collection. 
 3. If the files are still not shown in the results, 
-   [re-index the repository or collection](#re-index)
+   [re-index the repository or collection](administration.md#re-index)
    where the files are located.
 
 <a name="server-slow"></a>
 
 ## Q: Why is Azure DevOps Server or TFS overall performance affected?
 A:
-1. [Pause all indexing](#pause-index) and see if performance recovers.
+1. [Pause all indexing](administration.md#pause-index) and see if performance recovers.
 2. If performance does recover, consider locating Search 
    on a separate server if you have not already done so.
 
@@ -120,7 +120,7 @@ A:
 
 ## Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?
 
-A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](#upgrade-search-in-azure-devops-server-and-tfs) were followed for upgrade.
+A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrade-search-in-azure-devops-server-and-tfs) were followed for upgrade.
 If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
 
 ## Partial results in code search
