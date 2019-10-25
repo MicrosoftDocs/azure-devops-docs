@@ -40,7 +40,7 @@ ms.date: 01/12/2017
 - Tracking work per resource based on work items that are successively assigned to multiple team members.  When team members reassign a work item with actual work, Team Foundation credits the person to whom the item is assigned currently with all work that has been completed so far. To track accurately the work that each team member performed, you must create separate tasks for each team member.  
   
 ##  <a name="ViewingAvailability"></a> Viewing Resource Availability  
- Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](http://go.microsoft.com/fwlink/?LinkId=207284).  
+ Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](https://go.microsoft.com/fwlink/?LinkId=207284).  
   
  ![Assignment of work by resource in PWA](_img/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
   

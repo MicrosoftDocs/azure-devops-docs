@@ -12079,6 +12079,16 @@
       "source_path": "docs/marketplace/index.md",
       "redirect_url": "/azure/devops/marketplace/overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "docs/organizations/security/faq-network-connections.md",
+      "redirect_url": "/azure/devops/organizations/security/allow-list-ip-url",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/index.md",
+      "redirect_url": "/azure/devops/organizations/security/about-security-identity",
+      "redirect_document_id": false
+    },
   ]
 }

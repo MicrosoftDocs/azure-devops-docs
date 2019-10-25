@@ -272,7 +272,7 @@ To learn more about the syntax for a definition file or command line tool, see t
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.  
 
-If you have additional questions, see [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.  
+If you have additional questions, see [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.  
 
 ### Portfolio backlog hierarchy
 

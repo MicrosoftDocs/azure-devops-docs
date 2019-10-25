@@ -43,7 +43,7 @@ You can query for links between bugs, tasks, and other types of work items by us
   
 - total story points for each user story in a team project under a specified area path  
   
-  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=178080).  
+  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=178080).  
   
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  
