@@ -23,7 +23,7 @@ Teams track their pipeline health and efficiency to ensure continuous delivery t
 
 ## Prerequisites
 
-Ensure that you have installed the [the Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
+Ensure that you have installed the [Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
 
 ## View pipeline reports
 
