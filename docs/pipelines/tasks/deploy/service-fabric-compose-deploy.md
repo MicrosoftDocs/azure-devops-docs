@@ -29,7 +29,7 @@ See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/
 
 * This task uses a Service Fabric installation to connect and deploy to a Service Fabric cluster.  
 
-* [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
+* [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="> tfs-2018"
 
