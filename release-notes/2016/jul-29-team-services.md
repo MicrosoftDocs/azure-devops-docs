@@ -130,7 +130,7 @@ We have exposed a new extension point on the backlog. With this deployment, exte
 
 ![Build extension point for right-side mapping and work details panes](_img/7_29_17.png)
 
-That’s a lot for this sprint! If you have comments or questions, please reach out on Twitter ([@gopinach](https://twitter.com/gopinach)). If you have ideas for things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+That’s a lot for this sprint! If you have comments or questions, please reach out on Twitter ([@gopinach](https://twitter.com/gopinach)). If you have ideas for things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

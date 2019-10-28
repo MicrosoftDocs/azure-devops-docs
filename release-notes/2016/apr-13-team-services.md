@@ -144,7 +144,7 @@ Additional features have been added to the SCVMM extension in the Visual Studio 
 
 ![SCVMM](_img/4_13_11.png)
 
-As always, any ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+As always, any ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 
