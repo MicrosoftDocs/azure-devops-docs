@@ -12076,6 +12076,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/project/search/faq.md",
+      "redirect_url": "/azure/devops/project/search/faq-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/marketplace/index.md",
       "redirect_url": "/azure/devops/marketplace/overview",
       "redirect_document_id": false
