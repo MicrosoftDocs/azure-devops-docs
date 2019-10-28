@@ -298,7 +298,7 @@ your review and education. These include:
 - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
-- [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
+- [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
 - [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
 - [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)
