@@ -1136,7 +1136,7 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureServiceBus",
 "name": "Azure Service Bus",
 "description": "Provides integration with Microsoft Azure Service Bus, including Notification Hubs.",
-"imageUrl": "http://www.windowsazure.com/css/images/logo.png",
+"imageUrl": "https://www.windowsazure.com/css/images/logo.png",
 "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=392636",
 "authenticationType": "external",
 "inputDescriptors": [
@@ -1479,7 +1479,7 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureStorageQueue",
 "name": "Azure Storage",
 "description": "Provides integration with Microsoft Azure Storage",
-"imageUrl": "http://www.windowsazure.com/css/images/logo.png",
+"imageUrl": "https://www.windowsazure.com/css/images/logo.png",
 "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390532",
 "authenticationType": "external",
 "inputDescriptors": [

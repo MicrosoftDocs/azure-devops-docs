@@ -1321,7 +1321,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureServiceBus",
       "name": "Azure Service Bus",
       "description": "Microsoft Azure Service Bus provides a hosted, secure, and widely available infrastructure for widespread communication, large-scale event distribution, naming, and service publishing.",
-      "imageUrl": "http://www.windowsazure.com/css/images/logo.png",
+      "imageUrl": "https://www.windowsazure.com/css/images/logo.png",
       "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=392636",
       "authenticationType": "external",
       "inputDescriptors": [
@@ -1671,7 +1671,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureStorageQueue",
       "name": "Azure Storage",
       "description": "Microsoft Azure Storage is a service for storing large numbers of messages that can be accessed from anywhere in the world. It is useful for creating a backlog of work to process asynchronously.",
-      "imageUrl": "http://www.windowsazure.com/css/images/logo.png",
+      "imageUrl": "https://www.windowsazure.com/css/images/logo.png",
       "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390532",
       "authenticationType": "external",
       "inputDescriptors": [
