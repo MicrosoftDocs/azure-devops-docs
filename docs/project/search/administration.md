@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -235,7 +235,7 @@ If you cannot install the version of Java required by Search due to other depend
 Search in Azure DevOps Server and TFS supports both Azul Zulu OpenJDK and Oracle JRE, allowing you to choose between them based on your needs.
 When selecting a JRE during installation, Azure DevOps Server defaults to Azul Zulu OpenJDK 8.
 
-To change to the Azul Zulu OpenJDK, follow these simple steps:
+To change to the Azul Zulu OpenJDK, follow these steps:
 
 ![Java Migration flow](_img/administration/java-migration-flow.png)
 
@@ -421,7 +421,7 @@ between the TFS and Search service to make it more secure. Any user installing o
 to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as part of configuring Search feature 
 (through Server or Search configuration wizard).
 
-Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a re-installation of search. While following these instructions for an upgrade, in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
+Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a re-installation of search. While following [these](#installing-or-updating-search-on-a-separate-server) instructions for an upgrade, in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
 
 
 ```
