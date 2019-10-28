@@ -135,7 +135,7 @@ The supported options for these scenarios are:
 
 ### Example
 
-* [Testing in Continuous Integration and Continuous Deployment Workflows](http://blogs.msdn.com/b/visualstudioalm/archive/2015/06/28/10618066.aspx)
+* [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.com/b/visualstudioalm/archive/2015/06/28/10618066.aspx)
 
 ### More information
 

@@ -266,7 +266,7 @@ However, there are couple of ways of getting this Step related data:
 
    Since this sample also has source code, you could customize it to suit your organization needs.
 
-1. **Test Scribe**: You could also use [Test Scribe](http://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
+1. **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
    There are two modes of generating the document using this tool -
 
    - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
