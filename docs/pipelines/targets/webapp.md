@@ -126,7 +126,7 @@ For information on Azure service connections, see the [following section](#endpo
 ### Deploy a JavaScript Node.js app
 
 If you're building a [JavaScript Node.js app](../ecosystems/javascript.md), you publish the entire contents of your
-working directory to the web app. The following snippet also generates a Web.config file during deployment if the application does not have one and starts
+working directory to the web app. This snippet also generates a Web.config file during deployment if the application does not have one and starts
 the iisnode handler on the Azure Web App:
 
 ```yaml
@@ -290,7 +290,7 @@ jobs:
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<Test stage Azure service connection>'
+      azureSubscription: '<test stage Azure service connection>'
       appName: '<name of test stage web app>'
 
 - job: deploy
@@ -308,7 +308,7 @@ jobs:
   # deploy to Azure Web App production
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<Prod Azure service connection>'
+      azureSubscription: '<prod Azure service connection>'
       appName: '<name of prod web app>'
 ```
 
@@ -332,7 +332,7 @@ App settings can also be resolved from Key Vault using [Key Vault references](ht
 
 For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
 You might want to apply a specific configuration for your web app target before deploying to it. 
-This is particularly useful when you deploy the same build to multiple web apps in a pipeline.
+This is useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your Web.config file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
 a Web.config transformation or by substituting variables in your Web.config file. 
