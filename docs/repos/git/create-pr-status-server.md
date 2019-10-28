@@ -242,7 +242,7 @@ Now that your server can receive service hook events when new PRs are created, u
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"
@@ -282,7 +282,7 @@ Now that your server can receive service hook events when new PRs are created, u
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"

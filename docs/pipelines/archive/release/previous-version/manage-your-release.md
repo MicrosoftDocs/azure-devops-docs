@@ -72,9 +72,9 @@ that runs Release Management Server, too.
 
 ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
 a non-trial version, see 
-[How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+[How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
 or 
-[Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+[Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
 If you are an MSDN subscriber, you can download a non-trial version from the 
 [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._
 
@@ -282,7 +282,7 @@ for hands-on labs to try Release Management and other devops products.
 
 ### Q: Is there a more detailed user guide?
 
-**A**: Yes, you can **[download this pdf file](http://go.microsoft.com/fwlink/?LinkId=398104)**.
+**A**: Yes, you can **[download this pdf file](https://go.microsoft.com/fwlink/?LinkId=398104)**.
 
 ## Related topics
 

@@ -10,7 +10,7 @@ ms.author: liho
 ms.date: 01/25/2017
 ---
 
-<!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
+<!--- Supports FWLINK:  https://go.microsoft.com/fwlink/?LinkId=692096   --> 
 
 # Best practices
 

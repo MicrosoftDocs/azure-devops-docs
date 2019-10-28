@@ -109,7 +109,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>File storage</td>
-<td>You can check in large binary files. You might also want to use <a href="http://go.microsoft.com/fwlink/?LinkId=246165" data-raw-source="[NuGet](http://go.microsoft.com/fwlink/?LinkId=246165)">NuGet</a> in combination or as an alternative.</td>
+<td>You can check in large binary files. You might also want to use <a href="https://go.microsoft.com/fwlink/?LinkId=246165" data-raw-source="[NuGet](https://go.microsoft.com/fwlink/?LinkId=246165)">NuGet</a> in combination or as an alternative.</td>
 <td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Need more help to make a choice? These charts might help.
 <td>Visual Studio compatibility</td>
 <td>You can use all supported <a href="https://msdn.microsoft.com/library/dd997788" data-raw-source="[previous versions of Visual Studio](https://msdn.microsoft.com/library/dd997788)">previous versions of Visual Studio</a>.</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
-<p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="http://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](http://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
+<p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="https://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
 </tr>
 <tr>
 <td>Web portal</td>

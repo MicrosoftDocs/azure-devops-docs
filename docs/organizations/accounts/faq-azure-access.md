@@ -238,7 +238,7 @@ A: Your organization was connected to a directory when the organization Owner cr
 ### Q: My alternate credentials don't work anymore. What do I do?
 
 A: This happens after you connect your organization to a directory. 
-[Set up your credentials](http://support.microsoft.com/kb/2991274) again for the organization that you connected.
+[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 

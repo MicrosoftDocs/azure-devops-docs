@@ -24,7 +24,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 ### Features
 
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
-* Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
+* Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
 
 

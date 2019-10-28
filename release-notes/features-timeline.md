@@ -4154,17 +4154,17 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
           <td>17.153.29207.5</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
           <td>May 21, 2019</td>
           <td>17.143.28912.1</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
           <td>Mar. 5, 2019</td>
           <td>17.143.28621.4</td>
         </tr>

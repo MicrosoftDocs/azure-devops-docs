@@ -19,9 +19,9 @@ monikerRange: '> tfs-2018'
 [!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 Find performance issues before you release your app by running load tests with Visual Studio 
-Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
+Enterprise using [Cloud-based Load Testing](https://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
-All you need is an [Azure DevOps subscription](http://go.microsoft.com/fwlink/?LinkId=307137).
+All you need is an [Azure DevOps subscription](https://go.microsoft.com/fwlink/?LinkId=307137).
 
 In this tutorial, you'll learn how to:
 
