@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 The client SDK provides useful functions for web-based extensions.
 
 > [!IMPORTANT]
-> While we progress our documentation, go to our latest and greatest guidance here: https://developer.microsoft.com/en-us/azure-devops/develop/extensions 10/28/2019
+> While we progress our documentation docs.microsoft.com, follow our latest and greatest guidance here: https://developer.microsoft.com/en-us/azure-devops/develop/extensions. 10/28/2019
 > 
 
 
