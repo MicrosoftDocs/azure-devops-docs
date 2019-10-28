@@ -8,53 +8,61 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/24/2019
+ms.date: 10/25/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Set up and administer Code Search, Wiki Search, and Work Item Search
+# Install and manage Code, Wiki, and Work Item Search
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
-In this topic:
+::: moniker range="= azure-devops"
 
-* **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Services**
-  - [Install the Search extension in Azure DevOps Services](#config-ts-azuredevops)
-  - [Uninstall the Search extension from Azure DevOps Services](#uninstall-ts-azuredevops)<p />
+In this article, learn how to install and uninstall the Search extension in Azure DevOps Services.
+
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**
-  - [Install the Search extension in Azure DevOps Server or TFS](#install-tfs)
-  - [Configure Search in Azure DevOps Server or TFS](#config-tfs)
-  - [Secure Search in Azure DevOps Server and TFS](#secure-search)
-  - [Upgrade Search in Azure DevOps Server and TFS](#upgrading-search)
-  - [Manage Search in Azure DevOps Server and TFS](#manage-tfs)
-  - [Uninstall Search from Azure DevOps Server or TFS](#uninstall-tfs)
-  - [Limitations of Search in Azure DevOps Server and TFS](#limit-tfs)
-  - [Troubleshoot Search in Azure DevOps Server and TFS](#trouble-tfs)
+  - [Install the Search extension](#install-tfs)
+  - [Configure Search](#config-tfs)
+  - [Secure Search](#secure-search)
+  - [Upgrade Search](#upgrading-search)
+  - [Manage Search](#manage-tfs)
+  - [Uninstall Search](#uninstall-tfs)
+  - [Limitations of Search](#limit-tfs)
+  - [Troubleshoot Search](faq-search.md)
 
 Also see [Install and configure Azure DevOps Server or TFS](../../tfs-server/install/get-started.md)
 and [Requirements and compatibility](/azure/devops/server/requirements).
 
+> [!NOTE]
 > Users with at least a **Basic** access can use Code Search. 
-**Stakeholders** do not have access to code, and therefore no access to Code Search. 
+**Stakeholders** don't have access to code, and therefore no access to Code Search. 
 All users have access to Work Item and Wiki Search.
 
 *****
 
+::: moniker-end
+
+::: moniker range="= azure-devops"
+
 <a name="config-ts-azuredevops"></a>
 
-##  Install the Search extension in Azure DevOps Services
+##  Install the Search extension
 
-* For Work Item and Wiki search, there is no installation required because these are built-in features of Azure DevOps Services.
+* Work Item and Wiki search are built-in features of Azure DevOps Services, they require no installation on your part.
 
-* For Code Search, go to [Azure DevOps Marketplace](https://marketplace.visualstudio.com/) to install the Code Search extension in Azure DevOps as an administrator.
-  Non-administrative users can also go here to request the Code Search extension be added to Azure DevOps Services. 
+* Go to [Azure DevOps Marketplace](https://marketplace.visualstudio.com/) to install the Code Search extension in Azure DevOps as an administrator.
+Non-administrative users can also go here to request to add the Code Search extension. 
 
 For more details, see [Install an extension](../../marketplace/install-extension.md) in the Marketplace documentation.
 
 <a name="uninstall-ts-azuredevops"></a>
 
-## Uninstall the Search extension from Azure DevOps Services
+## Uninstall the Search extension
 
 * For Work Item and Wiki search, users cannot uninstall them as these come as built-in extensions in Azure DevOps Server and TFS.
 
@@ -62,9 +70,18 @@ For more details, see [Install an extension](../../marketplace/install-extension
 
 *****
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+## Prerequisites
+
+To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization.
+Non-administrative users can also request the extension is added.
+
 <a name="install-tfs"></a>
 
-## Install Search extension in Azure DevOps Server or TFS
+## Install Search extension
 
 ### Availability
 
@@ -87,7 +104,7 @@ in the Local gallery documentation.
 
 <a name="config-tfs"></a>
 
-## Configure Search in Azure DevOps Server or TFS
+## Configure Search
 
 Configure the Search service using the dedicated pages in the Server Configuration Wizard
 as you install Azure DevOps Server or TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
@@ -329,7 +346,7 @@ follow these steps:
 
 <a name="secure-search"></a>
 
-## Secure Search in Azure DevOps Server and TFS
+## Secure Search
 
 The Search service uses a modified version of 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
@@ -377,7 +394,7 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 
 <a name="upgrading-search"></a>
 
-## Upgrade Search in Azure DevOps Server and TFS
+## Upgrade Search
 
 TFS 2017 Update 1 includes updated Search components. If the Search
 service was configured in TFS 2017 RTM then, during an upgrade, the
@@ -415,7 +432,7 @@ Configure-TFSSearch.ps1 -Operation install -TFSSearchInstallPath <install locati
 
 <a name="manage-tfs"></a>
 
-## Manage Search in Azure DevOps Server and TFS
+## Manage Search
 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
@@ -521,6 +538,7 @@ To check the indexing status after Search is configured, or after the extension 
    - **Count of indexing job failures**: The number of indexing jobs that failed. Repositories associated with these indexing jobs could potentially show incomplete results until subsequent indexing jobs for the same repositories have patched the failed indexing.<p />
 
 <a name="pause-index"></a>
+
 ### Pause indexing
 
 To pause all indexing, execute the script **PauseSearchIndexing.ps1** 
@@ -532,6 +550,7 @@ You will be prompted to enter:
 * The name of the Azure DevOps Server or TFS configuration database.
 
 <a name="resume-index"></a>
+
 ### Resume indexing
 
 If indexing was paused, execute the script **StartSearchIndexing.ps1**
@@ -574,11 +593,11 @@ with administrative privileges. You will be prompted to enter:
 Re-indexing a collection can take from a few minutes 
 to a few hours, depending on the size of the collection. 
 
-Also see **[Troubleshoot Search](#trouble-tfs)**.
+Also see **[Troubleshoot Search](faq-search.md)**.
 
 <a name="uninstall-tfs"></a>
 
-## Uninstall Search from Azure DevOps Server or TFS
+## Uninstall Search
 
 In cases such as a pre-production upgrade, production upgrade, new hardware migration, cloning,
 or other maintenance operation, the Server Configuration Wizard will unconfigure Search in a way
@@ -589,23 +608,28 @@ install. This requires multiple steps, depending on whether Search is configured
 on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on a [separate server](#unconfig-separate-server).
 
 <a name="unconfig-same-server"></a>
+
 ### Unconfigure Search on the machine configured as your Azure DevOps Server
 
 1. Uninstall the Search extension for each collection where it is installed.
    Do this by navigating to the **Manage Extensions** page of each collection in
    your Azure DevOps Server or TFS instance:
 
-   ::: moniker range=">= azure-devops-2019"
+::: moniker-end
+
+   ::: moniker range="azure-devops-2019"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
-   ::: moniker range="< azure-devops-2019"
+   ::: moniker range="<= tfs-2018"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
 
    ::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 2. Remove the Search feature:
 
@@ -641,6 +665,8 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
 1. Uninstall the Search extension (Code, Work Item, or Wiki) for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
 
+::: moniker-end
+
    ::: moniker range=">= azure-devops-2019"
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
@@ -652,6 +678,8 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
 
    ::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 2. Remove the Search feature:
 
@@ -670,111 +698,14 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
   
 <a name="limit-tfs"></a>
 
-## Limitations of Search in Azure DevOps Server and TFS
+## Limitations of Search
 
 Search for Azure DevOps Server and TFS has the following limitation: 
 
 * If you perform a disaster recovery (DR) operation and move your server back 
   to an earlier snapshot of your SQL database, you will need to [re-index all your collections](#re-index).  
 
-<a name="trouble-tfs"></a>
-## Troubleshoot Search in Azure DevOps Server and TFS
-
-* [Search is configured but the Search box is not displayed](#no-search-box)
-* [No search results are shown after installing or configuring Search](#no-results-install)
-* [How do I know if indexing was triggered for all the collections?](#indexing-status-for-collections)
-* [Search stops working and no results are shown](#no-results-later)
-* [Search does not show the expected results](#unexpected-results)
-* [Azure DevOps Server or TFS overall performance is affected](#server-slow)
-* ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
-
-<a name="no-search-box"></a>
-
-**Search is configured but the Search box is not displayed**
-
-1. The search box is shown only in the context of a project page. 
-   Navigate to a project and check if the search box is displayed at the top right. 
-
-1. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](#install-tfs) or [configure](#config-ts-azuredevops) the extension.
-
-<a name="no-results-install"></a>
-**No search results are shown after installing or configuring Search**
-
-1. Wait until you are sure sufficient time has elapsed
-   after installing or configuring Search. It typically takes
-   less than one hour for Search to index a collection, but 
-   it may take up to 12 hours depending on the size and number of code files, work items, or wiki pages.
-
-1. If no results are shown after this period, 
-   [check indexing status](#check-index). 
-
-<a name="indexing-status-for-collections"></a>
-**How do I know if indexing was triggered for all the collections?**
-
-* [Check indexing status](#check-index) separately for each collection.
-
-<a name="no-results-later"></a>
-**Search stops working and no results are shown**
-
-Follow these steps. Replace "SearchServer" with the 
-name of the server where Search is installed:
-
-1. Access the URL `http://SearchServer:9200` from a web browser
-   on a computer in the same domain as the server running Search.
-   - If the status returned is `200 - OK`, go to step 2.
-   - If any other status is returned, contact support at 
-     the address shown at the end of this topic.
-   - If you don't get a response, verify that the 
-     **elasticsearch-service-x64** service is running on 
-     the server where Search is configured. If the service
-     is stopped, start it and access the Search server again.  
-     If you still get no response, or a response other than
-     `200 - OK`, contact support at 
-     the address shown at the end of this topic.<p />
-
-1. If the status is 200, access the URL `http://SearchServer:9200/_cat/health?v`
-   from a web browser on a computer in the same domain as the server running Search.
-   - If the status column shows green/OK, and 
-     Search is still not working, contact support at 
-     the address shown at the end of this topic. 
-   - If the status column shows red/fault, look at the value
-     in the **init** or **unassigned** columns. If these are 
-     greater than zero, wait for 30 minutes and then
-     repeat this step. If the values are unchanged, go to step 3.<p />
-
-1. Access the URL `http://SearchServer:9200/_cat/shards?v`
-   from a web browser on a computer in the same domain as the server running Search.
-   - Make a note of the values in the **Shard** column for the 
-     rows with a **state** value of **unassigned** and contact 
-     support at the address shown at the end of this topic.<p />
-
-<a name="unexpected-results"></a>
-
-**Search does not show the expected results**
-
-1. If the files were added in the last few minutes,
-   wait for ten minutes or so while they are indexed.
-1. [Check indexing status](#check-index) for the collection. 
-1. If the files are still not shown in the results, 
-   [re-index the repository or collection](#re-index)
-   where the files are located.
-
-<a name="server-slow"></a>
-
-**Azure DevOps Server or TFS overall performance is affected**
-
-1. [Pause all indexing](#pause-index) and see if performance recovers.
-1. If performance does recover, consider locating Search 
-   on a separate server if you have not already done so.
-
-<a name="no-search-post-upgrade"></a>
-
-**Search doesn't work post upgrade to Azure DevOps Server 2019 Update 1**
-
-If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](#upgrade-search-in-azure-devops-server-and-tfs) were followed for upgrade.
-If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
-
+::: moniker-end
 
 <a name="support"></a>
 
