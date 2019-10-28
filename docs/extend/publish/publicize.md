@@ -42,7 +42,7 @@ The process to have a public Azure DevOps Services listing for an integration or
 
 Once you are ready to publish a public Azure DevOps listing to the Marketplace, follow these steps:
 
-1. Visit http://marketplace.visualstudio.com/manage/publishers and login with the organization using which you publish and manage Azure DevOps Services listings in Marketplace.
+1. Visit https://marketplace.visualstudio.com/manage/publishers and login with the organization using which you publish and manage Azure DevOps Services listings in Marketplace.
 2. Select the publisher and through the **Details tab** apply for publisher verification. Find the appropriate section towards the bottom of the tab.
 3. Expect Microsoft to approve or respond within 3 business days to your verification request.
 
@@ -72,7 +72,7 @@ The Top Publisher program <img src="_img/top-publisher.png" alt="Top Publisher b
 
     Through publisher profile, you have a way to showcase all of your offerings in one place along with key publisher related information. To provide the information which shows up in the profile:
 
-    * Sign in to http://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
+    * Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
     * Select the publisher and fill in the About you section under the **Details** tab. Below is an example of the About you section for Microsoft (the publisher):       
       <img src="_img/microsoft-about-you-section.png" alt="Microsoft Details" width="800" />
     * Save your changes and use the 'View profile' action towards the top of the page to see how your profile page appears to the consumers. You may use this profile page to evangelize your offering(s).
@@ -80,7 +80,7 @@ The Top Publisher program <img src="_img/top-publisher.png" alt="Top Publisher b
 
 ### Apply to be a Top Publisher
 
-* Sign in to http://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
+* Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
 * Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more public Azure DevOps (Server/Service) extension or integration for the tab to appear.  
 * If you meet part of the requirements stated above and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
 

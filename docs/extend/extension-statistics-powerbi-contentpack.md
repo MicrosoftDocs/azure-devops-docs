@@ -19,7 +19,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 ## Connect to Power BI and get the Content Pack
 
 
-1. Open a web browser and go to [http://powerbi.com](http://powerbi.microsoft.com/).
+1. Open a web browser and go to [https://powerbi.com](https://powerbi.microsoft.com/).
 
 2. Select **Sign In** in the upper right corner to log in to Power BI.
 

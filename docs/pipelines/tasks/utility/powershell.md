@@ -83,6 +83,10 @@ Both of these resolve to the `PowerShell@2` task.
 <td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don&#39;t want this behavior, set this to <code>true</code>.</td>
 </tr>
 <tr>
+<td>pwsh</td>
+<td>If <code>true</code>, runs PowerShell Core. Otherwise, runs Windows PowerShell. Defaults to <code>false</code>.</td>
+</tr>
+<tr>
 <td>Environment variables</td>
 <td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 

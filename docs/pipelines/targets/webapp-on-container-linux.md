@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Web App Container
 
-You can automatically deploy your web app to an [Azure Web App for Linux Containers](https://docs.microsoft.com/en-gb/azure/app-service/containers/quickstart-docker-go) after every successful build.
+You can automatically deploy your web app to an [Azure Web App for Linux Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker-go) after every successful build.
 
 ## Before you begin
 
