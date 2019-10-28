@@ -33,11 +33,11 @@ Use this article to learn how to:
 
 ## Using Visual Studio Code to write and test OData queries
 
-The easiest way to write and test OData is to use [Visual Studio Code (VS Code)](http://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). VS Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions useful for writing and testing queries. 
+The easiest way to write and test OData is to use [Visual Studio Code (VS Code)](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). VS Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions useful for writing and testing queries. 
 
 ### 1. Install Visual Studio  Code
  
-To download and install Visual Studio Code, go to [Visual Studio Code download page](http://aka.ms/vscode).
+To download and install Visual Studio Code, go to [Visual Studio Code download page](https://aka.ms/vscode).
 
 ### 2. Install the OData extension
 
@@ -92,7 +92,7 @@ Once you've verified the query works correctly, you can execute the query from P
 
 ### 1. Combine the multi-line OData Query into a single-line
 
-Before using the query in Power BI, you must convert the multi-line OData query to a single-line. The simplest way to do this is in [Visual Studio Code](http://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata), and use the **OData: Combine** command.
+Before using the query in Power BI, you must convert the multi-line OData query to a single-line. The simplest way to do this is in [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata), and use the **OData: Combine** command.
 
 > [!NOTE]
 > Within your filename.odata file, you may want to create a copy of the multi-line query text first, and execute **OData: Combine** on the copy. Since there is no way to convert the single-line query back to a readable multi-line. 

@@ -536,7 +536,7 @@ You can specify a work item template that specifies several field values using t
 
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
 > [FieldReferenceName 1]={FieldValue 1}&
 > [FieldReferenceName 2]={FieldValue 2}&
 > [FieldReferenceName 3]={FieldValue 3}&
@@ -564,7 +564,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker range="azure-devops"
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
 > [System.Title]=TaskTitle&
 > [System.AssignedTo]=Jamal+Hartnett&
 > [System.Description]=<p>Always+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.</p>&

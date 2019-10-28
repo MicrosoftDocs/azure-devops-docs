@@ -140,7 +140,7 @@ Publishers can now create and link to a changelog for their extensions on the Ma
 You can now include a __changelog__ object in the content section of the manifest with a path property that points to the Changelog Markdown file within the extension.
 
 ### For VS Code extensions:
-If CHANGELOG.md is placed in the extension’s workspace root, it will be automatically included by the vsce publishing tool. More details can be found within [VS Code documentation](http://code.visualstudio.com/updates/v1_7#_extension-authoring).
+If CHANGELOG.md is placed in the extension’s workspace root, it will be automatically included by the vsce publishing tool. More details can be found within [VS Code documentation](https://code.visualstudio.com/updates/v1_7#_extension-authoring).
 
 ## Release action in Build summary
 We are now supporting a __Release__ action, available in the __Build__ summary action bar, so it is easy for you to create a release for a build.
