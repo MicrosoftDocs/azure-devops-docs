@@ -40,3 +40,7 @@
     href: /azure/devops/organizations/index
   - name: Build Visual Studio extensions
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
+  - name: Build apps for Windows
+    href: /windows/apps/
+  - name: Mobile application development in Microsoft
+    href: /azure/mobile-apps/
