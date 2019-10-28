@@ -482,6 +482,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 
 1. Job level variable set in the YAML file
+1. Stage level variable set in the YAML file
 1. Pipeline level variable set in the YAML file
 1. Variable set at queue time
 1. Pipeline variable set in the web editor
@@ -492,14 +493,20 @@ In the following example, the same variable `a` is set at the pipeline level and
 variables:
   a: 'pipeline yaml'
 
-jobs:
-- job: A
+stages:
+- stage: one
+  displayName: one
   variables:
-  - group: G
-  - name: a
-    value: 'job yaml'
-  steps:
-    - bash: echo $(a)        # This will be 'job yaml'
+   - name: a
+     value: 'stage yaml'
+
+  jobs:
+  - job: A
+    variables:
+    - name: a
+      value: 'job yaml'
+    steps:
+      - bash: echo $(a)        # This will be 'job yaml'
 ```
 
 > [!NOTE]
@@ -595,5 +602,4 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will be 20, since the variables are expanded just before the step
    ```
 
----
-* * *
+
