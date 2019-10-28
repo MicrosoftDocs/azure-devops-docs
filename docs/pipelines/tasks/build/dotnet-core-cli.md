@@ -72,7 +72,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
-<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
+<tr><td><code>vstsFeed</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
 <tr><td><code>includeNuGetOrg</code><br/>Use packages from NuGet.org</td><td>Include NuGet.org in the generated NuGet.config000
 0.
 </td></tr>
