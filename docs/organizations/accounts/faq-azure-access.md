@@ -149,7 +149,7 @@ A: You must be a member or have read access in those directories. Otherwise, you
 
 ### Q: What if I get an error trying to map a user to an existing member of my organization?
 
-A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/en-us/support/devops/)
+A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/support/devops/)
 
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 

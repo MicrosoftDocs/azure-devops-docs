@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
  
 # Azure Pipelines with Microsoft Teams
 
-If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018)
+If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018)
  to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
@@ -153,7 +153,7 @@ Here are all the commands supported by the Azure Pipelines app:
 ## Troubleshooting
 
 If you are experiencing the following errors when using the
-[Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/en-us/product/office/WA200000055?src=wnblogmar2018), follow the procedures in this section. 
+[Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018), follow the procedures in this section. 
 
 [!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
 
