@@ -32,7 +32,7 @@ The burndown chart now has a line showing available capacity during a sprint, in
 
 ## SonarQube analysis build tasks
 
-Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
+Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
 
 ![SonarQube build analysis settings](_img/8_26_04.png)
 

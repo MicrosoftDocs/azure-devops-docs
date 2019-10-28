@@ -240,7 +240,7 @@ you can remap these tag sequences to a different tag if you want.
 **[vNext release path](release-without-agents.md)**, 
 you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
-**[here](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
+**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
 
 ![Configure Apps tab; vNext Release Templates tab; Change Summary tab](_img/manage-release-16.png)
 
@@ -277,7 +277,7 @@ only to vNext environments based on Azure IaaS services.
 
 ### Q: Are there any hands-on labs to help me get started with Release Management?
 
-**A**: Yes. Go  **[here](http://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
+**A**: Yes. Go  **[here](https://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
 for hands-on labs to try Release Management and other devops products.
 
 ### Q: Is there a more detailed user guide?

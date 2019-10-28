@@ -3251,7 +3251,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx" data-raw-source="[22 Jul 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)">22 Jul 2015</a></td>
+            <td rowspan="1"><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx" data-raw-source="[22 Jul 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)">22 Jul 2015</a></td>
             <td>Power BI reporting on Work Item data</td>
             <td></td><td>Future</td>
         </tr>
@@ -3353,7 +3353,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](http://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](https://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
             <td>Australia region for Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3398,7 +3398,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx" data-raw-source="[17 Apr 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)">17 Apr 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx" data-raw-source="[17 Apr 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)">17 Apr 2015</a></td>
             <td>CodeLens General Availability on Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3476,7 +3476,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx" data-raw-source="[13 Feb 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)">13 Feb 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx" data-raw-source="[13 Feb 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)">13 Feb 2015</a></td>
             <td>Limited preview for Code Search</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3503,7 +3503,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
             <td>VS Online ISO 27001 Certification</td>
             <td></td><td>N/A</td>
         </tr>
