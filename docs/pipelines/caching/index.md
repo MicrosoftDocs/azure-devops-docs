@@ -261,8 +261,9 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: nuget | $(Agent.OS) | packages.lock.json
-    restoreKeys: nuget | $(Agent.OS)
-                 nuget
+    restoreKeys: |
+      nuget | $(Agent.OS)
+      nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
