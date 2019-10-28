@@ -17,7 +17,7 @@ ms.date: 09/18/2019
 
 **Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015** 
 
-<!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
+<!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 

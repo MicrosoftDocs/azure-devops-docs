@@ -22,7 +22,7 @@ The first thing you will notice is that we’ve changed our name. What was Team 
 
 ![New Visual Studio Online site](_img/11_13_02.png)
 
-With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. http://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
+With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. https://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
 
 ![Your profile page](_img/11_13_03.png)
 

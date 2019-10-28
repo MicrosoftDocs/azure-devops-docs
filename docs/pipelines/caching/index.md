@@ -253,7 +253,7 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-See [Package reference in project files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) for more details.
+See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details.
 
 ## Node.js/npm
 

@@ -53,7 +53,7 @@ All users must sign in with Microsoft accounts.
 
 ### Q: What do I need to set up an existing Azure DevOps instance with Azure AD?
 
-A: Ensure you meet the prerequisites in the article, [Connect your organization to Azure AD](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
+A: Ensure you meet the prerequisites in the article, [Connect your organization to Azure AD](https://docs.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
 
 ### Q: What happens to current users?
 
@@ -71,7 +71,7 @@ A: Add these users to the directory with new work or school accounts. Then, reas
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
 A: Alternate credentials won't work anymore for
-tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](http://support.microsoft.com/kb/2991274/) again for the organization that you connected.
+tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected.
 
 ### Q: What if I accidentally delete a user in Azure AD?
 
