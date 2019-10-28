@@ -16,7 +16,7 @@ Before we get to the new capabilities in today’s update, I want to announce so
 
 **Saturday March 23rd we’ll be taking the service offline for 15 minutes sometime between 11:00 AM EST and 2:00 PM EST.**
 
-As we get closer to the event, we’ll be posting updates on our [service blog](http://blogs.msdn.com/b/tfservice/) with additional details. Please plan accordingly, and we apologize in advance for any inconvenience this causes.
+As we get closer to the event, we’ll be posting updates on our [service blog](https://blogs.msdn.com/b/tfservice/) with additional details. Please plan accordingly, and we apologize in advance for any inconvenience this causes.
 
 Now, let’s talk about some of the improvements in today's update…
 

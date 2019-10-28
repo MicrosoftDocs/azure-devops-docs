@@ -39,7 +39,7 @@ You can also simplify your scripts using
 [configuration variables and system variables](config-and-system-variables.md).
 
 To read a detailed user guide, 
-[download this pdf file](http://go.microsoft.com/fwlink/?LinkId=398104).
+[download this pdf file](https://go.microsoft.com/fwlink/?LinkId=398104).
 
 
 ## Related topics

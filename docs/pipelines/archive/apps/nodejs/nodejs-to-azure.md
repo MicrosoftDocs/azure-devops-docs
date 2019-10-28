@@ -22,7 +22,7 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 ## Upload your code
 
-1. [Download our Node.js Hello World sample app](http://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip).
+1. [Download our Node.js Hello World sample app](https://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip).
 
 2. Do you have your own code?
 
@@ -157,7 +157,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 <h3 id="code">What code is in the sample app?</h3>
 
-[Our Node.js Hello World sample app](http://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip) contains:
+[Our Node.js Hello World sample app](https://download.microsoft.com/download/5/C/4/5C4CB575-D022-4BB8-9E95-5A2958C83CD2/nodejs-express-hello-world-app.zip) contains:
 
 ```
 |-- .gitignore

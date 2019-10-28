@@ -51,7 +51,7 @@ Now, setting up an Azure Service endpoint is easy: you just need to select the s
 ![Adding an Azure service endpoint](_img/7_29_07.png)
 
 -Users can now automatically set up an ARM service connection by selecting the subscriptions linked with the Azure Active Directory that is backing the VSTS account.
--Note: A new Azure Service Principal will be created and assigned the Contributor role, having access to all the resources in the selected subscription. You can modify the Service Principal access from [Azure portal](http://portal.azure.com/) > Subscriptions > Users > Roles.
+-Note: A new Azure Service Principal will be created and assigned the Contributor role, having access to all the resources in the selected subscription. You can modify the Service Principal access from [Azure portal](https://portal.azure.com/) > Subscriptions > Users > Roles.
 
 -Prerequisites:
 -The VSTS account should be backed by an Azure Active Directory. For more info, see the Visual Studio article [Team Services: Access with Azure Active Directory (Azure AD)](https://visualstudio.microsoft.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
@@ -130,7 +130,7 @@ We have exposed a new extension point on the backlog. With this deployment, exte
 
 ![Build extension point for right-side mapping and work details panes](_img/7_29_17.png)
 
-That’s a lot for this sprint! If you have comments or questions, please reach out on Twitter ([@gopinach](https://twitter.com/gopinach)). If you have ideas for things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+That’s a lot for this sprint! If you have comments or questions, please reach out on Twitter ([@gopinach](https://twitter.com/gopinach)). If you have ideas for things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 
