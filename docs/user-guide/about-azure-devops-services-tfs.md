@@ -109,7 +109,7 @@ To learn more, see [Plan your Azure DevOps organization structure](/azure/devops
 
 ## Authentication
 
-With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](http://www.microsoft.com/account) credentials or with
+With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis)  
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 

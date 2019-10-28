@@ -79,7 +79,7 @@ If the words "fix", "fixes", or "fixed" precede the work item mention (as shown 
 Teams that are using Azure Pipelines to build code in GitHub will also see the work items linked to their GitHub commits in the build summary.​​
 
 ### Acquire Azure Boards as a service
-Azure Boards can now be easily acquired and used as its own service. Whether your code is in Azure Repos or GitHub, you can quickly get started by going to www.azure.com/boards and clicking on **'Get started with Azure Boards'**. New users will get a project that only has Azure Boards, and an introduction to help them hit the ground running.
+Azure Boards can now be easily acquired and used as its own service. Whether your code is in Azure Repos or GitHub, you can quickly get started by going to `https://www.azure.com/boards` and clicking on **'Get started with Azure Boards'**. New users will get a project that only has Azure Boards, and an introduction to help them hit the ground running.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](_img/144_08.png)

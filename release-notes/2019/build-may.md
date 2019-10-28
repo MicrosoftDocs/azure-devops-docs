@@ -10,7 +10,7 @@ description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
 
 # Kubernetes integration with Azure Pipelines - Microsoft Build Announcements
 
-The [Microsoft Build](https://www.microsoft.com/en-us/build) conference was held on May 6 - 8 in Seattle.  During the conference we announced several exciting new features. 
+The [Microsoft Build](https://www.microsoft.com/build) conference was held on May 6 - 8 in Seattle.  During the conference we announced several exciting new features. 
 
 For instance, you can now use GitHub identity to login into the Azure DevOps portal. In addition, you can take your GitHub repo all the way to Kubernetes using a YAML based multistage pipeline. 
 

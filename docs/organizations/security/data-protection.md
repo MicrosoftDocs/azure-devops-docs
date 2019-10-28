@@ -141,7 +141,7 @@ If during your penetration testing you believe you have discovered a potential s
 
 ### Azure DevOps Bug Bounty Program
 
-Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-azure-devops) page for more details. 
+Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Program](https://www.microsoft.com/msrc/bounty-azure-devops) page for more details. 
 
 ### Restricting access
 
@@ -298,7 +298,7 @@ your review and education. These include:
 - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
-- [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
+- [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
 - [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
 - [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)

@@ -93,17 +93,17 @@ GET https://fabrikam.VisualStudio.com/DefaultCollection/_apis/repos/git/reposito
             ASP.NET Single Page Application (SPA) helps you build applications that include significant client-side interactions using HTML, CSS, and JavaScript.
             It's now easier than ever before to getting started writing highly interactive web applications.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
 ```

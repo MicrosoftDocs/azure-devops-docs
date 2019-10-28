@@ -451,7 +451,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "Hyperlink",
-            "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+            "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
             "attributes": {
               "authorizedDate": "2014-12-29T20:49:27.98Z",
               "id": 65275,
