@@ -33,7 +33,7 @@ Some examples are:
   install the certificate.
 
 * Install software on the machines running the load test agents in the cloud to collect data or metrics;
-  for example, installing [Network Monitor](http://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
+  for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
   You can use a setup script to install it on the agent machine and use a cleanup script to save the data to remote storage
   such as Azure Storage (by using a SAS key).
 

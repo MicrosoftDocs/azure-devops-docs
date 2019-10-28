@@ -26,17 +26,17 @@ This sprint we tweaked the capacity planning experience to give you complete con
 
 ## Burndown with available capacity
 
-The burndown chart now has a line showing available capacity during a sprint, in addition to the existing ideal trend line. This view provides you and your team with a better idea of whether you're on track to finish all your work during the sprint. This line is built on the capacity data described above, including individual and team days off. We’ve marked [this suggestion](http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4381480-burndown-chart-should-use-the-capacity-of-the-team) on UserVoice as completed.
+The burndown chart now has a line showing available capacity during a sprint, in addition to the existing ideal trend line. This view provides you and your team with a better idea of whether you're on track to finish all your work during the sprint. This line is built on the capacity data described above, including individual and team days off. We’ve marked [this suggestion](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4381480-burndown-chart-should-use-the-capacity-of-the-team) on UserVoice as completed.
 
 ![Burndown chart showing available capacity](_img/8_26_03.png)
 
 ## SonarQube analysis build tasks
 
-Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
+Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
 
 ![SonarQube build analysis settings](_img/8_26_04.png)
 
-That’s a wrap for our deployment this week. As always, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for our deployment this week. As always, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

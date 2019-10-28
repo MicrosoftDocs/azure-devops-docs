@@ -38,7 +38,7 @@ We updated the build VM image on our hosted build service, adding some new compo
 
 ## Basic auth support
 
-A couple of weeks ago we [announced](http://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
+A couple of weeks ago we [announced](https://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
 
 Part of today’s rollout is support for basic authentication which enables two important new scenarios:
 
@@ -57,7 +57,7 @@ Then enter a password and save the changes. You now have a username and password
 
 That’s it for sprint 35. We’re already busy on sprint 36 and looking forward to bringing more great stuff your way. Please feel free to use our [UserVoice site](https://visualstudio.uservoice.com/forums/330519-vso) if you want to help prioritize our investments.
 
-By the way, we've updated this page so you can bookmark it ([http://tfs.visualstudio.com/news/](http://tfs.visualstudio.com/news/)), and you'll always get the most recent news.
+By the way, we've updated this page so you can bookmark it ([https://tfs.visualstudio.com/news/](https://tfs.visualstudio.com/news/)), and you'll always get the most recent news.
 
 Thanks,
 

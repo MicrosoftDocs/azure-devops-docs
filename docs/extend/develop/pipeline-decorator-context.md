@@ -28,7 +28,7 @@ Currently, there is only one key: `repositories`.
 
 In a designer build, the primary repo alias is `__designer_repo`.
 In a YAML pipeline, the primary repo is called `self`.
-In a release pipeline, repositories is not available. [Release artifact variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
+In a release pipeline, repositories is not available. [Release artifact variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
 
 For example, to print the name of the `self` repo in a YAML pipeline:
 ```

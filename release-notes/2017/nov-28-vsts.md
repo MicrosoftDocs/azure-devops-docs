@@ -136,7 +136,7 @@ Easily create work items from the **Queries** hub with the addition of a **+ New
 > [!div class="mx-imgBorder"]
 > ![Create work items](_img/126_01.png)
 
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/31964836-add-a-work-item-from-the-queries-view).
+This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/31964836-add-a-work-item-from-the-queries-view).
 
 ### Expand/collapse requirements/people on the Task board
 
@@ -203,7 +203,7 @@ Many times, a single repository will contain code that’s built by multiple con
 
 In addition to build, status policies also have the path filtering option available. This will allow any custom or 3rd party policies to configure policy enforcement for specific paths.
 
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/17780509-define-multiple-builds-with-path-filters-on-pre-me).
+This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/17780509-define-multiple-builds-with-path-filters-on-pre-me).
 
 ### Pull request suggestions for forks
 
@@ -270,7 +270,7 @@ VSTS Symbol Server enables you to host and share symbols with your organization.
 > [!div class="mx-imgBorder"]
 > ![Symbol server task](_img/126_32.png)
 
-This feature was prioritized based on a top [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
+This feature was prioritized based on a top [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
 
 ### Agentless build tasks
 
@@ -398,7 +398,7 @@ We received a lot of feedback on the updated Package Management experience, wher
 
 It is now possible to manage multiple packages, and multiple versions of a single package, in bulk. On the package list, you can now promote, unlist, and deprecate multiple packages by selecting them. On the package details, you can use the new **Versions** pivot to select multiple versions and promote or unlist/deprecate them. Support for delete of multiple packages and multiple versions of a package is coming in a future Update.
 
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20082451-make-it-easier-unlist-multiple-versions-of-a-packa).
+This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20082451-make-it-easier-unlist-multiple-versions-of-a-packa).
 
 ## Test
 
@@ -429,7 +429,7 @@ Over time as teams document more content in wiki pages across multiple projects 
 > [!div class="mx-imgBorder"]
 > ![Wiki Search](_img/126_12.png)
 
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19952845-wiki-fulltextsearch).
+This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19952845-wiki-fulltextsearch).
 
 ### Link work items and Wiki pages
 

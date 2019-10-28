@@ -149,7 +149,7 @@ A: You must be a member or have read access in those directories. Otherwise, you
 
 ### Q: What if I get an error trying to map a user to an existing member of my organization?
 
-A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/en-us/support/devops/)
+A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/support/devops/)
 
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
@@ -238,7 +238,7 @@ A: Your organization was connected to a directory when the organization Owner cr
 ### Q: My alternate credentials don't work anymore. What do I do?
 
 A: This happens after you connect your organization to a directory. 
-[Set up your credentials](http://support.microsoft.com/kb/2991274) again for the organization that you connected.
+[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 

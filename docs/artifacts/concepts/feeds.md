@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
-ms.date: 2/6/2018
+ms.date: 10/28/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,7 +26,7 @@ Feeds are not package type dependent. You can store every package type (npm, NuG
 
 Until now, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**, which live inside the project that they were created in, and can only be seen when accessing the Azure Artifacts hub within that project. 
 
-Only project-scoped feeds can be made public, see the section on [public feeds below](#public-feeds-preview). [Learn more](../feeds/project-scoped-feeds.md) about the differences between project-scoped and organization-scoped feeds.
+Only project-scoped feeds can be made public, see the following section on [public feeds](#public-feeds). [Learn more](../feeds/project-scoped-feeds.md) about the differences between project-scoped and organization-scoped feeds.
 
 ## Public feeds
 

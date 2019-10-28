@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 > [!NOTE]
 > We’ve recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
-In this quickstart, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).
+In this quickstart, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
 
 Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
