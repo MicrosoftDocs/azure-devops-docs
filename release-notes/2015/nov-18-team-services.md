@@ -12,7 +12,7 @@ author: yukom
 
 # Extensions, Previews, and more – Nov 18
 
-Today is our [Connect(); developer event](http://connect2015.visualstudio.com/) and we have a ton of news for VS Online…
+Today is our [Connect(); developer event](https://connect2015.visualstudio.com/) and we have a ton of news for VS Online…
 
 ## Visual Studio Team Services
 
