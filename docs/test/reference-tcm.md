@@ -277,6 +277,6 @@ However, there are couple of ways of getting this Step related data:
 
 You can find a Sample custom warehouse adapter below, that you can use as a starting point:
 
-[http://code.msdn.microsoft.com/Tfs2010SampleAdapter](http://code.msdn.microsoft.com/Tfs2010SampleAdapter)
+[https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
