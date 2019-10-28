@@ -92,4 +92,4 @@ If you need to install a SharePoint product first, see [Manually install SharePo
   
 ### Q: Do you want more information about SharePoint site features?  
 
- **A:** See the [SharePoint Online Tutorial](http://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1).
+ **A:** See the [SharePoint Online Tutorial](https://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1).
