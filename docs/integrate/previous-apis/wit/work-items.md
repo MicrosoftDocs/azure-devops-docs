@@ -459,7 +459,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
         },
         {
           "rel": "Hyperlink",
-          "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+          "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
           "attributes": {
             "authorizedDate": "2014-12-29T20:49:27.98Z",
             "id": 65275,
@@ -1528,7 +1528,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2014-12-29T20:49:27.98Z",
         "id": 65275,
@@ -2121,7 +2121,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     "path": "/relations/-",
     "value": {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx"
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx"
     }
   }
 ]
@@ -2169,7 +2169,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2014-12-29T20:49:27.98Z",
         "id": 65275,
@@ -2277,7 +2277,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/335?bypassRules=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2015-03-06T21:34:22.32Z",
         "id": 135231,

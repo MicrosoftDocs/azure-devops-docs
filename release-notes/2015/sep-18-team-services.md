@@ -57,7 +57,7 @@ In the export selection dialog, you can choose to export the latest test outcome
 
 ## Work item trend and rollup reporting in Power BI
 
-Earlier this month we blogged about improvements in the Visual Studio Online Power BI Connector to support trend and rollup reporting. Have a look at [Jeff’s blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/09/04/general-availability-of-work-item-trend-and-rollup-reporting-in-power-bi.aspx) for more details.
+Earlier this month we blogged about improvements in the Visual Studio Online Power BI Connector to support trend and rollup reporting. Have a look at [Jeff’s blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/09/04/general-availability-of-work-item-trend-and-rollup-reporting-in-power-bi.aspx) for more details.
 
 ## Support for publishing xUnit results
 

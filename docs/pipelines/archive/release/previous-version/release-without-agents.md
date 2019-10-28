@@ -130,7 +130,7 @@ environment in Release Management.
    listed above for PowerShell and DSC are not yet met, 
    add the Visual Studio Release Management extension to meet 
    the prerequisites.
-   **[Learn how](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
+   **[Learn how](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
 
 1. Add the details for your Azure subscription to Release Management.
 

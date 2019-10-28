@@ -103,7 +103,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -444,7 +444,7 @@ For more information, see
 
 **A**: You can view the service status at the top of the 
 [Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
-and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
+and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
