@@ -22,7 +22,7 @@ This article will not delve deep into the [Git commands](http://git-scm.com/book
 
 ## Start at the beginning by creating a new repo
 
-Each Project can host [TFVC and Git repositories in the same project](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
+Each Project can host [TFVC and Git repositories in the same project](https://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
 
 ![Create a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 

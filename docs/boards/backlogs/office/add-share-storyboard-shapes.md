@@ -40,7 +40,7 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 ## You can share your shapes with the Visual Studio community, too  
  Sell or share your custom storyboard shapes through the Visual Studio gallery.  
   
-1.  Open the [Visual Studio Extensions Upload](http://visualstudiogallery.msdn.microsoft.com/site/upload) page.  
+1.  Open the [Visual Studio Extensions Upload](https://visualstudiogallery.msdn.microsoft.com/site/upload) page.  
   
      ![Agree to contribution terms and contribute](_img/alm_sb_shp_contribute.png "ALM_SB_SHP_Contribute")  
   

@@ -14,7 +14,7 @@ author: yukom
 
 ## Improved permission management for Git repos
 
-In a continuation of our goal to offer a great [enterprise grade Git](http://blogs.msdn.com/b/bharry/archive/2013/06/19/enterprise-grade-git.aspx) solution, we have added a number of enhancements to permission management for Git repos. The most notable is the introduction of branch level permissions. You can now control who has the ability to push certain branches to the server. This lets you have Git repos the whole team can work on, but with branches that only specific people are allowed to push to.
+In a continuation of our goal to offer a great [enterprise grade Git](https://blogs.msdn.com/b/bharry/archive/2013/06/19/enterprise-grade-git.aspx) solution, we have added a number of enhancements to permission management for Git repos. The most notable is the introduction of branch level permissions. You can now control who has the ability to push certain branches to the server. This lets you have Git repos the whole team can work on, but with branches that only specific people are allowed to push to.
 
 We also added a few more permissions at the repo level. You can now control who can push new branches or tags to a repository. This lets you manage branch proliferation on the team’s golden repo. Finally, you can now configure the default permissions for all repos in a team project at once. For teams that have lots of repositories, this makes it much easier to manage permission changes.
 
