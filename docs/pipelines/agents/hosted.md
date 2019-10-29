@@ -187,7 +187,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
 
 #### Boost
-  Hosted agents contain prebuilt boost libraries with their headers in the directory designated by BOOST_ROOT environment variable. In order to include the boost headers, the path $BOOST_ROOT/include should be added to the search paths.
+  The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
   
   Example of g++ invocation with Boost libraries:
   ```
