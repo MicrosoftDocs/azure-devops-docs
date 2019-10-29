@@ -366,7 +366,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.AccessToken</td>
-<td><a href="/azure/devops/pipelines/scripts/powershell.md#oauth" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#oauth)">Use the OAuth token to access the REST API</a>.</td>
+<td><a href="/azure/devops/pipelines/scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.</td>
+
 </tr>
 
 <tr>
