@@ -33,7 +33,7 @@ your team's critical resources and key assets.
 > you can integrate directories with Azure AD by using
 > [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 > To switch your organization to another directory,
-> learn [how to change your directory in Azure AD](change-organization-location.md).
+> learn [how to change your directory in Azure AD](change-azure-ad-connection.md).
 
 ## How does Azure Active Directory control access to Azure DevOps?
 
