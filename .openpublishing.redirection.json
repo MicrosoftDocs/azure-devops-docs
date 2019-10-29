@@ -77,7 +77,7 @@
     },
     {
       "source_path": "docs/extend/test/discover-menu-group-ids.md",
-      "redirect_url": "/azure/devops/extend/index",
+      "redirect_url": "/azure/devops/extend/overview",
       "redirect_document_id": true
     },
     {
@@ -3357,7 +3357,7 @@
     },
     {
       "source_path": "docs/integrate/extensions/test/discover-menu-group-ids.md",
-      "redirect_url": "/azure/devops/extend/index",
+      "redirect_url": "/azure/devops/extend/overview",
       "redirect_document_id": false
     },
     {
@@ -8067,7 +8067,7 @@
     },
     {
       "source_path": "docs/security/faq-network-connections.md",
-      "redirect_url": "/azure/devops/organizations/security/faq-network-connections",
+      "redirect_url": "/azure/devops/organizations/security/allow-list-ip-url",
       "redirect_document_id": false
     },
     {
@@ -8087,7 +8087,7 @@
     },
     {
       "source_path": "docs/security/index.md",
-      "redirect_url": "/azure/devops/organizations/security/index",
+      "redirect_url": "/azure/devops/organizations/security/about-security-identity",
       "redirect_document_id": false
     },
     {
@@ -11102,7 +11102,7 @@
     },
     {
       "source_path": "docs/work/scrum/sprint-burndown.md",
-      "redirect_url": "/azure/devops/boards/sprints/sprint-burndown",
+      "redirect_url": "/azure/devops/report/dashboards/configure-sprint-burndown",
       "redirect_document_id": false
     },
     {
@@ -12052,12 +12052,12 @@
     },
     {
       "source_path": "docs/organizations/settings/scale/index.md",
-      "redirect_url": "/azure/devops/settings/about-teams-and-settings",
+      "redirect_url": "/azure/devops/organizations/settings/about-teams-and-settings",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/projects/index.md",
-      "redirect_url": "/azure/devops/projects/about-projects",
+      "redirect_url": "/azure/devops/organizations/projects/about-projects",
       "redirect_document_id": false
     },
     {
@@ -12094,6 +12094,6 @@
       "source_path": "docs/organizations/security/index.md",
       "redirect_url": "/azure/devops/organizations/security/about-security-identity",
       "redirect_document_id": false
-    },
+    }
   ]
 }
