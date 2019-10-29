@@ -29,13 +29,14 @@ You can restore a deleted project up to 28 days after it was deleted. This artic
 
 To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
-::: monker-end
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 To restore a project, you must delete project permissions and have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
-::: monker-end
+::: moniker-end
+
 
 > [!NOTE]
 > A recently deleted project is only viewable when there's a project that's been deleted from an organization within the last 28 days.
@@ -61,7 +62,26 @@ To restore a project, you must delete project permissions and have the "delete p
 
 ::: moniker range="azure-devops-2019"
 
-### PowerShell
+### Use REST API
+
+1. Sign in to your project API `https://{instance}/{collection}/_apis/projects`.
+2. Get a list of deleted projects using the following request:
+```
+GET https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
+```
+3. Restore a deleted project using the following request:
+```
+PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=5.0-preview.3
+```
+
+Request body
+```
+{
+    "state" : "wellFormed"
+}
+```
+
+### Use PowerShell
 
 1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
 ```
@@ -80,28 +100,6 @@ $projectName = 'Project1'
 $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where name -eq $projectName
 irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -Headers @{'Content-Type' = 'application/json'}
 ```
-
-### REST API
-
-1. Sign in to your project API `https://{instance}/{collection}/_apis/projects`.
-
-2. Get a list of deleted projects using the following request:
-```
-GET https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
-```
-
-3. Restore a deleted project using the following request:
-```
-PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=5.0-preview.3
-```
-
-Request body
-```
-{
-    "state" : "wellFormed"
-}
-```
-
 ::: moniker-end
 
 Your project and associated data are restored.
