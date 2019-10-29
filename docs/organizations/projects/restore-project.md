@@ -61,17 +61,46 @@ To restore a project, you must delete project permissions and have the "delete p
 
 ::: moniker range="azure-devops-2019"
 
-1. Execute the following PowerShell script to get the list of deleted projects:
+### PowerShell
 
-`$collectionUrl = "https://localhost/defaultcollection" 
-(irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value`
-2. Update $collectionUrl.
+1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
+```
+$collectionUrl = "https://localhost/defaultcollection" 
+(irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+```
 
-   You'll see something similar to the following screenshot:
+   You see something similar to the following screenshot:
 
    ![PowerShell script return example for deleted projects](_img/restore-project/deleted-projects-powershell-script-2019.png)
 
-3. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+```
+$collectionUrl = "https://localhost/defaultcollection"
+$projectName = 'Project1'
+$project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where name -eq $projectName
+irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -Headers @{'Content-Type' = 'application/json'}
+```
+
+### REST API
+
+1. Sign in to your project API `https://{instance}/{collection}/_apis/projects`.
+
+2. Get a list of deleted projects using the following request:
+```
+GET https://dev.azure.com/{organization}/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
+```
+
+3. Restore a deleted project using the following request:
+```
+PATCH https://dev.azure.com/{organization}/_apis/projects/{projectId}?api-version=5.0-preview.3
+```
+
+Request body
+```
+{
+    "state" : "wellFormed"
+}
+```
 
 ::: moniker-end
 
