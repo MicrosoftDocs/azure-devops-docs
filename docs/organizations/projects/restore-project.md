@@ -57,17 +57,17 @@ Delete project permissions.
 
 4. Highlight the project you want to restore, and then select **Restore**.
 
-![Highlight the project, and then select Restore](_img/restore-project/recently-deleted-projects.png)
+   ![Highlight the project, and then select Restore](_img/restore-project/recently-deleted-projects.png)
+
+Your project and associated data are restored.
 
 ::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
 
-You can execute a PowerShell command for restoring a removed project. For more information, see [Restore removed project solution](https://developercommunity.visualstudio.com/content/problem/767453/restore-removed-project.html) within the Developer Community.
+You can execute a PowerShell command for restoring a removed project. For more information, see the [Restore removed project solution](https://developercommunity.visualstudio.com/content/problem/767453/restore-removed-project.html) within the Developer Community.
 
 ::: moniker-end
-
-Your project and associated data are restored.
 
 ## Related articles
 
