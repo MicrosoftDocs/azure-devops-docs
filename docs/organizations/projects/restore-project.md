@@ -16,7 +16,7 @@ ms.date: 10/29/2019
 
 # Restore a project
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-azure-devops-all](../../report/_shared/version-azure-devops-all.md)]
 
 You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 
