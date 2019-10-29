@@ -25,17 +25,15 @@ You can restore a deleted project up to 28 days after it was deleted. This artic
 
 ## Prerequisites
 
-::: moniker range="=azure-devops"
+::: moniker range="azure-devops"
 
 To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
-To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
-
-Delete project permissions.
+To restore a project, you must delete project permissions and have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
 ::: monker-end
 
@@ -44,7 +42,7 @@ Delete project permissions.
 
 ## Restore project
 
-::: moniker range="=azure-devops"
+::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -63,7 +61,7 @@ Your project and associated data are restored.
 
 ::: moniker-end
 
-::: moniker range="=azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 You can execute a PowerShell command for restoring a removed project. For more information, see the [Restore removed project solution](https://developercommunity.visualstudio.com/content/problem/767453/restore-removed-project.html) within the Developer Community.
 
