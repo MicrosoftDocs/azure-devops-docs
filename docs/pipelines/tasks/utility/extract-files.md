@@ -48,10 +48,10 @@ None
 <p>Specify pattern filters, one per line, that match the archives to extract. For example:
 </p>
 <ul>
-<li><code>test.zip</code> extracts the test.zip file to the root folder.</li>
+<li><code>test.zip</code> extracts the test.zip file in the root folder.</li>
 <li><code>test/*.zip</code> extracts all .zip files in the test folder.</li>
-<li><code>\**/*.tar</code> extracts all .tar files in the root folder and sub-folders.</li>
-<li><code>\**/bin/*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
+<li><code>**/*.tar</code> extracts all .tar files in the root folder and sub-folders.</li>
+<li><code>**/bin/*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
 </ul>
 <p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as <code>**/bin/**</code> instead of <code>**/bin</code>.</p>
 </td>
