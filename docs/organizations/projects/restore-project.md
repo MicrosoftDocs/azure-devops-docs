@@ -68,7 +68,7 @@ To restore a project, you must delete project permissions and have the "delete p
 
     <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
+   For example, to connect to the server named **FabrikamPrime**, enter: **http://FabrikamPrime:8080/tfs/**.
 
    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 
@@ -84,11 +84,11 @@ To restore a project, you must delete project permissions and have the "delete p
    Request body
    ```
    {
-      "state" : "wellFormed"
+    "state" : "wellFormed"
    }
    ```
 
-### Use PowerShell
+### Using PowerShell
 
 1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
    ```
@@ -96,8 +96,8 @@ To restore a project, you must delete project permissions and have the "delete p
    (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
 
-  Something similar to the following screenshot appears:
-  ![PowerShell script return example for deleted projects](_img/restore-project/deleted-projects-powershell-script-2019.png)
+    Something similar to the following screenshot appears:
+    ![PowerShell script return example for deleted projects](_img/restore-project/deleted-projects-powershell-script-2019.png)
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
    ```
