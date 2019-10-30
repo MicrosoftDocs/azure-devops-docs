@@ -485,9 +485,9 @@ When you set a variable with the same name in multiple scopes, the following pre
 1. Stage level variable set in the YAML file
 1. Pipeline level variable set in the YAML file
 1. Variable set at queue time
-1. Pipeline variable set in the web editor
+1. Pipeline variable set in Pipeline settings UI
 
-In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the pipeline using the web editor.
+In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the Pipeline settings UI.
 
 ```yaml
 variables:
