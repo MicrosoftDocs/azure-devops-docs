@@ -84,6 +84,8 @@
     href: integrations/boards-teams.md
   - name: Project Server Integration (Deprecated)
     href: /azure/devops/reference/tfs-ps-sync/index
+- name: First-party extensions
+  href: extensions/toc.yml
 - name: REST API Reference
   items:
   - name: Work Items
