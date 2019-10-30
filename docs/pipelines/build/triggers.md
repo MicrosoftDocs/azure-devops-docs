@@ -75,9 +75,9 @@ In addition to specifying branch names in the `branches` lists, you can also con
 trigger:
   branches:
     include:
-      refs/tags/{tagname}
+      - refs/tags/{tagname}
     exclude:
-      refs/tags/{othertagname}
+      - refs/tags/{othertagname}
 ```
 
 If you don't specify any triggers, the default is as if you wrote:
