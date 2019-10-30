@@ -9,7 +9,7 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/08/2019
+ms.date: 10/21/2019
 monikerRange: '>= tfs-2017'
 ---
 
