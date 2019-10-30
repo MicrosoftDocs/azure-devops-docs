@@ -75,7 +75,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
@@ -90,7 +90,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Restore keys
 
-`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line and `-` character for indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
 
 #### Example
 
@@ -101,13 +101,13 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@0azure pipelines 
+- task: CacheBeta@1
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
-    restoreKeys:
-      - yarn | $(Agent.OS)
-      - yarn
+    restoreKeys: |
+      yarn | $(Agent.OS)
+      yarn
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
