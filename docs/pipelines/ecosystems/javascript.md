@@ -522,17 +522,7 @@ steps:
 
 ::: moniker-end
 
-To release, point your release task to the `dist` or `build` artifact and use the [Azure Web App Deploy task](../targets/webapp.md). Add this snippet to your YAML.
-
-```yaml
-- task: AzureWebApp@1
-  displayName: Azure Web App Deploy
-  inputs:
-    azureSubscription: $(serviceConnectionToAzure)
-    appType: webAppLinux
-    appName: $(appName)
-    package: $(build.artifactstagingdirectory)/**/*.zip
-```
+To release, point your release task to the `dist` or `build` artifact and use the [Azure Web App Deploy task](../targets/webapp.md). 
 
 ### Webpack
 
