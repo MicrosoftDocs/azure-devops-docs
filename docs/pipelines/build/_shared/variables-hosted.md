@@ -547,6 +547,11 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
+<td>System.JobId</td>
+<td>A unique identifier for a single attempt of a single job.</td>
+</tr>
+
+<tr>
 <td>System.JobName</td>
 <td>The name of the job, typically used for expressing dependencies and accessing output variables.</td>
 </tr>
