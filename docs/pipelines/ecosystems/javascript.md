@@ -493,7 +493,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The built files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `dist` or `build`, that is ready for release.
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `dist` or `build`, that is ready for release.
 
 ::: moniker range="azure-devops"
 
