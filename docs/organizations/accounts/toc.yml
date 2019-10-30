@@ -63,6 +63,8 @@
         href: add-users-to-azure-ad.md
       - name: Delete users connected to Azure AD
         href: delete-users-from-services-aad.md
+      - name: Restrict organization creation with tenant policy
+        href: azure-ad-tenant-policy-restrict-org-creation.md
       - name: FAQ 
         href: faq-azure-access.md#faq-connect    
   - name: Manage group-based licensing 
