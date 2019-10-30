@@ -84,3 +84,4 @@ your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.
+You can also [restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
