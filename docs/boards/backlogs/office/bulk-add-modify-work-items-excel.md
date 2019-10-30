@@ -46,7 +46,7 @@ In this article you'll learn:
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 
 - Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end  
