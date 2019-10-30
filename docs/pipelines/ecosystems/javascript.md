@@ -517,7 +517,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(build.artifactstagingdirectory) # dist or build directories
+    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
 ```
 
 ::: moniker-end
