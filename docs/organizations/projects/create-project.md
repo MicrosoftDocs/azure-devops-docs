@@ -18,28 +18,27 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Create a project to establish a repository for source code, where a group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
+Create a project to establish a repository for source code. A group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Each project must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
 
 > [!NOTE]
 > This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
 
-If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
+If you have a project already, see one of the following topics: [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
-> If you don't want to manage an on-premises server, you can
-[sign up for Azure DevOps Services and create a project](../accounts/create-organization.md).
+> If you don't want to manage an on-premises server, you can sign up for Azure DevOps Services and create a project. For more information, see [
+Quickstart: Create an organization or project collection](../accounts/create-organization.md).
 ::: moniker-end
-
 
 ## Prerequisites
 
 ::: moniker range="azure-devops" 
 
-- You create a project within an organization. If you haven't created an organization yet, do that now. See [Sign up and invite teammates ](../../user-guide/sign-up-invite-teammates.md), which also creates a project, or [Create an organization](../accounts/create-organization.md).  
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you are the Organization Owner you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You create a project within an organization. If you haven't created an organization yet, do that now. See [Quickstart: Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).  
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end  
 
@@ -57,18 +56,18 @@ If you have a project already, and want to start coding an application project, 
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 - Ask your TFS administrator about the following resources and get additional permissions as needed:
 
-    - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you are supporting hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
+    - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
 
-    - Has SQL Server Analysis Services and SQL Server Reporting Services been configured for the deployment? If so, ask your administrator to [add you as a member of the Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md) on the server that hosts SQL Server Reporting Services. Without these permissions, you are unable to create a project.
+    - Has SQL Server Analysis Services and SQL Server Reporting Services been configured for the deployment? If so, ask your administrator to [add you as a member of the Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md) on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project.
 
-    - Has a SharePoint Web application been configured for your deployment? If you want to configure a SharePoint portal when you create your project, ask the SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
+    - Has a SharePoint Web application been configured for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
 ::: moniker-end  	
 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a Public project, or to make a private project public, see [Create a public project](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects.
+> To create a Public project, or to make a private project public, see [Create a public project in your organization](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects.
 
 ::: moniker-end
 
@@ -77,9 +76,9 @@ If you have a project already, and want to start coding an application project, 
 When you create a project, the main options you specify are:
 
 - The organization or project collection where the project is defined.  For guidance, see [About projects and scaling your organization](about-projects.md).
-- A project name. Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
+- A project name. Your project name can't contain special characters (such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less.
 - A project description. Optional.
-- The type of repository used for initial source control, Git or Team Foundation version control (TFVC). Git is selected as the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
+- The type of repository used for initial source control, either Git or Team Foundation version control (TFVC). Git is selected as the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
 - The process used which determines the work item types available for tracking work using Azure Boards. The default process, Agile, is used if you don't specify another one. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
 
 
@@ -175,7 +174,7 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 >
 > If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support). 
 
-1. If you have TFS 2015.2 or a later version, choose the ![gear icon](../../_img/icons/gear-icon.png) to open the **Projects** page, and then choose **New Project**.
+1. If you have TFS 2015.2 or a later version, choose the gear to open the **Projects** page. ![gear icon](../../_img/icons/gear-icon.png) Then choose **New Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
@@ -185,7 +184,7 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
 
-   Select the collection administration page for the collection you want to create the project in from the left pane, and choose **Create a new project...**.
+   Select the collection administration page for the collection you want to create the project in from the left pane. Select **Create a new project**.
 
 2. Enter information into the form provided. Provide a name for your new project, a short description, and select its initial source control type and work item tracking process.
 
@@ -204,7 +203,7 @@ Creating a project from the web portal isn't supported for TFS 2015 and earlier 
 
 ::: moniker range="azure-devops"
 
-If you choose to add a team project from Visual Studio/Team Explorer, you'll be redirected to the web portal.  Creating a project from Team Explorer is not supported for Azure DevOps Services. 
+If you choose to add a team project from Visual Studio/Team Explorer, you'll be redirected to the web portal.  Creating a project from Team Explorer isn't supported for Azure DevOps Services.
 
 ::: moniker-end
 
@@ -222,11 +221,11 @@ If you choose to add a team project from Visual Studio/Team Explorer, you'll be 
 
 ::: moniker range="<= tfs-2017"
 
-You can create a project from Visual Studio/Team Explorer after you have connected to an on-premises Azure DevOps Server.
+You can create a project from Visual Studio/Team Explorer after you've connected to an on-premises Azure DevOps Server.
 
 1. Open the same version of Visual Studio as the version of TFS that you're connecting to. If you don't see the Team Explorer pane, open **View\>Team Explorer** from the menu.
 
-    As needed, [Download and install Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
+    Download and install [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
 
 1. Connect to the server and project collection where you want to create your project.
 
@@ -234,7 +233,7 @@ You can create a project from Visual Studio/Team Explorer after you have connect
 
     You can access Team Explorer for free by installing [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or any other Visual Studio version.
 
-    You must connect from a client that is at the same version level as TFS. That is, you must connect to TFS 2015 from a version of Visual Studio 2015.
+    Connect from a client that is at the same version level as TFS. That is, you must connect to TFS 2015 from a version of Visual Studio 2015.
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
@@ -270,9 +269,9 @@ You can create a project from Visual Studio/Team Explorer after you have connect
 
     ![ALM\_CTP\_Finish](_img/IC795956.png)
 
-    If the Next button is active, you can configure your project portal.
+    If the **Next** button is active, you can configure your project portal.
 
-    If the wizard encounters a problem, you receive an error message and a link to the project creation log. Review the [log file](faq-create-project.md#log-file) for specific errors and exceptions.
+    If you have a problem, you receive an error message and a link to the project creation log. Review the [log file](faq-create-project.md#log-file) for specific errors and exceptions.
 
 1. When you're finished, you can see your project in Team Explorer. You can also choose the **Web Access** link to connect to your project from the web portal.
 
@@ -360,7 +359,7 @@ Connect to a project, collection, or server from your web browser.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-org-settings.png)  
 
-	From this page you can choose a project to open the [project settings](../settings/about-settings.md) for that project. Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
+	From this page, you can choose a project to open the [project settings](../settings/about-settings.md) for that project. Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
 
 ::: moniker-end  
 
@@ -378,7 +377,7 @@ Connect to a project, collection, or server from your web browser.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
 
-	From this page you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
+	From this page, you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
 
 ::: moniker-end  
 
@@ -390,7 +389,7 @@ Open the administration overview page by choosing the ![Settings Icon (TFS Web P
 > [!div class="mx-imgBorder"]  
 > ![Overview tab, Project list, Collection settings](_img/create-project/list-projects-2017.png)
 
-From this page you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
+From this page, you can choose a project to open the [project settings](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md). 
 
 ::: moniker-end  
 
@@ -422,7 +421,7 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 
 ### List projects
 
-You can lists project defined for an organization using [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list projects defined for an organization using [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
