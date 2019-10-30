@@ -66,7 +66,7 @@ To restore a project, you must delete project permissions and have the "delete p
 
 1. Open a browser window and enter a URL that uses the following form:  
 
-    <pre><code>http://*ServerName*:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
+    <pre><code>http://ServerName:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
    For example, to connect to the server named **FabrikamPrime**, enter: **http://FabrikamPrime:8080/tfs/**.
 
@@ -74,11 +74,11 @@ To restore a project, you must delete project permissions and have the "delete p
 
 2. Get a list of deleted projects using the following request:
    ```
-   GET http://<i>ServerName</i>:8080/tfs/DefaultCollection/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
+   GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
    ```
 3. Restore a deleted project using the following request:
    ```
-   PATCH http://://<i>ServerName</i>:8080/tfs/DefaultCollection/_apis/projects/{projectId}?api-version=5.0-preview.3
+   PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?api-version=5.0-preview.3
    ```
 
    Request body
