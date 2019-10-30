@@ -11,7 +11,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/29/2019
+ms.date: 10/30/2019
 ---
 
 # Restore a project
@@ -66,7 +66,7 @@ To restore a project, you must delete project permissions and have the "delete p
 
 1. Open a browser window and enter a URL that uses the following form:  
 
-    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
+    <pre><code>http://*ServerName*:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
    For example, to connect to the server named **FabrikamPrime**, enter: **http://FabrikamPrime:8080/tfs/**.
 
