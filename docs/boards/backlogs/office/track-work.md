@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ---
 
 
@@ -77,7 +77,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 You can start work from Excel, Project, or Team Explorer. Your worksheet or project plan can be tied to a list of work items or a work item query.  
 
 > [!IMPORTANT]  
-> To work from Visual Studio 2019/Team Explorer, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> To work from Visual Studio 2019/Team Explorer, you need to [Set the Work Items experience](../../work-items/set-work-item-experience-vs.md) to the legacy option.
   
 To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).  
 
