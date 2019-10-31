@@ -28,6 +28,10 @@ $az devops login --organization https://dev.azure.com/contoso
 Token:
 ```
 
+> [!NOTE]   
+> If you have already signed in with `az login`, then you don't have to provide a token as `az devops` commands now support sign in through `az login`.
+
+
 Once successfully signed in, this would also set your default organization to Contoso, provided there is no default organization configured.
 
 In the above experience, you need to manually enter the token when prompted. However, you might want to login in a non-interactive manner, especially when running automation scripts. For this, you can use one of the following methods:

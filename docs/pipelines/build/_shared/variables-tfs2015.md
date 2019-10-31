@@ -370,7 +370,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.AccessToken</td>
-<td>Available in <strong>TFS 2015.4</strong>. <a href="/azure/devops/pipelines/scripts/powershell.md#oauth" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#oauth)">Use the OAuth token to access the REST API</a>.
+<td>Available in <strong>TFS 2015.4</strong>. <a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

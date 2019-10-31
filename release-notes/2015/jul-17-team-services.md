@@ -48,20 +48,20 @@ You can now setup a continuous integration build in Visual Studio Online for pro
 
 Note: a basic version of this feature has been available since April, but the process to set up the connection to your GitHub repository is now faster and easier with this deployment.
 
-To learn more about this feature, see [Build your GitHub-hosted projects in Visual Studio Online](http://go.microsoft.com/fwlink/?LinkID=618519).
+To learn more about this feature, see [Build your GitHub-hosted projects in Visual Studio Online](https://go.microsoft.com/fwlink/?LinkID=618519).
 
 ## New Visual Studio Online integrations
 
 The number of tools and services that integrate with Visual Studio Online continues to grow! Check them all out in the [Visual Studio Online Integrations](https://marketplace.visualstudio.com/vsts) directory, including these services new to the directory:
 
-- [Aha](http://go.microsoft.com/fwlink/?LinkId=618521)!: helps busy product managers create brilliant product strategy and roadmaps. The Visual Studio Online integration enables you to push work item updates in your team projects to your Aha! products, and to open new work items directly from Aha!
-- [GitHub](http://go.microsoft.com/fwlink/?LinkId=618519): build/continuous integration support for GitHub repositories right from Visual Studio Online.
-- [Power BI](http://go.microsoft.com/fwlink/?LinkID=618520): easily visualize data through dashboards and reports for your team projects. Initially, support for version control (TF Version Control and Git) data is available.
+- [Aha](https://go.microsoft.com/fwlink/?LinkId=618521)!: helps busy product managers create brilliant product strategy and roadmaps. The Visual Studio Online integration enables you to push work item updates in your team projects to your Aha! products, and to open new work items directly from Aha!
+- [GitHub](https://go.microsoft.com/fwlink/?LinkId=618519): build/continuous integration support for GitHub repositories right from Visual Studio Online.
+- [Power BI](https://go.microsoft.com/fwlink/?LinkID=618520): easily visualize data through dashboards and reports for your team projects. Initially, support for version control (TF Version Control and Git) data is available.
 - [TestRail](https://marketplace.visualstudio.com/vsts): provides comprehensive web-based test case management. Create work items in your team project from test result and link test cases to work items.
 
 If you have a tool or service that integrates with Visual Studio Online, we want to know about it! Send an e-mail to [vsointegration@microsoft.com](mailto:vsointegration@microsoft.com).
 
-There you have it. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+There you have it. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Enjoy!
 

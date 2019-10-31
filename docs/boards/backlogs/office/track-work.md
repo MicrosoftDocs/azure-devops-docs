@@ -10,15 +10,60 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/30/2019
 ---
 
 
-# Work in Microsoft Excel or Project 
+# Azure Boards and Office integration 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
+
+::: moniker range=">= azure-devops-2019"
+
+To support your work tracking efforts, you can use Microsoft Excel. You can decide to either work in an online mode where you are connected to either Azure Boards or Azure DevOps Server, or in an offline mode where you access the local computer and document. 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document. 
+
+::: moniker-end
+
+> [!IMPORTANT]  
+> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads).
+
+## Prerequisites 
+
+::: moniker range=">= azure-devops-2019" 
+
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2017 <= tfs-2018" 
+
+- Office Excel 2010 or later version, including Microsoft Office Excel 365
+- Office Project 2010 or later version, including Office Project 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Office Project 2007, Office Project 2010, or Office Project 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+
+::: moniker-end   
+
+To learn more about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility). 
+
   
 > [!IMPORTANT]  
 > You may receive the following error if you install Microsoft Office 2010 on the same computer as a previous version of Office.  
@@ -30,9 +75,12 @@ To support your work tracking efforts, you can use Microsoft Excel and Microsoft
 >  You may be able to resolve this error by repairing Office. You can access the Repair option by opening the **Control Panel**, choose **Uninstall or change a program**, open the context menu for Office 2010, and then choose **Change**. See also, [TFS-Office integration issues](tfs-office-integration-issues.md).  
   
 You can start work from Excel, Project, or Team Explorer. Your worksheet or project plan can be tied to a list of work items or a work item query.  
+
+> [!IMPORTANT]  
+> To work from Visual Studio 2019/Team Explorer, you need to [Set the Work Items experience](../../work-items/set-work-item-experience-vs.md) to the legacy option.
   
-To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).   
-  
+To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).  
+
 ![Open Query Results in Excel](_img/excelseq_1.png "ExcelSeq_1")  
   
 To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).

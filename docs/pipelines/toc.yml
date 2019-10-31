@@ -378,6 +378,7 @@
     href: process/templates.md
   - name: Triggers
     href: build/triggers.md
+    displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
   - name: Users
     href: policies/set-permissions.md 
   - name: Variable groups
@@ -572,6 +573,8 @@
         href: tasks/package/pip-authenticate.md
       - name: Python Twine Upload Authenticate
         href: tasks/package/twine-authenticate.md
+      - name: Universal Packages
+        href: tasks/package/universal-packages.md
       - name: Xamarin Component Restore
         href: /xamarin/cross-platform/troubleshooting/component-nuget
       - name: Previous versions

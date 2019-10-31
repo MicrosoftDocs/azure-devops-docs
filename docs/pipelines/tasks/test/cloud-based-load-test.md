@@ -57,7 +57,7 @@ The agent must have the following capability:
 
 ## Examples
 
-* [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
+* [Scheduling Load Test Execution](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information
 

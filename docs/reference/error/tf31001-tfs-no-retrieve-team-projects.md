@@ -42,7 +42,7 @@ As an administrator, you should check the event logs for the application-tier se
 |TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server*ServerName*. The Team Foundation Server returned the following error: The request failed with HTTP status 503: service unavailable.|Required application pools and services might not be running.  For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).|  
 |An error appears that resembles the following text:<br /><br /> TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server*ServerName*. Team Foundation Server returned the following error: The request failed with HTTP status 503: TF30059: Fatal error when initializing web service.|The TCP/IP protocol for SQL Server is disabled. For information about how to enable the TCP/IP protocol, see [Enable TCP/IP Network Protocol for SQL Server](https://technet.microsoft.com/library/hh231672%28v=sql.110%29.aspx).|  
   
- If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).  
+ If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](https://go.microsoft.com/fwlink/?LinkId=54490).  
   
 <a name="clearcache"></a> 
 ##  To clear the cache on your client computer  

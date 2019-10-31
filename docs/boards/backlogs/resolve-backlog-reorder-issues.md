@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ---
 
 
@@ -22,7 +22,13 @@ ms.date: 06/21/2019
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
+When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the section later in this article, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
+
+In addition to the information provided in this article, you may find the following articles helpful as well:
+
+- [Set up your Backlogs and Boards](set-up-your-backlog.md)  
+- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  - [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
 
 <a id="nested" > </a>
 

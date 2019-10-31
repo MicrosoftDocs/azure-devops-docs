@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 ---
 
 <!---
-Supports the following FWLINK: Additional configuration options are available - changes: http://go.microsoft.com/fwlink/?LinkID=242982 - 
+Supports the following FWLINK: Additional configuration options are available - changes: https://go.microsoft.com/fwlink/?LinkID=242982 - 
 -->
 
 # Additional configuration options post update
@@ -206,7 +206,7 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md).
+For details, see [Upgrade your 2012 project from RTM to Update 2](https://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md).
 
 
 If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../boards/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
@@ -218,4 +218,4 @@ If you've updated a project that was created with an MSF v 5.0 Agile process tem
 
 If you don't update the workflow, then the task board provides only two states, Active and Closed. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.
 
-Also, you might want to apply the workflow updates to the User Story as described in [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). 
+Also, you might want to apply the workflow updates to the User Story as described in [Upgrade your 2012 project from RTM to Update 2](https://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). 

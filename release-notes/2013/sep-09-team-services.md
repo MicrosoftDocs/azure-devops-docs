@@ -50,7 +50,7 @@ You can now create work items directly from [code comments](https://visualstudio
 
 ![Create a bug directly from code comments](_img/9_09_05.png)
 
-That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

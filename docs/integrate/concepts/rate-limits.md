@@ -13,7 +13,7 @@ ms.date: 09/07/2017
 monikerRange: '>= tfs-2018'
 ---
 
-<!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
+<!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Rate limits  
 

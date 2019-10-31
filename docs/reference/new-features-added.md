@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 ---
 
 <!---
-Supports the following FWLINK: Learn more about these configuration changes: http://go.microsoft.com/fwlink/?LinkID=242985 - 
+Supports the following FWLINK: Learn more about these configuration changes: https://go.microsoft.com/fwlink/?LinkID=242985 - 
 -->
 
 # New features added through feature enablement 

@@ -54,7 +54,7 @@ When discussions about work items or pull requests include several people&#8212;
 
 VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/azure/devops/pipelines/symbols/) for more information.
 
-This feature was prioritized based on a top [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
+This feature was prioritized based on a top [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
 
 ### Filter branches for GitHub artifacts
 
@@ -170,7 +170,7 @@ The Graph REST API resources allow developers to write applications that manage 
 
 ### Leave account
 
-In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you are no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there is now an option to leave the account. This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9581676-allow-a-user-to-remove-them-self-from-a-visual-stu).
+In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you are no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there is now an option to leave the account. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9581676-allow-a-user-to-remove-them-self-from-a-visual-stu).
 
 > [!div class="mx-imgBorder"]
 > ![Leave account](_img/130_06.png)
@@ -178,7 +178,7 @@ In the past, only account owners or administrators could remove users from an ac
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
