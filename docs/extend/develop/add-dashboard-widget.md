@@ -135,7 +135,7 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
-For more information about required attributes, see the [Extension manifest reference](manifest?view=azure-devops&viewFallbackFrom=vsts)
+For more information about required attributes, see the [Extension manifest reference](manifest.md)
 
 <a name="vss-methods"></a>
 
