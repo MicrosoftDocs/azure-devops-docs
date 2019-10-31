@@ -51,7 +51,7 @@ When you run a pipeline, the execution of that run pauses before entering a stag
 You can evaluate artifact(s) to be deployed in an environment against custom policies.
 
 > [!NOTE]
-> Currently, this works with container image artifacts and on a Kubernetes resource only
+> Currently, this works with container image artifacts only
 > 
 
 To define a custom policy evaluation over the artifact(s), follow the below steps.
