@@ -17,7 +17,7 @@ ms.date: 10/31/2019
 
 # Dependency Tracker extension for Azure Boards
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 
 <!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency --> 
@@ -36,7 +36,7 @@ For any given dependency, there are two parties involved:
 - **Consumer**: Feature team who has a need and initiates a request for work
 - **Producer**: Feature team who makes a commitment to deliver work 
 
-Each work request and work deliverable is defined as a work item. The work items are linked by the Successor-Predecessor link type or other directional link type. For details about link types, see [Link type reference](../queries/link-type-reference.md) 
+Each work request and work deliverable is defined as a work item. The work items are linked by the Successor-Predecessor link type or other directional link type. For details about link types, see [Link type reference](../../queries/link-type-reference.md) 
 Producing for/Consuming from link.
 
 > [!TIP]   
@@ -147,7 +147,7 @@ A successor is the consumer of the work item, or the item that is dependent on t
 
 ## Filter using keywords, tags, or select field values
 
-You can filter by select field values. To start filtering, choose the ![](../_img/icons/filter-icon.png) filter icon.
+You can filter by select field values. To start filtering, choose the ![](../../_img/icons/filter-icon.png) filter icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Enable kanban field-based filtering](_img/filter.png)
@@ -157,7 +157,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 - **Search title or tag**: Enter a keyword used within a work item title or tag. 
 - **State**: Check one or more check boxes for the  work item states you want to view. 
 - **Work item type**: Check one or more check boxes for the Work item types you want to view. 
-- **Iteration**: Check one or more check boxes for the Iteration Paths you want to view.   All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
+- **Iteration**: Check one or more check boxes for the Iteration Paths you want to view.   All Iteration Paths [selected for the current team](../../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
 - **Priority**: Check one or more check boxes for the Priorities you want to view. 
 - **Partner**: Check one or more check boxes for the leaf node of the Area Paths participating in the dependencies.  
 
@@ -187,9 +187,6 @@ The **Producing Dependencies** view addresses these questions:
 - How many dependencies exist per Consumer team (by area level 3)?
 - What are the State of my producer dependencies?
 
-## Timeline view
-
-- What are all the deliverable dependencies against selected timeline for a given team?
 
 
 ### Producing Dependencies view
@@ -211,10 +208,13 @@ You can view and filter specific dependency views.
 > ![Consuming-View](_img/consuming-dependencies-view.png)
 
 
+## Timeline view
 
-# View the Timeline
+- What are all the deliverable dependencies against selected timeline for a given team?
 
-The Dependency Timeline feature is in Beta.  The Timeline is designed to provide clear sequencing of dependencies across months.
+## View the Timeline
+
+The Dependency Timeline feature is in Beta. The Timeline is designed to provide clear sequencing of dependencies across months.
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
@@ -249,8 +249,6 @@ Notify the consumer (copy the producer) when the producer has moved out the iter
 
 <a id="configuration" /> 
 
-
-
 ## Configuration
 
 You can customize the configuration used in the Dependency Tracker as follows: 
@@ -273,7 +271,7 @@ You can customize the configuration used in the Dependency Tracker as follows:
 	- Work item state(s) associated with neutral (Gray color)
 	- Work item state(s) associates with on track (Green color)
 
-To change the configuration, choose the ![ ](../../_img/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
+To change the configuration, choose the ![ ](../../../_img/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
 
 ### Default configuration syntax
 

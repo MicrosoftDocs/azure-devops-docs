@@ -76,16 +76,12 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md?
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-- name: Integrations
+- name: Integrations and extensions
   items:
-  - name: Azure Boards with Slack
-    href: integrations/boards-slack.md
-  - name: Azure Boards with Teams
-    href: integrations/boards-teams.md
+  - name: First-party extensions
+    href: extensions/toc.yml
   - name: Project Server Integration (Deprecated)
     href: /azure/devops/reference/tfs-ps-sync/index
-- name: First-party extensions
-  href: extensions/toc.yml
 - name: REST API Reference
   items:
   - name: Work Items

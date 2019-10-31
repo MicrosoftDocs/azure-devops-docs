@@ -10,7 +10,7 @@ ms.date: 10/31/2019
 
 # Create a Dependency
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 When one team is dependent on another team for work a dependency needs to be created.  Both teams should track their own work in their own area path and they should create a dependency link between the two work items.
 
