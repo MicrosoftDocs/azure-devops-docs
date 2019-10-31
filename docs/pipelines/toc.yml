@@ -261,7 +261,7 @@
       href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
-  - name: Approvals & checks
+  - name: Approvals & Checks
     href: process/approvals.md
     displayName: approvals, checks
   - name: Artifacts
