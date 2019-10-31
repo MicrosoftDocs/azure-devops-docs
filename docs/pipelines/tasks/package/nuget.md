@@ -69,7 +69,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack" | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
 | `packDestination`<br/>Package folder | Folder where packages will be created. If empty, packages will be created at the source root. |
-| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](http://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
+| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](http://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable' (byEnvVar), you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number' (byBuildNumber), this will use the build number to version your package.<br />**Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)', or if you're using YAML to configure your pipeline, specify the said format as the "name", like shown in the [Versioning schemes]("#versioning-schemes").<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
 | `includeReferencedProjects`<br/>Environment variable | Enter the variable name without $, $env, or %. |
 | `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
 | `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
@@ -89,9 +89,35 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+```YAML
+# Sets your version number to be 1.0.X, where X equals the value from a pipeline or environment variable called "Patch"
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    versioningScheme: byPrereleaseNumber
+    majorVersion: '1'
+    minorVersion: '0'
+    patchVersion: '$(Patch)'
+    packTimezone: utc
+``` 
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`. If you select this option, you also need to set the environment variable, like in the example below.
+
+```YAML
+# Set a variable that contains version number for your NuGet task:
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    versioningScheme: byEnvVar
+    versionEnvVar: PackageVersion
+```
+
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. See an example of this below as YAML. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
+
+```YAML
+# Set build name, if you use byBuildNumber
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+```
 
 ::: moniker-end
 
