@@ -11,6 +11,8 @@ ms.date: 10/31/2019
 
 # Dependency Views
 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+
 ## Consume dependencies
 
 Choose Consuming Dependencies to view the dependencies that one area path is consuming from other area paths. These are all of the dependencies you are receiving from other teams.
