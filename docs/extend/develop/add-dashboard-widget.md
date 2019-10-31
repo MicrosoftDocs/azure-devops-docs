@@ -135,7 +135,6 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
-For more information about required attributes, see the [Extension manifest reference](manifest.md)
 
 <a name="vss-methods"></a>
 
@@ -236,6 +235,8 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
         ]
     }
 ```
+
+For more information about required attributes, see the [Extension manifest reference](manifest.md)
 
 > [!NOTE]
 > The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
