@@ -99,6 +99,33 @@ Whenever the running of a stage is pending for approval, a notification card wit
 
 The app supports all the checks and approval scenarios present in Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence) and teams as approvers. You can approve requests as an individual or on behalf of a team.
 
+## Previews of pipeline URLs
+
+When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
+
+![Pic: URL unfurling](./_img/integrations-slack/build-url-unfurling.png)
+
+
+![Pic: URL unfurling](./_img/integrations-slack/release-url-unfurling.png)
+
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
+
+
+## Remove subscriptions and pipelines from a channel
+
+- Many a time, users want to push notifications from different projects into separate channels. To help clean up a channel quickly, use the below command.
+
+	```
+	/azpipelines removeAll [project url]
+	```
+
+	For example:
+
+	```
+	/azpipelines removeAll  https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. Only project admins can run this command.
+
 ## Commands reference
 
 Here are all the commands supported by the Azure Pipelines app:
@@ -111,6 +138,7 @@ Here are all the commands supported by the Azure Pipelines app:
 | /azpipelines help     | Get help on the slash commands |
 | /azpipelines signin  | Sign in to your Azure Pipelines account |
 | /azpipelines signout  | Sign out from your Azure Pipelines account |
+| /azpipelines removeAll [project url] | Remove all pipelines belonging to a project, including subscriptions, from a channel |
 
 ### Notifications in Private channels
 

@@ -52,9 +52,9 @@ automatically added to Release Management.
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  

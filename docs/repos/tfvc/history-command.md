@@ -53,7 +53,7 @@ Displays the revision history of one or more files or folders. The data is displ
 </tr>
 <tr>
 <td><p><strong>/itemmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="http://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
@@ -77,7 +77,7 @@ Displays the revision history of one or more files or folders. The data is displ
 </tr>
 <tr>
 <td><p><strong>/slotmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="http://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/sort</strong></p></td>

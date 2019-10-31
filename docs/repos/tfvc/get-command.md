@@ -78,7 +78,7 @@ Gets (downloads) either the latest version or a specified version of one or more
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="http://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="https://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>

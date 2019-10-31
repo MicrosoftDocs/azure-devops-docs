@@ -71,7 +71,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
         ...
 
         Note: For more information on work item extensions use the following topic:
-        http://go.microsoft.com/fwlink/?LinkId=816513
+        https://go.microsoft.com/fwlink/?LinkId=816513
         -->
 
         <Extensions>

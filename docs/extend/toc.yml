@@ -1,9 +1,7 @@
 - name: What are extensions?
   href: ./overview.md
-- name: Quickstarts
-  items:
-  - name: Develop a web extension
-    href: get-started/node.md
+- name: Develop a web extension
+  href: get-started/node.md
 - name: Tutorials
   items:
   - name: Create a custom pipelines task

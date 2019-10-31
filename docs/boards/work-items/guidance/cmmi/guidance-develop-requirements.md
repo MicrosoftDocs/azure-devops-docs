@@ -233,12 +233,12 @@ Requirements describe what the stakeholders expect from the product. You should 
   
 -   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
--   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
+-   [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   
--   [Streamlined Object Modeling: Patterns, Rules and Implementation](http://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
+-   [Streamlined Object Modeling: Patterns, Rules and Implementation](https://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
   
--   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](http://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
+-   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](https://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
   
--   [Domain Driven Design: Tackling Complexity in the Heart of Software](http://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
+-   [Domain Driven Design: Tackling Complexity in the Heart of Software](https://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
   
--   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](http://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.
+-   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](https://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.

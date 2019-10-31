@@ -250,6 +250,6 @@ You can [add the users to a group](../../organizations/accounts/add-team-members
 Even for users that are exempt from policy enforcement, the configured policies are still evaluated when changes are added to a pull request.  For exempt users, policy status is advisory only and will not block completion of the pull request.
 
 #### Where can I get more information on advanced policy configurations?
-Check out the [REST API documentation](http://go.microsoft.com/fwlink/?LinkId=526702) for more details.    
+Check out the [REST API documentation](https://go.microsoft.com/fwlink/?LinkId=526702) for more details.    
 
 ::: moniker-end 

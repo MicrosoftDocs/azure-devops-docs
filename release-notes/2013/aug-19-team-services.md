@@ -32,7 +32,7 @@ We’ve also made it easier to work with comments in a specific changeset or com
 
 ![More improvements for code comments](_img/8_19_03.png)
 
-The team is really focused on finishing up TFS 2013 right now. So, in general, new features on the service are going to continue be a bit light for the next few weeks as our focus stays there. We’ve got one more nice “big” new feature to show you before we wrap up the 2013 feature set (and move on to the 2013.1 feature set). Stay tuned for that in the next few weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+The team is really focused on finishing up TFS 2013 right now. So, in general, new features on the service are going to continue be a bit light for the next few weeks as our focus stays there. We’ve got one more nice “big” new feature to show you before we wrap up the 2013 feature set (and move on to the 2013.1 feature set). Stay tuned for that in the next few weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

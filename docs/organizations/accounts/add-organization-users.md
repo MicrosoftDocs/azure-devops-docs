@@ -58,8 +58,8 @@ To give other users access to your organization, add their email addresses.
     ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
-
-   [:::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
+   
+   ![Select the Users tab, and then select Add users](../../_shared/_img/add-new-users.png)
 
 4. Enter information into the form.
 
@@ -131,7 +131,7 @@ ID                                    Display Name          Email               
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
-You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://review.docs.microsoft.com/en-us/azure/devops/organizations/security/permissions-access?view=azure-devops).
+You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
 
 ```CLI
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com

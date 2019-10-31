@@ -349,7 +349,7 @@ This article has been updated from the previous white paper developed in collabo
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and an ALM|DevOps Ranger.  
-- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
+- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](https://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
 - Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM|DevOps Ranger), Richard Hundhausen (independent consultant, ALM|DevOps Ranger) and Bill Heys (independent consultant, ALM|DevOps Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM|DevOps Ranger).  
 
 

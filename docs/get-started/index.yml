@@ -6,7 +6,6 @@ summary: Start using Azure DevOps to collaborate on code, build and deploy apps,
 metadata:
   title: Learn how to start using Azure DevOps
   description: Start using Azure DevOps to collaborate on code, build and deploy apps, or plan and track work.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-new-user
   ms.topic: landing-page 

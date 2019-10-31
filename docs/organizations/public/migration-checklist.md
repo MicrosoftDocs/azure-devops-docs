@@ -91,6 +91,11 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 * Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
 
+## Artifacts
+
+* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
+* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
+
 ## Extensions
 
 Are any extensions vital to your project's experience?

@@ -1,8 +1,8 @@
 ---
-title: Buy client access licenses for Azure DevOps Server or access to Azure Test Plans
+title: Buy access to Azure DevOps Server, Azure Test Plans
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18
-description: Steps for administrators to follow on how to buy client access licenses (CALs) or access to Azure Test Plans 
+description: Steps for how to buy monthly access to Azure DevOps Server or Azure Test Plans 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2019
+ms.date: 10/23/2019
 monikerRange: '>= tfs-2015 <= azure-devops-2019'
 ---
 # Buy access to Azure DevOps Server or Azure Test Plans
@@ -50,7 +50,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
-2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, pay for Basic + Test Plan users to your organization.  
+2. Based on the amount of users who need Azure Test Plans access in Azure DevOps Server, [pay for Basic + Test Plan users](buy-basic-access-add-users.md#assign-users-basic-or-basic--test-plans) in your organization.  
 
   These users are invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans or Microsoft Test Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). 
 
