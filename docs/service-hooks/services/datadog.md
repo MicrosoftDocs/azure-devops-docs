@@ -6,13 +6,15 @@ title: Create a service hook for Azure DevOps Services and TFS with Datadog
 description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: mijacobs
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/31/2019
 ---
 
 # Create a service hook for Azure DevOps Services and TFS with Datadog
+
+[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
 
 Create events and metrics in Datadog in response to events from Azure DevOps Services. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Accepts all Azure DevOps event types.
 
@@ -51,7 +53,7 @@ Create events and metrics in Datadog in response to events from Azure DevOps Ser
 
 ### Q: Can I create service hook subscriptions programmatically?
 
-A: Yes. See details on configuring service hooks programmatically [here]( https://docs.microsoft.com/azure/devops/service-hooks/create-subscription?view=azure-devops). Submit to either of the following Datadog endpoints: 
+A: Yes. See details on configuring service hooks programmatically [here](https://docs.microsoft.com/azure/devops/service-hooks/create-subscription?view=azure-devops). Submit to either of the following Datadog endpoints: 
 - **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
 
