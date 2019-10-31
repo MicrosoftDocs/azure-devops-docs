@@ -11,6 +11,9 @@ ms.date: 10/31/2019
 
 # Dependency Risk Graph
 
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+
+
 Dependency Risk Graph is a bird's eye view of how dependencies flow from the Producer to all Consumers or to the Consumer from all Producers.  The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated.  In addition the risk graph view demonstrates the value of linking dependencies.
 
 ![Dependency Tracker Risk Graph](_img/Risk-graph.png)

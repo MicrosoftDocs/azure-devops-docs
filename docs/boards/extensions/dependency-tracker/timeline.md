@@ -13,6 +13,8 @@ ms.date: 10/31/2019
 
 The Dependency Timeline feature is in Beta.  The Timeline is designed to provide clear sequencing of dependencies across months.
 
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+
 ## Features
 
 - Red arrows highlight when the sequencing is out of order and a predecessor is scheduled to be complete after a successor
