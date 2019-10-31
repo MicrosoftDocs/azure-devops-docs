@@ -9,7 +9,7 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/29/2019
+ms.date: 11/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -74,3 +74,26 @@ Specify the authorization scope for a build job. Select:
 * **Project Collection** if the build needs access to multiple projects.
 
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
+
+- [Scoped build identities](#scoped-build-identities)
+- [Managing Permissions](#managing-permissions)
+
+### Scoped build identities
+
+There are 2 built-in identities that we use to execute pipelines. A collection-scoped one, and a project-scoped one. These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
+ 
+The collection-scoped identity has the name:
+- Project Collection Build Service ({OrgName})
+- Example: `Project Collection Build Service (mseng)`
+ 
+The project-scoped identity has the name:
+- `{Project Name} Build Service ({Org Name})`
+- Example: `AzureDevOps Build Service (mseng)`
+
+### Managing Permissions
+
+One result for forcing project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
+ 
+A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
+ 
+Example: Giving permissions to the mseng/AzureDevOps project-scoped build identity in the mseng/Kusto project:
