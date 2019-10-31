@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/07/2019
+ms.date: 10/31/2019
 ---
 
 # Add a dashboard widget
@@ -109,7 +109,7 @@ Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS
 ### Step 3: Your JavaScript
 
 We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a <code>&lt;script&gt;</code> element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
-The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures. 
+The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures.
 In our case, below is the code that would print &quot;Hello World&quot; in the widget. Add this <code>script</code> element in the <code>head</code> of the HTML.
 
 ```html    
@@ -135,6 +135,7 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
+
 <a name="vss-methods"></a>
 
 `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
@@ -234,6 +235,8 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
         ]
     }
 ```
+
+For more information about required attributes, see the [Extension manifest reference](manifest.md)
 
 > [!NOTE]
 > The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
@@ -335,11 +338,14 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 
 <a id="add-from-catalog" />
 
-### Step 7: Add Widget From the Catalog
+### Step 7: Add widget from the catalog
 
-Now, go to your team dashboard at https://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
-Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
-Choose your widget and select the 'Add' button to add it to your dashboard.
+1. Go to your project in Azure DevOps, `http://dev.azure.com/{yourOrganization}/{yourProject}`
+2. Select **Overview**, and then select **Dashboards**.
+3. Choose **Add a widget**.
+4. Highlight your widget, and then select **Add**.
+   
+   The widget appears on your dashboard.
 
 <a id="part-2" />
 
