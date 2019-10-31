@@ -260,6 +260,7 @@ We use [Mocha](https://mochajs.org/) as the test driver in this walk through.
 
 ```
 npm install mocha --save-dev -g
+npm install sync-request --save-dev
 npm install @types/mocha --save-dev
 ```
 
