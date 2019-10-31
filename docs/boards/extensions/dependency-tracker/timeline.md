@@ -13,10 +13,8 @@ ms.date: 10/31/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-
 The Dependency Timeline feature is in Beta.  The Timeline is designed to provide clear sequencing of dependencies across months.
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
 ## Features
 
