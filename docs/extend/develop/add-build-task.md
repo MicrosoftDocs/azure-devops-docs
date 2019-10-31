@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 ---
 
 # Add a build or release task
@@ -294,6 +294,10 @@ describe('Sample task tests', function () {
     });    
 });
 ```
+
+> [!TIP]
+> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the buildAndReleaseTask folder with the following command.
+>  `npm i --save-dev sync-request`
 
 ### Create success test
 
