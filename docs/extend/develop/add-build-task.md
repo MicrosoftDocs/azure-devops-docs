@@ -70,9 +70,6 @@ Below are the steps to create a build or release task extension and put it on th
 
 Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
 
-> [!TIP]
-> For information on automating most of the customer task folder creation, see this [gist on GitHub](https://gist.github.com/ricardoserradas/afe9cf365023e15e8f0490a108fa9dfd/#file-initiate-pipeline-task-folder-md).
-
 ### Create task scaffolding
 
 The first step is to create the folder structure for the task and install the required libraries and dependencies.
