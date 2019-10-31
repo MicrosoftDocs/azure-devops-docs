@@ -11,7 +11,7 @@ ms.date: 10/31/2019
 monikerRange: 'azure-devops'
 ---
 
-# Authoring Evaluation Policies
+# Authoring Artifact Evaluation Policies
 
 Adding a Check to Evaluate Artifact requires the custom policy to be configured. This guide describes how custom policies can be created.
 
@@ -26,18 +26,20 @@ Familiarize yourself with [Rego](https://www.openpolicyagent.org/docs/latest/pol
 
 Below are the sample policies shared. Based on your requirements, you can build your own set of policies.
 
-### checkBuilder
+## Check specific project/pipeline 
 
-This policy checks if the images are built by Azure Pipelines.
+This policy checks if the images are built by Azure Pipelines and Pipeline-foo. For this to work, the pipeline definition should override the name field to something like: **AzureDevOps_$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)**. See more about naming pipeline runs [here.](../process/run-number.md)
 
 ```
+allowedBuilder := "AzureDevOps_pipeline-foo"
+
 checkBuilder[errors] {
 	trace("Check if images are built by Azure Pipelines")
 	resourceUri := values[index].build.resourceUri	
 	image := fetchImage(resourceUri)
 	builder := values[index].build.build.provenance.builderVersion
 	trace(sprintf("%s: builder", [builder]))
-	not startswith(builder, "AzureDevOps")
+	not startswith(builder, "allowedBuilder")
 	errors := sprintf("%s: image not built by Azure Pipeline [%s]", [image,builder])
 }
 
@@ -52,11 +54,16 @@ fetchImage(uri) = img {
 }
 ```
 
-### checkregistries
+## Check whitelisted registries
 
-This policy checks for all the Whitelisted registries.
+This policy checks if the images are from whitelisted registries only.
 
 ```
+whitelist = {
+ "gcr.io/myrepo",
+ "raireg1.azurecr.io"
+}
+
 checkregistries[errors] {
 	trace(sprintf("Whitelisted registries: %s", [concat(", ", whitelist)]))
 	resourceUri := values[index].image.resourceUri
@@ -77,11 +84,16 @@ fetchImage(uri) = img {
 }
 ```
 
-### checkExposedPorts
+## Check forbidden ports
 
-This policy checks for all the forbidden exposed ports in the registry.
+This policy checks for any forbidden ports exposed in the container image.
 
 ```
+forbiddenPorts = {
+	"80",
+	"22"
+}
+
 checkExposedPorts[errors] {
 	trace(sprintf("Checking for forbidden exposed ports: %s", [concat(", ", forbiddenPorts)]))
 	layerInfos := values[index].image.image.layerInfo
@@ -106,11 +118,16 @@ fetchImage(uri) = img {
 
 ```
 
-### checkDeployedEnvironments
+### Check prior deployments
 
-This policy checks if the image has been pre-deployed to one of the environments.
+This policy checks if the image has been pre-deployed to one/more of the environments before being deployed to specific environment/resources with Check configured. 
 
 ```
+predeployedEnvironments = {
+	"env/resource1",
+	"env2/resource3"
+}
+
 checkDeployedEnvironments[errors] {
 	trace(sprintf("Checking if the image has been pre-deployed to one of: [%s]", [concat(", ", predeployedEnvironments)]))
 	deployments := values[index].deployment
