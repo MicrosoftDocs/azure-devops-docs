@@ -5,7 +5,7 @@ ms.prod: devops
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -71,7 +71,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
         ...
 
         Note: For more information on work item extensions use the following topic:
-        http://go.microsoft.com/fwlink/?LinkId=816513
+        https://go.microsoft.com/fwlink/?LinkId=816513
         -->
 
         <Extensions>

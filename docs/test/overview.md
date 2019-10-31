@@ -5,7 +5,7 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/26/2019

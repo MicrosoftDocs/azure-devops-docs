@@ -7,10 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: kaelli
-ms.reviewer: danhellem
+ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 06/28/2019
 ---

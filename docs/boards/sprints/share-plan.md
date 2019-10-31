@@ -6,7 +6,7 @@ description: Share sprint plan working with Scrum methods
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

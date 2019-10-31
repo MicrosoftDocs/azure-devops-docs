@@ -5,7 +5,7 @@ description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -59,7 +59,7 @@ To create a pull request in Azure Repos:
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/boards/index.md) to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/queries/link-work-items-support-traceability.md#work-items-linked-to-git-code-development) to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 

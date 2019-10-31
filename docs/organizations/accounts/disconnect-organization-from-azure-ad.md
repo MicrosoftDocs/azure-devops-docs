@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/14/2019

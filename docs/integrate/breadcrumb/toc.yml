@@ -3,5 +3,5 @@
   topicHref: /azure/devops/index
   items: 
   - name: Marketplace & extensibility
-    tocHref: /azure/devops/marketplace/
+    tocHref: /azure/devops/integrate/
     topicHref: /azure/devops/marketplace-extensibility/index

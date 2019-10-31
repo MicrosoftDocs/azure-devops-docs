@@ -5,8 +5,9 @@ description: Use keyboard shortcuts to interact with delivery plans in Azure Boa
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ms.date: 11/19/2018

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Troubleshoot why you're receiving automatic notification emails from Azure DevOps Services or Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley 
 author: chcomley

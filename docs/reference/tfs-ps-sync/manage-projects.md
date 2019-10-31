@@ -5,8 +5,9 @@ description: Understand how to manage projects when synchronizing data between T
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e5cf789c-2edb-4d84-aecd-f4d09fc854da
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -63,7 +64,7 @@ Project managers and software development teams can use the tools they prefer, w
 |**Add or remove a work item type from participating in data synchronization**. You can define the types of work items when you associate a project plan to a project, and you can later add or remove types. You can also list the types of work items that are mapped for a project.|[Specify work item types](specify-wits-to-synchronize.md)|  
 |**Add fields to or remove fields from participating in data synchronization**. You can add fields and specify how they synchronize by customizing the field mapping file. For example, you can share data that does not relate to schedules (such as cost centers, team names, or health status) if you add the fields that store these types of data to the mapping file.<br /><br /> You can map fields that are associated with pick lists in Team Foundation. However, you must create lookup tables in Project Server to match the pick lists. You cannot automatically synchronize pick lists and lookup tables.|[Customize the field mapping](customize-field-mapping-tfs-project-server.md)|  
 |**Change the configuration for synchronization**. You can remove components that you have configured to participate in data synchronization. However, you should always follow the recommended reconfiguration sequence when you remove such components.|[Remove a component](remove-component-from-synchronization.md)|  
-|**Add project members to the enterprise resource pools**. To assign and manage Team Foundation users as resources in Project, you must add them to the enterprise resource pool. To make this process easier, you can configure Project Server to automatically synchronize the security groups with groups that have the same name in Active Directory. Also, you can synchronize users and resources in Project Server with the users in Active Directory across multiple domains and forests.|See the following pages on the Microsoft website:<br /><br /> -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2013)](https://msdn.microsoft.com/library/jj819320.aspx)<br />-   [Manage users, groups, and categories in Project Server 2013](https://msdn.microsoft.com/library/cc197571.aspx)|  
+|**Add project members to the enterprise resource pools**. To assign and manage Team Foundation users as resources in Project, you must add them to the enterprise resource pool. To make this process easier, you can configure Project Server to automatically synchronize the security groups with groups that have the same name in Active Directory. Also, you can synchronize users and resources in Project Server with the users in Active Directory across multiple domains and forests.|See the following pages on the Microsoft website:<br /><br /> -   [Add resources to the enterprise resource pool](https://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2013)](https://msdn.microsoft.com/library/jj819320.aspx)<br />-   [Manage users, groups, and categories in Project Server 2013](https://msdn.microsoft.com/library/cc197571.aspx)|  
   
 ## Related articles  
  [Overview of integration features](overview-tfs-project-server-integration.md)   

@@ -6,17 +6,17 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 08/24/2019
+ms.date: 10/17/2019
 ---
 
 
 
-# Tasks supported by Backlogs, Boards, & Taskboards, 
+# Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

@@ -5,7 +5,7 @@ description: Modify or add a work item type to support queries, reports, and wor
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -273,7 +273,7 @@ Other related topics or resources:
 - [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
 - [Customize cards on boards](../boards/boards/customize-cards.md)  
-- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+- [Team Foundation Server - Project Management & Work Item forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 
 
 ## Rename a WIT (On-premises XML) 

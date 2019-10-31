@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.date: 10/17/2017
 ---

@@ -5,11 +5,11 @@ description: Use Azure Pipelines to build and deploy your apps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: elbatk
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 author: steved0x
 monikerRange: '>= tfs-2017'
 ms.date: 09/26/2019

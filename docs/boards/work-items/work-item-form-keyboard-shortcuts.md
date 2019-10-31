@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference
 monikerRange: '>= tfs-2013'

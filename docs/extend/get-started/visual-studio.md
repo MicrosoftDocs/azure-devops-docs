@@ -5,7 +5,7 @@ title: Create your first Extension with Visual Studio | Extensions for Azure Dev
 description: Use Visual Studio with ASP.NET to create your first extension for Azure DevOps Services.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

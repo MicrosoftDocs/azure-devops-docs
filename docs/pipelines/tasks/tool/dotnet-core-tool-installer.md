@@ -5,10 +5,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 5/2/2019
+ms.date: 10/21/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -23,10 +23,22 @@ You can also use this task to change the version of .NET Core used in subsequent
 
 One other reason to use tool installer is if you want to decouple your pipeline from our update cycles to help avoid a pipeline run being broken due to a change we make to our agent software.
 
+### What's New
+
+- Support for installing multiple versions side by side.
+
+- Support for patterns in version to fetch latest in minor/major version. Foe example, you can now specify 2.2.x to get the latest patch.
+
+- Perfrom Multi-level lookup. This input is only applicable to Windows based agents. It configures the .Net Core's host process behavior for looking for a suitable shared framework on the machine. For more information, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+
+- Installs NuGet version 4.4.1 and sets up proxy configuration if present in NuGet config.
+
 ## Task Inputs
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>packageType</code><br/>Package to install</td><td>Please select whether to install only runtime or SDK<br/>Default value: sdk</td></tr>
+<tr><td><code>useGlobalJson</code><br/>Use global json</td><td>Select this option to install all SDKs from global.json files. These files are searched from <b>system.DefaultWorkingDirectory.</b> You can change the search root path by setting working directory input</td></tr>
+<tr><td><code>workingDirectory</code><br/>Working Directory</td><td>Specify path from where global.json files should be searched when using `Use global json`. If empty, <b>system.DefaultWorkingDirectory</b> will be considered as the root path</td></tr>
 <tr><td><code>version</code><br/>Version</td><td>Specify version of .NET Core SDK or runtime to install.<br/>Versions can be given in the following formats<li>2.x   =&gt; Install latest in major version.</li><li>2.2.x =&gt; Install latest in major and minor version</li><li>2.2.104 =&gt; Install exact version</li><br/>Find the value of <code>version</code> for installing SDK/Runtime, from the releases.json. The link to releases.json of that major.minor version can be found in <a href="https://github.com/dotnet/core/blob/master/release-notes/releases-index.json" data-raw-source="[**releases-index file.**](https://github.com/dotnet/core/blob/master/release-notes/releases-index.json)"><strong>releases-index file.</strong></a>. Like link to releases.json for 2.2 version is <a href="https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json" data-raw-source="https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json">https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json</a></td></tr>
 <tr><td><code>includePreviewVersions</code><br/>Include Preview Versions</td><td>Select if you want preview versions to be included while searching for latest versions, such as while searching 2.2.x. This setting is ignored if you specify an exact version, such as: 3.0.100-preview3-010431 <br/>Default value: false</td></tr>
 <tr><td><code>installationPath</code><br/>Path To Install .NET Core</td><td>Specify where .NET Core SDK/Runtime should be installed. Different paths can have the following impact on .Net&#39;s behavior.<li>$(Agent.ToolsDirectory): This makes the version to be cached on the agent since this directory is not cleanup up across pipelines. All pipelines running on the agent, would have access to the versions installed previously using the agent.</li><li>$(Agent.TempDirectory): This can ensure that a pipeline doesn&#39;t use any cached version of .NET core since this folder is cleaned up after each pipeline.</li><li>Any other path: You can configure any other path given the agent process has access to the path. This will change the state of the machine and impact all processes running on it.<br/>Note that you can also configure Multi-Level Lookup setting which can configure .NET host&#39;s probing for a suitable version. <br/>Default value: $(Agent.ToolsDirectory)/dotnet</td></tr>

@@ -5,7 +5,7 @@ ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

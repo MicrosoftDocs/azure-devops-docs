@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Areas and Iterations | REST API Reference for Team Foundation Server
 description: Work with work item areas and iterations programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -6,7 +6,7 @@ ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 

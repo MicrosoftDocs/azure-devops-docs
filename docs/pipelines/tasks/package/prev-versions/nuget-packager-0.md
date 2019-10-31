@@ -5,7 +5,7 @@ description: Learn all about how you can produce NuGet packages when building co
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/10/2016

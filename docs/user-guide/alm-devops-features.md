@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
@@ -1048,7 +1048,7 @@ pipelines\tasks\build\_img
 <p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
 <p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/_img/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true" alt=""/>&#160;&#160;<a href="http://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -1782,7 +1782,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="http://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](http://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Brazilian Portuguese</a></li>

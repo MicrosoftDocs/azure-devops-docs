@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/12/2019
@@ -132,5 +132,5 @@ Enabling IIS Basic Authentication invalidates using PATs for TFS. Learn more abo
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-5.1) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
+A: No. You can use basic auth with most of them, but [organizations and profiles](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
 

@@ -7,19 +7,22 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 monikerRange: ">= tfs-2013"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 10/16/2019
 ---
 
 # Create and save managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
+Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
+
+> [!NOTE]  
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
 If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -178,28 +181,29 @@ You can add one new clause for each work item field in order to refine your sear
 
 Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
 
-As the following example shows, the grouped clauses are translated to the corresponding logical expression. The first expression returns work items that are priority 1, as well as all active bugs of any priority. The second expression returns all active priority 1 work items, plus all priority 1 bugs whether they are active or not.
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Grouped clauses|Logical expression|
-> |---|---|
-> |![ ](_img/query-fields-operators-values-variables/IC425364.png)|Priority=1 OR (Work Item Type=Bug AND State=Active)|
-> |![ ](_img/query-fields-operators-values-variables/IC425365.png)|Priority=1 AND (Work Item Type=Bug OR State=Active)|
-
-
 <a id="group-clauses" /> 
 
 ## Group clauses
 
 Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
 
-In the next example, the first expression returns all work items that are priority 1 and all active bugs of any priority. The second expression returns all active priority 1 work items and all priority 1 bugs, whether they are active or not.
+As the following examples show, the grouped clauses are translated to the corresponding logical expression.
+
+> [!TIP]   
+> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which will allow you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Grouped clauses  | Logical expression         |
-> | ----------------- | --------------------|
-> | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
-> | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
+> |Query | Grouped clauses|Logical expression|
+> |---|---|---|
+> |1| ![ ](_img/using-queries/and-or-clause-no-grouping.png)|![ ](_img/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |2| ![ ](_img/using-queries/and-or-clause-with-grouping.png)|![ ](_img/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |3| ![ ](_img/using-queries/and-or-clause-reverse-grouping.png)|![ ](_img/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+
+These queries return work items that are type Bug and meet the following logical expressions:  
+- **Query 1**: AND State=Active OR Assigned to @Me  
+- **Query 2**: AND (State=Active OR Assigned to @Me)  
+- **Query 3**: OR (State=Active AND Assigned to @Me)  
+
 
 To group one or more clauses, select them and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
 
@@ -212,7 +216,7 @@ You can also group several grouped clauses by checking the boxes of each clause 
 > ![Group multiple query clauses](_img/using-queries/multiple-clauses.png)
 
 
-If your query results do not return your expected set of work items, follow these steps: 
+If your query results don't return expected results, follow these steps: 
 
 - Make sure that each clause is defined as you intended.  
 - Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.  

@@ -5,7 +5,7 @@ ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -57,7 +57,7 @@ The agent must have the following capability:
 
 ## Examples
 
-* [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
+* [Scheduling Load Test Execution](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information
 

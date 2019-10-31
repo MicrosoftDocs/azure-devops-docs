@@ -5,7 +5,7 @@ ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -24,7 +24,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 ### Features
 
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
-* Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
+* Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
 
 

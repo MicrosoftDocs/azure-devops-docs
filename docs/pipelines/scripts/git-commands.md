@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 03/22/2019
@@ -43,7 +43,7 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <div class="collapse" id="expando-version-control-permissions">
 
 <ul>
-<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
+<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol</code></li>
 
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 </ul>

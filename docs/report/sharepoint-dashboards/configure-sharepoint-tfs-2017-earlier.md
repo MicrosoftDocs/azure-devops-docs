@@ -5,10 +5,11 @@ description: Configure TFS/SharePoint Integration for TFS 2017 and earlier versi
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 11/16/2017
 ---
 
@@ -81,10 +82,10 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 I RECOMMEND WE REMOVE THIS SECTION AS IT POINTS TO 2010 CONTENT. 
 
-This link - http://go.microsoft.com/fwlink/?LinkId=185224 - goes to a post that contains links to content that are 7 years old. Not sure how useful that is. 
+This link - https://go.microsoft.com/fwlink/?LinkId=185224 - goes to a post that contains links to content that are 7 years old. Not sure how useful that is. 
 
 
-The following topics should be sufficient to help you through the general process of integrating SharePoint Products with TFS, but other resources might help you understand the specific steps that your deployment might require. For the most recent information, see the following forum post on the Microsoft Web site: [SharePoint Integration with Team Foundation Server - Important Information](http://go.microsoft.com/fwlink/?LinkId=185224).
+The following topics should be sufficient to help you through the general process of integrating SharePoint Products with TFS, but other resources might help you understand the specific steps that your deployment might require. For the most recent information, see the following forum post on the Microsoft Web site: [SharePoint Integration with Team Foundation Server - Important Information](https://go.microsoft.com/fwlink/?LinkId=185224).
 
 
 

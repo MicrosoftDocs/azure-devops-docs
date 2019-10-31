@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Track the rate at which your team is discovering and resolving bugs - Team Foundation Server  
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.date: 10/17/2017
 ---

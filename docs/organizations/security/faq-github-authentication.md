@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2019

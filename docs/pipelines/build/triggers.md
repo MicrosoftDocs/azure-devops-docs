@@ -4,7 +4,7 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -75,9 +75,9 @@ In addition to specifying branch names in the `branches` lists, you can also con
 trigger:
   branches:
     include:
-      refs/tags/{tagname}
+      - refs/tags/{tagname}
     exclude:
-      refs/tags/{othertagname}
+      - refs/tags/{othertagname}
 ```
 
 If you don't specify any triggers, the default is as if you wrote:

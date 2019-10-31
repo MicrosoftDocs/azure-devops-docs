@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 10/16/2019
 ---
 
 # Query by date or current iteration
@@ -88,6 +88,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 
 #### Notes:
+
 1. The <strong>@StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear</strong> macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
 2. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
@@ -97,7 +98,10 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. 
+
+> [!IMPORTANT]  
+> Enter dates in the **Date Pattern** you set for your personal profile. See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.   
 
 <table valign="top">
 <tbody valign="top">
@@ -162,6 +166,8 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tr>
 </tbody>
 </table>
+
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -240,6 +246,9 @@ Azure Boards adds a team parameter when you select the <strong>@CurrentIteration
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
+
+> [!TIP]  
+> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it]((../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 

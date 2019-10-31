@@ -5,7 +5,7 @@ description: Describes how Analytics views work with Azure DevOps and Power BI i
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

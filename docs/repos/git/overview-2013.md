@@ -5,7 +5,7 @@ description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

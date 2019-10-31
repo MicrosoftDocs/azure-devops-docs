@@ -5,7 +5,7 @@ description: Add & update work items, view work tracking progress with Stakehold
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -62,7 +62,7 @@ You must have been added to the Azure DevOps project and been granted Stakeholde
 
 1. Choose the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
 	::: moniker range="azure-devops"  
-	`http://dev.azure.com/OrganizationName/ProjectName`
+	`https://dev.azure.com/OrganizationName/ProjectName`
 	::: moniker-end
 	::: moniker range="<= azure-devops-2019"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	

@@ -5,7 +5,7 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
@@ -22,7 +22,7 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 
 ## Prerequisites
 * An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
+* Install [VS Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
 To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.
@@ -242,7 +242,7 @@ Now that your server can receive service hook events when new PRs are created, u
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"
@@ -282,7 +282,7 @@ Now that your server can receive service hook events when new PRs are created, u
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"

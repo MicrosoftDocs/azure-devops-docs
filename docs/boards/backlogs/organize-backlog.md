@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

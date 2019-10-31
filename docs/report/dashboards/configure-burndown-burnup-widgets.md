@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
@@ -18,7 +18,6 @@ ms.date: 07/08/2019
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create burndown or burnup charts for any type of scope, worked on by any number of teams, within any defined period of time. Burndown charts focus on remaining work within a specific time period, while Burnup charts focus on completed work. 
-
 
 Both burndown and burnup charts help answer the question: **Are we on track to complete this set of work by the end date?**
 

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn about events and subscriptions in Azure DevOps Services and TFS, and how they are used to create notifications to users
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

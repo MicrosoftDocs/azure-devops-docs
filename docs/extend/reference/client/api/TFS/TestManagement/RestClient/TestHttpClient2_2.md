@@ -4,7 +4,7 @@ ms.assetid: f94cc434-0936-ae2b-eddc-54eb9c5d21ea
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
+ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
 
-
+[!INCLUDE [rest-api-docs-rollout](../../../../../../../_shared/rest-api-docs-rollout.md)]
 
 Module path: `TFS/TestManagement/RestClient`
 

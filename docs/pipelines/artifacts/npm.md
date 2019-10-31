@@ -8,7 +8,7 @@ ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'

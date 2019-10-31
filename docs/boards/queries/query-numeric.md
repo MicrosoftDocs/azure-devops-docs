@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -218,6 +218,8 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 
 For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
 
+
+<a id="fields" />
 
 ## Fields used to estimate and track work
 

@@ -6,7 +6,7 @@ description: Understand how permissions and roles are used to securely manage bu
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 02/12/2018

@@ -6,8 +6,9 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/2017
 ---
 

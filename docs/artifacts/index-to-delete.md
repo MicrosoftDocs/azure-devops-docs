@@ -8,7 +8,7 @@ ms.topic: landing-page
 ms.prod: devops 
 ms.technology: devops-artifacts
 ms.assetid:  
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: kaelli 
 ms.date: 05/6/2019
 featureFlags:

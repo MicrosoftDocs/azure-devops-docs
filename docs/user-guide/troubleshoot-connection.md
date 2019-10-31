@@ -6,7 +6,7 @@ description: Follow these steps to resolve connection issues with Azure DevOps S
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -117,7 +117,7 @@ When this problem occurs, a blank screen flashes several times. Then, one of the
 > 
 > TF31002: Unable to connect to this Team Foundation Server
 
-To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
+To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](https://visualstudio.microsoft.com/downloads).
 
 Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 

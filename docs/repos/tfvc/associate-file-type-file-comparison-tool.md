@@ -5,7 +5,7 @@ description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -53,7 +53,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     -   **%7**: Label ("friendly name") of the target file.
 
     > [!TIP]
-    > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](http://go.microsoft.com/fwlink/?LinkID=200171).
+    > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](https://go.microsoft.com/fwlink/?LinkID=200171).
 
     **Use white space to delimit the arguments.**  
     For example, you might specify the following syntax to compare two files:

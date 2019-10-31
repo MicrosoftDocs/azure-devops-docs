@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'

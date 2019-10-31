@@ -5,7 +5,7 @@ ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

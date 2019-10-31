@@ -5,7 +5,7 @@ description: How Analytics for Azure DevOps manages changes to the OData API
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

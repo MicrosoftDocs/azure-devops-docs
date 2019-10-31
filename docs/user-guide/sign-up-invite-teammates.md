@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/15/2019

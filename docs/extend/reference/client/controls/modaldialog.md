@@ -4,11 +4,11 @@ description: Use the modal dialog control to collect user input or display messa
 ms.assetid: 1ABD1859-0BF4-4546-A750-1786B0227E0A
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

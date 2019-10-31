@@ -3,12 +3,18 @@
   href: index.yml
 - name: Reporting roadmap 
   href: powerbi/reporting-roadmap.md
-- name: Dashboards, Charts, Reports, & Widgets   
+- name: Dashboards, charts, reports, & widgets   
   href: dashboards/toc.yml  
-- name: Power BI Integration 
+- name: Power BI integration 
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
+- name: Project portal & process guidance
+  items:
+  - name: Configure or add a project portal
+    href: ./sharepoint-dashboards/configure-or-add-a-project-portal.md 
+  - name: Configure or redirect process guidance
+    href: ./sharepoint-dashboards/configure-or-redirect-process-guidance.md 
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
 - name: SharePoint Integration (Deprecated)  
@@ -35,6 +41,12 @@
     href: ../reference/xml/support-rollup-of-work-and-other-fields.md
   - name: Work item field index  
     href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Reportable fields reference 
+    href: ../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Change reporting attributes
+    href: ../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Server Administration 
+    href: /azure/devops/server/server/index
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
   - name: Power BI Documentation

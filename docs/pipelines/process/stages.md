@@ -6,7 +6,7 @@ ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 05/03/2019
@@ -222,8 +222,8 @@ YAML is not supported in this version of TFS.
 You control the dependencies by setting the triggers on each stage of the release pipeline:
 
 * Without a trigger, a stage will not start unless it is started manually.
-* With a **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
-* With a **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
+* With an **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
+* With an **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
 
 * * *
 <h2 id="conditions">Conditions</h2>

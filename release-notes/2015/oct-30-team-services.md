@@ -14,7 +14,7 @@ author: yukom
 
 ## Dashboards
 
-I’m excited to announce that we have released our [dashboards feature](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/26/agile-project-management-futures-august-2015.aspx) in Visual Studio Online! Dashboards are a customizable canvas and replace your existing Team Overview page. They enable your team to visualize status and monitor progress across your project.
+I’m excited to announce that we have released our [dashboards feature](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/26/agile-project-management-futures-august-2015.aspx) in Visual Studio Online! Dashboards are a customizable canvas and replace your existing Team Overview page. They enable your team to visualize status and monitor progress across your project.
 
 ![Dashboards](_img/10_30_01.png)
 
@@ -44,7 +44,7 @@ We've simplified test result data cleanup and removed the dependency on tools li
 
 ![Test results retention policies](_img/10_30_04.png)
 
-We are also integrating test retention with the retention policy of the new build system (Build vNext) by adding functionality to delete test results when builds are deleted. More information about this feature is available on the [Visual Studio devops blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/08/test-result-data-retention-with-team-foundation-server-2015.aspx).
+We are also integrating test retention with the retention policy of the new build system (Build vNext) by adding functionality to delete test results when builds are deleted. More information about this feature is available on the [Visual Studio devops blog](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/08/test-result-data-retention-with-team-foundation-server-2015.aspx).
 
 ## Reorder and re-parent tasks from the Kanban board
 
@@ -64,7 +64,7 @@ For those of you eager to get started writing [extensions](/azure/devops/integra
 
 Last sprint we released a preview of the new work item form. Since then, we’ve received feedback that the state field feels too much like a label, which causes discoverability issues. So we’ve enabled state coloring in the new work item form to differentiate the first, middle, and last states to create a visual language for this field.
 
-Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

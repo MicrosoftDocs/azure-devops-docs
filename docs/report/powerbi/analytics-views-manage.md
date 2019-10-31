@@ -5,7 +5,7 @@ description: View, edit, and delete an Analytics view for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

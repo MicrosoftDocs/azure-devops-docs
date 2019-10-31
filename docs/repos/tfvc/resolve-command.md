@@ -5,7 +5,7 @@ description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

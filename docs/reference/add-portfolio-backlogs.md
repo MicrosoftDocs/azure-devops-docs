@@ -5,7 +5,7 @@ description: Add up to two additional work item types and portfolio backlogs in 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -272,7 +272,7 @@ To learn more about the syntax for a definition file or command line tool, see t
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.  
 
-If you have additional questions, see [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.  
+If you have additional questions, see [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.  
 
 ### Portfolio backlog hierarchy
 

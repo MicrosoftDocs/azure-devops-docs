@@ -5,7 +5,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 4/8/2019

@@ -5,7 +5,7 @@ ms.assetid: 1BB64B5F-708B-4E6E-9E88-4DCAEE58A231
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 

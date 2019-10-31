@@ -5,7 +5,7 @@ description: Configure NuGet tools to authenticate with Azure Artifacts and othe
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/27/2019

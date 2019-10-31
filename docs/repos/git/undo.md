@@ -5,7 +5,7 @@ description: Undoing Changes with Git in Azure Repos using reset and revert
 ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

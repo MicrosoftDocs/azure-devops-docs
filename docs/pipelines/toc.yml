@@ -86,7 +86,7 @@
       displayName: helm
     - name: Multi-cloud deployments
       href: ecosystems/kubernetes/multi-cloud.md
-      displayName: kubernetes, multicloud, aks, gke, eks
+      displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
     - name: Deployment strategies
       href: ecosystems/kubernetes/deployment-strategies.md 
       displayName: canary, strategy, kubernetes, aks, gke, eks
@@ -354,9 +354,9 @@
     href: process/resources.md
   - name: Retention policy
     href: policies/retention.md
-  - name: Run number
+  - name: Run (build) number
     href: process/run-number.md
-    displayName: build number
+    displayName: build number, run number
   - name: Runs
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
@@ -378,6 +378,7 @@
     href: process/templates.md
   - name: Triggers
     href: build/triggers.md
+    displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
   - name: Users
     href: policies/set-permissions.md 
   - name: Variable groups
@@ -572,6 +573,8 @@
         href: tasks/package/pip-authenticate.md
       - name: Python Twine Upload Authenticate
         href: tasks/package/twine-authenticate.md
+      - name: Universal Packages
+        href: tasks/package/universal-packages.md
       - name: Xamarin Component Restore
         href: /xamarin/cross-platform/troubleshooting/component-nuget
       - name: Previous versions
@@ -598,6 +601,8 @@
         href: tasks/deploy/azure-rm-web-app-deployment.md
       - name: Azure App Service Manage
         href: tasks/deploy/azure-app-service-manage.md
+      - name: Azure App Service Settings
+        href: tasks/deploy/azure-app-service-settings.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
       - name: Azure Cloud PowerShell Deployment
@@ -694,6 +699,16 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+- name: Case Studies & Best Practices
+  items:
+    - name: Add Continuous Security Validation to your CICD Pipeline 
+      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+    - name: Build and Deployment Automation Case Study
+      href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your features using feature flags
+      href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    - name: Progressively expose your releases using deployment rings
+      href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
 - name: Developer Resources
   items:
   - name: REST API reference

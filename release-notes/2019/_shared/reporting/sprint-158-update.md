@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Inline sprint burndown using story points
 
-Your Sprint Burndown can now burndown by Stories. This addresses your feedback from the[Developer Community](https://developercommunity.visualstudio.com/content/idea/365784/sprint-burndown-using-story-points-effort.html).
+Your Sprint Burndown can now burndown by Stories. This addresses your feedback from the [Developer Community](https://developercommunity.visualstudio.com/content/idea/365784/sprint-burndown-using-story-points-effort.html).
   
 From the Sprint hub select the Analytics tab. Then configure you report as follows: 
 

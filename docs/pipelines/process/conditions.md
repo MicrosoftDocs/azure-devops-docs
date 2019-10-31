@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/08/2019
+ms.date: 10/21/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -126,6 +126,24 @@ parameters:
 steps:
 - script: echo I did a thing
   condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+```
+### Use the output variable from a job in a condition in a subsequent job
+
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-in-script). 
+
+```yaml
+jobs:
+- job: Foo
+  steps:
+    - script: |
+        echo "This is job Foo."
+        echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
+      name: DetermineResult
+- job: Bar
+  dependsOn: Foo
+  condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check if true
+  steps:
+    - script: echo "Job Foo ran and doThing is true."
 ```
 
 ## Q&A

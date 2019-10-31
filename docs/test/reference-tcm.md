@@ -5,7 +5,7 @@ ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019
@@ -266,7 +266,7 @@ However, there are couple of ways of getting this Step related data:
 
    Since this sample also has source code, you could customize it to suit your organization needs.
 
-1. **Test Scribe**: You could also use [Test Scribe](http://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
+1. **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
    There are two modes of generating the document using this tool -
 
    - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
@@ -277,6 +277,6 @@ However, there are couple of ways of getting this Step related data:
 
 You can find a Sample custom warehouse adapter below, that you can use as a starting point:
 
-[http://code.msdn.microsoft.com/Tfs2010SampleAdapter](http://code.msdn.microsoft.com/Tfs2010SampleAdapter)
+[https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

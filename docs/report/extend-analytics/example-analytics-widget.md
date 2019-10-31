@@ -5,7 +5,7 @@ description: Describes the data entities and relationships provided by Analytics
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

@@ -5,7 +5,8 @@ description: Define the initial set of shared queries and query folder structure
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+ms.manager: mijacobs
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 04/11/2019

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.custom: boards-sprints
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -144,11 +144,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.BuildNumber</td>
-<td>The name of the completed build. You can specify the build number format that generates this value in the <a href="/azure/devops/pipelines/build/options" data-raw-source="[pipeline options](../options.md)">pipeline options</a>.
-<br><br>
+<td>The name of the completed build. You can specify <a href="/azure/devops/pipelines/process/run-number" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
 A typical use of this variable is to make it part of the label format, which you specify on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository tab](../repos/index.md)">repository tab</a>.
 <br><br>
-
 
 Note: This value can contain whitespace or other invalid label characters. In these cases, the <a href="/azure/devops/repos/tfvc/labels-command" data-raw-source="[label format](../repos/tfvc/labels-command.md)">label format</a> will fail.
 
@@ -507,7 +505,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <tr>
 <td>System.AccessToken</td>
-<td><a href="/azure/devops/pipelines/scripts/powershell.md#oauth" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#oauth)">Use the OAuth token to access the REST API</a>.
+<td><a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
 <br/><br/>
 <a href="/azure/devops/pipelines/build/variables#systemaccesstoken" data-raw-source="[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken)">Use System.AccessToken from YAML scripts</a>.
 <br/><br/>
@@ -546,6 +544,11 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>System.JobDisplayName</td>
 <td>The human-readable name given to a job.</td>
+</tr>
+
+<tr>
+<td>System.JobId</td>
+<td>A unique identifier for a single attempt of a single job.</td>
 </tr>
 
 <tr>

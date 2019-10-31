@@ -1,5 +1,3 @@
-- name: Queries
-  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: About managed queries
   href: example-queries.md
 - name: Ad hoc vs managed queries
@@ -23,6 +21,7 @@
   - name: High-performing queries
     href: high-performing-queries.md 
 - name: Samples
+  expanded: true
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 

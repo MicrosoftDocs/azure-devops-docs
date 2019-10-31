@@ -3,10 +3,10 @@ title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
 ms.topic: reference 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: geverghe
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -37,7 +37,7 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases yes
+- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
@@ -77,7 +77,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |
@@ -116,7 +116,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |

@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/11/2019
@@ -300,7 +300,7 @@ Users can install these extensions without requiring an external connection to M
 
    ![Browse local extensions](_img/get-devops-extensions/install-devops-extension-09.png)
 
-3. Choose the entension you want to install.
+3. Choose the extension you want to install.
 
    ![Choose a local extension](_img/get-devops-extensions/install-devops-extension-10.png)
 

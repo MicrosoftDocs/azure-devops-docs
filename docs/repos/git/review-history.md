@@ -5,7 +5,7 @@ description: Git history tools with Visual Studio and git command line tools to 
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

@@ -4,7 +4,7 @@ description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

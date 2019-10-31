@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Manage organization notification delivery settings
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

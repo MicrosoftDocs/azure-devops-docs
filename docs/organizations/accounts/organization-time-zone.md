@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 06/14/2019

@@ -6,7 +6,7 @@ ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
 ms.date: 09/25/2019

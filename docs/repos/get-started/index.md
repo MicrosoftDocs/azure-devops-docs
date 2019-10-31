@@ -5,7 +5,7 @@ description: Sign up and get started using Azure Repos
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.date: 09/10/2018

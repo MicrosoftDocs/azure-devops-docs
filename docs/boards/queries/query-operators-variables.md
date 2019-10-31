@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

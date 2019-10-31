@@ -3,13 +3,13 @@ title: Use Azure DevOps Demo Generator
 description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 05/09/2018
+ms.date: 10/10/2019
 ---
-# Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator
+# Get started creating and populating demo Azure DevOps Services projects
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
@@ -18,6 +18,11 @@ ms.date: 05/09/2018
     > [!div class="mx-imgBorder"]
     > ![Image of VSTS Demo Generator V2 login](_img/homepage.png)
 
+    > [!NOTE]
+    > If you are a member of multiple tenants and the desired tenant isn't the selected one,
+    > close your browser windows and then open a new browser and navigate to 
+    > `https://aka.ms/vssignout`. Close this browser, open a new browser and navigate to
+    > `https://aex.dev.azure.com/me`, and sign-in using the desired tenant.
 
 1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps account.
 

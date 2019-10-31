@@ -4,7 +4,7 @@ description: Leave your file shares behind and bring your packages to Azure DevO
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

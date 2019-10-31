@@ -6,14 +6,14 @@ ms.technology: devops-ecosystem
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
-author: danhellem
+author: KathrynEE
 ms.date: 03/28/2019
 monikerRange: "azure-devops"
 ---
 
-<!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
+<!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Migration guide
 

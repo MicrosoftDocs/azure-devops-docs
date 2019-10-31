@@ -10,6 +10,8 @@
   items:
   - name: Azure Repos with Slack
     href: integrations/repos-slack.md
+  - name: Azure Repos with Microsoft Teams
+    href: integrations/repos-teams.md
 - name: REST API Reference
   items:
   - name: Git

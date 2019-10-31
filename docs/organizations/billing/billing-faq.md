@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/24/2019
+ms.date: 10/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -158,7 +158,7 @@ A: Yes, you can. You need to be an owner or contributor for an Azure subscriptio
 
 A: The easiest approach to determine if you have the right privileges is to select the **Buy** button for a service. You need to select an Azure subscription (which is a billing account) from a presented list of Azure subscriptions that are currently linked to your sign-in. Because the name of the Azure subscription defaults to the type of billing account (for example, "Pay-As-You-Go" or "Enterprise Agreement"), it's often clear if the Azure subscription is part of your Enterprise Agreement.
 
-Another approach is to try to visit the [Azure Enterprise Portal](http://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization Owner role. Only organization Owners can set up new Azure billing in an Enterprise Agreement. 
+Another approach is to try to visit the [Azure Enterprise Portal](https://ea.azure.com). If you can reach it successfully, then you already have either the enterprise admin or the organization Owner role. Only organization Owners can set up new Azure billing in an Enterprise Agreement. 
 
 If you can't access the Azure Enterprise Portal, inquire within your organization to find out who your Enterprise Admin is, and ask that person to add you as an organization Owner within the Azure Enterprise Portal. If you can't find this person, you can [submit a support ticket](https://aka.ms/AzureEntSupport) and request the contact information. You need your organization's name and your Enterprise Agreement enrollment number for the support ticket.
 
@@ -216,7 +216,6 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider pr
 * [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
 * [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
 * [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
-* [Azure Test Plans](buy-basic-plus-test-plans.md) (formerly Test Manager)
 * [Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 
 ## Related articles

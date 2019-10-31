@@ -6,8 +6,9 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 5fa325e8-ca16-47f5-a8af-bdfdcbcfc243
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -94,13 +95,13 @@ An ideal trend would show a steady increase in the number of **Passed** tests an
   
  For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  
   
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
+-   [Ways to customize PivotTable reports](https://go.microsoft.com/fwlink/?LinkId=165722)  
   
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
+-   [Edit or remove a workbook from Excel Services](https://go.microsoft.com/fwlink/?LinkId=165723)  
   
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
+-   [Publish a workbook to Excel Services](https://go.microsoft.com/fwlink/?LinkId=165724)  
   
--   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
+-   [Save a file to a SharePoint library or another Web location](https://go.microsoft.com/fwlink/?LinkId=165725)  
   
 ## Related notes
  [Test results](https://msdn.microsoft.com/library/ms244708)

@@ -5,7 +5,7 @@ description: Add or remove the display of rollup columns that show progress or t
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

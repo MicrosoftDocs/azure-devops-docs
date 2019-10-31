@@ -8,7 +8,7 @@ description: Shows test coverage, code churn, and bug counts for a specified bui
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/2017
 ---

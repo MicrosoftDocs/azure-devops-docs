@@ -5,7 +5,7 @@ description: Learn about branching strategies for Team Foundation Version Contro
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.prod: devops
 ms.technology: devops-code-tfvc 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 04/25/2018
 ms.author: sdanie
 author: wpschaub

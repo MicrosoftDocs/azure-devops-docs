@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 09/10/2019
@@ -66,7 +66,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `publishFeedCredentials`<br/>Verbosity | Specifies the amount of detail displayed in the output. |
 | `verbosityRestore`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
 | `verbosityPush`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack" | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
+| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
 | `packDestination`<br/>Package folder | Folder where packages will be created. If empty, packages will be created at the source root. |
 | `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](http://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable' (byEnvVar), you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number' (byBuildNumber), this will use the build number to version your package.<br />**Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)', or if you're using YAML to configure your pipeline, specify the said format as the "name", like shown in the [Versioning schemes]("#versioning-schemes").<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |

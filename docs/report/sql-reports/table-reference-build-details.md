@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about builds, such as the status and quality.
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

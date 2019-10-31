@@ -4,7 +4,7 @@ description: Automatically building Java apps with Azure Pipelines, Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.reviewer: dastahel

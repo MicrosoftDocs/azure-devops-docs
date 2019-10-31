@@ -5,7 +5,7 @@ description: Provides summed values of select fields for all child work items of
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2018'

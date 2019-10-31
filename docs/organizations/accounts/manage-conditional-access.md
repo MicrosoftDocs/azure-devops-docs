@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/09/2019
@@ -38,7 +38,7 @@ Azure DevOps enforces the policy for usage of personal access tokens (PATs), alt
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
 
-For more information, see the REST API reference article, section [API & TFS version mapping](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+For more information, see the REST API reference article, section [API & TFS version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
 
 ## Enable Conditional Access for Azure DevOps
 

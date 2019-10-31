@@ -4,7 +4,7 @@ description: Find out how to configure upstream packages from multiple sources i
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 01/24/2018

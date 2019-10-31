@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -157,7 +157,7 @@ You can add and invite others to work on your project by adding their email addr
 
 2. Select **Users** > **Add new users**.
 
-   ![Select Add new users](/azure/devops/organizations/accounts/_img/_shared/add-new-users.png)
+   :::image type="content" source="../../_shared/_img/add-new-users.png" alt-text="Select Add users":::]
 
 3. Complete the form by entering or selecting the following information:
 	<ul>

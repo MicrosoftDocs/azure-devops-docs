@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and TFS with Slack
 description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: phwilson
 author: chasewilson

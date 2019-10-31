@@ -5,7 +5,7 @@ title: Static Content Hosting for Extension Content | Extensions for Azure DevOp
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

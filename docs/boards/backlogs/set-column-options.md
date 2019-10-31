@@ -5,9 +5,10 @@ description: Set column fields to show and sort fields for a backlog or query in
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 06/28/2019
 ---

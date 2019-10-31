@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/03/2019

@@ -8,7 +8,7 @@ ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/16/2019

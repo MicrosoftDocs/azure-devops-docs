@@ -4,7 +4,7 @@ description: Host service for interacting with the currently active work item fo
 ms.assetid: 49bc7312-2aee-433d-9336-394b6c426051
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
+ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

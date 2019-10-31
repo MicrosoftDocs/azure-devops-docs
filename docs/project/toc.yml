@@ -1,15 +1,21 @@
-- name: Azure DevOps Collaborate Documentation
-  href: index.md
+- name: Collaborate 
+  href: index.yml
 - name: Wikis
   href: wiki/toc.yml
 - name: Public Projects
-  href: ../organizations/public/toc.yml 
+  href: ../organizations/public/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
+- name: Search across Azure DevOps
+  href: ./search/toc.yml  
 - name: Feedback
   href: feedback/toc.yml 
 - name: REST API Reference
   items:
   - name: Projects
     href: /rest/api/azure/devops/core/projects
+  - name: Search
+    href: /rest/api/vsts/search/
   - name: Wikis
     href: /rest/api/vsts/wiki/wikis 
   - name: Fetch Wiki Search Results
@@ -24,7 +30,9 @@
     href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui
 - name: Resources
   items:
-  - name: Manage Projects
+  - name: Service hooks
+    href: /azure/devops/service-hooks/index
+  - name: Manage projects
     href: /azure/devops/organizations/projects/index
   - name: Azure Repos
     href: /azure/devops/repos/index
