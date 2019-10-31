@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2019
+ms.date: 10/31/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,7 +33,7 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Change organization location
 
-To change your organization region, use [Azure DevOps Virtual Support Agent](http://azuredevopsvirtualagent.azurewebsites.net/).
+To change your organization region, use [Azure DevOps Virtual Support Agent](http://azuredevopsvirtualagent.azurewebsites.net/), and select the Quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
 
 ## Other resources
 
