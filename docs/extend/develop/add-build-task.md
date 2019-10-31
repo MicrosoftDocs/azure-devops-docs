@@ -14,6 +14,8 @@ ms.date: 10/31/2019
 
 # Add a build or release task
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 Custom build or release tasks can be contributed by extensions discovered and installed by users into an organization in Azure DevOps Services. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 

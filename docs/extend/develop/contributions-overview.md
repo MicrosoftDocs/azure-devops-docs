@@ -19,6 +19,8 @@ A contribution type defines something that can be added to the system. A contrib
 example, `hub` is a contribution type defined by a core, Microsoft-provided extension. The `Explorer` hub under the Build hub group is a 
 specific contribution of type `hub`.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ### Contribution types
 
 A **contribution type** defines a contract that all contributions to the system of that type must adhere to. `hub`, `action`, and `build-task`

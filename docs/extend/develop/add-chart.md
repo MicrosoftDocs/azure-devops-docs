@@ -18,6 +18,8 @@ ms.date: 10/08/2019
 
 This article demonstrates how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 Charts are easy to create, resizable, interactive, and consistent with the Azure DevOps Services look and feel. 
 The following chart types are supported: 
 

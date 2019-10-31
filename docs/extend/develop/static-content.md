@@ -20,6 +20,8 @@ You have the option of hosting static content for your extension (like HTML, CSS
 >If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom
 >tables should be created in a separate schema. For example, '**YourExtensionName**'.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ## Host on Azure DevOps Services
 
 In this model, static content is packaged with your extension's .vsix file and is served from a public endpoint at `https://publisher.gallery.vsassets.io`. 
