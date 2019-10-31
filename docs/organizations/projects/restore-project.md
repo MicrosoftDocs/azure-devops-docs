@@ -11,7 +11,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 ---
 
 # Restore a project
@@ -63,6 +63,10 @@ To restore a project, you must delete project permissions and have the "delete p
 ::: moniker range="azure-devops-2019"
 
 ### Using REST API
+
+> [!WARNING]
+> If you're trying to restore a project with a name that's already taken, you need to rename the project before it can be restored. To rename the project, enter the following in the request body: `"name":"new name"`
+> 
 
 1. Open a browser window and enter a URL that uses the following form:  
 
