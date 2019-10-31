@@ -56,8 +56,9 @@ You can evaluate artifact(s) to be deployed to an environment against custom pol
 To define a custom policy evaluation over the artifact(s), follow the below steps.
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
-
-   ![environments](_img/checks/environments.png)
+    
+   > [!div class="mx-imgBorder"]
+   > ![environments](_img/checks/environments.png)
 
 2. Navigate to **Approvals and checks** for the environment.
 
@@ -65,29 +66,35 @@ To define a custom policy evaluation over the artifact(s), follow the below step
    > ![approvals-and-checks on environment](_img/checks/approvals-and-checks.png)
 
 3. Select **Evaluate artifact**.
-
-   ![evaluate-artifact](_img/checks/evaluate-artifact.png)
+    
+   > [!div class="mx-imgBorder"]
+   > ![evaluate-artifact](_img/checks/evaluate-artifact.png)
 
 4. Paste the policy definition and click **save**. See more about writing policy definitions.
 
-    ![policy-definition](_img/checks/policy-definition.png)
+    > [!div class="mx-imgBorder"]
+    > ![policy-definition](_img/checks/policy-definition.png)
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. The specified policy is evaluated against the available image metadata. The check passes when the policy is successful and fails otherwise. The stage is marked failed if the check fails.
 
 ### [Passed](#tab/check-pass)
 
-![checks-passed](_img/checks/checks-passed.png)
+> [!div class="mx-imgBorder"]
+> ![checks-passed](_img/checks/checks-passed.png)
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
-![checks-passed](_img/checks/policy-check-pass-logs.png)
+> [!div class="mx-imgBorder"]
+> ![checks-passed](_img/checks/policy-check-pass-logs.png)
 
 ### [Failed](#tab/check-failed)
-    
-![checks-passed](_img/checks/checks-failed.png)
+
+> [!div class="mx-imgBorder"]    
+> ![checks-passed](_img/checks/checks-failed.png)
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
-![checks-passed](_img/checks/policy-check-failed-logs.png)
+> [!div class="mx-imgBorder"]
+> ![checks-passed](_img/checks/policy-check-failed-logs.png)
 
 * * *
