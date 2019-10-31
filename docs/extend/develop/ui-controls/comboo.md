@@ -14,7 +14,9 @@ ms.date: 08/04/2016
 
 # Use the combo control
 
-This page shows different samples about the combo control. There are TypeScript and JavaScript examples. 
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+
+This article shows different samples about the combo control. There are TypeScript and JavaScript examples. 
 
 For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
 
