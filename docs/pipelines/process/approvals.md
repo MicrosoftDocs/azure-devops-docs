@@ -46,9 +46,7 @@ You can add multiple approvers to an environment. These approvers can be individ
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently.
 
-## Checks
-
-### Evaluate artifact
+## Evaluate artifact
 
 You can evaluate artifact(s) to be deployed in an environment against custom policies.
 
@@ -56,15 +54,42 @@ You can evaluate artifact(s) to be deployed in an environment against custom pol
 > Currently, this works with container image artifacts and on a Kubernetes resource only
 > 
 
-To define a custom policy evaluation over the artifact(s)-
+To define a custom policy evaluation over the artifact(s), follow the below steps.
 
-1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about creating an environment.
+1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
-2. Navigate to Checks for the environment.
+   ![environments](_img/checks/environments.png)
 
-3. Select **Evaluate Artifact** from the list.
+2. Navigate to **Approvals and checks** for the environment.
 
-4. Paste the policy definition. (see more about writing policy definitions) and click save.
+   ![approvals-and-checks](_img/checks/approvals-and-checks.png)
 
-Next time a deployment is targeted on the check configured environment, policy will be evaluated and logs viewable from the pipeline run view.
+3. Click on the **+** and select **Evaluate artifact** from the list.
 
+   ![evaluate-artifact](_img/checks/evaluate-artifact.png)
+
+4. Paste the policy definition and click **save**. See more about writing policy definitions.
+
+    ![policy-definition](_img/checks/policy-definition.png)
+
+Next time a deployment is targeted on the check configured environment, policy will be evaluated and logs will be viewed from the pipeline run view.
+
+## Policy check status
+
+### [Passed](#tab/check-pass)
+
+![checks-passed](_img/checks/checks-passed.png)
+
+You can also see the complete logs of the policy checks from the pipeline view.
+
+![checks-passed](_img/checks/policy-check-pass-logs.png)
+
+### [Failed](#tab/check-failed)
+    
+![checks-passed](_img/checks/checks-failed.png)
+
+You can also see the complete logs of the policy checks from the pipeline view.
+
+![checks-passed](_img/checks/policy-check-failed-logs.png)
+
+* * *
