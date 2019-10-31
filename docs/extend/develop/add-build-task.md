@@ -434,8 +434,8 @@ tfx extension create --manifest-globs vss-extension.json
 ```
 
 > [!NOTE] 
-> An extension/integration's version must be incremented on every update. <br> 
-> When updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
+> An extension or integration's version must be incremented on every update. <br> 
+> When you're updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
 > You must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version. For more information, see [Build Task in GitHub](https://github.com/microsoft/tfs-cli/blob/master/docs/buildtasks.md).
 
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
