@@ -11,7 +11,7 @@ ms.date: 10/21/2019
 monikerRange: 'azure-devops'
 ---
 
-# Approvals and other checks
+# Approvals and checks
 
 [!INCLUDE [include](../_shared/version-team-services.md)]
 
@@ -64,7 +64,7 @@ To define a custom policy evaluation over the artifact(s), follow the below step
 
    ![approvals-and-checks](_img/checks/approvals-and-checks.png)
 
-3. Click on the **+** and select **Evaluate artifact** from the list.
+3. Select **Evaluate artifact**.
 
    ![evaluate-artifact](_img/checks/evaluate-artifact.png)
 
@@ -73,8 +73,6 @@ To define a custom policy evaluation over the artifact(s), follow the below step
     ![policy-definition](_img/checks/policy-definition.png)
 
 Next time a deployment is targeted on the check configured environment, policy will be evaluated and logs will be viewed from the pipeline run view.
-
-## Policy check status
 
 ### [Passed](#tab/check-pass)
 
