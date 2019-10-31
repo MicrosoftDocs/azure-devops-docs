@@ -118,7 +118,7 @@ fetchImage(uri) = img {
 
 ```
 
-### Check prior deployments
+## Check prior deployments
 
 This policy checks if the image has been pre-deployed to one/more of the environments before being deployed to specific environment/resources with Check configured. 
 
