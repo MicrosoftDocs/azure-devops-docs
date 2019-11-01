@@ -44,9 +44,9 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 Fork this repo in GitHub:
 
-    ```
-    https://github.com/MicrosoftDocs/pipelines-javascript
-    ```
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
 
 ### Sign in to Azure Pipelines
 
