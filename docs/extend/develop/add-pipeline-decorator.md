@@ -14,6 +14,8 @@ monikerRange: '> azure-devops-2019'
 
 # Use a decorator to inject steps into a pipeline
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 Pipeline decorators allow you to add steps to the beginning and end of every job.
 This is different than adding steps to a single definition because it applies to all pipelines in an organization.
 

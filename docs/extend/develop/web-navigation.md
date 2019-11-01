@@ -16,6 +16,8 @@ ms.date: 10/02/2019
 
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ## Team context
 
 In traditional horizontal navigation, a user could navigate into a project or team by selecting it from a picker located in the top left of the page header. This picker presented a list of recent teams and a way to browse for all teams. In the new vertical navigation, a user can only navigate into a project (and not into a team). This change was made to simplify the overall experience, but it introduces a challenge for web extensions that rely on users being able to switch teams using the traditional team picker in the page header.

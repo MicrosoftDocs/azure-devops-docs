@@ -14,7 +14,10 @@ ms.date: 11/29/2018
 
 # Reference for integrating custom build tasks into extensions
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ## Custom tasks
+
 [Tasks](../../pipelines/process/tasks.md) are the building blocks for defining automation in a build or release pipeline. We offer many [built-in tasks](../../pipelines/tasks/index.md)
 to enable fundamental build and deployment scenarios that we recommend you examine before building your own. If the existing tasks don't satisfy your needs, you can build a [custom task](add-build-task.md).
 

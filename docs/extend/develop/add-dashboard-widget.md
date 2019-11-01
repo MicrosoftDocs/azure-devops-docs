@@ -17,7 +17,9 @@ ms.date: 10/31/2019
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. In this article, learn how to create an extension with multiple widgets as contributions.
 
-This guide is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.
+This article is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ## Preparation and required setup for this tutorial
 
