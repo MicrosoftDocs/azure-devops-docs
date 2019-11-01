@@ -63,8 +63,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `publishVstsFeed`<br/>Target feed | Select a feed hosted in this account. You must have Azure Artifacts installed and licensed to select a feed here. |
 | `publishPackageMetadata`<br/>Publish pipeline metadata | If you continually publish a set of packages and only change the version number of the subset of packages that changed, use this option. |
 | `allowPackageConflicts` | It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.<br/>This option is currently only available on Azure Pipelines and using Windows agents. If NuGet.exe encounters a conflict, the task will fail. This option will not work and publish will fail if you are within a proxy environment. |
-| `publishFeedCredentials`<br/>Verbosity | Specifies the amount of detail displayed in the output. |
-| `verbosityRestore`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
+| `publishFeedCredentials`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
 | `verbosityPush`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
 | `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
