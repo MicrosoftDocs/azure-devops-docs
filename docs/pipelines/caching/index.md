@@ -156,7 +156,7 @@ In the following example, the `install-deps.sh` step is skipped when the cache i
 
 ```yaml
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: mykey | mylockfile
     path: $(Pipeline.Workspace)/mycache
@@ -179,7 +179,7 @@ variables:
   BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: gems | $(Agent.OS) | my.gemspec
     path: $(BUNDLE_PATH)
@@ -204,7 +204,7 @@ steps:
     echo "##vso[task.prependpath]/usr/lib/ccache"
   displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: ccache | $(Agent.OS)
     path: $(CCACHE_DIR)
@@ -228,7 +228,7 @@ variables:
   GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: gradle | $(Agent.OS)
     path: $(GRADLE_USER_HOME)
@@ -256,7 +256,7 @@ variables:
   MAVEN_OPTS: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: maven | **/pom.xml
     path: $(MAVEN_CACHE_FOLDER)
@@ -276,7 +276,7 @@ variables:
   NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: nuget | packages.lock.json
     path: $(NUGET_PACKAGES)
@@ -298,7 +298,7 @@ variables:
   npm_config_cache: $(Pipeline.Workspace)/.npm
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: npm | $(Agent.OS) | package-lock.json
     path: $(npm_config_cache)
@@ -323,7 +323,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
