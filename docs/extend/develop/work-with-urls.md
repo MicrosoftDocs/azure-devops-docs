@@ -20,6 +20,8 @@ With the introduction of Azure DevOps Services, organizational resources and API
 * `https://{organization}.visualstudio.com` (legacy)
 
 Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps Services, it is important to understand how to properly work with URLs made available to your code and how to properly form URLs when calling REST APIs.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
     
 ## Organization primary URL
 
