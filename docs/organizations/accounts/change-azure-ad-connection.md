@@ -24,7 +24,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 ## Prerequisites
 
-Before you disconnect your organization from your directory, and then connect to a new directory, make sure the following is true:
+Before you switch your organization directory, make sure the following is true:
 - You're in the Project Collection Administrator group (in Organization settings) for the organization 
 - You're in the source Azure AD and destination Azure AD as a member. For more information, see how you can [convert an Azure AD guest into a member](faq-add-delete-users.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 
