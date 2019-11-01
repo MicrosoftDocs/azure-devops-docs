@@ -7,11 +7,11 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/16/209  
+ms.date: 10/02/2019
 ---
 
 # Query quick reference 
@@ -19,6 +19,10 @@ ms.date: 08/16/209
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
+For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
 ## Query tasks 
 
@@ -167,6 +171,7 @@ The following table indicates the operators and macros available for the differe
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
+<a id="samples" />
 
 ## Query samples for select fields 
 
@@ -288,6 +293,7 @@ The following table lists common query fields and their data type for which samp
 ## Related articles
 
 - [Query by field value comparisons](query-field-value.md) 
+- [Guidance to create high-performing queries](high-performing-queries.md)
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

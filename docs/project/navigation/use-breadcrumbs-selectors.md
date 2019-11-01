@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -14,17 +14,8 @@ ms.date: 02/08/2019
 ---
 
 
-::: moniker range=">= azure-devops-2019"
 
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-# Use breadcrumbs and selectors to navigate and open artifacts 
-
-::: moniker-end
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 

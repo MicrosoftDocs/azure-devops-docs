@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Comments | REST API Reference for Team Foundation Server
 description: Work with work item comments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: EF2796AF-2400-4396-ABFC-1903BA1581CC
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

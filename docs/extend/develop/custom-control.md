@@ -5,7 +5,7 @@ ms.prod: devops
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -14,13 +14,16 @@ ms.date: 10/10/2017
 
 # Add a custom control to the work item form
 
-> This is only available on Azure DevOps Services and TFS 2017 or later.
+[!INCLUDE [version-vsts-tfs-2017-on](../../boards/_shared/version-vsts-tfs-2017-on.md)]
 
 Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  In this article, learn how to build your own custom control.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 <img alt="custom control in work item form" src="./_img/customcontrol.png" style="width: 600px;"/>
 
 ## Add the custom control
+
 To add a control to the main page, add a contribution to your [extension manifest](../develop/manifest.md). The type of this contribution should be `ms.vss-work-web.work-item-form-control`
 and it should target the `ms.vss-work-web.work-item-form` contribution.
 
@@ -114,6 +117,7 @@ These properties define a user input that the contribution can use:
 
 
 ## JavaScript sample
+
 A control extension works like a group or page extension with one difference that it can take certain user inputs. To read the user input values, use `VSS.getConfiguration().witInputs`. This sample shows how to register an object that is called when various events happen on the work item form that may impact your contributed control. It also shows how to read input values provided by user for this control.
 
 ```typescript
@@ -142,5 +146,3 @@ var provider = () => {
 VSS.register(VSS.getContribution().id, provider);
 ```
     
-
-

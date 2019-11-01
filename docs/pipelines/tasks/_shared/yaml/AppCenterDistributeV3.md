@@ -10,7 +10,6 @@
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
     #symbolsDsymFiles: # Optional
-    #symbolsMappingTxtFile: # Optional
     #symbolsIncludeParentDirectory: # Optional
     #releaseNotesOption: 'input' # Options: input, file
     #releaseNotesInput: # Required when releaseNotesOption == Input
@@ -18,6 +17,6 @@
     #isMandatory: false # Optional
     #destinationType: 'groups' # Options: groups, store
     #distributionGroupId: # Optional
-    #destinationStoreId: # Required when destinationType == Store
+    #destinationStoreId: # Required when destinationType == store
     #isSilent: # Optional
 ```

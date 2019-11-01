@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 05/15/2019 
@@ -42,7 +42,7 @@ A project defines a process and data storage in which you manage your software p
 
 1. If you're not a member of a security group, ask your Project Administrator to add you.  
 
-2. Open a browser window and enter a URL that uses the following form:  
+2. Open a browser window and enter a URL that uses the following form: 
 
    ::: moniker range="azure-devops"
    <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
@@ -56,7 +56,7 @@ A project defines a process and data storage in which you manage your software p
    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
    ::: moniker-end
 
-3. When you access the server for the first time, a Windows Identity dialog box appears. Fill in your credentials and choose the **OK** button.
+3. When you access the server for the first time, a Windows Identity dialog box appears. Enter your credentials and choose the **OK** button.
 
    > [!TIP]
    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 

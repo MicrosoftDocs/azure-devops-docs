@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
@@ -141,7 +141,7 @@ If during your penetration testing you believe you have discovered a potential s
 
 ### Azure DevOps Bug Bounty Program
 
-Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-azure-devops) page for more details. 
+Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Program](https://www.microsoft.com/msrc/bounty-azure-devops) page for more details. 
 
 ### Restricting access
 
@@ -232,7 +232,7 @@ achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability 
  BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications.
 The SOC audit for Azure DevOps covers controls for data security, availability, 
 processing integrity, and confidentiality. Azure DevOps' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
-If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOCReports](mailto:Azure DevOps ServicesSOCReports@microsoft.com) to request a copy of Azure DevOps' SOC Reports.
+If you dont have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOC Reports](mailto:AzureDevOpsSOCReport@microsoft.com) to request a copy of Azure DevOps' SOC Reports.
 
 ## Steps you can take
 
@@ -298,7 +298,7 @@ your review and education. These include:
 - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
-- [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
+- [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
 - [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
 - [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)

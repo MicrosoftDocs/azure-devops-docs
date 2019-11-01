@@ -5,7 +5,7 @@ description: XML syntax and usage for all ProcessConfiguration elements to suppo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -117,7 +117,6 @@ You configure backlogs within the XML sections that appear in the following samp
       &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
 &lt;/PortfolioBacklog &gt;  
 </code></pre>
-
 <p>Assign values to the attributes as described:</p>
 <ul>
 <li><p><strong>category</strong>: Specify the name of a category that you have defined in the categories definition file for the project that contains the WITs to be associated with this backlog type.</p></li>
@@ -156,6 +155,7 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
+
 ::: moniker range="azure-devops"
 - Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
   ::: moniker-end
@@ -168,7 +168,9 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 - Your [sprint or iteration backlogs](https://msdn.microsoft.com/library/ee191595) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
 
 <a id="map">  </a>
+
 ### Map WIT category workflow states to state categories
+
 Several WITs require their workflow states to be mapped to a state category. Workflow states define how a work item progresses from first activation or creation to closed or complete. For example, the states defined for the Scrum product backlog item define a progression of four states, from **New**, **Approved**, **Committed**, to **Done**, and also includes a fifth state, **Removed**, to account for a state removed from the backlog without being implemented. Workflow states are associated with the `value` attribute. 
 
 State categories, on the other hand, determine how the Agile planning tools treat each workflow state. The primary state categories used by the backlog and task board are **Proposed**, **InProgress**, and **Complete**. State categories are associated with the `type` attribute. To learn more, see  [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). 
@@ -203,9 +205,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 <tr>
 <td><p><strong>State</strong></p></td>
 <td><p>Required. Assigns a workflow state to a state category.</p>
-
 <pre><code>&lt;State value=&quot;ValueName&quot; type=&quot;TypeName&quot; /&gt;</code></pre>
-
 <p>Valid values for <i>ValueName</i> correspond to a value assigned to a <strong>STATE</strong> within the <strong>WORKFLOW</strong> section of those WITs assigned to the category group.</p>
 <p>Valid values for <i>TypeName</i> correspond to one of the following enumerated values:</p>
 <ul>
@@ -213,8 +213,8 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 <ul>
 <li><p><strong>Proposed</strong>: Indicates work items that are new, not yet committed, or not yet being worked on.</p></li>
 <li><p><strong>InProgress</strong>: Indicates work items that have been committed or are actively being worked on.</p></li>
-<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the <a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a> to be valid, at least one workflow state must be mapped to the <strong>Complete</strong> state category.</p>
-<p>Once a workflow state transitions to a state that is associated with the <strong>Complete</strong> metastate, the associated work item will fall off the product backlog. However, it will continue to be listed on the Kanban board.</p></li>
+<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the <a href="../../boards/boards/kanban-basics.md">Kanban board</a> to be valid, exactly one workflow state must be mapped to the <strong>Complete</strong> state category. If additional workflow states need to be represented, they can be mapped to the <strong>Resolved</strong> state category.</p>
+<p>Once a workflow state transitions to a state that is associated with the <strong>Complete</strong> metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.</p></li>
 </ul>
 <p>Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.</p></li>
 <li><p>Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the <strong>Resolved</strong> state category which indicates bugs that have been resolved.</p>
@@ -245,7 +245,9 @@ You can only assign the <strong>Resolved</strong> state category to a workflow s
 </table>
 
 <a id="columns">  </a>
+
 ### Set default columns 
+
 Specify which fields you want displayed on each backlog within the **Columns** section. Changes you make through the **Column Options** dialog persist until you change them again.
 
 ![Default columns and sequence for backlog page](_img/process-configuration-xml-element-reference/IC660915.png)  
@@ -265,6 +267,7 @@ Here's the default configuration defined by the Scrum process template for the p
 
 
 #### Syntax for Columns elements
+
 <table>
 <thead>
 <tr>
@@ -294,6 +297,7 @@ The column headings that appear on the task board correspond to the workflow sta
 <a id="add">  </a>
 
 ### Customize the quick add panel
+
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.
 
 ![Backlog panel with Business Value field added](_img/process-configuration-xml-element-reference/IC660916.png)  
@@ -313,6 +317,7 @@ The following code corresponds to the default assignments defined in the Visual 
 
 
 #### Syntax for AddPanel elements
+
 <table>
 <thead>
 <tr>
@@ -392,7 +397,6 @@ The following table describes the additional elements used to define the state c
 <tr>
 <td><p><strong>BugWorkItems</strong></p></td>
 <td><p>Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the <strong>My Work</strong> feature in Team Explorer updates the bug state as developers move bugs using <strong>My Work</strong>. To learn more, see <a href="../../repos/tfvc/get-code-reviewed-vs.md" data-raw-source="[Get your code reviewed (TFVC)](../../repos/tfvc/get-code-reviewed-vs.md)">Get your code reviewed (TFVC)</a>.</p>
-
 <pre><code>&lt;BugWorkItems category=&quot;CategoryName&quot;  
       pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
       &lt;States&gt;
@@ -404,7 +408,6 @@ The following table describes the additional elements used to define the state c
 <tr>
 <td><p><strong>FeedbackRequestWorkItems</strong></p></td>
 <td><p>Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback request category.</p>
-
 <pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot;  
       pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
       &lt;States&gt;
@@ -429,7 +432,6 @@ The following table describes the additional elements used to define the state c
 <td><p><strong>TestPlanWorkItems</strong></p></td>
 <td><p>Only required when you customize the workflow state for Test Plan and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Plan Category. For example:</p>
-
 <pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot;  
       pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
        &lt;States&gt;
@@ -444,7 +446,6 @@ The following table describes the additional elements used to define the state c
 <td><p><strong>TestSuiteWorkItems</strong></p></td>
 <td><p>Only required when you customize the workflow state for Test Suite and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Suite Category. For example:</p>
-
 <pre><code>&lt;TestSuiteWorkItems  
       category=&quot;Microsoft.TestSuiteCategory&quot;  
       pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
@@ -454,7 +455,6 @@ The following table describes the additional elements used to define the state c
             &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
        &lt;/States&gt;
   &lt;/TestSuiteWorkItems&gt;</code></pre>
-
 <p></p></td>
 </tr>
 </tbody>
@@ -465,6 +465,7 @@ The following table describes the additional elements used to define the state c
 
 
 <a id="fields">  </a>
+
 ## Assign Agile tool fields  
 
 You can change the work item fields that are used in calculating capacity, burndown charts, forecasting, and velocity. Any change you make to one of the default assignments should correspond to a change made to the WIT used to define and capture information for that value.
@@ -492,6 +493,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 > ```
 
 #### Syntax for TypeFields elements
+
 <table>
 <thead>
 <tr>
@@ -507,10 +509,8 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 <tr>
 <td><p><strong>TypeField</strong></p></td>
 <td><p>Required. Specifies the reference name of a field whose value supports a type of activity for a feature area. The fields you specify should correspond to the fields that you use within the WITs used to capture the feature information.</p>
-
 <pre><code>&lt;TypeField refname="FieldReferenceName"  
       type="NameOfType" [format="{0} TimeUnitString"] / &gt;</code></pre>
-
 <p>Specify the format only when <code>type=&quot;RemainingWork&quot;</code>. You can specify any text string for the <i>TimeUnitString</i> that you want to have appear on the capacity bars on the current sprint backlog and on the task board.</p>
 <p><strong>For Agile tools:</strong></p>
 <ul>
@@ -518,10 +518,8 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 <p><strong>Note</strong>: The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to <code>type=&quot;Activity&quot;</code>.</p></li>
 <li><p><strong>Effort</strong>: Used to calculate the team velocity. Specify the same field used in the WIT assigned to the Requirement Category that you use to capture the estimated level of effort, story points, or size for the amount of work that a backlog item requires to implement.</p></li>
 <li><p><strong>Order</strong>: Used to define the sort order for items on the backlogs and boards. The system lists work items according to their ascending order as defined by the field for this type.</p>
-
 <blockquote><strong>NOTE:</strong><br/>
 You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the <code>type=&quot;Order&quot;</code>.</blockquote>
-
 </li>
 <li><p><strong>RemainingWork</strong>: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.</p>
 <p>The value that you specify for <strong>format</strong> is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.</p>
@@ -534,10 +532,8 @@ You can move items by dragging them up or down the list on a backlog or board. A
 <li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="../use-team-fields-instead-area-paths.md" data-raw-source="[Use team fields instead of area paths to support teams](../use-team-fields-instead-area-paths.md)">Use team fields instead of area paths to support teams</a>.</p></li>
 </ul>
 <p><strong>For the feedback request form:</strong></p>
-
 <blockquote><strong>NOTE:</strong><br/>
 You should not have to change the default assignments made for the following <strong>TypeField</strong> elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.</blockquote>
-
 <ul>
 <li><p><strong>ApplicationStartInformation</strong>: Used to capture the path to execute the application.</p></li>
 <li><p><strong>ApplicationLaunchInstructions</strong>: Used to capture launch instructions.</p></li>
@@ -566,11 +562,13 @@ You should not have to change the default assignments made for the following <st
 </table>
 
 #### Implementation notes
--   If you change a field within the **TypeFields** section, you should make the corresponding change in the WIT definition. For example, if you change the fields assigned to capture work **Effort**, then you should make the same change in the WIT definitions for the product backlog item and bug (for Scrum).
 
--   You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).
+- If you change a field within the **TypeFields** section, you should make the corresponding change in the WIT definition. For example, if you change the fields assigned to capture work **Effort**, then you should make the same change in the WIT definitions for the product backlog item and bug (for Scrum).
+
+- You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).
 
 <a id="weekend_days">  </a>
+
 ## Set non-working days 
 
 Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../boards/sprints//sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
@@ -584,6 +582,7 @@ Non-working days are removed from calculations made by the [capacity planning to
 > ```
 
 #### Syntax for Weekends elements
+
 <table>
 <thead>
 <tr>
@@ -598,7 +597,6 @@ Non-working days are removed from calculations made by the [capacity planning to
 <p>Specifies a day of the week that corresponds to a non-working day.</p>
 <pre><code>&lt;DayOfWeek&gt;NameOfADay&lt;/DayOfWeek&gt;</code></pre>
 <p>Valid names correspond to the English days of the week: <strong>Sunday</strong>, <strong>Monday</strong>, <strong>Tuesday</strong>, <strong>Wednesday</strong>, <strong>Thursday</strong>, <strong>Friday</strong>, and <strong>Saturday</strong>.</p>
-
 <blockquote><strong>NOTE:</strong><br/>
 You must specify the day of a week in English, regardless of the installed language of your on-premises TFS.</blockquote>
 </td>
@@ -612,6 +610,7 @@ You must specify the day of a week in English, regardless of the installed langu
 </table>
 
 <a id="wit-colors">  </a>
+
 ## Change the color for a work item type
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
@@ -643,6 +642,7 @@ The Scrum process template defines the following color assignments. Similar ones
 
 
 #### Syntax for WorkItemColors elements
+
 <table>
 <thead>
 <tr>
@@ -671,6 +671,7 @@ The Scrum process template defines the following color assignments. Similar ones
 
 <a id="properties">  </a> 
 <a id="behaviors">  </a> 
+
 ## Specify properties and behaviors
 
 The first two properties that you can set, `BugsBehavior` and `HiddenBacklogs` set the default value for a project. However, each team can change the behavior through their team settings. The third property `StateColors` defines the colors associated with the workflow states for all WITs. The values you set are used for all teams across a project.   
@@ -695,6 +696,7 @@ The `BugsBehavior` property determines how bugs, and other WITs defined in the B
 The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appear by default. The default is to show just the product backlog and one level of portfolio backlog, the Features backlog. Teams can determine if they want to activate the Epics backlog, or make other changes. For details, see [Organize your backlog, Activate backlog levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 
 #### Syntax for Properties elements
+
 <table>
 <thead>
 <tr>
@@ -721,7 +723,6 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 </ul>
 </li>
 <li><p><strong>HiddenBacklogs</strong> specifies the <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[backlog that&#39;s inactive by default](../../organizations/settings/select-backlog-navigation-levels.md)">backlog that&#39;s inactive by default</a>.</p></li>
-
 <li><p><strong>StateColors</strong> sets the color values for workflow states. (Requires TFS 2017 or later version) </p>
 <a id="state-colors">  </a>
 <p>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.</p>
@@ -750,6 +751,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 
 
 <a id="workflow-colors">  </a> 
+
 ### Specify workflow state colors
 
 > [!NOTE]    
@@ -780,6 +782,7 @@ Here we show how it appears in the work item form:
 
 
 <a id="supported-icons">  </a> 
+
 ### Specify WIT icons
 
 > [!NOTE]  

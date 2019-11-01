@@ -5,7 +5,7 @@ ms.prod: devops
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -17,6 +17,8 @@ ms.date: 10/10/2017
 # Add extensions in work item form via work item type definition xml
 
 A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walk through, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we add the control to the Agile "User Story" work item type.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 **Step 1:**  Install work item form extensions in TFS.
 
@@ -71,7 +73,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
         ...
 
         Note: For more information on work item extensions use the following topic:
-        http://go.microsoft.com/fwlink/?LinkId=816513
+        https://go.microsoft.com/fwlink/?LinkId=816513
         -->
 
         <Extensions>

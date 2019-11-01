@@ -5,7 +5,7 @@ title: Static Content Hosting for Extension Content | Extensions for Azure DevOp
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -19,6 +19,8 @@ You have the option of hosting static content for your extension (like HTML, CSS
 >[!IMPORTANT]
 >If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom
 >tables should be created in a separate schema. For example, '**YourExtensionName**'.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ## Host on Azure DevOps Services
 

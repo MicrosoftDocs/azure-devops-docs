@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
 ms.date: 05/29/2019
@@ -156,7 +156,7 @@ Many jobs have cleanup steps which need to run no matter what else happened, so 
 Cleanup steps might also be set to run only on [cancellation](#timeouts-and-disconnects).
 A succeeding cleanup step cannot save the job from failing; jobs can never go back to success after entering failure.
 
-# Timeouts and disconnects
+## Timeouts and disconnects
 
 Each job has a timeout.
 If the job has not completed in the specified time, the server will cancel the job.

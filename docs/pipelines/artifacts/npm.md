@@ -8,7 +8,7 @@ ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
@@ -72,10 +72,10 @@ To publish to an external npm registry, you must first create a service connecti
 
 * * *
 > [!NOTE]
-> The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. Ensure that your working folder has an `.npmrc` file with a `registry=` line, as detailed in the **Connect to feed** screen in your feed.
+> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
 ## Q&A
 
 ### Where can I learn about the Azure Pipelines and TFS Package Management service?
 
-[Package Management service](../../artifacts/index.md) 
+[Package Management service](../../artifacts/index.yml) 

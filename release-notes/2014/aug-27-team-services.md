@@ -14,7 +14,7 @@ author: yukom
 
 ## A license for Stakeholders
 
-We’re delivering on the new "stakeholder license" that [I promised](http://blogs.msdn.com/b/bharry/archive/2014/07/09/upcoming-vs-online-licensing-changes.aspx) a few weeks ago. With this license, being activated today, any number of users in an account can be assigned a stakeholder license at no charge.
+We’re delivering on the new "stakeholder license" that [I promised](https://blogs.msdn.com/b/bharry/archive/2014/07/09/upcoming-vs-online-licensing-changes.aspx) a few weeks ago. With this license, being activated today, any number of users in an account can be assigned a stakeholder license at no charge.
 
 ![Assigning a stakeholder license](_img/8_27_01.png)
 

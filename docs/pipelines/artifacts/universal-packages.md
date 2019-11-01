@@ -8,7 +8,7 @@ ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/16/2019
@@ -174,4 +174,8 @@ You can use a wildcard expression as the version to get the latest (highest) ver
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
+
+### In what versions of Azure DevOps/TFS are Universal Packages available? 
+
+Universal Packages are only available for Azure DevOps Services.

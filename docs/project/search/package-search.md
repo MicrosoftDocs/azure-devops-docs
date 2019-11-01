@@ -4,9 +4,9 @@ titleSuffix: Azure Artifacts
 description: Get started with Package Search in Azure DevOps across your Organization
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
-ms.technology: devops-collab, devops-artifacts
+ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 6/03/2019

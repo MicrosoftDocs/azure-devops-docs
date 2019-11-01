@@ -5,10 +5,10 @@ title: Working with URLs in extensions | Azure DevOps Services
 description: Best practices for working with URLs in Azure DevOps extensions and integrations
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: 'azure-devops'
-ms.author: wismythe
-author: willsmythe
+ms.author: apawast
+author: apawast
 ms.date: 08/31/2018
 ---
 
@@ -20,6 +20,8 @@ With the introduction of Azure DevOps Services, organizational resources and API
 * `https://{organization}.visualstudio.com` (legacy)
 
 Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps Services, it is important to understand how to properly work with URLs made available to your code and how to properly form URLs when calling REST APIs.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
     
 ## Organization primary URL
 

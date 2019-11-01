@@ -6,7 +6,7 @@ ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 06/18/2019

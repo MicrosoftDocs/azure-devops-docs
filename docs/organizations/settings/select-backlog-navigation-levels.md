@@ -5,7 +5,7 @@ description: Choose which backlog and portfolio backlogs are active for your tea
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

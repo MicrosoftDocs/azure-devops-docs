@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Helps you track the team's performance over successive iterations.
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 

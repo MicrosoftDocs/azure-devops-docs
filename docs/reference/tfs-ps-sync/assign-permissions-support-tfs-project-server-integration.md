@@ -5,7 +5,7 @@ description: Assign permissions to support configuration and working with Team F
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -200,7 +200,7 @@ ms.date: 03/16/2017
 
 4. Save your changes.  
 
-   For more information, see [Add a user account in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207279) or [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117)..  
+   For more information, see [Add a user account in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=207279) or [Plan user access in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262117)..  
 
 ###  <a name="pwa_sp"></a> 2-4 Add accounts to a PWA security group (SharePoint mode)  
  **Required for:** ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
@@ -228,7 +228,7 @@ ms.date: 03/16/2017
     4.  **Project Managers for Project Web App**: accounts of users of Project Professional.  
 
     > [!TIP]
-    >  To view all the default groups, choose **More**. To view permissions assigned to each group, choose **Settings, View Group Permissions**. To learn more, see [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117).  
+    >  To view all the default groups, choose **More**. To view permissions assigned to each group, choose **Settings, View Group Permissions**. To learn more, see [Plan user access in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262117).  
 
 5.  On the group page, choose **New, Add users**.  
 
@@ -451,7 +451,7 @@ ms.date: 03/16/2017
 
 |Project Server 2010|Microsoft Project Server 2013|  
 |-------------------------|-----------------------------------|  
-|-   [Manage users in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207275)<br />-   [Plan for administrative and service accounts (Project Server 2010)](http://go.microsoft.com/fwlink/?LinkId=207273)<br />-   [Plan groups, categories, and RBS in Project Server 2010](https://technet.microsoft.com/library/cc197354.aspx)<br />-   [Manage security groups in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207274)<br />-   [Project Server 2010 global permissions](http://go.microsoft.com/fwlink/?LinkId=207276)<br />-   [Project Server 2010 default group permissions](http://go.microsoft.com/fwlink/?LinkId=207277)<br />-   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](https://technet.microsoft.com/library/gg982985.aspx)|-   [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117)<br />-   [Plan for administrative and service accounts (Project Server 2013)](http://go.microsoft.com/fwlink/?LinkId=262110)<br />-   [Plan groups, categories, and RBS in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262111)<br />-   [Manage security groups in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262112)<br />-   [Manage security group synchronization with Active Directory in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262113)<br />-   [Manage users in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262114)<br />-   [Manage Active Directory Resource Pool synchronization in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262115)<br />-   [Default group permissions in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262116)|  
+|-   [Manage users in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=207275)<br />-   [Plan for administrative and service accounts (Project Server 2010)](https://go.microsoft.com/fwlink/?LinkId=207273)<br />-   [Plan groups, categories, and RBS in Project Server 2010](https://technet.microsoft.com/library/cc197354.aspx)<br />-   [Manage security groups in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=207274)<br />-   [Project Server 2010 global permissions](https://go.microsoft.com/fwlink/?LinkId=207276)<br />-   [Project Server 2010 default group permissions](https://go.microsoft.com/fwlink/?LinkId=207277)<br />-   [Add resources to the enterprise resource pool](https://go.microsoft.com/fwlink/?LinkId=203356)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](https://technet.microsoft.com/library/gg982985.aspx)|-   [Plan user access in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262117)<br />-   [Plan for administrative and service accounts (Project Server 2013)](https://go.microsoft.com/fwlink/?LinkId=262110)<br />-   [Plan groups, categories, and RBS in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262111)<br />-   [Manage security groups in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262112)<br />-   [Manage security group synchronization with Active Directory in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262113)<br />-   [Manage users in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262114)<br />-   [Manage Active Directory Resource Pool synchronization in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262115)<br />-   [Default group permissions in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262116)|  
 
 ## Related articles  
  [Configuration quick reference](configuration-quick-reference.md)   

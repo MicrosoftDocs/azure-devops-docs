@@ -1,5 +1,3 @@
-- name: Public projects
-  href: index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
 - name: What is a public project? 
   href: about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
 - name: Quickstarts

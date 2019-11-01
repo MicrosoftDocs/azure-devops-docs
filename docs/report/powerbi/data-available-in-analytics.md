@@ -5,12 +5,12 @@ description: Data available for reporting purposes using Analytics for Azure Dev
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 10/24/2019
 ---
 
 # Data available from Analytics
@@ -38,37 +38,37 @@ Currently, you can access the following data from Analytics. This information wa
 </tr>
 <tbody valign="top">
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/boards/" data-raw-source="[Boards](https://azure.microsoft.com/services/devops/boards/)">Boards</a></td>
-<td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/index.md" data-raw-source="[OData](../extend-analytics/index.md)">OData</a>, <a href="overview.md" data-raw-source="[Power BI](overview.md)">Power BI</a></td>
-<td>Same as Azure DevOps Services</td>
+<td><a href="https://azure.microsoft.com/services/devops/boards/">Boards</a></td>
+<td><a href="../dashboards/overview.md#in-context-reports-work-tracking">In-context reports</a>, <a href="../dashboards/analytics-widgets.md">Widgets</a>, <a href="../extend-analytics/quick-ref.md" >OData</a>, <a href="overview.md" >Power BI</a></td>
+<td><a href="../dashboards/analytics-widgets.md" data-raw-source="[Widgets](../dashboards/analytics-widgets.md)">Widgets</a>, <a href="../extend-analytics/quick-ref.md" >OData</a>, <a href="overview.md" >Power BI</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Build</a></td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics, <a href="https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops"data-raw-source="[Pipeline Analytics](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)">Pipeline Analytics, <a href="https://docs.microsoft.com/azure/devops/report/extend-analytics/index"data-raw-source="[OData Preview](/azure/devops/report/extend-analytics/index.md)">OData Preview</a></a></td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
+<td><a href="../../pipelines/index.yml">Build</a></td>
+<td><a href="../../pipelines/test/test-analytics.md" >Test Analytics, <a href="../../pipelines/reports/pipelinereport.md">Pipeline Analytics, <a href="https://docs.microsoft.com/azure/devops/report/extend-analytics/quick-ref">OData Preview</a></a></td>
+<td><a href="../../pipelines/test/test-analytics.md">Test Analytics</td>
 <td></td>
 </tr>
 <tr>
 <td><a href="https://azure.microsoft.com/services/devops/pipelines/" data-raw-source="[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)">Release</a></td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
-<td><a href="https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops" data-raw-source="[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)">Test Analytics</td>
+<td><a href="../../pipelines/test/test-analytics.md">Test Analytics</td>
+<td><a href="../../pipelines/test/test-analytics.md">Test Analytics</td>
 <td>Pipeline Analytics - Q4, 2019</td>
 </tr>
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/test-plans/" data-raw-source="[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)">Test Plans</a></td>
-<td><a href="https://docs.microsoft.com/en-us/azure/devops/test/track-test-status" data-raw-source="[Test Plans](https://docs.microsoft.com/en-us/azure/devops/test/track-test-status)">Progress Report</a></td>
+<td><a href="https://azure.microsoft.com/services/devops/test-plans/">Test Plans</a></td>
+<td><a href="../../test/track-test-status.md">Progress Report</a></td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/repos/" data-raw-source="[Repos](https://azure.microsoft.com/services/devops/repos/)">Repos</a></td>
+<td><a href="https://azure.microsoft.com/services/devops/repos/">Repos</a></td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>
 </tr>
 <tr>
-<td><a href="https://azure.microsoft.com/services/devops/artifacts/" data-raw-source="[Artifacts](https://azure.microsoft.com/services/devops/artifacts/)">Artifacts</a></td>
+<td><a href="https://azure.microsoft.com/services/devops/artifacts/">Artifacts</a></td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>
@@ -77,14 +77,16 @@ Currently, you can access the following data from Analytics. This information wa
 </table>
 
 > [!NOTE]   
-> Analyticss doesn't support reporting on plain text and HTML fields at this time. 
+> Analytics doesn't support reporting on plain text and HTML fields at this time. 
 
 As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
 
 ## Related articles
+
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

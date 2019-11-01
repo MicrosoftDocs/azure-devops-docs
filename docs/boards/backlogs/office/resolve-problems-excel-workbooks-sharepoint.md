@@ -5,7 +5,7 @@ description: Resolve an error that occurs with the integration of SharePoint, Te
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fdb0f881-7ead-45f5-85c0-189a86d29d7a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

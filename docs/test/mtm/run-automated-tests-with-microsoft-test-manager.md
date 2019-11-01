@@ -5,7 +5,7 @@ ms.assetid: F9E8F299-6266-47E3-B896-17D8504E6165
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -140,6 +140,6 @@ To view and update the test results:
 ## See Also  
 
 * [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
-* [Continuous testing scenarios and capabilities](../../pipelines/index.md)
+* [Continuous testing scenarios and capabilities](../../pipelines/index.yml)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

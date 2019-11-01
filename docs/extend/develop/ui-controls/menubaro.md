@@ -5,11 +5,11 @@ ms.assetid: 13A6E34D-BE7D-463E-570C-C27B4ACC2129
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Use the menubar control
@@ -18,8 +18,12 @@ This page shows different samples about the menubar control.
 
 **Go to [API Reference](../../reference/client/controls/menubar.md) for more details.**
 
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+
 <a name="basic"></a>
+
 ## Basic menubar
+
 This sample shows the basic usage of the toolbar. Notice how `text` is added to the separators which becomes a group text for sub menus.
 
 ```typescript
@@ -102,7 +106,9 @@ VSS.notifyLoadSucceeded();
 </div>
 
 <a name="actions"></a>
+
 ## Actions of the menubar
+
 This sample uses `executeAction` delegate to react menubar commands.
 
 ```typescript
@@ -224,16 +230,7 @@ $("#btnToggle").click(function (e) {
 VSS.require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, Menus) {
   var container = $("#sample-container");
 
-
   var menuItems = [
-    { id: "new-tab", text: "New tab", icon: "icon-info" },
-    { separator: true },
-    { id: "save-all", text: "Save all", icon: "icon-save-all" },
-    { separator: true },
-    { id: "exit", text: "Exit", noIcon: true }
-  ];
-
- var menuItems = [
     { id: "settings", text: "Settings...", icon: "icon-settings" },
     { id: "help", text: "Help", icon: "icon-help", tag: "test" } 
   ];

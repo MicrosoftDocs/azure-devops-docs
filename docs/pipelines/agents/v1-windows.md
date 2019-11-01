@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 03/15/2019
@@ -30,7 +30,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you may ne
 
 Before you begin, make sure your agent machine is prepared with these prerequisites:
 
-* An [operating system that is supported by Visual Studio 2013](http://visualstudio.microsoft.com/products/visual-studio-2013-compatibility-vs) or newer
+* An [operating system that is supported by Visual Studio 2013](https://visualstudio.microsoft.com/products/visual-studio-2013-compatibility-vs) or newer
 
 * Visual Studio 2013 or Visual Studio 2015
 

@@ -5,7 +5,7 @@ description: Examples for expanding pick list items and restricting items using 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 05/10/2017

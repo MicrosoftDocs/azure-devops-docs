@@ -6,7 +6,7 @@ titleSuffix: TFS
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -51,7 +51,7 @@ You can generate these reports only when you work with an on-premises TFS that h
 
 * You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
 
-* A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](http://office.microsoft.com/excel/). 
+* A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](https://office.microsoft.com/excel/). 
 
 * Either Visual Studio or the Team Explorer plug-in for Visual Studio, which you can [install from this download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). Team Explorer is free and requires a Windows OS.
 
@@ -79,7 +79,7 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
 4. To view a report, choose a tab, for example, choose the State tab to view the distribution of work items by State. 
 
-   You can change the chart type and filters. For more information, see [Use PivotTables and other business intelligence tools to analyze your data](http://office.microsoft.com/excel-help/use-pivottables-and-other-business-intelligence-tools-to-analyze-your-data-HA104042322.aspx?CTT=1). 
+   You can change the chart type and filters. For more information, see [Use PivotTables and other business intelligence tools to analyze your data](https://office.microsoft.com/excel-help/use-pivottables-and-other-business-intelligence-tools-to-analyze-your-data-HA104042322.aspx?CTT=1). 
 
 ## Create a query-based report by using Excel
 
@@ -117,11 +117,11 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 ### Q: How do I refresh the report to show the most recent data?
 
-   **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](http://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
+   **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](https://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
 
 ### Q: Can I upload these reports to a project portal?
 

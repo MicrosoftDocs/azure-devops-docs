@@ -5,7 +5,3 @@
   - name: Azure Boards 
     tocHref: /azure/devops/
     topicHref: /azure/devops/boards/index
-    items:
-    - name: Backlogs
-      tocHref: /azure/devops/
-      topicHref: /azure/devops/boards/backlogs/index

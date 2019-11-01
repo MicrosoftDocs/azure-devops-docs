@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -21,10 +21,7 @@ ms.date: 08/23/2019
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
-> [!NOTE]  
-> The Basic process is currently only available from Azure DevOps Services. For on-premises deployments, choose the Agile process. 
-
-Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.  
+Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.
 
 [!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
@@ -32,15 +29,10 @@ Choose either the **Basic process** or **Agile process** for guidance depending 
 
 The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
 
-::: moniker range="<= azure-devops-2019"
-> [!NOTE]   
-> The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.  
-::: moniker-end
-
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) 
+> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -54,7 +46,7 @@ The Agile process provides several work item types&mdash;for example, user stori
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) 
+> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -80,6 +72,8 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 <a id="define-new-work">  </a>
 
 ## Open the Kanban board 
+
+A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 #### [Basic process](#tab/basic-process) 
 

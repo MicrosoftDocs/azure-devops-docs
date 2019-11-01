@@ -5,11 +5,11 @@ description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 08/29/2019
+ms.date: 10/21/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -891,7 +891,7 @@ resources:
   - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
     image: string  # container image name
     options: string  # arguments to pass to container at startup
-    endpoint: string  # endpoint for a private container registry
+    endpoint: string  # reference to a service connection for the private registry
     env: { string: string }  # list of environment variables to add
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
@@ -904,6 +904,9 @@ resources:
   containers:
   - container: linux
     image: ubuntu:16.04
+  - container: windows
+    image: myprivate.azurecr.io/windowsservercore:1803
+    endpoint: my_acr_connection
   - container: my_service
     image: my_service:tag
     ports:

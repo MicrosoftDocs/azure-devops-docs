@@ -3,10 +3,10 @@ title: Troubleshoot Azure DevOps command line interface
 titleSuffix: Azure DevOps 
 description: Azure DevOps extension command line interface troubleshooting 
 ms.topic: troubleshooting 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: geverghe
 monikerRange: 'azure-devops'
 author: KathrynEE

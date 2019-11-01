@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: jillfra
-ms.author: sdanie
-author: steved0x
-ms.date: 08/06/2019
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 10/27/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -475,4 +475,38 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 * To Boolean: `True`
 * To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
+
+## Q&A
+
+<!-- BEGINSECTION class="md-qanda" -->
+
+### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
+
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the the major and minor run numbers.
+The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
+
+```yaml
+trigger:
+    batch: true
+    branches:
+        include:
+        - master
+steps:
+- bash: |
+    MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
+    echo "This is the major run number: $MAJOR_RUN"
+    
+    MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
+    echo "This is the major run number: $MINOR_RUN"
+    
+    # create pipeline variables
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
+    echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
+
+- bash: |
+    echo My pipeline variable for major run is $MAJOR
+    echo My pipeline variable for minor run is $MINOR
+```
+
+<!-- ENDSECTION -->
 

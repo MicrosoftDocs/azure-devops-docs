@@ -5,7 +5,7 @@ title: Create a consumer service for service hooks | Extensions for Azure DevOps
 description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps Services.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +18,10 @@ Service hooks enable you to perform tasks on other services when events happen i
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ## How service hooks work
+
 Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** to take based on the event. 
 Subscriptions also target **consumers**, which are external services that can perform their own actions, when an event occurs. 
 

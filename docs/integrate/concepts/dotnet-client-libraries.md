@@ -5,7 +5,7 @@ ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -24,7 +24,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 ### Features
 
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
-* Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
+* Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
 
 
@@ -114,7 +114,9 @@ GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
 var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
 ```
 
-```NetStandard
+Authentication paths that produce an interactive dialog are not available in the .NET Standard version of the .NET client libraries. When using the .NET Standard version of the .NET client libraries, you will need to provide credentials more explicitly in order to authenticate, as in the example below.
+
+```csharp
 using System;
 using Microsoft.VisualStudio.Services.Common;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
@@ -146,6 +148,8 @@ namespace ConsoleApp1
     }
 }
 ```
+
+Further authentication samples can be found on our [.NET Samples Page](../get-started/client-libraries/samples.md).
 
 ## Reference
 

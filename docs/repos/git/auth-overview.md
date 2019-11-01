@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, personal access tokens, and alternate cr
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
