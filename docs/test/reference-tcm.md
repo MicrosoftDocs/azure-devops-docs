@@ -5,7 +5,7 @@ ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019
@@ -195,7 +195,7 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
      ![clip_image011](_img/tcm-reporting/tcm-11.jpg)
 
-  1. This should connect you to the TFS_Analysis database. If your data warehouse for Visual Studio ALM is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
+  1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
 
      ![clip_image012](_img/tcm-reporting/tcm-12.jpg)
 
@@ -266,7 +266,7 @@ However, there are couple of ways of getting this Step related data:
 
    Since this sample also has source code, you could customize it to suit your organization needs.
 
-1. **Test Scribe**: You could also use [Test Scribe](http://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
+1. **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
    There are two modes of generating the document using this tool -
 
    - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
@@ -277,6 +277,6 @@ However, there are couple of ways of getting this Step related data:
 
 You can find a Sample custom warehouse adapter below, that you can use as a starting point:
 
-[http://code.msdn.microsoft.com/Tfs2010SampleAdapter](http://code.msdn.microsoft.com/Tfs2010SampleAdapter)
+[https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

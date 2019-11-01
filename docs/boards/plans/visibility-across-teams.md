@@ -5,7 +5,7 @@ description: Determine which methods best support your ability to monitor status
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

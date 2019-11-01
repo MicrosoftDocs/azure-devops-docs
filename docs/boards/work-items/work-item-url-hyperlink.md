@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   

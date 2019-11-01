@@ -5,16 +5,18 @@ ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2019
+ms.date: 10/31/2019
 ---
 
 # Add a build or release task
 
-Custom build or release tasks can be contributed by extensions that can be discovered and installed by users into an organization in Azure DevOps Services. 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
+Custom build or release tasks can be contributed by extensions discovered and installed by users into an organization in Azure DevOps Services. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 
 ![Build task catalog for extensions in Azure DevOps Services](_img/build-task-ext-choose-task.png)
@@ -26,20 +28,20 @@ To learn more about the new cross-platform build/release system, see [Team Found
 
 ## Preparation and required setup for this tutorial
 
-In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
+To create extensions for Azure DevOps Services, you need the following prerequisite software and tools:
 
 - An **organization** in Azure DevOps Services, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-- **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
+- **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
 
-  But be aware that the production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
+  But note that the production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
 - **Visual Studio Code** for intellisense and debugging support, which can be downloaded [here](https://code.visualstudio.com/)
     <a name="cli" />
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A `home` directory for your project.
-    - The `home` directory of a build or release task extension should look like the following:
+    - The `home` directory of a build or release task extension should look like the following example:
 
 ```
 |--- README.md    
@@ -116,7 +118,7 @@ This file makes sure that our TypeScript files get compiled to JavaScript files.
 tsc --init
 ```
 
-In addition, for this example we want to compile to the ES6 standard instead of ES5.
+For example, we want to compile to the ES6 standard instead of ES5.
 To ensure this happens, open the newly generated ```tsconfig.json``` and update the ```target``` field to "es6".
 
 >[!NOTE]
@@ -176,7 +178,7 @@ Here is a description of some of the components of the `task.json` file:
 | `friendlyName`        | Descriptive name (spaces allowed) |
 | `description`         | Detailed description of what your task does |
 | `author`              | Short string describing the entity developing the build or release task, e.g. "Microsoft Corporation" | 
-| `instanceNameFormat`  | This is how the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
+| `instanceNameFormat`  | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
 | `groups`              | Describes groups that task properties may be logically grouped by in the UI. |
 | `inputs`              | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring" |
 | `execution`           | Execution options for this task, including scripts |
@@ -193,7 +195,7 @@ import tl = require('azure-pipelines-task-lib/task');
 
 async function run() {
     try {
-        const inputString: string = tl.getInput('samplestring', true);
+        const inputString: string | undefined = tl.getInput('samplestring', true);
         if (inputString == 'bad') {
             tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
             return;
@@ -210,11 +212,11 @@ run();
 
 ### Compile
 
-Type "tsc" from the buildAndReleaseTask folder to compile an ```index.js``` file from ```index.ts```.
+Enter "tsc" from the buildAndReleaseTask folder to compile an ```index.js``` file from ```index.ts```.
 
 ### Run the task
 
-The task can be run by simply running ```node index.js``` from PowerShell — that is exactly what an agent does.
+The task can be run with ```node index.js``` from PowerShell — that is exactly what an agent does.
 
 ```
 node index.js
@@ -226,9 +228,9 @@ node index.js
 ##vso[task.complete result=Failed;]Input required: samplestring
 ```
 
-**The task failed!** That's exactly what would happen if the task ran and inputs were not supplied (```samplestring``` is a required input).
+**The task failed!** That's exactly what would happen if the task ran and inputs weren't supplied (```samplestring``` is a required input).
 
-To fix this, we can set the ```samplestring``` input and run again:
+As a fix, we can set the ```samplestring``` input and run again:
 
 ```
 $env:INPUT_SAMPLESTRING="Human"
@@ -251,7 +253,7 @@ This time the task succeeded since ```samplestring``` was supplied, and it corre
 
 ## Step 2: Unit testing your task scripts
 
-The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to be able to test all aspects
+The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to test all aspects
 of both success and failure paths.
 
 ### Install test tools
@@ -260,6 +262,7 @@ We use [Mocha](https://mochajs.org/) as the test driver in this walk through.
 
 ```
 npm install mocha --save-dev -g
+npm install sync-request --save-dev
 npm install @types/mocha --save-dev
 ```
 
@@ -291,6 +294,10 @@ describe('Sample task tests', function () {
     });    
 });
 ```
+
+> [!TIP]
+> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the buildAndReleaseTask folder with the following command.
+>  `npm i --save-dev sync-request`
 
 ### Create success test
 
@@ -392,16 +399,15 @@ $env:TASK_TEST_TRACE=1
 <a name="extensionmanifest" />
 
 ## Step 3: Create the extension manifest file
-The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build or release task.
+The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest that contains the build or release task.
 
 Copy the .json code below and save it as your `vss-extension.json` file:
 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
-
 >[!NOTE]
->The **publisher** here must be changed to your publisher name. If you would like to create a publisher now, you can jump down to
-[create your publisher](#createpublisher) for instructions on how to do so.  
+>The **publisher** here must be changed to your publisher name. If you would like to create a publisher now, go to
+[create your publisher](#createpublisher) for instructions.
 
 ### Contributions
 
@@ -428,15 +434,16 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command line interface (CLI) to package your extension. 
 
-Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), simply navigate to your extension's home directory and run the following command.
+Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command.
 
 ```no-highlight
 tfx extension create --manifest-globs vss-extension.json
 ```
->[!NOTE]
->An extension/integration's version must be incremented on every update. <br>
->When updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
 
+> [!NOTE] 
+> An extension or integration's version must be incremented on every update. <br> 
+> When you're updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
+> You must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version. For more information, see [Build Task in GitHub](https://github.com/microsoft/tfs-cli/blob/master/docs/buildtasks.md).
 
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
 
@@ -452,13 +459,13 @@ All extensions, including those from Microsoft, are identified as being provided
 If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
-2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
+2. If you aren't already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
    * Specify an identifier for your publisher, for example: `mycompany-myteam`
      * This is used as the value for the `publisher` attribute in your extensions' manifest file.
    * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and select **Create**
 
-Now your publisher is defined. In a future release, you'll be able to grant permissions to view and manage your publisher's extensions.
+Now your publisher is defined. In a future release, you can grant permissions to view and manage your publisher's extensions.
 This makes it easy (and more secure) for teams and organizations to publish extensions under a common publisher,
 but without the need to share a set of credentials across a set of users.
 

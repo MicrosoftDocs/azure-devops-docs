@@ -54,7 +54,7 @@ Make sure you've prepared the build as described [above](#prepare).
 See [Create a feed](../../../artifacts/feeds/create-feed.md).
 
 
-#### [Build](../../index.md) tasks
+#### [Build](../../index.yml) tasks
 
 <table>
 <tr>

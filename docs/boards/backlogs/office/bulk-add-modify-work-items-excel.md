@@ -5,7 +5,7 @@ description: Use Excel to bulk add or modify work items-such as backlog items, t
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -46,7 +46,7 @@ In this article you'll learn:
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 
 - Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end  

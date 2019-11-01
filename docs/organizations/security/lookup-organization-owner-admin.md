@@ -5,7 +5,7 @@ description: Steps for how to look up users who can help you gain access or chan
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -13,17 +13,9 @@ monikerRange: '>= tfs-2013'
 ms.date: 09/18/2019
 ---
 
-::: moniker range="azure-devops"
 
-# Look up administrators and organization owner 
 
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-# Look up administrators 
-
-::: moniker-end
+# Look up administrators or an organization owner 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

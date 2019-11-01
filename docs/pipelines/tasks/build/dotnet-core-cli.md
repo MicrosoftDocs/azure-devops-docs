@@ -6,10 +6,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 07/02/2019
+ms.date: 10/30/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -41,7 +41,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
-<tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code></td></tr>
+<tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
 <tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](http://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
 
 If you choose &#39;Use an environment variable&#39;, you must select an environment variable and ensure it contains the version number you want to use.
@@ -50,19 +50,19 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>arguments</code><br/>Arguments</td><td>Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected<br/>Note: This input only currently accepts arguments for <code>build</code>, <code>publish</code>, <code>run</code>, <code>test</code>, <code>custom</code>. If you would like to add arguments for a command not listed, use <code>custom</code>.</td></tr>
 <tr><td><code>projects</code><br/>Path to project(s)</td><td>The path to the csproj file(s) to use. You can use wildcards (e.g. <code>&ast;&ast;/&ast;.csproj</code> for all .csproj files in all subfolders).</td></tr>
 <tr><td><code>noCache</code><br/>Disable local cache</td><td>Prevents NuGet from using packages from local machine caches.</td></tr>
-<tr><td><code>packagesDirectory</code><br/>Destination directory</td><td>Specifies the folder in which packages are installed. If no folder is specified, packages are restored into the default NuGet package cache</td></tr>
+<tr><td><code>packagesDirectory</code><br/>Destination directory</td><td>Specifies the folder in which packages are installed. If no folder is specified, packages are restored into the default NuGet package cache<br/>Argument aliases: <code>restoreDirectory</code></td></tr>
 <tr><td><code>buildProperties</code><br/>Additional build properties</td><td>Specifies a list of <code>token = value</code> pairs, separated by semicolons, where each occurrence of $token$ in the .nuspec file will be replaced with the given value. Values can be strings in quotation marks</td></tr>
 <tr><td><code>verbosityPack</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>pack</code> command.</td></tr>
 <tr><td><code>verbosityRestore</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>restore</code> command.</td></tr>
 <tr><td><code>workingDirectory</code><br/>Working Directory</td><td>Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
-<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;-:&ast;&ast;/&ast;.Tests.nupkg.</code></td></tr>
+<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;-:&ast;&ast;/&ast;.Tests.nupkg.</code><br/>Argument aliases: <code>packagesToPush</code></td></tr>
 <tr><td><code>nuGetFeedType</code><br/>Target feed location</td><td>Specifies whether the target feed is internal or external.<br/>Options: <code>internal</code>, <code>external</code></td></tr>
-<tr><td><code>feedPublish</code><br/>Target feed</td><td>Select a feed hosted in your organization. You must have Package Management installed and licensed to select a feed here</td></tr>
+<tr><td><code>feedPublish</code><br/>Target feed</td><td>Select a feed hosted in your organization. You must have Package Management installed and licensed to select a feed here<br/>Argument aliases: <code>publishVstsFeed</code></td></tr>
 <tr><td><code>publishPackageMetadata</code><br/>Publish pipeline metadata</td><td>Associate this build/release pipeline’s metadata (run ID, source code information) with the package</td></tr>
-<tr><td><code>externalEndpoint</code><br/>NuGet server</td><td>The NuGet <a href="../../library/service-endpoints.md" data-raw-source="[service connection](../../library/service-endpoints.md)">service connection</a> that contains the external NuGet server’s credentials.</td></tr>
-<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;-:&ast;&ast;/&ast;.Tests.csproj</code></td></tr>
-<tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.</td></tr>
-<tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.</td></tr>
+<tr><td><code>externalEndpoint</code><br/>NuGet server</td><td>The NuGet <a href="../../library/service-endpoints.md" data-raw-source="[service connection](../../library/service-endpoints.md)">service connection</a> that contains the external NuGet server’s credentials.<br/>Argument aliases: <code>publishFeedCredentials</code></td></tr>
+<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;-:&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
+<tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.<br/>Argument aliases: <code>configuration</code></td></tr>
+<tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.<br/>Argument aliases: <code>packDirectory</code></td></tr>
 <tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> command line parameter.</td></tr>
 <tr><td><code>includesymbols</code><br/>Include Symbols</td><td>Additionally creates symbol NuGet packages. Corresponds to the <code>--include-symbols</code> command line parameter.</td></tr>
 <tr><td><code>includesource</code><br/>Include Source</td><td>Includes source code in the package. Corresponds to the <code>--include-source</code> command line parameter.</td></tr>
@@ -72,16 +72,16 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
-<tr><td><code>vstsFeed</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
+<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
 <tr><td><code>includeNuGetOrg</code><br/>Use packages from NuGet.org</td><td>Include NuGet.org in the generated NuGet.config000
 0.
 </td></tr>
 <tr><td><code>nugetConfigPath</code><br/>Path to NuGet.config</td><td>The NuGet.config in your repository that specifies the feeds from which to restore packages.</td></tr>
-<tr><td><code>externalEndpoints</code><br/>Credentials for feeds outside this organization/collection</td><td>Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically</td></tr>
+<tr><td><code>externalEndpoints</code><br/>Credentials for feeds outside this organization/collection</td><td>Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically<br/>Argument aliases: <code>externalFeedCredentials</code></td></tr>
 <tr><td><code>versionEnvVar</code><br/>Environment variable</td><td>Enter the variable name without $, $env, or %</td></tr>
-<tr><td><code>requestedMajorVersion</code><br/>Major</td><td>The &#39;X&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.</td></tr>
-<tr><td><code>requestedMinorVersion</code><br/>Minor</td><td>The &#39;Y&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.</td></tr>
-<tr><td><code>requestedPatchVersion</code><br/>Patch</td><td>The &#39;Z&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.</td></tr>
+<tr><td><code>requestedMajorVersion</code><br/>Major</td><td>The &#39;X&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>majorVersion</code></td></tr>
+<tr><td><code>requestedMinorVersion</code><br/>Minor</td><td>The &#39;Y&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>minorVersion</code></td></tr>
+<tr><td><code>requestedPatchVersion</code><br/>Patch</td><td>The &#39;Z&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>patchVersion</code></td></tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 

@@ -5,7 +5,7 @@ description: Implement scrum using the sprint taskboard in Azure Boards & Team F
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

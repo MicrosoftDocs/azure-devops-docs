@@ -6,7 +6,7 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -272,7 +272,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	For example: 
 
-	`http://dev.azure.com/fabrikam/_admin/oauth2/callback`
+	`https://dev.azure.com/fabrikam/_admin/oauth2/callback`
 
 	> [!div class="mx-imgBorder"]  
 	> ![Register your Azure DevOps Server project](_img/github-ent/ghe-register-app-services.png)  

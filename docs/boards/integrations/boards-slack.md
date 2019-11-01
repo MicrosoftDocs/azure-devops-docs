@@ -4,13 +4,13 @@ titleSuffix: Azure Boards
 description: Create work items and monitor work item activity in Azure Boards project from within Slack channels
 ms.prod: devops
 ms.technology: devops-agile
-ms.topic: conceptual
-ms.manager: jillfra
+ms.topic: tutorial
+ms.manager: mijacobs
 ms.reviewer: karrg
 ms.author: kaelli
 author: RGKarthik
 monikerRange: 'azure-devops'
-ms.date: 07/18/2019
+ms.date: 10/24/2019
 ---
  
 # Azure Boards with Slack
@@ -22,7 +22,7 @@ If you use [Slack](https://slack.com), you can use the [Azure Boards app for Sla
 The Azure Boards app for Slack allows users to set up and manage subscriptions for create, update and other work item events, and get notifications for these 
 events in their Slack channel. Conversations in the Slack channel can be used to create work items. Previews for work item URLs help users to initiate discussions around work.
 
-![Pic: Notification](./_img/notifications.png)
+![Pic: Notification](./_img/integrations-slack/notifications.png)
 
 Read this article to learn how to: 
 
@@ -50,7 +50,7 @@ Read this article to learn how to:
 
 1. Once added, you will see a welcome message from the app as shown in the following image. 
 
-	![Pic: Welcome message](./_img/welcome-message.png)
+	![Pic: Welcome message](./_img/integrations-slack/welcome-message.png)
 
 1. Use the `/azboards` Slack handle to interact with the app. A list of commands are provided later in this article, [Command reference](#command-reference).
 
@@ -60,7 +60,7 @@ To use the app, you must first link your Azure Boards project to your Slack chan
 
 1. Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
 
-	![Pic: signin](./_img/signin.png)
+	![Pic: signin](./_img/integrations-slack/signin.png)
 
 1. After signing in, use the following slash command inside a Slack channel to link to the Azure Boards project which you specify with the URL :
 
@@ -84,7 +84,7 @@ subscriptions just after linking a project.
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize your Slack channel. To easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-	![Pic: signin](./_img/add-subscriptions.png)
+	![Pic: signin](./_img/integrations-slack/add-subscriptions.png)
 
 	In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 
@@ -105,15 +105,31 @@ You can add areas that your team works on to the channel so that they are always
 	/azboards addAreapath myproject\fabrikam
 	```
 
-	![add areapath success message](./_img/add-areapath.png)
+	![add areapath success message](./_img/integrations-slack/add-areapath.png)
+
+- If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
+
 
 ## Create a work item with a command
 
-With Azure Boards app you can create work items from your channel. The app supports custom work items as well.
+1. With Azure Boards app you can create work items from your channel. The app supports custom work items as well.
 
 - To create a work item, use `/azboards create`. 
 
-	![Create work item using command](./_img/create-work-item-command.png)
+	![Create work item using command](./_img/integrations-slack/create-work-item-command.png)
+	
+2. You can create work items directly from a command by passing work item type and title as parameters. Work items will be created only if they do not have any fields to be mandatorily filled.
+
+	```
+	/azboards create [work item type] [work item title]
+	```
+
+	For example:
+
+	```
+	/azboards create 'user story' Push cloud monitoring alerts to mobile devices
+	```
+	
 
 ## Create a work item from message actions
 
@@ -123,7 +139,7 @@ access to the discussion that led to the creation of the work item.
 - To create work items using message actions
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create work item using message action](./_img/message-action-collated.png)
+	> ![Create work item using message action](./_img/integrations-slack/message-action-collated.png)
 
 
 ## Manage subscriptions
@@ -137,14 +153,14 @@ access to the discussion that led to the creation of the work item.
 	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Pic: View subscriptions](./_img/view-subscriptions.png)
+	> ![Pic: View subscriptions](./_img/integrations-slack/view-subscriptions.png)
 
 ## Previews of work item URLs
 
 To support collaboration around work items discussed within a channel, a preview of work items referenced in the channel is displayed. When a user pastes the work 
 item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
 
-![Pic: URL unfurling](./_img/url-unfurling.png)
+![Pic: URL unfurling](./_img/integrations-slack/url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
@@ -163,7 +179,7 @@ The following table lists all the `/azboards` commands you can use in your Slack
 | -------------------- |----------------|
 |/azboards link [project url]	|Link a project to this channel to create work items and receive notifications|
 |/azboards subscriptions	| Add or remove subscriptions for this channel|
-|/azboards create	| Create a work item|
+|/azboards create or /azboards create [work item type] [title]	| Create a work item|
 |/azboards addAreapath	[area path]| Add an area path from your project to this channel |
 |/azboards signin	| Sign in to your Azure Boards organization|
 |/azboards signout	| Sign out from your Azure Boards organization|

@@ -7,10 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: kaelli
-ms.reviewer: danhellem
+ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 06/28/2019
 ---
@@ -88,8 +88,8 @@ Reasons you might want to change your process from Scrum to Agile:
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
-> [!div class="mx-imgBorder"]  
-> ![Step 3 of 3 of change process dialog](_img/scrum-to-agile/change-process-scrum-to-agile-wizard-complete.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Step 3 of 3 of change process dialog](_img/scrum-to-agile/change-process-scrum-to-agile-wizard-complete.png)
 
     Steps to manually update your work items and board settings:
     - Update the column to state mapping for each team Kanban board.

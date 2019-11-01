@@ -6,7 +6,7 @@ ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -54,9 +54,9 @@ instance that you used before for the database server.
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
@@ -109,9 +109,9 @@ instance that you used before for the database server.
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  

@@ -1,16 +1,12 @@
-- name: Dashboards, Reports, & Widgets
-  href: index.md
-- name: Overview
-  items:
-  - name: About dashboards & reports
-    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
-    href: overview.md
-  - name: Quick reference
-    href: quick-ref.md
-  - name: Widget catalog
-    href: widget-catalog.md
-  - name: Analytics-based widgets
-    href: analytics-widgets.md
+- name: Dashboards, charts, reports, & widgets
+  displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
+  href: overview.md
+- name: Quick reference
+  href: quick-ref.md
+- name: Widget catalog
+  href: widget-catalog.md
+- name: Analytics-based widgets
+  href: analytics-widgets.md
 - name: Quickstarts
   items:
   - name: "Add, rename, & delete dashboards"

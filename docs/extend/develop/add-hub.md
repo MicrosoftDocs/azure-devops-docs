@@ -5,7 +5,7 @@ ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -13,6 +13,8 @@ ms.date: 08/23/2016
 ---
 
 # Add a hub
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 

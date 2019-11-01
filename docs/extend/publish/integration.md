@@ -5,7 +5,7 @@ title: Package and Publish an Integration | Extensions for Azure DevOps Services
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -44,7 +44,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 Note: The term, `extension`, is used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
 <div class="alert alert-info">
-    Need help getting your integration on the Marketplace? <a href="http://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](http://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
+    Need help getting your integration on the Marketplace? <a href="https://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](https://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
 </div>
 
 ### Create a publisher

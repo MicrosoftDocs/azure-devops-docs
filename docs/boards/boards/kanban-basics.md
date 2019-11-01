@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

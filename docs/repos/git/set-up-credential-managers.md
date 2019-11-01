@@ -5,7 +5,7 @@ description: Authenticate to Azure DevOps Services and TFS Git repos using crede
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -54,6 +54,6 @@ Manual installation steps for the [Windows Git Credential Manager](https://githu
 
 ### Learn more
 
-In addition to providing full source code, we've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [macOS and Linux Git Credential Manager](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/18/visual-studio-team-services-git-credential-manager-for-mac-and-linux.aspx) and the 
-[Windows Credential Manager](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/08/announcing-the-git-credential-manager-for-windows-1-0.aspx). There is also
+In addition to providing full source code, we've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [macOS and Linux Git Credential Manager](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/18/visual-studio-team-services-git-credential-manager-for-mac-and-linux.aspx) and the 
+[Windows Credential Manager](https://blogs.msdn.com/b/visualstudioalm/archive/2015/12/08/announcing-the-git-credential-manager-for-windows-1-0.aspx). There is also
 [an article on the project GitHub](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/wiki/How-the-Git-Credential-Managers-works) with information on the low-level internals of the Git Credential Manager for Windows.    

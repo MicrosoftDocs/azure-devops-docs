@@ -5,7 +5,7 @@ description: Controls and restrict the link relationships that the team members 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017

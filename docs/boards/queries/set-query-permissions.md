@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 10/16/2019
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 01/08/2018
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
-All users can create and edit their own queries and save them under **My Queries**.
+All users can create and edit their own queries and save them under **My Queries**. Only you can view queries saved under your **My Queries** space.
 
 By default, only project administrators can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 

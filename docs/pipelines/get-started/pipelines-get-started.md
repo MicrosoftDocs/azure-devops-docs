@@ -5,30 +5,14 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 4/8/2019
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range="azure-devops"
-
 # Use Azure Pipelines
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# Use Azure DevOps Server Pipelines
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-# Use build and release
-
-::: moniker-end
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 

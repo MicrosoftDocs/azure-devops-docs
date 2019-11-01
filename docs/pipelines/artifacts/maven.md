@@ -4,7 +4,7 @@ description: Learn about how you can use Maven artifacts with Azure Artifacts or
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual

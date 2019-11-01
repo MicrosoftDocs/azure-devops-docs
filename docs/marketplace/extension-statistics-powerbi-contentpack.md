@@ -6,7 +6,7 @@ ms.date: 09/10/2018
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
@@ -22,7 +22,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 ## Connect to Power BI and get the Content Pack
 
-1. Open a web browser and go to [http://powerbi.com](http://powerbi.microsoft.com/).
+1. Open a web browser and go to [https://powerbi.com](https://powerbi.microsoft.com/).
 
 2. Choose **Sign In** in the upper right corner to sign in to Power BI.
 

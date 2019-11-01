@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-code-git
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 04/27/2018
 ms.author: sdanie
 author: wpschaub

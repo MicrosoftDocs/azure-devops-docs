@@ -6,7 +6,7 @@ ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: phwilson
 author: chasewilson

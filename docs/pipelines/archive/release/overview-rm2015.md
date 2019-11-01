@@ -6,7 +6,7 @@ ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

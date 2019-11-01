@@ -5,7 +5,7 @@ ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 2/1/2018
@@ -27,8 +27,12 @@ Already familiar with the concepts and want to jump right in? Start with these h
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
 - [Use Maven Central as an upstream](../maven/upstream-sources.md)
 
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > Custom upstream sources are currently only supported for npm.
+
+::: moniker-end
 
 ## Benefits of upstream sources
 

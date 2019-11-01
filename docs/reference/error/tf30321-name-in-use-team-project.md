@@ -5,7 +5,7 @@ description: Display an error when you type a name for the new project that dupl
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9cd0bc58-3c58-4129-8099-d8849cece6fc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

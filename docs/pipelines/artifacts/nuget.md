@@ -8,7 +8,7 @@ ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
@@ -202,4 +202,4 @@ When you push packages to a Package Management feed, you can also [publish symbo
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)

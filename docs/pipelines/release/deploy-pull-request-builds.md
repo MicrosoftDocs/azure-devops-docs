@@ -4,7 +4,7 @@ description: DevOps CI CD - Deploy pull request builds from Azure Repos and GitH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: moala
 author: raiyanalam
 ms.date: 12/18/2018
@@ -99,7 +99,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
 ## Learn more
 
-- [Learn more about Azure Pipelines](../index.md)
+- [Learn more about Azure Pipelines](../index.yml)
 - [Learn more about release triggers and stage triggers](triggers.md)
 - [Learn more about Azure Repos](../../repos/git/index.md)
 - [Learn more about branch policies](../../repos/git/branch-policies-overview.md)

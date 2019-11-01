@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Changesets | REST API Reference for Team Foundation Server
 description: Work with TFVC changesets programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 27A32DF1-E6D8-47E1-93FB-7FB812F2B47D
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

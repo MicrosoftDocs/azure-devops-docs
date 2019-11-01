@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: brcrista
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 03/25/2019
+ms.date: 10/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -117,6 +117,11 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 - script: conda env create --quiet --file environment.yml
   displayName: Create Anaconda environment
 ```
+
+> [!NOTE]
+> If you are using a self-hosted agent and don't remove the environment at the end, you'll get an
+> error on the next build since the environment already exists. To resolve, use the `--force`
+> argument: `conda env create --quiet --force --file environment.yml`.
 
 ### Install packages from Anaconda
 
