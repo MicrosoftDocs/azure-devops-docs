@@ -62,7 +62,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the the default working directory</td>
+    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
