@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: anian
 ms.topic: conceptual
-monikerRange: '>= azure-devops-2019'
+monikerRange: 'azure-devops'
 ms.date: 09/18/2019  
 ---
 
@@ -19,8 +19,6 @@ ms.date: 09/18/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-> [!NOTE]
-> Requires Azure DevOps Server 2019 Update 1 or later version.
 
 Learn how to create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.
 
