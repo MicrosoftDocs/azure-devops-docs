@@ -14,6 +14,8 @@ ms.date: 08/04/2016
 
 # Basic styles for your widgets
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
 To use these styles, add the below line inside the `VSS.require` block in the javascript code for your widget.
 

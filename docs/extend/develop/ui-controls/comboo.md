@@ -9,14 +9,16 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Use the combo control
 
-This page shows different samples about the combo control. There are TypeScript and JavaScript examples. 
+This article shows different samples about the combo control. There are TypeScript and JavaScript examples. 
 
 For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
+
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
 
 ## How to organize your code
 
@@ -53,7 +55,9 @@ Put the following code snippets into a `main.js` file in a `scripts` folder, so 
 ## Combos
 
 <a name="list"></a>
+
 ### Plain list combo
+
 This sample shows combo of type `list`. It also shows how `change` delegate is used to populate another combo. 
 If the second combo doesn't have any source, its mode is changed to text to hide the unnecessary drop icon.
 
@@ -157,7 +161,9 @@ VSS.require(["VSS/Controls", "VSS/Controls/Combos"], function(Controls, Combos) 
 </div>
 
 <a name="searchTree"></a>
+
 ### Tree combo
+
 This sample shows combo of type `tree` which displays its source hierarchically by supporting expand/collapse. It also supports search by node.
 
 <ul class="nav nav-tabs" data-tabs="tabs">

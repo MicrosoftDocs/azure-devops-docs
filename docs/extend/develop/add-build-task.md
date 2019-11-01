@@ -9,10 +9,12 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ---
 
 # Add a build or release task
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 Custom build or release tasks can be contributed by extensions discovered and installed by users into an organization in Azure DevOps Services. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
@@ -260,6 +262,7 @@ We use [Mocha](https://mochajs.org/) as the test driver in this walk through.
 
 ```
 npm install mocha --save-dev -g
+npm install sync-request --save-dev
 npm install @types/mocha --save-dev
 ```
 
@@ -291,6 +294,10 @@ describe('Sample task tests', function () {
     });    
 });
 ```
+
+> [!TIP]
+> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the buildAndReleaseTask folder with the following command.
+>  `npm i --save-dev sync-request`
 
 ### Create success test
 
@@ -434,8 +441,8 @@ tfx extension create --manifest-globs vss-extension.json
 ```
 
 > [!NOTE] 
-> An extension/integration's version must be incremented on every update. <br> 
-> When updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
+> An extension or integration's version must be incremented on every update. <br> 
+> When you're updating an existing extension, either update the version in the manifest or pass the `--rev-version` command line switch. This  increments the *patch* version number of your extension and saves the new version to your manifest.
 > You must rev both the task version and extension version for an update to occur. `tfx extension create --manifest-globs vss-extension.json --rev-version` only updates the extension version and not the task version. For more information, see [Build Task in GitHub](https://github.com/microsoft/tfs-cli/blob/master/docs/buildtasks.md).
 
 After you have your packaged extension in a .vsix file, you're ready to publish your extension to the Marketplace.
