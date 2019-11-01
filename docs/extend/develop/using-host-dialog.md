@@ -14,6 +14,8 @@ ms.date: 09/19/2019
 
 # Modal dialog
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
 
 <div class="alert alert-info">
