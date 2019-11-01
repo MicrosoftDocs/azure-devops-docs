@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 11/01/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -22,31 +22,28 @@ In this article, learn how to administer the new tenant policy for restricting n
 
 ## Prerequisites
 
-Users must be assigned to the role, Azure DevOps Administrator in Azure Active Directory (Azure AD). Any user with this role can administer this tenant policy. Your administrator can help assign this new role to you.
+Users must be assigned to the role, Azure DevOps Administrator in Azure Active Directory (Azure AD). Any user with this role can administer this tenant policy. Your administrator can help assign this new role to you. If you don't see the policy section, then you aren't an Azure DevOps Administrator. Check [the portal](https://ms.portal.azure.com/#home) or talk to your Azure AD administrator. You can find this role in the [Azure Portal](https://ms.portal.azure.com/#home) under **Azure Active Directory > Roles and administrators**.
 
-## Turn on the Azure AD tenant policy
+![Check Azure AD roles and administrators](_img/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
+
+You can also check using Azure AD PowerShell module. See the following example image:
+
+![Azure AD PowerShell to enable policy](_img/azure-ad-tenant-policy/azure-ad-powershell.png)
+
+## Turn on the restriction policy
 
 As an Azure DevOps Administrator, you can sign into any Azure DevOps organization that's connected to your Azure AD tenant to start managing this policy. 
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home).
 2. To find the policy, select **Organization settings > Azure Active Directory**. 
-   
-   If you don't see the policy section, then you aren't an Azure DevOps Administrator. Check [the portal](https://ms.portal.azure.com/#home) or talk to your Azure AD administrator. You can find this role in the [Azure Portal](https://ms.portal.azure.com/#home) under **Azure Active Directory > Roles and administrators**.
-
-   ![Check Azure AD roles and administrators](_img/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
-
-   You can also check using Azure AD PowerShell module. See the following example image:
-
-   ![Azure AD PowerShell to enable policy](_img/azure-ad-tenant-policy/azure-ad-powershell.png)
-
-3. Switch the toggle to turn on the policy, Restricting organization creation.
+3. Switch the toggle to turn on the policy, restricting organization creation.
    
    ![Turn Azure AD policy on](_img/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)
    
-   For more information about built-in Azure AD roles, see 
+For more information about built-in Azure AD roles, see 
 [Administrator role permissions in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-### Optional: Create allow list
+## Optional: Create allow list
 
 Once you enable the policy, creating new organizations is restricted to everybody except for Azure DevOps Administrators. However, you can create an allow list and add the desired users or groups, who can be granted exception, to continue creating new organizations. People in the allow list can't administer this policy, but they can create new organizations.
 
@@ -69,11 +66,6 @@ When Azure DevOps Administrators, who aren't in the allow list, try to create an
 > [!NOTE]
 > Enabling this policy also prevents Azure DevOps Administrators who're outside of the allow list, from linking their organization to the Azure AD tenant for which the policy is set.
 > ![Connection failed notification](_img/azure-ad-tenant-policy/connection-failed-notification.png)
-
-## Known issues
-
-- Adding groups in the allow list takes up to an hour for those users in those groups to get the exemption to create new organizations. Taking the groups away also takes an hour before the restriction is set back.
-- Having `enter` or other special characters in the custom error message fails to save the message without giving an error.
 
 ## Related articles
 
