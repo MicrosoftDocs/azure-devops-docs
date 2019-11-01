@@ -80,15 +80,24 @@ Specify the authorization scope for a build job. Select:
 
 ### Scoped build identities
 
-There are 2 built-in identities that we use to execute pipelines. A collection-scoped one, and a project-scoped one. These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
+There are 2 built-in identities that we use to execute pipelines.
+
+* A collection-scoped identity, which has access to all projects in the collection (or organization for Azure DevOps Services)
+* A project-scoped identity, which has access to a single project
+
+ These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
  
-The collection-scoped identity has the name:
-- Project Collection Build Service ({OrgName})
-- Example: `Project Collection Build Service (mseng)`
+The collection-scoped identity name has the following format:
+- `Project Collection Build Service ({OrgName})
+- For example, if the organization name is `fabrikam-tailspin`, this account would has the name `Project Collection Build Service (fabrikam-tailspin)`.
  
-The project-scoped identity has the name:
+The project-scoped identity name has the following format:
 - `{Project Name} Build Service ({Org Name})`
-- Example: `AzureDevOps Build Service (mseng)`
+- For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account would has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
+
+By default, the collection-scoped identity is used, unless the Limit job authorization scope to current project` is set in **Project Settings**, **Pipelines Settings**.
+
+![Limit job authorization scope](_img/options/limit-job-authorization-scope.png)
 
 ### Managing Permissions
 
