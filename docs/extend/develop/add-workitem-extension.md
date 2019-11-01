@@ -23,11 +23,14 @@ You can now customize how the work item form is presented to users via contribut
 * [Listen for events on the form](#listenforevents)
 * [Configure contributions in work item form](#showcontributions)
 
-If you are just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
+If you're just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
 
 See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 <a name="addagroup"></a>
+
 ## Add a group
 
 ![toolbar item in work item form](./_img/add-workitem-extension-group.png)

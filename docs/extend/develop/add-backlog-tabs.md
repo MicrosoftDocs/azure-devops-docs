@@ -14,6 +14,8 @@ ms.date: 03/21/2019
 
 # Add tabs on backlog pages
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 If you have a web page that can be hosted in an iframe, it can also be hosted in Azure DevOps Services. This webpage would be a tab on the backlog pages.
 In this example, we'll add a Hello World tab on the Product Backlog and the Iteration Backlog.
 

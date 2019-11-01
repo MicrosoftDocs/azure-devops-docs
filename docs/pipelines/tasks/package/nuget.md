@@ -148,7 +148,7 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
-    vstsFeed: 'myTestFeed'
+    publishVstsFeed: 'myTestFeed'
 ```
 
 Push/Publish a package to NuGet.org

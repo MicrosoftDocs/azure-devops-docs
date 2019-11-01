@@ -14,7 +14,9 @@ ms.date: 08/22/2016
 
 # Add panels on backlog pages
 
-In this example, we'll add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 <!---
 ![panel extension on the Azure DevOps Services Portfolio backlog page](../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
