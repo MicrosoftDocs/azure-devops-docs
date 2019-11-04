@@ -8,19 +8,105 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: mijacobs
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 10/08/2019
-monikerRange: 'azure-devops'
+ms.date: 11/04/2019
+monikerRange: '>=azure-devops-2019'
 ---
 
 # Build Python apps
 
 **Azure Pipelines**
 
-This article describes how to customize the Azure Pipelines *azure-pipelines.yml* file to build, test, and deploy Python apps or scripts.
+Use a pipeline to automatically build and test your Python apps or scripts. After those steps are done, you can then deploy or publish your project.
 
-If you're new to pipelines, or want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
+If you want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
 To create and activate an Anaconda environment and install Anaconda packages with `conda`, see [Run pipelines with Anaconda environments](./anaconda.md).
+
+## Create your first pipeline
+
+::: moniker range="azure-devops"
+
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+::: moniker-end
+
+### Get the code
+::: moniker range="azure-devops-2019"
+
+Import this repo into your Git repo in Azure DevOps Server 2019:
+
+::: moniker-end
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+```
+## Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+::: moniker-end
+
+### Create the pipeline
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+4. See the sections below to learn some of the more common ways to customize your pipeline.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### YAML
+1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
+
+``` yaml
+trigger:
+- master
+
+pool: Default
+
+steps:
+- script: python -m pip install --upgrade pip
+  displayName: 'Install dependencies'
+
+- script: pip install -r requirements.txt
+  displayName: 'Install requirements'
+```
+
+2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+
+3. Set the **Agent pool** and **YAML file path** for your pipeline. 
+
+4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+
+5. When you're ready to make changes to your pipeline, **Edit** it.
+
+6. See the sections below to learn some of the more common ways to customize your pipeline.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Build environment
 
@@ -62,6 +148,8 @@ jobs:
 
 ```
 You can add tasks to run using each Python version in the matrix.
+
+::: moniker-end
 
 ## Run Python scripts
 
@@ -145,7 +233,7 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
     pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
 ```
-
+::: moniker range="azure-devops"
 ### Run tests with Tox
 
 Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
@@ -222,6 +310,8 @@ Then, add a custom [script](../yaml-schema.md#script) that uses `twine` to publi
 ```
 
 You can also use Azure Pipelines to [build an image](containers/build-image.md) for your Python app and [push it to a container registry](containers/push-image.md).
+
+::: moniker-end
 
 ## Related extensions
 
