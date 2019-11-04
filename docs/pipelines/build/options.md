@@ -80,16 +80,16 @@ Specify the authorization scope for a build job. Select:
 
 ### Scoped build identities
 
-There are 2 built-in identities that used to execute pipelines.
+There are 2 built-in identities that we use to execute pipelines.
 
-* A collection-scoped identity, which has access to all projects in the collection or organization
+* A collection-scoped identity, which has access to all projects in the collection (or organization for Azure DevOps Services)
 * A project-scoped identity, which has access to a single project
 
  These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
  
 The collection-scoped identity name has the following format:
-- `Project Collection Build Service ({OrgName})`
-- For example, if the organization name is `fabrikam-tailspin`, this account has the name `Project Collection Build Service (fabrikam-tailspin)`.
+- `Project Collection Build Service ({OrgName})
+- For example, if the organization name is `fabrikam-tailspin`, this account would has the name `Project Collection Build Service (fabrikam-tailspin)`.
  
 The project-scoped identity name has the following format:
 - `{Project Name} Build Service ({Org Name})`
