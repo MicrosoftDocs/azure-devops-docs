@@ -1006,6 +1006,10 @@ When you're ready you can publish the draft to merge the changes into your build
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
+### How can I delete a pipeline?
+
+To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
+
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
