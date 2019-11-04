@@ -19,6 +19,6 @@ To learn what else you can do in YAML pipelines, see [YAML schema reference](../
 
 ### Clean up
 
-If you create some test pipelines, they are easy to remove. To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
+If you created any test pipelines, they are easy to delete when you are done with them. To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 
 ![Delete pipeline](../_img/get-started-yaml/delete-pipeline.png)
