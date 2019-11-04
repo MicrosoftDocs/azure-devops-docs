@@ -362,11 +362,13 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 <a id="delete"> </a> 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Delete work items  
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
+
+#### [Browser](#tab/browser/)
+
+::: moniker range=">= azure-devops-2019"
 
 1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
@@ -392,12 +394,6 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-## Delete work items 
- 
-::: moniker-end  
-
 ::: moniker range="tfs-2015"  
 
 > [!NOTE]  
@@ -406,8 +402,6 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -435,6 +429,46 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 ::: moniker-end
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="= azure-devops"
+
+You can delete a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+> [!NOTE] 
+> You can restore work items you **delete**, but cannot restore work items you choose to **destroy**.
+
+```CLI 
+az boards work-item delete --id
+                           [--destroy]
+                           [--org]
+                           [--project]
+                           [--yes] 
+``` 
+
+#### Parameters 
+
+- **id**: Required. The ID of the work item.
+- **destroy**: Optional. Permanently delete this work item.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Do not prompt for confirmation.
+
+#### Example 
+
+The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
+
+```CLI
+az boards work-item delete --id 864 --destroy --yes
+```
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 <a id="restore" />
 

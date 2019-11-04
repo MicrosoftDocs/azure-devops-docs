@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/22/2016
+ms.date: 11/04/2019
 ---
 
 # Service Endpoints in Azure DevOps Services
@@ -93,7 +93,11 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 <a name="customendpoint" />
 
 ### Add the custom endpoint contribution
+
 Add the following `contributions` array underneath the `targets` array of the basic manifest content. 
+
+> [!IMPORTANT]
+> Service connection parameters must be fetched by service connection ID.
 
 ```json
   "contributions": [
