@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/07/2019
+ms.date: 11/04/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -25,7 +25,7 @@ In this quickstart, learn how to manage paid access to [Azure Boards](https://az
 
 Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
-To view costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+To view costs for Azure DevOps, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## Prerequisites
 
