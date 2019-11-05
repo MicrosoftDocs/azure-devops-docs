@@ -80,7 +80,7 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
       'yarn | "$(Agent.OS)"'
-      yarn
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -158,7 +158,7 @@ steps:
     key: 'gems | "$(Agent.OS)" | my.gemspec'
     restoreKeys: | 
       'gems | "$(Agent.OS)"'
-      gems
+       gems
     path: $(BUNDLE_PATH)
   displayName: Cache gems
 
@@ -240,7 +240,7 @@ steps:
     key: 'maven | "$(Agent.OS)" | **/pom.xml'
     restoreKeys: |
       'maven | "$(Agent.OS)"'
-      maven
+       maven
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
@@ -263,7 +263,7 @@ steps:
     key: 'nuget | "$(Agent.OS)" | packages.lock.json'
     restoreKeys: |
       'nuget | "$(Agent.OS)"'
-      nuget
+       nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
@@ -288,7 +288,7 @@ steps:
     key: 'npm | "$(Agent.OS)" | package-lock.json'
     restoreKeys: |
       'npm | "$(Agent.OS)"'
-      npm
+       npm
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -314,7 +314,9 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
-    restoreKeys: 'yarn | "$(Agent.OS)"'
+    restoreKeys: |
+      'yarn | "$(Agent.OS)"'
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
