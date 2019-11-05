@@ -69,7 +69,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 ### Azure DevOps Server 2019
 
