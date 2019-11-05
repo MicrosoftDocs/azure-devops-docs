@@ -1,5 +1,5 @@
 ---
-title: Authoring Evaluation Policies
+title: Artifact policy checks
 description: Ensure artifacts adhere to custom policies
 ms.topic: reference
 ms.prod: devops
@@ -7,13 +7,13 @@ ms.technology: devops-cicd
 ms.manager: shashban
 ms.author: shashban
 author: shashankbansal
-ms.date: 10/31/2019
+ms.date: 11/05/2019
 monikerRange: 'azure-devops'
 ---
 
-# Authoring Artifact Evaluation Policies
+# Artifact policy checks
 
-Adding a Check to Evaluate Artifact requires the custom policy to be configured. This guide describes how custom policies can be created.
+Adding a check to evaluate Artifact requires the custom policy to be configured. This guide describes how custom policies can be created.
 
 > [!NOTE]
 > Currently, this Check works with container image artifacts only
