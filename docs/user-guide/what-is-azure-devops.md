@@ -109,7 +109,8 @@ You can acquire each service separately or all together as Azure DevOps Services
 
 We support a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
 
-![Documentation version selector](../_shared/_img/version-selector.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Documentation version selector](../_shared/_img/version-selector.png)
 
 ## Try these tasks next  
 
