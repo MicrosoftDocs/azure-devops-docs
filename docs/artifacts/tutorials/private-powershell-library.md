@@ -213,7 +213,7 @@ We now have the module and the module manifest. We are ready to package it and s
     nuget push -Source "PowershellModules" -ApiKey AzureDevOpsServices Get-Hello.nupkg
     ```
 
-After the `nuget.exe push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure Artifacts.
+After the `nuget push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure Artifacts.
 
 ## Connecting to the feed as a PowerShell repo
 
