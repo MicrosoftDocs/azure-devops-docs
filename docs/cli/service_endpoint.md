@@ -39,6 +39,10 @@ az devops service-endpoint azurerm create
 
 In interactive mode this command will ask for service principal password/secret using a prompt message, for automation purpose set service principal password/secret in `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
 
+```bash
+export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
+```
+
 ### Using client certificate
 
 If AAD application uses [certificate for authentification](/azure/active-directory/develop/active-directory-certificate-credentials) then create .pem for the certificate and pass path to .pem file in `--azure-rm-service-principal-certificate-path` argument.

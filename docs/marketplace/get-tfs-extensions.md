@@ -300,7 +300,7 @@ Users can install these extensions without requiring an external connection to M
 
    ![Browse local extensions](_img/get-devops-extensions/install-devops-extension-09.png)
 
-3. Choose the entension you want to install.
+3. Choose the extension you want to install.
 
    ![Choose a local extension](_img/get-devops-extensions/install-devops-extension-10.png)
 

@@ -53,12 +53,12 @@ None
 <p>Specify minimatch pattern filters (one on each line) that you want to apply to the list of files to be deleted. For example:
 </p>
 <ul>
-<li><code><strong>\*</strong></code> deletes all files and folders in the root folder.</li>
+<li><code>**/*</code> deletes all files and folders in the root folder.</li>
 <li><code>temp</code> deletes the temp folder in the root folder.</li>
 <li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with temp.</li>
-<li><code></strong>\temp*<em></code> deletes all files in any sub-folder named temp.</li>
-<li><code></em><em>\temp</em></code> deletes any file or folder with a name that begins with temp.</li>
-<li><code><strong>\temp*\</strong></code> deletes files in any sub-folder that begins with the name temp.</li>
+<li><code>**/temp/*<em></code> deletes all files in any sub-folder named temp.</li>
+<li><code>**/temp*</em></code> deletes any file or folder with a name that begins with temp.</li>
+<li><code>**/temp/*</strong></code> deletes files in any sub-folder that begins with the name temp.</li>
 </ul>
 </td>
 </tr>
