@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/15/2019
+ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -196,6 +196,9 @@ If your agent is running on these operating systems you can run the agent as a s
 
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
+
+> [!IMPORTANT]
+> If you run your agent as a service, you cannot run the agent service as `root` user.
 
 We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
 
