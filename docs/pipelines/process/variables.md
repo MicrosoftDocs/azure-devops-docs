@@ -129,7 +129,7 @@ You can set a variable for a build pipeline by following these steps:
 - Navigate to **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
 - Locate the **Variables** for this pipeline.
 - Add or update the variable.
-- To mark the variable as secret and store in an encrypted manner, select the ![Secret](_img/variables/secret-variable-icon.png) lock icon.
+- To mark the variable as secret, select **Keep this value secret**.
 - Save the pipeline.
 
 Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
