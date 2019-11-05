@@ -1,9 +1,9 @@
+- name: Overview
+  href: index.md
 - name: Azure Boards with Slack
   href: ../integrations/boards-slack.md
 - name: Azure Boards with Teams
   href: ../integrations/boards-teams.md
-- name: Extensions overview
-  href: index.md
 - name: Dependency Tracker
   href: dependency-tracker/overview.md
   items:  
