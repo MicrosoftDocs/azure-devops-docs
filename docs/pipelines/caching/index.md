@@ -77,9 +77,9 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-      yarn | $(Agent.OS)
+      'yarn | "$(Agent.OS)"'
       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
@@ -155,9 +155,9 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: gems | $(Agent.OS) | my.gemspec
+    key: 'gems | "$(Agent.OS)" | my.gemspec'
     restoreKeys: | 
-      gems | $(Agent.OS)
+      'gems | "$(Agent.OS)"'
       gems
     path: $(BUNDLE_PATH)
   displayName: Cache gems
@@ -183,7 +183,7 @@ steps:
 
 - task: CacheBeta@0
   inputs:
-    key: ccache | $(Agent.OS)
+    key: 'ccache | "$(Agent.OS)"'
     restoreKeys: ccache
     path: $(CCACHE_DIR)
   displayName: ccache
@@ -208,7 +208,7 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: gradle | $(Agent.OS)
+    key: 'gradle | "$(Agent.OS)"'
     restoreKeys: gradle
     path: $(GRADLE_USER_HOME)
   displayName: Gradle build cache
@@ -237,9 +237,9 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: maven | $(Agent.OS) | **/pom.xml
+    key: 'maven | "$(Agent.OS)" | **/pom.xml'
     restoreKeys: |
-      maven | $(Agent.OS)
+      'maven | "$(Agent.OS)"'
       maven
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
@@ -260,9 +260,9 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: nuget | $(Agent.OS) | packages.lock.json
+    key: 'nuget | "$(Agent.OS)" | packages.lock.json'
     restoreKeys: |
-      nuget | $(Agent.OS)
+      'nuget | "$(Agent.OS)"'
       nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
@@ -285,9 +285,9 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: npm | $(Agent.OS) | package-lock.json
+    key: 'npm | "$(Agent.OS)" | package-lock.json'
     restoreKeys: |
-      npm | $(Agent.OS)
+      'npm | "$(Agent.OS)"'
       npm
     path: $(npm_config_cache)
   displayName: Cache npm
@@ -313,8 +313,8 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
-    restoreKeys: yarn | $(Agent.OS)
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    restoreKeys: 'yarn | "$(Agent.OS)"'
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -334,13 +334,13 @@ If you experience problems enabling caching for your project, first check the li
 Clearing a cache is currently not supported. However you can add a string literal (e.g. `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
 
 ```yaml
-key: yarn | $(Agent.OS) | yarn.lock
+key: 'yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
 to this:
 
 ```yaml
-key: version2 | yarn | $(Agent.OS) | yarn.lock
+key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
 ### When does a cache expire?
