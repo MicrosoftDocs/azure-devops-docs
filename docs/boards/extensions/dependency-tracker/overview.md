@@ -1,7 +1,7 @@
 ---
-title: Use the Dependency Tracker to plan and track dependencies across teams and organizations
+title: Plan and track dependencies across teams and organizations using the Dependency Tracker extension
 titleSuffix: Azure DevOps
-description: Learn how to work with the dependency tracker  
+description: Learn how to track dependencies your team has on other teams with the dependency tracker  
 ms.custom: extensions
 ms.technology: devops-new-user 
 ms.technology: devops-agile
@@ -12,10 +12,10 @@ ms.reviewer: chesing
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ---
 
-# Dependency Tracker extension for Azure Boards
+# Plan and track dependencies using the Dependency Tracker extension
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
@@ -23,16 +23,12 @@ ms.date: 10/31/2019
 <!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency --> 
 
 
-The [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These view allow you  to view the state of the dependencies as well as their timing to help support you in assessing the risk of the dependencies. 
+The [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you  to track the state of the dependencies as well as their timing to help support you in assessing the risk of dependencies to deliverables. 
 
 > [!NOTE]   
 > The Dependency Tracker extension is only available on Azure DevOps Services at this time. 
 
-You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development.  
-
-## Key concepts
-
-For any given dependency, there are two parties involved: 
+You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
 - **Consumer**: Feature team who has a need and initiates a request for work
 - **Producer**: Feature team who makes a commitment to deliver work 
 
@@ -49,18 +45,18 @@ You can use the Dependency Tracker to visualize and track:
 - Dependencies you have on other teams for work that your team is delivering 
 - Dependencies that other teams have on work your team is delivering 
 
+All teams across organizations can participate in tracking dependencies. 
 
 ## Prerequisites
 
 - Install the [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) for the organization(s) for which you want to track dependencies.
+- To view dependencies, you must be a member of the Project Valid Users group for the project.  
 - To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
-- Configuration? 
-- Partnership 
-- Azure Boards must be enabled as a service. If it is disabled, then you'll need to have it reenabled. For details, see [](). 
+- To support cross-organization participation, all organizations must authenticate users through the same [Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
+- Azure Boards must be enabled as a service. If it is disabled, then you'll need to have it reenabled. For details, see [Turn a service on or off](../../organizations/settings/set-services.md). 
 
 
 ## Open the Dependency Tracker
-
 
 1. Open the web portal for the project where your team is defined.  
 
@@ -69,7 +65,7 @@ You can use the Dependency Tracker to visualize and track:
 	> [!div class="mx-imgBorder"]  
 	> ![Select Dependency Tracker from Azure Boards](_img/select-dependency-tracker.png)
 
-1. To focus on your area of ownership, choose the **Area** that corresponds to the team you want to view dependecies for.   
+1. To focus on your area of ownership, choose the **Area** that corresponds to the team you want to view dependencies for.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select Area](_img/choose-area-path.png)
@@ -93,10 +89,7 @@ A dependency represents work where one team is dependent on another team. Both t
 	> [!div class="mx-imgBorder"]  
 	> ![Create a dependency, choose two existing work items to link](_img/create-dependency.png)
 
-1.  Choose **Save**.	
-
-	> [!TIP]   
-	> The **Save** button becomes available only after you've chosen two work items to link.  
+1.  Choose **Save**. The **Save** button becomes available only after you've chosen two work items to link.  	
 
 1. From the success confirmation dialog, choose **View dependency**. 
 
@@ -247,11 +240,11 @@ Notify the consumer (copy the producer) when the producer has moved out the iter
 
 <a id="configuration" /> 
 
-## Configuration
+## Configure the Dependency Tracker
 
 You can customize the configuration used in the Dependency Tracker as follows: 
 
-- The link type to use to create dependency links  
+- The link type to use to create dependency links. Default is Successor/Predecessor. Only customize if you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  
 - Work items 
 	- Work item category states and colors 
 	- Work item display states and colors
