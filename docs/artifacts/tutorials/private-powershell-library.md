@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
 > [!NOTE]
-> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../start-using-azure-artifacts.md).
+> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../start-using-azure-artifacts.md). Regardless of the license, make note of that Azure DevOps Services doesn't not support Anonymous Authentication over HTTP.
 
 In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShell repository that your team can download and upload PowerShell modules to. You'll complete the following steps:
 
@@ -27,9 +27,6 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 > * Create a feed within Azure Artifacts that will be used to store your PowerShell modules
 > * Create, package, and send a PowerShell module to your Azure Artifacts Feed
 > * Connect to the feed from PowerShell to see and download your modules  
-
-> [!NOTE]
-> Azure DevOps Services doesn't allow for anonymous authentication.
 
 ## Prerequisites
 
