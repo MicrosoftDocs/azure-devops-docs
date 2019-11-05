@@ -191,6 +191,9 @@ Select if you want to download files from [submodules](https://git-scm.com/book/
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
 
+> [!NOTE]
+> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](../yaml-schema.md#checkout).
+
 The build pipeline will check out your Git submodules as long as they are:
 
 * **Unauthenticated:**  A public, unauthenticated repo with no credentials required to clone or fetch.
