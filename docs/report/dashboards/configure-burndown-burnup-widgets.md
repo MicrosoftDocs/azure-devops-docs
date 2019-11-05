@@ -88,13 +88,13 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 ::: moniker range="azure-devops"
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. Choose the ![  ](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.  
+1. To open the configuration dialog, choose the ![  ](../../_img/icons/actions-icon.png) actions icon and select the **Configure** option.  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. Choose the ![  ](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.  
+1. To open the configuration dialog, choose the ![  ](../../_img/icons/actions-icon.png) actions icon and select the **Configure** option.   
 ::: moniker-end
 
 
