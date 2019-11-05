@@ -108,8 +108,8 @@
     items:
     - name: Azure Container Registry
       href: ecosystems/containers/acr-template.md
-    - name: Authoring Evaluation policies
-      href: ecosystems/evaluation-policy.md
+    - name: Artifact policy checks
+      href: process/evaluation-policy.md
     - name: Azure Kubernetes Service
       href: ecosystems/kubernetes/aks-template.md
     - name: Kubernetes canary deployments

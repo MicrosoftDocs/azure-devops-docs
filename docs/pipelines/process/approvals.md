@@ -70,7 +70,7 @@ To define a custom policy evaluation over the artifact(s), follow the below step
    > [!div class="mx-imgBorder"]
    > ![evaluate-artifact](_img/checks/evaluate-artifact.png)
 
-4. Paste the policy definition and click **save**. See more about writing policy definitions.
+4. Paste the policy definition and click **Save**. [See more](evaluation-policy.md) about writing policy definitions.
 
     > [!div class="mx-imgBorder"]
     > ![policy-definition](_img/checks/policy-definition.png)
