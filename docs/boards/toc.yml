@@ -81,22 +81,22 @@
 - name: Integrations and extensions
   items:
   - name: Overview
-    href: index.md
+    href: ./extensions/index.md
   - name: Azure Boards with Slack
-    href: ../integrations/boards-slack.md
+    href: ./integrations/boards-slack.md
   - name: Azure Boards with Teams
-    href: ../integrations/boards-teams.md
+    href: ./integrations/boards-teams.md
   - name: Dependency Tracker
-    href: dependency-tracker/overview.md
+    href: ./extensions/dependency-tracker.md
     items:  
     - name: Create a dependency
-      href: dependency-tracker/create-dependency.md
+      href: ./extensions/dependency-tracker/create-dependency.md
     - name: Dependency views
-      href: dependency-tracker/view-dependencies.md
+      href: ./extensions/dependency-tracker/view-dependencies.md
     - name: Timeline
-      href: dependency-tracker/timeline.md  
+      href: ./extensions/dependency-tracker/timeline.md  
     - name: Risk graph
-      href: dependency-tracker/risk-graph.md        
+      href: ./extensions/dependency-tracker/risk-graph.md        
   - name: Project Server Integration (Deprecated)
     href: ../../reference/tfs-ps-sync/index.md
 - name: REST API Reference
