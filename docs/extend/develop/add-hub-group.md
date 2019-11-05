@@ -14,9 +14,10 @@ ms.date: 08/04/2016
 
 # Add a hub group
 
-We'll create a hub group and add hub to it.
-If you haven't already, [create the Hello hub](./add-hub.md) first,
-then follow these steps to create the hub group.
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
+We'll create a hub group and add a hub to it.
+If you haven't already, [create the Hello hub](./add-hub.md) first, andmthen follow these steps to create the hub group.
 
 [!INCLUDE [Hub_group](../_shared/procedures/create-hub-group.md)]
 

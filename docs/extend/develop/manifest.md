@@ -16,6 +16,8 @@ ms.date: 10/09/2019
 
 Every extension has a JSON manifest file which defines basic info about the extension and how it can extend and enhance the experience. This article shows you how to create a manifest for your extensions to Azure DevOps.
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
 
 Here is an example of what a typical manifest will look like:
