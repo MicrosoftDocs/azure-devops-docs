@@ -172,9 +172,13 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 > [!NOTE]   
 > Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items which XXXX to w ork items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
 
-### Supported drilldowns 
+### Supported dril-ldowns 
 
 Several views provide interative visualization through drilldowns. 
+
+
+> [!div class="mx-imgBorder"]  
+> ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
 
 ### Multi-select options 
 
