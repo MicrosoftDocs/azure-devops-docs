@@ -66,7 +66,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 1.  Save or upload your storyboard to a shared location that everyone on your team can access.
 
-2.  If you started Power Point Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
+2.  If you started PowerPoint Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 
