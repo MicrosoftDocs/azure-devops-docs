@@ -196,7 +196,7 @@
       href: test/review-code-coverage-results.md
     - name: Code coverage for pull requests
       href: test/codecoverage-for-pullrequests.md    
-    - name: Trace test requirements
+    - name: Requirements traceability
       href: test/requirements-traceability.md
     - name: Use Test Impact Analysis
       href: test/test-impact-analysis.md
