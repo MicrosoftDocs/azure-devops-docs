@@ -234,7 +234,6 @@
       href: targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
-
 - name: Concepts
   items:
   - name: Agents
@@ -307,6 +306,9 @@
   - name: Jobs
     href: process/phases.md
     displayName: phases, stages, job type, dependencies, conditions, timeouts, multi-configuration, slicing, job variables, artifact download, oauth token
+  - name: Library
+    href: library/index.md
+    displayName: security roles, variable groups, secure files
   - name: Parallel jobs (licensing)
     href: licensing/concurrent-jobs.md
   - name: Permissions
@@ -364,6 +366,7 @@
     href: library/secure-files.md
   - name: Service connections
     href: library/service-endpoints.md
+    displayName: service endpoints
   - name: Service containers
     href: process/service-containers.md
   - name: Stages

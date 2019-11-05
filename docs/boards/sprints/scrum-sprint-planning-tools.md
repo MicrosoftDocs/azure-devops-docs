@@ -92,7 +92,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>
 <b>Sprint burndown chart</b>
 </p>
-<p>You use the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
+<p>You use the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
 <p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
 </td>
 <td>
