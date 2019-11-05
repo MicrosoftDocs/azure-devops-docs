@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/21/2019
+ms.date: 11/08/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,19 +18,18 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Create a project to establish a repository for source code. A group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Each project must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
+This article describes how to use Azure DevOps to establish a repository for source code. A group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Each project must be managed and structured to support your business needs. To learn more about projects and when to create one, see [About projects and scaling your organization](about-projects.md).
 
 > [!NOTE]
 > This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
 
-If you have a project already, see one of the following topics: [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
+If you have a project already, see one of the following articles: [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
-> If you don't want to manage an on-premises server, you can sign up for Azure DevOps Services and create a project. For more information, see [
-Quickstart: Create an organization or project collection](../accounts/create-organization.md).
+> If you don't want to manage an on-premises server, you can sign up for Azure DevOps Services and create a project. For more information, see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).
 ::: moniker-end
 
 ## Prerequisites
@@ -67,7 +66,7 @@ Quickstart: Create an organization or project collection](../accounts/create-org
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]  
-> To create a Public project, or to make a private project public, see [Create a public project in your organization](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects.
+> To create a public project, or to make a private project public, see [Create a public project in your organization](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects.
 
 ::: moniker-end
 
@@ -93,7 +92,7 @@ When you create a project, the main options you specify are:
    > [!div class="mx-imgBorder"]  
    > ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
 
-1. Enter information into the form provided. Provide a name for your project, and choose the visibility, initial source control type, work item process. For guidance, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md). If the **Public** option is grayed out, you need to change the policy.
+1. Enter information into the form provided. Provide a name for your project. Choose the visibility, initial source control type, and work item process. For guidance, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md). If the **Public** option is grayed out, you need to change the policy.
 
    > [!div class="mx-imgBorder"]  
    > ![Create new project form, latest vsts](_img/create-project/create-new-project-form-new-nav.png)  
@@ -155,12 +154,10 @@ When you create a project, the main options you specify are:
 
 1. Fill out the form provided. Provide a name for your new project, initial source control type, work item process.
 
-   Upon successful completion, the project summary displays. To learn more, see [Share your project vision, view project activity](project-vision-status.md).
+   On completion, the project summary displays. To learn more, see [Share your project vision, view project activity](project-vision-status.md).
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
-
-
 
 ::: moniker-end
 
@@ -180,12 +177,12 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 >
 > If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).
 
-1. If you have TFS 2015.2 or a later version, choose the gear to open the **Projects** page. ![Settings Icon (TFS Web Portal)](../../_img/icons/gear-icon.png) Then choose **New Project**.
+1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. ![Settings button (TFS Web Portal)](../../_img/icons/gear-icon.png) Then choose **New Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-project/gearicon.png) gear icon at the top of the page and choose **Server settings**. Then choose **New project...**.
+	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the gear button. ![Settings button (TFS Web Portal)](_img/rename-project/gearicon.png) Then select **Server settings** and choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](_img/create-project/new-team-project-tfs-2017.png)
@@ -330,7 +327,7 @@ The following command creates a new project named *MyFirstProject* under the Fab
 C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --process Agile --source-control  git --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name             Visibility    Process    Source Control
 ------------------------------------  ---------------  ------------  ---------  ----------------
-d45ea33b-c61a-4b38-bb84-eccca71de2f1  MyFirstProject1  Private       Agile      Git
+be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
 ```
 
 ::: moniker-end
@@ -359,7 +356,7 @@ Connect to a project, collection, or server from your web browser.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-org-settings.png)  
 
-	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md).
+	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 ::: moniker-end  
 
@@ -377,18 +374,18 @@ Connect to a project, collection, or server from your web browser.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
 
-	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md).
+	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2017"  
 
-Open the administration overview page by choosing the gear icon and choose **Collection settings**. ![Settings Icon (TFS Web Portal)](../../_img/icons/gear-icon.png)
+Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (TFS Web Portal)](../../_img/icons/gear-icon.png)
 
 > [!div class="mx-imgBorder"]  
 > ![Overview tab, Project list, Collection settings](_img/create-project/list-projects-2017.png)
 
-You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [Rename a project](rename-project.md) or [Delete a project](delete-project.md).
+You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 ::: moniker-end  
 
@@ -442,16 +439,16 @@ The following command lists the projects defined under the Fabrikam organization
 C:\WINDOWS\system32>az devops project list --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name                Visibility
 ------------------------------------  ------------------  ------------
-9a61d475-b1a7-4da7-b9db-80df15ac985c  Agile 11            Private
-e743b28e-6f7c-4483-8716-224c8520dd0f  CMMI                Private
-14c92f9d-9fff-48ec-8171-9d1106056ab3  Demo 11             Private
-1965830d-5fc4-4412-8c71-a1c39c939a42  Design Agile        Private
-56af920d-393b-4236-9a07-24439ccaa85c  Fabrikam Fiber      Private
-69265579-a1e0-4a30-a141-ac9e3bb82572  Fabrikam Test       Private
-131271e0-a6ad-49ba-837e-2d475ab2b169  My Basic Project    Private
-5417a1c3-4b04-44d1-aead-50774b9dbf5f  MyFirstProject      Private
-c932f260-5805-4ba0-9a70-b448de20dda8  MyPublicProject     Public
-0611925a-b287-4b0b-90a1-90f1a96e9f1f  Scrum 2.0           Private
+647c53b6-01aa-462a-adb7-da81d5620167  Agile 11            Private
+c5dd744a-574b-4308-925f-386415dc6efc  CMMI                Private
+d4195a58-96a9-4753-bbf9-4c0a4ef178e0  Demo 11             Private
+80bb92c7-49b2-43db-9843-3baf8f64b85d  Design Agile        Private
+5444a5d2-6bd9-4ad1-a25d-eea59855c2a9  Fabrikam Fiber      Private
+36946972-3a77-4bb4-875e-2f66a0f4652c  Fabrikam Test       Private
+29bb9642-45f2-42bf-b391-f8701999c5fc  My Basic Project    Private
+7aafdbeb-8de1-4e84-978f-d0ee4595b90e  MyFirstProject      Private
+aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
+36ca09d1-9de0-4e3e-8277-e10b5cb96f7c  Scrum 2.0           Private
 
 ```
 
@@ -474,14 +471,14 @@ az devops project show --project
 
 #### Example
 
-The following command lists information for MyFirstProject under the Fabrikam organization and opens it in the web portal. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+The following command lists information for `MyFirstProject` under the Fabrikam organization and opens it in the web portal. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
 C:\WINDOWS\system32>az devops project show --project MyFirstProject --open --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name            Visibility    Process            Source Control
 ------------------------------------  --------------  ------------  -----------------  ----------------
-5417a1c3-4b04-44d1-aead-50774b9dbf5f  MyFirstProject  Private       Scrum - Inherited  Git
+40751c1d-236b-418d-9df4-d5cc7c0e7bd6  MyFirstProject  Private       Scrum - Inherited  Git
 
 ```
 
