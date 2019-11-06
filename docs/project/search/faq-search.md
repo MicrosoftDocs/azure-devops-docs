@@ -9,12 +9,12 @@ ms.manager: mijacobs
 ms.author: sunar
 author: chcomley
 ms.date: 11/06/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
 # Troubleshoot Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header-tfs-only](../../_shared/version-header-tfs-only.md)]
 
 - [Troubleshoot Search](#troubleshoot-search)
   - [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
@@ -32,8 +32,6 @@ monikerRange: '>= tfs-2017'
     - [Problem](#problem-1)
     - [Explanation](#explanation-1)
     - [Recommendation](#recommendation-1)
-
-::: moniker range="<= azure-devops-2019"
 
 <a name="no-search-box"></a>
 
@@ -124,8 +122,6 @@ A:
 
 A: If the search is set up on a separate (remote) server and source version is TFS 2018 Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
 If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
-
-::: moniker-end
 
 ## Partial results in code search
 
