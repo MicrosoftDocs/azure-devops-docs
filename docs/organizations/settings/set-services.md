@@ -37,7 +37,7 @@ You can control which services are available through the web portal by turning a
 
 ## Change the visibility for a service  
 
-1. 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
