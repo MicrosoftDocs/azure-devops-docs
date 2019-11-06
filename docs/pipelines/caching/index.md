@@ -254,7 +254,7 @@ If you use `PackageReferences` to manage NuGet dependencies directly within your
 
 ```yaml
 variables:
-  PACKAGES_PATH: $(Pipeline.Workspace)/.nuget/packages
+  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 steps:
 - task: CacheBeta@0
