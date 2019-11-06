@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 11/01/2019
 ---
 
 
@@ -58,10 +58,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 2. Choose **Project Settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project groups](_img/permissions/project-permisions-s154.png)
+	![Open Project settings, and then Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
 
-1. Under **Groups**, choose one of the following options:
+3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
    - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
