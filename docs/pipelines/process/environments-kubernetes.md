@@ -151,4 +151,4 @@ Below is an example YAML snippet for adding Review App to an **existing** pipeli
                 $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-For setting up review apps without the need to author the above YAML from scratch, checkout new pipeline creation experience using the [Deploy to Azure Kubernetes Services template](../ecosystems/aks-template.md)
+For setting up review apps without the need to author the above YAML from scratch, checkout new pipeline creation experience using the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md)
