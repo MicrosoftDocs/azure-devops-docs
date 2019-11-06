@@ -32,7 +32,7 @@ A project defines a process and data storage in which you manage your software p
 
 - If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
-- From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, configure your client to [connect to a TFS Proxy server](#proxy).
+- From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 
 - To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
@@ -280,9 +280,9 @@ In addition, you can provide access to Stakeholders in your organization who hav
 
 <a name="proxy"></a>
 
-## Configure Visual Studio to connect to TFS Proxy
+## Configure Visual Studio to connect to Azure DevOps Proxy Server
 
-If your remote team uses a [TFS Proxy server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 
@@ -290,7 +290,7 @@ If your remote team uses a [TFS Proxy server](/azure/devops/server/install/insta
 
     ![Plug-in Selection page, Options dialog box](_img/connect-projects-tfs/IC719960.png)
 
-3.  On the Visual Studio Team Foundation Server page, enter the name and port number for the TFS Proxy server. Select the **Use SSL encryption (https) to connect** checkbox.
+3.  On the Visual Studio Team Foundation Server page, enter the name and port number for the Azure DevOps Proxy Server. Select the **Use SSL encryption (https) to connect** checkbox.
 
     ![VS TFVC proxy configuration page, Options dialog](_img/connect-projects-tfs/IC719961.png)
 
