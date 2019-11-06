@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
 
-Azure DevOps provides an integrated set of features. You can access the features through your web browser or IDE client. You can acquire one or more of the following services based on your business needs:
+Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use one or more of the following services based on your business needs:
 
 - **Azure Repos** provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code
 - **Azure Pipelines** provides build and release services to support continuous integration and delivery of your apps
@@ -28,7 +28,7 @@ Azure DevOps provides an integrated set of features. You can access the features
 - **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing
 - **Azure Artifacts** allows teams to share Maven, npm, and NuGet packages from public and private sources and integrate package sharing into your CI/CD pipelines
 
-You can also acquire collaboration tools that include the following:
+You can also use collaboration tools such as:
 
 - Customizable team dashboards with configurable widgets to share information, progress, and trends
 - Built-in wikis for sharing information
@@ -36,11 +36,15 @@ You can also acquire collaboration tools that include the following:
 
 Azure DevOps supports adding extensions and integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
-For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services vs. Azure DevOps Server](about-azure-devops-services-tfs.md).
+For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
+
+<a name="name-changes"></a>Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [Introducing Azure DevOps](https://aka.ms/azurevsts).
+
+Team Foundation Server became Azure DevOps Server 2019.
 
 ## Choose Azure DevOps Services
 
-Choose Azure DevOps Services when you want the following results:
+Choose Azure DevOps Services when you want:
 
 - Quick set-up
 - Maintenance-free operations
@@ -48,13 +52,11 @@ Choose Azure DevOps Services when you want the following results:
 - Elastic scale
 - Rock-solid security
 
-To learn more about data protection, see [Data protection overview](../organizations/security/data-protection.md).
+To learn more about data protection in Azure DevOps Services, see [Data protection overview](../organizations/security/data-protection.md).
 
-You also have access to cloud build and deployment servers, and application insights.
+Azure DevOps Services also gives you access to cloud build and deployment servers, and application insights.
 
-We've made it easy for you to start for free and try out our services.
-
-Sign up for free by creating an organization. Then, either upload your code to share or source control. Begin tracking your work using Scrum, Kanban, or a combination of methods.
+We've made it easy for you to start for free and try out our services. Sign up for free by creating an organization. Then, either upload your code to share or source control. Begin tracking your work using Scrum, Kanban, or a combination of methods.
 
 You can use all the services included with Azure DevOps, or choose just what you need to complement your existing workflows.
 
@@ -64,10 +66,10 @@ You can use all the services included with Azure DevOps, or choose just what you
 
 ## Choose Azure DevOps Server
 
-Choose on-premises Azure DevOps Server when your business needs require:
+Choose on-premises Azure DevOps Server when you need:
 
 - Your data to stay within your network.
-- Your work tracking customization requirements are met better with the On-premises XML process model over the Inheritance process model. The On-premises model supports modification of XML definition files.
+- Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
 
 When you deploy Azure DevOps Server, you can also configure the following servers or integration points:
 
@@ -78,17 +80,9 @@ Start for free by downloading [Azure DevOps Server Express](https://go.microsoft
 
 To learn more about managing Azure DevOps Server, see the [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
 
-## Name changes
+## Visual Studio Team Services is now Azure DevOps Services<a id="vsts" />
 
-On September 10, 2018, Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [Introducing Azure DevOps](https://aka.ms/azurevsts).
-
-On November 19, 2018, Team Foundation Server had a Release Candidate as **Azure DevOps Server 2019 RC 1**. Team Foundation Server is the on-premises server software for developer collaboration and DevOps services.
-
-<a id="vsts" />
-
-### Visual Studio Team Services is now Azure DevOps Services
-
-Many of the featured services in VSTS are now offered as standalone services in both Azure DevOps Services and Azure DevOps Server RC 1:
+Many of the featured services in VSTS are now offered as standalone services in both Azure DevOps Services and Azure DevOps Server 2019. You can get services separately or all together as Azure DevOps Services. If you're an Azure DevOps subscriber, you have access to all of the services already.
 
 > | VSTS feature name    | Azure DevOps service name | Description |
 > |----------------------|----------------------|-------------|
@@ -100,14 +94,14 @@ Many of the featured services in VSTS are now offered as standalone services in 
 
 Both Azure DevOps Services and Azure DevOps Server 2019 use the new navigation user interface, with a vertical sidebar to navigate to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation in Azure DevOps](../project/navigation/index.md).
 
-You can acquire each service separately or all together as Azure DevOps Services. If you're already a VSTS subscriber, you have access to all of the services now.  
-
 > [!NOTE]
 > You can disable select services from the user interface. For more information, see [Turn a service on or off](../organizations/settings/set-services.md).
 
+You can still use `visualstudio.com` to access Azure DevOps Services. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
+
 ## Choose your content version
 
-We support a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
+This content supports a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
 
    > [!div class="mx-imgBorder"]  
    > ![Documentation version selector](../_shared/_img/version-selector.png)
@@ -126,9 +120,6 @@ We support a platform/version selector. Toggle the Content version selector drop
 - [Azure DevOps release notes](/azure/devops/release-notes/index)
 - [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
 
-### Can I still use visualstudio.com to access Azure DevOps Services?
-
-Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
 
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
