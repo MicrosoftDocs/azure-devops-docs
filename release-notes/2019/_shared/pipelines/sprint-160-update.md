@@ -203,7 +203,7 @@ We have seen a steady increase in the use of cron syntax for specifying schedule
 
 ### Updates to the ARM template deployment task
 
-Previously, we didn't filter the service connections in the ARM template deployment task. This may result in you selecting a lower scope service connection to perform ARM template deployments to a broader scope. Now, we added filtering of service connections to filter out lower scoped service connections based on the deployment scope you choose.
+Previously, we didn't filter the service connections in the ARM template deployment task. This may result in the deployment to fail if you are selecting a lower scope service connection to perform ARM template deployments to a broader scope. Now, we added filtering of service connections to filter out lower scoped service connections based on the deployment scope you choose.
 
 ### Project level security for service connections
 

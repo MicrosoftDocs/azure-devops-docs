@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 10/23/2019
+ms.date: 11/05/2019
 ---
 
 # Set user preferences
@@ -23,11 +23,40 @@ From your profile page, you can change your picture or other account preferences
 - Change your picture
 - Change your display name
 - Change your preferred email
+- Change your directory
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 ## Change profile settings  
 
 ::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. To change your user preferences, open your profile menu, and then select **Azure DevOps profile**.
+
+   ![Open Azure DevOps profile](_img/open-profile-user-settings-preview.png)
+
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+
+   ![Edit the About page](_img/edit-about-page-preview.png)
+
+3. From your profile menu, select the ... next to Azure DevOps profile, and then select **Switch directory**. 
+
+   ![Switch your Azure Active Directory](_img/switch-directory-azure-ad.png)
+
+   Select a different directory, and then select **Switch**.
+
+   ![Select a different directory, and then select Switch](_img/select-directory-and-switch.png)
+
+4. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
+
+   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences-preview.png)
+
+
+#### [Current page](#tab/current-page) 
 
 1. To change your user preferences, open your profile menu, and then select **User settings**.
 
@@ -37,7 +66,15 @@ From your profile page, you can change your picture or other account preferences
 
    ![Edit the About page](_img/edit-about-page.png)
 
-3. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
+3. From the Azure Active Directory tab, select **Switch directory**. 
+
+   ![Switch your Azure Active Directory](../accounts/_img/change-azure-ad-connection.md/select-switch-directory.png)
+
+   Select a different directory, and then select **Switch**.
+
+   ![Select a different directory, and then select Switch](_img/select-directory-and-switch.png)
+
+4. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
 
    ![Set time and locale preferences](_img/set-time-and-locale-user-preferences.png)
 
@@ -85,6 +122,8 @@ From your profile page, you can change your picture or other account preferences
 	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
+
+* * *
 
 ## Related articles
 
