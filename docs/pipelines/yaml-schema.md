@@ -274,6 +274,8 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
 ```
 
+For more information about workspace, including clean options, see the [workspace](process/phases.md#workspace) section in [Jobs](process/phases.md). 
+
 # [Example](#tab/example)
 
 ```yaml
@@ -289,7 +291,8 @@ jobs:
 
 ---
 
-Learn more about [variables](process/variables.md?tabs=yaml), [steps](#steps), [pools](#pool), and [server jobs](#server),.
+Learn more about [variables](process/variables.md?tabs=yaml), [steps](#steps), [pools](#pool), and [server jobs](#server).
+
 
 > [!Note]
 > If you have only one stage and one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
