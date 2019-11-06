@@ -28,7 +28,6 @@ Newly created projects contain a single, root Area Path that corresponds to the 
 
 [!INCLUDE [temp](../../_shared/version-selector.md)]
 
-
 ## Prerequisites
 
 <a name="permissions"></a>
@@ -37,7 +36,6 @@ Newly created projects contain a single, root Area Path that corresponds to the 
 - To add an Iteration Path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
 - Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 - To set team Iteration Paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
-
 
 For naming restrictions on Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
@@ -95,11 +93,21 @@ Define both areas and iterations for a project from the **Project settings > Wor
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-preview.png)   
 
-::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
+From the web portal, open **Project Settings**.
+
+Define both areas and iterations for a project from the **Project configuration > Iterations**. 
+
+1. From the web portal, choose **Project settings**(1), select **Project configuration**(2), and then **Iterations**(3) .   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-vert.png)   
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019"
 
 From the web portal, open **Project Settings**.
 
