@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: sunar
 author: chcomley
-ms.date: 10/25/2019
+ms.date: 11/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -32,6 +32,8 @@ monikerRange: '>= tfs-2017'
     - [Problem](#problem-1)
     - [Explanation](#explanation-1)
     - [Recommendation](#recommendation-1)
+
+::: moniker range="<= azure-devops-2019"
 
 <a name="no-search-box"></a>
 
@@ -120,8 +122,10 @@ A:
 
 ## Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?
 
-A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
+A: If the search is set up on a separate (remote) server and source version is TFS 2018 Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
 If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
+
+::: moniker-end
 
 ## Partial results in code search
 
