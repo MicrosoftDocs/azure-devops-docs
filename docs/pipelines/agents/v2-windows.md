@@ -35,9 +35,16 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [Windows system prerequisites](https://aka.ms/vstsagentwinsystem).
+Make sure your machine has these prerequisites:
+- Windows 7, 8.1, or 10 (if using a client OS)
+- Windows 2008 R2 SP1 or higher (if using a server OS)
+- [PowerShell 3.0](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) or higher
 
-If you're building from a Subversion repo, you must install the Subversion client on the machine.
+Recommended:
+- [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
+- [.NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/install/) 4.5 or higher
+
+If you're building from a Subversion repo, you must install the [Subversion client](https://subversion.apache.org/) on the machine.
 
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
