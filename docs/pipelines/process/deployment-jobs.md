@@ -55,9 +55,9 @@ jobs:
 
 ### Deployment strategies:
 
-When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, route traffic to the updated version, testing the updated version after routing traffic and in case of failure, run steps to restore to last known good version. We achieve this using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, routing traffic to the updated version, testing the updated version after routing traffic and in case of failure, running steps to restore to last known good version. We achieve this by using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
 
-Following are descriptions of the lifecycle hooks
+Following are the descriptions of lifecycle hooks:
 
 **preDeploy** – Used to run steps before the `deploy` lifecycle hook is executed.
 
@@ -68,6 +68,13 @@ Following are descriptions of the lifecycle hooks
 **postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
 
 **on: failure or on success** - Used to run the steps to peform rollback actions or clean-up. 
+
+Following variables are available to all lifecycle hooks:
+`strategy.action`
+`strategy.increment`
+`strategy.name`
+
+
 
 Here is the syntax of the deployment strategies supported:
 
@@ -104,6 +111,7 @@ strategy:
           steps:
           ...
 ```
+
 
 ### Canary deployment strategy:
 
@@ -143,6 +151,11 @@ strategy:
 Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
 
  
+The following variables are available in this strategy:
+`strategy.name`: Name of the strategy. Eg, canary.
+`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote and reject.
+`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
+
 
 
 ## Examples
