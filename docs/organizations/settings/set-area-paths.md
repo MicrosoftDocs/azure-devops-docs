@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/01/2019
+ms.date: 11/07/2019
 ---
 
 # Define area paths and assign to a team
@@ -215,7 +215,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
     > [!div class="mx-imgBorder"]  
     > ![Add a new area path](_img/areas/new-area-vert.png) 
 
-#### [Current page](#tab/current-page
+#### [Current page](#tab/current-page)
 
 If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
 
@@ -583,8 +583,6 @@ The default area path determines the default area path assigned to work items th
 
 > [!IMPORTANT]  
 > Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"  
 
 1. Open **Areas** for the team context.  
 
