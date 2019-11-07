@@ -91,7 +91,7 @@ You can add each of the in-context Analytics reports to a dashboard.
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/add-analytics-chart.png)  
 
-	To open a report, see [Cumulate Flow Diagram](cumulative-flow.md#view-the-cfd-in-context-report), [Velocity](team-velocity.md#view-the-velocity-in-context-report), or [Sprint burndown](../../boards/sprints/sprint-burndown.md#view-the-sprint-burndown-in-context-report).
+	To open a report, see [Cumulate Flow Diagram](cumulative-flow.md#view-the-cfd-in-context-report), [Velocity](team-velocity.md#view-the-velocity-in-context-report), or [Sprint burndown](configure-sprint-burndown.md#view-context-report).
 
 1. Choose the dashboard and choose **OK**. 
 
@@ -108,7 +108,7 @@ There are a number of in-context reports that you can access from the web portal
 
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
 - [Team velocity](../guidance/team-velocity.md)
-- [Sprint burndown chart](../../boards/sprints/sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
+- [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
 - [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md#cfd-widget)
 
 ::: moniker-end

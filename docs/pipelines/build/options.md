@@ -74,3 +74,7 @@ Specify the authorization scope for a build job. Select:
 * **Project Collection** if the build needs access to multiple projects.
 
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
+
+## Build (run) number
+
+This documentation has moved to [Build (run) number](../process/run-number.md).

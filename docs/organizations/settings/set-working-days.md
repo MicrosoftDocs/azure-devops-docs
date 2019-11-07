@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/23/2019
+ms.date: 11/04/2019
 ---
 
 # Set working days  
@@ -22,16 +22,39 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 [!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
 
-::: moniker range=">= tfs-2017"   
+  
 <a id="team-services-work-days" />  
 
-## Configure working days 
+## Configure working days
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+
+![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-preview.png)  
+
+#### [Current page](#tab/current-page) 
+
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+
+![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-new-nav.png)  
+
+::: moniker-end
+
+* * *
+
+::: moniker range=">= tfs-2017 < azure-devops" 
 
 [Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
 ![Capacity page, Settings, Working days](../../boards/plans/_img/capacity-planning-open-team-settings-tfs-15.png)  
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="tfs-2015"   
 
@@ -41,14 +64,14 @@ Open your team settings from the **Overview** tab of your team's admin context. 
 
 ![Team settings page for default working days](../../boards/plans/_img/ALM_DS_WorkingDaysOff.png)  
 
-::: moniker-end 
+::: moniker-end
 
 
 ::: moniker range="tfs-2013" 
 
 To set non-working days, modify the **ProcessConfiguration** file. For details, see [Process configuration XML element reference, Set non-working days](../../reference/xml/process-configuration-xml-element.md#weekend_days).  
 
-::: moniker-end 
+::: moniker-end
 
 ## Related articles
 - [About Sprints, Scrum and project management](../../boards/sprints/scrum-overview.md) 
