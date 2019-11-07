@@ -552,6 +552,8 @@ Fabrikam Fiber\Voice                   True                 True
 
 * * *
 
+::: moniker-end
+
 ::: moniker range="azure-devops-2019"
 
 1. Open **Areas** for the team context.  
