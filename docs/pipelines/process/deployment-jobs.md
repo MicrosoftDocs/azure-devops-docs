@@ -70,7 +70,6 @@ Following are the descriptions of lifecycle hooks:
 **on: failure or on: success** - Used to run the steps to peform rollback actions or clean-up. 
 
 
-Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
 
@@ -109,7 +108,7 @@ strategy:
 
 ### Canary deployment strategy:
 
-Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it. Currently this is applicable to only kubernetes resources in an environment.
+Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.  Currently this is applicable to only kubernetes resources in an environment.
 
 
 ```YAML
