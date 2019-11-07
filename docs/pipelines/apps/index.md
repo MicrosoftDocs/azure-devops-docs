@@ -18,6 +18,8 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../_shared/version.md)]
 
+<!--- NOT INCLUDED IN TOC --> 
+
 This is a selection of the growing range of examples we are creating
 to demonstrate the many ways you can build and deploy
 a range of application types, code languages, development

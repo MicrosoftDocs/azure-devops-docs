@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2015'
-ms.date: 04/05/2019
+ms.date: 10/23/2019
 ---
 
 # Dashboards, reports, & widgets quick reference 
@@ -69,13 +69,14 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Reports</strong>
 <ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
 <li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 </ul>
 <strong>Widgets</strong>
 <ul>
 <li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
 <li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
+<li><a href="configure-sprint-burndown.md">Configure Sprint Burndown widget</a> 
 <li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
 <li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
 <li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
@@ -138,7 +139,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Reports</strong>
 <ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
 <li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 <li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
 <li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
@@ -242,7 +243,7 @@ In-context reports appear on specific service pages, such as **Boards>Boards**, 
 <strong>Boards</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
-<li><a href="../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a></li>
 <li><a href="team-velocity.md" data-raw-source="[Velocity chart](team-velocity.md)">Velocity chart</a> </li>
 </ul>
 </td>
@@ -277,18 +278,18 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 <strong>Work</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a></li>
 <li><a href="team-velocity.md" data-raw-source="[Velocity chart)](team-velocity.md)">Velocity chart)</a> </li>
 </ul>
 <td width="50%">
 <strong>Build &amp; Release</strong>
 <ul>
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li> 
-<li><a href="../../pipelines/test/review-code-coverage-results.md" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li> 
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li> 
-<li><a href="../../pipelines/test/requirements-traceability.md" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li> 
-<li><a href="../../pipelines/test/test-impact-analysis.md" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Build test results</a></li> 
+<li><a href="../../pipelines/test/review-code-coverage-results.md">Code coverage</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Release test results</a></li> 
+<li><a href="../../pipelines/test/requirements-traceability.md">Trace test requirements</a></li> 
+<li><a href="../../pipelines/test/test-analytics.md">Test failures</a></li> 
+<li><a href="../../pipelines/test/test-impact-analysis.md">Test impact analysis</a></li> 
 </ul>
 </td>
 </tr>
@@ -341,11 +342,12 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
 <li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> (Team)</li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a> (Analytics, Team)</li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown (Legacy)</a> (Team)</li>
 <li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a> (Team)</li>
 <li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a> (Team)</li>
-<li><a href="team-velocity.md" data-raw-source="[Velocity](team-velocity.md)">Velocity</a> (Analytics, Team)</li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
+<li><a href="team-velocity.md">Velocity</a> (Analytics, Team)</li>
+<li><a href="widget-catalog.md#work-links-widget">Work links</a></li>
 </ul>
 
 </td>

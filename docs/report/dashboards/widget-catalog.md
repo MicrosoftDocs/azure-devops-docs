@@ -27,7 +27,75 @@ The following widgets are organized under the service they support. Widgets that
 
 <!--- Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user. -->
 
-::: moniker range=">= azure-devops-2019"
+
+
+::: moniker range="azure-devops"
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+<td width="44%"> 
+<strong>Boards</strong>
+<ul>
+<li><a href="#assigned-to-me-widget">Assigned to me</a></li>
+<li><a href="#burndown-analytics-widget">Burndown chart</a> (Analytics)</li>
+<li><a href="#burnup-analytics-widget">Burnup chart</a> (Analytics) </li>
+<li><a href="#chart-wit-widget">Chart for work items</a></li>
+<li><a href="#cfd-widget">Cumulative flow diagram</a> (Analytics) </li>
+<li><a href="#cycle-time-widget">Cycle time</a> (Analytics)</li>
+<li><a href="#lead-time-widget">Lead time</a> (Analytics) </li>
+<li><a href="#new-work-item-widget" >New Work item</a></li>
+<li><a href="#query-results-widget">Query results</a></li>
+<li><a href="#query-tile-widget" >Query tile</a></li>
+<li><a href="#sprint-burndown-analytics-widget">Sprint burndown</a> (Analytics) </li>
+<li><a href="#sprint-burndown-widget">Sprint burndown - Legacy</a> </li>
+<li><a href="#sprint-capacity-widget">Sprint capacity</a></li>
+<li><a href="#sprint-overview-widget">Sprint overview</a> </li>
+<li><a href="#velocity-widget">Velocity</a> (Analytics) </li>
+<li><a href="#work-links-widget">Work links</a></li>
+</ul>
+
+</td>
+<td width="28%">
+<strong>Repos</strong>
+<ul>
+<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
+<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
+</ul>
+<br/>
+<strong>Pipelines</strong>
+<ul>
+<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
+<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
+<li><a href="#release-definition-widget" data-raw-source="[Release pipeline overview](#release-definition-widget)">Release pipeline overview</a></li>
+<li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a> (Analytics)</li>
+<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
+</ul>
+<br/>
+<strong>Test Plans</strong>
+<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
+
+</ul>
+</td>
+<td width="28%">
+<strong>Other</strong>
+<ul>
+<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
+<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
+<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
+<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
+<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
+<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
 
 <table valign="top">
 <tbody valign="top">
@@ -88,6 +156,10 @@ The following widgets are organized under the service they support. Widgets that
 </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, work tracking Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
@@ -312,6 +384,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 ::: moniker-end
 
 ### Chart for work items  
+
 <a id="chart-wit-widget"></a> 
 	
 ![Chart work item query widget](_img/widget-chart-work-query.png)  
@@ -432,16 +505,45 @@ To create a shared query, see [Use the query editor to list and manage queries](
   
 ----
 
+::: moniker range="azure-devops"
+
+<a id="sprint-burndown-analytics-widget"></a>
+
+### Sprint burndown (Analytics)  
+
+![Sprint burndown widget](_img/widget-sprint-burndown-analytics.png)
+
+Adds a team's burndown chart for a sprint to the dashboard. This widget is based on Analytics data. You have several configuration options for this widget, including selecting a team, iteration, and time period. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+
+----
+
+<a id="sprint-burndown-widget"></a>
+
+<a id="burndown-widget"></a> 
+
+### Sprint burndown (Legacy) 
+
+![Sprint burndown widget](_img/widget-sprint-burndown-legacy.png)
+
+Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
 
 
 <a id="sprint-burndown-widget"></a>
+
 <a id="burndown-widget"></a> 
+
 ### Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
-Teams [use the burndown chart to mitigate risk and check for scope creep](../../boards/sprints/sprint-burndown.md) throughout the sprint cycle. 
+Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+
+::: moniker-end
 
 ----
 

@@ -68,7 +68,7 @@ Work tracking in-context reports are now based on Analytics data. These reports 
 
 - [Cumulative flow](../dashboards/cumulative-flow.md)
 - [Team velocity](../dashboards/team-velocity.md)
-- [Sprint burndown chart](../../boards/sprints/sprint-burndown.md) 
+- [View/configure sprint burndown](../dashboards/configure-sprint-burndown.md) 
 - [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
 - [Test failures report](../../pipelines/test/test-analytics.md#test-failures)
 

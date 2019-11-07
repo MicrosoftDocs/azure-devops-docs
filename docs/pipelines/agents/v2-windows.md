@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/15/2019
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -46,9 +46,9 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 The hardware specs for your agents will vary with your needs, team size, etc.
 It's not possible to make a general recommendation that will apply to everyone.
-As a point of reference, the Azure DevOps team builds its hosted agents using the [hosted agents](hosted.md).
+As a point of reference, the Azure DevOps team builds the hosted agents code using pipelines that utilize [hosted agents](hosted.md).
 On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
-running 4 agents apiece.
+running 4 self-hosted agents apiece.
 
 <h2 id="permissions">Prepare permissions</h2>
 

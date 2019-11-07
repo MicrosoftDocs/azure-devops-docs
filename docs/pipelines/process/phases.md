@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 06/18/2019
+ms.date: 11/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -771,6 +771,7 @@ For information about using a **condition**, see [Specify conditions](conditions
 When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Pipeline.Workspace` variable. Under this, various sub-directories are created:
 
 ::: moniker-end
+
 ::: moniker range="< azure-devops-2019"
 
 When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various sub-directories are created:
@@ -780,7 +781,7 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 - `Build.SourcesDirectory` is where tasks download the application's source code.
 - `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they are published.
 - `Build.BinariesDirectory` is where tasks write their outputs.
-- `Build.TestResultsDirectory` is where tasks upload their test results.
+- `Common.TestResultsDirectory` is where tasks upload their test results.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -795,9 +796,12 @@ When you run a pipeline on a self-hosted agent, by default, none of the sub-dire
 
 When you specify one of the `clean` options, they are interpreted as follows:
 
-- `outputs`: Delete `Build.ArtifactStagingDirectory`, `Build.BinariesDirectory`, and `Build.TestResultsDirectory` before running a new job.
+- `outputs`: Delete `Build.BinariesDirectory` before running a new job.
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
+
+> [!NOTE]
+>  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
