@@ -41,7 +41,7 @@ Make sure your machine has these prerequisites:
 
 These prereqs are required for agent version 2.125.0 and higher.
 
-::: end-moniker
+::: moniker-end
 
 ::: moniker range="< tfs-2018"
 
@@ -53,7 +53,7 @@ Make sure your machine has these prerequisites:
 - Git 2.9.0 or higher (latest version strongly recommended)
 - Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
 
-::: end-moniker
+::: moniker-end
 
 If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](http://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)

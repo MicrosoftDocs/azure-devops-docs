@@ -42,7 +42,7 @@ Make sure your machine has these prerequisites:
 
 Recommended:
 - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
-- [.NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/install/) 4.5 or higher
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.5 or higher
 
 If you're building from a Subversion repo, you must install the [Subversion client](https://subversion.apache.org/) on the machine.
 
