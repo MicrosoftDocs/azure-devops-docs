@@ -605,7 +605,7 @@ The default area path determines the default area path assigned to work items th
    > [!div class="mx-imgBorder"]  
    > ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= tfs-2015"  
 
@@ -781,8 +781,8 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 > [!NOTE]
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
 ::: moniker-end
+
 
 ## Chart progress by area
 
