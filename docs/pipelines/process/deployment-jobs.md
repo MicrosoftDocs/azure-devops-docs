@@ -50,14 +50,14 @@ jobs:
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy: [ deployment strategy ]
+  strategy: [ deployment strategy ] # see deployment strategy schema
 ```
 
 Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
 
-RunOnce is the simplest deployment strategy wherein the 'deploy' job is run only once to execute the steps it contains. We would recommned this strategy, if you're just getting started with deployment jobs.
+RunOnce is the simplest deployment strategy wherein the 'deploy' job executes only once.  
 
 ```YAML
 strategy: 
@@ -70,7 +70,7 @@ strategy:
 
 ### Canary deployment strategy:
 
-Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can reduce the risk by slowly rolling out the change to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.
+Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.
 
 
 ```YAML
@@ -116,6 +116,19 @@ strategy:
           ...
 ```
 Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
+
+
+Following are general use cases for the supported lifecycle hooks:
+
+`preDeploy` – Used to run tasks before the deploy step is executed.
+
+`Deploy` – Used to run the deploy tasks. 
+
+`routeTraffic` – Used to run tasks that serves the traffic to the updated version. 
+
+`postRouteTraffic` - Used to run the tasks after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
+
+`on:` `Failure` or `on:` `Success` - Used to run the task to peform rollback actions or clean-up. 
 
 
 ## Examples
