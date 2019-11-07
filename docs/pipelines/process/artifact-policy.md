@@ -14,14 +14,18 @@ monikerRange: 'azure-devops'
 
 # Artifact policy checks
 
-Adding a check to evaluate Artifact requires the custom policy to be configured. This guide describes how custom policies can be created.
+Artifact policies are enforced before deploying to critical environments such as production. These policies are evaluated against all the deployable artifacts in the given pipeline run and block the deployment if the artifacts don't comply. Adding a check to evaluate Artifact requires the custom policy to be configured. This guide describes how custom policies can be created.
 
 > [!NOTE]
-> Currently, this Check works with container image artifacts only
+> Currently, the supported artifact types are for container images and Kubernetes environments
 
 ## Pre-requisites
 
+Use Rego for defining policy that is easy to read and write.
+
 Familiarize yourself with [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) query language. Basics will do.
+
+To support structured document models like JSON, Rego extends Datalog. Rego queries are assertions on data stored in OPA. These queries can be used to define policies that enumerate instances of data that violate the expected state of the system.
 
 ## Creating custom policies
 
