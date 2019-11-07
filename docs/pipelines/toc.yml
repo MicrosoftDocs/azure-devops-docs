@@ -264,8 +264,6 @@
   - name: Approvals & Checks
     href: process/approvals.md
     displayName: approvals, checks
-  - name: Artifact policy checks
-    href: process/artifact-policy.md
   - name: Artifacts
     items:
     - name: Overview
