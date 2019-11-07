@@ -33,18 +33,52 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ## Check prerequisites
 
-::: moniker range="azure-devops"
+::: moniker range="> tfs-2018"
 
-**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
+The agent is based on .NET Core 2.1.
+You can run this agent on several Linux distributions.
+We support the following subset of .NET Core supported distributions:
+- x64
+  - CentOS 7, 6 (see note 1)
+  - Debian 9
+  - Fedora 30, 29
+  - Linux Mint 18, 17
+  - openSUSE 42.3 or later
+  - Oracle Linux 7
+  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
+  - SUSE Enterprise Linux 12 SP2 or later
+  - Ubuntu 18.04, 16.04
+- ARM32 (see note 2)
+  - Debian 9
+  - Ubuntu 18.04
+
+> [!NOTE]
+> Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
+
+> [!NOTE]
+> Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
+> Run `uname -a` to see your Linux distro's instruction set.
+
+Regardless of your platform, you will need to install Git 2.9.0 or higher.
+We strongly recommend installing the latest version of Git.
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](http://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
+
+The agent installer knows how to check for other dependencies.
+You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-**TFS 2018 RTM and older**: The agent is based on CoreCLR 1.0. Make sure your machine is prepared with our prerequisites for either of the supported distributions:
+**TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
+We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
+See [Azure Pipelines agent prereqs](?view=azure-devops#check-prerequisites) for more about what's required to run a newer agent.
+
+If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
 
 * [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
-
 * [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
 
 ::: moniker-end
