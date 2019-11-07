@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '<= azure-devops-2019'
 ms.date: 04/05/2019
 ---

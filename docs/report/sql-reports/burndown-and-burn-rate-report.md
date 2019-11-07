@@ -8,7 +8,7 @@ description: Determine the rate of team progress by reviewing the Burndown and B
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 
