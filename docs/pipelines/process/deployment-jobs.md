@@ -146,9 +146,9 @@ Canary strategy supports following lifecycle hooks: `preDeploy` (executed once),
 
  
 The following variables are available in this strategy:
-<br \>`strategy.name`: Name of the strategy. Eg, canary.
-<br \>`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote and reject.
-<br \>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
+<br>`strategy.name`: Name of the strategy. Eg, canary.
+<br>`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote or reject.
+<br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
 
 
 
