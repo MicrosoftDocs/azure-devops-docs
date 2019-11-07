@@ -57,15 +57,36 @@ Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
 
-RunOnce is the simplest deployment strategy wherein the 'deploy' job executes only once.  
+RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed  once and finally exits with either `on:` `success` or `on:` `failure`.  
 
 ```YAML
 strategy: 
     runOnce:
-      deploy:
-        displayName: string                 # friendly name to display in the UI
+      pre-deploy:        
+        pool: [ server | pool ] # see pool schema        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+      deploy:          
+        pool: [ server | pool ] # see pool schema        
+        steps:
+        ...
+      routeTraffic:         
+        pool: [ server | pool ]         
+        steps:
+        ...        
+      postRouteTraffic:          
+        pool: [ server | pool ]        
+        steps:
+        ...
+      on:
+        failure:         
+          pool: [ server | pool ]           
+          steps:
+          ...
+        success:          
+          pool: [ server | pool ]           
+          steps:
+          ...
 ```
 
 ### Canary deployment strategy:
@@ -110,13 +131,13 @@ Following are general use cases for the supported lifecycle hooks:
 
 `preDeploy` – Used to run tasks before the deploy step is executed.
 
-`Deploy` – Used to run the deploy tasks. 
+`deploy` – Used to run the deploy tasks. 
 
 `routeTraffic` – Used to run tasks that serves the traffic to the updated version. 
 
 `postRouteTraffic` - Used to run the tasks after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
 
-`on:` `Failure` or `on:` `Success` - Used to run the task to peform rollback actions or clean-up. 
+`on:` `failure` or `on:` `success` - Used to run the task to peform rollback actions or clean-up. 
 
 
 ## Examples
