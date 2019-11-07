@@ -64,13 +64,15 @@ As needed, you can perform the following actions at any time:
 ::: moniker range=">= tfs-2017"
 Teams can set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
 
-All work items that you create from your team context are automatically assigned both the team's default area path and default iteration path. 
+All work items that you create from your team context are automatically assigned both the team's default area path and default iteration path.
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
-::: moniker-end
 
+For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.
+
+::: moniker-end
 
 <a id="open-project-settings" />
 <a id="open-admin-context" />  
@@ -172,6 +174,7 @@ Define both areas and iterations for a project from the **Project configuration 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-vert.png)   
 
+::: moniker-end
 
 <a id="admin-intro-tfs-2015" />
 
