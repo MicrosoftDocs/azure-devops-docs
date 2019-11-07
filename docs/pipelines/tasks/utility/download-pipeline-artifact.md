@@ -1,5 +1,5 @@
 ---
-title: Download Pipeline Artifact task
+title: Download Pipeline Artifacts task
 description: Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
 ms.topic: reference
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 07/02/2019
 monikerRange: 'azure-devops'
 ---
 
-# Download Pipeline Artifact task
+# Download Pipeline Artifacts task
 
 Use this task in a build or release pipeline to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
