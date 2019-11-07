@@ -53,6 +53,22 @@ jobs:
   strategy: [ deployment strategy ] # see deployment strategy schema
 ```
 
+### Deployment strategies:
+
+When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, route traffic to the updated version, testing the updated version after routing traffic and in case of failure, run steps to restore to last known good version. We achieve this using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+
+Following are descriptions of the lifecycle hooks
+
+**preDeploy** – Used to run steps before the `deploy` lifecycle hook is executed.
+
+**Deploy** – Used to run the deploy steps.
+
+**routeTraffic** – Used to run steps that serves the traffic to the updated version. 
+
+**postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
+
+**on: failure or on success** - Used to run the steps to peform rollback actions or clean-up. 
+
 Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
@@ -126,18 +142,7 @@ strategy:
 ```
 Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
 
-
-Following are general use cases for the supported lifecycle hooks:
-
-`preDeploy` – Used to run tasks before the deploy step is executed.
-
-`deploy` – Used to run the deploy tasks. 
-
-`routeTraffic` – Used to run tasks that serves the traffic to the updated version. 
-
-`postRouteTraffic` - Used to run the tasks after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
-
-`on:` `failure` or `on:` `success` - Used to run the task to peform rollback actions or clean-up. 
+ 
 
 
 ## Examples
