@@ -286,7 +286,7 @@ ID     Identifier                            Name    Path                       
 
 * * *
  
-::: moniker range=">= tfs-2018 < azure-devops-2019"
+::: moniker range=">= tfs-2018 < azure-devops"
 
 If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path. 
 
@@ -302,7 +302,9 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"  
+::: moniker range="tfs-2017"
+
+If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.
 
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
@@ -575,7 +577,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: monkier-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
 
@@ -763,7 +765,7 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
