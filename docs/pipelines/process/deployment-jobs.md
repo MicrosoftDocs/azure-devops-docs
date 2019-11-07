@@ -55,7 +55,7 @@ jobs:
 
 ### Deployment strategies:
 
-When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, routing traffic to the updated version, testing the updated version after routing traffic and in case of failure, running steps to restore to last known good version. We achieve this by using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, routing traffic to the updated version, testing the updated version after routing traffic and in case of failure, running steps to restore to last known good version. We achieve this by using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
 
 #### Following are the descriptions of lifecycle hooks:
 
