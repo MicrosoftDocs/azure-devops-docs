@@ -244,6 +244,52 @@ steps:
 > [!NOTE]
 > In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature:  [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842).
 
+## Docker
+
+You can use the caching task in combination with `docker image save` and `docker load` to speed up your docker builds. 
+
+### Example
+
+```yaml
+- task: CacheBeta@0
+  inputs:
+    key: docker-image | path/to/dockerfile/**
+    path: ".dockercache"
+    restoreKeys: docker-image
+    cacheHitVar: DOCKER_CACHE_HIT
+  displayName: Cache docker layers
+```
+
+The following can be combined with the following script. 
+
+```bash
+#! /bin/bash
+
+set -e 
+set -x 
+
+# Create .dockercache directory
+mkdir -p ./.dockercache/
+
+# Import containerimage from cache to speed up build if there was a version in cache
+if [ -f ".dockercache/containerimage.tar" ]; 
+then
+    echo "-------> Restoring docker image"
+    time docker load -i .dockercache/containerimage.tar
+fi
+
+echo "-------> Building containerimage"
+# Build the docker image using the `docker load`'d image for cache
+time docker build --cache-from containerimage:latest -t containerimage -f ./Dockerfile ./.containerimage
+
+# If the current cached image is out of date save containerimage so it can be cached
+if [ $DOCKER_CACHE_HIT != "true" ];
+then
+    echo "-------> Saving docker image"
+    time docker image save -o ./.dockercache/containerimage.tar containerimage
+fi
+```
+
 ## Maven
 
 Maven has a local repository where it stores downloads and built artifacts. To enable, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
