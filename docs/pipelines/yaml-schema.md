@@ -115,6 +115,7 @@ Note: Azure Pipelines doesn't support all features of YAML, such as anchors, com
 ```yaml
 name: string  # build numbering format
 resources:
+  pipelines: [ pipelineResource ]
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
 variables: { string: string } | [ variable | templateReference ]
@@ -875,6 +876,80 @@ steps:
 ::: moniker-end
 
 ## Resources
+Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.).
+
+Resources in YAML represent sources of types pipelines, repositories and containers.
+
+#### Schema
+
+```yaml
+resources:
+  pipelines: [ pipeline ]  
+  repositories: [ repository ]
+  containers: [ container ]
+```
+
+### Pipeline resource
+If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. And you can also enable pipeline completion triggers.
+
+# [Schema](#tab/schema)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: string  # identifier for the pipeline resource
+    project:  string # project for the build pipeline; optional input for current project
+    source: string  # source pipeline definition name
+    branch: string  # branch to pick the artifact, optional; defaults to all branches
+    version: string # pipeline run number to pick artifact; optional; defaults to last successfully completed run
+    trigger:     # optional; Triggers are not enabled by default.
+      branches:  
+        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
+        exclude: [string] # branches to discard the trigger events, optional; defaults to none. 
+```
+# [Example](#tab/example)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: MyAppA 
+    source: MyCIPipelineA
+  - pipeline: MyAppB
+    source: MyCIPipelineB
+    trigger: true
+  - pipeline: MyAppC
+    project:  DevOpsProject 
+    source: MyCIPipelineC
+    branch: releases/M159  
+    version: 20190718.2 
+    trigger:     .
+      branches:  
+        include:  
+        - master
+        - releases/*
+        exclude:   
+        - users/*  
+```
+#### `pipeline` resource meta-data as pre-defined variables.
+In each run, the meta-data for `pipeline` resource is available to all the jobs as pre-defined variables.
+
+```yaml
+resources.pipeline.<Alias>.projectName 
+resources.pipeline.<Alias>.projectID 
+resources.pipeline.<Alias>.pipelineName 
+resources.pipeline.<Alias>.pipelineID 
+resources.pipeline.<Alias>.runName 
+resources.pipeline.<Alias>.runID
+resources.pipeline.<Alias>.runURI
+resources.pipeline.<Alias>.sourceBranch 
+resources.pipeline.<Alias>.sourceCommit
+resources.pipeline.<Alias>.sourceProvider 
+resources.pipeline.<Alias>.requestedFor
+resources.pipeline.<Alias>.requestedForID
+```
+
+You can consume artifacts from pipeline resource using `-download` task. See the [download]() keyword.
+
 
 ### Container resource
 
