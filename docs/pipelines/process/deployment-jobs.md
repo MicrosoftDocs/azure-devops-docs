@@ -30,7 +30,7 @@ Using deployment job provides some benefits:
  - **Apply deployment strategy**: Define how your application is rolled-out.
 
    > [!NOTE] 
-   > At the moment we offer only the *runOnce* strategy, which executes the steps once sequentially. Additional strategies like blue-green, canary and rolling are on our roadmap.
+   > At the moment we offer only *runOnce* and *canary* strategy. Additional strategies like rolling, blue-green are on our roadmap.
 
 ## Schema
 
@@ -50,7 +50,17 @@ jobs:
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy:
+  strategy: [ deployment strategy ]
+```
+
+Here is the syntax of the deployment strategies supported:
+
+### RunOnce deployment strategy:
+
+RunOnce is the simplest deployment strategy wherein the 'deploy' job is run only once to execute the steps it contains. We would recommned this strategy, if you're just getting started with deployment jobs.
+
+```YAML
+strategy: 
     runOnce:
       deploy:
         displayName: string                 # friendly name to display in the UI
@@ -58,9 +68,61 @@ jobs:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
+### Canary deployment strategy:
+
+Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can reduce the risk by slowly rolling out the change to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.
+
+
+```YAML
+strategy: 
+    canary:
+      increments: [ number ]
+      pre-deploy:
+        displayName: string  # friendly name to display in the UI
+        pool: [ server | pool ] # see pool schema
+        delay: number # delay in minutes prior execution
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+      deploy:
+        displayName: string   
+        pool: [ server | pool ] # see pool schema
+        delay: number
+        steps:
+        ...
+      routeTraffic:
+        displayName: string  
+        pool: [ server | pool ] 
+        delay: number
+        steps:
+        ...        
+      postRouteTraffic:
+        displayName: string   
+        pool: [ server | pool ]
+        delay: number
+        steps:
+        ...
+      on:
+        failure:
+          displayName: string   
+          pool: [ server | pool ] 
+          delay: number
+          steps:
+          ...
+        success:
+          displayName: string
+          pool: [ server | pool ] 
+          delay: number
+          steps:
+          ...
+```
+Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
+
+
 ## Examples
 
-The following example YAML snippet showcases a simple use of a deploy job - 
+### RunOnce Deployment strategy
+
+The following example YAML snippet showcases a simple use of a deploy job using runOnce deployment strategy - 
 
 ```YAML
 jobs:
@@ -118,3 +180,44 @@ This approach has the following benefits:
 - Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a kubernetes namespace: `smarthotel-dev.bookings`), since the deployment job is linked to the environment. 
 This is particularly useful in the cases where the same connection detail is to be set for multiple steps of the job.
 
+
+
+
+### Canary deployment strategy
+
+In the following example, the canary strategy for AKS will first deploy the changes with 10% pods followed by 20% while monitoring the health during postRouteTraffic. If all goes well, it will promote to 100%.  
+
+```YAML
+jobs: 
+- deployment: 
+  environment: musicCarnivalProd 
+  pool: 
+    name: musicCarnivalProdPool  
+  strategy:                  
+    canary:      
+      increments: [10,20]  
+      preDeploy:                                     
+        steps:           
+        - script: initialize, cleanup....   
+      deploy:             
+        steps: 
+        - script: echo deploy updates... 
+        - task: KubernetesManifest@0 
+          inputs: 
+            action: $(strategy.action)       
+            namespace: 'default' 
+            strategy: $(strategy.name) 
+            percentage: $(strategy.increment) 
+            manifests: 'manifest.yml' 
+      postRouteTaffic: 
+        pool: server 
+        steps:           
+        - script: echo monitor application health...   
+      on: 
+        failure: 
+          steps: 
+          - script: echo clean-up, rollback...   
+        success: 
+          steps: 
+          - script: echo checks passed, notify... 
+```
