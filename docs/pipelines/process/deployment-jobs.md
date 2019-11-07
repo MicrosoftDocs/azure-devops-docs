@@ -77,41 +77,29 @@ Canary deployment strategy is an advance deployment strategy which helps in miti
 strategy: 
     canary:
       increments: [ number ]
-      pre-deploy:
-        displayName: string  # friendly name to display in the UI
-        pool: [ server | pool ] # see pool schema
-        delay: number # delay in minutes prior execution
+      pre-deploy:        
+        pool: [ server | pool ] # see pool schema        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-      deploy:
-        displayName: string   
-        pool: [ server | pool ] # see pool schema
-        delay: number
+      deploy:          
+        pool: [ server | pool ] # see pool schema        
         steps:
         ...
-      routeTraffic:
-        displayName: string  
-        pool: [ server | pool ] 
-        delay: number
+      routeTraffic:         
+        pool: [ server | pool ]         
         steps:
         ...        
-      postRouteTraffic:
-        displayName: string   
-        pool: [ server | pool ]
-        delay: number
+      postRouteTraffic:          
+        pool: [ server | pool ]        
         steps:
         ...
       on:
-        failure:
-          displayName: string   
-          pool: [ server | pool ] 
-          delay: number
+        failure:         
+          pool: [ server | pool ]           
           steps:
           ...
-        success:
-          displayName: string
-          pool: [ server | pool ] 
-          delay: number
+        success:          
+          pool: [ server | pool ]           
           steps:
           ...
 ```
