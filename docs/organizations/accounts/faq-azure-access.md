@@ -307,6 +307,10 @@ A: If you have more than 100 users, you can still connect, however you may need 
 
 A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won’t work beyond 100. Please [contact support](https://azure.microsoft.com/support/devops/).
 
+### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
+
+A: The tenant cache needs to be cleared if you're using a GCM version prior to v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a login error like below. The GCM will automatically recreate and populate the cache file as needed on subsequent login attempts.
+
 <a name="get-support"></a>
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
