@@ -37,9 +37,19 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+Import this repo into your Git repo:
+
+::: moniker-end
+
+
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
+
+::: moniker range="azure-devops"
+
 ## Sign in to Azure Pipelines
 
 [!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
