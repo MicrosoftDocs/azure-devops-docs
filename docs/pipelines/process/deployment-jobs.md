@@ -74,7 +74,7 @@ Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
 
-RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed  once and finally exits with either `on:` `success` or `on:` `failure`.  
+RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed once and finally either `on:` `success` or `on:` `failure`is executed  
 
 ```YAML
 strategy: 
@@ -145,7 +145,7 @@ strategy:
 Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
 
  
-The following variables are available in this strategy:
+#### The following variables are available in this strategy:
 <br>`strategy.name`: Name of the strategy. Eg, canary.
 <br>`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote or reject.
 <br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
