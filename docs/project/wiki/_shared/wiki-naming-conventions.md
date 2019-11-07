@@ -1,6 +1,6 @@
-
-
-
+---
+ms.topic: include
+---
 
 Each wiki page corresponds to a file within the wiki Git repo. Names you assign to a wiki page title must conform to the following restrictions.
 
