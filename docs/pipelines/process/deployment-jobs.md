@@ -61,20 +61,20 @@ Following are the descriptions of lifecycle hooks:
 
 **preDeploy** – Used to run steps before the `deploy` lifecycle hook is executed.
 
-**Deploy** – Used to run the deploy steps.
+**deploy** – Used to run the deploy steps.
 
 **routeTraffic** – Used to run steps that serves the traffic to the updated version. 
 
 **postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
 
-**on: failure or on success** - Used to run the steps to peform rollback actions or clean-up. 
+**on: failure or on: success** - Used to run the steps to peform rollback actions or clean-up. 
 
 
 Here is the syntax of the deployment strategies supported:
 
 ### RunOnce deployment strategy:
 
-RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed once and finally either `on:` `success` or `on:` `failure`is executed  
+RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed once and finally either `on:` `success` or `on:` `failure`is executed.  
 
 ```YAML
 strategy: 
@@ -109,7 +109,7 @@ strategy:
 
 ### Canary deployment strategy:
 
-Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.
+Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it. Currently this is applicable to only kubernetes resources in an environment.
 
 
 ```YAML
@@ -142,7 +142,7 @@ strategy:
           steps:
           ...
 ```
-Canary strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
+Canary deployment strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
 
  
 #### The following variables are available in this strategy:
