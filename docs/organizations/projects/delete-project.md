@@ -21,7 +21,7 @@ ms.date: 10/15/2019
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are only in use.
 
 > [!Caution]
-> Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+> Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
 #### [Browser](#tab/browser) 
 
@@ -133,7 +133,7 @@ az devops project delete --id
 
 #### Parameters 
 
-- **id**: Required. The ID of the project you want to delete.
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **yes**: Do not prompt for confirmation.
 
@@ -152,4 +152,7 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
 * * * 
 
+## Related articles
 
+- [Create project](/azure/devops/organizations/projects/create-project)
+- [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
