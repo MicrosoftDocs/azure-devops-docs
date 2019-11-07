@@ -18,14 +18,14 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-This article describes how to use Azure DevOps to establish a repository for source code. A group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Each project must be managed and structured to support your business needs. To learn more about projects and when to create one, see [About projects and scaling your organization](about-projects.md).
+This article describes how to use Azure DevOps to create a project and establish a repository for source code. Teams and groups of developers can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Managed and structured each project to support your business needs. To learn more about projects and when to create one, see [About projects and scaling your organization](about-projects.md).
 
 > [!NOTE]
 > This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
 
-If you have a project already, see one of the following articles: [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
+If you have a project already, see [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
@@ -36,7 +36,7 @@ If you have a project already, see one of the following articles: [Set up Git on
 
 ::: moniker range="azure-devops" 
 
-- You create a project within an organization. If you haven't created an organization yet, do that now. See [Quickstart: Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).  
+- You create a project within an organization. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).  
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end  
@@ -57,9 +57,9 @@ If you have a project already, see one of the following articles: [Set up Git on
 
     - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
 
-    - Has SQL Server Analysis Services and SQL Server Reporting Services been configured for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
-    - Has a SharePoint Web application been configured for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
+    - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
 ::: moniker-end  	
 
@@ -75,38 +75,38 @@ If you have a project already, see one of the following articles: [Set up Git on
 When you create a project, the main options you specify are:
 
 - The organization or project collection where the project is defined.  For guidance, see [About projects and scaling your organization](about-projects.md).
-- A project name. Your project name can't contain special characters (such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less.
-- A project description. Optional.
-- The type of repository used for initial source control, either Git or Team Foundation version control (TFVC). Git is selected as the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
-- The process used which determines the work item types available for tracking work using Azure Boards. The default process, Agile, is used if you don't specify another one. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
+- A project name. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters.
+- An optional project description.
+- The type of repository used for initial source control, either Git or Team Foundation version control (TFVC). Git is the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
+- The process that determines the work item types available for tracking work using Azure Boards. If you don't specify a process, the default is Agile. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
 
 #### [Browser](#tab/browser) 
 
 ::: moniker range="azure-devops"
 
-1. Select the Azure DevOps logo to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
 1. Choose the organization, and then select **Create Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
 
-1. Enter information into the form provided. Provide a name for your project. Choose the visibility, initial source control type, and work item process. For guidance, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md). If the **Public** option is grayed out, you need to change the policy.
+1. Enter information into the form provided. Provide a name for your project. Choose the visibility, initial source control type, and work item process. For guidance, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Create new project form, latest vsts](_img/create-project/create-new-project-form-new-nav.png)  
 
-   Select visibility of either public or private. If you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For details on public projects, see [Create a public project in your organization](../public/create-public-project.md).
+   Select visibility of either public or private. If you choose public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. For details on public projects, see [Create a public project in your organization](../public/create-public-project.md). If the **Public** option is not available, you need to change the policy.
 
-1. Select **Create**. When your project has been created, the welcome page appears.
+1. Select **Create**. The welcome page appears.
 
    > [!div class="mx-imgBorder"]  
    > ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
 
-   Select one of the following tasks to get started:
+   Select one of the following options to get started:
 
-   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who have already been added to your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
+   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos** to clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -118,7 +118,7 @@ When you create a project, the main options you specify are:
 
 ::: moniker range="azure-devops-2019"
 
-1. Select the Azure DevOps logo to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png) Then select **Create Project**.
+1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png) Then select **Create Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
@@ -130,12 +130,12 @@ When you create a project, the main options you specify are:
 
    For guidance, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
-1. Select **Create**. When your project has been created, the welcome page appears.
+1. Select **Create**. The welcome page appears.
 
    > [!div class="mx-imgBorder"]  
    > ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
 
-   Select one of the following tasks to get started:
+   Select one of the following options to get started:
 
    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos** to clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
@@ -147,7 +147,7 @@ When you create a project, the main options you specify are:
 
 ::: moniker range="tfs-2018"
 
-1. Select the Azure DevOps logo to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png) Then select **New Project**.
+1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png) Then select **New Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
@@ -213,7 +213,7 @@ Creating a project from Team Explorer isn't supported for Azure DevOps Services.
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
 > [!NOTE]
-> For TFS 2018 and later versions, users are redirected to the web portal. Creating a project from Visual Studio/Team Explorer is not supported for TFS 2018 and later versions, including Azure DevOps Server 2019 and Azure DevOps Services.
+> For TFS 2018 and later versions, use the web portal. Creating a project from Visual Studio/Team Explorer is not supported for TFS 2018 and later versions, including Azure DevOps Server 2019 and Azure DevOps Services.
 >
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you.
 
@@ -239,7 +239,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
     > [!TIP]
-    > If you are running Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
+    > If you run Team Explorer from a server that hosts SharePoint Products and SQL Server Reporting Services, you might need to run Visual Studio as an administrator.
 
 1. If it's your first time connecting to TFS, you need to add TFS to the list of recognized servers.
 
@@ -265,7 +265,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     After you've created your project, you can add repositories. See [Add a repository to your project](#add-a-repository).
 
-1. Unless your project collection is configured to support a SharePoint project portal, you're done.
+1. Unless your project collection supports a SharePoint project portal, you're done.
 
     ![ALM\_CTP\_Finish](_img/IC795956.png)
 
@@ -295,7 +295,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 <a id="create-project" /> 
 
-You can create a project defined for a project using [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can create a project using the [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -310,11 +310,11 @@ az devops project create --name
 
 #### Parameters
 
-- **name**: Required. Name of the project to be added.  
+- **name**: Required. Name of the project to create.  
 - **description**: Optional. Short description of the project. Enclose the description in quotes.  
-- **open**: Optional. Once the project is created, open it in the default web browser.
-- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up by using git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. If not specified, the default is used. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
+- **open**: Optional. Once the command creates a project, it opens in the default web browser.
+- **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
 - **source-control**: Optional. Type of source control repository to create for the project: *git* (default) or *tfvc*. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
 - **visibility**: Optional. Project visibility. Accepted values: *private* (default), *public*.
 
@@ -324,7 +324,7 @@ The following command creates a new project named *MyFirstProject* under the Fab
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --process Agile --source-control  git --org https://dev.azure.com/fabrikam/ --output table
+C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
 ID                                    Name             Visibility    Process    Source Control
 ------------------------------------  ---------------  ------------  ---------  ----------------
 be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
@@ -344,9 +344,9 @@ Connect to a project, collection, or server from your web browser.
 
 ::: moniker range="azure-devops"
 
-1. To view the projects defined for an organization, select the Azure DevOps logo to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+1. To view the projects defined for an organization, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
-1. Choose the organization to view the list of projects. The last two or three projects you connected to are listed at the top. Select any project to connect to that project.
+1. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects.png)  
@@ -362,9 +362,9 @@ Connect to a project, collection, or server from your web browser.
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"  
 
-1. To view the projects defined for a collection, select the Azure DevOps logo to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+1. To view the projects defined for a collection, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
-1. Choose the collection to view the list of projects. The last two or three projects you connected to are listed at the top. Choose any project to connect to that project.
+1. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/list-projects-2019.png)  
@@ -415,7 +415,7 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 
 ### List projects
 
-You can list projects defined for an organization using [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list projects defined for an organization using the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -426,7 +426,7 @@ az devops project list [--org]
 
 #### Parameters 
 
-- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **skip**: Optional. Number of results to skip.
 - **top**: Optional. Maximum number of results to list.
 
@@ -454,7 +454,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ### Show project information, and open in web portal
 
-You can list project information and optionally open the project in the web portal using [az devops project show](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-show) command.  
+You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-show) command.  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -467,7 +467,7 @@ az devops project show --project
 
 - **project**: Required. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.
 - **open**: Optional. Open the project in the default web browser.
-- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up by using git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up by using `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -502,13 +502,13 @@ From the admin context of the web portal, you can add additional repositories to
 
 1. Select **New repository**.
 
-> [!div class="mx-imgBorder"]  
-> ![Create new repository](_img/create-project/create-new-repository-2017.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Create new repository](_img/create-project/create-new-repository-2017.png)  
 
 1. Name the repository and select **Create**.
 
-> [!div class="mx-imgBorder"]  
-> ![Create new repository dialog ](_img/create-project/create-new-repository-dialog.png)  
+   > [!div class="mx-imgBorder"]  
+   > ![Create new repository dialog ](_img/create-project/create-new-repository-dialog.png)  
 
 ::: moniker-end
 
