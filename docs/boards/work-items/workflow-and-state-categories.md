@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/22/2019
