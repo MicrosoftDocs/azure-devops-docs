@@ -951,7 +951,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from pipeline resource using `-download` task. See the [download](schema#download) keyword.
+You can consume artifacts from pipeline resource using `-download` task. See the [download](yaml-schema#download) keyword.
 
 
 ### Container resource
